@@ -1,0 +1,27 @@
+{
+    "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": true,
+    "editor.renderWhitespace": "trailing",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.minimap.enabled": false,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "python.formatting.provider": "black",
+    "black-formatter.args": [
+        "--line-length",
+        "96"
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.testing.pytestEnabled": true,
+    "isort.importStrategy": "fromEnvironment",
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+            "source.fixAll": true
+        }
+    }
+}
