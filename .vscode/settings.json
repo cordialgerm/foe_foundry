@@ -1,7 +1,7 @@
 {
     "editor.tabSize": 4,
     "editor.trimAutoWhitespace": true,
-    "editor.renderWhitespace": "trailing",
+    "editor.renderWhitespace": "boundary",
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file",
     "editor.minimap.enabled": false,

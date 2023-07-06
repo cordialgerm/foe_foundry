@@ -82,5 +82,4 @@ def _visit_bin_op(node: d20.ast.BinOp) -> Tuple[dict, int]:
 
 
 def _visit_expression(node: d20.ast.Expression) -> Tuple[dict, int]:
-    roll = node.roll
-    return _visit_bin_op(roll)
+    return _visit_node(node.roll)

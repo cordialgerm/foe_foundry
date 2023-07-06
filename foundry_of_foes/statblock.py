@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from copy import deepcopy
+from dataclasses import dataclass
 
 from .attributes import Attributes
-from .damage_types import DamageTypes
+from .damage import Attack, Damage, DamageType
 from .die import DieFormula
 from .hp import scale_hp_formula
 from .skills import Stats
@@ -12,7 +13,7 @@ from .skills import Stats
 @dataclass
 class ArmorClass:
     value: int
-    description: str | None
+    description: str | None = None
 
     def delta(self, val: int) -> ArmorClass:
         return ArmorClass(value=self.value + val, description=self.description)
@@ -21,10 +22,10 @@ class ArmorClass:
 @dataclass
 class Movement:
     walk: int
-    fly: int | None
-    climb: int | None
-    swim: int | None
-    hover: bool
+    fly: int | None = None
+    climb: int | None = None
+    swim: int | None = None
+    hover: bool = False
 
 
 @dataclass
@@ -50,8 +51,8 @@ class BaseStatblock:
     attack: Attack
     primary_attribute: Stats = Stats.STR
     multiattack: int = 1
-    primary_damage_type: DamageTypes = DamageTypes.Piercing
-    secondary_damage_type: DamageTypes | None = None
+    primary_damage_type: DamageType = DamageType.Bludgeoning
+    secondary_damage_type: DamageType | None = None
     difficulty_class_modifier: int = 0
 
     def __post_init__(self):
@@ -60,7 +61,21 @@ class BaseStatblock:
         self.difficulty_class = 8 + mod + prof
 
     def apply_monster_dials(self, dials: MonsterDials) -> BaseStatblock:
-        args = asdict(self)
+        args: dict = dict(
+            name=self.name,
+            cr=self.cr,
+            ac=deepcopy(self.ac),
+            hp=deepcopy(self.hp),
+            speed=deepcopy(self.speed),
+            primary_attribute_score=self.primary_attribute_score,
+            attributes=deepcopy(self.attributes),
+            attack=deepcopy(self.attack),
+            primary_attribute=self.primary_attribute,
+            multiattack=self.multiattack,
+            primary_damage_type=self.primary_damage_type,
+            secondary_damage_type=self.secondary_damage_type,
+            difficulty_class_modifier=self.difficulty_class_modifier,
+        )
 
         if dials.hp_multiplier != 1.0:
             new_hp = scale_hp_formula(self.hp, target=self.hp.average * dials.hp_multiplier)

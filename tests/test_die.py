@@ -1,6 +1,8 @@
-from foundry_of_foes.die import DieFormula, Die
-import pytest
 from typing import Type
+
+import pytest
+
+from foundry_of_foes.die import Die, DieFormula
 
 
 def test_die_enum():
@@ -36,6 +38,7 @@ def test_die_from_dict():
 @pytest.mark.parametrize(
     ["expression", "expected"],
     [
+        ("2d8", "2d8"),
         ("6+ 2d20", "2d20 + 6"),
         ("1d20 + 1d20 + 1d20 - 1d20", "2d20"),
         ("1 + 1 + 1 + d4 + d6", "1d4 + 1d6 + 3"),
