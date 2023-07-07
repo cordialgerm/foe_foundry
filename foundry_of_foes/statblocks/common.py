@@ -1,5 +1,5 @@
 from ..ac import ArmorClass
-from ..attributes import Attributes, Stats
+from ..attributes import Attributes, Skills, Stats
 from ..damage import Attack, Damage, DamageType
 from ..die import DieFormula
 from ..movement import Movement
@@ -89,6 +89,130 @@ Brute = BaseStatblock(
     ),
 )
 
+Specialist = BaseStatblock(
+    name="Specialist",
+    cr=4,
+    ac=ArmorClass(value=14),
+    hp=DieFormula.from_expression("13d8 + 26"),
+    speed=Movement(walk=30),
+    primary_attribute_score=18,
+    attribute_backup_score=14,
+    primary_attribute=Stats.DEX,
+    attributes=Attributes(
+        proficiency=2,
+        primary_attribute=Stats.DEX,
+        STR=12,
+        DEX=18,
+        CON=14,
+        INT=10,
+        WIS=14,
+        CHA=12,
+        proficient_skills={Skills.Acrobatics, Skills.Perception, Skills.Stealth},
+        proficient_saves={Stats.DEX, Stats.WIS},
+    ),
+    multiattack=3,
+    primary_damage_type=DamageType.Piercing,
+    attack=Attack(
+        name="Attack",
+        hit=6,
+        damage=Damage.from_expression("3d6 + 4", damage_type=DamageType.Piercing),
+    ),
+)
 
-All = [Minion, Soldier, Brute]
-AllNamed = [(Minion.name, Minion), (Soldier.name, Soldier), (Brute.name, Brute)]
+Myrmidon = BaseStatblock(
+    name="Myrmidon",
+    cr=7,
+    ac=ArmorClass(value=15, description="chain shirt or natural armor"),
+    hp=DieFormula.from_expression("20d8 + 40"),
+    speed=Movement(walk=30),
+    primary_attribute_score=18,
+    attribute_backup_score=14,
+    primary_attribute=Stats.INT,
+    attributes=Attributes(
+        proficiency=3,
+        primary_attribute=Stats.INT,
+        STR=10,
+        DEX=14,
+        CON=14,
+        INT=18,
+        WIS=14,
+        CHA=10,
+        proficient_saves={Stats.DEX, Stats.WIS},
+        proficient_skills={Skills.Perception},
+    ),
+    multiattack=3,
+    primary_damage_type=DamageType.Slashing,
+    attack=Attack(
+        name="Attack",
+        hit=7,
+        damage=Damage.from_expression("3d8 + 4", damage_type=DamageType.Slashing),
+    ),
+)
+
+Sentinel = BaseStatblock(
+    name="Sentinel",
+    cr=11,
+    ac=ArmorClass(value=17, description="natural armor or magical protection"),
+    hp=DieFormula.from_expression("22d8 + 66"),
+    speed=Movement(walk=30),
+    primary_attribute_score=20,
+    attribute_backup_score=16,
+    primary_attribute=Stats.STR,
+    attributes=Attributes(
+        proficiency=4,
+        primary_attribute=Stats.STR,
+        STR=20,
+        DEX=16,
+        CON=16,
+        INT=10,
+        WIS=14,
+        CHA=10,
+    ),
+    multiattack=4,
+    primary_damage_type=DamageType.Bludgeoning,
+    attack=Attack(
+        name="Attack",
+        hit=9,
+        damage=Damage.from_expression("3d8 + 5", damage_type=DamageType.Bludgeoning),
+    ),
+)
+
+Champion = BaseStatblock(
+    name="Champion",
+    cr=15,
+    ac=ArmorClass(value=19, description="natural armor or magical protection"),
+    hp=DieFormula.from_expression("25d8 + 100"),
+    speed=Movement(walk=30),
+    primary_attribute_score=22,
+    attribute_backup_score=16,
+    primary_attribute=Stats.CHA,
+    attributes=Attributes(
+        proficiency=5,
+        primary_attribute=Stats.CHA,
+        STR=10,
+        DEX=12,
+        CON=18,
+        INT=12,
+        WIS=16,
+        CHA=22,
+    ),
+    multiattack=4,
+    primary_damage_type=DamageType.Slashing,
+    attack=Attack(
+        name="Attack",
+        hit=11,
+        damage=Damage.from_expression("4d8 + 6", damage_type=DamageType.Slashing),
+    ),
+)
+
+
+All = [
+    Minion,
+    Soldier,
+    Brute,
+    Specialist,
+    Myrmidon,
+    Sentinel,
+    Champion,
+]
+AllNamed = [(s.name, s) for s in All]
