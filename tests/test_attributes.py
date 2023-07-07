@@ -1,8 +1,17 @@
-from foundry_of_foes.attributes import Attributes, Stats, Skills
+from foundry_of_foes.attributes import Attributes, Skills, Stats
 
 
 def test_attribute_modifiers():
-    a = Attributes(STR=10, DEX=13, CON=16, WIS=20, CHA=8, INT=10, proficiency=2)
+    a = Attributes(
+        STR=10,
+        DEX=13,
+        CON=16,
+        WIS=20,
+        CHA=8,
+        INT=10,
+        primary_attribute=Stats.WIS,
+        proficiency=2,
+    )
     assert a.stat_mod(Stats.STR) == 0
     assert a.stat_mod(Stats.DEX) == 1
     assert a.stat_mod(Stats.CON) == 3
@@ -20,6 +29,7 @@ def test_attributes_generate_saves():
         CHA=8,
         INT=10,
         proficiency=2,
+        primary_attribute=Stats.WIS,
         proficient_saves={Stats.WIS, Stats.CHA},
     )
 
@@ -39,6 +49,7 @@ def test_attributes_generate_skills():
         CHA=8,
         INT=10,
         proficiency=2,
+        primary_attribute=Stats.WIS,
         proficient_skills={Skills.Perception, Skills.Religion, Skills.Persuasion},
     )
 

@@ -26,6 +26,7 @@ class MonsterDials:
     attribute_modifications: dict = field(default_factory=dict)
     primary_attribute_modifier: int = 0
     primary_attribute: Stats | None = None
+    attribute_backup_score: int = 10
 
 
 @dataclass
@@ -44,6 +45,7 @@ class BaseStatblock:
     secondary_damage_type: DamageType | None = None
     difficulty_class_modifier: int = 0
     recommended_powers_modifier: int = 0
+    attribute_backup_score: int = 10
 
     def __post_init__(self):
         mod = self.attributes.stat_mod(self.primary_attribute) + self.difficulty_class_modifier
@@ -60,6 +62,7 @@ class BaseStatblock:
             cr=self.cr,
             primary_damage_type=self.primary_damage_type,
             secondary_damage_type=self.secondary_damage_type,
+            attribute_backup_score=self.attribute_backup_score,
         )
 
         # resolve hp
@@ -105,7 +108,9 @@ class BaseStatblock:
         new_attributes = self.attributes.copy(
             **dials.attribute_modifications
         ).update_primary_attribute(
-            primary_attribute=primary_attribute, primary_attribute_score=primary_attribute_score
+            primary_attribute=primary_attribute,
+            primary_attribute_score=primary_attribute_score,
+            primary_attribute_backup_score=self.attribute_backup_score,
         )
         args.update(
             attributes=new_attributes,

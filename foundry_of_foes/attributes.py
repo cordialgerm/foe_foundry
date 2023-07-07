@@ -9,6 +9,7 @@ from .skills import Skills, Stats
 @dataclass
 class Attributes:
     proficiency: int
+    primary_attribute: Stats
 
     STR: int
     DEX: int
@@ -21,8 +22,11 @@ class Attributes:
     proficient_skills: Set[Skills] = field(default_factory=set)
     expertise_skills: Set[Skills] = field(default_factory=set)
 
+    def stat(self, stat: Stats) -> int:
+        return getattr(self, stat.value)
+
     def stat_mod(self, stat: Stats) -> int:
-        return (getattr(self, stat.value) - 10) // 2
+        return (self.stat(stat) - 10) // 2
 
     def save_mod(self, stat: Stats) -> int | None:
         if stat in self.proficient_saves:
@@ -44,9 +48,15 @@ class Attributes:
         return Attributes(**kwargs)
 
     def update_primary_attribute(
-        self, primary_attribute_score: int, primary_attribute: Stats
+        self,
+        primary_attribute: Stats,
+        primary_attribute_score: int,
+        primary_attribute_backup_score: int = 10,
     ) -> Attributes:
-        args = {primary_attribute.value: primary_attribute_score}
+        args = {
+            primary_attribute.value: primary_attribute_score,
+            self.primary_attribute.value: primary_attribute_backup_score,
+        }
         return self.copy(**args)
 
     @property

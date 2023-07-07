@@ -5,13 +5,21 @@ from .die import Die, DieFormula  # noqa
 from .hp import scale_hp_formula  # noqa
 from .movement import Movement  # noqa
 from .powers import recommended_powers_for_cr  # noqa
+from .roles import as_artillery  # noqa
 from .roles import (
     as_ambusher,
     as_ambusher_cycle,
-    as_artillery,  # noqa
     as_artillery_cycle,
     as_bruiser,
     as_bruiser_cycle,
+    as_controller,
+    as_controller_cycle,
+    as_defender,
+    as_defender_cycle,
+    as_leader,
+    as_leader_cycle,
+    as_skirmisher,
+    as_skirmisher_cycle,
 )
 from .skills import Skills  # noqa
 from .statblocks import BaseStatblock, MonsterDials, general_use_stats  # noqa

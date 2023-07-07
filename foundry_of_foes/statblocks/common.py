@@ -12,8 +12,18 @@ Minion = BaseStatblock(
     hp=DieFormula.from_expression("2d8"),
     speed=Movement(walk=30),
     primary_attribute_score=12,
+    attribute_backup_score=10,
     primary_attribute=Stats.DEX,
-    attributes=Attributes(proficiency=2, STR=10, DEX=12, CON=10, INT=10, WIS=12, CHA=10),
+    attributes=Attributes(
+        proficiency=2,
+        primary_attribute=Stats.DEX,
+        STR=10,
+        DEX=12,
+        CON=10,
+        INT=10,
+        WIS=12,
+        CHA=10,
+    ),
     multiattack=1,
     primary_damage_type=DamageType.Piercing,
     attack=Attack(
@@ -30,8 +40,18 @@ Soldier = BaseStatblock(
     hp=DieFormula.from_expression("4d8 + 4"),
     speed=Movement(walk=30),
     primary_attribute_score=14,
+    attribute_backup_score=10,
     primary_attribute=Stats.STR,
-    attributes=Attributes(proficiency=2, STR=14, DEX=12, CON=12, INT=10, WIS=10, CHA=10),
+    attributes=Attributes(
+        proficiency=2,
+        primary_attribute=Stats.STR,
+        STR=14,
+        DEX=12,
+        CON=12,
+        INT=10,
+        WIS=10,
+        CHA=10,
+    ),
     multiattack=1,
     primary_damage_type=DamageType.Slashing,
     attack=Attack(
@@ -48,8 +68,18 @@ Brute = BaseStatblock(
     hp=DieFormula.from_expression("7d8 + 14"),
     speed=Movement(walk=30),
     primary_attribute_score=16,
+    attribute_backup_score=12,
     primary_attribute=Stats.STR,
-    attributes=Attributes(proficiency=2, STR=16, DEX=12, CON=14, INT=10, WIS=10, CHA=8),
+    attributes=Attributes(
+        proficiency=2,
+        primary_attribute=Stats.STR,
+        STR=16,
+        DEX=12,
+        CON=14,
+        INT=10,
+        WIS=10,
+        CHA=8,
+    ),
     multiattack=2,
     primary_damage_type=DamageType.Bludgeoning,
     attack=Attack(
@@ -61,3 +91,4 @@ Brute = BaseStatblock(
 
 
 All = [Minion, Soldier, Brute]
+AllNamed = [(Minion.name, Minion), (Soldier.name, Soldier), (Brute.name, Brute)]
