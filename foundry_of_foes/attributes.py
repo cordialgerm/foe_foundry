@@ -1,4 +1,6 @@
-from dataclasses import dataclass, field
+from __future__ import annotations
+
+from dataclasses import asdict, dataclass, field
 from typing import Set
 
 from .skills import Skills, Stats
@@ -35,6 +37,17 @@ class Attributes:
             return self.stat_mod(skill.stat) + self.proficiency
         else:
             return None
+
+    def copy(self, **args) -> Attributes:
+        kwargs = asdict(self)
+        kwargs.update(args)
+        return Attributes(**kwargs)
+
+    def update_primary_attribute(
+        self, primary_attribute_score: int, primary_attribute: Stats
+    ) -> Attributes:
+        args = {primary_attribute.value: primary_attribute_score}
+        return self.copy(**args)
 
     @property
     def saves(self) -> dict[Stats, int]:
