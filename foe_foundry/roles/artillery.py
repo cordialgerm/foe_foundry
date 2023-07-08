@@ -2,6 +2,7 @@ from typing import Dict
 
 import numpy as np
 
+from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock, MonsterDials
 
 rng = np.random.default_rng(20210518)
@@ -9,24 +10,24 @@ rng = np.random.default_rng(20210518)
 
 def as_low_ac_artillery_max_dmg(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(attack_hit_modifier=2, ac_modifier=-2)
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Artillery, is_ranged=True)
 
 
 def as_low_hp_artillery_max_dmg(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(attack_hit_modifier=2, hp_multiplier=0.8)
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Artillery, is_ranged=True)
 
 
 def as_low_ac_artillery_balanced(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(attack_hit_modifier=1, attack_damage_dice_modifier=1, ac_modifier=-2)
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Artillery, is_ranged=True)
 
 
 def as_low_hp_artillery_balanced(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(
         attack_hit_modifier=1, attack_damage_dice_modifier=1, hp_multiplier=0.8
     )
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Artillery, is_ranged=True)
 
 
 ArtilleryVariants = {

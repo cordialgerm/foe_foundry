@@ -2,6 +2,7 @@ from typing import Dict
 
 import numpy as np
 
+from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock, MonsterDials
 
 rng = np.random.default_rng(20210518)
@@ -9,17 +10,17 @@ rng = np.random.default_rng(20210518)
 
 def as_low_hit_leader(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(attack_hit_modifier=-2, recommended_powers_modifier=1)
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
 
 def as_low_hp_leader(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(hp_multiplier=0.8, recommended_powers_modifier=1)
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
 
 def as_low_dmg_leader(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(attack_damage_dice_modifier=-1, recommended_powers_modifier=1)
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
 
 LeaderVariants = {

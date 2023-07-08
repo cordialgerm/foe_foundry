@@ -2,6 +2,7 @@ from typing import Dict
 
 import numpy as np
 
+from ..role_types import MonsterRole
 from ..skills import Stats
 from ..statblocks import BaseStatblock, MonsterDials
 
@@ -17,7 +18,7 @@ def as_high_ac_low_hit_defender(stats: BaseStatblock) -> BaseStatblock:
         attack_hit_modifier=-2,
         attribute_modifications=defender_save_proficiencies,
     )
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
 
 def as_high_ac_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
@@ -27,7 +28,7 @@ def as_high_ac_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
         attack_damage_dice_modifier=-1,
         attribute_modifications=defender_save_proficiencies,
     )
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
 
 def as_high_hp_low_hit_defender(stats: BaseStatblock) -> BaseStatblock:
@@ -36,7 +37,7 @@ def as_high_hp_low_hit_defender(stats: BaseStatblock) -> BaseStatblock:
         attack_hit_modifier=-2,
         attribute_modifications=defender_save_proficiencies,
     )
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
 
 def as_high_hp_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
@@ -46,7 +47,7 @@ def as_high_hp_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
         attack_damage_dice_modifier=-1,
         attribute_modifications=defender_save_proficiencies,
     )
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
 
 DefenderVariants = {

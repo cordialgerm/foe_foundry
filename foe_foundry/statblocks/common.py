@@ -3,7 +3,7 @@ from ..attributes import Attributes, Skills, Stats
 from ..damage import Attack, Damage, DamageType
 from ..die import DieFormula
 from ..movement import Movement
-from .statblock import BaseStatblock
+from .base import BaseStatblock
 
 Minion = BaseStatblock(
     name="Minion",

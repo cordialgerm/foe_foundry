@@ -2,6 +2,7 @@ from typing import Dict
 
 import numpy as np
 
+from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock, MonsterDials
 
 rng = np.random.default_rng(20210518)
@@ -9,17 +10,17 @@ rng = np.random.default_rng(20210518)
 
 def as_low_hit_bruiser(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(attack_hit_modifier=-2, attack_damage_modifier=2)
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Bruiser)
 
 
 def as_low_hp_bruiser(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(hp_multiplier=0.9, attack_hit_modifier=-1, attack_damage_modifier=2)
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Bruiser)
 
 
 def as_low_ac_bruiser(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(ac_modifier=-2, attack_damage_modifier=2)
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Bruiser)
 
 
 BruteVariants = {

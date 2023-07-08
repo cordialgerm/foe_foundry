@@ -2,6 +2,7 @@ from typing import Dict
 
 import numpy as np
 
+from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock, MonsterDials
 
 rng = np.random.default_rng(20210518)
@@ -9,12 +10,12 @@ rng = np.random.default_rng(20210518)
 
 def as_low_ac_skirmisher(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(ac_modifier=-2, speed_modifier=20)
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
 
 def as_low_hp_skirmisher(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(hp_multiplier=0.8, speed_modifier=20)
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
 
 SkirmisherVariants = {

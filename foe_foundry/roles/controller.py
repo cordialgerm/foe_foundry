@@ -2,6 +2,7 @@ from typing import Dict
 
 import numpy as np
 
+from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock, MonsterDials
 
 rng = np.random.default_rng(20210518)
@@ -9,7 +10,7 @@ rng = np.random.default_rng(20210518)
 
 def as_default_controller(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(attack_damage_modifier=-1, difficulty_class_modifier=2)
-    return stats.apply_monster_dials(dials)
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Controller, is_ranged=True)
 
 
 ControllerVariants = {"Controller.default": as_default_controller}

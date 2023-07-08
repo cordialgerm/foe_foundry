@@ -11,27 +11,12 @@ from ..damage import Attack, DamageType
 from ..die import DieFormula
 from ..hp import scale_hp_formula
 from ..movement import Movement
-from ..powers import recommended_powers_for_cr
+from ..role_types import MonsterRole
 from ..senses import Senses
 from ..size import Size
 from ..skills import Stats
-
-
-@dataclass
-class MonsterDials:
-    hp_multiplier: float = 1.0
-    ac_modifier: int = 0
-    multiattack_modifier: int = 0
-    attack_hit_modifier: int = 0
-    attack_damage_dice_modifier: int = 0
-    attack_damage_modifier: int = 0
-    difficulty_class_modifier: int = 0
-    recommended_powers_modifier: int = 0
-    speed_modifier: int = 0
-    attribute_modifications: dict = field(default_factory=dict)
-    primary_attribute_modifier: int = 0
-    primary_attribute: Stats | None = None
-    attribute_backup_score: int = 10
+from .dials import MonsterDials
+from .suggested_powers import recommended_powers_for_cr
 
 
 @dataclass
@@ -55,6 +40,8 @@ class BaseStatblock:
     creature_type: CreatureType = CreatureType.Humanoid
     languages: List[str] = field(default_factory=list)
     senses: Senses = field(default_factory=Senses)
+    role: MonsterRole = MonsterRole.Default
+    is_ranged: bool = False
 
     def __post_init__(self):
         mod = self.attributes.stat_mod(self.primary_attribute) + self.difficulty_class_modifier
@@ -64,6 +51,10 @@ class BaseStatblock:
         self.recommended_powers = (
             recommended_powers_for_cr(self.cr) + self.recommended_powers_modifier
         )
+
+    @property
+    def key(self) -> str:
+        return self.name.lower().replace(" ", "_")
 
     def __copy_args__(self) -> dict:
         args: dict = dict(
@@ -86,6 +77,7 @@ class BaseStatblock:
             creature_type=self.creature_type,
             languages=deepcopy(self.languages),
             senses=deepcopy(self.senses),
+            role=self.role,
         )
         return args
 

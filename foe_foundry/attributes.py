@@ -85,6 +85,19 @@ class Attributes:
 
         return self.copy(**args)
 
+    def grant_proficiency_or_expertise(self, *skills: Skills) -> Attributes:
+        new_profs = set(self.proficient_skills)
+        new_expertise = set(self.expertise_skills)
+
+        for skill in skills:
+            if skill in self.proficient_skills:
+                new_profs.remove(skill)
+                new_expertise.add(skill)
+            elif skill not in self.expertise_skills:
+                new_profs.add(skill)
+
+        return self.copy(proficient_skills=new_profs, expertise_skills=new_expertise)
+
     @property
     def saves(self) -> dict[Stats, int]:
         results = {}
