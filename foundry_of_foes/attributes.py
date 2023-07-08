@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
-from typing import Set
+from typing import Dict, Set
 
 from .skills import Skills, Stats
 
@@ -57,6 +57,32 @@ class Attributes:
             primary_attribute.value: primary_attribute_score,
             self.primary_attribute.value: primary_attribute_backup_score,
         }
+        return self.copy(**args)
+
+    def update_ranges(
+        self,
+        mins: Dict[Stats, int] | int,
+        maxs: Dict[Stats, int] | int,
+        bonuses: Dict[Stats, int] | int,
+    ):
+        if isinstance(mins, int):
+            mins = {s: mins for s in Stats.All()}
+
+        if isinstance(maxs, int):
+            maxs = {s: maxs for s in Stats.All()}
+
+        if isinstance(bonuses, int):
+            bonuses = {s: bonuses for s in Stats.All()}
+
+        args = {}
+        for s in Stats.All():
+            current = self.stat(s)
+            min_stat = mins.get(s, -100000)
+            max_stat = maxs.get(s, 100000)
+            bonus = bonuses.get(s, 0)
+            new_stat = min(max(current + bonus, min_stat), max_stat)
+            args[s.value] = new_stat
+
         return self.copy(**args)
 
     @property

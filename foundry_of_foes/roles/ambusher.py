@@ -1,7 +1,8 @@
+from typing import Dict
+
 import numpy as np
 
 from ..statblocks import BaseStatblock, MonsterDials
-from .cycle import VariantCycler
 
 rng = np.random.default_rng(20210518)
 
@@ -28,8 +29,5 @@ def as_ambusher(stats: BaseStatblock, variant: str | None = None) -> BaseStatblo
     return AmbusherVariants[variant](stats=stats)
 
 
-__cycler = VariantCycler(keys=list(AmbusherVariants.keys()), method=as_ambusher)
-
-
-def as_ambusher_cycle(stats: BaseStatblock) -> BaseStatblock:
-    return __cycler.execute(stats=stats)
+def as_ambusher_all(stats: BaseStatblock) -> Dict[str, BaseStatblock]:
+    return {k: v(stats=stats) for k, v in AmbusherVariants.items()}

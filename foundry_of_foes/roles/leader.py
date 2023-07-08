@@ -1,8 +1,8 @@
-import numpy as n
+from typing import Dict
+
 import numpy as np
 
 from ..statblocks import BaseStatblock, MonsterDials
-from .cycle import VariantCycler
 
 rng = np.random.default_rng(20210518)
 
@@ -38,8 +38,5 @@ def as_leader(stats: BaseStatblock, variant: str | None = None) -> BaseStatblock
     return LeaderVariants[variant](stats=stats)
 
 
-__cycler = VariantCycler(keys=list(LeaderVariants.keys()), method=as_leader)
-
-
-def as_leader_cycle(stats: BaseStatblock) -> BaseStatblock:
-    return __cycler.execute(stats=stats)
+def as_leader_all(stats: BaseStatblock) -> Dict[str, BaseStatblock]:
+    return {k: v(stats=stats) for k, v in LeaderVariants.items()}

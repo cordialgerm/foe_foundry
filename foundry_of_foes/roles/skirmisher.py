@@ -1,9 +1,8 @@
-import numpy as n
+from typing import Dict
+
 import numpy as np
 
-from ..skills import Stats
 from ..statblocks import BaseStatblock, MonsterDials
-from .cycle import VariantCycler
 
 rng = np.random.default_rng(20210518)
 
@@ -33,8 +32,5 @@ def as_skirmisher(stats: BaseStatblock, variant: str | None = None) -> BaseStatb
     return SkirmisherVariants[variant](stats=stats)
 
 
-__cycler = VariantCycler(keys=list(SkirmisherVariants.keys()), method=as_skirmisher)
-
-
-def as_skirmisher_cycle(stats: BaseStatblock) -> BaseStatblock:
-    return __cycler.execute(stats=stats)
+def as_skirmisher_all(stats: BaseStatblock) -> Dict[str, BaseStatblock]:
+    return {k: v(stats=stats) for k, v in SkirmisherVariants.items()}

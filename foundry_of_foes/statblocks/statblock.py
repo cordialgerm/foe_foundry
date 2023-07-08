@@ -1,14 +1,19 @@
 from __future__ import annotations
 
+from copy import deepcopy
 from dataclasses import dataclass, field
+from typing import List
 
 from ..ac import ArmorClass
 from ..attributes import Attributes
+from ..creature_types import CreatureType
 from ..damage import Attack, DamageType
 from ..die import DieFormula
 from ..hp import scale_hp_formula
 from ..movement import Movement
 from ..powers import recommended_powers_for_cr
+from ..senses import Senses
+from ..size import Size
 from ..skills import Stats
 
 
@@ -46,6 +51,10 @@ class BaseStatblock:
     difficulty_class_modifier: int = 0
     recommended_powers_modifier: int = 0
     attribute_backup_score: int = 10
+    size: Size = Size.Medium
+    creature_type: CreatureType = CreatureType.Humanoid
+    languages: List[str] = field(default_factory=list)
+    senses: Senses = field(default_factory=Senses)
 
     def __post_init__(self):
         mod = self.attributes.stat_mod(self.primary_attribute) + self.difficulty_class_modifier
@@ -56,14 +65,37 @@ class BaseStatblock:
             recommended_powers_for_cr(self.cr) + self.recommended_powers_modifier
         )
 
-    def apply_monster_dials(self, dials: MonsterDials) -> BaseStatblock:
+    def __copy_args__(self) -> dict:
         args: dict = dict(
             name=self.name,
             cr=self.cr,
+            ac=deepcopy(self.ac),
+            hp=deepcopy(self.hp),
+            speed=deepcopy(self.speed),
+            primary_attribute_score=self.primary_attribute_score,
+            attributes=deepcopy(self.attributes),
+            attack=deepcopy(self.attack),
+            primary_attribute=self.primary_attribute,
+            multiattack=self.multiattack,
             primary_damage_type=self.primary_damage_type,
             secondary_damage_type=self.secondary_damage_type,
+            difficulty_class_modifier=self.difficulty_class_modifier,
+            recommended_powers_modifier=self.recommended_powers_modifier,
             attribute_backup_score=self.attribute_backup_score,
+            size=self.size,
+            creature_type=self.creature_type,
+            languages=deepcopy(self.languages),
+            senses=deepcopy(self.senses),
         )
+        return args
+
+    def copy(self, **kwargs) -> BaseStatblock:
+        args = self.__copy_args__()
+        args.update(kwargs)
+        return BaseStatblock(**args)
+
+    def apply_monster_dials(self, dials: MonsterDials) -> BaseStatblock:
+        args = self.__copy_args__()
 
         # resolve hp
         args.update(

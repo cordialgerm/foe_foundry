@@ -1,8 +1,8 @@
-import numpy as n
+from typing import Dict
+
 import numpy as np
 
 from ..statblocks import BaseStatblock, MonsterDials
-from .cycle import VariantCycler
 
 rng = np.random.default_rng(20210518)
 
@@ -38,8 +38,5 @@ def as_bruiser(stats: BaseStatblock, variant: str | None = None) -> BaseStatbloc
     return BruteVariants[variant](stats=stats)
 
 
-__cycler = VariantCycler(keys=list(BruteVariants.keys()), method=as_bruiser)
-
-
-def as_bruiser_cycle(stats: BaseStatblock) -> BaseStatblock:
-    return __cycler.execute(stats=stats)
+def as_bruiser_all(stats: BaseStatblock) -> Dict[str, BaseStatblock]:
+    return {k: v(stats=stats) for k, v in BruteVariants.items()}

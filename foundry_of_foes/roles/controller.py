@@ -1,8 +1,8 @@
-import numpy as n
+from typing import Dict
+
 import numpy as np
 
 from ..statblocks import BaseStatblock, MonsterDials
-from .cycle import VariantCycler
 
 rng = np.random.default_rng(20210518)
 
@@ -24,8 +24,5 @@ def as_controller(stats: BaseStatblock, variant: str | None = None) -> BaseStatb
     return ControllerVariants[variant](stats=stats)
 
 
-__cycler = VariantCycler(keys=list(ControllerVariants.keys()), method=as_controller)
-
-
-def as_controller_cycle(stats: BaseStatblock) -> BaseStatblock:
-    return __cycler.execute(stats=stats)
+def as_controller_all(stats: BaseStatblock) -> Dict[str, BaseStatblock]:
+    return {k: v(stats=stats) for k, v in ControllerVariants.items()}

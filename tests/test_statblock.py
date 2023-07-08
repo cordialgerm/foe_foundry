@@ -1,45 +1,32 @@
+from typing import Callable, Dict, TypeAlias
+
 import pytest
 
-from foundry_of_foes import (
-    BaseStatblock,
-    MonsterDials,
-    as_ambusher_cycle,
-    as_artillery_cycle,
-    as_bruiser_cycle,
-    as_controller_cycle,
-    as_defender_cycle,
-    as_leader_cycle,
-    as_skirmisher_cycle,
-    general_use_stats,
-)
+from foundry_of_foes import BaseStatblock
+from foundry_of_foes import as_aberration as aberration
+from foundry_of_foes import as_ambusher_all as ambusher
+from foundry_of_foes import as_artillery_all as artillery
+from foundry_of_foes import as_bruiser_all as bruiser
+from foundry_of_foes import as_controller_all as controller
+from foundry_of_foes import as_defender_all as defender
+from foundry_of_foes import as_leader_all as leader
+from foundry_of_foes import as_skirmisher_all as skirmisher
+from foundry_of_foes import general_use_stats
+
+StatCallable: TypeAlias = Callable[[BaseStatblock], BaseStatblock]
+
+roles_all_variants = [ambusher, artillery, bruiser, controller, defender, leader, skirmisher]
+monster_types = [aberration]
 
 
-@pytest.mark.parametrize("name,stats", general_use_stats.AllNamed)
-def test_minion(name: str, stats: BaseStatblock):
-    ambusher1 = as_ambusher_cycle(stats)
-    ambusher2 = as_ambusher_cycle(stats)
-
-    artillery1 = as_artillery_cycle(stats)
-    artillery2 = as_artillery_cycle(stats)
-    artillery3 = as_artillery_cycle(stats)
-    artillery4 = as_artillery_cycle(stats)
-
-    bruiser1 = as_bruiser_cycle(stats)
-    bruiser2 = as_bruiser_cycle(stats)
-    bruiser3 = as_bruiser_cycle(stats)
-
-    controller1 = as_controller_cycle(stats)
-
-    defender1 = as_defender_cycle(stats)
-    defender2 = as_defender_cycle(stats)
-    defender3 = as_defender_cycle(stats)
-    defender4 = as_defender_cycle(stats)
-
-    ## leader
-    leader1 = as_leader_cycle(stats)
-    leader2 = as_leader_cycle(stats)
-    leader3 = as_leader_cycle(stats)
-
-    ## skirmisher
-    skirmisher1 = as_skirmisher_cycle(stats)
-    skirmisher2 = as_skirmisher_cycle(stats)
+@pytest.mark.parametrize("role_variants", roles_all_variants)
+@pytest.mark.parametrize("monster_type", monster_types)
+@pytest.mark.parametrize("name", general_use_stats.Names)
+def test_minion(
+    name: str,
+    monster_type: StatCallable,
+    role_variants: Callable[[BaseStatblock], Dict[str, BaseStatblock]],
+):
+    base_stats = general_use_stats.get_named_stats(name)
+    monster = monster_type(base_stats)
+    variants = role_variants(monster)

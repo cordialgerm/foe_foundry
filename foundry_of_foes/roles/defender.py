@@ -1,9 +1,9 @@
-import numpy as n
+from typing import Dict
+
 import numpy as np
 
 from ..skills import Stats
 from ..statblocks import BaseStatblock, MonsterDials
-from .cycle import VariantCycler
 
 rng = np.random.default_rng(20210518)
 
@@ -66,8 +66,5 @@ def as_defender(stats: BaseStatblock, variant: str | None = None) -> BaseStatblo
     return DefenderVariants[variant](stats=stats)
 
 
-__cycler = VariantCycler(keys=list(DefenderVariants.keys()), method=as_defender)
-
-
-def as_defender_cycle(stats: BaseStatblock) -> BaseStatblock:
-    return __cycler.execute(stats=stats)
+def as_defender_all(stats: BaseStatblock) -> Dict[str, BaseStatblock]:
+    return {k: v(stats=stats) for k, v in DefenderVariants.items()}

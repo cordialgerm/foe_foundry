@@ -215,4 +215,9 @@ All = [
     Sentinel,
     Champion,
 ]
-AllNamed = [(s.name, s) for s in All]
+Names = [s.name for s in All]
+Named = {s.name: s for s in All}
+
+
+def get_named_stats(name: str) -> BaseStatblock:
+    return Named[name]
