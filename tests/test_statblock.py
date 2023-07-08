@@ -2,16 +2,16 @@ from typing import Callable, Dict, TypeAlias
 
 import pytest
 
-from foundry_of_foes import BaseStatblock
-from foundry_of_foes import as_aberration as aberration
-from foundry_of_foes import as_ambusher_all as ambusher
-from foundry_of_foes import as_artillery_all as artillery
-from foundry_of_foes import as_bruiser_all as bruiser
-from foundry_of_foes import as_controller_all as controller
-from foundry_of_foes import as_defender_all as defender
-from foundry_of_foes import as_leader_all as leader
-from foundry_of_foes import as_skirmisher_all as skirmisher
-from foundry_of_foes import general_use_stats
+from foe_foundry import BaseStatblock
+from foe_foundry import as_aberration as aberration
+from foe_foundry import as_ambusher_all as ambusher
+from foe_foundry import as_artillery_all as artillery
+from foe_foundry import as_bruiser_all as bruiser
+from foe_foundry import as_controller_all as controller
+from foe_foundry import as_defender_all as defender
+from foe_foundry import as_leader_all as leader
+from foe_foundry import as_skirmisher_all as skirmisher
+from foe_foundry import general_use_stats
 
 StatCallable: TypeAlias = Callable[[BaseStatblock], BaseStatblock]
 

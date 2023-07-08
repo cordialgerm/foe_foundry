@@ -1,6 +1,6 @@
 import pytest
-from foundry_of_foes.die import DieFormula
-from foundry_of_foes.hp import scale_hp_formula
+
+from foe_foundry import DieFormula, scale_hp_formula
 
 
 @pytest.mark.parametrize(

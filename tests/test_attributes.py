@@ -1,4 +1,4 @@
-from foundry_of_foes.attributes import Attributes, Skills, Stats
+from foe_foundry import Attributes, Skills, Stats
 
 
 def test_attribute_modifiers():

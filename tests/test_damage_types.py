@@ -1,4 +1,4 @@
-from foundry_of_foes.damage import DamageType
+from foe_foundry import DamageType
 
 
 def test_all_types():

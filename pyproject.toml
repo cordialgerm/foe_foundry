@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "foundry-of-foes"
+name = "foe-foundry"
 version = "0.1.0"
 description = "Programmatically create 5E foes using Forge of Foes"
 authors = ["Evan Rash <evanrash@gmail.com>"]
 license = "CC BY 4"
 readme = "README.md"
-packages = [{include = "foundry_of_foes"}]
+packages = [{include = "foe_foundry"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"

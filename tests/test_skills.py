@@ -1,4 +1,4 @@
-from foundry_of_foes.skills import Stats, Skills
+from foe_foundry import Skills, Stats
 
 
 def test_all_stats():

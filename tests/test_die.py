@@ -2,7 +2,7 @@ from typing import Type
 
 import pytest
 
-from foundry_of_foes.die import Die, DieFormula
+from foe_foundry import Die, DieFormula
 
 
 def test_die_enum():

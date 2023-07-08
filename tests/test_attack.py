@@ -1,4 +1,4 @@
-from foundry_of_foes.damage import Attack, Damage
+from foe_foundry import Attack, Damage
 
 
 def test_attack_delta():
