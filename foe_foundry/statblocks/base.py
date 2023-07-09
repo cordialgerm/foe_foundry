@@ -7,7 +7,7 @@ from typing import List
 from ..ac import ArmorClass
 from ..attributes import Attributes
 from ..creature_types import CreatureType
-from ..damage import Attack, DamageType
+from ..damage import Attack, AttackType, DamageType
 from ..die import DieFormula
 from ..hp import scale_hp_formula
 from ..movement import Movement
@@ -41,7 +41,7 @@ class BaseStatblock:
     languages: List[str] = field(default_factory=list)
     senses: Senses = field(default_factory=Senses)
     role: MonsterRole = MonsterRole.Default
-    is_ranged: bool = False
+    attack_type: AttackType = AttackType.MeleeWeapon
 
     def __post_init__(self):
         mod = self.attributes.stat_mod(self.primary_attribute) + self.difficulty_class_modifier
@@ -78,6 +78,7 @@ class BaseStatblock:
             languages=deepcopy(self.languages),
             senses=deepcopy(self.senses),
             role=self.role,
+            attack_type=self.attack_type,
         )
         return args
 

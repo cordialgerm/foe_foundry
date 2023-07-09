@@ -6,7 +6,7 @@ from foe_foundry.statblocks import BaseStatblock
 
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
-from ..damage import DamageType
+from ..damage import AttackType, DamageType
 from ..features import ActionType, Feature
 from ..role_types import MonsterRole
 from ..size import Size
@@ -243,7 +243,10 @@ class Frenzy(Power):
 
         # high-WIS foes should be excluded
         # primarily ranged foes should be excluded
-        if candidate.attributes.WIS >= 16 or candidate.is_ranged:
+        if candidate.attributes.WIS >= 16 or candidate.attack_type in {
+            AttackType.RangedSpell,
+            AttackType.RangedWeapon,
+        }:
             return NO_AFFINITY
 
         score = LOW_AFFINITY
@@ -329,7 +332,7 @@ class MarkTheTarget(Power):
         score = LOW_AFFINITY
         if candidate.attributes.INT >= 14:
             score += MODERATE_AFFINITY
-        if candidate.is_ranged:
+        if candidate.attack_type in {AttackType.RangedSpell, AttackType.RangedWeapon}:
             score += MODERATE_AFFINITY
         if candidate.role in {MonsterRole.Artillery, MonsterRole.Controller}:
             score += MODERATE_AFFINITY
