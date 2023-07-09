@@ -98,6 +98,10 @@ class Attributes:
 
         return self.copy(proficient_skills=new_profs, expertise_skills=new_expertise)
 
+    def grant_save_proficiency(self, *saves: Stats) -> Attributes:
+        new_saves = self.proficient_saves | set(saves)
+        return self.copy(proficient_saves=new_saves)
+
     @property
     def saves(self) -> dict[Stats, int]:
         results = {}

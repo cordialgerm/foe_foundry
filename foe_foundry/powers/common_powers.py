@@ -31,6 +31,13 @@ def common_powers() -> List[Power]:
         GoesDownFighting(),
         Lethal(),
         MarkTheTarget(),
+        NotDeadYet(),
+        ParryAndRiposte(),
+        QuickRecovery(),
+        RefuseToSurrender(),
+        Reposition(),
+        Telekinetic(),
+        Vanish(),
     ]
 
 
@@ -105,14 +112,18 @@ class DamagingWeapon(Power):
         super().__init__(name="Damaging Weapon", rarity=PowerRarity.Common)
 
     def score(self, candidate: BaseStatblock) -> float:
-        # this power makes a lot of sense for monsters that have a secondary damage type defined
-        # alternatively, skirmishers and ambushers could apply poison damage
+        # this power makes a lot of sense for monsters that use a dedicated weapon
+        # monsters that have a secondary damage type are also preferred (if not, use poison)
+        # ambushers get a boost to this as well
+
         score = LOW_AFFINITY
 
+        if candidate.attack_type in {AttackType.MeleeWeapon, AttackType.RangedWeapon}:
+            score += EXTRA_HIGH_AFFINITY
         if candidate.secondary_damage_type is not None:
-            score += HIGH_AFFINITY
-        elif candidate.role in [MonsterRole.Ambusher or MonsterRole.Skirmisher]:
-            score += HIGH_AFFINITY
+            score += LOW_AFFINITY
+        if candidate.role == MonsterRole.Ambusher:
+            score += LOW_AFFINITY
 
         return score
 
@@ -350,77 +361,265 @@ class MarkTheTarget(Power):
         return stats, feature
 
 
-class NotDeadYet:
-    pass
+class NotDeadYet(Power):
+    """When this creature is reduced to 0 hit points, they drop prone and are indistinguishable from a dead creature.
+    At the start of their next turn, this creature stands up without using any movement and has 2x CR hit points.
+    They can then take their turn normally."""
+
+    def __init__(self):
+        super().__init__(name="Not Dead Yet", rarity=PowerRarity.Uncommon)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this power makes a lot of sense for undead, oozes, beasts, and monstrosities
+        score = LOW_AFFINITY
+        if candidate.creature_type in {
+            CreatureType.Ooze,
+            CreatureType.Undead,
+            CreatureType.Beast,
+            CreatureType.Monstrosity,
+        }:
+            score += HIGH_AFFINITY
+        if Skills.Deception in candidate.attributes.proficient_skills:
+            score += MODERATE_AFFINITY
+        if Skills.Deception in candidate.attributes.proficient_skills:
+            score += HIGH_AFFINITY
+        return score
+
+    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
+        stats = stats.copy(attributes=new_attrs)
+
+        hp = int(ceil(2.0 * stats.cr))
+
+        feature = Feature(
+            name="Not Dead Yet",
+            description=f"When this creature is reduced to 0 hit points, it drops prone and is indistinguishable from a dead creature. \
+                        At the start of their next turn, this creature stands up without using any movement and has {hp} hit points. It can take its turn normally",
+            action=ActionType.Reaction,
+            uses=1,
+        )
+        return stats, feature
 
 
-# Not Dead Yet (Trait, 1/Day). When this creature is reduced to
-# 0 hit points, they drop prone and are indistinguishable from
-# a dead creature. At the start of their next turn, this creature
-# stands up without using any movement and has 2 × CR hit
-# points. They can then take their turn normally.
+class ParryAndRiposte(Power):
+    """This creature adds +3 to their Armor Class against one melee attack that would hit them.
+    If the attack misses, this creature can immediately make a weapon attack against the creature making the parried attack.
+    """
+
+    def __init__(self):
+        super().__init__(name="Parry and Riposte", rarity=PowerRarity.Uncommon)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this monster requires a melee weapon
+        # it makes a ton of sense for defenders and leaders
+        # clever and dextrous foes get a boost as well
+        if candidate.attack_type != AttackType.MeleeWeapon:
+            return NO_AFFINITY
+
+        score = MODERATE_AFFINITY
+        if candidate.role in {MonsterRole.Defender, MonsterRole.Leader}:
+            score += HIGH_AFFINITY
+        if candidate.attributes.INT >= 14:
+            score += MODERATE_AFFINITY
+        if candidate.attributes.WIS >= 14:
+            score += MODERATE_AFFINITY
+        if candidate.attributes.DEX >= 14:
+            score += MODERATE_AFFINITY
+
+        return score
+
+    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Parry and Riposte",
+            description="This creature adds +3 to their Armor Class against one melee attack that would hit them.\
+                         If the attack misses, this creature can immediately make a weapon attack against the creature making the parried attack.",
+            action=ActionType.Reaction,
+            recharge=6,
+        )
+        return stats, feature
 
 
-class ParryAndRiposte:
-    pass
+class QuickRecovery(Power):
+    """Quick Recovery (Trait). At the start of this creature's turn, they can attempt a saving throw
+    against any effect on them that can be ended by a successful saving throw."""
+
+    def __init__(self):
+        super().__init__(name="Quick Recovery", rarity=PowerRarity.Uncommon)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this power makes a lot of sense for high CR creatures, creatures with high CON (resilient), or high CHA (luck)
+        score = LOW_AFFINITY
+        if candidate.cr >= 8:
+            score += MODERATE_AFFINITY
+        if candidate.cr >= 12:
+            score += MODERATE_AFFINITY
+        if candidate.attributes.CON >= 16:
+            score += MODERATE_AFFINITY
+        if candidate.attributes.CHA >= 16:
+            score += MODERATE_AFFINITY
+        if candidate.role == MonsterRole.Leader:
+            score += MODERATE_AFFINITY
+        return score
+
+    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+        # add CON save proficiency
+        new_attrs = stats.attributes.grant_save_proficiency(Stats.CON)
+        stats = stats.copy(attributes=new_attrs)
+
+        feature = Feature(
+            name="Quick Recovery",
+            description="At the start of this creature's turn, they can attempt a saving throw \
+                         against any effect on them that can be ended by a successful saving throw",
+            action=ActionType.Feature,
+        )
+        return stats, feature
 
 
-# Parry and Riposte (Reaction, Recharge 6). This creature adds
-# +3 to their Armor Class against one melee attack that would
-# hit them. If the attack misses, this creature can immediately
-# make a weapon attack against the creature making the
-# parried attack.
+class RefuseToSurrender(Power):
+    """When this creature’s current hit points are below half their hit point maximum,
+    the creature deals CR extra damage with each of their attacks."""
+
+    def __init__(self):
+        super().__init__(name="Refuse to Surrender", rarity=PowerRarity.Uncommon)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this power makes a lot of sense for larger creatures, creatures with more HP, higher CR creatures, and Bruisers
+        score = LOW_AFFINITY
+        if candidate.size in {Size.Large, Size.Huge, Size.Gargantuan}:
+            score += MODERATE_AFFINITY
+        if candidate.attributes.CON >= 14:
+            score += MODERATE_AFFINITY
+        if candidate.cr >= 4:
+            score += MODERATE_AFFINITY
+        if candidate.role == MonsterRole.Bruiser:
+            score += HIGH_AFFINITY
+        return score
+
+    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+        threshold = int(ceil(stats.hp.average / 2.0))
+        dmg = int(ceil(stats.cr))
+        feature = Feature(
+            name="Refuse to Surrender",
+            description=f"When this creature's current hit points are below {threshold}, the creature deals an extra {dmg} damage with each of its attacks.",
+            action=ActionType.Feature,
+        )
+        return stats, feature
 
 
-class QuickRecovery:
-    pass
+class Reposition(Power):
+    """Each ally within 60 feet of this creature who can see and hear them
+    can immediately move their speed without provoking opportunity attacks."""
+
+    def __init__(self):
+        super().__init__(name="Reposition", rarity=PowerRarity.Uncommon)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this trait makes a lot of sense for leaders and high-int enemies
+
+        if candidate.role == MonsterRole.Leader or candidate.attributes.INT >= 16:
+            return EXTRA_HIGH_AFFINITY
+        else:
+            return NO_AFFINITY
+
+    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Reposition",
+            description="Each ally within 60 ft that can see and hear this creature \
+                can immediately move its speed without provoking opportunity attacks",
+            action=ActionType.BonusAction,
+            uses=1,
+        )
+        return stats, feature
 
 
-# Quick Recovery (Trait). At the start of this creature’s turn, they
-# can attempt a saving throw against any effect on them that can
-# be ended by a successful saving throw.
+class Sneaky(Power):
+    """Sneaky (Trait). This creature has advantage on Dexterity(Stealth) checks."""
+
+    def __init__(self):
+        super().__init__(name="Sneaky", rarity=PowerRarity.Common)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this is really good for ambushers that aren't yet expertise in stealth
+        if candidate.role != MonsterRole.Ambusher:
+            return NO_AFFINITY
+        elif Skills.Stealth in candidate.attributes.expertise_skills:
+            return NO_AFFINITY  # already has this ability basically
+        else:
+            return EXTRA_HIGH_AFFINITY
+
+    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(
+            Skills.Stealth, Skills.Deception
+        )
+        stats = stats.copy(attributes=new_attrs)
+        feature = Feature(
+            name="Sneaky",
+            description="This creature gainst proficiency (or expertise) in Stealth and Deception",
+            action=ActionType.Feature,
+        )
+        return stats, feature
 
 
-class RefuseToSurrender:
-    pass
+class Telekinetic(Power):
+    """This creature chooses one creature they can see within 100 feet of them
+    weighing less than 400 pounds. The target must succeed on a Strength saving throw
+    (DC = 11 + 1/2 CR) or be pulled up to 80 feet directly toward this creature."""
+
+    def __init__(self):
+        super().__init__(name="Telekinetic", rarity=PowerRarity.Uncommon)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this is great for aberrations, psychic focused creatures, and controllers
+        score = LOW_AFFINITY
+        if candidate.creature_type == CreatureType.Aberration:
+            score += MODERATE_AFFINITY
+        if candidate.secondary_damage_type == DamageType.Psychic:
+            score += MODERATE_AFFINITY
+        if candidate.role == MonsterRole.Controller:
+            score += HIGH_AFFINITY
+        return score
+
+    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Psychic)
+
+        dc = int(ceil(11 + stats.cr / 2.0))
+
+        feature = Feature(
+            name="Telekinetic Grasp",
+            description=f"This creature chooses one creature they can see within 100 feet weighting less than 400 pounds. \
+                The target must succeed on a DC {dc} Strength saving throw or be pulled up to 80 feet directly toward this creature",
+            action=ActionType.BonusAction,
+        )
+        return stats, feature
 
 
-# Refuse to Surrender (Trait). When this creature’s current hit
-# points are below half their hit point maximum, the creature
-# deals CR extra damage with each of their attacks.
+class Vanish(Power):
+    """This creature can use the Disengage action, then can hide if they have cover"""
 
+    def __init__(self):
+        super().__init__(name="Vanish", rarity=PowerRarity.Uncommon)
 
-class Reposition:
-    pass
+    def score(self, candidate: BaseStatblock) -> float:
+        # this is amazing for ambushers and stealth / DEX fighters
+        score = LOW_AFFINITY
+        if candidate.primary_attribute == Stats.DEX:
+            score += LOW_AFFINITY
+        if Skills.Stealth in candidate.attributes.proficient_skills:
+            score += MODERATE_AFFINITY
+        if Skills.Stealth in candidate.attributes.expertise_skills:
+            score += HIGH_AFFINITY
+        if candidate.role == MonsterRole.Ambusher:
+            score += HIGH_AFFINITY
+        return score
 
+    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
+        stats = stats.copy(attributes=new_attrs)
 
-# Reposition (Bonus Action, 1/Day). Each ally within 60 feet
-# of this creature who can see and hear them can immediately
-# move their speed without provoking opportunity attacks.
-
-
-class Sneaky:
-    pass
-
-
-# Sneaky (Trait). This creature has advantage on Dexterity
-# (Stealth) checks.
-
-
-class Telekinetic:
-    pass
-
-
-# Telekinetic Grasp (Action). This creature chooses one creature
-# they can see within 100 feet of them weighing less than 400
-# pounds. The target must succeed on a Strength saving throw
-# (DC = 11 + 1/2 CR) or be pulled up to 80 feet directly toward
-# this creature.
-
-
-class Vanish:
-    pass
-
-
-# Vanish (Bonus Action). This creature can use the Disengage
-# action, then can hide if they have cover
+        feature = Feature(
+            name="Vanish",
+            description="This creature can use the Disengage action, then can hide if they have cover.",
+            action=ActionType.BonusAction,
+        )
+        return stats, feature
