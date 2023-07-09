@@ -1,11 +1,6 @@
-from typing import Dict
-
-import numpy as np
-
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock, MonsterDials
-
-rng = np.random.default_rng(20210518)
+from .template import RoleTemplate, role_variant
 
 
 def as_default_controller(stats: BaseStatblock) -> BaseStatblock:
@@ -13,17 +8,7 @@ def as_default_controller(stats: BaseStatblock) -> BaseStatblock:
     return stats.apply_monster_dials(dials).copy(role=MonsterRole.Controller, is_ranged=True)
 
 
-ControllerVariants = {"Controller.default": as_default_controller}
-
-
-def as_controller(stats: BaseStatblock, variant: str | None = None) -> BaseStatblock:
-    if variant is None:
-        keys = list(ControllerVariants.keys())
-        v: str = rng.choice(keys)
-        variant = v
-
-    return ControllerVariants[variant](stats=stats)
-
-
-def as_controller_all(stats: BaseStatblock) -> Dict[str, BaseStatblock]:
-    return {k: v(stats=stats) for k, v in ControllerVariants.items()}
+ControllerDefault = role_variant(
+    "Controller.Default", MonsterRole.Controller, as_default_controller
+)
+Controller = RoleTemplate("Controller", MonsterRole.Controller, [ControllerDefault])

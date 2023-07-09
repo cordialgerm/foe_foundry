@@ -1,13 +1,7 @@
-from typing import Dict
-
-import numpy as np
-
 from ..role_types import MonsterRole
 from ..skills import Stats
 from ..statblocks import BaseStatblock, MonsterDials
-
-rng = np.random.default_rng(20210518)
-
+from .template import RoleTemplate, role_variant
 
 defender_save_proficiencies = dict(proficient_saves=set(Stats.All()))
 
@@ -50,22 +44,25 @@ def as_high_hp_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
     return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
 
-DefenderVariants = {
-    "Defender.HighAcLowDamage": as_high_ac_low_damage_defender,
-    "Defender.HighAcLowHit": as_high_ac_low_hit_defender,
-    "Defender.HighHpLowDamage": as_high_hp_low_damage_defender,
-    "Defender.HighHpLowHit": as_high_hp_low_hit_defender,
-}
-
-
-def as_defender(stats: BaseStatblock, variant: str | None = None) -> BaseStatblock:
-    if variant is None:
-        keys = list(DefenderVariants.keys())
-        v: str = rng.choice(keys)
-        variant = v
-
-    return DefenderVariants[variant](stats=stats)
-
-
-def as_defender_all(stats: BaseStatblock) -> Dict[str, BaseStatblock]:
-    return {k: v(stats=stats) for k, v in DefenderVariants.items()}
+DefenderHighAcLowDamage = role_variant(
+    "Defender.HighAcLowDmg", MonsterRole.Defender, as_high_ac_low_damage_defender
+)
+DefenderHighAcLowHit = role_variant(
+    "Defender.HighAcLowHit", MonsterRole.Defender, as_high_ac_low_hit_defender
+)
+DefenderHighHpLowDamage = role_variant(
+    "Defender.HighHpLowDamage", MonsterRole.Defender, as_high_hp_low_damage_defender
+)
+DefenderHighHpLowHit = role_variant(
+    "Defender.HighHpLowHit", MonsterRole.Defender, as_high_hp_low_hit_defender
+)
+Defender = RoleTemplate(
+    "Defender",
+    MonsterRole.Defender,
+    [
+        DefenderHighAcLowDamage,
+        DefenderHighAcLowHit,
+        DefenderHighHpLowDamage,
+        DefenderHighHpLowHit,
+    ],
+)

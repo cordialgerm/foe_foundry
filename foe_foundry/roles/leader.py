@@ -1,11 +1,6 @@
-from typing import Dict
-
-import numpy as np
-
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock, MonsterDials
-
-rng = np.random.default_rng(20210518)
+from .template import RoleTemplate, role_variant
 
 
 def as_low_hit_leader(stats: BaseStatblock) -> BaseStatblock:
@@ -23,21 +18,7 @@ def as_low_dmg_leader(stats: BaseStatblock) -> BaseStatblock:
     return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
 
-LeaderVariants = {
-    "Leader.LowHit": as_low_hit_leader,
-    "Leader.LowHp": as_low_hp_leader,
-    "Leader.LowDmg": as_low_dmg_leader,
-}
-
-
-def as_leader(stats: BaseStatblock, variant: str | None = None) -> BaseStatblock:
-    if variant is None:
-        keys = list(LeaderVariants.keys())
-        v: str = rng.choice(keys)
-        variant = v
-
-    return LeaderVariants[variant](stats=stats)
-
-
-def as_leader_all(stats: BaseStatblock) -> Dict[str, BaseStatblock]:
-    return {k: v(stats=stats) for k, v in LeaderVariants.items()}
+LeaderLowHit = role_variant("Leader.LowHit", MonsterRole.Leader, as_low_hit_leader)
+LeaderLowHp = role_variant("Leader.LowHp", MonsterRole.Leader, as_low_hp_leader)
+LeaderLowDmg = role_variant("Leader.LowDmg", MonsterRole.Leader, as_low_dmg_leader)
+Leader = RoleTemplate("Leader", MonsterRole.Leader, [LeaderLowHit, LeaderLowHp, LeaderLowDmg])

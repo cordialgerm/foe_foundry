@@ -1,11 +1,6 @@
-from typing import Dict
-
-import numpy as np
-
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock, MonsterDials
-
-rng = np.random.default_rng(20210518)
+from .template import RoleTemplate, role_variant
 
 
 def as_low_hit_bruiser(stats: BaseStatblock) -> BaseStatblock:
@@ -23,21 +18,9 @@ def as_low_ac_bruiser(stats: BaseStatblock) -> BaseStatblock:
     return stats.apply_monster_dials(dials).copy(role=MonsterRole.Bruiser)
 
 
-BruteVariants = {
-    "Brute.LowHit": as_low_hit_bruiser,
-    "Brute.LowHp": as_low_hp_bruiser,
-    "Brute.LowAc": as_low_ac_bruiser,
-}
-
-
-def as_bruiser(stats: BaseStatblock, variant: str | None = None) -> BaseStatblock:
-    if variant is None:
-        keys = list(BruteVariants.keys())
-        v: str = rng.choice(keys)
-        variant = v
-
-    return BruteVariants[variant](stats=stats)
-
-
-def as_bruiser_all(stats: BaseStatblock) -> Dict[str, BaseStatblock]:
-    return {k: v(stats=stats) for k, v in BruteVariants.items()}
+BruiserLowHit = role_variant("Bruiser.LowHit", MonsterRole.Bruiser, as_low_hit_bruiser)
+BruiserLowHp = role_variant("Bruiser.LowHp", MonsterRole.Bruiser, as_low_hp_bruiser)
+BruiserLowAc = role_variant("Bruiser.LowAc", MonsterRole.Bruiser, as_low_ac_bruiser)
+Bruiser = RoleTemplate(
+    "Bruiser", MonsterRole.Bruiser, [BruiserLowHit, BruiserLowHp, BruiserLowAc]
+)
