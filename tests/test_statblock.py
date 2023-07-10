@@ -4,18 +4,21 @@ import pytest
 
 from foe_foundry import (
     BaseStatblock,
+    CommonPowers,
     CreatureTypeTemplate,
     Power,
     RoleVariant,
     Statblock,
+    UncommonPowers,
     all_creature_templates,
     all_role_variants,
-    common_powers,
     general_use_stats,
 )
 
 
-@pytest.mark.parametrize("power", [pytest.param(p, id=p.key) for p in common_powers()])
+@pytest.mark.parametrize(
+    "power", [pytest.param(p, id=p.key) for p in CommonPowers + UncommonPowers]
+)
 @pytest.mark.parametrize(
     "role_variant", [pytest.param(r, id=r.key) for r in all_role_variants()]
 )

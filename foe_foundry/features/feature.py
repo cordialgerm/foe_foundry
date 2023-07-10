@@ -10,3 +10,4 @@ class Feature:
     action: ActionType
     recharge: int | None = None
     uses: int | None = None
+    replaces_multiattack: bool = False
