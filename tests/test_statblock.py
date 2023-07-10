@@ -1,5 +1,3 @@
-from typing import Callable, Dict, TypeAlias
-
 import pytest
 
 from foe_foundry import (
@@ -9,7 +7,7 @@ from foe_foundry import (
     Power,
     RoleVariant,
     Statblock,
-    UncommonPowers,
+    StaticPowers,
     all_creature_templates,
     all_role_variants,
     general_use_stats,
@@ -17,7 +15,7 @@ from foe_foundry import (
 
 
 @pytest.mark.parametrize(
-    "power", [pytest.param(p, id=p.key) for p in CommonPowers + UncommonPowers]
+    "power", [pytest.param(p, id=p.key) for p in CommonPowers + StaticPowers]
 )
 @pytest.mark.parametrize(
     "role_variant", [pytest.param(r, id=r.key) for r in all_role_variants()]

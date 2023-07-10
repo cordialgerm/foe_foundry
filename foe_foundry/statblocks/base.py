@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from copy import deepcopy
 from dataclasses import dataclass, field
-from typing import List
+from typing import List, Set
 
 from ..ac import ArmorClass
 from ..attributes import Attributes
@@ -42,6 +42,8 @@ class BaseStatblock:
     senses: Senses = field(default_factory=Senses)
     role: MonsterRole = MonsterRole.Default
     attack_type: AttackType = AttackType.MeleeWeapon
+    damage_resistances: Set[DamageType] = field(default_factory=set)
+    damage_immunities: Set[DamageType] = field(default_factory=set)
 
     def __post_init__(self):
         mod = self.attributes.stat_mod(self.primary_attribute) + self.difficulty_class_modifier
@@ -79,6 +81,8 @@ class BaseStatblock:
             senses=deepcopy(self.senses),
             role=self.role,
             attack_type=self.attack_type,
+            damage_resistances=deepcopy(self.damage_resistances),
+            damage_immunities=deepcopy(self.damage_immunities),
         )
         return args
 

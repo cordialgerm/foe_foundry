@@ -1,18 +1,14 @@
-from math import ceil, floor
-from typing import List, Tuple
+from math import floor
+from typing import Tuple
 
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
-from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
-from ..damage import AttackType, DamageType
+from ..damage import AttackType
 from ..features import ActionType, Feature
-from ..role_types import MonsterRole
-from ..size import Size
 from ..statblocks import BaseStatblock
-from .power import Power
-from .rarity import PowerRarity
+from .power import Power, PowerType
 from .scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -29,7 +25,7 @@ class _GraspingTentacles(Power):
     target. This creature can sprout 1d4 tentacles."""
 
     def __init__(self):
-        super().__init__(name="Grasping Tentacles", rarity=PowerRarity.Creature)
+        super().__init__(name="Grasping Tentacles", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
         if candidate.creature_type != CreatureType.Aberration:
@@ -61,7 +57,7 @@ class _DominatingGaze(Power):
     by this creature."""
 
     def __init__(self):
-        super().__init__(name="Dominating Gaze", rarity=PowerRarity.Creature)
+        super().__init__(name="Dominating Gaze", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
         if candidate.creature_type != CreatureType.Aberration:

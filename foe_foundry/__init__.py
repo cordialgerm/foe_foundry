@@ -7,7 +7,7 @@ from .die import Die, DieFormula  # noqa
 from .features import ActionType, Feature  # noqa
 from .hp import scale_hp_formula  # noqa
 from .movement import Movement  # noqa
-from .powers import CommonPowers, Power, UncommonPowers  # noqa
+from .powers import CommonPowers, Power, StaticPowers  # noqa
 from .roles import Defender  # noqa
 from .roles import (
     Ambusher,

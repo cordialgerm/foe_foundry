@@ -1,16 +1,18 @@
 from abc import ABC, abstractmethod
-from dataclasses import dataclass
 from typing import Tuple
+
+import numpy as np
 
 from ..features import Feature
 from ..statblocks import BaseStatblock
-from .rarity import PowerRarity
+from .power_type import PowerType
 
 
 class Power(ABC):
-    def __init__(self, name: str, rarity: PowerRarity):
+    def __init__(self, name: str, power_type: PowerType):
         self.name = name
-        self.rarity = rarity
+        self.power_type = power_type
+        self.rng = np.random.default_rng(20210518)
 
     @property
     def key(self) -> str:
