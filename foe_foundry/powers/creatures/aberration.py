@@ -1,15 +1,15 @@
 from math import floor
-from typing import Tuple
+from typing import List, Tuple
 
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
-from ..creature_types import CreatureType
-from ..damage import AttackType
-from ..features import ActionType, Feature
-from ..statblocks import BaseStatblock
-from .power import Power, PowerType
-from .scores import (
+from ...creature_types import CreatureType
+from ...damage import AttackType
+from ...features import ActionType, Feature
+from ...statblocks import BaseStatblock
+from ..power import Power, PowerType
+from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
     LOW_AFFINITY,
@@ -82,8 +82,10 @@ class _DominatingGaze(Power):
         return stats, feature
 
 
-GraspingTentacles = _GraspingTentacles()
-DominatingGaze = _DominatingGaze()
+GraspingTentacles: Power = _GraspingTentacles()
+DominatingGaze: Power = _DominatingGaze()
+
+AberrationPowers: List[Power] = [GraspingTentacles, DominatingGaze]
 
 # TODO - future options
 # Eye Beams

@@ -2,6 +2,7 @@ from math import ceil
 from typing import List, Tuple
 
 from foe_foundry.features import Feature
+from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
 
 from ..ac import flavorful_ac
@@ -20,95 +21,6 @@ from .scores import (
     MODERATE_AFFINITY,
     NO_AFFINITY,
 )
-
-
-class _DamagingAttack(Power):
-    """This creature’s attacks deal an extra CR damage of a type appropriate for the creature."""
-
-    def __init__(self):
-        super().__init__(name="Damaging Attack", power_type=PowerType.Common)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        # this power can make sense for any monster
-        # monsters that use a dedicated weapon or already have a secondary damage type assigned are preferred slightly
-        # ambushers get a boost to this as well
-
-        score = MODERATE_AFFINITY
-
-        if candidate.attack_type in {AttackType.MeleeWeapon, AttackType.RangedWeapon}:
-            score += LOW_AFFINITY
-        if candidate.secondary_damage_type is not None:
-            score += LOW_AFFINITY
-        if candidate.role == MonsterRole.Ambusher:
-            score += LOW_AFFINITY
-
-        return score
-
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
-        # if the monster doesn't already have a damage type, use poison
-        if stats.secondary_damage_type is None:
-            stats = stats.copy(secondary_damage_type=DamageType.Poison)
-
-        damage_type = stats.secondary_damage_type
-
-        # TODO - integrate this directly into the Attack
-        if damage_type == DamageType.Acid:
-            name = "Corrosive Attacks"
-        elif damage_type == DamageType.Cold:
-            name = "Chilling Attacks"
-        elif damage_type == DamageType.Fire:
-            name = "Superheated Attacks"
-        elif damage_type == DamageType.Force:
-            name = "Energetic Attacks"
-        elif damage_type == DamageType.Lightning:
-            name = "Electrified Attacks"
-        elif damage_type == DamageType.Necrotic:
-            name = "Draining Attacks"
-        elif damage_type == DamageType.Poison:
-            name = "Poisoned Attacks"
-        elif damage_type == DamageType.Psychic:
-            name = "Unsettling Attacks"
-        elif damage_type == DamageType.Radiant:
-            name = "Divine Smite"
-        else:
-            name = "Damaging Attack"
-
-        dmg = int(ceil(stats.cr))
-
-        feature = Feature(
-            name=name,
-            description=f"This creature's attacks deal an extra {dmg} {damage_type} damage",
-            action=ActionType.Feature,
-        )
-        return stats, feature
-
-
-class _Sneaky(Power):
-    """Sneaky (Trait). This creature has advantage on Dexterity(Stealth) checks."""
-
-    def __init__(self):
-        super().__init__(name="Sneaky", power_type=PowerType.Static)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        # this is really good for ambushers that aren't yet expertise in stealth
-        if candidate.role != MonsterRole.Ambusher:
-            return NO_AFFINITY
-        elif Skills.Stealth in candidate.attributes.expertise_skills:
-            return NO_AFFINITY  # already has this ability basically
-        else:
-            return EXTRA_HIGH_AFFINITY
-
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(
-            Skills.Stealth, Skills.Deception
-        )
-        stats = stats.copy(attributes=new_attrs)
-        feature = Feature(
-            name="Sneaky",
-            description="This creature gainst proficiency (or expertise) in Stealth and Deception",
-            action=ActionType.Feature,
-        )
-        return stats, feature
 
 
 class _Armored(Power):
@@ -236,7 +148,7 @@ class _ElementalAffinity(Power):
     """This creature is aligned to a particular element"""
 
     def __init__(self):
-        super().__init__(name="Resistant", power_type=PowerType.Static)
+        super().__init__(name="ElementalAffinity", power_type=PowerType.Static)
 
     def score(self, candidate: BaseStatblock) -> float:
         # if the monster has a secondary damage type then it's a really good fit
@@ -255,9 +167,10 @@ class _ElementalAffinity(Power):
         if damage_type is None:
             candidates = flavorful_damage_types(stats.creature_type)
             if candidates is None:
-                raise ValueError("Unexpected Error: this should not happen!")
-            i = self.rng.choice(len(candidates))
-            damage_type = candidates[i]
+                damage_type = DamageType.Fire  # shouldn't happen, but provide fallback
+            else:
+                i = self.rng.choice(len(candidates))
+                damage_type = candidates[i]
             stats = stats.copy(secondary_damage_type=damage_type)
 
         if stats.cr <= 8 and damage_type not in stats.damage_resistances:
@@ -282,66 +195,109 @@ class _ElementalAffinity(Power):
         return stats, feature
 
 
-class _Speedy(Power):
+class _Gigantic(Power):
+    """Increases the size and damage of the creature but lowers its AC"""
+
     def __init__(self):
-        super().__init__(name="Speedy", power_type=PowerType.Static)
+        super().__init__(name="Gigantic", power_type=PowerType.Static)
 
     def score(self, candidate: BaseStatblock) -> float:
-        # this power makes sense for monsters with reasonable DEX that aren't defenders
-        if candidate.role == MonsterRole.Defender or candidate.attributes.DEX < 10:
+        score = 0
+        if candidate.role in {MonsterRole.Artillery, MonsterRole.Ambusher}:
             return NO_AFFINITY
+        if candidate.creature_type in {
+            CreatureType.Beast,
+            CreatureType.Monstrosity,
+            CreatureType.Construct,
+        }:
+            score += EXTRA_HIGH_AFFINITY
+        if candidate.role in {MonsterRole.Defender, MonsterRole.Bruiser}:
+            score += HIGH_AFFINITY
+        return score
 
-        return MODERATE_AFFINITY
+    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+        new_attrs = stats.attributes.grant_save_proficiency(
+            Stats.STR
+        ).grant_proficiency_or_expertise(Skills.Athletics)
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature | None]:
-        stat_mins = {Stats.DEX: 12}
-        stat_bonuses = {Stats.DEX: 2}
-
-        # give the monster reasonable DEX stat (min of 12, try to add +2, but don't exceed the creature's primary stat score)
-        new_attrs = (
-            stats.attributes.update_ranges(
-                mins=stat_mins, maxs=stats.primary_attribute_score, bonuses=stat_bonuses
+        stats = stats.copy(
+            size=stats.size.increment(), attributes=new_attrs
+        ).apply_monster_dials(
+            dials=MonsterDials(
+                ac_modifier=-2, attack_damage_dice_modifier=2, primary_attribute=Stats.STR
             )
-            .grant_proficiency_or_expertise(Skills.Acrobatics)
-            .grant_save_proficiency(Stats.DEX)
-        )
-        stats = stats.copy(attributes=new_attrs).apply_monster_dials(
-            MonsterDials(speed_modifier=10)
         )
 
         feature = Feature(
-            name="Speedy",
+            name="Gigantic",
             action=ActionType.Feature,
-            description="This monster's movement increases by 10ft and it gains proficiency in Acrobatics and Dexterity saves",
+            description="This creature is one size larger than its usual kin.",
         )
         return stats, feature
 
 
-DamagingAttack: Power = _DamagingAttack()
-Sneaky: Power = _Sneaky()
+class _Diminutive(Power):
+    """Decreases the size and damage of the creature but increases its AC"""
+
+    def __init__(self):
+        super().__init__(name="Diminutive", power_type=PowerType.Static)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        score = 0
+        if candidate.role in {MonsterRole.Bruiser} or candidate.creature_type in {
+            CreatureType.Giant
+        }:
+            return NO_AFFINITY
+        elif candidate.creature_type in {CreatureType.Humanoid, CreatureType.Fey}:
+            score += HIGH_AFFINITY
+        elif candidate.role in {
+            MonsterRole.Ambusher,
+            MonsterRole.Controller,
+            MonsterRole.Skirmisher,
+        }:
+            score += MODERATE_AFFINITY
+        return score
+
+    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(
+            Skills.Stealth, Skills.Acrobatics
+        ).grant_save_proficiency(Stats.DEX)
+
+        stats = stats.copy(
+            size=stats.size.decrement(), attributes=new_attrs
+        ).apply_monster_dials(
+            dials=MonsterDials(
+                ac_modifier=2, attack_damage_modifier=-1, primary_attribute=Stats.DEX
+            )
+        )
+
+        feature = Feature(
+            name="Diminutive",
+            action=ActionType.Feature,
+            description="This creature is one size smaller than its kin",
+        )
+        return stats, feature
+
+
 Armored: Power = _Armored()
 Keen: Power = _Keen()
 Athletic: Power = _Athletic()
 ElementalAffinity: Power = _ElementalAffinity()
-Speedy: Power = _Speedy()
+Gigantic: Power = _Gigantic()
+Diminutive: Power = _Diminutive()
+
 
 StaticPowers: List[Power] = [
-    DamagingAttack,
-    Sneaky,
     Armored,
     Keen,
     Athletic,
     ElementalAffinity,
-    Speedy,
+    Gigantic,
+    Diminutive,
 ]
 
+# TODO - additional ideas
 
-# TODO - organize these
-# Grappling Claw Attacks (Chuul)
-# Grappling Tentacle Attacks (see above)
-# Stinging Poison (Chuul, Wyvern, etc.)
-# Bite
-# Fist
-# Axe
-# Club
-# Spear
+# Perceptive (perception proficiency / expertise)
+# Hunter (survival proficiency / expertise)
+# Beasts often  have the ability to climb, swim, or fly, and they might be

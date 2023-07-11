@@ -8,7 +8,7 @@ from ..statblocks import BaseStatblock
 from .template import CreatureTypeTemplate
 
 
-class AberrationTemplate(CreatureTypeTemplate):
+class _AberrationTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Aberration", creature_type=CreatureType.Aberration)
 
@@ -53,3 +53,6 @@ class AberrationTemplate(CreatureTypeTemplate):
             secondary_damage_type=secondary_damage_type,
             attack_type=attack_type,
         )
+
+
+AberrationTemplate: CreatureTypeTemplate = _AberrationTemplate()
