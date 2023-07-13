@@ -1,4 +1,29 @@
 
+## Ideas
+
+- [ ] Creature Powers and Templates
+  - [x] Aberration
+  - [x] Beast
+  - [x] Celestial
+  - [x] Construct
+  - [ ] Dragon
+  - [ ] Elemental
+  - [ ] Fey
+  - [ ] Fiend
+  - [ ] Giant
+  - [ ] Humanoid
+  - [ ] Monstrosity
+  - [ ] Ooze
+  - [ ] Plant
+  - [ ] Undead
+- [ ] Role Powers
+- [ ] Generic Creature Templates
+- [ ] Statblock Renderers (HTML, Markdown, Foundry)
+- [ ] Attack Templates
+- [ ] Name Templates
+- [ ] Additional Creature Powers
+- [ ] Specific Creature Templates
+
 
 BaseStatblock
 

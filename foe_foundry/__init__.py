@@ -12,6 +12,7 @@ from .powers import (
     AttackPowers,
     BeastPowers,
     CommonPowers,
+    ConstructPowers,
     MovementPowers,
     Power,
     StaticPowers,

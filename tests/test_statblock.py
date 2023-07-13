@@ -14,7 +14,9 @@ from foe_foundry.powers import (
     AberrationPowers,
     AttackPowers,
     BeastPowers,
+    CelestialPowers,
     CommonPowers,
+    ConstructPowers,
     MovementPowers,
     StaticPowers,
 )
@@ -30,6 +32,8 @@ from foe_foundry.powers import (
         + AberrationPowers
         + AttackPowers
         + BeastPowers
+        + CelestialPowers
+        + ConstructPowers
     ],
 )
 @pytest.mark.parametrize(

@@ -49,9 +49,7 @@ class _BeastTemplate(CreatureTypeTemplate):
             Stats.STR: int(floor(stats.cr / 4)),
             Stats.CON: int(floor(stats.cr / 4)),
         }
-        new_attributes = stats.attributes.update_ranges(
-            mins=mins, maxs=stats.primary_attribute_score, bonuses=bonuses
-        )
+        new_attributes = stats.attributes.update_ranges(mins=mins, maxs=maxs, bonuses=bonuses)
         primary_stats = [Stats.STR, Stats.DEX]
         stat_weights = [0.7, 0.3]
         primary_stat_indx = self.rng.choice(2, p=stat_weights)

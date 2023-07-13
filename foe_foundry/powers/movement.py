@@ -119,6 +119,7 @@ class _Flyer(Power):
             CreatureType.Dragon,
             CreatureType.Fiend,
             CreatureType.Aberration,
+            CreatureType.Celestial,
         }:
             score += EXTRA_HIGH_AFFINITY
         elif candidate.creature_type in {CreatureType.Beast, CreatureType.Monstrosity}:

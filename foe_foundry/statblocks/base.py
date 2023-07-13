@@ -7,7 +7,7 @@ from typing import List, Set
 from ..ac import ArmorClass
 from ..attributes import Attributes
 from ..creature_types import CreatureType
-from ..damage import Attack, AttackType, DamageType
+from ..damage import Attack, AttackType, Condition, DamageType
 from ..die import DieFormula
 from ..hp import scale_hp_formula
 from ..movement import Movement
@@ -44,6 +44,9 @@ class BaseStatblock:
     attack_type: AttackType = AttackType.MeleeWeapon
     damage_resistances: Set[DamageType] = field(default_factory=set)
     damage_immunities: Set[DamageType] = field(default_factory=set)
+    condition_immunities: Set[Condition] = field(default_factory=set)
+    nonmagical_resistance: bool = False
+    nonmagical_immunity: bool = False
 
     def __post_init__(self):
         mod = self.attributes.stat_mod(self.primary_attribute) + self.difficulty_class_modifier
@@ -83,6 +86,9 @@ class BaseStatblock:
             attack_type=self.attack_type,
             damage_resistances=deepcopy(self.damage_resistances),
             damage_immunities=deepcopy(self.damage_immunities),
+            condition_immunities=deepcopy(self.condition_immunities),
+            nonmagical_resistance=self.nonmagical_resistance,
+            nonmagical_immunity=self.nonmagical_immunity,
         )
         return args
 
