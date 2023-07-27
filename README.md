@@ -17,12 +17,30 @@
   - [ ] Plant
   - [ ] Undead
 - [ ] Role Powers
-- [ ] Generic Creature Templates
-- [ ] Statblock Renderers (HTML, Markdown, Foundry)
+- [ ] Tag Powers
+- [ ] Creature Templates
+- [ ] Statblock Renderers
+  - [x] HTML
+  - [ ] Markdown
+  - [ ] Foundry
 - [ ] Attack Templates
 - [ ] Name Templates
 - [ ] Additional Creature Powers
 - [ ] Specific Creature Templates
+
+
+## Structural Enhancements
+
+- [ ] Powers need to be able to modify attack damage
+- [ ] action that replaces a multiattack instance needs to be implemented
+
+## Bug List
+
+- [ ] negative stat modifiers render with a ?
+- [ ] feature blocks sometimes have duplicate . at the end
+- [ ] role modifiers don't appear to modify HP
+- [ ] attack action range should be based on creature's attack type
+
 
 
 BaseStatblock

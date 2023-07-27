@@ -34,13 +34,18 @@ class Attributes:
         else:
             return None
 
-    def skill_mod(self, skill: Skills) -> int | None:
+    def skill_mod(self, skill: Skills, even_if_not_proficient: bool = False) -> int | None:
         if skill in self.expertise_skills:
             return self.stat_mod(skill.stat) + 2 * self.proficiency
         elif skill in self.proficient_skills:
             return self.stat_mod(skill.stat) + self.proficiency
+        elif even_if_not_proficient:
+            return self.stat_mod(skill.stat)
         else:
             return None
+
+    def passive_skill(self, skill: Skills) -> int:
+        return 10 + (self.skill_mod(skill, even_if_not_proficient=True) or 0)
 
     def copy(self, **args) -> Attributes:
         kwargs = asdict(self)
@@ -119,3 +124,17 @@ class Attributes:
             if skill_mod is not None:
                 results[skill] = skill_mod
         return results
+
+    def describe_saves(self) -> str:
+        pieces = []
+        for stat, mod in self.saves.items():
+            sign = "-" if mod < 0 else "+"
+            pieces.append(f"{stat.name.upper()} {sign}{abs(mod)}")
+        return ", ".join(pieces)
+
+    def describe_skills(self) -> str:
+        pieces = []
+        for skill, mod in self.skills.items():
+            sign = "-" if mod < 0 else "+"
+            pieces.append(f"{skill.name} {sign}{abs(mod)}")
+        return ", ".join(pieces)

@@ -9,14 +9,20 @@ from .leader import Leader
 from .skirmisher import Skirmisher
 from .template import RoleTemplate, RoleVariant
 
+AllRoles: List[RoleTemplate] = [
+    Ambusher,
+    Artillery,
+    Bruiser,
+    Controller,
+    Defender,
+    Leader,
+    Skirmisher,
+]
 
-def all_roles() -> List[RoleTemplate]:
-    return [Ambusher, Artillery, Bruiser, Controller, Defender, Leader, Skirmisher]
+AllRoleVariants: List[RoleVariant] = [rv for r in AllRoles for rv in r.variants]
+
+_Lookup = {r.key: r for r in AllRoles}
 
 
-def all_role_variants() -> List[RoleVariant]:
-    variants = []
-    for role in all_roles():
-        for variant in role.variants:
-            variants.append(variant)
-    return variants
+def get_role(key: str) -> RoleTemplate:
+    return _Lookup[key]

@@ -12,7 +12,7 @@ class _AberrationTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Aberration", creature_type=CreatureType.Aberration)
 
-    def apply(self, stats: BaseStatblock) -> BaseStatblock:
+    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
         # Aberrations generally have high mental stats
         # this means the minimum stat value should be 12 for mental stats
         # we should also boost mental stat scores

@@ -24,3 +24,17 @@ class Movement:
         args = asdict(self)
         args.update(kwargs)
         return Movement(**args)
+
+    def describe(self) -> str:
+        pieces = [f"{self.walk} ft."]
+
+        def add(type: str, v: int | None, postfix: str | None = None):
+            if v is not None:
+                postfix = f"({postfix})" if postfix is not None else ""
+                pieces.append(f"{type} {v} ft.{postfix}")
+
+        add("climb", self.climb)
+        add("fly", self.fly, "hover" if self.hover else None)
+        add("swim", self.swim)
+
+        return ", ".join(pieces)

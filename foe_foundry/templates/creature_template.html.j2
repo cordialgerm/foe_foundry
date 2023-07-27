@@ -1,0 +1,40 @@
+{% from 'macros.html.j2' import property, property_block, features_block, attack_block %}
+
+<stat-block>
+    <creature-heading>
+        <h1>{{name}}</h1>
+        <h2>{{size}} {{creature_type}}</h2>
+    </creature-heading>
+
+    <top-stats>
+        {{property('Armor Class', ac) }}
+        {{property('Hit Points', hp)}}
+        {{property('Speed', movement)}}
+
+        <abilities-block data-cha="{{CHA}}" data-con="{{CON}}" data-int="{{INT}}" data-str="{{STR}}" data-wis="{{WIS}}"
+            data-dex="{{DEX}}"></abilities-block>
+
+        {{property('Saving Throws', saves)}}
+        {{property('Skills', skills)}}
+        {{property('Damage Resistances', damage_resistances)}}
+        {{property('Damage Immunities', damage_immunities)}}
+        {{property('Condition Immunities', condition_immunities)}}
+        {{property('Senses', senses)}}
+        {{property('Languages', languages)}}
+        {{property('Challenge', challenge)}}
+        {{property('Proficiency Bonus', proficiency_bonus)}}
+    </top-stats>
+
+    {{features_block(passives)}}
+
+    <h3>Actions</h3>
+    {{property_block('Multiattack', multiattack)}}
+    {{attack_block(attack)}}
+
+    {{features_block(actions)}}
+
+    {{features_block(bonus_actions, 'Bonus Actions')}}
+    {{features_block(reactions, 'Reactions')}}
+
+
+</stat-block>

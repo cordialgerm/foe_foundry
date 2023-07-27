@@ -15,24 +15,18 @@ class _ConstructTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Construct", creature_type=CreatureType.Construct)
 
-    def apply(self, stats: BaseStatblock) -> BaseStatblock:
+    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
         # have either blindsight or darkvision, and a selection of
         # damage immunities and condition immunities to reflect
         # their nonliving nature. They usually can’t speak, but might
         # understand one or more languages.
 
-        # Damage Immunities poison, psychic
-        # Condition Immunities blinded, charmed, deafened,
-        # exhaustion, frightened, paralyzed, petrified, poisoned
-        # Senses blindsight 60 ft. (blind beyond this radius) or
-        # darkvision 60 ft.
-        # Languages understands certain languages but can’t speak
-
         # A construct’s strongest ability scores are usually Strength and Constitution
         primary_stat = Stats.STR
 
-        # Celestials often have resistance to radiant damage,
-        # and they might also have resistance to damage from nonmagical attacks
+        # Damage Immunities poison, psychic
+        # Condition Immunities blinded, charmed, deafened,
+        # exhaustion, frightened, paralyzed, petrified, poisoned
         damage_immunities = stats.damage_immunities | {DamageType.Poison, DamageType.Psychic}
         condition_immunities = stats.condition_immunities | {
             Condition.Exhaustion,
@@ -41,15 +35,14 @@ class _ConstructTemplate(CreatureTypeTemplate):
             Condition.Petrified,
             Condition.Poisoned,
         }
+        nonmagical_resistance = stats.cr > 8
+
+        # Senses blindsight 60 ft. (blind beyond this radius) or
+        # darkvision 60 ft.
         if stats.cr <= 8:
             new_senses = Senses(darkvision=60)
         else:
             new_senses = Senses(blindsight=60)
-
-        if stats.cr <= 8:
-            nonmagical_resistance = False
-        else:
-            nonmagical_resistance = True
 
         # Constructs attack with melee weapons like swords
         attack_type = AttackType.MeleeWeapon
@@ -69,7 +62,7 @@ class _ConstructTemplate(CreatureTypeTemplate):
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=self.rng)
 
         return stats.copy(
-            creature_type=CreatureType.Beast,
+            creature_type=CreatureType.Construct,
             size=size,
             languages=None,
             senses=new_senses,

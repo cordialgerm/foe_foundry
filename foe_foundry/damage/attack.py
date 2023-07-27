@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from ..die import DieFormula
 from .damage_types import DamageType
@@ -10,9 +10,10 @@ from .damage_types import DamageType
 class Damage:
     formula: DieFormula
     damage_type: DamageType
+    description: str = field(init=False)
 
-    def describe(self) -> str:
-        return f"{self.formula.static} ({self.formula}) {self.damage_type} damage"
+    def __post_init__(self):
+        self.description = f"{self.formula.static} ({self.formula}) {self.damage_type} damage"
 
     @staticmethod
     def from_expression(expression: str, damage_type: DamageType = DamageType.Bludgeoning):
@@ -51,4 +52,4 @@ class Attack:
         )
 
     def describe(self) -> str:
-        return f"***{self.name}***. *Ranged or Melee Weapon Attack*: +{self.hit} to hit, reach {self.reach}ft. or range {self.range}ft., one target. *Hit* {self.damage.describe()}."
+        return f"***{self.name}***. *Ranged or Melee Weapon Attack*: +{self.hit} to hit, reach {self.reach}ft. or range {self.range}ft., one target. *Hit* {self.damage.description}."

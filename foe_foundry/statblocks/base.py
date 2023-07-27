@@ -15,6 +15,7 @@ from ..role_types import MonsterRole
 from ..senses import Senses
 from ..size import Size
 from ..skills import Stats
+from ..xp import xp_by_cr
 from .dials import MonsterDials
 from .suggested_powers import recommended_powers_for_cr
 
@@ -56,6 +57,8 @@ class BaseStatblock:
         self.recommended_powers = (
             recommended_powers_for_cr(self.cr) + self.recommended_powers_modifier
         )
+
+        self.xp = xp_by_cr(self.cr)
 
     @property
     def key(self) -> str:

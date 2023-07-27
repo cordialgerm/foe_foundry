@@ -14,7 +14,7 @@ class _BeastTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Beast", creature_type=CreatureType.Beast)
 
-    def apply(self, stats: BaseStatblock) -> BaseStatblock:
+    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
         #
         # They might also have medium to high
         # Constitution or Wisdom to represent hardiness and

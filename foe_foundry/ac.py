@@ -14,6 +14,12 @@ class ArmorClass:
     def delta(self, val: int) -> ArmorClass:
         return ArmorClass(value=self.value + val, description=self.description)
 
+    def describe(self) -> str:
+        t = f"{self.value}"
+        if self.description is not None:
+            t += f" ({self.description})"
+        return t
+
 
 def flavorful_ac(ac: int, creature_type: CreatureType, role: MonsterRole) -> ArmorClass:
     if creature_type in {

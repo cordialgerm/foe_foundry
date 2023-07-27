@@ -19,7 +19,7 @@ class RoleVariant(ABC):
         return self.name.lower().replace(" ", "_").replace(".", "_")
 
     @abstractmethod
-    def apply(self, stats: BaseStatblock) -> BaseStatblock:
+    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
         pass
 
 
@@ -35,10 +35,10 @@ class RoleTemplate:
     def key(self) -> str:
         return self.name.lower().replace(" ", "_")
 
-    def apply(self, stats: BaseStatblock) -> BaseStatblock:
+    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
         try:
             v = self.variants[self.counter % len(self.variants)]
-            return v.apply(stats=stats)
+            return v.alter_base_stats(stats=stats)
         finally:
             self.counter += 1
 
@@ -48,7 +48,7 @@ class RoleVariantWrapper(RoleVariant):
         super().__init__(name=name, role=role)
         self.callback = callback
 
-    def apply(self, *args, **kwargs) -> BaseStatblock:
+    def alter_base_stats(self, *args, **kwargs) -> BaseStatblock:
         return self.callback(*args, **kwargs)
 
 

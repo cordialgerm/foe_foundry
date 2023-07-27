@@ -1,4 +1,4 @@
-from .all import all_role_variants, all_roles  # noqa
+from .all import AllRoles, AllRoleVariants, get_role  # noqa
 from .ambusher import Ambusher  # noqa
 from .artillery import Artillery  # noqa
 from .bruiser import Bruiser  # noqa

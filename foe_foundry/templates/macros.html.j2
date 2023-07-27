@@ -1,0 +1,47 @@
+{% macro property(name,text) -%}
+
+{% if text|length > 0 %}
+<property-line>
+    <h4>{{name}}</h4>
+    <p>{{text}}</p>
+</property-line>
+{% endif %}
+
+{%- endmacro %}
+
+{% macro property_block(name,text) -%}
+{% if text|length > 0 %}
+<property-block>
+    <h4>{{name}}.</h4>
+    <p>{{text}}.</p>
+</property-block>
+{% endif %}
+{%- endmacro %}
+
+{% macro attack_block(attack) -%}
+
+<property-block>
+    <h4>{{attack.name}}</h4>
+    <p><i>Ranged or Melee Weapon Attack:</i> +{{attack.hit}} to hit, reach {{attack.reach}} ft. or range
+        {{attack.range}}
+        ft., one target.
+        <i>Hit:</i> {{attack.damage.description}}
+    </p>
+</property-block>
+
+{%- endmacro %}
+
+{% macro features_block(features, heading='') -%}
+
+{% if heading|length > 0 and features|length > 0 %}
+<h3>{{heading}}</h3>
+{% endif %}
+
+{% for feature in features -%}
+<property-block>
+    <h4>{{feature.title}}.</h4>
+    <p>{{feature.description}}.</p>
+</property-block>
+{%- endfor %}
+
+{%- endmacro %}

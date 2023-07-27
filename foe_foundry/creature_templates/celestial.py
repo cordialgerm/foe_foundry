@@ -14,7 +14,7 @@ class _CelestialTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Celestial", creature_type=CreatureType.Celestial)
 
-    def apply(self, stats: BaseStatblock) -> BaseStatblock:
+    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
         # As divine beings of the Outer Planes, celestials have  high ability scores.
         # Charisma is often especially high to represent a celestial’s leadership qualities, eloquence, and beauty.
         mins = 12
@@ -57,7 +57,7 @@ class _CelestialTemplate(CreatureTypeTemplate):
             }
 
         return stats.copy(
-            creature_type=CreatureType.Beast,
+            creature_type=CreatureType.Celestial,
             size=size,
             languages=None,
             senses=new_senses,

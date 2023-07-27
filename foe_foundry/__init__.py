@@ -18,6 +18,8 @@ from .powers import (
     StaticPowers,
 )
 from .roles import (
+    AllRoles,
+    AllRoleVariants,
     Ambusher,
     Artillery,
     Bruiser,
@@ -27,8 +29,7 @@ from .roles import (
     RoleTemplate,
     RoleVariant,
     Skirmisher,
-    all_role_variants,
-    all_roles,
+    get_role,
 )
 from .skills import Skills  # noqa
 from .statblocks import BaseStatblock, MonsterDials, Statblock, general_use_stats  # noqa
