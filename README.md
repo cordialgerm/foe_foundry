@@ -17,6 +17,7 @@
   - [ ] Plant
   - [ ] Undead
 - [ ] Role Powers
+- [ ] Create a visualization that shows likelyhood of creature + role going for a giving power
 - [ ] Tag Powers
 - [ ] Creature Templates
 - [ ] Statblock Renderers
@@ -31,15 +32,16 @@
 
 ## Structural Enhancements
 
-- [ ] Powers need to be able to modify attack damage
-- [ ] action that replaces a multiattack instance needs to be implemented
+- [x] Powers need to be able to modify attack damage
+- [ ] Powers need to be able to add additional info to attack clause
+- [x] action that replaces a multiattack instance needs to be implemented
 
 ## Bug List
 
 - [ ] negative stat modifiers render with a ?
 - [ ] feature blocks sometimes have duplicate . at the end
-- [ ] role modifiers don't appear to modify HP
-- [ ] attack action range should be based on creature's attack type
+- [x] role modifiers don't appear to modify HP
+- [x] attack action range should be based on creature's attack type
 
 
 

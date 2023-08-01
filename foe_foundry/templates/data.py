@@ -75,11 +75,22 @@ class MonsterTemplateData:
             elif feature.action == ActionType.Reaction:
                 reactions.append(feature)
 
-        multiattack = (
-            f"The {selfref} makes {num2words(stats.multiattack)} attacks"
-            if stats.multiattack > 1
-            else ""
-        )
+        if stats.multiattack == 0:
+            multiattack = ""
+        else:
+            multiattack = f"The {selfref} makes {num2words(stats.multiattack)} attacks"
+
+            replace_multiattacks = [
+                f
+                for f in stats.features
+                if f.replaces_multiattack > 0 and f.replaces_multiattack <= stats.multiattack
+            ]
+            lines = []
+            for feature in replace_multiattacks:
+                replace_attacks = f"{num2words(feature.replaces_multiattack)} attack{'s' if feature.replaces_multiattack > 1 else ''}"
+                lines.append(f"{replace_attacks} with a use of its {feature.name}")
+            if len(lines) > 0:
+                multiattack += ". It may replace " + "or ".join(lines)
 
         t = MonsterTemplateData(
             name=stats.name,

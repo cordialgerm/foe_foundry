@@ -4,14 +4,11 @@ from typing import List, Tuple
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import flavorful_ac
-from ..attributes import Skills, Stats
-from ..creature_types import CreatureType
-from ..damage import AttackType, DamageType, flavorful_damage_types
+from ..damage import AttackType, Damage, DamageType
+from ..die import DieFormula
 from ..features import ActionType, Feature
 from ..role_types import MonsterRole
-from ..size import Size
-from ..statblocks import BaseStatblock, MonsterDials
+from ..statblocks import BaseStatblock
 from .power import Power, PowerType
 from .scores import (
     EXTRA_HIGH_AFFINITY,
@@ -23,7 +20,7 @@ from .scores import (
 
 
 class _DamagingAttack(Power):
-    """This creature’s attacks deal an extra CR damage of a type appropriate for the creature."""
+    """This creature's attacks deal an extra CR damage of a type appropriate for the creature."""
 
     def __init__(self):
         super().__init__(name="Damaging Attack", power_type=PowerType.Common)
@@ -45,11 +42,12 @@ class _DamagingAttack(Power):
         return score
 
     def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
-        # if the monster doesn't already have a damage type, use poison
-        if stats.secondary_damage_type is None:
-            stats = stats.copy(secondary_damage_type=DamageType.Poison)
-
         damage_type = stats.secondary_damage_type
+
+        # if the monster doesn't already have a damage type, use poison
+        if damage_type is None:
+            damage_type = DamageType.Poison
+            stats = stats.copy(secondary_damage_type=damage_type)
 
         # TODO - integrate this directly into the Attack
         if damage_type == DamageType.Acid:
@@ -80,7 +78,14 @@ class _DamagingAttack(Power):
             description=f"This creature's attacks deal an extra {dmg} {damage_type} damage",
             action=ActionType.Feature,
         )
-        return stats, feature
+
+        additional_damage = Damage(
+            formula=DieFormula.from_expression(f"{dmg}"), damage_type=damage_type
+        )
+        new_attack = stats.attack.copy(additional_damage=additional_damage)
+        new_stats = stats.copy(attack=new_attack)
+
+        return new_stats, feature
 
 
 DamagingAttack: Power = _DamagingAttack()

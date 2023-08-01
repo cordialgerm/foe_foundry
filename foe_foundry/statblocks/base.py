@@ -60,6 +60,8 @@ class BaseStatblock:
 
         self.xp = xp_by_cr(self.cr)
 
+        self.attack = self.attack.with_attack_type(self.attack_type, self.primary_damage_type)
+
     @property
     def key(self) -> str:
         return self.name.lower().replace(" ", "_")

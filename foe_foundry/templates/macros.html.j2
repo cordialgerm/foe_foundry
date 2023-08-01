@@ -20,16 +20,47 @@
 
 {% macro attack_block(attack) -%}
 
+{% if attack.is_melee -%}
+{{melee_attack_block(attack)}}
+{% else %}
+{{ranged_attack_block(attack)}}
+{%- endif %}
+
+{%- endmacro %}
+
+{% macro melee_attack_block(attack) %}
+
 <property-block>
     <h4>{{attack.name}}</h4>
-    <p><i>Ranged or Melee Weapon Attack:</i> +{{attack.hit}} to hit, reach {{attack.reach}} ft. or range
-        {{attack.range}}
-        ft., one target.
+    <p>
+        <i>Melee Weapon Attack:</i> +{{attack.hit}} to hit, reach {{attack.reach}} ft., one target.
         <i>Hit:</i> {{attack.damage.description}}
+        {% if attack.additional_damage %}
+        and {{attack.additional_damage.description }}
+        {% else %}
+        .
+        {% endif %}
     </p>
 </property-block>
 
-{%- endmacro %}
+{% endmacro %}
+
+{% macro ranged_attack_block(attack) %}
+
+<property-block>
+    <h4>{{attack.name}}</h4>
+    <p>
+        <i>Ranged Weapon Attack:</i> +{{attack.hit}} to hit, range {{attack.range}} ft., one target.
+        <i>Hit:</i> {{attack.damage.description}}
+        {% if attack.additional_damage %}
+        and {{attack.additional_damage.description }}
+        {% else %}
+        .
+        {% endif %}
+    </p>
+</property-block>
+
+{% endmacro %}
 
 {% macro features_block(features, heading='') -%}
 

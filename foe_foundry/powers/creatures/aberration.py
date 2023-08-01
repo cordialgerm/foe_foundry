@@ -75,7 +75,7 @@ class _DominatingGaze(Power):
             name="Dominating Gaze",
             action=ActionType.Action,
             recharge=4,
-            replaces_multiattack=True,
+            replaces_multiattack=1,
             description=f"One target of this creature's choice that they can see within 60 feet must succed on a DC {dc} Charisma saving throw \
                 or be forced to immediately use their reaction to make their most effective weapon attack or at-will spell or magical attack against a target chosen by this creature.",
         )

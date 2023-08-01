@@ -10,7 +10,7 @@ class Feature:
     action: ActionType
     recharge: int | None = None
     uses: int | None = None
-    replaces_multiattack: bool = False
+    replaces_multiattack: int = 0
     title: str = field(init=False)
 
     def __post_init__(self):
