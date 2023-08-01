@@ -39,7 +39,7 @@ class _BeastTemplate(CreatureTypeTemplate):
             Stats.WIS: 14,
             Stats.STR: stats.primary_attribute_score,
             Stats.CON: stats.primary_attribute_score,
-            Stats.DEX: stats.primary_attribute_score,
+            Stats.DEX: stats.primary_attribute_score - 2,
         }
         bonuses = {
             Stats.CHA: -6 + int(floor(stats.cr / 2.0)),
@@ -50,10 +50,7 @@ class _BeastTemplate(CreatureTypeTemplate):
             Stats.CON: int(floor(stats.cr / 4)),
         }
         new_attributes = stats.attributes.update_ranges(mins=mins, maxs=maxs, bonuses=bonuses)
-        primary_stats = [Stats.STR, Stats.DEX]
-        stat_weights = [0.7, 0.3]
-        primary_stat_indx = self.rng.choice(2, p=stat_weights)
-        primary_stat = primary_stats[primary_stat_indx]
+        primary_stat = Stats.STR
 
         # Beasts typically have darkvision with a 60-foot range
         new_senses = stats.senses.copy(darkvision=60)
@@ -69,6 +66,13 @@ class _BeastTemplate(CreatureTypeTemplate):
         ]
         damage_type_indx = self.rng.choice(3, p=[0.2, 0.4, 0.4])
         primary_damage_type = primary_damage_types[damage_type_indx]
+
+        # celestials with higher CR should have proficiency in their STR and CON saves
+        if stats.cr >= 4:
+            new_attributes = new_attributes.grant_save_proficiency(Stats.STR)
+
+        if stats.cr >= 7:
+            new_attributes = new_attributes.grant_save_proficiency(Stats.STR, Stats.CON)
 
         return stats.copy(
             creature_type=CreatureType.Beast,

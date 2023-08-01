@@ -85,67 +85,6 @@ class _DamagingAura(Power):
         return stats, feature
 
 
-class _DamagingWeapon(Power):
-    """This creature’s melee weapon attacks deal an extra CR damage of a type appropriate for the creature."""
-
-    def __init__(self):
-        super().__init__(name="Damaging Weapon", power_type=PowerType.Common)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        # this power makes a lot of sense for monsters that use a dedicated weapon
-        # monsters that have a secondary damage type are also preferred (if not, use poison)
-        # ambushers get a boost to this as well
-
-        score = LOW_AFFINITY
-
-        if candidate.attack_type in {AttackType.MeleeWeapon, AttackType.RangedWeapon}:
-            score += EXTRA_HIGH_AFFINITY
-        if candidate.secondary_damage_type is not None:
-            score += LOW_AFFINITY
-        if candidate.role == MonsterRole.Ambusher:
-            score += LOW_AFFINITY
-
-        return score
-
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
-        if stats.secondary_damage_type is None:
-            stats = stats.copy(secondary_damage_type=DamageType.Poison)
-
-        damage_type = stats.secondary_damage_type
-
-        # TODO - integrate this directly into the Attack
-
-        if damage_type == DamageType.Acid:
-            name = "Corrosive Attacks"
-        elif damage_type == DamageType.Cold:
-            name = "Chilling Attacks"
-        elif damage_type == DamageType.Fire:
-            name = "Superheated Attacks"
-        elif damage_type == DamageType.Force:
-            name = "Energetic Attacks"
-        elif damage_type == DamageType.Lightning:
-            name = "Electrified Attacks"
-        elif damage_type == DamageType.Necrotic:
-            name = "Draining Attacks"
-        elif damage_type == DamageType.Poison:
-            name = "Poisoned Attacks"
-        elif damage_type == DamageType.Psychic:
-            name = "Unsettling Attacks"
-        elif damage_type == DamageType.Radiant:
-            name = "Divine Smite"
-        else:
-            name = "Damaging Weapon"
-
-        dmg = int(ceil(stats.cr))
-
-        feature = Feature(
-            name=name,
-            description=f"This creature's attacks deal an extra {dmg} {damage_type} damage",
-            action=ActionType.Feature,
-        )
-        return stats, feature
-
-
 class _Defender(Power):
     """When an ally within 5 feet of this creature is targeted by an attack or spell, this creature can make themself the intended target of the attack."""
 
@@ -153,7 +92,7 @@ class _Defender(Power):
         super().__init__(name="Defender", power_type=PowerType.Common)
 
     def _is_minion(self, candidate: BaseStatblock) -> bool:
-        return candidate.cr <= 3
+        return candidate.cr <= 2
 
     def score(self, candidate: BaseStatblock) -> float:
         # TODO - should I have some sort of "encounter context"
@@ -488,9 +427,9 @@ class _QuickRecovery(Power):
     def score(self, candidate: BaseStatblock) -> float:
         # this power makes a lot of sense for high CR creatures, creatures with high CON (resilient), or high CHA (luck)
         score = LOW_AFFINITY
-        if candidate.cr >= 8:
+        if candidate.cr >= 7:
             score += MODERATE_AFFINITY
-        if candidate.cr >= 12:
+        if candidate.cr >= 11:
             score += MODERATE_AFFINITY
         if candidate.attributes.CON >= 16:
             score += MODERATE_AFFINITY
@@ -614,7 +553,6 @@ Reposition: Power = _Reposition()
 Telekinetic: Power = _Telekinetic()
 Vanish: Power = _Vanish()
 DamagingAura: Power = _DamagingAura()
-DamagingWeapon: Power = _DamagingWeapon()
 Defender: Power = _Defender()
 Frenzy: Power = _Frenzy()
 NotDeadYet: Power = _NotDeadYet()
@@ -624,7 +562,6 @@ Sneaky: Power = _Sneaky()
 
 CommonPowers: List[Power] = [
     DamagingAura,
-    DamagingWeapon,
     Defender,
     Frenzy,
     NotDeadYet,

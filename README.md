@@ -32,6 +32,9 @@
 
 ## Structural Enhancements
 
+- [ ] Redesign how attribute scaling works. Right now it's mixed in between monster dials and base stats and min/max/bonuses. Instead, attributes should be generated directly by the creature type based on CR
+
+
 - [x] Powers need to be able to modify attack damage
 - [ ] Powers need to be able to add additional info to attack clause
 - [x] action that replaces a multiattack instance needs to be implemented

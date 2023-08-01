@@ -58,10 +58,15 @@ class Attributes:
         primary_attribute_score: int,
         primary_attribute_backup_score: int = 10,
     ) -> Attributes:
-        args = {
-            primary_attribute.value: primary_attribute_score,
-            self.primary_attribute.value: primary_attribute_backup_score,
-        }
+        if self.primary_attribute != primary_attribute:
+            args = {
+                primary_attribute.value: primary_attribute_score,
+                self.primary_attribute.value: primary_attribute_backup_score,
+            }
+        else:
+            args = {
+                primary_attribute.value: primary_attribute_score,
+            }
         return self.copy(**args)
 
     def update_ranges(

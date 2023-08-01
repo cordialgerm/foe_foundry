@@ -22,6 +22,31 @@ class _ConstructTemplate(CreatureTypeTemplate):
         # understand one or more languages.
 
         # A construct’s strongest ability scores are usually Strength and Constitution
+        mins = {
+            Stats.CHA: 2,
+            Stats.INT: 4,
+            Stats.WIS: 8,
+            Stats.STR: 12,
+            Stats.CON: 12,
+            Stats.DEX: 8,
+        }
+        maxs = {
+            Stats.CHA: 8,
+            Stats.INT: 8,
+            Stats.WIS: 14,
+            Stats.STR: stats.primary_attribute_score,
+            Stats.CON: stats.primary_attribute_score,
+            Stats.DEX: stats.primary_attribute_score - 2,
+        }
+        bonuses = {
+            Stats.CHA: -6 + int(floor(stats.cr / 2.0)),
+            Stats.INT: -6 + int(floor(stats.cr / 2.0)),
+            Stats.WIS: int(floor(stats.cr / 4)),
+            Stats.DEX: int(floor(stats.cr / 4)),
+            Stats.STR: int(floor(stats.cr / 4)),
+            Stats.CON: int(floor(stats.cr / 4)),
+        }
+        new_attributes = stats.attributes.update_ranges(mins=mins, maxs=maxs, bonuses=bonuses)
         primary_stat = Stats.STR
 
         # Damage Immunities poison, psychic
@@ -35,11 +60,11 @@ class _ConstructTemplate(CreatureTypeTemplate):
             Condition.Petrified,
             Condition.Poisoned,
         }
-        nonmagical_resistance = stats.cr > 8
+        nonmagical_resistance = stats.cr >= 7
 
         # Senses blindsight 60 ft. (blind beyond this radius) or
         # darkvision 60 ft.
-        if stats.cr <= 8:
+        if stats.cr <= 7:
             new_senses = Senses(darkvision=60)
         else:
             new_senses = Senses(blindsight=60)
@@ -61,8 +86,16 @@ class _ConstructTemplate(CreatureTypeTemplate):
 
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=self.rng)
 
+        # celestials with higher CR should have proficiency in STR and CON saves
+        if stats.cr >= 4:
+            new_attributes = new_attributes.grant_save_proficiency(Stats.STR)
+
+        if stats.cr >= 7:
+            new_attributes = new_attributes.grant_save_proficiency(Stats.STR, Stats.CON)
+
         return stats.copy(
             creature_type=CreatureType.Construct,
+            attributes=new_attributes,
             size=size,
             languages=None,
             senses=new_senses,

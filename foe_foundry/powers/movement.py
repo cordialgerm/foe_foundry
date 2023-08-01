@@ -138,6 +138,7 @@ class _Flyer(Power):
             name="Flyer",
             action=ActionType.Feature,
             description=f"This creatures movement speed increases by {speed_change} and it gains a fly speed equal to its walk speed",
+            hidden=True,
         )
 
         return stats, feature

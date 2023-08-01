@@ -31,12 +31,12 @@
 {% macro melee_attack_block(attack) %}
 
 <property-block>
-    <h4>{{attack.name}}</h4>
+    <h4>{{attack.name}}.</h4>
     <p>
         <i>Melee Weapon Attack:</i> +{{attack.hit}} to hit, reach {{attack.reach}} ft., one target.
         <i>Hit:</i> {{attack.damage.description}}
         {% if attack.additional_damage %}
-        and {{attack.additional_damage.description }}
+        and {{attack.additional_damage.description }}.
         {% else %}
         .
         {% endif %}
@@ -53,7 +53,7 @@
         <i>Ranged Weapon Attack:</i> +{{attack.hit}} to hit, range {{attack.range}} ft., one target.
         <i>Hit:</i> {{attack.damage.description}}
         {% if attack.additional_damage %}
-        and {{attack.additional_damage.description }}
+        and {{attack.additional_damage.description }}.
         {% else %}
         .
         {% endif %}

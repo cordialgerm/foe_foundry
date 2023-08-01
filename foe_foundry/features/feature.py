@@ -11,6 +11,7 @@ class Feature:
     recharge: int | None = None
     uses: int | None = None
     replaces_multiattack: int = 0
+    hidden: bool = False
     title: str = field(init=False)
 
     def __post_init__(self):

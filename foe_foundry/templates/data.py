@@ -65,7 +65,7 @@ class MonsterTemplateData:
         cr = f"{cr_fraction} ({stats.xp:,.0f} XP)"
 
         passives, actions, bonus_actions, reactions = [], [], [], []
-        for feature in stats.features:
+        for feature in [f for f in stats.features if not f.hidden]:
             if feature.action == ActionType.Feature:
                 passives.append(feature)
             elif feature.action == ActionType.Action:

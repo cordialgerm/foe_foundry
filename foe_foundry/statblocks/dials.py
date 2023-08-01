@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 
 from ..skills import Stats
 
@@ -20,3 +20,8 @@ class MonsterDials:
     primary_attribute_modifier: int = 0
     primary_attribute: Stats | None = None
     attribute_backup_score: int = 10
+
+    def copy(self, **overrides) -> MonsterDials:
+        args = asdict(self)
+        args.update(overrides)
+        return MonsterDials(**args)

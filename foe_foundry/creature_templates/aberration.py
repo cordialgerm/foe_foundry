@@ -22,10 +22,7 @@ class _AberrationTemplate(CreatureTypeTemplate):
         new_attributes = stats.attributes.update_ranges(
             mins=mins, maxs=stats.primary_attribute_score, bonuses=bonuses
         )
-        primary_stats = [Stats.CHA, Stats.INT, Stats.WIS]
-        stat_weights = [0.6, 0.3, 0.1]
-        primary_stat_indx = self.rng.choice(3, p=stat_weights)
-        primary_stat = primary_stats[primary_stat_indx]
+        primary_stat = Stats.CHA
 
         new_senses = stats.senses.copy(darkvision=120)
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Medium, rng=self.rng)
@@ -41,6 +38,13 @@ class _AberrationTemplate(CreatureTypeTemplate):
             else DamageType.Psychic
         )
         secondary_damage_type = DamageType.Psychic
+
+        # aberrations with higher CR should have proficiency in CHA and WIS saves
+        if stats.cr >= 4:
+            new_attributes = new_attributes.grant_save_proficiency(Stats.CHA)
+
+        if stats.cr >= 7:
+            new_attributes = new_attributes.grant_save_proficiency(Stats.CHA, Stats.WIS)
 
         return stats.copy(
             creature_type=CreatureType.Aberration,

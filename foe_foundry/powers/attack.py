@@ -49,7 +49,6 @@ class _DamagingAttack(Power):
             damage_type = DamageType.Poison
             stats = stats.copy(secondary_damage_type=damage_type)
 
-        # TODO - integrate this directly into the Attack
         if damage_type == DamageType.Acid:
             name = "Corrosive Attacks"
         elif damage_type == DamageType.Cold:
@@ -75,7 +74,7 @@ class _DamagingAttack(Power):
 
         feature = Feature(
             name=name,
-            description=f"This creature's attacks deal an extra {dmg} {damage_type} damage",
+            description=f"This creature's attacks deal an extra {dmg} {damage_type} damage (included in the attack)",
             action=ActionType.Feature,
         )
 

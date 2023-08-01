@@ -17,7 +17,14 @@ class _CelestialTemplate(CreatureTypeTemplate):
     def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
         # As divine beings of the Outer Planes, celestials have  high ability scores.
         # Charisma is often especially high to represent a celestial’s leadership qualities, eloquence, and beauty.
-        mins = 12
+        mins = {
+            Stats.CHA: max(12, stats.primary_attribute_score - 2),
+            Stats.STR: 12,
+            Stats.CON: 12,
+            Stats.DEX: 12,
+            Stats.INT: 12,
+            Stats.WIS: 12,
+        }
         bonuses = int(floor(stats.cr / 3))
         new_attributes = stats.attributes.update_ranges(
             mins=mins, maxs=stats.primary_attribute_score, bonuses=bonuses
@@ -28,7 +35,7 @@ class _CelestialTemplate(CreatureTypeTemplate):
         # and they might also have resistance to damage from nonmagical attacks
         damage_resistances = stats.damage_resistances
         damage_immunities = stats.damage_immunities
-        if stats.cr <= 10:
+        if stats.cr <= 7:
             nonmagical_resistance = False
             damage_resistances |= {DamageType.Radiant}
         else:
@@ -37,7 +44,7 @@ class _CelestialTemplate(CreatureTypeTemplate):
 
         # The mightiest celestials possess truesight with a range of 120 feet,
         new_senses = stats.senses.copy(darkvision=120)
-        if stats.cr >= 10:
+        if stats.cr >= 11:
             new_senses = new_senses.copy(truesight=120)
 
         # Celestials attack with melee weapons like swords imbued with Radiant energy
@@ -49,12 +56,19 @@ class _CelestialTemplate(CreatureTypeTemplate):
 
         # celestials may have immunity to the charmed, exhaustion, and frightened conditions.
         condition_immunities = stats.condition_immunities
-        if stats.cr >= 5:
+        if stats.cr >= 4:
             condition_immunities |= {
                 Condition.Charmed,
                 Condition.Exhaustion,
                 Condition.Frightened,
             }
+
+        # celestials with higher CR should have proficiency in WIS and CHA saves
+        if stats.cr >= 4:
+            new_attributes = new_attributes.grant_save_proficiency(Stats.CHA)
+
+        if stats.cr >= 7:
+            new_attributes = new_attributes.grant_save_proficiency(Stats.CHA, Stats.WIS)
 
         return stats.copy(
             creature_type=CreatureType.Celestial,
