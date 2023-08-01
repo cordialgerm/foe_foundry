@@ -1,5 +1,3 @@
-from math import floor
-
 from foe_foundry.statblocks import BaseStatblock
 
 from ..attributes import Stats
@@ -15,42 +13,28 @@ class _BeastTemplate(CreatureTypeTemplate):
         super().__init__(name="Beast", creature_type=CreatureType.Beast)
 
     def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        # Beasts might have low ability scores if they are mundane
+        # creatures, with their strongest scores in either Strength
+        # or Dexterity.
         #
         # They might also have medium to high
         # Constitution or Wisdom to represent hardiness and
         # cunning.
-        #
-        #
 
-        # Beasts might have low ability scores if they are mundane
-        # creatures, with their strongest scores in either Strength
-        # or Dexterity.
-        mins = {
-            Stats.CHA: 4,
-            Stats.INT: 4,
-            Stats.WIS: 8,
-            Stats.STR: 12,
-            Stats.CON: 12,
-            Stats.DEX: 12,
-        }
-        maxs = {
-            Stats.CHA: 8,
-            Stats.INT: 8,
-            Stats.WIS: 14,
-            Stats.STR: stats.primary_attribute_score,
-            Stats.CON: stats.primary_attribute_score,
-            Stats.DEX: stats.primary_attribute_score - 2,
-        }
-        bonuses = {
-            Stats.CHA: -6 + int(floor(stats.cr / 2.0)),
-            Stats.INT: -6 + int(floor(stats.cr / 2.0)),
-            Stats.WIS: int(floor(stats.cr / 4)),
-            Stats.DEX: int(floor(stats.cr / 4)),
-            Stats.STR: int(floor(stats.cr / 4)),
-            Stats.CON: int(floor(stats.cr / 4)),
-        }
-        new_attributes = stats.attributes.update_ranges(mins=mins, maxs=maxs, bonuses=bonuses)
+        def scale_stat(base: int, cr_multiplier: float) -> int:
+            new_stat = int(round(base + stats.cr * cr_multiplier))
+            return min(new_stat, stats.primary_attribute_score)
+
         primary_stat = Stats.STR
+        attrs = {
+            Stats.STR: stats.primary_attribute_score,
+            Stats.DEX: scale_stat(10, 1 / 2),
+            Stats.CON: stats.attributes.CON,
+            Stats.INT: scale_stat(4, 1 / 3),
+            Stats.WIS: scale_stat(8, 1 / 4),
+            Stats.CHA: scale_stat(3, 1 / 3),
+        }
+        new_attributes = stats.attributes.copy(**attrs, primary_attribute=primary_stat)
 
         # Beasts typically have darkvision with a 60-foot range
         new_senses = stats.senses.copy(darkvision=60)
@@ -79,7 +63,6 @@ class _BeastTemplate(CreatureTypeTemplate):
             size=size,
             languages=None,
             senses=new_senses,
-            primary_attribute=primary_stat,
             attributes=new_attributes,
             primary_damage_type=primary_damage_type,
             secondary_damage_type=None,

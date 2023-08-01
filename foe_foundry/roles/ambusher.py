@@ -1,4 +1,4 @@
-from ..attributes import Stats
+from ..attributes import Skills, Stats
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock, MonsterDials
 from .template import RoleTemplate, role_variant
@@ -15,8 +15,16 @@ def as_low_ac_ambusher(stats: BaseStatblock) -> BaseStatblock:
 
 
 def _as_ambusher(stats: BaseStatblock, dials: MonsterDials) -> BaseStatblock:
-    dials.primary_attribute = Stats.DEX
-    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Ambusher)
+    new_attributes = stats.attributes.change_primary(Stats.DEX)
+
+    if stats.cr >= 4:
+        new_attributes = new_attributes.grant_save_proficiency(
+            Stats.DEX
+        ).grant_proficiency_or_expertise(Skills.Stealth)
+
+    return stats.apply_monster_dials(dials).copy(
+        role=MonsterRole.Ambusher, attributes=new_attributes
+    )
 
 
 AmbusherLowHp = role_variant(

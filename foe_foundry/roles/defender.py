@@ -3,16 +3,13 @@ from ..skills import Stats
 from ..statblocks import BaseStatblock, MonsterDials
 from .template import RoleTemplate, role_variant
 
-defender_save_proficiencies = dict(proficient_saves=set(Stats.All()))
-
 
 def as_high_ac_low_hit_defender(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(
         ac_modifier=3,
         attack_hit_modifier=-2,
-        attribute_modifications=defender_save_proficiencies,
     )
-    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
+    return _as_defender(stats, dials)
 
 
 def as_high_ac_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
@@ -20,18 +17,16 @@ def as_high_ac_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
         ac_modifier=3,
         attack_hit_modifier=-1,
         attack_damage_dice_modifier=-1,
-        attribute_modifications=defender_save_proficiencies,
     )
-    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
+    return _as_defender(stats, dials)
 
 
 def as_high_hp_low_hit_defender(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(
         hp_multiplier=1.3,
         attack_hit_modifier=-2,
-        attribute_modifications=defender_save_proficiencies,
     )
-    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
+    return _as_defender(stats, dials)
 
 
 def as_high_hp_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
@@ -39,9 +34,15 @@ def as_high_hp_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
         hp_multiplier=1.3,
         attack_hit_modifier=-1,
         attack_damage_dice_modifier=-1,
-        attribute_modifications=defender_save_proficiencies,
     )
-    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
+    return _as_defender(stats, dials)
+
+
+def _as_defender(stats: BaseStatblock, dials: MonsterDials):
+    new_attributes = stats.attributes.grant_save_proficiency(*Stats.All()).boost(Stats.STR, 2)
+    return stats.apply_monster_dials(dials).copy(
+        role=MonsterRole.Defender, attributes=new_attributes
+    )
 
 
 DefenderHighAcLowDamage = role_variant(

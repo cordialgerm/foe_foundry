@@ -1,6 +1,6 @@
 from foe_foundry.statblocks import BaseStatblock
 
-from ..attributes import Stats
+from ..attributes import Attributes, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..size import Size, get_size_for_cr
@@ -17,12 +17,21 @@ class _AberrationTemplate(CreatureTypeTemplate):
         # this means the minimum stat value should be 12 for mental stats
         # we should also boost mental stat scores
         # cap the max mental stat score at its primary score though
-        mins = {Stats.CHA: 12, Stats.INT: 12, Stats.WIS: 12}
-        bonuses = {Stats.CHA: 2, Stats.INT: 2, Stats.WIS: 2}
-        new_attributes = stats.attributes.update_ranges(
-            mins=mins, maxs=stats.primary_attribute_score, bonuses=bonuses
-        )
+
+        def scale_stat(base: int, cr_multiplier: float) -> int:
+            new_stat = int(round(base + stats.cr * cr_multiplier))
+            return min(new_stat, stats.primary_attribute_score)
+
         primary_stat = Stats.CHA
+        attrs = {
+            Stats.STR: scale_stat(8, 1 / 5),
+            Stats.DEX: scale_stat(8, 1 / 3),
+            Stats.CON: stats.attributes.CON,
+            Stats.INT: scale_stat(10, 1 / 4),
+            Stats.WIS: scale_stat(10, 1 / 3),
+            Stats.CHA: stats.primary_attribute_score,
+        }
+        new_attributes = stats.attributes.copy(**attrs, primary_attribute=primary_stat)
 
         new_senses = stats.senses.copy(darkvision=120)
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Medium, rng=self.rng)
@@ -51,7 +60,6 @@ class _AberrationTemplate(CreatureTypeTemplate):
             size=size,
             languages=["Deep Speech", "telepathy 120 ft."],
             senses=new_senses,
-            primary_attribute=primary_stat,
             attributes=new_attributes,
             primary_damage_type=primary_damage_type,
             secondary_damage_type=secondary_damage_type,

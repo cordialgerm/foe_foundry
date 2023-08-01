@@ -33,7 +33,6 @@ class _HitAndRun(Power):
         return score
 
     def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
-        stats = stats.apply_monster_dials(dials=MonsterDials(primary_attribute=Stats.DEX))
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.copy(attributes=new_attrs)
 
@@ -61,7 +60,6 @@ class _MotivatedByCarnage(Power):
         return score
 
     def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
-        stats = stats.apply_monster_dials(dials=MonsterDials(primary_attribute=Stats.STR))
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Survival)
         stats = stats.copy(attributes=new_attrs)
 

@@ -22,32 +22,20 @@ class _ConstructTemplate(CreatureTypeTemplate):
         # understand one or more languages.
 
         # A construct’s strongest ability scores are usually Strength and Constitution
-        mins = {
-            Stats.CHA: 2,
-            Stats.INT: 4,
-            Stats.WIS: 8,
-            Stats.STR: 12,
-            Stats.CON: 12,
-            Stats.DEX: 8,
-        }
-        maxs = {
-            Stats.CHA: 8,
-            Stats.INT: 8,
-            Stats.WIS: 14,
-            Stats.STR: stats.primary_attribute_score,
-            Stats.CON: stats.primary_attribute_score,
-            Stats.DEX: stats.primary_attribute_score - 2,
-        }
-        bonuses = {
-            Stats.CHA: -6 + int(floor(stats.cr / 2.0)),
-            Stats.INT: -6 + int(floor(stats.cr / 2.0)),
-            Stats.WIS: int(floor(stats.cr / 4)),
-            Stats.DEX: int(floor(stats.cr / 4)),
-            Stats.STR: int(floor(stats.cr / 4)),
-            Stats.CON: int(floor(stats.cr / 4)),
-        }
-        new_attributes = stats.attributes.update_ranges(mins=mins, maxs=maxs, bonuses=bonuses)
+        def scale_stat(base: int, cr_multiplier: float) -> int:
+            new_stat = int(round(base + stats.cr * cr_multiplier))
+            return min(new_stat, stats.primary_attribute_score)
+
         primary_stat = Stats.STR
+        attrs = {
+            Stats.STR: stats.primary_attribute_score,
+            Stats.DEX: scale_stat(8, 1 / 3),
+            Stats.CON: stats.attributes.CON,
+            Stats.INT: scale_stat(4, 1 / 3),
+            Stats.WIS: scale_stat(8, 1 / 4),
+            Stats.CHA: scale_stat(2, 1 / 3),
+        }
+        new_attributes = stats.attributes.copy(**attrs, primary_attribute=primary_stat)
 
         # Damage Immunities poison, psychic
         # Condition Immunities blinded, charmed, deafened,
@@ -99,7 +87,6 @@ class _ConstructTemplate(CreatureTypeTemplate):
             size=size,
             languages=None,
             senses=new_senses,
-            primary_attribute=primary_stat,
             primary_damage_type=primary_damage_type,
             secondary_damage_type=secondary_damage_type,
             attack_type=attack_type,

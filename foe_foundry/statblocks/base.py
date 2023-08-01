@@ -30,13 +30,11 @@ class BaseStatblock:
     primary_attribute_score: int
     attributes: Attributes
     attack: Attack
-    primary_attribute: Stats = Stats.STR
     multiattack: int = 1
     primary_damage_type: DamageType = DamageType.Bludgeoning
     secondary_damage_type: DamageType | None = None
     difficulty_class_modifier: int = 0
     recommended_powers_modifier: int = 0
-    attribute_backup_score: int = 10
     size: Size = Size.Medium
     creature_type: CreatureType = CreatureType.Humanoid
     languages: List[str] = field(default_factory=list)
@@ -50,7 +48,10 @@ class BaseStatblock:
     nonmagical_immunity: bool = False
 
     def __post_init__(self):
-        mod = self.attributes.stat_mod(self.primary_attribute) + self.difficulty_class_modifier
+        mod = (
+            self.attributes.stat_mod(self.attributes.primary_attribute)
+            + self.difficulty_class_modifier
+        )
         prof = self.attributes.proficiency
         self.difficulty_class = 8 + mod + prof
 
@@ -66,6 +67,10 @@ class BaseStatblock:
     def key(self) -> str:
         return self.name.lower().replace(" ", "_")
 
+    @property
+    def primary_attribute(self) -> Stats:
+        return self.attributes.primary_attribute
+
     def __copy_args__(self) -> dict:
         args: dict = dict(
             name=self.name,
@@ -76,13 +81,11 @@ class BaseStatblock:
             primary_attribute_score=self.primary_attribute_score,
             attributes=deepcopy(self.attributes),
             attack=deepcopy(self.attack),
-            primary_attribute=self.primary_attribute,
             multiattack=self.multiattack,
             primary_damage_type=self.primary_damage_type,
             secondary_damage_type=self.secondary_damage_type,
             difficulty_class_modifier=self.difficulty_class_modifier,
             recommended_powers_modifier=self.recommended_powers_modifier,
-            attribute_backup_score=self.attribute_backup_score,
             size=self.size,
             creature_type=self.creature_type,
             languages=deepcopy(self.languages),
@@ -138,24 +141,6 @@ class BaseStatblock:
         args.update(
             recommended_powers_modifier=self.recommended_powers_modifier
             + dials.recommended_powers_modifier
-        )
-
-        # resolve attributes
-        primary_attribute_score = (
-            self.primary_attribute_score + dials.primary_attribute_modifier
-        )
-        primary_attribute = dials.primary_attribute or self.primary_attribute
-        new_attributes = self.attributes.copy(
-            **dials.attribute_modifications
-        ).update_primary_attribute(
-            primary_attribute=primary_attribute,
-            primary_attribute_score=primary_attribute_score,
-            primary_attribute_backup_score=self.attribute_backup_score,
-        )
-        args.update(
-            attributes=new_attributes,
-            primary_attribute=primary_attribute,
-            primary_attribute_score=primary_attribute_score,
         )
 
         return BaseStatblock(**args)

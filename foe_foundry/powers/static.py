@@ -79,14 +79,11 @@ class _Keen(Power):
             return MODERATE_AFFINITY
 
     def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature | None]:
-        stat_mins = {Stats.CHA: 12, Stats.INT: 12, Stats.WIS: 12}
-        stat_bonuses = {Stats.CHA: 2, Stats.INT: 2, Stats.WIS: 2}
-
-        # give the monster reasonable mental stats (min of 12, try to add +2, but don't exceed the creature's primary stat score)
+        # give the monster reasonable mental stats
         new_attrs = (
-            stats.attributes.update_ranges(
-                mins=stat_mins, maxs=stats.primary_attribute_score, bonuses=stat_bonuses
-            )
+            stats.attributes.boost(Stats.CHA, 2)
+            .boost(Stats.INT, 4)
+            .boost(Stats.WIS, 2)
             .grant_proficiency_or_expertise(
                 Skills.Persuasion,
                 Skills.Deception,
@@ -124,14 +121,10 @@ class _Athletic(Power):
             return MODERATE_AFFINITY
 
     def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature | None]:
-        stat_mins = {Stats.STR: 12, Stats.DEX: 12}
-        stat_bonuses = {Stats.STR: 2, Stats.DEX: 2}
-
-        # give the monster reasonable physical stats (min of 12, try to add +2, but don't exceed the creature's primary stat score)
+        # give the monster reasonable physical stats
         new_attrs = (
-            stats.attributes.update_ranges(
-                mins=stat_mins, maxs=stats.primary_attribute_score, bonuses=stat_bonuses
-            )
+            stats.attributes.boost(Stats.STR, 4)
+            .boost(Stats.DEX, 2)
             .grant_proficiency_or_expertise(Skills.Athletics, Skills.Acrobatics)
             .grant_save_proficiency(Stats.DEX, Stats.STR)
         )
@@ -216,17 +209,15 @@ class _Gigantic(Power):
         return score
 
     def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_save_proficiency(
-            Stats.STR
-        ).grant_proficiency_or_expertise(Skills.Athletics)
+        new_attrs = (
+            stats.attributes.grant_save_proficiency(Stats.STR)
+            .grant_proficiency_or_expertise(Skills.Athletics)
+            .change_primary(Stats.STR)
+        )
 
         stats = stats.copy(
             size=stats.size.increment(), attributes=new_attrs
-        ).apply_monster_dials(
-            dials=MonsterDials(
-                ac_modifier=-2, attack_damage_dice_modifier=2, primary_attribute=Stats.STR
-            )
-        )
+        ).apply_monster_dials(dials=MonsterDials(ac_modifier=-2, attack_damage_dice_modifier=2))
 
         feature = Feature(
             name="Gigantic",
@@ -259,17 +250,15 @@ class _Diminutive(Power):
         return score
 
     def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(
-            Skills.Stealth, Skills.Acrobatics
-        ).grant_save_proficiency(Stats.DEX)
+        new_attrs = (
+            stats.attributes.grant_proficiency_or_expertise(Skills.Stealth, Skills.Acrobatics)
+            .grant_save_proficiency(Stats.DEX)
+            .change_primary(Stats.DEX)
+        )
 
         stats = stats.copy(
             size=stats.size.decrement(), attributes=new_attrs
-        ).apply_monster_dials(
-            dials=MonsterDials(
-                ac_modifier=2, attack_damage_modifier=-1, primary_attribute=Stats.DEX
-            )
-        )
+        ).apply_monster_dials(dials=MonsterDials(ac_modifier=2, attack_damage_modifier=-1))
 
         feature = Feature(
             name="Diminutive",

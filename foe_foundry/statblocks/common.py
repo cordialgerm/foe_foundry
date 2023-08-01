@@ -1,5 +1,5 @@
 from ..ac import ArmorClass
-from ..attributes import Attributes, Skills, Stats
+from ..attributes import Attributes, Stats
 from ..damage import Attack, Damage, DamageType
 from ..die import DieFormula
 from ..movement import Movement
@@ -12,8 +12,6 @@ Minion = BaseStatblock(
     hp=DieFormula.from_expression("2d8"),
     speed=Movement(walk=30),
     primary_attribute_score=12,
-    attribute_backup_score=10,
-    primary_attribute=Stats.DEX,
     attributes=Attributes(
         proficiency=2,
         primary_attribute=Stats.DEX,
@@ -40,8 +38,6 @@ Soldier = BaseStatblock(
     hp=DieFormula.from_expression("4d8 + 4"),
     speed=Movement(walk=30),
     primary_attribute_score=14,
-    attribute_backup_score=10,
-    primary_attribute=Stats.STR,
     attributes=Attributes(
         proficiency=2,
         primary_attribute=Stats.STR,
@@ -68,8 +64,6 @@ Brute = BaseStatblock(
     hp=DieFormula.from_expression("7d8 + 14"),
     speed=Movement(walk=30),
     primary_attribute_score=16,
-    attribute_backup_score=12,
-    primary_attribute=Stats.STR,
     attributes=Attributes(
         proficiency=2,
         primary_attribute=Stats.STR,
@@ -96,8 +90,6 @@ Specialist = BaseStatblock(
     hp=DieFormula.from_expression("13d8 + 26"),
     speed=Movement(walk=30),
     primary_attribute_score=18,
-    attribute_backup_score=14,
-    primary_attribute=Stats.DEX,
     attributes=Attributes(
         proficiency=2,
         primary_attribute=Stats.DEX,
@@ -107,7 +99,6 @@ Specialist = BaseStatblock(
         INT=10,
         WIS=14,
         CHA=12,
-        proficient_skills={Skills.Acrobatics, Skills.Perception, Skills.Stealth},
     ),
     multiattack=3,
     primary_damage_type=DamageType.Piercing,
@@ -125,8 +116,6 @@ Myrmidon = BaseStatblock(
     hp=DieFormula.from_expression("20d8 + 40"),
     speed=Movement(walk=30),
     primary_attribute_score=18,
-    attribute_backup_score=14,
-    primary_attribute=Stats.INT,
     attributes=Attributes(
         proficiency=3,
         primary_attribute=Stats.INT,
@@ -136,7 +125,6 @@ Myrmidon = BaseStatblock(
         INT=18,
         WIS=14,
         CHA=10,
-        proficient_skills={Skills.Perception},
     ),
     multiattack=3,
     primary_damage_type=DamageType.Slashing,
@@ -154,8 +142,6 @@ Sentinel = BaseStatblock(
     hp=DieFormula.from_expression("22d8 + 66"),
     speed=Movement(walk=30),
     primary_attribute_score=20,
-    attribute_backup_score=16,
-    primary_attribute=Stats.STR,
     attributes=Attributes(
         proficiency=4,
         primary_attribute=Stats.STR,
@@ -182,8 +168,6 @@ Champion = BaseStatblock(
     hp=DieFormula.from_expression("25d8 + 100"),
     speed=Movement(walk=30),
     primary_attribute_score=22,
-    attribute_backup_score=16,
-    primary_attribute=Stats.CHA,
     attributes=Attributes(
         proficiency=5,
         primary_attribute=Stats.CHA,

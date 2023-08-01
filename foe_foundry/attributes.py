@@ -22,6 +22,10 @@ class Attributes:
     proficient_skills: Set[Skills] = field(default_factory=set)
     expertise_skills: Set[Skills] = field(default_factory=set)
 
+    @property
+    def primary_attribute_score(self) -> int:
+        return self.stat(self.primary_attribute)
+
     def stat(self, stat: Stats) -> int:
         return getattr(self, stat.value)
 
@@ -52,49 +56,6 @@ class Attributes:
         kwargs.update(args)
         return Attributes(**kwargs)
 
-    def update_primary_attribute(
-        self,
-        primary_attribute: Stats,
-        primary_attribute_score: int,
-        primary_attribute_backup_score: int = 10,
-    ) -> Attributes:
-        if self.primary_attribute != primary_attribute:
-            args = {
-                primary_attribute.value: primary_attribute_score,
-                self.primary_attribute.value: primary_attribute_backup_score,
-            }
-        else:
-            args = {
-                primary_attribute.value: primary_attribute_score,
-            }
-        return self.copy(**args)
-
-    def update_ranges(
-        self,
-        mins: Dict[Stats, int] | int,
-        maxs: Dict[Stats, int] | int,
-        bonuses: Dict[Stats, int] | int,
-    ):
-        if isinstance(mins, int):
-            mins = {s: mins for s in Stats.All()}
-
-        if isinstance(maxs, int):
-            maxs = {s: maxs for s in Stats.All()}
-
-        if isinstance(bonuses, int):
-            bonuses = {s: bonuses for s in Stats.All()}
-
-        args = {}
-        for s in Stats.All():
-            current = self.stat(s)
-            min_stat = mins.get(s, -100000)
-            max_stat = maxs.get(s, 100000)
-            bonus = bonuses.get(s, 0)
-            new_stat = min(max(current + bonus, min_stat), max_stat)
-            args[s.value] = new_stat
-
-        return self.copy(**args)
-
     def grant_proficiency_or_expertise(self, *skills: Skills) -> Attributes:
         new_profs = set(self.proficient_skills)
         new_expertise = set(self.expertise_skills)
@@ -111,6 +72,15 @@ class Attributes:
     def grant_save_proficiency(self, *saves: Stats) -> Attributes:
         new_saves = self.proficient_saves | set(saves)
         return self.copy(proficient_saves=new_saves)
+
+    def change_primary(self, primary: Stats) -> Attributes:
+        args = {"primary_attribute": primary, primary.value: self.primary_attribute_score}
+        return self.copy(**args)
+
+    def boost(self, stat: Stats, value: int) -> Attributes:
+        new_val = min(self.stat(stat) + value, self.primary_attribute_score)
+        args = {stat.value: new_val}
+        return self.copy(**args)
 
     @property
     def saves(self) -> dict[Stats, int]:

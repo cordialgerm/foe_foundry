@@ -32,19 +32,18 @@
 
 ## Structural Enhancements
 
-- [ ] Redesign how attribute scaling works. Right now it's mixed in between monster dials and base stats and min/max/bonuses. Instead, attributes should be generated directly by the creature type based on CR
-
-
+- [x] Redesign how attribute scaling works. Right now it's mixed in between monster dials and base stats and min/max/bonuses. Instead, attributes should be generated directly by the creature type based on CR
+- [x] redesign skill and save proficiencies
 - [x] Powers need to be able to modify attack damage
-- [ ] Powers need to be able to add additional info to attack clause
 - [x] action that replaces a multiattack instance needs to be implemented
+- [ ] Powers need to be able to add additional info to attack clause
 
 ## Bug List
 
-- [ ] negative stat modifiers render with a ?
-- [ ] feature blocks sometimes have duplicate . at the end
 - [x] role modifiers don't appear to modify HP
 - [x] attack action range should be based on creature's attack type
+- [ ] negative stat modifiers render with a ?
+- [ ] feature blocks sometimes have duplicate . at the end
 
 
 

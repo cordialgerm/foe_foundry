@@ -156,14 +156,9 @@ class _Speedy(Power):
         return MODERATE_AFFINITY
 
     def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature | None]:
-        stat_mins = {Stats.DEX: 12}
-        stat_bonuses = {Stats.DEX: 2}
-
-        # give the monster reasonable DEX stat (min of 12, try to add +2, but don't exceed the creature's primary stat score)
+        # give the monster reasonable DEX stat
         new_attrs = (
-            stats.attributes.update_ranges(
-                mins=stat_mins, maxs=stats.primary_attribute_score, bonuses=stat_bonuses
-            )
+            stats.attributes.boost(Stats.DEX, 2)
             .grant_proficiency_or_expertise(Skills.Acrobatics)
             .grant_save_proficiency(Stats.DEX)
         )
