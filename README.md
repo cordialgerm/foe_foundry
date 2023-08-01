@@ -37,6 +37,7 @@
 - [x] Powers need to be able to modify attack damage
 - [x] action that replaces a multiattack instance needs to be implemented
 - [ ] Powers need to be able to add additional info to attack clause
+- [ ] Armor Templates - ArmorType (None, Light, Medium, Heavy, Natural, Arcane, Divine), HasShield, target AC, DEX
 
 ## Bug List
 

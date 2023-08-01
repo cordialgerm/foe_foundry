@@ -1,7 +1,10 @@
-from math import floor
+from math import ceil
+
+import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock
 
+from ..ac import ArmorClass, ArmorType
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
@@ -15,7 +18,7 @@ class _ConstructTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Construct", creature_type=CreatureType.Construct)
 
-    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         # have either blindsight or darkvision, and a selection of
         # damage immunities and condition immunities to reflect
         # their nonliving nature. They usually can’t speak, but might
@@ -69,21 +72,26 @@ class _ConstructTemplate(CreatureTypeTemplate):
             DamageType.Poison,
             DamageType.Acid,
         ]
-        i = self.rng.choice(len(damage_types))
+        i = rng.choice(len(damage_types))
         secondary_damage_type = damage_types[i]
 
-        size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=self.rng)
+        size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=rng)
 
-        # celestials with higher CR should have proficiency in STR and CON saves
+        # constructs with higher CR should have proficiency in STR and CON saves
         if stats.cr >= 4:
             new_attributes = new_attributes.grant_save_proficiency(Stats.STR)
 
         if stats.cr >= 7:
             new_attributes = new_attributes.grant_save_proficiency(Stats.STR, Stats.CON)
 
+        # higher-AC constructs are heavily armored
+        ac_bonus = ceil(stats.cr / 5)
+        new_ac = stats.ac.delta(change=ac_bonus, armor_type=ArmorType.Natural)
+
         return stats.copy(
             creature_type=CreatureType.Construct,
             attributes=new_attributes,
+            ac=new_ac,
             size=size,
             languages=None,
             senses=new_senses,

@@ -22,8 +22,11 @@ def _as_skirmisher(stats: BaseStatblock, dials: MonsterDials) -> BaseStatblock:
             Stats.DEX
         ).grant_proficiency_or_expertise(Skills.Acrobatics)
 
+    # skirmishers don't wear shields
+    new_ac = stats.ac.delta(shield_allowed=False, dex=new_attributes.stat_mod(Stats.DEX))
+
     return stats.apply_monster_dials(dials).copy(
-        role=MonsterRole.Skirmisher, attributes=new_attributes
+        role=MonsterRole.Skirmisher, attributes=new_attributes, ac=new_ac
     )
 
 

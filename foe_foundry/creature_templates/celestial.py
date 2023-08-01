@@ -1,7 +1,10 @@
 from math import floor
 
+import numpy as np
+
 from foe_foundry.statblocks import BaseStatblock
 
+from ..ac import ArmorType
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
@@ -14,7 +17,7 @@ class _CelestialTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Celestial", creature_type=CreatureType.Celestial)
 
-    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         # As divine beings of the Outer Planes, celestials have  high ability scores.
         # Charisma is often especially high to represent a celestial’s leadership qualities, eloquence, and beauty.
         def scale_stat(base: int, cr_multiplier: float) -> int:
@@ -53,7 +56,7 @@ class _CelestialTemplate(CreatureTypeTemplate):
         primary_damage_type = DamageType.Slashing
         secondary_damage_type = DamageType.Radiant
 
-        size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=self.rng)
+        size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=rng)
 
         # celestials may have immunity to the charmed, exhaustion, and frightened conditions.
         condition_immunities = stats.condition_immunities
@@ -71,8 +74,16 @@ class _CelestialTemplate(CreatureTypeTemplate):
         if stats.cr >= 7:
             new_attributes = new_attributes.grant_save_proficiency(Stats.CHA, Stats.WIS)
 
+        # celestials use divine armor
+        new_ac = stats.ac.delta(
+            armor_type=ArmorType.Divine,
+            dex=new_attributes.stat_mod(Stats.DEX),
+            spellcasting=new_attributes.spellcasting_mod,
+        )
+
         return stats.copy(
             creature_type=CreatureType.Celestial,
+            ac=new_ac,
             size=size,
             languages=None,
             senses=new_senses,

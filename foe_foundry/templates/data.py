@@ -96,7 +96,7 @@ class MonsterTemplateData:
             name=stats.name,
             size=stats.size.name,
             creature_type=stats.creature_type.name,
-            ac=stats.ac.describe(),
+            ac=stats.ac.description,
             hp=hp,
             movement=stats.speed.describe(),
             STR=stats.attributes.STR,

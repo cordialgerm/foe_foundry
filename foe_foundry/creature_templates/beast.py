@@ -1,5 +1,8 @@
+import numpy as np
+
 from foe_foundry.statblocks import BaseStatblock
 
+from ..ac import ArmorType
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
@@ -12,14 +15,14 @@ class _BeastTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Beast", creature_type=CreatureType.Beast)
 
-    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         # Beasts might have low ability scores if they are mundane
         # creatures, with their strongest scores in either Strength
         # or Dexterity.
         #
-        # They might also have medium to high
-        # Constitution or Wisdom to represent hardiness and
-        # cunning.
+        # They might also have medium to high Wisdom to represent cunning
+        #
+        # Beasts have low AC and slightly higher CON and HP
 
         def scale_stat(base: int, cr_multiplier: float) -> int:
             new_stat = int(round(base + stats.cr * cr_multiplier))
@@ -29,16 +32,19 @@ class _BeastTemplate(CreatureTypeTemplate):
         attrs = {
             Stats.STR: stats.primary_attribute_score,
             Stats.DEX: scale_stat(10, 1 / 2),
-            Stats.CON: stats.attributes.CON,
+            Stats.CON: stats.attributes.CON + 2,
             Stats.INT: scale_stat(4, 1 / 3),
             Stats.WIS: scale_stat(8, 1 / 4),
             Stats.CHA: scale_stat(3, 1 / 3),
         }
         new_attributes = stats.attributes.copy(**attrs, primary_attribute=primary_stat)
 
+        # updated HP to match CON
+        new_hp = stats.hp.copy(mod=stats.hp.n_die * new_attributes.stat_mod(Stats.CON))
+
         # Beasts typically have darkvision with a 60-foot range
         new_senses = stats.senses.copy(darkvision=60)
-        size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=self.rng)
+        size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=rng)
 
         # Beasts attack with melee natural weapons, like claws, bites, and horns
         attack_type = AttackType.MeleeNatural
@@ -48,18 +54,27 @@ class _BeastTemplate(CreatureTypeTemplate):
             DamageType.Piercing,  #  Bites, Horns (40%)
             DamageType.Slashing,  # Claws (40%)
         ]
-        damage_type_indx = self.rng.choice(3, p=[0.2, 0.4, 0.4])
+        damage_type_indx = rng.choice(3, p=[0.2, 0.4, 0.4])
         primary_damage_type = primary_damage_types[damage_type_indx]
 
-        # celestials with higher CR should have proficiency in their STR and CON saves
+        # beasts with higher CR should have proficiency in their STR and CON saves
         if stats.cr >= 4:
             new_attributes = new_attributes.grant_save_proficiency(Stats.STR)
 
         if stats.cr >= 7:
             new_attributes = new_attributes.grant_save_proficiency(Stats.STR, Stats.CON)
 
+        # beasts are naturally lightly armored
+        new_ac = stats.ac.delta(
+            change=-1,
+            armor_type=ArmorType.Natural,
+            shield_allowed=False,
+        )
+
         return stats.copy(
             creature_type=CreatureType.Beast,
+            hp=new_hp,
+            ac=new_ac,
             size=size,
             languages=None,
             senses=new_senses,

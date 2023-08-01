@@ -5,7 +5,7 @@ from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import flavorful_ac
+from ..ac import ArmorClass, ArmorType
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType, flavorful_damage_types
@@ -37,16 +37,19 @@ class _Armored(Power):
             return LOW_AFFINITY
 
         score = MODERATE_AFFINITY
-        if candidate.role in {MonsterRole.Leader, MonsterRole.Default}:
+        if candidate.role in {MonsterRole.Leader, MonsterRole.Defender}:
             score += HIGH_AFFINITY
 
         return score
 
     def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
         ac_bonus = int(ceil((stats.cr / 5.0)))
+        has_shield = ArmorClass.could_use_shield_or_wear_armor(stats.creature_type)
+        target_ac = stats.ac.value + ac_bonus + (2 if has_shield else 0)
+        armor_type = ArmorType.Heavy if has_shield else stats.ac.armor_type
 
-        new_ac = flavorful_ac(
-            stats.ac.value + ac_bonus, creature_type=stats.creature_type, role=stats.role
+        new_ac = ArmorClass(
+            value=target_ac, armor_type=armor_type, quality=ac_bonus, has_shield=has_shield
         )
 
         feature = Feature(

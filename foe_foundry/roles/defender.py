@@ -1,37 +1,19 @@
+from ..ac import ArmorClass
 from ..role_types import MonsterRole
 from ..skills import Stats
 from ..statblocks import BaseStatblock, MonsterDials
 from .template import RoleTemplate, role_variant
 
 
-def as_high_ac_low_hit_defender(stats: BaseStatblock) -> BaseStatblock:
+def as_low_hit_defender(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(
-        ac_modifier=3,
         attack_hit_modifier=-2,
     )
     return _as_defender(stats, dials)
 
 
-def as_high_ac_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
+def as_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(
-        ac_modifier=3,
-        attack_hit_modifier=-1,
-        attack_damage_dice_modifier=-1,
-    )
-    return _as_defender(stats, dials)
-
-
-def as_high_hp_low_hit_defender(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(
-        hp_multiplier=1.3,
-        attack_hit_modifier=-2,
-    )
-    return _as_defender(stats, dials)
-
-
-def as_high_hp_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(
-        hp_multiplier=1.3,
         attack_hit_modifier=-1,
         attack_damage_dice_modifier=-1,
     )
@@ -39,31 +21,35 @@ def as_high_hp_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
 
 
 def _as_defender(stats: BaseStatblock, dials: MonsterDials):
+    # defenders have save proficiencies
     new_attributes = stats.attributes.grant_save_proficiency(*Stats.All()).boost(Stats.STR, 2)
+
+    # defenders have high-quality armor and use shields if possible
+    # this should result in a +3 to AC (+1 to armor, +2 from shield)
+    new_ac = stats.ac.delta(
+        change=1,
+        shield_allowed=ArmorClass.could_use_shield_or_wear_armor(stats.creature_type),
+        dex=stats.attributes.stat_mod(Stats.DEX),
+        spellcasting=stats.attributes.spellcasting_mod,
+    )
+
     return stats.apply_monster_dials(dials).copy(
-        role=MonsterRole.Defender, attributes=new_attributes
+        role=MonsterRole.Defender, attributes=new_attributes, ac=new_ac
     )
 
 
 DefenderHighAcLowDamage = role_variant(
-    "Defender.HighAcLowDmg", MonsterRole.Defender, as_high_ac_low_damage_defender
+    "Defender.LowDmg", MonsterRole.Defender, as_low_hit_defender
 )
 DefenderHighAcLowHit = role_variant(
-    "Defender.HighAcLowHit", MonsterRole.Defender, as_high_ac_low_hit_defender
+    "Defender.LowHit", MonsterRole.Defender, as_low_damage_defender
 )
-DefenderHighHpLowDamage = role_variant(
-    "Defender.HighHpLowDamage", MonsterRole.Defender, as_high_hp_low_damage_defender
-)
-DefenderHighHpLowHit = role_variant(
-    "Defender.HighHpLowHit", MonsterRole.Defender, as_high_hp_low_hit_defender
-)
+
 Defender = RoleTemplate(
     "Defender",
     MonsterRole.Defender,
     [
         DefenderHighAcLowDamage,
         DefenderHighAcLowHit,
-        DefenderHighHpLowDamage,
-        DefenderHighHpLowHit,
     ],
 )

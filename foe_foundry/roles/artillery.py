@@ -42,8 +42,14 @@ def _as_artillery(stats: BaseStatblock, dials: MonsterDials) -> BaseStatblock:
             Stats.INT
         ).grant_proficiency_or_expertise(Skills.Perception, Skills.Investigation)
 
+    # artillery do not use shields
+    new_ac = stats.ac.delta(shield_allowed=False, dex=new_attributes.stat_mod(Stats.DEX))
+
     changes: dict = dict(
-        role=MonsterRole.Artillery, attack_type=new_attack_type, attributes=new_attributes
+        role=MonsterRole.Artillery,
+        attack_type=new_attack_type,
+        attributes=new_attributes,
+        ac=new_ac,
     )
 
     if new_attack_type == AttackType.RangedSpell and stats.secondary_damage_type is not None:

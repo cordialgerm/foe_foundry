@@ -14,18 +14,20 @@ class CreatureTypeTemplate(ABC):
     def __init__(self, name: str, creature_type: CreatureType):
         self.name = name
         self.creature_type = creature_type
-        self.rng = np.random.default_rng(20210518)
 
     @property
     def key(self) -> str:
         return self.name.lower().replace(" ", "_")
 
     @abstractmethod
-    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         pass
 
     def select_role(
-        self, stats: BaseStatblock, role_template: RoleTemplate | str | MonsterRole | None
+        self,
+        stats: BaseStatblock,
+        role_template: RoleTemplate | str | MonsterRole | None,
+        rng: np.random.Generator,
     ) -> RoleTemplate:
         if isinstance(role_template, RoleTemplate):
             return role_template
@@ -33,38 +35,39 @@ class CreatureTypeTemplate(ABC):
             return get_role(role_template)
         else:
             n = len(AllRoles)
-            i = np.random.choice(n)
+            i = rng.choice(n)
             return AllRoles[i]
 
-    def select_powers(self, stats: BaseStatblock) -> List[Power]:
+    def select_powers(self, stats: BaseStatblock, rng: np.random.Generator) -> List[Power]:
         # TODO - make this scale with CR and let creature types customize this
 
         # Attack - choose 1
-        attack_power = select_powers(stats=stats, power_type=PowerType.Attack, rng=self.rng)
+        attack_power = select_powers(stats=stats, power_type=PowerType.Attack, rng=rng)
 
         # Movement
-        movement_power = select_powers(stats=stats, power_type=PowerType.Movement, rng=self.rng)
+        movement_power = select_powers(stats=stats, power_type=PowerType.Movement, rng=rng)
 
         # Common
-        common_power = select_powers(stats=stats, power_type=PowerType.Common, rng=self.rng)
+        common_power = select_powers(stats=stats, power_type=PowerType.Common, rng=rng)
 
         # Role
         # TODO
 
         # Creature Type
-        creature_power = select_powers(stats=stats, power_type=PowerType.Creature, rng=self.rng)
+        creature_power = select_powers(stats=stats, power_type=PowerType.Creature, rng=rng)
 
         return [attack_power, movement_power, common_power, creature_power]
 
     def create(
         self,
         stats: BaseStatblock,
+        rng: np.random.Generator,
         role_template: RoleTemplate | str | None | MonsterRole = None,
     ) -> Statblock:
-        new_stats = self.alter_base_stats(stats)
-        role_template = self.select_role(stats=new_stats, role_template=role_template)
-        new_stats = role_template.alter_base_stats(new_stats)
-        powers = self.select_powers(new_stats)
+        new_stats = self.alter_base_stats(stats, rng)
+        role_template = self.select_role(stats=new_stats, role_template=role_template, rng=rng)
+        new_stats = role_template.alter_base_stats(new_stats, rng=rng)
+        powers = self.select_powers(new_stats, rng)
 
         features = []
         for power in powers:

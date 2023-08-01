@@ -27,7 +27,6 @@ class RoleTemplate:
     def __init__(self, name: str, role: MonsterRole, variants: List[RoleVariant]):
         self.name = name
         self.role = role
-        self.rng = np.random.default_rng(20210518)
         self.counter = 0
         self.variants = variants
 
@@ -35,7 +34,12 @@ class RoleTemplate:
     def key(self) -> str:
         return self.name.lower().replace(" ", "_")
 
-    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator):
+        i = rng.choice(len(self.variants))
+        v = self.variants[i]
+        return v.alter_base_stats(stats=stats)
+
+    def alter_base_stats_cycle(self, stats: BaseStatblock) -> BaseStatblock:
         try:
             v = self.variants[self.counter % len(self.variants)]
             return v.alter_base_stats(stats=stats)

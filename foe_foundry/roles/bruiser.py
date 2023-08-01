@@ -32,8 +32,11 @@ def _as_bruiser(stats: BaseStatblock, dials: MonsterDials):
             Stats.STR
         ).grant_proficiency_or_expertise(Skills.Athletics)
 
+    # bruisers do not use shields
+    new_ac = stats.ac.delta(shield_allowed=False)
+
     return stats.apply_monster_dials(dials).copy(
-        role=MonsterRole.Bruiser, attributes=new_attributes
+        role=MonsterRole.Bruiser, attributes=new_attributes, ac=new_ac
     )
 
 
