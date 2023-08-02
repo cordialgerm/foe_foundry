@@ -6,6 +6,7 @@ from typing import List, Set
 
 from num2words import num2words
 
+from ..benchmarks import Benchmark
 from ..damage import Attack, DamageType
 from ..features import ActionType, Feature
 from ..skills import Skills
@@ -46,11 +47,15 @@ class MonsterTemplateData:
     multiattack: str
     attack: Attack
 
+    benchmark: Benchmark | None = None
+
     def to_dict(self) -> dict:
         return asdict(self)
 
     @staticmethod
-    def from_statblock(stats: Statblock) -> MonsterTemplateData:
+    def from_statblock(
+        stats: Statblock, benchmark: Benchmark | None = None
+    ) -> MonsterTemplateData:
         selfref = stats.creature_type.name
 
         hp = f"{stats.hp.static} ({stats.hp.dice_formula()})"
@@ -122,6 +127,7 @@ class MonsterTemplateData:
             reactions=reactions,
             multiattack=multiattack,
             attack=stats.attack,
+            benchmark=benchmark,
         )
         return t
 

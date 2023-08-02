@@ -76,3 +76,25 @@
 {%- endfor %}
 
 {%- endmacro %}
+
+
+{% macro benchmark_block(benchmark) %}
+
+<property-block>
+    <h4>AC.</h4>
+    <p>Expected {{benchmark.expected_ac}} and got {{benchmark.actual_ac}}</p>
+</property-block>
+<property-block>
+    <h4>DPR.</h4>
+    <p>Expected {{benchmark.expected_dpr}} and got {{benchmark.actual_dpr}}</p>
+</property-block>
+<property-block>
+    <h4>HP.</h4>
+    <p>Expected {{benchmark.expected_hp}} and got {{benchmark.actual_hp}}</p>
+</property-block>
+<property-block>
+    <h4>To Hit.</h4>
+    <p>Expected {{benchmark.expected_hit}} and got {{benchmark.actual_hit}}</p>
+</property-block>
+
+{% endmacro %}

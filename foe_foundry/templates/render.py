@@ -2,6 +2,7 @@ from pathlib import Path
 
 from jinja2 import Environment, PackageLoader, select_autoescape
 
+from ..benchmarks import Benchmark
 from ..statblocks import Statblock
 from .data import MonsterTemplateData
 
@@ -19,9 +20,11 @@ def render_html(stats: Statblock, path: Path) -> Path:
     return path
 
 
-def render_html_inline_page(stats: Statblock, path: Path) -> Path:
+def render_html_inline_page(
+    stats: Statblock, path: Path, benchmark: Benchmark | None = None
+) -> Path:
     template = env.get_template("inlined_template.html.j2")
-    data = MonsterTemplateData.from_statblock(stats)
+    data = MonsterTemplateData.from_statblock(stats, benchmark)
     html_raw = template.render(data.to_dict())
 
     with path.open("w") as f:

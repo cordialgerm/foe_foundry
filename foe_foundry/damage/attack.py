@@ -63,6 +63,12 @@ class Attack:
         args.update(overrides)
         return Attack(**args)
 
+    @property
+    def average_damage(self) -> float:
+        return self.damage.formula.average + (
+            self.additional_damage.formula.average if self.additional_damage is not None else 0
+        )
+
     def delta(self, hit_delta: int = 0, dice_delta: int = 0, damage_delta: int = 0) -> Attack:
         new_hit = self.hit + hit_delta
 
