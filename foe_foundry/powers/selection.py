@@ -10,7 +10,7 @@ from . import common, movement, static
 from .creatures import aberration, beast, celestial, construct
 from .power import Power
 from .power_type import PowerType
-from .roles import ambusher, artillery, bruiser, controller
+from .roles import ambusher, artillery, bruiser, controller, defender
 from .themed import rogue, warrior
 
 
@@ -91,5 +91,7 @@ def _role_powers(role_type: MonsterRole) -> List[Power]:
         return bruiser.BruiserPowers + [common.GoesDownFighting]
     elif role_type == MonsterRole.Controller:
         return controller.ControllerPowers + [warrior.PinningShot]
+    elif role_type == MonsterRole.Defender:
+        return defender.DefenderPowers + [warrior.Challenger, common.Defender]
     else:
         raise NotImplementedError("TODO")  # TODO
