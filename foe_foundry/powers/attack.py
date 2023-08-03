@@ -237,7 +237,7 @@ def debilitating_attack(
     feature = Feature(
         name=name,
         action=ActionType.Feature,
-        description=f"When the {stats.selfref} hits a creature with an attack that creature {condition_str}",
+        description=f"When {stats.selfref} hits a creature with an attack that creature {condition_str}",
     )
 
     return stats, feature

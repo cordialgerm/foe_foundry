@@ -10,7 +10,7 @@ from . import common, movement, static
 from .creatures import aberration, beast, celestial, construct
 from .power import Power
 from .power_type import PowerType
-from .roles import ambusher, artillery, bruiser, controller, defender
+from .roles import ambusher, artillery, bruiser, controller, defender, leader
 from .themed import rogue, warrior
 
 
@@ -73,25 +73,31 @@ def _creature_powers(creature_type: CreatureType) -> List[Power]:
     if creature_type == CreatureType.Aberration:
         return aberration.AberrationPowers
     elif creature_type == CreatureType.Beast:
-        return beast.BeastPowers
+        return beast.BeastPowers + [common.NotDeadYet, common.GoesDownFighting]
     elif creature_type == CreatureType.Celestial:
         return celestial.CelestialPowers
     elif creature_type == CreatureType.Construct:
         return construct.ConstructPowers
+    elif creature_type == CreatureType.Beast:
+        return [] + [common.GoesDownFighting]  # TODO
     else:
         raise NotImplementedError("TODO")  # TODO
 
 
 def _role_powers(role_type: MonsterRole) -> List[Power]:
     if role_type == MonsterRole.Ambusher:
-        return ambusher.AmbusherPowers + [rogue.NimbleReaction]
+        return ambusher.AmbusherPowers + [rogue.NimbleReaction, common.Vanish]
     elif role_type == MonsterRole.Artillery:
         return artillery.ArtilleryPowers
     elif role_type == MonsterRole.Bruiser:
-        return bruiser.BruiserPowers + [common.GoesDownFighting]
+        return bruiser.BruiserPowers + [common.GoesDownFighting, common.Frenzy]
     elif role_type == MonsterRole.Controller:
         return controller.ControllerPowers + [warrior.PinningShot]
     elif role_type == MonsterRole.Defender:
         return defender.DefenderPowers + [warrior.Challenger, common.Defender]
+    elif role_type == MonsterRole.Leader:
+        return leader.LeaderPowers + [common.MarkTheTarget]
+    elif role_type == MonsterRole.Skirmisher:
+        return [] + [common.Vanish]  # TODO
     else:
         raise NotImplementedError("TODO")  # TODO

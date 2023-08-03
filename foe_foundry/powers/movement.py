@@ -46,7 +46,7 @@ class _Aquatic(Power):
         feature = Feature(
             name="Aquatic",
             action=ActionType.Feature,
-            description="This creature is aquatic and has a swim speed equal to its walk speed. It can also breathe underwater.",
+            description=f"{stats.selfref.capitalize()} is aquatic and has a swim speed equal to its walk speed. It can also breathe underwater.",
         )
         return stats, feature
 
@@ -73,7 +73,7 @@ class _Burrower(Power):
         feature = Feature(
             name="Burrower",
             action=ActionType.Feature,
-            description=f"This creature can burrow through solid rock at half its burrow speed and leaves a {tunnel_width} foot wide diameter tunnel in its wake.",
+            description=f"{stats.selfref.capitalize()} can burrow through solid rock at half its burrow speed and leaves a {tunnel_width} foot wide diameter tunnel in its wake.",
         )
 
         return stats, feature
@@ -105,13 +105,13 @@ class _Climber(Power):
             feature = Feature(
                 name="Spider Climb",
                 action=ActionType.Feature,
-                description="This creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check",
+                description=f"{stats.selfref.capitalize()} can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check",
             )
         else:
             feature = Feature(
                 name="Climber",
                 action=ActionType.Feature,
-                description="This creature gains a climb speed equal to its walk speed",
+                description=f"{stats.selfref.capitalize()} gains a climb speed equal to its walk speed",
             )
 
         return stats, feature
@@ -147,7 +147,7 @@ class _Flyer(Power):
         feature = Feature(
             name="Flyer",
             action=ActionType.Feature,
-            description=f"This creatures movement speed increases by {speed_change} and it gains a fly speed equal to its walk speed",
+            description=f"{stats.selfref.capitalize()}'s movement speed increases by {speed_change} and it gains a fly speed equal to its walk speed",
             hidden=True,
         )
 
@@ -181,7 +181,7 @@ class _Speedy(Power):
         feature = Feature(
             name="Speedy",
             action=ActionType.Feature,
-            description="This monster's movement increases by 10ft and it gains proficiency in Acrobatics and Dexterity saves",
+            description=f"{stats.selfref.capitalize()}'s movement increases by 10ft and it gains proficiency in Acrobatics and Dexterity saves",
         )
         return stats, feature
 
@@ -210,7 +210,7 @@ class _Sneaky(Power):
         stats = stats.copy(attributes=new_attrs)
         feature = Feature(
             name="Sneaky",
-            description="This creature gainst proficiency (or expertise) in Stealth and Deception",
+            description=f"{stats.selfref.capitalize()} gains proficiency (or expertise) in Stealth and Deception",
             action=ActionType.Feature,
         )
         return stats, feature

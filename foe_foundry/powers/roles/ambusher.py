@@ -52,7 +52,7 @@ class _DistractingAttack(Power):
         feature = Feature(
             name="Distracting Attack",
             action=ActionType.Feature,
-            description="When this creature hits with an attack, they can become invisible until the start of their next turn.",
+            description=f"When {stats.roleref} hits with an attack, they can become invisible until the start of their next turn.",
         )
 
         return stats, feature
@@ -84,8 +84,8 @@ class _ShadowyMovement(Power):
 
         feature = Feature(
             name="Shadowy Movement",
-            description="This creature can attempt to hide in dim light or lightly obscured terrain. \
-            When this creature moves, they can make a Dexterity (Stealth) check to hide as part of that movement",
+            description=f"{stats.roleref.capitalize()} can attempt to hide in dim light or lightly obscured terrain. \
+            When {stats.roleref} moves, they can make a Dexterity (Stealth) check to hide as part of that movement",
             action=ActionType.Feature,
         )
 
@@ -148,7 +148,7 @@ class _DeadlyAmbusher(Power):
 
         feature = Feature(
             name="Deadly Ambusher",
-            description="This creature has advantage on initiative rolls. \
+            description=f"{stats.selfref.capitalize()} has advantage on initiative rolls. \
                 On the first turn of combat, it has advantage on any attack rolls against targets with lower initiative than it, \
                 and it scores a critical hit on a score of 19 or 20.",
             action=ActionType.Feature,
@@ -189,7 +189,7 @@ class _SneakyStrike(Power):
 
         feature = Feature(
             name="Sneaky Strike",
-            description=f"This creature deals an additional {dmg} immediately after hitting a target if the attack was made with advantage.",
+            description=f"{stats.roleref.capitalize()} deals an additional {dmg} immediately after hitting a target if the attack was made with advantage.",
             action=ActionType.BonusAction,
         )
 

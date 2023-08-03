@@ -51,7 +51,7 @@ class _PinningShot(Power):
         feature = Feature(
             name="Pinning Shot",
             action=ActionType.Feature,
-            description=f"When the {stats.selfref} hits with a ranged attack, the target must succeed on a DC {dc} Strength saving throw or be Restrained (save ends at end of turn).",
+            description=f"When {stats.selfref} hits with a ranged attack, the target must succeed on a DC {dc} Strength saving throw or be Restrained (save ends at end of turn).",
         )
 
         return stats, feature
@@ -86,8 +86,8 @@ class _Challenger(Power):
         dc = stats.difficulty_class
         feature = Feature(
             name="Challenge Foe",
-            description=f"Immediately after hitting a creature with an attack, the {stats.selfref} challenges the target to a duel. \
-                The challenged target has disadvantage on attack rolls against any creature other than the {stats.selfref}. \
+            description=f"Immediately after hitting a creature with an attack, {stats.selfref} challenges the target to a duel. \
+                The challenged target has disadvantage on attack rolls against any creature other than {stats.selfref}. \
                 The target may make a DC {dc} Charisma saving throw at the end of each of its turns to end the effect.",
             action=ActionType.BonusAction,
             recharge=4,

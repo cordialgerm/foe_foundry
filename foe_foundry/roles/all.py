@@ -16,7 +16,7 @@ AllRoles: List[RoleTemplate] = [
     Bruiser,
     Controller,
     Defender,
-    # Leader,
+    Leader,
     # Skirmisher,
 ]
 

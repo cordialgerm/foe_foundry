@@ -194,10 +194,10 @@ class _ElementalAffinity(Power):
                 damage_immunities=new_damage_immunities,
             )
 
-        dmg = damage_type.name
+        dmg = damage_type.name.lower()
         feature = Feature(
             name=f"{damage_type.name} Affinity",
-            description=f"This creature gains {descr} to {dmg}. It gains advantage on its attacks while it is in an environment where source of {dmg} damage are prevalant.",
+            description=f"{stats.selfref} gains {descr} to {dmg}. It gains advantage on its attacks while it is in an environment where sources of {dmg} damage are prevalant.",
             action=ActionType.Feature,
         )
         return stats, feature
@@ -234,7 +234,7 @@ class _Gigantic(Power):
 
         stats = stats.copy(
             size=stats.size.increment(), attributes=new_attrs
-        ).apply_monster_dials(dials=MonsterDials(ac_modifier=-2, attack_damage_dice_modifier=2))
+        ).apply_monster_dials(dials=MonsterDials(ac_modifier=-2, attack_damage_dice_modifier=1))
 
         feature = Feature(
             name="Gigantic",

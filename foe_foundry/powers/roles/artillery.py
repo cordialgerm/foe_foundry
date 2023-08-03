@@ -46,7 +46,7 @@ class _Ricochet(Power):
         feature = Feature(
             name="Ricochet",
             action=ActionType.Reaction,
-            description="When this creature misses with a ranged attack, it can make the same attack again against a different target within 15 ft.",
+            description=f"When {stats.roleref} misses with a ranged attack, it can make the same attack again against a different target within 15 ft.",
         )
 
         return stats, feature
@@ -76,7 +76,7 @@ class _SteadyAim(Power):
         feature = Feature(
             name="Steady Aim",
             action=ActionType.BonusAction,
-            description="If this creature has not moved this turn, it gains advantage on the next ranged attack roll it makes this turn and ignores partial or half cover for that attack.\
+            description=f"If {stats.roleref} has not moved this turn, it gains advantage on the next ranged attack roll it makes this turn and ignores partial or half cover for that attack.\
                 Its speed becomes 0 until the start of its next turn.",
         )
 
@@ -107,7 +107,7 @@ class _QuickStep(Power):
         feature = Feature(
             name="Quick Step",
             action=ActionType.Reaction,
-            description="When this creatre would make a ranged attack, they can first move 5 feet without provoking opportunity attacks",
+            description=f"When {stats.roleref} would make a ranged attack, they can first move 5 feet without provoking opportunity attacks",
         )
         return stats, feature
 
@@ -136,7 +136,7 @@ class _QuickDraw(Power):
         feature = Feature(
             name="Quick Draw",
             action=ActionType.Reaction,
-            description="On initiative count 20 this creature may make one ranged attack",
+            description=f"On initiative count 20, {stats.selfref} may make one ranged attack",
             uses=1,
         )
 
@@ -167,7 +167,7 @@ class _SuppressingFire(Power):
         feature = Feature(
             name="Suppressing Fire",
             action=ActionType.Feature,
-            description="When this creature hits a target with a ranged attack, that target's speed is reduced by half until the end of its next turn",
+            description=f"When {stats.roleref} hits a target with a ranged attack, that target's speed is reduced by half until the end of its next turn",
         )
 
         return stats, feature

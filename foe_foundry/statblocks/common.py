@@ -100,7 +100,7 @@ Specialist = BaseStatblock(
         WIS=14,
         CHA=12,
     ),
-    multiattack=3,
+    multiattack=2,
     primary_damage_type=DamageType.Piercing,
     attack=Attack(
         name="Attack",

@@ -50,7 +50,7 @@ class _StickWithMe(Power):
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Stick with Me!",
-            description=f"When the {stats.selfref} hits with an attack, the target has disadvantage on attack rolls \
+            description=f"When {stats.selfref} hits with an attack, the target has disadvantage on attack rolls \
                 against any other creature other than this one until the end of the target's next turn.",
             action=ActionType.Feature,
         )
@@ -86,7 +86,7 @@ class _Blocker(Power):
 
         feature = Feature(
             name="Blocker",
-            description=f"Any creature starting their turn next to the {stats.selfref} has their speed reduced by half until the end of their turn.",
+            description=f"Any creature starting their turn next to {stats.selfref} has their speed reduced by half until the end of their turn.",
             action=ActionType.Feature,
         )
 

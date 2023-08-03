@@ -49,8 +49,8 @@ class _NimbleReaction(Power):
         feature = Feature(
             name="Nimble Reaction",
             action=ActionType.Reaction,
-            description=f"When the {stats.selfref} is the only target of a melee attack, they can move up to their speed without provoking opportunity attacks.\
-                If this movement leaves the {stats.selfref} outside the attacking creature's reach, then the attack misses.",
+            description=f"When {stats.selfref} is the only target of a melee attack, they can move up to their speed without provoking opportunity attacks.\
+                If this movement leaves {stats.selfref} outside the attacking creature's reach, then the attack misses.",
             recharge=4,
         )
 

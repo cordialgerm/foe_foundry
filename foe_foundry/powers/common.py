@@ -77,7 +77,7 @@ class _DamagingAura(Power):
 
         feature = Feature(
             name=name,
-            description=f"Any creature who moves within 10 feet of this creature or who starts their turn there takes {dmg} {damage_type} damage",
+            description=f"Any creature who moves within 10 feet of {stats.selfref} or who starts their turn there takes {dmg} {damage_type} damage",
             action=ActionType.Feature,
         )
 
@@ -112,7 +112,7 @@ class _Defender(Power):
 
         feature = Feature(
             name=name,
-            description="When an ally within 5 feet is targeted by an attack or spell, this creature can make themselves the intended target of the attack or spell.",
+            description=f"When an ally within 5 feet is targeted by an attack or spell, {stats.selfref} can make themselves the intended target of the attack or spell instead.",
             action=ActionType.Reaction,
         )
         return stats, feature
@@ -130,10 +130,7 @@ class _Frenzy(Power):
 
         # high-WIS foes should be excluded
         # primarily ranged foes should be excluded
-        if candidate.attributes.WIS >= 16 or candidate.attack_type in {
-            AttackType.RangedSpell,
-            AttackType.RangedWeapon,
-        }:
+        if candidate.attributes.WIS >= 15 or not candidate.attack_type.is_melee():
             return NO_AFFINITY
 
         score = LOW_AFFINITY
@@ -152,7 +149,7 @@ class _Frenzy(Power):
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Frenzy",
-            description="At the start of their turn, this creature can gain advantage on all melee weapon attack rolls made during this turn, but atack rolls against them have advantage until the start of their next turn.",
+            description=f"At the start of their turn, {stats.selfref} can gain advantage on all melee weapon attack rolls made during this turn, but atack rolls against them have advantage until the start of their next turn.",
             action=ActionType.Feature,
         )
         return stats, feature
@@ -192,8 +189,8 @@ class _NotDeadYet(Power):
 
         feature = Feature(
             name="Not Dead Yet",
-            description=f"When this creature is reduced to 0 hit points, it drops prone and is indistinguishable from a dead creature. \
-                        At the start of their next turn, this creature stands up without using any movement and has {hp} hit points. It can take its turn normally",
+            description=f"When {stats.selfref} is reduced to 0 hit points, it drops prone and is indistinguishable from a dead creature. \
+                        At the start of their next turn, {stats.selfref} stands up without using any movement and has {hp} hit points. It can take its turn normally",
             action=ActionType.Reaction,
             uses=1,
         )
@@ -218,7 +215,7 @@ class _GoesDownFighting(Power):
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Goes Down Fighting",
-            description="When this creature is reduced to 0 hit points, they can immediately make one melee or ranged weapon attack before they fall unconscious",
+            description=f"When {stats.selfref} is reduced to 0 hit points, they can immediately make one attack before they fall unconscious",
             action=ActionType.Reaction,
         )
         return stats, feature
@@ -251,7 +248,7 @@ class _RefuseToSurrender(Power):
         dmg = int(ceil(stats.cr))
         feature = Feature(
             name="Refuse to Surrender",
-            description=f"When this creature's current hit points are below {threshold}, the creature deals an extra {dmg} damage with each of its attacks.",
+            description=f"When {stats.selfref}'s current hit points are below {threshold}, the creature deals an extra {dmg} damage with each of its attacks.",
             action=ActionType.Feature,
         )
         return stats, feature
@@ -297,7 +294,7 @@ class _DelightsInSuffering(Power):
         dmg = int(ceil(stats.cr))
         feature = Feature(
             name="Delights in Suffering",
-            description=f"When attacking a target whose current hit points are below half their hit point maximum, this creature has advantage on attack rolls and deals an extra {dmg} {damage_type} damage when they hit.",
+            description=f"When attacking a target whose current hit points are below half their hit point maximum, {stats.selfref} has advantage on attack rolls and deals an extra {dmg} {damage_type} damage when they hit.",
             action=ActionType.Feature,
         )
         return stats, feature
@@ -327,7 +324,7 @@ class _Lethal(Power):
         dmg_type = stats.secondary_damage_type
         feature = Feature(
             name="Lethal",
-            description=f"This creature deals an additional {dmg} {dmg_type} on attacks and scores a critical hit on an unmodified attack roll of 18-20",
+            description=f"{stats.selfref.capitalize()} deals an additional {dmg} {dmg_type} on attacks and scores a critical hit on an unmodified attack roll of 18-20",
             action=ActionType.Feature,
         )
         return stats, feature
@@ -359,7 +356,7 @@ class _MarkTheTarget(Power):
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Mark the Target",
-            description=f"Immediately after hitting a target, this creature can mark the target. All allies of this creature who can see the target have advantage on attack rolls against the target until the start of this creature's next turn.",
+            description=f"Immediately after hitting a target, {stats.selfref} can mark the target. All allies of {stats.selfref} who can see the target have advantage on attack rolls against the target until the start of this creature's next turn.",
             uses=3,
             action=ActionType.BonusAction,
         )
@@ -381,7 +378,7 @@ class _ParryAndRiposte(Power):
         if candidate.attack_type != AttackType.MeleeWeapon:
             return NO_AFFINITY
 
-        score = MODERATE_AFFINITY
+        score = 0
         if candidate.role in {MonsterRole.Defender, MonsterRole.Leader}:
             score += HIGH_AFFINITY
         if candidate.attributes.INT >= 14:
@@ -391,14 +388,14 @@ class _ParryAndRiposte(Power):
         if candidate.attributes.DEX >= 14:
             score += MODERATE_AFFINITY
 
-        return score
+        return score if score > 0 else NO_AFFINITY
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Parry and Riposte",
-            description="This creature adds +3 to their Armor Class against one melee attack that would hit them.\
+            description=f"{stats.selfref.capitalize()} adds +3 to their Armor Class against one melee attack that would hit them.\
                          If the attack misses, this creature can immediately make a weapon attack against the creature making the parried attack.",
             action=ActionType.Reaction,
             recharge=6,
@@ -415,7 +412,7 @@ class _QuickRecovery(Power):
 
     def score(self, candidate: BaseStatblock) -> float:
         # this power makes a lot of sense for high CR creatures, creatures with high CON (resilient), or high CHA (luck)
-        score = LOW_AFFINITY
+        score = 0
         if candidate.cr >= 7:
             score += MODERATE_AFFINITY
         if candidate.cr >= 11:
@@ -426,7 +423,7 @@ class _QuickRecovery(Power):
             score += MODERATE_AFFINITY
         if candidate.role == MonsterRole.Leader:
             score += MODERATE_AFFINITY
-        return score
+        return score if score > 0 else NO_AFFINITY
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -437,7 +434,7 @@ class _QuickRecovery(Power):
 
         feature = Feature(
             name="Quick Recovery",
-            description="At the start of this creature's turn, they can attempt a saving throw \
+            description=f"At the start of {stats.selfref}'s turn, they can attempt a saving throw \
                          against any effect on them that can be ended by a successful saving throw",
             action=ActionType.Feature,
         )
@@ -454,20 +451,25 @@ class _Reposition(Power):
     def score(self, candidate: BaseStatblock) -> float:
         # this trait makes a lot of sense for leaders and high-int enemies
 
-        if candidate.role == MonsterRole.Leader or candidate.attributes.INT >= 16:
-            return EXTRA_HIGH_AFFINITY
-        else:
-            return NO_AFFINITY
+        score = 0
+
+        if candidate.role == MonsterRole.Leader:
+            score += MODERATE_AFFINITY
+
+        if candidate.attributes.INT >= 16:
+            score += MODERATE_AFFINITY
+
+        return score if score > 0 else NO_AFFINITY
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Reposition",
-            description="Each ally within 60 ft that can see and hear this creature \
+            description=f"Each ally within 60 ft that can see and hear {stats.selfref} \
                 can immediately move its speed without provoking opportunity attacks",
             action=ActionType.BonusAction,
-            uses=1,
+            recharge=5,
         )
         return stats, feature
 
@@ -482,14 +484,15 @@ class _Telekinetic(Power):
 
     def score(self, candidate: BaseStatblock) -> float:
         # this is great for aberrations, psychic focused creatures, and controllers
-        score = LOW_AFFINITY
+        score = 0
+
         if candidate.creature_type == CreatureType.Aberration:
             score += MODERATE_AFFINITY
         if candidate.secondary_damage_type == DamageType.Psychic:
             score += MODERATE_AFFINITY
         if candidate.role == MonsterRole.Controller:
             score += HIGH_AFFINITY
-        return score
+        return score if score > 0 else NO_AFFINITY
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -501,8 +504,8 @@ class _Telekinetic(Power):
 
         feature = Feature(
             name="Telekinetic Grasp",
-            description=f"This creature chooses one creature they can see within 100 feet weighting less than 400 pounds. \
-                The target must succeed on a DC {dc} Strength saving throw or be pulled up to 80 feet directly toward this creature",
+            description=f"{stats.selfref.capitalize()} chooses one creature they can see within 100 feet weighting less than 400 pounds. \
+                The target must succeed on a DC {dc} Strength saving throw or be pulled up to 80 feet directly toward {stats.selfref}",
             action=ActionType.BonusAction,
         )
         return stats, feature
@@ -535,7 +538,7 @@ class _Vanish(Power):
 
         feature = Feature(
             name="Vanish",
-            description="This creature can use the Disengage action, then can hide if they have cover.",
+            description=f"{stats.selfref.capitalize()} can use the Disengage action, then can hide if they have cover.",
             action=ActionType.BonusAction,
         )
         return stats, feature

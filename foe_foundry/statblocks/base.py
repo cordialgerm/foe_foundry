@@ -73,7 +73,11 @@ class BaseStatblock:
 
     @property
     def selfref(self) -> str:
-        return self.creature_type.value.lower()
+        return f"the {self.creature_type.value.lower()}"
+
+    @property
+    def roleref(self) -> str:
+        return f"the {self.role.value.lower()}"
 
     def __copy_args__(self) -> dict:
         args: dict = dict(

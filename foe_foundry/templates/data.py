@@ -17,6 +17,7 @@ from ..statblocks import Statblock
 class MonsterTemplateData:
     name: str
     selfref: str
+    roleref: str
     size: str
     creature_type: str
     ac: str
@@ -57,8 +58,6 @@ class MonsterTemplateData:
     def from_statblock(
         stats: Statblock, benchmark: Benchmark | None = None
     ) -> MonsterTemplateData:
-        selfref = stats.creature_type.name
-
         hp = f"{stats.hp.static} ({stats.hp.dice_formula()})"
         languages = ", ".join(l for l in stats.languages) if stats.languages is not None else ""
 
@@ -84,7 +83,9 @@ class MonsterTemplateData:
         if stats.multiattack == 0:
             multiattack = ""
         else:
-            multiattack = f"The {selfref} makes {num2words(stats.multiattack)} attacks"
+            multiattack = (
+                f"{stats.selfref.capitalize()} makes {num2words(stats.multiattack)} attacks."
+            )
 
             replace_multiattacks = [
                 f
@@ -96,11 +97,12 @@ class MonsterTemplateData:
                 replace_attacks = f"{num2words(feature.replaces_multiattack)} attack{'s' if feature.replaces_multiattack > 1 else ''}"
                 lines.append(f"{replace_attacks} with a use of its {feature.name}")
             if len(lines) > 0:
-                multiattack += ". It may replace " + "or ".join(lines)
+                multiattack += " It may replace " + "or ".join(lines)
 
         t = MonsterTemplateData(
             name=stats.name,
-            selfref=selfref,
+            selfref=stats.selfref,
+            roleref=stats.roleref,
             size=stats.size.name,
             creature_type=stats.creature_type.name,
             ac=stats.ac.description,
@@ -137,7 +139,7 @@ class MonsterTemplateData:
 def _damage_list(damage_types: Set[DamageType], nonmagical: bool) -> str:
     pieces = []
     if len(damage_types) > 0:
-        pieces.append(", ".join(d.name for d in damage_types))
+        pieces.append(", ".join(d.name.lower() for d in damage_types))
     if nonmagical:
         pieces.append("Bludgeoning, Piercing, and Slashing from Nonmagical Attacks")
     return "; ".join(pieces)

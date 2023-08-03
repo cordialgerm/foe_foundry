@@ -48,9 +48,7 @@ class _Sentinel(Power):
         feature = Feature(
             name="Sentinel",
             action=ActionType.Reaction,
-            description="If another target moves while within the {SELF_REF}'s reach then the {SELF_REF} may make an attack against that target.".format(
-                SELF_REF=stats.selfref
-            ),
+            description=f"If another target moves while within {stats.roleref}'s reach then the {stats.roleref} may make an attack against that target.",
         )
 
         return stats, feature
@@ -94,10 +92,8 @@ class _Grappler(Power):
         feature = Feature(
             name="Grappling Strike",
             action=ActionType.BonusAction,
-            description="Immediately after the {SELF_REF} hits with a weapon attack, the target must make a {dc} Strength save (escape DC {dc}). \
-                 While grappled in this way, the creature is also restrained".format(
-                SELF_REF=stats.selfref, dc=dc
-            ),
+            description=f"Immediately after {stats.roleref} hits with a weapon attack, the target must make a {dc} Strength save (escape DC {dc}). \
+                 While grappled in this way, the creature is also restrained",
         )
 
         return stats, feature
@@ -135,9 +131,7 @@ class _Cleaver(Power):
         feature = Feature(
             name="Cleaving Blows",
             action=ActionType.BonusAction,
-            description="Immediately after the {SELF_REF} hits with a weapon attack, it may make the same attack against a target within its reach.".format(
-                SELF_REF=stats.selfref
-            ),
+            description=f"Immediately after the {stats.selfref} hits with a weapon attack, it may make the same attack against a target within its reach.",
             recharge=5,
         )
 
@@ -181,7 +175,7 @@ class _Basher(Power):
         feature = Feature(
             name="Stunning Blow",
             action=ActionType.BonusAction,
-            description=f"Immediately after the {stats.selfref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution save or be Stunned until the end of the {stats.selfref}'s next turn.",
+            description=f"Immediately after the {stats.roleref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution save or be Stunned until the end of the {stats.selfref}'s next turn.",
             recharge=6,
         )
 
@@ -196,18 +190,18 @@ class _Disembowler(Power):
         if not candidate.attack_type.is_melee():
             return NO_AFFINITY
 
-        score = LOW_AFFINITY
+        score = 0
 
         if candidate.role == MonsterRole.Bruiser:
-            score += LOW_AFFINITY
-
-        if candidate.primary_damage_type == DamageType.Piercing:
-            score += HIGH_AFFINITY
-
-        if candidate.attack_type == AttackType.MeleeNatural:
             score += MODERATE_AFFINITY
 
-        return score
+        if candidate.primary_damage_type == DamageType.Piercing:
+            score += LOW_AFFINITY
+
+        if candidate.attack_type == AttackType.MeleeNatural:
+            score += LOW_AFFINITY
+
+        return score if score > 0 else NO_AFFINITY
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -218,7 +212,7 @@ class _Disembowler(Power):
         feature = Feature(
             name="Rend",
             action=ActionType.BonusAction,
-            description=f"Immediately after the {stats.selfref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution saving throw or suffer {dmg} ongoing piercing damage at the start of each of its turns. \
+            description=f"Immediately after {stats.roleref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution saving throw or suffer {dmg} ongoing piercing damage at the start of each of its turns. \
                 The ongoing damage ends when the creature receives magical healing, or if the creature or another creature uses an action to perform a DC 10 Medicine check",
         )
 
