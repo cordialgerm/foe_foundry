@@ -1,6 +1,8 @@
 from math import ceil
 from typing import List, Tuple
 
+import numpy as np
+
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
@@ -33,15 +35,12 @@ class _DamagingAura(Power):
 
         if candidate.secondary_damage_type is not None:
             return HIGH_AFFINITY
-        elif (
-            candidate.size in [Size.Large, Size.Huge, Size.Gargantuan]
-            and candidate.primary_attribute == Stats.STR
-        ):
-            return MODERATE_AFFINITY
         else:
-            return LOW_AFFINITY
+            return NO_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=stats.primary_damage_type)
 
@@ -106,7 +105,9 @@ class _Defender(Power):
 
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         name = "Cannon Fodder" if self._is_minion(stats) else "Defender"
 
         feature = Feature(
@@ -146,7 +147,9 @@ class _Frenzy(Power):
             score += MODERATE_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Frenzy",
             description="At the start of their turn, this creature can gain advantage on all melee weapon attack rolls made during this turn, but atack rolls against them have advantage until the start of their next turn.",
@@ -179,7 +182,9 @@ class _NotDeadYet(Power):
             score += HIGH_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
         stats = stats.copy(attributes=new_attrs)
 
@@ -208,7 +213,9 @@ class _GoesDownFighting(Power):
             score += MODERATE_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Goes Down Fighting",
             description="When this creature is reduced to 0 hit points, they can immediately make one melee or ranged weapon attack before they fall unconscious",
@@ -237,7 +244,9 @@ class _RefuseToSurrender(Power):
             score += HIGH_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         threshold = int(ceil(stats.hp.average / 2.0))
         dmg = int(ceil(stats.cr))
         feature = Feature(
@@ -271,7 +280,9 @@ class _DelightsInSuffering(Power):
             score += MODERATE_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         # grant intimidation proficiency or expertise
         stats = stats.copy(
             attributes=stats.attributes.grant_proficiency_or_expertise(Skills.Intimidation)
@@ -307,7 +318,9 @@ class _Lethal(Power):
             score += MODERATE_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Poison)
         dmg = int(ceil(stats.cr))
@@ -341,7 +354,9 @@ class _MarkTheTarget(Power):
             score += HIGH_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Mark the Target",
             description=f"Immediately after hitting a target, this creature can mark the target. All allies of this creature who can see the target have advantage on attack rolls against the target until the start of this creature's next turn.",
@@ -378,7 +393,9 @@ class _ParryAndRiposte(Power):
 
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Parry and Riposte",
             description="This creature adds +3 to their Armor Class against one melee attack that would hit them.\
@@ -411,7 +428,9 @@ class _QuickRecovery(Power):
             score += MODERATE_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         # add CON save proficiency
         new_attrs = stats.attributes.grant_save_proficiency(Stats.CON)
         stats = stats.copy(attributes=new_attrs)
@@ -440,7 +459,9 @@ class _Reposition(Power):
         else:
             return NO_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Reposition",
             description="Each ally within 60 ft that can see and hear this creature \
@@ -470,7 +491,9 @@ class _Telekinetic(Power):
             score += HIGH_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Psychic)
 
@@ -504,7 +527,9 @@ class _Vanish(Power):
             score += HIGH_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.copy(attributes=new_attrs)
 

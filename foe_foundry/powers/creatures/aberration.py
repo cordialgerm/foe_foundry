@@ -1,6 +1,8 @@
 from math import floor
 from typing import List, Tuple
 
+import numpy as np
+
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
@@ -37,7 +39,9 @@ class _GraspingTentacles(Power):
             else MODERATE_AFFINITY
         )
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         # TODO - integrate this directly into the attack via an AttackTemplate
 
         dc = int(floor(11 + 0.5 * stats.cr))
@@ -69,7 +73,9 @@ class _DominatingGaze(Power):
             else MODERATE_AFFINITY
         )
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         dc = int(floor(12 + 0.5 * stats.cr))
         feature = Feature(
             name="Dominating Gaze",

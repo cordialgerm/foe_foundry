@@ -1,6 +1,8 @@
 from math import ceil, floor
 from typing import List, Tuple
 
+import numpy as np
+
 from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
@@ -34,7 +36,9 @@ class _Aquatic(Power):
             score += HIGH_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_speed = stats.speed.copy(swim=stats.speed.walk)
         new_senses = stats.senses.copy(darkvision=60)
         stats = stats.copy(speed=new_speed, senses=new_senses)
@@ -57,7 +61,9 @@ class _Burrower(Power):
             score += EXTRA_HIGH_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_speed = stats.speed.copy(burrow=stats.speed.walk)
         new_senses = stats.senses.copy(blindsight=60)
         stats = stats.copy(speed=new_speed, senses=new_senses)
@@ -85,7 +91,9 @@ class _Climber(Power):
             score += MODERATE_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_speed = stats.speed.copy(climb=stats.speed.walk)
         new_attrs = stats.attributes.grant_proficiency_or_expertise(
             Skills.Athletics, Skills.Acrobatics
@@ -128,7 +136,9 @@ class _Flyer(Power):
             score += MODERATE_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         speed_change = 10 + 10 * int(floor(stats.cr / 5.0))
         new_speed = stats.speed.delta(speed_change=speed_change)
         new_speed = new_speed.copy(fly=new_speed.walk)
@@ -155,7 +165,9 @@ class _Speedy(Power):
 
         return MODERATE_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature | None]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature | None]:
         # give the monster reasonable DEX stat
         new_attrs = (
             stats.attributes.boost(Stats.DEX, 2)
@@ -189,7 +201,9 @@ class _Sneaky(Power):
         else:
             return EXTRA_HIGH_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(
             Skills.Stealth, Skills.Deception
         )

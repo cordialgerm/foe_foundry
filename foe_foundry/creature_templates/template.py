@@ -41,9 +41,6 @@ class CreatureTypeTemplate(ABC):
     def select_powers(self, stats: BaseStatblock, rng: np.random.Generator) -> List[Power]:
         # TODO - make this scale with CR and let creature types customize this
 
-        # Attack - choose 1
-        attack_power = select_power(stats=stats, power_type=PowerType.Attack, rng=rng)
-
         # Movement
         movement_power = select_power(stats=stats, power_type=PowerType.Movement, rng=rng)
 
@@ -61,7 +58,6 @@ class CreatureTypeTemplate(ABC):
 
         # Choose Candidates
         candidates = {
-            attack_power,
             movement_power,
             common_power,
             creature_power,
@@ -71,13 +67,13 @@ class CreatureTypeTemplate(ABC):
         candidates = [c for c in candidates if c is not None]
         multipliers = {
             PowerType.Movement: 0.25,
-            PowerType.Attack: 0.25,
             PowerType.Common: 0.25,
             PowerType.Creature: 1,
             PowerType.Role: 1,
             PowerType.Static: 0.25,
+            PowerType.Theme: 1,
         }
-        multipliers = np.array([multipliers[c.power_type] for c in candidates])
+        multipliers = np.array([multipliers[c.power_type] for c in candidates], dtype=float)
 
         selection = select_from_powers(
             stats, candidates, rng, n=stats.recommended_powers, multipliers=multipliers
@@ -97,7 +93,7 @@ class CreatureTypeTemplate(ABC):
 
         features = []
         for power in powers:
-            new_stats, feature = power.apply(new_stats)
+            new_stats, feature = power.apply(new_stats, rng)
             features.append(feature)
 
         name = f"{stats.key}-{self.creature_type}-{role_template.key}"

@@ -1,5 +1,7 @@
 from typing import List, Tuple
 
+import numpy as np
+
 from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
@@ -32,7 +34,9 @@ class _HitAndRun(Power):
             score += HIGH_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.copy(attributes=new_attrs)
 
@@ -59,7 +63,9 @@ class _MotivatedByCarnage(Power):
             score += HIGH_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Survival)
         stats = stats.copy(attributes=new_attrs)
 

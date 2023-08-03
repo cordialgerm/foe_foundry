@@ -1,6 +1,8 @@
 from math import ceil
 from typing import List, Tuple
 
+import numpy as np
+
 from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
@@ -8,11 +10,12 @@ from foe_foundry.statblocks import BaseStatblock
 from ..ac import ArmorClass, ArmorType
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
-from ..damage import AttackType, DamageType, flavorful_damage_types
+from ..damage import AttackType, DamageType
 from ..features import ActionType, Feature
 from ..role_types import MonsterRole
 from ..size import Size
 from ..statblocks import BaseStatblock, MonsterDials
+from .attack import flavorful_damage_types
 from .power import Power, PowerType
 from .scores import (
     EXTRA_HIGH_AFFINITY,
@@ -46,7 +49,9 @@ class _Armored(Power):
 
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         ac_bonus = int(ceil((stats.cr / 5.0)))
         has_shield = ArmorClass.could_use_shield_or_wear_armor(stats.creature_type)
         target_ac = stats.ac.value + ac_bonus + (2 if has_shield else 0)
@@ -86,7 +91,9 @@ class _Keen(Power):
         else:
             return MODERATE_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature | None]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature | None]:
         # give the monster reasonable mental stats
         new_attrs = (
             stats.attributes.boost(Stats.CHA, 2)
@@ -128,7 +135,9 @@ class _Athletic(Power):
         else:
             return MODERATE_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature | None]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature | None]:
         # give the monster reasonable physical stats
         new_attrs = (
             stats.attributes.boost(Stats.STR, 2)
@@ -151,26 +160,25 @@ class _ElementalAffinity(Power):
         super().__init__(name="ElementalAffinity", power_type=PowerType.Static)
 
     def score(self, candidate: BaseStatblock) -> float:
-        # if the monster has a secondary damage type then it's a really good fit
+        # if the monster has a secondary damage type then it's a good fit
         # otherwise, certain monster types are good fits
         score = 0
         if candidate.secondary_damage_type is not None:
             score += MODERATE_AFFINITY
-        elif flavorful_damage_types(candidate.creature_type) is not None:
+        elif flavorful_damage_types(candidate) is not None:
             score += MODERATE_AFFINITY
 
         return score if score > 0 else NO_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         damage_type = stats.secondary_damage_type
 
         if damage_type is None:
-            candidates = flavorful_damage_types(stats.creature_type)
-            if candidates is None:
-                damage_type = DamageType.Fire  # shouldn't happen, but provide fallback
-            else:
-                i = self.rng.choice(len(candidates))
-                damage_type = candidates[i]
+            candidates = flavorful_damage_types(stats, default=DamageType.Fire)
+            i = rng.choice(len(candidates))
+            damage_type = list(candidates)[i]
             stats = stats.copy(secondary_damage_type=damage_type)
 
         if stats.cr <= 8 and damage_type not in stats.damage_resistances:
@@ -215,7 +223,9 @@ class _Gigantic(Power):
             score += HIGH_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_attrs = (
             stats.attributes.grant_save_proficiency(Stats.STR)
             .grant_proficiency_or_expertise(Skills.Athletics)
@@ -256,7 +266,9 @@ class _Diminutive(Power):
             score += MODERATE_AFFINITY
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_attrs = (
             stats.attributes.grant_proficiency_or_expertise(Skills.Stealth, Skills.Acrobatics)
             .grant_save_proficiency(Stats.DEX)

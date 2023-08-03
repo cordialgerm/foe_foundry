@@ -12,3 +12,9 @@ class AttackType(StrEnum):
 
     def is_ranged(self) -> bool:
         return not self.is_melee()
+
+    def is_spell(self) -> bool:
+        return self in {AttackType.RangedSpell}
+
+    def is_mundane(self) -> bool:
+        return not self.is_spell()

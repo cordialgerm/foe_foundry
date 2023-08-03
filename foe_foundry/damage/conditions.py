@@ -5,6 +5,7 @@ class Condition(StrEnum):
     Blinded = auto()
     Charmed = auto()
     Deafened = auto()
+    Exhaustion = auto()
     Frightened = auto()
     Grappled = auto()
     Incapacitated = auto()
@@ -16,4 +17,3 @@ class Condition(StrEnum):
     Restrained = auto()
     Stunned = auto()
     Unconscious = auto()
-    Exhaustion = auto()

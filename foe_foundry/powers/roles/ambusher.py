@@ -1,5 +1,7 @@
 from typing import List, Tuple
 
+import numpy as np
+
 from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
@@ -41,7 +43,9 @@ class _DistractingAttack(Power):
         else:
             return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
         stats = stats.copy(attributes=new_attrs)
 
@@ -72,7 +76,9 @@ class _ShadowyMovement(Power):
 
         return score if score > 0 else NO_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.copy(attributes=new_attrs)
 
@@ -104,7 +110,9 @@ class _CunningAction(Power):
 
         return score if score > 0 else NO_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Cunning Action",
             description="Dash, Disengage, or Hide",
@@ -132,7 +140,9 @@ class _DeadlyAmbusher(Power):
 
         return score if score > 0 else NO_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.copy(attributes=new_attrs)
 
@@ -165,7 +175,9 @@ class _SneakyStrike(Power):
 
         return score if score > 0 else NO_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         if stats.cr <= 1:
             dmg = 2
         elif stats.cr <= 3:

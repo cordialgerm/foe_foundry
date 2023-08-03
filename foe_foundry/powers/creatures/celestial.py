@@ -1,5 +1,7 @@
 from typing import List, Tuple
 
+import numpy as np
+
 from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
@@ -32,7 +34,9 @@ class _MirroredJudgement(Power):
 
         return HIGH_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Mirrored Judgement",
             action=ActionType.Reaction,

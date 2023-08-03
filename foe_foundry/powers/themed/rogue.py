@@ -1,5 +1,7 @@
 from typing import List, Tuple
 
+import numpy as np
+
 from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
@@ -22,7 +24,7 @@ from ..scores import (
 
 class _NimbleReaction(Power):
     def __init__(self):
-        super().__init__(name="Nimble Reaction", power_type=PowerType.Role)
+        super().__init__(name="Nimble Reaction", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         score = 0
@@ -38,7 +40,9 @@ class _NimbleReaction(Power):
 
         return score if score > 0 else NO_AFFINITY
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Acrobatics)
         stats = stats.copy(attributes=new_attrs)
 

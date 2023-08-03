@@ -6,12 +6,12 @@ import numpy.typing as npt
 from ..creature_types import CreatureType
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
-from . import attack, common, movement, static
+from . import common, movement, static
 from .creatures import aberration, beast, celestial, construct
 from .power import Power
 from .power_type import PowerType
-from .roles import ambusher, artillery, bruiser
-from .tags import rogue
+from .roles import ambusher, artillery, bruiser, controller
+from .themed import rogue, warrior
 
 
 def select_power(
@@ -33,8 +33,6 @@ def select_powers(
         return select(movement.MovementPowers)
     elif power_type == PowerType.Static:
         return select(static.StaticPowers)
-    elif power_type == PowerType.Attack:
-        return select(attack.AttackPowers)
     elif power_type == PowerType.Common:
         return select(common.CommonPowers)
     elif power_type == PowerType.Creature:
@@ -45,6 +43,8 @@ def select_powers(
         except NotImplementedError:
             # TODO - temporary
             return select(common.CommonPowers)
+    else:
+        raise NotImplemented(f"{power_type} powers not yet supported")
 
 
 def select_from_powers(
@@ -89,5 +89,7 @@ def _role_powers(role_type: MonsterRole) -> List[Power]:
         return artillery.ArtilleryPowers
     elif role_type == MonsterRole.Bruiser:
         return bruiser.BruiserPowers + [common.GoesDownFighting]
+    elif role_type == MonsterRole.Controller:
+        return controller.ControllerPowers + [warrior.PinningShot]
     else:
         raise NotImplementedError("TODO")  # TODO

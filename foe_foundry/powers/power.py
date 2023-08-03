@@ -12,7 +12,6 @@ class Power(ABC):
     def __init__(self, name: str, power_type: PowerType):
         self.name = name
         self.power_type = power_type
-        self.rng = np.random.default_rng(20210518)
 
     @property
     def key(self) -> str:
@@ -23,7 +22,9 @@ class Power(ABC):
         pass
 
     @abstractmethod
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         pass
 
     def __repr__(self):

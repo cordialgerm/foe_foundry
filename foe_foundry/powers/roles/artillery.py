@@ -1,5 +1,7 @@
 from typing import List, Tuple
 
+import numpy as np
+
 from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
@@ -38,7 +40,9 @@ class _Ricochet(Power):
 
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Ricochet",
             action=ActionType.Reaction,
@@ -66,7 +70,9 @@ class _SteadyAim(Power):
 
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Steady Aim",
             action=ActionType.BonusAction,
@@ -95,7 +101,9 @@ class _QuickStep(Power):
 
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Quick Step",
             action=ActionType.Reaction,
@@ -122,7 +130,9 @@ class _QuickDraw(Power):
 
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Quick Draw",
             action=ActionType.Reaction,
@@ -151,7 +161,9 @@ class _SuppressingFire(Power):
 
         return score
 
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Suppressing Fire",
             action=ActionType.Feature,
