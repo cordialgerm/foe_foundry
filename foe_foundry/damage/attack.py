@@ -46,9 +46,22 @@ class Attack:
     reach: int | None = 5
     range: int | None = None
     is_melee: bool = field(init=False)
+    description: str = field(init=False)
 
     def __post_init__(self):
         self.is_melee = self.attack_type in {AttackType.MeleeNatural, AttackType.MeleeWeapon}
+
+        if self.is_melee:
+            description = f"***{self.name}***. *Melee Weapon Attack*: +{self.hit} to hit, reach {self.reach}ft., one target. *Hit* {self.damage.description}"
+        else:
+            description = f"***{self.name}***. *Ranged Weapon Attack*: +{self.hit} to hit, range {self.range}ft., one target. *Hit* {self.damage.description}"
+
+        if self.additional_damage is not None:
+            description += " and " + self.additional_damage.description
+        else:
+            description += "."
+
+        self.description = description
 
     def copy(self, **overrides) -> Attack:
         args: dict = dict(
@@ -87,9 +100,7 @@ class Attack:
 
         new_damage = Damage(formula=new_formula, damage_type=self.damage.damage_type)
 
-        return Attack(
-            name=self.name, hit=new_hit, damage=new_damage, reach=self.reach, range=self.range
-        )
+        return self.copy(hit=new_hit, damage=new_damage)
 
     def with_attack_type(self, attack_type: AttackType, damage_type: DamageType) -> Attack:
         new_damage = self.damage.copy(damage_type=damage_type)
@@ -103,18 +114,5 @@ class Attack:
                 attack_type=attack_type, range=self.range or 60, reach=None, damage=new_damage
             )
 
-    def describe(self) -> str:
-        if self.is_melee:
-            description = f"***{self.name}***. *Melee Weapon Attack*: +{self.hit} to hit, reach {self.reach}ft., one target. *Hit* {self.damage.description}"
-        else:
-            description = f"***{self.name}***. *Ranged Weapon Attack*: +{self.hit} to hit, range {self.range}ft., one target. *Hit* {self.damage.description}"
-
-        if self.additional_damage is not None:
-            description += " and " + self.additional_damage.description
-        else:
-            description += "."
-
-        return description
-
     def __repr__(self) -> str:
-        return self.describe()
+        return self.description

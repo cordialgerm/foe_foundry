@@ -38,11 +38,13 @@
 - [x] action that replaces a multiattack instance needs to be implemented
 - [ ] Powers need to be able to add additional info to attack clause
 - [x] Armor Templates - ArmorType (None, Light, Medium, Heavy, Natural, Arcane, Divine), HasShield, target AC, DEX
+- [x] Add benchmarking compared to L5E
 
 ## Bug List
 
 - [x] role modifiers don't appear to modify HP
 - [x] attack action range should be based on creature's attack type
+- [ ] Cold Damage power doesn't appear to add its damage to the attack
 - [ ] negative stat modifiers render with a ?
 - [ ] feature blocks sometimes have duplicate . at the end
 

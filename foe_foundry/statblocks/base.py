@@ -109,38 +109,48 @@ class BaseStatblock:
         args = self.__copy_args__()
 
         # resolve hp
-        args.update(
-            hp=self.hp
-            if dials.hp_multiplier == 1
-            else scale_hp_formula(self.hp, target=self.hp.average * dials.hp_multiplier)
-        )
+        if dials.hp_multiplier != 1:
+            args.update(
+                hp=scale_hp_formula(self.hp, target=self.hp.average * dials.hp_multiplier)
+            )
 
         # resolve ac
-        args.update(ac=self.ac.delta(dials.ac_modifier))
+        if dials.ac_modifier:
+            args.update(ac=self.ac.delta(dials.ac_modifier))
 
         # resolve attack
-        args.update(multiattack=self.multiattack + dials.multiattack_modifier)
-        args.update(
-            attack=self.attack.delta(
-                hit_delta=dials.attack_hit_modifier,
-                dice_delta=dials.attack_damage_dice_modifier,
-                damage_delta=dials.attack_damage_modifier,
+        if dials.multiattack_modifier:
+            args.update(multiattack=self.multiattack + dials.multiattack_modifier)
+
+        if (
+            dials.attack_hit_modifier
+            or dials.attack_damage_dice_modifier
+            or dials.attack_damage_modifier
+        ):
+            args.update(
+                attack=self.attack.delta(
+                    hit_delta=dials.attack_hit_modifier,
+                    dice_delta=dials.attack_damage_dice_modifier,
+                    damage_delta=dials.attack_damage_modifier,
+                )
             )
-        )
 
         # resolve difficulty class
-        args.update(
-            difficulty_class_modifier=self.difficulty_class_modifier
-            + dials.difficulty_class_modifier
-        )
+        if dials.difficulty_class_modifier:
+            args.update(
+                difficulty_class_modifier=self.difficulty_class_modifier
+                + dials.difficulty_class_modifier
+            )
 
         # resolve speed
-        args.update(speed=self.speed.delta(dials.speed_modifier))
+        if dials.speed_modifier:
+            args.update(speed=self.speed.delta(dials.speed_modifier))
 
         # resolve recommended powers
-        args.update(
-            recommended_powers_modifier=self.recommended_powers_modifier
-            + dials.recommended_powers_modifier
-        )
+        if dials.recommended_powers_modifier:
+            args.update(
+                recommended_powers_modifier=self.recommended_powers_modifier
+                + dials.recommended_powers_modifier
+            )
 
         return BaseStatblock(**args)
