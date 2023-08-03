@@ -13,6 +13,10 @@ class Movement:
     burrow: int | None = None
     hover: bool = False
 
+    @property
+    def fastest_speed(self) -> int:
+        return max(self.walk, self.fly or 0, self.climb or 0, self.swim or 0, self.burrow or 0)
+
     def delta(self, speed_change: int) -> Movement:
         args = {}
         for k, v in asdict(self).items():
@@ -38,3 +42,6 @@ class Movement:
         add("swim", self.swim)
 
         return ", ".join(pieces)
+
+    def __repr__(self) -> str:
+        return self.describe()

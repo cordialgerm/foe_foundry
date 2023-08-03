@@ -116,7 +116,7 @@ class ArmorClass:
                 **args,
             )
         elif armor_type == ArmorType.Arcane:
-            mage_ac = 10 + dex + spellcasting
+            mage_ac = 10 + min(dex, 2) + spellcasting
             proposed_ac = max(target_ac, mage_ac)
             max_allowed_ac = mage_ac + max_quality
             new_ac = min(proposed_ac, max_allowed_ac)
@@ -129,7 +129,7 @@ class ArmorClass:
                 **args,
             )
         elif armor_type == ArmorType.Divine:
-            divine_ac = 10 + dex + spellcasting + (2 if has_shield else 0)
+            divine_ac = 10 + min(dex, 2) + spellcasting + (2 if has_shield else 0)
             proposed_ac = max(target_ac, divine_ac)
             max_allowed_divine_ac = divine_ac + max_quality
             new_ac = min(proposed_ac, max_allowed_divine_ac)

@@ -33,12 +33,16 @@ class _Armored(Power):
         # this power makes sense for most monsters
         # if the monster is already a defender it makes a lot of sense
 
-        if candidate.role in {MonsterRole.Ambusher, MonsterRole.Artillery}:
-            return LOW_AFFINITY
+        if candidate.role in {
+            MonsterRole.Ambusher,
+            MonsterRole.Artillery,
+            MonsterRole.Skirmisher,
+        } or not ArmorClass.could_use_shield_or_wear_armor(candidate.creature_type):
+            return NO_AFFINITY
 
-        score = MODERATE_AFFINITY
+        score = LOW_AFFINITY
         if candidate.role in {MonsterRole.Leader, MonsterRole.Defender}:
-            score += HIGH_AFFINITY
+            score += MODERATE_AFFINITY
 
         return score
 
@@ -73,9 +77,10 @@ class _Keen(Power):
 
         if (
             candidate.creature_type == CreatureType.Beast
-            or candidate.attributes.INT < 10
-            or candidate.attributes.WIS < 10
-            or candidate.attributes.CHA < 10
+            or candidate.role == MonsterRole.Bruiser
+            or candidate.attributes.INT <= 10
+            or candidate.attributes.WIS <= 10
+            or candidate.attributes.CHA <= 10
         ):
             return NO_AFFINITY
         else:
@@ -85,7 +90,7 @@ class _Keen(Power):
         # give the monster reasonable mental stats
         new_attrs = (
             stats.attributes.boost(Stats.CHA, 2)
-            .boost(Stats.INT, 4)
+            .boost(Stats.INT, 2)
             .boost(Stats.WIS, 2)
             .grant_proficiency_or_expertise(
                 Skills.Persuasion,
@@ -99,7 +104,7 @@ class _Keen(Power):
         stats = stats.copy(attributes=new_attrs)
         feature = Feature(
             name="Keen Mind",
-            description="This creature has a keen mind. It gains proficiency in Persuasion, Deception, Insight, Intimidation, and Perception, as well as in Wisom, Intelligence, and Charisma saves.",
+            description="This creature has a keen mind. It gains proficiency in Persuasion, Deception, Insight, Intimidation, and Perception, as well as in Wisdom, Intelligence, and Charisma saves.",
             action=ActionType.Feature,
         )
         return stats, feature
@@ -116,8 +121,8 @@ class _Athletic(Power):
         if (
             candidate.role == MonsterRole.Artillery
             or candidate.role == MonsterRole.Controller
-            or candidate.attributes.STR < 10
-            or candidate.attributes.DEX < 10
+            or candidate.attributes.STR <= 10
+            or candidate.attributes.DEX <= 10
         ):
             return NO_AFFINITY
         else:
@@ -126,15 +131,14 @@ class _Athletic(Power):
     def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature | None]:
         # give the monster reasonable physical stats
         new_attrs = (
-            stats.attributes.boost(Stats.STR, 4)
-            .boost(Stats.DEX, 2)
-            .grant_proficiency_or_expertise(Skills.Athletics, Skills.Acrobatics)
-            .grant_save_proficiency(Stats.DEX, Stats.STR)
+            stats.attributes.boost(Stats.STR, 2)
+            .grant_proficiency_or_expertise(Skills.Athletics)
+            .grant_save_proficiency(Stats.STR)
         )
         stats = stats.copy(attributes=new_attrs)
         feature = Feature(
             name="Athletic",
-            description="This creature is athletic. It gains proficiency in Athletics and Acrobatics as well as Strength and Dexterity saves.",
+            description="This creature is athletic. It gains proficiency in Athletics and Strength saves.",
             action=ActionType.Feature,
         )
         return stats, feature
@@ -151,11 +155,11 @@ class _ElementalAffinity(Power):
         # otherwise, certain monster types are good fits
         score = 0
         if candidate.secondary_damage_type is not None:
-            score += HIGH_AFFINITY
+            score += MODERATE_AFFINITY
         elif flavorful_damage_types(candidate.creature_type) is not None:
             score += MODERATE_AFFINITY
 
-        return NO_AFFINITY if score == 0 else score
+        return score if score > 0 else NO_AFFINITY
 
     def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
         damage_type = stats.secondary_damage_type

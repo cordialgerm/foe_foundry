@@ -23,7 +23,7 @@ class _DamagingAttack(Power):
     """This creature's attacks deal an extra CR damage of a type appropriate for the creature."""
 
     def __init__(self):
-        super().__init__(name="Damaging Attack", power_type=PowerType.Common)
+        super().__init__(name="Damaging Attack", power_type=PowerType.Attack)
 
     def score(self, candidate: BaseStatblock) -> float:
         # this power can make sense for any monster

@@ -44,7 +44,7 @@
 
 - [x] role modifiers don't appear to modify HP
 - [x] attack action range should be based on creature's attack type
-- [ ] Cold Damage power doesn't appear to add its damage to the attack
+- [x] Cold Damage power doesn't appear to add its damage to the attack
 - [ ] negative stat modifiers render with a ?
 - [ ] feature blocks sometimes have duplicate . at the end
 

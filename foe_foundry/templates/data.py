@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from fractions import Fraction
 from typing import List, Set
 
@@ -16,6 +16,7 @@ from ..statblocks import Statblock
 @dataclass
 class MonsterTemplateData:
     name: str
+    selfref: str
     size: str
     creature_type: str
     ac: str
@@ -99,6 +100,7 @@ class MonsterTemplateData:
 
         t = MonsterTemplateData(
             name=stats.name,
+            selfref=selfref,
             size=stats.size.name,
             creature_type=stats.creature_type.name,
             ac=stats.ac.description,

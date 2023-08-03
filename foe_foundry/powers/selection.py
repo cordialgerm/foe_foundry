@@ -1,74 +1,93 @@
 from typing import List, overload
 
 import numpy as np
+import numpy.typing as npt
 
 from ..creature_types import CreatureType
+from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
-from .attack import AttackPowers
-from .common import CommonPowers
-from .creatures.aberration import AberrationPowers
-from .creatures.beast import BeastPowers
-from .creatures.celestial import CelestialPowers
-from .creatures.construct import ConstructPowers
-from .movement import MovementPowers
+from . import attack, common, movement, static
+from .creatures import aberration, beast, celestial, construct
 from .power import Power
 from .power_type import PowerType
-from .static import StaticPowers
+from .roles import ambusher, artillery, bruiser
+from .tags import rogue
 
 
-@overload
-def select_powers(
+def select_power(
     stats: BaseStatblock, power_type: PowerType, rng: np.random.Generator
-) -> Power:
-    pass
+) -> Power | None:
+    powers = select_powers(stats=stats, power_type=power_type, rng=rng, n=1)
+    return powers[0] if len(powers) > 0 else None
 
 
-@overload
 def select_powers(
     stats: BaseStatblock, power_type: PowerType, rng: np.random.Generator, n: int
 ) -> List[Power]:
-    pass
-
-
-def select_powers(
-    stats: BaseStatblock, power_type: PowerType, rng: np.random.Generator, n: int | None = None
-) -> Power | List[Power]:
     """Select powers based on scoring the power for the creature"""
 
-    def select(powers: List[Power]) -> Power | List[Power]:
-        weights = np.array([p.score(stats) for p in powers])
-        indxs = weights > 0
-        weights[indxs] = np.exp(weights[indxs])
-        weights[~indxs] = 0
-        p = weights / np.sum(weights)
-        indxs = rng.choice(a=len(powers), size=n, p=p, replace=False)
-        if n is None:
-            return powers[indxs]
-        else:
-            return np.array(powers, dtype=object)[indxs].tolist()
+    def select(powers: List[Power]) -> List[Power]:
+        return select_from_powers(stats, powers, rng, n)
 
     if power_type == PowerType.Movement:
-        return select(MovementPowers)
+        return select(movement.MovementPowers)
     elif power_type == PowerType.Static:
-        return select(StaticPowers)
+        return select(static.StaticPowers)
     elif power_type == PowerType.Attack:
-        return select(AttackPowers)
+        return select(attack.AttackPowers)
     elif power_type == PowerType.Common:
-        return select(CommonPowers)
+        return select(common.CommonPowers)
     elif power_type == PowerType.Creature:
         return select(_creature_powers(stats.creature_type))
     elif power_type == PowerType.Role:
-        raise NotImplementedError("TODO")  # TODO
+        try:
+            return select(_role_powers(stats.role))
+        except NotImplementedError:
+            # TODO - temporary
+            return select(common.CommonPowers)
+
+
+def select_from_powers(
+    stats: BaseStatblock,
+    powers: List[Power],
+    rng: np.random.Generator,
+    n: int,
+    multipliers: npt.NDArray[np.float_] | None = None,
+) -> List[Power]:
+    weights = np.array([p.score(stats) for p in powers], dtype=float)
+    if multipliers is not None:
+        weights = weights * multipliers
+    indxs = weights > 0
+    weights[indxs] = np.exp(weights[indxs])
+    weights[~indxs] = 0
+
+    if np.sum(weights) == 0:
+        return []
+
+    p = weights / np.sum(weights)
+    indxs = rng.choice(a=len(powers), size=n, p=p, replace=False)
+    return np.array(powers, dtype=object)[indxs].tolist()
 
 
 def _creature_powers(creature_type: CreatureType) -> List[Power]:
     if creature_type == CreatureType.Aberration:
-        return AberrationPowers
+        return aberration.AberrationPowers
     elif creature_type == CreatureType.Beast:
-        return BeastPowers
+        return beast.BeastPowers
     elif creature_type == CreatureType.Celestial:
-        return CelestialPowers
+        return celestial.CelestialPowers
     elif creature_type == CreatureType.Construct:
-        return ConstructPowers
+        return construct.ConstructPowers
+    else:
+        raise NotImplementedError("TODO")  # TODO
+
+
+def _role_powers(role_type: MonsterRole) -> List[Power]:
+    if role_type == MonsterRole.Ambusher:
+        return ambusher.AmbusherPowers + [rogue.NimbleReaction]
+    elif role_type == MonsterRole.Artillery:
+        return artillery.ArtilleryPowers
+    elif role_type == MonsterRole.Bruiser:
+        return bruiser.BruiserPowers + [common.GoesDownFighting]
     else:
         raise NotImplementedError("TODO")  # TODO

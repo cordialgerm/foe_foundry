@@ -52,6 +52,9 @@ class Attributes:
         else:
             return None
 
+    def has_proficiency_or_expertise(self, skill: Skills) -> bool:
+        return skill in self.proficient_skills or skill in self.expertise_skills
+
     def passive_skill(self, skill: Skills) -> int:
         return 10 + (self.skill_mod(skill, even_if_not_proficient=True) or 0)
 

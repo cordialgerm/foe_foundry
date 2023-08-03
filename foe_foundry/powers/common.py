@@ -248,34 +248,6 @@ class _RefuseToSurrender(Power):
         return stats, feature
 
 
-class _Sneaky(Power):
-    """Sneaky (Trait). This creature has advantage on Dexterity(Stealth) checks."""
-
-    def __init__(self):
-        super().__init__(name="Sneaky", power_type=PowerType.Common)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        # this is really good for ambushers that aren't yet expertise in stealth
-        if candidate.role != MonsterRole.Ambusher:
-            return NO_AFFINITY
-        elif Skills.Stealth in candidate.attributes.expertise_skills:
-            return NO_AFFINITY  # already has this ability basically
-        else:
-            return EXTRA_HIGH_AFFINITY
-
-    def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(
-            Skills.Stealth, Skills.Deception
-        )
-        stats = stats.copy(attributes=new_attrs)
-        feature = Feature(
-            name="Sneaky",
-            description="This creature gainst proficiency (or expertise) in Stealth and Deception",
-            action=ActionType.Feature,
-        )
-        return stats, feature
-
-
 class _DelightsInSuffering(Power):
     """When attacking a target whose current hit points are below half their hit point maximum,
     this creature has advantage on attack rolls and deals an extra CR damage when they hit."""
@@ -558,7 +530,6 @@ Frenzy: Power = _Frenzy()
 NotDeadYet: Power = _NotDeadYet()
 GoesDownFighting: Power = _GoesDownFighting()
 RefuseToSurrender: Power = _RefuseToSurrender()
-Sneaky: Power = _Sneaky()
 
 CommonPowers: List[Power] = [
     DamagingAura,
@@ -567,7 +538,6 @@ CommonPowers: List[Power] = [
     NotDeadYet,
     GoesDownFighting,
     RefuseToSurrender,
-    Sneaky,
     DelightsInSuffering,
     Lethal,
     MarkTheTarget,

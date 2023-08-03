@@ -66,7 +66,7 @@ class _BeastTemplate(CreatureTypeTemplate):
 
         # beasts are naturally lightly armored
         new_ac = stats.ac.delta(
-            change=-1,
+            change=-2,
             armor_type=ArmorType.Natural,
             shield_allowed=False,
         )

@@ -6,5 +6,5 @@ from .creatures.celestial import CelestialPowers  # noqa
 from .creatures.construct import ConstructPowers  # noqa
 from .movement import MovementPowers  # noqa
 from .power import Power, PowerType  # noqa
-from .selection import select_powers  # noqa
+from .selection import select_from_powers, select_power, select_powers  # noqa
 from .static import StaticPowers  # noqa

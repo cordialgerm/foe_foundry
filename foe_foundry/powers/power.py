@@ -25,3 +25,6 @@ class Power(ABC):
     @abstractmethod
     def apply(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
         pass
+
+    def __repr__(self):
+        return f"{self.name} ({self.power_type})"

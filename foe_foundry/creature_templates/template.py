@@ -4,7 +4,7 @@ from typing import List
 import numpy as np
 
 from ..creature_types import CreatureType
-from ..powers import Power, PowerType, select_powers
+from ..powers import Power, PowerType, select_from_powers, select_power
 from ..role_types import MonsterRole
 from ..roles import AllRoles, RoleTemplate, get_role
 from ..statblocks import BaseStatblock, Statblock
@@ -42,21 +42,47 @@ class CreatureTypeTemplate(ABC):
         # TODO - make this scale with CR and let creature types customize this
 
         # Attack - choose 1
-        attack_power = select_powers(stats=stats, power_type=PowerType.Attack, rng=rng)
+        attack_power = select_power(stats=stats, power_type=PowerType.Attack, rng=rng)
 
         # Movement
-        movement_power = select_powers(stats=stats, power_type=PowerType.Movement, rng=rng)
+        movement_power = select_power(stats=stats, power_type=PowerType.Movement, rng=rng)
 
         # Common
-        common_power = select_powers(stats=stats, power_type=PowerType.Common, rng=rng)
+        common_power = select_power(stats=stats, power_type=PowerType.Common, rng=rng)
 
-        # Role
-        # TODO
+        # Static
+        static_power = select_power(stats=stats, power_type=PowerType.Static, rng=rng)
 
         # Creature Type
-        creature_power = select_powers(stats=stats, power_type=PowerType.Creature, rng=rng)
+        creature_power = select_power(stats=stats, power_type=PowerType.Creature, rng=rng)
 
-        return [attack_power, movement_power, common_power, creature_power]
+        # Role
+        role_power = select_power(stats=stats, power_type=PowerType.Role, rng=rng)
+
+        # Choose Candidates
+        candidates = {
+            attack_power,
+            movement_power,
+            common_power,
+            creature_power,
+            role_power,
+            static_power,
+        }
+        candidates = [c for c in candidates if c is not None]
+        multipliers = {
+            PowerType.Movement: 0.25,
+            PowerType.Attack: 0.25,
+            PowerType.Common: 0.25,
+            PowerType.Creature: 1,
+            PowerType.Role: 1,
+            PowerType.Static: 0.25,
+        }
+        multipliers = np.array([multipliers[c.power_type] for c in candidates])
+
+        selection = select_from_powers(
+            stats, candidates, rng, n=stats.recommended_powers, multipliers=multipliers
+        )
+        return selection
 
     def create(
         self,

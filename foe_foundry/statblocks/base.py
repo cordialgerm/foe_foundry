@@ -71,6 +71,10 @@ class BaseStatblock:
     def primary_attribute(self) -> Stats:
         return self.attributes.primary_attribute
 
+    @property
+    def selfref(self) -> str:
+        return self.creature_type.value.lower()
+
     def __copy_args__(self) -> dict:
         args: dict = dict(
             name=self.name,
