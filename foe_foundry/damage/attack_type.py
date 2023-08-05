@@ -18,3 +18,6 @@ class AttackType(StrEnum):
 
     def is_mundane(self) -> bool:
         return not self.is_spell()
+
+    def is_weapon(self) -> bool:
+        return self in {AttackType.MeleeWeapon, AttackType.RangedWeapon}

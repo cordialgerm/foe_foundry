@@ -10,8 +10,8 @@ from . import common, movement, static
 from .creatures import aberration, beast, celestial, construct
 from .power import Power
 from .power_type import PowerType
-from .roles import ambusher, artillery, bruiser, controller, defender, leader
-from .themed import rogue, warrior
+from .roles import ambusher, artillery, bruiser, controller, defender, leader, skirmisher
+from .themed import ThemedPowers, rogue, warrior
 
 
 def select_power(
@@ -38,11 +38,9 @@ def select_powers(
     elif power_type == PowerType.Creature:
         return select(_creature_powers(stats.creature_type))
     elif power_type == PowerType.Role:
-        try:
-            return select(_role_powers(stats.role))
-        except NotImplementedError:
-            # TODO - temporary
-            return select(common.CommonPowers)
+        return select(_role_powers(stats.role))
+    elif power_type == PowerType.Theme:
+        return select(ThemedPowers)
     else:
         raise NotImplemented(f"{power_type} powers not yet supported")
 
@@ -98,6 +96,6 @@ def _role_powers(role_type: MonsterRole) -> List[Power]:
     elif role_type == MonsterRole.Leader:
         return leader.LeaderPowers + [common.MarkTheTarget]
     elif role_type == MonsterRole.Skirmisher:
-        return [] + [common.Vanish]  # TODO
+        return skirmisher.SkirmisherPowers + [common.Vanish, artillery.QuickStep]  # TODO
     else:
-        raise NotImplementedError("TODO")  # TODO
+        raise ValueError(f"Unsupported monster role {role_type}")

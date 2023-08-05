@@ -47,7 +47,7 @@ class _GraspingTentacles(Power):
         dc = int(floor(11 + 0.5 * stats.cr))
         feature = Feature(
             name="Grasping Tentacles",
-            description=f"When this creature hits with an attack, they sprout a tentacle that grasps the target. \
+            description=f"When {stats.selfref} hits with an attack, they sprout a tentacle that grasps the target. \
                 In addition to the attack's normal effects, the target is grappled (escape DC {dc}) and restrained.",
             action=ActionType.Reaction,
         )

@@ -58,3 +58,5 @@ class _NimbleReaction(Power):
 
 
 NimbleReaction: Power = _NimbleReaction()
+
+RoguePowers: List[Power] = [NimbleReaction]

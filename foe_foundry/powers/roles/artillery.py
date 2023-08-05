@@ -96,6 +96,9 @@ class _QuickStep(Power):
         if candidate.role == MonsterRole.Artillery:
             score += MODERATE_AFFINITY
 
+        if candidate.role == MonsterRole.Skirmisher:
+            score += MODERATE_AFFINITY  # this power could also make sense for skirmishers
+
         if candidate.speed.fastest_speed >= 40:
             score += LOW_AFFINITY
 

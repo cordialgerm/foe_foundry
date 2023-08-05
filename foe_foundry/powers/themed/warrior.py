@@ -30,10 +30,12 @@ class _PinningShot(Power):
     def score(self, candidate: BaseStatblock) -> float:
         score = 0
 
-        if candidate.attack_type.is_ranged():
-            score += MODERATE_AFFINITY
+        if not candidate.attack_type.is_ranged():
+            return NO_AFFINITY
 
-        if candidate.role == MonsterRole.Controller:
+        score = MODERATE_AFFINITY
+
+        if candidate.role in {MonsterRole.Controller, MonsterRole.Artillery}:
             score += MODERATE_AFFINITY
 
         if candidate.primary_attribute == Stats.STR:
@@ -67,11 +69,10 @@ class _Challenger(Power):
 
         score = 0
 
-        if candidate.role == MonsterRole.Defender:
-            score += MODERATE_AFFINITY
-
-        if ArmorClass.could_use_shield_or_wear_armor(candidate.creature_type):
-            score += MODERATE_AFFINITY
+        if candidate.role == MonsterRole.Defender or ArmorClass.could_use_shield_or_wear_armor(
+            candidate.creature_type
+        ):
+            score += HIGH_AFFINITY
 
         if candidate.attributes.CHA >= 18 or candidate.attributes.has_proficiency_or_expertise(
             Skills.Intimidation
@@ -97,3 +98,5 @@ class _Challenger(Power):
 
 PinningShot: Power = _PinningShot()
 Challenger: Power = _Challenger()
+
+WarriorPowers: List[Power] = [PinningShot, Challenger]

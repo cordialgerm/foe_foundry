@@ -56,6 +56,9 @@ class CreatureTypeTemplate(ABC):
         # Role
         role_power = select_power(stats=stats, power_type=PowerType.Role, rng=rng)
 
+        # Themed
+        theme_power = select_power(stats=stats, power_type=PowerType.Theme, rng=rng)
+
         # Choose Candidates
         candidates = {
             movement_power,
@@ -63,6 +66,7 @@ class CreatureTypeTemplate(ABC):
             creature_power,
             role_power,
             static_power,
+            theme_power,
         }
         candidates = [c for c in candidates if c is not None]
         multipliers = {

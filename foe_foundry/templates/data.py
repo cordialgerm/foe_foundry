@@ -97,7 +97,7 @@ class MonsterTemplateData:
                 replace_attacks = f"{num2words(feature.replaces_multiattack)} attack{'s' if feature.replaces_multiattack > 1 else ''}"
                 lines.append(f"{replace_attacks} with a use of its {feature.name}")
             if len(lines) > 0:
-                multiattack += " It may replace " + "or ".join(lines)
+                multiattack += " It may replace " + " or ".join(lines)
 
         t = MonsterTemplateData(
             name=stats.name,

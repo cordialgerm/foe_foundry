@@ -9,7 +9,6 @@ from .leader import Leader
 from .skirmisher import Skirmisher
 from .template import RoleTemplate, RoleVariant
 
-# TODO - add roles here as powers are implemented
 AllRoles: List[RoleTemplate] = [
     Ambusher,
     Artillery,
@@ -17,7 +16,7 @@ AllRoles: List[RoleTemplate] = [
     Controller,
     Defender,
     Leader,
-    # Skirmisher,
+    Skirmisher,
 ]
 
 AllRoleVariants: List[RoleVariant] = [rv for r in AllRoles for rv in r.variants]
