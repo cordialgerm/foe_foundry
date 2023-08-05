@@ -49,14 +49,14 @@ class MonsterTemplateData:
     multiattack: str
     attack: Attack
 
-    benchmark: Benchmark | None = None
+    benchmarks: List[Benchmark] | None = None
 
     def to_dict(self) -> dict:
         return asdict(self)
 
     @staticmethod
     def from_statblock(
-        stats: Statblock, benchmark: Benchmark | None = None
+        stats: Statblock, benchmarks: List[Benchmark] | None = None
     ) -> MonsterTemplateData:
         hp = f"{stats.hp.static} ({stats.hp.dice_formula()})"
         languages = ", ".join(l for l in stats.languages) if stats.languages is not None else ""
@@ -131,7 +131,7 @@ class MonsterTemplateData:
             reactions=reactions,
             multiattack=multiattack,
             attack=stats.attack,
-            benchmark=benchmark,
+            benchmarks=benchmarks,
         )
         return t
 

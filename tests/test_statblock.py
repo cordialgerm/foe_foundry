@@ -10,7 +10,7 @@ from foe_foundry import (
     BaseStatblock,
     CreatureTypeTemplate,
     RoleTemplate,
-    benchmarks,
+    benchmark,
     general_use_stats,
     templates,
 )
@@ -38,9 +38,9 @@ def test_all_combinations(
     path = examples_dir / (name + ".html")
     stats = creature_template.create(base_stat, role_template=role, rng=rng)
 
-    benchmark = benchmarks.L5EBenchmark().benchmark(stats)
+    benchmarks = benchmark(stats)
 
-    templates.render_html_inline_page(stats, path, benchmark)
+    templates.render_html_inline_page(stats, path, benchmarks)
 
 
 def _seed_for_text(text: str) -> int:

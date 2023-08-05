@@ -1,5 +1,6 @@
 from .ac import ArmorClass  # noqa
 from .attributes import Attributes, Skills, Stats  # noqa
+from .benchmarks import Benchmark, benchmark  # noqa
 from .creature_templates import AberrationTemplate  # noqa
 from .creature_templates import AllCreatureTemplates, CreatureTypeTemplate  # noqa
 from .damage import Attack, AttackType, Damage, DamageType  # noqa

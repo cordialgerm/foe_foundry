@@ -16,7 +16,8 @@
   - [ ] Ooze
   - [ ] Plant
   - [ ] Undead
-- [ ] Role Powers
+- [ ] Role Powers - all but LEADER
+- [ ] Theme Powers
 - [ ] Create a visualization that shows likelyhood of creature + role going for a giving power
 - [ ] Tag Powers
 - [ ] Creature Templates

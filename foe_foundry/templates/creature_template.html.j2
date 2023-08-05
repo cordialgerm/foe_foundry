@@ -36,9 +36,11 @@
     {{features_block(bonus_actions, 'Bonus Actions')}}
     {{features_block(reactions, 'Reactions')}}
 
-    {% if benchmark %}
-    <h3>BENCHMARKING</h3>
+    {% if benchmarks %}
+    {% for benchmark in benchmarks %}
+    <h4>{{benchmark.name}}</h4>
     {{benchmark_block(benchmark)}}
+    {% endfor %}
     {% endif %}
 
 

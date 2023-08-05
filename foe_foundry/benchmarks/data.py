@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Benchmark:
+    name: str
     expected_ac: int
     actual_ac: int
     ac_gap: int
