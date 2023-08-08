@@ -11,7 +11,7 @@ from .creatures import aberration, beast, celestial, construct
 from .power import Power
 from .power_type import PowerType
 from .roles import ambusher, artillery, bruiser, controller, defender, leader, skirmisher
-from .themed import ThemedPowers, rogue, warrior
+from .themed import ThemedPowers, poison, tricky, warrior
 
 
 def select_power(
@@ -78,13 +78,15 @@ def _creature_powers(creature_type: CreatureType) -> List[Power]:
         return construct.ConstructPowers
     elif creature_type == CreatureType.Beast:
         return [] + [common.GoesDownFighting]  # TODO
+    elif creature_type == CreatureType.Plant:
+        return [] + poison.PoisonPowers
     else:
         raise NotImplementedError("TODO")  # TODO
 
 
 def _role_powers(role_type: MonsterRole) -> List[Power]:
     if role_type == MonsterRole.Ambusher:
-        return ambusher.AmbusherPowers + [rogue.NimbleReaction, common.Vanish]
+        return ambusher.AmbusherPowers + [tricky.NimbleReaction, common.Vanish]
     elif role_type == MonsterRole.Artillery:
         return artillery.ArtilleryPowers
     elif role_type == MonsterRole.Bruiser:
