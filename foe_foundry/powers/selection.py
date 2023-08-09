@@ -79,7 +79,9 @@ def _creature_powers(creature_type: CreatureType) -> List[Power]:
     elif creature_type == CreatureType.Beast:
         return [] + [common.GoesDownFighting]  # TODO
     elif creature_type == CreatureType.Plant:
-        return [] + poison.PoisonPowers
+        return [] + poison.PoisonPowers  # TODO
+    elif creature_type == CreatureType.Fey:
+        return [] + tricky.TrickyPowers  # TODO
     else:
         raise NotImplementedError("TODO")  # TODO
 

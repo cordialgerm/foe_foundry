@@ -57,38 +57,62 @@ class _NimbleReaction(Power):
         return stats, feature
 
 
+def _score_is_tricky_creature(candidate: BaseStatblock) -> float:
+    score = 0
+
+    creature_types = {
+        CreatureType.Fey: HIGH_AFFINITY,
+        CreatureType.Fiend: MODERATE_AFFINITY,
+        CreatureType.Aberration: MODERATE_AFFINITY,
+        CreatureType.Ooze: MODERATE_AFFINITY,
+        CreatureType.Humanoid: MODERATE_AFFINITY,
+    }
+    score += creature_types.get(candidate.creature_type, 0)
+
+    if score == 0:
+        return 0
+
+    roles = {MonsterRole.Ambusher: LOW_AFFINITY, MonsterRole.Controller: LOW_AFFINITY}
+    score += roles.get(candidate.role, 0)
+
+    if candidate.secondary_damage_type == DamageType.Psychic:
+        score += LOW_AFFINITY
+
+    if candidate.attributes.has_proficiency_or_expertise(Skills.Deception):
+        score += MODERATE_AFFINITY
+
+    return score
+
+
+def _ensure_tricky_stats(stats: BaseStatblock) -> BaseStatblock:
+    # this creature should be tricky
+    new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception).boost(
+        Stats.CHA, 2
+    )
+
+    changes: dict = dict(attributes=new_attrs)
+
+    # if this is a humanoid, it should be an illusionist spellcaster
+    if stats.creature_type == CreatureType.Humanoid:
+        changes.update(
+            attack_type=AttackType.RangedSpell, secondary_damage_type=DamageType.Psychic
+        )
+
+    return stats.copy(**changes)
+
+
 class _Impersonation(Power):
     def __init__(self):
         super().__init__(name="Impersonation", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        creature_types = {
-            CreatureType.Fey: HIGH_AFFINITY,
-            CreatureType.Fiend: MODERATE_AFFINITY,
-            CreatureType.Aberration: MODERATE_AFFINITY,
-            CreatureType.Ooze: MODERATE_AFFINITY,
-            CreatureType.Humanoid: MODERATE_AFFINITY,
-        }
-
-        roles = {MonsterRole.Ambusher: LOW_AFFINITY, MonsterRole.Controller: LOW_AFFINITY}
-
-        score = creature_types.get(candidate.creature_type, 0) + roles.get(candidate.role, 0)
+        score = _score_is_tricky_creature(candidate)
         return score if score > 0 else NO_AFFINITY
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
-        # this creature should be tricky
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception).boost(
-            Stats.CHA, 2
-        )
-        stats = stats.copy(attributes=new_attrs)
-
-        # if this is a humanoid, it should be an illusionist spellcaster
-        if stats.creature_type == CreatureType.Humanoid:
-            stats = stats.copy(
-                attack_type=AttackType.RangedSpell, secondary_damage_type=DamageType.Psychic
-            )
+        stats = _ensure_tricky_stats(stats)
 
         dc = 8 + stats.attributes.stat_mod(Stats.CHA) + stats.attributes.proficiency
 
@@ -104,7 +128,36 @@ class _Impersonation(Power):
         return stats, feature
 
 
+class _Projection(Power):
+    def __init__(self):
+        super().__init__(name="Projection", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        score = _score_is_tricky_creature(candidate)
+        return score if score > 0 else NO_AFFINITY
+
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
+        stats = _ensure_tricky_stats(stats)
+
+        dc = stats.attributes.passive_skill(Skills.Deception)
+
+        feature = Feature(
+            name="Projection",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"When {stats.selfref} is the sole target of an attack or spell, {stats.selfref} may use their reaction to turn invisible and teleport up to 30 ft to an unoccupied location they can see. \
+                The invisibility lasts for up to 1 minute or until {stats.selfref} makes an attack or casts a spell. \
+                Simultaneously, an illusionary version of {stats.selfref} appears in the previous location and appears to be subjected to the attack or spell. \
+                The illusion ends when the invisibility ends and also fails to stand up to physical interaction. A character may also use an action to perform a DC {dc} Investigation check to identify the illusion.",
+        )
+
+        return stats, feature
+
+
 NimbleReaction: Power = _NimbleReaction()
 Impersonation: Power = _Impersonation()
+Projection: Power = _Projection()
 
 TrickyPowers: List[Power] = [NimbleReaction, Impersonation]
