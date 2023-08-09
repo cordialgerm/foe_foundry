@@ -25,17 +25,31 @@ from ..scores import (
 )
 
 
-def _score(candidate: BaseStatblock) -> float:
+def _score_could_be_organized(
+    candidate: BaseStatblock, requires_intelligence: bool = True
+) -> float:
+    score = 0
+
     creature_types = {
         CreatureType.Humanoid: MODERATE_AFFINITY,
         CreatureType.Fey: LOW_AFFINITY,
         CreatureType.Dragon: MODERATE_AFFINITY,
         CreatureType.Giant: LOW_AFFINITY,
     }
+    roles = {MonsterRole.Leader: EXTRA_HIGH_AFFINITY}
 
-    role = {MonsterRole.Leader: EXTRA_HIGH_AFFINITY}
+    if not requires_intelligence:
+        creature_types[CreatureType.Beast] = MODERATE_AFFINITY
+    elif candidate.attributes.INT <= 8:
+        return NO_AFFINITY
 
-    score = creature_types.get(candidate.creature_type, 0) + role.get(candidate.role, 0)
+    score += creature_types.get(candidate.creature_type, 0)
+    score += roles.get(candidate.role, 0)
+    return score
+
+
+def _score(candidate: BaseStatblock) -> float:
+    score = _score_could_be_organized(candidate, requires_intelligence=True)
     return score if score > 0 else NO_AFFINITY
 
 

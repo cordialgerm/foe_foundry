@@ -21,6 +21,7 @@ from ..scores import (
     MODERATE_AFFINITY,
     NO_AFFINITY,
 )
+from .organized import _score_could_be_organized
 
 
 class _PinningShot(Power):
@@ -96,7 +97,27 @@ class _Challenger(Power):
         return stats, feature
 
 
+class _PackTactics(Power):
+    def __init__(self):
+        super().__init__(name="Pack Tactics", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        score = _score_could_be_organized(candidate, requires_intelligence=False)
+        return score if score > 0 else NO_AFFINITY
+
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Pack Tactics",
+            action=ActionType.Feature,
+            description=f"{stats.selfref.capitalize()} has advantage on attack rolls against a target if at least one of {stats.selfref}'s is within 5 feet and isn't incapacitated.",
+        )
+        return stats, feature
+
+
 PinningShot: Power = _PinningShot()
 Challenger: Power = _Challenger()
+PackTactics: Power = _PackTactics()
 
-WarriorPowers: List[Power] = [PinningShot, Challenger]
+WarriorPowers: List[Power] = [PinningShot, Challenger, PackTactics]

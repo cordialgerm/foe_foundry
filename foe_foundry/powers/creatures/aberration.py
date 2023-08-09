@@ -7,7 +7,7 @@ from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, Condition
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ..power import Power, PowerType
@@ -88,10 +88,37 @@ class _DominatingGaze(Power):
         return stats, feature
 
 
+class _MaddeningWhispers(Power):
+    def __init__(self):
+        super().__init__(name="Maddening Whispers", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        if candidate.creature_type != CreatureType.Aberration:
+            return NO_AFFINITY
+
+        return HIGH_AFFINITY
+
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
+        dc = stats.difficulty_class_easy
+        feature = Feature(
+            name="Madenning Whispers",
+            action=ActionType.Feature,
+            description=f"Each creature that starts its turn within 20 ft of {stats.selfref} must make a DC {dc} Wisdom saving throw. \
+                On a failure, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during its turn. \
+                On a 1-4, the creature does nothing. On a 5-6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. \
+                On a 7-8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.",
+        )
+
+        return stats, feature
+
+
 GraspingTentacles: Power = _GraspingTentacles()
 DominatingGaze: Power = _DominatingGaze()
+MadenningWhispers: Power = _MaddeningWhispers()
 
-AberrationPowers: List[Power] = [GraspingTentacles, DominatingGaze]
+AberrationPowers: List[Power] = [GraspingTentacles, DominatingGaze, MadenningWhispers]
 
 # TODO - future options
 # Eye Beams

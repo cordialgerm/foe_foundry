@@ -18,8 +18,21 @@
   - [ ] Undead
 - [x] Role Powers - all but LEADER
 - [ ] Theme Powers
+  - [x] aberrant
+  - [x] bestial
+  - [x] charm
+  - [x] deathly (renamed from Necromantic)
+  - [ ] draconic - MOVE TO DRAGON ABOVE? or have a BREATH tag?
+  - [ ] elemental - TBD? merged with elemental above?
+  - [x] fearsome
+  - [ ] magic
+  - [x] organized (rename from Leader)
+  - [x] poison
+  - [x] tricky (renamed from Rogue)
+  - [ ] solo - MOVE TO SPECIAL SECTION BELOW
+  - [x] warrior
+- [ ] Legendary Creatures (powers, role)
 - [ ] Create a visualization that shows likelyhood of creature + role going for a giving power
-- [ ] Tag Powers
 - [ ] Creature Templates
 - [ ] Statblock Renderers
   - [x] HTML

@@ -137,8 +137,59 @@ class _AdhesiveSkin(Power):
         return stats, feature
 
 
+class _Incubation(Power):
+    def __init__(self):
+        super().__init__(name="Incubation", power_type=PowerType.Theme)
+        self.damage_types = {DamageType.Necrotic, DamageType.Poison}
+
+    def score(self, candidate: BaseStatblock) -> float:
+        score = 0
+
+        if candidate.attack_type != AttackType.MeleeNatural:
+            return NO_AFFINITY
+
+        creature_types = {
+            CreatureType.Aberration: HIGH_AFFINITY,
+            CreatureType.Monstrosity: MODERATE_AFFINITY,
+            CreatureType.Beast: LOW_AFFINITY,
+        }
+        score += creature_types.get(candidate.creature_type, 0)
+
+        if candidate.secondary_damage_type in self.damage_types:
+            score += MODERATE_AFFINITY
+
+        return score if score > 0 else NO_AFFINITY
+
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
+        stats = stats.copy(attack_type=AttackType.MeleeNatural)
+
+        if stats.secondary_damage_type not in self.damage_types:
+            damage_type_indx = rng.choice(len(self.damage_types))
+            damage_type = list(self.damage_types)[damage_type_indx]
+            stats = stats.copy(secondary_damage_type=damage_type)
+
+        dc = stats.difficulty_class_easy
+        timespan = "three months" if stats.cr <= 5 else "three days"
+
+        feature = Feature(
+            name="Incubation",
+            action=ActionType.Feature,
+            description=f"If a humanoid is hit by {stats.selfref}'s attack, it must make a DC {dc} Constitution saving throw. \
+                            On a failure, the target is infected by a terrible parasite. The target can carry only one such parasite at a time. \
+                            Over the next {timespan}, the parasite gestates and moves to the chest cavity. \
+                            In the 24-hour period before the parasite gives birth, the target feels unwell. Its speed is halved, and it has disadvantage on attack rolls, ability checks, and saving throws. \
+                            At birth, the parasite burrows its way out of the target's chest in one round, killing it.\
+                            If the disease is cured, the parasite disintigrates.",
+        )
+
+        return stats, feature
+
+
 EraseMemory: Power = _EraseMemory()
 WarpReality: Power = _WarpReality()
 AdhesiveSkin: Power = _AdhesiveSkin()
+Incubation: Power = _Incubation()
 
 AberrantPowers: List[Power] = [EraseMemory, WarpReality, AdhesiveSkin]
