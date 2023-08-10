@@ -23,7 +23,9 @@ from ..scores import (
 )
 
 
-def _score_fearsome(candidate: BaseStatblock, min_cr: float = 2) -> float:
+def _score_fearsome(
+    candidate: BaseStatblock, min_cr: float = 2, supernatural: bool = True
+) -> float:
     if candidate.cr < min_cr:
         return 0
 
@@ -31,8 +33,10 @@ def _score_fearsome(candidate: BaseStatblock, min_cr: float = 2) -> float:
         CreatureType.Dragon: HIGH_AFFINITY,
         CreatureType.Fiend: HIGH_AFFINITY,
         CreatureType.Monstrosity: MODERATE_AFFINITY,
-        CreatureType.Beast: LOW_AFFINITY,
     }
+
+    if not supernatural:
+        creature_types.update({CreatureType.Beast: LOW_AFFINITY})
 
     score = creature_types.get(candidate.creature_type, 0)
     if score == 0:
@@ -68,13 +72,15 @@ class _Repulsion(Power):
         super().__init__(name="Repulsion", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = _score_horrifying(candidate) + _score_fearsome(candidate)
+        score = (
+            _score_horrifying(candidate) + _score_fearsome(candidate, supernatural=False)
+        ) / 2
         return score if score > 0 else NO_AFFINITY
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
-        if _score_fearsome(stats) > 0:
+        if _score_fearsome(stats, supernatural=False) > 0:
             name = "Fearsome Roar"
         elif _score_horrifying(stats) > 0:
             name = "Horrifying Presence"
@@ -126,7 +132,9 @@ class _DreadGaze(Power):
         super().__init__(name="Dread Gaze", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = _score_horrifying(candidate) + _score_fearsome(candidate)
+        score = (
+            _score_horrifying(candidate) + _score_fearsome(candidate, supernatural=True)
+        ) / 2.0
         return score if score > 0 else NO_AFFINITY
 
     def apply(
