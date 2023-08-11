@@ -11,7 +11,7 @@ from foe_foundry.statblocks import BaseStatblock
 from ...ac import ArmorClass
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
@@ -35,7 +35,7 @@ def _score_could_be_monstrous(candidate: BaseStatblock, size_boost: bool = True)
     }
     score += creature_types.get(candidate.creature_type, 0)
 
-    if candidate.size >= Size.Large:
+    if size_boost and candidate.size >= Size.Large:
         score += MODERATE_AFFINITY
 
     return score
@@ -135,7 +135,38 @@ class _Pounce(Power):
         return stats, feature
 
 
+class _Corrosive(Power):
+    def __init__(self):
+        super().__init__(name="Corrosive", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        score = _score_could_be_monstrous(candidate)
+        if candidate.secondary_damage_type == DamageType.Acid:
+            score += HIGH_AFFINITY
+        return score if score > 0 else NO_AFFINITY
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = _as_monstrous(stats, boost_speed=0)
+        stats = stats.copy(secondary_damage_type=DamageType.Acid)
+        dc = stats.difficulty_class
+        dmg = int(ceil(max(5, 2 * stats.cr)))
+        feature = Feature(
+            name="Corrode",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} targets a creature within 30 feet that it can see and spits a glob of corrosive acid. \
+                The target must make a DC {dc} Dexterity save. On a failure, the target takes {dmg} acid damage, and one non-magical metallic item the target carries begins to corrode. \
+                If the object is a weapon, it takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. \
+                If the object is either metal armor or a shield it takes a permanent and cumulative -1 penalty to the AC it offers. \
+                Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed.",
+        )
+        return stats, feature
+
+
 Constriction: Power = _Constriction()
 Swallow: Power = _Swallow()
 Pounce: Power = _Pounce()
-MonstrousPowers: List[Power] = [Constriction, Swallow, Pounce]
+Corrosive: Power = _Corrosive()
+
+MonstrousPowers: List[Power] = [Constriction, Swallow, Pounce, Corrosive]

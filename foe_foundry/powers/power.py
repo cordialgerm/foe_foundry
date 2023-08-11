@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import Tuple
+from typing import List, Tuple
 
 import numpy as np
 
@@ -24,7 +24,7 @@ class Power(ABC):
     @abstractmethod
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
         pass
 
     def __repr__(self):

@@ -55,7 +55,9 @@ def _score_could_be_melee_fighter(
 
 
 def _as_melee_fighter(stats: BaseStatblock, uses_weapon: bool = False) -> BaseStatblock:
-    changes: dict = dict(primary_attribute=Stats.STR)
+    new_attrs = stats.attributes.copy(primary_attribute=Stats.STR)
+
+    changes: dict = dict(attributes=new_attrs)
     if uses_weapon:
         changes.update(attack_type=AttackType.MeleeWeapon)
     return stats.copy(**changes)

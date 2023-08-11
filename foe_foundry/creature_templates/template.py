@@ -4,6 +4,7 @@ from typing import List
 import numpy as np
 
 from ..creature_types import CreatureType
+from ..features import Feature
 from ..powers import Power, PowerType, select_from_powers, select_power
 from ..role_types import MonsterRole
 from ..roles import AllRoles, RoleTemplate, get_role
@@ -97,8 +98,12 @@ class CreatureTypeTemplate(ABC):
 
         features = []
         for power in powers:
-            new_stats, feature = power.apply(new_stats, rng)
-            features.append(feature)
+            new_stats, new_features = power.apply(new_stats, rng)
+
+            if isinstance(new_features, Feature):
+                new_features = [new_features]
+
+            features.extend(new_features)
 
         name = f"{stats.key}-{self.creature_type}-{role_template.key}"
         stats = Statblock.from_base_stats(name=name, stats=new_stats, features=features)
