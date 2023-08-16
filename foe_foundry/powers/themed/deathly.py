@@ -2,6 +2,7 @@ from math import ceil, floor
 from typing import List, Tuple
 
 import numpy as np
+from numpy.random import Generator
 
 from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
@@ -25,13 +26,13 @@ from ..scores import (
 )
 
 
-def _score(candidate: BaseStatblock) -> float:
+def _score(candidate: BaseStatblock, undead_only: bool = False) -> float:
     score = 0
 
     if candidate.creature_type == CreatureType.Undead:
         score += HIGH_AFFINITY
 
-    if candidate.creature_type == CreatureType.Fiend:
+    if not undead_only and candidate.creature_type == CreatureType.Fiend:
         score += MODERATE_AFFINITY
 
     if candidate.secondary_damage_type == DamageType.Necrotic:
@@ -118,7 +119,7 @@ class _WitheringBlow(Power):
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
-        dmg = int(floor(5 + stats.cr))
+        dmg = int(floor(3 + stats.cr))
 
         feature = Feature(
             name="Withering Blow",
@@ -131,9 +132,37 @@ class _WitheringBlow(Power):
         return stats, feature
 
 
+class _DrainingBlow(Power):
+    def __init__(self):
+        super().__init__(name="Draining Blow", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate, undead_only=True)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
+        stats = stats.copy(secondary_damage_type=DamageType.Necrotic)
+
+        feature = Feature(
+            name="Draining Blow",
+            action=ActionType.BonusAction,
+            description=f"Immediately after hitting with an attack that deals necrotic damage, the {stats.selfref} regains hit points equal to the necrotic damage dealt.",
+        )
+
+        return stats, feature
+
+
 AuraOfDoom: Power = _AuraOfDoom()
 AuraOfAnnihilation: Power = _AuraOfAnnihilation()
 UndyingMinions: Power = _UndyingMinions()
 WitheringBlow: Power = _WitheringBlow()
+DrainingBlow: Power = _DrainingBlow()
 
-DeathlyPowers: List[Power] = [AuraOfDoom, AuraOfAnnihilation, UndyingMinions, WitheringBlow]
+DeathlyPowers: List[Power] = [
+    AuraOfDoom,
+    AuraOfAnnihilation,
+    UndyingMinions,
+    WitheringBlow,
+    DrainingBlow,
+]
