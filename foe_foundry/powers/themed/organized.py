@@ -69,7 +69,7 @@ class _Commander(Power):
 
         feature = Feature(
             name="Commander",
-            description=f"When {stats.selfref} is at or above {hp} hp then each other ally within {distance} has a + {bonus} bonus to attack and damage rolls",
+            description=f"When {stats.selfref} is at or above {hp} hp then each other ally within {distance} ft. has a +{bonus} bonus to attack and damage rolls",
             action=ActionType.Feature,
         )
 

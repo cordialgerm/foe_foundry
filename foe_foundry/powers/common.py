@@ -91,19 +91,24 @@ class _Defender(Power):
         super().__init__(name="Defender", power_type=PowerType.Common)
 
     def _is_minion(self, candidate: BaseStatblock) -> bool:
-        return candidate.cr <= 2
+        return candidate.cr <= 2 and candidate.role not in {
+            MonsterRole.Ambusher,
+            MonsterRole.Controller,
+            MonsterRole.Leader,
+            MonsterRole.Skirmisher,
+        }
 
     def score(self, candidate: BaseStatblock) -> float:
-        # TODO - should I have some sort of "encounter context"
         # this power makes a lot of sense for minions and defensive creatures
         # for now, I will interpret minions as low CR creatures
-        score = LOW_AFFINITY
+        score = 0
         if self._is_minion(candidate):
-            score += HIGH_AFFINITY
+            score += MODERATE_AFFINITY
+
         if candidate.role == MonsterRole.Defender:
             score += EXTRA_HIGH_AFFINITY
 
-        return score
+        return score if score > 0 else NO_AFFINITY
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -149,7 +154,7 @@ class _Frenzy(Power):
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Frenzy",
-            description=f"At the start of their turn, {stats.selfref} can gain advantage on all melee weapon attack rolls made during this turn, but atack rolls against them have advantage until the start of their next turn.",
+            description=f"At the start of their turn, {stats.selfref} can gain advantage on all melee weapon attack rolls made during this turn, but attack rolls against them have advantage until the start of their next turn.",
             action=ActionType.Feature,
         )
         return stats, feature
@@ -230,15 +235,15 @@ class _RefuseToSurrender(Power):
 
     def score(self, candidate: BaseStatblock) -> float:
         # this power makes a lot of sense for larger creatures, creatures with more HP, higher CR creatures, and Bruisers
-        score = LOW_AFFINITY
+        score = 0
         if candidate.size in {Size.Large, Size.Huge, Size.Gargantuan}:
-            score += MODERATE_AFFINITY
+            score += LOW_AFFINITY
         if candidate.attributes.CON >= 14:
-            score += MODERATE_AFFINITY
+            score += LOW_AFFINITY
         if candidate.cr >= 4:
+            score += LOW_AFFINITY
+        if candidate.role in {MonsterRole.Bruiser, MonsterRole.Defender}:
             score += MODERATE_AFFINITY
-        if candidate.role == MonsterRole.Bruiser:
-            score += HIGH_AFFINITY
         return score
 
     def apply(
@@ -519,13 +524,11 @@ class _Vanish(Power):
 
     def score(self, candidate: BaseStatblock) -> float:
         # this is amazing for ambushers and stealth / DEX fighters
-        score = LOW_AFFINITY
+        score = 0
         if candidate.primary_attribute == Stats.DEX:
             score += LOW_AFFINITY
-        if Skills.Stealth in candidate.attributes.proficient_skills:
+        if candidate.attributes.has_proficiency_or_expertise(Skills.Stealth):
             score += MODERATE_AFFINITY
-        if Skills.Stealth in candidate.attributes.expertise_skills:
-            score += HIGH_AFFINITY
         if candidate.role == MonsterRole.Ambusher:
             score += HIGH_AFFINITY
         return score

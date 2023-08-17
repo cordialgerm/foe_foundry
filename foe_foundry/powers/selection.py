@@ -7,7 +7,7 @@ from ..creature_types import CreatureType
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
 from . import common, movement, static
-from .creatures import aberration, beast, celestial, construct
+from .creatures import aberration, beast, celestial, construct, fiend
 from .power import Power
 from .power_type import PowerType
 from .roles import ambusher, artillery, bruiser, controller, defender, leader, skirmisher
@@ -56,13 +56,16 @@ def select_from_powers(
     if multipliers is not None:
         weights = weights * multipliers
     indxs = weights > 0
-    weights[indxs] = np.exp(weights[indxs])
-    weights[~indxs] = 0
 
-    if np.sum(weights) == 0:
+    norm_weights = np.zeros_like(weights)
+    norm_weights[indxs] = weights[indxs] / np.median(weights[indxs])
+
+    if np.sum(norm_weights) == 0:
         return []
 
-    p = weights / np.sum(weights)
+    p = np.zeros_like(norm_weights)
+    p[indxs] = np.exp(norm_weights[indxs])
+    p = p / np.sum(p)
     indxs = rng.choice(a=len(powers), size=n, p=p, replace=False)
     return np.array(powers, dtype=object)[indxs].tolist()
 
@@ -76,12 +79,15 @@ def _creature_powers(creature_type: CreatureType) -> List[Power]:
         return celestial.CelestialPowers
     elif creature_type == CreatureType.Construct:
         return construct.ConstructPowers
+    elif creature_type == CreatureType.Fiend:
+        return fiend.FiendishPowers + [common.DelightsInSuffering]
     elif creature_type == CreatureType.Beast:
         return [] + [common.GoesDownFighting]  # TODO
     elif creature_type == CreatureType.Plant:
         return [] + poison.PoisonPowers  # TODO
     elif creature_type == CreatureType.Fey:
         return [] + tricky.TrickyPowers  # TODO
+
     else:
         raise NotImplementedError("TODO")  # TODO
 

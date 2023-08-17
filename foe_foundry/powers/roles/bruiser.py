@@ -87,12 +87,12 @@ class _Grappler(Power):
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Athletics)
         stats = stats.copy(attributes=new_attrs, primary_damage_type=DamageType.Bludgeoning)
 
-        dc = stats.attributes.passive_skill(Skills.Athletics)
+        dc = stats.difficulty_class
 
         feature = Feature(
             name="Grappling Strike",
             action=ActionType.BonusAction,
-            description=f"Immediately after {stats.roleref} hits with a weapon attack, the target must make a {dc} Strength save (escape DC {dc}). \
+            description=f"Immediately after {stats.roleref} hits with a weapon attack, the target must make a DC {dc} Strength save (escape DC {dc}). \
                  While grappled in this way, the creature is also restrained",
         )
 

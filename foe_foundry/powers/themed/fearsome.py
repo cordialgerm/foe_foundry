@@ -90,7 +90,7 @@ class _Repulsion(Power):
         dc = stats.difficulty_class
         feature = Feature(
             name=name,
-            description=f"{stats.selfref.capitalize()} targets up to eight creatures they can see within 50 ft. Each must make a DC {dc} Charisma saving throw.\
+            description=f"{stats.selfref.capitalize()} targets up to eight creatures they can see within 60 ft. Each must make a DC {dc} Charisma saving throw.\
                 On a failure, the affected target is Frightened (save ends at end of turn) and must immediately use its reaction, if available, to move their speed away from {stats.selfref} \
                 avoiding hazards or dangerous terrain if possible.",
             uses=1,

@@ -1,7 +1,7 @@
 
 ## Ideas
 
-- [ ] Creature Powers and Templates
+- [ ] FoF Creature Powers and Templates
   - [x] Aberration
   - [x] Beast
   - [x] Celestial
@@ -9,7 +9,7 @@
   - [ ] Dragon
   - [ ] Elemental
   - [ ] Fey
-  - [ ] Fiend
+  - [x] Fiend
   - [ ] Giant
   - [ ] Humanoid
   - [ ] Monstrosity
@@ -17,7 +17,7 @@
   - [ ] Plant
   - [ ] Undead
 - [x] Role Powers - all but LEADER
-- [ ] Theme Powers
+- [ ] FoF Theme Powers
   - [x] aberrant
   - [x] bestial
   - [x] charm
@@ -31,6 +31,17 @@
   - [x] tricky (renamed from Rogue)
   - [ ] solo - MOVE TO SPECIAL SECTION BELOW
   - [x] warrior
+- [ ] Additional Theme Powers
+  - Flyer: Swoop
+  - Monstrous: Deadly Poison, Superheated Blood
+  - Deathly: Chain Agony (increases as it spreads)
+  - Breath: Fire breath
+  - Brutish: Throw Boulder, Toss, etc.
+  - Magic: Magic Protection, Energy Blast, Energy Wall, Chain Spell
+  - Runic: Tricky illusion cloud rune, Fire rune restrain
+  - Gadget: Explosive Grenades, traps
+  - Eye Beams: anti magic eye, anti healing eye, vulnerability eye, random eye beams
+  - Holy/Unholy: healing, divine favor
 - [ ] Legendary Creatures (powers, role)
 - [ ] Create a visualization that shows likelyhood of creature + role going for a giving power
 - [ ] Creature Templates
@@ -40,6 +51,7 @@
   - [ ] Foundry
 - [ ] Attack Templates
 - [ ] Name Templates
+- [ ] Boss Nicknames - https://slyflourish.com/monstrous_descriptors.html?rss=1
 - [ ] Additional Creature Powers
 - [ ] Specific Creature Templates
 
@@ -50,9 +62,11 @@
 - [x] redesign skill and save proficiencies
 - [x] Powers need to be able to modify attack damage
 - [x] action that replaces a multiattack instance needs to be implemented
-- [ ] Powers need to be able to add additional info to attack clause
 - [x] Armor Templates - ArmorType (None, Light, Medium, Heavy, Natural, Arcane, Divine), HasShield, target AC, DEX
 - [x] Add benchmarking compared to L5E
+- [ ] Redesign armor class. There should be templates for different types of armor class and they should be applied by creature type & role
+- [ ] Powers need to be able to add additional info to attack clause
+- [ ] Creatures with a secondary damage type should have their attack action modified to do partial damage of that type
 
 ## Bug List
 

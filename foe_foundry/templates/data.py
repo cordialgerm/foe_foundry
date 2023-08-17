@@ -80,7 +80,7 @@ class MonsterTemplateData:
             elif feature.action == ActionType.Reaction:
                 reactions.append(feature)
 
-        if stats.multiattack == 0:
+        if stats.multiattack <= 1:
             multiattack = ""
         else:
             multiattack = (
@@ -139,7 +139,7 @@ class MonsterTemplateData:
 def _damage_list(damage_types: Set[DamageType], nonmagical: bool) -> str:
     pieces = []
     if len(damage_types) > 0:
-        pieces.append(", ".join(d.name.lower() for d in damage_types))
+        pieces.append(", ".join(d.name.capitalize() for d in damage_types))
     if nonmagical:
         pieces.append("Bludgeoning, Piercing, and Slashing from Nonmagical Attacks")
     return "; ".join(pieces)

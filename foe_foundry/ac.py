@@ -14,6 +14,7 @@ class ArmorType(StrEnum):
     Natural = auto()
     Arcane = auto()
     Divine = auto()
+    Unholy = auto()
 
     def increment(self) -> ArmorType:
         if self == ArmorType.Unarmored:
@@ -128,7 +129,7 @@ class ArmorClass:
                 has_shield=False,
                 **args,
             )
-        elif armor_type == ArmorType.Divine:
+        elif armor_type in {ArmorType.Divine, ArmorType.Unholy}:
             divine_ac = 10 + min(dex, 2) + spellcasting + (2 if has_shield else 0)
             proposed_ac = max(target_ac, divine_ac)
             max_allowed_divine_ac = divine_ac + max_quality
@@ -136,7 +137,7 @@ class ArmorClass:
             quality = new_ac - divine_ac
             return ArmorClass(
                 value=new_ac,
-                armor_type=ArmorType.Divine,
+                armor_type=armor_type,
                 quality=quality,
                 has_shield=has_shield,
                 **args,
@@ -207,6 +208,8 @@ def _describe_armor(armor_type: ArmorType, quality: int) -> str:
         return "Mage Armor"
     elif armor_type == ArmorType.Divine:
         return "Divine Blessing"
+    elif armor_type == ArmorType.Unholy:
+        return "Unholy Armor"
     elif armor_type == ArmorType.Light:
         if quality < 0:
             return "Padded Armor"

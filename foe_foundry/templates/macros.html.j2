@@ -37,9 +37,9 @@
         <i>Hit:</i> {{attack.damage.description}}
         {% if attack.additional_damage %}
         and {{attack.additional_damage.description }}.
-        {% else %}
+        {% else -%}
         .
-        {% endif %}
+        {%- endif %}
     </p>
 </property-block>
 

@@ -27,13 +27,13 @@ from ..scores import (
 
 class _EarthshakingDemise(Power):
     def __init__(self):
-        super().__init__(name="Earthsaking Demise", power_type=PowerType.Theme)
+        super().__init__(name="Earthshaking Demise", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         if candidate.size < Size.Huge:
             return NO_AFFINITY
 
-        score = LOW_AFFINITY
+        score = 0
 
         creature_types = {
             CreatureType.Giant: EXTRA_HIGH_AFFINITY,
@@ -49,7 +49,7 @@ class _EarthshakingDemise(Power):
         if candidate.role in {MonsterRole.Bruiser}:
             score += LOW_AFFINITY
 
-        return score
+        return score if score > 0 else NO_AFFINITY
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
