@@ -37,8 +37,8 @@ class _CelestialTemplate(CreatureTypeTemplate):
 
         # Celestials often have resistance to radiant damage,
         # and they might also have resistance to damage from nonmagical attacks
-        damage_resistances = stats.damage_resistances
-        damage_immunities = stats.damage_immunities
+        damage_resistances = stats.damage_resistances.copy()
+        damage_immunities = stats.damage_immunities.copy()
         if stats.cr <= 7:
             nonmagical_resistance = False
             damage_resistances |= {DamageType.Radiant}

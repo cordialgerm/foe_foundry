@@ -36,7 +36,9 @@ def test_all_combinations(
     seed = _seed_for_text(name)
     rng = np.random.default_rng(seed)
     path = examples_dir / (name + ".html")
-    stats = creature_template.create(base_stat, role_template=role, rng=rng)
+    stats, features = creature_template.create(
+        base_stat, role_template=role, rng=rng, return_features=True
+    )
 
     benchmarks = benchmark(stats)
 

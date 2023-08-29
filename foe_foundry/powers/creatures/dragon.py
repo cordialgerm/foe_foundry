@@ -1,6 +1,7 @@
+from math import ceil, floor
 from typing import List, Tuple
 
-import numpy as np
+from numpy.random import Generator
 
 from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
@@ -31,9 +32,7 @@ class _DragonsGaze(Power):
 
         return HIGH_AFFINITY
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.copy(attributes=new_attrs)
 
@@ -51,7 +50,46 @@ class _DragonsGaze(Power):
         return stats, feature
 
 
+class _DraconicRetaliation(Power):
+    def __init__(self):
+        super().__init__(name="Draconic Retaliation", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        if candidate.creature_type != CreatureType.Dragon:
+            return NO_AFFINITY
+
+        score = LOW_AFFINITY
+
+        if candidate.cr >= 5:
+            score += HIGH_AFFINITY
+
+        return score
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
+        hp = int(floor(stats.hp.average / 2))
+        uses = 1
+        description = f"When {stats.selfref} is reduced to {hp} hit points or fewer, it may immediately use either its breath weapon or Multiattack action. \
+            If {stats.selfref} is incapacitated or otherwise unable to use this trait, it may use it the next time they are able."
+
+        if stats.cr >= 15:
+            uses = 2
+            hp2 = int(ceil(hp / 2))
+            description += f" {stats.selfref.capitalize()} may activate this ability again when reduced to {hp2} hit points or fewer."
+
+        feature = Feature(
+            name="Draconic Retaliation",
+            action=ActionType.Reaction,
+            uses=uses,
+            description=description,
+        )
+
+        return stats, feature
+
+
 DragonsGaze: Power = _DragonsGaze()
+DraconicRetaliation: Power = _DraconicRetaliation()
 
 
-DragonPowers: List[Power] = [DragonsGaze]
+DragonPowers: List[Power] = [DragonsGaze, DraconicRetaliation]

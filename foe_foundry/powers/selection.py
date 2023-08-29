@@ -7,7 +7,7 @@ from ..creature_types import CreatureType
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
 from . import common, movement, static
-from .creatures import aberration, beast, celestial, construct, dragon, fiend
+from .creatures import aberration, beast, celestial, construct, dragon, elemental, fiend
 from .power import Power
 from .power_type import PowerType
 from .roles import ambusher, artillery, bruiser, controller, defender, leader, skirmisher
@@ -81,6 +81,8 @@ def _creature_powers(creature_type: CreatureType) -> List[Power]:
         return construct.ConstructPowers
     elif creature_type == CreatureType.Dragon:
         return dragon.DragonPowers + breath.BreathPowers + [movement.Flyer]
+    elif creature_type == CreatureType.Elemental:
+        return elemental.ElementalPowers + [common.DamagingAura] + movement.MovementPowers
     elif creature_type == CreatureType.Fey:
         return [] + tricky.TrickyPowers  # TODO
     elif creature_type == CreatureType.Fiend:

@@ -43,8 +43,11 @@ class _ConstructTemplate(CreatureTypeTemplate):
         # Damage Immunities poison, psychic
         # Condition Immunities blinded, charmed, deafened,
         # exhaustion, frightened, paralyzed, petrified, poisoned
-        damage_immunities = stats.damage_immunities | {DamageType.Poison, DamageType.Psychic}
-        condition_immunities = stats.condition_immunities | {
+        damage_immunities = stats.damage_immunities.copy() | {
+            DamageType.Poison,
+            DamageType.Psychic,
+        }
+        condition_immunities = stats.condition_immunities.copy() | {
             Condition.Exhaustion,
             Condition.Frightened,
             Condition.Paralyzed,

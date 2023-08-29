@@ -182,12 +182,12 @@ class _ElementalAffinity(Power):
             stats = stats.copy(secondary_damage_type=damage_type)
 
         if stats.cr <= 8 and damage_type not in stats.damage_resistances:
-            new_damage_resistances = stats.damage_resistances | {damage_type}
+            new_damage_resistances = stats.damage_resistances.copy() | {damage_type}
             stats = stats.copy(damage_resistances=new_damage_resistances)
             descr = "resistance"
         else:
-            new_damage_resistances = stats.damage_resistances - {damage_type}
-            new_damage_immunities = stats.damage_immunities | {damage_type}
+            new_damage_resistances = stats.damage_resistances.copy() - {damage_type}
+            new_damage_immunities = stats.damage_immunities.copy() | {damage_type}
             descr = "immunity"
             stats = stats.copy(
                 damage_resistances=new_damage_resistances,

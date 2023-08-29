@@ -95,7 +95,7 @@ class _DragonTemplate(CreatureTypeTemplate):
         )
 
         # dragons are immune to their breath weapon
-        damage_immunities = stats.damage_immunities | {breath_weapon_damage_type}
+        damage_immunities = stats.damage_immunities.copy() | {breath_weapon_damage_type}
 
         # dragons have blindsight and darkvision
         new_senses = Senses(darkvision=60, blindsight=60)

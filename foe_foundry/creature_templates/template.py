@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import List
+from typing import List, Tuple, overload
 
 import numpy as np
 
@@ -85,12 +85,32 @@ class CreatureTypeTemplate(ABC):
         )
         return selection
 
+    @overload
     def create(
         self,
         stats: BaseStatblock,
         rng: np.random.Generator,
         role_template: RoleTemplate | str | None | MonsterRole = None,
     ) -> Statblock:
+        pass
+
+    @overload
+    def create(
+        self,
+        stats: BaseStatblock,
+        rng: np.random.Generator,
+        role_template: RoleTemplate | str | None | MonsterRole = None,
+        return_features: bool = True,
+    ) -> Tuple[Statblock, List[Feature]]:
+        pass
+
+    def create(
+        self,
+        stats: BaseStatblock,
+        rng: np.random.Generator,
+        role_template: RoleTemplate | str | None | MonsterRole = None,
+        return_features: bool = False,
+    ) -> Statblock | Tuple[Statblock, List[Feature]]:
         new_stats = self.alter_base_stats(stats, rng)
         role_template = self.select_role(stats=new_stats, role_template=role_template, rng=rng)
         new_stats = role_template.alter_base_stats(new_stats, rng=rng)
@@ -107,4 +127,8 @@ class CreatureTypeTemplate(ABC):
 
         name = f"{stats.key}-{self.creature_type}-{role_template.key}"
         stats = Statblock.from_base_stats(name=name, stats=new_stats, features=features)
-        return stats
+
+        if return_features:
+            return stats, features
+        else:
+            return stats
