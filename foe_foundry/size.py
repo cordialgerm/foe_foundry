@@ -34,6 +34,12 @@ class Size(StrEnum):
         b = o[other]
         return a < b
 
+    def __sub__(self, other: Size) -> int:
+        ordinals = Size.Ordinals()
+        o1 = ordinals[self]
+        o2 = ordinals[other]
+        return o1 - o2
+
     def increment(self) -> Size:
         if self == Size.Tiny:
             return Size.Small

@@ -8,6 +8,7 @@ from .dragon import DragonTemplate
 from .elemental import ElementalTemplate
 from .fey import FeyTemplate
 from .fiend import FiendTemplate
+from .giant import GiantTemplate
 from .template import CreatureTypeTemplate
 
 AllCreatureTemplates: List[CreatureTypeTemplate] = [
@@ -19,4 +20,5 @@ AllCreatureTemplates: List[CreatureTypeTemplate] = [
     ElementalTemplate,
     FeyTemplate,
     FiendTemplate,
+    GiantTemplate,
 ]

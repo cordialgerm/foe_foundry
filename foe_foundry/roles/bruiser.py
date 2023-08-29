@@ -5,17 +5,17 @@ from .template import RoleTemplate, role_variant
 
 
 def as_low_hit_bruiser(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(attack_hit_modifier=-2, attack_damage_modifier=2)
+    dials = MonsterDials(multiattack_modifier=-1, attack_damage_modifier=2)
     return _as_bruiser(stats, dials)
 
 
 def as_low_hp_bruiser(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(hp_multiplier=0.9, attack_hit_modifier=-1, attack_damage_modifier=2)
+    dials = MonsterDials(hp_multiplier=0.9, attack_damage_modifier=1)
     return _as_bruiser(stats, dials)
 
 
 def as_low_ac_bruiser(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(ac_modifier=-2, attack_damage_modifier=2)
+    dials = MonsterDials(ac_modifier=-2, attack_damage_modifier=1)
     return _as_bruiser(stats, dials)
 
 

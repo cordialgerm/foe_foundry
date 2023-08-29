@@ -84,8 +84,10 @@ class Attributes:
         args = {"primary_attribute": primary, primary.value: self.primary_attribute_score}
         return self.copy(**args)
 
-    def boost(self, stat: Stats, value: int) -> Attributes:
-        new_val = min(self.stat(stat) + value, self.primary_attribute_score)
+    def boost(self, stat: Stats, value: int, limit: bool = True) -> Attributes:
+        new_val = self.stat(stat) + value
+        if limit:
+            new_val = min(new_val, self.primary_attribute_score)
         args = {stat.value: new_val}
         return self.copy(**args)
 

@@ -7,12 +7,12 @@ from .template import RoleTemplate, role_variant
 
 
 def as_low_ac_artillery_max_dmg(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(attack_hit_modifier=2, ac_modifier=-2)
+    dials = MonsterDials(attack_hit_modifier=1, ac_modifier=-1)
     return _as_artillery(stats, dials)
 
 
 def as_low_hp_artillery_max_dmg(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(attack_hit_modifier=2, hp_multiplier=0.8)
+    dials = MonsterDials(attack_hit_modifier=1, hp_multiplier=0.9)
     return _as_artillery(stats, dials)
 
 

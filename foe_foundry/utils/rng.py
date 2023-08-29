@@ -12,14 +12,20 @@ def choose_enum(rng: np.random.Generator, values: List[T]) -> T:
 
 
 @overload
-def choose_enum(rng: np.random.Generator, values: List[T], size: int) -> List[T]:
+def choose_enum(
+    rng: np.random.Generator, values: List[T], size: int, replace: bool = False
+) -> List[T]:
     pass
 
 
 def choose_enum(
-    rng: np.random.Generator, values: List[T], size: int | None = None, **args
+    rng: np.random.Generator,
+    values: List[T],
+    size: int | None = None,
+    replace: bool = False,
+    **args
 ) -> T | List[T]:
-    indxs = rng.choice(a=len(values), size=size, **args)
+    indxs = rng.choice(a=len(values), size=size, replace=replace, **args)
     if isinstance(indxs, int):
         return values[indxs]
     else:

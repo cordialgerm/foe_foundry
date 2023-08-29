@@ -145,6 +145,14 @@ class BaseStatblock:
                 )
             )
 
+        if dials.attack_hit_modifier:
+            new_attributes = self.attributes.boost(
+                stat=self.attributes.primary_attribute,
+                value=2 * dials.attack_hit_modifier,
+                limit=False,
+            )
+            args.update(attributes=new_attributes)
+
         # resolve difficulty class
         if dials.difficulty_class_modifier:
             args.update(

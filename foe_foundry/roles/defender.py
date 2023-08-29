@@ -23,6 +23,7 @@ def as_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
 def _as_defender(stats: BaseStatblock, dials: MonsterDials):
     # defenders have save proficiencies
     new_attributes = stats.attributes.grant_save_proficiency(*Stats.All()).boost(Stats.STR, 2)
+    stats = stats.copy(attributes=new_attributes)
 
     # defenders have high-quality armor and use shields if possible
     # this should result in a +3 to AC (+1 to armor, +2 from shield)
@@ -32,10 +33,9 @@ def _as_defender(stats: BaseStatblock, dials: MonsterDials):
         dex=stats.attributes.stat_mod(Stats.DEX),
         spellcasting=stats.attributes.spellcasting_mod,
     )
+    stats = stats.copy(ac=new_ac)
 
-    return stats.apply_monster_dials(dials).copy(
-        role=MonsterRole.Defender, attributes=new_attributes, ac=new_ac
-    )
+    return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
 
 DefenderHighAcLowDamage = role_variant(

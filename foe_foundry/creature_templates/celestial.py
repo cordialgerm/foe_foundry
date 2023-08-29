@@ -59,7 +59,7 @@ class _CelestialTemplate(CreatureTypeTemplate):
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=rng)
 
         # celestials may have immunity to the charmed, exhaustion, and frightened conditions.
-        condition_immunities = stats.condition_immunities
+        condition_immunities = stats.condition_immunities.copy()
         if stats.cr >= 4:
             condition_immunities |= {
                 Condition.Charmed,

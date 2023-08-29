@@ -90,7 +90,7 @@ class MonsterTemplateData:
             replace_multiattacks = [
                 f
                 for f in stats.features
-                if f.replaces_multiattack > 0 and f.replaces_multiattack <= stats.multiattack
+                if f.replaces_multiattack > 0 and f.replaces_multiattack < stats.multiattack
             ]
             lines = []
             for feature in replace_multiattacks:

@@ -82,7 +82,7 @@ class _FiendTemplate(CreatureTypeTemplate):
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=rng)
 
         # fiends may have immunity to the poisoned condition.
-        condition_immunities = stats.condition_immunities
+        condition_immunities = stats.condition_immunities.copy()
         if stats.cr >= 4:
             condition_immunities |= {
                 Condition.Poisoned,

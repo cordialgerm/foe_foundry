@@ -66,7 +66,9 @@
 - [x] Add benchmarking compared to L5E
 - [ ] Powers need to be able to add additional info to attack clause
 - [ ] Creatures with a secondary damage type should have their attack action modified to do partial damage of that type
-
+- [ ] There should be a cleanup phase where HP is normalized to match CON
+- [ ] There should be a cleanup phase where damage is normalized to match primary stat
+- [ ] There should be a cleanup phase where attack to hit is normalized with primary stat
 
 ## More Sophisticated Selection System
 
