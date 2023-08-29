@@ -4,6 +4,7 @@ from ..power import Power
 from . import (
     aberrant,
     bestial,
+    breath,
     charm,
     cursed,
     deathly,
@@ -18,6 +19,7 @@ from . import (
 ThemedPowers: List[Power] = (
     aberrant.AberrantPowers
     + bestial.BestialPowers
+    + breath.BreathPowers
     + charm.CharmPowers
     + cursed.CursedPowers
     + deathly.DeathlyPowers
