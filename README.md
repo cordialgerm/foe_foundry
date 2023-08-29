@@ -6,9 +6,9 @@
   - [x] Beast
   - [x] Celestial
   - [x] Construct
-  - [ ] Dragon
-  - [ ] Elemental
-  - [ ] Fey
+  - [x] Dragon
+  - [x] Elemental
+  - [x] Fey
   - [x] Fiend
   - [ ] Giant
   - [ ] Humanoid
@@ -23,7 +23,7 @@
   - [x] charm
   - [x] deathly (renamed from Necromantic)
   - [ ] draconic - MOVE TO DRAGON ABOVE? or have a BREATH tag?
-  - [ ] elemental - TBD? merged with elemental above?
+  - [x] elemental - TBD? merged with elemental above?
   - [x] fearsome
   - [ ] magic
   - [x] organized (rename from Leader)
@@ -64,9 +64,24 @@
 - [x] action that replaces a multiattack instance needs to be implemented
 - [x] Armor Templates - ArmorType (None, Light, Medium, Heavy, Natural, Arcane, Divine), HasShield, target AC, DEX
 - [x] Add benchmarking compared to L5E
-- [ ] Redesign armor class. There should be templates for different types of armor class and they should be applied by creature type & role
 - [ ] Powers need to be able to add additional info to attack clause
 - [ ] Creatures with a secondary damage type should have their attack action modified to do partial damage of that type
+
+
+## More Sophisticated Selection System
+
+- Selection engine should take parameters like:
+  - max # of bonus actions
+  - max # of reactions
+  - max # of powers
+  - should prefer to have 1 bonus action and 1 reaction before having both
+  - should prefer having 1 additional action before having too many
+
+## Redesign Armor Class
+  - There should be templates for different types of armor class
+  - should be applied by creature type & role
+  - base statblock has a suggested AC which can influence the template
+
 
 ## Bug List
 

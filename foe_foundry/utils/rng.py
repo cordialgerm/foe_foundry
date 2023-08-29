@@ -7,12 +7,12 @@ T = TypeVar("T", bound=StrEnum)
 
 
 @overload
-def choose_enum(rng: np.random.Generator, values: List[T], **args) -> T:
+def choose_enum(rng: np.random.Generator, values: List[T]) -> T:
     pass
 
 
 @overload
-def choose_enum(rng: np.random.Generator, values: List[T], size: int, **args) -> T:
+def choose_enum(rng: np.random.Generator, values: List[T], size: int) -> List[T]:
     pass
 
 

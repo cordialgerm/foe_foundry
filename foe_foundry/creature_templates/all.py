@@ -6,6 +6,7 @@ from .celestial import CelestialTemplate
 from .construct import ConstructTemplate
 from .dragon import DragonTemplate
 from .elemental import ElementalTemplate
+from .fey import FeyTemplate
 from .fiend import FiendTemplate
 from .template import CreatureTypeTemplate
 
@@ -16,5 +17,6 @@ AllCreatureTemplates: List[CreatureTypeTemplate] = [
     ConstructTemplate,
     DragonTemplate,
     ElementalTemplate,
+    FeyTemplate,
     FiendTemplate,
 ]
