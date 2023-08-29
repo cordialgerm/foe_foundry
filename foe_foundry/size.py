@@ -5,6 +5,8 @@ from typing import Dict, List
 
 import numpy as np
 
+from .die import Die
+
 
 class Size(StrEnum):
     Tiny = auto()
@@ -71,6 +73,20 @@ class Size(StrEnum):
             return Size.Huge
         else:
             raise ValueError("Shouldn't happen")
+
+    def hit_die(self) -> Die:
+        if self == Size.Tiny:
+            return Die.d4
+        elif self == Size.Small:
+            return Die.d6
+        elif self == Size.Medium:
+            return Die.d8
+        elif self == Size.Large:
+            return Die.d10
+        elif self == Size.Huge:
+            return Die.d12
+        else:
+            return Die.d20
 
 
 def get_size_for_cr(cr: float, standard_size: Size, rng: np.random.Generator):

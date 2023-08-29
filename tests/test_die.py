@@ -35,6 +35,16 @@ def test_die_from_dict():
     assert formula.dice_formula() == "8d6"
 
 
+def test_increase_decrease():
+    dies = Die.All()
+    increases = [Die.d6, Die.d8, Die.d10, Die.d12, Die.d20, Die.d20]
+    decreases = [Die.d4, Die.d4, Die.d6, Die.d8, Die.d10, Die.d12]
+
+    for d, inc, dec in zip(dies, increases, decreases):
+        assert d.increase() == inc
+        assert d.decrease() == dec
+
+
 @pytest.mark.parametrize(
     ["expression", "expected"],
     [

@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from enum import StrEnum
 from typing import List, cast
 
@@ -24,3 +25,36 @@ class Die(StrEnum):
 
     def as_numeric(self) -> int:
         return int(self.name[1:])
+
+    def __ge__(self, other: Die) -> bool:
+        return self.as_numeric() >= other.as_numeric()
+
+    def __gt__(self, other: Die) -> bool:
+        return self.as_numeric() > other.as_numeric()
+
+    def __lt__(self, other: Die) -> bool:
+        return self.as_numeric() < other.as_numeric()
+
+    def __lte__(self, other: Die) -> bool:
+        return self.as_numeric() <= other.as_numeric()
+
+    def average(self) -> float:
+        return (1 + self.as_numeric()) / 2
+
+    def increase(self) -> Die:
+        dies = Die.All()
+        mapping = {d: i for i, d in enumerate(dies)}
+        i = mapping[self]
+        if i == len(mapping) - 1:
+            return self
+        else:
+            return dies[i + 1]
+
+    def decrease(self) -> Die:
+        dies = Die.All()
+        mapping = {d: i for i, d in enumerate(dies)}
+        i = mapping[self]
+        if i == 0:
+            return self
+        else:
+            return dies[i - 1]

@@ -27,6 +27,10 @@ class Attributes:
         return self.stat(self.primary_attribute)
 
     @property
+    def primary_mod(self) -> int:
+        return self.stat_mod(self.primary_attribute)
+
+    @property
     def spellcasting_mod(self) -> int:
         return max(self.stat_mod(Stats.CHA), self.stat_mod(Stats.WIS), self.stat_mod(Stats.INT))
 

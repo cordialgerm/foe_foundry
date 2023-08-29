@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
-from math import floor
+from math import ceil, floor
 from typing import List
 
 import d20
@@ -120,3 +120,28 @@ class DieFormula:
         ast = d20.parse(expr=expression, allow_comments=False)
         die_vals, mod = _visit_expression(ast)
         return DieFormula.from_dict(mod=mod, die_vals=die_vals)
+
+    @staticmethod
+    def target_value(
+        target: float, suggested_die: Die, per_die_mod: int = 0, flat_mod: int = 0
+    ) -> DieFormula:
+        candidates = (
+            _candidate(target, suggested_die, per_die_mod, flat_mod)
+            + _candidate(target, suggested_die.decrease(), per_die_mod, flat_mod)
+            + _candidate(target, suggested_die.increase(), per_die_mod, flat_mod)
+        )
+
+        errors = [abs(target - c.average) for c in candidates]
+        best_index = np.argmin(errors)
+        return candidates[best_index]
+
+
+def _candidate(target: float, die: Die, per_die_mod: int, flat_mod: int) -> List[DieFormula]:
+    x = (target - flat_mod) / (die.average() + per_die_mod)
+    n1 = int(ceil(x))
+    n2 = int(floor(x))
+
+    args1 = {str(die): n1, "mod": n1 * per_die_mod + flat_mod}
+    args2 = {str(die): n2, "mod": n2 * per_die_mod + flat_mod}
+
+    return [DieFormula(**args1), DieFormula(**args2)]
