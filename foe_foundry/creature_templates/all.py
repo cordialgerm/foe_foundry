@@ -10,6 +10,7 @@ from .fey import FeyTemplate
 from .fiend import FiendTemplate
 from .giant import GiantTemplate
 from .humanoid import HumanoidTemplate
+from .monstrosity import MonstrosityTemplate
 from .template import CreatureTypeTemplate
 
 AllCreatureTemplates: List[CreatureTypeTemplate] = [
@@ -23,4 +24,5 @@ AllCreatureTemplates: List[CreatureTypeTemplate] = [
     FiendTemplate,
     GiantTemplate,
     HumanoidTemplate,
+    MonstrosityTemplate,
 ]

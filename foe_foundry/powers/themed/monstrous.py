@@ -164,9 +164,63 @@ class _Corrosive(Power):
         return stats, feature
 
 
+class _DevourAlly(Power):
+    def __init__(self):
+        super().__init__(name="Devour Ally", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        size = stats.size.decrement()
+        hp = int(ceil(max(5 + stats.cr, 3 + 2 * stats.cr, 3 * stats.cr)))
+        feature = Feature(
+            name="Devour Ally",
+            action=ActionType.BonusAction,
+            description=f"{stats.selfref} swallows an allied creature that is within 5 feet of this creature and is {size.capitalize()} or smaller. \
+                {stats.selfref.capitalize()} regains {hp} hp and the devoured ally is reduced to 0 hp.",
+        )
+        return stats, feature
+
+
+class _LingeringWound(Power):
+    def __init__(self):
+        super().__init__(name="Lingering Wound", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        if stats.primary_damage_type.is_physical():
+            stats = stats.copy(primary_damage_type=DamageType.Piercing)
+
+        dc = stats.difficulty_class_easy
+        dmg = int(floor(stats.attack.average_damage))
+        dmg_type = stats.attack.damage.damage_type
+        feature = Feature(
+            name="Lingering Wound",
+            action=ActionType.BonusAction,
+            recharge=6,
+            description=f"Immediately after hitting a creature, {stats.selfref} inflicts that creature with a lingering wound. \
+                The wounded creature takes {dmg} {dmg_type} at the start of each of its turns. \
+                The target may attempt a DC {dc} Constitution save at the end of each of its turns to end the effect. \
+                A creature may also use an action to perform a DC {dc} Medicine check to end the lingering wound.",
+        )
+        return stats, feature
+
+
 Constriction: Power = _Constriction()
 Swallow: Power = _Swallow()
 Pounce: Power = _Pounce()
 Corrosive: Power = _Corrosive()
+DevourAlly: Power = _DevourAlly()
+LingeringWound: Power = _LingeringWound()
 
-MonstrousPowers: List[Power] = [Constriction, Swallow, Pounce, Corrosive]
+MonstrousPowers: List[Power] = [
+    Constriction,
+    Swallow,
+    Pounce,
+    Corrosive,
+    DevourAlly,
+    LingeringWound,
+]

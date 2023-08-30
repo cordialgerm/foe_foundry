@@ -21,7 +21,7 @@ from .creatures import (
 from .power import Power
 from .power_type import PowerType
 from .roles import ambusher, artillery, bruiser, controller, defender, leader, skirmisher
-from .themed import ThemedPowers, breath, organized, poison, tricky, warrior
+from .themed import ThemedPowers, breath, monstrous, organized, poison, tricky, warrior
 
 
 def select_power(
@@ -104,6 +104,8 @@ def _creature_powers(creature_type: CreatureType) -> List[Power]:
         return giant.GiantPowers + warrior.WarriorPowers
     elif creature_type == CreatureType.Humanoid:
         return []
+    elif creature_type == CreatureType.Monstrosity:
+        return monstrous.MonstrousPowers + [common.NotDeadYet, common.GoesDownFighting]
     elif creature_type == CreatureType.Plant:
         return [] + poison.PoisonPowers  # TODO
     else:

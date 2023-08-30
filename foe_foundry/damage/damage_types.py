@@ -24,3 +24,6 @@ class DamageType(StrEnum):
     @staticmethod
     def All() -> List[DamageType]:
         return [cast(DamageType, s) for s in DamageType._member_map_.values()]
+
+    def is_physical(self) -> bool:
+        return self in {DamageType.Bludgeoning, DamageType.Piercing, DamageType.Slashing}

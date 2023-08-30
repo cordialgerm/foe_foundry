@@ -10,9 +10,9 @@
   - [x] Elemental
   - [x] Fey
   - [x] Fiend
-  - [ ] Giant
-  - [ ] Humanoid
-  - [ ] Monstrosity
+  - [x] Giant
+  - [x] Humanoid
+  - [x] Monstrosity
   - [ ] Ooze
   - [ ] Plant
   - [ ] Undead
