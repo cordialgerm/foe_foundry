@@ -22,5 +22,6 @@ from .roles import (
     Skirmisher,
     get_role,
 )
+from .size import Size  # noqa
 from .skills import Skills  # noqa
 from .statblocks import BaseStatblock, MonsterDials, Statblock, general_use_stats  # noqa

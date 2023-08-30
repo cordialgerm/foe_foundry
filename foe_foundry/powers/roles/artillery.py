@@ -109,8 +109,8 @@ class _QuickStep(Power):
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Quick Step",
-            action=ActionType.Reaction,
-            description=f"When {stats.roleref} would make a ranged attack, they can first move 5 feet without provoking opportunity attacks",
+            action=ActionType.BonusAction,
+            description=f"Before {stats.roleref} makes a ranged attack, they can first move 5 feet without provoking opportunity attacks",
         )
         return stats, feature
 

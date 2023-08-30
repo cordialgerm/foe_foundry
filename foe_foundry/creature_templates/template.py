@@ -5,7 +5,7 @@ import numpy as np
 
 from ..creature_types import CreatureType
 from ..features import Feature
-from ..powers import Power, PowerType, select_from_powers, select_power
+from ..powers import Power, PowerType, select_from_powers, select_power, select_powers
 from ..role_types import MonsterRole
 from ..roles import AllRoles, RoleTemplate, get_role
 from ..statblocks import BaseStatblock, Statblock
@@ -42,37 +42,52 @@ class CreatureTypeTemplate(ABC):
     def select_powers(self, stats: BaseStatblock, rng: np.random.Generator) -> List[Power]:
         # TODO - make this scale with CR and let creature types customize this
 
+        n = 1 if stats.recommended_powers <= 3 else 2
+
         # Movement
         movement_power = select_power(stats=stats, power_type=PowerType.Movement, rng=rng)
 
         # Common
-        common_power = select_power(stats=stats, power_type=PowerType.Common, rng=rng)
+        common_powers = select_powers(stats=stats, power_type=PowerType.Common, rng=rng, n=n)
 
         # Static
         static_power = select_power(stats=stats, power_type=PowerType.Static, rng=rng)
 
         # Creature Type
-        creature_power = select_power(stats=stats, power_type=PowerType.Creature, rng=rng)
+        creature_powers = select_powers(
+            stats=stats, power_type=PowerType.Creature, rng=rng, n=n
+        )
 
         # Role
-        role_power = select_power(stats=stats, power_type=PowerType.Role, rng=rng)
+        role_powers = select_powers(
+            stats=stats,
+            power_type=PowerType.Role,
+            rng=rng,
+            n=n if len(creature_powers) > 0 else n + 1,
+        )
 
         # Themed
-        theme_power = select_power(stats=stats, power_type=PowerType.Theme, rng=rng)
+        theme_powers = select_powers(
+            stats=stats,
+            power_type=PowerType.Theme,
+            rng=rng,
+            n=n if len(creature_powers) > 0 else n + 1,
+        )
 
         # Choose Candidates
-        candidates = {
-            movement_power,
-            common_power,
-            creature_power,
-            role_power,
-            static_power,
-            theme_power,
-        }
+        candidates = (
+            {movement_power, static_power}
+            | set(common_powers)
+            | set(creature_powers)
+            | set(role_powers)
+            | set(common_powers)
+            | set(theme_powers)
+        )
+
         candidates = [c for c in candidates if c is not None]
         multipliers = {
             PowerType.Movement: 0.25,
-            PowerType.Common: 0.25,
+            PowerType.Common: 0.5,
             PowerType.Creature: 1,
             PowerType.Role: 1,
             PowerType.Static: 0.25,

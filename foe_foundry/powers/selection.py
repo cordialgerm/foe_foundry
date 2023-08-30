@@ -66,6 +66,9 @@ def select_from_powers(
     if multipliers is not None:
         weights = weights * multipliers
     indxs = weights > 0
+    n_total = int(np.sum(indxs))
+    if n > n_total:
+        n = n_total
 
     norm_weights = np.zeros_like(weights)
     norm_weights[indxs] = weights[indxs] / np.median(weights[indxs])
@@ -99,6 +102,8 @@ def _creature_powers(creature_type: CreatureType) -> List[Power]:
         return fiend.FiendishPowers + [common.DelightsInSuffering]
     elif creature_type == CreatureType.Giant:
         return giant.GiantPowers + warrior.WarriorPowers
+    elif creature_type == CreatureType.Humanoid:
+        return []
     elif creature_type == CreatureType.Plant:
         return [] + poison.PoisonPowers  # TODO
     else:

@@ -36,6 +36,18 @@ class Size(StrEnum):
         b = o[other]
         return a < b
 
+    def __gt__(self, other: Size) -> bool:
+        o = Size.Ordinals()
+        a = o[self]
+        b = o[other]
+        return a > b
+
+    def __ge__(self, other: Size) -> bool:
+        o = Size.Ordinals()
+        a = o[self]
+        b = o[other]
+        return a >= b
+
     def __sub__(self, other: Size) -> int:
         ordinals = Size.Ordinals()
         o1 = ordinals[self]

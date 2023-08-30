@@ -70,6 +70,12 @@
 - [ ] Powers need to be able to add additional info to attack clause
 - [ ] Creatures with a secondary damage type should have their attack action modified to do partial damage of that type
 
+## Notes
+
+- Stick With Me! and Challenge Foe are redundant
+- Should damage types in base statblocks be empty and be populated by role templates if not specified?
+- Why is parry and riposte showing up for skirmishers?
+
 ## More Sophisticated Selection System
 
 - Selection engine should take parameters like:
