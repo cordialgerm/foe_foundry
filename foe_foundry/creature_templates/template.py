@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import List, Tuple, overload
+from typing import List, Set, Tuple, overload
 
 import numpy as np
 
@@ -131,19 +131,19 @@ class CreatureTypeTemplate(ABC):
         new_stats = role_template.alter_base_stats(new_stats, rng=rng)
         powers = self.select_powers(new_stats, rng)
 
-        features = []
+        features: Set[Feature] = set()
         for power in powers:
             new_stats, new_features = power.apply(new_stats, rng)
 
             if isinstance(new_features, Feature):
                 new_features = [new_features]
 
-            features.extend(new_features)
+            features.update(new_features)
 
         name = f"{stats.key}-{self.creature_type}-{role_template.key}"
-        stats = Statblock.from_base_stats(name=name, stats=new_stats, features=features)
+        stats = Statblock.from_base_stats(name=name, stats=new_stats, features=list(features))
 
         if return_features:
-            return stats, features
+            return stats, list(features)
         else:
             return stats

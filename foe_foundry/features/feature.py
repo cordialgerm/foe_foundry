@@ -24,3 +24,6 @@ class Feature:
             self.title = f"{self.name} ({self.uses}/day)"
         else:
             self.title = self.name
+
+    def __hash__(self) -> int:
+        return self.name.__hash__()

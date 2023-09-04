@@ -234,6 +234,10 @@ class _RefuseToSurrender(Power):
         super().__init__(name="Refuse to Surrender", power_type=PowerType.Common)
 
     def score(self, candidate: BaseStatblock) -> float:
+        # the creature has to be somewhat aware to fight harder when it's hurt
+        if candidate.attributes.INT <= 3 and candidate.attributes.WIS <= 3:
+            return NO_AFFINITY
+
         # this power makes a lot of sense for larger creatures, creatures with more HP, higher CR creatures, and Bruisers
         score = 0
         if candidate.size in {Size.Large, Size.Huge, Size.Gargantuan}:
@@ -244,7 +248,7 @@ class _RefuseToSurrender(Power):
             score += LOW_AFFINITY
         if candidate.role in {MonsterRole.Bruiser, MonsterRole.Defender}:
             score += MODERATE_AFFINITY
-        return score
+        return score if score > 0 else NO_AFFINITY
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

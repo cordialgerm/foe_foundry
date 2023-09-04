@@ -1,5 +1,5 @@
 from math import ceil, floor
-from typing import List, Tuple
+from typing import Dict, List, Set, Tuple
 
 import numpy as np
 from numpy.random import Generator
@@ -26,13 +26,21 @@ from ..scores import (
 )
 
 
-def _score_could_be_monstrous(candidate: BaseStatblock, size_boost: bool = True) -> float:
+def _score_could_be_monstrous(
+    candidate: BaseStatblock,
+    size_boost: bool = True,
+    additional_creature_types: Dict[CreatureType, float] | None = None,
+) -> float:
     score = 0
 
     creature_types = {
         CreatureType.Monstrosity: HIGH_AFFINITY,
         CreatureType.Beast: HIGH_AFFINITY,
     }
+
+    if additional_creature_types is not None:
+        creature_types.update(additional_creature_types)
+
     score += creature_types.get(candidate.creature_type, 0)
 
     if size_boost and candidate.size >= Size.Large:
@@ -88,7 +96,11 @@ class _Swallow(Power):
         super().__init__(name="Swallow", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, size_boost=True)
+        return _score(
+            candidate,
+            size_boost=True,
+            additional_creature_types={CreatureType.Ooze: HIGH_AFFINITY},
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats, size_boost=True)
@@ -100,13 +112,13 @@ class _Swallow(Power):
         dc = stats.difficulty_class
         threshold = int(max(5, ceil(2.0 * stats.cr)))
         dmg = int(ceil(5 + stats.cr))
-        regurgitate_dc = int(min(25, floor(threshold / 2)))
+        regurgitate_dc = int(min(25, max(10, floor(threshold / 2))))
         feature = Feature(
             name="Swallow",
             action=ActionType.Action,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} attempts to swallow one target within {reach} ft. \
-                 The target must make a DC {dc} Dexterity saving throw. On a failure, it is swallowed by {stats.selfref}. \
+                The target must make a DC {dc} Dexterity saving throw. On a failure, it is swallowed by {stats.selfref}. \
                 A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside {stats.selfref}, and it takes {dmg} ongoing acid damage at the start of each of its turns.\n\n\
                 If {stats.selfref} takes {threshold} damage or more on a single turn from a creature inside it, {stats.selfref} must make a DC {regurgitate_dc} \
                 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of {stats.selfref}. \

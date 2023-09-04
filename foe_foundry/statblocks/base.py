@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from copy import deepcopy
 from dataclasses import dataclass, field
-from typing import List, Set
+from typing import Callable, Dict, List, Set
 
 from ..ac import ArmorClass
 from ..attributes import Attributes
@@ -172,3 +172,23 @@ class BaseStatblock:
             )
 
         return BaseStatblock(**args)
+
+    def scale(self, stats: Dict[Stats, int | Callable]) -> BaseStatblock:
+        new_vals = {}
+
+        primary_stat: Stats | None = None
+
+        for stat, val in stats.items():
+            if isinstance(val, int):
+                new_vals[stat] = val
+            elif callable(val):
+                is_primary = getattr(val, "is_primary", False)
+                if is_primary:
+                    primary_stat = stat
+                new_vals[stat] = val(self)
+
+        if primary_stat is not None:
+            new_vals.update(primary_attribute=primary_stat)
+
+        new_attributes = self.attributes.copy(**new_vals)
+        return self.copy(attributes=new_attributes)

@@ -90,10 +90,12 @@ class _PinningShot(Power):
 
         dc = stats.difficulty_class
 
+        name = "Pinning Shot" if stats.attack_type.is_ranged() else "Pinning Hit"
+
         feature = Feature(
-            name="Pinning Shot",
+            name=name,
             action=ActionType.Feature,
-            description=f"When {stats.selfref} hits with a ranged attack, the target must succeed on a DC {dc} Strength saving throw or be Restrained (save ends at end of turn).",
+            description=f"When {stats.selfref} hits with an attack, the target must succeed on a DC {dc} Strength saving throw or be Restrained (save ends at end of turn).",
         )
 
         return stats, feature

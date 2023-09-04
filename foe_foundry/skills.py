@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from enum import StrEnum
-from typing import List, cast
+from typing import Any, Callable, List, cast
 
 
 class Stats(StrEnum):
@@ -15,6 +15,34 @@ class Stats(StrEnum):
     @staticmethod
     def All() -> List[Stats]:
         return [cast(Stats, s) for s in Stats._member_map_.values()]
+
+    @staticmethod
+    def Primary(mod: int = 0) -> Callable:
+        class _PrimaryWrapper:
+            def __init__(self):
+                self.is_primary = True
+
+            def __call__(self, stats: Any) -> int:
+                return stats.primary_attribute_score + mod
+
+        return _PrimaryWrapper()
+
+    @staticmethod
+    def Boost(stat: Stats, mod: int) -> Callable:
+        def f(stats: Any) -> int:
+            return stats.attributes.stat(stat) + mod
+
+        return f
+
+    @staticmethod
+    def Scale(base: int, cr_multiplier: float) -> Callable:
+        def f(stats: Any) -> int:
+            new_stat = min(
+                int(round(base + cr_multiplier * stats.cr)), stats.primary_attribute_score
+            )
+            return new_stat
+
+        return f
 
 
 class Skills(StrEnum):

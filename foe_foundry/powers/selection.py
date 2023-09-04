@@ -17,6 +17,7 @@ from .creatures import (
     fey,
     fiend,
     giant,
+    ooze,
 )
 from .power import Power
 from .power_type import PowerType
@@ -106,6 +107,8 @@ def _creature_powers(creature_type: CreatureType) -> List[Power]:
         return []
     elif creature_type == CreatureType.Monstrosity:
         return monstrous.MonstrousPowers + [common.NotDeadYet, common.GoesDownFighting]
+    elif creature_type == CreatureType.Ooze:
+        return ooze.OozePowers + [monstrous.Swallow]
     elif creature_type == CreatureType.Plant:
         return [] + poison.PoisonPowers  # TODO
     else:
