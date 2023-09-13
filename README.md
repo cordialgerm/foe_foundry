@@ -13,9 +13,9 @@
   - [x] Giant
   - [x] Humanoid
   - [x] Monstrosity
-  - [ ] Ooze
-  - [ ] Plant
-  - [ ] Undead
+  - [x] Ooze
+  - [x] Plant
+  - [x] Undead
 - [x] Role Powers - all but LEADER
 - [ ] FoF Theme Powers
   - [x] aberrant
@@ -42,6 +42,8 @@
   - Gadget: Explosive Grenades, traps
   - Eye Beams: anti magic eye, anti healing eye, vulnerability eye, random eye beams
   - Holy/Unholy: healing, divine favor
+- [ ] Create a Role scoring system (minimum attributes, creature types, etc.)
+- [x] Allow creature templates to customize the creature after a role has been applied
 - [ ] Legendary Creatures (powers, role)
 - [ ] Create a visualization that shows likelyhood of creature + role going for a giving power
 - [ ] Creature Templates

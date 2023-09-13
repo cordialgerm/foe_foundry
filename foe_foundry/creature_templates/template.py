@@ -24,6 +24,9 @@ class CreatureTypeTemplate(ABC):
     def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         pass
 
+    def customize_role(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
+        return stats.copy()
+
     def select_role(
         self,
         stats: BaseStatblock,
@@ -129,6 +132,8 @@ class CreatureTypeTemplate(ABC):
         new_stats = self.alter_base_stats(stats, rng)
         role_template = self.select_role(stats=new_stats, role_template=role_template, rng=rng)
         new_stats = role_template.alter_base_stats(new_stats, rng=rng)
+        new_stats = self.customize_role(new_stats, rng)
+
         powers = self.select_powers(new_stats, rng)
 
         features: Set[Feature] = set()

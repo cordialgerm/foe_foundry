@@ -164,8 +164,8 @@ class _CursedWound(Power):
 
         feature = Feature(
             name="Cursed Wounds",
-            action=ActionType.Feature,
-            description=f"When {stats.selfref} deals necrotic damage to a target, the target must make a DC {dc} Charisma save. \
+            action=ActionType.BonusAction,
+            description=f"Immediately after hitting with an attack, {stats.selfref} converts all of that attack's damage to necrotic damage and forces the target to make a DC {dc} Charisma save. \
                 On a failure, the target is cursed and its maximum hit points are reduced by the necrotic damage taken. \
                 The target dies and reanimates as a Zombie under the control of {stats.selfref} if this damage leaves it with 0 hit points.",
         )

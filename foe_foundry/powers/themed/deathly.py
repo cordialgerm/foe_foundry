@@ -73,12 +73,13 @@ class _AuraOfAnnihilation(Power):
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
         distance = 5 if stats.cr <= 11 else 10
-        dmg = max(5 + stats.cr, 1.5 * stats.cr)
+        dmg = int(floor(max(5 + stats.cr, 1.5 * stats.cr)))
         dc = stats.difficulty_class_easy
+        qualifier = f"non-{stats.creature_type.lower()}"
 
         feature = Feature(
             name="Aura of Annihilation",
-            description=f"Each creature who ends their turn within {distance} ft of {stats.selfref} must make a DC {dc} Constitution saving throw. \
+            description=f"Each {qualifier} creature that ends its turn within {distance} ft of {stats.selfref} must make a DC {dc} Constitution saving throw. \
                 On a failure, they take {dmg} necrotic damage and gain one Death Save failure. With three failures, a creature dies. \
                 On a success, a creature takes half damage and does not gain a Death Save failure. With three successes, a creature is immune to this effect",
             action=ActionType.Feature,
@@ -147,7 +148,7 @@ class _DrainingBlow(Power):
         feature = Feature(
             name="Draining Blow",
             action=ActionType.BonusAction,
-            description=f"Immediately after hitting with an attack that deals necrotic damage, the {stats.selfref} regains hit points equal to the necrotic damage dealt.",
+            description=f"Immediately after hitting with an attack, the {stats.selfref} converts all of that attack's damage to necrotic damage and {stats.selfref} regains hit points equal to the necrotic damage dealt.",
         )
 
         return stats, feature
