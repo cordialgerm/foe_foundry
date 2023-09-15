@@ -12,6 +12,7 @@ class Feature:
     uses: int | None = None
     replaces_multiattack: int = 0
     hidden: bool = False
+    modifies_attack: bool = False
     title: str = field(init=False)
 
     def __post_init__(self):

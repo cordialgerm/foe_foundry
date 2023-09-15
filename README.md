@@ -60,8 +60,8 @@
 
 ## Attack Enhancements
 
-- [ ] Creatures with a secondary damage type should have their attack action modified to do partial damage of that type
-- [ ] Powers need to be able to add additional info to attack clause
+- [x] Creatures with a secondary damage type should have their attack action modified to do partial damage of that type
+- [x] Powers need to be able to add additional info to attack clause
 - [ ] Weapon Powers (similar to weapon masteries)
   - good for NPCs
   - good for some monster types

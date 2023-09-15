@@ -159,9 +159,10 @@ class _LeadByExample(Power):
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Lead by Example",
-            description=f"Whenever {stats.roleref} hits a target with an attack, any of {stats.roleref}'s allies gain advantage on attack rolls against that target \
-                until the start of {stats.roleref}'s next turn.",
+            description=f"On a hit, any of {stats.roleref}'s allies gain advantage on attack rolls against the target until the start of {stats.roleref}'s next turn.",
             action=ActionType.Feature,
+            modifies_attack=True,
+            hidden=True,
         )
         return stats, feature
 

@@ -95,7 +95,13 @@ class Attack:
 
         new_formula = self.damage.formula.copy()
 
-        if dice_delta != 0:
+        if new_formula.n_die + dice_delta <= 0:
+            # handle the corner case where the dice_delta is going negative or too small
+            # we can't remove dice in this case, so we just make the dice smaller
+            primary_die = new_formula.primary_die_type.decrease().decrease().decrease()
+            mod = new_formula.mod or 0
+            new_formula = DieFormula.from_dice(mod=mod, **{primary_die: 1})
+        elif dice_delta != 0:
             primary_die = new_formula.primary_die_type
             new_value = new_formula.get(primary_die) + dice_delta
             args = {primary_die.name: new_value}
@@ -142,10 +148,15 @@ class Attack:
             return self.copy()
         elif n_die == 1:
             if primary_die >= Die.d6:
-                # reduce the damage die by one size and add 1d4 additional damage
+                # reduce the damage die by two sizes and add 1d4 additional damage
                 new_primary_n_die = 1
                 new_secondary_n_die = 1
-                new_primary_die = primary_die.decrease()
+
+                if primary_die <= Die.d6:
+                    new_primary_die = Die.d4
+                else:
+                    new_primary_die = primary_die.decrease().decrease()
+
                 new_secondary_die = Die.d4
             else:
                 # the die is too small to split so don't do anything

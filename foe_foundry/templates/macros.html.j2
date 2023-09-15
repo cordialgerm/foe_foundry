@@ -18,17 +18,17 @@
 {% endif %}
 {%- endmacro %}
 
-{% macro attack_block(attack) -%}
+{% macro attack_block(attack, additional_text) -%}
 
 {% if attack.is_melee -%}
-{{melee_attack_block(attack)}}
+{{melee_attack_block(attack, additional_text)}}
 {% else %}
-{{ranged_attack_block(attack)}}
+{{ranged_attack_block(attack, additional_text)}}
 {%- endif %}
 
 {%- endmacro %}
 
-{% macro melee_attack_block(attack) %}
+{% macro melee_attack_block(attack, additional_text) %}
 
 <property-block>
     <h4>{{attack.name}}.</h4>
@@ -40,15 +40,16 @@
         {% else -%}
         .
         {%- endif %}
+        {{additional_text}}
     </p>
 </property-block>
 
 {% endmacro %}
 
-{% macro ranged_attack_block(attack) %}
+{% macro ranged_attack_block(attack, additional_text) %}
 
 <property-block>
-    <h4>{{attack.name}}</h4>
+    <h4>{{attack.name}}.</h4>
     <p>
         <i>Ranged Weapon Attack:</i> +{{attack.hit}} to hit, range {{attack.range}} ft., one target.
         <i>Hit:</i> {{attack.damage.description}}
@@ -57,6 +58,7 @@
         {% else %}
         .
         {% endif %}
+        {{additional_text}}
     </p>
 </property-block>
 

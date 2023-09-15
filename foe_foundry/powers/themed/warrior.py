@@ -86,8 +86,6 @@ class _PinningShot(Power):
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
-        # TODO - modify attack action directly
-
         dc = stats.difficulty_class
 
         name = "Pinning Shot" if stats.attack_type.is_ranged() else "Pinning Hit"
@@ -95,7 +93,9 @@ class _PinningShot(Power):
         feature = Feature(
             name=name,
             action=ActionType.Feature,
-            description=f"When {stats.selfref} hits with an attack, the target must succeed on a DC {dc} Strength saving throw or be Restrained (save ends at end of turn).",
+            description=f"On a hit, the target must succeed on a DC {dc} Strength saving throw or be Restrained (save ends at end of turn).",
+            hidden=True,
+            modifies_attack=True,
         )
 
         return stats, feature

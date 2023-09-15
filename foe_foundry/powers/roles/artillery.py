@@ -170,7 +170,9 @@ class _SuppressingFire(Power):
         feature = Feature(
             name="Suppressing Fire",
             action=ActionType.Feature,
-            description=f"When {stats.roleref} hits a target with a ranged attack, that target's speed is reduced by half until the end of its next turn",
+            description=f"On a hit, the target's speed is reduced by half until the end of its next turn",
+            hidden=True,
+            modifies_attack=True,
         )
 
         return stats, feature

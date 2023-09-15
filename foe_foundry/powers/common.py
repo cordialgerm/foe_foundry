@@ -303,8 +303,9 @@ class _DelightsInSuffering(Power):
         dmg = int(ceil(stats.cr))
         feature = Feature(
             name="Delights in Suffering",
-            description=f"When attacking a target whose current hit points are below half their hit point maximum, {stats.selfref} has advantage on attack rolls and deals an extra {dmg} {damage_type} damage when they hit.",
+            description=f"The attack is made at advantage and deals an additional {dmg} {damage_type} damage if the target is at or below half-health (included in the attack).",
             action=ActionType.Feature,
+            modifies_attack=True,
         )
         return stats, feature
 

@@ -175,6 +175,7 @@ def secondary_damage_attack(
         name=name,
         description=f"This creature's attacks deal an extra {dmg} {damage_type} damage (included in the attack)",
         action=ActionType.Feature,
+        hidden=True,
     )
 
     additional_damage = Damage(
@@ -233,18 +234,17 @@ def debilitating_attack(
             f" unless it succeeds on a DC {dc} {save} save (save ends at end of turn)"
         )
 
-    # TODO - this should modify the attack action directly
     feature = Feature(
         name=name,
         action=ActionType.Feature,
-        description=f"When {stats.selfref} hits a creature with an attack that creature {condition_str}",
+        description=f"On a hit, the target {condition_str}",
+        modifies_attack=True,
+        hidden=True,
     )
 
     return stats, feature
 
 
-# TODO - enhance the Attack class so there can be multiple attacks
-# TODO - enhance the Attack class so there can be an effect if all attacks hit
 # TODO - organize these
 # Grappling Claw Attacks (Chuul)
 # Grappling Tentacle Attacks (see above)

@@ -42,14 +42,13 @@ class _GraspingTentacles(Power):
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
-        # TODO - integrate this directly into the attack via an AttackTemplate
-
         dc = int(floor(11 + 0.5 * stats.cr))
         feature = Feature(
             name="Grasping Tentacles",
-            description=f"When {stats.selfref} hits with an attack, they sprout a tentacle that grasps the target. \
-                In addition to the attack's normal effects, the target is grappled (escape DC {dc}) and restrained.",
-            action=ActionType.Reaction,
+            description=f"On a hit, the target sprouts a tentacle that grapples the target (escape DC {dc}). While grappled in this way, the target is restrained.",
+            action=ActionType.Feature,
+            modifies_attack=True,
+            hidden=True,
         )
         return stats, feature
 

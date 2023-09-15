@@ -29,7 +29,9 @@ class Statblock(BaseStatblock):
         # repair attack to-hit and damage formula
         repaired_hit = stats.attributes.proficiency + stats.attributes.primary_mod
         average_damage = stats.attack.damage.formula.average
-        suggested_die = max(stats.attack.damage.formula.primary_die_type, stats.size.hit_die())
+        suggested_die = max(
+            stats.attack.damage.formula.primary_die_type, stats.size.hit_die().decrease()
+        )
         repaired_formula = DieFormula.target_value(
             average_damage, flat_mod=stats.attributes.primary_mod, suggested_die=suggested_die
         )

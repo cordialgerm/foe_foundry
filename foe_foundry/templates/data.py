@@ -45,11 +45,21 @@ class MonsterTemplateData:
     actions: List[Feature]
     bonus_actions: List[Feature]
     reactions: List[Feature]
+    attack_modifiers: List[Feature]
 
     multiattack: str
     attack: Attack
 
     benchmarks: List[Benchmark] | None = None
+
+    attack_modifier_text: str = field(init=False)
+
+    def __post_init__(self):
+        self.attack_modifier_text = (
+            ". ".join([f.description for f in self.attack_modifiers])
+            if len(self.attack_modifiers) > 0
+            else ""
+        )
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -70,7 +80,9 @@ class MonsterTemplateData:
         cr = f"{cr_fraction} ({stats.xp:,.0f} XP)"
 
         passives, actions, bonus_actions, reactions = [], [], [], []
-        for feature in [f for f in stats.features if not f.hidden]:
+        for feature in stats.features:
+            if feature.hidden:
+                continue
             if feature.action == ActionType.Feature:
                 passives.append(feature)
             elif feature.action == ActionType.Action:
@@ -79,6 +91,11 @@ class MonsterTemplateData:
                 bonus_actions.append(feature)
             elif feature.action == ActionType.Reaction:
                 reactions.append(feature)
+
+        attack_modifiers = []
+        for feature in stats.features:
+            if feature.modifies_attack:
+                attack_modifiers.append(feature)
 
         if stats.multiattack <= 1:
             multiattack = ""
@@ -129,6 +146,7 @@ class MonsterTemplateData:
             actions=actions,
             bonus_actions=bonus_actions,
             reactions=reactions,
+            attack_modifiers=attack_modifiers,
             multiattack=multiattack,
             attack=stats.attack,
             benchmarks=benchmarks,

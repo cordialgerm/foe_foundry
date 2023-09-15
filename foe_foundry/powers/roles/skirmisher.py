@@ -107,15 +107,20 @@ class _KnockBack(Power):
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
-        description = f"When {stats.selfref} hits a target with an attack, they can choose to push the target 5 feet away from them."
+        description = f"On a hit, the target is pushed up to 5 feet away from {stats.selfref}."
         if stats.cr >= 4:
             dc = stats.difficulty_class
             description += (
                 f" The target must also succeed on a DC {dc} Strength save or be knocked prone."
             )
 
-        # TODO - modify attack action directly
-        feature = Feature(name="Knock Back", description=description, action=ActionType.Feature)
+        feature = Feature(
+            name="Knock Back",
+            description=description,
+            action=ActionType.Feature,
+            hidden=True,
+            modifies_attack=True,
+        )
         return stats, feature
 
 
