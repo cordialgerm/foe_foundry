@@ -35,6 +35,11 @@ class Statblock(BaseStatblock):
         )
         repaired_damage = stats.attack.damage.copy(formula=repaired_formula)
         new_attack = stats.attack.copy(hit=repaired_hit, damage=repaired_damage)
+
+        # split damage type
+        if stats.secondary_damage_type is not None:
+            new_attack = new_attack.split_damage(stats.secondary_damage_type)
+
         args.update(attack=new_attack)
 
         return Statblock(**args)

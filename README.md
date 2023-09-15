@@ -42,6 +42,7 @@
   - Gadget: Explosive Grenades, traps
   - Eye Beams: anti magic eye, anti healing eye, vulnerability eye, random eye beams
   - Holy/Unholy: healing, divine favor
+  - Weapon Powers
 - [ ] Create a Role scoring system (minimum attributes, creature types, etc.)
 - [x] Allow creature templates to customize the creature after a role has been applied
 - [ ] Legendary Creatures (powers, role)
@@ -57,6 +58,13 @@
 - [ ] Additional Creature Powers
 - [ ] Specific Creature Templates
 
+## Attack Enhancements
+
+- [ ] Creatures with a secondary damage type should have their attack action modified to do partial damage of that type
+- [ ] Powers need to be able to add additional info to attack clause
+- [ ] Weapon Powers (similar to weapon masteries)
+  - good for NPCs
+  - good for some monster types
 
 ## Structural Enhancements
 
@@ -69,8 +77,6 @@
 - [x] There should be a cleanup phase where HP is normalized to match CON
 - [x] There should be a cleanup phase where damage is normalized to match primary stat
 - [x] There should be a cleanup phase where attack to hit is normalized with primary stat
-- [ ] Powers need to be able to add additional info to attack clause
-- [ ] Creatures with a secondary damage type should have their attack action modified to do partial damage of that type
 
 ## Notes
 
