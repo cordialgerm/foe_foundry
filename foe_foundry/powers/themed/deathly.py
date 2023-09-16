@@ -171,9 +171,58 @@ class _ShadowStride(Power):
         return stats, feature
 
 
+class _FleshPuppets(Power):
+    def __init__(self):
+        super().__init__(name="Flesh Puppets", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate, undead_only=False)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        cr = int(ceil(stats.cr / 3))
+
+        feature = Feature(
+            name="Flesh Puppets",
+            action=ActionType.BonusAction,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} uses dark necromancy to resurrect the corpse of a nearby creature of CR {cr} or less. \
+                The creature acts in initiative immediately after {stats.selfref} and obeys the commands of {stats.selfref} (no action required). \
+                The flesh puppet has the same statistics as when the creature was living except it is now Undead, or uses the statistics of a **Skeleton**, **Zombie**, or **Ghoul**. \
+                When the flesh puppet dies, the corpse is mangled beyond repair and is turned into a pile of viscera.",
+        )
+
+        return stats, feature
+
+
+class _DevourSoul(Power):
+    def __init__(self):
+        super().__init__(name="Devour Soul", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate, undead_only=True)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        dmg = int(ceil(1.5 * stats.attack.average_damage))
+        dc = stats.difficulty_class_easy
+
+        feature = Feature(
+            name="Devour Soul",
+            action=ActionType.Action,
+            replaces_multiattack=2,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} targets one creature it can see within 30 feet of it that is not a Construct or an Undead. \
+                The creature must succeed on a DC {dc} Charisma saving throw or take {dmg} necrotic damage. \
+                If this damage reduces the target to 0 hit points, it dies and immediately rises as a **Ghoul** under {stats.selfref}'s control.",
+        )
+
+        return stats, feature
+
+
 AuraOfDoom: Power = _AuraOfDoom()
 AuraOfAnnihilation: Power = _AuraOfAnnihilation()
+DevourSoul: Power = _DevourSoul()
 DrainingBlow: Power = _DrainingBlow()
+FleshPuppets: Power = _FleshPuppets()
 ShadowStride: Power = _ShadowStride()
 UndyingMinions: Power = _UndyingMinions()
 WitheringBlow: Power = _WitheringBlow()
@@ -181,7 +230,9 @@ WitheringBlow: Power = _WitheringBlow()
 DeathlyPowers: List[Power] = [
     AuraOfDoom,
     AuraOfAnnihilation,
+    DevourSoul,
     DrainingBlow,
+    FleshPuppets,
     ShadowStride,
     UndyingMinions,
     WitheringBlow,

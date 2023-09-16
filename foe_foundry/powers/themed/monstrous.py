@@ -184,6 +184,7 @@ class _DevourAlly(Power):
         return _score(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = _as_monstrous(stats)
         size = stats.size.decrement()
         hp = int(ceil(max(5 + stats.cr, 3 + 2 * stats.cr, 3 * stats.cr)))
         feature = Feature(
@@ -203,6 +204,7 @@ class _LingeringWound(Power):
         return _score(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = _as_monstrous(stats)
         if stats.primary_damage_type.is_physical():
             stats = stats.copy(primary_damage_type=DamageType.Piercing)
 
@@ -221,18 +223,40 @@ class _LingeringWound(Power):
         return stats, feature
 
 
+class _Rampage(Power):
+    def __init__(self):
+        super().__init__(name="Rampage", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = _as_monstrous(stats)
+
+        feature = Feature(
+            name="Rampage",
+            action=ActionType.Reaction,
+            description=f"When a creature within 30 feet is reduced to 0 hitpoints, {stats.selfref} may move up to half its speed and make an attack.",
+        )
+
+        return stats, feature
+
+
 Constriction: Power = _Constriction()
-Swallow: Power = _Swallow()
-Pounce: Power = _Pounce()
 Corrosive: Power = _Corrosive()
 DevourAlly: Power = _DevourAlly()
 LingeringWound: Power = _LingeringWound()
+Pounce: Power = _Pounce()
+Rampage: Power = _Rampage()
+Swallow: Power = _Swallow()
+
 
 MonstrousPowers: List[Power] = [
     Constriction,
-    Swallow,
-    Pounce,
     Corrosive,
     DevourAlly,
     LingeringWound,
+    Pounce,
+    Rampage,
+    Swallow,
 ]

@@ -42,7 +42,7 @@ class _Telekinetic(Power):
     (DC = 11 + 1/2 CR) or be pulled up to 80 feet directly toward this creature."""
 
     def __init__(self):
-        super().__init__(name="Telekinetic", power_type=PowerType.Common)
+        super().__init__(name="Telekinetic", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_psychic(candidate)

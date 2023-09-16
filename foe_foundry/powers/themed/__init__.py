@@ -8,6 +8,7 @@ from . import (
     charm,
     cursed,
     deathly,
+    domineering,
     fearsome,
     monstrous,
     organized,
@@ -27,6 +28,7 @@ ThemedPowers: List[Power] = (
     + charm.CharmPowers
     + cursed.CursedPowers
     + deathly.DeathlyPowers
+    + domineering.DomineeringPowers
     + fearsome.FearsomePowers
     + monstrous.MonstrousPowers
     + organized.OrganizedPowers
