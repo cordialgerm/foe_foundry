@@ -192,4 +192,4 @@ WarpReality: Power = _WarpReality()
 AdhesiveSkin: Power = _AdhesiveSkin()
 Incubation: Power = _Incubation()
 
-AberrantPowers: List[Power] = [EraseMemory, WarpReality, AdhesiveSkin]
+AberrantPowers: List[Power] = [EraseMemory, WarpReality, AdhesiveSkin, Incubation]

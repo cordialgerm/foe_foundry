@@ -110,46 +110,103 @@
 
 
 
-BaseStatblock
 
-Powers (stats) -> stats, [features]
+## misc ideas
 
-RoleTemplate (stats) -> stats, [PowerSlot]
-CreatureTemplate (stats) -> stats, [PowerSlots]
+- shoud there be some sort of tags / prerequisite system?
+- what about a power budget
 
 
-Types of Powers:
 
-Common - any monsters can have these, common powers have selection chances
-Uncommon - limited slots for these. They have selection changes
-Role - 1 slot for these. options Determined by RoleTemplate
-Creature - 1 slot for these. options Determined by CreatureTemplate
+## More Powers
 
-Power Slots
+### Conditions
 
-CR <= 1
-  1 Role or Creature
-  Remainder Common/Uncommon (usually 0)
+- Dungeon Dudes additional conditions
 
-CR <= 5
-  1 Role
-  1 Creature
-  Remainder Common/Uncommon (usually 0)
+### Abberrant
 
-CR <= 10
-  1 Role
-  1 Creature
-  1 Common/Uncommon (usually 1)
-  Remainder Common/Uncommon (usually 0)
+- **Antimagic Gullet** - https://www.dndbeyond.com/monsters/2821163-eye-monger - also grants a Swallow
 
-CR <= 15
-  1 Role
-  1 Creature
-  1 Uncommon
-  Remainder Common/Uncommon (usually 1)
+### Tentacle Powers
 
-CR > 15
-  1 Role
-  1 Creature
-  1 Uncommon
-  Remainder Common/Uncommon (usually 2)
+- **Tentacle Slam** - https://www.dndbeyond.com/monsters/16973-otyugh
+
+### Deathly
+
+- **Shadow Stride** - shadow teleportation like a shadow monk
+
+### Psionic
+
+- **Psychic Whispers** (Recharge) - level-scaled dissonant whispers
+- **Mind Blast** (Recharge)
+- **Devour Intellect** & **Body Thief** - https://www.dndbeyond.com/monsters/17163-intellect-devourer
+- **Extract Brain** & **Tentacles** - https://www.dndbeyond.com/monsters/17104-mind-flayer
+- **Psychic Mirror** - reflect psychic damage
+
+### Bestial
+
+Gore - https://www.dndbeyond.com/monsters/2560728-aurochs - Recharge 5 - move up movement speed - on a hit, deals additional damage and inflicts bleeding damage
+
+### Reckless
+
+- Wild Cleave (Recharge 5) - attack every creature being surrounded, on a hit the target must make a strength save or fall prone
+- Flurry of Blows (Recharge 5) - make max(3, 2x) number of attacks
+
+### Defender
+
+- **Spell Reflection** - https://www.dndbeyond.com/monsters/2560878-morkoth
+
+### Tricky
+
+- **Phantasms** - https://www.dndbeyond.com/monsters/16826-cloaker
+- **Hypnosis** - https://www.dndbeyond.com/monsters/2560878-morkoth - hypnotic pattern
+- **Bend Space** - Bend Space. When the seer would be hit by an attack roll, it teleports, along with any equipment it is wearing or carrying, exchanging positions with another star spawn it can see within 60 feet of it. The other star spawn is hit by the attack instead.
+
+### Common
+
+- Magic Resistance
+- Action Surge
+- Regeneration
+
+### Teleportation Powers
+
+- Vortex Warp
+- Scatter
+
+### Eye Powers
+
+- Antimagic Cone
+- See Volos' - bunch of ideas for beholders in there
+- Antimagic Breath - https://www.dndbeyond.com/monsters/2059739-eyedrake
+- Stunning Gaze - https://www.dndbeyond.com/monsters/2560819-gauth
+
+- Aversion Ray
+- Psychic Ray
+- Slowing Ray
+- Stunning Ray
+- Dazing Ray
+- Fear Ray
+- Frost Ray
+- Devour Magic Ray
+- Enervation Ray
+- Sleep Ray
+- Freezing Ray
+- Debilitating Ray
+- Repulsion Ray
+- Fire Ray
+- Paralyzing Ray
+- Death Ray
+- Telekinetic Ray
+- Petrification Ray
+- Disintigration Ray
+- Death Ray
+
+### Poison
+
+Paralyzing Poison
+
+### Spellcasting
+
+Slaad Spells - https://www.dndbeyond.com/monsters/17113-death-slaad
+Mindflayer Spells - levitate, detect thoughts, modify memory, dominate person / monster, plane shift, feeblemind

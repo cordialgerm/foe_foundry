@@ -1,7 +1,7 @@
 from math import ceil
 from typing import List, Tuple
 
-import numpy as np
+from numpy.random import Generator
 
 from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
@@ -64,6 +64,9 @@ def _score_horrifying(candidate: BaseStatblock, min_cr: float = 1) -> float:
     if candidate.cr >= 7:
         score += LOW_AFFINITY
 
+    if candidate.secondary_damage_type == DamageType.Psychic:
+        score += MODERATE_AFFINITY
+
     return score
 
 
@@ -77,9 +80,7 @@ class _Repulsion(Power):
         ) / 2
         return score if score > 0 else NO_AFFINITY
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         if _score_fearsome(stats, supernatural=False) > 0:
             name = "Fearsome Roar"
         elif _score_horrifying(stats) > 0:
@@ -109,9 +110,7 @@ class _TerrifyingVisage(Power):
         score = _score_horrifying(candidate)
         return score if score > 0 else NO_AFFINITY
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         aging = f"1d4 x {5 if stats.cr < 4 else 10} years"
         dc = stats.difficulty_class
 
@@ -137,9 +136,7 @@ class _DreadGaze(Power):
         ) / 2.0
         return score if score > 0 else NO_AFFINITY
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
 
         feature = Feature(
@@ -163,9 +160,7 @@ class _MindShatteringScream(Power):
         score = _score_horrifying(candidate)
         return score if score > 0 else NO_AFFINITY
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dmg = int(ceil(5 + 2.5 * stats.cr))
         dc = stats.difficulty_class
 
@@ -181,9 +176,39 @@ class _MindShatteringScream(Power):
         return stats, feature
 
 
+class _NightmarishVisions(Power):
+    def __init__(self):
+        super().__init__(name="Nightmarish Visions", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_horrifying(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        dmg = int(ceil(max(5, 1.5 * stats.cr)))
+        dc = stats.difficulty_class_easy
+
+        feature = Feature(
+            name="Nightmarish Visions",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} targets a a creature that it can see within 30 feet and forces it to confront its deepest fears. \
+                The target must succeed on a DC {dc} Wisdom save or become Frightened of {stats.selfref}. While frightened in this way, the creature takes {dmg} ongoing psychic damage at the start of each of its turns. Save ends at end of turn.",
+        )
+
+        return stats, feature
+
+
 Repulsion: Power = _Repulsion()
 TerrifyingVisage: Power = _TerrifyingVisage()
 DreadGaze: Power = _DreadGaze()
 MindShatteringScream: Power = _MindShatteringScream()
+NightmarishVisions: Power = _NightmarishVisions()
 
-FearsomePowers: List[Power] = [Repulsion, TerrifyingVisage, DreadGaze, MindShatteringScream]
+FearsomePowers: List[Power] = [
+    Repulsion,
+    TerrifyingVisage,
+    DreadGaze,
+    MindShatteringScream,
+    NightmarishVisions,
+]

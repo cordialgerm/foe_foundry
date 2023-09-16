@@ -12,6 +12,7 @@ from . import (
     monstrous,
     organized,
     poison,
+    teleportation,
     tricky,
     warrior,
 )
@@ -29,4 +30,5 @@ ThemedPowers: List[Power] = (
     + poison.PoisonPowers
     + tricky.TrickyPowers
     + warrior.WarriorPowers
+    + teleportation.TeleportationPowers
 )

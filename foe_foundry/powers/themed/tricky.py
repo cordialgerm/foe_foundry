@@ -1,6 +1,8 @@
+from math import floor
 from typing import List, Tuple
 
 import numpy as np
+from numpy.random import Generator
 
 from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
@@ -11,7 +13,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -20,41 +22,6 @@ from ..scores import (
     MODERATE_AFFINITY,
     NO_AFFINITY,
 )
-
-
-class _NimbleReaction(Power):
-    def __init__(self):
-        super().__init__(name="Nimble Reaction", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.primary_attribute == Stats.DEX:
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Acrobatics):
-            score += HIGH_AFFINITY
-
-        if candidate.speed.fastest_speed >= 40:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Acrobatics)
-        stats = stats.copy(attributes=new_attrs)
-
-        feature = Feature(
-            name="Nimble Reaction",
-            action=ActionType.Reaction,
-            description=f"When {stats.selfref} is the only target of a melee attack, they can move up to their speed without provoking opportunity attacks.\
-                If this movement leaves {stats.selfref} outside the attacking creature's reach, then the attack misses.",
-            recharge=4,
-        )
-
-        return stats, feature
 
 
 def _score_is_tricky_creature(candidate: BaseStatblock) -> float:
@@ -101,6 +68,39 @@ def _ensure_tricky_stats(stats: BaseStatblock) -> BaseStatblock:
     return stats.copy(**changes)
 
 
+class _NimbleReaction(Power):
+    def __init__(self):
+        super().__init__(name="Nimble Reaction", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        score = 0
+
+        if candidate.primary_attribute == Stats.DEX:
+            score += LOW_AFFINITY
+
+        if candidate.attributes.has_proficiency_or_expertise(Skills.Acrobatics):
+            score += HIGH_AFFINITY
+
+        if candidate.speed.fastest_speed >= 40:
+            score += MODERATE_AFFINITY
+
+        return score if score > 0 else NO_AFFINITY
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Acrobatics)
+        stats = stats.copy(attributes=new_attrs)
+
+        feature = Feature(
+            name="Nimble Reaction",
+            action=ActionType.Reaction,
+            description=f"When {stats.selfref} is the only target of a melee attack, they can move up to their speed without provoking opportunity attacks.\
+                If this movement leaves {stats.selfref} outside the attacking creature's reach, then the attack misses.",
+            recharge=4,
+        )
+
+        return stats, feature
+
+
 class _Impersonation(Power):
     def __init__(self):
         super().__init__(name="Impersonation", power_type=PowerType.Theme)
@@ -109,9 +109,7 @@ class _Impersonation(Power):
         score = _score_is_tricky_creature(candidate)
         return score if score > 0 else NO_AFFINITY
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _ensure_tricky_stats(stats)
 
         dc = 8 + stats.attributes.stat_mod(Stats.CHA) + stats.attributes.proficiency
@@ -136,9 +134,7 @@ class _Projection(Power):
         score = _score_is_tricky_creature(candidate)
         return score if score > 0 else NO_AFFINITY
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _ensure_tricky_stats(stats)
 
         dc = stats.attributes.passive_skill(Skills.Deception)
@@ -156,8 +152,60 @@ class _Projection(Power):
         return stats, feature
 
 
+class _EvilDoppelganger(Power):
+    def __init__(self):
+        super().__init__(name="Evil Doppelganger", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_is_tricky_creature(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        dc = stats.difficulty_class
+        hp = int(floor(max(5, 2 * stats.cr)))
+
+        feature = Feature(
+            name="Evil Doppleganger",
+            action=ActionType.Action,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} forces each creature of its choice within 30 feet to make a DC {dc} Charisma saving throw. \
+                On a failure, a Shadow Doppleganger copy of that creature materializes in the nearest unoccupied space to that creature and acts in initiative immediately after {stats.selfref}. \
+                The Shadow Doppleganger has {hp} hp and has an AC equal to the creature it was copied from and is an Undead. On its turn, the Shadow Doppleganger attempts to move and attack the creature it was copied from. \
+                It makes a single attack using {stats.selfref}'s Attack action. It otherwise has the movement, stats, skills, and saves of the creature it was copied from.",
+        )
+
+        return stats, feature
+
+
+class _SpectralDuplicate(Power):
+    def __init__(self):
+        super().__init__(name="Spectral Duplicate", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_is_tricky_creature(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Spectral Duplicate",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} creates a spectral duplicate of itself in an unoccupied space it can see within 60 feet. \
+                While the duplicate exists, {stats.selfref} is invisible and unconscious. The duplicate has the same statistics and knowledge as {stats.selfref} \
+                and acts immediately in initiative after {stats.selfref}. The duplicate disappears when {stats.selfref} drops to 0 hp.",
+        )
+
+        return stats, feature
+
+
 NimbleReaction: Power = _NimbleReaction()
 Impersonation: Power = _Impersonation()
 Projection: Power = _Projection()
+EvilDoppleganger: Power = _EvilDoppelganger()
+SpectralDuplicate: Power = _SpectralDuplicate()
 
-TrickyPowers: List[Power] = [NimbleReaction, Impersonation]
+TrickyPowers: List[Power] = [
+    NimbleReaction,
+    Impersonation,
+    Projection,
+    EvilDoppleganger,
+    SpectralDuplicate,
+]
