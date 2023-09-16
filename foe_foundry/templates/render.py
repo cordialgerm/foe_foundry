@@ -6,8 +6,14 @@ from jinja2 import Environment, PackageLoader, select_autoescape
 from ..benchmarks import Benchmark
 from ..statblocks import Statblock
 from .data import MonsterTemplateData
+from .utilities import fix_punctuation
 
-env = Environment(loader=PackageLoader("foe_foundry"), autoescape=select_autoescape())
+env = Environment(
+    loader=PackageLoader("foe_foundry"),
+    autoescape=select_autoescape(),
+    extensions=["jinja_markdown.MarkdownExtension"],
+)
+env.filters["fix_punctuation"] = fix_punctuation
 
 
 def render_html(stats: Statblock, path: Path) -> Path:

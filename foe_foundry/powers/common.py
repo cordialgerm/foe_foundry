@@ -4,6 +4,7 @@ from typing import List, Tuple
 import numpy as np
 
 from foe_foundry.features import Feature
+from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
 
 from ..attributes import Skills, Stats
@@ -327,17 +328,29 @@ class _Lethal(Power):
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    ) -> Tuple[BaseStatblock, List[Feature]]:
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Poison)
         dmg = int(ceil(stats.cr))
         dmg_type = stats.secondary_damage_type
-        feature = Feature(
+
+        crit_lower = 19 if stats.cr <= 7 else 18
+
+        feature1 = Feature(
             name="Lethal",
-            description=f"{stats.selfref.capitalize()} deals an additional {dmg} {dmg_type} on attacks and scores a critical hit on an unmodified attack roll of 18-20",
+            description=f"The attack scores a critical hit on an unmodified attack roll of {crit_lower}-20",
             action=ActionType.Feature,
+            modifies_attack=True,
+            hidden=True,
         )
-        return stats, feature
+
+        feature2 = Feature(
+            name="Lethal",
+            action=ActionType.BonusAction,
+            recharge=5,
+            description=f"Immediately after hitting a creature with an attack, {stats.selfref} deals an additional {dmg} {dmg_type} to the target",
+        )
+        return stats, [feature1, feature2]
 
 
 class _MarkTheTarget(Power):
@@ -484,43 +497,6 @@ class _Reposition(Power):
         return stats, feature
 
 
-class _Telekinetic(Power):
-    """This creature chooses one creature they can see within 100 feet of them
-    weighing less than 400 pounds. The target must succeed on a Strength saving throw
-    (DC = 11 + 1/2 CR) or be pulled up to 80 feet directly toward this creature."""
-
-    def __init__(self):
-        super().__init__(name="Telekinetic", power_type=PowerType.Common)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        # this is great for aberrations, psychic focused creatures, and controllers
-        score = 0
-
-        if candidate.creature_type == CreatureType.Aberration:
-            score += MODERATE_AFFINITY
-        if candidate.secondary_damage_type == DamageType.Psychic:
-            score += MODERATE_AFFINITY
-        if candidate.role == MonsterRole.Controller:
-            score += HIGH_AFFINITY
-        return score if score > 0 else NO_AFFINITY
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        if stats.secondary_damage_type is None:
-            stats = stats.copy(secondary_damage_type=DamageType.Psychic)
-
-        dc = int(ceil(11 + stats.cr / 2.0))
-
-        feature = Feature(
-            name="Telekinetic Grasp",
-            description=f"{stats.selfref.capitalize()} chooses one creature they can see within 100 feet weighting less than 400 pounds. \
-                The target must succeed on a DC {dc} Strength saving throw or be pulled up to 80 feet directly toward {stats.selfref}",
-            action=ActionType.BonusAction,
-        )
-        return stats, feature
-
-
 class _Vanish(Power):
     """This creature can use the Disengage action, then can hide if they have cover"""
 
@@ -552,34 +528,95 @@ class _Vanish(Power):
         return stats, feature
 
 
-DelightsInSuffering: Power = _DelightsInSuffering()
-Lethal: Power = _Lethal()
-MarkTheTarget: Power = _MarkTheTarget()
-ParryAndRiposte: Power = _ParryAndRiposte()
-QuickRecovery: Power = _QuickRecovery()
-Reposition: Power = _Reposition()
-Telekinetic: Power = _Telekinetic()
-Vanish: Power = _Vanish()
+class _AdrenalineRush(Power):
+    def __init__(self):
+        super().__init__(name="Adrenaline Rush", power_type=PowerType.Common)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this is amazing for ambushers, bruisers, and melee fighters
+        score = 0
+        if candidate.primary_attribute in {Stats.DEX, Stats.STR}:
+            score += MODERATE_AFFINITY
+        if candidate.role in {MonsterRole.Ambusher, MonsterRole.Bruiser}:
+            score += MODERATE_AFFINITY
+        if candidate.creature_type == CreatureType.Humanoid:
+            score += LOW_AFFINITY
+        return score
+
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Adrenaline Rush",
+            uses=1,
+            action=ActionType.BonusAction,
+            description=f"{stats.selfref.capitalize()} takes another action this round. If it has any recharge abilities, it may roll to refresh these abilities.",
+        )
+
+        return stats, feature
+
+
+class _MagicResistance(Power):
+    def __init__(self):
+        super().__init__(name="Magic Resistance", power_type=PowerType.Common)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this is common amongst fiends, celestials, and fey and high-CR creatures
+        score = 0
+        if candidate.creature_type in {
+            CreatureType.Fey,
+            CreatureType.Fiend,
+            CreatureType.Celestial,
+        }:
+            score += MODERATE_AFFINITY
+        if candidate.role in {MonsterRole.Defender, MonsterRole.Leader}:
+            score += MODERATE_AFFINITY
+        if candidate.cr >= 7:
+            score += MODERATE_AFFINITY
+        return score
+
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Magic Resistance",
+            action=ActionType.Feature,
+            description=f"{stats.selfref.capitalize()} has advantage on saves against spells and other magical effects.",
+        )
+
+        return stats, feature
+
+
+AdrenalineRush: Power = _AdrenalineRush()
 DamagingAura: Power = _DamagingAura()
 Defender: Power = _Defender()
+DelightsInSuffering: Power = _DelightsInSuffering()
 Frenzy: Power = _Frenzy()
-NotDeadYet: Power = _NotDeadYet()
 GoesDownFighting: Power = _GoesDownFighting()
+Lethal: Power = _Lethal()
+MarkTheTarget: Power = _MarkTheTarget()
+MagicResistance: Power = _MagicResistance()
+NotDeadYet: Power = _NotDeadYet()
+ParryAndRiposte: Power = _ParryAndRiposte()
+QuickRecovery: Power = _QuickRecovery()
 RefuseToSurrender: Power = _RefuseToSurrender()
+Reposition: Power = _Reposition()
+Vanish: Power = _Vanish()
 
 CommonPowers: List[Power] = [
+    AdrenalineRush,
     DamagingAura,
     Defender,
-    Frenzy,
-    NotDeadYet,
-    GoesDownFighting,
-    RefuseToSurrender,
     DelightsInSuffering,
+    Frenzy,
+    GoesDownFighting,
     Lethal,
+    MagicResistance,
     MarkTheTarget,
+    NotDeadYet,
     ParryAndRiposte,
     QuickRecovery,
+    RefuseToSurrender,
     Reposition,
-    Telekinetic,
     Vanish,
 ]

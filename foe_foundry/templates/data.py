@@ -53,6 +53,7 @@ class MonsterTemplateData:
     benchmarks: List[Benchmark] | None = None
 
     attack_modifier_text: str = field(init=False)
+    attack_text: str = field(init=False)
 
     def __post_init__(self):
         self.attack_modifier_text = (
@@ -60,6 +61,7 @@ class MonsterTemplateData:
             if len(self.attack_modifiers) > 0
             else ""
         )
+        self.attack_text = self.attack.description + " " + self.attack_modifier_text
 
     def to_dict(self) -> dict:
         return asdict(self)

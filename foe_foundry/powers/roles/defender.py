@@ -1,11 +1,12 @@
 from typing import List, Tuple
 
-import numpy as np
+from numpy.random import Generator
 
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac import ArmorClass
+from ...creature_types import CreatureType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
@@ -45,9 +46,7 @@ class _StickWithMe(Power):
 
         return score if score > 0 else NO_AFFINITY
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Stick with Me!",
             description=f"On a hit, the target has disadvantage on attack rolls against any other creature until the end of its next turn.",
@@ -79,9 +78,7 @@ class _Blocker(Power):
 
         return score if score > 0 else NO_AFFINITY
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Athletics)
         stats = stats.copy(attributes=new_attrs)
 
@@ -94,7 +91,42 @@ class _Blocker(Power):
         return stats, feature
 
 
+class _SpellReflection(Power):
+    def __init__(self):
+        super().__init__(name="Blocker", power_type=PowerType.Role)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        score = 0
+        if candidate.role == MonsterRole.Default:
+            score += HIGH_AFFINITY
+
+        if candidate.creature_type in {
+            CreatureType.Aberration,
+            CreatureType.Dragon,
+            CreatureType.Fiend,
+            CreatureType.Monstrosity,
+        }:
+            score += MODERATE_AFFINITY
+
+        if candidate.attack_type.is_spell():
+            score += MODERATE_AFFINITY
+
+        return score if score > 0 else NO_AFFINITY
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Spell Reflection",
+            action=ActionType.Reaction,
+            description=f"If {stats.selfref} succeeds on a saving throw against a spell or if a spell attack misses it, then {stats.selfref} can choose another creature (including the spellcaster) it can see within 120 feet of it. \
+                The spell or attack targets the chosen creature instead.",
+        )
+
+        return stats, feature
+
+
 StickWithMe: Power = _StickWithMe()
+Blocker: Power = _Blocker()
+SpellReflection: Power = _SpellReflection()
 
 
-DefenderPowers: List[Power] = [StickWithMe]
+DefenderPowers: List[Power] = [StickWithMe, Blocker, SpellReflection]

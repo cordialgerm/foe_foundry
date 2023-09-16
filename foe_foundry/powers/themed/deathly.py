@@ -154,16 +154,35 @@ class _DrainingBlow(Power):
         return stats, feature
 
 
+class _ShadowStride(Power):
+    def __init__(self):
+        super().__init__(name="Shadow Stride", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate, undead_only=False)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Shadow Stride",
+            action=ActionType.BonusAction,
+            description=f"{stats.selfref.capitalize()} teleports from one source of shadows to another that it can see within 60 feet.",
+        )
+
+        return stats, feature
+
+
 AuraOfDoom: Power = _AuraOfDoom()
 AuraOfAnnihilation: Power = _AuraOfAnnihilation()
+DrainingBlow: Power = _DrainingBlow()
+ShadowStride: Power = _ShadowStride()
 UndyingMinions: Power = _UndyingMinions()
 WitheringBlow: Power = _WitheringBlow()
-DrainingBlow: Power = _DrainingBlow()
 
 DeathlyPowers: List[Power] = [
     AuraOfDoom,
     AuraOfAnnihilation,
+    DrainingBlow,
+    ShadowStride,
     UndyingMinions,
     WitheringBlow,
-    DrainingBlow,
 ]

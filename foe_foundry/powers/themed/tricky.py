@@ -196,11 +196,53 @@ class _SpectralDuplicate(Power):
         return stats, feature
 
 
+class _MirrorImage(Power):
+    def __init__(self):
+        super().__init__(name="Mirror Images", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_is_tricky_creature(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        ac = 10 + stats.attributes.DEX
+
+        feature = Feature(
+            name="Mirror Images",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} magically creates three illusory duplicates of itself as in the *Mirror Image* spell. The duplicates have AC {ac}",
+        )
+        return stats, feature
+
+
+class _Hypnosis(Power):
+    def __init__(self):
+        super().__init__(name="Hypnotic Pattern", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_is_tricky_creature(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        dc = stats.difficulty_class_easy
+
+        feature = Feature(
+            name="Hypnotic Pattern",
+            action=ActionType.Action,
+            uses=1,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} magically creates the effect of the *Hypnotic Pattern* spell, using a DC of {dc}",
+        )
+
+        return stats, feature
+
+
 NimbleReaction: Power = _NimbleReaction()
 Impersonation: Power = _Impersonation()
 Projection: Power = _Projection()
 EvilDoppleganger: Power = _EvilDoppelganger()
 SpectralDuplicate: Power = _SpectralDuplicate()
+MirrorImage: Power = _MirrorImage()
+Hypnosis: Power = _Hypnosis()
 
 TrickyPowers: List[Power] = [
     NimbleReaction,
@@ -208,4 +250,6 @@ TrickyPowers: List[Power] = [
     Projection,
     EvilDoppleganger,
     SpectralDuplicate,
+    MirrorImage,
+    Hypnosis,
 ]

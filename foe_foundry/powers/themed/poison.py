@@ -72,18 +72,25 @@ class _VirulentPoison(Power):
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    ) -> Tuple[BaseStatblock, List[Feature]]:
         stats = stats.copy(secondary_damage_type=DamageType.Poison)
 
-        feature = Feature(
+        feature1 = Feature(
             name="Virulent Poison",
             action=ActionType.Feature,
             description=f"{stats.selfref.capitalize()}'s attacks that deal poison damage ignore a target's resistance to poison damage. \
-                If a target has immunity to poison damage, it instead has resistance to poison damage against this creature's attacks. \
-                Additionally, the first time each turn that this creature deals poison daamge to a target, that target is poisoned until the end of their next turn",
+                If a target has immunity to poison damage, it instead has resistance to poison damage against this creature's attacks.",
         )
 
-        return stats, feature
+        feature2 = Feature(
+            name="Virulent Poison",
+            action=ActionType.Feature,
+            hidden=True,
+            modifies_attack=True,
+            description="On a hit, the target is poisoned until the end of their next turn.",
+        )
+
+        return stats, [feature1, feature2]
 
 
 PoisonousDemise: Power = _PoisonousDemise()

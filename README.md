@@ -132,9 +132,6 @@
 
 - **Tentacle Slam** - https://www.dndbeyond.com/monsters/16973-otyugh
 
-### Deathly
-
-- **Shadow Stride** - shadow teleportation like a shadow monk
 
 ### Psionic
 
@@ -153,26 +150,10 @@ Gore - https://www.dndbeyond.com/monsters/2560728-aurochs - Recharge 5 - move up
 - Wild Cleave (Recharge 5) - attack every creature being surrounded, on a hit the target must make a strength save or fall prone
 - Flurry of Blows (Recharge 5) - make max(3, 2x) number of attacks
 
-### Defender
-
-- **Spell Reflection** - https://www.dndbeyond.com/monsters/2560878-morkoth
-
-### Tricky
-
-- **Phantasms** - https://www.dndbeyond.com/monsters/16826-cloaker
-- **Hypnosis** - https://www.dndbeyond.com/monsters/2560878-morkoth - hypnotic pattern
-- **Bend Space** - Bend Space. When the seer would be hit by an attack roll, it teleports, along with any equipment it is wearing or carrying, exchanging positions with another star spawn it can see within 60 feet of it. The other star spawn is hit by the attack instead.
-
 ### Common
 
-- Magic Resistance
-- Action Surge
 - Regeneration
 
-### Teleportation Powers
-
-- Vortex Warp
-- Scatter
 
 ### Eye Powers
 

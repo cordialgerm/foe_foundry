@@ -12,57 +12,22 @@
 {% macro property_block(name,text) -%}
 {% if text|length > 0 %}
 <property-block>
-    <h4>{{name}}.</h4>
-    <p>{{text}}.</p>
+    <h4>{{name | fix_punctuation}}</h4>
+    <p>{{text | fix_punctuation}}</p>
 </property-block>
 {% endif %}
 {%- endmacro %}
 
-{% macro attack_block(attack, additional_text) -%}
+{% macro attack_block(attack_name, attack_text) -%}
 
-{% if attack.is_melee -%}
-{{melee_attack_block(attack, additional_text)}}
-{% else %}
-{{ranged_attack_block(attack, additional_text)}}
-{%- endif %}
+<property-block>
+    <h4>{{attack_name | fix_punctuation}}</h4>
+    {% markdown %}
+    {{attack_text | fix_punctuation}}
+    {% endmarkdown %}
+</property-block>
 
 {%- endmacro %}
-
-{% macro melee_attack_block(attack, additional_text) %}
-
-<property-block>
-    <h4>{{attack.name}}.</h4>
-    <p>
-        <i>Melee Weapon Attack:</i> +{{attack.hit}} to hit, reach {{attack.reach}} ft., one target.
-        <i>Hit:</i> {{attack.damage.description}}
-        {% if attack.additional_damage %}
-        and {{attack.additional_damage.description }}.
-        {% else -%}
-        .
-        {%- endif %}
-        {{additional_text}}
-    </p>
-</property-block>
-
-{% endmacro %}
-
-{% macro ranged_attack_block(attack, additional_text) %}
-
-<property-block>
-    <h4>{{attack.name}}.</h4>
-    <p>
-        <i>Ranged Weapon Attack:</i> +{{attack.hit}} to hit, range {{attack.range}} ft., one target.
-        <i>Hit:</i> {{attack.damage.description}}
-        {% if attack.additional_damage %}
-        and {{attack.additional_damage.description }}.
-        {% else %}
-        .
-        {% endif %}
-        {{additional_text}}
-    </p>
-</property-block>
-
-{% endmacro %}
 
 {% macro features_block(features, heading='') -%}
 
@@ -73,7 +38,9 @@
 {% for feature in features -%}
 <property-block>
     <h4>{{feature.title}}.</h4>
-    <p>{{feature.description}}.</p>
+    {% markdown %}
+    {{feature.description | fix_punctuation}}
+    {% endmarkdown %}
 </property-block>
 {%- endfor %}
 

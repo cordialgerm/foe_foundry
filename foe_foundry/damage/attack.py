@@ -53,10 +53,18 @@ class Attack:
         self.is_melee = self.attack_type in {AttackType.MeleeNatural, AttackType.MeleeWeapon}
 
         if self.is_melee:
-            description = f"***{self.name}***. *Melee Weapon Attack*: +{self.hit} to hit, reach {self.reach}ft., one target. *Hit* {self.damage.description}"
+            attack = "Melee Weapon Attack"
+            attack_range = f"reach {self.reach}ft."
+        elif self.attack_type == AttackType.RangedWeapon:
+            attack = "Ranged Weapon Attack"
+            attack_range = f"range {self.range}ft."
+        elif self.attack_type == AttackType.RangedSpell:
+            attack = "Ranged Spell Attack"
+            attack_range = f"range {self.range}ft."
         else:
-            description = f"***{self.name}***. *Ranged Weapon Attack*: +{self.hit} to hit, range {self.range}ft., one target. *Hit* {self.damage.description}"
+            raise NotImplementedError()
 
+        description = f"*{attack}*: +{self.hit} to hit, {attack_range}, one target. *Hit* {self.damage.description}"
         if self.additional_damage is not None:
             description += " and " + self.additional_damage.description
         else:
