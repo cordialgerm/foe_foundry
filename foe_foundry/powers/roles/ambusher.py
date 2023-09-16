@@ -94,36 +94,6 @@ class _ShadowyMovement(Power):
         return stats, feature
 
 
-class _CunningAction(Power):
-    def __init__(self):
-        super().__init__(name="Elusive", power_type=PowerType.Role)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.role == MonsterRole.Ambusher:
-            score += HIGH_AFFINITY
-
-        if candidate.primary_attribute == Stats.DEX:
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Stealth):
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        feature = Feature(
-            name="Cunning Action",
-            description="Dash, Disengage, or Hide",
-            action=ActionType.BonusAction,
-        )
-
-        return stats, feature
-
-
 class _DeadlyAmbusher(Power):
     def __init__(self):
         super().__init__(name="Deadly Ambusher", power_type=PowerType.Role)
@@ -159,55 +129,12 @@ class _DeadlyAmbusher(Power):
         return stats, feature
 
 
-class _SneakyStrike(Power):
-    def __init__(self):
-        super().__init__(name="Sneaky Strike", power_type=PowerType.Role)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.role == MonsterRole.Ambusher:
-            score += MODERATE_AFFINITY
-
-        if candidate.attack_type.is_ranged():
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Stealth):
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        if stats.cr <= 1:
-            dmg = 2
-        elif stats.cr <= 3:
-            dmg = 2 * stats.cr
-        elif stats.cr == 4:
-            dmg = 6
-        else:
-            dmg = stats.cr + 1
-
-        feature = Feature(
-            name="Sneaky Strike",
-            description=f"{stats.roleref.capitalize()} deals an additional {dmg} immediately after hitting a target if the attack was made with advantage.",
-            action=ActionType.BonusAction,
-        )
-
-        return stats, feature
-
-
 DistractingAttack: Power = _DistractingAttack()
 ShadowyMovement: Power = _ShadowyMovement()
-CunningAction: Power = _CunningAction()
 DeadlyAmbusher: Power = _DeadlyAmbusher()
-SneakyStrike: Power = _SneakyStrike()
 
 AmbusherPowers: List[Power] = [
     DistractingAttack,
     ShadowyMovement,
-    CunningAction,
     DeadlyAmbusher,
-    SneakyStrike,
 ]

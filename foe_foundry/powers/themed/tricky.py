@@ -236,20 +236,41 @@ class _Hypnosis(Power):
         return stats, feature
 
 
-NimbleReaction: Power = _NimbleReaction()
-Impersonation: Power = _Impersonation()
-Projection: Power = _Projection()
+class _ReverseFortune(Power):
+    def __init__(self):
+        super().__init__(name="Reverse Fortune", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_is_tricky_creature(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Reverse Fortune",
+            action=ActionType.Reaction,
+            recharge=4,
+            description=f"When {stats.selfref} is hit by an attack, {stats.selfref} magically reverses the fortune of the attack and forces it to miss. \
+                Until the end of its next turn, {stats.selfref} gains advantage on the next attack it makes against the attacker.",
+        )
+
+        return stats, feature
+
+
 EvilDoppleganger: Power = _EvilDoppelganger()
-SpectralDuplicate: Power = _SpectralDuplicate()
-MirrorImage: Power = _MirrorImage()
 Hypnosis: Power = _Hypnosis()
+Impersonation: Power = _Impersonation()
+MirrorImage: Power = _MirrorImage()
+NimbleReaction: Power = _NimbleReaction()
+Projection: Power = _Projection()
+ReverseFortune: Power = _ReverseFortune()
+SpectralDuplicate: Power = _SpectralDuplicate()
 
 TrickyPowers: List[Power] = [
-    NimbleReaction,
-    Impersonation,
-    Projection,
     EvilDoppleganger,
-    SpectralDuplicate,
-    MirrorImage,
     Hypnosis,
+    Impersonation,
+    MirrorImage,
+    NimbleReaction,
+    Projection,
+    ReverseFortune,
+    SpectralDuplicate,
 ]
