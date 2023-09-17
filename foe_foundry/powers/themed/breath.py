@@ -65,7 +65,7 @@ class _BreathAttack(Power):
 
         feature = Feature(
             name=f"{damage_type.capitalize()} Breath",
-            action=ActionType.Reaction,
+            action=ActionType.Action,
             recharge=5,
             description=f"{stats.selfref.capitalize()} breathes {damage_type} in a {template}. \
                 Each creature in the area must make a DC {dc} {save_type} save. \

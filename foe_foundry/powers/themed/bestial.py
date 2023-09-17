@@ -91,7 +91,7 @@ class _FeralRetaliation(Power):
 
         feature = Feature(
             name="Feral Retaliation",
-            description=f"When {stats.selfref} is hit by an attack, they can make an opportunity attack against the attacker. If {stats.selfref} is below {hp} then the attack is made with advantage.",
+            description=f"When {stats.selfref} is hit by an attack, they can make an opportunity attack against the attacker. If {stats.selfref} is below {hp} hp then the attack is made with advantage.",
             action=ActionType.Reaction,
         )
 

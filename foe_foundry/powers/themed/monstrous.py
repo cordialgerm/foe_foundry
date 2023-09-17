@@ -30,9 +30,12 @@ def _score_could_be_monstrous(
     candidate: BaseStatblock,
     size_boost: bool = True,
     additional_creature_types: Dict[CreatureType, float] | None = None,
+    require_living: bool = True,
 ) -> float:
-    score = 0
+    if require_living and not candidate.creature_type.is_living:
+        return 0
 
+    score = 0
     creature_types = {
         CreatureType.Monstrosity: HIGH_AFFINITY,
         CreatureType.Beast: HIGH_AFFINITY,
@@ -85,7 +88,7 @@ class _Constriction(Power):
             name="Constrict",
             action=ActionType.Action,
             replaces_multiattack=1,
-            description=f"{stats.selfref} chooses a target it can see within {reach} feet. The target must make a DC {dc} Strength saving throw or become Grappled (escape DC {dc}). \
+            description=f"{stats.selfref.capitalize()} chooses a target it can see within {reach} feet. The target must make a DC {dc} Strength saving throw or become Grappled (escape DC {dc}). \
                 While grappled in this way, the target is also Restrained and takes {dmg} ongoing bludgeoning damage at the start of each of its turns.",
         )
         return stats, feature
@@ -119,7 +122,7 @@ class _Swallow(Power):
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} attempts to swallow one target within {reach} ft. \
                 The target must make a DC {dc} Dexterity saving throw. On a failure, it is swallowed by {stats.selfref}. \
-                A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside {stats.selfref}, and it takes {dmg} ongoing acid damage at the start of each of its turns.\n\n\
+                A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside {stats.selfref}, and it takes {dmg} ongoing acid damage at the start of each of its turns.  \
                 If {stats.selfref} takes {threshold} damage or more on a single turn from a creature inside it, {stats.selfref} must make a DC {regurgitate_dc} \
                 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of {stats.selfref}. \
                 If {stats.selfref} dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.",
@@ -216,7 +219,7 @@ class _LingeringWound(Power):
             action=ActionType.BonusAction,
             recharge=6,
             description=f"Immediately after hitting a creature, {stats.selfref} inflicts that creature with a lingering wound. \
-                The wounded creature takes {dmg} {dmg_type} at the start of each of its turns. \
+                The wounded creature takes {dmg} {dmg_type} damage at the start of each of its turns. \
                 The target may attempt a DC {dc} Constitution save at the end of each of its turns to end the effect. \
                 A creature may also use an action to perform a DC {dc} Medicine check to end the lingering wound.",
         )

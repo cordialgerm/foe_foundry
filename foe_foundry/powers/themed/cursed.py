@@ -2,6 +2,7 @@ from math import ceil, floor
 from typing import List, Tuple
 
 import numpy as np
+from num2words import num2words
 from numpy.random import Generator
 
 from foe_foundry.features import Feature
@@ -37,7 +38,10 @@ def _score_cursed(candidate: BaseStatblock) -> float:
     score += creature_types.get(candidate.creature_type, 0)
 
     if candidate.secondary_damage_type == DamageType.Necrotic:
-        score += HIGH_AFFINITY
+        score += MODERATE_AFFINITY
+
+    if candidate.role in {MonsterRole.Leader, MonsterRole.Controller}:
+        score += MODERATE_AFFINITY
 
     return score if score > 0 else NO_AFFINITY
 
@@ -173,9 +177,65 @@ class _CursedWound(Power):
         return stats, feature
 
 
-DevilsSight: Power = _DevilsSight()
-CursedWound: Power = _CursedWound()
-HorriblyDisfigured: Power = _HorriblyDisfigured()
-AuraOfDespair: Power = _AuraOfDespair()
+class _RejectDivinity(Power):
+    def __init__(self):
+        super().__init__(name="Reject Divinity", power_type=PowerType.Theme)
 
-CursedPowers: List[Power] = [DevilsSight, CursedWound, HorriblyDisfigured, AuraOfDespair]
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_cursed(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = _as_cursed(stats)
+        distance = 30 if stats.cr <= 7 else 45
+        stats = _as_cursed(stats)
+        dmg = int(max(3, ceil(1.5 * stats.cr)))
+
+        feature = Feature(
+            name="Reject Divinity",
+            action=ActionType.Reaction,
+            description=f"When a creature {stats.selfref} can see within {distance} feet regains hit points, \
+                {stats.selfref} reduces the number of hit points gained to 0 \
+                and {stats.selfref} deals {dmg} necrotic damage to the creature.",
+        )
+
+        return stats, feature
+
+
+class _BestowCurse(Power):
+    def __init__(self):
+        super().__init__(name="Bestow Curse", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_cursed(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        level = num2words(5 if stats.cr >= 7 else 3, ordinal=True)
+        dc = stats.difficulty_class_easy
+        stats = _as_cursed(stats)
+        feature = Feature(
+            name="Bestow Curse",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} magically curses a creature that can hear it within 30 feet. \
+                The creature must succeed on a DC {dc} Wisdom save or suffer the effects of the *Bestow Curse* spell as if it were cast at {level} level",
+        )
+        return stats, feature
+
+
+AuraOfDespair: Power = _AuraOfDespair()
+BestowCurse: Power = _BestowCurse()
+CursedWound: Power = _CursedWound()
+DevilsSight: Power = _DevilsSight()
+HorriblyDisfigured: Power = _HorriblyDisfigured()
+RejectDivinity: Power = _RejectDivinity()
+
+
+CursedPowers: List[Power] = [
+    AuraOfDespair,
+    BestowCurse,
+    CursedWound,
+    DevilsSight,
+    HorriblyDisfigured,
+    RejectDivinity,
+]

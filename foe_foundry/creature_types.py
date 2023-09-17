@@ -16,3 +16,17 @@ class CreatureType(StrEnum):
     Ooze = auto()
     Plant = auto()
     Undead = auto()
+
+    @property
+    def is_living(self) -> bool:
+        return self in {
+            CreatureType.Aberration,
+            CreatureType.Beast,
+            CreatureType.Dragon,
+            CreatureType.Fey,
+            CreatureType.Giant,
+            CreatureType.Humanoid,
+            CreatureType.Monstrosity,
+            CreatureType.Ooze,
+            CreatureType.Plant,
+        }

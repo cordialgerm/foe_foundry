@@ -304,9 +304,10 @@ class _DelightsInSuffering(Power):
         dmg = int(ceil(stats.cr))
         feature = Feature(
             name="Delights in Suffering",
-            description=f"The attack is made at advantage and deals an additional {dmg} {damage_type} damage if the target is at or below half-health (included in the attack).",
+            description=f"The attack is made at advantage and deals an additional {dmg} {damage_type} damage if the target is at or below half-health.",
             action=ActionType.Feature,
             modifies_attack=True,
+            hidden=True,
         )
         return stats, feature
 
@@ -348,7 +349,7 @@ class _Lethal(Power):
             name="Lethal",
             action=ActionType.BonusAction,
             recharge=5,
-            description=f"Immediately after hitting a creature with an attack, {stats.selfref} deals an additional {dmg} {dmg_type} to the target",
+            description=f"Immediately after hitting a creature with an attack, {stats.selfref} deals an additional {dmg} {dmg_type} damage to the target",
         )
         return stats, [feature1, feature2]
 

@@ -11,6 +11,7 @@ from ..damage import Attack, DamageType
 from ..features import ActionType, Feature
 from ..skills import Skills
 from ..statblocks import Statblock
+from .utilities import fix_punctuation
 
 
 @dataclass
@@ -61,7 +62,14 @@ class MonsterTemplateData:
             if len(self.attack_modifiers) > 0
             else ""
         )
-        self.attack_text = self.attack.description + " " + self.attack_modifier_text
+        if self.attack_modifier_text != "":
+            self.attack_text = (
+                fix_punctuation(self.attack.description)
+                + " "
+                + fix_punctuation(self.attack_modifier_text)
+            )
+        else:
+            self.attack_text = fix_punctuation(self.attack.description)
 
     def to_dict(self) -> dict:
         return asdict(self)

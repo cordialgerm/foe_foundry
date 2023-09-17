@@ -218,10 +218,36 @@ class _DevourSoul(Power):
         return stats, feature
 
 
+class _DrainStrength(Power):
+    def __init__(self):
+        super().__init__(name="Drain Strength", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate, undead_only=True)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        dc = stats.difficulty_class_easy
+
+        dmg = int(ceil(stats.attack.average_damage))
+
+        feature = Feature(
+            name="Drain Strength",
+            action=ActionType.Action,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} attempts to magically drain the strength from a creature it can see within 5 feet. \
+                The creature must make a DC {dc} Constitution save. On a failure, the creature takes {dmg} necrotic damage \
+                and its Strength score is reduced by 1d4. The creature dies if this reduces its Strength to 0. \
+                Otherwise, the reduction lasts until the target finishes a short or long rest. It can also be removed by a *Greater Restoration* or similar spell.",
+        )
+
+        return stats, feature
+
+
 AuraOfDoom: Power = _AuraOfDoom()
 AuraOfAnnihilation: Power = _AuraOfAnnihilation()
 DevourSoul: Power = _DevourSoul()
 DrainingBlow: Power = _DrainingBlow()
+DrainStrength: Power = _DrainStrength()
 FleshPuppets: Power = _FleshPuppets()
 ShadowStride: Power = _ShadowStride()
 UndyingMinions: Power = _UndyingMinions()
@@ -232,6 +258,7 @@ DeathlyPowers: List[Power] = [
     AuraOfAnnihilation,
     DevourSoul,
     DrainingBlow,
+    DrainStrength,
     FleshPuppets,
     ShadowStride,
     UndyingMinions,

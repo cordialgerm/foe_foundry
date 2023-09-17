@@ -79,18 +79,11 @@ class _SneakyStrike(Power):
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
-        if stats.cr <= 1:
-            dmg = 2
-        elif stats.cr <= 3:
-            dmg = 2 * stats.cr
-        elif stats.cr == 4:
-            dmg = 6
-        else:
-            dmg = stats.cr + 1
+        dmg = int(floor(max(2 * stats.cr, 2 + stats.cr)))
 
         feature = Feature(
             name="Sneaky Strike",
-            description=f"{stats.roleref.capitalize()} deals an additional {dmg} immediately after hitting a target if the attack was made with advantage.",
+            description=f"{stats.roleref.capitalize()} deals an additional {dmg} damage immediately after hitting a target if the attack was made with advantage.",
             action=ActionType.BonusAction,
         )
 

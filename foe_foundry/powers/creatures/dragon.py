@@ -44,7 +44,7 @@ class _DragonsGaze(Power):
             action=ActionType.BonusAction,
             recharge=6,
             description=f"One creature within 60 feet of {stats.selfref} must make a DC {dc} Wisdom save or be frightened of {stats.selfref}. \
-                While frightened in this way, each time the target takes damage, they take an additional {dmg} damage. Save ends at end of turn.",
+                While frightened in this way, each time the target takes damage, they take an additional {dmg} psychic damage. Save ends at end of turn.",
         )
 
         return stats, feature
