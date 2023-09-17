@@ -25,5 +25,17 @@ class DamageType(StrEnum):
     def All() -> List[DamageType]:
         return [cast(DamageType, s) for s in DamageType._member_map_.values()]
 
+    @property
     def is_physical(self) -> bool:
         return self in {DamageType.Bludgeoning, DamageType.Piercing, DamageType.Slashing}
+
+    @property
+    def is_elemental(self) -> bool:
+        return self in {
+            DamageType.Acid,
+            DamageType.Fire,
+            DamageType.Cold,
+            DamageType.Lightning,
+            DamageType.Thunder,
+            DamageType.Poison,
+        }

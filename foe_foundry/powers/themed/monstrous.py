@@ -208,7 +208,7 @@ class _LingeringWound(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats)
-        if stats.primary_damage_type.is_physical():
+        if stats.primary_damage_type.is_physical:
             stats = stats.copy(primary_damage_type=DamageType.Piercing)
 
         dc = stats.difficulty_class_easy
