@@ -33,14 +33,12 @@ class _CelestialTemplate(CreatureTypeTemplate):
 
         # Celestials often have resistance to radiant damage,
         # and they might also have resistance to damage from nonmagical attacks
-        damage_resistances = stats.damage_resistances.copy()
-        damage_immunities = stats.damage_immunities.copy()
         if stats.cr <= 7:
-            nonmagical_resistance = False
-            damage_resistances |= {DamageType.Radiant}
+            stats = stats.grant_resistance_or_immunity(resistances={DamageType.Radiant})
         else:
-            damage_immunities |= {DamageType.Radiant}
-            nonmagical_resistance = True
+            stats = stats.grant_resistance_or_immunity(
+                immunities={DamageType.Radiant}, nonmagical_resistance=True
+            )
 
         # The mightiest celestials possess truesight with a range of 120 feet,
         new_senses = stats.senses.copy(darkvision=120)
@@ -55,13 +53,14 @@ class _CelestialTemplate(CreatureTypeTemplate):
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=rng)
 
         # celestials may have immunity to the charmed, exhaustion, and frightened conditions.
-        condition_immunities = stats.condition_immunities.copy()
         if stats.cr >= 4:
-            condition_immunities |= {
-                Condition.Charmed,
-                Condition.Exhaustion,
-                Condition.Frightened,
-            }
+            stats = stats.grant_resistance_or_immunity(
+                conditions={
+                    Condition.Charmed,
+                    Condition.Exhaustion,
+                    Condition.Frightened,
+                }
+            )
 
         # celestials with higher CR should have proficiency in WIS and CHA saves
         if stats.cr >= 4:
@@ -87,10 +86,6 @@ class _CelestialTemplate(CreatureTypeTemplate):
             primary_damage_type=primary_damage_type,
             secondary_damage_type=secondary_damage_type,
             attack_type=attack_type,
-            damage_resistances=damage_resistances,
-            damage_immunities=damage_immunities,
-            nonmagical_resistance=nonmagical_resistance,
-            condition_immunities=condition_immunities,
         )
 
 

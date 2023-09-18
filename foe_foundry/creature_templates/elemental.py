@@ -44,23 +44,21 @@ class _ElementalTemplate(CreatureTypeTemplate):
 
         attack_type = AttackType.MeleeNatural
 
-        damage_resistances = stats.damage_resistances.copy()
-        damage_immunities = stats.damage_immunities.copy()
-        if stats.cr <= 7:
-            damage_resistances |= {elemental_type}
-            damage_immunities |= {DamageType.Poison}
-        else:
-            damage_immunities |= {elemental_type, DamageType.Poison}
-
-        condition_immunities = {
-            Condition.Poisoned,
-            Condition.Exhaustion,
-            Condition.Grappled,
-            Condition.Paralyzed,
-            Condition.Petrified,
-            Condition.Prone,
-            Condition.Restrained,
-        }
+        stats = stats.grant_resistance_or_immunity(
+            resistances={elemental_type},
+            immunities={DamageType.Poison} | ({elemental_type} if stats.cr >= 7 else set()),
+            nonmagical_resistance=True,
+            upgrade_resistance_to_immunity_if_present=True,
+            conditions={
+                Condition.Poisoned,
+                Condition.Exhaustion,
+                Condition.Grappled,
+                Condition.Paralyzed,
+                Condition.Petrified,
+                Condition.Prone,
+                Condition.Restrained,
+            },
+        )
 
         new_senses = stats.senses.copy(darkvision=60)
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Medium, rng=rng)
@@ -78,10 +76,6 @@ class _ElementalTemplate(CreatureTypeTemplate):
             primary_damage_type=elemental_type,
             secondary_damage_type=elemental_type,
             attack_type=attack_type,
-            damage_resistances=damage_resistances,
-            damage_immunities=damage_immunities,
-            nonmagical_resistance=True,
-            condition_immunities=condition_immunities,
         )
 
 

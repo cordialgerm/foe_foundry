@@ -192,3 +192,52 @@ class BaseStatblock:
 
         new_attributes = self.attributes.copy(**new_vals)
         return self.copy(attributes=new_attributes)
+
+    def grant_resistance_or_immunity(
+        self,
+        resistances: Set[DamageType] | None = None,
+        immunities: Set[DamageType] | None = None,
+        conditions: Set[Condition] | None = None,
+        nonmagical_resistance: bool | None = None,
+        nonmagical_immunity: bool | None = None,
+        upgrade_resistance_to_immunity_if_present: bool = False,
+    ) -> BaseStatblock:
+        new_resistances = self.damage_resistances.copy()
+        new_immunities = self.damage_immunities.copy()
+
+        if resistances is not None:
+            for damage in resistances:
+                if damage in new_resistances and upgrade_resistance_to_immunity_if_present:
+                    new_resistances.remove(damage)
+                    new_immunities.add(damage)
+                else:
+                    new_resistances.add(damage)
+
+        if immunities is not None:
+            for damage in immunities:
+                new_immunities.add(damage)
+                if damage in new_resistances:
+                    new_resistances.remove(damage)
+
+        new_nonmagical_immunity = nonmagical_immunity or self.nonmagical_immunity
+        new_nonmagical_resistance = nonmagical_resistance or self.nonmagical_resistance
+
+        if (
+            self.nonmagical_resistance
+            and new_nonmagical_immunity
+            and upgrade_resistance_to_immunity_if_present
+        ):
+            new_nonmagical_immunity = True
+
+        if new_nonmagical_immunity:
+            new_nonmagical_resistance = False
+
+        new_conditions = self.condition_immunities.copy() | (conditions or set())
+
+        return self.copy(
+            damage_resistances=new_resistances,
+            damage_immunities=new_immunities,
+            condition_immunities=new_conditions,
+            nonmagical_immunity=new_nonmagical_immunity,
+            nonmagical_resistance=new_nonmagical_resistance,
+        )

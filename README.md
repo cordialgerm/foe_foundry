@@ -59,11 +59,6 @@ Selection engine should take parameters like:
   - Energy Wall
   - Chain Spell
   - Disintigration Beam
-- Runic
-  - Enlarge
-  - Reduce
-  - Tricky illusion cloud rune
-  - Fire rune restrain
 - Eye Beams: anti magic eye, anti healing eye, vulnerability eye, random eye beams
 - Weapon Powers
 

@@ -1,17 +1,14 @@
 from math import ceil, floor
 from typing import List, Tuple
 
-import numpy as np
 from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, DamageType, conditions
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import Power, PowerType
@@ -92,6 +89,8 @@ class _Boulder(Power):
         else:
             dmg = int(ceil(1.25 * stats.attack.average_damage))
 
+        dmg = DieFormula.target_value(dmg, suggested_die=stats.size.hit_die())
+
         if stats.cr >= 12:
             distance = 60
             radius = 20
@@ -111,14 +110,185 @@ class _Boulder(Power):
             recharge=4,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} tosses a boulder at a point it can see within {distance} ft. Each creature within a {radius} ft radius must make a DC {dc} Dexterity saving throw. \
-                On a failure, the creature takes {dmg} bludgeoning damage and is knocked prone. On a success, the creature takes half damage and is not knocked prone.",
+                On a failure, the creature takes {dmg.description} bludgeoning damage and is knocked prone. On a success, the creature takes half damage and is not knocked prone.",
         )
 
         return stats, feature
 
 
-ForcefulBlow: Power = _ForcefulBlow()
-ShoveAllies: Power = _ShoveAllies()
-Boulder: Power = _Boulder()
+class _CloudRune(Power):
+    def __init__(self):
+        super().__init__(name="Cloud Rune", power_type=PowerType.Creature)
 
-GiantPowers: List[Power] = [ForcefulBlow, ShoveAllies, Boulder]
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = stats.grant_resistance_or_immunity(
+            resistances={DamageType.Lightning}, upgrade_resistance_to_immunity_if_present=True
+        )
+
+        new_attributes = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
+        stats = stats.copy(
+            secondary_damage_type=DamageType.Lightning, attributes=new_attributes
+        )
+
+        feature = Feature(
+            name="Cloud Rune",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"When {stats.selfref} or a creature it can see is hit by an attack roll, {stats.selfref} can invoke a Cloud Rune \
+                and choose a different creature within 30 feet of {stats.selfref}. The chosen creature becomes the target of the attack. \
+                This magic can transfer the attack's effect regardless of the attack's range.",
+        )
+
+        return stats, feature
+
+
+class _FireRune(Power):
+    def __init__(self):
+        super().__init__(name="Fire Rune", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = stats.grant_resistance_or_immunity(
+            resistances={DamageType.Fire}, upgrade_resistance_to_immunity_if_present=True
+        )
+        stats = stats.copy(secondary_damage_type=DamageType.Fire)
+        dmg = DieFormula.target_value(
+            target=0.33 * stats.attack.average_damage, suggested_die=Die.d6
+        )
+        burning = conditions.Burning(dmg)
+        dc = stats.difficulty_class_easy
+
+        feature = Feature(
+            name="Fire Rune",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"Immediately after hitting a creature with an attack, {stats.selfref} invokes the fire run. \
+                The target takes an extra {dmg.description} fire damage and must make a DC {dc} Strength save. On a failure, the creature is **Restrained** (save ends at end of turn). \
+                While restrained in this way, the creature is {burning.caption}. {burning.description_3rd}",
+        )
+
+        return stats, feature
+
+
+class _FrostRune(Power):
+    def __init__(self):
+        super().__init__(name="Frost Rune", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = stats.grant_resistance_or_immunity(
+            resistances={DamageType.Cold}, upgrade_resistance_to_immunity_if_present=True
+        )
+        stats = stats.copy(secondary_damage_type=DamageType.Cold)
+
+        dc = stats.difficulty_class_easy
+        dmg = int(ceil(0.5 * stats.attack.average_damage))
+        frozen = conditions.Frozen(dc=dc)
+
+        feature = Feature(
+            name="Frost Rune",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"Immediately after hitting a creature with an attack, {stats.selfref} invokes the frost run. \
+                The target takes an extra {dmg} cold damage and must make a DC {dc} Constitution save or become {frozen.caption}. \
+                {frozen.description_3rd}",
+        )
+
+        return stats, feature
+
+
+class _StoneRune(Power):
+    def __init__(self):
+        super().__init__(name="Stone Rune", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        dc = stats.difficulty_class_easy
+        feature = Feature(
+            name="Stone Rune",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"When a creature ends its turn within 30 feet of {stats.selfref}, {stats.selfref} can activate the stone rune. \
+                The creature must make a DC {dc} Wisdom save. On a failure, the creature is **Charmed** for 1 minute (save ends at end of turn). \
+                While charmed in this way, the creature is **Incapacitated** in a dreamy stupor.",
+        )
+
+        return stats, feature
+
+
+class _HillRune(Power):
+    def __init__(self):
+        super().__init__(name="Hill Rune", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = stats.grant_resistance_or_immunity(
+            resistances={DamageType.Poison}, upgrade_resistance_to_immunity_if_present=True
+        )
+
+        feature = Feature(
+            name="Stone Rune",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} invokes the hill rune and gains resistance to bludgeoning, piercing, and slashing damage for 1 minute",
+        )
+
+        return stats, feature
+
+
+class _StormRune(Power):
+    def __init__(self):
+        super().__init__(name="Storm Rune", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = stats.grant_resistance_or_immunity(
+            resistances={DamageType.Lightning}, upgrade_resistance_to_immunity_if_present=True
+        )
+        stats = stats.copy(secondary_damage_type=DamageType.Lightning)
+
+        feature = Feature(
+            name="Storm Rune",
+            action=ActionType.Reaction,
+            uses=3,
+            description=f"Whenever {stats.selfref} or another creature makes an attack roll, saving throw, or ability check, {stats.selfref} can force the roll to have advantage or disadvantage.",
+        )
+
+        return stats, feature
+
+
+Boulder: Power = _Boulder()
+CloudRune: Power = _CloudRune()
+FireRune: Power = _FireRune()
+FrostRune: Power = _FrostRune()
+HillRune: Power = _HillRune()
+ForcefulBlow: Power = _ForcefulBlow()
+StoneRune: Power = _StoneRune()
+StormRune: Power = _StormRune()
+ShoveAllies: Power = _ShoveAllies()
+
+
+GiantPowers: List[Power] = [
+    Boulder,
+    CloudRune,
+    FireRune,
+    FrostRune,
+    ForcefulBlow,
+    HillRune,
+    StoneRune,
+    StormRune,
+    ShoveAllies,
+]

@@ -39,18 +39,20 @@ class _ConstructTemplate(CreatureTypeTemplate):
         # Damage Immunities poison, psychic
         # Condition Immunities blinded, charmed, deafened,
         # exhaustion, frightened, paralyzed, petrified, poisoned
-        damage_immunities = stats.damage_immunities.copy() | {
-            DamageType.Poison,
-            DamageType.Psychic,
-        }
-        condition_immunities = stats.condition_immunities.copy() | {
-            Condition.Exhaustion,
-            Condition.Frightened,
-            Condition.Paralyzed,
-            Condition.Petrified,
-            Condition.Poisoned,
-        }
-        nonmagical_resistance = stats.cr >= 7
+        stats = stats.grant_resistance_or_immunity(
+            immunities={
+                DamageType.Poison,
+                DamageType.Psychic,
+            },
+            nonmagical_resistance=stats.cr >= 7,
+            conditions={
+                Condition.Exhaustion,
+                Condition.Frightened,
+                Condition.Paralyzed,
+                Condition.Petrified,
+                Condition.Poisoned,
+            },
+        )
 
         # Senses blindsight 60 ft. (blind beyond this radius) or
         # darkvision 60 ft.
@@ -97,9 +99,6 @@ class _ConstructTemplate(CreatureTypeTemplate):
             primary_damage_type=primary_damage_type,
             secondary_damage_type=secondary_damage_type,
             attack_type=attack_type,
-            damage_immunities=damage_immunities,
-            nonmagical_resistance=nonmagical_resistance,
-            condition_immunities=condition_immunities,
         )
 
 
