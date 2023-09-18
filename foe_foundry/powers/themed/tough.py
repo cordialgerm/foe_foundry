@@ -1,6 +1,7 @@
 from math import ceil
 from typing import List, Tuple
 
+import numpy as np
 from num2words import num2words
 from numpy.random import Generator
 
@@ -276,6 +277,41 @@ class _QuickRecovery(Power):
         return stats, feature
 
 
+class _Regeneration(Power):
+    def __init__(self):
+        super().__init__(name="Regeneration", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        if candidate.cr <= 3:
+            return NO_AFFINITY
+
+        creature_types = {
+            CreatureType.Undead: HIGH_AFFINITY,
+            CreatureType.Monstrosity: MODERATE_AFFINITY,
+            CreatureType.Construct: MODERATE_AFFINITY,
+        }
+
+        return creature_types.get(candidate.creature_type, LOW_AFFINITY)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        weaknesses = {
+            CreatureType.Undead: "radiant damage",
+            CreatureType.Monstrosity: "acid or fire damage",
+            CreatureType.Construct: "acid damage",
+        }
+        weakness = weaknesses.get(stats.creature_type, "fire damage")
+        hp = int(ceil(max(5, 2 * stats.cr)))
+
+        feature = Feature(
+            name="Regeneration",
+            action=ActionType.Feature,
+            description=f"{stats.selfref.capitalize()} regains {hp} hp at the start of its turn. \
+                If {stats.selfref} takes {weakness}, this trait doesn't function at the start of {stats.selfref}'s next turn. \
+                {stats.selfref} only dies if it starts its turn with 0 hp and doesn't regenerate.",
+        )
+        return stats, feature
+
+
 Athletic: Power = _Athletic()
 AdrenalineRush: Power = _AdrenalineRush()
 GoesDownFighting: Power = _GoesDownFighting()
@@ -284,6 +320,7 @@ MagicResistance: Power = _MagicResistance()
 NotDeadYet: Power = _NotDeadYet()
 QuickRecovery: Power = _QuickRecovery()
 RefuseToSurrender: Power = _RefuseToSurrender()
+Regeneration: Power = _Regeneration()
 
 ToughPowers: List[Power] = [
     Athletic,
@@ -294,4 +331,5 @@ ToughPowers: List[Power] = [
     NotDeadYet,
     QuickRecovery,
     RefuseToSurrender,
+    Regeneration,
 ]

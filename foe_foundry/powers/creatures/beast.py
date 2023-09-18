@@ -1,6 +1,7 @@
+from math import ceil
 from typing import List, Tuple
 
-import numpy as np
+from numpy.random import Generator
 
 from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
@@ -21,22 +22,25 @@ from ..scores import (
 )
 
 
+def _score_beast(candidate: BaseStatblock, primary_attribute: Stats | None = None) -> float:
+    if candidate.creature_type != CreatureType.Beast:
+        return NO_AFFINITY
+
+    score = MODERATE_AFFINITY
+
+    if primary_attribute is not None and candidate.primary_attribute == primary_attribute:
+        score += MODERATE_AFFINITY
+    return score
+
+
 class _HitAndRun(Power):
     def __init__(self):
         super().__init__(name="Hit and Run", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type != CreatureType.Beast:
-            return NO_AFFINITY
+        return _score_beast(candidate, Stats.DEX)
 
-        score = MODERATE_AFFINITY
-        if candidate.primary_attribute == Stats.DEX:
-            score += HIGH_AFFINITY
-        return score
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.copy(attributes=new_attrs)
 
@@ -55,17 +59,9 @@ class _MotivatedByCarnage(Power):
         super().__init__(name="Motivated by Carnage", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type != CreatureType.Beast:
-            return NO_AFFINITY
+        return _score_beast(candidate, Stats.STR)
 
-        score = MODERATE_AFFINITY
-        if candidate.primary_attribute == Stats.STR:
-            score += HIGH_AFFINITY
-        return score
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Survival)
         stats = stats.copy(attributes=new_attrs)
 
@@ -80,17 +76,29 @@ class _MotivatedByCarnage(Power):
         return stats, feature
 
 
+class _Gore(Power):
+    def __init__(self):
+        super().__init__(name="Gore", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_beast(candidate, Stats.STR)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        dmg = int(ceil(0.75 * stats.attack.average_damage))
+
+        feature = Feature(
+            name="Gore",
+            action=ActionType.Action,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} moves up to its speed and then makes an attack. On a hit, the target is gored and suffers an {dmg} ongoing piercing damage at the end of each of its turns. \
+                The ongoing damage ends when the creature receives magical healing, or if the creature or another creature uses an action to perform a DC 10 Medicine check",
+        )
+
+        return stats, feature
+
+
+Gore: Power = _Gore()
 HitAndRun: Power = _HitAndRun()
 MotivatedByCarnage: Power = _MotivatedByCarnage()
 
-BeastPowers: List[Power] = [HitAndRun, MotivatedByCarnage]
-
-# Empowered by Carnage (Reaction). When this creature hits
-# another creature with a melee attack and the damage from the
-# attack reduces the target below half its hit points or to 0 hit
-# points, this creature can immediately move up to their speed
-# and repeat the melee attack against another target.
-
-# This reaction captures the ferocious nature of the beast,
-# motivated by seeing prey take a grievous wound or meet
-# their end.
+BeastPowers: List[Power] = [Gore, HitAndRun, MotivatedByCarnage]

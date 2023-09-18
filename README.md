@@ -127,10 +127,6 @@
 
 ## More Powers
 
-### Conditions
-
-- Dungeon Dudes additional conditions
-
 ### Abberrant
 
 - **Antimagic Gullet** - https://www.dndbeyond.com/monsters/2821163-eye-monger - also grants a Swallow

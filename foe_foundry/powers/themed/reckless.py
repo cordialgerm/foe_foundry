@@ -1,6 +1,7 @@
 from math import ceil
 from typing import List, Tuple
 
+import numpy as np
 from numpy.random import Generator
 
 from foe_foundry.features import Feature
@@ -148,10 +149,62 @@ class _GoesDownFighting(Power):
         return stats, feature
 
 
+class _WildCleave(Power):
+    def __init__(self):
+        super().__init__(name="Wild Cleave", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_could_be_reckless_fighter(candidate, allow_defender=False)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = _as_reckless_fighter(stats)
+        reach = stats.attack.reach or 5 + 5
+        push = 2 * reach
+
+        feature = Feature(
+            name="Wild Cleave",
+            action=ActionType.Action,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} makes an attack against every creature within {reach} ft. On a hit, the creature is pushed up to {push} feet away.",
+        )
+
+        return stats, feature
+
+
+class _FlurryOfBlows(Power):
+    def __init__(self):
+        super().__init__(name="Flurry of Blows", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_could_be_reckless_fighter(candidate, allow_defender=False)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = _as_reckless_fighter(stats)
+        attacks = max(3, int(ceil(1.5 * stats.multiattack)))
+
+        feature = Feature(
+            name="Flurry of Blows",
+            action=ActionType.Action,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} makes a reckless flurry of {attacks} attacks. Attacks against {stats.selfref} have advantage until the end of {stats.selfref}'s next turn.",
+        )
+
+        return stats, feature
+
+
 Charger: Power = _Charger()
 Frenzy: Power = _Frenzy()
+FlurryOfBlows: Power = _FlurryOfBlows()
 GoesDownFighting: Power = _GoesDownFighting()
 RefuseToSurrender: Power = _RefuseToSurrender()
+WildCleave: Power = _WildCleave()
 
 
-RecklessPowers: List[Power] = [Charger, Frenzy, GoesDownFighting, RefuseToSurrender]
+RecklessPowers: List[Power] = [
+    Charger,
+    Frenzy,
+    FlurryOfBlows,
+    GoesDownFighting,
+    RefuseToSurrender,
+    WildCleave,
+]
