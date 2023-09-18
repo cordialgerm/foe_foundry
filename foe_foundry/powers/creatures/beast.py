@@ -90,7 +90,7 @@ class _Gore(Power):
             name="Gore",
             action=ActionType.Action,
             recharge=5,
-            description=f"{stats.selfref.capitalize()} moves up to its speed and then makes an attack. On a hit, the target is gored and suffers an {dmg} ongoing piercing damage at the end of each of its turns. \
+            description=f"{stats.selfref.capitalize()} moves up to its speed and then makes an attack. On a hit, the target is gored and suffers {dmg} ongoing piercing damage at the end of each of its turns. \
                 The ongoing damage ends when the creature receives magical healing, or if the creature or another creature uses an action to perform a DC 10 Medicine check",
         )
 

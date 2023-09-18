@@ -4,18 +4,16 @@ from typing import List, Tuple
 import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...ac import ArmorClass
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
+from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -51,7 +49,7 @@ class _AuraOfDoom(Power):
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
-        distance = 30 if stats.cr <= 7 else 50
+        distance = easy_multiple_of_five(3 * stats.cr)
 
         feature = Feature(
             name="Aura of Doom",

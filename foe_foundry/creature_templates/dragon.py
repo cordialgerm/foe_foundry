@@ -51,20 +51,16 @@ class _DragonTemplate(CreatureTypeTemplate):
     def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         # Draconic creatures have high Strength, Dexterity, and
         # Constitution scores, as well as high Charisma scores.
-        def scale_stat(base: int, cr_multiplier: float) -> int:
-            new_stat = int(round(base + stats.cr * cr_multiplier))
-            return min(new_stat, stats.primary_attribute_score)
-
-        primary_stat = Stats.STR
-        attrs = {
-            Stats.STR: stats.primary_attribute_score,
-            Stats.DEX: scale_stat(12, 1 / 2),
-            Stats.CON: stats.attributes.CON,
-            Stats.INT: scale_stat(10, 1 / 2),
-            Stats.WIS: scale_stat(10, 1 / 2),
-            Stats.CHA: scale_stat(12, 2 / 3),
-        }
-        new_attributes = stats.attributes.copy(**attrs, primary_attribute=primary_stat)
+        stats = stats.scale(
+            {
+                Stats.STR: Stats.Primary(),
+                Stats.DEX: Stats.Scale(12, 1 / 2),
+                Stats.INT: Stats.Scale(10, 1 / 2),
+                Stats.WIS: Stats.Scale(10, 1 / 2),
+                Stats.CHA: Stats.Scale(12, 2 / 3),
+            }
+        )
+        new_attributes = stats.attributes
 
         behavior: str = rng.choice(["lordly", "wise", "predator"])
         if behavior == "lordly":

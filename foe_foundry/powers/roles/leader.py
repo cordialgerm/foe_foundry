@@ -3,15 +3,13 @@ from typing import List, Tuple
 
 import numpy as np
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
 from ...ac import ArmorClass
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
+from ...utils.rounding import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -127,7 +125,9 @@ class _Encouragement(Power):
             Skills.Medicine, Skills.Insight
         )
         stats = stats.copy(attributes=new_attributes)
-        hp = int(stats.attributes.stat_mod(Stats.WIS) + max(5, ceil(stats.cr * 2)))
+        hp = easy_multiple_of_five(
+            int(stats.attributes.stat_mod(Stats.WIS) + max(5, ceil(stats.cr * 2)))
+        )
 
         feature = Feature(
             name="Encouragement",

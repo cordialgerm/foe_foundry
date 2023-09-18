@@ -3,15 +3,13 @@ from typing import List, Tuple
 
 import numpy as np
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -65,7 +63,7 @@ class _ArmorPlating(Power):
     ) -> Tuple[BaseStatblock, Feature]:
         stats = stats.apply_monster_dials(MonsterDials(ac_modifier=2))
 
-        hp = 5 * ceil(0.2 * stats.hp.average / 5.0)
+        hp = easy_multiple_of_five(0.2 * stats.hp.average)
 
         feature = Feature(
             name="Armor Plating",
@@ -85,5 +83,4 @@ ConstructPowers: List[Power] = [ArmorPlating, Sentinel]
 # TODO
 # Explosive Core
 # Beam Attack
-# Spell Reflection
 # Spell Storing

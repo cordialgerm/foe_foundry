@@ -4,15 +4,13 @@ from typing import List, Tuple
 import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -59,7 +57,7 @@ class _HealingTouch(Power):
         return _score_celestial(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        hp = int(ceil(max(5, 2 * stats.cr)))
+        hp = easy_multiple_of_five(int(ceil(max(5, 2 * stats.cr))))
 
         feature = Feature(
             name="Healing Touch",

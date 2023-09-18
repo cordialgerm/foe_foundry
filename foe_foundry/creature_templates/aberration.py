@@ -19,22 +19,16 @@ class _AberrationTemplate(CreatureTypeTemplate):
         # Aberrations generally have high mental stats
         # this means the minimum stat value should be 12 for mental stats
         # we should also boost mental stat scores
-        # cap the max mental stat score at its primary score though
-
-        def scale_stat(base: int, cr_multiplier: float) -> int:
-            new_stat = int(round(base + stats.cr * cr_multiplier))
-            return min(new_stat, stats.primary_attribute_score)
-
-        primary_stat = Stats.CHA
-        attrs = {
-            Stats.STR: scale_stat(8, 1 / 5),
-            Stats.DEX: scale_stat(8, 1 / 3),
-            Stats.CON: stats.attributes.CON,
-            Stats.INT: scale_stat(10, 1 / 4),
-            Stats.WIS: scale_stat(10, 1 / 3),
-            Stats.CHA: stats.primary_attribute_score,
-        }
-        new_attributes = stats.attributes.copy(**attrs, primary_attribute=primary_stat)
+        stats = stats.scale(
+            {
+                Stats.CHA: Stats.Primary(),
+                Stats.WIS: Stats.Scale(10, 1 / 3),
+                Stats.INT: Stats.Scale(10, 1 / 4),
+                Stats.DEX: Stats.Scale(8, 1 / 3),
+                Stats.STR: Stats.Scale(8, 1 / 5),
+            }
+        )
+        new_attributes = stats.attributes
 
         new_senses = stats.senses.copy(darkvision=120)
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Medium, rng=rng)

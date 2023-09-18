@@ -23,21 +23,17 @@ class _BeastTemplate(CreatureTypeTemplate):
         # They might also have medium to high Wisdom to represent cunning
         #
         # Beasts have low AC and slightly higher CON and HP
-
-        def scale_stat(base: int, cr_multiplier: float) -> int:
-            new_stat = int(round(base + stats.cr * cr_multiplier))
-            return min(new_stat, stats.primary_attribute_score)
-
-        primary_stat = Stats.STR
-        attrs = {
-            Stats.STR: stats.primary_attribute_score,
-            Stats.DEX: scale_stat(10, 1 / 2),
-            Stats.CON: stats.attributes.CON + 2,
-            Stats.INT: scale_stat(4, 1 / 3),
-            Stats.WIS: scale_stat(8, 1 / 4),
-            Stats.CHA: scale_stat(3, 1 / 3),
-        }
-        new_attributes = stats.attributes.copy(**attrs, primary_attribute=primary_stat)
+        stats = stats.scale(
+            {
+                Stats.STR: Stats.Primary(),
+                Stats.CON: Stats.Boost(Stats.CON, 2),
+                Stats.DEX: Stats.Scale(10, 1 / 2),
+                Stats.INT: Stats.Scale(4, 1 / 3),
+                Stats.WIS: Stats.Scale(8, 1 / 4),
+                Stats.CHA: Stats.Scale(3, 1 / 3),
+            }
+        )
+        new_attributes = stats.attributes
 
         # updated HP to match CON
         new_hp = stats.hp.copy(mod=stats.hp.n_die * new_attributes.stat_mod(Stats.CON))

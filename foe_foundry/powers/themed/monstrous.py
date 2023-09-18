@@ -119,7 +119,7 @@ class _Swallow(Power):
         feature = Feature(
             name="Swallow",
             action=ActionType.Action,
-            replaces_multiattack=1,
+            replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} attempts to swallow one target within {reach} ft. \
                 The target must make a DC {dc} Dexterity saving throw. On a failure, it is swallowed by {stats.selfref}. \
                 A swallowed creature is **Blinded** and **Restrained**, it has total cover against attacks and other effects outside {stats.selfref}, and it takes {dmg} ongoing acid damage at the start of each of its turns.  \
@@ -211,7 +211,7 @@ class _LingeringWound(Power):
         if stats.primary_damage_type.is_physical:
             stats = stats.copy(primary_damage_type=DamageType.Piercing)
 
-        dc = stats.difficulty_class_easy
+        dc = max(10, min(15, stats.difficulty_class_easy))
         dmg = int(floor(0.75 * stats.attack.average_damage))
         dmg_type = stats.attack.damage.damage_type
         feature = Feature(
@@ -219,7 +219,7 @@ class _LingeringWound(Power):
             action=ActionType.BonusAction,
             recharge=6,
             description=f"Immediately after hitting a creature, {stats.selfref} inflicts that creature with a lingering wound. \
-                The wounded creature takes {dmg} {dmg_type} damage at the start of each of its turns. \
+                The wounded creature takes {dmg} ongoing {dmg_type} damage at the end of each of its turns. \
                 The target may attempt a DC {dc} Constitution save at the end of each of its turns to end the effect. \
                 A creature may also use an action to perform a DC {dc} Medicine check to end the lingering wound.",
         )

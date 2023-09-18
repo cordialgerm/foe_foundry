@@ -3,15 +3,13 @@ from typing import List, Tuple
 
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -43,8 +41,8 @@ class _DragonsGaze(Power):
             name="Dragon's Gaze",
             action=ActionType.BonusAction,
             recharge=6,
-            description=f"One creature within 60 feet of {stats.selfref} must make a DC {dc} Wisdom save or be frightened of {stats.selfref}. \
-                While frightened in this way, each time the target takes damage, they take an additional {dmg} psychic damage. Save ends at end of turn.",
+            description=f"One creature within 60 feet of {stats.selfref} must make a DC {dc} Wisdom save or be **Frightened** of {stats.selfref} (save ends at end of turn). \
+                While frightened in this way, each time the target takes damage, they take an additional {dmg} psychic damage.",
         )
 
         return stats, feature
@@ -68,7 +66,7 @@ class _DraconicRetaliation(Power):
     def apply(
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
-        hp = int(floor(stats.hp.average / 2))
+        hp = easy_multiple_of_five(stats.hp.average / 2)
         uses = 1
         description = f"When {stats.selfref} is reduced to {hp} hit points or fewer, it may immediately use either its breath weapon or Multiattack action. \
             If {stats.selfref} is incapacitated or otherwise unable to use this trait, it may use it the next time they are able."

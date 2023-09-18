@@ -26,21 +26,16 @@ class _FiendTemplate(CreatureTypeTemplate):
         #
         # Demons speak Abyssal, while devils speak
         # Infernal. Both usually have telepathy up to 120 feet.
-
-        def scale_stat(base: int, cr_multiplier: float) -> int:
-            new_stat = int(round(base + stats.cr * cr_multiplier))
-            return min(new_stat, stats.primary_attribute_score)
-
-        primary_stat = Stats.STR
-        attrs = {
-            Stats.STR: stats.primary_attribute_score,
-            Stats.DEX: scale_stat(10, 1 / 3),
-            Stats.CON: stats.attributes.CON,
-            Stats.INT: scale_stat(8, 1 / 2),
-            Stats.WIS: scale_stat(9, 1 / 2),
-            Stats.CHA: scale_stat(10, 2 / 3),
-        }
-        new_attributes = stats.attributes.copy(**attrs, primary_attribute=primary_stat)
+        stats = stats.scale(
+            {
+                Stats.STR: Stats.Primary(),
+                Stats.DEX: Stats.Scale(10, 1 / 3),
+                Stats.INT: Stats.Scale(8, 1 / 2),
+                Stats.WIS: Stats.Scale(9, 1 / 2),
+                Stats.CHA: Stats.Scale(10, 2 / 3),
+            }
+        )
+        new_attributes = stats.attributes
 
         # Devils hoping to entice mortals into deals also often have proficiency in the Deception skill.
         new_attributes = new_attributes.grant_proficiency_or_expertise(Skills.Deception)

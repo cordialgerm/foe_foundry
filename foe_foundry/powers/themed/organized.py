@@ -15,6 +15,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -64,7 +65,7 @@ class _Commander(Power):
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
         distance = 30 if stats.cr <= 4 else 50
-        hp = int(ceil(stats.hp.average / 2))
+        hp = easy_multiple_of_five(int(ceil(stats.hp.average / 2)))
         bonus = int(ceil(stats.attributes.proficiency / 2))
 
         feature = Feature(
@@ -87,8 +88,8 @@ class _Fanatic(Power):
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
         distance = 30 if stats.cr <= 4 else 50
-        hp = int(ceil(stats.hp.average / 2))
-        temp = int(max(floor(5 + stats.cr), 1.5 * stats.cr))
+        hp = easy_multiple_of_five(int(ceil(stats.hp.average / 2)))
+        temp = easy_multiple_of_five(int(max(floor(5 + stats.cr), 1.5 * stats.cr)))
 
         feature = Feature(
             name="Fanaticism",
@@ -110,7 +111,7 @@ class _Inspiring(Power):
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
-        hp = int(floor(5 + stats.cr / 2))
+        hp = easy_multiple_of_five(int(floor(5 + stats.cr / 2)))
 
         feature = Feature(
             name="Inspiring",

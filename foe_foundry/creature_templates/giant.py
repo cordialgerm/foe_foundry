@@ -29,20 +29,16 @@ class _GiantTemplate(CreatureTypeTemplate):
         stats = stats.apply_monster_dials(dials=MonsterDials(**dials))
 
         # Giants have Strength and Constitution scores as formidable as their size
-        def scale_stat(base: int, cr_multiplier: float) -> int:
-            new_stat = int(round(base + stats.cr * cr_multiplier))
-            return min(new_stat, stats.primary_attribute_score)
-
-        primary_stat = Stats.STR
-        attrs = {
-            Stats.STR: stats.primary_attribute_score + 2,
-            Stats.DEX: scale_stat(8, 1 / 4),
-            Stats.CON: stats.primary_attribute_score,
-            Stats.INT: scale_stat(8, 1 / 3),
-            Stats.WIS: scale_stat(8, 1 / 2),
-            Stats.CHA: scale_stat(8, 1 / 2),
-        }
-        new_attributes = stats.attributes.copy(**attrs, primary_attribute=primary_stat)
+        stats = stats.scale(
+            {
+                Stats.STR: Stats.Primary(mod=2),
+                Stats.DEX: Stats.Scale(8, 1 / 4),
+                Stats.INT: Stats.Scale(8, 1 / 3),
+                Stats.WIS: Stats.Scale(8, 1 / 2),
+                Stats.CHA: Stats.Scale(8, 1 / 2),
+            }
+        )
+        new_attributes = stats.attributes
 
         # giants attack with melee weapons like clubs
         attack_type = AttackType.MeleeWeapon

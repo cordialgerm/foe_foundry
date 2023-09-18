@@ -118,7 +118,7 @@ class _TerrifyingVisage(Power):
             name="Terrifying Visage",
             action=ActionType.Reaction,
             description=f"When a creature looks at {stats.selfref}, it must immediately make a DC {dc} Wisdom saving throw. \
-                On a failure, the target is Frightened of {stats.selfref} (save ends at end of turn). \
+                On a failure, the target is **Frightened** of {stats.selfref} (save ends at end of turn). \
                 If the save fails by 5 or more, the target also ages {aging}. \
                 A creature that succeeds on the save is immune to this effect for 1 hour.",
         )
@@ -144,8 +144,8 @@ class _DreadGaze(Power):
             action=ActionType.Action,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} targets one creature it can see within 60 feet. If the target can see {stats.selfref} \
-                it must succeed on a DC {dc} Wisdom save or become Frightened of the {stats.selfref} (save ends at end of turn). \
-                If the target fails the save by 5 or more, it is also Paralyzed while Frightened in this way. \
+                it must succeed on a DC {dc} Wisdom save or become **Frightened** of the {stats.selfref} (save ends at end of turn). \
+                If the target fails the save by 5 or more, it is also **Paralyzed** while frightened in this way. \
                 A creature that succeeds on the save is immune to this effect for 1 hour.",
         )
 
@@ -192,7 +192,7 @@ class _NightmarishVisions(Power):
             action=ActionType.Action,
             replaces_multiattack=1,
             recharge=5,
-            description=f"{stats.selfref.capitalize()} targets a a creature that it can see within 30 feet and forces it to confront its deepest fears. \
+            description=f"{stats.selfref.capitalize()} targets a creature that it can see within 30 feet and forces it to confront its deepest fears. \
                 The target must succeed on a DC {dc} Wisdom save or become **Frightened** of {stats.selfref}. While frightened in this way, the creature takes {dmg} ongoing psychic damage at the start of each of its turns. Save ends at end of turn.",
         )
 

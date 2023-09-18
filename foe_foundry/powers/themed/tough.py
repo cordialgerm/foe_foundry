@@ -16,6 +16,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -113,7 +114,7 @@ class _RefuseToSurrender(Power):
 
     def score(self, candidate: BaseStatblock) -> float:
         # the creature has to be somewhat aware to fight harder when it's hurt
-        if candidate.attributes.INT <= 3 and candidate.attributes.WIS <= 3:
+        if candidate.attributes.INT <= 3 or candidate.attributes.WIS <= 3:
             return NO_AFFINITY
 
         # this power makes a lot of sense for larger creatures, creatures with more HP, higher CR creatures, and Bruisers
@@ -300,7 +301,7 @@ class _Regeneration(Power):
             CreatureType.Construct: "acid damage",
         }
         weakness = weaknesses.get(stats.creature_type, "fire damage")
-        hp = int(ceil(max(5, 2 * stats.cr)))
+        hp = easy_multiple_of_five(1.5 * stats.cr)
 
         feature = Feature(
             name="Regeneration",

@@ -151,7 +151,7 @@ class _ElementalAffinity(Power):
         dmg = damage_type.name.lower()
         feature = Feature(
             name=f"{damage_type.name} Affinity",
-            description=f"{stats.selfref} gains {descr} to {dmg} damage. It gains advantage on its attacks while it is in an environment where sources of {dmg} damage are prevalant.",
+            description=f"{stats.selfref.capitalize()} gains {descr} to {dmg} damage. It gains advantage on its attacks while it is in an environment where sources of {dmg} damage are prevalant.",
             action=ActionType.Feature,
         )
         return stats, feature

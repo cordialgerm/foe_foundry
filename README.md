@@ -190,7 +190,27 @@ Gore - https://www.dndbeyond.com/monsters/2560728-aurochs - Recharge 5 - move up
 
 Paralyzing Poison
 
-### Spellcasting
+
+## Bugs
+
+- Controllers keep getting Pinning Shot. Why?
+- Many abilities around leadership and challenging shoudl require intelligence
+
+## Power Selection
+
+- Should try to balance feature, action, reaction, bonus action before having multiple reactions or bonus actions
+- There should be some sort of "unique key" or tagging system based on the kind of ability. Try not to select duplicates. For example, right now you can get multiple death triggers
+
+
+------------
+
+
+## Spellcasting
+
+- Spell Lists
+- each monster needs a spellcasting stat
+- reconcile spell save DCs with spellcasting stat
+
 
 Slaad Spells - https://www.dndbeyond.com/monsters/17113-death-slaad
 Mindflayer Spells - levitate, detect thoughts, modify memory, dominate person / monster, plane shift, feeblemind

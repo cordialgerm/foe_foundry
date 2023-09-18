@@ -20,20 +20,16 @@ class _CelestialTemplate(CreatureTypeTemplate):
     def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         # As divine beings of the Outer Planes, celestials have  high ability scores.
         # Charisma is often especially high to represent a celestial’s leadership qualities, eloquence, and beauty.
-        def scale_stat(base: int, cr_multiplier: float) -> int:
-            new_stat = int(round(base + stats.cr * cr_multiplier))
-            return min(new_stat, stats.primary_attribute_score)
-
-        primary_stat = Stats.CHA
-        attrs = {
-            Stats.STR: scale_stat(10, 1 / 2),
-            Stats.DEX: scale_stat(10, 1 / 3),
-            Stats.CON: stats.attributes.CON,
-            Stats.INT: scale_stat(10, 1 / 2),
-            Stats.WIS: scale_stat(10, 2 / 3),
-            Stats.CHA: stats.primary_attribute_score,
-        }
-        new_attributes = stats.attributes.copy(**attrs, primary_attribute=primary_stat)
+        stats = stats.scale(
+            {
+                Stats.STR: Stats.Scale(10, 1 / 2),
+                Stats.DEX: Stats.Scale(10, 1 / 3),
+                Stats.INT: Stats.Scale(10, 1 / 2),
+                Stats.WIS: Stats.Scale(10, 2 / 3),
+                Stats.CHA: Stats.Primary(),
+            }
+        )
+        new_attributes = stats.attributes
 
         # Celestials often have resistance to radiant damage,
         # and they might also have resistance to damage from nonmagical attacks

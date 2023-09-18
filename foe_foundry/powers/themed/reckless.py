@@ -34,7 +34,7 @@ def _score_could_be_reckless_fighter(
 
     score = 0
     if ArmorClass.could_use_shield_or_wear_armor(candidate.creature_type):
-        score += MODERATE_AFFINITY
+        score += LOW_AFFINITY
 
     if candidate.creature_type in {
         CreatureType.Beast,
@@ -83,7 +83,7 @@ class _Charger(Power):
             name="Charge",
             action=ActionType.BonusAction,
             description=f"{stats.selfref.capitalize()} charges by using Dash as a bonus action. Up to one creature that is within 5 ft of the path \
-                that the creature charges must make a DC {dc} Strength saving throw or be knocked Prone.",
+                that the creature charges must make a DC {dc} Strength saving throw or be knocked **Prone**.",
         )
         return stats, feature
 

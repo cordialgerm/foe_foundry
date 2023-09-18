@@ -24,20 +24,19 @@ from ..scores import (
 )
 
 
-def _score_is_tricky_creature(candidate: BaseStatblock) -> float:
+def _score_is_tricky_creature(candidate: BaseStatblock, magical: bool = False) -> float:
     score = 0
+
+    if magical and candidate.attributes.spellcasting_mod < 3:
+        return NO_AFFINITY
 
     creature_types = {
         CreatureType.Fey: HIGH_AFFINITY,
         CreatureType.Fiend: MODERATE_AFFINITY,
         CreatureType.Aberration: MODERATE_AFFINITY,
         CreatureType.Ooze: MODERATE_AFFINITY,
-        CreatureType.Humanoid: MODERATE_AFFINITY,
     }
     score += creature_types.get(candidate.creature_type, 0)
-
-    if score == 0:
-        return 0
 
     roles = {MonsterRole.Ambusher: LOW_AFFINITY, MonsterRole.Controller: LOW_AFFINITY}
     score += roles.get(candidate.role, 0)
@@ -106,7 +105,7 @@ class _Impersonation(Power):
         super().__init__(name="Impersonation", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = _score_is_tricky_creature(candidate)
+        score = _score_is_tricky_creature(candidate, magical=True)
         return score if score > 0 else NO_AFFINITY
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
@@ -131,7 +130,7 @@ class _Projection(Power):
         super().__init__(name="Projection", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = _score_is_tricky_creature(candidate)
+        score = _score_is_tricky_creature(candidate, magical=True)
         return score if score > 0 else NO_AFFINITY
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
@@ -152,25 +151,25 @@ class _Projection(Power):
         return stats, feature
 
 
-class _EvilDoppelganger(Power):
+class _ShadowyDoppelganger(Power):
     def __init__(self):
-        super().__init__(name="Evil Doppelganger", power_type=PowerType.Theme)
+        super().__init__(name="Shadowy Doppelganger", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate)
+        return _score_is_tricky_creature(candidate, magical=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
-        hp = int(floor(max(5, 2 * stats.cr)))
+        hp = int(floor(max(5, 1.5 * stats.cr)))
 
         feature = Feature(
-            name="Evil Doppleganger",
+            name="Shadowy Doppleganger",
             action=ActionType.Action,
             uses=1,
             description=f"{stats.selfref.capitalize()} forces each creature of its choice within 30 feet to make a DC {dc} Charisma saving throw. \
                 On a failure, a Shadow Doppleganger copy of that creature materializes in the nearest unoccupied space to that creature and acts in initiative immediately after {stats.selfref}. \
-                The Shadow Doppleganger has {hp} hp and has an AC equal to the creature it was copied from and is an Undead. On its turn, the Shadow Doppleganger attempts to move and attack the creature it was copied from. \
-                It makes a single attack using {stats.selfref}'s Attack action. It otherwise has the movement, stats, skills, and saves of the creature it was copied from.",
+                The Shadow Doppleganger has {hp} hp and has an AC equal to the creature it was copied from and is a Fey. On its turn, the Shadow Doppleganger attempts to move and attack the creature it was copied from. \
+                It makes a single attack using the stats of {stats.selfref}'s Attack action. It otherwise has the movement, stats, skills, and saves of the creature it was copied from.",
         )
 
         return stats, feature
@@ -181,7 +180,7 @@ class _SpectralDuplicate(Power):
         super().__init__(name="Spectral Duplicate", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate)
+        return _score_is_tricky_creature(candidate, magical=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -201,10 +200,10 @@ class _MirrorImage(Power):
         super().__init__(name="Mirror Images", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate)
+        return _score_is_tricky_creature(candidate, magical=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        ac = 10 + stats.attributes.DEX
+        ac = 10 + stats.attributes.stat_mod(Stats.DEX)
 
         feature = Feature(
             name="Mirror Images",
@@ -220,7 +219,7 @@ class _Hypnosis(Power):
         super().__init__(name="Hypnotic Pattern", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate)
+        return _score_is_tricky_creature(candidate, magical=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -241,7 +240,7 @@ class _ReverseFortune(Power):
         super().__init__(name="Reverse Fortune", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate)
+        return _score_is_tricky_creature(candidate, magical=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -255,22 +254,22 @@ class _ReverseFortune(Power):
         return stats, feature
 
 
-EvilDoppleganger: Power = _EvilDoppelganger()
 Hypnosis: Power = _Hypnosis()
 Impersonation: Power = _Impersonation()
 MirrorImage: Power = _MirrorImage()
 NimbleReaction: Power = _NimbleReaction()
 Projection: Power = _Projection()
 ReverseFortune: Power = _ReverseFortune()
+ShadowyDoppelganger: Power = _ShadowyDoppelganger()
 SpectralDuplicate: Power = _SpectralDuplicate()
 
 TrickyPowers: List[Power] = [
-    EvilDoppleganger,
     Hypnosis,
     Impersonation,
     MirrorImage,
     NimbleReaction,
     Projection,
     ReverseFortune,
+    ShadowyDoppelganger,
     SpectralDuplicate,
 ]

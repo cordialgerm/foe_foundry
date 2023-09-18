@@ -54,13 +54,6 @@ class _EraseMemory(Power):
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
-        new_stats = stats.attributes.copy(primary_attribute=Stats.CHA)
-        stats = stats.copy(
-            attributes=new_stats,
-            secondary_damage_type=DamageType.Psychic,
-            attack_type=AttackType.RangedSpell,
-        )
-
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Erase Memory",

@@ -3,18 +3,16 @@ from typing import List, Tuple
 
 import numpy as np
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...ac import ArmorClass
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -47,19 +45,24 @@ class _BreathAttack(Power):
 
         if stats.cr <= 3:
             distance = 15
-        elif stats.cr <= 9:
+        elif stats.cr <= 7:
             distance = 30
-        else:
+        elif stats.cr <= 11:
             distance = 45
+        else:
+            distance = 60
 
         if rng.random() <= 0.5:
             template = f"{distance} ft cone"
             save_type = "Constitution"
+            multiplier = 4
         else:
-            template = f"{2*distance} ft line 5 ft wide"
+            width = easy_multiple_of_five(5 * distance / 15)
+            template = f"{2*distance} ft line {width} ft wide"
             save_type = "Dexterity"
+            multiplier = 4.5
 
-        dmg = int(ceil(max(5 + 2 * stats.cr, 4 * stats.cr)))
+        dmg = int(ceil(max(5 + multiplier * 0.5 * stats.cr, multiplier * stats.cr)))
 
         dc = stats.difficulty_class
 

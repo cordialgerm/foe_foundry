@@ -98,7 +98,7 @@ class _CharmingWords(Power):
         feature = Feature(
             name="Charming Words",
             description=f"{stats.selfref.capitalize()} chooses any number of targets within {distance} ft that can hear them. \
-                Each target must succeed on a DC {dc} Charisma saving throw or be Charmed by {stats.selfref} until the end of their next turn.",
+                Each target must succeed on a DC {dc} Charisma saving throw or be **Charmed** by {stats.selfref} until the end of their next turn.",
             action=ActionType.BonusAction,
             recharge=5,
         )

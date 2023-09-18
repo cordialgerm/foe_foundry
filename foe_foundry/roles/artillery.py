@@ -31,7 +31,7 @@ def as_low_hp_artillery_balanced(stats: BaseStatblock) -> BaseStatblock:
 def _as_artillery(stats: BaseStatblock, dials: MonsterDials) -> BaseStatblock:
     new_attack_type = (
         AttackType.RangedWeapon
-        if stats.creature_type == CreatureType.Humanoid
+        if stats.creature_type in {CreatureType.Humanoid, CreatureType.Beast}
         else AttackType.RangedSpell
     )
 

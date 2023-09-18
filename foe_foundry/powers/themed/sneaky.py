@@ -3,16 +3,14 @@ from typing import List, Set, Tuple
 
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
+from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -132,7 +130,7 @@ class _NotDeadYet(Power):
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
         stats = stats.copy(attributes=new_attrs)
 
-        hp = int(ceil(2.0 * stats.cr))
+        hp = easy_multiple_of_five(int(ceil(2.0 * stats.cr)))
 
         feature = Feature(
             name="Not Dead Yet",

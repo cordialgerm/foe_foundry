@@ -20,20 +20,16 @@ class _FeyTemplate(CreatureTypeTemplate):
 
     def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         # Fey often have high Charisma and Dexterity scores and moderate-to-high Wisdom scores.
-        def scale_stat(base: int, cr_multiplier: float) -> int:
-            new_stat = int(round(base + stats.cr * cr_multiplier))
-            return min(new_stat, stats.primary_attribute_score)
-
-        primary_stat = Stats.DEX
-        attrs = {
-            Stats.STR: scale_stat(8, 1 / 3),
-            Stats.DEX: stats.primary_attribute_score,
-            Stats.CON: stats.attributes.CON,
-            Stats.INT: scale_stat(10, 1 / 3),
-            Stats.WIS: scale_stat(12, 1 / 2),
-            Stats.CHA: scale_stat(12, 1 / 2),
-        }
-        new_attributes = stats.attributes.copy(**attrs, primary_attribute=primary_stat)
+        stats = stats.scale(
+            {
+                Stats.STR: Stats.Scale(8, 1 / 3),
+                Stats.DEX: Stats.Primary(),
+                Stats.INT: Stats.Scale(10, 1 / 3),
+                Stats.WIS: Stats.Scale(12, 1 / 2),
+                Stats.CHA: Stats.Scale(12, 1 / 2),
+            }
+        )
+        new_attributes = stats.attributes
 
         # Most fey have proficiency in the Deception, Perception, or Persuasion skills.
         skills = choose_enum(
