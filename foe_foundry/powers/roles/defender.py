@@ -78,7 +78,7 @@ class _StickWithMe(Power):
         if candidate.attributes.has_proficiency_or_expertise(Skills.Intimidation):
             score += LOW_AFFINITY
 
-        if ArmorClass.could_use_shield_or_wear_armor(candidate.creature_type):
+        if candidate.creature_type.could_wear_armor:
             score += LOW_AFFINITY
 
         return score if score > 0 else NO_AFFINITY

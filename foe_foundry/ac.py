@@ -187,17 +187,6 @@ class ArmorClass:
         else:
             raise ValueError("Unsupported ArmorTye")
 
-    @staticmethod
-    def could_use_shield_or_wear_armor(creature_type: CreatureType) -> bool:
-        return creature_type in {
-            CreatureType.Celestial,
-            CreatureType.Fiend,
-            CreatureType.Fey,
-            CreatureType.Humanoid,
-            CreatureType.Construct,
-            CreatureType.Giant,
-        }
-
 
 def _describe_armor(armor_type: ArmorType, quality: int) -> str:
     if armor_type == ArmorType.Unarmored:

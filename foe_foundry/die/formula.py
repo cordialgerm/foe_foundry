@@ -95,6 +95,10 @@ class DieFormula:
     def __repr__(self):
         return self.dice_formula()
 
+    @property
+    def description(self) -> str:
+        return f"{self.static} ({self.dice_formula()})"
+
     def copy(self, **changes) -> DieFormula:
         args = asdict(self)
         args.update(changes)

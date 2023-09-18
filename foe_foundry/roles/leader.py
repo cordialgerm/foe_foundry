@@ -26,9 +26,7 @@ def _as_leader(stats: BaseStatblock, dials: MonsterDials) -> BaseStatblock:
         new_attributes = new_attributes.grant_save_proficiency(Stats.INT, Stats.WIS)
 
     # leaders use shields if possible
-    new_ac = stats.ac.delta(
-        shield_allowed=ArmorClass.could_use_shield_or_wear_armor(stats.creature_type)
-    )
+    new_ac = stats.ac.delta(shield_allowed=stats.creature_type.could_wear_armor)
 
     return stats.apply_monster_dials(dials).copy(
         role=MonsterRole.Leader, attributes=new_attributes, ac=new_ac

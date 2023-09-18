@@ -29,7 +29,7 @@ def _as_defender(stats: BaseStatblock, dials: MonsterDials):
     # this should result in a +3 to AC (+1 to armor, +2 from shield)
     new_ac = stats.ac.delta(
         change=1,
-        shield_allowed=ArmorClass.could_use_shield_or_wear_armor(stats.creature_type),
+        shield_allowed=stats.creature_type.could_wear_armor,
         dex=stats.attributes.stat_mod(Stats.DEX),
         spellcasting=stats.attributes.spellcasting_mod,
     )

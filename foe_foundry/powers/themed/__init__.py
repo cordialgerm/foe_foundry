@@ -15,6 +15,7 @@ from . import (
     earthy,
     fearsome,
     flying,
+    gadget,
     monstrous,
     organized,
     poison,
@@ -42,6 +43,7 @@ ThemedPowers: List[Power] = (
     + earthy.EarthyPowers
     + fearsome.FearsomePowers
     + flying.FlyerPowers
+    + gadget.GadgetPowers
     + monstrous.MonstrousPowers
     + organized.OrganizedPowers
     + poison.PoisonPowers

@@ -33,7 +33,7 @@ def _score_could_be_reckless_fighter(
         return NO_AFFINITY
 
     score = 0
-    if ArmorClass.could_use_shield_or_wear_armor(candidate.creature_type):
+    if candidate.creature_type.could_use_weapon:
         score += LOW_AFFINITY
 
     if candidate.creature_type in {

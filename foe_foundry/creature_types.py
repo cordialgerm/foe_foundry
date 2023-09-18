@@ -30,3 +30,34 @@ class CreatureType(StrEnum):
             CreatureType.Ooze,
             CreatureType.Plant,
         }
+
+    @property
+    def could_use_weapon(self) -> bool:
+        return self in {
+            CreatureType.Celestial,
+            CreatureType.Fiend,
+            CreatureType.Fey,
+            CreatureType.Humanoid,
+            CreatureType.Construct,
+            CreatureType.Giant,
+        }
+
+    @property
+    def could_wear_armor(self) -> bool:
+        return self in {
+            CreatureType.Celestial,
+            CreatureType.Fiend,
+            CreatureType.Fey,
+            CreatureType.Humanoid,
+            CreatureType.Construct,
+            CreatureType.Giant,
+        }
+
+    @property
+    def could_use_equipment(self) -> bool:
+        return self in {
+            CreatureType.Fey,
+            CreatureType.Humanoid,
+            CreatureType.Construct,
+            CreatureType.Giant,
+        }

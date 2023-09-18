@@ -33,7 +33,7 @@ def _score_could_be_melee_fighter(
         return 0
 
     score = 0
-    if ArmorClass.could_use_shield_or_wear_armor(candidate.creature_type):
+    if candidate.creature_type.could_use_weapon:
         score += MODERATE_AFFINITY
 
     if not requires_training and candidate.creature_type in {
@@ -111,9 +111,7 @@ class _Challenger(Power):
 
         score = 0
 
-        if candidate.role == MonsterRole.Defender or ArmorClass.could_use_shield_or_wear_armor(
-            candidate.creature_type
-        ):
+        if candidate.role == MonsterRole.Defender or candidate.creature_type.could_wear_armor:
             score += HIGH_AFFINITY
 
         if candidate.attributes.CHA >= 18 or candidate.attributes.has_proficiency_or_expertise(
