@@ -47,15 +47,6 @@ class CreatureTypeTemplate(ABC):
 
         n = 1 if stats.recommended_powers <= 3 else 2
 
-        # Movement
-        movement_power = select_power(stats=stats, power_type=PowerType.Movement, rng=rng)
-
-        # Common
-        common_powers = select_powers(stats=stats, power_type=PowerType.Common, rng=rng, n=n)
-
-        # Static
-        static_power = select_power(stats=stats, power_type=PowerType.Static, rng=rng)
-
         # Creature Type
         creature_powers = select_powers(
             stats=stats, power_type=PowerType.Creature, rng=rng, n=n
@@ -78,22 +69,12 @@ class CreatureTypeTemplate(ABC):
         )
 
         # Choose Candidates
-        candidates = (
-            {movement_power, static_power}
-            | set(common_powers)
-            | set(creature_powers)
-            | set(role_powers)
-            | set(common_powers)
-            | set(theme_powers)
-        )
+        candidates = set(creature_powers) | set(role_powers) | set(theme_powers)
 
         candidates = [c for c in candidates if c is not None]
         multipliers = {
-            PowerType.Movement: 0.25,
-            PowerType.Common: 0.5,
             PowerType.Creature: 1,
             PowerType.Role: 1,
-            PowerType.Static: 0.25,
             PowerType.Theme: 1,
         }
         multipliers = np.array([multipliers[c.power_type] for c in candidates], dtype=float)

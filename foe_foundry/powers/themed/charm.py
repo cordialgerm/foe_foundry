@@ -57,7 +57,8 @@ class _WordsOfTreachery(Power):
         feature = Feature(
             name="Words of Treachery",
             description=f"{stats.selfref.capitalize()} speaks deceitful words at a target within {distance} ft of them who can see and hear them. \
-                The target must succeed on a DC {dc} Charisma saving throw or use their reaction to move up to half their speed and make a melee, ranged, or cantrip attack against a target of {stats.selfref}'s choice.",
+                The target must succeed on a DC {dc} Charisma saving throw or use their reaction to move up to half their speed and make a melee, ranged, or cantrip attack against a target of {stats.selfref}'s choice. \
+                This counts as a **Charm** effect.",
             action=ActionType.Action,
             replaces_multiattack=1,
         )

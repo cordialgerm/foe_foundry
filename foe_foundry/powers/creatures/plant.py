@@ -44,7 +44,7 @@ class _PoisonThorns(Power):
             name="Poison Thorns",
             action=ActionType.BonusAction,
             recharge=5,
-            description=f"Immediately after {stats.selfref} hits a target with an attack, the attack deals an additional {dmg} poison damage and the target is poisoned until the end of their next turn.",
+            description=f"Immediately after {stats.selfref} hits a target with an attack, the attack deals an additional {dmg} poison damage and the target is **Poisoned** until the end of their next turn.",
         )
         return stats, feature
 

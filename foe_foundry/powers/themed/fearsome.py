@@ -193,7 +193,7 @@ class _NightmarishVisions(Power):
             replaces_multiattack=1,
             recharge=5,
             description=f"{stats.selfref.capitalize()} targets a a creature that it can see within 30 feet and forces it to confront its deepest fears. \
-                The target must succeed on a DC {dc} Wisdom save or become Frightened of {stats.selfref}. While frightened in this way, the creature takes {dmg} ongoing psychic damage at the start of each of its turns. Save ends at end of turn.",
+                The target must succeed on a DC {dc} Wisdom save or become **Frightened** of {stats.selfref}. While frightened in this way, the creature takes {dmg} ongoing psychic damage at the start of each of its turns. Save ends at end of turn.",
         )
 
         return stats, feature

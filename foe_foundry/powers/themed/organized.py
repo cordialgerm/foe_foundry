@@ -69,7 +69,7 @@ class _Commander(Power):
 
         feature = Feature(
             name="Commander",
-            description=f"When {stats.selfref} is at or above {hp} hp then each other ally within {distance} ft. has a +{bonus} bonus to attack and damage rolls",
+            description=f"When {stats.roleref} is at or above {hp} hp then each other ally within {distance} ft. has a +{bonus} bonus to attack and damage rolls",
             action=ActionType.Feature,
         )
 
@@ -92,8 +92,8 @@ class _Fanatic(Power):
 
         feature = Feature(
             name="Fanaticism",
-            description=f"When {stats.selfref} is at or below {hp} hp then each other ally within {distance} ft has advantage on attack rolls.\
-                When an ally hits with an attack, then {stats.selfref} gains {temp} temp hp.",
+            description=f"When {stats.roleref} is at or below {hp} hp then each other ally within {distance} ft has advantage on attack rolls.\
+                When an ally hits with an attack, then {stats.roleref} gains {temp} temp hp.",
             action=ActionType.Feature,
         )
 
@@ -114,7 +114,7 @@ class _Inspiring(Power):
 
         feature = Feature(
             name="Inspiring",
-            description=f"When {stats.selfref} succeeds on a saving throw or when an attack roll misses them, one ally who {stats.selfref} can see gains {hp} temp hp.",
+            description=f"When {stats.roleref} succeeds on a saving throw or when an attack roll misses them, one ally who {stats.roleref} can see gains {hp} temp hp.",
             action=ActionType.Reaction,
         )
 

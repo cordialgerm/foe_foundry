@@ -6,7 +6,6 @@ import numpy.typing as npt
 from ..creature_types import CreatureType
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
-from . import common, movement, static
 from .creatures import (
     aberration,
     beast,
@@ -24,7 +23,22 @@ from .creatures import (
 from .power import Power
 from .power_type import PowerType
 from .roles import ambusher, artillery, bruiser, controller, defender, leader, skirmisher
-from .themed import ThemedPowers, breath, deathly, monstrous, organized, poison, tricky, warrior
+from .themed import (
+    ThemedPowers,
+    breath,
+    clever,
+    cruel,
+    deathly,
+    flying,
+    monstrous,
+    organized,
+    poison,
+    reckless,
+    sneaky,
+    tough,
+    tricky,
+    warrior,
+)
 
 
 def select_power(
@@ -42,13 +56,7 @@ def select_powers(
     def select(powers: List[Power]) -> List[Power]:
         return select_from_powers(stats, powers, rng, n)
 
-    if power_type == PowerType.Movement:
-        return select(movement.MovementPowers)
-    elif power_type == PowerType.Static:
-        return select(static.StaticPowers)
-    elif power_type == PowerType.Common:
-        return select(common.CommonPowers)
-    elif power_type == PowerType.Creature:
+    if power_type == PowerType.Creature:
         return select(_creature_powers(stats.creature_type))
     elif power_type == PowerType.Role:
         return select(_role_powers(stats.role))
@@ -90,25 +98,25 @@ def _creature_powers(creature_type: CreatureType) -> List[Power]:
     if creature_type == CreatureType.Aberration:
         return aberration.AberrationPowers
     elif creature_type == CreatureType.Beast:
-        return beast.BeastPowers + [common.NotDeadYet, common.GoesDownFighting]
+        return beast.BeastPowers + [sneaky.NotDeadYet, tough.GoesDownFighting]
     elif creature_type == CreatureType.Celestial:
         return celestial.CelestialPowers
     elif creature_type == CreatureType.Construct:
         return construct.ConstructPowers
     elif creature_type == CreatureType.Dragon:
-        return dragon.DragonPowers + breath.BreathPowers + [movement.Flyer]
+        return dragon.DragonPowers + breath.BreathPowers + [flying.Flyer]
     elif creature_type == CreatureType.Elemental:
-        return elemental.ElementalPowers + [common.DamagingAura] + movement.MovementPowers
+        return elemental.ElementalPowers + [elemental.DamagingAura]
     elif creature_type == CreatureType.Fey:
         return fey.FeyPowers + tricky.TrickyPowers
     elif creature_type == CreatureType.Fiend:
-        return fiend.FiendishPowers + [common.DelightsInSuffering]
+        return fiend.FiendishPowers + [cruel.DelightsInSuffering]
     elif creature_type == CreatureType.Giant:
         return giant.GiantPowers + warrior.WarriorPowers
     elif creature_type == CreatureType.Humanoid:
         return []
     elif creature_type == CreatureType.Monstrosity:
-        return monstrous.MonstrousPowers + [common.NotDeadYet, common.GoesDownFighting]
+        return monstrous.MonstrousPowers + [sneaky.NotDeadYet, tough.GoesDownFighting]
     elif creature_type == CreatureType.Ooze:
         return ooze.OozePowers + [monstrous.Swallow]
     elif creature_type == CreatureType.Plant:
@@ -121,18 +129,18 @@ def _creature_powers(creature_type: CreatureType) -> List[Power]:
 
 def _role_powers(role_type: MonsterRole) -> List[Power]:
     if role_type == MonsterRole.Ambusher:
-        return ambusher.AmbusherPowers + [tricky.NimbleReaction, common.Vanish]
+        return ambusher.AmbusherPowers + [tricky.NimbleReaction, sneaky.Vanish]
     elif role_type == MonsterRole.Artillery:
         return artillery.ArtilleryPowers
     elif role_type == MonsterRole.Bruiser:
-        return bruiser.BruiserPowers + [common.GoesDownFighting, common.Frenzy]
+        return bruiser.BruiserPowers + [tough.GoesDownFighting, reckless.Frenzy]
     elif role_type == MonsterRole.Controller:
         return controller.ControllerPowers + [warrior.PinningShot]
     elif role_type == MonsterRole.Defender:
-        return defender.DefenderPowers + [warrior.Challenger, common.Defender]
+        return defender.DefenderPowers + [warrior.Challenger]
     elif role_type == MonsterRole.Leader:
-        return leader.LeaderPowers + [common.MarkTheTarget] + organized.OrganizedPowers
+        return leader.LeaderPowers + [clever.MarkTheTarget] + organized.OrganizedPowers
     elif role_type == MonsterRole.Skirmisher:
-        return skirmisher.SkirmisherPowers + [common.Vanish, artillery.QuickStep]  # TODO
+        return skirmisher.SkirmisherPowers + [sneaky.Vanish, artillery.QuickStep]  # TODO
     else:
         raise ValueError(f"Unsupported monster role {role_type}")

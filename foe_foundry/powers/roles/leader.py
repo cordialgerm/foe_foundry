@@ -86,7 +86,7 @@ class _Intimidate(Power):
             recharge=5,
             description=f"{stats.roleref.capitalize()} chooses a target that can hear them within 50 ft. \
                 The target must make a contested Insight check against {stats.roleref}'s Intimidation. \
-                On a failure, the target is Frightened of {stats.roleref} for 1 minute (save ends at end of turn).\
+                On a failure, the target is **Frightened** of {stats.roleref} for 1 minute (save ends at end of turn).\
                 While Frightened in this way, attacks made against the target have advantage.",
         )
 
@@ -167,10 +167,44 @@ class _LeadByExample(Power):
         return stats, feature
 
 
+class _Reposition(Power):
+    """Each ally within 60 feet of this creature who can see and hear them
+    can immediately move their speed without provoking opportunity attacks."""
+
+    def __init__(self):
+        super().__init__(name="Reposition", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this trait makes a lot of sense for leaders and high-int enemies
+
+        score = 0
+
+        if candidate.role == MonsterRole.Leader:
+            score += MODERATE_AFFINITY
+
+        if candidate.attributes.INT >= 16:
+            score += MODERATE_AFFINITY
+
+        return score if score > 0 else NO_AFFINITY
+
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Reposition",
+            description=f"Each ally within 60 ft that can see and hear {stats.selfref} \
+                can immediately move its speed without provoking opportunity attacks",
+            action=ActionType.BonusAction,
+            recharge=5,
+        )
+        return stats, feature
+
+
 ShoutOrders: Power = _ShoutOrders()
 Intimidate: Power = _Intimidate()
 Encouragement: Power = _Encouragement()
 LeadByExample: Power = _LeadByExample()
+Reposition: Power = _Reposition()
 
 
-LeaderPowers: List[Power] = [ShoutOrders, Intimidate, Encouragement, LeadByExample]
+LeaderPowers: List[Power] = [ShoutOrders, Intimidate, Encouragement, LeadByExample, Reposition]

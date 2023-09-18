@@ -87,7 +87,7 @@ class _VirulentPoison(Power):
             action=ActionType.Feature,
             hidden=True,
             modifies_attack=True,
-            description="On a hit, the target is poisoned until the end of their next turn.",
+            description="On a hit, the target is **Poisoned** until the end of their next turn.",
         )
 
         return stats, [feature1, feature2]

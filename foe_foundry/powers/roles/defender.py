@@ -22,6 +22,43 @@ from ..scores import (
 )
 
 
+class _Defender(Power):
+    """When an ally within 5 feet of this creature is targeted by an attack or spell, this creature can make themself the intended target of the attack."""
+
+    def __init__(self):
+        super().__init__(name="Defender", power_type=PowerType.Role)
+
+    def _is_minion(self, candidate: BaseStatblock) -> bool:
+        return candidate.cr <= 2 and candidate.role not in {
+            MonsterRole.Ambusher,
+            MonsterRole.Controller,
+            MonsterRole.Leader,
+            MonsterRole.Skirmisher,
+        }
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this power makes a lot of sense for minions and defensive creatures
+        # for now, I will interpret minions as low CR creatures
+        score = 0
+        if self._is_minion(candidate):
+            score += MODERATE_AFFINITY
+
+        if candidate.role == MonsterRole.Defender:
+            score += EXTRA_HIGH_AFFINITY
+
+        return score if score > 0 else NO_AFFINITY
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        name = "Cannon Fodder" if self._is_minion(stats) else "Defender"
+
+        feature = Feature(
+            name=name,
+            description=f"When an ally within 5 feet is targeted by an attack or spell, {stats.selfref} can make themselves the intended target of the attack or spell instead.",
+            action=ActionType.Reaction,
+        )
+        return stats, feature
+
+
 class _StickWithMe(Power):
     def __init__(self):
         super().__init__(name="Stick with Me!", power_type=PowerType.Role)
@@ -124,9 +161,10 @@ class _SpellReflection(Power):
         return stats, feature
 
 
-StickWithMe: Power = _StickWithMe()
 Blocker: Power = _Blocker()
+Defender: Power = _Defender()
+StickWithMe: Power = _StickWithMe()
 SpellReflection: Power = _SpellReflection()
 
 
-DefenderPowers: List[Power] = [StickWithMe, Blocker, SpellReflection]
+DefenderPowers: List[Power] = [Blocker, Defender, StickWithMe, SpellReflection]

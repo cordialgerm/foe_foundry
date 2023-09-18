@@ -14,6 +14,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Burning, DamageType, Dazed, Frozen, Shocked
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
+from ..attack import flavorful_damage_types
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -43,6 +44,117 @@ def _as_elemental(stats: BaseStatblock) -> BaseStatblock:
     if stats.secondary_damage_type is None or not stats.secondary_damage_type.is_elemental:
         stats = stats.copy(secondary_damage_type=DamageType.Fire)
     return stats
+
+
+class _DamagingAura(Power):
+    """Any creature who moves within 10 feet of this creature or who starts their turn there takes CR damage of a type appropriate for this creature."""
+
+    def __init__(self):
+        super().__init__(name="Damaging Aura", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this power makes a lot of sense for foes with a secondary damage type
+        # it can also make sense for large STR-martials (wielding many weapons)
+
+        if candidate.secondary_damage_type is not None:
+            return HIGH_AFFINITY
+        else:
+            return NO_AFFINITY
+
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=stats.primary_damage_type)
+
+        damage_type = stats.secondary_damage_type
+
+        if damage_type == DamageType.Acid:
+            name = "Corrosive Fumes"
+        elif damage_type == DamageType.Bludgeoning:
+            name = "Flurry of Blows"
+        elif damage_type == DamageType.Cold:
+            name = "Arctic Chill"
+        elif damage_type == DamageType.Fire:
+            name = "Superheated"
+        elif damage_type == DamageType.Force:
+            name = "Disintegrating Presence"
+        elif damage_type == DamageType.Lightning:
+            name = "Arcing Electricity"
+        elif damage_type == DamageType.Necrotic:
+            name = "Deathly Presence"
+        elif damage_type == DamageType.Piercing:
+            name = "Bristling"
+        elif damage_type == DamageType.Poison:
+            name = "Toxic Presence"
+        elif damage_type == DamageType.Psychic:
+            name = "Unsettling Presence"
+        elif damage_type == DamageType.Radiant:
+            name = "Holy Presence"
+        elif damage_type == DamageType.Slashing:
+            name = "Constant Slashing"
+        else:
+            name = "Damaging Aura"
+
+        dmg = int(ceil(stats.cr))
+
+        feature = Feature(
+            name=name,
+            description=f"Any creature who moves within 10 feet of {stats.selfref} or who starts their turn there takes {dmg} {damage_type} damage",
+            action=ActionType.Feature,
+        )
+
+        return stats, feature
+
+
+class _ElementalAffinity(Power):
+    """This creature is aligned to a particular element"""
+
+    def __init__(self):
+        super().__init__(name="ElementalAffinity", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # if the monster has a secondary damage type then it's a good fit
+        # otherwise, certain monster types are good fits
+        score = 0
+        if candidate.secondary_damage_type is not None:
+            score += MODERATE_AFFINITY
+        elif flavorful_damage_types(candidate) is not None:
+            score += MODERATE_AFFINITY
+
+        return score if score > 0 else NO_AFFINITY
+
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
+        damage_type = stats.secondary_damage_type
+
+        if damage_type is None:
+            candidates = flavorful_damage_types(stats, default=DamageType.Fire)
+            i = rng.choice(len(candidates))
+            damage_type = list(candidates)[i]
+            stats = stats.copy(secondary_damage_type=damage_type)
+
+        if stats.cr <= 8 and damage_type not in stats.damage_resistances:
+            new_damage_resistances = stats.damage_resistances.copy() | {damage_type}
+            stats = stats.copy(damage_resistances=new_damage_resistances)
+            descr = "resistance"
+        else:
+            new_damage_resistances = stats.damage_resistances.copy() - {damage_type}
+            new_damage_immunities = stats.damage_immunities.copy() | {damage_type}
+            descr = "immunity"
+            stats = stats.copy(
+                damage_resistances=new_damage_resistances,
+                damage_immunities=new_damage_immunities,
+            )
+
+        dmg = damage_type.name.lower()
+        feature = Feature(
+            name=f"{damage_type.name} Affinity",
+            description=f"{stats.selfref} gains {descr} to {dmg} damage. It gains advantage on its attacks while it is in an environment where sources of {dmg} damage are prevalant.",
+            action=ActionType.Feature,
+        )
+        return stats, feature
 
 
 class _ElementalShroud(Power):
@@ -183,7 +295,7 @@ class _ElementalSmite(Power):
         elif dmg_type == DamageType.Cold:
             name = "Chill Smite"
             frozen = Frozen(dc=dc)
-            condition = f"and forces the target to make a DC {dc} Constitution saving throw. On a failure, the target is {frozen.caption}. {frozen.full_description}"
+            condition = f"and forces the target to make a DC {dc} Constitution saving throw. On a failure, the target is {frozen.caption}. {frozen.description_3rd}"
         elif dmg_type == DamageType.Lightning:
             name = "Shocking Smite"
             shocked = Shocked()
@@ -207,10 +319,19 @@ class _ElementalSmite(Power):
         return stats, feature
 
 
+DamagingAura: Power = _DamagingAura()
+ElementalAffinity: Power = _ElementalAffinity()
 ElementalBurst: Power = _ElementalBurst()
 ElementalMagic: Power = _ElementalMagic()
 ElementalShroud: Power = _ElementalShroud()
 ElementalSmite: Power = _ElementalSmite()
 
 
-ElementalPowers: List[Power] = [ElementalBurst, ElementalMagic, ElementalShroud, ElementalSmite]
+ElementalPowers: List[Power] = [
+    DamagingAura,
+    ElementalAffinity,
+    ElementalBurst,
+    ElementalMagic,
+    ElementalShroud,
+    ElementalSmite,
+]

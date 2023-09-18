@@ -58,7 +58,7 @@ class MonsterTemplateData:
 
     def __post_init__(self):
         self.attack_modifier_text = (
-            ". ".join([f.description for f in self.attack_modifiers])
+            " ".join([fix_punctuation(f.description) for f in self.attack_modifiers])
             if len(self.attack_modifiers) > 0
             else ""
         )

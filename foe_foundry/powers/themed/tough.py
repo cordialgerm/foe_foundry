@@ -204,18 +204,94 @@ class _LimitedMagicImmunity(Power):
         return stats, feature
 
 
+class _Athletic(Power):
+    """This creature is Athletic"""
+
+    def __init__(self):
+        super().__init__(name="Athletic", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this makes sense for most monsters with reasonable physical stats except artillery or controllers
+        if (
+            candidate.role == MonsterRole.Artillery
+            or candidate.role == MonsterRole.Controller
+            or candidate.attributes.STR <= 10
+            or candidate.attributes.DEX <= 10
+        ):
+            return NO_AFFINITY
+        else:
+            return MODERATE_AFFINITY
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        # give the monster reasonable physical stats
+        new_attrs = (
+            stats.attributes.boost(Stats.STR, 2)
+            .grant_proficiency_or_expertise(Skills.Athletics)
+            .grant_save_proficiency(Stats.STR)
+        )
+        stats = stats.copy(attributes=new_attrs)
+        feature = Feature(
+            name="Athletic",
+            action=ActionType.Feature,
+            description=f"On a hit, {stats.selfref} can **Grapple** the target instead of doing damage with the attack.",
+            hidden=True,
+            modifies_attack=True,
+        )
+        return stats, feature
+
+
+class _QuickRecovery(Power):
+    """Quick Recovery (Trait). At the start of this creature's turn, they can attempt a saving throw
+    against any effect on them that can be ended by a successful saving throw."""
+
+    def __init__(self):
+        super().__init__(name="Quick Recovery", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this power makes a lot of sense for high CR creatures, creatures with high CON (resilient), or high CHA (luck)
+        score = 0
+        if candidate.cr >= 7:
+            score += MODERATE_AFFINITY
+        if candidate.cr >= 11:
+            score += MODERATE_AFFINITY
+        if candidate.attributes.CON >= 16:
+            score += MODERATE_AFFINITY
+        if candidate.attributes.CHA >= 16:
+            score += MODERATE_AFFINITY
+        if candidate.role == MonsterRole.Leader:
+            score += MODERATE_AFFINITY
+        return score if score > 0 else NO_AFFINITY
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        # add CON save proficiency
+        new_attrs = stats.attributes.grant_save_proficiency(Stats.CON)
+        stats = stats.copy(attributes=new_attrs)
+
+        feature = Feature(
+            name="Quick Recovery",
+            description=f"At the start of {stats.selfref}'s turn, they can attempt a saving throw \
+                         against any effect on them that can be ended by a successful saving throw",
+            action=ActionType.Feature,
+        )
+        return stats, feature
+
+
+Athletic: Power = _Athletic()
 AdrenalineRush: Power = _AdrenalineRush()
 GoesDownFighting: Power = _GoesDownFighting()
 LimitedMagicImmunity: Power = _LimitedMagicImmunity()
 MagicResistance: Power = _MagicResistance()
 NotDeadYet: Power = _NotDeadYet()
+QuickRecovery: Power = _QuickRecovery()
 RefuseToSurrender: Power = _RefuseToSurrender()
 
 ToughPowers: List[Power] = [
+    Athletic,
     AdrenalineRush,
     GoesDownFighting,
     LimitedMagicImmunity,
     MagicResistance,
     NotDeadYet,
+    QuickRecovery,
     RefuseToSurrender,
 ]

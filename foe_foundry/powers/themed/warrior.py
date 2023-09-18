@@ -73,13 +73,13 @@ class _PinningShot(Power):
         if not candidate.attack_type.is_ranged():
             return NO_AFFINITY
 
-        score = MODERATE_AFFINITY
+        score = LOW_AFFINITY
 
         if candidate.role in {MonsterRole.Controller, MonsterRole.Artillery}:
             score += MODERATE_AFFINITY
 
         if candidate.primary_attribute == Stats.STR:
-            score += MODERATE_AFFINITY
+            score += LOW_AFFINITY
 
         return score if score > 0 else NO_AFFINITY
 
@@ -93,7 +93,7 @@ class _PinningShot(Power):
         feature = Feature(
             name=name,
             action=ActionType.Feature,
-            description=f"On a hit, the target must succeed on a DC {dc} Strength saving throw or be Restrained (save ends at end of turn).",
+            description=f"On a hit, the target must succeed on a DC {dc} Strength saving throw or be **Restrained** (save ends at end of turn).",
             hidden=True,
             modifies_attack=True,
         )
@@ -157,26 +157,6 @@ class _PackTactics(Power):
         return stats, feature
 
 
-class _Charger(Power):
-    def __init__(self):
-        super().__init__(name="Charger", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        score = _score_could_be_melee_fighter(candidate, requires_training=False)
-        return score if score > 0 else NO_AFFINITY
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = _as_melee_fighter(stats)
-        dc = stats.difficulty_class
-        feature = Feature(
-            name="Charge",
-            action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} charges by using Dash as a bonus action. Up to one creature that is within 5 ft of the path \
-                that the creature charges must make a DC {dc} Strength saving throw or be knocked Prone.",
-        )
-        return stats, feature
-
-
 class _CleavingStrike(Power):
     def __init__(self):
         super().__init__(name="Cleaving Strike", power_type=PowerType.Theme)
@@ -224,7 +204,7 @@ class _Disciplined(Power):
         feature = Feature(
             name="Disciplined",
             action=ActionType.Reaction,
-            description=f"If {stats.selfref} misses an attack or fails a saving throw while another friendly creature with this trait is within 10 feet, it may use its reaction to re-roll the attack or saving throw.",
+            description=f"If {stats.selfref} misses an attack or fails a saving throw while another friendly creature is within 10 feet, it may use its reaction to re-roll the attack or saving throw.",
         )
         return stats, feature
 
@@ -248,19 +228,59 @@ class _MageSlayer(Power):
         return stats, feature
 
 
-PinningShot: Power = _PinningShot()
+class _ParryAndRiposte(Power):
+    """This creature adds +3 to their Armor Class against one melee attack that would hit them.
+    If the attack misses, this creature can immediately make a weapon attack against the creature making the parried attack.
+    """
+
+    def __init__(self):
+        super().__init__(name="Parry and Riposte", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        # this monster requires a melee weapon
+        # it makes a ton of sense for defenders and leaders
+        # clever and dextrous foes get a boost as well
+        if candidate.attack_type != AttackType.MeleeWeapon:
+            return NO_AFFINITY
+
+        score = 0
+        if candidate.role in {MonsterRole.Defender, MonsterRole.Leader}:
+            score += HIGH_AFFINITY
+        if candidate.attributes.INT >= 14:
+            score += MODERATE_AFFINITY
+        if candidate.attributes.WIS >= 14:
+            score += MODERATE_AFFINITY
+        if candidate.attributes.DEX >= 14:
+            score += MODERATE_AFFINITY
+
+        return score if score > 0 else NO_AFFINITY
+
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Parry and Riposte",
+            description=f"{stats.selfref.capitalize()} adds +3 to their Armor Class against one melee attack that would hit them.\
+                         If the attack misses, this creature can immediately make a weapon attack against the creature making the parried attack.",
+            action=ActionType.Reaction,
+            recharge=6,
+        )
+        return stats, feature
+
+
 Challenger: Power = _Challenger()
-PackTactics: Power = _PackTactics()
-Charger: Power = _Charger()
 CleavingStrike: Power = _CleavingStrike()
 Disciplined: Power = _Disciplined()
+PinningShot: Power = _PinningShot()
+PackTactics: Power = _PackTactics()
+ParryAndRiposte: Power = _ParryAndRiposte()
 MageSlayer: Power = _MageSlayer()
 
 WarriorPowers: List[Power] = [
     PinningShot,
     Challenger,
     PackTactics,
-    Charger,
+    ParryAndRiposte,
     CleavingStrike,
     Disciplined,
     MageSlayer,

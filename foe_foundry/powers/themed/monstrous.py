@@ -88,8 +88,8 @@ class _Constriction(Power):
             name="Constrict",
             action=ActionType.Action,
             replaces_multiattack=1,
-            description=f"{stats.selfref.capitalize()} chooses a target it can see within {reach} feet. The target must make a DC {dc} Strength saving throw or become Grappled (escape DC {dc}). \
-                While grappled in this way, the target is also Restrained and takes {dmg} ongoing bludgeoning damage at the start of each of its turns.",
+            description=f"{stats.selfref.capitalize()} chooses a target it can see within {reach} feet. The target must make a DC {dc} Strength saving throw or become **Grappled** (escape DC {dc}). \
+                While grappled in this way, the target is also **Restrained** and takes {dmg} ongoing bludgeoning damage at the start of each of its turns.",
         )
         return stats, feature
 
@@ -122,9 +122,9 @@ class _Swallow(Power):
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} attempts to swallow one target within {reach} ft. \
                 The target must make a DC {dc} Dexterity saving throw. On a failure, it is swallowed by {stats.selfref}. \
-                A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside {stats.selfref}, and it takes {dmg} ongoing acid damage at the start of each of its turns.  \
+                A swallowed creature is **Blinded** and **Restrained**, it has total cover against attacks and other effects outside {stats.selfref}, and it takes {dmg} ongoing acid damage at the start of each of its turns.  \
                 If {stats.selfref} takes {threshold} damage or more on a single turn from a creature inside it, {stats.selfref} must make a DC {regurgitate_dc} \
-                Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of {stats.selfref}. \
+                Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall **Prone** in a space within 10 feet of {stats.selfref}. \
                 If {stats.selfref} dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.",
         )
         return stats, feature
@@ -212,7 +212,7 @@ class _LingeringWound(Power):
             stats = stats.copy(primary_damage_type=DamageType.Piercing)
 
         dc = stats.difficulty_class_easy
-        dmg = int(floor(stats.attack.average_damage))
+        dmg = int(floor(0.75 * stats.attack.average_damage))
         dmg_type = stats.attack.damage.damage_type
         feature = Feature(
             name="Lingering Wound",

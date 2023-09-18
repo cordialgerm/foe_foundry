@@ -189,7 +189,7 @@ class _SpectralDuplicate(Power):
             action=ActionType.BonusAction,
             uses=1,
             description=f"{stats.selfref.capitalize()} creates a spectral duplicate of itself in an unoccupied space it can see within 60 feet. \
-                While the duplicate exists, {stats.selfref} is invisible and unconscious. The duplicate has the same statistics and knowledge as {stats.selfref} \
+                While the duplicate exists, {stats.selfref} is **Invisible** and **Unconscious**. The duplicate has the same statistics and knowledge as {stats.selfref} \
                 and acts immediately in initiative after {stats.selfref}. The duplicate disappears when {stats.selfref} drops to 0 hp.",
         )
 

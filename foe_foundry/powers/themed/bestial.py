@@ -56,7 +56,7 @@ class _EarthshakingDemise(Power):
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Earthshaking Demise",
-            description=f"When {stats.selfref} dies, they topple to the ground, forcing each smaller creature within 20 feet to succeed on a DC 15 Strength saving throw or be knocked Prone.",
+            description=f"When {stats.selfref} dies, they topple to the ground, forcing each smaller creature within 20 feet to succeed on a DC 15 Strength saving throw or be knocked **Prone**.",
             action=ActionType.Reaction,
         )
 

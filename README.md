@@ -117,6 +117,13 @@
 - what about a power budget
 
 
+# TODO - additional ideas
+
+# Perceptive (perception proficiency / expertise)
+# Hunter (survival proficiency / expertise)
+# Beasts often  have the ability to climb, swim, or fly, and they might be
+
+
 
 ## More Powers
 

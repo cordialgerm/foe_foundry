@@ -13,7 +13,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats
-from ...statblocks import BaseStatblock
+from ...statblocks import BaseStatblock, MonsterDials
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -177,10 +177,47 @@ class _HarrassingRetreat(Power):
         return stats, feature
 
 
-Nimble: Power = _Nimble()
-CarefulSteps: Power = _CarefulSteps()
-KnockBack: Power = _KnockBack()
-Skirmish: Power = _Skirmish()
-HarassingRetreat: Power = _HarrassingRetreat()
+class _Speedy(Power):
+    def __init__(self):
+        super().__init__(name="Speedy", power_type=PowerType.Role)
 
-SkirmisherPowers: List[Power] = [Nimble, CarefulSteps, KnockBack, Skirmish, HarassingRetreat]
+    def score(self, candidate: BaseStatblock) -> float:
+        return _skirmisher_requirements(candidate, require_skirmisher=False)
+
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature | None]:
+        # give the monster reasonable DEX stat
+        new_attrs = (
+            stats.attributes.boost(Stats.DEX, 2)
+            .grant_proficiency_or_expertise(Skills.Acrobatics)
+            .grant_save_proficiency(Stats.DEX)
+        )
+        stats = stats.copy(attributes=new_attrs).apply_monster_dials(
+            MonsterDials(speed_modifier=10)
+        )
+
+        feature = Feature(
+            name="Speedy",
+            action=ActionType.Feature,
+            description=f"{stats.selfref.capitalize()}'s movement increases by 10ft and it gains proficiency in Acrobatics and Dexterity saves",
+        )
+        return stats, feature
+
+
+CarefulSteps: Power = _CarefulSteps()
+HarassingRetreat: Power = _HarrassingRetreat()
+KnockBack: Power = _KnockBack()
+Nimble: Power = _Nimble()
+Skirmish: Power = _Skirmish()
+Speedy: Power = _Speedy()
+
+
+SkirmisherPowers: List[Power] = [
+    CarefulSteps,
+    HarassingRetreat,
+    KnockBack,
+    Nimble,
+    Skirmish,
+    Speedy,
+]

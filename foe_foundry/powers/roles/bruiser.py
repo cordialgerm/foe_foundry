@@ -92,8 +92,8 @@ class _Grappler(Power):
         feature = Feature(
             name="Grappling Strike",
             action=ActionType.BonusAction,
-            description=f"Immediately after {stats.roleref} hits with a weapon attack, the target must make a DC {dc} Strength save (escape DC {dc}). \
-                 While grappled in this way, the creature is also restrained",
+            description=f"Immediately after {stats.roleref} hits with a weapon attack, the target must make a DC {dc} Strength save or be **Grappled** (escape DC {dc}). \
+                 While grappled in this way, the creature is also **Restrained**",
         )
 
         return stats, feature
@@ -175,7 +175,7 @@ class _Basher(Power):
         feature = Feature(
             name="Stunning Blow",
             action=ActionType.BonusAction,
-            description=f"Immediately after the {stats.roleref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution save or be Stunned until the end of the {stats.selfref}'s next turn.",
+            description=f"Immediately after the {stats.roleref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution save or be **Stunned** until the end of the {stats.selfref}'s next turn.",
             recharge=6,
         )
 

@@ -117,7 +117,7 @@ class _AuraOfDespair(Power):
             recharge=5,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} unleashes a dreadful scream laced with sorrow and despair. \
-                Each creature within 30 feet that can hear {stats.selfref} must make a DC {dc} Wisdom saving throw or be frightened of {stats.selfref} for 1 minute (save ends at end of turn). \
+                Each creature within 30 feet that can hear {stats.selfref} must make a DC {dc} Wisdom saving throw or be **Frightened** of {stats.selfref} for 1 minute (save ends at end of turn). \
                 While frightened in this way, the creature loses any resistance or immunity to psychic and necrotic damage.",
         )
 

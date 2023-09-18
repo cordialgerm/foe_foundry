@@ -52,7 +52,7 @@ class _DistractingAttack(Power):
         feature = Feature(
             name="Distracting Attack",
             action=ActionType.Feature,
-            description=f"On a hit, {stats.roleref} can choose to become invisible until the start of their next turn.",
+            description=f"On a hit, {stats.roleref} can choose to become **Invisible** until the start of their next turn or the next time they make an attack or cast a spell.",
             hidden=True,
             modifies_attack=True,
         )

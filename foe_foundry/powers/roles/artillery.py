@@ -46,7 +46,7 @@ class _Ricochet(Power):
         feature = Feature(
             name="Ricochet",
             action=ActionType.Reaction,
-            description=f"When {stats.roleref} misses with a ranged attack, it can make the same attack again against a different target within 15 ft.",
+            description=f"When {stats.roleref} misses with a ranged attack, it can make the same attack again against a different target within 15 ft of the original target.",
         )
 
         return stats, feature
