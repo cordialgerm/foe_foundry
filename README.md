@@ -51,25 +51,14 @@ Selection engine should take parameters like:
   - Keen Senses
 - Deathly
   - Chain Agony (increases as it spreads)
-- Brutish:
-  - Throw Boulder,
-  - Toss
 - Magic:
   - Energy Blast
   - Energy Wall
+  - Energy Beam
   - Chain Spell
   - Disintigration Beam
 - Eye Beams: anti magic eye, anti healing eye, vulnerability eye, random eye beams
 - Weapon Powers
-
-### Construct
-
-- Immutable Form
-- Spell Storing
-- Bound
-- Smother
-- Retrieval
-- Slow
 
 ### Fighting Styles / Weapon Powers
 
@@ -80,14 +69,6 @@ Selection engine should take parameters like:
 - Crossbow
 - Longsword / Shield
 - Greatsword / Greataxe
-
-### Abberrant
-
-- **Antimagic Gullet** - https://www.dndbeyond.com/monsters/2821163-eye-monger - also grants a Swallow
-
-### Tentacle Powers
-
-- **Tentacle Slam** - https://www.dndbeyond.com/monsters/16973-otyugh
 
 ### Psionic
 

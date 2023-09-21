@@ -12,10 +12,12 @@ from ...ac import ArmorClass
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -192,11 +194,40 @@ class _FlurryOfBlows(Power):
         return stats, feature
 
 
+class _Toss(Power):
+    def __init__(self):
+        super().__init__(name="Toss", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_could_be_reckless_fighter(
+            candidate, allow_defender=False, large_size_boost=True
+        )
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = _as_reckless_fighter(stats)
+        size = stats.size.decrement()
+        dmg = DieFormula.target_value(0.7 * stats.attack.average_damage, Die.d6)
+        distance = max(10, min(30, easy_multiple_of_five(3 * stats.cr)))
+        dc = stats.difficulty_class
+
+        feature = Feature(
+            name="Toss",
+            action=ActionType.Action,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} attempts to toss a {size} or smaller creature within 5 feet. The creature must make a DC {dc} Strength saving throw. \
+                On a failure, it takes {dmg.description} bludgeoning damage and is thrown up to {distance} feet and falls **Prone**. If the thrown creature collides with another creature, then that other creature must make a DC {dc} Dexterity saving throw. \
+                On a failure, the other creature takes half the damage.",
+        )
+
+        return stats, feature
+
+
 Charger: Power = _Charger()
 Frenzy: Power = _Frenzy()
 FlurryOfBlows: Power = _FlurryOfBlows()
 GoesDownFighting: Power = _GoesDownFighting()
 RefuseToSurrender: Power = _RefuseToSurrender()
+Toss: Power = _Toss()
 WildCleave: Power = _WildCleave()
 
 
@@ -206,5 +237,6 @@ RecklessPowers: List[Power] = [
     FlurryOfBlows,
     GoesDownFighting,
     RefuseToSurrender,
+    Toss,
     WildCleave,
 ]

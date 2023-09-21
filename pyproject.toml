@@ -16,6 +16,9 @@ num2words = "^0.5.12"
 pandas = "^2.0.3"
 markdown = "^3.4.4"
 jinja-markdown = "^1.210911"
+click = "^8.1.7"
+beautifulsoup4 = "^4.12.2"
+tqdm = "^4.66.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0"
