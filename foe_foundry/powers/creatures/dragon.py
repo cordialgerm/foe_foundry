@@ -6,6 +6,7 @@ from numpy.random import Generator
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
@@ -18,6 +19,19 @@ from ..scores import (
     MODERATE_AFFINITY,
     NO_AFFINITY,
 )
+from ..themed.breath import BreathAttack
+
+
+def _score_dragon(candidate: BaseStatblock, high_cr_boost: bool = False) -> float:
+    if candidate.creature_type != CreatureType.Dragon:
+        return NO_AFFINITY
+
+    score = HIGH_AFFINITY
+
+    if high_cr_boost:
+        score += MODERATE_AFFINITY
+
+    return score
 
 
 class _DragonsGaze(Power):
@@ -25,10 +39,7 @@ class _DragonsGaze(Power):
         super().__init__(name="Dragon's Gaze", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type != CreatureType.Dragon:
-            return NO_AFFINITY
-
-        return HIGH_AFFINITY
+        return _score_dragon(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
@@ -53,15 +64,7 @@ class _DraconicRetaliation(Power):
         super().__init__(name="Draconic Retaliation", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type != CreatureType.Dragon:
-            return NO_AFFINITY
-
-        score = LOW_AFFINITY
-
-        if candidate.cr >= 5:
-            score += HIGH_AFFINITY
-
-        return score
+        return _score_dragon(candidate, high_cr_boost=True)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -86,8 +89,55 @@ class _DraconicRetaliation(Power):
         return stats, feature
 
 
+class _TailSwipe(Power):
+    def __init__(self):
+        super().__init__(name="Tail Swipe", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_dragon(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Tail Swipe",
+            action=ActionType.Reaction,
+            description=f"When a creature {stats.selfref} can see within reach hits {stats.selfref} with a melee attack, {stats.selfref} makes an attack against it. On a hit, the target is pushed 10 feet away.",
+        )
+        return stats, feature
+
+
+class _WingBuffet(Power):
+    def __init__(self):
+        super().__init__(name="Tail Swipe", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_dragon(candidate, high_cr_boost=True)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = stats.copy(speed=stats.speed.grant_flying())
+        dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, suggested_die=Die.d6)
+        dc = stats.difficulty_class_easy
+
+        feature = Feature(
+            name="Wing Buffet",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} beats its wings. Each other creature within 10 feet must make a DC {dc} Strength saving throw. \
+                On a failure, the creature takes {dmg.description} bludgeoning damage and is knocked **Prone**. On a success, the creature takes half damage and is not knocked prone. \
+                The dragon then flies up to half its movement speed. This movement does not trigger attacks of opportunity from prone targets.",
+        )
+        return stats, feature
+
+
 DragonsGaze: Power = _DragonsGaze()
 DraconicRetaliation: Power = _DraconicRetaliation()
+TailSwipe: Power = _TailSwipe()
+WingBuffet: Power = _WingBuffet()
 
 
-DragonPowers: List[Power] = [DragonsGaze, DraconicRetaliation]
+DragonPowers: List[Power] = [
+    BreathAttack,
+    DragonsGaze,
+    DraconicRetaliation,
+    TailSwipe,
+    WingBuffet,
+]

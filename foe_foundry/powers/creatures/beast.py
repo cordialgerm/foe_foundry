@@ -26,7 +26,7 @@ def _score_beast(candidate: BaseStatblock, primary_attribute: Stats | None = Non
     if candidate.creature_type != CreatureType.Beast:
         return NO_AFFINITY
 
-    score = MODERATE_AFFINITY
+    score = HIGH_AFFINITY
 
     if primary_attribute is not None and candidate.primary_attribute == primary_attribute:
         score += MODERATE_AFFINITY
@@ -97,8 +97,49 @@ class _Gore(Power):
         return stats, feature
 
 
+class _Web(Power):
+    def __init__(self):
+        super().__init__(name="Web", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_beast(candidate, Stats.STR)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, List[Feature]]:
+        new_speed = stats.speed.copy(climb=stats.speed.walk)
+        stats = stats.copy(speed=new_speed)
+
+        dc = stats.difficulty_class
+
+        feature1 = Feature(
+            name="Spider Climb",
+            action=ActionType.Feature,
+            description=f"{stats.selfref} can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+        )
+
+        feature2 = Feature(
+            name="Web Sense",
+            action=ActionType.Feature,
+            description=f"While in contact with a web, {stats.selfref} knows the exact location of any other creature in contact with the same web.",
+        )
+
+        feature3 = Feature(
+            name="Web",
+            action=ActionType.Action,
+            recharge=5,
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} shoots a sticky web at a point it can see within 60 feet. \
+                Each creature within a 20 foot cube centered at the point must make a DC {dc} Dexterity saving throw or become **Restrained** (save ends at end of turn). \
+                The area of the web is considered difficult terrain, and any creature that ends its turn in the area must repeat the save or become restrained.",
+        )
+
+        return stats, [feature1, feature2, feature3]
+
+
 Gore: Power = _Gore()
 HitAndRun: Power = _HitAndRun()
 MotivatedByCarnage: Power = _MotivatedByCarnage()
+Web: Power = _Web()
 
-BeastPowers: List[Power] = [Gore, HitAndRun, MotivatedByCarnage]
+BeastPowers: List[Power] = [Gore, HitAndRun, MotivatedByCarnage, Web]

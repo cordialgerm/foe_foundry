@@ -40,10 +40,13 @@ def _score_cursed(candidate: BaseStatblock) -> float:
     if candidate.secondary_damage_type == DamageType.Necrotic:
         score += MODERATE_AFFINITY
 
+    if score == 0:
+        return NO_AFFINITY
+
     if candidate.role in {MonsterRole.Leader, MonsterRole.Controller}:
         score += MODERATE_AFFINITY
 
-    return score if score > 0 else NO_AFFINITY
+    return score
 
 
 def _as_cursed(stats: BaseStatblock) -> BaseStatblock:

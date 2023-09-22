@@ -4,9 +4,13 @@ from typing import List, Tuple
 import numpy as np
 from numpy.random import Generator
 
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
+
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
@@ -94,8 +98,44 @@ class _RighteousJudgement(Power):
         return stats, feature
 
 
+class _DivineLaw(Power):
+    def __init__(self):
+        super().__init__(name="Divine Law", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_celestial(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        dc = stats.difficulty_class
+        dmg = DieFormula.target_value(1.25 * stats.attack.average_damage, suggested_die=Die.d6)
+
+        feature = Feature(
+            name="Divine Law",
+            action=ActionType.Action,
+            uses=1,
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} pronounces a divine law. \
+                Each humanoid creature within 60 feet that can hear {stats.selfref} must make DC {dc} Charisma saving throw. \
+                A creature that worships the same deity or follows the same precepts as {stats.selfref} automatically fails this save. \
+                On a failure, the creature is bound by the divine law for 24 hours. On a success, the creature is immune to this effect for 24 hours. \
+                At the start of each of its turns, the affected creature may choose to break the divine law. If it does so, it suffers {dmg.description} radiant damage and may repeat the save to end the effect.  \
+                The game master may choose an appropriate divine law, or roll a d6 and select one of the following:   \
+                <ol> \
+                <li>**Tranquility**: Affected creatures immediately end concentrating on any spells or abilities and may not cast a new spell that requires concentration.</li>\
+                <li>**Peace**: Affected creatures may not wield weapons of a specified type. </li>\
+                <li>**Forbiddance**: Affected creatures may not cast spells from a specified school of magic. </li>\
+                <li>**Awe**: Affected creatures may not look upon any Celestial beings and are **Blinded** while within 60 feet of a Celestial. </li>\
+                <li>**Adherance**: Affected creatures of a specified alignment cannot take actions. </li>\
+                <li>**Repentance**: Affected creatures must confess their darkest or most shameful transgressions or become **Stunned** for 1 minute. </li>\
+                </ol>",
+        )
+
+        return stats, feature
+
+
+DivineLaw: Power = _DivineLaw()
 HealingTouch: Power = _HealingTouch()
 MirroredJudgment: Power = _MirroredJudgement()
 RighteousJudgement: Power = _RighteousJudgement()
 
-CelestialPowers: List[Power] = [HealingTouch, MirroredJudgment, RighteousJudgement]
+CelestialPowers: List[Power] = [DivineLaw, HealingTouch, MirroredJudgment, RighteousJudgement]

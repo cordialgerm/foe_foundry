@@ -29,6 +29,24 @@ class Movement:
         args.update(kwargs)
         return Movement(**args)
 
+    def grant_flying(self) -> Movement:
+        if self.fly:
+            return self.copy()
+        else:
+            return self.copy(fly=self.walk)
+
+    def grant_climbing(self) -> Movement:
+        if self.climb:
+            return self.copy()
+        else:
+            return self.copy(climb=self.walk)
+
+    def grant_swim(self) -> Movement:
+        if self.swim:
+            return self.copy()
+        else:
+            return self.copy(swim=self.walk)
+
     def describe(self) -> str:
         pieces = [f"{self.walk} ft."]
 
