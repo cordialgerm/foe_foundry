@@ -207,7 +207,7 @@ class _Toss(Power):
         stats = _as_reckless_fighter(stats)
         size = stats.size.decrement()
         dmg = DieFormula.target_value(0.7 * stats.attack.average_damage, Die.d6)
-        distance = max(10, min(30, easy_multiple_of_five(3 * stats.cr)))
+        distance = easy_multiple_of_five(3 * stats.cr, min_val=10, max_val=30)
         dc = stats.difficulty_class
 
         feature = Feature(

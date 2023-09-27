@@ -46,6 +46,7 @@ class MonsterTemplateData:
     actions: List[Feature]
     bonus_actions: List[Feature]
     reactions: List[Feature]
+    attacks: List[Attack]
     attack_modifiers: List[Feature]
 
     multiattack: str
@@ -111,8 +112,20 @@ class MonsterTemplateData:
             multiattack = ""
         else:
             multiattack = (
-                f"{stats.selfref.capitalize()} makes {num2words(stats.multiattack)} attacks."
+                f"{stats.selfref.capitalize()} makes {num2words(stats.multiattack)} attacks"
             )
+
+            if len(stats.additional_attacks) == 1:
+                multiattack += f", one of which may be a {stats.additional_attacks[0].name}."
+            elif len(stats.additional_attacks) == 2:
+                names = " or ".join([a.name for a in stats.additional_attacks])
+                multiattack += f", one of which may be a {names}"
+            elif len(stats.additional_attacks) >= 3:
+                names = ", ".join([a.name for a in stats.additional_attacks[:-1]])
+                names += f", or {stats.additional_attacks[-1].name}"
+                multiattack += f", one of which may be a {names}"
+            else:
+                multiattack += "."
 
             replace_multiattacks = [
                 f
@@ -159,6 +172,7 @@ class MonsterTemplateData:
             attack_modifiers=attack_modifiers,
             multiattack=multiattack,
             attack=stats.attack,
+            attacks=stats.additional_attacks,
             benchmarks=benchmarks,
         )
         return t

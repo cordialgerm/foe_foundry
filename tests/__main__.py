@@ -33,9 +33,10 @@ def run_tests(display: int, feature: str):
         matches = examples
 
     if display > 0 and len(matches) > 0:
+        size = min(display, len(matches))
         print(f"Displaying {display} matches...")
         rng = np.random.default_rng()
-        selections = rng.choice(a=np.array(matches, dtype=object), size=display, replace=False)
+        selections = rng.choice(a=np.array(matches, dtype=object), size=size, replace=False)
         for selection in selections:
             open_statblock(selection)
 

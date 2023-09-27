@@ -11,8 +11,10 @@ from foe_foundry.statblocks import BaseStatblock
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -23,15 +25,19 @@ from ..scores import (
 )
 
 
+def score_fey(candidate: BaseStatblock) -> float:
+    if candidate.creature_type != CreatureType.Fey:
+        return NO_AFFINITY
+
+    return HIGH_AFFINITY
+
+
 class _TeleportingStep(Power):
     def __init__(self):
         super().__init__(name="Teleporting Step", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type != CreatureType.Fey:
-            return NO_AFFINITY
-
-        return HIGH_AFFINITY
+        return score_fey(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -50,10 +56,7 @@ class _BeguilingAura(Power):
         super().__init__(name="Beguiling Aura", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type != CreatureType.Fey:
-            return NO_AFFINITY
-
-        return HIGH_AFFINITY
+        return score_fey(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -68,7 +71,113 @@ class _BeguilingAura(Power):
         return stats, feature
 
 
-TeleportingStep: Power = _TeleportingStep()
-BeguilingAura: Power = _BeguilingAura()
+class _NegotiateLife(Power):
+    def __init__(self):
+        super().__init__(name="Negotiate Life", power_type=PowerType.Creature)
 
-FeyPowers: List[Power] = [TeleportingStep, BeguilingAura]
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_fey(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, suggested_die=Die.d8)
+        healing = easy_multiple_of_five(1.75 * stats.attack.average_damage)
+        dc = stats.difficulty_class
+
+        feature = Feature(
+            name="Negotiate Life",
+            action=ActionType.Action,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} enacts a magical bargain, siphoning energy from its opponents to heal its wounds. {stats.selfref.capitalize()} targets up to three creatures it can see within 60 feet of itself. \
+                Each target must make a DC {dc} Constitution saving throw, taking {dmg.description} necrotic damage on a failed save, or half as much damage on a successful one. \
+                The high fae then regains {healing} hit points.",
+        )
+        return stats, feature
+
+
+class _FaeCounterspell(Power):
+    def __init__(self):
+        super().__init__(name="Fae Counterspell", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_fey(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        dmg = DieFormula.target_value(0.75 * stats.attack.average_damage, suggested_die=Die.d6)
+        dc = stats.difficulty_class_easy
+        feature = Feature(
+            name="Fae Counterspell",
+            action=ActionType.Reaction,
+            description=f"{stats.selfref.capitalize()} interrupts a creature it can see that is casting a spell with verbal, somatic, or material components. \
+                The caster takes {dmg.description} psychic damage and must make a DC {dc} Charisma saving throw. On a failed save, the spell fails and has no effect, but the spell slot used to cast it is not expended.",
+        )
+        return stats, feature
+
+
+class _Awaken(Power):
+    def __init__(self):
+        super().__init__(name="Awaken", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_fey(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        if stats.cr >= 5:
+            creature = "**Awakened Tree**"
+            formula = DieFormula.target_value(1 + stats.cr / 4, suggested_die=Die.d4)
+        else:
+            creature = "**Awakened Shrub**"
+            formula = DieFormula.target_value(3 + 4 * stats.cr, suggested_die=Die.d4)
+
+        feature = Feature(
+            name="Awaken",
+            action=ActionType.Action,
+            uses=1,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} magically awakens {formula.description} {creature}. They act in initiative immediately after {stats.selfref} and obey its verbal commands (no action required).",
+        )
+        return stats, feature
+
+
+class _FaeBargain(Power):
+    def __init__(self):
+        super().__init__(name="Fae Bargain", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_fey(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        uncommon = 10
+        rare = 20
+        very_rare = 40
+        legendary = 80
+        artifact = 160
+        dc = stats.difficulty_class
+
+        feature = Feature(
+            name="Fae Bargain",
+            action=ActionType.Action,
+            uses=1,
+            replaces_multiattack=3,
+            description=f"{stats.selfref.capitalize()} magically bargains with a creature it can see within 60 feet. The creature must make a DC {dc} Charisma save. \
+                On a failure, the highest rarity magical item in that creature's possession temporarily loses all magical powers and abilities and acts as a mundane item of the corresponding type. \
+                {stats.selfref.capitalize()} then gains temporary hitpoints based on the rarity of the magical item: {uncommon} for an uncommon item, {rare} for a rare item, {very_rare} for a very rare item, \
+                {legendary} for a legendary item and {artifact} for an artifact. This effect lasts until the fae verbally renounces the bargain or the fae is destroyed.",
+        )
+        return stats, feature
+
+
+Awaken: Power = _Awaken()
+BeguilingAura: Power = _BeguilingAura()
+FaeBargain: Power = _FaeBargain()
+FaeCounterspell: Power = _FaeCounterspell()
+TeleportingStep: Power = _TeleportingStep()
+NegotiateLife: Power = _NegotiateLife()
+
+FeyPowers: List[Power] = [
+    Awaken,
+    BeguilingAura,
+    FaeBargain,
+    FaeCounterspell,
+    TeleportingStep,
+    NegotiateLife,
+]

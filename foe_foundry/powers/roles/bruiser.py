@@ -14,6 +14,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -196,27 +197,33 @@ class _Disembowler(Power):
             score += MODERATE_AFFINITY
 
         if candidate.primary_damage_type == DamageType.Piercing:
-            score += LOW_AFFINITY
+            score += MODERATE_AFFINITY
 
         if candidate.attack_type == AttackType.MeleeNatural:
-            score += LOW_AFFINITY
+            score += MODERATE_AFFINITY
 
         return score if score > 0 else NO_AFFINITY
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    ) -> Tuple[BaseStatblock, List[Feature]]:
         dc = stats.difficulty_class
-        dmg = ceil(stats.cr)
+        dmg = easy_multiple_of_five(2 + stats.cr, round_down=True, min_val=2)
 
-        feature = Feature(
+        rend_attack = stats.attack.scale(
+            scalar=0.7,
+            damage_type=DamageType.Piercing,
+            attack_type=AttackType.MeleeWeapon
+            if stats.attack.attack_type != AttackType.MeleeNatural
+            else AttackType.MeleeNatural,
             name="Rend",
-            action=ActionType.BonusAction,
-            description=f"Immediately after {stats.roleref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution saving throw or suffer {dmg} ongoing piercing damage at the start of each of its turns. \
-                The ongoing damage ends when the creature receives magical healing, or if the creature or another creature uses an action to perform a DC 10 Medicine check",
+            additional_description=f"On a hit, the target must succeed on a DC {dc} Constitution saving throw or suffer {dmg} ongoing piercing damage \
+                at the start of each of its turns. The ongoing damage ends when the creature receives magical healing, or if the creature or another creature uses an action to perform a DC 10 Medicine check",
         )
 
-        return stats, feature
+        stats = stats.add_attack(rend_attack)
+
+        return stats, []
 
 
 Sentinel: Power = _Sentinel()

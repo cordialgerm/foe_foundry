@@ -10,7 +10,8 @@ from foe_foundry.statblocks import BaseStatblock
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, DamageType
+from ...die import Die
 from ...features import ActionType, Feature
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
@@ -38,15 +39,21 @@ class _PoisonThorns(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        dmg = int(ceil(stats.attack.average_damage / 2))
-        feature = Feature(
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, List[Feature]]:
+        poison_thorns = stats.attack.scale(
+            scalar=1.5,
+            damage_type=DamageType.Piercing,
+            attack_type=AttackType.MeleeNatural,
+            die=Die.d6,
             name="Poison Thorns",
-            action=ActionType.BonusAction,
-            recharge=5,
-            description=f"Immediately after {stats.selfref} hits a target with an attack, the attack deals an additional {dmg} poison damage and the target is **Poisoned** until the end of their next turn.",
-        )
-        return stats, feature
+            additional_description=f"On a hit, the target is **Poisoned** until the end of their next turn.",
+        ).split_damage(DamageType.Poison)
+
+        stats = stats.add_attack(poison_thorns)
+
+        return stats, []
 
 
 class _GraspingRoots(Power):

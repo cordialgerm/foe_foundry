@@ -5,7 +5,7 @@ from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
@@ -97,10 +97,22 @@ class _TailSwipe(Power):
         return _score_dragon(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        tail_attack = stats.attack.scale(
+            scalar=0.8,
+            damage_type=DamageType.Bludgeoning,
+            die=Die.d8,
+            name="Tail Attack",
+            attack_type=AttackType.MeleeNatural,
+            reach=10,
+            additional_description="On a hit, the target is pushed up to 10 feet away.",
+        )
+
+        stats = stats.add_attack(tail_attack)
+
         feature = Feature(
             name="Tail Swipe",
             action=ActionType.Reaction,
-            description=f"When a creature {stats.selfref} can see within reach hits {stats.selfref} with a melee attack, {stats.selfref} makes an attack against it. On a hit, the target is pushed 10 feet away.",
+            description=f"When a creature {stats.selfref} can see within 10 feet hits {stats.selfref} with a melee attack, {stats.selfref} makes a Tail Attack against it.",
         )
         return stats, feature
 

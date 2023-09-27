@@ -125,7 +125,7 @@ class _DivineLaw(Power):
                 <li>**Peace**: Affected creatures may not wield weapons of a specified type. </li>\
                 <li>**Forbiddance**: Affected creatures may not cast spells from a specified school of magic. </li>\
                 <li>**Awe**: Affected creatures may not look upon any Celestial beings and are **Blinded** while within 60 feet of a Celestial. </li>\
-                <li>**Adherance**: Affected creatures of a specified alignment cannot take actions. </li>\
+                <li>**Adherance**: Affected creatures cannot take hostile actions towards creatures of a specified alignment</li>\
                 <li>**Repentance**: Affected creatures must confess their darkest or most shameful transgressions or become **Stunned** for 1 minute. </li>\
                 </ol>",
         )

@@ -1,4 +1,5 @@
-{% from 'macros.html.j2' import property, property_block, features_block, attack_block, benchmark_block %}
+{% from 'macros.html.j2' import property, property_block, features_block, attack_blocks, attack_block, benchmark_block
+%}
 
 <stat-block>
     <creature-heading>
@@ -30,6 +31,8 @@
     <h3>Actions</h3>
     {{property_block('Multiattack', multiattack)}}
     {{attack_block(attack.name, attack_text)}}
+
+    {{attack_blocks(attacks)}}
 
     {{features_block(actions)}}
 

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
-from math import floor
+from math import ceil, floor
 from typing import List
 
 from ..die import Die, DieFormula
@@ -46,11 +46,19 @@ class Attack:
     attack_type: AttackType = AttackType.MeleeNatural
     reach: int | None = 5
     range: int | None = None
+    additional_description: str | None = None
     is_melee: bool = field(init=False)
     description: str = field(init=False)
 
     def __post_init__(self):
         self.is_melee = self.attack_type in {AttackType.MeleeNatural, AttackType.MeleeWeapon}
+
+        if self.is_melee:
+            self.range = None
+            self.reach = self.reach if self.reach is not None else 5
+        else:
+            self.reach = None
+            self.range = self.range if self.range is not None else 30
 
         if self.is_melee:
             attack = "Melee Weapon Attack"
@@ -70,6 +78,9 @@ class Attack:
         else:
             description += "."
 
+        if self.additional_description is not None:
+            description += " " + self.additional_description
+
         self.description = description
 
     def copy(self, **overrides) -> Attack:
@@ -81,6 +92,7 @@ class Attack:
             attack_type=self.attack_type,
             reach=self.reach,
             range=self.range,
+            additional_description=self.additional_description,
         )
         args.update(overrides)
         return Attack(**args)
@@ -187,6 +199,46 @@ class Attack:
 
         new_attack = self.copy(damage=new_damage, additional_damage=new_secondary_damage)
         return new_attack
+
+    def join(self) -> Attack:
+        """join the additional damage back into the main damage type"""
+        if self.additional_damage is None:
+            return self.copy()
+
+        damage_type = self.damage.damage_type
+        per_die_mod = ceil((self.damage.formula.mod or 0) / self.damage.formula.n_die)
+        die = self.damage.formula.primary_die_type
+        target_damage = self.average_rolled_damage
+
+        new_damage = Damage(
+            formula=DieFormula.target_value(
+                target=target_damage, suggested_die=die, per_die_mod=per_die_mod
+            ),
+            damage_type=damage_type,
+        )
+
+        return self.copy(damage=new_damage, additional_damage=None)
+
+    def scale(
+        self,
+        scalar: float,
+        damage_type: DamageType | None = None,
+        die: Die | None = None,
+        **args,
+    ) -> Attack:
+        """create a new attack whose average damage is scaled"""
+        new_attack = self.join()
+        new_target = scalar * new_attack.average_damage
+        suggested_die = die or new_attack.damage.formula.primary_die_type
+        per_die_mod = ceil(
+            (new_attack.damage.formula.mod or 0) / new_attack.damage.formula.n_die
+        )
+        damage_type = damage_type or new_attack.damage.damage_type
+        new_formula = DieFormula.target_value(
+            new_target, suggested_die, per_die_mod=per_die_mod
+        )
+        new_damage = Damage(formula=new_formula, damage_type=damage_type)
+        return new_attack.copy(damage=new_damage, **args)
 
     def __repr__(self) -> str:
         return self.description

@@ -142,25 +142,31 @@ class _Smother(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, List[Feature]]:
-        dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, suggested_die=Die.d6)
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
 
-        feature1 = Feature(
+        smother_attack = stats.attack.scale(
+            scalar=0.5,
+            damage_type=DamageType.Bludgeoning,
+            attack_type=AttackType.MeleeWeapon,
+            die=Die.d6,
             name="Smother",
-            action=ActionType.BonusAction,
-            description=f"Immediately after hitting a creature, {stats.selfref} begins to smother it. The creature is **Grappled** (escape DC {dc}). \
-                While grappled this way, the creature is **Restrained**, **Blinded**, and suffers {dmg} ongoing bludgeoning damage at the start of each of its turns.",
         )
-        feature2 = Feature(
+        dmg = smother_attack.damage.formula
+        smother_attack = smother_attack.copy(
+            additional_description=f"On a hit, {stats.selfref} begins to smother the target. The creature is **Grappled** (escape DC {dc}). \
+                While grappled this way, the creature is **Restrained**, **Blinded**, and suffers {dmg.description} ongoing bludgeoning damage at the start of each of its turns.",
+        )
+
+        stats = stats.add_attack(smother_attack)
+
+        feature = Feature(
             name="Damage Transfer",
             action=ActionType.Feature,
             description=f"While it is grappling a creature, {stats.selfref} takes only half the damage dealt to it, and the creature grappled by {stats.selfref} takes the other half.",
         )
 
-        return stats, [feature1, feature2]
+        return stats, feature
 
 
 class _Retrieval(Power):

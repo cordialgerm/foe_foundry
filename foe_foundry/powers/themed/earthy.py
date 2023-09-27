@@ -58,7 +58,11 @@ class _Climber(Power):
 
     def score(self, candidate: BaseStatblock) -> float:
         score = LOW_AFFINITY
-        if candidate.creature_type in {CreatureType.Beast, CreatureType.Monstrosity}:
+        if candidate.creature_type in {
+            CreatureType.Beast,
+            CreatureType.Monstrosity,
+            CreatureType.Ooze,
+        }:
             score += EXTRA_HIGH_AFFINITY
         if candidate.role in {MonsterRole.Artillery, MonsterRole.Ambusher}:
             score += MODERATE_AFFINITY
@@ -74,7 +78,11 @@ class _Climber(Power):
         stats = stats.copy(speed=new_speed, attributes=new_attrs)
 
         ## Spider Climb
-        if stats.creature_type in {CreatureType.Beast, CreatureType.Monstrosity}:
+        if stats.creature_type in {
+            CreatureType.Beast,
+            CreatureType.Monstrosity,
+            CreatureType.Ooze,
+        }:
             feature = Feature(
                 name="Spider Climb",
                 action=ActionType.Feature,
@@ -84,6 +92,7 @@ class _Climber(Power):
             feature = Feature(
                 name="Climber",
                 action=ActionType.Feature,
+                hidden=True,
                 description=f"{stats.selfref.capitalize()} gains a climb speed equal to its walk speed",
             )
 

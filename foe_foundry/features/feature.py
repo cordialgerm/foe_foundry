@@ -1,5 +1,6 @@
 from dataclasses import dataclass, field
 
+from ..damage import Attack
 from .action_type import ActionType
 
 

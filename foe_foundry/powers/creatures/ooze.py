@@ -11,6 +11,7 @@ from foe_foundry.statblocks import BaseStatblock
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
@@ -24,7 +25,7 @@ from ..scores import (
 )
 
 
-def _score(candidate: BaseStatblock) -> float:
+def score_ooze(candidate: BaseStatblock) -> float:
     if candidate.creature_type != CreatureType.Ooze:
         return NO_AFFINITY
 
@@ -46,7 +47,7 @@ class _OozingPassage(Power):
         super().__init__(name="Oozing Passage", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_ooze(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -70,7 +71,7 @@ class _ElongatedLimbs(Power):
     def score(self, candidate: BaseStatblock) -> float:
         if not candidate.attack_type.is_melee():
             return NO_AFFINITY
-        return _score(candidate)
+        return score_ooze(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -85,7 +86,108 @@ class _ElongatedLimbs(Power):
         return stats, [malleable_form(stats), feature]
 
 
-OozingPassage: Power = _OozingPassage()
-ElongatedLimbs: Power = _ElongatedLimbs()
+class _Split(Power):
+    def __init__(self):
+        super().__init__(name="Split", power_type=PowerType.Creature)
 
-OozePowers: List[Power] = [OozingPassage, ElongatedLimbs]
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_ooze(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, List[Feature]]:
+        feature = Feature(
+            name="Split",
+            action=ActionType.Reaction,
+            description=f"Whenever {stats.selfref} takes lightning or slashing damage and it is Medium or larger, it splits in two if it has at least 10 hit points. Each new ooze has hit points equal to half the original ooze's, rounding down. New oozes are one size smaller than the original ooze.",
+        )
+
+        return stats, [malleable_form(stats), feature]
+
+
+class _Transparent(Power):
+    def __init__(self):
+        super().__init__(name="Transparent", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_ooze(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, List[Feature]]:
+        feature = Feature(
+            name="Transparent",
+            action=ActionType.Feature,
+            description=f"Even when {stats.selfref} is in plain sight, it takes a successful DC 15 Perception check to spot {stats.selfref} if it has neither moved nor attacked. \
+                A creature that tries to enter {stats.selfref}'s space is surprised by {stats.selfref}",
+        )
+
+        return stats, [malleable_form(stats), feature]
+
+
+class _LifeLeech(Power):
+    def __init__(self):
+        super().__init__(name="Life Leech", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_ooze(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, List[Feature]]:
+        dc = stats.difficulty_class
+        dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, suggested_die=Die.d6)
+
+        feature = Feature(
+            name="Life Leech",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            description=f"One Medium or smaller creature that {stats.selfref} can see within 5 feet of it must succeed on a DC {dc} Dexterity saving throw or be **Grappled** (escape DC {dc}). \
+                Until this grapple ends, the target is **Restrained** and is unable to breathe. In addition, the target takes {dmg.description} ongoing necrotic damage at the start of each of its turns while grappled in this way. \
+                Whiel grappling the target, {stats.selfref} takes only half of any damage dealt to it (rounded down), and the target takes the other half.",
+        )
+
+        return stats, [malleable_form(stats), feature]
+
+
+class _SlimeSpray(Power):
+    def __init__(self):
+        super().__init__(name="Slime Spray", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_ooze(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, List[Feature]]:
+        dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, suggested_die=Die.d6)
+        dc = stats.difficulty_class_easy
+
+        feature = Feature(
+            name="Slime Breath",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            recharge=6,
+            description=f"{stats.selfref.capitalize()} sprays slimy goo in a 30-foot cone. Each creature in that area must make a DC {dc} Dexterity saving throw. \
+                On a failure, the creature takes {dmg.description} acid damage and is pulled up to 30 feet toward {stats.selfref}. On a success, the creature takes half as much damage and isn't pulled.",
+        )
+
+        return stats, [malleable_form(stats), feature]
+
+
+ElongatedLimbs: Power = _ElongatedLimbs()
+LifeLeech: Power = _LifeLeech()
+OozingPassage: Power = _OozingPassage()
+SlimeSpray: Power = _SlimeSpray()
+Split: Power = _Split()
+Transparent: Power = _Transparent()
+
+
+OozePowers: List[Power] = [
+    ElongatedLimbs,
+    LifeLeech,
+    OozingPassage,
+    SlimeSpray,
+    Split,
+    Transparent,
+]

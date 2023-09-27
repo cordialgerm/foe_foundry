@@ -47,6 +47,7 @@ class BaseStatblock:
     nonmagical_resistance: bool = False
     nonmagical_immunity: bool = False
     difficulty_class_easy: int = field(init=False)
+    additional_attacks: List[Attack] = field(default_factory=list)
 
     def __post_init__(self):
         mod = (
@@ -107,6 +108,7 @@ class BaseStatblock:
             condition_immunities=deepcopy(self.condition_immunities),
             nonmagical_resistance=self.nonmagical_resistance,
             nonmagical_immunity=self.nonmagical_immunity,
+            additional_attacks=deepcopy(self.additional_attacks),
         )
         return args
 
@@ -192,6 +194,11 @@ class BaseStatblock:
 
         new_attributes = self.attributes.copy(**new_vals)
         return self.copy(attributes=new_attributes)
+
+    def add_attack(self, attack: Attack) -> BaseStatblock:
+        copy = self.copy()
+        copy.additional_attacks.append(attack)
+        return copy
 
     def grant_resistance_or_immunity(
         self,

@@ -89,7 +89,12 @@ class _FalseAppearance(Power):
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_sneaky_creature(
-            candidate, additional_creature_types={CreatureType.Plant, CreatureType.Construct}
+            candidate,
+            additional_creature_types={
+                CreatureType.Plant,
+                CreatureType.Construct,
+                CreatureType.Ooze,
+            },
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:

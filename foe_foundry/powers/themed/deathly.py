@@ -49,7 +49,7 @@ class _AuraOfDoom(Power):
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
-        distance = easy_multiple_of_five(3 * stats.cr)
+        distance = easy_multiple_of_five(3 * stats.cr, min_val=5, max_val=30)
 
         feature = Feature(
             name="Aura of Doom",

@@ -96,7 +96,7 @@ class _SmokeBomb(Power):
         return _score_gadget(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        distance = min(30, easy_multiple_of_five(5 + stats.cr / 5))
+        distance = easy_multiple_of_five(5 + stats.cr / 5, max_val=30)
         rounds = DieFormula.from_expression("1d4 + 2")
 
         feature = Feature(
@@ -119,7 +119,7 @@ class _Net(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
-        distance = max(15, easy_multiple_of_five(stats.cr, round_down=False))
+        distance = easy_multiple_of_five(stats.cr, round_down=False, max_val=15)
         dmg = int(ceil(0.25 * stats.attack.average_damage))
 
         if stats.cr <= 3:

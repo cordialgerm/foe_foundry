@@ -18,6 +18,12 @@
 {% endif %}
 {%- endmacro %}
 
+{% macro attack_blocks(attacks) %}
+{% for attack in attacks %}
+{{ attack_block(attack.name, attack.description)}}
+{% endfor %}
+{% endmacro %}
+
 {% macro attack_block(attack_name, attack_text) -%}
 
 <property-block>
