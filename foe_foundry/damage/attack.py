@@ -47,6 +47,7 @@ class Attack:
     reach: int | None = 5
     range: int | None = None
     additional_description: str | None = None
+    replaces_multiattack: int = 0
     is_melee: bool = field(init=False)
     description: str = field(init=False)
 
@@ -93,6 +94,7 @@ class Attack:
             reach=self.reach,
             range=self.range,
             additional_description=self.additional_description,
+            replaces_multiattack=self.replaces_multiattack,
         )
         args.update(overrides)
         return Attack(**args)

@@ -112,30 +112,27 @@ class MonsterTemplateData:
             multiattack = ""
         else:
             multiattack = (
-                f"{stats.selfref.capitalize()} makes {num2words(stats.multiattack)} attacks"
+                f"{stats.selfref.capitalize()} makes {num2words(stats.multiattack)} attacks."
             )
 
-            if len(stats.additional_attacks) == 1:
-                multiattack += f", one of which may be a {stats.additional_attacks[0].name}."
-            elif len(stats.additional_attacks) == 2:
-                names = " or ".join([a.name for a in stats.additional_attacks])
-                multiattack += f", one of which may be a {names}"
-            elif len(stats.additional_attacks) >= 3:
-                names = ", ".join([a.name for a in stats.additional_attacks[:-1]])
-                names += f", or {stats.additional_attacks[-1].name}"
-                multiattack += f", one of which may be a {names}"
-            else:
-                multiattack += "."
-
-            replace_multiattacks = [
-                f
+            replacements = []
+            replacements += [
+                (a.name, a.replaces_multiattack)
+                for a in stats.additional_attacks
+                if a.replaces_multiattack > 0 and a.replaces_multiattack < stats.multiattack
+            ]
+            replacements += [
+                (f.name, f.replaces_multiattack)
                 for f in stats.features
                 if f.replaces_multiattack > 0 and f.replaces_multiattack < stats.multiattack
             ]
+
             lines = []
-            for feature in replace_multiattacks:
-                replace_attacks = f"{num2words(feature.replaces_multiattack)} attack{'s' if feature.replaces_multiattack > 1 else ''}"
-                lines.append(f"{replace_attacks} with a use of its {feature.name}")
+            for name, replacement in replacements:
+                replace_attacks = (
+                    f"{num2words(replacement)} attack{'s' if replacement > 1 else ''}"
+                )
+                lines.append(f"{replace_attacks} with a use of its {name}")
             if len(lines) > 0:
                 multiattack += " It may replace " + " or ".join(lines)
 

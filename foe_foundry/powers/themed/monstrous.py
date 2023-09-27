@@ -4,19 +4,17 @@ from typing import Dict, List, Set, Tuple
 import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...ac import ArmorClass
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -106,29 +104,34 @@ class _Swallow(Power):
             additional_creature_types={CreatureType.Ooze: HIGH_AFFINITY},
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | None]:
         stats = _as_monstrous(stats, size_boost=True)
 
         reach = 15 if stats.size >= Size.Huge else 10
-        new_attack = stats.attack.copy(reach=reach)
-        stats = stats.copy(attack=new_attack)
-
         dc = stats.difficulty_class
-        threshold = int(max(5, ceil(2.0 * stats.cr)))
-        dmg = int(ceil(5 + stats.cr))
+        threshold = easy_multiple_of_five(2.0 * stats.cr, min_val=5, max_val=40)
+        dmg = DieFormula.target_value(5 + stats.cr, force_die=Die.d4)
         regurgitate_dc = int(min(25, max(10, floor(threshold / 2))))
-        feature = Feature(
-            name="Swallow",
-            action=ActionType.Action,
+
+        swallow_attack = stats.attack.scale(
+            scalar=1.5,
+            damage_type=DamageType.Piercing,
+            attack_type=AttackType.MeleeNatural,
             replaces_multiattack=2,
-            description=f"{stats.selfref.capitalize()} attempts to swallow one target within {reach} ft. \
-                The target must make a DC {dc} Dexterity saving throw. On a failure, it is swallowed by {stats.selfref}. \
-                A swallowed creature is **Blinded** and **Restrained**, it has total cover against attacks and other effects outside {stats.selfref}, and it takes {dmg} ongoing acid damage at the start of each of its turns.  \
+            reach=reach,
+            name="Swallow",
+            additional_description=f"On a hit, the target must make a DC {dc} Dexterity saving throw. On a failure, it is swallowed by {stats.selfref}. \
+                A swallowed creature is **Blinded** and **Restrained**, it has total cover against attacks and other effects outside {stats.selfref}, and it takes {dmg.description} ongoing acid damage at the start of each of its turns.  \
                 If {stats.selfref} takes {threshold} damage or more on a single turn from a creature inside it, {stats.selfref} must make a DC {regurgitate_dc} \
                 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall **Prone** in a space within 10 feet of {stats.selfref}. \
                 If {stats.selfref} dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.",
         )
-        return stats, feature
+
+        stats = stats.add_attack(swallow_attack)
+
+        return stats, None
 
 
 class _Pounce(Power):

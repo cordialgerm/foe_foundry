@@ -199,7 +199,7 @@ class _RejectDivinity(Power):
             action=ActionType.Reaction,
             description=f"When a creature {stats.selfref} can see within {distance} feet regains hit points, \
                 {stats.selfref} reduces the number of hit points gained to 0 \
-                and {stats.selfref} deals {dmg} necrotic damage to the creature.",
+                and {stats.selfref} deals {dmg.description} necrotic damage to that creature.",
         )
 
         return stats, feature

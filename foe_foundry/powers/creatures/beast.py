@@ -3,14 +3,12 @@ from typing import List, Tuple
 
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, DamageType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import Power, PowerType
 from ..scores import (
@@ -83,18 +81,24 @@ class _Gore(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return _score_beast(candidate, Stats.STR)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        dmg = int(ceil(0.75 * stats.attack.average_damage))
-
-        feature = Feature(
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | None]:
+        dc = stats.difficulty_class
+        bleeding = DieFormula.target_value(0.75 * stats.attack.average_damage)
+        gore_attack = stats.attack.scale(
+            scalar=1.5,
+            damage_type=DamageType.Piercing,
+            attack_type=AttackType.MeleeNatural,
             name="Gore",
-            action=ActionType.Action,
-            recharge=5,
-            description=f"{stats.selfref.capitalize()} moves up to its speed and then makes an attack. On a hit, the target is gored and suffers {dmg} ongoing piercing damage at the end of each of its turns. \
+            replaces_multiattack=2,
+            additional_description=f"If {stats.selfref} moved at least 10 feet before making this attack, then the target must make a DC {dc} Dexterity saving throw. On a failure, the target is gored and suffers {bleeding.description} ongoing piercing damage at the end of each of its turns. \
                 The ongoing damage ends when the creature receives magical healing, or if the creature or another creature uses an action to perform a DC 10 Medicine check",
         )
 
-        return stats, feature
+        stats = stats.add_attack(gore_attack)
+
+        return stats, None
 
 
 class _Web(Power):
