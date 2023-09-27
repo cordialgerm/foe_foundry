@@ -90,7 +90,7 @@ class _Repulsion(Power):
         feature = Feature(
             name=name,
             description=f"{stats.selfref.capitalize()} targets up to eight creatures they can see within 60 ft. Each must make a DC {dc} Charisma saving throw.\
-                On a failure, the affected target is Frightened (save ends at end of turn) and must immediately use its reaction, if available, to move their speed away from {stats.selfref} \
+                On a failure, the affected target is **Frightened** for 1 minute (save ends at end of turn) and must immediately use its reaction, if available, to move their speed away from {stats.selfref} \
                 avoiding hazards or dangerous terrain if possible.",
             uses=1,
             replaces_multiattack=1,
@@ -191,7 +191,7 @@ class _NightmarishVisions(Power):
             replaces_multiattack=1,
             recharge=5,
             description=f"{stats.selfref.capitalize()} targets a creature that it can see within 30 feet and forces it to confront its deepest fears. \
-                The target must succeed on a DC {dc} Wisdom save or become **Frightened** of {stats.selfref}. While frightened in this way, the creature takes {dmg.description} ongoing psychic damage at the start of each of its turns. Save ends at end of turn.",
+                The target must succeed on a DC {dc} Wisdom save or become **Frightened** of {stats.selfref} for 1 minute (save ends at end of turn). While frightened in this way, the creature takes {dmg.description} ongoing psychic damage at the start of each of its turns.",
         )
 
         return stats, feature

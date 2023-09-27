@@ -124,10 +124,10 @@ class _RefuseToSurrender(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         threshold = easy_multiple_of_five(stats.hp.average / 2.0)
-        dmg = int(ceil(stats.cr))
+        dmg = DieFormula.target_value(0.75 * stats.cr, force_die=Die.d6)
         feature = Feature(
             name="Refuse to Surrender",
-            description=f"When {stats.selfref}'s current hit points are below {threshold}, the creature deals an extra {dmg} damage with each of its attacks.",
+            description=f"When {stats.selfref}'s current hit points are below {threshold}, the creature deals an extra {dmg.description} damage with each of its attacks.",
             action=ActionType.Feature,
         )
         return stats, feature

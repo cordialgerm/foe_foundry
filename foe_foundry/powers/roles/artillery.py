@@ -1,15 +1,13 @@
+from math import ceil
 from typing import List, Tuple
 
 import numpy as np
-
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import Power, PowerType
@@ -136,11 +134,12 @@ class _QuickDraw(Power):
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
+        uses = ceil(stats.cr / 5)
         feature = Feature(
             name="Quick Draw",
             action=ActionType.Reaction,
             description=f"On initiative count 20, {stats.selfref} may make one ranged attack",
-            uses=1,
+            uses=uses,
         )
 
         return stats, feature

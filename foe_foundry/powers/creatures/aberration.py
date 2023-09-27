@@ -33,7 +33,7 @@ class _GraspingTentacles(Power):
             return NO_AFFINITY
 
         return (
-            EXTRA_HIGH_AFFINITY
+            HIGH_AFFINITY
             if candidate.attack_type == AttackType.MeleeNatural
             else MODERATE_AFFINITY
         )
@@ -59,7 +59,7 @@ class _DominatingGaze(Power):
             return NO_AFFINITY
 
         return (
-            EXTRA_HIGH_AFFINITY
+            HIGH_AFFINITY
             if candidate.attack_type == AttackType.RangedSpell
             else MODERATE_AFFINITY
         )
@@ -111,7 +111,7 @@ class _TentacleSlam(Power):
             return NO_AFFINITY
 
         return (
-            EXTRA_HIGH_AFFINITY
+            HIGH_AFFINITY
             if candidate.attack_type == AttackType.MeleeNatural
             else MODERATE_AFFINITY
         )
@@ -141,8 +141,11 @@ class _AntimagicGullet(Power):
         if candidate.creature_type != CreatureType.Aberration:
             return NO_AFFINITY
 
+        if candidate.cr <= 5:
+            return NO_AFFINITY
+
         return (
-            EXTRA_HIGH_AFFINITY
+            HIGH_AFFINITY
             if candidate.attack_type == AttackType.MeleeNatural
             else MODERATE_AFFINITY
         )
@@ -156,7 +159,7 @@ class _AntimagicGullet(Power):
 
         dc = stats.difficulty_class
         threshold = int(max(5, ceil(2.0 * stats.cr)))
-        dmg = int(ceil(5 + stats.cr))
+        dmg = DieFormula.target_value(5 + stats.cr, force_die=Die.d4)
         regurgitate_dc = int(min(25, max(10, floor(threshold / 2))))
 
         feature1 = Feature(
@@ -165,7 +168,7 @@ class _AntimagicGullet(Power):
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} attempts to swallow one target within {reach} ft. \
                 The target must make a DC {dc} Dexterity saving throw. On a failure, it is swallowed by {stats.selfref}. (see *Anti-Magic Gullet*)\
-                A swallowed creature is **Blinded** and **Restrained**, it has total cover against attacks and other effects outside {stats.selfref}, and it takes {dmg} ongoing acid damage at the start of each of its turns.  \
+                A swallowed creature is **Blinded** and **Restrained**, it has total cover against attacks and other effects outside {stats.selfref}, and it takes {dmg.description} ongoing acid damage at the start of each of its turns.  \
                 If {stats.selfref} takes {threshold} damage or more on a single turn from a creature inside it, {stats.selfref} must make a DC {regurgitate_dc} \
                 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall **Prone** in a space within 10 feet of {stats.selfref}. \
                 If {stats.selfref} dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.",

@@ -140,7 +140,7 @@ class _HorriblyDisfigured(Power):
     ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
         stats = _as_cursed(stats)
         dc = stats.difficulty_class_easy
-        dmg = int(floor(5 + 2 * stats.cr))
+        dmg = DieFormula.target_value(1.2 * stats.attack.average_damage, force_die=Die.d6)
 
         feature = Feature(
             name="Disfiguring Curse",
@@ -148,7 +148,7 @@ class _HorriblyDisfigured(Power):
             uses=1,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} attempts to magically spread its curse to a target that it can see within 60 feet. \
-                The target must make DC {dc} Charisma save. On a failure, the target takes {dmg} psychic damage and is cursed with magical deformities. \
+                The target must make DC {dc} Charisma save. On a failure, the target takes {dmg.description} psychic damage and is cursed with magical deformities. \
                 While deformed, the creature's speed is halved and it has disadvantage on ability checks, saving throws, and attacks. \
                 The cursed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on a success.",
         )

@@ -8,6 +8,7 @@ from ...ac import ArmorClass
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
 from ...role_types import MonsterRole
@@ -71,14 +72,14 @@ class _AuraOfAnnihilation(Power):
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
         distance = 5 if stats.cr <= 11 else 10
-        dmg = int(floor(max(5 + stats.cr, 1.5 * stats.cr)))
+        dmg = DieFormula.target_value(max(5 + stats.cr, 1.5 * stats.cr), force_die=Die.d6)
         dc = stats.difficulty_class_easy
         qualifier = f"non-{stats.creature_type.lower()}"
 
         feature = Feature(
             name="Aura of Annihilation",
             description=f"Each {qualifier} creature that ends its turn within {distance} ft of {stats.selfref} must make a DC {dc} Constitution saving throw. \
-                On a failure, they take {dmg} necrotic damage and gain one Death Save failure. With three failures, a creature dies. \
+                On a failure, they take {dmg.description} necrotic damage and gain one Death Save failure. With three failures, a creature dies. \
                 On a success, a creature takes half damage and does not gain a Death Save failure. With three successes, a creature is immune to this effect",
             action=ActionType.Feature,
         )
@@ -118,13 +119,13 @@ class _WitheringBlow(Power):
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
-        dmg = int(floor(3 + stats.cr))
+        dmg = DieFormula.target_value(3 + 0.7 * stats.cr, force_die=Die.d6)
 
         feature = Feature(
             name="Withering Blow",
             action=ActionType.BonusAction,
             recharge=4,
-            description=f"Immediately after hitting with an attack, the target takes an additional {dmg} ongoing necrotic damage at the start of each of their turns. \
+            description=f"Immediately after hitting with an attack, the target takes an additional {dmg.description} ongoing necrotic damage at the start of each of their turns. \
                 The effect can be ended by any character using an action to perform a DC {dc} Medicine check or if the target receives {dmg} or more points of magical healing in a round.",
         )
 
@@ -200,7 +201,7 @@ class _DevourSoul(Power):
         return _score(candidate, undead_only=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        dmg = int(ceil(1.5 * stats.attack.average_damage))
+        dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d6)
         dc = stats.difficulty_class_easy
 
         feature = Feature(
@@ -209,7 +210,7 @@ class _DevourSoul(Power):
             replaces_multiattack=2,
             recharge=5,
             description=f"{stats.selfref.capitalize()} targets one creature it can see within 30 feet of it that is not a Construct or an Undead. \
-                The creature must succeed on a DC {dc} Charisma saving throw or take {dmg} necrotic damage. \
+                The creature must succeed on a DC {dc} Charisma saving throw or take {dmg.description} necrotic damage. \
                 If this damage reduces the target to 0 hit points, it dies and immediately rises as a **Ghoul** under {stats.selfref}'s control.",
         )
 
@@ -226,14 +227,14 @@ class _DrainStrength(Power):
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
 
-        dmg = int(ceil(stats.attack.average_damage))
+        dmg = DieFormula.target_value(1.1 * stats.attack.average_damage, force_die=Die.d6)
 
         feature = Feature(
             name="Drain Strength",
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} attempts to magically drain the strength from a creature it can see within 5 feet. \
-                The creature must make a DC {dc} Constitution save. On a failure, the creature takes {dmg} necrotic damage \
+                The creature must make a DC {dc} Constitution save. On a failure, the creature takes {dmg.description} necrotic damage \
                 and its Strength score is reduced by 1d4. The creature dies if this reduces its Strength to 0. \
                 Otherwise, the reduction lasts until the target finishes a short or long rest. It can also be removed by a *Greater Restoration* or similar spell.",
         )

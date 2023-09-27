@@ -264,6 +264,7 @@ class _Regeneration(Power):
             CreatureType.Undead: "radiant damage",
             CreatureType.Monstrosity: "acid or fire damage",
             CreatureType.Construct: "acid damage",
+            CreatureType.Elemental: "necrotic damage",
         }
         weakness = weaknesses.get(stats.creature_type, "fire damage")
         hp = easy_multiple_of_five(1.5 * stats.cr)
