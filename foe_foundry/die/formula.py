@@ -127,13 +127,23 @@ class DieFormula:
 
     @staticmethod
     def target_value(
-        target: float, suggested_die: Die, per_die_mod: int = 0, flat_mod: int = 0
+        target: float,
+        suggested_die: Die | None = None,
+        force_die: Die | None = None,
+        per_die_mod: int = 0,
+        flat_mod: int = 0,
     ) -> DieFormula:
-        candidates = (
-            _candidate(target, suggested_die, per_die_mod, flat_mod)
-            + _candidate(target, suggested_die.decrease(), per_die_mod, flat_mod)
-            + _candidate(target, suggested_die.increase(), per_die_mod, flat_mod)
-        )
+        if suggested_die is None:
+            suggested_die = Die.d6
+
+        if force_die is not None:
+            candidates = _candidate(target, force_die, per_die_mod, flat_mod)
+        else:
+            candidates = (
+                _candidate(target, suggested_die, per_die_mod, flat_mod)
+                + _candidate(target, suggested_die.decrease(), per_die_mod, flat_mod)
+                + _candidate(target, suggested_die.increase(), per_die_mod, flat_mod)
+            )
 
         errors = [abs(target - c.average) for c in candidates]
         best_index = np.argmin(errors)

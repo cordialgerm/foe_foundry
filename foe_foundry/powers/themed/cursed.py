@@ -13,6 +13,7 @@ from ...ac import ArmorClass
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
@@ -191,7 +192,7 @@ class _RejectDivinity(Power):
         stats = _as_cursed(stats)
         distance = 30 if stats.cr <= 7 else 45
         stats = _as_cursed(stats)
-        dmg = int(max(3, ceil(1.5 * stats.cr)))
+        dmg = DieFormula.target_value(max(3, ceil(1.5 * stats.cr)), force_die=Die.d6)
 
         feature = Feature(
             name="Reject Divinity",

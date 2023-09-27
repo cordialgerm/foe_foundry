@@ -83,7 +83,7 @@ class _RighteousJudgement(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
-        dmg = int(ceil(1.5 * stats.attack.average_damage))
+        dmg = DieFormula.target_value(1.4 * stats.attack.average_damage, force_die=Die.d6)
 
         feature = Feature(
             name="Righteous Judgment",
@@ -91,7 +91,7 @@ class _RighteousJudgement(Power):
             recharge=5,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} targets a creature it can see within 60 feet. If the target can hear {stats.selfref}, it must make a DC {dc} Charisma save. \
-                On a failure, it takes {dmg} radiant damage and is **Blinded** until the end of its next turn. On a success, it takes half as much damage. \
+                On a failure, it takes {dmg.description} radiant damage and is **Blinded** until the end of its next turn. On a success, it takes half as much damage. \
                 {stats.selfref.capitalize()} can also choose another friendly creature within 60 feet to gain temporary hp equal to the radiant damage dealt.",
         )
 
@@ -107,7 +107,7 @@ class _DivineLaw(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(1.25 * stats.attack.average_damage, suggested_die=Die.d6)
+        dmg = DieFormula.target_value(1.25 * stats.attack.average_damage, force_die=Die.d6)
 
         feature = Feature(
             name="Divine Law",

@@ -16,7 +16,7 @@ from foe_foundry import (
 )
 
 
-@pytest.mark.parametrize("n", range(1))
+@pytest.mark.parametrize("n", range(2))
 @pytest.mark.parametrize("role", [pytest.param(r, id=r.key) for r in AllRoles])
 @pytest.mark.parametrize(
     "creature_template",

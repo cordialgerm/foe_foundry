@@ -13,7 +13,7 @@ from .filtering import filter_examples
 @click.option("--display", default=5, help="displays a random sample of the specified size")
 @click.option(
     "--feature",
-    default="Attack",
+    default="",
     help="filter results to only show statblocks that match that filter",
 )
 def run_tests(display: int, feature: str):

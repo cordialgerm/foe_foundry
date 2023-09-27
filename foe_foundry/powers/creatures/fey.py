@@ -123,10 +123,10 @@ class _Awaken(Power):
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         if stats.cr >= 5:
             creature = "**Awakened Tree**"
-            formula = DieFormula.target_value(1 + stats.cr / 4, suggested_die=Die.d4)
+            formula = DieFormula.target_value(1 + stats.cr / 4, force_die=Die.d4)
         else:
             creature = "**Awakened Shrub**"
-            formula = DieFormula.target_value(3 + 4 * stats.cr, suggested_die=Die.d4)
+            formula = DieFormula.target_value(3 + 4 * stats.cr, force_die=Die.d4)
 
         feature = Feature(
             name="Awaken",
@@ -159,9 +159,9 @@ class _FaeBargain(Power):
             uses=1,
             replaces_multiattack=3,
             description=f"{stats.selfref.capitalize()} magically bargains with a creature it can see within 60 feet. The creature must make a DC {dc} Charisma save. \
-                On a failure, the highest rarity magical item in that creature's possession temporarily loses all magical powers and abilities and acts as a mundane item of the corresponding type. \
+                On a failure, the highest rarity magical item in that creature's possession becomes cursed and loses all magical powers and abilities and acts as a mundane item of the corresponding type. \
                 {stats.selfref.capitalize()} then gains temporary hitpoints based on the rarity of the magical item: {uncommon} for an uncommon item, {rare} for a rare item, {very_rare} for a very rare item, \
-                {legendary} for a legendary item and {artifact} for an artifact. This effect lasts until the fae verbally renounces the bargain or the fae is destroyed.",
+                {legendary} for a legendary item and {artifact} for an artifact. This curse lasts until the fae verbally renounces the bargain, the fae is destroyed, or the curse is removed via *Remove Curse* or similar effect.",
         )
         return stats, feature
 

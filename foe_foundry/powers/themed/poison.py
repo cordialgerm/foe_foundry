@@ -3,18 +3,17 @@ from typing import List, Tuple
 
 import numpy as np
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...ac import ArmorClass
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -51,12 +50,13 @@ class _PoisonousDemise(Power):
     ) -> Tuple[BaseStatblock, Feature]:
         stats = stats.copy(secondary_damage_type=DamageType.Poison)
 
-        dmg = int(floor(2 + stats.cr))
+        dmg = DieFormula.target_value(2 + stats.cr, force_die=Die.d4)
         dc = stats.difficulty_class
+        distance = easy_multiple_of_five(stats.cr * 4, min_val=10, max_val=60)
 
         feature = Feature(
             name="Poisonous Demise",
-            description=f"When {stats.selfref} dies, they release a spray of poison. Each creature within 30 ft must succeed on a DC {dc} Dexterity save or take {dmg} poison damage",
+            description=f"When {stats.selfref} dies, they release a spray of poison. Each creature within {distance} ft must succeed on a DC {dc} Dexterity save or take {dmg.description} poison damage",
             action=ActionType.Reaction,
         )
 

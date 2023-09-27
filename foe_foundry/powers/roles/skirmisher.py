@@ -91,7 +91,7 @@ class _CarefulSteps(Power):
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Careful Steps",
-            description=f"{stats.roleref}'s movemenet does not provoke opportunity attacks until the end of their turn",
+            description=f"{stats.roleref}'s movement does not provoke opportunity attacks until the end of their turn",
             action=ActionType.BonusAction,
         )
         return stats, feature

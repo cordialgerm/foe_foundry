@@ -4,15 +4,12 @@ from typing import List, Tuple
 import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.die import DieFormula
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, Burning, DamageType, Dazed, Frozen, Shocked
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ..attack import flavorful_damage_types
 from ..power import Power, PowerType
@@ -96,11 +93,11 @@ class _DamagingAura(Power):
         else:
             name = "Damaging Aura"
 
-        dmg = int(ceil(stats.cr))
+        dmg = DieFormula.target_value(stats.cr)
 
         feature = Feature(
             name=name,
-            description=f"Any creature who moves within 10 feet of {stats.selfref} or who starts their turn there takes {dmg} {damage_type} damage",
+            description=f"Any creature who moves within 10 feet of {stats.selfref} or who starts their turn there takes {dmg.description} {damage_type} damage",
             action=ActionType.Feature,
         )
 
@@ -191,7 +188,7 @@ class _ElementalBurst(Power):
 
         uses = int(ceil(stats.cr / 5))
         dmg_type = stats.secondary_damage_type or DamageType.Fire
-        dmg = int(1.25 * ceil(stats.attack.average_damage))
+        dmg = DieFormula.target_value(0.75 * stats.attack.average_damage)
         distance = 5 if stats.cr <= 7 else 10
         dc = stats.difficulty_class
         feature = Feature(
@@ -200,7 +197,7 @@ class _ElementalBurst(Power):
             uses=uses,
             description=f"When {stats.selfref} is hit by a melee attack, their form explodes with {dmg_type} energy. \
                 Each other creature within {distance} ft must make a DC {dc} Dexterity saving throw, \
-                taking {dmg} {dmg_type} damage on a failure and half as much damage on a success.",
+                taking {dmg.description} {dmg_type} damage on a failure and half as much damage on a success.",
         )
         return stats, feature
 
@@ -220,37 +217,45 @@ class _ElementalMagic(Power):
 
         if dmg_type == DamageType.Fire:
             name = "Fireball"
-            dmg = int(ceil(1.75 * stats.attack.average_damage))
+            dmg = DieFormula.target_value(1.6 * stats.attack.average_damage, force_die=Die.d6)
             description = f"{stats.selfref.capitalize()} targets a 20 ft sphere at a point it can see within 150 feet. A fiery explosion fills the space. \
-                All creatures within the space must make a DC {dc} Dexterity saving throw, taking {dmg} {dmg_type} damage on a failure and half as much on a success."
+                All creatures within the space must make a DC {dc} Dexterity saving throw, taking {dmg.description} {dmg_type} damage on a failure and half as much on a success."
         elif dmg_type == DamageType.Acid:
             name = "Acidic Blast"
-            dmg = int(ceil(1.25 * stats.attack.average_damage))
-            ongoing = int(ceil(dmg / 2))
+
+            # acid damage is always done in d4s and should be an even number
+            # this is because the ongoing damage should be half that amount
+            dmg = DieFormula.target_value(1.2 * stats.attack.average_damage, force_die=Die.d4)
+            if dmg.n_die % 2 == 1:
+                dmg = DieFormula.from_dice(**{Die.d4: dmg.n_die + 1})
+            ongoing = DieFormula.from_dice(**{Die.d4: dmg.n_die // 2})
+
             description = f"{stats.selfref.capitalize()} targets a 20 ft sphere at a point it can see within 150 feet. A volatile sphere of acid explodes, inundating the space. \
-                All creatures within the space must make a DC {dc} Dexterity saving throw. On a failed save, a creature takes {dmg} {dmg_type} damage and becomes coated in acid. \
-                While coated in this way, the creature takes {ongoing} ongoing {dmg_type} damage at the end of each of its turns. A creature may use an Action to remove the acid coating. \
+                All creatures within the space must make a DC {dc} Dexterity saving throw. On a failed save, a creature takes {dmg.description} {dmg_type} damage and becomes coated in acid. \
+                While coated in this way, the creature takes {ongoing.description} ongoing {dmg_type} damage at the end of each of its turns. A creature may use an Action to remove the acid coating. \
                 On a success, the creature takes half as much damage and is not coated."
         elif dmg_type == DamageType.Cold:
             name = "Cone of Cold"
-            dmg = int(ceil(1.5 * stats.attack.average_damage))
+            dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d8)
             description = f"{stats.selfref.capitalize()} releases a blast of cold air in a 60 foot cone. Each creature in the area must make a DC {dc} Constitution save, \
-                taking {dmg} {dmg_type} damage on a failure and half as much on a success."
+                taking {dmg.description} {dmg_type} damage on a failure and half as much on a success."
         elif dmg_type == DamageType.Lightning:
             name = "Lightning Bolt"
-            dmg = int(ceil(1.75 * stats.attack.average_damage))
+            dmg = DieFormula.target_value(1.75 * stats.attack.average_damage, force_die=Die.d6)
             description = f"{stats.selfref.capitalize()} releases a crackling bolt of lightning in a 100 ft line that is 5 ft wide. Each creature in the line must make a DC {dc} Dexterity save, \
-                taking {dmg} {dmg_type} on a failure and half as much on a success."
+                taking {dmg.description} {dmg_type} on a failure and half as much on a success."
         elif dmg_type == DamageType.Poison:
             name = "Poison Cloud"
-            dmg = int(ceil(stats.attack.average_damage))
+            dmg = DieFormula.target_value(stats.attack.average_damage, force_die=Die.d6)
+            duration = DieFormula.from_expression("1d4 + 2")
             description = f"{stats.selfref.capitalize()} creates a 20-ft radius cloud of toxic gas centered at a point it can see within 60 feet. Each creature that starts its turn in the cloud \
-                must make a DC {dc} Constitution saving throw. On a failure, a creature takes {dmg} {dmg_type} damage and is **Poisoned** until the end of its next turn. On a success, a creature takes half as much damage and is not poisoned."
+                must make a DC {dc} Constitution saving throw. On a failure, a creature takes {dmg.description} {dmg_type} damage and is **Poisoned** until the end of its next turn. On a success, a creature takes half as much damage and is not poisoned. \
+                The cloud lasts for {duration.description} and can be dispersed by a light breeze."
         elif dmg_type == DamageType.Thunder:
             name = "Thunderwave"
-            dmg = int(ceil(1.75 * stats.attack.average_damage))
+            dmg = DieFormula.target_value(1.75 * stats.attack.average_damage, force_die=Die.d10)
             description = f"{stats.selfref.capitalize()} releases a burst of thundrous energy in a 15 ft. cube originating from {stats.selfref}. \
-                Each creature in the area must make a DC {dc} Constitution saving throw. On a failure, a creature takes {dmg} {dmg_type} thunder damage and is knocked up to 10 feet away and lands **Prone**. \
+                Each creature in the area must make a DC {dc} Constitution saving throw. On a failure, a creature takes {dmg.description} {dmg_type} thunder damage and is knocked up to 10 feet away and lands **Prone**. \
                 On a success, a creature takes half as much damage and is not knocked prone."
         else:
             raise NotImplementedError(f"{dmg_type} is not supported")
@@ -278,35 +283,41 @@ class _ElementalSmite(Power):
 
         dmg_type = stats.secondary_damage_type
         dc = stats.difficulty_class
-        dmg = int(ceil(0.5 * stats.attack.average_damage))
+        dmg_target = 0.5 * stats.attack.average_damage
 
         if dmg_type == DamageType.Fire:
             name = "Fiery Smite"
             burning = Burning(DieFormula.from_expression("1d10"))
+            dmg = DieFormula.target_value(dmg_target, force_die=Die.d10)
             condition = f"and forces the target to make a DC {dc} Constitution saving throw. On a failure, the target is {burning.caption}. {burning.description_3rd}"
         elif dmg_type == DamageType.Acid:
             name = "Acidic Smite"
-            burning = Burning(DieFormula.from_expression("1d10"), DamageType.Acid)
+            dmg = DieFormula.target_value(dmg_target, force_die=Die.d4)
+            burning = Burning(DieFormula.from_expression("2d4"), DamageType.Acid)
             condition = f"and forces the target to make a DC {dc} Dexterity saving throw. On a failure, the target is {burning.caption}. {burning.description_3rd}"
         elif dmg_type == DamageType.Cold:
             name = "Chill Smite"
+            dmg = DieFormula.target_value(dmg_target, force_die=Die.d8)
             frozen = Frozen(dc=dc)
             condition = f"and forces the target to make a DC {dc} Constitution saving throw. On a failure, the target is {frozen.caption}. {frozen.description_3rd}"
         elif dmg_type == DamageType.Lightning:
             name = "Shocking Smite"
+            dmg = DieFormula.target_value(dmg_target, force_die=Die.d6)
             shocked = Shocked()
             condition = f"and forces the target to make a DC {dc} Dexterity saving throw. On a failure, the target is {shocked.caption} until the end of its next turn. {shocked.description_3rd}"
         elif dmg_type == DamageType.Poison:
+            dmg = DieFormula.target_value(dmg_target, force_die=Die.d8)
             name = "Poisonous Smite"
             condition = f"and forces the target to make a DC {dc} Constitution saving throw or become Poisoned for 1 minute (save ends at end of turn)."
         elif dmg_type == DamageType.Thunder:
             name = "Thundrous Smite"
+            dmg = DieFormula.target_value(dmg_target, force_die=Die.d8)
             dazed = Dazed()
             condition = f"and force the target to make a DC {dc} Constitution saving throw. On a failure, the target is {dazed.caption} until the end of its next turn. {dazed.description_3rd}"
         else:
             raise NotImplementedError(f"{dmg_type} is not supported")
 
-        description = f"Immediately after hitting with an attack, {stats.selfref} deals an additional {dmg} {dmg_type} damage to the target {condition}"
+        description = f"Immediately after hitting with an attack, {stats.selfref} deals an additional {dmg.description} {dmg_type} damage to the target {condition}"
 
         feature = Feature(
             name=name, action=ActionType.BonusAction, description=description, recharge=5

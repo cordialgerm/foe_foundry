@@ -49,7 +49,7 @@ class _PoisonThorns(Power):
             die=Die.d6,
             name="Poison Thorns",
             additional_description=f"On a hit, the target is **Poisoned** until the end of their next turn.",
-        ).split_damage(DamageType.Poison)
+        ).split_damage(DamageType.Poison, split_ratio=0.9)
 
         stats = stats.add_attack(poison_thorns)
 

@@ -74,7 +74,7 @@ class Attack:
 
         description = f"*{attack}*: +{self.hit} to hit, {attack_range}, one target. *Hit* {self.damage.description}"
         if self.additional_damage is not None:
-            description += " and " + self.additional_damage.description
+            description += f" and {self.additional_damage.description}."
         else:
             description += "."
 
@@ -148,11 +148,10 @@ class Attack:
                 attack_type=attack_type, range=self.range or 60, reach=None, damage=new_damage
             )
 
-    def split_damage(self, secondary_damage_type: DamageType) -> Attack:
-        # try to split the attack damage to a secondary damage type
-        # if there is only 1 damage die then
-        # at low damage levels, it should be about a 1/2 split
-        # at higher damage levels, it should be about a 1/3 split
+    def split_damage(
+        self, secondary_damage_type: DamageType, split_ratio: float = 0.5
+    ) -> Attack:
+        # try to split the attack damage to a secondary damage type according to the split_ratio
 
         primary_damage_type = self.damage.damage_type
         primary_formula = self.damage.formula
@@ -186,7 +185,7 @@ class Attack:
             # round down so the original damage type is always 50+% of the damage
             new_primary_die = primary_die
             new_secondary_die = primary_die
-            new_secondary_n_die = int(floor(n_die / 2))
+            new_secondary_n_die = int(floor(n_die * split_ratio))
             new_primary_n_die = n_die - new_secondary_n_die
 
         new_base_formula = DieFormula.from_dice(mod=mod, **{new_primary_die: new_primary_n_die})
@@ -212,7 +211,7 @@ class Attack:
 
         new_damage = Damage(
             formula=DieFormula.target_value(
-                target=target_damage, suggested_die=die, per_die_mod=per_die_mod
+                target=target_damage, force_die=die, per_die_mod=per_die_mod
             ),
             damage_type=damage_type,
         )
@@ -229,13 +228,22 @@ class Attack:
         """create a new attack whose average damage is scaled"""
         new_attack = self.join()
         new_target = scalar * new_attack.average_damage
-        suggested_die = die or new_attack.damage.formula.primary_die_type
+        if die:
+            force_die = die
+            suggested_die = None
+        else:
+            force_die = None
+            suggested_die = new_attack.damage.formula.primary_die_type
+
         per_die_mod = ceil(
             (new_attack.damage.formula.mod or 0) / new_attack.damage.formula.n_die
         )
         damage_type = damage_type or new_attack.damage.damage_type
         new_formula = DieFormula.target_value(
-            new_target, suggested_die, per_die_mod=per_die_mod
+            new_target,
+            force_die=force_die,
+            suggested_die=suggested_die,
+            per_die_mod=per_die_mod,
         )
         new_damage = Damage(formula=new_formula, damage_type=damage_type)
         return new_attack.copy(damage=new_damage, **args)

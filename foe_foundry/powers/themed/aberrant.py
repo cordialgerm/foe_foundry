@@ -58,7 +58,7 @@ class _EraseMemory(Power):
         feature = Feature(
             name="Erase Memory",
             action=ActionType.BonusAction,
-            description=f"Immediately after hitting with an attack, {stats.selfref} becomes invisible to the target as the target's memories of {stats.selfref} are temporarily erased. \
+            description=f"Immediately after hitting with an attack, {stats.selfref} becomes **Invisible** to the target as the target's memories of {stats.selfref} are temporarily erased. \
                 The target makes a DC {dc} Intelligence saving throw at the end of each of its turns to end the effect. \
                 If a creature fails three saves, the memory loss is permanent and can only be undone with a Greater Restoration or equivalent magic. \
                 A creature that succeeds on a saving throw is immune to this effect for 5 minutes.",

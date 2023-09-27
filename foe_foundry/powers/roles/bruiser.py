@@ -3,14 +3,12 @@ from typing import List, Tuple
 
 import numpy as np
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
@@ -84,20 +82,25 @@ class _Grappler(Power):
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    ) -> Tuple[BaseStatblock, Feature | None]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Athletics)
         stats = stats.copy(attributes=new_attrs, primary_damage_type=DamageType.Bludgeoning)
 
         dc = stats.difficulty_class
 
-        feature = Feature(
+        grapple_attack = stats.attack.scale(
+            scalar=0.7,
+            damage_type=DamageType.Bludgeoning,
+            attack_type=AttackType.MeleeNatural,
+            die=Die.d6,
             name="Grappling Strike",
-            action=ActionType.BonusAction,
-            description=f"Immediately after {stats.roleref} hits with a weapon attack, the target must make a DC {dc} Strength save or be **Grappled** (escape DC {dc}). \
+            additional_description=f"On a hit, the target must make a DC {dc} Strength save or be **Grappled** (escape DC {dc}). \
                  While grappled in this way, the creature is also **Restrained**",
         )
 
-        return stats, feature
+        stats = stats.add_attack(grapple_attack)
+
+        return stats, None
 
 
 class _Cleaver(Power):
@@ -132,8 +135,8 @@ class _Cleaver(Power):
         feature = Feature(
             name="Cleaving Blows",
             action=ActionType.BonusAction,
-            description=f"Immediately after the {stats.selfref} hits with a weapon attack, it may make the same attack against a target within its reach.",
-            recharge=5,
+            description=f"Immediately after the {stats.selfref} hits with a weapon attack, it may make the same attack against another target within its reach.",
+            recharge=4,
         )
 
         return stats, feature
@@ -208,7 +211,6 @@ class _Disembowler(Power):
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, List[Feature]]:
         dc = stats.difficulty_class
-        dmg = easy_multiple_of_five(2 + stats.cr, round_down=True, min_val=2)
 
         rend_attack = stats.attack.scale(
             scalar=0.7,
@@ -217,7 +219,10 @@ class _Disembowler(Power):
             if stats.attack.attack_type != AttackType.MeleeNatural
             else AttackType.MeleeNatural,
             name="Rend",
-            additional_description=f"On a hit, the target must succeed on a DC {dc} Constitution saving throw or suffer {dmg} ongoing piercing damage \
+        )
+        dmg = DieFormula.target_value(rend_attack.average_rolled_damage, force_die=Die.d6)
+        rend_attack = rend_attack.copy(
+            additional_description=f"On a hit, the target must succeed on a DC {dc} Constitution saving throw or suffer {dmg.description} ongoing piercing damage \
                 at the start of each of its turns. The ongoing damage ends when the creature receives magical healing, or if the creature or another creature uses an action to perform a DC 10 Medicine check",
         )
 

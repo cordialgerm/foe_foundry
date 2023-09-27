@@ -10,6 +10,7 @@ from foe_foundry.statblocks import BaseStatblock
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
@@ -24,6 +25,24 @@ from ..scores import (
 )
 
 
+def score_cruel(candidate: BaseStatblock, require_melee: bool = False) -> float:
+    # this power makes a lot of sense for cruel enemies
+    # cruel factors: Fiend, Monstrosity, Intimidation proficiency, Intimidation expertise, high charisma, Ambusher, Bruiser, Leader
+    if require_melee and not candidate.attack_type.is_melee():
+        return NO_AFFINITY
+
+    score = 0
+    if candidate.creature_type in {CreatureType.Fiend, CreatureType.Monstrosity}:
+        score += HIGH_AFFINITY
+    if candidate.attributes.has_proficiency_or_expertise(Skills.Intimidation):
+        score += HIGH_AFFINITY
+    if candidate.attributes.CHA >= 15:
+        score += MODERATE_AFFINITY
+    if candidate.role in {MonsterRole.Ambusher, MonsterRole.Bruiser, MonsterRole.Leader}:
+        score += MODERATE_AFFINITY
+    return score if score > 0 else NO_AFFINITY
+
+
 class _DelightsInSuffering(Power):
     """When attacking a target whose current hit points are below half their hit point maximum,
     this creature has advantage on attack rolls and deals an extra CR damage when they hit."""
@@ -32,20 +51,7 @@ class _DelightsInSuffering(Power):
         super().__init__(name="Delights in Suffering", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        # this power makes a lot of sense for cruel enemies
-        # cruel factors: Fiend, Monstrosity, Intimidation proficiency, Intimidation expertise, high charisma, Ambusher, Bruiser, Leader
-        score = LOW_AFFINITY
-        if candidate.creature_type in {CreatureType.Fiend, CreatureType.Monstrosity}:
-            score += HIGH_AFFINITY
-        if Skills.Intimidation in candidate.attributes.proficient_skills:
-            score += HIGH_AFFINITY
-        if Skills.Intimidation in candidate.attributes.expertise_skills:
-            score += EXTRA_HIGH_AFFINITY
-        if candidate.attributes.CHA >= 15:
-            score += MODERATE_AFFINITY
-        if candidate.role in {MonsterRole.Ambusher, MonsterRole.Bruiser, MonsterRole.Leader}:
-            score += MODERATE_AFFINITY
-        return score
+        return score_cruel(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -61,10 +67,10 @@ class _DelightsInSuffering(Power):
             stats = stats.copy(secondary_damage_type=DamageType.Poison)
 
         damage_type = stats.secondary_damage_type
-        dmg = int(ceil(0.75 * stats.cr))
+        dmg = DieFormula.target_value(0.5 * stats.cr, suggested_die=Die.d6)
         feature = Feature(
             name="Delights in Suffering",
-            description=f"The attack is made at advantage and deals an additional {dmg} {damage_type} damage if the target is at or below half-health.",
+            description=f"The attack is made at advantage and deals an additional {dmg.description} {damage_type} damage if the target is at or below half-health.",
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
@@ -73,45 +79,26 @@ class _DelightsInSuffering(Power):
 
 
 class _Lethal(Power):
-    """This creature has a +CR bonus to damage rolls, and scores a critical hit on an unmodified attack roll of 18-20."""
-
     def __init__(self):
         super().__init__(name="Lethal", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        # this role makes sense for lots of monsters, but Ambushers and Artillery should be a bit more likely to have this
-        score = MODERATE_AFFINITY
-        if candidate.role in {MonsterRole.Ambusher, MonsterRole.Artillery}:
-            score += MODERATE_AFFINITY
-        if candidate.secondary_damage_type == DamageType.Poison:
-            score += MODERATE_AFFINITY
-        return score
+        return score_cruel(candidate, require_melee=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, List[Feature]]:
-        if stats.secondary_damage_type is None:
-            stats = stats.copy(secondary_damage_type=DamageType.Poison)
-        dmg = int(ceil(stats.cr))
-        dmg_type = stats.secondary_damage_type
-
+    ) -> Tuple[BaseStatblock, Feature]:
         crit_lower = 19 if stats.cr <= 7 else 18
-
-        feature1 = Feature(
+        dmg = DieFormula.target_value(2 + stats.cr, force_die=Die.d6)
+        dmg_type = stats.secondary_damage_type or stats.primary_damage_type
+        feature = Feature(
             name="Lethal",
-            description=f"The attack scores a critical hit on an unmodified attack roll of {crit_lower}-20",
             action=ActionType.Feature,
-            modifies_attack=True,
-            hidden=True,
+            description=f"{stats.selfref.capitalize()} scores a critical hit on an unmodified attack roll of {crit_lower}-20. \
+                Additional, a critical hit from {stats.selfref} deals an additional {dmg.description} {dmg_type} damage (do not apply crit modifier to this damage), and the creature dies if this attack reduces its hit points to 0.",
         )
 
-        feature2 = Feature(
-            name="Lethal",
-            action=ActionType.BonusAction,
-            recharge=5,
-            description=f"Immediately after hitting a creature with an attack, {stats.selfref} deals an additional {dmg} {dmg_type} damage to the target",
-        )
-        return stats, [feature1, feature2]
+        return stats, feature
 
 
 DelightsInSuffering: Power = _DelightsInSuffering()

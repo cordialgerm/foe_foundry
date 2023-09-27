@@ -3,14 +3,12 @@ from typing import List, Tuple
 
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import Power, PowerType
@@ -161,7 +159,7 @@ class _MindShatteringScream(Power):
         return score if score > 0 else NO_AFFINITY
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        dmg = int(ceil(5 + 2.5 * stats.cr))
+        dmg = DieFormula.target_value(5 + 2.5 * stats.cr, force_die=Die.d6)
         dc = stats.difficulty_class
 
         feature = Feature(
@@ -169,8 +167,8 @@ class _MindShatteringScream(Power):
             action=ActionType.Action,
             recharge=6,
             description=f"{stats.selfref.capitalize()} releases a mind-shattering scream. All other creatures within 30 ft that can hear {stats.selfref} \
-                must make a DC {dc} Intelligence saving throw. On a failure, a creature takes {dmg} psychic damage and is Stunned until the end of its next turn. \
-                On a success, a creature takes half damage and is not Stunned. Creatures that are Frightened have disadvantage on this save.",
+                must make a DC {dc} Intelligence saving throw. On a failure, a creature takes {dmg.description} psychic damage and is **Stunned** until the end of its next turn. \
+                On a success, a creature takes half damage and is not Stunned. Creatures that are **Frightened** have disadvantage on this save.",
         )
 
         return stats, feature
@@ -184,7 +182,7 @@ class _NightmarishVisions(Power):
         return _score_horrifying(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        dmg = int(ceil(max(5, 1.5 * stats.cr)))
+        dmg = DieFormula.target_value(max(5, 1.5 * stats.cr), force_die=Die.d6)
         dc = stats.difficulty_class_easy
 
         feature = Feature(
@@ -193,7 +191,7 @@ class _NightmarishVisions(Power):
             replaces_multiattack=1,
             recharge=5,
             description=f"{stats.selfref.capitalize()} targets a creature that it can see within 30 feet and forces it to confront its deepest fears. \
-                The target must succeed on a DC {dc} Wisdom save or become **Frightened** of {stats.selfref}. While frightened in this way, the creature takes {dmg} ongoing psychic damage at the start of each of its turns. Save ends at end of turn.",
+                The target must succeed on a DC {dc} Wisdom save or become **Frightened** of {stats.selfref}. While frightened in this way, the creature takes {dmg.description} ongoing psychic damage at the start of each of its turns. Save ends at end of turn.",
         )
 
         return stats, feature

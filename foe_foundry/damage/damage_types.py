@@ -3,7 +3,7 @@ from __future__ import annotations
 from enum import StrEnum, auto
 from typing import List, cast
 
-from ..creature_types import CreatureType
+from ..die import Die
 
 
 class DamageType(StrEnum):

@@ -121,7 +121,9 @@ class CreatureTypeTemplate(ABC):
         for power in powers:
             new_stats, new_features = power.apply(new_stats, rng)
 
-            if isinstance(new_features, Feature):
+            if new_features is None:
+                new_features = []
+            elif isinstance(new_features, Feature):
                 new_features = [new_features]
 
             features.update(new_features)

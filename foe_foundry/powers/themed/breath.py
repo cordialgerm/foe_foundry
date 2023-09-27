@@ -7,6 +7,7 @@ from ...ac import ArmorClass
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
@@ -62,7 +63,9 @@ class _BreathAttack(Power):
             save_type = "Dexterity"
             multiplier = 4.5
 
-        dmg = int(ceil(max(5 + multiplier * 0.5 * stats.cr, multiplier * stats.cr)))
+        dmg = DieFormula.target_value(
+            max(5 + multiplier * 0.5 * stats.cr, multiplier * stats.cr), suggested_die=Die.d8
+        )
 
         dc = stats.difficulty_class
 
@@ -72,7 +75,7 @@ class _BreathAttack(Power):
             recharge=5,
             description=f"{stats.selfref.capitalize()} breathes {damage_type} in a {template}. \
                 Each creature in the area must make a DC {dc} {save_type} save. \
-                On a failure, the creature takes {dmg} {damage_type} damage or half as much on a success.",
+                On a failure, the creature takes {dmg.description} {damage_type} damage or half as much on a success.",
         )
 
         return stats, feature

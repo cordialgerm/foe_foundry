@@ -24,7 +24,7 @@ class Power(ABC):
     @abstractmethod
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
         pass
 
     def __repr__(self):

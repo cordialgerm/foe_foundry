@@ -12,6 +12,7 @@ from ...ac import ArmorClass
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
@@ -82,14 +83,14 @@ class _Constriction(Power):
         stats = _as_monstrous(stats)
         reach = 5 if stats.size <= Size.Medium else 10
         dc = stats.difficulty_class
-        dmg = max(2, ceil(stats.cr))
+        dmg = DieFormula.target_value(max(2, ceil(stats.cr)), force_die=Die.d4)
 
         feature = Feature(
             name="Constrict",
             action=ActionType.Action,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} chooses a target it can see within {reach} feet. The target must make a DC {dc} Strength saving throw or become **Grappled** (escape DC {dc}). \
-                While grappled in this way, the target is also **Restrained** and takes {dmg} ongoing bludgeoning damage at the start of each of its turns.",
+                While grappled in this way, the target is also **Restrained** and takes {dmg.description} ongoing bludgeoning damage at the start of each of its turns.",
         )
         return stats, feature
 

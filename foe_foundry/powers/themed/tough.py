@@ -105,41 +105,6 @@ class _GoesDownFighting(Power):
         return stats, feature
 
 
-class _RefuseToSurrender(Power):
-    """When this creature’s current hit points are below half their hit point maximum,
-    the creature deals CR extra damage with each of their attacks."""
-
-    def __init__(self):
-        super().__init__(name="Refuse to Surrender", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        # the creature has to be somewhat aware to fight harder when it's hurt
-        if candidate.attributes.INT <= 3 or candidate.attributes.WIS <= 3:
-            return NO_AFFINITY
-
-        # this power makes a lot of sense for larger creatures, creatures with more HP, higher CR creatures, and Bruisers
-        score = 0
-        if candidate.size in {Size.Large, Size.Huge, Size.Gargantuan}:
-            score += LOW_AFFINITY
-        if candidate.attributes.CON >= 14:
-            score += LOW_AFFINITY
-        if candidate.cr >= 4:
-            score += LOW_AFFINITY
-        if candidate.role in {MonsterRole.Bruiser, MonsterRole.Defender}:
-            score += MODERATE_AFFINITY
-        return score if score > 0 else NO_AFFINITY
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        threshold = int(ceil(stats.hp.average / 2.0))
-        dmg = int(ceil(stats.cr))
-        feature = Feature(
-            name="Refuse to Surrender",
-            description=f"When {stats.selfref}'s current hit points are below {threshold}, the creature deals an extra {dmg} damage with each of its attacks.",
-            action=ActionType.Feature,
-        )
-        return stats, feature
-
-
 class _AdrenalineRush(Power):
     def __init__(self):
         super().__init__(name="Adrenaline Rush", power_type=PowerType.Theme)
@@ -320,7 +285,6 @@ LimitedMagicImmunity: Power = _LimitedMagicImmunity()
 MagicResistance: Power = _MagicResistance()
 NotDeadYet: Power = _NotDeadYet()
 QuickRecovery: Power = _QuickRecovery()
-RefuseToSurrender: Power = _RefuseToSurrender()
 Regeneration: Power = _Regeneration()
 
 ToughPowers: List[Power] = [
@@ -331,6 +295,5 @@ ToughPowers: List[Power] = [
     MagicResistance,
     NotDeadYet,
     QuickRecovery,
-    RefuseToSurrender,
     Regeneration,
 ]

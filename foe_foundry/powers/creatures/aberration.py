@@ -51,11 +51,6 @@ class _GraspingTentacles(Power):
 
 
 class _DominatingGaze(Power):
-    """Dominating Gaze (Action, Recharge 4-6). If this creature has the multiattack action, Dominating Gaze can take the place of
-    one of the attacks used in that action. This creature chooses a target they can see within 60 feet of them. The target must
-    succeed on a Charisma saving throw (DC = 12 + 1/2 CR) or be forced to immediately make their most effective weapon attack or at-will spell or magical attack against a target chosen
-    by this creature."""
-
     def __init__(self):
         super().__init__(name="Dominating Gaze", power_type=PowerType.Creature)
 
@@ -70,14 +65,14 @@ class _DominatingGaze(Power):
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        dc = int(floor(12 + 0.5 * stats.cr))
+        dc = stats.difficulty_class
         feature = Feature(
             name="Dominating Gaze",
             action=ActionType.Action,
             recharge=4,
             replaces_multiattack=1,
             description=f"One target of this creature's choice that they can see within 60 feet must succed on a DC {dc} Charisma saving throw \
-                or be forced to immediately use their reaction to make their most effective weapon attack or at-will spell or magical attack against a target chosen by this creature. \
+                or be forced to immediately use their reaction to move up to half their speed and make their most effective weapon attack or at-will spell or magical attack against a target chosen by this creature. \
                 This counts as a **Charm** effect.",
         )
         return stats, feature

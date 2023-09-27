@@ -62,16 +62,24 @@ class _RelishYourFailure(Power):
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
-        hp = int(ceil(stats.cr / 2))
-
-        feature = Feature(
+    ) -> Tuple[BaseStatblock, List[Feature]]:
+        hp = DieFormula.target_value(max(2, stats.cr / 2), suggested_die=Die.d4)
+        dc = stats.difficulty_class
+        feature1 = Feature(
             name="Relish Your Failure",
             action=ActionType.Feature,
-            description=f"{stats.selfref.capitalize()} regains {hp} hp whenever a creature fails a saving throw within 60 feet. If it is at maximum hp, it gains that much temporary hp instead.",
+            description=f"{stats.selfref.capitalize()} regains {hp.description} hp whenever a creature fails a saving throw within 60 feet. If it is at maximum hp, it gains that much temporary hp instead.",
         )
 
-        return stats, feature
+        feature2 = Feature(
+            name="Fiendish Curse",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} casts the *Bane* spell (spell save DC {dc}) at 2nd level, targeting up to 4 creatures, and without requiring concentration.",
+        )
+
+        return stats, [feature1, feature2]
 
 
 class _FiendishTeleporation(Power):
@@ -84,7 +92,7 @@ class _FiendishTeleporation(Power):
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         multiplier = 1.5 if stats.multiattack >= 2 else 0.75
         dmg = DieFormula.target_value(
-            multiplier * stats.attack.average_damage, suggested_die=Die.d10
+            multiplier * stats.attack.average_damage, force_die=Die.d10
         )
         distance = easy_multiple_of_five(stats.cr * 10, min_val=30, max_val=120)
         dc = stats.difficulty_class_easy
@@ -149,7 +157,7 @@ class _FiendishBite(Power):
             die=Die.d6,
             attack_type=AttackType.MeleeNatural,
             additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become **Poisoned** for 1 minute (save ends at end of turn).",
-        ).split_damage(DamageType.Poison)
+        ).split_damage(DamageType.Poison, split_ratio=0.9)
 
         stats = stats.add_attack(bite_attack)
 

@@ -6,6 +6,7 @@ from numpy.random import Generator
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
 from ...role_types import MonsterRole
@@ -72,11 +73,11 @@ class _SneakyStrike(Power):
         return _score_is_sneaky_creature(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        dmg = int(floor(max(1.5 * stats.cr, 2 + stats.cr)))
+        dmg = DieFormula.target_value(max(1.5 * stats.cr, 2 + stats.cr), force_die=Die.d6)
 
         feature = Feature(
             name="Sneaky Strike",
-            description=f"{stats.roleref.capitalize()} deals an additional {dmg} damage immediately after hitting a target if the attack was made with advantage.",
+            description=f"{stats.roleref.capitalize()} deals an additional {dmg.description} damage immediately after hitting a target if the attack was made with advantage.",
             action=ActionType.BonusAction,
         )
 

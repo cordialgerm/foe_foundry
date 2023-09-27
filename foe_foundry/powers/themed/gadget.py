@@ -96,7 +96,7 @@ class _SmokeBomb(Power):
         return _score_gadget(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        distance = easy_multiple_of_five(5 + stats.cr / 5, max_val=30)
+        distance = easy_multiple_of_five(5 + stats.cr / 5, min_val=10, max_val=30)
         rounds = DieFormula.from_expression("1d4 + 2")
 
         feature = Feature(
@@ -180,7 +180,7 @@ class _MagicalExplosive(Power):
             action=ActionType.Action,
             uses=1,
             replaces_multiattack=2,
-            description=f"{stats.selfref.capitalize()} hurls a {name} at a point they can see within {distance}. The grenade explodes in a {radius} ft sphere. \
+            description=f"{stats.selfref.capitalize()} hurls a {name} at a point they can see within {distance} ft. The grenade explodes in a {radius} ft sphere. \
                 Each creature in the area must make a DC {dc} Dexterity saving throw or take {dmg.description} {damage_type} damage. On a success, the creature takes half as much damage.",
         )
 

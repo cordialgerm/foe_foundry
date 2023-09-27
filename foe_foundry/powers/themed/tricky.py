@@ -14,6 +14,7 @@ from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -160,7 +161,7 @@ class _ShadowyDoppelganger(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
-        hp = int(floor(max(5, 1.5 * stats.cr)))
+        hp = easy_multiple_of_five(1.25 * stats.cr, min_val=5)
 
         feature = Feature(
             name="Shadowy Doppleganger",
