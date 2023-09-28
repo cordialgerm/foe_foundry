@@ -35,7 +35,7 @@ class CustomCondition:
     def __post_init__(self):
         full_description = f"{self.caption}. {self.description_3rd}"
         if self.immunity_clause != "":
-            full_description += f". {self.immunity_clause}"
+            full_description += f" {self.immunity_clause}"
         self.full_description = full_description
 
     def __repr__(self) -> str:
@@ -52,7 +52,7 @@ def Burning(
         name="Burning",
         caption=f"**Burning** [{damage} {damage_type}]",
         description=f"At the start of each of your turns, you take {damage} {damage_type} damage. You or another creature within 5 feet of you can spend an action to end the condition.",
-        description_3rd=f"A burning creature suffers {damage} ongoing {damage_type} damage at the start of each of its turns. A creature may use an action to end the condition",
+        description_3rd=f"A burning creature suffers {damage} ongoing {damage_type} damage at the start of each of its turns. A creature may use an action to end the condition.",
     )
 
 
@@ -76,7 +76,7 @@ def Bleeding(
         description="TODO",
         description_3rd=f"A bleeding creature suffers {damage} ongoing {damage_type} damage at the end of each of its turns. \
                                 A creature may use an action to attempt a DC {dc} Medicine check to end the condition. \
-                                The condition also ends if the creature receives {healing}",
+                                The condition also ends if the creature receives {healing}.",
     )
 
 
@@ -107,8 +107,8 @@ def Shocked() -> CustomCondition:
         name="Shocked",
         caption="**Shocked**",
         immunity_clause="A creature that is immune to being **Stunned** cannot be **Shocked**",
-        description=f"You are **Dazed** and drop whatever you are carrying",
-        description_3rd="A **Shocked** creature is **Dazed** and drops whatever it is carrying",
+        description=f"You are **Dazed** and drop whatever you are carrying.",
+        description_3rd="A **Shocked** creature is **Dazed** and drops whatever it is carrying.",
     )
 
 
@@ -130,4 +130,15 @@ def Swallowed(
         description_3rd=f"A swallowed creature is **Blinded**, **Restrained**, and has total cover against attacks and effects from the outside. It takes {damage} ongoing {damage_type} damage at the start of each of its turns.  \
             If the swallowing creature takes {regurgitate_damage_threshold} damage or more on a single turn from a creature inside it, it must make a DC {regurgitate_dc} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures which fall **Prone** in a space within 10 feet of it. \
             If the swallowing creature dies, the swallowed creature is no longer restrained by it and can escape by using 15 feet of movement, exiting prone.",
+    )
+
+
+def Fatigue() -> CustomCondition:
+    return CustomCondition(
+        name="Fatigue",
+        caption="**Fatigue**",
+        description="Whenever you make a d20 test, you subtract your fatigue level from the d20 roll. You also subtract your fatigue level from the Spell save DC of any Spell you cast. \
+            You can have up to 10 levels of fatigue. You die if your fatigue level exceeds 10. Finishing a Long Rest removes 1 of your levels of fatigue.",
+        description_3rd="A creature suffering from **Fatigue** subtracts its fatigue level from the d20 roll whenever making a d20 test. It also subtracts its fatigue level from the Spell save DC of any spell it casts. \
+            Fatigue levels are cumulative, and any creature that gains more than 10 levels of fatigue dies. Finishing a Long Rest removes 1 level of fatigue.",
     )

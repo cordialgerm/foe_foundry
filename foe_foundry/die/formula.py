@@ -145,7 +145,13 @@ class DieFormula:
                 + _candidate(target, suggested_die.increase(), per_die_mod, flat_mod)
             )
 
-        errors = [abs(target - c.average) for c in candidates]
+        # we generally want to be a little below the target because the monsters here are pretty strong
+        # so we will give +25% to errors where the average is above the target
+        # this will favor rounding down
+        errors = [
+            1.25 * (c.average - target) if c.average >= target else target - c.average
+            for c in candidates
+        ]
         best_index = np.argmin(errors)
         return candidates[best_index]
 
