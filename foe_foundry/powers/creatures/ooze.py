@@ -144,7 +144,7 @@ class _LifeLeech(Power):
             replaces_multiattack=1,
             description=f"One Medium or smaller creature that {stats.selfref} can see within 5 feet of it must succeed on a DC {dc} Dexterity saving throw or be **Grappled** (escape DC {dc}). \
                 Until this grapple ends, the target is **Restrained** and is unable to breathe. In addition, the target takes {dmg.description} ongoing necrotic damage at the start of each of its turns while grappled in this way. \
-                Whiel grappling the target, {stats.selfref} takes only half of any damage dealt to it (rounded down), and the target takes the other half.",
+                While grappling the target, {stats.selfref} takes only half of any damage dealt to it (rounded down), and the target takes the other half.",
         )
 
         return stats, [malleable_form(stats), feature]

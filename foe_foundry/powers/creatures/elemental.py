@@ -229,11 +229,10 @@ class _ElementalMagic(Power):
             if dmg.n_die % 2 == 1:
                 dmg = DieFormula.from_dice(**{Die.d4: dmg.n_die + 1})
             ongoing = DieFormula.from_dice(**{Die.d4: dmg.n_die // 2})
+            burning = Burning(damage=ongoing, damage_type=DamageType.Acid)
 
             description = f"{stats.selfref.capitalize()} targets a 20 ft sphere at a point it can see within 150 feet. A volatile sphere of acid explodes, inundating the space. \
-                All creatures within the space must make a DC {dc} Dexterity saving throw. On a failed save, a creature takes {dmg.description} {dmg_type} damage and becomes coated in acid. \
-                While coated in this way, the creature takes {ongoing.description} ongoing {dmg_type} damage at the end of each of its turns. A creature may use an Action to remove the acid coating. \
-                On a success, the creature takes half as much damage and is not coated."
+                All creatures within the space must make a DC {dc} Dexterity saving throw. On a failed save, a creature takes {dmg.description} {dmg_type} damage and gains {burning}"
         elif dmg_type == DamageType.Cold:
             name = "Cone of Cold"
             dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d8)

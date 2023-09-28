@@ -150,7 +150,7 @@ class _PackTactics(Power):
         feature = Feature(
             name="Pack Tactics",
             action=ActionType.Feature,
-            description=f"{stats.selfref.capitalize()} has advantage on attack rolls against a target if at least one of {stats.selfref}'s is within 5 feet and isn't incapacitated.",
+            description=f"{stats.selfref.capitalize()} has advantage on attack rolls against a target if at least one of {stats.selfref}'s allies is within 5 feet and isn't incapacitated.",
         )
         return stats, feature
 

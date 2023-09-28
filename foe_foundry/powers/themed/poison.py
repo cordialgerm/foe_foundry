@@ -26,7 +26,7 @@ from ..scores import (
 
 def _score(candidate: BaseStatblock) -> float:
     creature_types = {
-        CreatureType.Plant: HIGH_AFFINITY,
+        CreatureType.Plant: MODERATE_AFFINITY,
         CreatureType.Aberration: LOW_AFFINITY,
         CreatureType.Monstrosity: LOW_AFFINITY,
     }
@@ -50,13 +50,13 @@ class _PoisonousDemise(Power):
     ) -> Tuple[BaseStatblock, Feature]:
         stats = stats.copy(secondary_damage_type=DamageType.Poison)
 
-        dmg = DieFormula.target_value(2 + stats.cr, force_die=Die.d4)
+        dmg = DieFormula.target_value(2 + stats.cr, force_die=Die.d6)
         dc = stats.difficulty_class
         distance = easy_multiple_of_five(stats.cr * 4, min_val=10, max_val=60)
 
         feature = Feature(
             name="Poisonous Demise",
-            description=f"When {stats.selfref} dies, they release a spray of poison. Each creature within {distance} ft must succeed on a DC {dc} Dexterity save or take {dmg.description} poison damage",
+            description=f"When {stats.selfref} dies, they release a spray of poison. Each creature within {distance} ft must succeed on a DC {dc} Constitution save or take {dmg.description} poison damage",
             action=ActionType.Reaction,
         )
 

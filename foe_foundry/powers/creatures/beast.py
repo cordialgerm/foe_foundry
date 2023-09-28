@@ -5,7 +5,7 @@ from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, Bleeding, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
@@ -85,15 +85,17 @@ class _Gore(Power):
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | None]:
         dc = stats.difficulty_class
-        bleeding = DieFormula.target_value(0.75 * stats.attack.average_damage)
+
+        bleeding_damage = DieFormula.target_value(0.75 * stats.attack.average_damage)
+        bleeding = Bleeding(damage=bleeding_damage)
+
         gore_attack = stats.attack.scale(
             scalar=1.5,
             damage_type=DamageType.Piercing,
             attack_type=AttackType.MeleeNatural,
             name="Gore",
             replaces_multiattack=2,
-            additional_description=f"If {stats.selfref} moved at least 10 feet before making this attack, then the target must make a DC {dc} Dexterity saving throw. On a failure, the target is gored and suffers {bleeding.description} ongoing piercing damage at the end of each of its turns. \
-                The ongoing damage ends when the creature receives magical healing, or if the creature or another creature uses an action to perform a DC 10 Medicine check",
+            additional_description=f"If {stats.selfref} moved at least 10 feet before making this attack, then the target must make a DC {dc} Dexterity saving throw. On a failure, the target is gored and gains {bleeding}.",
         )
 
         stats = stats.add_attack(gore_attack)

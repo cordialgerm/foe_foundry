@@ -7,7 +7,7 @@ from numpy.random import Generator
 from ...ac import ArmorClass
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, Bleeding, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
@@ -117,19 +117,32 @@ class _WitheringBlow(Power):
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    ) -> Tuple[BaseStatblock, None]:
         dc = stats.difficulty_class_easy
-        dmg = DieFormula.target_value(3 + 0.7 * stats.cr, force_die=Die.d6)
 
-        feature = Feature(
+        withering_blow = stats.attack.scale(
+            scalar=1.4,
+            damage_type=DamageType.Piercing,
+            die=Die.d6,
             name="Withering Blow",
-            action=ActionType.BonusAction,
-            recharge=4,
-            description=f"Immediately after hitting with an attack, the target takes an additional {dmg.description} ongoing necrotic damage at the start of each of their turns. \
-                The effect can be ended by any character using an action to perform a DC {dc} Medicine check or if the target receives {dmg} or more points of magical healing in a round.",
+            replaces_multiattack=2,
+        ).split_damage(DamageType.Necrotic, split_ratio=0.9)
+
+        # the ongoing bleed damage should be equal to the necrotic damage formula for symmetry
+        bleeding_dmg = (
+            withering_blow.additional_damage.formula
+            if withering_blow.additional_damage
+            else DieFormula.from_expression("1d6")
+        )
+        bleeding = Bleeding(damage=bleeding_dmg, damage_type=DamageType.Necrotic, dc=dc)
+
+        withering_blow = withering_blow.copy(
+            additional_description=f"On a hit, the target gains {bleeding}."
         )
 
-        return stats, feature
+        stats = stats.add_attack(withering_blow)
+
+        return stats, None
 
 
 class _DrainingBlow(Power):

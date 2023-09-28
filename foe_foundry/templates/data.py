@@ -117,9 +117,12 @@ class MonsterTemplateData:
 
             replacements = []
             replacements += [
-                (a.name, a.replaces_multiattack)
+                (
+                    a.name,
+                    max(1, a.replaces_multiattack),
+                )  # assume all additional attacks can be swapped out as part of multiattack
                 for a in stats.additional_attacks
-                if a.replaces_multiattack > 0 and a.replaces_multiattack < stats.multiattack
+                if a.replaces_multiattack < stats.multiattack
             ]
             replacements += [
                 (f.name, f.replaces_multiattack)

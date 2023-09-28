@@ -119,7 +119,7 @@ class _Net(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
-        distance = easy_multiple_of_five(stats.cr, round_down=False, max_val=15)
+        distance = easy_multiple_of_five(stats.cr, min_val=5, max_val=15)
         dmg = int(ceil(0.25 * stats.attack.average_damage))
 
         if stats.cr <= 3:

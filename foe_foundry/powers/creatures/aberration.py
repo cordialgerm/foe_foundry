@@ -4,11 +4,12 @@ from typing import List, Tuple
 from numpy.random import Generator
 
 from ...creature_types import CreatureType
-from ...damage import AttackType, Condition
+from ...damage import AttackType, DamageType, Swallowed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...size import Size
 from ...statblocks import BaseStatblock
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -150,31 +151,27 @@ class _AntimagicGullet(Power):
             else MODERATE_AFFINITY
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, List[Feature]]:
-        reach = 15 if stats.size >= Size.Huge else 10
-        new_attack = stats.attack.copy(reach=reach)
-        stats = stats.copy(attack=new_attack)
-
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
-        threshold = int(max(5, ceil(2.0 * stats.cr)))
-        dmg = DieFormula.target_value(5 + stats.cr, force_die=Die.d4)
-        regurgitate_dc = int(min(25, max(10, floor(threshold / 2))))
-
-        feature1 = Feature(
-            name="Bite",
-            action=ActionType.Action,
-            replaces_multiattack=2,
-            description=f"{stats.selfref.capitalize()} attempts to swallow one target within {reach} ft. \
-                The target must make a DC {dc} Dexterity saving throw. On a failure, it is swallowed by {stats.selfref}. (see *Anti-Magic Gullet*)\
-                A swallowed creature is **Blinded** and **Restrained**, it has total cover against attacks and other effects outside {stats.selfref}, and it takes {dmg.description} ongoing acid damage at the start of each of its turns.  \
-                If {stats.selfref} takes {threshold} damage or more on a single turn from a creature inside it, {stats.selfref} must make a DC {regurgitate_dc} \
-                Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall **Prone** in a space within 10 feet of {stats.selfref}. \
-                If {stats.selfref} dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.",
+        threshold = easy_multiple_of_five(2 * stats.cr, min_val=5, max_val=40)
+        swallowed = Swallowed(
+            damage=DieFormula.target_value(5 + stats.cr, force_die=Die.d4),
+            regurgitate_dc=easy_multiple_of_five(threshold * 0.75, min_val=15, max_val=25),
+            regurgitate_damage_threshold=threshold,
         )
 
-        feature2 = Feature(
+        bite_attack = stats.attack.scale(
+            scalar=1.5,
+            damage_type=DamageType.Piercing,
+            attack_type=AttackType.MeleeNatural,
+            replaces_multiattack=2,
+            name="Swallow",
+            additional_description=f"On a hit, the target must make a DC {dc} Dexterity saving throw. On a failure, it is {swallowed} Also see *Anti-Magic Gullet*.",
+        )
+
+        stats = stats.add_attack(bite_attack)
+
+        feature = Feature(
             name="Anti-Magic Gullet",
             action=ActionType.Feature,
             description=f"Magical effects, including those produced by spells and magic items but excluding those created by artifacts or deities, are suppressed inside {stats.selfref}'s gullet. \
@@ -182,7 +179,7 @@ class _AntimagicGullet(Power):
                 No spell or magical effect that originates outside {stats.selfref}'s gullet, except one created by an artifact or a deity, can affect a creature or an object inside the gullet.",
         )
 
-        return stats, [feature1, feature2]
+        return stats, feature
 
 
 AntimagicGullet: Power = _AntimagicGullet()

@@ -23,6 +23,7 @@ from .creatures import (
 from .power import Power
 from .power_type import PowerType
 from .roles import ambusher, artillery, bruiser, controller, defender, leader, skirmisher
+from .scores import EXTRA_HIGH_AFFINITY
 from .themed import (
     ThemedPowers,
     breath,
@@ -74,6 +75,7 @@ def select_from_powers(
     multipliers: npt.NDArray[np.float_] | None = None,
 ) -> List[Power]:
     weights = np.array([p.score(stats) for p in powers], dtype=float)
+    weights[weights > EXTRA_HIGH_AFFINITY] = EXTRA_HIGH_AFFINITY
     if multipliers is not None:
         weights = weights * multipliers
     indxs = weights > 0

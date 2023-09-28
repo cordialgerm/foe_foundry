@@ -5,7 +5,7 @@ import numpy as np
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, Bleeding, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
@@ -221,9 +221,10 @@ class _Disembowler(Power):
             name="Rend",
         )
         dmg = DieFormula.target_value(rend_attack.average_rolled_damage, force_die=Die.d6)
+        bleeding = Bleeding(damage=dmg)
+
         rend_attack = rend_attack.copy(
-            additional_description=f"On a hit, the target must succeed on a DC {dc} Constitution saving throw or suffer {dmg.description} ongoing piercing damage \
-                at the start of each of its turns. The ongoing damage ends when the creature receives magical healing, or if the creature or another creature uses an action to perform a DC 10 Medicine check",
+            additional_description=f"On a hit, the target must succeed on a DC {dc} Constitution saving throw or gain {bleeding}",
         )
 
         stats = stats.add_attack(rend_attack)

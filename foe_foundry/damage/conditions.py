@@ -33,7 +33,10 @@ class CustomCondition:
     full_description: str = field(init=False)
 
     def __post_init__(self):
-        self.full_description = f"{self.caption}. {self.description_3rd}"
+        full_description = f"{self.caption}. {self.description_3rd}"
+        if self.immunity_clause != "":
+            full_description += f". {self.immunity_clause}"
+        self.full_description = full_description
 
     def __repr__(self) -> str:
         return self.full_description
@@ -42,11 +45,38 @@ class CustomCondition:
 def Burning(
     damage: DieFormula | str, damage_type: DamageType = DamageType.Fire
 ) -> CustomCondition:
+    if isinstance(damage, DieFormula):
+        damage = damage.description
+
     return CustomCondition(
         name="Burning",
-        caption=f"**Burning** ({damage} {damage_type})",
+        caption=f"**Burning** [{damage} {damage_type}]",
         description=f"At the start of each of your turns, you take {damage} {damage_type} damage. You or another creature within 5 feet of you can spend an action to end the condition.",
         description_3rd=f"A burning creature suffers {damage} ongoing {damage_type} damage at the start of each of its turns. A creature may use an action to end the condition",
+    )
+
+
+def Bleeding(
+    damage: DieFormula | str,
+    damage_type: DamageType = DamageType.Piercing,
+    dc: int = 10,
+    threshold: int = 0,
+) -> CustomCondition:
+    if isinstance(damage, DieFormula):
+        damage = damage.description
+
+    if threshold > 0:
+        healing = f"at least {threshold} points of magical healing"
+    else:
+        healing = "any magical healing"
+
+    return CustomCondition(
+        name="Bleeding",
+        caption=f"**Bleeding** [{damage} {damage_type}]",
+        description="TODO",
+        description_3rd=f"A bleeding creature suffers {damage} ongoing {damage_type} damage at the end of each of its turns. \
+                                A creature may use an action to attempt a DC {dc} Medicine check to end the condition. \
+                                The condition also ends if the creature receives {healing}",
     )
 
 
@@ -79,4 +109,25 @@ def Shocked() -> CustomCondition:
         immunity_clause="A creature that is immune to being **Stunned** cannot be **Shocked**",
         description=f"You are **Dazed** and drop whatever you are carrying",
         description_3rd="A **Shocked** creature is **Dazed** and drops whatever it is carrying",
+    )
+
+
+def Swallowed(
+    damage: DieFormula | str,
+    damage_type=DamageType.Acid,
+    regurgitate_dc: int = 15,
+    regurgitate_damage_threshold: int = 10,
+) -> CustomCondition:
+    if isinstance(damage, DieFormula):
+        damage = damage.description
+
+    return CustomCondition(
+        name="Swallowed",
+        caption="**Swallowed**",
+        description=f"You are **Blinded**, **Restrained**, and have total cover against attacks and effects from the outside. You take {damage} ongoing {damage_type} damage at the start of each of your turns.  \
+            If the creature that swallowed you takes {regurgitate_damage_threshold} damage or more on a single turn from a creature inside it, it must make a DC {regurgitate_dc} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures which fall **Prone** in a space within 10 feet of it. \
+            If the creature you are swallowed by dies, you are no longer restrained by it and can escape by using 15 feet of movement, exiting prone.",
+        description_3rd=f"A swallowed creature is **Blinded**, **Restrained**, and has total cover against attacks and effects from the outside. It takes {damage} ongoing {damage_type} damage at the start of each of its turns.  \
+            If the swallowing creature takes {regurgitate_damage_threshold} damage or more on a single turn from a creature inside it, it must make a DC {regurgitate_dc} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures which fall **Prone** in a space within 10 feet of it. \
+            If the swallowing creature dies, the swallowed creature is no longer restrained by it and can escape by using 15 feet of movement, exiting prone.",
     )
