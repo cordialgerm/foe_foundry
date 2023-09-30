@@ -1,8 +1,6 @@
 
 ## Welcome to Foe Foundry
 
-{% include important.html content="This project is still very much work-in-progress!" %}
-
 **Foe Foundry** is a project to procedurally generate interesting and powerful D&D 5e Monsters.
 
 It's inspired by the [***Forge of Foes***](https://slyflourish.com/build_a_quick_monster_with_forge_of_foes.html) book written by Teos Abadia, Scott Fitzgerald Gray, and Michael Shea.
