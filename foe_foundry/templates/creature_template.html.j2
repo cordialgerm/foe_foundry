@@ -1,7 +1,7 @@
 {% from 'macros.html.j2' import property, property_block, features_block, attack_blocks, attack_block, benchmark_block
 %}
 
-<stat-block>
+<stat-block class="stat-block">
     <creature-heading>
         <h1>{{name}}</h1>
         <h2>{{size}} {{creature_type}}</h2>
@@ -39,12 +39,12 @@
     {{features_block(bonus_actions, 'Bonus Actions')}}
     {{features_block(reactions, 'Reactions')}}
 
-    {% if benchmarks %}
+    {# {% if benchmarks %}
     {% for benchmark in benchmarks %}
     <h4>{{benchmark.name}}</h4>
     {{benchmark_block(benchmark)}}
     {% endfor %}
-    {% endif %}
+    {% endif %} #}
 
 
 </stat-block>
