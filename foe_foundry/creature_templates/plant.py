@@ -2,7 +2,7 @@ from numpy.random import Generator
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorType
+from ..ac_templates import NaturalArmor
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
@@ -55,16 +55,11 @@ class _PlantTemplate(CreatureTypeTemplate):
         if stats.cr >= 7:
             new_attributes = new_attributes.grant_save_proficiency(Stats.STR, Stats.CON)
 
-        # Plants are naturally heavily armored
-        new_ac = stats.ac.delta(
-            change=1,
-            armor_type=ArmorType.Natural,
-            shield_allowed=False,
-        )
+        # Plants are naturally armored
+        stats = stats.add_ac_template(NaturalArmor)
 
         return stats.copy(
             creature_type=CreatureType.Plant,
-            ac=new_ac,
             speed=new_movement,
             size=size,
             languages=None,

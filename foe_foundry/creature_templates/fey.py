@@ -4,7 +4,7 @@ import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorType
+from ..ac_templates import LightArmor
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
@@ -44,15 +44,10 @@ class _FeyTemplate(CreatureTypeTemplate):
         damage_type = DamageType.Piercing
 
         # fey are often lightly armored but are dextrous
-        new_ac = stats.ac.delta(
-            armor_type=ArmorType.Light,
-            shield_allowed=True,
-            dex=new_attributes.stat_mod(Stats.DEX),
-        )
+        stats = stats.add_ac_template(LightArmor)
 
         return stats.copy(
             creature_type=CreatureType.Fey,
-            ac=new_ac,
             size=Size.Medium,
             languages=["Common", "Elvish", "Sylvan"],
             senses=stats.senses.copy(darkvision=60),

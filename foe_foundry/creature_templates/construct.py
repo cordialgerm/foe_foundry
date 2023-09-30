@@ -4,7 +4,7 @@ import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorClass, ArmorType
+from ..ac_templates import NaturalArmor
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
@@ -85,14 +85,13 @@ class _ConstructTemplate(CreatureTypeTemplate):
         if stats.cr >= 7:
             new_attributes = new_attributes.grant_save_proficiency(Stats.STR, Stats.CON)
 
-        # higher-AC constructs are heavily armored
-        ac_bonus = ceil(stats.cr / 5)
-        new_ac = stats.ac.delta(change=ac_bonus, armor_type=ArmorType.Natural)
+        # constructs are heavily armored
+        ac_bonus = min(ceil(stats.cr / 5), 3)
+        stats = stats.add_ac_template(NaturalArmor, ac_modifier=ac_bonus)
 
         return stats.copy(
             creature_type=CreatureType.Construct,
             attributes=new_attributes,
-            ac=new_ac,
             size=size,
             languages=None,
             senses=new_senses,

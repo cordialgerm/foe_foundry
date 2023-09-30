@@ -1,4 +1,3 @@
-from ..ac import ArmorClass
 from ..attributes import Attributes, Stats
 from ..damage import Attack, Damage, DamageType
 from ..die import DieFormula
@@ -8,7 +7,6 @@ from .base import BaseStatblock
 Minion = BaseStatblock(
     name="Minion",
     cr=1 / 8,
-    ac=ArmorClass.default(value=11),
     hp=DieFormula.from_expression("2d8"),
     speed=Movement(walk=30),
     primary_attribute_score=12,
@@ -34,7 +32,6 @@ Minion = BaseStatblock(
 Soldier = BaseStatblock(
     name="Soldier",
     cr=1 / 2,
-    ac=ArmorClass.default(value=12),
     hp=DieFormula.from_expression("4d8 + 4"),
     speed=Movement(walk=30),
     primary_attribute_score=14,
@@ -60,7 +57,6 @@ Soldier = BaseStatblock(
 Brute = BaseStatblock(
     name="Brute",
     cr=2,
-    ac=ArmorClass.default(value=13),
     hp=DieFormula.from_expression("7d8 + 14"),
     speed=Movement(walk=30),
     primary_attribute_score=16,
@@ -86,7 +82,6 @@ Brute = BaseStatblock(
 Specialist = BaseStatblock(
     name="Specialist",
     cr=4,
-    ac=ArmorClass.default(value=14),
     hp=DieFormula.from_expression("13d8 + 26"),
     speed=Movement(walk=30),
     primary_attribute_score=18,
@@ -112,7 +107,6 @@ Specialist = BaseStatblock(
 Myrmidon = BaseStatblock(
     name="Myrmidon",
     cr=7,
-    ac=ArmorClass.default(value=15),
     hp=DieFormula.from_expression("20d8 + 40"),
     speed=Movement(walk=30),
     primary_attribute_score=18,
@@ -138,7 +132,7 @@ Myrmidon = BaseStatblock(
 Sentinel = BaseStatblock(
     name="Sentinel",
     cr=11,
-    ac=ArmorClass.default(value=17),
+    ac_boost=1,
     hp=DieFormula.from_expression("22d8 + 66"),
     speed=Movement(walk=30),
     primary_attribute_score=20,
@@ -164,7 +158,7 @@ Sentinel = BaseStatblock(
 Champion = BaseStatblock(
     name="Champion",
     cr=15,
-    ac=ArmorClass.default(value=19),
+    ac_boost=2,
     hp=DieFormula.from_expression("25d8 + 100"),
     speed=Movement(walk=30),
     primary_attribute_score=22,

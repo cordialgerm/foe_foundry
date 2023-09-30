@@ -4,7 +4,7 @@ import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock, MonsterDials
 
-from ..ac import ArmorClass, ArmorType
+from ..ac_templates import NaturalArmor, Unarmored
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
@@ -21,7 +21,7 @@ class _GiantTemplate(CreatureTypeTemplate):
     def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         # Giants are beefy and don't wear much armor
         # They attack slowly but hit really hard
-        dials: dict = dict(hp_multiplier=1.3, ac_modifier=-2)
+        dials: dict = dict(hp_multiplier=1.3)
 
         if stats.multiattack > 2:
             dials.update(multiattack_modifier=-1, attack_damage_modifier=1)
@@ -56,12 +56,12 @@ class _GiantTemplate(CreatureTypeTemplate):
             new_attributes = new_attributes.grant_save_proficiency(Stats.STR, Stats.CON)
 
         # giants are often unarmored
-        new_ac = stats.ac.delta(armor_type=ArmorType.Unarmored)
+        # giants are unarmored or have natural armor (but not the strongest)
+        stats = stats.add_ac_templates([Unarmored, NaturalArmor], ac_modifier=-3)
 
         return stats.copy(
             creature_type=CreatureType.Giant,
             attributes=new_attributes,
-            ac=new_ac,
             size=size,
             languages=["Common", "Giant"],
             primary_damage_type=primary_damage_type,

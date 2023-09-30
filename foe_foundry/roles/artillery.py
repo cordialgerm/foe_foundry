@@ -1,3 +1,4 @@
+from ..ac_templates import LightArmor
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType
@@ -42,21 +43,20 @@ def _as_artillery(stats: BaseStatblock, dials: MonsterDials) -> BaseStatblock:
             Stats.INT
         ).grant_proficiency_or_expertise(Skills.Perception, Skills.Investigation)
 
-    # artillery do not use shields
-    new_ac = stats.ac.delta(shield_allowed=False, dex=new_attributes.stat_mod(Stats.DEX))
-
     changes: dict = dict(
         role=MonsterRole.Artillery,
         attack_type=new_attack_type,
         attributes=new_attributes,
-        ac=new_ac,
     )
 
     if new_attack_type == AttackType.RangedSpell and stats.secondary_damage_type is not None:
         # if the monster has a secondary damage type, then prefer that for the ranged spell damage
         changes.update(primary_damage_type=stats.secondary_damage_type)
 
-    return stats.apply_monster_dials(dials).copy(**changes)
+    stats = stats.apply_monster_dials(dials)
+    stats = stats.add_ac_template(LightArmor)
+    stats = stats.copy(**changes)
+    return stats
 
 
 ArtilleryLowAcMaxDmg = role_variant(

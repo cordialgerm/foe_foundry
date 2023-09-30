@@ -4,7 +4,7 @@ import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorType
+from ..ac_templates import UnholyArmor
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
@@ -90,17 +90,11 @@ class _FiendTemplate(CreatureTypeTemplate):
         if stats.cr >= 7:
             new_attributes = new_attributes.grant_save_proficiency(Stats.CHA, Stats.WIS)
 
-        # fiends use unholy armor and do not carry shields
-        new_ac = stats.ac.delta(
-            armor_type=ArmorType.Unholy,
-            dex=new_attributes.stat_mod(Stats.DEX),
-            spellcasting=new_attributes.spellcasting_mod,
-            shield_allowed=False,
-        )
+        # fiends use unholy armor
+        stats = stats.add_ac_template(UnholyArmor, uses_shield=False)
 
         return stats.copy(
             creature_type=CreatureType.Fiend,
-            ac=new_ac,
             size=size,
             languages=languages,
             senses=new_senses,

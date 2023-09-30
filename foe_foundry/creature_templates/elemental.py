@@ -4,7 +4,7 @@ import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorType
+from ..ac_templates import NaturalArmor
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
@@ -64,11 +64,10 @@ class _ElementalTemplate(CreatureTypeTemplate):
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Medium, rng=rng)
 
         # elementals have natural armor
-        new_ac = stats.ac.delta(armor_type=ArmorType.Natural)
+        stats = stats.add_ac_template(NaturalArmor)
 
         return stats.copy(
             creature_type=CreatureType.Elemental,
-            ac=new_ac,
             size=size,
             languages=None,
             senses=new_senses,

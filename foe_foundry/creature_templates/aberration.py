@@ -2,12 +2,12 @@ import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorType
+from ..ac_templates import NaturalArmor
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..size import Size, get_size_for_cr
-from ..statblocks import BaseStatblock
+from ..statblocks import BaseStatblock, MonsterDials
 from .template import CreatureTypeTemplate
 
 
@@ -52,17 +52,13 @@ class _AberrationTemplate(CreatureTypeTemplate):
         if stats.cr >= 7:
             new_attributes = new_attributes.grant_save_proficiency(Stats.CHA, Stats.WIS)
 
-        # aberrations have natural armor and do not wear shields
-        new_ac = stats.ac.delta(
-            armor_type=ArmorType.Natural,
-            shield_allowed=False,
-            dex=stats.attributes.stat_mod(Stats.DEX),
-            spellcasting=stats.attributes.spellcasting_mod,
+        # aberrations use natural armor and tend to not be as heavily armored
+        stats = stats.add_ac_template(NaturalArmor).apply_monster_dials(
+            MonsterDials(ac_modifier=-1)
         )
 
         return stats.copy(
             creature_type=CreatureType.Aberration,
-            ac=new_ac,
             size=size,
             languages=["Deep Speech", "telepathy 120 ft."],
             senses=new_senses,

@@ -5,7 +5,6 @@ from numpy.random import Generator
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
-from ...ac import ArmorClass
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -72,7 +71,7 @@ class _StickWithMe(Power):
         if candidate.role == MonsterRole.Defender:
             score += HIGH_AFFINITY
 
-        if candidate.ac.has_shield:
+        if candidate.could_use_shield:
             score += LOW_AFFINITY
 
         if candidate.attributes.has_proficiency_or_expertise(Skills.Intimidation):

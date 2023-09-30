@@ -4,7 +4,7 @@ import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorType
+from ..ac_templates import HolyArmor
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
@@ -69,18 +69,12 @@ class _CelestialTemplate(CreatureTypeTemplate):
         if stats.cr >= 7:
             new_attributes = new_attributes.grant_save_proficiency(Stats.CHA, Stats.WIS)
 
-        # celestials use divine armor
-        new_ac = stats.ac.delta(
-            armor_type=ArmorType.Divine,
-            dex=new_attributes.stat_mod(Stats.DEX),
-            spellcasting=new_attributes.spellcasting_mod,
-        )
+        stats = stats.add_ac_template(HolyArmor)
 
         return stats.copy(
             creature_type=CreatureType.Celestial,
-            ac=new_ac,
             size=size,
-            languages=None,
+            languages=["Common", "Celestial", "Telepathy 120 ft"],
             senses=new_senses,
             attributes=new_attributes,
             primary_damage_type=primary_damage_type,

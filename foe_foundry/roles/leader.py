@@ -1,4 +1,4 @@
-from ..ac import ArmorClass
+from ..ac_templates import LightArmor, MediumArmor
 from ..attributes import Skills, Stats
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock, MonsterDials
@@ -25,11 +25,12 @@ def _as_leader(stats: BaseStatblock, dials: MonsterDials) -> BaseStatblock:
     if stats.cr >= 4:
         new_attributes = new_attributes.grant_save_proficiency(Stats.INT, Stats.WIS)
 
-    # leaders use shields if possible
-    new_ac = stats.ac.delta(shield_allowed=stats.creature_type.could_wear_armor)
+    # leaders wear light or medium armor
+    stats = stats.add_ac_templates([LightArmor, MediumArmor], uses_shield=True)
 
     return stats.apply_monster_dials(dials).copy(
-        role=MonsterRole.Leader, attributes=new_attributes, ac=new_ac
+        role=MonsterRole.Leader,
+        attributes=new_attributes,
     )
 
 

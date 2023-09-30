@@ -4,7 +4,7 @@ from copy import deepcopy
 from dataclasses import dataclass, field
 from typing import Callable, Dict, List, Set
 
-from ..ac import ArmorClass
+from ..ac import ArmorClassTemplate
 from ..attributes import Attributes
 from ..creature_types import CreatureType
 from ..damage import Attack, AttackType, Condition, DamageType
@@ -20,11 +20,10 @@ from .dials import MonsterDials
 from .suggested_powers import recommended_powers_for_cr
 
 
-@dataclass
+@dataclass(kw_only=True)
 class BaseStatblock:
     name: str
     cr: float
-    ac: ArmorClass
     hp: DieFormula
     speed: Movement
     primary_attribute_score: int
@@ -48,6 +47,9 @@ class BaseStatblock:
     nonmagical_immunity: bool = False
     difficulty_class_easy: int = field(init=False)
     additional_attacks: List[Attack] = field(default_factory=list)
+    ac_boost: int = 0
+    uses_shield: bool = False
+    ac_templates: List[ArmorClassTemplate] = field(default_factory=list)
 
     def __post_init__(self):
         mod = (
@@ -82,11 +84,17 @@ class BaseStatblock:
     def roleref(self) -> str:
         return f"the {self.role.value.lower()}"
 
+    @property
+    def could_use_shield(self) -> bool:
+        return self.creature_type.could_wear_armor
+
     def __copy_args__(self) -> dict:
         args: dict = dict(
             name=self.name,
             cr=self.cr,
-            ac=deepcopy(self.ac),
+            ac_boost=self.ac_boost,
+            ac_templates=self.ac_templates.copy(),
+            uses_shield=self.uses_shield,
             hp=deepcopy(self.hp),
             speed=deepcopy(self.speed),
             primary_attribute_score=self.primary_attribute_score,
@@ -128,7 +136,8 @@ class BaseStatblock:
 
         # resolve ac
         if dials.ac_modifier:
-            args.update(ac=self.ac.delta(dials.ac_modifier))
+            new_ac_boost = self.ac_boost + dials.ac_modifier
+            args.update(ac_boost=new_ac_boost)
 
         # resolve attack
         if dials.multiattack_modifier:
@@ -199,6 +208,32 @@ class BaseStatblock:
         copy = self.copy()
         copy.additional_attacks.append(attack)
         return copy
+
+    def add_ac_template(
+        self,
+        ac_template: ArmorClassTemplate,
+        ac_modifier: int = 0,
+        uses_shield: bool | None = None,
+    ) -> BaseStatblock:
+        return self.add_ac_templates([ac_template], ac_modifier, uses_shield)
+
+    def add_ac_templates(
+        self,
+        ac_templates: List[ArmorClassTemplate],
+        ac_modifier: int = 0,
+        uses_shield: bool | None = None,
+    ) -> BaseStatblock:
+        new_templates = self.ac_templates.copy()
+        for ac in ac_templates:
+            if ac not in new_templates:
+                new_templates.append(ac)
+
+        new_ac_boost = self.ac_boost + ac_modifier
+        args: dict = dict(ac_templates=new_templates, ac_boost=new_ac_boost)
+        if uses_shield is not None:
+            uses_shield = uses_shield and self.could_use_shield
+            args.update(uses_shield=uses_shield)
+        return self.copy(**args)
 
     def grant_resistance_or_immunity(
         self,

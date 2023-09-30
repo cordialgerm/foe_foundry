@@ -4,7 +4,6 @@ from typing import Dict, List, Set, Tuple
 import numpy as np
 from numpy.random import Generator
 
-from ...ac import ArmorClass
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, Swallowed

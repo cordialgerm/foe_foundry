@@ -1,3 +1,4 @@
+from ..ac_templates import LightArmor, Unarmored
 from ..attributes import Skills, Stats
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock, MonsterDials
@@ -22,12 +23,13 @@ def _as_ambusher(stats: BaseStatblock, dials: MonsterDials) -> BaseStatblock:
             Stats.DEX
         ).grant_proficiency_or_expertise(Skills.Stealth)
 
-    # ambushers do not use shields
-    new_ac = stats.ac.delta(shield_allowed=False, dex=new_attributes.stat_mod(Stats.DEX))
-
-    return stats.apply_monster_dials(dials).copy(
-        role=MonsterRole.Ambusher, attributes=new_attributes, ac=new_ac
+    stats = stats.apply_monster_dials(dials)
+    stats = stats.add_ac_templates([LightArmor, Unarmored])
+    stats = stats.copy(
+        role=MonsterRole.Ambusher,
+        attributes=new_attributes,
     )
+    return stats
 
 
 AmbusherLowHp = role_variant(

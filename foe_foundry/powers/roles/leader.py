@@ -3,7 +3,6 @@ from typing import List, Tuple
 
 import numpy as np
 
-from ...ac import ArmorClass
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size

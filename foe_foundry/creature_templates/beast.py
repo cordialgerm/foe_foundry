@@ -2,12 +2,12 @@ import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorType
+from ..ac_templates import NaturalArmor, Unarmored
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..size import Size, get_size_for_cr
-from ..statblocks import BaseStatblock
+from ..statblocks import BaseStatblock, MonsterDials
 from .template import CreatureTypeTemplate
 
 
@@ -60,17 +60,13 @@ class _BeastTemplate(CreatureTypeTemplate):
         if stats.cr >= 7:
             new_attributes = new_attributes.grant_save_proficiency(Stats.STR, Stats.CON)
 
-        # beasts are naturally lightly armored
-        new_ac = stats.ac.delta(
-            change=-2,
-            armor_type=ArmorType.Natural,
-            shield_allowed=False,
-        )
+        # beasts are either unarmored or have light natural armor
+        stats = stats.add_ac_templates([Unarmored, NaturalArmor], ac_modifier=-4)
 
         return stats.copy(
             creature_type=CreatureType.Beast,
             hp=new_hp,
-            ac=new_ac,
+            # ac=new_ac,
             size=size,
             languages=None,
             senses=new_senses,

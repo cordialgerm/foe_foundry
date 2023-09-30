@@ -1,39 +1,10 @@
-# DRAGON
-
-# Senses blindsight 60 ft., darkvision 120 ft.
-# Languages Common, Draconic
-# A true dragon or a closely related draconic creature
-# has a breath weapon that is fearsome to behold. You can
-# adjust the damage or area of effect depending on how
-# powerful your draconic creature is meant to be.
-# Dragon’s Breath (Action, Recharge 5–6). This creature
-# breathes to deal poison, cold, or fire damage in a 30-foot cone,
-# or breathes to deal acid or lightning damage in a 60-foot line
-# that is 5 feet wide. Each creature in the area of the exhalation
-# must make a Dexterity saving throw against a line or a
-# Constitution saving throw against a cone (DC = 12 + 1/2 CR),
-# taking 4 × CR damage of the appropriate type on a failed save,
-# or half as much damage on a successful one.
-# You might also wish to provide a dragon or draconic
-# creature with an additional power to reflect their nature.
-# Dragon’s Gaze (Bonus Action, Recharge 6). One creature
-# within 60 feet of the dragon must make a Wisdom saving throw
-# (DC = 13 + 1/2 CR) or become frightened of the dragon. While
-# frightened in this way, each time the target takes damage, they
-# take an extra 1/2 CR damage. The target can repeat the saving
-# throw at the end of each of their turns, ending the effect on
-# themself on a success.
-# Dragon’s Gaze puts the pressure on a character, and
-# goes well with threats a dragon makes as they promise
-# that the heroes are about to meet their doom.
-
 from math import ceil
 
 import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorClass, ArmorType
+from ..ac_templates import NaturalArmor
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
@@ -109,13 +80,11 @@ class _DragonTemplate(CreatureTypeTemplate):
             )
 
         # higher-CR dragons have heavy natural armor
-        ac_bonus = ceil(stats.cr / 6)
-        new_ac = stats.ac.delta(change=ac_bonus, armor_type=ArmorType.Natural)
-
+        ac_bonus = min(ceil(stats.cr / 7), 2)
+        stats = stats.add_ac_template(NaturalArmor, ac_modifier=ac_bonus)
         return stats.copy(
             creature_type=CreatureType.Dragon,
             attributes=new_attributes,
-            ac=new_ac,
             size=size,
             languages=["Common, Draconic"],
             senses=new_senses,

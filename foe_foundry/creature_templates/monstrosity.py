@@ -2,7 +2,7 @@ import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorType
+from ..ac_templates import NaturalArmor
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
@@ -51,17 +51,12 @@ class _MonstrosityTemplate(CreatureTypeTemplate):
         if stats.cr >= 7:
             new_attributes = new_attributes.grant_save_proficiency(Stats.STR, Stats.CON)
 
-        # monstrosities are naturally lightly armored
-        new_ac = stats.ac.delta(
-            change=-2,
-            armor_type=ArmorType.Natural,
-            shield_allowed=False,
-        )
+        # monstrosities use natural armor
+        stats = stats.add_ac_template(NaturalArmor, ac_modifier=-2)
 
         return stats.copy(
             creature_type=CreatureType.Monstrosity,
             hp=new_hp,
-            ac=new_ac,
             size=size,
             languages=None,
             senses=new_senses,

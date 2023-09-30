@@ -5,7 +5,7 @@
 - [x] Role Powers
 - [x] FoF Theme Powers
 - [x] Allow creature templates to customize the creature after a role has been applied
-- [ ] Weapon Powers (similar to weapon masteries)
+- [ ] Weapon Powers / Fighting Styles (similar to weapon masteries)
 - [ ] Utility to convert static damage #s to dice formula
 - [ ] Create a Role scoring system (minimum attributes, creature types, etc.)
 - [ ] Specific Creature Templates
@@ -23,7 +23,7 @@
 - [ ] negative stat modifiers render with a ?
 - [ ] Stick With Me! and Challenge Foe are redundant
 - [ ] Controllers keep getting Pinning Shot. Why?
-- [ ] Many abilities around leadership and challenging shoudl require intelligence
+- [ ] Many abilities around leadership and challenging shoudl require intelligence and verbal speaking abilities
 
 ## More Sophisticated Selection System
 

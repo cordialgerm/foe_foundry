@@ -4,7 +4,6 @@ from numpy.random import Generator
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorType
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType

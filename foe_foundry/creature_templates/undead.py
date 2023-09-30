@@ -4,7 +4,7 @@ import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorType
+from ..ac_templates import Unarmored
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
@@ -46,6 +46,9 @@ class _UndeadTemplate(CreatureTypeTemplate):
             Condition.Exhaustion,
             Condition.Poisoned,
         }
+
+        # undead are unarmored unless their role grants them armor
+        stats = stats.add_ac_template(Unarmored)
 
         return stats.copy(
             creature_type=CreatureType.Undead,

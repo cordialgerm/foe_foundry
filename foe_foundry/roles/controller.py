@@ -1,3 +1,4 @@
+from ..ac_templates import ArcaneArmor, Unarmored
 from ..attributes import Stats
 from ..damage import AttackType
 from ..role_types import MonsterRole
@@ -22,15 +23,14 @@ def as_default_controller(stats: BaseStatblock) -> BaseStatblock:
     if stats.cr >= 4:
         new_attributes = new_attributes.grant_save_proficiency(Stats.INT, Stats.WIS, Stats.CHA)
 
-    # controllers do not use shields
-    new_ac = stats.ac.delta(shield_allowed=False, dex=new_attributes.stat_mod(Stats.DEX))
-
-    return stats.apply_monster_dials(dials).copy(
+    stats = stats.apply_monster_dials(dials)
+    stats = stats.add_ac_templates([Unarmored, ArcaneArmor])
+    stats = stats.copy(
         role=MonsterRole.Controller,
         attack_type=AttackType.RangedSpell,
         attributes=new_attributes,
-        ac=new_ac,
     )
+    return stats
 
 
 ControllerDefault = role_variant(

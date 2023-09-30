@@ -1,25 +1,11 @@
+from ..ac_templates import NaturalArmor, Unarmored
 from ..attributes import Skills, Stats
 from ..role_types import MonsterRole
-from ..statblocks import BaseStatblock, MonsterDials
+from ..statblocks import BaseStatblock
 from .template import RoleTemplate, role_variant
 
 
-def as_low_hit_bruiser(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(multiattack_modifier=-1, attack_damage_modifier=2)
-    return _as_bruiser(stats, dials)
-
-
-def as_low_hp_bruiser(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(hp_multiplier=0.9, attack_damage_modifier=1)
-    return _as_bruiser(stats, dials)
-
-
-def as_low_ac_bruiser(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(ac_modifier=-2, attack_damage_modifier=1)
-    return _as_bruiser(stats, dials)
-
-
-def _as_bruiser(stats: BaseStatblock, dials: MonsterDials):
+def as_bruiser(stats: BaseStatblock) -> BaseStatblock:
     new_attributes = (
         stats.attributes.change_primary(Stats.STR)
         .boost(Stats.INT, -2)
@@ -32,17 +18,10 @@ def _as_bruiser(stats: BaseStatblock, dials: MonsterDials):
             Stats.STR
         ).grant_proficiency_or_expertise(Skills.Athletics)
 
-    # bruisers do not use shields
-    new_ac = stats.ac.delta(shield_allowed=False)
-
-    return stats.apply_monster_dials(dials).copy(
-        role=MonsterRole.Bruiser, attributes=new_attributes, ac=new_ac
-    )
+    stats = stats.add_ac_templates([Unarmored, NaturalArmor])
+    stats = stats.copy(role=MonsterRole.Bruiser, attributes=new_attributes)
+    return stats
 
 
-BruiserLowHit = role_variant("Bruiser.LowHit", MonsterRole.Bruiser, as_low_hit_bruiser)
-BruiserLowHp = role_variant("Bruiser.LowHp", MonsterRole.Bruiser, as_low_hp_bruiser)
-BruiserLowAc = role_variant("Bruiser.LowAc", MonsterRole.Bruiser, as_low_ac_bruiser)
-Bruiser = RoleTemplate(
-    "Bruiser", MonsterRole.Bruiser, [BruiserLowHit, BruiserLowHp, BruiserLowAc]
-)
+BruiserLowAc = role_variant("Bruiser.LowAc", MonsterRole.Bruiser, as_bruiser)
+Bruiser = RoleTemplate("Bruiser", MonsterRole.Bruiser, [BruiserLowAc])

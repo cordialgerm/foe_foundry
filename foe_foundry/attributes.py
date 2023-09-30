@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
-from typing import Dict, Set
+from typing import Set
+
+import numpy as np
 
 from .skills import Skills, Stats
 
@@ -33,6 +35,13 @@ class Attributes:
     @property
     def spellcasting_mod(self) -> int:
         return max(self.stat_mod(Stats.CHA), self.stat_mod(Stats.WIS), self.stat_mod(Stats.INT))
+
+    @property
+    def is_sapient(self) -> bool:
+        mentals = np.array([self.INT, self.WIS, self.CHA])
+        baseline = (mentals >= 6).all()
+        intelligent = (mentals >= 9).any()
+        return bool(baseline and intelligent)
 
     def stat(self, stat: Stats) -> int:
         return getattr(self, stat.value)

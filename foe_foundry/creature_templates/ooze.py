@@ -2,13 +2,12 @@ import numpy as np
 
 from foe_foundry.statblocks import BaseStatblock
 
-from ..ac import ArmorType
+from ..ac_templates import Unarmored
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
 from ..size import Size, get_size_for_cr
 from ..statblocks import BaseStatblock
-from ..utils.rng import choose_enum
 from .template import CreatureTypeTemplate
 
 
@@ -53,16 +52,11 @@ class _OozeTemplate(CreatureTypeTemplate):
         if stats.cr >= 7:
             new_attributes = new_attributes.grant_save_proficiency(Stats.STR, Stats.CON)
 
-        # Oozes are naturally lightly armored
-        new_ac = stats.ac.delta(
-            change=-2,
-            armor_type=ArmorType.Natural,
-            shield_allowed=False,
-        )
+        # Oozes are unarmored
+        stats = stats.add_ac_template(Unarmored)
 
         return stats.copy(
             creature_type=CreatureType.Ooze,
-            ac=new_ac,
             size=size,
             languages=None,
             senses=new_senses,

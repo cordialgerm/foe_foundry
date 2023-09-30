@@ -51,6 +51,8 @@ class CreatureType(StrEnum):
             CreatureType.Humanoid,
             CreatureType.Construct,
             CreatureType.Giant,
+            CreatureType.Undead,
+            CreatureType.Elemental,
         }
 
     @property

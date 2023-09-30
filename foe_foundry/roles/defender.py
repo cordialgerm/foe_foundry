@@ -1,4 +1,4 @@
-from ..ac import ArmorClass
+from ..ac_templates import HeavyArmor, MediumArmor, NaturalArmor
 from ..role_types import MonsterRole
 from ..skills import Stats
 from ..statblocks import BaseStatblock, MonsterDials
@@ -25,15 +25,8 @@ def _as_defender(stats: BaseStatblock, dials: MonsterDials):
     new_attributes = stats.attributes.grant_save_proficiency(*Stats.All()).boost(Stats.STR, 2)
     stats = stats.copy(attributes=new_attributes)
 
-    # defenders have high-quality armor and use shields if possible
-    # this should result in a +3 to AC (+1 to armor, +2 from shield)
-    new_ac = stats.ac.delta(
-        change=1,
-        shield_allowed=stats.creature_type.could_wear_armor,
-        dex=stats.attributes.stat_mod(Stats.DEX),
-        spellcasting=stats.attributes.spellcasting_mod,
-    )
-    stats = stats.copy(ac=new_ac)
+    # defenders wear medium or heavy armor if possible, otherwise natural armor
+    stats = stats.add_ac_templates([MediumArmor, HeavyArmor, NaturalArmor], uses_shield=True)
 
     return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 
