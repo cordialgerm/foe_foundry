@@ -5,6 +5,7 @@
 - [x] Role Powers
 - [x] FoF Theme Powers
 - [x] Allow creature templates to customize the creature after a role has been applied
+- [x] Redesign AC with AC Templates
 - [ ] Weapon Powers / Fighting Styles (similar to weapon masteries)
 - [ ] Utility to convert static damage #s to dice formula
 - [ ] Create a Role scoring system (minimum attributes, creature types, etc.)
@@ -37,12 +38,6 @@ Selection engine should take parameters like:
 - should there be a power budget? different powers have a point score allocated to them?
 - Should try to balance feature, action, reaction, bonus action before having multiple reactions or bonus actions
 - There should be some sort of "unique key" or tagging system based on the kind of ability. Try not to select duplicates. For example, right now you can get multiple death triggers
-
-## Redesign Armor Class
-
-- There should be templates for different types of armor class
-- should be applied by creature type & role
-- base statblock has a suggested AC which can influence the template
 
 ## Powers
 
