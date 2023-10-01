@@ -1,16 +1,13 @@
 from math import ceil, floor
 from typing import List, Tuple
 
-import numpy as np
-
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
+from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
@@ -34,9 +31,7 @@ class _Burrower(Power):
             score += EXTRA_HIGH_AFFINITY
         return score
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_speed = stats.speed.copy(burrow=stats.speed.walk)
         new_senses = stats.senses.copy(blindsight=60)
         stats = stats.copy(speed=new_speed, senses=new_senses)
@@ -68,9 +63,7 @@ class _Climber(Power):
             score += MODERATE_AFFINITY
         return score
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_speed = stats.speed.copy(climb=stats.speed.walk)
         new_attrs = stats.attributes.grant_proficiency_or_expertise(
             Skills.Athletics, Skills.Acrobatics
@@ -99,10 +92,39 @@ class _Climber(Power):
         return stats, feature
 
 
+class _Stoneskin(Power):
+    def __init__(self):
+        super().__init__(name="Stoneskin", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        if candidate.creature_type == CreatureType.Giant:
+            return HIGH_AFFINITY
+        elif candidate.creature_type == CreatureType.Monstrosity:
+            return MODERATE_AFFINITY
+        elif candidate.creature_type == CreatureType.Dragon:
+            return MODERATE_AFFINITY
+        elif (
+            candidate.creature_type == CreatureType.Elemental
+            and candidate.secondary_damage_type not in {DamageType.Lightning}
+        ):
+            return HIGH_AFFINITY
+        else:
+            return NO_AFFINITY
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Stoneskin",
+            action=ActionType.Reaction,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} instantly hardens its exterior in response to being hit by an attack. \
+                {stats.selfref.capitalize()} gains resistance to non-psychic damage until the end of its next turn",
+        )
+
+        return stats, feature
+
+
 Burrower: Power = _Burrower()
 Climber: Power = _Climber()
+Stoneskin: Power = _Stoneskin()
 
-EarthyPowers: List[Power] = [
-    Burrower,
-    Climber,
-]
+EarthyPowers: List[Power] = [Burrower, Climber, Stoneskin]

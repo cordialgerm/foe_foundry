@@ -14,7 +14,7 @@ from ...damage import AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
-from ...utils import easy_multiple_of_five
+from ...utils import easy_multiple_of_five, summoning
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -164,8 +164,32 @@ class _FiendishBite(Power):
         return stats, []
 
 
+class _FiendishSummons(Power):
+    def __init__(self):
+        super().__init__(name="Fiendish Summons", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_fiend(candidate, min_cr=3)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        _, _, description = summoning.determine_summon_formula(
+            summon_list=summoning.Fiends, summon_cr_target=stats.cr / 2.5, rng=rng
+        )
+
+        feature = Feature(
+            name="Fiendish Summons",
+            action=ActionType.Action,
+            uses=1,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} summons forth additional fiendish allies. {description}",
+        )
+
+        return stats, feature
+
+
 EmpoweredByDeath: Power = _EmpoweredByDeath()
 FiendishBite: Power = _FiendishBite()
+FiendishSummons: Power = _FiendishSummons()
 FiendishTeleportation: Power = _FiendishTeleporation()
 RelishYourFailure: Power = _RelishYourFailure()
 WallOfFire: Power = _WallOfFire()
@@ -173,6 +197,7 @@ WallOfFire: Power = _WallOfFire()
 FiendishPowers: List[Power] = [
     EmpoweredByDeath,
     FiendishBite,
+    FiendishSummons,
     FiendishTeleportation,
     RelishYourFailure,
     WallOfFire,

@@ -6,6 +6,7 @@ from . import (
     aquatic,
     bestial,
     breath,
+    chaotic,
     charm,
     clever,
     cruel,
@@ -34,6 +35,7 @@ ThemedPowers: List[Power] = (
     + aquatic.AquaticPowers
     + bestial.BestialPowers
     + breath.BreathPowers
+    + chaotic.ChaoticPowers
     + charm.CharmPowers
     + clever.CleverPowers
     + cruel.CruelPowers

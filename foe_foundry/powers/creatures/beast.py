@@ -10,6 +10,7 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import summoning
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -151,50 +152,25 @@ class _Packlord(Power):
         return _score_beast(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        desired_summon_cr = ceil(stats.cr / 4)
+        desired_summon_cr = ceil(stats.cr / 3.5)
 
         if stats.speed.fly:
-            options = [
-                ("*Swarm of Bats*", 1 / 4),
-                ("*Giant Eagle*", 1),
-            ]
+            options = summoning.FlyingBeasts
         elif stats.speed.swim:
-            options = [("*Swarm of Quippers*", 1), ("*Hunter Shark*", 2), ("*Killer Whale*", 3)]
+            options = summoning.SwimmingBeasts
         else:
-            options = [
-                ("*Swarm of Rats*", 1 / 4),
-                ("*Dire Wolf*", 1),
-                ("*Polar Bear*", 2),
-            ]
+            options = summoning.LandBeasts
 
-        names, formulas = [], []
-        for creature, cr in options:
-            target_val = desired_summon_cr / cr
-            if target_val < 1.0 or target_val > 20.0:
-                continue
-            elif target_val >= 1.0 and target_val <= 2.0:
-                # if there are only 1 or 2 minions that can be summoned then don't roll 1d4 as that variance is way too high
-                # instead just use a static number
-                num = int(round(target_val))
-                formula = DieFormula.from_expression(f"{num}")
-            else:
-                # if there are 3 or more minions being summoned then use a d4 dice formula
-                formula = DieFormula.target_value(target_val, force_die=Die.d4)
-
-            formulas.append(formula)
-            names.append(creature)
-
-        index = rng.choice(len(names))
-        creature = names[index]
-        formula = formulas[index]
+        _, _, description = summoning.determine_summon_formula(
+            options, desired_summon_cr, rng, max_quantity=10
+        )
 
         feature = Feature(
             name="Packlord",
             action=ActionType.Action,
             uses=1,
             replaces_multiattack=1,
-            description=f"{stats.selfref.capitalize()} roars, summoning its pack to its aid. {formula.description} {creature} arrive to aid {stats.selfref} \
-                and join combat at initiative count 0. On their first turn, they use their action to dash into position and act normally on subsequent turns.",
+            description=f"{stats.selfref.capitalize()} roars, summoning its pack to its aid. {description}",
         )
 
         return stats, feature

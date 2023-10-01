@@ -1,16 +1,21 @@
 from math import ceil, floor
 from typing import List, Tuple
 
+import numpy as np
 from numpy.random import Generator
+
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, conditions
+from ...damage import AttackType, DamageType, Dazed, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -270,8 +275,49 @@ class _StormRune(Power):
         return stats, feature
 
 
+class _Earthshaker(Power):
+    def __init__(self):
+        super().__init__(name="Earthshaker", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, List[Feature]]:
+        dc = stats.difficulty_class_easy
+        size = stats.size.decrement().decrement() if stats.size >= Size.Huge else Size.Medium
+        distance1 = easy_multiple_of_five(1.5 * stats.cr, min_val=10, max_val=30)
+
+        sizes = {Size.Gargantuan: 60, Size.Huge: 45, Size.Large: 30}
+        distance2 = sizes.get(stats.size, 15)
+
+        dazed = Dazed()
+
+        feature1 = Feature(
+            name="Earthshaker",
+            action=ActionType.Feature,
+            description=f"Whenever {stats.selfref} moves, all {size} or smaller creatures that are within {distance1} feet of {stats.selfref} \
+                must make a DC {dc} Strength check or fall **Prone**. A creature that falls prone in this way loses concentration.",
+        )
+
+        dmg = DieFormula.target_value(stats.attack.average_damage * 1.5, force_die=Die.d8)
+
+        feature2 = Feature(
+            name="Earthshaker Stomp",
+            action=ActionType.Action,
+            replaces_multiattack=2,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} stomps its foot, creathing a massive shockwave. Each creature in a {distance2} ft cone \
+                must make a DC {dc} Strength saving throw or take {dmg.description} Thunder damage and be {dazed}",
+        )
+
+        return stats, [feature1, feature2]
+
+
 Boulder: Power = _Boulder()
 CloudRune: Power = _CloudRune()
+Earthshaker: Power = _Earthshaker()
 FireRune: Power = _FireRune()
 FrostRune: Power = _FrostRune()
 HillRune: Power = _HillRune()
@@ -284,6 +330,7 @@ ShoveAllies: Power = _ShoveAllies()
 GiantPowers: List[Power] = [
     Boulder,
     CloudRune,
+    Earthshaker,
     FireRune,
     FrostRune,
     ForcefulBlow,

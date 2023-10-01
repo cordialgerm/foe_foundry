@@ -4,6 +4,9 @@ from typing import List, Tuple
 import numpy as np
 from numpy.random import Generator
 
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
+
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, Burning, DamageType, Dazed, Frozen, Shocked
@@ -11,6 +14,7 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import summoning
 from ..attack import flavorful_damage_types
 from ..power import Power, PowerType
 from ..scores import (
@@ -325,12 +329,36 @@ class _ElementalSmite(Power):
         return stats, feature
 
 
+class _ElementalReplication(Power):
+    def __init__(self):
+        super().__init__(name="Elemental Replication", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        _, _, description = summoning.determine_summon_formula(
+            summon_list=summoning.Elementals, summon_cr_target=stats.cr / 4.0, rng=rng
+        )
+
+        feature = Feature(
+            name="Elemental Replication",
+            action=ActionType.Action,
+            recharge=5,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} overflows with elemental energy and replicates. {description}",
+        )
+
+        return stats, feature
+
+
 DamagingAura: Power = _DamagingAura()
 ElementalAffinity: Power = _ElementalAffinity()
 ElementalBurst: Power = _ElementalBurst()
 ElementalMagic: Power = _ElementalMagic()
 ElementalShroud: Power = _ElementalShroud()
 ElementalSmite: Power = _ElementalSmite()
+ElementalReplication: Power = _ElementalReplication()
 
 
 ElementalPowers: List[Power] = [
@@ -340,4 +368,5 @@ ElementalPowers: List[Power] = [
     ElementalMagic,
     ElementalShroud,
     ElementalSmite,
+    ElementalReplication,
 ]
