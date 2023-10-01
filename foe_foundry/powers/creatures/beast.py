@@ -143,9 +143,85 @@ class _Web(Power):
         return stats, [feature1, feature2, feature3]
 
 
+class _Packlord(Power):
+    def __init__(self):
+        super().__init__(name="Packlord", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_beast(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        desired_summon_cr = ceil(stats.cr / 4)
+
+        if stats.speed.fly:
+            options = [
+                ("*Swarm of Bats*", 1 / 4),
+                ("*Giant Eagle*", 1),
+            ]
+        elif stats.speed.swim:
+            options = [("*Swarm of Quippers*", 1), ("*Hunter Shark*", 2), ("*Killer Whale*", 3)]
+        else:
+            options = [
+                ("*Swarm of Rats*", 1 / 4),
+                ("*Dire Wolf*", 1),
+                ("*Polar Bear*", 2),
+            ]
+
+        names, formulas = [], []
+        for creature, cr in options:
+            target_val = desired_summon_cr / cr
+            if target_val < 1.0 or target_val > 20.0:
+                continue
+            elif target_val >= 1.0 and target_val <= 2.0:
+                # if there are only 1 or 2 minions that can be summoned then don't roll 1d4 as that variance is way too high
+                # instead just use a static number
+                num = int(round(target_val))
+                formula = DieFormula.from_expression(f"{num}")
+            else:
+                # if there are 3 or more minions being summoned then use a d4 dice formula
+                formula = DieFormula.target_value(target_val, force_die=Die.d4)
+
+            formulas.append(formula)
+            names.append(creature)
+
+        index = rng.choice(len(names))
+        creature = names[index]
+        formula = formulas[index]
+
+        feature = Feature(
+            name="Packlord",
+            action=ActionType.Action,
+            uses=1,
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} roars, summoning its pack to its aid. {formula.description} {creature} arrive to aid {stats.selfref} \
+                and join combat at initiative count 0. On their first turn, they use their action to dash into position and act normally on subsequent turns.",
+        )
+
+        return stats, feature
+
+
+class _WildInstinct(Power):
+    def __init__(self):
+        super().__init__(name="Wild Instinct", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_beast(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Wild Instinct",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"{stats.selfref.capitalize} identifies the creature with the lowest Strength score that it can see. It then Dashes towards that creature.",
+        )
+        return stats, feature
+
+
 Gore: Power = _Gore()
 HitAndRun: Power = _HitAndRun()
 MotivatedByCarnage: Power = _MotivatedByCarnage()
+Packlord: Power = _Packlord()
 Web: Power = _Web()
+WildInstinct: Power = _WildInstinct()
 
-BeastPowers: List[Power] = [Gore, HitAndRun, MotivatedByCarnage, Web]
+BeastPowers: List[Power] = [Gore, HitAndRun, MotivatedByCarnage, Packlord, Web, WildInstinct]

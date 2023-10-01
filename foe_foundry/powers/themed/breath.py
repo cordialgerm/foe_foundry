@@ -34,7 +34,7 @@ class _BreathAttack(Power):
         score = HIGH_AFFINITY
 
         if candidate.size >= Size.Large:
-            score += MODERATE_AFFINITY
+            score += HIGH_AFFINITY
 
         return score
 

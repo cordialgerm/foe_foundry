@@ -6,7 +6,7 @@ from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, Bleeding, DamageType
+from ...damage import AttackType, Bleeding, DamageType, Weakened
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
@@ -240,15 +240,14 @@ class _DrainStrength(Power):
         dc = stats.difficulty_class_easy
 
         dmg = DieFormula.target_value(1.1 * stats.attack.average_damage, force_die=Die.d6)
+        weakened = Weakened(save_end_of_turn=True)
 
         feature = Feature(
             name="Drain Strength",
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} attempts to magically drain the strength from a creature it can see within 5 feet. \
-                The creature must make a DC {dc} Constitution save. On a failure, the creature takes {dmg.description} necrotic damage \
-                and its Strength score is reduced by 1d4. The creature dies if this reduces its Strength to 0. \
-                Otherwise, the reduction lasts until the target finishes a short or long rest. It can also be removed by a *Greater Restoration* or similar spell.",
+                The creature must make a DC {dc} Constitution save. On a failure, the creature takes {dmg.description} necrotic damage and is {weakened}.",
         )
 
         return stats, feature

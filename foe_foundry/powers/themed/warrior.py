@@ -3,14 +3,12 @@ from typing import List, Tuple
 import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, DamageType, Dazed
+from ...die import Die
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
@@ -26,9 +24,15 @@ from .organized import _score_could_be_organized
 
 
 def _score_could_be_melee_fighter(
-    candidate: BaseStatblock, requires_training: bool, large_size_boost: bool = False
+    candidate: BaseStatblock,
+    requires_training: bool,
+    large_size_boost: bool = False,
+    requires_weapon: bool = False,
 ) -> float:
     if not candidate.attack_type.is_melee():
+        return 0
+
+    if requires_weapon and candidate.attack_type != AttackType.MeleeWeapon:
         return 0
 
     score = 0
@@ -265,20 +269,52 @@ class _ParryAndRiposte(Power):
         return stats, feature
 
 
+class _PommelStrike(Power):
+    def __init__(
+        self,
+    ):
+        super().__init__(name="Pommel Strike", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_could_be_melee_fighter(
+            candidate, requires_training=True, requires_weapon=True
+        )
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, None]:
+        dazed = Dazed()
+        dc = stats.difficulty_class_easy
+
+        attack = stats.attack.scale(
+            scalar=0.6,
+            damage_type=DamageType.Bludgeoning,
+            attack_type=AttackType.MeleeWeapon,
+            reach=5,
+            die=Die.d4,
+            replaces_multiattack=1,
+            name="Pommel Strike",
+            additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become {dazed.caption} until the end of its next turn. {dazed.description_3rd}",
+        )
+
+        stats = stats.add_attack(attack)
+        return stats, None
+
+
 Challenger: Power = _Challenger()
 CleavingStrike: Power = _CleavingStrike()
 Disciplined: Power = _Disciplined()
-PinningShot: Power = _PinningShot()
 PackTactics: Power = _PackTactics()
 ParryAndRiposte: Power = _ParryAndRiposte()
+PinningShot: Power = _PinningShot()
+PommelStrike: Power = _PommelStrike()
 MageSlayer: Power = _MageSlayer()
 
 WarriorPowers: List[Power] = [
-    PinningShot,
     Challenger,
-    PackTactics,
-    ParryAndRiposte,
     CleavingStrike,
     Disciplined,
+    PackTactics,
+    ParryAndRiposte,
+    PinningShot,
+    PommelStrike,
     MageSlayer,
 ]

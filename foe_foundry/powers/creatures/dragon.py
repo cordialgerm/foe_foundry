@@ -1,7 +1,11 @@
 from math import ceil, floor
 from typing import List, Tuple
 
+import numpy as np
 from numpy.random import Generator
+
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
@@ -52,7 +56,7 @@ class _DragonsGaze(Power):
             name="Dragon's Gaze",
             action=ActionType.BonusAction,
             recharge=6,
-            description=f"One creature within 60 feet of {stats.selfref} must make a DC {dc} Wisdom save or be **Frightened** of {stats.selfref} (save ends at end of turn). \
+            description=f"One creature within 60 feet of {stats.selfref} that can see it must make a DC {dc} Wisdom save or be **Frightened** of {stats.selfref} (save ends at end of turn). \
                 While frightened in this way, each time the target takes damage, they take an additional {dmg} psychic damage.",
         )
 
@@ -140,7 +144,73 @@ class _WingBuffet(Power):
         return stats, feature
 
 
+class _DragonsGreed(Power):
+    def __init__(self):
+        super().__init__(name="Dragon's Greed", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_dragon(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        dc = stats.difficulty_class_easy
+        feature = Feature(
+            name="Dragon's Greed",
+            action=ActionType.Action,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} targets a creature it can see within 60 feet, preferring to target the creature in posession of the most valuable treasure or magical items. \
+                The creature must make a DC {dc} Charisma saving throw or be **Charmed** by {stats.selfref} (save ends at end of turn). While charmed in this way, the creature must use its movement and action \
+                to approach {stats.selfref} and make it an offering of its most valuable treasure or magical item. The target uses its action to place the offering on the floor at its feet.",
+        )
+        return stats, feature
+
+
+class _DraconicMinions(Power):
+    def __init__(self):
+        super().__init__(name="Draconic Minions", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_dragon(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        desired_summon_cr = ceil(stats.cr / 2)
+
+        options = [("*Kobold*", 1 / 8), ("*Goblin*", 1 / 4), ("*Veteran*", 3), ("*Wyvern*", 6)]
+
+        names, formulas = [], []
+        for creature, cr in options:
+            target_val = desired_summon_cr / cr
+            if target_val < 1.0 or target_val > 20.0:
+                continue
+            elif target_val >= 1.0 and target_val <= 2.0:
+                # if there are only 1 or 2 minions that can be summoned then don't roll 1d4 as that variance is way too high
+                # instead just use a static number
+                num = int(round(target_val))
+                formula = DieFormula.from_expression(f"{num}")
+            else:
+                # if there are 3 or more minions being summoned then use a d4 dice formula
+                formula = DieFormula.target_value(target_val, force_die=Die.d4)
+
+            formulas.append(formula)
+            names.append(creature)
+
+        index = rng.choice(len(names))
+        creature = names[index]
+        formula = formulas[index]
+
+        feature = Feature(
+            name="Draconic Minions",
+            action=ActionType.Action,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} roars, summoning its minions to its aid. {formula.description} {creature} arrive to aid {stats.selfref} \
+                and join combat at initiative count 0. On their first turn, they use their action to dash into position and act normally on subsequent turns.",
+        )
+
+        return stats, feature
+
+
 DragonsGaze: Power = _DragonsGaze()
+DragonsGreed: Power = _DragonsGreed()
+DraconicMinions: Power = _DraconicMinions()
 DraconicRetaliation: Power = _DraconicRetaliation()
 TailSwipe: Power = _TailSwipe()
 WingBuffet: Power = _WingBuffet()
@@ -149,6 +219,8 @@ WingBuffet: Power = _WingBuffet()
 DragonPowers: List[Power] = [
     BreathAttack,
     DragonsGaze,
+    DragonsGreed,
+    DraconicMinions,
     DraconicRetaliation,
     TailSwipe,
     WingBuffet,

@@ -75,7 +75,7 @@ def open_statblock(path: Path):
 
 
 def screenshot(path: Path):
-    screenshots_dir = Path(__file__).parent.parent / "screenshots"
+    screenshots_dir = Path(__file__).parent.parent / "examples" / "screenshots"
     screenshots_dir.mkdir(exist_ok=True)
     screenshot_path = screenshots_dir / f"{path.stem}.png"
 

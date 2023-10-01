@@ -111,8 +111,9 @@ class _Charm(Power):
                 then it must succeed on a DC {dc} Wisdom save against this magic or be **Charmed** by {stats.selfref}. \
                 While charmed in this way, the target treats {stats.selfref} as a trusted friend to be heeded and protected. \
                 It takes {stats.selfref}'s requests or actions in the most favorable way it can.  \
-                Each time {stats.selfref} or its allies do anything harmful to the target, it can repeat the saving throw. \
-                Otherwise, the effect lasts for 24 hours or until {stats.selfref} dies or is on anther plane of existance.",
+                Each time {stats.selfref} the target takes damage, it may repeat the save to end the condition. \
+                Otherwise, the effect lasts for 24 hours or until {stats.selfref} dies or is on anther plane of existance. \
+                A creature that saves is immune to this effect for 24 hours.",
         )
 
         return stats, feature

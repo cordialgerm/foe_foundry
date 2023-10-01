@@ -5,18 +5,16 @@ import numpy as np
 from num2words import num2words
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, DamageType, Weakened
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
+from ...utils import easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -226,13 +224,63 @@ class _BestowCurse(Power):
         return stats, feature
 
 
+class _RayOfEnfeeblement(Power):
+    def __init__(self):
+        super().__init__(name="Ray of Enfeeblement", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_cursed(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = _as_cursed(stats)
+        dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d6)
+        dc = stats.difficulty_class
+        weakened = Weakened(save_end_of_turn=False)
+        feature = Feature(
+            name="Ray of Enfeeblement",
+            action=ActionType.Action,
+            replaces_multiattack=2,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} shoots a black beam of energy toward a creature it can can see within 60 feet. \
+                That creature must succeed on a DC {dc} Constitution save or take {dmg.description} necrotic damage. On a success, the creature takes half damage. \
+                On a failure, the creature is also **Poisoned** for 1 minute (save ends at end of turn). While poisoned in this way, the creature is {weakened}.",
+        )
+        return stats, feature
+
+
+class _VoidSiphon(Power):
+    def __init__(self):
+        super().__init__(name="Void Siphon", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_cursed(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = _as_cursed(stats)
+
+        duration = DieFormula.from_expression("1d4 + 1")
+        distance = easy_multiple_of_five(stats.cr * 5, min_val=10, max_val=60)
+
+        feature = Feature(
+            name="Void Siphon",
+            action=ActionType.Action,
+            uses=1,
+            replaces_multiattack=2,
+            description=f"For the next {duration.description} turns, any magical healing and radiant or necrotic damage from a hostile source within {distance} feet of {stats.selfref} is negated as it is siphoned by the cursed power of {stats.selfref}. \
+                Prevent any such healing or radiant or nectoric damage. Instead, {stats.selfref} gains that many temporary hitpoints.",
+        )
+
+        return stats, feature
+
+
 AuraOfDespair: Power = _AuraOfDespair()
 BestowCurse: Power = _BestowCurse()
 CursedWound: Power = _CursedWound()
 DevilsSight: Power = _DevilsSight()
 HorriblyDisfigured: Power = _HorriblyDisfigured()
+RayOfEnfeeblement: Power = _RayOfEnfeeblement()
 RejectDivinity: Power = _RejectDivinity()
-
+VoidSiphon: Power = _VoidSiphon()
 
 CursedPowers: List[Power] = [
     AuraOfDespair,
@@ -240,5 +288,7 @@ CursedPowers: List[Power] = [
     CursedWound,
     DevilsSight,
     HorriblyDisfigured,
+    RayOfEnfeeblement,
     RejectDivinity,
+    VoidSiphon,
 ]

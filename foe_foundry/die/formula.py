@@ -97,7 +97,10 @@ class DieFormula:
 
     @property
     def description(self) -> str:
-        return f"{self.static} ({self.dice_formula()})"
+        if self.n_die > 0:
+            return f"{self.static} ({self.dice_formula()})"
+        else:
+            return f"{self.static}"
 
     def copy(self, **changes) -> DieFormula:
         args = asdict(self)

@@ -137,8 +137,21 @@ def Fatigue() -> CustomCondition:
     return CustomCondition(
         name="Fatigue",
         caption="**Fatigue**",
+        immunity_clause="A creature that is immune to **Exhaustion** cannot be **Fatigued**",
         description="Whenever you make a d20 test, you subtract your fatigue level from the d20 roll. You also subtract your fatigue level from the Spell save DC of any Spell you cast. \
             You can have up to 10 levels of fatigue. You die if your fatigue level exceeds 10. Finishing a Long Rest removes 1 of your levels of fatigue.",
         description_3rd="A creature suffering from **Fatigue** subtracts its fatigue level from the d20 roll whenever making a d20 test. It also subtracts its fatigue level from the Spell save DC of any spell it casts. \
             Fatigue levels are cumulative, and any creature that gains more than 10 levels of fatigue dies. Finishing a Long Rest removes 1 level of fatigue.",
+    )
+
+
+def Weakened(save_end_of_turn: bool = True) -> CustomCondition:
+    return CustomCondition(
+        name="Weakened",
+        caption="**Weakened**"
+        if not save_end_of_turn
+        else "**Weakened** (save ends at end of turn)",
+        immunity_clause="A creature that is immune to **Exhaustion** cannot be **Weakened**",
+        description="You are severely weakened. Your attacks and spells deal half damage and you have disadvantage on Strength ability checks and saving throws.",
+        description_3rd="A weakened creature deals half damage with its spells and attacks and has disadvantage on Strength ability checks and saving throws.",
     )
