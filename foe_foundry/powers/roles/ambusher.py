@@ -1,15 +1,13 @@
 from typing import List, Tuple
 
-import numpy as np
-
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
+from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType
+from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import Power, PowerType
@@ -22,32 +20,42 @@ from ..scores import (
 )
 
 
+def score_ambusher(candidate: BaseStatblock, speed_boost: bool = False) -> float:
+    if candidate.role != MonsterRole.Ambusher:
+        return NO_AFFINITY
+
+    score = HIGH_AFFINITY
+
+    if candidate.primary_attribute == Stats.DEX:
+        score += LOW_AFFINITY
+
+    if candidate.attributes.has_proficiency_or_expertise(Skills.Deception):
+        score += MODERATE_AFFINITY
+
+    if speed_boost and candidate.speed.walk >= 40:
+        score += MODERATE_AFFINITY
+
+    if score == 0:
+        return NO_AFFINITY
+    else:
+        return score
+
+
+def as_ambusher(stats: BaseStatblock) -> BaseStatblock:
+    new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
+    stats = stats.copy(attributes=new_attrs)
+    return stats
+
+
 class _DistractingAttack(Power):
     def __init__(self):
         super().__init__(name="Distracting Attack", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
+        return score_ambusher(candidate)
 
-        if candidate.role == MonsterRole.Ambusher:
-            score += HIGH_AFFINITY
-
-        if candidate.primary_attribute == Stats.DEX:
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Deception):
-            score += MODERATE_AFFINITY
-
-        if score == 0:
-            return NO_AFFINITY
-        else:
-            return score
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
-        stats = stats.copy(attributes=new_attrs)
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = as_ambusher(stats)
 
         feature = Feature(
             name="Distracting Attack",
@@ -65,24 +73,10 @@ class _ShadowyMovement(Power):
         super().__init__(name="Shadowy Movement", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
+        return score_ambusher(candidate)
 
-        if candidate.role == MonsterRole.Ambusher:
-            score += HIGH_AFFINITY
-
-        if candidate.primary_attribute == Stats.DEX:
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Stealth):
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
-        stats = stats.copy(attributes=new_attrs)
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = as_ambusher(stats)
 
         feature = Feature(
             name="Shadowy Movement",
@@ -99,24 +93,10 @@ class _DeadlyAmbusher(Power):
         super().__init__(name="Deadly Ambusher", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
+        return score_ambusher(candidate, speed_boost=True)
 
-        if candidate.role == MonsterRole.Ambusher:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Stealth):
-            score += MODERATE_AFFINITY
-
-        if candidate.speed.fastest_speed >= 40:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
-        stats = stats.copy(attributes=new_attrs)
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = as_ambusher(stats)
 
         feature = Feature(
             name="Deadly Ambusher",
@@ -129,11 +109,35 @@ class _DeadlyAmbusher(Power):
         return stats, feature
 
 
+class _DeadlyPrecision(Power):
+    def __init__(self):
+        super().__init__(name="Deadly Precision", power_type=PowerType.Role)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_ambusher(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        stats = as_ambusher(stats)
+        dmg = DieFormula.target_value(2 + 0.5 * stats.cr, force_die=Die.d6)
+        feature = Feature(
+            name="Deadly Precision",
+            action=ActionType.Feature,
+            hidden=True,
+            modifies_attack=True,
+            description=f"If the attack was made with advantage, it deals an additional {dmg.description} damage",
+        )
+        return stats, feature
+
+
+DeadlyPrecision: Power = _DeadlyPrecision()
 DistractingAttack: Power = _DistractingAttack()
 ShadowyMovement: Power = _ShadowyMovement()
 DeadlyAmbusher: Power = _DeadlyAmbusher()
 
 AmbusherPowers: List[Power] = [
+    DeadlyPrecision,
     DistractingAttack,
     ShadowyMovement,
     DeadlyAmbusher,

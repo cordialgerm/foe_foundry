@@ -1,7 +1,7 @@
 from math import ceil
 from typing import List, Tuple
 
-import numpy as np
+from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
@@ -20,27 +20,37 @@ from ..scores import (
 )
 
 
+def score_artillery(candidate: BaseStatblock, speed_bonus: bool = False) -> float:
+    if not candidate.attack_type.is_ranged():
+        return NO_AFFINITY
+
+    score = MODERATE_AFFINITY
+
+    if candidate.role == MonsterRole.Artillery:
+        score += MODERATE_AFFINITY
+
+    if candidate.attributes.INT >= 15:
+        score += LOW_AFFINITY
+
+    if candidate.attributes.has_proficiency_or_expertise(Skills.Perception):
+        score += LOW_AFFINITY
+
+    if speed_bonus and (
+        candidate.role == MonsterRole.Skirmisher or candidate.speed.fastest_speed >= 40
+    ):
+        score += LOW_AFFINITY
+
+    return score
+
+
 class _Ricochet(Power):
     def __init__(self):
         super().__init__(name="Richochet", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_ranged():
-            return NO_AFFINITY
+        return score_artillery(candidate)
 
-        score = MODERATE_AFFINITY
-
-        if candidate.role == MonsterRole.Artillery:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.INT >= 15:
-            score += LOW_AFFINITY
-
-        return score
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Ricochet",
             action=ActionType.Reaction,
@@ -55,22 +65,9 @@ class _SteadyAim(Power):
         super().__init__(name="Steady Aim", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_ranged():
-            return NO_AFFINITY
+        return score_artillery(candidate)
 
-        score = MODERATE_AFFINITY
-
-        if candidate.role == MonsterRole.Artillery:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Perception):
-            score += LOW_AFFINITY
-
-        return score
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Steady Aim",
             action=ActionType.BonusAction,
@@ -86,25 +83,9 @@ class _QuickStep(Power):
         super().__init__(name="Quick Step", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_ranged():
-            return NO_AFFINITY
+        return score_artillery(candidate, speed_bonus=True)
 
-        score = MODERATE_AFFINITY
-
-        if candidate.role == MonsterRole.Artillery:
-            score += MODERATE_AFFINITY
-
-        if candidate.role == MonsterRole.Skirmisher:
-            score += MODERATE_AFFINITY  # this power could also make sense for skirmishers
-
-        if candidate.speed.fastest_speed >= 40:
-            score += LOW_AFFINITY
-
-        return score
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Quick Step",
             action=ActionType.BonusAction,
@@ -118,22 +99,9 @@ class _QuickDraw(Power):
         super().__init__(name="Quick Draw", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_ranged():
-            return NO_AFFINITY
+        return score_artillery(candidate)
 
-        score = MODERATE_AFFINITY
-
-        if candidate.role == MonsterRole.Artillery:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.INT >= 15:
-            score += LOW_AFFINITY
-
-        return score
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         uses = ceil(stats.cr / 5)
         feature = Feature(
             name="Quick Draw",
@@ -150,22 +118,9 @@ class _SuppressingFire(Power):
         super().__init__(name="Suppressing Fire", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_ranged():
-            return NO_AFFINITY
+        return score_artillery(candidate)
 
-        score = MODERATE_AFFINITY
-
-        if candidate.role == MonsterRole.Artillery:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Perception):
-            score += LOW_AFFINITY
-
-        return score
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Suppressing Fire",
             action=ActionType.Feature,
@@ -177,6 +132,47 @@ class _SuppressingFire(Power):
         return stats, feature
 
 
+class _IndirectFire(Power):
+    def __init__(self):
+        super().__init__(name="Indirect Fire", power_type=PowerType.Role)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_artillery(candidate)
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        feature = Feature(
+            name="Indirect Fire",
+            action=ActionType.Feature,
+            description=f"{stats.roleref} can perform its ranged attacks indirectly, such as by arcing or curving shots. It ignores half and three-quarters cover. \
+                These attacks are often unexpected. If it makes a ranged attack against a creature with half or three-quarters cover that is not yet aware of this ability, the attack is made at advantage. \
+                Any creature that can see the attack occuring is then aware of this ability.",
+        )
+
+        return stats, feature
+
+
+class _Overwatch(Power):
+    def __init__(self):
+        super().__init__(name="Overwatch", power_type=PowerType.Role)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_artillery(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        feature = Feature(
+            name="Overwatch",
+            action=ActionType.Reaction,
+            recharge=4,
+            description=f"When a hostile creature within 60 feet of {stats.roleref} moves and {stats.roleref} can see that movement, it can make a ranged attack against the target.",
+        )
+
+        return stats, feature
+
+
+IndirectFire: Power = _IndirectFire()
+Overwatch: Power = _Overwatch()
 Richochet: Power = _Ricochet()
 SteadyAim: Power = _SteadyAim()
 QuickStep: Power = _QuickStep()
@@ -184,4 +180,12 @@ QuickDraw: Power = _QuickDraw()
 SuppresingFire: Power = _SuppressingFire()
 
 
-ArtilleryPowers: List[Power] = [Richochet, SteadyAim, QuickStep, QuickDraw, SuppresingFire]
+ArtilleryPowers: List[Power] = [
+    IndirectFire,
+    Overwatch,
+    QuickStep,
+    QuickDraw,
+    Richochet,
+    SteadyAim,
+    SuppresingFire,
+]

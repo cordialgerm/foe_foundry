@@ -42,6 +42,19 @@ Selection engine should take parameters like:
 - Should try to balance feature, action, reaction, bonus action before having multiple reactions or bonus actions
 - There should be some sort of "unique key" or tagging system based on the kind of ability. Try not to select duplicates. For example, right now you can get multiple death triggers
 
+Selection system by "category"
+Feature
+Special Attack (max 1)
+Attack Modifier (max 1)
+Non-Attack Action
+Reaction (prefer 0-1)
+Bonus Action (prefer 0-1)
+Recharge (max 1)
+
+Features should be sorted (in a random order? or based on some sort of sort key) and applied one at a time. This way the features can build off each other
+
+Should features be re-scored as they're built up? This would make the features build off each other more
+
 ## Powers
 
 - Perceptive
