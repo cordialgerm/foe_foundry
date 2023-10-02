@@ -24,6 +24,7 @@ from . import (
     reckless,
     size,
     sneaky,
+    storm,
     teleportation,
     tough,
     tricky,
@@ -53,6 +54,7 @@ ThemedPowers: List[Power] = (
     + reckless.RecklessPowers
     + size.SizePowers
     + sneaky.SneakyPowers
+    + storm.StormPowers
     + tricky.TrickyPowers
     + teleportation.TeleportationPowers
     + tough.ToughPowers

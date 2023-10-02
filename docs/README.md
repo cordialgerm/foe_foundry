@@ -5,6 +5,8 @@
 
 It's inspired by the [***Forge of Foes***](https://slyflourish.com/build_a_quick_monster_with_forge_of_foes.html) book written by Teos Abadia, Scott Fitzgerald Gray, and Michael Shea.
 
+Foe Foundry also defines some new conditions, including **Dazed**, **Burning**, **Shocked**, **Frozen**, and **Fatigued**. Inspiration for these conditions comes from this video - [**Dungeon Dudes: Homebrewing New Conditions for D&D 5e**](https://youtu.be/Bq2Dz-EETJs?si=x94Allggu79ECGy3)
+
 **Foe Foundry** is still work-in-progress. Eventually, there will be a site where you can generate your own monsters!
 
 ## Design Philosophy
@@ -14,10 +16,23 @@ It's inspired by the [***Forge of Foes***](https://slyflourish.com/build_a_quick
 - **Monsters shouldn't have to sacrifice damage output to do something interesting**. Foe Foundry monsters often have bonus actions or powerful actions that can replace attacks in the multiattack. This way, your monster will always do something interesting on its turn and still be able to threaten players with damage output
 - **Monsters should have a clearly identified role**. Foe Foundry monsters have explicit roles that dictate their behavior and combat style. For example, monsters may be brutes, ambushers, leaders, etc. This leads to interesting encounters but also makes hte monster easier to run.
 - **Monsters are procedurally generated using 200+ Unique Powers**. These unique powers are assigned to monsters based on their creature type, role, CR, size, attributes, skill proficiencies, etc. The powers automatically scale damage, range, DCs, etc. based on the creature they're being applied to!
+- **Monsters should use interactive debuffs** - instead of paralyzing a character, Foe Foundry monsters use new conditions like **Dazed**, **Shocked**, **Frozen**, etc. These conditions take away less player agency and are more interactive than their harsher cousins like Paralyzed and Stunned.
 
 ## Example Monsters
 
 All of these monsters were generated procedurally using Foe Foundry
+
+### Frozen Undead Soul Devourer
+
+This spooky undead death mage can freeze its enemies in place with the new **Frozen** condition and devour its helpless victim's souls with *Devour Soul*!
+
+![Frozen Undead Soul Devourer](cool_screenshots/frozen_undead_soul_devourer.png)
+
+### Storm Giant
+
+This powerful storm giant can control its enemies by hurtling thunderbolts and calling down lightning. It also shows off the new **Dazed** condition.
+
+![Storm Giant](cool_screenshots/storm_giant.png)
 
 ### Acid Elemental Lord
 

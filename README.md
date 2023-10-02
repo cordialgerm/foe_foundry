@@ -10,7 +10,10 @@
 - [ ] Utility to convert static damage #s to dice formula
 - [ ] Create a Role scoring system (minimum attributes, creature types, etc.)
 - [ ] Specific Creature Templates
+- [ ] Biome System
+- [ ] Encounter Generator
 - [ ] Name Templates
+- [ ] License
 - [ ] Boss Nicknames - https://slyflourish.com/monstrous_descriptors.html?rss=1
 - [ ] Legendary Creatures (powers, role)
 - [ ] Create a visualization that shows likelyhood of creature + role going for a giving power
