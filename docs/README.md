@@ -34,6 +34,12 @@ This powerful storm giant can control its enemies by hurtling thunderbolts and c
 
 ![Storm Giant](cool_screenshots/storm_giant.png)
 
+### Fiendish Time Lord
+
+Here's an exampleof the unique *Temporal Loop* / *Temporal Record* mechanic.
+
+![Fiendish Time Lord](cool_screenshots/fiendish_time_lord.png)
+
 ### Acid Elemental Lord
 
 This example shows off the *Leader* creature type - granting it bonuses to mental attributes, saves, and skills, as well as the *Commander* feature and *Inspiring* reaction - as well as th elemental power *Acidic Smite* that can deliver ongoing acid damage and melt a foe.

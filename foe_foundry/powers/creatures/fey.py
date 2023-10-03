@@ -66,7 +66,7 @@ class _BeguilingAura(Power):
             name="Beguiling Aura",
             action=ActionType.Feature,
             description=f"An enemy of {stats.selfref} who moves within 25 of them for the first time on their turn \
-                or starts their turn there must succed on a DC {dc} Wisdom saving throw or be charmed by {stats.selfref} until the end of their turn.",
+                or starts their turn there must succeed on a DC {dc} Wisdom saving throw or be charmed by {stats.selfref} until the end of their turn.",
         )
         return stats, feature
 

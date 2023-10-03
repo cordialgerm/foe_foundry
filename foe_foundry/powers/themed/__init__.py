@@ -26,6 +26,7 @@ from . import (
     sneaky,
     storm,
     teleportation,
+    temporal,
     tough,
     trap,
     tricky,
@@ -57,6 +58,7 @@ ThemedPowers: List[Power] = (
     + sneaky.SneakyPowers
     + storm.StormPowers
     + teleportation.TeleportationPowers
+    + temporal.TemporalPowers
     + tough.ToughPowers
     + trap.TrapPowers
     + tricky.TrickyPowers

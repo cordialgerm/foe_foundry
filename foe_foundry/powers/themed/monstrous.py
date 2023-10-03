@@ -6,7 +6,7 @@ from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, Swallowed
+from ...damage import AttackType, DamageType, Dazed, Swallowed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
@@ -245,10 +245,45 @@ class _Rampage(Power):
         return stats, feature
 
 
+class _PetrifyingGaze(Power):
+    def __init__(self):
+        super().__init__(name="Petrifying Gaze", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        creature_types = {
+            CreatureType.Monstrosity: MODERATE_AFFINITY,
+            CreatureType.Celestial: LOW_AFFINITY,
+            CreatureType.Undead: LOW_AFFINITY,
+        }
+
+        score = creature_types.get(candidate.creature_type, 0)
+
+        if candidate.role in {MonsterRole.Ambusher, MonsterRole.Controller}:
+            score += MODERATE_AFFINITY
+
+        return score if score > 0 else NO_AFFINITY
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        dc = stats.difficulty_class_easy
+        dazed = Dazed()
+
+        feature = Feature(
+            name="Petrifying Gaze",
+            action=ActionType.Reaction,
+            recharge=4,
+            description=f"Whenever a creature within 60 feet looks at {stats.selfref}, it must make a DC {dc} Constitution saving throw. \
+                On a failed save, the creature magically begins to turn to stone and is {dazed}. It must repeat the saving throw at the end of its next turn. \
+                On a success, the effect ends. On a failure, the creature is **Petrified** until it is freed by the *Greater Restoration* spell or other magic.",
+        )
+
+        return stats, feature
+
+
 Constriction: Power = _Constriction()
 Corrosive: Power = _Corrosive()
 DevourAlly: Power = _DevourAlly()
 LingeringWound: Power = _LingeringWound()
+PetrifyingGaze: Power = _PetrifyingGaze()
 Pounce: Power = _Pounce()
 Rampage: Power = _Rampage()
 Swallow: Power = _Swallow()
@@ -259,6 +294,7 @@ MonstrousPowers: List[Power] = [
     Corrosive,
     DevourAlly,
     LingeringWound,
+    PetrifyingGaze,
     Pounce,
     Rampage,
     Swallow,

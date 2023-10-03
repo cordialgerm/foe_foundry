@@ -1,21 +1,18 @@
 from math import ceil
 from typing import List, Tuple
 
-import numpy as np
-
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
+from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...die import DieFormula
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ...utils import choose_enum
-from ..attack import flavorful_damage_types
+from ...utils import choose_enum, easy_multiple_of_five
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -36,8 +33,22 @@ def _score_clever(candidate: BaseStatblock) -> float:
         or candidate.attributes.CHA <= 10
     ):
         return NO_AFFINITY
-    else:
-        return MODERATE_AFFINITY
+
+    score = LOW_AFFINITY
+
+    if candidate.attributes.INT >= 16:
+        score += LOW_AFFINITY
+
+    if candidate.attributes.CHA >= 16:
+        score += LOW_AFFINITY
+
+    if candidate.attributes.WIS >= 16:
+        score += LOW_AFFINITY
+
+    if candidate.role in {MonsterRole.Leader, MonsterRole.Controller}:
+        score += MODERATE_AFFINITY
+
+    return score if score > 0 else NO_AFFINITY
 
 
 class _Keen(Power):
@@ -50,7 +61,7 @@ class _Keen(Power):
         return _score_clever(candidate)
 
     def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
+        self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | None]:
         # give the monster reasonable mental stats
 
@@ -107,9 +118,7 @@ class _MarkTheTarget(Power):
             score += HIGH_AFFINITY
         return score
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Mark the Target",
             description=f"Immediately after hitting a target, {stats.selfref} can mark the target. All allies of {stats.selfref} who can see the target have advantage on attack rolls against the target until the start of this creature's next turn.",
@@ -119,8 +128,40 @@ class _MarkTheTarget(Power):
         return stats, feature
 
 
+class _UnsettlingWords(Power):
+    def __init__(self):
+        super().__init__(name="Unsettling Words", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_clever(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        uses = ceil(stats.cr / 7)
+        distance = easy_multiple_of_five(5 + 1.25 * stats.cr, min_val=10, max_val=30)
+
+        if stats.cr <= 5:
+            die = DieFormula.from_expression("1d4")
+        elif stats.cr <= 11:
+            die = DieFormula.from_expression("1d6")
+        else:
+            die = DieFormula.from_expression("1d8")
+
+        feature = Feature(
+            name="Unsettling Words",
+            action=ActionType.Reaction,
+            uses=uses,
+            description=f"Whenever a hostile creature within {distance} that can hear {stats.selfref} makes a d20 ability check, \
+                {stats.selfref} can roll {die} and subtract the result from the total, potentially turning a success into a failure",
+        )
+
+        return stats, feature
+
+
 Keen: Power = _Keen()
 MarkTheTarget: Power = _MarkTheTarget()
+UnsettlingWords: Power = _UnsettlingWords()
 
 
-CleverPowers: List[Power] = [Keen, MarkTheTarget]
+CleverPowers: List[Power] = [Keen, MarkTheTarget, UnsettlingWords]
