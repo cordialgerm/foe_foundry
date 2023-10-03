@@ -10,7 +10,7 @@ from foe_foundry.statblocks import BaseStatblock
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, DamageType, Fatigue
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
@@ -187,11 +187,35 @@ class _FiendishSummons(Power):
         return stats, feature
 
 
+class _TemptingOffer(Power):
+    def __init__(self):
+        super().__init__(name="Tempting Offer", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_fiend(candidate, min_cr=3)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        dc = stats.difficulty_class
+        fatigue = Fatigue()
+        feature = Feature(
+            name="Tempting Offer",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} makes a tempting offer to a creature that can hear it within 60 feet. \
+                That creature must make a DC {dc} Wisdom saving throw. On a failure, the creature gains a level of {fatigue}. \
+                The creature may instead accept the offer. In doing so, it loses all levels of fatigue gained in this way but is contractually bound to the offer",
+        )
+        return stats, feature
+
+
 EmpoweredByDeath: Power = _EmpoweredByDeath()
 FiendishBite: Power = _FiendishBite()
 FiendishSummons: Power = _FiendishSummons()
 FiendishTeleportation: Power = _FiendishTeleporation()
 RelishYourFailure: Power = _RelishYourFailure()
+TemptingOffer: Power = _TemptingOffer()
 WallOfFire: Power = _WallOfFire()
 
 FiendishPowers: List[Power] = [
@@ -200,5 +224,6 @@ FiendishPowers: List[Power] = [
     FiendishSummons,
     FiendishTeleportation,
     RelishYourFailure,
+    TemptingOffer,
     WallOfFire,
 ]
