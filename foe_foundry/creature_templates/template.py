@@ -1,11 +1,12 @@
 from abc import ABC, abstractmethod
-from typing import List, Set, Tuple, overload
+from typing import List, Set, Tuple
 
 import numpy as np
 
+from ..attack_template import AttackTemplate
 from ..creature_types import CreatureType
 from ..features import Feature
-from ..powers import Power, PowerType, select_from_powers, select_power, select_powers
+from ..powers import Power, PowerType, select_from_powers, select_powers
 from ..role_types import MonsterRole
 from ..roles import AllRoles, RoleTemplate, get_role
 from ..statblocks import BaseStatblock, Statblock
@@ -27,6 +28,11 @@ class CreatureTypeTemplate(ABC):
     def customize_role(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         return stats.copy()
 
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> AttackTemplate:
+        return AttackTemplate()
+
     def select_role(
         self,
         stats: BaseStatblock,
@@ -42,10 +48,14 @@ class CreatureTypeTemplate(ABC):
             i = rng.choice(n)
             return AllRoles[i]
 
-    def select_powers(self, stats: BaseStatblock, rng: np.random.Generator) -> List[Power]:
+    def select_powers(
+        self, stats: BaseStatblock, rng: np.random.Generator, offset: int = 0
+    ) -> List[Power]:
         # TODO - make this scale with CR and let creature types customize this
 
-        n = 1 if stats.recommended_powers <= 3 else 2
+        n = (1 if stats.recommended_powers <= 3 else 2) + offset
+        if n <= 0:
+            return []
 
         # Creature Type
         creature_powers = select_powers(
@@ -84,39 +94,33 @@ class CreatureTypeTemplate(ABC):
         )
         return selection
 
-    @overload
     def create(
         self,
-        stats: BaseStatblock,
+        base_stats: BaseStatblock,
         rng: np.random.Generator,
         role_template: RoleTemplate | str | None | MonsterRole = None,
     ) -> Statblock:
-        pass
+        # apply creature type modifications
+        new_stats = self.alter_base_stats(base_stats, rng)
 
-    @overload
-    def create(
-        self,
-        stats: BaseStatblock,
-        rng: np.random.Generator,
-        role_template: RoleTemplate | str | None | MonsterRole = None,
-        return_features: bool = True,
-    ) -> Tuple[Statblock, List[Feature]]:
-        pass
-
-    def create(
-        self,
-        stats: BaseStatblock,
-        rng: np.random.Generator,
-        role_template: RoleTemplate | str | None | MonsterRole = None,
-        return_features: bool = False,
-    ) -> Statblock | Tuple[Statblock, List[Feature]]:
-        new_stats = self.alter_base_stats(stats, rng)
+        # apply role specialization
         role_template = self.select_role(stats=new_stats, role_template=role_template, rng=rng)
         new_stats = role_template.alter_base_stats(new_stats, rng=rng)
         new_stats = self.customize_role(new_stats, rng)
 
-        powers = self.select_powers(new_stats, rng)
+        # apply attack template and attack powers (if any)
+        attack_template = self.select_attack_template(new_stats, rng)
+        if attack_template is not None:
+            new_stats = attack_template.alter_base_stats(new_stats, rng)
+            attack_powers = attack_template.select_powers(new_stats, rng)
+        else:
+            attack_powers = []
 
+        # select additional powers
+        selected_powers = self.select_powers(new_stats, rng, offset=len(attack_powers))
+
+        # render features from powers
+        powers = attack_powers + selected_powers
         features: Set[Feature] = set()
         for power in powers:
             new_stats, new_features = power.apply(new_stats, rng)
@@ -128,10 +132,10 @@ class CreatureTypeTemplate(ABC):
 
             features.update(new_features)
 
-        name = f"{stats.key}-{self.creature_type}-{role_template.key}"
-        stats = Statblock.from_base_stats(name=name, stats=new_stats, features=list(features))
+        # finalize attacks
+        new_stats = attack_template.finalize_attacks(new_stats, rng)
 
-        if return_features:
-            return stats, list(features)
-        else:
-            return stats
+        # finalize statblock
+        name = f"{base_stats.key}-{self.creature_type}-{role_template.key}"
+        stats = Statblock.from_base_stats(name=name, stats=new_stats, features=list(features))
+        return stats
