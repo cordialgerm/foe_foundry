@@ -83,11 +83,8 @@ Should features be re-scored as they're built up? This would make the features b
 
 ### Psionic
 
-- **Psychic Whispers** (Recharge) - level-scaled dissonant whispers
-- **Mind Blast** (Recharge)
 - **Devour Intellect** & **Body Thief** - https://www.dndbeyond.com/monsters/17163-intellect-devourer
 - **Extract Brain** & **Tentacles** - https://www.dndbeyond.com/monsters/17104-mind-flayer
-- **Psychic Mirror** - reflect psychic damage
 
 ### Eye Powers
 

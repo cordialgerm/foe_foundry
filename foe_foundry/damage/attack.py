@@ -47,6 +47,7 @@ class Attack:
     reach: int | None = 5
     range: int | None = None
     additional_description: str | None = None
+    custom_target: str | None = None
     replaces_multiattack: int = 0
     is_melee: bool = field(init=False)
     description: str = field(init=False)
@@ -73,7 +74,12 @@ class Attack:
         else:
             raise NotImplementedError()
 
-        description = f"*{attack}*: +{self.hit} to hit, {attack_range}, one target. *Hit* {self.damage.description}"
+        if self.custom_target is None:
+            target = "one target"
+        else:
+            target = self.custom_target
+
+        description = f"*{attack}*: +{self.hit} to hit, {attack_range}, {target}. *Hit* {self.damage.description}"
         if self.additional_damage is not None:
             description += f" and {self.additional_damage.description}."
         else:
@@ -93,6 +99,7 @@ class Attack:
             attack_type=self.attack_type,
             reach=self.reach,
             range=self.range,
+            custom_target=self.custom_target,
             additional_description=self.additional_description,
             replaces_multiattack=self.replaces_multiattack,
         )
