@@ -1,8 +1,8 @@
 import numpy as np
-
-from foe_foundry.statblocks import BaseStatblock
+from numpy.random import Generator
 
 from ..ac_templates import NaturalArmor
+from ..attack_template import AttackTemplate, natural, spell
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
@@ -15,7 +15,27 @@ class _AberrationTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Aberration", creature_type=CreatureType.Aberration)
 
-    def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
+    def select_attack_template(self, stats: BaseStatblock, rng: Generator) -> AttackTemplate:
+        ranged = 1 if stats.attack_type.is_ranged() else 0
+        melee = 1 - ranged
+
+        options = {
+            natural.Tentacle: 4 * melee,
+            spell.Gaze: 3 * ranged,
+            spell.Beam: 3 * ranged,
+            natural.Claw: 1 * melee,
+            natural.Bite: 1 * melee,
+        }
+        choices, weights = [], []
+        for c, w in options.items():
+            choices.append(c)
+            weights.append(w)
+
+        weights = np.array(weights) / np.sum(weights)
+        indx = rng.choice(len(choices), p=weights)
+        return choices[indx]
+
+    def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         # Aberrations generally have high mental stats
         # this means the minimum stat value should be 12 for mental stats
         # we should also boost mental stat scores
@@ -38,13 +58,6 @@ class _AberrationTemplate(CreatureTypeTemplate):
         attack_indx = rng.choice(2, p=attack_weights)
         attack_type = attack_types[attack_indx]
 
-        primary_damage_type = (
-            DamageType.Bludgeoning
-            if attack_type == AttackType.MeleeNatural
-            else DamageType.Psychic
-        )
-        secondary_damage_type = DamageType.Psychic
-
         # aberrations with higher CR should have proficiency in CHA and WIS saves
         if stats.cr >= 4:
             new_attributes = new_attributes.grant_save_proficiency(Stats.CHA)
@@ -63,8 +76,6 @@ class _AberrationTemplate(CreatureTypeTemplate):
             languages=["Deep Speech", "telepathy 120 ft."],
             senses=new_senses,
             attributes=new_attributes,
-            primary_damage_type=primary_damage_type,
-            secondary_damage_type=secondary_damage_type,
             attack_type=attack_type,
         )
 

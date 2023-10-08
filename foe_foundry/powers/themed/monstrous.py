@@ -5,6 +5,7 @@ import numpy as np
 from numpy.random import Generator
 
 from ...attack_template import natural as natural_attacks
+from ...attack_template import spell as spell_attacks
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, Dazed, Swallowed
@@ -259,7 +260,6 @@ class _Rampage(Power):
         return stats, feature
 
 
-# TODO - boost with Gaze attack
 class _PetrifyingGaze(Power):
     def __init__(self):
         super().__init__(name="Petrifying Gaze", power_type=PowerType.Theme)
@@ -275,6 +275,9 @@ class _PetrifyingGaze(Power):
 
         if candidate.role in {MonsterRole.Ambusher, MonsterRole.Controller}:
             score += MODERATE_AFFINITY
+
+        if candidate.attack.name == spell_attacks.Gaze.attack_name:
+            score += HIGH_AFFINITY
 
         return score if score > 0 else NO_AFFINITY
 
