@@ -65,7 +65,7 @@ class Attack:
         if self.is_melee:
             attack = "Melee Weapon Attack"
             attack_range = f"reach {self.reach}ft."
-        elif self.attack_type == AttackType.RangedWeapon:
+        elif self.attack_type in {AttackType.RangedWeapon, AttackType.RangedNatural}:
             attack = "Ranged Weapon Attack"
             attack_range = f"range {self.range}ft."
         elif self.attack_type == AttackType.RangedSpell:

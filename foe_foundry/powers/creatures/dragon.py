@@ -1,5 +1,5 @@
 from math import ceil, floor
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 import numpy as np
 from numpy.random import Generator
@@ -7,6 +7,7 @@ from numpy.random import Generator
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
+from ...attack_template import natural as natural_attacks
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
@@ -26,7 +27,11 @@ from ..scores import (
 from ..themed.breath import BreathAttack
 
 
-def _score_dragon(candidate: BaseStatblock, high_cr_boost: bool = False) -> float:
+def _score_dragon(
+    candidate: BaseStatblock,
+    high_cr_boost: bool = False,
+    attack_modifiers: Dict[str, float] | None = None,
+) -> float:
     if candidate.creature_type != CreatureType.Dragon:
         return NO_AFFINITY
 
@@ -34,6 +39,15 @@ def _score_dragon(candidate: BaseStatblock, high_cr_boost: bool = False) -> floa
 
     if high_cr_boost:
         score += MODERATE_AFFINITY
+
+    default_attack_modifier = attack_modifiers.get("*", 0) if attack_modifiers else 0
+    attack_modifier = (
+        attack_modifiers.get(candidate.attack.name, default_attack_modifier)
+        if attack_modifiers
+        else default_attack_modifier
+    )
+
+    score += attack_modifier
 
     return score
 
@@ -98,7 +112,9 @@ class _TailSwipe(Power):
         super().__init__(name="Tail Swipe", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate)
+        return _score_dragon(
+            candidate, attack_modifiers={natural_attacks.Tail.attack_name: HIGH_AFFINITY}
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         tail_attack = stats.attack.scale(

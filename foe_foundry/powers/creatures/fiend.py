@@ -1,5 +1,5 @@
 from math import ceil, floor
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 import numpy as np
 from numpy.random import Generator
@@ -8,6 +8,7 @@ from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
 
+from ...attack_template import natural as natural_attacks
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, Fatigue
@@ -25,13 +26,27 @@ from ..scores import (
 )
 
 
-def score_fiend(candidate: BaseStatblock, min_cr: float | None = None) -> float:
+def score_fiend(
+    candidate: BaseStatblock,
+    min_cr: float | None = None,
+    attack_modifiers: Dict[str, float] | None = None,
+) -> float:
     if candidate.creature_type != CreatureType.Fiend:
         return NO_AFFINITY
     if min_cr is not None and candidate.cr < min_cr:
         return NO_AFFINITY
 
-    return HIGH_AFFINITY
+    score = HIGH_AFFINITY
+
+    default_attack_modifier = attack_modifiers.get("*", 0) if attack_modifiers else 0
+    attack_modifier = (
+        attack_modifiers.get(candidate.attack.name, default_attack_modifier)
+        if attack_modifiers
+        else default_attack_modifier
+    )
+
+    score += attack_modifier
+    return score
 
 
 class _EmpoweredByDeath(Power):
@@ -143,7 +158,9 @@ class _FiendishBite(Power):
         super().__init__(name="Fiendish Bite", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(candidate)
+        return score_fiend(
+            candidate, attack_modifiers={natural_attacks.Bite.attack_name: HIGH_AFFINITY}
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

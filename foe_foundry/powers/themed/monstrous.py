@@ -4,6 +4,7 @@ from typing import Dict, List, Set, Tuple
 import numpy as np
 from numpy.random import Generator
 
+from ...attack_template import natural as natural_attacks
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, Dazed, Swallowed
@@ -26,12 +27,16 @@ from ..scores import (
 
 def _score_could_be_monstrous(
     candidate: BaseStatblock,
-    size_boost: bool = True,
+    min_size: Size | None = None,
     additional_creature_types: Dict[CreatureType, float] | None = None,
     require_living: bool = True,
+    attack_adjustments: Dict[str, float] | None = None,
 ) -> float:
     if require_living and not candidate.creature_type.is_living:
         return 0
+
+    if min_size is not None and candidate.size < min_size:
+        return NO_AFFINITY
 
     score = 0
     creature_types = {
@@ -44,18 +49,20 @@ def _score_could_be_monstrous(
 
     score += creature_types.get(candidate.creature_type, 0)
 
-    if size_boost and candidate.size >= Size.Large:
-        score += MODERATE_AFFINITY
+    default_attack_adjustment = attack_adjustments.get("*", 0) if attack_adjustments else 0
+    attack_adjustment = (
+        attack_adjustments.get(candidate.attack.name, default_attack_adjustment)
+        if attack_adjustments
+        else 0
+    )
+
+    score += attack_adjustment
 
     return score
 
 
-def _as_monstrous(
-    candidate: BaseStatblock, size_boost: bool = False, boost_speed: int = 10
-) -> BaseStatblock:
+def _as_monstrous(candidate: BaseStatblock, boost_speed: int = 10) -> BaseStatblock:
     changes: dict = dict(attack_type=AttackType.MeleeNatural)
-    if size_boost:
-        changes.update(size=candidate.size.increment())
 
     if boost_speed != 0:
         new_speed = candidate.speed.delta(boost_speed)
@@ -99,14 +106,18 @@ class _Swallow(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return _score(
             candidate,
-            size_boost=True,
+            min_size=Size.Large,
             additional_creature_types={CreatureType.Ooze: HIGH_AFFINITY},
+            attack_adjustments={
+                "*": -1 * MODERATE_AFFINITY,
+                natural_attacks.Bite.attack_name: EXTRA_HIGH_AFFINITY,
+            },
         )
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | None]:
-        stats = _as_monstrous(stats, size_boost=True)
+        stats = _as_monstrous(stats)
 
         dc = stats.difficulty_class
         threshold = easy_multiple_of_five(3 * stats.cr, min_val=5, max_val=40)
@@ -155,10 +166,13 @@ class _Corrosive(Power):
         super().__init__(name="Corrosive", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = _score_could_be_monstrous(candidate)
-        if candidate.secondary_damage_type == DamageType.Acid:
-            score += HIGH_AFFINITY
-        return score if score > 0 else NO_AFFINITY
+        return _score_could_be_monstrous(
+            candidate,
+            attack_adjustments={
+                "*": -1 * HIGH_AFFINITY,
+                natural_attacks.Spit.attack_name: EXTRA_HIGH_AFFINITY,
+            },
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats, boost_speed=0)
@@ -245,6 +259,7 @@ class _Rampage(Power):
         return stats, feature
 
 
+# TODO - boost with Gaze attack
 class _PetrifyingGaze(Power):
     def __init__(self):
         super().__init__(name="Petrifying Gaze", power_type=PowerType.Theme)

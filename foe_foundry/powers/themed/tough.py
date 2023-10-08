@@ -171,6 +171,7 @@ class _LimitedMagicImmunity(Power):
         return stats, feature
 
 
+# TODO - merge this with unarmed fighting style
 class _Athletic(Power):
     """This creature is Athletic"""
 

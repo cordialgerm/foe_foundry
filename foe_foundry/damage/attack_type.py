@@ -4,6 +4,7 @@ from enum import StrEnum, auto
 class AttackType(StrEnum):
     MeleeWeapon = auto()
     MeleeNatural = auto()
+    RangedNatural = auto()
     RangedWeapon = auto()
     RangedSpell = auto()
 
@@ -18,6 +19,9 @@ class AttackType(StrEnum):
 
     def is_mundane(self) -> bool:
         return not self.is_spell()
+
+    def is_natural(self) -> bool:
+        return self in {AttackType.MeleeNatural, AttackType.RangedNatural}
 
     def is_weapon(self) -> bool:
         return self in {AttackType.MeleeWeapon, AttackType.RangedWeapon}

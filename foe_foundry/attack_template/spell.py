@@ -2,3 +2,5 @@
 
 # Arcane Burst
 # Eldritch Blast
+# Gaze
+# Beam

@@ -3,6 +3,7 @@ from typing import List, Tuple
 
 from numpy.random import Generator
 
+from ...attack_template.natural import Tentacle
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, Swallowed
 from ...die import Die, DieFormula
@@ -33,11 +34,11 @@ class _GraspingTentacles(Power):
         if candidate.creature_type != CreatureType.Aberration:
             return NO_AFFINITY
 
-        return (
-            HIGH_AFFINITY
-            if candidate.attack_type == AttackType.MeleeNatural
-            else MODERATE_AFFINITY
-        )
+        score = 0
+        if candidate.attack.name == Tentacle.attack_name:
+            score += HIGH_AFFINITY
+
+        return score if score > 0 else NO_AFFINITY
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = int(floor(11 + 0.5 * stats.cr))
@@ -51,6 +52,7 @@ class _GraspingTentacles(Power):
         return stats, feature
 
 
+# TODO - boost with Gaze
 class _DominatingGaze(Power):
     def __init__(self):
         super().__init__(name="Dominating Gaze", power_type=PowerType.Creature)

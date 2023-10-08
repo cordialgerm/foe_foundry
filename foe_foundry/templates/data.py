@@ -108,12 +108,15 @@ class MonsterTemplateData:
             if feature.modifies_attack:
                 attack_modifiers.append(feature)
 
+        if stats.attack.name == "Attack":
+            attack_name = "attacks"
+        else:
+            attack_name = f"{stats.attack.name} attacks"
+
         if stats.multiattack <= 1:
             multiattack = ""
         else:
-            multiattack = (
-                f"{stats.selfref.capitalize()} makes {num2words(stats.multiattack)} attacks."
-            )
+            multiattack = f"{stats.selfref.capitalize()} makes {num2words(stats.multiattack)} {attack_name}."
 
             replacements = []
             replacements += [

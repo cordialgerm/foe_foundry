@@ -1,5 +1,5 @@
 from math import ceil
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 import numpy as np
 from numpy.random import Generator
@@ -7,6 +7,7 @@ from numpy.random import Generator
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
+from ...attack_template import natural as natural_attacks
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, Burning, DamageType
@@ -27,7 +28,10 @@ from ..scores import (
 
 
 def _score_is_psychic(
-    candidate: BaseStatblock, require_aberration: bool = False, min_cr: float | None = None
+    candidate: BaseStatblock,
+    require_aberration: bool = False,
+    min_cr: float | None = None,
+    attack_modifiers: Dict[str, float] | None = None,
 ) -> float:
     # this is great for aberrations, psychic focused creatures, and controllers
     score = 0
@@ -44,6 +48,16 @@ def _score_is_psychic(
         score += HIGH_AFFINITY
     if candidate.role == MonsterRole.Controller:
         score += MODERATE_AFFINITY
+
+    default_attack_modifier = attack_modifiers.get("*", 0) if attack_modifiers else 0
+    attack_modifier = (
+        attack_modifiers.get(candidate.attack.name, default_attack_modifier)
+        if attack_modifiers
+        else 0
+    )
+
+    score += attack_modifier
+
     return score if score > 0 else NO_AFFINITY
 
 
@@ -205,23 +219,29 @@ class _ExtractBrain(Power):
         super().__init__(name="Extract Brain", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_psychic(candidate, require_aberration=True, min_cr=7)
+        return _score_is_psychic(
+            candidate,
+            require_aberration=True,
+            min_cr=7,
+            attack_modifiers={
+                "*": NO_AFFINITY,
+                natural_attacks.Tentacle.attack_name: HIGH_AFFINITY,
+            },
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
         stats = as_psychic(stats)
 
-        dc = stats.difficulty_class
+        dc = stats.difficulty_class_easy
 
-        stunning_tentacles = stats.attack.scale(
-            scalar=1.25,
-            damage_type=DamageType.Psychic,
-            attack_type=AttackType.MeleeNatural,
-            replaces_multiattack=2,
-            additional_description=f"On a hit, the target is **Grappled** (escape DC {dc}) and must succeed \
+        stunning_tentacles = Feature(
+            name="Stunning Tentancles",
+            action=ActionType.Feature,
+            modifies_attack=True,
+            description=f"On a hit, the target is **Grappled** (escape DC {dc}) and must succeed \
                 on a DC {dc} Intelligence save or be **Stunned** while grappled in this way.",
-            name="Stunning Tentacles",
         )
 
         extract_brain = stats.attack.scale(
@@ -229,17 +249,16 @@ class _ExtractBrain(Power):
             damage_type=DamageType.Piercing,
             attack_type=AttackType.MeleeNatural,
             die=Die.d10,
-            replaces_multiattack=3,
+            replaces_multiattack=4,
             custom_target=f"one incapacitated humanoid grappled by {stats.selfref}",
             additional_description=f"If this damage reduces the target to 0 hit points, {stats.selfref} kills the target \
                 by extracting and devouring its brain.",
             name="Extract Brain",
         )
 
-        stats = stats.add_attack(stunning_tentacles)
         stats = stats.add_attack(extract_brain)
 
-        return stats, None
+        return stats, stunning_tentacles
 
 
 DissonantWhispers: Power = _DissonantWhispers()

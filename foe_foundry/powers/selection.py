@@ -126,7 +126,7 @@ def _creature_powers(creature_type: CreatureType) -> List[Power]:
     elif creature_type == CreatureType.Undead:
         return undead.UndeadPowers + deathly.DeathlyPowers
     else:
-        raise NotImplementedError("TODO")  # TODO
+        raise ValueError(f"Unsupported creature type {creature_type}")
 
 
 def _role_powers(role_type: MonsterRole) -> List[Power]:
@@ -143,6 +143,6 @@ def _role_powers(role_type: MonsterRole) -> List[Power]:
     elif role_type == MonsterRole.Leader:
         return leader.LeaderPowers + [clever.MarkTheTarget] + organized.OrganizedPowers
     elif role_type == MonsterRole.Skirmisher:
-        return skirmisher.SkirmisherPowers + [sneaky.Vanish, artillery.QuickStep]  # TODO
+        return skirmisher.SkirmisherPowers + [sneaky.Vanish, artillery.QuickStep]
     else:
         raise ValueError(f"Unsupported monster role {role_type}")

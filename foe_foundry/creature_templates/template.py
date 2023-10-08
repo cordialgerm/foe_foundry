@@ -3,7 +3,7 @@ from typing import List, Set, Tuple
 
 import numpy as np
 
-from ..attack_template import AttackTemplate
+from ..attack_template import AttackTemplate, DefaultAttackTemplate
 from ..creature_types import CreatureType
 from ..features import Feature
 from ..powers import Power, PowerType, select_from_powers, select_powers
@@ -31,7 +31,7 @@ class CreatureTypeTemplate(ABC):
     def select_attack_template(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> AttackTemplate:
-        return AttackTemplate()
+        return DefaultAttackTemplate
 
     def select_role(
         self,
@@ -112,15 +112,14 @@ class CreatureTypeTemplate(ABC):
         attack_template = self.select_attack_template(new_stats, rng)
         if attack_template is not None:
             new_stats = attack_template.alter_base_stats(new_stats, rng)
-            attack_powers = attack_template.select_powers(new_stats, rng)
-        else:
-            attack_powers = []
+
+        # initialize attack to help later power selection
+        new_stats = attack_template.initialize_attack(new_stats)
 
         # select additional powers
-        selected_powers = self.select_powers(new_stats, rng, offset=len(attack_powers))
+        powers = self.select_powers(new_stats, rng)
 
         # render features from powers
-        powers = attack_powers + selected_powers
         features: Set[Feature] = set()
         for power in powers:
             new_stats, new_features = power.apply(new_stats, rng)

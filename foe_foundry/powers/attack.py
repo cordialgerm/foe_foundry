@@ -243,18 +243,3 @@ def debilitating_attack(
     )
 
     return stats, feature
-
-
-# TODO - organize these
-# Grappling Claw Attacks (Chuul)
-# Grappling Tentacle Attacks (see above)
-# Stinging Poison (Chuul, Wyvern, etc.)
-# Bite
-# Fist
-# Axe
-# Club
-# Spear
-# Horn
-# Tail
-# Constrict
-# Hooves

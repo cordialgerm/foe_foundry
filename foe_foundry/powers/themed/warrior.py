@@ -269,6 +269,7 @@ class _ParryAndRiposte(Power):
         return stats, feature
 
 
+# TODO - boost if attack is Sword or Spear
 class _PommelStrike(Power):
     def __init__(
         self,

@@ -1,8 +1,9 @@
 from math import ceil
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 import numpy as np
 
+from ...attack_template import natural as natural_attacks
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, Bleeding, DamageType
@@ -23,23 +24,38 @@ from ..scores import (
 )
 
 
+def _score_bruiser(
+    candidate: BaseStatblock,
+    size_boost: bool = False,
+    attack_modifiers: Dict[str, float] | None = None,
+) -> float:
+    score = 0
+
+    if candidate.role == MonsterRole.Bruiser:
+        score += MODERATE_AFFINITY
+
+    if size_boost and candidate.size >= Size.Large:
+        score += MODERATE_AFFINITY
+
+    default_attack_modifier = attack_modifiers.get("*", 0) if attack_modifiers else 0
+    attack_modifier = (
+        attack_modifiers.get(candidate.attack.name, default_attack_modifier)
+        if attack_modifiers
+        else default_attack_modifier
+    )
+
+    score += attack_modifier
+
+    return score
+
+
+# TODO - boost for Polearm
 class _Sentinel(Power):
     def __init__(self):
         super().__init__(name="Sentinel", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.role == MonsterRole.Bruiser:
-            score += MODERATE_AFFINITY
-
-        if candidate.size >= Size.Large:
-            score += MODERATE_AFFINITY
-
-        if candidate.attack_type == AttackType.MeleeWeapon:
-            score += MODERATE_AFFINITY
-
-        return score
+        return _score_bruiser(candidate, size_boost=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -58,27 +74,13 @@ class _Grappler(Power):
         super().__init__(name="Grappler", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_melee():
-            return NO_AFFINITY
-
-        score = LOW_AFFINITY
-
-        if candidate.role == MonsterRole.Bruiser:
-            score += LOW_AFFINITY
-
-        if candidate.primary_attribute == Stats.STR:
-            score += LOW_AFFINITY
-
-        if candidate.attack_type == AttackType.MeleeNatural:
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Athletics):
-            score += MODERATE_AFFINITY
-
-        if candidate.primary_damage_type == DamageType.Bludgeoning:
-            score += MODERATE_AFFINITY
-
-        return score
+        return _score_bruiser(
+            candidate,
+            attack_modifiers={
+                natural_attacks.Slam.attack_name: EXTRA_HIGH_AFFINITY,
+                "*": NO_AFFINITY,
+            },
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -103,6 +105,7 @@ class _Grappler(Power):
         return stats, None
 
 
+# TODO - boost for Claw, Axe
 class _Cleaver(Power):
     def __init__(self):
         super().__init__(name="Cleaver", power_type=PowerType.Role)
@@ -142,6 +145,7 @@ class _Cleaver(Power):
         return stats, feature
 
 
+# TODO - boost for Club, Slam
 class _Basher(Power):
     def __init__(self):
         super().__init__(name="Basher", power_type=PowerType.Role)

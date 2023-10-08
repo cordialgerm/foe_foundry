@@ -1,1 +1,1 @@
-from .template import AttackTemplate
+from .template import AttackTemplate, DefaultAttackTemplate

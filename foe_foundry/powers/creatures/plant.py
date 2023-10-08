@@ -30,6 +30,7 @@ def _score(candidate: BaseStatblock) -> float:
     return HIGH_AFFINITY
 
 
+# TODO - boost if attack is Whip
 class _PoisonThorns(Power):
     def __init__(self):
         super().__init__(name="Poison Thorns", power_type=PowerType.Creature)
@@ -94,6 +95,7 @@ class _GraspingRoots(Power):
         return stats, feature
 
 
+# TODO - boost if attack is Whip
 class _ChokingVine(Power):
     def __init__(self):
         super().__init__(name="Choking Vine", power_type=PowerType.Creature)

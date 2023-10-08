@@ -1,8 +1,9 @@
 from math import ceil
-from typing import List, Tuple
+from typing import Dict, List, Set, Tuple
 
 from numpy.random import Generator
 
+from ...attack_template import natural as natural_attacks
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, Bleeding, DamageType
@@ -21,15 +22,29 @@ from ..scores import (
 )
 
 
-def _score_beast(candidate: BaseStatblock, primary_attribute: Stats | None = None) -> float:
+def _score_beast(
+    candidate: BaseStatblock,
+    primary_attribute: Stats | None = None,
+    attack_adjustments: Dict[str, float] | None = None,
+) -> float:
     if candidate.creature_type != CreatureType.Beast:
         return NO_AFFINITY
 
-    score = HIGH_AFFINITY
+    score = MODERATE_AFFINITY
 
     if primary_attribute is not None and candidate.primary_attribute == primary_attribute:
         score += MODERATE_AFFINITY
-    return score
+
+    default_adjustment = attack_adjustments.get("*", 0) if attack_adjustments is not None else 0
+    attack_adjustment = (
+        attack_adjustments.get(candidate.attack.name, default_adjustment)
+        if attack_adjustments is not None
+        else 0
+    )
+
+    score += attack_adjustment
+
+    return score if score > 0 else NO_AFFINITY
 
 
 class _HitAndRun(Power):
@@ -80,7 +95,8 @@ class _Gore(Power):
         super().__init__(name="Gore", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate, Stats.STR)
+        attacks = {natural_attacks.Horns.attack_name: EXTRA_HIGH_AFFINITY}
+        return _score_beast(candidate, Stats.STR, attacks)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -109,7 +125,13 @@ class _Web(Power):
         super().__init__(name="Web", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate, Stats.STR)
+        attacks = {
+            "*": NO_AFFINITY,
+            natural_attacks.Bite.attack_name: HIGH_AFFINITY,
+            natural_attacks.Claw.attack_name: HIGH_AFFINITY,
+            natural_attacks.Stinger.attack_name: HIGH_AFFINITY,
+        }
+        return _score_beast(candidate, Stats.STR, attacks)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
