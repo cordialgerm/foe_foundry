@@ -5,6 +5,9 @@ from ..die import Die
 from ..statblocks.base import BaseStatblock
 from .fix import adjust_attack
 
+# TODO - allow specifying a primary stat?
+# TODO - allow specifying a range and reach
+
 
 class AttackTemplate:
     def __init__(
@@ -13,11 +16,13 @@ class AttackTemplate:
         attack_type: AttackType | None = None,
         damage_type: DamageType | None = None,
         die: Die | None = None,
+        allows_shield: bool | None = None,
     ):
         self.attack_name = attack_name
         self.attack_type = attack_type
         self.damage_type = damage_type
         self.die = die
+        self.allows_shield = allows_shield
 
     def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         args: dict = {}
@@ -25,6 +30,8 @@ class AttackTemplate:
             args.update(attack_type=self.attack_type)
         if self.damage_type is not None:
             args.update(primary_damage_type=self.damage_type)
+        if self.allows_shield is not None:
+            args.update(uses_shield=self.allows_shield)
 
         if len(args):
             return stats.copy(**args)

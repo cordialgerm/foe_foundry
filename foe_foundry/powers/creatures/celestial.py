@@ -9,7 +9,7 @@ from foe_foundry.statblocks import BaseStatblock
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, Dazed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
@@ -25,8 +25,11 @@ from ..scores import (
 )
 
 
-def _score_celestial(candidate: BaseStatblock) -> float:
+def _score_celestial(candidate: BaseStatblock, min_cr: float | None = None) -> float:
     if candidate.creature_type != CreatureType.Celestial:
+        return NO_AFFINITY
+
+    if min_cr and candidate.cr < min_cr:
         return NO_AFFINITY
 
     return HIGH_AFFINITY
@@ -103,7 +106,7 @@ class _DivineLaw(Power):
         super().__init__(name="Divine Law", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_celestial(candidate)
+        return _score_celestial(candidate, min_cr=7)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
@@ -133,9 +136,45 @@ class _DivineLaw(Power):
         return stats, feature
 
 
+class _WordsOfRighteousness(Power):
+    def __init__(self):
+        super().__init__(name="Words of Righteousness", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_celestial(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        damage = DieFormula.target_value(
+            stats.attack.average_damage * 1.25, suggested_die=Die.d6
+        )
+        dazed = Dazed()
+        dc = stats.difficulty_class_easy
+        distance = easy_multiple_of_five(6 * stats.cr, min_val=20, max_val=60)
+
+        feature = Feature(
+            name="Words of Righteousness",
+            action=ActionType.Action,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} speaks words of utter righteousness. Each creature of {stats.selfref}'s choice within {distance} feet \
+                that can hear it must make a DC {dc} Charisma saving throw. On a failure, the target takes {damage.description} psychic damage and is {dazed.caption}. \
+                The DM may decide that a creature has advantage or disadvantage on this save based on its actions and alignment. {dazed.description_3rd}",
+        )
+
+        return stats, feature
+
+
 DivineLaw: Power = _DivineLaw()
 HealingTouch: Power = _HealingTouch()
 MirroredJudgment: Power = _MirroredJudgement()
 RighteousJudgement: Power = _RighteousJudgement()
+WordsOfRighteousness: Power = _WordsOfRighteousness()
 
-CelestialPowers: List[Power] = [DivineLaw, HealingTouch, MirroredJudgment, RighteousJudgement]
+CelestialPowers: List[Power] = [
+    DivineLaw,
+    HealingTouch,
+    MirroredJudgment,
+    RighteousJudgement,
+    WordsOfRighteousness,
+]

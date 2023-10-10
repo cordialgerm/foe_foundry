@@ -1,3 +1,5 @@
+from typing import Tuple
+
 import numpy as np
 from numpy.random import Generator
 
@@ -16,7 +18,9 @@ class _BeastTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Beast", creature_type=CreatureType.Beast)
 
-    def select_attack_template(self, stats: BaseStatblock, rng: Generator) -> AttackTemplate:
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[AttackTemplate, BaseStatblock]:
         # beasts attack with natural weapons
         if stats.attack_type.is_ranged():
             choices = [
@@ -38,7 +42,7 @@ class _BeastTemplate(CreatureTypeTemplate):
 
         weights = np.array(weights, dtype=float) / np.sum(weights)
         indx = rng.choice(len(choices), p=weights)
-        return choices[indx]
+        return choices[indx], stats
 
     def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         # Beasts might have low ability scores if they are mundane

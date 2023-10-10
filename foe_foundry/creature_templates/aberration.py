@@ -1,3 +1,5 @@
+from typing import Tuple
+
 import numpy as np
 from numpy.random import Generator
 
@@ -15,7 +17,9 @@ class _AberrationTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Aberration", creature_type=CreatureType.Aberration)
 
-    def select_attack_template(self, stats: BaseStatblock, rng: Generator) -> AttackTemplate:
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[AttackTemplate, BaseStatblock]:
         ranged = 1 if stats.attack_type.is_ranged() else 0
         melee = 1 - ranged
 
@@ -33,7 +37,17 @@ class _AberrationTemplate(CreatureTypeTemplate):
 
         weights = np.array(weights) / np.sum(weights)
         indx = rng.choice(len(choices), p=weights)
-        return choices[indx]
+
+        if melee:
+            # melee aberrations still have high charisma but use STR as their primary stat
+            stats = stats.scale(
+                {Stats.STR: Stats.Primary(), Stats.CHA: Stats.Boost(Stats.CHA, -2)}
+            )
+
+        # aberrations attack with psychic energy
+        stats = stats.copy(secondary_damage_type=DamageType.Psychic)
+
+        return choices[indx], stats
 
     def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         # Aberrations generally have high mental stats
@@ -53,11 +67,6 @@ class _AberrationTemplate(CreatureTypeTemplate):
         new_senses = stats.senses.copy(darkvision=120)
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Medium, rng=rng)
 
-        attack_types = [AttackType.MeleeNatural, AttackType.RangedSpell]
-        attack_weights = [0.6, 0.4]
-        attack_indx = rng.choice(2, p=attack_weights)
-        attack_type = attack_types[attack_indx]
-
         # aberrations with higher CR should have proficiency in CHA and WIS saves
         if stats.cr >= 4:
             new_attributes = new_attributes.grant_save_proficiency(Stats.CHA)
@@ -76,7 +85,6 @@ class _AberrationTemplate(CreatureTypeTemplate):
             languages=["Deep Speech", "telepathy 120 ft."],
             senses=new_senses,
             attributes=new_attributes,
-            attack_type=attack_type,
         )
 
 

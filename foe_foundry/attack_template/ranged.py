@@ -1,5 +1,0 @@
-## Ranged
-
-# Longbow
-# Shortbow
-# Crossbow
