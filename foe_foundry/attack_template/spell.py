@@ -141,7 +141,7 @@ Shock: AttackTemplate = _Shock()
 Thundrousblast: AttackTemplate = _Thundrousblast()
 
 
-def attack_template_for_damage(damage: DamageType) -> AttackTemplate | None:
+def attack_template_for_damage(damage: DamageType) -> AttackTemplate:
     if damage == DamageType.Acid:
         return Acidsplash
     elif damage == DamageType.Fire:
@@ -163,4 +163,4 @@ def attack_template_for_damage(damage: DamageType) -> AttackTemplate | None:
     elif damage == DamageType.Thunder:
         return Thundrousblast
     else:
-        return None
+        raise ValueError(f"No spell attack type for {damage}")

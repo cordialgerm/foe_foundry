@@ -1,22 +1,61 @@
-from typing import Set, Tuple, TypeAlias
+from typing import List, Set, Tuple, TypeAlias
 
+import numpy as np
 from numpy.random import Generator
 
 from ..creature_types import CreatureType
+from ..damage import DamageType
 from ..die import Die, DieFormula
 
 MonsterInfo: TypeAlias = Tuple[str, float]
 SummoningList: TypeAlias = Set[MonsterInfo]
+SummonerInfo: TypeAlias = SummoningList | CreatureType | DamageType
+
+Fire: SummoningList = {
+    ("*Magma Mephit*", 1 / 2),
+    ("*Hell Hound*", 3),
+    ("*Fire Elemental*", 5),
+}
+
+Cold: SummoningList = {
+    ("*Steam Elemental*", 1 / 4),
+    ("*Winter Wolf*", 3),
+    ("*Young White Dragon*", 6),
+}
+
+Earth: SummoningList = {
+    ("*Dust Mephit*", 1 / 2),
+    ("*Azer*", 2),
+    ("*Earth Elemental*", 5),
+}
+
+Air: SummoningList = {
+    ("*Steam Mephit*", 1 / 4),
+    ("*Giant Eagle*", 1),
+    ("*Gargoyle*", 2),
+    ("*Dust Devil*", 5),
+}
+
+Poison: SummoningList = {("*Gray Ooze*", 1 / 2), ("*Ochre Jelly*", 2), ("*Black Pudding*", 4)}
 
 Elementals: SummoningList = {
     ("*Smoke Mephit*", 1 / 4),
+    ("*Steam Mephit*", 1 / 4),
     ("*Magma Mephit*", 1 / 2),
-    ("*Azer*", 2),
-    ("*Salamander*", 5),
-    ("*Earth Elemental*", 5),
-    ("*Fire Elemental*", 5),
+    ("*Gargoyle*", 2),
     ("*Air Elemental*", 5),
     ("*Water Elemental*", 5),
+    ("*Earth Elemental*", 5),
+    ("*Fire Elemental*", 5),
+    ("*Dust Devil*", 5),
+}
+
+Undead: SummonerInfo = {("*Skeleton*", 1 / 4), ("*Ghoul*", 1), ("*Mummy*", 3), ("*Ghost*", 4)}
+
+Celestials: SummonerInfo = {
+    ("*Giant Eagle*", 1),
+    ("*Pegasus*", 2),
+    ("*Couatl*", 5),  # CR 4 but they have a spell list so get fewer of them
 }
 
 Fiends: SummoningList = {
@@ -64,7 +103,6 @@ DraconicWyrmlings: SummoningList = {
     ("*Red Dragon Wymrling*", 4),
 }
 
-
 FlyingBeasts: SummoningList = {
     ("*Swarm of Bats*", 1 / 4),
     ("*Giant Eagle*", 1),
@@ -83,70 +121,123 @@ LandBeasts: SummoningList = {
 }
 
 
-def summon_list_for_creature(
-    creature_type: CreatureType, use_default: bool = False
-) -> SummoningList | None:
-    default_list = Elementals | Fiends | Fey
+def summon_list_for_creature_type(creature_type: CreatureType) -> SummoningList:
+    default_list = Elementals | Fiends | Fey | Undead
 
     if creature_type == CreatureType.Dragon:
-        options = DraconicMinions | DraconicWyrmlings
+        return DraconicMinions | DraconicWyrmlings
     elif creature_type == CreatureType.Aberration:
-        options = Aberrations
+        return Aberrations
     elif creature_type == CreatureType.Beast:
-        options = LandBeasts | SwimmingBeasts | FlyingBeasts
+        return LandBeasts | SwimmingBeasts | FlyingBeasts
     elif creature_type == CreatureType.Elemental:
-        options = Elementals
+        return Elementals
     elif creature_type == CreatureType.Fey:
-        options = Fey
+        return Fey
     elif creature_type == CreatureType.Fiend:
-        options = Fiends
+        return Fiends
     elif creature_type == CreatureType.Humanoid:
-        options = default_list
+        return default_list
     elif creature_type == CreatureType.Monstrosity:
-        options = Monstrosities
+        return Monstrosities
+    elif creature_type == CreatureType.Undead:
+        return Undead
+    elif creature_type == CreatureType.Celestial:
+        return Celestials
     else:
-        options: Set[MonsterInfo] = set()
+        return set()
 
-    if use_default:
-        options = options | default_list
+
+def summon_list_for_damage_type(damage_type: DamageType) -> SummoningList:
+    if damage_type == DamageType.Fire:
+        return Fire
+    elif damage_type == DamageType.Cold:
+        return Cold
+    elif damage_type in {DamageType.Acid, DamageType.Poison}:
+        return Poison
+    elif damage_type in {DamageType.Lightning, DamageType.Thunder}:
+        return Air
+    elif damage_type == DamageType.Necrotic:
+        return Undead
+    elif damage_type == DamageType.Psychic:
+        return Aberrations
+    elif damage_type == DamageType.Radiant:
+        return Celestials
+    else:
+        return set()
+
+
+def summon_list(
+    summoner: SummonerInfo | List[SummonerInfo] | None, use_default: bool = False
+) -> SummoningList:
+    default_list = Elementals | Fiends | Fey
+
+    if summoner is None and not use_default:
+        raise ValueError("summoner is required if use_default=False")
+
+    if summoner is None and use_default:
+        return default_list
+
+    if not isinstance(summoner, list):
+        infos = [summoner]
+    else:
+        infos = summoner
+
+    options: SummoningList = set()
+    for info in infos:
+        if isinstance(info, CreatureType):
+            options |= summon_list_for_creature_type(info)
+        elif isinstance(info, DamageType):
+            options |= summon_list_for_damage_type(info)
+        elif isinstance(info, set):
+            options |= info
 
     return options
 
 
 def determine_summon_formula(
-    summon_list: SummoningList | CreatureType | None,
+    summoner: SummonerInfo | List[SummonerInfo] | None,
     summon_cr_target: float,
     rng: Generator,
-    max_quantity: int = 20,
+    max_quantity: int = 12,
+    allow_generic_summons: bool = False,
 ) -> Tuple[str, DieFormula, str]:
     """Selects a creature to summon and determines the correct quantity to summon to reach a desired CR target."""
 
-    if isinstance(summon_list, CreatureType):
-        summon_list = summon_list_for_creature(summon_list, use_default=True)
+    summons = summon_list(summoner, use_default=allow_generic_summons)
 
-    if summon_list is None or len(summon_list) == 0:
-        raise ValueError("summon_list is required")
+    if len(summons) == 0:
+        raise ValueError(f"No summons available for {summoner}")
 
-    names, formulas = [], []
-    for creature, cr in summon_list:
+    names, formulas, weights = [], [], []
+    for creature, cr in summons:
         target_val = summon_cr_target / cr
-        if target_val < 1.0 or target_val > max_quantity:
+        if target_val < 1.0:
             continue
-        elif target_val <= 2:
+        if target_val > max_quantity:
+            target_val = max_quantity
+            weight = 0.5  # prefer not to use this option if we can
+
+        if target_val <= 2:
             quantity = int(round(target_val))
             formula = DieFormula.from_expression(str(quantity))
+            weight = 1
         else:
             # if there are 3 or more minions being summoned then use a d4 dice formula
             formula = DieFormula.target_value(target_val, force_die=Die.d4)
+            weight = 1
 
         formulas.append(formula)
         names.append(creature)
+        weights.append(weight)
 
-    index = rng.choice(len(names))
+    weights = np.array(weights) / np.sum(weights)
+    index = rng.choice(len(names), p=weights)
     creature = names[index]
     formula = formulas[index]
 
     description = f"{formula.description} {creature} arrive to aid the summoner and join combat at initiative count 0. \
-         On their first turn, they use their action to dash into position and act normally on subsequent turns."
+        On their first turn, the summons use their movement and action to arrive on the battlefield in unoccupied spaces within 30 feet of the summoner. \
+        They then act normally on subsequent turns."
 
     return creature, formula, description

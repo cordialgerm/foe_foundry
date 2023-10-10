@@ -189,16 +189,18 @@ class _Disembowler(Power):
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, List[Feature]]:
         dc = stats.difficulty_class
-
+        attack_type = (
+            AttackType.MeleeWeapon
+            if stats.attack.attack_type != AttackType.MeleeNatural
+            else AttackType.MeleeNatural
+        )
         rend_attack = stats.attack.scale(
             scalar=0.7,
             damage_type=DamageType.Piercing,
-            attack_type=AttackType.MeleeWeapon
-            if stats.attack.attack_type != AttackType.MeleeNatural
-            else AttackType.MeleeNatural,
+            attack_type=attack_type,
             name="Rend",
         )
-        dmg = DieFormula.target_value(rend_attack.average_rolled_damage, force_die=Die.d6)
+        dmg = rend_attack.damage.formula.copy(mod=0)
         bleeding = Bleeding(damage=dmg)
 
         rend_attack = rend_attack.copy(

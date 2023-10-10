@@ -84,7 +84,7 @@ class _TempestSurge(Power):
             recharge=5,
             description=f"{stats.selfref.capitalize()} sends out arcs of lightning at a creature it can see within 60 feet. \
                 The creature must make a DC {dc} Dexterity saving throw. On a failure, the target takes {dmg.description} lightning damage \
-                and is {shocked}. On a success, the creature takes half damage instead.",
+                and is {shocked} for 1 minute (save ends at end of turn). On a success, the creature takes half damage instead.",
         )
 
         return stats, feature

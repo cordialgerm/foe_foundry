@@ -31,8 +31,12 @@ def _score_dragon(
     candidate: BaseStatblock,
     high_cr_boost: bool = False,
     attack_modifiers: Dict[str, float] | None = None,
+    require_secondary_damage_type: bool = False,
 ) -> float:
     if candidate.creature_type != CreatureType.Dragon:
+        return NO_AFFINITY
+
+    if require_secondary_damage_type and not candidate.secondary_damage_type:
         return NO_AFFINITY
 
     score = HIGH_AFFINITY
@@ -189,9 +193,12 @@ class _DraconicMinions(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         desired_summon_cr = ceil(stats.cr / 2.5)
+        damage_type = stats.secondary_damage_type
+        if damage_type is None:
+            raise ValueError("dragon does not have a secondary damage type")
 
         _, _, description = summoning.determine_summon_formula(
-            summon_list=stats.creature_type,
+            summoner=[stats.creature_type, damage_type],
             summon_cr_target=desired_summon_cr,
             rng=rng,
         )

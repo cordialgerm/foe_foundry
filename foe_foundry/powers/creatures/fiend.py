@@ -190,7 +190,7 @@ class _FiendishSummons(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         _, _, description = summoning.determine_summon_formula(
-            summon_list=summoning.Fiends, summon_cr_target=stats.cr / 2.5, rng=rng
+            summoner=summoning.Fiends, summon_cr_target=stats.cr / 2.5, rng=rng
         )
 
         feature = Feature(

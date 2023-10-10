@@ -28,8 +28,6 @@ class _DragonTemplate(CreatureTypeTemplate):
             raise ValueError("secondary_damage_type is required")
 
         elemental_attack = spell.attack_template_for_damage(stats.secondary_damage_type)
-        if elemental_attack is None:
-            raise ValueError("elemental_attack is required")
 
         options = {}
         if stats.role in {MonsterRole.Controller, MonsterRole.Artillery}:

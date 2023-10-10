@@ -289,9 +289,7 @@ class _ParryAndRiposte(Power):
 
 
 class _PommelStrike(Power):
-    def __init__(
-        self,
-    ):
+    def __init__(self):
         super().__init__(name="Pommel Strike", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
@@ -324,6 +322,43 @@ class _PommelStrike(Power):
         return stats, None
 
 
+class _PushingAttack(Power):
+    def __init__(self):
+        super().__init__(name="Pushing Attack", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_could_be_melee_fighter(
+            candidate,
+            requires_training=False,
+            requires_weapon=False,
+            large_size_boost=True,
+            attack_modifiers={
+                "*": -1 * HIGH_AFFINITY,
+                weapon.Maul.attack_name: HIGH_AFFINITY,
+                natural.Claw.attack_name: HIGH_AFFINITY,
+                natural.Slam.attack_name: HIGH_AFFINITY,
+            },
+        )
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        if stats.size >= Size.Huge:
+            distance = 15
+        elif stats.size >= Size.Large:
+            distance = 10
+        else:
+            distance = 5
+
+        feature = Feature(
+            name="Pushing Attack",
+            action=ActionType.Feature,
+            modifies_attack=True,
+            hidden=True,
+            description=f"On a hit, the target is pushed up to {distance} feet horizontally.",
+        )
+
+        return stats, feature
+
+
 Challenger: Power = _Challenger()
 CleavingStrike: Power = _CleavingStrike()
 Disciplined: Power = _Disciplined()
@@ -331,6 +366,7 @@ PackTactics: Power = _PackTactics()
 ParryAndRiposte: Power = _ParryAndRiposte()
 PinningShot: Power = _PinningShot()
 PommelStrike: Power = _PommelStrike()
+PushingAttack: Power = _PushingAttack()
 MageSlayer: Power = _MageSlayer()
 
 WarriorPowers: List[Power] = [
@@ -341,5 +377,6 @@ WarriorPowers: List[Power] = [
     ParryAndRiposte,
     PinningShot,
     PommelStrike,
+    PushingAttack,
     MageSlayer,
 ]

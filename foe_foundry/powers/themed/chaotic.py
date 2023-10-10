@@ -77,7 +77,7 @@ class _EldritchBeacon(Power):
         summon_cr_target = stats.cr / 5
 
         _, _, description = summoning.determine_summon_formula(
-            summon_list=stats.creature_type, summon_cr_target=summon_cr_target, rng=rng
+            summoner=stats.creature_type, summon_cr_target=summon_cr_target, rng=rng
         )
 
         feature = Feature(
