@@ -1,13 +1,15 @@
 from math import ceil
+from typing import List, Tuple
 
 import numpy as np
-
-from foe_foundry.statblocks import BaseStatblock
+from numpy.random import Generator
 
 from ..ac_templates import NaturalArmor
+from ..attack_template import AttackTemplate, natural, spell
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
+from ..role_types import MonsterRole
 from ..senses import Senses
 from ..size import Size, get_size_for_cr
 from ..statblocks import BaseStatblock
@@ -19,7 +21,40 @@ class _DragonTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Dragon", creature_type=CreatureType.Dragon)
 
-    def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[AttackTemplate, BaseStatblock]:
+        if stats.secondary_damage_type is None:
+            raise ValueError("secondary_damage_type is required")
+
+        elemental_attack = spell.attack_template_for_damage(stats.secondary_damage_type)
+        if elemental_attack is None:
+            raise ValueError("elemental_attack is required")
+
+        options = {}
+        if stats.role in {MonsterRole.Controller, MonsterRole.Artillery}:
+            options.update({elemental_attack: 1})
+        else:
+            options.update(
+                {
+                    natural.Claw: 1,
+                    natural.Bite: 1,
+                }
+            )
+
+        choices: List[AttackTemplate] = []
+        weights = []
+        for c, w in options.items():
+            choices.append(c)
+            weights.append(w)
+
+        weights = np.array(weights) / np.sum(weights)
+        indx = rng.choice(len(choices), p=weights)
+        choice = choices[indx]
+
+        return choice, stats
+
+    def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         # Draconic creatures have high Strength, Dexterity, and
         # Constitution scores, as well as high Charisma scores.
         stats = stats.scale(
@@ -48,8 +83,6 @@ class _DragonTemplate(CreatureTypeTemplate):
             )
 
         # dragons have a breath weapon
-        attack_type = AttackType.MeleeWeapon
-        primary_damage_type = DamageType.Slashing
         breath_weapon_damage_type = choose_enum(
             rng,
             [
@@ -88,9 +121,7 @@ class _DragonTemplate(CreatureTypeTemplate):
             size=size,
             languages=["Common, Draconic"],
             senses=new_senses,
-            primary_damage_type=primary_damage_type,
             secondary_damage_type=breath_weapon_damage_type,
-            attack_type=attack_type,
             damage_immunities=damage_immunities,
         )
 

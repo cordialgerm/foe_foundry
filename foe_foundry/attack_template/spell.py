@@ -117,6 +117,16 @@ class _Holybolt(AttackTemplate):
         )
 
 
+class _Thundrousblast(AttackTemplate):
+    def __init__(self):
+        super().__init__(
+            attack_name="Thundrous Blast",
+            attack_type=AttackType.RangedSpell,
+            damage_type=DamageType.Thunder,
+            die=Die.d8,
+        )
+
+
 ArcaneBurst: AttackTemplate = _ArcaneBurst()
 Acidsplash: AttackTemplate = _Acidsplash()
 Beam: AttackTemplate = _Beam()
@@ -128,3 +138,29 @@ Gaze: AttackTemplate = _Gaze()
 HolyBolt: AttackTemplate = _Holybolt()
 Poisonbolt: AttackTemplate = _Poisonbolt()
 Shock: AttackTemplate = _Shock()
+Thundrousblast: AttackTemplate = _Thundrousblast()
+
+
+def attack_template_for_damage(damage: DamageType) -> AttackTemplate | None:
+    if damage == DamageType.Acid:
+        return Acidsplash
+    elif damage == DamageType.Fire:
+        return Firebolt
+    elif damage == DamageType.Force:
+        return Beam
+    elif damage == DamageType.Cold:
+        return Frostbolt
+    elif damage == DamageType.Psychic:
+        return Gaze
+    elif damage == DamageType.Radiant:
+        return HolyBolt
+    elif damage == DamageType.Poison:
+        return Poisonbolt
+    elif damage == DamageType.Lightning:
+        return Shock
+    elif damage == DamageType.Necrotic:
+        return Deathbolt
+    elif damage == DamageType.Thunder:
+        return Thundrousblast
+    else:
+        return None
