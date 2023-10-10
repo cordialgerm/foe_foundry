@@ -22,25 +22,25 @@ class _CelestialTemplate(CreatureTypeTemplate):
     def select_attack_template(
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[AttackTemplate, BaseStatblock]:
-        ranged = 1 if stats.attack_type.is_ranged() else 0
-        offensive_melee = stats.role in {
-            MonsterRole.Bruiser,
-        }
-        sneaky_melee = stats.role in {
-            MonsterRole.Ambusher,
-            MonsterRole.Skirmisher,
-        }
-        defensive_melee = not offensive_melee and not sneaky_melee
+        options = {}
+        offensive_melee = False
+        if stats.role in {MonsterRole.Controller}:
+            options.update({spell.HolyBolt: 1})
+        elif stats.role in {MonsterRole.Artillery}:
+            options.update({weapon.Longbow: 1, spell.HolyBolt: 1})
+        elif stats.role in {MonsterRole.Bruiser}:
+            offensive_melee = True
+            options.update({weapon.Greatsword: 1})
+        elif stats.role in {MonsterRole.Ambusher, MonsterRole.Skirmisher}:
+            options.update({weapon.SpearAndShield: 1, weapon.Daggers: 0.5})
+        else:
+            options.update(
+                {
+                    weapon.SwordAndShield: 1,
+                    weapon.MaceAndShield: 1,
+                }
+            )
 
-        options = {
-            spell.HolyBolt: 1 * stats.role in {MonsterRole.Controller},
-            weapon.Longbow: 1 * ranged,
-            weapon.SwordAndShield: 1 * defensive_melee,
-            weapon.MaceAndShield: 1 * defensive_melee,
-            weapon.Greatsword: 1 * offensive_melee,
-            weapon.SpearAndShield: 1 * sneaky_melee,
-            weapon.Daggers: 0.5 * sneaky_melee,
-        }
         choices: List[AttackTemplate] = []
         weights = []
         for c, w in options.items():

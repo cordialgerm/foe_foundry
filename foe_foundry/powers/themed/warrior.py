@@ -1,8 +1,9 @@
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 import numpy as np
 from numpy.random import Generator
 
+from ...attack_template import natural, weapon
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, Dazed
@@ -28,6 +29,7 @@ def _score_could_be_melee_fighter(
     requires_training: bool,
     large_size_boost: bool = False,
     requires_weapon: bool = False,
+    attack_modifiers: Dict[str, float] | None = None,
 ) -> float:
     if not candidate.attack_type.is_melee():
         return 0
@@ -36,8 +38,6 @@ def _score_could_be_melee_fighter(
         return 0
 
     score = 0
-    if candidate.creature_type.could_use_weapon:
-        score += MODERATE_AFFINITY
 
     if not requires_training and candidate.creature_type in {
         CreatureType.Beast,
@@ -53,6 +53,17 @@ def _score_could_be_melee_fighter(
 
     if large_size_boost and candidate.size >= Size.Large:
         score += MODERATE_AFFINITY
+
+    default_attack_modifier = (
+        attack_modifiers.get("*", 0) if attack_modifiers is not None else 0
+    )
+    attack_modifier = (
+        attack_modifiers.get(candidate.attack.name, default_attack_modifier)
+        if attack_modifiers is not None
+        else default_attack_modifier
+    )
+
+    score += attack_modifier
 
     return score
 
@@ -76,7 +87,7 @@ class _PinningShot(Power):
         if not candidate.attack_type.is_ranged():
             return NO_AFFINITY
 
-        score = LOW_AFFINITY
+        score = 0
 
         if candidate.role in {MonsterRole.Controller, MonsterRole.Artillery}:
             score += MODERATE_AFFINITY
@@ -164,7 +175,15 @@ class _CleavingStrike(Power):
 
     def score(self, candidate: BaseStatblock) -> float:
         score = _score_could_be_melee_fighter(
-            candidate, requires_training=False, large_size_boost=True
+            candidate,
+            requires_training=False,
+            large_size_boost=True,
+            attack_modifiers={
+                natural.Claw.attack_name: HIGH_AFFINITY,
+                weapon.Greataxe.attack_name: HIGH_AFFINITY,
+                weapon.Greatsword.attack_name: MODERATE_AFFINITY,
+                weapon.Maul.attack_name: MODERATE_AFFINITY,
+            },
         )
         return score if score > 0 else NO_AFFINITY
 
@@ -269,7 +288,6 @@ class _ParryAndRiposte(Power):
         return stats, feature
 
 
-# TODO - boost if attack is Sword or Spear
 class _PommelStrike(Power):
     def __init__(
         self,
@@ -278,7 +296,13 @@ class _PommelStrike(Power):
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_could_be_melee_fighter(
-            candidate, requires_training=True, requires_weapon=True
+            candidate,
+            requires_training=True,
+            requires_weapon=True,
+            attack_modifiers={
+                weapon.SwordAndShield.attack_name: HIGH_AFFINITY,
+                weapon.SpearAndShield.attack_name: HIGH_AFFINITY,
+            },
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, None]:

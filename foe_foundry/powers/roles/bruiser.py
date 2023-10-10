@@ -4,6 +4,7 @@ from typing import Dict, List, Tuple
 import numpy as np
 
 from ...attack_template import natural as natural_attacks
+from ...attack_template import weapon
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, Bleeding, DamageType
@@ -49,13 +50,19 @@ def _score_bruiser(
     return score
 
 
-# TODO - boost for Polearm
 class _Sentinel(Power):
     def __init__(self):
         super().__init__(name="Sentinel", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_bruiser(candidate, size_boost=True)
+        return _score_bruiser(
+            candidate,
+            size_boost=True,
+            attack_modifiers={
+                weapon.Polearm.attack_name: HIGH_AFFINITY,
+                weapon.SpearAndShield.attack_name: HIGH_AFFINITY,
+            },
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -105,30 +112,18 @@ class _Grappler(Power):
         return stats, None
 
 
-# TODO - boost for Claw, Axe
 class _Cleaver(Power):
     def __init__(self):
         super().__init__(name="Cleaver", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_melee():
-            return NO_AFFINITY
-
-        score = LOW_AFFINITY
-
-        if candidate.role == MonsterRole.Bruiser:
-            score += LOW_AFFINITY
-
-        if candidate.primary_attribute == Stats.STR:
-            score += LOW_AFFINITY
-
-        if candidate.size >= Size.Large:
-            score += MODERATE_AFFINITY
-
-        if candidate.primary_damage_type == DamageType.Slashing:
-            score += MODERATE_AFFINITY
-
-        return score
+        return _score_bruiser(
+            candidate,
+            attack_modifiers={
+                weapon.Greataxe.attack_name: EXTRA_HIGH_AFFINITY,
+                natural_attacks.Claw.attack_name: HIGH_AFFINITY,
+            },
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -145,33 +140,19 @@ class _Cleaver(Power):
         return stats, feature
 
 
-# TODO - boost for Club, Slam
 class _Basher(Power):
     def __init__(self):
         super().__init__(name="Basher", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_melee():
-            return NO_AFFINITY
-
-        score = LOW_AFFINITY
-
-        if candidate.role == MonsterRole.Bruiser:
-            score += LOW_AFFINITY
-
-        if candidate.primary_attribute == Stats.STR:
-            score += LOW_AFFINITY
-
-        if candidate.primary_damage_type == DamageType.Bludgeoning:
-            score += MODERATE_AFFINITY
-
-        if candidate.size >= Size.Large:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.STR >= 15:
-            score += MODERATE_AFFINITY
-
-        return score
+        return _score_bruiser(
+            candidate,
+            attack_modifiers={
+                weapon.Maul.attack_name: EXTRA_HIGH_AFFINITY,
+                weapon.MaceAndShield.attack_name: HIGH_AFFINITY,
+                natural_attacks.Slam.attack_name: HIGH_AFFINITY,
+            },
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -195,21 +176,14 @@ class _Disembowler(Power):
         super().__init__(name="Disembowler", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_melee():
-            return NO_AFFINITY
-
-        score = 0
-
-        if candidate.role == MonsterRole.Bruiser:
-            score += MODERATE_AFFINITY
-
-        if candidate.primary_damage_type == DamageType.Piercing:
-            score += MODERATE_AFFINITY
-
-        if candidate.attack_type == AttackType.MeleeNatural:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return _score_bruiser(
+            candidate,
+            attack_modifiers={
+                natural_attacks.Bite.attack_name: HIGH_AFFINITY,
+                natural_attacks.Horns.attack_name: MODERATE_AFFINITY,
+                weapon.Daggers.attack_name: HIGH_AFFINITY,
+            },
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

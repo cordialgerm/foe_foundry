@@ -116,11 +116,22 @@ class _Crossbow(AttackTemplate):
         )
 
 
+class _Traps(AttackTemplate):
+    def __init__(self):
+        super().__init__(
+            attack_name="Traps",
+            attack_type=AttackType.MeleeWeapon,
+            damage_type=DamageType.Piercing,
+            die=Die.d4,
+        )
+
+
 Longbow: AttackTemplate = _Longbow()
 Shortbow: AttackTemplate = _Shortbow()
 Crossbow: AttackTemplate = _Crossbow()
 SwordAndShield: AttackTemplate = _SwordAndShield()
 SpearAndShield: AttackTemplate = _SpearAndShield()
+Traps: AttackTemplate = _Traps()
 MaceAndShield: AttackTemplate = _MaceAndShield()
 Maul: AttackTemplate = _Maul()
 Greatsword: AttackTemplate = _Greatsword()

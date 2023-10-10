@@ -240,7 +240,7 @@ class _SpellStoring(Power):
         feature = Feature(
             name="Spell Storing",
             action=ActionType.Action,
-            description=f"{stats.selfref} stores a single spell of {level_text} level or lower. {stats.selfref} may cast the spell using a spell save DC of {dc}. \
+            description=f"{stats.selfref.capitalize()} stores a single spell of {level_text} level or lower. {stats.selfref} may cast the spell using a spell save DC of {dc}. \
                 When the spell is cast or a new spell is stored, any previously stored spell is lost. Some example spells include {examples}.",
         )
 
