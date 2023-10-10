@@ -20,7 +20,7 @@ class _MonstrosityTemplate(CreatureTypeTemplate):
         stats = stats.scale(
             {
                 Stats.STR: Stats.Primary(),
-                Stats.CON: Stats.Boost(Stats.CON, 2),
+                Stats.CON: Stats.CON.Boost(2),
                 Stats.DEX: Stats.Scale(10, 1 / 2),
                 Stats.INT: Stats.Scale(5, 1 / 3),
                 Stats.WIS: Stats.Scale(9, 1 / 4),

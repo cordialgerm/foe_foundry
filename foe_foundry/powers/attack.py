@@ -21,10 +21,11 @@ def flavorful_damage_types(
 ) -> Set[DamageType]:
     """Creates some flavorful options for secondary damage types that a candidate might employ"""
 
-    if default is None:
-        default = candidate.secondary_damage_type
+    if candidate.secondary_damage_type is not None:
+        return {candidate.secondary_damage_type}
 
-    creature_type, role = candidate.creature_type, candidate.role
+    creature_type = candidate.creature_type
+    role = candidate.role
 
     # ensure options are unique
     options = set()

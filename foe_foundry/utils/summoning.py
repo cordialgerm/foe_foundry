@@ -231,6 +231,9 @@ def determine_summon_formula(
         names.append(creature)
         weights.append(weight)
 
+    if len(formulas) == 0:
+        raise ValueError(f"No summons available for {summoner}")
+
     weights = np.array(weights) / np.sum(weights)
     index = rng.choice(len(names), p=weights)
     creature = names[index]

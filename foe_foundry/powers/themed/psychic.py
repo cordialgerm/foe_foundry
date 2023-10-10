@@ -160,7 +160,7 @@ class _MindBlast(Power):
         super().__init__(name="Mind Blast", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_psychic(candidate, min_cr=5)
+        return _score_is_psychic(candidate, min_cr=5, require_aberration=True)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

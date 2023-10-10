@@ -53,9 +53,7 @@ class _CelestialTemplate(CreatureTypeTemplate):
 
         if offensive_melee:
             # melee celestials still have high charisma but use STR as their primary stat
-            stats = stats.scale(
-                {Stats.STR: Stats.Primary(), Stats.CHA: Stats.Boost(Stats.CHA, -2)}
-            )
+            stats = stats.scale({Stats.STR: Stats.Primary(), Stats.CHA: Stats.CHA.Boost(-2)})
 
         # Celestials imbue their attacks with Radiant energy
         stats = stats.copy(secondary_damage_type=DamageType.Radiant)

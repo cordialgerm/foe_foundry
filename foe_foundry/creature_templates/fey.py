@@ -1,13 +1,15 @@
 from math import ceil, floor
+from typing import List, Tuple
 
 import numpy as np
-
-from foe_foundry.statblocks import BaseStatblock
+from numpy.random import Generator
 
 from ..ac_templates import LightArmor
+from ..attack_template import AttackTemplate, natural, spell, weapon
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
+from ..role_types import MonsterRole
 from ..size import Size, get_size_for_cr
 from ..statblocks import BaseStatblock
 from ..utils.rng import choose_enum
@@ -18,7 +20,59 @@ class _FeyTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Fey", creature_type=CreatureType.Fey)
 
-    def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[AttackTemplate, BaseStatblock]:
+        options = {}
+
+        melee_stats = False
+        secondar_damage_type = None
+        if stats.role in {MonsterRole.Ambusher, MonsterRole.Skirmisher}:
+            options = {weapon.Shortbow: 1, weapon.Longbow: 1}
+            secondary_damage_type = DamageType.Poison
+        elif stats.role in {MonsterRole.Artillery, MonsterRole.Controller}:
+            secondary_damage_type = choose_enum(
+                rng, [DamageType.Fire, DamageType.Cold, DamageType.Psychic, DamageType.Poison]
+            )
+            attack = spell.attack_template_for_damage(secondary_damage_type)
+            if attack is None:
+                raise ValueError(f"Unable to create attack for {secondary_damage_type}")
+            options = {attack: 1}
+        elif stats.role in {MonsterRole.Defender, MonsterRole.Leader}:
+            options = {
+                weapon.SpearAndShield: 1,
+                weapon.RapierAndShield: 1,
+            }
+        elif stats.role in {MonsterRole.Bruiser}:
+            melee_stats = True
+            options = {natural.Claw: 1, weapon.Greataxe: 1}
+
+        choices: List[AttackTemplate] = []
+        weights = []
+        for c, w in options.items():
+            choices.append(c)
+            weights.append(w)
+
+        weights = np.array(weights) / np.sum(weights)
+        indx = rng.choice(len(choices), p=weights)
+        choice = choices[indx]
+
+        if melee_stats:
+            # melee fey still have good CHA but not as great - instead they get a STR boost
+            stats = stats.scale(
+                {
+                    Stats.STR: Stats.Primary(),
+                    Stats.CHA: Stats.CHA.Boost(-2),
+                    Stats.DEX: Stats.DEX.Boost(-2),
+                }
+            )
+
+        if secondar_damage_type:
+            stats = stats.copy(secondar_damage_type=secondar_damage_type)
+
+        return choice, stats
+
+    def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         # Fey often have high Charisma and Dexterity scores and moderate-to-high Wisdom scores.
         stats = stats.scale(
             {
@@ -39,10 +93,6 @@ class _FeyTemplate(CreatureTypeTemplate):
         )
         new_attributes = new_attributes.grant_proficiency_or_expertise(*skills)
 
-        # Fey either attack with melee weapons or ranged weapons
-        attack_type = choose_enum(rng, [AttackType.MeleeWeapon, AttackType.RangedWeapon])
-        damage_type = DamageType.Piercing
-
         # fey are often lightly armored but are dextrous
         stats = stats.add_ac_template(LightArmor)
 
@@ -52,8 +102,6 @@ class _FeyTemplate(CreatureTypeTemplate):
             languages=["Common", "Elvish", "Sylvan"],
             senses=stats.senses.copy(darkvision=60),
             attributes=new_attributes,
-            primary_damage_type=damage_type,
-            attack_type=attack_type,
         )
 
 

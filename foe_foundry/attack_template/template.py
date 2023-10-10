@@ -7,6 +7,8 @@ from .fix import adjust_attack
 
 # TODO - allow specifying a primary stat?
 # TODO - allow specifying a range and reach
+# TODO - presence of shield come from here, nowhere else
+# TODO - debilitating conditions should be based on attack templates so refactor all that
 
 
 class AttackTemplate:
@@ -17,12 +19,14 @@ class AttackTemplate:
         damage_type: DamageType | None = None,
         die: Die | None = None,
         allows_shield: bool | None = None,
+        supports_secondary_damage_type: bool = False,
     ):
         self.attack_name = attack_name
         self.attack_type = attack_type
         self.damage_type = damage_type
         self.die = die
         self.allows_shield = allows_shield
+        self.supports_secondary_damage_type = supports_secondary_damage_type
 
     def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         args: dict = {}
@@ -69,7 +73,7 @@ class AttackTemplate:
         ]
 
         # split damage type on the primary attack
-        if stats.secondary_damage_type is not None:
+        if self.supports_secondary_damage_type and stats.secondary_damage_type is not None:
             primary_attack = primary_attack.split_damage(stats.secondary_damage_type)
 
         return stats.copy(attack=primary_attack, additional_attacks=additional_attacks)

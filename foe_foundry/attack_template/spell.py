@@ -16,6 +16,7 @@ class _Gaze(AttackTemplate):
             attack_name="Gaze",
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Psychic,
+            supports_secondary_damage_type=False,
         )
 
 
@@ -25,6 +26,7 @@ class _Beam(AttackTemplate):
             attack_name="Beam",
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Force,
+            supports_secondary_damage_type=False,
         )
 
 
@@ -34,6 +36,7 @@ class _ArcaneBurst(AttackTemplate):
             attack_name="Arcane Burst",
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Force,
+            supports_secondary_damage_type=False,
         )
 
 
@@ -44,6 +47,7 @@ class _EldritchBlast(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Force,
             die=Die.d10,
+            supports_secondary_damage_type=False,
         )
 
 
@@ -54,6 +58,7 @@ class _Firebolt(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Fire,
             die=Die.d10,
+            supports_secondary_damage_type=False,
         )
 
 
@@ -64,6 +69,7 @@ class _Frostbolt(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Cold,
             die=Die.d8,
+            supports_secondary_damage_type=False,
         )
 
 
@@ -74,6 +80,7 @@ class _Acidsplash(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Acid,
             die=Die.d4,
+            supports_secondary_damage_type=False,
         )
 
 
@@ -84,6 +91,7 @@ class _Poisonbolt(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Poison,
             die=Die.d6,
+            supports_secondary_damage_type=False,
         )
 
 
@@ -94,6 +102,7 @@ class _Shock(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Lightning,
             die=Die.d6,
+            supports_secondary_damage_type=False,
         )
 
 
@@ -104,6 +113,7 @@ class _Deathbolt(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Necrotic,
             die=Die.d6,
+            supports_secondary_damage_type=False,
         )
 
 
@@ -114,6 +124,7 @@ class _Holybolt(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Radiant,
             die=Die.d6,
+            supports_secondary_damage_type=False,
         )
 
 
@@ -124,6 +135,7 @@ class _Thundrousblast(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Thunder,
             die=Die.d8,
+            supports_secondary_damage_type=False,
         )
 
 
