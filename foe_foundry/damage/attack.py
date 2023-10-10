@@ -46,6 +46,7 @@ class Attack:
     attack_type: AttackType = AttackType.MeleeNatural
     reach: int | None = 5
     range: int | None = None
+    range_max: int | None = None
     additional_description: str | None = None
     custom_target: str | None = None
     replaces_multiattack: int = 0
@@ -67,10 +68,16 @@ class Attack:
             attack_range = f"reach {self.reach}ft."
         elif self.attack_type in {AttackType.RangedWeapon, AttackType.RangedNatural}:
             attack = "Ranged Weapon Attack"
-            attack_range = f"range {self.range}ft."
+            if self.range_max is not None:
+                attack_range = f"range {self.range}/{self.range_max}ft."
+            else:
+                attack_range = f"range {self.range}ft."
         elif self.attack_type == AttackType.RangedSpell:
             attack = "Ranged Spell Attack"
-            attack_range = f"range {self.range}ft."
+            if self.range_max is not None:
+                attack_range = f"range {self.range}/{self.range_max}ft."
+            else:
+                attack_range = f"range {self.range}ft."
         else:
             raise NotImplementedError()
 
@@ -99,6 +106,7 @@ class Attack:
             attack_type=self.attack_type,
             reach=self.reach,
             range=self.range,
+            range_max=self.range_max,
             custom_target=self.custom_target,
             additional_description=self.additional_description,
             replaces_multiattack=self.replaces_multiattack,

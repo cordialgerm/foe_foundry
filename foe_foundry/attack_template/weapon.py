@@ -23,6 +23,7 @@ class _SpearAndShield(AttackTemplate):
             damage_type=DamageType.Piercing,
             allows_shield=True,
             die=Die.d8,
+            reach=10,
             supports_secondary_damage_type=True,
         )
 
@@ -81,6 +82,7 @@ class _Polearm(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Slashing,
             die=Die.d10,
+            reach=10,
             supports_secondary_damage_type=True,
         )
 
@@ -114,6 +116,8 @@ class _Longbow(AttackTemplate):
             attack_type=AttackType.RangedWeapon,
             damage_type=DamageType.Piercing,
             die=Die.d8,
+            range=150,
+            range_max=600,
             supports_secondary_damage_type=True,
         )
 
@@ -125,6 +129,8 @@ class _Shortbow(AttackTemplate):
             attack_type=AttackType.RangedWeapon,
             damage_type=DamageType.Piercing,
             die=Die.d6,
+            range=80,
+            range_max=320,
             supports_secondary_damage_type=True,
         )
 
@@ -136,6 +142,9 @@ class _Crossbow(AttackTemplate):
             attack_type=AttackType.RangedWeapon,
             damage_type=DamageType.Piercing,
             supports_secondary_damage_type=True,
+            die=Die.d10,
+            range=100,
+            range_max=400,
         )
 
 

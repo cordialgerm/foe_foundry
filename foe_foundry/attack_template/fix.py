@@ -1,5 +1,6 @@
 from ..damage import Attack, AttackType, Damage, DamageType
 from ..die import Die, DieFormula
+from ..size import Size
 from ..statblocks.base import BaseStatblock
 
 
@@ -13,6 +14,11 @@ def adjust_attack(
     die: Die | None = None,
     adjust_to_hit: bool = False,
     adjust_average_damage: bool = False,
+    reach: int | None = None,
+    range: int | None = None,
+    range_max: int | None = None,
+    reach_bonus_for_huge: bool = False,
+    range_bonus_for_high_cr: bool = False,
 ) -> Attack:
     args: dict = {}
 
@@ -22,6 +28,25 @@ def adjust_attack(
     # update attack type
     if attack_type is not None:
         args.update(attack_type=attack_type)
+
+    if reach is None and reach_bonus_for_huge and stats.size >= Size.Huge:
+        reach = 10
+    elif reach is not None and reach_bonus_for_huge and stats.size >= Size.Huge:
+        reach += 5
+
+    if reach is not None:
+        args.update(reach=reach)
+
+    if range is None and range_bonus_for_high_cr and stats.cr >= 7:
+        range = 90
+    elif range is not None and range_bonus_for_high_cr and stats.cr >= 7:
+        range += 30
+
+    if range is not None:
+        args.update(range=range)
+
+    if range_max is not None:
+        args.update(range_max=range_max)
 
     # repair attack to-hit and damage formula
     if adjust_to_hit:

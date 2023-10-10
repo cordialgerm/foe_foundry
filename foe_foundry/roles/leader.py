@@ -26,7 +26,7 @@ def _as_leader(stats: BaseStatblock, dials: MonsterDials) -> BaseStatblock:
         new_attributes = new_attributes.grant_save_proficiency(Stats.INT, Stats.WIS)
 
     # leaders wear light or medium armor
-    stats = stats.add_ac_templates([LightArmor, MediumArmor], uses_shield=True)
+    stats = stats.add_ac_templates([LightArmor, MediumArmor])
 
     return stats.apply_monster_dials(dials).copy(
         role=MonsterRole.Leader,

@@ -9,6 +9,7 @@ class _Claw(AttackTemplate):
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Slashing,
             supports_secondary_damage_type=True,
+            reach_bonus_for_huge=True,
         )
 
 
@@ -48,6 +49,8 @@ class _Tail(AttackTemplate):
             attack_name="Tail",
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Bludgeoning,
+            reach=10,
+            reach_bonus_for_huge=True,
         )
 
 
@@ -68,6 +71,8 @@ class _Tentacle(AttackTemplate):
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Bludgeoning,
             supports_secondary_damage_type=True,
+            reach=10,
+            reach_bonus_for_huge=True,
         )
 
 
@@ -88,6 +93,7 @@ class _Spit(AttackTemplate):
             attack_type=AttackType.RangedNatural,
             damage_type=DamageType.Acid,
             supports_secondary_damage_type=True,
+            range_bonus_for_high_cr=True,
         )
 
 
@@ -98,6 +104,7 @@ class _Spines(AttackTemplate):
             attack_type=AttackType.RangedNatural,
             damage_type=DamageType.Piercing,
             supports_secondary_damage_type=True,
+            range_bonus_for_high_cr=True,
         )
 
 

@@ -2,13 +2,6 @@ from ..damage import AttackType, DamageType
 from ..die import Die
 from .template import AttackTemplate
 
-## Spell
-
-# Arcane Burst
-# Eldritch Blast
-# Gaze
-# Beam
-
 
 class _Gaze(AttackTemplate):
     def __init__(self):
@@ -17,6 +10,7 @@ class _Gaze(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Psychic,
             supports_secondary_damage_type=False,
+            range_bonus_for_high_cr=True,
         )
 
 
@@ -27,6 +21,7 @@ class _Beam(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Force,
             supports_secondary_damage_type=False,
+            range_bonus_for_high_cr=True,
         )
 
 
@@ -37,6 +32,7 @@ class _ArcaneBurst(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Force,
             supports_secondary_damage_type=False,
+            range_bonus_for_high_cr=True,
         )
 
 
@@ -48,6 +44,7 @@ class _EldritchBlast(AttackTemplate):
             damage_type=DamageType.Force,
             die=Die.d10,
             supports_secondary_damage_type=False,
+            range_bonus_for_high_cr=True,
         )
 
 
@@ -59,6 +56,7 @@ class _Firebolt(AttackTemplate):
             damage_type=DamageType.Fire,
             die=Die.d10,
             supports_secondary_damage_type=False,
+            range_bonus_for_high_cr=True,
         )
 
 
@@ -70,6 +68,7 @@ class _Frostbolt(AttackTemplate):
             damage_type=DamageType.Cold,
             die=Die.d8,
             supports_secondary_damage_type=False,
+            range_bonus_for_high_cr=True,
         )
 
 
@@ -81,6 +80,7 @@ class _Acidsplash(AttackTemplate):
             damage_type=DamageType.Acid,
             die=Die.d4,
             supports_secondary_damage_type=False,
+            range_bonus_for_high_cr=True,
         )
 
 
@@ -92,6 +92,7 @@ class _Poisonbolt(AttackTemplate):
             damage_type=DamageType.Poison,
             die=Die.d6,
             supports_secondary_damage_type=False,
+            range_bonus_for_high_cr=True,
         )
 
 
@@ -103,6 +104,7 @@ class _Shock(AttackTemplate):
             damage_type=DamageType.Lightning,
             die=Die.d6,
             supports_secondary_damage_type=False,
+            range_bonus_for_high_cr=True,
         )
 
 
@@ -114,6 +116,7 @@ class _Deathbolt(AttackTemplate):
             damage_type=DamageType.Necrotic,
             die=Die.d6,
             supports_secondary_damage_type=False,
+            range_bonus_for_high_cr=True,
         )
 
 
@@ -125,6 +128,7 @@ class _Holybolt(AttackTemplate):
             damage_type=DamageType.Radiant,
             die=Die.d6,
             supports_secondary_damage_type=False,
+            range_bonus_for_high_cr=True,
         )
 
 
@@ -136,6 +140,7 @@ class _Thundrousblast(AttackTemplate):
             damage_type=DamageType.Thunder,
             die=Die.d8,
             supports_secondary_damage_type=False,
+            range_bonus_for_high_cr=True,
         )
 
 

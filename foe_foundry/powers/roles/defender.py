@@ -71,8 +71,8 @@ class _StickWithMe(Power):
         if candidate.role == MonsterRole.Defender:
             score += HIGH_AFFINITY
 
-        if candidate.could_use_shield:
-            score += LOW_AFFINITY
+        if candidate.uses_shield:
+            score += MODERATE_AFFINITY
 
         if candidate.attributes.has_proficiency_or_expertise(Skills.Intimidation):
             score += LOW_AFFINITY

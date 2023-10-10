@@ -5,9 +5,6 @@ from ..die import Die
 from ..statblocks.base import BaseStatblock
 from .fix import adjust_attack
 
-# TODO - allow specifying a primary stat?
-# TODO - allow specifying a range and reach
-# TODO - presence of shield come from here, nowhere else
 # TODO - debilitating conditions should be based on attack templates so refactor all that
 
 
@@ -18,8 +15,13 @@ class AttackTemplate:
         attack_type: AttackType | None = None,
         damage_type: DamageType | None = None,
         die: Die | None = None,
-        allows_shield: bool | None = None,
+        allows_shield: bool = False,
         supports_secondary_damage_type: bool = False,
+        reach: int | None = None,
+        range: int | None = None,
+        range_max: int | None = None,
+        reach_bonus_for_huge: bool = False,
+        range_bonus_for_high_cr: bool = False,
     ):
         self.attack_name = attack_name
         self.attack_type = attack_type
@@ -27,29 +29,37 @@ class AttackTemplate:
         self.die = die
         self.allows_shield = allows_shield
         self.supports_secondary_damage_type = supports_secondary_damage_type
+        self.reach = reach
+        self.range = range
+        self.range_max = range_max
+        self.reach_bonus_for_huge = reach_bonus_for_huge
+        self.range_bonus_for_high_cr = range_bonus_for_high_cr
+
+    def attack_adjustment_args(self) -> dict:
+        return dict(
+            attack_name=self.attack_name,
+            attack_type=self.attack_type,
+            primary_damage_type=self.damage_type,
+            reach=self.reach,
+            die=self.die,
+            range=self.range,
+            range_max=self.range_max,
+            reach_bonus_for_huge=self.reach_bonus_for_huge,
+            range_bonus_for_high_cr=self.range_bonus_for_high_cr,
+        )
 
     def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
-        args: dict = {}
+        args: dict = dict(uses_shield=self.allows_shield)
         if self.attack_type is not None:
             args.update(attack_type=self.attack_type)
         if self.damage_type is not None:
             args.update(primary_damage_type=self.damage_type)
-        if self.allows_shield is not None:
-            args.update(uses_shield=self.allows_shield)
-
-        if len(args):
-            return stats.copy(**args)
-        else:
-            return stats
+        return stats.copy(**args)
 
     def initialize_attack(self, stats: BaseStatblock) -> BaseStatblock:
         # update the attack to help power selection
         primary_attack = adjust_attack(
-            stats=stats,
-            attack=stats.attack,
-            attack_name=self.attack_name,
-            attack_type=self.attack_type,
-            primary_damage_type=self.damage_type,
+            stats=stats, attack=stats.attack, **self.attack_adjustment_args()
         )
 
         return stats.copy(attack=primary_attack)
@@ -59,12 +69,9 @@ class AttackTemplate:
         primary_attack = adjust_attack(
             stats=stats,
             attack=stats.attack,
-            attack_name=self.attack_name,
-            attack_type=self.attack_type,
-            primary_damage_type=self.damage_type,
-            die=self.die,
             adjust_to_hit=True,
             adjust_average_damage=True,
+            **self.attack_adjustment_args()
         )
 
         # repair the to-hit and damage formulas of the secondary attacks

@@ -91,7 +91,7 @@ class _FiendTemplate(CreatureTypeTemplate):
             new_attributes = new_attributes.grant_save_proficiency(Stats.CHA, Stats.WIS)
 
         # fiends use unholy armor
-        stats = stats.add_ac_template(UnholyArmor, uses_shield=False)
+        stats = stats.add_ac_template(UnholyArmor)
 
         return stats.copy(
             creature_type=CreatureType.Fiend,
