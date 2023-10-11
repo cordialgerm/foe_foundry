@@ -25,10 +25,15 @@ from ..scores import (
 )
 
 
-def score_cruel(candidate: BaseStatblock, require_melee: bool = False) -> float:
+def score_cruel(
+    candidate: BaseStatblock, require_melee: bool = False, min_cr: float | None = None
+) -> float:
     # this power makes a lot of sense for cruel enemies
     # cruel factors: Fiend, Monstrosity, Intimidation proficiency, Intimidation expertise, high charisma, Ambusher, Bruiser, Leader
     if require_melee and not candidate.attack_type.is_melee():
+        return NO_AFFINITY
+
+    if min_cr and candidate.cr < min_cr:
         return NO_AFFINITY
 
     score = 0
@@ -51,7 +56,7 @@ class _DelightsInSuffering(Power):
         super().__init__(name="Delights in Suffering", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_cruel(candidate)
+        return score_cruel(candidate, min_cr=3)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -67,7 +72,7 @@ class _DelightsInSuffering(Power):
             stats = stats.copy(secondary_damage_type=DamageType.Poison)
 
         damage_type = stats.secondary_damage_type
-        dmg = DieFormula.target_value(0.5 * stats.cr, suggested_die=Die.d6)
+        dmg = DieFormula.target_value(1 + 0.5 * stats.cr, suggested_die=Die.d6)
         feature = Feature(
             name="Delights in Suffering",
             description=f"The attack is made at advantage and deals an additional {dmg.description} {damage_type} damage if the target is at or below half-health.",
@@ -83,7 +88,7 @@ class _Lethal(Power):
         super().__init__(name="Lethal", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_cruel(candidate, require_melee=True)
+        return score_cruel(candidate, require_melee=True, min_cr=7)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

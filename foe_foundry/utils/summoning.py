@@ -214,18 +214,22 @@ def determine_summon_formula(
         target_val = summon_cr_target / cr
         if target_val < 1.0:
             continue
-        if target_val > max_quantity:
-            target_val = max_quantity
-            weight = 0.5  # prefer not to use this option if we can
 
         if target_val <= 2:
+            # summoning 1 or 2 entities is ideal, so boost the weight
             quantity = int(round(target_val))
             formula = DieFormula.from_expression(str(quantity))
-            weight = 1
+            weight = 2
         else:
             # if there are 3 or more minions being summoned then use a d4 dice formula
+            # if there are going to be many summons, then prefer not to use that option
+            if target_val > max_quantity:
+                target_val = max_quantity
+                weight = 0.5
+            else:
+                weight = 1
+
             formula = DieFormula.target_value(target_val, force_die=Die.d4)
-            weight = 1
 
         formulas.append(formula)
         names.append(creature)

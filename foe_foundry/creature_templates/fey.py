@@ -38,11 +38,13 @@ class _FeyTemplate(CreatureTypeTemplate):
             if attack is None:
                 raise ValueError(f"Unable to create attack for {secondary_damage_type}")
             options = {attack: 1}
-        elif stats.role in {MonsterRole.Defender, MonsterRole.Leader}:
+        elif stats.role in {MonsterRole.Defender}:
             options = {
                 weapon.SpearAndShield: 1,
                 weapon.RapierAndShield: 1,
             }
+        elif stats.role in {MonsterRole.Leader}:
+            options = {weapon.Whip: 1, weapon.Staff: 1, weapon.RapierAndShield: 1}
         elif stats.role in {MonsterRole.Bruiser}:
             melee_stats = True
             options = {natural.Claw: 1, weapon.Greataxe: 1}

@@ -25,7 +25,7 @@ class _CelestialTemplate(CreatureTypeTemplate):
         options = {}
         offensive_melee = False
         if stats.role in {MonsterRole.Controller}:
-            options.update({spell.HolyBolt: 1})
+            options.update({spell.HolyBolt: 3, weapon.Whip: 1})
         elif stats.role in {MonsterRole.Artillery}:
             options.update({weapon.Longbow: 1, spell.HolyBolt: 1})
         elif stats.role in {MonsterRole.Bruiser}:
@@ -33,6 +33,8 @@ class _CelestialTemplate(CreatureTypeTemplate):
             options.update({weapon.Greatsword: 1})
         elif stats.role in {MonsterRole.Ambusher, MonsterRole.Skirmisher}:
             options.update({weapon.SpearAndShield: 1, weapon.Daggers: 0.5})
+        elif stats.role in {MonsterRole.Leader}:
+            options.update({weapon.Staff: 1, weapon.Greatsword: 1, weapon.SwordAndShield: 1})
         else:
             options.update(
                 {

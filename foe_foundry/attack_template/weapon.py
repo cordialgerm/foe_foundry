@@ -159,6 +159,31 @@ class _Traps(AttackTemplate):
         )
 
 
+class _Staff(AttackTemplate):
+    def __init__(self):
+        super().__init__(
+            attack_name="Staff",
+            attack_type=AttackType.MeleeWeapon,
+            damage_type=DamageType.Bludgeoning,
+            die=Die.d6,
+            supports_secondary_damage_type=True,
+        )
+
+
+class _Whip(AttackTemplate):
+    def __init__(self):
+        super().__init__(
+            attack_name="Whip",
+            attack_type=AttackType.RangedWeapon,
+            damage_type=DamageType.Slashing,
+            die=Die.d4,
+            range=15,
+            range_max=30,
+            range_bonus_for_high_cr=True,
+            supports_secondary_damage_type=True,
+        )
+
+
 Crossbow: AttackTemplate = _Crossbow()
 Daggers: AttackTemplate = _Daggers()
 Greatsword: AttackTemplate = _Greatsword()
@@ -171,4 +196,6 @@ RapierAndShield: AttackTemplate = _RapierAndShield()
 Shortbow: AttackTemplate = _Shortbow()
 SpearAndShield: AttackTemplate = _SpearAndShield()
 SwordAndShield: AttackTemplate = _SwordAndShield()
+Staff: AttackTemplate = _Staff()
 Traps: AttackTemplate = _Traps()
+Whip: AttackTemplate = _Whip()
