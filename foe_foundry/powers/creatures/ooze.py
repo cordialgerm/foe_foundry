@@ -4,17 +4,16 @@ from typing import List, Tuple
 import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
+from ...attack_template import natural
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -25,11 +24,13 @@ from ..scores import (
 )
 
 
-def score_ooze(candidate: BaseStatblock) -> float:
+def score_ooze(candidate: BaseStatblock, attack_modifiers: AttackModifiers = None) -> float:
     if candidate.creature_type != CreatureType.Ooze:
         return NO_AFFINITY
 
-    return HIGH_AFFINITY
+    score = HIGH_AFFINITY
+    score += resolve_attack_modifier(candidate, attack_modifiers)
+    return score if score > 0 else NO_AFFINITY
 
 
 def malleable_form(stats: BaseStatblock) -> Feature:
@@ -71,7 +72,7 @@ class _ElongatedLimbs(Power):
     def score(self, candidate: BaseStatblock) -> float:
         if not candidate.attack_type.is_melee():
             return NO_AFFINITY
-        return score_ooze(candidate)
+        return score_ooze(candidate, attack_modifiers=natural.Slam)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
