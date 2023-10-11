@@ -24,10 +24,10 @@ class _GiantTemplate(CreatureTypeTemplate):
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[AttackTemplate, BaseStatblock]:
         if stats.role in {MonsterRole.Ambusher, MonsterRole.Skirmisher}:
-            attack_options = {weapon.Staff: 1, weapon.Javelin: 1, natural.Lob: 1}
+            attack_options = {weapon.Staff: 1, weapon.JavelinAndShield: 1, natural.Lob: 1}
         elif stats.role in {MonsterRole.Artillery, MonsterRole.Controller}:
             attack_options = {
-                weapon.Javelin: 1,
+                weapon.JavelinAndShield: 1,
                 natural.Lob: 1,
                 spell.Firebolt: 1,
                 spell.Frostbolt: 1,

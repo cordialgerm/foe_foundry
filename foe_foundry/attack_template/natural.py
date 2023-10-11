@@ -9,7 +9,7 @@ class _Claw(AttackTemplate):
             attack_name="Claw",
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Slashing,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
             reach_bonus_for_huge=True,
         )
 
@@ -20,7 +20,7 @@ class _Bite(AttackTemplate):
             attack_name="Bite",
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Piercing,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -30,7 +30,7 @@ class _Horns(AttackTemplate):
             attack_name="Horns",
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Piercing,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -40,7 +40,7 @@ class _Stomp(AttackTemplate):
             attack_name="Stomp",
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Bludgeoning,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -61,7 +61,7 @@ class _Slam(AttackTemplate):
             attack_name="Slam",
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Bludgeoning,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -71,7 +71,7 @@ class _Tentacle(AttackTemplate):
             attack_name="Tentacle",
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Bludgeoning,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
             reach=10,
             reach_bonus_for_huge=True,
         )
@@ -83,7 +83,8 @@ class _Stinger(AttackTemplate):
             attack_name="Stinger",
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Piercing,
-            supports_secondary_damage_type=True,
+            secondary_damage_type=DamageType.Poison,
+            split_secondary_damage=True,
         )
 
 
@@ -93,7 +94,8 @@ class _Spit(AttackTemplate):
             attack_name="Spit",
             attack_type=AttackType.RangedNatural,
             damage_type=DamageType.Acid,
-            supports_secondary_damage_type=True,
+            secondary_damage_type=DamageType.Acid,
+            split_secondary_damage=True,
             range_bonus_for_high_cr=True,
         )
 
@@ -104,7 +106,7 @@ class _Spines(AttackTemplate):
             attack_name="Spines",
             attack_type=AttackType.RangedNatural,
             damage_type=DamageType.Piercing,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
             range_bonus_for_high_cr=True,
         )
 
@@ -119,7 +121,7 @@ class _Lob(AttackTemplate):
             range=60,
             range_max=240,
             range_bonus_for_high_cr=True,
-            supports_secondary_damage_type=False,
+            split_secondary_damage=False,
         )
 
 

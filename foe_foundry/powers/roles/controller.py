@@ -27,7 +27,7 @@ class _DebilitatingAttack(Power):
         super().__init__(name="Debilitating Attacks", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if len(flavorful_damage_types(candidate)) == 0:
+        if len(flavorful_debilitating_conditions(candidate)) == 0:
             return NO_AFFINITY
 
         score = MODERATE_AFFINITY

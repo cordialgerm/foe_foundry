@@ -14,9 +14,10 @@ class AttackTemplate:
         attack_name: str,
         attack_type: AttackType | None = None,
         damage_type: DamageType | None = None,
+        secondary_damage_type: DamageType | None = None,
         die: Die | None = None,
         allows_shield: bool = False,
-        supports_secondary_damage_type: bool = False,
+        split_secondary_damage: bool = False,
         reach: int | None = None,
         range: int | None = None,
         range_max: int | None = None,
@@ -26,9 +27,10 @@ class AttackTemplate:
         self.attack_name = attack_name
         self.attack_type = attack_type
         self.damage_type = damage_type
+        self.secondary_damage_type = secondary_damage_type
         self.die = die
         self.allows_shield = allows_shield
-        self.supports_secondary_damage_type = supports_secondary_damage_type
+        self.split_secondary_damage = split_secondary_damage
         self.reach = reach
         self.range = range
         self.range_max = range_max
@@ -54,6 +56,8 @@ class AttackTemplate:
             args.update(attack_type=self.attack_type)
         if self.damage_type is not None:
             args.update(primary_damage_type=self.damage_type)
+        if self.secondary_damage_type is not None:
+            args.update(secondary_damage_type=self.secondary_damage_type)
         return stats.copy(**args)
 
     def initialize_attack(self, stats: BaseStatblock) -> BaseStatblock:
@@ -80,7 +84,11 @@ class AttackTemplate:
         ]
 
         # split damage type on the primary attack
-        if self.supports_secondary_damage_type and stats.secondary_damage_type is not None:
+        if (
+            self.split_secondary_damage
+            and stats.secondary_damage_type is not None
+            and stats.primary_damage_type != stats.secondary_damage_type
+        ):
             primary_attack = primary_attack.split_damage(stats.secondary_damage_type)
 
         return stats.copy(attack=primary_attack, additional_attacks=additional_attacks)

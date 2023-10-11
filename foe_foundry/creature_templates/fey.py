@@ -26,7 +26,7 @@ class _FeyTemplate(CreatureTypeTemplate):
         options = {}
 
         melee_stats = False
-        secondar_damage_type = None
+        secondary_damage_type = None
         if stats.role in {MonsterRole.Ambusher, MonsterRole.Skirmisher}:
             options = {weapon.Shortbow: 1, weapon.Longbow: 1}
             secondary_damage_type = DamageType.Poison
@@ -69,8 +69,8 @@ class _FeyTemplate(CreatureTypeTemplate):
                 }
             )
 
-        if secondar_damage_type:
-            stats = stats.copy(secondar_damage_type=secondar_damage_type)
+        if secondary_damage_type:
+            stats = stats.copy(secondary_damage_type=secondary_damage_type)
 
         return choice, stats
 

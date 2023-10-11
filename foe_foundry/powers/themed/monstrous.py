@@ -4,11 +4,10 @@ from typing import Dict, List, Set, Tuple
 import numpy as np
 from numpy.random import Generator
 
-from ...attack_template import natural as natural_attacks
-from ...attack_template import spell as spell_attacks
+from ...attack_template import natural, spell
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, Dazed, Swallowed
+from ...damage import AttackType, Bleeding, DamageType, Dazed, Swallowed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
@@ -16,6 +15,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -31,7 +31,7 @@ def _score_could_be_monstrous(
     min_size: Size | None = None,
     additional_creature_types: Dict[CreatureType, float] | None = None,
     require_living: bool = True,
-    attack_adjustments: Dict[str, float] | None = None,
+    attack_modifiers: AttackModifiers = None,
 ) -> float:
     if require_living and not candidate.creature_type.is_living:
         return 0
@@ -49,15 +49,7 @@ def _score_could_be_monstrous(
         creature_types.update(additional_creature_types)
 
     score += creature_types.get(candidate.creature_type, 0)
-
-    default_attack_adjustment = attack_adjustments.get("*", 0) if attack_adjustments else 0
-    attack_adjustment = (
-        attack_adjustments.get(candidate.attack.name, default_attack_adjustment)
-        if attack_adjustments
-        else 0
-    )
-
-    score += attack_adjustment
+    score += resolve_attack_modifier(candidate, attack_modifiers)
 
     return score
 
@@ -82,7 +74,7 @@ class _Constriction(Power):
         super().__init__(name="Constriction", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return _score(candidate, attack_modifiers=[natural.Slam, natural.Tail])
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats)
@@ -109,9 +101,9 @@ class _Swallow(Power):
             candidate,
             min_size=Size.Large,
             additional_creature_types={CreatureType.Ooze: HIGH_AFFINITY},
-            attack_adjustments={
+            attack_modifiers={
                 "*": -1 * MODERATE_AFFINITY,
-                natural_attacks.Bite.attack_name: EXTRA_HIGH_AFFINITY,
+                natural.Bite: EXTRA_HIGH_AFFINITY,
             },
         )
 
@@ -169,9 +161,9 @@ class _Corrosive(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return _score_could_be_monstrous(
             candidate,
-            attack_adjustments={
+            attack_modifiers={
                 "*": -1 * HIGH_AFFINITY,
-                natural_attacks.Spit.attack_name: EXTRA_HIGH_AFFINITY,
+                natural.Spit: EXTRA_HIGH_AFFINITY,
             },
         )
 
@@ -219,24 +211,20 @@ class _LingeringWound(Power):
         super().__init__(name="Lingering Wound", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return _score(candidate, attack_modifiers=[natural.Bite, natural.Claw, natural.Horns])
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats)
-        if stats.primary_damage_type.is_physical:
-            stats = stats.copy(primary_damage_type=DamageType.Piercing)
 
         dc = max(10, min(15, stats.difficulty_class_easy))
-        dmg = int(floor(0.75 * stats.attack.average_damage))
-        dmg_type = stats.attack.damage.damage_type
+        dmg = DieFormula.target_value(0.75 * stats.attack.average_damage, force_die=Die.d6)
+        bleeding = Bleeding(damage=dmg, dc=dc)
         feature = Feature(
             name="Lingering Wound",
             action=ActionType.BonusAction,
             recharge=6,
             description=f"Immediately after hitting a creature, {stats.selfref} inflicts that creature with a lingering wound. \
-                The wounded creature takes {dmg} ongoing {dmg_type} damage at the end of each of its turns. \
-                The target may attempt a DC {dc} Constitution save at the end of each of its turns to end the effect. \
-                A creature may also use an action to perform a DC {dc} Medicine check to end the lingering wound.",
+                The creature gains {bleeding}",
         )
         return stats, feature
 
@@ -276,7 +264,7 @@ class _PetrifyingGaze(Power):
         if candidate.role in {MonsterRole.Ambusher, MonsterRole.Controller}:
             score += MODERATE_AFFINITY
 
-        if candidate.attack.name == spell_attacks.Gaze.attack_name:
+        if candidate.attack.name == spell.Gaze.attack_name:
             score += HIGH_AFFINITY
 
         return score if score > 0 else NO_AFFINITY

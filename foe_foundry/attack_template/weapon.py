@@ -11,7 +11,7 @@ class _SwordAndShield(AttackTemplate):
             damage_type=DamageType.Slashing,
             allows_shield=True,
             die=Die.d8,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -24,7 +24,7 @@ class _SpearAndShield(AttackTemplate):
             allows_shield=True,
             die=Die.d8,
             reach=10,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -36,7 +36,7 @@ class _MaceAndShield(AttackTemplate):
             damage_type=DamageType.Bludgeoning,
             allows_shield=True,
             die=Die.d8,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -48,7 +48,7 @@ class _RapierAndShield(AttackTemplate):
             damage_type=DamageType.Piercing,
             allows_shield=True,
             die=Die.d8,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -60,7 +60,7 @@ class _Maul(AttackTemplate):
             damage_type=DamageType.Bludgeoning,
             allows_shield=True,
             die=Die.d12,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -71,7 +71,7 @@ class _Greatsword(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Slashing,
             die=Die.d6,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -83,7 +83,7 @@ class _Polearm(AttackTemplate):
             damage_type=DamageType.Slashing,
             die=Die.d10,
             reach=10,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -94,7 +94,7 @@ class _Greataxe(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Slashing,
             die=Die.d12,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -105,7 +105,7 @@ class _Daggers(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Piercing,
             die=Die.d4,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -118,7 +118,7 @@ class _Longbow(AttackTemplate):
             die=Die.d8,
             range=150,
             range_max=600,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -131,7 +131,7 @@ class _Shortbow(AttackTemplate):
             die=Die.d6,
             range=80,
             range_max=320,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -141,7 +141,7 @@ class _Crossbow(AttackTemplate):
             attack_name="Crossbow",
             attack_type=AttackType.RangedWeapon,
             damage_type=DamageType.Piercing,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
             die=Die.d10,
             range=100,
             range_max=400,
@@ -155,7 +155,7 @@ class _Traps(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Piercing,
             die=Die.d4,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -166,7 +166,7 @@ class _Staff(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Bludgeoning,
             die=Die.d6,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
@@ -180,11 +180,11 @@ class _Whip(AttackTemplate):
             range=15,
             range_max=30,
             range_bonus_for_high_cr=True,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
         )
 
 
-class _Javelin(AttackTemplate):
+class _JavelinAndShield(AttackTemplate):
     def __init__(self):
         super().__init__(
             attack_name="Javelin",
@@ -194,7 +194,8 @@ class _Javelin(AttackTemplate):
             range=30,
             range_max=120,
             range_bonus_for_high_cr=True,
-            supports_secondary_damage_type=True,
+            split_secondary_damage=True,
+            allows_shield=True,
         )
 
 
@@ -202,7 +203,7 @@ Crossbow: AttackTemplate = _Crossbow()
 Daggers: AttackTemplate = _Daggers()
 Greatsword: AttackTemplate = _Greatsword()
 Greataxe: AttackTemplate = _Greataxe()
-Javelin: AttackTemplate = _Javelin()
+JavelinAndShield: AttackTemplate = _JavelinAndShield()
 Longbow: AttackTemplate = _Longbow()
 MaceAndShield: AttackTemplate = _MaceAndShield()
 Maul: AttackTemplate = _Maul()

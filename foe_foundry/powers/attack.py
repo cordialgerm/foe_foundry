@@ -140,7 +140,7 @@ def flavorful_debilitating_conditions(
     if candidate.size >= Size.Huge and candidate.primary_attribute == Stats.STR:
         options.add(Condition.Prone)
 
-    if len(options) == 0 and default is None:
+    if len(options) == 0 and default is not None:
         options.add(default)
 
     return options

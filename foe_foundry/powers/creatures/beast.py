@@ -12,6 +12,7 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import summoning
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -25,7 +26,7 @@ from ..scores import (
 def _score_beast(
     candidate: BaseStatblock,
     primary_attribute: Stats | None = None,
-    attack_adjustments: Dict[str, float] | None = None,
+    attack_modifiers: AttackModifiers = None,
 ) -> float:
     if candidate.creature_type != CreatureType.Beast:
         return NO_AFFINITY
@@ -35,15 +36,7 @@ def _score_beast(
     if primary_attribute is not None and candidate.primary_attribute == primary_attribute:
         score += MODERATE_AFFINITY
 
-    default_adjustment = attack_adjustments.get("*", 0) if attack_adjustments is not None else 0
-    attack_adjustment = (
-        attack_adjustments.get(candidate.attack.name, default_adjustment)
-        if attack_adjustments is not None
-        else 0
-    )
-
-    score += attack_adjustment
-
+    score += resolve_attack_modifier(candidate, attack_modifiers)
     return score if score > 0 else NO_AFFINITY
 
 
@@ -95,8 +88,7 @@ class _Gore(Power):
         super().__init__(name="Gore", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        attacks = {natural_attacks.Horns.attack_name: EXTRA_HIGH_AFFINITY}
-        return _score_beast(candidate, Stats.STR, attacks)
+        return _score_beast(candidate, Stats.STR, attack_modifiers=natural_attacks.Horns)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -127,9 +119,9 @@ class _Web(Power):
     def score(self, candidate: BaseStatblock) -> float:
         attacks = {
             "*": NO_AFFINITY,
-            natural_attacks.Bite.attack_name: HIGH_AFFINITY,
-            natural_attacks.Claw.attack_name: HIGH_AFFINITY,
-            natural_attacks.Stinger.attack_name: HIGH_AFFINITY,
+            natural_attacks.Bite: HIGH_AFFINITY,
+            natural_attacks.Claw: HIGH_AFFINITY,
+            natural_attacks.Stinger: HIGH_AFFINITY,
         }
         return _score_beast(candidate, Stats.STR, attacks)
 

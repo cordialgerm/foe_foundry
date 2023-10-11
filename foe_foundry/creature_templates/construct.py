@@ -51,15 +51,6 @@ class _ConstructTemplate(CreatureTypeTemplate):
         weights = np.array(weights) / np.sum(weights)
         indx = rng.choice(len(choices), p=weights)
         choice = choices[indx]
-
-        # Constructs often have an elemental damage type associated with them
-        secondary_damage_type = (
-            choice.damage_type
-            if choice.attack_type is not None and choice.attack_type.is_spell()
-            else None
-        )
-
-        stats = stats.copy(secondary_damage_type=secondary_damage_type)
         return choice, stats
 
     def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
