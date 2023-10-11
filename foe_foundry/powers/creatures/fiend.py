@@ -16,6 +16,7 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -29,7 +30,7 @@ from ..scores import (
 def score_fiend(
     candidate: BaseStatblock,
     min_cr: float | None = None,
-    attack_modifiers: Dict[str, float] | None = None,
+    attack_modifiers: AttackModifiers = None,
 ) -> float:
     if candidate.creature_type != CreatureType.Fiend:
         return NO_AFFINITY
@@ -37,15 +38,7 @@ def score_fiend(
         return NO_AFFINITY
 
     score = HIGH_AFFINITY
-
-    default_attack_modifier = attack_modifiers.get("*", 0) if attack_modifiers else 0
-    attack_modifier = (
-        attack_modifiers.get(candidate.attack.name, default_attack_modifier)
-        if attack_modifiers
-        else default_attack_modifier
-    )
-
-    score += attack_modifier
+    score += resolve_attack_modifier(candidate, attack_modifiers)
     return score
 
 
@@ -158,9 +151,7 @@ class _FiendishBite(Power):
         super().__init__(name="Fiendish Bite", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(
-            candidate, attack_modifiers={natural_attacks.Bite.attack_name: HIGH_AFFINITY}
-        )
+        return score_fiend(candidate, attack_modifiers=natural_attacks.Bite)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

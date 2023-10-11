@@ -13,6 +13,7 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -29,7 +30,7 @@ def _score_could_be_melee_fighter(
     requires_training: bool,
     large_size_boost: bool = False,
     requires_weapon: bool = False,
-    attack_modifiers: Dict[str, float] | None = None,
+    attack_modifiers: AttackModifiers = None,
 ) -> float:
     if not candidate.attack_type.is_melee():
         return 0
@@ -54,16 +55,7 @@ def _score_could_be_melee_fighter(
     if large_size_boost and candidate.size >= Size.Large:
         score += MODERATE_AFFINITY
 
-    default_attack_modifier = (
-        attack_modifiers.get("*", 0) if attack_modifiers is not None else 0
-    )
-    attack_modifier = (
-        attack_modifiers.get(candidate.attack.name, default_attack_modifier)
-        if attack_modifiers is not None
-        else default_attack_modifier
-    )
-
-    score += attack_modifier
+    score += resolve_attack_modifier(candidate, attack_modifiers)
 
     return score
 
@@ -179,10 +171,10 @@ class _CleavingStrike(Power):
             requires_training=False,
             large_size_boost=True,
             attack_modifiers={
-                natural.Claw.attack_name: HIGH_AFFINITY,
-                weapon.Greataxe.attack_name: HIGH_AFFINITY,
-                weapon.Greatsword.attack_name: MODERATE_AFFINITY,
-                weapon.Maul.attack_name: MODERATE_AFFINITY,
+                natural.Claw: HIGH_AFFINITY,
+                weapon.Greataxe: HIGH_AFFINITY,
+                weapon.Greatsword: MODERATE_AFFINITY,
+                weapon.Maul: MODERATE_AFFINITY,
             },
         )
         return score if score > 0 else NO_AFFINITY
@@ -297,10 +289,10 @@ class _PommelStrike(Power):
             candidate,
             requires_training=True,
             requires_weapon=True,
-            attack_modifiers={
-                weapon.SwordAndShield.attack_name: HIGH_AFFINITY,
-                weapon.SpearAndShield.attack_name: HIGH_AFFINITY,
-            },
+            attack_modifiers=[
+                weapon.SwordAndShield,
+                weapon.SpearAndShield,
+            ],
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, None]:
@@ -334,9 +326,9 @@ class _PushingAttack(Power):
             large_size_boost=True,
             attack_modifiers={
                 "*": -1 * HIGH_AFFINITY,
-                weapon.Maul.attack_name: HIGH_AFFINITY,
-                natural.Claw.attack_name: HIGH_AFFINITY,
-                natural.Slam.attack_name: HIGH_AFFINITY,
+                weapon.Maul: HIGH_AFFINITY,
+                natural.Claw: HIGH_AFFINITY,
+                natural.Slam: HIGH_AFFINITY,
             },
         )
 

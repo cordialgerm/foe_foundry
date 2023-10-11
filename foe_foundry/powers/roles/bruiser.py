@@ -15,6 +15,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -28,7 +29,7 @@ from ..scores import (
 def _score_bruiser(
     candidate: BaseStatblock,
     size_boost: bool = False,
-    attack_modifiers: Dict[str, float] | None = None,
+    attack_modifiers: AttackModifiers = None,
 ) -> float:
     score = 0
 
@@ -38,15 +39,7 @@ def _score_bruiser(
     if size_boost and candidate.size >= Size.Large:
         score += MODERATE_AFFINITY
 
-    default_attack_modifier = attack_modifiers.get("*", 0) if attack_modifiers else 0
-    attack_modifier = (
-        attack_modifiers.get(candidate.attack.name, default_attack_modifier)
-        if attack_modifiers
-        else default_attack_modifier
-    )
-
-    score += attack_modifier
-
+    score += resolve_attack_modifier(candidate, attack_modifiers)
     return score
 
 
@@ -58,10 +51,10 @@ class _Sentinel(Power):
         return _score_bruiser(
             candidate,
             size_boost=True,
-            attack_modifiers={
-                weapon.Polearm.attack_name: HIGH_AFFINITY,
-                weapon.SpearAndShield.attack_name: HIGH_AFFINITY,
-            },
+            attack_modifiers=[
+                weapon.Polearm,
+                weapon.SpearAndShield,
+            ],
         )
 
     def apply(
@@ -84,7 +77,7 @@ class _Grappler(Power):
         return _score_bruiser(
             candidate,
             attack_modifiers={
-                natural_attacks.Slam.attack_name: EXTRA_HIGH_AFFINITY,
+                natural_attacks.Slam: EXTRA_HIGH_AFFINITY,
                 "*": NO_AFFINITY,
             },
         )
@@ -120,8 +113,8 @@ class _Cleaver(Power):
         return _score_bruiser(
             candidate,
             attack_modifiers={
-                weapon.Greataxe.attack_name: EXTRA_HIGH_AFFINITY,
-                natural_attacks.Claw.attack_name: HIGH_AFFINITY,
+                weapon.Greataxe: EXTRA_HIGH_AFFINITY,
+                natural_attacks.Claw: HIGH_AFFINITY,
             },
         )
 
@@ -148,9 +141,9 @@ class _Basher(Power):
         return _score_bruiser(
             candidate,
             attack_modifiers={
-                weapon.Maul.attack_name: EXTRA_HIGH_AFFINITY,
-                weapon.MaceAndShield.attack_name: HIGH_AFFINITY,
-                natural_attacks.Slam.attack_name: HIGH_AFFINITY,
+                weapon.Maul: EXTRA_HIGH_AFFINITY,
+                weapon.MaceAndShield: HIGH_AFFINITY,
+                natural_attacks.Slam: HIGH_AFFINITY,
             },
         )
 
@@ -179,9 +172,9 @@ class _Disembowler(Power):
         return _score_bruiser(
             candidate,
             attack_modifiers={
-                natural_attacks.Bite.attack_name: HIGH_AFFINITY,
-                natural_attacks.Horns.attack_name: MODERATE_AFFINITY,
-                weapon.Daggers.attack_name: HIGH_AFFINITY,
+                natural_attacks.Bite: HIGH_AFFINITY,
+                natural_attacks.Horns: MODERATE_AFFINITY,
+                weapon.Daggers: HIGH_AFFINITY,
             },
         )
 

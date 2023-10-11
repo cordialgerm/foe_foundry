@@ -11,6 +11,7 @@ from ...features import ActionType, Feature
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -24,7 +25,7 @@ from ..scores import (
 def _score_aberration(
     candidate: BaseStatblock,
     min_size: Size | None = None,
-    attack_modifiers: Dict[str, float] | None = None,
+    attack_modifiers: AttackModifiers = None,
 ) -> float:
     if candidate.creature_type != CreatureType.Aberration:
         return NO_AFFINITY
@@ -33,15 +34,7 @@ def _score_aberration(
         return NO_AFFINITY
 
     score = HIGH_AFFINITY
-
-    default_attack_modifier = attack_modifiers.get("*", 0) if attack_modifiers else 0
-    attack_modifier = (
-        attack_modifiers.get(candidate.attack.name, default_attack_modifier)
-        if attack_modifiers
-        else 0
-    )
-
-    score += attack_modifier
+    score += resolve_attack_modifier(candidate, attack_modifiers)
     return score if score > 0 else NO_AFFINITY
 
 
@@ -57,7 +50,7 @@ class _GraspingTentacles(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return _score_aberration(
             candidate,
-            attack_modifiers={natural.Tentacle.attack_name: HIGH_AFFINITY, "*": NO_AFFINITY},
+            attack_modifiers={natural.Tentacle: HIGH_AFFINITY, "*": NO_AFFINITY},
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
@@ -77,9 +70,7 @@ class _DominatingGaze(Power):
         super().__init__(name="Dominating Gaze", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_aberration(
-            candidate, attack_modifiers={spell.Gaze.attack_name: HIGH_AFFINITY}
-        )
+        return _score_aberration(candidate, attack_modifiers=spell.Gaze)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
@@ -123,7 +114,7 @@ class _TentacleSlam(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return _score_aberration(
             candidate,
-            attack_modifiers={"*": NO_AFFINITY, natural.Tentacle.attack_name: HIGH_AFFINITY},
+            attack_modifiers={"*": NO_AFFINITY, natural.Tentacle: HIGH_AFFINITY},
         )
 
     def apply(
@@ -153,7 +144,7 @@ class _AntimagicGullet(Power):
             min_size=Size.Large,
             attack_modifiers={
                 "*": -1 * MODERATE_AFFINITY,
-                natural.Bite.attack_name: EXTRA_HIGH_AFFINITY,
+                natural.Bite: EXTRA_HIGH_AFFINITY,
             },
         )
 

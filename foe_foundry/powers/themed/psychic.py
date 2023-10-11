@@ -17,6 +17,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -31,7 +32,7 @@ def _score_is_psychic(
     candidate: BaseStatblock,
     require_aberration: bool = False,
     min_cr: float | None = None,
-    attack_modifiers: Dict[str, float] | None = None,
+    attack_modifiers: AttackModifiers = None,
 ) -> float:
     # this is great for aberrations, psychic focused creatures, and controllers
     score = 0
@@ -49,15 +50,7 @@ def _score_is_psychic(
     if candidate.role == MonsterRole.Controller:
         score += MODERATE_AFFINITY
 
-    default_attack_modifier = attack_modifiers.get("*", 0) if attack_modifiers else 0
-    attack_modifier = (
-        attack_modifiers.get(candidate.attack.name, default_attack_modifier)
-        if attack_modifiers
-        else 0
-    )
-
-    score += attack_modifier
-
+    score += resolve_attack_modifier(candidate, attack_modifiers)
     return score if score > 0 else NO_AFFINITY
 
 
@@ -225,7 +218,7 @@ class _ExtractBrain(Power):
             min_cr=7,
             attack_modifiers={
                 "*": NO_AFFINITY,
-                natural_attacks.Tentacle.attack_name: HIGH_AFFINITY,
+                natural_attacks.Tentacle: HIGH_AFFINITY,
             },
         )
 

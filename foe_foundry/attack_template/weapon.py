@@ -184,10 +184,25 @@ class _Whip(AttackTemplate):
         )
 
 
+class _Javelin(AttackTemplate):
+    def __init__(self):
+        super().__init__(
+            attack_name="Javelin",
+            attack_type=AttackType.RangedWeapon,
+            damage_type=DamageType.Piercing,
+            die=Die.d6,
+            range=30,
+            range_max=120,
+            range_bonus_for_high_cr=True,
+            supports_secondary_damage_type=True,
+        )
+
+
 Crossbow: AttackTemplate = _Crossbow()
 Daggers: AttackTemplate = _Daggers()
 Greatsword: AttackTemplate = _Greatsword()
 Greataxe: AttackTemplate = _Greataxe()
+Javelin: AttackTemplate = _Javelin()
 Longbow: AttackTemplate = _Longbow()
 MaceAndShield: AttackTemplate = _MaceAndShield()
 Maul: AttackTemplate = _Maul()

@@ -1,4 +1,5 @@
 from ..damage import AttackType, DamageType
+from ..die import Die
 from .template import AttackTemplate
 
 
@@ -108,12 +109,27 @@ class _Spines(AttackTemplate):
         )
 
 
+class _Lob(AttackTemplate):
+    def __init__(self):
+        super().__init__(
+            attack_name="Lob",
+            attack_type=AttackType.RangedWeapon,
+            damage_type=DamageType.Bludgeoning,
+            die=Die.d10,
+            range=60,
+            range_max=240,
+            range_bonus_for_high_cr=True,
+            supports_secondary_damage_type=False,
+        )
+
+
 Claw: AttackTemplate = _Claw()
 Bite: AttackTemplate = _Bite()
 Horns: AttackTemplate = _Horns()
 Stomp: AttackTemplate = _Stomp()
 Slam: AttackTemplate = _Slam()
 Tail: AttackTemplate = _Tail()
+Lob: AttackTemplate = _Lob()
 Spit: AttackTemplate = _Spit()
 Spines: AttackTemplate = _Spines()
 Stinger: AttackTemplate = _Stinger()

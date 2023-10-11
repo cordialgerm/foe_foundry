@@ -16,6 +16,7 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -30,7 +31,7 @@ from ..themed.breath import BreathAttack
 def _score_dragon(
     candidate: BaseStatblock,
     high_cr_boost: bool = False,
-    attack_modifiers: Dict[str, float] | None = None,
+    attack_modifiers: AttackModifiers = None,
     require_secondary_damage_type: bool = False,
 ) -> float:
     if candidate.creature_type != CreatureType.Dragon:
@@ -44,14 +45,7 @@ def _score_dragon(
     if high_cr_boost:
         score += MODERATE_AFFINITY
 
-    default_attack_modifier = attack_modifiers.get("*", 0) if attack_modifiers else 0
-    attack_modifier = (
-        attack_modifiers.get(candidate.attack.name, default_attack_modifier)
-        if attack_modifiers
-        else default_attack_modifier
-    )
-
-    score += attack_modifier
+    score += resolve_attack_modifier(candidate, attack_modifiers)
 
     return score
 
@@ -116,9 +110,7 @@ class _TailSwipe(Power):
         super().__init__(name="Tail Swipe", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(
-            candidate, attack_modifiers={natural_attacks.Tail.attack_name: HIGH_AFFINITY}
-        )
+        return _score_dragon(candidate, attack_modifiers=natural_attacks.Tail)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         tail_attack = stats.attack.scale(

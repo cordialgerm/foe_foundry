@@ -17,6 +17,7 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -27,20 +28,12 @@ from ..scores import (
 )
 
 
-def _score(candidate: BaseStatblock, attack_modifiers: Dict[str, float] | None = None) -> float:
+def _score(candidate: BaseStatblock, attack_modifiers: AttackModifiers = None) -> float:
     if candidate.creature_type != CreatureType.Construct:
         return NO_AFFINITY
 
     score = HIGH_AFFINITY
-
-    default_attack_modifier = attack_modifiers.get("*", 0) if attack_modifiers else 0
-    attack_modifier = (
-        attack_modifiers.get(candidate.attack.name, default_attack_modifier)
-        if attack_modifiers
-        else default_attack_modifier
-    )
-
-    score += attack_modifier
+    score += resolve_attack_modifier(candidate, attack_modifiers)
 
     return score if score > 0 else NO_AFFINITY
 
@@ -155,7 +148,7 @@ class _Smother(Power):
         return _score(
             candidate,
             attack_modifiers={
-                natural_attacks.Slam.attack_name: HIGH_AFFINITY,
+                natural_attacks.Slam: HIGH_AFFINITY,
                 "*": -1 * MODERATE_AFFINITY,
             },
         )
