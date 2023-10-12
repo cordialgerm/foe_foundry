@@ -10,7 +10,7 @@ from foe_foundry.statblocks import BaseStatblock
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
@@ -30,6 +30,20 @@ def score_fey(candidate: BaseStatblock) -> float:
         return NO_AFFINITY
 
     return HIGH_AFFINITY
+
+
+def as_psychic_fey(stats: BaseStatblock) -> BaseStatblock:
+    if stats.secondary_damage_type is None:
+        stats = stats.copy(secondary_damage_type=DamageType.Psychic)
+
+    return stats
+
+
+def as_cursed_fey(stats: BaseStatblock) -> BaseStatblock:
+    if stats.secondary_damage_type is None:
+        stats = stats.copy(secondary_damage_type=DamageType.Necrotic)
+
+    return stats
 
 
 class _TeleportingStep(Power):
@@ -61,12 +75,13 @@ class _BeguilingAura(Power):
     def apply(
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
+        stats = as_psychic_fey(stats)
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Beguiling Aura",
             action=ActionType.Feature,
             description=f"An enemy of {stats.selfref} who moves within 25 of them for the first time on their turn \
-                or starts their turn there must succeed on a DC {dc} Wisdom saving throw or be charmed by {stats.selfref} until the end of their turn.",
+                or starts their turn there must succeed on a DC {dc} Wisdom saving throw or be **Charmed** by {stats.selfref} until the end of their turn.",
         )
         return stats, feature
 
@@ -79,8 +94,11 @@ class _NegotiateLife(Power):
         return score_fey(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = as_cursed_fey(stats)
         dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, suggested_die=Die.d8)
-        healing = easy_multiple_of_five(1.75 * stats.attack.average_damage)
+        healing = easy_multiple_of_five(
+            1.75 * stats.attack.average_damage, min_val=5, max_val=45
+        )
         dc = stats.difficulty_class
 
         feature = Feature(
@@ -89,7 +107,7 @@ class _NegotiateLife(Power):
             recharge=5,
             description=f"{stats.selfref.capitalize()} enacts a magical bargain, siphoning energy from its opponents to heal its wounds. {stats.selfref.capitalize()} targets up to three creatures it can see within 60 feet of itself. \
                 Each target must make a DC {dc} Constitution saving throw, taking {dmg.description} necrotic damage on a failed save, or half as much damage on a successful one. \
-                The high fae then regains {healing} hit points.",
+                {stats.selfref.capitalize()} then regains {healing} hit points.",
         )
         return stats, feature
 
@@ -102,13 +120,16 @@ class _FaeCounterspell(Power):
         return score_fey(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = as_psychic_fey(stats)
         dmg = DieFormula.target_value(0.75 * stats.attack.average_damage, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Fae Counterspell",
             action=ActionType.Reaction,
-            description=f"{stats.selfref.capitalize()} interrupts a creature it can see that is casting a spell with verbal, somatic, or material components. \
-                The caster takes {dmg.description} psychic damage and must make a DC {dc} Charisma saving throw. On a failed save, the spell fails and has no effect, but the spell slot used to cast it is not expended.",
+            description=f"{stats.selfref.capitalize()} attempts to interrupt a creature it can see within 60 feet \
+                that is casting a spell with verbal, somatic, or material components. \
+                The caster takes {dmg.description} psychic damage and must make a DC {dc} Charisma saving throw. \
+                On a failed save, the spell fails and has no effect, but the casting creature is immune to this effect for 24 hours.",
         )
         return stats, feature
 
@@ -146,6 +167,8 @@ class _FaeBargain(Power):
         return score_fey(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        stats = as_psychic_fey(stats)
+
         uncommon = 10
         rare = 20
         very_rare = 40

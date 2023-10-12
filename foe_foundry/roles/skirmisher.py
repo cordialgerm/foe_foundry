@@ -23,8 +23,8 @@ def _as_skirmisher(stats: BaseStatblock, dials: MonsterDials) -> BaseStatblock:
             Stats.DEX
         ).grant_proficiency_or_expertise(Skills.Acrobatics)
 
-    # skirmishers wear light armor but usually not the best quality
-    stats = stats.add_ac_template(LightArmor, uses_shield=True)
+    # skirmishers wear light armor
+    stats = stats.add_ac_template(LightArmor)
 
     return stats.apply_monster_dials(dials).copy(
         role=MonsterRole.Skirmisher,

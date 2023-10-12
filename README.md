@@ -6,8 +6,10 @@
 - [x] FoF Theme Powers
 - [x] Allow creature templates to customize the creature after a role has been applied
 - [x] Redesign AC with AC Templates
-- [ ] Weapon Powers / Fighting Styles (similar to weapon masteries)
-- [ ] Utility to convert static damage #s to dice formula
+- [x] Weapon Powers / Fighting Styles (similar to weapon masteries)
+- [x] Utility to convert static damage #s to dice formula
+- [ ] Fighting Styles & Feat Powers
+- [ ] Humanoid Racial Powers
 - [ ] Create a Role scoring system (minimum attributes, creature types, etc.)
 - [ ] Specific Creature Templates
 - [ ] Biome System
@@ -26,7 +28,7 @@
 
 - [ ] negative stat modifiers render with a ?
 - [ ] Stick With Me! and Challenge Foe are redundant
-- [ ] Controllers keep getting Pinning Shot. Why?
+- [x] Controllers keep getting Pinning Shot. Why?
 - [ ] Many abilities around leadership and challenging shoudl require intelligence and verbal speaking abilities
 
 ## More Sophisticated Selection System
@@ -70,24 +72,6 @@ Should features be re-scored as they're built up? This would make the features b
   - Disintigration Beam
 - Eye Beams: anti magic eye, anti healing eye, vulnerability eye, random eye beams
 - Weapon Powers
-
-### Fighting Styles / Weapon Powers
-
-- Harpoon & Reel
-- Spear
-- Polearm
-- Longbow
-- Crossbow
-- Longsword / Shield
-- Greatsword / Greataxe
-
-### Psionic
-
-- **Psychic Whispers** (Recharge) - level-scaled dissonant whispers
-- **Mind Blast** (Recharge)
-- **Devour Intellect** & **Body Thief** - https://www.dndbeyond.com/monsters/17163-intellect-devourer
-- **Extract Brain** & **Tentacles** - https://www.dndbeyond.com/monsters/17104-mind-flayer
-- **Psychic Mirror** - reflect psychic damage
 
 ### Eye Powers
 

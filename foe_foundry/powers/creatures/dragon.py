@@ -1,5 +1,5 @@
 from math import ceil, floor
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 import numpy as np
 from numpy.random import Generator
@@ -7,6 +7,7 @@ from numpy.random import Generator
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
+from ...attack_template import natural as natural_attacks
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
@@ -15,6 +16,7 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -26,14 +28,24 @@ from ..scores import (
 from ..themed.breath import BreathAttack
 
 
-def _score_dragon(candidate: BaseStatblock, high_cr_boost: bool = False) -> float:
+def _score_dragon(
+    candidate: BaseStatblock,
+    high_cr_boost: bool = False,
+    attack_modifiers: AttackModifiers = None,
+    require_secondary_damage_type: bool = False,
+) -> float:
     if candidate.creature_type != CreatureType.Dragon:
+        return NO_AFFINITY
+
+    if require_secondary_damage_type and not candidate.secondary_damage_type:
         return NO_AFFINITY
 
     score = HIGH_AFFINITY
 
     if high_cr_boost:
         score += MODERATE_AFFINITY
+
+    score += resolve_attack_modifier(candidate, attack_modifiers)
 
     return score
 
@@ -98,7 +110,7 @@ class _TailSwipe(Power):
         super().__init__(name="Tail Swipe", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate)
+        return _score_dragon(candidate, attack_modifiers=natural_attacks.Tail)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         tail_attack = stats.attack.scale(
@@ -173,9 +185,12 @@ class _DraconicMinions(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         desired_summon_cr = ceil(stats.cr / 2.5)
+        damage_type = stats.secondary_damage_type
+        if damage_type is None:
+            raise ValueError("dragon does not have a secondary damage type")
 
         _, _, description = summoning.determine_summon_formula(
-            summon_list=stats.creature_type,
+            summoner=[stats.creature_type, damage_type],
             summon_cr_target=desired_summon_cr,
             rng=rng,
         )

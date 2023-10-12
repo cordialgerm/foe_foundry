@@ -1,8 +1,9 @@
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 import numpy as np
 from numpy.random import Generator
 
+from ...attack_template import natural, weapon
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, Dazed
@@ -12,6 +13,7 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -28,6 +30,7 @@ def _score_could_be_melee_fighter(
     requires_training: bool,
     large_size_boost: bool = False,
     requires_weapon: bool = False,
+    attack_modifiers: AttackModifiers = None,
 ) -> float:
     if not candidate.attack_type.is_melee():
         return 0
@@ -36,8 +39,6 @@ def _score_could_be_melee_fighter(
         return 0
 
     score = 0
-    if candidate.creature_type.could_use_weapon:
-        score += MODERATE_AFFINITY
 
     if not requires_training and candidate.creature_type in {
         CreatureType.Beast,
@@ -53,6 +54,8 @@ def _score_could_be_melee_fighter(
 
     if large_size_boost and candidate.size >= Size.Large:
         score += MODERATE_AFFINITY
+
+    score += resolve_attack_modifier(candidate, attack_modifiers)
 
     return score
 
@@ -76,7 +79,7 @@ class _PinningShot(Power):
         if not candidate.attack_type.is_ranged():
             return NO_AFFINITY
 
-        score = LOW_AFFINITY
+        score = 0
 
         if candidate.role in {MonsterRole.Controller, MonsterRole.Artillery}:
             score += MODERATE_AFFINITY
@@ -164,7 +167,15 @@ class _CleavingStrike(Power):
 
     def score(self, candidate: BaseStatblock) -> float:
         score = _score_could_be_melee_fighter(
-            candidate, requires_training=False, large_size_boost=True
+            candidate,
+            requires_training=False,
+            large_size_boost=True,
+            attack_modifiers={
+                natural.Claw: HIGH_AFFINITY,
+                weapon.Greataxe: HIGH_AFFINITY,
+                weapon.Greatsword: MODERATE_AFFINITY,
+                weapon.Maul: MODERATE_AFFINITY,
+            },
         )
         return score if score > 0 else NO_AFFINITY
 
@@ -270,14 +281,18 @@ class _ParryAndRiposte(Power):
 
 
 class _PommelStrike(Power):
-    def __init__(
-        self,
-    ):
+    def __init__(self):
         super().__init__(name="Pommel Strike", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_could_be_melee_fighter(
-            candidate, requires_training=True, requires_weapon=True
+            candidate,
+            requires_training=True,
+            requires_weapon=True,
+            attack_modifiers=[
+                weapon.SwordAndShield,
+                weapon.SpearAndShield,
+            ],
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, None]:
@@ -299,6 +314,43 @@ class _PommelStrike(Power):
         return stats, None
 
 
+class _PushingAttack(Power):
+    def __init__(self):
+        super().__init__(name="Pushing Attack", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_could_be_melee_fighter(
+            candidate,
+            requires_training=False,
+            requires_weapon=False,
+            large_size_boost=True,
+            attack_modifiers={
+                "*": -1 * HIGH_AFFINITY,
+                weapon.Maul: HIGH_AFFINITY,
+                natural.Claw: HIGH_AFFINITY,
+                natural.Slam: HIGH_AFFINITY,
+            },
+        )
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        if stats.size >= Size.Huge:
+            distance = 15
+        elif stats.size >= Size.Large:
+            distance = 10
+        else:
+            distance = 5
+
+        feature = Feature(
+            name="Pushing Attack",
+            action=ActionType.Feature,
+            modifies_attack=True,
+            hidden=True,
+            description=f"On a hit, the target is pushed up to {distance} feet horizontally.",
+        )
+
+        return stats, feature
+
+
 Challenger: Power = _Challenger()
 CleavingStrike: Power = _CleavingStrike()
 Disciplined: Power = _Disciplined()
@@ -306,6 +358,7 @@ PackTactics: Power = _PackTactics()
 ParryAndRiposte: Power = _ParryAndRiposte()
 PinningShot: Power = _PinningShot()
 PommelStrike: Power = _PommelStrike()
+PushingAttack: Power = _PushingAttack()
 MageSlayer: Power = _MageSlayer()
 
 WarriorPowers: List[Power] = [
@@ -316,5 +369,6 @@ WarriorPowers: List[Power] = [
     ParryAndRiposte,
     PinningShot,
     PommelStrike,
+    PushingAttack,
     MageSlayer,
 ]

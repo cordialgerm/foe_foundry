@@ -27,10 +27,9 @@ class Stats(StrEnum):
 
         return _PrimaryWrapper()
 
-    @staticmethod
-    def Boost(stat: Stats, mod: int) -> Callable:
+    def Boost(self, mod: int) -> Callable:
         def f(stats: Any) -> int:
-            return stats.attributes.stat(stat) + mod
+            return stats.attributes.stat(self) + mod
 
         return f
 

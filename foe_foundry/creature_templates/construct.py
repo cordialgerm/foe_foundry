@@ -1,13 +1,15 @@
 from math import ceil
+from typing import List, Tuple
 
 import numpy as np
-
-from foe_foundry.statblocks import BaseStatblock
+from numpy.random import Generator
 
 from ..ac_templates import NaturalArmor
+from ..attack_template import AttackTemplate, natural, spell, weapon
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
+from ..role_types import MonsterRole
 from ..senses import Senses
 from ..size import Size, get_size_for_cr
 from ..statblocks import BaseStatblock
@@ -18,7 +20,40 @@ class _ConstructTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Construct", creature_type=CreatureType.Construct)
 
-    def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[AttackTemplate, BaseStatblock]:
+        options = {}
+        if stats.role in {MonsterRole.Ambusher}:
+            options.update({weapon.Traps: 1})
+        elif stats.role in {MonsterRole.Artillery, MonsterRole.Controller}:
+            options.update(
+                {
+                    spell.Firebolt: 1,
+                    spell.Poisonbolt: 1,
+                    spell.Frostbolt: 1,
+                    spell.Shock: 1,
+                    spell.Acidsplash: 1,
+                }
+            )
+        else:
+            options.update(
+                {natural.Slam: 3, weapon.Greataxe: 1, weapon.Greatsword: 1, weapon.Maul: 1}
+            )
+
+        # Constructs attack with melee weapons like swords
+        choices: List[AttackTemplate] = []
+        weights = []
+        for c, w in options.items():
+            choices.append(c)
+            weights.append(w)
+
+        weights = np.array(weights) / np.sum(weights)
+        indx = rng.choice(len(choices), p=weights)
+        choice = choices[indx]
+        return choice, stats
+
+    def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         # have either blindsight or darkvision, and a selection of
         # damage immunities and condition immunities to reflect
         # their nonliving nature. They usually can’t speak, but might
@@ -61,21 +96,6 @@ class _ConstructTemplate(CreatureTypeTemplate):
         else:
             new_senses = Senses(blindsight=60)
 
-        # Constructs attack with melee weapons like swords
-        attack_type = AttackType.MeleeWeapon
-        primary_damage_type = DamageType.Slashing
-
-        # Constructs often have an elemental damage type associated with them
-        damage_types = [
-            DamageType.Fire,
-            DamageType.Cold,
-            DamageType.Lightning,
-            DamageType.Poison,
-            DamageType.Acid,
-        ]
-        i = rng.choice(len(damage_types))
-        secondary_damage_type = damage_types[i]
-
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=rng)
 
         # constructs with higher CR should have proficiency in STR and CON saves
@@ -95,9 +115,6 @@ class _ConstructTemplate(CreatureTypeTemplate):
             size=size,
             languages=None,
             senses=new_senses,
-            primary_damage_type=primary_damage_type,
-            secondary_damage_type=secondary_damage_type,
-            attack_type=attack_type,
         )
 
 

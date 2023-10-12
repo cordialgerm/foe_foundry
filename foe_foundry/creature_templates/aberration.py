@@ -1,8 +1,10 @@
-import numpy as np
+from typing import Tuple
 
-from foe_foundry.statblocks import BaseStatblock
+import numpy as np
+from numpy.random import Generator
 
 from ..ac_templates import NaturalArmor
+from ..attack_template import AttackTemplate, natural, spell
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
@@ -15,7 +17,37 @@ class _AberrationTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Aberration", creature_type=CreatureType.Aberration)
 
-    def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[AttackTemplate, BaseStatblock]:
+        ranged = 1 if stats.attack_type.is_ranged() else 0
+        melee = 1 - ranged
+
+        options = {
+            natural.Tentacle: 4 * melee,
+            spell.Gaze: 3 * ranged,
+            spell.Beam: 3 * ranged,
+            natural.Claw: 1 * melee,
+            natural.Bite: 1 * melee,
+        }
+        choices, weights = [], []
+        for c, w in options.items():
+            choices.append(c)
+            weights.append(w)
+
+        weights = np.array(weights) / np.sum(weights)
+        indx = rng.choice(len(choices), p=weights)
+
+        if melee:
+            # melee aberrations still have high charisma but use STR as their primary stat
+            stats = stats.scale({Stats.STR: Stats.Primary(), Stats.CHA: Stats.CHA.Boost(-2)})
+
+        # aberrations attack with psychic energy
+        stats = stats.copy(secondary_damage_type=DamageType.Psychic)
+
+        return choices[indx], stats
+
+    def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         # Aberrations generally have high mental stats
         # this means the minimum stat value should be 12 for mental stats
         # we should also boost mental stat scores
@@ -32,18 +64,6 @@ class _AberrationTemplate(CreatureTypeTemplate):
 
         new_senses = stats.senses.copy(darkvision=120)
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Medium, rng=rng)
-
-        attack_types = [AttackType.MeleeNatural, AttackType.RangedSpell]
-        attack_weights = [0.6, 0.4]
-        attack_indx = rng.choice(2, p=attack_weights)
-        attack_type = attack_types[attack_indx]
-
-        primary_damage_type = (
-            DamageType.Bludgeoning
-            if attack_type == AttackType.MeleeNatural
-            else DamageType.Psychic
-        )
-        secondary_damage_type = DamageType.Psychic
 
         # aberrations with higher CR should have proficiency in CHA and WIS saves
         if stats.cr >= 4:
@@ -63,9 +83,6 @@ class _AberrationTemplate(CreatureTypeTemplate):
             languages=["Deep Speech", "telepathy 120 ft."],
             senses=new_senses,
             attributes=new_attributes,
-            primary_damage_type=primary_damage_type,
-            secondary_damage_type=secondary_damage_type,
-            attack_type=attack_type,
         )
 
 
