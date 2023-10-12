@@ -69,44 +69,6 @@ def _as_melee_fighter(stats: BaseStatblock, uses_weapon: bool = False) -> BaseSt
     return stats.copy(**changes)
 
 
-class _PinningShot(Power):
-    def __init__(self):
-        super().__init__(name="Pinning Shot", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if not candidate.attack_type.is_ranged():
-            return NO_AFFINITY
-
-        score = 0
-
-        if candidate.role in {MonsterRole.Controller, MonsterRole.Artillery}:
-            score += MODERATE_AFFINITY
-
-        if candidate.primary_attribute == Stats.STR:
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        dc = stats.difficulty_class
-
-        name = "Pinning Shot" if stats.attack_type.is_ranged() else "Pinning Hit"
-
-        feature = Feature(
-            name=name,
-            action=ActionType.Feature,
-            description=f"On a hit, the target must succeed on a DC {dc} Strength saving throw or be **Restrained** (save ends at end of turn).",
-            hidden=True,
-            modifies_attack=True,
-        )
-
-        return stats, feature
-
-
 class _Challenger(Power):
     def __init__(self):
         super().__init__(name="Challenger", power_type=PowerType.Theme)
@@ -356,7 +318,6 @@ CleavingStrike: Power = _CleavingStrike()
 Disciplined: Power = _Disciplined()
 PackTactics: Power = _PackTactics()
 ParryAndRiposte: Power = _ParryAndRiposte()
-PinningShot: Power = _PinningShot()
 PommelStrike: Power = _PommelStrike()
 PushingAttack: Power = _PushingAttack()
 MageSlayer: Power = _MageSlayer()
@@ -367,7 +328,6 @@ WarriorPowers: List[Power] = [
     Disciplined,
     PackTactics,
     ParryAndRiposte,
-    PinningShot,
     PommelStrike,
     PushingAttack,
     MageSlayer,

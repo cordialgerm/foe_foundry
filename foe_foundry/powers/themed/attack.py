@@ -4,6 +4,7 @@ import numpy as np
 from numpy.random import Generator
 
 from ...attack_template import natural, spell, weapon
+from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
@@ -47,6 +48,9 @@ def score(
     # these remaining factors don't determine eligibility, just likelyhood
     if score == 0:
         return NO_AFFINITY
+
+    if candidate.creature_type == CreatureType.Humanoid:
+        score += MODERATE_AFFINITY
 
     if candidate.role in target_roles:
         score += HIGH_AFFINITY
@@ -529,7 +533,7 @@ class _CleavingAttack(Power):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"If the attack hits and there is another hostile target within {reach} then that target also takes {damage} {damage_type} damage",
+            description=f"If the attack hits and there is another hostile target within {reach} ft then that target also takes {damage} {damage_type} damage",
         )
         return stats, feature
 

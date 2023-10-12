@@ -28,10 +28,19 @@
 
 - [ ] negative stat modifiers render with a ?
 - [ ] Stick With Me! and Challenge Foe are redundant
-- [x] Controllers keep getting Pinning Shot. Why?
 - [ ] Many abilities around leadership and challenging shoudl require intelligence and verbal speaking abilities
 
+## MISC TODO
+
+- racial feats (subrace tags)
+- attack damage should just be a scalar instead of modifying dice directly - actual dice formulas get resolved when attack is finalized
+- attack should just be flat damage as a starting point
+
 ## More Sophisticated Selection System
+
+- tags for various things that you don't want to have to many of (deathrattles, reactions, etc.)
+- select one thing at a time
+- powers should have a point buy cost associated to them
 
 Selection engine should take parameters like:
 

@@ -24,14 +24,21 @@ from ..scores import (
 )
 
 
-def _score(candidate: BaseStatblock, undead_only: bool = False) -> float:
+def _score(
+    candidate: BaseStatblock, undead_only: bool = False, caster_or_undead_only: bool = False
+) -> float:
     score = 0
 
-    if candidate.creature_type == CreatureType.Undead:
-        score += HIGH_AFFINITY
+    if undead_only and candidate.creature_type != CreatureType.Undead:
+        return NO_AFFINITY
 
-    if not undead_only and candidate.creature_type == CreatureType.Fiend:
-        score += MODERATE_AFFINITY
+    if caster_or_undead_only and (
+        not candidate.attack_type.is_spell() or candidate.creature_type != CreatureType.Undead
+    ):
+        return NO_AFFINITY
+
+    creature_types = {CreatureType.Undead: HIGH_AFFINITY, CreatureType.Fiend: MODERATE_AFFINITY}
+    score += creature_types.get(candidate.creature_type, 0)
 
     if candidate.secondary_damage_type == DamageType.Necrotic:
         score += HIGH_AFFINITY
@@ -44,7 +51,7 @@ class _AuraOfDoom(Power):
         super().__init__(name="Aura of Doom", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return _score(candidate, caster_or_undead_only=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -65,7 +72,7 @@ class _AuraOfAnnihilation(Power):
         super().__init__(name="Aura of Annihilation", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return _score(candidate, caster_or_undead_only=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -91,7 +98,7 @@ class _UndyingMinions(Power):
         super().__init__(name="Undying Minions", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return _score(candidate, caster_or_undead_only=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -187,7 +194,7 @@ class _FleshPuppets(Power):
         super().__init__(name="Flesh Puppets", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, undead_only=False)
+        return _score(candidate, undead_only=False, caster_or_undead_only=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         cr = int(ceil(stats.cr / 3))

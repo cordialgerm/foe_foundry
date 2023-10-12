@@ -4,14 +4,15 @@ from typing import Tuple
 import numpy as np
 from numpy.random import Generator
 
-from ..attack_template import AttackTemplate, spell, weapon
+from ..ac_templates import HideArmor
+from ..attack_template import AttackTemplate, natural, spell, weapon
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
 from ..role_types import MonsterRole
 from ..size import Size, get_size_for_cr
 from ..statblocks import BaseStatblock, MonsterDials
-from ..utils.rng import choose_enum
+from ..utils.rng import choose_options
 from .template import CreatureTypeTemplate
 
 
@@ -22,30 +23,75 @@ class _HumanoidTemplate(CreatureTypeTemplate):
     def select_attack_template(
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[AttackTemplate, BaseStatblock]:
+        # secondary damage type possibilities for humanoids
+        dmg_types = {
+            DamageType.Bludgeoning: 3.0,  # sentinel value - no special damage
+            DamageType.Radiant: 2.0,
+            DamageType.Cold: 1.0,
+            DamageType.Fire: 1.0,
+            DamageType.Necrotic: 2.0,
+            DamageType.Poison: 2.0,
+        }
+
         if stats.role in {MonsterRole.Ambusher}:
-            options = [weapon.Shortbow, weapon.Daggers]
+            attacks = [weapon.Shortbow, weapon.Daggers, weapon.Shortswords]
+            dmg_types = [DamageType.Bludgeoning, DamageType.Poison]
         elif stats.role in {MonsterRole.Skirmisher}:
-            options = [weapon.JavelinAndShield, weapon.Shortbow]
+            attacks = [
+                weapon.JavelinAndShield,
+                weapon.Shortbow,
+                weapon.RapierAndShield,
+                weapon.Shortswords,
+            ]
+            dmg_types = [DamageType.Bludgeoning, DamageType.Poison]
         elif stats.role in {MonsterRole.Artillery}:
-            options = [weapon.Longbow, weapon.Crossbow, spell.Firebolt]
+            attacks = [
+                weapon.Longbow,
+                weapon.Crossbow,
+                spell.Firebolt,
+                spell.HolyBolt,
+                spell.Shock,
+            ]
         elif stats.role in {MonsterRole.Controller}:
-            options = [spell.ArcaneBurst, spell.EdlritchBlast, spell.Frostbolt, spell.Shock]
+            attacks = [
+                spell.ArcaneBurst,
+                spell.EdlritchBlast,
+                spell.Frostbolt,
+                spell.Shock,
+                natural.Slam,
+                spell.Acidsplash,
+                spell.Deathbolt,
+                spell.Frostbolt,
+                spell.Shock,
+                spell.Thundrousblast,
+            ]
         elif stats.role in {MonsterRole.Bruiser}:
-            options = [weapon.Greataxe, weapon.Greatsword, weapon.Maul, weapon.Polearm]
+            attacks = [
+                weapon.Greataxe,
+                weapon.Greatsword,
+                weapon.Maul,
+                weapon.Polearm,
+                natural.Slam,
+            ]
         elif stats.role in {MonsterRole.Defender}:
-            options = [weapon.SpearAndShield, weapon.SwordAndShield, weapon.MaceAndShield]
+            attacks = [weapon.SpearAndShield, weapon.SwordAndShield, weapon.MaceAndShield]
         elif stats.role in {MonsterRole.Leader}:
-            options = [weapon.SwordAndShield, weapon.Staff]
+            attacks = [weapon.SwordAndShield, weapon.Staff, weapon.Whip]
         else:
             raise RuntimeError("Unexpected error")
 
-        index = rng.choice(len(options))
-        attack = options[index]
+        attack = choose_options(rng, attacks)
+        damage_type = choose_options(rng, dmg_types)
+        if damage_type == DamageType.Bludgeoning:
+            damage_type = None  # this was the sentinel value to ignore
 
-        if attack.attack_type and attack.attack_type.is_spell() and attack.damage_type:
-            secondary_damage_type = attack.damage_type
-            stats = stats.copy(secondary_damage_type=secondary_damage_type)
+        secondary_damage_type = attack.secondary_damage_type or damage_type
 
+        # no magical infusion for fists...
+        if attack == natural.Slam:
+            secondary_damage_type = None
+
+        stats = stats.copy(secondary_damage_type=secondary_damage_type)
         return attack, stats
 
     def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
@@ -116,6 +162,9 @@ class _HumanoidTemplate(CreatureTypeTemplate):
                     Stats.CHA: mental_stats[2],
                 }
             )
+
+            # humanoid bruisers wear Hide armor instead of natural armor
+            stats.add_ac_template(HideArmor)
 
         return stats
 

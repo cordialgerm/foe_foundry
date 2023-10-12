@@ -18,6 +18,10 @@ class _HeavyArmorClassTemplate(ArmorClassTemplate):
     def is_armored(self) -> bool:
         return True
 
+    @property
+    def is_heavily_armored(self) -> bool:
+        return True
+
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         quality_level = stats.ac_boost
         ac = 16 + (2 if uses_shield else 0) + quality_level

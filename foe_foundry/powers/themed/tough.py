@@ -174,43 +174,6 @@ class _LimitedMagicImmunity(Power):
         return stats, feature
 
 
-# TODO - merge this with unarmed fighting style
-class _Athletic(Power):
-    """This creature is Athletic"""
-
-    def __init__(self):
-        super().__init__(name="Athletic", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        # this makes sense for most monsters with reasonable physical stats except artillery or controllers
-        if (
-            candidate.role == MonsterRole.Artillery
-            or candidate.role == MonsterRole.Controller
-            or candidate.attributes.STR <= 10
-            or candidate.attributes.DEX <= 10
-        ):
-            return NO_AFFINITY
-        else:
-            return MODERATE_AFFINITY
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        # give the monster reasonable physical stats
-        new_attrs = (
-            stats.attributes.boost(Stats.STR, 2)
-            .grant_proficiency_or_expertise(Skills.Athletics)
-            .grant_save_proficiency(Stats.STR)
-        )
-        stats = stats.copy(attributes=new_attrs)
-        feature = Feature(
-            name="Athletic",
-            action=ActionType.Feature,
-            description=f"On a hit, {stats.selfref} can **Grapple** the target instead of doing damage with the attack.",
-            hidden=True,
-            modifies_attack=True,
-        )
-        return stats, feature
-
-
 class _QuickRecovery(Power):
     """Quick Recovery (Trait). At the start of this creature's turn, they can attempt a saving throw
     against any effect on them that can be ended by a successful saving throw."""
@@ -283,7 +246,6 @@ class _Regeneration(Power):
         return stats, feature
 
 
-Athletic: Power = _Athletic()
 AdrenalineRush: Power = _AdrenalineRush()
 GoesDownFighting: Power = _GoesDownFighting()
 LimitedMagicImmunity: Power = _LimitedMagicImmunity()
@@ -293,7 +255,6 @@ QuickRecovery: Power = _QuickRecovery()
 Regeneration: Power = _Regeneration()
 
 ToughPowers: List[Power] = [
-    Athletic,
     AdrenalineRush,
     GoesDownFighting,
     LimitedMagicImmunity,

@@ -18,6 +18,10 @@ class _UnarmoredArmorClassTemplate(ArmorClassTemplate):
     def is_armored(self) -> bool:
         return False
 
+    @property
+    def is_heavily_armored(self) -> bool:
+        return False
+
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         ac = 10 + min(stats.attributes.stat_mod(Stats.DEX), 5)
         return ResolvedArmorClass(
