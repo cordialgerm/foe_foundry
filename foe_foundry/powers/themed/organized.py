@@ -40,7 +40,7 @@ def _score_could_be_organized(
 
     if not requires_intelligence:
         creature_types[CreatureType.Beast] = MODERATE_AFFINITY
-    elif candidate.attributes.INT <= 8:
+    elif candidate.attributes.INT < 8:
         return NO_AFFINITY
 
     score += creature_types.get(candidate.creature_type, 0)

@@ -185,7 +185,9 @@ class _Retrieval(Power):
         super().__init__(name="Retrieval", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return _score(
+            candidate, attack_modifiers={"*": NO_AFFINITY, natural_attacks.Slam: HIGH_AFFINITY}
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
