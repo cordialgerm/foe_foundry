@@ -1,12 +1,15 @@
+from typing import Tuple
+
+import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.statblocks import BaseStatblock
-
 from ..ac_templates import NaturalArmor
+from ..attack_template import AttackTemplate, natural, spell
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
 from ..movement import Movement
+from ..role_types import MonsterRole
 from ..size import Size, get_size_for_cr
 from ..statblocks import BaseStatblock
 from ..utils.rng import choose_enum
@@ -16,6 +19,22 @@ from .template import CreatureTypeTemplate
 class _PlantTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Plant", creature_type=CreatureType.Plant)
+
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[AttackTemplate, BaseStatblock]:
+        if stats.role in {MonsterRole.Ambusher, MonsterRole.Skirmisher, MonsterRole.Controller}:
+            options = [natural.Thrash]
+        elif stats.role in {MonsterRole.Artillery}:
+            options = [natural.Spines, spell.Poisonbolt]
+        elif stats.role in {MonsterRole.Bruiser, MonsterRole.Defender, MonsterRole.Leader}:
+            options = [natural.Slam]
+        else:
+            raise ValueError(f"Unsupported role {stats.role}")
+
+        index = rng.choice(len(options))
+        attack = options[index]
+        return attack, stats
 
     def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         # Plants have extremely low mental stats and low Dexterity scores
@@ -35,11 +54,6 @@ class _PlantTemplate(CreatureTypeTemplate):
         # Plants typically have blindsight with a 30 to 60-foot range
         new_senses = stats.senses.copy(blindsight=30 if stats.cr <= 4 else 60)
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=rng)
-
-        # Plants attack with melee natural weapons like branches
-        attack_type = AttackType.MeleeNatural
-        primary_damage_type = DamageType.Bludgeoning
-        secondary_damage_type = DamageType.Poison
 
         condition_immunities = stats.condition_immunities.copy() | {
             Condition.Blinded,
@@ -65,18 +79,8 @@ class _PlantTemplate(CreatureTypeTemplate):
             languages=None,
             senses=new_senses,
             attributes=new_attributes,
-            primary_damage_type=primary_damage_type,
-            secondary_damage_type=secondary_damage_type,
-            attack_type=attack_type,
             condition_immunities=condition_immunities,
         )
-
-    def customize_role(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
-        # plants that do ranged attacks deal piercing damage
-        if stats.attack_type == AttackType.RangedWeapon:
-            stats = stats.copy(primary_damage_type=DamageType.Piercing)
-
-        return stats
 
 
 PlantTemplate: CreatureTypeTemplate = _PlantTemplate()

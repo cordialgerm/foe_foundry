@@ -91,7 +91,7 @@ class _WarpReality(Power):
         distance = 20 + (20 if stats.cr >= 7 else 0)
         feature = Feature(
             name="Warp Reality",
-            description=f"Each creature of {stats.selfref}'s choice within 30 ft must succeed on a DC {dc} Intelligence save or be teleported up to {distance} ft to an unoccupied space that {stats.selfref} can see.\
+            description=f"Each creature of {stats.selfref}'s choice within 30 ft must succeed on a DC {dc} Charisma save or be teleported up to {distance} ft to an unoccupied space that {stats.selfref} can see.\
                 If the target space is a hazard (such as an open pit, lava, or in the air) then the target may use its reaction to attempt a DC {dc} Dexterity save.\
                 On a success, the target reduces the damage taken from the hazard this turn by half, or narrowly escapes the hazard. Creatures may choose to fail this save.",
             action=ActionType.Action,

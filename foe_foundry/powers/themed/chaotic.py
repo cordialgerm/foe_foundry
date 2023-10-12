@@ -42,7 +42,7 @@ class _ChaoticSpace(Power):
         super().__init__(name="Chaotic Space", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_chaotic(candidate)
+        return score_chaotic(candidate, min_cr=5)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
@@ -67,7 +67,7 @@ class _EldritchBeacon(Power):
         super().__init__(name="Eldritch Beacon", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_chaotic(candidate, min_cr=3)
+        return score_chaotic(candidate, min_cr=5)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         hp = easy_multiple_of_five(stats.cr * 5, min_val=5, max_val=30)
@@ -77,7 +77,7 @@ class _EldritchBeacon(Power):
         summon_cr_target = stats.cr / 5
 
         _, _, description = summoning.determine_summon_formula(
-            summon_list=stats.creature_type, summon_cr_target=summon_cr_target, rng=rng
+            summoner=stats.creature_type, summon_cr_target=summon_cr_target, rng=rng
         )
 
         feature = Feature(

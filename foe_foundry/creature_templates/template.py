@@ -1,11 +1,12 @@
 from abc import ABC, abstractmethod
-from typing import List, Set, Tuple, overload
+from typing import List, Set, Tuple
 
 import numpy as np
 
+from ..attack_template import AttackTemplate, DefaultAttackTemplate
 from ..creature_types import CreatureType
 from ..features import Feature
-from ..powers import Power, PowerType, select_from_powers, select_power, select_powers
+from ..powers import Power, PowerType, select_from_powers, select_powers
 from ..role_types import MonsterRole
 from ..roles import AllRoles, RoleTemplate, get_role
 from ..statblocks import BaseStatblock, Statblock
@@ -27,6 +28,11 @@ class CreatureTypeTemplate(ABC):
     def customize_role(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         return stats.copy()
 
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[AttackTemplate, BaseStatblock]:
+        return DefaultAttackTemplate, stats
+
     def select_role(
         self,
         stats: BaseStatblock,
@@ -43,13 +49,12 @@ class CreatureTypeTemplate(ABC):
             return AllRoles[i]
 
     def select_powers(self, stats: BaseStatblock, rng: np.random.Generator) -> List[Power]:
-        # TODO - make this scale with CR and let creature types customize this
-
-        n = 1 if stats.recommended_powers <= 3 else 2
+        if stats.recommended_powers == 0:
+            return []
 
         # Creature Type
         creature_powers = select_powers(
-            stats=stats, power_type=PowerType.Creature, rng=rng, n=n
+            stats=stats, power_type=PowerType.Creature, rng=rng, n=3
         )
 
         # Role
@@ -57,7 +62,7 @@ class CreatureTypeTemplate(ABC):
             stats=stats,
             power_type=PowerType.Role,
             rng=rng,
-            n=n if len(creature_powers) > 0 else n + 1,
+            n=3,
         )
 
         # Themed
@@ -65,58 +70,42 @@ class CreatureTypeTemplate(ABC):
             stats=stats,
             power_type=PowerType.Theme,
             rng=rng,
-            n=n if len(creature_powers) > 0 else n + 1,
+            n=6,
         )
 
         # Choose Candidates
         candidates = set(creature_powers) | set(role_powers) | set(theme_powers)
 
         candidates = [c for c in candidates if c is not None]
-        multipliers = {
-            PowerType.Creature: 1,
-            PowerType.Role: 1,
-            PowerType.Theme: 1,
-        }
-        multipliers = np.array([multipliers[c.power_type] for c in candidates], dtype=float)
-
-        selection = select_from_powers(
-            stats, candidates, rng, n=stats.recommended_powers, multipliers=multipliers
-        )
+        selection = select_from_powers(stats, candidates, rng, n=stats.recommended_powers)
         return selection
 
-    @overload
     def create(
         self,
-        stats: BaseStatblock,
+        base_stats: BaseStatblock,
         rng: np.random.Generator,
         role_template: RoleTemplate | str | None | MonsterRole = None,
     ) -> Statblock:
-        pass
+        # apply creature type modifications
+        new_stats = self.alter_base_stats(base_stats, rng)
 
-    @overload
-    def create(
-        self,
-        stats: BaseStatblock,
-        rng: np.random.Generator,
-        role_template: RoleTemplate | str | None | MonsterRole = None,
-        return_features: bool = True,
-    ) -> Tuple[Statblock, List[Feature]]:
-        pass
-
-    def create(
-        self,
-        stats: BaseStatblock,
-        rng: np.random.Generator,
-        role_template: RoleTemplate | str | None | MonsterRole = None,
-        return_features: bool = False,
-    ) -> Statblock | Tuple[Statblock, List[Feature]]:
-        new_stats = self.alter_base_stats(stats, rng)
+        # apply role specialization
         role_template = self.select_role(stats=new_stats, role_template=role_template, rng=rng)
         new_stats = role_template.alter_base_stats(new_stats, rng=rng)
         new_stats = self.customize_role(new_stats, rng)
 
+        # apply attack template and attack powers (if any)
+        attack_template, new_stats = self.select_attack_template(new_stats, rng)
+        if attack_template is not None:
+            new_stats = attack_template.alter_base_stats(new_stats, rng)
+
+        # initialize attack to help later power selection
+        new_stats = attack_template.initialize_attack(new_stats)
+
+        # select additional powers
         powers = self.select_powers(new_stats, rng)
 
+        # render features from powers
         features: Set[Feature] = set()
         for power in powers:
             new_stats, new_features = power.apply(new_stats, rng)
@@ -128,10 +117,10 @@ class CreatureTypeTemplate(ABC):
 
             features.update(new_features)
 
-        name = f"{stats.key}-{self.creature_type}-{role_template.key}"
-        stats = Statblock.from_base_stats(name=name, stats=new_stats, features=list(features))
+        # finalize attacks
+        new_stats = attack_template.finalize_attacks(new_stats, rng)
 
-        if return_features:
-            return stats, list(features)
-        else:
-            return stats
+        # finalize statblock
+        name = f"{base_stats.key}-{self.creature_type}-{role_template.key}"
+        stats = Statblock.from_base_stats(name=name, stats=new_stats, features=list(features))
+        return stats

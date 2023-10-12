@@ -1,8 +1,9 @@
 from math import ceil, floor
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 from numpy.random import Generator
 
+from ...attack_template import natural, spell
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, Swallowed
 from ...die import Die, DieFormula
@@ -10,6 +11,7 @@ from ...features import ActionType, Feature
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -18,6 +20,22 @@ from ..scores import (
     MODERATE_AFFINITY,
     NO_AFFINITY,
 )
+
+
+def _score_aberration(
+    candidate: BaseStatblock,
+    min_size: Size | None = None,
+    attack_modifiers: AttackModifiers = None,
+) -> float:
+    if candidate.creature_type != CreatureType.Aberration:
+        return NO_AFFINITY
+
+    if min_size and candidate.size < min_size:
+        return NO_AFFINITY
+
+    score = HIGH_AFFINITY
+    score += resolve_attack_modifier(candidate, attack_modifiers)
+    return score if score > 0 else NO_AFFINITY
 
 
 class _GraspingTentacles(Power):
@@ -30,13 +48,9 @@ class _GraspingTentacles(Power):
         super().__init__(name="Grasping Tentacles", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type != CreatureType.Aberration:
-            return NO_AFFINITY
-
-        return (
-            HIGH_AFFINITY
-            if candidate.attack_type == AttackType.MeleeNatural
-            else MODERATE_AFFINITY
+        return _score_aberration(
+            candidate,
+            attack_modifiers={natural.Tentacle: HIGH_AFFINITY, "*": NO_AFFINITY},
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
@@ -56,14 +70,7 @@ class _DominatingGaze(Power):
         super().__init__(name="Dominating Gaze", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type != CreatureType.Aberration:
-            return NO_AFFINITY
-
-        return (
-            HIGH_AFFINITY
-            if candidate.attack_type == AttackType.RangedSpell
-            else MODERATE_AFFINITY
-        )
+        return _score_aberration(candidate, attack_modifiers=spell.Gaze)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
@@ -84,10 +91,7 @@ class _MaddeningWhispers(Power):
         super().__init__(name="Maddening Whispers", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type != CreatureType.Aberration:
-            return NO_AFFINITY
-
-        return HIGH_AFFINITY
+        return _score_aberration(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -108,13 +112,9 @@ class _TentacleSlam(Power):
         super().__init__(name="Tentacle Slam", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type != CreatureType.Aberration:
-            return NO_AFFINITY
-
-        return (
-            HIGH_AFFINITY
-            if candidate.attack_type == AttackType.MeleeNatural
-            else MODERATE_AFFINITY
+        return _score_aberration(
+            candidate,
+            attack_modifiers={"*": NO_AFFINITY, natural.Tentacle: HIGH_AFFINITY},
         )
 
     def apply(
@@ -139,16 +139,13 @@ class _AntimagicGullet(Power):
         super().__init__(name="Anti-Magic Gullet", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type != CreatureType.Aberration:
-            return NO_AFFINITY
-
-        if candidate.cr <= 5:
-            return NO_AFFINITY
-
-        return (
-            HIGH_AFFINITY
-            if candidate.attack_type == AttackType.MeleeNatural
-            else MODERATE_AFFINITY
+        return _score_aberration(
+            candidate,
+            min_size=Size.Large,
+            attack_modifiers={
+                "*": -1 * MODERATE_AFFINITY,
+                natural.Bite: EXTRA_HIGH_AFFINITY,
+            },
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:

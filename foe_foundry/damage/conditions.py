@@ -73,10 +73,12 @@ def Bleeding(
     return CustomCondition(
         name="Bleeding",
         caption=f"**Bleeding** [{damage} {damage_type}]",
-        description="TODO",
+        description=f"You are bleeding and suffer {damage} ongoing {damage_type} at the end of each of your turns. \
+            A creature may use an action to attempt a DC {dc} Medicine check to end the condition. \
+            The condition also ends if you receive {healing}",
         description_3rd=f"A bleeding creature suffers {damage} ongoing {damage_type} damage at the end of each of its turns. \
-                                A creature may use an action to attempt a DC {dc} Medicine check to end the condition. \
-                                The condition also ends if the creature receives {healing}.",
+            A creature may use an action to attempt a DC {dc} Medicine check to end the condition. \
+            The condition also ends if the creature receives {healing}.",
     )
 
 

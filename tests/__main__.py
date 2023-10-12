@@ -26,7 +26,8 @@ from .filtering import filter_examples
     default="",
     help="filter results to only show statblocks that match that filter",
 )
-def run_tests(display: int, feature: str, name: str):
+@click.option("--screenshot", "-s", is_flag=True)
+def run_tests(display: int, feature: str, name: str, screenshot: bool):
     retcode = pytest.main(args=[""])
 
     examples_dir = Path(__file__).parent.parent / "examples"
@@ -56,7 +57,8 @@ def run_tests(display: int, feature: str, name: str):
         selections = rng.choice(a=np.array(matches, dtype=object), size=size, replace=False)
         for selection in selections:
             open_statblock(selection)
-            screenshot(selection)
+            if screenshot:
+                screenshot_statblock(selection)
 
     sys.exit(retcode)
 
@@ -71,10 +73,10 @@ def open_statblock(path: Path):
     cwd = Path.cwd()
     rel = path.relative_to(cwd)
     print(f"Displaying {rel}...")
-    subprocess.run(["start", str(rel)], shell=True)
+    subprocess.run(["start", str(rel), "/min"], shell=True)
 
 
-def screenshot(path: Path):
+def screenshot_statblock(path: Path):
     screenshots_dir = Path(__file__).parent.parent / "examples" / "screenshots"
     screenshots_dir.mkdir(exist_ok=True)
     screenshot_path = screenshots_dir / f"{path.stem}.png"

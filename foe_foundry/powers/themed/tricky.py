@@ -167,7 +167,7 @@ class _ShadowyDoppelganger(Power):
             name="Shadowy Doppleganger",
             action=ActionType.Action,
             uses=1,
-            description=f"{stats.selfref.capitalize()} forces each creature of its choice within 30 feet to make a DC {dc} Charisma saving throw. \
+            description=f"{stats.selfref.capitalize()} forces each non-fey creature of its choice within 30 feet to make a DC {dc} Charisma saving throw. \
                 On a failure, a Shadow Doppleganger copy of that creature materializes in the nearest unoccupied space to that creature and acts in initiative immediately after {stats.selfref}. \
                 The Shadow Doppleganger has {hp} hp and has an AC equal to the creature it was copied from and is a Fey. On its turn, the Shadow Doppleganger attempts to move and attack the creature it was copied from. \
                 It makes a single attack using the stats of {stats.selfref}'s Attack action. It otherwise has the movement, stats, skills, and saves of the creature it was copied from.",

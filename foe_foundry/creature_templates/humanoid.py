@@ -1,9 +1,10 @@
 from math import ceil, floor
+from typing import Tuple
 
+import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.statblocks import BaseStatblock
-
+from ..attack_template import AttackTemplate, spell, weapon
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
@@ -17,6 +18,35 @@ from .template import CreatureTypeTemplate
 class _HumanoidTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Humanoid", creature_type=CreatureType.Humanoid)
+
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[AttackTemplate, BaseStatblock]:
+        if stats.role in {MonsterRole.Ambusher}:
+            options = [weapon.Shortbow, weapon.Daggers]
+        elif stats.role in {MonsterRole.Skirmisher}:
+            options = [weapon.JavelinAndShield, weapon.Shortbow]
+        elif stats.role in {MonsterRole.Artillery}:
+            options = [weapon.Longbow, weapon.Crossbow, spell.Firebolt]
+        elif stats.role in {MonsterRole.Controller}:
+            options = [spell.ArcaneBurst, spell.EdlritchBlast, spell.Frostbolt, spell.Shock]
+        elif stats.role in {MonsterRole.Bruiser}:
+            options = [weapon.Greataxe, weapon.Greatsword, weapon.Maul, weapon.Polearm]
+        elif stats.role in {MonsterRole.Defender}:
+            options = [weapon.SpearAndShield, weapon.SwordAndShield, weapon.MaceAndShield]
+        elif stats.role in {MonsterRole.Leader}:
+            options = [weapon.SwordAndShield, weapon.Staff]
+        else:
+            raise RuntimeError("Unexpected error")
+
+        index = rng.choice(len(options))
+        attack = options[index]
+
+        if attack.attack_type and attack.attack_type.is_spell() and attack.damage_type:
+            secondary_damage_type = attack.damage_type
+            stats = stats.copy(secondary_damage_type=secondary_damage_type)
+
+        return attack, stats
 
     def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         stats = stats.apply_monster_dials(MonsterDials(recommended_powers_modifier=1))
@@ -34,6 +64,7 @@ class _HumanoidTemplate(CreatureTypeTemplate):
                 Stats.Scale(8, 1 / 4),
                 Stats.Scale(8, 1 / 3),
             ]
+            rng.shuffle(mental_stats)
 
             stats = stats.scale(
                 {

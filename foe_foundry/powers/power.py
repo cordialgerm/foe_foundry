@@ -29,3 +29,6 @@ class Power(ABC):
 
     def __repr__(self):
         return f"{self.name} ({self.power_type})"
+
+    def __hash__(self) -> int:
+        return hash(type(self))

@@ -1,13 +1,15 @@
 from math import floor
+from typing import List, Tuple
 
 import numpy as np
-
-from foe_foundry.statblocks import BaseStatblock
+from numpy.random import Generator
 
 from ..ac_templates import HolyArmor
+from ..attack_template import AttackTemplate, spell, weapon
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
+from ..role_types import MonsterRole
 from ..size import Size, get_size_for_cr
 from ..statblocks import BaseStatblock
 from .template import CreatureTypeTemplate
@@ -17,7 +19,50 @@ class _CelestialTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Celestial", creature_type=CreatureType.Celestial)
 
-    def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[AttackTemplate, BaseStatblock]:
+        options = {}
+        offensive_melee = False
+        if stats.role in {MonsterRole.Controller}:
+            options.update({spell.HolyBolt: 3, weapon.Whip: 1})
+        elif stats.role in {MonsterRole.Artillery}:
+            options.update({weapon.Longbow: 1, spell.HolyBolt: 1})
+        elif stats.role in {MonsterRole.Bruiser}:
+            offensive_melee = True
+            options.update({weapon.Greatsword: 1})
+        elif stats.role in {MonsterRole.Ambusher, MonsterRole.Skirmisher}:
+            options.update({weapon.SpearAndShield: 1, weapon.Daggers: 0.5})
+        elif stats.role in {MonsterRole.Leader}:
+            options.update({weapon.Staff: 1, weapon.Greatsword: 1, weapon.SwordAndShield: 1})
+        else:
+            options.update(
+                {
+                    weapon.SwordAndShield: 1,
+                    weapon.MaceAndShield: 1,
+                }
+            )
+
+        choices: List[AttackTemplate] = []
+        weights = []
+        for c, w in options.items():
+            choices.append(c)
+            weights.append(w)
+
+        weights = np.array(weights) / np.sum(weights)
+        indx = rng.choice(len(choices), p=weights)
+        choice = choices[indx]
+
+        if offensive_melee:
+            # melee celestials still have high charisma but use STR as their primary stat
+            stats = stats.scale({Stats.STR: Stats.Primary(), Stats.CHA: Stats.CHA.Boost(-2)})
+
+        # Celestials imbue their attacks with Radiant energy
+        stats = stats.copy(secondary_damage_type=DamageType.Radiant)
+
+        return choice, stats
+
+    def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         # As divine beings of the Outer Planes, celestials have  high ability scores.
         # Charisma is often especially high to represent a celestial’s leadership qualities, eloquence, and beauty.
         stats = stats.scale(
@@ -44,11 +89,6 @@ class _CelestialTemplate(CreatureTypeTemplate):
         new_senses = stats.senses.copy(darkvision=120)
         if stats.cr >= 11:
             new_senses = new_senses.copy(truesight=120)
-
-        # Celestials attack with melee weapons like swords imbued with Radiant energy
-        attack_type = AttackType.MeleeWeapon
-        primary_damage_type = DamageType.Slashing
-        secondary_damage_type = DamageType.Radiant
 
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=rng)
 
@@ -77,9 +117,6 @@ class _CelestialTemplate(CreatureTypeTemplate):
             languages=["Common", "Celestial", "Telepathy 120 ft"],
             senses=new_senses,
             attributes=new_attributes,
-            primary_damage_type=primary_damage_type,
-            secondary_damage_type=secondary_damage_type,
-            attack_type=attack_type,
         )
 
 

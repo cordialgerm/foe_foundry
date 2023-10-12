@@ -26,7 +26,7 @@ def _as_defender(stats: BaseStatblock, dials: MonsterDials):
     stats = stats.copy(attributes=new_attributes)
 
     # defenders wear medium or heavy armor if possible, otherwise natural armor
-    stats = stats.add_ac_templates([MediumArmor, HeavyArmor, NaturalArmor], uses_shield=True)
+    stats = stats.add_ac_templates([MediumArmor, HeavyArmor, NaturalArmor])
 
     return stats.apply_monster_dials(dials).copy(role=MonsterRole.Defender)
 

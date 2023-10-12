@@ -84,10 +84,6 @@ class BaseStatblock:
     def roleref(self) -> str:
         return f"the {self.role.value.lower()}"
 
-    @property
-    def could_use_shield(self) -> bool:
-        return self.creature_type.could_wear_armor
-
     def __copy_args__(self) -> dict:
         args: dict = dict(
             name=self.name,
@@ -213,15 +209,13 @@ class BaseStatblock:
         self,
         ac_template: ArmorClassTemplate,
         ac_modifier: int = 0,
-        uses_shield: bool | None = None,
     ) -> BaseStatblock:
-        return self.add_ac_templates([ac_template], ac_modifier, uses_shield)
+        return self.add_ac_templates([ac_template], ac_modifier)
 
     def add_ac_templates(
         self,
         ac_templates: List[ArmorClassTemplate],
         ac_modifier: int = 0,
-        uses_shield: bool | None = None,
     ) -> BaseStatblock:
         new_templates = self.ac_templates.copy()
         for ac in ac_templates:
@@ -229,11 +223,7 @@ class BaseStatblock:
                 new_templates.append(ac)
 
         new_ac_boost = self.ac_boost + ac_modifier
-        args: dict = dict(ac_templates=new_templates, ac_boost=new_ac_boost)
-        if uses_shield is not None:
-            uses_shield = uses_shield and self.could_use_shield
-            args.update(uses_shield=uses_shield)
-        return self.copy(**args)
+        return self.copy(ac_templates=new_templates, ac_boost=new_ac_boost)
 
     def grant_resistance_or_immunity(
         self,

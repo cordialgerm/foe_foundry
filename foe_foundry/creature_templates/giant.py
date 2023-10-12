@@ -1,22 +1,59 @@
 from math import ceil
+from typing import List, Tuple
 
 import numpy as np
-
-from foe_foundry.statblocks import BaseStatblock, MonsterDials
+from numpy.random import Generator
 
 from ..ac_templates import NaturalArmor, Unarmored
+from ..attack_template import AttackTemplate, natural, spell, weapon
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
+from ..role_types import MonsterRole
 from ..senses import Senses
 from ..size import Size, get_size_for_cr
-from ..statblocks import BaseStatblock
+from ..statblocks import BaseStatblock, MonsterDials
 from .template import CreatureTypeTemplate
 
 
 class _GiantTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Giant", creature_type=CreatureType.Giant)
+
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[AttackTemplate, BaseStatblock]:
+        if stats.role in {MonsterRole.Ambusher, MonsterRole.Skirmisher}:
+            attack_options = {weapon.Staff: 1, weapon.JavelinAndShield: 1, natural.Lob: 1}
+        elif stats.role in {MonsterRole.Artillery, MonsterRole.Controller}:
+            attack_options = {
+                weapon.JavelinAndShield: 1,
+                natural.Lob: 1,
+                spell.Firebolt: 1,
+                spell.Frostbolt: 1,
+                spell.Shock: 1,
+            }
+        elif stats.role in {MonsterRole.Leader, MonsterRole.Defender}:
+            attack_options = {weapon.SpearAndShield: 1, weapon.MaceAndShield: 1}
+        else:
+            attack_options = {
+                natural.Slam: 1,
+                weapon.Greatsword: 1,
+                weapon.Greataxe: 1,
+                weapon.Maul: 1,
+            }
+
+        choices: List[AttackTemplate] = []
+        weights = []
+        for c, w in attack_options.items():
+            choices.append(c)
+            weights.append(w)
+
+        weights = np.array(weights) / np.sum(weights)
+        indx = rng.choice(len(choices), p=weights)
+        attack = choices[indx]
+
+        return attack, stats
 
     def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         # Giants are beefy and don't wear much armor
@@ -40,10 +77,6 @@ class _GiantTemplate(CreatureTypeTemplate):
         )
         new_attributes = stats.attributes
 
-        # giants attack with melee weapons like clubs
-        attack_type = AttackType.MeleeWeapon
-        primary_damage_type = DamageType.Bludgeoning
-
         size = get_size_for_cr(cr=stats.cr, standard_size=Size.Large, rng=rng)
         if size <= Size.Large:
             size = Size.Large
@@ -64,8 +97,6 @@ class _GiantTemplate(CreatureTypeTemplate):
             attributes=new_attributes,
             size=size,
             languages=["Common", "Giant"],
-            primary_damage_type=primary_damage_type,
-            attack_type=attack_type,
         )
 
 

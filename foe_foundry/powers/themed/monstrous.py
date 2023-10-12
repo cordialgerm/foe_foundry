@@ -4,9 +4,10 @@ from typing import Dict, List, Set, Tuple
 import numpy as np
 from numpy.random import Generator
 
+from ...attack_template import natural, spell
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, Dazed, Swallowed
+from ...damage import AttackType, Bleeding, DamageType, Dazed, Swallowed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
@@ -14,6 +15,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -26,12 +28,16 @@ from ..scores import (
 
 def _score_could_be_monstrous(
     candidate: BaseStatblock,
-    size_boost: bool = True,
+    min_size: Size | None = None,
     additional_creature_types: Dict[CreatureType, float] | None = None,
     require_living: bool = True,
+    attack_modifiers: AttackModifiers = None,
 ) -> float:
     if require_living and not candidate.creature_type.is_living:
         return 0
+
+    if min_size is not None and candidate.size < min_size:
+        return NO_AFFINITY
 
     score = 0
     creature_types = {
@@ -43,19 +49,13 @@ def _score_could_be_monstrous(
         creature_types.update(additional_creature_types)
 
     score += creature_types.get(candidate.creature_type, 0)
-
-    if size_boost and candidate.size >= Size.Large:
-        score += MODERATE_AFFINITY
+    score += resolve_attack_modifier(candidate, attack_modifiers)
 
     return score
 
 
-def _as_monstrous(
-    candidate: BaseStatblock, size_boost: bool = False, boost_speed: int = 10
-) -> BaseStatblock:
+def _as_monstrous(candidate: BaseStatblock, boost_speed: int = 10) -> BaseStatblock:
     changes: dict = dict(attack_type=AttackType.MeleeNatural)
-    if size_boost:
-        changes.update(size=candidate.size.increment())
 
     if boost_speed != 0:
         new_speed = candidate.speed.delta(boost_speed)
@@ -74,7 +74,7 @@ class _Constriction(Power):
         super().__init__(name="Constriction", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return _score(candidate, attack_modifiers=[natural.Slam, natural.Tail])
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats)
@@ -99,14 +99,18 @@ class _Swallow(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return _score(
             candidate,
-            size_boost=True,
+            min_size=Size.Large,
             additional_creature_types={CreatureType.Ooze: HIGH_AFFINITY},
+            attack_modifiers={
+                "*": -1 * MODERATE_AFFINITY,
+                natural.Bite: EXTRA_HIGH_AFFINITY,
+            },
         )
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | None]:
-        stats = _as_monstrous(stats, size_boost=True)
+        stats = _as_monstrous(stats)
 
         dc = stats.difficulty_class
         threshold = easy_multiple_of_five(3 * stats.cr, min_val=5, max_val=40)
@@ -155,10 +159,13 @@ class _Corrosive(Power):
         super().__init__(name="Corrosive", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = _score_could_be_monstrous(candidate)
-        if candidate.secondary_damage_type == DamageType.Acid:
-            score += HIGH_AFFINITY
-        return score if score > 0 else NO_AFFINITY
+        return _score_could_be_monstrous(
+            candidate,
+            attack_modifiers={
+                "*": -1 * HIGH_AFFINITY,
+                natural.Spit: EXTRA_HIGH_AFFINITY,
+            },
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats, boost_speed=0)
@@ -204,24 +211,20 @@ class _LingeringWound(Power):
         super().__init__(name="Lingering Wound", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return _score(candidate, attack_modifiers=[natural.Bite, natural.Claw, natural.Horns])
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats)
-        if stats.primary_damage_type.is_physical:
-            stats = stats.copy(primary_damage_type=DamageType.Piercing)
 
         dc = max(10, min(15, stats.difficulty_class_easy))
-        dmg = int(floor(0.75 * stats.attack.average_damage))
-        dmg_type = stats.attack.damage.damage_type
+        dmg = DieFormula.target_value(0.75 * stats.attack.average_damage, force_die=Die.d6)
+        bleeding = Bleeding(damage=dmg, dc=dc)
         feature = Feature(
             name="Lingering Wound",
             action=ActionType.BonusAction,
             recharge=6,
             description=f"Immediately after hitting a creature, {stats.selfref} inflicts that creature with a lingering wound. \
-                The wounded creature takes {dmg} ongoing {dmg_type} damage at the end of each of its turns. \
-                The target may attempt a DC {dc} Constitution save at the end of each of its turns to end the effect. \
-                A creature may also use an action to perform a DC {dc} Medicine check to end the lingering wound.",
+                The creature gains {bleeding}",
         )
         return stats, feature
 
@@ -260,6 +263,9 @@ class _PetrifyingGaze(Power):
 
         if candidate.role in {MonsterRole.Ambusher, MonsterRole.Controller}:
             score += MODERATE_AFFINITY
+
+        if candidate.attack.name == spell.Gaze.attack_name:
+            score += HIGH_AFFINITY
 
         return score if score > 0 else NO_AFFINITY
 

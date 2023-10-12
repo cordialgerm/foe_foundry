@@ -29,6 +29,9 @@ def choose_enum(
     size: int | None = None,
     replace: bool = False,
 ) -> T | List[T]:
+    if p is not None:
+        p = np.array(p) / np.sum(p)
+
     indxs = rng.choice(a=len(values), size=size, replace=replace, p=p)
     if isinstance(indxs, int):
         return values[indxs]

@@ -1,12 +1,10 @@
 from math import ceil, floor
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
+from ...attack_template import natural
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, Dazed, conditions
@@ -16,6 +14,7 @@ from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -26,11 +25,20 @@ from ..scores import (
 )
 
 
-def _score(candidate: BaseStatblock) -> float:
+def score_giant(
+    candidate: BaseStatblock,
+    attack_modifiers: AttackModifiers = None,
+    min_cr: float | None = None,
+) -> float:
     if candidate.creature_type != CreatureType.Giant:
         return NO_AFFINITY
 
-    return HIGH_AFFINITY
+    if min_cr and candidate.cr < min_cr:
+        return NO_AFFINITY
+
+    score = HIGH_AFFINITY
+    score += resolve_attack_modifier(candidate, attack_modifiers)
+    return score
 
 
 class _ForcefulBlow(Power):
@@ -38,7 +46,7 @@ class _ForcefulBlow(Power):
         super().__init__(name="Forceful Blow", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_giant(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         if stats.size >= Size.Gargantuan:
@@ -64,7 +72,7 @@ class _ShoveAllies(Power):
         super().__init__(name="Forceful Blow", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_giant(candidate, attack_modifiers=natural.Slam)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -83,7 +91,7 @@ class _Boulder(Power):
         super().__init__(name="Boulder", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_giant(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -126,7 +134,7 @@ class _CloudRune(Power):
         super().__init__(name="Cloud Rune", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_giant(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = stats.grant_resistance_or_immunity(
@@ -155,7 +163,7 @@ class _FireRune(Power):
         super().__init__(name="Fire Rune", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_giant(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = stats.grant_resistance_or_immunity(
@@ -185,7 +193,7 @@ class _FrostRune(Power):
         super().__init__(name="Frost Rune", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_giant(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = stats.grant_resistance_or_immunity(
@@ -214,7 +222,7 @@ class _StoneRune(Power):
         super().__init__(name="Stone Rune", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_giant(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -235,7 +243,7 @@ class _HillRune(Power):
         super().__init__(name="Hill Rune", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_giant(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = stats.grant_resistance_or_immunity(
@@ -257,7 +265,7 @@ class _StormRune(Power):
         super().__init__(name="Storm Rune", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_giant(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = stats.grant_resistance_or_immunity(
@@ -280,7 +288,7 @@ class _Earthshaker(Power):
         super().__init__(name="Earthshaker", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_giant(candidate, attack_modifiers=natural.Slam)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

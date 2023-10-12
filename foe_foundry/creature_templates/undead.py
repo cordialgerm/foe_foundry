@@ -1,13 +1,15 @@
 from math import ceil, floor
+from typing import Tuple
 
 import numpy as np
-
-from foe_foundry.statblocks import BaseStatblock
+from numpy.random import Generator
 
 from ..ac_templates import Unarmored
+from ..attack_template import AttackTemplate, natural, spell, weapon
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
+from ..role_types import MonsterRole
 from ..size import Size, get_size_for_cr
 from ..statblocks import BaseStatblock
 from ..utils.rng import choose_enum
@@ -18,7 +20,46 @@ class _UndeadTemplate(CreatureTypeTemplate):
     def __init__(self):
         super().__init__(name="Undead", creature_type=CreatureType.Undead)
 
-    def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
+    def select_attack_template(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[AttackTemplate, BaseStatblock]:
+        if stats.role in {MonsterRole.Ambusher, MonsterRole.Skirmisher}:
+            options = [
+                weapon.Daggers,
+                natural.Claw,
+                weapon.Shortswords,
+                weapon.Shortbow,
+                weapon.JavelinAndShield,
+            ]
+        elif stats.role in {MonsterRole.Artillery, MonsterRole.Controller}:
+            options = [weapon.Longbow, spell.Deathbolt, spell.Frostbolt]
+        elif stats.role in {MonsterRole.Bruiser}:
+            options = [weapon.Polearm, weapon.Maul, weapon.Greataxe, weapon.Greatsword]
+        elif stats.role in {MonsterRole.Defender}:
+            options = [
+                weapon.MaceAndShield,
+                weapon.SpearAndShield,
+                weapon.SwordAndShield,
+                weapon.RapierAndShield,
+            ]
+        elif stats.role in {MonsterRole.Leader}:
+            options = [weapon.Staff, spell.Deathbolt, weapon.SwordAndShield]
+        else:
+            raise ValueError(f"Unsupported role {stats.role}")
+
+        index = rng.choice(len(options))
+        attack = options[index]
+
+        # Undead do Necrotic or Cold damage if the attack doesn't already have a secondary damage type
+        if attack.secondary_damage_type is None:
+            secondary_damage_type = choose_enum(
+                rng, [DamageType.Necrotic, DamageType.Cold], p=[2, 1]
+            )
+            stats = stats.copy(secondary_damage_type=secondary_damage_type)
+
+        return attack, stats
+
+    def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         # Plants have extremely low mental stats and low Dexterity scores
         stats = stats.scale(
             {

@@ -1,5 +1,5 @@
 from math import ceil, floor
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 import numpy as np
 from numpy.random import Generator
@@ -8,13 +8,15 @@ from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
 
+from ...attack_template import natural as natural_attacks
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, DamageType, Fatigue
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -25,13 +27,19 @@ from ..scores import (
 )
 
 
-def score_fiend(candidate: BaseStatblock, min_cr: float | None = None) -> float:
+def score_fiend(
+    candidate: BaseStatblock,
+    min_cr: float | None = None,
+    attack_modifiers: AttackModifiers = None,
+) -> float:
     if candidate.creature_type != CreatureType.Fiend:
         return NO_AFFINITY
     if min_cr is not None and candidate.cr < min_cr:
         return NO_AFFINITY
 
-    return HIGH_AFFINITY
+    score = HIGH_AFFINITY
+    score += resolve_attack_modifier(candidate, attack_modifiers)
+    return score
 
 
 class _EmpoweredByDeath(Power):
@@ -143,7 +151,7 @@ class _FiendishBite(Power):
         super().__init__(name="Fiendish Bite", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(candidate)
+        return score_fiend(candidate, attack_modifiers=natural_attacks.Bite)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -173,7 +181,7 @@ class _FiendishSummons(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         _, _, description = summoning.determine_summon_formula(
-            summon_list=summoning.Fiends, summon_cr_target=stats.cr / 2.5, rng=rng
+            summoner=summoning.Fiends, summon_cr_target=stats.cr / 2.5, rng=rng
         )
 
         feature = Feature(
@@ -187,11 +195,35 @@ class _FiendishSummons(Power):
         return stats, feature
 
 
+class _TemptingOffer(Power):
+    def __init__(self):
+        super().__init__(name="Tempting Offer", power_type=PowerType.Creature)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_fiend(candidate, min_cr=3)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        dc = stats.difficulty_class
+        fatigue = Fatigue()
+        feature = Feature(
+            name="Tempting Offer",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} makes a tempting offer to a creature that can hear it within 60 feet. \
+                That creature must make a DC {dc} Wisdom saving throw. On a failure, the creature gains a level of {fatigue}. \
+                The creature may instead accept the offer. In doing so, it loses all levels of fatigue gained in this way but is contractually bound to the offer",
+        )
+        return stats, feature
+
+
 EmpoweredByDeath: Power = _EmpoweredByDeath()
 FiendishBite: Power = _FiendishBite()
 FiendishSummons: Power = _FiendishSummons()
 FiendishTeleportation: Power = _FiendishTeleporation()
 RelishYourFailure: Power = _RelishYourFailure()
+TemptingOffer: Power = _TemptingOffer()
 WallOfFire: Power = _WallOfFire()
 
 FiendishPowers: List[Power] = [
@@ -200,5 +232,6 @@ FiendishPowers: List[Power] = [
     FiendishSummons,
     FiendishTeleportation,
     RelishYourFailure,
+    TemptingOffer,
     WallOfFire,
 ]

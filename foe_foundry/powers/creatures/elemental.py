@@ -165,12 +165,12 @@ class _ElementalShroud(Power):
         stats = _as_elemental(stats)
 
         dmg_type = stats.secondary_damage_type or DamageType.Fire
-        dmg = int(ceil(5 + stats.cr))
+        dmg = DieFormula.target_value(5 + stats.cr)
 
         feature = Feature(
             name="Elemental Shroud",
             description=f"When {stats.selfref} is hit by a melee attack, their body is shrouded with {dmg_type} energy.\
-                Until the start of their next turn, any creature who touches {stats.selfref} or hits them with a melee attack takes {dmg} {dmg_type} damage.",
+                Until the start of their next turn, any creature who touches {stats.selfref} or hits them with a melee attack takes {dmg.description} {dmg_type} damage.",
             uses=1,
             action=ActionType.Reaction,
         )
@@ -338,7 +338,7 @@ class _ElementalReplication(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         _, _, description = summoning.determine_summon_formula(
-            summon_list=summoning.Elementals, summon_cr_target=stats.cr / 4.0, rng=rng
+            summoner=stats.secondary_damage_type, summon_cr_target=stats.cr / 4.0, rng=rng
         )
 
         feature = Feature(

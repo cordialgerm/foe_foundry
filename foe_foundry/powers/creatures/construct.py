@@ -1,5 +1,5 @@
 from math import ceil
-from typing import List, Tuple
+from typing import Dict, List, Tuple
 
 from num2words import num2words
 from numpy.random import Generator
@@ -8,6 +8,7 @@ from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
 
+from ...attack_template import natural as natural_attacks
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
@@ -16,6 +17,7 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
+from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -26,11 +28,14 @@ from ..scores import (
 )
 
 
-def _score(candidate: BaseStatblock) -> float:
+def _score(candidate: BaseStatblock, attack_modifiers: AttackModifiers = None) -> float:
     if candidate.creature_type != CreatureType.Construct:
         return NO_AFFINITY
 
-    return HIGH_AFFINITY
+    score = HIGH_AFFINITY
+    score += resolve_attack_modifier(candidate, attack_modifiers)
+
+    return score if score > 0 else NO_AFFINITY
 
 
 class _Sentinel(Power):
@@ -140,7 +145,13 @@ class _Smother(Power):
         super().__init__(name="Smother", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return _score(
+            candidate,
+            attack_modifiers={
+                natural_attacks.Slam: HIGH_AFFINITY,
+                "*": NO_AFFINITY,
+            },
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -222,7 +233,7 @@ class _SpellStoring(Power):
         feature = Feature(
             name="Spell Storing",
             action=ActionType.Action,
-            description=f"{stats.selfref} stores a single spell of {level_text} level or lower. {stats.selfref} may cast the spell using a spell save DC of {dc}. \
+            description=f"{stats.selfref.capitalize()} stores a single spell of {level_text} level or lower. {stats.selfref} may cast the spell using a spell save DC of {dc}. \
                 When the spell is cast or a new spell is stored, any previously stored spell is lost. Some example spells include {examples}.",
         )
 
