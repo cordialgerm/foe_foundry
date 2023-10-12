@@ -111,6 +111,9 @@ class _AdrenalineRush(Power):
 
     def score(self, candidate: BaseStatblock) -> float:
         # this is amazing for ambushers, bruisers, and melee fighters
+        if candidate.cr < 3:
+            return NO_AFFINITY
+
         score = 0
         if candidate.primary_attribute in {Stats.DEX, Stats.STR}:
             score += MODERATE_AFFINITY
@@ -275,7 +278,7 @@ class _Regeneration(Power):
             action=ActionType.Feature,
             description=f"{stats.selfref.capitalize()} regains {hp} hp at the start of its turn. \
                 If {stats.selfref} takes {weakness}, this trait doesn't function at the start of {stats.selfref}'s next turn. \
-                {stats.selfref} only dies if it starts its turn with 0 hp and doesn't regenerate.",
+                {stats.selfref.capitalize()} only dies if it starts its turn with 0 hp and doesn't regenerate.",
         )
         return stats, feature
 

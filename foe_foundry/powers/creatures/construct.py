@@ -149,7 +149,7 @@ class _Smother(Power):
             candidate,
             attack_modifiers={
                 natural_attacks.Slam: HIGH_AFFINITY,
-                "*": -1 * MODERATE_AFFINITY,
+                "*": NO_AFFINITY,
             },
         )
 

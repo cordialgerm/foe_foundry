@@ -194,7 +194,7 @@ class _RejectDivinity(Power):
         feature = Feature(
             name="Reject Divinity",
             action=ActionType.Reaction,
-            description=f"When a creature {stats.selfref} can see within {distance} feet regains hit points, \
+            description=f"When a creature {stats.selfref} can see within {distance} feet regains hit points from a Divine source, \
                 {stats.selfref} reduces the number of hit points gained to 0 \
                 and {stats.selfref} deals {dmg.description} necrotic damage to that creature.",
         )

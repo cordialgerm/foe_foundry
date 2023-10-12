@@ -137,7 +137,7 @@ def _role_powers(role_type: MonsterRole) -> List[Power]:
     elif role_type == MonsterRole.Bruiser:
         return bruiser.BruiserPowers + [tough.GoesDownFighting, reckless.Frenzy]
     elif role_type == MonsterRole.Controller:
-        return controller.ControllerPowers + [warrior.PinningShot]
+        return controller.ControllerPowers
     elif role_type == MonsterRole.Defender:
         return defender.DefenderPowers + [warrior.Challenger]
     elif role_type == MonsterRole.Leader:

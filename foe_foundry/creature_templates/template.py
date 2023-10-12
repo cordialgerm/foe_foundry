@@ -48,18 +48,13 @@ class CreatureTypeTemplate(ABC):
             i = rng.choice(n)
             return AllRoles[i]
 
-    def select_powers(
-        self, stats: BaseStatblock, rng: np.random.Generator, offset: int = 0
-    ) -> List[Power]:
-        # TODO - make this scale with CR and let creature types customize this
-
-        n = (1 if stats.recommended_powers <= 3 else 2) + offset
-        if n <= 0:
+    def select_powers(self, stats: BaseStatblock, rng: np.random.Generator) -> List[Power]:
+        if stats.recommended_powers == 0:
             return []
 
         # Creature Type
         creature_powers = select_powers(
-            stats=stats, power_type=PowerType.Creature, rng=rng, n=n
+            stats=stats, power_type=PowerType.Creature, rng=rng, n=3
         )
 
         # Role
@@ -67,7 +62,7 @@ class CreatureTypeTemplate(ABC):
             stats=stats,
             power_type=PowerType.Role,
             rng=rng,
-            n=n if len(creature_powers) > 0 else n + 1,
+            n=3,
         )
 
         # Themed
@@ -75,23 +70,14 @@ class CreatureTypeTemplate(ABC):
             stats=stats,
             power_type=PowerType.Theme,
             rng=rng,
-            n=n if len(creature_powers) > 0 else n + 1,
+            n=6,
         )
 
         # Choose Candidates
         candidates = set(creature_powers) | set(role_powers) | set(theme_powers)
 
         candidates = [c for c in candidates if c is not None]
-        multipliers = {
-            PowerType.Creature: 1,
-            PowerType.Role: 1,
-            PowerType.Theme: 1,
-        }
-        multipliers = np.array([multipliers[c.power_type] for c in candidates], dtype=float)
-
-        selection = select_from_powers(
-            stats, candidates, rng, n=stats.recommended_powers, multipliers=multipliers
-        )
+        selection = select_from_powers(stats, candidates, rng, n=stats.recommended_powers)
         return selection
 
     def create(

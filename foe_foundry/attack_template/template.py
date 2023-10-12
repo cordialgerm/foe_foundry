@@ -5,8 +5,6 @@ from ..die import Die
 from ..statblocks.base import BaseStatblock
 from .fix import adjust_attack
 
-# TODO - debilitating conditions should be based on attack templates so refactor all that
-
 
 class AttackTemplate:
     def __init__(
