@@ -125,12 +125,24 @@ class _Lob(AttackTemplate):
         )
 
 
+class _Thrash(AttackTemplate):
+    def __init__(self):
+        super().__init__(
+            attack_name="Thrash",
+            attack_type=AttackType.MeleeWeapon,
+            damage_type=DamageType.Piercing,
+            die=Die.d6,
+            reach_bonus_for_huge=True,
+        )
+
+
 Claw: AttackTemplate = _Claw()
 Bite: AttackTemplate = _Bite()
 Horns: AttackTemplate = _Horns()
 Stomp: AttackTemplate = _Stomp()
 Slam: AttackTemplate = _Slam()
 Tail: AttackTemplate = _Tail()
+Thrash: AttackTemplate = _Thrash()
 Lob: AttackTemplate = _Lob()
 Spit: AttackTemplate = _Spit()
 Spines: AttackTemplate = _Spines()

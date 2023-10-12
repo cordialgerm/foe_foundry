@@ -199,6 +199,18 @@ class _JavelinAndShield(AttackTemplate):
         )
 
 
+class _Shortswords(AttackTemplate):
+    def __init__(self):
+        super().__init__(
+            attack_name="Shortswords",
+            attack_type=AttackType.MeleeWeapon,
+            damage_type=DamageType.Slashing,
+            die=Die.d6,
+            split_secondary_damage=True,
+            allows_shield=False,
+        )
+
+
 Crossbow: AttackTemplate = _Crossbow()
 Daggers: AttackTemplate = _Daggers()
 Greatsword: AttackTemplate = _Greatsword()
@@ -210,6 +222,7 @@ Maul: AttackTemplate = _Maul()
 Polearm: AttackTemplate = _Polearm()
 RapierAndShield: AttackTemplate = _RapierAndShield()
 Shortbow: AttackTemplate = _Shortbow()
+Shortswords: AttackTemplate = _Shortswords()
 SpearAndShield: AttackTemplate = _SpearAndShield()
 SwordAndShield: AttackTemplate = _SwordAndShield()
 Staff: AttackTemplate = _Staff()
