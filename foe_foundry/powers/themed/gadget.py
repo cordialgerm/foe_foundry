@@ -28,20 +28,24 @@ from ..scores import (
 )
 
 
-def _score_gadget(candidate: BaseStatblock, require_living: bool = False) -> float:
+def _score_gadget(
+    candidate: BaseStatblock, require_living: bool = False, ignore_casters: bool = False
+) -> float:
     # these powers make sense for creatures that are capable of using equipment
     if not candidate.creature_type.could_use_equipment:
         return NO_AFFINITY
     elif require_living and not candidate.creature_type.is_living:
         return NO_AFFINITY
+    elif ignore_casters and candidate.attack_type.is_spell():
+        return NO_AFFINITY
 
     creature_types = {
-        CreatureType.Humanoid: HIGH_AFFINITY,
+        CreatureType.Humanoid: MODERATE_AFFINITY,
         CreatureType.Giant: MODERATE_AFFINITY,
     }
 
     roles = {
-        MonsterRole.Leader: HIGH_AFFINITY,
+        MonsterRole.Leader: MODERATE_AFFINITY,
         MonsterRole.Controller: MODERATE_AFFINITY,
         MonsterRole.Ambusher: MODERATE_AFFINITY,
         MonsterRole.Defender: LOW_AFFINITY,
@@ -114,7 +118,7 @@ class _Net(Power):
         super().__init__(name="Net", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_gadget(candidate)
+        return _score_gadget(candidate, ignore_casters=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -137,10 +141,11 @@ class _Net(Power):
             ac = 14
             hp = 20
         else:
-            name = "Electrifying Net"
+            dmg_type = stats.secondary_damage_type or DamageType.Lightning
+            name = f"{dmg_type.capitalize()}-Infused Net"
             ac = 16
             hp = 25
-            additional = f" A creature grappled in this way suffers {dmg} ongoing lightning damage at the start of each of its turn, \
+            additional = f" A creature grappled in this way suffers {dmg} ongoing {dmg_type} damage at the start of each of its turn, \
                 and whenever the creature attempts to cast a spell it must succeed on a DC {dc} concentration check. On a failure, the spell fails."
 
         feature = Feature(
@@ -160,7 +165,7 @@ class _MagicalExplosive(Power):
         super().__init__(name="Net", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_gadget(candidate)
+        return _score_gadget(candidate, ignore_casters=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         damage_types = flavorful_damage_types(stats, default=DamageType.Fire) | {

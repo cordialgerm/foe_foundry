@@ -18,6 +18,10 @@ class _ArcaneArmorClassTemplate(ArmorClassTemplate):
     def is_armored(self) -> bool:
         return False
 
+    @property
+    def is_heavily_armored(self) -> bool:
+        return False
+
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         quality_level = stats.ac_boost
 
@@ -35,7 +39,10 @@ class _ArcaneArmorClassTemplate(ArmorClassTemplate):
             has_shield=False,
             is_armored=False,
             quality_level=quality_level,
-            score=ac + 0.7 - (1000 if not stats.attributes.is_sapient else 0),
+            score=ac
+            + 0.7
+            - (1000 if not stats.attributes.is_sapient else 0)
+            - (1000 if not stats.attack_type.is_spell() else 0),
         )
 
 

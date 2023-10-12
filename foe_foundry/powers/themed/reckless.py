@@ -8,6 +8,7 @@ from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
 
+from ...attack_template import natural, weapon
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
@@ -17,6 +18,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
+from ..attack_modifiers import resolve_attack_modifier
 from ..power import Power, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
@@ -33,9 +35,24 @@ def _score_could_be_reckless_fighter(
     if not candidate.attack_type.is_melee():
         return NO_AFFINITY
 
+    if not allow_defender and candidate.role == MonsterRole.Defender:
+        return NO_AFFINITY
+
     score = 0
-    if candidate.creature_type.could_use_weapon:
-        score += LOW_AFFINITY
+
+    score += resolve_attack_modifier(
+        candidate,
+        attack_modifiers=[
+            natural.Claw,
+            natural.Bite,
+            natural.Tail,
+            natural.Lob,
+            natural.Slam,
+            weapon.Greataxe,
+            weapon.Greatsword,
+            weapon.Maul,
+        ],
+    )
 
     if candidate.creature_type in {
         CreatureType.Beast,
@@ -43,20 +60,14 @@ def _score_could_be_reckless_fighter(
     }:
         score += MODERATE_AFFINITY
 
-    if candidate.primary_attribute_score == Stats.STR:
-        score += MODERATE_AFFINITY
-
-    if candidate.role in {MonsterRole.Bruiser, MonsterRole.Default}:
-        score += MODERATE_AFFINITY
-
-    if allow_defender and candidate.role == MonsterRole.Defender:
+    if candidate.role in {MonsterRole.Bruiser}:
         score += MODERATE_AFFINITY
 
     if large_size_boost and candidate.size >= Size.Large:
         score += MODERATE_AFFINITY
 
-    if candidate.attributes.WIS <= 12:
-        score += MODERATE_AFFINITY
+    if candidate.attributes.WIS >= 12:
+        score -= HIGH_AFFINITY
 
     return score if score > 0 else NO_AFFINITY
 
@@ -182,12 +193,13 @@ class _FlurryOfBlows(Power):
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_reckless_fighter(stats)
         attacks = max(3, int(ceil(1.5 * stats.multiattack)))
+        attack_name = stats.attack.name
 
         feature = Feature(
             name="Flurry of Blows",
             action=ActionType.Action,
             recharge=5,
-            description=f"{stats.selfref.capitalize()} makes a reckless flurry of {attacks} attacks. Attacks against {stats.selfref} have advantage until the end of {stats.selfref}'s next turn.",
+            description=f"{stats.selfref.capitalize()} makes a reckless flurry of {attacks} {attack_name}. Attacks against {stats.selfref} have advantage until the end of {stats.selfref}'s next turn.",
         )
 
         return stats, feature

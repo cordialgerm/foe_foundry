@@ -36,7 +36,7 @@ def _score_could_be_organized(
         CreatureType.Dragon: MODERATE_AFFINITY,
         CreatureType.Giant: LOW_AFFINITY,
     }
-    roles = {MonsterRole.Leader: EXTRA_HIGH_AFFINITY}
+    roles = {MonsterRole.Leader: HIGH_AFFINITY}
 
     if not requires_intelligence:
         creature_types[CreatureType.Beast] = MODERATE_AFFINITY

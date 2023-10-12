@@ -109,35 +109,35 @@ class _DeadlyAmbusher(Power):
         return stats, feature
 
 
-class _DeadlyPrecision(Power):
-    def __init__(self):
-        super().__init__(name="Deadly Precision", power_type=PowerType.Role)
+# class _DeadlyPrecision(Power):
+#     def __init__(self):
+#         super().__init__(name="Deadly Precision", power_type=PowerType.Role)
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_ambusher(candidate)
+#     def score(self, candidate: BaseStatblock) -> float:
+#         return score_ambusher(candidate)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        stats = as_ambusher(stats)
-        dmg = DieFormula.target_value(2 + 0.5 * stats.cr, force_die=Die.d6)
-        feature = Feature(
-            name="Deadly Precision",
-            action=ActionType.Feature,
-            hidden=True,
-            modifies_attack=True,
-            description=f"If the attack was made with advantage, it deals an additional {dmg.description} damage",
-        )
-        return stats, feature
+#     def apply(
+#         self, stats: BaseStatblock, rng: Generator
+#     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+#         stats = as_ambusher(stats)
+#         dmg = DieFormula.target_value(2 + 0.5 * stats.cr, force_die=Die.d6)
+#         feature = Feature(
+#             name="Deadly Precision",
+#             action=ActionType.Feature,
+#             hidden=True,
+#             modifies_attack=True,
+#             description=f"If the attack was made with advantage, it deals an additional {dmg.description} damage",
+#         )
+#         return stats, feature
 
 
-DeadlyPrecision: Power = _DeadlyPrecision()
+# DeadlyPrecision: Power = _DeadlyPrecision()
 DistractingAttack: Power = _DistractingAttack()
 ShadowyMovement: Power = _ShadowyMovement()
 DeadlyAmbusher: Power = _DeadlyAmbusher()
 
 AmbusherPowers: List[Power] = [
-    DeadlyPrecision,
+    # DeadlyPrecision,
     DistractingAttack,
     ShadowyMovement,
     DeadlyAmbusher,

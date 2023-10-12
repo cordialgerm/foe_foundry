@@ -33,6 +33,10 @@ class ArmorClassTemplate(ABC):
     def is_armored(self) -> bool:
         raise NotImplementedError
 
+    @abstractproperty
+    def is_heavily_armored(self) -> bool:
+        raise NotImplementedError
+
     @abstractmethod
     def resolve(self, stats: Any, uses_shield: bool) -> ResolvedArmorClass:
         raise NotImplementedError

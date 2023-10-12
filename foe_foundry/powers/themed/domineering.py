@@ -24,7 +24,9 @@ from ..scores import (
 )
 
 
-def _score_is_domineering(candidate: BaseStatblock, min_cr: int = 3) -> float:
+def _score_is_domineering(
+    candidate: BaseStatblock, min_cr: int = 3, require_magic: bool = False
+) -> float:
     if candidate.attributes.CHA <= 14:
         return NO_AFFINITY
 
@@ -38,6 +40,12 @@ def _score_is_domineering(candidate: BaseStatblock, min_cr: int = 3) -> float:
         CreatureType.Celestial: MODERATE_AFFINITY,
         CreatureType.Undead: MODERATE_AFFINITY,
     }
+
+    is_magical = (
+        creature_types.get(candidate.creature_type, 0) >= 0 or candidate.attack_type.is_spell()
+    )
+    if require_magic and not is_magical:
+        return NO_AFFINITY
 
     roles = {MonsterRole.Leader: HIGH_AFFINITY, MonsterRole.Controller: MODERATE_AFFINITY}
 
@@ -83,7 +91,7 @@ class _Charm(Power):
         super().__init__(name="Commanding Presence", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_domineering(candidate, min_cr=7)
+        return _score_is_domineering(candidate, min_cr=7, require_magic=True)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

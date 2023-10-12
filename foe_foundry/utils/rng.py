@@ -1,34 +1,35 @@
 from enum import StrEnum
-from typing import Any, List, TypeVar, overload
+from typing import Any, Dict, List, TypeVar, overload
 
 import numpy as np
 
-T = TypeVar("T", bound=StrEnum)
+E = TypeVar("E", bound=StrEnum)
+T = TypeVar("T")
 
 
 @overload
-def choose_enum(rng: np.random.Generator, values: List[T], p: Any = None) -> T:
+def choose_enum(rng: np.random.Generator, values: List[E], p: Any = None) -> E:
     pass
 
 
 @overload
 def choose_enum(
     rng: np.random.Generator,
-    values: List[T],
+    values: List[E],
     p: Any = None,
     size: int | None = None,
     replace: bool = False,
-) -> List[T]:
+) -> List[E]:
     pass
 
 
 def choose_enum(
     rng: np.random.Generator,
-    values: List[T],
+    values: List[E],
     p: Any = None,
     size: int | None = None,
     replace: bool = False,
-) -> T | List[T]:
+) -> E | List[E]:
     if p is not None:
         p = np.array(p) / np.sum(p)
 
@@ -37,3 +38,39 @@ def choose_enum(
         return values[indxs]
     else:
         return [values[i] for i in indxs]
+
+
+@overload
+def choose_options(rng: np.random.Generator, options: Dict[T, float] | List[T]) -> T:
+    pass
+
+
+@overload
+def choose_options(
+    rng: np.random.Generator,
+    options: Dict[T, float] | List[T],
+    size: int,
+) -> List[T]:
+    pass
+
+
+def choose_options(
+    rng: np.random.Generator,
+    options: Dict[T, float] | List[T],
+    size: int | None = None,
+) -> T | List[T]:
+    if isinstance(options, list):
+        options = {o: 1 for o in options}
+
+    items, weights = [], []
+    for item, weight in options.items():
+        items.append(item)
+        weights.append(weight)
+
+    weights = np.array(weights, dtype=float) / np.sum(weights)
+
+    indxs = rng.choice(a=len(items), size=size, replace=False, p=weights)
+    if isinstance(indxs, int):
+        return items[indxs]
+    else:
+        return [items[i] for i in indxs]

@@ -34,16 +34,14 @@ def _score_clever(candidate: BaseStatblock) -> float:
     ):
         return NO_AFFINITY
 
-    score = LOW_AFFINITY
+    score = 0
 
-    if candidate.attributes.INT >= 16:
-        score += LOW_AFFINITY
+    high_int = candidate.attributes.INT >= 16
+    high_wis = candidate.attributes.WIS >= 16
+    high_cha = candidate.attributes.CHA >= 16
 
-    if candidate.attributes.CHA >= 16:
-        score += LOW_AFFINITY
-
-    if candidate.attributes.WIS >= 16:
-        score += LOW_AFFINITY
+    if high_int + high_wis + high_cha >= 2:
+        score += MODERATE_AFFINITY
 
     if candidate.role in {MonsterRole.Leader, MonsterRole.Controller}:
         score += MODERATE_AFFINITY

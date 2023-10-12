@@ -28,13 +28,19 @@ def score_chaotic(candidate: BaseStatblock, min_cr: float | None = None) -> floa
     if min_cr and candidate.cr < min_cr:
         return NO_AFFINITY
 
+    score = 0
+
     creature_types = {
         CreatureType.Fey: HIGH_AFFINITY,
         CreatureType.Aberration: HIGH_AFFINITY,
-        CreatureType.Humanoid: LOW_AFFINITY,
         CreatureType.Monstrosity: LOW_AFFINITY,
     }
-    return creature_types.get(candidate.creature_type, NO_AFFINITY)
+    score += creature_types.get(candidate.creature_type, NO_AFFINITY)
+
+    if candidate.attack_type.is_spell():
+        score += LOW_AFFINITY
+
+    return score if score > 0 else NO_AFFINITY
 
 
 class _ChaoticSpace(Power):
@@ -66,19 +72,27 @@ class _EldritchBeacon(Power):
     def __init__(self):
         super().__init__(name="Eldritch Beacon", power_type=PowerType.Theme)
 
+    def _summon_formula(self, stats: BaseStatblock, rng: Generator) -> str | None:
+        try:
+            summon_cr_target = stats.cr / 5
+            _, _, description = summoning.determine_summon_formula(
+                summoner=stats.creature_type, summon_cr_target=summon_cr_target, rng=rng
+            )
+            return description
+        except:
+            return None
+
     def score(self, candidate: BaseStatblock) -> float:
-        return score_chaotic(candidate, min_cr=5)
+        score = score_chaotic(candidate, min_cr=5)
+        if score > 0 and self._summon_formula(candidate, np.random.default_rng()) is None:
+            return NO_AFFINITY
+        return score
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         hp = easy_multiple_of_five(stats.cr * 5, min_val=5, max_val=30)
         ac = 10
         duration = DieFormula.from_expression("1d4 + 1")
-
-        summon_cr_target = stats.cr / 5
-
-        _, _, description = summoning.determine_summon_formula(
-            summoner=stats.creature_type, summon_cr_target=summon_cr_target, rng=rng
-        )
+        description = self._summon_formula(stats, rng)
 
         feature = Feature(
             name="Eldritch Beacon",

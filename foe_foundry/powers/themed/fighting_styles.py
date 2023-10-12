@@ -5,6 +5,7 @@ from numpy.random import Generator
 
 from ...attack_template import natural, spell, weapon
 from ...attributes import Stats
+from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
@@ -53,6 +54,9 @@ def score(
 
     if attack_modifiers is not None and score == 0:
         return NO_AFFINITY
+
+    if candidate.creature_type == CreatureType.Humanoid:
+        score += MODERATE_AFFINITY
 
     if candidate.role in target_roles:
         score += HIGH_AFFINITY
@@ -129,6 +133,15 @@ class _Interception(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate,
+            attack_modifiers=[
+                weapon.SwordAndShield,
+                weapon.SpearAndShield,
+                weapon.Greataxe,
+                weapon.Polearm,
+                weapon.MaceAndShield,
+                weapon.RapierAndShield,
+                weapon.Shortswords,
+            ],
             target_roles=[MonsterRole.Defender],
         )
 
@@ -163,10 +176,11 @@ class _BaitAndSwitch(Power):
     def apply(
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        bonus = stats.attributes.primary_attribute_score
+        bonus = stats.attributes.primary_mod
         feature = Feature(
             name="Bait and Switch",
             action=ActionType.BonusAction,
+            uses=1,
             description=f"{stats.selfref.capitalize()} switches places with a friendly creature within 5 feet. \
                 Until the end of its next turn, the friendly creature gains a +{bonus} bonus to its AC.",
         )
@@ -266,11 +280,11 @@ class _ThrownWeaponExpert(Power):
 
 class _ArmorMaster(Power):
     def __init__(self):
-        super().__init__(name="Thrown Weapon Expert", power_type=PowerType.Theme)
+        super().__init__(name="Armor Master", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         organized = has_training(candidate)
-        armored = any([c for c in candidate.ac_templates if c.is_armored])
+        armored = any([c for c in candidate.ac_templates if c.is_heavily_armored])
         if organized and armored:
             return HIGH_AFFINITY
         else:
@@ -280,7 +294,7 @@ class _ArmorMaster(Power):
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
         feature = Feature(
-            name="Armor Master",
+            name="Heavy Armor Master",
             action=ActionType.Feature,
             description=f"{stats.selfref.capitalize()} reduces the amount of bludgeoning, piercing, and slashing damage it receives by 3.",
         )
@@ -301,10 +315,11 @@ class _ShieldMaster(Power):
     def apply(
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        dc = stats.difficulty_class
         feature = Feature(
             name="Shield Slam",
             action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} uses the Shove action as a bonus action.",
+            description=f"{stats.selfref.capitalize()} shoves a creature within 5 feet. It must make a DC {dc} Strength save or be pushed up to 5 feet and fall **Prone**.",
         )
         return stats, feature
 
@@ -341,7 +356,7 @@ class _GreatWeaponFighting(Power):
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d12)
+        dmg = DieFormula.target_value(1.7 * stats.attack.average_damage, force_die=Die.d12)
         dmg_type = stats.attack.damage.damage_type
         feature = Feature(
             name="Overpowering Strike",

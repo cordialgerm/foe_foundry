@@ -31,7 +31,6 @@ def _score_has_teleport(candidate: BaseStatblock) -> float:
         CreatureType.Fey: HIGH_AFFINITY,
         CreatureType.Fiend: MODERATE_AFFINITY,
         CreatureType.Aberration: HIGH_AFFINITY,
-        CreatureType.Humanoid: MODERATE_AFFINITY,
     }
     score += creature_types.get(candidate.creature_type, 0)
 
@@ -42,7 +41,7 @@ def _score_has_teleport(candidate: BaseStatblock) -> float:
     score += roles.get(candidate.role, 0)
 
     if candidate.attack_type.is_spell():
-        score += LOW_AFFINITY
+        score += MODERATE_AFFINITY
 
     return score
 
