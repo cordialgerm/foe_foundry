@@ -36,7 +36,7 @@ def _score_gadget(candidate: BaseStatblock, require_living: bool = False) -> flo
         return NO_AFFINITY
 
     creature_types = {
-        CreatureType.Humanoid: EXTRA_HIGH_AFFINITY,
+        CreatureType.Humanoid: HIGH_AFFINITY,
         CreatureType.Giant: MODERATE_AFFINITY,
     }
 

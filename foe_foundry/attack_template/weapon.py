@@ -1,3 +1,5 @@
+from typing import List
+
 from ..damage import AttackType, DamageType
 from ..die import Die
 from .template import AttackTemplate

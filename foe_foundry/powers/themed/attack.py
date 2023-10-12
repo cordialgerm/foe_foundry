@@ -1,7 +1,3 @@
-# primary matches = moderate
-# secondary matches = low
-# flavorful matches = low
-
 from typing import List, Set, Tuple
 
 import numpy as np
@@ -46,11 +42,17 @@ def score(
         score += MODERATE_AFFINITY
     if candidate.secondary_damage_type in target_damage_type:
         score += MODERATE_AFFINITY
-    if len(flavorful_damage_types(candidate).intersection(target_damage_type)):
-        score += MODERATE_AFFINITY
 
+    # if none of the above conditions are met then the power doesn't make sense
+    # these remaining factors don't determine eligibility, just likelyhood
     if score == 0:
         return NO_AFFINITY
+
+    if candidate.role in target_roles:
+        score += HIGH_AFFINITY
+
+    if len(flavorful_damage_types(candidate).intersection(target_damage_type)):
+        score += MODERATE_AFFINITY
 
     if size_boost and candidate.size >= Size.Large:
         score += MODERATE_AFFINITY
@@ -58,9 +60,6 @@ def score(
         score += MODERATE_AFFINITY
     if size_boost and candidate.size >= Size.Gargantuan:
         score += MODERATE_AFFINITY
-
-    if candidate.role in target_roles:
-        score += HIGH_AFFINITY
 
     return score
 
@@ -507,8 +506,6 @@ class _GrazingAttack(Power):
 
 
 class _CleavingAttack(Power):
-    # deal X damage one additional target within reach on a hit
-    # Greataxe
     def __init__(self):
         super().__init__(name="Cleaving Attack", power_type=PowerType.Theme)
 
@@ -624,10 +621,49 @@ class _WeakeningAttack(Power):
         return stats, feature
 
 
+class _DisarmingAttack(Power):
+    def __init__(self):
+        super().__init__(name="Disarming Attack", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate,
+            target_roles=[MonsterRole.Controller, MonsterRole.Artillery],
+            attack_modifiers=[
+                weapon.SwordAndShield,
+                weapon.Greataxe,
+                weapon.Greatsword,
+                weapon.MaceAndShield,
+                weapon.Maul,
+                weapon.Polearm,
+                weapon.RapierAndShield,
+                weapon.SpearAndShield,
+                weapon.Shortswords,
+                weapon.SwordAndShield,
+                weapon.Staff,
+                weapon.Whip,
+            ],
+        )
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        dc = stats.difficulty_class_easy
+        feature = Feature(
+            name="Disarming Attack",
+            action=ActionType.BonusAction,
+            recharge=5,
+            description=f"Immediately after hitting with an attack, {stats.selfref} forces the target to make a DC {dc} Strength saving throw. \
+                On a failure, the target must drop one item of {stats.selfref}'s choice that it is holding. The item lands at the target's feet.",
+        )
+        return stats, feature
+
+
 BlindingAttack: Power = _BlindingAttack()
 BleedingAttack: Power = _BleedingAttack()
 CharmingAttack: Power = _CharmingAttack()
 CleavingAttack: Power = _CleavingAttack()
+DisarmingAttack: Power = _DisarmingAttack()
 BurningAttack: Power = _BurningAttack()
 DazingAttacks: Power = _DazingAttack()
 FearingAttack: Power = _FearingAttack()
@@ -648,6 +684,7 @@ AttackPowers = [
     BleedingAttack,
     CharmingAttack,
     CleavingAttack,
+    DisarmingAttack,
     BurningAttack,
     DazingAttacks,
     FearingAttack,

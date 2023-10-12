@@ -16,6 +16,7 @@ from . import (
     domineering,
     earthy,
     fearsome,
+    fighting_styles,
     flying,
     gadget,
     monstrous,
@@ -49,6 +50,7 @@ ThemedPowers: List[Power] = (
     + domineering.DomineeringPowers
     + earthy.EarthyPowers
     + fearsome.FearsomePowers
+    + fighting_styles.FightingStylePowers
     + flying.FlyerPowers
     + gadget.GadgetPowers
     + monstrous.MonstrousPowers
