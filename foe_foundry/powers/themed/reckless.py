@@ -94,7 +94,8 @@ class _Charger(Power):
         feature = Feature(
             name="Charge",
             action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} charges by using Dash as a bonus action. Up to one creature that is within 5 ft of the path \
+            uses=1,
+            description=f"{stats.selfref.capitalize()} charges and moves up to its speed. Up to one creature that is within 5 ft of the path \
                 that the creature charges must make a DC {dc} Strength saving throw or be knocked **Prone**.",
         )
         return stats, feature

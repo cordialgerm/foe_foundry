@@ -90,6 +90,14 @@ def flavorful_damage_types(
     return options
 
 
+def relevant_damage_types(candidate: BaseStatblock):
+    damage_types = flavorful_damage_types(candidate)
+    if candidate.secondary_damage_type:
+        damage_types.add(candidate.secondary_damage_type)
+    damage_types.add(candidate.primary_damage_type)
+    return damage_types
+
+
 def flavorful_debilitating_conditions(
     candidate: BaseStatblock, default: Condition | None = None
 ) -> Set[Condition]:

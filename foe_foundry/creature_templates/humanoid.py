@@ -76,7 +76,7 @@ class _HumanoidTemplate(CreatureTypeTemplate):
         elif stats.role in {MonsterRole.Defender}:
             attacks = [weapon.SpearAndShield, weapon.SwordAndShield, weapon.MaceAndShield]
         elif stats.role in {MonsterRole.Leader}:
-            attacks = [weapon.SwordAndShield, weapon.Staff, weapon.Whip]
+            attacks = [weapon.SwordAndShield, weapon.Greatsword, weapon.Staff, weapon.Whip]
         else:
             raise RuntimeError("Unexpected error")
 
@@ -164,7 +164,7 @@ class _HumanoidTemplate(CreatureTypeTemplate):
             )
 
             # humanoid bruisers wear Hide armor instead of natural armor
-            stats.add_ac_template(HideArmor)
+            stats = stats.add_ac_template(HideArmor)
 
         return stats
 

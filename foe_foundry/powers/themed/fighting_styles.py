@@ -1,4 +1,4 @@
-from typing import List, Set, Tuple
+from typing import List, Set, Tuple, TypeVar
 
 import numpy as np
 from numpy.random import Generator
@@ -19,47 +19,51 @@ from ..power import Power, PowerType
 from ..scores import HIGH_AFFINITY, LOW_AFFINITY, MODERATE_AFFINITY, NO_AFFINITY
 from .organized import _score_could_be_organized
 
+T = TypeVar("T")
 
-def has_training(candidate: BaseStatblock) -> bool:
-    return _score_could_be_organized(candidate) >= 0
+
+def clean_set(a: T | None | List[T] | Set[T]) -> Set[T]:
+    if a is None:
+        return set()
+    elif isinstance(a, list):
+        return set(a)
+    elif isinstance(a, set):
+        return a
+    else:
+        return {a}
 
 
 def score(
     candidate: BaseStatblock,
-    target_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
+    require_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
+    require_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
+    bonus_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
+    bonus_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
     attack_modifiers: AttackModifiers = None,
-    require_training: bool = True,
-    require_living: bool = False,
+    bonus: float = HIGH_AFFINITY,
+    min_cr: float | None = 3,
 ) -> float:
-    def clean_set(a):
-        if a is None:
-            return set()
-        elif isinstance(a, list):
-            return set(a)
-        elif isinstance(a, set):
-            return a
-        else:
-            return {a}
+    require_roles = clean_set(require_roles)
+    require_types = clean_set(require_types)
+    bonus_roles = clean_set(bonus_roles)
+    bonus_types = clean_set(bonus_types)
 
-    target_roles = clean_set(target_roles)
-
-    # these abilities require training and discipline
-    if require_training and not has_training(candidate):
+    if min_cr and candidate.cr < min_cr:
         return NO_AFFINITY
 
-    if require_living and not candidate.creature_type.is_living:
+    if require_roles and not candidate.role in require_roles:
+        return NO_AFFINITY
+
+    if require_types and not candidate.creature_type in require_types:
         return NO_AFFINITY
 
     score = resolve_attack_modifier(candidate, attack_modifiers)
 
-    if attack_modifiers is not None and score == 0:
-        return NO_AFFINITY
+    if candidate.creature_type in bonus_types:
+        score += bonus
 
-    if candidate.creature_type == CreatureType.Humanoid:
-        score += MODERATE_AFFINITY
-
-    if candidate.role in target_roles:
-        score += HIGH_AFFINITY
+    if candidate.role in bonus_roles:
+        score += bonus
 
     return score
 
@@ -71,7 +75,7 @@ class _Dueling(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate,
-            target_roles=[MonsterRole.Skirmisher, MonsterRole.Leader],
+            bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Leader],
             attack_modifiers=[
                 weapon.MaceAndShield,
                 weapon.SpearAndShield,
@@ -99,8 +103,9 @@ class _ExpertBrawler(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate,
-            target_roles=[MonsterRole.Bruiser, MonsterRole.Controller],
-            attack_modifiers=natural.Slam,
+            require_types=[CreatureType.Humanoid, CreatureType.Giant],
+            bonus_roles=[MonsterRole.Bruiser, MonsterRole.Controller],
+            attack_modifiers={"*": NO_AFFINITY, natural.Slam: HIGH_AFFINITY},
         )
 
     def apply(
@@ -133,16 +138,17 @@ class _Interception(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate,
-            attack_modifiers=[
-                weapon.SwordAndShield,
-                weapon.SpearAndShield,
-                weapon.Greataxe,
-                weapon.Polearm,
-                weapon.MaceAndShield,
-                weapon.RapierAndShield,
-                weapon.Shortswords,
-            ],
-            target_roles=[MonsterRole.Defender],
+            attack_modifiers={
+                "*": NO_AFFINITY,
+                weapon.SwordAndShield: HIGH_AFFINITY,
+                weapon.SpearAndShield: HIGH_AFFINITY,
+                weapon.Greataxe: HIGH_AFFINITY,
+                weapon.Polearm: HIGH_AFFINITY,
+                weapon.MaceAndShield: HIGH_AFFINITY,
+                weapon.RapierAndShield: HIGH_AFFINITY,
+                weapon.Shortswords: HIGH_AFFINITY,
+            },
+            require_roles=[MonsterRole.Defender, MonsterRole.Bruiser],
         )
 
     def apply(
@@ -165,7 +171,8 @@ class _BaitAndSwitch(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate,
-            target_roles=[
+            require_types=CreatureType.Humanoid,
+            require_roles=[
                 MonsterRole.Defender,
                 MonsterRole.Skirmisher,
                 MonsterRole.Leader,
@@ -187,74 +194,6 @@ class _BaitAndSwitch(Power):
         return stats, feature
 
 
-class _BlessedWarrior(Power):
-    def __init__(self):
-        super().__init__(name="Blessed Warrior", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate,
-            require_living=True,
-            attack_modifiers=[
-                weapon.SwordAndShield,
-                weapon.MaceAndShield,
-                weapon.Maul,
-                weapon.Greatsword,
-                spell.HolyBolt,
-            ],
-        )
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        stats = stats.scale({Stats.CHA: Stats.CHA.Boost(1), Stats.WIS: Stats.WIS.Boost(1)})
-        if stats.secondary_damage_type is None:
-            stats = stats.copy(secondary_damage_type=DamageType.Radiant)
-
-        damage = DieFormula.target_value(0.5 * stats.attack.average_damage, force_die=Die.d6)
-        dc = stats.difficulty_class
-        feature = Feature(
-            name="Word of Radiance",
-            action=ActionType.Action,
-            replaces_multiattack=1,
-            description=f"{stats.selfref.capitalize()} utters a divine word and it shines with burning radiance. \
-                Each hostile creature within 10 feet must make a DC {dc} Constitution saving throw or take {damage.description} radiant damage.",
-        )
-        return stats, feature
-
-
-class _DruidicWarrior(Power):
-    def __init__(self):
-        super().__init__(name="Druidic Warrior", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate,
-            require_living=True,
-            target_roles=[MonsterRole.Leader, MonsterRole.Controller, MonsterRole.Skirmisher],
-            attack_modifiers=[weapon.Staff, weapon.Longbow, weapon.Shortbow, spell.Poisonbolt],
-        )
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
-        if stats.secondary_damage_type is None:
-            stats = stats.copy(secondary_damage_type=DamageType.Poison)
-
-        healing = DieFormula.target_value(0.5 * stats.attack.average_damage, force_die=Die.d4)
-        uses = stats.attributes.stat_mod(Stats.WIS)
-
-        feature = Feature(
-            name="Healing Word",
-            action=ActionType.BonusAction,
-            uses=uses,
-            description=f"{stats.selfref.capitalize()} utters a word of primal encouragement to a friendly ally it can see within 60 feet. \
-                The ally regains {healing.description} hitpoints.",
-        )
-        return stats, feature
-
-
 class _ThrownWeaponExpert(Power):
     def __init__(self):
         super().__init__(name="Thrown Weapon Expert", power_type=PowerType.Theme)
@@ -262,7 +201,11 @@ class _ThrownWeaponExpert(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate,
-            attack_modifiers=[weapon.JavelinAndShield, weapon.Daggers],
+            attack_modifiers={
+                "*": NO_AFFINITY,
+                weapon.JavelinAndShield: HIGH_AFFINITY,
+                weapon.Daggers: HIGH_AFFINITY,
+            },
         )
 
     def apply(
@@ -283,9 +226,8 @@ class _ArmorMaster(Power):
         super().__init__(name="Armor Master", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        organized = has_training(candidate)
         armored = any([c for c in candidate.ac_templates if c.is_heavily_armored])
-        if organized and armored:
+        if armored:
             return HIGH_AFFINITY
         else:
             return NO_AFFINITY
@@ -306,8 +248,7 @@ class _ShieldMaster(Power):
         super().__init__(name="Shield Master", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        organized = has_training(candidate)
-        if organized and candidate.uses_shield:
+        if candidate.uses_shield:
             return HIGH_AFFINITY
         else:
             return NO_AFFINITY
@@ -329,7 +270,9 @@ class _PolearmMaster(Power):
         super().__init__(name="Polearm Master", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(candidate, attack_modifiers=weapon.Polearm)
+        return score(
+            candidate, attack_modifiers={"*": NO_AFFINITY, weapon.Polearm: HIGH_AFFINITY}
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -349,7 +292,13 @@ class _GreatWeaponFighting(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate,
-            attack_modifiers=[weapon.Polearm, weapon.Greataxe, weapon.Greatsword, weapon.Maul],
+            attack_modifiers={
+                "*": NO_AFFINITY,
+                weapon.Polearm: HIGH_AFFINITY,
+                weapon.Greataxe: HIGH_AFFINITY,
+                weapon.Greatsword: HIGH_AFFINITY,
+                weapon.Maul: MODERATE_AFFINITY,
+            },
         )
 
     def apply(
@@ -376,7 +325,11 @@ class _TwoWeaponFighting(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate,
-            attack_modifiers=[weapon.Daggers, weapon.Shortswords],
+            attack_modifiers={
+                "*": NO_AFFINITY,
+                weapon.Daggers: HIGH_AFFINITY,
+                weapon.Shortswords: HIGH_AFFINITY,
+            },
         )
 
     def apply(
@@ -411,8 +364,13 @@ class _Sharpshooter(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate,
-            target_roles=MonsterRole.Artillery,
-            attack_modifiers=[weapon.Longbow, weapon.Shortbow, weapon.Crossbow],
+            require_roles=MonsterRole.Artillery,
+            attack_modifiers={
+                "*": NO_AFFINITY,
+                weapon.Longbow: HIGH_AFFINITY,
+                weapon.Shortbow: HIGH_AFFINITY,
+                weapon.Crossbow: HIGH_AFFINITY,
+            },
         )
 
     def apply(
@@ -436,8 +394,6 @@ class _Sharpshooter(Power):
 
 ArmorMaster: Power = _ArmorMaster()
 BaitAndSwitch: Power = _BaitAndSwitch()
-BlessedWarrior: Power = _BlessedWarrior()
-DruidicWarrior: Power = _DruidicWarrior()
 Dueling: Power = _Dueling()
 ExpertBrawler: Power = _ExpertBrawler()
 GreatWeaponFighting: Power = _GreatWeaponFighting()
@@ -451,8 +407,6 @@ TwoWeaponFighting: Power = _TwoWeaponFighting()
 FightingStylePowers: List[Power] = [
     ArmorMaster,
     BaitAndSwitch,
-    BlessedWarrior,
-    DruidicWarrior,
     Dueling,
     ExpertBrawler,
     GreatWeaponFighting,

@@ -11,10 +11,6 @@ class _UnarmoredArmorClassTemplate(ArmorClassTemplate):
         return "Unarmored"
 
     @property
-    def can_use_shield(self) -> bool:
-        return False
-
-    @property
     def is_armored(self) -> bool:
         return False
 
@@ -27,7 +23,7 @@ class _UnarmoredArmorClassTemplate(ArmorClassTemplate):
         return ResolvedArmorClass(
             value=ac,
             armor_type="Unarmored",
-            has_shield=False,
+            has_shield=uses_shield,
             is_armored=False,
             quality_level=0,  # unarmored doesn't have any modifiers
             score=ac,

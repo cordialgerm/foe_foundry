@@ -8,6 +8,11 @@ T = TypeVar("T")
 
 
 @overload
+def choose_enum(rng: np.random.Generator, values: List[E]) -> E:
+    pass
+
+
+@overload
 def choose_enum(rng: np.random.Generator, values: List[E], p: Any = None) -> E:
     pass
 
