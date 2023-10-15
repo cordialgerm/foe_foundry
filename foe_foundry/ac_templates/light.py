@@ -11,10 +11,6 @@ class _LightArmorClassTemplate(ArmorClassTemplate):
         return "Light Armor"
 
     @property
-    def can_use_shield(self) -> bool:
-        return True
-
-    @property
     def is_armored(self) -> bool:
         return True
 

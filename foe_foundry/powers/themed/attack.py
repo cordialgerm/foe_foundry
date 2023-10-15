@@ -435,11 +435,7 @@ class _FreezingAttack(Power):
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
         dc = stats.difficulty_class
         frozen = conditions.Frozen(dc)
-
-        if stats.cr >= 7:
-            condition = f"is {frozen}"
-        else:
-            condition = f"must make a DC {dc} Constitution save or be {frozen}"
+        condition = f"must make a DC {dc} Constitution save or be {frozen}"
 
         feature = Feature(
             name="Freezing Attack",

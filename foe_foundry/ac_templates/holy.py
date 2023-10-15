@@ -14,10 +14,6 @@ class _HolyArmorClassTemplate(ArmorClassTemplate):
         return "Holy Armor" if self.is_holy else "Unholy Armor"
 
     @property
-    def can_use_shield(self) -> bool:
-        return True
-
-    @property
     def is_armored(self) -> bool:
         return False
 

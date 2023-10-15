@@ -11,10 +11,6 @@ class _HeavyArmorClassTemplate(ArmorClassTemplate):
         return "Heavy Armor"
 
     @property
-    def can_use_shield(self) -> bool:
-        return True
-
-    @property
     def is_armored(self) -> bool:
         return True
 

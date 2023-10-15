@@ -26,10 +26,6 @@ class ArmorClassTemplate(ABC):
         raise NotImplementedError
 
     @abstractproperty
-    def can_use_shield(self) -> bool:
-        raise NotImplementedError
-
-    @abstractproperty
     def is_armored(self) -> bool:
         raise NotImplementedError
 

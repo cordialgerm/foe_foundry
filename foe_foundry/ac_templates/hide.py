@@ -11,10 +11,6 @@ class _HideArmorClassTemplate(ArmorClassTemplate):
         return "Hide"
 
     @property
-    def can_use_shield(self) -> bool:
-        return False
-
-    @property
     def is_armored(self) -> bool:
         return True
 
@@ -28,7 +24,7 @@ class _HideArmorClassTemplate(ArmorClassTemplate):
         return ResolvedArmorClass(
             value=ac,
             armor_type="Hide",
-            has_shield=False,
+            has_shield=uses_shield,
             is_armored=True,
             quality_level=quality_level,
             score=ac + 0.2 - (1000 if not stats.creature_type.could_wear_armor else 0),

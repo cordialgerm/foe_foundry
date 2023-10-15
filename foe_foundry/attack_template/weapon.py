@@ -60,7 +60,7 @@ class _Maul(AttackTemplate):
             attack_name="Maul",
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Bludgeoning,
-            allows_shield=True,
+            allows_shield=False,
             die=Die.d12,
             split_secondary_damage=True,
         )
