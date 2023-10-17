@@ -1,7 +1,11 @@
 from math import ceil, floor
 from typing import List, Set, Tuple
 
+import numpy as np
 from numpy.random import Generator
+
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
@@ -169,11 +173,64 @@ class _Vanish(Power):
         return stats, feature
 
 
+class _StayDown(Power):
+    def __init__(self):
+        super().__init__(name="Stay Down", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_is_sneaky_creature(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        dc = stats.difficulty_class
+        reach = stats.attack.reach or 5
+
+        feature = Feature(
+            name="Stay Down",
+            action=ActionType.BonusAction,
+            description=f"{stats.selfref.capitalize()} kicks a prone creature within {reach} ft. The target must make a DC {dc} Strength \
+                save or have its speed reduced to zero until the end of its next turn.",
+        )
+
+        return stats, feature
+
+
+class _ExplotAdvantage(Power):
+    def __init__(self):
+        super().__init__(name="Explot Advantage", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_is_sneaky_creature(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        feature = Feature(
+            name="Exploit Advantage",
+            action=ActionType.BonusAction,
+            uses=3,
+            description=f"{stats.selfref.capitalize()} gains advantage on the next attack it makes until end of turn.",
+        )
+
+        return stats, feature
+
+
 CunningAction: Power = _CunningAction()
+ExploitAdvantage: Power = _ExplotAdvantage()
 FalseAppearance: Power = _FalseAppearance()
 SneakyStrike: Power = _SneakyStrike()
+StayDown: Power = _StayDown()
 NotDeadYet: Power = _NotDeadYet()
 Vanish: Power = _Vanish()
 
 
-SneakyPowers: List[Power] = [CunningAction, FalseAppearance, SneakyStrike, NotDeadYet, Vanish]
+SneakyPowers: List[Power] = [
+    CunningAction,
+    ExploitAdvantage,
+    FalseAppearance,
+    SneakyStrike,
+    StayDown,
+    NotDeadYet,
+    Vanish,
+]

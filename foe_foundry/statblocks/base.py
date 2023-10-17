@@ -50,6 +50,8 @@ class BaseStatblock:
     ac_boost: int = 0
     uses_shield: bool = False
     ac_templates: List[ArmorClassTemplate] = field(default_factory=list)
+    creature_subtype: str | None = None
+    creature_class: str | None = None
 
     def __post_init__(self):
         mod = (
@@ -78,11 +80,17 @@ class BaseStatblock:
 
     @property
     def selfref(self) -> str:
-        return f"the {self.creature_type.value.lower()}"
+        if self.creature_subtype is not None:
+            return f"the {self.creature_subtype}"
+        else:
+            return f"the {self.creature_type.value.lower()}"
 
     @property
     def roleref(self) -> str:
-        return f"the {self.role.value.lower()}"
+        if self.creature_class is not None:
+            return f"the {self.creature_class}"
+        else:
+            return f"the {self.role.value.lower()}"
 
     def __copy_args__(self) -> dict:
         args: dict = dict(
@@ -113,6 +121,8 @@ class BaseStatblock:
             nonmagical_resistance=self.nonmagical_resistance,
             nonmagical_immunity=self.nonmagical_immunity,
             additional_attacks=deepcopy(self.additional_attacks),
+            creature_class=self.creature_class,
+            creature_subtype=self.creature_subtype,
         )
         return args
 
