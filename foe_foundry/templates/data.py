@@ -82,6 +82,19 @@ class MonsterTemplateData:
         hp = f"{stats.hp.static} ({stats.hp.dice_formula()})"
         languages = ", ".join(l for l in stats.languages) if stats.languages is not None else ""
 
+        creature_type_additions = []
+        if stats.creature_subtype:
+            creature_type_additions.append(stats.creature_subtype)
+        if stats.creature_class:
+            creature_type_additions.append(stats.creature_class)
+        creature_type_additions = ", ".join(creature_type_additions)
+
+        creature_type = (
+            f"{stats.creature_type.capitalize()} ({creature_type_additions})"
+            if creature_type_additions
+            else stats.creature_type.capitalize()
+        )
+
         cr_fraction = Fraction.from_float(stats.cr).limit_denominator(10)
         cr_fraction = (
             f"{cr_fraction.numerator}"
@@ -147,7 +160,7 @@ class MonsterTemplateData:
             selfref=stats.selfref,
             roleref=stats.roleref,
             size=stats.size.name,
-            creature_type=stats.creature_type.name,
+            creature_type=creature_type,
             ac=stats.ac.description,
             hp=hp,
             movement=stats.speed.describe(),

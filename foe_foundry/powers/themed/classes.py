@@ -1,12 +1,10 @@
-from typing import List, Set, Tuple, TypeVar
+from typing import List, Tuple
 
 import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
-from ...attack_template import spell, weapon
+from ...ac_templates import HeavyArmor
+from ...attack_template import natural, spell, weapon
 from ...attributes import Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, conditions
@@ -17,70 +15,10 @@ from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ...utils.rng import choose_enum
 from ...utils.summoning import determine_summon_formula
-from ..attack import relevant_damage_types
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import Power, PowerType
-from ..scores import HIGH_AFFINITY, LOW_AFFINITY, MODERATE_AFFINITY, NO_AFFINITY
-
-T = TypeVar("T")
-
-
-def clean_set(a: T | None | List[T] | Set[T]) -> Set[T]:
-    if a is None:
-        return set()
-    elif isinstance(a, list):
-        return set(a)
-    elif isinstance(a, set):
-        return a
-    else:
-        return {a}
-
-
-def score(
-    candidate: BaseStatblock,
-    require_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
-    require_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
-    require_damage: DamageType | Set[DamageType] | List[DamageType] | None = None,
-    bonus_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
-    bonus_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
-    bonus_damage: DamageType | Set[DamageType] | List[DamageType] | None = None,
-    attack_modifiers: AttackModifiers = None,
-    bonus: float = MODERATE_AFFINITY,
-    min_cr: float | None = 3,
-) -> float:
-    require_roles = clean_set(require_roles)
-    require_types = clean_set(require_types)
-    require_damage = clean_set(require_damage)
-    bonus_roles = clean_set(bonus_roles)
-    bonus_types = clean_set(bonus_types)
-    bonus_damage = clean_set(bonus_damage)
-
-    candidate_damage_types = relevant_damage_types(candidate)
-
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    if require_roles and not candidate.role in require_roles:
-        return NO_AFFINITY
-
-    if require_types and not candidate.creature_type in require_types:
-        return NO_AFFINITY
-
-    if require_damage and not any(candidate_damage_types.intersection(require_damage)):
-        return NO_AFFINITY
-
-    score = resolve_attack_modifier(candidate, attack_modifiers)
-
-    if candidate.creature_type in bonus_types:
-        score += bonus
-
-    if candidate.role in bonus_roles:
-        score += bonus
-
-    if any(candidate_damage_types.intersection(bonus_damage)):
-        score += bonus
-
-    return score
+from ..scores import NO_AFFINITY
+from ..themed.reckless import Toss
+from ..utils import score
 
 
 class _DeathKnight(Power):
@@ -90,16 +28,18 @@ class _DeathKnight(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate,
+            require_no_creature_class=True,
             require_types=[CreatureType.Undead, CreatureType.Humanoid],
             require_roles=[MonsterRole.Leader, MonsterRole.Default, MonsterRole.Bruiser],
+            require_stats=[Stats.CHA, Stats.STR],
             bonus_damage=DamageType.Necrotic,
-            attack_modifiers={
-                "*": NO_AFFINITY,
-                weapon.SwordAndShield: HIGH_AFFINITY,
-                weapon.MaceAndShield: HIGH_AFFINITY,
-                weapon.Greataxe: HIGH_AFFINITY,
-                weapon.Greatsword: HIGH_AFFINITY,
-            },
+            attack_modifiers=[
+                "-",  # default is NO_AFFINITY - that's what - means
+                weapon.SwordAndShield,
+                weapon.MaceAndShield,
+                weapon.Greataxe,
+                weapon.Greatsword,
+            ],
         )
 
     def apply(
@@ -107,6 +47,9 @@ class _DeathKnight(Power):
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
         if stats.secondary_damage_type != DamageType.Necrotic:
             stats = stats.copy(secondary_damage_type=DamageType.Necrotic)
+
+        stats = stats.copy(creature_class="Death Knight")
+        stats = stats.scale({Stats.CHA: Stats.CHA.Boost(2)})
 
         dc = stats.difficulty_class
         cr_target = stats.cr / 4
@@ -116,7 +59,7 @@ class _DeathKnight(Power):
             action=ActionType.Action,
             replaces_multiattack=1,
             uses=1,
-            description=f"{stats.selfref} curses up to four targets it can see within 30 feet. \
+            description=f"{stats.roleref.capitalize()} curses up to four targets it can see within 30 feet. \
                 Each target must make a DC {dc} Charisma save or be affected as by the *Bane* spell (save ends at end of turn).",
         )
 
@@ -129,16 +72,13 @@ class _DeathKnight(Power):
             action=ActionType.Action,
             uses=1,
             replaces_multiattack=2,
-            description=f"{stats.selfref} calls upon the dead to serve. {description}",
+            description=f"{stats.roleref.capitalize()} calls upon the dead to serve. {description}",
         )
 
         return stats, [feature1, feature2]
 
 
 class _EldritchKnight(Power):
-    # misty step
-    # elemental weapon damage
-    # recharge - impose a condition
     def __init__(self):
         super().__init__(name="Eldritch Knight", power_type=PowerType.Theme)
         self.elements = {DamageType.Fire, DamageType.Lightning, DamageType.Cold}
@@ -152,20 +92,22 @@ class _EldritchKnight(Power):
 
         return score(
             candidate,
+            require_no_creature_class=True,
             require_types=[CreatureType.Humanoid, CreatureType.Humanoid],
             bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Bruiser],
+            require_stats=[Stats.INT, Stats.STR],
             bonus_damage=self.elements,
-            attack_modifiers={
-                "*": NO_AFFINITY,
-                weapon.SwordAndShield: HIGH_AFFINITY,
-                weapon.Greataxe: HIGH_AFFINITY,
-                weapon.Greatsword: HIGH_AFFINITY,
-                weapon.MaceAndShield: HIGH_AFFINITY,
-                weapon.RapierAndShield: HIGH_AFFINITY,
-                weapon.Polearm: HIGH_AFFINITY,
-                weapon.Maul: HIGH_AFFINITY,
-                weapon.Staff: HIGH_AFFINITY,
-            },
+            attack_modifiers=[
+                "-",
+                weapon.SwordAndShield,
+                weapon.Greataxe,
+                weapon.Greatsword,
+                weapon.MaceAndShield,
+                weapon.RapierAndShield,
+                weapon.Polearm,
+                weapon.Maul,
+                weapon.Staff,
+            ],
         )
 
     def apply(
@@ -173,6 +115,9 @@ class _EldritchKnight(Power):
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
         element = stats.secondary_damage_type or choose_enum(rng, list(self.elements))
         stats = stats.copy(secondary_damage_type=element)
+        stats = stats.scale({Stats.INT: Stats.INT.Boost(2)})
+        stats = stats.copy(creature_class="Eldritch Knight")
+
         dc = stats.difficulty_class_easy
         dmg = DieFormula.target_value(1.5 * stats.attack.average_damage)
 
@@ -180,7 +125,7 @@ class _EldritchKnight(Power):
             name="Misty Step",
             action=ActionType.BonusAction,
             uses=3,
-            description=f"{stats.selfref.capitalize()} teleports up to 30 feet to an unoccupied space it can see",
+            description=f"{stats.roleref.capitalize()} teleports up to 30 feet to an unoccupied space it can see",
         )
 
         feature2 = Feature(
@@ -188,7 +133,7 @@ class _EldritchKnight(Power):
             action=ActionType.Action,
             replaces_multiattack=2,
             recharge=5,
-            description=f"{stats.selfref.capitalize()} unleashes an explosion of arcane power. \
+            description=f"{stats.roleref.capitalize()} unleashes an explosion of arcane power. \
                 Each creature in a 20-foot radius sphere centered on a point within 60 feet must make \
                 a DC {dc} Dexterity saving throw, taking {dmg.description} {element} damage on a failure. \
                 On a success, a creature takes half damage instead.",
@@ -197,26 +142,141 @@ class _EldritchKnight(Power):
         return stats, [feature1, feature2]
 
 
-class _Artificer:
-    # grants good armor
-    # gives an arcane cannon attack
-    pass
+class _Artificer(Power):
+    def __init__(self):
+        super().__init__(name="Artificer", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate=candidate,
+            require_no_creature_class=True,
+            bonus_roles=[MonsterRole.Defender, MonsterRole.Leader],
+            require_types=CreatureType.Humanoid,
+            require_stats=Stats.INT,
+            attack_modifiers=["-", weapon.MaceAndShield, weapon.SwordAndShield, natural.Slam],
+        )
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        stats = stats.add_ac_template(HeavyArmor)
+        stats = stats.scale({Stats.INT: Stats.INT.Boost(2)})
+        stats = stats.copy(creature_class="Artificer")
+        stats = stats.copy(secondary_damage_type=DamageType.Force)
+
+        dc = stats.difficulty_class
+        dazed = conditions.Dazed()
+        dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d10)
+        feature = Feature(
+            name="Artificer's Cannon",
+            action=ActionType.Action,
+            recharge=5,
+            replaces_multiattack=2,
+            description=f"{stats.roleref.capitalize()} fires an arcane cannon at a creature it can see within 60 feet. \
+                The target must make a DC {dc} Dexterity saving throw, taking {dmg.description} force damage on a failure. \
+                On a success, the target takes half damage instead. If the save fails by 5 or more, the target is also {dazed.caption} for 1 minute (save ends at end of turn). {dazed.description_3rd}",
+        )
+
+        return stats, feature
 
 
-class _TotemicWarrior:
-    # bear totem
-    pass
+class _Barbarian(Power):
+    def __init__(self):
+        super().__init__(name="Barbarian", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate=candidate,
+            require_no_creature_class=True,
+            require_roles=MonsterRole.Bruiser,
+            require_types=[CreatureType.Humanoid, CreatureType.Giant],
+            require_stats=Stats.STR,
+            attack_modifiers=[
+                "-",
+                weapon.Greataxe,
+                weapon.Greatsword,
+                weapon.Polearm,
+                weapon.Maul,
+            ],
+        )
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        stats = stats.copy(creature_class="Barbarian")
+        stats = stats.scale({Stats.STR: Stats.STR.Boost(2)})
+
+        feature1 = Feature(
+            name="Rage",
+            action=ActionType.Feature,
+            modifies_attack=True,
+            hidden=True,
+            description=f"On a hit, {stats.roleref} gains resistance to Bludgeoning, Slashing, and Piercing damage until the end of its next turn",
+        )
+
+        stats, feature2 = Toss.apply(stats, rng)
+
+        features = [feature1]
+        if isinstance(feature2, list):
+            features.extend(feature2)
+        elif feature2 is not None:
+            features.append(feature2)
+
+        return stats, features
 
 
-class _BardicWarrior:
-    # BA - if attack hits, try confuse and Daze the target
-    # Reaction - force oppoenent to subract a die roll from attack roll or save
-    pass
+class _BardicWarrior(Power):
+    def __init__(self):
+        super().__init__(name="Bardic Warrior", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate=candidate,
+            require_no_creature_class=True,
+            require_types=[CreatureType.Humanoid, CreatureType.Fey],
+            bonus_roles=[MonsterRole.Controller, MonsterRole.Leader],
+            require_stats=Stats.CHA,
+            attack_modifiers=[
+                "-",
+                weapon.RapierAndShield,
+                weapon.Shortswords,
+                weapon.Shortbow,
+                weapon.Longbow,
+            ],
+        )
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        stats = stats.copy(secondary_damage_type=DamageType.Psychic, creature_class="Bard")
+        stats = stats.scale({Stats.CHA: Stats.CHA.Boost(2)})
+
+        dc = stats.difficulty_class
+        dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, force_die=Die.d4)
+        dazed = conditions.Dazed()
+
+        feature1 = Feature(
+            name="Vicious Mockery",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            description=f"{stats.roleref.capitalize()} viciously mocks a target it can see within 60 ft. If the target can hear the insult, it must make a DC {dc} Wisdom save. \
+                On a failure, it takes {dmg.description} psychic damage. Also, if {stats.roleref} has hit the target with an attack this turn and the target fails the save, \
+                it becomes {dazed.caption} until the end of its next turn. {dazed.description_3rd}",
+        )
+
+        feature2 = Feature(
+            name="Bardic Inspiration",
+            action=ActionType.Reaction,
+            uses=stats.attributes.stat_mod(Stats.CHA),
+            description=f"Whenever an ally within 30 feet that can hear {stats.roleref} misses with an attack or fails a saving throw, it can roll 1d4 and add the total to its result, potentially turning a failure into a success.",
+        )
+
+        return stats, [feature1, feature2]
 
 
 class _WarPriest:
     # mass cure wounds
-    # warding flare
+    # war god's blessing
     pass
 
 
@@ -246,19 +306,103 @@ class _ArcaneArcher:
     # The necrotic damage increases to 4d6 when you reach 18th level in this class.
 
 
-class _PsiWarrior:
-    # jump
-    # psychic damage
-    # protective field - reduce damage reaction
-    # cast telekenises
-    pass
+class _PsiWarrior(Power):
+    def __init__(self):
+        super().__init__(name="Psi Warrior", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate=candidate,
+            require_no_creature_class=True,
+            require_types=[CreatureType.Humanoid],
+            bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Leader],
+            require_stats=Stats.INT,
+            bonus_stats=Stats.WIS,
+            bonus_damage=DamageType.Psychic,
+            attack_modifiers=[
+                "-",
+                weapon.RapierAndShield,
+                weapon.SwordAndShield,
+                weapon.Shortswords,
+            ],
+        )
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        stats = stats.copy(
+            secondary_damage_type=DamageType.Psychic,
+            creature_class="Psi Warrior",
+        )
+        stats = stats.scale({Stats.INT: Stats.INT.Boost(2)})
+        protection = easy_multiple_of_five(stats.cr * 1.5, min_val=5, max_val=60)
+
+        feature1 = Feature(
+            name="Psionic Jump",
+            action=ActionType.BonusAction,
+            uses=3,
+            description=f"{stats.roleref.capitalize()} performes a psionically boosted jump of up to 30 feet.",
+        )
+
+        feature2 = Feature(
+            name="Protective Field",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"When an ally within 30 feet of {stats.roleref} takes damage, {stats.roleref} creates a protective barrier around that ally, \
+                preventing up to {protection} of the triggering damage",
+        )
+
+        feature3 = Feature(
+            name="Telekinesis",
+            action=ActionType.Action,
+            replaces_multiattack=2,
+            description=f"{stats.roleref.capitalize()} casts the *Telekinesis* spell",
+        )
+
+        return stats, [feature1, feature2, feature3]
 
 
-class _Cavalier:
-    # BA to summon a mount
-    # Mounted Combatant
-    # Attacks are made at advantage while mounted
-    pass
+class _Cavalier(Power):
+    def __init__(self):
+        super().__init__(name="Cavalier", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate=candidate,
+            require_no_creature_class=True,
+            require_types=CreatureType.Humanoid,
+            bonus_roles=MonsterRole.Leader,
+            attack_modifiers=["-", weapon.Greatsword, weapon.Greataxe],
+        )
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        stats = stats.copy(creature_class="Cavalier")
+
+        feature1 = Feature(
+            name="Summon Mount",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"{stats.roleref.capitalize()} summons a *Warhorse* mount to an unoccupied location within 30 feet which acts as a controlled mount. \
+                {stats.roleref.capitalize()} may mount the warhorse without expending any movement",
+        )
+
+        feature2 = Feature(
+            name="Expert Rider",
+            action=ActionType.Feature,
+            description=f"{stats.roleref.capitalize()} may force any attack targeting its mount to target {stats.roleref} instead",
+        )
+
+        feature3 = Feature(
+            name="Mounted Advantage",
+            action=ActionType.Feature,
+            hidden=True,
+            modifies_attack=True,
+            description=f"The attack is made at advantage if {stats.roleref} is mounted",
+        )
+
+        return stats, [feature1, feature2, feature3]
 
 
 class _RuneKnight:
@@ -292,9 +436,12 @@ class _BlessedWarrior(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate,
+            require_no_creature_class=True,
             require_types=CreatureType.Humanoid,
             bonus_damage=DamageType.Radiant,
+            require_stats=Stats.WIS,
             attack_modifiers=[
+                "-",
                 weapon.SwordAndShield,
                 weapon.MaceAndShield,
                 weapon.Maul,
@@ -310,6 +457,8 @@ class _BlessedWarrior(Power):
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Radiant)
 
+        stats = stats.copy(creature_class="Cleric")
+
         damage = DieFormula.target_value(0.6 * stats.attack.average_damage, force_die=Die.d6)
         dc = stats.difficulty_class
 
@@ -317,14 +466,14 @@ class _BlessedWarrior(Power):
             name="Favored by the Gods",
             action=ActionType.Reaction,
             uses=1,
-            description=f"When {stats.selfref} fails a saving throw or misses an attack it may add 2d4 to that result",
+            description=f"When {stats.roleref} fails a saving throw or misses an attack it may add 2d4 to that result",
         )
 
         feature2 = Feature(
             name="Word of Radiance",
             action=ActionType.Action,
             replaces_multiattack=1,
-            description=f"{stats.selfref.capitalize()} utters a divine word and it shines with burning radiance. \
+            description=f"{stats.roleref.capitalize()} utters a divine word and it shines with burning radiance. \
                 Each hostile creature within 10 feet must make a DC {dc} Constitution saving throw or take {damage.description} radiant damage.",
         )
         return stats, [feature1, feature2]
@@ -337,9 +486,19 @@ class _Druid(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate,
+            require_no_creature_class=True,
             require_types=[CreatureType.Humanoid, CreatureType.Fey, CreatureType.Giant],
             bonus_roles=[MonsterRole.Leader, MonsterRole.Controller, MonsterRole.Skirmisher],
-            attack_modifiers=[weapon.Staff, weapon.Longbow, weapon.Shortbow, spell.Poisonbolt],
+            attack_modifiers=[
+                "-",
+                weapon.Staff,
+                weapon.Longbow,
+                weapon.Shortbow,
+                spell.Poisonbolt,
+                spell.Frostbolt,
+                spell.Firebolt,
+            ],
+            require_stats=Stats.WIS,
         )
 
     def apply(
@@ -348,6 +507,8 @@ class _Druid(Power):
         stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Poison)
+
+        stats = stats.copy(creature_class="Druid")
 
         healing = DieFormula.target_value(
             0.5 * stats.attack.average_damage, force_die=Die.d4, flat_mod=stats.attributes.WIS
@@ -362,7 +523,7 @@ class _Druid(Power):
             name="Bestial Fury",
             attack_type=AttackType.MeleeNatural,
             replaces_multiattack=2,
-            additional_description=f"On a hit, {stats.selfref} gains {temp_hp} temporary hp and the target is \
+            additional_description=f"On a hit, {stats.roleref} gains {temp_hp} temporary hp and the target is \
                 pushed back 10 feet if it is Large or smaller",
         )
         stats = stats.add_attack(bestial_fury)
@@ -371,7 +532,7 @@ class _Druid(Power):
             name="Druidic Healing",
             action=ActionType.BonusAction,
             uses=uses,
-            description=f"{stats.selfref.capitalize()} utters a word of primal encouragement to a friendly ally it can see within 60 feet. \
+            description=f"{stats.roleref.capitalize()} utters a word of primal encouragement to a friendly ally it can see within 60 feet. \
                 The ally regains {healing.description} hitpoints.",
         )
         return stats, feature
@@ -379,10 +540,25 @@ class _Druid(Power):
 
 # TODO - allow base statblock to specify classes and subtypes
 
+Artificer: Power = _Artificer()
+Barbarian: Power = _Barbarian()
+Bard: Power = _BardicWarrior()
 BlessedWarrior: Power = _BlessedWarrior()
+Cavalier: Power = _Cavalier()
 DeathKnight: Power = _DeathKnight()
 Druid: Power = _Druid()
 EldritchKnight: Power = _EldritchKnight()
+PsiWarrior: Power = _PsiWarrior()
 
 
-ClassPowers: List[Power] = [BlessedWarrior, DeathKnight, Druid, EldritchKnight]
+ClassPowers: List[Power] = [
+    Artificer,
+    Barbarian,
+    Bard,
+    BlessedWarrior,
+    Cavalier,
+    DeathKnight,
+    Druid,
+    EldritchKnight,
+    PsiWarrior,
+]
