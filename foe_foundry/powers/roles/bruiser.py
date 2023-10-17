@@ -63,7 +63,7 @@ class _Sentinel(Power):
         feature = Feature(
             name="Sentinel",
             action=ActionType.Reaction,
-            description=f"If another target moves while within {stats.roleref}'s reach then the {stats.roleref} may make an attack against that target.",
+            description=f"If another target moves while within {stats.roleref}'s reach then {stats.roleref} may make an attack against that target.",
         )
 
         return stats, feature
@@ -133,9 +133,9 @@ class _Cleaver(Power):
         return stats, feature
 
 
-class _Basher(Power):
+class _StunningBlow(Power):
     def __init__(self):
-        super().__init__(name="Basher", power_type=PowerType.Role)
+        super().__init__(name="Stunning Blow", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_bruiser(
@@ -208,7 +208,7 @@ class _Disembowler(Power):
 Sentinel: Power = _Sentinel()
 Grappler: Power = _Grappler()
 Cleaver: Power = _Cleaver()
-Basher: Power = _Basher()
+StunningBlow: Power = _StunningBlow()
 Disembowler: Power = _Disembowler()
 
-BruiserPowers: List[Power] = [Sentinel, Grappler, Cleaver, Basher, Disembowler]
+BruiserPowers: List[Power] = [Sentinel, Grappler, Cleaver, StunningBlow, Disembowler]

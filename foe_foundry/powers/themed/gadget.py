@@ -4,9 +4,6 @@ from typing import List, Tuple
 import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
@@ -96,7 +93,7 @@ class _SmokeBomb(Power):
         super().__init__(name="Smoke Bomb", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_gadget(candidate)
+        return _score_gadget(candidate, ignore_casters=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         distance = easy_multiple_of_five(5 + stats.cr / 5, min_val=10, max_val=30)
