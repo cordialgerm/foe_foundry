@@ -71,7 +71,7 @@ class _SteadyAim(Power):
         feature = Feature(
             name="Steady Aim",
             action=ActionType.BonusAction,
-            description=f"If {stats.roleref} has not moved this turn, it gains advantage on the next ranged attack roll it makes this turn and ignores partial or half cover for that attack.\
+            description=f"If {stats.roleref} has not moved this turn, it gains advantage on the next attack roll it makes this turn and ignores partial or half cover for that attack.\
                 Its speed becomes 0 until the start of its next turn.",
         )
 

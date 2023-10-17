@@ -5,6 +5,7 @@ from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..features import Feature
 from ..role_types import MonsterRole
+from ..size import Size
 from ..statblocks import BaseStatblock
 from .attack import relevant_damage_types
 from .attack_modifiers import AttackModifiers, resolve_attack_modifier
@@ -33,17 +34,21 @@ def score(
     require_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
     require_damage: DamageType | Set[DamageType] | List[DamageType] | None = None,
     require_stats: Stats | List[Stats] | Set[Stats] | None = None,
+    require_size: Size | None = None,
+    require_no_creature_class: bool = False,
     bonus_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
     bonus_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
     bonus_damage: DamageType | Set[DamageType] | List[DamageType] | None = None,
     bonus_stats: Stats | List[Stats] | Set[Stats] | None = None,
+    bonus_size: Size | None = None,
     attack_modifiers: AttackModifiers = None,
-    require_no_creature_class: bool = False,
     bonus: float = MODERATE_AFFINITY,
     min_cr: float | None = 3,
+    stat_threshold: int = 12,
 ) -> float:
     """Standard scoring helper function"""
 
+    # cleanup
     require_roles = clean_set(require_roles)
     require_types = clean_set(require_types)
     require_damage = clean_set(require_damage)
@@ -55,10 +60,17 @@ def score(
 
     candidate_damage_types = relevant_damage_types(candidate)
 
+    if require_size is not None and bonus_size is None:
+        bonus_size = require_size
+
+    # checks against required
     if require_no_creature_class and candidate.creature_class is not None:
         return NO_AFFINITY
 
     if min_cr and candidate.cr < min_cr:
+        return NO_AFFINITY
+
+    if require_size is not None and candidate.size < require_size:
         return NO_AFFINITY
 
     if require_roles and not candidate.role in require_roles:
@@ -71,9 +83,10 @@ def score(
         return NO_AFFINITY
 
     for stat in require_stats:
-        if candidate.attributes.stat(stat) < 10:
+        if candidate.attributes.stat(stat) < stat_threshold:
             return NO_AFFINITY
 
+    # bonus checks
     score = resolve_attack_modifier(candidate, attack_modifiers)
 
     if candidate.creature_type in bonus_types:
@@ -86,7 +99,10 @@ def score(
         score += bonus
 
     for stat in bonus_stats:
-        if candidate.attributes.stat(stat) >= 14:
+        if candidate.attributes.stat(stat) >= stat_threshold + 2:
             score += bonus
+
+    if bonus_size is not None and candidate.size >= bonus_size:
+        score += bonus
 
     return score

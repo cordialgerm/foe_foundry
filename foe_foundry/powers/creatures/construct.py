@@ -38,18 +38,16 @@ def _score(candidate: BaseStatblock, attack_modifiers: AttackModifiers = None) -
     return score if score > 0 else NO_AFFINITY
 
 
-class _Sentinel(Power):
-    """Sentinel (Trait). This creature can make opportunity attacks without using a reaction."""
-
+class _ConstructedGuardian(Power):
     def __init__(self):
-        super().__init__(name="Sentinel", power_type=PowerType.Creature)
+        super().__init__(name="Constructed Guardian", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
-            name="Sentinel",
+            name="Constructed Guardian",
             action=ActionType.Feature,
             description="This creature can make opportunity attacks without using a reaction.",
         )
@@ -247,7 +245,7 @@ BoundProtector: Power = _BoundProtector()
 ExplosiveCore: Power = _ExplosiveCore()
 ImmutableForm: Power = _ImmutableForm()
 Retrieval: Power = _Retrieval()
-Sentinel: Power = _Sentinel()
+ConstructedGuardian: Power = _ConstructedGuardian()
 Smother: Power = _Smother()
 SpellStoring: Power = _SpellStoring()
 
@@ -257,7 +255,7 @@ ConstructPowers: List[Power] = [
     ExplosiveCore,
     ImmutableForm,
     Retrieval,
-    Sentinel,
+    ConstructedGuardian,
     Smother,
     SpellStoring,
 ]

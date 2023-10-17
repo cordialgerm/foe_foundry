@@ -16,10 +16,12 @@ from . import (
     deathly,
     domineering,
     earthy,
+    fast,
     fearsome,
     fighting_styles,
     flying,
     gadget,
+    holy,
     monstrous,
     organized,
     poison,
@@ -51,10 +53,12 @@ ThemedPowers: List[Power] = (
     + deathly.DeathlyPowers
     + domineering.DomineeringPowers
     + earthy.EarthyPowers
+    + fast.FastPowers
     + fearsome.FearsomePowers
     + fighting_styles.FightingStylePowers
     + flying.FlyerPowers
     + gadget.GadgetPowers
+    + holy.HolyPowers
     + monstrous.MonstrousPowers
     + organized.OrganizedPowers
     + poison.PoisonPowers

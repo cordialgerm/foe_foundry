@@ -3,9 +3,12 @@ from typing import List, Tuple
 import numpy as np
 from numpy.random import Generator
 
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
+
 from ...ac_templates import HeavyArmor
 from ...attack_template import natural, spell, weapon
-from ...attributes import Stats
+from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, conditions
 from ...die import Die, DieFormula
@@ -13,12 +16,26 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ...utils.rng import choose_enum
+from ...utils.rng import choose_enum, choose_options
 from ...utils.summoning import determine_summon_formula
+from ..creatures import giant
 from ..power import Power, PowerType
+from ..roles import artillery, bruiser
 from ..scores import NO_AFFINITY
-from ..themed.reckless import Toss
+from ..themed import fast, holy, organized, reckless, tough
 from ..utils import score
+
+
+def _merge_features(*items: Feature | List[Feature] | None) -> List[Feature]:
+    results = []
+
+    for item in items:
+        if isinstance(item, Feature):
+            results.append(item)
+        elif isinstance(item, list):
+            results.extend(item)
+
+    return results
 
 
 class _DeathKnight(Power):
@@ -214,20 +231,14 @@ class _Barbarian(Power):
             description=f"On a hit, {stats.roleref} gains resistance to Bludgeoning, Slashing, and Piercing damage until the end of its next turn",
         )
 
-        stats, feature2 = Toss.apply(stats, rng)
+        stats, feature2 = reckless.Toss.apply(stats, rng)
 
-        features = [feature1]
-        if isinstance(feature2, list):
-            features.extend(feature2)
-        elif feature2 is not None:
-            features.append(feature2)
-
-        return stats, features
+        return stats, _merge_features(feature1, feature2)
 
 
-class _BardicWarrior(Power):
+class _Bard(Power):
     def __init__(self):
-        super().__init__(name="Bardic Warrior", power_type=PowerType.Theme)
+        super().__init__(name="Bardic", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -274,36 +285,139 @@ class _BardicWarrior(Power):
         return stats, [feature1, feature2]
 
 
-class _WarPriest:
-    # mass cure wounds
-    # war god's blessing
-    pass
+class _WarPriest(Power):
+    def __init__(self):
+        super().__init__(name="War Priest", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate=candidate,
+            require_no_creature_class=True,
+            require_types=CreatureType.Humanoid,
+            require_stats=Stats.WIS,
+            bonus_roles=[MonsterRole.Leader, MonsterRole.Defender],
+            attack_modifiers=[
+                "-",
+                weapon.MaceAndShield,
+                weapon.SwordAndShield,
+                weapon.Greatsword,
+                weapon.Maul,
+            ],
+        )
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        stats = stats.copy(secondary_damage_type=DamageType.Radiant, creature_class="Cleric")
+        stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
+        dmg = DieFormula.target_value(0.75 * stats.attack.average_damage, force_die=Die.d6)
+
+        stats, feature1 = holy.MassCureWounds.apply(stats, rng)
+
+        feature2 = Feature(
+            name="War God's Blessing",
+            action=ActionType.Reaction,
+            recharge=6,
+            description=f"Whenever another ally within 30 feet of {stats.roleref} makes an attack, {stats.roleref} \
+                can add +10 to the attack roll. If the attack hits, it deals an additional {dmg.description} radiant damage",
+        )
+
+        return stats, _merge_features(feature1, feature2)
 
 
-class _Ranger:
-    # spike growth
-    # perception
-    # invisibility
-    pass
+class _Ranger(Power):
+    def __init__(self):
+        super().__init__(name="Ranger", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate=candidate,
+            require_no_creature_class=True,
+            require_types=[CreatureType.Humanoid, CreatureType.Fey],
+            require_stats=Stats.DEX,
+            require_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher, MonsterRole.Artillery],
+            attack_modifiers=[
+                "-",
+                weapon.Longbow,
+                weapon.Shortbow,
+                weapon.Shortswords,
+                weapon.Daggers,
+                weapon.JavelinAndShield,
+                weapon.Crossbow,
+            ],
+        )
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Perception)
+
+        stats = stats.copy(creature_class="Ranger", attributes=new_attrs)
+        stats = stats.scale({Stats.DEX: Stats.DEX.Boost(2)})
+
+        feature1 = Feature(
+            name="Spike Growth",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            description=f"{stats.roleref.capitalize()} casts *Spike Growth*",
+        )
+
+        stats, feature2 = artillery.SteadyAim.apply(stats, rng)
+        return stats, _merge_features(feature1, feature2)
 
 
-class _ArcaneArcher:
-    pass
+class _ArcaneArcher(Power):
+    def __init__(self):
+        super().__init__(name="Arcane Archer", power_type=PowerType.Theme)
 
-    # Banishing Arrow
-    # You use abjuration magic to try to temporarily banish your target to a harmless location in the Feywild. The creature hit by the arrow must also succeed on a Charisma saving throw or be banished. While banished in this way, the target’s speed is 0, and it is incapacitated. At the end of its next turn, the target reappears in the space it vacated or in the nearest unoccupied space if that space is occupied.
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate=candidate,
+            require_no_creature_class=True,
+            require_types=[CreatureType.Humanoid, CreatureType.Fey],
+            require_stats=Stats.DEX,
+            bonus_roles=[MonsterRole.Artillery, MonsterRole.Ambusher, MonsterRole.Skirmisher],
+            attack_modifiers=["-", weapon.Longbow, weapon.Shortbow, weapon.Crossbow],
+        )
 
-    # After you reach 18th level in this class, a target also takes 2d6 force damage when the arrow hits it.
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        stats = stats.copy(creature_class="Arcane Archer")
 
-    # Bursting Arrow
-    # You imbue your arrow with force energy drawn from the school of evocation. The energy detonates after your attack. Immediately after the arrow hits the creature, the target and all other creatures within 10 feet of it take 2d6 force damage each.
+        dazed = conditions.Dazed()
+        weakened = conditions.Weakened()
+        dc = stats.difficulty_class
+        dmg = DieFormula.target_value(0.6 * stats.attack.average_damage, force_die=Die.d10)
 
-    # The force damage increases to 4d6 when you reach 18th level in this class.
+        feature1 = Feature(
+            name="Dazing Arrow",
+            action=ActionType.BonusAction,
+            recharge=5,
+            description=f"Immediately after hitting a target with an attack, {stats.roleref} attempts to addle the target's mind with fey magics. \
+                The target must make a DC {dc} Charisma saving throw or be {dazed.caption} for 1 minute (save ends at end of turn). {dazed.description_3rd}",
+        )
 
-    # Enfeebling Arrow
-    # You weave necromantic magic into your arrow. The creature hit by the arrow takes an extra 2d6 necrotic damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.
+        feature2 = Feature(
+            name="Exploding Arrow",
+            action=ActionType.BonusAction,
+            recharge=5,
+            description=f"Immediately after hitting a target with attack, {stats.roleref} causes the arrow to explode. \
+                Each creature within 10 feet of the target (including the target) must make a DC {dc} Dexterity saving throw \
+                or take an additional {dmg.description} fire damage.",
+        )
 
-    # The necrotic damage increases to 4d6 when you reach 18th level in this class.
+        feature3 = Feature(
+            name="Enfeebling Arrow",
+            action=ActionType.BonusAction,
+            recharge=5,
+            description=f"Immediately after hitting a target with an attack, {stats.roleref} forces the target to make a DC {dc} Constitution save. \
+                On a failure, the target is {weakened.caption} for 1 minute (save ends at end of turn). {weakened.description}",
+        )
+
+        feature = choose_options(rng, [feature1, feature2, feature3])
+
+        return stats, feature
 
 
 class _PsiWarrior(Power):
@@ -405,33 +519,149 @@ class _Cavalier(Power):
         return stats, [feature1, feature2, feature3]
 
 
-class _RuneKnight:
-    # Giants Might
-    # also grant one of the giant runes
-    pass
+class _RuneKnight(Power):
+    def __init__(self):
+        super().__init__(name="Rune Knight", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate=candidate,
+            require_no_creature_class=True,
+            require_types=[CreatureType.Humanoid, CreatureType.Giant],
+            bonus_roles=[MonsterRole.Bruiser, MonsterRole.Leader],
+            require_stats=Stats.STR,
+            attack_modifiers=[
+                "-",
+                weapon.Greataxe,
+                weapon.Greatsword,
+                weapon.Maul,
+                weapon.SwordAndShield,
+                weapon.MaceAndShield,
+            ],
+        )
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        choices = [giant.FireRune, giant.FrostRune, giant.StormRune]
+        choice = choose_options(rng, choices)
+
+        stats = stats.copy(creature_class="Rune Knight")
+        stats = stats.add_ac_template(HeavyArmor, ac_modifier=1)
+
+        feature1 = Feature(
+            name="Runic Armor",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"The first time {stats.roleref} takes damage from an attack, the runes on its armor flare up and grant {stats.roleref} \
+                resistance to that attack's damage",
+        )
+
+        stats, feature2 = choice.apply(stats, rng)
+
+        return stats, _merge_features(feature1, feature2)
 
 
-class _Samurai:
+class _Samurai(Power):
+    def __init__(self):
+        super().__init__(name="Samurai", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate,
+            require_no_creature_class=True,
+            require_types=CreatureType.Humanoid,
+            require_roles=[MonsterRole.Leader, MonsterRole.Defender],
+            require_stats=Stats.STR,
+            attack_modifiers=["-", weapon.Shortswords, weapon.SwordAndShield],
+        )
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        stats = stats.copy(creature_class="Samurai")
+        stats = stats.scale({Stats.STR: Stats.STR.Boost(2)})
+        temp_hp = easy_multiple_of_five(3.5 * stats.cr, min_val=5, max_val=50)
+        feature1 = Feature(
+            name="Fighting Spirit",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"{stats.roleref.capitalize()} channels its inner fighting spirit. It gains {temp_hp} temporary hp. While those temporary hp are active, \
+                {stats.roleref} has advantage on attack rolls and saving throws",
+        )
+
+        stats, feature2 = tough.NotDeadYet.apply(stats, rng)
+
+        return stats, _merge_features(feature1, feature2)
+
     # fighting spirit - bonus action to gain temp HP and advantage on attack rolls
     # strength before death - "Not Dead Yet" ability but renamed
     pass
 
 
-class _Monk:
-    # stunning strike
-    # evasion
-    pass
-
-
-class _Paladin:
-    # divine smite
-    # aura of protection
-    pass
-
-
-class _BlessedWarrior(Power):
+class _Monk(Power):
     def __init__(self):
-        super().__init__(name="Blessed Warrior", power_type=PowerType.Theme)
+        super().__init__(name="Monk", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate=candidate,
+            require_roles=[MonsterRole.Skirmisher, MonsterRole.Leader, MonsterRole.Bruiser],
+            require_stats=Stats.DEX,
+            require_types=CreatureType.Humanoid,
+            require_no_creature_class=True,
+            attack_modifiers=["-", natural.Slam],
+        )
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        pass
+
+        stats = stats.copy(secondary_class="Monk")
+        stats = stats.scale({Stats.DEX: Stats.DEX.Boost(2)})
+
+        stats, feature1 = bruiser.StunningBlow.apply(stats, rng)
+        stats, feature2 = fast.Evasion.apply(stats, rng)
+
+        return stats, _merge_features(feature1, feature2)
+
+
+class _Paladin(Power):
+    def __init__(self):
+        super().__init__(name="Paladin", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate,
+            require_no_creature_class=True,
+            require_types=CreatureType.Humanoid,
+            bonus_damage=DamageType.Radiant,
+            require_stats=Stats.STR,
+            attack_modifiers=[
+                "-",
+                weapon.SwordAndShield,
+                weapon.MaceAndShield,
+                weapon.Maul,
+                weapon.Greatsword,
+            ],
+        )
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        stats = stats.copy(secondary_damage_type=DamageType.Radiant, creature_class="Paladin")
+        stats = stats.scale({Stats.CHA: Stats.CHA.Boost(2)})
+
+        stats, feature1 = organized.Inspiring.apply(stats, rng)
+        stats, feature2 = holy.DivineSmite.apply(stats, rng)
+
+        return stats, _merge_features(feature1, feature2)
+
+
+class _Cleric(Power):
+    def __init__(self):
+        super().__init__(name="Cleric", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -459,9 +689,6 @@ class _BlessedWarrior(Power):
 
         stats = stats.copy(creature_class="Cleric")
 
-        damage = DieFormula.target_value(0.6 * stats.attack.average_damage, force_die=Die.d6)
-        dc = stats.difficulty_class
-
         feature1 = Feature(
             name="Favored by the Gods",
             action=ActionType.Reaction,
@@ -469,14 +696,9 @@ class _BlessedWarrior(Power):
             description=f"When {stats.roleref} fails a saving throw or misses an attack it may add 2d4 to that result",
         )
 
-        feature2 = Feature(
-            name="Word of Radiance",
-            action=ActionType.Action,
-            replaces_multiattack=1,
-            description=f"{stats.roleref.capitalize()} utters a divine word and it shines with burning radiance. \
-                Each hostile creature within 10 feet must make a DC {dc} Constitution saving throw or take {damage.description} radiant damage.",
-        )
-        return stats, [feature1, feature2]
+        stats, feature2 = holy.WordOfRadiance.apply(stats, rng)
+
+        return stats, _merge_features(feature1, feature2)
 
 
 class _Druid(Power):
@@ -538,21 +760,27 @@ class _Druid(Power):
         return stats, feature
 
 
-# TODO - allow base statblock to specify classes and subtypes
-
+ArcaneArcher: Power = _ArcaneArcher()
 Artificer: Power = _Artificer()
 Barbarian: Power = _Barbarian()
-Bard: Power = _BardicWarrior()
-BlessedWarrior: Power = _BlessedWarrior()
+Bard: Power = _Bard()
+BlessedWarrior: Power = _Cleric()
 Cavalier: Power = _Cavalier()
 DeathKnight: Power = _DeathKnight()
 Druid: Power = _Druid()
 EldritchKnight: Power = _EldritchKnight()
+Monk: Power = _Monk()
+Paladin: Power = _Paladin()
 PsiWarrior: Power = _PsiWarrior()
+Ranger: Power = _Ranger()
+RuneKnight: Power = _RuneKnight()
+Samurai: Power = _Samurai()
+WarPriest: Power = _WarPriest()
 
 
 ClassPowers: List[Power] = [
     Artificer,
+    ArcaneArcher,
     Barbarian,
     Bard,
     BlessedWarrior,
@@ -561,4 +789,8 @@ ClassPowers: List[Power] = [
     Druid,
     EldritchKnight,
     PsiWarrior,
+    Samurai,
+    Ranger,
+    RuneKnight,
+    WarPriest,
 ]
