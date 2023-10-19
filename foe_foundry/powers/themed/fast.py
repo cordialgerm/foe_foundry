@@ -10,11 +10,11 @@ from ...damage import DamageType, conditions
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerType
+from ..power import Power, PowerBackport, PowerType
 from ..utils import score
 
 
-class _Evasion(Power):
+class _Evasion(PowerBackport):
     def __init__(self):
         super().__init__(name="Poisoning Attack", power_type=PowerType.Theme)
 

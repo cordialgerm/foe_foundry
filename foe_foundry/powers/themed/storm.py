@@ -17,7 +17,7 @@ from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -59,9 +59,11 @@ def as_stormy(stats: BaseStatblock) -> BaseStatblock:
     return stats
 
 
-class _TempestSurge(Power):
+class _TempestSurge(PowerBackport):
     def __init__(self):
-        super().__init__(name="Tempest Surge", power_type=PowerType.Theme)
+        super().__init__(
+            name="Tempest Surge", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_storm(candidate, min_cr=3)
@@ -90,7 +92,7 @@ class _TempestSurge(Power):
         return stats, feature
 
 
-class _StormcallersFury(Power):
+class _StormcallersFury(PowerBackport):
     def __init__(self):
         super().__init__(name="Stormcaller's Fury", power_type=PowerType.Theme)
         self.min_cr = 3

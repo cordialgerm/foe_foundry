@@ -14,7 +14,7 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerType
+from ..power import Power, PowerBackport, PowerType
 from ..utils import score
 
 
@@ -30,7 +30,7 @@ def score_holy(candidate: BaseStatblock, **kwargs) -> float:
     return score(**args)
 
 
-class _DivineSmite(Power):
+class _DivineSmite(PowerBackport):
     def __init__(self):
         super().__init__(name="Divine Smite", power_type=PowerType.Theme)
 
@@ -56,7 +56,7 @@ class _DivineSmite(Power):
         return stats, feature
 
 
-class _MassCureWounds(Power):
+class _MassCureWounds(PowerBackport):
     def __init__(self):
         super().__init__(name="Mass Cure Wounds", power_type=PowerType.Theme)
 
@@ -77,7 +77,7 @@ class _MassCureWounds(Power):
         return stats, feature
 
 
-class _WordOfRadiance(Power):
+class _WordOfRadiance(PowerBackport):
     def __init__(self):
         super().__init__(name="Word of Radiance", power_type=PowerType.Theme)
 

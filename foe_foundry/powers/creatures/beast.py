@@ -9,11 +9,10 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Bleeding, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import summoning
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -40,7 +39,7 @@ def _score_beast(
     return score if score > 0 else NO_AFFINITY
 
 
-class _HitAndRun(Power):
+class _HitAndRun(PowerBackport):
     def __init__(self):
         super().__init__(name="Hit and Run", power_type=PowerType.Creature)
 
@@ -61,7 +60,7 @@ class _HitAndRun(Power):
         return stats, feature
 
 
-class _MotivatedByCarnage(Power):
+class _MotivatedByCarnage(PowerBackport):
     def __init__(self):
         super().__init__(name="Motivated by Carnage", power_type=PowerType.Creature)
 
@@ -83,7 +82,7 @@ class _MotivatedByCarnage(Power):
         return stats, feature
 
 
-class _Gore(Power):
+class _Gore(PowerBackport):
     def __init__(self):
         super().__init__(name="Gore", power_type=PowerType.Creature)
 
@@ -112,7 +111,7 @@ class _Gore(Power):
         return stats, None
 
 
-class _Web(Power):
+class _Web(PowerBackport):
     def __init__(self):
         super().__init__(name="Web", power_type=PowerType.Creature)
 
@@ -158,9 +157,9 @@ class _Web(Power):
         return stats, [feature1, feature2, feature3]
 
 
-class _Packlord(Power):
+class _Packlord(PowerBackport):
     def __init__(self):
-        super().__init__(name="Packlord", power_type=PowerType.Creature)
+        super().__init__(name="Packlord", power_type=PowerType.Creature, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_beast(candidate)
@@ -190,9 +189,11 @@ class _Packlord(Power):
         return stats, feature
 
 
-class _WildInstinct(Power):
+class _WildInstinct(PowerBackport):
     def __init__(self):
-        super().__init__(name="Wild Instinct", power_type=PowerType.Creature)
+        super().__init__(
+            name="Wild Instinct", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_beast(candidate)

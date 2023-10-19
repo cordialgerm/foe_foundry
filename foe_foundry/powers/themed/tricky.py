@@ -15,7 +15,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -68,7 +68,7 @@ def _ensure_tricky_stats(stats: BaseStatblock) -> BaseStatblock:
     return stats.copy(**changes)
 
 
-class _NimbleReaction(Power):
+class _NimbleReaction(PowerBackport):
     def __init__(self):
         super().__init__(name="Nimble Reaction", power_type=PowerType.Theme)
 
@@ -101,7 +101,7 @@ class _NimbleReaction(Power):
         return stats, feature
 
 
-class _Impersonation(Power):
+class _Impersonation(PowerBackport):
     def __init__(self):
         super().__init__(name="Impersonation", power_type=PowerType.Theme)
 
@@ -126,7 +126,7 @@ class _Impersonation(Power):
         return stats, feature
 
 
-class _Projection(Power):
+class _Projection(PowerBackport):
     def __init__(self):
         super().__init__(name="Projection", power_type=PowerType.Theme)
 
@@ -152,9 +152,11 @@ class _Projection(Power):
         return stats, feature
 
 
-class _ShadowyDoppelganger(Power):
+class _ShadowyDoppelganger(PowerBackport):
     def __init__(self):
-        super().__init__(name="Shadowy Doppelganger", power_type=PowerType.Theme)
+        super().__init__(
+            name="Shadowy Doppelganger", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_tricky_creature(candidate, magical=True)
@@ -176,9 +178,11 @@ class _ShadowyDoppelganger(Power):
         return stats, feature
 
 
-class _SpectralDuplicate(Power):
+class _SpectralDuplicate(PowerBackport):
     def __init__(self):
-        super().__init__(name="Spectral Duplicate", power_type=PowerType.Theme)
+        super().__init__(
+            name="Spectral Duplicate", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_tricky_creature(candidate, magical=True)
@@ -196,7 +200,7 @@ class _SpectralDuplicate(Power):
         return stats, feature
 
 
-class _MirrorImage(Power):
+class _MirrorImage(PowerBackport):
     def __init__(self):
         super().__init__(name="Mirror Images", power_type=PowerType.Theme)
 
@@ -215,7 +219,7 @@ class _MirrorImage(Power):
         return stats, feature
 
 
-class _Hypnosis(Power):
+class _Hypnosis(PowerBackport):
     def __init__(self):
         super().__init__(name="Hypnotic Pattern", power_type=PowerType.Theme)
 
@@ -236,7 +240,7 @@ class _Hypnosis(Power):
         return stats, feature
 
 
-class _ReverseFortune(Power):
+class _ReverseFortune(PowerBackport):
     def __init__(self):
         super().__init__(name="Reverse Fortune", power_type=PowerType.Theme)
 

@@ -11,7 +11,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerType
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -21,11 +21,11 @@ from ..scores import (
 )
 
 
-class _Defender(Power):
+class _Defender(PowerBackport):
     """When an ally within 5 feet of this creature is targeted by an attack or spell, this creature can make themself the intended target of the attack."""
 
     def __init__(self):
-        super().__init__(name="Defender", power_type=PowerType.Role)
+        super().__init__(name="Defender", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def _is_minion(self, candidate: BaseStatblock) -> bool:
         return candidate.cr <= 2 and candidate.role not in {
@@ -58,7 +58,7 @@ class _Defender(Power):
         return stats, feature
 
 
-class _StickWithMe(Power):
+class _StickWithMe(PowerBackport):
     def __init__(self):
         super().__init__(name="Stick with Me!", power_type=PowerType.Role)
 
@@ -93,9 +93,9 @@ class _StickWithMe(Power):
         return stats, feature
 
 
-class _Blocker(Power):
+class _Blocker(PowerBackport):
     def __init__(self):
-        super().__init__(name="Blocker", power_type=PowerType.Role)
+        super().__init__(name="Blocker", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         score = 0
@@ -127,7 +127,7 @@ class _Blocker(Power):
         return stats, feature
 
 
-class _SpellReflection(Power):
+class _SpellReflection(PowerBackport):
     def __init__(self):
         super().__init__(name="Blocker", power_type=PowerType.Role)
 

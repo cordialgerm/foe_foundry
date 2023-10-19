@@ -13,7 +13,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -23,9 +23,11 @@ from ..scores import (
 )
 
 
-class _BreathAttack(Power):
+class _BreathAttack(PowerBackport):
     def __init__(self):
-        super().__init__(name="Breath Attack", power_type=PowerType.Theme)
+        super().__init__(
+            name="Breath Attack", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         if candidate.creature_type != CreatureType.Dragon:

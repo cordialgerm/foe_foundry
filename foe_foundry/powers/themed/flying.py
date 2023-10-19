@@ -14,7 +14,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
+from ..power import Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -42,7 +42,7 @@ def _score_flyer(candidate: BaseStatblock, require_flying: bool = False) -> floa
     return creature_types.get(candidate.creature_type, NO_AFFINITY)
 
 
-class _Flyer(Power):
+class _Flyer(PowerBackport):
     def __init__(self):
         super().__init__(name="Flyer", power_type=PowerType.Theme)
 
@@ -65,7 +65,7 @@ class _Flyer(Power):
         return stats, feature
 
 
-class _Flyby(Power):
+class _Flyby(PowerBackport):
     def __init__(self):
         super().__init__(name="Flyby", power_type=PowerType.Theme)
 

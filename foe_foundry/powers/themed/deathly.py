@@ -14,7 +14,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -46,9 +46,9 @@ def _score(
     return score if score > 0 else NO_AFFINITY
 
 
-class _AuraOfDoom(Power):
+class _AuraOfDoom(PowerBackport):
     def __init__(self):
-        super().__init__(name="Aura of Doom", power_type=PowerType.Theme)
+        super().__init__(name="Aura of Doom", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate, caster_or_undead_only=True)
@@ -67,9 +67,11 @@ class _AuraOfDoom(Power):
         return stats, feature
 
 
-class _AuraOfAnnihilation(Power):
+class _AuraOfAnnihilation(PowerBackport):
     def __init__(self):
-        super().__init__(name="Aura of Annihilation", power_type=PowerType.Theme)
+        super().__init__(
+            name="Aura of Annihilation", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate, caster_or_undead_only=True)
@@ -93,9 +95,11 @@ class _AuraOfAnnihilation(Power):
         return stats, feature
 
 
-class _UndyingMinions(Power):
+class _UndyingMinions(PowerBackport):
     def __init__(self):
-        super().__init__(name="Undying Minions", power_type=PowerType.Theme)
+        super().__init__(
+            name="Undying Minions", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate, caster_or_undead_only=True)
@@ -114,7 +118,7 @@ class _UndyingMinions(Power):
         return stats, feature
 
 
-class _WitheringBlow(Power):
+class _WitheringBlow(PowerBackport):
     def __init__(self):
         super().__init__(name="Withering Blow", power_type=PowerType.Theme)
 
@@ -151,7 +155,7 @@ class _WitheringBlow(Power):
         return stats, None
 
 
-class _DrainingBlow(Power):
+class _DrainingBlow(PowerBackport):
     def __init__(self):
         super().__init__(name="Draining Blow", power_type=PowerType.Theme)
 
@@ -172,9 +176,11 @@ class _DrainingBlow(Power):
         return stats, feature
 
 
-class _ShadowStride(Power):
+class _ShadowStride(PowerBackport):
     def __init__(self):
-        super().__init__(name="Shadow Stride", power_type=PowerType.Theme)
+        super().__init__(
+            name="Shadow Stride", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate, undead_only=False)
@@ -189,9 +195,11 @@ class _ShadowStride(Power):
         return stats, feature
 
 
-class _FleshPuppets(Power):
+class _FleshPuppets(PowerBackport):
     def __init__(self):
-        super().__init__(name="Flesh Puppets", power_type=PowerType.Theme)
+        super().__init__(
+            name="Flesh Puppets", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate, undead_only=False, caster_or_undead_only=True)
@@ -212,9 +220,9 @@ class _FleshPuppets(Power):
         return stats, feature
 
 
-class _DevourSoul(Power):
+class _DevourSoul(PowerBackport):
     def __init__(self):
-        super().__init__(name="Devour Soul", power_type=PowerType.Theme)
+        super().__init__(name="Devour Soul", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate, undead_only=True)
@@ -236,7 +244,7 @@ class _DevourSoul(Power):
         return stats, feature
 
 
-class _DrainStrength(Power):
+class _DrainStrength(PowerBackport):
     def __init__(self):
         super().__init__(name="Drain Strength", power_type=PowerType.Theme)
 
@@ -254,7 +262,8 @@ class _DrainStrength(Power):
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} attempts to magically drain the strength from a creature it can see within 5 feet. \
-                The creature must make a DC {dc} Constitution save. On a failure, the creature takes {dmg.description} necrotic damage and is {weakened}.",
+                The creature must make a DC {dc} Constitution save. On a failure, the creature takes {dmg.description} necrotic damage and is {weakened.caption} \
+                for 1 minute (save ends at end of turn). {weakened.description_3rd}",
         )
 
         return stats, feature

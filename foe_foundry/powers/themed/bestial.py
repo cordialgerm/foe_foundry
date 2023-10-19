@@ -12,7 +12,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -22,9 +22,11 @@ from ..scores import (
 )
 
 
-class _EarthshakingDemise(Power):
+class _EarthshakingDemise(PowerBackport):
     def __init__(self):
-        super().__init__(name="Earthshaking Demise", power_type=PowerType.Theme)
+        super().__init__(
+            name="Earthshaking Demise", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         if candidate.size < Size.Huge:
@@ -60,9 +62,11 @@ class _EarthshakingDemise(Power):
         return stats, feature
 
 
-class _FeralRetaliation(Power):
+class _FeralRetaliation(PowerBackport):
     def __init__(self):
-        super().__init__(name="Feral Retaliation", power_type=PowerType.Theme)
+        super().__init__(
+            name="Feral Retaliation", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         score = 0

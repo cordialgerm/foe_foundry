@@ -15,7 +15,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -53,9 +53,9 @@ def _score(candidate: BaseStatblock) -> float:
     return score if score > 0 else NO_AFFINITY
 
 
-class _Commander(Power):
+class _Commander(PowerBackport):
     def __init__(self):
-        super().__init__(name="Commander", power_type=PowerType.Theme)
+        super().__init__(name="Commander", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate)
@@ -76,9 +76,9 @@ class _Commander(Power):
         return stats, feature
 
 
-class _Fanatic(Power):
+class _Fanatic(PowerBackport):
     def __init__(self):
-        super().__init__(name="Fanatic", power_type=PowerType.Theme)
+        super().__init__(name="Fanatic", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate)
@@ -100,7 +100,7 @@ class _Fanatic(Power):
         return stats, feature
 
 
-class _Inspiring(Power):
+class _Inspiring(PowerBackport):
     def __init__(self):
         super().__init__(name="Inspiring", power_type=PowerType.Theme)
 

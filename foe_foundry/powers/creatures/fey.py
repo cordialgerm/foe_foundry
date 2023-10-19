@@ -15,7 +15,7 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -46,9 +46,11 @@ def as_cursed_fey(stats: BaseStatblock) -> BaseStatblock:
     return stats
 
 
-class _TeleportingStep(Power):
+class _TeleportingStep(PowerBackport):
     def __init__(self):
-        super().__init__(name="Teleporting Step", power_type=PowerType.Creature)
+        super().__init__(
+            name="Teleporting Step", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_fey(candidate)
@@ -65,7 +67,7 @@ class _TeleportingStep(Power):
         return stats, feature
 
 
-class _BeguilingAura(Power):
+class _BeguilingAura(PowerBackport):
     def __init__(self):
         super().__init__(name="Beguiling Aura", power_type=PowerType.Creature)
 
@@ -86,9 +88,11 @@ class _BeguilingAura(Power):
         return stats, feature
 
 
-class _NegotiateLife(Power):
+class _NegotiateLife(PowerBackport):
     def __init__(self):
-        super().__init__(name="Negotiate Life", power_type=PowerType.Creature)
+        super().__init__(
+            name="Negotiate Life", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_fey(candidate)
@@ -112,9 +116,11 @@ class _NegotiateLife(Power):
         return stats, feature
 
 
-class _FaeCounterspell(Power):
+class _FaeCounterspell(PowerBackport):
     def __init__(self):
-        super().__init__(name="Fae Counterspell", power_type=PowerType.Creature)
+        super().__init__(
+            name="Fae Counterspell", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_fey(candidate)
@@ -134,9 +140,9 @@ class _FaeCounterspell(Power):
         return stats, feature
 
 
-class _Awaken(Power):
+class _Awaken(PowerBackport):
     def __init__(self):
-        super().__init__(name="Awaken", power_type=PowerType.Creature)
+        super().__init__(name="Awaken", power_type=PowerType.Creature, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_fey(candidate)
@@ -159,9 +165,11 @@ class _Awaken(Power):
         return stats, feature
 
 
-class _FaeBargain(Power):
+class _FaeBargain(PowerBackport):
     def __init__(self):
-        super().__init__(name="Fae Bargain", power_type=PowerType.Creature)
+        super().__init__(
+            name="Fae Bargain", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_fey(candidate)

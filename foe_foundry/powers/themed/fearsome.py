@@ -11,7 +11,7 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -68,7 +68,7 @@ def _score_horrifying(candidate: BaseStatblock, min_cr: float = 1) -> float:
     return score
 
 
-class _Repulsion(Power):
+class _Repulsion(PowerBackport):
     def __init__(self):
         super().__init__(name="Repulsion", power_type=PowerType.Theme)
 
@@ -100,7 +100,7 @@ class _Repulsion(Power):
         return stats, feature
 
 
-class _TerrifyingVisage(Power):
+class _TerrifyingVisage(PowerBackport):
     def __init__(self):
         super().__init__(name="Terrifying Visage", power_type=PowerType.Theme)
 
@@ -124,7 +124,7 @@ class _TerrifyingVisage(Power):
         return stats, feature
 
 
-class _DreadGaze(Power):
+class _DreadGaze(PowerBackport):
     def __init__(self):
         super().__init__(name="Dread Gaze", power_type=PowerType.Theme)
 
@@ -150,9 +150,11 @@ class _DreadGaze(Power):
         return stats, feature
 
 
-class _MindShatteringScream(Power):
+class _MindShatteringScream(PowerBackport):
     def __init__(self):
-        super().__init__(name="Mind-Shattering Scream", power_type=PowerType.Theme)
+        super().__init__(
+            name="Mind-Shattering Scream", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         score = _score_horrifying(candidate)
@@ -174,7 +176,7 @@ class _MindShatteringScream(Power):
         return stats, feature
 
 
-class _NightmarishVisions(Power):
+class _NightmarishVisions(PowerBackport):
     def __init__(self):
         super().__init__(name="Nightmarish Visions", power_type=PowerType.Theme)
 

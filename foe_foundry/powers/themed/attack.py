@@ -13,7 +13,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock
 from ..attack import flavorful_damage_types
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
+from ..power import Power, PowerBackport, PowerType
 from ..scores import HIGH_AFFINITY, LOW_AFFINITY, MODERATE_AFFINITY, NO_AFFINITY
 
 
@@ -68,7 +68,7 @@ def score(
     return score
 
 
-class _PoisoningAttack(Power):
+class _PoisoningAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Poisoning Attack", power_type=PowerType.Theme)
 
@@ -95,7 +95,7 @@ class _PoisoningAttack(Power):
         return stats, feature
 
 
-class _BleedingAttack(Power):
+class _BleedingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Bleeding Attack", power_type=PowerType.Theme)
 
@@ -150,7 +150,7 @@ class _BleedingAttack(Power):
         return stats, feature
 
 
-class _DazingAttack(Power):
+class _DazingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Dazing Attack", power_type=PowerType.Theme)
 
@@ -177,7 +177,7 @@ class _DazingAttack(Power):
         return stats, feature
 
 
-class _BurningAttack(Power):
+class _BurningAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Burning Attack", power_type=PowerType.Theme)
 
@@ -206,7 +206,7 @@ class _BurningAttack(Power):
         return stats, feature
 
 
-class _ProneAttack(Power):
+class _ProneAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Prone Attack", power_type=PowerType.Theme)
 
@@ -237,7 +237,7 @@ class _ProneAttack(Power):
         return stats, feature
 
 
-class _SlowingAttack(Power):
+class _SlowingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Slowing Attack", power_type=PowerType.Theme)
 
@@ -267,7 +267,7 @@ class _SlowingAttack(Power):
         return stats, feature
 
 
-class _PushingAttack(Power):
+class _PushingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Pushing Attack", power_type=PowerType.Theme)
 
@@ -306,7 +306,7 @@ class _PushingAttack(Power):
         return stats, feature
 
 
-class _GrapplingAttack(Power):
+class _GrapplingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Grappling Attack", power_type=PowerType.Theme)
 
@@ -341,7 +341,7 @@ class _GrapplingAttack(Power):
         return stats, feature
 
 
-class _BlindingAttack(Power):
+class _BlindingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Blinding Attack", power_type=PowerType.Theme)
 
@@ -367,7 +367,7 @@ class _BlindingAttack(Power):
         return stats, feature
 
 
-class _FearingAttack(Power):
+class _FearingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Frightening Attack", power_type=PowerType.Theme)
 
@@ -392,7 +392,7 @@ class _FearingAttack(Power):
         return stats, feature
 
 
-class _CharmingAttack(Power):
+class _CharmingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Charming Attack", power_type=PowerType.Theme)
 
@@ -418,7 +418,7 @@ class _CharmingAttack(Power):
         return stats, feature
 
 
-class _FreezingAttack(Power):
+class _FreezingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Freezing Attack", power_type=PowerType.Theme)
 
@@ -447,7 +447,7 @@ class _FreezingAttack(Power):
         return stats, feature
 
 
-class _ShockingAttack(Power):
+class _ShockingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Shocking Attack", power_type=PowerType.Theme)
 
@@ -474,7 +474,7 @@ class _ShockingAttack(Power):
         return stats, feature
 
 
-class _GrazingAttack(Power):
+class _GrazingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Grazing Attack", power_type=PowerType.Theme)
 
@@ -505,7 +505,7 @@ class _GrazingAttack(Power):
         return stats, feature
 
 
-class _CleavingAttack(Power):
+class _CleavingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Cleaving Attack", power_type=PowerType.Theme)
 
@@ -534,7 +534,7 @@ class _CleavingAttack(Power):
         return stats, feature
 
 
-class _SappingAttack(Power):
+class _SappingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Sapping Attack", power_type=PowerType.Theme)
 
@@ -563,7 +563,7 @@ class _SappingAttack(Power):
         return stats, feature
 
 
-class _VexingAttack(Power):
+class _VexingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Vexing Attack", power_type=PowerType.Theme)
 
@@ -588,7 +588,7 @@ class _VexingAttack(Power):
         return stats, feature
 
 
-class _WeakeningAttack(Power):
+class _WeakeningAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Weakening Attack", power_type=PowerType.Theme)
 
@@ -621,7 +621,7 @@ class _WeakeningAttack(Power):
         return stats, feature
 
 
-class _DisarmingAttack(Power):
+class _DisarmingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Disarming Attack", power_type=PowerType.Theme)
 

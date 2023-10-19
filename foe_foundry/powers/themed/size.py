@@ -14,8 +14,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..attack import flavorful_damage_types
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -25,11 +24,11 @@ from ..scores import (
 )
 
 
-class _Gigantic(Power):
+class _Gigantic(PowerBackport):
     """Increases the size and damage of the creature but lowers its AC"""
 
     def __init__(self):
-        super().__init__(name="Gigantic", power_type=PowerType.Theme)
+        super().__init__(name="Gigantic", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         score = 0
@@ -66,7 +65,7 @@ class _Gigantic(Power):
         return stats, feature
 
 
-class _Diminutive(Power):
+class _Diminutive(PowerBackport):
     """Decreases the size and damage of the creature but increases its AC"""
 
     def __init__(self):

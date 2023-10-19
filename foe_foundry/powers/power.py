@@ -3,15 +3,23 @@ from typing import List, Tuple
 
 import numpy as np
 
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
+
 from ..features import Feature
 from ..statblocks import BaseStatblock
 from .power_type import PowerType
 
+LOW_POWER = 0.5
+MEDIUM_POWER = 1
+HIGH_POWER = 1.5
+
 
 class Power(ABC):
-    def __init__(self, name: str, power_type: PowerType):
+    def __init__(self, name: str, power_type: PowerType, power_level: float = MEDIUM_POWER):
         self.name = name
         self.power_type = power_type
+        self.power_level = power_level
 
     @property
     def key(self) -> str:
@@ -21,10 +29,11 @@ class Power(ABC):
     def score(self, candidate: BaseStatblock) -> float:
         pass
 
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        return stats
+
     @abstractmethod
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         pass
 
     def __repr__(self):
@@ -32,3 +41,22 @@ class Power(ABC):
 
     def __hash__(self) -> int:
         return hash(type(self))
+
+
+class PowerBackport(Power):
+    def __init__(self, name: str, power_type: PowerType, power_level: float = MEDIUM_POWER):
+        super().__init__(name=name, power_type=power_type, power_level=power_level)
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        new_stats, _ = self.apply(stats, np.random.default_rng(20210518))
+        return new_stats
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        _, features = self.apply(stats, np.random.default_rng(20210518))
+        return Feature.merge(features)
+
+    @abstractmethod
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        pass

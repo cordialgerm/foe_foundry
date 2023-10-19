@@ -14,7 +14,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -24,9 +24,9 @@ from ..scores import (
 )
 
 
-class _Aquatic(Power):
+class _Aquatic(PowerBackport):
     def __init__(self):
-        super().__init__(name="Aquatic", power_type=PowerType.Theme)
+        super().__init__(name="Aquatic", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         score = 0

@@ -13,7 +13,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import choose_enum, easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -41,7 +41,7 @@ def _score_clever(candidate: BaseStatblock) -> float:
     high_cha = candidate.attributes.CHA >= 16
 
     if high_int + high_wis + high_cha >= 2:
-        score += MODERATE_AFFINITY
+        score += HIGH_AFFINITY
 
     if candidate.role in {MonsterRole.Leader, MonsterRole.Controller}:
         score += MODERATE_AFFINITY
@@ -49,7 +49,7 @@ def _score_clever(candidate: BaseStatblock) -> float:
     return score if score > 0 else NO_AFFINITY
 
 
-class _Keen(Power):
+class _Keen(PowerBackport):
     """This creature has a keen mind"""
 
     def __init__(self):
@@ -95,7 +95,7 @@ class _Keen(Power):
         return stats, feature
 
 
-class _MarkTheTarget(Power):
+class _MarkTheTarget(PowerBackport):
     """When this creature hits a target with a ranged attack, allies of this creature who can see the target
     have advantage on attack rolls against the target until the start of this creature's next turn.
     """
@@ -126,7 +126,7 @@ class _MarkTheTarget(Power):
         return stats, feature
 
 
-class _UnsettlingWords(Power):
+class _UnsettlingWords(PowerBackport):
     def __init__(self):
         super().__init__(name="Unsettling Words", power_type=PowerType.Theme)
 

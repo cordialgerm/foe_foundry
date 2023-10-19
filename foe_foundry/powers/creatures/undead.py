@@ -16,7 +16,7 @@ from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -33,7 +33,7 @@ def _score(candidate: BaseStatblock) -> float:
     return HIGH_AFFINITY
 
 
-class _UndeadResilience(Power):
+class _UndeadResilience(PowerBackport):
     def __init__(self):
         super().__init__(name="Undead Resilience", power_type=PowerType.Creature)
 
@@ -50,7 +50,7 @@ class _UndeadResilience(Power):
         return stats, feature
 
 
-class _StenchOfDeath(Power):
+class _StenchOfDeath(PowerBackport):
     def __init__(self):
         super().__init__(name="Stench of Death", power_type=PowerType.Creature)
 
@@ -68,7 +68,7 @@ class _StenchOfDeath(Power):
         return stats, feature
 
 
-class _StygianBurst(Power):
+class _StygianBurst(PowerBackport):
     def __init__(self):
         super().__init__(name="Stygian Burst", power_type=PowerType.Creature)
 
@@ -100,7 +100,7 @@ class _StygianBurst(Power):
         return stats, feature
 
 
-class _Frostbite(Power):
+class _Frostbite(PowerBackport):
     def __init__(self):
         super().__init__(name="Frostbite", power_type=PowerType.Creature)
 
@@ -126,7 +126,7 @@ class _Frostbite(Power):
         return stats, feature
 
 
-class _SoulChill(Power):
+class _SoulChill(PowerBackport):
     def __init__(self):
         super().__init__(name="Soul Chill", power_type=PowerType.Creature)
 
@@ -151,7 +151,7 @@ class _SoulChill(Power):
         return stats, feature
 
 
-class _SoulTether(Power):
+class _SoulTether(PowerBackport):
     def __init__(self):
         super().__init__(name="Soul Tether", power_type=PowerType.Creature)
 
@@ -174,7 +174,7 @@ class _SoulTether(Power):
         return stats, feature
 
 
-class _AntithesisOfLife(Power):
+class _AntithesisOfLife(PowerBackport):
     def __init__(self):
         super().__init__(name="Antithesis of Life", power_type=PowerType.Creature)
 

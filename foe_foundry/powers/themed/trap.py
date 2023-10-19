@@ -18,7 +18,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import choose_enum, easy_multiple_of_five
 from ..attack import flavorful_damage_types
-from ..power import Power, PowerType
+from ..power import Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -51,7 +51,7 @@ def score_trap(candidate: BaseStatblock) -> float:
     return score
 
 
-class _Snare(Power):
+class _Snare(PowerBackport):
     def __init__(self):
         super().__init__(name="Snare", power_type=PowerType.Theme)
 
@@ -77,7 +77,7 @@ class _Snare(Power):
         return stats, feature
 
 
-class _SpikePit(Power):
+class _SpikePit(PowerBackport):
     def __init__(self):
         super().__init__(name="Spike Pit", power_type=PowerType.Theme)
 

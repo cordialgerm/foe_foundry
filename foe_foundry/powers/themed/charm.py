@@ -14,7 +14,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
+from ..power import Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -24,7 +24,7 @@ from ..scores import (
 )
 
 
-class _WordsOfTreachery(Power):
+class _WordsOfTreachery(PowerBackport):
     def __init__(self):
         super().__init__(name="Words of Treachery", power_type=PowerType.Theme)
 
@@ -65,7 +65,7 @@ class _WordsOfTreachery(Power):
         return stats, feature
 
 
-class _CharmingWords(Power):
+class _CharmingWords(PowerBackport):
     def __init__(self):
         super().__init__(name="Charming Words", power_type=PowerType.Theme)
 

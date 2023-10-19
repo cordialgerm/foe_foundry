@@ -14,7 +14,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -69,7 +69,7 @@ def _as_melee_fighter(stats: BaseStatblock, uses_weapon: bool = False) -> BaseSt
     return stats.copy(**changes)
 
 
-class _Challenger(Power):
+class _Challenger(PowerBackport):
     def __init__(self):
         super().__init__(name="Challenger", power_type=PowerType.Theme)
 
@@ -104,9 +104,11 @@ class _Challenger(Power):
         return stats, feature
 
 
-class _PackTactics(Power):
+class _PackTactics(PowerBackport):
     def __init__(self):
-        super().__init__(name="Pack Tactics", power_type=PowerType.Theme)
+        super().__init__(
+            name="Pack Tactics", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         score = _score_could_be_organized(candidate, requires_intelligence=False)
@@ -123,7 +125,7 @@ class _PackTactics(Power):
         return stats, feature
 
 
-class _CleavingStrike(Power):
+class _CleavingStrike(PowerBackport):
     def __init__(self):
         super().__init__(name="Cleaving Strike", power_type=PowerType.Theme)
 
@@ -163,7 +165,7 @@ class _CleavingStrike(Power):
         return stats, feature
 
 
-class _Disciplined(Power):
+class _Disciplined(PowerBackport):
     def __init__(self):
         super().__init__(name="Disciplined", power_type=PowerType.Theme)
 
@@ -183,7 +185,7 @@ class _Disciplined(Power):
         return stats, feature
 
 
-class _MageSlayer(Power):
+class _MageSlayer(PowerBackport):
     def __init__(self):
         super().__init__(name="Mage Slayer", power_type=PowerType.Theme)
 
@@ -202,7 +204,7 @@ class _MageSlayer(Power):
         return stats, feature
 
 
-class _ParryAndRiposte(Power):
+class _ParryAndRiposte(PowerBackport):
     """This creature adds +3 to their Armor Class against one melee attack that would hit them.
     If the attack misses, this creature can immediately make a weapon attack against the creature making the parried attack.
     """
@@ -242,7 +244,7 @@ class _ParryAndRiposte(Power):
         return stats, feature
 
 
-class _PommelStrike(Power):
+class _PommelStrike(PowerBackport):
     def __init__(self):
         super().__init__(name="Pommel Strike", power_type=PowerType.Theme)
 
@@ -276,7 +278,7 @@ class _PommelStrike(Power):
         return stats, None
 
 
-class _PushingAttack(Power):
+class _PushingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Pushing Attack", power_type=PowerType.Theme)
 

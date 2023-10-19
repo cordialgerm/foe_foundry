@@ -14,7 +14,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -58,9 +58,9 @@ def _skirmisher_requirements(
     return score if score > 0 else NO_AFFINITY
 
 
-class _Nimble(Power):
+class _Nimble(PowerBackport):
     def __init__(self):
-        super().__init__(name="Nimble", power_type=PowerType.Role)
+        super().__init__(name="Nimble", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _skirmisher_requirements(candidate, require_skirmisher=False)
@@ -79,9 +79,9 @@ class _Nimble(Power):
         return stats, feature
 
 
-class _CarefulSteps(Power):
+class _CarefulSteps(PowerBackport):
     def __init__(self):
-        super().__init__(name="Careful Steps", power_type=PowerType.Role)
+        super().__init__(name="Careful Steps", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _skirmisher_requirements(candidate, require_skirmisher=False)
@@ -97,7 +97,7 @@ class _CarefulSteps(Power):
         return stats, feature
 
 
-class _KnockBack(Power):
+class _KnockBack(PowerBackport):
     def __init__(self):
         super().__init__(name="Knock Back", power_type=PowerType.Role)
 
@@ -124,7 +124,7 @@ class _KnockBack(Power):
         return stats, feature
 
 
-class _Skirmish(Power):
+class _Skirmish(PowerBackport):
     def __init__(self):
         super().__init__(name="Skirmish", power_type=PowerType.Role)
 
@@ -146,13 +146,13 @@ class _Skirmish(Power):
             replaces_multiattack=1,
             action=ActionType.Action,
             description=f"{stats.roleref.capitalize()} throws a net in a {net_size} ft. cube at a point it can see within {net_range} ft. \
-                Each creature within the cube must succeed on a DC {dc} Strength save or be Grappled (escape DC {dc}) and Restrained while grappled in this way.",
+                Each creature within the cube must succeed on a DC {dc} Strength save or be **Grappled** (escape DC {dc}) and **Restrained** while grappled in this way.",
         )
 
         return stats, feature
 
 
-class _HarrassingRetreat(Power):
+class _HarrassingRetreat(PowerBackport):
     def __init__(self):
         super().__init__(name="Harassing Retreat", power_type=PowerType.Role)
 
@@ -177,9 +177,9 @@ class _HarrassingRetreat(Power):
         return stats, feature
 
 
-class _Speedy(Power):
+class _Speedy(PowerBackport):
     def __init__(self):
-        super().__init__(name="Speedy", power_type=PowerType.Role)
+        super().__init__(name="Speedy", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _skirmisher_requirements(candidate, require_skirmisher=False)

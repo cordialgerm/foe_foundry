@@ -17,7 +17,7 @@ from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -50,7 +50,7 @@ def _score_dragon(
     return score
 
 
-class _DragonsGaze(Power):
+class _DragonsGaze(PowerBackport):
     def __init__(self):
         super().__init__(name="Dragon's Gaze", power_type=PowerType.Creature)
 
@@ -75,7 +75,7 @@ class _DragonsGaze(Power):
         return stats, feature
 
 
-class _DraconicRetaliation(Power):
+class _DraconicRetaliation(PowerBackport):
     def __init__(self):
         super().__init__(name="Draconic Retaliation", power_type=PowerType.Creature)
 
@@ -105,7 +105,7 @@ class _DraconicRetaliation(Power):
         return stats, feature
 
 
-class _TailSwipe(Power):
+class _TailSwipe(PowerBackport):
     def __init__(self):
         super().__init__(name="Tail Swipe", power_type=PowerType.Creature)
 
@@ -133,7 +133,7 @@ class _TailSwipe(Power):
         return stats, feature
 
 
-class _WingBuffet(Power):
+class _WingBuffet(PowerBackport):
     def __init__(self):
         super().__init__(name="Tail Swipe", power_type=PowerType.Creature)
 
@@ -156,7 +156,7 @@ class _WingBuffet(Power):
         return stats, feature
 
 
-class _DragonsGreed(Power):
+class _DragonsGreed(PowerBackport):
     def __init__(self):
         super().__init__(name="Dragon's Greed", power_type=PowerType.Creature)
 
@@ -176,9 +176,11 @@ class _DragonsGreed(Power):
         return stats, feature
 
 
-class _DraconicMinions(Power):
+class _DraconicMinions(PowerBackport):
     def __init__(self):
-        super().__init__(name="Draconic Minions", power_type=PowerType.Creature)
+        super().__init__(
+            name="Draconic Minions", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_dragon(candidate)

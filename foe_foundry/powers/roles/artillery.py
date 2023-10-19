@@ -10,7 +10,7 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -43,7 +43,7 @@ def score_artillery(candidate: BaseStatblock, speed_bonus: bool = False) -> floa
     return score
 
 
-class _Ricochet(Power):
+class _Ricochet(PowerBackport):
     def __init__(self):
         super().__init__(name="Richochet", power_type=PowerType.Role)
 
@@ -60,7 +60,7 @@ class _Ricochet(Power):
         return stats, feature
 
 
-class _SteadyAim(Power):
+class _SteadyAim(PowerBackport):
     def __init__(self):
         super().__init__(name="Steady Aim", power_type=PowerType.Role)
 
@@ -78,9 +78,9 @@ class _SteadyAim(Power):
         return stats, feature
 
 
-class _QuickStep(Power):
+class _QuickStep(PowerBackport):
     def __init__(self):
-        super().__init__(name="Quick Step", power_type=PowerType.Role)
+        super().__init__(name="Quick Step", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_artillery(candidate, speed_bonus=True)
@@ -94,7 +94,7 @@ class _QuickStep(Power):
         return stats, feature
 
 
-class _QuickDraw(Power):
+class _QuickDraw(PowerBackport):
     def __init__(self):
         super().__init__(name="Quick Draw", power_type=PowerType.Role)
 
@@ -113,7 +113,7 @@ class _QuickDraw(Power):
         return stats, feature
 
 
-class _SuppressingFire(Power):
+class _SuppressingFire(PowerBackport):
     def __init__(self):
         super().__init__(name="Suppressing Fire", power_type=PowerType.Role)
 
@@ -132,7 +132,7 @@ class _SuppressingFire(Power):
         return stats, feature
 
 
-class _IndirectFire(Power):
+class _IndirectFire(PowerBackport):
     def __init__(self):
         super().__init__(name="Indirect Fire", power_type=PowerType.Role)
 
@@ -151,7 +151,7 @@ class _IndirectFire(Power):
         return stats, feature
 
 
-class _Overwatch(Power):
+class _Overwatch(PowerBackport):
     def __init__(self):
         super().__init__(name="Overwatch", power_type=PowerType.Role)
 

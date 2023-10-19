@@ -11,7 +11,7 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -21,9 +21,9 @@ from ..scores import (
 )
 
 
-class _Burrower(Power):
+class _Burrower(PowerBackport):
     def __init__(self):
-        super().__init__(name="Burrower", power_type=PowerType.Theme)
+        super().__init__(name="Burrower", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         score = LOW_AFFINITY
@@ -47,9 +47,9 @@ class _Burrower(Power):
         return stats, feature
 
 
-class _Climber(Power):
+class _Climber(PowerBackport):
     def __init__(self):
-        super().__init__(name="Climber", power_type=PowerType.Theme)
+        super().__init__(name="Climber", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         score = LOW_AFFINITY
@@ -92,7 +92,7 @@ class _Climber(Power):
         return stats, feature
 
 
-class _Stoneskin(Power):
+class _Stoneskin(PowerBackport):
     def __init__(self):
         super().__init__(name="Stoneskin", power_type=PowerType.Theme)
 

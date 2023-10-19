@@ -9,7 +9,7 @@ from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
 from ...utils.rounding import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -19,9 +19,9 @@ from ..scores import (
 )
 
 
-class _ShoutOrders(Power):
+class _ShoutOrders(PowerBackport):
     def __init__(self):
-        super().__init__(name="Shout Orders", power_type=PowerType.Role)
+        super().__init__(name="Shout Orders", power_type=PowerType.Role, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         score = 0
@@ -50,7 +50,7 @@ class _ShoutOrders(Power):
         return stats, feature
 
 
-class _Intimidate(Power):
+class _Intimidate(PowerBackport):
     def __init__(self):
         super().__init__(name="Intimidate", power_type=PowerType.Role)
 
@@ -90,7 +90,7 @@ class _Intimidate(Power):
         return stats, feature
 
 
-class _Encouragement(Power):
+class _Encouragement(PowerBackport):
     def __init__(self):
         super().__init__(name="Encouragement", power_type=PowerType.Role)
 
@@ -138,7 +138,7 @@ class _Encouragement(Power):
         return stats, feature
 
 
-class _LeadByExample(Power):
+class _LeadByExample(PowerBackport):
     def __init__(self):
         super().__init__(name="Lead by Example", power_type=PowerType.Role)
 
@@ -166,12 +166,12 @@ class _LeadByExample(Power):
         return stats, feature
 
 
-class _Reposition(Power):
+class _Reposition(PowerBackport):
     """Each ally within 60 feet of this creature who can see and hear them
     can immediately move their speed without provoking opportunity attacks."""
 
     def __init__(self):
-        super().__init__(name="Reposition", power_type=PowerType.Theme)
+        super().__init__(name="Reposition", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         # this trait makes a lot of sense for leaders and high-int enemies

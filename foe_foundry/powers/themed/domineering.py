@@ -14,7 +14,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -63,9 +63,11 @@ def _ensure_domineering(stats: BaseStatblock) -> BaseStatblock:
     return stats
 
 
-class _CommandingPresence(Power):
+class _CommandingPresence(PowerBackport):
     def __init__(self):
-        super().__init__(name="Commanding Presence", power_type=PowerType.Theme)
+        super().__init__(
+            name="Commanding Presence", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_domineering(candidate)
@@ -86,9 +88,11 @@ class _CommandingPresence(Power):
         return stats, feature
 
 
-class _Charm(Power):
+class _Charm(PowerBackport):
     def __init__(self):
-        super().__init__(name="Commanding Presence", power_type=PowerType.Theme)
+        super().__init__(
+            name="Commanding Presence", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_domineering(candidate, min_cr=7, require_magic=True)

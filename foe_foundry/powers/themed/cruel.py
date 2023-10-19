@@ -3,19 +3,16 @@ from typing import List, Tuple
 
 import numpy as np
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -48,12 +45,14 @@ def score_cruel(
     return score if score > 0 else NO_AFFINITY
 
 
-class _DelightsInSuffering(Power):
+class _DelightsInSuffering(PowerBackport):
     """When attacking a target whose current hit points are below half their hit point maximum,
     this creature has advantage on attack rolls and deals an extra CR damage when they hit."""
 
     def __init__(self):
-        super().__init__(name="Delights in Suffering", power_type=PowerType.Theme)
+        super().__init__(
+            name="Delights in Suffering", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_cruel(candidate, min_cr=3)
@@ -83,9 +82,9 @@ class _DelightsInSuffering(Power):
         return stats, feature
 
 
-class _Lethal(Power):
+class _Lethal(PowerBackport):
     def __init__(self):
-        super().__init__(name="Lethal", power_type=PowerType.Theme)
+        super().__init__(name="Lethal", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_cruel(candidate, require_melee=True, min_cr=7)

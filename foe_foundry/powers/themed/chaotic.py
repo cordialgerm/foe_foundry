@@ -14,7 +14,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -43,9 +43,11 @@ def score_chaotic(candidate: BaseStatblock, min_cr: float | None = None) -> floa
     return score if score > 0 else NO_AFFINITY
 
 
-class _ChaoticSpace(Power):
+class _ChaoticSpace(PowerBackport):
     def __init__(self):
-        super().__init__(name="Chaotic Space", power_type=PowerType.Theme)
+        super().__init__(
+            name="Chaotic Space", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_chaotic(candidate, min_cr=5)
@@ -68,9 +70,11 @@ class _ChaoticSpace(Power):
         return stats, feature
 
 
-class _EldritchBeacon(Power):
+class _EldritchBeacon(PowerBackport):
     def __init__(self):
-        super().__init__(name="Eldritch Beacon", power_type=PowerType.Theme)
+        super().__init__(
+            name="Eldritch Beacon", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def _summon_formula(self, stats: BaseStatblock, rng: Generator) -> str | None:
         try:

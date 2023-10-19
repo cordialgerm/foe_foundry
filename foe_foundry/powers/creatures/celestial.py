@@ -12,10 +12,9 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Dazed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -35,7 +34,7 @@ def _score_celestial(candidate: BaseStatblock, min_cr: float | None = None) -> f
     return HIGH_AFFINITY
 
 
-class _MirroredJudgement(Power):
+class _MirroredJudgement(PowerBackport):
     """Mirrored Judgment (Reaction). When this creature is the sole target of an attack or spell,
     they can choose another valid target to also be targeted by the attack or spell"""
 
@@ -56,7 +55,7 @@ class _MirroredJudgement(Power):
         return stats, feature
 
 
-class _HealingTouch(Power):
+class _HealingTouch(PowerBackport):
     def __init__(self):
         super().__init__(name="Healing Touch", power_type=PowerType.Creature)
 
@@ -77,7 +76,7 @@ class _HealingTouch(Power):
         return stats, feature
 
 
-class _RighteousJudgement(Power):
+class _RighteousJudgement(PowerBackport):
     def __init__(self):
         super().__init__(name="Righteous Judgment", power_type=PowerType.Creature)
 
@@ -101,9 +100,11 @@ class _RighteousJudgement(Power):
         return stats, feature
 
 
-class _DivineLaw(Power):
+class _DivineLaw(PowerBackport):
     def __init__(self):
-        super().__init__(name="Divine Law", power_type=PowerType.Creature)
+        super().__init__(
+            name="Divine Law", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_celestial(candidate, min_cr=7)
@@ -136,7 +137,7 @@ class _DivineLaw(Power):
         return stats, feature
 
 
-class _WordsOfRighteousness(Power):
+class _WordsOfRighteousness(PowerBackport):
     def __init__(self):
         super().__init__(name="Words of Righteousness", power_type=PowerType.Creature)
 

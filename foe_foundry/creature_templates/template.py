@@ -5,8 +5,7 @@ import numpy as np
 
 from ..attack_template import AttackTemplate, DefaultAttackTemplate
 from ..creature_types import CreatureType
-from ..features import Feature
-from ..powers import Power, PowerType, select_from_powers, select_powers
+from ..powers import select_powers
 from ..role_types import MonsterRole
 from ..roles import AllRoles, RoleTemplate, get_role
 from ..statblocks import BaseStatblock, Statblock
@@ -48,44 +47,17 @@ class CreatureTypeTemplate(ABC):
             i = rng.choice(n)
             return AllRoles[i]
 
-    def select_powers(self, stats: BaseStatblock, rng: np.random.Generator) -> List[Power]:
-        if stats.recommended_powers == 0:
-            return []
-
-        # Creature Type
-        creature_powers = select_powers(
-            stats=stats, power_type=PowerType.Creature, rng=rng, n=3
-        )
-
-        # Role
-        role_powers = select_powers(
-            stats=stats,
-            power_type=PowerType.Role,
-            rng=rng,
-            n=3,
-        )
-
-        # Themed
-        theme_powers = select_powers(
-            stats=stats,
-            power_type=PowerType.Theme,
-            rng=rng,
-            n=6,
-        )
-
-        # Choose Candidates
-        candidates = set(creature_powers) | set(role_powers) | set(theme_powers)
-
-        candidates = [c for c in candidates if c is not None]
-        selection = select_from_powers(stats, candidates, rng, n=stats.recommended_powers)
-        return selection
-
     def create(
         self,
         base_stats: BaseStatblock,
-        rng: np.random.Generator,
+        rng_seed: int,
         role_template: RoleTemplate | str | None | MonsterRole = None,
     ) -> Statblock:
+        def rng_factory() -> np.random.Generator:
+            return np.random.default_rng(rng_seed)
+
+        rng = rng_factory()
+
         # apply creature type modifications
         new_stats = self.alter_base_stats(base_stats, rng)
 
@@ -103,24 +75,15 @@ class CreatureTypeTemplate(ABC):
         new_stats = attack_template.initialize_attack(new_stats)
 
         # select additional powers
-        powers = self.select_powers(new_stats, rng)
 
-        # render features from powers
-        features: Set[Feature] = set()
-        for power in powers:
-            new_stats, new_features = power.apply(new_stats, rng)
-
-            if new_features is None:
-                new_features = []
-            elif isinstance(new_features, Feature):
-                new_features = [new_features]
-
-            features.update(new_features)
+        new_stats, new_features = select_powers(
+            stats=new_stats, rng=rng_factory, power_level=new_stats.recommended_powers
+        )
 
         # finalize attacks
         new_stats = attack_template.finalize_attacks(new_stats, rng)
 
         # finalize statblock
         name = f"{base_stats.key}-{self.creature_type}-{role_template.key}"
-        stats = Statblock.from_base_stats(name=name, stats=new_stats, features=list(features))
+        stats = Statblock.from_base_stats(name=name, stats=new_stats, features=new_features)
         return stats

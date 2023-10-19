@@ -14,7 +14,7 @@ from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerType
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -46,7 +46,7 @@ def _score_has_teleport(candidate: BaseStatblock) -> float:
     return score
 
 
-class _BendSpace(Power):
+class _BendSpace(PowerBackport):
     def __init__(self):
         super().__init__(name="Bend Space", power_type=PowerType.Theme)
 
@@ -63,9 +63,9 @@ class _BendSpace(Power):
         return stats, feature
 
 
-class _MistyStep(Power):
+class _MistyStep(PowerBackport):
     def __init__(self):
-        super().__init__(name="Misty Step", power_type=PowerType.Theme)
+        super().__init__(name="Misty Step", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_has_teleport(candidate)
@@ -84,7 +84,7 @@ class _MistyStep(Power):
         return stats, feature
 
 
-class _Scatter(Power):
+class _Scatter(PowerBackport):
     def __init__(self):
         super().__init__(name="Scatter", power_type=PowerType.Theme)
 

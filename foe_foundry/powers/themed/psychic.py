@@ -18,7 +18,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -60,7 +60,7 @@ def as_psychic(stats: BaseStatblock) -> BaseStatblock:
     return stats
 
 
-class _Telekinetic(Power):
+class _Telekinetic(PowerBackport):
     """This creature chooses one creature they can see within 100 feet of them
     weighing less than 400 pounds. The target must succeed on a Strength saving throw
     (DC = 11 + 1/2 CR) or be pulled up to 80 feet directly toward this creature."""
@@ -85,7 +85,7 @@ class _Telekinetic(Power):
         return stats, feature
 
 
-class _PsychicInfestation(Power):
+class _PsychicInfestation(PowerBackport):
     def __init__(self):
         super().__init__(name="Psychic Infestation", power_type=PowerType.Theme)
 
@@ -119,7 +119,7 @@ class _PsychicInfestation(Power):
         return stats, feature
 
 
-class _DissonantWhispers(Power):
+class _DissonantWhispers(PowerBackport):
     def __init__(self):
         super().__init__(name="Dissonant Whispers", power_type=PowerType.Theme)
 
@@ -148,9 +148,9 @@ class _DissonantWhispers(Power):
         return stats, feature
 
 
-class _MindBlast(Power):
+class _MindBlast(PowerBackport):
     def __init__(self):
-        super().__init__(name="Mind Blast", power_type=PowerType.Theme)
+        super().__init__(name="Mind Blast", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_psychic(candidate, min_cr=5, require_aberration=True)
@@ -186,9 +186,11 @@ class _MindBlast(Power):
         return stats, feature
 
 
-class _PsychicMirror(Power):
+class _PsychicMirror(PowerBackport):
     def __init__(self):
-        super().__init__(name="Psychic Mirror", power_type=PowerType.Theme)
+        super().__init__(
+            name="Psychic Mirror", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_psychic(candidate)
@@ -207,9 +209,11 @@ class _PsychicMirror(Power):
         return stats, feature
 
 
-class _ExtractBrain(Power):
+class _ExtractBrain(PowerBackport):
     def __init__(self):
-        super().__init__(name="Extract Brain", power_type=PowerType.Theme)
+        super().__init__(
+            name="Extract Brain", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_psychic(

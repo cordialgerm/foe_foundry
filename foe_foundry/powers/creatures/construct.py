@@ -18,7 +18,7 @@ from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -28,8 +28,15 @@ from ..scores import (
 )
 
 
-def _score(candidate: BaseStatblock, attack_modifiers: AttackModifiers = None) -> float:
+def _score(
+    candidate: BaseStatblock,
+    attack_modifiers: AttackModifiers = None,
+    min_cr: float | None = None,
+) -> float:
     if candidate.creature_type != CreatureType.Construct:
+        return NO_AFFINITY
+
+    if min_cr and candidate.cr < min_cr:
         return NO_AFFINITY
 
     score = HIGH_AFFINITY
@@ -38,9 +45,11 @@ def _score(candidate: BaseStatblock, attack_modifiers: AttackModifiers = None) -
     return score if score > 0 else NO_AFFINITY
 
 
-class _ConstructedGuardian(Power):
+class _ConstructedGuardian(PowerBackport):
     def __init__(self):
-        super().__init__(name="Constructed Guardian", power_type=PowerType.Creature)
+        super().__init__(
+            name="Constructed Guardian", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate)
@@ -55,7 +64,7 @@ class _ConstructedGuardian(Power):
         return stats, feature
 
 
-class _ArmorPlating(Power):
+class _ArmorPlating(PowerBackport):
     """Armor Plating (Trait). This creature has a +2 bonus to Armor Class.
     Each time the creature's hit points are reduced by one-quarter of their maximum value,
     this bonus decreases by 1, to a maximum penalty to Armor Class of -2."""
@@ -81,9 +90,11 @@ class _ArmorPlating(Power):
         return stats, feature
 
 
-class _ImmutableForm(Power):
+class _ImmutableForm(PowerBackport):
     def __init__(self):
-        super().__init__(name="Immutable Form", power_type=PowerType.Creature)
+        super().__init__(
+            name="Immutable Form", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate)
@@ -98,7 +109,7 @@ class _ImmutableForm(Power):
         return stats, feature
 
 
-class _BoundProtector(Power):
+class _BoundProtector(PowerBackport):
     def __init__(self):
         super().__init__(name="Bound Protector", power_type=PowerType.Creature)
 
@@ -116,7 +127,7 @@ class _BoundProtector(Power):
         return stats, feature
 
 
-class _ExplosiveCore(Power):
+class _ExplosiveCore(PowerBackport):
     def __init__(self):
         super().__init__(name="Explosive Core", power_type=PowerType.Creature)
 
@@ -138,7 +149,7 @@ class _ExplosiveCore(Power):
         return stats, feature
 
 
-class _Smother(Power):
+class _Smother(PowerBackport):
     def __init__(self):
         super().__init__(name="Smother", power_type=PowerType.Creature)
 
@@ -178,13 +189,17 @@ class _Smother(Power):
         return stats, feature
 
 
-class _Retrieval(Power):
+class _Retrieval(PowerBackport):
     def __init__(self):
-        super().__init__(name="Retrieval", power_type=PowerType.Creature)
+        super().__init__(
+            name="Retrieval", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(
-            candidate, attack_modifiers={"*": NO_AFFINITY, natural_attacks.Slam: HIGH_AFFINITY}
+            candidate,
+            attack_modifiers=["-", natural_attacks.Slam],
+            min_cr=7,
         )
 
     def apply(
@@ -210,7 +225,7 @@ class _Retrieval(Power):
         return stats, [feature1, feature2]
 
 
-class _SpellStoring(Power):
+class _SpellStoring(PowerBackport):
     def __init__(self):
         super().__init__(name="Spell Storing", power_type=PowerType.Creature)
 

@@ -17,7 +17,7 @@ from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -42,7 +42,7 @@ def score_fiend(
     return score
 
 
-class _EmpoweredByDeath(Power):
+class _EmpoweredByDeath(PowerBackport):
     def __init__(self):
         super().__init__(name="Empowered by Death", power_type=PowerType.Creature)
 
@@ -61,7 +61,7 @@ class _EmpoweredByDeath(Power):
         return stats, feature
 
 
-class _RelishYourFailure(Power):
+class _RelishYourFailure(PowerBackport):
     def __init__(self):
         super().__init__(name="Relish Your Failure", power_type=PowerType.Creature)
 
@@ -90,7 +90,7 @@ class _RelishYourFailure(Power):
         return stats, [feature1, feature2]
 
 
-class _FiendishTeleporation(Power):
+class _FiendishTeleporation(PowerBackport):
     def __init__(self):
         super().__init__(name="Fiendish Teleportation", power_type=PowerType.Creature)
 
@@ -114,7 +114,7 @@ class _FiendishTeleporation(Power):
         return stats, feature
 
 
-class _WallOfFire(Power):
+class _WallOfFire(PowerBackport):
     def __init__(self):
         super().__init__(name="Wall of Fire", power_type=PowerType.Creature)
 
@@ -146,7 +146,7 @@ class _WallOfFire(Power):
         return stats, feature
 
 
-class _FiendishBite(Power):
+class _FiendishBite(PowerBackport):
     def __init__(self):
         super().__init__(name="Fiendish Bite", power_type=PowerType.Creature)
 
@@ -172,9 +172,11 @@ class _FiendishBite(Power):
         return stats, []
 
 
-class _FiendishSummons(Power):
+class _FiendishSummons(PowerBackport):
     def __init__(self):
-        super().__init__(name="Fiendish Summons", power_type=PowerType.Creature)
+        super().__init__(
+            name="Fiendish Summons", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_fiend(candidate, min_cr=3)
@@ -195,7 +197,7 @@ class _FiendishSummons(Power):
         return stats, feature
 
 
-class _TemptingOffer(Power):
+class _TemptingOffer(PowerBackport):
     def __init__(self):
         super().__init__(name="Tempting Offer", power_type=PowerType.Creature)
 

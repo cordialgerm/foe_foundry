@@ -16,7 +16,7 @@ from ...powers import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import summoning
 from ..attack import flavorful_damage_types
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -47,7 +47,7 @@ def _as_elemental(stats: BaseStatblock) -> BaseStatblock:
     return stats
 
 
-class _DamagingAura(Power):
+class _DamagingAura(PowerBackport):
     """Any creature who moves within 10 feet of this creature or who starts their turn there takes CR damage of a type appropriate for this creature."""
 
     def __init__(self):
@@ -108,11 +108,13 @@ class _DamagingAura(Power):
         return stats, feature
 
 
-class _ElementalAffinity(Power):
+class _ElementalAffinity(PowerBackport):
     """This creature is aligned to a particular element"""
 
     def __init__(self):
-        super().__init__(name="ElementalAffinity", power_type=PowerType.Creature)
+        super().__init__(
+            name="ElementalAffinity", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         # if the monster has a secondary damage type then it's a good fit
@@ -154,9 +156,11 @@ class _ElementalAffinity(Power):
         return stats, feature
 
 
-class _ElementalShroud(Power):
+class _ElementalShroud(PowerBackport):
     def __init__(self):
-        super().__init__(name="Elemental Shroud", power_type=PowerType.Creature)
+        super().__init__(
+            name="Elemental Shroud", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate)
@@ -178,7 +182,7 @@ class _ElementalShroud(Power):
         return stats, feature
 
 
-class _ElementalBurst(Power):
+class _ElementalBurst(PowerBackport):
     def __init__(self):
         super().__init__(name="Elemental Burst", power_type=PowerType.Creature)
 
@@ -206,9 +210,11 @@ class _ElementalBurst(Power):
         return stats, feature
 
 
-class _ElementalMagic(Power):
+class _ElementalMagic(PowerBackport):
     def __init__(self):
-        super().__init__(name="Elemental Magic", power_type=PowerType.Creature)
+        super().__init__(
+            name="Elemental Magic", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate)
@@ -274,7 +280,7 @@ class _ElementalMagic(Power):
         return stats, feature
 
 
-class _ElementalSmite(Power):
+class _ElementalSmite(PowerBackport):
     def __init__(self):
         super().__init__(name="Elemental Smite", power_type=PowerType.Creature)
 
@@ -329,9 +335,11 @@ class _ElementalSmite(Power):
         return stats, feature
 
 
-class _ElementalReplication(Power):
+class _ElementalReplication(PowerBackport):
     def __init__(self):
-        super().__init__(name="Elemental Replication", power_type=PowerType.Creature)
+        super().__init__(
+            name="Elemental Replication", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate)

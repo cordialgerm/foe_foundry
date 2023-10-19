@@ -10,7 +10,7 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
+from ..power import Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -47,7 +47,7 @@ def as_ambusher(stats: BaseStatblock) -> BaseStatblock:
     return stats
 
 
-class _DistractingAttack(Power):
+class _DistractingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Distracting Attack", power_type=PowerType.Role)
 
@@ -68,7 +68,7 @@ class _DistractingAttack(Power):
         return stats, feature
 
 
-class _ShadowyMovement(Power):
+class _ShadowyMovement(PowerBackport):
     def __init__(self):
         super().__init__(name="Shadowy Movement", power_type=PowerType.Role)
 
@@ -88,7 +88,7 @@ class _ShadowyMovement(Power):
         return stats, feature
 
 
-class _DeadlyAmbusher(Power):
+class _DeadlyAmbusher(PowerBackport):
     def __init__(self):
         super().__init__(name="Deadly Ambusher", power_type=PowerType.Role)
 
@@ -109,35 +109,11 @@ class _DeadlyAmbusher(Power):
         return stats, feature
 
 
-# class _DeadlyPrecision(Power):
-#     def __init__(self):
-#         super().__init__(name="Deadly Precision", power_type=PowerType.Role)
-
-#     def score(self, candidate: BaseStatblock) -> float:
-#         return score_ambusher(candidate)
-
-#     def apply(
-#         self, stats: BaseStatblock, rng: Generator
-#     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-#         stats = as_ambusher(stats)
-#         dmg = DieFormula.target_value(2 + 0.5 * stats.cr, force_die=Die.d6)
-#         feature = Feature(
-#             name="Deadly Precision",
-#             action=ActionType.Feature,
-#             hidden=True,
-#             modifies_attack=True,
-#             description=f"If the attack was made with advantage, it deals an additional {dmg.description} damage",
-#         )
-#         return stats, feature
-
-
-# DeadlyPrecision: Power = _DeadlyPrecision()
 DistractingAttack: Power = _DistractingAttack()
 ShadowyMovement: Power = _ShadowyMovement()
 DeadlyAmbusher: Power = _DeadlyAmbusher()
 
 AmbusherPowers: List[Power] = [
-    # DeadlyPrecision,
     DistractingAttack,
     ShadowyMovement,
     DeadlyAmbusher,

@@ -19,7 +19,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..attack_modifiers import resolve_attack_modifier
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -81,7 +81,7 @@ def _as_reckless_fighter(stats: BaseStatblock, uses_weapon: bool = False) -> Bas
     return stats.copy(**changes)
 
 
-class _Charger(Power):
+class _Charger(PowerBackport):
     def __init__(self):
         super().__init__(name="Charger", power_type=PowerType.Theme)
 
@@ -101,7 +101,7 @@ class _Charger(Power):
         return stats, feature
 
 
-class _Frenzy(Power):
+class _Frenzy(PowerBackport):
     """Frenzy (Trait). At the start of their turn, this creature can gain advantage on all melee weapon attack rolls made during this
     turn, but attack rolls against them have advantage until the start of their next turn."""
 
@@ -121,12 +121,14 @@ class _Frenzy(Power):
         return stats, feature
 
 
-class _RefuseToSurrender(Power):
+class _RefuseToSurrender(PowerBackport):
     """When this creature’s current hit points are below half their hit point maximum,
     the creature deals CR extra damage with each of their attacks."""
 
     def __init__(self):
-        super().__init__(name="Refuse to Surrender", power_type=PowerType.Theme)
+        super().__init__(
+            name="Refuse to Surrender", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_could_be_reckless_fighter(
@@ -144,11 +146,13 @@ class _RefuseToSurrender(Power):
         return stats, feature
 
 
-class _GoesDownFighting(Power):
+class _GoesDownFighting(PowerBackport):
     """When this creature is reduced to 0 hit points, they can immediately make one melee or ranged weapon attack before they fall unconscious."""
 
     def __init__(self):
-        super().__init__(name="Goes Down Fighting", power_type=PowerType.Theme)
+        super().__init__(
+            name="Goes Down Fighting", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_could_be_reckless_fighter(candidate, allow_defender=True)
@@ -162,7 +166,7 @@ class _GoesDownFighting(Power):
         return stats, feature
 
 
-class _WildCleave(Power):
+class _WildCleave(PowerBackport):
     def __init__(self):
         super().__init__(name="Wild Cleave", power_type=PowerType.Theme)
 
@@ -184,7 +188,7 @@ class _WildCleave(Power):
         return stats, feature
 
 
-class _FlurryOfBlows(Power):
+class _FlurryOfBlows(PowerBackport):
     def __init__(self):
         super().__init__(name="Flurry of Blows", power_type=PowerType.Theme)
 
@@ -206,7 +210,7 @@ class _FlurryOfBlows(Power):
         return stats, feature
 
 
-class _Toss(Power):
+class _Toss(PowerBackport):
     def __init__(self):
         super().__init__(name="Toss", power_type=PowerType.Theme)
 

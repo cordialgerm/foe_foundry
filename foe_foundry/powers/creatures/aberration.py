@@ -3,6 +3,9 @@ from typing import Dict, List, Tuple
 
 from numpy.random import Generator
 
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
+
 from ...attack_template import natural, spell
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, Swallowed
@@ -12,7 +15,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -53,7 +56,7 @@ class _GraspingTentacles(Power):
             attack_modifiers={natural.Tentacle: HIGH_AFFINITY, "*": NO_AFFINITY},
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = int(floor(11 + 0.5 * stats.cr))
         feature = Feature(
             name="Grasping Tentacles",
@@ -62,7 +65,7 @@ class _GraspingTentacles(Power):
             modifies_attack=True,
             hidden=True,
         )
-        return stats, feature
+        return [feature]
 
 
 class _DominatingGaze(Power):
@@ -72,7 +75,7 @@ class _DominatingGaze(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return _score_aberration(candidate, attack_modifiers=spell.Gaze)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Dominating Gaze",
@@ -83,7 +86,7 @@ class _DominatingGaze(Power):
                 or be forced to immediately use their reaction to move up to half their speed and make their most effective weapon attack or at-will spell or magical attack against a target chosen by this creature. \
                 This counts as a **Charm** effect.",
         )
-        return stats, feature
+        return [feature]
 
 
 class _MaddeningWhispers(Power):
@@ -93,7 +96,7 @@ class _MaddeningWhispers(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return _score_aberration(candidate)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Madenning Whispers",
@@ -103,8 +106,7 @@ class _MaddeningWhispers(Power):
                 On a 1-4, the creature does nothing. On a 5-6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. \
                 On a 7-8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.",
         )
-
-        return stats, feature
+        return [feature]
 
 
 class _TentacleSlam(Power):
@@ -117,9 +119,7 @@ class _TentacleSlam(Power):
             attack_modifiers={"*": NO_AFFINITY, natural.Tentacle: HIGH_AFFINITY},
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, suggested_die=Die.d6)
 
@@ -131,12 +131,14 @@ class _TentacleSlam(Power):
                 Then, {stats.selfref} slams each creature grappled by it into each other or a solid surface. \
                 Each creature must succeed on a DC {dc} Constitution saving throw or take {dmg.description} bludgeoning damage and be **Stunned** until the end of {stats.selfref}'s next turn.",
         )
-        return stats, feature
+        return [feature]
 
 
 class _AntimagicGullet(Power):
     def __init__(self):
-        super().__init__(name="Anti-Magic Gullet", power_type=PowerType.Theme)
+        super().__init__(
+            name="Anti-Magic Gullet", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_aberration(
@@ -148,7 +150,15 @@ class _AntimagicGullet(Power):
             },
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats, _ = self._helper(stats)
+        return stats
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        _, feature = self._helper(stats)
+        return [feature]
+
+    def _helper(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
         threshold = easy_multiple_of_five(2 * stats.cr, min_val=5, max_val=40)
         swallowed = Swallowed(

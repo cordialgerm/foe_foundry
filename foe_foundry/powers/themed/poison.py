@@ -13,7 +13,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -37,7 +37,7 @@ def _score(candidate: BaseStatblock) -> float:
     return score if score > 0 else NO_AFFINITY
 
 
-class _PoisonousDemise(Power):
+class _PoisonousDemise(PowerBackport):
     def __init__(self):
         super().__init__(name="Poisonous Demise", power_type=PowerType.Theme)
 
@@ -62,7 +62,7 @@ class _PoisonousDemise(Power):
         return stats, feature
 
 
-class _VirulentPoison(Power):
+class _VirulentPoison(PowerBackport):
     def __init__(self):
         super().__init__(name="Virulent Poison", power_type=PowerType.Theme)
 

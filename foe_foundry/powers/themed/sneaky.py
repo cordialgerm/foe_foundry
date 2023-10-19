@@ -16,7 +16,7 @@ from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -52,7 +52,7 @@ def _score_is_sneaky_creature(
     return score if score > 0 else NO_AFFINITY
 
 
-class _CunningAction(Power):
+class _CunningAction(PowerBackport):
     def __init__(self):
         super().__init__(name="Cunning Action", power_type=PowerType.Theme)
 
@@ -69,7 +69,7 @@ class _CunningAction(Power):
         return stats, feature
 
 
-class _SneakyStrike(Power):
+class _SneakyStrike(PowerBackport):
     def __init__(self):
         super().__init__(name="Sneaky Strike", power_type=PowerType.Theme)
 
@@ -88,9 +88,11 @@ class _SneakyStrike(Power):
         return stats, feature
 
 
-class _FalseAppearance(Power):
+class _FalseAppearance(PowerBackport):
     def __init__(self):
-        super().__init__(name="False Appearance", power_type=PowerType.Theme)
+        super().__init__(
+            name="False Appearance", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_sneaky_creature(
@@ -112,7 +114,7 @@ class _FalseAppearance(Power):
         return stats, feature
 
 
-class _NotDeadYet(Power):
+class _NotDeadYet(PowerBackport):
     """When this creature is reduced to 0 hit points, they drop prone and are indistinguishable from a dead creature.
     At the start of their next turn, this creature stands up without using any movement and has 2x CR hit points.
     They can then take their turn normally."""
@@ -152,7 +154,7 @@ class _NotDeadYet(Power):
         return stats, feature
 
 
-class _Vanish(Power):
+class _Vanish(PowerBackport):
     """This creature can use the Disengage action, then can hide if they have cover"""
 
     def __init__(self):
@@ -173,7 +175,7 @@ class _Vanish(Power):
         return stats, feature
 
 
-class _StayDown(Power):
+class _StayDown(PowerBackport):
     def __init__(self):
         super().__init__(name="Stay Down", power_type=PowerType.Theme)
 
@@ -196,9 +198,9 @@ class _StayDown(Power):
         return stats, feature
 
 
-class _ExplotAdvantage(Power):
+class _ExploitAdvantage(PowerBackport):
     def __init__(self):
-        super().__init__(name="Explot Advantage", power_type=PowerType.Theme)
+        super().__init__(name="Exploit Advantage", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_sneaky_creature(candidate)
@@ -217,7 +219,7 @@ class _ExplotAdvantage(Power):
 
 
 CunningAction: Power = _CunningAction()
-ExploitAdvantage: Power = _ExplotAdvantage()
+ExploitAdvantage: Power = _ExploitAdvantage()
 FalseAppearance: Power = _FalseAppearance()
 SneakyStrike: Power = _SneakyStrike()
 StayDown: Power = _StayDown()

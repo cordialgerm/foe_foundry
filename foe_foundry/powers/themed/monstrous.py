@@ -16,7 +16,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -69,7 +69,7 @@ def _score(candidate: BaseStatblock, **args) -> float:
     return score if score > 0 else NO_AFFINITY
 
 
-class _Constriction(Power):
+class _Constriction(PowerBackport):
     def __init__(self):
         super().__init__(name="Constriction", power_type=PowerType.Theme)
 
@@ -92,9 +92,9 @@ class _Constriction(Power):
         return stats, feature
 
 
-class _Swallow(Power):
+class _Swallow(PowerBackport):
     def __init__(self):
-        super().__init__(name="Swallow", power_type=PowerType.Theme)
+        super().__init__(name="Swallow", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(
@@ -134,7 +134,7 @@ class _Swallow(Power):
         return stats, None
 
 
-class _Pounce(Power):
+class _Pounce(PowerBackport):
     def __init__(self):
         super().__init__(name="Pounce", power_type=PowerType.Theme)
 
@@ -154,7 +154,7 @@ class _Pounce(Power):
         return stats, feature
 
 
-class _Corrosive(Power):
+class _Corrosive(PowerBackport):
     def __init__(self):
         super().__init__(name="Corrosive", power_type=PowerType.Theme)
 
@@ -186,9 +186,9 @@ class _Corrosive(Power):
         return stats, feature
 
 
-class _DevourAlly(Power):
+class _DevourAlly(PowerBackport):
     def __init__(self):
-        super().__init__(name="Devour Ally", power_type=PowerType.Theme)
+        super().__init__(name="Devour Ally", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score(candidate)
@@ -206,7 +206,7 @@ class _DevourAlly(Power):
         return stats, feature
 
 
-class _LingeringWound(Power):
+class _LingeringWound(PowerBackport):
     def __init__(self):
         super().__init__(name="Lingering Wound", power_type=PowerType.Theme)
 
@@ -229,7 +229,7 @@ class _LingeringWound(Power):
         return stats, feature
 
 
-class _Rampage(Power):
+class _Rampage(PowerBackport):
     def __init__(self):
         super().__init__(name="Rampage", power_type=PowerType.Theme)
 
@@ -248,9 +248,11 @@ class _Rampage(Power):
         return stats, feature
 
 
-class _PetrifyingGaze(Power):
+class _PetrifyingGaze(PowerBackport):
     def __init__(self):
-        super().__init__(name="Petrifying Gaze", power_type=PowerType.Theme)
+        super().__init__(
+            name="Petrifying Gaze", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         creature_types = {

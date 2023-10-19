@@ -13,7 +13,7 @@ from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -30,7 +30,7 @@ def _score(candidate: BaseStatblock) -> float:
     return HIGH_AFFINITY
 
 
-class _PoisonThorns(Power):
+class _PoisonThorns(PowerBackport):
     def __init__(self):
         super().__init__(name="Poison Thorns", power_type=PowerType.Creature)
 
@@ -76,7 +76,7 @@ class _PoisonThorns(Power):
         return stats, []
 
 
-class _GraspingRoots(Power):
+class _GraspingRoots(PowerBackport):
     def __init__(self):
         super().__init__(name="Grasping Roots", power_type=PowerType.Creature)
 
@@ -94,7 +94,7 @@ class _GraspingRoots(Power):
         return stats, feature
 
 
-class _ChokingVine(Power):
+class _ChokingVine(PowerBackport):
     def __init__(self):
         super().__init__(name="Choking Vine", power_type=PowerType.Creature)
 
@@ -122,7 +122,7 @@ class _ChokingVine(Power):
         return stats, None
 
 
-class _HypnoticSpores(Power):
+class _HypnoticSpores(PowerBackport):
     def __init__(self):
         super().__init__(name="Hypnotic Spores", power_type=PowerType.Creature)
 
@@ -145,7 +145,7 @@ class _HypnoticSpores(Power):
         return stats, feature
 
 
-class _SpikeGrowth(Power):
+class _SpikeGrowth(PowerBackport):
     def __init__(self):
         super().__init__(name="Spike Growth", power_type=PowerType.Creature)
 

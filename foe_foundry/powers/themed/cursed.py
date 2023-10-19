@@ -15,7 +15,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -54,7 +54,7 @@ def _as_cursed(stats: BaseStatblock) -> BaseStatblock:
     return stats
 
 
-class _DevilsSight(Power):
+class _DevilsSight(PowerBackport):
     def __init__(self):
         super().__init__(name="Devil's Sight", power_type=PowerType.Theme)
 
@@ -92,7 +92,7 @@ class _DevilsSight(Power):
         return stats, [devils_sight, darkness]
 
 
-class _AuraOfDespair(Power):
+class _AuraOfDespair(PowerBackport):
     def __init__(self):
         super().__init__(name="Aura of Despair", power_type=PowerType.Theme)
 
@@ -125,9 +125,11 @@ class _AuraOfDespair(Power):
         return stats, [weight_of_sorrow, dreadful_scream]
 
 
-class _HorriblyDisfigured(Power):
+class _HorriblyDisfigured(PowerBackport):
     def __init__(self):
-        return super().__init__(name="Horribly Disfigured", power_type=PowerType.Theme)
+        return super().__init__(
+            name="Horribly Disfigured", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_cursed(candidate)
@@ -153,7 +155,7 @@ class _HorriblyDisfigured(Power):
         return stats, feature
 
 
-class _CursedWound(Power):
+class _CursedWound(PowerBackport):
     def __init__(self):
         return super().__init__(name="Cursed Wound", power_type=PowerType.Theme)
 
@@ -178,9 +180,11 @@ class _CursedWound(Power):
         return stats, feature
 
 
-class _RejectDivinity(Power):
+class _RejectDivinity(PowerBackport):
     def __init__(self):
-        super().__init__(name="Reject Divinity", power_type=PowerType.Theme)
+        super().__init__(
+            name="Reject Divinity", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_cursed(candidate)
@@ -202,7 +206,7 @@ class _RejectDivinity(Power):
         return stats, feature
 
 
-class _BestowCurse(Power):
+class _BestowCurse(PowerBackport):
     def __init__(self):
         super().__init__(name="Bestow Curse", power_type=PowerType.Theme)
 
@@ -224,7 +228,7 @@ class _BestowCurse(Power):
         return stats, feature
 
 
-class _RayOfEnfeeblement(Power):
+class _RayOfEnfeeblement(PowerBackport):
     def __init__(self):
         super().__init__(name="Ray of Enfeeblement", power_type=PowerType.Theme)
 
@@ -248,9 +252,9 @@ class _RayOfEnfeeblement(Power):
         return stats, feature
 
 
-class _VoidSiphon(Power):
+class _VoidSiphon(PowerBackport):
     def __init__(self):
-        super().__init__(name="Void Siphon", power_type=PowerType.Theme)
+        super().__init__(name="Void Siphon", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_cursed(candidate)

@@ -17,7 +17,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -43,7 +43,7 @@ def _score_has_magic_protection(candidate: BaseStatblock) -> float:
     return score
 
 
-class _NotDeadYet(Power):
+class _NotDeadYet(PowerBackport):
     """When this creature is reduced to 0 hit points, they drop prone and are indistinguishable from a dead creature.
     At the start of their next turn, this creature stands up without using any movement and has 2x CR hit points.
     They can then take their turn normally."""
@@ -83,11 +83,13 @@ class _NotDeadYet(Power):
         return stats, feature
 
 
-class _GoesDownFighting(Power):
+class _GoesDownFighting(PowerBackport):
     """When this creature is reduced to 0 hit points, they can immediately make one melee or ranged weapon attack before they fall unconscious."""
 
     def __init__(self):
-        super().__init__(name="Goes Down Fighting", power_type=PowerType.Theme)
+        super().__init__(
+            name="Goes Down Fighting", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         # this role makes sense for lots of monsters, but Defenders and Bruisers should be a bit more likely to have this
@@ -105,9 +107,11 @@ class _GoesDownFighting(Power):
         return stats, feature
 
 
-class _AdrenalineRush(Power):
+class _AdrenalineRush(PowerBackport):
     def __init__(self):
-        super().__init__(name="Adrenaline Rush", power_type=PowerType.Theme)
+        super().__init__(
+            name="Adrenaline Rush", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         # this is amazing for ambushers, bruisers, and melee fighters
@@ -134,9 +138,11 @@ class _AdrenalineRush(Power):
         return stats, feature
 
 
-class _MagicResistance(Power):
+class _MagicResistance(PowerBackport):
     def __init__(self):
-        super().__init__(name="Magic Resistance", power_type=PowerType.Theme)
+        super().__init__(
+            name="Magic Resistance", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         score = _score_has_magic_protection(candidate)
@@ -152,9 +158,11 @@ class _MagicResistance(Power):
         return stats, feature
 
 
-class _LimitedMagicImmunity(Power):
+class _LimitedMagicImmunity(PowerBackport):
     def __init__(self):
-        super().__init__(name="Limited Magic Immunity", power_type=PowerType.Theme)
+        super().__init__(
+            name="Limited Magic Immunity", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         score = _score_has_magic_protection(candidate)
@@ -174,12 +182,14 @@ class _LimitedMagicImmunity(Power):
         return stats, feature
 
 
-class _QuickRecovery(Power):
+class _QuickRecovery(PowerBackport):
     """Quick Recovery (Trait). At the start of this creature's turn, they can attempt a saving throw
     against any effect on them that can be ended by a successful saving throw."""
 
     def __init__(self):
-        super().__init__(name="Quick Recovery", power_type=PowerType.Theme)
+        super().__init__(
+            name="Quick Recovery", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         # this power makes a lot of sense for high CR creatures, creatures with high CON (resilient), or high CHA (luck)
@@ -210,7 +220,7 @@ class _QuickRecovery(Power):
         return stats, feature
 
 
-class _Regeneration(Power):
+class _Regeneration(PowerBackport):
     def __init__(self):
         super().__init__(name="Regeneration", power_type=PowerType.Theme)
 

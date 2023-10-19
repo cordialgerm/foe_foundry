@@ -35,9 +35,8 @@ def test_all_combinations(
     examples_dir.mkdir(exist_ok=True)
     name = f"{base_stat.name}_{creature_template.name}_{role.name}_{n}"
     seed = _seed_for_text(name)
-    rng = np.random.default_rng(seed)
     path = examples_dir / (name + ".html")
-    stats = creature_template.create(base_stat, role_template=role, rng=rng)
+    stats = creature_template.create(base_stat, role_template=role, rng_seed=seed)
 
     benchmarks = benchmark(stats)
 

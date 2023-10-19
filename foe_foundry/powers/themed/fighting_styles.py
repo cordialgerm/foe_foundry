@@ -13,11 +13,9 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..attack import flavorful_damage_types
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import HIGH_AFFINITY, LOW_AFFINITY, MODERATE_AFFINITY, NO_AFFINITY
-from .organized import _score_could_be_organized
 
 T = TypeVar("T")
 
@@ -68,7 +66,7 @@ def score(
     return score
 
 
-class _Dueling(Power):
+class _Dueling(PowerBackport):
     def __init__(self):
         super().__init__(name="Dueling", power_type=PowerType.Theme)
 
@@ -96,7 +94,7 @@ class _Dueling(Power):
         return stats, feature
 
 
-class _ExpertBrawler(Power):
+class _ExpertBrawler(PowerBackport):
     def __init__(self):
         super().__init__(name="Expert Brawler", power_type=PowerType.Theme)
 
@@ -131,7 +129,7 @@ class _ExpertBrawler(Power):
         return stats, [feature1, feature2]
 
 
-class _Interception(Power):
+class _Interception(PowerBackport):
     def __init__(self):
         super().__init__(name="Interception", power_type=PowerType.Theme)
 
@@ -164,7 +162,7 @@ class _Interception(Power):
         return stats, feature
 
 
-class _BaitAndSwitch(Power):
+class _BaitAndSwitch(PowerBackport):
     def __init__(self):
         super().__init__(name="Bait and Switch", power_type=PowerType.Theme)
 
@@ -194,7 +192,7 @@ class _BaitAndSwitch(Power):
         return stats, feature
 
 
-class _ThrownWeaponExpert(Power):
+class _ThrownWeaponExpert(PowerBackport):
     def __init__(self):
         super().__init__(name="Thrown Weapon Expert", power_type=PowerType.Theme)
 
@@ -221,7 +219,7 @@ class _ThrownWeaponExpert(Power):
         return stats, feature
 
 
-class _ArmorMaster(Power):
+class _ArmorMaster(PowerBackport):
     def __init__(self):
         super().__init__(name="Armor Master", power_type=PowerType.Theme)
 
@@ -243,7 +241,7 @@ class _ArmorMaster(Power):
         return stats, feature
 
 
-class _ShieldMaster(Power):
+class _ShieldMaster(PowerBackport):
     def __init__(self):
         super().__init__(name="Shield Master", power_type=PowerType.Theme)
 
@@ -265,7 +263,7 @@ class _ShieldMaster(Power):
         return stats, feature
 
 
-class _PolearmMaster(Power):
+class _PolearmMaster(PowerBackport):
     def __init__(self):
         super().__init__(name="Polearm Master", power_type=PowerType.Theme)
 
@@ -285,9 +283,11 @@ class _PolearmMaster(Power):
         return stats, feature
 
 
-class _GreatWeaponFighting(Power):
+class _GreatWeaponFighting(PowerBackport):
     def __init__(self):
-        super().__init__(name="Great Weapon Fighting", power_type=PowerType.Theme)
+        super().__init__(
+            name="Great Weapon Fighting", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -318,7 +318,7 @@ class _GreatWeaponFighting(Power):
         return stats, feature
 
 
-class _TwoWeaponFighting(Power):
+class _TwoWeaponFighting(PowerBackport):
     def __init__(self):
         super().__init__(name="Two Weapon Fighting", power_type=PowerType.Theme)
 
@@ -357,9 +357,11 @@ class _TwoWeaponFighting(Power):
         return stats, feature
 
 
-class _Sharpshooter(Power):
+class _Sharpshooter(PowerBackport):
     def __init__(self):
-        super().__init__(name="Sharpshooter", power_type=PowerType.Theme)
+        super().__init__(
+            name="Sharpshooter", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(

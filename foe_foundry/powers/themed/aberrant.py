@@ -12,7 +12,7 @@ from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -22,7 +22,7 @@ from ..scores import (
 )
 
 
-class _EraseMemory(Power):
+class _EraseMemory(PowerBackport):
     def __init__(self):
         super().__init__(name="Erase Memory", power_type=PowerType.Theme)
 
@@ -66,7 +66,7 @@ class _EraseMemory(Power):
         return stats, feature
 
 
-class _WarpReality(Power):
+class _WarpReality(PowerBackport):
     def __init__(self):
         super().__init__(name="Warp Reality", power_type=PowerType.Theme)
 
@@ -101,7 +101,7 @@ class _WarpReality(Power):
         return stats, feature
 
 
-class _AdhesiveSkin(Power):
+class _AdhesiveSkin(PowerBackport):
     def __init__(self):
         super().__init__(name="Adhesive Skin", power_type=PowerType.Theme)
 
@@ -130,9 +130,9 @@ class _AdhesiveSkin(Power):
         return stats, feature
 
 
-class _Incubation(Power):
+class _Incubation(PowerBackport):
     def __init__(self):
-        super().__init__(name="Incubation", power_type=PowerType.Theme)
+        super().__init__(name="Incubation", power_type=PowerType.Theme, power_level=HIGH_POWER)
         self.damage_types = {DamageType.Necrotic, DamageType.Poison}
 
     def score(self, candidate: BaseStatblock) -> float:

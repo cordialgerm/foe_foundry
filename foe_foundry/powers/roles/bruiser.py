@@ -16,7 +16,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -43,7 +43,7 @@ def _score_bruiser(
     return score
 
 
-class _Sentinel(Power):
+class _Sentinel(PowerBackport):
     def __init__(self):
         super().__init__(name="Sentinel", power_type=PowerType.Role)
 
@@ -69,7 +69,7 @@ class _Sentinel(Power):
         return stats, feature
 
 
-class _Grappler(Power):
+class _Grappler(PowerBackport):
     def __init__(self):
         super().__init__(name="Grappler", power_type=PowerType.Role)
 
@@ -105,7 +105,7 @@ class _Grappler(Power):
         return stats, None
 
 
-class _Cleaver(Power):
+class _Cleaver(PowerBackport):
     def __init__(self):
         super().__init__(name="Cleaver", power_type=PowerType.Role)
 
@@ -133,9 +133,11 @@ class _Cleaver(Power):
         return stats, feature
 
 
-class _StunningBlow(Power):
+class _StunningBlow(PowerBackport):
     def __init__(self):
-        super().__init__(name="Stunning Blow", power_type=PowerType.Role)
+        super().__init__(
+            name="Stunning Blow", power_type=PowerType.Role, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_bruiser(
@@ -164,7 +166,7 @@ class _StunningBlow(Power):
         return stats, feature
 
 
-class _Disembowler(Power):
+class _Disembowler(PowerBackport):
     def __init__(self):
         super().__init__(name="Disembowler", power_type=PowerType.Role)
 

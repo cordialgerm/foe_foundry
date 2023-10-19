@@ -19,28 +19,18 @@ from ...utils import easy_multiple_of_five
 from ...utils.rng import choose_enum, choose_options
 from ...utils.summoning import determine_summon_formula
 from ..creatures import giant
-from ..power import Power, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..roles import artillery, bruiser
 from ..scores import NO_AFFINITY
 from ..themed import fast, holy, organized, reckless, tough
 from ..utils import score
 
 
-def _merge_features(*items: Feature | List[Feature] | None) -> List[Feature]:
-    results = []
-
-    for item in items:
-        if isinstance(item, Feature):
-            results.append(item)
-        elif isinstance(item, list):
-            results.extend(item)
-
-    return results
-
-
-class _DeathKnight(Power):
+class _DeathKnight(PowerBackport):
     def __init__(self):
-        super().__init__(name="Death Knight", power_type=PowerType.Theme)
+        super().__init__(
+            name="Death Knight", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -95,9 +85,11 @@ class _DeathKnight(Power):
         return stats, [feature1, feature2]
 
 
-class _EldritchKnight(Power):
+class _EldritchKnight(PowerBackport):
     def __init__(self):
-        super().__init__(name="Eldritch Knight", power_type=PowerType.Theme)
+        super().__init__(
+            name="Eldritch Knight", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
         self.elements = {DamageType.Fire, DamageType.Lightning, DamageType.Cold}
 
     def score(self, candidate: BaseStatblock) -> float:
@@ -159,9 +151,9 @@ class _EldritchKnight(Power):
         return stats, [feature1, feature2]
 
 
-class _Artificer(Power):
+class _Artificer(PowerBackport):
     def __init__(self):
-        super().__init__(name="Artificer", power_type=PowerType.Theme)
+        super().__init__(name="Artificer", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -197,9 +189,9 @@ class _Artificer(Power):
         return stats, feature
 
 
-class _Barbarian(Power):
+class _Barbarian(PowerBackport):
     def __init__(self):
-        super().__init__(name="Barbarian", power_type=PowerType.Theme)
+        super().__init__(name="Barbarian", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -231,14 +223,15 @@ class _Barbarian(Power):
             description=f"On a hit, {stats.roleref} gains resistance to Bludgeoning, Slashing, and Piercing damage until the end of its next turn",
         )
 
-        stats, feature2 = reckless.Toss.apply(stats, rng)
+        stats = reckless.Toss.modify_stats(stats)
+        feature2 = reckless.Toss.generate_features(stats)
 
-        return stats, _merge_features(feature1, feature2)
+        return stats, Feature.merge(feature1, feature2)
 
 
-class _Bard(Power):
+class _Bard(PowerBackport):
     def __init__(self):
-        super().__init__(name="Bardic", power_type=PowerType.Theme)
+        super().__init__(name="Bardic", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -285,9 +278,9 @@ class _Bard(Power):
         return stats, [feature1, feature2]
 
 
-class _WarPriest(Power):
+class _WarPriest(PowerBackport):
     def __init__(self):
-        super().__init__(name="War Priest", power_type=PowerType.Theme)
+        super().__init__(name="War Priest", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -312,7 +305,8 @@ class _WarPriest(Power):
         stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
         dmg = DieFormula.target_value(0.75 * stats.attack.average_damage, force_die=Die.d6)
 
-        stats, feature1 = holy.MassCureWounds.apply(stats, rng)
+        stats = holy.MassCureWounds.modify_stats(stats)
+        feature1 = holy.MassCureWounds.generate_features(stats)
 
         feature2 = Feature(
             name="War God's Blessing",
@@ -322,12 +316,12 @@ class _WarPriest(Power):
                 can add +10 to the attack roll. If the attack hits, it deals an additional {dmg.description} radiant damage",
         )
 
-        return stats, _merge_features(feature1, feature2)
+        return stats, Feature.merge(feature1, feature2)
 
 
-class _Ranger(Power):
+class _Ranger(PowerBackport):
     def __init__(self):
-        super().__init__(name="Ranger", power_type=PowerType.Theme)
+        super().__init__(name="Ranger", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -362,13 +356,17 @@ class _Ranger(Power):
             description=f"{stats.roleref.capitalize()} casts *Spike Growth*",
         )
 
-        stats, feature2 = artillery.SteadyAim.apply(stats, rng)
-        return stats, _merge_features(feature1, feature2)
+        stats = artillery.SteadyAim.modify_stats(stats)
+        feature2 = artillery.SteadyAim.generate_features(stats)
+
+        return stats, Feature.merge(feature1, feature2)
 
 
-class _ArcaneArcher(Power):
+class _ArcaneArcher(PowerBackport):
     def __init__(self):
-        super().__init__(name="Arcane Archer", power_type=PowerType.Theme)
+        super().__init__(
+            name="Arcane Archer", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -420,9 +418,9 @@ class _ArcaneArcher(Power):
         return stats, feature
 
 
-class _PsiWarrior(Power):
+class _PsiWarrior(PowerBackport):
     def __init__(self):
-        super().__init__(name="Psi Warrior", power_type=PowerType.Theme)
+        super().__init__(name="Psi Warrior", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -476,9 +474,9 @@ class _PsiWarrior(Power):
         return stats, [feature1, feature2, feature3]
 
 
-class _Cavalier(Power):
+class _Cavalier(PowerBackport):
     def __init__(self):
-        super().__init__(name="Cavalier", power_type=PowerType.Theme)
+        super().__init__(name="Cavalier", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -519,9 +517,9 @@ class _Cavalier(Power):
         return stats, [feature1, feature2, feature3]
 
 
-class _RuneKnight(Power):
+class _RuneKnight(PowerBackport):
     def __init__(self):
-        super().__init__(name="Rune Knight", power_type=PowerType.Theme)
+        super().__init__(name="Rune Knight", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -557,14 +555,15 @@ class _RuneKnight(Power):
                 resistance to that attack's damage",
         )
 
-        stats, feature2 = choice.apply(stats, rng)
+        stats = choice.modify_stats(stats)
+        feature2 = choice.generate_features(stats)
 
-        return stats, _merge_features(feature1, feature2)
+        return stats, Feature.merge(feature1, feature2)
 
 
-class _Samurai(Power):
+class _Samurai(PowerBackport):
     def __init__(self):
-        super().__init__(name="Samurai", power_type=PowerType.Theme)
+        super().__init__(name="Samurai", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -590,18 +589,19 @@ class _Samurai(Power):
                 {stats.roleref} has advantage on attack rolls and saving throws",
         )
 
-        stats, feature2 = tough.NotDeadYet.apply(stats, rng)
+        stats = tough.NotDeadYet.modify_stats(stats)
+        feature2 = tough.NotDeadYet.generate_features(stats)
 
-        return stats, _merge_features(feature1, feature2)
+        return stats, Feature.merge(feature1, feature2)
 
     # fighting spirit - bonus action to gain temp HP and advantage on attack rolls
     # strength before death - "Not Dead Yet" ability but renamed
     pass
 
 
-class _Monk(Power):
+class _Monk(PowerBackport):
     def __init__(self):
-        super().__init__(name="Monk", power_type=PowerType.Theme)
+        super().__init__(name="Monk", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -621,15 +621,18 @@ class _Monk(Power):
         stats = stats.copy(secondary_class="Monk")
         stats = stats.scale({Stats.DEX: Stats.DEX.Boost(2)})
 
-        stats, feature1 = bruiser.StunningBlow.apply(stats, rng)
-        stats, feature2 = fast.Evasion.apply(stats, rng)
+        stats = bruiser.StunningBlow.modify_stats(stats)
+        feature1 = bruiser.StunningBlow.generate_features(stats)
 
-        return stats, _merge_features(feature1, feature2)
+        stats = fast.Evasion.modify_stats(stats)
+        feature2 = fast.Evasion.generate_features(stats)
+
+        return stats, Feature.merge(feature1, feature2)
 
 
-class _Paladin(Power):
+class _Paladin(PowerBackport):
     def __init__(self):
-        super().__init__(name="Paladin", power_type=PowerType.Theme)
+        super().__init__(name="Paladin", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -653,15 +656,18 @@ class _Paladin(Power):
         stats = stats.copy(secondary_damage_type=DamageType.Radiant, creature_class="Paladin")
         stats = stats.scale({Stats.CHA: Stats.CHA.Boost(2)})
 
-        stats, feature1 = organized.Inspiring.apply(stats, rng)
-        stats, feature2 = holy.DivineSmite.apply(stats, rng)
+        stats = organized.Inspiring.modify_stats(stats)
+        feature1 = organized.Inspiring.generate_features(stats)
 
-        return stats, _merge_features(feature1, feature2)
+        stats = holy.DivineSmite.modify_stats(stats)
+        feature2 = holy.DivineSmite.generate_features(stats)
+
+        return stats, Feature.merge(feature1, feature2)
 
 
-class _Cleric(Power):
+class _Cleric(PowerBackport):
     def __init__(self):
-        super().__init__(name="Cleric", power_type=PowerType.Theme)
+        super().__init__(name="Cleric", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -696,14 +702,17 @@ class _Cleric(Power):
             description=f"When {stats.roleref} fails a saving throw or misses an attack it may add 2d4 to that result",
         )
 
-        stats, feature2 = holy.WordOfRadiance.apply(stats, rng)
+        stats = holy.WordOfRadiance.modify_stats(stats)
+        feature2 = holy.WordOfRadiance.generate_features(stats)
 
-        return stats, _merge_features(feature1, feature2)
+        return stats, Feature.merge(feature1, feature2)
 
 
-class _Druid(Power):
+class _Druid(PowerBackport):
     def __init__(self):
-        super().__init__(name="Druidic Warrior", power_type=PowerType.Theme)
+        super().__init__(
+            name="Druidic Warrior", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(

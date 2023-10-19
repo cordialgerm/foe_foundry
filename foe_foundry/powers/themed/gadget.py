@@ -15,7 +15,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import choose_enum, easy_multiple_of_five
 from ..attack import flavorful_damage_types
-from ..power import Power, PowerType
+from ..power import Power, PowerBackport, PowerType
 from ..scores import (
     EXTRA_HIGH_AFFINITY,
     HIGH_AFFINITY,
@@ -53,7 +53,7 @@ def _score_gadget(
     return score
 
 
-class _HealingPotions(Power):
+class _HealingPotions(PowerBackport):
     def __init__(self):
         super().__init__(name="Healing Potions", power_type=PowerType.Theme)
 
@@ -88,7 +88,7 @@ class _HealingPotions(Power):
         return stats, feature
 
 
-class _SmokeBomb(Power):
+class _SmokeBomb(PowerBackport):
     def __init__(self):
         super().__init__(name="Smoke Bomb", power_type=PowerType.Theme)
 
@@ -110,7 +110,7 @@ class _SmokeBomb(Power):
         return stats, feature
 
 
-class _Net(Power):
+class _Net(PowerBackport):
     def __init__(self):
         super().__init__(name="Net", power_type=PowerType.Theme)
 
@@ -157,7 +157,7 @@ class _Net(Power):
         return stats, feature
 
 
-class _MagicalExplosive(Power):
+class _MagicalExplosive(PowerBackport):
     def __init__(self):
         super().__init__(name="Net", power_type=PowerType.Theme)
 
