@@ -15,14 +15,8 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
+from ..utils import score
 
 
 def score_giant(
@@ -30,15 +24,12 @@ def score_giant(
     attack_modifiers: AttackModifiers = None,
     min_cr: float | None = None,
 ) -> float:
-    if candidate.creature_type != CreatureType.Giant:
-        return NO_AFFINITY
-
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    score = HIGH_AFFINITY
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score
+    return score(
+        candidate=candidate,
+        require_cr=min_cr,
+        attack_modifiers=attack_modifiers,
+        bonus_size=Size.Huge,
+    )
 
 
 class _ForcefulBlow(PowerBackport):

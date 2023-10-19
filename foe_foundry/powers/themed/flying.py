@@ -15,31 +15,29 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
-def _score_flyer(candidate: BaseStatblock, require_flying: bool = False) -> float:
-    if require_flying and not candidate.speed.fly:
-        return NO_AFFINITY
+def score_flyer(candidate: BaseStatblock, require_flying: bool = False) -> float:
+    def is_flyer(c: BaseStatblock) -> bool:
+        return (candidate.speed.fly or 0) > 0
 
     creature_types = {
-        CreatureType.Dragon: EXTRA_HIGH_AFFINITY,
-        CreatureType.Fiend: EXTRA_HIGH_AFFINITY,
-        CreatureType.Celestial: EXTRA_HIGH_AFFINITY,
-        CreatureType.Aberration: HIGH_AFFINITY,
-        CreatureType.Beast: MODERATE_AFFINITY,
-        CreatureType.Monstrosity: MODERATE_AFFINITY,
-        CreatureType.Elemental: MODERATE_AFFINITY,
-        CreatureType.Fey: MODERATE_AFFINITY,
+        CreatureType.Dragon,
+        CreatureType.Fiend,
+        CreatureType.Celestial,
+        CreatureType.Aberration,
+        CreatureType.Beast,
+        CreatureType.Monstrosity,
+        CreatureType.Elemental,
+        CreatureType.Fey,
     }
 
-    return creature_types.get(candidate.creature_type, NO_AFFINITY)
+    return score(
+        candidate=candidate,
+        require_types=creature_types,
+        require_callback=is_flyer if require_flying else None,
+    )
 
 
 class _Flyer(PowerBackport):
@@ -47,7 +45,7 @@ class _Flyer(PowerBackport):
         super().__init__(name="Flyer", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_flyer(candidate)
+        return score_flyer(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         speed_change = 10 + 10 * int(floor(stats.cr / 10.0))
@@ -70,7 +68,7 @@ class _Flyby(PowerBackport):
         super().__init__(name="Flyby", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_flyer(candidate, require_flying=True)
+        return score_flyer(candidate, require_flying=True)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

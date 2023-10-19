@@ -20,28 +20,26 @@ from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..attack_modifiers import resolve_attack_modifier
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def _score_could_be_reckless_fighter(
     candidate: BaseStatblock, large_size_boost: bool = False, allow_defender: bool = False
 ) -> float:
-    if not candidate.attack_type.is_melee():
-        return NO_AFFINITY
+    def is_reckless(c: BaseStatblock) -> bool:
+        if not allow_defender and c.role == MonsterRole.Defender:
+            return False
+        elif c.attributes.WIS >= 12:
+            return False
+        else:
+            return True
 
-    if not allow_defender and candidate.role == MonsterRole.Defender:
-        return NO_AFFINITY
-
-    score = 0
-
-    score += resolve_attack_modifier(
-        candidate,
+    return score(
+        candidate=candidate,
+        require_attack_types=AttackType.AllMelee(),
+        require_callback=is_reckless,
+        bonus_roles=MonsterRole.Bruiser,
+        bonus_size=Size.Large if large_size_boost else None,
         attack_modifiers=[
             natural.Claw,
             natural.Bite,
@@ -53,23 +51,6 @@ def _score_could_be_reckless_fighter(
             weapon.Maul,
         ],
     )
-
-    if candidate.creature_type in {
-        CreatureType.Beast,
-        CreatureType.Monstrosity,
-    }:
-        score += MODERATE_AFFINITY
-
-    if candidate.role in {MonsterRole.Bruiser}:
-        score += MODERATE_AFFINITY
-
-    if large_size_boost and candidate.size >= Size.Large:
-        score += MODERATE_AFFINITY
-
-    if candidate.attributes.WIS >= 12:
-        score -= HIGH_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
 
 
 def _as_reckless_fighter(stats: BaseStatblock, uses_weapon: bool = False) -> BaseStatblock:

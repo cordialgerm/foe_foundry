@@ -17,28 +17,18 @@ from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import summoning
 from ..attack import flavorful_damage_types
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
-def _score(candidate: BaseStatblock) -> float:
-    score = 0
+def score_elemental(candidate: BaseStatblock) -> float:
+    def has_elemental_damage(b: BaseStatblock):
+        return b.secondary_damage_type is not None and b.secondary_damage_type.is_elemental
 
-    if (
-        candidate.secondary_damage_type is not None
-        and candidate.secondary_damage_type.is_elemental
-    ):
-        score += MODERATE_AFFINITY
-
-    if candidate.creature_type == CreatureType.Elemental:
-        score += HIGH_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Elemental,
+        require_callback=has_elemental_damage,
+    )
 
 
 def _as_elemental(stats: BaseStatblock) -> BaseStatblock:
@@ -54,13 +44,7 @@ class _DamagingAura(PowerBackport):
         super().__init__(name="Damaging Aura", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        # this power makes a lot of sense for foes with a secondary damage type
-        # it can also make sense for large STR-martials (wielding many weapons)
-
-        if candidate.secondary_damage_type is not None:
-            return HIGH_AFFINITY
-        else:
-            return NO_AFFINITY
+        return score_elemental(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -117,15 +101,7 @@ class _ElementalAffinity(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        # if the monster has a secondary damage type then it's a good fit
-        # otherwise, certain monster types are good fits
-        score = 0
-        if candidate.secondary_damage_type is not None:
-            score += MODERATE_AFFINITY
-        elif flavorful_damage_types(candidate) is not None:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_elemental(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -163,7 +139,7 @@ class _ElementalShroud(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_elemental(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_elemental(stats)
@@ -187,7 +163,7 @@ class _ElementalBurst(PowerBackport):
         super().__init__(name="Elemental Burst", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_elemental(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -217,7 +193,7 @@ class _ElementalMagic(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_elemental(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_elemental(stats)
@@ -285,7 +261,7 @@ class _ElementalSmite(PowerBackport):
         super().__init__(name="Elemental Smite", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_elemental(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_elemental(stats)
@@ -342,7 +318,7 @@ class _ElementalReplication(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_elemental(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         _, _, description = summoning.determine_summon_formula(

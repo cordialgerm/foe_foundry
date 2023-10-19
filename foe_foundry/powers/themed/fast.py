@@ -4,7 +4,7 @@ import numpy as np
 from numpy.random import Generator
 
 from ...attack_template import natural, spell, weapon
-from ...attributes import Stats
+from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...features import ActionType, Feature
@@ -40,6 +40,34 @@ class _Evasion(PowerBackport):
         return stats, feature
 
 
-Evasion: Power = _Evasion()
+class _NimbleReaction(PowerBackport):
+    def __init__(self):
+        super().__init__(name="Nimble Reaction", power_type=PowerType.Theme)
 
-FastPowers: List[Power] = [Evasion]
+    def score(self, candidate: BaseStatblock) -> float:
+        return score(
+            candidate=candidate,
+            require_stats=Stats.DEX,
+            bonus_speed=40,
+            bonus_skills=[Skills.Acrobatics, Skills.Athletics],
+        )
+
+    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Acrobatics)
+        stats = stats.copy(attributes=new_attrs)
+
+        feature = Feature(
+            name="Nimble Reaction",
+            action=ActionType.Reaction,
+            description=f"When {stats.selfref} is the only target of a melee attack, they can move up to half their speed without provoking opportunity attacks.\
+                If this movement leaves {stats.selfref} outside the attacking creature's reach, then the attack misses.",
+            recharge=4,
+        )
+
+        return stats, feature
+
+
+Evasion: Power = _Evasion()
+NimbleReaction: Power = _NimbleReaction()
+
+FastPowers: List[Power] = [Evasion, NimbleReaction]

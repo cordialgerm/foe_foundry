@@ -17,20 +17,13 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
-def _score(candidate: BaseStatblock) -> float:
-    if candidate.creature_type != CreatureType.Undead:
-        return NO_AFFINITY
-
-    return HIGH_AFFINITY
+def score_undead(candidate: BaseStatblock) -> float:
+    return score(
+        candidate=candidate, require_types=CreatureType.Undead, bonus_damage=DamageType.Necrotic
+    )
 
 
 class _UndeadResilience(PowerBackport):
@@ -38,7 +31,7 @@ class _UndeadResilience(PowerBackport):
         super().__init__(name="Undead Resilience", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_undead(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -55,7 +48,7 @@ class _StenchOfDeath(PowerBackport):
         super().__init__(name="Stench of Death", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_undead(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -73,7 +66,7 @@ class _StygianBurst(PowerBackport):
         super().__init__(name="Stygian Burst", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_undead(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -105,7 +98,7 @@ class _Frostbite(PowerBackport):
         super().__init__(name="Frostbite", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_undead(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -131,7 +124,7 @@ class _SoulChill(PowerBackport):
         super().__init__(name="Soul Chill", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_undead(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -156,7 +149,7 @@ class _SoulTether(PowerBackport):
         super().__init__(name="Soul Tether", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_undead(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -179,7 +172,7 @@ class _AntithesisOfLife(PowerBackport):
         super().__init__(name="Antithesis of Life", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_undead(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

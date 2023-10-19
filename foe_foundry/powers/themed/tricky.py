@@ -16,39 +16,25 @@ from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
-def _score_is_tricky_creature(candidate: BaseStatblock, magical: bool = False) -> float:
-    score = 0
+def _score_is_tricky_creature(candidate: BaseStatblock) -> float:
+    def is_powerfully_magical(c: BaseStatblock) -> bool:
+        return c.attributes.spellcasting_mod >= 3 or c.attack_type.is_spell()
 
-    if magical and candidate.attributes.spellcasting_mod < 3:
-        return NO_AFFINITY
-
-    creature_types = {
-        CreatureType.Fey: HIGH_AFFINITY,
-        CreatureType.Fiend: MODERATE_AFFINITY,
-        CreatureType.Aberration: MODERATE_AFFINITY,
-        CreatureType.Ooze: MODERATE_AFFINITY,
-    }
-    score += creature_types.get(candidate.creature_type, 0)
-
-    roles = {MonsterRole.Ambusher: LOW_AFFINITY, MonsterRole.Controller: LOW_AFFINITY}
-    score += roles.get(candidate.role, 0)
-
-    if candidate.secondary_damage_type == DamageType.Psychic:
-        score += LOW_AFFINITY
-
-    if candidate.attributes.has_proficiency_or_expertise(Skills.Deception):
-        score += MODERATE_AFFINITY
-
-    return score
+    return score(
+        candidate=candidate,
+        require_types={
+            CreatureType.Fey,
+            CreatureType.Fiend,
+            CreatureType.Aberration,
+            CreatureType.Humanoid,
+        },
+        require_callback=is_powerfully_magical,
+        bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
+        require_stats=[Stats.CHA, Stats.INT],
+    )
 
 
 def _ensure_tricky_stats(stats: BaseStatblock) -> BaseStatblock:
@@ -68,46 +54,12 @@ def _ensure_tricky_stats(stats: BaseStatblock) -> BaseStatblock:
     return stats.copy(**changes)
 
 
-class _NimbleReaction(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Nimble Reaction", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.primary_attribute == Stats.DEX:
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Acrobatics):
-            score += HIGH_AFFINITY
-
-        if candidate.speed.fastest_speed >= 40:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Acrobatics)
-        stats = stats.copy(attributes=new_attrs)
-
-        feature = Feature(
-            name="Nimble Reaction",
-            action=ActionType.Reaction,
-            description=f"When {stats.selfref} is the only target of a melee attack, they can move up to half their speed without provoking opportunity attacks.\
-                If this movement leaves {stats.selfref} outside the attacking creature's reach, then the attack misses.",
-            recharge=4,
-        )
-
-        return stats, feature
-
-
 class _Impersonation(PowerBackport):
     def __init__(self):
         super().__init__(name="Impersonation", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = _score_is_tricky_creature(candidate, magical=True)
-        return score if score > 0 else NO_AFFINITY
+        return _score_is_tricky_creature(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _ensure_tricky_stats(stats)
@@ -131,8 +83,7 @@ class _Projection(PowerBackport):
         super().__init__(name="Projection", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = _score_is_tricky_creature(candidate, magical=True)
-        return score if score > 0 else NO_AFFINITY
+        return _score_is_tricky_creature(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _ensure_tricky_stats(stats)
@@ -159,7 +110,7 @@ class _ShadowyDoppelganger(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate, magical=True)
+        return _score_is_tricky_creature(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
@@ -185,7 +136,7 @@ class _SpectralDuplicate(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate, magical=True)
+        return _score_is_tricky_creature(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -205,7 +156,7 @@ class _MirrorImage(PowerBackport):
         super().__init__(name="Mirror Images", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate, magical=True)
+        return _score_is_tricky_creature(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         ac = 10 + stats.attributes.stat_mod(Stats.DEX)
@@ -224,7 +175,7 @@ class _Hypnosis(PowerBackport):
         super().__init__(name="Hypnotic Pattern", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate, magical=True)
+        return _score_is_tricky_creature(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -245,7 +196,7 @@ class _ReverseFortune(PowerBackport):
         super().__init__(name="Reverse Fortune", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate, magical=True)
+        return _score_is_tricky_creature(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -262,7 +213,6 @@ class _ReverseFortune(PowerBackport):
 Hypnosis: Power = _Hypnosis()
 Impersonation: Power = _Impersonation()
 MirrorImage: Power = _MirrorImage()
-NimbleReaction: Power = _NimbleReaction()
 Projection: Power = _Projection()
 ReverseFortune: Power = _ReverseFortune()
 ShadowyDoppelganger: Power = _ShadowyDoppelganger()
@@ -272,7 +222,6 @@ TrickyPowers: List[Power] = [
     Hypnosis,
     Impersonation,
     MirrorImage,
-    NimbleReaction,
     Projection,
     ReverseFortune,
     ShadowyDoppelganger,

@@ -18,13 +18,7 @@ from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def score_fiend(
@@ -32,14 +26,7 @@ def score_fiend(
     min_cr: float | None = None,
     attack_modifiers: AttackModifiers = None,
 ) -> float:
-    if candidate.creature_type != CreatureType.Fiend:
-        return NO_AFFINITY
-    if min_cr is not None and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    score = HIGH_AFFINITY
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score
+    return score(candidate=candidate, require_cr=min_cr, attack_modifiers=attack_modifiers)
 
 
 class _EmpoweredByDeath(PowerBackport):
@@ -50,7 +37,7 @@ class _EmpoweredByDeath(PowerBackport):
         return score_fiend(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        hp = int(floor(5 + 2 * stats.cr))
+        hp = easy_multiple_of_five(2 * stats.cr, min_val=5, max_val=30)
 
         feature = Feature(
             name="Empowered by Death",
@@ -220,6 +207,40 @@ class _TemptingOffer(PowerBackport):
         return stats, feature
 
 
+class _DevilsSight(PowerBackport):
+    def __init__(self):
+        super().__init__(name="Devil's Sight", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_fiend(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, List[Feature]]:
+        stats = stats.copy(creature_type=CreatureType.Fiend)
+
+        level = 2 if stats.cr <= 5 else 4
+
+        devils_sight = Feature(
+            name="Devil's Sight",
+            action=ActionType.Feature,
+            description=f"Magical darkness doesn't impede {stats.selfref}'s darkvision, and it can see through Hellish Darkness.",
+        )
+
+        darkness = Feature(
+            name="Hellish Darkness",
+            action=ActionType.BonusAction,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} causes shadowy black flames to fill a 15-foot radius sphere with obscuring darkness centered at a point within 60 feet that {stats.selfref} can see. \
+                The darkness spreads around corners. Creatures without Devil's Sight can't see through this darkness and nonmagical light can't illuminate it. \
+                If any of this spell's area overlaps with an area of light created by a spell of level {level} or lower, the spell that created the light is dispelled. \
+                Creatures of {stats.selfref}'s choice lose any resistance to fire damage while in the darkness, and immunity to fire damage is instead treated as resistance to fire damage.",
+        )
+
+        return stats, [devils_sight, darkness]
+
+
+DevilsSight: Power = _DevilsSight()
 EmpoweredByDeath: Power = _EmpoweredByDeath()
 FiendishBite: Power = _FiendishBite()
 FiendishSummons: Power = _FiendishSummons()
@@ -229,6 +250,7 @@ TemptingOffer: Power = _TemptingOffer()
 WallOfFire: Power = _WallOfFire()
 
 FiendishPowers: List[Power] = [
+    DevilsSight,
     EmpoweredByDeath,
     FiendishBite,
     FiendishSummons,

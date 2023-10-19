@@ -21,32 +21,16 @@ from ..scores import (
     MODERATE_AFFINITY,
     NO_AFFINITY,
 )
+from ..utils import score
 
 
-def _score_clever(candidate: BaseStatblock) -> float:
-    # This power makes sense for any non-beast monster with reasonable mental stats
-    if (
-        candidate.creature_type == CreatureType.Beast
-        or candidate.role == MonsterRole.Bruiser
-        or candidate.attributes.INT <= 10
-        or candidate.attributes.WIS <= 10
-        or candidate.attributes.CHA <= 10
-    ):
-        return NO_AFFINITY
-
-    score = 0
-
-    high_int = candidate.attributes.INT >= 16
-    high_wis = candidate.attributes.WIS >= 16
-    high_cha = candidate.attributes.CHA >= 16
-
-    if high_int + high_wis + high_cha >= 2:
-        score += HIGH_AFFINITY
-
-    if candidate.role in {MonsterRole.Leader, MonsterRole.Controller}:
-        score += MODERATE_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+def score_clever(candidate: BaseStatblock) -> float:
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.all_but(CreatureType.Beast),
+        require_stats=[Stats.INT, Stats.WIS, Stats.CHA],
+        bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
+    )
 
 
 class _Keen(PowerBackport):
@@ -56,7 +40,7 @@ class _Keen(PowerBackport):
         super().__init__(name="Keen", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_clever(candidate)
+        return score_clever(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -131,7 +115,7 @@ class _UnsettlingWords(PowerBackport):
         super().__init__(name="Unsettling Words", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_clever(candidate)
+        return score_clever(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

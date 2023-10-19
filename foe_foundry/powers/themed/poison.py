@@ -3,6 +3,7 @@ from typing import List, Tuple
 
 import numpy as np
 
+from ...attack_template import natural, spell, weapon
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
@@ -14,27 +15,30 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def _score(candidate: BaseStatblock) -> float:
-    creature_types = {
-        CreatureType.Plant: MODERATE_AFFINITY,
-        CreatureType.Aberration: LOW_AFFINITY,
-        CreatureType.Monstrosity: LOW_AFFINITY,
-    }
-    score = creature_types.get(candidate.creature_type, 0)
-
-    if candidate.secondary_damage_type == DamageType.Poison:
-        score += HIGH_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=[CreatureType.Plant, CreatureType.Aberration, CreatureType.Monstrosity],
+        bonus_damage=DamageType.Poison,
+        require_no_other_damage_type=True,
+        attack_modifiers=[
+            "-",
+            weapon.Daggers,
+            weapon.Shortswords,
+            weapon.RapierAndShield,
+            weapon.Crossbow,
+            weapon.Longbow,
+            weapon.Shortbow,
+            natural.Bite,
+            natural.Claw,
+            natural.Stinger,
+            natural.Tentacle,
+            spell.Poisonbolt,
+        ],
+    )
 
 
 class _PoisonousDemise(PowerBackport):

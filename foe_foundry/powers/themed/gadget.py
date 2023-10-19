@@ -16,41 +16,32 @@ from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import choose_enum, easy_multiple_of_five
 from ..attack import flavorful_damage_types
 from ..power import Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
-def _score_gadget(
+def score_gadget(
     candidate: BaseStatblock, require_living: bool = False, ignore_casters: bool = False
 ) -> float:
     # these powers make sense for creatures that are capable of using equipment
-    if not candidate.creature_type.could_use_equipment:
-        return NO_AFFINITY
-    elif require_living and not candidate.creature_type.is_living:
-        return NO_AFFINITY
-    elif ignore_casters and candidate.attack_type.is_spell():
-        return NO_AFFINITY
+    def can_use_gadgets(c: BaseStatblock) -> bool:
+        return candidate.creature_type.could_use_equipment and (
+            not require_living or candidate.creature_type.is_living
+        )
 
-    creature_types = {
-        CreatureType.Humanoid: MODERATE_AFFINITY,
-        CreatureType.Giant: MODERATE_AFFINITY,
-    }
+    attack_types = AttackType.All() - AttackType.AllSpell() if ignore_casters else None
 
-    roles = {
-        MonsterRole.Leader: MODERATE_AFFINITY,
-        MonsterRole.Controller: MODERATE_AFFINITY,
-        MonsterRole.Ambusher: MODERATE_AFFINITY,
-        MonsterRole.Defender: LOW_AFFINITY,
-    }
-
-    score = creature_types.get(candidate.creature_type, LOW_AFFINITY)
-    score += roles.get(candidate.role, 0)
-    return score
+    return score(
+        candidate=candidate,
+        require_callback=can_use_gadgets,
+        require_attack_types=attack_types,
+        bonus_types=CreatureType.Humanoid,
+        bonus_roles=[
+            MonsterRole.Leader,
+            MonsterRole.Controller,
+            MonsterRole.Ambusher,
+            MonsterRole.Defender,
+        ],
+    )
 
 
 class _HealingPotions(PowerBackport):
@@ -58,7 +49,7 @@ class _HealingPotions(PowerBackport):
         super().__init__(name="Healing Potions", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_gadget(candidate, require_living=True)
+        return score_gadget(candidate, require_living=True)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -93,7 +84,7 @@ class _SmokeBomb(PowerBackport):
         super().__init__(name="Smoke Bomb", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_gadget(candidate, ignore_casters=True)
+        return score_gadget(candidate, ignore_casters=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         distance = easy_multiple_of_five(5 + stats.cr / 5, min_val=10, max_val=30)
@@ -115,7 +106,7 @@ class _Net(PowerBackport):
         super().__init__(name="Net", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_gadget(candidate, ignore_casters=True)
+        return score_gadget(candidate, ignore_casters=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -162,7 +153,7 @@ class _MagicalExplosive(PowerBackport):
         super().__init__(name="Net", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_gadget(candidate, ignore_casters=True)
+        return score_gadget(candidate, ignore_casters=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         damage_types = flavorful_damage_types(stats, default=DamageType.Fire) | {

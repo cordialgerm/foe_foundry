@@ -14,31 +14,22 @@ from ...features import ActionType, Feature
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..attack_modifiers import AttackModifiers
+from ..power import HIGH_POWER, Power, PowerType
+from ..utils import score
 
 
-def _score_aberration(
+def score_aberration(
     candidate: BaseStatblock,
     min_size: Size | None = None,
     attack_modifiers: AttackModifiers = None,
 ) -> float:
-    if candidate.creature_type != CreatureType.Aberration:
-        return NO_AFFINITY
-
-    if min_size and candidate.size < min_size:
-        return NO_AFFINITY
-
-    score = HIGH_AFFINITY
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Aberration,
+        require_size=min_size,
+        attack_modifiers=attack_modifiers,
+    )
 
 
 class _GraspingTentacles(Power):
@@ -51,9 +42,9 @@ class _GraspingTentacles(Power):
         super().__init__(name="Grasping Tentacles", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_aberration(
+        return score_aberration(
             candidate,
-            attack_modifiers={natural.Tentacle: HIGH_AFFINITY, "*": NO_AFFINITY},
+            attack_modifiers={"-", natural.Tentacle},
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -73,7 +64,7 @@ class _DominatingGaze(Power):
         super().__init__(name="Dominating Gaze", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_aberration(candidate, attack_modifiers=spell.Gaze)
+        return score_aberration(candidate, attack_modifiers=spell.Gaze)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -94,7 +85,7 @@ class _MaddeningWhispers(Power):
         super().__init__(name="Maddening Whispers", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_aberration(candidate)
+        return score_aberration(candidate)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -114,9 +105,9 @@ class _TentacleSlam(Power):
         super().__init__(name="Tentacle Slam", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_aberration(
+        return score_aberration(
             candidate,
-            attack_modifiers={"*": NO_AFFINITY, natural.Tentacle: HIGH_AFFINITY},
+            attack_modifiers={"-", natural.Tentacle},
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -141,13 +132,10 @@ class _AntimagicGullet(Power):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_aberration(
+        return score_aberration(
             candidate,
             min_size=Size.Large,
-            attack_modifiers={
-                "*": -1 * MODERATE_AFFINITY,
-                natural.Bite: EXTRA_HIGH_AFFINITY,
-            },
+            attack_modifiers={"-", natural.Bite},
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:

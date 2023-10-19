@@ -11,36 +11,19 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def score_artillery(candidate: BaseStatblock, speed_bonus: bool = False) -> float:
-    if not candidate.attack_type.is_ranged():
-        return NO_AFFINITY
-
-    score = MODERATE_AFFINITY
-
-    if candidate.role == MonsterRole.Artillery:
-        score += MODERATE_AFFINITY
-
-    if candidate.attributes.INT >= 15:
-        score += LOW_AFFINITY
-
-    if candidate.attributes.has_proficiency_or_expertise(Skills.Perception):
-        score += LOW_AFFINITY
-
-    if speed_bonus and (
-        candidate.role == MonsterRole.Skirmisher or candidate.speed.fastest_speed >= 40
-    ):
-        score += LOW_AFFINITY
-
-    return score
+    return score(
+        candidate=candidate,
+        require_attack_types=AttackType.AllRanged(),
+        require_stats=Stats.DEX,
+        bonus_roles=MonsterRole.Artillery,
+        bonus_stats=[Stats.DEX, Stats.INT],
+        bonus_skills=Skills.Perception,
+        bonus_speed=40 if speed_bonus else None,
+    )
 
 
 class _Ricochet(PowerBackport):

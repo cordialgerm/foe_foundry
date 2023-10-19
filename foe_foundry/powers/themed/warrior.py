@@ -15,14 +15,8 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
-from .organized import _score_could_be_organized
+from ..utils import score
+from .organized import score_could_be_organized
 
 
 def _score_could_be_melee_fighter(
@@ -32,32 +26,22 @@ def _score_could_be_melee_fighter(
     requires_weapon: bool = False,
     attack_modifiers: AttackModifiers = None,
 ) -> float:
-    if not candidate.attack_type.is_melee():
-        return 0
+    attack_types = AttackType.AllMelee() if not requires_weapon else AttackType.MeleeWeapon
 
-    if requires_weapon and candidate.attack_type != AttackType.MeleeWeapon:
-        return 0
+    def is_organized(c: BaseStatblock) -> bool:
+        return score_could_be_organized(c, requires_intelligence=True) > 0
 
-    score = 0
-
-    if not requires_training and candidate.creature_type in {
-        CreatureType.Beast,
-        CreatureType.Monstrosity,
-    }:
-        score += MODERATE_AFFINITY
-
-    if candidate.primary_attribute_score == Stats.STR:
-        score += MODERATE_AFFINITY
-
-    if candidate.role in {MonsterRole.Bruiser, MonsterRole.Default}:
-        score += MODERATE_AFFINITY
-
-    if large_size_boost and candidate.size >= Size.Large:
-        score += MODERATE_AFFINITY
-
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-
-    return score
+    return score(
+        candidate=candidate,
+        require_attack_types=attack_types,
+        require_callback=is_organized if requires_training else None,
+        bonus_roles=MonsterRole.Bruiser,
+        bonus_size=Size.Large if large_size_boost else None,
+        bonus_types={CreatureType.Beast, CreatureType.Monstrosity}
+        if not requires_training
+        else None,
+        attack_modifiers=attack_modifiers,
+    )
 
 
 def _as_melee_fighter(stats: BaseStatblock, uses_weapon: bool = False) -> BaseStatblock:
@@ -74,20 +58,7 @@ class _Challenger(PowerBackport):
         super().__init__(name="Challenger", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_melee():
-            return NO_AFFINITY
-
-        score = 0
-
-        if candidate.role == MonsterRole.Defender or candidate.creature_type.could_wear_armor:
-            score += HIGH_AFFINITY
-
-        if candidate.attributes.CHA >= 18 or candidate.attributes.has_proficiency_or_expertise(
-            Skills.Intimidation
-        ):
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return _score_could_be_melee_fighter(candidate, requires_training=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -111,8 +82,7 @@ class _PackTactics(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = _score_could_be_organized(candidate, requires_intelligence=False)
-        return score if score > 0 else NO_AFFINITY
+        return score_could_be_organized(candidate, requires_intelligence=False)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -130,18 +100,18 @@ class _CleavingStrike(PowerBackport):
         super().__init__(name="Cleaving Strike", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = _score_could_be_melee_fighter(
+        return _score_could_be_melee_fighter(
             candidate,
             requires_training=False,
             large_size_boost=True,
             attack_modifiers={
-                natural.Claw: HIGH_AFFINITY,
-                weapon.Greataxe: HIGH_AFFINITY,
-                weapon.Greatsword: MODERATE_AFFINITY,
-                weapon.Maul: MODERATE_AFFINITY,
+                "-",
+                natural.Claw,
+                weapon.Greataxe,
+                weapon.Greatsword,
+                weapon.Maul,
             },
         )
-        return score if score > 0 else NO_AFFINITY
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_melee_fighter(stats)
@@ -171,10 +141,10 @@ class _Disciplined(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         score = (
-            _score_could_be_organized(candidate, requires_intelligence=True)
+            score_could_be_organized(candidate, requires_intelligence=True)
             + _score_could_be_melee_fighter(candidate, requires_training=True)
         ) / 2.0
-        return score if score > 0 else NO_AFFINITY
+        return score
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -191,7 +161,7 @@ class _MageSlayer(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         score = _score_could_be_melee_fighter(candidate, requires_training=True)
-        return score if score > 0 else NO_AFFINITY
+        return score
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_melee_fighter(stats, uses_weapon=True)
@@ -213,23 +183,9 @@ class _ParryAndRiposte(PowerBackport):
         super().__init__(name="Parry and Riposte", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        # this monster requires a melee weapon
-        # it makes a ton of sense for defenders and leaders
-        # clever and dextrous foes get a boost as well
-        if candidate.attack_type != AttackType.MeleeWeapon:
-            return NO_AFFINITY
-
-        score = 0
-        if candidate.role in {MonsterRole.Defender, MonsterRole.Leader}:
-            score += HIGH_AFFINITY
-        if candidate.attributes.INT >= 14:
-            score += MODERATE_AFFINITY
-        if candidate.attributes.WIS >= 14:
-            score += MODERATE_AFFINITY
-        if candidate.attributes.DEX >= 14:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return _score_could_be_melee_fighter(
+            candidate, requires_training=True, requires_weapon=True
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -289,10 +245,10 @@ class _PushingAttack(PowerBackport):
             requires_weapon=False,
             large_size_boost=True,
             attack_modifiers={
-                "*": -1 * HIGH_AFFINITY,
-                weapon.Maul: HIGH_AFFINITY,
-                natural.Claw: HIGH_AFFINITY,
-                natural.Slam: HIGH_AFFINITY,
+                "-",
+                weapon.Maul,
+                natural.Claw,
+                natural.Slam,
             },
         )
 

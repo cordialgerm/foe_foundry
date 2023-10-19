@@ -15,47 +15,31 @@ from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
-def _skirmisher_requirements(
+def score_skirmisher(
     candidate: BaseStatblock,
     require_skirmisher: bool = True,
     dex_based: bool = True,
-    requires_tactics: bool = False,
+    requires_tactics: bool = True,
 ) -> float:
-    score = 0
+    def ideal_skirmisher(c: BaseStatblock) -> bool:
+        # skirmishing units were typically made up of poor, lightly-armored soldiers
+        return c.creature_type in {CreatureType.Humanoid} and c.cr <= 2
 
-    # skirmishing units were typically made up of poor, lightly-armored soldiers
-    candidate_could_use_tactics = (
-        candidate.creature_type in {CreatureType.Humanoid} and candidate.cr <= 2
+    def is_organized(c: BaseStatblock) -> bool:
+        return c.creature_type.could_be_organized
+
+    return score(
+        candidate=candidate,
+        require_roles=MonsterRole.Skirmisher if require_skirmisher else None,
+        bonus_roles=MonsterRole.Skirmisher,
+        bonus_stats=Stats.DEX if dex_based else Stats.STR,
+        bonus_speed=40,
+        bonus_callback=ideal_skirmisher,
+        require_callback=is_organized if requires_tactics else None,
     )
-
-    if require_skirmisher and candidate.role != MonsterRole.Skirmisher:
-        return NO_AFFINITY
-
-    if requires_tactics and not candidate_could_use_tactics:
-        return NO_AFFINITY
-
-    if candidate.role == MonsterRole.Ambusher:
-        score += MODERATE_AFFINITY
-
-    if dex_based and candidate.primary_attribute == Stats.DEX:
-        score += MODERATE_AFFINITY
-
-    if not dex_based and candidate.primary_attribute == Stats.STR:
-        score += MODERATE_AFFINITY
-
-    if candidate_could_use_tactics:
-        score += MODERATE_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
 
 
 class _Nimble(PowerBackport):
@@ -63,7 +47,7 @@ class _Nimble(PowerBackport):
         super().__init__(name="Nimble", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _skirmisher_requirements(candidate, require_skirmisher=False)
+        return score_skirmisher(candidate, require_skirmisher=False)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -84,14 +68,14 @@ class _CarefulSteps(PowerBackport):
         super().__init__(name="Careful Steps", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _skirmisher_requirements(candidate, require_skirmisher=False)
+        return score_skirmisher(candidate, require_skirmisher=False)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Careful Steps",
-            description=f"{stats.roleref}'s movement does not provoke opportunity attacks until the end of their turn",
+            description=f"{stats.roleref.capitalize()}'s movement does not provoke opportunity attacks until the end of their turn",
             action=ActionType.BonusAction,
         )
         return stats, feature
@@ -102,7 +86,7 @@ class _KnockBack(PowerBackport):
         super().__init__(name="Knock Back", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _skirmisher_requirements(candidate, require_skirmisher=False, dex_based=False)
+        return score_skirmisher(candidate, require_skirmisher=False, dex_based=False)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -129,9 +113,7 @@ class _Skirmish(PowerBackport):
         super().__init__(name="Skirmish", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _skirmisher_requirements(
-            candidate, require_skirmisher=True, requires_tactics=True
-        )
+        return score_skirmisher(candidate, require_skirmisher=True, requires_tactics=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -157,9 +139,7 @@ class _HarrassingRetreat(PowerBackport):
         super().__init__(name="Harassing Retreat", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _skirmisher_requirements(
-            candidate, require_skirmisher=True, requires_tactics=True
-        )
+        return score_skirmisher(candidate, require_skirmisher=True, requires_tactics=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -182,7 +162,7 @@ class _Speedy(PowerBackport):
         super().__init__(name="Speedy", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _skirmisher_requirements(candidate, require_skirmisher=False)
+        return score_skirmisher(candidate, require_skirmisher=False)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

@@ -17,41 +17,30 @@ from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def _score_could_be_monstrous(
     candidate: BaseStatblock,
     min_size: Size | None = None,
-    additional_creature_types: Dict[CreatureType, float] | None = None,
+    additional_creature_types: Set[CreatureType] | None = None,
     require_living: bool = True,
     attack_modifiers: AttackModifiers = None,
 ) -> float:
-    if require_living and not candidate.creature_type.is_living:
-        return 0
+    def is_living(c: BaseStatblock) -> bool:
+        return c.creature_type.is_living
 
-    if min_size is not None and candidate.size < min_size:
-        return NO_AFFINITY
-
-    score = 0
-    creature_types = {
-        CreatureType.Monstrosity: HIGH_AFFINITY,
-        CreatureType.Beast: HIGH_AFFINITY,
-    }
-
+    creature_types = {CreatureType.Monstrosity, CreatureType.Beast}
     if additional_creature_types is not None:
-        creature_types.update(additional_creature_types)
+        creature_types |= additional_creature_types
 
-    score += creature_types.get(candidate.creature_type, 0)
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-
-    return score
+    return score(
+        candidate=candidate,
+        require_types=creature_types,
+        require_callback=is_living if require_living else None,
+        attack_modifiers=attack_modifiers,
+        require_size=min_size,
+    )
 
 
 def _as_monstrous(candidate: BaseStatblock, boost_speed: int = 10) -> BaseStatblock:
@@ -64,17 +53,14 @@ def _as_monstrous(candidate: BaseStatblock, boost_speed: int = 10) -> BaseStatbl
     return candidate.copy(**changes)
 
 
-def _score(candidate: BaseStatblock, **args) -> float:
-    score = _score_could_be_monstrous(candidate, **args)
-    return score if score > 0 else NO_AFFINITY
-
-
 class _Constriction(PowerBackport):
     def __init__(self):
         super().__init__(name="Constriction", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, attack_modifiers=[natural.Slam, natural.Tail])
+        return _score_could_be_monstrous(
+            candidate, attack_modifiers=["-", natural.Slam, natural.Tail]
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats)
@@ -97,13 +83,13 @@ class _Swallow(PowerBackport):
         super().__init__(name="Swallow", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(
+        return _score_could_be_monstrous(
             candidate,
             min_size=Size.Large,
-            additional_creature_types={CreatureType.Ooze: HIGH_AFFINITY},
+            additional_creature_types={CreatureType.Ooze},
             attack_modifiers={
-                "*": -1 * MODERATE_AFFINITY,
-                natural.Bite: EXTRA_HIGH_AFFINITY,
+                "-",
+                natural.Bite,
             },
         )
 
@@ -139,7 +125,7 @@ class _Pounce(PowerBackport):
         super().__init__(name="Pounce", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return _score_could_be_monstrous(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats)
@@ -162,8 +148,8 @@ class _Corrosive(PowerBackport):
         return _score_could_be_monstrous(
             candidate,
             attack_modifiers={
-                "*": -1 * HIGH_AFFINITY,
-                natural.Spit: EXTRA_HIGH_AFFINITY,
+                "-",
+                natural.Spit,
             },
         )
 
@@ -191,7 +177,7 @@ class _DevourAlly(PowerBackport):
         super().__init__(name="Devour Ally", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return _score_could_be_monstrous(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats)
@@ -211,7 +197,9 @@ class _LingeringWound(PowerBackport):
         super().__init__(name="Lingering Wound", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, attack_modifiers=[natural.Bite, natural.Claw, natural.Horns])
+        return _score_could_be_monstrous(
+            candidate, attack_modifiers=[natural.Bite, natural.Claw, natural.Horns]
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats)
@@ -234,7 +222,7 @@ class _Rampage(PowerBackport):
         super().__init__(name="Rampage", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return _score_could_be_monstrous(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_monstrous(stats)
@@ -255,21 +243,16 @@ class _PetrifyingGaze(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        creature_types = {
-            CreatureType.Monstrosity: MODERATE_AFFINITY,
-            CreatureType.Celestial: LOW_AFFINITY,
-            CreatureType.Undead: LOW_AFFINITY,
-        }
-
-        score = creature_types.get(candidate.creature_type, 0)
-
-        if candidate.role in {MonsterRole.Ambusher, MonsterRole.Controller}:
-            score += MODERATE_AFFINITY
-
-        if candidate.attack.name == spell.Gaze.attack_name:
-            score += HIGH_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score(
+            candidate=candidate,
+            require_types={
+                CreatureType.Monstrosity,
+                CreatureType.Celestial,
+                CreatureType.Undead,
+            },
+            bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
+            attack_modifiers={"-", spell.Gaze},
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy

@@ -18,38 +18,22 @@ from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def score_storm(candidate: BaseStatblock, min_cr: float | None = None) -> float:
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    if (
-        candidate.secondary_damage_type is not None
-        and candidate.secondary_damage_type != DamageType.Lightning
-    ):
-        return NO_AFFINITY
-
-    creature_types = {
-        CreatureType.Elemental: HIGH_AFFINITY,
-        CreatureType.Giant: HIGH_AFFINITY,
-        CreatureType.Dragon: MODERATE_AFFINITY,
-        CreatureType.Humanoid: MODERATE_AFFINITY,
-    }
-
-    score = creature_types.get(candidate.creature_type, 0)
-
-    if candidate.secondary_damage_type in {DamageType.Lightning, DamageType.Thunder}:
-        score += HIGH_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types={
+            CreatureType.Elemental,
+            CreatureType.Giant,
+            CreatureType.Dragon,
+            CreatureType.Humanoid,
+        },
+        require_damage={DamageType.Lightning, DamageType.Thunder},
+        require_no_other_damage_type=True,
+        require_cr=min_cr,
+    )
 
 
 def as_stormy(stats: BaseStatblock) -> BaseStatblock:

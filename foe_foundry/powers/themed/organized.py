@@ -16,41 +16,22 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
-def _score_could_be_organized(
+def score_could_be_organized(
     candidate: BaseStatblock, requires_intelligence: bool = True
 ) -> float:
-    score = 0
-
-    creature_types = {
-        CreatureType.Humanoid: MODERATE_AFFINITY,
-        CreatureType.Fey: LOW_AFFINITY,
-        CreatureType.Dragon: MODERATE_AFFINITY,
-        CreatureType.Giant: LOW_AFFINITY,
-    }
-    roles = {MonsterRole.Leader: HIGH_AFFINITY}
-
+    creature_types = {c for c in CreatureType if c.could_be_organized}
     if not requires_intelligence:
-        creature_types[CreatureType.Beast] = MODERATE_AFFINITY
-    elif candidate.attributes.INT < 8:
-        return NO_AFFINITY
+        creature_types |= {CreatureType.Beast}
 
-    score += creature_types.get(candidate.creature_type, 0)
-    score += roles.get(candidate.role, 0)
-    return score
-
-
-def _score(candidate: BaseStatblock) -> float:
-    score = _score_could_be_organized(candidate, requires_intelligence=True)
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=creature_types,
+        bonus_roles=MonsterRole.Leader,
+        require_stats=Stats.INT if requires_intelligence else None,
+    )
 
 
 class _Commander(PowerBackport):
@@ -58,7 +39,7 @@ class _Commander(PowerBackport):
         super().__init__(name="Commander", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_could_be_organized(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -81,7 +62,7 @@ class _Fanatic(PowerBackport):
         super().__init__(name="Fanatic", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_could_be_organized(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -105,7 +86,7 @@ class _Inspiring(PowerBackport):
         super().__init__(name="Inspiring", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_could_be_organized(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

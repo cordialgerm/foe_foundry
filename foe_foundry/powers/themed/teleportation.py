@@ -15,35 +15,20 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def _score_has_teleport(candidate: BaseStatblock) -> float:
-    score = 0
-
-    creature_types = {
-        CreatureType.Fey: HIGH_AFFINITY,
-        CreatureType.Fiend: MODERATE_AFFINITY,
-        CreatureType.Aberration: HIGH_AFFINITY,
-    }
-    score += creature_types.get(candidate.creature_type, 0)
-
-    if score == 0:
-        return 0
-
-    roles = {MonsterRole.Ambusher: LOW_AFFINITY, MonsterRole.Controller: HIGH_AFFINITY}
-    score += roles.get(candidate.role, 0)
-
-    if candidate.attack_type.is_spell():
-        score += MODERATE_AFFINITY
-
-    return score
+    return score(
+        candidate=candidate,
+        require_types={
+            CreatureType.Fey,
+            CreatureType.Fiend,
+            CreatureType.Aberration,
+        },
+        bonus_attack_types=AttackType.AllSpell(),
+        bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
+    )
 
 
 class _BendSpace(PowerBackport):

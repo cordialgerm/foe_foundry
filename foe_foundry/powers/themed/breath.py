@@ -14,13 +14,11 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
+
+
+def score_breath(candidate: BaseStatblock) -> float:
+    return score(candidate, require_types=CreatureType.Dragon)
 
 
 class _BreathAttack(PowerBackport):
@@ -30,15 +28,7 @@ class _BreathAttack(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type != CreatureType.Dragon:
-            return NO_AFFINITY
-
-        score = HIGH_AFFINITY
-
-        if candidate.size >= Size.Large:
-            score += HIGH_AFFINITY
-
-        return score
+        return score(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

@@ -11,38 +11,21 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def score_ambusher(candidate: BaseStatblock, speed_boost: bool = False) -> float:
-    if candidate.role != MonsterRole.Ambusher:
-        return NO_AFFINITY
-
-    score = HIGH_AFFINITY
-
-    if candidate.primary_attribute == Stats.DEX:
-        score += LOW_AFFINITY
-
-    if candidate.attributes.has_proficiency_or_expertise(Skills.Deception):
-        score += MODERATE_AFFINITY
-
-    if speed_boost and candidate.speed.walk >= 40:
-        score += MODERATE_AFFINITY
-
-    if score == 0:
-        return NO_AFFINITY
-    else:
-        return score
+    return score(
+        candidate=candidate,
+        require_roles=MonsterRole.Ambusher,
+        bonus_stats=Stats.DEX,
+        bonus_skills=Skills.Stealth,
+        bonus_speed=40,
+    )
 
 
 def as_ambusher(stats: BaseStatblock) -> BaseStatblock:
-    new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
+    new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
     stats = stats.copy(attributes=new_attrs)
     return stats
 

@@ -13,13 +13,17 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
+
+
+def score_bestial(candidate: BaseStatblock, **kwargs) -> float:
+    args: dict = dict(
+        candidate=candidate,
+        require_types=[CreatureType.Monstrosity, CreatureType.Beast, CreatureType.Dragon],
+        bonus_roles=MonsterRole.Bruiser,
+    )
+    args.update(kwargs)
+    return score(**args)
 
 
 class _EarthshakingDemise(PowerBackport):
@@ -29,26 +33,7 @@ class _EarthshakingDemise(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.size < Size.Huge:
-            return NO_AFFINITY
-
-        score = 0
-
-        creature_types = {
-            CreatureType.Giant: EXTRA_HIGH_AFFINITY,
-            CreatureType.Monstrosity: HIGH_AFFINITY,
-            CreatureType.Beast: MODERATE_AFFINITY,
-            CreatureType.Construct: MODERATE_AFFINITY,
-            CreatureType.Elemental: LOW_AFFINITY,
-            CreatureType.Dragon: LOW_AFFINITY,
-        }
-
-        score += creature_types.get(candidate.creature_type, 0)
-
-        if candidate.role in {MonsterRole.Bruiser}:
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_bestial(candidate, bonus_size=Size.Huge)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -69,21 +54,7 @@ class _FeralRetaliation(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        creature_types = {
-            CreatureType.Beast: HIGH_AFFINITY,
-            CreatureType.Monstrosity: HIGH_AFFINITY,
-            CreatureType.Giant: MODERATE_AFFINITY,
-            CreatureType.Dragon: LOW_AFFINITY,
-        }
-
-        score += creature_types.get(candidate.creature_type, 0)
-
-        if candidate.role in {MonsterRole.Bruiser}:
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_bestial(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

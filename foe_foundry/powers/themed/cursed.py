@@ -16,35 +16,17 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def _score_cursed(candidate: BaseStatblock) -> float:
-    score = 0
-
-    creature_types = {
-        CreatureType.Fey: HIGH_AFFINITY,
-        CreatureType.Fiend: HIGH_AFFINITY,
-        CreatureType.Undead: HIGH_AFFINITY,
-    }
-    score += creature_types.get(candidate.creature_type, 0)
-
-    if candidate.secondary_damage_type == DamageType.Necrotic:
-        score += MODERATE_AFFINITY
-
-    if score == 0:
-        return NO_AFFINITY
-
-    if candidate.role in {MonsterRole.Leader, MonsterRole.Controller}:
-        score += MODERATE_AFFINITY
-
-    return score
+    return score(
+        candidate=candidate,
+        bonus_types=[CreatureType.Fey, CreatureType.Fiend, CreatureType.Undead],
+        bonus_damage=DamageType.Necrotic,
+        require_no_other_damage_type=True,
+        bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
+    )
 
 
 def _as_cursed(stats: BaseStatblock) -> BaseStatblock:
@@ -52,44 +34,6 @@ def _as_cursed(stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(secondary_damage_type=DamageType.Necrotic)
 
     return stats
-
-
-class _DevilsSight(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Devil's Sight", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.creature_type == CreatureType.Fiend:
-            score += EXTRA_HIGH_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, List[Feature]]:
-        stats = stats.copy(creature_type=CreatureType.Fiend)
-
-        level = 2 if stats.cr <= 5 else 4
-
-        devils_sight = Feature(
-            name="Devil's Sight",
-            action=ActionType.Feature,
-            description=f"Magical darkness doesn't impede {stats.selfref}'s darkvision, and it can see through Hellish Darkness.",
-        )
-
-        darkness = Feature(
-            name="Hellish Darkness",
-            action=ActionType.BonusAction,
-            recharge=5,
-            description=f"{stats.selfref.capitalize()} causes shadowy black flames to fill a 15-foot radius sphere with obscuring darkness centered at a point within 60 feet that {stats.selfref} can see. \
-                The darkness spreads around corners. Creatures without Devil's Sight can't see through this darkness and nonmagical light can't illuminate it. \
-                If any of this spell's area overlaps with an area of light created by a spell of level {level} or lower, the spell that created the light is dispelled. \
-                Creatures of {stats.selfref}'s choice lose any resistance to fire damage while in the darkness, and immunity to fire damage is instead treated as resistance to fire damage.",
-        )
-
-        return stats, [devils_sight, darkness]
 
 
 class _AuraOfDespair(PowerBackport):
@@ -280,7 +224,6 @@ class _VoidSiphon(PowerBackport):
 AuraOfDespair: Power = _AuraOfDespair()
 BestowCurse: Power = _BestowCurse()
 CursedWound: Power = _CursedWound()
-DevilsSight: Power = _DevilsSight()
 HorriblyDisfigured: Power = _HorriblyDisfigured()
 RayOfEnfeeblement: Power = _RayOfEnfeeblement()
 RejectDivinity: Power = _RejectDivinity()
@@ -290,7 +233,6 @@ CursedPowers: List[Power] = [
     AuraOfDespair,
     BestowCurse,
     CursedWound,
-    DevilsSight,
     HorriblyDisfigured,
     RayOfEnfeeblement,
     RejectDivinity,

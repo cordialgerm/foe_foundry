@@ -33,7 +33,7 @@ class BaseStatblock:
     primary_damage_type: DamageType = DamageType.Bludgeoning
     secondary_damage_type: DamageType | None = None
     difficulty_class_modifier: int = 0
-    recommended_powers_modifier: int = 0
+    recommended_powers_modifier: float = 0
     size: Size = Size.Medium
     creature_type: CreatureType = CreatureType.Humanoid
     languages: List[str] = field(default_factory=list)

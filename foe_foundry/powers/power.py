@@ -3,9 +3,6 @@ from typing import List, Tuple
 
 import numpy as np
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
 from ..features import Feature
 from ..statblocks import BaseStatblock
 from .power_type import PowerType

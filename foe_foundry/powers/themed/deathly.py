@@ -15,35 +15,30 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
-def _score(
+def score_deathly(
     candidate: BaseStatblock, undead_only: bool = False, caster_or_undead_only: bool = False
 ) -> float:
-    score = 0
+    creature_types = (
+        {CreatureType.Undead, CreatureType.Fiend, CreatureType.Humanoid}
+        if not undead_only
+        else {CreatureType.Undead}
+    )
 
-    if undead_only and candidate.creature_type != CreatureType.Undead:
-        return NO_AFFINITY
+    def humanoid_is_necromancer(c: BaseStatblock) -> bool:
+        if c.creature_type == CreatureType.Humanoid:
+            return c.attack_type.is_spell() and c.secondary_damage_type == DamageType.Necrotic
+        else:
+            return True
 
-    if caster_or_undead_only and (
-        not candidate.attack_type.is_spell() or candidate.creature_type != CreatureType.Undead
-    ):
-        return NO_AFFINITY
-
-    creature_types = {CreatureType.Undead: HIGH_AFFINITY, CreatureType.Fiend: MODERATE_AFFINITY}
-    score += creature_types.get(candidate.creature_type, 0)
-
-    if candidate.secondary_damage_type == DamageType.Necrotic:
-        score += HIGH_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=creature_types,
+        require_callback=humanoid_is_necromancer if caster_or_undead_only else None,
+        bonus_damage=DamageType.Necrotic,
+    )
 
 
 class _AuraOfDoom(PowerBackport):
@@ -51,7 +46,7 @@ class _AuraOfDoom(PowerBackport):
         super().__init__(name="Aura of Doom", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, caster_or_undead_only=True)
+        return score_deathly(candidate, caster_or_undead_only=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -74,7 +69,7 @@ class _AuraOfAnnihilation(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, caster_or_undead_only=True)
+        return score_deathly(candidate, caster_or_undead_only=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -102,7 +97,7 @@ class _UndyingMinions(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, caster_or_undead_only=True)
+        return score_deathly(candidate, caster_or_undead_only=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -123,7 +118,7 @@ class _WitheringBlow(PowerBackport):
         super().__init__(name="Withering Blow", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_deathly(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -160,7 +155,7 @@ class _DrainingBlow(PowerBackport):
         super().__init__(name="Draining Blow", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, undead_only=True)
+        return score_deathly(candidate, undead_only=True)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -183,7 +178,7 @@ class _ShadowStride(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, undead_only=False)
+        return score_deathly(candidate, undead_only=False)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -202,7 +197,7 @@ class _FleshPuppets(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, undead_only=False, caster_or_undead_only=True)
+        return score_deathly(candidate, undead_only=False, caster_or_undead_only=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         cr = int(ceil(stats.cr / 3))
@@ -225,7 +220,7 @@ class _DevourSoul(PowerBackport):
         super().__init__(name="Devour Soul", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, undead_only=True)
+        return score_deathly(candidate, undead_only=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d6)
@@ -249,7 +244,7 @@ class _DrainStrength(PowerBackport):
         super().__init__(name="Drain Strength", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, undead_only=True)
+        return score_deathly(candidate, undead_only=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy

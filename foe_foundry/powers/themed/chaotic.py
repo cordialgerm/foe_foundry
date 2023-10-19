@@ -15,32 +15,17 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
-def score_chaotic(candidate: BaseStatblock, min_cr: float | None = None) -> float:
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    score = 0
-
-    creature_types = {
-        CreatureType.Fey: HIGH_AFFINITY,
-        CreatureType.Aberration: HIGH_AFFINITY,
-        CreatureType.Monstrosity: LOW_AFFINITY,
-    }
-    score += creature_types.get(candidate.creature_type, NO_AFFINITY)
-
-    if candidate.attack_type.is_spell():
-        score += LOW_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+def score_chaotic(candidate: BaseStatblock, min_cr: float | None = None, **args) -> float:
+    return score(
+        candidate=candidate,
+        require_types=[CreatureType.Fey, CreatureType.Aberration, CreatureType.Monstrosity],
+        bonus_attack_types=AttackType.AllSpell(),
+        require_cr=min_cr,
+        **args,
+    )
 
 
 class _ChaoticSpace(PowerBackport):
@@ -87,10 +72,10 @@ class _EldritchBeacon(PowerBackport):
             return None
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = score_chaotic(candidate, min_cr=5)
-        if score > 0 and self._summon_formula(candidate, np.random.default_rng()) is None:
-            return NO_AFFINITY
-        return score
+        def can_summon(c: BaseStatblock) -> bool:
+            return self._summon_formula(c, np.random.default_rng()) is not None
+
+        return score_chaotic(candidate, min_cr=5, require_callback=can_summon)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         hp = easy_multiple_of_five(stats.cr * 5, min_val=5, max_val=30)

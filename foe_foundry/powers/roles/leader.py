@@ -10,13 +10,17 @@ from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
 from ...utils.rounding import easy_multiple_of_five
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
+
+
+def score_leader(candidate: BaseStatblock) -> float:
+    return score(
+        candidate=candidate,
+        require_roles=MonsterRole.Leader,
+        require_stats=Stats.CHA,
+        bonus_skills=[Skills.Persuasion, Skills.Intimidation, Skills.Insight],
+        bonus_stats=[Stats.CHA, Stats.INT, Stats.WIS],
+    )
 
 
 class _ShoutOrders(PowerBackport):
@@ -24,18 +28,7 @@ class _ShoutOrders(PowerBackport):
         super().__init__(name="Shout Orders", power_type=PowerType.Role, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.role == MonsterRole.Leader:
-            score += HIGH_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Intimidation):
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Persuasion):
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_leader(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -55,21 +48,7 @@ class _Intimidate(PowerBackport):
         super().__init__(name="Intimidate", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.role == MonsterRole.Leader:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.CHA >= 15:
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Intimidation):
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Persuasion):
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_leader(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -95,27 +74,7 @@ class _Encouragement(PowerBackport):
         super().__init__(name="Encouragement", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.role == MonsterRole.Leader:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.WIS >= 15:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.CHA >= 15:
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Insight):
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Medicine):
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Persuasion):
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_leader(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -143,15 +102,7 @@ class _LeadByExample(PowerBackport):
         super().__init__(name="Lead by Example", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.role == MonsterRole.Leader:
-            score += HIGH_AFFINITY
-
-        if candidate.attributes.WIS >= 15:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_leader(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -174,17 +125,7 @@ class _Reposition(PowerBackport):
         super().__init__(name="Reposition", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        # this trait makes a lot of sense for leaders and high-int enemies
-
-        score = 0
-
-        if candidate.role == MonsterRole.Leader:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.INT >= 16:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_leader(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

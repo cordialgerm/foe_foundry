@@ -19,13 +19,7 @@ from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def _score_is_psychic(
@@ -35,23 +29,15 @@ def _score_is_psychic(
     attack_modifiers: AttackModifiers = None,
 ) -> float:
     # this is great for aberrations, psychic focused creatures, and controllers
-    score = 0
 
-    if require_aberration and not candidate.creature_type == CreatureType.Aberration:
-        return NO_AFFINITY
-
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    if candidate.creature_type == CreatureType.Aberration:
-        score += HIGH_AFFINITY
-    if candidate.secondary_damage_type == DamageType.Psychic:
-        score += HIGH_AFFINITY
-    if candidate.role == MonsterRole.Controller:
-        score += MODERATE_AFFINITY
-
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Aberration if require_aberration else None,
+        require_damage=DamageType.Psychic,
+        bonus_roles=MonsterRole.Controller,
+        attack_modifiers=attack_modifiers,
+        require_cr=min_cr,
+    )
 
 
 def as_psychic(stats: BaseStatblock) -> BaseStatblock:
@@ -221,8 +207,8 @@ class _ExtractBrain(PowerBackport):
             require_aberration=True,
             min_cr=7,
             attack_modifiers={
-                "*": NO_AFFINITY,
-                natural_attacks.Tentacle: HIGH_AFFINITY,
+                "-",
+                natural_attacks.Tentacle,
             },
         )
 

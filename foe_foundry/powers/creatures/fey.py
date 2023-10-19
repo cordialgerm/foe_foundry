@@ -16,20 +16,11 @@ from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def score_fey(candidate: BaseStatblock) -> float:
-    if candidate.creature_type != CreatureType.Fey:
-        return NO_AFFINITY
-
-    return HIGH_AFFINITY
+    return score(candidate=candidate, require_types=CreatureType.Fey)
 
 
 def as_psychic_fey(stats: BaseStatblock) -> BaseStatblock:

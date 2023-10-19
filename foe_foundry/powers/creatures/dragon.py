@@ -16,38 +16,28 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
+from ..attack_modifiers import AttackModifiers
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
 from ..themed.breath import BreathAttack
+from ..utils import score
 
 
-def _score_dragon(
+def score_dragon(
     candidate: BaseStatblock,
     high_cr_boost: bool = False,
     attack_modifiers: AttackModifiers = None,
     require_secondary_damage_type: bool = False,
 ) -> float:
-    if candidate.creature_type != CreatureType.Dragon:
-        return NO_AFFINITY
+    def has_secondary_damage_type(b: BaseStatblock) -> bool:
+        return not require_secondary_damage_type or b.secondary_damage_type is not None
 
-    if require_secondary_damage_type and not candidate.secondary_damage_type:
-        return NO_AFFINITY
-
-    score = HIGH_AFFINITY
-
-    if high_cr_boost:
-        score += MODERATE_AFFINITY
-
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-
-    return score
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Dragon,
+        require_callback=has_secondary_damage_type,
+        bonus_cr=7 if high_cr_boost else None,
+        attack_modifiers=attack_modifiers,
+    )
 
 
 class _DragonsGaze(PowerBackport):
@@ -55,7 +45,7 @@ class _DragonsGaze(PowerBackport):
         super().__init__(name="Dragon's Gaze", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate)
+        return score_dragon(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
@@ -80,7 +70,7 @@ class _DraconicRetaliation(PowerBackport):
         super().__init__(name="Draconic Retaliation", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate, high_cr_boost=True)
+        return score_dragon(candidate, high_cr_boost=True)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -110,7 +100,7 @@ class _TailSwipe(PowerBackport):
         super().__init__(name="Tail Swipe", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate, attack_modifiers=natural_attacks.Tail)
+        return score_dragon(candidate, attack_modifiers=natural_attacks.Tail)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         tail_attack = stats.attack.scale(
@@ -138,7 +128,7 @@ class _WingBuffet(PowerBackport):
         super().__init__(name="Tail Swipe", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate, high_cr_boost=True)
+        return score_dragon(candidate, high_cr_boost=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = stats.copy(speed=stats.speed.grant_flying())
@@ -161,7 +151,7 @@ class _DragonsGreed(PowerBackport):
         super().__init__(name="Dragon's Greed", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate)
+        return score_dragon(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -183,7 +173,7 @@ class _DraconicMinions(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate)
+        return score_dragon(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         desired_summon_cr = ceil(stats.cr / 2.5)

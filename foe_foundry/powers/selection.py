@@ -11,7 +11,7 @@ from ..features import ActionType, Feature
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
 from .creatures import CreaturePowers
-from .power import Power
+from .power import MEDIUM_POWER, Power, PowerType
 from .roles import RolePowers
 from .scores import EXTRA_HIGH_AFFINITY
 from .themed import ThemedPowers
@@ -29,7 +29,7 @@ class SelectionTargets:
     reaction_max: int = 2
 
     recharge_target: int = 1
-    recharge_max: int = 2
+    recharge_max: int = 1
 
     attack_modifier_target: int = 1
     attack_modifier_max: int = 1
@@ -151,11 +151,11 @@ class PowerSelection:
         )
         below_targets = np.array(
             [
-                self.selected_bonus_actions > target.bonus_action_target,
-                self.selected_reactions > target.reaction_target,
-                self.selected_recharges > target.recharge_target,
-                self.selected_attack_modifiers > target.attack_modifier_target,
-                self.selected_limited_uses > target.limited_uses_target,
+                self.selected_bonus_actions < target.bonus_action_target,
+                self.selected_reactions < target.reaction_target,
+                self.selected_recharges < target.recharge_target,
+                self.selected_attack_modifiers < target.attack_modifier_target,
+                self.selected_limited_uses < target.limited_uses_target,
             ]
         )
 
@@ -166,20 +166,20 @@ class PowerSelection:
 
         # lose a little for being above target score
         # lose a lot for being above max score
-        penalties += 1.25 * score_over_target
-        penalties += 2 * score_over_max
+        penalties += 1.5 * score_over_target
+        penalties += 3 * score_over_max
 
         # lose points if you're above max in various categories
-        penalties += 0.25 * bonus_over_max
-        penalties += 0.25 * reactions_over_max
-        penalties += 0.5 * recharges_over_max
-        penalties += 0.5 * limited_uses_over_max
-        penalties += 1.0 * attack_modifiers_over_max  # high bc statblock becomes confusing
+        penalties += 1 * bonus_over_max
+        penalties += 1 * reactions_over_max
+        penalties += 2 * recharges_over_max
+        penalties += 2 * limited_uses_over_max
+        penalties += 3 * attack_modifiers_over_max  # high bc statblock becomes confusing
 
         # lose points if you're above target in some areas and below target in others
         if np.any(above_targets) and np.any(below_targets):
             c = np.sum(above_targets) + np.sum(below_targets)
-            penalties += 0.1 * c
+            penalties += 0.25 * c
 
         return SelectionScore(
             score=score_raw - penalties,
@@ -204,6 +204,7 @@ class _PowerSelector:
         self.selection = PowerSelection()
         self.targets = targets
         self.rng = rng
+        self.iteration = 0
         self.stats = stats.copy()
 
     @property
@@ -221,6 +222,7 @@ class _PowerSelector:
                 break
             self.selection = self.selection.with_new_power(self.stats, power)
             self.stats = power.modify_stats(self.stats)
+            self.iteration += 1
 
     def filter(self, power: Power) -> bool:
         score = self.score
@@ -249,6 +251,27 @@ class _PowerSelector:
 
         return True
 
+    def score_multiplier(self, power: Power) -> float:
+        multiplier = 1.0
+
+        # if the creature doesn't have any high power abilities then make high power more attractive
+        if power.power_level > MEDIUM_POWER and not any(
+            p for p in self.selection.selected_powers if p.power_level > MEDIUM_POWER
+        ):
+            multiplier += 0.5
+
+        if power.power_type == PowerType.Creature and not any(
+            p for p in self.selection.selected_powers if p.power_type == PowerType.Creature
+        ):
+            multiplier += 0.5
+
+        if power.power_type == PowerType.Role and not any(
+            p for p in self.selection.selected_powers if p.power_type == PowerType.Role
+        ):
+            multiplier += 0.5
+
+        return multiplier
+
     def select_next(self) -> Power | None:
         candidates, scores = self.get_candidates()
 
@@ -276,8 +299,11 @@ class _PowerSelector:
             if score <= 0 or not self.filter(power):
                 continue
 
+            multiplier = self.score_multiplier(power)
+            modifier_score = score * multiplier
+
             candidates.append(power)
-            scores.append(score)
+            scores.append(modifier_score)
 
         scores = np.array(scores, dtype=float)
         return candidates, scores
@@ -295,7 +321,7 @@ def select_powers(
     all_powers: List[Set[Power]] = []
 
     # try a couple of times and choose the best result
-    for _ in range(3):
+    for _ in range(5):
         selector = _PowerSelector(targets=targets, rng=rng(), stats=stats)
         selector.select_powers()
         all_results.append(selector.stats)
@@ -306,8 +332,8 @@ def select_powers(
     new_stats = all_results[indx]
     powers = all_powers[indx]
 
-    features = []
+    features = set()
     for power in powers:
-        features.extend(power.generate_features(new_stats))
+        features.update(power.generate_features(new_stats))
 
-    return new_stats, features
+    return new_stats, list(features)

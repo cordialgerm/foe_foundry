@@ -13,13 +13,7 @@ from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import summoning
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def _score_beast(
@@ -27,16 +21,12 @@ def _score_beast(
     primary_attribute: Stats | None = None,
     attack_modifiers: AttackModifiers = None,
 ) -> float:
-    if candidate.creature_type != CreatureType.Beast:
-        return NO_AFFINITY
-
-    score = MODERATE_AFFINITY
-
-    if primary_attribute is not None and candidate.primary_attribute == primary_attribute:
-        score += MODERATE_AFFINITY
-
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Beast,
+        bonus_stats=primary_attribute,
+        attack_modifiers=attack_modifiers,
+    )
 
 
 class _HitAndRun(PowerBackport):
@@ -87,7 +77,7 @@ class _Gore(PowerBackport):
         super().__init__(name="Gore", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate, Stats.STR, attack_modifiers=natural_attacks.Horns)
+        return _score_beast(candidate, Stats.STR, attack_modifiers=["-", natural_attacks.Horns])
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -117,10 +107,10 @@ class _Web(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         attacks = {
-            "*": NO_AFFINITY,
-            natural_attacks.Bite: HIGH_AFFINITY,
-            natural_attacks.Claw: HIGH_AFFINITY,
-            natural_attacks.Stinger: HIGH_AFFINITY,
+            "-",
+            natural_attacks.Bite,
+            natural_attacks.Claw,
+            natural_attacks.Stinger,
         }
         return _score_beast(candidate, Stats.STR, attacks)
 

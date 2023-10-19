@@ -16,35 +16,35 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def score_temporal(candidate: BaseStatblock, min_cr: float | None = None) -> float:
-    score = 0
-
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    if candidate.creature_type in {
+    creature_types = {
         CreatureType.Fey,
         CreatureType.Fiend,
         CreatureType.Aberration,
-    }:
-        score += HIGH_AFFINITY
+        CreatureType.Humanoid,
+    }
 
-    if candidate.attack_type.is_spell():
-        score += MODERATE_AFFINITY
+    def is_magical_human(c: BaseStatblock) -> bool:
+        if c.creature_type == CreatureType.Humanoid:
+            return c.attack_type.is_spell()
+        else:
+            return c.creature_type in creature_types
 
-    if candidate.role in {MonsterRole.Controller}:
-        score += MODERATE_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types={
+            CreatureType.Fey,
+            CreatureType.Fiend,
+            CreatureType.Aberration,
+            CreatureType.Humanoid,
+        },
+        require_callback=is_magical_human,
+        require_cr=min_cr,
+        bonus_roles=MonsterRole.Controller,
+    )
 
 
 class _CurseOfTheAges(PowerBackport):

@@ -1,2 +1,2 @@
-from .power import Power, PowerType  # noqa
+from .power import HIGH_POWER, LOW_POWER, MEDIUM_POWER, Power, PowerType  # noqa
 from .selection import select_powers  # noqa

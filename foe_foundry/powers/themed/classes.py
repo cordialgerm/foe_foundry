@@ -594,10 +594,6 @@ class _Samurai(PowerBackport):
 
         return stats, Feature.merge(feature1, feature2)
 
-    # fighting spirit - bonus action to gain temp HP and advantage on attack rolls
-    # strength before death - "Not Dead Yet" ability but renamed
-    pass
-
 
 class _Monk(PowerBackport):
     def __init__(self):

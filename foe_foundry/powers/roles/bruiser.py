@@ -15,32 +15,24 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
+from ..attack_modifiers import AttackModifiers
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def _score_bruiser(
     candidate: BaseStatblock,
     size_boost: bool = False,
     attack_modifiers: AttackModifiers = None,
+    **kwargs,
 ) -> float:
-    score = 0
-
-    if candidate.role == MonsterRole.Bruiser:
-        score += MODERATE_AFFINITY
-
-    if size_boost and candidate.size >= Size.Large:
-        score += MODERATE_AFFINITY
-
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score
+    return score(
+        candidate=candidate,
+        require_roles=MonsterRole.Bruiser,
+        bonus_size=Size.Large if size_boost else None,
+        attack_modifiers=attack_modifiers,
+        **kwargs,
+    )
 
 
 class _Sentinel(PowerBackport):
@@ -74,13 +66,7 @@ class _Grappler(PowerBackport):
         super().__init__(name="Grappler", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_bruiser(
-            candidate,
-            attack_modifiers={
-                natural_attacks.Slam: EXTRA_HIGH_AFFINITY,
-                "*": NO_AFFINITY,
-            },
-        )
+        return _score_bruiser(candidate, attack_modifiers={"-", natural_attacks.Slam})
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -111,11 +97,7 @@ class _Cleaver(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_bruiser(
-            candidate,
-            attack_modifiers={
-                weapon.Greataxe: EXTRA_HIGH_AFFINITY,
-                natural_attacks.Claw: HIGH_AFFINITY,
-            },
+            candidate, attack_modifiers={"-", weapon.Greataxe, natural_attacks.Claw}
         )
 
     def apply(
@@ -142,11 +124,8 @@ class _StunningBlow(PowerBackport):
     def score(self, candidate: BaseStatblock) -> float:
         return _score_bruiser(
             candidate,
-            attack_modifiers={
-                weapon.Maul: EXTRA_HIGH_AFFINITY,
-                weapon.MaceAndShield: HIGH_AFFINITY,
-                natural_attacks.Slam: HIGH_AFFINITY,
-            },
+            require_damage=DamageType.Bludgeoning,
+            attack_modifiers={weapon.Maul, weapon.MaceAndShield, natural_attacks.Slam},
         )
 
     def apply(
@@ -173,10 +152,11 @@ class _Disembowler(PowerBackport):
     def score(self, candidate: BaseStatblock) -> float:
         return _score_bruiser(
             candidate,
+            require_damage=DamageType.Piercing,
             attack_modifiers={
-                natural_attacks.Bite: HIGH_AFFINITY,
-                natural_attacks.Horns: MODERATE_AFFINITY,
-                weapon.Daggers: HIGH_AFFINITY,
+                natural_attacks.Bite,
+                natural_attacks.Horns,
+                weapon.Daggers,
             },
         )
 

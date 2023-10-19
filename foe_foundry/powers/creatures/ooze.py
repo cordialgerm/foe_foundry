@@ -7,7 +7,7 @@ from numpy.random import Generator
 from ...attack_template import natural
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
@@ -15,22 +15,16 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def score_ooze(candidate: BaseStatblock, attack_modifiers: AttackModifiers = None) -> float:
-    if candidate.creature_type != CreatureType.Ooze:
-        return NO_AFFINITY
-
-    score = HIGH_AFFINITY
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Ooze,
+        bonus_damage=DamageType.Acid,
+        attack_modifiers=attack_modifiers,
+    )
 
 
 def malleable_form(stats: BaseStatblock) -> Feature:
@@ -74,9 +68,7 @@ class _ElongatedLimbs(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_melee():
-            return NO_AFFINITY
-        return score_ooze(candidate, attack_modifiers=natural.Slam)
+        return score_ooze(candidate, attack_modifiers=["-", natural.Slam])
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

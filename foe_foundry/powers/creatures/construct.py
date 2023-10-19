@@ -17,32 +17,22 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
+from ..attack_modifiers import AttackModifiers
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
-def _score(
+def score_construct(
     candidate: BaseStatblock,
     attack_modifiers: AttackModifiers = None,
     min_cr: float | None = None,
 ) -> float:
-    if candidate.creature_type != CreatureType.Construct:
-        return NO_AFFINITY
-
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    score = HIGH_AFFINITY
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Construct,
+        require_cr=min_cr,
+        attack_modifiers=attack_modifiers,
+    )
 
 
 class _ConstructedGuardian(PowerBackport):
@@ -52,7 +42,7 @@ class _ConstructedGuardian(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_construct(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -73,7 +63,7 @@ class _ArmorPlating(PowerBackport):
         super().__init__(name="Armor Plating", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_construct(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = stats.apply_monster_dials(MonsterDials(ac_modifier=2))
@@ -97,7 +87,7 @@ class _ImmutableForm(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_construct(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -114,7 +104,7 @@ class _BoundProtector(PowerBackport):
         super().__init__(name="Bound Protector", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_construct(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -132,7 +122,7 @@ class _ExplosiveCore(PowerBackport):
         super().__init__(name="Explosive Core", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_construct(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dmg_type = stats.secondary_damage_type or DamageType.Fire
@@ -154,13 +144,7 @@ class _Smother(PowerBackport):
         super().__init__(name="Smother", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(
-            candidate,
-            attack_modifiers={
-                natural_attacks.Slam: HIGH_AFFINITY,
-                "*": NO_AFFINITY,
-            },
-        )
+        return score_construct(candidate, attack_modifiers={"-", natural_attacks.Slam})
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -196,7 +180,7 @@ class _Retrieval(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(
+        return score_construct(
             candidate,
             attack_modifiers=["-", natural_attacks.Slam],
             min_cr=7,
@@ -230,7 +214,7 @@ class _SpellStoring(PowerBackport):
         super().__init__(name="Spell Storing", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_construct(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class

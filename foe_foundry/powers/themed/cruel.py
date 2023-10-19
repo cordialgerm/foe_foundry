@@ -13,36 +13,20 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
 
 
 def score_cruel(
     candidate: BaseStatblock, require_melee: bool = False, min_cr: float | None = None
 ) -> float:
-    # this power makes a lot of sense for cruel enemies
-    # cruel factors: Fiend, Monstrosity, Intimidation proficiency, Intimidation expertise, high charisma, Ambusher, Bruiser, Leader
-    if require_melee and not candidate.attack_type.is_melee():
-        return NO_AFFINITY
-
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    score = 0
-    if candidate.creature_type in {CreatureType.Fiend, CreatureType.Monstrosity}:
-        score += HIGH_AFFINITY
-    if candidate.attributes.has_proficiency_or_expertise(Skills.Intimidation):
-        score += HIGH_AFFINITY
-    if candidate.attributes.CHA >= 15:
-        score += MODERATE_AFFINITY
-    if candidate.role in {MonsterRole.Ambusher, MonsterRole.Bruiser, MonsterRole.Leader}:
-        score += MODERATE_AFFINITY
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_attack_types=AttackType.AllMelee() if require_melee else None,
+        bonus_types=[CreatureType.Fiend, CreatureType.Monstrosity, CreatureType.Humanoid],
+        bonus_skills=Skills.Intimidation,
+        bonus_stats=Stats.CHA,
+        bonus_roles={MonsterRole.Ambusher, MonsterRole.Bruiser, MonsterRole.Leader},
+    )
 
 
 class _DelightsInSuffering(PowerBackport):

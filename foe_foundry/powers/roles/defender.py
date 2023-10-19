@@ -2,23 +2,26 @@ from typing import List, Tuple
 
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
 from ...creature_types import CreatureType
+from ...damage import AttackType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..utils import score
+
+
+def score_defender(candidate: BaseStatblock, **kwargs) -> float:
+    return score(
+        candidate=candidate,
+        require_roles=MonsterRole.Defender,
+        bonus_skills=Skills.Intimidation,
+        bonus_shield=True,
+        bonus_attack_types=AttackType.AllMelee(),
+        **kwargs,
+    )
 
 
 class _Defender(PowerBackport):
@@ -27,28 +30,11 @@ class _Defender(PowerBackport):
     def __init__(self):
         super().__init__(name="Defender", power_type=PowerType.Role, power_level=LOW_POWER)
 
-    def _is_minion(self, candidate: BaseStatblock) -> bool:
-        return candidate.cr <= 2 and candidate.role not in {
-            MonsterRole.Ambusher,
-            MonsterRole.Controller,
-            MonsterRole.Leader,
-            MonsterRole.Skirmisher,
-        }
-
     def score(self, candidate: BaseStatblock) -> float:
-        # this power makes a lot of sense for minions and defensive creatures
-        # for now, I will interpret minions as low CR creatures
-        score = 0
-        if self._is_minion(candidate):
-            score += MODERATE_AFFINITY
-
-        if candidate.role == MonsterRole.Defender:
-            score += EXTRA_HIGH_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_defender(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        name = "Cannon Fodder" if self._is_minion(stats) else "Defender"
+        name = "Defender"
 
         feature = Feature(
             name=name,
@@ -63,24 +49,7 @@ class _StickWithMe(PowerBackport):
         super().__init__(name="Stick with Me!", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_melee():
-            return NO_AFFINITY
-
-        score = 0
-
-        if candidate.role == MonsterRole.Defender:
-            score += HIGH_AFFINITY
-
-        if candidate.uses_shield:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Intimidation):
-            score += LOW_AFFINITY
-
-        if candidate.creature_type.could_wear_armor:
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_defender(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -98,21 +67,7 @@ class _Blocker(PowerBackport):
         super().__init__(name="Blocker", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.role == MonsterRole.Defender:
-            score += MODERATE_AFFINITY
-
-        if candidate.primary_attribute == Stats.STR:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Athletics):
-            score += MODERATE_AFFINITY
-
-        if candidate.size >= Size.Large:
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_defender(candidate, bonus_size=Size.Large)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Athletics)
@@ -132,22 +87,15 @@ class _SpellReflection(PowerBackport):
         super().__init__(name="Blocker", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-        if candidate.role == MonsterRole.Default:
-            score += HIGH_AFFINITY
-
-        if candidate.creature_type in {
-            CreatureType.Aberration,
-            CreatureType.Dragon,
-            CreatureType.Fiend,
-            CreatureType.Monstrosity,
-        }:
-            score += MODERATE_AFFINITY
-
-        if candidate.attack_type.is_spell():
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_defender(
+            candidate,
+            require_types={
+                CreatureType.Aberration,
+                CreatureType.Dragon,
+                CreatureType.Fiend,
+                CreatureType.Monstrosity,
+            },
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
