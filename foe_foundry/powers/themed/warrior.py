@@ -13,9 +13,8 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import AttackNames, score
 from .organized import score_could_be_organized
 
 
@@ -24,7 +23,7 @@ def _score_could_be_melee_fighter(
     requires_training: bool,
     large_size_boost: bool = False,
     requires_weapon: bool = False,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
 ) -> float:
     attack_types = AttackType.AllMelee() if not requires_weapon else AttackType.MeleeWeapon
 
@@ -40,7 +39,7 @@ def _score_could_be_melee_fighter(
         bonus_types={CreatureType.Beast, CreatureType.Monstrosity}
         if not requires_training
         else None,
-        attack_modifiers=attack_modifiers,
+        attack_names=attack_names,
     )
 
 
@@ -104,7 +103,7 @@ class _CleavingStrike(PowerBackport):
             candidate,
             requires_training=False,
             large_size_boost=True,
-            attack_modifiers={
+            attack_names={
                 "-",
                 natural.Claw,
                 weapon.Greataxe,
@@ -209,7 +208,7 @@ class _PommelStrike(PowerBackport):
             candidate,
             requires_training=True,
             requires_weapon=True,
-            attack_modifiers=[
+            attack_names=[
                 weapon.SwordAndShield,
                 weapon.SpearAndShield,
             ],
@@ -244,7 +243,7 @@ class _PushingAttack(PowerBackport):
             requires_training=False,
             requires_weapon=False,
             large_size_boost=True,
-            attack_modifiers={
+            attack_names={
                 "-",
                 weapon.Maul,
                 natural.Claw,

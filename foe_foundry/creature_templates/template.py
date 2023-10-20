@@ -27,6 +27,11 @@ class CreatureTypeTemplate(ABC):
     def customize_role(self, stats: BaseStatblock, rng: np.random.Generator) -> BaseStatblock:
         return stats.copy()
 
+    def customize_attack_template(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> BaseStatblock:
+        return stats.copy()
+
     def select_attack_template(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[AttackTemplate, BaseStatblock]:
@@ -70,6 +75,7 @@ class CreatureTypeTemplate(ABC):
         attack_template, new_stats = self.select_attack_template(new_stats, rng)
         if attack_template is not None:
             new_stats = attack_template.alter_base_stats(new_stats, rng)
+            new_stats = self.customize_attack_template(new_stats, rng)
 
         # initialize attack to help later power selection
         new_stats = attack_template.initialize_attack(new_stats)

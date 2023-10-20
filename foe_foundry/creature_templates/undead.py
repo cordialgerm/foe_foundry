@@ -4,7 +4,9 @@ from typing import Tuple
 import numpy as np
 from numpy.random import Generator
 
-from ..ac_templates import Unarmored
+from foe_foundry.statblocks import BaseStatblock
+
+from ..ac_templates import HeavyArmor, MediumArmor, Unarmored, UnholyArmor
 from ..attack_template import AttackTemplate, natural, spell, weapon
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
@@ -57,7 +59,27 @@ class _UndeadTemplate(CreatureTypeTemplate):
             )
             stats = stats.copy(secondary_damage_type=secondary_damage_type)
 
+        # Spellcasters use INT
+        if attack.attack_type and attack.attack_type.is_spell():
+            stats = stats.scale({Stats.INT: Stats.Primary(), Stats.STR: Stats.Scale(7, 1 / 2)})
+
         return attack, stats
+
+    def customize_attack_template(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
+        # Undead Spellcasters use Unholy armor
+        if stats.attack_type.is_spell():
+            stats = stats.add_ac_template(UnholyArmor)
+
+        # Undead Defenders and Leaders who fight with weapons use Medium or Heavy armor - "Death Knight"
+        if (
+            stats.role in {MonsterRole.Defender, MonsterRole.Leader}
+            and stats.attack_type == AttackType.MeleeWeapon
+        ):
+            stats = stats.add_ac_template(MediumArmor)
+            if stats.cr >= 7:
+                stats = stats.add_ac_template(HeavyArmor)
+
+        return stats
 
     def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         # Plants have extremely low mental stats and low Dexterity scores

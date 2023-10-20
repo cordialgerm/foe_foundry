@@ -16,7 +16,7 @@ from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def _score_is_tricky_creature(candidate: BaseStatblock) -> float:

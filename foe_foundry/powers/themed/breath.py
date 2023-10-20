@@ -14,11 +14,16 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_breath(candidate: BaseStatblock) -> float:
-    return score(candidate, require_types=CreatureType.Dragon)
+    return 2.5 * score(
+        candidate=candidate,
+        require_types=CreatureType.Dragon,
+        require_cr=3,
+        require_damage=DamageType.Elemental(),
+    )
 
 
 class _BreathAttack(PowerBackport):
@@ -28,7 +33,7 @@ class _BreathAttack(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(candidate)
+        return score_breath(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

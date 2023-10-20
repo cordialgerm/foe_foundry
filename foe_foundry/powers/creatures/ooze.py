@@ -13,17 +13,16 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import AttackNames, score
 
 
-def score_ooze(candidate: BaseStatblock, attack_modifiers: AttackModifiers = None) -> float:
+def score_ooze(candidate: BaseStatblock, attack_names: AttackNames = None) -> float:
     return score(
         candidate=candidate,
         require_types=CreatureType.Ooze,
         bonus_damage=DamageType.Acid,
-        attack_modifiers=attack_modifiers,
+        attack_names=attack_names,
     )
 
 
@@ -68,7 +67,7 @@ class _ElongatedLimbs(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_ooze(candidate, attack_modifiers=["-", natural.Slam])
+        return score_ooze(candidate, attack_names=["-", natural.Slam])
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

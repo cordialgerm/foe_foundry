@@ -15,7 +15,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_flyer(candidate: BaseStatblock, require_flying: bool = False) -> float:

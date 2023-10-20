@@ -15,7 +15,7 @@ from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def _score_celestial(candidate: BaseStatblock, min_cr: float | None = None) -> float:

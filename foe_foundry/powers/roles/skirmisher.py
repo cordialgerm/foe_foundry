@@ -15,13 +15,11 @@ from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_skirmisher(
     candidate: BaseStatblock,
-    require_skirmisher: bool = True,
-    dex_based: bool = True,
     requires_tactics: bool = True,
 ) -> float:
     def ideal_skirmisher(c: BaseStatblock) -> bool:
@@ -33,9 +31,9 @@ def score_skirmisher(
 
     return score(
         candidate=candidate,
-        require_roles=MonsterRole.Skirmisher if require_skirmisher else None,
+        require_roles=MonsterRole.Skirmisher,
         bonus_roles=MonsterRole.Skirmisher,
-        bonus_stats=Stats.DEX if dex_based else Stats.STR,
+        bonus_stats=Stats.DEX,
         bonus_speed=40,
         bonus_callback=ideal_skirmisher,
         require_callback=is_organized if requires_tactics else None,
@@ -47,7 +45,7 @@ class _Nimble(PowerBackport):
         super().__init__(name="Nimble", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_skirmisher(candidate, require_skirmisher=False)
+        return score_skirmisher(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -56,7 +54,7 @@ class _Nimble(PowerBackport):
         stats = stats.copy(speed=new_speed)
         feature = Feature(
             name="Nimble",
-            description=f"{stats.roleref} ignores difficult terrain",
+            description=f"{stats.roleref.capitalize()} ignores difficult terrain",
             action=ActionType.Feature,
         )
 
@@ -68,7 +66,7 @@ class _CarefulSteps(PowerBackport):
         super().__init__(name="Careful Steps", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_skirmisher(candidate, require_skirmisher=False)
+        return score_skirmisher(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -81,39 +79,12 @@ class _CarefulSteps(PowerBackport):
         return stats, feature
 
 
-class _KnockBack(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Knock Back", power_type=PowerType.Role)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_skirmisher(candidate, require_skirmisher=False, dex_based=False)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        description = f"On a hit, the target is pushed up to 5 feet away from {stats.selfref}."
-        if stats.cr >= 4:
-            dc = stats.difficulty_class
-            description += (
-                f" The target must also succeed on a DC {dc} Strength save or be knocked prone."
-            )
-
-        feature = Feature(
-            name="Knock Back",
-            description=description,
-            action=ActionType.Feature,
-            hidden=True,
-            modifies_attack=True,
-        )
-        return stats, feature
-
-
 class _Skirmish(PowerBackport):
     def __init__(self):
         super().__init__(name="Skirmish", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_skirmisher(candidate, require_skirmisher=True, requires_tactics=True)
+        return score_skirmisher(candidate, requires_tactics=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -139,7 +110,7 @@ class _HarrassingRetreat(PowerBackport):
         super().__init__(name="Harassing Retreat", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_skirmisher(candidate, require_skirmisher=True, requires_tactics=True)
+        return score_skirmisher(candidate, requires_tactics=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -162,7 +133,7 @@ class _Speedy(PowerBackport):
         super().__init__(name="Speedy", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_skirmisher(candidate, require_skirmisher=False)
+        return score_skirmisher(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -187,7 +158,6 @@ class _Speedy(PowerBackport):
 
 CarefulSteps: Power = _CarefulSteps()
 HarassingRetreat: Power = _HarrassingRetreat()
-KnockBack: Power = _KnockBack()
 Nimble: Power = _Nimble()
 Skirmish: Power = _Skirmish()
 Speedy: Power = _Speedy()
@@ -196,7 +166,6 @@ Speedy: Power = _Speedy()
 SkirmisherPowers: List[Power] = [
     CarefulSteps,
     HarassingRetreat,
-    KnockBack,
     Nimble,
     Skirmish,
     Speedy,

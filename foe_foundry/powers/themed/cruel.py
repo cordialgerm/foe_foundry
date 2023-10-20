@@ -13,7 +13,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_cruel(

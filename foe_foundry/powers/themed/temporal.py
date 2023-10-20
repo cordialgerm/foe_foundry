@@ -16,7 +16,7 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_temporal(candidate: BaseStatblock, min_cr: float | None = None) -> float:
@@ -29,7 +29,7 @@ def score_temporal(candidate: BaseStatblock, min_cr: float | None = None) -> flo
 
     def is_magical_human(c: BaseStatblock) -> bool:
         if c.creature_type == CreatureType.Humanoid:
-            return c.attack_type.is_spell()
+            return c.attack_type.is_spell() and c.secondary_damage_type != DamageType.Radiant
         else:
             return c.creature_type in creature_types
 
@@ -54,7 +54,7 @@ class _CurseOfTheAges(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_temporal(candidate, min_cr=7)
+        return score_temporal(candidate=candidate, min_cr=7)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class

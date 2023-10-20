@@ -12,7 +12,7 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def _score_fearsome(

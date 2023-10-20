@@ -13,7 +13,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import Power, PowerBackport, PowerType
 from ..power_type import PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_charming(candidate: BaseStatblock) -> float:
@@ -23,7 +23,7 @@ def score_charming(candidate: BaseStatblock) -> float:
         require_stats=Stats.CHA,
         bonus_roles=[MonsterRole.Controller, MonsterRole.Leader],
         bonus_skills=[Skills.Deception, Skills.Persuasion],
-        attack_modifiers=spell.Gaze,
+        attack_names=spell.Gaze,
         bonus_damage=DamageType.Psychic,
         require_no_other_damage_type=True,
     )

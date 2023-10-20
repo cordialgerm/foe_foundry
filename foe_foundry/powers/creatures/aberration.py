@@ -14,21 +14,20 @@ from ...features import ActionType, Feature
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers
 from ..power import HIGH_POWER, Power, PowerType
-from ..utils import score
+from ..scoring import AttackNames, score
 
 
 def score_aberration(
     candidate: BaseStatblock,
     min_size: Size | None = None,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
 ) -> float:
     return score(
         candidate=candidate,
         require_types=CreatureType.Aberration,
         require_size=min_size,
-        attack_modifiers=attack_modifiers,
+        attack_names=attack_names,
     )
 
 
@@ -44,7 +43,7 @@ class _GraspingTentacles(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score_aberration(
             candidate,
-            attack_modifiers={"-", natural.Tentacle},
+            attack_names={"-", natural.Tentacle},
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -64,7 +63,7 @@ class _DominatingGaze(Power):
         super().__init__(name="Dominating Gaze", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_aberration(candidate, attack_modifiers=spell.Gaze)
+        return score_aberration(candidate, attack_names=spell.Gaze)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -107,7 +106,7 @@ class _TentacleSlam(Power):
     def score(self, candidate: BaseStatblock) -> float:
         return score_aberration(
             candidate,
-            attack_modifiers={"-", natural.Tentacle},
+            attack_names={"-", natural.Tentacle},
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -135,7 +134,7 @@ class _AntimagicGullet(Power):
         return score_aberration(
             candidate,
             min_size=Size.Large,
-            attack_modifiers={"-", natural.Bite},
+            attack_names={"-", natural.Bite},
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:

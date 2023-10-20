@@ -11,21 +11,22 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import summoning
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import AttackNames, score
 
 
 def _score_beast(
     candidate: BaseStatblock,
     primary_attribute: Stats | None = None,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
+    **args,
 ) -> float:
     return score(
         candidate=candidate,
         require_types=CreatureType.Beast,
         bonus_stats=primary_attribute,
-        attack_modifiers=attack_modifiers,
+        attack_names=attack_names,
+        **args,
     )
 
 
@@ -77,7 +78,7 @@ class _Gore(PowerBackport):
         super().__init__(name="Gore", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate, Stats.STR, attack_modifiers=["-", natural_attacks.Horns])
+        return _score_beast(candidate, Stats.STR, attack_names=["-", natural_attacks.Horns])
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -152,11 +153,9 @@ class _Packlord(PowerBackport):
         super().__init__(name="Packlord", power_type=PowerType.Creature, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate)
+        return _score_beast(candidate, require_cr=3)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        desired_summon_cr = ceil(stats.cr / 3.5)
-
         if stats.speed.fly:
             options = summoning.FlyingBeasts
         elif stats.speed.swim:
@@ -165,7 +164,7 @@ class _Packlord(PowerBackport):
             options = summoning.LandBeasts
 
         _, _, description = summoning.determine_summon_formula(
-            options, desired_summon_cr, rng, max_quantity=10
+            options, stats.cr / 3.5, rng, max_quantity=10
         )
 
         feature = Feature(
@@ -193,7 +192,7 @@ class _WildInstinct(PowerBackport):
             name="Wild Instinct",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"{stats.selfref.capitalize} identifies the creature with the lowest Strength score that it can see. It then Dashes towards that creature.",
+            description=f"{stats.selfref.capitalize()} identifies the creature with the lowest Strength score that it can see. It then Dashes towards that creature.",
         )
         return stats, feature
 

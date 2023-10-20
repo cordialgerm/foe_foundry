@@ -14,22 +14,17 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import choose_enum, easy_multiple_of_five
 from ..power import Power, PowerBackport, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
-from ..utils import score
+from ..scoring import score
 
 
-def score_clever(candidate: BaseStatblock) -> float:
+def score_clever(candidate: BaseStatblock, **args) -> float:
     return score(
         candidate=candidate,
         require_types=CreatureType.all_but(CreatureType.Beast),
         require_stats=[Stats.INT, Stats.WIS, Stats.CHA],
         bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
+        stat_threshold=16,
+        **args,
     )
 
 
@@ -88,17 +83,7 @@ class _MarkTheTarget(PowerBackport):
         super().__init__(name="Mark the Target", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        # this power makes a lot of sense for leaders, artillery, controllers, high intelligence foes, and ranged foes
-        score = LOW_AFFINITY
-        if candidate.attributes.INT >= 14:
-            score += MODERATE_AFFINITY
-        if candidate.attack_type in {AttackType.RangedSpell, AttackType.RangedWeapon}:
-            score += MODERATE_AFFINITY
-        if candidate.role in {MonsterRole.Artillery, MonsterRole.Controller}:
-            score += MODERATE_AFFINITY
-        if candidate.role in {MonsterRole.Leader}:
-            score += HIGH_AFFINITY
-        return score
+        return score_clever(candidate, require_attack_types=AttackType.AllRanged())
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(

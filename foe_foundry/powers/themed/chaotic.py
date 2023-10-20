@@ -15,7 +15,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_chaotic(candidate: BaseStatblock, min_cr: float | None = None, **args) -> float:
@@ -89,7 +89,8 @@ class _EldritchBeacon(PowerBackport):
             uses=1,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} magically creates an Eldritch Beacon (hp {hp}, AC {ac}) at an unoccupied space it can see within 30 feet. \
-                {description} After {duration.description} rounds the beacon is destroyed.",
+                Each turn that the beacon is active, on initiative count 0, {description} \
+                After {duration.description} rounds the beacon is destroyed.",
         )
 
         return stats, feature

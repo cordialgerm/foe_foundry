@@ -11,7 +11,7 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_artillery(candidate: BaseStatblock, speed_bonus: bool = False) -> float:
@@ -19,7 +19,7 @@ def score_artillery(candidate: BaseStatblock, speed_bonus: bool = False) -> floa
         candidate=candidate,
         require_attack_types=AttackType.AllRanged(),
         require_stats=Stats.DEX,
-        bonus_roles=MonsterRole.Artillery,
+        require_roles=MonsterRole.Artillery,
         bonus_stats=[Stats.DEX, Stats.INT],
         bonus_skills=Skills.Perception,
         bonus_speed=40 if speed_bonus else None,

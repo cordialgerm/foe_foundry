@@ -11,7 +11,7 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_ambusher(candidate: BaseStatblock, speed_boost: bool = False) -> float:

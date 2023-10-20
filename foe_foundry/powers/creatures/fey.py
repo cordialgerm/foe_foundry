@@ -16,11 +16,11 @@ from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
-def score_fey(candidate: BaseStatblock) -> float:
-    return score(candidate=candidate, require_types=CreatureType.Fey)
+def score_fey(candidate: BaseStatblock, **args) -> float:
+    return score(candidate=candidate, require_types=CreatureType.Fey, **args)
 
 
 def as_psychic_fey(stats: BaseStatblock) -> BaseStatblock:
@@ -114,7 +114,7 @@ class _FaeCounterspell(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_fey(candidate)
+        return score_fey(candidate, require_stats=Stats.INT)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = as_psychic_fey(stats)

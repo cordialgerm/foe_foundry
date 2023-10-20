@@ -14,7 +14,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_aberrant(candidate: BaseStatblock, **kwargs) -> float:
@@ -113,7 +113,7 @@ class _Incubation(PowerBackport):
     def score(self, candidate: BaseStatblock) -> float:
         return score_aberrant(
             candidate,
-            attack_modifiers=["-", natural.Claw],
+            attack_names=["-", natural.Claw],
             require_types=CreatureType.Aberration,
         )
 

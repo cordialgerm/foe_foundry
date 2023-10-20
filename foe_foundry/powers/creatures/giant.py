@@ -14,20 +14,20 @@ from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import AttackNames, score
 
 
 def score_giant(
     candidate: BaseStatblock,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
     min_cr: float | None = None,
 ) -> float:
     return score(
         candidate=candidate,
+        require_types=CreatureType.Giant,
         require_cr=min_cr,
-        attack_modifiers=attack_modifiers,
+        attack_names=attack_names,
         bonus_size=Size.Huge,
     )
 
@@ -65,7 +65,7 @@ class _ShoveAllies(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate, attack_modifiers=natural.Slam)
+        return score_giant(candidate, attack_names=natural.Slam)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -281,7 +281,7 @@ class _Earthshaker(PowerBackport):
         super().__init__(name="Earthshaker", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate, attack_modifiers=natural.Slam)
+        return score_giant(candidate, attack_names=natural.Slam)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

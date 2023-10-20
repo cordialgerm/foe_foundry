@@ -11,7 +11,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 class _Evasion(PowerBackport):
@@ -20,7 +20,7 @@ class _Evasion(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             require_stats=Stats.DEX,
             stat_threshold=14,
             bonus_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],

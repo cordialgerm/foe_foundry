@@ -15,7 +15,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_holy(candidate: BaseStatblock, **kwargs) -> float:
@@ -37,7 +37,7 @@ class _DivineSmite(PowerBackport):
     def score(self, candidate: BaseStatblock) -> float:
         return score_holy(
             candidate,
-            attack_modifiers=[weapon.MaceAndShield, weapon.Greatsword, weapon.SwordAndShield],
+            attack_names=[weapon.MaceAndShield, weapon.Greatsword, weapon.SwordAndShield],
         )
 
     def apply(

@@ -10,7 +10,7 @@ from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_defender(candidate: BaseStatblock, **kwargs) -> float:

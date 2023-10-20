@@ -17,16 +17,15 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import AttackNames, score
 
 
 def _score_is_psychic(
     candidate: BaseStatblock,
     require_aberration: bool = False,
     min_cr: float | None = None,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
 ) -> float:
     # this is great for aberrations, psychic focused creatures, and controllers
 
@@ -35,7 +34,8 @@ def _score_is_psychic(
         require_types=CreatureType.Aberration if require_aberration else None,
         require_damage=DamageType.Psychic,
         bonus_roles=MonsterRole.Controller,
-        attack_modifiers=attack_modifiers,
+        require_no_other_damage_type=True,
+        attack_names=attack_names,
         require_cr=min_cr,
     )
 
@@ -206,7 +206,7 @@ class _ExtractBrain(PowerBackport):
             candidate,
             require_aberration=True,
             min_cr=7,
-            attack_modifiers={
+            attack_names={
                 "-",
                 natural_attacks.Tentacle,
             },

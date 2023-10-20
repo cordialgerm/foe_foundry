@@ -17,21 +17,20 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import AttackNames, score
 
 
 def score_construct(
     candidate: BaseStatblock,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
     min_cr: float | None = None,
 ) -> float:
     return score(
         candidate=candidate,
         require_types=CreatureType.Construct,
         require_cr=min_cr,
-        attack_modifiers=attack_modifiers,
+        attack_names=attack_names,
     )
 
 
@@ -144,7 +143,7 @@ class _Smother(PowerBackport):
         super().__init__(name="Smother", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_construct(candidate, attack_modifiers={"-", natural_attacks.Slam})
+        return score_construct(candidate, attack_names={"-", natural_attacks.Slam})
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -182,7 +181,7 @@ class _Retrieval(PowerBackport):
     def score(self, candidate: BaseStatblock) -> float:
         return score_construct(
             candidate,
-            attack_modifiers=["-", natural_attacks.Slam],
+            attack_names=["-", natural_attacks.Slam],
             min_cr=7,
         )
 

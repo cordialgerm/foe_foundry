@@ -13,7 +13,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_bestial(candidate: BaseStatblock, **kwargs) -> float:
@@ -33,7 +33,10 @@ class _EarthshakingDemise(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_bestial(candidate, bonus_size=Size.Huge)
+        def is_ground_based(c: BaseStatblock) -> bool:
+            return not c.speed.fly
+
+        return score_bestial(candidate, bonus_size=Size.Huge, require_callback=is_ground_based)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

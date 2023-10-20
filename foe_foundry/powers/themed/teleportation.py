@@ -15,7 +15,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def _score_has_teleport(candidate: BaseStatblock) -> float:

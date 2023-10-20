@@ -13,7 +13,6 @@ from ..statblocks import BaseStatblock
 from .creatures import CreaturePowers
 from .power import MEDIUM_POWER, Power, PowerType
 from .roles import RolePowers
-from .scores import EXTRA_HIGH_AFFINITY
 from .themed import ThemedPowers
 
 Filter: TypeAlias = Callable[[Feature], bool]
@@ -276,12 +275,8 @@ class _PowerSelector:
         candidates, scores = self.get_candidates()
 
         weights = np.copy(scores)
-        weights[weights > EXTRA_HIGH_AFFINITY] = EXTRA_HIGH_AFFINITY
-
         if (weights == 0).all():
             return None
-
-        weights = weights / np.median(weights)
 
         p = np.exp(weights)
         p = p / np.sum(p)

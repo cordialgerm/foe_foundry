@@ -15,7 +15,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def _score_is_domineering(candidate: BaseStatblock, min_cr: int = 3) -> float:
@@ -29,10 +29,19 @@ def _score_is_domineering(candidate: BaseStatblock, min_cr: int = 3) -> float:
     required_creatures = magical_creatures | {CreatureType.Humanoid}
 
     def is_magical(c: BaseStatblock) -> bool:
-        return c.creature_type in magical_creatures or candidate.attack_type.is_spell()
+        if c.creature_type in magical_creatures:
+            return True
+
+        # non-holy humanoids
+        if candidate.attack_type.is_spell() and candidate.secondary_damage_type not in {
+            DamageType.Radiant
+        }:
+            return True
+
+        return False
 
     return score(
-        candidate,
+        candidate=candidate,
         require_types=required_creatures,
         require_callback=is_magical,
         bonus_damage=DamageType.Psychic,

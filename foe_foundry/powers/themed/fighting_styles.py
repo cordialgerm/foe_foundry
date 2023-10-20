@@ -13,9 +13,8 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import AttackNames, score
 
 
 class _Dueling(PowerBackport):
@@ -24,9 +23,9 @@ class _Dueling(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Leader],
-            attack_modifiers=[
+            attack_names=[
                 "-",
                 weapon.MaceAndShield,
                 weapon.SpearAndShield,
@@ -53,10 +52,10 @@ class _ExpertBrawler(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             require_types=[CreatureType.Humanoid, CreatureType.Giant],
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Controller],
-            attack_modifiers={"-", natural.Slam},
+            attack_names={"-", natural.Slam},
         )
 
     def apply(
@@ -88,8 +87,8 @@ class _Interception(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
-            attack_modifiers={
+            candidate=candidate,
+            attack_names={
                 "-",
                 weapon.SwordAndShield,
                 weapon.SpearAndShield,
@@ -121,7 +120,7 @@ class _BaitAndSwitch(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             require_types=CreatureType.Humanoid,
             require_roles=[
                 MonsterRole.Defender,
@@ -151,8 +150,8 @@ class _ThrownWeaponExpert(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
-            attack_modifiers={
+            candidate=candidate,
+            attack_names={
                 "-",
                 weapon.JavelinAndShield,
                 weapon.Daggers,
@@ -180,7 +179,7 @@ class _ArmorMaster(PowerBackport):
         def is_heavily_armored(b: BaseStatblock) -> bool:
             return any([c for c in b.ac_templates if c.is_heavily_armored])
 
-        return score(candidate, require_callback=is_heavily_armored)
+        return score(candidate=candidate, require_callback=is_heavily_armored)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -198,7 +197,7 @@ class _ShieldMaster(PowerBackport):
         super().__init__(name="Shield Master", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(candidate, require_shield=True)
+        return score(candidate=candidate, require_shield=True)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -217,7 +216,7 @@ class _PolearmMaster(PowerBackport):
         super().__init__(name="Polearm Master", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(candidate, attack_modifiers={"-", weapon.Polearm})
+        return score(candidate=candidate, attack_names={"-", weapon.Polearm})
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -238,8 +237,8 @@ class _GreatWeaponFighting(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
-            attack_modifiers={
+            candidate=candidate,
+            attack_names={
                 "-",
                 weapon.Polearm,
                 weapon.Greataxe,
@@ -271,8 +270,8 @@ class _TwoWeaponFighting(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
-            attack_modifiers={
+            candidate=candidate,
+            attack_names={
                 "-",
                 weapon.Daggers,
                 weapon.Shortswords,
@@ -312,9 +311,9 @@ class _Sharpshooter(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             require_roles=MonsterRole.Artillery,
-            attack_modifiers={
+            attack_names={
                 "-",
                 weapon.Longbow,
                 weapon.Shortbow,

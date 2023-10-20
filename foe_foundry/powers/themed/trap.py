@@ -19,7 +19,7 @@ from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import choose_enum, easy_multiple_of_five
 from ..attack import flavorful_damage_types
 from ..power import Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_trap(candidate: BaseStatblock) -> float:

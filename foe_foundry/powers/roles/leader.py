@@ -10,7 +10,7 @@ from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
 from ...utils.rounding import easy_multiple_of_five
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_leader(candidate: BaseStatblock) -> float:

@@ -15,7 +15,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_deathly(
@@ -37,7 +37,8 @@ def score_deathly(
         candidate=candidate,
         require_types=creature_types,
         require_callback=humanoid_is_necromancer if caster_or_undead_only else None,
-        bonus_damage=DamageType.Necrotic,
+        require_damage=DamageType.Necrotic,
+        require_no_other_damage_type=True,
     )
 
 

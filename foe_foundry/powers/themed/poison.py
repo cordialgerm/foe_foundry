@@ -15,7 +15,7 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def _score(candidate: BaseStatblock) -> float:
@@ -24,7 +24,7 @@ def _score(candidate: BaseStatblock) -> float:
         require_types=[CreatureType.Plant, CreatureType.Aberration, CreatureType.Monstrosity],
         bonus_damage=DamageType.Poison,
         require_no_other_damage_type=True,
-        attack_modifiers=[
+        attack_names=[
             "-",
             weapon.Daggers,
             weapon.Shortswords,

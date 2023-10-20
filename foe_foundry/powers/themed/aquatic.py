@@ -15,7 +15,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_aquatic(candidate: BaseStatblock) -> float:

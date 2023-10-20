@@ -12,7 +12,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_earthy(candidate: BaseStatblock, **args) -> float:
@@ -28,7 +28,7 @@ class _Burrower(PowerBackport):
         super().__init__(name="Burrower", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(candidate)
+        return score_earthy(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_speed = stats.speed.copy(burrow=stats.speed.walk)
@@ -51,7 +51,9 @@ class _Climber(PowerBackport):
         super().__init__(name="Climber", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(candidate, bonus_roles=[MonsterRole.Artillery, MonsterRole.Ambusher])
+        return score_earthy(
+            candidate, bonus_roles=[MonsterRole.Artillery, MonsterRole.Ambusher]
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_speed = stats.speed.copy(climb=stats.speed.walk)

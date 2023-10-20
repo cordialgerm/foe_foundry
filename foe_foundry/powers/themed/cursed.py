@@ -7,7 +7,7 @@ from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, Weakened
+from ...damage import AttackType, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
@@ -16,13 +16,13 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def _score_cursed(candidate: BaseStatblock) -> float:
     return score(
         candidate=candidate,
-        bonus_types=[CreatureType.Fey, CreatureType.Fiend, CreatureType.Undead],
+        require_types=[CreatureType.Fey, CreatureType.Fiend, CreatureType.Undead],
         bonus_damage=DamageType.Necrotic,
         require_no_other_damage_type=True,
         bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
@@ -91,7 +91,7 @@ class _HorriblyDisfigured(PowerBackport):
             uses=1,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} attempts to magically spread its curse to a target that it can see within 60 feet. \
-                The target must make DC {dc} Charisma save. On a failure, the target takes {dmg.description} psychic damage and is cursed with magical deformities. \
+                The target must make a DC {dc} Charisma save. On a failure, the target takes {dmg.description} psychic damage and is cursed with magical deformities. \
                 While deformed, the creature's speed is halved and it has disadvantage on ability checks, saving throws, and attacks. \
                 The cursed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on a success.",
         )
@@ -183,7 +183,7 @@ class _RayOfEnfeeblement(PowerBackport):
         stats = _as_cursed(stats)
         dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d6)
         dc = stats.difficulty_class
-        weakened = Weakened(save_end_of_turn=False)
+        weakened = conditions.Weakened(save_end_of_turn=False)
         feature = Feature(
             name="Ray of Enfeeblement",
             action=ActionType.Action,
@@ -198,24 +198,20 @@ class _RayOfEnfeeblement(PowerBackport):
 
 class _VoidSiphon(PowerBackport):
     def __init__(self):
-        super().__init__(name="Void Siphon", power_type=PowerType.Theme, power_level=HIGH_POWER)
+        super().__init__(name="Void Siphon", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_cursed(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_cursed(stats)
-
-        duration = DieFormula.from_expression("1d4 + 1")
-        distance = easy_multiple_of_five(stats.cr * 5, min_val=10, max_val=60)
+        fatigue = conditions.Fatigue()
+        distance = 10 if stats.cr <= 7 else 20
 
         feature = Feature(
             name="Void Siphon",
-            action=ActionType.Action,
-            uses=1,
-            replaces_multiattack=2,
-            description=f"For the next {duration.description} turns, any magical healing and radiant or necrotic damage from a hostile source within {distance} feet of {stats.selfref} is negated as it is siphoned by the cursed power of {stats.selfref}. \
-                Prevent any such healing or radiant or nectoric damage. Instead, {stats.selfref} gains that many temporary hitpoints.",
+            action=ActionType.Feature,
+            description=f"When a creature within {distance} feet of {stats.roleref} receives magical healing, it also gains a level of {fatigue}",
         )
 
         return stats, feature

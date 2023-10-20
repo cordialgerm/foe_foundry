@@ -16,16 +16,15 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
-from ..attack_modifiers import AttackModifiers
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..scoring import AttackNames, score
 from ..themed.breath import BreathAttack
-from ..utils import score
 
 
 def score_dragon(
     candidate: BaseStatblock,
     high_cr_boost: bool = False,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
     require_secondary_damage_type: bool = False,
 ) -> float:
     def has_secondary_damage_type(b: BaseStatblock) -> bool:
@@ -35,8 +34,9 @@ def score_dragon(
         candidate=candidate,
         require_types=CreatureType.Dragon,
         require_callback=has_secondary_damage_type,
+        require_cr=3,
         bonus_cr=7 if high_cr_boost else None,
-        attack_modifiers=attack_modifiers,
+        attack_names=attack_names,
     )
 
 
@@ -100,7 +100,7 @@ class _TailSwipe(PowerBackport):
         super().__init__(name="Tail Swipe", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_dragon(candidate, attack_modifiers=natural_attacks.Tail)
+        return score_dragon(candidate, attack_names=natural_attacks.Tail)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         tail_attack = stats.attack.scale(
@@ -172,20 +172,37 @@ class _DraconicMinions(PowerBackport):
             name="Draconic Minions", power_type=PowerType.Creature, power_level=HIGH_POWER
         )
 
+    def check_minions(self, stats: BaseStatblock, rng: np.random.Generator) -> str | None:
+        desired_summon_cr = stats.cr / 2.5
+        damage_type = stats.secondary_damage_type
+        if damage_type is None:
+            return None
+
+        try:
+            _, _, description = summoning.determine_summon_formula(
+                summoner=[stats.creature_type, damage_type],
+                summon_cr_target=desired_summon_cr,
+                rng=rng,
+            )
+            return description
+        except ValueError:
+            return None
+
     def score(self, candidate: BaseStatblock) -> float:
+        minions = self.check_minions(candidate, np.random.default_rng())
+        if minions is None:
+            return -1
+
         return score_dragon(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        desired_summon_cr = ceil(stats.cr / 2.5)
         damage_type = stats.secondary_damage_type
         if damage_type is None:
             raise ValueError("dragon does not have a secondary damage type")
 
-        _, _, description = summoning.determine_summon_formula(
-            summoner=[stats.creature_type, damage_type],
-            summon_cr_target=desired_summon_cr,
-            rng=rng,
-        )
+        description = self.check_minions(stats, rng)
+        if description is None:
+            raise ValueError("Dragon has no minions available")
 
         feature = Feature(
             name="Draconic Minions",

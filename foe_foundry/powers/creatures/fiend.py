@@ -16,17 +16,21 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import AttackNames, score
 
 
 def score_fiend(
     candidate: BaseStatblock,
     min_cr: float | None = None,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
 ) -> float:
-    return score(candidate=candidate, require_cr=min_cr, attack_modifiers=attack_modifiers)
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Fiend,
+        require_cr=min_cr,
+        attack_names=attack_names,
+    )
 
 
 class _EmpoweredByDeath(PowerBackport):
@@ -138,7 +142,7 @@ class _FiendishBite(PowerBackport):
         super().__init__(name="Fiendish Bite", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(candidate, attack_modifiers=natural_attacks.Bite)
+        return score_fiend(candidate, attack_names=natural_attacks.Bite)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

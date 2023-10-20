@@ -21,9 +21,8 @@ from ...utils.summoning import determine_summon_formula
 from ..creatures import giant
 from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..roles import artillery, bruiser
-from ..scores import NO_AFFINITY
+from ..scoring import score
 from ..themed import fast, holy, organized, reckless, tough
-from ..utils import score
 
 
 class _DeathKnight(PowerBackport):
@@ -34,19 +33,20 @@ class _DeathKnight(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             require_no_creature_class=True,
             require_types=[CreatureType.Undead, CreatureType.Humanoid],
             require_roles=[MonsterRole.Leader, MonsterRole.Default, MonsterRole.Bruiser],
             require_stats=[Stats.CHA, Stats.STR],
             bonus_damage=DamageType.Necrotic,
-            attack_modifiers=[
+            attack_names=[
                 "-",  # default is NO_AFFINITY - that's what - means
                 weapon.SwordAndShield,
                 weapon.MaceAndShield,
                 weapon.Greataxe,
                 weapon.Greatsword,
             ],
+            require_cr=5,
         )
 
     def apply(
@@ -93,20 +93,16 @@ class _EldritchKnight(PowerBackport):
         self.elements = {DamageType.Fire, DamageType.Lightning, DamageType.Cold}
 
     def score(self, candidate: BaseStatblock) -> float:
-        if (
-            candidate.secondary_damage_type is not None
-            and candidate.secondary_damage_type not in self.elements
-        ):
-            return NO_AFFINITY
-
         return score(
-            candidate,
+            candidate=candidate,
             require_no_creature_class=True,
             require_types=[CreatureType.Humanoid, CreatureType.Humanoid],
             bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Bruiser],
             require_stats=[Stats.INT, Stats.STR],
             bonus_damage=self.elements,
-            attack_modifiers=[
+            require_no_other_damage_type=True,
+            require_cr=3,
+            attack_names=[
                 "-",
                 weapon.SwordAndShield,
                 weapon.Greataxe,
@@ -162,7 +158,8 @@ class _Artificer(PowerBackport):
             bonus_roles=[MonsterRole.Defender, MonsterRole.Leader],
             require_types=CreatureType.Humanoid,
             require_stats=Stats.INT,
-            attack_modifiers=["-", weapon.MaceAndShield, weapon.SwordAndShield, natural.Slam],
+            require_cr=3,
+            attack_names=["-", weapon.MaceAndShield, weapon.SwordAndShield, natural.Slam],
         )
 
     def apply(
@@ -200,7 +197,8 @@ class _Barbarian(PowerBackport):
             require_roles=MonsterRole.Bruiser,
             require_types=[CreatureType.Humanoid, CreatureType.Giant],
             require_stats=Stats.STR,
-            attack_modifiers=[
+            require_cr=3,
+            attack_names=[
                 "-",
                 weapon.Greataxe,
                 weapon.Greatsword,
@@ -240,7 +238,8 @@ class _Bard(PowerBackport):
             require_types=[CreatureType.Humanoid, CreatureType.Fey],
             bonus_roles=[MonsterRole.Controller, MonsterRole.Leader],
             require_stats=Stats.CHA,
-            attack_modifiers=[
+            require_cr=3,
+            attack_names=[
                 "-",
                 weapon.RapierAndShield,
                 weapon.Shortswords,
@@ -289,7 +288,8 @@ class _WarPriest(PowerBackport):
             require_types=CreatureType.Humanoid,
             require_stats=Stats.WIS,
             bonus_roles=[MonsterRole.Leader, MonsterRole.Defender],
-            attack_modifiers=[
+            require_cr=3,
+            attack_names=[
                 "-",
                 weapon.MaceAndShield,
                 weapon.SwordAndShield,
@@ -330,7 +330,8 @@ class _Ranger(PowerBackport):
             require_types=[CreatureType.Humanoid, CreatureType.Fey],
             require_stats=Stats.DEX,
             require_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher, MonsterRole.Artillery],
-            attack_modifiers=[
+            require_cr=3,
+            attack_names=[
                 "-",
                 weapon.Longbow,
                 weapon.Shortbow,
@@ -375,7 +376,8 @@ class _ArcaneArcher(PowerBackport):
             require_types=[CreatureType.Humanoid, CreatureType.Fey],
             require_stats=Stats.DEX,
             bonus_roles=[MonsterRole.Artillery, MonsterRole.Ambusher, MonsterRole.Skirmisher],
-            attack_modifiers=["-", weapon.Longbow, weapon.Shortbow, weapon.Crossbow],
+            require_cr=3,
+            attack_names=["-", weapon.Longbow, weapon.Shortbow, weapon.Crossbow],
         )
 
     def apply(
@@ -431,7 +433,8 @@ class _PsiWarrior(PowerBackport):
             require_stats=Stats.INT,
             bonus_stats=Stats.WIS,
             bonus_damage=DamageType.Psychic,
-            attack_modifiers=[
+            require_cr=3,
+            attack_names=[
                 "-",
                 weapon.RapierAndShield,
                 weapon.SwordAndShield,
@@ -484,7 +487,8 @@ class _Cavalier(PowerBackport):
             require_no_creature_class=True,
             require_types=CreatureType.Humanoid,
             bonus_roles=MonsterRole.Leader,
-            attack_modifiers=["-", weapon.Greatsword, weapon.Greataxe],
+            require_cr=3,
+            attack_names=["-", weapon.Greatsword, weapon.Greataxe],
         )
 
     def apply(
@@ -528,7 +532,8 @@ class _RuneKnight(PowerBackport):
             require_types=[CreatureType.Humanoid, CreatureType.Giant],
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Leader],
             require_stats=Stats.STR,
-            attack_modifiers=[
+            require_cr=3,
+            attack_names=[
                 "-",
                 weapon.Greataxe,
                 weapon.Greatsword,
@@ -567,12 +572,13 @@ class _Samurai(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             require_no_creature_class=True,
             require_types=CreatureType.Humanoid,
             require_roles=[MonsterRole.Leader, MonsterRole.Defender],
             require_stats=Stats.STR,
-            attack_modifiers=["-", weapon.Shortswords, weapon.SwordAndShield],
+            require_cr=3,
+            attack_names=["-", weapon.Shortswords, weapon.SwordAndShield],
         )
 
     def apply(
@@ -606,7 +612,8 @@ class _Monk(PowerBackport):
             require_stats=Stats.DEX,
             require_types=CreatureType.Humanoid,
             require_no_creature_class=True,
-            attack_modifiers=["-", natural.Slam],
+            require_cr=3,
+            attack_names=["-", natural.Slam],
         )
 
     def apply(
@@ -632,12 +639,13 @@ class _Paladin(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             require_no_creature_class=True,
             require_types=CreatureType.Humanoid,
             bonus_damage=DamageType.Radiant,
             require_stats=Stats.STR,
-            attack_modifiers=[
+            require_cr=3,
+            attack_names=[
                 "-",
                 weapon.SwordAndShield,
                 weapon.MaceAndShield,
@@ -667,12 +675,13 @@ class _Cleric(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             require_no_creature_class=True,
             require_types=CreatureType.Humanoid,
             bonus_damage=DamageType.Radiant,
             require_stats=Stats.WIS,
-            attack_modifiers=[
+            require_cr=3,
+            attack_names=[
                 "-",
                 weapon.SwordAndShield,
                 weapon.MaceAndShield,
@@ -712,11 +721,12 @@ class _Druid(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             require_no_creature_class=True,
             require_types=[CreatureType.Humanoid, CreatureType.Fey, CreatureType.Giant],
             bonus_roles=[MonsterRole.Leader, MonsterRole.Controller, MonsterRole.Skirmisher],
-            attack_modifiers=[
+            require_cr=3,
+            attack_names=[
                 "-",
                 weapon.Staff,
                 weapon.Longbow,

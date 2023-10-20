@@ -11,23 +11,22 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
-from ..attack_modifiers import AttackModifiers
 from ..power import Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import AttackNames, score
 
 
 def score_attack(
     candidate: BaseStatblock,
     target_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
     target_damage_type: DamageType | Set[DamageType] | List[DamageType] | None = None,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
     size_boost: bool = False,
 ) -> float:
     return score(
         candidate=candidate,
         bonus_roles=target_roles,
         bonus_damage=target_damage_type,
-        attack_modifiers=attack_modifiers,
+        attack_names=attack_names,
         bonus_size=Size.Large if size_boost else None,
     )
 
@@ -41,7 +40,7 @@ class _PoisoningAttack(PowerBackport):
             candidate,
             target_damage_type=DamageType.Poison,
             target_roles=[MonsterRole.Controller, MonsterRole.Ambusher],
-            attack_modifiers=[
+            attack_names=[
                 "-",
                 natural.Claw,
                 natural.Bite,
@@ -73,7 +72,7 @@ class _BleedingAttack(PowerBackport):
         return score_attack(
             candidate,
             target_roles={MonsterRole.Bruiser, MonsterRole.Skirmisher},
-            attack_modifiers=[
+            attack_names=[
                 "-",
                 natural.Claw,
                 natural.Bite,
@@ -130,7 +129,7 @@ class _DazingAttack(PowerBackport):
             candidate,
             target_roles={MonsterRole.Controller},
             target_damage_type=DamageType.Bludgeoning,
-            attack_modifiers=["-", natural.Tail, natural.Slam, weapon.Staff],
+            attack_names=["-", natural.Tail, natural.Slam, weapon.Staff],
         )
 
     def apply(
@@ -157,7 +156,7 @@ class _BurningAttack(PowerBackport):
             candidate,
             target_roles={MonsterRole.Artillery},
             target_damage_type={DamageType.Fire, DamageType.Radiant, DamageType.Acid},
-            attack_modifiers=["-", spell.HolyBolt, spell.Firebolt, spell.Acidsplash],
+            attack_names=["-", spell.HolyBolt, spell.Firebolt, spell.Acidsplash],
         )
 
     def apply(
@@ -186,7 +185,7 @@ class _ProneAttack(PowerBackport):
             candidate,
             target_roles={MonsterRole.Bruiser},
             size_boost=True,
-            attack_modifiers=["-", weapon.Staff, weapon.Maul, natural.Slam, natural.Stomp],
+            attack_names=["-", weapon.Staff, weapon.Maul, natural.Slam, natural.Stomp],
         )
 
     def apply(
@@ -217,7 +216,7 @@ class _SlowingAttack(PowerBackport):
             candidate,
             target_roles={MonsterRole.Controller, MonsterRole.Artillery},
             target_damage_type=DamageType.Cold,
-            attack_modifiers=[
+            attack_names=[
                 "-",
                 natural.Stomp,
                 spell.Frostbolt,
@@ -248,7 +247,7 @@ class _PushingAttack(PowerBackport):
             candidate,
             target_roles={MonsterRole.Bruiser},
             size_boost=True,
-            attack_modifiers=[
+            attack_names=[
                 "-",
                 natural.Tail,
                 spell.ArcaneBurst,
@@ -288,7 +287,7 @@ class _GrapplingAttack(PowerBackport):
             candidate,
             target_roles={MonsterRole.Bruiser, MonsterRole.Controller},
             size_boost=True,
-            attack_modifiers=["-", natural.Slam, natural.Tentacle, weapon.Whip],
+            attack_names=["-", natural.Slam, natural.Tentacle, weapon.Whip],
         )
 
     def apply(
@@ -323,7 +322,7 @@ class _BlindingAttack(PowerBackport):
             candidate,
             target_roles={MonsterRole.Controller, MonsterRole.Leader},
             target_damage_type={DamageType.Radiant, DamageType.Acid},
-            attack_modifiers=[
+            attack_names=[
                 "-",
                 natural.Spit,
                 spell.HolyBolt,
@@ -355,7 +354,7 @@ class _FearingAttack(PowerBackport):
             candidate,
             target_roles={MonsterRole.Controller, MonsterRole.Leader, MonsterRole.Ambusher},
             target_damage_type={DamageType.Psychic, DamageType.Necrotic},
-            attack_modifiers=["-", spell.Gaze, spell.Deathbolt],
+            attack_names=["-", spell.Gaze, spell.Deathbolt],
         )
 
     def apply(
@@ -380,7 +379,7 @@ class _CharmingAttack(PowerBackport):
             candidate,
             target_roles={MonsterRole.Controller, MonsterRole.Leader},
             target_damage_type=DamageType.Psychic,
-            attack_modifiers=["-", spell.Gaze],
+            attack_names=["-", spell.Gaze],
         )
 
     def apply(
@@ -406,7 +405,7 @@ class _FreezingAttack(PowerBackport):
             candidate,
             target_roles={MonsterRole.Controller},
             target_damage_type=DamageType.Cold,
-            attack_modifiers=["-", spell.Frostbolt],
+            attack_names=["-", spell.Frostbolt],
         )
 
     def apply(
@@ -435,7 +434,7 @@ class _ShockingAttack(PowerBackport):
             candidate,
             target_roles={MonsterRole.Controller, MonsterRole.Ambusher},
             target_damage_type={DamageType.Lightning, DamageType.Thunder},
-            attack_modifiers=["-", spell.Shock, spell.Thundrousblast],
+            attack_names=["-", spell.Shock, spell.Thundrousblast],
         )
 
     def apply(
@@ -461,7 +460,7 @@ class _GrazingAttack(PowerBackport):
         return score_attack(
             candidate,
             target_roles={MonsterRole.Skirmisher},
-            attack_modifiers=[
+            attack_names=[
                 "-",
                 weapon.Greatsword,
                 weapon.Polearm,
@@ -494,7 +493,7 @@ class _CleavingAttack(PowerBackport):
             candidate,
             size_boost=True,
             target_roles={MonsterRole.Bruiser},
-            attack_modifiers=["-", weapon.Greataxe, natural.Tail],
+            attack_names=["-", weapon.Greataxe, natural.Tail],
         )
 
     def apply(
@@ -522,7 +521,7 @@ class _SappingAttack(PowerBackport):
         return score_attack(
             candidate,
             target_roles={MonsterRole.Skirmisher, MonsterRole.Controller},
-            attack_modifiers=[
+            attack_names=[
                 "-",
                 weapon.SpearAndShield,
                 weapon.SwordAndShield,
@@ -553,7 +552,7 @@ class _VexingAttack(PowerBackport):
             candidate,
             size_boost=True,
             target_roles={MonsterRole.Ambusher, MonsterRole.Leader},
-            attack_modifiers=["-", weapon.Shortbow, weapon.Shortswords, weapon.RapierAndShield],
+            attack_names=["-", weapon.Shortbow, weapon.Shortswords, weapon.RapierAndShield],
         )
 
     def apply(
@@ -578,7 +577,7 @@ class _WeakeningAttack(PowerBackport):
             candidate,
             target_damage_type=[DamageType.Necrotic, DamageType.Poison, DamageType.Psychic],
             target_roles=[MonsterRole.Controller, MonsterRole.Artillery],
-            attack_modifiers=[
+            attack_names=[
                 "-",
                 natural.Bite,
                 natural.Stinger,
@@ -611,7 +610,7 @@ class _DisarmingAttack(PowerBackport):
         return score_attack(
             candidate,
             target_roles=[MonsterRole.Controller, MonsterRole.Artillery],
-            attack_modifiers=[
+            attack_names=[
                 "-",
                 weapon.SwordAndShield,
                 weapon.Greataxe,

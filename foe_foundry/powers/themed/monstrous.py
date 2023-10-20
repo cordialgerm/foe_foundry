@@ -15,9 +15,8 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import AttackNames, score
 
 
 def _score_could_be_monstrous(
@@ -25,7 +24,7 @@ def _score_could_be_monstrous(
     min_size: Size | None = None,
     additional_creature_types: Set[CreatureType] | None = None,
     require_living: bool = True,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
 ) -> float:
     def is_living(c: BaseStatblock) -> bool:
         return c.creature_type.is_living
@@ -38,7 +37,7 @@ def _score_could_be_monstrous(
         candidate=candidate,
         require_types=creature_types,
         require_callback=is_living if require_living else None,
-        attack_modifiers=attack_modifiers,
+        attack_names=attack_names,
         require_size=min_size,
     )
 
@@ -59,7 +58,7 @@ class _Constriction(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_could_be_monstrous(
-            candidate, attack_modifiers=["-", natural.Slam, natural.Tail]
+            candidate, attack_names=["-", natural.Slam, natural.Tail]
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
@@ -87,7 +86,7 @@ class _Swallow(PowerBackport):
             candidate,
             min_size=Size.Large,
             additional_creature_types={CreatureType.Ooze},
-            attack_modifiers={
+            attack_names={
                 "-",
                 natural.Bite,
             },
@@ -147,7 +146,7 @@ class _Corrosive(PowerBackport):
     def score(self, candidate: BaseStatblock) -> float:
         return _score_could_be_monstrous(
             candidate,
-            attack_modifiers={
+            attack_names={
                 "-",
                 natural.Spit,
             },
@@ -186,7 +185,7 @@ class _DevourAlly(PowerBackport):
         feature = Feature(
             name="Devour Ally",
             action=ActionType.BonusAction,
-            description=f"{stats.selfref} swallows an allied creature that is within 5 feet of this creature and is {size.capitalize()} or smaller. \
+            description=f"{stats.selfref.capitalize()} swallows an allied creature that is within 5 feet of this creature and is {size.capitalize()} or smaller. \
                 {stats.selfref.capitalize()} regains {hp} hp and the devoured ally is reduced to 0 hp.",
         )
         return stats, feature
@@ -198,7 +197,7 @@ class _LingeringWound(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_could_be_monstrous(
-            candidate, attack_modifiers=[natural.Bite, natural.Claw, natural.Horns]
+            candidate, attack_names=[natural.Bite, natural.Claw, natural.Horns]
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
@@ -251,7 +250,7 @@ class _PetrifyingGaze(PowerBackport):
                 CreatureType.Undead,
             },
             bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
-            attack_modifiers={"-", spell.Gaze},
+            attack_names={"-", spell.Gaze},
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:

@@ -17,10 +17,10 @@ from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import summoning
 from ..attack import flavorful_damage_types
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
-def score_elemental(candidate: BaseStatblock) -> float:
+def score_elemental(candidate: BaseStatblock, **args) -> float:
     def has_elemental_damage(b: BaseStatblock):
         return b.secondary_damage_type is not None and b.secondary_damage_type.is_elemental
 
@@ -28,6 +28,7 @@ def score_elemental(candidate: BaseStatblock) -> float:
         candidate=candidate,
         require_types=CreatureType.Elemental,
         require_callback=has_elemental_damage,
+        **args,
     )
 
 
@@ -293,7 +294,7 @@ class _ElementalSmite(PowerBackport):
         elif dmg_type == DamageType.Poison:
             dmg = DieFormula.target_value(dmg_target, force_die=Die.d8)
             name = "Poisonous Smite"
-            condition = f"and forces the target to make a DC {dc} Constitution saving throw or become Poisoned for 1 minute (save ends at end of turn)."
+            condition = f"and forces the target to make a DC {dc} Constitution saving throw or become **Poisoned** for 1 minute (save ends at end of turn)."
         elif dmg_type == DamageType.Thunder:
             name = "Thundrous Smite"
             dmg = DieFormula.target_value(dmg_target, force_die=Die.d8)
@@ -318,7 +319,7 @@ class _ElementalReplication(PowerBackport):
         )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_elemental(candidate)
+        return score_elemental(candidate, require_cr=5)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         _, _, description = summoning.determine_summon_formula(

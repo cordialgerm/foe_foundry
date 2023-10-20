@@ -44,3 +44,7 @@ class AttackType(StrEnum):
     @staticmethod
     def AllSpell() -> Set[AttackType]:
         return {AttackType.RangedSpell}
+
+    @staticmethod
+    def AllWeapon() -> Set[AttackType]:
+        return {a for a in AttackType if a.is_weapon()}

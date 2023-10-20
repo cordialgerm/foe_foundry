@@ -18,29 +18,34 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import resolve_attack_modifier
 from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import AttackNames, score
 
 
 def _score_could_be_reckless_fighter(
-    candidate: BaseStatblock, large_size_boost: bool = False, allow_defender: bool = False
+    candidate: BaseStatblock,
+    large_size_boost: bool = False,
+    allow_defender: bool = False,
+    require_living: bool = False,
+    **kwargs,
 ) -> float:
     def is_reckless(c: BaseStatblock) -> bool:
         if not allow_defender and c.role == MonsterRole.Defender:
+            return False
+        elif require_living and not c.creature_type.is_living:
             return False
         elif c.attributes.WIS >= 12:
             return False
         else:
             return True
 
-    return score(
+    args: dict = dict(
         candidate=candidate,
         require_attack_types=AttackType.AllMelee(),
         require_callback=is_reckless,
         bonus_roles=MonsterRole.Bruiser,
         bonus_size=Size.Large if large_size_boost else None,
-        attack_modifiers=[
+        attack_names=[
             natural.Claw,
             natural.Bite,
             natural.Tail,
@@ -51,6 +56,8 @@ def _score_could_be_reckless_fighter(
             weapon.Maul,
         ],
     )
+    args.update(kwargs)
+    return score(**args)
 
 
 def _as_reckless_fighter(stats: BaseStatblock, uses_weapon: bool = False) -> BaseStatblock:
@@ -67,7 +74,9 @@ class _Charger(PowerBackport):
         super().__init__(name="Charger", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_reckless_fighter(candidate, large_size_boost=True)
+        return _score_could_be_reckless_fighter(
+            candidate, large_size_boost=True, require_speed=30
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_reckless_fighter(stats)
@@ -113,7 +122,7 @@ class _RefuseToSurrender(PowerBackport):
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_could_be_reckless_fighter(
-            candidate, large_size_boost=True, allow_defender=True
+            candidate, large_size_boost=True, allow_defender=True, require_living=True
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
@@ -152,7 +161,9 @@ class _WildCleave(PowerBackport):
         super().__init__(name="Wild Cleave", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_reckless_fighter(candidate, allow_defender=False)
+        return _score_could_be_reckless_fighter(
+            candidate, allow_defender=False, require_damage=DamageType.Slashing
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_reckless_fighter(stats)

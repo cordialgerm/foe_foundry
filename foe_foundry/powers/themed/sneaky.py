@@ -17,18 +17,20 @@ from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..utils import score
+from ..scoring import score
 
 
 def score_sneaky(
-    candidate: BaseStatblock, additional_creature_types: Set[CreatureType] | None = None
+    candidate: BaseStatblock, additional_creature_types: Set[CreatureType] | None = None, **args
 ) -> float:
     return score(
         candidate=candidate,
-        bonus_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
+        require_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher, MonsterRole.Leader],
         require_stats=Stats.DEX,
         bonus_skills=Skills.Stealth,
         bonus_types=additional_creature_types,
+        stat_threshold=16,
+        **args,
     )
 
 
@@ -54,7 +56,7 @@ class _SneakyStrike(PowerBackport):
         super().__init__(name="Sneaky Strike", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_sneaky(candidate)
+        return score_sneaky(candidate, require_attack_types=AttackType.AllWeapon())
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dmg = DieFormula.target_value(max(1.5 * stats.cr, 2 + stats.cr), force_die=Die.d6)
@@ -120,7 +122,7 @@ class _StayDown(PowerBackport):
         super().__init__(name="Stay Down", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_sneaky(candidate)
+        return score_sneaky(candidate, require_attack_types=AttackType.AllMelee())
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
