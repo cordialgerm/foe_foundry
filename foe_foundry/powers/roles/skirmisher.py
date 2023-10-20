@@ -18,10 +18,7 @@ from ..power import LOW_POWER, Power, PowerBackport, PowerType
 from ..scoring import score
 
 
-def score_skirmisher(
-    candidate: BaseStatblock,
-    requires_tactics: bool = True,
-) -> float:
+def score_skirmisher(candidate: BaseStatblock, requires_tactics: bool = True, **args) -> float:
     def ideal_skirmisher(c: BaseStatblock) -> bool:
         # skirmishing units were typically made up of poor, lightly-armored soldiers
         return c.creature_type in {CreatureType.Humanoid} and c.cr <= 2
@@ -37,6 +34,7 @@ def score_skirmisher(
         bonus_speed=40,
         bonus_callback=ideal_skirmisher,
         require_callback=is_organized if requires_tactics else None,
+        **args,
     )
 
 
@@ -110,7 +108,9 @@ class _HarrassingRetreat(PowerBackport):
         super().__init__(name="Harassing Retreat", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_skirmisher(candidate, requires_tactics=True)
+        return score_skirmisher(
+            candidate, requires_tactics=True, require_attack_types=AttackType.AllRanged()
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

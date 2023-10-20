@@ -172,11 +172,9 @@ class _MindBlast(PowerBackport):
         return stats, feature
 
 
-class _PsychicMirror(PowerBackport):
+class _PainMirror(PowerBackport):
     def __init__(self):
-        super().__init__(
-            name="Psychic Mirror", power_type=PowerType.Theme, power_level=LOW_POWER
-        )
+        super().__init__(name="Mirrored Pain", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_psychic(candidate)
@@ -187,9 +185,9 @@ class _PsychicMirror(PowerBackport):
         stats = as_psychic(stats)
 
         feature = Feature(
-            name="Psychic Mirror",
+            name="Mirrored Pain",
             action=ActionType.Reaction,
-            description=f"Whenever {stats.selfref} takes psychic damage, each other creature within 10 feet of {stats.selfref} takes that damage instead.",
+            description=f"Whenever {stats.selfref} takes damage, each other creature within 10 feet of {stats.selfref} takes that half the triggering damage as psychic damage instead.",
         )
 
         return stats, feature
@@ -250,7 +248,7 @@ DissonantWhispers: Power = _DissonantWhispers()
 ExtractBrain: Power = _ExtractBrain()
 MindBlast: Power = _MindBlast()
 PsychicInfestation: Power = _PsychicInfestation()
-PsychicMirror: Power = _PsychicMirror()
+PainMirror: Power = _PainMirror()
 Telekinetic: Power = _Telekinetic()
 
 PsychicPowers: List[Power] = [
@@ -258,6 +256,6 @@ PsychicPowers: List[Power] = [
     ExtractBrain,
     MindBlast,
     PsychicInfestation,
-    PsychicMirror,
+    PainMirror,
     Telekinetic,
 ]

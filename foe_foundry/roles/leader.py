@@ -6,12 +6,12 @@ from .template import RoleTemplate, role_variant
 
 
 def as_low_hp_leader(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(hp_multiplier=0.8, recommended_powers_modifier=1)
+    dials = MonsterDials(hp_multiplier=0.8, recommended_powers_modifier=0.5)
     return _as_leader(stats, dials)
 
 
 def as_low_dmg_leader(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(attack_damage_modifier=-1, recommended_powers_modifier=1)
+    dials = MonsterDials(attack_damage_modifier=-1, recommended_powers_modifier=0.5)
     return _as_leader(stats, dials)
 
 

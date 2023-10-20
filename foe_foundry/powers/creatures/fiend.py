@@ -117,14 +117,14 @@ class _WallOfFire(PowerBackport):
     ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
         dc = stats.difficulty_class_easy
 
-        if stats.cr <= 5:
+        if stats.cr <= 7:
             uses = 1
             concentration = ""
-        elif stats.cr <= 10:
-            uses = 3
+        elif stats.cr <= 11:
+            uses = 1
             concentration = " without requiring concentration"
         else:
-            uses = None
+            uses = 3
             concentration = " without requiring concentration"
 
         feature = Feature(

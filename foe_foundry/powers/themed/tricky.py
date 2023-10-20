@@ -88,7 +88,7 @@ class _Projection(PowerBackport):
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _ensure_tricky_stats(stats)
 
-        dc = stats.attributes.passive_skill(Skills.Deception)
+        dc = stats.difficulty_class
 
         feature = Feature(
             name="Projection",

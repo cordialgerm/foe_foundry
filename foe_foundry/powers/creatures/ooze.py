@@ -164,12 +164,12 @@ class _SlimeSpray(PowerBackport):
         dc = stats.difficulty_class_easy
 
         feature = Feature(
-            name="Slime Breath",
+            name="Slime Spray",
             action=ActionType.Action,
             replaces_multiattack=1,
             recharge=6,
             description=f"{stats.selfref.capitalize()} sprays slimy goo in a 30-foot cone. Each creature in that area must make a DC {dc} Dexterity saving throw. \
-                On a failure, the creature takes {dmg.description} acid damage and is pulled up to 30 feet toward {stats.selfref}. On a success, the creature takes half as much damage and isn't pulled.",
+                On a failure, the creature takes {dmg.description} acid damage and is **Grappled** (escape DC {dc}). On a success, the creature takes half as much damage instead.",
         )
 
         return stats, [malleable_form(stats), feature]

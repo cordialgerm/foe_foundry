@@ -50,6 +50,7 @@ class _NimbleReaction(PowerBackport):
             require_stats=Stats.DEX,
             bonus_speed=40,
             bonus_skills=[Skills.Acrobatics, Skills.Athletics],
+            stat_threshold=14,
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:

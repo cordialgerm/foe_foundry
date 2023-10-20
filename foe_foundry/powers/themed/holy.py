@@ -44,8 +44,8 @@ class _DivineSmite(PowerBackport):
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(0.4 * stats.attack.average_damage, force_die=Die.d10)
-        burning = conditions.Burning(dmg)
+        dmg = DieFormula.target_value(0.7 * stats.attack.average_damage, force_die=Die.d10)
+        burning = conditions.Burning(dmg, damage_type=DamageType.Radiant)
         feature = Feature(
             name="Divine Smite",
             action=ActionType.BonusAction,

@@ -4,6 +4,6 @@ def recommended_powers_for_cr(cr: float) -> float:
     elif cr <= 5:
         return 1.5
     elif cr <= 10:
-        return 2
-    else:
         return 2.5
+    else:
+        return 3.0

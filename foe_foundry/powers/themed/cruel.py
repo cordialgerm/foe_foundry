@@ -83,7 +83,7 @@ class _Lethal(PowerBackport):
             name="Lethal",
             action=ActionType.Feature,
             description=f"{stats.selfref.capitalize()} scores a critical hit on an unmodified attack roll of {crit_lower}-20. \
-                Additional, a critical hit from {stats.selfref} deals an additional {dmg.description} {dmg_type} damage (do not apply crit modifier to this damage), and the creature dies if this attack reduces its hit points to 0.",
+                Additionally, a critical hit from {stats.selfref} deals an additional {dmg.description} {dmg_type} damage (do not apply crit modifier to this damage), and the creature dies if this attack reduces its hit points to 0.",
         )
 
         return stats, feature

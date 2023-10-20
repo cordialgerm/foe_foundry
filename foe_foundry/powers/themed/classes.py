@@ -270,7 +270,7 @@ class _Bard(PowerBackport):
         feature2 = Feature(
             name="Bardic Inspiration",
             action=ActionType.Reaction,
-            uses=stats.attributes.stat_mod(Stats.CHA),
+            uses=3,
             description=f"Whenever an ally within 30 feet that can hear {stats.roleref} misses with an attack or fails a saving throw, it can roll 1d4 and add the total to its result, potentially turning a failure into a success.",
         )
 

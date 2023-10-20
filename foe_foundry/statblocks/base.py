@@ -235,6 +235,10 @@ class BaseStatblock:
         new_ac_boost = self.ac_boost + ac_modifier
         return self.copy(ac_templates=new_templates, ac_boost=new_ac_boost)
 
+    def remove_ac_templates(self, ac_templates: List[ArmorClassTemplate]) -> BaseStatblock:
+        new_templates = [ac for ac in self.ac_templates if ac not in ac_templates]
+        return self.copy(ac_templates=new_templates)
+
     def grant_resistance_or_immunity(
         self,
         resistances: Set[DamageType] | None = None,

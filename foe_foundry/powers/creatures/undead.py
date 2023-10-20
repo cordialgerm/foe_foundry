@@ -72,15 +72,10 @@ class _StygianBurst(PowerBackport):
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(0.75 * stats.attack.average_damage, force_die=Die.d8)
+        dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d8)
         frozen = Frozen(dc=dc)
         hp = easy_multiple_of_five(stats.hp.average / 2)
         distance = easy_multiple_of_five(2.5 * stats.cr, min_val=10, max_val=40)
-
-        # to combo with the Frozen debuff
-        stats = stats.copy(
-            primary_damage_type=DamageType.Bludgeoning, secondary_damage_type=DamageType.Cold
-        )
 
         feature = Feature(
             name="Stygian Burst",

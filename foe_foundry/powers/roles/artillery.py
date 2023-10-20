@@ -117,7 +117,7 @@ class _SuppressingFire(PowerBackport):
 
 class _IndirectFire(PowerBackport):
     def __init__(self):
-        super().__init__(name="Indirect Fire", power_type=PowerType.Role)
+        super().__init__(name="Indirect Fire", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_artillery(candidate)

@@ -115,29 +115,25 @@ class PowerSelection:
         )
 
     def score(self, target: SelectionTargets) -> SelectionScore:
-        score_over_target = max(self.selected_power_level - target.power_level_target, 0)
-        score_over_max = max(self.selected_power_level - target.power_level_max, 0)
+        score_over_target = self.selected_power_level - target.power_level_target
+        score_over_max = self.selected_power_level - target.power_level_max
 
-        bonus_over_target = max(self.selected_bonus_actions - target.bonus_action_target, 0)
-        bonus_over_max = max(self.selected_bonus_actions - target.bonus_action_max, 0)
+        bonus_over_target = self.selected_bonus_actions - target.bonus_action_target
+        bonus_over_max = self.selected_bonus_actions - target.bonus_action_max
 
-        reactions_over_target = max(self.selected_reactions - target.reaction_target, 0)
-        reactions_over_max = max(self.selected_reactions - target.reaction_max, 0)
+        reactions_over_target = self.selected_reactions - target.reaction_target
+        reactions_over_max = self.selected_reactions - target.reaction_max
 
-        recharges_over_target = max(self.selected_recharges - target.recharge_target, 0)
-        recharges_over_max = max(self.selected_recharges - target.recharge_max, 0)
+        recharges_over_target = self.selected_recharges - target.recharge_target
+        recharges_over_max = self.selected_recharges - target.recharge_max
 
-        attack_modifiers_over_target = max(
-            self.selected_attack_modifiers - target.attack_modifier_target, 0
+        attack_modifiers_over_target = (
+            self.selected_attack_modifiers - target.attack_modifier_target
         )
-        attack_modifiers_over_max = max(
-            self.selected_attack_modifiers - target.attack_modifier_max, 0
-        )
+        attack_modifiers_over_max = self.selected_attack_modifiers - target.attack_modifier_max
 
-        limited_uses_over_target = max(
-            self.selected_limited_uses - target.limited_uses_target, 0
-        )
-        limited_uses_over_max = max(self.selected_limited_uses - target.limited_uses_max, 0)
+        limited_uses_over_target = self.selected_limited_uses - target.limited_uses_target
+        limited_uses_over_max = self.selected_limited_uses - target.limited_uses_max
 
         above_targets = np.array(
             [
@@ -165,15 +161,17 @@ class PowerSelection:
 
         # lose a little for being above target score
         # lose a lot for being above max score
-        penalties += 1.5 * score_over_target
-        penalties += 3 * score_over_max
+        penalties += 1.5 * max(score_over_target, 0)
+        penalties += 3 * max(score_over_max, 0)
 
         # lose points if you're above max in various categories
-        penalties += 1 * bonus_over_max
-        penalties += 1 * reactions_over_max
-        penalties += 2 * recharges_over_max
-        penalties += 2 * limited_uses_over_max
-        penalties += 3 * attack_modifiers_over_max  # high bc statblock becomes confusing
+        penalties += 1 * max(bonus_over_max, 0)
+        penalties += 1 * max(reactions_over_max, 0)
+        penalties += 2 * max(recharges_over_max, 0)
+        penalties += 2 * max(limited_uses_over_max, 0)
+        penalties += 3 * max(
+            attack_modifiers_over_max, 0
+        )  # high bc statblock becomes confusing
 
         # lose points if you're above target in some areas and below target in others
         if np.any(above_targets) and np.any(below_targets):
@@ -223,6 +221,34 @@ class _PowerSelector:
             self.stats = power.modify_stats(self.stats)
             self.iteration += 1
 
+    def filter_feature_against_max(self, feature: Feature) -> bool:
+        score = self.score
+        if feature.action == ActionType.BonusAction and score.bonus_over_max >= 0:
+            return False
+        if feature.action == ActionType.Reaction and score.reactions_over_max >= 0:
+            return False
+        if feature.recharge and score.recharges_over_max >= 0:
+            return False
+        if feature.modifies_attack and score.attack_modifiers_over_max >= 0:
+            return False
+        if feature.uses and score.limited_uses_over_max >= 0:
+            return False
+        return True
+
+    def filter_feature_against_target(self, feature: Feature) -> bool:
+        score = self.score
+        if feature.action == ActionType.BonusAction and score.bonus_over_target >= 0:
+            return False
+        if feature.action == ActionType.Reaction and score.reactions_over_target >= 0:
+            return False
+        if feature.recharge and score.recharges_over_target >= 0:
+            return False
+        if feature.modifies_attack and score.attack_modifiers_over_target >= 0:
+            return False
+        if feature.uses and score.limited_uses_over_target >= 0:
+            return False
+        return True
+
     def filter(self, power: Power) -> bool:
         score = self.score
 
@@ -232,20 +258,9 @@ class _PowerSelector:
         if power in self.selection.selected_powers:
             return False
 
-        def filter_feature(feature: Feature):
-            if feature.action == ActionType.BonusAction and score.bonus_over_target:
-                return False
-            if feature.action == ActionType.Reaction and score.reactions_over_target:
-                return False
-            if feature.recharge and score.recharges_over_target:
-                return False
-            if feature.modifies_attack and score.attack_modifiers_over_target:
-                return False
-            if feature.uses and score.limited_uses_over_target:
-                return False
-            return False
-
-        if any(filter_feature(f) for f in power.generate_features(self.stats)):
+        if any(
+            not self.filter_feature_against_max(f) for f in power.generate_features(self.stats)
+        ):
             return False
 
         return True
@@ -259,15 +274,25 @@ class _PowerSelector:
         ):
             multiplier += 0.5
 
+        # if the creature doesn't yet have any Creature powers then make them more attractive
         if power.power_type == PowerType.Creature and not any(
             p for p in self.selection.selected_powers if p.power_type == PowerType.Creature
         ):
             multiplier += 0.5
 
+        # if the creature doesn't yet have any Theme powers then make them more attractive
         if power.power_type == PowerType.Role and not any(
             p for p in self.selection.selected_powers if p.power_type == PowerType.Role
         ):
             multiplier += 0.5
+
+        # if feature would cause us to go above target then make it less attractive
+        # don't eliminate it entirely because it might lead to total infeasibility
+        if any(
+            not self.filter_feature_against_target(f)
+            for f in power.generate_features(self.stats)
+        ):
+            multiplier -= 0.9
 
         return multiplier
 
@@ -316,7 +341,7 @@ def select_powers(
     all_powers: List[Set[Power]] = []
 
     # try a couple of times and choose the best result
-    for _ in range(5):
+    for _ in range(3):
         selector = _PowerSelector(targets=targets, rng=rng(), stats=stats)
         selector.select_powers()
         all_results.append(selector.stats)
