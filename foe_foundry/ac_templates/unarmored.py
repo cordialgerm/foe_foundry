@@ -19,13 +19,16 @@ class _UnarmoredArmorClassTemplate(ArmorClassTemplate):
         return False
 
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
-        ac = 10 + min(stats.attributes.stat_mod(Stats.DEX), 5)
+        # unarmored can't benefit from a positive ac boost
+        quality_level = min(stats.ac_boost, 0)
+
+        ac = 10 + min(stats.attributes.stat_mod(Stats.DEX), 5) + quality_level
         return ResolvedArmorClass(
             value=ac,
             armor_type="Unarmored",
             has_shield=uses_shield,
             is_armored=False,
-            quality_level=0,  # unarmored doesn't have any modifiers
+            quality_level=quality_level,
             score=ac,
         )
 

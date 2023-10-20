@@ -86,7 +86,12 @@ Monstrosities: SummoningList = {
     ("*Roper*", 5),
 }
 
-Aberrations: SummoningList = {("*Giberring Mouther*", 2), ("*Otyugh*", 5)}
+Aberrations: SummoningList = {
+    ("*Cultist*", 1 / 8),  # no good SRD monsters as low-CR aberrations
+    ("*Nothic*", 2),
+    ("*Giberring Mouther*", 3),  # CR 2 but pretty strong
+    ("*Otyugh*", 5),
+}
 
 DraconicMinions: SummoningList = {
     ("*Kobold*", 1 / 8),

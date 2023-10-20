@@ -15,44 +15,46 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
 def score_temporal(candidate: BaseStatblock, min_cr: float | None = None) -> float:
-    score = 0
-
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    if candidate.creature_type in {
+    creature_types = {
         CreatureType.Fey,
         CreatureType.Fiend,
         CreatureType.Aberration,
-    }:
-        score += HIGH_AFFINITY
+        CreatureType.Humanoid,
+    }
 
-    if candidate.attack_type.is_spell():
-        score += MODERATE_AFFINITY
+    def is_magical_human(c: BaseStatblock) -> bool:
+        if c.creature_type == CreatureType.Humanoid:
+            return c.attack_type.is_spell() and c.secondary_damage_type != DamageType.Radiant
+        else:
+            return c.creature_type in creature_types
 
-    if candidate.role in {MonsterRole.Controller}:
-        score += MODERATE_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types={
+            CreatureType.Fey,
+            CreatureType.Fiend,
+            CreatureType.Aberration,
+            CreatureType.Humanoid,
+        },
+        require_callback=is_magical_human,
+        require_cr=min_cr,
+        bonus_roles=MonsterRole.Controller,
+    )
 
-    return score if score > 0 else NO_AFFINITY
 
-
-class _CurseOfTheAges(Power):
+class _CurseOfTheAges(PowerBackport):
     def __init__(self):
-        super().__init__(name="Curse of the Ages", power_type=PowerType.Theme)
+        super().__init__(
+            name="Curse of the Ages", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_temporal(candidate, min_cr=7)
+        return score_temporal(candidate=candidate, min_cr=7)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
@@ -72,7 +74,7 @@ class _CurseOfTheAges(Power):
         return stats, feature
 
 
-class _TemporalLoop(Power):
+class _TemporalLoop(PowerBackport):
     def __init__(self):
         super().__init__(name="Temporal Loop", power_type=PowerType.Theme)
 
@@ -103,9 +105,11 @@ class _TemporalLoop(Power):
         return stats, [feature1, feature2]
 
 
-class _TemporalMastery(Power):
+class _TemporalMastery(PowerBackport):
     def __init__(self):
-        super().__init__(name="Temporal Mastery", power_type=PowerType.Theme)
+        super().__init__(
+            name="Temporal Mastery", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_temporal(candidate, min_cr=7)

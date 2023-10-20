@@ -4,7 +4,9 @@ from typing import List, Tuple
 import numpy as np
 from numpy.random import Generator
 
-from ..ac_templates import NaturalArmor
+from foe_foundry.statblocks import BaseStatblock
+
+from ..ac_templates import LightArmor, MediumArmor, NaturalArmor
 from ..attack_template import AttackTemplate, natural, spell, weapon
 from ..attributes import Stats
 from ..creature_types import CreatureType
@@ -116,6 +118,11 @@ class _ConstructTemplate(CreatureTypeTemplate):
             languages=None,
             senses=new_senses,
         )
+
+    def customize_role(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
+        # constructs don't use Light or Medium armor
+        stats = stats.remove_ac_templates([MediumArmor, LightArmor])
+        return stats
 
 
 ConstructTemplate: CreatureTypeTemplate = _ConstructTemplate()

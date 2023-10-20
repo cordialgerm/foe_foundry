@@ -33,7 +33,7 @@ class BaseStatblock:
     primary_damage_type: DamageType = DamageType.Bludgeoning
     secondary_damage_type: DamageType | None = None
     difficulty_class_modifier: int = 0
-    recommended_powers_modifier: int = 0
+    recommended_powers_modifier: float = 0
     size: Size = Size.Medium
     creature_type: CreatureType = CreatureType.Humanoid
     languages: List[str] = field(default_factory=list)
@@ -234,6 +234,10 @@ class BaseStatblock:
 
         new_ac_boost = self.ac_boost + ac_modifier
         return self.copy(ac_templates=new_templates, ac_boost=new_ac_boost)
+
+    def remove_ac_templates(self, ac_templates: List[ArmorClassTemplate]) -> BaseStatblock:
+        new_templates = [ac for ac in self.ac_templates if ac not in ac_templates]
+        return self.copy(ac_templates=new_templates)
 
     def grant_resistance_or_immunity(
         self,

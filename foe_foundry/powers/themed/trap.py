@@ -18,40 +18,24 @@ from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import choose_enum, easy_multiple_of_five
 from ..attack import flavorful_damage_types
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import Power, PowerBackport, PowerType
+from ..scoring import score
 
 
 def score_trap(candidate: BaseStatblock) -> float:
     # these powers make sense for creatures that are capable of using equipment
-    if not candidate.creature_type.could_use_equipment:
-        return NO_AFFINITY
+    creature_types = {c for c in CreatureType if c.could_use_equipment}
 
-    creature_types = {
-        CreatureType.Humanoid: MODERATE_AFFINITY,
-    }
-
-    roles = {
-        MonsterRole.Leader: MODERATE_AFFINITY,
-        MonsterRole.Ambusher: HIGH_AFFINITY,
-    }
-
-    score = creature_types.get(candidate.creature_type, LOW_AFFINITY)
-    score += roles.get(candidate.role, 0)
-
-    if candidate.attributes.has_proficiency_or_expertise(Skills.Survival):
-        score += HIGH_AFFINITY
-
-    return score
+    return score(
+        candidate=candidate,
+        require_types=creature_types,
+        bonus_types=CreatureType.Humanoid,
+        bonus_roles={MonsterRole.Leader, MonsterRole.Ambusher},
+        bonus_skills=Skills.Survival,
+    )
 
 
-class _Snare(Power):
+class _Snare(PowerBackport):
     def __init__(self):
         super().__init__(name="Snare", power_type=PowerType.Theme)
 
@@ -77,7 +61,7 @@ class _Snare(Power):
         return stats, feature
 
 
-class _SpikePit(Power):
+class _SpikePit(PowerBackport):
     def __init__(self):
         super().__init__(name="Spike Pit", power_type=PowerType.Theme)
 

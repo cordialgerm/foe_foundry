@@ -25,7 +25,7 @@ class _HumanoidTemplate(CreatureTypeTemplate):
     ) -> Tuple[AttackTemplate, BaseStatblock]:
         # secondary damage type possibilities for humanoids
         dmg_types = {
-            DamageType.Bludgeoning: 3.0,  # sentinel value - no special damage
+            DamageType.Bludgeoning: 4.0,  # sentinel value - no special damage
             DamageType.Radiant: 2.0,
             DamageType.Cold: 1.0,
             DamageType.Fire: 1.0,

@@ -15,35 +15,26 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..scoring import AttackNames, score
 
 
 def _score_bruiser(
     candidate: BaseStatblock,
     size_boost: bool = False,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
+    **kwargs,
 ) -> float:
-    score = 0
-
-    if candidate.role == MonsterRole.Bruiser:
-        score += MODERATE_AFFINITY
-
-    if size_boost and candidate.size >= Size.Large:
-        score += MODERATE_AFFINITY
-
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score
+    return score(
+        candidate=candidate,
+        require_roles=MonsterRole.Bruiser,
+        bonus_size=Size.Large if size_boost else None,
+        attack_names=attack_names,
+        **kwargs,
+    )
 
 
-class _Sentinel(Power):
+class _Sentinel(PowerBackport):
     def __init__(self):
         super().__init__(name="Sentinel", power_type=PowerType.Role)
 
@@ -51,7 +42,7 @@ class _Sentinel(Power):
         return _score_bruiser(
             candidate,
             size_boost=True,
-            attack_modifiers=[
+            attack_names=[
                 weapon.Polearm,
                 weapon.SpearAndShield,
             ],
@@ -69,18 +60,12 @@ class _Sentinel(Power):
         return stats, feature
 
 
-class _Grappler(Power):
+class _Grappler(PowerBackport):
     def __init__(self):
         super().__init__(name="Grappler", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_bruiser(
-            candidate,
-            attack_modifiers={
-                natural_attacks.Slam: EXTRA_HIGH_AFFINITY,
-                "*": NO_AFFINITY,
-            },
-        )
+        return _score_bruiser(candidate, attack_names={"-", natural_attacks.Slam})
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -105,17 +90,13 @@ class _Grappler(Power):
         return stats, None
 
 
-class _Cleaver(Power):
+class _Cleaver(PowerBackport):
     def __init__(self):
         super().__init__(name="Cleaver", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_bruiser(
-            candidate,
-            attack_modifiers={
-                weapon.Greataxe: EXTRA_HIGH_AFFINITY,
-                natural_attacks.Claw: HIGH_AFFINITY,
-            },
+            candidate, attack_names={"-", weapon.Greataxe, natural_attacks.Claw}
         )
 
     def apply(
@@ -133,18 +114,17 @@ class _Cleaver(Power):
         return stats, feature
 
 
-class _StunningBlow(Power):
+class _StunningBlow(PowerBackport):
     def __init__(self):
-        super().__init__(name="Stunning Blow", power_type=PowerType.Role)
+        super().__init__(
+            name="Stunning Blow", power_type=PowerType.Role, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_bruiser(
             candidate,
-            attack_modifiers={
-                weapon.Maul: EXTRA_HIGH_AFFINITY,
-                weapon.MaceAndShield: HIGH_AFFINITY,
-                natural_attacks.Slam: HIGH_AFFINITY,
-            },
+            require_damage=DamageType.Bludgeoning,
+            attack_names={weapon.Maul, weapon.MaceAndShield, natural_attacks.Slam},
         )
 
     def apply(
@@ -164,17 +144,18 @@ class _StunningBlow(Power):
         return stats, feature
 
 
-class _Disembowler(Power):
+class _Disembowler(PowerBackport):
     def __init__(self):
         super().__init__(name="Disembowler", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_bruiser(
             candidate,
-            attack_modifiers={
-                natural_attacks.Bite: HIGH_AFFINITY,
-                natural_attacks.Horns: MODERATE_AFFINITY,
-                weapon.Daggers: HIGH_AFFINITY,
+            require_damage=DamageType.Piercing,
+            attack_names={
+                natural_attacks.Bite,
+                natural_attacks.Horns,
+                weapon.Daggers,
             },
         )
 

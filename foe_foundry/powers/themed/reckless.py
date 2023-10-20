@@ -18,31 +18,34 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import resolve_attack_modifier
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import AttackNames, score
 
 
 def _score_could_be_reckless_fighter(
-    candidate: BaseStatblock, large_size_boost: bool = False, allow_defender: bool = False
+    candidate: BaseStatblock,
+    large_size_boost: bool = False,
+    allow_defender: bool = False,
+    require_living: bool = False,
+    **kwargs,
 ) -> float:
-    if not candidate.attack_type.is_melee():
-        return NO_AFFINITY
+    def is_reckless(c: BaseStatblock) -> bool:
+        if not allow_defender and c.role == MonsterRole.Defender:
+            return False
+        elif require_living and not c.creature_type.is_living:
+            return False
+        elif c.attributes.WIS >= 12:
+            return False
+        else:
+            return True
 
-    if not allow_defender and candidate.role == MonsterRole.Defender:
-        return NO_AFFINITY
-
-    score = 0
-
-    score += resolve_attack_modifier(
-        candidate,
-        attack_modifiers=[
+    args: dict = dict(
+        candidate=candidate,
+        require_attack_types=AttackType.AllMelee(),
+        require_callback=is_reckless,
+        bonus_roles=MonsterRole.Bruiser,
+        bonus_size=Size.Large if large_size_boost else None,
+        attack_names=[
             natural.Claw,
             natural.Bite,
             natural.Tail,
@@ -53,23 +56,8 @@ def _score_could_be_reckless_fighter(
             weapon.Maul,
         ],
     )
-
-    if candidate.creature_type in {
-        CreatureType.Beast,
-        CreatureType.Monstrosity,
-    }:
-        score += MODERATE_AFFINITY
-
-    if candidate.role in {MonsterRole.Bruiser}:
-        score += MODERATE_AFFINITY
-
-    if large_size_boost and candidate.size >= Size.Large:
-        score += MODERATE_AFFINITY
-
-    if candidate.attributes.WIS >= 12:
-        score -= HIGH_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+    args.update(kwargs)
+    return score(**args)
 
 
 def _as_reckless_fighter(stats: BaseStatblock, uses_weapon: bool = False) -> BaseStatblock:
@@ -81,12 +69,14 @@ def _as_reckless_fighter(stats: BaseStatblock, uses_weapon: bool = False) -> Bas
     return stats.copy(**changes)
 
 
-class _Charger(Power):
+class _Charger(PowerBackport):
     def __init__(self):
         super().__init__(name="Charger", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_reckless_fighter(candidate, large_size_boost=True)
+        return _score_could_be_reckless_fighter(
+            candidate, large_size_boost=True, require_speed=30
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_reckless_fighter(stats)
@@ -101,7 +91,7 @@ class _Charger(Power):
         return stats, feature
 
 
-class _Frenzy(Power):
+class _Frenzy(PowerBackport):
     """Frenzy (Trait). At the start of their turn, this creature can gain advantage on all melee weapon attack rolls made during this
     turn, but attack rolls against them have advantage until the start of their next turn."""
 
@@ -121,16 +111,18 @@ class _Frenzy(Power):
         return stats, feature
 
 
-class _RefuseToSurrender(Power):
+class _RefuseToSurrender(PowerBackport):
     """When this creature’s current hit points are below half their hit point maximum,
     the creature deals CR extra damage with each of their attacks."""
 
     def __init__(self):
-        super().__init__(name="Refuse to Surrender", power_type=PowerType.Theme)
+        super().__init__(
+            name="Refuse to Surrender", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_could_be_reckless_fighter(
-            candidate, large_size_boost=True, allow_defender=True
+            candidate, large_size_boost=True, allow_defender=True, require_living=True
         )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
@@ -144,11 +136,13 @@ class _RefuseToSurrender(Power):
         return stats, feature
 
 
-class _GoesDownFighting(Power):
+class _GoesDownFighting(PowerBackport):
     """When this creature is reduced to 0 hit points, they can immediately make one melee or ranged weapon attack before they fall unconscious."""
 
     def __init__(self):
-        super().__init__(name="Goes Down Fighting", power_type=PowerType.Theme)
+        super().__init__(
+            name="Goes Down Fighting", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_could_be_reckless_fighter(candidate, allow_defender=True)
@@ -162,12 +156,14 @@ class _GoesDownFighting(Power):
         return stats, feature
 
 
-class _WildCleave(Power):
+class _WildCleave(PowerBackport):
     def __init__(self):
         super().__init__(name="Wild Cleave", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_reckless_fighter(candidate, allow_defender=False)
+        return _score_could_be_reckless_fighter(
+            candidate, allow_defender=False, require_damage=DamageType.Slashing
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_reckless_fighter(stats)
@@ -184,7 +180,7 @@ class _WildCleave(Power):
         return stats, feature
 
 
-class _FlurryOfBlows(Power):
+class _FlurryOfBlows(PowerBackport):
     def __init__(self):
         super().__init__(name="Flurry of Blows", power_type=PowerType.Theme)
 
@@ -206,7 +202,7 @@ class _FlurryOfBlows(Power):
         return stats, feature
 
 
-class _Toss(Power):
+class _Toss(PowerBackport):
     def __init__(self):
         super().__init__(name="Toss", power_type=PowerType.Theme)
 

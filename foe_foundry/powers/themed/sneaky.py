@@ -16,48 +16,30 @@ from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-def _score_is_sneaky_creature(
-    candidate: BaseStatblock, additional_creature_types: Set[CreatureType] | None = None
+def score_sneaky(
+    candidate: BaseStatblock, additional_creature_types: Set[CreatureType] | None = None, **args
 ) -> float:
-    score = 0
-
-    if candidate.role == MonsterRole.Ambusher:
-        score += HIGH_AFFINITY
-
-    if candidate.role == MonsterRole.Skirmisher:
-        score += MODERATE_AFFINITY
-
-    if candidate.primary_attribute == Stats.DEX:
-        score += LOW_AFFINITY
-
-    if candidate.attributes.has_proficiency_or_expertise(Skills.Stealth):
-        score += MODERATE_AFFINITY
-
-    if (
-        additional_creature_types is not None
-        and candidate.creature_type in additional_creature_types
-    ):
-        score += HIGH_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher, MonsterRole.Leader],
+        require_stats=Stats.DEX,
+        bonus_skills=Skills.Stealth,
+        bonus_types=additional_creature_types,
+        stat_threshold=16,
+        **args,
+    )
 
 
-class _CunningAction(Power):
+class _CunningAction(PowerBackport):
     def __init__(self):
         super().__init__(name="Cunning Action", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_sneaky_creature(candidate)
+        return score_sneaky(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -69,12 +51,12 @@ class _CunningAction(Power):
         return stats, feature
 
 
-class _SneakyStrike(Power):
+class _SneakyStrike(PowerBackport):
     def __init__(self):
         super().__init__(name="Sneaky Strike", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_sneaky_creature(candidate)
+        return score_sneaky(candidate, require_attack_types=AttackType.AllWeapon())
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dmg = DieFormula.target_value(max(1.5 * stats.cr, 2 + stats.cr), force_die=Die.d6)
@@ -88,12 +70,14 @@ class _SneakyStrike(Power):
         return stats, feature
 
 
-class _FalseAppearance(Power):
+class _FalseAppearance(PowerBackport):
     def __init__(self):
-        super().__init__(name="False Appearance", power_type=PowerType.Theme)
+        super().__init__(
+            name="False Appearance", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_sneaky_creature(
+        return score_sneaky(
             candidate,
             additional_creature_types={
                 CreatureType.Plant,
@@ -112,54 +96,14 @@ class _FalseAppearance(Power):
         return stats, feature
 
 
-class _NotDeadYet(Power):
-    """When this creature is reduced to 0 hit points, they drop prone and are indistinguishable from a dead creature.
-    At the start of their next turn, this creature stands up without using any movement and has 2x CR hit points.
-    They can then take their turn normally."""
-
-    def __init__(self):
-        super().__init__(name="Not Dead Yet", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        # this power makes a lot of sense for undead, oozes, beasts, and monstrosities
-        score = LOW_AFFINITY
-        if candidate.creature_type in {
-            CreatureType.Ooze,
-            CreatureType.Undead,
-            CreatureType.Beast,
-            CreatureType.Monstrosity,
-        }:
-            score += HIGH_AFFINITY
-        if Skills.Deception in candidate.attributes.proficient_skills:
-            score += MODERATE_AFFINITY
-        if Skills.Deception in candidate.attributes.proficient_skills:
-            score += HIGH_AFFINITY
-        return score
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
-        stats = stats.copy(attributes=new_attrs)
-
-        hp = easy_multiple_of_five(int(ceil(2.0 * stats.cr)))
-
-        feature = Feature(
-            name="Not Dead Yet",
-            description=f"When {stats.selfref} is reduced to 0 hit points, it drops prone and is indistinguishable from a dead creature. \
-                        At the start of their next turn, {stats.selfref} stands up without using any movement and has {hp} hit points. It can take its turn normally",
-            action=ActionType.Reaction,
-            uses=1,
-        )
-        return stats, feature
-
-
-class _Vanish(Power):
+class _Vanish(PowerBackport):
     """This creature can use the Disengage action, then can hide if they have cover"""
 
     def __init__(self):
         super().__init__(name="Vanish", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_sneaky_creature(candidate)
+        return score_sneaky(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
@@ -173,12 +117,12 @@ class _Vanish(Power):
         return stats, feature
 
 
-class _StayDown(Power):
+class _StayDown(PowerBackport):
     def __init__(self):
         super().__init__(name="Stay Down", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_sneaky_creature(candidate)
+        return score_sneaky(candidate, require_attack_types=AttackType.AllMelee())
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -196,12 +140,12 @@ class _StayDown(Power):
         return stats, feature
 
 
-class _ExplotAdvantage(Power):
+class _ExploitAdvantage(PowerBackport):
     def __init__(self):
-        super().__init__(name="Explot Advantage", power_type=PowerType.Theme)
+        super().__init__(name="Exploit Advantage", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_sneaky_creature(candidate)
+        return score_sneaky(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -217,11 +161,10 @@ class _ExplotAdvantage(Power):
 
 
 CunningAction: Power = _CunningAction()
-ExploitAdvantage: Power = _ExplotAdvantage()
+ExploitAdvantage: Power = _ExploitAdvantage()
 FalseAppearance: Power = _FalseAppearance()
 SneakyStrike: Power = _SneakyStrike()
 StayDown: Power = _StayDown()
-NotDeadYet: Power = _NotDeadYet()
 Vanish: Power = _Vanish()
 
 
@@ -231,6 +174,5 @@ SneakyPowers: List[Power] = [
     FalseAppearance,
     SneakyStrike,
     StayDown,
-    NotDeadYet,
     Vanish,
 ]

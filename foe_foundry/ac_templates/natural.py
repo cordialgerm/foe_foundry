@@ -19,19 +19,25 @@ class _NaturalArmorClassTemplate(ArmorClassTemplate):
 
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         quality_level = stats.ac_boost
-
+        max_dex = 2
         if stats.size >= Size.Huge:
-            max_con = 4
+            max_con = 5
         elif stats.size >= Size.Large:
-            max_con = 3
+            max_con = 4
         else:
-            max_con = 2
+            max_con = 3
 
-        ac = (
+        # natural armor takes CON and DEX into account
+        ac1 = (
             10
-            + max(0, min(stats.attributes.stat_mod(Stats.DEX), 3))
+            + max(0, min(stats.attributes.stat_mod(Stats.DEX), max_dex))
             + min(stats.attributes.stat_mod(Stats.CON), max_con)
         ) + quality_level
+
+        # if the creature would get a better result simply from unarmored then use that
+        ac2 = 10 + min(stats.attributes.stat_mod(Stats.DEX), 5) + min(quality_level, 0)
+
+        ac = max(ac1, ac2)
 
         return ResolvedArmorClass(
             value=ac,

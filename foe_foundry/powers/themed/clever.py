@@ -13,50 +13,29 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import choose_enum, easy_multiple_of_five
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-def _score_clever(candidate: BaseStatblock) -> float:
-    # This power makes sense for any non-beast monster with reasonable mental stats
-    if (
-        candidate.creature_type == CreatureType.Beast
-        or candidate.role == MonsterRole.Bruiser
-        or candidate.attributes.INT <= 10
-        or candidate.attributes.WIS <= 10
-        or candidate.attributes.CHA <= 10
-    ):
-        return NO_AFFINITY
-
-    score = 0
-
-    high_int = candidate.attributes.INT >= 16
-    high_wis = candidate.attributes.WIS >= 16
-    high_cha = candidate.attributes.CHA >= 16
-
-    if high_int + high_wis + high_cha >= 2:
-        score += MODERATE_AFFINITY
-
-    if candidate.role in {MonsterRole.Leader, MonsterRole.Controller}:
-        score += MODERATE_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+def score_clever(candidate: BaseStatblock, **args) -> float:
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.all_but(CreatureType.Beast),
+        require_stats=[Stats.INT, Stats.WIS, Stats.CHA],
+        bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
+        stat_threshold=16,
+        **args,
+    )
 
 
-class _Keen(Power):
+class _Keen(PowerBackport):
     """This creature has a keen mind"""
 
     def __init__(self):
         super().__init__(name="Keen", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_clever(candidate)
+        return score_clever(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -95,7 +74,7 @@ class _Keen(Power):
         return stats, feature
 
 
-class _MarkTheTarget(Power):
+class _MarkTheTarget(PowerBackport):
     """When this creature hits a target with a ranged attack, allies of this creature who can see the target
     have advantage on attack rolls against the target until the start of this creature's next turn.
     """
@@ -104,17 +83,7 @@ class _MarkTheTarget(Power):
         super().__init__(name="Mark the Target", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        # this power makes a lot of sense for leaders, artillery, controllers, high intelligence foes, and ranged foes
-        score = LOW_AFFINITY
-        if candidate.attributes.INT >= 14:
-            score += MODERATE_AFFINITY
-        if candidate.attack_type in {AttackType.RangedSpell, AttackType.RangedWeapon}:
-            score += MODERATE_AFFINITY
-        if candidate.role in {MonsterRole.Artillery, MonsterRole.Controller}:
-            score += MODERATE_AFFINITY
-        if candidate.role in {MonsterRole.Leader}:
-            score += HIGH_AFFINITY
-        return score
+        return score_clever(candidate, require_attack_types=AttackType.AllRanged())
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -126,12 +95,12 @@ class _MarkTheTarget(Power):
         return stats, feature
 
 
-class _UnsettlingWords(Power):
+class _UnsettlingWords(PowerBackport):
     def __init__(self):
         super().__init__(name="Unsettling Words", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_clever(candidate)
+        return score_clever(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

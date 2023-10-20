@@ -14,36 +14,28 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..attack import flavorful_damage_types
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-class _Gigantic(Power):
+class _Gigantic(PowerBackport):
     """Increases the size and damage of the creature but lowers its AC"""
 
     def __init__(self):
-        super().__init__(name="Gigantic", power_type=PowerType.Theme)
+        super().__init__(name="Gigantic", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-        if candidate.role in {MonsterRole.Artillery, MonsterRole.Ambusher}:
-            return NO_AFFINITY
-        if candidate.creature_type in {
-            CreatureType.Beast,
-            CreatureType.Monstrosity,
-            CreatureType.Construct,
-        }:
-            score += EXTRA_HIGH_AFFINITY
-        if candidate.role in {MonsterRole.Defender, MonsterRole.Bruiser}:
-            score += HIGH_AFFINITY
-        return score
+        return score(
+            candidate=candidate,
+            require_types=[
+                CreatureType.Beast,
+                CreatureType.Monstrosity,
+                CreatureType.Construct,
+            ],
+            bonus_roles=[MonsterRole.Defender, MonsterRole.Bruiser],
+            require_attack_types=AttackType.AllMelee(),
+            require_cr=5,
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -66,27 +58,26 @@ class _Gigantic(Power):
         return stats, feature
 
 
-class _Diminutive(Power):
+class _Diminutive(PowerBackport):
     """Decreases the size and damage of the creature but increases its AC"""
 
     def __init__(self):
         super().__init__(name="Diminutive", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-        if candidate.role in {MonsterRole.Bruiser} or candidate.creature_type in {
-            CreatureType.Giant
-        }:
-            return NO_AFFINITY
-        elif candidate.creature_type in {CreatureType.Humanoid, CreatureType.Fey}:
-            score += HIGH_AFFINITY
-        elif candidate.role in {
-            MonsterRole.Ambusher,
-            MonsterRole.Controller,
-            MonsterRole.Skirmisher,
-        }:
-            score += MODERATE_AFFINITY
-        return score
+        def can_be_small(candidate: BaseStatblock) -> bool:
+            return candidate.size <= Size.Medium
+
+        return score(
+            candidate=candidate,
+            require_types=[CreatureType.Humanoid, CreatureType.Fey],
+            require_callback=can_be_small,
+            bonus_roles={
+                MonsterRole.Ambusher,
+                MonsterRole.Controller,
+                MonsterRole.Skirmisher,
+            },
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

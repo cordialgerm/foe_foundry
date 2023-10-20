@@ -6,50 +6,45 @@ from foe_foundry.features import Feature
 from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
 
+from ...attack_template import natural
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-class _EraseMemory(Power):
+def score_aberrant(candidate: BaseStatblock, **kwargs) -> float:
+    def is_aberrant_creature(c: BaseStatblock) -> bool:
+        if (
+            c.creature_type in {CreatureType.Humanoid, CreatureType.Fey}
+            and c.attack_type.is_spell()
+            and c.secondary_damage_type == DamageType.Psychic
+        ):
+            return True
+        else:
+            return c.creature_type in {CreatureType.Aberration}
+
+    args: dict = dict(
+        candidate=candidate,
+        require_callback=is_aberrant_creature,
+        bonus_roles=[MonsterRole.Controller, MonsterRole.Ambusher, MonsterRole.Skirmisher],
+        bonus_attack_types=AttackType.AllSpell(),
+        bonus_damage=DamageType.Psychic,
+    )
+    args.update(kwargs)
+    return score(**args)
+
+
+class _EraseMemory(PowerBackport):
     def __init__(self):
         super().__init__(name="Erase Memory", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        creature_types = {
-            CreatureType.Aberration: HIGH_AFFINITY,
-            CreatureType.Fey: HIGH_AFFINITY,
-            CreatureType.Humanoid: LOW_AFFINITY,
-        }
-
-        roles = {
-            MonsterRole.Controller: HIGH_AFFINITY,
-            MonsterRole.Ambusher: MODERATE_AFFINITY,
-            MonsterRole.Skirmisher: LOW_AFFINITY,
-        }
-
-        if candidate.creature_type not in creature_types:
-            return NO_AFFINITY
-
-        score = 0
-        score += creature_types[candidate.creature_type]
-        score += roles.get(candidate.role, 0)
-
-        if candidate.attack_type.is_spell():
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_aberrant(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -66,23 +61,12 @@ class _EraseMemory(Power):
         return stats, feature
 
 
-class _WarpReality(Power):
+class _WarpReality(PowerBackport):
     def __init__(self):
         super().__init__(name="Warp Reality", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.creature_type == CreatureType.Aberration:
-            score += MODERATE_AFFINITY
-
-        if candidate.attack_type.is_spell():
-            score += MODERATE_AFFINITY
-
-        if candidate.secondary_damage_type == DamageType.Psychic:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_aberrant(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -101,20 +85,12 @@ class _WarpReality(Power):
         return stats, feature
 
 
-class _AdhesiveSkin(Power):
+class _AdhesiveSkin(PowerBackport):
     def __init__(self):
         super().__init__(name="Adhesive Skin", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.creature_type in {CreatureType.Aberration, CreatureType.Ooze}:
-            score += HIGH_AFFINITY
-
-        if candidate.creature_type in {CreatureType.Monstrosity, CreatureType.Construct}:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_aberrant(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -130,39 +106,20 @@ class _AdhesiveSkin(Power):
         return stats, feature
 
 
-class _Incubation(Power):
+class _Incubation(PowerBackport):
     def __init__(self):
-        super().__init__(name="Incubation", power_type=PowerType.Theme)
-        self.damage_types = {DamageType.Necrotic, DamageType.Poison}
+        super().__init__(name="Incubation", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.attack_type != AttackType.MeleeNatural:
-            return NO_AFFINITY
-
-        creature_types = {
-            CreatureType.Aberration: HIGH_AFFINITY,
-            CreatureType.Monstrosity: MODERATE_AFFINITY,
-            CreatureType.Beast: LOW_AFFINITY,
-        }
-        score += creature_types.get(candidate.creature_type, 0)
-
-        if candidate.secondary_damage_type in self.damage_types:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_aberrant(
+            candidate,
+            attack_names=["-", natural.Claw],
+            require_types=CreatureType.Aberration,
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
-        stats = stats.copy(attack_type=AttackType.MeleeNatural)
-
-        if stats.secondary_damage_type not in self.damage_types:
-            damage_type_indx = rng.choice(len(self.damage_types))
-            damage_type = list(self.damage_types)[damage_type_indx]
-            stats = stats.copy(secondary_damage_type=damage_type)
-
         dc = stats.difficulty_class_easy
         timespan = "three months" if stats.cr <= 5 else "three days"
 

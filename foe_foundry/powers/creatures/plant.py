@@ -13,29 +13,20 @@ from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-def _score(candidate: BaseStatblock) -> float:
-    if candidate.creature_type != CreatureType.Plant:
-        return NO_AFFINITY
-
-    return HIGH_AFFINITY
+def score_plant(candidate: BaseStatblock) -> float:
+    return score(candidate=candidate, require_types=CreatureType.Plant)
 
 
-class _PoisonThorns(Power):
+class _PoisonThorns(PowerBackport):
     def __init__(self):
         super().__init__(name="Poison Thorns", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_plant(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -76,12 +67,12 @@ class _PoisonThorns(Power):
         return stats, []
 
 
-class _GraspingRoots(Power):
+class _GraspingRoots(PowerBackport):
     def __init__(self):
         super().__init__(name="Grasping Roots", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_plant(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -94,12 +85,12 @@ class _GraspingRoots(Power):
         return stats, feature
 
 
-class _ChokingVine(Power):
+class _ChokingVine(PowerBackport):
     def __init__(self):
         super().__init__(name="Choking Vine", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_plant(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -122,12 +113,12 @@ class _ChokingVine(Power):
         return stats, None
 
 
-class _HypnoticSpores(Power):
+class _HypnoticSpores(PowerBackport):
     def __init__(self):
         super().__init__(name="Hypnotic Spores", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_plant(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -145,12 +136,12 @@ class _HypnoticSpores(Power):
         return stats, feature
 
 
-class _SpikeGrowth(Power):
+class _SpikeGrowth(PowerBackport):
     def __init__(self):
         super().__init__(name="Spike Growth", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_plant(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

@@ -14,45 +14,41 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-def _score_is_domineering(
-    candidate: BaseStatblock, min_cr: int = 3, require_magic: bool = False
-) -> float:
-    if candidate.attributes.CHA <= 14:
-        return NO_AFFINITY
-
-    if candidate.cr < 5:
-        return NO_AFFINITY
-
-    creature_types = {
-        CreatureType.Fiend: HIGH_AFFINITY,
-        CreatureType.Fey: MODERATE_AFFINITY,
-        CreatureType.Dragon: HIGH_AFFINITY,
-        CreatureType.Celestial: MODERATE_AFFINITY,
-        CreatureType.Undead: MODERATE_AFFINITY,
+def _score_is_domineering(candidate: BaseStatblock, min_cr: int = 3) -> float:
+    magical_creatures = {
+        CreatureType.Fiend,
+        CreatureType.Fey,
+        CreatureType.Dragon,
+        CreatureType.Celestial,
+        CreatureType.Undead,
     }
+    required_creatures = magical_creatures | {CreatureType.Humanoid}
 
-    is_magical = (
-        creature_types.get(candidate.creature_type, 0) >= 0 or candidate.attack_type.is_spell()
+    def is_magical(c: BaseStatblock) -> bool:
+        if c.creature_type in magical_creatures:
+            return True
+
+        # non-holy humanoids
+        if candidate.attack_type.is_spell() and candidate.secondary_damage_type not in {
+            DamageType.Radiant
+        }:
+            return True
+
+        return False
+
+    return score(
+        candidate=candidate,
+        require_types=required_creatures,
+        require_callback=is_magical,
+        bonus_damage=DamageType.Psychic,
+        bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
+        require_stats=Stats.CHA,
+        require_cr=min_cr,
     )
-    if require_magic and not is_magical:
-        return NO_AFFINITY
-
-    roles = {MonsterRole.Leader: HIGH_AFFINITY, MonsterRole.Controller: MODERATE_AFFINITY}
-
-    score = 0
-    score += creature_types.get(candidate.creature_type, 0)
-    score += roles.get(candidate.role, 0)
-    return score if score > 0 else NO_AFFINITY
 
 
 def _ensure_domineering(stats: BaseStatblock) -> BaseStatblock:
@@ -63,9 +59,11 @@ def _ensure_domineering(stats: BaseStatblock) -> BaseStatblock:
     return stats
 
 
-class _CommandingPresence(Power):
+class _CommandingPresence(PowerBackport):
     def __init__(self):
-        super().__init__(name="Commanding Presence", power_type=PowerType.Theme)
+        super().__init__(
+            name="Commanding Presence", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_domineering(candidate)
@@ -86,12 +84,12 @@ class _CommandingPresence(Power):
         return stats, feature
 
 
-class _Charm(Power):
+class _Charm(PowerBackport):
     def __init__(self):
-        super().__init__(name="Commanding Presence", power_type=PowerType.Theme)
+        super().__init__(name="Charm", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_domineering(candidate, min_cr=7, require_magic=True)
+        return _score_is_domineering(candidate, min_cr=7)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

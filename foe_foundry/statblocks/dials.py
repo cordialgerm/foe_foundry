@@ -12,7 +12,7 @@ class MonsterDials:
     attack_damage_dice_modifier: int = 0
     attack_damage_modifier: int = 0
     difficulty_class_modifier: int = 0
-    recommended_powers_modifier: int = 0
+    recommended_powers_modifier: float = 0
     speed_modifier: int = 0
 
     def copy(self, **overrides) -> MonsterDials:

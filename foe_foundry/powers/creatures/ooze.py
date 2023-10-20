@@ -7,30 +7,23 @@ from numpy.random import Generator
 from ...attack_template import natural
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import AttackNames, score
 
 
-def score_ooze(candidate: BaseStatblock, attack_modifiers: AttackModifiers = None) -> float:
-    if candidate.creature_type != CreatureType.Ooze:
-        return NO_AFFINITY
-
-    score = HIGH_AFFINITY
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score if score > 0 else NO_AFFINITY
+def score_ooze(candidate: BaseStatblock, attack_names: AttackNames = None) -> float:
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Ooze,
+        bonus_damage=DamageType.Acid,
+        attack_names=attack_names,
+    )
 
 
 def malleable_form(stats: BaseStatblock) -> Feature:
@@ -43,9 +36,11 @@ def malleable_form(stats: BaseStatblock) -> Feature:
     )
 
 
-class _OozingPassage(Power):
+class _OozingPassage(PowerBackport):
     def __init__(self):
-        super().__init__(name="Oozing Passage", power_type=PowerType.Creature)
+        super().__init__(
+            name="Oozing Passage", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_ooze(candidate)
@@ -65,14 +60,14 @@ class _OozingPassage(Power):
         return stats, [malleable_form(stats), feature]
 
 
-class _ElongatedLimbs(Power):
+class _ElongatedLimbs(PowerBackport):
     def __init__(self):
-        super().__init__(name="Elongated Limbs", power_type=PowerType.Creature)
+        super().__init__(
+            name="Elongated Limbs", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        if not candidate.attack_type.is_melee():
-            return NO_AFFINITY
-        return score_ooze(candidate, attack_modifiers=natural.Slam)
+        return score_ooze(candidate, attack_names=["-", natural.Slam])
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -87,9 +82,9 @@ class _ElongatedLimbs(Power):
         return stats, [malleable_form(stats), feature]
 
 
-class _Split(Power):
+class _Split(PowerBackport):
     def __init__(self):
-        super().__init__(name="Split", power_type=PowerType.Creature)
+        super().__init__(name="Split", power_type=PowerType.Creature, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_ooze(candidate)
@@ -106,9 +101,11 @@ class _Split(Power):
         return stats, [malleable_form(stats), feature]
 
 
-class _Transparent(Power):
+class _Transparent(PowerBackport):
     def __init__(self):
-        super().__init__(name="Transparent", power_type=PowerType.Creature)
+        super().__init__(
+            name="Transparent", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_ooze(candidate)
@@ -126,9 +123,11 @@ class _Transparent(Power):
         return stats, [malleable_form(stats), feature]
 
 
-class _LifeLeech(Power):
+class _LifeLeech(PowerBackport):
     def __init__(self):
-        super().__init__(name="Life Leech", power_type=PowerType.Creature)
+        super().__init__(
+            name="Life Leech", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_ooze(candidate)
@@ -151,7 +150,7 @@ class _LifeLeech(Power):
         return stats, [malleable_form(stats), feature]
 
 
-class _SlimeSpray(Power):
+class _SlimeSpray(PowerBackport):
     def __init__(self):
         super().__init__(name="Slime Spray", power_type=PowerType.Creature)
 
@@ -165,12 +164,12 @@ class _SlimeSpray(Power):
         dc = stats.difficulty_class_easy
 
         feature = Feature(
-            name="Slime Breath",
+            name="Slime Spray",
             action=ActionType.Action,
             replaces_multiattack=1,
             recharge=6,
             description=f"{stats.selfref.capitalize()} sprays slimy goo in a 30-foot cone. Each creature in that area must make a DC {dc} Dexterity saving throw. \
-                On a failure, the creature takes {dmg.description} acid damage and is pulled up to 30 feet toward {stats.selfref}. On a success, the creature takes half as much damage and isn't pulled.",
+                On a failure, the creature takes {dmg.description} acid damage and is **Grappled** (escape DC {dc}). On a success, the creature takes half as much damage instead.",
         )
 
         return stats, [malleable_form(stats), feature]

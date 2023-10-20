@@ -14,34 +14,25 @@ from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import AttackNames, score
 
 
 def score_giant(
     candidate: BaseStatblock,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
     min_cr: float | None = None,
 ) -> float:
-    if candidate.creature_type != CreatureType.Giant:
-        return NO_AFFINITY
-
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    score = HIGH_AFFINITY
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Giant,
+        require_cr=min_cr,
+        attack_names=attack_names,
+        bonus_size=Size.Huge,
+    )
 
 
-class _ForcefulBlow(Power):
+class _ForcefulBlow(PowerBackport):
     def __init__(self):
         super().__init__(name="Forceful Blow", power_type=PowerType.Creature)
 
@@ -67,12 +58,14 @@ class _ForcefulBlow(Power):
         return stats, feature
 
 
-class _ShoveAllies(Power):
+class _ShoveAllies(PowerBackport):
     def __init__(self):
-        super().__init__(name="Forceful Blow", power_type=PowerType.Creature)
+        super().__init__(
+            name="Forceful Blow", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate, attack_modifiers=natural.Slam)
+        return score_giant(candidate, attack_names=natural.Slam)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -86,7 +79,7 @@ class _ShoveAllies(Power):
         return stats, feature
 
 
-class _Boulder(Power):
+class _Boulder(PowerBackport):
     def __init__(self):
         super().__init__(name="Boulder", power_type=PowerType.Creature)
 
@@ -129,7 +122,7 @@ class _Boulder(Power):
         return stats, feature
 
 
-class _CloudRune(Power):
+class _CloudRune(PowerBackport):
     def __init__(self):
         super().__init__(name="Cloud Rune", power_type=PowerType.Creature)
 
@@ -158,7 +151,7 @@ class _CloudRune(Power):
         return stats, feature
 
 
-class _FireRune(Power):
+class _FireRune(PowerBackport):
     def __init__(self):
         super().__init__(name="Fire Rune", power_type=PowerType.Creature)
 
@@ -188,7 +181,7 @@ class _FireRune(Power):
         return stats, feature
 
 
-class _FrostRune(Power):
+class _FrostRune(PowerBackport):
     def __init__(self):
         super().__init__(name="Frost Rune", power_type=PowerType.Creature)
 
@@ -217,7 +210,7 @@ class _FrostRune(Power):
         return stats, feature
 
 
-class _StoneRune(Power):
+class _StoneRune(PowerBackport):
     def __init__(self):
         super().__init__(name="Stone Rune", power_type=PowerType.Creature)
 
@@ -238,7 +231,7 @@ class _StoneRune(Power):
         return stats, feature
 
 
-class _HillRune(Power):
+class _HillRune(PowerBackport):
     def __init__(self):
         super().__init__(name="Hill Rune", power_type=PowerType.Creature)
 
@@ -260,7 +253,7 @@ class _HillRune(Power):
         return stats, feature
 
 
-class _StormRune(Power):
+class _StormRune(PowerBackport):
     def __init__(self):
         super().__init__(name="Storm Rune", power_type=PowerType.Creature)
 
@@ -283,12 +276,12 @@ class _StormRune(Power):
         return stats, feature
 
 
-class _Earthshaker(Power):
+class _Earthshaker(PowerBackport):
     def __init__(self):
         super().__init__(name="Earthshaker", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate, attack_modifiers=natural.Slam)
+        return score_giant(candidate, attack_names=natural.Slam)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

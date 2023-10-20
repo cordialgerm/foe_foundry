@@ -14,44 +14,40 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-def _score(
+def score_deathly(
     candidate: BaseStatblock, undead_only: bool = False, caster_or_undead_only: bool = False
 ) -> float:
-    score = 0
+    creature_types = (
+        {CreatureType.Undead, CreatureType.Fiend, CreatureType.Humanoid}
+        if not undead_only
+        else {CreatureType.Undead}
+    )
 
-    if undead_only and candidate.creature_type != CreatureType.Undead:
-        return NO_AFFINITY
+    def humanoid_is_necromancer(c: BaseStatblock) -> bool:
+        if c.creature_type == CreatureType.Humanoid:
+            return c.attack_type.is_spell() and c.secondary_damage_type == DamageType.Necrotic
+        else:
+            return True
 
-    if caster_or_undead_only and (
-        not candidate.attack_type.is_spell() or candidate.creature_type != CreatureType.Undead
-    ):
-        return NO_AFFINITY
-
-    creature_types = {CreatureType.Undead: HIGH_AFFINITY, CreatureType.Fiend: MODERATE_AFFINITY}
-    score += creature_types.get(candidate.creature_type, 0)
-
-    if candidate.secondary_damage_type == DamageType.Necrotic:
-        score += HIGH_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=creature_types,
+        require_callback=humanoid_is_necromancer if caster_or_undead_only else None,
+        require_damage=DamageType.Necrotic,
+        require_no_other_damage_type=True,
+    )
 
 
-class _AuraOfDoom(Power):
+class _AuraOfDoom(PowerBackport):
     def __init__(self):
-        super().__init__(name="Aura of Doom", power_type=PowerType.Theme)
+        super().__init__(name="Aura of Doom", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, caster_or_undead_only=True)
+        return score_deathly(candidate, caster_or_undead_only=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -67,12 +63,14 @@ class _AuraOfDoom(Power):
         return stats, feature
 
 
-class _AuraOfAnnihilation(Power):
+class _AuraOfAnnihilation(PowerBackport):
     def __init__(self):
-        super().__init__(name="Aura of Annihilation", power_type=PowerType.Theme)
+        super().__init__(
+            name="Aura of Annihilation", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, caster_or_undead_only=True)
+        return score_deathly(candidate, caster_or_undead_only=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -93,12 +91,14 @@ class _AuraOfAnnihilation(Power):
         return stats, feature
 
 
-class _UndyingMinions(Power):
+class _UndyingMinions(PowerBackport):
     def __init__(self):
-        super().__init__(name="Undying Minions", power_type=PowerType.Theme)
+        super().__init__(
+            name="Undying Minions", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, caster_or_undead_only=True)
+        return score_deathly(candidate, caster_or_undead_only=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -114,12 +114,12 @@ class _UndyingMinions(Power):
         return stats, feature
 
 
-class _WitheringBlow(Power):
+class _WitheringBlow(PowerBackport):
     def __init__(self):
         super().__init__(name="Withering Blow", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_deathly(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -151,12 +151,12 @@ class _WitheringBlow(Power):
         return stats, None
 
 
-class _DrainingBlow(Power):
+class _DrainingBlow(PowerBackport):
     def __init__(self):
         super().__init__(name="Draining Blow", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, undead_only=True)
+        return score_deathly(candidate, undead_only=True)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -172,12 +172,14 @@ class _DrainingBlow(Power):
         return stats, feature
 
 
-class _ShadowStride(Power):
+class _ShadowStride(PowerBackport):
     def __init__(self):
-        super().__init__(name="Shadow Stride", power_type=PowerType.Theme)
+        super().__init__(
+            name="Shadow Stride", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, undead_only=False)
+        return score_deathly(candidate, undead_only=False)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
@@ -189,12 +191,14 @@ class _ShadowStride(Power):
         return stats, feature
 
 
-class _FleshPuppets(Power):
+class _FleshPuppets(PowerBackport):
     def __init__(self):
-        super().__init__(name="Flesh Puppets", power_type=PowerType.Theme)
+        super().__init__(
+            name="Flesh Puppets", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, undead_only=False, caster_or_undead_only=True)
+        return score_deathly(candidate, undead_only=False, caster_or_undead_only=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         cr = int(ceil(stats.cr / 3))
@@ -212,12 +216,12 @@ class _FleshPuppets(Power):
         return stats, feature
 
 
-class _DevourSoul(Power):
+class _DevourSoul(PowerBackport):
     def __init__(self):
-        super().__init__(name="Devour Soul", power_type=PowerType.Theme)
+        super().__init__(name="Devour Soul", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, undead_only=True)
+        return score_deathly(candidate, undead_only=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d6)
@@ -236,12 +240,12 @@ class _DevourSoul(Power):
         return stats, feature
 
 
-class _DrainStrength(Power):
+class _DrainStrength(PowerBackport):
     def __init__(self):
         super().__init__(name="Drain Strength", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate, undead_only=True)
+        return score_deathly(candidate, undead_only=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -254,7 +258,8 @@ class _DrainStrength(Power):
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} attempts to magically drain the strength from a creature it can see within 5 feet. \
-                The creature must make a DC {dc} Constitution save. On a failure, the creature takes {dmg.description} necrotic damage and is {weakened}.",
+                The creature must make a DC {dc} Constitution save. On a failure, the creature takes {dmg.description} necrotic damage and is {weakened.caption} \
+                for 1 minute (save ends at end of turn). {weakened.description_3rd}",
         )
 
         return stats, feature

@@ -14,39 +14,24 @@ from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
 def _score_has_teleport(candidate: BaseStatblock) -> float:
-    score = 0
-
-    creature_types = {
-        CreatureType.Fey: HIGH_AFFINITY,
-        CreatureType.Fiend: MODERATE_AFFINITY,
-        CreatureType.Aberration: HIGH_AFFINITY,
-    }
-    score += creature_types.get(candidate.creature_type, 0)
-
-    if score == 0:
-        return 0
-
-    roles = {MonsterRole.Ambusher: LOW_AFFINITY, MonsterRole.Controller: HIGH_AFFINITY}
-    score += roles.get(candidate.role, 0)
-
-    if candidate.attack_type.is_spell():
-        score += MODERATE_AFFINITY
-
-    return score
+    return score(
+        candidate=candidate,
+        require_types={
+            CreatureType.Fey,
+            CreatureType.Fiend,
+            CreatureType.Aberration,
+        },
+        bonus_attack_types=AttackType.AllSpell(),
+        bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
+    )
 
 
-class _BendSpace(Power):
+class _BendSpace(PowerBackport):
     def __init__(self):
         super().__init__(name="Bend Space", power_type=PowerType.Theme)
 
@@ -63,9 +48,9 @@ class _BendSpace(Power):
         return stats, feature
 
 
-class _MistyStep(Power):
+class _MistyStep(PowerBackport):
     def __init__(self):
-        super().__init__(name="Misty Step", power_type=PowerType.Theme)
+        super().__init__(name="Misty Step", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_has_teleport(candidate)
@@ -84,7 +69,7 @@ class _MistyStep(Power):
         return stats, feature
 
 
-class _Scatter(Power):
+class _Scatter(PowerBackport):
     def __init__(self):
         super().__init__(name="Scatter", power_type=PowerType.Theme)
 

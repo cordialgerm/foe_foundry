@@ -14,8 +14,8 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerType
-from ..utils import score
+from ..power import Power, PowerBackport, PowerType
+from ..scoring import score
 
 
 def score_holy(candidate: BaseStatblock, **kwargs) -> float:
@@ -30,22 +30,22 @@ def score_holy(candidate: BaseStatblock, **kwargs) -> float:
     return score(**args)
 
 
-class _DivineSmite(Power):
+class _DivineSmite(PowerBackport):
     def __init__(self):
         super().__init__(name="Divine Smite", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_holy(
             candidate,
-            attack_modifiers=[weapon.MaceAndShield, weapon.Greatsword, weapon.SwordAndShield],
+            attack_names=[weapon.MaceAndShield, weapon.Greatsword, weapon.SwordAndShield],
         )
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(0.4 * stats.attack.average_damage, force_die=Die.d10)
-        burning = conditions.Burning(dmg)
+        dmg = DieFormula.target_value(0.7 * stats.attack.average_damage, force_die=Die.d10)
+        burning = conditions.Burning(dmg, damage_type=DamageType.Radiant)
         feature = Feature(
             name="Divine Smite",
             action=ActionType.BonusAction,
@@ -56,7 +56,7 @@ class _DivineSmite(Power):
         return stats, feature
 
 
-class _MassCureWounds(Power):
+class _MassCureWounds(PowerBackport):
     def __init__(self):
         super().__init__(name="Mass Cure Wounds", power_type=PowerType.Theme)
 
@@ -77,7 +77,7 @@ class _MassCureWounds(Power):
         return stats, feature
 
 
-class _WordOfRadiance(Power):
+class _WordOfRadiance(PowerBackport):
     def __init__(self):
         super().__init__(name="Word of Radiance", power_type=PowerType.Theme)
 

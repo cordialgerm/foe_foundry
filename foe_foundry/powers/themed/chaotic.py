@@ -14,38 +14,25 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-def score_chaotic(candidate: BaseStatblock, min_cr: float | None = None) -> float:
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    score = 0
-
-    creature_types = {
-        CreatureType.Fey: HIGH_AFFINITY,
-        CreatureType.Aberration: HIGH_AFFINITY,
-        CreatureType.Monstrosity: LOW_AFFINITY,
-    }
-    score += creature_types.get(candidate.creature_type, NO_AFFINITY)
-
-    if candidate.attack_type.is_spell():
-        score += LOW_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+def score_chaotic(candidate: BaseStatblock, min_cr: float | None = None, **args) -> float:
+    return score(
+        candidate=candidate,
+        require_types=[CreatureType.Fey, CreatureType.Aberration, CreatureType.Monstrosity],
+        bonus_attack_types=AttackType.AllSpell(),
+        require_cr=min_cr,
+        **args,
+    )
 
 
-class _ChaoticSpace(Power):
+class _ChaoticSpace(PowerBackport):
     def __init__(self):
-        super().__init__(name="Chaotic Space", power_type=PowerType.Theme)
+        super().__init__(
+            name="Chaotic Space", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_chaotic(candidate, min_cr=5)
@@ -68,9 +55,11 @@ class _ChaoticSpace(Power):
         return stats, feature
 
 
-class _EldritchBeacon(Power):
+class _EldritchBeacon(PowerBackport):
     def __init__(self):
-        super().__init__(name="Eldritch Beacon", power_type=PowerType.Theme)
+        super().__init__(
+            name="Eldritch Beacon", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def _summon_formula(self, stats: BaseStatblock, rng: Generator) -> str | None:
         try:
@@ -83,10 +72,10 @@ class _EldritchBeacon(Power):
             return None
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = score_chaotic(candidate, min_cr=5)
-        if score > 0 and self._summon_formula(candidate, np.random.default_rng()) is None:
-            return NO_AFFINITY
-        return score
+        def can_summon(c: BaseStatblock) -> bool:
+            return self._summon_formula(c, np.random.default_rng()) is not None
+
+        return score_chaotic(candidate, min_cr=5, require_callback=can_summon)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         hp = easy_multiple_of_five(stats.cr * 5, min_val=5, max_val=30)
@@ -100,7 +89,8 @@ class _EldritchBeacon(Power):
             uses=1,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} magically creates an Eldritch Beacon (hp {hp}, AC {ac}) at an unoccupied space it can see within 30 feet. \
-                {description} After {duration.description} rounds the beacon is destroyed.",
+                Each turn that the beacon is active, on initiative count 0, {description} \
+                After {duration.description} rounds the beacon is destroyed.",
         )
 
         return stats, feature

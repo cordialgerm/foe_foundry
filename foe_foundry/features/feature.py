@@ -1,4 +1,7 @@
+from __future__ import annotations
+
 from dataclasses import dataclass, field
+from typing import List
 
 from ..damage import Attack
 from .action_type import ActionType
@@ -29,3 +32,15 @@ class Feature:
 
     def __hash__(self) -> int:
         return self.name.__hash__()
+
+    @staticmethod
+    def merge(*features: Feature | List[Feature] | None) -> List[Feature]:
+        results = []
+
+        for item in features:
+            if isinstance(item, Feature):
+                results.append(item)
+            elif isinstance(item, list):
+                results.extend(item)
+
+        return results
