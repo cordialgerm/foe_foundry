@@ -7,7 +7,7 @@ from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, Weakened
+from ...damage import AttackType, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
@@ -15,36 +15,18 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
 def _score_cursed(candidate: BaseStatblock) -> float:
-    score = 0
-
-    creature_types = {
-        CreatureType.Fey: HIGH_AFFINITY,
-        CreatureType.Fiend: HIGH_AFFINITY,
-        CreatureType.Undead: HIGH_AFFINITY,
-    }
-    score += creature_types.get(candidate.creature_type, 0)
-
-    if candidate.secondary_damage_type == DamageType.Necrotic:
-        score += MODERATE_AFFINITY
-
-    if score == 0:
-        return NO_AFFINITY
-
-    if candidate.role in {MonsterRole.Leader, MonsterRole.Controller}:
-        score += MODERATE_AFFINITY
-
-    return score
+    return score(
+        candidate=candidate,
+        require_types=[CreatureType.Fey, CreatureType.Fiend, CreatureType.Undead],
+        bonus_damage=DamageType.Necrotic,
+        require_no_other_damage_type=True,
+        bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
+    )
 
 
 def _as_cursed(stats: BaseStatblock) -> BaseStatblock:
@@ -54,45 +36,7 @@ def _as_cursed(stats: BaseStatblock) -> BaseStatblock:
     return stats
 
 
-class _DevilsSight(Power):
-    def __init__(self):
-        super().__init__(name="Devil's Sight", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.creature_type == CreatureType.Fiend:
-            score += EXTRA_HIGH_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, List[Feature]]:
-        stats = stats.copy(creature_type=CreatureType.Fiend)
-
-        level = 2 if stats.cr <= 5 else 4
-
-        devils_sight = Feature(
-            name="Devil's Sight",
-            action=ActionType.Feature,
-            description=f"Magical darkness doesn't impede {stats.selfref}'s darkvision, and it can see through Hellish Darkness.",
-        )
-
-        darkness = Feature(
-            name="Hellish Darkness",
-            action=ActionType.BonusAction,
-            recharge=5,
-            description=f"{stats.selfref.capitalize()} causes shadowy black flames to fill a 15-foot radius sphere with obscuring darkness centered at a point within 60 feet that {stats.selfref} can see. \
-                The darkness spreads around corners. Creatures without Devil's Sight can't see through this darkness and nonmagical light can't illuminate it. \
-                If any of this spell's area overlaps with an area of light created by a spell of level {level} or lower, the spell that created the light is dispelled. \
-                Creatures of {stats.selfref}'s choice lose any resistance to fire damage while in the darkness, and immunity to fire damage is instead treated as resistance to fire damage.",
-        )
-
-        return stats, [devils_sight, darkness]
-
-
-class _AuraOfDespair(Power):
+class _AuraOfDespair(PowerBackport):
     def __init__(self):
         super().__init__(name="Aura of Despair", power_type=PowerType.Theme)
 
@@ -125,9 +69,11 @@ class _AuraOfDespair(Power):
         return stats, [weight_of_sorrow, dreadful_scream]
 
 
-class _HorriblyDisfigured(Power):
+class _HorriblyDisfigured(PowerBackport):
     def __init__(self):
-        return super().__init__(name="Horribly Disfigured", power_type=PowerType.Theme)
+        return super().__init__(
+            name="Horribly Disfigured", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_cursed(candidate)
@@ -145,7 +91,7 @@ class _HorriblyDisfigured(Power):
             uses=1,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} attempts to magically spread its curse to a target that it can see within 60 feet. \
-                The target must make DC {dc} Charisma save. On a failure, the target takes {dmg.description} psychic damage and is cursed with magical deformities. \
+                The target must make a DC {dc} Charisma save. On a failure, the target takes {dmg.description} psychic damage and is cursed with magical deformities. \
                 While deformed, the creature's speed is halved and it has disadvantage on ability checks, saving throws, and attacks. \
                 The cursed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on a success.",
         )
@@ -153,7 +99,7 @@ class _HorriblyDisfigured(Power):
         return stats, feature
 
 
-class _CursedWound(Power):
+class _CursedWound(PowerBackport):
     def __init__(self):
         return super().__init__(name="Cursed Wound", power_type=PowerType.Theme)
 
@@ -178,9 +124,11 @@ class _CursedWound(Power):
         return stats, feature
 
 
-class _RejectDivinity(Power):
+class _RejectDivinity(PowerBackport):
     def __init__(self):
-        super().__init__(name="Reject Divinity", power_type=PowerType.Theme)
+        super().__init__(
+            name="Reject Divinity", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_cursed(candidate)
@@ -202,7 +150,7 @@ class _RejectDivinity(Power):
         return stats, feature
 
 
-class _BestowCurse(Power):
+class _BestowCurse(PowerBackport):
     def __init__(self):
         super().__init__(name="Bestow Curse", power_type=PowerType.Theme)
 
@@ -224,7 +172,7 @@ class _BestowCurse(Power):
         return stats, feature
 
 
-class _RayOfEnfeeblement(Power):
+class _RayOfEnfeeblement(PowerBackport):
     def __init__(self):
         super().__init__(name="Ray of Enfeeblement", power_type=PowerType.Theme)
 
@@ -235,7 +183,7 @@ class _RayOfEnfeeblement(Power):
         stats = _as_cursed(stats)
         dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d6)
         dc = stats.difficulty_class
-        weakened = Weakened(save_end_of_turn=False)
+        weakened = conditions.Weakened(save_end_of_turn=False)
         feature = Feature(
             name="Ray of Enfeeblement",
             action=ActionType.Action,
@@ -248,7 +196,7 @@ class _RayOfEnfeeblement(Power):
         return stats, feature
 
 
-class _VoidSiphon(Power):
+class _VoidSiphon(PowerBackport):
     def __init__(self):
         super().__init__(name="Void Siphon", power_type=PowerType.Theme)
 
@@ -257,17 +205,13 @@ class _VoidSiphon(Power):
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_cursed(stats)
-
-        duration = DieFormula.from_expression("1d4 + 1")
-        distance = easy_multiple_of_five(stats.cr * 5, min_val=10, max_val=60)
+        fatigue = conditions.Fatigue()
+        distance = 10 if stats.cr <= 7 else 20
 
         feature = Feature(
             name="Void Siphon",
-            action=ActionType.Action,
-            uses=1,
-            replaces_multiattack=2,
-            description=f"For the next {duration.description} turns, any magical healing and radiant or necrotic damage from a hostile source within {distance} feet of {stats.selfref} is negated as it is siphoned by the cursed power of {stats.selfref}. \
-                Prevent any such healing or radiant or nectoric damage. Instead, {stats.selfref} gains that many temporary hitpoints.",
+            action=ActionType.Feature,
+            description=f"When a creature within {distance} feet of {stats.roleref} receives magical healing, it also gains a level of {fatigue}",
         )
 
         return stats, feature
@@ -276,7 +220,6 @@ class _VoidSiphon(Power):
 AuraOfDespair: Power = _AuraOfDespair()
 BestowCurse: Power = _BestowCurse()
 CursedWound: Power = _CursedWound()
-DevilsSight: Power = _DevilsSight()
 HorriblyDisfigured: Power = _HorriblyDisfigured()
 RayOfEnfeeblement: Power = _RayOfEnfeeblement()
 RejectDivinity: Power = _RejectDivinity()
@@ -286,7 +229,6 @@ CursedPowers: List[Power] = [
     AuraOfDespair,
     BestowCurse,
     CursedWound,
-    DevilsSight,
     HorriblyDisfigured,
     RayOfEnfeeblement,
     RejectDivinity,

@@ -27,7 +27,7 @@ class _HeavyArmorClassTemplate(ArmorClassTemplate):
             has_shield=uses_shield,
             is_armored=True,
             quality_level=quality_level,
-            score=ac + 0.4 - (1000 if not stats.creature_type.could_wear_armor else 0),
+            score=ac + 0.4 - (1000 if not stats.creature_type.could_wear_heavy_armor else 0),
         )
 
 

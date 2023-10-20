@@ -9,38 +9,28 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Bleeding, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import summoning
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import AttackNames, score
 
 
 def _score_beast(
     candidate: BaseStatblock,
     primary_attribute: Stats | None = None,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
+    **args,
 ) -> float:
-    if candidate.creature_type != CreatureType.Beast:
-        return NO_AFFINITY
-
-    score = MODERATE_AFFINITY
-
-    if primary_attribute is not None and candidate.primary_attribute == primary_attribute:
-        score += MODERATE_AFFINITY
-
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Beast,
+        bonus_stats=primary_attribute,
+        attack_names=attack_names,
+        **args,
+    )
 
 
-class _HitAndRun(Power):
+class _HitAndRun(PowerBackport):
     def __init__(self):
         super().__init__(name="Hit and Run", power_type=PowerType.Creature)
 
@@ -61,7 +51,7 @@ class _HitAndRun(Power):
         return stats, feature
 
 
-class _MotivatedByCarnage(Power):
+class _MotivatedByCarnage(PowerBackport):
     def __init__(self):
         super().__init__(name="Motivated by Carnage", power_type=PowerType.Creature)
 
@@ -83,12 +73,12 @@ class _MotivatedByCarnage(Power):
         return stats, feature
 
 
-class _Gore(Power):
+class _Gore(PowerBackport):
     def __init__(self):
         super().__init__(name="Gore", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate, Stats.STR, attack_modifiers=natural_attacks.Horns)
+        return _score_beast(candidate, Stats.STR, attack_names=["-", natural_attacks.Horns])
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -112,16 +102,16 @@ class _Gore(Power):
         return stats, None
 
 
-class _Web(Power):
+class _Web(PowerBackport):
     def __init__(self):
         super().__init__(name="Web", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
         attacks = {
-            "*": NO_AFFINITY,
-            natural_attacks.Bite: HIGH_AFFINITY,
-            natural_attacks.Claw: HIGH_AFFINITY,
-            natural_attacks.Stinger: HIGH_AFFINITY,
+            "-",
+            natural_attacks.Bite,
+            natural_attacks.Claw,
+            natural_attacks.Stinger,
         }
         return _score_beast(candidate, Stats.STR, attacks)
 
@@ -158,16 +148,14 @@ class _Web(Power):
         return stats, [feature1, feature2, feature3]
 
 
-class _Packlord(Power):
+class _Packlord(PowerBackport):
     def __init__(self):
-        super().__init__(name="Packlord", power_type=PowerType.Creature)
+        super().__init__(name="Packlord", power_type=PowerType.Creature, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate)
+        return _score_beast(candidate, require_cr=3)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        desired_summon_cr = ceil(stats.cr / 3.5)
-
         if stats.speed.fly:
             options = summoning.FlyingBeasts
         elif stats.speed.swim:
@@ -176,7 +164,7 @@ class _Packlord(Power):
             options = summoning.LandBeasts
 
         _, _, description = summoning.determine_summon_formula(
-            options, desired_summon_cr, rng, max_quantity=10
+            options, stats.cr / 3.5, rng, max_quantity=10
         )
 
         feature = Feature(
@@ -190,9 +178,11 @@ class _Packlord(Power):
         return stats, feature
 
 
-class _WildInstinct(Power):
+class _WildInstinct(PowerBackport):
     def __init__(self):
-        super().__init__(name="Wild Instinct", power_type=PowerType.Creature)
+        super().__init__(
+            name="Wild Instinct", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_beast(candidate)
@@ -202,7 +192,7 @@ class _WildInstinct(Power):
             name="Wild Instinct",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"{stats.selfref.capitalize} identifies the creature with the lowest Strength score that it can see. It then Dashes towards that creature.",
+            description=f"{stats.selfref.capitalize()} identifies the creature with the lowest Strength score that it can see. It then Dashes towards that creature.",
         )
         return stats, feature
 

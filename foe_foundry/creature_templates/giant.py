@@ -4,7 +4,7 @@ from typing import List, Tuple
 import numpy as np
 from numpy.random import Generator
 
-from ..ac_templates import NaturalArmor, Unarmored
+from ..ac_templates import HideArmor, NaturalArmor, Unarmored
 from ..attack_template import AttackTemplate, natural, spell, weapon
 from ..attributes import Stats
 from ..creature_types import CreatureType
@@ -89,8 +89,8 @@ class _GiantTemplate(CreatureTypeTemplate):
             new_attributes = new_attributes.grant_save_proficiency(Stats.STR, Stats.CON)
 
         # giants are often unarmored
-        # giants are unarmored or have natural armor (but not the strongest)
-        stats = stats.add_ac_templates([Unarmored, NaturalArmor], ac_modifier=-3)
+        # giants are unarmored or have natural or hide armor
+        stats = stats.add_ac_templates([Unarmored, NaturalArmor, HideArmor], ac_modifier=-1)
 
         return stats.copy(
             creature_type=CreatureType.Giant,

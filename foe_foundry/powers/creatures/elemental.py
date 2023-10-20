@@ -16,29 +16,20 @@ from ...powers import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import summoning
 from ..attack import flavorful_damage_types
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-def _score(candidate: BaseStatblock) -> float:
-    score = 0
+def score_elemental(candidate: BaseStatblock, **args) -> float:
+    def has_elemental_damage(b: BaseStatblock):
+        return b.secondary_damage_type is not None and b.secondary_damage_type.is_elemental
 
-    if (
-        candidate.secondary_damage_type is not None
-        and candidate.secondary_damage_type.is_elemental
-    ):
-        score += MODERATE_AFFINITY
-
-    if candidate.creature_type == CreatureType.Elemental:
-        score += HIGH_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Elemental,
+        require_callback=has_elemental_damage,
+        **args,
+    )
 
 
 def _as_elemental(stats: BaseStatblock) -> BaseStatblock:
@@ -47,20 +38,14 @@ def _as_elemental(stats: BaseStatblock) -> BaseStatblock:
     return stats
 
 
-class _DamagingAura(Power):
+class _DamagingAura(PowerBackport):
     """Any creature who moves within 10 feet of this creature or who starts their turn there takes CR damage of a type appropriate for this creature."""
 
     def __init__(self):
         super().__init__(name="Damaging Aura", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        # this power makes a lot of sense for foes with a secondary damage type
-        # it can also make sense for large STR-martials (wielding many weapons)
-
-        if candidate.secondary_damage_type is not None:
-            return HIGH_AFFINITY
-        else:
-            return NO_AFFINITY
+        return score_elemental(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -108,22 +93,16 @@ class _DamagingAura(Power):
         return stats, feature
 
 
-class _ElementalAffinity(Power):
+class _ElementalAffinity(PowerBackport):
     """This creature is aligned to a particular element"""
 
     def __init__(self):
-        super().__init__(name="ElementalAffinity", power_type=PowerType.Creature)
+        super().__init__(
+            name="ElementalAffinity", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        # if the monster has a secondary damage type then it's a good fit
-        # otherwise, certain monster types are good fits
-        score = 0
-        if candidate.secondary_damage_type is not None:
-            score += MODERATE_AFFINITY
-        elif flavorful_damage_types(candidate) is not None:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_elemental(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -154,12 +133,14 @@ class _ElementalAffinity(Power):
         return stats, feature
 
 
-class _ElementalShroud(Power):
+class _ElementalShroud(PowerBackport):
     def __init__(self):
-        super().__init__(name="Elemental Shroud", power_type=PowerType.Creature)
+        super().__init__(
+            name="Elemental Shroud", power_type=PowerType.Creature, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_elemental(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_elemental(stats)
@@ -178,12 +159,12 @@ class _ElementalShroud(Power):
         return stats, feature
 
 
-class _ElementalBurst(Power):
+class _ElementalBurst(PowerBackport):
     def __init__(self):
         super().__init__(name="Elemental Burst", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_elemental(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -206,12 +187,14 @@ class _ElementalBurst(Power):
         return stats, feature
 
 
-class _ElementalMagic(Power):
+class _ElementalMagic(PowerBackport):
     def __init__(self):
-        super().__init__(name="Elemental Magic", power_type=PowerType.Creature)
+        super().__init__(
+            name="Elemental Magic", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_elemental(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_elemental(stats)
@@ -274,12 +257,12 @@ class _ElementalMagic(Power):
         return stats, feature
 
 
-class _ElementalSmite(Power):
+class _ElementalSmite(PowerBackport):
     def __init__(self):
         super().__init__(name="Elemental Smite", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_elemental(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = _as_elemental(stats)
@@ -311,7 +294,7 @@ class _ElementalSmite(Power):
         elif dmg_type == DamageType.Poison:
             dmg = DieFormula.target_value(dmg_target, force_die=Die.d8)
             name = "Poisonous Smite"
-            condition = f"and forces the target to make a DC {dc} Constitution saving throw or become Poisoned for 1 minute (save ends at end of turn)."
+            condition = f"and forces the target to make a DC {dc} Constitution saving throw or become **Poisoned** for 1 minute (save ends at end of turn)."
         elif dmg_type == DamageType.Thunder:
             name = "Thundrous Smite"
             dmg = DieFormula.target_value(dmg_target, force_die=Die.d8)
@@ -329,12 +312,14 @@ class _ElementalSmite(Power):
         return stats, feature
 
 
-class _ElementalReplication(Power):
+class _ElementalReplication(PowerBackport):
     def __init__(self):
-        super().__init__(name="Elemental Replication", power_type=PowerType.Creature)
+        super().__init__(
+            name="Elemental Replication", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score(candidate)
+        return score_elemental(candidate, require_cr=5)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         _, _, description = summoning.determine_summon_formula(

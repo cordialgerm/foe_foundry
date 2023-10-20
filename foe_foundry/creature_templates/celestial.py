@@ -9,6 +9,7 @@ from ..attack_template import AttackTemplate, spell, weapon
 from ..attributes import Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
+from ..powers import LOW_POWER
 from ..role_types import MonsterRole
 from ..size import Size, get_size_for_cr
 from ..statblocks import BaseStatblock
@@ -76,6 +77,10 @@ class _CelestialTemplate(CreatureTypeTemplate):
         )
         new_attributes = stats.attributes
 
+        # celestials can fly, but it costs them some power budget
+        new_speed = stats.speed.delta(15).grant_flying()
+        recommended_powers_modifier = stats.recommended_powers_modifier - LOW_POWER
+
         # Celestials often have resistance to radiant damage,
         # and they might also have resistance to damage from nonmagical attacks
         if stats.cr <= 7:
@@ -109,14 +114,17 @@ class _CelestialTemplate(CreatureTypeTemplate):
         if stats.cr >= 7:
             new_attributes = new_attributes.grant_save_proficiency(Stats.CHA, Stats.WIS)
 
+        # celestials use holy armor
         stats = stats.add_ac_template(HolyArmor)
 
         return stats.copy(
             creature_type=CreatureType.Celestial,
             size=size,
+            speed=new_speed,
             languages=["Common", "Celestial", "Telepathy 120 ft"],
             senses=new_senses,
             attributes=new_attributes,
+            recommended_powers_modifier=recommended_powers_modifier,
         )
 
 

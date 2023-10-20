@@ -3,57 +3,40 @@ from typing import List, Tuple
 
 import numpy as np
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
 def score_cruel(
     candidate: BaseStatblock, require_melee: bool = False, min_cr: float | None = None
 ) -> float:
-    # this power makes a lot of sense for cruel enemies
-    # cruel factors: Fiend, Monstrosity, Intimidation proficiency, Intimidation expertise, high charisma, Ambusher, Bruiser, Leader
-    if require_melee and not candidate.attack_type.is_melee():
-        return NO_AFFINITY
-
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    score = 0
-    if candidate.creature_type in {CreatureType.Fiend, CreatureType.Monstrosity}:
-        score += HIGH_AFFINITY
-    if candidate.attributes.has_proficiency_or_expertise(Skills.Intimidation):
-        score += HIGH_AFFINITY
-    if candidate.attributes.CHA >= 15:
-        score += MODERATE_AFFINITY
-    if candidate.role in {MonsterRole.Ambusher, MonsterRole.Bruiser, MonsterRole.Leader}:
-        score += MODERATE_AFFINITY
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_attack_types=AttackType.AllMelee() if require_melee else None,
+        bonus_types=[CreatureType.Fiend, CreatureType.Monstrosity, CreatureType.Humanoid],
+        bonus_skills=Skills.Intimidation,
+        bonus_stats=Stats.CHA,
+        bonus_roles={MonsterRole.Ambusher, MonsterRole.Bruiser, MonsterRole.Leader},
+    )
 
 
-class _DelightsInSuffering(Power):
+class _DelightsInSuffering(PowerBackport):
     """When attacking a target whose current hit points are below half their hit point maximum,
     this creature has advantage on attack rolls and deals an extra CR damage when they hit."""
 
     def __init__(self):
-        super().__init__(name="Delights in Suffering", power_type=PowerType.Theme)
+        super().__init__(
+            name="Delights in Suffering", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_cruel(candidate, min_cr=3)
@@ -83,9 +66,9 @@ class _DelightsInSuffering(Power):
         return stats, feature
 
 
-class _Lethal(Power):
+class _Lethal(PowerBackport):
     def __init__(self):
-        super().__init__(name="Lethal", power_type=PowerType.Theme)
+        super().__init__(name="Lethal", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_cruel(candidate, require_melee=True, min_cr=7)
@@ -100,7 +83,7 @@ class _Lethal(Power):
             name="Lethal",
             action=ActionType.Feature,
             description=f"{stats.selfref.capitalize()} scores a critical hit on an unmodified attack roll of {crit_lower}-20. \
-                Additional, a critical hit from {stats.selfref} deals an additional {dmg.description} {dmg_type} damage (do not apply crit modifier to this damage), and the creature dies if this attack reduces its hit points to 0.",
+                Additionally, a critical hit from {stats.selfref} deals an additional {dmg.description} {dmg_type} damage (do not apply crit modifier to this damage), and the creature dies if this attack reduces its hit points to 0.",
         )
 
         return stats, feature

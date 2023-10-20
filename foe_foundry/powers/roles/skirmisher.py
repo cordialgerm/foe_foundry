@@ -14,56 +14,36 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-def _skirmisher_requirements(
-    candidate: BaseStatblock,
-    require_skirmisher: bool = True,
-    dex_based: bool = True,
-    requires_tactics: bool = False,
-) -> float:
-    score = 0
+def score_skirmisher(candidate: BaseStatblock, requires_tactics: bool = True, **args) -> float:
+    def ideal_skirmisher(c: BaseStatblock) -> bool:
+        # skirmishing units were typically made up of poor, lightly-armored soldiers
+        return c.creature_type in {CreatureType.Humanoid} and c.cr <= 2
 
-    # skirmishing units were typically made up of poor, lightly-armored soldiers
-    candidate_could_use_tactics = (
-        candidate.creature_type in {CreatureType.Humanoid} and candidate.cr <= 2
+    def is_organized(c: BaseStatblock) -> bool:
+        return c.creature_type.could_be_organized
+
+    return score(
+        candidate=candidate,
+        require_roles=MonsterRole.Skirmisher,
+        bonus_roles=MonsterRole.Skirmisher,
+        bonus_stats=Stats.DEX,
+        bonus_speed=40,
+        bonus_callback=ideal_skirmisher,
+        require_callback=is_organized if requires_tactics else None,
+        **args,
     )
 
-    if require_skirmisher and candidate.role != MonsterRole.Skirmisher:
-        return NO_AFFINITY
 
-    if requires_tactics and not candidate_could_use_tactics:
-        return NO_AFFINITY
-
-    if candidate.role == MonsterRole.Ambusher:
-        score += MODERATE_AFFINITY
-
-    if dex_based and candidate.primary_attribute == Stats.DEX:
-        score += MODERATE_AFFINITY
-
-    if not dex_based and candidate.primary_attribute == Stats.STR:
-        score += MODERATE_AFFINITY
-
-    if candidate_could_use_tactics:
-        score += MODERATE_AFFINITY
-
-    return score if score > 0 else NO_AFFINITY
-
-
-class _Nimble(Power):
+class _Nimble(PowerBackport):
     def __init__(self):
-        super().__init__(name="Nimble", power_type=PowerType.Role)
+        super().__init__(name="Nimble", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _skirmisher_requirements(candidate, require_skirmisher=False)
+        return score_skirmisher(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -72,66 +52,37 @@ class _Nimble(Power):
         stats = stats.copy(speed=new_speed)
         feature = Feature(
             name="Nimble",
-            description=f"{stats.roleref} ignores difficult terrain",
+            description=f"{stats.roleref.capitalize()} ignores difficult terrain",
             action=ActionType.Feature,
         )
 
         return stats, feature
 
 
-class _CarefulSteps(Power):
+class _CarefulSteps(PowerBackport):
     def __init__(self):
-        super().__init__(name="Careful Steps", power_type=PowerType.Role)
+        super().__init__(name="Careful Steps", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _skirmisher_requirements(candidate, require_skirmisher=False)
+        return score_skirmisher(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
     ) -> Tuple[BaseStatblock, Feature]:
         feature = Feature(
             name="Careful Steps",
-            description=f"{stats.roleref}'s movement does not provoke opportunity attacks until the end of their turn",
+            description=f"{stats.roleref.capitalize()}'s movement does not provoke opportunity attacks until the end of their turn",
             action=ActionType.BonusAction,
         )
         return stats, feature
 
 
-class _KnockBack(Power):
-    def __init__(self):
-        super().__init__(name="Knock Back", power_type=PowerType.Role)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _skirmisher_requirements(candidate, require_skirmisher=False, dex_based=False)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        description = f"On a hit, the target is pushed up to 5 feet away from {stats.selfref}."
-        if stats.cr >= 4:
-            dc = stats.difficulty_class
-            description += (
-                f" The target must also succeed on a DC {dc} Strength save or be knocked prone."
-            )
-
-        feature = Feature(
-            name="Knock Back",
-            description=description,
-            action=ActionType.Feature,
-            hidden=True,
-            modifies_attack=True,
-        )
-        return stats, feature
-
-
-class _Skirmish(Power):
+class _Skirmish(PowerBackport):
     def __init__(self):
         super().__init__(name="Skirmish", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _skirmisher_requirements(
-            candidate, require_skirmisher=True, requires_tactics=True
-        )
+        return score_skirmisher(candidate, requires_tactics=True)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -146,19 +97,19 @@ class _Skirmish(Power):
             replaces_multiattack=1,
             action=ActionType.Action,
             description=f"{stats.roleref.capitalize()} throws a net in a {net_size} ft. cube at a point it can see within {net_range} ft. \
-                Each creature within the cube must succeed on a DC {dc} Strength save or be Grappled (escape DC {dc}) and Restrained while grappled in this way.",
+                Each creature within the cube must succeed on a DC {dc} Strength save or be **Grappled** (escape DC {dc}) and **Restrained** while grappled in this way.",
         )
 
         return stats, feature
 
 
-class _HarrassingRetreat(Power):
+class _HarrassingRetreat(PowerBackport):
     def __init__(self):
         super().__init__(name="Harassing Retreat", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _skirmisher_requirements(
-            candidate, require_skirmisher=True, requires_tactics=True
+        return score_skirmisher(
+            candidate, requires_tactics=True, require_attack_types=AttackType.AllRanged()
         )
 
     def apply(
@@ -177,12 +128,12 @@ class _HarrassingRetreat(Power):
         return stats, feature
 
 
-class _Speedy(Power):
+class _Speedy(PowerBackport):
     def __init__(self):
-        super().__init__(name="Speedy", power_type=PowerType.Role)
+        super().__init__(name="Speedy", power_type=PowerType.Role, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _skirmisher_requirements(candidate, require_skirmisher=False)
+        return score_skirmisher(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -207,7 +158,6 @@ class _Speedy(Power):
 
 CarefulSteps: Power = _CarefulSteps()
 HarassingRetreat: Power = _HarrassingRetreat()
-KnockBack: Power = _KnockBack()
 Nimble: Power = _Nimble()
 Skirmish: Power = _Skirmish()
 Speedy: Power = _Speedy()
@@ -216,7 +166,6 @@ Speedy: Power = _Speedy()
 SkirmisherPowers: List[Power] = [
     CarefulSteps,
     HarassingRetreat,
-    KnockBack,
     Nimble,
     Skirmish,
     Speedy,

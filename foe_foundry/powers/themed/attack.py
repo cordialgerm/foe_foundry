@@ -11,73 +11,42 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
-from ..attack import flavorful_damage_types
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
-from ..scores import HIGH_AFFINITY, LOW_AFFINITY, MODERATE_AFFINITY, NO_AFFINITY
+from ..power import Power, PowerBackport, PowerType
+from ..scoring import AttackNames, score
 
 
-def score(
+def score_attack(
     candidate: BaseStatblock,
     target_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
     target_damage_type: DamageType | Set[DamageType] | List[DamageType] | None = None,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
     size_boost: bool = False,
 ) -> float:
-    def clean_set(a):
-        if a is None:
-            return set()
-        elif isinstance(a, list):
-            return set(a)
-        elif isinstance(a, set):
-            return a
-        else:
-            return {a}
-
-    target_roles = clean_set(target_roles)
-    target_damage_type = clean_set(target_damage_type)
-
-    score = resolve_attack_modifier(candidate, attack_modifiers)
-
-    if candidate.primary_damage_type in target_damage_type:
-        score += MODERATE_AFFINITY
-    if candidate.secondary_damage_type in target_damage_type:
-        score += MODERATE_AFFINITY
-
-    # if none of the above conditions are met then the power doesn't make sense
-    # these remaining factors don't determine eligibility, just likelyhood
-    if score == 0:
-        return NO_AFFINITY
-
-    if candidate.creature_type == CreatureType.Humanoid:
-        score += MODERATE_AFFINITY
-
-    if candidate.role in target_roles:
-        score += HIGH_AFFINITY
-
-    if len(flavorful_damage_types(candidate).intersection(target_damage_type)):
-        score += MODERATE_AFFINITY
-
-    if size_boost and candidate.size >= Size.Large:
-        score += MODERATE_AFFINITY
-    if size_boost and candidate.size >= Size.Huge:
-        score += MODERATE_AFFINITY
-    if size_boost and candidate.size >= Size.Gargantuan:
-        score += MODERATE_AFFINITY
-
-    return score
+    return score(
+        candidate=candidate,
+        bonus_roles=target_roles,
+        bonus_damage=target_damage_type,
+        attack_names=attack_names,
+        bonus_size=Size.Large if size_boost else None,
+    )
 
 
-class _PoisoningAttack(Power):
+class _PoisoningAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Poisoning Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_damage_type=DamageType.Poison,
             target_roles=[MonsterRole.Controller, MonsterRole.Ambusher],
-            attack_modifiers=[natural.Claw, natural.Bite, natural.Stinger, spell.Poisonbolt],
+            attack_names=[
+                "-",
+                natural.Claw,
+                natural.Bite,
+                natural.Stinger,
+                spell.Poisonbolt,
+            ],
         )
 
     def apply(
@@ -95,15 +64,16 @@ class _PoisoningAttack(Power):
         return stats, feature
 
 
-class _BleedingAttack(Power):
+class _BleedingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Bleeding Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Bruiser, MonsterRole.Skirmisher},
-            attack_modifiers=[
+            attack_names=[
+                "-",
                 natural.Claw,
                 natural.Bite,
                 natural.Horns,
@@ -150,16 +120,16 @@ class _BleedingAttack(Power):
         return stats, feature
 
 
-class _DazingAttack(Power):
+class _DazingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Dazing Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Controller},
             target_damage_type=DamageType.Bludgeoning,
-            attack_modifiers=[natural.Tail, natural.Slam, weapon.Staff],
+            attack_names=["-", natural.Tail, natural.Slam, weapon.Staff],
         )
 
     def apply(
@@ -177,16 +147,16 @@ class _DazingAttack(Power):
         return stats, feature
 
 
-class _BurningAttack(Power):
+class _BurningAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Burning Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Artillery},
             target_damage_type={DamageType.Fire, DamageType.Radiant, DamageType.Acid},
-            attack_modifiers=[spell.HolyBolt, spell.Firebolt, spell.Acidsplash],
+            attack_names=["-", spell.HolyBolt, spell.Firebolt, spell.Acidsplash],
         )
 
     def apply(
@@ -206,16 +176,16 @@ class _BurningAttack(Power):
         return stats, feature
 
 
-class _ProneAttack(Power):
+class _ProneAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Prone Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Bruiser},
             size_boost=True,
-            attack_modifiers=[weapon.Staff, weapon.Maul, natural.Slam, natural.Stomp],
+            attack_names=["-", weapon.Staff, weapon.Maul, natural.Slam, natural.Stomp],
         )
 
     def apply(
@@ -237,16 +207,17 @@ class _ProneAttack(Power):
         return stats, feature
 
 
-class _SlowingAttack(Power):
+class _SlowingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Slowing Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Controller, MonsterRole.Artillery},
             target_damage_type=DamageType.Cold,
-            attack_modifiers=[
+            attack_names=[
+                "-",
                 natural.Stomp,
                 spell.Frostbolt,
                 weapon.JavelinAndShield,
@@ -267,16 +238,17 @@ class _SlowingAttack(Power):
         return stats, feature
 
 
-class _PushingAttack(Power):
+class _PushingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Pushing Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Bruiser},
             size_boost=True,
-            attack_modifiers=[
+            attack_names=[
+                "-",
                 natural.Tail,
                 spell.ArcaneBurst,
                 spell.EdlritchBlast,
@@ -306,16 +278,16 @@ class _PushingAttack(Power):
         return stats, feature
 
 
-class _GrapplingAttack(Power):
+class _GrapplingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Grappling Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Bruiser, MonsterRole.Controller},
             size_boost=True,
-            attack_modifiers=[natural.Slam, natural.Tentacle, weapon.Whip],
+            attack_names=["-", natural.Slam, natural.Tentacle, weapon.Whip],
         )
 
     def apply(
@@ -341,16 +313,22 @@ class _GrapplingAttack(Power):
         return stats, feature
 
 
-class _BlindingAttack(Power):
+class _BlindingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Blinding Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Controller, MonsterRole.Leader},
             target_damage_type={DamageType.Radiant, DamageType.Acid},
-            attack_modifiers=[natural.Spit, spell.HolyBolt, spell.Acidsplash, spell.Firebolt],
+            attack_names=[
+                "-",
+                natural.Spit,
+                spell.HolyBolt,
+                spell.Acidsplash,
+                spell.Firebolt,
+            ],
         )
 
     def apply(
@@ -367,16 +345,16 @@ class _BlindingAttack(Power):
         return stats, feature
 
 
-class _FearingAttack(Power):
+class _FearingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Frightening Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Controller, MonsterRole.Leader, MonsterRole.Ambusher},
             target_damage_type={DamageType.Psychic, DamageType.Necrotic},
-            attack_modifiers=[spell.Gaze, spell.Deathbolt],
+            attack_names=["-", spell.Gaze, spell.Deathbolt],
         )
 
     def apply(
@@ -392,16 +370,16 @@ class _FearingAttack(Power):
         return stats, feature
 
 
-class _CharmingAttack(Power):
+class _CharmingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Charming Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Controller, MonsterRole.Leader},
             target_damage_type=DamageType.Psychic,
-            attack_modifiers=[spell.Gaze],
+            attack_names=["-", spell.Gaze],
         )
 
     def apply(
@@ -418,16 +396,16 @@ class _CharmingAttack(Power):
         return stats, feature
 
 
-class _FreezingAttack(Power):
+class _FreezingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Freezing Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Controller},
             target_damage_type=DamageType.Cold,
-            attack_modifiers=[spell.Frostbolt],
+            attack_names=["-", spell.Frostbolt],
         )
 
     def apply(
@@ -447,16 +425,16 @@ class _FreezingAttack(Power):
         return stats, feature
 
 
-class _ShockingAttack(Power):
+class _ShockingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Shocking Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Controller, MonsterRole.Ambusher},
             target_damage_type={DamageType.Lightning, DamageType.Thunder},
-            attack_modifiers=[spell.Shock, spell.Thundrousblast],
+            attack_names=["-", spell.Shock, spell.Thundrousblast],
         )
 
     def apply(
@@ -474,15 +452,16 @@ class _ShockingAttack(Power):
         return stats, feature
 
 
-class _GrazingAttack(Power):
+class _GrazingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Grazing Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Skirmisher},
-            attack_modifiers=[
+            attack_names=[
+                "-",
                 weapon.Greatsword,
                 weapon.Polearm,
                 natural.Claw,
@@ -505,16 +484,16 @@ class _GrazingAttack(Power):
         return stats, feature
 
 
-class _CleavingAttack(Power):
+class _CleavingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Cleaving Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             size_boost=True,
             target_roles={MonsterRole.Bruiser},
-            attack_modifiers=[weapon.Greataxe, natural.Tail],
+            attack_names=["-", weapon.Greataxe, natural.Tail],
         )
 
     def apply(
@@ -534,15 +513,16 @@ class _CleavingAttack(Power):
         return stats, feature
 
 
-class _SappingAttack(Power):
+class _SappingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Sapping Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles={MonsterRole.Skirmisher, MonsterRole.Controller},
-            attack_modifiers=[
+            attack_names=[
+                "-",
                 weapon.SpearAndShield,
                 weapon.SwordAndShield,
                 weapon.Traps,
@@ -563,16 +543,16 @@ class _SappingAttack(Power):
         return stats, feature
 
 
-class _VexingAttack(Power):
+class _VexingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Vexing Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             size_boost=True,
             target_roles={MonsterRole.Ambusher, MonsterRole.Leader},
-            attack_modifiers=[weapon.Shortbow, weapon.Shortswords, weapon.RapierAndShield],
+            attack_names=["-", weapon.Shortbow, weapon.Shortswords, weapon.RapierAndShield],
         )
 
     def apply(
@@ -588,16 +568,17 @@ class _VexingAttack(Power):
         return stats, feature
 
 
-class _WeakeningAttack(Power):
+class _WeakeningAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Weakening Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_damage_type=[DamageType.Necrotic, DamageType.Poison, DamageType.Psychic],
             target_roles=[MonsterRole.Controller, MonsterRole.Artillery],
-            attack_modifiers=[
+            attack_names=[
+                "-",
                 natural.Bite,
                 natural.Stinger,
                 spell.Deathbolt,
@@ -621,15 +602,16 @@ class _WeakeningAttack(Power):
         return stats, feature
 
 
-class _DisarmingAttack(Power):
+class _DisarmingAttack(PowerBackport):
     def __init__(self):
         super().__init__(name="Disarming Attack", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
+        return score_attack(
             candidate,
             target_roles=[MonsterRole.Controller, MonsterRole.Artillery],
-            attack_modifiers=[
+            attack_names=[
+                "-",
                 weapon.SwordAndShield,
                 weapon.Greataxe,
                 weapon.Greatsword,

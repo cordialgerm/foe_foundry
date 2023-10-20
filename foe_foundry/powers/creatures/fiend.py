@@ -16,33 +16,24 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..scoring import AttackNames, score
 
 
 def score_fiend(
     candidate: BaseStatblock,
     min_cr: float | None = None,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
 ) -> float:
-    if candidate.creature_type != CreatureType.Fiend:
-        return NO_AFFINITY
-    if min_cr is not None and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    score = HIGH_AFFINITY
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Fiend,
+        require_cr=min_cr,
+        attack_names=attack_names,
+    )
 
 
-class _EmpoweredByDeath(Power):
+class _EmpoweredByDeath(PowerBackport):
     def __init__(self):
         super().__init__(name="Empowered by Death", power_type=PowerType.Creature)
 
@@ -50,7 +41,7 @@ class _EmpoweredByDeath(Power):
         return score_fiend(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        hp = int(floor(5 + 2 * stats.cr))
+        hp = easy_multiple_of_five(2 * stats.cr, min_val=5, max_val=30)
 
         feature = Feature(
             name="Empowered by Death",
@@ -61,7 +52,7 @@ class _EmpoweredByDeath(Power):
         return stats, feature
 
 
-class _RelishYourFailure(Power):
+class _RelishYourFailure(PowerBackport):
     def __init__(self):
         super().__init__(name="Relish Your Failure", power_type=PowerType.Creature)
 
@@ -90,7 +81,7 @@ class _RelishYourFailure(Power):
         return stats, [feature1, feature2]
 
 
-class _FiendishTeleporation(Power):
+class _FiendishTeleporation(PowerBackport):
     def __init__(self):
         super().__init__(name="Fiendish Teleportation", power_type=PowerType.Creature)
 
@@ -114,7 +105,7 @@ class _FiendishTeleporation(Power):
         return stats, feature
 
 
-class _WallOfFire(Power):
+class _WallOfFire(PowerBackport):
     def __init__(self):
         super().__init__(name="Wall of Fire", power_type=PowerType.Creature)
 
@@ -126,14 +117,14 @@ class _WallOfFire(Power):
     ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
         dc = stats.difficulty_class_easy
 
-        if stats.cr <= 5:
+        if stats.cr <= 7:
             uses = 1
             concentration = ""
-        elif stats.cr <= 10:
-            uses = 3
+        elif stats.cr <= 11:
+            uses = 1
             concentration = " without requiring concentration"
         else:
-            uses = None
+            uses = 3
             concentration = " without requiring concentration"
 
         feature = Feature(
@@ -146,12 +137,12 @@ class _WallOfFire(Power):
         return stats, feature
 
 
-class _FiendishBite(Power):
+class _FiendishBite(PowerBackport):
     def __init__(self):
         super().__init__(name="Fiendish Bite", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(candidate, attack_modifiers=natural_attacks.Bite)
+        return score_fiend(candidate, attack_names=natural_attacks.Bite)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -172,9 +163,11 @@ class _FiendishBite(Power):
         return stats, []
 
 
-class _FiendishSummons(Power):
+class _FiendishSummons(PowerBackport):
     def __init__(self):
-        super().__init__(name="Fiendish Summons", power_type=PowerType.Creature)
+        super().__init__(
+            name="Fiendish Summons", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_fiend(candidate, min_cr=3)
@@ -195,7 +188,7 @@ class _FiendishSummons(Power):
         return stats, feature
 
 
-class _TemptingOffer(Power):
+class _TemptingOffer(PowerBackport):
     def __init__(self):
         super().__init__(name="Tempting Offer", power_type=PowerType.Creature)
 
@@ -218,6 +211,40 @@ class _TemptingOffer(Power):
         return stats, feature
 
 
+class _DevilsSight(PowerBackport):
+    def __init__(self):
+        super().__init__(name="Devil's Sight", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_fiend(candidate)
+
+    def apply(
+        self, stats: BaseStatblock, rng: Generator
+    ) -> Tuple[BaseStatblock, List[Feature]]:
+        stats = stats.copy(creature_type=CreatureType.Fiend)
+
+        level = 2 if stats.cr <= 5 else 4
+
+        devils_sight = Feature(
+            name="Devil's Sight",
+            action=ActionType.Feature,
+            description=f"Magical darkness doesn't impede {stats.selfref}'s darkvision, and it can see through Hellish Darkness.",
+        )
+
+        darkness = Feature(
+            name="Hellish Darkness",
+            action=ActionType.BonusAction,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} causes shadowy black flames to fill a 15-foot radius sphere with obscuring darkness centered at a point within 60 feet that {stats.selfref} can see. \
+                The darkness spreads around corners. Creatures without Devil's Sight can't see through this darkness and nonmagical light can't illuminate it. \
+                If any of this spell's area overlaps with an area of light created by a spell of level {level} or lower, the spell that created the light is dispelled. \
+                Creatures of {stats.selfref}'s choice lose any resistance to fire damage while in the darkness, and immunity to fire damage is instead treated as resistance to fire damage.",
+        )
+
+        return stats, [devils_sight, darkness]
+
+
+DevilsSight: Power = _DevilsSight()
 EmpoweredByDeath: Power = _EmpoweredByDeath()
 FiendishBite: Power = _FiendishBite()
 FiendishSummons: Power = _FiendishSummons()
@@ -227,6 +254,7 @@ TemptingOffer: Power = _TemptingOffer()
 WallOfFire: Power = _WallOfFire()
 
 FiendishPowers: List[Power] = [
+    DevilsSight,
     EmpoweredByDeath,
     FiendishBite,
     FiendishSummons,

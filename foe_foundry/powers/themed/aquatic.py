@@ -14,27 +14,24 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-class _Aquatic(Power):
+def score_aquatic(candidate: BaseStatblock) -> float:
+    return score(
+        candidate=candidate,
+        require_types=[CreatureType.Beast, CreatureType.Monstrosity, CreatureType.Humanoid],
+        bonus_damage=DamageType.Cold,
+    )
+
+
+class _Aquatic(PowerBackport):
     def __init__(self):
-        super().__init__(name="Aquatic", power_type=PowerType.Theme)
+        super().__init__(name="Aquatic", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-        if candidate.creature_type in {CreatureType.Beast, CreatureType.Monstrosity}:
-            score += HIGH_AFFINITY
-        if candidate.secondary_damage_type == DamageType.Cold:
-            score += HIGH_AFFINITY
-        return score if score > 0 else NO_AFFINITY
+        return score_aquatic(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

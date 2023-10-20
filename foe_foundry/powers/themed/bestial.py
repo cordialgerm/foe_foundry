@@ -12,41 +12,31 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-class _EarthshakingDemise(Power):
+def score_bestial(candidate: BaseStatblock, **kwargs) -> float:
+    args: dict = dict(
+        candidate=candidate,
+        require_types=[CreatureType.Monstrosity, CreatureType.Beast, CreatureType.Dragon],
+        bonus_roles=MonsterRole.Bruiser,
+    )
+    args.update(kwargs)
+    return score(**args)
+
+
+class _EarthshakingDemise(PowerBackport):
     def __init__(self):
-        super().__init__(name="Earthshaking Demise", power_type=PowerType.Theme)
+        super().__init__(
+            name="Earthshaking Demise", power_type=PowerType.Theme, power_level=LOW_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.size < Size.Huge:
-            return NO_AFFINITY
+        def is_ground_based(c: BaseStatblock) -> bool:
+            return not c.speed.fly
 
-        score = 0
-
-        creature_types = {
-            CreatureType.Giant: EXTRA_HIGH_AFFINITY,
-            CreatureType.Monstrosity: HIGH_AFFINITY,
-            CreatureType.Beast: MODERATE_AFFINITY,
-            CreatureType.Construct: MODERATE_AFFINITY,
-            CreatureType.Elemental: LOW_AFFINITY,
-            CreatureType.Dragon: LOW_AFFINITY,
-        }
-
-        score += creature_types.get(candidate.creature_type, 0)
-
-        if candidate.role in {MonsterRole.Bruiser}:
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_bestial(candidate, bonus_size=Size.Huge, require_callback=is_ground_based)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -60,26 +50,14 @@ class _EarthshakingDemise(Power):
         return stats, feature
 
 
-class _FeralRetaliation(Power):
+class _FeralRetaliation(PowerBackport):
     def __init__(self):
-        super().__init__(name="Feral Retaliation", power_type=PowerType.Theme)
+        super().__init__(
+            name="Feral Retaliation", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        creature_types = {
-            CreatureType.Beast: HIGH_AFFINITY,
-            CreatureType.Monstrosity: HIGH_AFFINITY,
-            CreatureType.Giant: MODERATE_AFFINITY,
-            CreatureType.Dragon: LOW_AFFINITY,
-        }
-
-        score += creature_types.get(candidate.creature_type, 0)
-
-        if candidate.role in {MonsterRole.Bruiser}:
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_bestial(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

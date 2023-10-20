@@ -1,4 +1,7 @@
+from __future__ import annotations
+
 from enum import StrEnum, auto
+from typing import Set
 
 
 class CreatureType(StrEnum):
@@ -44,6 +47,10 @@ class CreatureType(StrEnum):
 
     @property
     def could_wear_armor(self) -> bool:
+        return self.could_wear_light_armor or self.could_wear_heavy_armor
+
+    @property
+    def could_wear_heavy_armor(self) -> bool:
         return self in {
             CreatureType.Celestial,
             CreatureType.Fiend,
@@ -56,6 +63,16 @@ class CreatureType(StrEnum):
         }
 
     @property
+    def could_wear_light_armor(self) -> bool:
+        return self in {
+            CreatureType.Celestial,
+            CreatureType.Fey,
+            CreatureType.Humanoid,
+            CreatureType.Giant,
+            CreatureType.Undead,
+        }
+
+    @property
     def could_use_equipment(self) -> bool:
         return self in {
             CreatureType.Fey,
@@ -63,3 +80,18 @@ class CreatureType(StrEnum):
             CreatureType.Construct,
             CreatureType.Giant,
         }
+
+    @property
+    def could_be_organized(self) -> bool:
+        return self in {
+            CreatureType.Humanoid,
+            CreatureType.Fey,
+            CreatureType.Dragon,
+            CreatureType.Giant,
+        }
+
+    @staticmethod
+    def all_but(*creature_type: CreatureType) -> Set[CreatureType]:
+        exclusions = set(creature_type)
+        all = {c for c in CreatureType}
+        return all - exclusions

@@ -3,6 +3,7 @@ from typing import List, Tuple
 
 import numpy as np
 
+from ...attack_template import natural, spell, weapon
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
@@ -13,31 +14,34 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import Power, PowerBackport, PowerType
+from ..scoring import score
 
 
 def _score(candidate: BaseStatblock) -> float:
-    creature_types = {
-        CreatureType.Plant: MODERATE_AFFINITY,
-        CreatureType.Aberration: LOW_AFFINITY,
-        CreatureType.Monstrosity: LOW_AFFINITY,
-    }
-    score = creature_types.get(candidate.creature_type, 0)
+    return score(
+        candidate=candidate,
+        require_types=[CreatureType.Plant, CreatureType.Aberration, CreatureType.Monstrosity],
+        bonus_damage=DamageType.Poison,
+        require_no_other_damage_type=True,
+        attack_names=[
+            "-",
+            weapon.Daggers,
+            weapon.Shortswords,
+            weapon.RapierAndShield,
+            weapon.Crossbow,
+            weapon.Longbow,
+            weapon.Shortbow,
+            natural.Bite,
+            natural.Claw,
+            natural.Stinger,
+            natural.Tentacle,
+            spell.Poisonbolt,
+        ],
+    )
 
-    if candidate.secondary_damage_type == DamageType.Poison:
-        score += HIGH_AFFINITY
 
-    return score if score > 0 else NO_AFFINITY
-
-
-class _PoisonousDemise(Power):
+class _PoisonousDemise(PowerBackport):
     def __init__(self):
         super().__init__(name="Poisonous Demise", power_type=PowerType.Theme)
 
@@ -62,7 +66,7 @@ class _PoisonousDemise(Power):
         return stats, feature
 
 
-class _VirulentPoison(Power):
+class _VirulentPoison(PowerBackport):
     def __init__(self):
         super().__init__(name="Virulent Poison", power_type=PowerType.Theme)
 

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from enum import StrEnum, auto
-from typing import List, cast
+from typing import List, Set, cast
 
 from ..die import Die
 
@@ -24,6 +24,16 @@ class DamageType(StrEnum):
     @staticmethod
     def All() -> List[DamageType]:
         return [cast(DamageType, s) for s in DamageType._member_map_.values()]
+
+    @staticmethod
+    def Elemental() -> Set[DamageType]:
+        return {
+            DamageType.Fire,
+            DamageType.Cold,
+            DamageType.Acid,
+            DamageType.Lightning,
+            DamageType.Poison,
+        }
 
     @property
     def is_physical(self) -> bool:

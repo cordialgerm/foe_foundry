@@ -11,25 +11,24 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-class _Burrower(Power):
+def score_earthy(candidate: BaseStatblock, **args) -> float:
+    return score(
+        candidate=candidate,
+        require_types=[CreatureType.Beast, CreatureType.Monstrosity, CreatureType.Ooze],
+        **args,
+    )
+
+
+class _Burrower(PowerBackport):
     def __init__(self):
-        super().__init__(name="Burrower", power_type=PowerType.Theme)
+        super().__init__(name="Burrower", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = LOW_AFFINITY
-        if candidate.creature_type in {CreatureType.Beast, CreatureType.Monstrosity}:
-            score += EXTRA_HIGH_AFFINITY
-        return score
+        return score_earthy(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_speed = stats.speed.copy(burrow=stats.speed.walk)
@@ -47,21 +46,14 @@ class _Burrower(Power):
         return stats, feature
 
 
-class _Climber(Power):
+class _Climber(PowerBackport):
     def __init__(self):
-        super().__init__(name="Climber", power_type=PowerType.Theme)
+        super().__init__(name="Climber", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = LOW_AFFINITY
-        if candidate.creature_type in {
-            CreatureType.Beast,
-            CreatureType.Monstrosity,
-            CreatureType.Ooze,
-        }:
-            score += EXTRA_HIGH_AFFINITY
-        if candidate.role in {MonsterRole.Artillery, MonsterRole.Ambusher}:
-            score += MODERATE_AFFINITY
-        return score
+        return score_earthy(
+            candidate, bonus_roles=[MonsterRole.Artillery, MonsterRole.Ambusher]
+        )
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_speed = stats.speed.copy(climb=stats.speed.walk)
@@ -92,39 +84,7 @@ class _Climber(Power):
         return stats, feature
 
 
-class _Stoneskin(Power):
-    def __init__(self):
-        super().__init__(name="Stoneskin", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        if candidate.creature_type == CreatureType.Giant:
-            return HIGH_AFFINITY
-        elif candidate.creature_type == CreatureType.Monstrosity:
-            return MODERATE_AFFINITY
-        elif candidate.creature_type == CreatureType.Dragon:
-            return MODERATE_AFFINITY
-        elif (
-            candidate.creature_type == CreatureType.Elemental
-            and candidate.secondary_damage_type not in {DamageType.Lightning}
-        ):
-            return HIGH_AFFINITY
-        else:
-            return NO_AFFINITY
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        feature = Feature(
-            name="Stoneskin",
-            action=ActionType.Reaction,
-            recharge=5,
-            description=f"{stats.selfref.capitalize()} instantly hardens its exterior in response to being hit by an attack. \
-                {stats.selfref.capitalize()} gains resistance to non-psychic damage until the end of its next turn",
-        )
-
-        return stats, feature
-
-
 Burrower: Power = _Burrower()
 Climber: Power = _Climber()
-Stoneskin: Power = _Stoneskin()
 
-EarthyPowers: List[Power] = [Burrower, Climber, Stoneskin]
+EarthyPowers: List[Power] = [Burrower, Climber]

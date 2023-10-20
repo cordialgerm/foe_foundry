@@ -16,46 +16,35 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
-from ..themed.breath import BreathAttack
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..scoring import AttackNames, score
 
 
-def _score_dragon(
+def score_dragon(
     candidate: BaseStatblock,
     high_cr_boost: bool = False,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
     require_secondary_damage_type: bool = False,
 ) -> float:
-    if candidate.creature_type != CreatureType.Dragon:
-        return NO_AFFINITY
+    def has_secondary_damage_type(b: BaseStatblock) -> bool:
+        return not require_secondary_damage_type or b.secondary_damage_type is not None
 
-    if require_secondary_damage_type and not candidate.secondary_damage_type:
-        return NO_AFFINITY
-
-    score = HIGH_AFFINITY
-
-    if high_cr_boost:
-        score += MODERATE_AFFINITY
-
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-
-    return score
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Dragon,
+        require_callback=has_secondary_damage_type,
+        require_cr=2,
+        bonus_cr=7 if high_cr_boost else None,
+        attack_names=attack_names,
+    )
 
 
-class _DragonsGaze(Power):
+class _DragonsGaze(PowerBackport):
     def __init__(self):
         super().__init__(name="Dragon's Gaze", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate)
+        return score_dragon(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
@@ -75,12 +64,14 @@ class _DragonsGaze(Power):
         return stats, feature
 
 
-class _DraconicRetaliation(Power):
+class _DraconicRetaliation(PowerBackport):
     def __init__(self):
-        super().__init__(name="Draconic Retaliation", power_type=PowerType.Creature)
+        super().__init__(
+            name="Draconic Retaliation", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate, high_cr_boost=True)
+        return score_dragon(candidate, high_cr_boost=True)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -105,12 +96,12 @@ class _DraconicRetaliation(Power):
         return stats, feature
 
 
-class _TailSwipe(Power):
+class _TailSwipe(PowerBackport):
     def __init__(self):
         super().__init__(name="Tail Swipe", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate, attack_modifiers=natural_attacks.Tail)
+        return score_dragon(candidate, attack_names=natural_attacks.Tail)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         tail_attack = stats.attack.scale(
@@ -133,12 +124,12 @@ class _TailSwipe(Power):
         return stats, feature
 
 
-class _WingBuffet(Power):
+class _WingBuffet(PowerBackport):
     def __init__(self):
         super().__init__(name="Tail Swipe", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate, high_cr_boost=True)
+        return score_dragon(candidate, high_cr_boost=True)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         stats = stats.copy(speed=stats.speed.grant_flying())
@@ -156,12 +147,12 @@ class _WingBuffet(Power):
         return stats, feature
 
 
-class _DragonsGreed(Power):
+class _DragonsGreed(PowerBackport):
     def __init__(self):
         super().__init__(name="Dragon's Greed", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate)
+        return score_dragon(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
@@ -176,24 +167,43 @@ class _DragonsGreed(Power):
         return stats, feature
 
 
-class _DraconicMinions(Power):
+class _DraconicMinions(PowerBackport):
     def __init__(self):
-        super().__init__(name="Draconic Minions", power_type=PowerType.Creature)
+        super().__init__(
+            name="Draconic Minions", power_type=PowerType.Creature, power_level=HIGH_POWER
+        )
+
+    def check_minions(self, stats: BaseStatblock, rng: np.random.Generator) -> str | None:
+        desired_summon_cr = stats.cr / 2.5
+        damage_type = stats.secondary_damage_type
+        if damage_type is None:
+            return None
+
+        try:
+            _, _, description = summoning.determine_summon_formula(
+                summoner=[stats.creature_type, damage_type],
+                summon_cr_target=desired_summon_cr,
+                rng=rng,
+            )
+            return description
+        except ValueError:
+            return None
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_dragon(candidate)
+        minions = self.check_minions(candidate, np.random.default_rng())
+        if minions is None:
+            return -1
+
+        return score_dragon(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        desired_summon_cr = ceil(stats.cr / 2.5)
         damage_type = stats.secondary_damage_type
         if damage_type is None:
             raise ValueError("dragon does not have a secondary damage type")
 
-        _, _, description = summoning.determine_summon_formula(
-            summoner=[stats.creature_type, damage_type],
-            summon_cr_target=desired_summon_cr,
-            rng=rng,
-        )
+        description = self.check_minions(stats, rng)
+        if description is None:
+            raise ValueError("Dragon has no minions available")
 
         feature = Feature(
             name="Draconic Minions",
@@ -205,6 +215,63 @@ class _DraconicMinions(Power):
         return stats, feature
 
 
+class _DragonsBreath(PowerBackport):
+    def __init__(self):
+        super().__init__(
+            name="Breath Attack", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return 2 * score_dragon(candidate, high_cr_boost=True)
+
+    def apply(
+        self, stats: BaseStatblock, rng: np.random.Generator
+    ) -> Tuple[BaseStatblock, Feature]:
+        damage_type = stats.secondary_damage_type or DamageType.Fire
+
+        if stats.cr <= 3:
+            distance = 15
+        elif stats.cr <= 7:
+            distance = 30
+        elif stats.cr <= 11:
+            distance = 45
+        else:
+            distance = 60
+
+        if rng.random() <= 0.5:
+            template = f"{distance} ft cone"
+            save_type = "Constitution"
+            multiplier = 1
+        else:
+            width = easy_multiple_of_five(5 * distance / 15)
+            template = f"{2*distance} ft line {width} ft wide"
+            save_type = "Dexterity"
+            multiplier = 1.1
+
+        dmg = DieFormula.target_value(
+            max(
+                5 + multiplier * 2 * stats.cr,
+                multiplier * 3.8 * stats.cr,
+                multiplier * 0.6 * stats.attack.average_damage * stats.multiattack,
+            ),
+            suggested_die=Die.d8,
+        )
+
+        dc = stats.difficulty_class
+
+        feature = Feature(
+            name=f"{damage_type.capitalize()} Breath",
+            action=ActionType.Action,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} breathes {damage_type} in a {template}. \
+                Each creature in the area must make a DC {dc} {save_type} save. \
+                On a failure, the creature takes {dmg.description} {damage_type} damage or half as much on a success.",
+        )
+
+        return stats, feature
+
+
+DragonsBreath: Power = _DragonsBreath()
 DragonsGaze: Power = _DragonsGaze()
 DragonsGreed: Power = _DragonsGreed()
 DraconicMinions: Power = _DraconicMinions()
@@ -214,7 +281,7 @@ WingBuffet: Power = _WingBuffet()
 
 
 DragonPowers: List[Power] = [
-    BreathAttack,
+    DragonsBreath,
     DragonsGaze,
     DragonsGreed,
     DraconicMinions,

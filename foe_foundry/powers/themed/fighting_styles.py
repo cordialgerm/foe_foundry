@@ -13,70 +13,20 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..attack import flavorful_damage_types
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
-from ..scores import HIGH_AFFINITY, LOW_AFFINITY, MODERATE_AFFINITY, NO_AFFINITY
-from .organized import _score_could_be_organized
-
-T = TypeVar("T")
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..scoring import AttackNames, score
 
 
-def clean_set(a: T | None | List[T] | Set[T]) -> Set[T]:
-    if a is None:
-        return set()
-    elif isinstance(a, list):
-        return set(a)
-    elif isinstance(a, set):
-        return a
-    else:
-        return {a}
-
-
-def score(
-    candidate: BaseStatblock,
-    require_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
-    require_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
-    bonus_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
-    bonus_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
-    attack_modifiers: AttackModifiers = None,
-    bonus: float = HIGH_AFFINITY,
-    min_cr: float | None = 3,
-) -> float:
-    require_roles = clean_set(require_roles)
-    require_types = clean_set(require_types)
-    bonus_roles = clean_set(bonus_roles)
-    bonus_types = clean_set(bonus_types)
-
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    if require_roles and not candidate.role in require_roles:
-        return NO_AFFINITY
-
-    if require_types and not candidate.creature_type in require_types:
-        return NO_AFFINITY
-
-    score = resolve_attack_modifier(candidate, attack_modifiers)
-
-    if candidate.creature_type in bonus_types:
-        score += bonus
-
-    if candidate.role in bonus_roles:
-        score += bonus
-
-    return score
-
-
-class _Dueling(Power):
+class _Dueling(PowerBackport):
     def __init__(self):
         super().__init__(name="Dueling", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Leader],
-            attack_modifiers=[
+            attack_names=[
+                "-",
                 weapon.MaceAndShield,
                 weapon.SpearAndShield,
                 weapon.SpearAndShield,
@@ -96,16 +46,16 @@ class _Dueling(Power):
         return stats, feature
 
 
-class _ExpertBrawler(Power):
+class _ExpertBrawler(PowerBackport):
     def __init__(self):
         super().__init__(name="Expert Brawler", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             require_types=[CreatureType.Humanoid, CreatureType.Giant],
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Controller],
-            attack_modifiers={"*": NO_AFFINITY, natural.Slam: HIGH_AFFINITY},
+            attack_names={"-", natural.Slam},
         )
 
     def apply(
@@ -131,22 +81,22 @@ class _ExpertBrawler(Power):
         return stats, [feature1, feature2]
 
 
-class _Interception(Power):
+class _Interception(PowerBackport):
     def __init__(self):
         super().__init__(name="Interception", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
-            attack_modifiers={
-                "*": NO_AFFINITY,
-                weapon.SwordAndShield: HIGH_AFFINITY,
-                weapon.SpearAndShield: HIGH_AFFINITY,
-                weapon.Greataxe: HIGH_AFFINITY,
-                weapon.Polearm: HIGH_AFFINITY,
-                weapon.MaceAndShield: HIGH_AFFINITY,
-                weapon.RapierAndShield: HIGH_AFFINITY,
-                weapon.Shortswords: HIGH_AFFINITY,
+            candidate=candidate,
+            attack_names={
+                "-",
+                weapon.SwordAndShield,
+                weapon.SpearAndShield,
+                weapon.Greataxe,
+                weapon.Polearm,
+                weapon.MaceAndShield,
+                weapon.RapierAndShield,
+                weapon.Shortswords,
             },
             require_roles=[MonsterRole.Defender, MonsterRole.Bruiser],
         )
@@ -164,13 +114,13 @@ class _Interception(Power):
         return stats, feature
 
 
-class _BaitAndSwitch(Power):
+class _BaitAndSwitch(PowerBackport):
     def __init__(self):
         super().__init__(name="Bait and Switch", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             require_types=CreatureType.Humanoid,
             require_roles=[
                 MonsterRole.Defender,
@@ -194,17 +144,17 @@ class _BaitAndSwitch(Power):
         return stats, feature
 
 
-class _ThrownWeaponExpert(Power):
+class _ThrownWeaponExpert(PowerBackport):
     def __init__(self):
         super().__init__(name="Thrown Weapon Expert", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
-            attack_modifiers={
-                "*": NO_AFFINITY,
-                weapon.JavelinAndShield: HIGH_AFFINITY,
-                weapon.Daggers: HIGH_AFFINITY,
+            candidate=candidate,
+            attack_names={
+                "-",
+                weapon.JavelinAndShield,
+                weapon.Daggers,
             },
         )
 
@@ -221,16 +171,15 @@ class _ThrownWeaponExpert(Power):
         return stats, feature
 
 
-class _ArmorMaster(Power):
+class _ArmorMaster(PowerBackport):
     def __init__(self):
         super().__init__(name="Armor Master", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        armored = any([c for c in candidate.ac_templates if c.is_heavily_armored])
-        if armored:
-            return HIGH_AFFINITY
-        else:
-            return NO_AFFINITY
+        def is_heavily_armored(b: BaseStatblock) -> bool:
+            return any([c for c in b.ac_templates if c.is_heavily_armored])
+
+        return score(candidate=candidate, require_callback=is_heavily_armored)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -243,15 +192,12 @@ class _ArmorMaster(Power):
         return stats, feature
 
 
-class _ShieldMaster(Power):
+class _ShieldMaster(PowerBackport):
     def __init__(self):
         super().__init__(name="Shield Master", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        if candidate.uses_shield:
-            return HIGH_AFFINITY
-        else:
-            return NO_AFFINITY
+        return score(candidate=candidate, require_shield=True)
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -265,14 +211,12 @@ class _ShieldMaster(Power):
         return stats, feature
 
 
-class _PolearmMaster(Power):
+class _PolearmMaster(PowerBackport):
     def __init__(self):
         super().__init__(name="Polearm Master", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate, attack_modifiers={"*": NO_AFFINITY, weapon.Polearm: HIGH_AFFINITY}
-        )
+        return score(candidate=candidate, attack_names={"-", weapon.Polearm})
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
@@ -285,19 +229,21 @@ class _PolearmMaster(Power):
         return stats, feature
 
 
-class _GreatWeaponFighting(Power):
+class _GreatWeaponFighting(PowerBackport):
     def __init__(self):
-        super().__init__(name="Great Weapon Fighting", power_type=PowerType.Theme)
+        super().__init__(
+            name="Great Weapon Fighting", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
-            attack_modifiers={
-                "*": NO_AFFINITY,
-                weapon.Polearm: HIGH_AFFINITY,
-                weapon.Greataxe: HIGH_AFFINITY,
-                weapon.Greatsword: HIGH_AFFINITY,
-                weapon.Maul: MODERATE_AFFINITY,
+            candidate=candidate,
+            attack_names={
+                "-",
+                weapon.Polearm,
+                weapon.Greataxe,
+                weapon.Greatsword,
+                weapon.Maul,
             },
         )
 
@@ -318,17 +264,17 @@ class _GreatWeaponFighting(Power):
         return stats, feature
 
 
-class _TwoWeaponFighting(Power):
+class _TwoWeaponFighting(PowerBackport):
     def __init__(self):
         super().__init__(name="Two Weapon Fighting", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
-            attack_modifiers={
-                "*": NO_AFFINITY,
-                weapon.Daggers: HIGH_AFFINITY,
-                weapon.Shortswords: HIGH_AFFINITY,
+            candidate=candidate,
+            attack_names={
+                "-",
+                weapon.Daggers,
+                weapon.Shortswords,
             },
         )
 
@@ -357,19 +303,21 @@ class _TwoWeaponFighting(Power):
         return stats, feature
 
 
-class _Sharpshooter(Power):
+class _Sharpshooter(PowerBackport):
     def __init__(self):
-        super().__init__(name="Sharpshooter", power_type=PowerType.Theme)
+        super().__init__(
+            name="Sharpshooter", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
-            candidate,
+            candidate=candidate,
             require_roles=MonsterRole.Artillery,
-            attack_modifiers={
-                "*": NO_AFFINITY,
-                weapon.Longbow: HIGH_AFFINITY,
-                weapon.Shortbow: HIGH_AFFINITY,
-                weapon.Crossbow: HIGH_AFFINITY,
+            attack_names={
+                "-",
+                weapon.Longbow,
+                weapon.Shortbow,
+                weapon.Crossbow,
             },
         )
 

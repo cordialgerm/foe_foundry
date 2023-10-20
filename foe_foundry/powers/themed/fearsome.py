@@ -11,72 +11,40 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
 def _score_fearsome(
     candidate: BaseStatblock, min_cr: float = 2, supernatural: bool = True
 ) -> float:
-    if candidate.cr < min_cr:
-        return 0
-
-    creature_types = {
-        CreatureType.Dragon: HIGH_AFFINITY,
-        CreatureType.Fiend: HIGH_AFFINITY,
-        CreatureType.Monstrosity: MODERATE_AFFINITY,
-    }
-
+    creature_types = {CreatureType.Dragon, CreatureType.Fiend, CreatureType.Monstrosity}
     if not supernatural:
-        creature_types.update({CreatureType.Beast: LOW_AFFINITY})
+        creature_types |= {CreatureType.Beast}
 
-    score = creature_types.get(candidate.creature_type, 0)
-    if score == 0:
-        return 0
-
-    if candidate.cr >= 7:
-        score += LOW_AFFINITY
-
-    return score
+    return score(
+        candidate=candidate, require_types=creature_types, require_cr=min_cr, bonus_cr=7
+    )
 
 
 def _score_horrifying(candidate: BaseStatblock, min_cr: float = 1) -> float:
-    if candidate.cr < min_cr:
-        return 0
-
-    creature_types = {
-        CreatureType.Aberration: HIGH_AFFINITY,
-        CreatureType.Undead: EXTRA_HIGH_AFFINITY,
-    }
-
-    score = creature_types.get(candidate.creature_type, 0)
-    if score == 0:
-        return 0
-
-    if candidate.cr >= 7:
-        score += LOW_AFFINITY
-
-    if candidate.secondary_damage_type == DamageType.Psychic:
-        score += MODERATE_AFFINITY
-
-    return score
+    return score(
+        candidate=candidate,
+        require_types=[CreatureType.Aberration, CreatureType.Undead],
+        require_cr=min_cr,
+        bonus_cr=7,
+        bonus_damage=DamageType.Psychic,
+    )
 
 
-class _Repulsion(Power):
+class _Repulsion(PowerBackport):
     def __init__(self):
         super().__init__(name="Repulsion", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = (
+        return (
             _score_horrifying(candidate) + _score_fearsome(candidate, supernatural=False)
         ) / 2
-        return score if score > 0 else NO_AFFINITY
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         if _score_fearsome(stats, supernatural=False) > 0:
@@ -100,13 +68,12 @@ class _Repulsion(Power):
         return stats, feature
 
 
-class _TerrifyingVisage(Power):
+class _TerrifyingVisage(PowerBackport):
     def __init__(self):
         super().__init__(name="Terrifying Visage", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = _score_horrifying(candidate)
-        return score if score > 0 else NO_AFFINITY
+        return _score_horrifying(candidate)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         aging = f"1d4 x {5 if stats.cr < 4 else 10} years"
@@ -124,7 +91,7 @@ class _TerrifyingVisage(Power):
         return stats, feature
 
 
-class _DreadGaze(Power):
+class _DreadGaze(PowerBackport):
     def __init__(self):
         super().__init__(name="Dread Gaze", power_type=PowerType.Theme)
 
@@ -132,7 +99,7 @@ class _DreadGaze(Power):
         score = (
             _score_horrifying(candidate) + _score_fearsome(candidate, supernatural=True)
         ) / 2.0
-        return score if score > 0 else NO_AFFINITY
+        return score
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
@@ -150,13 +117,15 @@ class _DreadGaze(Power):
         return stats, feature
 
 
-class _MindShatteringScream(Power):
+class _MindShatteringScream(PowerBackport):
     def __init__(self):
-        super().__init__(name="Mind-Shattering Scream", power_type=PowerType.Theme)
+        super().__init__(
+            name="Mind-Shattering Scream", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         score = _score_horrifying(candidate)
-        return score if score > 0 else NO_AFFINITY
+        return score
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dmg = DieFormula.target_value(5 + 2.5 * stats.cr, force_die=Die.d6)
@@ -174,7 +143,7 @@ class _MindShatteringScream(Power):
         return stats, feature
 
 
-class _NightmarishVisions(Power):
+class _NightmarishVisions(PowerBackport):
     def __init__(self):
         super().__init__(name="Nightmarish Visions", power_type=PowerType.Theme)
 

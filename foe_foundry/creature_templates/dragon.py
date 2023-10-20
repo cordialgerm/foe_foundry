@@ -9,6 +9,7 @@ from ..attack_template import AttackTemplate, natural, spell
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
+from ..powers import LOW_POWER
 from ..role_types import MonsterRole
 from ..senses import Senses
 from ..size import Size, get_size_for_cr
@@ -80,7 +81,7 @@ class _DragonTemplate(CreatureTypeTemplate):
                 Skills.Perception, Skills.Athletics, Skills.Survival
             )
 
-        # dragons have a breath weapon
+        # dragons have an element
         breath_weapon_damage_type = choose_enum(
             rng,
             [
@@ -110,17 +111,23 @@ class _DragonTemplate(CreatureTypeTemplate):
                 Stats.STR, Stats.CON, Stats.DEX
             )
 
+        # dragons can fly, but it costs them some power budget
+        new_speed = stats.speed.delta(15).grant_flying()
+        recommended_powers_modifier = stats.recommended_powers_modifier - LOW_POWER
+
         # higher-CR dragons have heavy natural armor
         ac_bonus = min(ceil(stats.cr / 7), 2)
         stats = stats.add_ac_template(NaturalArmor, ac_modifier=ac_bonus)
         return stats.copy(
             creature_type=CreatureType.Dragon,
+            speed=new_speed,
             attributes=new_attributes,
             size=size,
             languages=["Common, Draconic"],
             senses=new_senses,
             secondary_damage_type=breath_weapon_damage_type,
             damage_immunities=damage_immunities,
+            recommended_powers_modifier=recommended_powers_modifier,
         )
 
 

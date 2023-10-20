@@ -3,49 +3,38 @@ from typing import List, Tuple
 
 import numpy as np
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
+from ...attack_template import spell
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import Power, PowerBackport, PowerType
+from ..power_type import PowerType
+from ..scoring import score
 
 
-class _WordsOfTreachery(Power):
+def score_charming(candidate: BaseStatblock) -> float:
+    return score(
+        candidate=candidate,
+        require_types=[CreatureType.Fey, CreatureType.Fiend, CreatureType.Aberration],
+        require_stats=Stats.CHA,
+        bonus_roles=[MonsterRole.Controller, MonsterRole.Leader],
+        bonus_skills=[Skills.Deception, Skills.Persuasion],
+        attack_names=spell.Gaze,
+        bonus_damage=DamageType.Psychic,
+        require_no_other_damage_type=True,
+    )
+
+
+class _WordsOfTreachery(PowerBackport):
     def __init__(self):
         super().__init__(name="Words of Treachery", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        creature_types = {
-            CreatureType.Fey: EXTRA_HIGH_AFFINITY,
-            CreatureType.Fiend: MODERATE_AFFINITY,
-            CreatureType.Aberration: LOW_AFFINITY,
-        }
-
-        roles = {
-            MonsterRole.Controller: MODERATE_AFFINITY,
-            MonsterRole.Leader: MODERATE_AFFINITY,
-        }
-
-        score = creature_types.get(candidate.creature_type, 0) + roles.get(candidate.role, 0)
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Deception):
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_charming(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -65,28 +54,12 @@ class _WordsOfTreachery(Power):
         return stats, feature
 
 
-class _CharmingWords(Power):
+class _CharmingWords(PowerBackport):
     def __init__(self):
         super().__init__(name="Charming Words", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        creature_types = {
-            CreatureType.Fey: EXTRA_HIGH_AFFINITY,
-            CreatureType.Fiend: MODERATE_AFFINITY,
-            CreatureType.Dragon: MODERATE_AFFINITY,
-        }
-
-        roles = {
-            MonsterRole.Controller: MODERATE_AFFINITY,
-            MonsterRole.Leader: MODERATE_AFFINITY,
-        }
-
-        score = creature_types.get(candidate.creature_type, 0) + roles.get(candidate.role, 0)
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Persuasion):
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_charming(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

@@ -17,41 +17,27 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import AttackNames, score
 
 
 def _score_is_psychic(
     candidate: BaseStatblock,
     require_aberration: bool = False,
     min_cr: float | None = None,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
 ) -> float:
     # this is great for aberrations, psychic focused creatures, and controllers
-    score = 0
 
-    if require_aberration and not candidate.creature_type == CreatureType.Aberration:
-        return NO_AFFINITY
-
-    if min_cr and candidate.cr < min_cr:
-        return NO_AFFINITY
-
-    if candidate.creature_type == CreatureType.Aberration:
-        score += HIGH_AFFINITY
-    if candidate.secondary_damage_type == DamageType.Psychic:
-        score += HIGH_AFFINITY
-    if candidate.role == MonsterRole.Controller:
-        score += MODERATE_AFFINITY
-
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Aberration if require_aberration else None,
+        require_damage=DamageType.Psychic,
+        bonus_roles=MonsterRole.Controller,
+        require_no_other_damage_type=True,
+        attack_names=attack_names,
+        require_cr=min_cr,
+    )
 
 
 def as_psychic(stats: BaseStatblock) -> BaseStatblock:
@@ -60,7 +46,7 @@ def as_psychic(stats: BaseStatblock) -> BaseStatblock:
     return stats
 
 
-class _Telekinetic(Power):
+class _Telekinetic(PowerBackport):
     """This creature chooses one creature they can see within 100 feet of them
     weighing less than 400 pounds. The target must succeed on a Strength saving throw
     (DC = 11 + 1/2 CR) or be pulled up to 80 feet directly toward this creature."""
@@ -85,7 +71,7 @@ class _Telekinetic(Power):
         return stats, feature
 
 
-class _PsychicInfestation(Power):
+class _PsychicInfestation(PowerBackport):
     def __init__(self):
         super().__init__(name="Psychic Infestation", power_type=PowerType.Theme)
 
@@ -119,7 +105,7 @@ class _PsychicInfestation(Power):
         return stats, feature
 
 
-class _DissonantWhispers(Power):
+class _DissonantWhispers(PowerBackport):
     def __init__(self):
         super().__init__(name="Dissonant Whispers", power_type=PowerType.Theme)
 
@@ -148,9 +134,9 @@ class _DissonantWhispers(Power):
         return stats, feature
 
 
-class _MindBlast(Power):
+class _MindBlast(PowerBackport):
     def __init__(self):
-        super().__init__(name="Mind Blast", power_type=PowerType.Theme)
+        super().__init__(name="Mind Blast", power_type=PowerType.Theme, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_psychic(candidate, min_cr=5, require_aberration=True)
@@ -186,9 +172,9 @@ class _MindBlast(Power):
         return stats, feature
 
 
-class _PsychicMirror(Power):
+class _PainMirror(PowerBackport):
     def __init__(self):
-        super().__init__(name="Psychic Mirror", power_type=PowerType.Theme)
+        super().__init__(name="Mirrored Pain", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_psychic(candidate)
@@ -199,26 +185,28 @@ class _PsychicMirror(Power):
         stats = as_psychic(stats)
 
         feature = Feature(
-            name="Psychic Mirror",
+            name="Mirrored Pain",
             action=ActionType.Reaction,
-            description=f"Whenever {stats.selfref} takes psychic damage, each other creature within 10 feet of {stats.selfref} takes that damage instead.",
+            description=f"Whenever {stats.selfref} takes damage, each other creature within 10 feet of {stats.selfref} takes that half the triggering damage as psychic damage instead.",
         )
 
         return stats, feature
 
 
-class _ExtractBrain(Power):
+class _ExtractBrain(PowerBackport):
     def __init__(self):
-        super().__init__(name="Extract Brain", power_type=PowerType.Theme)
+        super().__init__(
+            name="Extract Brain", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_is_psychic(
             candidate,
             require_aberration=True,
             min_cr=7,
-            attack_modifiers={
-                "*": NO_AFFINITY,
-                natural_attacks.Tentacle: HIGH_AFFINITY,
+            attack_names={
+                "-",
+                natural_attacks.Tentacle,
             },
         )
 
@@ -260,7 +248,7 @@ DissonantWhispers: Power = _DissonantWhispers()
 ExtractBrain: Power = _ExtractBrain()
 MindBlast: Power = _MindBlast()
 PsychicInfestation: Power = _PsychicInfestation()
-PsychicMirror: Power = _PsychicMirror()
+PainMirror: Power = _PainMirror()
 Telekinetic: Power = _Telekinetic()
 
 PsychicPowers: List[Power] = [
@@ -268,6 +256,6 @@ PsychicPowers: List[Power] = [
     ExtractBrain,
     MindBlast,
     PsychicInfestation,
-    PsychicMirror,
+    PainMirror,
     Telekinetic,
 ]

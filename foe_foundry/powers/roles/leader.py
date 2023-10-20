@@ -9,33 +9,26 @@ from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
 from ...utils.rounding import easy_multiple_of_five
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..scoring import score
 
 
-class _ShoutOrders(Power):
+def score_leader(candidate: BaseStatblock) -> float:
+    return score(
+        candidate=candidate,
+        require_roles=MonsterRole.Leader,
+        require_stats=Stats.CHA,
+        bonus_skills=[Skills.Persuasion, Skills.Intimidation, Skills.Insight],
+        bonus_stats=[Stats.CHA, Stats.INT, Stats.WIS],
+    )
+
+
+class _ShoutOrders(PowerBackport):
     def __init__(self):
-        super().__init__(name="Shout Orders", power_type=PowerType.Role)
+        super().__init__(name="Shout Orders", power_type=PowerType.Role, power_level=HIGH_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.role == MonsterRole.Leader:
-            score += HIGH_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Intimidation):
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Persuasion):
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_leader(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -50,26 +43,12 @@ class _ShoutOrders(Power):
         return stats, feature
 
 
-class _Intimidate(Power):
+class _Intimidate(PowerBackport):
     def __init__(self):
         super().__init__(name="Intimidate", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.role == MonsterRole.Leader:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.CHA >= 15:
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Intimidation):
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Persuasion):
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_leader(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -90,32 +69,12 @@ class _Intimidate(Power):
         return stats, feature
 
 
-class _Encouragement(Power):
+class _Encouragement(PowerBackport):
     def __init__(self):
         super().__init__(name="Encouragement", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.role == MonsterRole.Leader:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.WIS >= 15:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.CHA >= 15:
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Insight):
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Medicine):
-            score += LOW_AFFINITY
-
-        if candidate.attributes.has_proficiency_or_expertise(Skills.Persuasion):
-            score += LOW_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_leader(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -138,20 +97,12 @@ class _Encouragement(Power):
         return stats, feature
 
 
-class _LeadByExample(Power):
+class _LeadByExample(PowerBackport):
     def __init__(self):
         super().__init__(name="Lead by Example", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
-        score = 0
-
-        if candidate.role == MonsterRole.Leader:
-            score += HIGH_AFFINITY
-
-        if candidate.attributes.WIS >= 15:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_leader(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator
@@ -166,25 +117,15 @@ class _LeadByExample(Power):
         return stats, feature
 
 
-class _Reposition(Power):
+class _Reposition(PowerBackport):
     """Each ally within 60 feet of this creature who can see and hear them
     can immediately move their speed without provoking opportunity attacks."""
 
     def __init__(self):
-        super().__init__(name="Reposition", power_type=PowerType.Theme)
+        super().__init__(name="Reposition", power_type=PowerType.Theme, power_level=LOW_POWER)
 
     def score(self, candidate: BaseStatblock) -> float:
-        # this trait makes a lot of sense for leaders and high-int enemies
-
-        score = 0
-
-        if candidate.role == MonsterRole.Leader:
-            score += MODERATE_AFFINITY
-
-        if candidate.attributes.INT >= 16:
-            score += MODERATE_AFFINITY
-
-        return score if score > 0 else NO_AFFINITY
+        return score_leader(candidate)
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

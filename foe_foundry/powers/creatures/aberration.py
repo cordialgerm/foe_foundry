@@ -3,6 +3,9 @@ from typing import Dict, List, Tuple
 
 from numpy.random import Generator
 
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
+
 from ...attack_template import natural, spell
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, Swallowed
@@ -11,31 +14,21 @@ from ...features import ActionType, Feature
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..attack_modifiers import AttackModifiers, resolve_attack_modifier
-from ..power import Power, PowerType
-from ..scores import (
-    EXTRA_HIGH_AFFINITY,
-    HIGH_AFFINITY,
-    LOW_AFFINITY,
-    MODERATE_AFFINITY,
-    NO_AFFINITY,
-)
+from ..power import HIGH_POWER, Power, PowerType
+from ..scoring import AttackNames, score
 
 
-def _score_aberration(
+def score_aberration(
     candidate: BaseStatblock,
     min_size: Size | None = None,
-    attack_modifiers: AttackModifiers = None,
+    attack_names: AttackNames = None,
 ) -> float:
-    if candidate.creature_type != CreatureType.Aberration:
-        return NO_AFFINITY
-
-    if min_size and candidate.size < min_size:
-        return NO_AFFINITY
-
-    score = HIGH_AFFINITY
-    score += resolve_attack_modifier(candidate, attack_modifiers)
-    return score if score > 0 else NO_AFFINITY
+    return score(
+        candidate=candidate,
+        require_types=CreatureType.Aberration,
+        require_size=min_size,
+        attack_names=attack_names,
+    )
 
 
 class _GraspingTentacles(Power):
@@ -48,12 +41,12 @@ class _GraspingTentacles(Power):
         super().__init__(name="Grasping Tentacles", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_aberration(
+        return score_aberration(
             candidate,
-            attack_modifiers={natural.Tentacle: HIGH_AFFINITY, "*": NO_AFFINITY},
+            attack_names={"-", natural.Tentacle},
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = int(floor(11 + 0.5 * stats.cr))
         feature = Feature(
             name="Grasping Tentacles",
@@ -62,7 +55,7 @@ class _GraspingTentacles(Power):
             modifies_attack=True,
             hidden=True,
         )
-        return stats, feature
+        return [feature]
 
 
 class _DominatingGaze(Power):
@@ -70,9 +63,9 @@ class _DominatingGaze(Power):
         super().__init__(name="Dominating Gaze", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_aberration(candidate, attack_modifiers=spell.Gaze)
+        return score_aberration(candidate, attack_names=spell.Gaze)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Dominating Gaze",
@@ -83,7 +76,7 @@ class _DominatingGaze(Power):
                 or be forced to immediately use their reaction to move up to half their speed and make their most effective weapon attack or at-will spell or magical attack against a target chosen by this creature. \
                 This counts as a **Charm** effect.",
         )
-        return stats, feature
+        return [feature]
 
 
 class _MaddeningWhispers(Power):
@@ -91,9 +84,9 @@ class _MaddeningWhispers(Power):
         super().__init__(name="Maddening Whispers", power_type=PowerType.Theme)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_aberration(candidate)
+        return score_aberration(candidate)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Madenning Whispers",
@@ -103,8 +96,7 @@ class _MaddeningWhispers(Power):
                 On a 1-4, the creature does nothing. On a 5-6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. \
                 On a 7-8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.",
         )
-
-        return stats, feature
+        return [feature]
 
 
 class _TentacleSlam(Power):
@@ -112,14 +104,12 @@ class _TentacleSlam(Power):
         super().__init__(name="Tentacle Slam", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_aberration(
+        return score_aberration(
             candidate,
-            attack_modifiers={"*": NO_AFFINITY, natural.Tentacle: HIGH_AFFINITY},
+            attack_names={"-", natural.Tentacle},
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, suggested_die=Die.d6)
 
@@ -131,24 +121,31 @@ class _TentacleSlam(Power):
                 Then, {stats.selfref} slams each creature grappled by it into each other or a solid surface. \
                 Each creature must succeed on a DC {dc} Constitution saving throw or take {dmg.description} bludgeoning damage and be **Stunned** until the end of {stats.selfref}'s next turn.",
         )
-        return stats, feature
+        return [feature]
 
 
 class _AntimagicGullet(Power):
     def __init__(self):
-        super().__init__(name="Anti-Magic Gullet", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_aberration(
-            candidate,
-            min_size=Size.Large,
-            attack_modifiers={
-                "*": -1 * MODERATE_AFFINITY,
-                natural.Bite: EXTRA_HIGH_AFFINITY,
-            },
+        super().__init__(
+            name="Anti-Magic Gullet", power_type=PowerType.Theme, power_level=HIGH_POWER
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_aberration(
+            candidate,
+            min_size=Size.Large,
+            attack_names={"-", natural.Bite},
+        )
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats, _ = self._helper(stats)
+        return stats
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        _, feature = self._helper(stats)
+        return [feature]
+
+    def _helper(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
         threshold = easy_multiple_of_five(2 * stats.cr, min_val=5, max_val=40)
         swallowed = Swallowed(
