@@ -199,8 +199,26 @@ All = [
     Champion,
 ]
 Names = [s.name for s in All]
-Named = {s.name: s for s in All}
+Named = {s.name.lower(): s for s in All}
 
 
 def get_named_stats(name: str) -> BaseStatblock:
-    return Named[name]
+    s = Named.get(name.lower(), None)
+    if s is None:
+        raise ValueError(f"No commmon statblock named '{name}'")
+    return s
+
+
+def get_stats_by_cr(cr: float | int) -> BaseStatblock:
+    return next((s for s in All if s.cr >= cr), All[-1])
+
+
+def get_common_stats(name_or_cr: str | float | int) -> BaseStatblock:
+    if isinstance(name_or_cr, (float, int)):
+        return get_stats_by_cr(cr=name_or_cr)
+    else:
+        try:
+            cr = float(name_or_cr)
+            return get_common_stats(name_or_cr=cr)
+        except ValueError:
+            return get_named_stats(name_or_cr)

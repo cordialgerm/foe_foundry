@@ -1,6 +1,8 @@
 from abc import ABC, abstractmethod, abstractproperty
-from dataclasses import dataclass, field
+from dataclasses import field
 from typing import Any
+
+from pydantic.dataclasses import dataclass
 
 
 @dataclass

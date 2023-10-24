@@ -40,7 +40,7 @@ def test_all_combinations(
 
     benchmarks = benchmark(stats)
 
-    templates.render_html_inline_page(stats, path, benchmarks)
+    templates.render_html_inline_page_to_path(stats, path, benchmarks)
 
 
 def _seed_for_text(text: str) -> int:

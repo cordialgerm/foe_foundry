@@ -1,6 +1,8 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from dataclasses import asdict
+
+from pydantic.dataclasses import dataclass
 
 
 @dataclass

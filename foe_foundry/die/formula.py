@@ -1,11 +1,12 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from dataclasses import asdict
 from math import ceil, floor
 from typing import List
 
 import d20
 import numpy as np
+from pydantic.dataclasses import dataclass
 
 from .expressions import _visit_expression
 from .type import Die

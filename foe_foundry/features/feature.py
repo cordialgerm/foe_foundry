@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import field
 from typing import List
 
-from ..damage import Attack
+from pydantic.dataclasses import dataclass
+
 from .action_type import ActionType
 
 

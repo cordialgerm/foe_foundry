@@ -96,3 +96,21 @@
 - Domineering (see Amnizu)
 - Innate Demonic magic (see Babau, Barlgura, Glabrezu, Mezzoloth, etc.)
 - Hellfire Magic (see Pit Fiend)
+
+
+## Website Todo
+
+### Website Features
+
+- View a random statblock
+  - choose creature type, role, and CR
+- save as HTML, PDF, or JPG
+- provide feedback (positive, negative, any powers that had issues)
+
+### APIs
+
+- [ ] GET `/api/v1/statblocks/random/<creature>/<role>/<?cr>`
+
+### New Features
+
+- [ ] serialize a `FullStatblock` to and from JSON

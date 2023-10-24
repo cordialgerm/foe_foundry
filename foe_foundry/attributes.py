@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass, field
+from dataclasses import asdict, field
 from typing import Set
 
 import numpy as np
+from pydantic.dataclasses import dataclass
 
 from .skills import Skills, Stats
 
