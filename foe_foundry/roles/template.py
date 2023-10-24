@@ -35,7 +35,10 @@ class RoleTemplate:
         return self.name.lower().replace(" ", "_")
 
     def alter_base_stats(self, stats: BaseStatblock, rng: np.random.Generator):
-        i = rng.choice(len(self.variants))
+        if len(self.variants) == 1:
+            i = 0
+        else:
+            i = rng.choice(len(self.variants))
         v = self.variants[i]
         return v.alter_base_stats(stats=stats)
 

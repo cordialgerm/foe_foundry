@@ -753,8 +753,8 @@ class _Druid(PowerBackport):
         uses = stats.attributes.stat_mod(Stats.WIS)
         temp_hp = easy_multiple_of_five(stats.cr, min_val=5, max_val=20)
 
-        bestial_fury = stats.attack.scale(
-            2.0,
+        stats = stats.add_attack(
+            scalar=2.0,
             damage_type=DamageType.Piercing,
             die=Die.d6,
             name="Bestial Fury",
@@ -763,7 +763,6 @@ class _Druid(PowerBackport):
             additional_description=f"On a hit, {stats.roleref} gains {temp_hp} temporary hp and the target is \
                 pushed back 10 feet if it is Large or smaller",
         )
-        stats = stats.add_attack(bestial_fury)
 
         feature = Feature(
             name="Druidic Healing",

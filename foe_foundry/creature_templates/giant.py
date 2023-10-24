@@ -61,7 +61,7 @@ class _GiantTemplate(CreatureTypeTemplate):
         dials: dict = dict(hp_multiplier=1.3)
 
         if stats.multiattack > 2:
-            dials.update(multiattack_modifier=-1, attack_damage_modifier=1)
+            dials.update(multiattack_modifier=-1, attack_damage_multiplier=1.3)
 
         stats = stats.apply_monster_dials(dials=MonsterDials(**dials))
 

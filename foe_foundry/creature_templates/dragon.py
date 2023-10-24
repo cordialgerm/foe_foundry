@@ -112,7 +112,7 @@ class _DragonTemplate(CreatureTypeTemplate):
             )
 
         # dragons can fly, but it costs them some power budget
-        new_speed = stats.speed.delta(15).grant_flying()
+        new_speed = stats.speed.delta(30).grant_flying()
         recommended_powers_modifier = stats.recommended_powers_modifier - LOW_POWER
 
         # higher-CR dragons have heavy natural armor

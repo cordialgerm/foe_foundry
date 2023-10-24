@@ -46,7 +46,7 @@ class _Defender(PowerBackport):
 
 class _StickWithMe(PowerBackport):
     def __init__(self):
-        super().__init__(name="Stick with Me!", power_type=PowerType.Role)
+        super().__init__(name="Stick With Me!", power_type=PowerType.Role)
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_defender(candidate)

@@ -6,7 +6,7 @@ from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, Bleeding, DamageType, Weakened
+from ...damage import Attack, AttackType, Bleeding, DamageType, Weakened
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
@@ -126,27 +126,27 @@ class _WitheringBlow(PowerBackport):
     ) -> Tuple[BaseStatblock, None]:
         dc = stats.difficulty_class_easy
 
-        withering_blow = stats.attack.scale(
+        def customize(a: Attack) -> Attack:
+            a = a.split_damage(DamageType.Necrotic, split_ratio=0.9)
+
+            # the ongoing bleed damage should be equal to the necrotic damage formula for symmetry
+            bleeding_dmg = (
+                a.additional_damage.formula
+                if a.additional_damage
+                else DieFormula.from_expression("1d6")
+            )
+            bleeding = Bleeding(damage=bleeding_dmg, damage_type=DamageType.Necrotic, dc=dc)
+
+            return a.copy(additional_description=f"On a hit, the target gains {bleeding}.")
+
+        stats = stats.add_attack(
             scalar=1.4,
             damage_type=DamageType.Piercing,
             die=Die.d6,
             name="Withering Blow",
             replaces_multiattack=2,
-        ).split_damage(DamageType.Necrotic, split_ratio=0.9)
-
-        # the ongoing bleed damage should be equal to the necrotic damage formula for symmetry
-        bleeding_dmg = (
-            withering_blow.additional_damage.formula
-            if withering_blow.additional_damage
-            else DieFormula.from_expression("1d6")
+            callback=customize,
         )
-        bleeding = Bleeding(damage=bleeding_dmg, damage_type=DamageType.Necrotic, dc=dc)
-
-        withering_blow = withering_blow.copy(
-            additional_description=f"On a hit, the target gains {bleeding}."
-        )
-
-        stats = stats.add_attack(withering_blow)
 
         return stats, None
 

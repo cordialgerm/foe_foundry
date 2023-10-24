@@ -8,7 +8,7 @@ from .template import RoleTemplate, role_variant
 
 def as_default_controller(stats: BaseStatblock) -> BaseStatblock:
     # controllers deal less damage but have hard-to-resist abilities
-    dials = MonsterDials(attack_damage_modifier=-1, difficulty_class_modifier=2)
+    dials = MonsterDials(attack_damage_multiplier=0.75, difficulty_class_modifier=2)
 
     # controllers are sharp-witted
     new_attributes = (

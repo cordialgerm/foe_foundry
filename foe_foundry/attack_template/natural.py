@@ -11,6 +11,8 @@ class _Claw(AttackTemplate):
             damage_type=DamageType.Slashing,
             split_secondary_damage=True,
             reach_bonus_for_huge=True,
+            die=Die.d6,
+            die_count=1,
         )
 
 
@@ -21,6 +23,8 @@ class _Bite(AttackTemplate):
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Piercing,
             split_secondary_damage=True,
+            die=Die.d8,
+            die_count=1,
         )
 
 
@@ -31,6 +35,8 @@ class _Horns(AttackTemplate):
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Piercing,
             split_secondary_damage=True,
+            die=Die.d6,
+            die_count=1,
         )
 
 
@@ -41,6 +47,8 @@ class _Stomp(AttackTemplate):
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Bludgeoning,
             split_secondary_damage=True,
+            die=Die.d6,
+            die_count=1,
         )
 
 
@@ -52,6 +60,8 @@ class _Tail(AttackTemplate):
             damage_type=DamageType.Bludgeoning,
             reach=10,
             reach_bonus_for_huge=True,
+            die=Die.d8,
+            die_count=1,
         )
 
 
@@ -62,6 +72,8 @@ class _Slam(AttackTemplate):
             attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Bludgeoning,
             split_secondary_damage=True,
+            die=Die.d6,
+            die_count=1,
         )
 
 
@@ -74,6 +86,8 @@ class _Tentacle(AttackTemplate):
             split_secondary_damage=True,
             reach=10,
             reach_bonus_for_huge=True,
+            die=Die.d6,
+            die_count=1,
         )
 
 
@@ -85,6 +99,8 @@ class _Stinger(AttackTemplate):
             damage_type=DamageType.Piercing,
             secondary_damage_type=DamageType.Poison,
             split_secondary_damage=True,
+            die=Die.d6,
+            die_count=1,
         )
 
 
@@ -97,6 +113,8 @@ class _Spit(AttackTemplate):
             secondary_damage_type=DamageType.Acid,
             split_secondary_damage=True,
             range_bonus_for_high_cr=True,
+            die=Die.d4,
+            die_count=1,
         )
 
 
@@ -108,6 +126,8 @@ class _Spines(AttackTemplate):
             damage_type=DamageType.Piercing,
             split_secondary_damage=True,
             range_bonus_for_high_cr=True,
+            die=Die.d6,
+            die_count=1,
         )
 
 
@@ -122,6 +142,7 @@ class _Lob(AttackTemplate):
             range_max=240,
             range_bonus_for_high_cr=True,
             split_secondary_damage=False,
+            die_count=1,
         )
 
 
@@ -132,6 +153,7 @@ class _Thrash(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Piercing,
             die=Die.d6,
+            die_count=1,
             reach_bonus_for_huge=True,
         )
 
