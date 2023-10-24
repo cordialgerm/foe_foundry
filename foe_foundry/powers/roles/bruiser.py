@@ -7,7 +7,7 @@ from ...attack_template import natural as natural_attacks
 from ...attack_template import weapon
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, Bleeding, DamageType
+from ...damage import Attack, AttackType, Bleeding, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
@@ -75,7 +75,7 @@ class _Grappler(PowerBackport):
 
         dc = stats.difficulty_class
 
-        grapple_attack = stats.attack.scale(
+        stats = stats.add_attack(
             scalar=0.7,
             damage_type=DamageType.Bludgeoning,
             attack_type=AttackType.MeleeNatural,
@@ -84,9 +84,6 @@ class _Grappler(PowerBackport):
             additional_description=f"On a hit, the target must make a DC {dc} Strength save or be **Grappled** (escape DC {dc}). \
                  While grappled in this way, the creature is also **Restrained**",
         )
-
-        stats = stats.add_attack(grapple_attack)
-
         return stats, None
 
 
@@ -168,20 +165,21 @@ class _Disembowler(PowerBackport):
             if stats.attack.attack_type != AttackType.MeleeNatural
             else AttackType.MeleeNatural
         )
-        rend_attack = stats.attack.scale(
+
+        def customize(a: Attack) -> Attack:
+            dmg = a.damage.formula.copy(mod=0)
+            bleeding = Bleeding(damage=dmg)
+            return a.copy(
+                additional_description=f"On a hit, the target must succeed on a DC {dc} Constitution saving throw or gain {bleeding}",
+            )
+
+        stats = stats.add_attack(
             scalar=0.7,
             damage_type=DamageType.Piercing,
             attack_type=attack_type,
             name="Rend",
+            callback=customize,
         )
-        dmg = rend_attack.damage.formula.copy(mod=0)
-        bleeding = Bleeding(damage=dmg)
-
-        rend_attack = rend_attack.copy(
-            additional_description=f"On a hit, the target must succeed on a DC {dc} Constitution saving throw or gain {bleeding}",
-        )
-
-        stats = stats.add_attack(rend_attack)
 
         return stats, []
 

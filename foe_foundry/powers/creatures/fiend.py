@@ -11,7 +11,7 @@ from foe_foundry.statblocks import BaseStatblock
 from ...attack_template import natural as natural_attacks
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, Fatigue
+from ...damage import Attack, AttackType, DamageType, Fatigue
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
@@ -149,16 +149,18 @@ class _FiendishBite(PowerBackport):
     ) -> Tuple[BaseStatblock, List[Feature]]:
         dc = stats.difficulty_class
 
-        bite_attack = stats.attack.scale(
+        def customize(a: Attack) -> Attack:
+            return a.split_damage(DamageType.Poison, split_ratio=0.9)
+
+        stats = stats.add_attack(
             scalar=1.4,
             damage_type=DamageType.Piercing,
             name="Fiendish Bite",
             die=Die.d6,
             attack_type=AttackType.MeleeNatural,
             additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become **Poisoned** for 1 minute (save ends at end of turn).",
-        ).split_damage(DamageType.Poison, split_ratio=0.9)
-
-        stats = stats.add_attack(bite_attack)
+            callback=customize,
+        )
 
         return stats, []
 

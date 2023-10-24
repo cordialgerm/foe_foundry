@@ -88,7 +88,7 @@ class _Gore(PowerBackport):
         bleeding_damage = DieFormula.target_value(0.75 * stats.attack.average_damage)
         bleeding = Bleeding(damage=bleeding_damage)
 
-        gore_attack = stats.attack.scale(
+        stats = stats.add_attack(
             scalar=1.5,
             damage_type=DamageType.Piercing,
             attack_type=AttackType.MeleeNatural,
@@ -96,8 +96,6 @@ class _Gore(PowerBackport):
             replaces_multiattack=2,
             additional_description=f"If {stats.selfref} moved at least 10 feet before making this attack, then the target must make a DC {dc} Dexterity saving throw. On a failure, the target is gored and gains {bleeding}.",
         )
-
-        stats = stats.add_attack(gore_attack)
 
         return stats, None
 

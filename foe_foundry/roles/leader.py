@@ -10,11 +10,6 @@ def as_low_hp_leader(stats: BaseStatblock) -> BaseStatblock:
     return _as_leader(stats, dials)
 
 
-def as_low_dmg_leader(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(attack_damage_modifier=-1, recommended_powers_modifier=0.5)
-    return _as_leader(stats, dials)
-
-
 def _as_leader(stats: BaseStatblock, dials: MonsterDials) -> BaseStatblock:
     new_attributes = (
         stats.attributes.boost(Stats.INT, 4)
@@ -35,5 +30,4 @@ def _as_leader(stats: BaseStatblock, dials: MonsterDials) -> BaseStatblock:
 
 
 LeaderLowHp = role_variant("Leader.LowHp", MonsterRole.Leader, as_low_hp_leader)
-LeaderLowDmg = role_variant("Leader.LowDmg", MonsterRole.Leader, as_low_dmg_leader)
-Leader = RoleTemplate("Leader", MonsterRole.Leader, [LeaderLowHp, LeaderLowDmg])
+Leader = RoleTemplate("Leader", MonsterRole.Leader, [LeaderLowHp])

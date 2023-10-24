@@ -12,6 +12,7 @@ class _Gaze(AttackTemplate):
             secondary_damage_type=DamageType.Psychic,
             split_secondary_damage=False,
             range_bonus_for_high_cr=True,
+            die=Die.d6,
         )
 
 
@@ -24,6 +25,7 @@ class _Beam(AttackTemplate):
             secondary_damage_type=DamageType.Force,
             split_secondary_damage=False,
             range_bonus_for_high_cr=True,
+            die=Die.d8,
         )
 
 
@@ -36,6 +38,7 @@ class _ArcaneBurst(AttackTemplate):
             secondary_damage_type=DamageType.Force,
             split_secondary_damage=False,
             range_bonus_for_high_cr=True,
+            die=Die.d10,
         )
 
 
@@ -137,7 +140,7 @@ class _Holybolt(AttackTemplate):
             attack_type=AttackType.RangedSpell,
             damage_type=DamageType.Radiant,
             secondary_damage_type=DamageType.Radiant,
-            die=Die.d6,
+            die=Die.d8,
             split_secondary_damage=False,
             range_bonus_for_high_cr=True,
         )

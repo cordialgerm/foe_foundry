@@ -48,7 +48,7 @@ class _Gigantic(PowerBackport):
 
         stats = stats.copy(
             size=stats.size.increment(), attributes=new_attrs
-        ).apply_monster_dials(dials=MonsterDials(ac_modifier=-2, attack_damage_dice_modifier=1))
+        ).apply_monster_dials(dials=MonsterDials(ac_modifier=-2, attack_damage_multiplier=1.2))
 
         feature = Feature(
             name="Gigantic",
@@ -90,7 +90,7 @@ class _Diminutive(PowerBackport):
 
         stats = stats.copy(
             size=stats.size.decrement(), attributes=new_attrs
-        ).apply_monster_dials(dials=MonsterDials(ac_modifier=2, attack_damage_modifier=-1))
+        ).apply_monster_dials(dials=MonsterDials(ac_modifier=2, attack_damage_multiplier=0.8))
 
         feature = Feature(
             name="Diminutive",

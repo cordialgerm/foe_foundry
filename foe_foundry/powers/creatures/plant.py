@@ -6,7 +6,7 @@ from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, Bleeding, DamageType
+from ...damage import Attack, AttackType, Bleeding, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
@@ -33,36 +33,39 @@ class _PoisonThorns(PowerBackport):
     ) -> Tuple[BaseStatblock, List[Feature]]:
         dc = stats.difficulty_class_easy
 
-        poison_thorns = stats.attack.scale(
+        def customize(a: Attack) -> Attack:
+            a = a.split_damage(DamageType.Poison, split_ratio=0.9)
+
+            # the ongoing bleed damage should be equal to the poison damage formula for symmetry
+            # the damage threshold should be a nice easy multiple of 5 close to half the bleed damage
+            bleeding_damage = (
+                a.additional_damage.formula
+                if a.additional_damage
+                else DieFormula.from_expression("1d6")
+            )
+            threshold = easy_multiple_of_five(bleeding_damage.average / 2, max_val=20)
+
+            bleeding = Bleeding(
+                damage=bleeding_damage,
+                damage_type=DamageType.Poison,
+                dc=dc,
+                threshold=threshold,
+            )
+
+            a = a.copy(
+                additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or gain {bleeding}."
+            )
+            return a
+
+        stats = stats.add_attack(
             scalar=1.4,
             damage_type=DamageType.Piercing,
             attack_type=AttackType.MeleeNatural,
             die=Die.d6,
             name="Poison Thorns",
             replaces_multiattack=2,
-        ).split_damage(DamageType.Poison, split_ratio=0.9)
-
-        # the ongoing bleed damage should be equal to the poison damage formula for symmetry
-        # the damage threshold should be a nice easy multiple of 5 close to half the bleed damage
-        bleeding_damage = (
-            poison_thorns.additional_damage.formula
-            if poison_thorns.additional_damage
-            else DieFormula.from_expression("1d6")
+            callback=customize,
         )
-        threshold = easy_multiple_of_five(bleeding_damage.average / 2, max_val=20)
-
-        bleeding = Bleeding(
-            damage=bleeding_damage,
-            damage_type=DamageType.Poison,
-            dc=dc,
-            threshold=threshold,
-        )
-
-        poison_thorns = poison_thorns.copy(
-            additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or gain {bleeding}."
-        )
-
-        stats = stats.add_attack(poison_thorns)
 
         return stats, []
 
@@ -97,7 +100,7 @@ class _ChokingVine(PowerBackport):
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
         dc = stats.difficulty_class_easy
 
-        choke_attack = stats.attack.scale(
+        stats = stats.add_attack(
             scalar=1.8,
             damage_type=DamageType.Bludgeoning,
             die=Die.d8,
@@ -107,8 +110,6 @@ class _ChokingVine(PowerBackport):
             additional_description=f"On a hit, the target must make a DC {dc} Strength save. On a failure, the creature is **Grappled** (escape DC {dc}). \
                 While grappled in this way, it cannot speak, cannot breathe, begins choking, and cannot cast spells that require a verbal component.",
         )
-
-        stats = stats.add_attack(choke_attack)
 
         return stats, None
 

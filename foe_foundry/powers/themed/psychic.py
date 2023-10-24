@@ -227,7 +227,7 @@ class _ExtractBrain(PowerBackport):
                 on a DC {dc} Intelligence save or be {dazed.caption} while grappled in this way. {dazed.description_3rd}",
         )
 
-        extract_brain = stats.attack.scale(
+        stats = stats.add_attack(
             scalar=3.5,
             damage_type=DamageType.Piercing,
             attack_type=AttackType.MeleeNatural,
@@ -238,8 +238,6 @@ class _ExtractBrain(PowerBackport):
                 by extracting and devouring its brain.",
             name="Extract Brain",
         )
-
-        stats = stats.add_attack(extract_brain)
 
         return stats, stunning_tentacles
 

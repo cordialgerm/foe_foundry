@@ -218,7 +218,7 @@ class _PommelStrike(PowerBackport):
         dazed = Dazed()
         dc = stats.difficulty_class_easy
 
-        attack = stats.attack.scale(
+        stats = stats.add_attack(
             scalar=0.6,
             damage_type=DamageType.Bludgeoning,
             attack_type=AttackType.MeleeWeapon,
@@ -229,7 +229,6 @@ class _PommelStrike(PowerBackport):
             additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become {dazed.caption} until the end of its next turn. {dazed.description_3rd}",
         )
 
-        stats = stats.add_attack(attack)
         return stats, None
 
 

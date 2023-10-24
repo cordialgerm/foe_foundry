@@ -7,8 +7,8 @@ from typing import Callable, Dict, List, Set
 from ..ac import ArmorClassTemplate
 from ..attributes import Attributes
 from ..creature_types import CreatureType
-from ..damage import Attack, AttackType, Condition, DamageType
-from ..die import DieFormula
+from ..damage import Attack, AttackType, Condition, Damage, DamageType
+from ..die import Die, DieFormula
 from ..hp import scale_hp_formula
 from ..movement import Movement
 from ..role_types import MonsterRole
@@ -52,6 +52,8 @@ class BaseStatblock:
     ac_templates: List[ArmorClassTemplate] = field(default_factory=list)
     creature_subtype: str | None = None
     creature_class: str | None = None
+    damage_modifier: float = 1.0
+    base_attack_damage: float
 
     def __post_init__(self):
         mod = (
@@ -123,6 +125,8 @@ class BaseStatblock:
             additional_attacks=deepcopy(self.additional_attacks),
             creature_class=self.creature_class,
             creature_subtype=self.creature_subtype,
+            damage_modifier=self.damage_modifier,
+            base_attack_damage=self.base_attack_damage,
         )
         return args
 
@@ -149,16 +153,10 @@ class BaseStatblock:
         if dials.multiattack_modifier:
             args.update(multiattack=self.multiattack + dials.multiattack_modifier)
 
-        if (
-            dials.attack_hit_modifier
-            or dials.attack_damage_dice_modifier
-            or dials.attack_damage_modifier
-        ):
+        if dials.attack_hit_modifier:
             args.update(
                 attack=self.attack.delta(
                     hit_delta=dials.attack_hit_modifier,
-                    dice_delta=dials.attack_damage_dice_modifier,
-                    damage_delta=dials.attack_damage_modifier,
                 )
             )
 
@@ -169,6 +167,9 @@ class BaseStatblock:
                 limit=False,
             )
             args.update(attributes=new_attributes)
+
+        if dials.attack_damage_multiplier != 1.0:
+            args.update(damage_modifier=dials.attack_damage_multiplier)
 
         # resolve difficulty class
         if dials.difficulty_class_modifier:
@@ -209,11 +210,6 @@ class BaseStatblock:
 
         new_attributes = self.attributes.copy(**new_vals)
         return self.copy(attributes=new_attributes)
-
-    def add_attack(self, attack: Attack) -> BaseStatblock:
-        copy = self.copy()
-        copy.additional_attacks.append(attack)
-        return copy
 
     def add_ac_template(
         self,
@@ -287,3 +283,36 @@ class BaseStatblock:
             nonmagical_immunity=new_nonmagical_immunity,
             nonmagical_resistance=new_nonmagical_resistance,
         )
+
+    def add_attack(
+        self,
+        *,
+        name: str,
+        scalar: float,
+        attack_type: AttackType | None = None,
+        damage_type: DamageType | None = None,
+        die: Die | None = None,
+        callback: Callable[[Attack], Attack] | None = None,
+        **attack_args,
+    ) -> BaseStatblock:
+        """create a new attack whose average damage is scaled"""
+
+        target_damage = scalar * self.damage_modifier * self.base_attack_damage
+        dmg_formula = DieFormula.target_value(
+            target=target_damage, force_die=die, flat_mod=self.attributes.primary_mod
+        )
+        damage = Damage(dmg_formula, damage_type or self.primary_damage_type)
+
+        copy_args: dict = dict(name=name, damage=damage)
+        if attack_type:
+            copy_args.update(attack_type=attack_type)
+        copy_args.update(attack_args)
+
+        new_attack = self.attack.copy(**copy_args)
+        if callback is not None:
+            new_attack = callback(new_attack)
+
+        additional_attacks = self.additional_attacks.copy()
+        additional_attacks.append(new_attack)
+
+        return self.copy(additional_attacks=additional_attacks)

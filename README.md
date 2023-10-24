@@ -36,6 +36,11 @@
 - attack damage should just be a scalar instead of modifying dice directly - actual dice formulas get resolved when attack is finalized
 - attack should just be flat damage as a starting point
 
+## New Power Ideas
+
+- Go through various iconic spells and create a power for them
+- Go through KP's Deep Magic and create a power for flavorful & interesting spells
+
 ## Powers
 
 - Perceptive
@@ -78,6 +83,8 @@
 - Petrification Ray
 - Disintigration Ray
 - Death Ray
+
+
 
 ## Spellcasting
 
