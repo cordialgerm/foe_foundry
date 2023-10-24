@@ -1,5 +1,7 @@
-from dataclasses import dataclass, field
+from dataclasses import field
 from enum import StrEnum, auto
+
+from pydantic.dataclasses import dataclass
 
 from ..die.formula import DieFormula
 from .damage_types import DamageType

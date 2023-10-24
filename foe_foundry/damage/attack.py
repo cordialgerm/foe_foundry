@@ -1,8 +1,9 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass, field
+from dataclasses import field
 from math import ceil, floor
-from typing import List
+
+from pydantic.dataclasses import dataclass
 
 from ..die import Die, DieFormula
 from .attack_type import AttackType

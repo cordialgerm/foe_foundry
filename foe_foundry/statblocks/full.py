@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from copy import deepcopy
 from dataclasses import dataclass, field
 from typing import List
 
@@ -28,6 +29,11 @@ def resolve_ac(templates: List[ArmorClassTemplate], stats: BaseStatblock) -> Res
 class Statblock(BaseStatblock):
     ac: ResolvedArmorClass
     features: List[Feature] = field(default_factory=list)
+
+    def __copy_args__(self) -> dict:
+        base_args = super().__copy_args__()
+        base_args.update(ac=deepcopy(self.ac), features=deepcopy(self.features))
+        return base_args
 
     @staticmethod
     def from_base_stats(

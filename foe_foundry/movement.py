@@ -1,7 +1,9 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from dataclasses import asdict
 from typing import cast
+
+from pydantic.dataclasses import dataclass
 
 
 @dataclass
