@@ -43,6 +43,8 @@ def adjust_attack(
         range = 90
     elif range is not None and range_bonus_for_high_cr and stats.cr >= 7:
         range += 30
+        if range_max is not None:
+            range_max += 30
 
     if range is not None:
         args.update(range=range)

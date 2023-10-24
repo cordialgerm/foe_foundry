@@ -27,7 +27,6 @@
 ## Bug List
 
 - [ ] negative stat modifiers render with a ?
-- [ ] Stick With Me! and Challenge Foe are redundant
 - [ ] Many abilities around leadership and challenging shoudl require intelligence and verbal speaking abilities
 
 ## MISC TODO

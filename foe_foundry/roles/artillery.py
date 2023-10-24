@@ -18,12 +18,14 @@ def as_low_hp_artillery_max_dmg(stats: BaseStatblock) -> BaseStatblock:
 
 
 def as_low_ac_artillery_balanced(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(attack_hit_modifier=1, attack_damage_multiplier=1.2, ac_modifier=-2)
+    dials = MonsterDials(attack_hit_modifier=1, attack_damage_multiplier=1.15, ac_modifier=-2)
     return _as_artillery(stats, dials)
 
 
 def as_low_hp_artillery_balanced(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(attack_hit_modifier=1, attack_damage_multiplier=1.2, hp_multiplier=0.8)
+    dials = MonsterDials(
+        attack_hit_modifier=1, attack_damage_multiplier=1.15, hp_multiplier=0.8
+    )
     return _as_artillery(stats, dials)
 
 

@@ -250,7 +250,7 @@ class _DragonsBreath(PowerBackport):
             max(
                 5 + multiplier * 2 * stats.cr,
                 multiplier * 3.8 * stats.cr,
-                multiplier * 0.6 * stats.attack.average_damage * stats.multiattack,
+                multiplier * 0.7 * stats.attack.average_damage * stats.multiattack,
             ),
             suggested_die=Die.d8,
         )

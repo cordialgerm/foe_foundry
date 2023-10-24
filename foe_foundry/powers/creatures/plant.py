@@ -17,8 +17,8 @@ from ..power import Power, PowerBackport, PowerType
 from ..scoring import score
 
 
-def score_plant(candidate: BaseStatblock) -> float:
-    return score(candidate=candidate, require_types=CreatureType.Plant)
+def score_plant(candidate: BaseStatblock, **args) -> float:
+    return score(candidate=candidate, require_types=CreatureType.Plant, **args)
 
 
 class _PoisonThorns(PowerBackport):
@@ -93,7 +93,7 @@ class _ChokingVine(PowerBackport):
         super().__init__(name="Choking Vine", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return score_plant(candidate)
+        return score_plant(candidate, require_attack_types=AttackType.AllRanged())
 
     def apply(
         self, stats: BaseStatblock, rng: Generator

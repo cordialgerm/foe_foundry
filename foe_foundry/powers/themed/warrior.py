@@ -52,28 +52,6 @@ def _as_melee_fighter(stats: BaseStatblock, uses_weapon: bool = False) -> BaseSt
     return stats.copy(**changes)
 
 
-class _Challenger(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Challenger", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_melee_fighter(candidate, requires_training=True)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        dc = stats.difficulty_class
-        feature = Feature(
-            name="Challenge Foe",
-            description=f"Immediately after hitting a creature with an attack, {stats.selfref} challenges the target to a duel. \
-                The challenged target has disadvantage on attack rolls against any creature other than {stats.selfref}. \
-                The target may make a DC {dc} Charisma saving throw at the end of each of its turns to end the effect.",
-            action=ActionType.BonusAction,
-            recharge=4,
-        )
-        return stats, feature
-
-
 class _PackTactics(PowerBackport):
     def __init__(self):
         super().__init__(
@@ -269,7 +247,6 @@ class _PushingAttack(PowerBackport):
         return stats, feature
 
 
-Challenger: Power = _Challenger()
 CleavingStrike: Power = _CleavingStrike()
 Disciplined: Power = _Disciplined()
 PackTactics: Power = _PackTactics()
@@ -279,7 +256,6 @@ PushingAttack: Power = _PushingAttack()
 MageSlayer: Power = _MageSlayer()
 
 WarriorPowers: List[Power] = [
-    Challenger,
     CleavingStrike,
     Disciplined,
     PackTactics,

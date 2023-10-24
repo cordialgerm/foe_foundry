@@ -121,7 +121,7 @@ class _TemporalMastery(PowerBackport):
             name="Temporal Mastery",
             action=ActionType.Action,
             uses=2,
-            replaces_multiattack=1,
+            replaces_multiattack=2,
             description=f"{stats.selfref} becomes **Invisible** until the start of its next turn. It may also adjust its initiative to any value it desires. \
                 This can allow {stats.selfref} to have a second turn this round.",
         )

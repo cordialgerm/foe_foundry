@@ -11,7 +11,7 @@ def as_low_ac_skirmisher(stats: BaseStatblock) -> BaseStatblock:
 
 
 def as_low_hp_skirmisher(stats: BaseStatblock) -> BaseStatblock:
-    dials = MonsterDials(hp_multiplier=0.8, speed_modifier=20)
+    dials = MonsterDials(hp_multiplier=0.9, speed_modifier=20)
     return _as_skirmisher(stats, dials)
 
 
