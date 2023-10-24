@@ -154,7 +154,7 @@ class _AntimagicGullet(Power):
             regurgitate_damage_threshold=threshold,
         )
 
-        bite_attack = stats.attack.scale(
+        stats = stats.add_attack(
             scalar=1.5,
             damage_type=DamageType.Piercing,
             attack_type=AttackType.MeleeNatural,
@@ -162,8 +162,6 @@ class _AntimagicGullet(Power):
             name="Swallow",
             additional_description=f"On a hit, the target must make a DC {dc} Dexterity saving throw. On a failure, it is {swallowed} Also see *Anti-Magic Gullet*.",
         )
-
-        stats = stats.add_attack(bite_attack)
 
         feature = Feature(
             name="Anti-Magic Gullet",

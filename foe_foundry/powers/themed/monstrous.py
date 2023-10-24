@@ -105,7 +105,7 @@ class _Swallow(PowerBackport):
             regurgitate_damage_threshold=threshold,
         )
 
-        swallow_attack = stats.attack.scale(
+        stats = stats.add_attack(
             scalar=1.7,
             damage_type=DamageType.Piercing,
             attack_type=AttackType.MeleeNatural,
@@ -113,8 +113,6 @@ class _Swallow(PowerBackport):
             name="Swallow",
             additional_description=f"On a hit, the target must make a DC {dc} Dexterity saving throw. On a failure, it is {swallowed}",
         )
-
-        stats = stats.add_attack(swallow_attack)
 
         return stats, None
 

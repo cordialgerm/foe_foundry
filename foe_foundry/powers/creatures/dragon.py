@@ -104,7 +104,7 @@ class _TailSwipe(PowerBackport):
         return score_dragon(candidate, attack_names=natural_attacks.Tail)
 
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        tail_attack = stats.attack.scale(
+        stats = stats.add_attack(
             scalar=0.8,
             damage_type=DamageType.Bludgeoning,
             die=Die.d8,
@@ -113,8 +113,6 @@ class _TailSwipe(PowerBackport):
             reach=10,
             additional_description="On a hit, the target is pushed up to 10 feet away.",
         )
-
-        stats = stats.add_attack(tail_attack)
 
         feature = Feature(
             name="Tail Swipe",
@@ -252,7 +250,7 @@ class _DragonsBreath(PowerBackport):
             max(
                 5 + multiplier * 2 * stats.cr,
                 multiplier * 3.8 * stats.cr,
-                multiplier * 0.6 * stats.attack.average_damage * stats.multiattack,
+                multiplier * 0.7 * stats.attack.average_damage * stats.multiattack,
             ),
             suggested_die=Die.d8,
         )

@@ -11,7 +11,7 @@ from foe_foundry.statblocks import BaseStatblock
 from ...attack_template import natural as natural_attacks
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import Attack, AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
@@ -148,20 +148,20 @@ class _Smother(PowerBackport):
     def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class_easy
 
-        smother_attack = stats.attack.scale(
+        def set_on_hit(attack: Attack) -> Attack:
+            dmg = attack.damage.formula
+            additional_description = f"On a hit, {stats.selfref} begins to smother the target. The creature is **Grappled** (escape DC {dc}). \
+                While grappled this way, the creature is **Restrained**, **Blinded**, and suffers {dmg.description} ongoing bludgeoning damage at the start of each of its turns."
+            return attack.copy(additional_description=additional_description)
+
+        stats = stats.add_attack(
             scalar=0.5,
             damage_type=DamageType.Bludgeoning,
             attack_type=AttackType.MeleeWeapon,
             die=Die.d6,
             name="Smother",
+            callback=set_on_hit,
         )
-        dmg = smother_attack.damage.formula
-        smother_attack = smother_attack.copy(
-            additional_description=f"On a hit, {stats.selfref} begins to smother the target. The creature is **Grappled** (escape DC {dc}). \
-                While grappled this way, the creature is **Restrained**, **Blinded**, and suffers {dmg.description} ongoing bludgeoning damage at the start of each of its turns.",
-        )
-
-        stats = stats.add_attack(smother_attack)
 
         feature = Feature(
             name="Damage Transfer",

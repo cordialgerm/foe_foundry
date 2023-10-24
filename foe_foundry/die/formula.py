@@ -135,17 +135,22 @@ class DieFormula:
         force_die: Die | None = None,
         per_die_mod: int = 0,
         flat_mod: int = 0,
+        min_die_count: int = 0,
     ) -> DieFormula:
         if suggested_die is None:
             suggested_die = Die.d6
 
         if force_die is not None:
-            candidates = _candidate(target, force_die, per_die_mod, flat_mod)
+            candidates = _candidate(target, force_die, per_die_mod, flat_mod, min_die_count)
         else:
             candidates = (
-                _candidate(target, suggested_die, per_die_mod, flat_mod)
-                + _candidate(target, suggested_die.decrease(), per_die_mod, flat_mod)
-                + _candidate(target, suggested_die.increase(), per_die_mod, flat_mod)
+                _candidate(target, suggested_die, per_die_mod, flat_mod, min_die_count)
+                + _candidate(
+                    target, suggested_die.decrease(), per_die_mod, flat_mod, min_die_count
+                )
+                + _candidate(
+                    target, suggested_die.increase(), per_die_mod, flat_mod, min_die_count
+                )
             )
 
         # we generally want to be a little below the target because the monsters here are pretty strong
@@ -159,10 +164,12 @@ class DieFormula:
         return candidates[best_index]
 
 
-def _candidate(target: float, die: Die, per_die_mod: int, flat_mod: int) -> List[DieFormula]:
+def _candidate(
+    target: float, die: Die, per_die_mod: int, flat_mod: int, min_die_count: int
+) -> List[DieFormula]:
     x = (target - flat_mod) / (die.average() + per_die_mod)
-    n1 = int(ceil(x))
-    n2 = int(floor(x))
+    n1 = max(int(ceil(x)), min_die_count)
+    n2 = max(int(floor(x)), min_die_count)
 
     args1 = {str(die): n1, "mod": n1 * per_die_mod + flat_mod}
     args2 = {str(die): n2, "mod": n2 * per_die_mod + flat_mod}

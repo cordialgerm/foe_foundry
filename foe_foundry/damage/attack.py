@@ -237,7 +237,9 @@ class Attack:
 
     def scale(
         self,
+        *,
         scalar: float,
+        mod: int,
         damage_type: DamageType | None = None,
         die: Die | None = None,
         **args,
@@ -252,15 +254,12 @@ class Attack:
             force_die = None
             suggested_die = new_attack.damage.formula.primary_die_type
 
-        per_die_mod = ceil(
-            (new_attack.damage.formula.mod or 0) / new_attack.damage.formula.n_die
-        )
         damage_type = damage_type or new_attack.damage.damage_type
         new_formula = DieFormula.target_value(
             new_target,
             force_die=force_die,
             suggested_die=suggested_die,
-            per_die_mod=per_die_mod,
+            flat_mod=mod,
         )
         new_damage = Damage(formula=new_formula, damage_type=damage_type)
         return new_attack.copy(damage=new_damage, **args)

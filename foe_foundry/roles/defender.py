@@ -15,7 +15,7 @@ def as_low_hit_defender(stats: BaseStatblock) -> BaseStatblock:
 def as_low_damage_defender(stats: BaseStatblock) -> BaseStatblock:
     dials = MonsterDials(
         attack_hit_modifier=-1,
-        attack_damage_dice_modifier=-1,
+        attack_damage_multiplier=0.8,
     )
     return _as_defender(stats, dials)
 

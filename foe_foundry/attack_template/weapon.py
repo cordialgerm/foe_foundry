@@ -13,6 +13,7 @@ class _SwordAndShield(AttackTemplate):
             damage_type=DamageType.Slashing,
             allows_shield=True,
             die=Die.d8,
+            die_count=1,
             split_secondary_damage=True,
         )
 
@@ -25,6 +26,7 @@ class _SpearAndShield(AttackTemplate):
             damage_type=DamageType.Piercing,
             allows_shield=True,
             die=Die.d8,
+            die_count=1,
             reach=10,
             split_secondary_damage=True,
         )
@@ -38,6 +40,7 @@ class _MaceAndShield(AttackTemplate):
             damage_type=DamageType.Bludgeoning,
             allows_shield=True,
             die=Die.d8,
+            die_count=1,
             split_secondary_damage=True,
         )
 
@@ -50,6 +53,7 @@ class _RapierAndShield(AttackTemplate):
             damage_type=DamageType.Piercing,
             allows_shield=True,
             die=Die.d8,
+            die_count=1,
             split_secondary_damage=True,
         )
 
@@ -62,6 +66,7 @@ class _Maul(AttackTemplate):
             damage_type=DamageType.Bludgeoning,
             allows_shield=False,
             die=Die.d12,
+            die_count=1,
             split_secondary_damage=True,
         )
 
@@ -73,6 +78,7 @@ class _Greatsword(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Slashing,
             die=Die.d6,
+            die_count=2,
             split_secondary_damage=True,
         )
 
@@ -85,6 +91,7 @@ class _Polearm(AttackTemplate):
             damage_type=DamageType.Slashing,
             die=Die.d10,
             reach=10,
+            die_count=1,
             split_secondary_damage=True,
         )
 
@@ -96,6 +103,7 @@ class _Greataxe(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Slashing,
             die=Die.d12,
+            die_count=1,
             split_secondary_damage=True,
         )
 
@@ -107,6 +115,7 @@ class _Daggers(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Piercing,
             die=Die.d4,
+            die_count=2,
             split_secondary_damage=True,
         )
 
@@ -118,6 +127,7 @@ class _Longbow(AttackTemplate):
             attack_type=AttackType.RangedWeapon,
             damage_type=DamageType.Piercing,
             die=Die.d8,
+            die_count=1,
             range=150,
             range_max=600,
             split_secondary_damage=True,
@@ -131,6 +141,7 @@ class _Shortbow(AttackTemplate):
             attack_type=AttackType.RangedWeapon,
             damage_type=DamageType.Piercing,
             die=Die.d6,
+            die_count=1,
             range=80,
             range_max=320,
             split_secondary_damage=True,
@@ -145,6 +156,7 @@ class _Crossbow(AttackTemplate):
             damage_type=DamageType.Piercing,
             split_secondary_damage=True,
             die=Die.d10,
+            die_count=1,
             range=100,
             range_max=400,
         )
@@ -157,6 +169,7 @@ class _Traps(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Piercing,
             die=Die.d4,
+            die_count=2,
             split_secondary_damage=True,
         )
 
@@ -168,6 +181,7 @@ class _Staff(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Bludgeoning,
             die=Die.d6,
+            die_count=1,
             split_secondary_damage=True,
         )
 
@@ -179,6 +193,7 @@ class _Whip(AttackTemplate):
             attack_type=AttackType.RangedWeapon,
             damage_type=DamageType.Slashing,
             die=Die.d4,
+            die_count=1,
             range=15,
             range_max=30,
             range_bonus_for_high_cr=True,
@@ -193,6 +208,7 @@ class _JavelinAndShield(AttackTemplate):
             attack_type=AttackType.RangedWeapon,
             damage_type=DamageType.Piercing,
             die=Die.d6,
+            die_count=1,
             range=30,
             range_max=120,
             range_bonus_for_high_cr=True,
@@ -208,6 +224,7 @@ class _Shortswords(AttackTemplate):
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Slashing,
             die=Die.d6,
+            die_count=2,
             split_secondary_damage=True,
             allows_shield=False,
         )

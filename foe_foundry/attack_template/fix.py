@@ -6,12 +6,14 @@ from ..statblocks.base import BaseStatblock
 
 # helper function to repair an attack
 def adjust_attack(
+    *,
     stats: BaseStatblock,
     attack: Attack,
     attack_name: str | None = None,
     attack_type: AttackType | None = None,
     primary_damage_type: DamageType | None = None,
-    die: Die | None = None,
+    die: Die,
+    min_die_count: int = 0,
     adjust_to_hit: bool = False,
     adjust_average_damage: bool = False,
     reach: int | None = None,
@@ -41,6 +43,8 @@ def adjust_attack(
         range = 90
     elif range is not None and range_bonus_for_high_cr and stats.cr >= 7:
         range += 30
+        if range_max is not None:
+            range_max += 30
 
     if range is not None:
         args.update(range=range)
@@ -56,17 +60,14 @@ def adjust_attack(
     # adjust the average damage based on the primary stat mod
     if adjust_average_damage:
         average_damage = attack.damage.formula.average
-
-        if die is None:
-            die_args: dict = dict(suggested_die=attack.damage.formula.primary_die_type)
-        else:
-            die_args: dict = dict(force_die=die)
-
         repaired_formula = DieFormula.target_value(
-            target=average_damage, flat_mod=stats.attributes.primary_mod, **die_args
+            target=average_damage * stats.damage_modifier,
+            flat_mod=stats.attributes.primary_mod,
+            force_die=die,
+            min_die_count=min_die_count,
         )
     else:
-        repaired_formula = attack.damage.formula.copy(mod=stats.attributes.primary_mod)
+        repaired_formula = attack.damage.formula.copy()
 
     damage_type = (
         primary_damage_type if primary_damage_type is not None else attack.damage.damage_type

@@ -25,8 +25,9 @@ Minion = BaseStatblock(
     attack=Attack(
         name="Attack",
         hit=3,
-        damage=Damage.from_expression("1d6 + 1", damage_type=DamageType.Piercing),
+        damage=Damage.from_expression("4", damage_type=DamageType.Piercing),
     ),
+    base_attack_damage=4,
 )
 
 Soldier = BaseStatblock(
@@ -50,8 +51,9 @@ Soldier = BaseStatblock(
     attack=Attack(
         name="Attack",
         hit=4,
-        damage=Damage.from_expression("1d12 + 2", damage_type=DamageType.Slashing),
+        damage=Damage.from_expression("8", damage_type=DamageType.Slashing),
     ),
+    base_attack_damage=8,
 )
 
 Brute = BaseStatblock(
@@ -75,8 +77,9 @@ Brute = BaseStatblock(
     attack=Attack(
         name="Attack",
         hit=5,
-        damage=Damage.from_expression("1d12 + 3", damage_type=DamageType.Bludgeoning),
+        damage=Damage.from_expression("9", damage_type=DamageType.Bludgeoning),
     ),
+    base_attack_damage=9,
 )
 
 Specialist = BaseStatblock(
@@ -100,8 +103,9 @@ Specialist = BaseStatblock(
     attack=Attack(
         name="Attack",
         hit=6,
-        damage=Damage.from_expression("3d6 + 4", damage_type=DamageType.Piercing),
+        damage=Damage.from_expression("14", damage_type=DamageType.Piercing),
     ),
+    base_attack_damage=14,
 )
 
 Myrmidon = BaseStatblock(
@@ -125,8 +129,9 @@ Myrmidon = BaseStatblock(
     attack=Attack(
         name="Attack",
         hit=7,
-        damage=Damage.from_expression("3d8 + 4", damage_type=DamageType.Slashing),
+        damage=Damage.from_expression("17", damage_type=DamageType.Slashing),
     ),
+    base_attack_damage=17,
 )
 
 Sentinel = BaseStatblock(
@@ -151,8 +156,9 @@ Sentinel = BaseStatblock(
     attack=Attack(
         name="Attack",
         hit=9,
-        damage=Damage.from_expression("3d8 + 5", damage_type=DamageType.Bludgeoning),
+        damage=Damage.from_expression("18", damage_type=DamageType.Bludgeoning),
     ),
+    base_attack_damage=18,
 )
 
 Champion = BaseStatblock(
@@ -177,8 +183,9 @@ Champion = BaseStatblock(
     attack=Attack(
         name="Attack",
         hit=11,
-        damage=Damage.from_expression("4d8 + 6", damage_type=DamageType.Slashing),
+        damage=Damage.from_expression("24", damage_type=DamageType.Slashing),
     ),
+    base_attack_damage=24,
 )
 
 
