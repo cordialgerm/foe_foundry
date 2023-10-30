@@ -1,3 +1,5 @@
+import os
+
 import uvicorn
 from fastapi import FastAPI, Response
 
@@ -39,4 +41,4 @@ def get_random_stats(creature: str, role: str, cr: str | int | float) -> Statblo
 
 
 if __name__ == "__main__":
-    uvicorn.run(app)
+    uvicorn.run(app, port=int(os.getenv("PORT", 8080)), proxy_headers=True)
