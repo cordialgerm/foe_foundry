@@ -35,16 +35,20 @@ class AttackType(StrEnum):
 
     @staticmethod
     def AllRanged() -> Set[AttackType]:
-        return {AttackType.RangedNatural, AttackType.RangedWeapon, AttackType.RangedSpell}
+        return {a for a in AttackType if a.is_ranged()}
 
     @staticmethod
     def AllMelee() -> Set[AttackType]:
-        return {AttackType.MeleeNatural, AttackType.MeleeWeapon}
+        return {a for a in AttackType if a.is_melee()}
 
     @staticmethod
     def AllSpell() -> Set[AttackType]:
-        return {AttackType.RangedSpell}
+        return {a for a in AttackType if a.is_spell()}
 
     @staticmethod
     def AllWeapon() -> Set[AttackType]:
         return {a for a in AttackType if a.is_weapon()}
+
+    @staticmethod
+    def AllNatural() -> Set[AttackType]:
+        return {a for a in AttackType if a.is_natural()}

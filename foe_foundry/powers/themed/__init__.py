@@ -3,6 +3,7 @@ from typing import List
 from ..power import Power
 from . import (
     aberrant,
+    anti_magic,
     aquatic,
     attack,
     bestial,
@@ -39,6 +40,7 @@ from . import (
 
 ThemedPowers: List[Power] = (
     aberrant.AberrantPowers
+    + anti_magic.AntiMagicPowers
     + aquatic.AquaticPowers
     + attack.AttackPowers
     + bestial.BestialPowers

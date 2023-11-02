@@ -132,25 +132,6 @@ class _Disciplined(PowerBackport):
         return stats, feature
 
 
-class _MageSlayer(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Mage Slayer", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        score = _score_could_be_melee_fighter(candidate, requires_training=True)
-        return score
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = _as_melee_fighter(stats, uses_weapon=True)
-        feature = Feature(
-            name="Mage Slayer",
-            action=ActionType.Reaction,
-            description=f"If a hostile creature begins casting a spell within reach of {stats.selfref} then it may make a melee attack against the caster. \
-                If the attack hits, the caster must make a Concentration check against the damage of the attack. On a failure, the spell fails.",
-        )
-        return stats, feature
-
-
 class _ParryAndRiposte(PowerBackport):
     """This creature adds +3 to their Armor Class against one melee attack that would hit them.
     If the attack misses, this creature can immediately make a weapon attack against the creature making the parried attack.
@@ -253,7 +234,6 @@ PackTactics: Power = _PackTactics()
 ParryAndRiposte: Power = _ParryAndRiposte()
 PommelStrike: Power = _PommelStrike()
 PushingAttack: Power = _PushingAttack()
-MageSlayer: Power = _MageSlayer()
 
 WarriorPowers: List[Power] = [
     CleavingStrike,
@@ -262,5 +242,4 @@ WarriorPowers: List[Power] = [
     ParryAndRiposte,
     PommelStrike,
     PushingAttack,
-    MageSlayer,
 ]
