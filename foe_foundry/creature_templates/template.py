@@ -9,6 +9,7 @@ from ..powers import select_powers
 from ..role_types import MonsterRole
 from ..roles import AllRoles, RoleTemplate, get_role
 from ..statblocks import BaseStatblock, Statblock
+from ..utils.rng import RngFactory, resolve_rng
 
 
 class CreatureTypeTemplate(ABC):
@@ -55,11 +56,10 @@ class CreatureTypeTemplate(ABC):
     def create(
         self,
         base_stats: BaseStatblock,
-        rng_seed: int,
+        rng_factory: int | RngFactory,
         role_template: RoleTemplate | str | None | MonsterRole = None,
     ) -> Statblock:
-        def rng_factory() -> np.random.Generator:
-            return np.random.default_rng(rng_seed)
+        rng_factory = resolve_rng(rng_factory)
 
         rng = rng_factory()
 

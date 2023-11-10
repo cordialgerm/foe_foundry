@@ -1,10 +1,12 @@
 from enum import StrEnum
-from typing import Any, Dict, List, TypeVar, overload
+from typing import Any, Callable, Dict, List, TypeAlias, TypeVar, overload
 
 import numpy as np
 
 E = TypeVar("E", bound=StrEnum)
 T = TypeVar("T")
+
+RngFactory: TypeAlias = Callable[[], np.random.Generator]
 
 
 @overload
@@ -79,3 +81,14 @@ def choose_options(
         return items[indxs]
     else:
         return [items[i] for i in indxs]
+
+
+def resolve_rng(rng: int | RngFactory | None) -> RngFactory:
+    if rng is None or isinstance(rng, int):
+
+        def factory():
+            return np.random.default_rng(rng)
+
+        return factory
+    else:
+        return rng
