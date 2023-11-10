@@ -10,13 +10,13 @@ from ..creature_types import CreatureType
 from ..features import ActionType, Feature
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
+from ..utils.rng import RngFactory
 from .creatures import CreaturePowers
 from .power import MEDIUM_POWER, Power, PowerType
 from .roles import RolePowers
 from .themed import ThemedPowers
 
 Filter: TypeAlias = Callable[[Feature], bool]
-RngFactory: TypeAlias = Callable[[], np.random.Generator]
 
 
 @dataclass(kw_only=True)
