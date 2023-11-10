@@ -1,7 +1,9 @@
 from __future__ import annotations
 
-from enum import StrEnum, auto
+from enum import auto
 from typing import List, Set, cast
+
+from backports.strenum import StrEnum
 
 from ..die import Die
 

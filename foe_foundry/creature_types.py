@@ -1,7 +1,9 @@
 from __future__ import annotations
 
-from enum import StrEnum, auto
+from enum import auto
 from typing import Set
+
+from backports.strenum import StrEnum
 
 
 class CreatureType(StrEnum):

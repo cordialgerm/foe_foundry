@@ -1,7 +1,8 @@
 from __future__ import annotations
 
-from enum import StrEnum
 from typing import Any, Callable, List, cast
+
+from backports.strenum import StrEnum
 
 
 class Stats(StrEnum):

@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-from enum import StrEnum, auto
+from enum import auto
 from typing import Dict, List
 
 import numpy as np
+from backports.strenum import StrEnum
 
 from .die import Die
 
