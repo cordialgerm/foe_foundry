@@ -1,6 +1,7 @@
 from dataclasses import field
-from enum import StrEnum, auto
+from enum import auto
 
+from backports.strenum import StrEnum
 from pydantic.dataclasses import dataclass
 
 from ..die.formula import DieFormula

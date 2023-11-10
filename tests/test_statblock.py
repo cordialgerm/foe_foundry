@@ -14,6 +14,7 @@ from foe_foundry import (
     general_use_stats,
     templates,
 )
+from foe_foundry.utils.rng import RngFactory
 
 
 @pytest.mark.parametrize("n", range(3))
@@ -34,16 +35,15 @@ def test_all_combinations(
     examples_dir = Path(__file__).parent.parent / "examples"
     examples_dir.mkdir(exist_ok=True)
     name = f"{base_stat.name}_{creature_template.name}_{role.name}_{n}"
-    seed = _seed_for_text(name)
     path = examples_dir / (name + ".html")
-    stats = creature_template.create(base_stat, role_template=role, rng_seed=seed)
+
+    def rng_factory() -> np.random.Generator:
+        bytes = hashlib.sha256(name.encode("utf-8")).digest()
+        random_state = int.from_bytes(bytes, byteorder="little")
+        return np.random.default_rng(seed=random_state)
+
+    stats = creature_template.create(base_stat, role_template=role, rng_factory=rng_factory)
 
     benchmarks = benchmark(stats)
 
     templates.render_html_inline_page_to_path(stats, path, benchmarks)
-
-
-def _seed_for_text(text: str) -> int:
-    bytes = hashlib.sha256(text.encode("utf-8")).digest()
-    random_state = int.from_bytes(bytes)
-    return random_state

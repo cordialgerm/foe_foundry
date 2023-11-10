@@ -1,4 +1,6 @@
-from enum import StrEnum, auto
+from enum import auto
+
+from backports.strenum import StrEnum
 
 
 class PowerType(StrEnum):
