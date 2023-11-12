@@ -25,4 +25,4 @@ _Lookup = {r.key: r for r in AllRoles}
 
 
 def get_role(key: str) -> RoleTemplate:
-    return _Lookup[key]
+    return _Lookup[key.lower()]
