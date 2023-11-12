@@ -12,3 +12,4 @@ fastapi ~= 0.104.1
 uvicorn[standard] ~= 0.24
 pytest ~= 7.4.3
 backports.strenum ~= 1.2.8
+requests ~= 2.31.0
