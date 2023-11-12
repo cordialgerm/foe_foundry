@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import os
+import sys
+
+sys.path.append("/home/cordialgerm87/foe_foundry")
 from dataclasses import fields
 from typing import List, Optional, Set
 
@@ -9,20 +12,26 @@ import uvicorn
 from fastapi import FastAPI, Response
 from pydantic.dataclasses import dataclass
 
-from .ac import ResolvedArmorClass
-from .attributes import Attributes
-from .creature_templates import get_creature_template
-from .creature_types import CreatureType
-from .damage import Attack, AttackType, Condition, DamageType
-from .die import DieFormula
-from .features import Feature
-from .movement import Movement
-from .role_types import MonsterRole
-from .roles import get_role
-from .senses import Senses
-from .size import Size
-from .statblocks import Statblock, get_common_stats
-from .templates import render_html_inline
+from foe_foundry import (
+    Attack,
+    AttackType,
+    Attributes,
+    Condition,
+    CreatureType,
+    DamageType,
+    DieFormula,
+    Feature,
+    MonsterRole,
+    Movement,
+    ResolvedArmorClass,
+    Senses,
+    Size,
+    Statblock,
+    get_common_stats,
+    get_creature_template,
+    get_role,
+)
+from foe_foundry.templates import render_html_inline
 
 app = FastAPI()
 
