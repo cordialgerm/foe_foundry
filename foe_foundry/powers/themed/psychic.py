@@ -17,7 +17,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..power import HIGH_POWER, Power, PowerBackport, PowerType
 from ..scoring import AttackNames, score
 
 
@@ -29,12 +29,22 @@ def _score_is_psychic(
 ) -> float:
     # this is great for aberrations, psychic focused creatures, and controllers
 
+    creature_types = {CreatureType.Aberration}
+    if not require_aberration:
+        creature_types.update({c for c in CreatureType if c.could_be_organized})
+
+    def is_magical_creature(candidate: BaseStatblock) -> bool:
+        if not require_aberration and candidate.creature_type.could_be_organized:
+            return candidate.attack_type.is_spell()
+        else:
+            return candidate.creature_type in creature_types
+
     return score(
         candidate=candidate,
-        require_types=CreatureType.Aberration if require_aberration else None,
-        require_damage=DamageType.Psychic,
+        require_types=creature_types,
+        require_callback=is_magical_creature,
+        bonus_damage=DamageType.Psychic,
         bonus_roles=MonsterRole.Controller,
-        require_no_other_damage_type=True,
         attack_names=attack_names,
         require_cr=min_cr,
     )

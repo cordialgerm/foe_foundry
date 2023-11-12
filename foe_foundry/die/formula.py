@@ -137,6 +137,7 @@ class DieFormula:
         per_die_mod: int = 0,
         flat_mod: int = 0,
         min_die_count: int = 0,
+        min_val: int = 1,
     ) -> DieFormula:
         if suggested_die is None:
             suggested_die = Die.d6
@@ -162,7 +163,12 @@ class DieFormula:
             for c in candidates
         ]
         best_index = np.argmin(errors)
-        return candidates[best_index]
+        candidate = candidates[best_index]
+
+        if candidate.average < min_val:
+            return DieFormula.from_expression(str(min_val))
+        else:
+            return candidate
 
 
 def _candidate(

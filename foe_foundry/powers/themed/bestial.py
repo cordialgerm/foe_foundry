@@ -36,7 +36,12 @@ class _EarthshakingDemise(PowerBackport):
         def is_ground_based(c: BaseStatblock) -> bool:
             return not c.speed.fly
 
-        return score_bestial(candidate, bonus_size=Size.Huge, require_callback=is_ground_based)
+        return score_bestial(
+            candidate,
+            require_size=Size.Large,
+            bonus_size=Size.Huge,
+            require_callback=is_ground_based,
+        )
 
     def apply(
         self, stats: BaseStatblock, rng: np.random.Generator

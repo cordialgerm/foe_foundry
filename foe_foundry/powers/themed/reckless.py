@@ -196,7 +196,7 @@ class _FlurryOfBlows(PowerBackport):
             name="Flurry of Blows",
             action=ActionType.Action,
             recharge=5,
-            description=f"{stats.selfref.capitalize()} makes a reckless flurry of {attacks} {attack_name}. Attacks against {stats.selfref} have advantage until the end of {stats.selfref}'s next turn.",
+            description=f"{stats.selfref.capitalize()} makes a reckless flurry of {attacks} {attack_name} attacks. Attacks against {stats.selfref} have advantage until the end of {stats.selfref}'s next turn.",
         )
 
         return stats, feature

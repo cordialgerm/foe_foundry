@@ -184,10 +184,11 @@ class _ArmorMaster(PowerBackport):
     def apply(
         self, stats: BaseStatblock, rng: Generator
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        reduction = stats.attributes.proficiency
         feature = Feature(
             name="Heavy Armor Master",
             action=ActionType.Feature,
-            description=f"{stats.selfref.capitalize()} reduces the amount of bludgeoning, piercing, and slashing damage it receives by 3.",
+            description=f"{stats.selfref.capitalize()} reduces the amount of bludgeoning, piercing, and slashing damage it receives by {reduction}.",
         )
         return stats, feature
 

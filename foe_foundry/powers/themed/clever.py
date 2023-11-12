@@ -119,7 +119,7 @@ class _UnsettlingWords(PowerBackport):
             name="Unsettling Words",
             action=ActionType.Reaction,
             uses=uses,
-            description=f"Whenever a hostile creature within {distance} that can hear {stats.selfref} makes a d20 ability check, \
+            description=f"Whenever a hostile creature within {distance} ft that can hear {stats.selfref} makes a d20 ability check, \
                 {stats.selfref} can roll {die} and subtract the result from the total, potentially turning a success into a failure",
         )
 

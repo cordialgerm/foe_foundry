@@ -126,7 +126,7 @@ class _IndirectFire(PowerBackport):
         feature = Feature(
             name="Indirect Fire",
             action=ActionType.Feature,
-            description=f"{stats.roleref} can perform its ranged attacks indirectly, such as by arcing or curving shots. It ignores half and three-quarters cover. \
+            description=f"{stats.roleref.capitalize()} can perform its ranged attacks indirectly, such as by arcing or curving shots. It ignores half and three-quarters cover. \
                 These attacks are often unexpected. If it makes a ranged attack against a creature with half or three-quarters cover that is not yet aware of this ability, the attack is made at advantage. \
                 Any creature that can see the attack occuring is then aware of this ability.",
         )
