@@ -12,7 +12,6 @@ from .movement import Movement  # noqa
 from .role_types import MonsterRole
 from .roles import (
     AllRoles,
-    AllRoleVariants,
     Ambusher,
     Artillery,
     Bruiser,
@@ -20,7 +19,6 @@ from .roles import (
     Defender,
     Leader,
     RoleTemplate,
-    RoleVariant,
     Skirmisher,
     get_role,
 )

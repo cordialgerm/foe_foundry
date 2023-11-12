@@ -160,5 +160,7 @@ cython_debug/
 #.idea/
 
 
+# Node modules
+node_modules/
 
 examples/

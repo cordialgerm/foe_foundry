@@ -68,7 +68,7 @@ class CreatureTypeTemplate(ABC):
 
         # apply role specialization
         role_template = self.select_role(stats=new_stats, role_template=role_template, rng=rng)
-        new_stats = role_template.alter_base_stats(new_stats, rng=rng)
+        new_stats = role_template.alter_base_stats(new_stats)
         new_stats = self.customize_role(new_stats, rng)
 
         # apply attack template and attack powers (if any)

@@ -20,8 +20,11 @@ from ..scoring import score
 
 
 def _score_is_tricky_creature(candidate: BaseStatblock) -> float:
-    def is_powerfully_magical(c: BaseStatblock) -> bool:
-        return c.attributes.spellcasting_mod >= 3 or c.attack_type.is_spell()
+    def humanoid_is_magical(c: BaseStatblock) -> bool:
+        if c.creature_type == CreatureType.Humanoid:
+            return c.attack_type.is_spell() and c.attributes.spellcasting_mod >= 3
+        else:
+            return True
 
     return score(
         candidate=candidate,
@@ -31,7 +34,7 @@ def _score_is_tricky_creature(candidate: BaseStatblock) -> float:
             CreatureType.Aberration,
             CreatureType.Humanoid,
         },
-        require_callback=is_powerfully_magical,
+        require_callback=humanoid_is_magical,
         bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
         require_stats=[Stats.CHA, Stats.INT],
     )
@@ -42,14 +45,7 @@ def _ensure_tricky_stats(stats: BaseStatblock) -> BaseStatblock:
     new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception).boost(
         Stats.CHA, 2
     )
-
     changes: dict = dict(attributes=new_attrs)
-
-    # if this is a humanoid, it should be an illusionist spellcaster
-    if stats.creature_type == CreatureType.Humanoid:
-        changes.update(
-            attack_type=AttackType.RangedSpell, secondary_damage_type=DamageType.Psychic
-        )
 
     return stats.copy(**changes)
 

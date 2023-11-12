@@ -7,10 +7,10 @@
     "editor.minimap.enabled": false,
     "files.exclude": {
         "**/__pycache__": true,
-        "**/.pytest_cache": true
+        "**/.pytest_cache": true,
+        "**/node_modules": true
     },
     "files.trimTrailingWhitespace": true,
-    "python.formatting.provider": "black",
     "black-formatter.args": [
         "--line-length",
         "96"
@@ -22,6 +22,7 @@
         "editor.codeActionsOnSave": {
             "source.organizeImports": true,
             "source.fixAll": true
-        }
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter"
     }
 }

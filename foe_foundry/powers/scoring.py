@@ -119,12 +119,12 @@ class _RequirementTracker:
 
         # if there are many required checks and you pass them all then you should get a score boost
         # this is because narrowly defined powers are unique and interesting, so if a candidate qualifies they should have a boosted chance
-        strict_requirement_boost = 0.5 * max(0, self.require_hits - 2)
+        strict_requirement_boost = 0.25 * max(0, self.require_hits - 2)
 
         # get a score boost for bonus checks
-        bonus_boost = 0.25 * self.bonus_hits
+        bonus_boost = 0.125 * self.bonus_hits
 
-        final_score = min(2.5, score + strict_requirement_boost + bonus_boost)
+        final_score = min(2.0, score + strict_requirement_boost + bonus_boost)
         return final_score
 
 

@@ -29,8 +29,8 @@ def score_trap(candidate: BaseStatblock) -> float:
     return score(
         candidate=candidate,
         require_types=creature_types,
+        require_roles={MonsterRole.Leader, MonsterRole.Ambusher, MonsterRole.Skirmisher},
         bonus_types=CreatureType.Humanoid,
-        bonus_roles={MonsterRole.Leader, MonsterRole.Ambusher},
         bonus_skills=Skills.Survival,
     )
 

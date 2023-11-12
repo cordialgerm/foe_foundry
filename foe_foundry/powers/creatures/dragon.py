@@ -249,8 +249,8 @@ class _DragonsBreath(PowerBackport):
         dmg = DieFormula.target_value(
             max(
                 5 + multiplier * 2 * stats.cr,
-                multiplier * 3.8 * stats.cr,
-                multiplier * 0.7 * stats.attack.average_damage * stats.multiattack,
+                multiplier * 3.5 * stats.cr,
+                multiplier * 0.6 * stats.attack.average_damage * stats.multiattack,
             ),
             suggested_die=Die.d8,
         )
