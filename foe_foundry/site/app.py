@@ -1,10 +1,10 @@
 import numpy as np
 from fastapi import FastAPI, Response
 
-from foe_foundry import Statblock, get_common_stats, get_creature_template, get_role
-from foe_foundry.templates import render_html_inline
-from foe_foundry.utils.rng import RngFactory
-
+from ..creature_templates import get_creature_template
+from ..roles import get_role
+from ..statblocks import Statblock, get_common_stats
+from ..templates import render_html_inline
 from .stats import StatblockModel
 
 app = FastAPI()
