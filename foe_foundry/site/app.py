@@ -65,8 +65,18 @@ def get_root():
 
 
 @app.get("/statblocks/random/{creature}/{role}/{cr}")
-def view_random_stats(creature: str, role: str, cr: str | int | float) -> Response:
+def view_random_stats3(creature: str, role: str, cr: str | int | float) -> Response:
     return _render_stats(creature=creature, role=role, cr=cr)
+
+
+@app.get("/statblocks/random/{creature}/{role}")
+def view_random_stats2(creature: str, role: str) -> Response:
+    return _render_stats(creature=creature, role=role, cr=None)
+
+
+@app.get("/statblocks/random/{creature}")
+def view_random_stats1(creature: str) -> Response:
+    return _render_stats(creature=creature, role=None, cr=None)
 
 
 @app.get("/api/v1/statblocks/random/{creature}/{role}/{cr}")

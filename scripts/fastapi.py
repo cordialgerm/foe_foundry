@@ -31,6 +31,27 @@ def check_account():
         )
 
 
+@click.command(name="reload_website")
+def reload_website():
+    username, token = _creds()
+    pythonanywhere_host = "www.pythonanywhere.com"  # or "eu.pythonanywhere.com" if your account is hosted on our EU servers
+    pythonanywhere_domain = "pythonanywhere.com"  # or "eu.pythonanywhere.com"
+    headers = {"Authorization": f"Token {token}"}
+
+    # make sure you don't use this domain already!
+    domain_name = f"{username}.{pythonanywhere_domain}"
+
+    api_base = f"https://{pythonanywhere_host}/api/v1/user/{username}/"
+
+    endpoint = urljoin(api_base, f"websites/{domain_name}/")
+    # disable:
+    response = requests.patch(endpoint, headers=headers, json={"enabled": False})
+    print(response)
+    # enable:
+    response = requests.patch(endpoint, headers=headers, json={"enabled": True})
+    print(response)
+
+
 @click.command(name="setup_website")
 def setup_website():
     username, token = _creds()
@@ -69,6 +90,7 @@ def cli():
 
 cli.add_command(setup_website)
 cli.add_command(check_account)
+cli.add_command(reload_website)
 
 if __name__ == "__main__":
     cli()
