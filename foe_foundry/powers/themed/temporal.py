@@ -129,8 +129,104 @@ class _TemporalMastery(PowerBackport):
         return stats, feature
 
 
+class _Accelerate(Power):
+    def __init__(self):
+        super().__init__(
+            name="Accelerate Time", power_type=PowerType.Theme, power_level=HIGH_POWER
+        )
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_temporal(candidate, min_cr=4)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Accelerate Time",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} touches a friendly creature. For the next 1 minute, that creature's movement speed is doubled \
+                and it gains advantage on melee attacks.",
+        )
+
+        return [feature]
+
+
+class _AlterFate(Power):
+    def __init__(self):
+        super().__init__(name="Alter Fate", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_temporal(candidate, min_cr=4)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Alter Fate",
+            action=ActionType.Reaction,
+            recharge=5,
+            description=f"When a creature that {stats.selfref} can see within 60 feet succeeds on an attack roll, ability check, or a saving throw, \
+                then {stats.selfref} alters that creature's fate. It must reroll the d20 and use the lower roll.",
+        )
+        return [feature]
+
+
+class _WallOfTime(Power):
+    def __init__(self):
+        super().__init__(name="Wall of Time", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_temporal(candidate, min_cr=7)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Wall of Time",
+            action=ActionType.Action,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} creates a shimmering wall of temporal magic. The wall is either 60 feet long, 20 feet high, and 1 foot thick \
+                or is a circular wall 20 feet in diameter, 20 feet high, and 1 foot thick. Nonmagical ranged attacks that cross the wall vanish into time with no other effect. \
+                Ranged spell and magical attacks that pass through the wall are made with disadvantage. A creature that intentionally enters or passes through the wall is affected \
+                as if they had just failed their initial saving throw against the *Slow* spell",
+            replaces_multiattack=2,
+        )
+        return [feature]
+
+
+class _Reset(Power):
+    def __init__(self):
+        super().__init__(name="Reset", power_type=PowerType.Theme)
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return score_temporal(candidate, min_cr=5)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+
+        feature = Feature(
+            name="Temporal Reset",
+            action=ActionType.Action,
+            uses=1,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} twists time around up to four creatures of its choice. \
+                If the creature is friendly, it may re-roll its initiative twice and keep the result that it prefers. \
+                If the creature is hostile, it must make a DC {dc} Wisdom saving throw. On a failure, \
+                the creature must re-roll its initiative twice and take the lower result.",
+        )
+
+        return [feature]
+
+
+Accelerate: Power = _Accelerate()
+AlterFate: Power = _AlterFate()
 CurseOfTheAges: Power = _CurseOfTheAges()
 TemporalLoop: Power = _TemporalLoop()
 TemporalMastery: Power = _TemporalMastery()
+TemporalReset: Power = _Reset()
+WallOfTime: Power = _WallOfTime()
 
-TemporalPowers: List[Power] = [CurseOfTheAges, TemporalLoop, TemporalMastery]
+TemporalPowers: List[Power] = [
+    Accelerate,
+    AlterFate,
+    CurseOfTheAges,
+    TemporalLoop,
+    TemporalMastery,
+    TemporalReset,
+    WallOfTime,
+]
