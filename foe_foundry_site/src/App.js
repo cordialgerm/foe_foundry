@@ -145,7 +145,7 @@ function PersistentDrawerLeft({ creatureType, setCreatureType, role, setRole, cr
           <CrSelector value={cr} onChange={onCrChanged} />
         </ListItem>
         <ListItem key="refresh">
-          <ListItemButton onClick={onRefreshClicked} variant="contained">
+          <ListItemButton onClick={onRefreshClicked} style={{ width: "200px" }} color="primary">
             <ListItemIcon>
               <LoopIcon />
             </ListItemIcon>
@@ -158,7 +158,7 @@ function PersistentDrawerLeft({ creatureType, setCreatureType, role, setRole, cr
 }
 
 
-function App() {
+function App({ baseUrl }) {
 
   const [drawerOpen, setDrawerOpen] = useState(true);
   const [refreshCount, setRefreshCount] = useState(0)
@@ -176,18 +176,16 @@ function App() {
         role={role} setRole={setRole}
         cr={cr} setCr={setCr}
         refreshCount={refreshCount} setRefreshCount={setRefreshCount} />
-      <Main open={drawerOpen}>
-        <Paper elevation={1}>
-          <RandomStatblock creatureType={creatureType} role={role} cr={cr} counter={refreshCount} />
-        </Paper>
+      <Main open={drawerOpen} style={{ width: "100vw" }}>
+        <RandomStatblock baseUrl={baseUrl} creatureType={creatureType} role={role} cr={cr} counter={refreshCount} />
       </Main>
-    </ThemeProvider>
+    </ThemeProvider >
   );
 }
 
 function CreateTypeSelector({ value, onChange }) {
   return (
-    <FormControl style={{ padding: 15 }}>
+    <FormControl style={{ padding: 15, width: "200px" }}>
       <InputLabel id="creature-type-select-label">Creature Type</InputLabel>
       <Select labelId="creature-type-select-label"
         id="creature-type-select"
@@ -216,7 +214,7 @@ function CreateTypeSelector({ value, onChange }) {
 
 function RoleSelector({ value, onChange }) {
   return (
-    <FormControl style={{ padding: 15 }}>
+    <FormControl style={{ padding: 15, width: "200px" }}>
       <InputLabel id="monster-role-select-label">Monster Role</InputLabel>
       <Select labelId="monster-role-select-label"
         id="monster-role-select"
@@ -238,7 +236,7 @@ function RoleSelector({ value, onChange }) {
 
 function CrSelector({ value, onChange }) {
   return (
-    <FormControl style={{ padding: 15 }}>
+    <FormControl style={{ padding: 15, width: "200px" }}>
       <InputLabel id="cr-select-label">Challenge Rating (CR)</InputLabel>
       <Select labelId="cr-select-label"
         id="cr-select"
@@ -258,8 +256,8 @@ function CrSelector({ value, onChange }) {
   )
 }
 
-function RandomStatblock({ creatureType, role, cr, counter }) {
-  const url = `http://127.0.0.1:8080/statblocks/random/${creatureType}/${role}/${cr}?render=partial`
+function RandomStatblock({ baseUrl, creatureType, role, cr, counter }) {
+  const url = `http://${baseUrl}/statblocks/random/${creatureType}/${role}/${cr}?render=partial`
   const id = `${creatureType}-${role}-${cr}-${counter}`
 
   const [state, setState] = useState({ loaded: false, rawHtml: "loading..." })
