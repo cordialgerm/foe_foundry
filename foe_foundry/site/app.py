@@ -1,7 +1,11 @@
 from __future__ import annotations
 
+from enum import auto
+
 import numpy as np
+from backports.strenum import StrEnum
 from fastapi import FastAPI, Response
+from fastapi.middleware.cors import CORSMiddleware
 
 from foe_foundry import (
     AllCreatureTemplates,
@@ -12,11 +16,27 @@ from foe_foundry import (
     get_creature_template,
     get_role,
 )
-from foe_foundry.templates import render_html_inline
+from foe_foundry.templates import render_html_fragment, render_html_inline
 
 from .stats import StatblockModel
 
 app = FastAPI()
+
+origins = [
+    "http://localhost",
+    "http://localhost:8080",
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://cordialgerm87.pythonanywhere.com",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 rng = np.random.default_rng(20210518)
 
@@ -53,30 +73,47 @@ def _random_stats(
     return stats
 
 
-def _render_stats(**args) -> Response:
+def _render_stats(render: RenderMode, **args) -> Response:
     stats = _random_stats(**args)
-    html = render_html_inline(stats)
+
+    if render == RenderMode.full:
+        html = render_html_inline(stats)
+    elif render == RenderMode.partial:
+        html = render_html_fragment(stats)
+    else:
+        raise ValueError(f"Unsupported render '{render}'")
     return Response(content=html, media_type="text/html")
 
 
 @app.get("/")
 def get_root():
-    return _render_stats()
+    return _render_stats(render=RenderMode.full)
+
+
+class RenderMode(StrEnum):
+    full = auto()
+    partial = auto()
 
 
 @app.get("/statblocks/random/{creature}/{role}/{cr}")
-def view_random_stats3(creature: str, role: str, cr: str | int | float) -> Response:
-    return _render_stats(creature=creature, role=role, cr=cr)
+def view_random_stats3(
+    creature: str, role: str, cr: str | int | float, render: RenderMode | None = None
+) -> Response:
+    return _render_stats(creature=creature, role=role, cr=cr, render=render or RenderMode.full)
 
 
 @app.get("/statblocks/random/{creature}/{role}")
-def view_random_stats2(creature: str, role: str) -> Response:
-    return _render_stats(creature=creature, role=role, cr=None)
+def view_random_stats2(creature: str, role: str, render: RenderMode | None = None) -> Response:
+    return _render_stats(
+        creature=creature, role=role, cr=None, render=render or RenderMode.full
+    )
 
 
 @app.get("/statblocks/random/{creature}")
-def view_random_stats1(creature: str) -> Response:
-    return _render_stats(creature=creature, role=None, cr=None)
+def view_random_stats1(creature: str, render: RenderMode | None = None) -> Response:
+    return _render_stats(
+        creature=creature, role=None, cr=None, render=render or RenderMode.full
+    )
 
 
 @app.get("/api/v1/statblocks/random/{creature}/{role}/{cr}")
