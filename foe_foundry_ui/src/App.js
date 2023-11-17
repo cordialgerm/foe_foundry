@@ -3,7 +3,7 @@ import { styled, useTheme, ThemeProvider, createTheme } from '@mui/material/styl
 
 import { useState, useEffect } from 'react';
 
-import { InputLabel, Toolbar, Typography, Paper, FormControl, Select, MenuItem, Container, Drawer, Divider, List, ListItem, ListItemIcon, ListItemButton, ListItemText, AppBar, CssBaseline } from '@mui/material';
+import { InputLabel, Toolbar, Typography, FormControl, Select, MenuItem, Container, Drawer, Divider, List, ListItem, ListItemIcon, ListItemButton, ListItemText, AppBar, CssBaseline } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';

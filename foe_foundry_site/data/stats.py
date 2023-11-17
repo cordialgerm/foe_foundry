@@ -5,16 +5,21 @@ from typing import List, Optional, Set
 
 from pydantic.dataclasses import dataclass
 
-from ..ac import ResolvedArmorClass
-from ..attributes import Attributes
-from ..creature_types import CreatureType
-from ..damage import Attack, AttackType, Condition, DamageType
-from ..die import DieFormula
-from ..features import Feature
-from ..movement import Movement
-from ..role_types import MonsterRole
-from ..senses import Senses
-from ..size import Size
+from foe_foundry import (
+    Attack,
+    AttackType,
+    Attributes,
+    Condition,
+    CreatureType,
+    DamageType,
+    DieFormula,
+    Feature,
+    MonsterRole,
+    Movement,
+    ResolvedArmorClass,
+    Senses,
+    Size,
+)
 
 
 @dataclass(kw_only=True)
