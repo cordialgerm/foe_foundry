@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { useState } from 'react';
+import { ThemeProvider } from '@mui/material/styles'
 
 import { CssBaseline } from '@mui/material';
 import { FoeFoundryAppBar } from './AppBar.js';
@@ -8,6 +9,7 @@ import { PersistentDrawerLeft } from './Drawer.js';
 import { RandomStatblock } from './Statblock.js'
 import { Main } from './Main.js'
 import { RandomBackgroundImage } from './Background.js';
+import theme from './Theme.js';
 
 
 function App({ baseUrl }) {
@@ -19,7 +21,7 @@ function App({ baseUrl }) {
   const [cr, setCr] = useState("specialist")
 
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <FoeFoundryAppBar drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen} />
       <PersistentDrawerLeft
@@ -33,7 +35,7 @@ function App({ baseUrl }) {
           <RandomStatblock baseUrl={baseUrl} creatureType={creatureType} role={role} cr={cr} counter={refreshCount} />
         </RandomBackgroundImage>
       </Main>
-    </div >
+    </ThemeProvider>
   );
 }
 

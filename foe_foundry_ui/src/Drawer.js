@@ -1,7 +1,7 @@
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import LoopIcon from '@mui/icons-material/Loop';
-import { Divider, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+import { Divider as MuiDivider, Drawer as MuiDrawer, List as MuiList, ListItem as MuiListItem, ListItemButton as MuiListItemButton, ListItemIcon as MuiListItemIcon, ListItemText as MuiListItemText } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import { styled, useTheme } from '@mui/material/styles';
 import * as React from 'react';
@@ -42,7 +42,7 @@ export function PersistentDrawerLeft({ creatureType, setCreatureType, role, setR
     }
 
     return (
-        <Drawer
+        <MuiDrawer
             variant="persistent"
             anchor="left"
             width={drawerWidth}
@@ -53,26 +53,26 @@ export function PersistentDrawerLeft({ creatureType, setCreatureType, role, setR
                     {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                 </IconButton>
             </DrawerHeader>
-            <Divider />
-            <List>
-                <ListItem key="creatureTyp">
+            <MuiDivider />
+            <MuiList>
+                <MuiListItem key="creatureType">
                     <CreateTypeSelector value={creatureType} onChange={onCreatureTypeChanged} />
-                </ListItem>
-                <ListItem key="role">
+                </MuiListItem>
+                <MuiListItem key="role">
                     <RoleSelector value={role} onChange={onRoleChanged} />
-                </ListItem>
-                <ListItem key="cr">
+                </MuiListItem>
+                <MuiListItem key="cr">
                     <CrSelector value={cr} onChange={onCrChanged} />
-                </ListItem>
-                <ListItem key="refresh">
-                    <ListItemButton onClick={onRefreshClicked} style={{ width: "200px" }} color="primary">
-                        <ListItemIcon>
+                </MuiListItem>
+                <MuiListItem key="refresh">
+                    <MuiListItemButton onClick={onRefreshClicked} style={{ width: "200px" }}>
+                        <MuiListItemIcon>
                             <LoopIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Refresh" />
-                    </ListItemButton>
-                </ListItem>
-            </List>
-        </Drawer>
+                        </MuiListItemIcon>
+                        <MuiListItemText primary="Refresh" />
+                    </MuiListItemButton>
+                </MuiListItem>
+            </MuiList>
+        </MuiDrawer>
     )
 }

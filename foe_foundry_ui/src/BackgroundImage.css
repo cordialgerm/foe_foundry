@@ -1,0 +1,6 @@
+.backgroundImage {
+    -webkit-mask-image: url(../public/mask/watercolor-mask.png);
+    -webkit-mask-size: cover;
+    mask-image: url(../public/mask/watercolor-mask.png);
+    mask-size: contain;
+}

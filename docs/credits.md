@@ -42,3 +42,7 @@ This work includes material taken from the A5E System Reference Document (A5ESRD
 ### Lazy GM's Resource Document Notice
 
 <blockquote>This work includes material taken from the <a href="https://slyflourish.com/lazy_gm_resource_document.html">Lazy GM's Resource Document</a> by Michael E. Shea of <a href="https://slyflourish.com">SlyFlourish.com</a>, available under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</blockquote>
+
+## Watercolor Mask
+
+<a href="https://www.freepik.com/free-vector/abstract-grunge-banners-with-your-test-vector-illustration_25979458.htm?query=watercolor mask border">Image by Rochak Shukla</a> on Freepik
