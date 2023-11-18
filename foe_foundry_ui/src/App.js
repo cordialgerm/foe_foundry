@@ -31,7 +31,7 @@ function App({ baseUrl }) {
         cr={cr} setCr={setCr}
         refreshCount={refreshCount} setRefreshCount={setRefreshCount} />
       <Main open={drawerOpen}>
-        <RandomBackgroundImage counter={refreshCount}>
+        <RandomBackgroundImage creatureType={creatureType} counter={refreshCount}>
           <RandomStatblock baseUrl={baseUrl} creatureType={creatureType} role={role} cr={cr} counter={refreshCount} />
         </RandomBackgroundImage>
       </Main>

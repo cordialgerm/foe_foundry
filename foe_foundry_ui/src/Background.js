@@ -3,7 +3,6 @@ import './BackgroundImage.css';
 
 function BackgroundImage({ img, children }) {
     const imageUrl = `url(img/${img})`
-    const maskUrl = "url(mask/watercolor-mask.png)"
     return (
         <div style={{
             position: "relative",
@@ -34,8 +33,8 @@ function BackgroundImage({ img, children }) {
     )
 }
 
-export function RandomBackgroundImage({ counter, children }) {
-    const imageNames = getImageNames();
+export function RandomBackgroundImage({ counter, creatureType, children }) {
+    const imageNames = getImageNames(creatureType);
     const imageName = imageNames[counter % imageNames.length]
     return (
         <BackgroundImage img={imageName} children={children} />
@@ -43,8 +42,18 @@ export function RandomBackgroundImage({ counter, children }) {
 }
 
 // Function to get image names dynamically
-function getImageNames() {
+function getImageNames(creatureType) {
+    //note - require.context requires literal arguments
+    //this is probably because it is used at compile time
     const context = require.context('../public/img', false, /\.(png|jpg|jpeg|gif|svg)$/);
     const imageNames = context.keys().map((key) => key.split('/').pop());
-    return imageNames;
+
+    if (creatureType) {
+        return imageNames.filter((name) => name.includes(creatureType));
+    }
+    else {
+        return imageNames;
+    }
+
+
 }
