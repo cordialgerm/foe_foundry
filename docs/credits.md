@@ -10,6 +10,7 @@ Foe Foundry is inspired by a variety of sources, including:
 - [The Lazy GM's Monster Builder Resource Document](https://slyflourish.com/lazy_5e_monster_building_resource_document.html)
 - [Dungeon Dudes: Homebrewing New Conditions for D&D 5e](https://youtu.be/Bq2Dz-EETJs?si=x94Allggu79ECGy3)
 - [A reddit post to r/onednd about creative anti-magic monster design](https://www.reddit.com/r/onednd/comments/17gw8he/monster_design_a_way_to_balance_castersmartials/) by **u/Juls7243**
+- [Disease powers from CrunchyDM](https://www.patreon.com/crunchydm/posts)
 
 ### Forge of Foes
 
@@ -22,6 +23,10 @@ Foe Foundry is inspired by a variety of sources, including:
 ### DungeonDudes - Homebrewing New Conditions for D&D 5E
 
 Foe Foundry also utilizes some new conditions, including **Dazed**, **Burning**, **Shocked**, **Frozen**, and **Fatigued**. Inspiration for these conditions comes from this video - [**Dungeon Dudes: Homebrewing New Conditions for D&D 5e**](https://youtu.be/Bq2Dz-EETJs?si=x94Allggu79ECGy3)
+
+### Disease Powers from CrunchyDM
+
+Several of the disease powers are inspired by very vicious disease-laden spiders that [CrunchyDM](https://www.patreon.com/crunchydm/posts) threw against me and my fellow PCs in one of our games. They put the fear of Nurgle in our hearts and I thought other players would enjoy that experience as well.
 
 ### SRD 5.1 Notice
 

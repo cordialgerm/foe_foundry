@@ -34,6 +34,7 @@ def _score(candidate: BaseStatblock) -> float:
             weapon.Shortbow,
             natural.Bite,
             natural.Claw,
+            natural.Spit,
             natural.Stinger,
             natural.Tentacle,
             spell.Poisonbolt,

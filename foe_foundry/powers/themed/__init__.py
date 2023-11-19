@@ -14,6 +14,7 @@ from . import (
     cruel,
     cursed,
     deathly,
+    diseased,
     domineering,
     earthy,
     fast,
@@ -51,6 +52,7 @@ ThemedPowers: List[Power] = (
     + cruel.CruelPowers
     + cursed.CursedPowers
     + deathly.DeathlyPowers
+    + diseased.DiseasedPowers
     + domineering.DomineeringPowers
     + earthy.EarthyPowers
     + fast.FastPowers
