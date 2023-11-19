@@ -56,84 +56,84 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 
 const images = [
     {
-        url: "/img/aberration-eye-monster.png",
+        url: "/img/monster/aberration-eye-monster.png",
         title: "Aberrations",
         link: "abberation",
         width: "40%"
     },
     {
-        url: "/img/beast-wolves.png",
+        url: "/img/monster/beast-wolves.png",
         title: "Beasts",
         link: "beast",
         width: "40%"
     },
     {
-        url: "/img/celestial-fractal.png",
+        url: "/img/monster/celestial-fractal.png",
         title: "Celestials",
         link: "celestial",
         width: "20%"
     },
     {
-        url: "/img/construct-iron-golem.png",
+        url: "/img/monster/construct-iron-golem.png",
         title: "Constructs",
         link: "construct",
         width: "38%"
     },
     {
-        url: "/img/dragon-2.png",
+        url: "/img/monster/dragon-2.png",
         title: "Dragons",
         link: "dragon",
         width: "38%"
     },
     {
-        url: "/img/elemental-fire.png",
+        url: "/img/monster/elemental-fire.png",
         title: "Elementals",
         link: "elemental",
         width: "24%"
     },
     {
-        url: "/img/fey-hag.png",
+        url: "/img/monster/fey-hag.png",
         title: "Fey",
         link: "fey",
         width: "36%",
     },
     {
-        url: "/img/fiend-demon.png",
+        url: "/img/monster/fiend-demon.png",
         title: "Fiends",
         link: "fiend",
         width: "44%"
     },
     {
-        url: "/img/giant-frost-fire.png",
+        url: "/img/monster/giant-frost-fire.png",
         title: "Giants",
         link: "giant",
         width: "20%"
     },
     {
-        url: "/img/humanoid-elf-rogue.png",
+        url: "/img/monster/humanoid-elf-rogue.png",
         title: "Humanoids",
         link: "humanoid",
         width: "44%"
     },
     {
-        url: "/img/monstrosity-owlbear.png",
+        url: "/img/monster/monstrosity-owlbear.png",
         title: "Monstrosities",
         width: "32%"
     },
     {
-        url: "/img/ooze-slime-monster.png",
+        url: "/img/monster/ooze-slime-monster.png",
         title: "Oozes",
         link: "ooze",
         width: "24%"
     },
     {
-        url: "/img/plant-death-flower.png",
+        url: "/img/monster/plant-death-flower.png",
         title: "Plants",
         link: "plant",
         width: "40%"
     },
     {
-        url: "/img/undead-lich1.png",
+        url: "/img/monster/undead-lich1.png",
         title: "Undead",
         link: "undead",
         width: "60%"

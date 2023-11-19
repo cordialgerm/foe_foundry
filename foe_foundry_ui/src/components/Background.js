@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/BackgroundImage.css';
 
 function BackgroundImage({ img, children }) {
-    const imageUrl = `url(img/${img})`
+    const imageUrl = `url(img/monster/${img})`
     return (
         <div style={{
             position: "relative",
@@ -45,7 +45,7 @@ export function RandomBackgroundImage({ counter, creatureType, children }) {
 function getImageNames(creatureType) {
     //note - require.context requires literal arguments
     //this is probably because it is used at compile time
-    const context = require.context('../../public/img', false, /\.(png|jpg|jpeg|gif|svg)$/);
+    const context = require.context('../../public/img/monster', false, /\.(png|jpg|jpeg|gif|svg)$/);
     const imageNames = context.keys().map((key) => key.split('/').pop());
 
     if (creatureType) {
