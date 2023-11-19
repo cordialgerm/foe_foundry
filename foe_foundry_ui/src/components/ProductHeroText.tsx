@@ -26,18 +26,25 @@ const item: SxProps<Theme> = {
     px: 5,
 };
 
-const number = {
+const title = {
     fontSize: 24,
     fontFamily: 'default',
     fontWeight: 'bold',
+    textDecoration: "underline"
+};
+
+const description = {
+    fontSize: 18,
+    fontFamily: 'default',
+    textAlign: "center"
 };
 
 const HeroText: React.FC<HeroTextProps> = (data) => {
     return (
         <Grid item xs={12} md={4}>
             <Box sx={item}>
-                <Box sx={number}>1. {data.title}</Box>
-                <Typography variant="h5" align="center" style={{ textAlign: "center" }}>
+                <Box sx={title}>{data.title}</Box>
+                <Typography variant="h5" align="center" sx={description}>
                     {data.description}
                 </Typography>
             </Box>
@@ -84,7 +91,7 @@ const ProductHeroText: React.FC<ProductHeroTextProps> = (heroText) => {
                     </Grid>
                 </div>
             </Container>
-        </Box>
+        </Box >
     );
 }
 

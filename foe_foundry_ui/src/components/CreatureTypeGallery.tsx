@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
     position: 'absolute',
@@ -57,51 +58,61 @@ const images = [
     {
         url: "/img/aberration-eye-monster.png",
         title: "Aberrations",
+        link: "abberation",
         width: "40%"
     },
     {
         url: "/img/beast-wolves.png",
         title: "Beasts",
+        link: "beast",
         width: "40%"
     },
     {
         url: "/img/celestial-fractal.png",
         title: "Celestials",
+        link: "celestial",
         width: "20%"
     },
     {
         url: "/img/construct-iron-golem.png",
         title: "Constructs",
+        link: "construct",
         width: "38%"
     },
     {
         url: "/img/dragon-2.png",
         title: "Dragons",
+        link: "dragon",
         width: "38%"
     },
     {
         url: "/img/elemental-fire.png",
         title: "Elementals",
+        link: "elemental",
         width: "24%"
     },
     {
         url: "/img/fey-hag.png",
         title: "Fey",
+        link: "fey",
         width: "36%",
     },
     {
         url: "/img/fiend-demon.png",
         title: "Fiends",
+        link: "fiend",
         width: "44%"
     },
     {
         url: "/img/giant-frost-fire.png",
         title: "Giants",
+        link: "giant",
         width: "20%"
     },
     {
         url: "/img/humanoid-elf-rogue.png",
         title: "Humanoids",
+        link: "humanoid",
         width: "44%"
     },
     {
@@ -112,16 +123,19 @@ const images = [
     {
         url: "/img/ooze-slime-monster.png",
         title: "Oozes",
+        link: "ooze",
         width: "24%"
     },
     {
         url: "/img/plant-death-flower.png",
         title: "Plants",
+        link: "plant",
         width: "40%"
     },
     {
         url: "/img/undead-lich1.png",
         title: "Undead",
+        link: "undead",
         width: "60%"
     }
 ]
@@ -130,7 +144,7 @@ export default function CreatureTypeGallery() {
     return (
         <Container component="section" sx={{ mt: 8, mb: 4 }}>
             <Typography variant="h4" align="center" component="h2">
-                Try It Out!
+                Try Out the Foe Foundry!
             </Typography>
             <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
                 {images.map((image) => (
@@ -172,7 +186,7 @@ export default function CreatureTypeGallery() {
                                 color="inherit"
                                 className="imageTitle"
                             >
-                                {image.title}
+                                <Link to={`/creatures/${image.link}`} style={{ textDecoration: 'none', color: 'inherit' }}>{image.title}</Link>
                                 <div className="imageMarked" />
                             </Typography>
                         </Box>
