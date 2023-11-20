@@ -39,7 +39,7 @@ const StatblockPage: React.FC<StatblockPageProps> = (props) => {
     const creatureType = state.sidebar.creatureType;
     const role = state.sidebar.role;
     const cr = state.sidebar.cr;
-    const url = `http://${props.baseUrl}/statblocks/random/${creatureType}/${role}/${cr}?render=partial`;
+    const url = `${props.baseUrl}/statblocks/random/${creatureType}/${role}/${cr}?render=partial`;
     const response = await fetch(url);
     const rawHtml = await response.text();
 
