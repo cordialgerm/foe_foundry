@@ -4,6 +4,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import StatblockPage from "./pages/StatblockPage.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import CreditPage from "./pages/CreditPage.tsx";
+import ConditionPage from "./pages/ConditionsPage.tsx";
 
 function App({ baseUrl }) {
   return (
@@ -25,6 +26,7 @@ function App({ baseUrl }) {
           />
         </Route>
         <Route path="/credits" element={<CreditPage />} />
+        <Route path="/conditions" element={<ConditionPage />} />
       </Routes>
     </BrowserRouter>
   );

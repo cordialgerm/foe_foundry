@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Button, styled } from '@mui/material';
-import { Grid, Card, CardContent, Typography, CardActions } from '@mui/material';
+import { Button } from '@mui/material';
+import { Grid, Card, CardContent, Typography, CardActions, CardMedia } from '@mui/material';
 import  { DefaultPageLayout } from '../components/PageLayout.tsx';
 import {Dazed, Burning, Shocked, Frozen, Fatigue} from '../components/Condition.tsx';
 
@@ -15,6 +15,7 @@ interface CreditProps {
   url?: string;
   imageUrl?: string;
   actionText?: string;
+  notice?: string;
 }
 
 interface CreditGridProps {
@@ -30,32 +31,37 @@ const inspirationCredits = [
       <span>
         <a href="https://slyflourish.com/build_a_quick_monster_with_forge_of_foes.html"><i>Forge of Foes</i></a> by Teos Abadia, Scott Fitzgerald Gray, and Michael Shea is a wonderful book to help GMs create quick and easy monsters and run challenging and fun encounters. It serves as inspiration for many of the powers and ideas in <b>Foe Foundry</b>. I highly encourage you to check it out!
       </span>,
+    notice: "This project is not affiliated with Sly Flourish or the authors of Forge of Foes. Book titles and image copyrights belong to their respective holders.",
     actionText: "Buy Forge of Foes"
   },
   {
     title: "Level Up: Advanced 5th Edition",
     url: "https://www.levelup5e.com/",
+    imageUrl: "https://images.squarespace-cdn.com/content/v1/5f30140933f50e61c794e1a3/1629827625546-DZJZ3FYLE9JQDVMWT1TQ/mediamodifier_image-7.png?format=1500w",
     description:
     <span>
       <a href="https://www.levelup5e.com/"><b>A5e</b></a> has a wonderful <i>Monstrous Menagerie</i> that re-imagines many of the monsters in the 5E SRD. <b>Foe Foundry</b> takes inspiration from many of the monster designs and monster-building guidelines.
     </span>,
+    notice: "This project is not affiliated with EN Publishing or the authors of Level Up: Advanced 5th Edition. Book titles and image copyrights belong to their respective holders.",
     actionText: "Buy Level Up: Advanced 5th Edition"
   },
   {
     title: 'DungeonDudes',
     url: "https://www.patreon.com/dungeon_dudes/posts",
+    imageUrl: "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/1023986/6df849009bfc4ff6806d3dbb866b5432/eyJ3IjoxMjAwLCJ3ZSI6MX0%3D/4.png?token-time=1701648000&token-hash=WGOLlYurn1T_aYUf_j5Iqp6wnrGiT56R87goQz-Sc1s%3D",
     description: <span>
       <b>Foe Foundry</b> utilizes some new conditions, including <Dazed />, <Burning />, <Shocked />, <Frozen />, and <Fatigue />.
       Inspiration for these powers comes from the <a href="https://www.patreon.com/dungeon_dudes/posts">DungeonDudes</a>.
       In particular, this YouTube video <a href="https://youtu.be/Bq2Dz-EETJs?si=x94Allggu79ECGy3">Homebrewing New Conditions for D&D 5e</a>
     </span>,
+    notice: "This project is not affiliated with The DungeonDudes. Image copyrights belong to their respective holders.",
     actionText: "Support the DungeonDudes on Patreon"
   },
   {
     title: "Disease Powers from CrunchyDM",
     url: "https://www.patreon.com/crunchydm/posts",
     description: <span>
-      Several of the disease powers are inspired by very vicious disease-laden spiders that <a href="https://www.patreon.com/crunchydm/posts">CrunchyDM</a> threw against me and my fellow PCs in one of our games. They put the fear of Nurgle in our hearts and I thought other players would enjoy that experience as well.
+      Several of the disease powers are inspired by very vicious disease-laden spiders that <a href="https://www.patreon.com/crunchydm/posts">CrunchyDM</a> threw against me and my fellow PCs in one of our games. They put the fear of the God of Decay into our hearts and I thought other players would enjoy that experience as well.
     </span>,
     actionText: "Support CrunchyDM on Patreon"
   },
@@ -103,19 +109,21 @@ function Credit(credit: React.PropsWithChildren<CreditProps>) {
 
   return (
     <Card elevation={2} style={{margin: "10px", display: "flex", flexDirection: "column", minHeight: "210px"}}>
-      <CardContent style={{flexGrow: 1}}>
-        <Typography variant="h6" component="div">
-          {credit.title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {credit.description}
-        </Typography>
-      </CardContent>
-      { credit.url &&
-      <CardActions>
-        <Button href={credit.url} target="_new" size="small">{credit.actionText ?? "Learn More"}</Button>
-      </CardActions>
-      }
+        {credit.imageUrl && <CardMedia component="img" alt={credit.title} height={240} image={credit.imageUrl} /> }
+        <CardContent style={{flexGrow: 1}}>
+          <Typography variant="h6" component="div">
+            {credit.title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {credit.description}
+          </Typography>
+          {credit.notice && <Typography variant="subtitle2" color="text.secondary"><p><i>{credit.notice}</i></p></Typography>}
+        </CardContent>
+        { credit.url &&
+        <CardActions>
+          <Button href={credit.url} target="_new" size="small">{credit.actionText ?? "Learn More"}</Button>
+        </CardActions>
+        }
   </Card>
   )
 }
