@@ -13,9 +13,16 @@ HIGH_POWER = 1.5
 
 
 class Power(ABC):
-    def __init__(self, name: str, power_type: PowerType, power_level: float = MEDIUM_POWER):
+    def __init__(
+        self,
+        name: str,
+        power_type: PowerType,
+        source: str | None = None,
+        power_level: float = MEDIUM_POWER,
+    ):
         self.name = name
         self.power_type = power_type
+        self.source = source
         self.power_level = power_level
 
     @property
@@ -41,8 +48,16 @@ class Power(ABC):
 
 
 class PowerBackport(Power):
-    def __init__(self, name: str, power_type: PowerType, power_level: float = MEDIUM_POWER):
-        super().__init__(name=name, power_type=power_type, power_level=power_level)
+    def __init__(
+        self,
+        name: str,
+        power_type: PowerType,
+        source: str | None = None,
+        power_level: float = MEDIUM_POWER,
+    ):
+        super().__init__(
+            name=name, power_type=power_type, source=source, power_level=power_level
+        )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         new_stats, _ = self.apply(stats, np.random.default_rng(20210518))

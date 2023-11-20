@@ -1,7 +1,11 @@
 from math import ceil
 from typing import Dict, List, Set, Tuple
 
+import numpy as np
 from numpy.random import Generator
+
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural as natural_attacks
 from ...attributes import Skills, Stats
@@ -11,78 +15,92 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import summoning
-from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerType
 from ..scoring import AttackNames, score
 
 
 def _score_beast(
     candidate: BaseStatblock,
-    primary_attribute: Stats | None = None,
     attack_names: AttackNames = None,
     **args,
 ) -> float:
     return score(
         candidate=candidate,
         require_types=CreatureType.Beast,
-        bonus_stats=primary_attribute,
         attack_names=attack_names,
         **args,
     )
 
 
-class _HitAndRun(PowerBackport):
+class _FeedingFrenzy(Power):
     def __init__(self):
-        super().__init__(name="Hit and Run", power_type=PowerType.Creature)
+        super().__init__(
+            name="Feeding Frenzy", source="FoeFoundryOriginal", power_type=PowerType.Creature
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate, Stats.DEX)
+        return _score_beast(candidate, require_attack_types=AttackType.MeleeNatural)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Feeding Frenzy",
+            action=ActionType.BonusAction,
+            description=f"{stats.selfref.capitalize()} moves up to 30 feet without provoking opportunity attacks. \
+                If it ends the movement next to a target that has lost half its hit points or more, it may make an attack against that target.",
+        )
+        return [feature]
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.copy(attributes=new_attrs)
+        return stats
 
-        feature = Feature(
-            name="Hit and Run",
-            action=ActionType.BonusAction,
-            description="This creature moves up to 30 feet without provoking opportunity attacks. \
-                If it ends its movement behind cover or in an obscured area, it can make a Stealth check to hide.",
+
+class _BestialRampage(Power):
+    def __init__(self):
+        super().__init__(
+            name="Bestial Rampage",
+            power_type=PowerType.Creature,
+            source="FoeFoundryOriginal",
+            power_level=LOW_POWER,
         )
 
-        return stats, feature
-
-
-class _MotivatedByCarnage(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Motivated by Carnage", power_type=PowerType.Creature)
-
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate, Stats.STR)
+        return _score_beast(candidate, require_attack_types=AttackType.MeleeNatural)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Bestial Rampage",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"When {stats.selfref} is reduced to half its health or lower, it moves up to 30 feet without provoking opportunity attacks and makes a melee attack against another target in rage.",
+        )
+
+        return [feature]
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Survival)
         stats = stats.copy(attributes=new_attrs)
-
-        feature = Feature(
-            name="Motivated by Carnage",
-            action=ActionType.Reaction,
-            description="When this creature reduces another target to below half its hit points or to 0 hit points, \
-                         this creature can immediately move up to its speed and make a melee attack against another target. \
-                         This Reaction can only activate once per target.",
-        )
-
-        return stats, feature
+        return stats
 
 
-class _Gore(PowerBackport):
+class _Gore(Power):
     def __init__(self):
-        super().__init__(name="Gore", power_type=PowerType.Creature)
+        super().__init__(name="Gore", source="SRD 5.1 Minotaur", power_type=PowerType.Creature)
 
     def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate, Stats.STR, attack_names=["-", natural_attacks.Horns])
+        return _score_beast(candidate, attack_names=["-", natural_attacks.Horns])
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Gore",
+            description="This creature gets an additional Gore attack",
+            action=ActionType.Feature,
+            hidden=True,
+        )
+        return [feature]
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
 
         bleeding_damage = DieFormula.target_value(0.75 * stats.attack.average_damage)
@@ -96,13 +114,14 @@ class _Gore(PowerBackport):
             replaces_multiattack=2,
             additional_description=f"If {stats.selfref} moved at least 10 feet before making this attack, then the target must make a DC {dc} Dexterity saving throw. On a failure, the target is gored and gains {bleeding}.",
         )
+        return stats
 
-        return stats, None
 
-
-class _Web(PowerBackport):
+class _Web(Power):
     def __init__(self):
-        super().__init__(name="Web", power_type=PowerType.Creature)
+        super().__init__(
+            name="Web", source="SRD 5.1 Giant Spider", power_type=PowerType.Creature
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         attacks = {
@@ -111,14 +130,9 @@ class _Web(PowerBackport):
             natural_attacks.Claw,
             natural_attacks.Stinger,
         }
-        return _score_beast(candidate, Stats.STR, attacks)
+        return _score_beast(candidate, attacks)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, List[Feature]]:
-        new_speed = stats.speed.copy(climb=stats.speed.walk)
-        stats = stats.copy(speed=new_speed)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         feature1 = Feature(
@@ -143,17 +157,27 @@ class _Web(PowerBackport):
                 The area of the web is considered difficult terrain, and any creature that ends its turn in the area must repeat the save or become restrained.",
         )
 
-        return stats, [feature1, feature2, feature3]
+        return [feature1, feature2, feature3]
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        new_speed = stats.speed.copy(climb=stats.speed.walk)
+        stats = stats.copy(speed=new_speed)
+        return stats
 
 
-class _Packlord(PowerBackport):
+class _Packlord(Power):
     def __init__(self):
-        super().__init__(name="Packlord", power_type=PowerType.Creature, power_level=HIGH_POWER)
+        super().__init__(
+            name="Packlord",
+            source="FoeFoundryOriginal",
+            power_type=PowerType.Creature,
+            power_level=HIGH_POWER,
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_beast(candidate, require_cr=3)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.speed.fly:
             options = summoning.FlyingBeasts
         elif stats.speed.swim:
@@ -161,6 +185,8 @@ class _Packlord(PowerBackport):
         else:
             options = summoning.LandBeasts
 
+        # TODO - replace randomness here
+        rng = np.random.default_rng(20210518)
         _, _, description = summoning.determine_summon_formula(
             options, stats.cr / 3.5, rng, max_quantity=10
         )
@@ -173,33 +199,36 @@ class _Packlord(PowerBackport):
             description=f"{stats.selfref.capitalize()} roars, summoning its pack to its aid. {description}",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _WildInstinct(PowerBackport):
+class _WildInstinct(Power):
     def __init__(self):
         super().__init__(
-            name="Wild Instinct", power_type=PowerType.Creature, power_level=LOW_POWER
+            name="Wild Instinct",
+            source="FoeFoundryOriginal",
+            power_type=PowerType.Creature,
+            power_level=LOW_POWER,
         )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_beast(candidate)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Wild Instinct",
             action=ActionType.BonusAction,
             uses=1,
             description=f"{stats.selfref.capitalize()} identifies the creature with the lowest Strength score that it can see. It then Dashes towards that creature.",
         )
-        return stats, feature
+        return [feature]
 
 
+BestialRampage: Power = _BestialRampage()
+FeedingFrenzy: Power = _FeedingFrenzy()
 Gore: Power = _Gore()
-HitAndRun: Power = _HitAndRun()
-MotivatedByCarnage: Power = _MotivatedByCarnage()
 Packlord: Power = _Packlord()
 Web: Power = _Web()
 WildInstinct: Power = _WildInstinct()
 
-BeastPowers: List[Power] = [Gore, HitAndRun, MotivatedByCarnage, Packlord, Web, WildInstinct]
+BeastPowers: List[Power] = [BestialRampage, FeedingFrenzy, Gore, Packlord, Web, WildInstinct]
