@@ -1,22 +1,31 @@
-import * as React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import * as React from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
-import StatblockPage from './pages/StatblockPage.js';
-import AboutPage from './pages/AboutPage.tsx'
-
+import StatblockPage from "./pages/StatblockPage.tsx";
+import HomePage from "./pages/HomePage.tsx";
 
 function App({ baseUrl }) {
-
-  const router = createBrowserRouter([
-    { path: "/", element: <StatblockPage baseUrl={baseUrl} /> },
-    { path: "/about", element: <AboutPage /> }
-  ]);
-
   return (
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage baseUrl={baseUrl} />} />
+        <Route path="/statblocks" element={<StatblockPage baseUrl={baseUrl} />}>
+          <Route
+            path=":creatureType"
+            element={<StatblockPage baseUrl={baseUrl} />}
+          />
+          <Route
+            path=":creatureType/:creatureRole"
+            element={<StatblockPage baseUrl={baseUrl} />}
+          />
+          <Route
+            path=":creatureType/:creatureRole/:cr"
+            element={<StatblockPage baseUrl={baseUrl} />}
+          />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-
 
 export default App;

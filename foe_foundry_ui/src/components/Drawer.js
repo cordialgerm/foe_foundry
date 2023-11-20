@@ -18,7 +18,11 @@ const DrawerHeader = styled('div')(({ theme }) => ({
     justifyContent: 'flex-end',
 }));
 
-export function PersistentDrawerLeft({ creatureType, setCreatureType, role, setRole, cr, setCr, refreshCount, setRefreshCount, open, setOpen }) {
+export function PersistentDrawerLeft({ creatureType, setCreatureType,
+    role, setRole,
+    cr, setCr,
+    open, setOpen,
+    onGenerate }) {
     const theme = useTheme();
 
     const handleDrawerClose = () => {
@@ -37,8 +41,8 @@ export function PersistentDrawerLeft({ creatureType, setCreatureType, role, setR
         setCr(event.target.value)
     }
 
-    const onRefreshClicked = event => {
-        setRefreshCount(refreshCount + 1)
+    const onGenerateClicked = event => {
+        onGenerate();
     }
 
     return (
@@ -64,12 +68,12 @@ export function PersistentDrawerLeft({ creatureType, setCreatureType, role, setR
                 <MuiListItem key="cr">
                     <CrSelector value={cr} onChange={onCrChanged} />
                 </MuiListItem>
-                <MuiListItem key="refresh">
-                    <MuiListItemButton onClick={onRefreshClicked} style={{ width: "200px" }}>
+                <MuiListItem key="generate">
+                    <MuiListItemButton onClick={onGenerateClicked} style={{ width: "200px" }}>
                         <MuiListItemIcon>
                             <LoopIcon />
                         </MuiListItemIcon>
-                        <MuiListItemText primary="Refresh" />
+                        <MuiListItemText primary="Generate" />
                     </MuiListItemButton>
                 </MuiListItem>
             </MuiList>

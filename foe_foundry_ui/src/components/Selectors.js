@@ -20,7 +20,7 @@ export function CreateTypeSelector({ value, onChange }) {
                 <MenuItem value="fiend">Fiend</MenuItem>
                 <MenuItem value="giant">Giant</MenuItem>
                 <MenuItem value="humanoid">Humanoid</MenuItem>
-                <MenuItem value="monstrosity">monstrosity</MenuItem>
+                <MenuItem value="monstrosity">Monstrosity</MenuItem>
                 <MenuItem value="ooze">Ooze</MenuItem>
                 <MenuItem value="plant">Plant</MenuItem>
                 <MenuItem value="undead">Undead</MenuItem>

@@ -7,7 +7,5 @@ const baseUrl = "127.0.0.1:8080"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App baseUrl={baseUrl} />
-  </React.StrictMode>
+  <App baseUrl={baseUrl} />
 );

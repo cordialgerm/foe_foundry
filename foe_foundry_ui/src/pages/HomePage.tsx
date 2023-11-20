@@ -1,14 +1,14 @@
 import React from 'react';
-
-import { ThemeProvider } from '@mui/material/styles';
-
-import { CssBaseline } from '@mui/material';
-import theme from '../components/Theme.js';
 import CreatureTypeGallery from '../components/CreatureTypeGallery.tsx';
 import ProductHeroText from '../components/ProductHeroText.tsx';
+import { PageLayout, DefaultSidebarData } from '../components/PageLayout.tsx';
+import { useNavigate } from 'react-router-dom';
 
-// Create the AboutPage component
-const AboutPage = () => {
+interface AboutPageProps {
+    baseUrl: string;
+}
+
+function AboutPage(props: React.PropsWithChildren<AboutPageProps>) {
 
     const productValues = {
         title: "Welcome to Foe Foundry",
@@ -41,14 +41,24 @@ const AboutPage = () => {
         }
     }
 
+    const navigate = useNavigate();
+    const [sidebar, setSidebar] = React.useState(DefaultSidebarData);
+    const pageProps = {
+        baseUrl: props.baseUrl,
+        sidebar: sidebar,
+        setSidebar: setSidebar,
+        onGenerate: () => {
+            navigate("/statblocks/" + sidebar.creatureType + "/" + sidebar.role + "/" + sidebar.cr);
+        }
+    }
+
     return (
-        <ThemeProvider theme={theme}>
-            <CssBaseline />
+        <PageLayout {...pageProps}>
             <ProductHeroText {...productValues} />
             <CreatureTypeGallery />
             <ProductHeroText {...howItWorks} />
-        </ThemeProvider>
-    );
+        </PageLayout>
+    )
 };
 
 export default AboutPage;

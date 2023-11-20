@@ -58,7 +58,7 @@ const images = [
     {
         url: "/img/monster/aberration-eye-monster.png",
         title: "Aberrations",
-        link: "abberation",
+        link: "aberration",
         width: "40%"
     },
     {
@@ -118,6 +118,7 @@ const images = [
     {
         url: "/img/monster/monstrosity-owlbear.png",
         title: "Monstrosities",
+        link: "monstrosity",
         width: "32%"
     },
     {
@@ -186,7 +187,7 @@ export default function CreatureTypeGallery() {
                                 color="inherit"
                                 className="imageTitle"
                             >
-                                <Link to={`/creatures/${image.link}`} style={{ textDecoration: 'none', color: 'inherit' }}>{image.title}</Link>
+                                <Link to={`/statblocks/${image.link}`} style={{ textDecoration: 'none', color: 'inherit' }}>{image.title}</Link>
                                 <div className="imageMarked" />
                             </Typography>
                         </Box>
