@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
     position: 'absolute',
@@ -141,6 +141,69 @@ const images = [
     }
 ]
 
+interface CreatureTypeProps {
+    url: string;
+    title: string;
+    link: string;
+    width: string;
+}
+
+function CreatureTypeImage(image: CreatureTypeProps) {
+
+    const navigate = useNavigate();
+
+    const onClick = () => {
+        navigate(`/statblocks/${image.link}`)
+    };
+
+    return(
+    <ImageIconButton
+        key={image.title}
+        style={{
+            width: image.width,
+        }}
+        onClick={onClick}
+    >
+        <Box
+            sx={{
+                position: 'absolute',
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 0,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center 40%',
+                backgroundImage: `url(${image.url})`,
+            }}
+        />
+        <ImageBackdrop className="imageBackdrop" />
+        <Box
+            sx={{
+                position: 'absolute',
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 0,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'common.white',
+            }}
+        >
+            <Typography
+                component="h3"
+                variant="h6"
+                color="inherit"
+                className="imageTitle"
+            >
+                <Link to={`/statblocks/${image.link}`} style={{ textDecoration: 'none', color: 'inherit' }}>{image.title}</Link>
+                <div className="imageMarked" />
+            </Typography>
+        </Box>
+    </ImageIconButton>
+    )
+}
+
 export default function CreatureTypeGallery() {
     return (
         <Container component="section" sx={{ mt: 8, mb: 4 }}>
@@ -149,49 +212,7 @@ export default function CreatureTypeGallery() {
             </Typography>
             <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
                 {images.map((image) => (
-                    <ImageIconButton
-                        key={image.title}
-                        style={{
-                            width: image.width,
-                        }}
-                    >
-                        <Box
-                            sx={{
-                                position: 'absolute',
-                                left: 0,
-                                right: 0,
-                                top: 0,
-                                bottom: 0,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center 40%',
-                                backgroundImage: `url(${image.url})`,
-                            }}
-                        />
-                        <ImageBackdrop className="imageBackdrop" />
-                        <Box
-                            sx={{
-                                position: 'absolute',
-                                left: 0,
-                                right: 0,
-                                top: 0,
-                                bottom: 0,
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                color: 'common.white',
-                            }}
-                        >
-                            <Typography
-                                component="h3"
-                                variant="h6"
-                                color="inherit"
-                                className="imageTitle"
-                            >
-                                <Link to={`/statblocks/${image.link}`} style={{ textDecoration: 'none', color: 'inherit' }}>{image.title}</Link>
-                                <div className="imageMarked" />
-                            </Typography>
-                        </Box>
-                    </ImageIconButton>
+                    <CreatureTypeImage {...image} />
                 ))}
             </Box>
         </Container>

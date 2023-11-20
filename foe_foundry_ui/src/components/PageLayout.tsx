@@ -7,6 +7,7 @@ import { FoeFoundryAppBar } from './AppBar.js';
 import { PersistentDrawerLeft } from './Drawer.js';
 import { MainContent } from './Main.tsx'
 import theme from './Theme.js';
+import { useNavigate } from 'react-router-dom';
 
 export interface SidebarData {
   creatureType: string;
@@ -22,8 +23,11 @@ export const DefaultSidebarData: SidebarData = {
   drawerOpen: true,
 }
 
-export interface PageProps {
+export interface DefaultPageProps {
   baseUrl: string;
+}
+
+export interface PageProps extends DefaultPageProps {
   sidebar: SidebarData;
   setSidebar: (sidebar: SidebarData) => void;
   onGenerate: () => void;
@@ -61,5 +65,25 @@ export function PageLayout(props: React.PropsWithChildren<PageProps>) {
         {props.children}
       </MainContent>
     </ThemeProvider>
+  );
+}
+
+export function DefaultPageLayout(props: React.PropsWithChildren<DefaultPageProps>) {
+
+  const navigate = useNavigate();
+  const [sidebar, setSidebar] = React.useState(DefaultSidebarData);
+  const pageProps = {
+      baseUrl: props.baseUrl,
+      sidebar: sidebar,
+      setSidebar: setSidebar,
+      onGenerate: () => {
+          navigate("/statblocks/" + sidebar.creatureType + "/" + sidebar.role + "/" + sidebar.cr);
+      }
+  }
+
+  return (
+    <PageLayout {...pageProps}>
+      {props.children}
+    </PageLayout>
   );
 }

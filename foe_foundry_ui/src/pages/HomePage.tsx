@@ -1,14 +1,9 @@
 import React from 'react';
 import CreatureTypeGallery from '../components/CreatureTypeGallery.tsx';
 import ProductHeroText from '../components/ProductHeroText.tsx';
-import { PageLayout, DefaultSidebarData } from '../components/PageLayout.tsx';
-import { useNavigate } from 'react-router-dom';
+import { DefaultPageLayout, DefaultPageProps } from '../components/PageLayout.tsx';
 
-interface AboutPageProps {
-    baseUrl: string;
-}
-
-function AboutPage(props: React.PropsWithChildren<AboutPageProps>) {
+function AboutPage(props: React.PropsWithChildren<DefaultPageProps>) {
 
     const productValues = {
         title: "Welcome to Foe Foundry",
@@ -41,23 +36,12 @@ function AboutPage(props: React.PropsWithChildren<AboutPageProps>) {
         }
     }
 
-    const navigate = useNavigate();
-    const [sidebar, setSidebar] = React.useState(DefaultSidebarData);
-    const pageProps = {
-        baseUrl: props.baseUrl,
-        sidebar: sidebar,
-        setSidebar: setSidebar,
-        onGenerate: () => {
-            navigate("/statblocks/" + sidebar.creatureType + "/" + sidebar.role + "/" + sidebar.cr);
-        }
-    }
-
     return (
-        <PageLayout {...pageProps}>
+        <DefaultPageLayout {...props}>
             <ProductHeroText {...productValues} />
             <CreatureTypeGallery />
             <ProductHeroText {...howItWorks} />
-        </PageLayout>
+        </DefaultPageLayout>
     )
 };
 

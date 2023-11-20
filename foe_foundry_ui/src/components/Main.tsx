@@ -6,30 +6,20 @@ interface MainContentProps {
     drawerOpen: boolean;
 }
 
-export function MainContent(props: React.PropsWithChildren<MainContentProps>) {
-
-    const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
-        ({ theme }) => ({
-            flexGrow: 1,
-            transition: theme.transitions.create('margin', {
-                easing: theme.transitions.easing.sharp,
-                duration: theme.transitions.duration.leavingScreen,
-            }),
-            marginLeft: `-${drawerWidth}px`,
-            ...(props.drawerOpen && {
-                transition: theme.transitions.create('margin', {
-                    easing: theme.transitions.easing.easeOut,
-                    duration: theme.transitions.duration.enteringScreen,
-                }),
-                marginLeft: 0,
-            }),
+export const MainContent = styled('main', { shouldForwardProp: (prop) => prop !== 'drawerOpen' })<MainContentProps>(
+    ({ theme, drawerOpen }) => ({
+        flexGrow: 1,
+        transition: theme.transitions.create('margin', {
+            easing: theme.transitions.easing.sharp,
+            duration: theme.transitions.duration.leavingScreen,
         }),
-    );
-
-    return (
-        <Main>
-            {props.children}
-        </Main>
-    )
-
-}
+        marginLeft: 0,
+        ...(drawerOpen && {
+            transition: theme.transitions.create('margin', {
+                easing: theme.transitions.easing.easeOut,
+                duration: theme.transitions.duration.enteringScreen,
+            }),
+            marginLeft: `${drawerWidth-7}px`,
+        }),
+    }),
+);
