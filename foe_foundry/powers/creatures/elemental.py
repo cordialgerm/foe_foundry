@@ -212,7 +212,7 @@ class _ElementalMagic(PowerBackport):
 
             # acid damage is always done in d4s and should be an even number
             # this is because the ongoing damage should be half that amount
-            dmg = DieFormula.target_value(1.2 * stats.attack.average_damage, force_die=Die.d4)
+            dmg = DieFormula.target_value(1.0 * stats.attack.average_damage, force_die=Die.d4)
             if dmg.n_die % 2 == 1:
                 dmg = DieFormula.from_dice(**{Die.d4: dmg.n_die + 1})
             ongoing = DieFormula.from_dice(**{Die.d4: dmg.n_die // 2})
