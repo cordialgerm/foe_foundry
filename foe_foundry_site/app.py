@@ -30,7 +30,7 @@ app.add_middleware(
 
 app.include_router(stats.router)
 
-build_dir = "foe_foundry_ui/build"
+build_dir = Path(__file__).parent.parent / "foe_foundry_ui" / "build"
 
 # Sets the templates directory to the `build` folder from `npm run build`
 # this is where you'll find the index.html file.

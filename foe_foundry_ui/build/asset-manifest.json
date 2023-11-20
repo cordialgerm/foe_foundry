@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ae3513d3.css",
-    "main.js": "/static/js/main.ef5f1927.js",
+    "main.js": "/static/js/main.2a41413e.js",
     "static/media/fey-satyr.png": "/static/media/fey-satyr.1442a81516800be7850f.png",
     "static/media/construct-clockwork-spider.png": "/static/media/construct-clockwork-spider.00dc242a9275269347cd.png",
     "static/media/aberration-eye-monster.png": "/static/media/aberration-eye-monster.8971bdd7a6878adc6e0c.png",
@@ -55,10 +55,10 @@
     "static/media/watercolor-mask.png": "/static/media/watercolor-mask.8c5d8cce34272b2ae1b3.png",
     "index.html": "/index.html",
     "main.ae3513d3.css.map": "/static/css/main.ae3513d3.css.map",
-    "main.ef5f1927.js.map": "/static/js/main.ef5f1927.js.map"
+    "main.2a41413e.js.map": "/static/js/main.2a41413e.js.map"
   },
   "entrypoints": [
     "static/css/main.ae3513d3.css",
-    "static/js/main.ef5f1927.js"
+    "static/js/main.2a41413e.js"
   ]
 }
