@@ -38,6 +38,7 @@ templates = Jinja2Templates(directory=build_dir)
 
 # Mounts the `static` folder within the `build` folder to the `/static` route.
 app.mount("/static", StaticFiles(directory=f"{build_dir}/static"), "static")
+app.mount("/img", StaticFiles(directory=f"{build_dir}/img"), "img")
 
 
 # Defines a route handler for `/*` essentially.
