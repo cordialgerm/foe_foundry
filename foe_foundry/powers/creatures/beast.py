@@ -32,11 +32,20 @@ def _score_beast(
     )
 
 
-class _FeedingFrenzy(Power):
-    def __init__(self):
+class BeastPower(Power):
+    def __init__(self, name: str, source: str, **args):
         super().__init__(
-            name="Feeding Frenzy", source="FoeFoundryOriginal", power_type=PowerType.Creature
+            name=name,
+            power_type=PowerType.Creature,
+            creature_types=[CreatureType.Beast],
+            source=source,
+            **args,
         )
+
+
+class _FeedingFrenzy(BeastPower):
+    def __init__(self):
+        super().__init__(name="Feeding Frenzy", source="FoeFoundryOriginal")
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_beast(candidate, require_attack_types=AttackType.MeleeNatural)
@@ -56,11 +65,10 @@ class _FeedingFrenzy(Power):
         return stats
 
 
-class _BestialRampage(Power):
+class _BestialRampage(BeastPower):
     def __init__(self):
         super().__init__(
             name="Bestial Rampage",
-            power_type=PowerType.Creature,
             source="FoeFoundryOriginal",
             power_level=LOW_POWER,
         )
@@ -84,9 +92,9 @@ class _BestialRampage(Power):
         return stats
 
 
-class _Gore(Power):
+class _Gore(BeastPower):
     def __init__(self):
-        super().__init__(name="Gore", source="SRD 5.1 Minotaur", power_type=PowerType.Creature)
+        super().__init__(name="Gore", source="SRD 5.1 Minotaur")
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_beast(candidate, attack_names=["-", natural_attacks.Horns])
@@ -117,11 +125,9 @@ class _Gore(Power):
         return stats
 
 
-class _Web(Power):
+class _Web(BeastPower):
     def __init__(self):
-        super().__init__(
-            name="Web", source="SRD 5.1 Giant Spider", power_type=PowerType.Creature
-        )
+        super().__init__(name="Web", source="SRD 5.1 Giant Spider")
 
     def score(self, candidate: BaseStatblock) -> float:
         attacks = {
@@ -165,12 +171,11 @@ class _Web(Power):
         return stats
 
 
-class _Packlord(Power):
+class _Packlord(BeastPower):
     def __init__(self):
         super().__init__(
             name="Packlord",
             source="FoeFoundryOriginal",
-            power_type=PowerType.Creature,
             power_level=HIGH_POWER,
         )
 
@@ -202,12 +207,11 @@ class _Packlord(Power):
         return [feature]
 
 
-class _WildInstinct(Power):
+class _WildInstinct(BeastPower):
     def __init__(self):
         super().__init__(
             name="Wild Instinct",
             source="FoeFoundryOriginal",
-            power_type=PowerType.Creature,
             power_level=LOW_POWER,
         )
 

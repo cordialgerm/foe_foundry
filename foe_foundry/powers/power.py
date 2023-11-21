@@ -3,7 +3,10 @@ from typing import List, Tuple
 
 import numpy as np
 
+from ..creature_types import CreatureType
+from ..damage import DamageType
 from ..features import Feature
+from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
 from .power_type import PowerType
 
@@ -19,11 +22,17 @@ class Power(ABC):
         power_type: PowerType,
         source: str | None = None,
         power_level: float = MEDIUM_POWER,
+        roles: List[MonsterRole] | None = None,
+        creature_types: List[CreatureType] | None = None,
+        damage_types: List[DamageType] | None = None,
     ):
         self.name = name
         self.power_type = power_type
         self.source = source
         self.power_level = power_level
+        self.roles = roles
+        self.creature_types = creature_types
+        self.damage_types = damage_types
 
         if self.power_level == HIGH_POWER:
             self.power_level_text = "High Power"

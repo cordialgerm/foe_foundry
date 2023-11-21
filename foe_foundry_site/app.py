@@ -8,7 +8,7 @@ from fastapi.requests import Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from .routes import stats
+from .routes import powers, stats
 
 app = FastAPI()
 
@@ -29,6 +29,7 @@ app.add_middleware(
 )
 
 app.include_router(stats.router)
+app.include_router(powers.router)
 
 build_dir = Path(__file__).parent.parent / "foe_foundry_ui" / "build"
 

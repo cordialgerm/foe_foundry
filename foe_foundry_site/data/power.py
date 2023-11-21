@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from dataclasses import field
 from typing import List
 
 from pydantic.dataclasses import dataclass
@@ -26,6 +27,15 @@ class PowerModel:
     source: str
     power_level: str
     features: List[FeatureModel]
+    creature_types: List[str] = field(default_factory=list)
+    roles: List[str] = field(default_factory=list)
+    damage_types: List[str] = field(default_factory=list)
+
+    @property
+    def feature_descriptions(self) -> str:
+        return "\n\n".join(
+            feature.name + ": " + feature.description_md for feature in self.features
+        )
 
     @staticmethod
     def from_power(power: Power) -> PowerModel:
@@ -39,15 +49,16 @@ class PowerModel:
         feature_models = []
         for feature in features:
             if feature.hidden:
-                feature_model = FeatureModel(
-                    name=feature.name,
-                    action=feature.action.name,
-                    recharge=feature.recharge,
-                    uses=feature.uses,
-                    replaces_multiattack=feature.replaces_multiattack,
-                    description_md=feature.description,
-                )
-                feature_models.append(feature_model)
+                continue
+            feature_model = FeatureModel(
+                name=feature.name,
+                action=feature.action.name,
+                recharge=feature.recharge,
+                uses=feature.uses,
+                replaces_multiattack=feature.replaces_multiattack,
+                description_md=feature.description,
+            )
+            feature_models.append(feature_model)
 
         for attack in stats.additional_attacks:
             feature_models.append(

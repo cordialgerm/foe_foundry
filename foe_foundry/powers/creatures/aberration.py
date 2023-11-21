@@ -31,11 +31,20 @@ def score_aberration(
     )
 
 
-class _TentacleGrapple(Power):
-    def __init__(self):
+class AberrationPower(Power):
+    def __init__(self, name: str, source: str, **kwargs):
         super().__init__(
-            name="Tentacle Grapple", source="FoeFoundryOriginal", power_type=PowerType.Creature
+            name=name,
+            source=source,
+            power_type=PowerType.Creature,
+            creature_types=[CreatureType.Aberration],
+            **kwargs,
         )
+
+
+class _TentacleGrapple(AberrationPower):
+    def __init__(self):
+        super().__init__(name="Tentacle Grapple", source="FoeFoundryOriginal")
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_aberration(
@@ -55,12 +64,11 @@ class _TentacleGrapple(Power):
         return [feature]
 
 
-class _GazeOfTheFarRealm(Power):
+class _GazeOfTheFarRealm(AberrationPower):
     def __init__(self):
         super().__init__(
             name="Gaze of the Far Realm",
             source="FoeFoundryOriginal",
-            power_type=PowerType.Creature,
         )
 
     def score(self, candidate: BaseStatblock) -> float:
@@ -83,12 +91,11 @@ class _GazeOfTheFarRealm(Power):
         return [feature]
 
 
-class _MaddeningWhispers(Power):
+class _MaddeningWhispers(AberrationPower):
     def __init__(self):
         super().__init__(
             name="Maddening Whispers",
             source="5.1 SRD (Gibbering Mouther)",
-            power_type=PowerType.Theme,
         )
 
     def score(self, candidate: BaseStatblock) -> float:
@@ -107,11 +114,9 @@ class _MaddeningWhispers(Power):
         return [feature]
 
 
-class _TentacleSlam(Power):
+class _TentacleSlam(AberrationPower):
     def __init__(self):
-        super().__init__(
-            name="Tentacle Slam", source="FoeFoundryOriginal", power_type=PowerType.Creature
-        )
+        super().__init__(name="Tentacle Slam", source="FoeFoundryOriginal")
 
     def score(self, candidate: BaseStatblock) -> float:
         return score_aberration(
@@ -134,11 +139,10 @@ class _TentacleSlam(Power):
         return [feature]
 
 
-class _NullificationMaw(Power):
+class _NullificationMaw(AberrationPower):
     def __init__(self):
         super().__init__(
             name="Nullification Maw",
-            power_type=PowerType.Theme,
             source="FoeFoundryOriginal",
             power_level=HIGH_POWER,
         )

@@ -163,3 +163,5 @@ cython_debug/
 node_modules/
 
 examples/
+
+*/whoosh/index/

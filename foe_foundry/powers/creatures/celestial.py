@@ -22,10 +22,21 @@ def _score_celestial(candidate: BaseStatblock, min_cr: float | None = None) -> f
     return score(candidate=candidate, require_types=CreatureType.Celestial, require_cr=min_cr)
 
 
-class _AbsoluteConviction(Power):
+class CelestialPower(Power):
+    def __init__(self, name: str, source: str, **args):
+        super().__init__(
+            name=name,
+            power_type=PowerType.Creature,
+            creature_types=[CreatureType.Celestial],
+            source=source,
+            **args,
+        )
+
+
+class _AbsoluteConviction(CelestialPower):
     def __init__(self):
         super().__init__(
-            name="Absolute Conviction", power_type=PowerType.Creature, power_level=LOW_POWER
+            name="Absolute Conviction", source="FoeFoundryOriginal", power_level=LOW_POWER
         )
 
     def score(self, candidate: BaseStatblock) -> float:
@@ -43,11 +54,9 @@ class _AbsoluteConviction(Power):
         return [feature]
 
 
-class _HealingTouch(Power):
+class _HealingTouch(CelestialPower):
     def __init__(self):
-        super().__init__(
-            name="Healing Touch", source="SRD5.1 Deva", power_type=PowerType.Creature
-        )
+        super().__init__(name="Healing Touch", source="SRD5.1 Deva")
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_celestial(candidate)
@@ -66,14 +75,14 @@ class _HealingTouch(Power):
         return [feature]
 
 
-class _RighteousJudgement(PowerBackport):
+class _RighteousJudgement(CelestialPower):
     def __init__(self):
-        super().__init__(name="Righteous Judgment", power_type=PowerType.Creature)
+        super().__init__(name="Righteous Judgment", source="FoeFoundryOriginal")
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_celestial(candidate)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = DieFormula.target_value(1.4 * stats.attack.average_damage, force_die=Die.d6)
 
@@ -87,15 +96,14 @@ class _RighteousJudgement(PowerBackport):
                 {stats.selfref.capitalize()} can also choose another friendly creature within 60 feet to gain temporary hp equal to the radiant damage dealt.",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _DivineLaw(Power):
+class _DivineLaw(CelestialPower):
     def __init__(self):
         super().__init__(
             name="Divine Law",
             source="FoeFoundryOriginal",
-            power_type=PowerType.Creature,
             power_level=HIGH_POWER,
         )
 
@@ -129,12 +137,11 @@ class _DivineLaw(Power):
         return [feature]
 
 
-class _DivineMercy(Power):
+class _DivineMercy(CelestialPower):
     def __init__(self):
         super().__init__(
             name="Divine Mercy",
             source="FoeFoundryOriginal",
-            power_type=PowerType.Creature,
             power_level=LOW_POWER,
         )
 
@@ -158,12 +165,11 @@ class _DivineMercy(Power):
         return [feature]
 
 
-class _WordsOfRighteousness(Power):
+class _WordsOfRighteousness(CelestialPower):
     def __init__(self):
         super().__init__(
             name="Words of Righteousness",
             source="FoeFoundryOriginal",
-            power_type=PowerType.Creature,
         )
 
     def score(self, candidate: BaseStatblock) -> float:
