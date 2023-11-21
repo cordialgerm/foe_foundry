@@ -14,7 +14,7 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
 from ..scoring import score
 
 
@@ -22,35 +22,37 @@ def _score_celestial(candidate: BaseStatblock, min_cr: float | None = None) -> f
     return score(candidate=candidate, require_types=CreatureType.Celestial, require_cr=min_cr)
 
 
-class _MirroredJudgement(PowerBackport):
-    """Mirrored Judgment (Reaction). When this creature is the sole target of an attack or spell,
-    they can choose another valid target to also be targeted by the attack or spell"""
-
+class _AbsoluteConviction(Power):
     def __init__(self):
-        super().__init__(name="Mirrored Judgement", power_type=PowerType.Creature)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_celestial(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        feature = Feature(
-            name="Mirrored Judgement",
-            action=ActionType.Reaction,
-            description="When this creature is the sole target of an attack or spell\
-                they can choose another valid target to also be targeted by the attack or spell",
+        super().__init__(
+            name="Absolute Conviction", power_type=PowerType.Creature, power_level=LOW_POWER
         )
 
-        return stats, feature
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_celestial(candidate)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        temphp = easy_multiple_of_five(3 * stats.cr)
+        feature = Feature(
+            name="Absolute Conviction",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"When {stats.selfref} is targeted by a spell or effect that would cause it to make a Wisdom, Intelligence, or Charisma saving throw, \
+                it automatically succeeds. It then gains {temphp} temporary hit points",
+        )
+        return [feature]
 
 
-class _HealingTouch(PowerBackport):
+class _HealingTouch(Power):
     def __init__(self):
-        super().__init__(name="Healing Touch", power_type=PowerType.Creature)
+        super().__init__(
+            name="Healing Touch", source="SRD5.1 Deva", power_type=PowerType.Creature
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_celestial(candidate)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(int(ceil(max(5, 2 * stats.cr))))
 
         feature = Feature(
@@ -61,7 +63,7 @@ class _HealingTouch(PowerBackport):
             description=f"{stats.selfref.capitalize()} touches another creature. It magically regains {hp} hp and is freed from any curse, disease, poison, blindness, or deafness",
         )
 
-        return stats, feature
+        return [feature]
 
 
 class _RighteousJudgement(PowerBackport):
@@ -88,16 +90,19 @@ class _RighteousJudgement(PowerBackport):
         return stats, feature
 
 
-class _DivineLaw(PowerBackport):
+class _DivineLaw(Power):
     def __init__(self):
         super().__init__(
-            name="Divine Law", power_type=PowerType.Creature, power_level=HIGH_POWER
+            name="Divine Law",
+            source="FoeFoundryOriginal",
+            power_type=PowerType.Creature,
+            power_level=HIGH_POWER,
         )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_celestial(candidate, min_cr=7)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = DieFormula.target_value(1.25 * stats.attack.average_damage, force_die=Die.d6)
 
@@ -121,20 +126,50 @@ class _DivineLaw(PowerBackport):
                 <li>**Repentance**: Affected creatures must confess their darkest or most shameful transgressions or become **Stunned** for 1 minute. </li>\
                 </ol>",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _WordsOfRighteousness(PowerBackport):
+class _DivineMercy(Power):
     def __init__(self):
-        super().__init__(name="Words of Righteousness", power_type=PowerType.Creature)
+        super().__init__(
+            name="Divine Mercy",
+            source="FoeFoundryOriginal",
+            power_type=PowerType.Creature,
+            power_level=LOW_POWER,
+        )
 
     def score(self, candidate: BaseStatblock) -> float:
         return _score_celestial(candidate)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        healing = easy_multiple_of_five(4 * stats.cr)
+
+        feature = Feature(
+            name="Divine Mercy",
+            action=ActionType.Reaction,
+            description=f"Whenever a creature that is within 60 feet of {stats.selfref} that can see or hear it is hit by an attack, fails a saving throw, or is reduced to 0 hitpoints, \
+                {stats.selfref} may offer divine mercy to that creature. If the creature accepts, it heals {healing} hitpoints and the {stats.selfref} may choose to end any negative conditions affecting that creature. \
+                The creature becomes **Charmed** by {stats.selfref} and follows its instructions to the best of its ability. \
+                Whenever the creature completes a long rest, it may make a DC {dc} Charisma saving throw. On a success, the creature is no longer charmed. \
+                After three failures, the creature is permanently charmed and its alignment changes to match {stats.selfref}",
+        )
+
+        return [feature]
+
+
+class _WordsOfRighteousness(Power):
+    def __init__(self):
+        super().__init__(
+            name="Words of Righteousness",
+            source="FoeFoundryOriginal",
+            power_type=PowerType.Creature,
+        )
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return _score_celestial(candidate)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = DieFormula.target_value(
             stats.attack.average_damage * 1.25, suggested_die=Die.d6
         )
@@ -151,19 +186,21 @@ class _WordsOfRighteousness(PowerBackport):
                 The DM may decide that a creature has advantage or disadvantage on this save based on its actions and alignment. {dazed.description_3rd}",
         )
 
-        return stats, feature
+        return [feature]
 
 
+AbsoluteConviction: Power = _AbsoluteConviction()
 DivineLaw: Power = _DivineLaw()
+DivineMercy: Power = _DivineMercy()
 HealingTouch: Power = _HealingTouch()
-MirroredJudgment: Power = _MirroredJudgement()
 RighteousJudgement: Power = _RighteousJudgement()
 WordsOfRighteousness: Power = _WordsOfRighteousness()
 
 CelestialPowers: List[Power] = [
+    AbsoluteConviction,
     DivineLaw,
+    DivineMercy,
     HealingTouch,
-    MirroredJudgment,
     RighteousJudgement,
     WordsOfRighteousness,
 ]

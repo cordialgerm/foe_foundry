@@ -25,9 +25,18 @@ class Power(ABC):
         self.source = source
         self.power_level = power_level
 
+        if self.power_level == HIGH_POWER:
+            self.power_level_text = "High Power"
+        elif self.power_level == MEDIUM_POWER:
+            self.power_level_text = "Medium Power"
+        elif self.power_level == LOW_POWER:
+            self.power_level_text = "Low Power"
+        else:
+            raise ValueError(f"Invalid power level {self.power_level}")
+
     @property
     def key(self) -> str:
-        return self.name.lower().replace(" ", "_")
+        return Power.name_to_key(self.name)
 
     @abstractmethod
     def score(self, candidate: BaseStatblock) -> float:
@@ -45,6 +54,10 @@ class Power(ABC):
 
     def __hash__(self) -> int:
         return hash(type(self))
+
+    @staticmethod
+    def name_to_key(name: str) -> str:
+        return name.lower().replace(" ", "-")
 
 
 class PowerBackport(Power):
