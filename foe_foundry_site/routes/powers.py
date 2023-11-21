@@ -14,6 +14,7 @@ def get_power(power_name: str):
     pass
 
 
+# TEMP
 @router.post("/search")
 def search_powers():
     pass
