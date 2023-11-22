@@ -1,94 +1,52 @@
+from datetime import datetime
 from math import ceil, floor
-from typing import Dict, List, Tuple
+from typing import List, Tuple
 
-import numpy as np
 from numpy.random import Generator
 
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
+
 from ...attack_template import natural
-from ...attributes import Skills, Stats
+from ...attributes import Skills
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, Dazed, conditions
+from ...damage import DamageType, Dazed, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..scoring import AttackNames, score
+from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_giant(
-    candidate: BaseStatblock,
-    attack_names: AttackNames = None,
-    min_cr: float | None = None,
-) -> float:
-    return score(
-        candidate=candidate,
-        require_types=CreatureType.Giant,
-        require_cr=min_cr,
-        attack_names=attack_names,
-        bonus_size=Size.Huge,
-    )
-
-
-class _ForcefulBlow(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Forceful Blow", power_type=PowerType.Creature)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        if stats.size >= Size.Gargantuan:
-            die = "d8"
-        elif stats.size >= Size.Huge:
-            die = "d6"
-        else:
-            die = "d4"
-
-        feature = Feature(
-            name="Forceful Blow",
-            action=ActionType.BonusAction,
-            recharge=4,
-            description=f"Immediately after hitting a target with a weapon attack, {stats.selfref} forcefully pushes the target back. \
-                Roll {die}+1. The target is pushed away from {stats.selfref} by 5 times that many feet.",
+class GiantPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        standard_score_args = dict(
+            require_types=CreatureType.Giant, bonus_size=Size.Huge, **score_args
         )
-
-        return stats, feature
-
-
-class _ShoveAllies(PowerBackport):
-    def __init__(self):
         super().__init__(
-            name="Forceful Blow", power_type=PowerType.Creature, power_level=LOW_POWER
+            name=name,
+            power_type=PowerType.Creature,
+            power_level=power_level,
+            source=source,
+            create_date=create_date,
+            score_args=standard_score_args,
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate, attack_names=natural.Slam)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        feature = Feature(
-            name="Shove Allies",
-            action=ActionType.Action,
-            replaces_multiattack=1,
-            description=f"{stats.selfref.capitalize()} can shove any allied creatures who are within 5 feet and are smaller in size. \
-                Each shoved ally moves up to 15 feet away from {stats.selfref} and can make a melee weapon attack if they end that movement and have a viable target within their reach.",
-        )
-
-        return stats, feature
-
-
-class _Boulder(PowerBackport):
+class _Boulder(GiantPower):
     def __init__(self):
-        super().__init__(name="Boulder", power_type=PowerType.Creature)
+        super().__init__(name="Boulder", source="SRD 5.1 Hill Giant")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         if stats.multiattack >= 3:
             dmg = int(floor(1.5 * stats.attack.average_damage))
@@ -118,27 +76,14 @@ class _Boulder(PowerBackport):
             description=f"{stats.selfref.capitalize()} tosses a boulder at a point it can see within {distance} ft. Each creature within a {radius} ft radius must make a DC {dc} Dexterity saving throw. \
                 On a failure, the creature takes {dmg.description} bludgeoning damage and is knocked prone. On a success, the creature takes half damage and is not knocked prone.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _CloudRune(PowerBackport):
+class _CloudRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Cloud Rune", power_type=PowerType.Creature)
+        super().__init__(name="Cloud Rune", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = stats.grant_resistance_or_immunity(
-            resistances={DamageType.Lightning}, upgrade_resistance_to_immunity_if_present=True
-        )
-
-        new_attributes = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
-        stats = stats.copy(
-            secondary_damage_type=DamageType.Lightning, attributes=new_attributes
-        )
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Cloud Rune",
             action=ActionType.Reaction,
@@ -148,21 +93,26 @@ class _CloudRune(PowerBackport):
                 This magic can transfer the attack's effect regardless of the attack's range.",
         )
 
-        return stats, feature
+        return [feature]
 
-
-class _FireRune(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Fire Rune", power_type=PowerType.Creature)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
-            resistances={DamageType.Fire}, upgrade_resistance_to_immunity_if_present=True
+            resistances={DamageType.Lightning}, upgrade_resistance_to_immunity_if_present=True
         )
-        stats = stats.copy(secondary_damage_type=DamageType.Fire)
+
+        new_attributes = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
+        stats = stats.copy(
+            secondary_damage_type=DamageType.Lightning, attributes=new_attributes
+        )
+
+        return stats
+
+
+class _FireRune(GiantPower):
+    def __init__(self):
+        super().__init__(name="Fire Rune", source="FoeFoundryOriginal", power_level=LOW_POWER)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(
             target=0.33 * stats.attack.average_damage, suggested_die=Die.d6
         )
@@ -178,22 +128,21 @@ class _FireRune(PowerBackport):
                 While restrained in this way, the creature is {burning.caption}. {burning.description_3rd}",
         )
 
-        return stats, feature
+        return [feature]
 
-
-class _FrostRune(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Frost Rune", power_type=PowerType.Creature)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
-            resistances={DamageType.Cold}, upgrade_resistance_to_immunity_if_present=True
+            resistances={DamageType.Fire}, upgrade_resistance_to_immunity_if_present=True
         )
-        stats = stats.copy(secondary_damage_type=DamageType.Cold)
+        stats = stats.copy(secondary_damage_type=DamageType.Fire)
+        return stats
 
+
+class _FrostRune(GiantPower):
+    def __init__(self):
+        super().__init__(name="Frost Rune", source="FoeFoundryOriginal", power_level=LOW_POWER)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = int(ceil(0.5 * stats.attack.average_damage))
         frozen = conditions.Frozen(dc=dc)
@@ -206,18 +155,21 @@ class _FrostRune(PowerBackport):
                 The target takes an extra {dmg} cold damage and must make a DC {dc} Constitution save or become {frozen.caption}. \
                 {frozen.description_3rd}",
         )
+        return [feature]
 
-        return stats, feature
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.grant_resistance_or_immunity(
+            resistances={DamageType.Cold}, upgrade_resistance_to_immunity_if_present=True
+        )
+        stats = stats.copy(secondary_damage_type=DamageType.Cold)
+        return stats
 
 
-class _StoneRune(PowerBackport):
+class _StoneRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Stone Rune", power_type=PowerType.Creature)
+        super().__init__(name="Stone Rune", source="FoeFoundryOriginal", power_level=LOW_POWER)
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Stone Rune",
@@ -227,65 +179,57 @@ class _StoneRune(PowerBackport):
                 The creature must make a DC {dc} Wisdom save. On a failure, the creature is **Charmed** for 1 minute (save ends at end of turn). \
                 While charmed in this way, the creature is **Incapacitated** in a dreamy stupor.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _HillRune(PowerBackport):
+class _HillRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Hill Rune", power_type=PowerType.Creature)
+        super().__init__(name="Hill Rune", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = stats.grant_resistance_or_immunity(
-            resistances={DamageType.Poison}, upgrade_resistance_to_immunity_if_present=True
-        )
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Stone Rune",
             action=ActionType.BonusAction,
             uses=1,
             description=f"{stats.selfref.capitalize()} invokes the hill rune and gains resistance to bludgeoning, piercing, and slashing damage for 1 minute",
         )
+        return [feature]
 
-        return stats, feature
-
-
-class _StormRune(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Storm Rune", power_type=PowerType.Creature)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
-            resistances={DamageType.Lightning}, upgrade_resistance_to_immunity_if_present=True
+            resistances={DamageType.Poison}, upgrade_resistance_to_immunity_if_present=True
         )
-        stats = stats.copy(secondary_damage_type=DamageType.Lightning)
+        return stats
 
+
+class _StormRune(GiantPower):
+    def __init__(self):
+        super().__init__(name="Storm Rune", source="FoeFoundryOriginal", power_level=LOW_POWER)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Storm Rune",
             action=ActionType.Reaction,
             uses=3,
             description=f"Whenever {stats.selfref} or another creature makes an attack roll, saving throw, or ability check, {stats.selfref} can force the roll to have advantage or disadvantage.",
         )
+        return [feature]
 
-        return stats, feature
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.grant_resistance_or_immunity(
+            resistances={DamageType.Lightning}, upgrade_resistance_to_immunity_if_present=True
+        )
+        stats = stats.copy(secondary_damage_type=DamageType.Lightning)
+        return stats
 
 
-class _Earthshaker(PowerBackport):
+class _Earthshaker(GiantPower):
     def __init__(self):
-        super().__init__(name="Earthshaker", power_type=PowerType.Creature)
+        super().__init__(
+            name="Earthshaker", source="FoeFoundryOriginal", attack_names=natural.Slam
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_giant(candidate, attack_names=natural.Slam)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, List[Feature]]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         size = stats.size.decrement().decrement() if stats.size >= Size.Huge else Size.Medium
         distance1 = easy_multiple_of_five(1.5 * stats.cr, min_val=10, max_val=30)
@@ -313,7 +257,7 @@ class _Earthshaker(PowerBackport):
                 must make a DC {dc} Strength saving throw or take {dmg.description} Thunder damage and be {dazed}",
         )
 
-        return stats, [feature1, feature2]
+        return [feature1, feature2]
 
 
 Boulder: Power = _Boulder()
@@ -322,10 +266,8 @@ Earthshaker: Power = _Earthshaker()
 FireRune: Power = _FireRune()
 FrostRune: Power = _FrostRune()
 HillRune: Power = _HillRune()
-ForcefulBlow: Power = _ForcefulBlow()
 StoneRune: Power = _StoneRune()
 StormRune: Power = _StormRune()
-ShoveAllies: Power = _ShoveAllies()
 
 
 GiantPowers: List[Power] = [
@@ -334,9 +276,7 @@ GiantPowers: List[Power] = [
     Earthshaker,
     FireRune,
     FrostRune,
-    ForcefulBlow,
     HillRune,
     StoneRune,
     StormRune,
-    ShoveAllies,
 ]

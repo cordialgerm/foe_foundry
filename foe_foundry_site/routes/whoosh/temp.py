@@ -7,6 +7,8 @@ from foe_foundry.powers.creatures import (
     elemental,
     fey,
     fiend,
+    giant,
+    ooze,
 )
 
 # TODO - add all powers
@@ -19,4 +21,6 @@ AllPowers = (
     + elemental.ElementalPowers
     + fey.FeyPowers
     + fiend.FiendishPowers
+    + giant.GiantPowers
+    + ooze.OozePowers
 )
