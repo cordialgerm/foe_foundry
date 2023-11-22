@@ -1,8 +1,6 @@
+from datetime import datetime
 from math import ceil
 from typing import List
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
 
 from ...creature_types import CreatureType
 from ...damage import DamageType, Dazed
@@ -21,13 +19,21 @@ from ..power import (
 
 
 class CelestialPower(PowerWithStandardScoring):
-    def __init__(self, name: str, source: str, power_level: float = MEDIUM_POWER, **score_args):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
         standard_score_args = dict(require_types=CreatureType.Celestial, **score_args)
 
         super().__init__(
             name=name,
             power_type=PowerType.Creature,
             power_level=power_level,
+            create_date=create_date,
             source=source,
             score_args=standard_score_args,
         )
@@ -36,7 +42,10 @@ class CelestialPower(PowerWithStandardScoring):
 class _AbsoluteConviction(CelestialPower):
     def __init__(self):
         super().__init__(
-            name="Absolute Conviction", source="FoeFoundryOriginal", power_level=LOW_POWER
+            name="Absolute Conviction",
+            source="FoeFoundryOriginal",
+            create_date=datetime(2023, 11, 21),
+            power_level=LOW_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -132,6 +141,7 @@ class _DivineMercy(CelestialPower):
         super().__init__(
             name="Divine Mercy",
             source="FoeFoundryOriginal",
+            create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
 

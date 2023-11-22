@@ -1,11 +1,8 @@
+from datetime import datetime
 from math import ceil
-from typing import List, Tuple
+from typing import List
 
 from num2words import num2words
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
@@ -13,8 +10,7 @@ from ...damage import Attack, AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...statblocks import BaseStatblock, MonsterDials
-from ...utils import easy_multiple_of_five
+from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
     LOW_POWER,
@@ -26,13 +22,21 @@ from ..power import (
 
 
 class ConstructPower(PowerWithStandardScoring):
-    def __init__(self, name: str, source: str, power_level: float = MEDIUM_POWER, **score_args):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
         standard_score_args = dict(require_types=CreatureType.Construct, **score_args)
         super().__init__(
             name=name,
             power_type=PowerType.Creature,
             source=source,
             power_level=power_level,
+            create_date=create_date,
             score_args=standard_score_args,
         )
 
@@ -42,6 +46,7 @@ class _ConstructedGuardian(ConstructPower):
         super().__init__(
             name="Constructed Guardian",
             source="FoeFoundryOriginal",
+            create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
             bonus_roles=MonsterRole.Defender,
         )
@@ -58,7 +63,10 @@ class _ConstructedGuardian(ConstructPower):
 class _ProtectivePlating(ConstructPower):
     def __init__(self):
         super().__init__(
-            name="Protective Plating", source="FoeFoundryOriginal", power_level=LOW_POWER
+            name="Protective Plating",
+            source="FoeFoundryOriginal",
+            create_date=datetime(2023, 11, 21),
+            power_level=LOW_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -170,6 +178,7 @@ class _Retrieval(ConstructPower):
             name="Retrieval",
             source="FoeFoundryOriginal",
             power_level=HIGH_POWER,
+            create_date=datetime(2023, 11, 21),
             require_cr=7,
             attack_names=["-", natural_attacks.Slam],
         )

@@ -1,10 +1,6 @@
-from math import ceil, floor
-from typing import Dict, List, Tuple
-
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
+from datetime import datetime
+from math import floor
+from typing import List
 
 from ...attack_template import natural, spell
 from ...creature_types import CreatureType
@@ -18,7 +14,14 @@ from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandar
 
 
 class AberrationPower(PowerWithStandardScoring):
-    def __init__(self, name: str, source: str, power_level: float = MEDIUM_POWER, **score_args):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
         standard_score_args = dict(require_types=CreatureType.Aberration)
         standard_score_args.update(score_args)
 
@@ -27,6 +30,7 @@ class AberrationPower(PowerWithStandardScoring):
             source=source,
             power_type=PowerType.Creature,
             power_level=power_level,
+            create_date=create_date,
             score_args=standard_score_args,
         )
 
@@ -56,6 +60,7 @@ class _GazeOfTheFarRealm(AberrationPower):
         super().__init__(
             name="Gaze of the Far Realm",
             source="FoeFoundryOriginal",
+            create_date=datetime(2023, 11, 21),
             attack_names=spell.Gaze,
             bonus_damage=DamageType.Psychic,
         )

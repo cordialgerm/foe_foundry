@@ -1,3 +1,4 @@
+from datetime import datetime
 from math import ceil
 from typing import List
 
@@ -24,7 +25,14 @@ class ElementalPower(PowerWithStandardScoring):
     def has_elemental_damage(self, b: BaseStatblock):
         return b.secondary_damage_type is not None and b.secondary_damage_type.is_elemental
 
-    def __init__(self, name: str, source: str, power_level: float = MEDIUM_POWER, **score_args):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
         standard_score_args = dict(
             require_types=CreatureType.Elemental,
             require_callback=self.has_elemental_damage,
@@ -35,6 +43,7 @@ class ElementalPower(PowerWithStandardScoring):
             power_type=PowerType.Creature,
             power_level=power_level,
             source=source,
+            create_date=create_date,
             score_args=standard_score_args,
         )
 

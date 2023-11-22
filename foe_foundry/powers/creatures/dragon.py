@@ -1,9 +1,7 @@
+from datetime import datetime
 from typing import List
 
 import numpy as np
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
@@ -17,13 +15,21 @@ from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandar
 
 
 class DraconicPower(PowerWithStandardScoring):
-    def __init__(self, name: str, source: str, power_level: float = MEDIUM_POWER, **score_args):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
         standard_score_args = dict(require_types=CreatureType.Dragon, **score_args)
         super().__init__(
             name=name,
             power_type=PowerType.Creature,
             source=source,
             power_level=power_level,
+            create_date=create_date,
             score_args=standard_score_args,
         )
 

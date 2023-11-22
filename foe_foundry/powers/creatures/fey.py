@@ -1,19 +1,12 @@
-from math import ceil, floor
-from typing import List, Tuple
+from datetime import datetime
+from typing import List
 
-import numpy as np
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
-from ...attributes import Skills, Stats
+from ...attributes import Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import (
     HIGH_POWER,
@@ -24,10 +17,6 @@ from ..power import (
     PowerWithStandardScoring,
 )
 from ..scoring import score
-
-
-def score_fey(candidate: BaseStatblock, **args) -> float:
-    return score(candidate=candidate, require_types=CreatureType.Fey, **args)
 
 
 def as_psychic_fey(stats: BaseStatblock) -> BaseStatblock:
@@ -45,20 +34,33 @@ def as_cursed_fey(stats: BaseStatblock) -> BaseStatblock:
 
 
 class FeyPower(PowerWithStandardScoring):
-    def __init__(self, name: str, source: str, power_level: float = MEDIUM_POWER, **score_args):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
         standard_score_args = dict(require_types=CreatureType.Fey, **score_args)
         super().__init__(
             name=name,
             source=source,
             power_type=PowerType.Creature,
             power_level=power_level,
+            create_date=create_date,
             score_args=standard_score_args,
         )
 
 
 class _FaerieStep(FeyPower):
     def __init__(self):
-        super().__init__(name="Faerie Step", source="A5ESRD Fey Noble", power_level=LOW_POWER)
+        super().__init__(
+            name="Faerie Step",
+            source="A5ESRD Fey Noble",
+            create_date=datetime(2023, 11, 21),
+            power_level=LOW_POWER,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = stats.speed.walk
@@ -72,7 +74,11 @@ class _FaerieStep(FeyPower):
 
 class _FaePresence(FeyPower):
     def __init__(self):
-        super().__init__(name="Fae Presence", source="FoeFoundryOriginal")
+        super().__init__(
+            name="Fae Presence",
+            source="FoeFoundryOriginal",
+            create_date=datetime(2023, 11, 21),
+        )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         return as_psychic_fey(stats)
@@ -90,7 +96,10 @@ class _FaePresence(FeyPower):
 class _BloodContract(FeyPower):
     def __init__(self):
         super().__init__(
-            name="Blood Curse", source="FoeFoundryOriginal", power_level=HIGH_POWER
+            name="Blood Curse",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
+            create_date=datetime(2023, 11, 21),
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:

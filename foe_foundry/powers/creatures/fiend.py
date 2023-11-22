@@ -1,73 +1,108 @@
-from math import ceil, floor
-from typing import Dict, List, Tuple
+from datetime import datetime
+from typing import List, Tuple
 
 import numpy as np
-from numpy.random import Generator
 
 from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural as natural_attacks
-from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import Attack, AttackType, DamageType, Fatigue
+from ...damage import Attack, AttackType, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five, summoning
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scoring import AttackNames, score
+from ..power import (
+    HIGH_POWER,
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
-def score_fiend(
-    candidate: BaseStatblock,
-    min_cr: float | None = None,
-    attack_names: AttackNames = None,
-) -> float:
-    return score(
-        candidate=candidate,
-        require_types=CreatureType.Fiend,
-        require_cr=min_cr,
-        attack_names=attack_names,
-    )
-
-
-class _EmpoweredByDeath(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Empowered by Death", power_type=PowerType.Creature)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        hp = easy_multiple_of_five(2 * stats.cr, min_val=5, max_val=30)
-
-        feature = Feature(
-            name="Empowered by Death",
-            action=ActionType.Feature,
-            description=f"{stats.selfref.capitalize()} regains {hp} hp whenever a creature dies within 30 ft. If it is at maximum hp, it gains that much temporary hp instead.",
+class FiendishPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        standard_score_args = dict(require_types=CreatureType.Fiend, **score_args)
+        super().__init__(
+            name=name,
+            source=source,
+            power_type=PowerType.Creature,
+            power_level=power_level,
+            create_date=create_date,
+            score_args=standard_score_args,
         )
 
-        return stats, feature
 
-
-class _RelishYourFailure(PowerBackport):
+class _CallOfTheStyx(FiendishPower):
     def __init__(self):
-        super().__init__(name="Relish Your Failure", power_type=PowerType.Creature)
+        super().__init__(
+            name="Call of the Styx",
+            source="FoeFoundryOriginal",
+            create_date=datetime(2023, 11, 21),
+            power_level=HIGH_POWER,
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(candidate)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dmg = DieFormula.target_value(1.75 * stats.attack.average_damage)
+        dc = stats.difficulty_class
+        frozen = conditions.Frozen(dc=dc)
+        feature = Feature(
+            name="Call of the Styx",
+            action=ActionType.Action,
+            uses=1,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} calls upon the deathly cold waters of the River Styx to drag the souls of the fallen to the lower planes. \
+                {stats.selfref.capitalize()} creates a line 60 feet long and 5 feet wide filled with the freezing, life-leeching waters of the Styx. \
+                Each creature in the line must make a DC {dc} Strength saving throw. On a failure, a creature takes {dmg.description} cold damage and is pulled up to 60 feet towards {stats.selfref}. \
+                If the creature fails by 5 or more, it is also {frozen.caption}. On a success, a creature takes half as much damage and suffers no other effects. {frozen.description_3rd}.",
+        )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, List[Feature]]:
-        hp = DieFormula.target_value(max(2, stats.cr / 2), suggested_die=Die.d4)
+        return [feature]
+
+
+class _FeastOfSouls(FiendishPower):
+    def __init__(self):
+        super().__init__(
+            name="Feast of SOulrs",
+            source="FoeFoundryOriginal",
+            create_date=datetime(2023, 11, 21),
+            power_level=LOW_POWER,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        temphp = easy_multiple_of_five(0.1 * stats.hp.average)
+        feature = Feature(
+            name="Feast of Souls",
+            action=ActionType.Reaction,
+            description=f"Whenever a creature dies within 120 feet of {stats.selfref} it may choose to gain {temphp} temporary hitpoints, recharge an ability, or regain an expended usage of an ability.",
+        )
+        return [feature]
+
+
+class _FiendishCurse(FiendishPower):
+    def __init__(self):
+        super().__init__(name="Fiendish Curse", source="FoeFoundryOriginal")
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, force_die=Die.d4)
+
         dc = stats.difficulty_class
         feature1 = Feature(
-            name="Relish Your Failure",
-            action=ActionType.Feature,
-            description=f"{stats.selfref.capitalize()} regains {hp.description} hp whenever a creature fails a saving throw within 60 feet. If it is at maximum hp, it gains that much temporary hp instead.",
+            name="Fiendish Cackle",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"Whenever a creature {stats.selfref} can see fails an attack roll, ability check, or saving throw, {stats.selfref} can use its reaction to cackle maniacally. \
+                The creature must make a DC {dc} Wisdom saving throw. On a failure, it takes {dmg.description} psychic damage and {stats.selfref} gains that many temporary hitpoints.",
         )
 
         feature2 = Feature(
@@ -75,46 +110,38 @@ class _RelishYourFailure(PowerBackport):
             action=ActionType.Action,
             replaces_multiattack=1,
             uses=1,
-            description=f"{stats.selfref.capitalize()} casts the *Bane* spell (spell save DC {dc}) at 2nd level, targeting up to 4 creatures, and without requiring concentration.",
+            description=f"{stats.selfref.capitalize()} casts the *Bane* spell (spell save DC {dc}) at 2nd level, targeting up to 4 creatures, and without requiring concentration).",
         )
 
-        return stats, [feature1, feature2]
+        return [feature1, feature2]
 
 
-class _FiendishTeleporation(PowerBackport):
+class _FiendishTeleporation(FiendishPower):
     def __init__(self):
-        super().__init__(name="Fiendish Teleportation", power_type=PowerType.Creature)
+        super().__init__(name="Fiendish Teleportation", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        multiplier = 1.5 if stats.multiattack >= 2 else 0.75
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        multiplier = 1.25 if stats.multiattack >= 2 else 0.75
         dmg = DieFormula.target_value(
             multiplier * stats.attack.average_damage, force_die=Die.d10
         )
-        distance = easy_multiple_of_five(stats.cr * 10, min_val=30, max_val=120)
+        distance = easy_multiple_of_five(stats.cr * 10, min_val=30, max_val=90)
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Fiendish Teleportation",
             action=ActionType.Action,
             replaces_multiattack=2,
-            description=f"{stats.selfref.capitalize()} disappears and reappars in a burst of flame. It teleports up to {distance} feet to an unoccupied location it can see. \
+            description=f"{stats.selfref.capitalize()} disappears and reappears in a burst of flame. It teleports up to {distance} feet to an unoccupied location it can see. \
                 Each other creature within 10 feet of {stats.selfref} either before or after it teleports must make a DC {dc} Dexterity saving throw. On a failure, it takes {dmg.description} fire damage.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _WallOfFire(PowerBackport):
+class _WallOfFire(FiendishPower):
     def __init__(self):
-        super().__init__(name="Wall of Fire", power_type=PowerType.Creature)
+        super().__init__(name="Wall of Fire", source="SRD5.1 Wall of Fire", require_cr=5)
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(candidate, min_cr=5)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
 
         if stats.cr <= 7:
@@ -134,19 +161,19 @@ class _WallOfFire(PowerBackport):
             uses=uses,
             description=f"{stats.selfref.capitalize()} magically casts the *Wall of Fire* spell (spell save DC {dc}){concentration}.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _FiendishBite(PowerBackport):
+class _FiendishBite(FiendishPower):
     def __init__(self):
-        super().__init__(name="Fiendish Bite", power_type=PowerType.Creature)
+        super().__init__(
+            name="Fiendish Bite", source="FoeFoundryOriginal", attack_names=natural_attacks.Bite
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(candidate, attack_names=natural_attacks.Bite)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, List[Feature]]:
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
 
         def customize(a: Attack) -> Attack:
@@ -162,19 +189,21 @@ class _FiendishBite(PowerBackport):
             callback=customize,
         )
 
-        return stats, []
+        return stats
 
 
-class _FiendishSummons(PowerBackport):
+class _FiendishSummons(FiendishPower):
     def __init__(self):
         super().__init__(
-            name="Fiendish Summons", power_type=PowerType.Creature, power_level=HIGH_POWER
+            name="Fiendish Summons",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
+            require_cr=3,
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(candidate, min_cr=3)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        # TODO - remove randomness
+        rng = np.random.default_rng(20210518)
         _, _, description = summoning.determine_summon_formula(
             summoner=summoning.Fiends, summon_cr_target=stats.cr / 2.5, rng=rng
         )
@@ -187,21 +216,16 @@ class _FiendishSummons(PowerBackport):
             description=f"{stats.selfref.capitalize()} summons forth additional fiendish allies. {description}",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _TemptingOffer(PowerBackport):
+class _TemptingOffer(FiendishPower):
     def __init__(self):
-        super().__init__(name="Tempting Offer", power_type=PowerType.Creature)
+        super().__init__(name="Tempting Offer", source="FoeFoundryOriginal", require_cr=3)
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(candidate, min_cr=3)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        fatigue = Fatigue()
+        fatigue = conditions.Fatigue()
         feature = Feature(
             name="Tempting Offer",
             action=ActionType.Action,
@@ -210,21 +234,14 @@ class _TemptingOffer(PowerBackport):
                 That creature must make a DC {dc} Wisdom saving throw. On a failure, the creature gains a level of {fatigue}. \
                 The creature may instead accept the offer. In doing so, it loses all levels of fatigue gained in this way but is contractually bound to the offer",
         )
-        return stats, feature
+        return [feature]
 
 
-class _DevilsSight(PowerBackport):
+class _DevilsSight(FiendishPower):
     def __init__(self):
-        super().__init__(name="Devil's Sight", power_type=PowerType.Theme)
+        super().__init__(name="Devil's Sight", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fiend(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, List[Feature]]:
-        stats = stats.copy(creature_type=CreatureType.Fiend)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         level = 2 if stats.cr <= 5 else 4
 
         devils_sight = Feature(
@@ -243,25 +260,27 @@ class _DevilsSight(PowerBackport):
                 Creatures of {stats.selfref}'s choice lose any resistance to fire damage while in the darkness, and immunity to fire damage is instead treated as resistance to fire damage.",
         )
 
-        return stats, [devils_sight, darkness]
+        return [devils_sight, darkness]
 
 
+CallOfTheStyx: Power = _CallOfTheStyx()
 DevilsSight: Power = _DevilsSight()
-EmpoweredByDeath: Power = _EmpoweredByDeath()
+FeastOfSouls: Power = _FeastOfSouls()
 FiendishBite: Power = _FiendishBite()
+FiendishCurse: Power = _FiendishCurse()
 FiendishSummons: Power = _FiendishSummons()
 FiendishTeleportation: Power = _FiendishTeleporation()
-RelishYourFailure: Power = _RelishYourFailure()
 TemptingOffer: Power = _TemptingOffer()
 WallOfFire: Power = _WallOfFire()
 
-FiendishPowers: List[Power] = [
+FiendishPowers = [
+    CallOfTheStyx,
     DevilsSight,
-    EmpoweredByDeath,
+    FeastOfSouls,
     FiendishBite,
+    FiendishCurse,
     FiendishSummons,
     FiendishTeleportation,
-    RelishYourFailure,
     TemptingOffer,
     WallOfFire,
 ]

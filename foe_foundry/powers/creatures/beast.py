@@ -1,9 +1,7 @@
+from datetime import datetime
 from typing import List
 
 import numpy as np
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural as natural_attacks
 from ...attributes import Skills
@@ -24,13 +22,21 @@ from ..power import (
 
 
 class BeastPower(PowerWithStandardScoring):
-    def __init__(self, name: str, source: str, power_level: float = MEDIUM_POWER, **score_args):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
         standard_score_args = dict(require_types=CreatureType.Beast, **score_args)
 
         super().__init__(
             name=name,
             power_type=PowerType.Creature,
             source=source,
+            create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,
         )
@@ -41,6 +47,7 @@ class _FeedingFrenzy(BeastPower):
         super().__init__(
             name="Feeding Frenzy",
             source="FoeFoundryOriginal",
+            create_date=datetime(2023, 11, 21),
             require_attack_types=AttackType.MeleeNatural,
         )
 
@@ -64,6 +71,7 @@ class _BestialRampage(BeastPower):
         super().__init__(
             name="Bestial Rampage",
             source="FoeFoundryOriginal",
+            create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
             require_attack_types=AttackType.MeleeNatural,
         )
