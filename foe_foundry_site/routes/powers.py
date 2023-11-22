@@ -4,27 +4,17 @@ from fastapi import APIRouter, HTTPException, Query
 
 from foe_foundry import CreatureType, MonsterRole
 from foe_foundry.powers import Power
-from foe_foundry.powers.creatures import aberration, beast, celestial, construct
 
 from ..data.power import PowerModel
 from . import whoosh
 
 router = APIRouter(prefix="/api/v1/powers")
 
-# TODO - add all powers
-AllPowers = (
-    aberration.AberrationPowers
-    + beast.BeastPowers
-    + celestial.CelestialPowers
-    + construct.ConstructPowers
-)
-_lookup = {power.key: PowerModel.from_power(power) for power in AllPowers}
-
 
 @router.get("/power/{power_name}")
 def get_power(*, power_name: str) -> PowerModel:
     key = Power.name_to_key(power_name)
-    power = _lookup.get(key)
+    power = whoosh.PowerLookup.get(key)
     if power is None:
         raise HTTPException(status_code=404, detail="Power not found")
     return power
@@ -50,7 +40,7 @@ def search_powers(
     if keyword:
         powers = whoosh.search(keyword, limit=limit)
     else:
-        powers = _lookup.values()
+        powers = whoosh.PowerLookup.values()
 
     def check_creature_type(p: PowerModel) -> bool:
         return not creature_type or creature_type in p.creature_types

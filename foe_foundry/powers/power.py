@@ -26,6 +26,7 @@ class Power(ABC):
         roles: List[MonsterRole] | None = None,
         creature_types: List[CreatureType] | None = None,
         damage_types: List[DamageType] | None = None,
+        suggested_cr: float | None = None,
     ):
         self.name = name
         self.power_type = power_type
@@ -34,6 +35,7 @@ class Power(ABC):
         self.roles = roles
         self.creature_types = creature_types
         self.damage_types = damage_types
+        self.suggested_cr = suggested_cr
 
         if self.power_level == HIGH_POWER:
             self.power_level_text = "High Power"
@@ -79,7 +81,7 @@ class PowerWithStandardScoring(Power):
         power_level: float = MEDIUM_POWER,
         score_args: Dict[str, Any] | None = None,
     ):
-        def resolve_args(arg: str) -> List | None:
+        def resolve_arg_list(arg: str) -> List | None:
             if not score_args:
                 return None
 
@@ -93,9 +95,16 @@ class PowerWithStandardScoring(Power):
             else:
                 return [val]
 
-        creature_types = resolve_args("types")
-        damage_types = resolve_args("damage")
-        roles = resolve_args("roles")
+        def resolve_arg(arg: str) -> Any | None:
+            if not score_args:
+                return None
+
+            return score_args.get(f"require_{arg}", score_args.get(f"bonus_{arg}"))
+
+        creature_types = resolve_arg_list("types")
+        damage_types = resolve_arg_list("damage")
+        roles = resolve_arg_list("roles")
+        suggested_cr = resolve_arg("cr")
 
         super().__init__(
             name=name,
@@ -105,6 +114,7 @@ class PowerWithStandardScoring(Power):
             roles=roles,
             creature_types=creature_types,
             damage_types=damage_types,
+            suggested_cr=suggested_cr,
         )
 
         self.score_args = score_args

@@ -4,18 +4,10 @@ from whoosh.fields import ID, KEYWORD, TEXT, Schema
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import QueryParser
 
-from foe_foundry.powers.creatures import aberration, beast, celestial, construct
-
 from ...data.power import PowerModel
+from .temp import AllPowers
 
-# TODO - add all powers
-AllPowers = (
-    aberration.AberrationPowers
-    + beast.BeastPowers
-    + celestial.CelestialPowers
-    + construct.ConstructPowers
-)
-_lookup = {power.key: PowerModel.from_power(power) for power in AllPowers}
+PowerLookup = {power.key: PowerModel.from_power(power) for power in AllPowers}
 
 
 def index_powers():
@@ -33,7 +25,7 @@ def index_powers():
     ix = create_in(str(dir), schema)
     writer = ix.writer()
 
-    for key, power in _lookup.items():
+    for key, power in PowerLookup.items():
         writer.add_document(
             name=power.name,
             key=key,
@@ -65,7 +57,7 @@ def search(search_term: str, limit: int) -> list[PowerModel]:
         powers = []
         for result in results:
             key = result["key"]
-            power = _lookup.get(key)
+            power = PowerLookup.get(key)
             if power:
                 powers.append(power)
 

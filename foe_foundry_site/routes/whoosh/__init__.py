@@ -1,1 +1,1 @@
-from .whoosh import search
+from .whoosh import PowerLookup, search

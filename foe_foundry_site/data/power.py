@@ -9,7 +9,7 @@ from pydantic.dataclasses import dataclass
 from foe_foundry import CreatureType, DamageType, MonsterRole
 from foe_foundry.creature_templates import get_creature_template
 from foe_foundry.powers import Power
-from foe_foundry.statblocks.common import Specialist
+from foe_foundry.statblocks.common import get_common_stats
 
 
 @dataclass(kw_only=True)
@@ -63,8 +63,9 @@ class PowerModel:
         def rng() -> np.random.Generator:
             return np.random.default_rng(seed=20210518)
 
-        # Use the Specialist (CR 4) as our baseline for reasonable power descriptions
-        stats = Specialist.copy()
+        # If the power has a suggested CR, then use that as our baseline
+        # Otherwise, use the Specialist (CR 4) as our baseline for reasonable power descriptions
+        stats = get_common_stats(power.suggested_cr or 4).copy()
 
         # if the power has a secondary damage type, apply that
         if secondary_damage_type:
