@@ -16,7 +16,6 @@ from ..power import (
     PowerType,
     PowerWithStandardScoring,
 )
-from ..scoring import score
 
 
 def as_psychic_fey(stats: BaseStatblock) -> BaseStatblock:
@@ -100,6 +99,7 @@ class _BloodContract(FeyPower):
             source="FoeFoundryOriginal",
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 21),
+            bonus_damage=DamageType.Necrotic,
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
@@ -130,6 +130,7 @@ class _FaeCounterspell(FeyPower):
             source="FoeFoundryOriginal",
             power_level=HIGH_POWER,
             require_stats=Stats.INT,
+            bonus_damage=DamageType.Psychic,
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:

@@ -50,6 +50,7 @@ class _CallOfTheStyx(FiendishPower):
             source="FoeFoundryOriginal",
             create_date=datetime(2023, 11, 21),
             power_level=HIGH_POWER,
+            bonus_damage=DamageType.Cold,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -91,7 +92,9 @@ class _FeastOfSouls(FiendishPower):
 
 class _FiendishCurse(FiendishPower):
     def __init__(self):
-        super().__init__(name="Fiendish Curse", source="FoeFoundryOriginal")
+        super().__init__(
+            name="Fiendish Curse", source="FoeFoundryOriginal", bonus_damage=DamageType.Fire
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, force_die=Die.d4)
@@ -102,7 +105,7 @@ class _FiendishCurse(FiendishPower):
             action=ActionType.Reaction,
             uses=1,
             description=f"Whenever a creature {stats.selfref} can see fails an attack roll, ability check, or saving throw, {stats.selfref} can use its reaction to cackle maniacally. \
-                The creature must make a DC {dc} Wisdom saving throw. On a failure, it takes {dmg.description} psychic damage and {stats.selfref} gains that many temporary hitpoints.",
+                The creature must make a DC {dc} Wisdom saving throw. On a failure, it takes {dmg.description} fire damage and {stats.selfref} gains that many temporary hitpoints.",
         )
 
         feature2 = Feature(
@@ -118,7 +121,11 @@ class _FiendishCurse(FiendishPower):
 
 class _FiendishTeleporation(FiendishPower):
     def __init__(self):
-        super().__init__(name="Fiendish Teleportation", source="FoeFoundryOriginal")
+        super().__init__(
+            name="Fiendish Teleportation",
+            source="FoeFoundryOriginal",
+            bonus_damage=DamageType.Fire,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         multiplier = 1.25 if stats.multiattack >= 2 else 0.75
@@ -139,7 +146,12 @@ class _FiendishTeleporation(FiendishPower):
 
 class _WallOfFire(FiendishPower):
     def __init__(self):
-        super().__init__(name="Wall of Fire", source="SRD5.1 Wall of Fire", require_cr=5)
+        super().__init__(
+            name="Wall of Fire",
+            source="SRD5.1 Wall of Fire",
+            require_cr=5,
+            bonus_damage=DamageType.Fire,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -167,7 +179,10 @@ class _WallOfFire(FiendishPower):
 class _FiendishBite(FiendishPower):
     def __init__(self):
         super().__init__(
-            name="Fiendish Bite", source="FoeFoundryOriginal", attack_names=natural_attacks.Bite
+            name="Fiendish Bite",
+            source="FoeFoundryOriginal",
+            attack_names=natural_attacks.Bite,
+            bonus_damage=DamageType.Poison,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -239,7 +254,9 @@ class _TemptingOffer(FiendishPower):
 
 class _DevilsSight(FiendishPower):
     def __init__(self):
-        super().__init__(name="Devil's Sight", source="FoeFoundryOriginal")
+        super().__init__(
+            name="Devil's Sight", source="FoeFoundryOriginal", bonus_damage=DamageType.Fire
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         level = 2 if stats.cr <= 5 else 4

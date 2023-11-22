@@ -110,7 +110,12 @@ class _CloudRune(GiantPower):
 
 class _FireRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Fire Rune", source="FoeFoundryOriginal", power_level=LOW_POWER)
+        super().__init__(
+            name="Fire Rune",
+            source="FoeFoundryOriginal",
+            power_level=LOW_POWER,
+            bonus_damage=DamageType.Fire,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(
@@ -140,7 +145,12 @@ class _FireRune(GiantPower):
 
 class _FrostRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Frost Rune", source="FoeFoundryOriginal", power_level=LOW_POWER)
+        super().__init__(
+            name="Frost Rune",
+            source="FoeFoundryOriginal",
+            power_level=LOW_POWER,
+            bonus_damage=DamageType.Cold,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
