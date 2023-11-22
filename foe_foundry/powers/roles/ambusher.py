@@ -10,6 +10,8 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from .shared import CunningAction as _CunningAction
+from .shared import NimbleEscape as _NimbleEscape
 
 
 class AmbusherPower(PowerWithStandardScoring):
@@ -38,32 +40,6 @@ class AmbusherPower(PowerWithStandardScoring):
         )
 
 
-class _NimbleEscape(AmbusherPower):
-    def __init__(self):
-        super().__init__(name="Nimble Escape", source="SRD1.2 Goblin")
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        feature = Feature(
-            name="Nimble Escape",
-            action=ActionType.Feature,
-            description=f"{stats.selfref.capitalize()} uses Disengage or Hide.",
-        )
-        return [feature]
-
-
-class _CunningAction(AmbusherPower):
-    def __init__(self):
-        super().__init__(name="Cunning Action", source="SRD1.2 Spy", power_level=HIGH_POWER)
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        feature = Feature(
-            name="Cunning Action",
-            description=f"{stats.selfref.capitalize()} uses Dash, Disengage, or Hide.",
-            action=ActionType.BonusAction,
-        )
-        return [feature]
-
-
 class _DeadlyAmbusher(AmbusherPower):
     def __init__(self):
         super().__init__(name="Deadly Ambusher", source="SRD1.2 Assasin")
@@ -79,8 +55,8 @@ class _DeadlyAmbusher(AmbusherPower):
         return [feature]
 
 
-CunningAction: Power = _CunningAction()
-NimbleEscape: Power = _NimbleEscape()
+CunningAction: Power = _CunningAction(MonsterRole.Ambusher)
+NimbleEscape: Power = _NimbleEscape(MonsterRole.Ambusher)
 DeadlyAmbusher: Power = _DeadlyAmbusher()
 
 AmbusherPowers: List[Power] = [

@@ -1,77 +1,55 @@
-from math import ceil
-from typing import Dict, List, Tuple
+from datetime import datetime
+from typing import List
 
-import numpy as np
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural as natural_attacks
 from ...attack_template import weapon
 from ...attributes import Skills, Stats
-from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Bleeding, DamageType
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...powers import PowerType
 from ...role_types import MonsterRole
-from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
-from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scoring import AttackNames, score
+from ...statblocks import BaseStatblock
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def _score_bruiser(
-    candidate: BaseStatblock,
-    size_boost: bool = False,
-    attack_names: AttackNames = None,
-    **kwargs,
-) -> float:
-    return score(
-        candidate=candidate,
-        require_roles=MonsterRole.Bruiser,
-        bonus_size=Size.Large if size_boost else None,
-        attack_names=attack_names,
-        **kwargs,
-    )
-
-
-class _Sentinel(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Sentinel", power_type=PowerType.Role)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_bruiser(
-            candidate,
-            size_boost=True,
-            attack_names=[
-                weapon.Polearm,
-                weapon.SpearAndShield,
-            ],
+class BruiserPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        standard_score_args = dict(
+            require_roles=MonsterRole.Bruiser,
+            bonus_stats=[Stats.STR, Stats.CON],
+            bonus_skills=Skills.Athletics,
+            **score_args,
+        )
+        super().__init__(
+            name=name,
+            power_type=PowerType.Role,
+            power_level=power_level,
+            source=source,
+            create_date=create_date,
+            score_args=standard_score_args,
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        feature = Feature(
-            name="Sentinel",
-            action=ActionType.Reaction,
-            description=f"If another target moves while within {stats.roleref}'s reach then {stats.roleref} may make an attack against that target.",
+
+class _GrapplingStrike(BruiserPower):
+    def __init__(self):
+        super().__init__(
+            name="Grappler", source="A5E SRD Grappler", attack_names={natural_attacks.Slam}
         )
 
-        return stats, feature
-
-
-class _Grappler(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Grappler", power_type=PowerType.Role)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_bruiser(candidate, attack_names={"-", natural_attacks.Slam})
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature | None]:
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Athletics)
-        stats = stats.copy(attributes=new_attrs, primary_damage_type=DamageType.Bludgeoning)
+        stats = stats.copy(attributes=new_attrs)
 
         dc = stats.difficulty_class
 
@@ -84,51 +62,41 @@ class _Grappler(PowerBackport):
             additional_description=f"On a hit, the target must make a DC {dc} Strength save or be **Grappled** (escape DC {dc}). \
                  While grappled in this way, the creature is also **Restrained**",
         )
-        return stats, None
+
+        return stats
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
 
 
-class _Cleaver(PowerBackport):
+class _CleavingBlows(BruiserPower):
     def __init__(self):
-        super().__init__(name="Cleaver", power_type=PowerType.Role)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_bruiser(
-            candidate, attack_names={"-", weapon.Greataxe, natural_attacks.Claw}
+        super().__init__(
+            name="Cleaving Blows",
+            source="FoeFoundryOriginal",
+            attack_names={weapon.Greataxe, natural_attacks.Claw},
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        stats = stats.copy(primary_damage_type=DamageType.Slashing)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Cleaving Blows",
             action=ActionType.BonusAction,
             description=f"Immediately after the {stats.selfref} hits with a weapon attack, it may make the same attack against another target within its reach.",
             recharge=4,
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _StunningBlow(PowerBackport):
+class _StunningBlow(BruiserPower):
     def __init__(self):
         super().__init__(
-            name="Stunning Blow", power_type=PowerType.Role, power_level=HIGH_POWER
-        )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_bruiser(
-            candidate,
-            require_damage=DamageType.Bludgeoning,
+            name="Stunning Blow",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
             attack_names={weapon.Maul, weapon.MaceAndShield, natural_attacks.Slam},
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        stats = stats.copy(primary_damage_type=DamageType.Bludgeoning)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         feature = Feature(
@@ -138,17 +106,14 @@ class _StunningBlow(PowerBackport):
             recharge=6,
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _Disembowler(PowerBackport):
+class _Rend(BruiserPower):
     def __init__(self):
-        super().__init__(name="Disembowler", power_type=PowerType.Role)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_bruiser(
-            candidate,
-            require_damage=DamageType.Piercing,
+        super().__init__(
+            name="Rend",
+            source="FoeFoundryOriginal",
             attack_names={
                 natural_attacks.Bite,
                 natural_attacks.Horns,
@@ -156,9 +121,10 @@ class _Disembowler(PowerBackport):
             },
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, List[Feature]]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
         attack_type = (
             AttackType.MeleeWeapon
@@ -181,13 +147,13 @@ class _Disembowler(PowerBackport):
             callback=customize,
         )
 
-        return stats, []
+        return stats
 
 
-Sentinel: Power = _Sentinel()
-Grappler: Power = _Grappler()
-Cleaver: Power = _Cleaver()
+CleavingBlows: Power = _CleavingBlows()
+GrapplingStrike: Power = _GrapplingStrike()
+Rend: Power = _Rend()
 StunningBlow: Power = _StunningBlow()
-Disembowler: Power = _Disembowler()
 
-BruiserPowers: List[Power] = [Sentinel, Grappler, Cleaver, StunningBlow, Disembowler]
+
+BruiserPowers: List[Power] = [CleavingBlows, GrapplingStrike, Rend, StunningBlow]

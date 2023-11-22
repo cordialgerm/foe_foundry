@@ -1,11 +1,5 @@
 from foe_foundry.powers.creatures import CreaturePowers
-from foe_foundry.powers.roles import ambusher, artillery
+from foe_foundry.powers.roles import RolePowers
 
 # TODO - add all powers
-AllPowers = (
-    # creature powers
-    CreaturePowers
-    # role powers
-    + ambusher.AmbusherPowers
-    + artillery.ArtilleryPowers
-)
+AllPowers = CreaturePowers + RolePowers

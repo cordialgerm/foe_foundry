@@ -81,7 +81,11 @@ class PowerModel:
         features = power.generate_features(stats)
         feature_models = []
         for feature in features:
-            if feature.hidden and not feature.modifies_attack:
+            # normally we would skip displaying hidden features (in the statblock itself)
+            # however, if the feature modifies the attack we have no way of displaying it in the API without returning it as a feature
+            # also, if the feature just produces a single hidden feature then we should display it otherwise the power would be shown as doing nothing
+            skip_if_hidden = not (feature.modifies_attack or len(features) == 1)
+            if feature.hidden and skip_if_hidden:
                 continue
             feature_model = FeatureModel(
                 name=feature.name,
