@@ -357,8 +357,8 @@ class _Ranger(PowerBackport):
             description=f"{stats.roleref.capitalize()} casts *Spike Growth*",
         )
 
-        stats = artillery.SteadyAim.modify_stats(stats)
-        feature2 = artillery.SteadyAim.generate_features(stats)
+        stats = artillery.FocusShot.modify_stats(stats)
+        feature2 = artillery.FocusShot.generate_features(stats)
 
         return stats, Feature.merge(feature1, feature2)
 

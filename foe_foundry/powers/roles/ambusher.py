@@ -1,86 +1,74 @@
-from typing import List, Tuple
+from datetime import datetime
+from typing import List
 
-from numpy.random import Generator
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
 
 from ...attributes import Skills, Stats
-from ...creature_types import CreatureType
-from ...damage import AttackType
-from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
-from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerBackport, PowerType
-from ..scoring import score
+from ...statblocks import BaseStatblock
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_ambusher(candidate: BaseStatblock, speed_boost: bool = False) -> float:
-    return score(
-        candidate=candidate,
-        require_roles=MonsterRole.Ambusher,
-        bonus_stats=Stats.DEX,
-        bonus_skills=Skills.Stealth,
-        bonus_speed=40,
-    )
-
-
-def as_ambusher(stats: BaseStatblock) -> BaseStatblock:
-    new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
-    stats = stats.copy(attributes=new_attrs)
-    return stats
-
-
-class _DistractingAttack(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Distracting Attack", power_type=PowerType.Role)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_ambusher(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = as_ambusher(stats)
-
-        feature = Feature(
-            name="Distracting Attack",
-            action=ActionType.Feature,
-            description=f"On a hit, {stats.roleref} can choose to become **Invisible** until the start of their next turn or the next time they make an attack or cast a spell.",
-            hidden=True,
-            modifies_attack=True,
+class AmbusherPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        standard_score_args = dict(
+            require_roles=MonsterRole.Ambusher,
+            bonus_stats=Stats.DEX,
+            bonus_skills=Skills.Stealth,
+            bonus_speed=40,
+            **score_args,
+        )
+        super().__init__(
+            name=name,
+            power_type=PowerType.Role,
+            source=source,
+            power_level=power_level,
+            create_date=create_date,
+            score_args=standard_score_args,
         )
 
-        return stats, feature
 
-
-class _ShadowyMovement(PowerBackport):
+class _NimbleEscape(AmbusherPower):
     def __init__(self):
-        super().__init__(name="Shadowy Movement", power_type=PowerType.Role)
+        super().__init__(name="Nimble Escape", source="SRD1.2 Goblin")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_ambusher(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = as_ambusher(stats)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
-            name="Shadowy Movement",
-            description=f"{stats.roleref.capitalize()} can attempt to hide in dim light or lightly obscured terrain. \
-            When {stats.roleref} moves, they can make a Dexterity (Stealth) check to hide as part of that movement",
+            name="Nimble Escape",
             action=ActionType.Feature,
+            description=f"{stats.selfref.capitalize()} uses Disengage or Hide.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _DeadlyAmbusher(PowerBackport):
+class _CunningAction(AmbusherPower):
     def __init__(self):
-        super().__init__(name="Deadly Ambusher", power_type=PowerType.Role)
+        super().__init__(name="Cunning Action", source="SRD1.2 Spy", power_level=HIGH_POWER)
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_ambusher(candidate, speed_boost=True)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Cunning Action",
+            description=f"{stats.selfref.capitalize()} uses Dash, Disengage, or Hide.",
+            action=ActionType.BonusAction,
+        )
+        return [feature]
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = as_ambusher(stats)
 
+class _DeadlyAmbusher(AmbusherPower):
+    def __init__(self):
+        super().__init__(name="Deadly Ambusher", source="SRD1.2 Assasin")
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Deadly Ambusher",
             description=f"{stats.selfref.capitalize()} has advantage on initiative rolls. \
@@ -88,16 +76,15 @@ class _DeadlyAmbusher(PowerBackport):
                 and it scores a critical hit on a score of 19 or 20.",
             action=ActionType.Feature,
         )
+        return [feature]
 
-        return stats, feature
 
-
-DistractingAttack: Power = _DistractingAttack()
-ShadowyMovement: Power = _ShadowyMovement()
+CunningAction: Power = _CunningAction()
+NimbleEscape: Power = _NimbleEscape()
 DeadlyAmbusher: Power = _DeadlyAmbusher()
 
 AmbusherPowers: List[Power] = [
-    DistractingAttack,
-    ShadowyMovement,
+    CunningAction,
     DeadlyAmbusher,
+    NimbleEscape,
 ]

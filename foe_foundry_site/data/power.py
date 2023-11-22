@@ -19,6 +19,7 @@ class FeatureModel:
     recharge: int | None = None
     uses: int | None = None
     replaces_multiattack: int = 0
+    modifies_attack: bool = False
     description_md: str
 
 
@@ -80,7 +81,7 @@ class PowerModel:
         features = power.generate_features(stats)
         feature_models = []
         for feature in features:
-            if feature.hidden:
+            if feature.hidden and not feature.modifies_attack:
                 continue
             feature_model = FeatureModel(
                 name=feature.name,
@@ -89,6 +90,7 @@ class PowerModel:
                 uses=feature.uses,
                 replaces_multiattack=feature.replaces_multiattack,
                 description_md=feature.description,
+                modifies_attack=feature.modifies_attack,
             )
             feature_models.append(feature_model)
 
