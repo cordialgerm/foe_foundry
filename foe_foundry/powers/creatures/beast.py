@@ -1,54 +1,48 @@
-from math import ceil
-from typing import Dict, List, Set, Tuple
+from typing import List
 
 import numpy as np
-from numpy.random import Generator
 
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural as natural_attacks
-from ...attributes import Skills, Stats
+from ...attributes import Skills
 from ...creature_types import CreatureType
 from ...damage import AttackType, Bleeding, DamageType
-from ...die import Die, DieFormula
+from ...die import DieFormula
 from ...features import ActionType, Feature
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ...utils import summoning
-from ..power import HIGH_POWER, LOW_POWER, Power, PowerType
-from ..scoring import AttackNames, score
+from ..power import (
+    HIGH_POWER,
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
-def _score_beast(
-    candidate: BaseStatblock,
-    attack_names: AttackNames = None,
-    **args,
-) -> float:
-    return score(
-        candidate=candidate,
-        require_types=CreatureType.Beast,
-        attack_names=attack_names,
-        **args,
-    )
+class BeastPower(PowerWithStandardScoring):
+    def __init__(self, name: str, source: str, power_level: float = MEDIUM_POWER, **score_args):
+        standard_score_args = dict(require_types=CreatureType.Beast, **score_args)
 
-
-class BeastPower(Power):
-    def __init__(self, name: str, source: str, **args):
         super().__init__(
             name=name,
             power_type=PowerType.Creature,
-            creature_types=[CreatureType.Beast],
             source=source,
-            **args,
+            power_level=power_level,
+            score_args=standard_score_args,
         )
 
 
 class _FeedingFrenzy(BeastPower):
     def __init__(self):
-        super().__init__(name="Feeding Frenzy", source="FoeFoundryOriginal")
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate, require_attack_types=AttackType.MeleeNatural)
+        super().__init__(
+            name="Feeding Frenzy",
+            source="FoeFoundryOriginal",
+            require_attack_types=AttackType.MeleeNatural,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -71,10 +65,8 @@ class _BestialRampage(BeastPower):
             name="Bestial Rampage",
             source="FoeFoundryOriginal",
             power_level=LOW_POWER,
+            require_attack_types=AttackType.MeleeNatural,
         )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate, require_attack_types=AttackType.MeleeNatural)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -94,10 +86,9 @@ class _BestialRampage(BeastPower):
 
 class _Gore(BeastPower):
     def __init__(self):
-        super().__init__(name="Gore", source="SRD 5.1 Minotaur")
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate, attack_names=["-", natural_attacks.Horns])
+        super().__init__(
+            name="Gore", source="SRD 5.1 Minotaur", attack_names=["-", natural_attacks.Horns]
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -127,16 +118,16 @@ class _Gore(BeastPower):
 
 class _Web(BeastPower):
     def __init__(self):
-        super().__init__(name="Web", source="SRD 5.1 Giant Spider")
-
-    def score(self, candidate: BaseStatblock) -> float:
-        attacks = {
-            "-",
-            natural_attacks.Bite,
-            natural_attacks.Claw,
-            natural_attacks.Stinger,
-        }
-        return _score_beast(candidate, attacks)
+        super().__init__(
+            name="Web",
+            source="SRD 5.1 Giant Spider",
+            attack_names={
+                "-",
+                natural_attacks.Bite,
+                natural_attacks.Claw,
+                natural_attacks.Stinger,
+            },
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -174,13 +165,8 @@ class _Web(BeastPower):
 class _Packlord(BeastPower):
     def __init__(self):
         super().__init__(
-            name="Packlord",
-            source="FoeFoundryOriginal",
-            power_level=HIGH_POWER,
+            name="Packlord", source="FoeFoundryOriginal", power_level=HIGH_POWER, require_cr=3
         )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate, require_cr=3)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.speed.fly:
@@ -214,9 +200,6 @@ class _WildInstinct(BeastPower):
             source="FoeFoundryOriginal",
             power_level=LOW_POWER,
         )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_beast(candidate)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

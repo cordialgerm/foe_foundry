@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import List, Tuple
+from typing import Any, Dict, List, Tuple
 
 import numpy as np
 
@@ -9,6 +9,7 @@ from ..features import Feature
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
 from .power_type import PowerType
+from .scoring import score as standard_score
 
 LOW_POWER = 0.5
 MEDIUM_POWER = 1
@@ -67,6 +68,49 @@ class Power(ABC):
     @staticmethod
     def name_to_key(name: str) -> str:
         return name.lower().replace(" ", "-")
+
+
+class PowerWithStandardScoring(Power):
+    def __init__(
+        self,
+        name: str,
+        power_type: PowerType,
+        source: str | None = None,
+        power_level: float = MEDIUM_POWER,
+        score_args: Dict[str, Any] | None = None,
+    ):
+        def resolve_args(arg: str) -> List | None:
+            if not score_args:
+                return None
+
+            val = score_args.get(f"require_{arg}", score_args.get(f"bonus_{arg}"))
+            if val is None:
+                return None
+            elif isinstance(val, list):
+                return val
+            elif isinstance(val, set):
+                return list(val)
+            else:
+                return [val]
+
+        creature_types = resolve_args("types")
+        damage_types = resolve_args("damage")
+        roles = resolve_args("roles")
+
+        super().__init__(
+            name=name,
+            power_type=power_type,
+            source=source,
+            power_level=power_level,
+            roles=roles,
+            creature_types=creature_types,
+            damage_types=damage_types,
+        )
+
+        self.score_args = score_args
+
+    def score(self, candidate: BaseStatblock) -> float:
+        return standard_score(candidate=candidate, **self.score_args or {})
 
 
 class PowerBackport(Power):

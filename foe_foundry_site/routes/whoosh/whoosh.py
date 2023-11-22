@@ -4,12 +4,17 @@ from whoosh.fields import ID, KEYWORD, TEXT, Schema
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import QueryParser
 
-from foe_foundry.powers.creatures import aberration, beast, celestial
+from foe_foundry.powers.creatures import aberration, beast, celestial, construct
 
 from ...data.power import PowerModel
 
 # TODO - add all powers
-AllPowers = aberration.AberrationPowers + beast.BeastPowers + celestial.CelestialPowers
+AllPowers = (
+    aberration.AberrationPowers
+    + beast.BeastPowers
+    + celestial.CelestialPowers
+    + construct.ConstructPowers
+)
 _lookup = {power.key: PowerModel.from_power(power) for power in AllPowers}
 
 
@@ -24,6 +29,7 @@ def index_powers():
     )
 
     dir = Path(__file__).parent / "index"
+    dir.mkdir(exist_ok=True)
     ix = create_in(str(dir), schema)
     writer = ix.writer()
 

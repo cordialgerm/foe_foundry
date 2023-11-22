@@ -4,7 +4,7 @@ from fastapi import APIRouter, HTTPException, Query
 
 from foe_foundry import CreatureType, MonsterRole
 from foe_foundry.powers import Power
-from foe_foundry.powers.creatures import aberration, beast, celestial
+from foe_foundry.powers.creatures import aberration, beast, celestial, construct
 
 from ..data.power import PowerModel
 from . import whoosh
@@ -12,7 +12,12 @@ from . import whoosh
 router = APIRouter(prefix="/api/v1/powers")
 
 # TODO - add all powers
-AllPowers = aberration.AberrationPowers + beast.BeastPowers + celestial.CelestialPowers
+AllPowers = (
+    aberration.AberrationPowers
+    + beast.BeastPowers
+    + celestial.CelestialPowers
+    + construct.ConstructPowers
+)
 _lookup = {power.key: PowerModel.from_power(power) for power in AllPowers}
 
 

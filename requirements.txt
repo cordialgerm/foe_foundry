@@ -13,6 +13,4 @@ uvicorn[standard] ~= 0.24
 pytest ~= 7.4.3
 backports.strenum ~= 1.2.8
 requests ~= 2.31.0
-rapidfuzz ~= 3.5.2
-thefuzz ~= 0.20.0
 whoosh ~= 2.7.4

@@ -14,41 +14,28 @@ from ...features import ActionType, Feature
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, Power, PowerType
-from ..scoring import AttackNames, score
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_aberration(
-    candidate: BaseStatblock,
-    min_size: Size | None = None,
-    attack_names: AttackNames = None,
-) -> float:
-    return score(
-        candidate=candidate,
-        require_types=CreatureType.Aberration,
-        require_size=min_size,
-        attack_names=attack_names,
-    )
+class AberrationPower(PowerWithStandardScoring):
+    def __init__(self, name: str, source: str, power_level: float = MEDIUM_POWER, **score_args):
+        standard_score_args = dict(require_types=CreatureType.Aberration)
+        standard_score_args.update(score_args)
 
-
-class AberrationPower(Power):
-    def __init__(self, name: str, source: str, **kwargs):
         super().__init__(
             name=name,
             source=source,
             power_type=PowerType.Creature,
-            creature_types=[CreatureType.Aberration],
-            **kwargs,
+            power_level=power_level,
+            score_args=standard_score_args,
         )
 
 
 class _TentacleGrapple(AberrationPower):
     def __init__(self):
-        super().__init__(name="Tentacle Grapple", source="FoeFoundryOriginal")
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberration(
-            candidate,
+        super().__init__(
+            name="Tentacle Grapple",
+            source="FoeFoundryOriginal",
             attack_names={"-", natural.Tentacle},
         )
 
@@ -69,10 +56,9 @@ class _GazeOfTheFarRealm(AberrationPower):
         super().__init__(
             name="Gaze of the Far Realm",
             source="FoeFoundryOriginal",
+            attack_names=spell.Gaze,
+            bonus_damage=DamageType.Psychic,
         )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberration(candidate, attack_names=spell.Gaze)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -98,9 +84,6 @@ class _MaddeningWhispers(AberrationPower):
             source="5.1 SRD (Gibbering Mouther)",
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberration(candidate)
-
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
@@ -116,11 +99,9 @@ class _MaddeningWhispers(AberrationPower):
 
 class _TentacleSlam(AberrationPower):
     def __init__(self):
-        super().__init__(name="Tentacle Slam", source="FoeFoundryOriginal")
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberration(
-            candidate,
+        super().__init__(
+            name="Tentacle Slam",
+            source="FoeFoundryOriginal",
             attack_names={"-", natural.Tentacle},
         )
 
@@ -145,24 +126,11 @@ class _NullificationMaw(AberrationPower):
             name="Nullification Maw",
             source="FoeFoundryOriginal",
             power_level=HIGH_POWER,
-        )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberration(
-            candidate,
-            min_size=Size.Large,
+            require_size=Size.Large,
             attack_names={"-", natural.Bite},
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats, _ = self._helper(stats)
-        return stats
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        _, feature = self._helper(stats)
-        return [feature]
-
-    def _helper(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
         threshold = easy_multiple_of_five(2 * stats.cr, min_val=5, max_val=40)
         swallowed = Swallowed(
@@ -170,7 +138,6 @@ class _NullificationMaw(AberrationPower):
             regurgitate_dc=easy_multiple_of_five(threshold * 0.75, min_val=15, max_val=25),
             regurgitate_damage_threshold=threshold,
         )
-
         stats = stats.add_attack(
             scalar=1.5,
             damage_type=DamageType.Piercing,
@@ -179,7 +146,9 @@ class _NullificationMaw(AberrationPower):
             name="Swallow",
             additional_description=f"On a hit, the target must make a DC {dc} Dexterity saving throw. On a failure, it is {swallowed} Also see *Nullification Maw*.",
         )
+        return stats
 
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Nullification Maw",
             action=ActionType.Feature,
@@ -187,8 +156,7 @@ class _NullificationMaw(AberrationPower):
                 Any spell slot or charge expended by a creature in the gullet to cast a spell or activate a property of a magic item is wasted. \
                 No spell or magical effect that originates outside {stats.selfref}'s gullet, except one created by an artifact or a deity, can affect a creature or an object inside the gullet.",
         )
-
-        return stats, feature
+        return [feature]
 
 
 GazeOfTheFarRealm: Power = _GazeOfTheFarRealm()

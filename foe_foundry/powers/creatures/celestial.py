@@ -1,35 +1,35 @@
 from math import ceil
-from typing import List, Tuple
-
-import numpy as np
-from numpy.random import Generator
+from typing import List
 
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
-from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, Dazed
+from ...damage import DamageType, Dazed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import (
+    HIGH_POWER,
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
-def _score_celestial(candidate: BaseStatblock, min_cr: float | None = None) -> float:
-    return score(candidate=candidate, require_types=CreatureType.Celestial, require_cr=min_cr)
+class CelestialPower(PowerWithStandardScoring):
+    def __init__(self, name: str, source: str, power_level: float = MEDIUM_POWER, **score_args):
+        standard_score_args = dict(require_types=CreatureType.Celestial, **score_args)
 
-
-class CelestialPower(Power):
-    def __init__(self, name: str, source: str, **args):
         super().__init__(
             name=name,
             power_type=PowerType.Creature,
-            creature_types=[CreatureType.Celestial],
+            power_level=power_level,
             source=source,
-            **args,
+            score_args=standard_score_args,
         )
 
 
@@ -38,9 +38,6 @@ class _AbsoluteConviction(CelestialPower):
         super().__init__(
             name="Absolute Conviction", source="FoeFoundryOriginal", power_level=LOW_POWER
         )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_celestial(candidate)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         temphp = easy_multiple_of_five(3 * stats.cr)
@@ -58,9 +55,6 @@ class _HealingTouch(CelestialPower):
     def __init__(self):
         super().__init__(name="Healing Touch", source="SRD5.1 Deva")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_celestial(candidate)
-
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(int(ceil(max(5, 2 * stats.cr))))
 
@@ -77,10 +71,11 @@ class _HealingTouch(CelestialPower):
 
 class _RighteousJudgement(CelestialPower):
     def __init__(self):
-        super().__init__(name="Righteous Judgment", source="FoeFoundryOriginal")
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_celestial(candidate)
+        super().__init__(
+            name="Righteous Judgement",
+            source="FoeFoundryOriginal",
+            bonus_damage=DamageType.Radiant,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -102,13 +97,8 @@ class _RighteousJudgement(CelestialPower):
 class _DivineLaw(CelestialPower):
     def __init__(self):
         super().__init__(
-            name="Divine Law",
-            source="FoeFoundryOriginal",
-            power_level=HIGH_POWER,
+            name="Divine Law", source="FoeFoundryOriginal", power_level=HIGH_POWER, require_cr=7
         )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_celestial(candidate, min_cr=7)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -145,9 +135,6 @@ class _DivineMercy(CelestialPower):
             power_level=LOW_POWER,
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_celestial(candidate)
-
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         healing = easy_multiple_of_five(4 * stats.cr)
@@ -170,10 +157,8 @@ class _WordsOfRighteousness(CelestialPower):
         super().__init__(
             name="Words of Righteousness",
             source="FoeFoundryOriginal",
+            bonus_damage=DamageType.Radiant,
         )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_celestial(candidate)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = DieFormula.target_value(
@@ -188,7 +173,7 @@ class _WordsOfRighteousness(CelestialPower):
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} speaks words of utter righteousness. Each creature of {stats.selfref}'s choice within {distance} feet \
-                that can hear it must make a DC {dc} Charisma saving throw. On a failure, the target takes {damage.description} psychic damage and is {dazed.caption}. \
+                that can hear it must make a DC {dc} Charisma saving throw. On a failure, the target takes {damage.description} radiant damage and is {dazed.caption}. \
                 The DM may decide that a creature has advantage or disadvantage on this save based on its actions and alignment. {dazed.description_3rd}",
         )
 

@@ -3,8 +3,11 @@ from __future__ import annotations
 from dataclasses import field
 from typing import List
 
+import numpy as np
 from pydantic.dataclasses import dataclass
 
+from foe_foundry import CreatureType, DamageType, MonsterRole
+from foe_foundry.creature_templates import get_creature_template
 from foe_foundry.powers import Power
 from foe_foundry.statblocks.common import Specialist
 
@@ -39,11 +42,39 @@ class PowerModel:
 
     @staticmethod
     def from_power(power: Power) -> PowerModel:
+        # To give a user-friendly description of the power, we need a stablock as a base reference
+        # this code will create a reasonable base creature using some metadata about the power
+        # that way, the descriptive text will be reasonable instead of generic
+        if power.creature_types:
+            creature_type = power.creature_types[0]
+        else:
+            creature_type = CreatureType.Humanoid
+
+        if power.damage_types:
+            secondary_damage_type = power.damage_types[0]
+        else:
+            secondary_damage_type = None
+
+        if power.roles:
+            role = power.roles[0]
+        else:
+            role = MonsterRole.Bruiser
+
+        def rng() -> np.random.Generator:
+            return np.random.default_rng(seed=20210518)
+
+        # Use the Specialist (CR 4) as our baseline for reasonable power descriptions
         stats = Specialist.copy()
 
-        # TODO - if the power has a creature type, damage type, or role associated with it then apply that here
-        # TODO - call those preconditions out in the power definition
+        # if the power has a secondary damage type, apply that
+        if secondary_damage_type:
+            stats = stats.copy(secondary_damage_type=secondary_damage_type)
+
+        # if the power has any preconditions, be sure to apply those
         stats = power.modify_stats(stats)
+
+        creature_template = get_creature_template(creature_type)
+        stats = creature_template.create(base_stats=stats, rng_factory=rng, role_template=role)
 
         features = power.generate_features(stats)
         feature_models = []
@@ -71,6 +102,9 @@ class PowerModel:
             )
             attack.description
 
+        def to_str(enums):
+            return [str(e) for e in enums] if enums is not None else []
+
         return PowerModel(
             key=power.key,
             name=power.name,
@@ -78,4 +112,7 @@ class PowerModel:
             source=power.source or "UNKNOWN",
             power_level=power.power_level_text,
             features=feature_models,
+            creature_types=to_str(power.creature_types),
+            damage_types=to_str(power.damage_types),
+            roles=to_str(power.roles),
         )
