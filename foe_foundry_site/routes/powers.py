@@ -1,4 +1,3 @@
-from contextlib import asynccontextmanager
 from typing import Annotated
 
 from fastapi import APIRouter, HTTPException, Query
@@ -9,18 +8,8 @@ from foe_foundry.powers import Power
 from ..data.power import PowerModel
 from . import whoosh
 
-
-@asynccontextmanager
-async def lifespan(router: APIRouter):
-    # re-index powers
-    whoosh.clean_index()
-    whoosh.index_powers()
-    yield
-    # cleanup on shutdown
-    whoosh.clean_index()
-
-
-router = APIRouter(prefix="/api/v1/powers", lifespan=lifespan)
+# note - lifespan doesn't work on APIRouter currently
+router = APIRouter(prefix="/api/v1/powers")
 
 
 @router.get("/power/{power_name}")

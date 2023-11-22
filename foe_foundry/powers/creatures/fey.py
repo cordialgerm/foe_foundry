@@ -15,7 +15,14 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..power import (
+    HIGH_POWER,
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 from ..scoring import score
 
 
@@ -37,59 +44,59 @@ def as_cursed_fey(stats: BaseStatblock) -> BaseStatblock:
     return stats
 
 
-class _TeleportingStep(PowerBackport):
-    def __init__(self):
+class FeyPower(PowerWithStandardScoring):
+    def __init__(self, name: str, source: str, power_level: float = MEDIUM_POWER, **score_args):
+        standard_score_args = dict(require_types=CreatureType.Fey, **score_args)
         super().__init__(
-            name="Teleporting Step", power_type=PowerType.Creature, power_level=LOW_POWER
+            name=name,
+            source=source,
+            power_type=PowerType.Creature,
+            power_level=power_level,
+            score_args=standard_score_args,
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fey(candidate)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
+class _FaerieStep(FeyPower):
+    def __init__(self):
+        super().__init__(name="Faerie Step", source="A5ESRD Fey Noble", power_level=LOW_POWER)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = stats.speed.walk
         feature = Feature(
-            name="Teleporting Step",
+            name="Faerie Step",
             action=ActionType.BonusAction,
             description=f"{stats.selfref.capitalize()} teleports up to {distance} feet to an unoccupied space they can see.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _BeguilingAura(PowerBackport):
+class _FaePresence(FeyPower):
     def __init__(self):
-        super().__init__(name="Beguiling Aura", power_type=PowerType.Creature)
+        super().__init__(name="Fae Presence", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fey(candidate)
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        return as_psychic_fey(stats)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
-        stats = as_psychic_fey(stats)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
-            name="Beguiling Aura",
+            name="Fae Presence",
             action=ActionType.Feature,
-            description=f"An enemy of {stats.selfref} who moves within 25 of them for the first time on their turn \
-                or starts their turn there must succeed on a DC {dc} Wisdom saving throw or be **Charmed** by {stats.selfref} until the end of their turn.",
+            description=f"An enemy of {stats.selfref} that starts their turn within 25 feet of {stats.selfref} must succeed on a DC {dc} Wisdom saving throw or be **Charmed** by {stats.selfref} until the end of their turn.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _NegotiateLife(PowerBackport):
+class _BloodContract(FeyPower):
     def __init__(self):
         super().__init__(
-            name="Negotiate Life", power_type=PowerType.Creature, power_level=HIGH_POWER
+            name="Blood Curse", source="FoeFoundryOriginal", power_level=HIGH_POWER
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fey(candidate)
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        return as_cursed_fey(stats)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = as_cursed_fey(stats)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, suggested_die=Die.d8)
         healing = easy_multiple_of_five(
             1.75 * stats.attack.average_damage, min_val=5, max_val=45
@@ -97,27 +104,29 @@ class _NegotiateLife(PowerBackport):
         dc = stats.difficulty_class
 
         feature = Feature(
-            name="Negotiate Life",
+            name="Blood Curse",
             action=ActionType.Action,
             recharge=5,
-            description=f"{stats.selfref.capitalize()} enacts a magical bargain, siphoning energy from its opponents to heal its wounds. {stats.selfref.capitalize()} targets up to three creatures it can see within 60 feet of itself. \
+            description=f"{stats.selfref.capitalize()} curses the blood of its opponents, siphoning their life to heal its its wounds. {stats.selfref.capitalize()} targets up to three creatures it can see within 60 feet of itself. \
                 Each target must make a DC {dc} Constitution saving throw, taking {dmg.description} necrotic damage on a failed save, or half as much damage on a successful one. \
                 {stats.selfref.capitalize()} then regains {healing} hit points.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _FaeCounterspell(PowerBackport):
+class _FaeCounterspell(FeyPower):
     def __init__(self):
         super().__init__(
-            name="Fae Counterspell", power_type=PowerType.Creature, power_level=HIGH_POWER
+            name="Fae Counterspell",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
+            require_stats=Stats.INT,
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fey(candidate, require_stats=Stats.INT)
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        return as_psychic_fey(stats)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = as_psychic_fey(stats)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(0.75 * stats.attack.average_damage, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
         feature = Feature(
@@ -128,17 +137,16 @@ class _FaeCounterspell(PowerBackport):
                 The caster takes {dmg.description} psychic damage and must make a DC {dc} Charisma saving throw. \
                 On a failed save, the spell fails and has no effect, but the casting creature is immune to this effect for 24 hours.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _Awaken(PowerBackport):
+class _Awaken(FeyPower):
     def __init__(self):
-        super().__init__(name="Awaken", power_type=PowerType.Creature, power_level=HIGH_POWER)
+        super().__init__(
+            name="Awaken", source="FoeFoundryOriginal", power_level=HIGH_POWER, require_cr=4
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fey(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.cr >= 5:
             creature = "**Awakened Tree**"
             formula = DieFormula.target_value(1 + stats.cr / 4, force_die=Die.d4)
@@ -153,21 +161,22 @@ class _Awaken(PowerBackport):
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} magically awakens {formula.description} {creature}. They act in initiative immediately after {stats.selfref} and obey its verbal commands (no action required).",
         )
-        return stats, feature
+        return [feature]
 
 
-class _FaeBargain(PowerBackport):
+class _FaeBargain(FeyPower):
     def __init__(self):
         super().__init__(
-            name="Fae Bargain", power_type=PowerType.Creature, power_level=HIGH_POWER
+            name="Fae Bargain",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
+            require_cr=4,
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_fey(candidate)
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        return as_psychic_fey(stats)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = as_psychic_fey(stats)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         uncommon = 10
         rare = 20
         very_rare = 40
@@ -185,21 +194,21 @@ class _FaeBargain(PowerBackport):
                 {stats.selfref.capitalize()} then gains temporary hitpoints based on the rarity of the magical item: {uncommon} for an uncommon item, {rare} for a rare item, {very_rare} for a very rare item, \
                 {legendary} for a legendary item and {artifact} for an artifact. This curse lasts until the fae verbally renounces the bargain, the fae is destroyed, or the curse is removed via *Remove Curse* or similar effect.",
         )
-        return stats, feature
+        return [feature]
 
 
 Awaken: Power = _Awaken()
-BeguilingAura: Power = _BeguilingAura()
+BloodContract: Power = _BloodContract()
 FaeBargain: Power = _FaeBargain()
 FaeCounterspell: Power = _FaeCounterspell()
-TeleportingStep: Power = _TeleportingStep()
-NegotiateLife: Power = _NegotiateLife()
+FaePresence: Power = _FaePresence()
+FaeryStep: Power = _FaerieStep()
 
 FeyPowers: List[Power] = [
     Awaken,
-    BeguilingAura,
+    BloodContract,
     FaeBargain,
     FaeCounterspell,
-    TeleportingStep,
-    NegotiateLife,
+    FaePresence,
+    FaeryStep,
 ]

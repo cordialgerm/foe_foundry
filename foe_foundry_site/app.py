@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import FastAPI
@@ -10,7 +11,18 @@ from fastapi.templating import Jinja2Templates
 
 from .routes import powers, stats
 
-app = FastAPI()
+
+@asynccontextmanager
+async def lifespan(app):
+    # re-index powers
+    powers.whoosh.clean_index()
+    powers.whoosh.index_powers()
+    yield
+    # cleanup on shutdown
+    powers.whoosh.clean_index()
+
+
+app = FastAPI(lifespan=lifespan)
 
 origins = [
     "http://localhost",
