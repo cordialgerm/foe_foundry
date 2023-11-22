@@ -1,1 +1,1 @@
-from .whoosh import PowerLookup, search
+from .whoosh import PowerLookup, clean_index, index_powers, search

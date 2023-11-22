@@ -61,19 +61,28 @@ def test_die_from_expressions(expression: str, expected: str):
 
 
 @pytest.mark.parametrize(
-    ["target", "suggested_die", "force_die", "expected"],
+    ["target", "suggested_die", "force_die", "force_even", "expected"],
     [
-        (5, Die.d4, None, "2d4"),
-        (5, None, None, "2d4"),
-        (6, Die.d6, None, "2d4"),
-        (20, None, Die.d8, "4d8"),
-        (20, None, None, "8d4"),
+        (5, Die.d4, None, False, "2d4"),
+        (5, None, None, False, "2d4"),
+        (6, Die.d6, None, False, "2d4"),
+        (20, None, Die.d8, False, "4d8"),
+        (20, None, None, False, "8d4"),
+        (10, None, Die.d4, True, "4d4"),
+        # would normally be 5d4 but force_even should force it to 6d4
+        (13, None, Die.d4, True, "6d4"),
+        # would normally be 5d4 but force_even should force it to 4d4
+        (12.5, None, Die.d4, True, "4d4"),
     ],
 )
 def test_die_from_target(
-    target: float, suggested_die: Die | None, force_die: Die | None, expected: str
+    target: float,
+    suggested_die: Die | None,
+    force_die: Die | None,
+    force_even: bool,
+    expected: str,
 ):
     die = DieFormula.target_value(
-        target=target, suggested_die=suggested_die, force_die=force_die
+        target=target, suggested_die=suggested_die, force_die=force_die, force_even=force_even
     )
     assert die.dice_formula() == expected

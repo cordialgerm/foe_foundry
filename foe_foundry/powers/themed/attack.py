@@ -164,7 +164,6 @@ class _BurningAttack(PowerBackport):
     ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
         damage_type = stats.secondary_damage_type or DamageType.Fire
         damage = DieFormula.target_value(0.33 * stats.attack.average_damage, force_die=Die.d10)
-
         burning = conditions.Burning(damage, damage_type)
         feature = Feature(
             name="Burning Attack",

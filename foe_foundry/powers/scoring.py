@@ -142,6 +142,7 @@ def score(
     require_skills: Skills | Set[Skills] | List[Skills] | None = None,
     require_no_creature_class: bool = False,
     require_no_other_damage_type: bool = False,
+    require_secondary_damage_type: bool = False,
     require_cr: float | None = None,
     require_shield: bool = False,
     require_callback: StatblockFilter | None = None,
@@ -244,6 +245,9 @@ def score(
             candidate.secondary_damage_type is None
             or candidate.secondary_damage_type in bonus_damage
         )
+
+    if require_secondary_damage_type:
+        t.required(candidate.secondary_damage_type is not None)
 
     # checks against attacks
     t.check_attacks(candidate, attack_names)

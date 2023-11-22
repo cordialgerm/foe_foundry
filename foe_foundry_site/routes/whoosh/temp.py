@@ -1,4 +1,11 @@
-from foe_foundry.powers.creatures import aberration, beast, celestial, construct, dragon
+from foe_foundry.powers.creatures import (
+    aberration,
+    beast,
+    celestial,
+    construct,
+    dragon,
+    elemental,
+)
 
 # TODO - add all powers
 AllPowers = (
@@ -7,4 +14,5 @@ AllPowers = (
     + celestial.CelestialPowers
     + construct.ConstructPowers
     + dragon.DragonPowers
+    + elemental.ElementalPowers
 )

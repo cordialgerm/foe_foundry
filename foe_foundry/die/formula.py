@@ -138,6 +138,7 @@ class DieFormula:
         flat_mod: int = 0,
         min_die_count: int = 0,
         min_val: int = 1,
+        force_even: bool = False,
     ) -> DieFormula:
         if suggested_die is None:
             suggested_die = Die.d6
@@ -154,6 +155,27 @@ class DieFormula:
                     target, suggested_die.increase(), per_die_mod, flat_mod, min_die_count
                 )
             )
+
+        # sometimes it's required to force the number of dice to be even
+        # that way, half of the damage will be a nice number of die to roll
+        if force_even:
+            even_candidates = []
+            for candidate in candidates:
+                if candidate.n_die % 2 == 0:
+                    even_candidates.append(candidate)
+                else:
+
+                    def _even_candidate(mod: int) -> DieFormula:
+                        die_type = candidate.primary_die_type
+                        n = candidate.n_die + mod
+                        return DieFormula.from_dice(
+                            **{die_type: n}, mod=flat_mod + n * per_die_mod
+                        )
+
+                    even_candidates.append(_even_candidate(1))
+                    even_candidates.append(_even_candidate(-1))
+
+            candidates = even_candidates
 
         # we generally want to be a little below the target because the monsters here are pretty strong
         # so we will give +25% to errors where the average is above the target
