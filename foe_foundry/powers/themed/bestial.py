@@ -113,7 +113,7 @@ class _BurrowingAmbush(BestialPower):
             name="Burrowing Ambush",
             source="A5E SRD Ankheg Queen",
             create_date=datetime(2023, 11, 22),
-            attack_names=[natural.Claw],
+            attack_names=natural.Claw,
             require_callback=can_burrow,
         )
 
