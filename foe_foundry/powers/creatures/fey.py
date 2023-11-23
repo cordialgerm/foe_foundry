@@ -208,8 +208,31 @@ class _FaeBargain(FeyPower):
         return [feature]
 
 
+class _DanceTune(FeyPower):
+    def __init__(self):
+        super().__init__(
+            name="Dance Tune",
+            source="A5ESRD Satyr",
+            create_date=datetime(2023, 11, 21),
+            power_level=LOW_POWER,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        feature = Feature(
+            name="Dance Tune",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} plays a dance tune. Each humanoid, fey, or giant within 30 feet that can hear {stats.selfref} must make a DC {dc} Wisdom saving throw. \
+                On a failure, it is magically charmed and must dance until the beginning of {stats.selfref}'s next turn. While dancing, its movement speed is halved, and it has disadvantage on attack rolls. \
+                Fey don't suffer the negative consequences of dancing.",
+        )
+        return [feature]
+
+
 Awaken: Power = _Awaken()
 BloodContract: Power = _BloodContract()
+DanceTune: Power = _DanceTune()
 FaeBargain: Power = _FaeBargain()
 FaeCounterspell: Power = _FaeCounterspell()
 FaePresence: Power = _FaePresence()
