@@ -9,7 +9,7 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from .shared import CunningAction as _CunningAction
 from .shared import NimbleEscape as _NimbleEscape
 
@@ -41,6 +41,22 @@ class AmbusherPower(PowerWithStandardScoring):
         )
 
 
+class _StealthySneak(AmbusherPower):
+    def __init__(self):
+        super().__init__(
+            name="Stealthy Sneak", source="A5E SRD Bugbear", create_date=datetime(2023, 11, 22)
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Stealthy Sneak",
+            description=f"{stats.selfref.capitalize()} moves up to half its speed without provoking opportunity attacks. It can then attempt to hide.",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+        )
+        return [feature]
+
+
 class _DeadlyAmbusher(AmbusherPower):
     def __init__(self):
         super().__init__(name="Deadly Ambusher", source="SRD1.2 Assasin")
@@ -59,9 +75,6 @@ class _DeadlyAmbusher(AmbusherPower):
 CunningAction: Power = _CunningAction(MonsterRole.Ambusher)
 NimbleEscape: Power = _NimbleEscape(MonsterRole.Ambusher)
 DeadlyAmbusher: Power = _DeadlyAmbusher()
+StealthySneak: Power = _StealthySneak()
 
-AmbusherPowers: List[Power] = [
-    CunningAction,
-    DeadlyAmbusher,
-    NimbleEscape,
-]
+AmbusherPowers: List[Power] = [CunningAction, DeadlyAmbusher, NimbleEscape, StealthySneak]

@@ -63,6 +63,10 @@ class _Flyer(PowerBackport):
         return stats, feature
 
 
+# TODO A5E SRD - Owl
+# Flyby. The owl doesn’t provoke
+# opportunity attacks when it flies out of a
+# creature’s reach.
 class _Flyby(PowerBackport):
     def __init__(self):
         super().__init__(name="Flyby", power_type=PowerType.Theme)
@@ -80,6 +84,24 @@ class _Flyby(PowerBackport):
         )
 
         return stats, feature
+
+
+# TODO A5E SRD - Chimera
+# Winged Charge (1/Day). If a creature the
+# chimera can see hits it with a ranged
+# attack, the chimera leaps off the ground
+# and moves up to its fly speed towards the
+# attacker. If within range, the chimera then
+# A5E System Reference Document
+# makes a headbutt attack against the
+# attacker.
+
+# A5E SRD - Vulture
+# Retreat. When the vulture would be hit by
+# a melee attack, the vulture can move 5
+# feet away from the attacker. If this moves
+# the vulture out of the attacker’s reach, the
+# attacker has disadvantage on its attack.
 
 
 Flyer: Power = _Flyer()

@@ -206,6 +206,15 @@ class _ReverseFortune(PowerBackport):
         return stats, feature
 
 
+# TODO A5E SRD - Marilith
+# Reactive Teleport. When the marilith
+# is hit or missed by a ranged
+# attack, it uses Teleport. If it
+# teleports within 5 feet of a
+# creature, it can attack
+# with its tail.
+
+
 Hypnosis: Power = _Hypnosis()
 Impersonation: Power = _Impersonation()
 MirrorImage: Power = _MirrorImage()

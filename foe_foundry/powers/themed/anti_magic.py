@@ -1,7 +1,5 @@
+from datetime import datetime
 from typing import List
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import weapon
 from ...attributes import Stats
@@ -268,9 +266,41 @@ class _TwistedMind(PowerWithStandardScoring):
         return [feature]
 
 
+class _SealOfSilence(PowerWithStandardScoring):
+    def __init__(self):
+        score_args = dict(
+            require_types=[
+                CreatureType.Humanoid,
+                CreatureType.Fey,
+                CreatureType.Fiend,
+                CreatureType.Celestial,
+            ],
+            bonus_roles=[MonsterRole.Defender, MonsterRole.Leader, MonsterRole.Controller],
+            require_cr=7,
+        )
+        super().__init__(
+            name="Seal of Silence",
+            source="A5E SRD Dread Knight Champion",
+            theme="Anti-Magic",
+            create_date=datetime(2023, 11, 22),
+            power_type=PowerType.Theme,
+            score_args=score_args,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Seal of Silence",
+            action=ActionType.Feature,
+            description=f"When {stats.selfref} succeeeds on a saving throw against a spell cast by a creature it can see, the caster of the spell makes a DC {stats.difficulty_class} \
+                Constitution saving throw. On a failure, the caster is magically unable to speak or cast spells with a vocal component until the end of the caster's next turn.",
+        )
+        return [feature]
+
+
 ArcaneHunt: Power = _ArcaneHunt()
 FractalForm: Power = _FractalForm()
 RedirectTeleport: Power = _RedirectTeleport()
+SealOfSilence: Power = _SealOfSilence()
 Spellbreaker: Power = _Spellbreaker()
 SpellEater: Power = _SpellEater()
 SpellStealer: Power = _SpellStealer()
@@ -280,6 +310,7 @@ AntiMagicPowers: List[Power] = [
     ArcaneHunt,
     FractalForm,
     RedirectTeleport,
+    SealOfSilence,
     Spellbreaker,
     SpellEater,
     SpellStealer,

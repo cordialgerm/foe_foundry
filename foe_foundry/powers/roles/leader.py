@@ -120,8 +120,8 @@ class _Intimidate(LeaderPower):
 class _StayInFormation(LeaderPower):
     def __init__(self):
         super().__init__(
-            name="Stay in Formation",
-            source="FoeFoundryOriginal",
+            name="Move Out",
+            source="A5E SRD Bugbear Chief",
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

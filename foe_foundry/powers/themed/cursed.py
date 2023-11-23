@@ -217,6 +217,59 @@ class _VoidSiphon(PowerBackport):
         return stats, feature
 
 
+# TODO A5E SRD - Shadow Demon
+# Replace Shadow. The demon targets a
+# humanoid within 5 feet that is in dim light
+# and can’t see the demon. The target
+# makes a DC 13 Constitution saving throw.
+# On a success, the target is aware of the
+# demon. On a failure, the target is
+# unaware of the demon, the target no
+# longer casts a natural shadow, and the
+# demon magically takes on the shape of
+# the target’s shadow, appearing
+# indistinguishable from a natural shadow
+# except when it attacks. The demon
+# shares the target’s space and moves with
+# the target. When the demon is dealt
+# damage while sharing the target’s space,
+# it takes half the damage (rounded down)
+# and the other half is dealt to the target.
+# The effect ends when the target drops to
+# 0 hit points, the demon no longer shares
+# the target’s space, the demon or target is
+# affected by dispel evil and good or a
+# similar effect, or the demon begins its turn
+# in an area of sunlight.
+
+
+# TODO A5E SRD - Bearded Devil
+# TODO Cursed WOund
+# If the target is a
+# creature other than an undead or
+# construct, it makes a DC 12 Constitution
+# saving throw. On a failure, it receives an
+# infernal wound and takes 5 (1d10)
+# ongoing slashing damage. Each time the
+# devil hits the wounded target with this
+# attack, the ongoing damage increases by
+# 5 (1d10). A creature can spend an action
+# to make a DC 12 Medicine check, ending
+# the ongoing damage on a success. At
+# least 1 hit point of magical healing also
+# ends the ongoing damage.
+
+# TODO A5E SRD - Dread Knight
+# Unholy Aura. The dread knight and allies
+# within 30 feet have advantage on saving
+# throws against spells and other magic
+# effects and against features that turn
+# undead. Other creatures of the dread
+# knight’s choice within 30 feet have
+# disadvantage on saving throws against
+# spells and other magic effects.
+
+
 AuraOfDespair: Power = _AuraOfDespair()
 BestowCurse: Power = _BestowCurse()
 CursedWound: Power = _CursedWound()

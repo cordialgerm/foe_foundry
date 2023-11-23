@@ -265,6 +265,19 @@ class _DrainStrength(PowerBackport):
         return stats, feature
 
 
+# TODO A5E Variant Fallen Angel
+# Consume Life Energy (1/Day). The angel
+# feasts on the departing life energy of a
+# humanoid within 5 feet. The target must
+# have been slain within the last hour. The
+# angel magically gains temporary hit points
+# equal to half the dead creature’s
+# maximum hit points. These hit points last
+# until depleted. Only a spell cast with a
+# 9th-level slot can raise the corpse from
+# the dead.
+
+
 AuraOfDoom: Power = _AuraOfDoom()
 AuraOfAnnihilation: Power = _AuraOfAnnihilation()
 DevourSoul: Power = _DevourSoul()

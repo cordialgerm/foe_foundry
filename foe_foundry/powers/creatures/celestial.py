@@ -191,7 +191,29 @@ class _WordsOfRighteousness(CelestialPower):
         return [feature]
 
 
+class _AweInspiringGaze(CelestialPower):
+    def __init__(self):
+        super().__init__(
+            name="Awe-Inspiring Gaze",
+            source="A5E SRD Planetar",
+            power_level=HIGH_POWER,
+            create_date=datetime(2023, 11, 22),
+            require_cr=7,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        feature = Feature(
+            name="Awe-Inspiring Gaze",
+            action=ActionType.Reaction,
+            description=f"When a creature within 90 feet looks at {stats.selfref} it must make a DC {dc} Wisdom saving throw. \
+                On a failure, it is **Frightened** until the end of its next turn. On a success, it is immune to Awes-Inspiring Gaze for the next 24 hours.",
+        )
+        return [feature]
+
+
 AbsoluteConviction: Power = _AbsoluteConviction()
+AweInspiringGaze: Power = _AweInspiringGaze()
 DivineLaw: Power = _DivineLaw()
 DivineMercy: Power = _DivineMercy()
 HealingTouch: Power = _HealingTouch()
@@ -200,6 +222,7 @@ WordsOfRighteousness: Power = _WordsOfRighteousness()
 
 CelestialPowers: List[Power] = [
     AbsoluteConviction,
+    AweInspiringGaze,
     DivineLaw,
     DivineMercy,
     HealingTouch,

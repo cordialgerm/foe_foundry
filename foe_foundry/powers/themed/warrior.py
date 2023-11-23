@@ -228,6 +228,26 @@ class _PushingAttack(PowerBackport):
         return stats, feature
 
 
+# TODO A5E SRD - Horned Devil
+# Pin (1/Day). When a creature misses the
+# devil with a melee attack, the devil makes
+# a fork attack against that creature. On a
+# hit, the target is impaled by the fork and
+# grappled (escape DC 17). Until this
+# grapple ends, the devil can’t make fork
+# attacks or use Inferno, but the target
+# takes 7 (2d6) piercing damage plus 3
+# A5E System Reference Document
+# (1d6) fire damage at the beginning of
+# each of its turns.
+
+# TODO A5E SRD - Dread Knight
+# Break Magic. The dread knight ends all
+# spell effects created by a 5th-level or
+# lower spell slot on a creature, object, or
+# point it can see within 30 feet.
+
+
 CleavingStrike: Power = _CleavingStrike()
 Disciplined: Power = _Disciplined()
 PackTactics: Power = _PackTactics()

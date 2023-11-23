@@ -166,6 +166,23 @@ class _NightmarishVisions(PowerBackport):
         return stats, feature
 
 
+# TODO A5E SRD - Chain Devil
+# Unneverving Visage
+# Unnerving Mask. When damaged by a
+# creature within 30 feet that can see the
+# devil, the devil momentarily assumes the
+# magical illusory form of one of the
+# attacker’s enemies or loved ones, alive or
+# dead. The illusory figure may speak
+# words that only the attacker can hear. The
+# attacker makes a DC 15 Wisdom saving
+# throw. On a failure, it takes 9 (2d8)
+# psychic damage and is frightened until
+# the end of its next turn.The attacker is
+# then immune to this effect for the next 24
+# hours.
+
+
 Repulsion: Power = _Repulsion()
 TerrifyingVisage: Power = _TerrifyingVisage()
 DreadGaze: Power = _DreadGaze()

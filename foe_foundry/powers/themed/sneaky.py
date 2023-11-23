@@ -140,6 +140,7 @@ class _StayDown(PowerBackport):
         return stats, feature
 
 
+# TODO A5E SRD - Deadeye Shot
 class _ExploitAdvantage(PowerBackport):
     def __init__(self):
         super().__init__(name="Exploit Advantage", power_type=PowerType.Theme)

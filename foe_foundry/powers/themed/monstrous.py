@@ -233,6 +233,7 @@ class _Rampage(PowerBackport):
         return stats, feature
 
 
+# TODO - A5E Basilisk
 class _PetrifyingGaze(PowerBackport):
     def __init__(self):
         super().__init__(
@@ -265,6 +266,33 @@ class _PetrifyingGaze(PowerBackport):
         )
 
         return stats, feature
+
+
+# TODO A5E SRD - Bulette
+# Jaw Clamp (1/Day). When an attacker
+# within 5 feet of the bulette misses it with a
+# melee attack, the bulette makes a bite
+# attack against the attacker. On a hit, the
+# attacker is grappled (escape DC 15). Until
+# this grapple ends, the grappled creature
+# is restrained, and the only attack the
+# bulette can make is a bite against the
+# grappled creature.
+
+
+# TODO A5E SRD - Cockatrice
+# Frenzy (1/Day). When attacked by a
+# creature it can see within 20 feet, the
+# cockatrice moves up to half its Speed and
+# makes a bite attack against that creature.
+
+# TODO A5E SRD - Glabrezu
+# Rend. If grappling the same target with
+# both pincers, the glabrezu rips at the
+# target, ending both grapples and dealing
+# 27 (4d10 + 5) slashing damage. If this
+# damage reduces a creature to 0 hit
+# points, it dies and is torn in half.
 
 
 Constriction: Power = _Constriction()

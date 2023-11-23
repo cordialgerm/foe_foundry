@@ -10,7 +10,7 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock
-from ...utils import summoning
+from ...utils import easy_multiple_of_five, summoning
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
@@ -231,6 +231,26 @@ def _dragons_breath_power(damage_type: DamageType, save_type: str) -> Power:
     return _DragonsBreath()
 
 
+class _VengefulBreath(DraconicPower):
+    def __init__(self):
+        super().__init__(
+            name="Vengeful Breath",
+            source="A5E SRD Behir",
+            create_date=datetime(2023, 11, 22),
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        hp = easy_multiple_of_five(stats.hp.average / 2)
+        feature = Feature(
+            name="Vengeful Breath",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"When {stats.selfref} is hit by a melee attack and is below {hp} hp it immediately recharges or regains a charge on an ability of its choice. \
+                It may also make an attack against the attacker with advantage.",
+        )
+        return [feature]
+
+
 _breath_data = [
     (DamageType.Fire, "Dexterity"),
     (DamageType.Cold, "Constitution"),
@@ -246,6 +266,7 @@ DragonsGreed: Power = _DragonsGreed()
 DraconicMinions: Power = _DraconicMinions()
 FrightfulGaze: Power = _FrightfulGaze()
 TailSwipe: Power = _TailSwipe()
+VengefulBreath: Power = _VengefulBreath()
 WingBuffet: Power = _WingBuffet()
 
 DragonPowers: List[Power] = DragonsBreathPowers + [
@@ -253,5 +274,6 @@ DragonPowers: List[Power] = DragonsBreathPowers + [
     DraconicMinions,
     FrightfulGaze,
     TailSwipe,
+    VengefulBreath,
     WingBuffet,
 ]

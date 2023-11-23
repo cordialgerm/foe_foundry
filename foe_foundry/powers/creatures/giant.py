@@ -80,6 +80,9 @@ class _Boulder(GiantPower):
         return [feature]
 
 
+# TODO A5E SRD - can these runes be linked to A5E SRD?
+
+
 class _CloudRune(GiantPower):
     def __init__(self):
         super().__init__(name="Cloud Rune", source="FoeFoundryOriginal")
@@ -271,6 +274,23 @@ class _Earthshaker(GiantPower):
         return [feature1, feature2]
 
 
+class _BigWindup(GiantPower):
+    def __init__(self):
+        super().__init__(
+            name="Big Windup", source="A5E SRD Cyclops", create_date=datetime(2023, 11, 22)
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Big Windup",
+            action=ActionType.Reaction,
+            description=f"Whenever a creature hits {stats.selfref} with a melee attack, {stats.selfref} readies a powerful strike against its attacker. \
+                {stats.selfref} has advantage on the next club attack it makes against the attacker before the end of its next turn.",
+        )
+        return [feature]
+
+
+BigWindup: Power = _BigWindup()
 Boulder: Power = _Boulder()
 CloudRune: Power = _CloudRune()
 Earthshaker: Power = _Earthshaker()
@@ -282,6 +302,7 @@ StormRune: Power = _StormRune()
 
 
 GiantPowers: List[Power] = [
+    BigWindup,
     Boulder,
     CloudRune,
     Earthshaker,

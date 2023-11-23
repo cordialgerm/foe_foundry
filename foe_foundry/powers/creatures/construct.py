@@ -10,6 +10,7 @@ from ...damage import Attack, AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...size import Size
 from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
@@ -240,10 +241,55 @@ class _SpellStoring(ConstructPower):
         return [feature]
 
 
+class _Overclock(ConstructPower):
+    def __init__(self):
+        super().__init__(
+            name="Overclock",
+            source="A5E SRD Clockwork Sentinel",
+            create_date=datetime(2023, 11, 21),
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Overclock",
+            recharge=5,
+            action=ActionType.BonusAction,
+            description=f"{stats.selfref.capitalize()} takes the Dash action.",
+        )
+        return [feature]
+
+
+class _Crush(ConstructPower):
+    def __init__(self):
+        super().__init__(
+            name="Crush",
+            source="A5E SRD Crusher",
+            create_date=datetime(2023, 11, 21),
+            require_size=Size.Huge,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        dmg = DieFormula.target_value(1.8 * stats.attack.average_damage, suggested_die=Die.d8)
+        feature = Feature(
+            name="Crush",
+            action=ActionType.Action,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} moves up to its Speed in a straight line. While doing so, it can attempt to enter Large or smaller creatures' spaces. \
+                Whenever {stats.selfref} attempts to enter a creature's space, the creature makes a DC {dc} Dexterity or Strength saving throw (the creature's choice). \
+                If the creature succeeds at a Strength saving throw, {stats.selfref}'s movement ends for the turn. If the creature succeeds at a Dexterity saving throw, the creature may use its reaction, if available, to move up to half its Speed without provoking opportunity attacks. \
+                The first time on {stats.selfref}'s turn that it enters a creature's space, the creature is knocked **Prone** and takes {dmg.description} bludgeoning damage. \
+                A creature is prone while in {stats.selfref}'s space.",
+        )
+        return [feature]
+
+
 BoundProtector: Power = _BoundProtector()
+Crush: Power = _Crush()
 ConstructedGuardian: Power = _ConstructedGuardian()
 ExplosiveCore: Power = _ExplosiveCore()
 ImmutableForm: Power = _ImmutableForm()
+Overclock: Power = _Overclock()
 ProtectivePlating: Power = _ProtectivePlating()
 Retrieval: Power = _Retrieval()
 Smother: Power = _Smother()
@@ -251,9 +297,11 @@ SpellStoring: Power = _SpellStoring()
 
 ConstructPowers: List[Power] = [
     BoundProtector,
+    Crush,
     ConstructedGuardian,
     ExplosiveCore,
     ImmutableForm,
+    Overclock,
     ProtectivePlating,
     Retrieval,
     Smother,

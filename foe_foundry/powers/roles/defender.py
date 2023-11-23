@@ -93,7 +93,7 @@ class _SpellReflection(DefenderPower):
     def __init__(self):
         super().__init__(
             name="Spell Reflection",
-            source="FoeFoundryOriginal",
+            source="A5E SRD Demilich Mastermind",
             bonus_types={
                 CreatureType.Aberration,
                 CreatureType.Dragon,

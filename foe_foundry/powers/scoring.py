@@ -138,6 +138,7 @@ def score(
     require_size: Size | None = None,
     require_speed: int | None = None,
     require_flying: bool = False,
+    require_swimming: bool = False,
     require_attack_types: AttackType | Set[AttackType] | List[AttackType] | None = None,
     require_skills: Skills | Set[Skills] | List[Skills] | None = None,
     require_no_creature_class: bool = False,
@@ -153,6 +154,7 @@ def score(
     bonus_size: Size | None = None,
     bonus_speed: int | None = None,
     bonus_flying: bool = False,
+    bonus_swimming: bool = False,
     bonus_attack_types: AttackType | Set[AttackType] | List[AttackType] | None = None,
     bonus_skills: Skills | Set[Skills] | List[Skills] | None = None,
     bonus_cr: float | None = None,
@@ -214,6 +216,9 @@ def score(
 
     if require_flying:
         t.required((candidate.speed.fly or 0) > 0)
+
+    if require_swimming:
+        t.required((candidate.speed.swim or 0) > 0)
 
     if require_attack_types:
         t.required(candidate.attack_type in require_attack_types)
@@ -277,6 +282,9 @@ def score(
 
     if bonus_flying:
         t.bonus((candidate.speed.fly or 0) > 0)
+
+    if bonus_swimming:
+        t.bonus((candidate.speed.swim or 0) > 0)
 
     if bonus_cr:
         t.bonus(candidate.cr >= bonus_cr)
