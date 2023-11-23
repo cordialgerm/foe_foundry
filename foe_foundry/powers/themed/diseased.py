@@ -36,7 +36,6 @@ def _score(candidate: BaseStatblock) -> float:
             CreatureType.Fiend,
         ],
         bonus_damage=DamageType.Poison,
-        require_no_other_damage_type=True,
         require_cr=2,
         attack_names=[
             "-",

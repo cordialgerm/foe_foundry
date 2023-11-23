@@ -25,7 +25,7 @@ def score_charming(candidate: BaseStatblock) -> float:
         bonus_skills=[Skills.Deception, Skills.Persuasion],
         attack_names=spell.Gaze,
         bonus_damage=DamageType.Psychic,
-        require_no_other_damage_type=True,
+        require_damage_exact_match=True,
     )
 
 

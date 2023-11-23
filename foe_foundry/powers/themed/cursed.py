@@ -24,7 +24,7 @@ def _score_cursed(candidate: BaseStatblock) -> float:
         candidate=candidate,
         require_types=[CreatureType.Fey, CreatureType.Fiend, CreatureType.Undead],
         bonus_damage=DamageType.Necrotic,
-        require_no_other_damage_type=True,
+        require_damage_exact_match=True,
         bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
     )
 

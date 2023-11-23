@@ -23,7 +23,7 @@ def _score(candidate: BaseStatblock) -> float:
         candidate=candidate,
         require_types=[CreatureType.Plant, CreatureType.Aberration, CreatureType.Monstrosity],
         bonus_damage=DamageType.Poison,
-        require_no_other_damage_type=True,
+        require_damage_exact_match=True,
         attack_names=[
             "-",
             weapon.Daggers,

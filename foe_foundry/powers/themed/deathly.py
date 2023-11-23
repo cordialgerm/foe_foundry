@@ -38,7 +38,7 @@ def score_deathly(
         require_types=creature_types,
         require_callback=humanoid_is_necromancer if caster_or_undead_only else None,
         require_damage=DamageType.Necrotic,
-        require_no_other_damage_type=True,
+        require_damage_exact_match=True,
     )
 
 

@@ -31,7 +31,7 @@ def score_storm(candidate: BaseStatblock, min_cr: float | None = None) -> float:
             CreatureType.Humanoid,
         },
         require_damage={DamageType.Lightning, DamageType.Thunder},
-        require_no_other_damage_type=True,
+        require_damage_exact_match=True,
         require_cr=min_cr,
     )
 

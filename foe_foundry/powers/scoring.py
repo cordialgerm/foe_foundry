@@ -141,7 +141,7 @@ def score(
     require_attack_types: AttackType | Set[AttackType] | List[AttackType] | None = None,
     require_skills: Skills | Set[Skills] | List[Skills] | None = None,
     require_no_creature_class: bool = False,
-    require_no_other_damage_type: bool = False,
+    require_damage_exact_match: bool = False,
     require_secondary_damage_type: bool = False,
     require_cr: float | None = None,
     require_shield: bool = False,
@@ -193,11 +193,6 @@ def score(
     bonus_shield = t.optional_flag(require_shield)
     bonus_callback = t.optional_val(bonus_callback, require_callback)
 
-    # special handling - this requirement only makes sense if bonus_damage was specified
-    require_no_other_damage_type = t.require_flag(
-        require_no_other_damage_type and len(bonus_damage) > 0
-    )
-
     # checks against required conditions
     if require_roles:
         t.required(candidate.role in require_roles)
@@ -240,10 +235,11 @@ def score(
     if require_callback is not None:
         t.required(require_callback(candidate))
 
-    if require_no_other_damage_type:
+    if require_damage_exact_match:
+        resolved_damage_types = require_damage | bonus_damage
         t.required(
-            candidate.secondary_damage_type is None
-            or candidate.secondary_damage_type in bonus_damage
+            candidate.primary_damage_type in resolved_damage_types
+            or candidate.secondary_damage_type in resolved_damage_types
         )
 
     if require_secondary_damage_type:

@@ -100,7 +100,7 @@ class _EldritchKnight(PowerBackport):
             bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Bruiser],
             require_stats=[Stats.INT, Stats.STR],
             bonus_damage=self.elements,
-            require_no_other_damage_type=True,
+            require_damage_exact_match=True,
             require_cr=3,
             attack_names=[
                 "-",
