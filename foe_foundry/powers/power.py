@@ -29,6 +29,7 @@ class Power(ABC):
         damage_types: List[DamageType] | None = None,
         suggested_cr: float | None = None,
         create_date: datetime | None = None,
+        theme: str | None = None,
     ):
         self.name = name
         self.power_type = power_type
@@ -39,6 +40,7 @@ class Power(ABC):
         self.damage_types = damage_types
         self.suggested_cr = suggested_cr
         self.create_date = create_date
+        self.theme = theme
 
         if self.power_level == HIGH_POWER:
             self.power_level_text = "High Power"
@@ -83,6 +85,7 @@ class PowerWithStandardScoring(Power):
         source: str | None = None,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        theme: str | None = None,
         score_args: Dict[str, Any] | None = None,
     ):
         def resolve_arg_list(arg: str) -> List | None:
@@ -116,6 +119,7 @@ class PowerWithStandardScoring(Power):
             source=source,
             power_level=power_level,
             create_date=create_date,
+            theme=theme,
             roles=roles,
             creature_types=creature_types,
             damage_types=damage_types,

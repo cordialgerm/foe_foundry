@@ -29,6 +29,7 @@ class UndeadPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
+            theme="Undead",
             score_args=standard_score_args,
         )
 

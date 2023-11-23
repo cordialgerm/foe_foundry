@@ -45,6 +45,7 @@ class LeaderPower(PowerWithStandardScoring):
             power_level=power_level,
             source=source,
             create_date=create_date,
+            theme="Leader",
             score_args=standard_score_args,
         )
 

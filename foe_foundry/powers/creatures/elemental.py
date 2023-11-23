@@ -44,6 +44,7 @@ class ElementalPower(PowerWithStandardScoring):
             power_level=power_level,
             source=source,
             create_date=create_date,
+            theme="Elemental",
             score_args=standard_score_args,
         )
 
@@ -105,7 +106,7 @@ def elemental_affinity_power(damage_type: DamageType) -> Power:
             descr = "immunity" if upgrade_to_immunity else "resistance"
 
             feature = Feature(
-                name=f"{damage_type} Affinity",
+                name=f"{damage_type.capitalize()} Affinity",
                 description=f"{stats.selfref.capitalize()} gains {descr} to {damage_type} damage. It gains advantage on its attacks while it is in an environment where sources of {damage_type} damage are prevalant.",
                 action=ActionType.Feature,
             )

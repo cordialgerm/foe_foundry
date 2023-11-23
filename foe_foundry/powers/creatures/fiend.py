@@ -39,6 +39,7 @@ class FiendishPower(PowerWithStandardScoring):
             power_type=PowerType.Creature,
             power_level=power_level,
             create_date=create_date,
+            theme="Fiend",
             score_args=standard_score_args,
         )
 

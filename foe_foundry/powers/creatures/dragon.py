@@ -30,6 +30,7 @@ class DraconicPower(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             create_date=create_date,
+            theme="Dragon",
             score_args=standard_score_args,
         )
 

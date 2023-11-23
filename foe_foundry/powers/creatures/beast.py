@@ -38,6 +38,7 @@ class BeastPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
+            theme="Beast",
             score_args=standard_score_args,
         )
 

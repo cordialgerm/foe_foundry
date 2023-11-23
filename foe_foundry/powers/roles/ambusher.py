@@ -36,6 +36,7 @@ class AmbusherPower(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             create_date=create_date,
+            theme="Ambusher",
             score_args=standard_score_args,
         )
 

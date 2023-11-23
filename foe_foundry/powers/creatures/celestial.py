@@ -35,6 +35,7 @@ class CelestialPower(PowerWithStandardScoring):
             power_level=power_level,
             create_date=create_date,
             source=source,
+            theme="Celestial",
             score_args=standard_score_args,
         )
 

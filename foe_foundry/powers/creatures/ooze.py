@@ -34,6 +34,7 @@ class OozePower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
+            theme="Ooze",
             score_args=standard_score_args,
         )
 

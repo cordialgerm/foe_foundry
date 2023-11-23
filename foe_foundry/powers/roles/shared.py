@@ -15,6 +15,7 @@ def NimbleEscape(role: MonsterRole):
                 source="SRD1.2 Goblin",
                 power_type=PowerType.Role,
                 score_args=dict(require_roles=role),
+                theme=role.name.capitalize(),
             )
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -35,6 +36,7 @@ def CunningAction(role: MonsterRole):
                 name=f"Cunning Action - {role.name}",
                 source="SRD1.2 Sply",
                 power_type=PowerType.Role,
+                theme=role.name.capitalize(),
                 score_args=dict(require_roles=role),
             )
 

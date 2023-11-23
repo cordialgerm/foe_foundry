@@ -37,6 +37,7 @@ class BruiserPower(PowerWithStandardScoring):
             power_level=power_level,
             source=source,
             create_date=create_date,
+            theme="Bruiser",
             score_args=standard_score_args,
         )
 

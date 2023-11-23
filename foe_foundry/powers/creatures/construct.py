@@ -37,6 +37,7 @@ class ConstructPower(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             create_date=create_date,
+            theme="Construct",
             score_args=standard_score_args,
         )
 
@@ -55,7 +56,7 @@ class _ConstructedGuardian(ConstructPower):
         feature = Feature(
             name="Constructed Guardian",
             action=ActionType.Feature,
-            description=f"If {stats.selfref.capitalize()} is within 10 feet of an objective (creature, location, or object) that was designed to guard, it has advantage on attack rolls.",
+            description=f"If {stats.selfref.capitalize()} is within 10 feet of an objective (creature, location, or object) that it was designed to guard, it has advantage on attack rolls.",
         )
         return [feature]
 

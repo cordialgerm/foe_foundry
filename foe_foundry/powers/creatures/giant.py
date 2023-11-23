@@ -38,6 +38,7 @@ class GiantPower(PowerWithStandardScoring):
             power_level=power_level,
             source=source,
             create_date=create_date,
+            theme="Giant",
             score_args=standard_score_args,
         )
 

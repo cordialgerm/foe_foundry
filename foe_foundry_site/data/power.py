@@ -29,6 +29,7 @@ class PowerModel:
     name: str
     power_type: str
     source: str
+    theme: str
     power_level: str
     features: List[FeatureModel]
     creature_types: List[str] = field(default_factory=list)
@@ -115,6 +116,7 @@ class PowerModel:
         return PowerModel(
             key=power.key,
             name=power.name,
+            theme=power.theme or "UNKNOWN",
             power_type=power.power_type.name,
             source=power.source or "UNKNOWN",
             power_level=power.power_level_text,
