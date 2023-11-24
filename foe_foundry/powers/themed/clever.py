@@ -1,110 +1,98 @@
+from datetime import datetime
 from math import ceil
-from typing import List, Tuple
-
-from numpy.random import Generator
+from typing import List
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType
 from ...die import DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
-from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
-from ...utils import choose_enum, easy_multiple_of_five
-from ..power import Power, PowerBackport, PowerType
-from ..scoring import score
+from ...statblocks import BaseStatblock
+from ...utils import easy_multiple_of_five
+from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_clever(candidate: BaseStatblock, **args) -> float:
-    return score(
-        candidate=candidate,
-        require_types=CreatureType.all_but(CreatureType.Beast),
-        require_stats=[Stats.INT, Stats.WIS, Stats.CHA],
-        bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
-        stat_threshold=16,
-        **args,
-    )
-
-
-class _Keen(PowerBackport):
-    """This creature has a keen mind"""
-
-    def __init__(self):
-        super().__init__(name="Keen", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_clever(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | None]:
-        # give the monster reasonable mental stats
-
-        n = min(int(ceil(stats.cr / 5)), 3)
-
-        skills = choose_enum(
-            rng,
-            [
-                Skills.Persuasion,
-                Skills.Deception,
-                Skills.Insight,
-                Skills.Intimidation,
-                Skills.Perception,
-            ],
-            size=n,
-        ) + [Skills.Investigation]
-        saves = choose_enum(rng, [Stats.WIS, Stats.INT, Stats.CHA], size=n)
-
-        new_attrs = (
-            stats.attributes.boost(Stats.CHA, 2)
-            .boost(Stats.INT, 2)
-            .boost(Stats.WIS, 2)
-            .grant_proficiency_or_expertise(*skills)
-            .grant_save_proficiency(*saves)
+class CleverPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        standard_score_args = dict(
+            require_types=CreatureType.all_but(CreatureType.Beast),
+            require_stats=[Stats.INT, Stats.WIS, Stats.CHA],
+            bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
+            stat_threshold=16,
+            **score_args,
         )
-        stats = stats.copy(attributes=new_attrs)
+        super().__init__(
+            name=name,
+            power_level=power_level,
+            power_type=PowerType.Theme,
+            source=source,
+            theme="clever",
+            create_date=create_date,
+            score_args=standard_score_args,
+        )
+
+
+class _IdentifyWeakness(CleverPower):
+    def __init__(self):
+        super().__init__(
+            name="Identify Weakness", source="FoeFoundryOriginal", power_level=LOW_POWER
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Identify Weakness",
             action=ActionType.Reaction,
             description=f"When an ally that {stats.selfref} can see misses an attack against a hostile target, {stats.selfref} can make an Investigation check with a DC equal to the hostile target's AC. \
                 On a success, the attack hits instead of missing.",
         )
-        return stats, feature
+        return [feature]
 
-
-class _MarkTheTarget(PowerBackport):
-    """When this creature hits a target with a ranged attack, allies of this creature who can see the target
-    have advantage on attack rolls against the target until the start of this creature's next turn.
-    """
-
-    def __init__(self):
-        super().__init__(name="Mark the Target", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_clever(candidate, require_attack_types=AttackType.AllRanged())
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        feature = Feature(
-            name="Mark the Target",
-            description=f"Immediately after hitting a target, {stats.selfref} can mark the target. All allies of {stats.selfref} who can see the target have advantage on attack rolls against the target until the start of this creature's next turn.",
-            uses=3,
-            action=ActionType.BonusAction,
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        new_attrs = (
+            stats.attributes.boost(Stats.CHA, 2)
+            .boost(Stats.INT, 2)
+            .boost(Stats.WIS, 2)
+            .grant_proficiency_or_expertise(Skills.Investigation, Skills.Perception)
+            .grant_save_proficiency(Stats.INT)
         )
-        return stats, feature
+        stats = stats.copy(attributes=new_attrs)
+        return stats
 
 
-class _UnsettlingWords(PowerBackport):
+class _FaerieMark(CleverPower):
     def __init__(self):
-        super().__init__(name="Unsettling Words", power_type=PowerType.Theme)
+        super().__init__(
+            name="Faerie Mark",
+            source="SRD5.1 Faerie Fire",
+            create_date=datetime(2023, 11, 24),
+            require_attack_types=AttackType.AllRanged(),
+            bonus_types=CreatureType.Fey,
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_clever(candidate)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Faerie Mark",
+            uses=1,
+            action=ActionType.BonusAction,
+            description=f"Immediately after hitting a target with a ranged attack, {stats.selfref} casts *Faerie Fire* centered on the target.",
+        )
+        return [feature]
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+
+class _UnsettlingWords(CleverPower):
+    def __init__(self):
+        super().__init__(name="Unsettling Words", source="FoeFoundryOriginal")
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         uses = ceil(stats.cr / 7)
         distance = easy_multiple_of_five(5 + 1.25 * stats.cr, min_val=10, max_val=30)
 
@@ -122,13 +110,12 @@ class _UnsettlingWords(PowerBackport):
             description=f"Whenever a hostile creature within {distance} ft that can hear {stats.selfref} makes a d20 ability check, \
                 {stats.selfref} can roll {die} and subtract the result from the total, potentially turning a success into a failure",
         )
+        return [feature]
 
-        return stats, feature
 
-
-Keen: Power = _Keen()
-MarkTheTarget: Power = _MarkTheTarget()
+IdentifyWeaknes: Power = _IdentifyWeakness()
+FaerieMark: Power = _FaerieMark()
 UnsettlingWords: Power = _UnsettlingWords()
 
 
-CleverPowers: List[Power] = [Keen, MarkTheTarget, UnsettlingWords]
+CleverPowers: List[Power] = [IdentifyWeaknes, FaerieMark, UnsettlingWords]

@@ -9,6 +9,9 @@ from foe_foundry.powers.themed import (
     chaotic,
     charm,
     classes,
+    clever,
+    cruel,
+    cursed,
 )
 
 # TODO - add all powers
@@ -23,4 +26,7 @@ AllPowers = (
     + chaotic.ChaoticPowers
     + charm.CharmPowers
     + classes.ClassPowers
+    + clever.CleverPowers
+    + cruel.CruelPowers
+    + cursed.CursedPowers
 )
