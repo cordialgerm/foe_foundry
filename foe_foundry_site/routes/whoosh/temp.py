@@ -12,6 +12,8 @@ from foe_foundry.powers.themed import (
     clever,
     cruel,
     cursed,
+    deathly,
+    diseased,
 )
 
 # TODO - add all powers
@@ -29,4 +31,6 @@ AllPowers = (
     + clever.CleverPowers
     + cruel.CruelPowers
     + cursed.CursedPowers
+    + deathly.DeathlyPowers
+    + diseased.DiseasedPowers
 )

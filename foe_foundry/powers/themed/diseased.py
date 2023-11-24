@@ -1,64 +1,61 @@
 import math
-from math import ceil, floor
-from typing import List, Tuple
+from datetime import datetime
+from typing import List
 
-import numpy as np
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
-from ...attack_template import natural, spell, weapon
-from ...attributes import Skills, Stats
+from ...attack_template import natural, spell
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, conditions
+from ...damage import DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers import HIGH_POWER, PowerType
-from ...role_types import MonsterRole
-from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
-from ...utils import easy_multiple_of_five
-from ..power import Power, PowerType
-from ..scoring import score
-
-# there's a score multiplier because each of these powers has N different variants (one for each disease)
-# so we want to reduce the overall likelyhood of any individual disease power being selected
-SCORE_MULTIPLIER = 0.75
+from ...statblocks import BaseStatblock
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def _score(candidate: BaseStatblock) -> float:
-    return SCORE_MULTIPLIER * score(
-        candidate=candidate,
-        require_types=[
-            CreatureType.Plant,
-            CreatureType.Monstrosity,
-            CreatureType.Undead,
-            CreatureType.Fiend,
-        ],
-        bonus_damage=DamageType.Poison,
-        require_cr=2,
-        attack_names=[
-            "-",
-            natural.Bite,
-            natural.Claw,
-            natural.Stinger,
-            natural.Tentacle,
-            natural.Thrash,
-            natural.Spit,
-            spell.Poisonbolt,
-        ],
-    )
+class DiseasePower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        super().__init__(
+            name=name,
+            power_type=PowerType.Theme,
+            source="FoeFoundryOriginal",
+            create_date=datetime(2023, 11, 20),
+            theme="disease",
+            power_level=power_level,
+            score_args=dict(
+                require_types=[
+                    CreatureType.Plant,
+                    CreatureType.Monstrosity,
+                    CreatureType.Undead,
+                    CreatureType.Fiend,
+                ],
+                bonus_damage=DamageType.Poison,
+                require_cr=2,
+                attack_names=[
+                    "-",
+                    natural.Bite,
+                    natural.Claw,
+                    natural.Stinger,
+                    natural.Tentacle,
+                    natural.Thrash,
+                    natural.Spit,
+                    spell.Poisonbolt,
+                ],
+                # there's a score multiplier because each of these powers has N different variants (one for each disease)
+                # so we want to reduce the overall likelyhood of any individual disease power being selected
+                score_multiplier=0.75,
+                **score_args,
+            ),
+        )
 
 
 def _RottenGrasp(disease: conditions.CustomCondition) -> Power:
-    class _RottenGraspInner(Power):
+    class _RottenGraspInner(DiseasePower):
         def __init__(self):
-            super().__init__(
-                name="Rotten Grasp", power_type=PowerType.Theme, power_level=HIGH_POWER
-            )
-
-        def score(self, candidate: BaseStatblock) -> float:
-            return _score(candidate)
+            super().__init__(name="Rotten Grasp", power_level=HIGH_POWER)
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class
@@ -81,14 +78,9 @@ def _RottenGrasp(disease: conditions.CustomCondition) -> Power:
 
 
 def _ToxicBreath(disease: conditions.CustomCondition) -> Power:
-    class _ToxicBreathInner(Power):
+    class _ToxicBreathInner(DiseasePower):
         def __init__(self):
-            super().__init__(
-                name="Toxic Breath", power_type=PowerType.Theme, power_level=HIGH_POWER
-            )
-
-        def score(self, candidate: BaseStatblock) -> float:
-            return _score(candidate)
+            super().__init__(name="Toxic Breath", power_level=HIGH_POWER)
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class

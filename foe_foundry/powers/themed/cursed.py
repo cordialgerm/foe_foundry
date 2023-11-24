@@ -239,7 +239,6 @@ class _UnholyAura(CursedPower):
             source="A5E SRD Dread Knight",
             create_date=datetime(2023, 11, 24),
             require_attack_types=AttackType.AllMelee(),
-            bonus_role=MonsterRole.Leader,
             require_cr=7,
         )
 
