@@ -12,6 +12,7 @@ from ..power import (
     HIGH_POWER,
     LOW_POWER,
     MEDIUM_POWER,
+    RIBBON_POWER,
     Power,
     PowerType,
     PowerWithStandardScoring,
@@ -114,7 +115,7 @@ class _Split(OozePower):
 class _Transparent(OozePower):
     def __init__(self):
         super().__init__(
-            name="Transparent", source="SRD5.1 Gelatinous Cube", power_level=LOW_POWER
+            name="Transparent", source="SRD5.1 Gelatinous Cube", power_level=RIBBON_POWER
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

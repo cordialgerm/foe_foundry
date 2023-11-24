@@ -9,7 +9,7 @@ from ...damage import DamageType
 from ...die import DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import LOW_POWER, RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
 
 
 class _Aquatic(PowerWithStandardScoring):
@@ -25,7 +25,7 @@ class _Aquatic(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="SRD5.1 Merfolk",
             theme="Aquatic",
-            power_level=LOW_POWER,
+            power_level=RIBBON_POWER,
             score_args=score_args,
         )
 
@@ -53,7 +53,7 @@ class _InkCloud(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="SRD5.1 Octopus",
             theme="Aquatic",
-            power_level=LOW_POWER,
+            power_level=RIBBON_POWER,
             score_args=score_args,
         )
 

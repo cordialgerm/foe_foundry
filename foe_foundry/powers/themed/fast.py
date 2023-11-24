@@ -1,34 +1,46 @@
-from typing import List, Set, Tuple
+from datetime import datetime
+from typing import List
 
-import numpy as np
-from numpy.random import Generator
-
-from ...attack_template import natural, spell, weapon
 from ...attributes import Skills, Stats
-from ...creature_types import CreatureType
-from ...damage import DamageType, conditions
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerBackport, PowerType
+from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from ..scoring import score
 
 
-class _Evasion(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Poisoning Attack", power_type=PowerType.Theme)
+class FastPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        super().__init__(
+            name=name,
+            source=source,
+            create_date=create_date,
+            power_level=power_level,
+            power_type=PowerType.Theme,
+            theme="fast",
+            score_args=score_args,
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
+
+class _Evasion(FastPower):
+    def __init__(self):
+        super().__init__(
+            name="Evasion",
+            source="SRD5.1 Assassin",
+            power_level=LOW_POWER,
             require_stats=Stats.DEX,
             stat_threshold=14,
             bonus_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Evasion",
             action=ActionType.Feature,
@@ -36,13 +48,12 @@ class _Evasion(PowerBackport):
             to take only half damage, {stats.roleref} instead only takes half damage if it succeeds on the saving throw, \
             and only half damage if it fails.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _NimbleReaction(PowerBackport):
+class _NimbleReaction(FastPower):
     def __init__(self):
-        super().__init__(name="Nimble Reaction", power_type=PowerType.Theme)
+        super().__init__(name="Nimble Reaction", source="FoeFoundryOriginal")
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(
@@ -53,10 +64,7 @@ class _NimbleReaction(PowerBackport):
             stat_threshold=14,
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Acrobatics)
-        stats = stats.copy(attributes=new_attrs)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Nimble Reaction",
             action=ActionType.Reaction,
@@ -64,8 +72,12 @@ class _NimbleReaction(PowerBackport):
                 If this movement leaves {stats.selfref} outside the attacking creature's reach, then the attack misses.",
             recharge=4,
         )
+        return [feature]
 
-        return stats, feature
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Acrobatics)
+        stats = stats.copy(attributes=new_attrs)
+        return stats
 
 
 Evasion: Power = _Evasion()

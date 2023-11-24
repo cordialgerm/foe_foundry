@@ -16,6 +16,7 @@ from ..power import (
     HIGH_POWER,
     LOW_POWER,
     MEDIUM_POWER,
+    RIBBON_POWER,
     Power,
     PowerType,
     PowerWithStandardScoring,
@@ -87,7 +88,7 @@ class _ProtectivePlating(ConstructPower):
 class _ImmutableForm(ConstructPower):
     def __init__(self):
         super().__init__(
-            name="Immutable Form", source="SRD 5.1 Stone Golem", power_level=LOW_POWER
+            name="Immutable Form", source="SRD 5.1 Stone Golem", power_level=RIBBON_POWER
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

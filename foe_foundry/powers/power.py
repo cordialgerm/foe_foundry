@@ -12,6 +12,7 @@ from ..statblocks import BaseStatblock
 from .power_type import PowerType
 from .scoring import score as standard_score
 
+RIBBON_POWER = 0.25
 LOW_POWER = 0.5
 MEDIUM_POWER = 1
 HIGH_POWER = 1.5
@@ -48,6 +49,8 @@ class Power(ABC):
             self.power_level_text = "Medium Power"
         elif self.power_level == LOW_POWER:
             self.power_level_text = "Low Power"
+        elif self.power_level == RIBBON_POWER:
+            self.power_level_text = "Ribbon"
         else:
             raise ValueError(f"Invalid power level {self.power_level}")
 

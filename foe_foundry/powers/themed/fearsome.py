@@ -1,62 +1,79 @@
-from math import ceil
-from typing import List, Tuple
+from datetime import datetime
+from typing import List
 
-from numpy.random import Generator
-
-from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
-from ...role_types import MonsterRole
-from ...statblocks import BaseStatblock, MonsterDials
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ...statblocks import BaseStatblock
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def _score_fearsome(
-    candidate: BaseStatblock, min_cr: float = 2, supernatural: bool = True
-) -> float:
-    creature_types = {CreatureType.Dragon, CreatureType.Fiend, CreatureType.Monstrosity}
-    if not supernatural:
-        creature_types |= {CreatureType.Beast}
+class FearsomePower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        super().__init__(
+            name=name,
+            source=source,
+            power_type=PowerType.Theme,
+            theme="fearsome",
+            create_date=create_date,
+            power_level=power_level,
+            score_args=dict(
+                require_types={
+                    CreatureType.Dragon,
+                    CreatureType.Fiend,
+                    CreatureType.Monstrosity,
+                    CreatureType.Beast,
+                },
+                require_cr=1,
+                bonus_cr=7,
+                **score_args,
+            ),
+        )
 
-    return score(
-        candidate=candidate, require_types=creature_types, require_cr=min_cr, bonus_cr=7
-    )
+
+class HorrifyingPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        super().__init__(
+            name=name,
+            source=source,
+            power_type=PowerType.Theme,
+            theme="fearsome",
+            create_date=create_date,
+            power_level=power_level,
+            score_args=dict(
+                require_types=[CreatureType.Aberration, CreatureType.Undead],
+                require_cr=1,
+                bonus_cr=7,
+                bonus_damage=DamageType.Psychic,
+                **score_args,
+            ),
+        )
 
 
-def _score_horrifying(candidate: BaseStatblock, min_cr: float = 1) -> float:
-    return score(
-        candidate=candidate,
-        require_types=[CreatureType.Aberration, CreatureType.Undead],
-        require_cr=min_cr,
-        bonus_cr=7,
-        bonus_damage=DamageType.Psychic,
-    )
-
-
-class _Repulsion(PowerBackport):
+class _FearsomeRoar(FearsomePower):
     def __init__(self):
-        super().__init__(name="Repulsion", power_type=PowerType.Theme)
+        super().__init__(name="Fearsome Roar", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return (
-            _score_horrifying(candidate) + _score_fearsome(candidate, supernatural=False)
-        ) / 2
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        if _score_fearsome(stats, supernatural=False) > 0:
-            name = "Fearsome Roar"
-        elif _score_horrifying(stats) > 0:
-            name = "Horrifying Presence"
-        else:
-            name = "Repulsion"
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
-            name=name,
+            name="Fearsome Roar",
             description=f"{stats.selfref.capitalize()} targets up to eight creatures they can see within 60 ft. Each must make a DC {dc} Charisma saving throw.\
                 On a failure, the affected target is **Frightened** for 1 minute (save ends at end of turn) and must immediately use its reaction, if available, to move their speed away from {stats.selfref} \
                 avoiding hazards or dangerous terrain if possible.",
@@ -64,23 +81,37 @@ class _Repulsion(PowerBackport):
             replaces_multiattack=1,
             action=ActionType.Action,
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _TerrifyingVisage(PowerBackport):
+class _HorrifyingPresence(HorrifyingPower):
     def __init__(self):
-        super().__init__(name="Terrifying Visage", power_type=PowerType.Theme)
+        super().__init__(name="Horrifying Presence", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_horrifying(candidate)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        feature = Feature(
+            name="Horrifying Presence",
+            description=f"{stats.selfref.capitalize()} targets up to eight creatures they can see within 60 ft. Each must make a DC {dc} Charisma saving throw.\
+                On a failure, the affected target is **Frightened** for 1 minute (save ends at end of turn) and must immediately use its reaction, if available, to move their speed away from {stats.selfref} \
+                avoiding hazards or dangerous terrain if possible.",
+            uses=1,
+            replaces_multiattack=1,
+            action=ActionType.Action,
+        )
+        return [feature]
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+
+class _HorrifyingVisage(HorrifyingPower):
+    def __init__(self):
+        super().__init__(name="Horrifying Visage", source="SRD5.1 Ghost")
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         aging = f"1d4 x {5 if stats.cr < 4 else 10} years"
         dc = stats.difficulty_class
 
         feature = Feature(
-            name="Terrifying Visage",
+            name="Horrifying Visage",
             action=ActionType.Reaction,
             description=f"When a creature looks at {stats.selfref}, it must immediately make a DC {dc} Wisdom saving throw. \
                 On a failure, the target is **Frightened** of {stats.selfref} (save ends at end of turn). \
@@ -88,20 +119,14 @@ class _TerrifyingVisage(PowerBackport):
                 A creature that succeeds on the save is immune to this effect for 1 hour.",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _DreadGaze(PowerBackport):
+class _DreadGaze(HorrifyingPower):
     def __init__(self):
-        super().__init__(name="Dread Gaze", power_type=PowerType.Theme)
+        super().__init__(name="Dread Gaze", source="SRD5.1 Mummy")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        score = (
-            _score_horrifying(candidate) + _score_fearsome(candidate, supernatural=True)
-        ) / 2.0
-        return score
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         feature = Feature(
@@ -114,20 +139,16 @@ class _DreadGaze(PowerBackport):
                 A creature that succeeds on the save is immune to this effect for 1 hour.",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _MindShatteringScream(PowerBackport):
+class _MindShatteringScream(HorrifyingPower):
     def __init__(self):
         super().__init__(
-            name="Mind-Shattering Scream", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name="Mind-Shattering Scream", source="SRD5.1 Banshee", power_level=HIGH_POWER
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        score = _score_horrifying(candidate)
-        return score
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(5 + 2.5 * stats.cr, force_die=Die.d6)
         dc = stats.difficulty_class
 
@@ -139,59 +160,40 @@ class _MindShatteringScream(PowerBackport):
                 must make a DC {dc} Intelligence saving throw. On a failure, a creature takes {dmg.description} psychic damage and is **Stunned** until the end of its next turn. \
                 On a success, a creature takes half damage and is not Stunned. Creatures that are **Frightened** have disadvantage on this save.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _NightmarishVisions(PowerBackport):
+class _NightmarishVisions(HorrifyingPower):
     def __init__(self):
-        super().__init__(name="Nightmarish Visions", power_type=PowerType.Theme)
+        super().__init__(name="Nightmarish Visions", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_horrifying(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(max(5, 1.5 * stats.cr), force_die=Die.d6)
         dc = stats.difficulty_class_easy
-
+        bleeding = conditions.Bleeding(dmg, damage_type=DamageType.Psychic)
         feature = Feature(
             name="Nightmarish Visions",
             action=ActionType.Action,
             replaces_multiattack=1,
             recharge=5,
             description=f"{stats.selfref.capitalize()} targets a creature that it can see within 30 feet and forces it to confront its deepest fears. \
-                The target must succeed on a DC {dc} Wisdom save or become **Frightened** of {stats.selfref} for 1 minute (save ends at end of turn). While frightened in this way, the creature takes {dmg.description} ongoing psychic damage at the start of each of its turns.",
+                The target must succeed on a DC {dc} Wisdom save or become **Frightened** of {stats.selfref} for 1 minute (save ends at end of turn). \
+                While frightened in this way, the creature gains {bleeding.caption}. {bleeding.description_3rd}",
         )
-
-        return stats, feature
-
-
-# TODO A5E SRD - Chain Devil
-# Unneverving Visage
-# Unnerving Mask. When damaged by a
-# creature within 30 feet that can see the
-# devil, the devil momentarily assumes the
-# magical illusory form of one of the
-# attacker’s enemies or loved ones, alive or
-# dead. The illusory figure may speak
-# words that only the attacker can hear. The
-# attacker makes a DC 15 Wisdom saving
-# throw. On a failure, it takes 9 (2d8)
-# psychic damage and is frightened until
-# the end of its next turn.The attacker is
-# then immune to this effect for the next 24
-# hours.
+        return [feature]
 
 
-Repulsion: Power = _Repulsion()
-TerrifyingVisage: Power = _TerrifyingVisage()
+FearsomeRoar: Power = _FearsomeRoar()
+HorrifyingPresence: Power = _HorrifyingPresence()
+HorrifyingVisage: Power = _HorrifyingVisage()
 DreadGaze: Power = _DreadGaze()
 MindShatteringScream: Power = _MindShatteringScream()
 NightmarishVisions: Power = _NightmarishVisions()
 
 FearsomePowers: List[Power] = [
-    Repulsion,
-    TerrifyingVisage,
+    FearsomeRoar,
+    HorrifyingPresence,
+    HorrifyingVisage,
     DreadGaze,
     MindShatteringScream,
     NightmarishVisions,

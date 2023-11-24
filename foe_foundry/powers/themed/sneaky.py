@@ -16,7 +16,7 @@ from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import LOW_POWER, Power, PowerBackport, PowerType
+from ..power import LOW_POWER, RIBBON_POWER, Power, PowerBackport, PowerType
 from ..scoring import score
 
 
@@ -73,7 +73,7 @@ class _SneakyStrike(PowerBackport):
 class _FalseAppearance(PowerBackport):
     def __init__(self):
         super().__init__(
-            name="False Appearance", power_type=PowerType.Theme, power_level=LOW_POWER
+            name="False Appearance", power_type=PowerType.Theme, power_level=RIBBON_POWER
         )
 
     def score(self, candidate: BaseStatblock) -> float:

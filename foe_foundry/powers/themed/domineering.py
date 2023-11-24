@@ -1,76 +1,78 @@
+from datetime import datetime
 from math import ceil
-from typing import List, Tuple
+from typing import List
 
 from num2words import num2words
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...size import Size
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def _score_is_domineering(candidate: BaseStatblock, min_cr: int = 3) -> float:
-    magical_creatures = {
-        CreatureType.Fiend,
-        CreatureType.Fey,
-        CreatureType.Dragon,
-        CreatureType.Celestial,
-        CreatureType.Undead,
-    }
-    required_creatures = magical_creatures | {CreatureType.Humanoid}
+class DomineeringPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        magical_creatures = {
+            CreatureType.Fiend,
+            CreatureType.Fey,
+            CreatureType.Dragon,
+            CreatureType.Celestial,
+            CreatureType.Undead,
+        }
+        required_creatures = magical_creatures | {CreatureType.Humanoid}
 
-    def is_magical(c: BaseStatblock) -> bool:
-        if c.creature_type in magical_creatures:
-            return True
+        def is_magical(c: BaseStatblock) -> bool:
+            if c.creature_type in magical_creatures:
+                return True
 
-        # non-holy humanoids
-        if candidate.attack_type.is_spell() and candidate.secondary_damage_type not in {
-            DamageType.Radiant
-        }:
-            return True
+            # non-holy humanoids
+            if c.attack_type.is_spell() and c.secondary_damage_type not in {DamageType.Radiant}:
+                return True
 
-        return False
+            return False
 
-    return score(
-        candidate=candidate,
-        require_types=required_creatures,
-        require_callback=is_magical,
-        bonus_damage=DamageType.Psychic,
-        bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
-        require_stats=Stats.CHA,
-        require_cr=min_cr,
-    )
-
-
-def _ensure_domineering(stats: BaseStatblock) -> BaseStatblock:
-    new_attributes = stats.attributes.boost(Stats.CHA, 4).grant_proficiency_or_expertise(
-        Skills.Persuasion
-    )
-    stats = stats.copy(attributes=new_attributes)
-    return stats
-
-
-class _CommandingPresence(PowerBackport):
-    def __init__(self):
         super().__init__(
-            name="Commanding Presence", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name=name,
+            source=source,
+            power_type=PowerType.Theme,
+            theme="domineering",
+            create_date=create_date,
+            power_level=power_level,
+            score_args=dict(
+                require_types=required_creatures,
+                require_callback=is_magical,
+                bonus_damage=DamageType.Psychic,
+                bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
+                require_stats=Stats.CHA,
+                **score_args,
+            ),
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_domineering(candidate)
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        new_attributes = stats.attributes.boost(Stats.CHA, 4).grant_proficiency_or_expertise(
+            Skills.Persuasion
+        )
+        stats = stats.copy(attributes=new_attributes)
+        return stats
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = _ensure_domineering(stats)
 
+class _CommandingPresence(DomineeringPower):
+    def __init__(self):
+        super().__init__(
+            name="Commanding Presence", source="FoeFoundryOriginal", power_level=HIGH_POWER
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         targets = num2words(int(ceil(max(5, stats.cr / 3))))
@@ -81,21 +83,16 @@ class _CommandingPresence(PowerBackport):
             description=f"{stats.selfref.capitalize()} chooses up to {targets} creatures it can see within 60 feet and attempts to magically compell them \
                  to grovel. The creatures must make a DC {dc} Wisdom save or be affected as by the *Command* spell. A creature that saves is immune to this effect for 24 hours.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _Charm(PowerBackport):
+class _Charm(DomineeringPower):
     def __init__(self):
-        super().__init__(name="Charm", power_type=PowerType.Theme, power_level=HIGH_POWER)
+        super().__init__(
+            name="Charm", source="FoeFoundryOriginal", power_level=HIGH_POWER, require_cr=7
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_domineering(candidate, min_cr=7)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature]]:
-        stats = _ensure_domineering(stats)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.creature_type == CreatureType.Fey:
             name = "Fey Charm"
         elif stats.creature_type == CreatureType.Dragon:
@@ -121,8 +118,7 @@ class _Charm(PowerBackport):
                 Otherwise, the effect lasts for 24 hours or until {stats.selfref} dies or is on anther plane of existance. \
                 A creature that saves is immune to this effect for 24 hours.",
         )
-
-        return stats, feature
+        return [feature]
 
 
 Charm: Power = _Charm()

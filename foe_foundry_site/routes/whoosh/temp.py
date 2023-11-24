@@ -14,6 +14,10 @@ from foe_foundry.powers.themed import (
     cursed,
     deathly,
     diseased,
+    domineering,
+    earthy,
+    fast,
+    fearsome,
 )
 
 # TODO - add all powers
@@ -33,4 +37,8 @@ AllPowers = (
     + cursed.CursedPowers
     + deathly.DeathlyPowers
     + diseased.DiseasedPowers
+    + domineering.DomineeringPowers
+    + earthy.EarthyPowers
+    + fast.FastPowers
+    + fearsome.FearsomePowers
 )

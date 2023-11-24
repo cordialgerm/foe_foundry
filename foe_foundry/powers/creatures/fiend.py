@@ -75,7 +75,7 @@ class _CallOfTheStyx(FiendishPower):
 class _FeastOfSouls(FiendishPower):
     def __init__(self):
         super().__init__(
-            name="Feast of SOulrs",
+            name="Feast of Souls",
             source="FoeFoundryOriginal",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,

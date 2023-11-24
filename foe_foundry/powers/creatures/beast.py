@@ -15,6 +15,7 @@ from ..power import (
     HIGH_POWER,
     LOW_POWER,
     MEDIUM_POWER,
+    RIBBON_POWER,
     Power,
     PowerType,
     PowerWithStandardScoring,
@@ -207,7 +208,7 @@ class _WildInstinct(BeastPower):
         super().__init__(
             name="Wild Instinct",
             source="FoeFoundryOriginal",
-            power_level=LOW_POWER,
+            power_level=RIBBON_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
