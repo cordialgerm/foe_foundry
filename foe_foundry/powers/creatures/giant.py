@@ -50,11 +50,11 @@ class _Boulder(GiantPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         if stats.multiattack >= 3:
-            dmg = int(floor(1.5 * stats.attack.average_damage))
+            target = 1.5
         else:
-            dmg = int(ceil(1.25 * stats.attack.average_damage))
+            target = 1.25
 
-        dmg = DieFormula.target_value(dmg, suggested_die=stats.size.hit_die())
+        dmg = stats.target_value(target, suggested_die=stats.size.hit_die())
 
         if stats.cr >= 12:
             distance = 60
@@ -122,9 +122,7 @@ class _FireRune(GiantPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = DieFormula.target_value(
-            target=0.33 * stats.attack.average_damage, suggested_die=Die.d6
-        )
+        dmg = stats.target_value(target=0.33, suggested_die=Die.d6)
         burning = conditions.Burning(dmg)
         dc = stats.difficulty_class_easy
 
@@ -260,7 +258,7 @@ class _Earthshaker(GiantPower):
                 must make a DC {dc} Strength check or fall **Prone**. A creature that falls prone in this way loses concentration.",
         )
 
-        dmg = DieFormula.target_value(stats.attack.average_damage * 1.5, force_die=Die.d8)
+        dmg = stats.target_value(1.5, force_die=Die.d8)
 
         feature2 = Feature(
             name="Earthshaker Stomp",

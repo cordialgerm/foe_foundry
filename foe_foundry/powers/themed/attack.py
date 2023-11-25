@@ -83,9 +83,7 @@ class _BleedingAttack(AttackPower):
         super().__init__(name="Bleeding Attack", score_args=score_args)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        damage = DieFormula.target_value(
-            target=0.5 * stats.attack.average_damage, force_die=Die.d6
-        )
+        damage = stats.target_value(target=0.5, force_die=Die.d6)
 
         if stats.secondary_damage_type in {DamageType.Acid, DamageType.Poison}:
             damage_type = stats.secondary_damage_type
@@ -149,7 +147,7 @@ class _BurningAttack(AttackPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage_type = stats.secondary_damage_type or DamageType.Fire
-        damage = DieFormula.target_value(0.33 * stats.attack.average_damage, force_die=Die.d10)
+        damage = stats.target_value(0.33, force_die=Die.d10)
         burning = conditions.Burning(damage, damage_type)
         feature = Feature(
             name="Burning Attack",

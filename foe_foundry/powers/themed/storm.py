@@ -55,9 +55,7 @@ class _TempestSurge(StormPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = DieFormula.target_value(
-            target=2.5 * stats.attack.average_damage, force_die=Die.d10
-        )
+        dmg = stats.target_value(target=2.5, force_die=Die.d10)
         shocked = Shocked()
         dc = stats.difficulty_class
 
@@ -81,9 +79,7 @@ class _StormcallersFury(StormPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
-        dmg = DieFormula.target_value(
-            target=1.5 * stats.attack.average_damage, force_die=Die.d10
-        )
+        dmg = stats.target_value(target=1.5, force_die=Die.d10)
 
         feature = Feature(
             name="Stormcaller's Fury",

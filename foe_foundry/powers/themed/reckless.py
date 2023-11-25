@@ -172,7 +172,7 @@ class _Toss(RecklessPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         size = stats.size.decrement()
-        dmg = DieFormula.target_value(0.7 * stats.attack.average_damage, force_die=Die.d6)
+        dmg = stats.target_value(0.7, force_die=Die.d6)
         distance = easy_multiple_of_five(3 * stats.cr, min_val=10, max_val=30)
         dc = stats.difficulty_class
 

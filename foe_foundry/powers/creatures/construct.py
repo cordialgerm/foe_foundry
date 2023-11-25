@@ -125,7 +125,7 @@ class _ExplosiveCore(ConstructPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg_type = DamageType.Fire
-        dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, suggested_die=Die.d6)
+        dmg = stats.target_value(1.5, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
 
         feature = Feature(
@@ -271,7 +271,7 @@ class _Crush(ConstructPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(1.8 * stats.attack.average_damage, suggested_die=Die.d8)
+        dmg = stats.target_value(1.8, suggested_die=Die.d8)
         feature = Feature(
             name="Crush",
             action=ActionType.Action,

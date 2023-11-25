@@ -166,7 +166,7 @@ class _LingeringWound(MonstrousPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = max(10, min(15, stats.difficulty_class_easy))
-        dmg = DieFormula.target_value(0.75 * stats.attack.average_damage, force_die=Die.d6)
+        dmg = stats.target_value(0.75, force_die=Die.d6)
         bleeding = Bleeding(damage=dmg, dc=dc)
         feature = Feature(
             name="Lingering Wound",
@@ -282,9 +282,7 @@ class _TearApart(MonstrousPower):
             description=f"On a hit, the target is **Grappled** (escape DC {dc})",
         )
 
-        dmg = DieFormula.target_value(
-            0.8 * stats.multiattack * stats.attack.average_damage, force_die=Die.d10
-        )
+        dmg = stats.target_value(0.8 * stats.multiattack, force_die=Die.d10)
 
         feature2 = Feature(
             name="Tear Apart",

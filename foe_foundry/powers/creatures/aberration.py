@@ -68,7 +68,7 @@ class _GazeOfTheFarRealm(AberrationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(0.25 * stats.attack.average_damage, suggested_die=Die.d6)
+        dmg = stats.target_value(0.25, suggested_die=Die.d6)
         burning = conditions.Burning(damage=dmg, damage_type=DamageType.Psychic)
         feature = Feature(
             name="Gaze of the Far Realm",
@@ -113,7 +113,7 @@ class _TentacleSlam(AberrationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
-        dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, suggested_die=Die.d6)
+        dmg = stats.target_value(0.5, suggested_die=Die.d6)
 
         feature = Feature(
             name="Tentacle Slam",

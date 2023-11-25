@@ -76,9 +76,7 @@ class _PsychicInfestation(PsychicPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(30 + 5 * stats.cr, min_val=30, max_val=90)
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(
-            target=1.5 * stats.attack.average_damage, force_die=Die.d6
-        )
+        dmg = stats.target_value(target=1.5, force_die=Die.d6)
         burning = Burning(
             damage=DieFormula.from_dice(d6=dmg.n_die // 2), damage_type=DamageType.Psychic
         )
@@ -103,7 +101,7 @@ class _DissonantWhispers(PsychicPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(30 + 5 * stats.cr, min_val=30, max_val=90)
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d6)
+        dmg = stats.target_value(1.5, force_die=Die.d6)
 
         feature = Feature(
             name="Dissonant Whispers",
@@ -125,9 +123,7 @@ class _PsionicBlast(PsychicPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         multiplier = 2.5 if stats.multiattack >= 2 else 1.5
-        dmg = DieFormula.target_value(
-            target=multiplier * stats.attack.average_damage, force_die=Die.d6
-        )
+        dmg = stats.target_value(target=multiplier, force_die=Die.d6)
         dc = stats.difficulty_class
         dazed = Dazed()
 

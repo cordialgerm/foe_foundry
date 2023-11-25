@@ -55,7 +55,7 @@ class _CallOfTheStyx(FiendishPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = DieFormula.target_value(1.75 * stats.attack.average_damage)
+        dmg = stats.target_value(1.75)
         dc = stats.difficulty_class
         frozen = conditions.Frozen(dc=dc)
         feature = Feature(
@@ -98,7 +98,7 @@ class _FiendishCurse(FiendishPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, force_die=Die.d4)
+        dmg = stats.target_value(0.5, force_die=Die.d4)
 
         dc = stats.difficulty_class
         feature1 = Feature(
@@ -130,9 +130,7 @@ class _FiendishTeleporation(FiendishPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         multiplier = 1.25 if stats.multiattack >= 2 else 0.75
-        dmg = DieFormula.target_value(
-            multiplier * stats.attack.average_damage, force_die=Die.d10
-        )
+        dmg = stats.target_value(multiplier, force_die=Die.d10)
         distance = easy_multiple_of_five(stats.cr * 10, min_val=30, max_val=90)
         dc = stats.difficulty_class_easy
         feature = Feature(

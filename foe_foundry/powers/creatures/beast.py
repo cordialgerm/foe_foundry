@@ -112,7 +112,7 @@ class _Gore(BeastPower):
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
 
-        bleeding_damage = DieFormula.target_value(0.75 * stats.attack.average_damage)
+        bleeding_damage = stats.target_value(0.5)
         bleeding = Bleeding(damage=bleeding_damage)
 
         stats = stats.add_attack(

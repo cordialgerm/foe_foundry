@@ -86,7 +86,7 @@ class _SlimyCloud(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(1.5 * stats.attack.average_damage)
+        dmg = stats.target_value(1.5)
         feature = Feature(
             name="Slimy Cloud",
             action=ActionType.BonusAction,

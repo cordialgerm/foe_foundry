@@ -96,7 +96,7 @@ class _WingBuffet(DraconicPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, suggested_die=Die.d6)
+        dmg = stats.target_value(0.5, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
 
         feature = Feature(
@@ -206,12 +206,8 @@ def _dragons_breath_power(damage_type: DamageType, save_type: str) -> Power:
                 distance = 60
 
             template = f"{distance} ft cone"
-            dmg = DieFormula.target_value(
-                max(
-                    5 + 2 * stats.cr,
-                    3.5 * stats.cr,
-                    0.6 * stats.attack.average_damage * stats.multiattack,
-                ),
+            dmg = stats.target_value(
+                0.65 * stats.multiattack,
                 suggested_die=Die.d8,
             )
 

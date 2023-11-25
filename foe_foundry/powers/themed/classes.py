@@ -122,7 +122,7 @@ def _EldritchKnights() -> List[Power]:
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class_easy
-            dmg = DieFormula.target_value(1.5 * stats.attack.average_damage)
+            dmg = stats.target_value(1.5)
 
             feature1 = Feature(
                 name="Misty Step",
@@ -177,7 +177,7 @@ class _Artificer(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dazed = conditions.Dazed()
-        dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d10)
+        dmg = stats.target_value(1.5, force_die=Die.d10)
         feature = Feature(
             name="Artificer's Cannon",
             action=ActionType.Action,
@@ -267,7 +267,7 @@ class _Bard(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, force_die=Die.d4)
+        dmg = stats.target_value(0.5, force_die=Die.d4)
         dazed = conditions.Dazed()
 
         feature1 = Feature(
@@ -319,7 +319,7 @@ class _WarPriest(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = DieFormula.target_value(0.75 * stats.attack.average_damage, force_die=Die.d6)
+        dmg = stats.target_value(0.75, force_die=Die.d6)
 
         feature1 = holy.MassCureWounds.generate_features(stats)
 
@@ -415,7 +415,7 @@ class _ArcaneArcher(PowerWithStandardScoring):
         dazed = conditions.Dazed()
         weakened = conditions.Weakened()
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(0.6 * stats.attack.average_damage, force_die=Die.d10)
+        dmg = stats.target_value(0.6, force_die=Die.d10)
 
         feature1 = Feature(
             name="Dazing Arrow",
@@ -793,9 +793,7 @@ class _Druid(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        healing = DieFormula.target_value(
-            0.5 * stats.attack.average_damage, force_die=Die.d4, flat_mod=stats.attributes.WIS
-        )
+        healing = stats.target_value(0.5, force_die=Die.d4, flat_mod=stats.attributes.WIS)
         uses = stats.attributes.stat_mod(Stats.WIS)
 
         feature = Feature(

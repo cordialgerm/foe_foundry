@@ -89,7 +89,7 @@ class _RighteousJudgement(CelestialPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(1.4 * stats.attack.average_damage, force_die=Die.d6)
+        dmg = stats.target_value(1.4, force_die=Die.d6)
 
         feature = Feature(
             name="Righteous Judgment",
@@ -112,7 +112,7 @@ class _DivineLaw(CelestialPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(1.25 * stats.attack.average_damage, force_die=Die.d6)
+        dmg = stats.target_value(1.25, force_die=Die.d6)
 
         feature = Feature(
             name="Divine Law",
@@ -172,9 +172,7 @@ class _WordsOfRighteousness(CelestialPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        damage = DieFormula.target_value(
-            stats.attack.average_damage * 1.25, suggested_die=Die.d6
-        )
+        damage = stats.target_value(1.25, suggested_die=Die.d6)
         dazed = Dazed()
         dc = stats.difficulty_class_easy
         distance = easy_multiple_of_five(6 * stats.cr, min_val=20, max_val=60)

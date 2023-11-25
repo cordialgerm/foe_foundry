@@ -130,7 +130,7 @@ def elemental_burst_power(damage_type: DamageType) -> Power:
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             uses = int(ceil(stats.cr / 5))
             dmg_type = stats.secondary_damage_type or DamageType.Fire
-            dmg = DieFormula.target_value(0.75 * stats.attack.average_damage)
+            dmg = stats.target_value(0.75)
             distance = 5 if stats.cr <= 7 else 10
             dc = stats.difficulty_class
             feature = Feature(
@@ -159,7 +159,7 @@ class _ElementalFireball(ElementalPower):
         name = "Fireball"
         dc = stats.difficulty_class
         dmg_type = DamageType.Fire
-        dmg = DieFormula.target_value(1.6 * stats.attack.average_damage, force_die=Die.d6)
+        dmg = stats.target_value(1.6, force_die=Die.d6)
         description = f"{stats.selfref.capitalize()} targets a 20 ft sphere at a point it can see within 150 feet. A fiery explosion fills the space. \
             All creatures within the space must make a DC {dc} Dexterity saving throw, taking {dmg.description} {dmg_type} damage on a failure and half as much on a success."
 
@@ -186,13 +186,11 @@ class _AcidicBlast(ElementalPower):
         name = "Acidic Blast"
         dc = stats.difficulty_class
         dmg_type = DamageType.Acid
-        dmg = DieFormula.target_value(1.6 * stats.attack.average_damage, force_die=Die.d4)
+        dmg = stats.target_value(1.6, force_die=Die.d4)
 
         # acid damage is always done in d4s and should be an even number
         # this is because the ongoing damage should be half that amount
-        dmg = DieFormula.target_value(
-            1.0 * stats.attack.average_damage, force_die=Die.d4, force_even=True
-        )
+        dmg = stats.target_value(1.0, force_die=Die.d4, force_even=True)
         ongoing = DieFormula.from_dice(**{Die.d4: dmg.n_die // 2})
         burning = Burning(damage=ongoing, damage_type=DamageType.Acid)
 
@@ -222,7 +220,7 @@ class _ConeOfCold(ElementalPower):
         name = "Cone of Cold"
         dc = stats.difficulty_class
         dmg_type = DamageType.Cold
-        dmg = DieFormula.target_value(1.6 * stats.attack.average_damage, force_die=Die.d8)
+        dmg = stats.target_value(1.6, force_die=Die.d8)
         description = f"{stats.selfref.capitalize()} releases a blast of cold air in a 60 foot cone. Each creature in the area must make a DC {dc} Constitution save, \
             taking {dmg.description} {dmg_type} damage on a failure and half as much on a success."
 
@@ -249,7 +247,7 @@ class _LightningBolt(ElementalPower):
         name = "Lightning Bolt"
         dc = stats.difficulty_class
         dmg_type = DamageType.Lightning
-        dmg = DieFormula.target_value(1.6 * stats.attack.average_damage, force_die=Die.d6)
+        dmg = stats.target_value(1.6, force_die=Die.d6)
         description = f"{stats.selfref.capitalize()} releases a crackling bolt of lightning in a 100 ft line that is 5 ft wide. Each creature in the line must make a DC {dc} Dexterity save, \
             taking {dmg.description} {dmg_type} on a failure and half as much on a success."
 
@@ -277,7 +275,7 @@ class _PoisonCloud(ElementalPower):
         dc = stats.difficulty_class
         dmg_type = DamageType.Poison
         duration = DieFormula.from_expression("1d4 + 2")
-        dmg = DieFormula.target_value(1.6 * stats.attack.average_damage, force_die=Die.d6)
+        dmg = stats.target_value(1.6, force_die=Die.d6)
         description = f"{stats.selfref.capitalize()} creates a 20-ft radius cloud of toxic gas centered at a point it can see within 60 feet. Each creature that starts its turn in the cloud \
             must make a DC {dc} Constitution saving throw. On a failure, a creature takes {dmg.description} {dmg_type} damage and is **Poisoned** until the end of its next turn. On a success, a creature takes half as much damage and is not poisoned. \
             The cloud lasts for {duration.description} and can be dispersed by a light breeze."
@@ -305,7 +303,7 @@ class _Thunderwave(ElementalPower):
         name = "Thunderwave"
         dc = stats.difficulty_class
         dmg_type = DamageType.Thunder
-        dmg = DieFormula.target_value(1.6 * stats.attack.average_damage, force_die=Die.d10)
+        dmg = stats.target_value(1.6, force_die=Die.d10)
         description = f"{stats.selfref.capitalize()} releases a burst of thundrous energy in a 15 ft. cube originating from {stats.selfref}. \
             Each creature in the area must make a DC {dc} Constitution saving throw. On a failure, a creature takes {dmg.description} {dmg_type} thunder damage and is knocked up to 10 feet away and lands **Prone**. \
             On a success, a creature takes half as much damage and is not knocked prone."
@@ -334,29 +332,29 @@ def elemental_smite_power(dmg_type: DamageType) -> Power:
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class
-            dmg_target = 0.5 * stats.attack.average_damage
+            dmg_target = 0.5
 
             if dmg_type == DamageType.Fire:
                 burning = Burning(DieFormula.from_expression("1d10"))
-                dmg = DieFormula.target_value(dmg_target, force_die=Die.d10)
+                dmg = stats.target_value(dmg_target, force_die=Die.d10)
                 condition = f"and forces the target to make a DC {dc} Constitution saving throw. On a failure, the target is {burning.caption}. {burning.description_3rd}"
             elif dmg_type == DamageType.Acid:
-                dmg = DieFormula.target_value(dmg_target, force_die=Die.d4)
+                dmg = stats.target_value(dmg_target, force_die=Die.d4)
                 burning = Burning(DieFormula.from_expression("2d4"), DamageType.Acid)
                 condition = f"and forces the target to make a DC {dc} Dexterity saving throw. On a failure, the target is {burning.caption}. {burning.description_3rd}"
             elif dmg_type == DamageType.Cold:
-                dmg = DieFormula.target_value(dmg_target, force_die=Die.d8)
+                dmg = stats.target_value(dmg_target, force_die=Die.d8)
                 frozen = Frozen(dc=dc)
                 condition = f"and forces the target to make a DC {dc} Constitution saving throw. On a failure, the target is {frozen.caption}. {frozen.description_3rd}"
             elif dmg_type == DamageType.Lightning:
-                dmg = DieFormula.target_value(dmg_target, force_die=Die.d6)
+                dmg = stats.target_value(dmg_target, force_die=Die.d6)
                 shocked = Shocked()
                 condition = f"and forces the target to make a DC {dc} Dexterity saving throw. On a failure, the target is {shocked.caption} until the end of its next turn. {shocked.description_3rd}"
             elif dmg_type == DamageType.Poison:
-                dmg = DieFormula.target_value(dmg_target, force_die=Die.d8)
+                dmg = stats.target_value(dmg_target, force_die=Die.d8)
                 condition = f"and forces the target to make a DC {dc} Constitution saving throw or become **Poisoned** for 1 minute (save ends at end of turn)."
             elif dmg_type == DamageType.Thunder:
-                dmg = DieFormula.target_value(dmg_target, force_die=Die.d8)
+                dmg = stats.target_value(dmg_target, force_die=Die.d8)
                 dazed = Dazed()
                 condition = f"and force the target to make a DC {dc} Constitution saving throw. On a failure, the target is {dazed.caption} until the end of its next turn. {dazed.description_3rd}"
             else:
