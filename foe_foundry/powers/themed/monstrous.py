@@ -251,6 +251,7 @@ class _Frenzy(MonstrousPower):
             source="A5E SRD Cockatrice",
             power_level=LOW_POWER,
             create_date=datetime(2023, 11, 24),
+            require_attack_types=AttackType.AllMelee(),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

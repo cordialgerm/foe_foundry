@@ -228,6 +228,28 @@ class _DanceTune(FeyPower):
         return [feature]
 
 
+class _ShadowyDoppelganger(FeyPower):
+    def __init__(self):
+        super().__init__(
+            name="Shadowy Doppelganger", source="FoeFoundryOriginal", power_level=HIGH_POWER
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        hp = easy_multiple_of_five(1.25 * stats.cr, min_val=5)
+
+        feature = Feature(
+            name="Shadowy Doppleganger",
+            action=ActionType.Action,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} forces each non-fey creature of its choice within 30 feet to make a DC {dc} Charisma saving throw. \
+                On a failure, a Shadow Doppleganger copy of that creature materializes in the nearest unoccupied space to that creature and acts in initiative immediately after {stats.selfref}. \
+                The Shadow Doppleganger has {hp} hp and has an AC equal to the creature it was copied from and is a Fey. On its turn, the Shadow Doppleganger attempts to move and attack the creature it was copied from. \
+                It makes a single attack using the stats of {stats.selfref}'s Attack action. It otherwise has the movement, stats, skills, and saves of the creature it was copied from.",
+        )
+        return [feature]
+
+
 Awaken: Power = _Awaken()
 BloodContract: Power = _BloodContract()
 DanceTune: Power = _DanceTune()
@@ -235,6 +257,7 @@ FaeBargain: Power = _FaeBargain()
 FaeCounterspell: Power = _FaeCounterspell()
 FaePresence: Power = _FaePresence()
 FaeryStep: Power = _FaerieStep()
+ShadowyDoppelganger: Power = _ShadowyDoppelganger()
 
 FeyPowers: List[Power] = [
     Awaken,
@@ -243,4 +266,5 @@ FeyPowers: List[Power] = [
     FaeCounterspell,
     FaePresence,
     FaeryStep,
+    ShadowyDoppelganger,
 ]

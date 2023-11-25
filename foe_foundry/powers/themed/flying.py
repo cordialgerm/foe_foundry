@@ -83,6 +83,7 @@ class _WingedCharge(PowerWithStandardScoring):
             power_level=LOW_POWER,
             score_args=dict(
                 require_flying=True,
+                require_types=CreatureType.all_but(CreatureType.Aberration),
                 bonus_roles={MonsterRole.Bruiser, MonsterRole.Skirmisher},
                 require_attack_types=AttackType.AllMelee(),
             ),

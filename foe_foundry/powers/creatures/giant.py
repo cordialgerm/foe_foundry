@@ -200,7 +200,7 @@ class _HillRune(GiantPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
-            name="Stone Rune",
+            name="Hill Rune",
             action=ActionType.BonusAction,
             uses=1,
             description=f"{stats.selfref.capitalize()} invokes the hill rune and gains resistance to bludgeoning, piercing, and slashing damage for 1 minute",

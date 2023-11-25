@@ -31,7 +31,6 @@ class Trap(PowerWithStandardScoring):
             score_args=dict(
                 require_types={c for c in CreatureType if c.could_use_equipment},
                 require_roles={
-                    MonsterRole.Leader,
                     MonsterRole.Ambusher,
                     MonsterRole.Skirmisher,
                 },

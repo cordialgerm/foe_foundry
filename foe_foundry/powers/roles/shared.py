@@ -21,7 +21,7 @@ def NimbleEscape(role: MonsterRole):
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             feature = Feature(
                 name="Nimble Escape",
-                action=ActionType.Feature,
+                action=ActionType.BonusAction,
                 description=f"{stats.roleref.capitalize()} uses Disengage or Hide.",
             )
             return [feature]

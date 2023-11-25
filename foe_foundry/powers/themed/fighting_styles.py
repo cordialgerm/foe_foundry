@@ -169,7 +169,11 @@ class _QuickToss(PowerWithStandardScoring):
 class _ArmorMaster(PowerWithStandardScoring):
     def __init__(self):
         def is_heavily_armored(b: BaseStatblock) -> bool:
-            return any([c for c in b.ac_templates if c.is_heavily_armored])
+            for c in b.ac_templates:
+                if c.is_heavily_armored and c.resolve(b, uses_shield=False).score > 0:
+                    return True
+
+            return False
 
         super().__init__(
             name="Armor Master",

@@ -73,28 +73,6 @@ class _Projection(Tricky):
         return [feature]
 
 
-class _ShadowyDoppelganger(Tricky):
-    def __init__(self):
-        super().__init__(
-            name="Shadowy Doppelganger", source="FoeFoundryOriginal", power_level=HIGH_POWER
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dc = stats.difficulty_class
-        hp = easy_multiple_of_five(1.25 * stats.cr, min_val=5)
-
-        feature = Feature(
-            name="Shadowy Doppleganger",
-            action=ActionType.Action,
-            uses=1,
-            description=f"{stats.selfref.capitalize()} forces each non-fey creature of its choice within 30 feet to make a DC {dc} Charisma saving throw. \
-                On a failure, a Shadow Doppleganger copy of that creature materializes in the nearest unoccupied space to that creature and acts in initiative immediately after {stats.selfref}. \
-                The Shadow Doppleganger has {hp} hp and has an AC equal to the creature it was copied from and is a Fey. On its turn, the Shadow Doppleganger attempts to move and attack the creature it was copied from. \
-                It makes a single attack using the stats of {stats.selfref}'s Attack action. It otherwise has the movement, stats, skills, and saves of the creature it was copied from.",
-        )
-        return [feature]
-
-
 class _SpectralDuplicate(Tricky):
     def __init__(self):
         super().__init__(
@@ -192,7 +170,6 @@ HypnoticPatern: Power = _HypnoticPattern()
 MirrorImage: Power = _MirrorImage()
 Projection: Power = _Projection()
 ReverseFortune: Power = _ReverseFortune()
-ShadowyDoppelganger: Power = _ShadowyDoppelganger()
 SpectralDuplicate: Power = _SpectralDuplicate()
 
 TrickyPowers: List[Power] = [
@@ -200,6 +177,5 @@ TrickyPowers: List[Power] = [
     MirrorImage,
     Projection,
     ReverseFortune,
-    ShadowyDoppelganger,
     SpectralDuplicate,
 ]

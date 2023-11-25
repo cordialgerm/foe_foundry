@@ -83,11 +83,13 @@ class _Charger(RecklessPower):
 
 class _Reckless(RecklessPower):
     def __init__(self):
-        super().__init__(name="Reckless", source="SRD5.1 Reckless")
+        super().__init__(
+            name="Reckless", source="SRD5.1 Reckless", require_roles=MonsterRole.Bruiser
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
-            name="Frenzy",
+            name="Reckless",
             description=f"At the start of their turn, {stats.selfref} can gain advantage on all melee weapon attack rolls made during this turn, but attack rolls against them have advantage until the start of their next turn.",
             action=ActionType.Feature,
         )
@@ -148,16 +150,20 @@ class _WildCleave(RecklessPower):
         return [feature]
 
 
-class _FlurryOfBlows(RecklessPower):
+class _RecklessFlurry(RecklessPower):
     def __init__(self):
-        super().__init__(name="Reckless Flurry", source="FoeFoundryOriginal")
+        super().__init__(
+            name="Reckless Flurry",
+            source="FoeFoundryOriginal",
+            require_roles=MonsterRole.Bruiser,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         attacks = max(3, int(ceil(1.5 * stats.multiattack)))
         attack_name = stats.attack.name
 
         feature = Feature(
-            name="Flurry of Blows",
+            name="Reckless Flurry",
             action=ActionType.Action,
             recharge=5,
             description=f"{stats.selfref.capitalize()} makes a reckless flurry of {attacks} {attack_name} attacks. \
@@ -189,7 +195,7 @@ class _Toss(RecklessPower):
 
 BloodiedRage: Power = _BloodiedRage()
 Charger: Power = _Charger()
-FlurryOfBlows: Power = _FlurryOfBlows()
+RecklessFlurry: Power = _RecklessFlurry()
 Reckless: Power = _Reckless()
 RelentlessEndurance: Power = _RelentlessEndurance()
 Toss: Power = _Toss()
@@ -199,7 +205,7 @@ WildCleave: Power = _WildCleave()
 RecklessPowers: List[Power] = [
     BloodiedRage,
     Charger,
-    FlurryOfBlows,
+    RecklessFlurry,
     Reckless,
     RelentlessEndurance,
     Toss,

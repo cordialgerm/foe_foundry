@@ -77,7 +77,7 @@ class _FalseAppearance(SneakyPower):
             name="False Appearance",
             source="SRD1.2 Animated Armor",
             power_level=RIBBON_POWER,
-            bonus_types=[
+            require_types=[
                 CreatureType.Plant,
                 CreatureType.Construct,
                 CreatureType.Ooze,
