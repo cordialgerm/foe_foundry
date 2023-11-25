@@ -160,3 +160,12 @@ def Weakened(save_end_of_turn: bool = True) -> CustomCondition:
         description="You are severely weakened. Your attacks and spells deal half damage and you have disadvantage on Strength ability checks and saving throws.",
         description_3rd="A weakened creature deals half damage with its spells and attacks and has disadvantage on Strength ability checks and saving throws.",
     )
+
+
+def Susceptible(damage_type: DamageType) -> CustomCondition:
+    return CustomCondition(
+        name=f"Susceptible to {damage_type.capitalize()}",
+        caption=f"**Susceptible to {damage_type.capitalize()}**",
+        description=f"You are susceptible to {damage_type}. While susceptible to {damage_type} you ignore any immunity or resistance to {damage_type} that you may have. If you had no such immunity, you are instead vulernable to {damage_type}.",
+        description_3rd=f"A creature susceptible to {damage_type} ignores any immunity or resistance to {damage_type} that it may have. If it had no such immunity, it is instead vulnerable to {damage_type}.",
+    )

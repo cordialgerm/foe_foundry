@@ -28,7 +28,6 @@ from . import (
     poison,
     psychic,
     reckless,
-    size,
     sneaky,
     storm,
     teleportation,
@@ -66,7 +65,6 @@ ThemedPowers: List[Power] = (
     + poison.PoisonPowers
     + psychic.PsychicPowers
     + reckless.RecklessPowers
-    + size.SizePowers
     + sneaky.SneakyPowers
     + storm.StormPowers
     + teleportation.TeleportationPowers

@@ -106,7 +106,7 @@ class _Incubation(AberrantPower):
             name="Incubation",
             source="FoeFoundryOriginal",
             power_level=HIGH_POWER,
-            attack_names=natural.Claw,
+            attack_names=["-", natural.Claw],
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

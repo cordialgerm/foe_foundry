@@ -5,6 +5,7 @@ import StatblockPage from "./pages/StatblockPage.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import CreditPage from "./pages/CreditPage.tsx";
 import ConditionPage from "./pages/ConditionsPage.tsx";
+import { OglPage } from "./pages/OglPage.tsx";
 
 function App({ baseUrl }) {
   return (
@@ -27,6 +28,7 @@ function App({ baseUrl }) {
         </Route>
         <Route path="/credits" element={<CreditPage />} />
         <Route path="/conditions" element={<ConditionPage />} />
+        <Route path="/ogl" element={<OglPage />} />
       </Routes>
     </BrowserRouter>
   );

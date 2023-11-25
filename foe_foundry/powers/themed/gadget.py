@@ -13,11 +13,6 @@ from ...utils import easy_multiple_of_five
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-# these powers make sense for creatures that are capable of using equipment
-def _can_use_gadgets(c: BaseStatblock) -> bool:
-    return c.creature_type.could_use_equipment and c.creature_type.is_living
-
-
 class GadgetPower(PowerWithStandardScoring):
     def __init__(
         self,
@@ -29,8 +24,7 @@ class GadgetPower(PowerWithStandardScoring):
     ):
         standard_score_args = (
             dict(
-                require_callback=_can_use_gadgets,
-                bonus_types=CreatureType.Humanoid,
+                require_types=CreatureType.Humanoid,
                 bonus_roles=[
                     MonsterRole.Leader,
                     MonsterRole.Controller,
@@ -141,7 +135,7 @@ def _NetPowers() -> List[Power]:
             self, name: str, ac: int, hp: int, min_cr: int, max_cr: int | None, additional: str
         ):
             def within_cr_range(c: BaseStatblock) -> bool:
-                return _can_use_gadgets(c) and ((min_cr <= c.cr) and (c.cr <= (max_cr or 100)))
+                return (min_cr <= c.cr) and (c.cr <= (max_cr or 100))
 
             super().__init__(
                 name=name,

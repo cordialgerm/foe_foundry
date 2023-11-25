@@ -1,91 +1,66 @@
-from math import floor
-from typing import List, Tuple
-
-import numpy as np
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
+from datetime import datetime
+from typing import List
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def _score_is_tricky_creature(candidate: BaseStatblock) -> float:
-    def humanoid_is_magical(c: BaseStatblock) -> bool:
-        if c.creature_type == CreatureType.Humanoid:
-            return c.attack_type.is_spell() and c.attributes.spellcasting_mod >= 3
-        else:
-            return True
+class Tricky(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        def humanoid_is_magical(c: BaseStatblock) -> bool:
+            if c.creature_type == CreatureType.Humanoid:
+                return c.attack_type.is_spell() and c.attributes.spellcasting_mod >= 3
+            else:
+                return True
 
-    return score(
-        candidate=candidate,
-        require_types={
-            CreatureType.Fey,
-            CreatureType.Fiend,
-            CreatureType.Aberration,
-            CreatureType.Humanoid,
-        },
-        require_callback=humanoid_is_magical,
-        bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
-        require_stats=[Stats.CHA, Stats.INT],
-    )
-
-
-def _ensure_tricky_stats(stats: BaseStatblock) -> BaseStatblock:
-    # this creature should be tricky
-    new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception).boost(
-        Stats.CHA, 2
-    )
-    changes: dict = dict(attributes=new_attrs)
-
-    return stats.copy(**changes)
-
-
-class _Impersonation(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Impersonation", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = _ensure_tricky_stats(stats)
-
-        dc = 8 + stats.attributes.stat_mod(Stats.CHA) + stats.attributes.proficiency
-
-        feature = Feature(
-            name="Impersonation",
-            action=ActionType.BonusAction,
-            recharge=6,
-            description=f"Until the start of their next turn, {stats.selfref} changes their appearance to look exactly like another creature who is within 5 feet of them \
-                    and is no more than one size smaller or larger. Other creatures must make a DC {dc} Perception check each time they make an attack against {stats.selfref} or the impersonated creature. \
-                    On a failure, the attack is made against the wrong target, without the attacker knowing.",
+        super().__init__(
+            name=name,
+            source=source,
+            create_date=create_date,
+            power_type=PowerType.Theme,
+            power_level=power_level,
+            theme="tricky",
+            score_args=dict(
+                require_types={
+                    CreatureType.Fey,
+                    CreatureType.Fiend,
+                    CreatureType.Aberration,
+                    CreatureType.Humanoid,
+                },
+                require_callback=humanoid_is_magical,
+                bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
+                require_stats=[Stats.CHA, Stats.INT],
+            )
+            | score_args,
         )
 
-        return stats, feature
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        # this creature should be tricky
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception).boost(
+            Stats.CHA, 2
+        )
+        changes: dict = dict(attributes=new_attrs)
+        return stats.copy(**changes)
 
 
-class _Projection(PowerBackport):
+class _Projection(Tricky):
     def __init__(self):
-        super().__init__(name="Projection", power_type=PowerType.Theme)
+        super().__init__(name="Projection", source="SRD5.1 Project Image")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = _ensure_tricky_stats(stats)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-
         feature = Feature(
             name="Projection",
             action=ActionType.Reaction,
@@ -95,20 +70,16 @@ class _Projection(PowerBackport):
                 Simultaneously, an illusionary version of {stats.selfref} appears in the previous location and appears to be subjected to the attack or spell. \
                 The illusion ends when the invisibility ends and also fails to stand up to physical interaction. A character may also use an action to perform a DC {dc} Investigation check to identify the illusion.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _ShadowyDoppelganger(PowerBackport):
+class _ShadowyDoppelganger(Tricky):
     def __init__(self):
         super().__init__(
-            name="Shadowy Doppelganger", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name="Shadowy Doppelganger", source="FoeFoundryOriginal", power_level=HIGH_POWER
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         hp = easy_multiple_of_five(1.25 * stats.cr, min_val=5)
 
@@ -121,20 +92,16 @@ class _ShadowyDoppelganger(PowerBackport):
                 The Shadow Doppleganger has {hp} hp and has an AC equal to the creature it was copied from and is a Fey. On its turn, the Shadow Doppleganger attempts to move and attack the creature it was copied from. \
                 It makes a single attack using the stats of {stats.selfref}'s Attack action. It otherwise has the movement, stats, skills, and saves of the creature it was copied from.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _SpectralDuplicate(PowerBackport):
+class _SpectralDuplicate(Tricky):
     def __init__(self):
         super().__init__(
-            name="Spectral Duplicate", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name="Spectral Duplicate", source="FoeFoundryOriginal", power_level=HIGH_POWER
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Spectral Duplicate",
             action=ActionType.BonusAction,
@@ -143,18 +110,14 @@ class _SpectralDuplicate(PowerBackport):
                 While the duplicate exists, {stats.selfref} is **Invisible** and **Unconscious**. The duplicate has the same statistics and knowledge as {stats.selfref} \
                 and acts immediately in initiative after {stats.selfref}. The duplicate disappears when {stats.selfref} drops to 0 hp.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _MirrorImage(PowerBackport):
+class _MirrorImage(Tricky):
     def __init__(self):
-        super().__init__(name="Mirror Images", power_type=PowerType.Theme)
+        super().__init__(name="Mirror Image", source="SRD5.1 Mirror Image")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         ac = 10 + stats.attributes.stat_mod(Stats.DEX)
 
         feature = Feature(
@@ -163,17 +126,14 @@ class _MirrorImage(PowerBackport):
             uses=1,
             description=f"{stats.selfref.capitalize()} magically creates three illusory duplicates of itself as in the *Mirror Image* spell. The duplicates have AC {ac}",
         )
-        return stats, feature
+        return [feature]
 
 
-class _Hypnosis(PowerBackport):
+class _HypnoticPattern(Tricky):
     def __init__(self):
-        super().__init__(name="Hypnotic Pattern", power_type=PowerType.Theme)
+        super().__init__(name="Hypnotic Pattern", source="SRD5.1 Hypnotic Pattern")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
 
         feature = Feature(
@@ -184,17 +144,14 @@ class _Hypnosis(PowerBackport):
             description=f"{stats.selfref.capitalize()} magically creates the effect of the *Hypnotic Pattern* spell, using a DC of {dc}",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _ReverseFortune(PowerBackport):
+class _ReverseFortune(Tricky):
     def __init__(self):
-        super().__init__(name="Reverse Fortune", power_type=PowerType.Theme)
+        super().__init__(name="Reverse Fortune", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_tricky_creature(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Reverse Fortune",
             action=ActionType.Reaction,
@@ -202,8 +159,7 @@ class _ReverseFortune(PowerBackport):
             description=f"When {stats.selfref} is hit by an attack, {stats.selfref} magically reverses the fortune of the attack and forces it to miss. \
                 Until the end of its next turn, {stats.selfref} gains advantage on the next attack it makes against the attacker.",
         )
-
-        return stats, feature
+        return [feature]
 
 
 # TODO A5E SRD - Chain Devil
@@ -232,8 +188,7 @@ class _ReverseFortune(PowerBackport):
 # with its tail.
 
 
-Hypnosis: Power = _Hypnosis()
-Impersonation: Power = _Impersonation()
+HypnoticPatern: Power = _HypnoticPattern()
 MirrorImage: Power = _MirrorImage()
 Projection: Power = _Projection()
 ReverseFortune: Power = _ReverseFortune()
@@ -241,8 +196,7 @@ ShadowyDoppelganger: Power = _ShadowyDoppelganger()
 SpectralDuplicate: Power = _SpectralDuplicate()
 
 TrickyPowers: List[Power] = [
-    Hypnosis,
-    Impersonation,
+    HypnoticPatern,
     MirrorImage,
     Projection,
     ReverseFortune,

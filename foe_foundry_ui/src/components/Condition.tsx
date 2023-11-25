@@ -8,6 +8,7 @@ import PsychologyAltOutlinedIcon from '@mui/icons-material/PsychologyAltOutlined
 import BedtimeOffOutlinedIcon from '@mui/icons-material/BedtimeOffOutlined';
 import HeartBrokenOutlinedIcon from '@mui/icons-material/HeartBrokenOutlined';
 import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
+import ReportProblemIcon from '@mui/icons-material/ReportProblem';
 import { Tooltip } from "@mui/material";
 
 export interface ConditionProps {
@@ -105,6 +106,13 @@ const SwallowedProps: ConditionProps = {
 }
 export const Swallowed = () => <Condition {...SwallowedProps}/>;
 
+const SusceptibleProps: ConditionProps = {
+    name: "Susceptible",
+    description: <span>A creature <b>Susceptible</b> to a certain damage type ignores any immunity or resistance to that damage type that it may have had. If it had no such immunity, it is instead vulnerable to that damage type.</span>,
+    icon: <ReportProblemIcon />
+}
+export const Susceptible = () => <Condition {...SusceptibleProps}/>;
+
 
 export const AllConditionProps = [
     BurningProps,
@@ -114,5 +122,6 @@ export const AllConditionProps = [
     ShockedProps,
     FatigueProps,
     WeakenedProps,
-    SwallowedProps
+    SwallowedProps,
+    SusceptibleProps,
 ];

@@ -1,50 +1,52 @@
-from math import ceil, floor
-from typing import List, Tuple
+from datetime import datetime
+from math import ceil
+from typing import List
 
-import numpy as np
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
-from ...attributes import Skills, Stats
+from ...attributes import Skills
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
-from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
-from ...utils import choose_enum, easy_multiple_of_five
-from ..attack import flavorful_damage_types
-from ..power import Power, PowerBackport, PowerType
-from ..scoring import score
+from ...statblocks import BaseStatblock
+from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_trap(candidate: BaseStatblock) -> float:
-    # these powers make sense for creatures that are capable of using equipment
-    creature_types = {c for c in CreatureType if c.could_use_equipment}
+class Trap(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        super().__init__(
+            name=name,
+            source=source,
+            power_type=PowerType.Theme,
+            power_level=power_level,
+            create_date=create_date,
+            theme="trap",
+            score_args=dict(
+                require_types={c for c in CreatureType if c.could_use_equipment},
+                require_roles={
+                    MonsterRole.Leader,
+                    MonsterRole.Ambusher,
+                    MonsterRole.Skirmisher,
+                },
+                bonus_types=CreatureType.Humanoid,
+                bonus_skills=Skills.Survival,
+            )
+            | score_args,
+        )
 
-    return score(
-        candidate=candidate,
-        require_types=creature_types,
-        require_roles={MonsterRole.Leader, MonsterRole.Ambusher, MonsterRole.Skirmisher},
-        bonus_types=CreatureType.Humanoid,
-        bonus_skills=Skills.Survival,
-    )
 
-
-class _Snare(PowerBackport):
+class _Snare(Trap):
     def __init__(self):
-        super().__init__(name="Snare", power_type=PowerType.Theme)
+        super().__init__(name="Snare", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_trap(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         quantity = ceil(stats.cr / 3)
 
@@ -58,19 +60,14 @@ class _Snare(PowerBackport):
                 On a failure, it is lifted into the air and **Restrained** (escape DC {dc}).",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _SpikePit(PowerBackport):
+class _SpikePit(Trap):
     def __init__(self):
-        super().__init__(name="Spike Pit", power_type=PowerType.Theme)
+        super().__init__(name="Spike Pit", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_trap(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         quantity = ceil(stats.cr / 3)
         fall_damage = DieFormula.from_expression("2d6")
@@ -89,7 +86,7 @@ class _SpikePit(PowerBackport):
                 The pit is 10 feet deep and can be climbed out of using an action to perform a DC 12 Athletics check",
         )
 
-        return stats, feature
+        return [feature]
 
 
 Snare: Power = _Snare()

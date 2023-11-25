@@ -1,64 +1,65 @@
-from math import ceil, floor
-from typing import List, Set, Tuple
-
-import numpy as np
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
+from datetime import datetime
+from typing import List
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ...utils import easy_multiple_of_five
-from ..power import LOW_POWER, RIBBON_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import (
+    HIGH_POWER,
+    LOW_POWER,
+    MEDIUM_POWER,
+    RIBBON_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
-def score_sneaky(
-    candidate: BaseStatblock, additional_creature_types: Set[CreatureType] | None = None, **args
-) -> float:
-    return score(
-        candidate=candidate,
-        require_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher, MonsterRole.Leader],
-        require_stats=Stats.DEX,
-        bonus_skills=Skills.Stealth,
-        bonus_types=additional_creature_types,
-        stat_threshold=16,
-        **args,
-    )
-
-
-class _CunningAction(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Cunning Action", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_sneaky(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        feature = Feature(
-            name="Cunning Action",
-            description="Dash, Disengage, or Hide",
-            action=ActionType.BonusAction,
+class SneakyPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        super().__init__(
+            name=name,
+            source=source,
+            theme="sneaky",
+            power_level=power_level,
+            power_type=PowerType.Theme,
+            create_date=create_date,
+            score_args=dict(
+                require_roles=[
+                    MonsterRole.Ambusher,
+                    MonsterRole.Skirmisher,
+                    MonsterRole.Leader,
+                ],
+                require_stats=Stats.DEX,
+                bonus_skills=Skills.Stealth,
+                stat_threshold=14,
+            )
+            | score_args,
         )
 
-        return stats, feature
 
-
-class _SneakyStrike(PowerBackport):
+class _SneakyStrike(SneakyPower):
     def __init__(self):
-        super().__init__(name="Sneaky Strike", power_type=PowerType.Theme)
+        super().__init__(
+            name="Sneaky Strike",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
+            require_attack_types=AttackType.AllWeapon(),
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_sneaky(candidate, require_attack_types=AttackType.AllWeapon())
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(max(1.5 * stats.cr, 2 + stats.cr), force_die=Die.d6)
 
         feature = Feature(
@@ -67,113 +68,100 @@ class _SneakyStrike(PowerBackport):
             action=ActionType.BonusAction,
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _FalseAppearance(PowerBackport):
+class _FalseAppearance(SneakyPower):
     def __init__(self):
         super().__init__(
-            name="False Appearance", power_type=PowerType.Theme, power_level=RIBBON_POWER
-        )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_sneaky(
-            candidate,
-            additional_creature_types={
+            name="False Appearance",
+            source="SRD1.2 Animated Armor",
+            power_level=RIBBON_POWER,
+            bonus_types=[
                 CreatureType.Plant,
                 CreatureType.Construct,
                 CreatureType.Ooze,
-            },
+            ],
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="False Appearance",
             action=ActionType.Feature,
             description=f"As long as {stats.selfref} remains motionless it is indistinguishable from its surrounding terrain.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _Vanish(PowerBackport):
-    """This creature can use the Disengage action, then can hide if they have cover"""
-
+class _Vanish(SneakyPower):
     def __init__(self):
-        super().__init__(name="Vanish", power_type=PowerType.Theme)
+        super().__init__(name="Vanish", source="SRD5.1 Ranger")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_sneaky(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
-        stats = stats.copy(attributes=new_attrs)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Vanish",
-            description=f"{stats.selfref.capitalize()} can use the Disengage action, then can hide if they have cover.",
+            description=f"{stats.selfref.capitalize()} can use the Hide action as a bonus action even if only lightly obscured.",
             action=ActionType.BonusAction,
         )
-        return stats, feature
+        return [feature]
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
+        stats = stats.copy(attributes=new_attrs)
+        return stats
 
 
-class _StayDown(PowerBackport):
+class _CheapShot(SneakyPower):
     def __init__(self):
-        super().__init__(name="Stay Down", power_type=PowerType.Theme)
+        super().__init__(
+            name="Cheap Shot",
+            source="FoeFoundryOriginal",
+            require_attack_types=AttackType.AllMelee(),
+            power_level=LOW_POWER,
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_sneaky(candidate, require_attack_types=AttackType.AllMelee())
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         reach = stats.attack.reach or 5
 
         feature = Feature(
-            name="Stay Down",
+            name="Cheap Shot",
             action=ActionType.BonusAction,
             description=f"{stats.selfref.capitalize()} kicks a prone creature within {reach} ft. The target must make a DC {dc} Strength \
                 save or have its speed reduced to zero until the end of its next turn.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-# TODO A5E SRD - Deadeye Shot
-class _ExploitAdvantage(PowerBackport):
+class _ExploitAdvantage(SneakyPower):
     def __init__(self):
-        super().__init__(name="Exploit Advantage", power_type=PowerType.Theme)
+        super().__init__(
+            name="Deadeye Shot",
+            source="A5E SRD Deadeye Shot",
+            require_attack_types=AttackType.AllRanged(),
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_sneaky(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
-            name="Exploit Advantage",
+            name="Deadeye Shot",
             action=ActionType.BonusAction,
             uses=3,
             description=f"{stats.selfref.capitalize()} gains advantage on the next attack it makes until end of turn.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-CunningAction: Power = _CunningAction()
+CheapShot: Power = _CheapShot()
 ExploitAdvantage: Power = _ExploitAdvantage()
 FalseAppearance: Power = _FalseAppearance()
 SneakyStrike: Power = _SneakyStrike()
-StayDown: Power = _StayDown()
 Vanish: Power = _Vanish()
 
 
 SneakyPowers: List[Power] = [
-    CunningAction,
+    CheapShot,
     ExploitAdvantage,
     FalseAppearance,
     SneakyStrike,
-    StayDown,
     Vanish,
 ]

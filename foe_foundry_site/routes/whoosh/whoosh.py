@@ -5,8 +5,9 @@ from whoosh.fields import ID, KEYWORD, TEXT, Schema
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import QueryParser
 
+from foe_foundry.powers.all import AllPowers
+
 from ...data.power import PowerModel
-from .temp import AllPowers
 
 INDEX_DIR = Path(__file__).parent / "index"
 

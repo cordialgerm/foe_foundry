@@ -640,14 +640,14 @@ class _Samurai(PowerWithStandardScoring):
                 {stats.roleref} has advantage on attack rolls and saving throws",
         )
 
-        feature2 = tough.NotDeadYet.generate_features(stats)
+        feature2 = tough.JustAScratch.generate_features(stats)
 
         return [feature1] + feature2
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(creature_class="Samurai")
         stats = stats.scale({Stats.STR: Stats.STR.Boost(2)})
-        stats = tough.NotDeadYet.modify_stats(stats)
+        stats = tough.JustAScratch.modify_stats(stats)
         return stats
 
 
@@ -675,7 +675,7 @@ class _Monk(PowerWithStandardScoring):
         return feature1 + feature2
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.copy(secondary_class="Monk")
+        stats = stats.copy(creature_class="Monk")
         stats = stats.scale({Stats.DEX: Stats.DEX.Boost(2)})
         stats = bruiser.StunningBlow.modify_stats(stats)
         stats = fast.Evasion.modify_stats(stats)
@@ -707,14 +707,14 @@ class _Paladin(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        feature1 = organized.Inspiring.generate_features(stats)
+        feature1 = organized.InspiringCommander.generate_features(stats)
         feature2 = holy.DivineSmite.generate_features(stats)
         return feature1 + feature2
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(secondary_damage_type=DamageType.Radiant, creature_class="Paladin")
         stats = stats.scale({Stats.CHA: Stats.CHA.Boost(2)})
-        stats = organized.Inspiring.modify_stats(stats)
+        stats = organized.InspiringCommander.modify_stats(stats)
         stats = holy.DivineSmite.modify_stats(stats)
         return stats
 
@@ -850,14 +850,16 @@ WarPriest: Power = _WarPriest()
 
 ClassPowers: List[Power] = (
     [
-        Artificer,
         ArcaneArcher,
+        Artificer,
         Barbarian,
         Bard,
         BlessedWarrior,
         Cavalier,
         DeathKnight,
         Druid,
+        Monk,
+        Paladin,
         PsiWarrior,
         Samurai,
         Ranger,

@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.421bdbc8.css",
-    "main.js": "/static/js/main.d66002e5.js",
+    "main.js": "/static/js/main.c308f013.js",
     "static/media/aberration-mutating.png": "/static/media/aberration-mutating.123b1c7bd9c859ef26ec.png",
     "static/media/plant-treant-2.png": "/static/media/plant-treant-2.672f4cfd42e1ccdf1dad.png",
     "static/media/beast-tiger.png": "/static/media/beast-tiger.0fa6b8aa285362913fec.png",
     "static/media/giant-ogre-1.png": "/static/media/giant-ogre-1.d1df21c0aaea2700a94d.png",
+    "static/media/celestial-unicorn-2.png": "/static/media/celestial-unicorn-2.a3b4a11efe5b0743cfda.png",
+    "static/media/fey-pixie.png": "/static/media/fey-pixie.bbaac32cb8693cb2d44a.png",
     "static/media/beast-mammoth.png": "/static/media/beast-mammoth.1dc1b454dc4dfe9d25fc.png",
     "static/media/aberration-tentacle-monster.png": "/static/media/aberration-tentacle-monster.e772ea1d4706043b42be.png",
     "static/media/monstrosity-griffon.png": "/static/media/monstrosity-griffon.8599d31781f5232b6241.png",
@@ -15,6 +17,7 @@
     "static/media/humanoid-orc2.png": "/static/media/humanoid-orc2.bfde0e582e1f06471cf3.png",
     "static/media/fey-satyr-2.png": "/static/media/fey-satyr-2.cc60fc3af975cc006144.png",
     "static/media/humanoid-dwarf-warrior.png": "/static/media/humanoid-dwarf-warrior.d264a4ce30a0e688c665.png",
+    "static/media/monstrosity-insectoid-1.png": "/static/media/monstrosity-insectoid-1.5cb6387ad29eb1dfe6ce.png",
     "static/media/aberration-chuul.png": "/static/media/aberration-chuul.5ab2f196d9ab2cc7712c.png",
     "static/media/undead-lich1.png": "/static/media/undead-lich1.256228ef3ce6563bca41.png",
     "static/media/fiend-succubus-2.png": "/static/media/fiend-succubus-2.eeb5c5641ec0ba26590a.png",
@@ -51,8 +54,11 @@
     "static/media/construct-iron-golem.png": "/static/media/construct-iron-golem.e695cdfeb7f09747bd01.png",
     "static/media/undead-knight-1.png": "/static/media/undead-knight-1.62f62c8d2691fea88a99.png",
     "static/media/undead-zombie-3.png": "/static/media/undead-zombie-3.9ca21b0a132e7aa9ddbf.png",
+    "static/media/fey-eladrin-prince.png": "/static/media/fey-eladrin-prince.6eafd0fbf3973d753a01.png",
     "static/media/dragon-3.png": "/static/media/dragon-3.06d853eb224c2de5e9c3.png",
+    "static/media/undead-will-o-wisp.png": "/static/media/undead-will-o-wisp.762aa37053ac20a6ebda.png",
     "static/media/undead-king.png": "/static/media/undead-king.584824484469e5ac4ca4.png",
+    "static/media/undead-ghoul-2.png": "/static/media/undead-ghoul-2.b9d345e31d718f23e3df.png",
     "static/media/fiend-balor.png": "/static/media/fiend-balor.641ce0f3d9c733feda1d.png",
     "static/media/fiend-demon.png": "/static/media/fiend-demon.2e161157f71107b5332f.png",
     "static/media/undead-vampire-2.png": "/static/media/undead-vampire-2.58574012a51bd95b72fe.png",
@@ -70,13 +76,17 @@
     "static/media/humanoid-orc1.png": "/static/media/humanoid-orc1.676d45c055d9cd5ee2be.png",
     "static/media/aberration-eye-monster-2.png": "/static/media/aberration-eye-monster-2.8350617ffdebdc08c5e5.png",
     "static/media/fiend-succubus.png": "/static/media/fiend-succubus.e6025aa5cb8414802a29.png",
+    "static/media/celestial-angel-female-1.png": "/static/media/celestial-angel-female-1.e40c2b1856f67cfbbb03.png",
     "static/media/elemental-mephits.png": "/static/media/elemental-mephits.d9f485fa2d0e58fbf530.png",
+    "static/media/undead-rising-grave.png": "/static/media/undead-rising-grave.1d085e216ad648687e9a.png",
     "static/media/monstrosity-griffon2.png": "/static/media/monstrosity-griffon2.c32af0b55aea6bb71d3e.png",
     "static/media/undead-lich2.png": "/static/media/undead-lich2.5dcebaa1a8ae4a6c8894.png",
     "static/media/fey-pixie-monsters.png": "/static/media/fey-pixie-monsters.94d0848cf7c057d01dd3.png",
     "static/media/dragon-1.png": "/static/media/dragon-1.464e28579fd63ff976b9.png",
     "static/media/ooze-slime-monster.png": "/static/media/ooze-slime-monster.7bc5d6f9b55275d2372d.png",
     "static/media/ooze-cube.png": "/static/media/ooze-cube.f65c01a842bd83c91a02.png",
+    "static/media/undead-ghoul-1.png": "/static/media/undead-ghoul-1.feeadcb1fe3b041cfacf.png",
+    "static/media/monstrosity-pegasus.png": "/static/media/monstrosity-pegasus.e6dfb9d2954f656f9565.png",
     "static/media/humanoid-goblins.png": "/static/media/humanoid-goblins.abdfd841faeea7f62ab9.png",
     "static/media/dragon-2.png": "/static/media/dragon-2.fdcfbc8c7630ce076d5d.png",
     "static/media/fey-prince.png": "/static/media/fey-prince.123734259b149f34009e.png",
@@ -88,10 +98,10 @@
     "static/media/watercolor-mask.png": "/static/media/watercolor-mask.bd77d520aeedaedbb245.png",
     "index.html": "/index.html",
     "main.421bdbc8.css.map": "/static/css/main.421bdbc8.css.map",
-    "main.d66002e5.js.map": "/static/js/main.d66002e5.js.map"
+    "main.c308f013.js.map": "/static/js/main.c308f013.js.map"
   },
   "entrypoints": [
     "static/css/main.421bdbc8.css",
-    "static/js/main.d66002e5.js"
+    "static/js/main.c308f013.js"
   ]
 }
