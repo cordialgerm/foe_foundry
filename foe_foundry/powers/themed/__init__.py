@@ -58,7 +58,7 @@ ThemedPowers: List[Power] = (
     + fast.FastPowers
     + fearsome.FearsomePowers
     + fighting_styles.FightingStylePowers
-    + flying.FlyerPowers
+    + flying.FlyingPowers
     + gadget.GadgetPowers
     + holy.HolyPowers
     + monstrous.MonstrousPowers

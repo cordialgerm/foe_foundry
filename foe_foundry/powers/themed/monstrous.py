@@ -1,11 +1,13 @@
-from math import ceil, floor
-from typing import Dict, List, Set, Tuple
+from datetime import datetime
+from math import ceil
+from typing import List, Tuple
 
-import numpy as np
 from numpy.random import Generator
 
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
+
 from ...attack_template import natural, spell
-from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, Bleeding, DamageType, Dazed, Swallowed
 from ...die import Die, DieFormula
@@ -13,56 +15,49 @@ from ...features import ActionType, Feature
 from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scoring import AttackNames, score
+from ..power import (
+    HIGH_POWER,
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
+from ..scoring import score
 
 
-def _score_could_be_monstrous(
-    candidate: BaseStatblock,
-    min_size: Size | None = None,
-    additional_creature_types: Set[CreatureType] | None = None,
-    require_living: bool = True,
-    attack_names: AttackNames = None,
-) -> float:
-    def is_living(c: BaseStatblock) -> bool:
-        return c.creature_type.is_living
-
-    creature_types = {CreatureType.Monstrosity, CreatureType.Beast}
-    if additional_creature_types is not None:
-        creature_types |= additional_creature_types
-
-    return score(
-        candidate=candidate,
-        require_types=creature_types,
-        require_callback=is_living if require_living else None,
-        attack_names=attack_names,
-        require_size=min_size,
-    )
-
-
-def _as_monstrous(candidate: BaseStatblock, boost_speed: int = 10) -> BaseStatblock:
-    changes: dict = dict(attack_type=AttackType.MeleeNatural)
-
-    if boost_speed != 0:
-        new_speed = candidate.speed.delta(boost_speed)
-        changes.update(speed=new_speed)
-
-    return candidate.copy(**changes)
-
-
-class _Constriction(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Constriction", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_monstrous(
-            candidate, attack_names=["-", natural.Slam, natural.Tail]
+class MonstrousPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        super().__init__(
+            name=name,
+            source=source,
+            theme="monstrous",
+            power_type=PowerType.Theme,
+            power_level=power_level,
+            create_date=create_date,
+            score_args=dict(require_types={CreatureType.Monstrosity, CreatureType.Beast})
+            | score_args,
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = _as_monstrous(stats)
+
+class _Constriction(MonstrousPower):
+    def __init__(self):
+        super().__init__(
+            name="Constriction",
+            source="SRD5.1 Giant Constrictor Snake",
+            attack_names=["-", natural.Slam, natural.Tail],
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         reach = 5 if stats.size <= Size.Medium else 10
         dc = stats.difficulty_class
         dmg = DieFormula.target_value(max(2, ceil(stats.cr)), force_die=Die.d4)
@@ -74,29 +69,24 @@ class _Constriction(PowerBackport):
             description=f"{stats.selfref.capitalize()} chooses a target it can see within {reach} feet. The target must make a DC {dc} Strength saving throw or become **Grappled** (escape DC {dc}). \
                 While grappled in this way, the target is also **Restrained** and takes {dmg.description} ongoing bludgeoning damage at the start of each of its turns.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _Swallow(PowerBackport):
+class _Swallow(MonstrousPower):
     def __init__(self):
-        super().__init__(name="Swallow", power_type=PowerType.Theme, power_level=HIGH_POWER)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_monstrous(
-            candidate,
-            min_size=Size.Large,
-            additional_creature_types={CreatureType.Ooze},
-            attack_names={
-                "-",
-                natural.Bite,
-            },
+        super().__init__(
+            name="Swallow",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
+            require_size=Size.Large,
+            require_types={CreatureType.Monstrosity, CreatureType.Beast, CreatureType.Ooze},
+            attack_names={"-", natural.Bite},
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | None]:
-        stats = _as_monstrous(stats)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
 
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
         threshold = easy_multiple_of_five(3 * stats.cr, min_val=5, max_val=40)
         swallowed = Swallowed(
@@ -113,46 +103,43 @@ class _Swallow(PowerBackport):
             name="Swallow",
             additional_description=f"On a hit, the target must make a DC {dc} Dexterity saving throw. On a failure, it is {swallowed}",
         )
+        return stats
 
-        return stats, None
 
-
-class _Pounce(PowerBackport):
+class _Pounce(MonstrousPower):
     def __init__(self):
-        super().__init__(name="Pounce", power_type=PowerType.Theme)
+        super().__init__(name="Pounce", source="SRD5.1 Panther", power_level=LOW_POWER)
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_monstrous(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = _as_monstrous(stats)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Pounce",
             action=ActionType.Action,
-            description=f"{stats.selfref.capitalize()} jumps 20 feet toward a creature it can see, attempting to knock it prone. The target must make a DC {dc} Strength save or be knocked prone. \
+            description=f"{stats.selfref.capitalize()} jumps 20 feet toward a creature it can see, attempting to knock it prone. The target must make a DC {dc} Strength save or be knocked **Prone**. \
                 Then, {stats.selfref} makes an attack against the target.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _Corrosive(PowerBackport):
+class _Corrosive(MonstrousPower):
     def __init__(self):
-        super().__init__(name="Corrosive", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_monstrous(
-            candidate,
+        super().__init__(
+            name="Corrosive",
+            source="SRD5.1 Rust Monster",
+            power_level=HIGH_POWER,
             attack_names={
                 "-",
                 natural.Spit,
             },
+            bonus_damage=DamageType.Acid,
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = _as_monstrous(stats, boost_speed=0)
-        stats = stats.copy(secondary_damage_type=DamageType.Acid)
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Acid)
+        return stats
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = int(ceil(max(5, 2 * stats.cr)))
         feature = Feature(
@@ -166,41 +153,18 @@ class _Corrosive(PowerBackport):
                 If the object is either metal armor or a shield it takes a permanent and cumulative -1 penalty to the AC it offers. \
                 Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _DevourAlly(PowerBackport):
+class _LingeringWound(MonstrousPower):
     def __init__(self):
-        super().__init__(name="Devour Ally", power_type=PowerType.Theme, power_level=LOW_POWER)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_monstrous(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = _as_monstrous(stats)
-        size = stats.size.decrement()
-        hp = int(ceil(max(5 + stats.cr, 3 + 2 * stats.cr, 3 * stats.cr)))
-        feature = Feature(
-            name="Devour Ally",
-            action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} swallows an allied creature that is within 5 feet of this creature and is {size.capitalize()} or smaller. \
-                {stats.selfref.capitalize()} regains {hp} hp and the devoured ally is reduced to 0 hp.",
-        )
-        return stats, feature
-
-
-class _LingeringWound(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Lingering Wound", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_monstrous(
-            candidate, attack_names=[natural.Bite, natural.Claw, natural.Horns]
+        super().__init__(
+            name="Lingering Wound",
+            source="FoeFoundryOriginal",
+            attack_names=[natural.Bite, natural.Claw, natural.Horns],
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = _as_monstrous(stats)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = max(10, min(15, stats.difficulty_class_easy))
         dmg = DieFormula.target_value(0.75 * stats.attack.average_damage, force_die=Die.d6)
         bleeding = Bleeding(damage=dmg, dc=dc)
@@ -211,48 +175,39 @@ class _LingeringWound(PowerBackport):
             description=f"Immediately after hitting a creature, {stats.selfref} inflicts that creature with a lingering wound. \
                 The creature gains {bleeding}",
         )
-        return stats, feature
+        return [feature]
 
 
-class _Rampage(PowerBackport):
+class _Rampage(MonstrousPower):
     def __init__(self):
-        super().__init__(name="Rampage", power_type=PowerType.Theme)
+        super().__init__(name="Rampage", source="SRD5.1 Gnoll")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_monstrous(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = _as_monstrous(stats)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Rampage",
             action=ActionType.Reaction,
             description=f"When a creature within 30 feet is reduced to 0 hitpoints, {stats.selfref} may move up to half its speed and make an attack.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-# TODO - A5E Basilisk
-class _PetrifyingGaze(PowerBackport):
+class _PetrifyingGaze(MonstrousPower):
     def __init__(self):
         super().__init__(
-            name="Petrifying Gaze", power_type=PowerType.Theme, power_level=HIGH_POWER
-        )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
+            name="Petrifying Gaze",
+            source="SRD5.1 Basilisk",
+            power_level=HIGH_POWER,
             require_types={
                 CreatureType.Monstrosity,
                 CreatureType.Celestial,
                 CreatureType.Undead,
+                CreatureType.Aberration,
             },
             bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
             attack_names={"-", spell.Gaze},
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dazed = Dazed()
 
@@ -261,57 +216,107 @@ class _PetrifyingGaze(PowerBackport):
             action=ActionType.Reaction,
             recharge=4,
             description=f"Whenever a creature within 60 feet looks at {stats.selfref}, it must make a DC {dc} Constitution saving throw. \
-                On a failed save, the creature magically begins to turn to stone and is {dazed}. It must repeat the saving throw at the end of its next turn. \
+                On a failed save, the creature magically begins to turn to stone and is {dazed.caption}. It must repeat the saving throw at the end of its next turn. \
                 On a success, the effect ends. On a failure, the creature is **Petrified** until it is freed by the *Greater Restoration* spell or other magic.",
         )
-
-        return stats, feature
-
-
-# TODO A5E SRD - Bulette
-# Jaw Clamp (1/Day). When an attacker
-# within 5 feet of the bulette misses it with a
-# melee attack, the bulette makes a bite
-# attack against the attacker. On a hit, the
-# attacker is grappled (escape DC 15). Until
-# this grapple ends, the grappled creature
-# is restrained, and the only attack the
-# bulette can make is a bite against the
-# grappled creature.
+        return [feature]
 
 
-# TODO A5E SRD - Cockatrice
-# Frenzy (1/Day). When attacked by a
-# creature it can see within 20 feet, the
-# cockatrice moves up to half its Speed and
-# makes a bite attack against that creature.
+class _JawClamp(MonstrousPower):
+    def __init__(self):
+        super().__init__(
+            name="Jaw Clamp",
+            source="A5E SRD Bulette",
+            power_level=LOW_POWER,
+            create_date=datetime(2023, 11, 24),
+            attack_names=["-", natural.Bite],
+        )
 
-# TODO A5E SRD - Glabrezu
-# Rend. If grappling the same target with
-# both pincers, the glabrezu rips at the
-# target, ending both grapples and dealing
-# 27 (4d10 + 5) slashing damage. If this
-# damage reduces a creature to 0 hit
-# points, it dies and is torn in half.
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class_easy
+        feature = Feature(
+            name="Jaw Clamp",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"When an attacker within 5 feet of {stats.selfref} misses it with a melee attack, {stats.selfref} makes a bite attack against the attacker. \
+                On a hit, the attacker is **Grappled** (escape DC {dc}). Until this grapple ends, the grappled creature is **Restrained**, and the only attack {stats.selfref} can make is a bite against the grappled creature.",
+        )
+        return [feature]
+
+
+class _Frenzy(MonstrousPower):
+    def __init__(self):
+        super().__init__(
+            name="Frenzy",
+            source="A5E SRD Cockatrice",
+            power_level=LOW_POWER,
+            create_date=datetime(2023, 11, 24),
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Frenzy",
+            action=ActionType.Reaction,
+            uses=2,
+            description=f"When attacked by a creature it can see within 20 feet, {stats.selfref} moves up to half its Speed and makes an attack against that creature.",
+        )
+        return [feature]
+
+
+class _TearApart(MonstrousPower):
+    def __init__(self):
+        super().__init__(
+            name="Tear Apart",
+            source="A5E SRD Glabrezu",
+            power_level=HIGH_POWER,
+            create_date=datetime(2023, 11, 24),
+            attack_names=["-", natural.Claw],
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class_easy
+        feature1 = Feature(
+            name="Claw Grapple",
+            action=ActionType.Feature,
+            modifies_attack=True,
+            description=f"On a hit, the target is **Grappled** (escape DC {dc})",
+        )
+
+        dmg = DieFormula.target_value(
+            0.8 * stats.multiattack * stats.attack.average_damage, force_die=Die.d10
+        )
+
+        feature2 = Feature(
+            name="Tear Apart",
+            action=ActionType.Action,
+            description=f"{stats.selfref} rips at a target it is grappling, releasing the grapple. The creature must make a DC {dc} Strength saving throw, \
+                taking {dmg} slashing damage on a failure and half as much on a success. If this damage reduces a creature to 0 hit points, it dies and is torn in half.",
+        )
+
+        return [feature1, feature2]
 
 
 Constriction: Power = _Constriction()
 Corrosive: Power = _Corrosive()
-DevourAlly: Power = _DevourAlly()
+Frenzy: Power = _Frenzy()
+JawClamp: Power = _JawClamp()
 LingeringWound: Power = _LingeringWound()
 PetrifyingGaze: Power = _PetrifyingGaze()
 Pounce: Power = _Pounce()
 Rampage: Power = _Rampage()
 Swallow: Power = _Swallow()
+TearApart: Power = _TearApart()
 
 
 MonstrousPowers: List[Power] = [
     Constriction,
     Corrosive,
-    DevourAlly,
+    Frenzy,
+    JawClamp,
     LingeringWound,
     PetrifyingGaze,
     Pounce,
     Rampage,
     Swallow,
+    TearApart,
 ]

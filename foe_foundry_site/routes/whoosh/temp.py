@@ -18,6 +18,12 @@ from foe_foundry.powers.themed import (
     earthy,
     fast,
     fearsome,
+    fighting_styles,
+    flying,
+    gadget,
+    holy,
+    monstrous,
+    organized,
 )
 
 # TODO - add all powers
@@ -41,4 +47,10 @@ AllPowers = (
     + earthy.EarthyPowers
     + fast.FastPowers
     + fearsome.FearsomePowers
+    + fighting_styles.FightingStylePowers
+    + flying.FlyingPowers
+    + gadget.GadgetPowers
+    + holy.HolyPowers
+    + monstrous.MonstrousPowers
+    + organized.OrganizedPowers
 )

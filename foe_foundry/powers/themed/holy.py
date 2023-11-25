@@ -1,12 +1,10 @@
-from typing import List, Set, Tuple
-
-import numpy as np
-from numpy.random import Generator
+from datetime import datetime
+from typing import List
 
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
-from ...attack_template import natural, spell, weapon
+from ...attack_template import weapon
 from ...attributes import Stats
 from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
@@ -14,35 +12,44 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_holy(candidate: BaseStatblock, **kwargs) -> float:
-    args: dict = dict(
-        candidate=candidate,
-        require_stats=Stats.WIS,
-        require_types=CreatureType.Humanoid,
-        require_damage=DamageType.Radiant,
-        bonus_roles=MonsterRole.Leader,
-    )
-    args.update(kwargs)
-    return score(**args)
+class HolyPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        super().__init__(
+            name=name,
+            source=source,
+            theme="holy",
+            power_type=PowerType.Theme,
+            create_date=create_date,
+            power_level=power_level,
+            score_args=dict(
+                require_stats=Stats.WIS,
+                require_types=CreatureType.Humanoid,
+                require_damage=DamageType.Radiant,
+                bonus_roles=MonsterRole.Leader,
+            )
+            | score_args,
+        )
 
 
-class _DivineSmite(PowerBackport):
+class _DivineSmite(HolyPower):
     def __init__(self):
-        super().__init__(name="Divine Smite", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_holy(
-            candidate,
+        super().__init__(
+            name="Divine Smite",
+            source="FoeFoundryOriginal",
             attack_names=[weapon.MaceAndShield, weapon.Greatsword, weapon.SwordAndShield],
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = DieFormula.target_value(0.7 * stats.attack.average_damage, force_die=Die.d10)
         burning = conditions.Burning(dmg, damage_type=DamageType.Radiant)
@@ -52,20 +59,14 @@ class _DivineSmite(PowerBackport):
             recharge=5,
             description=f"Immediately after hitting a target, {stats.roleref} forces the target to make a DC {dc} Constitution saving throw. On a failure, the target is {burning}",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _MassCureWounds(PowerBackport):
+class _MassCureWounds(HolyPower):
     def __init__(self):
-        super().__init__(name="Mass Cure Wounds", power_type=PowerType.Theme)
+        super().__init__(name="Mass Cure Wounds", source="SRD5.1 Mass Cure Wounds")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_holy(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Mass Cure Wounds",
             action=ActionType.Action,
@@ -73,20 +74,14 @@ class _MassCureWounds(PowerBackport):
             replaces_multiattack=2,
             description=f"{stats.roleref.capitalize()} casts *Mass Cure Wounds*",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _WordOfRadiance(PowerBackport):
+class _WordOfRadiance(HolyPower):
     def __init__(self):
-        super().__init__(name="Word of Radiance", power_type=PowerType.Theme)
+        super().__init__(name="Word of Radiance", source="SRD 5.1 Word of Radiance")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_holy(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = DieFormula.target_value(0.6 * stats.attack.average_damage, force_die=Die.d6)
         dc = stats.difficulty_class
 
@@ -97,8 +92,7 @@ class _WordOfRadiance(PowerBackport):
             description=f"{stats.roleref.capitalize()} utters a divine word and it shines with burning radiance. \
                 Each hostile creature within 10 feet must make a DC {dc} Constitution saving throw or take {damage.description} radiant damage.",
         )
-
-        return stats, feature
+        return [feature]
 
 
 DivineSmite: Power = _DivineSmite()

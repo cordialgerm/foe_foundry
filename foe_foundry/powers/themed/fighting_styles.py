@@ -1,66 +1,60 @@
-from typing import List, Set, Tuple, TypeVar
+from typing import List
 
-import numpy as np
-from numpy.random import Generator
-
-from ...attack_template import natural, spell, weapon
-from ...attributes import Stats
+from ...attack_template import natural, weapon
 from ...creature_types import CreatureType
-from ...damage import DamageType, conditions
+from ...damage import conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scoring import AttackNames, score
+from ..power import HIGH_POWER, LOW_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-class _Dueling(PowerBackport):
+class _Dueling(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Dueling", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
-            bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Leader],
-            attack_names=[
-                "-",
-                weapon.MaceAndShield,
-                weapon.SpearAndShield,
-                weapon.SpearAndShield,
-                weapon.JavelinAndShield,
-                weapon.RapierAndShield,
-            ],
+        super().__init__(
+            name="Dueling",
+            source="FoeFoundryOriginal",
+            theme="fighting_style",
+            power_type=PowerType.Theme,
+            score_args=dict(
+                bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Leader],
+                attack_names=[
+                    "-",
+                    weapon.MaceAndShield,
+                    weapon.SpearAndShield,
+                    weapon.SpearAndShield,
+                    weapon.JavelinAndShield,
+                    weapon.RapierAndShield,
+                ],
+            ),
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
-            name="Dueling Expert",
+            name="Expert Duelist",
             action=ActionType.Feature,
             description=f"If {stats.selfref} makes a melee attack against a creature, then that creature can't make opportunity attacks against {stats.selfref} until the end of {stats.selfref}'s turn.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _ExpertBrawler(PowerBackport):
+class _ExpertBrawler(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Expert Brawler", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
-            require_types=[CreatureType.Humanoid, CreatureType.Giant],
-            bonus_roles=[MonsterRole.Bruiser, MonsterRole.Controller],
-            attack_names={"-", natural.Slam},
+        super().__init__(
+            name="Expert Brawler",
+            source="FoeFoundryOriginal",
+            theme="fighting_style",
+            power_type=PowerType.Theme,
+            score_args=dict(
+                require_types=[CreatureType.Humanoid, CreatureType.Giant],
+                bonus_roles=[MonsterRole.Bruiser, MonsterRole.Controller],
+                attack_names={"-", natural.Slam},
+            ),
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = DieFormula.target_value(0.2 * stats.attack.average_damage, force_die=Die.d4)
         feature1 = Feature(
@@ -78,32 +72,32 @@ class _ExpertBrawler(PowerBackport):
                 and suffers {dmg.description} ongoing bludgeoning damage at the end of each of its turns.",
         )
 
-        return stats, [feature1, feature2]
+        return [feature1, feature2]
 
 
-class _Interception(PowerBackport):
+class _Interception(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Interception", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
-            attack_names={
-                "-",
-                weapon.SwordAndShield,
-                weapon.SpearAndShield,
-                weapon.Greataxe,
-                weapon.Polearm,
-                weapon.MaceAndShield,
-                weapon.RapierAndShield,
-                weapon.Shortswords,
-            },
-            require_roles=[MonsterRole.Defender, MonsterRole.Bruiser],
+        super().__init__(
+            name="Interception",
+            power_type=PowerType.Theme,
+            source="SRD5.1 Interception",
+            theme="fighting_style",
+            score_args=dict(
+                attack_names={
+                    "-",
+                    weapon.SwordAndShield,
+                    weapon.SpearAndShield,
+                    weapon.Greataxe,
+                    weapon.Polearm,
+                    weapon.MaceAndShield,
+                    weapon.RapierAndShield,
+                    weapon.Shortswords,
+                },
+                require_roles=[MonsterRole.Defender, MonsterRole.Bruiser],
+            ),
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(stats.speed.fastest_speed / 2.0, min_val=5, max_val=30)
         feature = Feature(
             name="Interception",
@@ -111,28 +105,29 @@ class _Interception(PowerBackport):
             description=f"If a friendly creature within {distance} ft becomes the target of an attack, {stats.selfref} can move up to {distance} ft and intercept the attack. \
                 The attack targets {stats.selfref} instead of the original target.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _BaitAndSwitch(PowerBackport):
+class _BaitAndSwitch(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Bait and Switch", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
-            require_types=CreatureType.Humanoid,
-            require_roles=[
-                MonsterRole.Defender,
-                MonsterRole.Skirmisher,
-                MonsterRole.Leader,
-                MonsterRole.Bruiser,
-            ],
+        super().__init__(
+            name="Bait and Switch",
+            source="FoeFoundryOriginal",
+            theme="fighting_style",
+            power_level=LOW_POWER,
+            power_type=PowerType.Theme,
+            score_args=dict(
+                require_types=CreatureType.Humanoid,
+                require_roles=[
+                    MonsterRole.Defender,
+                    MonsterRole.Skirmisher,
+                    MonsterRole.Leader,
+                    MonsterRole.Bruiser,
+                ],
+            ),
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         bonus = stats.attributes.primary_mod
         feature = Feature(
             name="Bait and Switch",
@@ -141,26 +136,26 @@ class _BaitAndSwitch(PowerBackport):
             description=f"{stats.selfref.capitalize()} switches places with a friendly creature within 5 feet. \
                 Until the end of its next turn, the friendly creature gains a +{bonus} bonus to its AC.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _ThrownWeaponExpert(PowerBackport):
+class _QuickToss(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Thrown Weapon Expert", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
-            attack_names={
-                "-",
-                weapon.JavelinAndShield,
-                weapon.Daggers,
-            },
+        super().__init__(
+            name="Quick Toss",
+            source="FoeFoundryOriginal",
+            theme="fighting_style",
+            power_type=PowerType.Theme,
+            score_args=dict(
+                attack_names={
+                    "-",
+                    weapon.JavelinAndShield,
+                    weapon.Daggers,
+                },
+            ),
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         attack = stats.attack.name
         feature = Feature(
             name="Quick Toss",
@@ -168,89 +163,93 @@ class _ThrownWeaponExpert(PowerBackport):
             uses=1,
             description=f"{stats.selfref.capitalize()} makes a {attack} attack as a bonus action",
         )
-        return stats, feature
+        return [feature]
 
 
-class _ArmorMaster(PowerBackport):
+class _ArmorMaster(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Armor Master", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
         def is_heavily_armored(b: BaseStatblock) -> bool:
             return any([c for c in b.ac_templates if c.is_heavily_armored])
 
-        return score(candidate=candidate, require_callback=is_heavily_armored)
+        super().__init__(
+            name="Armor Master",
+            source="A5E SRD Heavy Armor Expertise",
+            power_type=PowerType.Theme,
+            score_args=dict(require_callback=is_heavily_armored),
+        )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         reduction = stats.attributes.proficiency
         feature = Feature(
-            name="Heavy Armor Master",
+            name="Armor Master",
             action=ActionType.Feature,
             description=f"{stats.selfref.capitalize()} reduces the amount of bludgeoning, piercing, and slashing damage it receives by {reduction}.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _ShieldMaster(PowerBackport):
+class _ShieldMaster(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Shield Master", power_type=PowerType.Theme)
+        super().__init__(
+            name="Shield Master",
+            source="A5E SRD Shield Focus",
+            theme="fighting_style",
+            power_level=LOW_POWER,
+            power_type=PowerType.Theme,
+            score_args=dict(require_shield=True),
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(candidate=candidate, require_shield=True)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Shield Slam",
             action=ActionType.BonusAction,
             description=f"{stats.selfref.capitalize()} shoves a creature within 5 feet. It must make a DC {dc} Strength save or be pushed up to 5 feet and fall **Prone**.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _PolearmMaster(PowerBackport):
+class _PolearmMaster(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Polearm Master", power_type=PowerType.Theme)
+        super().__init__(
+            name="Polearm Master",
+            source="A5E SRD Polearm Savant",
+            theme="fighting_style",
+            power_type=PowerType.Theme,
+            score_args=dict(
+                attack_names={"-", weapon.Polearm}, bonus_roles=MonsterRole.Defender
+            ),
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(candidate=candidate, attack_names={"-", weapon.Polearm})
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Polearm Master",
             action=ActionType.Reaction,
             description=f"Whenever a hostile creature enters {stats.selfref.capitalize()}'s reach, it may make an attack of opportunity against that creature.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _GreatWeaponFighting(PowerBackport):
+class _OverpoweringStrike(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
-            name="Great Weapon Fighting", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name="Great Weapon Fighting",
+            source="FoeFoundryOriginal",
+            theme="fighting_style",
+            power_type=PowerType.Theme,
+            power_level=HIGH_POWER,
+            score_args=dict(
+                attack_names={
+                    "-",
+                    weapon.Polearm,
+                    weapon.Greataxe,
+                    weapon.Greatsword,
+                    weapon.Maul,
+                }
+            ),
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
-            attack_names={
-                "-",
-                weapon.Polearm,
-                weapon.Greataxe,
-                weapon.Greatsword,
-                weapon.Maul,
-            },
-        )
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = DieFormula.target_value(1.7 * stats.attack.average_damage, force_die=Die.d12)
         dmg_type = stats.attack.damage.damage_type
@@ -262,33 +261,31 @@ class _GreatWeaponFighting(PowerBackport):
             description=f"{stats.selfref.capitalize()} makes an overpowering strike against a creature within 5 feet. The target must make a DC {dc} Strength saving throw. \
                 On a failure, it takes {dmg.description} {dmg_type} damage and is knocked **Prone**. On a success, it instead takes half damage.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _TwoWeaponFighting(PowerBackport):
+class _WhirlwindOfSteel(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Two Weapon Fighting", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
-            attack_names={
-                "-",
-                weapon.Daggers,
-                weapon.Shortswords,
-            },
+        super().__init__(
+            name="Whirlwind of Steel",
+            source="FoeFoundryOriginal",
+            theme="fighting_style",
+            power_type=PowerType.Theme,
+            score_args=dict(
+                attack_names={
+                    "-",
+                    weapon.Daggers,
+                    weapon.Shortswords,
+                }
+            ),
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
-        dmg = DieFormula.target_value(stats.attack.average_damage, force_die=Die.d6)
-        # make sure that the damage formula is even so the bleeding can be half
-        if dmg.n_die % 2 == 1:
-            dmg = DieFormula.from_dice(mod=dmg.mod or 0, d6=dmg.n_die + 1)
-
+        dmg = DieFormula.target_value(
+            stats.attack.average_damage, force_die=Die.d6, force_even=True
+        )
         bleed_dmg = DieFormula.from_dice(d6=dmg.n_die // 2)
         bleeding = conditions.Bleeding(damage=bleed_dmg)
 
@@ -301,30 +298,29 @@ class _TwoWeaponFighting(PowerBackport):
             description=f"{stats.selfref.capitalize()} makes a lightning-fast flurry of strikes at a creature within 5 feet. The target must make a DC {dc} Dexterity saving throw. \
                 On a failure, it takes {dmg.description} {dmg_type} damage and is {bleeding.description}. On a success, it instead takes half damage. {bleeding.description_3rd}",
         )
-        return stats, feature
+        return [feature]
 
 
-class _Sharpshooter(PowerBackport):
+class _Sharpshooter(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
-            name="Sharpshooter", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name="Sharpshooter's Shot",
+            source="FoeFoundryOriginal",
+            theme="fighting_style",
+            power_type=PowerType.Theme,
+            power_level=HIGH_POWER,
+            score_args=dict(
+                require_roles=MonsterRole.Artillery,
+                attack_names={
+                    "-",
+                    weapon.Longbow,
+                    weapon.Shortbow,
+                    weapon.Crossbow,
+                },
+            ),
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
-            require_roles=MonsterRole.Artillery,
-            attack_names={
-                "-",
-                weapon.Longbow,
-                weapon.Shortbow,
-                weapon.Crossbow,
-            },
-        )
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         distance = stats.attack.range_max or stats.attack.range
         dmg = DieFormula.target_value(1.5 * stats.attack.average_damage)
@@ -338,30 +334,31 @@ class _Sharpshooter(PowerBackport):
             description=f"{stats.selfref.capitalize()} fires a deadly shot at a creature it can see within {distance} ft. The target must make a DC {dc} Dexterity saving throw. \
                 On a failure, it takes {dmg.description} {dmg_type} damage and is {dazed.caption} until the end of its next turn. {dazed.description_3rd}",
         )
-        return stats, feature
+        return [feature]
 
 
 ArmorMaster: Power = _ArmorMaster()
 BaitAndSwitch: Power = _BaitAndSwitch()
 Dueling: Power = _Dueling()
 ExpertBrawler: Power = _ExpertBrawler()
-GreatWeaponFighting: Power = _GreatWeaponFighting()
 Interception: Power = _Interception()
+OverpoweringStrike: Power = _OverpoweringStrike()
 PolearmMaster: Power = _PolearmMaster()
+QuickToss: Power = _QuickToss()
 Sharpshooter: Power = _Sharpshooter()
 ShieldMaster: Power = _ShieldMaster()
-ThrownWeaponExpert: Power = _ThrownWeaponExpert()
-TwoWeaponFighting: Power = _TwoWeaponFighting()
+WhirlwindOfSteel: Power = _WhirlwindOfSteel()
 
 FightingStylePowers: List[Power] = [
     ArmorMaster,
     BaitAndSwitch,
     Dueling,
     ExpertBrawler,
-    GreatWeaponFighting,
     Interception,
+    OverpoweringStrike,
     PolearmMaster,
+    QuickToss,
     Sharpshooter,
     ShieldMaster,
-    ThrownWeaponExpert,
+    WhirlwindOfSteel,
 ]
