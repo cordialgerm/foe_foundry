@@ -20,9 +20,6 @@ class EarthPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         **score_args,
     ):
-        def not_already_special_movement(c: BaseStatblock) -> bool:
-            return not (c.speed.fly or 0) and not (c.speed.swim or 0)
-
         super().__init__(
             name=name,
             source=source,
@@ -32,15 +29,24 @@ class EarthPower(PowerWithStandardScoring):
             theme="earth",
             score_args=dict(
                 require_types=[CreatureType.Beast, CreatureType.Monstrosity, CreatureType.Ooze],
-                require_callback=not_already_special_movement,
-                **score_args,
-            ),
+            )
+            | score_args,
         )
 
 
 class _Burrower(EarthPower):
     def __init__(self):
-        super().__init__(name="Burrower", source="SRD5.1 Purple Worm", power_level=RIBBON_POWER)
+        def not_already_special_movement(c: BaseStatblock) -> bool:
+            return (
+                not (c.speed.fly or 0) and not (c.speed.swim or 0) and not (c.speed.climb or 0)
+            )
+
+        super().__init__(
+            name="Burrower",
+            source="SRD5.1 Purple Worm",
+            power_level=RIBBON_POWER,
+            require_callback=not_already_special_movement,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         new_speed = stats.speed.copy(burrow=stats.speed.walk)
@@ -60,11 +66,17 @@ class _Burrower(EarthPower):
 
 class _Climber(EarthPower):
     def __init__(self):
+        def not_already_special_movement(c: BaseStatblock) -> bool:
+            return (
+                not (c.speed.fly or 0) and not (c.speed.swim or 0) and not (c.speed.climb or 0)
+            )
+
         super().__init__(
             name="Climber",
             source="SRD5.1 Giant Spider",
             power_level=RIBBON_POWER,
             bonus_roles=[MonsterRole.Artillery, MonsterRole.Ambusher],
+            require_callback=not_already_special_movement,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

@@ -55,7 +55,12 @@ class _PackTactics(Warrior):
             name="Pack Tactics",
             source="SRD5.1 Wolf",
             require_types={CreatureType.Beast, CreatureType.Humanoid, CreatureType.Monstrosity},
-            bonus_roles={MonsterRole.Bruiser, MonsterRole.Ambusher, MonsterRole.Skirmisher},
+            bonus_roles={
+                MonsterRole.Leader,
+                MonsterRole.Bruiser,
+                MonsterRole.Ambusher,
+                MonsterRole.Skirmisher,
+            },
             power_level=HIGH_POWER,
         )
 

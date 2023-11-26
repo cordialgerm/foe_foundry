@@ -138,7 +138,9 @@ class _FiendishTeleporation(FiendishPower):
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} disappears and reappears in a burst of flame. It teleports up to {distance} feet to an unoccupied location it can see. \
-                Each other creature within 10 feet of {stats.selfref} either before or after it teleports must make a DC {dc} Dexterity saving throw. On a failure, it takes {dmg.description} fire damage.",
+                {stats.selfref.capitalize()} may choose to bring one friendly creature within 5 feet or a creature it has grappled with it. \
+                Each other creature that did not teleport within 10 feet of {stats.selfref} either before or after it teleports must make a DC {dc} Dexterity saving throw. \
+                On a failure, it takes {dmg.description} fire damage.",
         )
         return [feature]
 

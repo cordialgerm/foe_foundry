@@ -154,7 +154,7 @@ class _DivineMercy(CelestialPower):
             name="Divine Mercy",
             action=ActionType.Reaction,
             description=f"Whenever a creature that is within 60 feet of {stats.selfref} that can see or hear it is hit by an attack, fails a saving throw, or is reduced to 0 hitpoints, \
-                {stats.selfref} may offer divine mercy to that creature. If the creature accepts, it heals {healing} hitpoints and the {stats.selfref} may choose to end any negative conditions affecting that creature. \
+                {stats.selfref} may offer divine mercy to that creature. If the creature accepts, it heals {healing} hitpoints and {stats.selfref} may choose to end any negative conditions affecting that creature. \
                 The creature becomes **Charmed** by {stats.selfref} and follows its instructions to the best of its ability. \
                 Whenever the creature completes a long rest, it may make a DC {dc} Charisma saving throw. On a success, the creature is no longer charmed. \
                 After three failures, the creature is permanently charmed and its alignment changes to match {stats.selfref}",

@@ -31,12 +31,14 @@ class ArtilleryPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         **score_args,
     ):
-        standard_score_args = dict(
-            require_roles=MonsterRole.Artillery,
-            require_attack_types=AttackType.AllRanged(),
-            bonus_stats=[Stats.DEX, Stats.INT],
-            bonus_skills=Skills.Perception,
-            **score_args,
+        standard_score_args = (
+            dict(
+                require_roles=MonsterRole.Artillery,
+                require_attack_types=AttackType.AllRanged(),
+                bonus_stats=[Stats.DEX, Stats.INT],
+                bonus_skills=Skills.Perception,
+            )
+            | score_args
         )
         super().__init__(
             name=name,

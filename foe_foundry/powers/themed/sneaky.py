@@ -127,8 +127,8 @@ class _CheapShot(SneakyPower):
         feature = Feature(
             name="Cheap Shot",
             action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} kicks a prone creature within {reach} ft. The target must make a DC {dc} Strength \
-                save or have its speed reduced to zero until the end of its next turn.",
+            description=f"{stats.selfref.capitalize()} attempts to strike a creature within {reach} ft with a cheap shot. The target must make a DC {dc} Strength or Dexterity save \
+                (target's choice). On a failure, the target's speed is reduced to zero until the end of its next turn. A creature that is **Prone** makes this save at disadvantage.",
         )
         return [feature]
 

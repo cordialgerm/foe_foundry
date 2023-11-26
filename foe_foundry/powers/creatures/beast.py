@@ -83,7 +83,8 @@ class _BestialRampage(BeastPower):
             name="Bestial Rampage",
             action=ActionType.Reaction,
             uses=1,
-            description=f"When {stats.selfref} is reduced to half its health or lower, it moves up to 30 feet without provoking opportunity attacks and makes a melee attack against another target in rage.",
+            description=f"When {stats.selfref} is reduced to half its health or lower, it moves up to 30 feet without provoking opportunity attacks \
+                and makes a melee attack against another target in its rage.",
         )
 
         return [feature]

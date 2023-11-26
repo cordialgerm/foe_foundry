@@ -32,7 +32,7 @@ class ConstructPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         **score_args,
     ):
-        standard_score_args = dict(require_types=CreatureType.Construct, **score_args)
+        standard_score_args = dict(require_types=CreatureType.Construct) | score_args
         super().__init__(
             name=name,
             power_type=PowerType.Creature,
@@ -58,7 +58,7 @@ class _ConstructedGuardian(ConstructPower):
         feature = Feature(
             name="Constructed Guardian",
             action=ActionType.Feature,
-            description=f"If {stats.selfref.capitalize()} is within 10 feet of an objective (creature, location, or object) that it was designed to guard, it has advantage on attack rolls.",
+            description=f"If {stats.selfref} is within 10 feet of an objective (creature, location, or object) that it was designed to guard, it has advantage on attack rolls.",
         )
         return [feature]
 
@@ -248,6 +248,7 @@ class _Overclock(ConstructPower):
             name="Overclock",
             source="A5E SRD Clockwork Sentinel",
             create_date=datetime(2023, 11, 21),
+            require_attack_types=AttackType.AllMelee(),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

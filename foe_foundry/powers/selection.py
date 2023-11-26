@@ -330,7 +330,7 @@ class _PowerSelector:
 
 
 def select_powers(
-    stats: BaseStatblock, rng: RngFactory, power_level: float
+    stats: BaseStatblock, rng: RngFactory, power_level: float, retries: int = 3
 ) -> Tuple[BaseStatblock, List[Feature]]:
     targets = SelectionTargets(
         power_level_target=power_level, power_level_max=power_level + 0.5
@@ -341,7 +341,7 @@ def select_powers(
     all_powers: List[Set[Power]] = []
 
     # try a couple of times and choose the best result
-    for _ in range(3):
+    for _ in range(retries):
         selector = _PowerSelector(targets=targets, rng=rng(), stats=stats)
         selector.select_powers()
         all_results.append(selector.stats)

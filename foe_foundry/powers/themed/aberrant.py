@@ -32,12 +32,18 @@ class AberrantPower(PowerWithStandardScoring):
             else:
                 return c.creature_type in {CreatureType.Aberration, CreatureType.Monstrosity}
 
-        standard_score_args = dict(
-            require_callback=is_aberrant_creature,
-            bonus_roles=[MonsterRole.Controller, MonsterRole.Ambusher, MonsterRole.Skirmisher],
-            bonus_attack_types=AttackType.AllSpell(),
-            bonus_damage=DamageType.Psychic,
-            **score_args,
+        standard_score_args = (
+            dict(
+                require_callback=is_aberrant_creature,
+                bonus_roles=[
+                    MonsterRole.Controller,
+                    MonsterRole.Ambusher,
+                    MonsterRole.Skirmisher,
+                ],
+                bonus_attack_types=AttackType.AllSpell(),
+                bonus_damage=DamageType.Psychic,
+            )
+            | score_args
         )
         super().__init__(
             name=name,
@@ -60,7 +66,8 @@ class _ModifyMemory(AberrantPower):
             name="Modify Memory",
             action=ActionType.BonusAction,
             description=f"Immediately after hitting with an attack, {stats.selfref} attempts to reshape that creature's memories. \
-                The creature must succeed on a DC {dc} Intelligence saving throw or be affected as if by the *Modify Memory* spell.",
+                The creature must succeed on a DC {dc} Intelligence saving throw or be affected as if by the *Modify Memory* spell. \
+                A creature that succeeds on the save is immune to this effect for 24 hours.",
         )
         return [feature]
 

@@ -275,7 +275,7 @@ class _SealOfSilence(PowerWithStandardScoring):
                 CreatureType.Fiend,
                 CreatureType.Celestial,
             ],
-            bonus_roles=[MonsterRole.Defender, MonsterRole.Leader, MonsterRole.Controller],
+            require_roles=[MonsterRole.Defender, MonsterRole.Leader, MonsterRole.Controller],
             require_cr=7,
         )
         super().__init__(
