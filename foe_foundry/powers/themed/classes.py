@@ -117,6 +117,8 @@ def _EldritchKnights() -> List[Power]:
                         weapon.Maul,
                         weapon.Staff,
                     ],
+                    # reduce odds of each individual occurance because there are 3 eldritch knight options
+                    score_multiplier=0.75,
                 ),
             )
 
@@ -389,64 +391,73 @@ class _Ranger(PowerWithStandardScoring):
         return stats
 
 
-class _ArcaneArcher(PowerWithStandardScoring):
-    def __init__(self):
-        super().__init__(
-            name="Arcane Archer",
-            power_type=PowerType.Theme,
-            power_level=HIGH_POWER,
-            source="FoeFoundryOriginal",
-            theme="class",
-            score_args=dict(
-                require_no_creature_class=True,
-                require_types=[CreatureType.Humanoid, CreatureType.Fey],
-                require_stats=Stats.DEX,
-                bonus_roles=[
-                    MonsterRole.Artillery,
-                    MonsterRole.Ambusher,
-                    MonsterRole.Skirmisher,
-                ],
-                require_cr=3,
-                attack_names=["-", weapon.Longbow, weapon.Shortbow, weapon.Crossbow],
-            ),
-        )
+def _ArcaneArchers() -> List[Power]:
+    class _ArcaneArcher(PowerWithStandardScoring):
+        def __init__(self, option_index: int):
+            self.option_index = option_index
+            super().__init__(
+                name="Arcane Archer",
+                power_type=PowerType.Theme,
+                power_level=HIGH_POWER,
+                source="FoeFoundryOriginal",
+                theme="class",
+                score_args=dict(
+                    require_no_creature_class=True,
+                    require_types=[CreatureType.Humanoid, CreatureType.Fey],
+                    require_stats=Stats.DEX,
+                    bonus_roles=[
+                        MonsterRole.Artillery,
+                        MonsterRole.Ambusher,
+                        MonsterRole.Skirmisher,
+                    ],
+                    require_cr=3,
+                    attack_names=["-", weapon.Longbow, weapon.Shortbow, weapon.Crossbow],
+                    # reduce odds of each individual occurance because there are 3 arcane archer options
+                    score_multiplier=0.75,
+                ),
+            )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dazed = conditions.Dazed()
-        weakened = conditions.Weakened()
-        dc = stats.difficulty_class
-        dmg = stats.target_value(0.6, force_die=Die.d10)
+        def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+            dazed = conditions.Dazed()
+            weakened = conditions.Weakened()
+            dc = stats.difficulty_class
+            dmg = stats.target_value(0.6, force_die=Die.d10)
 
-        feature1 = Feature(
-            name="Dazing Arrow",
-            action=ActionType.BonusAction,
-            recharge=5,
-            description=f"Immediately after hitting a target with an attack, {stats.roleref} attempts to addle the target's mind with fey magics. \
-                The target must make a DC {dc} Charisma saving throw or be {dazed.caption} for 1 minute (save ends at end of turn). {dazed.description_3rd}",
-        )
+            feature1 = Feature(
+                name="Dazing Arrow",
+                action=ActionType.BonusAction,
+                recharge=5,
+                description=f"Immediately after hitting a target with an attack, {stats.roleref} attempts to addle the target's mind with fey magics. \
+                    The target must make a DC {dc} Charisma saving throw or be {dazed.caption} for 1 minute (save ends at end of turn). {dazed.description_3rd}",
+            )
 
-        feature2 = Feature(
-            name="Exploding Arrow",
-            action=ActionType.BonusAction,
-            recharge=5,
-            description=f"Immediately after hitting a target with attack, {stats.roleref} causes the arrow to explode. \
-                Each creature within 10 feet of the target (including the target) must make a DC {dc} Dexterity saving throw \
-                or take an additional {dmg.description} fire damage.",
-        )
+            feature2 = Feature(
+                name="Exploding Arrow",
+                action=ActionType.BonusAction,
+                recharge=5,
+                description=f"Immediately after hitting a target with attack, {stats.roleref} causes the arrow to explode. \
+                    Each creature within 10 feet of the target (including the target) must make a DC {dc} Dexterity saving throw \
+                    or take an additional {dmg.description} fire damage.",
+            )
 
-        feature3 = Feature(
-            name="Enfeebling Arrow",
-            action=ActionType.BonusAction,
-            recharge=5,
-            description=f"Immediately after hitting a target with an attack, {stats.roleref} forces the target to make a DC {dc} Constitution save. \
-                On a failure, the target is {weakened.caption} for 1 minute (save ends at end of turn). {weakened.description}",
-        )
+            feature3 = Feature(
+                name="Enfeebling Arrow",
+                action=ActionType.BonusAction,
+                recharge=5,
+                description=f"Immediately after hitting a target with an attack, {stats.roleref} forces the target to make a DC {dc} Constitution save. \
+                    On a failure, the target is {weakened.caption} for 1 minute (save ends at end of turn). {weakened.description}",
+            )
 
-        return [feature1, feature2, feature3]
+            options = [feature1, feature2, feature3]
+            feature = options[self.option_index]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.copy(creature_class="Arcane Archer")
-        return stats
+            return [feature]
+
+        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+            stats = stats.copy(creature_class="Arcane Archer")
+            return stats
+
+    return [_ArcaneArcher(i) for i in range(3)]
 
 
 class _PsiWarrior(PowerWithStandardScoring):
@@ -582,6 +593,8 @@ def _RuneKnights() -> List[Power]:
                         weapon.SwordAndShield,
                         weapon.MaceAndShield,
                     ],
+                    # reduce odds of each individual occurance because there are 3 rune knight options
+                    score_multiplier=0.75,
                 ),
             )
 
@@ -828,7 +841,7 @@ class _Druid(PowerWithStandardScoring):
         return stats
 
 
-ArcaneArcher: Power = _ArcaneArcher()
+ArcaneArchers: List[Power] = _ArcaneArchers()
 Artificer: Power = _Artificer()
 Barbarian: Power = _Barbarian()
 Bard: Power = _Bard()
@@ -848,7 +861,6 @@ WarPriest: Power = _WarPriest()
 
 ClassPowers: List[Power] = (
     [
-        ArcaneArcher,
         Artificer,
         Barbarian,
         Bard,
@@ -863,6 +875,7 @@ ClassPowers: List[Power] = (
         Ranger,
         WarPriest,
     ]
+    + ArcaneArchers
     + EldritchKnights
     + RuneKnights
 )

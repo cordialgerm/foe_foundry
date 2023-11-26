@@ -55,11 +55,10 @@ class PhysicallyTough(PowerWithStandardScoring):
                     CreatureType.Fey,
                 ],
                 bonus_roles=[MonsterRole.Bruiser, MonsterRole.Defender],
-                bonus_stats=Stats.STR,
+                require_stats=Stats.STR,
                 bonus_size=Size.Large,
-                require_stats=Stats.CON,
-                stat_threshold=14,
                 bonus_skills=Skills.Athletics,
+                require_callback=humanoid_is_fighter,
             )
             | score_args,
         )
@@ -177,7 +176,16 @@ class _EliteRecovery(PowerWithStandardScoring):
 
 class _Regeneration(PhysicallyTough):
     def __init__(self):
-        super().__init__(name="Regeneration", source="SRD5.1 Shield Guardian")
+        super().__init__(
+            name="Regeneration",
+            source="SRD5.1 Shield Guardian",
+            require_types=[
+                CreatureType.Construct,
+                CreatureType.Undead,
+                CreatureType.Monstrosity,
+                CreatureType.Ooze,
+            ],
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         weaknesses = {

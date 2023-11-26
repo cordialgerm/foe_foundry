@@ -1,21 +1,14 @@
 from datetime import datetime
 from math import ceil
-from typing import List, Tuple
-
-import numpy as np
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
+from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import Attack, Bleeding, DamageType, Weakened
+from ...damage import Attack, AttackType, Bleeding, DamageType, Weakened
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ...utils import easy_multiple_of_five
 from ..power import (
     HIGH_POWER,
     LOW_POWER,
@@ -81,7 +74,11 @@ class _EndlessServitude(DeathlyPower):
 
 class _WitheringBlow(DeathlyPower):
     def __init__(self):
-        super().__init__(name="Withering Blow", source="FoeFoundryOriginal")
+        super().__init__(
+            name="Withering Blow",
+            source="FoeFoundryOriginal",
+            require_attack_types=AttackType.AllMelee(),
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []

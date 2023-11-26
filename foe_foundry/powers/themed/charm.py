@@ -36,7 +36,6 @@ class CharmingPower(PowerWithStandardScoring):
             require_types=[
                 CreatureType.Fey,
                 CreatureType.Fiend,
-                CreatureType.Aberration,
                 CreatureType.Humanoid,
             ],
             require_stats=Stats.CHA,

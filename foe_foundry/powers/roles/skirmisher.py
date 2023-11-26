@@ -38,14 +38,16 @@ class SkirmisherPower(PowerWithStandardScoring):
         def is_organized(c: BaseStatblock) -> bool:
             return c.creature_type.could_be_organized
 
-        standard_score_args = dict(
-            require_roles=MonsterRole.Skirmisher,
-            bonus_stats=Stats.DEX,
-            bonus_skills=Skills.Acrobatics,
-            bonus_speed=40,
-            bonus_callback=ideal_skirmisher,
-            require_callback=is_organized if requires_tactics else None,
-            **score_args,
+        standard_score_args = (
+            dict(
+                require_roles=MonsterRole.Skirmisher,
+                bonus_stats=Stats.DEX,
+                bonus_skills=Skills.Acrobatics,
+                bonus_speed=40,
+                bonus_callback=ideal_skirmisher,
+                require_callback=is_organized if requires_tactics else None,
+            )
+            | score_args
         )
         super().__init__(
             name=name,
@@ -60,7 +62,12 @@ class SkirmisherPower(PowerWithStandardScoring):
 
 class _Skirmish(SkirmisherPower):
     def __init__(self):
-        super().__init__(name="Skirmish", source="FoeFoundryOriginal", requires_tactics=True)
+        super().__init__(
+            name="Skirmish",
+            source="FoeFoundryOriginal",
+            requires_tactics=True,
+            require_types=CreatureType.Humanoid,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy

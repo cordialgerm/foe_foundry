@@ -25,7 +25,12 @@ class FastPower(PowerWithStandardScoring):
             power_level=power_level,
             power_type=PowerType.Theme,
             theme="fast",
-            score_args=score_args,
+            score_args=dict(
+                require_stats=Stats.DEX,
+                stat_threshold=16,
+                bonus_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
+            )
+            | score_args,
         )
 
 
@@ -35,9 +40,6 @@ class _Evasion(FastPower):
             name="Evasion",
             source="SRD5.1 Assassin",
             power_level=LOW_POWER,
-            require_stats=Stats.DEX,
-            stat_threshold=14,
-            bonus_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -58,10 +60,8 @@ class _NimbleReaction(FastPower):
     def score(self, candidate: BaseStatblock) -> float:
         return score(
             candidate=candidate,
-            require_stats=Stats.DEX,
             bonus_speed=40,
             bonus_skills=[Skills.Acrobatics, Skills.Athletics],
-            stat_threshold=14,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

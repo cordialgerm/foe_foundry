@@ -43,6 +43,7 @@ class RecklessPower(PowerWithStandardScoring):
                 bonus_size=Size.Large,
                 require_stats=Stats.STR,
                 attack_names=[
+                    "-",
                     natural.Claw,
                     natural.Bite,
                     natural.Tail,

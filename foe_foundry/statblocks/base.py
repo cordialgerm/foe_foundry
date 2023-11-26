@@ -332,5 +332,12 @@ class BaseStatblock:
         if target > self.multiattack:
             adjustment *= 0.8
 
+        # if the monster is high CR then we can afford to scale it up a bit
+        if self.cr >= 7:
+            adjustment *= 1.1
+
+        if self.cr >= 15:
+            adjustment *= 1.1
+
         scaled_target = self.attack.average_damage * target * adjustment
         return DieFormula.target_value(target=scaled_target, **args)

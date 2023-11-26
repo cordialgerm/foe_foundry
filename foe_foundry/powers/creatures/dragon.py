@@ -191,7 +191,7 @@ def _dragons_breath_power(damage_type: DamageType, save_type: str) -> Power:
                 source="5.1 SRD Ancient Red Dragon",
                 power_level=HIGH_POWER,
                 bonus_cr=7,
-                score_multiplier=2.0,
+                score_multiplier=3.0,
                 require_damage=damage_type,
             )
 
@@ -207,7 +207,7 @@ def _dragons_breath_power(damage_type: DamageType, save_type: str) -> Power:
 
             template = f"{distance} ft cone"
             dmg = stats.target_value(
-                0.65 * stats.multiattack,
+                0.75 * stats.multiattack,
                 suggested_die=Die.d8,
             )
 

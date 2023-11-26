@@ -35,8 +35,8 @@ class DomineeringPower(PowerWithStandardScoring):
             if c.creature_type in magical_creatures:
                 return True
 
-            # non-holy humanoids
-            if c.attack_type.is_spell() and c.secondary_damage_type not in {DamageType.Radiant}:
+            # psychic humanoids
+            if c.attack_type.is_spell() and c.secondary_damage_type == DamageType.Psychic:
                 return True
 
             return False
@@ -86,28 +86,17 @@ class _CommandingPresence(DomineeringPower):
         return [feature]
 
 
-class _Charm(DomineeringPower):
+class _Dominate(DomineeringPower):
     def __init__(self):
         super().__init__(
             name="Charm", source="FoeFoundryOriginal", power_level=HIGH_POWER, require_cr=7
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        if stats.creature_type == CreatureType.Fey:
-            name = "Fey Charm"
-        elif stats.creature_type == CreatureType.Dragon:
-            name = "Draconic Charm"
-        elif stats.creature_type == CreatureType.Celestial:
-            name = "Celestial Charm"
-        elif stats.creature_type == CreatureType.Fiend:
-            name = "Fiendish Charm"
-        else:
-            name = "Charm"
-
         dc = stats.difficulty_class_easy
 
         feature = Feature(
-            name=name,
+            name="Dominate",
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} targets one humanoid it can see within 30 feet of it. If the target can see {stats.selfref} \
@@ -121,7 +110,7 @@ class _Charm(DomineeringPower):
         return [feature]
 
 
-Charm: Power = _Charm()
 CommandingPresence: Power = _CommandingPresence()
+Dominate: Power = _Dominate()
 
-DomineeringPowers: List[Power] = [Charm, CommandingPresence]
+DomineeringPowers: List[Power] = [CommandingPresence, Dominate]

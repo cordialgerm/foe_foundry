@@ -20,6 +20,9 @@ class EarthPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         **score_args,
     ):
+        def not_already_special_movement(c: BaseStatblock) -> bool:
+            return not (c.speed.fly or 0) and not (c.speed.swim or 0)
+
         super().__init__(
             name=name,
             source=source,
@@ -29,6 +32,7 @@ class EarthPower(PowerWithStandardScoring):
             theme="earth",
             score_args=dict(
                 require_types=[CreatureType.Beast, CreatureType.Monstrosity, CreatureType.Ooze],
+                require_callback=not_already_special_movement,
                 **score_args,
             ),
         )

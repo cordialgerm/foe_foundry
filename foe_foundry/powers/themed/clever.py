@@ -68,22 +68,24 @@ class _IdentifyWeakness(CleverPower):
         return stats
 
 
-class _FaerieMark(CleverPower):
+class _ArcaneMark(CleverPower):
     def __init__(self):
         super().__init__(
-            name="Faerie Mark",
+            name="Arcane Mark",
             source="SRD5.1 Faerie Fire",
             create_date=datetime(2023, 11, 24),
-            require_attack_types=AttackType.AllRanged(),
+            require_attack_types=AttackType.RangedSpell,
             bonus_types=CreatureType.Fey,
+            power_level=LOW_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
         feature = Feature(
-            name="Faerie Mark",
+            name="Arcane Mark",
             uses=1,
             action=ActionType.BonusAction,
-            description=f"Immediately after hitting a target with a ranged attack, {stats.selfref} casts *Faerie Fire* centered on the target.",
+            description=f"Immediately after hitting a target with a ranged attack, {stats.selfref} casts *Faerie Fire* centered on the target with a DC of {dc}.",
         )
         return [feature]
 
@@ -113,9 +115,9 @@ class _UnsettlingWords(CleverPower):
         return [feature]
 
 
+ArcaneMark: Power = _ArcaneMark()
 IdentifyWeaknes: Power = _IdentifyWeakness()
-FaerieMark: Power = _FaerieMark()
 UnsettlingWords: Power = _UnsettlingWords()
 
 
-CleverPowers: List[Power] = [IdentifyWeaknes, FaerieMark, UnsettlingWords]
+CleverPowers: List[Power] = [ArcaneMark, IdentifyWeaknes, UnsettlingWords]

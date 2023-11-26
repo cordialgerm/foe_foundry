@@ -1,17 +1,12 @@
 from datetime import datetime
-from math import ceil, floor
-from typing import List, Tuple
-
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
+from math import ceil
+from typing import List
 
 from ...attack_template import natural
 from ...attributes import Skills
 from ...creature_types import CreatureType
-from ...damage import DamageType, Dazed, conditions
-from ...die import Die, DieFormula
+from ...damage import AttackType, DamageType, Dazed, conditions
+from ...die import Die
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...size import Size
@@ -275,7 +270,11 @@ class _Earthshaker(GiantPower):
 class _BigWindup(GiantPower):
     def __init__(self):
         super().__init__(
-            name="Big Windup", source="A5E SRD Cyclops", create_date=datetime(2023, 11, 22)
+            name="Big Windup",
+            source="A5E SRD Cyclops",
+            create_date=datetime(2023, 11, 22),
+            require_attack_types=AttackType.AllMelee(),
+            power_level=LOW_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -283,7 +282,7 @@ class _BigWindup(GiantPower):
             name="Big Windup",
             action=ActionType.Reaction,
             description=f"Whenever a creature hits {stats.selfref} with a melee attack, {stats.selfref} readies a powerful strike against its attacker. \
-                {stats.selfref} has advantage on the next club attack it makes against the attacker before the end of its next turn.",
+                {stats.selfref} has advantage on the next attack it makes against the attacker before the end of its next turn.",
         )
         return [feature]
 

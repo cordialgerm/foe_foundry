@@ -56,6 +56,7 @@ class _FocusShot(ArtilleryPower):
             source="A5E SRD Focus Shot",
             create_date=datetime(2023, 11, 23),
             power_level=HIGH_POWER,
+            require_attack_types=AttackType.RangedWeapon,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -72,6 +73,26 @@ class _FocusShot(ArtilleryPower):
                     <li>**Bring it Down**: the target must make a DC {dc} Strength saving throw or be knocked **Prone**</li> \
                     <li>**Vein Slice**: the target must make a DC {dc} Constitution saving throw or gain {bleeding.caption}. {bleeding.description_3rd} \
                 </ul>",
+        )
+        return [feature]
+
+
+class _TwinSpell(ArtilleryPower):
+    def __init__(self):
+        super().__init__(
+            name="Twin Spell",
+            source="5.1SRD Twin Spell",
+            create_date=datetime(2023, 11, 23),
+            power_level=HIGH_POWER,
+            require_attack_types=AttackType.RangedSpell,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Twin Spell",
+            action=ActionType.BonusAction,
+            recharge=4,
+            description=f"Immediately after hitting with a spell attack, {stats.roleref} can repeat the attack against a different target in range.",
         )
         return [feature]
 
@@ -142,6 +163,7 @@ IndirectFire: Power = _IndirectFire()
 Overwatch: Power = _Overwatch()
 QuickDraw: Power = _QuickDraw()
 SuppresingFire: Power = _SuppressingFire()
+TwinSpell: Power = _TwinSpell()
 
 
 ArtilleryPowers: List[Power] = [

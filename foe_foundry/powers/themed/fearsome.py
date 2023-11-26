@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import DamageType, conditions
+from ...damage import AttackType, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
@@ -61,6 +61,7 @@ class HorrifyingPower(PowerWithStandardScoring):
                 require_cr=1,
                 bonus_cr=7,
                 bonus_damage=DamageType.Psychic,
+                bonus_attack_types=AttackType.AllSpell(),
                 **score_args,
             ),
         )

@@ -11,8 +11,10 @@ from ..power import LOW_POWER, Power, PowerType, PowerWithStandardScoring
 
 class _Flyer(PowerWithStandardScoring):
     def __init__(self):
-        def not_already_flyer(c: BaseStatblock) -> bool:
-            return (c.speed.fly or 0) == 0
+        def not_already_special_movement(c: BaseStatblock) -> bool:
+            return (
+                not (c.speed.fly or 0) and not (c.speed.climb or 0) and not (c.speed.swim or 0)
+            )
 
         super().__init__(
             name="Flyer",
@@ -31,7 +33,7 @@ class _Flyer(PowerWithStandardScoring):
                     CreatureType.Elemental,
                     CreatureType.Fey,
                 },
-                require_callback=not_already_flyer,
+                require_callback=not_already_special_movement,
             ),
         )
 

@@ -107,7 +107,11 @@ class _Entangle(PlantPower):
 
 class _ChokingVine(PlantPower):
     def __init__(self):
-        super().__init__(name="Choking Vine", source="FoeFoundryOriginal")
+        super().__init__(
+            name="Choking Vine",
+            source="FoeFoundryOriginal",
+            require_attack_types=AttackType.AllMelee(),
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
