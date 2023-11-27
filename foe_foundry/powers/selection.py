@@ -278,13 +278,13 @@ class _PowerSelector:
         if power.power_type == PowerType.Creature and not any(
             p for p in self.selection.selected_powers if p.power_type == PowerType.Creature
         ):
-            multiplier += 0.5
+            multiplier += 0.75
 
         # if the creature doesn't yet have any Theme powers then make them more attractive
         if power.power_type == PowerType.Role and not any(
             p for p in self.selection.selected_powers if p.power_type == PowerType.Role
         ):
-            multiplier += 0.5
+            multiplier += 0.75
 
         # if feature would cause us to go above target then make it less attractive
         # don't eliminate it entirely because it might lead to total infeasibility
