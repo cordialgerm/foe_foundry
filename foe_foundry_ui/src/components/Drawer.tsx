@@ -2,13 +2,14 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import LoopIcon from "@mui/icons-material/Loop";
 import {
-  Divider as MuiDivider,
-  Drawer as MuiDrawer,
-  List as MuiList,
-  ListItem as MuiListItem,
-  ListItemButton as MuiListItemButton,
-  ListItemIcon as MuiListItemIcon,
-  ListItemText as MuiListItemText,
+  Divider,
+  Drawer,
+  SwipeableDrawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
 } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import { styled, useTheme } from "@mui/material/styles";
@@ -40,7 +41,7 @@ export interface DrawerProps {
   isMobile?: boolean;
 }
 
-export function PersistentDrawerLeft({ ...props }: DrawerProps) {
+export function FoeFoundryAppDrawer({ ...props }: DrawerProps) {
   const theme = useTheme();
   const navigate = useNavigate();
 
@@ -75,70 +76,89 @@ export function PersistentDrawerLeft({ ...props }: DrawerProps) {
       navigate(link.to);
     };
 
-    return (
-      <MuiListItemButton onClick={onClick}>{link.children}</MuiListItemButton>
-    );
+    return <ListItemButton onClick={onClick}>{link.children}</ListItemButton>;
   }
 
-  return (
-    <MuiDrawer
-      variant="persistent"
-      anchor="left"
-      width={drawerWidth}
-      elevation={3}
-      open={props.open}
-    >
-      <DrawerHeader>
-        <IconButton onClick={handleDrawerClose}>
-          {theme.direction === "ltr" ? (
-            <ChevronLeftIcon />
-          ) : (
-            <ChevronRightIcon />
-          )}
-        </IconButton>
-      </DrawerHeader>
-      <MuiDivider />
-      {props.isMobile && (
-        <>
-          <MuiList>
-            <MuiListItem>
-              <Link to="/statblocks">Statblocks</Link>
-            </MuiListItem>
-            <MuiListItem>
-              <Link to="/conditions">Conditions</Link>
-            </MuiListItem>
-            <MuiListItem>
-              <Link to="/credits">Credits</Link>
-            </MuiListItem>
-          </MuiList>
-          <MuiDivider />
-        </>
-      )}
-      <MuiList>
-        <MuiListItem key="creatureType">
-          <CreateTypeSelector
-            value={props.creatureType}
-            onChange={onCreatureTypeChanged}
-          />
-        </MuiListItem>
-        <MuiListItem key="role">
-          <RoleSelector value={props.role} onChange={onRoleChanged} />
-        </MuiListItem>
-        <MuiListItem key="cr">
-          <CrSelector value={props.cr} onChange={onCrChanged} />
-        </MuiListItem>
-        <MuiListItem key="generate">
-          <MuiListItemButton
-            onClick={onGenerateClicked}
-            style={{ width: "200px" }}
-          >
-            <MuiListItemIcon>
-              <LoopIcon />
-            </MuiListItemIcon>
-            <MuiListItemText primary="Generate" />
-          </MuiListItemButton>
-        </MuiListItem>
-      </MuiList>
-    </MuiDrawer>
-  );
+  const DrawerContent = () => {
+    return (
+      <>
+        <DrawerHeader>
+          <IconButton onClick={handleDrawerClose}>
+            {theme.direction === "ltr" ? (
+              <ChevronLeftIcon />
+            ) : (
+              <ChevronRightIcon />
+            )}
+          </IconButton>
+        </DrawerHeader>
+        <Divider />
+        {props.isMobile && (
+          <>
+            <List>
+              <ListItem>
+                <Link to="/statblocks">Statblocks</Link>
+              </ListItem>
+              <ListItem>
+                <Link to="/conditions">Conditions</Link>
+              </ListItem>
+              <ListItem>
+                <Link to="/credits">Credits</Link>
+              </ListItem>
+            </List>
+            <Divider />
+          </>
+        )}
+        <List>
+          <ListItem key="creatureType">
+            <CreateTypeSelector
+              value={props.creatureType}
+              onChange={onCreatureTypeChanged}
+            />
+          </ListItem>
+          <ListItem key="role">
+            <RoleSelector value={props.role} onChange={onRoleChanged} />
+          </ListItem>
+          <ListItem key="cr">
+            <CrSelector value={props.cr} onChange={onCrChanged} />
+          </ListItem>
+          <ListItem key="generate">
+            <ListItemButton
+              onClick={onGenerateClicked}
+              style={{ width: "200px" }}
+            >
+              <ListItemIcon>
+                <LoopIcon />
+              </ListItemIcon>
+              <ListItemText primary="Generate" />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </>
+    );
+  };
+
+  if (props.isMobile) {
+    return (
+      <SwipeableDrawer
+        anchor="left"
+        open={props.open}
+        onClose={() => props.setOpen(false)}
+        onOpen={() => props.setOpen(true)}
+      >
+        <DrawerContent />
+      </SwipeableDrawer>
+    );
+  } else {
+    return (
+      <Drawer
+        variant="persistent"
+        anchor="left"
+        width={drawerWidth}
+        elevation={3}
+        open={props.open}
+      >
+        <DrawerContent />
+      </Drawer>
+    );
+  }
 }

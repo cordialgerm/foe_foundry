@@ -1,4 +1,3 @@
-import { styled } from "@mui/material/styles";
 import * as React from "react";
 
 import { FoeFoundryIcon } from "./FoeFoundryIcon.tsx";
@@ -8,22 +7,38 @@ import IconButton from "@mui/material/IconButton";
 import { drawerWidth } from "./Drawer.tsx";
 import { useNavigate } from "react-router-dom";
 
-const MuiAppBar = styled(AppBar, {
-  shouldForwardProp: (prop) => prop !== "open",
-})(({ theme, open }) => ({
-  transition: theme.transitions.create(["margin", "width"], {
-    easing: theme.transitions.easing.sharp,
-    duration: theme.transitions.duration.leavingScreen,
-  }),
-  ...(open && {
-    width: `calc(100% - ${drawerWidth}px + 8px)`,
-    marginLeft: `${drawerWidth - 8}px`,
-    transition: theme.transitions.create(["margin", "width"], {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-  }),
-}));
+interface MuiAppBarProps {
+  open: boolean;
+}
+
+function MuiAppBar({
+  open,
+  children,
+}: React.PropsWithChildren<MuiAppBarProps>) {
+  return (
+    <AppBar
+      position="static"
+      sx={{
+        transition: (theme) =>
+          theme.transitions.create(["margin", "width"], {
+            easing: theme.transitions.easing.sharp,
+            duration: theme.transitions.duration.leavingScreen,
+          }),
+        ...(open && {
+          width: `calc(100% - ${drawerWidth}px + 8px)`,
+          marginLeft: `${drawerWidth - 8}px`,
+          transition: (theme) =>
+            theme.transitions.create(["margin", "width"], {
+              easing: theme.transitions.easing.easeOut,
+              duration: theme.transitions.duration.enteringScreen,
+            }),
+        }),
+      }}
+    >
+      {children}
+    </AppBar>
+  );
+}
 
 interface MenuLinkProps {
   key: string;
@@ -85,7 +100,7 @@ function HomeLink() {
   );
 }
 
-interface AppBarProps {
+export interface AppBarProps {
   drawerOpen: boolean;
   setDrawerOpen: (open: boolean) => void;
   isMobile: boolean;
@@ -107,7 +122,7 @@ export function FoeFoundryAppBar({
   ];
 
   return (
-    <MuiAppBar position="static" open={drawerOpen}>
+    <MuiAppBar open={drawerOpen}>
       <Container>
         <Toolbar disableGutters>
           {!drawerOpen && (
