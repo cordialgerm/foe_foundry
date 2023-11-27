@@ -12,15 +12,17 @@ interface StatblockPageProps extends PageProps {
 }
 
 const StatblockPage: React.FC<StatblockPageProps> = (props) => {
-  const { rawCreatureType, rawCreatureRole, rawCr } = useParams();
-  const creatureType = rawCreatureType ?? props.sidebar.creatureType;
-  const creatureRole = rawCreatureRole ?? props.sidebar.role;
-  const cr = rawCr ?? props.sidebar.cr;
-  const url = `${props.baseUrl}/statblocks/random/${creatureType}/${creatureRole}/${cr}?render=partial`;
+  const { creatureType, creatureRole, cr } = useParams();
+
+  const resolvedCreatureType = creatureType ?? props.sidebar.creatureType;
+  const resolvedCreatureRole = creatureRole ?? props.sidebar.role;
+  const resolvedCr = cr ?? props.sidebar.cr;
+
+  const url = `${props.baseUrl}/statblocks/random/${resolvedCreatureType}/${resolvedCreatureRole}/${resolvedCr}?render=partial`;
 
   const [state, setState] = useState({
     rawHtml: "Loading...",
-    displayCreatureType: creatureType,
+    displayCreatureType: resolvedCreatureType,
     counter: 0,
   });
 
@@ -34,7 +36,7 @@ const StatblockPage: React.FC<StatblockPageProps> = (props) => {
           return {
             ...currentState,
             rawHtml: rawHtml,
-            displayCreatureType: creatureType,
+            displayCreatureType: resolvedCreatureType,
             counter: currentState.counter + 1,
           };
         });
@@ -43,12 +45,12 @@ const StatblockPage: React.FC<StatblockPageProps> = (props) => {
           return {
             ...currentState,
             rawHtml: rawHtml,
-            displayCreatureType: creatureType,
+            displayCreatureType: resolvedCreatureType,
           };
         });
       }
     },
-    [url, creatureType]
+    [url, resolvedCreatureType]
   );
 
   //override the default onGenerate behavior to specifically render data for this page
@@ -62,10 +64,10 @@ const StatblockPage: React.FC<StatblockPageProps> = (props) => {
       }
 
       await fetchData(true);
-      window.history.replaceState(
+      window.history.pushState(
         {},
         "",
-        `/statblocks/${creatureType}/${creatureRole}/${cr}`
+        `/statblocks/${resolvedCreatureType}/${resolvedCreatureRole}/${resolvedCr}`
       );
     },
   };

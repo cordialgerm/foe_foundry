@@ -48,7 +48,7 @@ function AboutPage(props: React.PropsWithChildren<PageProps>) {
   return (
     <PageLayout {...props}>
       <ProductHeroText {...productValues} />
-      <CreatureTypeGallery />
+      <CreatureTypeGallery {...props} />
       <ProductHeroText {...howItWorks} />
     </PageLayout>
   );

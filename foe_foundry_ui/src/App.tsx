@@ -1,13 +1,7 @@
 import * as React from "react";
-import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 
-import StatblockPage from "./pages/StatblockPage.tsx";
-import HomePage from "./pages/HomePage.tsx";
-import CreditPage from "./pages/CreditPage.tsx";
-import ConditionPage from "./pages/ConditionsPage.tsx";
-import { OglPage } from "./pages/OglPage.tsx";
 import { useNavigate } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "./components/Theme.js";
@@ -16,7 +10,7 @@ interface AppProps {
   baseUrl: string;
 }
 
-function App({ baseUrl }: AppProps) {
+function App({ baseUrl, children }: React.PropsWithChildren<AppProps>) {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const defaultSidebar = {
@@ -25,7 +19,6 @@ function App({ baseUrl }: AppProps) {
     cr: "specialist",
     drawerOpen: !isMobile,
   };
-  console.log("defaultSidebar", defaultSidebar);
 
   const navigate = useNavigate();
   const [sidebar, setSidebar] = React.useState(defaultSidebar);
@@ -52,29 +45,16 @@ function App({ baseUrl }: AppProps) {
     },
   };
 
+  const renderPage = () => {
+    return React.Children.map(children, (child) => {
+      return React.cloneElement(child, pageProps);
+    });
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Routes>
-        <Route path="/" element={<HomePage {...pageProps} />} />
-        <Route path="/statblocks" element={<StatblockPage {...pageProps} />}>
-          <Route
-            path=":creatureType"
-            element={<StatblockPage {...pageProps} />}
-          />
-          <Route
-            path=":creatureType/:creatureRole"
-            element={<StatblockPage {...pageProps} />}
-          />
-          <Route
-            path=":creatureType/:creatureRole/:cr"
-            element={<StatblockPage {...pageProps} />}
-          />
-        </Route>
-        <Route path="/credits" element={<CreditPage {...pageProps} />} />
-        <Route path="/conditions" element={<ConditionPage {...pageProps} />} />
-        <Route path="/ogl" element={<OglPage {...pageProps} />} />
-      </Routes>
+      {renderPage()}
     </ThemeProvider>
   );
 }

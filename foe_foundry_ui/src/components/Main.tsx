@@ -1,4 +1,3 @@
-import * as React from "react";
 import { drawerWidth } from "./Drawer.tsx";
 import { styled } from "@mui/material";
 
