@@ -150,7 +150,7 @@ class _Thrash(AttackTemplate):
     def __init__(self):
         super().__init__(
             attack_name="Thrash",
-            attack_type=AttackType.MeleeWeapon,
+            attack_type=AttackType.MeleeNatural,
             damage_type=DamageType.Piercing,
             die=Die.d6,
             die_count=1,

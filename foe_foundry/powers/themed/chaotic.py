@@ -1,8 +1,12 @@
+from datetime import datetime
 from math import ceil, floor
 from typing import List, Tuple
 
 import numpy as np
 from numpy.random import Generator
+
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
@@ -14,7 +18,14 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils import easy_multiple_of_five, summoning
-from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
+from ..power import (
+    HIGH_POWER,
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 from ..scoring import score
 
 
@@ -28,16 +39,41 @@ def score_chaotic(candidate: BaseStatblock, min_cr: float | None = None, **args)
     )
 
 
-class _ChaoticSpace(PowerBackport):
-    def __init__(self):
+class ChaoticPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        standard_score_args = dict(
+            require_types=[CreatureType.Fey, CreatureType.Aberration, CreatureType.Monstrosity],
+            bonus_attack_types=AttackType.AllSpell(),
+            **score_args,
+        )
         super().__init__(
-            name="Chaotic Space", power_type=PowerType.Theme, power_level=LOW_POWER
+            name=name,
+            power_type=PowerType.Theme,
+            source=source,
+            theme="Chaotic",
+            create_date=create_date,
+            power_level=power_level,
+            score_args=standard_score_args,
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_chaotic(candidate, min_cr=5)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+class _ChaoticSpace(ChaoticPower):
+    def __init__(self):
+        super().__init__(
+            name="Chaotic Space",
+            source="FoeFoundryOriginal",
+            power_level=LOW_POWER,
+            require_cr=5,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         radius = easy_multiple_of_five(stats.cr * 5, min_val=10, max_val=45)
         distance = 30 if stats.cr <= 5 else 60
@@ -52,14 +88,21 @@ class _ChaoticSpace(PowerBackport):
                 Whenever another creature ends its turn within the space, it teleports 30 (1d10 x 5) feet in a random direction.",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _EldritchBeacon(PowerBackport):
+class _EldritchBeacon(ChaoticPower):
     def __init__(self):
         super().__init__(
-            name="Eldritch Beacon", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name="Eldritch Beacon",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
+            require_cr=5,
+            require_callback=self.can_summon,
         )
+
+    def can_summon(self, c: BaseStatblock) -> bool:
+        return self._summon_formula(c, np.random.default_rng(20210518)) is not None
 
     def _summon_formula(self, stats: BaseStatblock, rng: Generator) -> str | None:
         try:
@@ -71,17 +114,11 @@ class _EldritchBeacon(PowerBackport):
         except:
             return None
 
-    def score(self, candidate: BaseStatblock) -> float:
-        def can_summon(c: BaseStatblock) -> bool:
-            return self._summon_formula(c, np.random.default_rng()) is not None
-
-        return score_chaotic(candidate, min_cr=5, require_callback=can_summon)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(stats.cr * 5, min_val=5, max_val=30)
         ac = 10
         duration = DieFormula.from_expression("1d4 + 1")
-        description = self._summon_formula(stats, rng)
+        description = self._summon_formula(stats, np.random.default_rng(20210518))
 
         feature = Feature(
             name="Eldritch Beacon",
@@ -92,8 +129,7 @@ class _EldritchBeacon(PowerBackport):
                 Each turn that the beacon is active, on initiative count 0, {description} \
                 After {duration.description} rounds the beacon is destroyed.",
         )
-
-        return stats, feature
+        return [feature]
 
 
 ChaoticSpace: Power = _ChaoticSpace()

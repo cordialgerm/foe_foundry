@@ -119,12 +119,12 @@ class _RequirementTracker:
 
         # if there are many required checks and you pass them all then you should get a score boost
         # this is because narrowly defined powers are unique and interesting, so if a candidate qualifies they should have a boosted chance
-        strict_requirement_boost = 0.5 * max(0, self.require_hits - 2)
+        strict_requirement_boost = 0.25 * max(0, self.require_hits - 2)
 
         # get a score boost for bonus checks
-        bonus_boost = 0.25 * self.bonus_hits
+        bonus_boost = 0.125 * self.bonus_hits
 
-        final_score = min(2.5, score + strict_requirement_boost + bonus_boost)
+        final_score = min(2.0, score + strict_requirement_boost + bonus_boost)
         return final_score
 
 
@@ -137,10 +137,13 @@ def score(
     require_stats: Stats | List[Stats] | Set[Stats] | None = None,
     require_size: Size | None = None,
     require_speed: int | None = None,
+    require_flying: bool = False,
+    require_swimming: bool = False,
     require_attack_types: AttackType | Set[AttackType] | List[AttackType] | None = None,
     require_skills: Skills | Set[Skills] | List[Skills] | None = None,
     require_no_creature_class: bool = False,
-    require_no_other_damage_type: bool = False,
+    require_damage_exact_match: bool = False,
+    require_secondary_damage_type: bool = False,
     require_cr: float | None = None,
     require_shield: bool = False,
     require_callback: StatblockFilter | None = None,
@@ -150,6 +153,8 @@ def score(
     bonus_stats: Stats | List[Stats] | Set[Stats] | None = None,
     bonus_size: Size | None = None,
     bonus_speed: int | None = None,
+    bonus_flying: bool = False,
+    bonus_swimming: bool = False,
     bonus_attack_types: AttackType | Set[AttackType] | List[AttackType] | None = None,
     bonus_skills: Skills | Set[Skills] | List[Skills] | None = None,
     bonus_cr: float | None = None,
@@ -157,6 +162,7 @@ def score(
     bonus_callback: StatblockFilter | None = None,
     attack_names: AttackNames = None,
     stat_threshold: int = 12,
+    score_multiplier: float = 1.0,
 ) -> float:
     """Standard scoring helper function"""
 
@@ -189,11 +195,6 @@ def score(
     bonus_shield = t.optional_flag(require_shield)
     bonus_callback = t.optional_val(bonus_callback, require_callback)
 
-    # special handling - this requirement only makes sense if bonus_damage was specified
-    require_no_other_damage_type = t.require_flag(
-        require_no_other_damage_type and len(bonus_damage) > 0
-    )
-
     # checks against required conditions
     if require_roles:
         t.required(candidate.role in require_roles)
@@ -212,6 +213,12 @@ def score(
 
     if require_speed:
         t.required(candidate.speed.fastest_speed >= require_speed)
+
+    if require_flying:
+        t.required((candidate.speed.fly or 0) > 0)
+
+    if require_swimming:
+        t.required((candidate.speed.swim or 0) > 0)
 
     if require_attack_types:
         t.required(candidate.attack_type in require_attack_types)
@@ -233,11 +240,15 @@ def score(
     if require_callback is not None:
         t.required(require_callback(candidate))
 
-    if require_no_other_damage_type:
+    if require_damage_exact_match:
+        resolved_damage_types = require_damage | bonus_damage
         t.required(
-            candidate.secondary_damage_type is None
-            or candidate.secondary_damage_type in bonus_damage
+            candidate.primary_damage_type in resolved_damage_types
+            or candidate.secondary_damage_type in resolved_damage_types
         )
+
+    if require_secondary_damage_type:
+        t.required(candidate.secondary_damage_type is not None)
 
     # checks against attacks
     t.check_attacks(candidate, attack_names)
@@ -269,6 +280,12 @@ def score(
     if bonus_speed:
         t.bonus(candidate.speed.fastest_speed >= bonus_speed)
 
+    if bonus_flying:
+        t.bonus((candidate.speed.fly or 0) > 0)
+
+    if bonus_swimming:
+        t.bonus((candidate.speed.swim or 0) > 0)
+
     if bonus_cr:
         t.bonus(candidate.cr >= bonus_cr)
 
@@ -278,4 +295,4 @@ def score(
     if bonus_callback:
         t.bonus(bonus_callback(candidate))
 
-    return t.score
+    return t.score * score_multiplier

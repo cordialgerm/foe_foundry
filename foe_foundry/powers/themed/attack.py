@@ -1,77 +1,72 @@
-from typing import List, Set, Tuple
+from datetime import datetime
+from typing import List
 
-import numpy as np
-from numpy.random import Generator
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural, spell, weapon
-from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
-from ..power import Power, PowerBackport, PowerType
-from ..scoring import AttackNames, score
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_attack(
-    candidate: BaseStatblock,
-    target_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
-    target_damage_type: DamageType | Set[DamageType] | List[DamageType] | None = None,
-    attack_names: AttackNames = None,
-    size_boost: bool = False,
-) -> float:
-    return score(
-        candidate=candidate,
-        bonus_roles=target_roles,
-        bonus_damage=target_damage_type,
-        attack_names=attack_names,
-        bonus_size=Size.Large if size_boost else None,
-    )
+class AttackPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        score_args: dict,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+    ):
+        super().__init__(
+            name=name,
+            power_type=PowerType.Theme,
+            source="FoeFoundryOriginal",
+            theme="Attack",
+            power_level=power_level,
+            create_date=create_date,
+            score_args=score_args,
+        )
 
 
-class _PoisoningAttack(PowerBackport):
+class _PoisonedAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Poisoning Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_damage_type=DamageType.Poison,
-            target_roles=[MonsterRole.Controller, MonsterRole.Ambusher],
+        score_args = dict(
+            bonus_damage=DamageType.Poison,
+            bonus_roles=[MonsterRole.Controller, MonsterRole.Ambusher],
             attack_names=[
                 "-",
                 natural.Claw,
                 natural.Bite,
                 natural.Stinger,
                 spell.Poisonbolt,
+                weapon.Daggers,
+                weapon.Shortbow,
+                weapon.Shortswords,
             ],
         )
+        super().__init__(name="Poisoned Attack", score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        dc = stats.difficulty_class_easy
-        weakened = conditions.Weakened()
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
         feature = Feature(
-            name="Weakening Attack",
+            name="Poisoned Attack",
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become {weakened.caption} until the end of its next turn. {weakened.description_3rd}",
+            description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become **Poisoned** until the end of its next turn.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _BleedingAttack(PowerBackport):
+class _BleedingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Bleeding Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Bruiser, MonsterRole.Skirmisher},
+        score_args = dict(
+            bonus_roles={MonsterRole.Bruiser, MonsterRole.Skirmisher},
             attack_names=[
                 "-",
                 natural.Claw,
@@ -85,12 +80,10 @@ class _BleedingAttack(PowerBackport):
             ],
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        damage = DieFormula.target_value(
-            target=0.5 * stats.attack.average_damage, force_die=Die.d6
-        )
+        super().__init__(name="Bleeding Attack", score_args=score_args)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        damage = stats.target_value(target=0.5, force_die=Die.d6)
 
         if stats.secondary_damage_type in {DamageType.Acid, DamageType.Poison}:
             damage_type = stats.secondary_damage_type
@@ -111,30 +104,25 @@ class _BleedingAttack(PowerBackport):
             condition = f"gains {bleeding}"
 
         feature = Feature(
-            name="Prone Attack",
+            name="Bleeding Attack",
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
             description=f"On a hit, the target {condition}",
         )
-        return stats, feature
+
+        return [feature]
 
 
-class _DazingAttack(PowerBackport):
+class _DazingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Dazing Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Controller},
-            target_damage_type=DamageType.Bludgeoning,
-            attack_names=["-", natural.Tail, natural.Slam, weapon.Staff],
+        score_args = dict(
+            require_roles={MonsterRole.Controller},
+            attack_names=[natural.Tail, natural.Slam, weapon.Staff],
         )
+        super().__init__(name="Dazing Attack", power_level=HIGH_POWER, score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dazed = conditions.Dazed()
         dc = stats.difficulty_class_easy
         feature = Feature(
@@ -144,27 +132,22 @@ class _DazingAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target must make a DC {dc} Constitution saving throw or be {dazed}",
         )
-        return stats, feature
+        return [feature]
 
 
-class _BurningAttack(PowerBackport):
+class _BurningAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Burning Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Artillery},
-            target_damage_type={DamageType.Fire, DamageType.Radiant, DamageType.Acid},
+        score_args = dict(
+            require_roles={MonsterRole.Artillery},
+            require_damage={DamageType.Fire, DamageType.Radiant, DamageType.Acid},
             attack_names=["-", spell.HolyBolt, spell.Firebolt, spell.Acidsplash],
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        damage_type = stats.secondary_damage_type or DamageType.Fire
-        damage = DieFormula.target_value(0.33 * stats.attack.average_damage, force_die=Die.d10)
+        super().__init__(name="Burning Attack", score_args=score_args)
 
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        damage_type = stats.secondary_damage_type or DamageType.Fire
+        damage = stats.target_value(0.33, force_die=Die.d10)
         burning = conditions.Burning(damage, damage_type)
         feature = Feature(
             name="Burning Attack",
@@ -173,24 +156,31 @@ class _BurningAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target gains {burning}",
         )
-        return stats, feature
+        return [feature]
 
 
-class _ProneAttack(PowerBackport):
+class _ProneAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Prone Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Bruiser},
-            size_boost=True,
-            attack_names=["-", weapon.Staff, weapon.Maul, natural.Slam, natural.Stomp],
+        score_args = dict(
+            bonus_roles={MonsterRole.Bruiser, MonsterRole.Controller},
+            bonus_size=Size.Large,
+            attack_names=[
+                "-",
+                weapon.Staff,
+                weapon.Maul,
+                natural.Slam,
+                natural.Stomp,
+                natural.Tail,
+                natural.Claw,
+                weapon.Greataxe,
+                weapon.Greatsword,
+                spell.ArcaneBurst,
+                spell.Thundrousblast,
+            ],
         )
+        super().__init__(name="Prone Attack", score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge:
             condition = "is knocked **Prone**"
         else:
@@ -204,30 +194,27 @@ class _ProneAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target {condition}",
         )
-        return stats, feature
+        return [feature]
 
 
-class _SlowingAttack(PowerBackport):
+class _SlowingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Slowing Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Controller, MonsterRole.Artillery},
-            target_damage_type=DamageType.Cold,
+        score_args = dict(
+            bonus_roles={MonsterRole.Controller, MonsterRole.Artillery},
+            bonus_damage=DamageType.Cold,
             attack_names=[
                 "-",
                 natural.Stomp,
                 spell.Frostbolt,
                 weapon.JavelinAndShield,
                 weapon.Whip,
+                weapon.Longbow,
+                weapon.Shortbow,
             ],
         )
+        super().__init__(name="Slowing Attack", score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Slowing Attack",
             action=ActionType.Feature,
@@ -235,21 +222,18 @@ class _SlowingAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target's movement speed is reduced by a cumulative 10 feet until the end of its next turn",
         )
-        return stats, feature
+        return [feature]
 
 
-class _PushingAttack(PowerBackport):
+class _PushingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Pushing Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Bruiser},
-            size_boost=True,
+        score_args = dict(
+            bonus_roles={MonsterRole.Bruiser, MonsterRole.Controller},
+            bonus_size=Size.Large,
             attack_names=[
                 "-",
                 natural.Tail,
+                natural.Slam,
                 spell.ArcaneBurst,
                 spell.EdlritchBlast,
                 spell.Thundrousblast,
@@ -258,9 +242,9 @@ class _PushingAttack(PowerBackport):
             ],
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        super().__init__(name="Pushing Attack", score_args=score_args)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge and stats.attributes.STR >= 20:
             distance = 20
         elif stats.size >= Size.Huge:
@@ -275,24 +259,20 @@ class _PushingAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target is pushed up to {distance} feet horizontally",
         )
-        return stats, feature
+        return [feature]
 
 
-class _GrapplingAttack(PowerBackport):
+class _GrapplingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Grappling Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Bruiser, MonsterRole.Controller},
-            size_boost=True,
+        score_args = dict(
+            bonus_roles={MonsterRole.Bruiser, MonsterRole.Controller},
+            bonus_size=Size.Large,
             attack_names=["-", natural.Slam, natural.Tentacle, weapon.Whip],
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        super().__init__(name="Grappling Attack", score_args=score_args)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         if stats.size >= Size.Huge or stats.attributes.STR >= 20:
@@ -310,18 +290,14 @@ class _GrapplingAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target {condition}",
         )
-        return stats, feature
+        return [feature]
 
 
-class _BlindingAttack(PowerBackport):
+class _BlindingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Blinding Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Controller, MonsterRole.Leader},
-            target_damage_type={DamageType.Radiant, DamageType.Acid},
+        score_args = dict(
+            bonus_roles={MonsterRole.Controller, MonsterRole.Leader},
+            bonus_damage={DamageType.Radiant, DamageType.Acid},
             attack_names=[
                 "-",
                 natural.Spit,
@@ -330,10 +306,9 @@ class _BlindingAttack(PowerBackport):
                 spell.Firebolt,
             ],
         )
+        super().__init__(name="Blinding Attack", score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Blinding Attack",
@@ -342,24 +317,19 @@ class _BlindingAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target must make a DC {dc} Constitution saving throw or be **Blinded** until the end of its next turn",
         )
-        return stats, feature
+        return [feature]
 
 
-class _FearingAttack(PowerBackport):
+class _FrighteningAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Frightening Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Controller, MonsterRole.Leader, MonsterRole.Ambusher},
-            target_damage_type={DamageType.Psychic, DamageType.Necrotic},
+        score_args = dict(
+            bonus_roles={MonsterRole.Controller, MonsterRole.Leader, MonsterRole.Ambusher},
+            bonus_damage={DamageType.Psychic, DamageType.Necrotic},
             attack_names=["-", spell.Gaze, spell.Deathbolt],
         )
+        super().__init__(name="Frightening Attack", score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Frightening Attack",
             action=ActionType.Feature,
@@ -367,24 +337,19 @@ class _FearingAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target is **Frightened** until the end of its next turn",
         )
-        return stats, feature
+        return [feature]
 
 
-class _CharmingAttack(PowerBackport):
+class _CharmingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Charming Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Controller, MonsterRole.Leader},
-            target_damage_type=DamageType.Psychic,
+        score_args = dict(
+            bonus_roles={MonsterRole.Controller, MonsterRole.Leader},
+            bonus_damage=DamageType.Psychic,
             attack_names=["-", spell.Gaze],
         )
+        super().__init__(name="Charming Attack", score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Charming Attack",
@@ -393,25 +358,21 @@ class _CharmingAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target must make a DC {dc} Wisdom save or be **Charmed** for 1 minute (save ends at end of turn or when it takes damage).",
         )
-        return stats, feature
+        return [feature]
 
 
-class _FreezingAttack(PowerBackport):
+class _FreezingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Freezing Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Controller},
-            target_damage_type=DamageType.Cold,
-            attack_names=["-", spell.Frostbolt],
+        score_args = dict(
+            bonus_roles={MonsterRole.Controller},
+            require_damage=DamageType.Cold,
+            require_damage_exact_match=True,
+            attack_names=[spell.Frostbolt],
         )
+        super().__init__(name="Freezing Attack", power_level=HIGH_POWER, score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        dc = stats.difficulty_class
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class_easy
         frozen = conditions.Frozen(dc)
         condition = f"must make a DC {dc} Constitution save or be {frozen}"
 
@@ -422,24 +383,20 @@ class _FreezingAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target {condition}",
         )
-        return stats, feature
+        return [feature]
 
 
-class _ShockingAttack(PowerBackport):
+class _ShockingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Shocking Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Controller, MonsterRole.Ambusher},
-            target_damage_type={DamageType.Lightning, DamageType.Thunder},
-            attack_names=["-", spell.Shock, spell.Thundrousblast],
+        score_args = dict(
+            bonus_roles={MonsterRole.Controller, MonsterRole.Ambusher},
+            require_damage={DamageType.Lightning, DamageType.Thunder},
+            require_damage_exact_match=True,
+            attack_names=[spell.Shock, spell.Thundrousblast],
         )
+        super().__init__(name="Shocking Attack", power_level=HIGH_POWER, score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         shocked = conditions.Shocked()
         feature = Feature(
@@ -449,17 +406,13 @@ class _ShockingAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target must make a DC {dc} Constitution saving throw or be {shocked}",
         )
-        return stats, feature
+        return [feature]
 
 
-class _GrazingAttack(PowerBackport):
+class _GrazingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Grazing Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Skirmisher},
+        score_args = dict(
+            bonus_roles={MonsterRole.Skirmisher},
             attack_names=[
                 "-",
                 weapon.Greatsword,
@@ -467,10 +420,9 @@ class _GrazingAttack(PowerBackport):
                 natural.Claw,
             ],
         )
+        super().__init__(name="Grazing Attack", score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.attributes.primary_mod
         damage_type = stats.attack.damage.damage_type
 
@@ -481,24 +433,19 @@ class _GrazingAttack(PowerBackport):
             hidden=True,
             description=f"If the attack misses, the target still takes {damage} {damage_type} damage",
         )
-        return stats, feature
+        return [feature]
 
 
-class _CleavingAttack(PowerBackport):
+class _CleavingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Cleaving Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            size_boost=True,
-            target_roles={MonsterRole.Bruiser},
-            attack_names=["-", weapon.Greataxe, natural.Tail],
+        score_args = dict(
+            bonus_size=Size.Large,
+            bonus_roles={MonsterRole.Bruiser},
+            attack_names=["-", weapon.Greataxe, natural.Tail, weapon.Polearm],
         )
+        super().__init__(name="Cleaving Attack", score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.attributes.primary_mod
         damage_type = stats.attack.damage.damage_type
         reach = stats.attack.reach
@@ -510,17 +457,13 @@ class _CleavingAttack(PowerBackport):
             hidden=True,
             description=f"If the attack hits and there is another hostile target within {reach} ft then that target also takes {damage} {damage_type} damage",
         )
-        return stats, feature
+        return [feature]
 
 
-class _SappingAttack(PowerBackport):
+class _SappingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Sapping Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles={MonsterRole.Skirmisher, MonsterRole.Controller},
+        score_args = dict(
+            bonus_roles={MonsterRole.Skirmisher, MonsterRole.Controller},
             attack_names=[
                 "-",
                 weapon.SpearAndShield,
@@ -529,10 +472,9 @@ class _SappingAttack(PowerBackport):
                 natural.Stinger,
             ],
         )
+        super().__init__(name="Sapping Attack", score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Sapping Attack",
             action=ActionType.Feature,
@@ -540,24 +482,18 @@ class _SappingAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target has disadvantage on its next attack roll until the end of its next turn",
         )
-        return stats, feature
+        return [feature]
 
 
-class _VexingAttack(PowerBackport):
+class _VexingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Vexing Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            size_boost=True,
-            target_roles={MonsterRole.Ambusher, MonsterRole.Leader},
+        score_args = dict(
+            bonus_roles={MonsterRole.Ambusher, MonsterRole.Leader},
             attack_names=["-", weapon.Shortbow, weapon.Shortswords, weapon.RapierAndShield],
         )
+        super().__init__(name="Vexing Attack", score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Vexing Attack",
             action=ActionType.Feature,
@@ -565,18 +501,14 @@ class _VexingAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the next attack against the target has advantage until the end of {stats.selfref}'s next turn.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _WeakeningAttack(PowerBackport):
+class _WeakeningAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Weakening Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_damage_type=[DamageType.Necrotic, DamageType.Poison, DamageType.Psychic],
-            target_roles=[MonsterRole.Controller, MonsterRole.Artillery],
+        score_args = dict(
+            bonus_damage=[DamageType.Necrotic, DamageType.Poison, DamageType.Psychic],
+            bonus_roles=[MonsterRole.Controller, MonsterRole.Artillery],
             attack_names=[
                 "-",
                 natural.Bite,
@@ -586,10 +518,9 @@ class _WeakeningAttack(PowerBackport):
                 spell.Gaze,
             ],
         )
+        super().__init__(name="Weakening Attack", power_level=HIGH_POWER, score_args=score_args)
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         weakened = conditions.Weakened()
         feature = Feature(
@@ -599,17 +530,13 @@ class _WeakeningAttack(PowerBackport):
             hidden=True,
             description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become {weakened.caption} until the end of its next turn. {weakened.description_3rd}",
         )
-        return stats, feature
+        return [feature]
 
 
-class _DisarmingAttack(PowerBackport):
+class _DisarmingAttack(AttackPower):
     def __init__(self):
-        super().__init__(name="Disarming Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_attack(
-            candidate,
-            target_roles=[MonsterRole.Controller, MonsterRole.Artillery],
+        score_args = dict(
+            bonus_roles=[MonsterRole.Controller, MonsterRole.Artillery],
             attack_names=[
                 "-",
                 weapon.SwordAndShield,
@@ -627,9 +554,9 @@ class _DisarmingAttack(PowerBackport):
             ],
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+        super().__init__(name="Disarming Attack", score_args=score_args)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Disarming Attack",
@@ -638,7 +565,7 @@ class _DisarmingAttack(PowerBackport):
             description=f"Immediately after hitting with an attack, {stats.selfref} forces the target to make a DC {dc} Strength saving throw. \
                 On a failure, the target must drop one item of {stats.selfref}'s choice that it is holding. The item lands at the target's feet.",
         )
-        return stats, feature
+        return [feature]
 
 
 BlindingAttack: Power = _BlindingAttack()
@@ -648,11 +575,11 @@ CleavingAttack: Power = _CleavingAttack()
 DisarmingAttack: Power = _DisarmingAttack()
 BurningAttack: Power = _BurningAttack()
 DazingAttacks: Power = _DazingAttack()
-FearingAttack: Power = _FearingAttack()
+FrighteningAttack: Power = _FrighteningAttack()
 FreezingAttack: Power = _FreezingAttack()
 GrapplingAttack: Power = _GrapplingAttack()
 GrazingAttack: Power = _GrazingAttack()
-PoisoningAttack: Power = _PoisoningAttack()
+PoisonedAttack: Power = _PoisonedAttack()
 ProneAttack: Power = _ProneAttack()
 PushingAttack: Power = _PushingAttack()
 SappingAttack: Power = _SappingAttack()
@@ -669,11 +596,11 @@ AttackPowers = [
     DisarmingAttack,
     BurningAttack,
     DazingAttacks,
-    FearingAttack,
+    FrighteningAttack,
     FreezingAttack,
     GrapplingAttack,
     GrazingAttack,
-    PoisoningAttack,
+    PoisonedAttack,
     ProneAttack,
     PushingAttack,
     SappingAttack,

@@ -1,84 +1,147 @@
-from math import ceil
-from typing import List, Tuple
+import math
+from datetime import datetime
+from typing import List
 
-import numpy as np
+from num2words import num2words
 
 from ...attack_template import spell
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
-from ..power import Power, PowerBackport, PowerType
+from ...statblocks import BaseStatblock
+from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from ..power_type import PowerType
-from ..scoring import score
 
 
-def score_charming(candidate: BaseStatblock) -> float:
-    return score(
-        candidate=candidate,
-        require_types=[CreatureType.Fey, CreatureType.Fiend, CreatureType.Aberration],
-        require_stats=Stats.CHA,
-        bonus_roles=[MonsterRole.Controller, MonsterRole.Leader],
-        bonus_skills=[Skills.Deception, Skills.Persuasion],
-        attack_names=spell.Gaze,
-        bonus_damage=DamageType.Psychic,
-        require_no_other_damage_type=True,
-    )
+class CharmingPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        def humanoid_is_psychic_spellcaster(candidate: BaseStatblock) -> bool:
+            if candidate.creature_type == CreatureType.Humanoid:
+                return (
+                    candidate.attack_type.is_spell()
+                    and candidate.secondary_damage_type == DamageType.Psychic
+                )
+            return True
 
-
-class _WordsOfTreachery(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Words of Treachery", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_charming(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        distance = 20 if stats.cr <= 4 else 40
-        dc = stats.difficulty_class_easy
-
-        feature = Feature(
-            name="Words of Treachery",
-            description=f"{stats.selfref.capitalize()} speaks deceitful words at a target within {distance} ft of them who can see and hear them. \
-                The target must succeed on a DC {dc} Charisma saving throw or use their reaction to move up to half their speed and make a melee, ranged, or cantrip attack against a target of {stats.selfref}'s choice. \
-                This counts as a **Charm** effect.",
-            action=ActionType.Action,
-            replaces_multiattack=1,
+        standard_score_args = dict(
+            require_types=[
+                CreatureType.Fey,
+                CreatureType.Fiend,
+                CreatureType.Humanoid,
+            ],
+            require_stats=Stats.CHA,
+            require_callback=humanoid_is_psychic_spellcaster,
+            bonus_roles=[MonsterRole.Controller, MonsterRole.Leader],
+            bonus_skills=[Skills.Deception, Skills.Persuasion],
+            attack_names=spell.Gaze,
+            bonus_damage=DamageType.Psychic,
+            **score_args,
         )
 
-        return stats, feature
+        super().__init__(
+            name=name,
+            theme="Charm",
+            source=source,
+            power_level=power_level,
+            power_type=PowerType.Theme,
+            create_date=create_date,
+            score_args=standard_score_args,
+        )
 
 
-class _CharmingWords(PowerBackport):
+class _MentalSummons(CharmingPower):
     def __init__(self):
-        super().__init__(name="Charming Words", power_type=PowerType.Theme)
+        super().__init__(
+            name="Mental Summons",
+            source="A5E SRD Murmuring Worm",
+            create_date=datetime(2023, 11, 23),
+            power_level=LOW_POWER,
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_charming(candidate)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        feature = Feature(
+            name="Mental Summons",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} targets a creature with an Intelligence score greater than 3 within 120 feet. \
+                The target makes a DC {dc} Wisdom saving throw. On a failure, it uses its reaction to move up to its speed towards {stats.selfref} \
+                by the shortest route possible, avoiding hazards but not opportunity attacks. This is a magical charm effect.",
+        )
+        return [feature]
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        distance = 60 if stats.cr <= 7 else 90
+
+class _SweetPromises(CharmingPower):
+    def __init__(self):
+        super().__init__(
+            name="Sweet Promises",
+            source="A5E SRD Rakshasa",
+            create_date=datetime(2023, 11, 23),
+            power_level=LOW_POWER,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        feature = Feature(
+            name="Sweet Promises",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} targets a creature that can hear it within 60 feet, offering something the target covets. \
+                The target makes a DC {dc} Wisdom saving throw. On a failure, the target is **Charmed** until the end of its next turn, and **Stunned** while **Charmed** in this way.",
+        )
+        return [feature]
+
+
+class _WardingCharm(CharmingPower):
+    def __init__(self):
+        super().__init__(
+            name="Warding Charm", source="A5E SRD Vampire", create_date=datetime(2023, 11, 23)
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        feature = Feature(
+            name="Warding Charm",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"When a creature the {stats.selfref} can see targets it with a melee attack but before the attack is made, \
+                {stats.selfref} casts *Charm Person* with a DC of {dc} on that target.",
+        )
+        return [feature]
+
+
+class _CharmingWords(CharmingPower):
+    def __init__(self):
+        super().__init__(name="Charming Words", source="SRD5.1 Charm Person")
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        level = num2words(math.ceil(stats.cr / 3), ordinal=True)
         dc = stats.difficulty_class
 
         feature = Feature(
             name="Charming Words",
-            description=f"{stats.selfref.capitalize()} chooses any number of targets within {distance} ft that can hear them. \
-                Each target must succeed on a DC {dc} Charisma saving throw or be **Charmed** by {stats.selfref} until the end of their next turn.",
-            action=ActionType.BonusAction,
-            recharge=5,
+            uses=1,
+            replaces_multiattack=1,
+            action=ActionType.Action,
+            description=f"{stats.selfref.capitalize()} casts *Charm Person* at {level} level with a DC of {dc}",
         )
 
-        return stats, feature
+        return [feature]
 
 
-WordsOfTreachery: Power = _WordsOfTreachery()
 CharmingWords: Power = _CharmingWords()
+MentalSummons: Power = _MentalSummons()
+SweetPromises: Power = _SweetPromises()
+WardingCharm: Power = _WardingCharm()
 
-CharmPowers: List[Power] = [WordsOfTreachery, CharmingWords]
+CharmPowers: List[Power] = [CharmingWords, MentalSummons, SweetPromises, WardingCharm]

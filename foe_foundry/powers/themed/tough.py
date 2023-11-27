@@ -1,159 +1,145 @@
+from datetime import datetime
 from math import ceil
-from typing import List, Tuple
+from typing import List
 
-import numpy as np
 from num2words import num2words
-from numpy.random import Generator
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import (
+    HIGH_POWER,
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
-def _score_physically_tough(candidate: BaseStatblock) -> float:
-    # this role makes sense for lots of monsters, but Defenders and Bruisers should be a bit more likely to have this
-    return score(
-        candidate=candidate,
-        require_types=[
-            CreatureType.Ooze,
-            CreatureType.Undead,
-            CreatureType.Beast,
-            CreatureType.Monstrosity,
-        ],
-        bonus_roles=[MonsterRole.Bruiser, MonsterRole.Defender],
-        bonus_stats=Stats.STR,
-        require_stats=Stats.CON,
-        stat_threshold=14,
-        bonus_skills=[Skills.Deception, Skills.Performance],
-    )
+class PhysicallyTough(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        def humanoid_is_fighter(c: BaseStatblock) -> bool:
+            if c.creature_type in {CreatureType.Humanoid, CreatureType.Fey}:
+                return c.role in {MonsterRole.Bruiser, MonsterRole.Defender}
+            else:
+                return True
+
+        super().__init__(
+            name=name,
+            source=source,
+            theme="tough",
+            power_level=power_level,
+            power_type=PowerType.Theme,
+            create_date=create_date,
+            score_args=dict(
+                require_types=[
+                    CreatureType.Ooze,
+                    CreatureType.Undead,
+                    CreatureType.Beast,
+                    CreatureType.Monstrosity,
+                    CreatureType.Humanoid,
+                    CreatureType.Giant,
+                    CreatureType.Fey,
+                ],
+                bonus_roles=[MonsterRole.Bruiser, MonsterRole.Defender],
+                require_stats=Stats.STR,
+                bonus_size=Size.Large,
+                bonus_skills=Skills.Athletics,
+                require_callback=humanoid_is_fighter,
+            )
+            | score_args,
+        )
 
 
-def _score_has_magic_protection(candidate: BaseStatblock) -> float:
-    # this is common amongst fiends, celestials, and fey and high-CR creatures
-    return score(
-        candidate=candidate,
-        require_types=[CreatureType.Fey, CreatureType.Fiend, CreatureType.Celestial],
-        bonus_roles=[MonsterRole.Defender, MonsterRole.Leader],
-        require_cr=5,
-    )
+class MagicallyTough(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        super().__init__(
+            name=name,
+            source=source,
+            theme="tough",
+            power_level=power_level,
+            power_type=PowerType.Theme,
+            create_date=create_date,
+            score_args=dict(
+                require_types=[
+                    CreatureType.Fey,
+                    CreatureType.Fiend,
+                    CreatureType.Celestial,
+                    CreatureType.Construct,
+                ],
+                bonus_roles=[MonsterRole.Defender, MonsterRole.Leader],
+                require_cr=5,
+            )
+            | score_args,
+        )
 
 
-class _NotDeadYet(PowerBackport):
+class _JustAScratch(PhysicallyTough):
     """When this creature is reduced to 0 hit points, they drop prone and are indistinguishable from a dead creature.
     At the start of their next turn, this creature stands up without using any movement and has 2x CR hit points.
     They can then take their turn normally."""
 
     def __init__(self):
-        super().__init__(name="Not Dead Yet", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        # this power makes a lot of sense for undead, oozes, beasts, and monstrosities
-        return score(
-            candidate=candidate,
-            require_types=[
-                CreatureType.Ooze,
-                CreatureType.Undead,
-                CreatureType.Beast,
-                CreatureType.Monstrosity,
-            ],
-            require_stats=Stats.CON,
-            stat_threshold=14,
-            bonus_skills=[Skills.Deception, Skills.Performance],
+        super().__init__(
+            name="Just A Scratch", source="FoeFoundryOriginal", power_level=HIGH_POWER
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
-        stats = stats.copy(attributes=new_attrs)
-
-        hp = int(ceil(2.0 * stats.cr))
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        hp = easy_multiple_of_five(0.5 * stats.hp.average)
+        temphp = easy_multiple_of_five(0.25 * stats.hp.average)
 
         feature = Feature(
-            name="Not Dead Yet",
-            description=f"When {stats.selfref} is reduced to 0 hit points, it drops prone and is indistinguishable from a dead creature. \
-                        At the start of their next turn, {stats.selfref} stands up without using any movement and has {hp} hit points. It can take its turn normally",
+            name="Just A Scratch",
+            description=f"When {stats.selfref} is reduced to {hp} hit points, it roars in defiance and gains {temphp} temporary hitpoints. \
+                While those temporary hitpoints are active, {stats.selfref} has advantage on all attack rolls and saving throws.",
             action=ActionType.Reaction,
             uses=1,
         )
-        return stats, feature
+        return [feature]
 
 
-class _GoesDownFighting(PowerBackport):
-    """When this creature is reduced to 0 hit points, they can immediately make one melee or ranged weapon attack before they fall unconscious."""
-
+class _MagicResistance(MagicallyTough):
     def __init__(self):
         super().__init__(
-            name="Goes Down Fighting", power_type=PowerType.Theme, power_level=LOW_POWER
+            name="Magic Resistance", source="SRD5.1 Stone Golem", power_level=LOW_POWER
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_physically_tough(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        feature = Feature(
-            name="Goes Down Fighting",
-            description=f"When {stats.selfref} is reduced to 0 hit points, they can immediately make one attack before they fall unconscious",
-            action=ActionType.Reaction,
-        )
-        return stats, feature
-
-
-class _AdrenalineRush(PowerBackport):
-    def __init__(self):
-        super().__init__(
-            name="Adrenaline Rush", power_type=PowerType.Theme, power_level=HIGH_POWER
-        )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_physically_tough(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        feature = Feature(
-            name="Adrenaline Rush",
-            uses=1,
-            action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} takes another action this round. If it has any recharge abilities, it may roll to refresh these abilities.",
-        )
-
-        return stats, feature
-
-
-class _MagicResistance(PowerBackport):
-    def __init__(self):
-        super().__init__(
-            name="Magic Resistance", power_type=PowerType.Theme, power_level=LOW_POWER
-        )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_has_magic_protection(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Magic Resistance",
             action=ActionType.Feature,
             description=f"{stats.selfref.capitalize()} has advantage on saves against spells and other magical effects.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _LimitedMagicImmunity(PowerBackport):
+class _LimitedMagicImmunity(MagicallyTough):
     def __init__(self):
         super().__init__(
-            name="Limited Magic Immunity", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name="Limited Magic Immunity", source="SRD5.1 Rakshasa", power_level=HIGH_POWER
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_has_magic_protection(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         level = (
             f"{num2words(int(min(5, ceil(stats.cr / 3))), to='ordinal')} level spell or lower"
         )
@@ -164,44 +150,44 @@ class _LimitedMagicImmunity(PowerBackport):
             description=f"When {stats.selfref} is attacked by a spell, targeted by spell, or forced to make a saving throw by a {level} then {stats.selfref} can force the spell attack to miss or can choose to succeed on the saving throw.",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _QuickRecovery(PowerBackport):
-    """Quick Recovery (Trait). At the start of this creature's turn, they can attempt a saving throw
-    against any effect on them that can be ended by a successful saving throw."""
-
+class _EliteRecovery(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
-            name="Quick Recovery", power_type=PowerType.Theme, power_level=LOW_POWER
+            name="Elite Recovery",
+            power_type=PowerType.Theme,
+            source="A5E SRD",
+            theme="tough",
+            power_level=LOW_POWER,
+            score_args=dict(require_cr=7),
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        # this power makes a lot of sense for high CR creatures, creatures with high CON (resilient), or high CHA (luck)
-        return _score_physically_tough(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        # add CON save proficiency
-        new_attrs = stats.attributes.grant_save_proficiency(Stats.CON)
-        stats = stats.copy(attributes=new_attrs)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
-            name="Quick Recovery",
+            name="Elite Recovery",
             description=f"At the start of {stats.selfref}'s turn, they can attempt a saving throw \
                          against any effect on them that can be ended by a successful saving throw",
             action=ActionType.Feature,
         )
-        return stats, feature
+        return [feature]
 
 
-class _Regeneration(PowerBackport):
+class _Regeneration(PhysicallyTough):
     def __init__(self):
-        super().__init__(name="Regeneration", power_type=PowerType.Theme)
+        super().__init__(
+            name="Regeneration",
+            source="SRD5.1 Shield Guardian",
+            require_types=[
+                CreatureType.Construct,
+                CreatureType.Undead,
+                CreatureType.Monstrosity,
+                CreatureType.Ooze,
+            ],
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_physically_tough(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         weaknesses = {
             CreatureType.Undead: "radiant damage",
             CreatureType.Monstrosity: "acid or fire damage",
@@ -218,17 +204,14 @@ class _Regeneration(PowerBackport):
                 If {stats.selfref} takes {weakness}, this trait doesn't function at the start of {stats.selfref}'s next turn. \
                 {stats.selfref.capitalize()} only dies if it starts its turn with 0 hp and doesn't regenerate.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _Stoneskin(PowerBackport):
+class _Stoneskin(PhysicallyTough):
     def __init__(self):
-        super().__init__(name="Stoneskin", power_type=PowerType.Theme)
+        super().__init__(name="Stoneskin", source="SRD5.1 Stoneskin")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_physically_tough(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Stoneskin",
             action=ActionType.Reaction,
@@ -236,26 +219,21 @@ class _Stoneskin(PowerBackport):
             description=f"{stats.selfref.capitalize()} instantly hardens its exterior in response to being hit by an attack. \
                 {stats.selfref.capitalize()} gains resistance to non-psychic damage until the end of its next turn",
         )
+        return [feature]
 
-        return stats, feature
 
-
-AdrenalineRush: Power = _AdrenalineRush()
-GoesDownFighting: Power = _GoesDownFighting()
+EliteRecovery: Power = _EliteRecovery()
+JustAScratch: Power = _JustAScratch()
 LimitedMagicImmunity: Power = _LimitedMagicImmunity()
 MagicResistance: Power = _MagicResistance()
-NotDeadYet: Power = _NotDeadYet()
-QuickRecovery: Power = _QuickRecovery()
 Regeneration: Power = _Regeneration()
 Stoneskin: Power = _Stoneskin()
 
 ToughPowers: List[Power] = [
-    AdrenalineRush,
-    GoesDownFighting,
+    EliteRecovery,
+    JustAScratch,
     LimitedMagicImmunity,
     MagicResistance,
-    NotDeadYet,
-    QuickRecovery,
     Regeneration,
     Stoneskin,
 ]

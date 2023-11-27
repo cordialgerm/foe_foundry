@@ -69,6 +69,14 @@ def adjust_attack(
     else:
         repaired_formula = attack.damage.formula.copy()
 
+    # if this is a low-CR creature and our damage is still too big then we should reduce it
+    if adjust_average_damage and stats.cr <= 2 and repaired_formula.average >= 10:
+        repaired_formula = DieFormula.target_value(
+            target=0.8 * repaired_formula.average,
+            flat_mod=stats.attributes.primary_mod,
+            suggested_die=die,
+        )
+
     damage_type = (
         primary_damage_type if primary_damage_type is not None else attack.damage.damage_type
     )

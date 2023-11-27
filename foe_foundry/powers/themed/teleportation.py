@@ -1,61 +1,70 @@
-from math import ceil, floor
-from typing import List, Tuple
+from datetime import datetime
+from math import ceil
+from typing import List
 
-import numpy as np
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
-from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def _score_has_teleport(candidate: BaseStatblock) -> float:
-    return score(
-        candidate=candidate,
-        require_types={
-            CreatureType.Fey,
-            CreatureType.Fiend,
-            CreatureType.Aberration,
-        },
-        bonus_attack_types=AttackType.AllSpell(),
-        bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
-    )
+class TeleportationPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        def humanoid_is_caster(c: BaseStatblock) -> bool:
+            if c.creature_type == CreatureType.Humanoid:
+                return c.attack_type.is_spell()
+            else:
+                return True
+
+        super().__init__(
+            name=name,
+            source=source,
+            theme="teleportation",
+            power_level=power_level,
+            power_type=PowerType.Theme,
+            create_date=create_date,
+            score_args=dict(
+                require_callback=humanoid_is_caster,
+                require_types={
+                    CreatureType.Fey,
+                    CreatureType.Fiend,
+                    CreatureType.Aberration,
+                    CreatureType.Humanoid,
+                },
+                bonus_attack_types=AttackType.AllSpell(),
+                bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
+            )
+            | score_args,
+        )
 
 
-class _BendSpace(PowerBackport):
+class _BendSpace(TeleportationPower):
     def __init__(self):
-        super().__init__(name="Bend Space", power_type=PowerType.Theme)
+        super().__init__(name="Bend Space", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_has_teleport(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Bend Space",
             action=ActionType.Reaction,
             description=f"When {stats.selfref} would be hit by an attack, it teleports and exchanges position with an ally it can see within 60 feet of it. The ally is then hit by the attack instead.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _MistyStep(PowerBackport):
+class _MistyStep(TeleportationPower):
     def __init__(self):
-        super().__init__(name="Misty Step", power_type=PowerType.Theme, power_level=LOW_POWER)
+        super().__init__(name="Misty Step", source="SRD5.1 Misty Step", power_level=LOW_POWER)
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_has_teleport(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30 if stats.cr <= 7 else 60
         uses = int(min(3, ceil(stats.cr / 3)))
 
@@ -66,17 +75,14 @@ class _MistyStep(PowerBackport):
             description=f"{stats.selfref.capitalize()} teleports up to {distance} feet to an unoccupied space it can see.",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _Scatter(PowerBackport):
+class _Scatter(TeleportationPower):
     def __init__(self):
-        super().__init__(name="Scatter", power_type=PowerType.Theme)
+        super().__init__(name="Scatter", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_has_teleport(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = 20 if stats.cr <= 7 else 30
         dc = stats.difficulty_class
         count = int(max(2, ceil(stats.cr / 3)))
@@ -87,10 +93,11 @@ class _Scatter(PowerBackport):
             recharge=5,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} forces up to {count} creatures it can see within {distance} feet to make a DC {dc} Charisma save. \
-                On a failure, the target is teleported to an unoccupied space within {4 * distance} feet that {stats.selfref} can see. The space must be on the ground or on a floor.",
+                On a failure, the target is teleported to an unoccupied space within {4 * distance} feet that {stats.selfref} can see. \
+                The space must be on the ground or on a floor.",
         )
 
-        return stats, feature
+        return [feature]
 
 
 BendSpace: Power = _BendSpace()

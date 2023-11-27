@@ -51,3 +51,34 @@ class DamageType(StrEnum):
             DamageType.Thunder,
             DamageType.Poison,
         }
+
+    @property
+    def adj(self) -> str:
+        if self == DamageType.Acid:
+            return "acidic"
+        elif self == DamageType.Bludgeoning:
+            return "bludgeoning"
+        elif self == DamageType.Cold:
+            return "freezing"
+        elif self == DamageType.Fire:
+            return "fiery"
+        elif self == DamageType.Force:
+            return "energetic"
+        elif self == DamageType.Lightning:
+            return "shocking"
+        elif self == DamageType.Necrotic:
+            return "deathly"
+        elif self == DamageType.Piercing:
+            return "piercing"
+        elif self == DamageType.Poison:
+            return "poisonous"
+        elif self == DamageType.Psychic:
+            return "mind-shattering"
+        elif self == DamageType.Radiant:
+            return "holy"
+        elif self == DamageType.Slashing:
+            return "slashing"
+        elif self == DamageType.Thunder:
+            return "thunderous"
+        else:
+            raise ValueError(f"Unknown damage type {self}")

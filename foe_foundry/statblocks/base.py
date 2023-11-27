@@ -316,3 +316,28 @@ class BaseStatblock:
         additional_attacks.append(new_attack)
 
         return self.copy(additional_attacks=additional_attacks)
+
+    def target_value(self, target: float = 1.0, **args) -> DieFormula:
+        adjustment = 1.0
+
+        # none of the monsters have 5 attacks, so raise an error if we try to scale more than 5 attacks
+        if target >= 5:
+            raise ValueError(f"Unexpected value for target: {target}")
+
+        # low-CR monsters need to be careful with how much damage they pump out from non-attack abilities
+        if self.cr <= 2:
+            adjustment *= 0.8
+
+        # if the multiplier is greater than the # of multiattacks then we also need to be careful
+        if target > self.multiattack:
+            adjustment *= 0.8
+
+        # if the monster is high CR then we can afford to scale it up a bit
+        if self.cr >= 7:
+            adjustment *= 1.1
+
+        if self.cr >= 15:
+            adjustment *= 1.1
+
+        scaled_target = self.attack.average_damage * target * adjustment
+        return DieFormula.target_value(target=scaled_target, **args)

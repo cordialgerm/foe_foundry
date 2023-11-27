@@ -1,76 +1,82 @@
-from typing import List, Tuple
-
-import numpy as np
+from datetime import datetime
+from typing import List
 
 from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
 from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural
-from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...statblocks import BaseStatblock, MonsterDials
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ...statblocks import BaseStatblock
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_aberrant(candidate: BaseStatblock, **kwargs) -> float:
-    def is_aberrant_creature(c: BaseStatblock) -> bool:
-        if (
-            c.creature_type in {CreatureType.Humanoid, CreatureType.Fey}
-            and c.attack_type.is_spell()
-            and c.secondary_damage_type == DamageType.Psychic
-        ):
-            return True
-        else:
-            return c.creature_type in {CreatureType.Aberration}
+class AberrantPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        def is_aberrant_creature(c: BaseStatblock) -> bool:
+            if (
+                c.creature_type in {CreatureType.Humanoid, CreatureType.Fey}
+                and c.attack_type.is_spell()
+                and c.secondary_damage_type == DamageType.Psychic
+            ):
+                return True
+            else:
+                return c.creature_type in {CreatureType.Aberration, CreatureType.Monstrosity}
 
-    args: dict = dict(
-        candidate=candidate,
-        require_callback=is_aberrant_creature,
-        bonus_roles=[MonsterRole.Controller, MonsterRole.Ambusher, MonsterRole.Skirmisher],
-        bonus_attack_types=AttackType.AllSpell(),
-        bonus_damage=DamageType.Psychic,
-    )
-    args.update(kwargs)
-    return score(**args)
+        standard_score_args = (
+            dict(
+                require_callback=is_aberrant_creature,
+                bonus_roles=[
+                    MonsterRole.Controller,
+                    MonsterRole.Ambusher,
+                    MonsterRole.Skirmisher,
+                ],
+                bonus_attack_types=AttackType.AllSpell(),
+                bonus_damage=DamageType.Psychic,
+            )
+            | score_args
+        )
+        super().__init__(
+            name=name,
+            power_type=PowerType.Role,
+            power_level=power_level,
+            source=source,
+            create_date=create_date,
+            theme="Aberrant",
+            score_args=standard_score_args,
+        )
 
 
-class _EraseMemory(PowerBackport):
+class _ModifyMemory(AberrantPower):
     def __init__(self):
-        super().__init__(name="Erase Memory", power_type=PowerType.Theme)
+        super().__init__(name="Modify Memory", source="SRD5.1 Modify Memory")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberrant(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
-            name="Erase Memory",
+            name="Modify Memory",
             action=ActionType.BonusAction,
-            description=f"Immediately after hitting with an attack, {stats.selfref} becomes **Invisible** to the target as the target's memories of {stats.selfref} are temporarily erased. \
-                The target makes a DC {dc} Intelligence saving throw at the end of each of its turns to end the effect. \
-                If a creature fails three saves, the memory loss is permanent and can only be undone with a Greater Restoration or equivalent magic. \
-                A creature that succeeds on a saving throw is immune to this effect for 5 minutes.",
+            description=f"Immediately after hitting with an attack, {stats.selfref} attempts to reshape that creature's memories. \
+                The creature must succeed on a DC {dc} Intelligence saving throw or be affected as if by the *Modify Memory* spell. \
+                A creature that succeeds on the save is immune to this effect for 24 hours.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _WarpReality(PowerBackport):
+class _WarpReality(AberrantPower):
     def __init__(self):
-        super().__init__(name="Warp Reality", power_type=PowerType.Theme)
+        super().__init__(name="Warp Reality", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberrant(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         distance = 20 + (20 if stats.cr >= 7 else 0)
         feature = Feature(
@@ -82,44 +88,35 @@ class _WarpReality(PowerBackport):
             replaces_multiattack=1,
             recharge=4,
         )
-        return stats, feature
+        return [feature]
 
 
-class _AdhesiveSkin(PowerBackport):
+class _Adhesive(AberrantPower):
     def __init__(self):
-        super().__init__(name="Adhesive Skin", power_type=PowerType.Theme)
+        super().__init__(name="Adhesive", source="SRD5.1 Mimic")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberrant(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
         feature = Feature(
-            name="Adhesive Skin",
+            name="Adhesive",
             action=ActionType.Feature,
-            description=f"When {stats.selfref} is hit by a melee weapon attack, the weapon becomes stuck to them. \
-                A creature can use an action to remove the weapon with a successful DC 14 Athletics check. \
-                All items stuck to {stats.selfref} become unstuck when it dies.",
+            description=f"{stats.selfref.capitalize()} adheres to anything that touches it (including weapons). \
+                A Huge or smaller creature or object adhered to {stats.selfref} is also **Grappled** by it (escape DC {dc}). \
+                Ability checks made to escape this grapple have disadvantage.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _Incubation(PowerBackport):
+class _Incubation(AberrantPower):
     def __init__(self):
-        super().__init__(name="Incubation", power_type=PowerType.Theme, power_level=HIGH_POWER)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberrant(
-            candidate,
+        super().__init__(
+            name="Incubation",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
             attack_names=["-", natural.Claw],
-            require_types=CreatureType.Aberration,
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         timespan = "three months" if stats.cr <= 5 else "three days"
 
@@ -133,13 +130,12 @@ class _Incubation(PowerBackport):
                             At birth, the parasite burrows its way out of the target's chest in one round, killing it.\
                             If the disease is cured, the parasite disintigrates.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-EraseMemory: Power = _EraseMemory()
+Adhesive: Power = _Adhesive()
+ModifyMemory: Power = _ModifyMemory()
 WarpReality: Power = _WarpReality()
-AdhesiveSkin: Power = _AdhesiveSkin()
 Incubation: Power = _Incubation()
 
-AberrantPowers: List[Power] = [EraseMemory, WarpReality, AdhesiveSkin, Incubation]
+AberrantPowers: List[Power] = [Adhesive, ModifyMemory, WarpReality, Incubation]

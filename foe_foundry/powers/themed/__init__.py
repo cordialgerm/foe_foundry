@@ -14,6 +14,7 @@ from . import (
     cruel,
     cursed,
     deathly,
+    diseased,
     domineering,
     earthy,
     fast,
@@ -27,7 +28,6 @@ from . import (
     poison,
     psychic,
     reckless,
-    size,
     sneaky,
     storm,
     teleportation,
@@ -51,12 +51,13 @@ ThemedPowers: List[Power] = (
     + cruel.CruelPowers
     + cursed.CursedPowers
     + deathly.DeathlyPowers
+    + diseased.DiseasedPowers
     + domineering.DomineeringPowers
     + earthy.EarthyPowers
     + fast.FastPowers
     + fearsome.FearsomePowers
     + fighting_styles.FightingStylePowers
-    + flying.FlyerPowers
+    + flying.FlyingPowers
     + gadget.GadgetPowers
     + holy.HolyPowers
     + monstrous.MonstrousPowers
@@ -64,7 +65,6 @@ ThemedPowers: List[Power] = (
     + poison.PoisonPowers
     + psychic.PsychicPowers
     + reckless.RecklessPowers
-    + size.SizePowers
     + sneaky.SneakyPowers
     + storm.StormPowers
     + teleportation.TeleportationPowers

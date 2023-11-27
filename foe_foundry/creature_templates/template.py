@@ -58,6 +58,7 @@ class CreatureTypeTemplate(ABC):
         base_stats: BaseStatblock,
         rng_factory: int | RngFactory,
         role_template: RoleTemplate | str | None | MonsterRole = None,
+        selection_retries: int = 3,
     ) -> Statblock:
         rng_factory = resolve_rng(rng_factory)
 
@@ -68,7 +69,7 @@ class CreatureTypeTemplate(ABC):
 
         # apply role specialization
         role_template = self.select_role(stats=new_stats, role_template=role_template, rng=rng)
-        new_stats = role_template.alter_base_stats(new_stats, rng=rng)
+        new_stats = role_template.alter_base_stats(new_stats)
         new_stats = self.customize_role(new_stats, rng)
 
         # apply attack template and attack powers (if any)
@@ -83,7 +84,10 @@ class CreatureTypeTemplate(ABC):
         # select additional powers
 
         new_stats, new_features = select_powers(
-            stats=new_stats, rng=rng_factory, power_level=new_stats.recommended_powers
+            stats=new_stats,
+            rng=rng_factory,
+            power_level=new_stats.recommended_powers,
+            retries=selection_retries,
         )
 
         # finalize attacks

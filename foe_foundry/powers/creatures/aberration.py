@@ -1,56 +1,54 @@
-from math import ceil, floor
-from typing import Dict, List, Tuple
-
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
+from datetime import datetime
+from math import floor
+from typing import List
 
 from ...attack_template import natural, spell
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, Swallowed
+from ...damage import AttackType, DamageType, Swallowed, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, Power, PowerType
-from ..scoring import AttackNames, score
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_aberration(
-    candidate: BaseStatblock,
-    min_size: Size | None = None,
-    attack_names: AttackNames = None,
-) -> float:
-    return score(
-        candidate=candidate,
-        require_types=CreatureType.Aberration,
-        require_size=min_size,
-        attack_names=attack_names,
-    )
+class AberrationPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        standard_score_args = dict(require_types=CreatureType.Aberration)
+        standard_score_args.update(score_args)
+
+        super().__init__(
+            name=name,
+            source=source,
+            power_type=PowerType.Creature,
+            power_level=power_level,
+            create_date=create_date,
+            score_args=standard_score_args,
+            theme="Aberration",
+        )
 
 
-class _GraspingTentacles(Power):
-    """Grasping Tentacles (Reaction). When this creature hits with an attack,
-    they sprout a tentacle that grasps the target. In addition to the attack's normal effects, the target is grappled (escape
-    DC = 11 + 1/2 CR) and restrained. Until the grapple ends, this creature can't use the grappling tentacle against another
-    target. This creature can sprout 1d4 tentacles."""
-
+class _TentacleGrapple(AberrationPower):
     def __init__(self):
-        super().__init__(name="Grasping Tentacles", power_type=PowerType.Creature)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberration(
-            candidate,
+        super().__init__(
+            name="Tentacle Grapple",
+            source="FoeFoundryOriginal",
             attack_names={"-", natural.Tentacle},
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = int(floor(11 + 0.5 * stats.cr))
         feature = Feature(
-            name="Grasping Tentacles",
-            description=f"On a hit, the target sprouts a tentacle that grapples the target (escape DC {dc}). While grappled in this way, the target is restrained.",
+            name="Tentacle Grapple",
+            description=f"On a hit, the target is **Grappled** (escape DC {dc}). While grappled in this way, the target is **Restrained**.",
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
@@ -58,33 +56,39 @@ class _GraspingTentacles(Power):
         return [feature]
 
 
-class _DominatingGaze(Power):
+class _GazeOfTheFarRealm(AberrationPower):
     def __init__(self):
-        super().__init__(name="Dominating Gaze", power_type=PowerType.Creature)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberration(candidate, attack_names=spell.Gaze)
+        super().__init__(
+            name="Gaze of the Far Realm",
+            source="FoeFoundryOriginal",
+            create_date=datetime(2023, 11, 21),
+            attack_names=spell.Gaze,
+            bonus_damage=DamageType.Psychic,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        dmg = stats.target_value(0.25, suggested_die=Die.d6)
+        burning = conditions.Burning(damage=dmg, damage_type=DamageType.Psychic)
         feature = Feature(
-            name="Dominating Gaze",
+            name="Gaze of the Far Realm",
             action=ActionType.Action,
             recharge=4,
             replaces_multiattack=1,
-            description=f"One target of this creature's choice that they can see within 60 feet must succed on a DC {dc} Charisma saving throw \
-                or be forced to immediately use their reaction to move up to half their speed and make their most effective weapon attack or at-will spell or magical attack against a target chosen by this creature. \
-                This counts as a **Charm** effect.",
+            description=f"One target that {stats.selfref} can see within 60 feet must succed on a DC {dc} Charisma saving throw. \
+                On a failure, roll a d6. On a 1-2, the creature is **Frightened** (save ends at end of turn). \
+                On a 3-4, the creature is **Dazed** (save ends at end of turn). \
+                On a 5-6, the creature is {burning.caption}. {burning.description_3rd}.",
         )
         return [feature]
 
 
-class _MaddeningWhispers(Power):
+class _MaddeningWhispers(AberrationPower):
     def __init__(self):
-        super().__init__(name="Maddening Whispers", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberration(candidate)
+        super().__init__(
+            name="Maddening Whispers",
+            source="5.1 SRD (Gibbering Mouther)",
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -99,19 +103,17 @@ class _MaddeningWhispers(Power):
         return [feature]
 
 
-class _TentacleSlam(Power):
+class _TentacleSlam(AberrationPower):
     def __init__(self):
-        super().__init__(name="Tentacle Slam", power_type=PowerType.Creature)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberration(
-            candidate,
+        super().__init__(
+            name="Tentacle Slam",
+            source="FoeFoundryOriginal",
             attack_names={"-", natural.Tentacle},
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
-        dmg = DieFormula.target_value(0.5 * stats.attack.average_damage, suggested_die=Die.d6)
+        dmg = stats.target_value(0.5, suggested_die=Die.d6)
 
         feature = Feature(
             name="Tentacle Slam",
@@ -124,28 +126,17 @@ class _TentacleSlam(Power):
         return [feature]
 
 
-class _AntimagicGullet(Power):
+class _NullificationMaw(AberrationPower):
     def __init__(self):
         super().__init__(
-            name="Anti-Magic Gullet", power_type=PowerType.Theme, power_level=HIGH_POWER
-        )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_aberration(
-            candidate,
-            min_size=Size.Large,
+            name="Nullification Maw",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
+            require_size=Size.Large,
             attack_names={"-", natural.Bite},
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats, _ = self._helper(stats)
-        return stats
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        _, feature = self._helper(stats)
-        return [feature]
-
-    def _helper(self, stats: BaseStatblock) -> Tuple[BaseStatblock, Feature]:
         dc = stats.difficulty_class
         threshold = easy_multiple_of_five(2 * stats.cr, min_val=5, max_val=40)
         swallowed = Swallowed(
@@ -153,37 +144,37 @@ class _AntimagicGullet(Power):
             regurgitate_dc=easy_multiple_of_five(threshold * 0.75, min_val=15, max_val=25),
             regurgitate_damage_threshold=threshold,
         )
-
         stats = stats.add_attack(
             scalar=1.5,
             damage_type=DamageType.Piercing,
             attack_type=AttackType.MeleeNatural,
             replaces_multiattack=2,
             name="Swallow",
-            additional_description=f"On a hit, the target must make a DC {dc} Dexterity saving throw. On a failure, it is {swallowed} Also see *Anti-Magic Gullet*.",
+            additional_description=f"On a hit, the target must make a DC {dc} Dexterity saving throw. On a failure, it is {swallowed} Also see *Nullification Maw*.",
         )
+        return stats
 
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
-            name="Anti-Magic Gullet",
+            name="Nullification Maw",
             action=ActionType.Feature,
             description=f"Magical effects, including those produced by spells and magic items but excluding those created by artifacts or deities, are suppressed inside {stats.selfref}'s gullet. \
                 Any spell slot or charge expended by a creature in the gullet to cast a spell or activate a property of a magic item is wasted. \
                 No spell or magical effect that originates outside {stats.selfref}'s gullet, except one created by an artifact or a deity, can affect a creature or an object inside the gullet.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-AntimagicGullet: Power = _AntimagicGullet()
-DominatingGaze: Power = _DominatingGaze()
-GraspingTentacles: Power = _GraspingTentacles()
+GazeOfTheFarRealm: Power = _GazeOfTheFarRealm()
 MadenningWhispers: Power = _MaddeningWhispers()
+NullificationMaw: Power = _NullificationMaw()
+TentacleGrapple: Power = _TentacleGrapple()
 TentacleSlam: Power = _TentacleSlam()
 
 AberrationPowers: List[Power] = [
-    AntimagicGullet,
-    DominatingGaze,
-    GraspingTentacles,
+    GazeOfTheFarRealm,
     MadenningWhispers,
+    NullificationMaw,
+    TentacleGrapple,
     TentacleSlam,
 ]

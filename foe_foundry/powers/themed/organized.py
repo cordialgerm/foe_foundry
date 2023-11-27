@@ -1,109 +1,85 @@
+from datetime import datetime
 from math import ceil, floor
 from typing import List, Tuple
 
 import numpy as np
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
-from ...attributes import Skills, Stats
+from ...attributes import Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_could_be_organized(
-    candidate: BaseStatblock, requires_intelligence: bool = True
-) -> float:
+def score_could_be_organized(stats: BaseStatblock, requires_intelligence: bool) -> bool:
     creature_types = {c for c in CreatureType if c.could_be_organized}
     if not requires_intelligence:
-        creature_types |= {CreatureType.Beast}
-
-    return score(
-        candidate=candidate,
-        require_types=creature_types,
-        bonus_roles=MonsterRole.Leader,
-        require_stats=Stats.INT if requires_intelligence else None,
-    )
+        creature_types |= {CreatureType.Beast, CreatureType.Monstrosity}
+    return stats.creature_type in creature_types
 
 
-class _Commander(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Commander", power_type=PowerType.Theme, power_level=HIGH_POWER)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_could_be_organized(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        distance = 30 if stats.cr <= 4 else 50
-        hp = easy_multiple_of_five(int(ceil(stats.hp.average / 2)))
-        bonus = int(ceil(stats.attributes.proficiency / 2))
-
-        feature = Feature(
-            name="Commander",
-            description=f"When {stats.roleref} is at or above {hp} hp then each other ally within {distance} ft. has a +{bonus} bonus to attack and damage rolls",
-            action=ActionType.Feature,
+class OrganizedPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        super().__init__(
+            name=name,
+            source=source,
+            power_type=PowerType.Theme,
+            power_level=power_level,
+            theme="organized",
+            create_date=create_date,
+            score_args=dict(
+                bonus_types={c for c in CreatureType if c.could_be_organized},
+                require_stats=Stats.INT,
+                require_roles=MonsterRole.Leader,
+            )
+            | score_args,
         )
 
-        return stats, feature
 
-
-class _Fanatic(PowerBackport):
+class _FanaticFollowers(OrganizedPower):
     def __init__(self):
-        super().__init__(name="Fanatic", power_type=PowerType.Theme, power_level=HIGH_POWER)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_could_be_organized(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        distance = 30 if stats.cr <= 4 else 50
-        hp = easy_multiple_of_five(int(ceil(stats.hp.average / 2)))
-        temp = easy_multiple_of_five(int(max(floor(5 + stats.cr), 1.5 * stats.cr)))
-
-        feature = Feature(
-            name="Fanaticism",
-            description=f"When {stats.roleref} is at or below {hp} hp then each other ally within {distance} ft has advantage on attack rolls.\
-                When an ally hits with an attack, then {stats.roleref} gains {temp} temp hp.",
-            action=ActionType.Feature,
+        super().__init__(
+            name="Fanatic Followers", source="A5E SRD Crime Boss", power_level=HIGH_POWER
         )
 
-        return stats, feature
-
-
-class _Inspiring(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Inspiring", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_could_be_organized(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        hp = easy_multiple_of_five(int(floor(5 + stats.cr / 2)))
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        temphp = easy_multiple_of_five(stats.cr, min_val=5)
         feature = Feature(
-            name="Inspiring",
-            description=f"When {stats.roleref} succeeds on a saving throw or when an attack roll misses them, one ally who {stats.roleref} can see gains {hp} temp hp.",
+            name="Fanatic Followers",
             action=ActionType.Reaction,
+            description=f"Whenever {stats.selfref} would be hit by an attack, they command an ally within 5 feet to use its reaction to switch places with {stats.selfref}. \
+                The ally is hit by the attack instead of the boss. If the ally is killed by this attack, then all allies of {stats.selfref} gains {temphp} temporary hp.",
+        )
+        return [feature]
+
+
+class _InspiringCommander(OrganizedPower):
+    def __init__(self):
+        super().__init__(
+            name="Inspiring Commander", source="A5E SRD Knight", power_level=HIGH_POWER
         )
 
-        return stats, feature
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Inspiring Commander",
+            action=ActionType.Action,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} inspires other creatures of its choice within 30 feet that can hear and understand it. \
+                For the next minute, inspired creatures gain a +{stats.attributes.proficiency} bonus to attack rolls and saving throws.",
+        )
+        return [feature]
 
 
-Commander: Power = _Commander()
-Fanatic: Power = _Fanatic()
-Inspiring: Power = _Inspiring()
+FanaticFollowers: Power = _FanaticFollowers()
+InspiringCommander: Power = _InspiringCommander()
 
-OrganizedPowers: List[Power] = [Commander, Fanatic, Inspiring]
+OrganizedPowers: List[Power] = [FanaticFollowers, InspiringCommander]

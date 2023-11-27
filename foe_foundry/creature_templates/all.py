@@ -37,7 +37,7 @@ __lookup = {a.name.lower(): a for a in AllCreatureTemplates}
 
 
 def get_creature_template(name: str) -> CreatureTypeTemplate:
-    t = __lookup.get(name, None)
+    t = __lookup.get(name.lower(), None)
     if t is None:
         raise ValueError(f"No creature template found for '{name}'")
     return t
