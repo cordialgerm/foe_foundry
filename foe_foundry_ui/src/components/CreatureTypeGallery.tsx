@@ -5,6 +5,7 @@ import ButtonBase from "@mui/material/ButtonBase";
 import Container from "@mui/material/Container";
 import { Typography } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
+import { PageProps } from "./PageLayout.tsx";
 
 const ImageBackdrop = styled("div")(({ theme }) => ({
   position: "absolute",
@@ -146,12 +147,20 @@ interface CreatureTypeProps {
   title: string;
   link: string;
   width: string;
+  pageProps?: PageProps;
 }
 
 function CreatureTypeImage(image: CreatureTypeProps) {
   const navigate = useNavigate();
 
   const onClick = () => {
+    if (image.pageProps) {
+      image.pageProps.setSidebar({
+        ...image.pageProps.sidebar,
+        creatureType: image.link,
+      });
+    }
+
     navigate(`/statblocks/${image.link}`);
   };
 
@@ -208,7 +217,7 @@ function CreatureTypeImage(image: CreatureTypeProps) {
   );
 }
 
-export default function CreatureTypeGallery() {
+export default function CreatureTypeGallery(pageProps: PageProps) {
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
       <Typography variant="h4" align="center" component="h2">
@@ -216,7 +225,7 @@ export default function CreatureTypeGallery() {
       </Typography>
       <Box sx={{ mt: 8, display: "flex", flexWrap: "wrap" }}>
         {images.map((image, index) => (
-          <CreatureTypeImage key={index} {...image} />
+          <CreatureTypeImage key={index} pageProps={pageProps} {...image} />
         ))}
       </Box>
     </Container>

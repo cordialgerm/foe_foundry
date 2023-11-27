@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { FoeFoundryAppBar } from "./AppBar.tsx";
-import { PersistentDrawerLeft } from "./Drawer.tsx";
+import { FoeFoundryAppDrawer } from "./Drawer.tsx";
 import { MainContent } from "./Main.tsx";
 
 export interface SidebarData {
@@ -45,7 +45,7 @@ export function PageLayout(props: React.PropsWithChildren<PageProps>) {
         setDrawerOpen={setDrawerOpen}
         isMobile={props.isMobile}
       />
-      <PersistentDrawerLeft
+      <FoeFoundryAppDrawer
         open={sidebar.drawerOpen}
         setOpen={setDrawerOpen}
         creatureType={sidebar.creatureType}
