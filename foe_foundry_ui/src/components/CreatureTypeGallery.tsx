@@ -211,8 +211,8 @@ export default function CreatureTypeGallery() {
                 Try Out the Foe Foundry!
             </Typography>
             <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
-                {images.map((image) => (
-                    <CreatureTypeImage {...image} />
+                {images.map((image, index) => (
+                    <CreatureTypeImage key={index} {...image} />
                 ))}
             </Box>
         </Container>

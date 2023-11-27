@@ -1,7 +1,7 @@
 import * as React from "react";
 
 interface StatblockProps {
-  rawHtml: string
+  rawHtml: string;
 }
 
 export function Statblock({ rawHtml }: StatblockProps) {
