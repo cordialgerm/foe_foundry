@@ -1,4 +1,3 @@
-
 ## Credits
 
 Foe Foundry is inspired by a variety of sources, including:
@@ -47,3 +46,5 @@ This work includes material taken from the A5E System Reference Document (A5ESRD
 ### Lazy GM's Resource Document Notice
 
 <blockquote>This work includes material taken from the <a href="https://slyflourish.com/lazy_gm_resource_document.html">Lazy GM's Resource Document</a> by Michael E. Shea of <a href="https://slyflourish.com">SlyFlourish.com</a>, available under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</blockquote>
+
+## Watercolor Mask
