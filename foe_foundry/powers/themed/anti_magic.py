@@ -1,29 +1,21 @@
+from datetime import datetime
 from typing import List
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import weapon
 from ...attributes import Stats
 from ...creature_types import CreatureType
-from ...damage import Attack, AttackType, Damage, DamageType
-from ...die import DieFormula
+from ...damage import Attack, AttackType, DamageType
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, Power, PowerType
-from ..scoring import score
+from ..power import LOW_POWER, Power, PowerType, PowerWithStandardScoring
 from .organized import score_could_be_organized
 
 
-class _ArcaneHunt(Power):
+class _ArcaneHunt(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Arcane Hunt", power_type=PowerType.Theme, power_level=LOW_POWER)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
+        score_args = dict(
             require_types=[
                 CreatureType.Aberration,
                 CreatureType.Monstrosity,
@@ -31,6 +23,15 @@ class _ArcaneHunt(Power):
             ],
             require_attack_types=AttackType.MeleeNatural,
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Ambusher],
+        )
+
+        super().__init__(
+            name="Arcane Hunt",
+            power_type=PowerType.Theme,
+            power_level=LOW_POWER,
+            source="FoeFoundryOriginal",
+            theme="Anti-Magic",
+            score_args=score_args,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -43,19 +44,22 @@ class _ArcaneHunt(Power):
         return [feature]
 
 
-class _FractalForm(Power):
+class _FractalForm(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Fractal Form", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
+        score_args = dict(
             require_types=[
                 CreatureType.Aberration,
                 CreatureType.Construct,
                 CreatureType.Celestial,
             ],
             bonus_attack_types=AttackType.AllMelee(),
+        )
+        super().__init__(
+            name="Fractal Form",
+            power_type=PowerType.Theme,
+            source="FoeFoundryOriginal",
+            theme="Anti-Magic",
+            score_args=score_args,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -68,16 +72,12 @@ class _FractalForm(Power):
         return [feature]
 
 
-class _MageSlayer(Power):
+class _Spellbreaker(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Mage Slayer", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
         def is_organized(c: BaseStatblock) -> bool:
             return score_could_be_organized(c, requires_intelligence=True) > 0
 
-        return score(
-            candidate=candidate,
+        score_args = dict(
             require_attack_types=AttackType.MeleeWeapon,
             require_callback=is_organized,
             bonus_roles=MonsterRole.Bruiser,
@@ -91,10 +91,17 @@ class _MageSlayer(Power):
                 weapon.Greatsword,
             ],
         )
+        super().__init__(
+            name="Spellbreaker",
+            power_type=PowerType.Theme,
+            source="A5E SRD Spellbreaker",
+            theme="Anti-Magic",
+            score_args=score_args,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
-            name="Mage Slayer",
+            name="Spellbreaker",
             action=ActionType.Reaction,
             description=f"If a hostile creature begins casting a spell within reach of {stats.selfref} then it may make a melee attack against the caster. \
                 If the attack hits, the caster must make a Concentration check against the damage of the attack. On a failure, the spell casting fails.",
@@ -102,13 +109,9 @@ class _MageSlayer(Power):
         return [feature]
 
 
-class _RedirectTeleport(Power):
+class _RedirectTeleport(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Redirect Teleport", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
+        score_args = dict(
             require_types=[
                 CreatureType.Aberration,
                 CreatureType.Fey,
@@ -118,6 +121,14 @@ class _RedirectTeleport(Power):
             ],
             require_attack_types=AttackType.AllMelee(),
             bonus_roles=[MonsterRole.Controller, MonsterRole.Leader],
+        )
+
+        super().__init__(
+            name="Redirect Teleport",
+            source="FoeFoundryOriginal",
+            theme="Anti-Magic",
+            power_type=PowerType.Theme,
+            score_args=score_args,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -131,17 +142,20 @@ class _RedirectTeleport(Power):
         return [feature]
 
 
-class _SpellEater(Power):
+class _SpellEater(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Spell Eater", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
+        score_args = dict(
             require_types=[CreatureType.Aberration, CreatureType.Fey, CreatureType.Monstrosity],
             require_attack_types=AttackType.AllNatural(),
             require_cr=5,
             bonus_roles=[MonsterRole.Controller, MonsterRole.Bruiser],
+        )
+        super().__init__(
+            name="Spell Eater",
+            source="FoeFoundryOriginal",
+            theme="Anti-Magic",
+            power_type=PowerType.Theme,
+            score_args=score_args,
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
@@ -166,11 +180,8 @@ class _SpellEater(Power):
         return []
 
 
-class _SpellStealer(Power):
+class _SpellStealer(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Spell Stealer", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
         def humanoid_is_arcane_trickster(c: BaseStatblock) -> bool:
             if (
                 c.creature_type == CreatureType.Humanoid
@@ -179,8 +190,7 @@ class _SpellStealer(Power):
                 return False
             return True
 
-        return score(
-            candidate=candidate,
+        score_args = dict(
             require_types=[
                 CreatureType.Humanoid,
                 CreatureType.Fey,
@@ -189,6 +199,14 @@ class _SpellStealer(Power):
             ],
             require_roles=[MonsterRole.Controller, MonsterRole.Ambusher, MonsterRole.Leader],
             require_callback=humanoid_is_arcane_trickster,
+        )
+
+        super().__init__(
+            name="Spell Stealer",
+            source="FoeFoundryOriginal",
+            theme="Anti-Magic",
+            power_type=PowerType.Theme,
+            score_args=score_args,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -205,13 +223,9 @@ class _SpellStealer(Power):
         return [feature]
 
 
-class _TwistedMind(Power):
+class _TwistedMind(PowerWithStandardScoring):
     def __init__(self):
-        super().__init__(name="Tiwsted Mind", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
+        score_args = dict(
             require_types=[
                 CreatureType.Aberration,
                 CreatureType.Fey,
@@ -221,6 +235,13 @@ class _TwistedMind(Power):
             ],
             bonus_damage=DamageType.Psychic,
             bonus_roles=MonsterRole.Controller,
+        )
+        super().__init__(
+            name="Tiwsted Mind",
+            source="FoeFoundryOriginal",
+            theme="Anti-Magic",
+            power_type=PowerType.Theme,
+            score_args=score_args,
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
@@ -245,10 +266,42 @@ class _TwistedMind(Power):
         return [feature]
 
 
+class _SealOfSilence(PowerWithStandardScoring):
+    def __init__(self):
+        score_args = dict(
+            require_types=[
+                CreatureType.Humanoid,
+                CreatureType.Fey,
+                CreatureType.Fiend,
+                CreatureType.Celestial,
+            ],
+            require_roles=[MonsterRole.Defender, MonsterRole.Leader, MonsterRole.Controller],
+            require_cr=7,
+        )
+        super().__init__(
+            name="Seal of Silence",
+            source="A5E SRD Dread Knight Champion",
+            theme="Anti-Magic",
+            create_date=datetime(2023, 11, 22),
+            power_type=PowerType.Theme,
+            score_args=score_args,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Seal of Silence",
+            action=ActionType.Feature,
+            description=f"When {stats.selfref} succeeeds on a saving throw against a spell cast by a creature it can see, the caster of the spell makes a DC {stats.difficulty_class} \
+                Constitution saving throw. On a failure, the caster is magically unable to speak or cast spells with a vocal component until the end of the caster's next turn.",
+        )
+        return [feature]
+
+
 ArcaneHunt: Power = _ArcaneHunt()
 FractalForm: Power = _FractalForm()
-MageSlayer: Power = _MageSlayer()
 RedirectTeleport: Power = _RedirectTeleport()
+SealOfSilence: Power = _SealOfSilence()
+Spellbreaker: Power = _Spellbreaker()
 SpellEater: Power = _SpellEater()
 SpellStealer: Power = _SpellStealer()
 TwistedMind: Power = _TwistedMind()
@@ -256,8 +309,9 @@ TwistedMind: Power = _TwistedMind()
 AntiMagicPowers: List[Power] = [
     ArcaneHunt,
     FractalForm,
-    MageSlayer,
     RedirectTeleport,
+    SealOfSilence,
+    Spellbreaker,
     SpellEater,
     SpellStealer,
     TwistedMind,

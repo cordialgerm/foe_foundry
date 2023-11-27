@@ -1,7 +1,11 @@
+from datetime import datetime
 from typing import Dict, List, Tuple
 
 import numpy as np
 from numpy.random import Generator
+
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural, weapon
 from ...attributes import Skills, Stats
@@ -13,141 +17,91 @@ from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock, MonsterDials
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from ..scoring import AttackNames, score
 from .organized import score_could_be_organized
 
 
-def _score_could_be_melee_fighter(
-    candidate: BaseStatblock,
-    requires_training: bool,
-    large_size_boost: bool = False,
-    requires_weapon: bool = False,
-    attack_names: AttackNames = None,
-) -> float:
-    attack_types = AttackType.AllMelee() if not requires_weapon else AttackType.MeleeWeapon
-
-    def is_organized(c: BaseStatblock) -> bool:
-        return score_could_be_organized(c, requires_intelligence=True) > 0
-
-    return score(
-        candidate=candidate,
-        require_attack_types=attack_types,
-        require_callback=is_organized if requires_training else None,
-        bonus_roles=MonsterRole.Bruiser,
-        bonus_size=Size.Large if large_size_boost else None,
-        bonus_types={CreatureType.Beast, CreatureType.Monstrosity}
-        if not requires_training
-        else None,
-        attack_names=attack_names,
-    )
+def is_organized(c: BaseStatblock) -> bool:
+    return score_could_be_organized(c, requires_intelligence=True) > 0
 
 
-def _as_melee_fighter(stats: BaseStatblock, uses_weapon: bool = False) -> BaseStatblock:
-    new_attrs = stats.attributes.copy(primary_attribute=Stats.STR)
-
-    changes: dict = dict(attributes=new_attrs)
-    if uses_weapon:
-        changes.update(attack_type=AttackType.MeleeWeapon)
-    return stats.copy(**changes)
-
-
-class _PackTactics(PowerBackport):
-    def __init__(self):
+class Warrior(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
         super().__init__(
-            name="Pack Tactics", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name=name,
+            source=source,
+            power_level=power_level,
+            create_date=create_date,
+            power_type=PowerType.Theme,
+            theme="warrior",
+            score_args=dict(
+                require_attack_types=AttackType.AllMelee(), bonus_roles=MonsterRole.Bruiser
+            )
+            | score_args,
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_could_be_organized(candidate, requires_intelligence=False)
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+class _PackTactics(Warrior):
+    def __init__(self):
+        super().__init__(
+            name="Pack Tactics",
+            source="SRD5.1 Wolf",
+            require_types={CreatureType.Beast, CreatureType.Humanoid, CreatureType.Monstrosity},
+            bonus_roles={
+                MonsterRole.Leader,
+                MonsterRole.Bruiser,
+                MonsterRole.Ambusher,
+                MonsterRole.Skirmisher,
+            },
+            power_level=HIGH_POWER,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Pack Tactics",
             action=ActionType.Feature,
             description=f"{stats.selfref.capitalize()} has advantage on attack rolls against a target if at least one of {stats.selfref}'s allies is within 5 feet and isn't incapacitated.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _CleavingStrike(PowerBackport):
+class _Disciplined(Warrior):
     def __init__(self):
-        super().__init__(name="Cleaving Strike", power_type=PowerType.Theme)
+        def fights_in_formation(c: BaseStatblock) -> bool:
+            return is_organized(c) and c.size <= Size.Large
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_melee_fighter(
-            candidate,
-            requires_training=False,
-            large_size_boost=True,
-            attack_names={
-                "-",
-                natural.Claw,
-                weapon.Greataxe,
-                weapon.Greatsword,
-                weapon.Maul,
-            },
+        super().__init__(
+            name="Disciplined",
+            source="FoeFoundryOriginal",
+            require_callback=fights_in_formation,
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = _as_melee_fighter(stats)
-
-        if stats.primary_damage_type == DamageType.Bludgeoning:
-            name = "Sweeping Blow"
-        elif stats.primary_damage_type == DamageType.Piercing:
-            name = "Piercing Strike"
-        elif stats.primary_damage_type == DamageType.Slashing:
-            name = "Cleaving Strike"
-        else:
-            name = "Cleaving Strike"
-
-        dc = stats.difficulty_class
-        feature = Feature(
-            name=name,
-            action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()}'s attack can hit a nearby target. Immediately after hitting with an attack, {stats.selfref} may choose another target within reach.\
-                The target must make a DC {dc} Dexterity saving throw. On a failure, it takes half the damage of the original attack.",
-        )
-        return stats, feature
-
-
-class _Disciplined(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Disciplined", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        score = (
-            score_could_be_organized(candidate, requires_intelligence=True)
-            + _score_could_be_melee_fighter(candidate, requires_training=True)
-        ) / 2.0
-        return score
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Disciplined",
             action=ActionType.Reaction,
             description=f"If {stats.selfref} misses an attack or fails a saving throw while another friendly creature is within 10 feet, it may use its reaction to re-roll the attack or saving throw.",
         )
-        return stats, feature
+        return [feature]
 
 
-class _ParryAndRiposte(PowerBackport):
-    """This creature adds +3 to their Armor Class against one melee attack that would hit them.
-    If the attack misses, this creature can immediately make a weapon attack against the creature making the parried attack.
-    """
-
+class _ParryAndRiposte(Warrior):
     def __init__(self):
-        super().__init__(name="Parry and Riposte", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_melee_fighter(
-            candidate, requires_training=True, requires_weapon=True
+        super().__init__(
+            name="Parry and Riposte",
+            source="FoeFoundryOriginal",
+            require_attack_types=AttackType.MeleeWeapon,
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Parry and Riposte",
             description=f"{stats.selfref.capitalize()} adds +3 to their Armor Class against one melee attack that would hit them.\
@@ -155,25 +109,22 @@ class _ParryAndRiposte(PowerBackport):
             action=ActionType.Reaction,
             recharge=6,
         )
-        return stats, feature
+        return [feature]
 
 
-class _PommelStrike(PowerBackport):
+class _PommelStrike(Warrior):
     def __init__(self):
-        super().__init__(name="Pommel Strike", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_melee_fighter(
-            candidate,
-            requires_training=True,
-            requires_weapon=True,
+        super().__init__(
+            name="Pommel Strike",
+            source="FoeFoundryOriginal",
             attack_names=[
+                "-",
                 weapon.SwordAndShield,
                 weapon.SpearAndShield,
             ],
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, None]:
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         dazed = Dazed()
         dc = stats.difficulty_class_easy
 
@@ -188,19 +139,17 @@ class _PommelStrike(PowerBackport):
             additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become {dazed.caption} until the end of its next turn. {dazed.description_3rd}",
         )
 
-        return stats, None
+        return stats
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
 
 
-class _PushingAttack(PowerBackport):
+class _PushingAttack(Warrior):
     def __init__(self):
-        super().__init__(name="Pushing Attack", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_could_be_melee_fighter(
-            candidate,
-            requires_training=False,
-            requires_weapon=False,
-            large_size_boost=True,
+        super().__init__(
+            name="Pushing Attack",
+            source="FoeFoundryOriginal",
             attack_names={
                 "-",
                 weapon.Maul,
@@ -209,7 +158,7 @@ class _PushingAttack(PowerBackport):
             },
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge:
             distance = 15
         elif stats.size >= Size.Large:
@@ -225,10 +174,50 @@ class _PushingAttack(PowerBackport):
             description=f"On a hit, the target is pushed up to {distance} feet horizontally.",
         )
 
-        return stats, feature
+        return [feature]
 
 
-CleavingStrike: Power = _CleavingStrike()
+class _ActionSurge(Warrior):
+    def __init__(self):
+        super().__init__(
+            name="Action Surge",
+            source="SRD5.1 Action Surge",
+            power_level=HIGH_POWER,
+            require_callback=is_organized,
+            bonus_roles={MonsterRole.Bruiser, MonsterRole.Defender, MonsterRole.Leader},
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Action Surge",
+            uses=1,
+            action=ActionType.BonusAction,
+            description=f"{stats.selfref.capitalize()} takes another action this round. If it has any recharge abilities, it may roll to refresh these abilities.",
+        )
+        return [feature]
+
+
+# TODO A5E SRD - Horned Devil
+# Pin (1/Day). When a creature misses the
+# devil with a melee attack, the devil makes
+# a fork attack against that creature. On a
+# hit, the target is impaled by the fork and
+# grappled (escape DC 17). Until this
+# grapple ends, the devil can’t make fork
+# attacks or use Inferno, but the target
+# takes 7 (2d6) piercing damage plus 3
+# A5E System Reference Document
+# (1d6) fire damage at the beginning of
+# each of its turns.
+
+# TODO A5E SRD - Dread Knight
+# Break Magic. The dread knight ends all
+# spell effects created by a 5th-level or
+# lower spell slot on a creature, object, or
+# point it can see within 30 feet.
+
+
+ActionSurge: Power = _ActionSurge()
 Disciplined: Power = _Disciplined()
 PackTactics: Power = _PackTactics()
 ParryAndRiposte: Power = _ParryAndRiposte()
@@ -236,7 +225,7 @@ PommelStrike: Power = _PommelStrike()
 PushingAttack: Power = _PushingAttack()
 
 WarriorPowers: List[Power] = [
-    CleavingStrike,
+    ActionSurge,
     Disciplined,
     PackTactics,
     ParryAndRiposte,

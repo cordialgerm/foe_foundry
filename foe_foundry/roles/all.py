@@ -7,7 +7,7 @@ from .controller import Controller
 from .defender import Defender
 from .leader import Leader
 from .skirmisher import Skirmisher
-from .template import RoleTemplate, RoleVariant
+from .template import RoleTemplate
 
 AllRoles: List[RoleTemplate] = [
     Ambusher,
@@ -19,10 +19,11 @@ AllRoles: List[RoleTemplate] = [
     Skirmisher,
 ]
 
-AllRoleVariants: List[RoleVariant] = [rv for r in AllRoles for rv in r.variants]
-
 _Lookup = {r.key: r for r in AllRoles}
 
 
 def get_role(key: str) -> RoleTemplate:
-    return _Lookup[key]
+    role = _Lookup.get(key.lower())
+    if role is None:
+        raise ValueError(f"Unsupported role '{key}'")
+    return role

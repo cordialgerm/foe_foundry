@@ -1,0 +1,30 @@
+{
+  "short_name": "Foe Foundry",
+  "name": "Create 5E monsters quickly and easily!",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/img/logo/foe_foundry_logo_200.png",
+      "type": "image/png",
+      "sizes": "200x200"
+    },
+    {
+      "src": "/img/logo/foe_foundry_logo_400.png",
+      "type": "image/png",
+      "sizes": "400x400"
+    },
+    {
+      "src": "/img/logo/foe_foundry_logo_834.png",
+      "type": "image/png",
+      "sizes": "834x834"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

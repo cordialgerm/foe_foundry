@@ -1,65 +1,68 @@
-from math import ceil, floor
-from typing import List, Tuple
+from datetime import datetime
+from math import ceil
+from typing import List
 
-import numpy as np
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
-from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_temporal(candidate: BaseStatblock, min_cr: float | None = None) -> float:
-    creature_types = {
-        CreatureType.Fey,
-        CreatureType.Fiend,
-        CreatureType.Aberration,
-        CreatureType.Humanoid,
-    }
+class TemporalPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        create_date: datetime | None = None,
+        **score_args,
+    ):
+        def is_magical_human(c: BaseStatblock) -> bool:
+            if c.creature_type == CreatureType.Humanoid:
+                return (
+                    c.attack_type.is_spell() and c.secondary_damage_type != DamageType.Radiant
+                )
+            else:
+                return True
 
-    def is_magical_human(c: BaseStatblock) -> bool:
-        if c.creature_type == CreatureType.Humanoid:
-            return c.attack_type.is_spell() and c.secondary_damage_type != DamageType.Radiant
-        else:
-            return c.creature_type in creature_types
-
-    return score(
-        candidate=candidate,
-        require_types={
-            CreatureType.Fey,
-            CreatureType.Fiend,
-            CreatureType.Aberration,
-            CreatureType.Humanoid,
-        },
-        require_callback=is_magical_human,
-        require_cr=min_cr,
-        bonus_roles=MonsterRole.Controller,
-    )
-
-
-class _CurseOfTheAges(PowerBackport):
-    def __init__(self):
         super().__init__(
-            name="Curse of the Ages", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name=name,
+            source=source,
+            theme="temporal",
+            power_level=power_level,
+            power_type=PowerType.Theme,
+            create_date=create_date,
+            score_args=dict(
+                require_types={
+                    CreatureType.Fey,
+                    CreatureType.Fiend,
+                    CreatureType.Aberration,
+                    CreatureType.Humanoid,
+                },
+                require_callback=is_magical_human,
+                bonus_roles=MonsterRole.Controller,
+            )
+            | score_args,
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_temporal(candidate=candidate, min_cr=7)
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        dc = stats.difficulty_class
-        dmg = DieFormula.target_value(2.5 * stats.attack.average_damage, force_die=Die.d12)
+class _CurseOfTheAges(TemporalPower):
+    def __init__(self):
+        super().__init__(
+            name="Curse of the Ages",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
+            require_cr=7,
+        )
 
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class_easy
+        dmg = stats.target_value(2.5, force_die=Die.d12)
+        weakened = conditions.Weakened(save_end_of_turn=False)
         feature = Feature(
             name="Curse of the Ages",
             action=ActionType.Action,
@@ -67,23 +70,18 @@ class _CurseOfTheAges(PowerBackport):
             replaces_multiattack=3,
             description=f"{stats.selfref.capitalize()} targets a creature it can see within 90 feet and curses it with rapid aging. \
                 The target must make a DC {dc} Constitution saving throw, taking {dmg.description} necrotic damage on a failed save, or half as much on a success. \
-                On a failure, the target also ages to the point where it has only 30 days left before it dies of old age. \
-                Only a *wish* spell or *greater restoration* cast with a 9th-level spell slot can end this effect and restore the target to its previous age.",
+                On a failure, the target also ages to the point where it has only 30 days left before it dies of old age and is {weakened.caption} due to its advanced age. \
+                Only a *Wish* spell or *Greater Restoration* cast with a 9th-level spell slot can end this effect and restore the target to its previous age. {weakened.description_3rd}",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _TemporalLoop(PowerBackport):
+class _TemporalLoop(TemporalPower):
     def __init__(self):
-        super().__init__(name="Temporal Loop", power_type=PowerType.Theme)
+        super().__init__(name="Temporal Loop", source="FoeFoundryOriginal", require_cr=3)
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_temporal(candidate, min_cr=3)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30
         uses = ceil(stats.cr / 7)
 
@@ -99,24 +97,22 @@ class _TemporalLoop(PowerBackport):
             action=ActionType.Reaction,
             uses=uses,
             description=f"Whenever a creature within {distance} feet makes a d20 test, {stats.selfref} can replace the result of the d20 roll \
-                            with the die result it has recorded with its *Temporal Record* feature. The die result is then cleared.",
+                            with the die result it has recorded with its *Temporal Record* feature. The *Temporal Record* result is then cleared.",
         )
 
-        return stats, [feature1, feature2]
+        return [feature1, feature2]
 
 
-class _TemporalMastery(PowerBackport):
+class _TemporalMastery(TemporalPower):
     def __init__(self):
         super().__init__(
-            name="Temporal Mastery", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name="Temporal Mastery",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
+            require_cr=7,
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_temporal(candidate, min_cr=7)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Temporal Mastery",
             action=ActionType.Action,
@@ -125,18 +121,17 @@ class _TemporalMastery(PowerBackport):
             description=f"{stats.selfref} becomes **Invisible** until the start of its next turn. It may also adjust its initiative to any value it desires. \
                 This can allow {stats.selfref} to have a second turn this round.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _Accelerate(Power):
+class _Accelerate(TemporalPower):
     def __init__(self):
         super().__init__(
-            name="Accelerate Time", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name="Accelerate Time",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
+            require_cr=4,
         )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_temporal(candidate, min_cr=4)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -150,12 +145,9 @@ class _Accelerate(Power):
         return [feature]
 
 
-class _AlterFate(Power):
+class _AlterFate(TemporalPower):
     def __init__(self):
-        super().__init__(name="Alter Fate", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_temporal(candidate, min_cr=4)
+        super().__init__(name="Alter Fate", source="Alter Fate", require_cr=4)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -168,12 +160,13 @@ class _AlterFate(Power):
         return [feature]
 
 
-class _WallOfTime(Power):
+class _WallOfTime(TemporalPower):
     def __init__(self):
-        super().__init__(name="Wall of Time", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_temporal(candidate, min_cr=7)
+        super().__init__(
+            name="Wall of Time",
+            source="Deep Magic: Time Magic - Wall of Time",
+            require_cr=5,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -189,12 +182,9 @@ class _WallOfTime(Power):
         return [feature]
 
 
-class _Reset(Power):
+class _Reset(TemporalPower):
     def __init__(self):
-        super().__init__(name="Reset", power_type=PowerType.Theme)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_temporal(candidate, min_cr=5)
+        super().__init__(name="Reset", source="Deep Magic: Time Magic - Reset", require_cr=5)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class

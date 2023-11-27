@@ -1,79 +1,136 @@
-from math import ceil
+from datetime import datetime
 from typing import List, Tuple
 
 import numpy as np
 
-from ...attributes import Skills, Stats
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
+
+from ...attack_template import natural
 from ...creature_types import CreatureType
-from ...damage import AttackType
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import (
+    HIGH_POWER,
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
-def score_bestial(candidate: BaseStatblock, **kwargs) -> float:
-    args: dict = dict(
-        candidate=candidate,
-        require_types=[CreatureType.Monstrosity, CreatureType.Beast, CreatureType.Dragon],
-        bonus_roles=MonsterRole.Bruiser,
-    )
-    args.update(kwargs)
-    return score(**args)
+class BestialPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        standard_score_args = dict(
+            require_types=[CreatureType.Monstrosity, CreatureType.Beast, CreatureType.Dragon],
+            bonus_roles=MonsterRole.Bruiser,
+            bonus_size=Size.Large,
+            **score_args,
+        )
+        super().__init__(
+            name=name,
+            source=source,
+            theme="Bestial",
+            create_date=create_date,
+            power_type=PowerType.Theme,
+            power_level=power_level,
+            score_args=standard_score_args,
+        )
 
 
-class _EarthshakingDemise(PowerBackport):
+class _RetributiveStrike(BestialPower):
     def __init__(self):
         super().__init__(
-            name="Earthshaking Demise", power_type=PowerType.Theme, power_level=LOW_POWER
+            name="Retributive Strike", source="A5E SRD Roc", power_level=HIGH_POWER
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        def is_ground_based(c: BaseStatblock) -> bool:
-            return not c.speed.fly
-
-        return score_bestial(candidate, bonus_size=Size.Huge, require_callback=is_ground_based)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        feature = Feature(
-            name="Earthshaking Demise",
-            description=f"When {stats.selfref} dies, they topple to the ground, forcing each smaller creature within 20 feet to succeed on a DC 15 Strength saving throw or be knocked **Prone**.",
-            action=ActionType.Reaction,
-        )
-
-        return stats, feature
-
-
-class _FeralRetaliation(PowerBackport):
-    def __init__(self):
-        super().__init__(
-            name="Feral Retaliation", power_type=PowerType.Theme, power_level=HIGH_POWER
-        )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_bestial(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(stats.hp.average / 2, min_val=5)
 
         feature = Feature(
-            name="Feral Retaliation",
-            description=f"When {stats.selfref} is hit by an attack, they can make an opportunity attack against the attacker. If {stats.selfref} is below {hp} hp then the attack is made with advantage.",
+            name="Retributive Strike",
+            description=f"When a creature {stats.selfref} can see hits it with a melee weapon attack, {stats.selfref} can make an attack against its attacker. \
+                If {stats.selfref} is below {hp} hp then the attack is made with advantage.",
             action=ActionType.Reaction,
         )
+        return [feature]
 
-        return stats, feature
+
+class _OpportuneBite(BestialPower):
+    def __init__(self):
+        super().__init__(
+            name="Opportune Bite",
+            source="A5E SRD Lion",
+            create_date=datetime(2023, 11, 23),
+            attack_names=["-", natural.Bite],
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Opportune Bite",
+            description=f"{stats.selfref} makes a Bite attack against a prone creature.",
+            action=ActionType.BonusAction,
+        )
+        return [feature]
 
 
-EarthshakingDemise: Power = _EarthshakingDemise()
-FeralRetaliation: Power = _FeralRetaliation()
+class _Trample(BestialPower):
+    def __init__(self):
+        super().__init__(
+            name="Trample",
+            source="A5E SRD Mammoth",
+            create_date=datetime(2023, 11, 23),
+            attack_names=["-", natural.Stomp],
+        )
 
-BestialPowers: List[Power] = [EarthshakingDemise, FeralRetaliation]
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Trample",
+            description=f"{stats.selfref} makes a Stomp attack against a prone creature.",
+            action=ActionType.BonusAction,
+        )
+        return [feature]
+
+
+class _BurrowingAmbush(BestialPower):
+    def __init__(self):
+        def can_burrow(stats: BaseStatblock) -> bool:
+            return (stats.speed.burrow or 0) > 0
+
+        super().__init__(
+            name="Burrowing Ambush",
+            source="A5E SRD Ankheg Queen",
+            create_date=datetime(2023, 11, 22),
+            attack_names=natural.Claw,
+            require_callback=can_burrow,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Burrowing Ambush",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"{stats.selfref} can burrow up to its burrowing speed without provoking opportunity attacks, and then resurface. \
+                If within melee range of an enemy, it makes an attack with advantage.",
+        )
+        return [feature]
+
+
+BurrowingAmbush: Power = _BurrowingAmbush()
+RetributiveStrike: Power = _RetributiveStrike()
+OpportuneBite: Power = _OpportuneBite()
+Trample: Power = _Trample()
+
+BestialPowers: List[Power] = [BurrowingAmbush, RetributiveStrike, OpportuneBite, Trample]

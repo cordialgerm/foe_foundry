@@ -35,6 +35,11 @@ class Statblock(BaseStatblock):
         base_args.update(ac=deepcopy(self.ac), features=deepcopy(self.features))
         return base_args
 
+    def copy(self, **kwargs) -> Statblock:
+        args = self.__copy_args__()
+        args.update(kwargs)
+        return Statblock(**args)
+
     @staticmethod
     def from_base_stats(
         name: str,

@@ -1,150 +1,136 @@
+from datetime import datetime
 from math import ceil
-from typing import List, Tuple
-
-import numpy as np
+from typing import List
 
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
 from ...utils.rounding import easy_multiple_of_five
-from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_leader(candidate: BaseStatblock) -> float:
-    return score(
-        candidate=candidate,
-        require_roles=MonsterRole.Leader,
-        require_stats=Stats.CHA,
-        bonus_skills=[Skills.Persuasion, Skills.Intimidation, Skills.Insight],
-        bonus_stats=[Stats.CHA, Stats.INT, Stats.WIS],
-    )
-
-
-class _ShoutOrders(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Shout Orders", power_type=PowerType.Role, power_level=HIGH_POWER)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_leader(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        feature = Feature(
-            name="Shout Orders",
-            description=f"{stats.roleref.capitalize()} chooses up to six creatures who can see and hear them. \
-                          Those creatures can immediately either move their speed or make an attack.",
-            action=ActionType.BonusAction,
-            recharge=4,
+class LeaderPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        standard_score_args = dict(
+            require_roles=MonsterRole.Leader,
+            bonus_skills=[Skills.Persuasion, Skills.Intimidation, Skills.Insight],
+            bonus_stats=[Stats.CHA, Stats.INT, Stats.WIS],
+            **score_args,
         )
-        return stats, feature
+        super().__init__(
+            name=name,
+            power_type=PowerType.Role,
+            power_level=power_level,
+            source=source,
+            create_date=create_date,
+            theme="Leader",
+            score_args=standard_score_args,
+        )
 
 
-class _Intimidate(PowerBackport):
+class _CommandTheAttack(LeaderPower):
     def __init__(self):
-        super().__init__(name="Intimidate", power_type=PowerType.Role)
+        super().__init__(
+            name="Command the Attack", source="A5E SRD Knight Captain", power_level=HIGH_POWER
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_leader(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Intimidation)
-        stats = stats.copy(attributes=new_attrs)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
-            name="Intimidate",
-            action=ActionType.BonusAction,
+            name="Command the Attack",
+            description=f"{stats.roleref.capitalize()} issues a command to all nonhostile creatures within 30 feet. \
+                          Creatures who can see or hear {stats.roleref} can use their reaction to make a single weapon attack with advantage.",
+            action=ActionType.Action,
+            replaces_multiattack=2,
             recharge=5,
-            description=f"{stats.roleref.capitalize()} chooses a target that can hear them within 50 ft. \
-                The target must make a contested Insight check against {stats.roleref}'s Intimidation. \
-                On a failure, the target is **Frightened** of {stats.roleref} for 1 minute (save ends at end of turn).\
-                While Frightened in this way, attacks made against the target have advantage.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _Encouragement(PowerBackport):
+class _Encouragement(LeaderPower):
     def __init__(self):
-        super().__init__(name="Encouragement", power_type=PowerType.Role)
+        super().__init__(name="Encouragement", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_leader(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        new_attributes = stats.attributes.grant_proficiency_or_expertise(
-            Skills.Medicine, Skills.Insight
-        )
-        stats = stats.copy(attributes=new_attributes)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(
             int(stats.attributes.stat_mod(Stats.WIS) + max(5, ceil(stats.cr * 2)))
         )
 
         feature = Feature(
             name="Encouragement",
-            description=f"{stats.roleref.capitalize()} encourages another creature within 50 feet. \
+            description=f"{stats.roleref.capitalize()} encourages another creature within 60 feet. \
                 The chosen creature gains {hp} temporary hitpoints and may repeat a saving throw against any negative condition affecting them, ending that condition on a success.",
             action=ActionType.BonusAction,
+            uses=3,
         )
 
-        return stats, feature
+        return [feature]
 
-
-class _LeadByExample(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Lead by Example", power_type=PowerType.Role)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_leader(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        feature = Feature(
-            name="Lead by Example",
-            description=f"On a hit, any of {stats.roleref}'s allies gain advantage on attack rolls against the target until the start of {stats.roleref}'s next turn.",
-            action=ActionType.Feature,
-            modifies_attack=True,
-            hidden=True,
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        new_attributes = stats.attributes.grant_proficiency_or_expertise(
+            Skills.Medicine, Skills.Insight
         )
-        return stats, feature
+        stats = stats.copy(attributes=new_attributes)
+        return stats
 
 
-class _Reposition(PowerBackport):
-    """Each ally within 60 feet of this creature who can see and hear them
-    can immediately move their speed without provoking opportunity attacks."""
-
+class _Intimidate(LeaderPower):
     def __init__(self):
-        super().__init__(name="Reposition", power_type=PowerType.Theme, power_level=LOW_POWER)
+        super().__init__(
+            name="Intimidate", source="FoeFoundryOriginal", require_stats=Stats.CHA
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_leader(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
-            name="Reposition",
-            description=f"Each ally within 60 ft that can see and hear {stats.selfref} \
-                can immediately move its speed without provoking opportunity attacks",
+            name="Intimidate",
             action=ActionType.BonusAction,
             recharge=5,
+            description=f"{stats.roleref.capitalize()} chooses a target that can hear them within 60 ft. \
+                The target must make a contested Insight check against {stats.roleref}'s Intimidation. \
+                On a failure, the target is **Frightened** of {stats.roleref} for 1 minute (save ends at end of turn).\
+                While Frightened in this way, attacks made against the target have advantage.",
         )
-        return stats, feature
+        return [feature]
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Intimidation)
+        stats = stats.copy(attributes=new_attrs)
+        return stats
 
 
-ShoutOrders: Power = _ShoutOrders()
-Intimidate: Power = _Intimidate()
+class _StayInFormation(LeaderPower):
+    def __init__(self):
+        super().__init__(
+            name="Move Out",
+            source="A5E SRD Bugbear Chief",
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Stay in Formation",
+            action=ActionType.Action,
+            recharge=5,
+            description=f"{stats.roleref.capitalize()} issues a command to all nonhostile creatures within 30 feet. \
+                Creatures who can see or hear {stats.roleref} can use their reaction to move up to half their speed without provoking opportunity attacks.",
+        )
+        return [feature]
+
+
+CommandTheAttack: Power = _CommandTheAttack()
 Encouragement: Power = _Encouragement()
-LeadByExample: Power = _LeadByExample()
-Reposition: Power = _Reposition()
+Intimidate: Power = _Intimidate()
+StayInFormation: Power = _StayInFormation()
 
-
-LeaderPowers: List[Power] = [ShoutOrders, Intimidate, Encouragement, LeadByExample, Reposition]
+LeaderPowers: List[Power] = [
+    CommandTheAttack,
+    Encouragement,
+    Intimidate,
+    StayInFormation,
+]

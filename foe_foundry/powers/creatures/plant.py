@@ -1,36 +1,51 @@
-from math import ceil, floor
+from datetime import datetime
+from math import ceil
 from typing import List, Tuple
 
-import numpy as np
 from numpy.random import Generator
 
-from ...attributes import Skills, Stats
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
+
 from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Bleeding, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
-from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_plant(candidate: BaseStatblock, **args) -> float:
-    return score(candidate=candidate, require_types=CreatureType.Plant, **args)
+class PlantPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        standard_score_args = dict(require_types=CreatureType.Plant, **score_args)
+        super().__init__(
+            name=name,
+            power_type=PowerType.Creature,
+            source=source,
+            create_date=create_date,
+            power_level=power_level,
+            theme="Plant",
+            score_args=standard_score_args,
+        )
 
 
-class _PoisonThorns(PowerBackport):
+class _VineWhip(PlantPower):
     def __init__(self):
-        super().__init__(name="Poison Thorns", power_type=PowerType.Creature)
+        super().__init__(name="Vine Whip", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_plant(candidate)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, List[Feature]]:
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class_easy
 
         def customize(a: Attack) -> Attack:
@@ -53,7 +68,7 @@ class _PoisonThorns(PowerBackport):
             )
 
             a = a.copy(
-                additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or gain {bleeding}."
+                additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or gain {bleeding}"
             )
             return a
 
@@ -67,37 +82,41 @@ class _PoisonThorns(PowerBackport):
             callback=customize,
         )
 
-        return stats, []
-
-
-class _GraspingRoots(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Grasping Roots", power_type=PowerType.Creature)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_plant(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        dc = stats.difficulty_class_easy
-        feature = Feature(
-            name="Grasping Roots",
-            action=ActionType.Reaction,
-            description=f"When a creature attempts to leave a space within 5 feet of {stats.selfref} then it must make a DC {dc} Strength save. \
-                On a failure, the creature is restrained until the start of its next turn and {stats.selfref} may also make an opportunity attack against the creature.",
-        )
-        return stats, feature
-
-
-class _ChokingVine(PowerBackport):
-    def __init__(self):
-        super().__init__(name="Choking Vine", power_type=PowerType.Creature)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_plant(candidate, require_attack_types=AttackType.AllRanged())
+        return stats
 
     def apply(
         self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    ) -> Tuple[BaseStatblock, List[Feature]]:
+        return stats, []
+
+
+class _Entangle(PlantPower):
+    def __init__(self):
+        super().__init__(name="Entangle", source="SRD5.1 Entangle")
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Entangle",
+            action=ActionType.Action,
+            uses=3,
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} casts *Entangle* (DC {stats.difficulty_class}) without requiring concentration.",
+        )
+        return [feature]
+
+
+class _ChokingVine(PlantPower):
+    def __init__(self):
+        super().__init__(
+            name="Choking Vine",
+            source="FoeFoundryOriginal",
+            require_attack_types=AttackType.AllMelee(),
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class_easy
 
         stats = stats.add_attack(
@@ -111,17 +130,17 @@ class _ChokingVine(PowerBackport):
                 While grappled in this way, it cannot speak, cannot breathe, begins choking, and cannot cast spells that require a verbal component.",
         )
 
-        return stats, None
+        return stats
 
 
-class _HypnoticSpores(PowerBackport):
+class _HypnoticSpores(PlantPower):
     def __init__(self):
-        super().__init__(name="Hypnotic Spores", power_type=PowerType.Creature)
+        super().__init__(
+            name="Hypnotic Spores",
+            source="SRD5.1 Hypnotic Pattern",
+        )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_plant(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         distance = 30 if stats.difficulty_class <= 7 else 45
 
@@ -133,20 +152,14 @@ class _HypnoticSpores(PowerBackport):
             description=f"{stats.selfref.capitalize()} releases a cloud of hypnotic spores. Each non-plant creature within {distance} feet must make a DC {dc} Constitution save. \
                 On a failure, the creature is **Poisoned** for 1 minute (save ends at end of turn). While poisoned in this way, the target is **Incapacitated**",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _SpikeGrowth(PowerBackport):
+class _SpikeGrowth(PlantPower):
     def __init__(self):
-        super().__init__(name="Spike Growth", power_type=PowerType.Creature)
+        super().__init__(name="Spike Growth", source="SRD5.1 Spike Growth")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_plant(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         uses = min(3, ceil(stats.cr / 5))
 
         feature = Feature(
@@ -157,20 +170,14 @@ class _SpikeGrowth(PowerBackport):
             description=f"{stats.selfref.capitalize()} releases razor-sharp thorns, creating the effect of a *Spike Growth* spell (without requiring concentration).",
         )
 
-        return stats, feature
+        return [feature]
 
 
 ChokingVine: Power = _ChokingVine()
-GraspingRoots: Power = _GraspingRoots()
+Entangle: Power = _Entangle()
 HypnoticSpores: Power = _HypnoticSpores()
-PoisonThorns: Power = _PoisonThorns()
 SpikeGrowth: Power = _SpikeGrowth()
+VineWhip: Power = _VineWhip()
 
 
-PlantPowers: List[Power] = [
-    ChokingVine,
-    GraspingRoots,
-    HypnoticSpores,
-    PoisonThorns,
-    SpikeGrowth,
-]
+PlantPowers: List[Power] = [ChokingVine, Entangle, HypnoticSpores, SpikeGrowth, VineWhip]

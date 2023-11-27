@@ -1,98 +1,90 @@
-from math import ceil
-from typing import List, Tuple
-
-import numpy as np
+from datetime import datetime
+from typing import List
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
-from ...size import Size
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_cruel(
-    candidate: BaseStatblock, require_melee: bool = False, min_cr: float | None = None
-) -> float:
-    return score(
-        candidate=candidate,
-        require_attack_types=AttackType.AllMelee() if require_melee else None,
-        bonus_types=[CreatureType.Fiend, CreatureType.Monstrosity, CreatureType.Humanoid],
-        bonus_skills=Skills.Intimidation,
-        bonus_stats=Stats.CHA,
-        bonus_roles={MonsterRole.Ambusher, MonsterRole.Bruiser, MonsterRole.Leader},
-    )
+class CruelPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        standard_score_args = dict(
+            require_attack_types=AttackType.AllMelee(),
+            bonus_types=[CreatureType.Fiend, CreatureType.Monstrosity, CreatureType.Humanoid],
+            bonus_skills=Skills.Intimidation,
+            bonus_stats=Stats.CHA,
+            bonus_roles={MonsterRole.Ambusher, MonsterRole.Bruiser, MonsterRole.Leader},
+            **score_args,
+        )
+        super().__init__(
+            name=name,
+            power_type=PowerType.Theme,
+            source=source,
+            theme="cruel",
+            create_date=create_date,
+            power_level=power_level,
+            score_args=standard_score_args,
+        )
 
 
-class _DelightsInSuffering(PowerBackport):
-    """When attacking a target whose current hit points are below half their hit point maximum,
-    this creature has advantage on attack rolls and deals an extra CR damage when they hit."""
-
+class _BloodiedFrenzy(CruelPower):
     def __init__(self):
         super().__init__(
-            name="Delights in Suffering", power_type=PowerType.Theme, power_level=HIGH_POWER
+            name="Bloodied Frenzy",
+            source="FoeFoundryOriginal",
+            require_cr=3,
         )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_cruel(candidate, min_cr=3)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        # grant intimidation proficiency or expertise
-        stats = stats.copy(
-            attributes=stats.attributes.grant_proficiency_or_expertise(Skills.Intimidation)
-        )
-
-        # use secondary damage type, if there is one
-        # if there isn't, set it to poison
-        if stats.secondary_damage_type is None:
-            stats = stats.copy(secondary_damage_type=DamageType.Poison)
-
-        damage_type = stats.secondary_damage_type
-        dmg = DieFormula.target_value(1 + 0.5 * stats.cr, suggested_die=Die.d6)
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        damage_type = stats.secondary_damage_type or stats.primary_damage_type
+        dmg = DieFormula.target_value(1 + 0.5 * stats.cr, force_die=Die.d4)
         feature = Feature(
-            name="Delights in Suffering",
-            description=f"The attack is made at advantage and deals an additional {dmg.description} {damage_type} damage if the target is at or below half-health.",
+            name="Bloodied Frenzy",
+            description=f"The attack deals an additional {dmg.description} {damage_type} damage if the target is at or below half-health.",
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
         )
-        return stats, feature
+        return [feature]
 
 
-class _Lethal(PowerBackport):
+class _BrutalCritical(CruelPower):
     def __init__(self):
-        super().__init__(name="Lethal", power_type=PowerType.Theme, power_level=HIGH_POWER)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_cruel(candidate, require_melee=True, min_cr=7)
-
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature]:
-        crit_lower = 19 if stats.cr <= 7 else 18
-        dmg = DieFormula.target_value(2 + stats.cr, force_die=Die.d6)
-        dmg_type = stats.secondary_damage_type or stats.primary_damage_type
-        feature = Feature(
-            name="Lethal",
-            action=ActionType.Feature,
-            description=f"{stats.selfref.capitalize()} scores a critical hit on an unmodified attack roll of {crit_lower}-20. \
-                Additionally, a critical hit from {stats.selfref} deals an additional {dmg.description} {dmg_type} damage (do not apply crit modifier to this damage), and the creature dies if this attack reduces its hit points to 0.",
+        super().__init__(
+            name="Brutal Critical", source="SRD5.1 Champion, Barbarian", power_level=HIGH_POWER
         )
 
-        return stats, feature
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        crit_lower = 19 if stats.cr <= 7 else 18
+        dmg = stats.target_value(1.0, force_die=Die.d6)
+        dmg_type = stats.secondary_damage_type or stats.primary_damage_type
+        feature = Feature(
+            name="Brutal Critical",
+            action=ActionType.Feature,
+            description=f"{stats.selfref.capitalize()} scores a critical hit on an unmodified attack roll of {crit_lower}-20. \
+                Additionally, a critical hit from {stats.selfref} deals an additional {dmg.description} {dmg_type} damage (do not apply crit modifier to this damage), \
+                and the creature dies if this attack reduces its hit points to 0.",
+        )
+        return [feature]
 
 
-DelightsInSuffering: Power = _DelightsInSuffering()
-Lethal: Power = _Lethal()
+BloodiedFrenzy: Power = _BloodiedFrenzy()
+BrutalCritical: Power = _BrutalCritical()
 
 CruelPowers: List[Power] = [
-    DelightsInSuffering,
-    Lethal,
+    BloodiedFrenzy,
+    BrutalCritical,
 ]

@@ -34,6 +34,13 @@ def render_html_inline(stats: Statblock, benchmarks: List[Benchmark] | None = No
     return html_raw
 
 
+def render_html_fragment(stats: Statblock, benchmarks: List[Benchmark] | None = None) -> str:
+    template = env.get_template("creature_template.html.j2")
+    data = MonsterTemplateData.from_statblock(stats, benchmarks)
+    html_raw = template.render(data.to_dict())
+    return html_raw
+
+
 def render_html_inline_page_to_path(
     stats: Statblock, path: Path, benchmarks: List[Benchmark] | None = None
 ) -> Path:

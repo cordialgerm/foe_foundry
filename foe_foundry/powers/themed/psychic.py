@@ -1,93 +1,82 @@
+from datetime import datetime
 from math import ceil
-from typing import Dict, List, Tuple
-
-import numpy as np
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
+from typing import List
 
 from ...attack_template import natural as natural_attacks
-from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, Burning, DamageType, Dazed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, LOW_POWER, Power, PowerBackport, PowerType
-from ..scoring import AttackNames, score
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def _score_is_psychic(
-    candidate: BaseStatblock,
-    require_aberration: bool = False,
-    min_cr: float | None = None,
-    attack_names: AttackNames = None,
-) -> float:
-    # this is great for aberrations, psychic focused creatures, and controllers
+class PsychicPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        def is_spellcaster(candidate: BaseStatblock) -> bool:
+            if candidate.creature_type == CreatureType.Humanoid:
+                return (
+                    candidate.attack_type.is_spell()
+                    and candidate.secondary_damage_type == DamageType.Psychic
+                )
+            else:
+                return True
 
-    return score(
-        candidate=candidate,
-        require_types=CreatureType.Aberration if require_aberration else None,
-        require_damage=DamageType.Psychic,
-        bonus_roles=MonsterRole.Controller,
-        require_no_other_damage_type=True,
-        attack_names=attack_names,
-        require_cr=min_cr,
-    )
+        super().__init__(
+            name=name,
+            source=source,
+            create_date=create_date,
+            power_level=power_level,
+            theme="psychic",
+            power_type=PowerType.Theme,
+            score_args=dict(
+                require_types={CreatureType.Aberration, CreatureType.Humanoid},
+                require_callback=is_spellcaster,
+                bonus_damage=DamageType.Psychic,
+                bonus_roles=MonsterRole.Controller,
+            )
+            | score_args,
+        )
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Psychic)
+        return stats
 
 
-def as_psychic(stats: BaseStatblock) -> BaseStatblock:
-    if stats.secondary_damage_type is None:
-        stats = stats.copy(secondary_damage_type=DamageType.Psychic)
-    return stats
-
-
-class _Telekinetic(PowerBackport):
-    """This creature chooses one creature they can see within 100 feet of them
-    weighing less than 400 pounds. The target must succeed on a Strength saving throw
-    (DC = 11 + 1/2 CR) or be pulled up to 80 feet directly toward this creature."""
-
+class _Telekinetic(PsychicPower):
     def __init__(self):
-        super().__init__(name="Telekinetic", power_type=PowerType.Theme)
+        super().__init__(name="Telekinesis", source="5.1SRD Telekinesis")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_psychic(candidate)
-
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        stats = as_psychic(stats)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = int(ceil(11 + stats.cr / 2.0))
 
         feature = Feature(
-            name="Telekinetic Grasp",
-            description=f"{stats.selfref.capitalize()} chooses one creature they can see within 100 feet weighting less than 400 pounds. \
-                The target must succeed on a DC {dc} Strength saving throw or be pulled up to 80 feet directly toward {stats.selfref}",
-            action=ActionType.BonusAction,
+            name="Telekinesis",
+            description=f"{stats.selfref.capitalize()} casts *Telekinisis* (DC {dc}) as a 5th level spell targeting a creature it can see within 60 feet.",
+            action=ActionType.Action,
+            replaces_multiattack=2,
         )
-        return stats, feature
+        return [feature]
 
 
-class _PsychicInfestation(PowerBackport):
+class _PsychicInfestation(PsychicPower):
     def __init__(self):
-        super().__init__(name="Psychic Infestation", power_type=PowerType.Theme)
+        super().__init__(name="Psychic Infestation", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_psychic(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        stats = as_psychic(stats)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(30 + 5 * stats.cr, min_val=30, max_val=90)
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(
-            target=1.5 * stats.attack.average_damage, force_die=Die.d6
-        )
+        dmg = stats.target_value(target=1.5, force_die=Die.d6)
         burning = Burning(
             damage=DieFormula.from_dice(d6=dmg.n_die // 2), damage_type=DamageType.Psychic
         )
@@ -102,24 +91,17 @@ class _PsychicInfestation(PowerBackport):
                 On a success, it takes half damage instead. {burning.description_3rd}",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _DissonantWhispers(PowerBackport):
+class _DissonantWhispers(PsychicPower):
     def __init__(self):
-        super().__init__(name="Dissonant Whispers", power_type=PowerType.Theme)
+        super().__init__(name="Dissonant Whispers", source="SRD5.1 Dissonant Whispers")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_psychic(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        stats = as_psychic(stats)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(30 + 5 * stats.cr, min_val=30, max_val=90)
         dc = stats.difficulty_class
-        dmg = DieFormula.target_value(1.5 * stats.attack.average_damage, force_die=Die.d6)
+        dmg = stats.target_value(1.5, force_die=Die.d6)
 
         feature = Feature(
             name="Dissonant Whispers",
@@ -130,26 +112,20 @@ class _DissonantWhispers(PowerBackport):
                 if available, to move as far away as its speed allows from {stats.selfref}. The creature doesn't move into obviously dangerous ground. \
                 On a successful save, the target takes half damage instead.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _MindBlast(PowerBackport):
+class _PsionicBlast(PsychicPower):
     def __init__(self):
-        super().__init__(name="Mind Blast", power_type=PowerType.Theme, power_level=HIGH_POWER)
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_psychic(candidate, min_cr=5, require_aberration=True)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        stats = as_psychic(stats)
-        multiplier = 2.5 if stats.multiattack >= 2 else 1.5
-        dmg = DieFormula.target_value(
-            target=multiplier * stats.attack.average_damage, force_die=Die.d6
+        super().__init__(
+            name="Psionic Blast", source="FoeFoundryOriginal", power_level=HIGH_POWER
         )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        multiplier = 2.5 if stats.multiattack >= 2 else 1.5
+        dmg = stats.target_value(target=multiplier, force_die=Die.d6)
         dc = stats.difficulty_class
+        dazed = Dazed()
 
         if stats.cr <= 3:
             distance = 15
@@ -159,62 +135,62 @@ class _MindBlast(PowerBackport):
             distance = 60
 
         feature = Feature(
-            name="Mind Blast",
+            name="Psionic Blast",
             action=ActionType.Action,
             recharge=6,
             replaces_multiattack=3,
-            description=f"{stats.selfref.capitalize()} magically emits psychic energy in a {distance} ft cone. \
+            description=f"{stats.selfref.capitalize()} magically emits psionic energy in a {distance} ft cone. \
                 Each creature in that area must succeed on a DC {dc} Intelligence saving throw. On a failure, a creature \
-                takes {dmg.description} psychic damage and is **Stunned** for 1 minute (save ends at end of turn). On a failure, \
-                a creature takes half damage instead.",
+                takes {dmg.description} psychic damage and is {dazed.caption} for 1 minute (save ends at end of turn). On a failure, \
+                a creature takes half damage instead. {dazed.description_3rd}",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _PainMirror(PowerBackport):
+class _MirroredPain(PsychicPower):
     def __init__(self):
-        super().__init__(name="Mirrored Pain", power_type=PowerType.Theme)
+        super().__init__(name="Mirrored Pain", source="FoeFoundryOriginal")
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_psychic(candidate)
-
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        stats = as_psychic(stats)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class_easy
         feature = Feature(
             name="Mirrored Pain",
             action=ActionType.Reaction,
-            description=f"Whenever {stats.selfref} takes damage, each other creature within 10 feet of {stats.selfref} takes that half the triggering damage as psychic damage instead.",
+            description=f"Whenever {stats.selfref} takes damage, each other creature within 10 feet of {stats.selfref} must make a DC {dc} Intelligenece save. On a failure, it takes half the triggering damage as psychic damage.",
         )
+        return [feature]
 
-        return stats, feature
 
-
-class _ExtractBrain(PowerBackport):
+class _EatBrain(PsychicPower):
     def __init__(self):
         super().__init__(
-            name="Extract Brain", power_type=PowerType.Theme, power_level=HIGH_POWER
-        )
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return _score_is_psychic(
-            candidate,
-            require_aberration=True,
-            min_cr=7,
+            name="Eat Brain",
+            source="FoeFoundryOriginal",
+            power_level=HIGH_POWER,
+            require_types=CreatureType.Aberration,
+            require_cr=7,
             attack_names={
                 "-",
                 natural_attacks.Tentacle,
             },
         )
 
-    def apply(
-        self, stats: BaseStatblock, rng: Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        stats = as_psychic(stats)
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.add_attack(
+            scalar=3.5,
+            damage_type=DamageType.Piercing,
+            attack_type=AttackType.MeleeNatural,
+            die=Die.d10,
+            replaces_multiattack=4,
+            custom_target=f"one dazed humanoid grappled by {stats.selfref}",
+            additional_description=f"If this damage reduces the target to 0 hit points, {stats.selfref} kills the target \
+                by extracting and devouring its brain.",
+            name="Extract Brain",
+        )
+        return stats
 
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dazed = Dazed()
 
@@ -227,33 +203,21 @@ class _ExtractBrain(PowerBackport):
                 on a DC {dc} Intelligence save or be {dazed.caption} while grappled in this way. {dazed.description_3rd}",
         )
 
-        stats = stats.add_attack(
-            scalar=3.5,
-            damage_type=DamageType.Piercing,
-            attack_type=AttackType.MeleeNatural,
-            die=Die.d10,
-            replaces_multiattack=4,
-            custom_target=f"one dazed humanoid grappled by {stats.selfref}",
-            additional_description=f"If this damage reduces the target to 0 hit points, {stats.selfref} kills the target \
-                by extracting and devouring its brain.",
-            name="Extract Brain",
-        )
-
-        return stats, stunning_tentacles
+        return [stunning_tentacles]
 
 
 DissonantWhispers: Power = _DissonantWhispers()
-ExtractBrain: Power = _ExtractBrain()
-MindBlast: Power = _MindBlast()
+EatBrain: Power = _EatBrain()
+PsionicBlast: Power = _PsionicBlast()
 PsychicInfestation: Power = _PsychicInfestation()
-PainMirror: Power = _PainMirror()
+MirroredPain: Power = _MirroredPain()
 Telekinetic: Power = _Telekinetic()
 
 PsychicPowers: List[Power] = [
     DissonantWhispers,
-    ExtractBrain,
-    MindBlast,
+    EatBrain,
+    MirroredPain,
+    PsionicBlast,
     PsychicInfestation,
-    PainMirror,
     Telekinetic,
 ]

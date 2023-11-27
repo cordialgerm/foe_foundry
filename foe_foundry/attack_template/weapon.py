@@ -79,6 +79,7 @@ class _Greatsword(AttackTemplate):
             damage_type=DamageType.Slashing,
             die=Die.d6,
             die_count=2,
+            low_cr_die_count=1,
             split_secondary_damage=True,
         )
 
@@ -225,6 +226,7 @@ class _Shortswords(AttackTemplate):
             damage_type=DamageType.Slashing,
             die=Die.d6,
             die_count=2,
+            low_cr_die_count=1,
             split_secondary_damage=True,
             allows_shield=False,
         )

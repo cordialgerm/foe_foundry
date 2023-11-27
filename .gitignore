@@ -8,7 +8,6 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
 dist/
 downloads/
@@ -160,5 +159,9 @@ cython_debug/
 #.idea/
 
 
+# Node modules
+node_modules/
 
 examples/
+
+foe_foundry_site/routes/whoosh/index/

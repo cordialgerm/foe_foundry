@@ -34,7 +34,13 @@ class _UndeadTemplate(CreatureTypeTemplate):
                 weapon.JavelinAndShield,
             ]
         elif stats.role in {MonsterRole.Artillery, MonsterRole.Controller}:
-            options = [weapon.Longbow, spell.Deathbolt, spell.Frostbolt]
+            options = [
+                weapon.Longbow,
+                spell.Deathbolt,
+                spell.Frostbolt,
+                spell.EdlritchBlast,
+                spell.Gaze,
+            ]
         elif stats.role in {MonsterRole.Bruiser}:
             options = [weapon.Polearm, weapon.Maul, weapon.Greataxe, weapon.Greatsword]
         elif stats.role in {MonsterRole.Defender}:

@@ -1,36 +1,54 @@
-from math import ceil, floor
-from typing import List, Tuple
+from datetime import datetime
+from typing import List
 
-from numpy.random import Generator
-
-from ...attributes import Skills, Stats
+from ...attributes import Skills
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
-from ..power import LOW_POWER, Power, PowerBackport, PowerType
-from ..scoring import score
+from ...statblocks import BaseStatblock
+from ..power import MEDIUM_POWER, RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-def score_earthy(candidate: BaseStatblock, **args) -> float:
-    return score(
-        candidate=candidate,
-        require_types=[CreatureType.Beast, CreatureType.Monstrosity, CreatureType.Ooze],
-        **args,
-    )
+class EarthPower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        create_date: datetime | None = None,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        super().__init__(
+            name=name,
+            source=source,
+            create_date=create_date,
+            power_level=power_level,
+            power_type=PowerType.Theme,
+            theme="earth",
+            score_args=dict(
+                require_types=[CreatureType.Beast, CreatureType.Monstrosity, CreatureType.Ooze],
+            )
+            | score_args,
+        )
 
 
-class _Burrower(PowerBackport):
+class _Burrower(EarthPower):
     def __init__(self):
-        super().__init__(name="Burrower", power_type=PowerType.Theme, power_level=LOW_POWER)
+        def not_already_special_movement(c: BaseStatblock) -> bool:
+            return (
+                not (c.speed.fly or 0) and not (c.speed.swim or 0) and not (c.speed.climb or 0)
+            )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_earthy(candidate)
+        super().__init__(
+            name="Burrower",
+            source="SRD5.1 Purple Worm",
+            power_level=RIBBON_POWER,
+            require_callback=not_already_special_movement,
+        )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         new_speed = stats.speed.copy(burrow=stats.speed.walk)
         new_senses = stats.senses.copy(blindsight=60)
         stats = stats.copy(speed=new_speed, senses=new_senses)
@@ -43,25 +61,25 @@ class _Burrower(PowerBackport):
             description=f"{stats.selfref.capitalize()} can burrow through solid rock at half its burrow speed and leaves a {tunnel_width} foot wide diameter tunnel in its wake.",
         )
 
-        return stats, feature
+        return [feature]
 
 
-class _Climber(PowerBackport):
+class _Climber(EarthPower):
     def __init__(self):
-        super().__init__(name="Climber", power_type=PowerType.Theme, power_level=LOW_POWER)
+        def not_already_special_movement(c: BaseStatblock) -> bool:
+            return (
+                not (c.speed.fly or 0) and not (c.speed.swim or 0) and not (c.speed.climb or 0)
+            )
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return score_earthy(
-            candidate, bonus_roles=[MonsterRole.Artillery, MonsterRole.Ambusher]
+        super().__init__(
+            name="Climber",
+            source="SRD5.1 Giant Spider",
+            power_level=RIBBON_POWER,
+            bonus_roles=[MonsterRole.Artillery, MonsterRole.Ambusher],
+            require_callback=not_already_special_movement,
         )
 
-    def apply(self, stats: BaseStatblock, rng: Generator) -> Tuple[BaseStatblock, Feature]:
-        new_speed = stats.speed.copy(climb=stats.speed.walk)
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(
-            Skills.Athletics, Skills.Acrobatics
-        )
-        stats = stats.copy(speed=new_speed, attributes=new_attrs)
-
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         ## Spider Climb
         if stats.creature_type in {
             CreatureType.Beast,
@@ -80,8 +98,15 @@ class _Climber(PowerBackport):
                 hidden=True,
                 description=f"{stats.selfref.capitalize()} gains a climb speed equal to its walk speed",
             )
+        return [feature]
 
-        return stats, feature
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        new_speed = stats.speed.copy(climb=stats.speed.walk)
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(
+            Skills.Athletics, Skills.Acrobatics
+        )
+        stats = stats.copy(speed=new_speed, attributes=new_attrs)
+        return stats
 
 
 Burrower: Power = _Burrower()

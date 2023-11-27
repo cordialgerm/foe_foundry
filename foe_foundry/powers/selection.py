@@ -278,13 +278,13 @@ class _PowerSelector:
         if power.power_type == PowerType.Creature and not any(
             p for p in self.selection.selected_powers if p.power_type == PowerType.Creature
         ):
-            multiplier += 0.5
+            multiplier += 0.75
 
         # if the creature doesn't yet have any Theme powers then make them more attractive
         if power.power_type == PowerType.Role and not any(
             p for p in self.selection.selected_powers if p.power_type == PowerType.Role
         ):
-            multiplier += 0.5
+            multiplier += 0.75
 
         # if feature would cause us to go above target then make it less attractive
         # don't eliminate it entirely because it might lead to total infeasibility
@@ -330,7 +330,7 @@ class _PowerSelector:
 
 
 def select_powers(
-    stats: BaseStatblock, rng: RngFactory, power_level: float
+    stats: BaseStatblock, rng: RngFactory, power_level: float, retries: int = 3
 ) -> Tuple[BaseStatblock, List[Feature]]:
     targets = SelectionTargets(
         power_level_target=power_level, power_level_max=power_level + 0.5
@@ -341,7 +341,7 @@ def select_powers(
     all_powers: List[Set[Power]] = []
 
     # try a couple of times and choose the best result
-    for _ in range(3):
+    for _ in range(retries):
         selector = _PowerSelector(targets=targets, rng=rng(), stats=stats)
         selector.select_powers()
         all_results.append(selector.stats)
