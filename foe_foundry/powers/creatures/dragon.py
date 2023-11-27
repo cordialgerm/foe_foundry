@@ -190,7 +190,6 @@ def _dragons_breath_power(damage_type: DamageType, save_type: str) -> Power:
                 name=name,
                 source="5.1 SRD Ancient Red Dragon",
                 power_level=HIGH_POWER,
-                bonus_cr=7,
                 score_multiplier=3.0,
                 require_damage=damage_type,
             )
