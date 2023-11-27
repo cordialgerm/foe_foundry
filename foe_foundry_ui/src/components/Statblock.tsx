@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Box } from "@mui/material";
 
 interface StatblockProps {
   rawHtml: string;
@@ -6,17 +7,19 @@ interface StatblockProps {
 
 export function Statblock({ rawHtml }: StatblockProps) {
   return (
-    <div
+    <Box
+      sx={{
+        padding: { xs: 0, md: "5px", lg: "20px" },
+      }}
       style={{
         display: "flex",
         flexDirection: "column",
         width: "100%",
         height: "100vh",
         textAlign: "left",
-        padding: "20px",
       }}
     >
       <div dangerouslySetInnerHTML={{ __html: rawHtml }} />
-    </div>
+    </Box>
   );
 }

@@ -79,7 +79,11 @@ const ProductHeroText: React.FC<ProductHeroTextProps> = (heroText) => {
             opacity: 1.0,
           }}
         />
-        <Typography variant="h4" component="h2" sx={{ mb: 14 }}>
+        <Typography
+          variant="h4"
+          component="h2"
+          sx={{ mb: 14, textAlign: "center" }}
+        >
           {heroText.title}
         </Typography>
         <div>

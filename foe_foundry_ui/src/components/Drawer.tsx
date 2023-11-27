@@ -14,6 +14,7 @@ import IconButton from "@mui/material/IconButton";
 import { styled, useTheme } from "@mui/material/styles";
 import * as React from "react";
 import { CrSelector, CreateTypeSelector, RoleSelector } from "./Selectors.js";
+import { useNavigate } from "react-router-dom";
 
 export const drawerWidth = 240;
 
@@ -26,38 +27,58 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "flex-end",
 }));
 
-export function PersistentDrawerLeft({
-  creatureType,
-  setCreatureType,
-  role,
-  setRole,
-  cr,
-  setCr,
-  open,
-  setOpen,
-  onGenerate,
-}) {
+export interface DrawerProps {
+  creatureType: string;
+  setCreatureType: (creatureType: string) => void;
+  role: string;
+  setRole: (role: string) => void;
+  cr: string;
+  setCr: (cr: string) => void;
+  open: boolean;
+  setOpen: (open: boolean) => void;
+  onGenerate: () => void;
+  isMobile?: boolean;
+}
+
+export function PersistentDrawerLeft({ ...props }: DrawerProps) {
   const theme = useTheme();
+  const navigate = useNavigate();
 
   const handleDrawerClose = () => {
-    setOpen(false);
+    props.setOpen(false);
   };
 
   const onCreatureTypeChanged = (event) => {
-    setCreatureType(event.target.value);
+    props.setCreatureType(event.target.value);
   };
 
   const onRoleChanged = (event) => {
-    setRole(event.target.value);
+    props.setRole(event.target.value);
   };
 
   const onCrChanged = (event) => {
-    setCr(event.target.value);
+    props.setCr(event.target.value);
   };
 
   const onGenerateClicked = (event) => {
-    onGenerate();
+    props.onGenerate();
   };
+
+  type LinkProps = {
+    to: string;
+  };
+  function Link(link: React.PropsWithChildren<LinkProps>) {
+    const onClick = (event) => {
+      if (props.isMobile) {
+        props.setOpen(false);
+      }
+      navigate(link.to);
+    };
+
+    return (
+      <MuiListItemButton onClick={onClick}>{link.children}</MuiListItemButton>
+    );
+  }
 
   return (
     <MuiDrawer
@@ -65,7 +86,7 @@ export function PersistentDrawerLeft({
       anchor="left"
       width={drawerWidth}
       elevation={3}
-      open={open}
+      open={props.open}
     >
       <DrawerHeader>
         <IconButton onClick={handleDrawerClose}>
@@ -77,18 +98,34 @@ export function PersistentDrawerLeft({
         </IconButton>
       </DrawerHeader>
       <MuiDivider />
+      {props.isMobile && (
+        <>
+          <MuiList>
+            <MuiListItem>
+              <Link to="/statblocks">Statblocks</Link>
+            </MuiListItem>
+            <MuiListItem>
+              <Link to="/conditions">Conditions</Link>
+            </MuiListItem>
+            <MuiListItem>
+              <Link to="/credits">Credits</Link>
+            </MuiListItem>
+          </MuiList>
+          <MuiDivider />
+        </>
+      )}
       <MuiList>
         <MuiListItem key="creatureType">
           <CreateTypeSelector
-            value={creatureType}
+            value={props.creatureType}
             onChange={onCreatureTypeChanged}
           />
         </MuiListItem>
         <MuiListItem key="role">
-          <RoleSelector value={role} onChange={onRoleChanged} />
+          <RoleSelector value={props.role} onChange={onRoleChanged} />
         </MuiListItem>
         <MuiListItem key="cr">
-          <CrSelector value={cr} onChange={onCrChanged} />
+          <CrSelector value={props.cr} onChange={onCrChanged} />
         </MuiListItem>
         <MuiListItem key="generate">
           <MuiListItemButton

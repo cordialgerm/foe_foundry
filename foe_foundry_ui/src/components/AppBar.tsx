@@ -5,7 +5,7 @@ import { FoeFoundryIcon } from "./FoeFoundryIcon.tsx";
 import MenuIcon from "@mui/icons-material/Menu";
 import { AppBar, Container, Toolbar, Typography, Button } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
-import { drawerWidth } from "./Drawer";
+import { drawerWidth } from "./Drawer.tsx";
 import { useNavigate } from "react-router-dom";
 
 const MuiAppBar = styled(AppBar, {
@@ -25,16 +25,22 @@ const MuiAppBar = styled(AppBar, {
   }),
 }));
 
-function MenuLink({ display, url }) {
+interface MenuLinkProps {
+  key: string;
+  display: string;
+  url: string;
+}
+
+function MenuLink({ ...props }: MenuLinkProps) {
   const navigate = useNavigate();
 
   const onClick = () => {
-    navigate(url);
+    navigate(props.url);
   };
 
   return (
-    <Button key={display} color="inherit" onClick={onClick}>
-      {display}
+    <Button key={props.key} color="inherit" onClick={onClick}>
+      {props.display}
     </Button>
   );
 }
@@ -50,7 +56,8 @@ function HomeLink() {
     <Button
       onClick={onClick}
       sx={{
-        display: { xs: "none", md: "flex" },
+        display: "flex",
+        // display: { xs: "none", md: "flex" },
         flexGrow: 1,
         justifyContent: "flex-start",
       }}
@@ -78,7 +85,17 @@ function HomeLink() {
   );
 }
 
-export function FoeFoundryAppBar({ drawerOpen, setDrawerOpen }) {
+interface AppBarProps {
+  drawerOpen: boolean;
+  setDrawerOpen: (open: boolean) => void;
+  isMobile: boolean;
+}
+
+export function FoeFoundryAppBar({
+  drawerOpen,
+  setDrawerOpen,
+  isMobile,
+}: AppBarProps) {
   const handleDrawerOpen = () => {
     setDrawerOpen(true);
   };
@@ -99,9 +116,10 @@ export function FoeFoundryAppBar({ drawerOpen, setDrawerOpen }) {
             </IconButton>
           )}
           <HomeLink />
-          {menus.map((m) => (
-            <MenuLink key={m.display} display={m.display} url={m.url} />
-          ))}
+          {!isMobile &&
+            menus.map((m) => (
+              <MenuLink key={m.display} display={m.display} url={m.url} />
+            ))}
         </Toolbar>
       </Container>
     </MuiAppBar>
