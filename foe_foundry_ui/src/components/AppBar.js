@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles";
 import * as React from "react";
 
-import ConstructionIcon from "@mui/icons-material/Construction";
+import { FoeFoundryIcon } from "./FoeFoundryIcon.tsx";
 import MenuIcon from "@mui/icons-material/Menu";
 import { AppBar, Container, Toolbar, Typography, Button } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
@@ -55,7 +55,7 @@ function HomeLink() {
         justifyContent: "flex-start",
       }}
     >
-      <ConstructionIcon
+      <FoeFoundryIcon
         sx={{ color: "primary.contrastText" }}
         style={{ marginRight: "10px" }}
       />

@@ -6,7 +6,7 @@ import { DefaultPageLayout, DefaultPageProps } from '../components/PageLayout.ts
 function AboutPage(props: React.PropsWithChildren<DefaultPageProps>) {
 
     const productValues = {
-        title: "Welcome to Foe Foundry",
+        title: <span>Welcome to the <b>Foe Foundry</b></span>,
         text1: {
             title: "Powerful & Interesting",
             description: "These monsters hit hard. Powers add interesting flavor, unique mechanics, and tactical effects to make combat exciting."

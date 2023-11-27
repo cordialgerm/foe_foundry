@@ -7,8 +7,8 @@ import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
 
 interface HeroTextProps {
-    title: string;
-    description: string
+    title: string | JSX.Element;
+    description: string | JSX.Element
 }
 
 interface ProductHeroTextProps {
@@ -30,7 +30,8 @@ const title = {
     fontSize: 24,
     fontFamily: 'default',
     fontWeight: 'bold',
-    textDecoration: "underline"
+    textDecoration: "underline",
+    textAlign: "center"
 };
 
 const description = {
@@ -71,13 +72,13 @@ const ProductHeroText: React.FC<ProductHeroTextProps> = (heroText) => {
             >
                 <Box
                     component="img"
-                    src="/img/productCurvyLines.png"
+                    src="/img/logo/foe_foundry_logo_200.png"
                     alt="curvy lines"
                     sx={{
                         pointerEvents: 'none',
-                        position: 'absolute',
-                        top: -180,
-                        opacity: 0.7,
+                        // position: 'absolute',
+                        // top: -180,
+                        opacity: 1.0,
                     }}
                 />
                 <Typography variant="h4" component="h2" sx={{ mb: 14 }}>

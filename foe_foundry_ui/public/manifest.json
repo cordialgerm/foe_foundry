@@ -8,14 +8,19 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "/img/logo/foe_foundry_logo_200.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "200x200"
     },
     {
-      "src": "logo512.png",
+      "src": "/img/logo/foe_foundry_logo_400.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "400x400"
+    },
+    {
+      "src": "/img/logo/foe_foundry_logo_834.png",
+      "type": "image/png",
+      "sizes": "834x834"
     }
   ],
   "start_url": ".",
