@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.421bdbc8.css",
-    "main.js": "/static/js/main.b0497996.js",
+    "main.js": "/static/js/main.dc891ae4.js",
     "static/media/aberration-mutating.png": "/static/media/aberration-mutating.123b1c7bd9c859ef26ec.png",
     "static/media/plant-treant-2.png": "/static/media/plant-treant-2.672f4cfd42e1ccdf1dad.png",
     "static/media/beast-tiger.png": "/static/media/beast-tiger.0fa6b8aa285362913fec.png",
@@ -98,10 +98,10 @@
     "static/media/watercolor-mask.png": "/static/media/watercolor-mask.bd77d520aeedaedbb245.png",
     "index.html": "/index.html",
     "main.421bdbc8.css.map": "/static/css/main.421bdbc8.css.map",
-    "main.b0497996.js.map": "/static/js/main.b0497996.js.map"
+    "main.dc891ae4.js.map": "/static/js/main.dc891ae4.js.map"
   },
   "entrypoints": [
     "static/css/main.421bdbc8.css",
-    "static/js/main.b0497996.js"
+    "static/js/main.dc891ae4.js"
   ]
 }
