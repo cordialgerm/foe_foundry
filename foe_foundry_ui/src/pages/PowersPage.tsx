@@ -298,7 +298,8 @@ export default function PowersPage(props: PageProps) {
   const fetchData = React.useCallback(async () => {
     const url = firstLoad.current
       ? `${baseUrl}/random?` + new URLSearchParams({ limit: "4" })
-      : `${baseUrl}/search?` + new URLSearchParams({ keyword: searchQuery });
+      : `${baseUrl}/search?` +
+        new URLSearchParams({ keyword: searchQuery, limit: "20" });
     firstLoad.current = false;
     const response = await fetch(url);
     const powers = await response.json();
