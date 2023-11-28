@@ -5,6 +5,7 @@ import { CssBaseline } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "./components/Theme.js";
+import useStickyState from "./components/StickyState.tsx";
 
 interface AppProps {
   baseUrl: string;
@@ -21,7 +22,7 @@ function App({ baseUrl, children }: React.PropsWithChildren<AppProps>) {
   };
 
   const navigate = useNavigate();
-  const [sidebar, setSidebar] = React.useState(defaultSidebar);
+  const [sidebar, setSidebar] = useStickyState(defaultSidebar, "sidebar");
   const pageProps = {
     baseUrl: baseUrl,
     sidebar: sidebar,
