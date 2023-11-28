@@ -37,7 +37,7 @@ class DraconicPower(PowerWithStandardScoring):
 
 class _FrightfulGaze(DraconicPower):
     def __init__(self):
-        super().__init__(name="Frightful Gaze", source="FoeFoundryOriginal")
+        super().__init__(name="Frightful Gaze", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -113,7 +113,7 @@ class _WingBuffet(DraconicPower):
 
 class _DragonsGreed(DraconicPower):
     def __init__(self):
-        super().__init__(name="Dragon's Greed", source="FoeFoundryOriginal")
+        super().__init__(name="Dragon's Greed", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -156,7 +156,7 @@ class _DraconicMinions(DraconicPower):
     def __init__(self):
         super().__init__(
             name="Draconic Minions",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_cr=7,
             require_callback=_check_draconic_minions,

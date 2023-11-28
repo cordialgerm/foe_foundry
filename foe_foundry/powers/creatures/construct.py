@@ -48,7 +48,7 @@ class _ConstructedGuardian(ConstructPower):
     def __init__(self):
         super().__init__(
             name="Constructed Guardian",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
             bonus_roles=MonsterRole.Defender,
@@ -67,7 +67,7 @@ class _ProtectivePlating(ConstructPower):
     def __init__(self):
         super().__init__(
             name="Protective Plating",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
@@ -120,7 +120,7 @@ class _BoundProtector(ConstructPower):
 class _ExplosiveCore(ConstructPower):
     def __init__(self):
         super().__init__(
-            name="Explosive Core", source="FoeFoundryOriginal", bonus_damage=DamageType.Fire
+            name="Explosive Core", source="Foe Foundry", bonus_damage=DamageType.Fire
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -179,7 +179,7 @@ class _Retrieval(ConstructPower):
     def __init__(self):
         super().__init__(
             name="Retrieval",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 21),
             require_cr=7,

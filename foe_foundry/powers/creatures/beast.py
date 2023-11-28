@@ -48,7 +48,7 @@ class _FeedingFrenzy(BeastPower):
     def __init__(self):
         super().__init__(
             name="Feeding Frenzy",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 21),
             require_attack_types=AttackType.MeleeNatural,
         )
@@ -72,7 +72,7 @@ class _BestialRampage(BeastPower):
     def __init__(self):
         super().__init__(
             name="Bestial Rampage",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
             require_attack_types=AttackType.MeleeNatural,
@@ -176,7 +176,7 @@ class _Web(BeastPower):
 class _Packlord(BeastPower):
     def __init__(self):
         super().__init__(
-            name="Packlord", source="FoeFoundryOriginal", power_level=HIGH_POWER, require_cr=3
+            name="Packlord", source="Foe Foundry", power_level=HIGH_POWER, require_cr=3
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -208,7 +208,7 @@ class _WildInstinct(BeastPower):
     def __init__(self):
         super().__init__(
             name="Wild Instinct",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=RIBBON_POWER,
         )
 

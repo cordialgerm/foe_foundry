@@ -29,7 +29,7 @@ class _ArcaneHunt(PowerWithStandardScoring):
             name="Arcane Hunt",
             power_type=PowerType.Theme,
             power_level=LOW_POWER,
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="Anti-Magic",
             score_args=score_args,
         )
@@ -57,7 +57,7 @@ class _FractalForm(PowerWithStandardScoring):
         super().__init__(
             name="Fractal Form",
             power_type=PowerType.Theme,
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="Anti-Magic",
             score_args=score_args,
         )
@@ -125,7 +125,7 @@ class _RedirectTeleport(PowerWithStandardScoring):
 
         super().__init__(
             name="Redirect Teleport",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="Anti-Magic",
             power_type=PowerType.Theme,
             score_args=score_args,
@@ -152,7 +152,7 @@ class _SpellEater(PowerWithStandardScoring):
         )
         super().__init__(
             name="Spell Eater",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="Anti-Magic",
             power_type=PowerType.Theme,
             score_args=score_args,
@@ -203,7 +203,7 @@ class _SpellStealer(PowerWithStandardScoring):
 
         super().__init__(
             name="Spell Stealer",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="Anti-Magic",
             power_type=PowerType.Theme,
             score_args=score_args,
@@ -238,7 +238,7 @@ class _TwistedMind(PowerWithStandardScoring):
         )
         super().__init__(
             name="Tiwsted Mind",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="Anti-Magic",
             power_type=PowerType.Theme,
             score_args=score_args,

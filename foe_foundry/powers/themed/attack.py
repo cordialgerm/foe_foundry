@@ -22,7 +22,7 @@ class AttackPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             power_type=PowerType.Theme,
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="Attack",
             power_level=power_level,
             create_date=create_date,

@@ -70,7 +70,7 @@ class _Swallow(MonstrousPower):
     def __init__(self):
         super().__init__(
             name="Swallow",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_size=Size.Large,
             require_types={CreatureType.Monstrosity, CreatureType.Beast, CreatureType.Ooze},
@@ -154,7 +154,7 @@ class _LingeringWound(MonstrousPower):
     def __init__(self):
         super().__init__(
             name="Lingering Wound",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             attack_names=[natural.Bite, natural.Claw, natural.Horns],
         )
 

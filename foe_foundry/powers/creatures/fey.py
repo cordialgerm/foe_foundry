@@ -76,7 +76,7 @@ class _FaePresence(FeyPower):
     def __init__(self):
         super().__init__(
             name="Fae Presence",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 21),
         )
 
@@ -97,7 +97,7 @@ class _BloodContract(FeyPower):
     def __init__(self):
         super().__init__(
             name="Blood Curse",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 21),
             bonus_damage=DamageType.Necrotic,
@@ -126,7 +126,7 @@ class _FaeCounterspell(FeyPower):
     def __init__(self):
         super().__init__(
             name="Fae Counterspell",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_stats=Stats.INT,
             bonus_damage=DamageType.Psychic,
@@ -152,7 +152,7 @@ class _FaeCounterspell(FeyPower):
 class _Awaken(FeyPower):
     def __init__(self):
         super().__init__(
-            name="Awaken", source="FoeFoundryOriginal", power_level=HIGH_POWER, require_cr=4
+            name="Awaken", source="Foe Foundry", power_level=HIGH_POWER, require_cr=4
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -177,7 +177,7 @@ class _FaeBargain(FeyPower):
     def __init__(self):
         super().__init__(
             name="Fae Bargain",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_cr=4,
         )
@@ -231,7 +231,7 @@ class _DanceTune(FeyPower):
 class _ShadowyDoppelganger(FeyPower):
     def __init__(self):
         super().__init__(
-            name="Shadowy Doppelganger", source="FoeFoundryOriginal", power_level=HIGH_POWER
+            name="Shadowy Doppelganger", source="Foe Foundry", power_level=HIGH_POWER
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

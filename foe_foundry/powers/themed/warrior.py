@@ -72,7 +72,7 @@ class _Disciplined(Warrior):
 
         super().__init__(
             name="Disciplined",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_callback=fights_in_formation,
         )
 
@@ -89,7 +89,7 @@ class _ParryAndRiposte(Warrior):
     def __init__(self):
         super().__init__(
             name="Parry and Riposte",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_attack_types=AttackType.MeleeWeapon,
         )
 
@@ -108,7 +108,7 @@ class _PommelStrike(Warrior):
     def __init__(self):
         super().__init__(
             name="Pommel Strike",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             attack_names=[
                 "-",
                 weapon.SwordAndShield,
@@ -141,7 +141,7 @@ class _PushingAttack(Warrior):
     def __init__(self):
         super().__init__(
             name="Pushing Attack",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             attack_names={
                 "-",
                 weapon.Maul,

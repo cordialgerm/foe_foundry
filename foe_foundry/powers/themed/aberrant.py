@@ -71,7 +71,7 @@ class _ModifyMemory(AberrantPower):
 
 class _WarpReality(AberrantPower):
     def __init__(self):
-        super().__init__(name="Warp Reality", source="FoeFoundryOriginal")
+        super().__init__(name="Warp Reality", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -108,7 +108,7 @@ class _Incubation(AberrantPower):
     def __init__(self):
         super().__init__(
             name="Incubation",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             attack_names=["-", natural.Claw],
         )
