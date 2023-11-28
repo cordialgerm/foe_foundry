@@ -3,9 +3,6 @@ from typing import List, Tuple
 
 import numpy as np
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, DamageType, conditions

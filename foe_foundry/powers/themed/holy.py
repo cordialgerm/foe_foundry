@@ -1,14 +1,11 @@
 from datetime import datetime
 from typing import List
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attack_template import weapon
 from ...attributes import Stats
 from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock

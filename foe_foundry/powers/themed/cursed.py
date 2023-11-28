@@ -4,9 +4,6 @@ from typing import List
 
 from num2words import num2words
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, conditions
 from ...die import Die, DieFormula

@@ -1,27 +1,21 @@
-from typing import List, Tuple
+from typing import List
 
 import numpy as np
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import HeavyArmor
 from ...attack_template import natural, spell, weapon
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, conditions
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ...utils.rng import choose_enum, choose_options
 from ...utils.summoning import determine_summon_formula
 from ..creatures import giant
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from ..roles import artillery, bruiser
-from ..scoring import score
 from ..themed import fast, holy, organized, reckless, tough
 
 

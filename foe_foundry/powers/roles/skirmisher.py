@@ -1,12 +1,5 @@
 from datetime import datetime
-from math import ceil
-from typing import List, Tuple
-
-import numpy as np
-
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
+from typing import List
 
 from ...creature_types import CreatureType
 from ...damage import AttackType
@@ -16,7 +9,6 @@ from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock, MonsterDials
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
-from ..scoring import score
 from .shared import CunningAction as _CunningAction
 from .shared import NimbleEscape as _NimbleEscape
 

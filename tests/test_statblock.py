@@ -14,7 +14,6 @@ from foe_foundry import (
     general_use_stats,
     templates,
 )
-from foe_foundry.utils.rng import RngFactory
 
 
 @pytest.mark.parametrize("n", range(3))

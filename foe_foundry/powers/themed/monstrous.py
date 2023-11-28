@@ -1,11 +1,6 @@
 from datetime import datetime
 from math import ceil
-from typing import List, Tuple
-
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
+from typing import List
 
 from ...attack_template import natural, spell
 from ...creature_types import CreatureType
@@ -25,7 +20,6 @@ from ..power import (
     PowerType,
     PowerWithStandardScoring,
 )
-from ..scoring import score
 
 
 class MonstrousPower(PowerWithStandardScoring):

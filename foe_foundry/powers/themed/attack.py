@@ -1,12 +1,9 @@
 from datetime import datetime
 from typing import List
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attack_template import natural, spell, weapon
 from ...damage import DamageType, conditions
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size

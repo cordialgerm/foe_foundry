@@ -1,10 +1,5 @@
 from datetime import datetime
-from typing import List, Tuple
-
-import numpy as np
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
+from typing import List
 
 from ...attack_template import natural
 from ...creature_types import CreatureType
@@ -14,14 +9,7 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import (
-    HIGH_POWER,
-    LOW_POWER,
-    MEDIUM_POWER,
-    Power,
-    PowerType,
-    PowerWithStandardScoring,
-)
+from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
 class BestialPower(PowerWithStandardScoring):

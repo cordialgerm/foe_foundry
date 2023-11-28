@@ -1,7 +1,4 @@
 from abc import ABC, abstractmethod
-from typing import Callable
-
-from foe_foundry.statblocks import BaseStatblock
 
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock

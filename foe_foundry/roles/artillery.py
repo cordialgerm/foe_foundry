@@ -1,5 +1,3 @@
-from foe_foundry.statblocks import BaseStatblock
-
 from ..ac_templates import LightArmor, Unarmored
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType

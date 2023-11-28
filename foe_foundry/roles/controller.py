@@ -1,5 +1,3 @@
-from foe_foundry.statblocks import BaseStatblock
-
 from ..ac_templates import ArcaneArmor, Unarmored
 from ..attributes import Stats
 from ..damage import AttackType
