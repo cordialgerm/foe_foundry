@@ -2,9 +2,6 @@ from datetime import datetime
 from math import ceil
 from typing import List
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attributes import Skills, Stats
 from ...damage import AttackType, conditions
 from ...die import DieFormula

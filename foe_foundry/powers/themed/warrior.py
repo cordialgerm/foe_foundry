@@ -1,14 +1,7 @@
 from datetime import datetime
-from typing import Dict, List, Tuple
-
-import numpy as np
-from numpy.random import Generator
-
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
+from typing import List
 
 from ...attack_template import natural, weapon
-from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, Dazed
 from ...die import Die
@@ -16,9 +9,8 @@ from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
-from ..scoring import AttackNames, score
 from .organized import score_could_be_organized
 
 

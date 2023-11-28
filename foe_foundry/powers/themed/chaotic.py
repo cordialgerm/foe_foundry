@@ -1,22 +1,15 @@
 from datetime import datetime
-from math import ceil, floor
-from typing import List, Tuple
+from typing import List
 
 import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
-from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, Bleeding, DamageType, Weakened
-from ...die import Die, DieFormula
+from ...damage import AttackType
+from ...die import DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
-from ...role_types import MonsterRole
-from ...size import Size
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five, summoning
 from ..power import (
     HIGH_POWER,
