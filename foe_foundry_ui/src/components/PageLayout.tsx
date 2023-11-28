@@ -3,6 +3,7 @@ import * as React from "react";
 import { FoeFoundryAppBar } from "./AppBar.tsx";
 import { FoeFoundryAppDrawer } from "./Drawer.tsx";
 import { MainContent } from "./Main.tsx";
+import { Box } from "@mui/material";
 
 export interface SidebarData {
   creatureType: string;
@@ -57,9 +58,11 @@ export function PageLayout(props: React.PropsWithChildren<PageProps>) {
         onGenerate={props.onGenerate}
         isMobile={props.isMobile}
       />
-      <MainContent drawerOpen={sidebar.drawerOpen}>
-        {props.children}
-      </MainContent>
+      <Box style={{ backgroundColor: "#f5f5f5" }}>
+        <MainContent drawerOpen={sidebar.drawerOpen}>
+          {props.children}
+        </MainContent>
+      </Box>
     </>
   );
 }

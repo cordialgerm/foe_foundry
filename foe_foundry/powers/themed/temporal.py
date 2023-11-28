@@ -54,7 +54,7 @@ class _CurseOfTheAges(TemporalPower):
     def __init__(self):
         super().__init__(
             name="Curse of the Ages",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_cr=7,
         )
@@ -79,7 +79,7 @@ class _CurseOfTheAges(TemporalPower):
 
 class _TemporalLoop(TemporalPower):
     def __init__(self):
-        super().__init__(name="Temporal Loop", source="FoeFoundryOriginal", require_cr=3)
+        super().__init__(name="Temporal Loop", source="Foe Foundry", require_cr=3)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30
@@ -107,7 +107,7 @@ class _TemporalMastery(TemporalPower):
     def __init__(self):
         super().__init__(
             name="Temporal Mastery",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_cr=7,
         )
@@ -128,7 +128,7 @@ class _Accelerate(TemporalPower):
     def __init__(self):
         super().__init__(
             name="Accelerate Time",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_cr=4,
         )

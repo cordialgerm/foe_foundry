@@ -21,7 +21,7 @@ class DiseasePower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             power_type=PowerType.Theme,
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 20),
             theme="disease",
             power_level=power_level,
@@ -55,7 +55,9 @@ class DiseasePower(PowerWithStandardScoring):
 def _RottenGrasp(disease: conditions.CustomCondition) -> Power:
     class _RottenGraspInner(DiseasePower):
         def __init__(self):
-            super().__init__(name="Rotten Grasp", power_level=HIGH_POWER)
+            super().__init__(
+                name=f"Rotten Grasp ({disease.name.title()})", power_level=HIGH_POWER
+            )
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class
@@ -80,7 +82,9 @@ def _RottenGrasp(disease: conditions.CustomCondition) -> Power:
 def _ToxicBreath(disease: conditions.CustomCondition) -> Power:
     class _ToxicBreathInner(DiseasePower):
         def __init__(self):
-            super().__init__(name="Toxic Breath", power_level=HIGH_POWER)
+            super().__init__(
+                name=f"Toxic Breath ({disease.name.title()})", power_level=HIGH_POWER
+            )
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class

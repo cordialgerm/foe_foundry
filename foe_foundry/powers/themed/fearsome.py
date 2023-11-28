@@ -69,7 +69,7 @@ class HorrifyingPower(PowerWithStandardScoring):
 
 class _FearsomeRoar(FearsomePower):
     def __init__(self):
-        super().__init__(name="Fearsome Roar", source="FoeFoundryOriginal")
+        super().__init__(name="Fearsome Roar", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -87,7 +87,7 @@ class _FearsomeRoar(FearsomePower):
 
 class _HorrifyingPresence(HorrifyingPower):
     def __init__(self):
-        super().__init__(name="Horrifying Presence", source="FoeFoundryOriginal")
+        super().__init__(name="Horrifying Presence", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -166,7 +166,7 @@ class _MindShatteringScream(HorrifyingPower):
 
 class _NightmarishVisions(HorrifyingPower):
     def __init__(self):
-        super().__init__(name="Nightmarish Visions", source="FoeFoundryOriginal")
+        super().__init__(name="Nightmarish Visions", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(max(5, 1.5 * stats.cr), force_die=Die.d6)

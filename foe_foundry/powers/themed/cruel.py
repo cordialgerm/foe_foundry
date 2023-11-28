@@ -44,7 +44,7 @@ class _BloodiedFrenzy(CruelPower):
     def __init__(self):
         super().__init__(
             name="Bloodied Frenzy",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_cr=3,
         )
 

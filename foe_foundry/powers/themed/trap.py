@@ -43,7 +43,7 @@ class Trap(PowerWithStandardScoring):
 
 class _Snare(Trap):
     def __init__(self):
-        super().__init__(name="Snare", source="FoeFoundryOriginal")
+        super().__init__(name="Snare", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -64,7 +64,7 @@ class _Snare(Trap):
 
 class _SpikePit(Trap):
     def __init__(self):
-        super().__init__(name="Spike Pit", source="FoeFoundryOriginal")
+        super().__init__(name="Spike Pit", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class

@@ -57,7 +57,7 @@ class _EndlessServitude(DeathlyPower):
     def __init__(self):
         super().__init__(
             name="Endless Servitude",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_cr=3,
             bonus_roles=MonsterRole.Leader,
@@ -76,7 +76,7 @@ class _WitheringBlow(DeathlyPower):
     def __init__(self):
         super().__init__(
             name="Withering Blow",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_attack_types=AttackType.AllMelee(),
         )
 
@@ -112,7 +112,7 @@ class _WitheringBlow(DeathlyPower):
 
 class _DrainingBlow(DeathlyPower):
     def __init__(self):
-        super().__init__(name="Draining Blow", source="FoeFoundryOriginal")
+        super().__init__(name="Draining Blow", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -138,9 +138,7 @@ class _ShadowWalk(DeathlyPower):
 
 class _FleshPuppets(DeathlyPower):
     def __init__(self):
-        super().__init__(
-            name="Flesh Puppets", source="FoeFoundryOriginal", power_level=HIGH_POWER
-        )
+        super().__init__(name="Flesh Puppets", source="Foe Foundry", power_level=HIGH_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         cr = int(ceil(stats.cr / 3))
@@ -159,9 +157,7 @@ class _FleshPuppets(DeathlyPower):
 
 class _DevourSoul(DeathlyPower):
     def __init__(self):
-        super().__init__(
-            name="Devour Soul", source="FoeFoundryOriginal", power_level=HIGH_POWER
-        )
+        super().__init__(name="Devour Soul", source="Foe Foundry", power_level=HIGH_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(1.5, force_die=Die.d6)

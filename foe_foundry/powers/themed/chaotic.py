@@ -61,7 +61,7 @@ class _ChaoticSpace(ChaoticPower):
     def __init__(self):
         super().__init__(
             name="Chaotic Space",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=LOW_POWER,
             require_cr=5,
         )
@@ -88,7 +88,7 @@ class _EldritchBeacon(ChaoticPower):
     def __init__(self):
         super().__init__(
             name="Eldritch Beacon",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_cr=5,
             require_callback=self.can_summon,

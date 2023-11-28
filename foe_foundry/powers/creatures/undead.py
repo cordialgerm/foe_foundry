@@ -72,7 +72,7 @@ class _StenchOfDeath(UndeadPower):
 class _StygianBurst(UndeadPower):
     def __init__(self):
         super().__init__(
-            name="Stygian Burst", source="FoeFoundryOriginal", bonus_damage=DamageType.Cold
+            name="Stygian Burst", source="Foe Foundry", bonus_damage=DamageType.Cold
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -94,9 +94,7 @@ class _StygianBurst(UndeadPower):
 
 class _Frostbite(UndeadPower):
     def __init__(self):
-        super().__init__(
-            name="Frostbite", source="FoeFoundryOriginal", bonus_damage=DamageType.Cold
-        )
+        super().__init__(name="Frostbite", source="Foe Foundry", bonus_damage=DamageType.Cold)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -115,7 +113,7 @@ class _Frostbite(UndeadPower):
 
 class _SoulChill(UndeadPower):
     def __init__(self):
-        super().__init__(name="Soul Chill", source="FoeFoundryOriginal")
+        super().__init__(name="Soul Chill", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         fatigue = Fatigue()
@@ -150,7 +148,7 @@ class _SoulTether(UndeadPower):
 
 class _AntithesisOfLife(UndeadPower):
     def __init__(self):
-        super().__init__(name="Antithesis of Life", source="FoeFoundryOriginal")
+        super().__init__(name="Antithesis of Life", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy

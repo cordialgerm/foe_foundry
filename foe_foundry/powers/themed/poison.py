@@ -81,7 +81,7 @@ class _ToxicPoison(PoisonPower):
     def __init__(self):
         super().__init__(
             name="Toxic Poison",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 24),
         )

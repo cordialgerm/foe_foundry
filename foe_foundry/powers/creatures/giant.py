@@ -80,7 +80,7 @@ class _Boulder(GiantPower):
 
 class _CloudRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Cloud Rune", source="FoeFoundryOriginal")
+        super().__init__(name="Cloud Rune", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -111,7 +111,7 @@ class _FireRune(GiantPower):
     def __init__(self):
         super().__init__(
             name="Fire Rune",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=LOW_POWER,
             bonus_damage=DamageType.Fire,
         )
@@ -144,7 +144,7 @@ class _FrostRune(GiantPower):
     def __init__(self):
         super().__init__(
             name="Frost Rune",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=LOW_POWER,
             bonus_damage=DamageType.Cold,
         )
@@ -174,7 +174,7 @@ class _FrostRune(GiantPower):
 
 class _StoneRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Stone Rune", source="FoeFoundryOriginal", power_level=LOW_POWER)
+        super().__init__(name="Stone Rune", source="Foe Foundry", power_level=LOW_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -191,7 +191,7 @@ class _StoneRune(GiantPower):
 
 class _HillRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Hill Rune", source="FoeFoundryOriginal")
+        super().__init__(name="Hill Rune", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -211,7 +211,7 @@ class _HillRune(GiantPower):
 
 class _StormRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Storm Rune", source="FoeFoundryOriginal", power_level=LOW_POWER)
+        super().__init__(name="Storm Rune", source="Foe Foundry", power_level=LOW_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -232,9 +232,7 @@ class _StormRune(GiantPower):
 
 class _Earthshaker(GiantPower):
     def __init__(self):
-        super().__init__(
-            name="Earthshaker", source="FoeFoundryOriginal", attack_names=natural.Slam
-        )
+        super().__init__(name="Earthshaker", source="Foe Foundry", attack_names=natural.Slam)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy

@@ -81,7 +81,7 @@ class _SmokeBomb(GadgetPower):
     def __init__(self):
         super().__init__(
             name="Smoke Bomb",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=LOW_POWER,
             require_attack_types=AttackType.All() - AttackType.AllSpell(),
         )
@@ -139,7 +139,7 @@ def _NetPowers() -> List[Power]:
 
             super().__init__(
                 name=name,
-                source="FoeFoundryOriginal",
+                source="Foe Foundry",
                 power_level=LOW_POWER,
                 require_attack_types=AttackType.All() - AttackType.AllSpell(),
                 require_cr=min_cr,
@@ -175,7 +175,7 @@ def _GrenadePowers() -> List[Power]:
             self.dmg_type = dmg_type
             super().__init__(
                 name=f"{self.dmg_type.adj.capitalize()} Grenade",
-                source="FoeFoundryOriginal",
+                source="Foe Foundry",
                 require_attack_types=AttackType.All() - AttackType.AllSpell(),
                 require_damage=dmg_type,
             )

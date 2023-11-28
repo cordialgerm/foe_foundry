@@ -40,7 +40,7 @@ class _TentacleGrapple(AberrationPower):
     def __init__(self):
         super().__init__(
             name="Tentacle Grapple",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             attack_names={"-", natural.Tentacle},
         )
 
@@ -60,7 +60,7 @@ class _GazeOfTheFarRealm(AberrationPower):
     def __init__(self):
         super().__init__(
             name="Gaze of the Far Realm",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 21),
             attack_names=spell.Gaze,
             bonus_damage=DamageType.Psychic,
@@ -107,7 +107,7 @@ class _TentacleSlam(AberrationPower):
     def __init__(self):
         super().__init__(
             name="Tentacle Slam",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             attack_names={"-", natural.Tentacle},
         )
 
@@ -130,7 +130,7 @@ class _NullificationMaw(AberrationPower):
     def __init__(self):
         super().__init__(
             name="Nullification Maw",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_size=Size.Large,
             attack_names={"-", natural.Bite},
