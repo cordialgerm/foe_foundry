@@ -71,8 +71,9 @@ def setup_website():
 
     command = (
         f"/home/{username}/.virtualenvs/foe_foundry/bin/uvicorn "
+        f"--app-dir /home/{username}/foe_foundry "
         "--uds $DOMAIN_SOCKET "
-        "foe_foundry.foe_foundry.app:app"
+        "foe_foundry_site:app"
     )
 
     response = requests.post(
