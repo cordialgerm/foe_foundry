@@ -161,7 +161,7 @@ function CreatureTypeImage(image: CreatureTypeProps) {
       });
     }
 
-    navigate(`/statblocks/${image.link}`);
+    navigate(`/statblocks`);
   };
 
   return (

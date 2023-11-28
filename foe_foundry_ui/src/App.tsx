@@ -32,16 +32,7 @@ function App({ baseUrl, children }: React.PropsWithChildren<AppProps>) {
       if (isMobile) {
         setSidebar({ ...sidebar, drawerOpen: false });
       }
-
-      const newUrl =
-        "/statblocks/" +
-        sidebar.creatureType +
-        "/" +
-        sidebar.role +
-        "/" +
-        sidebar.cr;
-
-      navigate(newUrl);
+      navigate("/statblocks");
     },
   };
 

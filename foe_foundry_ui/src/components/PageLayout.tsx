@@ -15,7 +15,7 @@ export interface PageProps {
   baseUrl: string;
   sidebar: SidebarData;
   isMobile: boolean;
-  setSidebar: (sidebar: SidebarData) => void;
+  setSidebar: (sidebar: SidebarData) => SidebarData;
   onGenerate: () => void;
 }
 
