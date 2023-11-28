@@ -6,7 +6,7 @@ from typing import List
 import numpy as np
 from pydantic.dataclasses import dataclass
 
-from foe_foundry import CreatureType, DamageType, MonsterRole
+from foe_foundry import CreatureType, MonsterRole
 from foe_foundry.creature_templates import get_creature_template
 from foe_foundry.powers import Power
 from foe_foundry.statblocks.common import get_common_stats

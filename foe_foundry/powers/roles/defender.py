@@ -1,9 +1,6 @@
 from datetime import datetime
 from typing import List
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...features import ActionType, Feature

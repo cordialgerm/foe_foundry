@@ -4,8 +4,6 @@ from typing import Tuple
 import numpy as np
 from numpy.random import Generator
 
-from foe_foundry.statblocks import BaseStatblock
-
 from ..ac_templates import HeavyArmor, MediumArmor, Unarmored, UnholyArmor
 from ..attack_template import AttackTemplate, natural, spell, weapon
 from ..attributes import Skills, Stats

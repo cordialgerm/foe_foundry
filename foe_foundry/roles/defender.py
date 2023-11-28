@@ -1,5 +1,3 @@
-from foe_foundry.statblocks import BaseStatblock
-
 from ..ac_templates import HeavyArmor, MediumArmor, NaturalArmor
 from ..role_types import MonsterRole
 from ..skills import Stats

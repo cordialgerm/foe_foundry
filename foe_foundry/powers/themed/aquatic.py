@@ -1,15 +1,10 @@
 from typing import List
 
-from foe_foundry.features import Feature
-from foe_foundry.powers.power_type import PowerType
-from foe_foundry.statblocks import BaseStatblock
-
 from ...creature_types import CreatureType
 from ...damage import DamageType
-from ...die import DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
 
 
 class _Aquatic(PowerWithStandardScoring):

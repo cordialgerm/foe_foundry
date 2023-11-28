@@ -1,9 +1,6 @@
 from datetime import datetime
 from typing import List
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attack_template import natural as natural_attacks
 from ...attack_template import weapon
 from ...attributes import Skills, Stats
