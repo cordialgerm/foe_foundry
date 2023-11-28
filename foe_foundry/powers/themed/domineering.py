@@ -69,7 +69,7 @@ class DomineeringPower(PowerWithStandardScoring):
 class _CommandingPresence(DomineeringPower):
     def __init__(self):
         super().__init__(
-            name="Commanding Presence", source="FoeFoundryOriginal", power_level=HIGH_POWER
+            name="Commanding Presence", source="Foe Foundry", power_level=HIGH_POWER
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -89,7 +89,7 @@ class _CommandingPresence(DomineeringPower):
 class _Dominate(DomineeringPower):
     def __init__(self):
         super().__init__(
-            name="Charm", source="FoeFoundryOriginal", power_level=HIGH_POWER, require_cr=7
+            name="Charm", source="Foe Foundry", power_level=HIGH_POWER, require_cr=7
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

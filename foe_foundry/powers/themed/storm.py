@@ -49,7 +49,7 @@ class _TempestSurge(StormPower):
     def __init__(self):
         super().__init__(
             name="Tempest Surge",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_cr=3,
         )

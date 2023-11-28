@@ -37,7 +37,7 @@ class PlantPower(PowerWithStandardScoring):
 
 class _VineWhip(PlantPower):
     def __init__(self):
-        super().__init__(name="Vine Whip", source="FoeFoundryOriginal")
+        super().__init__(name="Vine Whip", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
@@ -106,7 +106,7 @@ class _ChokingVine(PlantPower):
     def __init__(self):
         super().__init__(
             name="Choking Vine",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_attack_types=AttackType.AllMelee(),
         )
 

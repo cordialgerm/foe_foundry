@@ -9,7 +9,7 @@ function BackgroundImage({ img, children }) {
         position: "relative",
         display: "flex",
         justifyContent: "center",
-        height: "calc(100vh - 100px)",
+        height: "calc(100vh - 64px)",
       }}
     >
       <div

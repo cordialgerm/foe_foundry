@@ -54,7 +54,7 @@ class _SneakyStrike(SneakyPower):
     def __init__(self):
         super().__init__(
             name="Sneaky Strike",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_attack_types=AttackType.AllWeapon(),
         )
@@ -75,7 +75,7 @@ class _FalseAppearance(SneakyPower):
     def __init__(self):
         super().__init__(
             name="False Appearance",
-            source="SRD1.2 Animated Armor",
+            source="SRD5.1 Animated Armor",
             power_level=RIBBON_POWER,
             require_types=[
                 CreatureType.Plant,
@@ -115,7 +115,7 @@ class _CheapShot(SneakyPower):
     def __init__(self):
         super().__init__(
             name="Cheap Shot",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_attack_types=AttackType.AllMelee(),
             power_level=LOW_POWER,
         )

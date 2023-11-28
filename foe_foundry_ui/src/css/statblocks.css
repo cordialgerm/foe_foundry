@@ -1,0 +1,64 @@
+.statblock .content-wrap {
+    font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial,
+      sans-serif;
+    font-size: 13.5px;
+    background: #FDF1DC;
+    padding: 0.6em;
+    padding-bottom: 0.5em;
+    border: 1px #DDD solid;
+    box-shadow: 0 0 0.5em #867453;
+
+    /* We don't want the box-shadow in front of the bar divs. */
+    position: relative;
+    z-index: 0;
+
+    /* Leaving room for the two bars to protrude outwards */
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.statblock .property-line {
+  margin-top: 0.3em;
+  margin-bottom: 0.9em;
+  line-height: 1.5;
+  display: block;
+}
+
+.statblock .property-line h4 {
+  margin: 0;
+  display: inline;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.statblock .property-line p:first-of-type {
+  display: inline;
+  text-indent: 0;
+}
+
+.statblock .property-line p {
+  text-indent: 1em;
+  margin: 0;
+}
+
+.statblock .bar {
+  height: 5px;
+  background: #E69A28;
+  border: 1px solid #000;
+  position: relative;
+  z-index: 1;
+}
+
+.statblock h3 {
+  border-bottom: 1px solid #7A200D;
+  color: #7A200D;
+  font-size: 21px;
+  font-variant: small-caps;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-bottom: 0.3em;
+
+  break-inside: avoid-column;
+  break-after: avoid-column;
+}

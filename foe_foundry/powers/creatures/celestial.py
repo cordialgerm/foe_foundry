@@ -44,7 +44,7 @@ class _AbsoluteConviction(CelestialPower):
     def __init__(self):
         super().__init__(
             name="Absolute Conviction",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
@@ -83,7 +83,7 @@ class _RighteousJudgement(CelestialPower):
     def __init__(self):
         super().__init__(
             name="Righteous Judgement",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             bonus_damage=DamageType.Radiant,
         )
 
@@ -107,7 +107,7 @@ class _RighteousJudgement(CelestialPower):
 class _DivineLaw(CelestialPower):
     def __init__(self):
         super().__init__(
-            name="Divine Law", source="FoeFoundryOriginal", power_level=HIGH_POWER, require_cr=7
+            name="Divine Law", source="Foe Foundry", power_level=HIGH_POWER, require_cr=7
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -141,7 +141,7 @@ class _DivineMercy(CelestialPower):
     def __init__(self):
         super().__init__(
             name="Divine Mercy",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
@@ -167,7 +167,7 @@ class _WordsOfRighteousness(CelestialPower):
     def __init__(self):
         super().__init__(
             name="Words of Righteousness",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             bonus_damage=DamageType.Radiant,
         )
 

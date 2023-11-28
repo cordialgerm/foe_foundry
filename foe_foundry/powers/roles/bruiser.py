@@ -71,7 +71,7 @@ class _CleavingBlows(BruiserPower):
     def __init__(self):
         super().__init__(
             name="Cleaving Blows",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             attack_names={weapon.Greataxe, natural_attacks.Claw},
         )
 
@@ -89,7 +89,7 @@ class _StunningBlow(BruiserPower):
     def __init__(self):
         super().__init__(
             name="Stunning Blow",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             attack_names={weapon.Maul, weapon.MaceAndShield, natural_attacks.Slam},
         )
@@ -111,7 +111,7 @@ class _Rend(BruiserPower):
     def __init__(self):
         super().__init__(
             name="Rend",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             attack_names={
                 natural_attacks.Bite,
                 natural_attacks.Horns,

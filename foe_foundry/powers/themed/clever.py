@@ -43,9 +43,7 @@ class CleverPower(PowerWithStandardScoring):
 
 class _IdentifyWeakness(CleverPower):
     def __init__(self):
-        super().__init__(
-            name="Identify Weakness", source="FoeFoundryOriginal", power_level=LOW_POWER
-        )
+        super().__init__(name="Identify Weakness", source="Foe Foundry", power_level=LOW_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -92,7 +90,7 @@ class _ArcaneMark(CleverPower):
 
 class _UnsettlingWords(CleverPower):
     def __init__(self):
-        super().__init__(name="Unsettling Words", source="FoeFoundryOriginal")
+        super().__init__(name="Unsettling Words", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         uses = ceil(stats.cr / 7)

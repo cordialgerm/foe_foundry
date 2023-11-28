@@ -49,7 +49,7 @@ class CursedPower(PowerWithStandardScoring):
 
 class _AuraOfDespair(CursedPower):
     def __init__(self):
-        super().__init__(name="Aura of Despair", source="FoeFoundryOriginal")
+        super().__init__(name="Aura of Despair", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         weight_of_sorrow = Feature(
@@ -76,7 +76,7 @@ class _AuraOfDespair(CursedPower):
 class _DisfiguringCurse(CursedPower):
     def __init__(self):
         return super().__init__(
-            name="Disfiguring Curse", source="FoeFoundryOriginal", power_level=HIGH_POWER
+            name="Disfiguring Curse", source="Foe Foundry", power_level=HIGH_POWER
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -116,9 +116,7 @@ class _CursedWound(CursedPower):
 
 class _RejectDivinity(CursedPower):
     def __init__(self):
-        super().__init__(
-            name="Reject Divinity", source="FoeFoundryOriginal", power_level=HIGH_POWER
-        )
+        super().__init__(name="Reject Divinity", source="Foe Foundry", power_level=HIGH_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(max(3, ceil(1.5 * stats.cr)), force_die=Die.d6)
@@ -175,7 +173,7 @@ class _RayOfEnfeeblement(CursedPower):
 
 class _VoidSiphon(CursedPower):
     def __init__(self):
-        super().__init__(name="Void Siphon", source="FoeFoundryOriginal")
+        super().__init__(name="Void Siphon", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         fatigue = conditions.Fatigue()

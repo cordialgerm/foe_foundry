@@ -18,7 +18,7 @@ class _Flyer(PowerWithStandardScoring):
 
         super().__init__(
             name="Flyer",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="flying",
             power_level=LOW_POWER,
             power_type=PowerType.Theme,

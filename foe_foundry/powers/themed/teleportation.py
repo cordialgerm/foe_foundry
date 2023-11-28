@@ -49,7 +49,7 @@ class TeleportationPower(PowerWithStandardScoring):
 
 class _BendSpace(TeleportationPower):
     def __init__(self):
-        super().__init__(name="Bend Space", source="FoeFoundryOriginal")
+        super().__init__(name="Bend Space", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -80,7 +80,7 @@ class _MistyStep(TeleportationPower):
 
 class _Scatter(TeleportationPower):
     def __init__(self):
-        super().__init__(name="Scatter", source="FoeFoundryOriginal")
+        super().__init__(name="Scatter", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = 20 if stats.cr <= 7 else 30

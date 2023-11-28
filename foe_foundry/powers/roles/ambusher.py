@@ -56,7 +56,7 @@ class _StealthySneak(AmbusherPower):
 
 class _DeadlyAmbusher(AmbusherPower):
     def __init__(self):
-        super().__init__(name="Deadly Ambusher", source="SRD1.2 Assasin")
+        super().__init__(name="Deadly Ambusher", source="SRD5.1 Assasin")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

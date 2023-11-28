@@ -98,7 +98,7 @@ class _TwinSpell(ArtilleryPower):
 
 class _QuickDraw(ArtilleryPower):
     def __init__(self):
-        super().__init__(name="Quick Draw", source="FoeFoundryOriginal", power_level=LOW_POWER)
+        super().__init__(name="Quick Draw", source="Foe Foundry", power_level=LOW_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         uses = ceil(stats.cr / 5)
@@ -113,7 +113,7 @@ class _QuickDraw(ArtilleryPower):
 
 class _SuppressingFire(ArtilleryPower):
     def __init__(self):
-        super().__init__(name="Suppressing Fire", source="FoeFoundryOriginal")
+        super().__init__(name="Suppressing Fire", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -128,9 +128,7 @@ class _SuppressingFire(ArtilleryPower):
 
 class _IndirectFire(ArtilleryPower):
     def __init__(self):
-        super().__init__(
-            name="Indirect Fire", source="FoeFoundryOriginal", power_level=LOW_POWER
-        )
+        super().__init__(name="Indirect Fire", source="Foe Foundry", power_level=LOW_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -145,7 +143,7 @@ class _IndirectFire(ArtilleryPower):
 
 class _Overwatch(ArtilleryPower):
     def __init__(self):
-        super().__init__(name="Overwatch", source="FoeFoundryOriginal", power_level=LOW_POWER)
+        super().__init__(name="Overwatch", source="Foe Foundry", power_level=LOW_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

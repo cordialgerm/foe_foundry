@@ -71,7 +71,7 @@ class _Telekinetic(PsychicPower):
 
 class _PsychicInfestation(PsychicPower):
     def __init__(self):
-        super().__init__(name="Psychic Infestation", source="FoeFoundryOriginal")
+        super().__init__(name="Psychic Infestation", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(30 + 5 * stats.cr, min_val=30, max_val=90)
@@ -117,9 +117,7 @@ class _DissonantWhispers(PsychicPower):
 
 class _PsionicBlast(PsychicPower):
     def __init__(self):
-        super().__init__(
-            name="Psionic Blast", source="FoeFoundryOriginal", power_level=HIGH_POWER
-        )
+        super().__init__(name="Psionic Blast", source="Foe Foundry", power_level=HIGH_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         multiplier = 2.5 if stats.multiattack >= 2 else 1.5
@@ -150,7 +148,7 @@ class _PsionicBlast(PsychicPower):
 
 class _MirroredPain(PsychicPower):
     def __init__(self):
-        super().__init__(name="Mirrored Pain", source="FoeFoundryOriginal")
+        super().__init__(name="Mirrored Pain", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -166,7 +164,7 @@ class _EatBrain(PsychicPower):
     def __init__(self):
         super().__init__(
             name="Eat Brain",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_types=CreatureType.Aberration,
             require_cr=7,

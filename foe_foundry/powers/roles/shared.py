@@ -12,7 +12,7 @@ def NimbleEscape(role: MonsterRole):
         def __init__(self):
             super().__init__(
                 name=f"Nimble Escape - {role.name}",
-                source="SRD1.2 Goblin",
+                source="SRD5.1 Goblin",
                 power_type=PowerType.Role,
                 score_args=dict(require_roles=role),
                 theme=role.name.capitalize(),
@@ -34,7 +34,7 @@ def CunningAction(role: MonsterRole):
         def __init__(self):
             super().__init__(
                 name=f"Cunning Action - {role.name}",
-                source="SRD1.2 Sply",
+                source="SRD5.1 Spy",
                 power_type=PowerType.Role,
                 theme=role.name.capitalize(),
                 score_args=dict(require_roles=role),

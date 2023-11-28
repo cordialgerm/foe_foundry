@@ -42,7 +42,7 @@ class _DivineSmite(HolyPower):
     def __init__(self):
         super().__init__(
             name="Divine Smite",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             attack_names=[weapon.MaceAndShield, weapon.Greatsword, weapon.SwordAndShield],
         )
 

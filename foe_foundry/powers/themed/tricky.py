@@ -76,7 +76,7 @@ class _Projection(Tricky):
 class _SpectralDuplicate(Tricky):
     def __init__(self):
         super().__init__(
-            name="Spectral Duplicate", source="FoeFoundryOriginal", power_level=HIGH_POWER
+            name="Spectral Duplicate", source="Foe Foundry", power_level=HIGH_POWER
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -127,7 +127,7 @@ class _HypnoticPattern(Tricky):
 
 class _ReverseFortune(Tricky):
     def __init__(self):
-        super().__init__(name="Reverse Fortune", source="FoeFoundryOriginal")
+        super().__init__(name="Reverse Fortune", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

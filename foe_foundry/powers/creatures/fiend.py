@@ -45,7 +45,7 @@ class _CallOfTheStyx(FiendishPower):
     def __init__(self):
         super().__init__(
             name="Call of the Styx",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 21),
             power_level=HIGH_POWER,
             bonus_damage=DamageType.Cold,
@@ -73,7 +73,7 @@ class _FeastOfSouls(FiendishPower):
     def __init__(self):
         super().__init__(
             name="Feast of Souls",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
@@ -91,7 +91,7 @@ class _FeastOfSouls(FiendishPower):
 class _FiendishCurse(FiendishPower):
     def __init__(self):
         super().__init__(
-            name="Fiendish Curse", source="FoeFoundryOriginal", bonus_damage=DamageType.Fire
+            name="Fiendish Curse", source="Foe Foundry", bonus_damage=DamageType.Fire
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -121,7 +121,7 @@ class _FiendishTeleporation(FiendishPower):
     def __init__(self):
         super().__init__(
             name="Fiendish Teleportation",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             bonus_damage=DamageType.Fire,
         )
 
@@ -178,7 +178,7 @@ class _FiendishBite(FiendishPower):
     def __init__(self):
         super().__init__(
             name="Fiendish Bite",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             attack_names=natural_attacks.Bite,
             bonus_damage=DamageType.Poison,
         )
@@ -209,7 +209,7 @@ class _FiendishSummons(FiendishPower):
     def __init__(self):
         super().__init__(
             name="Fiendish Summons",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_cr=3,
         )
@@ -234,7 +234,7 @@ class _FiendishSummons(FiendishPower):
 
 class _TemptingOffer(FiendishPower):
     def __init__(self):
-        super().__init__(name="Tempting Offer", source="FoeFoundryOriginal", require_cr=3)
+        super().__init__(name="Tempting Offer", source="Foe Foundry", require_cr=3)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -253,7 +253,7 @@ class _TemptingOffer(FiendishPower):
 class _DevilsSight(FiendishPower):
     def __init__(self):
         super().__init__(
-            name="Devil's Sight", source="FoeFoundryOriginal", bonus_damage=DamageType.Fire
+            name="Devil's Sight", source="Foe Foundry", bonus_damage=DamageType.Fire
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
