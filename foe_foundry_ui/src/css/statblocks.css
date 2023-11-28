@@ -6,7 +6,7 @@
     padding: 0.6em;
     padding-bottom: 0.5em;
     border: 1px #DDD solid;
-    box-shadow: 0 0 1.5em #867453;
+    box-shadow: 0 0 0.5em #867453;
 
     /* We don't want the box-shadow in front of the bar divs. */
     position: relative;

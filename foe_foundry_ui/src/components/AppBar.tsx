@@ -117,6 +117,7 @@ export function FoeFoundryAppBar({
 
   const menus = [
     { display: "Statblocks", url: "/statblocks" },
+    { display: "Powers", url: "/powers" },
     { display: "Conditions", url: "/conditions" },
     { display: "Credits", url: "/credits" },
   ];

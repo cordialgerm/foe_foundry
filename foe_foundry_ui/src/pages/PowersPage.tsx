@@ -2,10 +2,19 @@ import React from "react";
 import { PageLayout, PageProps } from "../components/PageLayout.tsx";
 import "../css/statblocks.css";
 import Markdown from "react-markdown";
-import { Grid, Card, CardContent, Typography, Box } from "@mui/material";
+import {
+  Grid,
+  Card,
+  CardContent,
+  Typography,
+  Box,
+  TextField,
+  IconButton,
+  Stack,
+  Chip,
+} from "@mui/material";
 import rehypeRaw from "rehype-raw";
-import Chip from "@mui/material/Chip";
-import Stack from "@mui/material/Stack";
+import SearchIcon from "@mui/icons-material/Search";
 
 interface Power {
   key: string;
@@ -30,190 +39,6 @@ interface Feature {
   description_md: string;
 }
 
-const data: Power[] = [
-  {
-    key: "divine-smite",
-    name: "Divine Smite",
-    power_type: "Theme",
-    source: "FoeFoundryOriginal",
-    theme: "holy",
-    power_level: "Medium Power",
-    features: [
-      {
-        name: "Divine Smite",
-        action: "BonusAction",
-        recharge: 5,
-        uses: null,
-        replaces_multiattack: 0,
-        modifies_attack: false,
-        description_md:
-          "Immediately after hitting a target, the leader forces the target to make a DC 14 Constitution saving throw. On a failure, the target is **Burning** [11 (2d10) radiant]. A burning creature suffers 11 (2d10) ongoing radiant damage at the start of each of its turns. A creature may use an action to end the condition.",
-      },
-    ],
-    creature_types: ["humanoid"],
-    roles: ["leader"],
-    damage_types: ["radiant"],
-  },
-  {
-    key: "divine-mercy",
-    name: "Divine Mercy",
-    power_type: "Creature",
-    source: "FoeFoundryOriginal",
-    theme: "Celestial",
-    power_level: "Low Power",
-    features: [
-      {
-        name: "Divine Mercy",
-        action: "Reaction",
-        recharge: null,
-        uses: null,
-        replaces_multiattack: 0,
-        modifies_attack: false,
-        description_md:
-          "Whenever a creature that is within 60 feet of the celestial that can see or hear it is hit by an attack, fails a saving throw, or is reduced to 0 hitpoints,                 the celestial may offer divine mercy to that creature. If the creature accepts, it heals 15 hitpoints and the celestial may choose to end any negative conditions affecting that creature.                 The creature becomes **Charmed** by the celestial and follows its instructions to the best of its ability.                 Whenever the creature completes a long rest, it may make a DC 14 Charisma saving throw. On a success, the creature is no longer charmed.                 After three failures, the creature is permanently charmed and its alignment changes to match the celestial",
-      },
-    ],
-    creature_types: ["celestial"],
-    roles: [],
-    damage_types: [],
-  },
-  {
-    key: "divine-law",
-    name: "Divine Law",
-    power_type: "Creature",
-    source: "FoeFoundryOriginal",
-    theme: "Celestial",
-    power_level: "High Power",
-    features: [
-      {
-        name: "Divine Law",
-        action: "Action",
-        recharge: null,
-        uses: 1,
-        replaces_multiattack: 1,
-        modifies_attack: false,
-        description_md:
-          "The celestial pronounces a divine law.                 Each humanoid creature within 60 feet that can hear the celestial must make DC 15 Charisma saving throw.                 A creature that worships the same deity or follows the same precepts as the celestial automatically fails this save.                 On a failure, the creature is bound by the divine law for 24 hours. On a success, the creature is immune to this effect for 24 hours.                 At the start of each of its turns, the affected creature may choose to break the divine law. If it does so, it suffers 24 (7d6) radiant damage and may repeat the save to end the effect.                  The game master may choose an appropriate divine law, or roll a d6 and select one of the following:                   <ol>                 <li>**Tranquility**: Affected creatures immediately end concentrating on any spells or abilities and may not cast a new spell that requires concentration.</li>                <li>**Peace**: Affected creatures may not wield weapons of a specified type. </li>                <li>**Forbiddance**: Affected creatures may not cast spells from a specified school of magic. </li>                <li>**Awe**: Affected creatures may not look upon any Celestial beings and are **Blinded** while within 60 feet of a Celestial. </li>                <li>**Adherance**: Affected creatures cannot take hostile actions towards creatures of a specified alignment</li>                <li>**Repentance**: Affected creatures must confess their darkest or most shameful transgressions or become **Stunned** for 1 minute. </li>                </ol>",
-      },
-    ],
-    creature_types: ["celestial"],
-    roles: [],
-    damage_types: [],
-  },
-  {
-    key: "word-of-radiance",
-    name: "Word of Radiance",
-    power_type: "Theme",
-    source: "SRD 5.1 Word of Radiance",
-    theme: "holy",
-    power_level: "Medium Power",
-    features: [
-      {
-        name: "Word of Radiance",
-        action: "Action",
-        recharge: null,
-        uses: null,
-        replaces_multiattack: 1,
-        modifies_attack: false,
-        description_md:
-          "The leader utters a divine word and it shines with burning radiance.                 Each hostile creature within 10 feet must make a DC 14 Constitution saving throw or take 7 (2d6) radiant damage.",
-      },
-    ],
-    creature_types: ["humanoid"],
-    roles: ["leader"],
-    damage_types: ["radiant"],
-  },
-  {
-    key: "reject-divinity",
-    name: "Reject Divinity",
-    power_type: "Theme",
-    source: "FoeFoundryOriginal",
-    theme: "cursed",
-    power_level: "High Power",
-    features: [
-      {
-        name: "Reject Divinity",
-        action: "Reaction",
-        recharge: null,
-        uses: null,
-        replaces_multiattack: 0,
-        modifies_attack: false,
-        description_md:
-          "When a creature the fey can see within 30 feet regains hit points from a Divine source,                 the fey reduces the number of hit points gained to 0                 and the fey instead deals 7 (2d6) necrotic damage to that creature.",
-      },
-    ],
-    creature_types: ["fey", "fiend", "undead"],
-    roles: ["leader", "controller"],
-    damage_types: ["necrotic"],
-  },
-  {
-    key: "cleric",
-    name: "Cleric",
-    power_type: "Theme",
-    source: "FoeFoundryOriginal",
-    theme: "class",
-    power_level: "High Power",
-    features: [
-      {
-        name: "Favored by the Gods",
-        action: "Reaction",
-        recharge: null,
-        uses: 1,
-        replaces_multiattack: 0,
-        modifies_attack: false,
-        description_md:
-          "When the Cleric fails a saving throw or misses an attack it may add 2d4 to that result",
-      },
-      {
-        name: "Word of Radiance",
-        action: "Action",
-        recharge: null,
-        uses: null,
-        replaces_multiattack: 1,
-        modifies_attack: false,
-        description_md:
-          "The cleric utters a divine word and it shines with burning radiance.                 Each hostile creature within 10 feet must make a DC 14 Constitution saving throw or take 7 (2d6) radiant damage.",
-      },
-    ],
-    creature_types: ["humanoid"],
-    roles: [],
-    damage_types: ["radiant"],
-  },
-  {
-    key: "paladin",
-    name: "Paladin",
-    power_type: "Theme",
-    source: "FoeFoundryOriginal",
-    theme: "class",
-    power_level: "High Power",
-    features: [
-      {
-        name: "Inspiring Commander",
-        action: "Action",
-        recharge: null,
-        uses: null,
-        replaces_multiattack: 2,
-        modifies_attack: false,
-        description_md:
-          "The humanoid inspires other creatures of its choice within 30 feet that can hear and understand it.                 For the next minute, inspired creatures gain a +2 bonus to attack rolls and saving throws.",
-      },
-      {
-        name: "Divine Smite",
-        action: "BonusAction",
-        recharge: 5,
-        uses: null,
-        replaces_multiattack: 0,
-        modifies_attack: false,
-        description_md:
-          "Immediately after hitting a target, the Paladin forces the target to make a DC 14 Constitution saving throw. On a failure, the target is **Burning** [5 (1d10) radiant]. A burning creature suffers 5 (1d10) ongoing radiant damage at the start of each of its turns. A creature may use an action to end the condition.",
-      },
-    ],
-    creature_types: ["humanoid"],
-    roles: [],
-    damage_types: ["radiant"],
-  },
-];
-
 function capitalize(str: string) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
@@ -232,10 +57,16 @@ function PowersGrid({ powers }: { powers: Power[] }) {
 
 function PowerCard({ power }: { power: Power }) {
   const tags = [
-    ...power.creature_types,
-    ...power.roles,
-    ...power.damage_types,
-  ].map((tag) => capitalize(tag));
+    ...new Set(
+      [
+        ...[power.theme],
+        ...power.creature_types,
+        ...power.roles,
+        ...power.damage_types,
+      ].map((tag) => capitalize(tag))
+    ),
+  ];
+  tags.sort();
 
   return (
     <Card
@@ -303,9 +134,9 @@ function PowerProperty({ name, value }: { name: string; value: string }) {
 
 function PowerTags({ tags }: { tags: string[] }) {
   return (
-    <Stack direction="row" spacing={1}>
+    <Stack direction="row" flexWrap="wrap" spacing={1}>
       {tags.map((tag, index) => (
-        <Chip key={index} label={tag} variant="outlined" />
+        <Chip key={index} label={tag} variant="filled" />
       ))}
     </Stack>
   );
@@ -410,10 +241,90 @@ function ContentWrap({ children }: React.PropsWithChildren<{}>) {
   return <div className="content-wrap">{children}</div>;
 }
 
+function SearchBar({
+  setSearchQuery,
+}: {
+  setSearchQuery: (query: string) => void;
+}) {
+  const [searchText, setSearchText] = React.useState("");
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchText(event.target.value);
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setSearchQuery(searchText);
+  };
+
+  const handleClick = () => {
+    setSearchQuery(searchText);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <TextField
+        label="Search Powers"
+        placeholder="Search Powers..."
+        variant="outlined"
+        size="small"
+        value={searchText}
+        onChange={handleChange}
+      />
+      <IconButton type="submit" aria-label="search" onClick={handleClick}>
+        <SearchIcon />
+      </IconButton>
+    </form>
+  );
+}
+
+function NoContent({ searchQuery }: { searchQuery: string }) {
+  return (
+    <Box sx={{ display: "flex", flexDirection: "column", m: 1, p: 1 }}>
+      <Typography variant="h5" textAlign="center" sx={{ flexGrow: 1 }}>
+        No powers found matching '{searchQuery}'
+      </Typography>
+    </Box>
+  );
+}
+
 export default function PowersPage(props: PageProps) {
+  const [searchQuery, setSearchQuery] = React.useState("");
+  const [powers, setPowers] = React.useState<Power[]>([]);
+  const firstLoad = React.useRef(true);
+
+  const baseUrl = `${props.baseUrl}/api/v1/powers`;
+
+  const fetchData = React.useCallback(async () => {
+    const url = firstLoad.current
+      ? `${baseUrl}/random?` + new URLSearchParams({ limit: "4" })
+      : `${baseUrl}/search?` + new URLSearchParams({ keyword: searchQuery });
+    firstLoad.current = false;
+    const response = await fetch(url);
+    const powers = await response.json();
+    setPowers(powers);
+  }, [baseUrl, firstLoad, searchQuery]);
+
+  React.useEffect(() => {
+    fetchData().catch(console.error);
+  }, [fetchData]);
+
   return (
     <PageLayout {...props}>
-      <PowersGrid powers={data} />
+      <Box padding={1}>
+        <Stack direction="row">
+          <Typography
+            variant="h5"
+            component="h2"
+            style={{ margin: "5px", marginLeft: "10px" }}
+          >
+            Powers
+          </Typography>
+          <SearchBar setSearchQuery={setSearchQuery} />
+        </Stack>
+        {powers.length > 0 && <PowersGrid powers={powers} />}
+        {powers.length === 0 && <NoContent searchQuery={searchQuery} />}
+      </Box>
     </PageLayout>
   );
 }
