@@ -75,7 +75,7 @@ class _FalseAppearance(SneakyPower):
     def __init__(self):
         super().__init__(
             name="False Appearance",
-            source="SRD1.2 Animated Armor",
+            source="SRD5.1 Animated Armor",
             power_level=RIBBON_POWER,
             require_types=[
                 CreatureType.Plant,
