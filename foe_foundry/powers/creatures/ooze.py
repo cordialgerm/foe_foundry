@@ -44,7 +44,7 @@ class _EngulfInSlime(OozePower):
     def __init__(self):
         super().__init__(
             name="Engulf in Slime",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 23),
             require_size=Size.Large,
             bonus_damage=DamageType.Acid,
@@ -69,7 +69,7 @@ class _Quicksand(OozePower):
     def __init__(self):
         super().__init__(
             name="Quicksand",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 23),
             power_level=HIGH_POWER,
         )
@@ -130,7 +130,7 @@ class _LeechingGrasp(OozePower):
     def __init__(self):
         super().__init__(
             name="Leeching Grasp",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             create_date=datetime(2023, 11, 22),
             power_level=HIGH_POWER,
             bonus_damage=DamageType.Necrotic,
@@ -154,9 +154,7 @@ class _LeechingGrasp(OozePower):
 
 class _SlimeSpray(OozePower):
     def __init__(self):
-        super().__init__(
-            name="Slime Spray", source="FoeFoundryOriginal", bonus_damage=DamageType.Acid
-        )
+        super().__init__(name="Slime Spray", source="Foe Foundry", bonus_damage=DamageType.Acid)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(1.5, suggested_die=Die.d6)

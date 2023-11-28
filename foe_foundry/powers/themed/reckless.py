@@ -65,7 +65,7 @@ class _Charger(RecklessPower):
     def __init__(self):
         super().__init__(
             name="Charger",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=LOW_POWER,
             bonus_size=Size.Large,
         )
@@ -101,7 +101,7 @@ class _BloodiedRage(RecklessPower):
     def __init__(self):
         super().__init__(
             name="Bloodied Rage",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_cr=1,
         )
@@ -134,7 +134,7 @@ class _RelentlessEndurance(RecklessPower):
 class _WildCleave(RecklessPower):
     def __init__(self):
         super().__init__(
-            name="Wild Cleave", source="FoeFoundryOriginal", require_roles=MonsterRole.Bruiser
+            name="Wild Cleave", source="Foe Foundry", require_roles=MonsterRole.Bruiser
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -155,7 +155,7 @@ class _RecklessFlurry(RecklessPower):
     def __init__(self):
         super().__init__(
             name="Reckless Flurry",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_roles=MonsterRole.Bruiser,
         )
 
@@ -175,7 +175,7 @@ class _RecklessFlurry(RecklessPower):
 
 class _Toss(RecklessPower):
     def __init__(self):
-        super().__init__(name="Toss", source="FoeFoundryOriginal", bonus_size=Size.Large)
+        super().__init__(name="Toss", source="Foe Foundry", bonus_size=Size.Large)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         size = stats.size.decrement()

@@ -55,7 +55,7 @@ def damaging_aura_power(name: str, damage_type: DamageType) -> Power:
             super().__init__(
                 name=name,
                 power_level=HIGH_POWER,
-                source="FoeFoundryOriginal",
+                source="Foe Foundry",
                 require_damage=damage_type,
             )
 
@@ -82,7 +82,7 @@ def elemental_affinity_power(damage_type: DamageType) -> Power:
         def __init__(self):
             super().__init__(
                 name=name,
-                source="FoeFoundryOriginal",
+                source="Foe Foundry",
                 power_level=LOW_POWER,
                 require_damage=damage_type,
             )
@@ -123,7 +123,7 @@ def elemental_burst_power(damage_type: DamageType) -> Power:
         def __init__(self):
             super().__init__(
                 name=name,
-                source="FoeFoundryOriginal",
+                source="Foe Foundry",
                 require_damage=damage_type,
             )
 
@@ -150,7 +150,7 @@ class _ElementalFireball(ElementalPower):
     def __init__(self):
         super().__init__(
             name="Elemental Fireball",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_damage=DamageType.Fire,
             power_level=HIGH_POWER,
         )
@@ -177,7 +177,7 @@ class _AcidicBlast(ElementalPower):
     def __init__(self):
         super().__init__(
             name="Acidic Blast",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_damage=DamageType.Acid,
             power_level=HIGH_POWER,
         )
@@ -211,7 +211,7 @@ class _ConeOfCold(ElementalPower):
     def __init__(self):
         super().__init__(
             name="Cone of Cold",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_damage=DamageType.Cold,
             power_level=HIGH_POWER,
         )
@@ -238,7 +238,7 @@ class _LightningBolt(ElementalPower):
     def __init__(self):
         super().__init__(
             name="Lightning Bolt",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_damage=DamageType.Lightning,
             power_level=HIGH_POWER,
         )
@@ -265,7 +265,7 @@ class _PoisonCloud(ElementalPower):
     def __init__(self):
         super().__init__(
             name="Poison Cloud",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_damage=DamageType.Poison,
             power_level=HIGH_POWER,
         )
@@ -294,7 +294,7 @@ class _Thunderwave(ElementalPower):
     def __init__(self):
         super().__init__(
             name="Thunderwave",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             require_damage=DamageType.Thunder,
             power_level=HIGH_POWER,
         )
@@ -325,7 +325,7 @@ def elemental_smite_power(dmg_type: DamageType) -> Power:
         def __init__(self):
             super().__init__(
                 name=name,
-                source="FoeFoundryOriginal",
+                source="Foe Foundry",
                 require_damage=dmg_type,
                 require_attack_types=AttackType.AllMelee(),
             )
@@ -374,7 +374,7 @@ class _ElementalReplication(ElementalPower):
     def __init__(self):
         super().__init__(
             name="Elemental Replication",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             require_secondary_damage_type=True,
             require_cr=4.0,

@@ -15,7 +15,7 @@ class _Dueling(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Dueling",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="fighting_style",
             power_type=PowerType.Theme,
             score_args=dict(
@@ -44,7 +44,7 @@ class _ExpertBrawler(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Expert Brawler",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="fighting_style",
             power_type=PowerType.Theme,
             score_args=dict(
@@ -112,7 +112,7 @@ class _BaitAndSwitch(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Bait and Switch",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="fighting_style",
             power_level=LOW_POWER,
             power_type=PowerType.Theme,
@@ -143,7 +143,7 @@ class _QuickToss(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Quick Toss",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="fighting_style",
             power_type=PowerType.Theme,
             score_args=dict(
@@ -238,7 +238,7 @@ class _OverpoweringStrike(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Great Weapon Fighting",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="fighting_style",
             power_type=PowerType.Theme,
             power_level=HIGH_POWER,
@@ -272,7 +272,7 @@ class _WhirlwindOfSteel(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Whirlwind of Steel",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="fighting_style",
             power_type=PowerType.Theme,
             score_args=dict(
@@ -307,7 +307,7 @@ class _Sharpshooter(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Sharpshooter's Shot",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             theme="fighting_style",
             power_type=PowerType.Theme,
             power_level=HIGH_POWER,

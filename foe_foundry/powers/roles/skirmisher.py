@@ -56,7 +56,7 @@ class _Skirmish(SkirmisherPower):
     def __init__(self):
         super().__init__(
             name="Skirmish",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             requires_tactics=True,
             require_types=CreatureType.Humanoid,
         )
@@ -81,7 +81,7 @@ class _HarrassingRetreat(SkirmisherPower):
     def __init__(self):
         super().__init__(
             name="Harassing Retreat",
-            source="FoeFoundryOriginal",
+            source="Foe Foundry",
             requires_tactics=True,
             require_attack_types=AttackType.AllRanged(),
         )
@@ -99,7 +99,7 @@ class _HarrassingRetreat(SkirmisherPower):
 
 class _Speedy(SkirmisherPower):
     def __init__(self):
-        super().__init__(name="Speedy", source="FoeFoundryOriginal", power_level=LOW_POWER)
+        super().__init__(name="Speedy", source="Foe Foundry", power_level=LOW_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

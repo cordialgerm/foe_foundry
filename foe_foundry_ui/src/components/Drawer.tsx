@@ -99,6 +99,9 @@ export function FoeFoundryAppDrawer({ ...props }: DrawerProps) {
                 <Link to="/statblocks">Statblocks</Link>
               </ListItem>
               <ListItem>
+                <Link to="/powers">Powers</Link>
+              </ListItem>
+              <ListItem>
                 <Link to="/conditions">Conditions</Link>
               </ListItem>
               <ListItem>

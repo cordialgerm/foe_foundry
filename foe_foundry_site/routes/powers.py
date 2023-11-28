@@ -1,5 +1,6 @@
 from typing import Annotated
 
+import numpy as np
 from fastapi import APIRouter, HTTPException, Query
 
 from foe_foundry import CreatureType, MonsterRole
@@ -19,6 +20,18 @@ def get_power(*, power_name: str) -> PowerModel:
     if power is None:
         raise HTTPException(status_code=404, detail="Power not found")
     return power
+
+
+@router.get("/random")
+def random(
+    *, limit: Annotated[int | None, Query(title="maximum response size", ge=1, le=20)] = 10
+) -> list[PowerModel]:
+    limit = limit or 10
+    rng = np.random.default_rng()
+    keys = list(whoosh.PowerLookup.keys())
+    indexes = rng.choice(len(keys), size=limit, replace=False)
+    powers = [whoosh.PowerLookup[keys[i]] for i in indexes]
+    return powers
 
 
 @router.get("/search")

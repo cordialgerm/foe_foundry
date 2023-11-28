@@ -55,7 +55,7 @@ class _Evasion(FastPower):
 
 class _NimbleReaction(FastPower):
     def __init__(self):
-        super().__init__(name="Nimble Reaction", source="FoeFoundryOriginal")
+        super().__init__(name="Nimble Reaction", source="Foe Foundry")
 
     def score(self, candidate: BaseStatblock) -> float:
         return score(

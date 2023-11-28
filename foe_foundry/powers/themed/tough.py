@@ -100,9 +100,7 @@ class _JustAScratch(PhysicallyTough):
     They can then take their turn normally."""
 
     def __init__(self):
-        super().__init__(
-            name="Just A Scratch", source="FoeFoundryOriginal", power_level=HIGH_POWER
-        )
+        super().__init__(name="Just A Scratch", source="Foe Foundry", power_level=HIGH_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(0.5 * stats.hp.average)

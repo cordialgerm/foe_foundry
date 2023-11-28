@@ -56,7 +56,7 @@ class _CommandTheAttack(LeaderPower):
 
 class _Encouragement(LeaderPower):
     def __init__(self):
-        super().__init__(name="Encouragement", source="FoeFoundryOriginal")
+        super().__init__(name="Encouragement", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(
@@ -83,9 +83,7 @@ class _Encouragement(LeaderPower):
 
 class _Intimidate(LeaderPower):
     def __init__(self):
-        super().__init__(
-            name="Intimidate", source="FoeFoundryOriginal", require_stats=Stats.CHA
-        )
+        super().__init__(name="Intimidate", source="Foe Foundry", require_stats=Stats.CHA)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

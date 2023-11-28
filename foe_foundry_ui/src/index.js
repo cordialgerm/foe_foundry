@@ -7,6 +7,7 @@ import StatblockPage from "./pages/StatblockPage.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import CreditPage from "./pages/CreditPage.tsx";
 import ConditionPage from "./pages/ConditionsPage.tsx";
+import PowersPage from "./pages/PowersPage.tsx";
 import { OglPage } from "./pages/OglPage.tsx";
 
 function isLocalhost() {
@@ -59,26 +60,10 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/statblocks/:creatureType",
+    path: "/powers",
     element: (
       <App baseUrl={baseUrl}>
-        <StatblockPage />
-      </App>
-    ),
-  },
-  {
-    path: "/statblocks/:creatureType/:creatureRole",
-    element: (
-      <App baseUrl={baseUrl}>
-        <StatblockPage />
-      </App>
-    ),
-  },
-  {
-    path: "/statblocks/:creatureType/:creatureRole/:cr",
-    element: (
-      <App baseUrl={baseUrl}>
-        <StatblockPage />
+        <PowersPage />
       </App>
     ),
   },
