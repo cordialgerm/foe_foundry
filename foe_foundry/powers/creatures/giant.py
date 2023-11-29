@@ -75,12 +75,9 @@ class _Boulder(GiantPower):
         return [feature]
 
 
-# TODO A5E SRD - can these runes be linked to A5E SRD?
-
-
 class _CloudRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Cloud Rune", source="Foe Foundry")
+        super().__init__(name="Cloud Rune", source="Foe Foundry", bonus_skills=Skills.Deception)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -114,6 +111,7 @@ class _FireRune(GiantPower):
             source="Foe Foundry",
             power_level=LOW_POWER,
             bonus_damage=DamageType.Fire,
+            require_damage_exact_match=True,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -147,6 +145,7 @@ class _FrostRune(GiantPower):
             source="Foe Foundry",
             power_level=LOW_POWER,
             bonus_damage=DamageType.Cold,
+            require_damage_exact_match=True,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -211,7 +210,13 @@ class _HillRune(GiantPower):
 
 class _StormRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Storm Rune", source="Foe Foundry", power_level=LOW_POWER)
+        super().__init__(
+            name="Storm Rune",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
+            bonus_damage=DamageType.Lightning,
+            require_damage_exact_match=True,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

@@ -129,17 +129,16 @@ def elemental_burst_power(damage_type: DamageType) -> Power:
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             uses = int(ceil(stats.cr / 5))
-            dmg_type = stats.secondary_damage_type or DamageType.Fire
             dmg = stats.target_value(0.75)
             distance = 5 if stats.cr <= 7 else 10
             dc = stats.difficulty_class
             feature = Feature(
-                name="Elemental Burst",
+                name=name,
                 action=ActionType.Reaction,
                 uses=uses,
-                description=f"When {stats.selfref} is hit by a melee attack, their form explodes with {dmg_type} energy. \
+                description=f"When {stats.selfref} is hit by a melee attack, their form explodes with {damage_type.adj} energy. \
                     Each other creature within {distance} ft must make a DC {dc} Dexterity saving throw, \
-                    taking {dmg.description} {dmg_type} damage on a failure and half as much damage on a success.",
+                    taking {dmg.description} {damage_type} damage on a failure and half as much damage on a success.",
             )
             return [feature]
 

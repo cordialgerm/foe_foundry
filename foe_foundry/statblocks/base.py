@@ -122,7 +122,7 @@ class BaseStatblock:
             condition_immunities=deepcopy(self.condition_immunities),
             nonmagical_resistance=self.nonmagical_resistance,
             nonmagical_immunity=self.nonmagical_immunity,
-            additional_attacks=deepcopy(self.additional_attacks),
+            additional_attacks=[a.copy() for a in self.additional_attacks],
             creature_class=self.creature_class,
             creature_subtype=self.creature_subtype,
             damage_modifier=self.damage_modifier,
@@ -312,7 +312,7 @@ class BaseStatblock:
         if callback is not None:
             new_attack = callback(new_attack)
 
-        additional_attacks = self.additional_attacks.copy()
+        additional_attacks = [a for a in self.additional_attacks.copy()]
         additional_attacks.append(new_attack)
 
         return self.copy(additional_attacks=additional_attacks)

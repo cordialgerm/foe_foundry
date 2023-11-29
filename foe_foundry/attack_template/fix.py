@@ -69,13 +69,27 @@ def adjust_attack(
     else:
         repaired_formula = attack.damage.formula.copy()
 
-    # if this is a low-CR creature and our damage is still too big then we should reduce it
-    if adjust_average_damage and stats.cr <= 2 and repaired_formula.average >= 10:
-        repaired_formula = DieFormula.target_value(
-            target=0.8 * repaired_formula.average,
-            flat_mod=stats.attributes.primary_mod,
-            suggested_die=die,
-        )
+    if stats.cr <= 2:
+        low_cr_average_damage = {
+            1 / 8: 4.5,
+            1 / 4: 5.5,
+            1 / 2: 4.5 * 2,  # two multiattacks
+            1: 6.5 * 2,  # two multiattacks
+            2: 9 * 2,  # two multiattacks
+        }
+        average_damage_output = repaired_formula.average * stats.multiattack
+        target_damage_output = low_cr_average_damage[stats.cr]
+
+        # if this is a low-CR creature and our damage is still too big then we should reduce it
+        # this happens a lot with CR 1/2 or CR2 creatures that have big damage-die weapons
+        if average_damage_output >= 1.1 * target_damage_output:
+            new_target = target_damage_output / stats.multiattack
+            repaired_formula = DieFormula.target_value(
+                target=new_target,
+                flat_mod=stats.attributes.primary_mod,
+                suggested_die=die,
+                min_die_count=1,
+            )
 
     damage_type = (
         primary_damage_type if primary_damage_type is not None else attack.damage.damage_type

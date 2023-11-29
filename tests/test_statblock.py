@@ -23,7 +23,7 @@ from foe_foundry import (
     [pytest.param(c, id=c.key) for c in AllCreatureTemplates if c],
 )
 @pytest.mark.parametrize(
-    "base_stat", [pytest.param(s, id=s.key) for s in general_use_stats.All if s.cr >= 1]
+    "base_stat", [pytest.param(s, id=s.key) for s in general_use_stats.All]
 )
 def test_all_combinations(
     base_stat: BaseStatblock,

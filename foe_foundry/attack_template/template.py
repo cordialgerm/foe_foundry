@@ -14,7 +14,6 @@ class AttackTemplate:
         attack_name: str,
         die: Die,
         die_count: int | None = None,
-        low_cr_die_count: int | None = None,
         attack_type: AttackType | None = None,
         damage_type: DamageType | None = None,
         secondary_damage_type: DamageType | None = None,
@@ -32,7 +31,6 @@ class AttackTemplate:
         self.secondary_damage_type = secondary_damage_type
         self.die = die
         self.die_count = die_count
-        self.low_cr_die_count = low_cr_die_count
         self.allows_shield = allows_shield
         self.split_secondary_damage = split_secondary_damage
         self.reach = reach
@@ -52,7 +50,7 @@ class AttackTemplate:
             range_max=self.range_max,
             reach_bonus_for_huge=self.reach_bonus_for_huge,
             range_bonus_for_high_cr=self.range_bonus_for_high_cr,
-            min_die_count=(self.die_count if stats.cr >= 2 else self.low_cr_die_count) or 0,
+            min_die_count=self.die_count or 1,
         )
 
     def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:

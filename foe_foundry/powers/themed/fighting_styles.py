@@ -298,7 +298,7 @@ class _WhirlwindOfSteel(PowerWithStandardScoring):
             replaces_multiattack=2,
             recharge=5,
             description=f"{stats.selfref.capitalize()} makes a lightning-fast flurry of strikes at a creature within 5 feet. The target must make a DC {dc} Dexterity saving throw. \
-                On a failure, it takes {dmg.description} {dmg_type} damage and is {bleeding.description}. On a success, it instead takes half damage. {bleeding.description_3rd}",
+                On a failure, it takes {dmg.description} {dmg_type} damage and is {bleeding.caption}. On a success, it instead takes half damage. {bleeding.description_3rd}",
         )
         return [feature]
 

@@ -1,6 +1,9 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.features import Feature
+from foe_foundry.statblocks import BaseStatblock
+
 from ...attack_template import weapon
 from ...attributes import Stats
 from ...creature_types import CreatureType
@@ -297,9 +300,35 @@ class _SealOfSilence(PowerWithStandardScoring):
         return [feature]
 
 
+class _RuneDrinker(PowerWithStandardScoring):
+    def __init__(self):
+        super().__init__(
+            name="Rune Drinker",
+            source="A5E SRD Chuul",
+            theme="Anti-Magic",
+            create_date=datetime(2023, 11, 28),
+            power_type=PowerType.Theme,
+            score_args=dict(
+                require_types=[CreatureType.Monstrosity, CreatureType.Aberration],
+                bonus_roles=[MonsterRole.Defender],
+                require_cr=1,
+            ),
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Rune Drinker",
+            action=ActionType.Feature,
+            description=f"Whenever {stats.selfref} takes damage from a magic weapon, until the start of {stats.selfref}'s next turn, \
+                attacks made with that weapon have disadvantage, and {stats.selfref} gains a +4 bonus to its AC.",
+        )
+        return [feature]
+
+
 ArcaneHunt: Power = _ArcaneHunt()
 FractalForm: Power = _FractalForm()
 RedirectTeleport: Power = _RedirectTeleport()
+RuneDrinker: Power = _RuneDrinker()
 SealOfSilence: Power = _SealOfSilence()
 Spellbreaker: Power = _Spellbreaker()
 SpellEater: Power = _SpellEater()
@@ -310,6 +339,7 @@ AntiMagicPowers: List[Power] = [
     ArcaneHunt,
     FractalForm,
     RedirectTeleport,
+    RuneDrinker,
     SealOfSilence,
     Spellbreaker,
     SpellEater,
