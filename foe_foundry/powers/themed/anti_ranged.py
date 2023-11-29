@@ -131,7 +131,7 @@ def _EyeOfTheStormPowers() -> List[Power]:
         def __init__(self, name: str, damage_type: DamageType):
             self.damage_type = damage_type
             score_args = dict(
-                require_damage_types=damage_type,
+                require_damage=damage_type,
                 require_damage_exact_match=True,
                 require_attack_types=AttackType.AllMelee(),
             )
