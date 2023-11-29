@@ -16,7 +16,7 @@ PowerLookup = {power.key: PowerModel.from_power(power) for power in AllPowers}
 
 def index_powers():
     schema = Schema(
-        name=TEXT,
+        name=TEXT(sortable=True),
         key=ID(stored=True),
         creature_types=KEYWORD,
         roles=KEYWORD,
@@ -71,7 +71,7 @@ def search(search_term: str, limit: int) -> list[PowerModel]:
 
     with ix.searcher() as searcher:
         query = QueryParser("description", ix.schema).parse(search_term)
-        results = searcher.search(query, limit=limit)
+        results = searcher.search(query, limit=limit, sortedby="name")
         powers = []
         for result in results:
             key = result["key"]

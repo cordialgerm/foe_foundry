@@ -51,6 +51,7 @@ def _random_stats(
         base_stats=base_stats,
         role_template=role_template,
         rng_factory=rng_factory,
+        selection_retries=5,
     )
     return stats
 

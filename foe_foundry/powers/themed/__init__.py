@@ -6,7 +6,6 @@ from . import (
     anti_magic,
     anti_ranged,
     aquatic,
-    attack,
     bestial,
     chaotic,
     charm,
@@ -20,7 +19,6 @@ from . import (
     earthy,
     fast,
     fearsome,
-    fighting_styles,
     flying,
     gadget,
     holy,
@@ -31,6 +29,7 @@ from . import (
     reckless,
     sneaky,
     storm,
+    technique,
     teleportation,
     temporal,
     tough,
@@ -44,7 +43,6 @@ ThemedPowers: List[Power] = (
     + anti_magic.AntiMagicPowers
     + anti_ranged.AntiRangedPowers
     + aquatic.AquaticPowers
-    + attack.AttackPowers
     + bestial.BestialPowers
     + chaotic.ChaoticPowers
     + charm.CharmPowers
@@ -58,7 +56,6 @@ ThemedPowers: List[Power] = (
     + earthy.EarthyPowers
     + fast.FastPowers
     + fearsome.FearsomePowers
-    + fighting_styles.FightingStylePowers
     + flying.FlyingPowers
     + gadget.GadgetPowers
     + holy.HolyPowers
@@ -69,6 +66,7 @@ ThemedPowers: List[Power] = (
     + reckless.RecklessPowers
     + sneaky.SneakyPowers
     + storm.StormPowers
+    + technique.TechniquePowers
     + teleportation.TeleportationPowers
     + temporal.TemporalPowers
     + tough.ToughPowers
