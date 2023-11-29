@@ -4,6 +4,7 @@ from ..power import Power
 from . import (
     aberrant,
     anti_magic,
+    anti_ranged,
     aquatic,
     attack,
     bestial,
@@ -41,6 +42,7 @@ from . import (
 ThemedPowers: List[Power] = (
     aberrant.AberrantPowers
     + anti_magic.AntiMagicPowers
+    + anti_ranged.AntiRangedPowers
     + aquatic.AquaticPowers
     + attack.AttackPowers
     + bestial.BestialPowers

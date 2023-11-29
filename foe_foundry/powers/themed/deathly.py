@@ -118,7 +118,7 @@ class _DrainingBlow(DeathlyPower):
         feature = Feature(
             name="Draining Blow",
             action=ActionType.BonusAction,
-            description=f"Immediately after hitting with an attack, the {stats.selfref} converts all of that attack's damage to necrotic damage and {stats.selfref} regains hit points equal to the necrotic damage dealt.",
+            description=f"Immediately after hitting with an attack, {stats.selfref} converts all of that attack's damage to necrotic damage and {stats.selfref} regains hit points equal to the necrotic damage dealt.",
         )
         return [feature]
 

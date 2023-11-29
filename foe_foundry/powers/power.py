@@ -5,7 +5,7 @@ from typing import Any, Dict, List, Tuple
 import numpy as np
 
 from ..creature_types import CreatureType
-from ..damage import DamageType
+from ..damage import AttackType, DamageType
 from ..features import Feature
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
@@ -28,6 +28,7 @@ class Power(ABC):
         roles: List[MonsterRole] | None = None,
         creature_types: List[CreatureType] | None = None,
         damage_types: List[DamageType] | None = None,
+        attack_types: List[AttackType] | None = None,
         suggested_cr: float | None = None,
         create_date: datetime | None = None,
         theme: str | None = None,
@@ -39,6 +40,7 @@ class Power(ABC):
         self.roles = roles
         self.creature_types = creature_types
         self.damage_types = damage_types
+        self.attack_types = attack_types
         self.suggested_cr = suggested_cr
         self.create_date = create_date
         self.theme = theme
@@ -115,6 +117,7 @@ class PowerWithStandardScoring(Power):
         damage_types = resolve_arg_list("damage")
         roles = resolve_arg_list("roles")
         suggested_cr = resolve_arg("cr")
+        attack_types = resolve_arg_list("attack_types")
 
         super().__init__(
             name=name,
@@ -126,6 +129,7 @@ class PowerWithStandardScoring(Power):
             roles=roles,
             creature_types=creature_types,
             damage_types=damage_types,
+            attack_types=attack_types,
             suggested_cr=suggested_cr,
         )
 

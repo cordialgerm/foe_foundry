@@ -1,3 +1,4 @@
+from datetime import datetime, timedelta, timezone
 from typing import Annotated
 
 import numpy as np
@@ -32,6 +33,22 @@ def random(
     indexes = rng.choice(len(keys), size=limit, replace=False)
     powers = [whoosh.PowerLookup[keys[i]] for i in indexes]
     return powers
+
+
+@router.get("/new")
+def new(
+    *, limit: Annotated[int | None, Query(title="maximum response size", ge=1, le=20)] = 10
+) -> list[PowerModel]:
+    limit = limit or 10
+    now = datetime.now()
+    new = now - timedelta(days=30)
+    new_powers = [
+        p
+        for p in whoosh.PowerLookup.values()
+        if (p.create_date is not None and p.create_date >= new)
+    ]
+    sorted_powers = sorted(new_powers, key=lambda x: x.create_date, reverse=True)
+    return sorted_powers[:limit]
 
 
 @router.get("/search")

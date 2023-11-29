@@ -72,6 +72,7 @@ class _InspiringCommander(OrganizedPower):
         feature = Feature(
             name="Inspiring Commander",
             action=ActionType.Action,
+            uses=1,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} inspires other creatures of its choice within 30 feet that can hear and understand it. \
                 For the next minute, inspired creatures gain a +{stats.attributes.proficiency} bonus to attack rolls and saving throws.",

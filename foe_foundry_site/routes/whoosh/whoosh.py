@@ -22,6 +22,7 @@ def index_powers():
         roles=KEYWORD,
         theme=KEYWORD,
         damage_types=KEYWORD,
+        tags=KEYWORD,
         description=TEXT,
     )
 
@@ -33,7 +34,10 @@ def index_powers():
         creature_types = " ".join(c for c in power.creature_types)
         roles = " ".join(r for r in power.roles)
         damage_types = " ".join(d for d in power.damage_types)
-        fulldescription = f"{power.name} \n {power.key} \n \n {power.theme} {creature_types} \n {roles} \n {damage_types} \n {power.feature_descriptions}"
+        tags = " ".join(t for t in power.tags)
+        fulldescription = (
+            f"{power.name} \n {tags} \n {power.key} \n\n {power.feature_descriptions}"
+        )
 
         writer.add_document(
             name=power.name,
@@ -42,6 +46,7 @@ def index_powers():
             roles=roles,
             theme=power.theme,
             damage_types=damage_types,
+            tags=tags,
             description=fulldescription,
         )
 
