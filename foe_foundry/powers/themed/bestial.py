@@ -116,9 +116,36 @@ class _BurrowingAmbush(BestialPower):
         return [feature]
 
 
+class _TurboTrot(BestialPower):
+    def __init__(self):
+        super().__init__(
+            name="Turbo Trot",
+            source="A5E SRD Centaur",
+            create_date=datetime(2023, 11, 28),
+            attack_names=["-", natural.Stomp],
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Turbo Trot",
+            action=ActionType.Feature,
+            modifies_attack=True,
+            hidden=True,
+            description=f"On a hit, {stats.selfref}'s movement doesn't provoke opportunity attacks from the target for the rest of the turn.",
+        )
+        return [feature]
+
+
 BurrowingAmbush: Power = _BurrowingAmbush()
 RetributiveStrike: Power = _RetributiveStrike()
 OpportuneBite: Power = _OpportuneBite()
 Trample: Power = _Trample()
+TurboTrot: Power = _TurboTrot()
 
-BestialPowers: List[Power] = [BurrowingAmbush, RetributiveStrike, OpportuneBite, Trample]
+BestialPowers: List[Power] = [
+    BurrowingAmbush,
+    RetributiveStrike,
+    OpportuneBite,
+    Trample,
+    TurboTrot,
+]

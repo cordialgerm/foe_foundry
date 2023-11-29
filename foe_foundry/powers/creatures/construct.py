@@ -131,7 +131,7 @@ class _ExplosiveCore(ConstructPower):
         feature = Feature(
             name="Explosive Core",
             action=ActionType.Reaction,
-            description=f"When {stats.selfref} is destroyed, it explodes with {dmg_type} energy. Each creature within 10 feet must make a DC {dc} Dexterity saving throw, \
+            description=f"When {stats.selfref} is destroyed, it explodes with {dmg_type.adj} energy. Each creature within 10 feet must make a DC {dc} Dexterity saving throw, \
                 taking {dmg.description} {dmg_type} damage on a failure or half on a success.",
         )
 

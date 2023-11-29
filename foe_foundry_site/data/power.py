@@ -1,12 +1,13 @@
 from __future__ import annotations
 
 from dataclasses import field
-from typing import List
+from datetime import datetime
+from typing import List, Set
 
 import numpy as np
 from pydantic.dataclasses import dataclass
 
-from foe_foundry import CreatureType, MonsterRole
+from foe_foundry import AttackType, CreatureType, MonsterRole
 from foe_foundry.creature_templates import get_creature_template
 from foe_foundry.powers import Power
 from foe_foundry.statblocks.common import get_common_stats
@@ -31,10 +32,13 @@ class PowerModel:
     source: str
     theme: str
     power_level: str
+    create_date: datetime | None
     features: List[FeatureModel]
     creature_types: List[str] = field(default_factory=list)
     roles: List[str] = field(default_factory=list)
     damage_types: List[str] = field(default_factory=list)
+    attack_types: List[str] = field(default_factory=list)
+    tags: List[str] = field(default_factory=list)
 
     @property
     def feature_descriptions(self) -> str:
@@ -77,7 +81,9 @@ class PowerModel:
         stats = power.modify_stats(stats)
 
         creature_template = get_creature_template(creature_type)
-        stats = creature_template.create(base_stats=stats, rng_factory=rng, role_template=role)
+        stats = creature_template.create(
+            base_stats=stats, rng_factory=rng, role_template=role, skip_power_selection=True
+        )
 
         features = power.generate_features(stats)
         feature_models = []
@@ -108,7 +114,33 @@ class PowerModel:
                     description_md=attack.description,
                 )
             )
-            attack.description
+
+        tags = set()
+        if power.creature_types and len(power.creature_types) <= 4:
+            tags.update([ct.lower() for ct in power.creature_types])
+        if power.damage_types and len(power.damage_types) <= 4:
+            tags.update([d.lower() for d in power.damage_types])
+        if power.theme:
+            tags.add(power.theme.lower())
+        if power.roles and len(power.roles) <= 4:
+            tags.update([r.lower() for r in power.roles])
+
+        # spell
+        # weapon
+        # natural
+        def check(options: Set[AttackType]) -> bool:
+            if power.attack_types is None or len(power.attack_types) == 0:
+                return False
+            return all([a in options for a in power.attack_types])
+
+        if check(AttackType.AllMelee()):
+            tags.add("melee")
+        if check(AttackType.AllRanged()):
+            tags.add("ranged")
+        if check(AttackType.AllSpell()):
+            tags.add("spell")
+        if check(AttackType.AllNatural()):
+            tags.add("natural")
 
         def to_str(enums):
             return [str(e) for e in enums] if enums is not None else []
@@ -116,6 +148,7 @@ class PowerModel:
         return PowerModel(
             key=power.key,
             name=power.name,
+            create_date=power.create_date,
             theme=power.theme or "UNKNOWN",
             power_type=power.power_type.name,
             source=power.source or "UNKNOWN",
@@ -124,4 +157,5 @@ class PowerModel:
             creature_types=to_str(power.creature_types),
             damage_types=to_str(power.damage_types),
             roles=to_str(power.roles),
+            tags=list(sorted(tags)),
         )

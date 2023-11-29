@@ -100,7 +100,7 @@ class _StunningBlow(BruiserPower):
         feature = Feature(
             name="Stunning Blow",
             action=ActionType.BonusAction,
-            description=f"Immediately after the {stats.roleref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution save or be **Stunned** until the end of the {stats.selfref}'s next turn.",
+            description=f"Immediately after {stats.roleref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution save or be **Stunned** until the end of the {stats.selfref}'s next turn.",
             recharge=6,
         )
 
