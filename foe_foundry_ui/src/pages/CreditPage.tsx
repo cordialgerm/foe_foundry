@@ -18,6 +18,7 @@ import {
 } from "../components/Condition.tsx";
 import { OglCopyrightNotice } from "./OglPage.tsx";
 import { Link } from "react-router-dom";
+import { IconCredits } from "../components/MonsterIcons.tsx";
 
 interface CreditProps {
   title: string;
@@ -132,6 +133,10 @@ const artCredits = [
         <a href="https://www.midjourney.com/">Midjourney</a>
       </span>
     ),
+  },
+  {
+    title: "Icons from Game-Icons.net",
+    description: <IconCredits />,
   },
   {
     title: "Watercolor Mask",
