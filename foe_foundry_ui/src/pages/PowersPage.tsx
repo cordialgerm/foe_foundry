@@ -162,11 +162,10 @@ function RandomPowers({ baseUrl }: { baseUrl: string }) {
 function SearchPowers({ baseUrl }: { baseUrl: string }) {
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const initialSearchQuery = searchParams.get("keyword") ?? "";
+  const searchQuery = searchParams.get("keyword") ?? "";
 
-  const [searchQuery, setSearchQuery] = React.useState(initialSearchQuery);
   const [powers, setPowers] = React.useState<Power[]>([]);
-  const [searchBarText, setSearchBarText] = React.useState(initialSearchQuery);
+  const [searchBarText, setSearchBarText] = React.useState(searchQuery);
 
   const handleSearchBarTextChange = (
     event: React.ChangeEvent<HTMLInputElement>
@@ -176,12 +175,10 @@ function SearchPowers({ baseUrl }: { baseUrl: string }) {
 
   const handleSearchBarSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setSearchQuery(searchBarText);
     setSearchParams({ keyword: searchBarText });
   };
 
   const handleSearchBarButtonClick = () => {
-    setSearchQuery(searchBarText);
     setSearchParams({ keyword: searchBarText });
   };
 
