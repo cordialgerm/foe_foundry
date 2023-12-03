@@ -14,7 +14,7 @@ import {
 import IconButton from "@mui/material/IconButton";
 import { styled, useTheme } from "@mui/material/styles";
 import * as React from "react";
-import { CrSelector, CreateTypeSelector, RoleSelector } from "./Selectors.js";
+import { CrSelector, CreateTypeSelector, RoleSelector } from "./Selectors.tsx";
 import { useNavigate } from "react-router-dom";
 
 export const drawerWidth = 240;
@@ -49,16 +49,16 @@ export function FoeFoundryAppDrawer({ ...props }: DrawerProps) {
     props.setOpen(false);
   };
 
-  const onCreatureTypeChanged = (event) => {
-    props.setCreatureType(event.target.value);
+  const onCreatureTypeChanged = (creatureType: string) => {
+    props.setCreatureType(creatureType);
   };
 
-  const onRoleChanged = (event) => {
-    props.setRole(event.target.value);
+  const onRoleChanged = (role: string) => {
+    props.setRole(role);
   };
 
-  const onCrChanged = (event) => {
-    props.setCr(event.target.value);
+  const onCrChanged = (cr: string) => {
+    props.setCr(cr);
   };
 
   const onGenerateClicked = (event) => {
@@ -115,14 +115,14 @@ export function FoeFoundryAppDrawer({ ...props }: DrawerProps) {
           <ListItem key="creatureType">
             <CreateTypeSelector
               value={props.creatureType}
-              onChange={onCreatureTypeChanged}
+              onCreatureTypeChanged={onCreatureTypeChanged}
             />
           </ListItem>
           <ListItem key="role">
-            <RoleSelector value={props.role} onChange={onRoleChanged} />
+            <RoleSelector value={props.role} onRoleChanged={onRoleChanged} />
           </ListItem>
           <ListItem key="cr">
-            <CrSelector value={props.cr} onChange={onCrChanged} />
+            <CrSelector value={props.cr} onCrChanged={onCrChanged} />
           </ListItem>
           <ListItem key="generate">
             <ListItemButton
