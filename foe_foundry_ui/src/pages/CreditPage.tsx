@@ -27,10 +27,12 @@ interface CreditProps {
   imageUrl?: string;
   actionText?: string;
   notice?: string;
+  fontSize?: string;
 }
 
 interface CreditGridProps {
   credits: CreditProps[];
+  fontSize?: string;
 }
 
 const inspirationCredits = [
@@ -126,28 +128,8 @@ const inspirationCredits = [
 
 const artCredits = [
   {
-    title: "Midjourney AI",
-    description: (
-      <span>
-        The background images used in this site were generated using{" "}
-        <a href="https://www.midjourney.com/">Midjourney</a>
-      </span>
-    ),
-  },
-  {
     title: "Icons from Game-Icons.net",
     description: <IconCredits />,
-  },
-  {
-    title: "Watercolor Mask",
-    description: (
-      <span>
-        <a href="https://www.freepik.com/free-vector/abstract-grunge-banners-with-your-test-vector-illustration_25979458.htm?query=watercolor mask border">
-          Image by Rochak Shukla
-        </a>{" "}
-        on Freepik
-      </span>
-    ),
   },
 ];
 
@@ -262,11 +244,19 @@ function Credit(credit: React.PropsWithChildren<CreditProps>) {
         <Typography variant="h6" component="div">
           {credit.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          fontSize={credit.fontSize}
+        >
           {credit.description}
         </Typography>
         {credit.notice && (
-          <Typography variant="subtitle2" color="text.secondary">
+          <Typography
+            variant="subtitle2"
+            color="text.secondary"
+            fontSize={credit.fontSize}
+          >
             <p>
               <i>{credit.notice}</i>
             </p>
@@ -301,7 +291,7 @@ function CreditGrid(props: CreditGridProps) {
     <Grid container spacing={2}>
       {props.credits.map((credit, index) => (
         <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
-          <Credit {...credit} />
+          <Credit {...credit} fontSize={props.fontSize} />
         </Grid>
       ))}
     </Grid>
@@ -316,7 +306,7 @@ function CreditPage(props: React.PropsWithChildren<PageProps>) {
       <Header>Art Credits</Header>
       <CreditGrid credits={artCredits} />
       <Header>Legal Notices</Header>
-      <CreditGrid credits={legalNotices} />
+      <CreditGrid credits={legalNotices} fontSize="12px" />
     </PageLayout>
   );
 }
