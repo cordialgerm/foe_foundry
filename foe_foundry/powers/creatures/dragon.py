@@ -1,11 +1,11 @@
 from datetime import datetime
-from typing import List
+from typing import Callable, List
 
 import numpy as np
 
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
@@ -181,49 +181,140 @@ class _DraconicMinions(DraconicPower):
         return [feature]
 
 
-def _dragons_breath_power(damage_type: DamageType, save_type: str) -> Power:
-    name = f"{damage_type.adj.capitalize()} Breath"
+def _DragonsBreathPowers() -> List[Power]:
+    # helper method to generate a breath attack in a consistent way
+    def breath(
+        name: str,
+        damage_type: DamageType,
+        stats: BaseStatblock,
+        save: str,
+        on_failure: str | Callable[[BaseStatblock, DieFormula], str] | None = None,
+    ) -> Feature:
+        if stats.cr <= 3:
+            distance = 15
+        elif stats.cr <= 7:
+            distance = 30
+        elif stats.cr <= 11:
+            distance = 45
+        else:
+            distance = 60
+
+        template = f"{distance} ft cone"
+        dmg = stats.target_value(
+            0.75 * stats.multiattack,
+            suggested_die=Die.d8,
+        )
+
+        dc = stats.difficulty_class
+
+        if isinstance(on_failure, str):
+            additional_description = on_failure
+        elif callable(on_failure):
+            additional_description = on_failure(stats, dmg)
+        else:
+            additional_description = ""
+
+        feature = Feature(
+            name=name,
+            action=ActionType.Action,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} breathes {damage_type} in a {template}. \
+                Each creature in the area must make a DC {dc} {save} save. \
+                On a failure, the creature takes {dmg.description} {damage_type} damage or half as much on a success. \
+                {additional_description}",
+        )
+        return feature
 
     class _DragonsBreath(DraconicPower):
-        def __init__(self):
+        def __init__(
+            self,
+            name: str,
+            breath: DamageType,
+            save: str,
+            on_failure: str | Callable[[BaseStatblock, DieFormula], str] | None = None,
+        ):
             super().__init__(
                 name=name,
-                source="5.1 SRD Ancient Red Dragon",
+                source="Foe Foundry",
                 power_level=HIGH_POWER,
                 score_multiplier=3.0,
-                require_damage=damage_type,
+                require_damage=breath,
+                create_date=datetime(2023, 11, 28),
             )
+            self.breath = breath
+            self.save = save
+            self.on_failure = on_failure
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-            if stats.cr <= 3:
-                distance = 15
-            elif stats.cr <= 7:
-                distance = 30
-            elif stats.cr <= 11:
-                distance = 45
-            else:
-                distance = 60
-
-            template = f"{distance} ft cone"
-            dmg = stats.target_value(
-                0.75 * stats.multiattack,
-                suggested_die=Die.d8,
-            )
-
-            dc = stats.difficulty_class
-
-            feature = Feature(
-                name=name,
-                action=ActionType.Action,
-                recharge=5,
-                description=f"{stats.selfref.capitalize()} breathes {damage_type} in a {template}. \
-                    Each creature in the area must make a DC {dc} {save_type} save. \
-                    On a failure, the creature takes {dmg.description} {damage_type} damage or half as much on a success.",
-            )
-
+            feature = breath(self.name, self.breath, stats, self.save, self.on_failure)
             return [feature]
 
-    return _DragonsBreath()
+    breath_powers = []
+
+    susceptible_breaths = [
+        (DamageType.Fire, "Dexterity"),
+        (DamageType.Cold, "Constitution"),
+        (DamageType.Poison, "Constitution"),
+        (DamageType.Lightning, "Dexterity"),
+        (DamageType.Acid, "Dexterity"),
+    ]
+    for breath_type, save in susceptible_breaths:
+        susceptible = conditions.Susceptible(breath_type)
+        on_failure = f"<br/><br/>Additionally, creatures that fail the save by 5 or more are {susceptible.caption} \
+            for 1 minute (save ends at end of turn). {susceptible.description_3rd}"
+        breath_powers.append(
+            _DragonsBreath(
+                name=f"{breath_type.adj.capitalize()} Breath",
+                breath=breath_type,
+                save=save,
+                on_failure=on_failure,
+            )
+        )
+
+    def on_inferno_breath_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
+        burning_dmg = DieFormula.target_value(
+            breath_damage.average / 2, force_die=breath_damage.primary_die_type
+        )
+        burning = conditions.Burning(burning_dmg, DamageType.Fire)
+        return f"<br/><br/>Additionally, creatures that fail by 5 or more are {burning.caption}. {burning.description_3rd}"
+
+    def on_flash_freeze_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
+        frozen = conditions.Frozen(dc=stats.difficulty_class)
+        return f"<br/><br/>Additionally, creatures that fail by 5 or more are {frozen.caption}. {frozen.description_3rd}"
+
+    def on_nerve_gas_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
+        weakened = conditions.Weakened(save_end_of_turn=False)
+        return f"<br/><br/>Additionally, creatures that fail by 5 or more are {weakened.caption} for 1 minute (save ends at end of turn). {weakened.description_3rd}"
+
+    def on_arc_lightning_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
+        shocked = conditions.Shocked()
+        return f"<br/><br/>Additionally, creatures that fail by 5 or more are {shocked.caption} for 1 minute (save ends at end of turn). {shocked.description_3rd}"
+
+    def on_flesh_melting_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
+        burning_dmg = DieFormula.target_value(breath_damage.average / 4, force_die=Die.d4)
+        burning = conditions.Burning(burning_dmg, DamageType.Acid)
+        return f"<br/><br/>Additionally, creatures that fail by 5 or more are {burning.caption}. While burning this way, the creature is also **Poisoned**. \
+            {burning.description_3rd}"
+
+    debilitating_breaths = [
+        ("Inferno Breath", DamageType.Fire, "Dexterity", on_inferno_breath_failure),
+        ("Flash Freeze Breath", DamageType.Cold, "Constitution", on_flash_freeze_failure),
+        ("Nerve Gas Breath", DamageType.Poison, "Constitution", on_nerve_gas_failure),
+        ("Arc-Lightning Breath", DamageType.Lightning, "Dexterity", on_arc_lightning_failure),
+        ("Flesh Melting Breath", DamageType.Acid, "Dexterity", on_flesh_melting_failure),
+    ]
+
+    for name, breath_type, save, on_failure in debilitating_breaths:
+        breath_powers.append(
+            _DragonsBreath(
+                name=name,
+                breath=breath_type,
+                save=save,
+                on_failure=on_failure,
+            )
+        )
+
+    return breath_powers
 
 
 class _VengefulBreath(DraconicPower):
@@ -246,17 +337,7 @@ class _VengefulBreath(DraconicPower):
         return [feature]
 
 
-_breath_data = [
-    (DamageType.Fire, "Dexterity"),
-    (DamageType.Cold, "Constitution"),
-    (DamageType.Poison, "Constitution"),
-    (DamageType.Lightning, "Dexterity"),
-    (DamageType.Acid, "Dexterity"),
-]
-
-DragonsBreathPowers: List[Power] = [
-    _dragons_breath_power(d, save) for (d, save) in _breath_data
-]
+DragonsBreathPowers: List[Power] = _DragonsBreathPowers()
 DragonsGreed: Power = _DragonsGreed()
 DraconicMinions: Power = _DraconicMinions()
 FrightfulGaze: Power = _FrightfulGaze()

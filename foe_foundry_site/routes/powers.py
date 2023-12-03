@@ -64,7 +64,7 @@ def search_powers(
     role: Annotated[
         MonsterRole | None, Query(title="filter results to a specific role")
     ] = None,
-    limit: Annotated[int | None, Query(title="maximum response size", ge=1, le=20)] = 10,
+    limit: Annotated[int | None, Query(title="maximum response size", ge=1, le=40)] = 20,
 ) -> list[PowerModel]:
     limit = limit or 10
 

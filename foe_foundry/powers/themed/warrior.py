@@ -91,90 +91,6 @@ class _Disciplined(Warrior):
         return [feature]
 
 
-class _ParryAndRiposte(Warrior):
-    def __init__(self):
-        super().__init__(
-            name="Parry and Riposte",
-            source="Foe Foundry",
-            require_attack_types=AttackType.MeleeWeapon,
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        feature = Feature(
-            name="Parry and Riposte",
-            description=f"{stats.selfref.capitalize()} adds +3 to their Armor Class against one melee attack that would hit them.\
-                         If the attack misses, this creature can immediately make a weapon attack against the creature making the parried attack.",
-            action=ActionType.Reaction,
-            recharge=6,
-        )
-        return [feature]
-
-
-class _PommelStrike(Warrior):
-    def __init__(self):
-        super().__init__(
-            name="Pommel Strike",
-            source="Foe Foundry",
-            attack_names=[
-                "-",
-                weapon.SwordAndShield,
-                weapon.SpearAndShield,
-            ],
-        )
-
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        dazed = Dazed()
-        dc = stats.difficulty_class_easy
-
-        stats = stats.add_attack(
-            scalar=0.6,
-            damage_type=DamageType.Bludgeoning,
-            attack_type=AttackType.MeleeWeapon,
-            reach=5,
-            die=Die.d4,
-            replaces_multiattack=1,
-            name="Pommel Strike",
-            additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become {dazed.caption} until the end of its next turn. {dazed.description_3rd}",
-        )
-
-        return stats
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        return []
-
-
-class _PushingAttack(Warrior):
-    def __init__(self):
-        super().__init__(
-            name="Pushing Attack",
-            source="Foe Foundry",
-            attack_names={
-                "-",
-                weapon.Maul,
-                natural.Claw,
-                natural.Slam,
-            },
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        if stats.size >= Size.Huge:
-            distance = 15
-        elif stats.size >= Size.Large:
-            distance = 10
-        else:
-            distance = 5
-
-        feature = Feature(
-            name="Pushing Attack",
-            action=ActionType.Feature,
-            modifies_attack=True,
-            hidden=True,
-            description=f"On a hit, the target is pushed up to {distance} feet horizontally.",
-        )
-
-        return [feature]
-
-
 class _ActionSurge(Warrior):
     def __init__(self):
         super().__init__(
@@ -275,9 +191,6 @@ ActionSurge: Power = _ActionSurge()
 Disciplined: Power = _Disciplined()
 MightyLeap: Power = _Leap()
 PackTactics: Power = _PackTactics()
-ParryAndRiposte: Power = _ParryAndRiposte()
-PommelStrike: Power = _PommelStrike()
-PushingAttack: Power = _PushingAttack()
 Strangle: Power = _Strangle()
 
 WarriorPowers: List[Power] = [
@@ -285,8 +198,5 @@ WarriorPowers: List[Power] = [
     Disciplined,
     MightyLeap,
     PackTactics,
-    ParryAndRiposte,
-    PommelStrike,
-    PushingAttack,
     Strangle,
 ]

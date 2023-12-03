@@ -160,7 +160,7 @@ function SearchPowers({ baseUrl }: { baseUrl: string }) {
 
     const url =
       `${baseUrl}/api/v1/powers/search?` +
-      new URLSearchParams({ keyword: searchQuery, limit: "20" });
+      new URLSearchParams({ keyword: searchQuery, limit: "40" });
     const response = await fetch(url);
     const powers = await response.json();
     setPowers(powers);
