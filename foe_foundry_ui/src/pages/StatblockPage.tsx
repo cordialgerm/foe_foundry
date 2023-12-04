@@ -61,13 +61,12 @@ const StatblockPage: React.FC<PageProps> = (props) => {
 
   return (
     <PageLayout {...pageProps}>
-      {/* <RandomBackgroundImage
+      <RandomBackgroundImage
         creatureType={state.displayCreature}
         counter={state.counter}
       >
         <Statblock rawHtml={state.rawHtml} />
-      </RandomBackgroundImage> */}
-      <Statblock rawHtml={state.rawHtml} />
+      </RandomBackgroundImage>
     </PageLayout>
   );
 };
