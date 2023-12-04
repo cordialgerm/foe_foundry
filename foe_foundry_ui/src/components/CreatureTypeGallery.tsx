@@ -63,79 +63,79 @@ const images = [
     width: "40%",
   },
   {
-    url: "/img/monster/beast-wolves.png",
+    url: "/img/monster/beast-dire-wolf-3.png",
     title: "Beasts",
     link: "beast",
     width: "40%",
   },
   {
-    url: "/img/monster/celestial-fractal.png",
+    url: "/img/monster/celestial-deva.png",
     title: "Celestials",
     link: "celestial",
     width: "20%",
   },
   {
-    url: "/img/monster/construct-iron-golem.png",
+    url: "/img/monster/construct-elven-golem.png",
     title: "Constructs",
     link: "construct",
     width: "38%",
   },
   {
-    url: "/img/monster/dragon-2.png",
+    url: "/img/monster/dragon-obsidian.png",
     title: "Dragons",
     link: "dragon",
     width: "38%",
   },
   {
-    url: "/img/monster/elemental-fire.png",
+    url: "/img/monster/elemental_golem_fire.png",
     title: "Elementals",
     link: "elemental",
     width: "24%",
   },
   {
-    url: "/img/monster/fey-hag.png",
+    url: "/img/monster/fey-galefire-lunarium.png",
     title: "Fey",
     link: "fey",
     width: "36%",
   },
   {
-    url: "/img/monster/fiend-demon.png",
+    url: "/img/monster/fiend-demonic-berserker.png",
     title: "Fiends",
     link: "fiend",
     width: "44%",
   },
   {
-    url: "/img/monster/giant-frost-fire.png",
+    url: "/img/monster/giant_ogre_2.png",
     title: "Giants",
     link: "giant",
     width: "20%",
   },
   {
-    url: "/img/monster/humanoid-elf-rogue.png",
+    url: "/img/monster/humanoid_hobgoblin.png",
     title: "Humanoids",
     link: "humanoid",
     width: "44%",
   },
   {
-    url: "/img/monster/monstrosity-owlbear.png",
+    url: "/img/monster/monstrosity-beast-terrormaw-spider.png",
     title: "Monstrosities",
     link: "monstrosity",
     width: "32%",
   },
   {
-    url: "/img/monster/ooze-slime-monster.png",
+    url: "/img/monster/ooze_slime.png",
     title: "Oozes",
     link: "ooze",
     width: "24%",
   },
   {
-    url: "/img/monster/plant-death-flower.png",
+    url: "/img/monster/plant-mossbeast.png",
     title: "Plants",
     link: "plant",
     width: "40%",
   },
   {
-    url: "/img/monster/undead-lich1.png",
+    url: "/img/monster/undead_skeleton.png",
     title: "Undead",
     link: "undead",
     width: "60%",
@@ -221,7 +221,7 @@ export default function CreatureTypeGallery(pageProps: PageProps) {
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
       <Typography variant="h4" align="center" component="h2">
-        Try Out the Foe Foundry!
+        Generate a Statblock for a Creature Type:
       </Typography>
       <Box sx={{ mt: 8, display: "flex", flexWrap: "wrap" }}>
         {images.map((image, index) => (
