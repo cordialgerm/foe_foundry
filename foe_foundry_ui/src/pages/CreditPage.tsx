@@ -131,6 +131,57 @@ const artCredits = [
     title: "Icons from Game-Icons.net",
     description: <IconCredits />,
   },
+  {
+    title: "Watercolor Monster Pack",
+    description: "Watercolor Monster Pack by metalsnail",
+    url: "https://metalsnail.itch.io/watercolour-monster-pack",
+  },
+  {
+    title: "Monsters by GalefireRPG",
+    description: (
+      <>
+        <ul>
+          <a href="https://galefirerpg.itch.io/fantasy-beasts-monster-pack">
+            Fantasy Beasts Monster Pack
+          </a>
+          <a href="https://galefirerpg.itch.io/metal-monsters-monster-pack">
+            Metal Monsters Monster Pack
+          </a>
+          <a href="https://galefirerpg.itch.io/cursed-kingdoms-monster-pack2">
+            Cursed Kingdoms Monster Pack 2
+          </a>
+          <a href="https://galefirerpg.itch.io/cursed-kingdoms-boss-pack">
+            Cursed Kingdoms Boss Pack
+          </a>
+          <a href="https://galefirerpg.itch.io/blood-suckers-monster-pack">
+            Blood Suckers Monster Pack
+          </a>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "Chromatic Dragon Hatchlings Stock Art",
+    description: "Chromatic Dragon Hatchlings Stock Art by Ymia",
+    url: "https://ymia.itch.io/chromatic-dragon-hatchlings-stock-art",
+  },
+  {
+    title: "Fantasy Creatures V1 by ErkmenArtworks",
+    description: "Fantasy Creatures V1 by ErkmenArtworks",
+    url: "https://erkmenartworks.itch.io/fantasy-creatures-v1",
+  },
+  {
+    title: "Dragons Stock Art Pack",
+    description: (
+      <>
+        Dragons Stock Art Pack by Felipe da Silva Faria. <br />
+        <i>
+          Some artwork copyright Felipe da Silva Faria, used with permission
+        </i>
+      </>
+    ),
+    url: "https://felipemuky.itch.io/dragon-stock-art-pack",
+  },
 ];
 
 const legalNotices = [

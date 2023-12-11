@@ -19,6 +19,8 @@ import {
   ContentWrap,
   FeatureGroup,
 } from "../components/StatblockPieces.tsx";
+import useStickyState from "../components/StickyState.tsx";
+import { useParams, useSearchParams } from "react-router-dom";
 
 interface Power {
   key: string;
@@ -39,9 +41,15 @@ function capitalize(str: string) {
 }
 
 export default function PowersPage(props: PageProps) {
-  const [value, setValue] = React.useState(0);
+  const { tab } = useParams();
+
+  const tabs = ["new", "search", "random"];
+  const initialValue = tab ? tabs.indexOf(tab) ?? 0 : 0;
+  const [value, setValue] = useStickyState(initialValue, "powersTab");
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    const newTab = tabs[newValue];
+    window.history.pushState(null, "", "/powers/" + newTab);
     setValue(newValue);
   };
 
@@ -152,8 +160,27 @@ function RandomPowers({ baseUrl }: { baseUrl: string }) {
 }
 
 function SearchPowers({ baseUrl }: { baseUrl: string }) {
-  const [searchQuery, setSearchQuery] = React.useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const searchQuery = searchParams.get("keyword") ?? "";
+
   const [powers, setPowers] = React.useState<Power[]>([]);
+  const [searchBarText, setSearchBarText] = React.useState(searchQuery);
+
+  const handleSearchBarTextChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setSearchBarText(event.target.value);
+  };
+
+  const handleSearchBarSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setSearchParams({ keyword: searchBarText });
+  };
+
+  const handleSearchBarButtonClick = () => {
+    setSearchParams({ keyword: searchBarText });
+  };
 
   const fetchData = React.useCallback(async () => {
     if (searchQuery === "") return;
@@ -180,48 +207,27 @@ function SearchPowers({ baseUrl }: { baseUrl: string }) {
         >
           Search for Powers
         </Typography>
-        <SearchBar setSearchQuery={setSearchQuery} />
+        <form onSubmit={handleSearchBarSubmit}>
+          <TextField
+            label="Search Powers"
+            placeholder="Search Powers..."
+            variant="outlined"
+            size="small"
+            value={searchBarText}
+            onChange={handleSearchBarTextChange}
+          />
+          <IconButton
+            type="submit"
+            aria-label="search"
+            onClick={handleSearchBarButtonClick}
+          >
+            <SearchIcon />
+          </IconButton>
+        </form>
       </Stack>
       {powers.length > 0 && <PowersGrid powers={powers} />}
       {powers.length === 0 && <NoContent searchQuery={searchQuery} />}
     </Box>
-  );
-}
-
-function SearchBar({
-  setSearchQuery,
-}: {
-  setSearchQuery: (query: string) => void;
-}) {
-  const [searchText, setSearchText] = React.useState("");
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchText(event.target.value);
-  };
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setSearchQuery(searchText);
-  };
-
-  const handleClick = () => {
-    setSearchQuery(searchText);
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <TextField
-        label="Search Powers"
-        placeholder="Search Powers..."
-        variant="outlined"
-        size="small"
-        value={searchText}
-        onChange={handleChange}
-      />
-      <IconButton type="submit" aria-label="search" onClick={handleClick}>
-        <SearchIcon />
-      </IconButton>
-    </form>
   );
 }
 

@@ -7,9 +7,15 @@ import { Link } from "react-router-dom";
 function AboutPage(props: React.PropsWithChildren<PageProps>) {
   const productValues = {
     title: (
-      <span>
+      <>
         Welcome to the <b>Foe Foundry</b>
-      </span>
+      </>
+    ),
+    subtitle: (
+      <>
+        A 5E monster builder that makes it easy to create powerful and
+        interesting monsters. <Link to="/statblocks">Get Started!</Link>
+      </>
     ),
     text1: {
       title: "Powerful & Interesting",
@@ -37,6 +43,14 @@ function AboutPage(props: React.PropsWithChildren<PageProps>) {
   };
   const howItWorks = {
     title: "How Foe Foundry Works",
+    subtitle: (
+      <>
+        <i>
+          No Generative AI is used to create statblocks - all powers & rules are
+          hand-crafted.
+        </i>
+      </>
+    ),
     text1: {
       title: "Templates",
       description:
@@ -45,20 +59,24 @@ function AboutPage(props: React.PropsWithChildren<PageProps>) {
     text2: {
       title: "Powers",
       description: (
-        <span>
+        <>
           Over 200 unique{" "}
           <Link to="/powers">
             <b>Powers</b>
           </Link>{" "}
           that add interesting flavor, unique mechanics, and tactical effects to
           make combat exciting.
-        </span>
+        </>
       ),
     },
     text3: {
       title: "Smart Selection",
-      description:
-        "Monsters are created intelligently by combining powers that make sense together.",
+      description: (
+        <>
+          Monsters are created intelligently by combining powers that make sense
+          together using a series of rules and random tables.
+        </>
+      ),
     },
   };
 

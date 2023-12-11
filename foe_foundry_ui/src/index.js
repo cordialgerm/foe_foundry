@@ -67,6 +67,14 @@ const router = createBrowserRouter([
       </App>
     ),
   },
+  {
+    path: "/powers/:tab",
+    element: (
+      <App baseUrl={baseUrl}>
+        <PowersPage />
+      </App>
+    ),
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

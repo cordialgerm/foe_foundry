@@ -19,8 +19,8 @@ function BackgroundImage({ img, children }) {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center",
           backgroundSize: "contain",
-          width: "90%",
-          height: "90%",
+          width: "60%",
+          height: "60%",
           position: "absolute",
           margin: "10px",
         }}

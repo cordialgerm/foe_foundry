@@ -12,6 +12,7 @@ from ...data.power import PowerModel
 INDEX_DIR = Path(__file__).parent / "index"
 
 PowerLookup = {power.key: PowerModel.from_power(power) for power in AllPowers}
+Themes = {power.theme.lower() for power in AllPowers if power.theme}
 
 
 def index_powers():

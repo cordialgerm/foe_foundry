@@ -13,6 +13,7 @@ interface HeroTextProps {
 
 interface ProductHeroTextProps {
   title: string | JSX.Element;
+  subtitle?: string | JSX.Element;
   text1: HeroTextProps;
   text2: HeroTextProps;
   text3: HeroTextProps;
@@ -82,10 +83,19 @@ const ProductHeroText: React.FC<ProductHeroTextProps> = (heroText) => {
         <Typography
           variant="h4"
           component="h2"
-          sx={{ mb: 14, textAlign: "center" }}
+          sx={{ mb: 4, textAlign: "center" }}
         >
           {heroText.title}
         </Typography>
+        {heroText.subtitle && (
+          <Typography
+            variant="h5"
+            component="h3"
+            sx={{ mb: 4, textAlign: "center", fontStyle: "italic" }}
+          >
+            {heroText.subtitle}
+          </Typography>
+        )}
         <div>
           <Grid container spacing={5}>
             <HeroText {...heroText.text1} />
