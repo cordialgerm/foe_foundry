@@ -20,12 +20,16 @@
     "isort.importStrategy": "fromEnvironment",
     "[python]": {
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true,
-            "source.fixAll": true
+            "source.organizeImports": "explicit",
+            "source.fixAll": "explicit"
         },
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
 }

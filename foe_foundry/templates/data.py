@@ -10,6 +10,7 @@ from ..benchmarks import Benchmark
 from ..damage import Attack, DamageType
 from ..features import ActionType, Feature
 from ..skills import Skills
+from ..spells import StatblockSpell
 from ..statblocks import Statblock
 from .utilities import fix_punctuation
 
@@ -51,6 +52,8 @@ class MonsterTemplateData:
 
     multiattack: str
     attack: Attack
+
+    spellcasting: str
 
     benchmarks: List[Benchmark] | None = None
 
@@ -116,6 +119,17 @@ class MonsterTemplateData:
             elif feature.action == ActionType.Reaction:
                 reactions.append(feature)
 
+        if len(stats.spells) == 0:
+            spellcasting = ""
+        else:
+            spellcasting = f"{stats.selfref.capitalize()} casts one of the following spells, using {stats.attributes.spellcasting_stat.description} as the spellcasting ability (spell save DC {stats.attributes.spellcasting_dc}):"
+            uses = [None, 5, 4, 3, 2, 1]
+            for use in uses:
+                line = _spell_list(stats.spells, use)
+                if line is None:
+                    continue
+                spellcasting += "<p>" + line + "</p>"
+
         attack_modifiers = []
         for feature in stats.features:
             if feature.modifies_attack:
@@ -145,6 +159,10 @@ class MonsterTemplateData:
                 for f in stats.features
                 if f.replaces_multiattack > 0 and f.replaces_multiattack < stats.multiattack
             ]
+
+            # spellcasting can replace two multiattacks for creatures with 3+ attacks
+            if spellcasting and stats.multiattack >= 3:
+                replacements.append(("Spellcasting", 2))
 
             lines = []
             for name, replacement in replacements:
@@ -190,6 +208,7 @@ class MonsterTemplateData:
             attack=stats.attack,
             attacks=stats.additional_attacks,
             benchmarks=benchmarks,
+            spellcasting=spellcasting,
         )
         return t
 
@@ -201,3 +220,16 @@ def _damage_list(damage_types: Set[DamageType], nonmagical: bool) -> str:
     if nonmagical:
         pieces.append("Bludgeoning, Piercing, and Slashing from Nonmagical Attacks")
     return "; ".join(pieces)
+
+
+def _spell_list(all_spells: List[StatblockSpell], uses: int | None) -> str | None:
+    spells = [s.caption_md for s in all_spells if s.uses == uses]
+    if len(spells) == 0:
+        return None
+
+    if uses is None:
+        line_prefix = "At will: "
+    else:
+        line_prefix = f"{uses}/day each: "
+
+    return line_prefix + ", ".join(spells)

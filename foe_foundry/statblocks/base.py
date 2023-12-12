@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import math
 from copy import deepcopy
 from dataclasses import dataclass, field
 from typing import Callable, Dict, List, Set
@@ -15,6 +16,7 @@ from ..role_types import MonsterRole
 from ..senses import Senses
 from ..size import Size
 from ..skills import Stats
+from ..spells import StatblockSpell
 from ..xp import xp_by_cr
 from .dials import MonsterDials
 from .suggested_powers import recommended_powers_for_cr
@@ -50,6 +52,7 @@ class BaseStatblock:
     ac_boost: int = 0
     uses_shield: bool = False
     ac_templates: List[ArmorClassTemplate] = field(default_factory=list)
+    spells: List[StatblockSpell] = field(default_factory=list)
     creature_subtype: str | None = None
     creature_class: str | None = None
     damage_modifier: float = 1.0
@@ -94,6 +97,13 @@ class BaseStatblock:
         else:
             return f"the {self.role.value.lower()}"
 
+    @property
+    def spell_upcast_level(self) -> int | None:
+        if self.cr < 3:
+            return None
+        else:
+            return math.floor(self.cr / 3)
+
     def __copy_args__(self) -> dict:
         args: dict = dict(
             name=self.name,
@@ -123,6 +133,7 @@ class BaseStatblock:
             nonmagical_resistance=self.nonmagical_resistance,
             nonmagical_immunity=self.nonmagical_immunity,
             additional_attacks=[a.copy() for a in self.additional_attacks],
+            spells=[s.copy() for s in self.spells],
             creature_class=self.creature_class,
             creature_subtype=self.creature_subtype,
             damage_modifier=self.damage_modifier,
@@ -316,6 +327,16 @@ class BaseStatblock:
         additional_attacks.append(new_attack)
 
         return self.copy(additional_attacks=additional_attacks)
+
+    def add_spell(self, spell: StatblockSpell) -> BaseStatblock:
+        new_spells = [s for s in self.spells.copy()]
+
+        # auto-upcast spells as appropriate
+        if self.spell_upcast_level is not None:
+            spell = spell.upcast(self.spell_upcast_level)
+
+        new_spells.append(spell)
+        return self.copy(spells=new_spells)
 
     def target_value(self, target: float = 1.0, **args) -> DieFormula:
         adjustment = 1.0

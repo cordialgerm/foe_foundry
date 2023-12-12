@@ -11,6 +11,7 @@ from ..creature_types import CreatureType
 from ..damage import AttackType, Condition, DamageType
 from ..role_types import MonsterRole
 from ..size import Size, get_size_for_cr
+from ..spells.abjuration import DispelMagic
 from ..statblocks import BaseStatblock
 from ..utils import choose_enum
 from .template import CreatureTypeTemplate
