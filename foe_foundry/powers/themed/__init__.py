@@ -37,6 +37,7 @@ from . import (
     trap,
     tricky,
     warrior,
+    wizard,
 )
 
 ThemedPowers: List[Power] = (
@@ -75,4 +76,5 @@ ThemedPowers: List[Power] = (
     + trap.TrapPowers
     + tricky.TrickyPowers
     + warrior.WarriorPowers
+    + wizard.WizardPowers
 )

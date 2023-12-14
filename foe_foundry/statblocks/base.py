@@ -336,10 +336,13 @@ class BaseStatblock:
 
         return self.copy(additional_attacks=additional_attacks)
 
-    def add_spell(self, spell: StatblockSpell) -> BaseStatblock:
-        new_spells = [s for s in self.spells.copy()]
-        new_spells.append(spell.scale_for_cr(self.cr))
+    def add_spells(self, spells: List[StatblockSpell]) -> BaseStatblock:
+        new_spells = [s.copy() for s in self.spells]
+        new_spells.extend([s.scale_for_cr(self.cr) for s in spells])
         return self.copy(spells=new_spells)
+
+    def add_spell(self, spell: StatblockSpell) -> BaseStatblock:
+        return self.add_spells([spell])
 
     def target_value(self, target: float = 1.0, **args) -> DieFormula:
         adjustment = 1.0

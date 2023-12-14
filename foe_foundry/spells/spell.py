@@ -9,7 +9,7 @@ from ..features import ActionType
 from ..skills import Stats
 
 
-@dataclass
+@dataclass(eq=True, frozen=True)
 class Spell:
     name: str
     level: int
@@ -36,7 +36,7 @@ class Spell:
         )
 
 
-@dataclass
+@dataclass(eq=True, frozen=True)
 class StatblockSpell:
     name: str
     level: int
@@ -74,7 +74,7 @@ class StatblockSpell:
     @property
     def caption_md(self) -> str:
         level = (
-            f" {num2words(self.upcast_level, to='ordinal_num')}"
+            f"{num2words(self.upcast_level, to='ordinal_num')}"
             if self.upcast_level is not None
             else ""
         )
