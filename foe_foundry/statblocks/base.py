@@ -98,13 +98,6 @@ class BaseStatblock:
             return f"the {self.role.value.lower()}"
 
     @property
-    def spell_upcast_level(self) -> int | None:
-        if self.cr < 3:
-            return None
-        else:
-            return math.floor(self.cr / 3)
-
-    @property
     def spellcasting_md(self) -> str:
         if len(self.spells) == 0:
             spellcasting = ""
@@ -345,12 +338,7 @@ class BaseStatblock:
 
     def add_spell(self, spell: StatblockSpell) -> BaseStatblock:
         new_spells = [s for s in self.spells.copy()]
-
-        # auto-upcast spells as appropriate
-        if self.spell_upcast_level is not None:
-            spell = spell.upcast(self.spell_upcast_level)
-
-        new_spells.append(spell)
+        new_spells.append(spell.scale_for_cr(self.cr))
         return self.copy(spells=new_spells)
 
     def target_value(self, target: float = 1.0, **args) -> DieFormula:

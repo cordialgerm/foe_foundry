@@ -3,11 +3,14 @@ from typing import List, Tuple
 
 import numpy as np
 
+from foe_foundry.statblocks import BaseStatblock
+
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...spells import enchantment, evocation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five, summoning
 from ..power import (
@@ -88,10 +91,10 @@ class _FeastOfSouls(FiendishPower):
         return [feature]
 
 
-class _FiendishCurse(FiendishPower):
+class _FiendishCackle(FiendishPower):
     def __init__(self):
         super().__init__(
-            name="Fiendish Curse", source="Foe Foundry", bonus_damage=DamageType.Fire
+            name="Fiendish Cackle", source="Foe Foundry", bonus_damage=DamageType.Fire
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -106,15 +109,11 @@ class _FiendishCurse(FiendishPower):
                 The creature must make a DC {dc} Wisdom saving throw. On a failure, it takes {dmg.description} fire damage and {stats.selfref} gains that many temporary hitpoints.",
         )
 
-        feature2 = Feature(
-            name="Fiendish Curse",
-            action=ActionType.Action,
-            replaces_multiattack=1,
-            uses=1,
-            description=f"{stats.selfref.capitalize()} casts the *Bane* spell (spell save DC {dc}) at 2nd level, targeting up to 4 creatures, and without requiring concentration).",
-        )
+        return [feature1]
 
-        return [feature1, feature2]
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        spell = enchantment.Bane.for_statblock(uses=1, notes="no concentration")
+        return stats.add_spell(spell)
 
 
 class _FiendishTeleporation(FiendishPower):
@@ -152,26 +151,22 @@ class _WallOfFire(FiendishPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dc = stats.difficulty_class_easy
+        return []
 
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.cr <= 7:
             uses = 1
-            concentration = ""
+            notes = None
         elif stats.cr <= 11:
             uses = 1
-            concentration = " without requiring concentration"
+            notes = "no concentration"
         else:
             uses = 3
-            concentration = " without requiring concentration"
+            notes = "no concentration"
 
-        feature = Feature(
-            name="Wall of Fire",
-            action=ActionType.Action,
-            replaces_multiattack=2,
-            uses=uses,
-            description=f"{stats.selfref.capitalize()} magically casts the *Wall of Fire* spell (spell save DC {dc}){concentration}.",
-        )
-        return [feature]
+        spell = evocation.WallOfFire.for_statblock(uses=uses, notes=notes)
+
+        return stats.add_spell(spell)
 
 
 class _FiendishBite(FiendishPower):
@@ -282,7 +277,7 @@ CallOfTheStyx: Power = _CallOfTheStyx()
 DevilsSight: Power = _DevilsSight()
 FeastOfSouls: Power = _FeastOfSouls()
 FiendishBite: Power = _FiendishBite()
-FiendishCurse: Power = _FiendishCurse()
+FiendishCackle: Power = _FiendishCackle()
 FiendishSummons: Power = _FiendishSummons()
 FiendishTeleportation: Power = _FiendishTeleporation()
 TemptingOffer: Power = _TemptingOffer()
@@ -293,7 +288,7 @@ FiendishPowers = [
     DevilsSight,
     FeastOfSouls,
     FiendishBite,
-    FiendishCurse,
+    FiendishCackle,
     FiendishSummons,
     FiendishTeleportation,
     TemptingOffer,

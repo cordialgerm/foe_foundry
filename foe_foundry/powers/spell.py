@@ -24,7 +24,7 @@ class SpellPower(PowerWithStandardScoring):
         kwargs.pop("power_level", None)
 
         if "require_cr" not in score_args:
-            score_args.update(require_cr=_min_cr_for_spell(spell, power_level))
+            score_args.update(require_cr=spell.recommended_min_cr)
 
         if "name" not in kwargs:
             kwargs.update(name=f"Spellcasting - {spell.name}")
@@ -45,14 +45,4 @@ class SpellPower(PowerWithStandardScoring):
         return []
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        spell = self.spell
-        if spell.uses is None:
-            cr_surplus = max(stats.cr - _min_cr_for_spell(spell, self.power_level), 0)
-            uses = min(3, max(1, math.ceil(cr_surplus / 3)))
-            spell = spell.copy(uses=uses)
-
-        return stats.add_spell(spell=spell)
-
-
-def _min_cr_for_spell(spell: StatblockSpell, power_level: float) -> float:
-    return spell.level * 1.5 * power_level
+        return stats.add_spell(spell=self.spell.copy())

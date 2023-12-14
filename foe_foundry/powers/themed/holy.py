@@ -1,6 +1,8 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.statblocks import BaseStatblock
+
 from ...attack_template import weapon
 from ...attributes import Stats
 from ...creature_types import CreatureType
@@ -8,6 +10,7 @@ from ...damage import DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import evocation
 from ...statblocks import BaseStatblock
 from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
@@ -64,14 +67,11 @@ class _MassCureWounds(HolyPower):
         super().__init__(name="Mass Cure Wounds", source="SRD5.1 Mass Cure Wounds")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        feature = Feature(
-            name="Mass Cure Wounds",
-            action=ActionType.Action,
-            uses=1,
-            replaces_multiattack=2,
-            description=f"{stats.roleref.capitalize()} casts *Mass Cure Wounds*",
-        )
-        return [feature]
+        return []
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        spell = evocation.MassCureWounds.for_statblock()
+        return stats.add_spell(spell)
 
 
 class _WordOfRadiance(HolyPower):

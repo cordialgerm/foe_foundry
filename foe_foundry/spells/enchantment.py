@@ -2,6 +2,35 @@ from ..features import ActionType
 from ..skills import Stats
 from .spell import Spell
 
+Bane: Spell = Spell(
+    name="Bane",
+    level=1,
+    school="enchantment",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=Stats.CHA,
+    upcast=True,
+    description="Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.",
+    upcast_description="When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+    range="30 feet",
+)
+
+
+CharmPerson: Spell = Spell(
+    name="Charm Person",
+    level=1,
+    school="enchantment",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=Stats.WIS,
+    upcast=True,
+    concentration=False,
+    description="You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.",
+    upcast_description="When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+    range="30 feet",
+)
+
+
 Command: Spell = Spell(
     name="Command",
     level=1,

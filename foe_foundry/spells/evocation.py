@@ -16,6 +16,19 @@ A target must make a Dexterity saving throw. The target takes 10d8 lightning dam
     range="150 feet",
 )
 
+FaerieFire: Spell = Spell(
+    name="Faerie Fire",
+    level=1,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=False,
+    concentration=True,
+    action_type=ActionType.Action,
+    save=Stats.DEX,
+    description="""Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.
+Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.""",
+)
+
 Fireball: Spell = Spell(
     name="Fireball",
     level=3,
@@ -60,4 +73,36 @@ LightningBolt: Spell = Spell(
     description="A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.",
     upcast_description="When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
     range="Self (100-foot line)",
+)
+
+MassCureWounds: Spell = Spell(
+    name="Mass Cure Wounds",
+    level=5,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=False,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=None,
+    description="""A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.""",
+    range="60 feet",
+)
+
+WallOfFire: Spell = Spell(
+    name="Wall of Fire",
+    level=4,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=True,
+    action_type=ActionType.Action,
+    save=Stats.DEX,
+    description="""
+    You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.
+
+When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage, or half as much damage on a successful save.
+
+One side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage.""",
+    upcast_description="When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.",
+    range="120 feet",
 )

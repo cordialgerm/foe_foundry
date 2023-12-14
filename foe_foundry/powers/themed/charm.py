@@ -4,12 +4,15 @@ from typing import List
 
 from num2words import num2words
 
+from foe_foundry.statblocks import BaseStatblock
+
 from ...attack_template import spell
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import enchantment
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from ..power_type import PowerType
@@ -122,21 +125,16 @@ class _WardingCharm(CharmingPower):
 
 class _CharmingWords(CharmingPower):
     def __init__(self):
-        super().__init__(name="Charming Words", source="SRD5.1 Charm Person")
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        level = num2words(math.ceil(stats.cr / 3), ordinal=True)
-        dc = stats.difficulty_class
-
-        feature = Feature(
-            name="Charming Words",
-            uses=1,
-            replaces_multiattack=1,
-            action=ActionType.Action,
-            description=f"{stats.selfref.capitalize()} casts *Charm Person* at {level} level with a DC of {dc}",
+        super().__init__(
+            name="Charming Words", source="SRD5.1 Charm Person", power_level=LOW_POWER
         )
 
-        return [feature]
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        spell = enchantment.CharmPerson.for_statblock()
+        return stats.add_spell(spell)
 
 
 CharmingWords: Power = _CharmingWords()

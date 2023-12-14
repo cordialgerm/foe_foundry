@@ -10,6 +10,7 @@ from ...damage import AttackType, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ...utils.summoning import determine_summon_formula
@@ -367,21 +368,14 @@ class _Ranger(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        feature1 = Feature(
-            name="Spike Growth",
-            action=ActionType.Action,
-            replaces_multiattack=1,
-            description=f"{stats.roleref.capitalize()} casts *Spike Growth*",
-        )
-
-        feature2 = artillery.FocusShot.generate_features(stats)
-        return [feature1] + feature2
+        return artillery.FocusShot.generate_features(stats)
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Perception)
         stats = stats.copy(creature_class="Ranger", attributes=new_attrs)
         stats = stats.scale({Stats.DEX: Stats.DEX.Boost(2)})
         stats = artillery.FocusShot.modify_stats(stats)
+        stats = stats.add_spell(transmutation.SpikeGrowth.for_statblock())
         return stats
 
 
@@ -497,14 +491,7 @@ class _PsiWarrior(PowerWithStandardScoring):
                 preventing up to {protection} of the triggering damage",
         )
 
-        feature3 = Feature(
-            name="Telekinesis",
-            action=ActionType.Action,
-            replaces_multiattack=2,
-            description=f"{stats.roleref.capitalize()} casts the *Telekinesis* spell",
-        )
-
-        return [feature1, feature2, feature3]
+        return [feature1, feature2]
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(
@@ -512,6 +499,9 @@ class _PsiWarrior(PowerWithStandardScoring):
             creature_class="Psi Warrior",
         )
         stats = stats.scale({Stats.INT: Stats.INT.Boost(2)})
+
+        stats = stats.add_spell(transmutation.Telekinesis.for_statblock())
+
         return stats
 
 
