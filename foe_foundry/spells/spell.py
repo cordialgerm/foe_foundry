@@ -14,9 +14,9 @@ class Spell:
     level: int
     school: str
     source: str
-    upcast: bool
-    concentration: bool
     description: str
+    upcast: bool = False
+    concentration: bool = False
     action_type: ActionType = ActionType.Action
     save: Stats | None = None
     upcast_description: str | None = None
@@ -59,4 +59,4 @@ class StatblockSpell:
             if self.upcast_level is not None
             else ""
         )
-        return f'<span class="spell">{self.name}</span>{level}'
+        return f'<span class="spell"><i>{self.name}</i></span>{level}'

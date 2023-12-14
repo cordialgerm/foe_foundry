@@ -119,16 +119,7 @@ class MonsterTemplateData:
             elif feature.action == ActionType.Reaction:
                 reactions.append(feature)
 
-        if len(stats.spells) == 0:
-            spellcasting = ""
-        else:
-            spellcasting = f"{stats.selfref.capitalize()} casts one of the following spells, using {stats.attributes.spellcasting_stat.description} as the spellcasting ability (spell save DC {stats.attributes.spellcasting_dc}):"
-            uses = [None, 5, 4, 3, 2, 1]
-            for use in uses:
-                line = _spell_list(stats.spells, use)
-                if line is None:
-                    continue
-                spellcasting += "<p>" + line + "</p>"
+        spellcasting = stats.spellcasting_md
 
         attack_modifiers = []
         for feature in stats.features:
@@ -220,16 +211,3 @@ def _damage_list(damage_types: Set[DamageType], nonmagical: bool) -> str:
     if nonmagical:
         pieces.append("Bludgeoning, Piercing, and Slashing from Nonmagical Attacks")
     return "; ".join(pieces)
-
-
-def _spell_list(all_spells: List[StatblockSpell], uses: int | None) -> str | None:
-    spells = [s.caption_md for s in all_spells if s.uses == uses]
-    if len(spells) == 0:
-        return None
-
-    if uses is None:
-        line_prefix = "At will: "
-    else:
-        line_prefix = f"{uses}/day each: "
-
-    return line_prefix + ", ".join(spells)

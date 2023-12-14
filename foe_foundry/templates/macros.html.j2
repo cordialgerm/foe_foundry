@@ -18,6 +18,15 @@
 {% endif %}
 {%- endmacro %}
 
+{% macro property_block_no_punctuation(name,text) -%}
+{% if text|length > 0 %}
+<property-block>
+    <h4>{{name | fix_punctuation}}</h4>
+    <p>{{text}}</p>
+</property-block>
+{% endif %}
+{%- endmacro %}
+
 {% macro attack_blocks(attacks) %}
 {% for attack in attacks %}
 {{ attack_block(attack.name, attack.description)}}

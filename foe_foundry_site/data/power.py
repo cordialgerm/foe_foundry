@@ -115,6 +115,17 @@ class PowerModel:
                 )
             )
 
+        spellcasting_md = stats.spellcasting_md
+        if spellcasting_md:
+            feature_models.append(
+                FeatureModel(
+                    name="Spellcasting",
+                    action="Action",
+                    replaces_multiattack=2,
+                    description_md=spellcasting_md,
+                )
+            )
+
         tags = set()
         if power.creature_types and len(power.creature_types) <= 4:
             tags.update([ct.lower() for ct in power.creature_types])

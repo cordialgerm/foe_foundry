@@ -104,6 +104,21 @@ class BaseStatblock:
         else:
             return math.floor(self.cr / 3)
 
+    @property
+    def spellcasting_md(self) -> str:
+        if len(self.spells) == 0:
+            spellcasting = ""
+        else:
+            spellcasting = f"{self.selfref.capitalize()} casts one of the following spells, using {self.attributes.spellcasting_stat.description} as the spellcasting ability (spell save DC {self.attributes.spellcasting_dc}):"
+            uses = [None, 5, 4, 3, 2, 1]
+            for use in uses:
+                line = _spell_list(self.spells, use)
+                if line is None:
+                    continue
+                spellcasting += "<p>" + line + "</p>"
+
+        return spellcasting
+
     def __copy_args__(self) -> dict:
         args: dict = dict(
             name=self.name,
@@ -362,3 +377,16 @@ class BaseStatblock:
 
         scaled_target = self.attack.average_damage * target * adjustment
         return DieFormula.target_value(target=scaled_target, **args)
+
+
+def _spell_list(all_spells: List[StatblockSpell], uses: int | None) -> str | None:
+    spells = [s.caption_md for s in all_spells if s.uses == uses]
+    if len(spells) == 0:
+        return None
+
+    if uses is None:
+        line_prefix = "At will: "
+    else:
+        line_prefix = f"{uses}/day each: "
+
+    return line_prefix + ", ".join(spells)
