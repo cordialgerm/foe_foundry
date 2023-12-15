@@ -29,6 +29,7 @@ from . import (
     psychic,
     reckless,
     sneaky,
+    spellcaster,
     storm,
     technique,
     teleportation,
@@ -37,7 +38,6 @@ from . import (
     trap,
     tricky,
     warrior,
-    wizard,
 )
 
 ThemedPowers: List[Power] = (
@@ -68,6 +68,7 @@ ThemedPowers: List[Power] = (
     + psychic.PsychicPowers
     + reckless.RecklessPowers
     + sneaky.SneakyPowers
+    + spellcaster.SpellcasterPowers
     + storm.StormPowers
     + technique.TechniquePowers
     + teleportation.TeleportationPowers
@@ -76,5 +77,4 @@ ThemedPowers: List[Power] = (
     + trap.TrapPowers
     + tricky.TrickyPowers
     + warrior.WarriorPowers
-    + wizard.WizardPowers
 )

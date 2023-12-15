@@ -2,6 +2,25 @@ from ..features import ActionType
 from ..skills import Stats
 from .spell import Spell
 
+BestowCurse: Spell = Spell(
+    name="Bestow Curse",
+    level=3,
+    school="necromancy",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    upcast=True,
+    save=Stats.WIS,
+    description="""You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:
+
+Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.
+While cursed, the target has disadvantage on attack rolls against you.
+While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.
+While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.
+A remove curse spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect.""",
+    upcast_description="""If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration.""",
+)
+
+
 BlindnessDeafness: Spell = Spell(
     name="Blindness/Deafness",
     level=2,
@@ -12,6 +31,18 @@ BlindnessDeafness: Spell = Spell(
     upcast=True,
     description="You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.",
     upcast_description="When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+)
+
+CircleOfDeath: Spell = Spell(
+    name="Circle of Death",
+    level=6,
+    school="necromancy",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    upcast=True,
+    save=Stats.CON,
+    description="""A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one.""",
+    upcast_description="""When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th.""",
 )
 
 Eyebite: Spell = Spell(
@@ -43,4 +74,26 @@ FingerOfDeath: Spell = Spell(
     description="""You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes 7d8 + 30 necrotic damage on a failed save, or half as much damage on a successful one.
 
 A humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability.""",
+)
+
+RaiseDead: Spell = Spell(
+    name="Raise Dead",
+    level=5,
+    school="necromancy",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    upcast=True,
+    concentration=False,
+    description="""You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.""",
+)
+
+Resurrection: Spell = Spell(
+    name="Resurrection",
+    level=7,
+    school="necromancy",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    upcast=False,
+    concentration=False,
+    description="""You touch a dead creature that has been dead for no more than a century, that didn't die of old age, and that isn't undead. If its soul is free and willing, the target returns to life with all its hit points.""",
 )

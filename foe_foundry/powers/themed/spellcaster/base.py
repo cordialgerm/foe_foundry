@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import List
+from typing import List, Set
 
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
@@ -9,22 +9,24 @@ from ....spells import StatblockSpell
 from ...power import HIGH_POWER, PowerType, PowerWithStandardScoring
 
 
-class _Wizard(PowerWithStandardScoring):
+class _Spellcaster(PowerWithStandardScoring):
     def __init__(
         self,
         name: str,
-        creature_class: str,
         min_cr: int,
         max_cr: int,
         spells: List[StatblockSpell],
         theme: str,
         score_args: dict,
+        creature_class: str | None = None,
+        power_level=HIGH_POWER,
+        require_attack_types=AttackType.AllSpell(),
     ):
         score_args = (
             dict(
                 require_cr=min_cr,
                 require_max_cr=max_cr,
-                require_attack_types=AttackType.AllSpell(),
+                require_attack_types=require_attack_types,
             )
             | score_args
         )
@@ -32,9 +34,9 @@ class _Wizard(PowerWithStandardScoring):
         super().__init__(
             name=name,
             power_type=PowerType.Theme,
-            source="SRD5.1",
+            source="FoeFoundry",
             theme=theme,
-            power_level=HIGH_POWER,
+            power_level=power_level,
             create_date=datetime(2023, 12, 14),
             score_args=score_args,
         )
@@ -47,4 +49,5 @@ class _Wizard(PowerWithStandardScoring):
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(creature_class=self.creature_class)
-        return stats.add_spells(self.spells)
+        sorted_spells = sorted(self.spells, key=lambda s: s.name)
+        return stats.add_spells(sorted_spells)

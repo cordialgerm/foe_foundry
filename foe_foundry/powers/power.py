@@ -16,6 +16,7 @@ RIBBON_POWER = 0.25
 LOW_POWER = 0.5
 MEDIUM_POWER = 1
 HIGH_POWER = 1.5
+EXTRA_HIGH_POWER = 2
 
 
 class Power(ABC):
@@ -45,7 +46,9 @@ class Power(ABC):
         self.create_date = create_date
         self.theme = theme
 
-        if self.power_level == HIGH_POWER:
+        if self.power_level == EXTRA_HIGH_POWER:
+            self.power_level_text = "Extra High Power"
+        elif self.power_level == HIGH_POWER:
             self.power_level_text = "High Power"
         elif self.power_level == MEDIUM_POWER:
             self.power_level_text = "Medium Power"

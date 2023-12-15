@@ -1,6 +1,29 @@
 from ..features import ActionType
 from .spell import Spell
 
+Commune = Spell(
+    name="Commune",
+    level=5,
+    school="divination",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    description="You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question.",
+)
+
+DetectEvilAndGood = Spell(
+    name="Detect Evil and Good",
+    level=1,
+    school="divination",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    concentration=True,
+    description="""
+For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.
+
+The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
+""",
+)
+
 DetectMagic = Spell(
     name="Detect Magic",
     level=1,

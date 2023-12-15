@@ -44,6 +44,35 @@ Command: Spell = Spell(
     range="60 feet",
 )
 
+DominateMonster: Spell = Spell(
+    name="Dominate Monster",
+    level=8,
+    school="enchantment",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=Stats.WIS,
+    upcast=False,
+    concentration=True,
+    description="""You attempt to beguile a creature that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.
+While the creature is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability.
+You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.
+Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.""",
+    range="60 feet",
+)
+
+Feeblemind: Spell = Spell(
+    name="Feeblemind",
+    level=8,
+    school="enchantment",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=Stats.INT,
+    upcast=False,
+    concentration=False,
+    description="""You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes 4d6 psychic damage and must make an Intelligence saving throw. On a failed save, the creature’s Intelligence and Charisma scores become 1. The creature can’t cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them.
+    At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends.""",
+)
+
 HideousLaughter: Spell = Spell(
     name="Hideous Laughter",
     level=1,

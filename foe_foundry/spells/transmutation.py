@@ -2,6 +2,22 @@ from ..features import ActionType
 from ..skills import Stats
 from .spell import Spell
 
+ControlWeather = Spell(
+    name="Control Weather",
+    level=8,
+    school="transmutation",
+    source="SRD 5.1",
+    upcast=False,
+    concentration=True,
+    action_type=ActionType.Action,
+    save=None,
+    description="""
+    You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don’t have a clear path to the sky ends the spell early.
+
+When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 × 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.""",
+)
+
+
 Disintegrate = Spell(
     name="Disintegrate",
     level=6,

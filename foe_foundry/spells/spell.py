@@ -29,10 +29,15 @@ class Spell:
         return Spell(**args)
 
     def for_statblock(
-        self, uses: int | None = None, notes: str | None = None
+        self, uses: int | None = None, notes: str | None = None, **kwargs
     ) -> StatblockSpell:
         return StatblockSpell(
-            name=self.name, level=self.level, upcastable=self.upcast, uses=uses, notes=notes
+            name=self.name,
+            level=self.level,
+            upcastable=self.upcast,
+            uses=uses,
+            notes=notes,
+            **kwargs,
         )
 
 
@@ -44,6 +49,7 @@ class StatblockSpell:
     upcast_level: int | None = None
     uses: int | None = None
     notes: str | None = None
+    symbols: str | None = None
 
     @property
     def recommended_min_cr(self) -> float:
@@ -59,12 +65,12 @@ class StatblockSpell:
             uses = self.uses
         else:
             cr_surplus = max(cr - self.recommended_min_cr, 0)
-            uses = min(3, max(1, math.ceil(cr_surplus / 3)))
+            uses = min(3, max(1, math.ceil(cr_surplus / 2.5)))
 
         if self.upcast_level is not None:
             upcast_level = self.upcast_level
         elif self.upcastable:
-            proposed_upcast_level = math.floor(cr / 3) if cr >= 3 else 0
+            proposed_upcast_level = min(5, math.ceil(cr / 2.5))
             upcast_level = proposed_upcast_level if proposed_upcast_level > self.level else None
         else:
             upcast_level = None
@@ -82,7 +88,8 @@ class StatblockSpell:
 
         asides = [level, notes]
         asides = [a for a in asides if a != ""]
-
         asides = f" ({', '.join(asides)})" if len(asides) > 0 else ""
 
-        return f'<span class="spell"><i>{self.name}</i></span>{asides}'
+        symbols = self.symbols if self.symbols is not None else ""
+
+        return f'<span class="spell"><i>{self.name}{symbols}</i></span>{asides}'

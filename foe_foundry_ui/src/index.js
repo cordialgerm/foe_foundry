@@ -11,7 +11,10 @@ import PowersPage from "./pages/PowersPage.tsx";
 import { OglPage } from "./pages/OglPage.tsx";
 
 function isLocalhost() {
-  return window.location.hostname === "localhost";
+  return (
+    (window.location.hostname === "localhost") |
+    (window.location.hostname === "127.0.0.1")
+  );
 }
 
 const baseUrl = isLocalhost()
