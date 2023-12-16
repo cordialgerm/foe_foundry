@@ -1,8 +1,5 @@
-import math
 from datetime import datetime
 from typing import List
-
-from num2words import num2words
 
 from ...attack_template import natural, spell, weapon
 from ...creature_types import CreatureType
@@ -10,11 +7,16 @@ from ...damage import AttackType, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...spells import (conjuration, enchantment, evocation, illusion,
-                       necromancy, transmutation)
+from ...spells import conjuration, enchantment, evocation, illusion, necromancy, transmutation
 from ...statblocks import BaseStatblock
-from ..power import (HIGH_POWER, LOW_POWER, MEDIUM_POWER, Power, PowerType,
-                     PowerWithStandardScoring)
+from ..power import (
+    HIGH_POWER,
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 from ..spell import SpellPower, StatblockSpell
 
 
@@ -275,7 +277,7 @@ def _ControllingSpells() -> List[Power]:
             score_args=dict(require_damage=DamageType.Psychic),
         ),
         _ControllingSpellPower(
-            spell=enchantment.HoldPerson.for_statblock(), power_level=HIGH_POWER
+            spell=enchantment.HoldPerson.for_statblock(), power_level=MEDIUM_POWER
         ),
         _ControllingSpellPower(
             spell=transmutation.Levitate.for_statblock(),
@@ -288,16 +290,16 @@ def _ControllingSpells() -> List[Power]:
         ),
         _ControllingSpellPower(spell=illusion.Silence.for_statblock(), power_level=LOW_POWER),
         _ControllingSpellPower(
-            spell=enchantment.Suggestion.for_statblock(), power_level=HIGH_POWER
+            spell=enchantment.Suggestion.for_statblock(), power_level=MEDIUM_POWER
         ),
         _ControllingSpellPower(
             spell=conjuration.Web.for_statblock(),
-            power_level=HIGH_POWER,
+            power_level=MEDIUM_POWER,
             score_args=dict(require_types=[CreatureType.Monstrosity, CreatureType.Humanoid]),
         ),
         _ControllingSpellPower(
             spell=transmutation.Slow.for_statblock(),
-            power_level=HIGH_POWER,
+            power_level=MEDIUM_POWER,
             score_args=dict(require_types=[CreatureType.Humanoid, CreatureType.Construct]),
         ),
         _ControllingSpellPower(
