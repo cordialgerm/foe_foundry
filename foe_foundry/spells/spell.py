@@ -30,11 +30,18 @@ class Spell:
         return Spell(**args)
 
     def for_statblock(
-        self, uses: int | None = None, notes: str | None = None, **kwargs
+        self,
+        uses: int | None = None,
+        notes: str | None = None,
+        concentration: bool | None = None,
+        **kwargs,
     ) -> StatblockSpell:
+        if concentration is None:
+            concentration = self.concentration
+
         # some spells can be upcast to a higher level and remove their concentraiton requirement
         # for example Bestow Curse loses concentratino at fifth level
-        if self.concentration_spell_level is None and self.concentration:
+        if self.concentration_spell_level is None and concentration:
             concentration_spell_level = 10
         else:
             concentration_spell_level = self.concentration_spell_level

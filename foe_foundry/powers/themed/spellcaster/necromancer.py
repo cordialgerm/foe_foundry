@@ -1,16 +1,3 @@
-# At will: dancing lights, mage hand, prestidigitation
-
-# 2/day each: bestow curse, dimension door, mage armor, web
-
-# 1/day: circle of death
-
-# Bonus Actions
-# Summon Undead (1/Day). The necromancer magically summons five skeletons or zombies (both appear in the Monster Manual). The summoned creatures appear in unoccupied spaces within 60 feet of the necromancer, whom they obey. They take their turns immediately after the necromancer. Each lasts for 1 hour, until it or the necromancer dies, or until the necromancer dismisses it as a bonus action.
-
-# Reactions
-# Grim Harvest. When the necromancer kills a creature with necrotic damage, the necromancer regains 9 (2d8) hit points.
-
-
 from typing import List
 
 from ....attack_template import spell

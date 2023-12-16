@@ -1,4 +1,4 @@
-from math import ceil, floor
+from math import floor
 from typing import List, Tuple
 
 import numpy as np
@@ -8,10 +8,9 @@ from ..ac_templates import UnholyArmor
 from ..attack_template import AttackTemplate, natural, spell, weapon
 from ..attributes import Skills, Stats
 from ..creature_types import CreatureType
-from ..damage import AttackType, Condition, DamageType
+from ..damage import Condition, DamageType
 from ..role_types import MonsterRole
 from ..size import Size, get_size_for_cr
-from ..spells.abjuration import DispelMagic
 from ..statblocks import BaseStatblock
 from ..utils import choose_enum
 from .template import CreatureTypeTemplate

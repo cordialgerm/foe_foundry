@@ -1,14 +1,12 @@
 from datetime import datetime
-from typing import List, Tuple
+from typing import List
 
 import numpy as np
-
-from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, DamageType, conditions
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...spells import enchantment, evocation
 from ...statblocks import BaseStatblock
@@ -112,7 +110,9 @@ class _FiendishCackle(FiendishPower):
         return [feature1]
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        spell = enchantment.Bane.for_statblock(uses=1, notes="no concentration")
+        spell = enchantment.Bane.for_statblock(
+            uses=1, concentration=False, notes="no concentration"
+        )
         return stats.add_spell(spell)
 
 

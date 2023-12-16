@@ -4,9 +4,6 @@ from typing import List, Tuple
 
 from numpy.random import Generator
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
 from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Bleeding, DamageType
 from ...die import Die, DieFormula

@@ -1,11 +1,6 @@
-import math
 from typing import List
 
-from num2words import num2words
-
-from foe_foundry.statblocks import BaseStatblock
-
-from ..features import ActionType, Feature
+from ..features import Feature
 from ..spells import StatblockSpell
 from ..statblocks import BaseStatblock
 from .power import MEDIUM_POWER, PowerType, PowerWithStandardScoring
