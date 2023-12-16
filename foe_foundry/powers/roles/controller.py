@@ -277,7 +277,9 @@ def _ControllingSpells() -> List[Power]:
             score_args=dict(require_damage=DamageType.Psychic),
         ),
         _ControllingSpellPower(
-            spell=enchantment.HoldPerson.for_statblock(), power_level=MEDIUM_POWER
+            spell=enchantment.HoldPerson.for_statblock(),
+            power_level=MEDIUM_POWER,
+            score_args=dict(require_attack_types=AttackType.AllSpell()),
         ),
         _ControllingSpellPower(
             spell=transmutation.Levitate.for_statblock(),
@@ -288,9 +290,15 @@ def _ControllingSpells() -> List[Power]:
             spell=conjuration.SleetStorm.for_statblock(),
             score_args=dict(require_damage=DamageType.Cold),
         ),
-        _ControllingSpellPower(spell=illusion.Silence.for_statblock(), power_level=LOW_POWER),
         _ControllingSpellPower(
-            spell=enchantment.Suggestion.for_statblock(), power_level=MEDIUM_POWER
+            spell=illusion.Silence.for_statblock(),
+            power_level=LOW_POWER,
+            score_args=dict(require_attack_types=AttackType.AllSpell()),
+        ),
+        _ControllingSpellPower(
+            spell=enchantment.Suggestion.for_statblock(),
+            power_level=MEDIUM_POWER,
+            score_args=dict(require_attack_types=AttackType.AllSpell()),
         ),
         _ControllingSpellPower(
             spell=conjuration.Web.for_statblock(),
@@ -303,7 +311,9 @@ def _ControllingSpells() -> List[Power]:
             score_args=dict(require_types=[CreatureType.Humanoid, CreatureType.Construct]),
         ),
         _ControllingSpellPower(
-            spell=conjuration.FogCloud.for_statblock(), power_level=LOW_POWER
+            spell=conjuration.FogCloud.for_statblock(),
+            power_level=LOW_POWER,
+            score_args=dict(require_attack_types=AttackType.AllSpell()),
         ),
     ]
 
