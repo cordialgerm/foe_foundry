@@ -1,4 +1,5 @@
-{% from 'macros.html.j2' import property, property_block, features_block, attack_blocks, attack_block, benchmark_block
+{% from 'macros.html.j2' import property, property_block, property_block_no_punctuation, features_block, attack_blocks,
+attack_block, benchmark_block
 %}
 
 <stat-block class="stat-block">
@@ -34,9 +35,12 @@
 
     {{attack_blocks(attacks)}}
 
+    {{property_block_no_punctuation('Spellcasting', spellcasting)}}
+
     {{features_block(actions)}}
 
     {{features_block(bonus_actions, 'Bonus Actions')}}
+
     {{features_block(reactions, 'Reactions')}}
 
     {# {% if benchmarks %}

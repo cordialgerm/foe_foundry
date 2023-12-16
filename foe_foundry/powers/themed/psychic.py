@@ -2,12 +2,15 @@ from datetime import datetime
 from math import ceil
 from typing import List
 
+from foe_foundry.statblocks import BaseStatblock
+
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
 from ...damage import AttackType, Burning, DamageType, Dazed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -58,15 +61,10 @@ class _Telekinetic(PsychicPower):
         super().__init__(name="Telekinesis", source="5.1SRD Telekinesis")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dc = int(ceil(11 + stats.cr / 2.0))
+        return []
 
-        feature = Feature(
-            name="Telekinesis",
-            description=f"{stats.selfref.capitalize()} casts *Telekinisis* (DC {dc}) as a 5th level spell targeting a creature it can see within 60 feet.",
-            action=ActionType.Action,
-            replaces_multiattack=2,
-        )
-        return [feature]
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        return stats.add_spell(transmutation.Telekinesis.for_statblock())
 
 
 class _PsychicInfestation(PsychicPower):

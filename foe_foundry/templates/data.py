@@ -10,6 +10,7 @@ from ..benchmarks import Benchmark
 from ..damage import Attack, DamageType
 from ..features import ActionType, Feature
 from ..skills import Skills
+from ..spells import StatblockSpell
 from ..statblocks import Statblock
 from .utilities import fix_punctuation
 
@@ -51,6 +52,8 @@ class MonsterTemplateData:
 
     multiattack: str
     attack: Attack
+
+    spellcasting: str
 
     benchmarks: List[Benchmark] | None = None
 
@@ -116,6 +119,8 @@ class MonsterTemplateData:
             elif feature.action == ActionType.Reaction:
                 reactions.append(feature)
 
+        spellcasting = stats.spellcasting_md
+
         attack_modifiers = []
         for feature in stats.features:
             if feature.modifies_attack:
@@ -145,6 +150,10 @@ class MonsterTemplateData:
                 for f in stats.features
                 if f.replaces_multiattack > 0 and f.replaces_multiattack < stats.multiattack
             ]
+
+            # spellcasting can replace two multiattacks for creatures with 3+ attacks
+            if spellcasting and stats.multiattack >= 3:
+                replacements.append(("Spellcasting", 2))
 
             lines = []
             for name, replacement in replacements:
@@ -190,6 +199,7 @@ class MonsterTemplateData:
             attack=stats.attack,
             attacks=stats.additional_attacks,
             benchmarks=benchmarks,
+            spellcasting=spellcasting,
         )
         return t
 

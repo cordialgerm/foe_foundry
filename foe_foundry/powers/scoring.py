@@ -145,6 +145,7 @@ def score(
     require_damage_exact_match: bool = False,
     require_secondary_damage_type: bool = False,
     require_cr: float | None = None,
+    require_max_cr: float | None = None,
     require_shield: bool = False,
     require_callback: StatblockFilter | None = None,
     bonus_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
@@ -158,6 +159,7 @@ def score(
     bonus_attack_types: AttackType | Set[AttackType] | List[AttackType] | None = None,
     bonus_skills: Skills | Set[Skills] | List[Skills] | None = None,
     bonus_cr: float | None = None,
+    bonus_max_cr: float | None = None,
     bonus_shield: bool = False,
     bonus_callback: StatblockFilter | None = None,
     attack_names: AttackNames = None,
@@ -180,6 +182,7 @@ def score(
     require_skills = t.require_set(require_skills)
     require_no_creature_class = t.require_flag(require_no_creature_class)
     require_cr = t.require_val(require_cr)
+    require_max_cr = t.require_val(require_max_cr)
     require_shield = t.require_flag(require_shield)
     require_callback = t.require_val(require_callback)
 
@@ -192,6 +195,7 @@ def score(
     bonus_attack_types = t.optional_set(bonus_attack_types, require_attack_types)
     bonus_skills = t.optional_set(bonus_skills, require_skills)
     bonus_cr = t.optional_val(bonus_cr, require_cr)
+    bonus_max_cr = t.optional_val(bonus_max_cr, require_max_cr)
     bonus_shield = t.optional_flag(require_shield)
     bonus_callback = t.optional_val(bonus_callback, require_callback)
 
@@ -233,6 +237,9 @@ def score(
 
     if require_cr:
         t.required(candidate.cr >= require_cr)
+
+    if require_max_cr:
+        t.required(candidate.cr <= require_max_cr)
 
     if require_shield:
         t.required(candidate.uses_shield)
@@ -288,6 +295,9 @@ def score(
 
     if bonus_cr:
         t.bonus(candidate.cr >= bonus_cr)
+
+    if bonus_max_cr:
+        t.bonus(candidate.cr <= bonus_max_cr)
 
     if bonus_shield:
         t.bonus(candidate.uses_shield)

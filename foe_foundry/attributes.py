@@ -35,7 +35,19 @@ class Attributes:
 
     @property
     def spellcasting_mod(self) -> int:
-        return max(self.stat_mod(Stats.CHA), self.stat_mod(Stats.WIS), self.stat_mod(Stats.INT))
+        stat = self.spellcasting_stat
+        return self.stat_mod(stat)
+
+    @property
+    def spellcasting_stat(self) -> Stats:
+        stats = [Stats.INT, Stats.CHA, Stats.WIS]
+        scores = [self.stat(s) for s in stats]
+        i = np.argmax(scores)
+        return stats[i]
+
+    @property
+    def spellcasting_dc(self) -> int:
+        return 8 + self.proficiency + self.spellcasting_mod
 
     @property
     def is_sapient(self) -> bool:
