@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6b0998aa.css",
-    "main.js": "/static/js/main.6f54d36b.js",
+    "main.js": "/static/js/main.6d5db282.js",
     "static/media/dragon-obsidian.png": "/static/media/dragon-obsidian.798892bf95c4088728c7.png",
     "static/media/aberration-monstrosity-ravener.png": "/static/media/aberration-monstrosity-ravener.ebaf7c955f4a856bb837.png",
     "static/media/aberration-umbral-terror.png": "/static/media/aberration-umbral-terror.90fd09db4cac7a1fd5b7.png",
@@ -149,10 +149,10 @@
     "static/media/dragon-wyvern.png": "/static/media/dragon-wyvern.275330db06a6c4d59d5d.png",
     "index.html": "/index.html",
     "main.6b0998aa.css.map": "/static/css/main.6b0998aa.css.map",
-    "main.6f54d36b.js.map": "/static/js/main.6f54d36b.js.map"
+    "main.6d5db282.js.map": "/static/js/main.6d5db282.js.map"
   },
   "entrypoints": [
     "static/css/main.6b0998aa.css",
-    "static/js/main.6f54d36b.js"
+    "static/js/main.6d5db282.js"
   ]
 }

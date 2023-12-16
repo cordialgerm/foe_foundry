@@ -13,6 +13,23 @@ class Stats(StrEnum):
     WIS = "WIS"
     CHA = "CHA"
 
+    @property
+    def description(self) -> str:
+        if self == Stats.STR:
+            return "Strength"
+        elif self == Stats.DEX:
+            return "Dexterity"
+        elif self == Stats.CON:
+            return "Constitution"
+        elif self == Stats.INT:
+            return "Intelligence"
+        elif self == Stats.WIS:
+            return "Wisdom"
+        elif self == Stats.CHA:
+            return "Charisma"
+        else:
+            raise ValueError(f"Invalid stat: {self}")
+
     @staticmethod
     def All() -> List[Stats]:
         return [cast(Stats, s) for s in Stats._member_map_.values()]

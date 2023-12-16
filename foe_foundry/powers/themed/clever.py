@@ -9,6 +9,7 @@ from ...die import DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
+from ...spells import evocation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -78,14 +79,16 @@ class _ArcaneMark(CleverPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dc = stats.difficulty_class
         feature = Feature(
             name="Arcane Mark",
             uses=1,
             action=ActionType.BonusAction,
-            description=f"Immediately after hitting a target with a ranged attack, {stats.selfref} casts *Faerie Fire* centered on the target with a DC of {dc}.",
+            description=f"Immediately after hitting a target with a ranged attack, {stats.selfref} casts *Faerie Fire* centered on the target.",
         )
         return [feature]
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        return stats.add_spell(evocation.FaerieFire.for_statblock())
 
 
 class _UnsettlingWords(CleverPower):

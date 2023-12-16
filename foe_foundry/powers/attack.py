@@ -31,7 +31,7 @@ def flavorful_damage_types(
     if creature_type == CreatureType.Aberration:
         options.add(DamageType.Psychic)
     elif creature_type == CreatureType.Beast:
-        pass  # look at role
+        return {DamageType.Poison}  # beasts are boring
     elif creature_type == CreatureType.Celestial:
         options.add(DamageType.Radiant)
     elif creature_type == CreatureType.Construct:

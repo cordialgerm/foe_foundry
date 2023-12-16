@@ -1,8 +1,5 @@
-import math
 from datetime import datetime
 from typing import List
-
-from num2words import num2words
 
 from ...attack_template import natural, spell, weapon
 from ...creature_types import CreatureType
@@ -10,6 +7,7 @@ from ...damage import AttackType, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import conjuration, enchantment, evocation, illusion, necromancy, transmutation
 from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
@@ -19,7 +17,7 @@ from ..power import (
     PowerType,
     PowerWithStandardScoring,
 )
-from ..spell import Spell, SpellPower
+from ..spell import SpellPower, StatblockSpell
 
 
 class _PacifyingTouch(PowerWithStandardScoring):
@@ -90,30 +88,19 @@ class _TongueTwister(PowerWithStandardScoring):
         return [feature]
 
 
-class _Eyebite(PowerWithStandardScoring):
+class _Eyebite(SpellPower):
     def __init__(self):
         super().__init__(
             name="Eyebite",
+            spell=necromancy.Eyebite.for_statblock(uses=1),
             power_type=PowerType.Role,
             create_date=datetime(2023, 11, 29),
-            source="SRD5.1 Eyebite",
             theme="controller",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_types=[CreatureType.Fey, CreatureType.Undead],
             ),
         )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dc = stats.difficulty_class
-        feature = Feature(
-            name="Eyebite",
-            action=ActionType.Action,
-            uses=1,
-            replaces_multiattack=2,
-            description=f"{stats.selfref.capitalize()} casts *Eyebite* at a creature it can see within 60 feet using a DC of {dc}.",
-        )
-        return [feature]
 
 
 class _HeartTremors(PowerWithStandardScoring):
@@ -233,32 +220,32 @@ class _TiringAttack(PowerWithStandardScoring):
 
 
 class _ControllingSpellPower(SpellPower):
-    def __init__(
-        self,
-        spell: Spell,
-    ):
+    def __init__(self, spell: StatblockSpell, **kwargs):
+        # all spells in this class are controller spells
+        score_args = dict(require_roles=MonsterRole.Controller) | kwargs.get("score_args", {})
+        args = kwargs.copy()
+        args.pop("score_args", None)
+
         super().__init__(
             spell=spell,
             power_type=PowerType.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
+            score_args=score_args,
+            **args,
         )
 
 
 def _ControllingSpells() -> List[Power]:
-    spells = [
-        Spell(
-            name="Blindness/Deafness",
-            level=2,
-            upcast=True,
+    return [
+        _ControllingSpellPower(
+            spell=necromancy.BlindnessDeafness.for_statblock(),
             score_args=dict(
                 require_damage=[DamageType.Necrotic, DamageType.Poison],
             ),
         ),
-        Spell(
-            name="Command",
-            level=1,
-            upcast=True,
+        _ControllingSpellPower(
+            spell=enchantment.Command.for_statblock(),
             score_args=dict(
                 require_types=[
                     CreatureType.Humanoid,
@@ -268,89 +255,67 @@ def _ControllingSpells() -> List[Power]:
                 ],
             ),
         ),
-        Spell(
-            name="Entangle",
-            level=1,
-            upcast=False,
+        _ControllingSpellPower(
+            spell=conjuration.Entangle.for_statblock(),
             score_args=dict(
                 require_types=[CreatureType.Plant, CreatureType.Fey, CreatureType.Humanoid]
             ),
         ),
-        Spell(
-            name="Grease",
-            level=1,
-            action_type=ActionType.BonusAction,
-            upcast=False,
+        _ControllingSpellPower(
+            spell=conjuration.Grease.for_statblock(),
             power_level=LOW_POWER,
             score_args=dict(require_types=CreatureType.Humanoid),
         ),
-        Spell(
-            name="Gust of Wind",
-            level=2,
-            upcast=False,
+        _ControllingSpellPower(
+            spell=evocation.GustOfWind.for_statblock(),
             power_level=LOW_POWER,
             score_args=dict(require_damage=[DamageType.Lightning, DamageType.Thunder]),
         ),
-        Spell(
-            name="Hideous Laughter",
-            level=1,
-            upcast=False,
+        _ControllingSpellPower(
+            spell=enchantment.HideousLaughter.for_statblock(),
             power_level=LOW_POWER,
             score_args=dict(require_damage=DamageType.Psychic),
         ),
-        Spell(name="Hold Person", level=2, upcast=True, power_level=HIGH_POWER),
-        Spell(
-            name="Levitate",
-            level=2,
-            upcast=False,
+        _ControllingSpellPower(
+            spell=enchantment.HoldPerson.for_statblock(),
+            power_level=MEDIUM_POWER,
+            score_args=dict(require_attack_types=AttackType.AllSpell()),
+        ),
+        _ControllingSpellPower(
+            spell=transmutation.Levitate.for_statblock(),
             power_level=LOW_POWER,
             score_args=dict(require_types=[CreatureType.Elemental, CreatureType.Humanoid]),
         ),
-        Spell(
-            name="Sleet Storm",
-            level=3,
-            upcast=False,
+        _ControllingSpellPower(
+            spell=conjuration.SleetStorm.for_statblock(),
             score_args=dict(require_damage=DamageType.Cold),
         ),
-        Spell(name="Silence", level=2, upcast=False, power_level=LOW_POWER),
-        Spell(
-            name="Suggestion",
-            level=2,
-            upcast=False,
-            score_args=dict(
-                require_types=[
-                    CreatureType.Humanoid,
-                    CreatureType.Fiend,
-                    CreatureType.Fey,
-                    CreatureType.Monstrosity,
-                ]
-            ),
+        _ControllingSpellPower(
+            spell=illusion.Silence.for_statblock(),
+            power_level=LOW_POWER,
+            score_args=dict(require_attack_types=AttackType.AllSpell()),
         ),
-        Spell(
-            name="Web",
-            level=2,
-            upcast=False,
+        _ControllingSpellPower(
+            spell=enchantment.Suggestion.for_statblock(),
+            power_level=MEDIUM_POWER,
+            score_args=dict(require_attack_types=AttackType.AllSpell()),
+        ),
+        _ControllingSpellPower(
+            spell=conjuration.Web.for_statblock(),
+            power_level=MEDIUM_POWER,
             score_args=dict(require_types=[CreatureType.Monstrosity, CreatureType.Humanoid]),
         ),
-        Spell(
-            name="Slow",
-            level=3,
-            upcast=False,
-            score_args=dict(
-                require_types=[
-                    CreatureType.Humanoid,
-                ]
-            ),
+        _ControllingSpellPower(
+            spell=transmutation.Slow.for_statblock(),
+            power_level=MEDIUM_POWER,
+            score_args=dict(require_types=[CreatureType.Humanoid, CreatureType.Construct]),
         ),
-        Spell(
-            name="Fog Cloud",
-            level=1,
-            upcast=True,
+        _ControllingSpellPower(
+            spell=conjuration.FogCloud.for_statblock(),
             power_level=LOW_POWER,
+            score_args=dict(require_attack_types=AttackType.AllSpell()),
         ),
     ]
-
-    return [_ControllingSpellPower(spell) for spell in spells]
 
 
 Eyebite: Power = _Eyebite()

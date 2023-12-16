@@ -9,6 +9,7 @@ from ...damage import Attack, AttackType, Bleeding, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
+from ...spells import conjuration
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -92,14 +93,11 @@ class _Entangle(PlantPower):
         super().__init__(name="Entangle", source="SRD5.1 Entangle")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        feature = Feature(
-            name="Entangle",
-            action=ActionType.Action,
-            uses=3,
-            replaces_multiattack=1,
-            description=f"{stats.selfref.capitalize()} casts *Entangle* (DC {stats.difficulty_class}) without requiring concentration.",
-        )
-        return [feature]
+        return []
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        spell = conjuration.Entangle.for_statblock(uses=3, notes="no concentration")
+        return stats.add_spell(spell=spell)
 
 
 class _ChokingVine(PlantPower):

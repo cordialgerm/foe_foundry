@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import math
 from copy import deepcopy
 from dataclasses import dataclass, field
 from typing import Callable, Dict, List, Set
@@ -15,6 +16,7 @@ from ..role_types import MonsterRole
 from ..senses import Senses
 from ..size import Size
 from ..skills import Stats
+from ..spells import StatblockSpell
 from ..xp import xp_by_cr
 from .dials import MonsterDials
 from .suggested_powers import recommended_powers_for_cr
@@ -50,6 +52,7 @@ class BaseStatblock:
     ac_boost: int = 0
     uses_shield: bool = False
     ac_templates: List[ArmorClassTemplate] = field(default_factory=list)
+    spells: List[StatblockSpell] = field(default_factory=list)
     creature_subtype: str | None = None
     creature_class: str | None = None
     damage_modifier: float = 1.0
@@ -94,6 +97,21 @@ class BaseStatblock:
         else:
             return f"the {self.role.value.lower()}"
 
+    @property
+    def spellcasting_md(self) -> str:
+        if len(self.spells) == 0:
+            spellcasting = ""
+        else:
+            spellcasting = f"{self.selfref.capitalize()} casts one of the following spells, using {self.attributes.spellcasting_stat.description} as the spellcasting ability (spell save DC {self.attributes.spellcasting_dc}):"
+            uses = [None, 5, 4, 3, 2, 1]
+            for use in uses:
+                line = _spell_list(self.spells, use)
+                if line is None:
+                    continue
+                spellcasting += "<p>" + line + "</p>"
+
+        return spellcasting
+
     def __copy_args__(self) -> dict:
         args: dict = dict(
             name=self.name,
@@ -123,6 +141,7 @@ class BaseStatblock:
             nonmagical_resistance=self.nonmagical_resistance,
             nonmagical_immunity=self.nonmagical_immunity,
             additional_attacks=[a.copy() for a in self.additional_attacks],
+            spells=[s.copy() for s in self.spells],
             creature_class=self.creature_class,
             creature_subtype=self.creature_subtype,
             damage_modifier=self.damage_modifier,
@@ -317,6 +336,14 @@ class BaseStatblock:
 
         return self.copy(additional_attacks=additional_attacks)
 
+    def add_spells(self, spells: List[StatblockSpell]) -> BaseStatblock:
+        new_spells = [s.copy() for s in self.spells]
+        new_spells.extend([s.scale_for_cr(self.cr) for s in spells])
+        return self.copy(spells=new_spells)
+
+    def add_spell(self, spell: StatblockSpell) -> BaseStatblock:
+        return self.add_spells([spell])
+
     def target_value(self, target: float = 1.0, **args) -> DieFormula:
         adjustment = 1.0
 
@@ -341,3 +368,16 @@ class BaseStatblock:
 
         scaled_target = self.attack.average_damage * target * adjustment
         return DieFormula.target_value(target=scaled_target, **args)
+
+
+def _spell_list(all_spells: List[StatblockSpell], uses: int | None) -> str | None:
+    spells = [s.caption_md for s in all_spells if s.uses == uses]
+    if len(spells) == 0:
+        return None
+
+    if uses is None:
+        line_prefix = "At will: "
+    else:
+        line_prefix = f"{uses}/day each: "
+
+    return line_prefix + ", ".join(spells)
