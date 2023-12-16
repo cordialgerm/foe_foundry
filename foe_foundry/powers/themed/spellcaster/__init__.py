@@ -1,13 +1,30 @@
 from typing import List
 
 from ...power import Power
-from . import abjurer, celestial, divination, enchanter, fiendish, necromancer
+from . import (
+    abjurer,
+    celestial,
+    conjurer,
+    divination,
+    elementalist,
+    enchanter,
+    fiendish,
+    illusionist,
+    necromancer,
+    psionic,
+    transmuter,
+)
 
 SpellcasterPowers: List[Power] = (
-    celestial.CelestialCasters()
+    abjurer.AbjurationWizards()
+    + celestial.CelestialCasters()
+    + conjurer.ConjurationWizards()
     + divination.DivinationWizards()
-    + fiendish.FiendishCasters()
+    + elementalist.ElementalistWizards()
     + enchanter.EnchanterWizards()
+    + fiendish.FiendishCasters()
+    + illusionist.IllusionistWizards()
     + necromancer.NecromancerWizards()
-    + abjurer.AbjurationWizards()
+    + psionic.PsionicCasters()
+    + transmuter.TransmutationWizards()
 )

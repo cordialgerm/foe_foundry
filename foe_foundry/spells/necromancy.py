@@ -10,6 +10,8 @@ BestowCurse: Spell = Spell(
     action_type=ActionType.Action,
     upcast=True,
     save=Stats.WIS,
+    concentration=True,
+    concentration_spell_level=5,  # no concentration at 5th level or higher
     description="""You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:
 
 Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.
@@ -43,6 +45,35 @@ CircleOfDeath: Spell = Spell(
     save=Stats.CON,
     description="""A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one.""",
     upcast_description="""When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th.""",
+)
+
+Contagion: Spell = Spell(
+    name="Contagion",
+    level=5,
+    school="necromancy",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    upcast=False,
+    save=Stats.CON,
+    concentration=True,
+    description="""
+Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, the target is poisoned.
+
+At the end of each of the poisoned target’s turns, the target must make a Constitution saving throw. If the target succeeds on three of these saves, it is no longer poisoned, and the spell ends. If the target fails three of these saves, the target is no longer poisoned, but choose one of the diseases below. The target is subjected to the chosen disease for the spell’s duration.
+
+Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease’s effects apply to it.
+
+Blinding Sickness. Pain grips the creature’s mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is blinded.
+
+Filth Fever. A raging fever sweeps through the creature’s body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength.
+
+Flesh Rot. The creature’s flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage.
+
+Mindfire. The creature’s mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the confusion spell during combat.
+
+Seizure. The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity.
+
+Slimy Doom. The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is stunned until the end of its next turn.""",
 )
 
 Eyebite: Spell = Spell(

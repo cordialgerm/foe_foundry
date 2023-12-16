@@ -16,7 +16,7 @@ def spell_list(
     for s in spells:
         if s in exclude:
             continue
-        symbols = "\\*" if s.school in mark_schools else None
+        symbols = "*" if s.school in mark_schools else None
         unsorted.append(s.for_statblock(uses=uses, symbols=symbols))
 
     return sorted(unsorted, key=lambda s: s.name)

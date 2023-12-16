@@ -2,6 +2,46 @@ from ..features import ActionType
 from ..skills import Stats
 from .spell import Spell
 
+AcidArrow: Spell = Spell(
+    name="Acid Arrow",
+    level=2,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=Stats.DEX,
+    description="""A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.""",
+    upcast_description="When you cast this spell using a spell slot of 3rd level or higher, the damage (both initial and later) increases by 1d4 for each slot level above 2nd.",
+    range="90 feet",
+)
+
+
+ArcaneHand = Spell(
+    name="Arcane Hand",
+    level=5,
+    school="evocation",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    upcast=True,
+    concentration=True,
+    description="""
+You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell's duration, and it moves at your command, mimicking the movements of your own hand.
+
+The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. It has a Strength of 26 (+8) and a Dexterity of 10 (+0). The hand doesn't fill its space.
+
+When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.
+
+Clenched Fist. The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes 4d8 force damage.
+
+Forceful Hand. The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand's Strength contested by the Strength (Athletics) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it.
+
+Grasping Hand. The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to 2d6 + your spellcasting ability modifier.
+
+Interposing Hand. The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target.""",
+    upcast_description="""When you cast this spell using a spell slot of 6th level or higher, the damage from the clenched fist option increases by 2d8 and the damage from the grasping hand increases by 2d6 for each slot level above 5th.""",
+)
+
 BladeBarrier: Spell = Spell(
     name="Blade Barrier",
     level=6,
@@ -14,6 +54,21 @@ BladeBarrier: Spell = Spell(
     description="""You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.
 When a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage.""",
     range="90 feet",
+)
+
+ConeOfCold: Spell = Spell(
+    name="Cone of Cold",
+    level=5,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=Stats.CON,
+    description="""A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.
+A creature killed by this spell becomes a frozen statue until it thaws.""",
+    upcast_description="""When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.""",
+    range="Self (60-foot cone)",
 )
 
 
@@ -123,6 +178,37 @@ GustOfWind: Spell = Spell(
     range="Self (60-foot line)",
 )
 
+HeatMetal: Spell = Spell(
+    name="Heat Metal",
+    level=2,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=True,
+    action_type=ActionType.Action,
+    upcast_description="When you cast this spell using a spell slot of 3rd level or higher, you can target one additional suit of metal armor for each slot level above 2nd.",
+    save=Stats.CON,
+    description="""Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again.
+If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.""",
+    range="60 feet",
+)
+
+IceStorm: Spell = Spell(
+    name="Ice Storm",
+    level=4,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=Stats.DEX,
+    description="""A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.
+Hailstones turn the storm's area of effect into difficult terrain until the end of your next turn.""",
+    upcast_description="When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.",
+    range="300 feet",
+)
+
+
 LightningBolt: Spell = Spell(
     name="Lightning Bolt",
     level=3,
@@ -149,6 +235,22 @@ MassCureWounds: Spell = Spell(
     description="""A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.""",
     range="60 feet",
 )
+
+Thunderwave: Spell = Spell(
+    name="Thunderwave",
+    level=1,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=Stats.CON,
+    description="""A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.
+In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.""",
+    upcast_description="When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+    range="Self (15-foot cube)",
+)
+
 
 WallOfFire: Spell = Spell(
     name="Wall of Fire",

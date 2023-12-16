@@ -13,11 +13,11 @@ class _Spellcaster(PowerWithStandardScoring):
     def __init__(
         self,
         name: str,
-        min_cr: int,
-        max_cr: int,
         spells: List[StatblockSpell],
         theme: str,
         score_args: dict,
+        min_cr: int = 1,
+        max_cr: int = 100,
         creature_class: str | None = None,
         power_level=HIGH_POWER,
         require_attack_types=AttackType.AllSpell(),

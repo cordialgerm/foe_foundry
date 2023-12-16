@@ -48,6 +48,18 @@ FogCloud: Spell = Spell(
     upcast_description="When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st.",
 )
 
+Gate: Spell = Spell(
+    name="Gate",
+    level=9,
+    school="conjuration",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=None,
+    upcast=False,
+    concentration=True,
+    description="You conjure a portal linking an unoccupied space you can see within range to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for the duration.",
+)
+
 Grease: Spell = Spell(
     name="Grease",
     level=1,

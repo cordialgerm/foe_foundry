@@ -22,6 +22,7 @@ class Spell:
     save: Stats | None = None
     upcast_description: str | None = None
     range: str | None = None
+    concentration_spell_level: int | None = None
 
     def copy(self, **kwargs) -> Spell:
         args = asdict(self)
@@ -31,12 +32,20 @@ class Spell:
     def for_statblock(
         self, uses: int | None = None, notes: str | None = None, **kwargs
     ) -> StatblockSpell:
+        # some spells can be upcast to a higher level and remove their concentraiton requirement
+        # for example Bestow Curse loses concentratino at fifth level
+        if self.concentration_spell_level is None and self.concentration:
+            concentration_spell_level = 10
+        else:
+            concentration_spell_level = self.concentration_spell_level
+
         return StatblockSpell(
             name=self.name,
             level=self.level,
             upcastable=self.upcast,
             uses=uses,
             notes=notes,
+            concentration_spell_level=concentration_spell_level,
             **kwargs,
         )
 
@@ -50,10 +59,19 @@ class StatblockSpell:
     uses: int | None = None
     notes: str | None = None
     symbols: str | None = None
+    concentration_spell_level: int | None = None
 
     @property
     def recommended_min_cr(self) -> float:
         return self.level * 1.5
+
+    @property
+    def concentration(self) -> bool:
+        if self.concentration_spell_level is None:
+            return False
+        else:
+            level = self.upcast_level or self.level
+            return level < self.concentration_spell_level
 
     def copy(self, **kwargs) -> StatblockSpell:
         args = asdict(self)
@@ -92,4 +110,6 @@ class StatblockSpell:
 
         symbols = self.symbols if self.symbols is not None else ""
 
-        return f'<span class="spell"><i>{self.name}{symbols}</i></span>{asides}'
+        concentration = "<sup>c</sup>" if self.concentration else ""
+
+        return f'<span class="spell"><i>{self.name}{concentration}{symbols}</i></span>{asides}'
