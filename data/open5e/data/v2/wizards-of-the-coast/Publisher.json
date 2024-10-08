@@ -1,9 +1,0 @@
-[
-{
-  "model": "api_v2.publisher",
-  "pk": "wizards-of-the-coast",
-  "fields": {
-    "name": "Wizards of the Coast"
-  }
-}
-]
