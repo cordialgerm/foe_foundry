@@ -1,0 +1,13 @@
+The Swarm of Rats is a Medium Beast that embodies a collective of small, vermin-like creatures working together as a singular entity. With an Armor Class of 11 and 17 hit points, this swarm is relatively weak, making it an easy target for adventurers. However, its Challenge Rating of 1/4 indicates that it poses some danger, especially when attacking in numbers. The swarm is resistant to bludgeoning, piercing, and slashing damage, which enhances its survivability against physical attacks, although its low Constitution score of -1 reflects its overall fragility. The swarm's keen senses and unique abilities allow it to navigate effectively in combat, making it a nuisance to encounter, especially in confined spaces where its swarm mechanics can be fully utilized.
+
+The attributes of the Swarm of Rats are as follows:
+- Strength is 10 with a modifier of +0, indicating average physical strength.
+- Dexterity is 12 with a modifier of +1, suggesting slightly above-average agility.
+- Constitution is 8 with a modifier of -1, reflecting below-average resilience, which contributes to its vulnerability.
+- Intelligence is 2 with a modifier of -4, indicating that the swarm is not capable of sophisticated thought.
+- Wisdom is 10 with a modifier of +0, showing average awareness.
+- Charisma is 4 with a modifier of -3, indicating a very bad ability to influence others.
+
+The swarm possesses unique characteristics that enhance its capabilities. The Keen Smell ability grants the swarm advantage on Perception checks that rely on smell, allowing it to detect dangers and locate food effectively. The Swarm ability permits the collective of rats to occupy the same space as another creature and enables them to squeeze through openings meant for Tiny creatures. This makes them particularly effective in tight spaces, as they can swarm around a single enemy. However, it is important to note that the swarm cannot gain hit points or temporary hit points, which limits its durability.
+
+In terms of offensive capabilities, the Swarm of Rats can execute a Bites action. This is a melee weapon attack with a +2 to hit within a reach of 0 feet, targeting a single opponent. A successful hit inflicts 7 piercing damage (2d6), but if the swarm is bloodied, this damage is reduced to 3 piercing damage (1d6). This action allows the swarm to deliver significant damage initially but diminishes its effectiveness as it takes hits during combat. Overall, the Swarm of Rats serves as a stealthy and potentially troublesome enemy, especially in larger numbers.

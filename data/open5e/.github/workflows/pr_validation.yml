@@ -1,0 +1,39 @@
+name: "PR validation"
+on:
+  pull_request:
+    types: [opened, reopened]
+  push:
+    branches-ignore:
+      - staging
+      - main
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: pipenv
+      - name: Install Pipenv
+        run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
+      - name: Install Dependencies
+        run: pipenv install --dev
+      - name: Run migrations
+        run: pipenv run python manage.py quicksetup --noindex
+      - name: Run Tests
+        run: |
+          pipenv run python manage.py runserver 0.0.0.0:8000 &
+          sleep 5 &&
+          pipenv run pytest
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sanitize branch name
+        run: echo "BRANCH_NAME=$(echo ${GITHUB_REF##*/} | tr '/' '-')" >> $GITHUB_ENV
+      - name: Build Docker image
+        uses: docker/build-push-action@v4
+        with:
+          push: false
+          tags: open5e-api:${{ env.BRANCH_NAME }}

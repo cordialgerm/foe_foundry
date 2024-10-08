@@ -1,0 +1,18 @@
+The Fire Elemental is a Large elemental creature characterized by its mastery over fire and its ability to move swiftly across the battlefield. With a Challenge Rating of 5, it poses a respectable threat to adventurers, especially those unprepared for its fiery capabilities. Its notable strengths include being immune to fire and poison damage, as well as having several damaging effects that can continuously harm enemies within close proximity. However, it does have vulnerabilities, particularly to cold damage, which it takes if it encounters water. The Fire Elemental excels in melee combat with its Multiattack action and has powerful area denial abilities through its Fiery Aura.
+
+The Fire Elemental possesses an Armor Class of 14, making it moderately difficult to hit in combat. It has Hit Points totaling 90, calculated from rolling 12 ten-sided dice and adding 24, providing it with good durability. Its movement speed is 50 feet, allowing it to close in on foes quickly. In terms of ability scores, it has a Strength score of 10, which is average, a Dexterity score of 18 (+4), which is very good, and a Constitution score of 14 (+2), which is good. Its Intelligence score is low at 6 (-2), meaning it is not capable of complex reasoning, while Wisdom and Charisma scores are also low at 10 (+0) and 6 (-2) respectively. 
+
+The Fire Elemental has several significant resistances and immunities. It is immune to fire and poison damage, as well as conditions such as fatigue, grappling, paralysis, petrification, poisoning, and being prone. It only has average darkvision with a range of 60 feet and a passive Perception of 10, allowing it to see in dim light. This monster communicates in Ignan, the language of fire creatures.
+
+The Fire Elemental has several unique special abilities:
+- **Fire Form** allows it to move through spaces as narrow as 1 inch without squeezing, making it highly maneuverable in tight areas.
+- **Fiery Aura** deals 5 (1d10) fire damage to creatures that end their turn within 5 feet of the elemental, or to those who touch or strike it in melee while close by. Additionally, it sheds bright light in a 30-foot radius and dim light for an additional 30 feet.
+- **Water Weakness** indicates that the elemental takes 6 (1d12) cold damage if it enters or starts its turn in water, gets splashed by 5 gallons of water, or receives a slam attack from a water elemental. 
+- **Elemental Nature** means the Fire Elemental requires no air, food, or sleep, allowing it to exist in environments hostile to most other creatures.
+
+In combat, the Fire Elemental can use the following actions:
+- **Multiattack** allows it to make two slam attacks, which are its primary method of dealing damage.
+- **Slam** is a melee weapon attack that has a +4 to hit, with a reach of 5 feet, targeting one creature. A successful hit deals 13 (2d8 + 4) fire damage and inflicts an additional 5 (1d10) ongoing fire damage, which can be mitigated if the affected creature uses its action to end it.
+- **Wildfire (Recharge 4-6)** is a powerful ability that lets the elemental move up to half its Speed without provoking opportunity attacks, allowing it to invade the spaces of opponents. When a creature shares its space during this movement, it becomes subject to the elemental's Fiery Aura, and the elemental can make a slam attack against it, inflicting further damage.
+
+Overall, the Fire Elemental is a formidable combatant, perfect for creating chaotic fire-based encounters in any D&D campaign. Its combination of high mobility, area damage, and ongoing effects makes it a strategic threat that challenges players to effectively manage their positioning and resources.

@@ -1,0 +1,78 @@
+## Undead Tactics: The Mummy Lord
+
+So, yeah, mummy lords. This is a totally different league of monster from your rank-and-file mummy—and the power difference between a mummy and a mummy lord is much wider than that between an orc and an orc war chief, a hobgoblin and a hobgoblin warlord, or a gnoll and a gnoll Fang of Yeenoghu. Mummy lords are bosses on par with adult dragons and tougher than giants. Only experienced adventurers need apply.
+Their array of powers makes them complicated to run, so this is going to be a long and thorough breakdown.
+
+Abilities: Average Dexterity and Intelligence; very high Strength, Constitution, Wisdom and Charisma. They’re brutes, but they’re not fools. And they have personality. Conceited, toxic personality, but personality nonetheless.
+Damage and Condition Immunities: same as regular mummies but with an added immunity to physical damage from nonmagical weapons. They’re not the slightest bit afraid of your pigsticker unless it’s got a plus in front of it.
+Damage Vulnerability: Fire, same as regular mummies.
+Saving Throws: Hefty bonuses on Constitution, Intelligence, Wisdom and Charisma saves. That’s two of the big three and two of the little three, and with Strength 18, it doesn’t need to worry about that one, either. The only gap in this fortification is Dexterity. However . . .
+Magic Resistance: Even its lower (only in relative terms) Dexterity isn’t too much of a hindrance, because it makes all its saving throws against magic with advantage. Whoo.
+Rejuvenation: You can’t even kill it unless you jump through the extra hoop of destroying its heart. (For this purpose, I recommend fire.)
+Spellcasting: More on this in a moment.
+Legendary Actions: Every turn, it can perform up to three legendary actions on other characters’ turns. These include an out-of-turn Attack, an area-effect blinding, an area-effect stun attack, suppression of healing and turning momentarily incorporeal.
+Lair Actions and Regional Effects: All the preceding applies if you happen to encounter a mummy lord on the way to the bodega to get milk. A mummy lord in its lair is even more powerful, conveying advantage on saving throws to other undead creatures in the lair, providing them with the equivalent of radar, and giving anyone else who tries to cast a spell a punishing necrotic jolt.
+
+Like I said, a boss. With the attitude of a boss to boot. The mummy lord’s rational and justifiable assumption is that you ain’t jack.
+What does it take to show a mummy lord that you are, indeed, jack? Magical weapons, especially ones imbued with fire damage. Non-spellcasting abilities (such as Divine Strike/Divine Smite, Sacred Weapon, Wrath of the Storm and Elemental Wild Shape) that do direct, nonphysical damage with no saving throw to resist. Managing to inflict 60 hp of any kind of damage in a single round. A mummy lord will be taken aback by these things, and its vanity and arrogance will compel it to vanquish whichever attacker(s) produce the aforementioned damage, which is bad for them but good for the littler fish in the party. (Forget about Turn Undead. The mummy lord gets +9 and advantage on that saving throw.)
+Now let’s look at its spells. I’m going to group these according to their casting time, because this highlights the roles they play in the mummy lord’s action economy.
+Actions (instant or self-sustaining)
+
+Harm is the mummy lord’s nuclear option. It gets to cast this spell only once, so it’s going to choose its target and its moment carefully. If a player character with Extra Attack smacks the mummy lord twice with a +1 flame tongue sword while calling down a Divine Smite each time, that PC’s harm request is expedited and approved immediately.
+Contagion is the mummy lord’s way of showing its contempt. If it suspects a PC may actually be a threat, the mummy lord will inflict Slimy Doom, in order to weaken his or her resistance to the mummy lord’s Rotting Fist and harm. Otherwise, it inflicts Blinding Sickness, because this disease has the most devastating effect overall, thanks to its imposing the blinded condition. (Filth Fever and Seizure affect melee and ranged attackers specifically, but Blinding Sickness nails them both—and also shuts down spellcasters, who generally need to be able to see their targets.) This is a touch attack, and the mummy lord can use it no more than twice, so it reserves contagion for PCs who offend it or pose a threat.
+Divination is useless in combat. It applies only in the extremely rare event that your PCs are petitioning the mummy lord for the use of its oracular services.
+Guardian of faith does up to 60 hp of damage against characters who dare to approach the mummy lord, consuming only a 4th-level spell slot and the action taken to cast it. This is a spell to lead with—normally. That being said, is a mummy lord really going to think it needs this level of protection against a bunch of pathetic mortals? I think it will hold off on casting this spell until it feels threatened.
+Animate dead requires the presence of actual corpses. In a tomb, there are bound to be a few of those lying around; the question is how conveniently located they are, since the spell has a range of only 10 feet. After casting the spell, the mummy lord can control its servant(s) with a bonus action, so this is a desirable spell to cast if and only if the basic conditions are met. Otherwise, spiritual weapon accomplishes the same thing without humanoid remains, and it can be cast without consuming an action.
+Dispel magic is familiar and uncomplicated.
+Command is usually best used to provoke opportunity attacks from allied creatures, but thanks to the mummy lord’s legendary actions, it can benefit from commanding a PC with whom it’s engaged in melee to grovel, as long as someone else gets a turn before the PC does. The flip side is, a command must be issued in a language that the target understands, and it’s not only possible but probable that a mummy lord will speak only ancient, dead languages, so this may be one to skip.
+Guiding bolt is a cheap damage-dealer (4d6 is good for a 1st-level spell, and the damage increases when using higher-level spell slots) that also grants advantage on a future attack. However, the mummy lord’s Rotting Fist attack is even more powerful, so guiding bolt only compares favorably if something is imposing disadvantage on the mummy lord’s attacks, such as if it’s blinded or restrained. On the other hand, this disadvantage also affects whether guiding bolt works in the first place. It’s a bit of a Catch-22. Maybe use it only against a PC whom the mummy lord can’t reach just yet but will be able to reach on its next turn.
+Sacred flame does 2d8 radiant damage on a failed Dexterity saving throw and no damage on a successful one. Weaksauce. There’s only one situation when this is worth using: when no one in range is susceptible to Dreadful Glare, no one is within reach of a Rotting Fist attack and there’s no other spell worth casting.
+Thaumaturgy? Pffft.
+
+Actions (continuous, require concentration)
+
+Insect plague fills a 20-foot-radius sphere with biting insects that do 4d10 damage on a failed Constitution saving throw and half that on a success. This can put a real hurt on a party with a lot of squishy characters in it.
+Hold person is familiar and uncomplicated.
+Silence is good for shutting down several troublesome spellcasters or bards, if they all happen to be within 40 feet of one another. Expect to nab four, on average.
+
+Bonus Actions (instant or self-sustaining)
+
+Spiritual weapon is extra damage, round after round, for the cost of the mummy lord’s bonus action. Why not?
+
+Bonus Actions (continuous, require concentration)
+
+Shield of faith is carrying coals to Newcastle, since the mummy lord’s AC is already 17. It may be worth casting anyway if the mummy lord doesn’t have a different continuous spell that it would rather sustain, but if combat has already begun, it would probably rather spend its bonus action hitting somebody with a spiritual weapon. It seems to me that a mummy lord should cast shield of faith only when it’s taking more hits than it’s dishing out, and that isn’t going to happen often.
+
+Now that we’ve looked at the benefits of each of these spells, let’s consider the costs: spell slots. Intuitively, we believe that higher-level spell slots should be worth more than lower-level ones, but this isn’t true in every case. Another way to look at it, which I believe is more accurate, is that a scarcer spell slot is worth more than a less scarce one and that a higher-level spell slot can be used to cast certain spells that a lower-level one can’t. So unless the higher-level spell slot is also scarcer, whether it’s worthwhile to spend a higher-level spell slot on a lower-level spell, boosted, depends entirely on whether the boosted lower-level spell is more useful than the higher-level spell.
+
+6th level: The mummy lord has only one 6th-level slot. It’s going to reserve it for harm.
+5th level: The mummy lord has two 5th-level slots and two valuable 5th-level spells, contagion and insect plague. It will save these slots for these spells.
+4th level: Divination has no purpose here, and guardian of faith is the kind of spell you only bother casting once. The other two fourth-level slots, therefore, are available for boosting lower-level spells.
+3rd level: Dispel magic is one to keep in your pocket at all times, so these slots will be retained for it. Animate dead is so situational that we can safely disregard it.
+2nd level: Spiritual weapon is an auto-cast, and hold person and silence are good to keep in reserve. Hold person can be cast at higher levels to affect more targets; silence can’t. Spiritual weapon can be cast at higher levels to do more damage, but the cost is two levels per damage die, and it’s not worth that.
+1st level: The least scarce spell level—and also the least useful, given the mummy lord’s spell set. Command and shield of faith can’t be boosted by casting them at a higher level; guiding bolt can, but it’s already compromised by the fact that you mostly want to cast it when its chances of succeeding are poorer. Why would you risk a higher-level spell slot on a spell you’ll probably be casting with disadvantage, even if you do have +9 to hit? You’d only do it when you weren’t casting it with disadvantage—that is, when you were using it to set up an attack on a target whom you couldn’t reach yet but would be able to reach on your next turn. Even so, is a 4th-level guiding bolt better than a 4th-level hold person? I don’t think so. Save the slots.
+
+The conclusion I draw here is that two of the mummy lord’s three 4th-level spell slots are flex slots, which it’s most likely to spend either to boost hold person or to cast dispel magic after running out of 3rd-level slots. Otherwise, it will cast spells at their base levels.
+With all that analysis finally out of our way, let’s get down to specific tactics.
+When combat is inevitable, the mummy first uses its move to approach the PC whom it considers the No. 1 aggressor or transgressor; its action to use Dreadful Glare against that PC, along with Rotting Fist if the PC is within reach and hasn’t fled; and its bonus action to cast spiritual weapon, which takes the form of a spear or flail.
+On its second turn, if the first PC has fled, it turns its attention to the second, moving toward it (move); using Dreadful Glare and, if applicable, Rotting Fist (action); and striking it with the spiritual weapon (bonus action). If the first PC hasn’t fled, it directs its Dreadful Glare at a secondary target while continuing to attack the primary target with Rotting Fist (action) and spiritual weapon (bonus action). It repeats these actions unless and until certain circumstances occur:
+
+If it’s not yet (or no longer) engaged in melee, and there are at least four non-fighter (non-barbarian, non-paladin, non-ranger) PCs within 40 feet of one another , it drops an insect swarm on those PCs.
+If a PC manages to attack it with a magical weapon, inflict direct fire damage and do 60 hp of damage to it in a single round—or if he or she does any two of these things—the mummy lord casts harm on that PC. If two or three PCs each manage to do any one of those things, it casts hold person at 4th level on both or all of them. If just one PC does any one of them, the mummy lord casts contagion, afflicting that PC with Slimy Doom. If the mummy lord no longer has a 5th-level spell slot available to cast contagion, it casts hold person at 2nd level instead, paralyzing just that one PC.
+If a PC who is otherwise a capable damage dealer successfully hits the mummy lord with a weapon attack or spell but does insignificant damage to it (9 hp or fewer) or tries to inflict a condition to which the mummy lord is immune, it casts contagion, afflicting that PC with Blinding Sickness.
+If four or more spellcasters and/or bards are within 40 feet of one another, and the mummy lord isn’t already sustaining insect swarm or hold person, it drops a sphere of silence on them. (It will drop silence if it needs to cast hold person at 4th level, but if it’s already sustaining silence, it won’t drop it to cast hold person at 2nd level.)
+If a PC casts a continuous spell or creates some other continuous magical effect that benefits the party or impedes the mummy lord (or any of its minions), it casts dispel magic to get rid of the effect.
+If it’s chosen a target whom it can’t reach with a melee attack yet but will be able to reach on its next turn, and it’s already tried Dreadful Glare against that target, it casts guiding bolt.
+If it’s reduced to 38 hp or fewer and has retreated using Whirlwind of Sand (see below), it casts guardian of faith at a point in between itself and the PCs where anyone trying to charge it will have to pass within 10 feet of the spectral guardian.
+
+As for its legendary actions, it uses them in the following ways:
+
+When more than one opponent engages the mummy lord in melee, it uses Blinding Dust to raise a swirling, blinding cloud around itself.
+When at least four opponents are within 10 feet of the mummy lord, it uses Blasphemous Word to stun them.
+When at least two-thirds of the party are injured, or any one player starts complaining about how low his or her character’s hit points are, it uses Channel Negative Energy to prevent healing (unless it’s already used Blasphemous Word).
+At the end of any turn in which it’s reduced to 38 hp or fewer, if it has two or three legendary actions left, it uses Whirlwind of Sand to retreat 40 to 60 feet from any PC(s) engaged in melee with it. If has only one legendary action left, or none, it uses Whirlwind of Sand at the next available opportunity.
+When none of the above situations applies and the number of PCs who still have turns is equal to or less than the number of legendary actions the mummy lord has left, it uses Attack at the end of each of those PCs’ turns.
+
+Finally, a mummy lord in its lair uses its lair action on initiative count 20 to inflict wracking pain on PC spellcasters for the first round during which they have a chance to cast spells and on alternating rounds thereafter. On rounds when it can’t use this lair action, it uses whichever of the other two is more applicable to the situation; if neither applies, it forgoes its lair action for the round.
+The mummy lord’s compulsion is vainglory. It doesn’t believe the PCs are capable of hurting it, and it devotes its energy to shutting them down and punishing them for their insolence unless and until they prove to be a significant threat. Only then does it make an effort to protect itself.
+Next: Vampires!

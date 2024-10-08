@@ -1,0 +1,14 @@
+[
+    {
+        "prompt": "An Aboleth can shoot out a sticky [MASK] cloud",
+        "answer": "mucous"
+    },
+    {
+        "prompt": "An Acolyte's spellcasting ability is [MASK]",
+        "answer": "wisdomn"
+    },
+    {
+        "prompt": "a black dragon's breath does [MASK] damage",
+        "answer": "acid"
+    }
+]

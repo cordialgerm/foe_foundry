@@ -1,0 +1,58 @@
+<MonsterName/>Clurichaun</MonsterName>
+<CreatureType/>Fey</CreatureType>
+
+<summary>The Clurichaun is a tiny fey creature embodying a chaotic neutral alignment. Known for its mischievous and unpredictable nature, it holds a unique position as an entertainer and trickster within the fey realm. With a challenge rating of 1/4, the Clurichaun may initially seem weak, but its strengths lie in its cleverness and magical prowess. With a solid Armor Class of 14 thanks to its special ability, Clurichaun’s Luck, and a decent pool of hit points totaling 22, it can hold its ground in skirmishes. The creature has a well-rounded array of abilities that make it both a nuisance in combat and a potential ally under the right circumstances. However, its physical attributes are fairly average, and it relies heavily on its Charisma for both defense and attacking options.</summary>
+
+<detail>
+
+The Clurichaun possesses the following attributes: Strength of 13, Dexterity of 12, Constitution of 16, Intelligence of 10, Wisdom of 8, and Charisma of 16. The Constitution score provides a good modifier of +3, making the Clurichaun resilient against physical ailments, while its Charisma score allows it to be effective in both defensive and offensive magical capacities. Its high saving throw bonus of +5 in Constitution showcases its robust nature, which is considered good. 
+
+With a passive Perception of 11 and skills in Stealth (+3) and Perception (+1), the Clurichaun is quite good at sneaking around and noticing potential threats, aided by its condition immunities to being frightened or poisoned. Furthermore, it has darkvision up to 60 feet, enhancing its ability to operate in dim light or darkness, which is particularly useful in stealth scenarios. The language comprehension in Common, Elvish, and Sylvan also facilitates communication and deception.
+
+The Cenirichaun employs several unique abilities. Clurichaun’s Luck grants it an exceptional ability to enhance its own Armor Class, as it adds its Charisma modifier to its AC when not wearing armor or wielding a shield. Magic Resistance gives the Clurichaun an advantage on saving throws against spells and magical effects, making it notably resilient against magical attacks. 
+
+In terms of actions, the Clurichaun has access to its Improvised Weapon attack with a +3 to hit, dealing an average of 3 damage of varying types. Similarly, its Slam attack, also with a +3 to hit, allows it to inflict bludgeoning damage. The Bawdy Remark is a particularly impactful ranged attack; it uses a spell attack modifier of +5 to hit and can deal 5 psychic damage while potentially incapacitating an opponent if they fail a DC 13 Wisdom saving throw. This ability can turn the tide of battle by rendering foes helpless.
+
+The Clurichaun has a modest repertoire of spells that require alcohol as a material component. It can cast mending and purify food and drink at will, providing utility in various scenarios. Once per day, it can cast blur, heroism, and suggestion, allowing it to bolster allies or manipulate foes effectively. The spell save DC of 13 indicates decent difficulty for targets attempting to resist these spells.
+
+In summary, the Clurichaun is a clever and tricky fey creature with both magical capabilities and a penchant for mayhem, making it a valuable yet unpredictable participant in any encounter.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Clurichaun
+
+*Tiny* *Fey* *Chaotic Neutral*
+
+- **Armor Class:** 14 (Clurichaun’s Luck)
+- **Hit Points:** 22 (4d4 + 12)
+- **Speed:** walk 30 ft.
+- **Challenge Rating:** 1/4 (50 XP)
+- **Source:** [Tome of Beasts 2023](https://koboldpress.com/kpstore/product/tome-of-beasts-1-2023-edition/) page 66
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 13 (+1) | 12 (+1) | 16 (+3) | 10 (+0) | 8 (-1) | 16 (+3) |
+
+- **Saving Throws**: Con +5
+- **Skills:** Perception +1, Stealth +3
+- **Condition Immunities:** frightened, poisoned
+- **Senses:** darkvision 60 ft., passive Perception 11
+- **Languages:** Common, Elvish, Sylvan
+
+### Special Abilities
+
+- **Clurichaun’s Luck:** While the clurichaun is conscious and wearing no armor and wielding no shield, it adds its Charisma modifier to its AC (included above).
+- **Magic Resistance:** The clurichaun has advantage on saving throws against spells and other magical effects.
+
+### Actions
+
+- **Improvised Weapon:** Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d4 + 1) bludgeoning, piercing, or slashing damage, depending on the weapon.
+- **Slam:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.
+- **Bawdy Remark:** Ranged Spell Attack: +5 to hit, range 30 ft., one creature. Hit: 5 (1d4 + 3) psychic damage, and the target must succeed on a DC 13 Wisdom saving throw or be incapacitated until the end of its next turn as it doubles over in laughter or freezes up in embarrassment (the target’s choice).
+- **Spellcasting:** The clurichaun casts one of the following spells, requiring alcohol as the only material component and using Charisma as the spellcasting ability (spell save DC 13):<br>At will: mending, purify food and drink<br>1/day each: blur, heroism, suggestion
+
+

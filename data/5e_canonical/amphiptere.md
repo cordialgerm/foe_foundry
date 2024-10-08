@@ -1,0 +1,53 @@
+<MonsterName/>Amphiptere</MonsterName>
+<CreatureType/>Beast</CreatureType>
+
+<summary>The amphiptere is a medium-sized beast that presents a unique challenge to adventurers due to its combination of agility and poison effects. With an unaligned nature, it does not exhibit allegiance to any side, making it a wild card in encounters. It possesses a good Armor Class of 15 due to its natural armor, allowing it to withstand moderate attacks. With 60 hit points, calculated as 8d8 + 24, it has a decent amount of health for its Challenge Rating of 3, representing an experience value of 700 XP. Notable strengths of the amphiptere lie in its high Dexterity of 18, providing it with a strong advantage in initiative and ranged attacks, compounded by its Flyby ability that allows it to disengage without provoking opportunity attacks. However, it has low Intelligence and Charisma, which does not contribute significantly to its combat prowess.</summary>
+
+<detail>
+
+The attributes of the amphiptere are as follows: it has a Strength score of 11, equating to a modifier of 0, indicating average physical strength. The Dexterity score of 18 grants a modifier of +4, indicating very good agility, which enhances its attack rolls and Armor Class. The Constitution score of 17 results in a +3 modifier, indicating good endurance. Its Intelligence is very low at 2, resulting in a -4 modifier, which is very bad and limits its use in intelligence-based skills. The Wisdom score of 16 provides a modifier of +3, which is good, particularly benefiting its Perception skill. Finally, a Charisma score of 6 gives a -2 modifier, signifying bad social or magical influence.
+
+The amphiptere possesses a skill in Perception with a total bonus of +5, derived from its Wisdom modifier and proficiency in the skill, indicating exceptional awareness of its surroundings. Additionally, it has blindsight up to 10 feet, allowing it to sense creatures without relying on sight, which can be crucial in dark environments. Its passive Perception of 15 means it can automatically detect threats or nearby creatures without actively searching.
+
+In terms of special abilities, the amphiptere has the Flyby feature, which allows it to fly away from an enemy’s reach without provoking opportunity attacks, important for hit-and-run tactics. The Swarming ability allows multiple amphipteres to occupy the same space simultaneously, granting them an advantage on melee attacks when they are together, making them formidable in groups.
+
+For its actions, the amphiptere can perform a Multiattack, allowing it to make one Bite attack and one Stinger attack in a single turn. The Bite attack has a +6 to hit, a reach of 5 feet, and deals 7 piercing damage on a successful hit, derived from a roll of 1d6 + 4. The Stinger also features a +6 to hit, a reach of 5 feet, and deals 7 piercing damage alongside an additional 10 poison damage from 3d6. Furthermore, targets hit by the Stinger must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour, which can severely debilitate a character if they fail.
+
+This combination of abilities and attacks makes the amphiptere a fast, poisonous predator that can evade attacks while delivering significant harm to its foes, especially when working in tandem with others of its kind.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Amphiptere
+
+*Medium* *Beast* *Unaligned*
+
+- **Armor Class:** 15 (natural armor)
+- **Hit Points:** 60 (8d8 + 24)
+- **Speed:** walk 20 ft. fly 20 ft.
+- **Challenge Rating:** 3 (700 XP)
+- **Source:** [Tome of Beasts 2023](https://koboldpress.com/kpstore/product/tome-of-beasts-1-2023-edition/) page 16
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 11 (+0) | 18 (+4) | 17 (+3) | 2 (-4) | 16 (+3) | 6 (-2) |
+
+- **Skills:** Perception +5
+- **Senses:** blindsight 10 ft., passive Perception 15
+- **Languages:** —
+
+### Special Abilities
+
+- **Flyby:** The amphiptere doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.
+- **Swarming:** Up to two amphipteres can share the same space at the same time. The amphiptere has advantage on melee attack rolls if it is sharing its space with another amphiptere that isn’t incapacitated.
+
+### Actions
+
+- **Multiattack:** The amphiptere makes one Bite attack and one Stinger attack.
+- **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d6 + 4) piercing damage.
+- **Stinger:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d6 + 4) piercing damage plus 10 (3d6) poison damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour.
+
+

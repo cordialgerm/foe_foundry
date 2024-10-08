@@ -1,0 +1,90 @@
+[
+{
+  "model": "api_v2.creatureactionattack",
+  "pk": "srd_elf-drow_hand-crossbow_hand-crossbow-attack",
+  "fields": {
+    "name": "Hand Crossbow attack",
+    "parent": "srd_elf-drow_hand-crossbow",
+    "attack_type": "WEAPON",
+    "to_hit_mod": 4,
+    "reach_ft": null,
+    "range_ft": 30,
+    "long_range_ft": 120,
+    "target_creature_only": false,
+    "damage_die_count": 1,
+    "damage_die_type": "D6",
+    "damage_bonus": 2,
+    "damage_type": "piercing",
+    "extra_damage_die_count": null,
+    "extra_damage_die_type": null,
+    "extra_damage_bonus": null,
+    "extra_damage_type": "piercing"
+  }
+},
+{
+  "model": "api_v2.creatureactionattack",
+  "pk": "srd_elf-drow_shortsword_shortsword-attack",
+  "fields": {
+    "name": "Shortsword attack",
+    "parent": "srd_elf-drow_shortsword",
+    "attack_type": "WEAPON",
+    "to_hit_mod": 4,
+    "reach_ft": 5,
+    "range_ft": null,
+    "long_range_ft": null,
+    "target_creature_only": false,
+    "damage_die_count": 1,
+    "damage_die_type": "D6",
+    "damage_bonus": 2,
+    "damage_type": "piercing",
+    "extra_damage_die_count": null,
+    "extra_damage_die_type": null,
+    "extra_damage_bonus": null,
+    "extra_damage_type": "piercing"
+  }
+},
+{
+  "model": "api_v2.creatureactionattack",
+  "pk": "srd_gnome-deep-svirfneblin_poisoned-dart_poisoned-dart-attack",
+  "fields": {
+    "name": "Poisoned Dart attack",
+    "parent": "srd_gnome-deep-svirfneblin_poisoned-dart",
+    "attack_type": "WEAPON",
+    "to_hit_mod": 4,
+    "reach_ft": null,
+    "range_ft": 30,
+    "long_range_ft": 120,
+    "target_creature_only": true,
+    "damage_die_count": 1,
+    "damage_die_type": "D4",
+    "damage_bonus": 2,
+    "damage_type": "piercing",
+    "extra_damage_die_count": null,
+    "extra_damage_die_type": null,
+    "extra_damage_bonus": null,
+    "extra_damage_type": "piercing"
+  }
+},
+{
+  "model": "api_v2.creatureactionattack",
+  "pk": "srd_gnome-deep-svirfneblin_war-pick_war-pick-attack",
+  "fields": {
+    "name": "War Pick attack",
+    "parent": "srd_gnome-deep-svirfneblin_war-pick",
+    "attack_type": "WEAPON",
+    "to_hit_mod": 4,
+    "reach_ft": 5,
+    "range_ft": null,
+    "long_range_ft": null,
+    "target_creature_only": false,
+    "damage_die_count": 1,
+    "damage_die_type": "D8",
+    "damage_bonus": 2,
+    "damage_type": "piercing",
+    "extra_damage_die_count": null,
+    "extra_damage_die_type": null,
+    "extra_damage_bonus": null,
+    "extra_damage_type": "piercing"
+  }
+}
+]

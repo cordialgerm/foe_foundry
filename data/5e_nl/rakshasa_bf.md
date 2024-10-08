@@ -1,0 +1,17 @@
+The Rakshasa is a Medium fiend known for its cunning and powerful magical abilities. With a Challenge Rating of 13, it poses a significant threat in combat, able to deal substantial damage and manipulate the battlefield through a variety of spells and abilities. Rakshasas are characterized by their illusionary skills and charm, making them adept at manipulating others. They excel in Dexterity and Charisma-based maneuvers, granting them exceptional stealth and charm capabilities. However, they are not particularly strong or resilient, with average physical capabilities overall, manifesting a mix of strengths and weaknesses that make encounters with them both challenging and strategic.
+
+The Rakshasa has the following ability scores: Strength 12 (+2), Dexterity 22 (+8), Constitution 18 (+4), Intelligence 12 (+1), Wisdom 18 (+8), and Charisma 20 (+10). Its high Dexterity gives it an exceptional initiative and makes it extremely agile in combat, while its elevated Charisma enhances its spellcasting and charm abilities. The creature has an Armor Class of 16 thanks to natural armor and possesses a robust hit point total of 166, which gives it very good durability in battles. Its speed allows it to move 40 feet on the ground and fly at 30 feet while hovering.
+
+One unique trait of the Rakshasa is its Limited Magic Immunity, which allows it to not be affected or detected by spells of 6th level or lower unless it chooses to be, providing it a significant tactical advantage. It also has advantage on saving throws against all other spells and magical effects, making it exceptionally resilient against magical attacks.
+
+In terms of actions, the Rakshasa can perform a Multiattack, making four attacks in one turn through its claws or Arcane Bolts. It may replace one attack with a use of its Spellcasting. If a target is hit by two of its Claw attacks, that creature becomes cursed, incurring penalties that prevent it from benefiting from rests until the curse is removed.
+
+The Claw attack is a melee weapon attack that rolls with a +8 bonus to hit and inflicts 12 slashing damage plus an additional 10 force damage on a successful hit. The Arcane Bolt is a ranged spell attack with a +10 bonus to hit, dealing 22 force damage from a safe distance.
+
+One of its special abilities is "Travel the Planes," which allows the Rakshasa to magically transport itself to another plane of existence once per day, functioning similarly to the Plane Shift spell.
+
+The Rakshasa has a diverse spellcasting ability, with a spell save DC of 18. At will, it can cast "detect thoughts," "mage hand," and "minor illusion." It can cast "major image" and "suggestion" three times per day, and it can cast "dominate" once per day, each of which can seriously impact gameplay by allowing the Rakshasa to manipulate thoughts, create illusions, and take control of characters.
+
+As a bonus action, the Rakshasa can use its Charming Gaze to charm a target within 60 feet that can see it, requiring a successful DC 18 Charisma saving throw to resist. A charmed creature can attempt to save again at the end of each of its turns. Additionally, it can use Illusory Appearance to disguise itself and its belongings as another humanoid creature, a tactic that can be useful for infiltration or deception.
+
+In summary, the Rakshasa is a potent and deceptive adversary that utilizes its magical prowess, stealth, and charm to manipulate encounters, making it a formidable foe for any party that encounters it.

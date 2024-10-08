@@ -1,0 +1,16 @@
+The Crimson Jelly is a tiny ooze creature known for its unique abilities and tactical advantages in combat. With a challenge rating of 1/2, it may not seem intimidating at first, but its resistance to various conditions and its capability to become invisible in certain lighting can catch foes off guard. The jelly has moderate armor class and hit points, allowing it to withstand a few hits before falling. Its movement is quite versatile, being able to fly and swim, and it can navigate through tight spaces easily. However, its low strength and constitution scores denote significant weaknesses, particularly in terms of physical combat capability and durability against high-damage attacks. The Crimson Jelly's unique abilities enable it to manipulate encounters by draining opponents and potentially seizing control over the battlefield.
+
+The Crimson Jelly possesses the following attributes: Strength -4 (very bad), Dexterity +4 (good), Constitution +0 (average), Intelligence -5 (very bad), Wisdom +0 (average), and Charisma -1 (bad). It is equipped with keen senses within a 10-foot radius, a perception score of 10, and a stealth score of 14, making it relatively difficult to detect. Notably, it does not communicate in any known languages.
+
+Among its special abilities, the Crimson Jelly has the following: 
+
+- Amorphous: This ability allows the jelly to pass through spaces as narrow as one inch without any penalties.
+- Blood Sense: The jelly can locate living creatures by scent within a 60-foot range if they are not constructs or undead and do not have all their hit points. It can even sense the general direction of such creatures within a mile away, making it effective in tracking.
+- Ooze Nature: The jelly does not require sleep, making it constantly available for encounters.
+- Ooze Resilience: It has resistance to the restrained condition and is immune to exhaustion, as well as multiple conditions such as blinded, charmed, deafened, frightened, and prone, enhancing its durability in various scenarios.
+- Tainted Attacks: If an opponent is reduced to 0 hit points by the jelly, they must succeed on a DC 9 Charisma saving throw or suffer one level of exhaustion. This exhaustion can cause severe mental deterioration, leaving characters with nightmares and loss of memories.
+- Transparent: The jelly is invisible in dim or bright light conditions, while it can be faintly seen in darkness by creatures without darkvision.
+
+In combat, the Crimson Jelly can utilize its action, Feeding Paddles, which involves making a melee weapon attack with a +4 to hit against a creature within a 5-foot reach. On a successful hit, it deals 5 (1d6 + 2) necrotic damage and gains temporary hit points equal to the damage dealt. If the attack had advantage, the jelly attaches to the target's face, suffocating them and preventing speech.
+
+As a bonus action, with the ability Reproduce, the Crimson Jelly can split a portion of itself into a new jelly, provided it has 1 or more temporary hit points. The new jelly will have hit points equal to the temporary HP of the original but cannot gain temporary HP from Feeding Paddles until it completes a long rest. This reproductive ability enables the jelly to increase its numbers and persist in encounters, posing a greater threat to adversaries.

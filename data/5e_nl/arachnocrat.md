@@ -1,0 +1,21 @@
+The Arachnocrat is a Medium fiend characterized by its lawful evil alignment and cunning tactics. It possesses notable strengths such as high Dexterity and Charisma, making it effective in both combat and social interactions. With an Armor Class of 15, it is reasonably tough to hit and has 93 hit points, indicating it can sustain a fair amount of damage in battle. The Arachnocrat's movement capabilities are impressive, being able to walk 30 feet and climb at an even faster pace of 40 feet. Its challenge rating of 5 signifies a moderate difficulty level for adventurers, and its abilities lean heavily toward deception and combat maneuvers that can restrain opponents effectively.
+
+In terms of attributes, the Arachnocrat has the following values:
+- Strength: 13 (+1) - average effectiveness in melee combat.
+- Dexterity: 17 (+3) - very good, enhancing its agility and attack precision.
+- Constitution: 12 (+1) - average; it can withstand some damage but is not exceptionally resilient.
+- Intelligence: 16 (+3) - very good; this contributes to its cunning strategies and magical abilities.
+- Wisdom: 14 (+2) - good; it has perceptive qualities and insight into situations.
+- Charisma: 18 (+4) - exceptional; this grants it a significant advantage in social skills and spellcasting.
+
+The Arachnocrat has several saving throws which enhance its survivability: it gains a +5 to Dexterity saves, a +4 to Intelligence saves, and a +6 to Charisma saves, all considered good. 
+
+In terms of skills, the Arachnocrat excels in deception with a +8 modifier, making it particularly adept at trickery. It also has +4 in insight, +6 in persuasion, and +5 in stealth, which means it can operate well in both social and clandestine environments.
+
+The creature is immune to fire and poison damage, demonstrating its resilience against common elemental threats. It has resistance against cold damage, as well as bludgeoning, piercing, and slashing damage from nonmagical attacks unless those attacks are made with silvered weapons. Additionally, it is immune to the poisoned condition. Its senses include blindsight up to 10 feet and darkvision out to 60 feet, with a passive perception rating of 12. It can communicate in Common, Infernal, and possesses telepathy that can extend up to 120 feet.
+
+The Arachnocrat has several special abilities. Its Aristocratic Disguise grants it advantage on Charisma (Deception) checks to pass as a humanoid aristocrat, making it easier to infiltrate noble gatherings. Through Devil’s Sight, it can see normally in magical darkness, providing a tactical advantage in shadowy environments. It also has Magic Resistance, granting it advantage on saving throws against spells, which enhances its resilience against magical attacks. The Speak with Spiders ability allows it to communicate with arachnids, potentially facilitating unique interactions and summonings. Lastly, with Spider Climb, the Arachnocrat can navigate difficult surfaces, including climbing upside down, without needing to roll for checks.
+
+In combat, the Arachnocrat can execute Multiattack, allowing it to make two claw attacks against opponents. If both attacks successfully hit a Medium or smaller target, that target becomes restrained in gilded webbing. The restrained target can use an action to attempt to escape with a DC 13 Strength check or have the webbing attacked and destroyed (AC 12, HP 8, immune to bludgeoning, poison, and psychic damage). Each claw attack connects with a +6 to hit and deals 12 (2d8 + 3) slashing damage.
+
+Additionally, the Arachnocrat can perform a Bite attack, also with a +6 to hit, dealing 6 (1d6 + 3) piercing damage. If the Bite hits, the target must make a DC 14 Constitution saving throw. On a failure, the target takes 21 (6d6) poison damage, suffering reduced damage on a successful save. If this poison damage reduces the target to 0 hit points, that target becomes stable but remains poisoned for one hour, paralyzed during this time. Notably, any creature that dies while poisoned by this attack will exhibit a golden hue on its skin.

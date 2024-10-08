@@ -1,0 +1,17 @@
+The Spark is a Tiny elemental creature with a Chaotic Neutral alignment, making it unpredictable and tricky in encounters. With a challenge rating of 7, it poses a moderate threat to adventurers, primarily due to its speed, lightning damage abilities, and powerful inhabitants attack. It has a good Armor Class of 15 and a considerable pool of hit points at 104, allowing it to endure in battle. Its high Dexterity of 20 provides a very good bonus, making it nimble and difficult to hit, while its Constitution of 18 gives it solid resilience. The Spark has specific immunities and resistances, particularly to lightning and to most forms of physical nonmagical damage, which makes it especially tough against melee attackers. While its strength is notably low, limiting its physical prowess, it compensates with impressive spell-like abilities, especially in combat scenarios.
+
+The Spark possesses the following attributes:
+- Strength of 4 with a modifier of -3, which is very bad for physical attacks.
+- Dexterity of 20 with a modifier of +5, providing a very good bonus to its defenses and enabling it to evade attacks.
+- Constitution of 18 with a modifier of +4, granting a good level of stamina and resilience.
+- Intelligence of 10 with a modifier of +0, indicating an average level of mental acuity.
+- Wisdom of 12 with a modifier of +1, reflecting a slightly above-average awareness.
+- Charisma of 17 with a modifier of +3, which is good for social interactions and spellcasting.
+
+The Spark has a saving throw bonus of +8 to Dexterity saves, making it proficient in dodging many types of threats. Additionally, it is immune to lightning damage and has resistance to thunder damage and bludgeoning, piercing, and slashing damage from nonmagical sources. Its condition immunities—exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, and unconscious—allow it to remain effective in combat without suffering debilitating effects. It has darkvision extending 60 feet and a passive Perception of 11, allowing it to detect threats in the dark.
+
+A unique trait of the Spark is its elemental nature, which means it does not require air, food, drink, or sleep, allowing it to be active continuously without the typical needs of living creatures.
+
+In terms of actions, the Spark can make three attacks with its Electric Touch in one turn. For each Electric Touch attack, it rolls a melee spell attack with a +6 to hit, targeting one enemy within 5 feet. On a successful hit, the target takes 16 (3d8 + 3) lightning damage, which can be quite devastating, especially to vulnerable foes.
+
+One of the Spark's most formidable abilities is Inhabit. It targets a humanoid it can see within 5 feet, forcing them to make a DC 14 Charisma saving throw. If the target fails this save, the Spark inhabits their body, incapacitating them and taking control while leaving them aware of their surroundings. While the Spark cannot be targeted by attacks or spells during this time, it retains its own abilities and alignment, effectively using the physical body of its host while utilizing its Electric Touch on enemies. This ability can create an interesting dynamic in battle, as party members may find themselves potentially facing off against one of their own if not careful.

@@ -1,0 +1,19 @@
+{
+  "##": 30522,
+  "**": 30524,
+  "***": 30523,
+  "</creaturetype>": 30538,
+  "</entity>": 30532,
+  "</monstername>": 30534,
+  "</spellname>": 30536,
+  "<creaturetype>": 30537,
+  "<entity>": 30531,
+  "<monstername>": 30533,
+  "<spellname>": 30535,
+  "armor class": 30525,
+  "challenge rating": 30530,
+  "difficulty class": 30529,
+  "hit points": 30526,
+  "str": 30527,
+  "wis": 30528
+}

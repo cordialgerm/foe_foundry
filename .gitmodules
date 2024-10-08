@@ -1,3 +1,9 @@
 [submodule "statblock5e"]
 	path = statblock5e
 	url = https://github.com/valloric/statblock5e
+[submodule "data/5esrd"]
+	path = data/5esrd
+	url = https://github.com/OldManUmby/DND.SRD.Wiki
+[submodule "data/open5e"]
+	path = data/open5e
+	url = https://github.com/open5e/open5e-api
