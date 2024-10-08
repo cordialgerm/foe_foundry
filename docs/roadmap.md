@@ -13,6 +13,7 @@
 - [ ] Encounter Generator
 - [ ] Name Templates
 - [x] Licenses
+- [ ] Licenses
 - [ ] Boss Nicknames - https://slyflourish.com/monstrous_descriptors.html?rss=1
 - [ ] Legendary Creatures (powers, role)
 - [ ] Create a visualization that shows likelyhood of creature + role going for a giving power
@@ -20,7 +21,6 @@
   - [x] HTML
   - [ ] Markdown
   - [ ] Foundry
-
 
 ## Website Todo
 

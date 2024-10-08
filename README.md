@@ -1,9 +1,10 @@
+**Foe Foundry** is a project to procedurally generate interesting and powerful D&D 5e Monsters.
 
 ## Welcome to Foe Foundry
 
 **Foe Foundry** is a project to procedurally generate interesting and powerful 5e-compatible Monsters.
 
-It's inspired by the [***Forge of Foes***](https://slyflourish.com/build_a_quick_monster_with_forge_of_foes.html) book written by Teos Abadia, Scott Fitzgerald Gray, and Michael Shea.
+It's inspired by the [**_Forge of Foes_**](https://slyflourish.com/build_a_quick_monster_with_forge_of_foes.html) book written by Teos Abadia, Scott Fitzgerald Gray, and Michael Shea.
 
 Foe Foundry also defines some new conditions, including **Dazed**, **Burning**, **Shocked**, **Frozen**, and **Fatigued**. Inspiration for these conditions comes from this video - [**Dungeon Dudes: Homebrewing New Conditions for D&D 5e**](https://youtu.be/Bq2Dz-EETJs?si=x94Allggu79ECGy3)
 
@@ -18,4 +19,8 @@ Foe Foundry also defines some new conditions, including **Dazed**, **Burning**, 
 
 ## Inspiration
 
-**Foe Foundry** is inspired by a variety of excellent monster design sources, including [***Forge of Foes***](https://slyflourish.com/build_a_quick_monster_with_forge_of_foes.html) and [Level Up Advanced 5th Edition](https://www.levelup5e.com/). See [Credits](docs/credits.md) for more information.
+**Foe Foundry** is inspired by a variety of excellent monster design sources, including [**_Forge of Foes_**](https://slyflourish.com/build_a_quick_monster_with_forge_of_foes.html) and [Level Up Advanced 5th Edition](https://www.levelup5e.com/). See [Credits](docs/credits.md) for more information.
+
+## Credits
+
+See [**Credits**](/docs/credits.md) for information about inspiration for this project and legal notices
