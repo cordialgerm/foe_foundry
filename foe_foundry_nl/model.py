@@ -1,29 +1,31 @@
-# from transformers import DistilBertTokenizer, DistilBertForMaskedLM
-# import torch
+from pathlib import Path
+
+import torch
+from transformers import (
+    BertForMaskedLM,
+    BertTokenizer,
+    PreTrainedModel,
+    PreTrainedTokenizer,
+)
+
+model_dir = Path(__file__).parent.parent / "models"
+mlm_model_dir = model_dir / "mlm-finetuned"
+mlm_model_dir_rel = mlm_model_dir.relative_to(Path(__file__).parent.parent)
 
 
-# def load_model(
-#     use_saved: bool = True,
-# ) -> tuple[DistilBertForMaskedLM, DistilBertTokenizer]:
-#     if use_saved:
-#         output_dir = "./model"
+def load_model_for_mlm(
+    use_saved: bool = True,
+) -> tuple[PreTrainedModel, PreTrainedTokenizer]:
+    mlm_model_dir.mkdir(parents=True, exist_ok=True)
 
-#         # Load the fine-tuned model
-#         model = DistilBertForMaskedLM.from_pretrained(output_dir)
+    if use_saved:
+        pre_trained_model = mlm_model_dir
+    else:
+        pre_trained_model = "bert-base-uncased"
 
-#         # Load the tokenizer
-#         tokenizer = DistilBertTokenizer.from_pretrained(output_dir)
-#     else:
-#         # Load pre-trained DistilBERT tokenizer and model
-#         tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased")
-#         model = DistilBertForMaskedLM.from_pretrained(
-#             "distilbert-base-uncased",
-#             proxies={
-#                 "http": "http://proxy-dmz.intel.com:912",
-#                 "https": "http://proxy-dmz.intel.com:912",
-#             },
-#         )
+    tokenizer = BertTokenizer.from_pretrained(pre_trained_model)
+    mlm_model = BertForMaskedLM.from_pretrained(pre_trained_model)
 
-#     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-#     model.to(device)
-#     return model, tokenizer
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    mlm_model.to(device)  # type: ignore
+    return mlm_model, tokenizer

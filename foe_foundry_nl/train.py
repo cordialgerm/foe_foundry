@@ -1,91 +1,103 @@
-# from transformers import DataCollatorForLanguageModeling, Trainer, TrainingArguments
+from pprint import pprint
 
-# from ..rapg.rapg.data import load_dataset
-# from .model import load_model
+from datasets import DatasetDict
+from transformers import (
+    DataCollatorForLanguageModeling,
+    EarlyStoppingCallback,
+    PreTrainedModel,
+    PreTrainedTokenizer,
+    Trainer,
+    TrainingArguments,
+)
+
+from .data.background import load_background_dataset
+from .model import load_model_for_mlm, mlm_model_dir_rel
 
 
-# def train_model():
-#     print("Beginning Training...")
-#     model, tokenizer = load_model(use_saved=True)
+def fine_tune_bert_on_background_corpus(fresh: bool, skip_training: bool = False):
+    if fresh and skip_training:
+        raise ValueError("Cannot skip training when starting fresh")
 
-#     custom_tokens = [
-#         "###",
-#         "##",
-#         "#",
-#         "***",
-#         "**",
-#         "*",
-#         "Armor Class",
-#         "AC",
-#         "HP",
-#         "Hit Points",
-#         "STR",
-#         "DEX",
-#         "CON",
-#         "WIS",
-#         "CHA",
-#         "INT",
-#         "DC",
-#         "Difficulty Class",
-#         "Challenge Rating",
-#         "CR",
-#         "<Entity>",
-#         "</Entity>",
-#         "<MonsterName>",
-#         "</MonsterName>",
-#         "<SpellName>",
-#         "</SpellName>",
-#         "<CreatureType>",
-#         "</CreatureType>",
-#     ]
-#     tokenizer.add_tokens(custom_tokens)
+    # load model and dataset
+    print("Loading model and dataset...")
+    model, tokenizer = load_model_for_mlm(use_saved=not fresh)
+    dataset, n_train, n_test = load_background_dataset()
+    print(
+        f"Loaded {n_train + n_test} background documents. {n_train} for training and {n_test} for testing"
+    )
 
-#     model.resize_token_embeddings(len(tokenizer))
+    trainer, tokenized_dataset = _setup_trainer(model, tokenizer, dataset, n_train)
 
-#     print("Loading fine-tuning dataset...")
-#     dataset = load_dataset()
+    if not skip_training:
+        # Fine-Tune the model on the background corpus
+        print("Fine-tuning model...")
+        trainer.train()
 
-#     def tokenize_function(examples):
-#         return tokenizer(
-#             examples["text"], truncation=True, padding=True, max_length=512
-#         )
+        # Save the fine-tuned model
+        print("Saving Model")
+        trainer.save_model(str(mlm_model_dir_rel))
+        tokenizer.save_pretrained(str(mlm_model_dir_rel))
 
-#     print("Tokenizing fine-tuning dataset...")
-#     tokenized_dataset = dataset.map(tokenize_function, batched=True)
+    # measure performance on validation set
+    print("Validation Metrics:")
+    eval_result = trainer.evaluate(tokenized_dataset["validation"])  # type: ignore
+    print("Validation Dataset Using Fine-Tuned Model:")
+    pprint(eval_result)
 
-#     # Data collator for MLM - handles masking of tokens
-#     data_collator = DataCollatorForLanguageModeling(
-#         tokenizer=tokenizer,
-#         mlm=True,
-#         mlm_probability=0.15,  # Mask 15% of tokens
-#     )
+    print("Baseline Dataset Using Pre-Trained Model:")
+    model2, tokenizer2 = load_model_for_mlm(use_saved=False)
+    trainer2, tokenized_dataset2 = _setup_trainer(model2, tokenizer2, dataset, n_train)
+    eval_result2 = trainer2.evaluate(tokenized_dataset2["validation"])  # type: ignore
+    pprint(eval_result2)
 
-#     # Define training arguments
-#     training_args = TrainingArguments(
-#         output_dir="./results",  # output directory
-#         num_train_epochs=3,  # number of training epochs
-#         per_device_train_batch_size=16,  # batch size per device during training
-#         logging_dir="./logs",  # directory for storing logs
-#         logging_steps=10,
-#         eval_strategy="epoch",  # evaluate at the end of each epoch
-#     )
+    print("Success!")
 
-#     # Initialize the Trainer for MLM fine-tuning
-#     trainer = Trainer(
-#         model=model,  # the MLM model
-#         args=training_args,  # training arguments
-#         train_dataset=tokenized_dataset["train"],  # training dataset
-#         eval_dataset=tokenized_dataset["test"],  # evaluation dataset
-#         data_collator=data_collator,  # Data collator for MLM
-#     )
 
-#     # Fine-tune the model using Masked Language Modeling
-#     print("Begin fine-tuning...")
-#     trainer.train()
-#     print("Fine-tuning complete!")
+def _setup_trainer(
+    model: PreTrainedModel,
+    tokenizer: PreTrainedTokenizer,
+    dataset: DatasetDict,
+    n_train: int,
+) -> tuple[Trainer, DatasetDict]:
+    # tokenize data
+    def tokenize_function(examples):
+        return tokenizer(
+            examples["text"], padding="max_length", truncation=True, max_length=512
+        )
 
-#     print("Saving Model to ./model")
-#     output_dir = "./model"
-#     trainer.save_model(output_dir)
-#     tokenizer.save_pretrained(output_dir)
-#     print("Model saved!")
+    tokenized_dataset = dataset.map(
+        tokenize_function, batched=True, remove_columns=["text"]
+    )
+
+    # Set up Trainer
+    data_collator = DataCollatorForLanguageModeling(
+        tokenizer=tokenizer, mlm=True, mlm_probability=0.15
+    )
+
+    num_train_epochs = 10
+    train_batch_size = 16
+    total_steps = (n_train // train_batch_size) * num_train_epochs
+    warmup_steps = total_steps // 10
+
+    trainer = Trainer(
+        model=model,
+        args=TrainingArguments(
+            output_dir=str(mlm_model_dir_rel),
+            eval_strategy="epoch",
+            save_strategy="epoch",
+            logging_dir="./logs",
+            logging_strategy="epoch",
+            num_train_epochs=num_train_epochs,
+            per_device_train_batch_size=train_batch_size,
+            per_device_eval_batch_size=2 * train_batch_size,
+            learning_rate=5e-5,
+            lr_scheduler_type="cosine",
+            warmup_steps=warmup_steps,
+            load_best_model_at_end=True,
+        ),
+        train_dataset=tokenized_dataset["train"],  # type: ignore
+        eval_dataset=tokenized_dataset["test"],  # type: ignore
+        data_collator=data_collator,
+        callbacks=[EarlyStoppingCallback(early_stopping_patience=3)],
+    )
+    return trainer, tokenized_dataset

@@ -31,6 +31,9 @@
     ],
     "python.testing.unittestEnabled": false,
     "python.terminal.activateEnvironment": false,  // poetry manages the environment
+    "python.analysis.exclude": [
+        "**/__init__.py"  // exclude __init__.py from unused import warnings
+    ],
 
     //javascript
     "[javascript]": {
