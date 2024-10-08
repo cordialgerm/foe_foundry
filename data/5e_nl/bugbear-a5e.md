@@ -1,0 +1,17 @@
+The Bugbear is a Medium humanoid creature typically characterized by its brutish strength and stealthy abilities. With an Armor Class of 12, the Bugbear is not particularly difficult to hit, but it compensates for this with significant hit points totaling 30, derived from 5d8 + 8. This creature has a Challenge Rating of 1, making it a moderate threat in combat scenarios. It possesses a balance of physical and stealth-related skills, including proficiency in athletics and stealth, both of which allow it to engage in effective ambush tactics. Bugbears are clever hunters who can grapple their foes, making them formidable without being overwhelming. Their weaknesses lie in their average intelligence and charisma, which limits their social interactions and spellcasting capabilities.
+
+The Bugbear has the following attribute values: Strength at 14, Dexterity at 14, Constitution at 14, Intelligence at 10, Wisdom at 12, and Charisma at 10. These scores translate to modifiers of +2 for Strength, Dexterity, and Constitution, 0 for Intelligence and Charisma, and +1 for Wisdom. The strength and dexterity scores are good, enabling it to deal significant melee damage and perform stealth actions effectively. The Constitution score is also good, providing a decent pool of hit points, while the low intelligence and charisma are average at best, limiting the Bugbear's versatility outside of combat.
+
+The Bugbear has notable skills that enhance its effectiveness: athletics at +4, stealth at +4, perception at +3, and survival at +3. Its darkvision allows it to see in dim light as if it were bright light, up to 60 feet, making it adept in low-light conditions. With a passive perception of 15, it can detect hidden enemies and threats, giving it an edge in ambush scenarios. The Bugbear is able to communicate in Common and Goblin.
+
+In terms of actions, the Bugbear possesses several attacks:
+
+- Strangle: This melee weapon attack has a +4 to hit and a reach of 10 feet. The Strangle action can only target a Medium or smaller creature that is surprised, grappled, or unable to see the Bugbear. Upon a successful hit, it inflicts 9 bludgeoning damage and pulls the target 5 feet closer, establishing a grapple. The target must succeed on an escape check against a DC of 12 to free itself. While grappled, the victim cannot breathe and the Bugbear automatically hits with this attack until the grapple is broken.
+
+- Maul: This is another melee weapon attack, with a reach of 5 feet and also requiring a +4 to hit. On a successful hit, it deals 9 bludgeoning damage, making it quite effective in close combat.
+
+- Javelin: The Bugbear can employ a Javelin as a melee or ranged attack, again with a +4 to hit. The Javelin has a reach of 5 feet for melee attacks or a range of 30 feet up to 120 feet for ranged attacks. A successful hit deals 5 piercing damage or 12 piercing damage if the target is surprised or cannot see the Bugbear. This ability allows the Bugbear to engage enemies from a distance if necessary.
+
+- Stealthy Sneak: This special ability allows the Bugbear to move up to half its speed without triggering opportunity attacks from creatures, thus enabling it to position itself strategically. After moving, it can attempt to hide, making it a master of ambush tactics.
+
+Overall, the Bugbear is a cunning and dangerous opponent whose ability to strike from the shadows and grapple its prey makes it a notable adversary in any combat scenario.

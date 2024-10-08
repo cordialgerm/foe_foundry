@@ -1,0 +1,11 @@
+The Flying Snake is a diminutive beast known for its agility in the air and its venomous bite. With a challenge rating of 1/8, it is relatively weak compared to stronger creatures, but its ability to fly and avoid attacks makes it a slippery opponent. Its strengths lie in its decent Dexterity and special ability to evade opportunity attacks when flying, while its low Strength and Intelligence make it less effective in melee combat or problem-solving scenarios. Generally, it is considered to be a minor threat, but it can still pose a risk, especially in groups due to its venomous bite.
+
+The Flying Snake possesses the following attributes: Strength of 4, which is very bad for physical confrontations; Dexterity of 16 (+3), considered good, allowing it to be nimble and quick; Constitution of 12 (+1), which is average, providing it with a reasonable amount of hit points; Intelligence of 2 (-4), regarded as very bad, making it incapable of logical thought; Wisdom of 12 (+1), which is average, indicating some awareness; and Charisma of 4 (-3), also very bad, suggesting it has limited ability to influence or charm others. 
+
+With an armor class of 13, the Flying Snake has a moderate level of protection against attacks, while its hit points total only 7, calculated from 2d4+2, meaning it is quite fragile in combat. The creature can walk at a speed of 30 feet, fly at 60 feet, and swim at 30 feet, giving it a good deal of mobility in various environments.
+
+The Flying Snake has a special ability known as "Flyby." This ability allows the creature to fly out of a target's reach without provoking opportunity attacks, making it exceptional at hit-and-run tactics. 
+
+For its actions, the Flying Snake can perform a melee attack called "Bite." This attack has a +5 to hit, making it fairly accurate in striking its target, and it has a reach of 5 feet. When the bite hits, it inflicts 1 point of piercing damage and an additional 3 (1d6) poison damage. This combination of physical and poison damage can be harmful, offering a potential total of up to 7 damage on a successful strike.
+
+Overall, the Flying Snake serves as a minor yet pesky adversary, leveraging its mobility and venomous attack to provide an interesting challenge, especially to lower-level adventurers.

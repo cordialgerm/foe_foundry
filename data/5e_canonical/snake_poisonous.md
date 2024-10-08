@@ -1,0 +1,54 @@
+<MonsterName/>Snake, Poisonous</MonsterName>
+<CreatureType/>Beast</CreatureType>
+
+<summary>The Poisonous Snake is a tiny beast that is primarily likely to serve in low-level encounters or as a trap for unsuspecting adventurers. With a Challenge Rating of 1/8, this creature is not particularly formidable in combat but is designed to exploit its agility and poison capabilities. It has a low Armor Class of 11 and only 9 hit points, making it quite fragile. However, its Dexterity modifier of +1 is considered average, allowing it to evade attacks reasonably well. The snake's primary strength lies in its ability to inflict additional poison damage, which can be detrimental to characters who fail their Constitution saving throws. Its main weaknesses are its low Strength and Constitution values, which limit its physical prowess and resilience in combat.</summary>
+
+<detail>
+
+The attributes of the Poisonous Snake include a Strength of -4, resulting in a very bad modifier that hinders its ability to perform physical tasks. Its Dexterity is +1, indicating an average capability for agility and reflexes. The Constitution is 0, meaning it does not gain additional hit points and is considered average for endurance-related tasks. The Intelligence of -5 gives it a very bad modifier in any tasks requiring reasoning or intelligence. The Wisdom score is 0, indicating average perception, and its Charisma of -4 results in a very bad capability for social interaction and influence. The snake possesses keen senses which allow it to detect threats within 10 feet, but it does not understand or speak any languages.
+
+The Poisonous Snake's primary special ability is its Bite. When it attacks, it uses a melee weapon attack with a modifier of +3 to hit, which is considered average. If it hits, it deals 3 piercing damage plus the possibility of additional poison damage if the target fails to make a successful DC 10 Constitution saving throw—these target must succeed to avoid taking an extra 2 poison damage. This poison effect can incapacitate or weaken characters, contributing to the creature's overall threat.
+
+The snake's Reflexive Nip reaction provides it with a defensive mechanism. When a creature successfully strikes the snake with a melee attack while within 5 feet, the snake can retaliate with its nip. The attacker must succeed on a DC 10 Constitution saving throw or become poisoned until the end of its next turn. This ability allows the snake to potentially reduce the effectiveness of attackers who might try to overpower it in close combat.
+
+Overall, the Poisonous Snake relies on its agility and venom to pose a threat despite its small stature. As a creature in D&D 5e, it can be utilized cleverly in encounters to create a sense of danger for players and to showcase the peril of underestimating even the smallest foes.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Snake, Poisonous
+
+*Tiny beast*
+
+- **Armor Class:** 11
+- **Hit Points:** 9
+- **Speed:** 30 ft., swim 30 ft.
+- **Challenge Rating:** CR 1/8
+- **Source:** [Kobold Press Black Flag SRD](https://koboldpress.com/black-flag-roleplaying/)
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| -4 | +1 | +0 | -5 | +0 | -4 |
+
+- **Senses:** keensense 10 ft.
+- **Perception:** 10
+- **Stealth:** 13
+- **Languages:** —
+
+### Special Abilities
+
+- **Bite.** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 10 CON save or take 2 (1d4) poison damage.
+
+### Actions
+
+- **Bite.** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 10 CON save or take 2 (1d4) poison damage.
+
+### Reactions
+
+- **Reflexive Nip.** When a creature the snake can see hits it with a melee attack while within 5 feet of it, the snake can make a quick nip at the creature. The attacker must succeed on a DC 10 CON save or be poisoned until the end of its next turn.
+
+
+

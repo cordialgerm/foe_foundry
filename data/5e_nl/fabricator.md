@@ -1,0 +1,19 @@
+The Fabricator is a Large Construct that serves as a neutral entity within the realm of Dungeons & Dragons 5th Edition. With a Challenge Rating of 10, it poses a notable threat to adventurers, providing a combination of robust defenses and unique crafting abilities. This creature boasts an impressive 147 hit points and an Armor Class of 13, making it moderately durable in combat. One of its standout features is its ability to create objects from raw materials, allowing it to forge useful items during downtime. While its Strength is exceptional at +4, giving it a solid offensive capability, its Dexterity is quite low at -2, making it less effective in dodging attacks. Damage immunities to force, poison, and psychic types, along with resistances to nonmagical bludgeoning, piercing, and slashing attacks, enhance its resilience. However, the Fabricator's weakest point lies in its low Charisma, which is -3, leaving it vulnerable in social interactions. 
+
+The Fabricator's statistics are as follows: 
+- Strength: 18 (+4), which is exceptional, making its melee attacks potent.
+- Dexterity: 7 (-2), which is very bad, resulting in poor agility and a low Armor Class.
+- Constitution: 20 (+5), indicating exceptional durability and hit points.
+- Intelligence: 15 (+2), reflecting good problem-solving abilities.
+- Wisdom: 15 (+2), also good, aiding with perception and awareness.
+- Charisma: 5 (-3), very bad, making it ineffective in social situations.
+
+It is proficient in Perception, with a +6 modifier, giving it a good chance to notice hidden threats with a passive perception score of 16. The Fabricator is immune to conditions such as being blinded, charmed, or frightened, which makes it exceptionally stable against many forms of magical manipulation. It has blindsight up to 60 feet, which allows it to perceive its surroundings without relying on sight, but it is blind beyond that radius.
+
+The Fabricator has several special abilities that augment its utility and combat effectiveness. The Assemble ability allows it to spend at least 10 minutes refining absorbed raw materials to create new objects, with the potential for enhanced creations if it dedicates sufficient time and resources. This ability is particularly useful for crafting items necessary for the party's adventures. 
+
+The Dismantling Form ability activates whenever a creature touches it or strikes it in melee combat. This ability inflicts 3 (1d6) force damage to the aggressor and causes any nonmagical weapons made of metal or organic materials that strike the Fabricator to suffer a cumulative -1 penalty to damage rolls until they are destroyed after reaching a -5 penalty. This can strategically dismantle the weapons of its opponents over time, preserving its own integrity while weakening its foes.
+
+In combat, the Fabricator can execute a Multiattack action, allowing it to make two disassembling slam attacks with a +8 to hit and a reach of 5 feet. Each slam deals 15 (2d10 + 4) bludgeoning damage along with an additional 10 (3d6) force damage. If a creature is brought to 0 hit points by one of these attacks, it is not only killed but disassembled, removing it from the game permanently unless restored by powerful magic like a true resurrection or wish spell. The Fabricator has the option to spare creatures it has defeated, providing tactical flexibility depending on the situation faced.
+
+Overall, the Fabricator stands out as a versatile and formidable construct capable of both dealing damage and crafting useful items, while its durable nature and combat mechanisms make it an interesting opponent or ally within a campaign.

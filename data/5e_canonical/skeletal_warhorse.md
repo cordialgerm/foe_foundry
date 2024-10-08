@@ -1,0 +1,53 @@
+<MonsterName/>Skeletal Warhorse</MonsterName>
+<CreatureType/>Undead</CreatureType>
+
+<summary>The Skeletal Warhorse is a Large undead creature that serves as a formidable mount and ally to necromancers or those who command the undead. It possesses notable physical attributes, particularly in strength, with a Strength score of 18, granting it a very good +4 modifier. The warhorse is agile enough for its size, with a Dexterity score of 12 and a +1 modifier, which is average. It has a moderate Constitution score of 14, allowing it to withstand some damage due to its +2 modifier. However, it has low intelligence, wisdom, and charisma, making it ineffective in social situations or complex problem-solving. The warhorse's primary vulnerability is bludgeoning damage; it is immune to poison damage and the poisoned condition and does not suffer from fatigue. With a movement speed of 50 feet, it can cover ground quickly in combat.</summary>
+
+<detail>
+
+The Skeletal Warhorse has an Armor Class of 11, which is relatively low, and it has a total of 30 hit points, calculated as 4d10+8. This makes it moderately challenging to defeat, particularly for low-level characters. It has a Challenge Rating of 1/2, making it suitable for parties seeking an introductory undead encounter.
+
+The special ability of the Skeletal Warhorse, Undead Nature, indicates that it does not require air, food, or sleep, allowing it to function continuously without the need for rest. This ability makes it an excellent choice for long journeys or protracted engagements.
+
+In combat, the Skeletal Warhorse utilizes its Hooves attack. This melee weapon attack has a +6 to hit, giving it an exceptional chance to land blows against targets. The reach of this attack is 5 feet, and when it connects, it deals 7 (1d6 + 4) bludgeoning damage. Notably, if the warhorse charges at least 20 feet straight towards a target before the attack, the target must make a DC 14 Strength saving throw. On a failed save, the target is knocked prone, which can significantly change the dynamics of a battle, putting the target at a disadvantage and making them vulnerable to further attacks.
+
+Overall, the Skeletal Warhorse is a powerful undead creature with solid offensive capabilities and the potential to control the battlefield through its charging tactics. Its characteristics make it a unique and challenging opponent for adventurers who may encounter it.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Skeletal Warhorse
+
+*Large* *Undead*
+
+- **Armor Class:** 11
+- **Hit Points:** 30 (4d10+8)
+- **Speed:** walk 50 ft.
+- **Challenge Rating:** 1/2 (100 XP)
+- **Source:** [A5e Monstrous Menagerie](https://enpublishingrpg.com/products/level-up-monstrous-menagerie-a5e) page 394
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 18 (+4) | 12 (+1) | 14 (+2) | 3 (-4) | 8 (-1) | 5 (-3) |
+
+- **Skills:** 
+- **Damage Vulnerabilities:** bludgeoning
+- **Damage Immunities:** poison
+- **Condition Immunities:** fatigue, poisoned
+- **Senses:** darkvision 60 ft., passive Perception 9
+- **Languages:** 
+
+### Special Abilities
+
+- **Undead Nature:** A skeleton doesnt require air, sustenance, or sleep.
+
+### Actions
+
+- **Hooves:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage. If the skeleton moves at least 20 feet straight towards the target before the attack  the target makes a DC 14 Strength saving throw  falling prone on a failure.
+
+
+
+

@@ -1,0 +1,12 @@
+The Hobgoblin is a medium humanoid creature known for its tactical prowess in battle. As a formidable opponent, it possesses a high armor class of 18, making it relatively difficult to hit. With 18 hit points, it can withstand a few assaults, though it is not exceptionally durable. The Hobgoblin's strength lies in its ability to engage in both melee and ranged combat through its Multiattack ability, allowing it to strike twice in a single turn, either using a longsword or a longbow. Its challenge rating of 1/2 indicates that it is a suitable encounter for low-level adventurers. However, it has low charisma, making it less effective in social encounters. Its strengths in combat are complemented by its darkvision, allowing it to see in the dark, and its skill in stealth.
+
+The Hobgoblin has the following attributes: Strength +1 (average), Dexterity +1 (average), Constitution +1 (average), Intelligence +0 (very bad), Wisdom +0 (very bad), and Charisma -1 (bad). These attributes indicate that while the Hobgoblin is capable in physical confrontations, it lacks intelligence and charm, which could prove to be a disadvantage in non-combat scenarios.
+
+In terms of combat actions, the Hobgoblin has several notable abilities:
+- **Multiattack:** This special ability allows the Hobgoblin to make two attacks with either its longsword or longbow during a single turn. This significantly increases its offensive capabilities.
+- **Longsword:** When using the longsword, the Hobgoblin makes a melee weapon attack with a +3 to hit. If it hits, it deals 5 slashing damage (1d8 + 1), or 6 slashing damage (1d10 + 1) if it chooses to wield the sword using both hands.
+- **Longbow:** For ranged attacks, the Hobgoblin can shoot a longbow at a range of 150 feet normally, or up to 600 feet at disadvantage. The attack is made with a +3 to hit, dealing 5 piercing damage (1d8 + 1) on a successful hit.
+
+Additionally, the Hobgoblin can utilize a bonus action called **Tactical Analysis**, which allows it to analyze one creature it can see within 30 feet. This ability grants the Hobgoblin advantage on its next attack roll against that creature before the start of its next turn, enhancing its chances to hit and deal damage successfully.
+
+With a combination of combat skills, tactical abilities, and decent defenses, the Hobgoblin is an effective combatant in lower-level encounters, capable of supporting its allies and inflicting damage on unsuspecting foes.

@@ -1,0 +1,22 @@
+The Vampire Warrior is a formidable Medium Undead creature known for its deadly prowess in combat and manipulative charm. With a Challenge Rating of 12, it is a significant threat in any encounter, boasting a high Armor Class of 18 and a substantial pool of Hit Points totaling 142. This vampire is characterized by exceptional physical attributes, notably a Strength of 20 and Constitution of 20, making it very strong and resilient. While it has a few notable weaknesses, including susceptibility to sunlight and running water, its myriad abilities and resistances provide it with a significant edge in battle. The Vampire Warrior wields a blend of melee attacks and powerful magical abilities, allowing it to dominate the battlefield while also having the potential to charm and manipulate foes.
+
+The Vampire Warrior’s attributes are as follows: 
+
+- Strength: 20, providing a +5 modifier, which is exceptional for melee attacks.
+- Dexterity: 18, granting a +4 modifier, making it good for dodging attacks and enhancing initiative.
+- Constitution: 20, also with a +5 modifier, allowing for very good durability.
+- Intelligence: 16, offering a +3 modifier, which is average for strategic thinking.
+- Wisdom: 16, providing a +3 modifier, which is average and useful for perception checks.
+- Charisma: 18, with a +4 modifier, making it good for social interactions and charm effects.
+
+The Vampire Warrior has saving throws modified as follows: Dexterity +8 (good), Wisdom +7 (good), and Charisma +8 (good). It is skilled in Perception +7 (good), Persuasion +8 (good), and Stealth +8 (good). Resistances include necrotic damage and damage from nonmagical, non-silvered weapons. It possesses darkvision with a range of 120 feet and has a passive perception score of 17, allowing it to detect hidden creatures quite easily. The vampire can understand and communicate in the languages it knew in life.
+
+The Vampire Warrior has several special abilities. Legendary Resistance, usable three times per day, allows it to succeed on saving throws it would otherwise fail, at the cost of its appearance aging visibly until it takes a long rest. Misty Recovery allows it to transform into mist when reduced to 0 Hit Points, preventing unconsciousness, but it must reach its resting place within 2 hours to avoid destruction. It can regenerate 20 hit points at the beginning of its turn if it hasn’t taken radiant damage since its last turn. Spider Climb enables it to traverse difficult surfaces and ceilings with ease. Additionally, it has specific vulnerabilities to sunlight and running water, which cause it to take 20 radiant damage if it ends its turn in contact with either, during which time it cannot regenerate or use any mist-related abilities. The Vampire Warrior also has a special resting place that must contain soil from its homeland; damage to this soil or exposure to certain spells can lead to its destruction.
+
+In combat, the Vampire Warrior can perform several actions. The Grab action allows it to make a melee weapon attack with a +9 to hit, dealing a combination of bludgeoning and necrotic damage while also grappling the target, making escape difficult. With the Charm ability, it can affect a target within 30 feet, forcing a DC 16 Wisdom save; failure results in the target being charmed for 24 hours, viewing the vampire as a friend. Its primary melee attack, the Reaping Greatsword, also allows it to strike up to three targets, inflicting severe slashing and necrotic damage while potentially knocking opponents prone.
+
+As a bonus action, the Vampire Warrior can use its Bite attack to deal piercing and significant necrotic damage, while simultaneously reducing the target's maximum health. This attack can result in the victim rising as a vampire spawn under the vampire’s thrall if they die from it.
+
+For reactions, it has Hissing Scuttle, which allows it to evade during radiant damage attacks, moving without provoking opportunity attacks. Warding Charm lets it use the Charm ability in response to melee attacks against it, giving it a defensive edge.
+
+Finally, the Vampire Warrior can perform legendary actions. It has the ability to use Blood Charm to target a creature under certain conditions, perform a Grab attack, or transform into mist or its original form through Mist Form. It can also change into the shape of a Medium or smaller beast with Shapechange while retaining its statistics. Overall, the Vampire Warrior combines combat prowess with magical abilities, making it a dangerous foe in any encounter.

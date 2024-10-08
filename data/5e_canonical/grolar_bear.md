@@ -1,0 +1,57 @@
+<MonsterName/>Grolar Bear</MonsterName>
+<CreatureType/>Beast</CreatureType>
+
+<summary>The Grolar Bear is a formidable large beast that strikes a balance between power and resilience, making it a notable predator in its environment. With high strength and decent constitution, it can deal significant physical damage while also withstanding attacks. The bear possesses a surprising ability to swim and climb, enhancing its mobility in various terrains. It operates unaligned, indicating that it does not have moral inclinations that could sway its actions. However, its low intelligence suggests a creature driven mainly by instinct rather than strategy or cunning. Given its challenge rating of 3, it presents a solid challenge to adventurers seeking to engage with it.</summary>
+
+<detail>
+
+The Grolar Bear has an armor class of 14, which is considered good, allowing it to avoid some attacks effectively. Its hit points total 68, derived from rolling 8d10 and adding 24, indicating it has an exceptional amount of health that allows it to remain in combat longer. The bear's speed is impressive, with a walking speed of 40 feet, swimming speed of 30 feet, and climbing speed of 20 feet, giving it excellent mobility in diverse environments. 
+
+The Grolar Bear showcases strong physical attributes, particularly with a Strength score of 20 (+5), making its physical attacks very dangerous. Its Dexterity is average at 10 (+0), providing no significant advantages in agility or evasion. The Constitution at 16 (+3) bolsters its hit points, reflecting very good resilience against physical ailments. With an Intelligence of 2 (-4), it checks poorly in any circumstance that requires thought or reasoning. A Wisdom of 13 (+1) gives the bear average perceptive abilities, complementing its keen sense of smell. Finally, a Charisma of 8 (-1) means it is very bad at influencing others or leading.
+
+In terms of skills, the Grolar Bear has a +1 bonus to Perception, which reflects its average awareness of its surroundings. It possesses a damage resistance to cold, indicating that it can absorb some forms of elemental damage without suffering full effects. Its passive perception score of 13 allows it to notice elements in its environment fairly well. The bear does not communicate through language.
+
+The Grolar Bear has a special ability called Keen Smell, which grants it advantage on Wisdom (Perception) checks that rely on smell. This ability significantly enhances its effectiveness in tracking or detecting creatures nearby, proving useful during ambushes or when hunting.
+
+When it comes to actions, the Grolar Bear can perform a Multiattack, allowing it to make one Bite and one Claw attack on its turn. If both attacks successfully hit a single target, that creature must make a DC 13 Strength saving throw; if they fail, they take 7 (2d6) bludgeoning damage and are knocked prone, increasing the Grolar Bear's chances of landing more hits in subsequent attacks.
+
+The Bite is a melee weapon attack that has a +7 to hit with a range of 5 feet and deals 9 (1d8+5) piercing damage. The Claws attack also has a +7 to hit, deals 12 (2d6+5) slashing damage, and shares the same range as the Bite. Both attacks reflect the Grolar Bear's formidable physical presence and ability to inflict substantial damage upon any foes it encounters. Overall, this bear is a fierce combatant that relies on brute strength and its physical prowess to dominate its opponents.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Grolar Bear
+
+*Large* *Beast* *unaligned*
+
+- **Armor Class:** 14 (natural)
+- **Hit Points:** 68 (8d10+24)
+- **Speed:** walk 40 ft. swim 30 ft. climb 20 ft.
+- **Challenge Rating:** 3 (700 XP)
+- **Source:** [Tome of Beasts 3](https://koboldpress.com/kpstore/product/tome-of-beasts-3-for-5th-edition/) page 222
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 20 (+5) | 10 (+0) | 16 (+3) | 2 (-4) | 13 (+1) | 8 (-1) |
+
+- **Skills:** perception +1
+- **Damage Resistances:** cold
+- **Senses:** passive Perception 13
+- **Languages:** —
+
+### Special Abilities
+
+- **Keen Smell:** Advantage: smell Wis (Percept) checks.
+
+### Actions
+
+- **Multiattack:** One Bite and one Claw. If it hits one creature with both creature: DC 13 Str save or take 7 (2d6) bludgeoning damage and be knocked prone.
+- **Bite:** Melee Weapon Attack: +7 to hit, 5 ft., one target, 9 (1d8+5) piercing damage.
+- **Claws:** Melee Weapon Attack: +7 to hit, 5 ft., one target, 12 (2d6+5) slashing damage.
+
+
+
+

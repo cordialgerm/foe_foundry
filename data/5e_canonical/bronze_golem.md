@@ -1,0 +1,66 @@
+<MonsterName/>Bronze Golem</MonsterName>
+<CreatureType/>Construct</CreatureType>
+
+<summary>The Bronze Golem is a formidable Large Construct that embodies the fusion of magic and metallurgy. Unaligned in nature, this golem serves as a powerful guardian or a weapon in the hands of a skilled creator. Its strengths lie in its robust defensive capabilities, with a decent Armor Class of 13 and substantial hit points totaling 57. The creature excels in resisting various damage types, especially from physical attacks that lack magical enhancement. While it boasts high Constitution and Strength scores, which provide it with good resilience and melee prowess, its low Dexterity and Intelligence make it relatively slow and unwise in combat situations. It remains an exceptional entity in combat, utilizing its unique abilities to threaten characters in close quarters.</summary>
+
+<detail>
+
+The Bronze Golem has the following attributes: 
+- Strength: 17 (+3), providing good melee attack capabilities.
+- Dexterity: 6 (-2), resulting in a bad modifier that affects its ability to dodge or react quickly.
+- Constitution: 18 (+4), giving it very good durability and hit points.
+- Intelligence: 1 (-5), indicating exceptional ignorance and incapacity for complex thought processes.
+- Wisdom: 10 (+0), representing an average ability to perceive or comprehend situations.
+- Charisma: 1 (-5), reflecting very bad social capability.
+
+The golem has a perception skill with a modifier of +4, allowing it to notice hidden creatures and objects more effectively. Additionally, it is immune to poison and psychic damage, can resist fire, and endure bludgeoning, piercing, and slashing damage from non-magical attacks that do not utilize adamantine. Its condition immunities ensure it cannot be charmed, exhausted, frightened, paralyzed, petrified, or poisoned, making it incredibly steadfast in battle. The golem has darkvision up to 60 feet and a passive perception of 14, as well as the capacity to understand languages its creator speaks, though it cannot communicate verbally.
+
+The special abilities of the Bronze Golem enhance its combat effectiveness and durability. The Boiling Body ability causes any creature that touches the golem or strikes it with a melee attack while in close proximity to suffer 5 (1d10) fire damage. Its Immutable Form makes the golem immune to any effects that would alter its shape, while Magic Resistance affords it a distinct advantage, allowing it to roll two dice for saving throws against spells and magical effects, taking the higher result. Furthermore, all of its weapon attacks count as magical, bypassing many resistances enemy creatures might have.
+
+In combat, the Bronze Golem can utilize the Multiattack action to perform two slam attacks against its foes. Each slam attack is made with a +5 to hit and has a reach of 5 feet. If successful, it deals 7 (1d8 + 3) bludgeoning damage. Notably, if it strikes a Medium or smaller target, it can grapple that creature, imposing an escape DC of 13. The golem can grapple only one creature at a time.
+
+One of its most dangerous abilities is the Brazen Bull. If the golem grapples a target, it can make a slam attack and, upon success, force the target into its boiler by opening a plate in its chest. Once trapped inside the boiler, the target becomes blind and restrained, benefiting from total cover against external effects while suffering 14 (4d6) fire damage at the start of its turns. The trapped creature or an ally must successfully pass a DC 13 Strength (Athletics) check to free the victim, who will fall prone in a space within 5 feet of the golem after escaping. The golem can contain only one creature in its boiler at any moment, making it a strategic combatant in scenarios where grappling and containment are critical.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Bronze Golem
+
+*Large* *Construct* *unaligned*
+
+- **Armor Class:** 13 (natural armor)
+- **Hit Points:** 57 (6d10+24)
+- **Speed:** walk 30 ft.
+- **Challenge Rating:** 3 (700 XP)
+- **Source:** [Creature Codex](https://koboldpress.com/kpstore/product/creature-codex-for-5th-edition-dnd) page 201
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 17 (+3) | 6 (-2) | 18 (+4) | 1 (-5) | 10 (+0) | 1 (-5) |
+
+- **Skills:** perception +4
+- **Damage Immunities:** poison, psychic
+- **Damage Resistances:** fire; bludgeoning, piercing, and slashing from nonmagical attacks not made with adamantine
+- **Condition Immunities:** charmed, exhaustion, frightened, paralyzed, petrified, poisoned
+- **Senses:** darkvision 60 ft., passive Perception 14
+- **Languages:** understands the languages of its creator but can't speak
+
+### Special Abilities
+
+- **Boiling Body:** The golem's body is hot to the touch, thanks to the boiler inside its chest. A creature that touches the golem or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage.
+- **Immutable Form:** The golem is immune to any spell or effect that would alter its form.
+- **Magic Resistance:** The golem has advantage on saving throws against spells and other magical effects.
+- **Magic Weapons:** The golem's weapon attacks are magical.
+
+### Actions
+
+- **Multiattack:** The golem makes two slam attacks.
+- **Slam:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage and, if the target is a Medium or smaller creature, it is grappled (escape DC 13). The golem can only grapple one creature at a time.
+- **Brazen Bull:** The golem makes a slam attack against a target it is grappling as it opens a plate in its chest and exposes its arcane boiler. If the attack hits, the target is forced into the golem's boiler, and the grapple ends. While inside the boiler, the target is blinded and restrained, it has total cover against attacks and other effects outside the boiler, and it takes 14 (4d6) fire damage at the start of each of its turns. To escape, it or another creature must succeed on a DC 13 Strength (Athletics) check to open the boiler, freeing the target, which falls prone in a space within 5 feet of the golem. A bronze golem can only have one creature in its boiler at a time.
+
+
+
+

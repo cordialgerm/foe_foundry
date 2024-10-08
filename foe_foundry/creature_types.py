@@ -93,6 +93,10 @@ class CreatureType(StrEnum):
         }
 
     @staticmethod
+    def all():
+        return CreatureType.all_but()
+
+    @staticmethod
     def all_but(*creature_type: CreatureType) -> Set[CreatureType]:
         exclusions = set(creature_type)
         all = {c for c in CreatureType}

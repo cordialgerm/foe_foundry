@@ -1,0 +1,19 @@
+The Kallikantzaros is a small, chaotic evil fey creature known for its cunning and mischievous nature. It thrives in shadowy environments and possesses a unique blend of agility and stealth, making it a dangerous adversary for adventurers. With a Challenge Rating of 2, it presents a moderate threat, especially when its abilities are used effectively in combat. However, while it has decent hit points (59) and solid melee capabilities, its low Constitution and intelligence scores indicate that it might struggle against more strategic foes. Notably, its Fey Ancestry grants it resistance against charm effects, adding to its survivability against magical threats. That said, it is vulnerable to the disruptive effects of incense and burning materials, which can hinder its performance significantly.
+
+The Kallikantzaros has the following attributes: Strength is 15 (+2), Dexterity is 13 (+1), Constitution is 10 (+0), Intelligence is 6 (-2), Wisdom is 8 (-1), and Charisma is 10 (+0). Its Strength and Dexterity are good, allowing it to hit foes effectively, while its Constitution is average, providing an acceptable foundation to withstand damage. Intelligence and Wisdom are both low, resulting in very bad skill checks related to those attributes, particularly in situations requiring perceptiveness or insight.
+
+When it comes to skills, it has a stealth modifier of +3, indicating a good proficiency in moving unnoticed. Its darkvision allows it to see in low-light conditions up to 60 feet, significantly benefiting its stealthy nature. However, its passive Perception is a modest 9, which may limit its awareness of the surroundings.
+
+The Kallikantzaros has several special abilities: 
+
+- **Fey Ancestry** gives it advantage on saving throws against being charmed, meaning it is very resistant to mind control but can be affected by other effects. It also cannot be put to sleep by magic, making it difficult for spellcasters to incapacitate.
+- **Hateful Scents** dictates that if the Kallikantzaros is within 20 feet of burning incense, it must succeed on a Constitution saving throw (DC 13) or suffer disadvantage on its attack rolls until the start of its next turn. This makes it important for any party facing a Kallikantzaros to consider using such substances. It similarly cannot choose to approach the source of the incense, which can manipulate its mobility.
+- **Nimble Escape** allows it to use its bonus action to Disengage or Hide, making it exceptionally mobile and difficult to pin down in combat.
+
+In terms of actions, the Kallikantzaros can perform a **Multiattack**, allowing it to make two handsaw attacks or two spear attacks in a single turn. 
+
+- The **Handsaw** attack has a +4 to hit, reaching 5 feet, and deals 5 (1d6 + 2) slashing damage. Its effectiveness increases against unarmored targets, dealing an extra die of damage, which can turn it into a serious threat.
+- The **Spear** can be used either in melee or ranged combat, sharing the same +4 to hit, with a reach of 5 feet or a range of 20/60 feet. It inflicts 5 (1d6 + 2) piercing damage at range or 6 (1d8 + 2) when wielded with two hands in close combat.
+- The **Misery Whip** is a powerful ability that two Kallikantzaros can perform together, moving up to their speed while holding a saw. The target must succeed on a Dexterity saving throw (DC 13) or take 9 (2d6 + 2) slashing damage. If the target is Large or smaller, it must also succeed on a Strength saving throw (DC 13) or be knocked prone. If knocked prone, the two Kallikantzaros may each make a handsaw attack as a bonus action, making this a devastating combination attack.
+
+Overall, the Kallikantzaros is a crafty foe that relies on ambush tactics and swift strikes, and its unique abilities can turn the tide of battle if not countered effectively by players.

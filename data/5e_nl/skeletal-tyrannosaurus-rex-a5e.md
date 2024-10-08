@@ -1,0 +1,15 @@
+The Skeletal Tyrannosaurus Rex is a formidable undead creature that serves as a terrifying force on the battlefield. With its massive size and powerful attacks, it represents a significant challenge for adventurers. The skeletal form makes it immune to poison and resistant to various conditions, including fatigue. However, it is vulnerable to bludgeoning damage, which can be exploited by characters who focus on that damage type. Its high hit points and substantial physical strength make it a strong opponent, though its low Dexterity and Intelligence suggest it lacks agility and problem-solving capabilities. As a Challenge Rating 8 monster, it can provide significant experience points but demands strategic engagement to overcome its strengths.
+
+The Skeletal Tyrannosaurus Rex has an Armor Class of 13, which represents a moderate level of defense. The creature has a total of 126 hit points derived from rolling eleven 12-sided dice plus an additional 55, providing a good buffer against damage during encounters. It has a movement speed of 50 feet, allowing it to close the distance to enemies quickly. 
+
+In terms of attributes, the Strength score is particularly notable at 22, granting a +6 modifier, which reflects an exceptional ability to deal damage. The Constitution score of 20 provides a +5 modifier, ensuring high resilience against incoming damage. Dexterity is average at 10 with a +0 modifier, meaning it won’t excel in avoiding attacks but won't struggle significantly either. Intelligence, Wisdom, and Charisma scores are all low, indicating very bad effectiveness in mental actions, social interactions, or perception-based tasks.
+
+The Skeletal Tyrannosaurus Rex also possesses a unique special ability known as "Undead Nature," which signifies that it does not need air, sustenance, or sleep to function, enabling it to continuously fight without the drawbacks that living creatures would face.
+
+When it comes to actions, it features a Multiattack option, allowing it to make two attacks on its turn: one bite attack and one tail attack, each against separate targets. 
+
+The Bite is a melee weapon attack with a +9 to hit, boasting a reach of 10 feet. If successful, it inflicts 25 (3d12 + 6) piercing damage. Additionally, if the target is a creature, it is grappled with an escape DC of 17. While grappling a creature, the Skeletal Tyrannosaurus Rex cannot bite another target, but it gains advantage on future bite attacks against the grappled creature, significantly increasing its effectiveness in prolonged encounters.
+
+The Tail is another melee weapon attack and also has a +9 to hit with the same reach of 10 feet. If this attack hits, it deals 19 (3d8 + 6) bludgeoning damage, making it a strong secondary attack option.
+
+Overall, the Skeletal Tyrannosaurus Rex is a powerful undead adversary suited for combat scenarios, requiring careful tactics from players to mitigate its high damage output and resilience while exploiting its vulnerabilities.

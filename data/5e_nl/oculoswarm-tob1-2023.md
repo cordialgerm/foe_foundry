@@ -1,0 +1,22 @@
+The Oculo Swarm is a formidable creature characterized as a large, swarm-type aberration that embodies a neutral evil alignment. With a robust armor class of 15 and a substantial pool of hit points totaling 82, it presents a considerable challenge in combat. The creature excels with a dexterous score of 20, granting it a very good dexterity modifier of +5, which greatly enhances its ability to evade attacks. It also boasts decent constitution and wisdom, reflecting its resilience and perceptiveness. Additionally, the swarm possesses remarkable immunity to many conditions, making it a difficult opponent to incapacitate or hinder. Its unique abilities and actions center around extracting the eyes of its foes, disorienting them, and utilizing its swarm nature to invade opponents' spaces, making it a challenging adversary in any encounter.
+
+The Oculo Swarm possesses the following attributes: 
+- Strength: 10 (+0) - average modifier.
+- Dexterity: 20 (+5) - very good modifier, ensuring it can dodge attacks effectively.
+- Constitution: 14 (+2) - good modifier, contributing to its durability.
+- Intelligence: 8 (-1) - bad modifier, indicating poor problem-solving capabilities.
+- Wisdom: 15 (+2) - good modifier, aiding in perception and insight checks.
+- Charisma: 17 (+3) - good modifier, enhancing its ability to resist effects requiring charisma, such as certain spells.
+
+The swarm has impressive skills, including Insight (+6) and Perception (+6), both enhanced by its good wisdom score, as well as Stealth (+7), benefiting greatly from its high dexterity. It also has resistances to bludgeoning, piercing, and slashing damage, allowing it to withstand physical attacks more effectively. The creature is immune to conditions such as charmed, frightened, grappled, paralyzed, petrified, prone, restrained, and stunned, making it a resilient foe in various combat scenarios. With darkvision up to 60 feet and a passive perception rate of 16, it can effectively navigate in low-light environments. While it understands Common, the swarm cannot communicate verbally.
+
+The Oculo Swarm's special abilities include:
+- **Hundreds of Eyes:** This ability provides the swarm with advantage on all Wisdom (Perception) checks that rely on sight, as well as on saving throws against being blinded. Furthermore, as long as it is not blinded, opponents attacking the swarm cannot benefit from features like Pack Tactics or Sneak Attack, which often rely on allies being present.
+- **Swarm:** This trait allows the Oculo Swarm to occupy and move through spaces simultaneously with other creatures, giving it flexibility in positioning during combat. It cannot regain hit points or gain temporary hit points, making it dependent on its total hit points.
+
+In terms of actions, the Oculo Swarm can execute the following:
+- **Multiattack:** This action allows the swarm to perform two Extract Eye attacks on its turn. If both attacks strike a single target, that creature must make a DC 13 Strength saving throw. Failure results in one of the target's eyes being plucked out, creating significant combat disadvantages. While missing half or fewer of its total eyes, the affected creature suffers a disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight. If it loses more than half its eyes, the creature becomes blinded until it is healed.
+- **Extract Eye:** This is a melee weapon attack with a +7 to hit and a range of 0 feet, meaning it can only target creatures within its space. On a successful hit, the attack deals 18 (4d8) piercing damage or 9 (2d8) piercing damage if the swarm is at half hit points or lower.
+- **Disorienting Gaze (Recharge 5–6):** This powerful ability causes the swarm's many eyes to focus in different directions. Each creature within 10 feet must make a DC 13 Charisma saving throw. On a failed save, the creature takes 21 (6d6) psychic damage and becomes disoriented, causing incapacitation and random movements for its next turn. Success halves the damage and negates the disorientation.
+
+Together, the Oculo Swarm's traits, abilities, and actions make it a complex and deadly opponent in encounters, capable of inflicting lasting effects on those who venture too close.

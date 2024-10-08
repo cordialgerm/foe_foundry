@@ -1,0 +1,56 @@
+<MonsterName/>Aboleth Thrall</MonsterName>
+<CreatureType/>Humanoid</CreatureType>
+
+<summary>The Aboleth Thrall is a Medium humanoid creature that serves as a loyal servant to the powerful aboleths, showcasing its capabilities both in combat and its connection to aquatic environments. This creature possesses an average to good overall combat proficiency, with decent armor class and hit points, making it a resilient opponent. Its ability to breathe both air and water allows it to operate in a variety of settings, though it has a significant weakness in its need to remain moist; failing to do so can lead to suffocation. With its unique abilities, the Aboleth Thrall can be a dangerous foe, capable of dealing substantial poison damage while also protecting its master through self-sacrifice.</summary>
+
+<detail>
+
+The Aboleth Thrall has the following attributes: Strength 14 (+2), Dexterity 14 (+2), Constitution 14 (+2), Intelligence 10 (+0), Wisdom 10 (+0), and Charisma 12 (+1). Its armor class is 12, which is considered average, while its hit points are 45, calculated using 7d8+14, making it reasonably resilient for a creature of its challenge rating of 2, equating to 450 XP.
+
+In terms of skills, the Aboleth Thrall has no specific bonuses, reflected in its +0 modifier across the board. With passive perception set at 10, it can detect some environmental changes but is not particularly perceptive. It can communicate in Common and possesses unlimited-range telepathy with aboleths, allowing it to convey information and receive commands from its master without physical distance limitations.
+
+The Aboleth Thrall has a notable special ability called "Sea Changed," which enables it to breathe both water and air. However, if it spends more than 12 hours out of water, it must bathe in it for at least an hour to avoid the risk of suffocation. This ability reflects its strong aquatic nature, and it is important to consider this aspect during encounters. Additionally, the thrall is magically charmed by the aboleth, indicating its loyalty and servitude to this powerful creature.
+
+In combat, the Aboleth Thrall uses the "Poison Ink Knife" action for melee attacks. This attack has a +4 modifier to hit, which is good, and it has a reach of 5 feet. Upon successfully hitting a target, the attack deals 4 slashing damage plus an impressive 10 poison damage (3d6), which can significantly affect an opponent's combat performance.
+
+Additionally, the thrall can perform a reaction called "Self-Sacrifice," which is a strategic ability during combat. If an ally within 5 feet of the thrall attacks an aboleth, the thrall can choose to take the attack's effect instead. This ability underscores its protective instinct, allowing it to shield its master from harm, although it puts the thrall at risk of receiving damage from potentially powerful attacks directed at the aboleth.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Aboleth Thrall
+
+*Medium* *Humanoid*
+
+- **Armor Class:** 12
+- **Hit Points:** 45 (7d8+14)
+- **Speed:** walk 30 ft. swim 30 ft.
+- **Challenge Rating:** 2 (450 XP)
+- **Source:** [A5e Monstrous Menagerie](https://enpublishingrpg.com/products/level-up-monstrous-menagerie-a5e) page 17
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 14 (+2) | 14 (+2) | 14 (+2) | 10 (+0) | 10 (+0) | 12 (+1) |
+
+- **Skills:** any +0
+- **Senses:** passive Perception 10
+- **Languages:** Common, unlimited-range telepathy with aboleth
+
+### Special Abilities
+
+- **Sea Changed:** The aboleth thrall can breathe water and air, but must bathe in water for 1 hour for every 12 hours it spends dry or it begins to suffocate. It is magically charmed by the aboleth.
+
+### Actions
+
+- **Poison Ink Knife:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage plus 10 (3d6) poison damage.
+
+### Reactions
+
+- **Self-Sacrifice:** When a creature within 5 feet of the thrall that the thrall can see hits an aboleth with an attack, the thrall can make itself the target of the attack instead.
+
+
+
+

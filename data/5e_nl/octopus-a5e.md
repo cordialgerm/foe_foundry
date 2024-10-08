@@ -1,0 +1,11 @@
+The octopus is a tiny beast that excels in stealth and aquatic environments. With a speed of 30 feet when swimming and the ability to camouflage itself, it is adept at hiding and maneuvering in water. However, its low hit points and relatively low armor class make it vulnerable in combat situations. The octopus's abilities allow it to escape dangerous encounters by creating clouds of ink, which can provide crucial cover. Although its physical attacks are weak, its ability to grapple opponents allows it to control foes and limit their actions effectively.
+
+The octopus has a low Strength score of 4, with a modifier of -3, indicating that it is very bad in melee combat strength. It possesses a Dexterity score of 14, meaning it has a good modifier of +2 which enhances its stealth capabilities. The Constitution score of 10 gives it an average resilience to damage, while its Intelligence score of 3 reflects an exceptional deficiency in cognitive abilities, making it very bad at complex tasks. The Wisdom score of 10 is average, and the Charisma score of 4 is very bad, suggesting it lacks any personal charm or influence.
+
+In terms of skills, the octopus has a stealth bonus of +4, making it effective in avoiding detection. Its darkvision extends to 30 feet, allowing it to see in dim light as if it were bright, while its passive perception of 10 means it can perceive surroundings at a basic level but is not particularly astute. The octopus is capable of water breathing, allowing it to thrive underwater and hold its breath for up to 30 minutes when out of water.
+
+The octopus can take the following actions during gameplay: 
+
+- **Tentacles:** This melee weapon attack has a +4 bonus to hit, allowing it to reach up to 15 feet. When it hits a target, it inflicts 1 bludgeoning damage. If the target is another creature, it becomes grappled with an escape DC of 10. While the target remains grappled, it is restrained, meaning it cannot move freely, and the octopus cannot grapple a different target with its tentacles. 
+
+As a bonus action, the octopus can use its **Ink Cloud** ability once per day while underwater. It exudes a cloud of ink in a 5-foot radius, heavily obscuring the area for 1 minute unless dispelled by a strong current. This ability can be crucial for evading threats or creating an opportunity for escape.

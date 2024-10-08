@@ -1,0 +1,20 @@
+The Spectral Guardian is a Medium undead creature classified as Neutral Evil. It serves as a formidable protector of specific locations tied to its past disgrace, often found haunting tombs or ruins. With an armor class of 14, it offers a reasonable defense against attacks but relies on its hit points, totaling 93, to sustain itself in combat. The Spectral Guardian has a challenge rating of 6, making it a significant adversary, capable of dealing considerable necrotic damage while inflicting conditions that can hinder or terrify its opponents. Its strengths lie in its high Dexterity and Charisma, allowing it to evade blows and manipulate fear effectively. However, it is relatively weak in Strength, making it less effective in physical confrontations.
+
+The attributes of the Spectral Guardian are as follows:
+- Strength: 6 (-2), which is very bad, limiting its effectiveness in physical attacks and grappling.
+- Dexterity: 18 (+4), which is exceptional, providing a strong bonus to stealth and ranged attacks and enhancing its armor class.
+- Constitution: 18 (+4), which is exceptional, giving it a good number of hit points and boosting its saving throws against many attacks.
+- Intelligence: 11 (+0), which is average, indicating it has basic understanding but limited mental capabilities.
+- Wisdom: 16 (+3), which is good, improving its perception and resilience against certain effects.
+- Charisma: 18 (+4), which is exceptional, enhancing its spellcasting ability and its capacity to instill fear.
+
+For saving throws, it has a +7 modifier in Dexterity, making its ability to evade attacks very good, and a +6 modifier in Wisdom, which is also good, giving it a solid defense against mental attacks. It boasts immunities to cold, necrotic, and poison damage, while it resists bludgeoning, piercing, and slashing damage from nonmagical attacks. It is immune to a range of conditions, including charmed and frightened, making it a resilient opponent.
+
+The Spectral Guardian possesses several special abilities:
+- Disgrace Bound: This ability restricts its movement, requiring it to remain within one mile of its bound location. If it strays too far, it will lose its Spectral Blade action until it returns and can teleport back after 24 hours, ensuring it stays tied to its origins.
+- Incorporeal Movement: This grants it the ability to pass through solid objects and creatures, treating them as difficult terrain, but it will take damage if it ends its turn inside an object.
+- Undead Nature: This grants the Spectral Guardian the ability to function without air, food, drink, or sleep, making it tireless.
+
+In combat, the Spectral Guardian can perform a Multiattack, delivering two Spectral Blade attacks. If both strikes hit the same target, that target must succeed on a DC 15 Constitution saving throw or have its hit point maximum reduced by the total necrotic damage dealt. The Spectral Blade itself is a melee weapon attack with a +7 bonus to hit, a reach of 5 feet, and deals 13 slashing damage plus an additional 9 necrotic damage on a hit. The target must also succeed on a DC 14 Wisdom saving throw or be frightened until the end of its next turn. Alternatively, the Spectral Burst allows it to inflict a mixture of force and necrotic damage with a +7 to hit, whether it is a melee or ranged attack.
+
+The creature is capable of spellcasting, using its high Charisma for the spell save DC of 15. It can cast spells like Dancing Lights, Fog Cloud, and Minor Illusion at will, providing it with useful abilities for manipulation and concealment. It can cast Fear and Slow three times a day each, creating panic among its enemies and hampering their actions. Additionally, it has access to Arcane Hand once per day, a spell that might significantly alter the battlefield dynamics by creating an imposing magical force.

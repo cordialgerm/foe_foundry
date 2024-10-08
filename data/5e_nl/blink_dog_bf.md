@@ -1,0 +1,15 @@
+The Blink Dog is a Medium fey creature known for its agility and ability to teleport. It serves as a protective companion and a clever scout in the wild, making it a noteworthy ally in various adventures. With a Challenge Rating of 1/4, it is relatively low in power compared to other creatures, yet it possesses unique abilities that can turn the tide of a situation. Its biggest strengths lie in its dexterous nature and its special abilities that enhance its survivability and effectiveness in combat. However, its overall toughness is limited, as evidenced by its modest Armor Class of 13 and Hit Points of 14, which makes it particularly susceptible to damage. 
+
+The attributes of the Blink Dog are as follows: Strength: +1 (average), Dexterity: +3 (good), Constitution: +1 (average), Intelligence: +0 (very bad), Wisdom: +1 (average), and Charisma: +0 (very bad). With a high Dexterity score, the Blink Dog excels in acrobatics and maneuverability. Its stealth capabilities are noteworthy, boasting a Stealth score of 15, which provides it with a good chance of remaining hidden while observing its surroundings. The creature has a Perception score of 13 but can heighten this to 18 when using its keen senses of hearing or smell.
+
+The Blink Dog has several special abilities that enhance its gameplay potential: 
+
+- **Fey Resilience:** It is resistant to the charmed and unconscious conditions, providing it with added protection against certain spells and attacks, making it a resilient combatant in magical scenarios.
+- **Heightened Hearing and Smell:** This ability allows the Blink Dog to detect threats and other creatures effectively, boosting its Perception score for auditory and olfactory sensing.
+- **Pack Tactics:** This ability grants the Blink Dog advantage on attack rolls if it has an ally within 5 feet of its target, encouraging teamwork and increasing its potential for successful attacks.
+
+In combat, the Blink Dog primarily uses the **Bite** action, which involves a melee weapon attack. The Blink Dog has a +5 modifier to hit with this attack, making it quite effective, as it can inflict 6 (1d6 + 3) piercing damage on a successful hit. 
+
+Additionally, the Blink Dog can utilize its **Teleport** ability, which has a recharge mechanism that activates on a roll of 4 to 6. This action allows the creature to teleport up to 40 feet to an unoccupied space it can see. This ability can be used before or after executing a Bite attack, providing flexibility in positioning during combat. The teleportation not only helps in dodging attacks but also allows the Blink Dog to strategize its assaults from a safer distance. 
+
+Overall, the Blink Dog is an agile and cunning creature, making it an excellent companion and capable combatant that thrives on teamwork and its teleportation ability.

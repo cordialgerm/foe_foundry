@@ -1,0 +1,17 @@
+The Satyr is a Medium fey creature known for its mischievous and enchanting nature. With a Challenge Rating of 1/2, it is a relatively low-tier monster, making it suitable for lower-level adventurers seeking to encounter fey magic and whimsical trickery. The Satyr possesses a good range of Dexterity and Charisma, offering it exceptional capabilities in stealth and performance. Its strengths lie in its magical resistance and its ability to charm and incapacitate opponents with its enchanting dance and lullaby. However, its Hit Points are relatively low, making it vulnerable if engaged directly in combat, especially against multiple attackers.
+
+The Satyr has the following attributes: Strength of 12 (+1), Dexterity of 14 (+2), Constitution of 10 (+0), Intelligence of 10 (+0), Wisdom of 10 (+0), and Charisma of 16 (+3). Its Dexterity provides it with a good modifier, granting a decent level of agility and enhancing its stealth skills. The Charisma score is particularly notable, as it allows the Satyr to perform well in social interactions and use its magical abilities effectively. Overall, the Satyr's abilities and modifiers can be described as good, with its Charisma being exceptional.
+
+The Satyr has several skills: a +2 modifier in perception, +5 in performance, and +4 in stealth. Its passive perception is 12, helping it notice hidden creatures or traps. The Satyr can communicate in Common, Elvish, and Sylvan, further aiding its interactions. 
+
+One of the notable special abilities of the Satyr is Magic Resistance, which grants it advantage on saving throws against spells and magical effects. This makes it particularly effective against caster types, allowing it to resist spells more successfully compared to average creatures.
+
+In combat, the Satyr has several ways to engage opponents. Its Ram attack is a melee weapon action with a +3 to hit, having a reach of 5 feet. This attack deals 4 bludgeoning damage normally or 8 if the Satyr charges at least 20 feet toward the target before the attack, which can significantly increase its damage output.
+
+The Rapier is a melee weapon attack with a +4 to hit and deals 6 piercing damage, representing the Satyr's proficiency with finesse weapons. The Shortbow represents the Satyr's ranged capabilities, also with a +4 to hit, dealing 5 piercing damage over an effective range, useful for attacking from a distance.
+
+The Satyr also possesses two magical abilities: Dance Tune and Lullaby. Dance Tune forces each humanoid, fey, or giant within a 30-foot radius to make a DC 13 Wisdom saving throw. On failure, the target is compelled to dance, reducing its movement speed by half and giving it disadvantage on attack rolls until the Satyr's next turn. This ability can severely hinder opponents and provide the Satyr or its allies a strategic advantage.
+
+Lullaby requires each humanoid or giant within the same radius to make a DC 13 Constitution saving throw. On failure, the target falls asleep. They can remain asleep until someone wakes them or until the Satyr stops playing its lullaby at the end of its next turn. Similar to Dance Tune, if a creature successfully saves against Lullaby, it becomes immune to this effect for the next 24 hours. This ability is particularly effective for controlling the battlefield and rendering enemies unable to act.
+
+Overall, the Satyr is a playful yet powerful adversary, using its charm and magical abilities to manipulate and defeat foes while remaining gentle and enchanting in nature.

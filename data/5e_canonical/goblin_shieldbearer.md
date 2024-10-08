@@ -1,0 +1,52 @@
+<MonsterName/>Goblin Shieldbearer</MonsterName>
+<CreatureType/>Humanoid</CreatureType>
+
+<summary>The Goblin Shieldbearer is a small humanoid creature that serves as a nimble and strategic combatant on the battlefield. With a challenge rating of 1/2, it is considered a low-threat enemy; however, it brings a notable tactical advantage through its abilities, particularly in providing cover to its allies. While its offensive capabilities are somewhat limited, it compensates for this with defensive tactics and the ability to evade attacks. With a modest Armor Class of 13, this goblin can take a few hits but is generally fragile, having only 10 hit points on average. Its strengths lie in stealth and the ability to work alongside other goblins, but it is also hindered by low physical strength and constitution.</summary>
+
+<detail>
+
+The Goblin Shieldbearer has the following ability scores: Strength 8 (very bad), Dexterity 12 (average), Constitution 10 (average), Intelligence 10 (average), Wisdom 10 (average), and Charisma 10 (average). The low strength score indicates that the goblin is not particularly capable in physical confrontations and will rely on its dexterous abilities and tactics instead. The Dexterity grants it a small bonus to initiative and ranged attacks, making it somewhat effective at surprising opponents. The Shieldbearer's skills include a +3 to stealth, which is good, enabling it to blend into the environment or surprise enemies. It possesses darkvision, allowing it to see in dim light within 60 feet as if it were bright light, and it has passive perception of 10, making it capable of detecting hidden threats at a basic level. The shieldbearer can communicate in Common and Goblin, giving it some versatility in interactions.
+
+In combat, the goblin has access to several actions. Its primary melee attack is with a shortsword, which has a +3 to hit, allowing it to effectively strike nearby foes. On a successful hit, the shortsword deals an average of 4 piercing damage. It can also use a shortbow for ranged attacks at a range of 80 feet, and up to 320 feet at a disadvantage, dealing the same average damage as the melee attack. 
+
+Additionally, the Goblin Shieldbearer has a special action called "Shield Wall." When it is within 5 feet of another goblin, both gain three-quarters cover, significantly increasing their defense. This ability can dramatically enhance their survivability in combat, making it harder for enemies to hit them.
+
+As a bonus action, the Shieldbearer can utilize "Nimble Escape," allowing it to take either the Disengage or Hide action. This ability enables it to evade from melee combat without provoking opportunity attacks or to vanish from sight, providing a tactical advantage by repositioning itself or reducing the likelihood of being targeted by enemies. Overall, the Goblin Shieldbearer is an agile and strategic foe, employing clever tactics to support its allies in combat while minimizing its own risks.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Goblin Shieldbearer
+
+*Small* *Humanoid*
+
+- **Armor Class:** 13
+- **Hit Points:** 10 (3d6)
+- **Speed:** walk 30 ft.
+- **Challenge Rating:** 1/2 (100 XP)
+- **Source:** [A5e Monstrous Menagerie](https://enpublishingrpg.com/products/level-up-monstrous-menagerie-a5e) page 250
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 8 (-1) | 12 (+1) | 10 (+0) | 10 (+0) | 10 (+0) | 10 (+0) |
+
+- **Skills:** stealth +3
+- **Senses:** darkvision 60 ft., passive Perception 10
+- **Languages:** Common, Goblin
+
+### Actions
+
+- **Shortsword:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.
+- **Shortbow:** Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage.
+- **Shield Wall:** The goblin and a goblin within 5 feet of it gain three-quarters cover.
+
+### Bonus Actions
+
+- **Nimble Escape:** The goblin takes the Disengage or Hide action.
+
+
+
+

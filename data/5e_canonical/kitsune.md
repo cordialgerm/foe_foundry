@@ -1,0 +1,55 @@
+<MonsterName/>Kitsune</MonsterName>
+<CreatureType/>Fey</CreatureType>
+
+<summary>The Kitsune is a Small Fey creature known for its chaotic neutral alignment. It serves as a trickster and manipulator, often leveraging its inherent magical abilities to outwit opponents and escape dangerous situations. With an Armor Class of 12 and 49 hit points derived from 14d6, it is not overly durable for a creature of its challenge rating of 2, which provides a moderate level of threat to adventurers. The Kitsune's natural agility, indicated by a Dexterity score of 15 (+2 modifier, which is good), allows it to evade attacks and use its spells effectively. However, it has low physical strength (STR 8, -1 modifier, which is very bad) and average constitution (CON 11, +0 modifier), making it weak in direct combat encounters where strength and resilience are critical.</summary>
+
+<detail>
+
+In gameplay, the Kitsune features several remarkable abilities. It can shapechange using its Shapechanger ability, allowing it to polymorph into a Small or Medium humanoid form or revert back to its true fox form at will. This transformation retains its tails and does not modify its statistics except for size, giving it significant versatility in both combat and social interactions. Its innate spellcasting is based on Charisma, providing a spell save DC of 12, with a +4 bonus to hit on spell attacks. This ability enables the Kitsune to cast spells such as Detect Thoughts and Fire Bolt at will, alongside other powerful spells like Invisibility and Major Image, making it a formidable opponent in deception and crowd control.
+
+The Kitsune's skills include a +4 to perception, allowing it to notice hidden threats or clues easily, aided by its darkvision capability, which lets it see in darkness up to 60 feet. With language proficiency in both Common and Sylvan, it can communicate effectively in diverse situations. 
+
+In terms of actions, the Kitsune can perform a Multiattack, which includes one rapier attack and one dagger attack when in humanoid form, or two bite attacks when in fox form. The bite attack in fox form has a +4 to hit and a reach of 5 feet, dealing an average of 7 (2d4 + 2) piercing damage to its target. In humanoid form, the rapier attack also has a +4 to hit, deals 6 (1d8 + 2) piercing damage, while the dagger can be used both as a melee attack or thrown, with a similar attack bonus, dealing 4 (1d4 + 2) piercing damage. This versatility allows the Kitsune to remain a threat regardless of its form, utilizing both cunning magic and agile strikes.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Kitsune
+
+*Small* *Fey* *chaotic neutral*
+
+- **Armor Class:** 12
+- **Hit Points:** 49 (14d6)
+- **Speed:** walk 30 ft.
+- **Challenge Rating:** 2 (450 XP)
+- **Source:** [Creature Codex](https://koboldpress.com/kpstore/product/creature-codex-for-5th-edition-dnd) page 236
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 8 (-1) | 15 (+2) | 11 (+0) | 12 (+1) | 15 (+2) | 14 (+2) |
+
+- **Skills:** perception +4
+- **Senses:** darkvision 60 ft., passive Perception 14
+- **Languages:** Common, Sylvan
+
+### Special Abilities
+
+- **Shapechanger:** The kitsune can use its action to polymorph into a Small or Medium humanoid, or back into its true form. The kitsune's tails remain, however, and its humanoid form often has a fine coat of fur the same color as the kitsune. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+- **Innate Spellcasting:** The kitsune's innate spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). The kitsune can innately cast the following spells, requiring no material components:
+At will: detect thoughts, fire bolt (2d10), invisibility (self only), major image
+2/day each: disguise self, fear, tongues
+1/day each: confusion, fly
+
+### Actions
+
+- **Multiattack:** In humanoid form, the kitsune makes one rapier attack and one dagger attack. In fox form, it makes two bite attacks.
+- **Bite (Fox Form Only):** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage.
+- **Rapier (Humanoid Form Only):** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage. Dagger (Humanoid Form Only). Melee or Ranged Weapon
+- **Attack:** +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
+
+
+
+

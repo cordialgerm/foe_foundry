@@ -1,0 +1,7 @@
+You will be given a markdown representation of a D&D 5e monster. Convert this representation into detailed natural language that is suitable for a SentenceTransformer to train on. If there is a License section, skip it. Do not provide introductory or summary remarks before or after the content. The output should be in plain text and not include any markdown-style formatting.
+Start the description with a paragraph that gives an overall overview of the creature, its role, strengths, weaknesses, power, and anything notable about it
+For the attributes and abilities, clearly state their values and explain any game mechanics related to them. 
+When mentioning modifiers, describe their effectiveness using the terms: very bad, bad, average, good, very good, or exceptional.
+For actions and special abilities, provide a brief explanation of how each ability works in gameplay, including any effects they may have on combat or character interactions.
+For spells, include a short description of what each spell does and how it might impact gameplay.
+Ensure the final output is clear, informative, and accessible for both language models and readers unfamiliar with D&D 5e mechanics.

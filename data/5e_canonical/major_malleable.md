@@ -1,0 +1,71 @@
+<MonsterName/>Major Malleable</MonsterName>
+<CreatureType/>Aberration</CreatureType>
+
+<summary>The Major Malleable is a sprawling and chaotic aberration that embodies the concept of fluidity and unpredictability in combat. This Huge creature operates under a chaotic evil alignment, leveraging its unique abilities to manipulate its form and absorb the strength of others. With a solid Armor Class of 13 and a substantial hit point pool of 218, the Major Malleable presents a formidable challenge in battle, especially with its ability to grapple and drain the life force of its adversaries. Although its Dexterity is relatively poor, leading to a bad modifier of -1, its Strength of 22 provides it with a very good +6 modifier for physical attacks. Its notable defenses include immunity to psychic damage and various conditions, making it resilient against mental assaults. The creature's challenge rating of 10 indicates a significant threat in encounters. </summary>
+
+<detail>
+
+The Major Malleable exhibits a strong constitution, reflected in its Constitution score of 17 (+3), which grants it a good resilience against various effects. Its Intelligence of 19 (+4) enables it to be very effective in intelligence-based saving throws, while a Wisdom of 16 (+3) helps it resist various spells. The creature has an average Charisma of 10 (+0), indicating it has no particular strengths or weaknesses in social interactions.
+
+In terms of special abilities, the Major Malleable can use "Absorb Malleable" as a bonus action to absorb smaller malleables nearby, regaining hit points equivalent to the absorbed creature’s remaining health. This ability allows it to sustain itself in combat and can be troublesome for opponents facing multiple malleable creatures. Its "Amorphous" ability allows it to traverse narrow spaces without restriction, emphasizing its role as a shapeless entity. Through "Controlled Mutability," it can alter its form but must return to its original shape after one turn, making it adaptable in combat without losing its inherent abilities.
+
+"Psychic Absorption" makes the Major Malleable immune to psychic damage, healing it instead when it would normally take such damage. This presents a significant tactical challenge for spellcasters relying on psychic attacks. Additionally, with "Spider Climb," it can easily scale vertical surfaces or ceilings, further enhancing its mobility.
+
+In combat, the Major Malleable can execute a "Multiattack," allowing it to make three attacks with its "Flesh Tendril." Each melee attack utilizes a +10 to hit, dealing an average of 20 (4d6 + 6) bludgeoning damage. When it grapples a target, it imposes an escape difficulty of 16, making it challenging for creatures to break free. Its "Psychic Drain" ability forces a grappled target to make a DC 16 Intelligence saving throw, dealing 45 (10d8) psychic damage on a failure and significantly reducing the target's maximum hit points; this can be lethal if pushed to zero, converting the target into a minor malleable. 
+
+In addition, the Major Malleable has the ability to "Join Malleables" with other nearby Major Malleables to create a larger entity, combining their hit points and gaining the conditions affecting either, effective in a coordinated assault. Alternatively, it can "Separate Malleables" to split itself into several smaller malleables, redistributing its hit points and causing confusion among its foes.
+
+As a reaction, "Sudden Separation" allows it to split into minor malleables when taking significant damage (20 or more), effectively mitigating some of the damage it received while also potentially overwhelming foes with additional creatures.
+
+Overall, the Major Malleable excels through its adaptability and ability to manipulate both its form and the battlefield, posing a complex and dangerous foe for adventurers.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Major Malleable
+
+*Huge* *Aberration* *chaotic evil*
+
+- **Armor Class:** 13 (natural armor)
+- **Hit Points:** 218 (23d12+69)
+- **Speed:** walk 40 ft. climb 40 ft.
+- **Challenge Rating:** 10 (5,900 XP)
+- **Source:** [Tome of Beasts 2](https://koboldpress.com/kpstore/product/tome-of-beasts-2-for-5th-edition) page 254
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 22 (+6) | 8 (-1) | 17 (+3) | 19 (+4) | 16 (+3) | 10 (+0) |
+
+- **Saving Throws**: Int +8, Wis +7, Cha +4
+- **Skills:** 
+- **Damage Immunities:** psychic
+- **Condition Immunities:** blinded, prone
+- **Senses:** blindsight 90 ft. (blind beyond this radius), passive Perception 13
+- **Languages:** all, telepathy 120 ft.
+
+### Special Abilities
+
+- **Absorb Malleable:** As a bonus action, the major malleable absorbs one minor or moderate malleable within 5 feet of it into its body, regaining a number of hp equal to the absorbed malleable’s remaining hp. The major malleable is affected by any conditions, spells, and other magical effects that were affecting the absorbed malleable.
+- **Amorphous:** The malleable can move through a space as narrow as 1 inch wide without squeezing.
+- **Controlled Mutability:** Any spell or effect that would alter the malleable’s form only alters it until the end of the malleable’s next turn. Afterwards, the malleable returns to its amorphous form. In addition, the malleable can use its action to change itself into any shape, but it always looks like an inside-out fleshy creature no matter the shape it takes. If it changes into the shape of a creature, it doesn’t gain any statistics or special abilities of that creature; it only takes on the creature’s basic shape and general appearance.
+- **Psychic Absorption:** Whenever the malleable is subjected to psychic damage, it takes no damage and instead regains a number of hp equal to the psychic damage dealt.
+- **Spider Climb:** The malleable can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+### Actions
+
+- **Multiattack:** The malleable makes three flesh tendril attacks.
+- **Flesh Tendril:** Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 20 (4d6 + 6) bludgeoning damage. If the target is a Huge or smaller creature, it is grappled (escape DC 16).
+- **Psychic Drain:** One creature grappled by the malleable must make a DC 16 Intelligence saving throw, taking 45 (10d8) psychic damage on a failed save, or half as much damage on a successful one. The target’s hp maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies and becomes a minor malleable if this effect reduces its hp maximum to 0.
+- **Join Malleables:** As long as the malleable is within 10 feet of one other major malleable, both malleables can use this action option at the same time to join together to create a massive malleable. The new malleable’s hp total is equal to the combined hp total of both major malleables, and it is affected by any conditions, spells, and other magical effects currently affecting either of the major malleables. The new malleable acts on the same initiative count as the malleables that formed it and occupies any unoccupied space that previously contained at least one of the malleables that formed it.
+- **Separate Malleables:** The major malleable can split into eight minor malleables or two moderate malleables. The new malleables’ hp totals are equal to the major malleable’s hp total divided by the number of malleables created (rounded down) and are affected by any conditions, spells, and other magical effects that affected the major malleable. The new malleables act on the same initiative count as the major malleable and occupy any unoccupied space that previously contained the major malleable.
+
+### Reactions
+
+- **Sudden Separation:** When the major malleable takes 20 damage or more from a single attack, it can choose to immediately use Separate Malleables. If it does so, the damage is divided evenly among the separate malleables it becomes.
+
+
+
+

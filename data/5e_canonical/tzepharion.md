@@ -1,0 +1,61 @@
+<MonsterName/>Tzepharion</MonsterName>
+<CreatureType/>Fiend</CreatureType>
+
+<summary>Tzepharion is a formidable large fiend characterized by its lawful evil nature, operating primarily as a cunning and vicious adversary in battle. With a challenge rating of 8, it possesses a strong blend of physical prowess and magical capabilities, making it a dangerous foe for any party. Its defenses include a commendable armor class of 16 and significant hit points totaling 110, allowing it to withstand considerable damage. Tzepharion’s strengths lie in its powerful melee attacks and its ability to manipulate the battlefield through the Eye of Rage ability and a form of soul displacement. While it is immune to fire and poison damage and resistant to cold as well as non-magic attacks unless made with silvered weapons, it does have notable weaknesses, especially against intelligent foes who can resist its rage-inducing abilities.</summary>
+
+<detail>
+
+The creature's attributes reflect its strengths: it has a Strength score of 19 (+4), which provides a good modifier, making its melee strikes particularly effective. Its Dexterity of 14 (+2) is average, granting decent agility but not exceptional speed. With a Constitution of 16 (+3), Tzepharion can endure damage reasonably well. However, its Intelligence is very low at 5 (-3), making it quite unintelligent and limited in strategic thinking. It has a Wisdom of 18 (+4), making it very good at noticing threats and survival situations, while its Charisma of 13 (+1) denotes a bad influence on interactions that require charm or persuasion.
+
+In terms of skills, Tzepharion is formidable with an Athletics score of +10, meaning it is very good at physical feats like grappling or jumping. Its Perception and Survival skills are also notable at +7, allowing it to be aware of its environment and adept at survival tactics. It has exceptional senses with darkvision extending to 120 feet and a passive Perception score of 17. Tzepharion understands Infernal but cannot verbally communicate, which may limit its interaction in social scenarios.
+
+Tzepharion possesses several special abilities that enhance its threat level. The Devil's Sight ability allows it to see normally in magical darkness, providing a tactical advantage in dimly lit environments. The Eye of Rage ability enables it to incite fury in beasts or monstrosities, forcing them into a berserk state, where they strike indiscriminately at the nearest creature unless they succeed in a DC 15 Wisdom saving throw. This ability can turn allies into dangers for their comrades when they are affected, as they attack anyone near them for a turn. Its Magic Resistance grants it an advantage on saving throws against spells and magical effects, making it significantly difficult to control or incapacitate through magical means. Additionally, the Pack Tactics ability allows Tzepharion to gain an advantage on attack rolls when one of its allies is nearby, creating opportunities for coordinated attacks.
+
+In combat, Tzepharion can utilize its Multiattack feature to make one bite attack and four claw attacks each turn. The bite attack has a +7 to hit and deals an average of 13 piercing damage (2d8 + 4). Each claw attack also carries a +7 to hit, dealing an average of 8 slashing damage (1d8 + 4). These powerful melee capabilities can rapidly reduce the hit points of its enemies. One standout attack is the Soul Jolt, which recharges on a roll of 6. In this action, Tzepharion can leap up to 20 feet and make a claw attack against a target. Upon a hit, the target must make a DC 15 Wisdom saving throw or have its soul forcibly separated from its body, which remains unconscious and vulnerable for a minute or until the target reoccupies it through successful saving throws or proximity. This unique ability introduces a ghostly element to combat, as the victim’s soul remains mobile and can move through objects but cannot take any offensive actions. If the victim's body takes lethal damage or the minute expires without them returning, they suffer dire consequences. 
+
+Overall, Tzepharion represents a compelling adversary, especially in battles where it can take advantage of its abilities and control the tide of combat through fear and confusion.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Tzepharion
+
+*Large* *Fiend* *lawful evil*
+
+- **Armor Class:** 16 (natural armor)
+- **Hit Points:** 110 (13d10+39)
+- **Speed:** walk 50 ft.
+- **Challenge Rating:** 8 (3,900 XP)
+- **Source:** [Tome of Beasts 2](https://koboldpress.com/kpstore/product/tome-of-beasts-2-for-5th-edition) page 106
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 19 (+4) | 14 (+2) | 16 (+3) | 5 (-3) | 18 (+4) | 13 (+1) |
+
+- **Skills:** athletics +10, perception +7, survival +7
+- **Damage Immunities:** fire, poison
+- **Damage Resistances:** cold; bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons
+- **Condition Immunities:** poisoned
+- **Senses:** darkvision 120 ft., passive Perception 17
+- **Languages:** understands Infernal but can’t speak
+
+### Special Abilities
+
+- **Devil’s Sight:** Magical darkness doesn’t impede the tzepharion’s darkvision.
+- **Eye of Rage:** As a bonus action, the tzepharion incites rage in up to three beasts or monstrosities it can see within 60 feet of it. Each target must succeed on a DC 15 Wisdom saving throw or become enraged until the end of its next turn. While enraged, it has advantage on its attack rolls, but it is unable to distinguish friend from foe and must attack the nearest creature other than the tzepharion. This trait doesn’t work on targets with an Intelligence of 6 or higher.
+- **Magic Resistance:** The tzepharion has advantage on saving throws against spells and other magical effects.
+- **Pack Tactics:** The tzepharion has advantage on attack rolls against a creature if at least one of the devil’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+
+### Actions
+
+- **Multiattack:** The tzepharion devil makes one bite attack and four claw attacks.
+- **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.
+- **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage.
+- **Soul Jolt (Recharge 6):** The tzepharion leaps up to 20 feet through the air and makes a claw attack against a target within reach. If it hits, the target must succeed on a DC 15 Wisdom saving throw or its soul is forced out of its body, appearing 20 feet in a random direction away from its body, for 1 minute. The creature has control of its soul, which is invisible and can move through creatures and objects as if they were difficult terrain, but it can’t cast spells or take any actions. The creature’s body is knocked unconscious and can’t be awoken until its soul returns, but it can take damage as normal. The creature can repeat the saving throw at the end of each of its turns, reoccupying its body on a success. Alternatively, a creature can reoccupy its body early if it starts its turn within 5 feet of its body. If a creature doesn’t return to its body within 1 minute, the creature dies. If its body is reduced to 0 hp before the creature reoccupies its body, the creature dies.
+
+
+
+

@@ -1,0 +1,19 @@
+The Ursan Archon is a formidable large celestial creature embodying chaotic good alignment. Known for its immense strength and magical capabilities, this creature excels in both melee combat and area control. With a Challenge Rating of 9, it presents a significant challenge for adventurers, capable of dealing high amounts of damage while also being resilient to various forms of attacks. The Archon possesses an array of innate abilities that enhance its combat effectiveness and survivability, such as magic resistance and the ability to mitigate fatal damage. However, its reliance on engaging in direct combat can be a weakness when facing agile opponents who can exploit its Reckless ability, potentially turning the advantage against it.
+
+The Ursan Archon has the following attributes: Strength 21 (+5), Dexterity 14 (+2), Constitution 18 (+4), Intelligence 13 (+1), Wisdom 17 (+3), and Charisma 16 (+3). Its Armor Class is 16, attributed to its natural armor, and it has a total of 142 hit points, based on a roll of 15d10 plus an additional 60. The Archon moves at a speed of 30 feet on the ground and can fly at a speed of 60 feet. In terms of defenses, it has saving throws of +8 for Constitution, +7 for Wisdom, and +7 for Charisma, making its resistance to spells and mental effects quite good. Its damage immunities include cold, with resistances to radiant and nonmagic bludgeoning, piercing, and slashing attacks. The Archon is immune to conditions such as being charmed, exhausted, frightened, or prone, and it possesses darkvision up to 120 feet, giving it a passive perception of 13. It can understand all languages and communicate telepathically up to 120 feet.
+
+The Archon has several special abilities that enhance its effectiveness in combat: 
+
+- Celestial Weapons allow it to deal magical damage, adding an extra 4d8 force damage on successful weapon hits, making its attacks exceptional.
+- With Immortal Nature, the Archon does not require food, drink, or sleep, allowing it to remain active without the need for rest.
+- Magic Resistance provides it with advantage on saving throws against spells and other magical effects, granting it very good resistance to spells.
+- The Reckless ability allows the Archon to gain advantage on all melee attack rolls during its turn at the cost of giving attackers advantage against it until the beginning of its next turn.
+- Relentless ensures that any damage reducing its hit points to 0 will instead leave it at 1 hit point, once per short or long rest, allowing it to remain in the fight longer.
+
+In terms of actions, the Ursan Archon can engage in powerful melee combat through:
+
+- Multiattack, allowing it to make two Greataxe attacks in one turn.
+- Greataxe, a melee weapon attack that adds its Strength modifier with a total damage output of 18 slashing damage, plus an additional 13 force damage from its celestial weapon effect, providing a high total damage potential.
+- Thunderous Roar is a powerful area attack that unleashes a frightful sound in a 30-foot cone, dealing 36 thunder damage to affected creatures on a failed saving throw, or half as much on a successful one. Additionally, it can frighten creatures within 60 feet, with a disadvantage on their saving throws against this effect.
+
+The Archon has a notable reaction called Rallying Roar, which it can use when it reduces an enemy to 0 hit points. This roar provides advantages on saving throws and attack rolls for nearby allies suffering from conditions, as well as granting them temporary hit points, allowing it to significantly bolster the morale and combat effectiveness of its team.

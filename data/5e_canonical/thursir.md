@@ -1,0 +1,56 @@
+<MonsterName/>Thursir</MonsterName>
+<CreatureType/>Giant</CreatureType>
+
+<summary>The Thursir is a large giant known for its formidable presence and inherent malice, classified as either Neutral Evil or Lawful Evil. With a challenge rating of 3, it poses a moderate threat to adventurers. Its most notable attributes include high strength and constitution, providing it with substantial hit points and exceptional melee capabilities. The creature has an armor class of 13, which is relatively stable for its size, but its glaring weakness is a lack of agility. The Thursir excels in direct confrontations due to its potent attacks and the ability to inflict additional damage with its special abilities. However, it can be taken down through strategic planning, especially by utilizing tactics that capitalize on its lower dexterity and possible vulnerability to spells.</summary>
+
+<detail>
+
+The physical attributes of the Thursir are as follows: it possesses a Strength of 19, granting it a +4 modifier, which is considered very good for melee attacks; a Dexterity of 10, yielding an average modifier of +0; a Constitution of 18, providing a +4 modifier, which ensures exceptional durability; an Intelligence of 13 (+1, average), a Wisdom of 15 (+2, good), and a Charisma of 11 (+0, average). The creature has a good saving throw bonus of +6 against Constitution, making it resilient to effects that target its health.
+
+In terms of skills, the Thursir is proficient in Athletics, boasting a +6 modifier that reflects its strength, and it has a +4 modifier in Perception, indicating good awareness of its surroundings. Its darkvision allows it to see in dim light within 60 feet as if it were bright light, making it adept in nocturnal environments. The creature can communicate in Common, Dwarvish, and Giant, facilitating interactions with various characters.
+
+The Thursir possesses a special ability called Cast Iron Stomach, which provides it with advantage on saving throws against poison, making it hard to incapacitate through toxin-based attacks.
+
+For its actions, the Thursir utilizes a Warhammer as its primary melee weapon. When it attacks with the Warhammer, it has a +6 to hit, with a reach of 10 feet. A successful hit deals a base of 13 bludgeoning damage (2d8 + 4), but if it uses the weapon with both hands, the damage increases to 15 bludgeoning damage (2d10 + 4). Additionally, the Thursir can attack at range by throwing a rock, also rolling with a +6 to hit. A successful ranged hit with the rock inflicts 15 bludgeoning damage (2d10 + 4).
+
+As a bonus action, the Thursir can use Runic Blood up to three times a day. This ability allows it to touch a weapon, inscribing the thurs rune in its own blood. When the Thursir attacks with this enhanced weapon and successfully hits, the target suffers an extra 9 lightning damage (2d8), and they are unable to take reactions until the beginning of their next turn. The rune persists for 1 minute, enabling the Thursir to deal substantial damage and control the battle more effectively.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Thursir
+
+*Large* *Giant* *Neutral Evil (50%) or Lawful Evil (50%)*
+
+- **Armor Class:** 13 (chain shirt)
+- **Hit Points:** 114 (12d10 + 48)
+- **Speed:** walk 40 ft.
+- **Challenge Rating:** 3 (700 XP)
+- **Source:** [Tome of Beasts 2023](https://koboldpress.com/kpstore/product/tome-of-beasts-1-2023-edition/) page 210
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 19 (+4) | 10 (+0) | 18 (+4) | 13 (+1) | 15 (+2) | 11 (+0) |
+
+- **Saving Throws**: Con +6
+- **Skills:** Athletics +6, Perception +4
+- **Senses:** darkvision 60 ft., passive Perception 14
+- **Languages:** Common, Dwarvish, Giant
+
+### Special Abilities
+
+- **Cast Iron Stomach:** The thursir has advantage on saving throws against being poisoned.
+
+### Actions
+
+- **Warhammer:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage, or 15 (2d10 + 4) bludgeoning damage if used with two hands to make a melee attack.
+- **Rock:** Ranged Weapon Attack: +6 to hit, range 60/240 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage.
+
+### Bonus Actions
+
+- **Runic Blood (3/Day):** The thursir touches a weapon, painting the thurs rune on the weapon in the thursir’s blood. When the thursir hits with the weapon while the rune is active, the weapon deals an extra 9 (2d8) lightning damage, and the target can’t take reactions until the start of its next turn. The rune lasts for 1 minute.
+
+

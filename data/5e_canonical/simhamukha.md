@@ -1,0 +1,63 @@
+<MonsterName/>Simhamukha</MonsterName>
+<CreatureType/>Celestial</CreatureType>
+
+<summary>The Simhamukha is a formidable huge celestial creature embodying chaotic good. It boasts a solid armor class of 16 and a robust pool of 115 hit points, making it a tough opponent in combat. With a Challenge Rating of 8, it poses a significant threat, capable of dealing substantial damage through both its multiattack capabilities and its powerful special abilities. The Simhamukha excels in melee combat, benefiting from magic weapon attacks and delivering radiant damage with its Smite ability, while also boasting impressive defenses including resistance to several damage types and advantageous saving throws against spells. However, its powers come with the caveat that it can be overwhelmed if faced with too many foes, particularly if it is unable to utilize its magical defenses effectively.</summary>
+
+<detail>
+
+The Simhamukha's attributes are impressive: its Strength is 21, yielding a +5 modifier, leading to a very good effectiveness for physical attacks. Its Dexterity sits at 15, granting a +2 modifier, which is considered average for dodging or agility-based tasks, while its Constitution of 19 (+4 modifier) gives it good durability. The creature's Wisdom and Charisma are both at 17 and 19 respectively, which provide strong bonuses (+3 and +4) for perception checks and spellcasting, respectively. It is adept at Perception with a +6 skill modifier and possesses exceptional magical capabilities.
+
+It is immune to necrotic, poison, and radiant damage, rendering it particularly difficult to contend with for many foes. It resists cold, fire, lightning, and psychic damage, and bludgeoning, piercing, and slashing damage from nonmagical sources, underscoring its defensive capabilities. The Simhamukha is also immune to the poisoned condition and has outstanding sensory abilities, with truesight extending to 120 feet and passive perception calculated at 16, allowing it to detect hidden foes effectively. Moreover, it can communicate in all languages and has a telepathic range of 120 feet.
+
+The Simhamukha possesses several special abilities that enhance its combat effectiveness. Its Magic Weapons ability allows all its weapon attacks to be considered magical, which is crucial when battling foes with resistance to non-magical attacks. The Magic Resistance ability gives it an advantage on saving throws against spells, allowing it to potentially avoid damaging magical effects. With its Smite ability, it can deal an additional 9 radiant damage once per melee attack, activating this ability up to three times per day. The innate spellcasting ability utilizes Charisma and allows it to cast spells without needing material components, showing versatility in its magical capabilities. It can use the spells aid, guidance, and spiritual weapon at will, while also casting confusion, searing smite, and thunderous smite up to two times each day.
+
+In terms of actions during combat, the Simhamukha can utilize a Multiattack option to either make two attacks with its kartika or one attack with its kartika followed by a bite. The Bite action offers +8 to hit and deals 16 piercing damage, with a lethal finishing move that decapitates foes reduced to 0 hit points. The kartika also has a +8 to hit, dealing 18 slashing damage. The Staff Sweep is a powerful area effect that can knock opponents prone within a 15-foot radius on a failed DC 16 Strength saving throw, dealing 13 bludgeoning damage. Lastly, the Weird ability creates frightening illusions for creatures around it, forcing them to make a DC 15 Charisma saving throw to avoid being frightened for one minute, with the potential to receive psychic damage on failure, adding to its psychological pressure in battle.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Simhamukha
+
+*Huge* *Celestial* *chaotic good*
+
+- **Armor Class:** 16 (natural armor)
+- **Hit Points:** 115 (11d12+44)
+- **Speed:** walk 50 ft.
+- **Challenge Rating:** 8 (3,900 XP)
+- **Source:** [Creature Codex](https://koboldpress.com/kpstore/product/creature-codex-for-5th-edition-dnd) page 70
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 21 (+5) | 15 (+2) | 19 (+4) | 12 (+1) | 17 (+3) | 19 (+4) |
+
+- **Saving Throws**: Str +8, Cha +7
+- **Skills:** perception +6
+- **Damage Immunities:** necrotic, poison, radiant
+- **Damage Resistances:** cold, fire, lightning, psychic; bludgeoning, piericing, and slashing from nonmagical attacks
+- **Condition Immunities:** poisoned
+- **Senses:** truesight 120 ft., passive Perception 16
+- **Languages:** all, telepathy 120 ft.
+
+### Special Abilities
+
+- **Magic Weapons:** The simhamukha's weapon attacks are magical.
+- **Magic Resistance:** The simhamukha has advantage on saving throws against spells and other magical effects.
+- **Smite (3/Day):** When the simhamukha hits a creature with a melee attack, it can choose to deal an additional 9 (2d8) radiant damage.
+- **Innate Spellcasting:** The simhamukha's innate spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components:
+At will: aid, guidance, spiritual weapon
+2/day each: confusion, searing smite, thunderous smite
+
+### Actions
+
+- **Multiattack:** The simhamukha makes two attacks with its kartika, or one with its kartika and one with its bite.
+- **Bite:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) piercing damage. If this damage reduces ha the target to 0 hit points, the simhamukha kills the target by decapitating it.
+- **Kartika:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) slashing damage.
+- **Staff Sweep (Recharge 5-6):** Each creature within 15 feet of the simhamukha must succeed on a DC 16 Strength saving throw. On a failure, a creature takes 13 (3d8) bludgeoning damage and is knocked prone. On a success, it takes half the damage and isn't knocked prone.
+- **Weird (Recharge 6):** The simhamukha draws upon the deepest fears and regrets of the creatures around it, creating illusions visible only to them. Each creature within 40 feet of the simhamukha, must succeed on a DC 15 Charisma saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, taking 11 (2d10) psychic damage on a failure or ending the effect on itself on a success.
+
+
+
+

@@ -12,6 +12,7 @@
 - [ ] Biome System
 - [ ] Encounter Generator
 - [ ] Name Templates
+- [x] Licenses
 - [ ] Licenses
 - [ ] Boss Nicknames - https://slyflourish.com/monstrous_descriptors.html?rss=1
 - [ ] Legendary Creatures (powers, role)
@@ -20,7 +21,6 @@
   - [x] HTML
   - [ ] Markdown
   - [ ] Foundry
-
 
 ## Website Todo
 

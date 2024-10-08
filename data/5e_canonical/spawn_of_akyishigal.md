@@ -1,0 +1,58 @@
+<MonsterName/>Spawn of Akyishigal</MonsterName>
+<CreatureType/>Fiend</CreatureType>
+
+<summary>The Spawn of Akyishigal is a medium-sized chaotic evil fiend, embodying a mixture of cunning and malice. With a solid armor class of 15 and a hefty pool of hit points totaling 119, it presents a formidable challenge for adventurers. This creature boasts impressive physical and magical resilience, with notable damage immunities and resistances. The Spawn excels in manipulating the battlefield through its command over lesser beasts, making it particularly dangerous in environments teeming with insectoid life forms. While its physical attacks can inflict significant damage, its true strength lies in its ability to summon swarms of allies and its inherent magic resistance, which gives it an edge in confronting spellcasters. However, its Intelligence is average, which could limit its strategic options in more cerebral contests.</summary>
+
+<detail>
+
+The Spawn of Akyishigal has the following attributes: Strength is 15, granting a modifier of +2, which is good for melee combat. Dexterity stands at 13 with a +1 modifier, presenting an average agility. Constitution boasts a score of 19, resulting in a +4 modifier, making it very good at sustaining damage. Intelligence is rated at 10, with a +0 modifier, indicating average intelligence. Wisdom and Charisma are both slightly above average, sitting at 11 and 12 respectively, with modifiers of +0 and +1.
+
+In terms of defenses, the Spawn has a saving throw bonus of +4 to Dexterity checks, which is good for evading attacks. It has immunities to poison damage and is resistant to cold, fire, and lightning, showcasing its ability to endure various forms of damage. The Spawn is also immune to the poisoned condition, providing additional resilience against certain effects.
+
+The Spawn of Akyishigal possesses two significant special abilities. The first is "Command Vermin," which allows it to exert control over insectoid beasts within a 30-foot radius that have an Intelligence of 2 or lower and are not already controlled by another being. This command influences the beasts to act according to the Spawn’s will, often leading them into danger without regard for their safety. The second ability is "Magic Resistance," which grants the Spawn advantage on saving throws against spells and magical effects, increasing its survivability against magic users.
+
+In combat, the Spawn can utilize a "Multiattack," allowing it to strike with one Bite and two Sting attacks during its turn. Its Bite attack benefits from a +5 to hit and can deal 7 piercing damage. The more potent Sting attack, also with a +5 to hit, inflicts a total of 14 damage—11 piercing and 3 poison damage. Furthermore, targets hit by the Sting must make a DC 15 Constitution saving throw; failure results in being poisoned until the end of their next turn, which can severely hinder their ability to act. 
+
+The Spawn can unleash "Swarming Cough" three times per day, releasing a swarm of insects that serve as allies. These swarms follow the Spawn’s commands, acting immediately after it in combat. Each swarm remains in play for up to one minute unless dismissed, and the Spawn can control up to two swarms at any time. This ability not only bolsters the Spawn’s offensive capabilities but also complicates combat for its enemies, as they must contend with multiple threats at once.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Spawn of Akyishigal
+
+*Medium* *Fiend* *Chaotic Evil*
+
+- **Armor Class:** 15 (natural armor)
+- **Hit Points:** 119 (14d8 + 56)
+- **Speed:** walk 30 ft.
+- **Challenge Rating:** 5 (1,800 XP)
+- **Source:** [Tome of Beasts 2023](https://koboldpress.com/kpstore/product/tome-of-beasts-1-2023-edition/) page 190
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 15 (+2) | 13 (+1) | 19 (+4) | 10 (+0) | 11 (+0) | 12 (+1) |
+
+- **Saving Throws**: Dex +4
+- **Skills:** 
+- **Damage Immunities:** poison
+- **Damage Resistances:** cold, fire, lightning
+- **Condition Immunities:** poisoned
+- **Senses:** darkvision 60 ft., passive Perception 10
+- **Languages:** Abyssal
+
+### Special Abilities
+
+- **Command Vermin:** The spawn of Akyishigal can command any Beast with an Intelligence of 2 or lower within 30 feet of it that isn’t under the magical control of another creature, provided the Beast is insectoid and doesn’t have a Challenge Rating higher than the spawn’s. The Beast obeys the spawn’s commands to the best of its ability, heedless of its own safety.
+- **Magic Resistance:** The spawn of Akyishigal has advantage on saving throws against spells and other magical effects.
+
+### Actions
+
+- **Multiattack:** The spawn makes one Bite attack and two Sting attacks. It can replace its Bite attack with a use of Swarming Cough, if available.
+- **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.
+- **Sting:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage plus 3 (1d6) poison damage, and the target must succeed on a DC 15 Constitution saving throw or become poisoned until the end of its next turn.
+- **Swarming Cough (3/Day):** The spawn belches forth a swarm of insects. The swarm is an ally of the spawn, obeys its spoken commands, and takes its turn immediately after the spawn’s. The swarm remains for 1 minute, until the spawn dies, or until the spawn dismisses it as a bonus action. The spawn can have no more than two swarms under its control at a time.
+
+

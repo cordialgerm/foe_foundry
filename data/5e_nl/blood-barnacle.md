@@ -1,0 +1,22 @@
+The Blood Barnacle is a tiny, unaligned beast known for its insidious nature and disease-ridden attacks. It boasts impressive mobility in water, being able to swim at a speed of 30 feet, while its walking speed is considerably slower at 10 feet. With an Armor Class of 13, it is moderately difficult to hit, and its 25 hit points provide a reasonable buffer in combat situations. The creature’s challenge rating of 1/4 indicates that it presents a minor threat to adventurers, offering 50 experience points upon defeat. The Blood Barnacle stands out due to its unique abilities, particularly its capacity to infect and sap the strength of its victims through the Barnacle Shivers disease, while its stealth through the False Appearance ability allows it to blend in seamlessly with its environment. However, it is vulnerable to fire damage and has only modest physical attributes, limiting its direct combat capabilities.
+
+In terms of attributes, the Blood Barnacle has the following values:
+- Strength: 2 (-4) - This modifier is very bad, indicating it is extremely weak physically.
+- Dexterity: 14 (+2) - This modifier is good, making it reasonably agile and able to avoid attacks effectively.
+- Constitution: 10 (+0) - This average modifier means it can handle some damage but not particularly well.
+- Intelligence: 1 (-5) - This very bad modifier shows its lack of cognitive abilities, rendering it virtually mindless.
+- Wisdom: 12 (+1) - This average modifier provides it a basic level of awareness of its surroundings.
+- Charisma: 8 (-1) - This modifier is bad, indicating it lacks a strong presence or influence.
+
+The Blood Barnacle has a saving throw of +2 for Constitution checks, making it slightly resilient to effects that require a Constitution saving throw. It possesses a skill in perception with a +1 modifier, giving it an average ability to notice details in its environment. The creature has a blindsight ability that allows it to sense creatures within 60 feet, but it is effectively blind beyond that range, with a passive perception score of 11.
+
+The Blood Barnacle has a few noteworthy special abilities:
+- Barnacle Shivers: This disease is transmitted through an attack from the barnacle. An infected creature cannot regain hit points except through magical means, and its maximum hit points decrease by 3 (1d6) for every 24 hours that pass until cured. If the affected creature's maximum hit points reach 0, it dies and rises as a zombie 24 hours later, viewing the Blood Barnacle as an ally. This mechanic creates a significant threat as it can lead to the victim’s eventual zombification if left untreated.
+- Blood Sense: This ability allows the barnacle to detect creatures that aren’t constructs or undead within a range of 60 feet based on scent. It can also sense the general direction of such creatures up to 1 mile away, making it a persistent tracker in its environment.
+- False Appearance: While motionless, the barnacle appears as a normal barnacle, allowing it to ambush unaware creatures effectively.
+
+Regarding its actions, the Blood Barnacle specializes in close combat:
+- Bite: This melee weapon attack has a +4 to hit and can deal 5 (1d6 + 2) piercing damage. Once it successfully bites a target, it attaches to them, causing them to suffer an additional 5 (1d6 + 2) hit points of damage at the start of the barnacle's turns due to blood loss. The barnacle can detach itself by spending 5 feet of movement, while the target can take its action to attempt to detach it with a DC 12 Strength check. Upon removal, the target takes an extra 2 (1d4) piercing damage. If a target ends its turn with a barnacle attached, it must make a DC 12 Constitution saving throw to avoid contracting the Barnacle Shivers disease.
+
+Lastly, the Blood Barnacle can react defensively:
+- Host Defense: If a creature hosting the barnacle takes damage from an attack that is not fire, it must make a DC 12 Wisdom saving throw. If it fails, it uses its reaction to protect the barnacle, splitting the damage such that the barnacle takes half and the host takes the other half. This ability adds additional complexity to combat, as players must balance the damage they inflict on the barnacle with the potential harm it inflicts on its host.

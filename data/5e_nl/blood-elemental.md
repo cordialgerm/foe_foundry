@@ -1,0 +1,16 @@
+The Blood Elemental is a formidable creature in the elemental category, characterized by its large size and unique connection to blood and vitality. With a challenge rating of 5, it poses a significant threat with its ability to grapple and drain the life force from adventurers. The Blood Elemental has an impressive amount of hit points at 95, making it quite resilient in combat. However, it is vulnerable to poison damage, which can significantly reduce its effectiveness. The elemental excels in close combat, utilizing its high Strength score of 16, while its Constitution score of 18 grants it excellent durability against many forms of damage. Its abilities allow it to manipulate and control the battlefield, using its liquid form to slip through narrow spaces and invade enemy territory. However, its intelligence and charisma scores are markedly low, making it poor at social interactions and strategy.
+
+The Blood Elemental has the following attributes: 
+
+- Strength: 16 (+3), which translates to a good modifier for melee attacks.
+- Dexterity: 13 (+1), indicating an average capability in dodging attacks and initiative.
+- Constitution: 18 (+4), providing an exceptional boost to its hit points and saving throws against effects that require Constitution saves.
+- Intelligence: 5 (-3), making it very bad at reasoning or problem-solving.
+- Wisdom: 10 (+0), reflecting average awareness and perception.
+- Charisma: 5 (-3), indicating very bad social skills.
+
+The elemental is equipped with various special abilities. The **Coagulate** ability causes its speed to decrease by 10 feet for one turn whenever it takes cold damage, effectively slowing its movements in combat. The **Destroyed by Water** ability is a unique vulnerability; if the Blood Elemental is fully submerged in water, it dissipates and dies instantly, serving as a significant strategic weakness. With **Liquid Form**, it can enter the space of hostile creatures without restriction, providing an advantage in positioning and tactical engagements.
+
+In terms of actions, the Blood Elemental can perform a **Multiattack**, which allows it to make two melee slam attacks in one turn to inflict damage. The **Slam** attack has a +6 to hit with a reach of 5 feet, dealing an average of 12 bludgeoning damage on a successful hit. Additionally, it has a powerful ability called **Blood Drain**, which recharges on a roll of 4 to 6. This attack requires creatures within its space to make a DC 15 Constitution saving throw. If they fail, they take 10 (3d6) necrotic damage, and, if they are Large or smaller, they become grappled and restrained. Grappled creatures cannot breathe, posing a serious threat in combat. Successful saving throws push the target out of the elemental's space. Targets remain at risk of taking necrotic damage at the start of the elemental's turn. A creature within close proximity can attempt to rescue grappled allies, showcasing the collaborative nature of battle against such an opponent. If the Blood Drain deals 30 or more necrotic damage in one instance, the Blood Elemental grows in size, enhancing its threat level until it takes a long rest.
+
+Overall, the Blood Elemental combines durability, manipulative movement, and significant damage potential, making it a challenging adversary for adventurers in any encounter.

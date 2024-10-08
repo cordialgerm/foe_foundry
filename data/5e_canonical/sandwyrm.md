@@ -1,0 +1,55 @@
+<MonsterName/>Sandwyrm</MonsterName>
+<CreatureType/>Dragon</CreatureType>
+
+<summary>The Sandwyrm is a formidable creature, classified as a Large dragon of unaligned nature. This beast is adept at both ambush tactics and direct combat, utilizing its burrowing capabilities to remain hidden until the opportune moment. With a challenge rating of 6, it poses a significant threat, especially if its powerful attacks are combined effectively. The Sandwyrm's main strengths include its high hit points, decent armor class, and a variety of potent melee attacks. It excels in stealth due to its ability to burrow and ambush targets, using its impressive stealth score of +4. However, its Intelligence score of 5 indicates that it may not be the most strategic opponent when it comes to planning. </summary>
+
+<detail>
+
+The Sandwyrm has an armor class of 15, which, while respectable, is not particularly high for a creature of its size, making it somewhat vulnerable to more accurate attackers. It has 142 hit points, derived from rolling fifteen ten-sided dice and adding 60, making it capable of withstanding a fair amount of damage before being defeated. The Sandwyrm has a walking speed of 40 feet and can burrow at a speed of 20 feet, allowing it to move effectively both on the surface and underground. 
+
+In terms of attributes, the Sandwyrm boasts a Strength of 20 (+5 modifier), which is exceptional, enabling it to deal significant melee damage. Its Dexterity is 12 (+1) and its Constitution is 18 (+4), both of which are considered good, providing it with a reasonable defense and survivability. On the other hand, its Intelligence at 5 (-3 modifier) is very bad, meaning it's not capable of complex thought processes. The Wisdom of 13 (+1) is average, allowing for decent perception, while its Charisma of 8 (-1) is very bad, indicating a lack of social influence or magical effectiveness.
+
+The Sandwyrm has skills in Perception (+7) and Stealth (+4), with heightened senses including darkvision providing it the ability to see in darkness up to 60 feet and tremorsense allowing it to detect vibrations in the ground up to 120 feet away. Its passive Perception score is 17, making it very good at noticing hidden creatures or dangers.
+
+In combat, the Sandwyrm can perform a Multiattack, allowing it to make one Bite attack, one Gore attack, and one Stinger attack in a single turn. The Bite attack functions as a melee weapon attack with a +8 to hit and a reach of 5 feet, dealing an average of 12 (2d6 + 5) piercing damage. The Gore attack is also a melee weapon attack, reaching out to 10 feet, again with a +8 to hit, dealing slightly less damage at 11 (1d12 + 5) piercing damage. The Stinger attack is a bit different, as it also requires the target to make a DC 15 Constitution saving throw. On a hit, it does 9 (1d4 + 5) piercing damage plus an additional poison effect, dealing 14 (4d6) poison damage on a failed save and potentially rendering the target paralyzed if their hit points drop to zero from this damage.
+
+Additionally, the Sandwyrm has a unique reaction called Spine Trap. When it is burrowed beneath the surface of the sand with its spines exposed, and a Medium or smaller creature moves into that space, it can attempt to restrain the creature. The creature must succeed on a DC 15 Dexterity saving throw or become restrained. A restrained creature must use an action, along with a successful DC 15 Strength check, to free itself or another creature. This ability enhances the Sandwyrm's ambush tactics, allowing it to control the battlefield effectively by restraining its opponents. 
+
+Overall, the Sandwyrm is a lethal predator with a variety of offensive options and strategic abilities that can turn the tide of battle in its favor.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Sandwyrm
+
+*Large* *Dragon* *Unaligned*
+
+- **Armor Class:** 15 (natural armor)
+- **Hit Points:** 142 (15d10 + 60)
+- **Speed:** walk 40 ft. burrow 20 ft.
+- **Challenge Rating:** 6 (2,300 XP)
+- **Source:** [Tome of Beasts 2023](https://koboldpress.com/kpstore/product/tome-of-beasts-1-2023-edition/) page 314
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 20 (+5) | 12 (+1) | 18 (+4) | 5 (-3) | 13 (+1) | 8 (-1) |
+
+- **Skills:** Perception +7, Stealth +4
+- **Senses:** darkvision 60 ft., tremorsense 120 ft., passive Perception 17
+- **Languages:** —
+
+### Actions
+
+- **Multiattack:** The sandwyrm makes one Bite attack, one Gore attack, and one Stinger attack.
+- **Bite:** Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 12 (2d6 + 5) piercing damage.
+- **Gore:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 11 (1d12 + 5) piercing damage.
+- **Stinger:** Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 9 (1d4 + 5) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hp, the target is stable but poisoned for 1 hour, even after regaining hp, and is paralyzed while poisoned in this way.
+
+### Reactions
+
+- **Spine Trap:** When the sandwyrm is burrowed just below the surface of sand with its back spines exposed and a Medium or smaller creature enters the spines’ space, the sandwyrm closes the spines on the creature. The creature must succeed on a DC 15 Dexterity saving throw or be restrained. When the sandwyrm moves, a restrained creature moves with it. The sandwyrm can have only one creature restrained at a time. A creature, including the restrained creature, can take an action to free the restrained creature by succeeding on a DC 15 Strength check.
+
+

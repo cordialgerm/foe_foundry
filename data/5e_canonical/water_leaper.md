@@ -1,0 +1,58 @@
+<MonsterName/>Water Leaper</MonsterName>
+<CreatureType/>Monstrosity</CreatureType>
+
+<summary>The Water Leaper is a formidable Large monstrosity that resides in aquatic environments. With a Challenge Rating of 4, it presents a significant threat to adventurers venturing into its territory, delivering strong melee attacks and possessing abilities that enhance its stealth and survival underwater. Its notable features include the ability to grapple and restrain foes with its Bite attack, along with a potent Stinger attack that can inflict poison damage over time. While it has decent hit points and a good Armor Class, its weaknesses lie in its low Intelligence and Charisma. This creature excels at ambush tactics and is a formidable adversary in watery combat scenarios, making it both a challenging opponent and an interesting addition to any campaign.</summary>
+
+<detail>
+
+The Water Leaper has an Armor Class of 14, which is considered good for its Challenge Rating, and it possesses 97 hit points, derived from rolling 13 ten-sided dice plus an additional 26, providing it with a resilient pool of health. Its movement speed consists of walking at 40 feet and flying at 5 feet, allowing it to traverse both land and water effectively.
+
+In terms of attributes, the Water Leaper has a Strength score of 16, granting it a very good +3 modifier, making it strong in physical confrontations. Its Dexterity of 14 provides a good +2 modifier, enhancing its maneuverability and stealth. The Constitution score of 15 also gives a good +2 modifier, further bolstering its defenses. However, its Intelligence is a low 4, resulting in a very bad -3 modifier, indicating poor mental acuity. With a Wisdom score of 12, its +1 modifier reflects average perceptual abilities, while its Charisma score of 5 yields a very bad -3 modifier, suggesting it is not influential or charming.
+
+The Water Leaper has proficiency in Stealth, adding +4 to its checks, which in combination with its Underwater Camouflage ability allows it to excel at remaining undetected while submerged. It also possesses darkvision up to 60 feet, enabling it to see in dim light as if it were bright light, and it has a passive Perception of 11.
+
+One of its special abilities is Amphibious, allowing this creature to breathe both air and water, making it effective in a variety of environments. Underwater Camouflage grants it advantage on Dexterity (Stealth) checks while submerged, enhancing its ability to surprise opponents.
+
+In combat, the Water Leaper can perform a Multiattack, allowing it to make a single Bite attack and a single Stinger attack in one turn. The Bite attack operates as a melee weapon attack with a +5 to hit (counted as a good modifier), and if successful, it delivers 10 (2d6 + 3) piercing damage. Additionally, a successful Bite attack grapples the target, imposing a challenge with an escape DC of 13, during which the target is restrained and unable to escape easily.
+
+The Stinger attack similarly uses a +5 to hit and, on a successful hit, deals 12 (2d8 + 3) piercing damage. The additional effect of this attack requires the target to make a DC 13 Constitution saving throw. Failing this save results in the target being poisoned for 1 minute, incurring 5 (2d4) poison damage at the start of each of its turns while poisoned. This condition can be challenged by repeating the saving throw at the end of each turn.
+
+The Water Leaper also has a Swallow ability, which can be initiated against a Medium or smaller creature it is grappling. If the Bite attack against the grappled creature is successful, that creature is swallowed. Inside the Water Leaper, the target is blinded, restrained, and has total cover from external effects. It suffers 7 (2d6) acid damage at the start of each turn while inside, but the Water Leaper can only swallow one creature at a time, thus limiting this powerful maneuver.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Water Leaper
+
+*Large* *Monstrosity* *Unaligned*
+
+- **Armor Class:** 14 (natural armor)
+- **Hit Points:** 97 (13d10 + 26)
+- **Speed:** walk 40 ft. fly 5 ft.
+- **Challenge Rating:** 4 (1,100 XP)
+- **Source:** [Tome of Beasts 2023](https://koboldpress.com/kpstore/product/tome-of-beasts-1-2023-edition/) page 394
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 16 (+3) | 14 (+2) | 15 (+2) | 4 (-3) | 12 (+1) | 5 (-3) |
+
+- **Skills:** Stealth +4
+- **Senses:** darkvision 60 ft., passive Perception 11
+- **Languages:** —
+
+### Special Abilities
+
+- **Amphibious:** The water leaper can breathe air and water.
+- **Underwater Camouflage:** The water leaper has advantage on Dexterity (Stealth) checks made while underwater.
+
+### Actions
+
+- **Multiattack:** The water leaper makes one Bite attack and one Stinger attack.
+- **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the water leaper can’t Bite another target.
+- **Stinger:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the creature takes 5 (2d4) poison damage at the start of each of its turns. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+- **Swallow:** The water leaper makes a Bite attack against a Medium or smaller creature it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the water leaper, and it takes 7 (2d6) acid damage at the start of each of the water leaper’s turns. The water leaper can have only one creature swallowed at a time.
+
+

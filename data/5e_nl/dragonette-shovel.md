@@ -1,0 +1,19 @@
+The Dragonette, Shovel is a tiny, neutral dragon creature that excels in stealth and mobility, making it a cunning opponent in combat. With an Armor Class of 12, this creature is relatively easy to hit, but its 33 hit points offer a reasonable buffer for survival. Its challenge rating of 1/2 means it poses a low to moderate threat, providing a mere 100 XP for defeating it. Notably, the Dragonette can burrow and utilize its floral camouflage to blend seamlessly into environments rich with vegetation, offering it tactical advantages in ambushes. While its physical attacks may not deal massive damage, it can control the battlefield effectively with its special abilities, making it a quirky and versatile foe.
+
+The Dragonette has the following attributes: Strength of 14 with a +2 modifier, indicating good physical power; Dexterity of 11 with a +0 modifier, which is average in agility; Constitution of 16 providing a +3 modifier, yielding very good resilience; Intelligence is low at 8 with a -1 modifier, indicating limited cognitive capability; Wisdom is 13 with a +1 modifier, signifying a good perception of reality; and Charisma of 10 with a +0 modifier, showing no exceptional social prowess.
+
+The creature's skills include a +1 modifier to perception, allowing it to observe its surroundings with average effectiveness. With senses that encompass tremorsense and darkvision both at 60 feet, along with a passive perception score of 13, it can effectively navigate in darkness and detect movements through vibrations, enhancing its ability to ambush foes. It can communicate in Common, Draconic, and Sylvan, enabling it to interact with a variety of beings.
+
+The Dragonette possesses several special abilities: 
+
+- **Floral Camouflage** grants it advantage on Dexterity (Stealth) checks when hiding within thick vegetation, making it particularly effective in forested or garden-like terrain.
+- **Messy Digger** means that any opportunity attacks against the Dragonette will have disadvantage when it burrows out of an enemy’s reach, allowing it to escape without taking damage.
+- **Squat Body** gives it an advantage on ability checks and saving throws against attempts to move it against its will. Additionally, if it is moved along the ground against its will, it can use its reaction to reduce the distance moved by up to 10 feet, which can help in maintaining control over its position in a combat scenario.
+
+In terms of actions, the Dragonette can perform the following attacks:
+
+- **Head Slap** is a melee weapon attack with a +4 to hit, capable of dealing 4 (1d4+2) bludgeoning damage. If the targeted creature is Small or smaller, it must succeed on a DC 12 Strength saving throw or be launched 10 feet into the air, taking additional falling damage, which can be quite disruptive for opponents of that size.
+- **Raking Claws** is another melee weapon attack that also has a +4 to hit, dealing 5 (1d6+2) slashing damage. This ability allows the Dragonette to inflict some consistent damage in close-range combat.
+- **Sticky Tongue** is a unique action where the Dragonette launches its tongue at a target within 15 feet. If the targeted creature is Small or smaller, it must succeed on a DC 13 Strength saving throw or be pulled 15 feet closer to the Dragonette. If the target is Medium or larger, it must succeed on a DC 13 Dexterity saving throw, or the Dragonette itself is pulled closer. If the target is already within 5 feet of the Dragonette after this maneuver, the Dragonette can make a Raking Claws attack as a bonus action, thereby maintaining offensive pressure.
+
+Overall, the Dragonette, Shovel is a whimsical and agile opponent, using its mobility and special abilities to maneuver around the battlefield and control the pace of encounters.

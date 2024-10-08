@@ -1,0 +1,58 @@
+<MonsterName/>Rum Gremlin</MonsterName>
+<CreatureType/>Fey</CreatureType>
+
+<summary>The Rum Gremlin is a tiny fey creature embodying the chaotic evil alignment. It uses its mischievous nature and abilities to create havoc, particularly by instilling a state of drunkenness in its victims. With a relatively low Armor Class of 13 and 27 hit points, it relies on cunning and speed rather than brute force. Its Dexterity score of 16 grants it a good level of agility and the ability to remain hidden, while its Constitution score of 14 provides it with average resilience against damage. The Rum Gremlin is skilled in stealth and has the unique ability to coil its surroundings in an aura that can incapacitate those who fail to resist its effects, making it a troublesome foe for unsuspecting adventurers. </summary>
+
+<detail>
+
+The Rum Gremlin has the following ability scores: Strength is average at 10, Dexterity is good at 16, Constitution is good at 14, Intelligence is average at 12, Wisdom is bad at 9, and Charisma is average at 12. 
+
+In terms of skills, the Rum Gremlin has a Stealth modifier of +5, which is very good for sneaking up on targets unnoticed. It is immune to the poisoned condition, and it possesses darkvision with a range of 120 feet, allowing it to see in darkness as if it were dim light. Its passive Perception score is 10, indicating an average awareness of its surroundings. The creature can communicate in Common and Sylvan languages.
+
+One of the Rum Gremlin's most notable abilities is its Aura of Drunkenness. This ability creates a 20-foot radius of effect around the creature, requiring any creature starting its turn within this aura to make a Constitution saving throw, with a difficulty class (DC) of 12. If they fail, they become poisoned for one hour. Creatures that have consumed alcohol within the last hour have disadvantage on this saving throw, enhancing the chances of becoming poisoned. While poisoned, any creature attempting to move more than half its speed must fall prone. A successful saving throw grants immunity to the aura's effects for 24 hours, highlighting the Rum Gremlin's strategic capability to debilitate its foes.
+
+The Rum Gremlin also has Magic Resistance, which grants it advantage on saving throws against spells and other magical effects, making it more durable in magical combat.
+
+In terms of actions, the Rum Gremlin can make a Bite attack that utilizes its Dexterity modifier, with a +5 to hit and dealing an average of 5 piercing damage (1d4 + 3) if successful. It can also use its Claws for a similar attack, with a +5 to hit and dealing an average of 6 slashing damage (1d6 + 3).
+
+For spellcasting, the Rum Gremlin has access to several spells using its Charisma as the spellcasting ability with a save DC of 11. It can cast prestidigitation at will, which allows it to perform minor magical tricks like creating small sensory effects or cleaning objects. Additionally, it can cast command three times per day, giving it the ability to issue a one-word command to a creature, which must succeed on a saving throw or follow the command, potentially controlling or diverting an enemy's actions in combat. 
+
+Overall, the Rum Gremlin excels at creating chaotic situations in battle, hindering its enemies with its aura, and has solid combat capabilities enhanced by its spells.</detail>
+
+
+
+---
+
+Source: 5e_artisinal_monsters
+
+# Rum Gremlin
+
+*Tiny* *Fey* *Chaotic Evil*
+
+- **Armor Class:** 13
+- **Hit Points:** 27 (6d4 + 12)
+- **Speed:** walk 10 ft.
+- **Challenge Rating:** 1/2 (100 XP)
+- **Source:** [Tome of Beasts 2023](https://koboldpress.com/kpstore/product/tome-of-beasts-1-2023-edition/) page 223
+
+| STR | DEX | CON | INT | WIS | CHA |
+| --- | --- | --- | --- | --- | --- |
+| 10 (+0) | 16 (+3) | 14 (+2) | 12 (+1) | 9 (-1) | 12 (+1) |
+
+- **Skills:** Stealth +5
+- **Condition Immunities:** poisoned
+- **Senses:** darkvision 120 ft., passive Perception 10
+- **Languages:** Common, Sylvan
+
+### Special Abilities
+
+- **Aura of Drunkenness:** The rum gremlin radiates an aura of drunkenness to a radius of 20 feet. Each creature that starts its turn in the aura must succeed on a DC 12 Constitution saving throw or be poisoned for 1 hour. A creature that has consumed alcohol within the past hour has disadvantage on the saving throw. While poisoned, a creature falls prone if it tries to move more than half its speed during a turn. A creature that succeeds on the saving throw is immune to the rum gremlin’s Aura of Drunkenness for 24 hours.
+- **Magic Resistance:** The rum gremlin has advantage on saving throws against spells and other magical effects.
+
+### Actions
+
+- **Bite:** Melee Weapon Attack: +5 to hit, range 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.
+- **Claws:** Melee Weapon Attack: +5 to hit, range 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.
+- **Spellcasting:** The gremlin casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 11):<br>At will: prestidigitation<br>3/day: command
+
+
