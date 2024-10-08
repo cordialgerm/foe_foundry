@@ -1,5 +1,3 @@
-**Foe Foundry** is a project to procedurally generate interesting and powerful D&D 5e Monsters.
-
 ## Welcome to Foe Foundry
 
 **Foe Foundry** is a project to procedurally generate interesting and powerful 5e-compatible Monsters.
