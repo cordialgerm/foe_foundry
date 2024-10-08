@@ -1,6 +1,30 @@
 <MonsterName/>Hill Giant Chief</MonsterName>
 <CreatureType/>Giant</CreatureType>
 
+<summary>The Hill Giant Chief is a formidable Huge Giant, known for its strength and size, making it a significant threat in battle. With an armor class of 13 and a high hit point total of 126, it is a tough opponent to overcome. The creature has an impressive Strength score of 20, granting it exceptional melee abilities, while its Constitution of 18 provides solid durability. However, its Dexterity is low at 8, indicating a very bad agility, making the chief less effective at dodging attacks. The Hill Giant Chief is particularly adept in a melee environment, able to deal substantial damage with its attacks and utilize special abilities that control the battlefield. Despite its strengths, the chief's Intelligence, Wisdom, and Charisma scores are all low, making it gullible and easily misled. </summary>
+
+<detail>
+
+The Hill Giant Chief has the following attributes: Strength 20 (+5), Dexterity 8 (-1), Constitution 18 (+4), Intelligence 6 (-2), Wisdom 10 (+0), and Charisma 6 (-2). Its modifier for Strength is exceptional, making it very effective in melee combat; its Constitution modifier of +4 is also good, enhancing its ability to endure damage. The Dexterity modifier is very bad, indicating its clumsiness, while its Intelligence, Wisdom, and Charisma modifiers are all bad, reflecting its lack of intelligence and social skills. 
+
+The creature has saving throw bonuses that include a +8 to Strength saves and a +7 to Constitution saves, making it very good at resisting physical attacks. It has a passive Perception of 10, indicating average perception capabilities, and it can only communicate in the Giant language.
+
+In terms of special abilities, the Hill Giant Chief is gullible, making it roll Insight checks at disadvantage, which can influence how it interacts with others during roleplay scenarios. 
+
+When it comes to actions, the chief can make a Multiattack, allowing it to strike twice with its greatclub. Each attack has a +8 to hit with a reach of 10 feet, dealing 18 (3d8 + 5) bludgeoning damage. If a Medium or smaller creature is hit, it must succeed on a DC 16 Strength saving throw or fall prone, potentially using the environment against the target.
+
+The chief can also attack at range by throwing a Rock. This attack has the same +8 to hit and a range of 60 feet, dealing 26 (6d6 + 5) bludgeoning damage, with the same rules for knocking targets prone. Notably, the giant can also throw grappling Medium or smaller creatures, dealing damage and potentially placing them prone at a location near their target.
+
+An impressive special attack, Greatclub Sweep, can be used once per day while bloodied. It allows the giant to unleash a powerful strike that affects all creatures within 10 feet, requiring them to make a DC 16 Dexterity saving throw. On a failure, they take 18 (3d8 + 5) bludgeoning damage, are pushed back, and fall prone, showcasing the giant's powerful area control abilities.
+
+As for bonus actions, the Hill Giant Chief can attempt to Grab a creature within 5 feet, requiring it to make a DC 10 Dexterity saving throw. A failure results in the target becoming grappled, unable to escape while granting the giant advantage on its attacks against the grappled foe. Additionally, the chief can use Body Slam once per day, jumping and landing on creatures to deal damage and potentially knocking them prone, thus further controlling the battlefield.
+
+The Muddy Ground ability, usable once per day as well, targets the terrain within 60 feet, transforming it into swampy mud for a minute. This creates difficult terrain and can trap prone creatures unless they succeed on a Strength saving throw, which encourages tactical movement and positioning.
+
+Finally, Stomp is another ability that can be used once per day, creating shockwaves that affect all creatures within 60 feet, forcing a Dexterity saving throw to avoid falling prone. 
+
+Overall, the Hill Giant Chief is a powerful melee combatant capable of controlling the battlefield, inflicting heavy damage, and utilizing its overwhelming size and strength to dominate encounters while remaining susceptible to deception. Careful planning and tactical engagement are crucial for characters facing this giant.</detail>
+
 
 
 ---

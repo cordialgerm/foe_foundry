@@ -1,6 +1,20 @@
 <MonsterName/>Scorch Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
 
+<summary>The Scorch Drake is a formidable Large dragon that serves as a potent adversary for adventurers, particularly in fiery environments. It boasts impressive physical defenses with an armor class of 15 and a substantial hit point pool of 145, making it difficult to take down. The drake has good mobility, capable of moving 40 feet on land and flying at 60 feet, allowing it to maneuver effectively in combat. With a challenge rating of 6, it presents a significant threat to lower-level parties. The creature has several notable abilities, particularly its fiery attacks and ability to create visual distortions that hinder perception. However, its intellect is below average, which might limit its strategic options during encounters.</summary>
+
+<detail>
+
+The Scorch Drake has the following attributes: Strength +3 (average), Dexterity +1 (bad), Constitution +4 (good), Intelligence -2 (very bad), Wisdom +5 (very good), and Charisma -1 (bad). These scores contribute to its overall combat effectiveness, utilizing its grasp on Wisdom for Perception checks while relying on Constitution to withstand damage.
+
+The creature is equipped with special abilities that enhance its combat prowess. Its **Heat Shimmer** ability creates an illusion effect by causing creatures beyond 30 feet to have disadvantage on Wisdom (Perception) checks aimed at seeing the drake. This can grant the drake substantial advantages in stealth scenarios, allowing it to maneuver without being easily tracked. The **Scalding Blood** ability inflicts fire damage to any creature within 5 feet that strikes it in melee combat. The damage is 3 (1d6), and the attacker must make a DC 15 Dexterity saving throw or risk being ignited, which causes additional fire damage at the start of their turns until they extinguish the flames.
+
+In terms of combat actions, the Scorch Drake can perform a **Multiattack**, allowing it to make one Bite and two Claw attacks in a single turn. Its **Bite** attack has a +6 to hit, reaches 5 feet, and deals 12 (2d8 + 3) piercing damage, along with 3 (1d6) fire damage. The **Claw** attack also has a +6 to hit and deals 8 (2d4 + 3) slashing damage plus 3 (1d6) fire damage. 
+
+The Scorch Drake can unleash its **Fire Breath** (recharge 5-6), spitting liquid fire in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, suffering 24 (7d6) fire damage on a failed save while igniting them, causing additional fire damage over time until extinguished. On a successful save, the damage is halved and they do not ignite. This ability can affect multiple characters at once, potentially turning the tide of battle.
+
+As a bonus action, the Scorch Drake can use **Fan the Flames**, which targets an ignited creature within 15 feet that it can see. The flames intensify and create smoke, requiring the target to succeed on a DC 15 Constitution saving throw or be blinded until the end of its next turn, further disrupting opponents and enhancing the dragon's tactical advantage in combat.</detail>
+
 
 
 ---

@@ -1,6 +1,16 @@
 <MonsterName/>Tetomatli</MonsterName>
 <CreatureType/>Construct</CreatureType>
 
+<summary>The Tetomatli is a large, chaotic evil construct that presents a formidable challenge in combat with a Challenge Rating of 8. It boasts a robust Armor Class of 16 and significant hit points totaling 152, derived from 16d10+64. This creature embodies strength through its impressive physical stats, particularly with a Strength score of 20, which provides a +5 modifier, indicating exceptional prowess in physical interactions, such as grappling and attacking. However, it has a very poor Intelligence score of 5, giving it a -3 modifier, which reflects its limited cognitive abilities. With good Constitution and average Dexterity, this creature excels at enduring hits but does not possess agility. The Tetomatli is notable for its wide range of immunities and resistances, making it a challenging opponent who can withstand various forms of damage while being impervious to multiple conditions.</summary>
+
+<detail>
+
+The Tetomatli is skilled in athletics with a +8 modifier, making it very good at physical feats, and has a perception score of +3, allowing for average awareness of its surroundings. It is immune to poison and psychic damage and resistant to acid, fire, and lightning damage, as well as nonmagical bludgeoning, piercing, and slashing. With a tremorsense ability that extends for 90 feet, the Tetomatli can detect vibrations, though it is blind beyond this range and cannot communicate verbally. 
+
+Special abilities enhance the Tetomatli's combat capabilities significantly. The Diving Head Slam attack allows it to take advantage of flying movement to deliver a powerful hit, and if executed correctly, it can trigger its Tremor ability as a bonus action to disrupt nearby targets. It can fly up to 30 feet per round but must remain grounded at the start and end of its turns; otherwise, it risks taking falling damage. Magic Resistance allows it to save with advantage against spells, making it a resilient target against magical offenses. The construct's weapon attacks are classified as magical, enabling them to bypass nonmagical defenses, and its Siege Monster ability allows for double damage against structures.
+
+In terms of actions, the Tetomatli can make a Multiattack, which consists of one head slam and one wing buffet attack. The Head Slam attack is a melee weapon attack that hits with +8 to hit, targeting a reach of 5 feet with a damage output of 21 bludgeoning damage on a hit. If the Tetomatli critically hits a target in metal armor, the armor risks destruction unless the target makes a successful DC 15 Strength saving throw. The Wing Buffet attack also has a hit bonus of +8 and deals 12 bludgeoning damage. The Tremor ability, which recharges on a roll of 6, allows the Tetomatli to create a magical shockwave by slamming its head into the ground. Any creature within 20 feet must succeed on a DC 15 Dexterity saving throw or be knocked prone, suffering from disadvantage on attack rolls and Dexterity checks until the end of their next turn. This ability not only inflicts damage but also manipulates the battlefield by potentially incapacitating nearby foes.</detail>
+
 
 
 ---

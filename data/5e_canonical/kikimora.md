@@ -1,6 +1,18 @@
 <MonsterName/>Kikimora</MonsterName>
 <CreatureType/>Fey</CreatureType>
 
+<summary>The Kikimora is a Medium-sized fey creature characterized by its chaotic neutral alignment. This creature is known for its mischievous and elusive nature, making it a tricky adversary in combat and a deceptive interaction partner outside of it. With an Armor Class of 15 and 78 hit points, the Kikimora is reasonably durable for its challenge rating of 5, providing a good balance of offense and defense. Its strengths lie in its high Dexterity and Charisma scores, allowing it to excel in stealth and social interactions, while also making it a potent spellcaster. However, it is vulnerable to magical attacks, which may bypass its resistances, so characters who rely on spells can exploit this weakness. </summary>
+
+<detail>
+
+In terms of attributes, the Kikimora possesses the following values: Strength 13 (+1 – average), Dexterity 18 (+4 – very good), Constitution 15 (+2 – average), Intelligence 12 (+1 – average), Wisdom 16 (+3 – good), and Charisma 21 (+5 – exceptional). Its skills include Deception +8 and Persuasion +8, both of which are exceptional and indicate a strong ability to manipulate or charm others. Additionally, it has Stealth +7, making it very good at sneaking around unnoticed. The Kikimora also has damage resistances against bludgeoning, piercing, and slashing from nonmagical attacks, enhancing its survivability against physical threats.
+
+The Kikimora has a unique special ability called Hidden Home, allowing it to inscribe a magical symbol on a surface within a structure for one minute. This symbol serves as a portal to an extradimensional space that the Kikimora can enter or exit at will, making it very difficult to pin down in combat. Additionally, it benefits from Magic Resistance, giving it advantage on saving throws against spells and magical effects—this is a significant advantage during encounters with spellcasters.
+
+In terms of combat actions, the Kikimora can perform a Multiattack, making three claw attacks with a +7 to hit. Each successful hit deals 11 (2d6 + 4) slashing damage. It also has access to the Domestic Magic ability, allowing it to cast the mending, minor illusion, and prestidigitation cantrips at will, using Charisma as the spellcasting ability. This makes it versatile in both combat and utility scenarios. The Invisibility action enables the Kikimora to become invisible until it attacks or casts a spell. It can sneak away from danger or set up ambushes effectively while remaining undetected.
+
+Another special ability, House Pests, allows the Kikimora to summon a swarm of bats, insects, or rats once per day, which acts as allies and follows its commands. This can effectively turn the tide of combat by overwhelming opponents. The bonus action Homeward Step enables the Kikimora to teleport within a structure to an unoccupied space within 15 feet of its hidden home, providing exceptional mobility and making it harder to corner or defeat.</detail>
+
 
 
 ---

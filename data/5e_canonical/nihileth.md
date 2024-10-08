@@ -1,6 +1,28 @@
 <MonsterName/>Nihileth</MonsterName>
 <CreatureType/>Undead</CreatureType>
 
+<summary>The Nihileth is a formidable undead creature characterized by its chaotic evil alignment and an array of powerful abilities. With a large stature and a significant challenge rating of 13, it poses a serious threat to adventurers. Its strengths lie in its high hit points of 157 and a respectable armor class of 17, along with various immunities and resistances that allow it to withstand a range of damage types. Notably, the Nihileth can switch between a ghostly form and an undead form, each offering unique advantages in combat. However, it has weaknesses in its slow Dexterity score and its reliance on the psychic condition to affect its enemies. The Nihileth’s notable abilities include its capability to spread a debilitating disease known as Nihilethic Rot, which can lead to dire consequences for those affected.</summary>
+
+<detail>
+
+The Nihileth possesses a Strength score of 21, which translates to a +5 modifier, making its physical attacks very effective. Its Dexterity is 9, yielding a -1 modifier, which is considered bad and indicates slowness or clumsiness in reactions to events. The Constitution score is a solid 15, resulting in a +2 modifier, providing it good resilience against many effects. It boasts an Intelligence of 18, giving it a +4 modifier, enabling it to perform well in strategic combat decisions. Wisdom and Charisma are both 15 and 18 respectively, granting +2 and +4 modifiers, which are good, particularly for saving throws and other interactions.
+
+In terms of defenses, the Nihileth has saving throw proficiencies in Constitution (+7), Intelligence (+9), and Wisdom (+7), all of which are good and allow it to resist various effects. The creature is immune to cold, necrotic, and poison damage, and it has resistances against bludgeoning, piercing, and slashing from non-magical attacks, making it a daunting opponent for physical fighters. Additionally, it is immune to several conditions including charmed, exhaustion, frightened, and poisoned, enhancing its survivability even further. Its senses include darkvision up to 120 feet and a passive Perception of 20, making it keenly aware of its surroundings, while being able to communicate through Void Speech and telepathy within 120 feet.
+
+The Nihileth’s special abilities include "Ghostly Body," which provides resistance to acid, fire, lightning, and thunder damage, as well as immunity to the prone condition. This ability allows the Nihileth to move through creatures and objects as if they were difficult terrain, taking force damage only when it ends its turn inside an object. "Infecting Telepathy" enables the Nihileth to spread the Nihilethic Rot disease to those who communicate with it telepathically or deal psychic damage to it, requiring a DC 15 Wisdom saving throw to avoid infection.
+
+The "Nihilethic Rot" disease manifests after one minute and can only be removed with the lesser restoration spell within that time frame. If the infected creature does not receive treatment, it suffers severe consequences that hinder its ability to regain hit points and requires it to be submerged in water to avoid suffocation. If a humanoid dies while infected, it is resurrected as a Nihilethic Zombie under the Nihileth's control, while larger creatures become Nihilethic Dominators. 
+
+With the "Undead Fortitude" ability, the Nihileth can attempt to remain standing after taking lethal damage by succeeding on a Constitution saving throw, provided the damage was not radiant or a critical hit. The "Undead Nature" trait means it does not require food, air, drink, or sleep, making it an unyielding opponent.
+
+The Nihileth’s "Void Aura" impacts nearby creatures by potentially halving their speed and dealing cold damage to those already infected with its disease when they start their turn close to the Nihileth.
+
+In terms of actions, the Nihileth can make two Tentacle attacks and one Tail attack or execute three Withering Touch attacks. The Tail and Tentacle attacks are melee attacks that deal bludgeoning damage and can infect targets with Nihilethic Rot if they fail a Constitution saving throw. The Withering Touch attack deals necrotic damage, adding to its tactical repertoire.
+
+As a bonus action, the Nihileth can switch between its Undead form and its Void Ghost form, maintaining most of its stats while changing its resistances and immunities. When it takes damage, the "Void Body" reaction allows the Nihileth to reduce that damage to zero, or half it when the damage is radiant.
+
+The Nihileth can also take three legendary actions. It can make a perception check, perform a tail swipe, or use "Rotten Drain," which deals psychic damage to an infected creature and heals the Nihileth for that amount. This combination of actions and abilities makes the Nihileth a cunning and dangerous opponent on the battlefield.</detail>
+
 
 
 ---

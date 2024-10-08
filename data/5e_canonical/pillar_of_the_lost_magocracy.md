@@ -1,6 +1,18 @@
 <MonsterName/>Pillar of the Lost Magocracy</MonsterName>
 <CreatureType/>Construct</CreatureType>
 
+<summary>The Pillar of the Lost Magocracy is a huge construct characterized by its chaotic neutral alignment and formidable magical prowess. Its primary role is to serve as a guardian or an obstacle within its domain, wielding significant control over its environment through unpredictable magical attacks. It boasts an impressive quantity of hit points, standing firm against physical damage while being immune to poison and resistant to nonmagical attacks. However, its low Dexterity and lack of mobility limit its physical capabilities, making it more reliant on its mental and magical abilities to influence combat. Additionally, the construct is immune to several debilitating conditions, granting it resilience in battle.</summary>
+
+<detail>
+
+In terms of attributes, the Pillar of the Lost Magocracy has the following values: Strength 9, Dexterity 1, Constitution 13, Intelligence 18, Wisdom 8, and Charisma 13. Its Constitution grants a +1 modifier, which is considered average, allowing it to withstand damage over time. However, its Dexterity is very bad, resulting in a -5 modifier, making it extremely slow and poor at dodging attacks. Intelligence is at an exceptional +4, providing advantage on arcana and history checks, making it well-suited for using its magical capabilities. Wisdom sits at a -1 modifier, rendering it average in willpower and perception. Lastly, it has a Charisma of +1, which is considered average but allows for telepathic communication within a 120-foot range.
+
+The Pillar of the Lost Magocracy has two notable special abilities. The first is Mental Agility, enabling it to use its Intelligence score instead of Dexterity when determining its initiative. This allows it to act earlier in combat despite its low Dexterity. The second ability, Shocking Vengeance, imposes 3 (1d6) lightning damage on any creature that touches the pillar or strikes it with a melee attack while standing within 5 feet, punishing close-range attackers.
+
+In combat, the Pillar can utilize its primary action, Anger of the Ancient Mage. This action allows the construct to unleash one of four possible magical effects on targets within a 120-foot range by rolling a d4. The first possible effect is called Mutant Plants, which creates grasping tendrils in a 20-foot radius, turning the area into difficult terrain and potentially restraining creatures caught within it. The second option is Acid Rain, which causes corrosive acid to fall in a designated area, dealing 13 (3d8) acid damage on a failed Dexterity saving throw. The third effect, Noxious Cloud, creates a sphere of obscuring mist that inflicts poison damage and can blind creatures inside it. Lastly, the Shrinking Ray strikes a single target, causing them to shrink to half their size unless they succeed on a Constitution saving throw, an effect similar to the enlarge/reduce spell.
+
+Overall, the Pillar of the Lost Magocracy serves as a significant threat on the battlefield, utilizing its magical abilities to control the flow of combat, while its physical weaknesses require it to rely on strategic placement and range to maximize its efficacy.</detail>
+
 
 
 ---

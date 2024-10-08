@@ -1,6 +1,22 @@
 <MonsterName/>Wandering Haze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
 
+<summary>The Wandering Haze is a gargantuan ooze with a unique and unsettling nature, acting as a formidable presence on the battlefield. With a high Armor Class of 16 due to its natural armor and an impressive pool of 170 hit points, it can withstand considerable damage. It has a movement speed of 5 feet on the ground but is capable of flying at 40 feet, making it flexible in positioning. The creature's challenge rating of 10 suggests that it is an appropriate foe for a group of adventurers, providing a significant challenge with a reward of 5,900 experience points upon defeat. </summary>
+
+<detail>
+
+In terms of attributes, the Wandering Haze boasts a Strength score of 22, granting it a +6 modifier that is considered very good for physical attacks. Its Dexterity score of 16 translates to a +3 modifier, which is good for improving its initiative and AC. The Constitution score of 20 provides a +5 modifier, also very good, contributing to its durability. The creature, however, has very low Intelligence and Charisma scores of 3, resulting in detrimental -4 modifiers, and an average Wisdom score of 13 with a +1 modifier. 
+
+The Wandering Haze is immune to acid damage and resistant to cold damage. Additionally, it cannot be affected by the blinded, charmed, deafened, exhausted, frightened, or prone conditions, making it a versatile foe in various combat situations. It has blindsight up to 120 feet, allowing it to detect its surroundings without relying on sight and a passive perception of 15, which is average.
+
+Among its special abilities, "Acidic Fog" inflicts 7 (2d6) acid damage to any creature that begins its turn within the haze's space. Its "Cloud Form" ability allows the creature to move through very narrow spaces, which offers tactical advantages when maneuvering in combat. The "False Appearance" ability camouflages the Wandering Haze as a normal cloud when it remains motionless, providing effective ambush potential. Lastly, being an ooze, it does not require sleep, enabling it to be constantly active.
+
+The Wandering Haze employs a multiattack action, allowing it to make three separate Pseudopod melee attacks during its turn. Each Pseudopod attack has a +10 to hit and deals a combination of 11 (2d4+6) bludgeoning damage and an additional 7 (2d6) acid damage, combining force and corrosive effects. 
+
+One of its standout actions is "Sheath of Chaos," which allows it to constrict its cloud-like form around creatures within its space, dealing 27 (6d8) psychic damage to each and causing them to become disoriented until the end of their next turn. Creatures that are disoriented will move in a random direction when they attempt to move. The "Acidic Cloudburst" ability, which recharges on a roll of 5 or 6, releases a torrential spray of acid, dealing 35 (10d6) acid damage to all creatures within 10 feet, halving their movement speed for one minute unless they succeed on a Dexterity saving throw. Creatures affected by this speed reduction may attempt to shake off the effect with a Constitution saving throw at the end of each of their turns.
+
+The Wandering Haze combines high mobility with a damaging presence, capable of manipulating its environment and the minds of its foes, making it a unique and dangerous opponent on the battlefield.</detail>
+
 
 
 ---

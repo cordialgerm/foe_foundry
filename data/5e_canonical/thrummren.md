@@ -1,6 +1,20 @@
 <MonsterName/>Thrummren</MonsterName>
 <CreatureType/>Celestial</CreatureType>
 
+<summary>The Thrummren is a formidable Gargantuan celestial creature that embodies chaotic good. Known for its overwhelming presence on the battlefield, it boasts a high Armor Class of 17 due to its natural armor, along with a substantial pool of Hit Points totaling 198, which makes it a resilient opponent for adventurers. With a Challenge Rating of 12, the Thrummren presents a significant challenge for a party, rewarding successful encounters with 8,400 experience points. Its abilities primarily revolve around lightning and thunder damage, allowing it to absorb lightning attacks and channel that energy back into healing itself. It stands out not only due to its power but also because of its protective capabilities, especially when in conjunction with a rider.</summary>
+
+<detail>
+
+The Thrummren has a Strength score of 21, resulting in a modifier of +5, which means its physical attacks are very effective. Its Dexterity is 19, granting a +4 modifier, making it quite nimble for its size. With a Constitution of 22 and a +6 modifier, it has an exceptional ability to endure damage. It has an Intelligence score of 10 (average), a Wisdom score of 15 (+2, good), and a Charisma score of 10 (average). The creature has saving throw proficiencies in Dexterity (+8, good), Wisdom (+6, good), and Charisma (+4, average). 
+
+The Thrummren has specific damage immunities to lightning and poison, making it especially resilient against those types of attacks. It is resistant to cold and thunder damage, and immune to the poisoned condition. With darkvision extending to 120 feet and a passive perception of 12, it can effectively detect hidden threats. The languages it can communicate in include Common, Giant, and telepathy within a range of 60 feet.
+
+Among the Thrummren's special abilities is Lightning Absorption, which allows it to regain hit points equal to any lightning damage it receives, making it nearly invincible to such assaults. It also possesses Magic Resistance, granting it advantage on saving throws against spells and other magical effects, ensuring that it can often shrug off magical attacks. Its weapon attacks are classified as magical, enhancing their effectiveness against creatures that are resistant to non-magical attacks. The Storm Hide ability deals 7 (2d6) lightning damage to any creature that touches it or strikes it in melee while within five feet, although it can protect its rider from this effect.
+
+In combat, the Thrummren can execute a Multiattack, allowing it to perform two melee attacks in a turn: one using its Gore attack and another with its Hooves. The Gore attack is a melee weapon attack with a +9 to hit and a reach of 15 feet, dealing 24 (3d12 + 5) piercing damage plus an additional 10 (3d6) lightning damage. Its Hooves attack also has a +9 to hit with a reach of 10 feet, dealing 14 (2d8 + 5) bludgeoning damage alongside 10 (3d6) thunder damage. The Thunder Stomp action, which can be used after a recharge on a roll of 5-6, allows the Thrummren to stomp the ground, forcing all creatures within 20 feet to make a DC 17 Strength saving throw. Those who fail take 35 (10d6) thunder damage, are pushed back up to 10 feet, and suffer deafness until the end of their next turn, while success results in only half damage with no additional effects.
+
+For defense, the Thrummren has a reaction called Protect Rider, which allows it to redirect attacks aimed at its rider, becoming the target of such attacks instead. This ability enhances the Thrummren’s role as a protector in battle, ensuring that its rider is shielded from harm.</detail>
+
 
 
 ---

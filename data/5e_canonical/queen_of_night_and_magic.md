@@ -1,6 +1,24 @@
 <MonsterName/>Queen of Night and Magic</MonsterName>
 <CreatureType/>Fey</CreatureType>
 
+<summary>The Queen of Night and Magic is a formidable Medium Fey creature characterized by her exceptional magical abilities and her dominance in combat. With a neutral evil alignment, she leverages her powers to manipulate and control her surroundings, making her a dangerous adversary for adventurers. She boasts a high Armor Class of 22, fortified by her ability to use her Charisma modifier, making physical attacks challenging to land. The Queen possesses a significant pool of hit points at 225, ensuring she can endure prolonged encounters. She is exceptionally skilled in various disciplines, particularly in Charisma-driven actions, allowing her to deceive and intimidate her opponents with ease. Her notable strengths include resistance to magic and damage immunity to cold and nonmagical attacks from weapons not made of cold iron. However, her reliance on magical effects may expose her to counterspell strategies, and her inability to heal makes her vulnerable if her spellcasting is disrupted.</summary>
+
+<detail>
+
+The Queen’s attributes include a Strength of 12 (+1), Dexterity of 19 (+4), Constitution of 17 (+3), Intelligence of 20 (+5), Wisdom of 18 (+4), and a Charisma of 26 (+8). Her Dexterity and Charisma scores are particularly high, making her exceptional in Dexterity-based attacks and very effective in social interactions. She has advantageous saving throws in Constitution at +10 and Wisdom at +11, positioning her above average in survivability against many magical threats. 
+
+The Queen has several special abilities that enhance her performance in combat. She possesses Legendary Resistance three times per day, allowing her to succeed on a failed saving throw, which makes her exceptionally resilient in the face of magical effects. Magic Resistance grants her advantage on saving throws against spells, further solidifying her defenses. The special ability Regal Bearing enables her to add her Charisma modifier to her Armor Class when not wearing armor or wielding a shield, positioning her AC as very good for a creature of her type.
+
+In terms of offensive capabilities, the Queen can execute a Multiattack, making three attacks with either her Rapier or Star Strike, including the possibility of casting a spell or using Unravel, her ability to dispel magic. The Rapier attack has a +11 to hit, dealing 8 piercing damage plus an additional 14 cold damage on a hit, showcasing her capacity for substantial damage output. Additionally, her Star Strike ranged spell attack has a +15 to hit with a range of 120 feet, dealing 17 fire damage and 9 radiant damage upon a successful strike.
+
+Unravel allows the Queen to dispel one magical effect within 60 feet by succeeding on a Charisma check against a set DC. This ability can significantly alter the course of a battle by removing detrimental magical effects from her allies or potentially neutralizing other spellcasters’ spells. The Shadow Rift action, which recharges on a roll of 5 or 6, creates a rift that can inflict severe cold and necrotic damage while restraining enemies within its area of effect, making it a potent area control tactic.
+
+Her extensive spellcasting capability allows her to cast at will spells including command, dancing lights, darkness, mage hand, and suggestion. She can also use confusion, fear, greater invisibility, and mirror image three times a day, which can create chaos and uncertainty among her foes. Once per day, she can cast dominate monster, plane shift, and power word stun, potentially turning the tide of battle or retreating from unfavorable engagements.
+
+In addition to her actions, the Queen possesses a bonus action known as Hidden Step, which allows her to teleport up to 60 feet to an unoccupied space and take the Hide action, enhancing her tactical mobility in combat. Her reaction, Sudden Fraying, enables her to dispel an ongoing spell whenever she is targeted, allowing her to thwart spellcasters without direct confrontation.
+
+For legendary actions, the Queen can make an additional attack with Star Strike, move without provoking opportunity attacks, cast a spell (costing 2 actions), or unleash Swirling Stars, which can blind nearby foes. Each of these legendary actions provides her with added versatility and a means to dominate encounters even when it is not her turn.</detail>
+
 
 
 ---

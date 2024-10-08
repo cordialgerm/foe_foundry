@@ -3,6 +3,54 @@
 
 <summary>A Mummy Lord is a powerful undead ruler, often a former king or high priest preserved through ancient rituals. Unlike ordinary mummies, Mummy Lords retain their intelligence and magical abilities, using dark magic to curse and control their enemies. Their decayed, bandage-wrapped bodies are imbued with powerful necromantic energy, making them nearly impervious to most forms of attack. Mummy Lords command legions of undead and are often found guarding ancient tombs filled with riches. They can curse enemies with a mere touch, and their presence alone can cause dread and despair in those who face them.</summary>
 
+<summary>The Mummy Lord is a formidable undead creature with a medium size classification, embodying the horrors of ancient curses and necromancy. With an impressive Armor Class of 17 and a substantial pool of hit points totaling 221, the Mummy Lord stands as a resilient adversary. Its challenge rating of 15 indicates that it is intended for high-level encounters, rewarding players with 13,000 experience points upon defeat. The creature excels in ranged and melee combat with abilities that cause severe status effects like the Mummy Rot curse, making it a significant threat in both combat and strategy. However, like many undead, it has its vulnerabilities, particularly to fire damage, which can cause it to ignite.</summary>
+
+<detail>
+
+The Mummy Lord has the following ability scores: Strength at 18 (modifier +4, which is very good), Dexterity at 10 (modifier +0, which is average), Constitution at 18 (modifier +4, very good), Intelligence at 12 (modifier +1, which is average), Wisdom at 18 (modifier +4, very good), and Charisma at 16 (modifier +3, good). Its saving throws add to its durability, with strong bonuses in Constitution (+9), Intelligence (+6), Wisdom (+9), and Charisma (+8). It possesses skills in history (+6) and religion (+6), allowing it to engage knowledgeably about lore and divine matters.
+
+In terms of damage resistance, the Mummy Lord is immune to necrotic and poison damage, as well as attacks from nonmagical weapons. Its condition immunities grant it protection from being charmed, fatigued, frightened, paralyzed, or poisoned, making it a difficult target to incapacitate. Its darkvision allows it to see in dim light within 60 feet, and it has a passive perception score of 14. The Mummy Lord can communicate in the languages it knew in life.
+
+The Mummy Lord's special abilities enhance its lethality: 
+
+1. **Curse: Mummy Rot** - When the Mummy Lord touches a creature, it imposes a curse that prevents the target from regaining hit points, while simultaneously decreasing their maximum hit points daily until the target's maximum reaches zero, at which point they die and crumble to dust. 
+2. **Flammable** - After taking fire damage, it catches fire, suffering ongoing damage each turn until extinguished, which can be done by an action from any creature. 
+3. **Legendary Resistance (1/Day)** - Once per day, if it fails a saving throw, it can choose to succeed instead, though this causes its scarab amulet to shatter. 
+4. **Magic Resistance** - The Mummy Lord has advantage on saving throws against spells and magical effects, making it resistant to magical influences. 
+5. **Rejuvenation** - If the Mummy Lord’s heart remains intact after being destroyed, it can regenerate a new body in 1d4 days at a location near the heart.
+
+As an 11th-level spellcaster, the Mummy Lord utilizes spells with a Wisdom-based spellcasting ability, featuring a spell save DC of 17 and a +9 modifier for spell attacks. It has an array of spells prepared that it can cast without needing material components:
+
+- **Cantrips** (available at will): *guidance* (provides a bonus to ability checks) and *thaumaturgy* (allowing for minor magical effects).
+- **1st-Level Spells** (4 slots): *create or destroy water* (manipulates water elements) and *detect magic* (senses magical auras).
+- **2nd-Level Spells** (3 slots): *augury* (forecasts outcomes of actions) and *gentle repose* (preserves corpses against decay).
+- **3rd-Level Spells** (3 slots): *animate dead* (raises undead creatures as allies) and *dispel magic* (ends magical effects).
+- **4th-Level Spells** (3 slots): *divination* (reveals answers and predictions) and *guardian of faith* (summons a protective guardian).
+- **5th-Level Spell** (2 slots): *contagion* (imposes debilitating diseases).
+- **6th-Level Spell** (1 slot): *harm* (deals significant necrotic damage and reduces hit point maximum).
+
+In combat, the Mummy Lord can deliver two actions through its **Multiattack** ability, utilizing **Dreadful Glare** to frighten an opponent before slamming them with a **Rotting Fist**. The **Dreadful Glare** requires the target to make a Wisdom saving throw; failure results in fright, and a critical fail leads to paralysis for a turn. The **Rotting Fist** attack combines bludgeoning and necrotic damage, with the potential to inflict the Mummy Rot curse if the target fails a Constitution saving throw.
+
+The Mummy Lord can react to spells through **Blasphemous Counterspell**, causing attackers to possibly waste their spell if they fail a Constitution saving throw. It also has access to legendary actions, which include **Channel Negative Energy** (preventing healing in a radius), **Whirlwind of Sand** (allowing mobility without provoking attacks), and the ability to use **Dreadful Glare** or **Dispel Magic** at a significant cost of action economy.
+
+With its broad array of damaging physical attacks, debilitating curses, and powerful spells, the Mummy Lord is a prime example of how ancient evils can persist in their wrath, making it a significant home for adventurers seeking both challenge and retribution.
+
+The Mummy Lord is a Medium undead creature that stands as a formidable foe due to its potent mix of powerful attacks, magical capabilities, and resilience against death. With a Challenge Rating of 15, it presents a significant challenge to adventurers, effectively blending elements of melee combat with spellcasting and summoning abilities. The Mummy Lord’s strengths lie in its high Hit Points of 270, strong defenses represented by an Armor Class of 17 due to its natural armor, and its vast array of special abilities that allow it to manipulate the battlefield and summon allies. However, despite its prowess, it has weaknesses typical of undead: while it is immune to various conditions, it can still be affected by certain forms of damage and spells that do not require physical attacks. Its ability to rejuvenate from destruction adds to its challenge, making it a relentless adversary.
+
+The Mummy Lord's attributes include a Strength score of +4, Dexterity of +0, Constitution of +8, Intelligence of +5, Wisdom of +9, and Charisma of +8. Its high Constitution indicates very good resilience, allowing it to absorb damage effectively. Its impressive Wisdom and Charisma scores also contribute to its abilities to resist magical effects and control the battlefield. The Mummy Lord has darkvision up to 60 feet, a high Perception skill of 19, and can speak the languages it knew in life. Its Stealth modifier of +10 is considered good, but as an undead creature, it often relies more on its other capabilities than on sneaking.
+
+Special abilities of the Mummy Lord include Legendary Resistance, which allows it to succeed on a failed saving throw three times a day, providing it with very good survivability against spells and effects. Magic Resistance gives it advantage on saving throws against spells, which is exceptional for avoiding magical threats. The ability to rejuvenate means that if defeated, it can return to life within 24 hours if its heart remains intact, further complicating encounters with it. Turning Defiance grants advantage to itself and nearby undead allies against effects designed to turn them, promoting their united front in battle. With Undead Nature, it requires neither air, food, drink, nor sleep, and Undead Resilience grants it immunity to poison damage and effects.
+
+In terms of actions, the Mummy Lord can perform a Multiattack, which allows it to make two attacks with its Blessed Khopesh and one with its Rotting Fist, or it can choose to make four Divine Bolt spell attacks. The Blessed Khopesh attack has a +9 to hit and deals varying damage, with the option to mix slashing with necrotic or radiant damage, reflecting its versatility. The Rotting Fist attack also offers strong damage and can impose a curse called mummy rot, requiring a DC 17 Constitution saving throw to avoid. The Divine Bolt provides a ranged attack option with significant damage output, taking advantage of its spellcasting ability.
+
+The Mummy Lord has significant spellcasting options that can impact gameplay dramatically. It can use spells like command and guidance at will, and it has access to powerful spells such as dispel magic, hold, silence (three times a day), and more impactful spells like contagion, divination, and insect plague once per day. Each of these spells can disrupt party strategies or hinder their capabilities significantly.
+
+For bonus actions, the Mummy Lord can bolster nearby undead allies, enhancing their survivability while giving them an advantage on their next attack roll. The Dreadful Glare ability allows it to frighten and potentially paralyze adversaries, making it a tactical option to control the battlefield and limit enemy actions.
+
+The Mummy Lord can also utilize legendary actions, which include options such as Detect Life to locate creatures nearby, Sandy Teleport for strategic repositioning, or calling servitors to increase its undead army. By unleashing divine energy, it can deal area damage and stun foes, further establishing itself as a commanding presence on the battlefield.
+
+These attributes, actions, and abilities make the Mummy Lord a complex opponent requiring careful strategy and teamwork to overcome, presenting not only a physical threat but also a manipulative and magical powerhouse in encounters.</detail>
+
 
 
 ---

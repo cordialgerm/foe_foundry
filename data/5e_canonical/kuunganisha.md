@@ -1,6 +1,18 @@
 <MonsterName/>Kuunganisha</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<summary>The Kuunganisha is a small fiend characterized by its cunning and devious nature. This creature is typically associated with evil and often serves as a familiar or an ally to a more powerful master. With a challenge rating of 2 and the ability to fly, the Kuunganisha poses a moderate threat with its agile movements and some resistance to damage. Its main strengths lie in its ability to slip into invisibility and its regeneration factor, allowing it to stay in the fight longer. However, its physical strength is lacking, with a low Strength score, which makes it rely more on its magical abilities and tactical advantages than direct confrontation. </summary>
+
+<detail>
+
+In terms of attributes, the Kuunganisha has a Strength of 6, which gives it a very bad modifier of -2, making it ineffective in physical attacks that require brute force. Its Dexterity of 17 provides a good +3 modifier, giving it a better chance to dodge attacks and succeed in stealthy maneuvers. The Constitution score of 11 results in an average modifier of +0, reflecting its moderate ability to withstand damage. Its Intelligence and Charisma scores are both 10 and 13, respectively, with the latter granting a +1 modifier, showcasing a decent capacity for social engagements and some magical influences. Its Wisdom of 12 gives it a +1 modifier, aiding it in perception checks.
+
+The Kuunganisha possesses several special abilities that enhance its survivability and combat utility. The Fiend Sight ability allows it to see in magical darkness without any hindrance. With Magic Resistance, the Kuunganisha has advantage on saving throws against spells, making it harder to incapacitate. Its Regeneration ability allows it to regain 1 hit point at the start of its turn if it has at least 1 hit point remaining, which can prolong its presence in combat significantly. The Will of the Master ability enables its master to cast spells through the Kuunganisha, allowing the fiend to act as a conduit for magical effects while using its own senses to target spells, requiring careful coordination between the master and the fiend.
+
+In combat, the Kuunganisha can utilize its Multiattack feature, allowing it to make one claw and one bite attack in a single turn. The bite attack is a melee weapon attack that adds +5 to hit, with a reach of 5 feet and dealing an average of 5 piercing damage plus potential poison damage. If the target fails a Constitution saving throw, they will take additional poison damage and become poisoned for a minute, creating potential for ongoing damage. The claw attack also has a +5 to hit and deals 8 slashing damage, making it a solid option for damage dealing.
+
+One unique action available to the Kuunganisha is Invisibility, which allows the creature to magically become invisible. This effect lasts until it attacks or until the Kuunganisha decides to end the effect, requiring concentration similar to a spell. During this time, any equipment the Kuunganisha carries also becomes invisible, making it a formidable opponent that can strike from the shadows unexpectedly.</detail>
+
 
 
 ---

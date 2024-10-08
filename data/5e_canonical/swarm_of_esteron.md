@@ -1,6 +1,16 @@
 <MonsterName/>Swarm of Esteron</MonsterName>
 <CreatureType/>Beast</CreatureType>
 
+<summary>The Swarm of Esteron is a Medium-sized Beast that serves as a formidable and uniquely constructed adversary in combat. With a Challenge Rating of 2, it provides moderate difficulty for adventuring parties while offering 54 hit points, which makes it resistant to damage from bludgeoning, piercing, and slashing attacks. Its strength lies in its mobility; it can swim and fly at a speed of 30 feet, allowing it to maneuver around the battlefield effectively. While it has average physical strength and constitution, its dexterity is notably good, granting it a +3 modifier, which enhances its ability to avoid attacks. The Swarm of Esteron excels in situations where it can leverage its special abilities, such as its keen sense of smell, which gives it an advantage on perception checks relying on this sense. However, its intelligence is low, indicating that it may not be very strategic in its actions.</summary>
+
+<detail>
+
+The stats for the Swarm of Esteron are as follows: Strength of 10, which is average, Dexterity of 16, which is good, Constitution of 10, which is average, Intelligence of 2, which is very bad, Wisdom of 12, which is average, and Charisma of 4, which is very bad. The swarm's damage resistances make it particularly resilient in combat scenarios, while it is immune to a variety of conditions (charmed, frightened, grappled, paralyzed, petrified, prone, restrained, and stunned), allowing it to remain active when facing effects that could incapacitate other creatures.
+
+The Swarm of Esteron has several notable special abilities. The Amphibious ability enables the swarm to breathe both air and water, making it versatile in various environments. The Keen Smell ability allows it to have advantage on Wisdom (Perception) checks relating to smell, which can greatly assist it in detecting concealed or hidden opponents. The Swarm ability permits it to occupy the same space as another creature, enhancing its tactical flexibility and allowing it to engage multiple foes simultaneously. However, the swarm cannot regain hit points or gain temporary hit points, which is a notable limitation when it comes to sustained engagements.
+
+In terms of actions, the swarm can bite, making a melee weapon attack with a +5 to hit. If successful, this attack deals 14 piercing damage, which is substantial, especially against unarmored foes. If the swarm is reduced to half or fewer hit points, the damage it deals with this bite attack decreases, resulting in 7 piercing damage instead. This mechanic emphasizes the swarm's diminishing returns in combat as it becomes weaker under pressure, making it essential for players to strategize on how to defeat it quickly.</detail>
+
 
 
 ---

@@ -1,6 +1,20 @@
 <MonsterName/>Iron Sphere</MonsterName>
 <CreatureType/>Construct</CreatureType>
 
+<summary>The Iron Sphere is a small, unaligned construct that serves as a formidable presence in combat and a useful tool for tactical movement. With a challenge rating of 5, it has a solid armor class of 16 and 60 hit points, making it a reliable adversary. The creature's strengths lie in its impressive physical attributes with a Strength score of 16, granting it good melee prowess, and an exceptional Constitution score of 18, providing it with resilience against damage. However, its Intelligence, Wisdom, and Charisma scores are low, which limits its utility in social interactions and many kinds of magical effects. Notably, the Iron Sphere is immune to various forms of damage, including lightning and necrotic, and it possesses significant resistances. It is particularly dangerous due to its ability to burrow and deal double damage to objects, making it a threat in both combat and environmental scenarios.</summary>
+
+<detail>
+
+The Iron Sphere has the following attributes: Strength 16 (+3), Dexterity 13 (+1), Constitution 18 (+4), Intelligence 4 (-3), Wisdom 10 (+0), and Charisma 3 (-4). Its modifiers are good for Strength and Constitution, average for Dexterity, and very bad for Intelligence and Charisma. The sphere is skilled in athletics with a +6 bonus and has a +3 bonus for perception checks.
+
+In terms of damage immunities, the Iron Sphere is immune to lightning, necrotic, poison, psychic, and radiant damage. It is resistant to cold and fire damage, as well as bludgeoning, piercing, and slashing damage coming from nonmagical attacks. The creature is also immune to conditions such as being charmed, exhausted, frightened, poisoned, and prone. Its blindsight allows it to perceive its surroundings out to a distance of 60 feet, although it is blind beyond this range. The Iron Sphere understands the languages of its creator but cannot communicate verbally.
+
+The Iron Sphere has several special abilities that enhance its functionality in both combat and movement. Its Immutable Form makes it immune to any spell or effect that would change its form, ensuring it remains a consistent threat on the battlefield. The Siege Monster ability enables it to deal double damage to objects and structures, making it particularly effective against fortified locations or barriers. The Standing Leap ability allows the sphere to perform impressive jumps, with a maximum long jump of 25 feet and a high jump of 15 feet, which can be achieved both with and without a running start. Its Tunneler ability enables it to burrow through solid rock at half its burrow speed, creating a tunnel that is 5 feet wide and 5 feet high.
+
+In combat, the Iron Sphere can utilize its Multiattack feature, allowing it to make three melee attacks during a turn. Its melee attacks include three different types of attacks: the Blade, which deals 7 (1d8 + 3) slashing damage; the Piston, which deals 7 (1d8 + 3) bludgeoning damage; and the Spike, which also deals 7 (1d8 + 3) piercing damage. Additionally, it has a special attack called the Lightning Cannon, which can be used once per recharge turn (when rolling a 5 or 6 on a d6). This powerful attack releases a bolt of lightning in a 20-foot line that is 5 feet wide, requiring affected creatures to make a DC 15 Dexterity saving throw. A failed save results in 22 (4d10) lightning damage, while a successful save halves the damage.
+
+In sum, the Iron Sphere is a resilient and versatile construct that excels in dealing damage both to enemies and in destroying objects, making it a valuable asset in any tactical situation. Its strong defenses and mobility abilities allow it to adapt effectively in various combat scenarios.</detail>
+
 
 
 ---

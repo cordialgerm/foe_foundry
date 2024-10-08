@@ -3,6 +3,18 @@
 
 <summary>A Swarm of Insects is a buzzing, crawling mass of small creatures such as beetles, ants, or wasps. These swarms overwhelm their prey with sheer numbers, biting and stinging relentlessly. In jungles, forests, or deserts, such swarms can strip vegetation or flesh in moments, leaving little behind. Swarms of Insects are difficult to combat due to their size and ability to move through small spaces. They can be particularly dangerous when provoked, with some swarms carrying venom or disease, adding to the threat they pose to adventurers or wildlife.</summary>
 
+<summary>The Swarm of Insects is a Medium beast that poses a unique challenge in combat by overwhelming opponents with its numbers. With an Armor Class of 12 and 22 hit points, its defenses are average, making it relatively easy to hit but allowing it to sustain some damage. As a creature with a Challenge Rating of 1/2, it is considered an entry-level threat that can provide 100 experience points. A notable feature of the swarm is its ability to occupy the space of other creatures, which can lead to tactical advantages. The swarm excels at dealing damage through its bites and venom, especially when it is at full strength, but it is limited by low strength and intelligence values, indicating that it is not particularly effective in physical confrontations beyond its bite attacks or in any situation that requires higher reasoning.</summary>
+
+<detail>
+
+The Swarm of Insects possesses the following attributes: Strength of 2, which is very bad for physical combat, Dexterity of 14, which is good for maneuverability, Constitution of 10, indicating average durability, Intelligence of 1, which is very bad and signifies almost no cognitive ability, Wisdom of 6, indicating bad perception, and Charisma of 4, also very bad and denoting a lack of social skills. The swarm's skills are not specified, but it has resistances to bludgeoning, piercing, and slashing damage, enhancing its survivability against most physical attacks. Additionally, it is immune to a variety of conditions, such as being charmed or frightened, making it difficult to control in combat. Its senses include blindsight within 10 feet, allowing it to sense nearby creatures without relying on sight, although its passive perception score of 8 is quite low.
+
+The swarm's special ability, "Swarm," allows it to occupy spaces of other creatures and move through tiny openings, enhancing its mobility on the battlefield. However, it cannot regain hit points or gain temporary hit points, which limits its survivability further as it takes damage.
+
+In terms of actions, the Swarm of Insects has two primary attacks. The first, "Bites," is a melee weapon attack that has a +4 modifier to hit, making it a good chance to connect with opponents given the average ability scores typical in lower-level play. When it successfully hits, it deals 11 piercing damage, rolling 2d10, or if the swarm is bloodied (reduced to half its hit points), it deals 5 piercing damage, rolling 1d10. The second action, "Venom," functions similarly with a +4 to hit, delivering 5 piercing damage plus 7 poison damage (2d6) when the swarm is healthy, and only 2 piercing damage plus 3 poison damage (1d6) if it is bloodied. This ability can not only deal significant damage but also apply poison effects, potentially hindering the effectiveness of characters engaged with the swarm.
+
+Overall, the Swarm of Insects serves as a swarm-style combatant that relies on its sheer numbers and debilitating poison to challenge adventurers, making it a formidable opponent in the hands of a clever player or dungeon master.</detail>
+
 
 
 ---

@@ -17,7 +17,17 @@ In combat, the Giant Shark utilizes its primary action, the Bite, which is a mel
 
 Another potent option in its arsenal is the Tail attack, which also has a +8 to hit and offers a reach of 10 feet. This attack inflicts 15 (3d6 + 5) bludgeoning damage. Importantly, after making a successful Tail attack, the Giant Shark can swim 20 feet without provoking opportunity attacks, allowing it to reposition itself effectively during a fight.
 
-Overall, the Giant Shark presents a significant threat in its domain, leveraging its physical might and aquatic adaptations to overpower its enemies. Adventurers venturing into its waters should be well-prepared for a fierce encounter.</detail>
+Overall, the Giant Shark presents a significant threat in its domain, leveraging its physical might and aquatic adaptations to overpower its enemies. Adventurers venturing into its waters should be well-prepared for a fierce encounter.
+
+The Giant Shark is a formidable aquatic beast known for its aggressive nature and powerful attacks, making it a notable predator in its environment. With a Challenge Rating of 5, it presents a significant challenge to adventurers who encounter it. This creature has exceptional strength and a good constitution, allowing it to absorb damage effectively, while its blood frenzy ability enhances its combat prowess when facing wounded foes. However, despite its strengths, the Giant Shark is limited by its inability to breathe out of water, restricting it to underwater engagements. 
+
+The Giant Shark has an Armor Class of 13, which is considered average for its Challenge Rating, and it boasts a substantial pool of Hit Points totaling 126, allowing it to endure prolonged combats. Its movement is unique, having a speed of 50 feet when swimming, but it is unable to move on land. The shark's attributes are as follows: Strength 20 (+6), Dexterity 10 (+0), Constitution 20 (+5), Intelligence 1 (-5), Wisdom 10 (+0), and Charisma 1 (-3). Its Strength and Constitution provide exceptional damage potential and resilience, while its Dexterity is average, offering standard agility.
+
+In terms of special abilities, the Giant Shark has Blood Frenzy, granting it advantage on melee attack rolls against creatures that are not at full hit points. This makes the shark highly dangerous against injured opponents. Additionally, it possesses Blood Sense, allowing it to detect the location of wounded creatures within 120 feet by scent, and to sense their general direction up to one mile away. This ability significantly enhances its tracking and hunting capabilities. The shark also has Electrical Sensitivity, which requires it to make a DC 15 Constitution saving throw when it takes lightning damage; failure results in it being incapacitated until the end of its next turn, presenting a possible weakness against lightning-based attacks. Finally, its Water Breathing ability limits it to underwater environments, as it cannot survive outside of water.
+
+In combat, the Giant Shark can make a Multiattack, allowing it to execute two Bite attacks in one turn. Each Bite attack has a +9 to hit, reaches out to 5 feet, and deals a substantial 19 (3d8 + 6) piercing damage on a successful hit. This makes the shark a potent threat in melee. The shark also has a Swift Hunter bonus action, which enables it to move up to half its speed towards a hostile creature it can see without provoking opportunity attacks, allowing it to close distances quickly and maintain pressure on its targets. 
+
+Overall, the Giant Shark is a deadly predator that thrives in aquatic environments, using its advantageous abilities and strong attacks to dominate its foes, particularly those that are already injured.</detail>
 
 
 

@@ -1,6 +1,24 @@
 <MonsterName/>Wizard Kobold</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<summary>The Wizard Kobold is a small humanoid creature that embodies the cleverness and cunning of its kind, functioning primarily as a spellcaster in the ranks of low-level adventurers and opportunistic foes. With a lawful neutral alignment, this kobold adheres to a structured code, making it reliable in its plans and actions. Its strengths lie in its spellcasting abilities, particularly its access to a variety of powerful spells that can manipulate the battlefield or inflict harm from a distance. However, it is hindered by its low physical strength and vulnerability to sunlight, which severely impacts its combat performance. A typical strategy for a Wizard Kobold involves utilizing its spells to control the flow of combat while relying on its allies to distract foes and take advantage of its Pack Tactics ability.</summary>
+
+<detail>
+
+The Wizard Kobold possesses the following attributes: Strength is at 6 with a modifier of -2, categorizing it as very bad for physical attacks. Dexterity is 14, providing a +2 modifier, which is good for improving its armor class and ranged attacks. Constitution stands at 13 with a +1 modifier, reflecting an average endurance. Intelligence is its strongest asset at 17 with a +3 modifier, which is exceptional for spellcasting and knowledge checks. Wisdom is at 10, neutral with a +0 modifier, while Charisma is relatively low at 8 with a -1 modifier, deemed very bad for social interactions.
+
+For saving throws, the Wizard Kobold has a +6 modifier for Intelligence saves, which is exceptional for resisting spells and magical effects. It has a +3 modifier for Wisdom saves, reflecting a good capability to resist mind-affecting spells. In terms of skills, the kobold is proficient in Arcana with a +6 modifier, allowing it to excel in identifying magic and magical phenomena.
+
+It has darkvision that extends to 60 feet, aiding in low-light conditions, and a passive perception of 10, which is average for noticing hidden details. The creature can understand and communicate in Common, Draconic, and Infernal languages.
+
+The Wizard Kobold's special abilities include Pack Tactics, which gives it advantage on attack rolls against a creature when an ally is within 5 feet of the target. This makes it easier to land successful hits in combat, particularly in grouped encounters. However, it suffers from Sunlight Sensitivity, granting disadvantage on attack rolls and Wisdom (Perception) checks in sunlight, making it highly vulnerable during the day.
+
+As an 8th-level spellcaster, the Wizard Kobold wields a variety of spells with a spell save DC of 14 and a +6 to hit with spell attacks. It has prepared an array of spells including cantrips like Fire Bolt, which hurls a bolt of flame; Minor Illusion, which creates a visual illusion; Poison Spray, which delivers a toxic cloud; and Prestidigitation for minor magical effects. 
+
+For first-level spells, it can cast Burning Hands, unleashing a cone of fire; Mage Armor, which increases its armor class; Magic Missile, delivering homing projectiles; and Shield, a protective ward against attacks. At second level, it has Hold Person to paralyze foes, Mirror Image to create illusory duplicates of itself, and Misty Step for teleportation. Its third-level spells include Blink, enabling a chance to evade attacks; Counterspell, which interrupts enemy spellcasting; and Fireball, a devastating area-effect fire spell. Finally, at fourth level, it can cast Fire Shield to gain resistance to a chosen damage type and deal damage to attackers.
+
+In combat, the Wizard Kobold can attack with a dagger, utilizing a +5 to hit for melee or ranged damage of 4 piercing damage. Additionally, it can call upon its special ability, Draconic Visage, once per day, creating a spectral dragon's head that frightens nearby creatures and grants it immunity to a specific damage type. With this ability, it can also perform a ranged attack with Breath of the Visage against enemies, dealing significant damage based on the chosen dragon’s breath weapon. This combination of spells and abilities allows the Wizard Kobold to be a formidable opponent despite its small stature, provided it can play to its strengths and avoid direct confrontation in unfavorable conditions.</detail>
+
 
 
 ---

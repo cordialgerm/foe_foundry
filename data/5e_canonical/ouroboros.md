@@ -1,6 +1,24 @@
 <MonsterName/>Ouroboros</MonsterName>
 <CreatureType/>Dragon</CreatureType>
 
+<summary>The Ouroboros is a formidable creature resembling a massive dragon, embodying the essence of rebirth and transformation. As a neutral entity, it plays a unique role in encounters, presenting both a challenge to adventurers and an opportunity for unexpected outcomes. Its substantial hit points of 94, coupled with a good Armor Class of 15, make it a durable opponent. Among its strengths are its ability to rebirth itself upon death, granting healing to allies or inflicting damage to enemies. However, its intelligence and charisma scores are only average, which may limit its effectiveness in some social interactions or strategic planning.</summary>
+
+<detail>
+
+The creature possesses impressive abilities with a Strength of 21 that provides a strong melee attack bonus, making it a potent threat in close combat. Its Constitution score of 19 affords it a good resilience against physical conditions, while its Wisdom score of 18 offers very good potential for perceiving threats. The Ouroboros's Dexterity of 11 is average, indicating it has neither exceptional speed nor avoidance abilities. 
+
+In terms of saving throws, the Ouroboros excels with good bonuses in Constitution (+7), Wisdom (+7), and Charisma (+4), while its average Dexterity saving throw (+3) is less formidable. With skills in Arcana (+8), History (+8), and Perception (+7), it possesses an exceptional insight into magical and historical matters, enhancing its role as a knowledgeable adversary or ally. It has the capacity to understand all languages, allowing seamless communication when necessary.
+
+The Ouroboros has several notable special abilities. Its Energetic Rebirth allows it to create a 300-foot radius effect upon being slain, with an even roll providing healing to creatures and an odd roll inflicting necrotic damage. This ability introduces a high-stakes element: defeating the creature may either aid allies or harm foes, depending on the outcome of the die roll. With Variegated Scales, it can attain immunity to one damage type as a bonus action and switch this immunity as needed, offering exceptional adaptability in combat.
+
+In its main actions, the Ouroboros can make two bite attacks after using its Introspective Presence. The bite attack, with a +8 to hit, deals a solid 10 (1d10 + 5) piercing damage, allowing it to maintain consistent physical pressure. Introspective Presence forces creatures within 120 feet that are aware of the dragon to make a DC 15 Wisdom saving throw or become incapacitated for 1 minute, which disrupts opponents' strategies and can potentially shift the tide of battle. Fortunately, creatures can attempt to break free at the end of each of their turns.
+
+The Kaleidoscopic Breath attack has a recharge mechanic that allows it to unleash a potent 30-foot cone, delivering 27 (6d8) damage of a type of the dragon’s choosing. This versatility in damage types makes it a significant threat capable of bypassing resistances or weaknesses of opposing foes.
+
+In addition to its standard actions, the Ouroboros possesses several legendary actions, providing it with further versatility in combat. It can make an additional bite attack, or use Blurring Façade to grant disadvantage on attacks against a target. This ability contains a saving throw to resist its effect. Alternatively, it can cause a target to glow with Guiding Beacon, resulting in attacks against that target having advantage, also allowing a chance to resist the effect.
+
+Lastly, the Reactive Hide ability grants the Ouroboros damage resistance to the type of attack it just endured, allowing it to bolster its defenses dynamically throughout combat. Overall, the Ouroboros presents a complex model of a dragon that offers both tactical advantages and unpredictable outcomes, making it a memorable and thrilling encounter for players.</detail>
+
 
 
 ---

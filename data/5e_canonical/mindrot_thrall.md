@@ -1,6 +1,16 @@
 <MonsterName/>Mindrot Thrall</MonsterName>
 <CreatureType/>Plant</CreatureType>
 
+<summary>The Mindrot Thrall is a Medium-sized Plant creature that embodies the eerie and unsettling nature of fungal entities. Serving as a formidable yet necrotic combatant, it possesses a strong physical defense with an Armor Class of 15 and a significant pool of Hit Points totaling 82, giving it good durability in battle. With a Challenge Rating of 3, it offers a moderate threat to adventurers, providing 700 experience points upon defeat. While the Mindrot Thrall excels in spreading its mindrot disease through its abilities, it is vulnerable to specific damage types, making it essential for players to strategize accordingly. With an average Intelligence but good physical attributes, it showcases remarkable constitution and dexterity, with respective values of 17 (+3) and 14 (+2), which translates to a good resilience and agility in combat. </summary>
+
+<detail>
+
+The creature's special abilities significantly influence gameplay. The Fungal Aura ability forces creatures that begin their turn within 5 feet of the Mindrot Thrall to make a DC 13 Constitution saving throw. Those who fail become infected with the mindrot disease, which wreaks havoc on both their health and combat effectiveness. The mindrot disease manifests after a few days, causing debilitating symptoms such as migraines and muscle weakness. Affected creatures must succeed on a DC 13 Constitution saving throw at the end of each long rest to avoid taking acid damage (9 or 2d8) and experiencing a reduction in their hit point maximum, which can be lethal if it results in their maximum hit points reaching zero. If a creature does die as a result of this disease, it will rise again as a Mindrot Thrall after a day.
+
+In terms of actions, the Mindrot Thrall can perform a Multiattack, executing two Claw attacks. Each Claw attack has a +4 to hit and can deal slashing damage with a potential of 9 (2d6 + 2), making it a tangible threat in close combat. Additionally, it possesses a powerful ranged ability known as Spore Breath, which recharges on a roll of 4 to 6. This ability allows the thrall to exhale a deadly cone of acidic spores, extending 15 feet, forcing all creatures within its area of effect to make a DC 13 Dexterity saving throw. On a failed save, creatures take 18 (4d8) acid damage and become infected with the mindrot disease. A successful save results in halved damage without the infection, making this ability a dangerous zoning tool for the Mindrot Thrall.
+
+Overall, the Mindrot Thrall serves as an effective enforcer of its fungal disease and a persistent threat on the battlefield, capable of weakening enemies while remaining resilient thanks to its significant natural defenses.</detail>
+
 
 
 ---

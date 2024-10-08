@@ -1,6 +1,20 @@
 <MonsterName/>J’ba Fofi Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
 
+<summary>The J’ba Fofi Spider is a large, unaligned beast known for its lethal hunting prowess and stealthy tactics in forested environments. It has a formidable combination of attributes, with notable strength and dexterity, making it both dangerous in direct combat and skilled in evasive maneuvers. With an armor class of 18, this creature is resilient and can absorb substantial damage, boasting a total of 75 hit points, which equates to a good level of endurance. However, its challenge rating of 3 indicates that while it is a threat, it is not invincible, especially against coordinated groups. The J’ba Fofi Spider’s special abilities enhance its stealth, mobility, and control of battlefield space, while its actions include powerful melee attacks that can inflict both piercing and poison damage. Nevertheless, it has weaknesses, such as an exceptionally low charisma, making it less effective in social encounters.</summary>
+
+<detail>
+
+The J’ba Fofi Spider has the following attributes: Strength at 17, which provides a +3 modifier that is good for melee combat; Dexterity also at 17 grants a +3 modifier, contributing to its agility and stealth; Constitution at 15 offers a +2 modifier, allowing it to maintain health and resist effects; Intelligence at 4 provides a -3 modifier, reflecting its low cognitive capability; Wisdom at 13 gives a +1 modifier, indicating average perception; and Charisma at 6, which results in a -2 modifier that is very bad for social interactions. 
+
+Regarding skills, the J’ba Fofi has a Stealth skill modifier of +5, demonstrating good proficiency in remaining undetected. It possesses blindsight up to 10 feet and darkvision out to 60 feet, which provide it with enhanced sensory capabilities in low-light conditions and near total darkness. Its passive Perception score is 11, allowing it to notice threats with an average effectiveness.
+
+The J’ba Fofi Spider possesses several special abilities that significantly affect gameplay. "Camouflaged Webs" allows it to create hidden webs that can ensnare intruders, requiring a DC 15 Wisdom (Perception) check to detect and posing a significant threat to any creature caught in them. A creature that enters or starts its turn in such webs must succeed on a DC 13 Dexterity saving throw to avoid being restrained. "Forest Camouflage" grants the spider advantage on Stealth checks in wooded areas, enhancing its ability to ambush prey. With "Spider Climb," it can move effortlessly along any surface, including ceilings, increasing its maneuverability during encounters. "Spider Passivism" means that other spiders will not attack it unless provoked, potentially allowing it to command spider allies. "Web Sense" allows the J’ba Fofi to determine the location of any creature within contact of the webs it creates, while "Web Walker" negates any movement penalties from being caught in webs.
+
+In terms of actions, the spider can utilize a melee weapon attack called "Bite," which has a +5 to hit and a reach of 5 feet. A successful hit causes 8 piercing damage, which can be increased significantly by an additional DC 12 Constitution saving throw that triggers up to 18 poison damage on failure; if the target fails this save and is reduced to 0 hit points, it stabilizes but is left poisoned and paralyzed for one hour. It also has the ability "Call Spiderlings," which it can use once per day to summon a swarm of spiders that will aid it in battle after a brief delay, increasing its threat level significantly during encounters. 
+
+Overall, the J’ba Fofi Spider is a fierce opponent, particularly in forested terrains, where it can exploit its abilities to control engagements and inflict severe damage with its specialized attacks.</detail>
+
 
 
 ---

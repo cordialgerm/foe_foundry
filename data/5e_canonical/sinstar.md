@@ -1,6 +1,22 @@
 <MonsterName/>Sinstar</MonsterName>
 <CreatureType/>Plant</CreatureType>
 
+<summary>The Sinstar is a tiny plant creature embodying lawfully evil traits, known for its cunning and manipulative nature. With an impressive Armor Class of 17, it is well-protected by its natural defenses, and its substantial Hit Points of 275 make it a formidable adversary. The Sinstar's Challenge Rating of 17 indicates a high difficulty level for adventurers, and it can grant 18,000 experience points upon defeat. While it has moderate physical strength, its intelligence of 21, combined with its powerful telepathic abilities, makes it a clever strategist in combat. The Sinstar possesses numerous immunities and resistances that make it difficult to damage, particularly in relation to poison, and its ability to influence others through both psychic attacks and disease adds to its menace. However, its slow movement speed of just 5 feet can be a significant drawback.</summary>
+
+<detail>
+
+The Sinstar has a Strength score of 5, reflecting a very bad modifier of -3, which indicates its physical attacks are weak. Its Dexterity is better at 14 (+2), offering an average agility in avoiding attacks. The Constitution is solid at 17 (+3), providing a good resilience against physical damage. With an exceptional Intelligence of 21 (+5), the Sinstar excels at mental challenges and manipulative tactics. Its Wisdom of 18 (+4) grants it good insight and perception capabilities, and its Charisma of 15 (+2) allows for some degree of social interactions.
+
+In terms of saving throws, the Sinstar excels in Constitution with a +9 modifier, which is very good, making it resilient against various forms of attacks. It has a lackluster Intelligence saving throw with a +1, categorized as bad, and a Wisdom saving throw of +1, also poor. The Sinstar is skilled in perception with a +4 modifier, providing it with good awareness of its surroundings.
+
+The creature has immunity to poison damage and is resistant to acid, cold, fire, and lightning types of damage. It suffers no adverse effects from conditions like being blinded, charmed, deafened, exhausted, frightened, paralyzed, poisoned, or prone. Its sense capabilities include tremorsense up to 120 feet and blindsight up to 60 feet, though it cannot see beyond this range. The Sinstar can communicate in Common, Deep Speech, and through telepathy over a range of 120 feet.
+
+The Sinstar has several notable special abilities. Legendary Resistance allows it to choose to succeed on a failed saving throw three times a day, which is an exceptional ability that enhances its survivability. The Spiny Defense ability inflicts 10 (3d6) piercing damage on creatures that touch the Sinstar or hit it with a melee attack from within 5 feet, plus any Humanoid hit must make a DC 19 Constitution saving throw or contract the Thrall Sickness disease. This disease causes severe long-term effects, including a reduction in Dexterity and Intelligence scores to dangerous levels if untreated.
+
+In combat, the Sinstar can perform a Multiattack, which involves using Alluring Whispers followed by three attacks with Spines or Psychic Lash. The Spines can be used as a melee or ranged attack with a +8 to hit, dealing damage of 16 (4d6 + 2) piercing damage and potentially causing the target to contract Thrall Sickness. The Psychic Lash is a ranged spell attack with a +11 to hit, capable of dealing 18 (3d8 + 5) psychic damage. The Alluring Whispers ability attempts to charm Humanoid targets within 120 feet, forcing them to make a DC 19 Wisdom saving throw. If they fail, the affected creature becomes incapacitated and must move towards the Sinstar. This ability can effectively control enemy actions and positioning in battle.
+
+The Sinstar also possesses Legendary Actions, such as making an additional Spines attack, teleporting up to 120 feet to a location it can see, or detonating one of its star thralls. The Detonate Thrall ability causes area damage, inflicting 10 (3d6) bludgeoning and 7 (2d6) piercing damage to creatures within 10 feet of the thrall, allowing the Sinstar to manipulate the battlefield and exert further control.</detail>
+
 
 
 ---

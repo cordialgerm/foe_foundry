@@ -1,6 +1,18 @@
 <MonsterName/>Oaken Sentinel</MonsterName>
 <CreatureType/>Plant</CreatureType>
 
+<summary>The Oaken Sentinel is a formidable Huge plant creature that serves as a guardian of natural spaces. With its strong defenses and considerable hit points, it poses a significant challenge to adventurers. Notably, it has a robust armor class of 16, making it somewhat difficult to hit. It has a total of 189 hit points, providing it with exceptional durability in combat. While it is relatively slow with a walking speed of only 10 feet, its ability to grapple and restrain opponents with its Grasping Branches offers it a strategic advantage. This creature excel in using its environment to control the battlefield but is vulnerable to lightning damage. Due to its lack of intelligence and charisma, it may struggle with interactions outside of combat. Overall, the Oaken Sentinel is a powerful defender with the ability to immobilize and damage its foes while demonstrating resilience against various damage types.</summary>
+
+<detail>
+
+The Oaken Sentinel has the following attributes: Strength at 22 which provides a +6 modifier, making its physical attacks very good in effectiveness; Dexterity at 6 results in a -2 modifier, indicating very bad effectiveness in avoiding attacks; Constitution at 19 yields a +4 modifier, ensuring good overall toughness; Intelligence at 5 leads to a -3 modifier, suggesting very bad proficiency in mental challenges; Wisdom at 8 results in a -1 modifier, indicating average perception capabilities; and Charisma at 3 gives it a -4 modifier, reflecting very bad social skills.
+
+The Oaken Sentinel possesses the following special abilities: False Appearance, allowing it to remain motionless and camouflaged as an ordinary oak tree; and Grasping Branches, which lets it create up to six branches that can grapple opponents. Each Grasping Branch has its own armor class of 16 and 25 hit points while being vulnerable to lightning yet immune to poison and psychic damage. Destroying a Grasping Branch does not harm the Oaken Sentinel, as it can replace a lost branch on its next turn. Additionally, a creature can destroy a Grasping Branch by succeeding on a DC 16 Strength check.
+
+In combat, the Oaken Sentinel can utilize the following actions: Multiattack, allowing it to make three Grasping Branch attacks or Rock attacks, with the option to replace one attack with Fling; Grasping Branch, which is a melee weapon attack that uses a +10 to hit, has a range of 50 feet, and deals 19 (3d8+6) bludgeoning damage. It also grapples the target, requiring an escape DC of 16, and restrains them while inflicting 4 (1d8) bludgeoning damage at the start of their turns; Rock, a ranged weapon attack with a +10 to hit, which can strike a target up to 60 feet away for 22 (3d10+6) bludgeoning damage; and Fling, allowing the Oaken Sentinel to throw a medium or smaller creature it’s grappling up to 60 feet in a random direction, knocking the target prone. If thrown against a solid surface, the target suffers 3 (1d6) bludgeoning damage for every 10 feet traveled, and if thrown at another creature, that creature must make a DC 16 Dexterity saving throw or take the same damage and be knocked prone. 
+
+With its various abilities and attacks, the Oaken Sentinel is a dangerous opponent, capable of effectively controlling the battlefield and punishing those who get too close.</detail>
+
 
 
 ---

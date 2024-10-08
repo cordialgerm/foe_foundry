@@ -1,6 +1,20 @@
 <MonsterName/>Troll, Rattleback</MonsterName>
 <CreatureType/>Giant</CreatureType>
 
+<summary>The Rattleback Troll is a formidable foe embodying chaos and savagery. As a large giant creature with chaotic evil alignment, it boasts a robust armor class of 16 due to its natural armor, with 126 hit points derived from 12d10+60, making it a durable adversary. Its strengths lie in its impressive physical attributes—particularly its strength, constitution, and dexterity each score at least 18, translating to good modifiers that enhance its combat abilities and resilience. However, its intelligence and charisma are notably low and classified as very bad, hindering its ability to engage in tactical maneuvers or charismatic interactions. The challenge rating of 7 indicates that it provides a moderate to tough challenge for a party of adventurers.</summary>
+
+<detail>
+
+The Rattleback Troll's initiative is bolstered by its dexterity modifier of +4, which is good, allowing it to act early in combat. It has a very good constitution saving throw of +8, making it resistant to various effects that target constitution, while its perception skill is merely average at +1. The creature possesses immunity to poison damage and benefits from darkvision, allowing it to see in darkness effectively up to 60 feet.
+
+The Rattleback Troll’s special abilities significantly enhance its combat capabilities. The "Distracting Rattle" ability creates a constant droning noise from its shell plates that forces creatures casting spells with verbal components within 30 feet to make a DC 15 Constitution saving throw. A failure means the creature loses its spell, which can heavily impact spellcasting enemies. Its "Night Hunters" trait gives it advantage on Wisdom (Perception) checks that rely on sight during dim light or darkness, allowing it to be particularly deadly in shadowy encounters. The regenerative trait allows the troll to regain 10 hit points at the beginning of its turn unless it takes fire damage during the prior turn, making it difficult to bring down unless players can exploit its weaknesses.
+
+In terms of actions, the Rattleback Troll executes a multiattack, which includes one bite and two claw attacks. Its bite attack has a +8 to hit and deals 14 piercing damage plus 7 poison damage. If a target fails a DC 15 Constitution saving throw, they become poisoned for one minute, unable to regain hit points during this time, an effect that can severely change the dynamics of battle. Each target can attempt to break free from this condition at the end of its turns. The claw attack similarly has a +8 to hit, dealing 12 slashing damage.
+
+The troll also has a potent "Venom Spray" ability, which requires a recharge roll. It sprays venom in a 30-foot cone that affects all creatures within it, dealing 28 poison damage (8d6) on a failed DC 15 Constitution saving throw. If creatures are poisoned, they experience similar effects to the bite attack, rendering them incapable of regaining hit points for one minute unless they succeed on their saves.
+
+Overall, the Rattleback Troll is a dangerous and resilient creature, capable of debilitating spellcasters and frontline fighters alike while exploiting its regeneration ability to stay in combat longer than expected. Players will need to navigate its strengths carefully to defeat this chaotic giant.</detail>
+
 
 
 ---

@@ -1,6 +1,16 @@
 <MonsterName/>Two-Headed Eagle</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<summary>The Two-Headed Eagle is a formidable Huge Monstrosity known for its agility and strength in combat. With a high Armor Class of 15 and substantial Hit Points totaling 142, it presents a significant challenge for adventurers. The creature is unaligned and primarily relies on its flying capabilities, able to fly at a speed of 100 feet while also being able to walk at 20 feet. With a Challenge Rating of 7, it offers 2,900 experience points upon defeat. Notable characteristics of the Two-Headed Eagle include its impressive physical attributes, reflected in a strong Strength of 20, exceptional Dexterity of 21, and solid Constitution of 16, making its performance in combat very good. However, its Intelligence is low at 6, indicating bad mental capability, while its Wisdom and Charisma are average, at 12 and 14 respectively.</summary>
+
+<detail>
+
+The Two-Headed Eagle has several special abilities that enhance its effectiveness in battle. It benefits from Flyby, allowing it to fly out of an enemy's reach without provoking opportunity attacks, facilitating tactical movement. Its Two-Headed feature grants it advantage on Wisdom (Perception) checks, improving its awareness in its surroundings, and it also has an edge on saving throws against a variety of debilitating conditions, making it exceptionally resilient. The Wakeful ability ensures that while the creature sleeps, at least one of its heads is alert, making it difficult for enemies to ambush.
+
+In terms of actions, the Two-Headed Eagle can perform a Multiattack, allowing it to make two Bite attacks followed by one Talons attack in a single turn. The Bite attack uses a melee weapon attack roll with a +8 to hit, has a reach of 5 feet, and upon a successful hit, it deals 16 piercing damage (2d10 + 5), showing its good offensive capability. The Talons attack also uses a +8 to hit, reaches 5 feet, and inflicts 12 piercing damage (2d6 + 5). Additionally, if the Talons attack hits, the target is grappled with an escape DC of 16, restricting their movement and giving the Two-Headed Eagle the ability to focus its attacks on a single foe until the grapple ends. 
+
+Overall, the Two-Headed Eagle combines aerial agility, strong physical attacks, and a suite of abilities that make it a dangerous adversary for adventurers, particularly in environments where its flying capabilities can be fully utilized.</detail>
+
 
 
 ---

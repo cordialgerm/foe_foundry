@@ -1,6 +1,22 @@
 <MonsterName/>Zilaq</MonsterName>
 <CreatureType/>Dragon</CreatureType>
 
+<summary>Zilaq is a tiny, neutral dragon that serves as an intriguing and formidable presence on the battlefield. With an armor class of 15 and a considerable amount of hit points, totaling 82, Zilaq is able to withstand moderate amounts of damage while engaging opponents. This creature can walk at a speed of 30 feet and fly at an impressive speed of 60 feet, granting it exceptional mobility in combat. With a challenge rating of 4, Zilaq poses a moderate challenge for adventurers, rewarding a group with 1,100 experience points upon defeat. Notably, Zilaq possesses a range of special abilities and spells, enhancing its combat efficacy and strategic options, making it a well-rounded adversary.</summary>
+
+<detail>
+
+Zilaq has the following attributes: Strength 8 (-1, which is very bad), Dexterity 14 (+2, which is average), Constitution 16 (+3, which is good), Intelligence 14 (+2, which is average), Wisdom 10 (+0, which is average), and Charisma 14 (+2, which is average). For saving throws, Zilaq has modifiers of +4 for Intelligence and +4 for Charisma, both of which are good. Zilaq has a perception skill that includes no bonuses. It is immune to thunder damage, has a passive perception of 10, and can communicate in both Common and Draconic languages.
+
+Zilaq has some remarkable special abilities. Its Eidetic Memory allows it to remember everything it hears or reads; as a result, it has advantage on Intelligence checks related to Arcana and History, making its knowledge vast and reliable. Being Two-Headed grants Zilaq advantage on Wisdom (Perception) checks and saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious, showcasing its resilience and awareness.
+
+In combat, Zilaq can execute a Multiattack, allowing it to make two Bite attacks. Each bite attack has a +4 to hit and targets creatures within 5 feet, dealing 7 (2d4 +2) piercing damage on a successful hit. Furthermore, Zilaq can unleash a Sonic Yelp, which recharges on a roll of 5 or 6. This ability affects all creatures within 60 feet that can hear Zilaq, delivering 21 (6d6) thunder damage with a DC of 13 for Constitution saving throws to halve the damage.
+
+Zilaq can also utilize its Enthralling Speech ability twice per day. This ability influences each creature that can hear Zilaq within 60 feet, charming them for 1 minute if they fail a DC 13 Wisdom saving throw. While charmed, a creature may either become hostile toward another charmed creature of Zilaq's choice or be immobilized until the start of its next turn based on a d100 roll, creating chaos among opposing forces.
+
+Lastly, Zilaq has access to the Phantasmal Oratory ability, which it can use once per day. This enables it to create an illusion of a creature resembling a Beast, Monstrosity, or Plant with a challenge rating of 1 or less. This illusory creature acts under Zilaq’s mental direction, mimicking its appearance and movement for up to one hour. The illusion can take its turn immediately after Zilaq but cannot employ any actions, traits, or spells that require a saving throw from the target.
+
+Overall, Zilaq is a strategically sound opponent, leveraging its mobility, intelligence, and enchantments to manipulate combat situations in its favor while posing a significant threat to unprepared adventurers.</detail>
+
 
 
 ---

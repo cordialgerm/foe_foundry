@@ -1,6 +1,20 @@
 <MonsterName/>Mudmutt</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<summary>The Mudmutt is a Large monstrosity characterized by its adaptability to both land and water environments, giving it a significant edge in combat. With a Challenge Rating of 5, it presents a moderate threat to adventurers, boasting 105 hit points and a good armor class of 15. The creature exhibits strong physical attributes, particularly in Strength and Dexterity, allowing it to perform powerful melee attacks and evade incoming strikes. However, it has extremely low Intelligence and Charisma scores, reflecting its brutish nature. The Mudmutt excels in ambush tactics and can work effectively in groups thanks to its Pack Tactics ability, making it a dangerous opponent when engaging in combat alongside allies.</summary>
+
+<detail>
+
+The Mudmutt's Strength score is 19, which translates to a +4 modifier, allowing it to perform physical feats and deal heavy damage effectively, rated as very good. Its Dexterity is even higher, at 20, providing a +5 modifier, which enhances its agility and ability to avoid attacks, also very good. The Constitution score of 15 gives it a +2 modifier, translating to average resilience, while its Intelligence stands at 3 with a -4 modifier, which is very bad, indicating it lacks smarts. Wisdom is 12, providing a +1 modifier—this is average, while its low Charisma of 2 results in another very bad modifier of -4.
+
+In terms of saving throws, the Mudmutt has a +7 bonus to Strength saves, reflecting its solid physical endurance. It has a passive perception score of 14, aided by its darkvision that enables it to see in darkness up to 60 feet. However, the creature lacks any languages, which suggests a primitive level of communication.
+
+The Mudmutt possesses several special abilities that enhance its effectiveness in combat. Its Amphibious trait allows it to breathe both air and water, enabling versatile movement. The Hop By ability lets it leap away from enemies without provoking opportunity attacks, which is advantageous for retreating or repositioning during fights. With Pack Tactics, it gains advantage on its attacks when an ally is nearby, making its strikes more likely to hit and deal damage. The Standing Leap ability allows it to jump impressive distances, reaching up to 20 feet horizontally and 10 feet vertically, contributing to its potential to ambush foes. The Swamp Camouflage ability provides an advantage on Dexterity (Stealth) checks in swampy environments, making it particularly stealthy in such terrains.
+
+In combat, the Mudmutt employs a Multiattack action that allows it to make one Bite attack and one Kick attack, or it can use a Sticky Tongue attack in place of a Bite. The Bite attack rolls at +8 to hit and deals an average of 16 piercing damage upon a successful hit. The Kick attack also has a +8 to hit and inflicts 14 bludgeoning damage. The Sticky Tongue attack, which has a range of 20 feet, rolls at +8 to hit, deals 12 bludgeoning damage, and also attempts to pull the target closer to it with a successful DC 15 Strength saving throw.
+
+The Mudmutt can unleash a powerful special attack called Sonic Croak, which recharges on a roll of 5 or 6. This attack takes the form of a 30-foot cone that inflicts 18 thunder damage to all creatures within the area, and those affected are stunned until the end of their next turn unless they succeed on a DC 15 Constitution saving throw, in which case they take half damage and are not stunned. If the target is submerged in water, they make saving throws at disadvantage and take 27 thunder damage instead of 18, significantly increasing the threat posed by this attack in aquatic settings.</detail>
+
 
 
 ---

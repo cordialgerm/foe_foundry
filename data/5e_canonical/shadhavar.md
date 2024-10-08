@@ -1,6 +1,20 @@
 <MonsterName/>Shadhavar</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<summary>The Shadhavar is a large neutral monstrosity that embodies both grace and danger, making it a formidable opponent in combat. With a challenge rating of 2, it offers a reasonable threat level for adventurers, possessing a robust combination of magical abilities and melee attacks. Notably, it has an armor class of 14, hit points totaling 82, and an impressive mobility with a walking speed of 50 feet, allowing it to maneuver effectively during battle. The Shadhavar excels in charm and subterfuge, utilizing its stealth skill, but its intelligence is notably weak, making it less effective in complex strategic planning. The creature's magical attributes and unique abilities make it a significant challenge, especially for unprepared adventurers.</summary>
+
+<detail>
+
+The Shadhavar has the following attributes: Strength of 14 (+2, which is good), Dexterity of 15 (+2, good), Constitution of 14 (+2, good), Intelligence of 8 (-1, very bad), Wisdom of 10 (+0, average), and Charisma of 16 (+3, very good). It has a Stealth skill modifier of +4, indicating a good capability in remaining hidden. With darkvision extending up to 60 feet and a passive perception of 12, it is adept at navigating low-light environments. Although it understands the Elvish and Umbral languages, it is unable to speak, limiting its ability to communicate directly with others.
+
+The Shadhavar possesses several unique abilities that enhance its combat effectiveness. Its Magic Horn allows its Gore attacks to be treated as magical, enabling it to bypass certain defenses that non-magical attacks cannot. The Shadesight ability ensures that magical darkness does not hinder its exceptional darkvision, giving it an advantage in dark environments.
+
+In combat, the Shadhavar can utilize a Multiattack action, where it makes one Gore attack and one Hooves attack. The Gore attack is a melee weapon attack with a +4 to hit, a reach of 5 feet, and deals 6 piercing damage (1d8 + 2) upon a successful hit. The Hooves attack also has a +4 to hit and reaches 5 feet, dealing 9 bludgeoning damage (2d6 + 2) when it connects. 
+
+One of its stand-out abilities is the Darkness Aura, which can be used once per day. This ability creates a 15-foot radius of magical darkness that moves with the Shadhavar and persists for up to 10 minutes as long as it maintains concentration, akin to concentrating on a spell. This darkness is impenetrable to darkvision and cannot be dispelled by natural light sources. Furthermore, it will dispel any light created by spells of 2nd level or lower that overlap with this area of darkness.
+
+For bonus actions, the Shadhavar can utilize its Plaintive Melody ability three times per day. By playing a captivating tune through its hollow horn, it forces each creature within 60 feet that can hear it to make a DC 13 Wisdom saving throw. On a failed save, the creatures are charmed, becoming incapacitated, have their speed reduced to 0, and the Shadhavar gains advantage on attack rolls against them until the start of its next turn. This ability can significantly alter the dynamics of a battle, allowing the Shadhavar to isolate enemies and make them vulnerable.</detail>
+
 
 
 ---

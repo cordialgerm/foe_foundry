@@ -1,6 +1,18 @@
 <MonsterName/>Imperial Ghoul</MonsterName>
 <CreatureType/>Undead</CreatureType>
 
+<summary>The Imperial Ghoul is a Medium-sized undead creature that embodies the essence of evil and decay. It is classified as Lawful Evil, making it a disciplined and strategical foe in combat situations. With an Armor Class of 16, it presents a decent defense against attacks. Its 93 hit points grant it considerable durability, allowing it to withstand a fair amount of damage before being taken down. While its movement speed of 15 feet on land is somewhat limited, it compensates with a burrowing speed of 30 feet, enabling it to navigate through terrain effectively and ambush unsuspecting opponents. With a challenge rating of 4, it presents a moderate challenge for adventurers, being capable of dealing significant damage through its bite and claw attacks, as well as inflicting debilitating effects.</summary>
+
+<detail>
+
+The Imperial Ghoul's attributes show a solid strength with a score of 16 (+3 modifier), which is considered good for melee combat. Its dexterity is 14 (+2 modifier), providing average agility, while its constitution is 12 (+1 modifier), representing average robustness. The creature has an intelligence score of 13 (+1 modifier), breed signaling average cunning, and wisdom and charisma both at 14 (+2 modifiers), reflecting average perceptive skills and a respectable presence. The ghouls are immune to poison damage and conditions such as being charmed, exhausted, or poisoned, making them resilient in particular battles. With darkvision up to 60 feet, they can see in dim light as if it were bright light, and they understand several languages, including Common, Darakhul, and Undercommon.
+
+The Imperial Ghoul possesses two special abilities. "Hungry Dead Nature" indicates that it does not require air or sleep, granting it exceptional endurance during extended campaigns or encounters. "Turning Defiance" provides advantage on saving throws against effects that turn undead, offering it and nearby ghouls an exceptional defense against certain divine threats.
+
+In combat, the Imperial Ghoul can execute a "Multiattack," allowing it to make one Bite attack and one Claw attack during its turn. The "Bite" attack has a +5 to hit and reaches 5 feet. On a successful hit, it deals an average of 12 piercing damage and can potentially infect humanoid targets with darakhul fever disease if they fail a DC 11 Constitution saving throw. The "Claw" attack also has a +5 to hit. If it hits, it inflicts an average of 17 slashing damage and may paralyze non-elf and non-undead targets on a failed DC 11 Constitution saving throw. The target can attempt to break free from this paralysis at the end of each of their turns. Additionally, it has a ranged option with a "Light Crossbow," allowing it to attack from a distance with a +4 to hit, delivering an average of 6 piercing damage.
+
+Overall, the Imperial Ghoul serves as a formidable opponent with strategic capabilities, strong melee attacks, and the ability to hinder or harm its enemies effectively while remaining resilient against various forms of attack.</detail>
+
 
 
 ---

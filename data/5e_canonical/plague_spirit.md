@@ -1,6 +1,20 @@
 <MonsterName/>Plague Spirit</MonsterName>
 <CreatureType/>Fey</CreatureType>
 
+<summary>The Plague Spirit is a formidable fey creature that embodies the essence of decay and despair. With a medium size and unaligned nature, it operates with a powerful presence on the battlefield. This spirit boasts high Dexterity and Wisdom, making it both agile and perceptive in its maneuvers. It possesses strong defenses marked by its decent Armor Class, substantial Hit Points, and numerous immunities to damage and conditions. Its challenge rating of 9 indicates it is designed to pose a significant threat to adventurers. The Plague Spirit's strengths lie in its ability to weaken foes and inflict ongoing effects that can devastate an unsuspecting party. However, it is somewhat hindered by its low Intelligence and lack of verbal communication, limiting its tactical options.</summary>
+
+<detail>
+
+The Plague Spirit has an Armor Class of 14, which offers a good but not exceptional level of defense. It has 150 Hit Points, calculated as 20d8 plus a constitution modifier, resulting in a good durability in combat encounters. The creature moves with a speed of 40 feet, allowing it to traverse the battlefield effectively.
+
+In terms of attributes, the Plague Spirit has the following scores: Strength at 10 (which is average), Dexterity at 18 (+4, considered very good), Constitution at 17 (+3, regarded as good), Intelligence at 2 (-4, labeled as very bad), Wisdom at 18 (+4, very good), and Charisma at 16 (+3, good). It has impressive saving throws with a +8 bonus for Dexterity and Wisdom, allowing it decent resilience against effects targeting these attributes. The creature is immune to necrotic and poison damage, resistant to bludgeoning, piercing, and slashing damage from nonmagical attacks, and completely immune to various conditions such as being charmed, diseased, or frightened. 
+
+The Plague Spirit's special abilities enhance its capabilities significantly. Its **Decrepit Mist** can create a hazardous area with a diameter of 1 mile and height of 60 feet. Any living creature that spends significant time within this mist faces a DC 16 Constitution saving throw or suffers a detrimental aging effect, thus posing both a strategic advantage and a threat to those who venture too close. Importantly, the mist does not affect undead or constructs, which may limit its effectiveness against certain types of enemies. The **Hunter of the Living** ability allows the spirit to sense the largest concentration of living creatures within 50 miles, aiding in tactical planning and ambush opportunities consistently.
+
+In combat, the Plague Spirit can utilize **Multiattack**, making three attacks in a single turn—one with its **Enfeebling Touch** and two using its **Censer**. The **Censer** attack is a melee weapon attack with a +8 modifier that can reach 10 feet, dealing 13 bludgeoning damage along with an additional 7 necrotic damage upon a successful hit, which is quite powerful. On the other hand, the **Enfeebling Touch** also has a +8 to hit, dealing 14 necrotic damage, and significantly, it reduces the target's Strength score by 1d6. If this reduction brings the Strength to 0, the creature dies. This lingering effect lasts until the affected creature takes a short or long rest, offering potent battlefield control.
+
+Lastly, the special action **Dance of Death** (available only on a recharge of 5 or 6) allows the Plague Spirit to twirl and create a frightening spectacle. Creatures within 20 feet who can see the spirit must make a DC 16 Constitution saving throw, facing substantial necrotic damage of 28 (8d6) on a failure while also becoming frightened for one minute. Successful saves allow for reduced damage and immunity to the frightened condition, but frightened creatures can attempt repeated saves at the end of their turns. This ability not only impacts the health pool of opponents but can effectively disrupt their combat strategy, making the Plague Spirit a dangerous adversary in any encounter.</detail>
+
 
 
 ---

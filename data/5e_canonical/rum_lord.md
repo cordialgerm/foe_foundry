@@ -1,6 +1,16 @@
 <MonsterName/>Rum Lord</MonsterName>
 <CreatureType/>Fey</CreatureType>
 
+<summary>The Rum Lord is a small fey creature embodying chaotic evil, known for its ability to manipulate and debilitate foes through its intoxicating powers. With a high Armor Class of 15 and a considerable pool of 78 hit points, it presents a decent challenge. Its strengths lie in its Aura of Drunkenness that can incapacitate enemies, along with its magical resilience, making it tricky for spellcasters to affect. However, its low Wisdom score of 9 indicates that it may struggle against effects that target that attribute. The Rum Lord excels at close combat, with effective melee attacks and additional poison damage, marking it as a dangerous opponent in melee situations.</summary>
+
+<detail>
+
+The Rum Lord possesses the following attributes: Strength 18 (+4) which is very good, Dexterity 14 (+2) which is good, Constitution 17 (+3) which is good, Intelligence 12 (+1) which is average, Wisdom 9 (-1) which is bad, and Charisma 16 (+3) which is good. Its skills include Athletics +6 and Intimidation +5, both of which are effective for social interactions and physical confrontations. It is immune to the poisoned condition and has darkvision with a range of 120 feet, allowing it to see in low light effectively. The Rum Lord communicates using the Common language.
+
+The Rum Lord has several powerful special abilities. The Aura of Drunkenness affects creatures within a 20-foot radius, requiring them to make a DC 12 Constitution saving throw or become poisoned for an hour, during which movement becomes cumbersome if they attempt to move quickly. If they succeed on the saving throw, they gain immunity to this feature for a day. The Hearty ability adds the Constitution modifier to the Rum Lord's Armor Class, while Magic Resistance grants it an advantage on saving throws against magical effects, making it resilient against arcane attacks. One for the Road triggers additional poison damage when it strikes poisoned opponents, strengthening its melee prowess. The innate spellcasting, centered on Charisma with a spell save DC of 13, allows the Rum Lord to cast the non-material component spells at will: Prestidigitation, which can perform minor magical effects, and Command, which can be used to influence the actions of other creatures.
+
+For its actions, the Rum Lord can perform a Multiattack, making two attacks in one turn, combining its Ale Tap Scepter and Broken Bottle Shiv attacks. The Ale Tap Scepter attack has a +6 to hit and inflicts 8 bludgeoning damage, while the Broken Bottle Shiv attack also has a +6 to hit but delivers 6 piercing damage. The Rotgut Belch can be unleashed after six rounds of recharge, releasing a green bile cone that can severely damage and coat targets in debilitating bile. It requires a DC 14 Dexterity saving throw: failing the throw results in 18 poison damage with additional effects, while success yields half damage without further consequences. Lastly, the ability Bring Me Another Round! occurs once per day, summoning 1d4 rum gremlins to assist the Rum Lord, potentially swaying the tide of battle by overwhelming opponents with reinforcements for a limited duration.</detail>
+
 
 
 ---

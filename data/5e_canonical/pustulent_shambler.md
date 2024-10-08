@@ -1,6 +1,16 @@
 <MonsterName/>Pustulent Shambler</MonsterName>
 <CreatureType/>Ooze</CreatureType>
 
+<summary>The Pustulent Shambler is a formidable Gargantuan ooze that poses a significant threat to adventurers due to its unique abilities and potent attacks. With a competitive Challenge Rating of 13, it has an impressive pool of 232 hit points, making it difficult to defeat in combat. The shambler has several qualities that make it particularly dangerous, including its ability to infect creatures with the debilitating Bonerot disease, its capacity to absorb flesh to regain health, and a corrosive effect that can damage weapons made of bone. However, its low Dexterity score makes it vulnerable to ranged attacks, and its inability to understand language or engage in complex strategies adds a layer of predictability to its behavior in encounters. </summary>
+
+<detail>
+
+In terms of attributes, the Pustulent Shambler has a strong Strength score of 19, which provides it with a very good +4 modifier for physical attacks. Its Constitution is exceptional at 20, granting it a +5 modifier, thereby increasing its hit points and making it quite resilient against physical attacks. Its Dexterity score of 5 results in a bad -3 modifier, making it slow and less effective in dodging ranged attacks. The creature has Intelligence at 3 and a Charisma of 1, both of which yield very bad modifiers, indicating that it is not capable of complex thought or charm. Additionally, it has a Wisdom score of 10 with an average modifier, meaning it can perceive its surroundings adequately but lacks any insights or understanding.
+
+The Pustulent Shambler possesses several special abilities that enhance its combat efficiency. With Amorphous, it can slip through tight spaces of only 1 inch wide, allowing for unconventional movement in battle. The Bonerot ability allows it to infect creatures through successful attacks, leading to debilitating effects that weaken the victim's Strength and Dexterity over time if not cured. Bonerot Sense enables it to detect infected creatures within a close distance, providing a tactical advantage during encounters. Additionally, the Corrosive to Bone trait inflicts acid damage on exposed bones and damages bone weapons that attack it, making it particularly dangerous to skeletal foes. The Stench ability forces nearby creatures to succeed on a Constitution saving throw or become poisoned until the start of their next turn, which can disrupt opponents' strategies.
+
+When taking actions, the Pustulent Shambler can perform a Multiattack, allowing it to make three pseudopod attacks in a single turn. Each pseudopod attack has a +9 to hit and can deal significant damage: 15 bludgeoning damage plus 11 acid damage on a hit. Furthermore, the target of a pseudopod attack must succeed on a DC 18 Constitution saving throw to avoid contracting Bonerot disease. The Absorb Flesh action allows the shambler to consume a corpse within 5 feet, regaining health proportional to the size of the creature, making it a relentless foe that can sustain itself in prolonged battles. However, if it consumes a corpse with intact bones, it loses its Amorphous quality temporarily, indicating a strategic choice for players when facing this creature.</detail>
+
 
 
 ---

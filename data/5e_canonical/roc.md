@@ -3,6 +3,46 @@
 
 <summary>A Roc is an enormous bird of prey, large enough to carry off an elephant in its talons. These majestic creatures soar high above mountains and open plains, hunting for massive prey. Rocs are often solitary and territorial, making their nests on remote mountain peaks or cliffs. Their immense size and strength make them formidable predators, capable of snatching up entire caravans or ships. While they are awe-inspiring, Rocs are also highly dangerous to anyone who ventures too close to their hunting grounds.</summary>
 
+<summary>The Roc is a formidable gargantuan beast, renowned in the realms as a mighty aerial predator. With an impressive Armor Class of 15 and a substantial pool of hit points totaling 232, it boasts considerable resilience in battle. The Roc possesses exceptional strength and constitution, making it a powerful attacker and difficult to bring down. However, its dexterity and intelligence are subpar, leading to average evasiveness and tactical awareness. With a Challenge Rating of 13, it presents a significant threat to adventurers, particularly those unprepared for its immense size and power. Notable abilities include keen sight for superior perception and the ability to deal double damage to structures, marking it as a dangerous foe in both combat and environmental contexts.</summary>
+
+<detail>
+
+The Roc's Strength score is 28, granting it a very good melee attack modifier of +9, while its Dexterity score is a mediocre 10, providing an average modifier of +0. Its Constitution score is 20, resulting in a very good +5 modifier for saving throws. The Roc's Intelligence is a mere 3, yielding a very bad -4 modifier, which signifies poor problem-solving abilities. Its Wisdom score of 12 gives it an average modifier of +1, and its Charisma of 8 results in a bad -1 modifier.
+
+In terms of saving throws, the Roc has bonuses of +5 for Dexterity, +10 for Constitution which is very good, +6 for Wisdom which is good, and +4 for Charisma, also good. It has perception skills of +6 and a passive perception of 16, indicating an ability to effectively notice hidden threats or ambushes.
+
+The Roc's special abilities enhance its effectiveness in combat. "Keen Sight" allows the Roc to have advantage on Perception checks related to sight, making it very difficult to hide from this creature. The "Siege Monster" ability enables the Roc to deal double damage to objects and structures, making it particularly destructive when attacking fortifications or other inanimate targets.
+
+In combat, the Roc can make a "Multiattack," enabling it to attack twice: once using its beak and once with its talons, or to perform a beak attack while dropping a grappled creature or held object. Its "Beak" attack is a melee weapon strike with a +14 to hit and a reach of 10 feet, doing an average of 23 piercing damage on a hit, computed as 4d6+9. Its "Talons" attack also carries a +14 to hit, has a reach of 5 feet, and similarly deals an average of 23 slashing damage on a successful hit. Additionally, when a target is struck by the talons, they are grappled with an escape DC of 22, meaning that they find it quite challenging to break free. While grappled, the target is restrained, meaning they cannot move and have disadvantages on attacks.
+
+The Roc also has a reactive ability called "Retributive Strike." When it is hit by a melee weapon attack from a creature it can see, the Roc can respond with a beak attack against that attacker. This serves as a deterrent against engaging the Roc in close combat, as the creature can retaliate swiftly and powerfully.
+
+The Roc is an imposing gargantuan monstrosity resembling a great bird, characterized by its immense size and formidable presence. It serves as a powerful threat in its environment, capable of dominating both the skies and the ground. With a challenge rating of 11, it has significant hit points totaling 235 and a good armor class of 15, offering it a decent level of survivability in combat. The Roc possesses strong physical attributes, particularly in Strength and Constitution, with good Dexterity and Wisdom. However, its Intelligence is notably low, rendering it less capable in strategic situations that require cunning. Its special abilities make it resilient against exhaustion and frightened conditions, while its unique swimming capability adds additional dimension to its movement in varying terrains. This creature is powerful in combat, particularly with its multiattack feature, and its ability to instill fear in its enemies through its shriek enhances its effectiveness as a predator.
+
+The Roc has the following attributes: 
+- Strength: +9 (exceptional)
+- Dexterity: +4 (good)
+- Constitution: +9 (exceptional)
+- Intelligence: -4 (very bad)
+- Wisdom: +4 (good)
+- Charisma: +3 (average)
+
+The Roc's Perception score is 14, allowing it to notice details in its surroundings well, while its heightened sight increases its Perception to 19 when seeing. This makes it an excellent hunter. It has a solid stealth score of 14, meaning it can approach unsuspecting targets effectively.
+
+The Roc's special abilities include:
+- Heightened Sight, enhancing its ability to perceive its environment visually, making it even harder to hide from.
+- Monstrosity Resilience, which provides it resistance to exhaustion and the frightened condition, allowing it to maintain effectiveness in prolonged encounters.
+- Seabird ability grants it the capacity to swim up to 60 feet, though it must be cautious as failing to maintain air during its swimming can lead to suffocation.
+
+In terms of actions, the Roc can make a multiattack consisting of one Beak attack and two Talon attacks. 
+- The Beak attack uses a +13 bonus to hit with a reach of 10 feet, dealing an average of 27 piercing damage.
+- The Talon attack, also with a +13 to hit and a reach of 5 feet, inflicts an average of 23 slashing damage and grapples Large or smaller creatures (with an escape DC of 17), restraining them in the process.
+These attacks allow the Roc to maintain control over its enemies while dealing substantial damage.
+
+As a bonus action, the Roc can use its Territorial Shriek, targeting up to two creatures within 60 feet. These targets must succeed on a DC 17 Charisma saving throw or become frightened until the end of their next turn. While frightened in this manner, affected creatures are forced to use their Dash action to move away from the Roc, creating opportunities for the creature to maintain its distance or escape.
+
+Overall, the Roc is a fearsome creature that excels in combat with its high damage output and control over opponents, combined with its impressive physical capabilities and resilience. Its abilities make it a dangerous adversary on the battlefield and a notable presence in any encounter.</detail>
+
 
 
 ---

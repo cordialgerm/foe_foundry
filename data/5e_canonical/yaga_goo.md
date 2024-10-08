@@ -1,6 +1,22 @@
 <MonsterName/>Yaga Goo</MonsterName>
 <CreatureType/>Ooze</CreatureType>
 
+<summary>The Yaga Goo is a small, neutral evil ooze known for its sinister and elusive nature. With an Armor Class of 14 and a substantial pool of 85 hit points, this creature poses a moderate challenge to adventurers, rated at a Challenge Rating of 5. The Yaga Goo is exceptionally agile, boasting a Dexterity of 18, which offers it a good bonus for actions relying on dexterous movements, including stealth where it excels with a +10 modifier. One of its most notable characteristics is its ability to inflict necrotic damage, making it particularly threatening to certain types of foes. However, its intelligence and charisma are relatively average, limiting its effectiveness in social interactions and strategic planning.</summary>
+
+<detail>
+
+The Yaga Goo has the following attributes: Strength at 11, which is average, Dexterity at 18 (+4, good), Constitution at 20 (+5, very good), Intelligence at 14 (+2, average), Wisdom at 12 (+1, average), and Charisma at 11 (+0, very bad). It also has proficiency in Wisdom saving throws (+4) and excels in stealth, making it a formidable opponent in ambush scenarios.
+
+This ooze has immunity to necrotic damage and is unaffected by conditions such as being blinded, charmed, deafened, exhausted, frightened, or prone. It features blindsight that allows it to perceive its surroundings within 60 feet without sight, but beyond that range, it is effectively blind. The Yaga Goo understands Common but cannot verbally communicate.
+
+The Yaga Goo possesses several special abilities that enhance its combat prowess and mobility. Its Amorphous ability allows it to squeeze through openings as narrow as 1 inch, making it difficult to contain. It has an advantage on attack rolls against fey creatures and those with the Fey Ancestry trait, showcasing its deadly nature towards such opponents. Additionally, its Spider Climb ability enables it to traverse difficult surfaces, including ceilings, effortlessly.
+
+In terms of actions, the Yaga Goo can perform a Multiattack, which allows it to make two pseudopod attacks during its turn. The pseudopod attack itself has a +7 to hit and deals 11 (2d6 + 4) bludgeoning damage along with an additional 3 (1d6) necrotic damage upon a successful hit. Furthermore, it can use Foul Transit, a special action that recharges on a roll of 4-6. This ability allows the Yaga Goo to teleport up to 50 feet to an unoccupied space it can see, leaving a puddle in its previous location. Any creature within 5 feet of the puddle must make a DC 16 Constitution saving throw or suffer 10 (3d6) necrotic damage and become poisoned until the end of their next turn. The puddle remains for one minute or until the Yaga Goo is killed, causing further necrotic damage to any creature that enters or starts its turn in that space.
+
+As a reaction, the Yaga Goo can use Puddle Splash to evade damage when targeted by a melee attack while within 5 feet of an attacker. It can teleport to one of its created puddles (if it's unoccupied) and force the attacker to make a DC 16 Constitution saving throw, dealing 10 (3d6) necrotic damage and poisoning them on a failed save. This ability allows the Yaga Goo to remain a constant threat on the battlefield while evading damage effectively.
+
+Overall, the Yaga Goo is a cunning and sinister foe, adept at using its unique abilities to manipulate the environment and strike fear into its opponents.</detail>
+
 
 
 ---

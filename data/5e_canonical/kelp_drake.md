@@ -1,6 +1,10 @@
 <MonsterName/>Kelp Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
 
+<summary></summary>
+
+<detail></detail>
+
 
 
 ---

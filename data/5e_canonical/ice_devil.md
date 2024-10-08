@@ -3,6 +3,38 @@
 
 <summary>An Ice Devil is a towering, insect-like fiend with a hard, icy exoskeleton and a long, spiked tail. These devils come from the frozen realms of the Nine Hells and are known for their cold, calculating cruelty. Ice Devils wield powerful polearms and can command the frigid air around them to summon ice storms or freeze their enemies solid. Their natural resistance to cold and ice-based attacks makes them formidable foes in icy environments. In addition to their martial prowess, Ice Devils are skilled tacticians, often leading infernal armies or serving as lieutenants to more powerful devils.</summary>
 
+<summary>The Ice Devil is a formidable large fiend known for its menacing combination of physical strength and magical capabilities. With an armor class of 18 and a whopping 180 hit points, it demonstrates considerable resilience in battle, making it a challenging adversary with a challenge rating of 12. This creature is particularly effective in combat due to its high strength and constitution scores, reflecting an exceptional physical presence as well as robust durability. It possesses resistance to nonmagical and non-silvered weaponry and is immune to cold, fire, and poison damage, enhancing its survivability in various encounters. Notably, its magic resistance grants it an advantage on saving throws against spells, allowing it to withstand magical attacks more effectively. However, it could be vulnerable to keen strategic thinking from opponents who can exploit its limited weaknesses.</summary>
+
+<detail>
+
+The Ice Devil has the following ability scores: Strength 20 (+5), Dexterity 14 (+2), Constitution 18 (+4), Intelligence 18 (+4), Wisdom 16 (+3), and Charisma 18 (+4). This distribution of attributes gives the Ice Devil very good melee capabilities and solid spellcasting abilities. Its saving throws provide bonuses: Dexterity +6 (good), Constitution +8 (very good), Wisdom +7 (good), and Charisma +8 (very good). It is also very perceptive with a passive perception of 13. The creature can understand Infernal and communicate telepathically up to 120 feet.
+
+The Ice Devil has several notable special abilities. Its "Devils Sight" allows it to see in magical darkness, making it exceptionally difficult to hinder its vision with spells or abilities that obscure sight. Its inherent magic resistance enhances its durability against magical effects. Being classified as Lawful Evil, it emits an aura that reflects its alignment, influencing interactions with other creatures.
+
+In combat, the Ice Devil can utilize its "Multiattack" feature to strike twice, once with its bite and once with its claws. The bite attack has a +9 to hit and deals an average of 19 damage, comprised of 12 piercing damage and 7 cold damage. The claws attack also hits with a +9 to hit and inflicts 17 damage, consisting of 10 slashing damage and 7 cold damage. Additionally, it has a spear attack which inflicts an average of 24 piercing damage and 10 cold damage, and can potentially slow the target if they fail a Constitution saving throw.
+
+One of its unique abilities is "Ice Wall," which can be used once per day. This ability allows the Ice Devil to create a large wall of ice that can restrict movement and provide cover. The wall has 30 hit points, an armor class of 12, and can be up to 50 feet long and 15 feet high. If a creature happens to be in the wall's space when it appears, they must succeed on a Dexterity saving throw or take significant cold damage.
+
+As a bonus action, the Ice Devil can use its "Tail" attack, which deals a solid 11 bludgeoning damage plus 7 cold damage. 
+
+Lastly, the Ice Devil has a reaction called "Freezing Blood," usable once per day. When a ranged attack hits it or a spell affects it, the attacker must make a Constitution saving throw. On a failure, they take cold damage and are slowed, limiting their effectiveness in subsequent turns.
+
+Overall, the Ice Devil is a powerful and strategic creature, capable of both dealing and absorbing significant damage while also having control over its environment through its abilities.
+
+The Ice Devil is a formidable Large fiend classified as a devil, known for its frigid demeanor and mastery over ice. With an Armor Class of 18, it can withstand a good amount of damage, complemented by its substantial Hit Points of 193, making it a challenging opponent for adventurers, particularly those at Challenge Rating 14. The Ice Devil excels in both melee and ranged combat, wielding powerful ice-based attacks, but its impressive Dexterity and Charisma scores along with its abilities make it not only a threat in combat but also a cunning opponent capable of manipulating the battlefield. Despite its offensive capabilities, it has weaknesses against magic that targets it effectively, although its natural resistances and immunities grant it a significant advantage in many scenarios.
+
+In terms of attributes, the Ice Devil exhibits Strength 20 (+5), Dexterity 24 (+7), Constitution 23 (+9), Intelligence 18 (+4), Wisdom 20 (+7), and Charisma 23 (+9). This array provides the creature with good physical prowess, exceptional agility, and impressive defenses against spells and mental effects. Its high Constitution grants it very good hit points, while its Dexterity ensures that it can act quickly, making its initiative rolls above average for a creature of its size. 
+
+The Ice Devil possesses several special abilities enhancing its effectiveness in combat. "Devil's Sight" allows it to see through magical darkness, giving it a significant tactical advantage. "Devilish Resilience" grants it resistance to damage from all non-magical physical attacks, along with immunity to fire damage and poison effects, marking it as exceptionally difficult to harm through regular means. "Magic Resistance" provides it with significant survivability against spellcasters, as it gains advantage on saving throws against spells. Finally, "Snow Walk" allows the Ice Devil to traverse icy terrains with extreme ease, making it a master of wintery landscapes, which can often play into its combat strategies.
+
+For actions, the Ice Devil can utilize a "Multiattack," allowing it to make either two Claw attacks and one Tail attack, or three Icicle Shard attacks in a single turn. Its "Claws" attack has a +10 to hit and delivers 12 slashing damage plus an additional 18 cold damage on a successful hit. The "Tail" attack similarly has a +10 to hit, dealing 15 bludgeoning damage plus 18 cold damage, extending its versatility in melee combat. The "Icicle Shard" provides a ranged option with a +9 to hit and can inflict piercing damage along with cold damage, giving it strong options for attacking from a distance.
+
+The Ice Devil can also employ incredibly tactical Bonus Actions. The "Ice Wall" ability creates a structure made of ice that hinders movement and can push enemies if they are caught within its formation. This wall can shape itself according to the Ice Devil’s wishes, creating a challenging environment for foes to navigate. If a creature is surrounded, they may get a chance to escape based on a Dexterity saving throw, potentially allowing them to slip free.
+
+In addition, the Ice Devil possesses the reaction "Ice Shield," a defensive tactic where it can create a magical barrier of ice when itself or an ally is hit. This ability allows the target to halve the damage from the incoming attack, effectively increasing its or its allies' survivability during confrontations.
+
+Overall, the Ice Devil is a powerful adversary with an array of abilities that enhance its combat effectiveness and defensive capabilities, making it a significant challenge for any adventuring party.</detail>
+
 
 
 ---

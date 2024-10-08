@@ -1,6 +1,18 @@
 <MonsterName/>Shadow Lurker</MonsterName>
 <CreatureType/>Fey</CreatureType>
 
+<summary>The Shadow Lurker is a chaotic evil fey creature that excels in stealth and manipulation through shadowy abilities. With a good Armor Class of 16 and solid hit points totaling 84, it is a formidable opponent for average adventurers. Its speed is decent, allowing it to move 40 feet per turn. The creature operates best in dim light or darkness, leveraging its impressive Dexterity score of 22, which provides a very good +6 modifier to stealth-related tasks. Additionally, its Constitution score of 14 gives it a good +2 modifier for resilience. However, the Shadow Lurker suffers greatly in sunlight, where it suffers from disadvantage on attacks and Wisdom (Perception) checks that require sight due to its Sunlight Sensitivity.</summary>
+
+<detail>
+
+The Shadow Lurker is equipped with the special ability Creeping Mists, allowing it to fill a 60-foot radius around itself with shadowy mist when not in sunlight, thus converting bright light into dim light. This amplifies its effectiveness in combat by enabling it to exploit its Shadow Sight ability, which gives it an advantage on Wisdom (Perception) checks in dim light or darkness. Its skills are relatively basic, with a moderate Perception score resulting in a +2 bonus.
+
+In terms of combat, the Shadow Lurker can perform a Multiattack, allowing it to make two Shadow Strikes, which are melee weapon attacks with a +9 modifier to hit. Each Shadow Strike deals 10 slashing damage and an additional 7 cold damage, making it quite dangerous in melee engagements. The creature also has the special action Shadow Steal, which allows it to target a creature within 30 feet. This ability requires the target to make a DC 15 Charisma saving throw; if they fail, they are cursed and deprived of their shadow, taking on a level of exhaustion that cannot be removed until the curse is lifted. While cursed, the target's shadow becomes a living shade, which the Shadow Lurker can control.
+
+The Shadow Lurker has a limit on the number of shadows and living shades it can control, able to maintain up to ten living shades or five stolen shadows at any one time. If the cursed target’s shadow is destroyed, it becomes a mundane shadow that reappears near the target, making it easier for the targeted creature to regain control over it.
+
+In addition to its actions, the Shadow Lurker can use its bonus action, Shadow’s Embrace, to hide when in dim light or darkness, enhancing its ability to lurk undetected until it strikes. This combination of abilities makes the Shadow Lurker a cunning and dangerous adversary in any encounter, particularly when operating in environments that favor its shadowy nature.</detail>
+
 
 
 ---

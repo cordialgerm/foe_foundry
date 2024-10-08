@@ -1,8 +1,9 @@
-from dataclasses import dataclass
-import re
-from pathlib import Path
-from collections.abc import Iterable
 import json
+import re
+from collections.abc import Iterable
+from dataclasses import dataclass
+from pathlib import Path
+
 # from transformers import pipeline
 
 
@@ -33,7 +34,7 @@ class CanonicalMonster:
         # summarizer = pipeline("summarization")
 
         if not path.parent.exists():
-            path.parent.mkdir(exist_ok=True)
+            path.parent.mkdir(parents=True, exist_ok=True)
         with path.open("w", encoding="utf-8") as f:
             f.write(f"<MonsterName/>{self.name}</MonsterName>\n")
             f.write(f"<CreatureType/>{self.creature_type}</CreatureType>\n\n")
@@ -75,7 +76,7 @@ def load_monsters() -> dict[str, CanonicalMonster]:
     # load natural language
     natural_language_descriptions = {}
     artisinal_dir = (
-        Path(__file__).parent.parent.parent / "data" / "5e_artisinal_monsters"
+        Path(__file__).parent.parent.parent.parent / "data" / "5e_artisinal_monsters"
     )
     for nl_path, nl_text in iter_5e_monster_nl():
         artisinal_path = artisinal_dir / nl_path.name
@@ -107,11 +108,15 @@ def load_monsters() -> dict[str, CanonicalMonster]:
             artisinal = monsters[0]
         else:
             artisinal = next((m for m in monsters if m is not srd), None)
+
+        if srd is None and artisinal is None:
+            raise ValueError("unexpected error")
+
         description = descriptions.get(key)
         natural_language = natural_language_descriptions.get(key)
 
-        name = srd.name if srd else artisinal.name
-        creature_type = srd.creature_type if srd else artisinal.creature_type
+        name = srd.name if srd is not None else artisinal.name
+        creature_type = srd.creature_type if srd is not None else artisinal.creature_type
 
         if natural_language is not None:
             summary = natural_language.split("\n")[0]
@@ -185,7 +190,7 @@ def name_to_key(name: str) -> str:
 
 
 def iter_srd_md_monsters() -> Iterable[MonsterInfo]:
-    dir = Path(__file__).parent.parent.parent / "data" / "5esrd" / "Monsters"
+    dir = Path(__file__).parent.parent.parent.parent / "data" / "5esrd" / "Monsters"
 
     for monster_file in dir.glob("*.md"):
         try:
@@ -195,7 +200,7 @@ def iter_srd_md_monsters() -> Iterable[MonsterInfo]:
 
 
 def iter_artisinal_monster_markdown() -> Iterable[MonsterInfo]:
-    dir = Path(__file__).parent.parent.parent / "data" / "5e_artisinal_monsters"
+    dir = Path(__file__).parent.parent.parent.parent / "data" / "5e_artisinal_monsters"
 
     for monster_file in dir.glob("*.md"):
         try:
@@ -208,7 +213,7 @@ def iter_artisinal_monster_markdown() -> Iterable[MonsterInfo]:
 
 def get_5e_srd_monster_descriptions() -> dict[str, str]:
     path = (
-        Path(__file__).parent.parent.parent
+        Path(__file__).parent.parent.parent.parent
         / "data"
         / "custom"
         / "descriptions_5esrd.json"
@@ -257,20 +262,30 @@ def markdown_to_monster(
 
 
 def iter_5e_monster_nl() -> Iterable[tuple[Path, str]]:
-    dir = Path(__file__).parent.parent.parent / "data" / "5e_nl"
+    dir = Path(__file__).parent.parent.parent.parent / "data" / "5e_nl"
 
     for monster_file in dir.glob("*.md"):
         try:
-            with monster_file.open("r", encoding="cp1252") as f:
-                yield monster_file, f.read()
+            yield monster_file, _read(monster_file)
         except Exception as x:
-            print(f"Unable to load {f}. {x}")
+            print(f"Unable to load {monster_file}. {x}")
+
+
+
+def _read(path: Path) -> str:
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            return f.read()
+    except Exception:
+        with path.open("r", encoding="cp1252") as f:
+            return f.read()
+
 
 
 if __name__ == "__main__":
     monsters = load_monsters()
     print(f"Loaded {len(monsters)} canonical monsters")
-    dir = Path(__file__).parent.parent.parent / "data" / "5e_canonical"
+    dir = Path(__file__).parent.parent.parent.parent / "data" / "5e_canonical"
     for key, monster in monsters.items():
         path = dir / f"{key}.md"
         monster.save(path)

@@ -1,6 +1,24 @@
 <MonsterName/>Mbielu</MonsterName>
 <CreatureType/>Beast</CreatureType>
 
+<summary>The Mbielu is a huge, unaligned beast that embodies both strength and resilience, making it a formidable presence in combat. With a high Armor Class of 15 due to its natural armor and a substantial pool of 76 hit points, the Mbielu can endure significant damage while dishing out substantial retaliatory strikes. Its notable attributes include very good strength and good constitution, which enhance its physical attacks and durability, but it suffers from very bad intelligence and charisma, indicating a lack of mental acuity and charm. The Mbielu has a challenge rating of 3, providing it with a balanced level of threat that can challenge parties of varying levels. The creature excels at close-range combat, aided by its damaging tail attack and frightening bellow, while its toxic skin can incapacitate foes and inflict poison damage.</summary>
+
+<detail>
+
+The Mbielu's attributes are as follows:
+- Strength: 19 with a modifier of +4, granting it exceptional physical power.
+- Dexterity: 14 with a modifier of +2, providing it with average agility.
+- Constitution: 16 with a modifier of +3, resulting in good toughness.
+- Intelligence: 2 with a modifier of -4, considered very bad, reflecting it as a creature of base instincts.
+- Wisdom: 12 with a modifier of +1, allowing for an average awareness.
+- Charisma: 6 with a modifier of -2, also very bad, indicating it lacks social influence.
+
+The Mbielu possesses a few special abilities that highlight its resilience in combat. The ability to hold its breath for 30 minutes allows it to survive in aquatic environments, making it adaptable to various terrains. Its Toxic Skin grants a strong deterrent against melee attackers; anyone who comes into contact with it or targets it from close range takes 2 poison damage and must make a DC 13 Constitution saving throw. Failure results in the poisoned condition for one minute, resulting in disadvantage on Intelligence, Wisdom, and Charisma saving throws due to hallucinations, significantly impacting their ability to act rationally in combat.
+
+In terms of actions, the Mbielu can make a melee attack with its tail, which has a +6 to hit with a reach of 10 feet. If successful, it deals an impactful 20 bludgeoning damage plus an additional 2 poison damage. Furthermore, Large or smaller creatures struck must successfully pass a DC 13 Strength saving throw or be knocked prone, impairing their combat effectiveness. 
+
+The Mbielu has a powerful special attack known as Rumbling Bellow, which recharges on rolls of 5 or 6. This action unleashes a deep bellow that resonates through nearby creatures, requiring them to make a DC 13 Constitution saving throw. On a failed save, creatures take 18 thunder damage or half as much on a successful one. If a creature is already poisoned by the Mbielu’s Toxic Skin and fails the saving throw, it becomes incapacitated until the end of its next turn, compounding the threat the Mbielu poses within combat.</detail>
+
 
 
 ---

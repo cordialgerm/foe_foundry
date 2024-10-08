@@ -1,6 +1,18 @@
 <MonsterName/>Yowler</MonsterName>
 <CreatureType/>Undead</CreatureType>
 
+<summary>The Yowler is a tiny undead creature that embodies chaotic evil. It possesses a unique blend of agility and resilience, making it an unpredictable foe in combat. With an armor class of 12 and a total of 22 hit points, it is relatively fragile but compensates with a high dexterity score of 15, granting it a good dexterity modifier of +2, which enhances its ability to dodge attacks. The Yowler can climb at a speed of 30 feet and walk at a speed of 40 feet, allowing it to maneuver effectively in various environments. However, it is hindered by its abysmal strength score of 3, resulting in a very bad strength modifier of -4, making it incapable of dealing physical damage through strength-based attacks. As a challenge rating of 1/2, it poses a moderate threat, particularly due to its ability to frighten opponents and resist certain damage types.</summary>
+
+<detail>
+
+The Yowler's attributes include a strength of 3, dexterity of 15, constitution of 16, intelligence of 3, wisdom of 10, and charisma of 5. Its very high constitution score of 16 gives it an exceptional constitution modifier of +3, making it resistant to the effects of exhaustion and allowing it to withstand many forms of damage. It is immune to poison damage, and it has resistance to necrotic damage, which provides it with additional durability against specific attacks. The Yowler has immunity to the frightened and poisoned conditions, further enhancing its survivability in combat situations. Its senses include darkvision with a range of 60 feet and a passive perception of 12, allowing it to detect hidden foes in low-light conditions. However, it cannot understand any languages.
+
+The Yowler has a special ability called Living Projection, which creates a magical illusion that makes it seem as if it is still alive and well, reflecting its former appearance. This illusion can be disrupted if the Yowler attacks or uses its Yowl ability, which lasts for one minute. The illusion can be discerned with a successful DC 15 Intelligence (Investigation) check, providing an interesting challenge for perceptive characters to realize the truth behind its façade before engaging in combat.
+
+In terms of actions, the Yowler can perform a multiattack, allowing it to make two attacks in a single turn: one bite attack and one claw attack, or it can use its Yowl ability in place of a bite attack. The Bite action is a melee weapon attack with a +4 modifier to hit, giving it a good chance to connect. Each successful bite deals 4 piercing damage (1d4 + 2) and forces the target to make a DC 12 Constitution saving throw or become poisoned until the end of its next turn. This ability can inflict additional status conditions on its victims, making it more dangerous than it appears. The Claws attack, also a melee weapon attack with a +4 modifier, inflicts 5 slashing damage (1d6 + 2) upon hitting.
+
+The Yowl action releases a dreadful scream that can terrify its enemies. Every hostile creature within a 30-foot range that can hear it must attempt a DC 12 Wisdom saving throw. Failure results in being frightened for one minute, which can severely impact combat performance as frightened creatures often have restrictions on their actions. The frightened creature may attempt to break the effect at the end of its turns by making another saving throw. If they succeed, or if the effect ends, they gain immunity against the Yowler’s Yowl for the next 24 hours, preventing repetitive use of this terrifying ability.</detail>
+
 
 
 ---

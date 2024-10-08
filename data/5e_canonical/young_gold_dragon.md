@@ -3,6 +3,38 @@
 
 <summary>A Young Gold Dragon is a majestic and noble creature, its radiant golden scales shimmering with power and grace. Its breath weapon can unleash a devastating blast of fire, and its mere presence exudes an aura of peace and righteousness. Young Gold Dragons are protectors of the innocent and defenders against evil, often taking residence near sacred sites or secluded mountains where they guard against darkness. Though still growing in strength and wisdom, they are wise beyond their years and are known for their kindness and fairness. They despise cruelty and will intervene when they witness injustice.</summary>
 
+<summary>The Young Gold Dragon is a formidable creature known for its intelligence, charisma, and prowess in battle. As a large dragon of the gold variety, it exudes both strength and majesty. With an Armor Class of 18 and a substantial pool of Hit Points totaling 157, it can withstand considerable damage. The dragon possesses high Strength and Constitution scores, rated at 22 and 20 respectively, allowing it to deal significant damage and maintain its health in combat. Its Charisma of 20 makes it not only a strong combatant but also a persuasive figure in social situations. With a Challenge Rating of 10, this dragon presents a serious threat to adventurers aiming to confront it.</summary>
+
+<detail>
+
+The attributes of the Young Gold Dragon include Strength at 22 (+6 modifier, which is exceptional), Dexterity at 14 (+2, considered average), Constitution at 20 (+5, which is very good), Intelligence at 16 (+3, which is good), Wisdom at 12 (+1, average), and Charisma at 20 (+5, which is very good). The dragon's saving throws are strong, with bonuses of +6 in Dexterity, +9 in Constitution, +5 in Wisdom, and +9 in Charisma, all of which enhance its resilience against various effects.
+
+This creature possesses several special abilities. The first is Valor, which grants allies within a 30-foot radius a +1 bonus to saving throws and renders them immune to being charmed or frightened, promoting greater longevity in battles. Additionally, its innate spellcasting allows it to cast spells relying on its Charisma, with a save DC of 17. The spells it can cast include Bless and Healing Word, both available three times per day without the need for material components. Bless can enhance the abilities of its allies, while Healing Word provides essential healing during combat.
+
+In terms of actions, the Young Gold Dragon is capable of performing a Multiattack, where it strikes with its bite and claws. The Bite attack has a +10 to hit, a reach of 10 feet, and inflicts 22 piercing damage plus an additional 4 fire damage. The Claw attack also has a +10 to hit and a reach of 5 feet, causing 15 slashing damage. Finally, the dragon can utilize its Breath Weapons, which recharge every 5 to 6 turns. 
+
+The Molten Breath is a powerful option where the dragon exhales molten gold in a cone that spans 30 feet, requiring affected creatures to make a DC 17 Dexterity saving throw. On a failed save, they take 49 fire damage, or half as much on a successful save. The second option, Weakening Breath, has a different tactical use. It releases a gas in a 30-foot cone, forcing creatures to make a DC 17 Constitution saving throw. Affected creatures suffer disadvantage on weapon attack rolls for one minute if they fail, but they can repeat the saving throw at the end of their turns to end the effect on a success. This ability can significantly weaken enemies during combat, allowing the dragon to dominate the battlefield.
+
+The Young Gold Dragon is a formidable creature known for its strength, agility, and magical prowess. It serves as a powerful opponent in combat scenario due to its high armor class of 18 and substantial hit points totaling 193. With a challenge rating of 10, it is a dangerous adversary that can fly at speeds of up to 80 feet, swim 40 feet, and run on land at 40 feet, making it exceptionally mobile in various environments. The dragon's primary attributes are impressive, notably its Constitution score of +9, indicating a very good resilience to attacks and spells, while its Charisma score of +7 allows it to excel in social interactions and casting spells. However, despite its strengths, the Young Gold Dragon can be threatened by attacks that exploit its weaknesses, especially if caught in a disadvantaged position.
+
+The Young Gold Dragon boasts the following attributes:
+- Strength: +6 (good)
+- Dexterity: +6 (good)
+- Constitution: +9 (very good)
+- Intelligence: +3 (average)
+- Wisdom: +8 (very good)
+- Charisma: +7 (very good)
+
+Its senses include darkvision at 120 feet, allowing it to see in darkness as if it were dim light, and a keen sense of perception with a +22 modifier, which is exceptional. It also has a stealth modifier of +16, indicating a good ability to remain undetected. The dragon can communicate and understand Common and Draconic languages.
+
+The Young Gold Dragon has several special abilities that enhance its gameplay. It possesses the Amphibious ability, enabling it to breathe in both air and water, thus making it versatile in aquatic and terrestrial environments. The Golden Splendor ability causes the dragon's scales to shimmer brilliantly, charming creatures that start their turn within 10 feet unless they succeed on a DC 17 Charisma saving throw. 
+
+In terms of actions during combat, the Young Gold Dragon can perform a Multiattack, which allows it to make a Bite attack and two Claw attacks in a single turn. The Bite attack has a +10 to hit and deals an average of 17 piercing damage (2d10 + 6), while each Claw attack similarly has a +10 to hit and does 13 slashing damage (2d6 + 6). Additionally, the dragon can unleash its Fire Breath, a powerful 30-foot cone attack dealing an average of 66 fire damage (12d10) on a failed DC 17 Dexterity saving throw, or half as much on a success. The Weakening Breath ability, which can be used less frequently than the Fire Breath, functions similarly, affecting all creatures in a cone and forcing them to save against the same DC.
+
+The Young Gold Dragon also has a notable bonus action called Change Shape, allowing it to magically transform into a Beast or Humanoid with a challenge rating no higher than its own. This ability maintains its hit points, ability to speak, and certain statistics, while taking on the characteristics of the new form.
+
+Overall, the Young Gold Dragon is a magnificent and dangerous creature that combines physical power, mobility, and magical prowess, making it a memorable encounter for any adventurer that crosses its path.</detail>
+
 
 
 ---

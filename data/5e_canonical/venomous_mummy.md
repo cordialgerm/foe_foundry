@@ -1,6 +1,20 @@
 <MonsterName/>Venomous Mummy</MonsterName>
 <CreatureType/>Undead</CreatureType>
 
+<summary>The Venomous Mummy is a medium undead creature characterized by its lawful evil alignment. As a formidable opponent, it wields the power of poison and curses, making it a dangerous foe in combat. With a challenge rating of 3, the Venomous Mummy presents a moderate threat to adventurers, providing a unique combination of melee attacks and environmental hazards through its toxic smoke. Its vulnerabilities to fire damage can be exploited, but its immunities to necrotic and poison damage, along with resistances to nonmagical physical attacks, make it difficult to defeat through traditional means. </summary>
+
+<detail>
+
+The Venomous Mummy has an armor class of 11, which is considered average, and it possesses 58 hit points, calculated as 9d8 plus an additional 18. This gives it a decent amount of durability for its challenge rating.
+
+In terms of attributes, the Venomous Mummy has a Strength of 16, providing a good modifier of +3 that enhances its melee attacks. Its Dexterity is notably low at 8, resulting in a bad modifier of -1, which affects its ability to avoid attacks. The Constitution score is 15, granting a good modifier of +2 that supports its hit points and saving throw effectiveness. Intelligence is very low at 7, with a very bad modifier of -2, meaning it does not excel in mental tasks. Wisdom is average at 10, with a +0 modifier. Lastly, its Charisma is strong at 14, with a modifier of +2, which may influence interactions that involve charm or presence.
+
+In saving throws, the Venomous Mummy has a bonus of +2 to Wisdom saving throws. It also has damage vulnerabilities to fire, meaning fire-based attacks deal extra damage to it. The creature is immune to necrotic and poison damage, which grants it very good protection against those damage types. It possesses resistance to bludgeoning, piercing, and slashing damage from nonmagical sources, further enhancing its survivability. Additionally, it is immune to several conditions, including being charmed, exhausted, frightened, paralyzed, and poisoned, making it exceptionally durable against various control effects in combat. It has darkvision with a range of 60 feet, allowing it to see in low-light conditions, and a passive perception score of 10. The Venomous Mummy can communicate in the languages it knew during its life.
+
+Among its special abilities, the Toxic Smoke ability triggers if the mummy takes fire damage. It creates a poisonous smoke cloud that affects creatures nearby, requiring them to make a DC 12 Constitution saving throw or incur poison damage and the poisoned condition. This smoke also obscures vision in its area and lasts until the end of the mummy's next turn. The Venom-Soaked Wraps ability causes anyone who touches the mummy or successfully strikes it with a melee attack to suffer poison damage, creating a deterrent for close-range combat. Finally, its Undead Nature ensures that the Venomous Mummy does not require basic needs such as air, food, drink, or sleep, making it a relentless foe.
+
+In terms of actions during combat, the Venomous Mummy can make a Venomous Fist melee attack, which has a +5 to hit. Upon a successful strike, the attack deals 10 bludgeoning damage in addition to 10 poison damage. If the target is hit, they must succeed on a DC 12 Constitution saving throw to avoid being cursed. This curse inflicts ongoing poison damage and reduces the target's hit point maximum until the curse is removed or the target completes a long rest. If the curse reduces the maximum hit points to zero, the target will die, making this attack particularly dangerous in extended engagements.</detail>
+
 
 
 ---

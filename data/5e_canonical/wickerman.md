@@ -1,6 +1,20 @@
 <MonsterName/>Wickerman</MonsterName>
 <CreatureType/>Construct</CreatureType>
 
+<summary>The Wickerman is a huge construct with an ominous presence, exuding a neutral evil aura. Designed as a formidable adversary, it boasts high hit points and damage resistance against nonmagical attacks, making it a resilient opponent in combat. With a challenge rating of 9, it is intended for mid-level encounters and presents a serious threat due to its ability to deal fire damage and its devastating grappling capability. However, its low armor class and poor dexterity make it vulnerable to ranged attacks and agile opponents. Notably, the Wickerman's functionality is closely tied to its controlling staff, which adds an intriguing dynamic to its behavior in battle, as its aggression can increase dramatically if the staff is compromised.</summary>
+
+<detail>
+
+The Wickerman has a total of 138 hit points, derived from rolling twelve twelve-sided dice, plus an additional 60 points. This substantial pool of hit points indicates a good level of endurance in combat. Its attributes are enhanced by a strength of 18, providing a strong melee presence with a +4 modifier, which is rated as good. However, its dexterity is notably low at 8, resulting in a -1 modifier, which is considered very bad. The Wickerman boasts an impressive constitution of 21, granting it a +5 modifier, which is exceptional, providing significant resistance to the effects of damage over time and other detrimental effects. It possesses minimal intelligence and charisma, with scores of 3 and 1, respectively, reflected in their severe negative modifiers of -4 and -5, both very bad. A wisdom score of 14 gives a +2 modifier, which is average.
+
+The creature is resistant to bludgeoning, piercing, and slashing damage from nonmagical sources, making it durable against many conventional attacks. It is immune to charm, exhaustion, fear, paralysis, petrification, and poison, highlighting its construction as a mindless entity devoid of emotions or physical vulnerabilities such as exhaustion. It features blindsight with a range of 120 feet, enabling it to sense creatures within this distance despite being blind beyond that radius. Its passive perception is 10, denoting average ability to notice hidden threats.
+
+In terms of abilities, the Wickerman can go berserk if its controlling staff is broken or not in the possession of a humanoid. In this state, it relentlessly attacks any visible creature, causing chaos on the battlefield. The skill "Blazing Fury" allows it to deal fire damage to creatures that make contact with it or strike it in melee, proactively punishing close engagements. Water Susceptibility indicates a vulnerability to cold damage while on fire, adding a tactical element where opponents can use environmental factors against it.
+
+When it comes to actions, the Wickerman can perform multiple attacks. Its "Multiattack" feature allows it to make two slam attacks, which increases its opportunity to inflict damage each round. The "Blazing Ray" is a ranged spell attack with a +6 to hit and can inflict significant fire damage of 27 upon a successful strike. The "Slam" attack also possesses a +8 to hit, dealing 15 bludgeoning damage plus additional fire damage and the chance to grapple the opponent, imposing strong control over the battlefield as it can restrain foes. The "Imprison" ability is particularly potent, as it enables the Wickerman to trap a creature inside its body, inflicting ongoing fire damage while providing total cover to the creature within. This ability complicates combat encounters, as allies must prioritize freeing their companions, while also posing a danger to the Wickerman as it can be damaged from within if trapped creatures fight back.
+
+The Wickerman is an engine of destruction that requires strategic thinking to overcome, presenting unique challenges and interesting dynamics for adventurers daring enough to confront it.</detail>
+
 
 
 ---

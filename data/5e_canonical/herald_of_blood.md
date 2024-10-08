@@ -1,6 +1,28 @@
 <MonsterName/>Herald of Blood</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<summary>The Herald of Blood is a powerful and imposing creature categorized as a Huge Fiend with a Neutral Evil alignment. With a robust Armor Class of 15 and a staggering 184 hit points, this monster is designed to dominate the battlefield through both melee and ranged attacks. Its high Strength score of 22 grants it exceptional power in combat, while its high Constitution of 20 gives it remarkable durability. The Herald excels in dealing necrotic damage and can inflict debilitating effects on its foes, including the potential to poison or exhaust them. Its movement capabilities, allowing it to walk and fly at a speed of 30 feet, provide tactical advantages in combat. While it is vulnerable to radiant damage and has a few weaknesses, its numerous immunities make it a formidable foe that challenges adventurers with a Challenge Rating of 12.</summary>
+
+<detail>
+
+The creature's ability scores are as follows: Strength is 22 (+6), Dexterity is 12 (+1), Constitution is 20 (+5), Intelligence is 14 (+2), Wisdom is 17 (+3), and Charisma is 16 (+3). The effective modifiers show strengths across the board, especially in Strength, which is very good, and Constitution, which is also very good. Dexterity is average, while Intelligence and Charisma are good. Wisdom provides good perception but is not as remarkable as the creature's physical attributes. 
+
+In terms of saving throws, the Herald is particularly adept at Strength with a +10 modifier, Constitution with a +9 modifier, and Wisdom with a +7 modifier, all reflecting its strong capabilities in resisting effects that target these attributes. 
+
+Additionally, the Herald possesses notable skills in Arcana with a +10 modifier, showcasing its magical knowledge, and in Perception with a +7 modifier, enhancing its ability to notice hidden entities or traps. The monster is immune to necrotic and poison damage and is resistant to cold, fire, and lightning damage. It is also immune to exhaustion, frightened, paralyzed, petrified, and poisoned conditions, making it exceedingly difficult to control or incapacitate.
+
+The Herald of Blood has significant sensory capabilities with darkvision reaching 240 feet and a passive perception of 17. It can communicate in Common, Draconic, Infernal, and Void Speech, allowing it to engage with a variety of creatures.
+
+One of its key special abilities is Blood Armor, which triggers each time a creature with blood strikes the Herald in melee within 10 feet. The attacker takes 4 (1d8) necrotic damage, and the Herald's Armor Class temporarily increases by 1, up to a maximum of 20. This makes melee attacks against the Herald riskier, as assailants could become subject to damage while simultaneously making the Herald harder to hit.
+
+In combat, the Herald can perform a Multiattack, allowing it to make three attacks using either its Herald’s Staff or Blood Bolt, or a combination of both along with Grasping Slam. The Herald’s Staff attack is potent, with a +10 to hit and dealing 13 (2d6 + 6) bludgeoning damage in addition to 13 (3d8) necrotic damage upon a successful hit. Grasping Slam is another fearsome melee option. It also requires a +10 to hit and deals 17 (2d10 + 6) bludgeoning damage. If the target is Large or smaller, they become grappled, which restrains them and inflicts 9 (2d8) necrotic damage at the start of their turn until the grapple ends.
+
+For ranged attacks, the Blood Bolt has a +7 to hit, allowing it to deal substantial necrotic damage of 25 (5d8 + 3) to its target from 120 feet away. If the target has blood, they must succeed on a DC 17 Constitution saving throw or become poisoned until the end of their next turn, diminishing their combat effectiveness.
+
+The Herald also has an especially devastating ability called Call Blood, which recharges on a roll of 5 or 6. It forces all creatures with blood within 10 feet to make a DC 17 Constitution saving throw. Those who fail take 45 (10d8) necrotic damage, while successful saves reduce the damage by half. Importantly, the Herald gains temporary hit points equal to the highest amount of necrotic damage dealt to any single creature, and those who fail by 5 or more suffer a level of exhaustion.
+
+As a bonus action, the Herald can use Grant Blood Rage to unleash chaos upon a target it can see within 60 feet that is not a Construct or Undead. The target must make a DC 17 Constitution saving throw or become enraged for a duration equal to its Constitution modifier. While enraged, the target gains advantage on all melee attack rolls but faces an increased risk of being attacked themselves, as attacks against them are made with advantage. When the effect ends, the creature takes 13 (3d8) necrotic damage and suffers a level of exhaustion, potentially leaving them weakened for future confrontations. This combination of abilities creates a powerful and terrifying adversary that can turn the tide of battle with clever use of its actions and abilities.</detail>
+
 
 
 ---

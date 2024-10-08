@@ -3,6 +3,48 @@
 
 <summary>An Ogre Zombie is the reanimated corpse of a massive ogre, brought back to unlife through necromantic magic. Its decayed flesh and mindless state make it slower and less cunning than a living ogre, but its immense strength and durability remain. Ogre Zombies are relentless in battle, smashing their foes with brute force and resisting most forms of damage due to their undead nature. They are often used as shock troops by necromancers or dark wizards, mindlessly charging into battle without fear of pain or death.</summary>
 
+<summary>The Ogre Zombie is a large undead creature that represents a gruesome combination of sheer size and relentless aggression. It functions as a formidable combatant, primarily due to its high strength and multiple actions that can inflict serious damage on opponents. The Ogre Zombie's primary strength lies in its durability and ability to resist typical forms of damage, particularly through its special abilities, which allow it to remain standing even when most creatures would fall. However, its significantly low Dexterity makes it vulnerable to attacks that require finesse or speed, and its poor Intelligence and Charisma indicate limited strategic capabilities and social interaction. This creature can serve as a notable challenge for adventurers looking to test their mettle against the undead.</summary>
+
+<detail>
+
+The Ogre Zombie has an Armor Class of 11, which is considered bad, indicating that it is relatively easy to hit in combat. It possesses 59 hit points, calculated from rolling seven ten-sided dice plus an additional 28 points, representing average resilience overall. With a speed of 30 feet, the Ogre Zombie can move at a reasonable pace. The creature has a challenge rating of 2, which assigns it a value of 450 experience points when defeated.
+
+In terms of its attributes, the Ogre Zombie boasts a Strength score of 18, translating to a +4 modifier, which is considered very good, allowing it to deal heavy damage in melee combat. Its Dexterity is a mere 6, resulting in a -2 modifier, categorized as very bad, signifying that it will struggle with tasks requiring agility. With a Constitution score of 18 (+4, very good), the creature is very resilient to effects that would reduce its hit points. However, it has an Intelligence score of 3 (-4, very bad) and a Wisdom score of 8 (-1, bad), indicating its limited cognitive functions and perception, alongside a Charisma score of 4 (-3, very bad), further reinforcing its inability to engage with others on a social level.
+
+The Ogre Zombie has immunity to poison damage and is unaffected by conditions such as fatigue and being poisoned. Its darkvision allows it to see in dim light up to 60 feet, while its passive Perception score of 8 is low, making it less perceptive to its surroundings. The Ogre Zombie understands the Giant language but cannot articulate speech.
+
+Its special ability, Undead Fortitude, can be used once per day. If the Ogre Zombie is reduced to 0 hit points from non-radiant damage or a non-critical hit, it instead drops to 1 hit point. It then falls prone and is stunned until the end of its next turn, creating an illusion of death that can confuse opponents. Additionally, the Undead Nature ability frees it from the need for air, food, or sleep, allowing it to function continuously without needing rest.
+
+In terms of offensive capabilities, the Ogre Zombie utilizes a Greatclub as its primary melee weapon. This attack has a +6 to hit, which is good, and a reach of 5 feet, allowing it to strike one target. If it scores a hit, the Greatclub inflicts an average of 13 bludgeoning damage. If the target is a Medium or smaller creature, it must make a DC 14 Strength saving throw or fall prone.
+
+Its Sweeping Strike ability allows it to attack all creatures within a 5-foot radius, also with a +6 to hit. A successful hit deals an average of 8 bludgeoning damage, and targets of Medium size or smaller must make a DC 14 Strength saving throw or be pushed 10 feet away from the Ogre Zombie.
+
+Additionally, the Ogre Zombie can perform a Grab action, which also has a +6 to hit. On a hit, it deals an average of 11 bludgeoning damage and grapples the target if it is Medium or smaller, imposing an escape DC of 14. While grappling a target, the Ogre Zombie is unable to grab another.
+
+Lastly, the Bite attack, usable only against a creature that is grappled by the zombie, has a +6 to hit and deals an average of 15 piercing damage. Importantly, the Ogre Zombie regains hit points equal to the damage dealt by this attack, allowing it to sustain itself in combat and continue its relentless assault.
+
+The Ogre Zombie is a Large undead creature that serves as a menacing combatant in various encounters. With a notable armor class of 8 and a hit point total of 72, it can endure a fair amount of damage before being defeated. This zombie has abilities that reflect its resilience and brute strength, making it particularly dangerous in melee combat. However, its low Dexterity score, reflected by a -2 modifier, indicates that it can struggle with nimbleness and reflexive activities, making it vulnerable if faced with ranged attacks or agile opponents. The Ogre Zombie has a challenge rating of 2, signaling that it poses a moderate threat to adventurers. Its undead nature grants it unique resistances, but it lacks intelligence and social skills, unable to communicate effectively beyond understanding some languages. 
+
+The Ogre Zombie boasts the following attributes: 
+- Strength: +4, which is very good, allowing it to deal significant damage in melee combat.
+- Dexterity: -2, which is bad, indicating poor agility and reflexes.
+- Constitution: +4, which is very good, contributing to its high hit points and durability.
+- Intelligence: -4, which is very bad, reflecting its lack of mental acuity.
+- Wisdom: -2, which is bad, suggesting it may have issues with perception and insight.
+- Charisma: -3, which is bad, indicating an inability to influence or interact socially.
+
+In terms of abilities, the Ogre Zombie has a few notable features:
+- **Undead Fortitude:** If the Ogre Zombie is reduced to 0 hit points, it may make a Constitution saving throw, with a difficulty class (DC) equal to 5 plus the damage taken, provided the damage is not radiant or from a critical hit. On a successful save, it instead drops to 1 hit point, allowing it to remain in the fight.
+- **Undead Nature:** This ability grants the Zombie the advantage of not needing air, food, drink, or sleep, making it immune to conditions that would affect living beings in this regard.
+- **Undead Resilience:** The creature is immune to poison damage, exhaustion, and the poisoned condition, showcasing its robustness against various forms of attack.
+
+In combat, the Ogre Zombie can take the following actions:
+- **Multiattack:** This enables the Ogre Zombie to make two attacks with its Greatclub in one turn.
+- **Greatclub:** The ogre makes a melee weapon attack with a +6 to hit and a reach of 5 feet. If it hits a target, the attack deals 13 bludgeoning damage, calculated as 2d8 plus its Strength modifier.
+- **Lumbering Charge (Recharge 5–6):** This special action allows the Ogre Zombie to charge forward, covering up to 20 feet in a straight line and pushing through the space of Medium or smaller creatures. The first creature it enters must make a Strength saving throw against a DC of 14. On a failed save, that creature takes 14 bludgeoning damage and is knocked prone. If it succeeds, the creature takes half the damage and remains upright.
+
+The combination of its powerful melee attacks and special abilities makes the Ogre Zombie a formidable opponent, particularly in close-quarters combat. Its ability to potentially shrug off fatal damage and its immunity to many debilitating effects allow it to remain a persistent threat to adventurers who encounter it.</detail>
+
 
 
 ---

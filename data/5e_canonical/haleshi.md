@@ -1,6 +1,20 @@
 <MonsterName/>Haleshi</MonsterName>
 <CreatureType/>Fey</CreatureType>
 
+<summary>The Haleshi is a Large Fey creature characterized by its lawful neutral alignment. With a Challenge Rating of 7 and a combat prowess that integrates both spellcasting and melee attacks, this creature serves as a formidable opponent or an intriguing ally in any encounter. The Haleshi excels in both defense and utility, boasting a high Armor Class of 17 and a substantial pool of hit points totaling 123, which provides it resilience in battle. Its unique abilities allow it to utilize the environment to its advantage, particularly in aquatic scenarios, while its innate magical powers enhance its versatility. However, it possesses a weakness to physical damage types, specifically those that are not resisted by its cold damage resistance.</summary>
+
+<detail>
+
+The Haleshi has a strong physical presence with a Strength score of 16, granting it a modifier of +3, which is considered good. Its Dexterity and Charisma are both at 16 and 19 respectively, with corresponding modifiers of +3 and +4, which are also rated as good and exceptional. Its Constitution is exceptional as well with a score of 18 and a +4 modifier, which impacts its overall survivability and performance in combat. The intelligence, wisdom, and charisma scores denote an average to good level of skill where intelligence sits at +2, wisdom at +3, and charisma at +4.
+
+The Haleshi has the following saving throw modifiers: Dex +6 and Cha +7, allowing it to excel in dodging and resisting effects that target its charm. With skills in insight (+9), nature (+5), perception (+6), and persuasion (+7), it demonstrates exceptional insight and charm capabilities. The creature has damage resistances to cold and is immune to being charmed, granting it strategic advantages in conflicts where magical charm might be employed against it. Its sensory abilities include darkvision up to 60 feet and a passive perception of 16, allowing it to navigate and detect threats efficiently in darkness.
+
+The Haleshi possesses special abilities that further enhance its strategic options. It is amphibious, enabling it to breathe both air and water. Its Charming Defense ability allows it to include its Charisma modifier in its Armor Class when unarmored, effectively raising its AC to a baseline of 21 without any additional equipment. With an innate spellcasting ability centered around its Charisma (spell save DC of 15), the Haleshi can cast spells that enhance both combat and social interactions. The spells available to it include charm person and invisibility, castable three times a day, alongside major image, water walk, and zone of truth, which can be used once daily each. These spells can influence battlefield dynamics and provide avenues for strategic retreat or manipulation.
+
+In action, the Haleshi can perform a Multiattack, delivering two strikes with its Stupefying Touch. This melee weapon attack has a +6 to hit, a reach of 5 feet, and deals 16 (3d8 + 3) psychic damage. Importantly, it forces the target to make a DC 15 Intelligence saving throw or become incapacitated until the end of its next turn, offering it the potential to control the battlefield effectively. Additionally, the Clamport ability, usable three times per day, enables the Haleshi to teleport itself and up to three willing creatures by touching a clam—this can facilitate tactical maneuvers or escape from danger. 
+
+Finally, as a reaction, the Haleshi can use Water Shield (recharge on a roll of 5-6). This reaction allows it to increase its AC by +3 against one attack, provided it is near a sufficient quantity of water. Alternatively, it can negate fire damage from an attack if similarly positioned. Overall, the Haleshi's blend of physical prowess, innate magic, and tactical abilities makes it a dynamic participant in encounters within a D&D 5e campaign.</detail>
+
 
 
 ---

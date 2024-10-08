@@ -1,6 +1,20 @@
 <MonsterName/>Isonade</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<summary>The Isonade is a gargantuan monstrosity of chaotic neutral alignment, known for its immense size and terrifying presence in aquatic environments. With an impressive armor class of 18 and a substantial pool of hit points totaling 222, it is a formidable opponent. Its notable strengths include powerful physical attacks augmented by a high Strength score of 30, allowing it to deal immense damage and even swallow smaller creatures. The Isonade can manipulate weather conditions in its vicinity while exhibiting significant magical resistance. However, it has a low Intelligence and Charisma, which limits its social interactions and strategic maneuvering in complex scenarios. With a Challenge Rating of 14, it poses a serious threat to adventurers who encounter it, especially in watery domains.</summary>
+
+<detail>
+
+The Isonade’s attributes are as follows: Strength at 30 gives it a +10 modifier, making it very good at physical endeavors, particularly in combat. Dexterity is at 14, translating to a +2 modifier that is average; while it provides some agility, it is not the creature's standout trait. Constitution is a powerful 26 with a +8 modifier, offering it resilience and longevity in battle, categorized as very good. Its Intelligence is a low 6, affecting its intelligence-based checks with a -2 modifier, defined as very bad. Wisdom at 18 grants it a +4 modifier, helpful for perception and insight, making it good in certain scenarios, while Charisma is at a low 8, providing a -1 modifier, also very bad.
+
+Regarding saving throws, the Isonade has an exceptional Strength saving throw of +15, a very good Constitution saving throw of +13, and a good Wisdom saving throw of +9. It possesses skills including Athletics at +15, portraying its physical prowess, and Perception at +9, showcasing its capability to notice hidden things. The Isonade is immune to cold damage, which makes it resistant against various attacks. It has darkvision up to 90 feet, allowing it to see in darkness as if it were dim light, and a passive Perception of 19, making it quite perceptive.
+
+The Isonade has several special abilities. Its "Influence Weather" power allows it to control the weather within 1 mile, changing precipitation and wind conditions one step up or down every minute without requiring any action. This ability mirrors the "control weather" spell but with restrictions regarding temperature changes. The "Magic Resistance" trait grants it advantage on saving throws against spells and magical effects, showcasing its resilience against magic. As a "Siege Monster," it deals double damage to objects, making it an effective destructive force against structures. "Water Breathing" confirms that the Isonade can breathe underwater, limiting its movement to aquatic environments.
+
+In combat, the Isonade utilizes its Multiattack feature to make one Bite attack and two Tail Slap attacks. The Bite attack has a +15 to hit and reaches 15 feet, delivering 36 piercing damage on a successful strike. If a target is Large or smaller, it must succeed on a DC 18 Dexterity saving throw or be swallowed, resulting in being blinded, restrained, and taking ongoing acid damage from within. The Tail Slap also has a +15 to hit over a 15-foot reach, inflicting 24 bludgeoning damage. 
+
+Furthermore, the Isonade possesses a unique action called "Breach." If it swims at least 20 feet, it can emerge on the water's surface and target creatures within its space. Those creatures must make a DC 18 Dexterity saving throw; failure results in 49 bludgeoning damage and being knocked prone, while success sees them take half damage and pushed away. This ability emphasizes the Isonade's devastating impact within water-based combat scenarios, marking it as a strategic threat to any adventurers unprepared for such an encounter.</detail>
+
 
 
 ---

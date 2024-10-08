@@ -3,6 +3,44 @@
 
 <summary>A Rakshasa is a powerful, fiendish creature with the body of a human and the head of a tiger, often with its hands reversed. Rakshasas are known for their mastery of illusion and manipulation, using their innate magical abilities to blend into mortal society and twist events to their favor. They are highly intelligent and cunning, often appearing as noble rulers or wealthy merchants. Though they can use their claws in combat, Rakshasas prefer to manipulate from behind the scenes, relying on their magic and deception to outwit their enemies. They are nearly impervious to most mortal weapons, making them dangerous foes.</summary>
 
+<summary>The Rakshasa is a Medium fiend known for its cunning abilities and magical prowess. With an Armor Class of 16 and a substantial 161 hit points, it presents a significant challenge to adventurers, rated at a Challenge Rating of 13, equating to 10,000 experience points. This creature is particularly adept at manipulation and deception, utilizing its high Charisma score of 20, which offers an exceptional modifier of +5 in social interactions. It is skilled in deception and insight, boasting values of +10 and +8 respectively. While it is resistant to bludgeoning and slashing damage from nonmagical sources, its abilities offer it further advantages in combat and social manipulation. Notably, the Rakshasa can shapeshift, making it a formidable foe in both direct confrontation and strategic play.</summary>
+
+<detail>
+
+The Rakshasa has the following attributes: Strength 16 (+3), Dexterity 16 (+3), Constitution 18 (+4), Intelligence 16 (+3), Wisdom 16 (+3), and Charisma 20 (+5). The Constitution score reflects good durability, while the good Dexterity grants it agility in both attack and defense. Its spells are cast using Charisma as its innate spellcasting ability with a spell save DC of 18, making its spells difficult to resist.
+
+Among its special abilities, the Rakshasa has innate spellcasting that allows it to cast spells without material components. It can cast spells at will such as detect magic, mage hand, and major image, which can create illusory figures for deception. It can also cast charm person and dominate person three times a day each, making it highly effective at manipulating others. Its ability to fly and turn invisible enhances its combat strategy, allowing for mobility and stealth.
+
+For actions, the Rakshasa can execute a multiattack by making two weapon attacks in a turn. The claw attack, available only in its true form, offers a melee weapon attack with a +8 modifier to hit and does 10 slashing damage. Notably, if the claw attack hits a creature, it curses the target, preventing it from benefiting from long rests, leading to terrible visions. The Rakshasa can also use a rapier for piercing damage, making another melee attack that deals 7 damage. 
+
+A unique and potent action it can take is called Sweet Promises, where it targets a creature within 60 feet and offers something that it covets. The target must succeed on a DC 18 Wisdom saving throw; failure results in the target being charmed and stunned until the end of its next turn, which can significantly hinder an opponent’s actions in battle. 
+
+The Rakshasa has additional spell-like abilities; when using Invisibility, it can remain unseen for up to one hour unless it attacks or casts a spell. With Fly, it can soar through the air at a speed of 60 feet, making it challenging to engage in melee.
+
+In terms of bonus actions, the Rakshasa can shapeshift to alter its form while retaining its ability scores, which allows it to disguise itself as a Medium or Small humanoid. It can also use Read Thoughts, gaining insight into the surface thoughts of a creature, which grants it an advantage on attack rolls and checks involving deception or persuasion against that target. 
+
+As a reaction, the Rakshasa can employ Counterproposal, applying Sweet Promises to a creature that has attacked it or attempted to use a spell against it, providing an excellent way to turn the tables in combat.
+
+Overall, the Rakshasa is a versatile and challenging foe, utilizing a combination of magical abilities, shapeshifting, and deception to confound and outmaneuver its enemies, making it a memorable encounter for any adventuring party.
+
+The Rakshasa is a Medium fiend known for its cunning and powerful magical abilities. With a Challenge Rating of 13, it poses a significant threat in combat, able to deal substantial damage and manipulate the battlefield through a variety of spells and abilities. Rakshasas are characterized by their illusionary skills and charm, making them adept at manipulating others. They excel in Dexterity and Charisma-based maneuvers, granting them exceptional stealth and charm capabilities. However, they are not particularly strong or resilient, with average physical capabilities overall, manifesting a mix of strengths and weaknesses that make encounters with them both challenging and strategic.
+
+The Rakshasa has the following ability scores: Strength 12 (+2), Dexterity 22 (+8), Constitution 18 (+4), Intelligence 12 (+1), Wisdom 18 (+8), and Charisma 20 (+10). Its high Dexterity gives it an exceptional initiative and makes it extremely agile in combat, while its elevated Charisma enhances its spellcasting and charm abilities. The creature has an Armor Class of 16 thanks to natural armor and possesses a robust hit point total of 166, which gives it very good durability in battles. Its speed allows it to move 40 feet on the ground and fly at 30 feet while hovering.
+
+One unique trait of the Rakshasa is its Limited Magic Immunity, which allows it to not be affected or detected by spells of 6th level or lower unless it chooses to be, providing it a significant tactical advantage. It also has advantage on saving throws against all other spells and magical effects, making it exceptionally resilient against magical attacks.
+
+In terms of actions, the Rakshasa can perform a Multiattack, making four attacks in one turn through its claws or Arcane Bolts. It may replace one attack with a use of its Spellcasting. If a target is hit by two of its Claw attacks, that creature becomes cursed, incurring penalties that prevent it from benefiting from rests until the curse is removed.
+
+The Claw attack is a melee weapon attack that rolls with a +8 bonus to hit and inflicts 12 slashing damage plus an additional 10 force damage on a successful hit. The Arcane Bolt is a ranged spell attack with a +10 bonus to hit, dealing 22 force damage from a safe distance.
+
+One of its special abilities is "Travel the Planes," which allows the Rakshasa to magically transport itself to another plane of existence once per day, functioning similarly to the Plane Shift spell.
+
+The Rakshasa has a diverse spellcasting ability, with a spell save DC of 18. At will, it can cast "detect thoughts," "mage hand," and "minor illusion." It can cast "major image" and "suggestion" three times per day, and it can cast "dominate" once per day, each of which can seriously impact gameplay by allowing the Rakshasa to manipulate thoughts, create illusions, and take control of characters.
+
+As a bonus action, the Rakshasa can use its Charming Gaze to charm a target within 60 feet that can see it, requiring a successful DC 18 Charisma saving throw to resist. A charmed creature can attempt to save again at the end of each of its turns. Additionally, it can use Illusory Appearance to disguise itself and its belongings as another humanoid creature, a tactic that can be useful for infiltration or deception.
+
+In summary, the Rakshasa is a potent and deceptive adversary that utilizes its magical prowess, stealth, and charm to manipulate encounters, making it a formidable foe for any party that encounters it.</detail>
+
 
 
 ---

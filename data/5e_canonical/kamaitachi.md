@@ -1,6 +1,20 @@
 <MonsterName/>Kamaitachi</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<summary>The Kamaitachi is a small but elusive monstrosity with a chaotic neutral alignment, making it a wild card in any encounter. With a challenge rating of 5, it possesses a balanced combination of speed, resilience, and striking power. A central aspect of the Kamaitachi's strength lies in its agility and deceptive offensive abilities, particularly in its unique forms. Its weaknesses primarily stem from its limited ability to engage in direct confrontations, as its performance relies heavily on the surrounding environment, particularly snowy conditions for optimal effectiveness. Creatures that manage to locate its true form may have an advantage, but until then, it thrives on chaos and stealth.</summary>
+
+<detail>
+
+The Kamaitachi has an Armor Class of 14, providing it with average protection. It has 84 hit points, calculated from 13d6 plus 39, allowing it to sustain a considerable amount of damage before being incapacitated. Its speeds include a walking pace of 30 feet and a climbing speed of 15 feet, allowing for flexibility in movement. The creature's ability scores are as follows: a Strength of 12 with a +1 modifier, Dexterity of 19 with a +4 modifier, Constitution of 16 with a +3 modifier, Intelligence of 9 with a -1 modifier, Wisdom of 12 with a +1 modifier, and Charisma of 13 with a +1 modifier. The Dexterity score is notably very good, enhancing its agility in combat and stealth actions, whereas its Intelligence is very bad, indicating limited cognitive abilities.
+
+In terms of skills, the Kamaitachi boasts a good acrobatics skill with a +6 modifier, allowing it to perform agile maneuvers effectively. Additionally, it has a +3 modifier in intimidation, making it somewhat menacing. Its stealth ability, also aided by a +6 modifier, gives it the capacity to remain hidden from enemies. This creature has resistance to cold damage and possesses darkvision up to 60 feet, with a passive perception score of 11. It understands Common and Sylvan languages but cannot speak.
+
+The Kamaitachi has several special abilities that enhance its role in combat. The Air Form ability allows it to enter an enemy's space without restriction, squeezing through spaces as narrow as 1 inch. When in its True Form, its Concealing Snow ability provides significant defensive capability—attack rolls against it have disadvantage as it sheathes itself in blowing ice and snow in snowy terrain. The Flyby ability means it can avoid opportunity attacks when moving out of an enemy's reach while in its Wintry Swirl Form. Its Keen Smell ability grants it advantage on Wisdom (Perception) checks that rely on smell, making it difficult to surprise.
+
+The Kamaitachi's Shapechanger ability enables it to polymorph into a swirl of wintry weather. In this form, it has a flying speed of 40 feet and is immune to several debilitating conditions, along with resistance against nonmagical damage. When not taking actions, it is indistinguishable from natural snow unless a creature makes a successful DC 15 Intelligence (Investigation) check, thanks to the Snow Devil ability that activates when in its Wintry Swirl Form.
+
+In combat, the Kamaitachi can use the Multiattack action to deliver two sickle paw attacks when in its True Form. The Sickle Paw attack has a +6 to hit and deals 18 slashing damage on a hit, making it a formidable threat in close quarters. In its Wintry Swirl Form, the creature can employ the Wintry Assault ability, forcing creatures in its vicinity to make a DC 15 Dexterity saving throw. On a failure, they will take both slashing and cold damage, totaling 18 damage (9 slashing and 9 cold), and become blinded until the end of their next turn. A successful save halves the damage and keeps them from being blinded. This combination of abilities makes the Kamaitachi a slippery opponent that excels in hit-and-run tactics and controlling the battlefield.</detail>
+
 
 
 ---

@@ -1,6 +1,20 @@
 <MonsterName/>Moderate Malleable</MonsterName>
 <CreatureType/>Aberration</CreatureType>
 
+<summary>The Moderate Malleable is a large aberration with chaotic evil tendencies, presenting a significant challenge for adventurers. With a relatively high armor class of 12 provided by its natural armor and 136 hit points, the Moderate Malleable proves to be a resilient foe in combat. Its movement capability allows for climbing and walking at a speed of 30 feet, making it versatile in navigating different terrains. Its challenge rating of 5 indicates a moderate threat level, with players earning 1,800 experience points upon defeat. This creature excels in psychic abilities, boasting immunities against psychic damage and conditions like being blinded or prone, while it is adept at absorbing and merging with minor malleables, enhancing its own health and capabilities.</summary>
+
+<detail>
+
+The creature has impressive Strength at 18, giving it a good modifier of +4 for physical attacks, and a strong Constitution of 16 with a +3 modifier, making it tough and hard to take down. However, its Dexterity is low at 8, resulting in a bad -1 modifier, leaving it vulnerable to certain attacks that rely on agility. It has a respectable Intelligence of 17, equipping it with a +3 modifier for intelligence-based tasks, and Wisdom at 15, granting a +2 modifier for wisdom saving throws and perception checks. Its Charisma is average at 10, providing no advantages or disadvantages.
+
+The Moderate Malleable features several notable abilities. "Absorb Malleable" allows it to absorb a nearby minor malleable, gaining health equivalent to that creature's remaining hit points, and inheriting any effects affecting the absorbed creature. With its "Amorphous" trait, it can pass through openings as narrow as one inch, which makes it difficult to corner or evade. Through "Controlled Mutability," it can temporarily alter its shape while retaining its core appearance as an inside-out fleshy creature, though without gaining any abilities from assumed forms. "Psychic Absorption" enhances its resilience to psychic attacks, converting damage into healing. Its "Spider Climb" allows it to maneuver effortlessly on difficult surfaces, making it more unpredictable during battles.
+
+In terms of actions during combat, the Moderate Malleable can perform a multiattack, utilizing two "Flesh Tendril" strikes. Each tendril attack is a melee weapon attack with a +7 modifier to hit, capable of inflicting an average of 14 bludgeoning damage. If it grapples a target, escape requires a DC 14 strength check. The "Psychic Drain" action compels a grappled target to make a DC 14 Intelligence saving throw, dealing an average of 22 psychic damage on a fail and reducing the target's hit point maximum based on the damage taken. This reduction lasts until the target completes a long rest, and if their hit point maximum drops to zero, they transform into a minor malleable. 
+
+The "Join Malleables" action lets multiple Moderate Malleables combine their forms to create a larger entity, sharing health and conditions among them. Each can use it when within 10 feet of the others, allowing for tactical group dynamics. Conversely, "Separate Malleables" permits the Moderate Malleable to divide into four minor malleables, distributing its health and conditions to the new entities while maintaining the same initiative count.
+
+As a reaction, the Moderate Malleable can trigger "Sudden Separation" if it suffers 10 or more damage from a single attack. This allows it to split into minor malleables, with the damage evenly spread among the new entities, which can also lead to strategic repositioning and engagement in combat. Overall, the Moderate Malleable poses a multifaceted threat that can absorb and divide, making it a challenging adversary in combat scenarios.</detail>
+
 
 
 ---

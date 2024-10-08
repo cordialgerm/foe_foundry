@@ -1,6 +1,20 @@
 <MonsterName/>Sulsha</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<summary>The Sulsha is a large and imposing humanoid creature characterized by its lawful evil alignment and lethal combat tactics. With a robust Armor Class of 16 and an impressive 90 hit points, it presents a significant challenge to adventurers. Sulsha excel in both melee and ranged attacks, showcasing their versatility with multiple options during combat. Their ability to climb and fight simultaneously makes them formidable in environments with vertical elements, leveraging their speed to traverse the battlefield effectively. However, their low Charisma score of 9 indicates a weakness in social interactions, suggesting that they are not the most persuasive or charismatic beings. Using a combination of physical attacks and area damage from bombs, the Sulsha is a relentless foe capable of frightening its opponents and maintaining control over the battle.</summary>
+
+<detail>
+
+The Sulsha has the following attributes: Strength 18 (+4, exceptional), Dexterity 14 (+2, good), Constitution 14 (+2, good), Intelligence 11 (+0, average), Wisdom 12 (+1, average), and Charisma 9 (-1, bad). With a challenge rating of 4, it is considered a moderate threat to a party of adventurers and can dish out significant damage while withstanding a fair amount of punishment given its hit points.
+
+In terms of special abilities, the Sulsha has "Arboreal Tactician," allowing it to climb without provoking opportunity attacks and giving it advantage on attack rolls against creatures that are also climbing. This ability makes it a deadly opponent in areas with trees or cliffs. Its "Standing Leap" ability further enhances its agility, granting it the ability to jump long distances of up to 30 feet and height of 15 feet, greatly facilitating mobility during combat.
+
+During combat, the Sulsha can utilize a "Multiattack," making three attacks in a single turn: one with its bite, one with its slam, and one with its tail spur. Alternatively, it can make two ranged bomb attacks. The "Bite" attack has a +6 to hit and deals 7 piercing damage on a successful strike. The "Slam" attack, which also has a +6 to hit, is more powerful, dealing 13 bludgeoning damage. The "Tail Spur" attack, with a reach of 10 feet, can also inflict piercing damage of 6. 
+
+For ranged combat, the Sulsha can launch a "Bomb," which also has a +6 to hit and a range of 20/60 feet. On a successful hit, it deals 7 bludgeoning damage, but also inflicts additional fire damage to the target and surrounding creatures unless they succeed on a Dexterity saving throw against DC 14. 
+
+Finally, the Sulsha can use its "Terrifying Display" ability, which recharges on a roll of 5 or 6. By making a loud display, it forces creatures within 30 feet that can see or hear it to make a Wisdom saving throw (DC 14) or become frightened for 1 minute. Those frightened can attempt to save at the end of their turns to end the effect. This ability can turn the tide of battle by instilling fear in opponents, making it a strategic asset in combat scenarios.</detail>
+
 
 
 ---

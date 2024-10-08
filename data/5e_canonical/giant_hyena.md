@@ -18,7 +18,21 @@ Now, let's break down the statistics of the Giant Hyena:
 
 In terms of skills, the Giant Hyena has a +3 modifier to Perception, granting it good awareness of its surroundings. It possesses darkvision up to 30 feet, which enables it to see in dim light as if it were bright light, and it has a passive perception score of 13, allowing it to notice things that might be hiding nearby.
 
-The Giant Hyena's primary action is its Bite. This is a melee weapon attack, which means it rolls a d20 and adds +4 to determine if it successfully hits a target within 5 feet. If it hits, it deals 9 points of piercing damage, computed by rolling 2d6 and adding 2. Moreover, if the bite attack reduces its target to 0 hit points, the Giant Hyena can use its bonus action to move up to half its speed and make a second bite attack. This ability allows it to potentially take down multiple enemies in a single turn, making it quite dangerous in the right circumstances.</detail>
+The Giant Hyena's primary action is its Bite. This is a melee weapon attack, which means it rolls a d20 and adds +4 to determine if it successfully hits a target within 5 feet. If it hits, it deals 9 points of piercing damage, computed by rolling 2d6 and adding 2. Moreover, if the bite attack reduces its target to 0 hit points, the Giant Hyena can use its bonus action to move up to half its speed and make a second bite attack. This ability allows it to potentially take down multiple enemies in a single turn, making it quite dangerous in the right circumstances.
+
+The Giant Hyena is a large beast known for its swift agility, keen senses, and pack mentality. With a Challenge Rating of 1, it serves as a formidable threat for adventurers venturing into its territory. Its notable abilities include the potential to deafen opponents through a cacophony of sounds when in groups, making it a tactical creature when encountered in numbers. While it possesses respectable hit points and a good speed that allows it to maneuver effectively in combat, its low Intelligence and Charisma indicate limited interactions or strategic thinking beyond physical encounters. 
+
+In terms of attributes, the Giant Hyena has a Strength score of 16, which translates to a +3 modifier, allowing it to excel in physical confrontations. Its Dexterity of 14 gives it a +2 modifier, enhancing its agility and defense. The Constitution score of 14 provides a +2 modifier, contributing to its decent hit points, totaling 42; this is relatively strong for a creature of its CR. However, the Hyena’s Intelligence is poor at -4, offering a very bad modifier that limits its cognitive abilities. With a Wisdom of 12 granting a +1 modifier, it has average perception skills, but it lacks any compelling Charisma, resulting in a very bad modifier for social interactions. 
+
+The Giant Hyena's special ability, Cackling Chorus, is particularly impactful as it operates in conjunction with other hyenas. If three or more are within 30 feet, they create a deafening sound that can force creatures starting their turn nearby to succeed on a Constitution saving throw. The difficulty of this save is based on the number of participating hyenas, which can easily overwhelm enemies if the pack is united.
+
+In combat, the Giant Hyena can execute a Bite attack, which is a melee weapon attack that uses a +5 to hit with a reach of 5 feet. On a hit, this attack deals an impressive 10 (2d6 + 3) piercing damage, making it a significant threat in close quarters.
+
+As a bonus action, the Giant Hyena can perform a Warning Yip, alerting another friendly hyena or gnoll within 30 feet. This grants disadvantage on the next attack roll against that target before the start of the hyena's next turn, bolstering its allies in combat.
+
+Additionally, the Giant Hyena can utilize a reaction called Rampage. When it reduces an enemy to 0 hit points, it may move up to half its speed and immediately make another Bite attack. However, using Rampage grants advantage on attack rolls against the Giant Hyena until the start of its next turn, which can lead to risky situations if not managed carefully. 
+
+Overall, the Giant Hyena is a vicious creature that thrives in the chaos of battle, especially when fighting alongside its pack, making it a challenging opponent for any adventuring party.</detail>
 
 
 

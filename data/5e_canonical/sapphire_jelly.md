@@ -1,6 +1,18 @@
 <MonsterName/>Sapphire Jelly</MonsterName>
 <CreatureType/>Ooze</CreatureType>
 
+<summary>The Sapphire Jelly is a formidable Medium ooze creature that presents a unique challenge in combat. With a notable Armor Class of 9 and a substantial pool of 144 hit points, it can absorb significant damage before succumbing. Functioning at Challenge Rating 6, it offers a reward of 2,300 XP to those who defeat it. This gelatinous monster is unaligned, which means it does not adhere to any moral philosophy, making it a neutral entity in the world. The Sapphire Jelly’s strengths include its impressive Constitution, granting it resistance to a range of conditions, as well as its freezing and engulfing attacks that threaten characters with both damage and debilitating effects. Its weaknesses lie primarily in its low Dexterity, which affects its ability to dodge attacks. The Sapphire Jelly's most distinctive feature is its ability to transform slain humanoids into glacial corrupters if not resurrected or destroyed, adding a layer of danger to encounters with this creature.</summary>
+
+<detail>
+
+The attributes of the Sapphire Jelly are as follows: Strength 16 with a modifier of +3, indicating a good ability for melee attacks; Dexterity 8 with a modifier of -1, suggesting very bad agility; Constitution 18 with a modifier of +4, demonstrating very good resilience; Intelligence 3 with a modifier of -4, indicating a very bad capacity for problem-solving; Wisdom 12 with a modifier of +1, reflecting an average perception; and Charisma 12 with a modifier of +1, signifying an average social presence. The jelly has saving throw bonuses of +4 for Wisdom and Charisma, both of which are considered good. It is immune to cold and poison damage and is not affected by conditions such as blinded, charmed, deafened, exhaustion, frightened, poisoned, or prone. The creature possesses blindsight within 60 feet, allowing it to sense its surroundings without sight beyond that distance, and it has a passive Perception score of 11, which is average.
+
+The Sapphire Jelly features special abilities that enhance its lethality and survivability. The Amorphous ability allows it to squeeze through tight spaces, letting it surprise foes or escape tricky situations. Its Icy Transformation ability is particularly noteworthy, as it promises that any humanoid killed by this creature will become a glacial corrupter after a week, leading to potential complications for any adventurers who fail to eliminate the jelly thoroughly.
+
+In combat, the Sapphire Jelly can engage opponents using its Multiattack feature, allowing it to deliver two Freezing Slam attacks. The Freezing Slam is a melee weapon attack with a +6 to hit and a reach of 5 feet, dealing 10 bludgeoning damage and an additional 10 cold damage upon a successful hit. This attack can deal significant damage, combining physical and elemental effects.
+
+Additionally, it can use the Engulf action, moving up to its speed and entering the space of a Medium or smaller creature. Affected creatures must make a DC 15 Dexterity saving throw when the jelly intrudes their space. A successful save allows the creature to reposition itself, while a failed save results in the jelly entering its space, subjecting it to 10 cold damage and engulfing it. An engulfed creature cannot breathe and is restrained, suffering 21 cold damage at the start of each of the jelly’s subsequent turns. The engulfed creature can attempt to escape by making a DC 15 Strength check, or allies can attempt to rescue it with the same check, albeit while taking cold damage. This combination of abilities makes the Sapphire Jelly a multi-faceted threat in any encounter, necessitating careful tactics from adventurers.</detail>
+
 
 
 ---

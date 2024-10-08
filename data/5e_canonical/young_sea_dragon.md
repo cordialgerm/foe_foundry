@@ -1,6 +1,20 @@
 <MonsterName/>Young Sea Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
 
+<summary>The Young Sea Dragon is a formidable and fearsome creature that embodies the essence of aquatic dragons. Known for its neutrality and underlying evil tendencies, this large dragon thrives in both water and air. With a strong armor class of 18 due to its natural armor and impressive hit points totaling 190, it poses a challenging encounter for adventurers. It has a high challenge rating of 9, providing significant experience rewards upon defeat. The dragon possesses exceptional physical strength and constitution, allowing it to deal and withstand considerable damage in battle, while its cold damage immunity and amphibious nature give it an advantage in aquatic environments. However, its average dexterity indicates that it is not particularly agile, which could be a potential vulnerability.</summary>
+
+<detail>
+
+The Young Sea Dragon has the following attributes: Strength of 21, Dexterity of 10, Constitution of 19, Intelligence of 15, Wisdom of 13, and Charisma of 17. Its modifiers correspond to very good for Strength (+5), good for Constitution (+4), average for Dexterity (+0), average for Wisdom (+1), good for Charisma (+3), and average for Intelligence (+2). Its saving throw proficiencies are Dexterity (+4), Constitution (+8), Wisdom (+5), and Charisma (+7), enabling it to be very resilient against spells and effects that would otherwise hinder a lesser foe. The dragon's perception skill of +9 and stealth skill of +4 represent its keen sensory capabilities and subtlety, respectively.
+
+In terms of special abilities, the Young Sea Dragon is amphibious, allowing it to breathe both air and water, making it a versatile predator in various terrains. Its "Siege Monster" ability grants it the capability to deal double damage to objects and structures, enabling it to wreak havoc on ships, buildings, or fortifications encountered during its attacks.
+
+During combat, the Young Sea Dragon can perform a multiattack, which allows it to make one Bite attack followed by two Fin attacks. The Bite attack has a +9 to hit and a reach of 10 feet, delivering a damage total of 16 piercing damage along with an additional 7 cold damage, resulting in significant overall damage potential. The Fin attack, which also has a +9 to hit but a shorter reach of 5 feet, deals 12 slashing damage.
+
+The dragon also possesses a powerful special action known as Tidal Breath, which can be used after a recharge of 5 to 6. This ability allows the dragon to exhale a massive wave of icy seawater in a 30-foot cone that affects all creatures in the area. Each affected creature must make a DC 16 Dexterity saving throw. Failing the save results in a devastating 22 bludgeoning damage and an additional 22 cold damage, accompanied by being pushed 15 feet away and knocked prone. Successfully saving only mitigates the damage to half and avoids the push and prone effects.
+
+This combination of capabilities makes the Young Sea Dragon a strategic and dangerous opponent in both aquatic and terrestrial engagements, capable of controlling the battlefield while delivering high damage outputs.</detail>
+
 
 
 ---

@@ -3,6 +3,38 @@
 
 <summary>A Spy is a highly skilled operative trained in stealth, deception, and infiltration. Often employed by kingdoms, guilds, or secret organizations, Spies gather information, steal secrets, or assassinate key targets without drawing attention to themselves. They are experts at disguises, false identities, and navigating the shadows. In combat, Spies rely on precision strikes with daggers or crossbows, preferring to avoid direct confrontations. Their ability to blend in and escape unnoticed makes them invaluable for covert operations and dangerous opponents when caught off guard.</summary>
 
+<summary>The Spy is a Medium humanoid that excels in stealth and deception. With a modest Armor Class of 12 and a pool of 27 hit points, it is not heavily armored but compensates with agility and cunning. Its Challenge Rating of 1 indicates it is a moderately challenging adversary suitable for low-level parties. A notable strength lies in its Dexterity, which allows for good stealth capabilities and effective ranged attacks with a hand crossbow. However, its average Strength and Constitution mean it is not as effective in direct melee combat. The Spy can be a formidable opponent when it utilizes its special abilities, particularly the Sneak Attack, which can significantly boost its damage output under the right conditions.</summary>
+
+<detail>
+
+The Spy has the following attributes:
+- Strength 10 (Modifier: +0 - average)
+- Dexterity 14 (Modifier: +2 - good)
+- Constitution 10 (Modifier: +0 - average)
+- Intelligence 12 (Modifier: +1 - average)
+- Wisdom 14 (Modifier: +2 - good)
+- Charisma 14 (Modifier: +2 - good)
+
+The Spy has advantageous saving throws in Dexterity (+4) and Wisdom (+4), demonstrating proficiency in avoiding physical attacks and resisting mental effects. Its skills highlight a variety of strengths: deception (+4), insight (+4), investigation (+3), perception (+4), persuasion (+4), sleight of hand (+0), and stealth (+4). It has a passive perception score of 14, allowing it to notice hidden creatures or objects effectively. The Spy can speak any two languages, making it a versatile character for infiltration and information gathering.
+
+Among its special abilities, the Spy possesses Sneak Attack which allows it to deal an additional 7 damage (2d6) during a weapon attack if it has advantage on the attack roll, or if its target is within 5 feet of an ally while it is not disadvantaged. This ability can significantly amplify the Spy's impact in combat and serve as a tactical advantage when positioned properly.
+
+In terms of actions:
+- For a melee attack, the Spy can use a Shortsword, which has a +4 to hit and does 5 piercing damage (1d6 + 2) upon a successful strike.
+- As a ranged option, it can use a Hand Crossbow, also with a +4 to hit, dealing the same damage of 5 piercing (1d6 + 2), effective at a range of 30 feet for close targets and up to 120 feet for distant targets.
+
+For bonus actions, the Spy can utilize Cunning Action, enabling it to take either the Dash, Disengage, Hide, or Use an Object action, enhancing its mobility and tactical options in battle. Additionally, it can perform a Rapid Attack, which allows the Spy to deliver a quick stab with its shortsword. These features enable the Spy to adapt quickly to combat situations, maintaining a balance between offense and defense, while leveraging its cunning and stealth.
+
+The Spy is a cunning and agile humanoid creature, categorized as a Medium enemy with a challenge rating of 1. This type of foe specializes in stealth and deception, making it particularly dangerous in combat due to its ability to strike quickly and retreat without drawing attention. With a solid armor class of 13 and 40 hit points, it has decent survivability for its level. Its strengths lie in its Dexterity, which allows for nimble movements as well as high stealth capabilities, making it difficult to detect. However, its physical and mental attributes, particularly Strength and Constitution, are average at best, limiting its durability and raw power in melee encounters.
+
+The Spy has the following ability scores: Strength is +0, Dexterity is +5 (very good), Constitution is +0, Intelligence is +1 (average), Wisdom is +2 (average), and Charisma is +3 (good). With a high Dexterity modifier, the Spy excels at Stealth, boasting a score of 17, meaning it can easily hide from observers. Its Perception score is 16, allowing it to notice hidden dangers and traps effectively. The Spy can speak any two languages, which adds an element of versatility to its interactions.
+
+In terms of combat, the Spy utilizes its special abilities effectively. It can perform a Multiattack, using either two Shortsword strikes or two Hand Crossbow shots against a single target in one turn. Each Shortsword attack has a +5 to hit modifier and deals 6 piercing damage on a successful hit. The Hand Crossbow operates similarly, with a +5 to hit and the same damage output, allowing for flexibility in choosing melee or ranged combat based on the situation.
+
+The Spy also possesses several notable actions and bonus actions. The Cunning Action allows it to take the Dash, Disengage, or Hide action as a bonus action, which enhances its mobility and ability to evade confrontation. The Feint ability, which can be used after a recharge of 4–6 turns, demonstrates the Spy's tactical mindset. It feigns an attack within 5 feet of a target; if the target fails a Wisdom saving throw against a DC of 13, the Spy gains advantage on its next attack roll against that creature. This can swing the tide of combat, allowing the Spy to land decisive hits on unsuspecting enemies.
+
+Overall, the Spy is a versatile combatant effective in deceptive tactics and stealth maneuvers, making it a formidable opponent for adventurers who underestimate its cunning abilities.</detail>
+
 
 
 ---

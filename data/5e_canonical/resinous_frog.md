@@ -1,6 +1,18 @@
 <MonsterName/>Resinous Frog</MonsterName>
 <CreatureType/>Beast</CreatureType>
 
+<summary>The Resinous Frog is a small beast that serves as a low-level creature in Dungeons & Dragons 5th Edition. Unaligned and notable for its unique abilities, this frog can pose a surprising challenge for adventurers. It has a modest armor class of 12 due to its natural armor and possesses a decent pool of health with 19 hit points, calculated through the roll of three six-sided dice plus a constitution modifier. The frog can move at a speed of 30 feet, making it reasonably agile for a small creature. With a Challenge Rating of 1/4, it offers 50 experience points to those who manage to defeat it. Its attributes reflect a creature that is strong and resilient, though lacking in dexterity and intelligence: it has a Strength score of 14 (+2 modifier), which is good, a Dexterity score of 9 (-1 modifier), which is bad, and a Constitution score of 16 (+3 modifier), which is very good. </summary>
+
+<detail>
+
+The Resinous Frog has no specific skills or languages but does possess passive perception of 10, which indicates its basic awareness of surroundings. It has a unique special ability called "Adhesive Skin," whereby the frog can stick to any creature that touches it. When grappling, a Medium or smaller creature becomes adhered with an escape DC of 12. Notably, if the frog moves while grappling, the adhered creature moves along with it. Additionally, if a creature strikes the frog with a weapon, it must make a DC 12 Strength saving throw; failure means the weapon gets stuck to the frog and cannot be used until removed. This can create strategic disadvantages for players in combat. The frog can release one stuck creature or weapon as a bonus action, showcasing its versatility.
+
+Another interesting ability, "Detach Tongue," allows the frog to detach its tongue as a bonus action and move up to half its speed without incurring opportunity attacks. If the frog was grappling a creature, that creature is freed when the tongue detaches. The tongue regenerates after a short or long rest, reinforcing the frog's survivability.
+
+In terms of combat actions, the Resinous Frog has two primary attack options: "Bite" and "Tongue." The "Bite" attack is a melee weapon attack where it has a +4 to hit and a reach of 5 feet, dealing an average of 5 piercing damage on a successful hit. The "Tongue" attack is a melee weapon attack that can reach out to 10 feet, with the same +4 to hit bonus. It deals 4 bludgeoning damage and has the additional effect of grappling a Medium or smaller creature, with the same escape DC of 12. 
+
+Overall, the Resinous Frog is a clever opponent for low-level characters, utilizing its adhesive abilities to immobilize enemies and its tongue to extend its reach in combat.</detail>
+
 
 
 ---

@@ -1,6 +1,20 @@
 <MonsterName/>Hvalfiskr</MonsterName>
 <CreatureType/>Giant</CreatureType>
 
+<summary>The Hvalfiskr is a formidable creature, embodying the essence of a giant whale and a frost giant in a single entity. As a huge giant with a lawful neutral alignment, the Hvalfiskr exhibits a unique blend of strength, resilience, and determination. It boasts an impressive Armor Class of 16 due to its natural armor and possesses a substantial pool of 275 hit points, making it a challenging foe for adventurers. With a Challenge Rating of 15, it presents a significant threat in combat, capable of delivering powerful attacks and employing various tactical abilities. Its strengths include damage immunities to cold, lightning, and thunder, along with condition immunity to exhaustion. However, its reliance on water for mobility in its whale form and its potential weaknesses to sonic-based attacks can be exploited by astute opponents.</summary>
+
+<detail>
+
+The Hvalfiskr has the following attributes: Strength of 23 (+6 modifier, exceptional), Dexterity of 17 (+3 modifier, good), Constitution of 22 (+6 modifier, exceptional), Intelligence of 10 (+0 modifier, average), Wisdom of 14 (+2 modifier, good), and Charisma of 18 (+4 modifier, very good). It has notable saving throw bonuses: +8 to Dexterity, +5 to Intelligence, +7 to Wisdom, and +9 to Charisma, indicating strong resistances against various effects. Additionally, it possesses a ranged perception ability with a passive score of 17 due to its darkvision and blindsight in whale form.
+
+Its special abilities enhance its effectiveness in aquatic environments. Echolocation allows it to navigate without sight as long as it is not deafened. The ability to Hold Breath grants it the capacity to endure under water for up to 1 hour. The Hvalfiskr can also Speak with Cetaceans, enabling it to communicate with other aquatic creatures like dolphins and whales.
+
+In combat, the Hvalfiskr can perform a Multiattack, choosing to deliver four Bites or Slams or three Chained Anchors. The Bite attack, available only in its whale form, has an attack bonus of +11, dealing an average of 23 piercing damage with each successful hit. The Chained Anchor attack, usable in either Giant or Hybrid forms, also has an attack bonus of +11 and does a significant 28 bludgeoning damage while hooking a target to restrict movement. The target can break free with a successful DC 19 Strength check. The slam attack, meanwhile, deals an impressive average of 24 bludgeoning damage with a +11 attack bonus.
+
+The Hvalfiskr's Whale Song is a potent magical ability that can charm and deal psychic damage to hostile creatures within 60 feet. Each affected creature takes an average of 45 psychic damage (with a saving throw of DC 17 allowing for half damage), and those who fail by 5 or more will also suffer from short-term madness. This effect can significantly alter the dynamics of a battlefield, as charmed creatures become more vulnerable to the Hvalfiskr's influence.
+
+As a bonus action, the Hvalfiskr can Change Shape, transforming between its whale and giant forms, which may be pivotal in adapting to the flow of combat. Additionally, the Reel Anchor ability allows it to pull a hooked creature closer, testing their strength with a DC 19 save; failure results in being dragged up to 30 feet towards the Hvalfiskr, potentially disrupting enemy plans or positioning. Overall, the Hvalfiskr represents a blend of raw power and strategic depth, ideal for encounters in aquatic environments or expansive settings.</detail>
+
 
 
 ---

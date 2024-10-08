@@ -1,6 +1,20 @@
 <MonsterName/>Lunarian</MonsterName>
 <CreatureType/>Fey</CreatureType>
 
+<summary>The Lunarian is a Medium-sized fey creature characterized by its chaotic neutral alignment. It possesses notable strengths such as high mobility, a combination of magical attacks that deal radiant damage, and the ability to summon a powerful light-based effect. Despite its strengths, the Lunarian harbors weaknesses, primarily its vulnerability to natural light which inflicts significant radiant damage, threatening its existence if it is exposed to it. With a challenge rating of 5, it is a formidable opponent capable of dealing substantial damage while being quite agile and resistant to several forms of attacks.</summary>
+
+<detail>
+
+The Lunarian has the following ability scores: Strength 18 (+4, very good), Dexterity 15 (+2, good), Constitution 14 (+2, good), Intelligence 13 (+1, average), Wisdom 12 (+1, average), and Charisma 15 (+2, good). Its hit points total 97, derived from rolling 15d8 and adding 30, allowing it to sustain considerable damage in combat. Its Armor Class of 16, obtained from wearing a breastplate, provides decent protection against physical attacks.
+
+In terms of skills, the Lunarian is proficient in Acrobatics (+5), History (+4), Stealth (+5), and Survival (+4), showcasing a versatile range of capabilities. It resists necrotic and poison damage, making it resilient against certain types of attacks, and is immune to conditions such as being charmed, poisoned, or unconscious. The Lunarian has darkvision for up to 60 feet, and its passive perception score is 11. It can communicate in Celestial, Common, and Sylvan languages.
+
+The Lunarian possesses several special abilities. The "Descendant of The Moon" ability allows it to create magical light that cannot be extinguished, providing a tactical advantage in darkness. However, it also has the "Major Surface Curse," a significant vulnerability that causes it to take 9 (2d8) radiant damage at the start of its turn if exposed to natural light, which can lead to its death and transformation into moondust if this damage reduces its hit points to zero. The "Moon-Touched Weapons" ability makes its weapon attacks magical, dealing an additional 4 (1d8) radiant damage on hits. This effect also causes any creature hit by its weapon to shed dim light in a 10-foot radius for one hour.
+
+The Lunarian can also utilize the "Summon Shadowbeam" ability, which has a recharge time of 6 turns. As a bonus action, it conjures a 10-foot-radius, 40-foot-high cylinder of pale light mixed with shadow at a point it can see within 60 feet. This beam lasts for one minute and can be moved up to 20 feet in any direction by the Lunarian on its subsequent turns. Creatures entering or starting their turn in the beam must succeed on a DC 13 Constitution saving throw or take 11 (2d10) necrotic damage and gain a minor surface curse. Successful saves result in halved damage and avoidance of the curse.
+
+In combat, the Lunarian can engage in a "Multiattack," allowing it to strike with its halberd twice. Each halberd attack is resolved with an attack modifier of +7 to hit, has a reach of 10 feet, and targets one creature. When it hits, the halberd deals 9 (1d10 + 4) slashing damage in addition to the 4 (1d8) radiant damage from its Moon-Touched Weapons ability. This combination of attacks makes the Lunarian a dangerous opponent, especially in terrains conducive to its unique abilities.</detail>
+
 
 
 ---

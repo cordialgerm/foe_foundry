@@ -1,6 +1,16 @@
 <MonsterName/>Pestilence Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
 
+<summary>The Pestilence Swarm is a medium beast characterized by its unaligned nature, and it embodies a menacing force in the realm of Dungeons & Dragons. This creature is primarily designed for ambush tactics and can incapacitate foes with its diseased bites while remaining dormant in darkness. With a Challenge Rating of 1, it presents a moderate threat to adventurers, particularly through its ability to inflict the sewer plague, which leads to debilitating conditions over time. However, its low hit points and reliance on ambush opportunities can be seen as weaknesses, making it vulnerable if confronted directly while exposed to light.</summary>
+
+<detail>
+
+The Pestilence Swarm has an Armor Class of 14, which is good for its hit point total of 22. It has the following ability scores: Strength of 7 (very bad), Dexterity of 16 (very good), Constitution of 13 (average), Intelligence of 1 (very bad), Wisdom of 12 (average), and Charisma of 7 (very bad). The Dexterity score contributes to its agility and ability to evade attacks, granting it a good modifier for its attack rolls and armor class. It possesses damage resistances to bludgeoning, piercing, and slashing, as well as immunities to conditions like charmed and frightened, which allows it to remain unaffected by many forms of control in combat.
+
+One of the swarm's key special abilities is "Dormant in Darkness." In complete darkness, the swarm appears to be lifeless and remains passive until illuminated. When light is introduced, at least one insect activates the entire swarm, prompting it to attack nearby moving creatures. This ability is advantageous in stealthy strategies, allowing it to lay in wait until an opportune moment arises. If left undamaged in darkness, it can revert to its dormant state after one minute, posing no threat to creatures that pass nearby in that state. Additionally, the "Swarm" ability enables it to occupy the same space as other creatures and move through small openings, distinguishing it from typical larger beasts.
+
+In combat, the Pestilence Swarm can employ a melee attack called "Diseased Bites." This requires a roll to hit with a +5 modifier against a target within its space. It inflicts 10 piercing damage on a successful hit, or 5 piercing damage if it has half or fewer hit points remaining. Beyond just physical damage, this attack carries a significant risk: the target must succeed on a DC 11 Constitution saving throw or contract sewer plague. This disease manifests symptoms after 1d4 days, causing fatigue and cramps that result in one level of exhaustion. Furthermore, the infected creature only regains half the normal hit points when using Hit Dice and no hit points from long rests. After each long rest, the creature must make another DC 11 Constitution saving throw. A failed save results in an additional level of exhaustion, while a successful save reduces the exhaustion level. Thus, the Pestilence Swarm not only damages directly but can also inflict lingering consequences that hamper characters in the days to come.</detail>
+
 
 
 ---

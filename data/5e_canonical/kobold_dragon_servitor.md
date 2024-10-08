@@ -1,6 +1,16 @@
 <MonsterName/>Kobold Dragon Servitor</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<summary>The Kobold Dragon Servitor is a small humanoid creature that acts as a servant or warrior devoted to a dragon. With a challenge rating of 1, it is relatively weak in terms of overall hit points and defenses but can be formidable in numbers, particularly due to its special abilities. It has a unique combination of strengths and weaknesses: while it can strike effectively when supported by allies, it suffers greatly in sunlight, making it less effective in outdoor encounters during the day. The combat capabilities of the Kobold Dragon Servitor are enhanced through its ability to gain resistance to the specific damage type of its dragon master's breath weapon, making it a valuable ally in battles against adventurers, especially when operating in groups.</summary>
+
+<detail>
+
+The Kobold Dragon Servitor has the following attribute scores: Strength of 6, which results in a very bad modifier of -2, Dexterity of 14 providing a good modifier of +2, Constitution of 8 leading to a bad modifier of -1, Intelligence of 10 granting an average modifier of +0, Wisdom of 8 also resulting in a bad modifier of -1, and Charisma of 10 with an average modifier of +0. This mix of strengths and weaknesses means that while it is nimble and can evade attacks, its physical toughness and combat prowess are limited.
+
+In terms of special abilities, the Kobold Dragon Servitor utilizes Pack Tactics, giving it advantage on attack rolls against a creature as long as an ally is close by, which significantly increases its effectiveness in group encounters. However, it suffers from Sunlight Sensitivity, incurring disadvantage on attack rolls and Perception checks in sunlight, making it vulnerable when caught outside during the day. It possesses a unique trait called Dragons Blood that grants it resistance to the damage type associated with its dragon master’s breath weapon, enhancing its survivability against certain attacks. Additionally, the Ominous Shadow ability allows the kobold to negate its Sunlight Sensitivity when within 60 feet of its master, further increasing its combat viability.
+
+For its actions, the Kobold Dragon Servitor can use a melee attack called Shiv, with a +4 to hit and the ability to deal 3 piercing damage (1d3 + 2) to a single target at close range. Additionally, it can use a ranged weapon, the Sling, which also offers a +4 to hit, with a range of 30 feet for normal attacks and 120 feet for long-range shots, inflicting 4 bludgeoning damage (1d4 + 2) on a successful hit. This versatility allows the Kobold Dragon Servitor to engage effectively in both melee and ranged combat, making it a threat in multiple scenarios.</detail>
+
 
 
 ---

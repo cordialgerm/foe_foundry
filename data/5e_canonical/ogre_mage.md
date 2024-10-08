@@ -1,6 +1,18 @@
 <MonsterName/>Ogre Mage</MonsterName>
 <CreatureType/>Giant</CreatureType>
 
+<summary>The Ogre Mage is a formidable large giant that blends physical might with magical prowess, making it a unique threat on the battlefield. With an Armor Class of 16 and a substantial pool of Hit Points totaling 102, it can withstand considerable damage before falling. The creature has a Challenge Rating of 7, granting 2,900 experience points upon defeat. The Ogre Mage's stats illustrate a balance between strength, constitution, and charisma. It possesses an impressive Strength of 18, which allows it to hit hard, and a good Constitution score of 16 that enhances its durability. However, its Dexterity is average, meaning it lacks speed and agility, making it easier for nimble opponents to evade its attacks. The Ogre Mage excels in deception and utility, featuring a range of innate spellcasting abilities that keep its enemies off balance and provide options for crowd control.</summary>
+
+<detail>
+
+The Ogre Mage's abilities consist of a high Strength score (+4 modifier considered very good), an average Dexterity (+0, considered average), a good Constitution (+3, which is also very good), and exceptional Charisma (+3 modifier, which enables it to effectively use spells). It has an Intelligence modifier of +2, which is good, and a Wisdom modifier of +1, which is considered average. The creature's proficiencies include skills in arcana (+5), deception (+6), perception (+4), and stealth (+3), which allows it to perform well in combat scenarios and social interactions.
+
+The Ogre Mage's innate spellcasting ability is based on its Charisma with a spell save DC of 14. This allows it to cast various spells without needing material components, providing it with significant versatility in combat. At will, it can cast Darkness, which creates a 15-foot-radius sphere of magical darkness that non-magical light cannot penetrate, effectively obscuring it from sight. The spells Invisibility and Gaseous Form offer it options for evasion and escape; Invisibility permits it to remain hidden for up to an hour unless it attacks or casts a spell, while Gaseous Form allows it to become a cloud of gas that can move through cracks and small spaces, gaining resistance to nonmagical damage.
+
+In terms of combat actions, the Ogre Mage can make two attacks through its Multiattack feature, effectively increasing its damage output in a single turn. In its true form, it can strike with its Claw, causing a generous 11 slashing damage. Alternatively, it can wield an Iron Club, inflicting 17 bludgeoning damage from a distance of 10 feet. Notably, the Iron Club also has a unique feature: when it hits or touches a target, it can end any spell affecting that target that was cast using a spell slot of 3rd level or lower.
+
+The Ogre Mage possesses several formidable spells with powerful effects: Hold Person targets a humanoid, which must succeed on a DC 14 Wisdom saving throw or become paralyzed, allowing the Ogre Mage to capitalize on a stationary target. Cone of Cold is a devastating area-of-effect spell dealing substantial cold damage, with affected creatures making a saving throw to mitigate damage. Lastly, it can use Read Scroll once per day to cast a spell without expending the scroll's magic, further enhancing its versatility in specific scenarios. Overall, the Ogre Mage stands as a significant challenge for adventurers, capable of dealing both physical and magical damage while maintaining control over the battlefield.</detail>
+
 
 
 ---

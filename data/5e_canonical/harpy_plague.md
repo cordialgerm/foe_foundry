@@ -1,6 +1,20 @@
 <MonsterName/>Harpy, Plague</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<summary>The Plague Harpy is a medium, neutral evil monstrosity that embodies the essence of disease and despair. With a challenge rating of 6, it represents a formidable opponent, boasting a considerable amount of hit points at 142 and a decent armor class of 15 due to its natural armor. Its key strengths lie in its ability to inflict disease upon its foes, particularly through its Virulence ability, which can spread harpy's plague among those who come too close. The harpy is also fairly agile, with a good Dexterity of 14, allowing for effective movement both on the ground and in the air, where it can fly at a speed of 60 feet. Its offensive capabilities are bolstered by strong melee and ranged attacks, making it a dangerous creature in combat. However, its relatively average intelligence and wisdom suggest that it may not be the most cunning adversary. </summary>
+
+<detail>
+
+The Plague Harpy's abilities are characterized by notable statistics: Strength is 16 (+3, good), Dexterity is 14 (+2, average), Constitution is 17 (+3, good), Intelligence is 11 (+0, average), Wisdom is 14 (+2, average), and Charisma is 16 (+3, good). The harpy has skills in Perception with a modifier of +2 and is resistant to necrotic and poison damage. It also has immunity to the poisoned condition, and it possesses blindsight out to 90 feet, providing it with strong sensory awareness.
+
+Among its special abilities, Limited Telepathy allows the Plague Harpy to communicate simple messages and images to any creature within 90 feet that understands a language, without enabling a response from the recipient. Its Virulence ability enables the harpy to spread its plague, causing infected creatures to become contagious after 24 hours. If an uninfected creature starts its turn within 5 feet of a contagious creature, it must succeed on a DC 15 Constitution saving throw or become infected.
+
+In battle, the Plague Harpy can execute a Multiattack, which allows it to perform a Dirge followed by a Bite and two Talons attacks or three Sorrowful Caws. The Bite attack has a +6 to hit and deals 8 piercing damage plus 7 necrotic damage on a successful hit. Additionally, it forces the target to make a DC 15 Constitution saving throw; failure results in contracting the harpy’s plague, which can severely reduce their maximum hit points, potentially leading to death if not cured. The Talons attack also has a +6 to hit, dealing 14 slashing damage, and if it grapples a medium or smaller creature, it can automatically deal damage with its Talons and prevent other attacks against different targets. The Sorrowful Caw is a ranged spell attack that deals 13 psychic damage, again with a +6 to hit.
+
+The harpy's Dirge is particularly dangerous as it telepathically sings a mournful hymn that targets a creature within 90 feet. The target must make a DC 15 Wisdom saving throw or become disheartened for one minute. While disheartened, creatures suffer disadvantage on saving throws against being poisoned or contracting a disease. The target can attempt to break free from the disheartened condition at the end of its turns.
+
+In summary, the Plague Harpy is an exceptional threat in combat due to its ability to inflict disease and cause despair, coupled with its flying mobility and strong melee attacks. Its tactical use of psychological manipulation through the Dirge makes it a challenging adversary for any party encountering it.</detail>
+
 
 
 ---

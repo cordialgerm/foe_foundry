@@ -1,6 +1,18 @@
 <MonsterName/>Husk Demon</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<summary>The Husk Demon is a Medium fiend that embodies the chaotic and destructive nature of demonic entities. With a challenge rating of 4, it is a formidable opponent in combat, primarily using its life-draining abilities to weaken foes while restoring its own vitality. It possesses decent defenses with an armor class of 15 and a total of 82 hit points, allowing it to withstand a fair amount of damage. Its speed of 40 feet and ability to fly 25 feet enhances its mobility, making it a versatile threat on the battlefield. However, despite its strengths, the Husk Demon has a range of ability scores that indicate below-average physical prowess, particularly in strength, intelligence, and charisma, making it less effective in certain combat situations. </summary>
+
+<detail>
+
+The Husk Demon has the following attributes according to its ability scores: Strength is +1 (average), Dexterity is +5 (very good), Constitution is +3 (good), Intelligence is -2 (bad), Wisdom is -1 (average), and Charisma is -3 (bad). These scores dictate the creature’s capabilities and effectiveness during interactions and combat. The demon has darkvision with a range of 60 feet, allowing it to see in dim light as if it were bright light. Its Perception score of 13 is average, providing it with the ability to notice hidden creatures or traps. The demon is also adept at stealth, with a score of 15, enabling it to move quietly and remain undetected. The languages it can speak include Abyssal, Void Speech, and it possesses telepathy that can reach up to 60 feet.
+
+In terms of special abilities, the Husk Demon can use its Amorphous trait to slip through extremely narrow spaces, allowing it to evade enemies or traverse tight environments easily. It has Demonic Resilience, granting it resistance to cold, fire, and lightning damage, along with immunity to poison damage and the poisoned condition, providing significant protection against various attacks. The creature's Magic Resistance allows it to have advantage on saving throws against spells and magical effects, making it particularly resilient to magical assault.
+
+During combat, the Husk Demon can perform a Multiattack, allowing it to make two Life Drain melee attacks. When it uses its Life Drain ability, it makes an attack roll with a +5 modifier (good) to hit, and if successful, it deals 7 slashing damage along with an additional 9 necrotic damage (from rolling 2d8). The demon regains hit points equal to half of the necrotic damage dealt, reinforcing its role as a life-draining opponent. Furthermore, if the target takes necrotic damage, it must succeed on a DC 15 Constitution saving throw or suffer a reduction in its hit point maximum equal to the necrotic damage it received until it completes a long rest. If this reduction leaves the target at a hit point maximum of 0, it results in death.
+
+As a bonus action, the Husk Demon can use Soul Feed to target up to two creatures within 20 feet. Each target must succeed on a DC 15 Charisma saving throw. If they fail, one of three debilitating effects can be inflicted: The Happiness Feast causes the target to become crestfallen, resulting in disadvantage on their attack rolls until the end of their next turn. The Hope Feast leads the target to feel despondent, imposing disadvantage on all saving throws until the end of their next turn. Lastly, the Motivation Feast causes the target to lose ambition, halving their speed until the end of their next turn. This ability adds a layer of strategic depth to its combat style, allowing the Husk Demon to weaken its enemies’ resolve and effectiveness in battle.</detail>
+
 
 
 ---

@@ -1,6 +1,16 @@
 <MonsterName/>Wind Weasel</MonsterName>
 <CreatureType/>Fey</CreatureType>
 
+<summary>The Wind Weasel is a medium-sized fey creature embodying chaotic neutral alignment. It possesses a unique duality, allowing it to appear as a small weasel or shift into a whirlwind form, granting it both mobility and concealment in combat. With a challenge rating of 2, it presents a moderate threat to adventurers, showcasing its strengths in stealth and agile attacks. Its ability to traverse through tight spaces without hindrance and evade opportunity attacks makes it a slippery opponent. However, its primary weaknesses lie in its lower defenses, with an armor class of 13, and reliance on stealth and mobility rather than brute force.</summary>
+
+<detail>
+
+The Wind Weasel has the following attributes: Strength of 12, Dexterity of 16, Constitution of 14, Intelligence of 10, Wisdom of 12, and Charisma of 11. Its Dexterity gives it a good modifier of +3, which enhances its agility and its attacks. The Constitution modifier of +2 signifies average endurance, while its other attributes are less impactful in combat. Its saving throw for Dexterity is +5, demonstrating good resilience against effects that target this attribute. With skills in perception at +3 and stealth at +5, it excels at evasion and spotting potential threats. The creature also has darkvision, allowing it to see in darkness up to 60 feet, and it communicates in Sylvan and Umbral languages.
+
+The Wind Weasel possesses several special abilities that make it formidable in specific encounters. In its whirlwind form, it can occupy a hostile creature's space without hindrance, moving through extremely narrow gaps. It also benefits from the Flyby ability which allows it to escape an enemy’s reach without provoking opportunity attacks. Its Hidden In The Wind ability disguises it as a dust devil until it attacks, making it difficult to detect without a successful DC 15 Intelligence check by enemies. The Shapechanger ability allows the Wind Weasel to switch between its weasel form and the whirlwind form at will. While in whirlwind form, it cannot make physical attacks but gains advantages such as immunity to certain conditions like being grappled or restrained, and it has a flying speed of 60 feet. The Windy Speed ability grants it immunity to the slow spell's effects while reverting it to its true form.
+
+In combat, the Wind Weasel can execute a Multiattack, making one bite attack and two scythe claw attacks. The bite attack has a +5 to hit and deals an average of 5 piercing damage, while the scythe claw attack also has a +5 to hit and deals a higher average of 8 slashing damage. Additionally, in whirlwind form, it can unleash a devastating Whirling Leaves action, forcing all creatures in its space to make a DC 13 Dexterity saving throw or suffer 21 slashing damage, taking half damage on a successful save. This ability can significantly impact combat by dealing damage to multiple opponents at once. Overall, the Wind Weasel is a cunning and elusive creature that excels in hit-and-run strategies, benefiting from its unique abilities to confuse and evade its enemies.</detail>
+
 
 
 ---

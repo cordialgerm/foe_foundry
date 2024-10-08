@@ -1,6 +1,24 @@
 <MonsterName/>Onyx Magistrate</MonsterName>
 <CreatureType/>Construct</CreatureType>
 
+<summary>The Onyx Magistrate is a formidable Large Construct that embodies law and order through a lawful evil alignment. It serves as an enforcer of harsh codes, utilizing its strengths in magic and combat to impose its will on the battlefield. With a high Armor Class of 16 and a notable pool of Hit Points at 123, it can withstand significant damage while inflicting high amounts of damage itself, particularly through its unique abilities. The Onyx Magistrate excels in its magical resistance and the ability to avoid alterations to its form, making it a challenging foe. However, it has a relatively low Dexterity, which may make it less agile in combat situations. The creature's challenge rating of 8 indicates that it is a strong adversary, suitable for mid-level adventurers.</summary>
+
+<detail>
+
+The Onyx Magistrate has the following attributes: Strength of 19 (+4), Dexterity of 10 (+0), Constitution of 18 (+4), Intelligence of 16 (+3), Wisdom of 20 (+5), and Charisma of 20 (+5). Its Strength signifies exceptional physical power, while its high Wisdom and Charisma contribute to its effectiveness in social and perceptive interactions, demonstrating a very good insight into situations. The Dexterity score, however, is average, indicating no significant bonuses to agility or reflexes.
+
+In terms of skills, the Onyx Magistrate possesses insights into its surroundings with a +8 bonus to insight, intimidation, perception, and persuasion, and an average +6 bonus in religion. This solid array of skills allows it to manipulate and influence creatures effectively, particularly through intimidation and persuasion. 
+
+The Onyx Magistrate is immune to several types of damage, including necrotic and poison, and it cannot be affected by bludgeoning, piercing, or slashing damage from attacks that are not made with magical or adamantine weaponry. It also has resistances to cold, fire, and psychic damage. Furthermore, it has immunity to various conditions, such as being charmed, exhausted, frightened, or paralyzed, making it a very resilient adversary. Its senses include darkvision up to 60 feet and a passive perception of 18, allowing it to detect hidden foes effectively. The creature understands Common and Infernal languages, enabling it to communicate with a range of beings.
+
+For special abilities, the Onyx Magistrate benefits from Immutable Form, granting it immunity to any magic that would change its form, and Magic Resistance, giving it advantage on saving throws against spells and magical effects. Additionally, all its weapon attacks are considered magical, which enhances their effectiveness against resistant foes.
+
+When attacking, the Onyx Magistrate can perform a Multiattack, allowing it to make three melee scepter attacks or use its Necrotic Ray feature twice. The scepter attack has a +7 to hit and has a reach of 5 feet, dealing an average of 15 (2d10 + 4) bludgeoning damage and forcing the target to succeed on a DC 15 Strength saving throw to avoid being knocked prone. The Necrotic Ray is a ranged spell attack with a +8 bonus, dealing an average damage of 17 (3d8 + 4) necrotic damage from a distance of 30 feet, which can significantly weaken opponents.
+
+One of its most notable abilities is Dire Judgement, which can be used once per day. This ability forces all creatures the magistrate chooses within 30 feet to succeed on a DC 16 Wisdom saving throw or receive a curse that prevents them from regaining hit points through magical means, thereby crippling their ability to heal in combat. Furthermore, affected creatures must subtract a d4 from their attack rolls or saving throws until the curse is lifted.
+
+As a reaction, the Onyx Magistrate can utilize Tip the Scales, which allows it to add 3 to its Armor Class against a specific attack or to succeed on a failed saving throw. This ability has a recharge condition, making it a powerful defensive option that can significantly reduce incoming damage.</detail>
+
 
 
 ---

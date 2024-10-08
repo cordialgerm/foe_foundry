@@ -1,6 +1,16 @@
 <MonsterName/>Scrag</MonsterName>
 <CreatureType/>Giant</CreatureType>
 
+<summary>The Scrag is a formidable large giant known for its resilience and aquatic adaptability. With a robust armor class of 15 and 84 hit points, it presents a decent challenge to adventurers, particularly with its regenerative abilities and amphibious nature. The Scrag excels in combat not only through its physicality but also due to its ability to recover from damage quickly. However, it does have some weaknesses, notably its susceptibility to fire and acid damage, which can inhibit its regeneration. The creature’s challenge rating of 5 indicates that it is suitable for a party of mid-level adventurers, providing opportunities for strategic combat and potential for high-stakes interactions.</summary>
+
+<detail>
+
+In terms of attributes, the Scrag has a strength of 18, which gives it a good modifier of +4, making it very good at physical attacks. Its dexterity of 12 (+1) and constitution of 20 (+5) enhance its survivability and ability to evade attacks, rendering its mobility and health exceptional. The intelligence score of 8 (-1) is very bad, indicating limited wits, while its wisdom and charisma both sitting at 12 (+1) and 8 (-1) respectively, suggest average perceptiveness but poor charm. 
+
+The Scrag has several special abilities that significantly impact gameplay. It possesses Keen Smell, granting it advantage on Perception checks reliant on smell, allowing for effective tracking and ambush. Its Amphibious trait enables it to breathe both in air and underwater, making it versatile in various terrains. The Regeneration ability allows it to recover 10 hit points at the start of its turn unless hindered by acid or fire damage; this regenerative power makes the Scrag a challenging opponent since it can only be permanently defeated if it begins its turn at 0 hit points. The Severed Limbs feature adds a unique dynamic to combat, where a critical hit with a slashing weapon results in the loss of an extremity, which can still operate independently, providing the Scrag with additional offensive potential even when injured.
+
+In combat, the Scrag employs a Multiattack action, which allows it to make a bite attack followed by two claw attacks in a single turn. The Bite attack is a melee weapon attack with a +7 to hit, dealing 11 piercing damage on a successful strike. Its Claw attack, also with a +7 to hit, can strike at a longer reach and inflicts 9 slashing damage. With these combinations of physical attacks and regenerative capabilities, the Scrag is a tough adversary that can extend combat encounters, especially if the party lacks effective means to deal with its vulnerabilities.</detail>
+
 
 
 ---

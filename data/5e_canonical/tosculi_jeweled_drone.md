@@ -1,6 +1,22 @@
 <MonsterName/>Tosculi Jeweled Drone</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<summary>The Tosculi Jeweled Drone is a small humanoid creature with lawful evil alignments, characterized by its striking appearance and unique abilities that enhance its allies while hindering its enemies. With an Armor Class of 15, it has reliable defenses thanks to its natural armor. The drone boasts a strong pool of hit points, totaling 90, making it resilient in combat. It has an impressive Dexterity of 18, allowing it to excel in Agile maneuvers and attacks, while its Constitution of 18 grants it formidable durability. The Jeweled Drone can fly with a speed of 60 feet, making it highly mobile, and walk at a speed of 30 feet. As a Challenge Rating of 4 creature, it is a moderately challenging foe that can be a powerful ally in battle. However, it is vulnerable to strategy and cunning, particularly when faced with opponents who can avoid its sight-based abilities.</summary>
+
+<detail>
+
+The Tosculi Jeweled Drone has several attributes that enhance its effectiveness in various situations. Its Strength score is average at 10, meaning it lacks physical power. Its Dexterity is very good at +4, making it a fast and agile attacker. The Constitution, also very good at +4, provides it with excellent durability. With an Intelligence of +2, it can utilize some tactical thinking but is not exceptionally bright. Its Wisdom score is good at +2, enhancing its perception and insight abilities. Finally, its Charisma of +3 reflects its capability to deceive and persuade others effectively.
+
+The drone has multiple skills to aid its strategic role in combat. It possesses a +5 in Deception, which is exceptional for misleading opponents, a +4 in Insight to discern others' motives, and a +5 in Persuasion, allowing it to command or influence others effectively. It is also immune to being charmed or frightened, which makes it a stable presence on the battlefield. Additionally, the drone has darkvision, allowing it to see in the dark up to 60 feet, with a passive Perception of 12.
+
+The special abilities of the Tosculi Jeweled Drone are particularly noteworthy. Its Pheromones emit a sweet scent that enhances other tosculi allies within 15 feet, allowing them to add a d6 to one attack roll or saving throw they make, provided they can smell it. This effect adds a layer of unpredictability in combat, significantly increasing the effectiveness of its allies in critical moments. The Scintillating Carapace ability enables the drone to shine in bright light, potentially blinding non-tosculi creatures within 30 feet unless they succeed on a DC 12 Wisdom saving throw. This ability is incredibly useful for controlling the battlefield, as it forces opponents to choose between engaging with the drone or averting their eyes.
+
+In terms of actions, the Tosculi Jeweled Drone can make three attacks per turn through its Multiattack feature, which consists of two claw strikes and one scimitar attack. Each claw attack has a +6 to hit and deals 7 slashing damage on a hit. Its scimitar attack does the same amount of slashing damage, but it also inflicts an additional 10 poison damage, which poses a significant threat as it can reduce targets to 0 hit points while leaving them in a poisoned state for an hour. While poisoned in this manner, the target is paralyzed, making it critically dangerous to engage the drone.
+
+Its defensive capabilities are enhanced by the Protect the Queen reaction, which grants a +2 bonus to the AC of a tosculi hive queen when the drone is nearby, further solidifying its role in protecting its more important allies.
+
+Overall, the Tosculi Jeweled Drone is a versatile and cunning opponent that excels in support roles and contains specialized abilities that can quickly turn the tide of battle in favor of its allies while presenting significant challenges to its foes.</detail>
+
 
 
 ---

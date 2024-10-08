@@ -1,6 +1,22 @@
 <MonsterName/>Young Sapphire Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
 
+<summary>The Young Sapphire Dragon is a powerful and intelligent creature that embodies the essence of psionic energy. This Large Dragon possesses a formidable presence in combat, with a high Armor Class of 18, which makes it difficult for opponents to land successful hits. With a substantial pool of hit points totaling 161, it can endure significant damage before succumbing. Notably, its Challenge Rating of 10 indicates that it poses a serious threat, granting 5,900 experience points to those who defeat it. The dragon possesses a blend of physical prowess, excellent mobility with a flying speed of 80 feet, and potent mental abilities, making it a versatile combatant that excels in both melee and spells. However, its primary weakness lies in its reliance on psionic abilities, leaving it vulnerable to particular forms of attacks that target its mental or magical properties.</summary>
+
+<detail>
+
+The Young Sapphire Dragon has the following attributes: Strength 18 (+4), Dexterity 18 (+4), Constitution 16 (+3), Intelligence 18 (+4), Wisdom 16 (+3), and Charisma 14 (+2). The modifiers indicate that the dragon possesses above-average physical and mental capabilities, which are instrumental in its effectiveness in combat and its ability to manipulate others. For saving throws, it has a Constitution modifier of +7, Intelligence modifier of +8, Wisdom modifier of +7, and Charisma modifier of +6, showcasing its exceptional defenses against spells and Psionic attacks.
+
+This dragon has a variety of skills that make it a well-rounded adversary, including arcana (+8), deception (+6), history (+8), insight (+7), perception (+7), and persuasion (+6). It has damage immunity to psychic damage and is immune to being fatigued. Its keen senses allow it to detect threats with darkvision extending to 120 feet and a passive perception score of 20. The dragon can communicate in multiple languages: Common, Deep Speech, Draconic, Undercommon, and can use telepathy over a range of 120 feet.
+
+The Young Sapphire Dragon has special abilities that augment its combat and reconnaissance capabilities. Its Far Thoughts ability allows it to be aware of any creatures using psionic abilities or telepathy within 100 miles. This makes it an exceptional scout and enables it to psionically observe specific targets, allowing it to see and hear from a distance while being blind and deaf to its physical surroundings. This observation can be maintained indefinitely and requires an action to end the effect.
+
+Additionally, the dragon has Innate Spellcasting, with a Charisma-based spellcasting ability and a spell save DC of 15. It can cast spells such as comprehend languages and detect thoughts three times per day without needing any material components, giving it an edge in obtaining information and interpreting the thoughts of others.
+
+In terms of actions during combat, the Young Sapphire Dragon has a Multiattack feature, allowing it to strike once with its bite and twice with its claws during a single turn. The Bite attack is a melee weapon attack with a +8 to hit and a reach of 10 feet, inflicting 20 piercing damage alongside 4 psychic damage on a hit. The Claws attack, also a melee weapon attack with a +8 to hit and a reach of 5 feet, delivers 13 slashing damage per hit.
+
+One of its most powerful abilities is the Discognitive Breath, which recharges on a roll of 5-6. This attack unleashes a cone of psychic energy extending 30 feet, requiring creatures within its area to make a DC 15 Intelligence saving throw. On a failed save, a target takes 49 psychic damage, while success results in halved damage. هذا الهجوم يعرّض الأعداء لمستوى عالٍ من الضرر، مما يجعله فائق الفعالية في المعارك الجماعية.</detail>
+
 
 
 ---

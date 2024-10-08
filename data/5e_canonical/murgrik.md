@@ -1,6 +1,20 @@
 <MonsterName/>Murgrik</MonsterName>
 <CreatureType/>Aberration</CreatureType>
 
+<summary>Murgrik is a formidable and disturbing creature classified as a large aberration with a chaotic evil alignment. With an impressive armor class of 18 thanks to its natural armor and a significant hit point pool of 152, Murgrik is designed to endure prolonged encounters. It possesses a diverse range of movement options, being able to swim at 40 feet, fly at 20 feet, and walk at 40 feet, making it difficult for adversaries to corner. Its challenge rating is 9, representing a considerable threat to adventurers, providing 5,000 experience points upon defeat. This creature presents a high level of challenge due to its physical capabilities and unique abilities, such as its blood frenzy and unsettling ululations. However, it has low intelligence and charisma, which could be considered weaknesses in certain situations, especially in interactions involving social skills.</summary>
+
+<detail>
+
+In terms of attributes, Murgrik has a Strength score of 23, which translates to a +6 modifier, indicating exceptional physical power. It has average Dexterity at 10 with no modifier. Its Constitution score is 18, granting it a +4 modifier that translates to very good durability. Wisdom is at 14, yielding a +2 modifier, which is good for perception checks. Its Intelligence is low at 6, giving a -2 modifier, and it has a Charisma of 9, resulting in a -1 modifier, both of which are very bad for any social interactions.
+
+Murgrik's special abilities enhance its combat effectiveness. "Blood Frenzy" provides the creature with advantage on melee attack rolls against wounded foes, which significantly increases its offensive capabilities, especially against weakened targets. With "Hold Breath," it can remain submerged for up to 30 minutes, making it adept in aquatic environments. The "Keen Scent" ability gives it advantage on Wisdom (Perception) checks based on smell, allowing it to detect opponents even when they are hidden. The "Tentacle Flight" ability allows Murgrik to fly using its tentacles; however, its flying speed is halved when grappling, adding a tactical layer to its aerial maneuvers.
+
+In combat, Murgrik can execute a multiattack, allowing it to make three separate attacks: one bite and two attacks with its tentacles. The bite attack provides a +10 to hit and deals 15 piercing damage. It can also use its tentacles to grapple smaller targets, dealing 9 bludgeoning damage and restraining them if they fail to escape. Notably, its "Stomach Maw" ability lets it swallow smaller creatures it grapples, inflicting ongoing acid damage while rendering them blinded and restrained, significantly limiting their ability to act or escape.
+
+Additionally, Murgrik possesses the "Unsettling Ululations," a recharge ability, which emits a terrifying wail. This attack forces creatures within a 30-foot radius to make a DC 14 Wisdom saving throw. On a failed save, targets take 21 psychic damage and become frightened for a minute, creating a considerable psychological disadvantage in combat. Even on a successful save, they suffer half the damage and are not frightened, allowing Murgrik to apply pressure to multiple foes simultaneously. 
+
+Overall, Murgrik represents a dangerous foe with both potent physical attacks and psychological warfare tactics. Its high mobility, ability to grapple and restrain opponents, and fear-inducing wail make it a formidable opposition in any encounter.</detail>
+
 
 
 ---

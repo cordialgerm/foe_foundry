@@ -1,6 +1,16 @@
 <MonsterName/>Likho</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<summary>The Likho is a medium-sized monstrosity embodying chaotic evil, making it a formidable foe for adventurers in Dungeons & Dragons. It boasts a robust armor class of 15 due to its natural armor and has a substantial pool of hit points totaling 105, derived from 14d8 plus an additional 42. This enduring creature has a walking speed of 40 feet and is classified with a challenge rating of 5, reflecting its capability to provide a significant challenge to a party while granting 1,800 experience points upon defeat. The Likho stands out due to its high dexterity and charisma, providing it with excellent agility in combat and the ability to manipulate or influence others effectively. However, its intelligence is relatively average, which may limit its strategic thinking. Overall, the Likho combines physical prowess, magical resilience, and deceptive abilities, making it a potent adversary.</summary>
+
+<detail>
+
+The Likho possesses the following attributes: Strength 16 (+3), Dexterity 18 (+4), Constitution 16 (+3), Intelligence 13 (+1), Wisdom 16 (+3), and Charisma 19 (+4). Its dexterity modifier of +4 is very good, allowing it to excel in skills such as Acrobatics and Stealth while also enhancing its defense against ranged attacks. The Likho's saving throws are highly effective in Dexterity and Charisma with modifiers of +7, both classified as very good, aiding it significantly against physical attacks and spells. Its passive perception is 16, allowing for a decent level of awareness in its environment.
+
+The Likho employs several unique abilities that enhance its capabilities in combat. Limited Telepathy allows it to transmit simplistic messages and images to creatures understanding a language within a 120-foot radius, promoting strategic communication without enabling response. The Pounce ability provides a tactical edge, enabling the Likho to knock its targets prone by executing a successful claw attack following a charge of at least 20 feet, putting opponents at a disadvantage and allowing for an additional claw attack as a bonus action if the target is downed. Its Magic Resistance grants the Likho advantage on saving throws against spells and magical effects, making it particularly resilient against magical assaults.
+
+In combat, the Likho can use a Multiattack action, enabling it to employ its Disruptive Gaze followed by four Claw attacks. The Claw attack is a melee weapon attack with a +7 to hit and deals an average of 8 slashing damage per hit. The Disruptive Gaze targets a creature within 60 feet, compelling it to succeed on a DC 15 Charisma saving throw. If the target fails, they suffer from disadvantage on all attack rolls, ability checks, and saving throws until the end of their next turn, effectively hindering their performance for a critical duration in combat. This combination of abilities allows the Likho to be an aggressive and disruptive presence on the battlefield.</detail>
+
 
 
 ---

@@ -1,6 +1,24 @@
 <MonsterName/>Ia’Affrat</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<summary>Ia’Affrat is a formidable Large Swarm Fiend, embodying the essence of lawful evil. With a powerful combination of high intelligence, charisma, and dexterity, he is a master manipulator and a cunning combatant. His stats reflect his strength as he has an impressive Armor Class of 17 derived from natural armor and a considerable pool of Hit Points totaling 170, which allows him to endure through battles. However, he has a significantly low strength score of 3, indicating that he is not physically strong. Ia’Affrat excels in spellcasting and has numerous resistances and immunities, making him difficult to affect with spells and physical attacks alike. He has notable vulnerabilities to cold damage, which can be exploited in combat. His telepathic communication abilities allow him to coordinate effectively with his allies, enhancing his tactical prowess during encounters.</summary>
+
+<detail>
+
+Ia’Affrat's attributes include a Dexterity of 21 (+5 modifier), which provides a very good bonus to his agility and reflexive actions, and an Intelligence of 20 (+5) that enhances his strategic options and spellcasting. His Wisdom of 18 (+4) allows for good perception and insight checks, while his Charisma of 23 (+6) ensures he is exceptional at manipulation and deception. His Constitution score of 16 (+3) contributes to his health and resilience. For saving throws, he has a +10 modifier in Dexterity, +8 in Constitution, +9 in Wisdom, and +11 in Charisma, showcasing strong defensive capabilities against a variety of effects. The creature possesses skills in Arcana (+10), Deception (+11), Insight (+9), Perception (+9), and Persuasion (+11), all reflecting his strength in social and magical interactions. 
+
+In terms of damage vulnerabilities, Ia’Affrat is vulnerable to cold damage. He is immune to bludgeoning, fire, piercing, poison, and slashing damage, and he is also immune to multiple conditions such as charmed, frightened, paralyzed, petrified, poisoned, prone, restrained, and stunned. His senses allow for blindsight up to 10 feet and darkvision out to 120 feet, with an impressive passive Perception of 19.
+
+Ia’Affrat has several powerful special abilities. His "Collective Mind" allows him to communicate telepathically with all his individual Fiends within 50 miles, and if he is reduced to half his hit points or fewer, he transforms into a shapeless form and can no longer take on a humanoid appearance until healed. "Devil's Sight" permits him to see in magical darkness, ensuring he is never caught off guard in dark environments. "Grasping Limbs" in humanoid form allows him to use weapons and objects as if he were a standard humanoid. His "Legendary Resistance" mechanism enables him to succeed at saving throws even if he would initially fail, showcasing his resilience. With "Magic Resistance," he gains advantage on saving throws against spells and magical effects.
+
+The "Smoke Shroud" ability allows Ia'Affrat to produce a cloud of dark smoke around him, obscuring the area for everyone except himself and potentially blinding any non-devil creature that fails a Constitution saving throw when starting their turn in the smoke. In his shapeless form, "Swarm" allows him to occupy any creature's space, demonstrating his elusive nature.
+
+When it comes to actions, Ia’Affrat can perform a multiattack allowing him to make three Bite or Burning Claw attacks, or four Flaming Insect Bolt attacks, enabling him to deal significant damage across multiple attacks. His special attacks include Bite, which inflicts piercing and poison damage, and Burning Claw, which adds fire damage to his slashing attacks. The "Flaming Insect Bolt" functions as a ranged attack that inflicts fire and poison damage with good accuracy.
+
+Ia’Affrat can also execute the "Inhabit" action, allowing him to take control of a humanoid or a recently dead humanoid corpse, effectively allowing him to manipulate another character during combat while retaining many of his abilities. His bonus actions include "Shape Swarm," which lets him switch between humanoid and shapeless forms; "Teleport," enabling quick repositioning in combat; and "Vermin Breath," which summons swarms of insects to assist him. The "Consume Host" ability allows him to inflict necrotic damage to a host body he controls, healing himself in the process.
+
+In addition to his abilities, Ia’Affrat can use legendary actions during combat. These include teleportation, summoning swarms of insects, and the ability to consume a host, reinforcing his versatility and power. Overall, Ia’Affrat serves as a potent foe, adept at both direct combat and intricate manipulation of others in the battlefield.</detail>
+
 
 
 ---

@@ -1,6 +1,18 @@
 <MonsterName/>Külmking</MonsterName>
 <CreatureType/>Undead</CreatureType>
 
+<summary>The Külmking is a large undead creature with a chaotic evil alignment, making it a formidable enemy in battle. This creature possesses a strong Armor Class of 14 due to its natural armor and boasts a significant pool of 127 hit points, which translates to a solid endurance during confrontations. The Külmking excels in mobility, as it can move at 60 feet per turn. With a Challenge Rating of 9, it offers a significant encounter for adventurers and is worth 5,000 experience points upon defeat. It enjoys considerable offensive capabilities with strong attack options and unique special abilities that can manipulate its foes.</summary>
+
+<detail>
+
+The Külmking has well-rounded physical attributes, including a Strength score of 17 (+3), Dexterity of 15 (+2), and Constitution of 16 (+3), showcasing its effectiveness in combat. Its Intelligence is average at 12 (+1), but it excels in Wisdom with a score of 18 (+4), giving it a very good perception skill of +8. It also possesses a high Charisma score of 17 (+3), making it both intimidating and influential. The creature is immune to necrotic and poison damage and resistant to cold and lightning damage, as well as physical damage from nonmagical sources. It is also immune to conditions such as being charmed, exhausted, or poisoned, making it tough to control in battle. The Külmking has darkvision out to 120 feet and a passive perception rating of 18, allowing it to see well even in darkness.
+
+One of the Külmking’s most dangerous abilities is "Corruption." This ability allows the Külmking to corrupt a creature's soul if it moves through it and uses a bonus action. The target must make a DC 16 Charisma saving throw. If they fail, they begin to suffer violent thoughts, and their alignment shifts to chaotic evil over 2d4 days. Should the creature die during this time—or after its alignment change—it will rise as a Külmking within 24 hours. However, if the creature succeeds on the saving throw, it becomes immune to the Külmking's corruption for the next 24 hours. 
+
+Another notable ability is "Incorporeal Movement," which allows the Külmking to pass through creatures and objects as if they were difficult terrain, although it will take 5 (1d10) force damage if it ends its turn inside an object. This enhances its mobility and gives it a strategic advantage during engagements. Furthermore, the "Trampling Charge" ability dictates that if the Külmking moves at least 20 feet toward a target before attacking with its hooves, the target must succeed on a DC 16 Strength saving throw or be knocked prone. If the target is prone, the Külmking can use a bonus action to make an additional hooves attack against it.
+
+In terms of its actions, the Külmking can perform a "Multiattack," making two claw attacks and one bite or hooves attack. Its bite attack is particularly threatening, requiring a +7 to hit with a reach of 5 feet and dealing 12 (2d8 + 3) piercing damage. Non-undead creatures hit by this attack must also make a DC 16 Constitution saving throw or suffer an additional 12 (2d8 + 3) necrotic damage, with the Külmking regaining hit points equal to the necrotic damage dealt. The Külmking's claws attack similarly requires a +7 to hit, dealing 10 (2d6 + 3) slashing damage, but it also forces non-undead targets to make a DC 16 Constitution saving throw or become paralyzed for 1 minute, with the chance to repeat the saving throw at the end of their turns. Lastly, its hooves attack also requires a +7 to hit and deals 13 (3d6 + 3) bludgeoning damage, rounding out its impressive offensive repertoire.</detail>
+
 
 
 ---

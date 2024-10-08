@@ -1,6 +1,16 @@
 <MonsterName/>Rotsam</MonsterName>
 <CreatureType/>Ooze</CreatureType>
 
+<summary>Rotsam is a tiny ooze creature that embodies the dangers of disease and decay. It operates as an unaligned entity, using its unique abilities to inflict suffering on others while remaining elusive. With a challenge rating of 2, it poses a moderate threat in combat, capable of dealing both piercing and significant necrotic damage. The Rotsam's strengths lie in its speed and ability to bypass obstacles, while its immunities to various conditions make it difficult to incapacitate. However, its low armor class and poor physical strength and charisma reveal its weaknesses. Creatures facing the Rotsam must be cautious, as failing to contend with its disease can lead to dire consequences.</summary>
+
+<detail>
+
+The Rotsam has an armor class of 13, which provides average protection for its hit points total of 45, derived from rolling 10d4 plus an additional 20. It can swim at a speed of 30 feet and walk at a speed of 10 feet. In terms of attributes, it has a Strength score of 5, resulting in a very bad modifier of -3, a Dexterity of 16 giving it a good modifier of +3, and a Constitution of 14 granting a good modifier of +2. The Rotsam has an Intelligence score of 1 that yields a very bad modifier of -5, a Wisdom of 9 producing a bad modifier of -1, and a Charisma of 6 leading to a very bad modifier of -2. The monster is immune to necrotic damage and completely immune to being blinded, charmed, deafened, exhausted, frightened, or prone. It has blindsight up to 60 feet but is blind beyond this range, and it possesses a passive perception of 9.
+
+Rotsam has several notable special abilities. Its Amorphous trait allows it to squeeze through narrow spaces 1 inch wide without any difficulty. The bog rot ability is particularly dangerous, as any creature that fails a saving throw against the Rotsam's bite becomes infected with a debilitating disease. This disease causes a rot-like rash that spreads and reduces the creature's hit point maximum over time. If untreated, it can lead to the infected creature’s death. The Rotsam can also climb difficult surfaces, including ceilings, without any hindrances due to its Spider Climb ability.
+
+In combat, the Rotsam can use its Diseased Bite action. This melee weapon attack has a +5 to hit with a reach of 5 feet, dealing 5 piercing damage in addition to 10 necrotic damage (3d6) upon a successful hit, and attaching itself to the target. While attached, the Rotsam does not attack but instead inflicts 10 necrotic damage at the start of each of its turns. Should the target end its turn with the Rotsam still attached, it must make a DC 12 Constitution saving throw or contract the bog rot disease. The Rotsam can detach itself by spending 5 feet of movement, typically after afflicting its target or upon the target’s death. Alternatively, a creature can use its action to attempt to detach the Rotsam by succeeding on a DC 12 Strength check.</detail>
+
 
 
 ---

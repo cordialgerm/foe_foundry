@@ -1,6 +1,30 @@
 <MonsterName/>Great Wyrm Gold Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
 
+<summary>The Great Wyrm Gold Dragon is a gargantuan and highly powerful creature known for its majestic appearance and formidable abilities. As one of the most powerful dragons in existence, it boasts exceptional combat abilities, incredible defense, and versatile spellcasting capabilities. Its high Armor Class of 22 and massive hit points of 975 indicate that it can withstand significant damage. With a Challenge Rating of 26, it presents a grave threat to any adventurers who dare to confront it. Notable for its immunity to fire damage and mastery of both melee and magic, the Great Wyrm can overwhelm opponents with punishing attacks and debilitating spells. However, its reliance on physical attacks means that it could be challenged by foes capable of ranged combat or strategic spell use.</summary>
+
+<detail>
+
+The Great Wyrm Gold Dragon has the following attributes: Strength of 30, Dexterity of 14, Constitution of 28, Intelligence of 18, Wisdom of 16, and Charisma of 28. Its Strength modifier of +10 is exceptional, allowing for extremely potent melee attacks. Its Dexterity modifier of +2 is average, making it slightly less agile than other dragons. The Constitution modifier of +9 is very good, greatly enhancing its durability, while the Intelligence and Wisdom modifiers of +4 and +3, respectively, are good, indicating a solid level of intelligence and perception. The Charisma modifier of +9 is exceptional, making it a powerful spellcaster and influencer.
+
+In terms of saving throws, the dragon excels with a Dexterity saving throw of +10 (good), a Constitution saving throw of +17 (exceptional), a Wisdom saving throw of +11 (good), and a Charisma saving throw of +17 (exceptional). It possesses skills such as insight and perception both at +11 (good) each, and a persuasion skill at +17 (exceptional), allowing it to easily manipulate foes and allies alike. The dragon has damage immunity to fire, which is notable in combat against fire-based attacks. It also has blindsight within 60 feet and darkvision out to 120 feet, granting it superb awareness in different lighting conditions.
+
+The dragon has several powerful special abilities. "Gleaming Brilliance" can be used once per day, allowing the dragon to recharge its breath weapon upon being bloodied. Additionally, any creature that makes contact with or attacks it with a melee weapon for the first time in a turn suffers 10 fire damage. "Legendary Resistance," usable three times a day, enables the dragon to turn a failed saving throw into a success, but at a cost to its Armor Class until it finishes a long rest. The "Valor" ability grants allies within a 30-foot radius a +3 bonus to their saving throws while also giving them immunity to charm and fear, making it an invaluable asset in battle.
+
+Its innate spellcasting ability, driven by a Charisma of 28, allows the dragon to cast various spells without needing material components. It can cast "bless," "healing word," "banishment," and "greater restoration" three times per day each, which can significantly aid allies. Once per day, it can use "divine word," "hallow," and "holy aura," providing powerful boosts and protections.
+
+As for its actions in combat, the dragon can execute a "Multiattack," which consists of attacking with its bite and twice with its claws. Its bite attack has a +18 to hit and deals 32 piercing damage along with 9 fire damage, while the claw attacks each deal 28 slashing damage with the same +18 to hit modifier. Additionally, its tail attack, also employing a +18 to hit, inflicts 23 bludgeoning damage and can push a target back, demonstrating strong control over the battlefield.
+
+The "Molten Spit" attack targets a single creature within 60 feet, requiring a DC 25 Dexterity saving throw. On failure, it takes 27 fire damage, while a success results in half damage. It creates a pool of liquid gold that inflicts additional fire damage on creatures that enter or end their turn in it.
+
+The dragon's breath weapons are particularly devastating. The "Molten Breath" is a cone attack dealing an astounding 88 fire damage on a failed DC 25 Dexterity saving throw, with a secondary effect of immobilizing a creature in a shell of cooling gold. The "Weakening Breath," on the other hand, imposes disadvantage on weapon attack rolls for a minute on those who fail a DC 25 Constitution saving throw, creating significant tactical advantages.
+
+The dragon can also change shape to a humanoid or beast, maintaining its statistics while transforming its size and capabilities based on the form it adopts.
+
+For reactions, it can perform a "Tail Attack" in response to being hit, utilizing its tail against an attacker. The "Vanguard" ability lets it deflect attacks aimed at allies, showcasing its role as a protector.
+
+Finally, the dragon may take three legendary actions per round, each providing tactical benefits: "Roar" frightens foes within range, "Wing Attack" can push and knock down multiple opponents, while "Fiery Reprisal" allows it to retaliate specifically against the last creature that dealt damage to it. Overall, the Great Wyrm Gold Dragon stands as a fearsome and adaptable foe, capable of wreaking havoc in combat while supporting its allies through potent abilities and spells.</detail>
+
 
 
 ---

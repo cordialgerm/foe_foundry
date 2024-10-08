@@ -1,6 +1,18 @@
 <MonsterName/>Khamaseen</MonsterName>
 <CreatureType/>Elemental</CreatureType>
 
+<summary>The Khamaseen is a tiny elemental creature, infused with the powers of dust and lightning. With a unique ability to fly and a notable resistance to various forms of damage, this creature poses a moderate threat despite its small size. Its challenge rating of 1 makes it accessible for low-level adventurers, and it has effective stealth capabilities due to its condition immunities. However, its lack of offensive spells and low intelligence may limit its strategic combat potential. The Khamaseen can disrupt opponents using its Stinging Dust and Choking Cloud abilities, making it an elusive foe in the heat of battle. </summary>
+
+<detail>
+
+In terms of attributes, the Khamaseen has a Strength score of 14, which translates to a good modifier of +2, indicating above-average physical strength. Its Dexterity is also 14, resulting in another good modifier of +2, allowing it decent agility. The Constitution score of 15 grants it a good modifier of +2, contributing to its reasonable number of hit points, which total 27 from a roll of 6d4 plus 12. Intelligence, Wisdom, and Charisma scores are quite low, with Intelligence at 5 (-3) making it very bad in intellectual tasks, Wisdom at 10 (+0) being average, and Charisma at 5 (-3) indicating very bad social interaction skills. 
+
+For special abilities, the Khamaseen possesses "Elemental Nature," meaning it does not need to eat, drink, or sleep, making it an enduring presence in any setting. Moreover, its "Stinging Dust" creates a hazardous environment. Any creature that starts its turn within 5 feet of the Khamaseen must succeed on a DC 12 Constitution saving throw or gain disadvantage on attack rolls until the beginning of its next turn. If they save successfully, they are immune to this effect from the Khamaseen for the next 24 hours. 
+
+The Khamaseen also has several actions available in combat. Its "Slam" attack is a melee weapon strike where it rolls a +4 to hit against a target within 5 feet, dealing 5 bludgeoning damage plus an additional 5 lightning damage, which makes it capable of delivering a total of 10 damage (1d6+2 plus 2d4) to a single target. The "Choking Cloud" ability activates on a recharge roll, engulfing itself in a large cloud of dust and debris. Each creature in a 10-foot radius must make a DC 12 Constitution saving throw or become incapacitated for 1 minute. While incapacitated, such a creature cannot breathe and will cough uncontrollably, with the opportunity to attempt to save at the end of each of its turns to end this effect. 
+
+Finally, the Khamaseen can use the "Shock" reaction. If a creature wearing metal armor or wielding a metal weapon or shield moves within 5 feet of the Khamaseen, they will take 5 lightning damage (2d4), with a DC 12 Dexterity saving throw available to negate this damage. This ability makes the Khamaseen particularly dangerous to metal-clad foes, adding an additional layer of strategy for both the Khamaseen and its adversaries during encounters.</detail>
+
 
 
 ---

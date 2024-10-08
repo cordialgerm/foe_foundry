@@ -1,6 +1,20 @@
 <MonsterName/>Jinmenju</MonsterName>
 <CreatureType/>Plant</CreatureType>
 
+<summary>The Jinmenju is a Huge, chaotic neutral plant creature known for its unique capabilities in combat and interaction. With an impressive 126 hit points and a moderate armor class of 14 due to its natural armor, it presents a solid challenge to adventurers. It stands out with its ability to attack from a distance through its roots, which can burst from the ground at strategic locations. The Jinmenju is immune to certain damage types, making it very resilient to non-magical attacks, and it possesses a formidable Charisma score of 22, allowing it to effectively manipulate encounters and communicate with a wide range of creatures. However, it lacks mobility with a speed of 0 ft. and is heavily dependent on its roots for both offense and defense.</summary>
+
+<detail>
+
+The Jinmenju has the following ability scores: Strength 16 (+3), Dexterity 1 (-5), Constitution 19 (+4), Intelligence 17 (+3), Wisdom 8 (-1), and Charisma 22 (+6). Its high Constitution and Charisma grant it good saving throw bonuses, particularly +8 for Constitution and +10 for Charisma, making them effective against various effects. The Jinmenju also boasts some skills; it has perception at +3 and persuasion at +14, reflecting its strong presence in social situations.
+
+In terms of immunities, the Jinmenju is immune to bludgeoning, piercing, and slashing damage from nonmagical attacks, as well as conditions such as exhaustion and being prone. Its senses include darkvision out to 60 feet and tremorsense that extends to 120 feet, although it is blind beyond this radius. When it comes to communication, the Jinmenju can speak all languages known by creatures within 120 feet, allowing for versatile interactions.
+
+The Jinmenju's special abilities include "Burrowing Roots," which allows it to create roots that can attack unsuspecting targets from a distance. Each root has an armor class of 15 and 45 hit points, and is resistant to damage from non-magical sources. This ability enables the Jinmenju to maintain multiple active roots, with a maximum of five at any time. Additionally, with its "Laughing Fruit" ability, any creature with an Intelligence of 5 or higher that consumes the fruit must succeed on a DC 16 Wisdom saving throw or become incapacitated with laughter for one minute. They can repeat the saving throw at the end of each turn to shake off the effects, making this ability potentially disruptive in combat.
+
+In terms of actions, the Jinmenju can perform a "Multiattack," allowing it to make two root attacks in one turn. Each root attack is a melee weapon strike with a +7 to hit and a reach of 10 feet, dealing a base of 14 (2d10 + 3) bludgeoning damage, plus an additional 14 (4d6) psychic damage, significantly raising its damage output.
+
+The Jinmenju also has access to legendary actions, allowing it to perform key maneuvers during other creatures' turns. It can make a root attack, restore 10 hit points to any of its roots with "Revitalize Roots," or emit a "Mirthful Miasma" for two actions. The latter forces creatures within 10 feet of any exposed root to succeed on a DC 16 Constitution saving throw or fall prone and become incapacitated with laughter, highlighting its capacity to influence the battlefield through both offensive and control tactics.</detail>
+
 
 
 ---

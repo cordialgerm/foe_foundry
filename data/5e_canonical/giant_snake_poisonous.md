@@ -1,6 +1,20 @@
 <MonsterName/>Snake, Giant Poisonous</MonsterName>
 <CreatureType/>Beast</CreatureType>
 
+<summary>The Giant Poisonous Snake is a medium-sized beast that poses a significant danger despite its relatively low challenge rating of 1/4, making it suitable for lower-level encounters. It is agile, capable of swimming, and has decent stealth capabilities, making it effective in ambush situations. The snake has moderate hit points at 14 but its armor class is only 12, indicating it can be hit with average attack rolls. Its main strengths lie in its poisonous bite, which can incapacitate foes if they fail to resist the toxic effects. However, its physical strength is low, and it has no intelligence or charisma, making it reliant on its natural attacks and ambush tactics.</summary>
+
+<detail>
+
+In terms of attributes, the snake has a Strength score of 10, which is average, but it excels in Dexterity with a score of 14, giving it a good agility bonus of +2. The Constitution score of 12 provides an average modifier of +1, while its Intelligence of 2 is very bad, indicating it lacks cognitive abilities. Wisdom is average at 10, providing no modifier, and its Charisma score of 2, rated as very bad, reflects its inability to interact socially.
+
+The Giant Poisonous Snake has keen senses that allow it to detect movements from 10 feet away, which aids in its hunting and ambush strategies. It has a Perception score of 10, which is average, and can effectively hide due to its stealth modifier of +4, classified as good. The snake does not communicate verbally.
+
+The snake’s primary offensive action is its Bite. It makes a melee weapon attack with a +5 to hit, which is exceptional, and has a reach of 10 feet. When it successfully bites a creature, it deals 5 piercing damage (1d6 + 2). Additionally, the target must succeed on a DC 11 Constitution saving throw; on a failure, the target takes an extra 5 poison damage (2d4) and on a success, they take half that amount. This dual damage potential makes the bite particularly threatening in combat, especially against characters with lower constitution scores.
+
+Furthermore, the snake has a reaction ability called Reflexive Nip. This ability activates when a creature within 5 feet makes a melee attack against the snake. The snake can attempt a nip back, requiring the attacker to make a DC 11 Constitution saving throw. If they fail, they become poisoned until the end of their next turn, which can hinder their effectiveness in combat and create strategic advantages for the snake or its allies. 
+
+Overall, the Giant Poisonous Snake is a stealthy and dangerous creature that relies on its agility and poisonous attacks to neutralize threats effectively, making it a formidable adversary for unprepared adventurers.</detail>
+
 
 
 ---

@@ -1,6 +1,16 @@
 <MonsterName/>Loxoda</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<summary>The Loxoda is a huge monstrosity characterized by its neutral evil alignment. This creature serves as a formidable opponent in combat, boasting a robust combination of high hit points and solid attack options. With an Armor Class of 13, the Loxoda can sustain a decent amount of damage before being overwhelmed. Its challenge rating of 6 makes it a dangerous encounter for adventurers, yielding 2,300 experience points upon defeat. The Loxoda excels in both strength and constitution, making it a powerful physical combatant, while its decent wisdom allows for practical survival instincts. However, it has lower flexibility and intelligence, affecting its ability to interact and strategize beyond brute force.</summary>
+
+<detail>
+
+The Loxoda possesses the following attributes: Strength is 19, granting a +4 modifier, which is exceptional for melee attacks. Dexterity is 12, providing a +1 modifier, which is average for avoiding attacks and makes it somewhat nimble. Its Constitution is also high at 19, resulting in a +4 modifier, reflecting very good resilience. Intelligence is at 12 with a +1 modifier, indicating an average capability for reasoning. Wisdom stands at 14, with a +2 modifier demonstrating good perception and insight, while Charisma is a mere 10, reflecting an average presence in social interactions.
+
+In terms of actions, the Loxoda can perform a Multiattack, allowing it to attack twice in a single turn—one with its Slam and one with its Spear. The Slam is a melee weapon attack with a +7 to hit, featuring a reach of 10 feet, that deals 22 bludgeoning damage upon a successful hit. The Spear can be used both as a melee and ranged attack, also with a +7 to hit, reaching 5 feet or ranging up to 60 feet, inflicting either 14 piercing damage (or 17 when used in two hands) on a successful hit. The Stomp is particularly devastating, targeting prone creatures within reach; it deals 20 bludgeoning damage with the same +7 to hit modifier.
+
+One of the Loxoda's most powerful abilities is Tooth-Rattling Pound, which can be used once the creature recharges (on a roll of 5-6). It causes the Loxoda to rear up and slam down, creating shockwaves that affect each creature in contact with the ground within a 20-foot radius. Those creatures must succeed on a DC 15 Dexterity saving throw or take 36 bludgeoning damage, along with an additional 10 thunder damage at the end of their next turn due to lingering shockwaves. A successful save results in half the damage without the additional thunder damage, making this ability highly impactful in crowd control scenarios during combat.</detail>
+
 
 
 ---

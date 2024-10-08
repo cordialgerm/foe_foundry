@@ -3,6 +3,34 @@
 
 <summary>A Vrock is a demon with the body of a vulture and the features of a humanoid, combining sharp talons, wings, and a sinister, bird-like head. These demons revel in death and destruction, using their screeching calls and devastating attacks to sow chaos. Vrocks are brutal fighters, tearing into enemies with claws and beaks, and they can release clouds of toxic spores to weaken their foes. They are often found leading demonic forces into battle or acting as powerful enforcers for more powerful demons. Their ability to fly and unleash deadly sonic screeches makes them formidable opponents.</summary>
 
+<summary>The Vrock is a powerful Large Fiend that serves as a deadly combatant in any encounter, often characterized by its chaotic evil nature. With an Armor Class of 15 and 104 hit points, it can endure significant damage before being overwhelmed. The Vrock has impressive physical attributes, particularly in Strength and Constitution, making it a formidable opponent in melee combat. It is capable of flying, enabling it to maneuver over obstacles and engage in combat effectively. However, despite its strengths, it is vulnerable to radiant damage and can be severely impacted by spells and abilities that target its weaknesses. Its challenge rating of 6 signifies that it can pose a serious threat to adventurers of mid-level experience. </summary>
+
+<detail>
+
+The Vrock possesses the following attributes: Strength 18 (+4, very good), Dexterity 16 (+3, good), Constitution 18 (+4, very good), Intelligence 8 (-1, bad), Wisdom 14 (+2, average), and Charisma 10 (+0, average). For saving throws, it is particularly adept at Dexterity (+6, good), Wisdom (+5, good), and Charisma (+3, average) due to its advantage from its Chaotic Evil nature and Magic Resistance, allowing it to have advantage on saving throws against spells and magical effects. It is immune to poison damage, resistant to cold, fire, and lightning damage, and it takes no damage from non-magical weapons, granting it substantial defensive capabilities.
+
+As for its abilities, the Vrock can use Multiattack to strike with its beak and talons in a single turn. The Beak attack has a +6 to hit and a reach of 5 feet, dealing 10 (2d6 + 3) piercing damage, with a chance for an additional 7 (2d6) damage if it has advantage on the attack. The Talons attack also has a +6 to hit and does 14 (2d10 + 3) slashing damage, making it very dangerous in close quarters.
+
+The Vrock can unleash its Spores ability once per day, which creates a poisonous cloud in a 15-foot radius that requires targets within it to make a DC 14 Constitution saving throw. Failure results in the creature becoming poisoned for one minute, taking ongoing damage of 5 (1d10) during this time, with the saving throw repeated at the end of each of its turns. This ability can weaken and control the battlefield.
+
+Additionally, the Vrock has a powerful Bonus Action called Stunning Screech, which it can use once per day to stun nearby non-demon creatures. Those within 20 feet that can hear it must make a DC 14 Constitution saving throw, and failure results in being stunned until the end of the Vrock's next turn. This ability allows the Vrock to disrupt enemy actions and control engagements effectively. 
+
+Overall, the Vrock combines formidable melee capabilities, defensive advantages, and powerful crowd control abilities, making it a significant threat in combat.
+
+The Vrock is a large fiend classified as a demon, known for its formidable presence in combat and its ability to unleash a variety of debilitating effects on its foes. With a Challenge Rating of 6, it poses a significant threat to adventurers due to its decent armor class, resilience against damage, and magical defenses. The Vrock's natural armor provides it with an effective defense, while its considerable hit points allow it to endure lengthy battles. However, despite its strengths, it has moderate intelligence, making it more reliant on brute force and vicious attacks than on clever tactics.
+
+The Vrock possesses the following attributes: Strength at +3 (average), Dexterity at +5 (good), Constitution at +4 (good), Intelligence at -1 (very bad), Wisdom at +6 (exceptional), and Charisma at +2 (average). These stats imply that while the Vrock can maneuver well in combat, especially in terms of dexterity and resilience, its lack of intelligence may hinder it in strategy-heavy encounters.
+
+In terms of senses, the Vrock has darkvision that extends to 120 feet, which allows it to see in dim light as if it were bright light and in darkness as if it were dim light. Its perception score of 16 indicates a good awareness of its surroundings, while a stealth modifier of 15 suggests that it can be quite stealthy when needed. The Vrock can communicate using Abyssal and has telepathy that reaches 120 feet, enabling it to interact mentally with other beings without the need for speech.
+
+The Vrock has several special abilities that enhance its power. Its Demonic Resilience grants it resistance to cold, fire, and lightning damage, making it a difficult target for certain types of attacks. Additionally, it is immune to poison damage and the poisoned condition. Magic Resistance allows it to gain advantage on saving throws against spells and magical effects, making it a challenging opponent against spellcasting foes.
+
+In combat, the Vrock can utilize its Multiattack feature, allowing it to make one Beak attack and two Talon attacks per turn. The Beak attack uses a melee weapon modifier of +6 to hit and deals 12 piercing damage on a hit. The Talon attacks share the same hit modifier but deal more damage at 14 slashing damage each. 
+
+Additionally, the Vrock has a special action called Wing Spores, which can be used every 5 to 6 turns. When activated, the Vrock releases a cloud of toxic spores in a 15-foot radius. Creatures within this area must succeed on a DC 15 Constitution saving throw or take 28 poison damage and become poisoned for 1 minute. A successful save halves the damage, and affected creatures suffer an additional 3 poison damage at the start of their turns. They can repeat the saving throw at the end of each of their turns to end the effect early.
+
+As a bonus action, the Vrock can perform a Startling Screech to target a creature within 30 feet. The target must make a DC 14 Constitution saving throw. On a failure, the creature cannot take both an action and a bonus action on their next turn and is also unable to take reactions. This ability can significantly hinder a character's effectiveness in battle, especially when facing multiple threats at once.</detail>
+
 
 
 ---

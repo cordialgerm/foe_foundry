@@ -3,6 +3,40 @@
 
 <summary>A Remorhaz is a massive, centipede-like creature that dwells in cold, arctic regions. Its body is covered in hard, icy-blue plates, and it can generate immense heat from within, causing the air around it to shimmer. Remorhazes are fearsome predators that burrow through snow and ice, ambushing prey from below. They are known for their ability to swallow victims whole, using the intense heat of their bodies to melt ice and incinerate their prey. Despite their size, Remorhazes are swift and highly dangerous to anyone venturing into their frozen domains.</summary>
 
+<summary>The Remorhaz is a formidable Huge monstrosity that serves as a terrifying force of nature in any encounter. With a high Armor Class of 17 and a substantial pool of Hit Points totaling 195, it is designed to withstand significant damage while delivering its own in close combat. The Remorhaz boasts exceptional strength with a Strength score of 22, allowing it to perform powerful melee attacks and grapple opponents effectively. However, its lower Dexterity score of 12 provides only average agility, making it less nimble in battle. The creature is immune to cold and fire damage, making it resilient against certain types of attacks, but it has very low Intelligence, Wisdom, and Charisma scores, resulting in poor mental capabilities and ineffective interactions outside of combat. Overall, the Remorhaz is a fierce combatant that thrives on grappling and dealing fiery damage, capable of swallowing its foes and subjecting them to continuous harm.</summary>
+
+<detail>
+
+The attributes of the Remorhaz are as follows: 
+- Strength is 22 with a modifier of +6, which is exceptionally powerful, allowing the creature to deal significant damage in close combat.
+- Dexterity is 12 with a modifier of +1, offering average agility for its movements.
+- Constitution is 20 with a modifier of +5, providing it with good resilience and stamina.
+- Intelligence is 4 with a modifier of -3, which is very bad, indicating a lack of cognitive abilities.
+- Wisdom is 12 with a modifier of +1, which is average, giving it basic awareness.
+- Charisma is 5 with a modifier of -3, representing very bad social capabilities.
+
+For saving throws, the Remorhaz has a bonus of +1 to Intelligence saves and +5 to Wisdom saves, with the latter being good against mental effects. It lacks any notable skills.
+
+In terms of special abilities, the Remorhaz features a trait called Heated Body. When a creature starts its turn grappling the Remorhaz, touches it, or hits it with a melee attack while within five feet, they will take 10 (3d6) fire damage. If the Remorhaz is bloodied, this damage increases to 21 (6d6). However, if the Remorhaz has recently taken cold damage, this ability will not function during that turn.
+
+The Remorhaz's actions in combat are quite dangerous. It utilizes a Multiattack option, allowing it to make a bite attack and a constrict attack in one turn. 
+
+Its bite attack has a +10 to hit, with a reach of 10 feet, and deals 16 (3d6 + 6) piercing damage along with an additional 10 (3d6) fire damage. If the target is a Medium or smaller creature and is grappled by the Remorhaz, it is swallowed. A swallowed creature becomes blinded and restrained, unable to escape except through specific means. While inside the Remorhaz, they receive 21 (6d6) acid damage at the start of each of the Remorhaz's turns. If a swallowed creature manages to deal 30 or more damage to the Remorhaz in a single turn, or if the Remorhaz dies, it will vomit up all swallowed creatures.
+
+The Constrict action also has a +10 to hit and a reach of 5 feet, dealing 16 (3d6 + 6) bludgeoning damage and applying the Heated Body trait to the target. The target is also grappled, with an escape difficulty of DC 18, and remains restrained while grappled. This massive creature can grapple up to three creatures at once, making it a dire threat to any adventurers it encounters.
+
+The Remorhaz is a massive, fearsome monstrosity known for its imposing physical presence and exceptional abilities. With a Challenge Rating of 11, it serves as a formidable adversary in combat scenarios, capable of dealing substantial damage while also possessing impressive defenses. Its natural armor grants it an Armor Class of 17, making it difficult to hit, and with 216 hit points, it can sustain a significant amount of damage. The Remorhaz excels in both melee combat and environmental manipulation due to its burrowing ability, allowing it to traverse through ice and snow effortlessly. While its high Strength and Constitution scores indicate strong physical power and durability, it has poor Intelligence, Wisdom, and Charisma, which are not typically advantageous in social interactions or strategy-based combat.
+
+The Remorhaz possesses a Strength of +11, which is considered exceptional, allowing it to perform powerful melee attacks. Its Dexterity of +1 is average, indicating that it is not particularly nimble. With a Constitution score of +9, also exceptional, the creature can withstand significant punishment. However, its Intelligence at -3 is very bad, its Wisdom at +0 is average, and its Charisma at -3 is likewise very bad, meaning it lacks the mental faculties to engage in strategic dialogue or effective social encounters. The creature's senses are heightened with darkvision and tremorsense, both extending 60 feet, which enhances its awareness of surroundings, especially in darkness or under snow.
+
+The Remorhaz's special abilities enhance its danger in combat. The Heated Body ability inflicts damage on any creature that comes into physical contact with it or attacks it while within 5 feet, dealing 7 fire damage. Monstrosity Resilience provides the Remorhaz resistance against exhaustion and fear effects, making it tough to control in battle. The Tunneler ability enables it to burrow through ice and snow, leaving a tunnel of 5 feet in diameter, adding versatility to its movement and tactics.
+
+The primary action it can take is its Bite attack, which is a melee weapon attack that adds +11 to hit and has a reach of 10 feet. Upon successfully hitting a target, the Remorhaz inflicts 40 piercing damage plus an additional 10 fire damage. Critically, if the target is a Medium-size or smaller creature, they must succeed on a DC 17 Dexterity saving throw or risk being swallowed, which subjects them to being blinded and restrained. This scenario provides total protection against outside attacks while dealing continuous acid and fire damage to the swallowed creature each turn.
+
+As a bonus action, the Remorhaz can vent heat when its hit points are 119 or fewer. This action generates intense heat around its body, forcing all creatures within a 5-foot radius to make a DC 17 Constitution saving throw. Failure results in one level of exhaustion, which could significantly weaken opponents and alter the dynamics of combat.
+
+In summary, the Remorhaz is a terrifying monster characterized by its overwhelming strength, substantial resistance to debilitating effects, and destructive abilities, making it a powerful foe in any encounter.</detail>
+
 
 
 ---

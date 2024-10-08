@@ -1,6 +1,26 @@
 <MonsterName/>Titanic Dragon Turtle</MonsterName>
 <CreatureType/>Dragon</CreatureType>
 
+<summary>The Titanic Dragon Turtle is a formidable aquatic creature known for its size and power. With an impressive Armor Class of 21 and a substantial pool of 396 hit points, it presents a significant challenge for adventurers. This creature moves proficiently both in water, accelerating to a speed of 80 feet, and limiting its land speed to 20 feet, showcasing its aquatic nature. As a Challenge Rating 24 monster, the Titanic Dragon Turtle is capable of dealing considerable damage while also possessing several potent defensive abilities. With a high Strength score of 24, it excels in physical confrontations, while its good Constitution of 22 adds to its durability. However, the turtle's Dexterity score is average at 10, making it less nimble compared to other creatures. The creature is well-suited for combat with its powerful melee attacks and various offensive spells, making it a versatile foe. Notably, its innate spellcasting grants it control over weather and water, further emphasizing its mastery of aquatic environments.</summary>
+
+<detail>
+
+In terms of attributes, the Titanic Dragon Turtle has a Strength of 24 with a modifier of +7, which is exceptional, making its physical attacks highly potent. Its Dexterity is merely 10, resulting in a +0 modifier that is average, reflecting its sluggishness on land. It boasts a high Constitution score of 22, which gives it a +6 modifier, classifying its sturdiness as very good. Intelligence of 14 (+2 modifier) is decent but not remarkable, while Wisdom and Charisma both stand at 16 (+3 modifier), showing good capability in social and perceptive tasks.
+
+The dragon turtle has impressive saving throws, with bonuses of +6 in Dexterity, +12 in Constitution, +8 in Intelligence, and +9 in Wisdom, allowing it to resist various effects effectively, especially with its Constitution saving throw being exceptionally high. It possesses skills in history, insight, and nature, all with a modifier of +8 or +9, demonstrating its knowledge of the natural world. Additionally, it has damage resistances to cold and fire, indicating its ability to withstand such elemental attacks.
+
+The Titanic Dragon Turtle's special abilities include Amphibious nature, allowing it to breathe air and water. The Legendary Resistance ability enables it to negate a failed saving throw once per day, showcasing its resilience. Its innate spellcasting allows it to cast spells such as Control Weather, Water Breathing, and Zone of Truth thrice daily with a Wisdom spell save DC of 17, offering both utility and combat options.
+
+When it comes to actions, the Titanic Dragon Turtle can bite with a melee weapon attack of +13 to hit, dealing an average of 52 piercing damage (7d12 + 7). If it biting a creature, that target becomes grappled, making it easier for the dragon turtle to attack further. It can also ram with a similar attack bonus, causing 46 bludgeoning damage (6d12 + 7), which deals double damage to objects and constructs. Additionally, its tail attack, identical in hit score and damage to its ram attack, can push a target back if they fail a Strength saving throw.
+
+The dragon turtle's Steam Breath, used every 5 to 6 rounds, unleashes a torrent of steam in a 90-foot cone. Creatures within this area must succeed on a DC 20 Constitution saving throw or suffer 52 fire damage (15d6). Its Lightning Storm ability is usable once per day, creating arcs of lightning that affect all creatures within 90 feet, dealing 35 lightning damage (10d6) on a failed DC 17 Dexterity saving throw.
+
+It can also perform a claw attack as a bonus action, dealing 25 slashing damage (4d8 + 7), making it even more dangerous in close combat.
+
+Regarding reactions, if the Titanic Dragon Turtle suffers 50 damage or more from a single attack, it can retract its limbs and head into its shell, regaining 20 hit points but becoming blinded and immobile. However, while retracted, it gains advantage on saving throws, has disadvantage against attacks, and resistance to all damage, making it a formidable defensive strategy. Upon being hit by an opportunity attack, it can retaliate with its tail.
+
+Finally, for legendary actions, the Titanic Dragon Turtle can take three actions at the end of another creature’s turn. Examples of these legendary actions include making a claw attack and moving without provoking opportunity attacks, emitting a powerful Emerald Radiance that deals radiant damage and can blind creatures, reusing its Lightning Storm ability, or making a tail attack (which costs two of its actions). This combination of traits and abilities makes the Titanic Dragon Turtle an awe-inspiring presence in any encounter.</detail>
+
 
 
 ---

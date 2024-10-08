@@ -1,6 +1,20 @@
 <MonsterName/>Urochar</MonsterName>
 <CreatureType/>Aberration</CreatureType>
 
+<summary>The Urochar is a formidable creature from the realm of aberrations, epitomizing chaotic evil with its terrifying presence and unique abilities. It stands out as a huge monster, making it physically imposing in battle. With a high Armor Class of 19 due to its natural armor and impressive Hit Points totaling 256, the Urochar is designed to withstand significant damage. It has exceptional Strength of 24, providing powerful melee attacks, and it excels in grappling with its tentacles. While it possesses notable Dexterity and Charisma, its true strengths lie in its damage immunities and resistances, making it a resilient adversary. The Urochar also features various abilities that can control the battlefield, instill fear, and disable opponents, but relies heavily on its ability to grapple and maintain control of its targets. Adventurers must tread carefully, as it can quickly shift the tide of battle in its favor with its psychic abilities and paralyzing effects.</summary>
+
+<detail>
+
+The Urochar has the following attributes: Strength of 24 (+7) reflects its very good melee attack capabilities; Dexterity of 15 (+2) gives it average agility; Constitution of 24 (+7) provides exceptional durability; Intelligence of 14 (+2) indicates its bad problem-solving capabilities; Wisdom of 14 (+2) shows average insight; and Charisma of 20 (+5) enables it to exert a strong influence over others.
+
+In terms of saving throws, the Urochar has good scores with a +8 to Dexterity, +13 to Constitution, +8 to Wisdom, and +11 to Charisma, making it difficult for opponents to affect it with many effects. Its skills include Perception at +8 and Stealth at +8, which are good for detecting creatures and moving unnoticed. It is immune to thunder damage, resistant to cold and lightning damage, as well as bludgeoning, piercing, and slashing from nonmagical attacks that are not silvered. Additionally, the Urochar is immune to being frightened, possesses truesight out to 120 feet, and has a passive Perception score of 18, allowing it to see through illusions and perceive hidden threats. It understands the languages of Darakhul and Void Speech.
+
+The Urochar features several unique abilities. When it dies, it triggers "Mind-Rending Death," unleashing a wave of fear that threatens all creatures within 30 feet, requiring a DC 19 Charisma saving throw or becoming frightened and suffering psychic damage on their turns. Its "Rubbery Body" allows it to squeeze through tight spaces, maintaining flexibility in movement. With "Spider Climb," it can traverse difficult or vertical surfaces with ease.
+
+In combat, the Urochar employs a Multiattack action, allowing it to use its "Paralyzing Gaze" once and then make four tentacle attacks. Tentacle attacks have a +13 to hit and a reach of 20 feet, dealing an average of 25 bludgeoning damage while grappling targets. Its "Paralyzing Gaze" can incapacitate an enemy for up to 1 minute unless they succeed on a DC 19 Wisdom saving throw, providing it with the opportunity to attack vulnerable targets. Grappled creatures must make a DC 19 Strength saving throw against its "Strangling Grasp," which can inflict significant bludgeoning damage and prevent breathing.
+
+The Urochar also has a bonus action called "Hidden Step," allowing it to magically teleport up to 30 feet to a space it can see while also taking the Hide action. This ability enables it to escape grapples while disappearing from combat, adding to its already formidable defensive capabilities. The Urochar is a cunning and loathsome foe, requiring strategic planning and coordination from adventurers to defeat.</detail>
+
 
 
 ---

@@ -3,6 +3,20 @@
 
 <summary>A Hunter Shark is a large, predatory fish with powerful jaws lined with razor-sharp teeth. It is one of the ocean's most efficient killers, known for its incredible speed and keen sense of smell. Hunter Sharks can detect the scent of blood from miles away, relentlessly pursuing wounded prey. These creatures are solitary hunters, patrolling coastal waters or deep oceans in search of food. Their streamlined bodies allow them to ambush their prey with sudden bursts of speed, delivering devastating bites that can tear through flesh and bone.</summary>
 
+<summary>The Hunter Shark is a large beast particularly adapted to aquatic environments, possessing significant strengths in speed and physical power. With a challenge rating of 2, it presents a moderate threat to adventurers, especially in water-based encounters. The Hunter Shark excels in melee combat thanks to its high strength and formidable bite, capable of inflicting considerable damage. Its ability to breathe underwater allows it to operate freely in its natural habitat, diminishing its susceptibility to land-bound aggression. While its intelligence and charisma are notably poor, making it less strategic in battle and failing to engage in social interactions, it compensates with its physical capabilities and agility.</summary>
+
+<detail>
+
+The Hunter Shark has an Armor Class of 12, which is considered average, making it somewhat vulnerable to attacks. It has 45 hit points, calculated using 6d10 plus a modifier of 12, providing good durability in combat but not exceptional. It possesses a walking speed of 0 feet, indicating it cannot move on land, yet it boasts a swimming speed of 40 feet, which is good for maneuverability in water.
+
+In terms of attributes, the shark has a strong strength score of 18, resulting in a modifier of +4, enabling it to effectively deliver powerful melee attacks. It has average dexterity at 12 (+1), allowing for some agility, while a constitution score of 14 (+2) gives it reasonable resilience. The shark's intelligence is very low at 2 (-4), making it very poor at tasks that require thought or understanding. Its wisdom is average at 10 (+0), and charisma is very low at 4 (-3), indicating a lack of social capabilities.
+
+When it comes to skills, the Hunter Shark has a perception skill bonus of +2, which enhances its ability to notice changes in their environment, especially in water. Its senses include blindsight up to 30 feet, allowing it to detect vibrations and movements around it within that range, crucial for hunting in murky waters. The shark's passive perception is 12, offering decent alertness to potential dangers. 
+
+The Hunter Shark has a special ability called Water Breathing that allows it to breathe only in water, reflecting its complete adaptation to aquatic life. 
+
+In combat, the primary action available to the Hunter Shark is its Bite attack. This is a melee weapon attack with a +6 to hit, which is quite effective, and it has a reach of 5 feet that allows it to engage targets nearby. Upon hitting a target, the bite inflicts 11 piercing damage, calculated as 2d6+4. An important aspect of its Bite action is that upon successfully landing a hit, the Hunter Shark can use a bonus action to make an additional Bite attack against the same target, increasing its offensive potential significantly in a single round. This capability makes the creature particularly dangerous in close-quarters situations, especially when fighting other underwater foes.</detail>
+
 
 
 ---

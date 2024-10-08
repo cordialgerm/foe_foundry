@@ -3,6 +3,35 @@
 
 <summary>A Mage is a powerful spellcaster who has devoted their life to the study of arcane magic. They wear robes adorned with mystical symbols and carry staffs, wands, or other arcane foci to channel their spells. Mages are highly intelligent and possess a wide array of spells, from destructive fireballs to complex illusions and teleportation. Though physically frail, they make up for it with their mastery of magic, able to manipulate the elements, summon creatures, or control the minds of others. Mages are often found in magical academies, wizard towers, or as advisors to powerful rulers.</summary>
 
+<summary>The Mage is a Medium humanoid creature that excels in spellcasting, possessing a wide array of potent magical abilities. With an Armor Class of 12 and 67 hit points, it can withstand moderate damage but remains vulnerable to physical attacks due to its relatively low AC. As a 9th level spellcaster, the Mage's strength lies in its intelligence, providing them with a spell save DC of 14 and a +6 modifier on spell attack rolls, marking this as a very good level of efficacy. The Mage can prepare a variety of spells across multiple levels, which allows it to control the battlefield and deal significant damage from a distance. While its physical attributes are average, it compensates with strong intelligence and dexterity scores, allowing it to dodge attacks effectively. However, it has limited melee capabilities with a dagger, which gives it a very bad output for physical damage compared to its magical prowess.</summary>
+
+<detail>
+
+The Mage's attributes are as follows: Strength 10 (+0, average), Dexterity 14 (+2, good), Constitution 16 (+3, good), Intelligence 16 (+3, good), Wisdom 12 (+1, average), and Charisma 10 (+0, average). It has proficiency in saving throws for Intelligence (+6) and Wisdom (+4), both considered very good for resisting spells and effects in combat. The Mage is skilled in various areas, boasting proficiency in skills like Arcana (+6), History (+6), Investigation (+6), and Perception (+4), making it effective at gathering information and spotting hidden threats.
+
+The Mage's spellcasting ability includes several powerful spells, with cantrips like Fire Bolt and Mage Hand that can be used at will. Fire Bolt allows the Mage to make a ranged spell attack with a +6 to hit, dealing 11 (2d10) fire damage on a hit, which is considerable damage for a cantrip. Other prepared spells include:
+
+- **Fireball (3rd-Level):** This is a high-damage area of effect spell that necessitates a DC 14 Dexterity saving throw from its targets. On a failure, creatures take 21 (6d6) fire damage, making it one of the Mage's most devastating offensive tools.
+- **Dimension Door (4th-Level):** This spell enables the Mage to teleport up to 500 feet to a location they can see and bring along another creature, allowing for strategic repositioning in battle.
+- **Greater Invisibility (4th-Level):** When cast, either the Mage or a creature they touch becomes invisible for 1 minute, providing exceptional evasion capabilities and the element of surprise.
+- **Cone of Cold (5th-Level):** This powerful cold damage spell creates a 60-foot cone, dealing 36 (8d8) cold damage on a failed DC 17 Constitution saving throw, effectively debilitating multiple foes in one action.
+
+For actions, the Mage can attack with a dagger, receiving a +5 bonus to hit and inflicting 4 (1d4 + 2) piercing damage. However, this pales in comparison to its spell attacks. In terms of bonus actions, the Mage has access to Misty Step, allowing instant teleportation to an unoccupied space within 30 feet, very useful for avoiding dangerous situations.
+
+The Mage's reactions include Counterspell, which can effectively thwart an opponent's spellcasting if the Mage is able to succeed on a check against a certain DC. This can dictate the flow of combat significantly when facing other spellcasters. Additionally, the Shield spell provides a +5 bonus to AC and immunity to magic missile, making it a solid defensive option against incoming attacks.
+
+Overall, the Mage is a strategic powerhouse on the battlefield, with the ability to alter combat dynamics through powerful spells and evasive techniques, while also having moderate physical capabilities.
+
+The Mage is a Medium humanoid creature that can belong to any lineage, representing a powerful spellcaster in combat. With an impressive challenge rating of 6, the Mage boasts a substantial hit point pool of 140, which indicates its durability in battle. It has a base Armor Class of 10, but it can enhance this with the spell mage armor, raising it to 13. The Mage is primarily an offensive character, using its high Intelligence modifier of +6 to enhance spellcasting effectiveness. However, its physical attributes are notably weak, with a Strength modifier of -1, Dexterity at average levels with a +0 modifier, and Constitution also at a +0 modifier. The Mage is particularly vulnerable to direct physical combat but excels in dealing damage and controlling the battlefield with magical abilities. 
+
+In terms of abilities, the Mage has several noteworthy features. Its Arcane Weapons ability allows weapon attacks to deal an additional 3d8 force damage, making its physical attacks significantly more potent, effectively giving it a strong offensive capability despite its low Strength. The Mage also possesses Magic Resistance, granting it advantage on saving throws against spells and magical effects, which enhances its overall survivability in encounters dominated by magic.
+
+The Mage can perform a Multiattack, allowing it to make three Dagger or Arcane Bolt attacks in a turn. The Dagger attack has a +3 to hit, can be used at melee range or from a distance with limited effectiveness (20 ft. range for normal and 60 ft. at disadvantage), dealing a base of 2 piercing damage and the added 13 force damage due to the Arcane Weapons ability. The Arcane Bolt attack, which has a +6 to hit and a range of 60 ft., deals a significant hit of 16 force damage on a successful hit.
+
+The Spellcasting ability of the Mage allows it to cast several spells by using Intelligence as its spellcasting ability, with a spell save DC of 14. Its spell options include cantrips like detect magic, light, mage hand, and prestidigitation, which offer utility rather than direct combat effectiveness. The Mage can cast 3 times per day spells like fly, mage armor, and mirror image, allowing for tactical positioning and defensive options. Additionally, it has access to powerful spells such as fireball, haste, and slow, castable 2 times per day, and more potent spells like cone of cold and greater invisibility, which can be used once per day. These spells can greatly impact gameplay by providing area-of-effect damage, crowd control, and mobility.
+
+Overall, the Mage combines magical prowess and utility in combat, maintaining a balance between dealing damage and protecting itself with magic. Its strength lies in spellcasting and magical attacks, while its weaknesses include low physical defenses and hit points in melee combat scenarios.</detail>
+
 
 
 ---

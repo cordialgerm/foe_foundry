@@ -1,6 +1,20 @@
 <MonsterName/>Trollkin Ragecaster</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<summary>The Trollkin Ragecaster is a formidable Medium Humanoid creature known for its chaotic neutral alignment. This monster is a bridge between physical melee combat and spellcasting, making it adaptable in various encounters. With a solid Armor Class of 15 and a substantial pool of Hit Points totalling 112, it possesses good defenses against attacks. The Ragecaster’s strength lies in its ability to switch between melee attacks using its claws and casting powerful elemental spells while in a state of rage. However, it has very poor Intelligence, which limits its tactical knowledge and decision-making in battle. Notably, it has strong regenerative capabilities, allowing it to recover health each turn unless it is attacked by acid or fire, which poses a significant weakness.</summary>
+
+<detail>
+
+The Trollkin Ragecaster has the following attributes: Strength of 14 (+2 modifier, which is good for melee combat), Dexterity of 17 (+3 modifier, which is good for avoidance and ranged attacks), Constitution of 16 (+3 modifier, resulting in good resilience), Intelligence of 9 (-1 modifier, indicating very bad cognitive abilities), Wisdom of 14 (+2 modifier, which is average for perception and insight), and Charisma of 18 (+4 modifier, which is exceptional for spellcasting). Its saving throw against Constitution is +6, reflecting good fortitude against physical effects. It has skills in perception that allow for a passive score of 15, coupled with darkvision of 60 feet, making it effective at detecting threats in low-light environments.
+
+The Trollkin Ragecaster possesses several noteworthy special abilities. Its Brutal Claws ability enhances claw damage by one additional die when it is not ragecasting. This boosts the effectiveness of its melee attacks. The Magic Resistance grants it advantage on all saving throws against spells and magical effects, making it resistant to many types of magical damage. Its Regeneration trait allows it to recover 10 hit points at the beginning of its turn, which is exceptional for survivability; however, it becomes nullified if the creature has taken acid or fire damage, making it very vulnerable to those types of attacks. Furthermore, its Thick Hide provides a +1 bonus to Armor Class, already reflected in its initial AC of 15.
+
+In combat, the Trollkin Ragecaster can perform two actions through its Multiattack feature, allowing it to strike twice either with its claws or with elemental blasts. Its Claw attack has a +6 to hit and deals 16 (3d8+3) slashing damage when it is not in ragecasting mode, or reduced to 12 (2d8+3) slashing damage while ragecasting. The Elemental Blast, which can only be used during ragecasting, has a +7 to hit and can affect a target up to 120 feet away, dealing 14 (3d6+4) damage of cold, fire, lightning, or thunder, as chosen by the creature.
+
+The Ragecaster also has spellcasting capabilities that further increase its versatility. It can cast the spell Thunderwave at will, which creates a wave of thunderous force that can push back enemies. It can also cast Call Lightning three times per day, calling down a powerful bolt of lightning on a chosen target, and Fireball once per day, unleashing a fiery explosion in an area. Additionally, it can activate Fire Shield once per day for protective benefits.
+
+As a bonus action, the Trollkin Ragecaster can enter a state of Ragecasting up to three times per day, which allows it to channel elemental power for one minute. While in this state, it has disadvantage on Wisdom saving throws but gains a flying speed of 60 feet, enhancing its mobility in combat. It can end this Ragecasting at will, and when the effect ends, it descends at a rate of 60 feet per round. This ability allows it to maintain concentration on any spell cast while in the ragecasting state, adding a significant tactical element to its combat capabilities.</detail>
+
 
 
 ---

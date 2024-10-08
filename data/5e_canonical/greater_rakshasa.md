@@ -1,6 +1,20 @@
 <MonsterName/>Greater Rakshasa</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<summary>The Greater Rakshasa is a formidable and manipulative fiend, known for its cunning and malevolent nature. This creature serves as a powerful adversary in any campaign, wielding both physical prowess and potent magical abilities. With an armor class of 18, it is quite resilient in combat, and its substantial hit points total 144, making it a daunting opponent. The creature's strengths lie in its high Dexterity and Charisma, enabling it to evade attacks while also effectively manipulating others through its charm and spellcasting. Notably, it possesses damage immunities to bludgeoning, piercing, and slashing from non-magical attacks, making it further difficult to confront without magic. However, it has vulnerabilities to piercing damage from magic weapons wielded by good creatures, which can be exploited by its adversaries. </summary>
+
+<detail>
+
+The Greater Rakshasa has the following attributes: Strength is 14 with a modifier of +2, which is considered average; Dexterity is 18 with a modifier of +4, rated as good; Constitution is 18, also +4, making it good; Intelligence is 15 with a +2 modifier, regarded as average; Wisdom is 16 with a +3 modifier, classified as good; and Charisma is 20 with a +5 modifier, which is exceptional. The creature excels in skills like Deception with a +10 modifier, making it very good at lying and misleading others, and Insight with +8, indicating a good ability to read intentions and emotions.
+
+One of the Greater Rakshasa's key special abilities is Limited Magic Immunity, which allows it to remain unaffected or undetected by spells of 7th level or lower unless it chooses to be. Additionally, it gains advantage on saving throws against all other spells and magical effects, making its defenses very strong against magic. The Puppet Master ability enhances its charm spells, allowing it to target up to five creatures simultaneously with the charm person spell and extends the dominate person spell's duration to up to 8 hours while maintaining concentration. 
+
+The creature's innate spellcasting relies on its Charisma, with a spell save DC of 18 and a +10 to hit with spell attacks. It can cast a variety of spells at will — such as detect thoughts, disguise self, mage hand, and minor illusion — without needing any material components. It can also cast spells like charm person, detect magic, invisibility, major image, and suggestion three times per day each. Furthermore, it can cast dominate person, fly, plane shift, and true seeing once per day. These spells grant it significant versatility and tactical options during encounters.
+
+During combat, the Greater Rakshasa can make a multiattack, allowing it to execute two claw attacks. Each claw attack has a +7 to hit, which is considered good. It deals an average of 9 slashing damage (2d6 + 2) and can curse its target; this curse prevents the victim from benefiting from short and long rests until removed by specific magic. Another powerful combat ability is Harrowing Visions, which can be used after a recharge of 5-6. This ability creates a 30-foot radius of horrific illusions that can inflict up to 66 (12d10) psychic damage and frighten those affected unless they succeed on a DC 18 Wisdom saving throw.
+
+The Greater Rakshasa is also capable of performing legendary actions. It can make a claw attack, which allows it to strike its adversaries even outside of its turn. For a more strategic approach, it can spend 2 actions to use Misleading Escape, becoming invisible while creating an illusory double, effectively confusing its enemies. Alternatively, it can cost 3 actions to cast a spell from its innate spell list, adding more power to its already impressive magical capabilities during combat.</detail>
+
 
 
 ---

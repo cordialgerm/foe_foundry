@@ -1,6 +1,22 @@
 <MonsterName/>Tidehunter</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<summary>The Tidehunter is a formidable Huge Monstrosity that roams both land and water, combining its aquatic prowess with a terrifying melee presence. With a Challenge Rating of 6, it is a significant threat to adventurers and excels in ambush tactics due to its underwater camouflage and net-making skills. Its attributes reflect a creature built for physical combat, boasting a strong Strength score of 19 and a high Constitution of 18, which together enable it to absorb a considerable amount of damage while dealing out its own. However, the Tidehunter suffers from low Intelligence and Charisma, making it less effective in social situations or with intellect-based skills. The creature's speed allows for quick maneuverability both in water and on land, enhancing its hunting capabilities.</summary>
+
+<detail>
+
+The Tidehunter has an Armor Class of 15, representing a good level of protection due to its natural armor. It possesses 133 hit points, derived from rolling 14d10 and adding 56, providing a durable presence in combat. The Tidehunter's speed includes a swimming ability of 40 feet and a walking speed of 20 feet, which facilitates its ability to engage enemies in diverse environments. The creature has a passive perception of 14, showcasing its attentiveness to its surroundings.
+
+The Tidehunter has several notable abilities that enhance its combat versatility. It is amphibious, allowing it to breathe both air and water, which grants it exceptional adaptability in various terrains. Its net-making ability enables it to weave nets from local materials in just one minute, with the capability of carrying two nets at a time, making it a threat when engaging tactics focused on trapping enemies. Its underwater camouflage provides it with advantage on Dexterity (Stealth) checks while submerged, allowing it to ambush unsuspecting prey effectively.
+
+In battle, the Tidehunter can unleash a devastating Multiattack, making three attacks in a single turn: it can target a single enemy with a net or up to two times with its claws. Each claw attack has a +7 to hit and can deal an average of 13 (2d8 + 4) bludgeoning damage. Additionally, if it successfully grapples a target, that creature must escape with a DC 15 check. The net attack intelligently restrains a target until they escape, with an attack modifier of +7 to hit and a range of 20/60 feet. To free themselves from the net, a creature must overcome a DC 15 Strength check or deal 15 slashing damage to the net (which has an AC of 13).
+
+The Tidehunter's Reel action can be used after it has restrained an enemy with a net, allowing it to pull the target up to 20 feet, potentially positioning them for a claw attack as a bonus action if they are close enough afterward.
+
+In terms of reactions, the Tidehunter possesses the Entangle Weapon ability. When targeted by a melee weapon attack, the attacker needs to succeed on a DC 16 Dexterity saving throw or miss due to the Tidehunter's use of its net to interfere with the assault. This reaction highlights the creature's strategic defensive capabilities, as it can disrupt incoming attacks and create openings for its own strikes. 
+
+Overall, the Tidehunter is a masterful ambusher and trapper, with robust physical attributes and versatile combat options, making it a dynamic creature in any encounter.</detail>
+
 
 
 ---

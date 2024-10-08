@@ -1,6 +1,18 @@
 <MonsterName/>Mngwa</MonsterName>
 <CreatureType/>Aberration</CreatureType>
 
+<summary>The Mngwa is a medium-sized aberration characterized by its neutral evil alignment and formidable combat capabilities. It possesses a notably high Armor Class of 16 due to its Ethereal Coat ability, which incorporates its Charisma modifier into its defenses. With a robust pool of 91 hit points, the Mngwa is relatively durable and can sustain a considerable amount of damage before falling. Its speed of 40 feet allows for agile movement, while its challenge rating of 4 indicates that it is a moderately challenging opponent for adventurers. The Mngwa's strengths lie in its impressive Strength and Dexterity scores, with a Strength of 19 and a Dexterity of 17, allowing it to dominate in melee combat and evade attacks. However, its weaknesses include a lack of ranged capabilities and a relatively low Intelligence score which affects its capability for complex strategies.</summary>
+
+<detail>
+
+The Mngwa has several special abilities that enhance its performance. Its Ethereal Coat contributes significantly to its defense, making it more resilient than most creatures. Ethereal Sight allows the Mngwa to perceive entities in both the Material and Ethereal Planes, granting it a unique tactical advantage in combat. With Feline Passivism, it gains a significant edge against feline creatures, as they cannot willingly attack it, though they may be coerced through magic. The Keen Smell ability provides the Mngwa with advantage on Wisdom (Perception) checks that rely on smell, which greatly improves its tracking capabilities. Additionally, Pack Tactics allows it to gain advantage on attack rolls if allies are nearby, increasing its offensive potential. The Running Leap ability enables it to leap impressive distances, which can be useful for navigating the battlefield. Lastly, Speak with Felines allows the Mngwa to communicate effectively with feline creatures, which may open up unique interactions or opportunities in certain situations.
+
+In combat, the Mngwa can utilize its Multiattack feature to strike up to three times, making one Ethereal Bite and two Claw attacks in a single turn. The Ethereal Bite is a powerful melee weapon attack that has a +6 to hit and deals 8 piercing damage plus an additional 5 force damage on a successful hit. Its Claw attack also has a +6 to hit and deals 7 slashing damage, providing a reliable source of damage in close-quarters combat.
+
+Furthermore, the Mngwa can use the Ethereal Step ability as a bonus action to shift between the Material and Ethereal Planes. This movement is accompanied by a visually striking puff of gray smoke, which can confuse or distract foes and provide strategic relocation opportunities.
+
+Overall, the Mngwa is a cunning and powerful creature that thrives in melee combat while employing various strategies and abilities that capitalize on its unique status as an aberration.</detail>
+
 
 
 ---

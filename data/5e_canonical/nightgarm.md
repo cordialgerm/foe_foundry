@@ -1,6 +1,22 @@
 <MonsterName/>Nightgarm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<summary>The Nightgarm is a large, chaotic evil monstrosity often encountered in dark and sinister environments. With an impressive Armor Class of 15 and a substantial pool of Hit Points totaling 152, it is a formidable opponent. Its primary strength lies in its powerful melee attacks, which can inflict severe damage, coupled with its ability to summon wolves as allies. Although it possesses a good Dexterity and impressive Constitution, its reliance on physical damage makes it vulnerable to radiant attacks and silvered weaponry, which can bypass its damage resistances. The Nightgarm's telepathy capability allows it to maintain communication with any falseheart it has created, even across dimensions, adding a layer of strategic depth to its role in combat.</summary>
+
+<detail>
+
+The Nightgarm’s Strength attribute is 20, providing it with a very good modifier of +5, making physical attacks potent. Its Dexterity is 14 (+2), resulting in an average modifier, ensuring it can evade some attacks but not exceptionally so. With a Constitution of 18 (+4), it has a very good modifier, enhancing its durability in a fight. Its Intelligence is average at 10 (+0), while Wisdom and Charisma are 15 (+2) and 16 (+3) respectively, both better than average but not exceptional.
+
+The Nightgarm possesses skills that enhance its capabilities in stealth and perception. It has a Stealth skill of +5, allowing it to blend into shadows effectively, which is good for ambushing enemies. Its Perception skill also stands at +5, providing it with solid awareness of its surroundings.
+
+In terms of damage vulnerabilities, the Nightgarm is particularly susceptible to radiant damage and any bludgeoning, piercing, or slashing damage inflicted by nonmagical silvered weapons. It is resistant to lightning and thunder attacks, providing some resilience against elemental damage.
+
+One of the Nightgarm's special abilities, Telepathic Bond, enables it to communicate telepathically with a falseheart it creates, disregarding the normal range limitations. This allows for unique tactics in combat, especially when coordinating strategies with these creatures.
+
+In combat, the Nightgarm can execute a Multiattack, where it makes one Bite attack and two Claw attacks per round. The Bite attack has a +8 to hit and a reach of 5 feet, dealing 16 (2d10 + 5) piercing damage. If it bites a target that is Medium or smaller, the target must succeed on a DC 15 Strength saving throw or become swallowed, which renders them blinded and restrained while taking additional acid damage. The Claw attack also has a +8 to hit, dealing 12 (2d6 + 5) slashing damage. 
+
+Additionally, the Nightgarm can use its Lupine Howl ability once per day to magically summon 2d4 wolves or 2 dire wolves to the battlefield, arriving in a round or two and acting as allies that follow the Nightgarm's telepathic commands. These wolves can significantly bolster the Nightgarm’s combat effectiveness for one hour or until the Nightgarm is defeated or dismisses them as a bonus action.</detail>
+
 
 
 ---

@@ -1,6 +1,20 @@
 <MonsterName/>Void Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
 
+<summary>The Void Dragon Wyrmling is a captivating and formidable creature, belonging to the medium dragon category with a chaotic neutral alignment. This young dragon exhibits a variety of strengths, including a high Armor Class of 17 due to its natural armor, and decent hit points totaling 45. It possesses a mix of powerful offensive and defensive capabilities, making it a challenging opponent in combat, yet it retains significant weaknesses such as its vulnerability to non-cold damage types. They are particularly known for their chilling abilities and unique powers related to gravitational manipulation, allowing them to control the battlefield in ways that can hinder their adversaries. </summary>
+
+<detail>
+
+The Void Dragon Wyrmling has the following attribute scores: Strength is 16 with a modifier of +3, Dexterity is 10 with a modifier of +0 (average), Constitution is 17 with a +3 modifier (good), Intelligence is 12 with a +1 modifier (average), Wisdom is 9 with a -1 modifier (bad), and Charisma is 17 with a +3 modifier (good). Its saving throws reflect strong defenses, particularly in Constitution and Charisma at +5, while Dexterity and Wisdom saving throws are average. It has skills in Perception at +3 and Stealth at +2. This wyrmling has damage immunity to cold and is immune to being charmed or frightened, enhancing its resilience in battle. Its senses include blindsight at 10 feet and darkvision at 60 feet, and it has a passive Perception of 13. The dragon communicates using Common, Draconic, and a unique language known as Void Speech.
+
+The Void Dragon Wyrmling has notable special abilities. "Chill of the Void" allows it to deal cold damage that bypasses resistance, making it particularly formidable against creatures that might typically resist such damage, although immunity still applies. With "Expert Void Traveler," the wyrmling is freed from basic needs, such as air and sleep, and can traverse the Void effortlessly, enabling it to participate in otherworldly encounters and maneuvers. 
+
+In terms of actions available to it, the Void Dragon Wyrmling can make a melee attack with its bite, which has a +5 to hit and a reach of 5 feet. On a hit, this attack deals 8 piercing damage and adds 3 cold damage. The dragon can also utilize powerful breath weapon attacks that recharge on a roll of 5 or 6. 
+
+The "Gravitic Breath" allows the wyrmling to exhale a wave of localized gravity in a 15-foot cube, causing significant bludgeoning damage to creatures that fall within its area. Affected creatures must make a DC 13 Dexterity saving throw; failure results in being restrained, while success results in halved speed until they exit the area. This ability creates a strategic advantage by controlling movement on the battlefield. Meanwhile, "Stellar Breath" allows the dragon to unleash a fiery and radiant assault in a 15-foot cone, prompting creatures within that area to make another DC 13 Dexterity saving throw. Failure results in taking 10 fire damage and 10 radiant damage, while success means taking half of that total.
+
+Lastly, the wyrmling can respond to threats with its reaction "Void Twist," which provides it with a +2 bonus to Armor Class against one attack while it twists reality to create a protective rift. This ability emphasizes its capacity to manipulate space in its favor, reinforcing its role as a cunning and agile combatant.</detail>
+
 
 
 ---

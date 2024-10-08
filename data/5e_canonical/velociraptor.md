@@ -1,6 +1,16 @@
 <MonsterName/>Velociraptor</MonsterName>
 <CreatureType/>Beast</CreatureType>
 
+<summary>The Velociraptor is a small but agile beast known for its quickness and deadly coordination in packs. With a challenge rating of 1/2, it is often utilized as a cunning and dangerous opponent in combat scenarios. The Velociraptor is characterized by a high Dexterity score of +4, making it exceptionally good at evading attacks and striking swiftly. Its strengths lie in its ability to work with allies, enhancing its offense through the Pack Tactics ability, which grants it advantage on attack rolls against creatures that are threatened by its companions. However, it also suffers from relatively low Strength and Intelligence scores. In direct combat, the Velociraptor possesses a mix of claw and bite attacks and can grapple opponents, restraining them and controlling the battlefield effectively.</summary>
+
+<detail>
+
+The Velociraptor has an Armor Class of 13, which is considered good, and it has 25 hit points, providing a moderate amount of durability. It has a walking speed of 30 feet, allowing it to maneuver efficiently across the battlefield. Its attributes are as follows: Strength of -2 (very bad), Dexterity of +4 (exceptional), Constitution of +1 (average), Intelligence of -3 (very bad), Wisdom of +1 (average), and Charisma of -2 (very bad). The Velociraptor has a Perception score of 13 and a Stealth score of 14, which means it is quite good at remaining hidden when needed.
+
+The Velociraptor possesses special abilities that enhance its survivability and combat effectiveness. The Hardy ability means that any critical hits against it are treated as normal hits, providing an exceptional defense against high-damage attacks. The Pack Tactics ability allows the Velociraptor to have advantage on attack rolls against a creature if at least one ally is near the target, making it much more likely to land successful hits in grouped combat situations.
+
+In terms of actions, the Velociraptor can perform a Multiattack, using one Bite attack and one Claws attack on its turn. The Bite attack is a melee weapon attack with a modifier of +4 to hit and a reach of 5 feet. On a successful hit, it deals 5 piercing damage and can grapple Medium or smaller creatures, restraining them with an escape DC of 12. The Claws attack also has a +4 modifier to hit and deals 4 slashing damage. Moreover, if the Velociraptor is grappling a creature, it can use the Maul action, which forces the grappled target to make a DC 12 Strength saving throw. On a failed save, the target takes 10 slashing damage, while a successful save results in half damage being dealt. This combination of attacks allows the Velociraptor to control and deal substantial damage to opponents effectively.</detail>
+
 
 
 ---

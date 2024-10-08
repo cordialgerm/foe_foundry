@@ -3,6 +3,32 @@
 
 <summary>A Shrieker is a type of large fungus found in dark, damp caves or underground environments. While it poses no direct threat, a Shrieker emits a loud, piercing scream when exposed to light or movement, serving as an alarm for nearby predators or guardians. This ear-splitting sound can attract dangerous creatures, making Shriekers an indirect hazard to adventurers. They are often found in clusters alongside other fungi, adding to the perils of exploring dark caverns. While they cannot move or attack, their ability to alert others to intruders makes them a dangerous part of their environment.</summary>
 
+<summary>The Shrieker is a medium plant creature that serves as an environmental hazard in various settings. With a very low armor class of 5, it is exceptionally vulnerable to physical attacks, making it a weak target. However, its 13 hit points allow it to withstand some damage before being defeated. The Shrieker has a challenge rating of 0, meaning it is not a significant threat to adventurers and primarily adds ambiance or challenges related to its abilities. One notable strength is its ability to remain motionless and blend in with its surroundings, making it difficult to detect until it chooses to react. However, it has many weaknesses, including vulnerability to fire damage, which can quickly eliminate it, as well as low stats across most attributes, rendering it ineffective in combat situations.</summary>
+
+<detail>
+
+The Shrieker has the following attributes: Strength of 1 with a modifier of -5, which is very bad; Dexterity of 1 with a modifier of -5, also very bad; Constitution of 10 with a modifier of +0, which is average; Intelligence of 1 with a modifier of -5, very bad; Wisdom of 2 with a modifier of -4, bad; and Charisma of 1 with a modifier of -5, very bad. These stats indicate that the Shrieker is not suited for physical confrontation or strategic interactions in combat. 
+
+The Shrieker possesses a special ability known as False Appearance. When it is motionless, it looks just like normal fungus, making it very difficult for characters to recognize its true nature. This ability allows it to act as a stealthy obstacle or surprise element in its environment.
+
+In terms of reactions, the Shrieker can execute a Shriek action. If it detects a creature within a 30-foot range or an area of bright light within the same distance, it emits a shriek that can be heard from up to 300 feet away. This shrieking continues for 1 minute even after the initial threat has moved away. The continuous loud noise can attract other creatures or alert nearby allies, creating a dangerous situation for those who might be in stealth or attempting to navigate quietly through a space where a Shrieker resides. 
+
+Overall, the Shrieker is designed more as an obstacle and an alert system rather than a direct combatant, giving it a unique role in encounters where awareness and stealth are crucial.
+
+The Shrieker is a medium-sized plant creature known for its distinct auditory abilities rather than its physical prowess. With a very low Armor Class of 5 and minimal Hit Points totaling just 7, the Shrieker is not built for direct combat; instead, it functions as a deterrent through sound. Its Challenge Rating of 0 indicates that it poses little threat to experienced adventurers. The Shrieker's notable powers include the ability to emit a thunderous sound and a frightening shriek, which can influence the battlefield by affecting the mental state of nearby creatures. However, its weaknesses become apparent due to its poor physical attributes, especially with negative modifiers in Strength, Dexterity, Intelligence, and Charisma, making combat poorly suited for it.
+
+The Shrieker possesses the following core attributes. Its Strength is -5, resulting in very bad physical effectiveness; its Dexterity is also -5, which gives it very bad agility; Constitution is average at +0, providing a basic level of endurance; Intelligence is -5, making it exceptionally poor in its mental capabilities; Wisdom is -4, leading to a bad perception; and Charisma is again -5, meaning it has very bad social interactions. 
+
+In terms of sensory abilities, the Shrieker has a keen sense of 30 feet, limiting its perception to this radius. Beyond this area, it is blind. Its Perception score is a low 6, and it has a Stealth score of 5, allowing it to blend in quite well when stationary. The Shrieker does not communicate in any language.
+
+The Shrieker is equipped with two special abilities. The first, False Appearance, allows it to remain motionless and blend in seamlessly with its environment, appearing as ordinary fungus to any who might pass by. The second ability, Plant Resilience, grants it unusual durability against exhaustion and specific debilitating conditions such as being paralyzed, petrified, or unconscious.
+
+In terms of actions, the Shrieker can execute a Thunderous Burst. This action involves the creature releasing a concentrated sound wave targeted at a creature within a range of 30 feet. The target must succeed on a DC 10 Dexterity saving throw; failure results in 2 thunder damage, while a successful save halves the damage taken.
+
+Its primary bonus action is the Shriek, where the Shrieker emits a loud high-pitched sound that can be heard from 300 feet away. Any creature that can hear the shriek and is within 30 feet must succeed on a DC 10 Wisdom saving throw or become frightened for the duration of the shriek. The Shrieker needs to utilize its bonus action on subsequent turns to maintain this shriek, but it has the ability to cease the action whenever it chooses. The shriek also ends if the Shrieker becomes incapacitated.
+
+As a reaction, the Shrieker can perform a Startled Shriek whenever bright light or a non-plant creature approaches within 30 feet of it. This allows it to immediately engage its shriek, even if it was not already doing so, potentially catching nearby creatures off guard.</detail>
+
 
 
 ---

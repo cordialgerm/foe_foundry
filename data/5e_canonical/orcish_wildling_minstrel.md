@@ -1,6 +1,18 @@
 <MonsterName/>Orcish Wildling Minstrel</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<summary>The Orcish Wildling Minstrel is a medium humanoid creature that plays a unique role in both combat and narrative through its musical talents and spellcasting abilities. It possesses a moderate armor class of 15, allowing it to withstand some attacks with its 32 hit points, which translates to an average durability for its challenge rating of 2. The minstrel excels in dexterity and charisma with scores of 16 (+3), giving it good dexterity modifiers which enhance its ability to evade attacks and perform impressive feats. Although it does not have high strength, constitution, intelligence, or wisdom, it excels in charisma-driven interactions and can significantly influence allies and enemies with its spells and abilities. The minstrel's strength lies in its support capabilities, bolstering allies with its martial encouragement and healing spells, while incapacitating foes with its variety of charm and illusion spells.</summary>
+
+<detail>
+
+The Orcish Wildling Minstrel has the following attributes: Strength of 10 (+0), Dexterity of 16 (+3), Constitution of 14 (+2), Intelligence of 12 (+1), Wisdom of 12 (+1), and Charisma of 16 (+3). Saving throw bonuses include a good +5 in Dexterity and +5 in Charisma. In terms of skills, it has exceptional proficiency with deception, performance, and persuasion at +5. This allows the minstrel to manipulate conversations and interactions effectively, while history, nature, and survival skills are at an average level, each at +3. With passive perception rated at 11, its awareness is fairly average, and it can communicate in any three languages, making it a versatile conversationalist and negotiator.
+
+Special abilities of the Orcish Wildling Minstrel include "Legend Lore," allowing it to instinctively cast this spell once every 30 days without any material components. The minstrel serves as a 5th-level spellcaster primarily relying on Charisma for spellcasting, resulting in a spell save DC of 13 and a +5 to spell attack rolls. The prepared bard spells consist of useful cantrips such as "Light," "Mage Hand," "Minor Illusion," and "Vicious Mockery." "Vicious Mockery," for instance, can damage and impose disadvantage on a target's next attack if they fail a Wisdom saving throw.
+
+In terms of first-level spells, the Orcish Wildling Minstrel has "Charm Person," "Disguise Self," and "Healing Word" at its disposal. "Healing Word" allows an ally or itself to regain 5 hit points, providing a vital boost in combat without requiring an action in the next turn. Second-level spells include "Enthrall," "Invisibility," and "Shatter." "Invisibility" grants the minstrel or another creature invisibility for one hour, unless they attack or cast another spell, significantly enhancing tactics during battles. "Shatter" can cause substantial thunder damage to multiple foes in a specified radius, especially advantageous against inorganic creatures due to its disadvantage on the saving throw. 
+
+Lastly, the 3rd-level spell "Hypnotic Pattern" creates a charming visual effect that incapacitates enemies, leaving them vulnerable for a full minute unless they take damage or are shaken awake, effectively controlling the battlefield. Additionally, the minstrel can use the bonus action "Martial Encouragement" to boost a nearby ally's weapon damage by 3 until its next turn, aiding in a more dynamic approach to encounters. The Orcish Wildling Minstrel serves as a repository of tribal wisdom and identity, utilizing song as a means to preserve communal memory, making it a powerful figure both in lore and during engagements with others.</detail>
+
 
 
 ---

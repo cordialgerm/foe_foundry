@@ -1,6 +1,22 @@
 <MonsterName/>Ooze, Sinkhole</MonsterName>
 <CreatureType/>Ooze</CreatureType>
 
+<summary>The Sinkhole Ooze is a gargantuan unaligned creature that presents a formidable obstacle for adventurers. These amorphous blobs inhabit the earth, often surprisingly blending into their surroundings, and are designed to ensnare unsuspecting creatures that venture too close. With a challenging rating of 4, the Sinkhole Ooze possesses considerable physical durability, boasting 108 hit points and a robust Constitution score of 16, which offers a good degree of resilience against attacks. Its low Armor Class of 7 makes it vulnerable to physical attacks, but it compensates with damage and condition immunities, notably being immune to acid damage, which allows it to thrive in its natural environment. One of its powerful offensive strategies involves grappling and restraining foes with its pseudopods, making it a significant threat in combat scenarios.</summary>
+
+<detail>
+
+The Sinkhole Ooze has a Strength score of 18, providing a very good modifier of +4, which enhances its ability to deal damage and grapple targets effectively. It has a Dexterity score of 5, resulting in a bad modifier of -3, meaning it is not adept at avoiding attacks. With a Constitution of 16 (+3 modifier), the ooze can withstand considerable punishment before succumbing. Intelligence, Wisdom, and Charisma scores are all exceptionally low, with Intelligence at 3 (-4), Wisdom at 6 (-2), and Charisma at 1 (-5), indicating that this creature lacks cognitive ability and social interaction skills. The ooze has a passive Perception score of 8 and utilizes blindsight up to 120 feet, allowing it to sense creatures despite being blind.
+
+The Sinkhole Ooze possesses several unique abilities that enhance its interaction with the environment and combat scenarios. Its Amorphous trait allows it to squeeze through tight spaces, allowing it to navigate around obstacles that may hinder other creatures. The Hollow Cylindrical Form grants it a strategic advantage, allowing other creatures to occupy the center of its cylindrical body, and they remain within the range of its attacks regardless of distance. Additionally, the ooze does not require sleep, ensuring that it is always active during encounters.
+
+The Seizing Pseudopods ability is particularly noteworthy, allowing the ooze to maintain up to six tendril-like pseudopods at any given time. Each pseudopod can be targeted as a separate entity, with an Armor Class of 10 and 10 hit points. These pseudopods are immune to acid, poison, and psychic damage, making them challenging to destroy. The ooze can extrude new pseudopods quickly, making it difficult for opponents to deplete its resources. An attacker can break a pseudopod by making a successful strength check against DC 14, but this does not deal damage to the ooze itself. 
+
+The ooze can use its Multiattack action to perform two pseudopod attacks in a single turn, presenting a consistent threat to its foes. Each Pseudopod attack has a +6 to hit and can reach a distance of 15 feet, imposing 9 (1d10 + 4) bludgeoning damage in addition to 3 (1d6) acid damage. If grappled, the target becomes restrained and suffers ongoing acid damage until they escape the grapple, which has a DC of 14.
+
+As a bonus action, the Sinkhole Ooze has the ability to Stretch Body, allowing it to envelop the walls of a pit or sinkhole, forming a hollow cylinder that extends up to 25 feet tall and 25 feet in radius. This grants it strategic control over the battlefield, and it can retract its body to occupy the nearest unoccupied space when desired. 
+
+In terms of reactions, the Pluck ability enables the Sinkhole Ooze to grab creatures that fall into its cylinder when it is stretched, forcing them to make a DC 14 Dexterity saving throw or become grappled. This reaction adds to its capability for controlling the dynamics of combat, making it a dangerous adversary for unwary adventurers.</detail>
+
 
 
 ---

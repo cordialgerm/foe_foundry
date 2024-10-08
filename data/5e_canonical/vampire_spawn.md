@@ -3,6 +3,52 @@
 
 <summary>A Vampire Spawn is a lesser form of vampire, created when a mortal is drained of their blood by a vampire but not given the full transformation. These undead creatures retain some of their former appearance but are bound to their vampire masters, acting as loyal servants. Vampire Spawn are fast, strong, and have many of the abilities of a full vampire, including enhanced strength, regeneration, and the ability to charm mortals. However, they lack the independence and full power of their creators. They are often used as enforcers or guardians by more powerful vampires.</summary>
 
+<summary>The Vampire Spawn is a Medium undead creature that functions as a formidable opponent in combat. It offers a mix of durability and offensive capabilities, reinforced by its special abilities and regeneration. With an Armor Class of 15 and a significant pool of 76 hit points, the Vampire Spawn can withstand a fair amount of damage. Its challenge rating of 4 signifies it can be a strong foe for a party of low to mid-level adventurers, offering 1,100 experience points upon defeat. The creature's strengths include high strength, constitution, and dexterity scores, allowing it to hit hard and avoid damage effectively. However, it has notable weaknesses, particularly to radiant damage and specific vulnerabilities to sunlight and running water.</summary>
+
+<detail>
+
+The Vampire Spawn possesses the following attributes: a Strength score of 18 with a +4 modifier, which is exceptionally good for melee combat; a Dexterity score of 16 with a +3 modifier, indicating good reflexes and stealth capabilities; a Constitution score of 18 with a +4 modifier, enhancing its resilience; an Intelligence score of 10 with a +0 modifier, which is average; a Wisdom score of 14 with a +2 modifier, offering a decent perception; and a Charisma score of 14 with a +2 modifier, making it reasonably persuasive. 
+
+In terms of saving throws, the Vampire Spawn has a +5 modifier in Dexterity, which is good, and +4 in Wisdom, also good. It also excels in skills, boasting a +4 in perception and a +5 in stealth, both of which are very good. The creature is vulnerable to radiant damage, which means it takes double the damage from such attacks. It also has damage resistance to necrotic damage and damage from nonmagical, non-silvered weapons, making it tough against ordinary attacks.
+
+The Vampire Spawn has several special abilities: 
+1. Regeneration allows it to regain 10 hit points at the start of its turn, as long as it has hit points remaining and has not taken radiant damage since its last turn.
+2. Spider Climb enables it to traverse even the most difficult surfaces, including climbing on ceilings.
+3. Vampire Weaknesses indicate that exposure to sunlight or running water results in it taking 20 radiant damage at the end of its turn and disables its regeneration while in contact with these weaknesses.
+
+In terms of actions:
+1. The Multiattack action lets it make two melee attacks, which enhances its damage output; however, only one of these can be a bite attack.
+2. The Grab action is a melee weapon attack that has a +6 to hit, allowing it to grapple a target if successful, dealing 8 bludgeoning damage and requiring an escape DC of 14.
+3. The Bite action, which is potent, is a melee weapon attack that also has a +6 to hit and can deal 9 piercing damage along with 14 necrotic damage. Importantly, the necrotic damage reduces the target's maximum hit points by an equivalent amount, which the vampire regains as hit points. If the bite reduces the target to 0 hit points, that target dies.
+
+Finally, the Vampire Spawn has a reaction called Hissing Scuttle, which can be activated once per day. If the Vampire Spawn takes radiant damage, it can move up to its speed without provoking opportunity attacks, allowing it to reposition strategically after suffering damage.
+
+The Vampire Spawn is a Medium undead creature, embodying the classic traits of a vampire's minion but with distinct characteristics that set it apart. It has a solid Armor Class of 15 due to its natural armor, and a substantial pool of 91 hit points, allowing it to absorb a fair amount of damage before falling in battle. With a Challenge Rating of 5, it serves as a formidable adversary in encounters. The Vampire Spawn possesses a diverse array of abilities that enhance its combat prowess, such as regeneration and enhanced mobility through climbing. However, it is vulnerable to radiant damage and holy water, which can severely hinder its regenerative capabilities. Its stealthy nature, combined with its ability to grapple foes, makes it both a dangerous and tactical opponent.
+
+The Vampire Spawn has the following ability scores:
+- Strength: +3 (average effectiveness)
+- Dexterity: +6 (very good effectiveness)
+- Constitution: +3 (average effectiveness)
+- Intelligence: +0 (very bad effectiveness)
+- Wisdom: +3 (average effectiveness)
+- Charisma: +1 (bad effectiveness)
+
+The creature has darkvision with a range of 60 feet, allowing it to see in dim light as if it were bright light, and in darkness as if it were dim light. It has a perception score of 13, which gives it good awareness of its surroundings and helps it to notice hidden enemies or traps. With a stealth score of 16, it can effectively move unnoticed in shadows, making it adept at ambushing unsuspecting victims. The Vampire Spawn can only speak the languages it knew during its life, limiting its ability to communicate.
+
+In terms of special abilities:
+- Hungry Dead Nature allows it to retain certain abilities of a vampire.
+- Regeneration enables the Vampire Spawn to regain 10 hit points at the beginning of its turn as long as it is not in sunlight or running water; this effect can be interrupted by radiant damage or damage from holy water.
+- Resting Place, Spider Climb, and Vampire Weaknesses also mimic the traits of a true vampire, granting it additional mobility and reflecting its undead nature.
+- Vampiric Resilience makes it immune to exhaustion, providing it with stamina in prolonged confrontations.
+
+For its actions during combat:
+- The Vampire Spawn can make two claw attacks with a +6 to hit, dealing 8 (2d4 + 3) slashing damage plus an additional 10 (3d6) necrotic damage. If both claw attacks hit a Medium or smaller creature, it can grapple that creature, requiring a DC 14 to escape.
+- The Draining Bite attack targets willing creatures or those grappled, incapacitated, or restrained. It hits at a +6 to attack and deals similar damage: 8 (2d4 + 3) piercing damage along with 10 (3d6) necrotic damage. Importantly, when a target is hit, its maximum hit points are reduced by the necrotic damage taken, and the Vampire Spawn heals equal to that amount.
+  
+As a bonus action, the Vampire Spawn can use Call Blood, which creates a connection with an injured creature within 10 feet, forcing it to make a DC 14 Constitution saving throw. If the creature fails, it loses 7 (2d6) hit points, or half that on a successful save. This action also grants the Vampire Spawn advantage on its next attack roll against any creature that failed the save before its next turn, enhancing its potential to deal damage significantly. 
+
+Overall, the Vampire Spawn combines effective physical attacks with dangerous abilities, making it a powerful foe in the right circumstances, skilled in grappling and draining the life from its opponents.</detail>
+
 
 
 ---

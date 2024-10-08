@@ -1,6 +1,24 @@
 <MonsterName/>Psychic Vampire</MonsterName>
 <CreatureType/>Undead</CreatureType>
 
+<summary>The Psychic Vampire is a Medium-sized Undead creature that embodies the essence of lawful evil. Known for its devastating mental powers, this monster excels in manipulating and incapacitating its opponents. It possesses a high Armor Class of 17 and significant hit points totaling 144, making it quite durable in battle. With a Challenge Rating of 13, it poses a formidable threat to adventurers, providing substantial experience if defeated. Although it has tremendous psychic abilities, it does have notable weaknesses, including vulnerabilities to sunlight and a reliance on using its environment strategically. </summary>
+
+<detail>
+
+The Psychic Vampire has the following attributes: Strength 18 (+4), Dexterity 18 (+4), Constitution 18 (+4), Intelligence 23 (+6), Wisdom 15 (+2), and Charisma 18 (+4). With a Strength modifier that is exceptional, it can hit targets hard; its Dexterity and Constitution are also very good, providing both agility and survivability. Its Intelligence is exceptional, mirroring its capabilities in psychic manipulation, while its Wisdom and Charisma are both good, allowing it to sense its environment and interact effectively.
+
+For saving throws, the vampire has good bonuses: +9 in Dexterity and Charisma, along with +7 in Wisdom, making it very resistant to many forms of control or physical confrontations. It has immunity to psychic damage and resistance to necrotic damage, bludgeoning, piercing, and slashing from nonmagical attacks, which helps it uphold in various situations. The creature benefits from 120 feet of darkvision and has a passive Perception score of 12, allowing it to detect threats and navigate effectively in the dark.
+
+Special abilities further enhance the vampire's threat level. Legendary Resistance allows it to ignore failed saving throws three times per day, effectively ensuring its survival in tight situations. The Levitate ability permits it to maneuver freely, rising or descending up to 20 feet without requiring concentration. Regeneration enables the vampire to regain 20 hit points at the start of its turn unless it takes radiant damage or damage from holy water. The Spider Climb ability allows it to scale walls and ceilings effortlessly. However, the creature is burdened by several vulnerabilities like Forbiddance, requiring an invitation to enter a residence, and Sunlight Hypersensitivity, where it suffers damage and disadvantages when exposed to sunlight.
+
+In terms of actions, the Psychic Vampire can make a Multiattack, allowing it to use Imprison Mind, followed by two melee attacks, only one of which may be a Psychic Assault. The Imprison Mind action targets a humanoid within 30 feet, forcing them to make a DC 17 Wisdom saving throw or become incapacitated for one minute, rendering them vulnerable. The Psychic Assault targets a creature within the same range, requiring a DC 17 Intelligence saving throw. If the target fails, they take 18 psychic damage and suffer memory loss. This ability can also convert humanoids slain in this manner into vampire spawn under the vampire's control.
+
+The Knowledge Keepers action allows the vampire to summon 2d4 inklings or a paper golem swarm once per day to assist in combat for an hour, adding to its threat level by swarming the battlefield with additional allies.
+
+In addition to regular actions, the Psychic Vampire has access to legendary actions, which it can use at the end of other creatures' turns. It can Move, utilize an Unarmed Strike, or expend three actions for a Psychic Pulse, which releases a damaging psychic wave that stuns enemies within 20 feet unless they succeed on a DC 17 Intelligence saving throw.
+
+Overall, the Psychic Vampire is a cunning and powerful foe, adept at controlling the battlefield through its mental abilities while also managing to sustain itself in prolonged encounters.</detail>
+
 
 
 ---

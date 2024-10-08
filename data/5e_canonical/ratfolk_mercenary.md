@@ -1,6 +1,20 @@
 <MonsterName/>Ratfolk Mercenary</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<summary>The Ratfolk Mercenary is a small, humanoid creature that operates as a skilled combatant, often hired for its agile and cunning abilities. As a mercenary, this creature brings a mix of dexterous attacks and tactical advantages to the battlefield. With a Challenge Rating of 2, it presents a moderate threat to adventurers, possessing a high Armor Class of 15 which reflects its reliance on agility rather than durability, and a reasonable pool of 45 hit points. Its key strengths lie in its dexterity and teamwork, allowing it to deal additional damage when working alongside allies and to maneuver around larger foes with ease. However, its relatively low Strength and Constitution values make it vulnerable in direct confrontations where it might not leverage its advantages effectively.</summary>
+
+<detail>
+
+The Ratfolk Mercenary has the following attributes: Strength 7 (-2, very bad), Dexterity 18 (+4, exceptional), Constitution 11 (+0, average), Intelligence 14 (+2, good), Wisdom 10 (+0, average), and Charisma 10 (+0, average). This attributes setup showcases its proficiency in Dexterity-related tasks, enhancing its stealth and ability to evade attacks. 
+
+In terms of saving throws, it has a +6 modifier on Dexterity saves and a +4 modifier on Intelligence saves, both of which are considered good and above average, respectively. The mercenary has several skills at its disposal: an impressive +8 bonus in Acrobatics and Stealth, and +2 bonuses in Deception, Intimidation, and Perception. This makes it exceptionally capable in stealth-oriented scenarios and useful in social encounters.
+
+The Ratfolk Mercenary possesses several special abilities that enhance its combat effectiveness. The Chopper Squad ability allows its melee attacks to deal an additional die of damage when the mercenary has an ally nearby, effectively increasing its damage output when working in a group. Its Nimbleness ability permits it to slip through the spaces of Medium or larger creatures, which can aid in tactical repositioning during battle. With Pack Tactics, it gains advantage on attack rolls against foes if an ally is within close proximity, making it much more likely to land successful hits in group combat scenarios. The Packing Heat ability is a unique blend of maneuverability and offense, allowing the mercenary to launch an additional attack after charging towards a target, which can create a burst of damage in quick succession.
+
+In combat, the Ratfolk Mercenary can perform a Multiattack, allowing it to strike twice with either a shortsword or a dart. If both shortsword attacks hit the same target, the mercenary can deal an extra 4 piercing damage via a bite attack as a bonus action, which can significantly enhance its damage output. The Shortsword has an attack modifier of +6 to hit, with a base damage of 7 piercing damage. Additionally, the Dart is used as a ranged attack, also with a +6 to hit and dealing 6 piercing damage, providing versatility in its attack options.
+
+As for reactions, the Ratfolk Mercenary has the Guard the Big Cheese ability, which enables it to protect its employer by granting a +2 bonus to the employer's Armor Class when it is within close range during an attack. This showcases its role as not just a fighter but also a protective ally in combat, making it an ideal companion for a team in need of an agile and supportive character.</detail>
+
 
 
 ---

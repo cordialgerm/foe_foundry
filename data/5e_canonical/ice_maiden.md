@@ -1,6 +1,18 @@
 <MonsterName/>Ice Maiden</MonsterName>
 <CreatureType/>Fey</CreatureType>
 
+<summary>The Ice Maiden is a Medium Fey creature that embodies a chilling elegance and wields formidable powers associated with ice and snow. As a lawful evil creature, she charms and manipulates those around her, making her a cunning adversary in combat and social interactions. With an Armor Class of 16, she is relatively defensively capable, and her 84 hit points provide a good amount of durability. However, she has a specific vulnerability to fire damage, which can be exploited by her enemies. The Ice Maiden's challenge rating of 6 indicates that she should be a noticeable threat to a party of adventurers, rewarding them with 2,300 experience points upon defeat.</summary>
+
+<detail>
+
+In terms of her attributes, the Ice Maiden has a Strength of 12 (+1), Dexterity of 17 (+3), Constitution of 15 (+2), Intelligence of 19 (+4), Wisdom of 13 (+1), and Charisma of 20 (+5). Her high Charisma gives her exceptional effectiveness in social interactions, particularly in Deception and Persuasion, which she excels at with bonuses of +8. Additionally, she possesses a good Dexterity score, allowing her to be nimble and stealthy, with a Stealth bonus of +6. Her saving throws allow her to withstand magical effects quite effectively, with Constitution saving throws at +5 and Charisma saves at +8. 
+
+The Ice Maiden has several special abilities that give her an edge in both combat and survival situations. Her Chilling Presence deals an average of 3 cold damage to any creature that starts its turn within 15 feet of her, while also extinguishing unprotected nonmagical flames and freezing water under the same conditions. The Ice Walk ability allows her to traverse icy terrain without penalty, and her Magic Resistance gives her advantage on saving throws against spells, making her very good at avoiding magical harm. Additionally, her Snow Sight enables her to see clearly through snow and fog.
+
+In combat, the Ice Maiden can take two actions per turn thanks to her Multiattack, using either Ice Blade or Ice Bolt. The Ice Blade melee attack boasts a +6 to hit and can deal 7 slashing damage plus an impressive 14 cold damage, making it a powerful strike. The Ice Bolt, a ranged spell attack, has a +8 to hit and deals a substantial 19 cold damage, demonstrating her strong offensive capabilities. Her unique ability, Kiss of the Frozen Heart, allows her to kiss a willing humanoid, granting them immunity to cold damage while charming them and forcing them to obey her commands until the effect ends or they take harm. This ability empowers her to manipulate allies or potential enemies in combat.
+
+One of her most powerful actions is Icy Embrace, which she can use after a recharge of 5-6. This ability allows her to blast wintry weather at a target point, dealing significant cold damage of 28 to any creature within 15 feet and restraining them in ice, adding strategic control in battle. Finally, her Snow Step bonus action enables her to teleport through snow or ice, giving her exceptional mobility on the battlefield, allowing her to reposition or escape threats quickly. Overall, the Ice Maiden is a versatile and potent foe, capable of both dealing substantial damage and exerting control over her opponents.</detail>
+
 
 
 ---

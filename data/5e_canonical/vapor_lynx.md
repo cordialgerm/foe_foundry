@@ -1,6 +1,20 @@
 <MonsterName/>Vapor Lynx</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<summary>The Vapor Lynx is a large monstrosity that embodies a chaotic neutral alignment, making it unpredictable and dangerous. Known for its stealth and ability to manipulate its environment, the Vapor Lynx is equipped to thrive in foggy or misty conditions. With an Armor Class of 14 and a total of 127 hit points, it boasts a moderate level of defense and durability. This creature has a Challenge Rating of 5, offering 1,800 experience points for defeating it, indicating it's a formidable threat for mid-level adventurers. The Vapor Lynx’s strengths lie in its agility, with a Dexterity score of 18 providing a good modifier of +4, which enhances its Stealth skill, giving it an exceptional advantage in sneaky tactics. However, its Intelligence is average, at +0, signaling that it may not employ complex strategies in combat.</summary>
+
+<detail>
+
+The attributes of the Vapor Lynx are as follows: it has a Strength score of 15 (+2), signifying a good capability in physical confrontations; a Constitution score of 16 (+3) for very good resilience in sustaining damage; a Wisdom score of 13 (+1) indicative of average insight; a Charisma score of 14 (+2), which is also good for any Charisma-based interactions; and finally, an Intelligence score of 10 (+0) which is average. It also possesses significant skills in Perception with a +4 modifier and Stealth with a +7 modifier, enhancing its ability to detect enemies and evade notice.
+
+The Vapor Lynx is immune to poison damage and cannot be poisoned, providing it a strategic advantage against adversaries that rely on such abilities. Its darkvision allows it to see in dim light within 60 feet as if it were bright light, and its passive Perception score is 14, which is good for detecting hidden creatures or traps. Communicating in both Common and Sylvan allows for interaction with various beings.
+
+Among its special abilities, the Vapor Lynx has "Fog Flow," enabling it to pass through spaces as narrow as one inch while in fog or mist without penalty. "Hazesight" allows it to see through fog and mist as if unobscured, giving it a significant edge in combat situations shrouded in mist. Additionally, "Swamp Walk" ensures that difficult terrain from mud or water does not hinder its movement, allowing it to traverse various landscapes more effectively.
+
+In terms of actions, the Vapor Lynx can perform a "Multiattack," allowing it to make one Bite attack and two Claw attacks in a single turn. Its Bite attack has a +7 to hit, with a reach of 5 feet and deals an average of 13 piercing damage on a hit, while each Claw attack also has a +7 to hit and deals an average of 11 slashing damage. Notably, it can unleash its "Poison Breath" attack, which has a recharge mechanic requiring it to roll a 5 or 6 to use. This ability allows it to exhale a cloud of poisonous fog in a 20-foot radius, creating heavily obscured terrain. Creatures caught in this area must succeed on a DC 14 Constitution saving throw, facing 28 poison damage on a failure, alongside the poisoned condition, or half damage on success. The fog lingers for one minute, presenting ongoing danger to those within its radius.
+
+Additionally, as a bonus action, the Vapor Lynx can perform a "Fog Step," teleporting up to 30 feet to another unoccupied space containing fog, allowing for quick repositioning during battles and enhancing its elusive nature.</detail>
+
 
 
 ---

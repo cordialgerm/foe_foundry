@@ -1,6 +1,16 @@
 <MonsterName/>Young Light Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
 
+<summary>The Young Light Dragon is a large, neutral good dragon known for its celestial powers and unique abilities that make it a formidable yet benevolent creature. With a challenge rating of 7, it has a strong presence in combat, boasting a high hit point pool of 142, which makes it resilient against attacks. Its armor class is 15, providing good defense due to its natural armor. The Young Light Dragon possesses significant physical strength with a Strength score of 18, offering exceptional melee capabilities, while its Constitution of 19 ensures great durability. However, its Dexterity is average with a score of 10, making it less agile than many other creatures. Notable for its damage immunities to radiant damage and resistances against non-magical physical damage, its weaknesses are minimal. With the ability to communicate in Draconic and perceive its surroundings with advanced sensory abilities like blindsight and darkvision, this dragon stands out as both a mystical and formidable ally in any adventure.</summary>
+
+<detail>
+
+The Young Light Dragon's attributes are as follows: its Strength is 18 with a modifier of +4, considered exceptional, while its Dexterity is average at 10 with a modifier of +0. Its Constitution score of 19 grants it a very good +4 modifier, making it tough in battle. The Intelligence score is 14, leading to a good +2 modifier, while the Wisdom score is 16, giving it a good +3 modifier, which enhances its perceptual skills. Finally, its Charisma of 15 provides a good +2 modifier useful for persuasion.
+
+The Young Light Dragon has several special abilities that enhance its versatility in both combat and exploration. It sheds bright light in a 15-foot radius and dim light for an additional 15 feet, allowing for visibility in dark areas due to its Illumination ability. With Incorporeal Movement, it can navigate through objects and creatures as if they were difficult terrain, though it suffers 5 force damage if it ends its turn inside an object. Under the Void Traveler ability, the dragon can move effortlessly between stars without the need for air, food, drink, or sleep, gliding on solar winds, which allows for rapid travel across vast distances.
+
+In terms of actions, the Young Light Dragon can perform a Bite attack, which is a melee weapon attack with a +7 to hit, capable of reaching a target 5 feet away and dealing an average of 15 piercing damage (2d10 + 4). It also possesses a powerful Breath Weapon that recharges on rolls of 5 or 6. The Radiant Breath allows it to exhale radiant energy in a 30-foot cone, requiring affected creatures to make a DC 15 Dexterity saving throw; those who fail take 44 radiant damage (8d10), while successful saves halve the damage. Additionally, the Flaring Breath emits a dazzling light in a 30-foot cone, forcing affected creatures to make a DC 15 Constitution saving throw or be blinded. Undead in the area must also make a DC 15 Wisdom saving throw, with those who fail being turned for 1 minute; if their challenge rating is 1 or lower, those that fail are instantly destroyed. This combination of breath weapons makes the Young Light Dragon both an effective combatant and a strategic participant in encounters involving undead enemies.</detail>
+
 
 
 ---

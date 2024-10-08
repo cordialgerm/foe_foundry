@@ -1,6 +1,24 @@
 <MonsterName/>Great Wyrm White Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
 
+<summary>The Great Wyrm White Dragon is an exceptionally powerful and formidable creature in the Dungeons & Dragons universe, known for its vast size and mastery over ice and cold. As a Gargantuan dragon, it possesses a blend of destructive capabilities, strong physical attacks, and potent mystical abilities. With a high Armor Class of 20 and an impressive pool of hit points totaling 740, it is exceptionally durable in battle. Its challenge rating of 22 indicates that it poses a significant threat to adventurers, offering a blend of devastating breath attacks and magical prowess that can control the battlefield. While its cold damage immunities make it resilient against cold-based attacks, it lacks any significant resistance to non-cold damages, which may be exploited by clever opponents. This dragon has strengths in intimidation and perception, making it a terrifying opponent that commands respect.</summary>
+
+<detail>
+
+The Great Wyrm White Dragon has the following attributes: Strength at 26 (+8), Dexterity at 12 (+1), Constitution at 26 (+8), Intelligence at 10 (+0), Wisdom at 16 (+3), and Charisma at 16 (+3). Its key saving throws include Dexterity at +8 (average), Constitution at +15 (exceptional), Wisdom at +10 (good), and Charisma at +10 (good). The dragon's skills further enhance its capabilities, with intimidation at +10 (good), perception at +10 (good), and stealth at +8 (average). Its damage immunity to cold and sensory abilities like blindsight at 60 feet and darkvision at 120 feet make it a predator in icy environments.
+
+One of the dragon’s notable special abilities, Cold Mastery, allows it to move and see normally in cold, icy conditions, and it can burrow through snow and ice without leaving any traces. This mobility provides a substantial advantage in northern terrains. Legendary Resistance, usable three times per day, lets it succeed on failed saving throws, an ability that safeguards against debilitating effects; however, using this ability reduces its Armor Class to 18 if overused. The Heart of Winter ability recharges its powerful breath weapon when it first takes significant damage, making it even more dangerous in critical moments. 
+
+The dragon can innately cast spells, with a spellcasting ability based on Charisma, resulting in a save DC of 18. It can cast the following spells three times a day: dominate beast, fire shield, animal friendship, and sleet storm. It can also cast control weather, wall of ice, and reverse gravity once a day. These spells provide versatility, allowing the dragon to manipulate the environment, control creatures, and defend itself. The dominate beast spell can impose control over lesser beasts, while fire shield can protect it from fiery threats. Sleet storm creates difficult terrain that can hinder foes, thus amplifying the dragon's control over the field.
+
+In combat, the Great Wyrm White Dragon can initiate a Multiattack, executing one bite and two claw attacks or opting to use its Spit Ice ability. The bite attack has a +15 to hit, can reach 15 feet, and deals an average of 39 damage: 30 piercing combined with 9 cold. The claws have the same +15 to hit, reach 10 feet, and inflict 21 slashing damage each. Additionally, the Tail attack also has a +15 to hit, with a reach of 20 feet, pushing the target away while dealing another 21 bludgeoning damage.
+
+The Spit Ice attack targets a creature within 60 feet, forcing a Dexterity saving throw with a DC of 23. Failure results in 22 cold damage and a reduction of speed to 0 until the end of the target's next turn; success halves the damage. Its Cold Breath ability, usable after a recharge, unleashes a cone of frost dealing 66 cold damage on a failed Constitution saving throw (DC 23), also reducing speed to 0 until the end of the target's next turn.
+
+As a reaction, the dragon can utilize a Tail Attack against melee attackers it can see within 10 feet, offering a counter to aggressive foes. It can also take legendary actions. It can use Roar to frighten creatures within 120 feet, forcing a Charisma saving throw (DC 18). Those who fail are frightened for a minute, though they can attempt to save at the end of their turns. Its Wing Attack forces creatures within 15 feet to make a Dexterity saving throw (DC 23), pushing and knocking them prone upon failure. Finally, its Raging Storm ability emanates from the dragon in a 40-foot radius, creating difficult terrain and damaging any creature that moves within it on their turn.
+
+Overall, the Great Wyrm White Dragon is a terror on the battlefield with its blend of physical attack prowess, magical versatility, and environmental control, making it a creature that adventurers approach with caution and strategic planning.</detail>
+
 
 
 ---

@@ -1,6 +1,16 @@
 <MonsterName/>Ink Guardian</MonsterName>
 <CreatureType/>Ooze</CreatureType>
 
+<summary>The Ink Guardian is a Large ooze creature that serves as an aggressive and unpredictable force on the battlefield. With an Armor Class of 8 and a substantial Hit Points total of 102, it can absorb a good amount of damage, making it a formidable opponent for mid-level adventurers. Although its Dexterity is low, giving it a poor initiative and movement speed, its physical strength is commendable, and it is exceptionally resilient to several types of damage. One notable feature is its ability to rejuvenate after being defeated, allowing it to return to battle unless its containment bottle is destroyed. However, it is vulnerable to bludgeoning attacks if its bottle is breaching, and it possesses significant weaknesses against ranged combat due to its low Dexterity and poor Armor Class.</summary>
+
+<detail>
+
+The creature's attributes include a Strength score of 16, which yields a +3 modifier, making its physical attacks quite effective. The Constitution is also strong at 16, translating to a +3 modifier, which contributes to its high hit points. However, it has a Dexterity of 7, resulting in a -2 modifier, which is very bad for initiative and agility. Intelligence and Wisdom scores are both 6, giving them a -2 modifier, which is also very bad; thus, it has no notable capabilities in cognitive tasks or perception beyond its blindsight range. Charisma is exceptionally low at 1, defining its inability to engage in social interaction or persuasion, with a -5 modifier.
+
+The Ink Guardian's special abilities enhance its combat utility and survivability. "Amorphous" allows it to slip through tight spaces, making it hard to corner. "Bottled Rejuvenation" is a unique mechanic that enables the creature to escape and regenerate after its defeat unless its bottle is damaged or destroyed. This ability highlights the necessity for adventurers to quickly eliminate the bottle to prevent the Ink Guardian from returning to fight. "Selectively Caustic" deals 4 acid damage to those who make contact, punishing melee attackers and discouraging close-range engagement. The "Volatile" ability redirects thunder damage it takes into area damage, thereby entangling nearby enemies, and also causes an explosive end when it is reduced to 0 hit points, dealing A substantial 9 acid damage if they fail a Dexterity saving throw.
+
+For actions during combat, the Ink Guardian can execute a "Multiattack," allowing it to make two pseudopod strikes against foes. Each pseudopod attack has a +5 to hit, providing a good chance of landing a blow, and it deals 7 bludgeoning damage alongside an additional 7 acid damage, making its melee potential considerable for a creature of its type. Overall, the Ink Guardian excels in creating chaos and disruption on the battlefield while posing unique challenges in terms of its vulnerabilities and regeneration mechanics.</detail>
+
 
 
 ---

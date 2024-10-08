@@ -1,6 +1,20 @@
 <MonsterName/>Nihilethic Dominator</MonsterName>
 <CreatureType/>Undead</CreatureType>
 
+<summary>The Nihilethic Dominator is a formidable Large Undead creature characterized by its Neutral Evil alignment. This entity stands as a significant challenge in combat scenarios, reflecting both its durability and offensive capabilities. With a challenge rating of 5, it offers 1,800 experience points upon defeat. The dominator possesses an armor class of 13, providing a decent level of defense, and boasts 82 hit points derived from a robust constitution, making it resilient against attacks. Its strengths lie in its damage immunities to cold, necrotic, and poison damage, along with being immune to the poisoned condition. Despite its low Dexterity score, which generates a bad modifier to initiative and ranged defenses, the dominator compensates for this with strong melee attacks and capabilities that allow it to maneuver effectively in battle. It can be particularly dangerous due to its ability to knock opponents prone and deal significant necrotic damage.</summary>
+
+<detail>
+
+The Nihilethic Dominator has the following attributes: Strength at 16 (+3) is good, providing a strong modifier for physical attacks; Dexterity at 8 (-1) is bad, impairing agility; Constitution at 16 (+3) is good, ensuring high durability; Intelligence at 3 (-4) is very bad, indicating low mental acuity; Wisdom at 6 (-2) is bad, suggesting poor perception; and Charisma at 7 (-2) is also bad, signaling limited social presence. 
+
+In terms of special abilities, the Nihilethic Dominator has several notable powers. Its Ghostly Body ability allows it to resist damage from nonmagical attacks and move through creatures and objects, dramatically increasing its mobility during combat. However, it does take force damage if it ends its turn inside an object. The Undead Fortitude ability enables it to potentially avoid falling to 0 hit points, requiring a Constitution saving throw whenever it takes damage, unless that damage is from a radiant source or a critical hit. A successful save will allow it to remain standing at 1 hit point. Finally, its Undead Nature means that it does not require air, food, drink, or sleep, making it a relentless opponent in extended encounters.
+
+In combat, the Nihilethic Dominator can utilize a Multiattack option, either making three Claw attacks with a +6 to hit, reaching and striking for an average of 12 slashing damage, or two Tendril of the Void attacks, which can cover greater reach and inflict a combination of cold and necrotic damage totaling 14 on a hit. The Claw attack also has a debilitating effect, requiring a targeted creature to succeed on a DC 14 Strength saving throw to avoid being knocked prone. 
+
+As a bonus action, the dominator can utilize Void Shape to switch between its Undead form and a Void ghost form, retaining the same overall statistics but altering its resistances. This transformation can aid in strategic positioning and survivability during combat. 
+
+For reactions, the Nihilethic Dominator has the Void Body ability, allowing it to reduce incoming damage by rolling a 1d12 whenever it takes non-radiant damage. This resilience enhances its already high durability, making it a challenging foe that can absorb and withstand considerable punishment.</detail>
+
 
 
 ---

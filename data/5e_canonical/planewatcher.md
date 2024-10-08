@@ -1,6 +1,24 @@
 <MonsterName/>Planewatcher</MonsterName>
 <CreatureType/>Celestial</CreatureType>
 
+<summary>The Planewatcher is a formidable celestial creature that embodies the principles of law and order in the multiverse. Possessing exceptional speed and flight capabilities, it can traverse great distances quickly while maintaining a high degree of agility. With a strong focus on control through grappling and debilitating attacks, the Planewatcher excels in both offense and defense. Its robust defensive stats are complemented by its strong magical abilities and resistance to nonmagical damage, making it a tough opponent to face. However, despite its strengths, it has a moderate challenge rating, indicating that it can be overcome with strategy and teamwork.</summary>
+
+<detail>
+
+The Planewatcher has extraordinary attributes: a strength of 18, dexterity of 18, constitution of 18, intelligence of 17, wisdom of 18, and charisma of 20. These attributes translate into a strong proficiency in physical confrontations and spellcasting, with notable effectiveness in saving throws for wisdom (+8) and charisma (+9), which are good when defending against various effects. It also excels in skills like athletics, insight, perception, and survival, each yielding +8, indicating very good capabilities to navigate, survive, and perceive its surroundings.
+
+Defensively, the Planewatcher possesses an armor class of 18 due to its plate armor and has a substantial pool of hit points at 136, representing good durability in battle. It is immune to poison damage and resistant to radiant damage, as well as bludgeoning, piercing, and slashing damage from nonmagical sources. The creature is also immune to being charmed, frightened, or poisoned, thereby enjoying exceptional protection against psychological effects. Equipped with truesight up to 120 feet and a passive perception score of 18, it can detect hidden creatures and illusions effectively, adding to its tactical prowess.
+
+The Planewatcher's unique abilities bolster its formidable presence on the battlefield. With Magic Resistance, it has advantage on saving throws against spells, enhancing its survivability against magic. Its Planar Sense allows it to locate creatures and planar portals, strengthening its tactical advantage by making it aware of nearby threats and escape routes. The Plane Bound ability grants it immunity to effects that would forcibly relocate it, granting control over its positioning. Additionally, the Word-Bound ability keeps track of creatures that evade its promises, while allowing it to unleash the banishment spell as a bonus action on grappling foes.
+
+In combat, the Planewatcher can execute a multiattack strategy, consisting of either a Radiant Lasso attack accompanied by two Enervating Blasts, or three Enervating Blasts. The Radiant Lasso attack, which has a +8 to hit, allows it to grapple targets, deal significant radiant damage of 22 (4d6 + 4), and impose restrictions on the target, including the inability to lie or teleport until the grapple ends. The Enervating Blast, with a +9 to hit and a range of 60 feet, deals 23 (4d8 + 5) force damage and inflicts disadvantage on the target's Strength and Dexterity checks until the end of its next turn, severely limiting the target’s performance.
+
+The Planar Ultimatum is a robust ability that compels grappled creatures to return to their home plane within 24 hours. Failure to comply requires a Constitution saving throw against a DC of 17, resulting in severe radiant damage if unsuccessful. If the creature agrees, it becomes subject to a geas spell, ensuring compliance for the next 30 days.
+
+As a bonus action, the ability to Reel allows the Planewatcher to pull a grappled creature toward itself, up to 25 feet, effectively repositioning opponents and maintaining pressure in combat. This mixes both control and movement in a very effective manner.
+
+All these factors make the Planewatcher a standout celestial entity, adept in control, defense, and devastating offense, making it a powerful foe for any adventuring party.</detail>
+
 
 
 ---

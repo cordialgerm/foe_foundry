@@ -1,6 +1,20 @@
 <MonsterName/>Hulking Whelp</MonsterName>
 <CreatureType/>Fey</CreatureType>
 
+<summary>The Hulking Whelp is a small fey creature with chaotic neutral alignment that can transition between two distinctive forms: a whelp and a hulking canine variant. It possesses a solid natural armor class of 15 and has an impressive pool of hit points totaling 94, which gives it good durability in combat. With a speed of 40 feet, the hulking whelp can maneuver effectively on the battlefield. It has a challenge rating of 5, making it a suitable encounter for a party of adventurers seeking moderate difficulty. The creature exhibits extraordinary strength with a score of 21 (+5 modifier, considered exceptional), allowing for potent melee attacks, while its resilience is bolstered by a constitution score of 18 (+4, rated as very good). However, its intelligence is low (7, -2), which limits its strategic capabilities and interactions outside of combat. Notably, the hulking whelp has damage resistances to most nonmagical physical attacks, adding another layer of protection against standard weaponry.</summary>
+
+<detail>
+
+The attributes of the hulking whelp are as follows: Strength 21 (+5), Dexterity 10 (+0, average), Constitution 18 (+4, very good), Intelligence 7 (-2, very bad), Wisdom 14 (+2, good), and Charisma 9 (-1, bad). Its skill set is not detailed, and it has passive perception of 12, providing some ability to perceive hidden threats, but it cannot communicate verbally, as it lacks any languages.
+
+In terms of special abilities, the hulking whelp's "Frightened Anger" grants it disadvantage on saving throws against spells and magical effects that aim to mitigate its emotional intensity, hindering its capability to resist such spells. It also has a unique ability called "Pacify," which allows a creature that has previously interacted peacefully with it to attempt to calm it through a Charisma (Persuasion) check against a DC of 15. If successful, the hulking whelp will revert to whelp form and cease its attacks on the next turn, although damage taken before this transformation will prevent it from reverting. The ability "Unleashed Emotion" ensures that during each of its turns, the hulking whelp must attack the nearest visible creature. Should no viable target be reachable for two consecutive turns, it can revert to its whelp form.
+
+When it comes to actions, the hulking whelp can make a multiattack, delivering two Slam attacks. The Slam attack has a +8 to hit at a reach of 10 feet, and upon hitting, it deals 18 (3d8 + 5) bludgeoning damage.
+
+As a bonus action, the hulking whelp can use "Change Shape" to switch between its hulking and whelp forms. Its statistics remain consistent aside from its size and creature type, and any carried equipment does not transform. If it dies, it will revert to its whelp form.
+
+Finally, its reaction ability, "Defensive Transformation," can trigger when it is attacked or threatened by an observable creature. It must succeed on a DC 12 Wisdom saving throw or shift into its hulking form as described in its Change Shape ability. This reaction demonstrates its instinctual drive to transform when faced with danger, further enhancing its unpredictable nature in combat scenarios.</detail>
+
 
 
 ---

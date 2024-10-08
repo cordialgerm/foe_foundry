@@ -1,6 +1,26 @@
 <MonsterName/>Lunar Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<summary>The Lunar Devil is a formidable fiend known for its cunning and versatility in both combat and manipulation. It boasts impressive physical attributes, particularly in strength and dexterity, which enhance its melee attacks significantly. The creature has strong defenses and is quite resilient thanks to its damage immunities and resistances. Its lawful evil alignment reflects its calculated and ruthless nature, making it a substantial challenge for adventurers. Notably, its ability to utilize moonlight to enhance its defenses and mobility adds an intriguing dimension to its tactics in battle. However, while it has high hit points, its reliance on darkness might present a weakness in brightly lit environments.</summary>
+
+<detail>
+
+The Lunar Devil has an Armor Class of 16, which indicates a good ability to avoid being hit in combat. It possesses 94 hit points derived from 9d10 plus an additional 45, making it quite durable and capable of sustaining heavy damage before being defeated. It has a movement speed of 60 feet on the ground and 40 feet while flying, allowing it to maneuver effectively during combat encounters. With a challenge rating of 8, it provides an average experience of 3,900 XP when defeated.
+
+In terms of attributes, the Lunar Devil has the following scores: Strength of 21 (+5), Dexterity of 21 (+5), Constitution of 20 (+5), Intelligence of 16 (+3), Wisdom of 15 (+2), and Charisma of 18 (+4). The strength, dexterity, and constitution scores contribute to exceptional melee attack potential and resilience, giving it an exceptional modifier of +8 on saving throws for Strength, Dexterity, and Constitution. Its Wisdom saving throw is good with a +5 modifier, while its skills in Perception provide an insight that complements its natural abilities.
+
+The creature is immune to damage from fire and poison and resistant to cold damage along with bludgeoning, piercing, and slashing damage from nonmagical attacks unless made with silvered weapons. Additionally, it has advantage on saves against being poisoned, and it is immune to the poisoned condition. Its senses include darkvision, allowing it to see in complete darkness up to 120 feet, and a passive perception score of 15.
+
+Its special abilities include Devil's Sight, which allows it to see through magical darkness; Light Incorporeality, which grants it immunity to damage from nonmagical weapons when in moonlight; and Lightwalking, allowing it to move between areas of moonlight within a significant range. It also possesses Magic Resistance, granting it advantage on saving throws against spells and other magical effects.
+
+In combat, the Lunar Devil can execute a multiattack, allowing it to strike with its Bite, Claw, and Tail in one action, or it can choose to launch three Hurl Moonlight attacks. Its Bite attack is a melee weapon attack with a +8 to hit that deals 16 piercing damage plus an additional 9 cold damage. The Claw attack, also a melee weapon attack, has a +8 to hit and deals 12 slashing damage. The Tail attack similarly has a +8 to hit, dealing 14 bludgeoning damage. 
+
+The Hurl Moonlight action is a ranged spell attack with a +7 to hit and a range of 150 feet, dealing 17 cold damage upon a hit. The target must also succeed on a DC 15 Constitution saving throw to avoid being blinded until the end of its next turn, adding a debilitating effect to this attack.
+
+Furthermore, once per day, the Lunar Devil can use its Summon Devil ability to call up to four giant owls, which act as allies in combat. There's a 25 percent chance that instead of owls, another Lunar Devil will be summoned. The summoned creatures obey the Lunar Devil's telepathic commands, significantly bolstering its presence in combat.
+
+Lastly, the Lunar Devil can cast spells, utilizing Charisma as its spellcasting ability, with a spell save DC of 15. It can cast fly and major image at will and has access to greater invisibility three times a day, as well as wall of ice once per day. These spells enhance its tactical versatility, allowing it to manipulate the battlefield and its enemies effectively.</detail>
+
 
 
 ---

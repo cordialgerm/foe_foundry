@@ -1,6 +1,28 @@
 <MonsterName/>Greater Sphinx</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<summary>The Greater Sphinx is a colossal monstrosity known for its many supernatural attributes and formidable combat capabilities. It serves as both a guardian and a challenger, often guarding ancient wisdom or treasures while also possessing a deep understanding of magic and lore. With a high armor class of 20 and a significant pool of hit points totaling 220, it is extremely resilient in combat, capable of withstanding considerable damage. Its challenge rating of 17 indicates that it is a powerful foe that adventurers must approach with caution. The Sphinx excels with strong Wisdom and intelligence scores, enhancing its spellcasting and insight. However, its reliance on physical attacks may be seen as a weakness, as its Dexterity is relatively average, making it less evasive in quick maneuvers.</summary>
+
+<detail>
+
+The Greater Sphinx has the following attributes: Strength at 22 with a modifier of +6, which is very good for melee attacks; Dexterity at 14 with a +2 modifier, which is average and reflects its moderate agility; Constitution at 18 with a +4 modifier indicating good endurance; Intelligence at 18 with a +4 modifier showcasing exceptional brainpower; Wisdom at 22 with a +6 modifier marking it as exceptional, vital for its spellcasting and perceptiveness; and Charisma at 20 with a +5 modifier, also exceptional and useful for social interactions. 
+
+For saving throws, the Greater Sphinx registers +6 for Dexterity, +8 for Constitution, +8 for Intelligence, and +10 for Wisdom. This means it has good defenses against physical attacks and exceptional resistance against mental and magical effects due to its high Wisdom. In terms of skills, the Sphinx's arcana, history, religion, and perception skills are all enhanced with +8 for arcana, history, and religion, and +10 for perception indicating that it is particularly perceptive and knowledgeable. 
+
+The creature possesses immunity to psychic damage and damage from nonmagical weapons, making it remarkably resilient against common attacks. It is also immune to being charmed, frightened, paralyzed, or stunned, allowing it to remain in control during encounters. The Greater Sphinx benefits from truesight, giving it the ability to see through illusions and invisibilities within 120 feet, alongside a passive perception score of 20, making it exceptionally aware of its surroundings. It is capable of communicating in Celestial and Common and has telepathy that extends to 120 feet.
+
+In terms of special abilities, the Sphinx is "Inscrutable," granting it immunity to divination magic and providing disadvantage on Insight checks made against it. It also has "Legendary Resistance" once per day: if it fails a saving throw, it can choose to succeed instead, but must shatter a piece of its jewelry to do so. This impressive ability enables the Sphinx to avoid debilitating effects in critical moments.
+
+Its "Innate Spellcasting" allows it to cast spells using Wisdom as its spellcasting ability with a DC of 18. The spells it can cast at will include detect evil and good, detect magic, minor illusion, spare the dying; while it can cast dispel magic, identify, lesser restoration, remove curse, scrying, tongues, and zone of truth three times per day; and contact other plane, flame strike, freedom of movement, greater restoration, legend lore, and heroes’ feast once per day. The presence of such potent spells enhances its versatility in both combat and non-combat situations.
+
+Regarding actions, the Greater Sphinx can use "Multiattack" to make two claw attacks per turn, with a +10 to hit and a reach of 5 feet, dealing 17 slashing damage (2d10 + 6) on a successful hit. 
+
+Additionally, it can use "Dispel Magic," a 3rd-level spell action that allows the Sphinx to end spells affecting creatures or objects it can see within 120 feet. "Flame Strike," a powerful 5th-level spell, allows it to deal fire and radiant damage in a designated area, requiring creatures to make a Dexterity saving throw to avoid damage.
+
+The Sphinx can unleash a magical "Roar" three times per day, with each use becoming more powerful. The first roar frightens creatures that fail a saving throw; the second inflicts thunder damage and frightens while potentially paralyzing victims; the third roar is particularly devastating, dealing significant thunder damage and knocking targets prone.
+
+As a bonus action once per day, the Greater Sphinx can utilize "Speed Time," doubling its speed and flying speed for a minute and allowing it to make three claw attacks during its Multiattack. It also has the "Planar Jaunt" ability, which allows it to transport up to eight willing creatures to a different place, plane, or time, showcasing its vast capabilities in both combat and travel. This powerful ability, lasting for 24 hours, highlights its role as not only a guardian but a potent manipulator of environments and realities.</detail>
+
 
 
 ---

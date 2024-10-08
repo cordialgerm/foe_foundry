@@ -1,6 +1,22 @@
 <MonsterName/>Skull Lantern</MonsterName>
 <CreatureType/>Undead</CreatureType>
 
+<summary>The Skull Lantern is a tiny undead creature, notable for its eerie glow and vulnerability despite its unique abilities. With an armor class of 13 and 14 hit points, it possesses modest defenses but can be quite effective in combat due to its flying speed of 30 feet and the ability to hover. The Skull Lantern primarily operates in support roles, illuminating areas and potentially disrupting magical darkness while also having some offensive capabilities. Its challenge rating of 1/4 indicates it is best suited for low-level encounters, offering 50 experience points upon defeat. While its attributes portray it as frail, especially with a strength score of only 1, it shines in dexterity with a +3 modifier, making its attacks significantly more accurate.</summary>
+
+<detail>
+
+The Skull Lantern has the following attributes: Strength 1 (with a modifier of -5, which is very bad), Dexterity 16 (modifier +3, which is good), Constitution 12 (modifier +1, which is average), Intelligence 3 (modifier -4, which is very bad), Wisdom 6 (modifier -2, which is bad), and Charisma 5 (modifier -3, which is very bad). Its saving throws are focused on dexterity, where it gains a +5 modifier, making it good at avoiding certain effects and attacks.
+
+Among its damage immunities, the Skull Lantern is immune to poison damage and has condition immunities that include being charmed, exhausted, frightened, paralyzed, poisoned, prone, and unconscious. This makes it resilient against many common forms of attack. However, it has a low passive perception of 8, indicating that it is not particularly perceptive. The creature does not understand any languages.
+
+The Skull Lantern features several special abilities that enhance its role in encounters. The Flare ability activates when the Skull Lantern is in magical darkness, allowing it to emit a blinding flash of light that dispels magical darkness within a 30-foot radius for 1d4 rounds. This burst of illumination can strategically turn the tide in environments shrouded in dark magic, but afterwards, the lantern becomes inert, requiring a week to potentially reactivate with a 50% chance. If it fails to reactivate, it will never return to active status. Additionally, the Illumination trait always provides bright light in a 20-foot radius and dim light for another 20 feet, ensuring visibility in its immediate vicinity.
+
+Its Undead Fortitude ability allows the Skull Lantern to avoid being destroyed when it receives lethal damage. If reduced to 0 hit points, it can make a Constitution saving throw against a DC calculated based on the damage taken. If successful, it remains at 1 hit point unless the damage was from radiant sources or dealt as a critical hit.
+
+In terms of actions, the Skull Lantern can make a Bite attack with a +5 to hit modifier and can reach targets up to 5 feet away. On a successful hit, it deals 5 piercing damage (calculated with 1d4 + 3). Additionally, it can unleash a Fire Beam attack, available on a recharge of 6. The Fire Beam creates a 15-foot line, 5 feet wide, requiring creatures caught within it to make a DC 13 Dexterity saving throw. A failed save results in 7 fire damage (rolling 2d6), while a successful save halves the damage, making this attack a moderate threat.
+
+In summary, the Skull Lantern is a unique undead creature that excels in illumination and control of magical environments while possessing some offensive capabilities. Its defensive abilities are bolstered by its undead nature, allowing it to remain in combat longer than its hit points suggest.</detail>
+
 
 
 ---

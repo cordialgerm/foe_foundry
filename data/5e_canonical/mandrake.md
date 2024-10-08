@@ -1,6 +1,16 @@
 <MonsterName/>Mandrake</MonsterName>
 <CreatureType/>Plant</CreatureType>
 
+<summary>The Mandrake is a tiny, unaligned plant creature that embodies a unique blend of characteristics and abilities. With a low Armor Class of 8 and moderate health totaling 22 hit points, the Mandrake is not built for direct confrontation. Its real strengths lie in its unique abilities, particularly the Shriek, which can stun or incapacitate opponents. However, with low Dexterity and Intelligence, its effectiveness in physical combat and strategic thinking is very poor, limiting its role mainly to providing disruptive support through sound rather than melee prowess. Players encountering a Mandrake should be cautious of its Shriek, as it can significantly impact the battlefield dynamics.</summary>
+
+<detail>
+
+The Mandrake has the following attributes: Strength 10 with a modifier of +0, representing average physical capability; Dexterity 6 with a modifier of -2, indicating very bad agility; Constitution 16 with a modifier of +3, demonstrating a good resistance to damage; Intelligence 1 with a modifier of -5, highlighting exceptional mental weakness; Wisdom 9 with a modifier of -1, reflecting below average perception; and Charisma 12 with a modifier of +1, suggesting a somewhat favorable presence. The creature is immune to poison damage and cannot be exhausted or poisoned, making it incredibly resilient to certain effects.
+
+In terms of actions, the Mandrake can make a melee attack with its Bite, which involves a +2 to hit with a reach of 5 feet. If successful, it deals an average of 5 piercing damage, showing its capacity for basic offense. The Shriek ability is a notable feature that has a recharge mechanism, meaning it can only be used once every four to six rounds. When activated, all creatures within 60 feet that can hear the Mandrake must make a Constitution saving throw against a DC of 13. Those who fail take 5 thunder damage and may become stunned or even unconscious depending on the severity of their failure, making this ability extremely impactful in crowded encounters.
+
+Overall, the Mandrake’s utility lies in its ability to disrupt opponents and protect itself with damage immunities while lacking the combat effectiveness of more typical adversaries. Players facing a Mandrake should employ strategies that either render its Shriek ineffective or exploit its vulnerabilities in direct confrontation.</detail>
+
 
 
 ---

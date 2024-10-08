@@ -1,6 +1,22 @@
 <MonsterName/>Young Void Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
 
+<summary>The Young Void Dragon is a formidable presence in any encounter, embodying the essence of chaos and power associated with dragonkind. With a large size and an exceptional Armor Class of 18, this creature poses a significant challenge to adventurers. The dragon boasts a total of 157 hit points, making it capable of enduring substantial damage in combat. Its abilities allow it to move swiftly, with a walking speed of 80 feet and a flying speed of 40 feet, positioning it strategically in battle. As a creature with a Challenge Rating of 9, the Young Void Dragon offers valuable experience when defeated, specifically 5,000 XP. Notably, its mastery over cold damage and its innate immunity to being charmed or frightened make it a dangerous opponent, both in battle and in negotiations.</summary>
+
+<detail>
+
+The attributes of the Young Void Dragon are impressive, with a Strength score of 20 (+5), allowing it to deliver powerful physical attacks. Its Constitution of 21 (+5) not only enhances its resilience but also bolsters its saving throws, which are very good in Dexterity (+4), Constitution (+9), Wisdom (+4), and Charisma (+8) as it excels in mental and physical fortitude. The dragon has an Intelligence score of 14 (+2) allowing for clever tactics and the capability of communicating in Common, Draconic, and Void Speech. With a Dexterity of 10 (+0), its agility is average, which balances its otherwise overwhelming strength and resilience. Skills such as Arcana (+10) and History (+10) showcase its extensive knowledge of the universe, while Perception (+8) aids in detecting threats. 
+
+The Young Void Dragon is immune to cold damage and cannot be charmed or frightened, making it exceptionally hard to control or subdue. It has blindsight up to 30 feet and darkvision reaching 120 feet, allowing it to see in darkness and perceive foes in obscured environments. Its passive Perception score of 18 highlights its keen awareness.
+
+Among its special abilities, "Chill of the Void" negates resistances to its cold damage for creatures that are usually resistant, although those with complete immunity remain unaffected. "Expert Void Traveler" underscores the dragon’s alien nature, allowing it to exist without air, food, or sleep, and traverse great distances effortlessly in the Void.
+
+In terms of attacks, the Young Void Dragon unleashes a "Multiattack," enabling it to make one Bite attack and two Claw attacks per turn. The "Bite" attack has a +9 to hit and delivers 16 piercing damage plus an additional 7 cold damage on a hit. With the "Claw" attack, it also has a +9 to hit, dealing 12 slashing damage. 
+
+This dragon possesses two powerful breath weapons that recharge on a roll of 5–6. "Gravitic Breath" creates a 30-foot cube that imposes damaging bludgeoning effects on falling creatures and restrains those within unless they can make a successful DC 17 Dexterity saving throw. This ability can significantly control the battlefield by immobilizing foes and inflicting damage based on their movements. Alternatively, "Stellar Breath" releases a devastating cone of star fire, inflicting both fire and radiant damage (21 damage each on a failed DC 17 Dexterity saving throw) to all creatures caught within its area of effect.
+
+Lastly, the Young Void Dragon can augment its defenses with the "Void Twist" reaction, which temporarily increases its AC by 4 against an incoming attack, allowing it to twist reality and avoid harm, provided it can see the attacker. This defensive maneuver reinforces the dragon's adaptability in combat, making it a challenging adversary that players would need to approach with caution.</detail>
+
 
 
 ---

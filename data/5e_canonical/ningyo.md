@@ -1,6 +1,22 @@
 <MonsterName/>Ningyo</MonsterName>
 <CreatureType/>Aberration</CreatureType>
 
+<summary>The Ningyo is a small aberration characterized by its neutral evil nature. This creature is a master of manipulation and possesses the ability to redirect attacks aimed at it, making it both a tricky opponent and a potent damage dealer. With an Armor Class of 15 and a substantial pool of Hit Points totaling 77, the Ningyo can withstand a decent amount of punishment before being brought down. Its significant Dexterity score of 21 grants it a very good modifier, enhancing its agility in combat and improving its chances of avoiding attacks. However, its Strength is notably weak, which may limit its physicality. The Ningyo excels in aquatic environments, possessing the ability to fly and swim at a speed of 60 feet, while it is unable to walk. Its challenge rating of 7 indicates that it poses a formidable threat to adventurers, providing 2,900 experience points upon defeat.</summary>
+
+<detail>
+
+The Ningyo's ability scores include a Strength of 8, which results in a very bad modifier of -1, a Dexterity of 21 which translates to a very good modifier of +5, a Constitution of 15 equating to a good modifier of +2, an Intelligence of 14 giving a good modifier of +2, a Wisdom of 11 resulting in an average modifier of +0, and a Charisma of 7 reflecting a bad modifier of -2. These values contribute to its overall effectiveness in combat and interaction. Additionally, the Ningyo has several notable saving throws, featuring exceptional Dexterity (+8) and average Wisdom (+3) while its Strength saving throw is treated as good (+2).
+
+The creature has an array of skills, including deception at +1, insight at +3, and perception also at +3, which allow it to navigate social encounters skillfully. It has damage resistances to several damage types including acid, cold, fire, necrotic, and poison, making it well-equipped to handle a variety of attacks. With darkvision out to 120 feet, the Ningyo can operate effectively in low-light conditions, and with a passive Perception score of 13, it is reasonably aware of its surroundings. It communicates in Aquan, Common, and Deep Speech.
+
+The Ningyo possesses several special abilities that enhance its performance in combat. Its aquatic nature allows it to breathe underwater and hold its breath for up to one hour, making it a formidable foe in marine settings. The “Curse of Ill Fortune” ability is particularly dangerous; it causes an enemy’s missed attack to strike another creature within five feet, using the original attack roll, thus turning failures into opportunities for chaos.
+
+In terms of actions, the Ningyo can perform a Multiattack, making up to four barbed tentacle attacks in a single turn. Each “Barbed Tentacle” attack has a +8 to hit, reaches 5 feet, and deals 8 piercing damage plus an additional 5 poison damage. This combination makes each attack highly effective and capable of inflicting considerable harm to opponents.
+
+The Ningyo also has a reactive ability called “Share Pain.” When the Ningyo takes damage, it can opt to take only half of that damage, allowing it to remain in the fight longer. It can then select a target within 60 feet, compelling that creature to make a DC 15 Constitution saving throw. If the target fails, it suffers disadvantage on attacks until the end of its next turn, which can cripple its effectiveness in combat.
+
+Overall, the Ningyo is a cunning and dangerous creature, perfect for ambush tactics and creating chaos during battles or interactions with adventurers.</detail>
+
 
 
 ---

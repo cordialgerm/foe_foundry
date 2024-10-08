@@ -1,6 +1,24 @@
 <MonsterName/>Painted Phantasm</MonsterName>
 <CreatureType/>Construct</CreatureType>
 
+<summary>The Painted Phantasm is a Medium Construct that embodies the essence of artistic creation through its unique ability to capture and restrain its opponents within a painted image. This creature serves as a formidable opponent in combat with robust defenses and powerful, unconventional attack strategies. It boasts a solid Armor Class of 15, providing good protection against physical attacks, and it has a decent pool of Hit Points totaling 97, which allows it to endure several rounds of combat. The Painted Phantasm's primary strengths lie in its high Dexterity, granting it good agility, and its exceptional Charisma, which enhances its magical abilities. However, its low Intelligence indicates a lack of cognitive reasoning, making it less effective at strategic thinking in battle. Notably, it is immune to many debilitating conditions that would afflict living creatures, such as exhaustion and fear.</summary>
+
+<detail>
+
+The Painted Phantasm has the following attributes: Strength 10 (+0) indicates below-average physical power; Dexterity 17 (+3) is very good, allowing for nimble movements and enhanced defense; Constitution 14 (+2) signifies good physical resilience; Intelligence 7 (-2) denotes very bad cognitive performance; Wisdom 14 (+2) reflects good perceptive capabilities; and Charisma 16 (+3) is exceptional, enhancing its magical influence.
+
+In terms of skills, this creature has a +2 modifier to Perception, which is an average level of awareness to detect hidden threats or notice details in its surroundings. It resists nonmagical bludgeoning, piercing, and slashing attacks, and is completely immune to various conditions, including charmed and poisoned states, which renders it particularly difficult to control or diminish in combat. With darkvision out to 60 feet and a passive Perception of 15, it can see well in dim conditions and is actively aware of its surroundings.
+
+The Painted Phantasm possesses special abilities that enhance its effectiveness in battle and its unusual nature. Its Construct Nature grants it immunity to requirements like air, food, or sleep, allowing it to operate autonomously. Immutable Form ensures that it cannot be altered in physical form by spells or other effects, while Magic Resistance gives it an advantage on saving throws against spells and magical effects, making it more resistant to magic-based attacks.
+
+In combat, it can execute a Multiattack, allowing it to use either two Paint Slashes or a combination of one Capture Image and one Paint Slash. The Capture Image is a unique ability where the Painted Phantasm makes a melee spell attack with a +6 to hit. On a successful hit, it inflicts 22 (4d10) force damage and captures the target as an image on a flat surface of its choosing within 60 feet. The captured target becomes incapacitated and restrained, limited to perceiving the outside world but unable to take actions. If the flat surface takes damage, the captured target suffers half of that damage, and if the surface is destroyed, the target is freed. Additionally, if the Painted Phantasm receives 20 or more damage in a turn, it must succeed on a DC 15 Charisma saving throw to maintain focus and control over captured targets.
+
+The Paint Slash is another action where the Painted Phantasm attacks with a melee weapon attack, gaining a +6 to hit, delivering 7 (1d8+3) slashing damage plus an additional 16 (3d10) poison damage, making it a potent option for dealing harm in close quarters.
+
+The Painting Sensor ability allows this creature to establish a unique connection between artworks. By touching one piece, it can see and hear through another previously touched artwork within a mile, enabling it to gather intelligence from afar.
+
+As a bonus action, the Painted Phantasm can utilize Painting Portal to move through artwork within reach. It steps into one artwork and emerges from a second one within 100 feet of the first, disappearing and reappearing within unoccupied space. Moreover, if both artworks are Large or larger, it can also bring up to three willing creatures along with it, making this ability tactically versatile for repositioning allies in combat scenarios.</detail>
+
 
 
 ---

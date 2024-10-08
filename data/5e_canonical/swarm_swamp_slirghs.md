@@ -1,6 +1,18 @@
 <MonsterName/>Swarm, Swamp Slirghs</MonsterName>
 <CreatureType/>Elemental</CreatureType>
 
+<summary>The Swarm of Swamp Slirghs is a large elemental creature that haunts wetlands and swamps. With a challenge rating of 3, it presents a moderate threat to adventurers, capable of dealing considerable poison damage while being relatively durable, given its 66 hit points. The Slirghs are adept at maneuvering through water and use their special abilities to teleport and confuse enemies, making them effective in combat situations, especially in aquatic environments. Their weaknesses include low armor class and moderate resistance to physical damage types, which can be exploited by disciplined attackers. They lack intelligence and charisma, making them fairly predictable in strategy and unpersuasive in social interactions.</summary>
+
+<detail>
+
+The Swarm has the following attributes: Strength of 17, which translates to a good modifier of +3, allowing for strong physical attacks; Dexterity of 11, which indicates an average modifier of +0, showing decent but not exceptional agility; Constitution of 10, translating to an average vitality; Intelligence of 7, reflecting a very bad intelligence, making it unlikely to devise complex strategies; Wisdom of 15, yielding a good modifier of +2 for perception-related checks; and Charisma of 3, indicating a very bad capability for influencing or charming others. 
+
+In terms of skills, the Swarm has a perception bonus of +2, which is good and augments its ability to notice hidden or stealthy creatures. Its immunities include poison damage, making it resilient against many types of attacks, while it has resistances to bludgeoning, piercing, and slashing damage, increasing its survivability in combat. Additionally, this creature is immune to a wide array of conditions such as charmed, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, and stunned, providing excellent defense against various forms of control.
+
+The Swarm of Swamp Slirghs has a set of notable special abilities. The Puddle Jump ability allows it to step through bodies of water and teleport up to 60 feet away into another body of water, creating opportunities for surprise attacks or quick escapes. The Stench ability poisons any creature that starts its turn within 5 feet of the swarm, which can significantly hinder opponents if they cannot quickly escape the area. The Swarm can also occupy the same space as another creature, allowing it to engulf foes and avoid damage from larger adversaries.
+
+For its actions, the Swarm can bite with a melee weapon attack, which has a +5 to hit, dealing 14 piercing damage plus 9 poison damage on a successful strike. If the swarm's hit points are reduced to half or less, its bite attack drops to 7 piercing and 4 poison damage, showcasing a decline in effectiveness as it takes damage. The Spit Swamp Sludge action allows the Swarm to launch a ranged attack with the same +5 to hit bonus, dealing 18 poison damage at range; this also decreases when its health is low. Lastly, the Soggy Relocation ability, which recharges on a roll of 5 or 6, allows the Swarm to use Puddle Jump while attempting to drag a creature along with it. The targeted creature will need to succeed on a DC 13 Strength saving throw to avoid being teleported with the Swarm, adding an unpredictable element to the creature's capabilities in combat.</detail>
+
 
 
 ---

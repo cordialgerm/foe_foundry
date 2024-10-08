@@ -1,6 +1,26 @@
 <MonsterName/>Pyrrhic Podthrower</MonsterName>
 <CreatureType/>Plant</CreatureType>
 
+<summary>The Pyrrhic Podthrower is a small, unaligned plant creature that serves as a formidable adversary in combat thanks to its unique abilities and regenerative powers. With an armor class of 13 and a significant pool of 127 hit points, it can endure a considerable amount of damage before being dispatched. Its movement options include a walking speed of 20 feet and burrowing at the same pace, which grants it tactical versatility on the battlefield. Ideal for ambushes, the Podthrower leverages its False Appearance ability to blend in with its surroundings, making it hard to detect until it strikes. This creature’s primary strengths lie in its ability to inflict fire damage and regenerate health, while it is notably weak against necrotic damage, which halts its regeneration. Overall, it poses a considerable threat, especially in environments where it can utilize its burrowing and stealth abilities.</summary>
+
+<detail>
+
+In terms of attributes, the Pyrrhic Podthrower has the following values: 
+- Strength: 15 (+2), which is considered good for melee attacks.
+- Dexterity: 18 (+4), which is very good, allowing it to have an above-average initiative and acrobatics.
+- Constitution: 19 (+4), also very good, contributing to its substantial number of hit points and resilience in combat.
+- Intelligence: 2 (-4), which is very bad, indicating it has limited cognitive capabilities.
+- Wisdom: 10 (+0), considered average, reflecting a basic awareness of its environment.
+- Charisma: 4 (-3), which is very bad, showing that it is poor at social interactions.
+
+The Pyrrhic Podthrower possesses several noteworthy special abilities. Its False Appearance allows it to remain motionless and indistinguishable from a clump of crabgrass, enabling effective ambush tactics. The Flaming Seedpod Regrowth ability lets the creature maintain a stock of explosive seedpods that regenerate each turn unless it has reached its maximum of four. It rolls a d6 at the start of its turn if it has fewer than four seedpods, regaining between one and four depending on the roll. Its Regeneration trait allows it to recover 10 hit points at the start of its turn unless it takes necrotic damage or is forcibly removed from the ground, ensuring it poses a continuous threat unless neutralized quickly.
+
+In combat, the Pyrrhic Podthrower can perform a Multiattack, which allows it to make either three Grass Blade attacks or two Flaming Seedpod attacks. The Grass Blade attack is a melee weapon attack with a +7 modifier to hit, dealing an average of 11 slashing damage upon a successful hit. In contrast, the Flaming Seedpod can be lobbed up to 60 feet away, exploding on impact and dealing 12 fire damage to creatures within a 10-foot radius (with a DC 15 Dexterity saving throw for half damage), providing both direct damage and area control.
+
+The Podthrower also has a reaction called Unstable Bulb. If it is grappled and removed from the ground while still alive, its bulb bursts, dealing 12 fire damage to all creatures within 10 feet, again allowing a DC 15 Dexterity saving throw for half damage.
+
+With its blend of stealth, regeneration, and aggressive area damage capabilities, the Pyrrhic Podthrower is a monster that capitalizes on surprise and persistence, making it a dangerous encounter for adventurers.</detail>
+
 
 
 ---

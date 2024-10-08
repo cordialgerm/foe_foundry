@@ -1,6 +1,24 @@
 <MonsterName/>Kobold, Leviathan Hunter</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<summary>The Kobold Leviathan Hunter is a medium-sized humanoid creature embodying chaotic neutral alignment. It serves as a formidable opponent in aquatic environments, adept at grappling larger creatures and utilizing a variety of magical weapon attacks. With an Armor Class of 17 and 190 hit points, it boasts considerable durability in battle. Its strengths lie in its ability to resist damage, excellent grappling skills, and advantageous combat tactics when working with allies. However, it is sensitive to sunlight, which imposes penalties on its attacks and perception checks. The Kobold exemplifies a dangerous combination of agility, strength, and intelligence on the battlefield.</summary>
+
+<detail>
+
+The creature has a Strength score of 20, granting it a very good +5 modifier, making it highly effective in melee engagements. Its Dexterity score of 15 results in a good +2 modifier, enhancing its ability to dodge attacks and improve its initiative. The Constitution score stands at 21, providing an exceptional +5 modifier which contributes to its high hit point total and overall resilience. With average Intelligence at 10, it has minimal effects on its mental capabilities. The Wisdom score of 15 offers a good +2 modifier, allowing for decent perception and insight abilities. Lastly, a Charisma of 14 yields a good +2 modifier, although it plays a limited role in most combat situations.
+
+In terms of skills, the Kobold has a +2 modifier in perception, which is average. It boasts resistances to bludgeoning and cold damage types, whereas its darkvision allows it to see in the dark up to 120 feet, resulting in a passive perception score of 16. The creature speaks Common and Draconic, facilitating communication in encounters.
+
+The special abilities of the Kobold Leviathan Hunter make it an effective combatant. The "Expert Wrestler" ability allows it to grapple creatures up to two sizes larger, enabling it to control larger foes while still moving at full speed. When grappling a medium or smaller creature, the target has disadvantage on escape attempts. "Hardy Defense" allows the Hunter to add its Constitution modifier to its Armor Class when unarmored, which is exceptional in maintaining survivability. It can hold its breath for up to 30 minutes, making it a capable swimmer. The "Leviathan Hunter" ability grants advantage on Wisdom checks to spot and track large swimming creatures. 
+
+Its weapon attacks are enhanced by the "Marine Weapons" ability, allowing the Kobold to deal an additional 2d8 cold or poison damage with its hits, creating a significant threat level. "Pack Tactics" provides the Kobold with advantage on attack rolls against any creature if there’s an ally nearby, ensuring effective teamwork. However, "Sunlight Sensitivity" causes the Kobold to have disadvantage on sight-based attacks and perception checks when in sunlight.
+
+In combat, the Kobold utilizes several actions. It can perform a "Multiattack," allowing it to deliver either three slams or one harpoon followed by two slams. Each "Slam" attack offers a +9 to hit and deals 12 bludgeoning damage plus an extra 9 cold or poison damage depending on its choice. If successful, the target is grappled with an escape DC of 17. The "Harpoon" attack can be delivered both in melee or at range, dealing similar damage, with the caveat that, once stuck in the target, it causes ongoing piercing damage until detached or broken.
+
+The "Crush" action can inflict significant damage (33 bludgeoning damage) to a creature the Kobold has grappled, with a save mechanic to halve the damage. As a bonus action, the Kobold can use "Recall Harpoon" to pull its harpoon back into its hand or drag a stuck target towards itself. For reactions, "Grappled Redirect" allows the Kobold to redirect an incoming attack to hit a grappled creature instead, thus taking advantage of its grappling prowess to protect itself. 
+
+Overall, the Kobold Leviathan Hunter is a tactical combatant that excels in grappling and dealing damage in aquatic settings while having distinct mechanics for enhancing its offensive capabilities.</detail>
+
 
 
 ---

@@ -1,6 +1,20 @@
 <MonsterName/>Kishi</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<summary>The Kishi is a Medium-sized fiend characterized by its chaotic evil nature. As a formidable opponent, it boasts high armor class and hit points, making it resilient in combat. Its exceptional Dexterity and Charisma make the Kishi adept in both physical and magical confrontations. With a Challenge Rating of 8, it significantly endangers adventurers who underestimate its abilities. The creature is particularly dangerous due to its ability to deal both piercing and cold damage simultaneously with its attacks, alongside its robust magical resistances and skills in deception and performance, making it a cunning adversary. However, the Kishi's reliance on its magical abilities means that it may struggle against particularly powerful spellcasters.</summary>
+
+<detail>
+
+The Kishi has the following ability scores: Strength at 19 with a modifier of +4, Dexterity at 20 with a modifier of +5 (which is exceptional), Constitution at 19 with a modifier of +4 (very good), Intelligence at 15 with a modifier of +2 (average), Wisdom at 11 with a modifier of +0 (bad), and Charisma at 22 with a modifier of +6 (exceptional). Its saving throw bonuses are Dexterity +8 (very good), Constitution +7 (good), and Wisdom +3 (average). The Kishi is immune to poison damage and is resistant to cold, fire, lightning damage, and nonmagical physical harm, making it highly durable. It is also immune to the poisoned condition, allowing it to ignore effects that would incapacitate it in such a manner. The creature has darkvision that extends to 120 feet, a passive perception score of 13, and can communicate in multiple languages including Abyssal, Celestial, Common, Draconic, and through telepathy at 120 feet.
+
+The Kishi possesses several unique abilities. "Fiendish Weapons" allows its weapon attacks to be magical, with an added effect of dealing an extra 2d8 cold damage on each hit. With "Two Heads," it gains advantage on Wisdom (Perception) checks and saves against various debilitating conditions like charm and blindness. Furthermore, "Magic Resistance" gives it advantage on saving throws against spells, enhancing its resilience against magical attacks.
+
+In combat, the Kishi executes a "Multiattack," allowing it to perform one Bite attack and two Spear attacks. Its Bite attack has a +7 to hit with a reach of 5 feet, dealing 11 piercing damage plus an additional 9 cold damage, which together make it a significant threat. The Spear can be used for melee or ranged attacks, also with a +7 to hit. It does 7 piercing damage at range or 8 piercing damage within melee reach, plus the same additional 9 cold damage. 
+
+As for spellcasting, the Kishi can cast various spells using its exceptional Charisma as the spellcasting ability, with a spell save DC of 17. It can cast "detect evil and good," "detect magic," and "suggestion" at will. Additionally, it can cast "glibness" three times a day and "dominate person" once per day, allowing it to manipulate others and gain significant control over engagements.
+
+In terms of bonus actions, the Kishi can employ "Trophy Shield," absorbing the essence from creatures it has killed, which enhances its Armor Class to 20 for one hour. This ability imposes disadvantage on attacks against it by creatures of the same type as the one it has slain. Additionally, "Summon Demon" allows it once per day to call forth 1d4 giant hyenas, which share its damage resistances and immunities, or even call another Kishi demon 50 percent of the time. These summoned creatures act as allies and follow its commands telepathically, remaining for up to an hour or until the Kishi dismisses them.</detail>
+
 
 
 ---

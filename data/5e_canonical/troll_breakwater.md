@@ -1,6 +1,26 @@
 <MonsterName/>Troll, Breakwater</MonsterName>
 <CreatureType/>Giant</CreatureType>
 
+<summary>The Breakwater Troll is a formidable Large Giant with a chaotic neutral alignment. It has a strong presence in combat due to its high hit points, sturdy armor class, and its unique regenerative abilities. Characterized by its ability to thrive in both water and on land, this creature can deal substantial damage while being resistant to many attacks. Although it lacks intelligence and charisma, it compensates with significant strength and constitution. This makes it an excellent frontline combatant. However, it is vulnerable to lightning and force damage, which can temporarily hinder its regeneration.</summary>
+
+<detail>
+
+The Breakwater Troll has an armor class of 15, reflecting a good level of natural protection, and boasts 105 hit points, calculated as 10d10 plus an additional 50 points, representing its resilience in battle. With a walk speed of 30 feet and a swim speed of 30 feet, it can navigate both land and water environments effectively. The creature has a challenge rating of 7, which signifies it is suitable for a party of mid-level adventurers.
+
+Regarding its ability scores, the Breakwater Troll has an impressive strength of 18, giving it a modifier of +4, which is rated as very good for melee attacks. Its dexterity is 14, resulting in a +2 modifier that is average, while it has a constitution of 20 with a +5 modifier, rated as exceptional, making it very tough and resilient. The troll's intelligence is low at 9, leading to a -1 modifier, which is considered bad, while its wisdom is average at 14, resulting in a +2 modifier. Lastly, its charisma is notably low at 7, with a -2 modifier, also rated as bad.
+
+In terms of skills, the troll has a positive perception modifier of +2, which allows it to be reasonably aware of its surroundings. It has damage resistances to acid, as well as nonmagical bludgeoning, piercing, and slashing attacks. The creature is immune to conditions such as being paralyzed, petrified, poisoned, and prone, which makes it very difficult to incapacitate in combat. It has darkvision up to 60 feet and a passive perception of 15. The troll understands the Giant language but cannot speak.
+
+The Breakwater Troll has several notable special abilities. Its amphibious trait allows it to breathe both air and water, making it equally capable of striking from beneath the surface as it is on land. Its regeneration ability enables it to regain 10 hit points at the start of its turn, unless it has taken lightning or force damage, in which case it does not regenerate until it starts its next turn with non-zero hit points.
+
+In terms of actions, the Breakwater Troll can perform a Multiattack, allowing it to make three Slam or Water Blast attacks in a single turn. Its Slam attack is a melee weapon attack that hits with a +7 modifier for 14 bludgeoning damage, calculated as 3d6 plus 4. If it hits one Large or smaller creature with two Slam attacks, that target must succeed on a DC 15 Strength saving throw or be flung up to 15 feet into an unoccupied space and knocked prone.
+
+The Water Blast is a ranged spell attack with a +5 to hit that deals 11 bludgeoning damage along with an additional 3 cold damage. This can affect opponents over a distance of 60 feet.
+
+The Surge ability, which recharges on a roll of 5 or 6, unleashes a powerful push of water in a line 30 feet long and 10 feet wide. Any creature within this line takes 28 bludgeoning damage, rolling 8d6, and is pushed up to 15 feet from the troll. Those within the line must make a DC 15 Strength saving throw; on a failure, they are fully pushed, while success results in half damage and no push. When used underwater, the creatures have disadvantage on the saving throw, and they must expend 4 feet of movement to move 1 foot closer to the troll. 
+
+Overall, the Breakwater Troll is a dangerous adversary, particularly in aquatic environments, thanks to its combination of resilience, damage output, and the ability to control the battlefield.</detail>
+
 
 
 ---

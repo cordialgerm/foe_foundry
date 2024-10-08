@@ -1,6 +1,22 @@
 <MonsterName/>Ogre, Black Sun</MonsterName>
 <CreatureType/>Giant</CreatureType>
 
+<summary>The Black Sun Ogre is a formidable foe within its challenge rating of 8, indicating it poses a significant threat to adventurers. Its large size and lawful evil alignment suggest a dangerous and cunning creature that can act both brutishly and strategically. With a robust armor class of 17, bolstered by its infernal tattoos, it is well-protected. The ogre boasts a substantial pool of hit points at 152, allowing it to withstand considerable punishment in combat. Its high strength score of 20 provides it with exceptional melee capabilities, while its respectable constitution and charisma scores enable it to further dominate on the battlefield and in any potential social encounters.</summary>
+
+<detail>
+
+In terms of attributes, the Black Sun Ogre has the following scores: Strength at 20 (exceptional), Dexterity at 13 (average), Constitution at 18 (very good), Intelligence at 10 (average), Wisdom at 12 (average), and Charisma at 14 (good). Its saving throws show considerable resilience, especially in Constitution (+7), Wisdom (+4), and Charisma (+5), indicating a strong capacity to resist physical and magical threats. Additionally, it has a passive perception of 14, leveraging its darkvision of 60 feet to perceive threats even in low-light conditions. The ogre is capable of communicating in Common, Giant, and Orc languages, allowing it to interact with a variety of creatures.
+
+The Black Sun Ogre possesses two notable special abilities: Infernal Runes and Unholy Blade. The Infernal Runes provide it with a +2 bonus to its armor class, making it harder for foes to land successful attacks. Additionally, this ability grants the ogre advantage on saving throws against spells and other magical effects, enhancing its survivability against magic-wielding opponents. The Unholy Blade ability imbues its weapon attacks with unholy power, allowing it to deal an extra 2d6 necrotic damage on successful hits, making each attack significantly more lethal.
+
+In combat, the Black Sun Ogre can perform a Multiattack, executing two melee attacks with its Greatsword. Each Greatsword attack is resolved with a +8 to hit and, upon a successful strike, it deals an average of 19 (4d6 + 5) slashing damage, along with an additional 7 (2d6) necrotic damage. This combination of damage types makes it a versatile threat against a wide range of opponents. 
+
+Additionally, the ogre can use its Dark Word ability to target up to two creatures within 120 feet. The targets must succeed on a DC 16 Constitution saving throw or take 22 (5d8) necrotic damage. This ability can significantly impair enemy combatants and reduce their effectiveness in battle, particularly if they fail their saving throws.
+
+The Black Sun Ogre can also employ a reaction called Gauntleted Backhand. This ability triggers when a creature within 5 feet of the ogre misses a melee attack against it. That creature must make a DC 16 Dexterity saving throw or be knocked prone, potentially setting it up for further attacks and destabilizing its position in the battle.
+
+Overall, the combination of strong defensive attributes, magical enhancements, and powerful offensive capabilities make the Black Sun Ogre a dangerous adversary that requires careful tactics to defeat.</detail>
+
 
 
 ---

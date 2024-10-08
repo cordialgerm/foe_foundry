@@ -1,6 +1,18 @@
 <MonsterName/>Shard Swarm</MonsterName>
 <CreatureType/>Construct</CreatureType>
 
+<summary>The Shard Swarm is a medium-sized construct characterized by its unorthodox composition and combat style. It embodies a swarm of sharp shards, capable of flying and enveloping its targets. This creature's primary strength lies in its unique abilities, allowing it to reform and restrain foes, while also being immune to several damage types. However, it is vulnerable to spells that target antimagic, which can incapacitate it. With an average Armor Class of 13 and 22 hit points, the Shard Swarm poses a moderate challenge to adventurers, especially in swarming and crowd-control situations.</summary>
+
+<detail>
+
+The Shard Swarm has a Strength score of 3 with a modifier of -4, which is very bad, indicating it cannot physically contend in melee situations outside its unique actions. Its Dexterity is 13, granting a good +1 modifier, which helps it evade attacks. With a Constitution score of 11 and a modifier of +0, its resilience is average. Intelligence is a mere 1, resulting in a very bad -5 modifier, and Wisdom is at 5 with a -3 modifier, meaning it lacks awareness. Finally, its Charisma is also a 1, contributing to its very bad -5 modifier, indicating it cannot engage effectively in social interactions.
+
+In terms of special abilities, the Shard Swarm has several noteworthy traits. It is susceptible to antimagic; while within an antimagic field, it becomes incapacitated, and if affected by dispel magic, it risks falling unconscious for a minute unless it succeeds on a Constitution saving throw. It can come together up to three times a day, allowing all its pieces to re-form in close proximity, promoting mobility and versatility on the battlefield. While motionless and not flying, the swarm can disguise itself as a normal pile of junk, providing it a tactical advantage by avoiding detection. Additionally, as a swarm, it can occupy the same space as other creatures and navigate through tiny openings, although it cannot regain hit points.
+
+In combat, the Shard Swarm can use its Shards action, making a melee weapon attack with a +3 to hit, inflicting 5 slashing damage on a successful hit or reduced damage if it is at half hit points. For ranged attacks, it employs Shrapnel, allowing it to make a ranged weapon attack with the same +3 to hit bonus up to 30 feet away, dealing 3 piercing damage. If the swarm uses its special action, Contain, it can envelop a medium or smaller creature within its space, requiring the target to make a DC 13 Dexterity saving throw to avoid being restrained. If caught, the restrained creature suffers 5 slashing damage if it tries to move, while allies can attempt to free it with a DC 13 Strength check, taking damage in the process.
+
+Overall, the Shard Swarm is a unique and tactical opponent that utilizes its swarm abilities, disguises, and actions to create challenges for adventurers, particularly those who underestimate its mobility and capacity to control the battlefield.</detail>
+
 
 
 ---
