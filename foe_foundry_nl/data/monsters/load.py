@@ -1,65 +1,14 @@
 import json
 import re
 from collections.abc import Iterable
-from dataclasses import dataclass
 from pathlib import Path
 
+from foe_foundry.creature_types import CreatureType
 
-@dataclass
-class MonsterInfo:
-    key: str
-    name: str
-    is_srd: bool
-    path: Path
-    creature_type: str
-    source: str
-    type: str
-    text: str
+from .data import CanonicalMonster, MonsterInfo
 
 
-@dataclass
-class CanonicalMonster:
-    key: str
-    name: str
-    is_srd: bool
-    creature_type: str
-    infos: list[MonsterInfo]
-    summary: str | None
-    description: str | None
-    natural_language: str | None
-
-    def save(self, path: Path):
-
-        if not path.parent.exists():
-            path.parent.mkdir(parents=True, exist_ok=True)
-        with path.open("w", encoding="utf-8") as f:
-            f.write(f"<MonsterName/>{self.name}</MonsterName>\n")
-            f.write(f"<CreatureType/>{self.creature_type}</CreatureType>\n\n")
-            if self.description is not None:
-                f.write(f"<summary>{self.description}</summary>\n\n")
-            if self.summary is not None:
-                f.write(f"<summary>{self.summary}</summary>\n\n")
-
-            if self.natural_language is not None:
-                if self.summary is not None and self.natural_language.startswith(
-                    self.summary
-                ):
-                    nl = self.natural_language[len(self.summary) :]
-                else:
-                    nl = self.natural_language
-
-                summarized_nl = nl
-
-                f.write(f"<detail>{summarized_nl}</detail>\n\n")
-            for info in self.infos:
-                f.write("\n\n")
-                f.write("---\n\n")
-                f.write(f"Source: {info.source}\n\n")
-                f.write(info.text)
-                f.write("\n\n")
-
-
-def load_monsters() -> dict[str, CanonicalMonster]:
+def get_canonical_monsters() -> dict[str, CanonicalMonster]:
     # load SRD monsters
     srd_monsters = [m for m in iter_srd_md_monsters()]
 
@@ -103,7 +52,7 @@ def load_monsters() -> dict[str, CanonicalMonster]:
         if srd is None:
             artisinal = monsters[0]
         else:
-            artisinal = next((m for m in monsters if m is not srd), None)
+            artisinal = next((m for m in monsters if m is not srd), srd)
 
         if srd is None and artisinal is None:
             raise ValueError("unexpected error")
@@ -134,22 +83,7 @@ def load_monsters() -> dict[str, CanonicalMonster]:
 
 
 def creature_type_from_markdown(text: str):
-    all_creature_types = [
-        "Aberration",
-        "Beast",
-        "Celestial",
-        "Construct",
-        "Dragon",
-        "Elemental",
-        "Fey",
-        "Fiend",
-        "Giant",
-        "Humanoid",
-        "Monstrosity",
-        "Ooze",
-        "Plant",
-        "Undead",
-    ]
+    all_creature_types = CreatureType.all()
 
     first_lines = "\n".join(
         t.lower() for t in text.splitlines()[1:6]
@@ -158,7 +92,7 @@ def creature_type_from_markdown(text: str):
     if len(creature_types) == 0:
         return None
     else:
-        return creature_types[0]
+        return creature_types[0].title()
 
 
 def name_to_key(name: str) -> str:
@@ -277,11 +211,11 @@ def _read(path: Path) -> str:
             return f.read()
 
 
-
-if __name__ == "__main__":
-    monsters = load_monsters()
+def save_monsters():
+    monsters = get_canonical_monsters()
     print(f"Loaded {len(monsters)} canonical monsters")
     dir = Path(__file__).parent.parent.parent.parent / "data" / "5e_canonical"
     for key, monster in monsters.items():
         path = dir / f"{key}.md"
         monster.save(path)
+

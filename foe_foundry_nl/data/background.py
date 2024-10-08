@@ -1,8 +1,9 @@
-from pathlib import Path
-from collections.abc import Iterable
 import json
-from dataclasses import dataclass
 import re
+from collections.abc import Iterable
+from dataclasses import dataclass
+from pathlib import Path
+
 import numpy as np
 
 
@@ -23,6 +24,7 @@ def iter_background_info() -> Iterable[BackgroundInfo]:
     yield from iter_5e_srd_creature_types()
     yield from iter_5e_srd_misc_markdown_files()
     yield from iter_lgmrd_misc_markdown_files()
+    yield from iter_mkwtd_markdown_files()
 
 
 def iter_5e_srd_spells() -> Iterable[BackgroundInfo]:
@@ -58,7 +60,6 @@ def iter_5e_srd_misc_markdown_files() -> Iterable[BackgroundInfo]:
     base_path = Path(__file__).parent.parent.parent / "data" / "5esrd"
     exclude_dirs = ["Monsters", "Monsters (Alt)"]
 
-    markdown_files = []
     for file_path in base_path.rglob("*.md"):
         if not any(exclude_dir in file_path.parts for exclude_dir in exclude_dirs):
             with file_path.open("r", encoding="utf-8") as f:
@@ -71,8 +72,6 @@ def iter_5e_srd_misc_markdown_files() -> Iterable[BackgroundInfo]:
                 except Exception as x:
                     print(f"UNABLE TO PARSE {file_path}. {x}")
 
-    return markdown_files
-
 
 def iter_lgmrd_misc_markdown_files() -> Iterable[BackgroundInfo]:
     base_path = Path(__file__).parent.parent.parent / "data" / "lgmrd"
@@ -81,7 +80,6 @@ def iter_lgmrd_misc_markdown_files() -> Iterable[BackgroundInfo]:
         base_path / "markdown_obsidian",
     ]
 
-    markdown_files = []
     for dir in dirs:
         for file_path in dir.rglob("*.md"):
             with file_path.open("r", encoding="utf-8") as f:
@@ -93,7 +91,12 @@ def iter_lgmrd_misc_markdown_files() -> Iterable[BackgroundInfo]:
                 except Exception as x:
                     print(f"UNABLE TO PARSE {file_path}. {x}")
 
-    return markdown_files
+def iter_mkwtd_markdown_files() -> Iterable[BackgroundInfo]:
+    dir = Path(__file__).parent.parent.parent / "data" / "the_monsters_know"
+    for file_path in dir.rglob("*.md"):
+        text = file_path.read_text(encoding="utf-8")
+        name = text.split("\n")[0].replace("#", "").strip()
+        yield BackgroundInfo(path=file_path, topic="mkwtd", name=name, text=text)
 
 
 if __name__ == "__main__":

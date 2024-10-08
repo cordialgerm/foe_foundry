@@ -1,12 +1,10 @@
 import os
 from pathlib import Path
 
-import numpy as np
-import pyautogui
 from openai import OpenAI
 
 
-def main(keep_alive: bool):
+def main():
     client = OpenAI(api_key=os.environ.get("oai"))
 
     monster_dir = Path(__file__).parent.parent.parent / "data" / "5e_artisinal_monsters"
@@ -23,23 +21,11 @@ def main(keep_alive: bool):
         print(f"Translating {monster_path}...")
         translation = translate_monster(client, monster_md)
 
-        translation_path.write_text(translation, encoding="utf-8")
-
-        # Get the screen width and height
-        screen_width, screen_height = pyautogui.size()
-
-        # Move the mouse to a random location on the screen
-        if keep_alive:
-            for _ in range(0, 10):
-                random_x = np.random.randint(0, screen_width - 1)
-                random_y = np.random.randint(0, screen_height - 1)
-                pyautogui.moveTo(random_x, random_y)
-
-            for i in range(0, 3):
-                pyautogui.press("shift")
+        if translation is not None:
+            translation_path.write_text(translation, encoding="utf-8")
 
 
-def translate_monster(client: OpenAI, markdown: str) -> str:
+def translate_monster(client: OpenAI, markdown: str) -> str | None:
     prompt_path = Path(__file__).parent / "system_prompt.txt"
     prompt = prompt_path.read_text()
 
@@ -61,4 +47,4 @@ def translate_monster(client: OpenAI, markdown: str) -> str:
 
 
 if __name__ == "__main__":
-    main(keep_alive=True)
+    main()
