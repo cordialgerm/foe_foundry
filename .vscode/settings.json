@@ -1,35 +1,58 @@
 {
+    //editor
     "editor.tabSize": 4,
     "editor.trimAutoWhitespace": true,
     "editor.renderWhitespace": "boundary",
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file",
     "editor.minimap.enabled": false,
+
+    //files
     "files.exclude": {
         "**/__pycache__": true,
         "**/.pytest_cache": true,
         "**/node_modules": true
     },
     "files.trimTrailingWhitespace": true,
-    "black-formatter.args": [
-        "--line-length",
-        "96"
-    ],
+
+
+    //python
     "python.analysis.typeCheckingMode": "basic",
     "python.testing.pytestEnabled": true,
-    "isort.importStrategy": "fromEnvironment",
     "[python]": {
         "editor.codeActionsOnSave": {
             "source.organizeImports": "explicit",
             "source.fixAll": "explicit"
         },
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
     "python.testing.pytestArgs": [
         "tests"
     ],
     "python.testing.unittestEnabled": false,
+    "python.terminal.activateEnvironment": false,  // poetry manages the environment
+
+    //javascript
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    //terminal
+    "terminal.integrated.profiles.windows": {
+        "foe_foundry": {
+            "source": "Git Bash",
+            "path": ["C:/Program Files/Git/bin/bash.exe"],
+            "icon": "terminal-bash",
+            "overrideName": true,
+            "color": "terminal.ansiMagenta"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "foe_foundry",
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+
+    //VS Code should uise cmd for debugging, tests, and other tasks
+    "terminal.integrated.automationProfile.windows": {
+        "path": "C:/windows/system32/cmd.exe"
+    }
 }

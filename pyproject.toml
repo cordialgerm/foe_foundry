@@ -31,6 +31,10 @@ requests = "^2.32.3"
 whoosh = "^2.7.4"
 num2words = "^0.5.13"
 
+[tool.poetry.scripts]
+foe_foundry_nl = "foe_foundry_nl.__main__:cli"
+ffnl = "foe_foundry_nl.__main__:cli"
+
 
 [build-system]
 requires = ["poetry-core"]

@@ -1,7 +1,6 @@
 import click
 
-from rapg.test import main as test_main
-from rapg.train import train_model
+from .data.monsters import save_monsters
 
 
 @click.group()
@@ -9,16 +8,19 @@ def cli():
     pass
 
 
-# Add test command to the CLI
 @cli.command()
 def test():
-    test_main()
+    pass
 
 
-# Add train command to the CLI
 @cli.command()
 def train():
-    train_model()
+    pass
+
+
+@cli.command()
+def regen_canonical_monsters():
+    save_monsters()
 
 
 # Entry point for the CLI

@@ -1,5 +1,5 @@
 <MonsterName/>Water Horse</MonsterName>
-<CreatureType/>Fey</CreatureType>
+<CreatureType/>Humanoid</CreatureType>
 
 <summary>The Water Horse is a Medium-sized fey creature characterized by its neutral evil demeanor. It possesses a unique ability to shapeshift, allowing it to transition between a humanoid form, a horse, or a hybrid form combining features of both. This versatility makes it a formidable opponent and a cunning manipulator in both combat and social interactions. With a challenge rating of 4, it poses a moderate threat to adventurers, particularly with its Charming Gaze ability which can incapacitate foes. The Water Horse boasts a reasonable Armor Class of 12 in humanoid form and 14 in horse or hybrid form, making it somewhat durable in encounters. However, its lack of immense hit points, totaling 77, means that it can be brought down if faced with concentrated attacks. </summary>
 
