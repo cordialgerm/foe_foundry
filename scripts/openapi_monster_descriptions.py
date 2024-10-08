@@ -1,8 +1,8 @@
 import os
 from pathlib import Path
-import pyautogui
-import numpy as np
 
+import numpy as np
+import pyautogui
 from openai import OpenAI
 
 

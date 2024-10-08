@@ -2,7 +2,7 @@ import torch
 from transformers import DistilBertTokenizer, DistilBertForMaskedLM
 from .model import load_model
 from .prompts import load_prompts
-from .data.monsters import load_all_monsters
+from ..rapg.rapg.data.monsters import load_all_monsters
 import numpy as np
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA

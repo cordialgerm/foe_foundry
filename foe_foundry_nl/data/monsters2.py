@@ -4,8 +4,6 @@ from collections.abc import Iterable
 from dataclasses import dataclass
 from pathlib import Path
 
-# from transformers import pipeline
-
 
 @dataclass
 class MonsterInfo:
@@ -31,7 +29,6 @@ class CanonicalMonster:
     natural_language: str | None
 
     def save(self, path: Path):
-        # summarizer = pipeline("summarization")
 
         if not path.parent.exists():
             path.parent.mkdir(parents=True, exist_ok=True)
@@ -51,7 +48,6 @@ class CanonicalMonster:
                 else:
                     nl = self.natural_language
 
-                # summarized_nl = summarizer(nl, max_length=500, min_length=100)
                 summarized_nl = nl
 
                 f.write(f"<detail>{summarized_nl}</detail>\n\n")
