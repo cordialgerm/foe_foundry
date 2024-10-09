@@ -61,7 +61,9 @@ def get_canonical_monsters() -> dict[str, CanonicalMonster]:
         natural_language = natural_language_descriptions.get(key)
 
         name = srd.name if srd is not None else artisinal.name
-        creature_type = srd.creature_type if srd is not None else artisinal.creature_type
+        creature_type = (
+            srd.creature_type if srd is not None else artisinal.creature_type
+        )
 
         if natural_language is not None:
             summary = natural_language.split("\n")[0]
@@ -107,6 +109,8 @@ def name_to_key(name: str) -> str:
     key = re.sub(r"\s*\(.*?\)\s*", "", key)
     key = (
         key.replace(", ", "_")
+        .replace(": ", "_")
+        .replace(":", "_")
         .replace(",", "_")
         .replace(" ", "_")
         .replace("-", "_")
@@ -201,7 +205,6 @@ def iter_5e_monster_nl() -> Iterable[tuple[Path, str]]:
             print(f"Unable to load {monster_file}. {x}")
 
 
-
 def _read(path: Path) -> str:
     try:
         with path.open("r", encoding="utf-8") as f:
@@ -218,4 +221,3 @@ def save_monsters():
     for key, monster in monsters.items():
         path = dir / f"{key}.md"
         monster.save(path)
-

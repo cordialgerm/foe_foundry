@@ -1,6 +1,9 @@
 from pprint import pprint
 
 from datasets import DatasetDict
+from sentence_transformers import SentencesDataset, SentenceTransformer, losses
+from sentence_transformers.readers import InputExample
+from torch.utils.data import DataLoader
 from transformers import (
     DataCollatorForLanguageModeling,
     EarlyStoppingCallback,
@@ -11,7 +14,7 @@ from transformers import (
 )
 
 from .data.background import load_background_dataset
-from .model import load_model_for_mlm, mlm_model_dir_rel
+from .model import load_model_for_mlm, mlm_model_dir_rel, st_model_dir_rel
 
 
 def fine_tune_bert_on_background_corpus(fresh: bool, skip_training: bool = False):
@@ -51,6 +54,32 @@ def fine_tune_bert_on_background_corpus(fresh: bool, skip_training: bool = False
     pprint(eval_result2)
 
     print("Success!")
+
+
+def fine_tune_bert_contrastive():
+    model = SentenceTransformer(str(mlm_model_dir_rel))
+
+    train_examples = [
+        InputExample(
+            texts=["Anchor sentence", "Positive sentence", "Negative sentence"]
+        ),
+    ]
+
+    train_dataset = SentencesDataset(train_examples, model)
+    train_dataloader = DataLoader(train_dataset, shuffle=True, batch_size=16)
+
+    train_loss = losses.TripletLoss(
+        model=model,
+        distance_metric=losses.TripletDistanceMetric.COSINE,
+        triplet_margin=0.5,
+    )
+
+    model.fit(
+        train_objectives=[(train_dataloader, train_loss)],
+        epochs=3,
+        warmup_steps=0,
+        output_path=str(st_model_dir_rel),
+    )
 
 
 def _setup_trainer(

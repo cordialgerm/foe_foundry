@@ -12,6 +12,9 @@ model_dir = Path(__file__).parent.parent / "models"
 mlm_model_dir = model_dir / "mlm-finetuned"
 mlm_model_dir_rel = mlm_model_dir.relative_to(Path(__file__).parent.parent)
 
+st_model_dir = model_dir / "st-finetuned"
+st_model_dir_rel = st_model_dir.relative_to(Path(__file__).parent.parent)
+
 
 def load_model_for_mlm(
     use_saved: bool = True,
