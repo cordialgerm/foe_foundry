@@ -1,6 +1,8 @@
 <MonsterName/>Imp (Devil)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<Subtype/>shapechanger</Subtype>
+<Subtype/>devil</Subtype>
 <summary>An Imp is a tiny, winged devil that serves more powerful fiends as a spy, messenger, or familiar. These small creatures are known for their cunning and deceit, often using their ability to turn invisible or take on the form of small animals to infiltrate enemy ranks or eavesdrop on important conversations. Imps possess a poisonous sting and can fly with agility, making them difficult to catch or kill. Though weak compared to larger fiends, Imps are dangerous due to their cleverness and their ability to manipulate others. They delight in causing chaos and corruption wherever they go.</summary>
 
 <summary>The Imp is a tiny fiend known for its cunning and mischievous nature, often acting as a servant or spy for more powerful entities. With a decent Armor Class of 13 and 14 hit points, it is not particularly durable but can evade attacks by utilizing its high Dexterity score of 16, which grants it a good modifier of +3, making it effective at avoiding damage. In addition to its ability to fly at a speed of 40 feet, the Imp’s primary strengths lie in its magical capabilities and stealth, reinforced by its high Stealth skill of +5 and its access to invisibility. However, its low Strength score of 6 (-2 modifier) makes it ineffective in direct combat, relying instead on hit-and-run tactics and illusion. The Imp also has several useful traits, such as damage immunities to fire and poison, as well as resistances against cold and nonmagical attacks, making it a resilient foe despite its small size.</summary>

@@ -1,6 +1,7 @@
 <MonsterName/>Vrock (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<Subtype/>demon</Subtype>
 <summary>A Vrock is a demon with the body of a vulture and the features of a humanoid, combining sharp talons, wings, and a sinister, bird-like head. These demons revel in death and destruction, using their screeching calls and devastating attacks to sow chaos. Vrocks are brutal fighters, tearing into enemies with claws and beaks, and they can release clouds of toxic spores to weaken their foes. They are often found leading demonic forces into battle or acting as powerful enforcers for more powerful demons. Their ability to fly and unleash deadly sonic screeches makes them formidable opponents.</summary>
 
 <summary>The Vrock is a powerful Large Fiend that serves as a deadly combatant in any encounter, often characterized by its chaotic evil nature. With an Armor Class of 15 and 104 hit points, it can endure significant damage before being overwhelmed. The Vrock has impressive physical attributes, particularly in Strength and Constitution, making it a formidable opponent in melee combat. It is capable of flying, enabling it to maneuver over obstacles and engage in combat effectively. However, despite its strengths, it is vulnerable to radiant damage and can be severely impacted by spells and abilities that target its weaknesses. Its challenge rating of 6 signifies that it can pose a serious threat to adventurers of mid-level experience. </summary>

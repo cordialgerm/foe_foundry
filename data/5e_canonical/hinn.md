@@ -1,6 +1,7 @@
 <MonsterName/>Hinn</MonsterName>
 <CreatureType/>Elemental</CreatureType>
 
+<Subtype/>outsider</Subtype>
 <summary>The Hinn is a large elemental creature that serves as a formidable combatant and spellcaster in varied environments. It possesses a strong defensive capability with an Armor Class of 17 and a significant pool of Hit Points totaling 199, which allows it to withstand substantial amounts of damage. With a Challenge Rating of 11, it is a powerful opponent. The Hinn showcases remarkable strengths through its physical and magical abilities, particularly in controlling Earth and utilizing special actions to manipulate the battlefield. Its weaknesses lie primarily in its lack of direct ranged attacks and reliance on close and mid-range combat strategies. Notable features include its ability to seamlessly travel through the earth without leaving a trace and its capability to transform into a cloud form, enhancing its stealth.</summary>
 
 <detail>

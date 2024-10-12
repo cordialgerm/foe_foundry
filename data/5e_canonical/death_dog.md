@@ -1,6 +1,7 @@
 <MonsterName/>Death Dog</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<Subtype/>animal</Subtype>
 <summary>The Death Dog is a two-headed, monstrous canine with matted fur and glowing, bloodshot eyes. These creatures are bred for their ferocity and are often found guarding tombs, ruins, or serving dark masters. Death Dogs are highly aggressive and territorial, and their bite carries a deadly, infectious disease that weakens and eventually kills their victims. Their two heads make them extremely difficult to surprise, as one head is always alert to danger while the other rests. Death Dogs are relentless hunters, often chasing their prey for miles until it collapses from exhaustion.</summary>
 
 <summary>The Death Dog is a medium monstrosity known for its formidable dual-headed appearance and its role as a threatening combatant. With an armor class of 12 and a decent amount of hit points totaling 32, it presents a moderate challenge to adventurers. The creature excels in both agility and strength, sporting a Strength score of 14 (+2), Dexterity of 14 (+2), and Constitution of 14 (+2), which indicates it can hold its own in physical confrontations. Its dual heads grant it unique advantages in combat, making it a dangerous foe capable of inflicting disease on its victims. However, its Intelligence score is very low at 2 (-4), rendering it poor in cognitive tasks. Overall, the Death Dog possesses good offensive capabilities but can be vulnerable if not taken seriously.</summary>

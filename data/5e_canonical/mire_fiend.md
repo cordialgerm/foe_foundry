@@ -1,6 +1,7 @@
 <MonsterName/>Mire Fiend</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<Subtype/>demon</Subtype>
 <summary>The Mire Fiend is a Medium fiend classified as a demon, presenting a mix of resilience and agility that makes it a formidable foe in combat. With an Armor Class of 22 due to its natural armor, it possesses good defenses and can absorb damage effectively, reinforced by its 94 hit points. This creature has a Challenge Rating of 5, indicating it's a significant threat to a party of adventurers. It can move quickly across land and swim with equal prowess, boasting a speed of 40 feet both on land and in water. The Mire Fiend has a variety of strengths including its ability to breathe in both air and water, resistance to multiple damage types, and an advantage on saving throws against magical effects. However, it exhibits weaknesses, such as being reliant on allies for maximizing its attack potency through its Pack Tactics ability and reduced effectiveness in non-swampy terrain due to its Swamp Camouflage feature.</summary>
 
 <detail>

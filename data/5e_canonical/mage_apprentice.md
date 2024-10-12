@@ -1,6 +1,7 @@
 <MonsterName/>Mage Apprentice</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>any lineage</Subtype>
 <summary>The Mage Apprentice is a Medium humanoid creature that serves as an aspiring spellcaster, exhibiting both a blend of martial capability and magical prowess. With a Challenge Rating of 1, it is suited for early encounters that test a party's strategic thinking against spellcasting opponents. The apprentice possesses a reasonable level of resilience, with 40 hit points, and showcases decent agility with a Dexterity score of +1, making it average in terms of physicality. The Mage Apprentice is particularly notable for its specialized magical abilities, allowing it to deal significant extra damage with its weapon attacks and enhance its spellcasting effectiveness under certain conditions, though it remains vulnerable to counter-attacks while employing these powerful abilities.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Thug</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>any lineage</Subtype>
+<Subtype/>any race</Subtype>
 <summary>A Thug is a brutal enforcer or criminal who uses brute force and intimidation to achieve their goals. Often found in the service of crime lords or as members of mercenary bands, Thugs rely on their physical strength and cruelty to overpower opponents. They are typically armed with clubs, maces, or simple weapons, preferring close combat where they can bash and subdue their targets. While not the most skilled fighters, Thugs make up for it with sheer aggression and a willingness to fight dirty. They are often found in the underbelly of cities or as part of raiding parties.</summary>
 
 <summary>The Thug is a medium humanoid character that operates primarily as a combatant, designed to engage in physical confrontations. With a decent Armor Class of 14 and a hit point total of 32, Thugs can endure a fair amount of damage, making them durable within their respective challenge rating of 1. This character excels in melee combat primarily due to their strong physical attributes, particularly their high Strength score of 16, which provides a good attack bonus. Their Dexterity score is average, giving them a minor defensive boost but not sufficient for impressive dodging capabilities. Thugs are primarily effective at dishing out damage with melee attacks, although they also have a ranged option with a heavy crossbow. Their intimidation skill provides a minor bonus, aiding in social interactions that may involve coercion. However, they lack magical abilities and have limited versatility outside physical confrontations, making them less formidable against opponents who can exploit their weaknesses. </summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Quasit (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<Subtype/>shapechanger</Subtype>
+<Subtype/>demon</Subtype>
 <summary>A Quasit is a small, fiendish creature that serves as a spy or familiar for more powerful demons or warlocks. These imp-like fiends can shift between their natural, bat-winged form and other small animals, such as a rat or a spider. Quasits are mischievous and cruel, often using their ability to turn invisible to sneak into places unnoticed. Though physically weak, they are highly cunning and enjoy causing chaos. Quasits can use their claws to deliver a poisonous scratch and are resistant to many forms of magic. They are often found serving more powerful demons in the Abyss or acting as familiars to evil spellcasters.</summary>
 
 <summary>The Quasit is a tiny fiend notable for its cunning and deceptive abilities. With a Challenge Rating of 1/2, it is relatively weak compared to larger foes, making it an excellent opponent for low-level adventurers. Its key strengths lie in its high Dexterity and damage immunities and resistances, which allow it to evade attacks and endure combat more effectively. The Quasit specializes in stealth and trickery, making it an adept ambush attacker. However, it has low health points and minimal physical strength, rendering it vulnerable in direct confrontations, especially against characters with strong physical attacks or area-of-effect spells.</summary>

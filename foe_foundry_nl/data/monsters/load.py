@@ -65,6 +65,10 @@ def get_canonical_monsters() -> dict[str, CanonicalMonster]:
             srd.creature_type if srd is not None else artisinal.creature_type
         )
 
+        subtypes = set()
+        for m in monsters:
+            subtypes.update(m.creature_subtypes)
+
         if natural_language is not None:
             summary = natural_language.split("\n")[0]
         else:
@@ -74,6 +78,7 @@ def get_canonical_monsters() -> dict[str, CanonicalMonster]:
             key=key,
             name=name,
             creature_type=creature_type,
+            creature_subtypes=list(subtypes),
             is_srd=srd is not None,
             infos=monsters,
             summary=summary,
@@ -84,7 +89,7 @@ def get_canonical_monsters() -> dict[str, CanonicalMonster]:
     return all_monsters
 
 
-def creature_type_from_markdown(text: str):
+def creature_type_from_markdown(text: str) -> tuple[str, list[str]]:
     all_creature_types = CreatureType.all()
 
     first_lines = "\n".join(
@@ -92,9 +97,19 @@ def creature_type_from_markdown(text: str):
     )  # skip title because of "Giant Elk" for example
     creature_types = [ct for ct in all_creature_types if ct.lower() in first_lines]
     if len(creature_types) == 0:
-        return None
+        return "", []
+
+    ct = creature_types[0]
+    index = first_lines.index(ct)
+    remaining = first_lines[index + len(ct) :].strip()
+    if remaining.startswith("(") and ")" in remaining:
+        end = remaining.index(")")
+        subtypes = remaining[1:end]
+        subtypes = [s.strip() for s in subtypes.split(",")]
     else:
-        return creature_types[0].title()
+        subtypes = []
+
+    return ct.title(), subtypes
 
 
 def name_to_key(name: str) -> str:
@@ -105,15 +120,20 @@ def name_to_key(name: str) -> str:
         key = key.replace(", giant", "")
         prefix = "giant_"
 
+    if key.startswith("npc: "):
+        key = key[5:]
+
     # Remove any text within parentheses
     key = re.sub(r"\s*\(.*?\)\s*", "", key)
     key = (
         key.replace(", ", "_")
         .replace(": ", "_")
         .replace(":", "_")
+        .replace("' ", "")
         .replace(",", "_")
         .replace(" ", "_")
         .replace("-", "_")
+        .replace("'", "")
         .strip()
     )
 
@@ -169,6 +189,9 @@ def markdown_to_monster(
 ) -> MonsterInfo:
     with monster_path.open("r", encoding=encoding) as f:
         monster_name = f.readline().replace("#", "").strip()
+        if monster_name.startswith("Npc: "):
+            monster_name = monster_name[5:]
+
         f.seek(0)
 
         text = f.read()
@@ -178,8 +201,8 @@ def markdown_to_monster(
         except ValueError:
             pass
 
-        ct = creature_type_from_markdown(text)
-        if ct is None:
+        ct, subtypes = creature_type_from_markdown(text)
+        if ct == "":
             raise ValueError("Cannot parse creature_type")
         key = name_to_key(monster_name)
 
@@ -187,6 +210,7 @@ def markdown_to_monster(
             key=key,
             name=monster_name,
             creature_type=ct,
+            creature_subtypes=subtypes,
             source=source,
             path=monster_path,
             type="markdown",

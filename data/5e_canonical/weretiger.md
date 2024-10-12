@@ -1,6 +1,9 @@
 <MonsterName/>Weretiger (Lycanthrope)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>human</Subtype>
+<Subtype/>shapechanger</Subtype>
+<Subtype/>lycanthrope</Subtype>
 <summary>A Weretiger is a humanoid cursed with the ability to transform into a tiger or a tiger-like hybrid form. Weretigers are known for their grace, speed, and deadly precision in combat. They are often loners, preferring to live in remote jungles or forests where they can hunt in peace. In their tiger form, Weretigers are powerful predators with sharp claws, fangs, and the ability to move silently through their environment. They are immune to most non-silvered weapons and can transmit lycanthropy through their bite. Despite their solitary nature, they are fierce protectors of their territory.</summary>
 
 <summary>The Weretiger is a medium humanoid lycanthrope known for its ability to shift between its human form, a tiger-humanoid hybrid, and a large tiger. This creature presents a moderate challenge in combat with a balanced combination of strength, dexterity, and constitution, making it quite capable in physical confrontations. Its challenge rating of 2 indicates that it can be a formidable opponent for lower-level parties. Notably, the Weretiger is immune to damage from nonmagical and non-silvered weapons, allowing it to withstand typical attacks unless the attackers are prepared. However, it is vulnerable to wolfsbane, which can poison it while in its hybrid or beast forms, providing a tactical opportunity for characters who know how to exploit this weakness.</summary>

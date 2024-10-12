@@ -1,6 +1,7 @@
 <MonsterName/>Golmana</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<Subtype/>demon</Subtype>
 <summary>The Golmana is a formidable Medium fiend classified as a demon, presenting a challenge for any adventurers who encounter it. Boasting an Armor Class of 15 and a resilient pool of Hit Points at 118, this creature is built to endure in combat. With a Challenge Rating of 7, the Golmana is a significant threat due to its combination of strong physical attacks and debilitating magical abilities. While it excels in damaging opponents and maintaining its own survivability, it has below-average intelligence, indicated by a score of -1 in Intelligence, making it less effective in strategic situations that require complex thought. Its notable mobility allows it to traverse difficult environments with its Spider Climb ability, while its resistances to several damage types make it even harder to bring down.</summary>
 
 <detail>

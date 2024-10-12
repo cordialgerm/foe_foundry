@@ -1,6 +1,8 @@
 <MonsterName/>Bandit Captain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>any lineage</Subtype>
+<Subtype/>any race</Subtype>
 <summary>The Bandit Captain is the hardened and ruthless leader of a gang of criminals. Often larger and more experienced than the average bandit, the captain wears better armor and wields more sophisticated weapons, such as a sword and dagger. These leaders are charismatic and cunning, able to inspire loyalty through fear or respect. Bandit Captains are skilled in strategy, preferring to outsmart their enemies through ambushes or tactical retreats when the odds are against them. While they may not possess magical abilities, their combat prowess and leadership make them formidable foes.</summary>
 
 <summary>The Bandit Captain is a Medium humanoid creature known for its leadership in chaotic and violent encounters. Functioning as both a formidable combatant and a cunning strategist, the Bandit Captain is often encountered leading a group of bandits on the road or in ambush scenarios. With an Armor Class of 15 and a total of 65 hit points, this creature can withstand a decent amount of damage, making it more resilient than many of its minions. It boasts exceptional Dexterity, allowing for agile movements and stealth, while its Charisma and skills in deception enable it to manipulate situations to its advantage. However, its reliance on physical attacks means it may struggle against spellcasters or ranged opponents. </summary>

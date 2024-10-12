@@ -1,6 +1,7 @@
 <MonsterName/>Hezrou (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<Subtype/>demon</Subtype>
 <summary>A Hezrou is a hulking, amphibious demon with a toad-like body and powerful limbs. These creatures are among the brutish enforcers of the Abyss, serving more powerful demons in battles against their enemies. Hezrous exude a foul stench that sickens and weakens those nearby, and their thick, warty skin provides them with protection against most attacks. In combat, they rely on their brute strength to crush and maul foes, often grappling and tearing enemies apart with their claws and teeth. Despite their simple minds, Hezrous are dangerous due to their raw power and relentless aggression.</summary>
 
 <summary>The Hezrou is a large fiend known for its chaotic and evil nature. As a formidable creature in combat, it boasts a significant armor class of 16 and a total of 136 hit points, making it a tough adversary in battle. This creature walks at a speed of 40 feet and has a Challenge Rating of 10, which indicates it can provide a significant challenge for a party of adventurers, granting them 5,900 experience points upon defeat. The Hezrou's strengths lie in its strong physical attributes—particularly its Strength and Constitution, with scores of 18 (+4) and 20 (+5), respectively—allowing it to deal substantial damage while withstanding attacks. However, it suffers from low Intelligence, which restricts its strategic options in terms of spellcasting and problem-solving.</summary>

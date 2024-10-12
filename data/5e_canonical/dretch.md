@@ -1,6 +1,7 @@
 <MonsterName/>Dretch (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<Subtype/>demon</Subtype>
 <summary>A Dretch is a small, wretched demon that embodies chaos and misery. Its bloated, twisted form is covered in sores and patches of matted fur, while its eyes glow with malevolent stupidity. Dretches are the lowest of demonkind, often used as cannon fodder in the Abyss's endless wars. Though weak and cowardly, they attack in large numbers, using their sharp claws and teeth to overwhelm their enemies. Dretches emit a foul stench that can sicken anyone nearby, and they often serve more powerful demons as expendable minions, driven by fear and hunger.</summary>
 
 <summary>The Dretch is a small fiend known for its chaotic evil nature and is often perceived as a minor demon of the Abyss. Its role in combat is predominantly that of an annoyance rather than a direct threat, relying on its energy-sucking aura to hinder the actions of nearby foes. With an Armor Class of 10 and only 18 hit points, it is relatively easy to defeat, making it more of a support creature for more powerful demons. Its weaknesses include very low damage output and poor defensive capabilities. However, it can disrupt enemy actions and provide minor assistance to allies, making it a creature that should not be underestimated when in groups.</summary>

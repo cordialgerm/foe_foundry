@@ -1,6 +1,7 @@
 <MonsterName/>Hobgoblin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>goblinoid</Subtype>
 <summary>Hobgoblins are disciplined, militaristic humanoids known for their rigid society and combat prowess. Larger and more organized than their goblin cousins, Hobgoblins have a strong sense of hierarchy and value honor in battle. They are typically clad in armor and wield weapons such as swords, spears, or bows. Hobgoblins are skilled tacticians, often leading well-coordinated raids or battles. They are found in structured warbands or armies, conquering and subjugating weaker creatures. Hobgoblins respect strength and loyalty, often forming alliances with other warlike races to expand their territories.</summary>
 
 <summary>The Hobgoblin is a medium humanoid creature known for its tactical combat capabilities and disciplined military structure. With a Challenge Rating of 1/2, it presents a moderate threat, particularly when encountered in groups. Hobgoblins have a solid Armor Class of 16 and decent hit points totaling 19, making them resilient on the battlefield. Their strength lies in their teamwork, enhanced by their special ability, Formation Movement, which allows them to move more freely in the proximity of their allies. However, their overall abilities are average, with modifiers that do not significantly enhance individual attributes. They possess skills in perception and survival, which can aid them in both combat and exploration scenarios. </summary>

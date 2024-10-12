@@ -1,6 +1,7 @@
 <MonsterName/>Horned Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<Subtype/>devil</Subtype>
 <summary>A Horned Devil is a fearsome, fiendish warrior from the Nine Hells, standing tall with bat-like wings, a spiked tail, and massive horns protruding from its head. Its red, scaly skin and muscular form give it a menacing presence. Horned Devils are brutal and ruthless, wielding wicked spiked chains or pitchforks in battle. Their barbed tails deliver venomous strikes, and their sheer physical strength makes them dangerous opponents. Loyal to the infernal hierarchy, Horned Devils serve higher devils as enforcers or generals, relishing combat and the opportunity to spread terror.</summary>
 
 <summary>The Horned Devil is a powerful entity within the realm of fiends, specifically designed to be a formidable foe in encounters. With its large size and a challenge rating of 11, it presents a significant threat to adventurers, showcasing both physical resilience and formidable magical prowess. The Horned Devil possesses a robust armor class of 18, paired with 168 hit points that make it difficult to take down. Its strengths lie in its high strength and constitution, making it exceptionally adept in combat while also resistant to several forms of damage. However, despite its resilience, it has weaknesses, especially against certain types of magical attacks or the right strategies from clever players. </summary>

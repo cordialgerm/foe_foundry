@@ -9,6 +9,7 @@ class MonsterInfo:
     is_srd: bool
     path: Path
     creature_type: str
+    creature_subtypes: list[str]
     source: str
     type: str
     text: str
@@ -20,18 +21,20 @@ class CanonicalMonster:
     name: str
     is_srd: bool
     creature_type: str
+    creature_subtypes: list[str]
     infos: list[MonsterInfo]
     summary: str | None
     description: str | None
     natural_language: str | None
 
     def save(self, path: Path):
-
         if not path.parent.exists():
             path.parent.mkdir(parents=True, exist_ok=True)
         with path.open("w", encoding="utf-8") as f:
             f.write(f"<MonsterName/>{self.name}</MonsterName>\n")
             f.write(f"<CreatureType/>{self.creature_type}</CreatureType>\n\n")
+            for subtype in self.creature_subtypes:
+                f.write(f"<Subtype/>{subtype}</Subtype>\n")
             if self.description is not None:
                 f.write(f"<summary>{self.description}</summary>\n\n")
             if self.summary is not None:

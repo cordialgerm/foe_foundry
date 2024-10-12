@@ -1,6 +1,8 @@
 <MonsterName/>Assassin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>any lineage</Subtype>
+<Subtype/>any race</Subtype>
 <summary>An Assassin is a master of stealth, precision, and lethal efficiency. Clad in dark, nondescript clothing, they blend seamlessly into shadows, often using poisons or specially crafted weapons to take out their targets swiftly and silently. Assassins are highly trained killers, experts in avoiding detection and exploiting their victim’s weaknesses. They typically strike from the shadows, ensuring their target never sees them coming. While some work for hire, serving criminal organizations or powerful nobles, others might operate with their own personal motives. Cold, calculating, and emotionless, Assassins are deadly foes to those who find themselves on their list.</summary>
 
 <summary>The Assassin is a Medium humanoid creature that excels in stealth, subterfuge, and dealing lethal damage swiftly. With an Armor Class of 16 and Hit Points of 97, they present a significant challenge, primarily due to their high Dexterity score of 16, allowing for exceptional stealth and agility in combat. They are a formidable foe, capable of exploiting the environment and the situation to their advantage, especially with their Assassinate ability that enables them to deliver devastating strikes on unsuspecting targets. Despite their offensive capabilities, they require careful positioning and timing to maximize their effectiveness, as they rely heavily on ambush tactics and the weaknesses of their opponents.</summary>

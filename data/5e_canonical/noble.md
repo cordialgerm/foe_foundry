@@ -1,6 +1,8 @@
 <MonsterName/>Noble</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>any lineage</Subtype>
+<Subtype/>any race</Subtype>
 <summary>A Noble is a high-born individual, often a ruler or member of a wealthy, influential family. Nobles are usually adorned in fine clothing, bearing symbols of their status such as signet rings or coats of arms. While not trained fighters, Nobles are often well-versed in diplomacy, politics, and manipulation. They command the loyalty of guards, servants, and other followers and are known to wield great power within their domains. Though not dangerous themselves, they can marshal resources to bring ruin to their enemies through political schemes or hired muscle.</summary>
 
 <summary>The Noble is a Medium humanoid creature, serving as a representation of aristocracy and political influence in the game world. With an Armor Class of 15 and moderate hit points of 13, the Noble is relatively durable for a low-level character, allowing them to engage in conversations, negotiations, or light combat. Its Challenge Rating of 1/4 suggests that it is not a significant threat in combat but could provide minor obstacles to unprepared adventurers. The Noble's strengths lie in its Charisma and social skills, making it a good diplomat or performer, while its physical combat abilities are more limited. Notable weaknesses include average attributes for melee combat and a reliance on social skills, leaving them vulnerable to direct confrontation.</summary>

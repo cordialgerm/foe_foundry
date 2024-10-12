@@ -1,6 +1,7 @@
 <MonsterName/>Bard</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>any lineage</Subtype>
 <summary>The Bard is a Medium humanoid character known for its versatility and charm, embodying the role of a support character while still being able to hold its own in combat. With an Armor Class of 15 and a solid pool of 114 hit points, the Bard is reasonably durable on the battlefield. Its strengths include exceptional dexterity and charisma, granting it a +6 modifier to Dexterity and a +7 modifier to Charisma, which allows the Bard to excel in both ranged and spellcasting attacks. However, its physical strength is average at +0, making it less effective in melee engagements without relying on its agile talents. The Bard's unique abilities allow it to deal significant extra damage through its artistic expression and manipulate the battlefield through powerful spells and abilities. Notable strengths include strong crowd control potential and support, but its reliance on spell slots and recharge mechanics can limit its output in prolonged encounters.</summary>
 
 <detail>

@@ -1,6 +1,9 @@
 <MonsterName/>Wereboar (Lycanthrope)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>human</Subtype>
+<Subtype/>shapechanger</Subtype>
+<Subtype/>lycanthrope</Subtype>
 <summary>A Wereboar is a humanoid cursed with the ability to transform into a powerful boar, either fully or in a hybrid form. Wereboars are known for their brute strength and ferocity, often charging headfirst into battle with their tusks and powerful muscles. They are aggressive and territorial, sometimes becoming leaders of bandit groups or raiders. In their boar form, they possess thick, bristly hides that provide them with natural armor, and they are highly resistant to damage from non-silvered weapons. Wereboars are dangerous opponents, capable of transmitting lycanthropy through their bite or tusks.</summary>
 
 <summary>The Wereboar is a Medium humanoid creature with the ability to shift between humanoid, hybrid, and boar forms. It possesses a significant amount of hit points, making it a durable opponent in combat. With a strong physical presence, highlighted by its notable Strength and decent Constitution, the Wereboar excels in melee combat. Its challenge rating of 4 indicates that it can present a moderate threat to adventuring parties. One of the creature's unique features is its immunity to damage from non-magical and non-silvered weapons, which can make it tough for unprepared characters to defeat. While it has average Dexterity, its limited mobility of 30 feet per turn and lack of ranged attacks could be considered weaknesses.</summary>

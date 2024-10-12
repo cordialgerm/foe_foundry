@@ -1,6 +1,8 @@
 <MonsterName/>Berserker</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>any lineage</Subtype>
+<Subtype/>any race</Subtype>
 <summary>A Berserker is a savage warrior who fights with unbridled fury, often driven into a battle frenzy that makes them nearly unstoppable. Clad in furs or piecemeal armor, Berserkers wield massive weapons such as great axes or clubs, and they attack with reckless abandon. Their rage fuels their strength, allowing them to shrug off wounds that would fell lesser warriors. Berserkers often come from wild or tribal societies, and they have little regard for tactics or strategy, relying solely on their raw power and bloodlust to carry them through battle.</summary>
 
 <summary>The Berserker is a medium humanoid creature characterized by its aggressive combat style and ability to unleash powerful attacks when wounded. With a challenge rating of 2, it is intended for encounters that provide a moderate challenge to adventurers. The Berserker boasts a strong combination of physical attributes, particularly in strength and constitution, which enhance its combat effectiveness. However, its relatively low armor class suggests that it is more vulnerable to attacks when compared to more heavily armored foes. The Berserker shines in offensive capabilities but risks being easily overwhelmed if not supported by allies.</summary>

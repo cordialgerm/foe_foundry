@@ -1,6 +1,8 @@
 <MonsterName/>Bandit</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>any lineage</Subtype>
+<Subtype/>any race</Subtype>
 <summary>A Bandit is a rough, scrappy human or humanoid who lives outside the law, preying on the weak for their own gain. They wear mismatched armor and carry simple weapons such as swords, axes, or bows. Bandits often operate in gangs, ambushing travelers on remote roads or raiding small villages. They are typically motivated by greed, but some may resort to banditry out of desperation or necessity. While they are not highly trained fighters, their strength lies in numbers and their willingness to do whatever it takes to survive.</summary>
 
 <summary>The Bandit is a medium humanoid character that primarily serves as an enemy in combat encounters, particularly in scenarios involving theft or ambush. With a Challenge Rating of 1/8, they are relatively weak opponents, offering limited experience points and presenting challenges suitable for lower-level adventurers. Their strengths lie in their ability to engage in both melee and ranged combat using a scimitar and a light crossbow, respectively. However, their lack of high hit points and poor defensive capabilities make them vulnerable in direct confrontations. Bandits are typically driven by a code of violence, varying from common highway robbers to principled freedom fighters, which adds depth and narrative potential to their encounters.</summary>

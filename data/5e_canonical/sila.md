@@ -1,6 +1,7 @@
 <MonsterName/>Sila</MonsterName>
 <CreatureType/>Elemental</CreatureType>
 
+<Subtype/>outsider</Subtype>
 <summary>The Sila is a formidable large elemental creature with an impressive combination of speed, versatility, and powerful elemental attacks. Known as an outsider, this creature resides primarily in aquatic environments, capable of thriving both in water and on land. Its defensive capabilities are heightened by a solid armor class of 17, compounded by its significant hit points totaling 216, making it a durable opponent. The Sila possesses a challenge rating of 11, indicating that it poses a substantial threat to parties of adventurers of a similar level. Notable strengths include its good Dexterity and Charisma, which allow it to move gracefully and manipulate combat situations through spells and special abilities. However, it does have weaknesses such as limited offensive power in its nebulous form, where it cannot attack or manipulate objects.</summary>
 
 <detail>

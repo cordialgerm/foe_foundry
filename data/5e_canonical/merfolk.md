@@ -1,6 +1,7 @@
 <MonsterName/>Merfolk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>merfolk</Subtype>
 <summary>Merfolk are aquatic humanoids with the upper body of a human and the lower body of a fish. They dwell in oceans, lakes, or deep rivers, living in small communities or vast underwater cities. Merfolk are highly skilled swimmers and can breathe both air and water, making them adaptable to various environments. Though they are often peaceful and curious, they are fiercely protective of their underwater homes and will fight to defend their territory from invaders. Some Merfolk use weapons like spears or tridents, while others rely on their natural agility and knowledge of the water to outmaneuver their enemies.</summary>
 
 <summary>The Merfolk is a Medium humanoid creature that thrives in aquatic environments and possesses the unique ability to move easily between water and land. As a challenge-rated 1/8 creature, the Merfolk is relatively weak, making it a good target for lower-level adventurers. With an Armor Class of 11 and 11 hit points, it can be considered somewhat fragile, although its swimming speed of 40 feet grants it an advantage in water-based encounters. The Merfolk's strengths lie in its Amphibious ability, allowing it to breathe both air and water, which broadens its capabilities for exploration and combat in different environments. However, its average Strength and Wisdom scores mean it does not excel in direct confrontations or perceptive tasks.</summary>

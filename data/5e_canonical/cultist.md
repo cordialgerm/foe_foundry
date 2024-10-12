@@ -1,6 +1,8 @@
 <MonsterName/>Cultist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>any lineage</Subtype>
+<Subtype/>any race</Subtype>
 <summary>A Cultist is a lower-ranking member of a dark or forbidden religious sect, devoted to an evil deity or entity. Cultists wear simple, often tattered robes, and carry crude weapons like daggers or clubs. They are fanatically loyal to their leaders and are willing to follow orders without question, even to their own death. Though individually weak, Cultists can be dangerous in large groups or when performing dark rituals to summon creatures or invoke the power of their gods. They are often found in hidden temples, caves, or abandoned ruins, conducting their secretive and malevolent practices.</summary>
 
 <summary>The Cultist is a medium humanoid creature typically serving as a follower of sinister entities and forbidden deities. With a Challenge Rating of 1/8, Cultists are relatively weak but can still pose a threat when encountered in groups or within the context of their dark rituals. Cultists possess a decent Dexterity score, allowing them to be agile in combat, but they lack in other attributes, making them fragile and vulnerable in direct confrontations. Their special ability, Fanatic, grants them an advantage against being charmed or frightened by non-cultist foes, reflecting their unwavering devotion. While they may not be individually powerful, their association with darker powers can lead to dangerous situations for adventurers.</summary>

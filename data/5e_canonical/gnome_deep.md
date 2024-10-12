@@ -1,6 +1,7 @@
 <MonsterName/>Gnome, Deep (Svirfneblin)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>gnome</Subtype>
 
 
 ---

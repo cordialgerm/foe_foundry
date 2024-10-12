@@ -1,6 +1,7 @@
 <MonsterName/>Grimlock</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>grimlock</Subtype>
 <summary>Grimlocks are blind, humanoid creatures that dwell deep in the Underdark. Their pale, gray skin is leathery and scarred, and they rely on their keen sense of smell and hearing to hunt and navigate the pitch-black tunnels where they live. Grimlocks are savage and primitive, often traveling in packs to ambush their prey. Despite their lack of sight, they are skilled hunters, using their other senses to detect movement and sound. They are known for their brutal combat tactics, favoring crude weapons like clubs or stone axes to bludgeon their enemies.</summary>
 
 <summary>The Grimlock is a medium humanoid creature that serves as a stealthy combatant adept at ambush tactics. With a challenge rating of 1/4, it is considered a low-level threat, making it suitable for early encounters for adventurers. Its notable strengths include decent physical attributes, particularly its strength, dexterity, and constitution, all set at 14, which provides it a good modifier of +2 in relevant checks. While it has vulnerabilities due to its poor charisma and average wisdom, its ability to remain hidden in rocky terrains through camouflage and its keen senses gives it a tactical edge in combat situations. Despite its low hit points at 13, making it somewhat fragile, its melee and ranged capabilities allow it to inflict decent damage on adversaries.</summary>

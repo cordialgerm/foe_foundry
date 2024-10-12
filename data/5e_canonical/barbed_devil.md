@@ -1,6 +1,7 @@
 <MonsterName/>Barbed Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<Subtype/>devil</Subtype>
 <summary>A Barbed Devil is a fiendish creature covered in sharp, spiny protrusions that can pierce through flesh with ease. Its skin is a dark, reddish-brown, and its body is twisted and lean. The devil's eyes glow with malevolent intelligence, and it constantly exudes a sense of sadistic glee. Barbed Devils delight in inflicting pain, both physically and psychologically, and they are adept at using their barbs in combat, either by grappling their enemies or hurling them from afar. These devils often serve higher-ranking fiends in the infernal hierarchy and enjoy causing suffering wherever they go.</summary>
 
 <summary>The Barbed Devil is a Medium fiend with a formidable presence and a challenge rating of 5, making it a noteworthy adversary for adventurers. With an armor class of 15 and hit points totaling 102, it can withstand significant damage in combat. The devil excels in both melee and ranged combat, utilizing its high Strength score of 18 and Dexterity score of 16 to deliver punishing attacks. Its abilities allow it to grapple foes effectively, inflicting additional damage while protecting itself from many magical effects. Despite these strengths, the Barbed Devil has a few weaknesses, including vulnerabilities to radiant damage and the need for continuous engagement to maintain its control over grappled opponents.</summary>

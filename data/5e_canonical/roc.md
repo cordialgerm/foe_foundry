@@ -1,6 +1,7 @@
 <MonsterName/>Roc</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
 
+<Subtype/>animal</Subtype>
 <summary>A Roc is an enormous bird of prey, large enough to carry off an elephant in its talons. These majestic creatures soar high above mountains and open plains, hunting for massive prey. Rocs are often solitary and territorial, making their nests on remote mountain peaks or cliffs. Their immense size and strength make them formidable predators, capable of snatching up entire caravans or ships. While they are awe-inspiring, Rocs are also highly dangerous to anyone who ventures too close to their hunting grounds.</summary>
 
 <summary>The Roc is a formidable gargantuan beast, renowned in the realms as a mighty aerial predator. With an impressive Armor Class of 15 and a substantial pool of hit points totaling 232, it boasts considerable resilience in battle. The Roc possesses exceptional strength and constitution, making it a powerful attacker and difficult to bring down. However, its dexterity and intelligence are subpar, leading to average evasiveness and tactical awareness. With a Challenge Rating of 13, it presents a significant threat to adventurers, particularly those unprepared for its immense size and power. Notable abilities include keen sight for superior perception and the ability to deal double damage to structures, marking it as a dangerous foe in both combat and environmental contexts.</summary>

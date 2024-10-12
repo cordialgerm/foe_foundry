@@ -1,6 +1,7 @@
 <MonsterName/>Lemure (Devil)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
 
+<Subtype/>devil</Subtype>
 <summary>A Lemure is the lowest form of devil, a mindless and formless mass of flesh that writhes and groans in eternal torment. These pitiful creatures are the damned souls of mortals, reduced to their most basic form in the Nine Hells. Lemures have no will of their own and are often used as fodder in the endless wars between devils and demons. Though weak and easily destroyed, Lemures are nearly impossible to kill permanently, as they reform in the Hells after being slain. They are slow and grotesque, serving as a reminder of the eternal suffering that awaits those who fall into infernal hands.</summary>
 
 <summary>The Lemure is a Medium Fiend, typically serving as a low-ranking denizen of the infernal realms. With a notably low Armor Class of 7 and only 13 hit points, it is not particularly durable in combat. This creature has a Challenge Rating of 1/8, making it a minor threat in a D&D encounter. Its strengths lie in its damage immunities to fire and poison, as well as its ability to see in the dark and penetrate magical darkness. However, its physical and mental attributes are exceptionally poor, especially in Dexterity and Intelligence, where it suffers severe penalties. Overall, the Lemure is not a formidable opponent on its own but can serve as an interesting encounter due to its unholy nature and special abilities.</summary>

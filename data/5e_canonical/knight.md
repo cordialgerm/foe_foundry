@@ -1,6 +1,8 @@
 <MonsterName/>Knight</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>any lineage</Subtype>
+<Subtype/>any race</Subtype>
 <summary>A Knight is a heavily armored warrior, typically sworn to a code of chivalry or loyalty to a noble lord. Clad in plate armor and wielding a sword, lance, or shield, Knights are trained from a young age in combat, riding, and leadership. They often serve as commanders in armies or protectors of the realm, upholding justice and honor. Knights are disciplined and skilled in both mounted and foot combat, and they fight with a sense of duty and purpose. Though noble in their ideals, some Knights may be driven by personal ambition or the demands of their lords.</summary>
 
 <summary>The Knight is a Medium humanoid known for their combat prowess and leadership on the battlefield. With a formidable armor class of 18 and a solid pool of hit points totaling 52, the Knight excels in melee combat, capable of delivering significant damage with their greatsword or lance while also offering support to allies. Their challenge rating of 3 makes them a strong opponent for mid-level adventurers. Notably, the Knight possesses the special ability "Brave," allowing them to stand firm against fear effects. However, while their Dexterity is average, they are primarily built to engage directly in combat with strength and tactical thinking, which makes them quite effective in their role as a frontline warrior.</summary>

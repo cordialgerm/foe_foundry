@@ -1,6 +1,8 @@
 <MonsterName/>Priest</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
 
+<Subtype/>any lineage</Subtype>
+<Subtype/>any race</Subtype>
 <summary>A Priest is a devout servant of a deity, often acting as a spiritual leader within a temple or religious community. Priests are knowledgeable in divine magic, capable of casting healing spells, blessings, and other holy rites to aid their followers. They are also skilled in using divine magic to smite enemies or ward off evil forces. Priests are typically clad in robes and carry holy symbols or relics of their faith, which they use to focus their magic. Though not physically powerful, Priests play an important role in guiding and protecting their communities with their wisdom and divine powers.</summary>
 
 <summary>The Priest is a Medium humanoid creature with a Challenge Rating of 2, making it a moderately challenging opponent for adventurers. With an Armor Class of 14, it presents a reasonable defense, while its hit points total 32, suggesting it can endure some damage before being defeated. The Priest excels in spellcasting, harnessing its Wisdom to effectively heal and protect allies and hinder foes. Notable spells include healing options and utility spells that can sway the course of a battle, establishing the Priest as a reliable support character. However, its physical capabilities are average, relying more on its magical prowess than combat skills. </summary>
