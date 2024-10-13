@@ -1,6 +1,8 @@
 <MonsterName/>Ettercap</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>44</HP>
 <summary>An Ettercap is a twisted, humanoid spider-like creature that lurks in dark forests and caves. It has a hunched, hair-covered body, long claws, and a grotesque face with mandibles capable of spinning webs. Ettercaps are skilled trappers, weaving intricate webs to capture their prey, which often includes unsuspecting adventurers or animals. They also possess the ability to communicate with and command giant spiders and other arachnids. Ettercaps are solitary predators, and their lairs are filled with the remains of past victims, cocooned in silk. They are cunning and dangerous, using stealth and traps to hunt.</summary>
 
 <summary>The Ettercap is a Medium Monstrosity that embodies a terrifying combination of spider-like features and predatory instincts. Its role in combat is primarily as a physical attacker with control capabilities, thanks to its various abilities and attacks. With an Armor Class of 13, it has moderate defenses and a total of 44 hit points, translating to an average resilience in encounters. The Ettercap excels at stealth and survival, bolstered by a Dexterity score of 16 (+3), making it good at avoiding detection and enabling it to ambush foes. However, its low Intelligence score of 8 (-1) limits its strategic options and problem-solving capabilities. Overall, the Ettercap's strengths lie in its maneuverability, stealthy approach, and ability to restrain enemies, while its weaknesses include its average defensive capabilities and limited cognitive resourcefulness in combat situations.</summary>

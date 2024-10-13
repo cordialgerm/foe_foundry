@@ -1,6 +1,8 @@
 <MonsterName/>Young Red Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>178</HP>
 <summary>A Young Red Dragon is a fiery and ambitious predator, already displaying the arrogance and pride that will define its adult years. Its deep crimson scales shimmer with heat, and its breath weapon can incinerate anything in its path with a blast of intense fire. Young Red Dragons are typically found in volcanic regions or mountains, where they hoard treasure and assert their dominance over weaker creatures. Even at this stage, they are powerful, aggressive, and determined to prove their superiority. They are quick to anger and slow to forgive, and their greed drives them to constantly seek more wealth and power.</summary>
 
 <summary>The Young Red Dragon is a formidable creature known for its fiery breath and intimidating presence. As a Large Dragon with a challenge rating of 11, it serves as a potent adversary in battle, capable of dealing severe damage while remaining quite resilient due to its high hit points and defensive abilities. With an Armor Class of 18, it is relatively difficult to hit in combat. Its most notable strengths lie in its powerful multiattack capability and devastating fire breath, allowing it to control the battlefield effectively. However, its weaknesses may arise from being a creature susceptible to targeted tactics as it primarily relies on melee attacks and spells to deal damage.</summary>

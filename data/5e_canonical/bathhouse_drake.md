@@ -1,6 +1,8 @@
 <MonsterName/>Bathhouse Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Bathhouse Drake is a Medium-sized dragon with lawful neutral alignment, serving as a unique creature in various aquatic environments, particularly those found in or around bathhouses or similar settings. It boasts a robust armor class of 16 due to its natural armor, making it relatively tough in combat. With a total of 75 hit points, it has good longevity in battle, and its challenge rating of 3 indicates that it presents a moderate threat to adventurers. The Bathhouse Drake has notable mobility, able to fly and swim both at a speed of 60 feet, while also being able to walk at 30 feet. Its strengths include immunity to poison damage and resistance to fire damage, along with advantageous skills in medicine and persuasion. However, it has relatively average attributes in strength, dexterity, and charisma, which means it is not the most formidable in direct confrontations. Its special abilities and spellcasting options make it versatile, able to influence the battlefield and support allies effectively.</summary>
 
 <detail>

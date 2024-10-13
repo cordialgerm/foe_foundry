@@ -1,6 +1,8 @@
 <MonsterName/>Nightgarm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Nightgarm is a large, chaotic evil monstrosity often encountered in dark and sinister environments. With an impressive Armor Class of 15 and a substantial pool of Hit Points totaling 152, it is a formidable opponent. Its primary strength lies in its powerful melee attacks, which can inflict severe damage, coupled with its ability to summon wolves as allies. Although it possesses a good Dexterity and impressive Constitution, its reliance on physical damage makes it vulnerable to radiant attacks and silvered weaponry, which can bypass its damage resistances. The Nightgarm's telepathy capability allows it to maintain communication with any falseheart it has created, even across dimensions, adding a layer of strategic depth to its role in combat.</summary>
 
 <detail>

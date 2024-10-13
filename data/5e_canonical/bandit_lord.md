@@ -1,6 +1,8 @@
 <MonsterName/>Bandit Lord</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>91</HP>
 <summary>The Bandit Lord is a formidable and cunning leader among non-lawful humanoids, embodying the essence of a skilled combatant and strategic thinker in battle. With an impressive armor class of 16 and 91 hit points, this medium humanoid is capable of withstanding significant damage while dealing out fearsome attacks. The Bandit Lord is particularly effective in a group, using its ability to gain advantage on attacks when allies are nearby, making it dangerous both as a front-line fighter and a tactical commander. Although it possesses good strength and dexterity, its moderate wisdom and charisma suggest that it might not excel in skills that require keen insight or persuasion. Notable for its brute strength and tactical acumen, it is capable of leading other bandits into battle effectively, though it may struggle against well-coordinated and heavily armored opponents.</summary>
 
 <detail>

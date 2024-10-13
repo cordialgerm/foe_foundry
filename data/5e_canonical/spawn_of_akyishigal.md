@@ -1,6 +1,8 @@
 <MonsterName/>Spawn of Akyishigal</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Spawn of Akyishigal is a medium-sized chaotic evil fiend, embodying a mixture of cunning and malice. With a solid armor class of 15 and a hefty pool of hit points totaling 119, it presents a formidable challenge for adventurers. This creature boasts impressive physical and magical resilience, with notable damage immunities and resistances. The Spawn excels in manipulating the battlefield through its command over lesser beasts, making it particularly dangerous in environments teeming with insectoid life forms. While its physical attacks can inflict significant damage, its true strength lies in its ability to summon swarms of allies and its inherent magic resistance, which gives it an edge in confronting spellcasters. However, its Intelligence is average, which could limit its strategic options in more cerebral contests.</summary>
 
 <detail>

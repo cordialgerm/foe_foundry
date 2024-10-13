@@ -1,6 +1,8 @@
 <MonsterName/>Bookkeeper</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>5</HP>
 <summary>The Bookkeeper is a diminutive construct that plays a unique role in a Dungeons & Dragons campaign. Its primary purpose revolves around guarding and maintaining a specific book, making it a protector of knowledge and information. It boasts a flying speed and is exceptionally stealthy, which allows it to navigate through its environment with ease. However, despite its advantages, the Bookkeeper is quite fragile, having low hit points, which makes it susceptible to damage if not properly protected by its creator. Additionally, while it cannot speak, it possesses a surprising level of skill in perception and stealth. The Bookkeeper's abilities center around its connection to the book it safeguards, enhancing its combat effectiveness while near it.</summary>
 
 <detail>

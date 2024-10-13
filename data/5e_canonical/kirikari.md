@@ -1,6 +1,8 @@
 <MonsterName/>Kirikari</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Kirikari is a formidable Huge Monstrosity that operates without alignment, making it an unpredictable threat. With a robust armor class of 16 provided by its natural armor, it boasts significant resilience with 142 hit points, equating to an impressive 15d12+45. As a Challenge Rating 9 creature, it yields 5,000 XP upon defeat, marking it as a substantial encounter for adventurers. The Kirikari is particularly dangerous with its high Strength and Dexterity, allowing it to effectively grapple and maneuver with agility. However, its intelligence is notably low, which limits its tactical options in combat. It is immune to acid and poison damage, and it cannot be poisoned, making it tough against certain types of attacks. Despite these strengths, it lacks any languages, which may limit its interactions outside of combat.</summary>
 
 <detail>

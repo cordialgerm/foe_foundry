@@ -1,6 +1,8 @@
 <MonsterName/>Herald of Darkness</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>105</HP>
 <summary>The Herald of Darkness is a formidable Large Fiend that embodies malevolence and cunning. With a neutral evil alignment, it revels in causing fear and chaos, making it a dangerous adversary in combat scenarios. Its strengths lie in its high physical and magical defenses, notably its immunity to necrotic and poison damage, alongside various resistances, rendering it durable in battle. Offensively, it can deal substantial necrotic damage while also possessing the ability to paralyze its foes, showcasing its control over the battlefield. However, it is relatively vulnerable to radiant damage and any abilities that exploit its lower Intelligence. In summary, the Herald of Darkness stands as a threatening creature that combines resilience with potent offensive capabilities.</summary>
 
 <detail>

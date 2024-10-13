@@ -1,6 +1,8 @@
 <MonsterName/>Harefolk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>18</HP>
 <summary>The Harefolk is a small humanoid creature known for its chaotic good alignment. Often depicted as clever and agile, the Harefolk excels in stealthy maneuvers and perceptive traits, making it a valuable ally in exploration and subterfuge. With a challenge rating of 1/4, it is not particularly powerful in direct combat but can prove challenging due to its cunning and evasive abilities. While it has a decent armor class of 13, its hit points at 18 mean it can be vulnerable in prolonged confrontations. However, its unique abilities and advantages in specific situations enhance its effectiveness in encounters, making it a versatile creature in a party.</summary>
 
 <detail>

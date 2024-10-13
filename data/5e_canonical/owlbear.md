@@ -1,7 +1,9 @@
 <MonsterName/>Owlbear</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
 <Subtype/>animal</Subtype>
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>59</HP>
 <summary>An Owlbear is a fearsome hybrid creature, combining the body of a bear with the head and beak of a giant owl. Owlbears are incredibly aggressive and territorial, attacking anything that comes near their lairs. They are known for their brute strength, sharp claws, and crushing beak, which make them deadly opponents in battle. Found in forests or caves, Owlbears are solitary hunters that use both their keen senses and powerful physical attacks to take down prey. They are notoriously difficult to tame, but some adventurers attempt to use them as mounts or guardians.</summary>
 
 <summary>The owlbear is a large monstrosity that presents a formidable challenge in combat with its exceptional strength and decent hit points. It serves as a fierce guardian of its territory, leveraging its powerful melee attacks and sharp senses to hunt down unsuspecting prey. With a Challenge Rating of 3, the owlbear is an appropriate foe for mid-level adventurers, possibly serving as an encounter in a wooded area or near a beast-inhabited region. While it boasts good offensive capabilities and strong physical attributes, the owlbear's poor intelligence and charisma render it less effective in social interactions and strategic thinking.</summary>

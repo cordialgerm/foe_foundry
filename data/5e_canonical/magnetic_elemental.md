@@ -1,6 +1,8 @@
 <MonsterName/>Magnetic Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Magnetic Elemental is a powerful large creature of elemental origin with a neutral alignment. It serves as a formidable opponent in combat, leveraging its magnetic powers to manipulate metal objects and significantly hinder armored foes. With a decent armor class of 16 and a substantial pool of hit points totaling 95, this elemental can sustain itself in engagements. It excels in melee combat with a good attack modifier, particularly against those wearing metal armor. However, its intelligence, wisdom, and charisma are notably low, limiting its effectiveness in social interactions and tactics that might require mental acuity. Key traits such as damage immunities to lightning and poison, along with various condition immunities, bolster its resilience in battle. While it deals substantial bludgeoning damage through its slam attacks, its true potential lies in its ability to control the battlefield with magnetism.</summary>
 
 <detail>

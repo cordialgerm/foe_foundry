@@ -1,6 +1,8 @@
 <MonsterName/>Khodumodumo</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>14</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>186</HP>
 <summary>The Khodumodumo is a gargantuan monstrosity that serves as a formidable foe in any encounter. This creature is characterized by its impressive stature, possessing an Armor Class of 18 due to its natural armor, and a substantial pool of Hit Points amounting to 186, calculated from 12d20+60. With a Challenge Rating of 14, it poses a significant threat, as it can dish out high damage while having good resistance to many forms of attacks. Its physical attributes are notably strong, with a Strength of 23 (+6), a Dexterity of 20 (+5), and a Constitution of 21 (+5), which translates to exceptional combat effectiveness. However, its Intelligence, Charisma, and Wisdom scores are quite low, hindering its capabilities in social or strategic interactions.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Snake, Giant Constrictor</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>63</HP>
 <summary>The Giant Constrictor Snake is a massive beast known for its powerful constricting capabilities and effective hunting skills. It has a substantial armor class of 12, providing it with decent protection against attacks, and considerable hit points totaling 63, allowing it to withstand a good amount of damage in combat. With a challenge rating of 2, it presents a reasonable threat to parties of lower levels. The snake possesses a strong Strength of +3 and a respectable Dexterity of +2, making its physical attacks quite formidable. However, it has very weak Intelligence, Charisma, and Wisdom scores, meaning it lacks special awareness or social effectiveness. Its notable actions include the ability to grapple and control opponents, particularly through its constricting attack, which can severely hinder foes.</summary>
 
 <detail>

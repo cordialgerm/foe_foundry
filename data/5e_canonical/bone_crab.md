@@ -1,6 +1,8 @@
 <MonsterName/>Bone Crab</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>33</HP>
 <summary>The Bone Crab is a small, unaligned beast with a unique ability set that makes it an interesting encounter in any setting. With an Armor Class of 13, it possesses decent defense courtesy of its natural armor. It has 33 hit points, derived from rolling 6d6 and adding 12, which provides it with a moderate buffer against damage. This creature is characterized by its speed of 10 feet, limiting its mobility but allowing it to effectively utilize its abilities in the right environment. The Bone Crab has a Challenge Rating of 1/2, making it a suitable opponent for low-level adventurers, providing 100 experience points upon defeat.</summary>
 
 <detail>

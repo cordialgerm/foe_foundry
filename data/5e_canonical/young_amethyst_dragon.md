@@ -1,6 +1,8 @@
 <MonsterName/>Young Amethyst Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>17</AC>
+<HP/>133</HP>
 <summary>The Young Amethyst Dragon is a formidable and intelligent creature with both physical prowess and potent psionic abilities. This Large Dragon has an armor class of 17, granting it good protection in combat. With 133 hit points, it can withstand a significant amount of damage before falling. Its movement capabilities are exceptional, allowing it to walk at 40 feet, burrow 20 feet, and fly at 60 feet, providing versatility in navigating various terrains. The dragon has a challenge rating of 9, indicating it is a powerful adversary, suitable for parties of mid-level adventurers. Its strengths lie in its innate spellcasting, strong physical attacks, and unique psionic abilities, while its weaknesses include vulnerabilities to certain spells or abilities that can exploit its character traits. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Alpha Yek</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>129</HP>
 <summary>The Alpha Yek is a medium-sized fiend characterized by its chaotic evil nature. This creature plays a role as a formidable combatant within a group, capitalizing on its special abilities to enhance its effectiveness in battle. The Alpha Yek boasts a solid Armor Class of 16, coupled with 129 hit points, making it quite durable in confrontations. Provided with exceptional mobility, it can climb and walk at a speed of 30 feet, allowing it to maneuver adeptly in various terrains. Its Challenge Rating of 9 indicates that it poses a significant threat to adventurers, able to dish out damage while resisting many common attack types. On the downside, while it has good physical attributes and resistance against many damage types, the Alpha Yek can be vulnerable to magical effects if it fails its saving throws.</summary>
 
 <detail>

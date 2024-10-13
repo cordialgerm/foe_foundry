@@ -1,6 +1,8 @@
 <MonsterName/>Crystallite</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Crystallite is a formidable Large Giant that embodies a unique combination of defensive and offensive capabilities, serving as a challenging opponent for adventurers. With a lawful neutral alignment, it carries out its actions with purpose and reasoning rather than emotion. The creature has a robust armor class of 15 due to its natural armor, and it presents a substantial amount of hit points at 90, which combines to make it a tough adversary in combat. Its challenge rating of 4 indicates that it provides a moderate challenge for a party of lower-level characters. Notably, the Crystallite exhibits immunities to poison damage and conditions, alongside resistances to cold and fire, which can significantly affect how players strategize against it.</summary>
 
 <detail>

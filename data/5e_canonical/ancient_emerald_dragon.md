@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Emerald Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>20</AC>
+<HP/>346</HP>
 <summary>The Ancient Emerald Dragon is a formidable gargantuan creature known for its dominating presence and extraordinary abilities. Occupying the 24th Challenge Rating tier, it boasts a substantial pool of hit points, high offensive capabilities, and devastating psionic powers. With an exceptional Armor Class of 20 and multiple actions per turn, it poses a significant threat to adventurers. However, its strengths are offset by its limited physical space for mobility and potential vulnerabilities to certain magical influences. Notably, it can manipulate both magical and psionic forces, making it a versatile adversary in combat.</summary>
 
 <detail>

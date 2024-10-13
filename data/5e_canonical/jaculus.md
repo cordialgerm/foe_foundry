@@ -1,6 +1,8 @@
 <MonsterName/>Jaculus</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Jaculus is a small, neutral evil dragon known for its agility and cunning nature. With a challenging rating of 3, it is a formidable opponent for lower-level adventurers. Its strengths lie in its high Dexterity and Constitution, which not only enhance its defenses but also improve its offensive capabilities. The Jaculus has a decent Armor Class of 15, alongside 65 hit points, making it resilient in combat. However, its lack of significant ranged attacks and reliance on tactical melee strikes are notable weaknesses. The Jaculus is designed to utilize speed and precision rather than brute strength, allowing it to outmaneuver enemies while dealing moderate damage.</summary>
 
 <detail>

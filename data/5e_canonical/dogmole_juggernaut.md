@@ -1,6 +1,8 @@
 <MonsterName/>Dogmole Juggernaut</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Dogmole Juggernaut is a large monstrosity that is unaligned and embodies a fearsome presence on the battlefield. With a robust hit point pool and a strong suite of abilities, this creature excels in physical confrontations, particularly against smaller enemies. Its burrowing ability allows it to become a threat from unexpected angles, while its relentless nature ensures it can withstand significant damage before falling. The Dogmole Juggernaut's strengths lie in its formidable strength and resilience, but it has weaknesses related to its relatively low Dexterity and lack of intelligence. </summary>
 
 <detail>

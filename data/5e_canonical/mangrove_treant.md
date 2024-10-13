@@ -1,6 +1,8 @@
 <MonsterName/>Mangrove Treant</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Mangrove Treant is a huge plant creature that embodies the essence of nature. It serves as a protector of its environment, often found in coastal regions or mangrove forests. With a natural armor class of 15 and 136 hit points, it demonstrates considerable durability in combat, making it a formidable opponent. The Mangrove Treant has a challenge rating of 7, indicating that it poses a serious threat to adventurers. Its primary strengths lie in its high strength score of 20 and good constitution score of 19, which enhance its physical resilience and combat effectiveness. However, it has a poor dexterity score of 7, rendering it less agile and making it more susceptible to effects that rely on agility. The treant's ability to manipulate its environment, summon mosquitos, and communicate with nature are notable aspects that can significantly impact gameplay by providing strategic advantages.</summary>
 
 <detail>

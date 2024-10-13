@@ -1,6 +1,8 @@
 <MonsterName/>Ettin</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>85</HP>
 <summary>An Ettin is a massive, two-headed giant with a brutish and violent nature. Each of its heads is independent, often arguing with the other, though this does not stop them from working together in battle. Ettins are savage creatures, wielding large, crude weapons such as clubs or tree trunks to smash their enemies. They live in isolated areas, such as caves or ruins, and are highly territorial, attacking any intruders without hesitation. Their dual heads give them an advantage in combat, allowing them to guard against attacks from multiple directions at once.</summary>
 
 <summary>The Ettin is a Large Giant known for its brute strength and unique two-headed physiology. With a challenge rating of 4, it possesses a considerable amount of hit points at 85, making it a formidable opponent in combat. The Ettin's primary strengths lie in its high Strength score of 20, yielding a very good +5 modifier, along with exceptional endurances due to a Constitution score of 16, providing it with a +3 modifier. However, it suffers from low Dexterity (8, -1 modifier), resulting in poor agility and speed when it comes to dodging attacks. One of the notable features of the Ettin is its two heads, which grant it various advantages in perception and saving throws, making it difficult to incapacitate. </summary>

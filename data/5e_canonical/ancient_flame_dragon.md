@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Flame Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>518</HP>
 <summary>The Ancient Flame Dragon is a formidable and chaotic evil creature, classified as a Gargantuan Dragon with a significant Challenge Rating of 23. This dragon commands respect and fear, boasting a high Armor Class of 22 due to its natural armor and a staggering 518 hit points, making it a tenacious adversary in combat. It moves swiftly for a creature of its size, with a walking speed of 80 feet and a flying speed of 40 feet. The Ancient Flame Dragon excels in both offense and defense, capable of inflicting substantial fire damage while simultaneously resisting most fire elements due to its unique abilities. Despite being a powerhouse in combat, its enormous size can sometimes make it less agile, and players may need to devise clever tactics to overcome its strengths, particularly its high Constitution and Charisma scores, which enhance its durability and intimidating presence.</summary>
 
 <detail>

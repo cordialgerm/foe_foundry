@@ -1,6 +1,8 @@
 <MonsterName/>Lava Keeper</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>18</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>276</HP>
 <summary>The Lava Keeper is a formidable Huge elemental that embodies the essence of fire and earth, standing as a guardian of volcanic landscapes. Its role in combat is as a powerful adversary that can deal significant damage with both melee and ranged attacks, while also using environmental tactics to control the battlefield. With a Challenge Rating of 18, it presents a serious threat to adventurers, leveraging high hit points, strong physical attacks, and a suite of innate spellcasting abilities. Its natural armor makes it difficult to hit, while its immunities to fire and poison grant it resilience against many typical attacks. However, its weaknesses lie in its moderate Dexterity, making it less agile compared to other creatures, which could be exploited by nimble opponents.</summary>
 
 <detail>

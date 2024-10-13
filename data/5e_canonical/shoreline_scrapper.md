@@ -1,6 +1,8 @@
 <MonsterName/>Shoreline Scrapper</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Shoreline Scrapper is a large, unaligned beast that thrives in coastal environments. With a solid armor class of 16 due to its natural armor and a respectable pool of hit points totaling 93, this creature presents a formidable challenge. It has a challenge rating of 4, making it a suitable adversary for mid-level adventurers seeking a robust encounter. The scrapper is designed to excel in both melee and control—utilizing its magnetic shell to hinder enemies and immobilize them while delivering strong claw attacks. While its physical attributes are commendable, its intelligence and charisma values are very low, indicating that it lacks any major capabilities in terms of strategy or social interaction.</summary>
 
 <detail>

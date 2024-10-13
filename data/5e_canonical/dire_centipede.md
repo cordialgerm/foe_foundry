@@ -1,6 +1,8 @@
 <MonsterName/>Dire Centipede</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>The Dire Centipede is a large beast that poses a significant threat with its venomous bite and ability to navigate difficult terrain with ease. It has an Armor Class of 13, which provides it with moderate protection in combat. With 45 hit points, derived from rolling six ten-sided dice plus an additional twelve points, it can endure a fair amount of damage, making it a durable opponent. The creature has a Challenge Rating of 2, meaning it can provide a reasonable challenge for a group of low to mid-level adventurers, yielding 450 experience points upon defeat. Its strengths lie in its mobility, with a walking and climbing speed of 30 feet, and the venom it delivers can severely debilitate foes. However, its Intelligence score of 1 indicates low cognitive ability, which affects its tactical awareness in combat situations.</summary>
 
 <detail>

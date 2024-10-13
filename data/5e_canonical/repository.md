@@ -1,6 +1,8 @@
 <MonsterName/>Repository</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Repository is a formidable Medium Construct that operates without alignment, presenting a challenge for any adventuring party that encounters it. With an Armor Class of 15 and 110 hit points, it stands as a reasonably tough opponent, especially for its Challenge Rating of 7, translating to 2,900 experience points. The Repository possesses impressive physical attributes, particularly its Strength of 19, indicating a very good melee attack potential, and a Constitution score of 18, which provides exceptional durability. The creature has some notable advantages in combat, including damage immunities and resistances, but it also has weaknesses rooted in its lack of certain defenses and its limited capabilities against magic.</summary>
 
 <detail>

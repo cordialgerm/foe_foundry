@@ -1,6 +1,8 @@
 <MonsterName/>Imperial Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Imperial Dragon Wyrmling is a formidable creature often encountered in the realms of fantasy and adventure. This Medium-sized dragon embodies neutrality and possesses a strong combat presence, evidenced by its exceptional strength and resilience. With an Armor Class of 17, it is well-defended thanks to its natural armor, and its 60 hit points make it a durable foe in battle. The dragon's flight speed of 60 feet, combined with its swimming and walking speeds, allows for versatile movement in various environments. While it has solid offensive capabilities, particularly with its lightning breath, it has weaknesses in areas such as Dexterity, where it has only an average score. Its abilities include resistance to lightning and thunder damage, making it a challenging opponent for adventurers unprepared for elemental attacks.</summary>
 
 <detail>

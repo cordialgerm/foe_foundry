@@ -1,6 +1,8 @@
 <MonsterName/>Mandriano</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Mandriano is a large, lawful evil plant creature known for its formidable combat abilities and dark powers. With a Challenge Rating of 5, it possesses a strong mix of offensive and defensive capabilities. Its natural armor provides a decent Armor Class of 13, and it boasts 60 hit points, making it durable in battle. The Mandriano excels in grappling and draining the life force from its enemies, using its exceptional Strength score and ability to potentially turn defeated foes into undead minions. However, it is notably vulnerable to fire damage, which can exploit its weaknesses. Furthermore, its low Dexterity impacts its agility, making it relatively less effective at avoiding attacks.</summary>
 
 <detail>

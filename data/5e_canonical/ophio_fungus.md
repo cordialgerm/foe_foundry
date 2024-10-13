@@ -1,6 +1,8 @@
 <MonsterName/>Ophio Fungus</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Ophio Fungus is a large and powerful plant creature that poses a unique threat to adventurers in its vicinity. As a plant unaligned in nature, it does not follow moral guidance, making it unpredictable in its actions. With an Armor Class of 14 and 119 hit points, it is reasonably durable in combat, although its movement speed is limited to just 10 feet. The fungus is particularly effective at charming foes and releasing spores to inflict damage, making its strategy revolve around control and debilitation rather than direct confrontation. Its damage vulnerabilities to fire and resistance to common physical attacks make it a tricky opponent to engage in melee. Characters engaging with this creature should be wary of its potent special abilities and the effects of its spores.</summary>
 
 <detail>

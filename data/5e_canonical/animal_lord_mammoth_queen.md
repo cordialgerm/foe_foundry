@@ -1,6 +1,8 @@
 <MonsterName/>Animal Lord, Mammoth Queen</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>18</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>250</HP>
 <summary>The Animal Lord, also known as the Mammoth Queen, is a formidable Huge fey creature that embodies chaotic goodness. With an impressive Armor Class of 20 and a substantial 250 hit points from 20d12+120, she relies on her massive size and power to dominate the battlefield. The Mammoth Queen boasts exceptional physical strength, with a Strength score of 25 (+7) and Constitution score of 22 (+6), which allows her to deliver massive damage with her attacks. However, her Dexterity is average at 10 (+0), which means she may struggle with speed and flexibility. With a Challenge Rating of 18, she represents a significant threat to adventurers and can impact encounters substantially. Notably, her ability to rejuvenate and her magic resistance make her a challenging opponent that requires strategic thinking to defeat.</summary>
 
 <detail>

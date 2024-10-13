@@ -1,6 +1,8 @@
 <MonsterName/>Bloodsapper</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Bloodsapper is a medium-sized aberration characterized by its chaotic evil nature, making it a vicious and cunning adversary. With a challenge rating of 3, it poses a moderate threat to adventurers, presenting both physical and magical dangers. Its strengths lie in its capacity for mobility, with a walking speed of 40 feet and climbing speed of 20 feet, as well as its impressive hit points of 90, granting it good durability in combat. The creature excels in tracking wounded foes using its remarkable sense of blood. However, it has low intelligence and charisma, making it somewhat limited in magical interaction and strategy beyond its instincts. </summary>
 
 <detail>

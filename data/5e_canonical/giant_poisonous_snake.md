@@ -1,6 +1,8 @@
 <MonsterName/>Giant Poisonous Snake</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>11</HP>
 <summary>The Giant Poisonous Snake is a massive serpent, easily over 20 feet long, with venomous fangs that can deliver a lethal bite. Found in jungles, swamps, or other dense wilderness areas, these snakes are expert ambush predators, lying in wait for prey before striking with incredible speed. Their venom can paralyze or kill small to medium-sized creatures in moments. In combat, Giant Poisonous Snakes rely on their venom and constricting abilities to subdue enemies. They are highly adaptable and often blend into their surroundings, making them difficult to spot until it's too late.</summary>
 
 <summary>The Giant Poisonous Snake is a medium-sized beast notable for its venomous bite, making it a dangerous encounter for low-level adventurers. It boasts a good Dexterity score of 16, which gives it a +3 modifier, allowing it to excel in avoiding attacks and executing swift movements both on land and in water, with a speed of 30 feet for each. With an Armor Class of 13, it is moderately difficult to hit. However, its hit points are low at 11, making it susceptible to damage. The snake is designed for ambush tactics, utilizing its blindsight to detect prey within 10 feet and employing its bite attack to inflict poison damage, posing a significant threat if a character fails to resist the effects. The Challenge Rating of 1/4 indicates that it is a relatively weak opponent but can still be deadly if the encounter is not handled carefully.</summary>

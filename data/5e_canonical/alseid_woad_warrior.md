@@ -1,6 +1,8 @@
 <MonsterName/>Alseid, Woad Warrior</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>55</HP>
 <summary>The Alseid, a Woad Warrior, is a medium-sized chaotic neutral monstrosity known for its affinity with nature and combat capabilities. With an armor class of 14 and a solid hit point total of 55, the Alseid presents a formidable challenge to adventurers, boasting a good balance of defense and offense. Its ability to move quickly, with a speed of 40 feet, allows it to reposition itself effectively in combat. The Challenge Rating of 2 suggests it is suitable for a party of low-level adventurers, providing a moderate threat. Notable strengths of the Alseid include its advantage on intimidation checks and saving throws against fear, along with its capabilities in forested environments, allowing it to navigate without leaving tracks. However, its lower intelligence makes it less effective at strategic thinking and problem-solving in scenarios requiring intellect.</summary>
 
 <detail>

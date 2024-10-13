@@ -1,6 +1,8 @@
 <MonsterName/>Vellso</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>120</HP>
 <summary>Vellso is a medium-sized chaotic evil fiend that poses a formidable threat to adventurers in combat. With a challenge rating of 7, it has a high level of durability backed by 120 hit points, due to its natural armor and robust constitution. Vellso is capable of climbing surfaces effortlessly and can attack rapidly with its powerful bite and claw strikes, making it a versatile opponent in various environments. It possesses several notable defenses, such as magic resistance and immunities to poison and necrotic damage, allowing it to withstand the magical assaults that adventurers often employ. However, it has low intelligence and charisma, which may limit its interactions and strategic planning outside of combat. </summary>
 
 <detail>

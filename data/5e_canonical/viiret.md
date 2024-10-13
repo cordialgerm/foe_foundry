@@ -1,6 +1,8 @@
 <MonsterName/>Viiret</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Viiret is a large, unaligned plant creature that serves as a formidable opponent in combat, primarily due to its unique abilities and high resilience. With an Armor Class of 13, it is moderately difficult to hit, while its 85 hit points grant it a good survival threshold during encounters. The Viiret excels in combat due to its multi-attack capability, allowing it to damage enemies effectively through both biting and vine attacks. Although it possesses low Dexterity and Intelligence, its high Constitution enhances its survivability. The Viiret has specific vulnerabilities to cold damage, but it is immune to necrotic and poison damage, alongside several condition immunities, including being blinded and frightened. This makes it a resilient adversary in various combat scenarios. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Tophet</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Tophet is a formidable Huge Construct with a neutral evil alignment. Designed as a vessel of destruction, it stands out in combat due to its high Armor Class of 16 and a significant pool of hit points totaling 161. This creature excels in both offensive and defensive capabilities, making it a challenging opponent for adventurers. Its most notable strengths are its fire resistance and immunity to numerous conditions such as being charmed or frightened. However, its low Intelligence score of 6 indicates a lack of strategic thinking and adaptability in battles. Players must be cautious when engaging a Tophet, as its devastating fire attacks can quickly turn the tide of combat.</summary>
 
 <detail>

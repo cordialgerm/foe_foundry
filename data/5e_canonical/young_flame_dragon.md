@@ -1,6 +1,8 @@
 <MonsterName/>Young Flame Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>8</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>190</HP>
 <summary>The Young Flame Dragon is a formidable creature in the Dungeons & Dragons universe, embodying the chaotic and malevolent nature typical of dragons. With a large and imposing presence, it serves as an exceptional adversary in combat, offering a blend of physical attacks and devastating fire-based abilities. Its notable immunity to fire damage, along with its exceptional speed and multiple attack options, make it a compelling opponent. However, despite its strengths, it is vulnerable to cold damage and relies on positioning due to its relatively high Armor Class. The creature can challenge parties with its potent breath attack and its ability to inflict damage simply by being engaged in melee.</summary>
 
 <detail>

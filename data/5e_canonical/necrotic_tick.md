@@ -1,6 +1,8 @@
 <MonsterName/>Necrotic Tick</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>3</HP>
 <summary>The Necrotic Tick is a tiny, unaligned beast that poses a unique threat due to its ability to drain life and manipulate its host. Although it has low health and damage potential, its nefarious abilities allow it to linger on a host, causing significant harm over time. The Necrotic Tick's outstanding strength lies in its ability to regenerate the host's health at the cost of necrotic damage, and its capacity to incite aggression toward other living beings makes it a considerable tactical challenge for adventurers. Its main weaknesses are its low armor class and frail constitution, making it vulnerable to attacks if noticed early.</summary>
 
 <detail>

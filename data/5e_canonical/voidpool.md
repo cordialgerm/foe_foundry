@@ -1,6 +1,8 @@
 <MonsterName/>Voidpool</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>5</CR>
+<AC/>8</AC>
+<HP/>112</HP>
 <summary>The Voidpool is a large ooze creature that embodies a dark, formless essence tied to the Void. With a challenge rating of 5, it presents a considerable threat through its unique abilities and substantial durability, boasting 112 hit points. While it has a low armor class of 8, its ability to avoid certain damage types makes it resilient in specific encounters. The Voidpool’s notable weaknesses lie in its vulnerability to radiant damage, and it lacks intelligence, making it less capable of strategic thinking. This creature serves a role as both a grappler in combat and a means of transporting characters to the Void, adding a layer of complexity to engagements. Its combination of abilities allows it to manipulate opponents while maintaining a persistent threat through its physical attacks.</summary>
 
 <detail>

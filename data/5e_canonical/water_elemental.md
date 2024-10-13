@@ -1,6 +1,8 @@
 <MonsterName/>Water Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>114</HP>
 <summary>A Water Elemental is a living embodiment of water, summoned from the Elemental Plane of Water. Its fluid form can shift and flow, taking the shape of towering waves or crashing torrents. Water Elementals are highly versatile, able to envelop and drown their enemies, battering them with crushing force. They are often summoned by spellcasters to serve as guardians or to wreak havoc in battle. Water Elementals are almost impossible to injure with conventional weapons, as they can reform and regenerate from most physical damage. They are commonly found in aquatic environments or guarding sacred bodies of water.</summary>
 
 <summary>The Water Elemental is a large creature of the elemental type, embodying the essence of water. Its primary role in combat is that of a devastating melee fighter, utilizing its strength and unique abilities to control the battlefield. With a relatively high Armor Class of 14 and a substantial pool of Hit Points totaling 114, it can withstand considerable damage. Its speed is impressive as well, with a walking speed of 30 feet and a swimming speed of 90 feet, giving it exceptional mobility in aquatic environments. However, despite its formidable presence, it possesses low intelligence and charisma, making it relatively simple-minded and less effective in social interactions. The Water Elemental is known for its damage immunities and resistances, which allow it to shrug off many attacks, but it can be hindered by cold damage.</summary>

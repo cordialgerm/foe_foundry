@@ -1,6 +1,8 @@
 <MonsterName/>Redcap</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>120</HP>
 <summary>The Redcap is a dangerous and malevolent fey creature, known for its insatiable thirst for blood and its resilience in combat. This Medium-sized, neutral evil entity excels in dealing damage and incapacitating its foes with its unique abilities and varied attacks. It possesses a formidable combination of strength and constitution, granting it solid health and combat prowess. However, the Redcap's reliance on soaking its cap in blood to maintain its vitality introduces a unique weakness, necessitating that it engage in potentially dangerous bloodletting to avoid ailments. With a challenge rating of 6, it poses a moderate to high threat to adventurers who encounter it.</summary>
 
 <detail>

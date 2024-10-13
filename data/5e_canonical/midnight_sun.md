@@ -1,6 +1,8 @@
 <MonsterName/>Midnight Sun</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Midnight Sun is a large aberration with a neutral evil alignment, exhibiting unique abilities tied to its manipulation of light and darkness. It boasts a high Armor Class of 16 due to its natural armor and has significant hit points at 136, making it a resilient foe. With a flying speed of 60 feet, the Midnight Sun can navigate the battlefield effectively. The creature's challenge rating of 7 suggests that it poses a moderate to significant threat to adventurers, yielding an experience reward of 2,900 XP when defeated. Notably, the Midnight Sun's power lies in its ability to change forms based on lighting conditions, altering its damage type and immunities, making it both versatile and difficult to combat.</summary>
 
 <detail>

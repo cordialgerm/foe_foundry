@@ -1,6 +1,8 @@
 <MonsterName/>Giant Mole Lizard</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Giant Mole Lizard is a formidable creature in the realm of Dungeons & Dragons, classified as a large unaligned beast. It possesses a sturdy natural armor that grants it an Armor Class of 14. With a significant pool of 75 hit points, its resilience in battles is commendable, allowing it to endure multiple strikes from adventurers. The Giant Mole Lizard excels in melee combat, particularly through its Multiattack feature, which enhances its offensive capabilities. However, its low Dexterity score means it is less effective at evading attacks and moving rapidly in combat, which can be seen as a weakness. Overall, this creature combines raw power with unique abilities to challenge adventurers, especially in environments where its burrowing abilities can be utilized.</summary>
 
 <detail>

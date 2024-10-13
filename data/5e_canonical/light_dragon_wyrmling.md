@@ -1,6 +1,8 @@
 <MonsterName/>Light Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>39</HP>
 <summary>The Light Dragon Wyrmling is a medium-sized dragon with a neutral good alignment, known for its benevolent nature and strong affinity for radiant energy. With an Armor Class of 13, it has a moderate level of defense, bolstered by its natural armor. It boasts 39 hit points that are calculated from rolling six eight-sided dice and adding twelve, making it relatively resilient. The creature can fly at a speed of 60 feet and walk at 30 feet, allowing it to maneuver effectively in both aerial and ground combat scenarios. Its challenge rating of 2 indicates that it presents a moderate challenge, rewarding players with 450 experience points upon defeat.</summary>
 
 <detail>

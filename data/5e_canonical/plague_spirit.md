@@ -1,6 +1,8 @@
 <MonsterName/>Plague Spirit</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>14</AC>
+<HP/>150</HP>
 <summary>The Plague Spirit is a formidable fey creature that embodies the essence of decay and despair. With a medium size and unaligned nature, it operates with a powerful presence on the battlefield. This spirit boasts high Dexterity and Wisdom, making it both agile and perceptive in its maneuvers. It possesses strong defenses marked by its decent Armor Class, substantial Hit Points, and numerous immunities to damage and conditions. Its challenge rating of 9 indicates it is designed to pose a significant threat to adventurers. The Plague Spirit's strengths lie in its ability to weaken foes and inflict ongoing effects that can devastate an unsuspecting party. However, it is somewhat hindered by its low Intelligence and lack of verbal communication, limiting its tactical options.</summary>
 
 <detail>

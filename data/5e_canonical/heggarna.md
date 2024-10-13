@@ -1,6 +1,8 @@
 <MonsterName/>Heggarna</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>40</HP>
 <summary>Heggarna is a tiny aberration characterized by its neutral evil disposition. This creature operates primarily in the shadows, using its stealth and ability to instill nightmares to undermine its foes. Heggarna excels at deception, utilizing its illusory appearance to masquerade as a harmless cat, allowing it to get close to unsuspecting prey. It has notable strengths in Dexterity and Charisma, making it a good infiltrator and manipulator. However, its low Strength and poor physical defenses make it vulnerable in direct combat. The combination of mind-affecting abilities and a knack for stealth makes Heggarna a formidable opponent in certain scenarios.</summary>
 
 <detail>

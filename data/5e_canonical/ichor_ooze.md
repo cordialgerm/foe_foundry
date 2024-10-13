@@ -1,6 +1,8 @@
 <MonsterName/>Ichor Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>2</CR>
+<AC/>8</AC>
+<HP/>39</HP>
 <summary>The Ichor Ooze is a Medium creature of the ooze type with a neutral evil alignment. Its unique combination of offensive capabilities, magical resistances, and movement traits positions it as a formidable foe for lower-level adventurers. The ooze boasts a decent set of hit points, making it moderately resilient in combat, though its Armor Class is quite low, rendering it easier to hit for characters with reasonable accuracy. With the ability to both damage opponents and heal itself through its Life Drain ability, the Ichor Ooze can prolong engagements effectively. However, its weak Dexterity means it is not particularly quick or evasive in battle.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ahu-Nixta Cataphract</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (clockwork armor)</AC>
+<HP/>135</HP>
 <summary>The Ahu-Nixta Cataphract is a large aberration that embodies a fusion of mechanical and biological elements, characterized by its neutral evil alignment. It possesses formidable strengths due to its high Armor Class of 17 and impressive Hit Points totaling 135, making it a resilient opponent in combat. The creature's dual capabilities for hovering, walking, and flying allow for great maneuverability on the battlefield. However, its Dexterity is quite low at -1, indicating a weakness in nimble movements. The Cataphract excels in intelligence-based spells, benefiting from a strong Intelligence score of 19 (+4) which enhances its spellcasting abilities and versatility in various encounters. Notably, its innate spellcasting allows it to cast spells at will, providing additional tactical options in battle. The Ahu-Nixta becomes increasingly vulnerable when its clockwork armor is breached, reducing its capabilities significantly.</summary>
 
 <detail>

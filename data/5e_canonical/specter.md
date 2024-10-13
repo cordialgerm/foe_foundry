@@ -1,6 +1,8 @@
 <MonsterName/>Specter</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>A Specter is a malevolent, incorporeal undead creature formed from the soul of a person who met a violent or tragic end. Specters are filled with hatred for the living, drifting through walls and objects as they seek to drain the life force from their victims. Their touch is cold and deadly, sapping the energy and vitality of those they encounter. Specters are immune to most physical attacks and are difficult to kill without magic. They are often bound to the location of their death or cursed to wander the world in eternal torment, feeding on the living.</summary>
 
 <summary>The Specter is a Medium undead creature often encountered in dark and foreboding locations. It serves as a haunting and dangerous apparition, capable of draining the life force of its victims. The Specter has a unique ability to move through solid objects, which makes it especially elusive and difficult to target. However, it struggles in sunlight, suffering penalties to its attacks and perception. With a challenge rating of 1, it poses a moderate threat to adventurers, but its life-draining capabilities can significantly weaken opponents if not handled carefully.</summary>

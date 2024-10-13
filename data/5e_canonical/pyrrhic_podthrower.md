@@ -1,6 +1,8 @@
 <MonsterName/>Pyrrhic Podthrower</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>7</CR>
+<AC/>13</AC>
+<HP/>127</HP>
 <summary>The Pyrrhic Podthrower is a small, unaligned plant creature that serves as a formidable adversary in combat thanks to its unique abilities and regenerative powers. With an armor class of 13 and a significant pool of 127 hit points, it can endure a considerable amount of damage before being dispatched. Its movement options include a walking speed of 20 feet and burrowing at the same pace, which grants it tactical versatility on the battlefield. Ideal for ambushes, the Podthrower leverages its False Appearance ability to blend in with its surroundings, making it hard to detect until it strikes. This creature’s primary strengths lie in its ability to inflict fire damage and regenerate health, while it is notably weak against necrotic damage, which halts its regeneration. Overall, it poses a considerable threat, especially in environments where it can utilize its burrowing and stealth abilities.</summary>
 
 <detail>

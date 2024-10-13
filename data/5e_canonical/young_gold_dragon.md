@@ -1,6 +1,8 @@
 <MonsterName/>Young Gold Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>178</HP>
 <summary>A Young Gold Dragon is a majestic and noble creature, its radiant golden scales shimmering with power and grace. Its breath weapon can unleash a devastating blast of fire, and its mere presence exudes an aura of peace and righteousness. Young Gold Dragons are protectors of the innocent and defenders against evil, often taking residence near sacred sites or secluded mountains where they guard against darkness. Though still growing in strength and wisdom, they are wise beyond their years and are known for their kindness and fairness. They despise cruelty and will intervene when they witness injustice.</summary>
 
 <summary>The Young Gold Dragon is a formidable creature known for its intelligence, charisma, and prowess in battle. As a large dragon of the gold variety, it exudes both strength and majesty. With an Armor Class of 18 and a substantial pool of Hit Points totaling 157, it can withstand considerable damage. The dragon possesses high Strength and Constitution scores, rated at 22 and 20 respectively, allowing it to deal significant damage and maintain its health in combat. Its Charisma of 20 makes it not only a strong combatant but also a persuasive figure in social situations. With a Challenge Rating of 10, this dragon presents a serious threat to adventurers aiming to confront it.</summary>

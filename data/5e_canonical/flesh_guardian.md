@@ -1,6 +1,8 @@
 <MonsterName/>Flesh Guardian</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>5</CR>
+<AC/>9</AC>
+<HP/>93</HP>
 <summary>The Flesh Guardian is a Medium Construct creature that serves as an animated protector, typically created by a skilled practitioner of magic. With a solid challenge rating of 5, it boasts a decent pool of hit points and impressive abilities that make it formidable in combat. Its strengths lie in its robust physical attacks, elemental resistance, and unique traits that allow it to absorb lightning damage, as well as its capacity to enter a berserk state. However, it suffers from a low armor class, making it vulnerable to attacks, and its movement capabilities are average. Overall, the Flesh Guardian is a powerful ally or adversary on the battlefield, leveraging its resilience and offensive potential to dominate encounters.</summary>
 
 <detail>

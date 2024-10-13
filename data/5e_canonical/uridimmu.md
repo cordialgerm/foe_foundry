@@ -1,6 +1,8 @@
 <MonsterName/>Uridimmu</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>14</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Uridimmu is a formidable large celestial creature embodying lawful goodness, making it a potent ally for those who adhere to similar principles. With a powerful presence in combat, it has high armor and hit points, allowing it to endure while dishing out significant damage. The Uridimmu excels in both melee and magical engagements, fortified with strong saving throws and resistances. Notably, its special abilities bolster allies and hinder foes, while its innate spellcasting provides versatile options for support and offense. Despite its strengths, it remains vulnerable to magical effects in specific circumstances, particularly in the presence of chaotic influences. </summary>
 
 <detail>

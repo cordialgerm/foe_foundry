@@ -1,6 +1,8 @@
 <MonsterName/>Bearfolk Thunderstomper</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>105</HP>
 <summary>The Bearfolk Thunderstomper is a medium-sized humanoid creature characterized by its chaotic neutral alignment. It has an impressive combination of durability and magical prowess, making it a challenging opponent in combat. Its strength is evident in its high physical attributes, particularly its strength score of 18, which allows for powerful melee attacks. With a decent armor class of 15 and a substantial pool of hit points totaling 105, the Thunderstomper can withstand considerable damage. Notably, its abilities allow it to manipulate sounds to confuse opponents, while its proficiency in spellcasting enhances its versatility on the battlefield. However, it possesses below-average intelligence, which might limit its strategic options.</summary>
 
 <detail>

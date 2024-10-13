@@ -1,6 +1,8 @@
 <MonsterName/>Inkling</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>10</HP>
 <summary>The Inkling is a tiny, unaligned construct character in Dungeons & Dragons 5e, known for its agility and magical capabilities. With an Armor Class of 12 and Hit Points of 10, it can withstand a few attacks but is quite fragile overall. Its unique abilities and spells make it a fascinating ally or adversary, particularly due to its capacity for stealth and magic resistance, which allows it to effectively evade magical attacks. Although its physical Strength is very low, it is not meant for melee combat; rather, it excels with its innate spellcasting and ability to learn new spells through careful study. As a construct, it does not exhibit classic living creature traits, which may leave it vulnerable to certain forms of attack. </summary>
 
 <detail>

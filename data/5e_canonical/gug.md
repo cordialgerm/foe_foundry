@@ -1,6 +1,8 @@
 <MonsterName/>Gug</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>230</HP>
 <summary>The Gug is a massive, menacing giant characterized by its immense strength and formidable presence on the battlefield. As a neutral evil creature, it thrives on chaos and destruction, often leveraging its physical prowess to overpower foes. With an Armor Class of 17, it withstands considerable damage while boasting a hefty pool of 230 hit points, making it a substantial challenge for adventurers. Its Strength is exceptionally high at 24, giving it a +7 modifier, which translates into formidable melee attack capabilities. However, its Dexterity score of 10 means it has only an average capacity for nimbleness, making it vulnerable to ranged attacks and agile adversaries. The Gug's challenge rating of 12 indicates that it is designed to provide a worthy encounter for a party of well-prepared adventurers.</summary>
 
 <detail>

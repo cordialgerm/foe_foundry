@@ -1,6 +1,8 @@
 <MonsterName/>Scitalis</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>58</HP>
 <summary>The Scitalis is a large, unaligned monstrosity that serves as a formidable presence in aquatic environments. With its natural armor providing a decent defense rating of 13, it possesses 58 hit points, allowing it to sustain a fair amount of damage in combat. The Scitalis's swimming speed of 30 feet makes it an exceptional predator in water, while its 20 feet walking speed offers moderate mobility on land. Rated with a challenge level of 2, it poses a reasonable threat to adventurers, granting 450 experience points upon defeat. The creature has a combination of strong physical attributes, particularly in Strength with a +3 modifier, and Wisdom with a +4 modifier, making it effective at perceiving its surroundings while being able to deliver dangerous attacks. However, its Intelligence and Charisma scores are notably low, suggesting a lack of cunning and social ability. </summary>
 
 <detail>

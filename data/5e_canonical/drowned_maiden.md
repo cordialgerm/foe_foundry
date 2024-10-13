@@ -1,6 +1,8 @@
 <MonsterName/>Drowned Maiden</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Drowned Maiden is a Medium-sized undead creature typically associated with themes of decay and malevolence. Possessing a neutral evil alignment, this creature is particularly deceptive and dangerous, using its magical abilities and physical prowess to manipulate and harm adventurers. With an armor class of 15 and 90 hit points, the Drowned Maiden is moderately durable in combat, presenting a potent threat particularly with its high charisma stat of 18, allowing it to excel in charm-related effects. However, its weakness lies in its vulnerability to damage from magical attacks and its inability to resist the most powerful forms of strength reduction attacks.</summary>
 
 <detail>

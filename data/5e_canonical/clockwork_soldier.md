@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Soldier</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Clockwork Soldier is a medium-sized construct that serves as a formidable combatant on the battlefield. With a solid armor class of 12 and 45 hit points, it possesses decent defensive capabilities, making it a resilient opponent. It is considered weak in terms of intelligence and charisma, showcased by its low scores in those attributes, but excels in Constitution with a score of 16, providing it with strong vitality. The Clockwork Soldier's challenge rating of 1 suggests it is suitable for low-level adventurers, providing a balance of threat without overwhelming their capabilities. Its primary strengths lie in damage immunities, special abilities such as Magic Resistance, and a unique Intimidation mechanic that scales with the presence of its allies, making it particularly effective in groups.</summary>
 
 <detail>

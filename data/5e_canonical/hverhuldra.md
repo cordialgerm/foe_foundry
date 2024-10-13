@@ -1,6 +1,8 @@
 <MonsterName/>Hverhuldra</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>120</HP>
 <summary>The Hverhuldra is a small fey creature that embodies a neutral good alignment, known for its enchanting presence and magical abilities. It possesses a bountiful amount of hit points, making it resilient in battles, and it is capable of both swimming and walking at a moderate speed. With a challenge rating of 6, the Hverhuldra presents a suitable challenge for parties of adventurers. Its strengths lie in its damage immunities to fire and poison, resistance to cold damage, and a range of abilities that allow it to manipulate water and protect allies. Weaknesses include vulnerability to cold damage, as its protective traits diminish when affected by it. Notably, the Hverhuldra can execute powerful spells and changes the battlefield with its abilities, making it an intriguing opponent or ally.</summary>
 
 <detail>

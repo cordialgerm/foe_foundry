@@ -1,6 +1,8 @@
 <MonsterName/>Young Spinosaurus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Young Spinosaurus is a formidable creature in the Dungeons & Dragons universe, categorized as a Huge Beast that remains unaligned. With a challenge rating of 5, it presents a significant threat to adventurers, boasting robust stats with high strength and constitution. The creature's natural armor grants it a good armor class of 14, complemented by impressive hit points totaling 105, which translates to a solid durability in combat. While its intelligence and charisma are very low, its physical prowess, especially its strength, makes it an imposing force. A key characteristic is its non-aggressive stance towards reptilian humanoids, making it a potentially valuable ally if handled correctly. However, it also has a limited speed of 30 feet for a creature of its size, which may play a factor in mobility during encounters.</summary>
 
 <detail>

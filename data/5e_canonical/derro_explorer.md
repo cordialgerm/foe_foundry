@@ -1,6 +1,8 @@
 <MonsterName/>Derro Explorer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (studded leather)</AC>
+<HP/>44</HP>
 <summary>The Derro Explorer is a cunning and agile small humanoid characterized by its non-good alignment. Situated at a challenge rating of 2, it presents a moderate threat to adventurers with a mix of combat abilities and mobility advantages in underground environments. The Derro Explorer is not particularly resilient in terms of hit points and overall defensive capabilities, but it compensates with its skills and specialized abilities, allowing it to navigate challenging terrains effortlessly and ambush enemies effectively. Its strong dexterity and decent constitution make it a formidable foe in combat, especially for unsuspecting humanoids.</summary>
 
 <detail>

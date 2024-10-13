@@ -1,6 +1,8 @@
 <MonsterName/>Frost-Afflicted</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>65</HP>
 <summary>The Frost-Afflicted is a medium-sized humanoid creature characterized by its chaotic neutral alignment. It offers a unique blend of offensive capabilities and unique abilities tied to cold damage, making it a formidable opponent in combat. The Frost-Afflicted boasts a moderate armor class of 13 when wearing leather armor and has a solid pool of hit points at 65, providing it with decent durability in encounters. Its challenge rating of 3 indicates that it poses a moderate threat to a party of adventurers. Notably, the Frost-Afflicted is immune to cold damage, making it resistant to effects that would otherwise hinder its performance. However, its average charisma and lack of strong defensive abilities outside of cold immunity may make it vulnerable to particular tactics and spells.</summary>
 
 <detail>

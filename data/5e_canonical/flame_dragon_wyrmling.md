@@ -1,6 +1,8 @@
 <MonsterName/>Flame Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Flame Dragon Wyrmling is a medium-sized dragon embodying chaotic evil tendencies. As a young dragon, it exhibits strong natural abilities and possesses a fierce temperament. With a high Armor Class of 17, it is relatively resilient in combat, bolstered by its 52 hit points, which allow it to withstand considerable damage. The creature is quite fast, able to walk 60 feet and fly at a speed of 30 feet, making it agile in battle. While it has a Challenge Rating of 2, making it a moderate threat to low-level adventurers, its use of fire-based attacks and powerful abilities can turn the tide of combat in its favor. The Flame Dragon Wyrmling has notable resistance to fire damage, making it particularly dangerous against foes reliant on physical attacks.</summary>
 
 <detail>

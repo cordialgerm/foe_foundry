@@ -1,6 +1,8 @@
 <MonsterName/>Vent Linnorm</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>16</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>247</HP>
 <summary>The Vent Linnorm is a gargantuan dragon characterized by its neutral evil alignment, making it a formidable foe in any encounter. With high armor class and significant hit points, it possesses exceptional durability, coupled with the ability to deal extensive damage through its multiattack capabilities. The linnorm also has unique abilities like Blood Scent, allowing it to track prey effectively. However, its low land speed may hinder it in certain terrains. This creature poses a significant challenge to adventurers, especially with its capacity to instill fear and control the battlefield through its special actions and effects.</summary>
 
 <detail>

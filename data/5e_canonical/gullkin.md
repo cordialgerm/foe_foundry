@@ -1,6 +1,8 @@
 <MonsterName/>Gullkin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Gullkin is a medium humanoid creature that embodies traits of both avian and aquatic life. It possesses an intriguing mix of mobility and resilience, with a challenge rating of 1/2, making it a suitable foe for low-level adventurers. The Gullkin's strengths lie in its dexterity and unique ability to fly and swim, granting it versatility in various environments. However, its weaknesses are apparent in its low armor class and hit points, making it somewhat vulnerable in prolonged combat. Notably, the Gullkin's ability to control the battlefield with its Tempest Breath can turn the tide in skirmishes, providing a distinct tactical advantage.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Alligator Turtle</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>11</HP>
 <summary>The Alligator Turtle is a medium-sized beast that serves as a capable aquatic creature in the Dungeons & Dragons universe. It is known for its strong natural armor, which provides a good Armor Class of 15, making it somewhat resilient in combat, particularly against physical attacks. With 11 hit points derived from rolling 2d8 plus an additional 2, it can withstand a few hits before going down. This creature possesses a decent movement speed, walking at 20 feet and swimming at 30 feet, allowing it to maneuver effectively in both water and on land. It has a Challenge Rating of 1/4, indicating that it is a relatively low-level adversary, suitable for inexperienced adventurers.</summary>
 
 <detail>

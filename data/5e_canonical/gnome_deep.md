@@ -1,7 +1,9 @@
 <MonsterName/>Gnome, Deep (Svirfneblin)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
 <Subtype/>gnome</Subtype>
+<CR/>1</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>16</HP>
 
 
 ---

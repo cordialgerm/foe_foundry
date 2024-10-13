@@ -1,6 +1,8 @@
 <MonsterName/>Deathsworn Elf</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (studded leather)</AC>
+<HP/>82</HP>
 <summary>The Deathsworn Elf is a Medium humanoid creature characterized by its chaotic neutral alignment. Serving primarily as a cunning archer, the Deathsworn Elf excels in ranged combat, utilizing its exceptional Dexterity to deliver deadly blows from a distance. With an Armor Class of 16, it is relatively difficult to hit, and its 82 hit points provide a decent buffer in battle. This creature possesses a Challenge Rating of 6, which makes it a formidable opponent that can challenge parties of lower to mid-level adventurers. However, its reliance on ranged attacks and lack of significant melee prowess may serve as weaknesses in close combat situations.</summary>
 
 <detail>

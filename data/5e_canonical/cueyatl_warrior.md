@@ -1,6 +1,8 @@
 <MonsterName/>Cueyatl Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>36</HP>
 <summary>The Cueyatl Warrior is a small, humanoid creature that embodies a lawful evil alignment. As a combatant, it possesses a combination of agility, survivability, and unique abilities that allow it to operate effectively both on land and in water. With a Challenge Rating of 1, it presents a moderate threat to adventurers, balancing its decent offensive capabilities with useful defensive traits. While its hit points and armor class provide a fair degree of durability, its primary strengths lie in its movement and combat versatility, particularly in jungle environments where it can thrive. However, being a small creature may limit its physical strength compared to larger opponents.</summary>
 
 <detail>

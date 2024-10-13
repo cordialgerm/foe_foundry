@@ -1,6 +1,8 @@
 <MonsterName/>Star Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>15</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>189</HP>
 <summary>The Star Drake is a formidable large dragon with a neutral alignment, known for its blend of magical prowess and physical might. With an impressive Armor Class of 19 and a substantial pool of 189 hit points, it is a resilient combatant in battle. The drake possesses a remarkable speed, both on foot and in flight, which allows it to swiftly navigate the battlefield. As a creature with a Challenge Rating of 15, it poses a significant challenge for adventurers, earning it 13,000 experience points upon defeat. The Star Drake exhibits exceptional attributes across the board, with especially high Wisdom and Constitution scores, making it not only a powerful foe but also an intelligent and perceptive one. It has damage immunities to cold, fire, and nonmagical attacks, rendering it difficult to harm. Its magical abilities, alongside powerful melee and ranged attacks, make it a versatile and dangerous adversary.</summary>
 
 <detail>

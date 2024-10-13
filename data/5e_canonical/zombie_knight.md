@@ -1,6 +1,8 @@
 <MonsterName/>Zombie Knight</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>16</AC>
+<HP/>52</HP>
 <summary>The Zombie Knight is a medium undead creature that embodies a fearsome and relentless force of decay. With a solid Armor Class of 16 and 52 hit points, it presents a moderate threat on the battlefield, especially with its high Strength modifier and resistance to certain conditions. Its primary role in combat is as a frontline brawler, using its melee attacks to disrupt and damage enemies. The Zombie Knight possesses some notable strengths, including abilities that allow it to continue fighting even after taking lethal damage, and it is immune to poison and fatigue. However, it has weaknesses as well, such as low Dexterity and Intelligence scores, making it rather slow and not particularly clever in battle.</summary>
 
 <detail>

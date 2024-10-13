@@ -1,6 +1,8 @@
 <MonsterName/>Destroyer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (scale mail)</AC>
+<HP/>60</HP>
 <summary>The Destroyer is a medium humanoid creature embodying a neutral evil alignment, known for its command over the undead and powerful melee capabilities. With a decent armor class of 15 provided by its scale mail, it has a robust amount of hit points at 60, which indicates a commendable resilience in combat and allows it to withstand various attacks. The Destroyer possesses strong physical attributes, particularly in Strength and Constitution, which enhance its combat prowess and durability. However, its poor Intelligence and average Wisdom may make it less effective in strategic scenarios. The creature is designed to be an offensive threat with powerful melee attacks enhanced by necrotic damage, making it particularly dangerous against living foes. One of its notable tactical advantages is the ability to command undead allies, making it a significant presence on the battlefield.</summary>
 
 <detail>

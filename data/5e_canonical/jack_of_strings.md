@@ -1,6 +1,8 @@
 <MonsterName/>Jack of Strings</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>90</HP>
 <summary>The Jack of Strings is a fey creature that embodies chaos and trickery, often taking the form of a whimsical entertainer infused with magical abilities. It serves as a deceptive opponent in combat, utilizing its charm and psychic attacks to manipulate foes. With an Armor Class of 14 and a total of 90 hit points, it can withstand a fair amount of damage, making it a moderately challenging foe rated at Challenge 5, suitable for parties of adventurers. The Jack's high Dexterity (19) and Charisma (20) make it exceptional at dodging attacks and manipulating others, while its additional abilities allow it to control puppets and its enemies. However, it relies on physical attacks and the control of its linked targets, indicating a strategic reliance on cunning rather than raw power.</summary>
 
 <detail>

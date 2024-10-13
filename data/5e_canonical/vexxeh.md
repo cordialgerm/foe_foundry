@@ -1,6 +1,8 @@
 <MonsterName/>Vexxeh</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>94</HP>
 <summary>The Vexxeh is a formidable Huge fiend characterized by its lawful evil nature. This creature serves as a powerful opponent that can pose significant challenges to adventurers due to its high damage output and special abilities. With a robust hit point total of 94, primarily earned through natural armor, the Vexxeh can withstand a fair amount of punishment in combat. It possesses exceptional physical strength (20), allowing it to hit hard in melee battles, while its moderate mobility (speed of 40 feet) enables it to engage or reposition with ease. The Vexxeh has specific immunities and resistances that provide it an edge in combat, making it less vulnerable to certain damage types and conditions. However, the creature has a notable weakness to charm effects due to its disadvantage on saving throws against being charmed.</summary>
 
 <detail>

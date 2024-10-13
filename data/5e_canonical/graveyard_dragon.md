@@ -1,6 +1,8 @@
 <MonsterName/>Graveyard Dragon</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Graveyard Dragon is a formidable undead creature that embodies the twisted remnants of its former life as a dragon. Bearing a neutral evil alignment, this massive foe presents significant challenges to adventurers with its blend of resilience and powerful offensive capabilities. With a solid armor class of 16 and an impressive pool of 127 hit points, it stands as a tough adversary in combat. The Graveyard Dragon excels in physical combat with a decent Strength score of 16, granting it an average ability to hit. Additionally, its unique abilities such as the Elemental Aura and various damage resistances make it a dangerous opponent on the battlefield. However, it does have a notable lack of agility with a Dexterity score of only 10, which can be seen as a weakness as it might struggle to evade incoming attacks.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Crocodile</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Giant Crocodile is a massive, predatory reptile that lurks in rivers, swamps, and lakes. It is a stealthy ambush predator, lying motionless in the water until an unsuspecting creature comes close, then striking with terrifying speed. Its powerful jaws can crush bone, and once it has its prey in its grip, the Giant Crocodile performs a deadly death roll, spinning and tearing its victim apart. These creatures are highly territorial and aggressive, defending their hunting grounds from any intruders. Despite their size, they can move with surprising speed both in water and on land.</summary>
 
 <summary>The Giant Crocodile is a huge beast that excels in aquatic environments, featuring a formidable presence both in and out of the water. With a challenge rating of 5, it poses a significant threat to adventurers who venture too close. It boasts impressive combat capabilities, backed by its high strength, allowing it to deliver devastating bite and tail attacks. The crocodile's natural armor provides it with a good level of protection, while its ability to swim at high speed enhances its versatility as a predator. However, its low dexterity and intelligence mean it is not particularly nimble or cunning outside of combat scenarios. </summary>

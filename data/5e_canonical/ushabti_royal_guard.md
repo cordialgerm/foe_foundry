@@ -1,6 +1,8 @@
 <MonsterName/>Ushabti Royal Guard</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>14</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Ushabti Royal Guard is a large construct that serves as a formidable guardian, often positioned to protect ancient treasures or tombs. With an impressive Armor Class of 19, it boasts a significant total of 168 hit points, making it a durable combatant. This creature is classified as unaligned, relying primarily on its mechanical nature rather than moral inclinations. One of its key strengths lies in its resilience, demonstrated by its immunities to various conditions such as poison, psychic attacks, and physical damage from nonmagical sources. However, it does possess a weakness in its lack of social skills, as indicated by its low Charisma score. In combat, the Ushabti employs a combination of necrotic-infused weapon attacks and debilitating special abilities, making it a powerful foe that can control the battlefield while dealing substantial damage.</summary>
 
 <detail>

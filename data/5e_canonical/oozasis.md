@@ -1,6 +1,8 @@
 <MonsterName/>Oozasis</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>9</CR>
+<AC/>7</AC>
+<HP/>217</HP>
 <summary>The Oozasis is a gargantuan, amorphous ooze creature that presents itself as an oasis in desert environments, making it a deceptive and formidable foe. Its high hit points and resilience to most types of damage, along with its ability to grapple multiple targets, give it considerable staying power in combat. The Oozasis has a unique ability to ensnare creatures with its waters, which can compel them into performing tasks that serve its long-term plans. However, its low Armor Class and weak Dexterity make it relatively easy to hit, and its vulnerability to cold attacks can be exploited by savvy adventurers. Overall, the Oozasis is both a threatening combatant and a clever manipulator, using its abilities to influence the actions of characters in unexpected ways.</summary>
 
 <detail>

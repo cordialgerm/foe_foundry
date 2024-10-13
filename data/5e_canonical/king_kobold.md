@@ -1,6 +1,8 @@
 <MonsterName/>King Kobold</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>15</AC>
+<HP/>112</HP>
 <summary>The King Kobold is a small yet cunning humanoid creature that embodies both strength in skirmishing and a unique role as a spellcaster. With a lawful neutral alignment, it adheres to a sense of order and loyalty among its kin. The King Kobold has a relatively good Armor Class of 15, enhanced to 18 with the use of mage armor, providing it with decent defense against attacks. It boasts 112 hit points, giving it a solid amount of resilience in battle. Although its physical strength is below average, its dexterity is exceptional at +5, allowing it to be very evasive in combat. The King Kobold excels in skills like deception, insight, intimidation, and persuasion, making it a formidable social combatant as well.</summary>
 
 <detail>

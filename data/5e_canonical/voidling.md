@@ -1,6 +1,8 @@
 <MonsterName/>Voidling</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>11</CR>
+<AC/>15</AC>
+<HP/>180</HP>
 <summary>The Voidling is a formidable large aberration with a chaotic evil alignment, known for its adaptability in dim conditions and powerful necrotic abilities. With a challenging presence in combat, it boasts an impressive armor class of 15 and robust hit points amounting to 180, which makes it a tough opponent to defeat. It can traverse the battlefield quickly with a movement speed of 50 feet. As a creature with a challenge rating of 11, it offers a significant challenge to adventurers, providing 7,200 experience points upon defeat. Notably, the Voidling has a combination of strong physical attributes, particularly in Dexterity and Wisdom, leverage to counter magical attacks effectively, and it thrives in areas devoid of light, which enhances its regenerative capabilities.</summary>
 
 <detail>

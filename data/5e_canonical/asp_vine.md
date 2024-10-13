@@ -1,6 +1,8 @@
 <MonsterName/>Asp Vine</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>55</HP>
 <summary>The Asp Vine is a Medium-sized plant creature that plays a role in ambush and crowd control within its environment. With a challenge rating of 4, it presents a moderate threat to adventurers, particularly due to its ability to grapple and poison multiple targets simultaneously. Its strengths lie in its decent armor class of 13 and a respectable pool of hit points totaling 55, allowing it to endure several attacks. However, it is vulnerable to slashing damage and lacks offensive capabilities when grappling multiple targets, which can be seen as a significant weakness. Notably, the Asp Vine camouflages itself as a normal bundle of vines when motionless, making it an effective ambusher.</summary>
 
 <detail>

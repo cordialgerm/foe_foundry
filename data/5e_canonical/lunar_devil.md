@@ -1,6 +1,8 @@
 <MonsterName/>Lunar Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>94</HP>
 <summary>The Lunar Devil is a formidable fiend known for its cunning and versatility in both combat and manipulation. It boasts impressive physical attributes, particularly in strength and dexterity, which enhance its melee attacks significantly. The creature has strong defenses and is quite resilient thanks to its damage immunities and resistances. Its lawful evil alignment reflects its calculated and ruthless nature, making it a substantial challenge for adventurers. Notably, its ability to utilize moonlight to enhance its defenses and mobility adds an intriguing dimension to its tactics in battle. However, while it has high hit points, its reliance on darkness might present a weakness in brightly lit environments.</summary>
 
 <detail>

@@ -1,7 +1,9 @@
 <MonsterName/>Lizardfolk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
 <Subtype/>lizardfolk</Subtype>
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>22</HP>
 <summary>Lizardfolk are reptilian humanoids with scaly skin and a fierce, predatory nature. They live in swamps, marshes, or jungles, where they hunt for food and defend their tribes. Lizardfolk are highly territorial and have a survivalist mentality, seeing the world in simple terms of predator and prey. Though primitive in their culture, they are skilled hunters and warriors, using spears, clubs, and their natural claws and teeth in combat. Lizardfolk are also adept swimmers and can hold their breath for long periods, making them dangerous foes in watery environments.</summary>
 
 <summary>The Lizardfolk is a medium humanoid creature renowned for its resilience and aquatic adaptability. With an armor class of 14 and a modest pool of hit points totaling 22, this creature is capable of sustaining itself in combat while delivering formidable attacks. Its strengths lie in its physical abilities, particularly its strength score of 14, which translates to a good modifier of +2, allowing it to deal consistent damage. However, its low charisma score of 8, resulting in a bad modifier of -1, indicates that it is not skilled in social interactions or magical influences. The Lizardfolk excels in survival and stealth, making it well-suited for ambush tactics and navigating its natural environments.</summary>

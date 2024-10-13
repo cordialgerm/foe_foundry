@@ -1,6 +1,8 @@
 <MonsterName/>Iceworm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>38</HP>
 <summary>The Iceworm is a small monstrosity that inhabits cold environments, showcasing both unique strengths and notable weaknesses. With a Challenge Rating of 1, it poses a manageable threat to low-level adventurers, particularly due to its ability to manipulate cold damage and its agility in movement. Its attributes are balanced, with a good Dexterity score that allows it to be nimble in combat, while its Constitution provides it with decent durability. However, its intelligence and charisma scores are very low, indicating a lack of mental prowess and social capability. The Iceworm's vulnerabilities to fire and its weaknesses against heat sources make it particularly susceptible in warmer climates. It excels in icy terrains where its cold abilities can shine, using its icy attacks to potentially hinder opponents.</summary>
 
 <detail>

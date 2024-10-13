@@ -1,6 +1,8 @@
 <MonsterName/>Xing Tian</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>11</CR>
+<AC/>16</AC>
+<HP/>168</HP>
 <summary>Xing Tian is a formidable Huge Giant known for its exceptional combat prowess and impressive durability. As a neutral creature, it does not align with good or evil motives, making it a potentially unpredictable challenge for adventurers. With a strong Armor Class of 16 due to its natural armor and shield, paired with a substantial pool of 168 hit points, it can endure prolonged encounters. The creature excels in melee combat, capable of dealing significant damage with its Multiattack, utilizing both a battleaxe and a shield slam. However, its lower Dexterity and Intelligence scores indicate that it may struggle with agility and mental tasks. Its condition immunities to fear and special abilities like Indomitable grant it remarkable resilience against debilitating effects, while Sure-Footed enhances its stability against attempts to knock it over.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Trapsmith</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>54</HP>
 <summary>The Trapsmith is a small humanoid creature known for its cunning and resourcefulness, embodying the role of a crafty trapmaker and rogue. It has a lawful neutral alignment, suggesting it adheres to its own codes and principles without any strong inclination toward good or evil. The Trapsmith boasts a good level of dexterity with a base score of 16, granting it a +3 modifier, making it effective at dodging attacks and executing delicate maneuvers. In contrast, its strength is quite poor at a score of 7, leading to a -2 modifier, which indicates that the Trapsmith is not suited for physical confrontations. This creature has a total of 54 hit points, indicating moderate durability in battle. Furthermore, its challenge rating of 2 suggests it poses a moderate threat to adventurers. The Trapsmith's unique abilities allow it to set up advantageous situations for itself and its allies, though its vulnerability to sunlight can be a significant weakness in brighter environments.</summary>
 
 <detail>

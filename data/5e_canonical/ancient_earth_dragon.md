@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Earth Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>22</AC>
+<HP/>425</HP>
 <summary>The Ancient Earth Dragon is a gargantuan creature that embodies the primal forces of the earth and stone. With its impressive armor class of 22 and a staggering total of 425 hit points, this dragon is a formidable opponent that presents a significant challenge, rated at a Challenge Rating of 24, granting 62,000 experience points upon defeat. The creature possesses exceptional strength and constitution, both at +8, making it very good in combat situations. It is moderately agile with a Dexterity of +2 and has a respectable intelligence and wisdom at +3 and +6, respectively. The dragon can engage in various forms of attack, including melee and spellcasting, empowering it with both brute force and magical prowess. Its mobility is impressive as well, allowing it to walk at a speed of 40 feet, fly at 40 feet, and burrow at a speed of 60 feet. However, its reliance on its linked area for long rests can be seen as a notable weakness. </summary>
 
 <detail>

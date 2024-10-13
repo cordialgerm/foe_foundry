@@ -1,6 +1,8 @@
 <MonsterName/>Goreling</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>11</HP>
 <summary>The Goreling is a small undead creature that serves as a minor antagonist in Dungeons & Dragons 5th Edition. Despite its diminutive size, it can be a nuisance in large numbers due to its ability to swarm and multiply. With an Armor Class of 12, it has moderate defenses against attacks. It has a total of 11 hit points, which is relatively low, making it susceptible to damage from most adventurers. The Goreling moves at a speed of 20 feet, limiting its mobility in combat. Being a Challenge Rating of 1/4, it poses a minimal threat, typically yielding 50 experience points upon defeat. Its key strengths lie in its unique abilities to amplify damage when in groups and the capacity to multiply upon sustaining damage, which can overwhelm unsuspecting parties. However, its weaknesses include a very poor Intelligence and Charisma, making it ineffective in social situations and limiting its problem-solving capabilities.</summary>
 
 <detail>

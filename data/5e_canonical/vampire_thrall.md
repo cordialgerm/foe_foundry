@@ -1,7 +1,9 @@
 <MonsterName/>Vampire Thrall</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
 <Subtype/>any lineage</Subtype>
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>40</HP>
 <summary>The Vampire Thrall is a medium humanoid creature that serves as a minion to the more powerful vampires. Its role is primarily supportive, bolstering the vampire's defenses while being capable of engaging with enemies in combat. Equipped with decent armor and hit points, the Vampire Thrall can withstand a moderate amount of damage, though it is not particularly resilient against radiant damage. Its strengths lie in its speed, stealth, and special abilities that enhance its mobility and regeneration, but it is heavily reliant on the vampire's blood to maintain its powers. Without the necessary sustenance, the Thrall's abilities diminish significantly, making it vulnerable in sunlight and effectively reducing its combat effectiveness.</summary>
 
 <detail>

@@ -1,7 +1,9 @@
 <MonsterName/>Glabrezu (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
 <Subtype/>demon</Subtype>
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>157</HP>
 <summary>A Glabrezu is a towering, demonic creature with the body of a monstrous beast and four arms—two ending in massive pincers, and two in clawed hands. These demons are masters of deception, often offering tempting deals and corrupting mortals through manipulation. Despite their cunning and deceitful nature, Glabrezus are also powerful combatants, capable of tearing through foes with their pincers or using their innate magical abilities to summon darkness, cast illusions, and control others. They serve as generals in the demonic armies of the Abyss, relishing both physical combat and psychological warfare.</summary>
 
 <summary>The Glabrezu is a large fiend known for its chaotic and evil nature, making it a formidable enemy in combat and a dangerous entity in social encounters. With an Armor Class of 17 and a significant pool of 157 hit points, it has solid defenses and can endure prolonged engagements. It is rated as a Challenge Rating 10, indicating that it presents a significant challenge to a party of adventurers. Its physical capabilities are strong, boasting a Strength score of 20 (+5), allowing it to perform powerful melee attacks, and it also possesses high Constitution and Charisma scores, giving it exceptional durability and effectiveness in manipulation. However, its weaknesses include vulnerability to radiant damage and limitations against certain types of magic. The Glabrezu’s unique abilities, especially its access to the spell Wish, make it a creature that not only fights fiercely but also can alter the course of events with the right conditions.</summary>

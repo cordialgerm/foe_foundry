@@ -1,6 +1,8 @@
 <MonsterName/>Elder Shadow Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Elder Shadow Drake is a formidable foe, characterized by its large size and chaotic evil alignment. Serving as a powerful adversary in any encounter, it combines a solid armor class of 16 with robust hit points totaling 114, making it quite durable in battle. With a challenge rating of 7, it presents a significant threat, offering 2,900 experience points upon defeat. The drake's strength lies in its combination of physical attacks, magical abilities, and stealth. However, it has a notable weakness to radiant damage, reflected in its vulnerability, while also being immune to cold damage, making it resilient against certain types of attacks. This creature’s formidable attributes, particularly its high Strength score of 22 (+6), grant it exceptional melee attack capabilities.</summary>
 
 <detail>

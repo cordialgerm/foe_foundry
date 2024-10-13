@@ -1,6 +1,8 @@
 <MonsterName/>Ambush Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>156</HP>
 <summary>The Ambush Hag is a Medium fey creature known for its cunning and deception. With an Armor Class of 16 and a substantial pool of 156 hit points, it poses a formidable challenge to adventurers with a Challenge Rating of 9. Hags are often characterized by their sinister nature, and the Ambush Hag excels at ambushing unsuspecting targets, using its high Dexterity and Charisma to enhance its stealth and spellcasting abilities. While it has good offensive capabilities, especially with its poison-infused attacks, the creature's reliance on deceptive tactics can make it vulnerable if its tricks are discerned by attentive foes.</summary>
 
 <detail>

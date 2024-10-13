@@ -1,6 +1,8 @@
 <MonsterName/>Spawn of Alquam</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Spawn of Alquam is a large fiend known for its chaotic evil nature. It is a formidable creature in combat, boasting a solid Armor Class of 16 and 114 hit points, which is determined by rolling 12 ten-sided dice and adding 48. With a Challenge Rating of 6, it presents a significant threat, offering 2,300 experience points upon defeat. The Spawn is adept at ambush tactics, utilizing stealth and keen senses to surprise and overwhelm its enemies. While it is particularly resilient to several damage types, it suffers from relatively low physical strength compared to its other attributes. Overall, this creature excels in agility and cunning, making it a dangerous foe for any adventurer.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Mantis</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Clockwork Mantis is a large construct that operates without alignment, serving as a mechanical guardian or enforcer in various settings. It boasts an impressive Armor Class of 15, indicating good defenses, and possesses 68 hit points, giving it decent durability in combat. With a walking speed of 40 feet, it is agile for its size. This creature has a Challenge Rating of 6, making it a moderate threat to adventurers, offering 2,300 experience points. Notably, the Clockwork Mantis has enhanced dexterity, allowing it to excel in stealth and perception, which makes it a formidable opponent in ambush situations. However, it has very low intelligence and charisma, reflecting its mechanical nature and lack of social interaction.</summary>
 
 <detail>

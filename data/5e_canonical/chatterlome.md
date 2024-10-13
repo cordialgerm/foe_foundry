@@ -1,6 +1,8 @@
 <MonsterName/>Chatterlome</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Chatterlome is a Medium lawful evil fiend known for its cunning and agility in combat. With a strong focus on stealth and magical resistance, the Chatterlome excels at ambushing opponents and evading magical attacks thanks to its advantage on saving throws against spells. It possesses a solid Armor Class of 16 and a substantial Hit Point total of 93, allowing it to withstand a fair amount of damage in battle. While its physical abilities are moderate, its Dexterity score of 18 (+4) and Constitution score of 18 (+4) provide excellent defense and resilience. However, it is somewhat limited in intelligence and charisma, having a score of 11 (+0) and 10 (+0) respectively. Notably, the Chatterlome has immunity to poison damage and conditions and is resistant to cold and fire damage as well as bludgeoning, piercing, and slashing damage from non-magical sources, making it a formidable opponent.</summary>
 
 <detail>

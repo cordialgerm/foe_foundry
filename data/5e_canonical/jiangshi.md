@@ -1,6 +1,8 @@
 <MonsterName/>Jiangshi</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>117</HP>
 <summary>The Jiangshi is a Medium undead creature defined by its chaotic evil alignment. As a formidable opponent, it combines a durable physical presence with a range of special abilities that make it a dangerous adversary in combat. The Jiangshi has strong melee capabilities, can instill fear in its enemies, and possesses the ability to drain life. However, it has notable weaknesses, such as vulnerability to fire damage and a low speed of only 20 feet, which can limit its mobility and tactics during encounters.</summary>
 
 <detail>

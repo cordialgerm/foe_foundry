@@ -1,6 +1,8 @@
 <MonsterName/>Gorao-Ka</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (copper coat)</AC>
+<HP/>17</HP>
 <summary>The Gorao-Ka is a tiny fey creature with a neutral good alignment known for its whimsical nature and magical effects surrounding luck and treasure. With an Armor Class of 13, it is relatively easy to hit, but it has a modest range of hit points totaling 17. While the Gorao-Ka may not be very resilient, it possesses unique abilities that can influence both combat and interactions with other characters. It thrives on cunning and trickery, making it a valuable ally or a challenging opponent. Its primary strengths lie in its special abilities like Fool's Gold and Silver Fountain, which create lasting effects on other creatures. However, as a creature of low challenge rating (1/8), it is not particularly powerful in direct combat.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Hundun</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>153</HP>
 <summary>The Hundun is a large celestial creature embodying chaotic goodness, making it a unique ally or challenge in a Dungeons & Dragons encounter. With an armor class of 18, it has considerable defenses that make it hard to hit. The creature has 153 hit points, which provides it with a solid buffer in combat. One of its most notable features is its extraordinary mobility, being able to walk and fly at a speed of 40 feet, allowing for strategic positioning in battles. The Hundun’s challenge rating of 12 indicates it is a formidable opponent capable of posing a serious threat to an adventuring party, providing 8,400 experience points upon defeat. It possesses exceptionally high strength, wisdom, and charisma, while its intelligence is quite low, which may reflect its nature as an entity driven by instinct rather than reason.</summary>
 
 <detail>

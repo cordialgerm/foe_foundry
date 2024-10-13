@@ -1,6 +1,8 @@
 <MonsterName/>Apostle</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (breastplate)</AC>
+<HP/>117</HP>
 <summary>The Apostle is a powerful medium humanoid creature that can align with any moral compass, acting as a divine agent with a strong emphasis on faith and healing. With an Armor Class of 15, a solid hit point pool of 117, and a Challenge Rating of 6, it rests at an effective combat level for mid-tier adventurers, capable of both offense and defense. Its strengths lie in its high Wisdom and Charisma, allowing it to excel in support roles, spellcasting, and interaction with the undead. The Apostle can also deal significant additional damage with its weapons, making it deadly in direct combat. However, its overall physical attributes are only average, which makes it somewhat vulnerable in melee situations without support.</summary>
 
 <detail>

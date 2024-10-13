@@ -1,6 +1,8 @@
 <MonsterName/>Insect, Swarm of Insects</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>24</HP>
 <summary>The Swarm of Insects is a Medium-sized swarm composed of tiny beasts, characterized by its ability to overwhelm foes with sheer numbers. With a Challenge Rating of 1/2, this creature is designed to be a minor threat, effective for disrupting spellcasters and providing a nuisance in combat. Its strengths lie in its resilience against common damage types and its ability to hinder opponents, but it lacks any significant offensive power due to its low Strength and melee reach. Although it is not directly dangerous on its own, in larger numbers or alongside other creatures, it can create challenges for player characters.</summary>
 
 <detail>

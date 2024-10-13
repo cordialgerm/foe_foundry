@@ -1,6 +1,8 @@
 <MonsterName/>Serpentfolk of Yig</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>40</HP>
 <summary>The Serpentfolk of Yig is a cunning and malevolent humanoid creature embodying the darker aspects of serpent-like power. Typically found in nefarious societies or as agents of chaos, these beings possess a unique combination of agility, stealth, and magic. While they have a moderate Armor Class of 12, their Hit Points total 40, giving them reasonable resilience in combat. They are particularly strong in deception, making them exceptional manipulators, while also possessing a good range of magical abilities, enhancing their threat level. However, their physical strength is average, and their defensive capabilities could be considered lacking against strong physical attacks. </summary>
 
 <detail>

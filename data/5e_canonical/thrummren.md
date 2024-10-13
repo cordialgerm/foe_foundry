@@ -1,6 +1,8 @@
 <MonsterName/>Thrummren</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>198</HP>
 <summary>The Thrummren is a formidable Gargantuan celestial creature that embodies chaotic good. Known for its overwhelming presence on the battlefield, it boasts a high Armor Class of 17 due to its natural armor, along with a substantial pool of Hit Points totaling 198, which makes it a resilient opponent for adventurers. With a Challenge Rating of 12, the Thrummren presents a significant challenge for a party, rewarding successful encounters with 8,400 experience points. Its abilities primarily revolve around lightning and thunder damage, allowing it to absorb lightning attacks and channel that energy back into healing itself. It stands out not only due to its power but also because of its protective capabilities, especially when in conjunction with a rider.</summary>
 
 <detail>

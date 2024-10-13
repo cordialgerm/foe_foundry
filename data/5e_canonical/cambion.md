@@ -1,6 +1,8 @@
 <MonsterName/>Cambion</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>93</HP>
 <summary>The Cambion is a medium-sized fiend that serves as a formidable opponent in combat. With an Armor Class of 16 and a significant pool of Hit Points totaling 93, it can withstand damage while delivering powerful attacks. Its Challenge Rating of 5 indicates that it presents a moderate challenge to adventurers. The Cambion boasts impressive physical and mental attributes, with high scores in Strength, Dexterity, Constitution, Intelligence, and Charisma, making it versatile in both melee and ranged combat. Strengths include its damage resistances to cold, fire, poison, and damage from nonmagical weapons, which allows it to endure various forms of attack. However, the creature's reliance on its fiendish traits may be exploited by characters with strong magical abilities that can counteract its defenses. Notably, the Cambion has exceptional crowd control capabilities through its charm and command abilities, as well as its ability to shapeshift into various forms.</summary>
 
 <detail>

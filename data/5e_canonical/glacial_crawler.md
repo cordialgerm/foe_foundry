@@ -1,6 +1,8 @@
 <MonsterName/>Glacial Crawler</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>207</HP>
 <summary>The Glacial Crawler is a formidable Huge Aberration characterized by its unique combination of abilities and resistances that make it a challenging adversary in combat. With an armor class of 17 and a substantial hit point pool of 207, it is well-protected and capable of withstanding considerable damage. The creature’s notable mobility allows it to traverse various terrains, including burrowing through snow and ice while also being able to swim effectively in water. As an unaligned creature, it lacks a moral compass, focusing solely on survival and combat effectiveness. Notably, the Glacial Crawler is immune to acid, cold, and fire damage, making it particularly resilient against many elemental attacks. However, its low intelligence and charisma indicate that it may not be the most tactically astute adversary, posing risks when facing clever opponents. </summary>
 
 <detail>

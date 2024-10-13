@@ -1,6 +1,8 @@
 <MonsterName/>Giant, Thursir Hearth Priestess</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (hide armor)</AC>
+<HP/>85</HP>
 <summary>The Giant, Thursir Hearth Priestess is a powerful and imposing creature that fulfills a support role on the battlefield, primarily aiding her allies with various boosts while also being capable of delivering significant melee attacks. This lawful evil giant has strong physical and magical capabilities, making her a formidable opponent. With her noteworthy hit points totaling 85, she can withstand considerable damage before succumbing in combat. Her magic resistance provides her with an edge against spellcasters, allowing her to maintain her presence and support for her allies. However, like all creatures, she has vulnerabilities that skilled adventurers could exploit, particularly her reliance on spellcasting and her coordination with her allies.</summary>
 
 <detail>

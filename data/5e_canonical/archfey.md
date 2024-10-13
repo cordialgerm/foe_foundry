@@ -1,6 +1,8 @@
 <MonsterName/>Archfey</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>12</CR>
+<AC/>16</AC>
+<HP/>330</HP>
 <summary>The Archfey is a powerful Medium Fey creature, renowned for its magical prowess and ability to manipulate its size, making it a formidable opponent in combat. With an Armor Class of 16 and a significant pool of 330 hit points, the Archfey can withstand considerable damage while delivering its own through both melee and ranged attacks. It possesses high Dexterity and Charisma, providing it with very good agility and social influence, while its significant Wisdom enhances its perception and insight in interactions. With a Challenge Rating of 12, it is designed for higher-level encounters, making it a tough adversary or a valuable ally. The Archfey's ability to avoid common conditions like being charmed or poisoned adds to its resilience. However, it can be outmatched by foes that capitalize on its lower Strength and Constitution.</summary>
 
 <detail>

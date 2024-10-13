@@ -1,6 +1,8 @@
 <MonsterName/>Bonespitter</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>13</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>217</HP>
 <summary>The Bonespitter is a gargantuan monstrosity that embodies both fear and power, making it a formidable opponent in any encounter. With a notably high armor class of 17 due to its natural armor and substantial hit points totaling 217, it presents a significant challenge to adventurers. Weighing in at challenge rating 13, it offers 10,000 experience points to those who manage to defeat it. The Bonespitter has impressive physical attributes, especially in strength with a score of 26 and a modifier of +8, signaling its strength in melee attacks. However, its dexterity is quite poor at 7, resulting in a -2 modifier, making it slow and easy to evade. Its abilities reflect its monstrous nature, affording it various dangerous actions, including strong biting attacks and a capacity to restrain opponents. Its weaknesses lie mostly in its lack of mobility and reliance on strong physical attacks rather than finesse.</summary>
 
 <detail>

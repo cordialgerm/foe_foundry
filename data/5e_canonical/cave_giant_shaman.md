@@ -1,6 +1,8 @@
 <MonsterName/>Cave Giant Shaman</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>14</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>207</HP>
 <summary>The Cave Giant Shaman is a formidable foe known for its immense power and mastery of both physical and magical combat. As a Huge creature with chaotic evil alignment, it poses a significant threat to adventurers, combining brute strength with potent spellcasting abilities. The shaman boasts high hit points, allowing it to absorb damage before being brought down, while its armor class provides good protection against attacks. However, it has a notable weakness in sunlight, which severely hinders its effectiveness. With a Challenge Rating of 14, it is a challenging opponent for mid-level parties, particularly if they are unprepared for its capabilities.</summary>
 
 <detail>

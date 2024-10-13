@@ -1,6 +1,8 @@
 <MonsterName/>Giant Seahorse</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>22</HP>
 <summary>The Giant Seahorse is a large beast well-suited to aquatic environments. Its primary role in encounters is often as a minor threat or as a transportation option, given its capability to swim efficiently. With an Armor Class of 13, it can withstand moderate attacks, though its 22 hit points (4d10) make it relatively fragile compared to stronger monsters. The Giant Seahorse lacks terrestrial mobility due to its speed of 0 feet on land, but it excels in water, boasting a swimming speed of 40 feet. Its challenge rating of 1/2 indicates that it is intended for low-level encounters, providing 100 experience points when defeated. Generally, the Giant Seahorse has decent Dexterity and a good initiative which allows it to be somewhat agile in the water, while its Strength is above average, making its physical attacks potent. However, its low Intelligence and Charisma limit its role in social interactions and complex actions.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Huli Jing</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>14</AC>
+<HP/>130</HP>
 <summary>The Huli Jing is a formidable Medium Fey creature known for its enchanting abilities and strategic combat prowess. With a challenge rating of 9, it poses a significant threat to adventurers. Its strengths lie in its high Charisma, dexterity, and the ability to manipulate luck, both for itself and others. This creature possesses a unique shapechanging ability that allows it to take on the guise of a stunning human or revert to its true nine-tailed fox form, making it unpredictable in encounters. The Huli Jing is resistant to nonmagical physical damage that does not involve cold iron and is immune to poison and charm effects. However, its reliance on spellcasting and the need to maintain its deceptive appearances in combat can potentially be exploited by alert opponents. </summary>
 
 <detail>

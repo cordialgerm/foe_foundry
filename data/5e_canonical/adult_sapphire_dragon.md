@@ -1,6 +1,8 @@
 <MonsterName/>Adult Sapphire Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>19</CR>
+<AC/>19</AC>
+<HP/>304</HP>
 <summary>The Adult Sapphire Dragon is an imposing and formidable creature in the world of Dungeons & Dragons. As a Huge dragon with a Challenge Rating of 19, it poses significant threats to adventurers with its high armor class, formidable hit points, and diverse abilities. With exceptional strength, dexterity, intelligence, and wisdom, this dragon excels in both physical combat and mental prowess, making it a versatile foe. It is particularly deadly due to its psionic abilities, allowing it to manipulate reality and attack the minds of its enemies. While it is immune to psychic damage and can avoid fatigue, its reliance on mental attacks might be countered by opponents who can resist psychic influence. </summary>
 
 <detail>

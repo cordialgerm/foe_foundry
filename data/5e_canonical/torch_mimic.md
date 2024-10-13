@@ -1,6 +1,8 @@
 <MonsterName/>Torch Mimic</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>21</HP>
 <summary>The Torch Mimic is a small, deceptive monstrosity that serves the purpose of mimicking inanimate objects, specifically appearing as an ordinary torch. This creature possesses a moderate level of defensive capabilities, reflected in its Armor Class of 12, coupled with a health pool of 21 hit points. As a Challenge Rating of 1/2 indicates, it poses a relatively low-level threat, making it suitable for beginner encounters or as an environmental hazard. Notably, the Torch Mimic can fly at a speed of 30 feet, giving it an element of mobility despite its ability to walk being nonexistent. Its key strengths include its ability to regenerate health over time and its fire-related abilities, though it has vulnerabilities, particularly to cold damage, which hampers its regenerative capabilities.</summary>
 
 <detail>

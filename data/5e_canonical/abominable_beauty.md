@@ -1,6 +1,8 @@
 <MonsterName/>Abominable Beauty</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>11</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>187</HP>
 <summary>The Abominable Beauty is a powerful and sinister fey creature characterized by its mix of enchanting allure and deadly capabilities. As a Medium-sized being, it wields significant charisma, making it exceptional at manipulation and deception. With armor class 18, it is well-protected thanks to its natural armor, and it boasts a hefty pool of hit points at 187, giving it good durability in combat. The creature is classified as neutral evil, demonstrating its willingness to harm others for its gain. It exhibits high physical abilities with a strength of 17, dexterity of 18, and constitution of 18, all of which provide it with good combat capabilities and resilience. However, its intelligence, wisdom, and exceptional charisma scores of 17, 16, and 26 respectively further amplify its effectiveness in social interactions and spellcasting. The combination of its damage immunities and high saving throws in dexterity, constitution, and especially charisma makes it a formidable opponent who can entice and overwhelm foes with both beauty and power.</summary>
 
 <detail>

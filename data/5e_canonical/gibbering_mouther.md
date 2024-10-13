@@ -1,6 +1,8 @@
 <MonsterName/>Gibbering Mouther</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>2</CR>
+<AC/>9</AC>
+<HP/>67</HP>
 <summary>The Gibbering Mouther is a horrifying mass of flesh covered in multiple eyes and mouths that constantly babble in incomprehensible voices. This grotesque creature slithers and oozes across the ground, seeking to consume any living thing it encounters. The endless gibbering of its many mouths can drive creatures mad, causing confusion and fear. The Gibbering Mouther can bite with its countless mouths and spit blobs of acidic flesh that blind its foes. It is an abomination of pure chaos, existing only to devour and absorb anything it can consume into its amorphous body.</summary>
 
 <summary>The Gibbering Mouther is a Medium-sized aberration that embodies chaotic and unsettling traits. With a unique combination of confusion-inducing abilities and the capacity to manipulate its environment into treacherous terrain, it serves as a formidable challenge for adventurers. Its notable ability to absorb the victims it defeats reflects its grotesque nature. While it possesses a decent pool of health and resistance to psychic damage, its low armor class and lack of dexterity make it vulnerable to physical attacks. Adventurers must be cautious, as its babbling can disorient them, while its ability to impede movement can effectively control the battlefield.</summary>

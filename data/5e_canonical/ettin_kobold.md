@@ -1,6 +1,8 @@
 <MonsterName/>Ettin, Kobold</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (armor scraps)</AC>
+<HP/>34</HP>
 <summary>The Kobold Ettin is a medium-sized giant with a chaotic and mischievous nature, characterized by its two heads that engage in constant bickering. As a creature of lawful evil alignment, it embodies a unique combination of giant strength and kobold cunning. This creature has a solid foundation in melee combat, boasting decent hit points and strong physical attributes, particularly in Strength and Constitution. However, its intelligence and charisma are notably low, making it less effective in social interactions and strategic planning. The Kobold Ettin excels in situations where it can leverage its size and combat abilities, especially when supported by allies, but it suffers significantly in bright light due to its sunlight sensitivity, which hinders its accuracy and perception.</summary>
 
 <detail>

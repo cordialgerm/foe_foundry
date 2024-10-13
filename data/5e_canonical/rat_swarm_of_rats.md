@@ -1,6 +1,8 @@
 <MonsterName/>Rat, Swarm of Rats</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>14</HP>
 <summary>The Swarm of Rats is a Medium swarm composed of multiple tiny beasts, typically utilized as a low-level enemy in encounters or as environmental hazards in dungeons and urban settings. Its strengths lie in its ability to overwhelm foes with numerous bites and its high resistance to various forms of damage and conditions. However, it has very low armor class and hit points, making it vulnerable to strong attacks. The creature thrives in filth and can effectively navigate through narrow spaces, making it challenging to deal with in tight quarters. Its ability to spread disease also poses a significant threat to characters who engage it in close combat.</summary>
 
 <detail>

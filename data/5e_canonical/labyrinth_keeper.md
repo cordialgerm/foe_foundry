@@ -1,6 +1,8 @@
 <MonsterName/>Labyrinth Keeper</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Labyrinth Keeper is a formidable Large Monstrosity that embodies chaos and evil. With a challenge rating of 5, this creature serves both as a powerful adversary in combat and a cunning manipulator within its maze-like territory. It is known for its physical strength, impressive resilience, and spellcasting abilities. Its armor class of 15 provides it with decent protection, while its hit points of 119 make it a durable foe capable of withstanding significant damage. The Labyrinth Keeper excels in close quarters with strong melee attacks and has access to a range of spells, which allows it to strike from a distance. However, its average Dexterity may leave it vulnerable to attacks, particularly if opponents leverage its Reckless Caster ability, which compromises its defensive position.  </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Fang of the Great Wolf</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Fang of the Great Wolf is a large monstrosity that embodies the ferocity and cunning of a predator. With a neutral evil alignment, this creature is both formidable and tactical in its approach to combat. It possesses considerable physical strength and speed, making it a dangerous opponent in battle. Notable for its significant hit points and natural armor, the Fang of the Great Wolf can endure a decent amount of damage while dealing substantial piercing damage with its bite attack. However, it has a low intelligence and charisma, which limits its social interactions and strategy-based abilities. Its main strengths lie in its physical attacks and the ability to grapple opponents, while its weaknesses include lower damage resistances and a reliance on melee combat.</summary>
 
 <detail>

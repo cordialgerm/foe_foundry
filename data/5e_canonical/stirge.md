@@ -1,6 +1,8 @@
 <MonsterName/>Stirge</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>2</HP>
 <summary>A Stirge is a small, bat-like creature with a long, needle-like proboscis that it uses to feed on the blood of living creatures. Found in swamps, forests, or dark caves, Stirges swarm in groups, attaching themselves to victims and draining their blood. Despite their small size, Stirges are dangerous in large numbers, overwhelming larger creatures with their relentless feeding. They are often drawn to the scent of blood and can be difficult to dislodge once they have latched on. Stirges are considered pests by many adventurers, but their persistence makes them a real threat.</summary>
 
 <summary>The Stirge is a tiny beast that serves as a minor threat in the monstrous ecosystem. It is known for its ability to swiftly attack and latch onto its prey to drain blood, effectively dealing damage while remaining hard to hit due to its small size and agility. With a challenge rating of 1/8, it is a weak opponent individually but can be dangerous in swarms. The Stirge has high dexterity, making it good at dodging attacks, but its overall health is very low, making it exceptionally vulnerable to direct damage. Its notable attack mechanism allows it to both injure and sustain itself by feeding, posing a unique challenge for low-level adventurers.</summary>

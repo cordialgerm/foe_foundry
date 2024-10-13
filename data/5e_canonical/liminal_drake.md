@@ -1,6 +1,8 @@
 <MonsterName/>Liminal Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>14</CR>
+<AC/>17</AC>
+<HP/>204</HP>
 <summary>The Liminal Drake is a large, neutral evil dragon renowned for its manipulation of space and its devastating attacks. This creature can fly and hover effectively, allowing it to navigate combat zones with great flexibility. With a robust Armor Class of 17 and a total of 204 hit points, the Liminal Drake is durable in battle. It possesses an impressive Dexterity score of 24, granting it a very good plus seven modifier, which enhances its ability to evade attacks. However, its Strength score is relatively low at 7, resulting in a very bad minus two modifier, limiting its physical melee capabilities. A challenge rating of 14 indicates that it poses a significant threat to adventurers, offering 11,500 experience points to those who can defeat it.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ibexian</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Ibexian is a large fiend embodying chaotic evil and is a formidable adversary in any encounter due to its impressive speed, resilience, and fiery attacks. With an Armor Class of 15, it is fairly durable, boasting 119 hit points, which provides it with significant staying power in battle. The creature excels in close-quarters combat and has the capability to inflict heavy damage combining both bludgeoning and fire attacks. Its unique abilities allow it to deal damage not only upon attacking but also through fiery feedback when it takes damage and via its charge attacks. While it possesses average intelligence and charisma, its true strengths lie in its physical attributes, particularly its strength and dexterity. However, it is vulnerable to magic attacks and can be hindered by its poor intelligence and charisma attributes, making it susceptible to some strategic maneuvers by intelligent opponents.</summary>
 
 <detail>

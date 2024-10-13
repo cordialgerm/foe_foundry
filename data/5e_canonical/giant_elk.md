@@ -1,6 +1,8 @@
 <MonsterName/>Giant Elk</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>42</HP>
 <summary>A Giant Elk is an enormous, majestic herbivore, standing far taller than a horse, with large, sweeping antlers. These creatures are often found in deep forests or vast plains, where they roam freely in small herds. The antlers of a Giant Elk are not only impressive but also powerful weapons, capable of fending off predators or rivals during the mating season. Despite their size, Giant Elks are peaceful creatures and will only become aggressive if threatened. Their imposing stature and noble presence make them a symbol of the wild's untamed beauty.</summary>
 
 <summary>The Giant Elk is a formidable Huge beast known for its swift movements and impressive physical prowess. With a challenge rating of 2, it serves as a noteworthy opponent in combat, capable of delivering significant damage through its powerful attacks. The creature possesses a good Armor Class of 14 due to its natural armor, and it boasts 60 hit points, making it quite resilient. Its primary strengths lie in its physical attributes, particularly its high Strength and decent Dexterity, allowing it to maneuver effectively in various situations. However, it has an exceptionally low Intelligence, indicating that it lacks mental acuity, which may limit its interactions and strategic capabilities. The Giant Elk is notable for its special ability, Charge, which can lead to devastating attacks if the conditions are met, and its multiattack capability allows it to hit multiple times in rapid succession.</summary>

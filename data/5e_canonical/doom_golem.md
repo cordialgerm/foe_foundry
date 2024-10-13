@@ -1,6 +1,8 @@
 <MonsterName/>Doom Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>153</HP>
 <summary>The Doom Golem is a formidable large construct, unaligned and designed for destruction. It boasts a high Armor Class of 17 and impressive hit points totaling 153, making it a resilient adversary in combat. With a Challenge Rating of 10, the Doom Golem is a significant threat, equipping it with powerful melee attacks and formidable special abilities. Its high Strength score of 24 grants it exceptional melee capabilities, while its Constitution score of 16 provides additional durability. However, its low Intelligence, Wisdom, and Charisma scores indicate a lack of mental prowess and social interaction ability. The Doom Golem is immune to many forms of damage and conditions, making it a challenging opponent. Its strengths lie in its powerful attacks and fear-inducing aura, while its weaknesses include its inability to converse and a reliance on its creator for direction.</summary>
 
 <detail>

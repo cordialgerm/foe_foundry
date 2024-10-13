@@ -1,6 +1,8 @@
 <MonsterName/>Wicked Skull</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>7</HP>
 <summary>The Wicked Skull is a tiny monstrosity with a chaotic neutral alignment that embodies a mischievous spirit. Its role in gameplay is primarily as a trickster that employs deception and charm to influence encounters. With an armor class of 13 and hit points of 7, it is relatively fragile but compensates for its low durability with speed and cunning. The creature has a unique ability to change shapes, allowing it to disguise itself as an ordinary object, making it challenging for enemies to detect. Its charisma-based skills provide it with a strong advantage in social situations, enabling it to manipulate others effectively. However, its combat capabilities are limited due to weak physical attributes, especially in strength.</summary>
 
 <detail>

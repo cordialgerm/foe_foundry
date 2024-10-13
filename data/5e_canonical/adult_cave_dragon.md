@@ -1,6 +1,8 @@
 <MonsterName/>Adult Cave Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>19</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>270</HP>
 <summary>The Adult Cave Dragon is a formidable creature in the Dungeons & Dragons realm, known for its immense size and formidable powers. It embodies the neutral evil alignment, making it an opportunistic threat to those who venture into its territory. With a high challenge rating of 19, it poses a significant danger to adventurers, capable of dealing substantial damage while having powerful defensive and utility abilities. Its major strengths include a high Armor Class of 18, an extraordinary pool of 270 hit points, and various resistances and immunities. However, its relatively lower Dexterity could be seen as a weakness. This dragon's ability to manipulate darkness and its unique burrowing capability makes it a cunning foe in subterranean environments.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ink Guardian</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>8</AC>
+<HP/>102</HP>
 <summary>The Ink Guardian is a Large ooze creature that serves as an aggressive and unpredictable force on the battlefield. With an Armor Class of 8 and a substantial Hit Points total of 102, it can absorb a good amount of damage, making it a formidable opponent for mid-level adventurers. Although its Dexterity is low, giving it a poor initiative and movement speed, its physical strength is commendable, and it is exceptionally resilient to several types of damage. One notable feature is its ability to rejuvenate after being defeated, allowing it to return to battle unless its containment bottle is destroyed. However, it is vulnerable to bludgeoning attacks if its bottle is breaching, and it possesses significant weaknesses against ranged combat due to its low Dexterity and poor Armor Class.</summary>
 
 <detail>

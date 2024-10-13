@@ -1,6 +1,8 @@
 <MonsterName/>Spectral Guardian</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>14</AC>
+<HP/>93</HP>
 <summary>The Spectral Guardian is a Medium undead creature classified as Neutral Evil. It serves as a formidable protector of specific locations tied to its past disgrace, often found haunting tombs or ruins. With an armor class of 14, it offers a reasonable defense against attacks but relies on its hit points, totaling 93, to sustain itself in combat. The Spectral Guardian has a challenge rating of 6, making it a significant adversary, capable of dealing considerable necrotic damage while inflicting conditions that can hinder or terrify its opponents. Its strengths lie in its high Dexterity and Charisma, allowing it to evade blows and manipulate fear effectively. However, it is relatively weak in Strength, making it less effective in physical confrontations.</summary>
 
 <detail>

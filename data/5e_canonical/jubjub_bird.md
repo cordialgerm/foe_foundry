@@ -1,6 +1,8 @@
 <MonsterName/>Jubjub Bird</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>91</HP>
 <summary>The Jubjub Bird is a large beast characterized by its unique combination of strengths and weaknesses. With an Armor Class of 13 and a substantial pool of hit points totaling 91, it can remain in battle longer than many creatures of similar challenge rating. The Jubjub Bird has a Challenge Rating of 4, making it an appropriate challenge for a level 4 party, providing 1,100 experience points upon defeat. Its natural resistances to poison and immunity to being poisoned give it an edge against certain damage types. However, its intelligence is notably low, severely limiting its abilities to interact with other creatures verbally. Notably, its special abilities allow it to intimidate foes and avoid being controlled or charmed, adding layers to its tactical roles in combat.</summary>
 
 <detail>

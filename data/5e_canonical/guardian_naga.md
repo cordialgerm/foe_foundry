@@ -1,6 +1,8 @@
 <MonsterName/>Guardian Naga</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>127</HP>
 <summary>A Guardian Naga is a large, serpent-like creature with a humanoid face and a benevolent nature. These creatures are known for their wisdom and magical abilities, often acting as protectors of sacred sites or powerful artifacts. Guardian Nagas are skilled in divine magic, using their abilities to heal, protect, and smite evil. Their venomous bite can be deadly to those who threaten them, but they prefer peaceful solutions when possible. These creatures are revered by many as wise guides and protectors, and they are often sought after for their knowledge and counsel.</summary>
 
 <summary>The Guardian Naga is a formidable large monstrosity that serves as a mystical protector that dwells in watery locales. Known for its intelligence and capabilities in spellcasting, this creature combines potent defenses and healing abilities with its capacity to manipulate its surroundings and foes alike. It boasts considerable hit points and strong defensive stats, making it a challenging encounter for adventurers. However, it has weaknesses, particularly to radiant damage, and its reliance on magic means it can be vulnerable to anti-magic effects. The Guardian Naga's rejuvenation ability adds to its formidable nature, allowing it to return to life after a short period unless specific magical means are used to prevent this.</summary>

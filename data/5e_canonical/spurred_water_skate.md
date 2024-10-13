@@ -1,6 +1,8 @@
 <MonsterName/>Spurred Water Skate</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>60</HP>
 <summary>The Spurred Water Skate is a large and unaligned beast that thrives in aquatic environments, making it a formidable opponent for adventurers who venture near water bodies. With a respectable armor class of 13, it possesses a decent amount of durability with 60 hit points, which translates to a moderate challenge for players at a Challenge Rating of 1. This creature excels in agility, boasting a Dexterity score of 17, categorized as very good, allowing it to evade attacks effectively. However, its Intelligence and Charisma scores are very low, indicating that it lacks social skills and cognitive abilities. This creature's special ability, Water Walker, allows it to traverse water surfaces effortlessly, similar to the spell water walk, enhancing its mobility in combat scenarios. The Spurred Water Skate's notable action is its Stabbing Forelimbs, which is a melee attack with a good chance to connect, dealing a substantial amount of damage and enabling it to grapple opponents, restricting their movements and potentially leading to their suffocation if held underwater.</summary>
 
 <detail>

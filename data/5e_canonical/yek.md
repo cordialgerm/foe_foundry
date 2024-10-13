@@ -1,6 +1,8 @@
 <MonsterName/>Yek</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>77</HP>
 <summary>The Yek is a small fiend that embodies chaotic evil, making it a cunning and dangerous adversary on the battlefield. With a challenge rating of 4, it possesses a solid combination of offensive capabilities and strategic abilities that can disrupt and weaken its opponents. Yeks are agile, with good Dexterity, allowing them to strike quickly and evade attacks. They have a natural armor class of 16, indicating decent defensive capabilities, and boast 77 hit points, making them relatively resilient for their size. However, their low intelligence score limits their strategic options in combat. One of their notable characteristics is their ability to form swarms, making them more effective in groups, while their resistance to various elemental damages enhances their survivability.</summary>
 
 <detail>

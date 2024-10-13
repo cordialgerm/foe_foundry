@@ -1,6 +1,8 @@
 <MonsterName/>Urushi Constrictor</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural)</AC>
+<HP/>133</HP>
 <summary>The Urushi Constrictor is a large monstrosity that embodies the dangers of jungle terrain. With a Challenge Rating of 6, it presents a moderate threat to adventurers who tread too close to its territory. This creature has a formidable presence, boasting an Armor Class of 14 and a hefty 133 hit points, giving it good durability in combat. The Urushi Constrictor excels in ambush scenarios, thanks to its enhanced stealth capabilities in jungle environments, while its unique abilities to inflict poison and disease make encounters with it both challenging and dangerous. Being vulnerable to fire, however, is a notable weakness that players can exploit.</summary>
 
 <detail>

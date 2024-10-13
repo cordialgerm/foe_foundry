@@ -1,6 +1,8 @@
 <MonsterName/>Master Thief</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>17</CR>
+<AC/>18</AC>
+<HP/>143</HP>
 <summary>The Master Thief is a formidable humanoid creature known for its exceptional agility and cunning intelligence. Its high Armor Class of 18 and substantial Hit Points totaling 143 (derived from 22d8+44) allow it to withstand a good amount of damage during combat. As a Challenge Rating 17 creature, it poses a significant threat to adventurers and is particularly skilled in stealth, making it a master of ambush tactics. The Master Thief excels in Dexterity-based maneuvers, boasting a Dexterity score of 20 (+5), which contributes to its evasive nature and proficiency in ranged and melee attacks. It is capable of dealing devastating amounts of damage, particularly through its Sneak Attack ability, while simultaneously possessing the tools to outmaneuver foes during confrontations. However, despite its strengths, the creature's moderate Wisdom (12, +1) and Constitution (14, +2) suggest some vulnerabilities to perceptive strategies and sustaining damage over time.</summary>
 
 <detail>

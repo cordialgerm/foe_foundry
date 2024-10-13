@@ -1,6 +1,8 @@
 <MonsterName/>Chelicerae</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>153</HP>
 <summary>The Chelicerae is a formidable large aberration known for its cunning and magical prowess, which it uses to trap, poison, and drain the powers of its enemies. With a neutral evil alignment, it operates under its own sinister motives, often using stealth and agility in combat. It possesses a high Armor Class of 16 due to its natural armor, and it has a considerable pool of Hit Points totaling 153, making it quite durable in battle. The Chelicerae's Challenge Rating of 7 indicates that it is a threat suitable for a party of adventurers that are around 7th level. Its exceptional Strength and Intelligence scores allow it to deliver powerful physical attacks while also utilizing a range of spells.</summary>
 
 <detail>

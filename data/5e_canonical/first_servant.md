@@ -1,6 +1,8 @@
 <MonsterName/>First Servant</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (Armor of Foresight)</AC>
+<HP/>162</HP>
 <summary>The First Servant is a powerful medium humanoid serving a higher purpose, with the unique ability to blend martial prowess with potent divine magic. Its high Armor Class of 17 and substantial hit points make it an exceptional frontline combatant, capable of enduring considerable damage. The creature excels in combat with multiple attacks and devastating magical strikes, showcasing significant damage output through both melee and spellcasting. Notably, its Awe-Inspiring Presence can incapacitate nearby foes, rendering them unable to use vital combat actions, which adds a strategic layer to its role in encounters. Although its Strength is only average, its Dexterity and Wisdom are good, significantly enhancing its defenses and saving throws. The First Servant’s challenge rating of 12 indicates that it poses a considerable threat to adventurers; however, caution should be exercised regarding its spellcasting abilities, some of which can heavily influence the course of a battle.</summary>
 
 <detail>

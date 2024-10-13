@@ -1,6 +1,8 @@
 <MonsterName/>Dead Mans Fingers</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>10</CR>
+<AC/>15</AC>
+<HP/>190</HP>
 <summary>The Dead Man's Fingers is a medium-sized plant creature that exists simultaneously on the Ethereal and Material Planes, making it a formidable opponent in combat. With an Armor Class of 15 and 190 hit points, it can endure a fair amount of damage. It has a Challenge Rating of 10, which indicates it is a significant threat to adventurers, providing 5,900 experience points upon defeat. The creature possesses exceptional Strength and Constitution scores, with a Strength of 20 (+5) and Constitution of 20 (+5), making it physically powerful and resilient. However, it has low Intelligence and Charisma, resulting in only bad performance in their associated saving throws. Notably, the Dead Man's Fingers is immune to a wide array of conditions, including being blinded, charmed, deafened, fatigued, frightened, prone, restrained, and stunned, which makes it hard to control or incapacitate. Its blindsight extends for 90 feet, allowing it to perceive its surroundings even when blinded but renders it unaware beyond that radius.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Corrupted Unicorn</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>85</HP>
 <summary>The Corrupted Unicorn is a large celestial creature, known for its elegance and power, but now twisted by dark influences. It features a decent armor class of 14 and possesses 85 hit points, making it reasonably resilient in combat situations. With a challenge rating of 5, it presents a significant threat to adventurers, offering 1,800 experience points upon defeat. The unicorn can move swiftly, with a speed of 80 feet, allowing it to navigate the battlefield effectively. Its high attributes make it an exceptional combatant: it has a strength score of 20 (+5), dexterity of 18 (+4), constitution of 18 (+4), intelligence of 16 (+3), wisdom of 20 (+5), and charisma of 20 (+5). This means its physical strikes and magical resistance make it a formidable opponent, while its high wisdom and charisma render it effective in interactions and spellcasting.</summary>
 
 <detail>

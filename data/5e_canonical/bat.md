@@ -1,6 +1,8 @@
 <MonsterName/>Bat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>12</AC>
+<HP/>1</HP>
 <summary>A Bat is a small, nocturnal mammal with membranous wings that allow it to fly silently through the night. Bats use echolocation to navigate dark caves, forests, or other shadowy areas in search of insects to eat. While individually harmless, large swarms of bats can be disorienting or overwhelming to unprepared travelers. Bats are often associated with eerie locations like crypts or haunted forests, where their presence adds to the unsettling atmosphere. Though they do not pose a direct threat, their ability to move silently and in large numbers can make them a nuisance.</summary>
 
 <summary>The Bat is a tiny beast known for its agility and sensory abilities. With a challenge rating of 0, it serves primarily as a minor creature that can be encountered early in a campaign. While its low hit points and minimal damage output make it relatively weak in combat, its unique sensory capabilities such as echolocation and keen hearing give it a notable advantage in certain situations, particularly in stealth or exploration scenarios. The Bat can serve as an interesting environmental detail or a minor obstacle, but players should not underestimate its ability to provide information about its surroundings.</summary>

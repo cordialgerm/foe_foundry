@@ -1,6 +1,8 @@
 <MonsterName/>Amphibolt</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Amphibolt is a formidable large monstrosity that proves to be a challenging opponent in combat, primarily due to its unique attack abilities and mobility in both land and water. With a solid Armor Class of 15, it can withstand a fair amount of damage, which is further supported by its 85 hit points, offering good resilience for a creature of its Challenge Rating of 5. Its strengths lie in its impressive Dexterity and Constitution scores; with a Dexterity of 18 (+4), it boasts a very good initiative and agility, while its Constitution of 18 (+4) grants it substantial health and strong saving throws. However, the Amphibolt's Intelligence, Wisdom, and Charisma scores are significantly lower, indicating that it may struggle with mental interactions and social encounters. Nonetheless, it holds powerful abilities that enable it to control the battlefield effectively.</summary>
 
 <detail>

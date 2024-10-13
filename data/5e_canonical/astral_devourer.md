@@ -1,6 +1,8 @@
 <MonsterName/>Astral Devourer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Astral Devourer is a powerful medium aberration that embodies chaos and evil. It is a formidable opponent in battle, with both resilient defenses and potent offensive capabilities, making it a dangerous encounter for adventurers. Notably, its ability to communicate telepathically through its hive mind allows it to coordinate with its serpentine forms effectively, enhancing its tactical options in combat. The creature is designed to disrupt and damage enemies using a mix of physical and poison attacks while having a unique defensive mechanism allowing it to split into smaller versions of itself when injured. However, its strengths are somewhat balanced by its requirement to maintain close proximity to its swarm and limitations regarding healing.</summary>
 
 <detail>

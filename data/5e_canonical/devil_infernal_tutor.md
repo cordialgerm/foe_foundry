@@ -1,6 +1,8 @@
 <MonsterName/>Devil, Infernal Tutor</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>13</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>182</HP>
 <summary>The Infernal Tutor is a formidable Medium fiend characterized by its lawful evil nature and a broad range of magical and psychological abilities. With a Challenge Rating of 13, it poses a significant threat to adventurers, especially those susceptible to manipulation or psychic harm. This creature is designed to dominate encounters with its high Charisma and Intelligence, allowing it to control the battlefield through spellcasting and enchantments. Its strengths lie in its magical resistance, ability to inflict psychic damage, and capacity to charm and manipulate humanoids, making it an excellent strategist in combat scenarios. However, its lower physical attributes such as Strength and moderate Constitution can be considered weaknesses, as they may limit its resilience in straightforward melee confrontations.</summary>
 
 <detail>

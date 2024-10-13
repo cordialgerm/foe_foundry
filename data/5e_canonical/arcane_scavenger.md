@@ -1,6 +1,8 @@
 <MonsterName/>Arcane Scavenger</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Arcane Scavenger is a formidable Large Construct that plays the role of a resilient and versatile combatant. With a challenge rating of 9, it is well-suited for encounters with experienced adventurers seeking a significant challenge. This creature boasts a strong armor class of 17 due to its natural armor and a substantial amount of hit points totaling 127, making it difficult to bring down. Its primary strengths lie in its high dexterity and intelligence, providing it with solid defensive capabilities and powerful offensive options. The Arcane Scavenger's notable abilities include resistance to various damage types, immunity to many debilitating conditions, and a unique self-enhancement feature when its health is low. However, as a construct, it lacks the ability to communicate and requires no sustenance, which may limit its role in social interactions. </summary>
 
 <detail>

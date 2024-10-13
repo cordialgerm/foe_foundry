@@ -1,6 +1,8 @@
 <MonsterName/>Pescavitus</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>44</HP>
 <summary>Pescavitus is a small celestial creature with a neutral good alignment. It excels in aquatic environments, possessing the ability to swim at a speed of 60 feet, while it cannot move on land. With an Armor Class of 13 and hit points totaling 44, derived from eight six-sided dice plus a constitution modifier of 16, it can withstand a moderate amount of damage before succumbing in battle. It has a Challenge Rating of 1, making it suitable for lower-level adventurers. Pescavitus has a variety of strengths including magical weapon attacks that do additional radiant damage, resistance to radiant damage, and several unique abilities that can either assist allies or curse foes. However, it does not move on land, and its reliance on water could be a major weakness if the battle takes place away from aquatic settings.</summary>
 
 <detail>

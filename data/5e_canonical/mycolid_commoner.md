@@ -1,6 +1,8 @@
 <MonsterName/>Mycolid Commoner</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>21</HP>
 <summary>The Mycolid Commoner is a small plant creature that serves as a non-combatant within its ecosystem, displaying unique abilities rooted in fungal biology. It possesses a challenge rating of 1/2, indicating it is relatively low in power compared to other foes. The Mycolid excels in stealth and perception but is not physically imposing. Its attributes reflect a balanced approach to agility and wisdom, allowing for effective scouting and awareness of its surroundings while presenting weaknesses in intelligence and charisma. Notably, the Mycolid can inflict potent poison damage, resist various debilitating effects, and has a remarkable ability to communicate telepathically with its kin.</summary>
 
 <detail>

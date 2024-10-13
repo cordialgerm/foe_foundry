@@ -1,6 +1,8 @@
 <MonsterName/>Sinstar Thrall</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>58</HP>
 <summary>The Sinstar Thrall is a plant creature classified as Medium size and possesses unique defensive and offensive abilities that make it a formidable foe in encounters. With an Armor Class of 13, it has a decent level of protection provided by its natural armor. This creature has a total of 58 hit points, equating to a good amount of stamina for a Challenge Rating of 2, allowing it to endure some combat. The Sinstar Thrall excels in physical strength with a Strength score of 17 (+3), enabling it to deliver powerful melee attacks. Its Constitution score of 15 (+2) grants it better resilience against damage, while its Dexterity score is average at 10 (+0), indicating it lacks agility. In terms of mental attributes, the Sinstar Thrall is significantly weaker, with a low Intelligence of 3 (-4), Wisdom of 10 (+0), and very low Charisma of 1 (-5), making it ineffective in social encounters or mental challenges. The creature is immune to poison damage and resistant to cold and fire, which makes it durable against select damage types. Additionally, it has various condition immunities that enhance its survivability. The creature also has blindsight up to 60 feet, allowing it to detect creatures within that range, despite being blind beyond it. It does not communicate using language, relying instead on its abilities.</summary>
 
 <detail>

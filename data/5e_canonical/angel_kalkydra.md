@@ -1,6 +1,8 @@
 <MonsterName/>Angel, Kalkydra</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>189</HP>
 <summary>The Kalkydra is a formidable Huge Celestial creature characterized by its lawful good alignment. Known for its immense power, it serves a celestial purpose, wielding both physical and magical abilities in combat. With exceptional hit points, high armor class, and a range of devastating attacks, the Kalkydra can easily dominate the battlefield. This creature excels at both close and ranged combat, using its radiant energy to deal significant damage while simultaneously providing supportive magical effects to allies. However, despite its strengths, it is not invulnerable, and careful tactics are required to exploit its weaknesses in combat.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Arboreal Grappler</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Arboreal Grappler is a Medium aberration known for its swift and stealthy movements in forested or jungle terrains. As a Neutral Evil creature, it often employs cunning tactics to overpower its foes and ambush unsuspecting adventurers. With a respectable Armor Class of 14, it maintains a good defense primarily through its natural armor. The creature boasts 90 hit points, making it fairly resilient in combat encounters. Its Challenge Rating of 4 indicates that it poses a moderate threat, with an experience reward of 1,100 XP for its defeat. The Arboreal Grappler excels in both grappling and maneuverability, using its tentacles to restrain opponents while being able to efficiently navigate the battlefield without limitation.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Dorreq</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Dorreq is a Medium aberration that embodies the traits of Neutral Evil beings, making it a deceptive and dangerous opponent in combat. With a considerable amount of strength and dexterity, it poses a significant threat, particularly through its physical attacks and special abilities. The Dorreq's ability to warp space around it and inflict both thunder and necrotic damage makes it a formidable adversary. However, its relatively low hit points and limited movement can be considered drawbacks. The Dorreq is designed for ambush tactics, relying on its powerful physical attacks and the use of its special abilities to control the battlefield.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Psoglav</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>115</HP>
 <summary>The Psoglav is a formidable large fiend that embodies chaotic evil, posing a significant threat to adventurers. With a high armor class of 17 and 115 hit points, it can endure a fair amount of damage, making it a resilient opponent. The combination of its impressive physical attributes—particularly strong Strength, Dexterity, and Constitution—enables the Psoglav to be both a powerful attacker and evasive in combat. However, its reliance on melee attacks and the need to maintain concentration on its invisibility or control of shadows can be potential weaknesses if exploited by clever tactics. The creature is distinctly dangerous due to its special abilities, particularly its power to control shadows, which can confuse and turn the tide of battle by summoning additional threats.</summary>
 
 <detail>

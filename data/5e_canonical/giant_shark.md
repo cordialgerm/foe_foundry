@@ -1,6 +1,8 @@
 <MonsterName/>Giant Shark</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Giant Shark is an enormous predator of the deep, feared for its immense size and insatiable hunger. With razor-sharp teeth and powerful jaws, a Giant Shark can tear apart almost anything it encounters, from ships to sea creatures. These sharks are found in deep ocean waters, where they patrol for prey, but they have been known to come close to the surface or attack vessels. In combat, a Giant Shark relies on its brute strength and powerful bite, and it can smell blood from miles away, making it relentless in its pursuit of wounded prey.</summary>
 
 <summary>The Giant Shark is a formidable beast in the aquatic realms, known for its size and power as a predator. This creature plays the role of a relentless hunter in underwater environments, threatening adventurers and sea creatures alike with its fierce attacks and agile movements. With an Armor Class of 13, it is reasonably resilient, supported by a substantial pool of Hit Points totaling 105. The Giant Shark boasts exceptional physical attributes, particularly a Strength of 20, which allows it to deal significant damage. However, its Dexterity is average, which might limit its agility compared to its other traits. Its reliance on water for survival, combined with limited intelligence and charisma, makes it a straightforward predator rather than a cunning adversary.</summary>

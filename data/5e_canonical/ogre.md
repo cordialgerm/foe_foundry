@@ -1,6 +1,8 @@
 <MonsterName/>Ogre</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>2</CR>
+<AC/>11 (hide armor)</AC>
+<HP/>59</HP>
 <summary>An Ogre is a large, brutish humanoid known for its immense size and strength. Standing around 9 to 10 feet tall, Ogres wield massive clubs or improvised weapons, smashing anything in their path. They are not particularly intelligent and are easily fooled or manipulated, but their sheer physical power makes them dangerous in combat. Ogres are often found in isolated caves, hills, or ruins, where they live as solitary hunters or in small bands. They are driven by greed and hunger, often raiding villages or travelers for food, treasure, or slaves.</summary>
 
 <summary>The Ogre is a large and formidable giant known for its brute strength and intimidating presence on the battlefield. With an armor class of 12, it possesses a decent level of resilience, but it is not impervious to damage. The Ogre has a total of 59 hit points, providing it with a good amount of stamina for combat situations. While its challenge rating is 2, indicating it poses a moderate threat, its highest attribute is Strength, scoring a notable 19 (+4), making its physical attacks particularly devastating. However, the Ogre's Dexterity is quite low at 8 (-1), resulting in a very bad agility, making it less effective in dodging attacks. The creature's intelligence, wisdom, and charisma values reflect its simple-mindedness, leading to average social and mental capacities. The Ogre's abilities are primarily focused on melee attacks, making it adept at engaging in direct confrontations, although its lack of finesse and lesser ranged options could serve as limitations in more strategic encounters.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Primordial Matriarch</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>21</CR>
+<AC/>20</AC>
+<HP/>313</HP>
 <summary>The Primordial Matriarch is a gargantuan elemental creature that embodies the raw power of nature and the elements. This formidable entity serves as a powerful adversary, boasting a high Armor Class of 20 and an impressive pool of Hit Points totaling 313, making her exceptionally durable in combat. Her flying speed of 120 feet enables her to avoid ground-based threats effectively. With a Challenge Rating of 21, this creature is designed for high-level encounters, providing a significant challenge to adventurers. Her tremendous strengths lie in her magical attacks and resistances, enabling her to deal substantial damage while shrugging off many common forms of attack. However, her lower Intelligence score, which is average at only 10, indicates that she may lack in strategic planning compared to more intelligent foes. </summary>
 
 <detail>

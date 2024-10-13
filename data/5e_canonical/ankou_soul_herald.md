@@ -1,6 +1,8 @@
 <MonsterName/>Ankou Soul Herald</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>21</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>407</HP>
 <summary>The Ankou Soul Herald is a gargantuan dragon of neutral alignment, known for its powerful presence and unique abilities that revolve around necromancy and manipulation of shadows. With an impressive Armor Class of 18 and an extensive pool of Hit Points at 407, the Ankou is designed to withstand significant damage while delivering devastating attacks. Its challenge level of 21 signifies that it presents a formidable threat to even high-tier adventurers, with a substantial experience reward of 33,000 XP. This creature embodies a blend of draconic strength and celestial powers, making it a complex adversary in combat. It possesses inherent weaknesses to radiant damage, which can be exploited by clever opponents. Particularly notable are its abilities that hinder the use of necromancy and can wreak havoc on undead creatures, rendering it an effective foe on the battlefield.</summary>
 
 <detail>

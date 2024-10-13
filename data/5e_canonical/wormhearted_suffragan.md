@@ -1,6 +1,8 @@
 <MonsterName/>Wormhearted Suffragan</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>13</AC>
+<HP/>120</HP>
 <summary>The Wormhearted Suffragan is a medium-sized undead creature characterized by its chaotic evil nature. It has a strong presence in combat due to its ability to inflict necrotic damage and diseases on its enemies, alongside its formidable control over lesser undead. This creature has a good Armor Class of 13 and a substantial pool of hit points totaling 120, which makes it resilient in battle. However, it is vulnerable to radiant damage, which can be a significant weakness for those who wield holy magic. The suffragan excels in dexterity and constitution, making it both agile and tough, while it falters in charisma, indicating its terrifying presence rather than natural charm. Notably, the suffragan can animate the dead it has killed, using them to create a small army of skeletons or zombies, which adds to its threat level.</summary>
 
 <detail>

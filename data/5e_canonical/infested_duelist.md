@@ -1,6 +1,8 @@
 <MonsterName/>Infested Duelist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>144</HP>
 <summary>The Infested Duelist is a chaotic neutral humanoid creature that presents a formidable challenge in combat. With a high armor class of 18 and a robust pool of 144 hit points, it can withstand a significant amount of damage. Its Dexterity score of 20 gives it an exceptional +5 modifier, allowing it to deliver rapid attacks and evade many incoming assaults. The Infested Duelist showcases a mix of melee and ranged capabilities, with powerful attacks and unique abilities that leverage its connection to toxins and nature. However, it is vulnerable to certain conditions despite its immunities. Its challenge rating of 9 signifies that it can be a serious threat to parties of lower levels, primarily due to its high offensive output and tactical advantages in combat.</summary>
 
 <detail>

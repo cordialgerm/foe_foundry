@@ -1,6 +1,8 @@
 <MonsterName/>Dragon, Sand Adult</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>18</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>270</HP>
 <summary>The Sand Adult Dragon is a formidable creature that embodies the essence of elemental power and cunning. As a Huge neutral evil dragon, it commands great respect and fear throughout the realms. With a remarkably high Armor Class of 20 and an impressive 270 hit points, it proves to be a challenging opponent. The creature excels in both offense and defense, with its powerful physical attacks and unique abilities that disrupt enemy actions. While it possesses several strengths, such as damage immunities and resistances, one notable weakness is its reliance on terrain, as its Sand Camouflage ability only works in sandy environments. Overall, this dragon is a significant threat in combat, capable of inflicting both physical harm and debilitating conditions on its adversaries.</summary>
 
 <detail>

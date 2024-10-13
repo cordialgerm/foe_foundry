@@ -1,6 +1,8 @@
 <MonsterName/>Magma Octopus</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Magma Octopus is a large elemental being that thrives in volcanic environments. With an impressive hit point total of 147 and a challenge rating of 8, it poses a significant threat to adventurers. Its natural armor grants it an Armor Class of 16, making it fairly difficult to hit. The Magma Octopus excels in close combat, utilizing its powerful tentacles, while also harnessing the elemental power of fire. It is immune to fire damage, rendering most fire-based attacks ineffective against it. However, its reliance on lava for survival can be considered a weakness, as it becomes vulnerable to cold damage when it is forced to spend too long outside of lava. Adventurers must be cautious of its ability to grapple multiple foes and the devastating area damage from its magma blast.</summary>
 
 <detail>

@@ -1,7 +1,9 @@
 <MonsterName/>Worg</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
 <Subtype/>animal</Subtype>
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>26</HP>
 <summary>A Worg is a large, malevolent wolf-like creature with a cunning intellect and a taste for flesh. Unlike ordinary wolves, Worgs are capable of speech and often ally with goblins or orcs, serving as mounts or hunting companions. They are vicious predators that enjoy the thrill of the hunt, using their size and strength to overpower their prey. Worgs are often found in the wild, where they terrorize travelers and settlements. Their sharp teeth and powerful jaws make them deadly foes in combat, and their intelligence allows them to devise ambushes and traps.</summary>
 
 <summary>The Worg is a large monstrosity that serves as a cunning and predatory creature in the realms of Dungeons & Dragons. With a challenge rating of 1/2, it poses a moderate threat to low-level adventurers and is often found lurking in forests or mountainous areas. The Worg is characterized by its robust physical strength and agility, complemented by a keen sense of hearing and smell, making it an effective hunter. However, its relatively low intelligence and charisma may limit its social interactions and strategic planning. Its combat effectiveness is marked by strong attack capabilities, particularly through its bite, which can knock opponents prone. Though it possesses decent armor class and hit points, it can be taken down by more experienced players if they exploit its weaknesses.</summary>

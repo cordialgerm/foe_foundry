@@ -1,6 +1,8 @@
 <MonsterName/>Gbahali</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Gbahali is a formidable Huge Beast characterized by its impressive physical prowess and adaptability in natural environments. With a solid Armor Class of 15 afforded by its natural armor and substantial Hit Points totaling 126, it can withstand considerable punishment in battle. This creature is agile, with a movement speed of 50 feet, allowing it to close distances quickly. However, it is unaligned, making it primarily driven by instinct rather than moral considerations. As a Challenge Rating 6 creature, it poses a moderate threat to adventurers. Though it has a low Intelligence score of 2, indicating very bad cognitive capabilities, its Strength at 19 reflects an exceptionally strong physical presence, while its Dexterity and Constitution scores of 14 and 19 respectively suggest good agility and durability. Notably, the Gbahali excels in stealth, benefiting from its unique ability to camouflage seamlessly into its surroundings.</summary>
 
 <detail>

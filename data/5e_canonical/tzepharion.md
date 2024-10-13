@@ -1,6 +1,8 @@
 <MonsterName/>Tzepharion</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>110</HP>
 <summary>Tzepharion is a formidable large fiend characterized by its lawful evil nature, operating primarily as a cunning and vicious adversary in battle. With a challenge rating of 8, it possesses a strong blend of physical prowess and magical capabilities, making it a dangerous foe for any party. Its defenses include a commendable armor class of 16 and significant hit points totaling 110, allowing it to withstand considerable damage. Tzepharion’s strengths lie in its powerful melee attacks and its ability to manipulate the battlefield through the Eye of Rage ability and a form of soul displacement. While it is immune to fire and poison damage and resistant to cold as well as non-magic attacks unless made with silvered weapons, it does have notable weaknesses, especially against intelligent foes who can resist its rage-inducing abilities.</summary>
 
 <detail>

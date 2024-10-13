@@ -1,6 +1,8 @@
 <MonsterName/>Atavist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Atavist is a medium humanoid creature that embodies the traits of lawful evil alignment. It is characterized by its formidable physical presence and unique abilities that enhance its combat effectiveness. With a challenge rating of 4, the Atavist is capable of delivering significant damage while being tough to take down, thanks to its high armor class of 16 and solid hit points totaling 75. It possesses several strengths, including resistance to necrotic and poison damage, which makes it resilient against a range of attacks. However, its low wisdom and charisma scores indicate vulnerabilities in perception and social interactions, making it less effective in situations that require insight or charisma-based skill checks. Notably, the Atavist can adapt its physical form at the start of its turn, providing it with tactical advantages.</summary>
 
 <detail>

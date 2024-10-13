@@ -1,6 +1,8 @@
 <MonsterName/>Infernal Centaur</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Infernal Centaur is a formidable creature with a unique combination of features that make it both a fierce combatant and a strategic ally to hell hounds. As a Medium Fiend with a lawful evil alignment, it has a strong sense of authority and dominance, particularly over fire-based creatures. It possesses a solid Armor Class of 15, making it somewhat resilient in combat. With 60 hit points, it can withstand a fair amount of damage, placing it in the Challenge Rating 4 category, which is appropriate for a mid-level encounter. One notable strength of the Infernal Centaur is its fire immunity, which allows it to stand strong against fire attacks. However, its limitations include a moderate Dexterity, which affects its mobility and initiative to some extent.</summary>
 
 <detail>

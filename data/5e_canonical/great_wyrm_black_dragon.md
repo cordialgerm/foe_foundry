@@ -1,6 +1,8 @@
 <MonsterName/>Great Wyrm Black Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>22</AC>
+<HP/>735</HP>
 <summary>The Great Wyrm Black Dragon is a formidable and awe-inspiring creature known for its immense power and cunning. As a Gargantuan dragon, it commands a significant presence on the battlefield, utilizing its strengths to dominate foes with both physical attacks and innate magic. With an exceptionally high Armor Class of 22 and an impressive pool of 735 hit points, this dragon is a tank capable of sustaining damage while dishing out severe harm to its enemies. Its abilities allow it to excel in stealth and combat, particularly when submerged in water, where it gains advantages in ambushing targets. Despite its strengths, the Great Wyrm does have vulnerabilities; once its legendary resistances are exhausted, its defenses can weaken, making it slightly more susceptible to attacks.</summary>
 
 <detail>

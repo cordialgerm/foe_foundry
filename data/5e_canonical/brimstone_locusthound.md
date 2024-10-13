@@ -1,6 +1,8 @@
 <MonsterName/>Brimstone Locusthound</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Brimstone Locusthound is a formidable Medium monstrosity known for its unique combination of mobility and disruptive area control. With a Challenge Rating of 3, it can pose a significant threat in battle, particularly due to its ability to obscure vision and confound attackers with its special abilities. Its notable strengths include a well-rounded set of physical abilities and the distinct Smoky Aura that can incapacitate foes within its vicinity. However, it has very low intelligence and charisma scores, indicating that it may not excel in complex strategies or social interactions. Despite its robust constitution, the locusthound may still struggle against foes with strong mental faculties or ranged attacks if not careful.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ravenfolk Doom Croaker</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (studded leather)</AC>
+<HP/>88</HP>
 <summary>The Ravenfolk Doom Croaker is a medium humanoid creature with a neutral alignment, known for its mystical abilities and manipulative nature. With a solid armor class of 14, this creature is equipped with studded leather armor and has 88 hit points, providing it a good base for resilience in combat. It has a challenge rating of 5, making it a formidable foe, as it can deal significant damage while also invoking fear and utilizing magic. The Doom Croaker excels in skills that allow for deception and intimidation, paired with impressive perception. Notably, it possesses magical resistance, making it particularly resilient against spells. However, its physical strength is average, primarily relying on dexterity and wisdom for its proficiency in combat and spellcasting.</summary>
 
 <detail>

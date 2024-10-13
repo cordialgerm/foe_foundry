@@ -1,6 +1,8 @@
 <MonsterName/>Oculo Swarm</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>15</AC>
+<HP/>82</HP>
 <summary>The Oculo Swarm is a formidable creature characterized as a large, swarm-type aberration that embodies a neutral evil alignment. With a robust armor class of 15 and a substantial pool of hit points totaling 82, it presents a considerable challenge in combat. The creature excels with a dexterous score of 20, granting it a very good dexterity modifier of +5, which greatly enhances its ability to evade attacks. It also boasts decent constitution and wisdom, reflecting its resilience and perceptiveness. Additionally, the swarm possesses remarkable immunity to many conditions, making it a difficult opponent to incapacitate or hinder. Its unique abilities and actions center around extracting the eyes of its foes, disorienting them, and utilizing its swarm nature to invade opponents' spaces, making it a challenging adversary in any encounter.</summary>
 
 <detail>

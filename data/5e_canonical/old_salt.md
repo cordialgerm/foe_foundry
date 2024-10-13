@@ -1,6 +1,8 @@
 <MonsterName/>Old Salt</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>117</HP>
 <summary>The Old Salt is a Medium Undead creature characterized by its neutral evil alignment. This monster possesses a challenging blend of physical resilience and debilitating attacks, making it a formidable opponent for adventurers. With an Armor Class of 15 and 117 hit points, it demonstrates a good level of durability. The Old Salt has strong dexterity, allowing for quick movements and effective attacks. However, its intelligence is average, which may limit its tactical versatility. As an undead creature, it boasts unique abilities that enhance its role as a relentless foe, particularly against those who wronged it in life. While it is immune to poison and resistant to necrotic damage, its weaknesses mainly lie in its inability to recover from certain conditions and the reliance on its unique mechanics for rejuvenation.</summary>
 
 <detail>

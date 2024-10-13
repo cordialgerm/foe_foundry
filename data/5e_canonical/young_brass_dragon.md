@@ -1,6 +1,8 @@
 <MonsterName/>Young Brass Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>110</HP>
 <summary>A Young Brass Dragon is an inquisitive and sociable creature, always eager to strike up conversations with travelers or adventurers it encounters. Its warm, metallic scales gleam in the sunlight, and its breath weapon can unleash either a searing heat or a powerful sleep-inducing gas. Young Brass Dragons are typically found in arid deserts or savannas, where they enjoy basking in the sun and collecting stories from those who pass through their territory. Although friendly and talkative, they are still dragons and fiercely defend their hoards when threatened.</summary>
 
 <summary>The Young Brass Dragon is a formidable creature known for its ability to manipulate fire and its affinity for conversation and persuasion. Sporting an Armor Class of 17 and a healthy pool of 153 hit points, this large dragon is well-equipped for battle. With a Challenge Rating of 9, it presents a considerable challenge to adventurers, offering 5,000 experience points upon defeat. The brass dragon excels in both attacking and spellcasting, drawing on its strength, intelligence, and charisma as key attributes that enhance its combat prowess. Notably, it is immune to fire damage, making it resilient against fire-based attacks. The dragon’s natural abilities also enable it to sustain itself with minimal resources, showcasing its self-sufficiency.</summary>

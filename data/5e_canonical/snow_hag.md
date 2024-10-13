@@ -1,6 +1,8 @@
 <MonsterName/>Snow Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Snow Hag is a medium-sized fey creature known for its neutral evil alignment. As a formidable foe, it brings a combination of magical abilities and physical attacks that can catch unsuspecting adventurers off guard. With a challenge rating of 3, the Snow Hag is best suited for mid-level encounters, presenting a balanced threat due to its strong magical arsenal and decent physical prowess. It has high hit points, a good armor class, and excels in cold environments while being particularly vulnerable to fire. This makes it a strategic opponent that can manipulate its surroundings and create illusions to mislead its enemies.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Hoard Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Hoard Golem is a formidable Huge Construct that serves as a guardian of wealth and treasure. Unaligned in its motives, it is often found in places where vast riches are stored, such as treasure hoards or vaults. The golem has impressive defensive capabilities with an Armor Class of 18, primarily due to its natural armor, and possesses significant durability with 161 hit points. It is designed to inflict heavy damage, particularly through its magical attacks, which include additional force damage. However, the Hoard Golem has low intelligence and charisma, making it less effective in situations requiring cunning or social interaction. Its main strengths lie in its resistance to numerous damage types, immunity to various conditions, and abilities to instill fear and disable opponents with its presence.</summary>
 
 <detail>

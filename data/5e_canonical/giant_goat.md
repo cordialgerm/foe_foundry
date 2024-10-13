@@ -1,6 +1,8 @@
 <MonsterName/>Giant Goat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>19</HP>
 <summary>A Giant Goat is a large, horned herbivore that roams mountainous terrain and hilly regions. It has thick, coarse fur and impressive, curved horns that it uses to defend itself or challenge other animals. Giant Goats are strong and resilient, able to climb steep slopes and navigate rocky landscapes with ease. Despite their size, they are usually peaceful creatures, grazing on grasses and shrubs. However, when threatened, a Giant Goat can deliver powerful headbutts, knocking enemies off their feet or sending them tumbling down slopes.</summary>
 
 <summary>The Giant Goat is a large beast known for its impressive physical strength and robust frame, making it a formidable creature despite its relatively low intelligence. With an Armor Class of 11, it has a decent chance of withstanding attacks, and the 22 hit points give it modest durability in battle. As a creature with a Challenge Rating of 1/2, it presents a manageable encounter for lower-level adventurers, primarily acting as an obstacle on journeys through hilly or mountainous terrain. Notably, its primary strength lies in its Ram attack, which can deal substantial damage and potentially knock opponents prone, allowing it to disrupt the flow of battle. However, its weaknesses include poor Dexterity and minimal magical abilities, indicating it relies on brute force rather than cunning or speed.</summary>

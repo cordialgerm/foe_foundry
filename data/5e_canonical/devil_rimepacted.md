@@ -1,6 +1,8 @@
 <MonsterName/>Devil, Rimepacted</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>91</HP>
 <summary>The Rimepacted Devil is a Medium fiend characterized by its lawful evil alignment. This creature possesses formidable combat abilities and unique traits that make it a significant threat in encounters. It has an Armor Class of 15, granting it decent protection through natural armor, and a substantial pool of 91 hit points. With a Challenge Rating of 6, it can effectively challenge players, dealing a mix of slashing and cold damage while utilizing its mobility and environmental control. Key strengths include its immunities to cold, fire, and poison damage, along with advantages on magic-related saving throws, making it a robust opponent against spellcasters. However, it has an average Dexterity score, which can be its downfall, particularly when it comes to stealth. </summary>
 
 <detail>

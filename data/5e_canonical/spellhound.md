@@ -1,6 +1,8 @@
 <MonsterName/>Spellhound</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Spellhound is a large monstrosity characterized by its lawful neutral alignment, making it a creature that acts according to its own code rather than succumbing to chaotic impulses. With a Challenge Rating of 4, it presents a moderate challenge for adventurers, possessing significant hit points of 102 and a decent Armor Class of 14 due to its natural armor. The Spellhound excels in combat through specific abilities that target spellcasting foes, making it particularly effective against magic users. However, its intelligence is notably low, which limits its strategic options outside of combat. Its strengths lie in its ability to sense and disrupt magical effects, alongside solid physical attack potential.</summary>
 
 <detail>

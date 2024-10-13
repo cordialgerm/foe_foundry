@@ -1,6 +1,8 @@
 <MonsterName/>Slow Storm</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>15</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>220</HP>
 <summary>The Slow Storm is a medium-sized elemental creature characterized by its chaotic nature and formidable power, often serving as a chaotic force of nature in battle. It possesses a high Armor Class of 19, significantly increasing its durability in combat, and boasts a substantial pool of 220 hit points. With exceptional Strength and Constitution scores, it can deal and withstand considerable damage, while its impressive Dexterity enhances its ability to dodge attacks. The Slow Storm's unique abilities, such as an area-effect wind storm and powerful lightning attacks, make it a challenging adversary for adventurers. However, it is vulnerable to magical attacks that bypass its resistance to nonmagical damage, and its reliance on direct confrontation can expose it to clever ranged tactics.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Empyrean</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>22</CR>
+<AC/>21</AC>
+<HP/>328</HP>
 <summary>The Empyrean is a gargantuan celestial being that epitomizes divine strength and grace. It serves as a potent force in combat, boasting exceptional physical capabilities and a suite of powerful spells. With an Armor Class of 21 and a staggering 328 hit points, it is a resilient opponent that can absorb substantial damage. The Empyrean's strengths lie in its high Strength and Constitution scores, allowing it to deal devastating attacks and withstand significant assaults. However, while its Dexterity and high Charisma allow it to evade and manipulate foes effectively, it can be overwhelmed by coordinated assaults if not careful. It is a challenging adversary rated at Challenge 22, rewarding players with 41,000 experience points upon defeat.</summary>
 
 <detail>

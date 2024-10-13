@@ -1,6 +1,8 @@
 <MonsterName/>Knight Captain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>14</CR>
+<AC/>20</AC>
+<HP/>171</HP>
 <summary>The Knight Captain is a formidable medium humanoid warrior, renowned for their resilience and combat prowess in battle. With an impressive Armor Class of 20, the Knight Captain exhibits exceptional defensive capabilities, complemented by a substantial pool of Hit Points totaling 171, which translates into a strong survivability on the battlefield. Their Challenge Rating of 14 signifies that they are a significant threat to adventurers, capable of inflicting serious damage while also bolstering their allies. Notably, the Knight Captain possesses a high Strength score of 20, enhancing their melee attack effectiveness, while their Charisma of 16 allows for impactful leadership and support through their special abilities. They are primarily hindered by their average Dexterity, which could affect their agility in combat.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Brumalek</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>40</HP>
 <summary>The Brumalek is a small and agile beast that functions as a wild creature within its environment. With a well-rounded set of abilities, it boasts decent survivability through its armor class and hit points, alongside powerful offensive and defensive capabilities, especially when working in packs. With a challenge rating of 1/2, it is considered a relatively weak opponent on its own, but when leveraging its special abilities like Pack Tactics and Snow Stride, it can pose greater threats in ambush situations or snowy terrains. Its weaknesses are highlighted by its poor strength and charisma scores, which limit its physical damage potential and social interactions. </summary>
 
 <detail>

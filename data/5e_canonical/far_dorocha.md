@@ -1,6 +1,8 @@
 <MonsterName/>Far Dorocha</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Far Dorocha is a cunning and malevolent creature from the Fey realm, particularly adept at manipulating shadows and influencing others with its dark powers. This medium-sized fey is classified as lawful evil and possesses a blend of stealth, spellcasting, and charm abilities that make it formidable in both combat and social situations. Its strong Dexterity and Charisma let it excel in stealth and deception, while its ability to resist damage from nonmagical attacks and immunity to certain conditions make it difficult to subdue. The Far Dorocha is especially potent in dim lighting or darkness, where it can enhance its defenses and abilities.</summary>
 
 <detail>

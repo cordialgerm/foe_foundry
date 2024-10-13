@@ -1,6 +1,8 @@
 <MonsterName/>Derro, Voidwarped</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>14</AC>
+<HP/>120</HP>
 <summary>The Derro, Voidwarped is a small humanoid creature with a neutral evil alignment. This unique being possesses an unusual combination of capabilities that make it a formidable opponent in the battlefield. It stands out due to its flight ability, high dexterity, and proficiency in magical attacks, along with its resilience against various forms of damage. While it does have weaknesses, particularly daylight sensitivity, its strengths lie in its potent attacks and spell-like abilities, which allow it to inflict substantial damage and incapacitate foes.</summary>
 
 <detail>

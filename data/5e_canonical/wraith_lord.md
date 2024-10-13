@@ -1,6 +1,8 @@
 <MonsterName/>Wraith Lord</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>13</CR>
+<AC/>15</AC>
+<HP/>171</HP>
 <summary>The Wraith Lord is a formidable Medium-sized undead creature, characterized by its chilling presence and potent abilities that instill fear and despair in its foes. It boasts an impressive Armor Class of 15 and a robust pool of 171 hit points, making it difficult to dispatch in battle. The Wraith Lord excels in mobility, capable of flying at a speed of 60 feet and walking at 40 feet, allowing it to position itself strategically during encounters. With a Challenge Rating of 13, it represents a significant threat to adventurers, dealing heavy necrotic damage while reducing enemies' hit points. Its various immunities and resistances make it exceptionally resilient, though it does suffer from light sensitivity. The Wraith Lord possesses a range of special abilities that reinforce its terrorizing capabilities and grant it the power to manipulate the battlefield.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Alazai</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>149</HP>
 <summary>The Alazai is a large elemental creature with a chaotic neutral alignment, making it unpredictable in combat and interactions. It boasts impressive physical stats, including a strong Constitution score that grants it a significant pool of hit points, and a high Strength that enhances its melee capabilities. The Alazai is particularly formidable due to its damage immunities to fire and poison, as well as its ability to remain invisible in many situations, complicating attacks against it. However, it has a weakness to cold iron weapons, which can disrupt its abilities and reveal its location. With a Challenge Rating of 10, it provides a considerable challenge to adventurers, especially with the combination of its strong melee attacks and powerful ranged fire spells.</summary>
 
 <detail>

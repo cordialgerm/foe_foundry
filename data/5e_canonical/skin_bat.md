@@ -1,6 +1,8 @@
 <MonsterName/>Skin Bat</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>28</HP>
 <summary>The Skin Bat is a small undead creature that embodies a blend of supernatural attributes and malevolent instincts. With a challenge rating of 1/2, it poses a moderate threat, especially in dimly lit environments where its qualities come into play. It has a decent Armor Class of 13 due to its natural armor and a moderate pool of hit points totaling 28. Though it lacks notable intelligence, the Skin Bat compensates with swift mobility, able to walk at 40 feet and fly at 10 feet, making it an agile combatant. However, it does have several weaknesses, notably its low Constitution and lack of control over any language, which limits its strategic capabilities in complex scenarios.</summary>
 
 <detail>

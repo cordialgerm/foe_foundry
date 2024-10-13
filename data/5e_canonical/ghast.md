@@ -1,6 +1,8 @@
 <MonsterName/>Ghast (Ghoul)</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>36</HP>
 <summary>A Ghast is an undead creature that has retained more of its intelligence and malevolence compared to a typical ghoul. Its decayed, emaciated body reeks of death, and its eyes burn with a dark, hungry light. Ghasts are highly dangerous, possessing both the paralyzing touch of ghouls and a toxic stench that sickens anyone nearby. They hunger for the flesh of the living and often lead packs of ghouls on savage hunts. Ghasts are relentless predators, using their cunning to ambush and outmaneuver their prey, and they are immune to most forms of exhaustion and fatigue, making them tireless foes.</summary>
 
 <summary>The ghast is a Medium-sized undead creature that lurks in the shadows, embodying a terrifying presence on the battlefield. With a challenge rating of 2, it poses a moderate threat to adventurers, especially with its paralyzing attacks and the foul stench that it emits, which can hinder and debilitate opponents. Although it has decent combat abilities, featuring strong strength and dexterity scores, the ghast also has notable weaknesses, including limited hit points and a reliance on close combat to deliver its devastating effects. Players should be cautious when engaging a ghast, as it can swiftly incapacitate numerous foes, but it remains vulnerable to radiant damage and effects that disrupt undead.</summary>

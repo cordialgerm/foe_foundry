@@ -1,6 +1,8 @@
 <MonsterName/>Sand Worm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>15</CR>
+<AC/>18</AC>
+<HP/>247</HP>
 <summary>The Sand Worm is a gargantuan monstrosity known for its formidable size and terrifying presence. With an Armor Class of 18 and a large pool of Hit Points totaling 247, this creature poses a significant threat. It has impressive physical attributes, especially its Strength of 28, which provides a very good attack bonus, complemented by a Constitution of 22, giving it good durability in combat. However, it suffers from below-average Dexterity, limiting its agility and speed in certain situations. The Sand Worm excels in burrowing and can traverse through solid rock, leaving behind a wide tunnel, making it a force to be reckoned with in its environment. Notably, its abilities can incapacitate foes and provide it with tactical advantages, though its low intelligence and charisma limit its effectiveness in social interactions.</summary>
 
 <detail>

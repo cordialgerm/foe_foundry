@@ -1,6 +1,8 @@
 <MonsterName/>Ogre, Void Blessed</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Ogre, Void Blessed, is a formidable and chaotic evil giant of large stature. It boasts considerable hit points and natural armor which make it resilient in combat, and its challenge rating of 6 indicates it poses a significant threat to adventurers. The creature possesses outstanding physical strength and constitution, enabling it to deal heavy damage and withstand attacks. However, it is hampered by low dexterity and intelligence, which limits its agility and tactical awareness. Notable for its psychic immunity and its ability to inflict mental confusion, the Void Blessed Ogre can blind its foes and unleash necrotic energy, making it a fearsome opponent in battle.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Sharkjaw Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Sharkjaw Skeleton is a formidable undead creature that embodies both the characteristics of a traditional skeleton and the predatory nature of a shark. This large, lawful evil creature serves as a menacing opponent in combat, utilizing its grappling abilities and devouring strikes to subdue and destroy foes. With a Challenge Rating of 1, it is suitable for a range of encounters, capable of dealing significant damage while also being resilient to various attacks. This creature has a mix of strong offensive capabilities, particularly through its Bite attack, and unique features like its devouring embrace that can control and inflict continuous damage on its prey.</summary>
 
 <detail>

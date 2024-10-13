@@ -1,6 +1,8 @@
 <MonsterName/>Arcane Blademaster</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>19</CR>
+<AC/>20</AC>
+<HP/>256</HP>
 <summary>The Arcane Blademaster is a formidable Medium humanoid creature that combines martial prowess with powerful spellcasting abilities. With an impressive Armor Class of 20 and a substantial pool of Hit Points totaling 256, this creature poses a significant threat in combat. The Arcane Blademaster's unique features allow it to excel in both close-quarters combat and magical engagements. Notably, its high Strength score of 20 (+5) makes it an exceptional melee combatant, while its Intelligence score of 20 (+5) empowers its spellcasting, allowing it to cast spells with great effectiveness. This creature can be particularly dangerous due to its ability to employ both devastating melee attacks and impressive area control spells, significantly impacting the battlefield. However, its reliance on spellcasting does mean that it could be vulnerable to certain types of magical disruption or high-level spells that target its concentration.</summary>
 
 <detail>

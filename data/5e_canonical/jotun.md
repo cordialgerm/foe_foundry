@@ -1,6 +1,8 @@
 <MonsterName/>Jotun</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>22</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>370</HP>
 <summary>The Jotun is a gargantuan giant characterized by its formidable stature and chaotic neutral alignment. With an impressive armor class of 20 and a staggering 370 hit points, it boasts exceptional defensive and offensive capabilities, making it a fearsome opponent on the battlefield. As a challenge rating 22 creature, it is recommended for high-level parties, offering significant experience upon defeat. The Jotun excels in melee combat with powerful attacks and has unique magical abilities that enhance its combat prowess. However, its low dexterity makes it less mobile, presenting a vulnerability against faster enemies. Notably, the Jotun's magical resistance and immunity to certain types of physical damage provide it with substantial resilience.</summary>
 
 <detail>

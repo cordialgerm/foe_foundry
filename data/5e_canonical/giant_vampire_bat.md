@@ -1,6 +1,8 @@
 <MonsterName/>Giant Vampire Bat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>60</HP>
 <summary>The Giant Vampire Bat is a large, unaligned beast that serves as a formidable foe in combat, primarily using its flying ability and biting attack to incapacitate its enemies. With a Challenge Rating of 2, it offers a moderate challenge for adventurers, boasting decent Armor Class and Hit Points. The bat's strengths lie in its high Strength and Dexterity, allowing it to effectively engage in melee combat and dodge attacks. However, it has poor Intelligence and Charisma scores, making it less effective in social interactions and problem-solving scenarios. Its notable abilities include echolocation, which provides it with a strong sensory advantage in its environment, and it can recover health by dealing necrotic damage with its bite.</summary>
 
 <detail>

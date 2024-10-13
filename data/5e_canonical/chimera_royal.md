@@ -1,6 +1,8 @@
 <MonsterName/>Chimera, Royal</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>15</CR>
+<AC/>17 (Regal Bearing)</AC>
+<HP/>189</HP>
 <summary>The Royal Chimera is a formidable Huge Monstrosity characterized by its neutral evil alignment and varied nature, combining elements of different creatures into a potent adversary. This creature has a high Armor Class of 17, reflecting its regal bearing, and boasts a substantial pool of hit points at 189, making it resilient in battle. With a Challenge Rating of 15, it poses a significant threat to adventurers, offering 13,000 experience points upon defeat. The chimera possesses considerable physical attributes, including a high Strength score of 21, granting it a good attack bonus of +10, and its Charisma of 20 enhances its spellcasting abilities, making it a versatile combatant that can engage opponents both physically and magically. However, it is relatively weaker in Intelligence with a score of 9, which limits its strategic prowess.</summary>
 
 <detail>

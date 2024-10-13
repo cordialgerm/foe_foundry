@@ -1,6 +1,8 @@
 <MonsterName/>Spree</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>84</HP>
 <summary>The Spree is a small fiend of chaotic evil nature, characterized by its unpredictable behavior and madness-inducing abilities. With an armor class of 15, it possesses a relatively good level of defense, supplemented by a considerable pool of hit points totaling 84. Despite its diminutive size, the Spree can be a formidable opponent due to its speed of 30 feet and its challenge rating of 5, indicating a significant threat level for adventurers at or around this level. The Spree excels in Dexterity and Constitution with modifiers that are good, making its attack rolls and damage resistances effective. However, it has lower Wisdom and Intelligence scores, rendering its saving throws against Wisdom attacks average and its general knowledge lower than other fiends. Notably, the Spree can trigger chaotic effects in combat, making encounters with it particularly dangerous and erratic.</summary>
 
 <detail>

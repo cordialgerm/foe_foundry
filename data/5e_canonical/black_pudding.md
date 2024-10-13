@@ -1,6 +1,8 @@
 <MonsterName/>Black Pudding (Ooze)</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>7</AC>
+<HP/>85</HP>
 <summary>The Black Pudding is a massive, formless ooze that flows and slithers through underground caverns and dungeons. Its body is a thick, acidic sludge that dissolves anything organic it touches, including flesh, wood, and metal. Black Puddings are blind, relying on their tremorsense to detect movement, and they instinctively engulf and dissolve anything they encounter. These oozes can split into smaller versions of themselves when struck, making them difficult to defeat by conventional means. They are often found lurking in forgotten tunnels or abandoned ruins, slowly consuming whatever they come across.</summary>
 
 <summary>The Black Pudding is a formidable Large ooze creature designed to present a considerable challenge to adventurers. With an Armor Class of 7 and a notable total of 85 hit points, this creature is resilient but does not rely on typical forms of defense. The unique challenge lies in its powerful and corrosive nature, allowing it to deal significant acid damage both on contact and through melee attacks. However, its low Dexterity makes it somewhat clumsy, affecting its ability to dodge attacks effectively. Its traits allow it to move seamlessly through various terrains, including climbing and swimming, giving it an advantage in environments where it can maneuver through obstacles. Adventurers need to be cautious, as nonmagical weapons and armor can degrade rapidly upon contact with the Black Pudding, leading to potentially disastrous consequences in prolonged encounters.</summary>

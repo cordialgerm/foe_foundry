@@ -1,6 +1,8 @@
 <MonsterName/>Moonlit King</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>17</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>204</HP>
 <summary>The Moonlit King is a formidable medium-sized fey creature that embodies the mystical and enchanting qualities of the night. He is neutral good in alignment, making him a protector of the natural world rather than an adversary. With a high armor class of 17, a substantial hit point pool totaling 204, and an impressive speed of 30 feet, he is a tough opponent. The Moonlit King's challenge rating of 17 implies that he is suitable for high-level encounters, providing a substantial experience reward of 18,000 XP upon defeat. Notable strengths of the Moonlit King include his immunity to cold, fire, and poison damage, alongside resistances to acid and non-cold iron weapon attacks. He also possesses a variety of powerful abilities and spellcasting capabilities that enhance his combat effectiveness. However, he is vulnerable to cold iron weapons, meaning that players can exploit this weakness if they have the right gear.</summary>
 
 <detail>

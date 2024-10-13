@@ -1,6 +1,8 @@
 <MonsterName/>Cackling Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>9</AC>
+<HP/>26</HP>
 <summary>The Cackling Skeleton is a medium-sized undead creature defined by its chaotic and malevolent nature. It has a challenge rating of 1/2, reflecting its capabilities in battle. The skeleton possesses a low Armor Class of 9 and a moderate pool of hit points totaling 26, making it relatively easy to defeat in direct combat. However, its strengths lie in its ability to demoralize and disrupt the actions of its foes through its unsettling laughter and mocking abilities. The Cackling Skeleton is particularly effective against living opponents, utilizing its cackle to impose disadvantage on their attacks. Its weaknesses are its vulnerability to effects that turn undead and its lower Dexterity score, which impacts its ability to dodge incoming attacks.</summary>
 
 <detail>

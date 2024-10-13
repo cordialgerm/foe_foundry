@@ -1,6 +1,8 @@
 <MonsterName/>Walled Horror</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Walled Horror is a formidable large undead creature that embodies chaos and malevolence. It is recognized for its impressive defenses and devastating psychic abilities, making it a fearsome adversary in combat. The horror's unique mobility, through walls, allows it to engage from unexpected angles while remaining anchored to a specific location, limiting its physical movement. With high hit points and significant damage immunities, it can withstand substantial attacks, but it remains immobile except for its Wall Hop trait which permits it to traverse surfaces. The creature excels at causing fear and mental anguish, leading to its effectiveness in combat; however, its dependency on walls for movement may prove to be a strategic weakness if an opponent can exploit this limitation.</summary>
 
 <detail>

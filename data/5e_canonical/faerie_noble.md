@@ -1,6 +1,8 @@
 <MonsterName/>Faerie Noble</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>12</CR>
+<AC/>16</AC>
+<HP/>165</HP>
 <summary>The Faerie Noble is a powerful Medium Fey creature characterized by its innate magical abilities, high Charisma, and strong mobility both in and out of combat. With an Armor Class of 16 and 165 hit points, this creature is quite resilient in battle and can easily evade attacks with its impressive Dexterity score of 20, which grants it a +5 modifier, considered very good. It is a cunning opponent with strong spellcasting capabilities, able to manipulate its size and the battlefield to its advantage. However, while it has many strengths, it is also reliant on its spells and abilities to control encounters, making it somewhat vulnerable if caught without its magical prowess.</summary>
 
 <detail>

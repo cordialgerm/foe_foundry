@@ -1,6 +1,8 @@
 <MonsterName/>Merchant Captain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (studded leather)</AC>
+<HP/>104</HP>
 <summary>The Merchant Captain is a medium humanoid character that embodies the role of a skilled negotiator and resourceful leader. With a focus on charisma and dexterity, this character is adept at both combat and social interactions, making them an engaging presence in any campaign. Their strengths lie in their high Charisma and Dexterity, allowing for effective spellcasting and athletic ability, while their Armor Class and considerable Hit Points afford them a decent level of survivability in battle. However, their low Strength and moderate Constitution may leave them vulnerable in direct physical confrontations. The Merchant Captain excels in situations requiring diplomacy or tactical finesse, utilizing their abilities to manipulate the battlefield in their favor.</summary>
 
 <detail>

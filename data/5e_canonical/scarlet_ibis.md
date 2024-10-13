@@ -1,6 +1,8 @@
 <MonsterName/>Scarlet Ibis</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>135</HP>
 <summary>The Scarlet Ibis is a medium-sized monstrosity known for its unique and potent curse abilities. With an Armor Class of 14, it possesses natural armor that provides decent protection in combat. It has a substantial pool of Hit Points totaling 135, which allows it to sustain damage and remain a threat for longer periods in a fight. The creature can fly at a speed of 40 feet and walk at 20 feet, granting it maneuverability in battle. The Scarlet Ibis is rated at Challenge Rating 5, making it a moderate threat that can provide a substantial challenge to adventurers. Its ability to inflict permanent curses adds an additional layer of danger, making it a notable foe.</summary>
 
 <detail>

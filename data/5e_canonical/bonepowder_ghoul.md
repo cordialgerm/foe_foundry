@@ -1,6 +1,8 @@
 <MonsterName/>Bonepowder Ghoul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>180</HP>
 <summary>The Bonepowder Ghoul is a menacing undead creature, classified as small and possessing a neutral evil alignment. Its formidable role in combat is reinforced by a strong mix of physical and magical abilities, allowing it to inflict both direct damage and debilitating effects on its targets. With a high armor class of 18, robust hit points totaling 180, and impressive dexterity and charisma, the Bonepowder Ghoul is a threat that combines agility with potent magical capabilities. However, it remains vulnerable to radiant damage, meaning it needs to be careful when facing divine or holy entities. Notably, the Bonepowder Ghoul can shape itself into a nearly immaterial form, allowing it to pass through tight spaces effortlessly, which adds a layer of tactical versatility to its encounters.</summary>
 
 <detail>

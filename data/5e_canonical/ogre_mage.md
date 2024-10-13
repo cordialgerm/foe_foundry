@@ -1,6 +1,8 @@
 <MonsterName/>Ogre Mage</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>7</CR>
+<AC/>16</AC>
+<HP/>102</HP>
 <summary>The Ogre Mage is a formidable large giant that blends physical might with magical prowess, making it a unique threat on the battlefield. With an Armor Class of 16 and a substantial pool of Hit Points totaling 102, it can withstand considerable damage before falling. The creature has a Challenge Rating of 7, granting 2,900 experience points upon defeat. The Ogre Mage's stats illustrate a balance between strength, constitution, and charisma. It possesses an impressive Strength of 18, which allows it to hit hard, and a good Constitution score of 16 that enhances its durability. However, its Dexterity is average, meaning it lacks speed and agility, making it easier for nimble opponents to evade its attacks. The Ogre Mage excels in deception and utility, featuring a range of innate spellcasting abilities that keep its enemies off balance and provide options for crowd control.</summary>
 
 <detail>

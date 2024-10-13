@@ -1,6 +1,8 @@
 <MonsterName/>Rakshasa, Servitor</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>32</HP>
 <summary>The Rakshasa, Servitor, is a medium-sized fiend characterized by its lawful evil nature. This creature is known for its cunning and deceptive abilities, which allow it to manipulate encounters in its favor. With an Armor Class of 13 and a total of 32 hit points (calculated as 5d8+10), it can withstand some punishment while dealing both melee and ranged damage effectively. The Servitor holds a challenge rating of 1/2, making it a manageable foe for lower-level adventurers but still capable of causing trouble with its spells and special abilities. Notably, it possesses limited immunity to magic and is adept at protecting its allies in combat with its unique reaction ability. However, it is vulnerable to piercing damage from magic weapons wielded by good-aligned creatures, which is a critical weakness that can be exploited.</summary>
 
 <detail>

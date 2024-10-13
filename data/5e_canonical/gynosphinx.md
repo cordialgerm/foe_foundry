@@ -1,6 +1,8 @@
 <MonsterName/>Gynosphinx (Sphinx)</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Gynosphinx is a powerful and intelligent creature with the body of a lioness and the head of a woman. It is known for its love of riddles and puzzles, often testing the wits of those who seek to pass through its territory. Gynosphinxes are highly magical beings, capable of casting powerful spells and manipulating time and space. They are often guardians of ancient temples or hidden knowledge, rewarding those who answer their riddles correctly and punishing those who fail. Though generally aloof and mysterious, Gynosphinxes can be fierce in battle, using their claws, spells, and flight to defeat foes.</summary>
 
 <summary>The Gynosphinx is a formidable large monstrosity that serves as both a powerful combatant and a master of illusions and mind manipulation. With an Armor Class of 17 and a substantial 204 hit points, it can endure considerable damage before falling in battle. The Gynosphinx possesses strong scores in Intelligence, Wisdom, and Charisma, granting it exceptional cognitive abilities and resilience against many forms of mental attacks. It can fly at a speed of 60 feet, allowing it to reposition itself quickly during combat. Its challenge rating of 11 indicates that it’s a significant threat to adventurers, capable of both dealing heavy damage and hindering their actions through psychic and magical capabilities.</summary>

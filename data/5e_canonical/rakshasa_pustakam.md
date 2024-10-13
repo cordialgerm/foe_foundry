@@ -1,6 +1,8 @@
 <MonsterName/>Rakshasa, Pustakam</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>91</HP>
 <summary>The Rakshasa, known as Pustakam, is a small, lawful evil fiend renowned for its cunning and magical prowess. With a commendable challenge rating of 5, it poses a significant threat, capable of dealing substantial psychic damage and charming opponents into submission. Despite its relatively modest armor class of 15 and hit points totaling 91, it more than makes up for this with its unique abilities, including limited magic immunity and the power to manipulate the minds of its foes. However, it is vulnerable to piercing damage from magic weapons wielded by good creatures, which can be exploited in combat situations. Overall, the Pustakam is a tricky adversary with potent combat capabilities and deceptive tactics.</summary>
 
 <detail>

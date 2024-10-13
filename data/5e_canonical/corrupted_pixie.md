@@ -1,6 +1,8 @@
 <MonsterName/>Corrupted Pixie</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>5</HP>
 <summary>The Corrupted Pixie is a tiny, chaotic evil fiend known for its deceptive nature and magical abilities. With a solid Armor Class of 15, it can withstand some attacks but is quite fragile, possessing only 5 hit points. Its speed allows it to walk 10 feet and fly 30 feet, making it agile and difficult to target. The Corrupted Pixie's challenge rating of 1/2 indicates that it poses a moderate threat to lower-level characters. Notably, its significant Dexterity score of 20 grants it a good chance to evade attacks, while its magical abilities allow it to manipulate others and cause chaos on the battlefield.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Dryad</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>22</HP>
 <summary>A Dryad is a fey spirit bound to a tree, often an oak or similar ancient tree, and serves as its guardian. Dryads have slender, graceful forms with skin that resembles bark, and their hair flows like leaves in the wind. They are shy, peaceful creatures, preferring to stay hidden in their forests and only interacting with those who respect nature. Dryads can move between trees, communicate with forest animals, and use their magic to charm or entangle those who threaten their woodland home. Though they are generally kind and nurturing, Dryads will defend their trees fiercely, using the power of nature to repel intruders.</summary>
 
 <summary>The Dryad is a Medium-sized Fey creature known for its strong connection to nature and its ability to magically influence the environment around it. With an armor class of 15, it is relatively tough for its challenge rating of 1/2, making it a suitable challenge for low-level adventurers. The Dryad has a total of 22 hit points, which provides it with some durability in combat, yet it is susceptible to fire damage, indicating a notable weakness. Its attributes reveal good physical and mental capabilities, particularly in wisdom and charisma, where it excels, making it effective at manipulation and perception. The Dryad is capable of using plants and animals to its advantage, allowing for interesting interactions in gameplay.</summary>

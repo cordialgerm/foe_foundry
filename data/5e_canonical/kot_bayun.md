@@ -1,6 +1,8 @@
 <MonsterName/>Kot Bayun</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>66</HP>
 <summary>The Kot Bayun is a medium-sized monstrosity that embodies a blend of cunning and charm, found in neutral alignments. This creature has a decent Armor Class of 15, providing it with good defenses against attacks, while its hit points total 66, which is above average for its Challenge Rating of 3. Its speed is relatively slow, with a walking pace of 20 feet. The Kot Bayun excels in stealth, leveraging its dexterous abilities to gain an upper hand in battles. It possesses strong charisma, enabling it to enchant and manipulate others effectively. However, it is not overly resilient in terms of Constitution, having a somewhat average score in that attribute. This creature's notable abilities include its Slumbering Song and Invisibility, allowing for strategic combat maneuvers.</summary>
 
 <detail>

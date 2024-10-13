@@ -1,6 +1,8 @@
 <MonsterName/>Drider</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>123</HP>
 <summary>A Drider is a horrifying fusion of drow and spider, created by the dark goddess Lolth as a punishment or reward for her followers. The upper body of a Drider is that of a dark elf, while its lower half is the body of a giant spider, complete with eight legs and venomous fangs. Driders retain their drow intelligence and magical abilities, making them formidable opponents. They are often found in the Underdark, weaving webs in vast caverns or leading hunts against enemies of their goddess. Driders are cruel and merciless, reveling in the suffering of their foes as they trap and torment them.</summary>
 
 <summary>The Drider is a large monstrosity that embodies a blend of arachnid and humanoid traits, making it a fearsome opponent in the world of Dungeons & Dragons. With a notable challenge rating of 6, this creature possesses strong physical capabilities and is especially dangerous when it can leverage its web-based abilities. The Drider is equipped with a good balance of defensive and offensive skills, boasting a solid armor class of 17 and a substantial pool of hit points totaling 114. However, it suffers from a significant weakness when exposed to sunlight, resulting in disadvantage on attacks and perception checks relying on sight. This duality results in a creature that is potent in darkness but vulnerable in light.</summary>

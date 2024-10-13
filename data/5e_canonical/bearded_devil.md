@@ -1,7 +1,9 @@
 <MonsterName/>Bearded Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
 <Subtype/>devil</Subtype>
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>52</HP>
 <summary>A Bearded Devil is a grotesque fiend with a humanoid body and a long, snake-like beard that writhes with a life of its own. These devils are often clad in dark armor, and they carry vicious glaives that they wield with great skill. Their beards are not just for show; they can lash out at enemies, infecting them with a toxic, infernal venom. Bearded Devils are disciplined soldiers in the armies of Hell, known for their cruelty and martial prowess. They enjoy causing pain and suffering in battle and serve higher-ranking devils as enforcers or bodyguards.</summary>
 
 <summary>The Bearded Devil is a medium fiend that embodies a mix of brute strength and cunning. With an Armor Class of 13 and 52 hit points, it presents a moderate challenge to adventurers, fitting a Challenge Rating of 3. It is known for its unique combination of resilience and potent attacks, particularly through its multiattack capability, allowing it to engage foes with both its genetically enhanced beard and a glaive. This fiend is particularly effective against characters with low Constitution due to its poisoning ability, which prevents healing. However, its lower Intelligence and Charisma make it less effective in social situations and strategic spellcasting.</summary>

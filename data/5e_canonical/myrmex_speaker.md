@@ -1,6 +1,8 @@
 <MonsterName/>Myrmex Speaker</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Myrmex Speaker is a powerful elemental creature that plays a supportive and strategic role on the battlefield. It is neutral good in alignment, showcasing its nature-oriented demeanor and connection to earth and stone. With an armor class of 16, it has a solid defense due to its natural armor and a substantial pool of hit points totaling 119, making it difficult to take down. Its challenge rating is 9, indicating that it presents a significant challenge for adventurers. The Myrmex Speaker is very mobile, capable of walking, burrowing, and climbing at a speed of 40 feet each, which allows it to maneuver easily through various terrains. Its strengths include high physical attributes in Strength and Constitution, allowing it to deal and withstand damage effectively, while its Dexterity is average, making it less effective at avoiding attacks compared to other behaviors. The creature is uniquely equipped to avoid many common debuffs since it has immunities against exhaustion, paralysis, and more. However, it does not have any particularly high Charisma, which may affect its social interactions.</summary>
 
 <detail>

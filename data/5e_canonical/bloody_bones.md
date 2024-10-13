@@ -1,6 +1,8 @@
 <MonsterName/>Bloody Bones</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>55</HP>
 <summary>The Bloody Bones is a Medium-sized monstrosity characterized by its chaotic evil nature. Residing within the realm of horrors, it serves as a disturbing opponent in combat, leveraging both psychological and physical strategies to impose fear and inflict damage. It boasts a solid Armor Class of 13, allowing it to sustain some attacks while maintaining a health pool of 55 hit points, which translates to average durability for its Challenge Rating of 3, making it a notable threat to low-to-mid-level adventurers. Its strengths lie in its powerful melee attacks and its ability to frighten enemies. However, its lower Dexterity limits its ability to doge attacks, and its Intelligence is particularly poor, indicating that it may struggle in complex scenarios.</summary>
 
 <detail>

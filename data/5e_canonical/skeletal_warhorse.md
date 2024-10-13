@@ -1,6 +1,8 @@
 <MonsterName/>Skeletal Warhorse</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>30</HP>
 <summary>The Skeletal Warhorse is a Large undead creature that serves as a formidable mount and ally to necromancers or those who command the undead. It possesses notable physical attributes, particularly in strength, with a Strength score of 18, granting it a very good +4 modifier. The warhorse is agile enough for its size, with a Dexterity score of 12 and a +1 modifier, which is average. It has a moderate Constitution score of 14, allowing it to withstand some damage due to its +2 modifier. However, it has low intelligence, wisdom, and charisma, making it ineffective in social situations or complex problem-solving. The warhorse's primary vulnerability is bludgeoning damage; it is immune to poison damage and the poisoned condition and does not suffer from fatigue. With a movement speed of 50 feet, it can cover ground quickly in combat.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Mithral Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>44</HP>
 <summary>The Mithral Dragon Wyrmling is a medium-sized dragon that embodies neutrality and possesses striking abilities that make it a formidable opponent despite its young age. With an impressive flying speed and the ability to resist magical effects, this wyrmling excels in maneuverability and magic resilience. Its combat capabilities are reinforced by a sharp bite and a powerful area-effect breath weapon that hinders movement and inflicts damage. However, being a young dragon, despite its potential, it may still struggle against more experienced adventurers. The creature thrives on agility and offensive spells, making it a noteworthy foe in a campaign setting.</summary>
 
 <detail>

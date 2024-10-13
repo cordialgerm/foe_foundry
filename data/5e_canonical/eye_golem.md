@@ -1,6 +1,8 @@
 <MonsterName/>Eye Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>11</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Eye Golem is a formidable Large Construct with an unaligned nature, primarily serving as a potent guardian or tool for its creator. With a strong Armor Class of 20 and a significant pool of 157 hit points, it can withstand considerable punishment in battle. It boasts exceptional physical strength with a Strength score of 22, granting it a +6 modifier, and a good Constitution score of 20, giving it a +5 modifier for resilience. However, its Dexterity is notably low at 9, resulting in a -1 modifier, making it vulnerable to ranged attacks. The golem’s damage immunities include poison, psychic, and radiant damage, and it is particularly resilient against nonmagical attacks not made with adamantine. Its unique abilities enable it to deliver devastating attacks, inflict blindness, and resist magical spells effectively, making it a significant threat in combat scenarios.</summary>
 
 <detail>

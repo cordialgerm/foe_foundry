@@ -1,6 +1,8 @@
 <MonsterName/>Adult Bronze Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>15</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>212</HP>
 <summary>The Adult Bronze Dragon is a noble and majestic creature with shimmering, bronze-colored scales and proud, crest-like horns. These dragons are often found near coastlines or large bodies of water, where they watch over the seas and the creatures that inhabit them. Bronze Dragons are known for their sense of justice and duty, often aligning themselves with good causes or defending coastal communities from threats. Their breath weapon is a devastating blast of electricity, capable of stunning or outright destroying their enemies. Bronze Dragons are skilled swimmers and can even manipulate water, summoning powerful tidal waves or manipulating storms.</summary>
 
 <summary>The Adult Bronze Dragon is a formidable and wise creature within the realm of Dungeons & Dragons 5e. This *Huge* Dragon stands as a powerful adversary or a potential ally, known for its ability to manipulate the elements, particularly the waters and storms. With an Armor Class of 18 and a substantial Hit Points total of 287, it can withstand significant damage in combat, making it a very tough opponent. The dragon has a Challenge Rating of 18, denoting it as a high-level threat capable of engaging well-prepared adventurers. Its primary strengths include a variety of powerful melee attacks, formidable breath weapons, and impressive innate spellcasting abilities, while its weaknesses may lie in its reliance on maintaining a higher Armor Class with its Legendary Resistance. </summary>

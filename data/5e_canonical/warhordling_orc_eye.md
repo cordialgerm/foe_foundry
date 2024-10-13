@@ -1,6 +1,8 @@
 <MonsterName/>Warhordling Orc Eye</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>32</HP>
 <summary>The Warhordling Orc Eye is a Medium humanoid creature with a good balance of combat ability and spellcasting prowess, making it a formidable opponent on the battlefield. With an Armor Class of 14 and 32 hit points, it has a decent level of durability, allowing it to withstand some damage while engaging opponents. The creature excels in Wisdom and has a number of beneficial skills such as medicine and insight, giving it a strong role as a support character in combat. However, its Dexterity is average, limiting its agility. It possesses a unique combination of aggressive movement through its Aggressive Charge ability and can cast spells that provide both offensive capabilities and supportive healing, positioning the Warhordling Orc Eye as a versatile threat. </summary>
 
 <detail>

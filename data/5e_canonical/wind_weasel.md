@@ -1,6 +1,8 @@
 <MonsterName/>Wind Weasel</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Wind Weasel is a medium-sized fey creature embodying chaotic neutral alignment. It possesses a unique duality, allowing it to appear as a small weasel or shift into a whirlwind form, granting it both mobility and concealment in combat. With a challenge rating of 2, it presents a moderate threat to adventurers, showcasing its strengths in stealth and agile attacks. Its ability to traverse through tight spaces without hindrance and evade opportunity attacks makes it a slippery opponent. However, its primary weaknesses lie in its lower defenses, with an armor class of 13, and reliance on stealth and mobility rather than brute force.</summary>
 
 <detail>

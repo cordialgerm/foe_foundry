@@ -1,6 +1,8 @@
 <MonsterName/>Colláis</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Colláis is a large monstrosity that embodies a fierce and imposing presence in any encounter. It possesses a good Armor Class of 16 due to its natural armor, and with 150 hit points, it can sustain a fair amount of damage in battle, making it a durable opponent. Its challenge rating of 10 reflects the considerable power it wields, posing a serious threat to adventurers who might underestimate it. The creature is neutral in alignment and utilizes a combination of brute strength and magical resilience to dominate its foes. The Colláis's strengths lie in its formidable melee attacks and its ability to control the battlefield, while its weaknesses include a limited range of defenses against magic. Notably, it can throw enemies away with its Impale and Toss ability, which can disrupt enemy formations and strategies.</summary>
 
 <detail>

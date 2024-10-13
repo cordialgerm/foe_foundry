@@ -1,6 +1,8 @@
 <MonsterName/>Iron Guardian</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>14</CR>
+<AC/>20</AC>
+<HP/>210</HP>
 <summary>The Iron Guardian is a formidable large construct known for its high durability and offensive capabilities, making it a powerful asset in any combat scenario. With an impressive armor class of 20 and a substantial hit point total of 210, it can withstand considerable punishment before being defeated. The guardian excels in melee combat with its multiattack capability, allowing it to strike twice with a powerful sword attack that deals significant slashing damage. A challenge rating of 14 indicates that it poses a serious threat to adventurers, offering 11,500 experience points upon defeat. While its offensive abilities are noteworthy, the Iron Guardian's defenses are equally impressive; it is immune to fire damage and is able to regain health from such attacks, along with being resistant to many magical effects. However, its mental capabilities are significantly lacking, evidenced by its low intelligence and charisma scores, indicating that it relies purely on the commands of its creator.</summary>
 
 <detail>

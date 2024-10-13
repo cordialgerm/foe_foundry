@@ -1,6 +1,8 @@
 <MonsterName/>Brain Hood</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>22</HP>
 <summary>The Brain Hood is a tiny aberration with a neutral evil alignment, presenting a unique blend of psychic and physical capabilities. It is characterized by its ability to merge with beasts, effectively controlling them in a combat scenario while leveraging its innate spellcasting and physical attacks. With an armor class of 13 and 22 hit points, it relies on its dexterity and intelligence to outmaneuver opponents, making it a tricky foe to defeat. However, its low strength makes it less potent in direct melee combat, with a single attack dealing relatively minor bludgeoning damage. Its intelligence and wisdom are higher than average, granting it effective spellcasting ability and heightened perceptions, but it can be vulnerable due to its relatively low hit points and the need to rely on other creatures for defensive measures once bonded.</summary>
 
 <detail>

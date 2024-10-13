@@ -1,6 +1,8 @@
 <MonsterName/>Mytholabe</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Mytholabe is a large, unaligned Construct designed for combat and support roles. With a notable Armor Class of 18, it can withstand a decent amount of damage while boasting 152 hit points, which allows it to endure in battle. Its flight speed of 30 feet and hovering ability provide tactical mobility, although it cannot walk, which limits its ground presence. The creature is designed to excel against magical effects due to its Magic Resistance and damage immunities, making it a formidable opponent for spellcasters. However, it has a very low intelligence and charisma, meaning it lacks in social interactions and problem solving. </summary>
 
 <detail>

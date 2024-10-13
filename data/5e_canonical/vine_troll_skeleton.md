@@ -1,6 +1,8 @@
 <MonsterName/>Vine Troll Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>153</HP>
 <summary>The Vine Troll Skeleton is a formidable Large Undead creature that embodies the duality of fear and resilience. With a combination of high hit points and notable regenerative abilities, it stands as a strong combatant in battles. This creature showcases exceptional physical strength and durability, making it a daunting opponent, especially when it is near its magical binding to a tree or dryad. However, its vulnerabilities to acid and fire damage, alongside its dependency on its binding for survival, pose significant weaknesses that can be exploited. Its challenge rating of 9 reflects its ability to inflict high damage and withstand attacks, while its lack of intelligence and charm further emphasizes its role as a mindless predator rather than a strategic combatant.</summary>
 
 <detail>

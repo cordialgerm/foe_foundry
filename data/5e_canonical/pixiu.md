@@ -1,6 +1,8 @@
 <MonsterName/>Pixiu</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Pixiu is a large and powerful monstrosity known for its keen ability to locate treasure and its insatiable appetite for wealth. With an impressive Armor Class of 15 and a substantial pool of 112 hit points, it is well-equipped to withstand attacks in combat. Although it lacks the ability to communicate verbally, its understanding of all languages makes it an intriguing entity in social interactions. The Pixiu thrives in scenarios where it can consume valuables, and its unique abilities provide both defensive and offensive capabilities, particularly in battles involving magical items. Though it is susceptible to strategies that exploit its lack of intelligence, it compensates for this through physical strength and its protective nature.</summary>
 
 <detail>

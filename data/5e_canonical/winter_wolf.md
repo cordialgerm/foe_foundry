@@ -1,6 +1,8 @@
 <MonsterName/>Winter Wolf</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>75</HP>
 <summary>A Winter Wolf is a massive, intelligent wolf with icy white fur and the ability to breathe a freezing blast of cold air. These fearsome creatures are often found in cold, arctic environments, where they hunt in packs or serve as mounts for frost giants or other cold-aligned beings. Winter Wolves are cunning and can communicate with other wolves, often leading packs in coordinated attacks. In addition to their powerful bite and claws, their freezing breath makes them particularly dangerous in combat. They are highly resistant to cold and thrive in frozen landscapes.</summary>
 
 <summary>The Winter Wolf is a large monstrous creature known for its cold resilience and keen senses. With an armor class of 13 and hit points totaling 67, it serves as a formidable opponent in combat, particularly due to its high strength and mobility, boasting a walking speed of 50 feet. It has a Challenge Rating of 3, making it a moderately challenging encounter for adventurers. The Winter Wolf excels in both close combat and area control through its Cold Breath ability, which can inflict significant damage on multiple foes. It has some weaknesses, such as lower intelligence and charisma, making it less effective in social interactions. Overall, the Winter Wolf is an aggressive predator that can significantly impact the battlefield with its tactical advantages and powerful attacks.</summary>

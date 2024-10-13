@@ -1,6 +1,8 @@
 <MonsterName/>Plesiosaurus (Dinosaur)</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Plesiosaurus is a large, aquatic dinosaur with a long neck, broad body, and flippers adapted for swimming. Found in deep lakes, rivers, and coastal waters, these creatures are fearsome predators, using their long necks to strike at fish and other marine life with deadly precision. Plesiosauruses are strong swimmers and can dive deep beneath the water to hunt or escape danger. Though generally not aggressive towards surface creatures, they can become territorial if disturbed or provoked, and their powerful jaws are capable of delivering a crushing bite.</summary>
 
 <summary>The Plesiosaurus is a large beast that primarily inhabits aquatic environments. Known for its notable swimming capabilities and powerful bite, it has a challenge rating of 7, allowing it to pose a considerable threat to lower-level adventurers while offering substantial experience points to those who defeat it. The creature has a strong physical presence with high strength, making it capable of dealing significant damage in combat. However, its low intelligence and charisma suggest it is not adept at interacting meaningfully with characters outside of combat. Overall, the Plesiosaurus excels in water-based combat due to its swimming ability but lacks versatility on land, which can be exploited by clever adventurers.</summary>

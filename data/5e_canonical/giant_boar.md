@@ -1,6 +1,8 @@
 <MonsterName/>Giant Boar</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>42</HP>
 <summary>The Giant Boar is a massive, aggressive beast with thick, bristly fur and sharp tusks. These creatures roam forests and plains, foraging for roots, fungi, and small animals, but they are quick to charge at anything that threatens them. A Giant Boar's charge is a fearsome attack, capable of knocking down even the largest foes. Despite their size, Giant Boars are fast and resilient, and their tough hide makes them difficult to harm. They are highly territorial and will defend their herds or young with ferocity, making them a formidable presence in the wild.</summary>
 
 <summary>The Giant Boar is a robust creature that embodies the traits of a large beast with impressive physical capabilities. With an armor class of 12, it can withstand moderate attacks, while its hit points totaling 63 give it substantial endurance in combat, rated at a Challenge Rating of 2. The boar is well-suited for frontline engagement due to its speed of 40 feet, allowing it to close distances quickly. Its Strength score of +3 contributes to its potent melee attacks, while its Constitution score of +3 provides strong resilience. However, it is notably lacking in Intelligence, Wisdom, and Charisma, making it poor at mental contests and communication. The boar's distinct abilities, such as Charge and Relentless, enhance its lethality and survivability, making it a formidable opponent despite its mediocre Dexterity and lack of any noteworthy senses or languages.</summary>

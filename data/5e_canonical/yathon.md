@@ -1,6 +1,8 @@
 <MonsterName/>Yathon</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Yathon is a large humanoid creature notable for its strong physical prowess and aerial mobility. With an armor class of 15 and considerable hit points totaling 152, it presents a formidable challenge in combat, reflected in its challenge rating of 7. The Yathon excels in grappling smaller foes and can dish out significant damage with its powerful claw attacks and greatsword strikes. Its ability to fly at a speed of 60 feet allows it to maneuver effectively in battle, providing both offensive and defensive options. However, it has a weakness: while it possesses impressive senses with blindsight out to 120 feet, the Yathon is rendered vulnerable to attacks if it becomes deafened, losing its echolocation. Its low charisma suggests a lack of social abilities.</summary>
 
 <detail>

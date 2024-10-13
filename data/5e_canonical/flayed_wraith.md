@@ -1,6 +1,8 @@
 <MonsterName/>Flayed Wraith</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>12</AC>
+<HP/>67</HP>
 <summary>The Flayed Wraith is a Medium undead creature with a neutral evil alignment, embodying a tormented spirit that brings a unique blend of psychological and physical torment to its foes. With an Armor Class of 12 and 67 hit points, which can absorb a fair amount of damage due to its Constitution score of 17 (+3), the Flayed Wraith presents a moderate threat. Its ability to hover and fly at a speed of 60 feet allows it to maneuver easily around the battlefield, making it difficult for enemies to pin it down. However, it does have a poor Strength score of 9 (-1), indicating that it is not effective in direct physical confrontations. The creature is heavily reliant on its special abilities and attacks, especially in dealing with both damage and conditions it inflicts.</summary>
 
 <detail>

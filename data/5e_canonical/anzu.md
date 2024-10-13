@@ -1,6 +1,8 @@
 <MonsterName/>Anzu</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Anzu is a large monstrosity that embodies a formidable presence in combat. With a Challenge Rating of 9, it has the potential to deal significant damage while also exhibiting resilience through its natural armor, which grants it an Armor Class of 16. Anzu's strengths lie in its impressive array of attacks and unique abilities, allowing it to engage effectively in both melee and ranged situations. However, it has a low Intelligence score, making it less adept at problem-solving or casting spells. The creature is particularly hazardous when it can surprise its opponents with its mobility, enabling it to deal substantial damage while evading counterattacks. This monster is also resistant to fire and lightning damage, granting it an advantage against many forms of magical attacks. </summary>
 
 <detail>

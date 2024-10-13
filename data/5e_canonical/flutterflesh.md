@@ -1,6 +1,8 @@
 <MonsterName/>Flutterflesh</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>187</HP>
 <summary>The Flutterflesh is a formidable Large Undead creature that embodies the chaotic evil alignment. This monster is notable for its high mobility, being able to walk at a speed of 60 feet and fly at 10 feet, allowing it to maneuver around the battlefield effectively. With an impressive pool of 187 hit points generated from 22d10 plus 66, it is quite resilient. Although it has a good Armor Class of 16 due to its natural armor, it is vulnerable to radiant damage while immune to necrotic and poison damage. The Flutterflesh presents a significant challenge, rated at a Challenge Rating of 12, making it a dangerous encounter for parties of adventurers.</summary>
 
 <detail>

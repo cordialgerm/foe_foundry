@@ -1,6 +1,8 @@
 <MonsterName/>Rift Swine</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Rift Swine is a large aberration that embodies chaos and unpredictability, making it a formidable and intriguing foe in any encounter. Its chaotic neutral alignment denotes a lack of concern for law or chaos, focusing solely on its own whims. With an armor class of 15 due to its natural armor and a substantial pool of hit points totaling 127, the Rift Swine can withstand considerable damage in battle. As a Challenge Rating 5 creature, it presents a moderate challenge for adventurers, providing 1,800 experience points upon defeat. While it shows strong physical capabilities with a Strength score of 18 (+4) and a Constitution score of 17 (+3), its Intelligence and Charisma are notably low, at 4 (-3) and 5 (-3), respectively. This leads to very bad performance in social interactions and intellectual challenges.</summary>
 
 <detail>

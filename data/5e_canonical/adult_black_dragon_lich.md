@@ -1,6 +1,8 @@
 <MonsterName/>Adult Black Dragon Lich</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>17</CR>
+<AC/>19</AC>
+<HP/>253</HP>
 <summary>The Adult Black Dragon Lich is a formidable undead creature that combines the menacing presence of a dragon with the dark magic of undeath. Possessing a challenge rating of 17, this creature is capable of significantly impacting the battlefield with its powerful attacks and spellcasting abilities. With a high Armor Class of 19 and an impressive pool of 253 hit points, it is well-equipped to withstand considerable punishment. Its exceptional Strength score of 22 allows it to deliver devastating physical attacks, while its Charisma of 16 enhances its spellcasting. Although it has vulnerabilities typical of undead, such as being susceptible to radiant damage, its array of immunities, including damage immunity to acid, necrotic, and poison, makes it a dangerous foe. The Adult Black Dragon Lich also boasts a variety of special abilities and spells that can manipulate both the battlefield and its opponents' actions, making it a tactical presence that adventurers must approach with caution.</summary>
 
 <detail>

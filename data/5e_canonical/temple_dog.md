@@ -1,6 +1,8 @@
 <MonsterName/>Temple Dog</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>97</HP>
 <summary>The Temple Dog is a Medium Celestial creature associated with good-aligned powers, designed to serve as both a protector and a powerful combatant. With a Challenge Rating of 5, it presents a significant threat in battle, particularly against less experienced adventurers. Its strengths lie in its considerable offensive potential, bolstered by its ability to deal extra radiant damage and manipulate the battlefield with its movement capabilities. The Temple Dog is resilient, immune to poisons, and resistant to radiant damage, making it a tough adversary for many. However, its lack of magical attacks and non-verbal communication may limit its effectiveness in certain situations.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Rat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>7</HP>
 <summary>A Giant Rat is a larger, more aggressive version of the common rat, often found in dark, abandoned areas like sewers, dungeons, or ruined buildings. Its sharp teeth and claws allow it to gnaw through wood and stone, and its pack mentality makes it particularly dangerous when encountered in groups. While individually weak, Giant Rats are often found in swarms, overwhelming enemies with sheer numbers. They are carriers of disease, and their bites can spread sickness to those unlucky enough to be attacked. They are scavengers, feeding on anything they can find, including corpses.</summary>
 
 <summary>The Giant Rat is a small beast often found in urban landscapes and rural settings. Despite its tiny stature, it possesses a surprising amount of agility and cunning in combat situations, making it a nuisance for adventurers and townsfolk alike. With an Armor Class of 12 and only 7 hit points, it is relatively weak and can be easily dispatched by most characters. However, its advantages lie in its Keen Smell special ability and Pack Tactics, enabling it to effectively coordinate attacks with allies. This makes the Giant Rat a more formidable opponent when in groups, posing a challenge primarily to lower-level characters.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Lazavik</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>36</HP>
 <summary>Lazavik is a small, neutral good fey creature characterized by its unique abilities and affinity for swampy environments. This tiny being possesses a good balance of mobility and defense, highlighted by its notable defensive capabilities, including a decent Armor Class of 14 and a substantial hit point pool of 36, making it resilient in combat for a creature of its size. With a Challenge Rating of 3, Lazavik can pose a moderate challenge for adventurers, offering 700 XP upon defeat. Its impressive Dexterity score of 18 gives it an exceptional bonus of +4 to important skills like stealth, allowing it to navigate the battlefield effectively and evade attacks. However, while it possesses advantageous resistances and immunities, its combat strength primarily lies in its unique special abilities which enhance both its survival and support roles in combat.</summary>
 
 <detail>

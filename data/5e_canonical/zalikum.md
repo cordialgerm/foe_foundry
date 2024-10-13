@@ -1,6 +1,8 @@
 <MonsterName/>Zalikum</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>103</HP>
 <summary>Zalikum is a huge construct with a neutral evil alignment, designed to be a formidable foe in combat. It possesses a robust Armor Class of 16 due to its natural armor, and with 103 hit points, it can withstand significant damage. Its movement capabilities are notable, with a walking speed of 20 feet and the ability to fly at 80 feet, making it agile in the air. As a Challenge Rating 7 creature, it poses a serious threat to adventurers, granting 2,900 experience points upon defeat. Zalikum's strengths include high strength and constitution scores, which enhance its physical attacks and durability, while its weaknesses lie in its limited intelligence and wisdom, making it less effective in tasks requiring cleverness or insight.</summary>
 
 <detail>

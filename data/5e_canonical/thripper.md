@@ -1,6 +1,8 @@
 <MonsterName/>Thripper</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>104</HP>
 <summary>The Thripper is a Medium humanoid with a chaotic neutral alignment, characterized by its cunning and agile nature. Possessing a notable armor class of 15 due to its natural armor, it significantly excels in Dexterity with a modifier of +4, making it very good at landing attacks and avoiding damage. With a healthy pool of hit points totaling 104, derived from rolling 16d8 and adding 32, the Thripper can withstand considerable punishment in battle, giving it a solid presence on the battlefield. It specializes in combat against fey creatures, leveraging its unique abilities and weaponry to gain the upper hand. However, it is vulnerable to cold damage and primarily resistant to nonmagical bludgeoning, piercing, and slashing attacks. </summary>
 
 <detail>

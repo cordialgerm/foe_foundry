@@ -1,6 +1,8 @@
 <MonsterName/>Mastiff</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>5</HP>
 <summary>A Mastiff is a large, powerful breed of dog known for its strength, loyalty, and intelligence. These dogs are often used by hunters, soldiers, or guards to track, protect, or assist in battle. With their keen sense of smell and strong bite, Mastiffs can be formidable foes when provoked. They are known for their bravery and will fiercely defend their masters or territory against any threat. Though they are typically friendly and loyal to those they trust, they can become aggressive when commanded or threatened.</summary>
 
 <summary>The Mastiff is a medium-sized beast commonly found as a loyal companion or guardian. With an Armor Class of 12 and a modest 9 hit points, it is relatively fragile, making it vulnerable in direct confrontations. However, its Challenge Rating of 1/8 indicates it poses a minor threat in combat, primarily due to its speed of 40 feet and notable skills. The Mastiff excels in perception with an exceptional +3 modifier, which is enhanced by its Keen Hearing and Smell ability, granting it advantage on relevant checks. Despite its strengths, the Mastiff has low intelligence and charisma scores, limiting its capabilities in social and cognitive interactions.</summary>

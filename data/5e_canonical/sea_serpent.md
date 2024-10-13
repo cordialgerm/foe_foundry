@@ -1,6 +1,8 @@
 <MonsterName/>Sea Serpent</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>16</CR>
+<AC/>17</AC>
+<HP/>247</HP>
 <summary>The Sea Serpent is a gargantuan monstrosity that resides in aquatic environments, showcasing its dominance with impressive physical prowess and resilience. With an exceptional Armor Class of 17 and a substantial 247 hit points, it is well-equipped to withstand prolonged engagements. This creature has a Challenge Rating of 16, signifying that it poses a formidable threat to adventurers and is worth 15,000 experience points upon defeat. Its primary advantages lie in its powerful melee attacks, with the ability to grapple foes, push them back, and deliver devastating damage while maintaining versatility through its amphibious nature allowing it to thrive both in water and on land. On the downside, the Sea Serpent has low Dexterity and Intelligence scores, suggesting vulnerabilities in agility and mental prowess.</summary>
 
 <detail>

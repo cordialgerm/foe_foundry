@@ -1,6 +1,8 @@
 <MonsterName/>Kryt</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>120</HP>
 <summary>The Kryt is a medium humanoid creature that embodies a neutral evil alignment. Known for its agility and sinister abilities, the Kryt excels in dealing damage while evading threats, making it a formidable opponent. It possesses a high strength score, contributing to its strong melee attacks, while its decent constitution allows it to absorb a fair amount of damage. However, it struggles intellectually with a low intelligence score and has an average dexterity that does not significantly contribute to its defenses. Its powers center around foresight and psychological manipulation, which can greatly affect its enemies' combat effectiveness. Additionally, the Kryt's notable resilience to exhaustion makes it a challenging opponent over extended encounters.</summary>
 
 <detail>

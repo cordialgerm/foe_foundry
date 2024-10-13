@@ -1,6 +1,8 @@
 <MonsterName/>Akkorokamui</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>189</HP>
 <summary>Akkorokamui is a gargantuan celestial creature known for its chaotic good nature. As a powerful ally, it plays a significant role in protecting and healing allies in combat while also posing a formidable presence on the battlefield. With a Challenge Rating of 12, Akkorokamui excels at dealing damage, regeneration, and offering unique healing advantages to others. Its strengths lie in its impressive statistics, notably a high Strength score of 21 and a Wisdom score of 20, both contributing to its effectiveness in combat. The creature does have weaknesses, including vulnerability to physical attacks when it is unable to regenerate, but overall, it can be a tremendous asset in any encounter due to its unique abilities and magical capabilities.</summary>
 
 <detail>

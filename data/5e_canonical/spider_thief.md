@@ -1,6 +1,8 @@
 <MonsterName/>Spider Thief</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>66</HP>
 <summary>The Spider Thief is a small construct that embodies agility and cunning, designed for stealthy operations and swift movements. With an armor class of 13 and hit points totaling 66, it possesses decent durability for its challenge rating of 2, making it a moderate threat to unprepared adventurers. This creature shines in its ability to navigate through environments quietly, aided by its Stealth skill, and is equipped to pull itself towards targets efficiently using its hooked wire ability. However, despite its proficient attack capabilities, it struggles with low Intelligence and Charisma scores, making it limited in social interactions and mental challenges. The creature exhibits immunity to many conditions and damage types, which allows it to endure various combat situations effectively, though it remains vulnerable to psychic damage.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Cactid</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Cactid is a large, plant-like creature that embodies both a defensive and offensive presence in combat. With a relatively high Armor Class of 14, it can withstand a good amount of damage, bolstered by its significant Hit Points total of 76, which equates to 8d10 plus 32. This makes it a resilient foe, particularly at Challenge Rating 3, where it poses a moderate threat to adventurers. However, the Cactid is notably vulnerable to fire damage, which is a considerable weakness that can be exploited by players. Although its Dexterity score is low, resulting in a bad modifier, its exceptional Constitution allows it to absorb damage effectively. The creature's special abilities, such as its Tendril attacks and the ability to drain the life force from grappled opponents, make it dangerous in close encounters.</summary>
 
 <detail>

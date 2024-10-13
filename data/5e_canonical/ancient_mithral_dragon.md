@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Mithral Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>22</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>490</HP>
 <summary>The Ancient Mithral Dragon is a gargantuan and neutral dragon that showcases extraordinary power and versatility in combat. With an impressive Armor Class of 20, its natural defenses combined with an astounding 490 hit points make it a formidable opponent. It boasts a Challenge Rating of 22, indicative of its capabilities to challenge high-level adventurers effectively. Known for its maneuverability, it can walk at 80 feet and fly at 40 feet, allowing it to control the battlefield with ease. This dragon possesses a mixture of magical and physical abilities, including traits that protect it from damage and magic, making it exceptionally resilient. Its strengths lie in its high Dexterity and Constitution, providing it with agility and durability, while its only weaknesses are limited to slashing damage, as it is immune to it. Noteworthy special abilities include legendary resistance and magic resistance, which allow it to resist spells and magically-inflicted adverse effects, reinforcing its role as a strategic and challenging foe for adventurers.</summary>
 
 <detail>

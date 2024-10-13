@@ -1,6 +1,8 @@
 <MonsterName/>Chemosit</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Chemosit is a medium fiend characterized by its neutral evil alignment, serving as a formidable adversary in combat. With a well-rounded offensive capability and notable resistances, the Chemosit can be a significant challenge for adventurers. This creature possesses good armor class and hit points, making it tough to defeat, while its speed allows for mobility in battle. Notably, its ability to charm and manipulate opponents using its Inviting Song can turn the tide of combat. However, the Chemosit is vulnerable to magical piercing, bludgeoning, and slashing damage from silvered weapons, which can exploit its defenses effectively.</summary>
 
 <detail>

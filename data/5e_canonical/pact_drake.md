@@ -1,6 +1,8 @@
 <MonsterName/>Pact Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Pact Drake is a small, lawful neutral dragon renowned for its cunning and magical abilities, functioning primarily as an overseer of pacts and agreements. With a solid defense thanks to its natural armor and a commendable health pool of 45 hit points, it can withstand a fair amount of punishment in battle, making it a moderate threat to adventurers at its challenge rating of 1. The drake's key strengths lie in its spellcasting, which includes divination spells that enhance its ability to monitor and influence creatures' decisions. It possesses very good intelligence and charisma, allowing it to both sense deceit and influence outcomes through magic. However, its physical strength is average, which limits its direct combat effectiveness. </summary>
 
 <detail>

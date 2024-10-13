@@ -1,6 +1,8 @@
 <MonsterName/>Pact Vampire</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>15</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>178</HP>
 <summary>The Pact Vampire is a formidable Medium Undead creature with an evil alignment, known for its cunning and its ability to manipulate the battlefield through both brute force and magical abilities. With an armor class of 16, it is capable of absorbing a decent amount of damage, supported by a high health pool of 178 hit points, equivalent to 17d8 + 102. As a Challenge Rating 15 creature, it provides a significant challenge to adventurers, earning 13,000 experience points when defeated. The vampire excels with strong physical and magical attributes, featuring a Strength score of 22 (+6, exceptional) and a Charisma score of 20 (+5, very good). However, it does have weaknesses associated with sunlight and radiant damage, making it vulnerable in certain conditions.</summary>
 
 <detail>

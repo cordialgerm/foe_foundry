@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Beetle Swarm</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Clockwork Beetle Swarm is a large and unaligned creature formed of numerous mechanical beetles that move and attack as a collective unit. This swarm is notably agile, able to fly and walk effectively, posing a significant threat to its foes with its high damage potential and impressive defenses. With a challenge rating of 3, it can challenge moderately experienced adventurers. It possesses remarkable resistances and immunities that make it hardy in battle, able to bypass many common forms of attack. However, its intelligence and charisma scores are very low, which limits its ability to interact with others and perform intelligent maneuvers outside of combat.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ice Maiden</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>84</HP>
 <summary>The Ice Maiden is a Medium Fey creature that embodies a chilling elegance and wields formidable powers associated with ice and snow. As a lawful evil creature, she charms and manipulates those around her, making her a cunning adversary in combat and social interactions. With an Armor Class of 16, she is relatively defensively capable, and her 84 hit points provide a good amount of durability. However, she has a specific vulnerability to fire damage, which can be exploited by her enemies. The Ice Maiden's challenge rating of 6 indicates that she should be a noticeable threat to a party of adventurers, rewarding them with 2,300 experience points upon defeat.</summary>
 
 <detail>

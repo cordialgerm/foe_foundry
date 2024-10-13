@@ -1,6 +1,8 @@
 <MonsterName/>Child of Yggdrasil</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Child of Yggdrasil is a formidable Large Aberration characterized by its neutral evil alignment. This creature serves as an embodiment of the chaotic and destructive aspects of nature, wielding considerable power in the form of its unique abilities and physical attributes. With an Armor Class of 14 due to its natural armor and a substantial pool of Hit Points totaling 112, the Child of Yggdrasil has robust defensive and offensive capabilities. While it has significant strengths, including a high Wisdom score that grants it exceptional perception, it is vulnerable to fire damage. Overall, it presents a significant challenge for adventurers unprepared for its elusive combat tactics and destructive powers.</summary>
 
 <detail>

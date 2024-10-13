@@ -1,6 +1,8 @@
 <MonsterName/>Adult Gold Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>17</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>256</HP>
 <summary>The Adult Gold Dragon is a formidable foe in combat, recognized for its immense power and versatility. As a Huge Dragon with a Challenge Rating of 20, it boasts an impressive Armor Class of 19 and a staggering 324 hit points, allowing it to withstand significant damage. This creature excels in both melee and ranged combat, utilizing its high Strength and Charisma to deliver devastating attacks while also providing potent support to allies through spells and abilities. The dragon can fly at remarkable speeds, making it mobile on the battlefield, while its fire immunity gives it an edge against flame-based attacks. However, despite its strengths, the dragon's reliance on Charisma for its spellcasting may leave it vulnerable to certain spells that target its mental fortitude. </summary>
 
 <detail>

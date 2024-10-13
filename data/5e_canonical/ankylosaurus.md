@@ -1,6 +1,8 @@
 <MonsterName/>Ankylosaurus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Ankylosaurus is a massive beast characterized by its heavy armor and impressive physical prowess. It serves primarily as a tank in combat due to its high armor class and substantial hit points, making it difficult to take down. Its challenge rating of 3 indicates it poses a moderate threat to adventurers, offering 700 experience points upon defeat. Among its notable attributes, the Ankylosaurus excels in strength and constitution, allowing it to absorb damage while dealing significant melee damage with its tail attack. However, it is relatively slow-moving and has low intelligence and charisma, making it less effective outside of physical confrontations. </summary>
 
 <detail>

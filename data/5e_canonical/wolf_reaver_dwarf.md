@@ -1,6 +1,8 @@
 <MonsterName/>Wolf Reaver Dwarf</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>16</AC>
+<HP/>76</HP>
 <summary>The Wolf Reaver Dwarf is a formidable Medium humanoid that embodies the chaotic alignment, making it unpredictable in combat but powerful in its offensive capabilities. With an Armor Class of 16, a considerable pool of 76 hit points, and high Constitution, the Wolf Reaver Dwarf is resilient and difficult to take down. The creature excels in physical prowess, boasting an exceptional Strength score of 18, allowing it to deal significant melee damage. While it possesses lower scores in Intelligence and Charisma, which are average or below average, its real strengths lie in combat tactics, resilience, and the ability to coordinate effectively with allies. The creature’s abilities make it a dangerous opponent, especially when it can leverage its pack tactics and reckless attacks.</summary>
 
 <detail>

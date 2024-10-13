@@ -1,6 +1,8 @@
 <MonsterName/>Giant Fire Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>9</CR>
+<AC/>14</AC>
+<HP/>127</HP>
 <summary>The Giant Fire Elemental is a formidable creature commonly encountered by adventurers in fiery or volcanic environments. As a Huge elemental being, it embodies the essence of fire, making it exceedingly powerful in combat. With a solid Armor Class of 14 and a substantial pool of Hit Points totaling 127, it is equipped to withstand considerable damage before being defeated. The elemental excels in mobility, boasting a walking speed of 50 feet, allowing it to traverse the battlefield quickly. Its challenge rating of 9 indicates that it poses a serious threat to lower-level adventurers, potentially yielding 5,000 experience points upon defeat. However, its reliance on fire damage means that water-based attacks can exploit its weakness, inflicting significant harm.</summary>
 
 <detail>

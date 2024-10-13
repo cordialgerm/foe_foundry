@@ -1,6 +1,8 @@
 <MonsterName/>Gold Dragon Wyrmling (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Gold Dragon Wyrmling is a formidable Medium-sized dragon, known for its striking golden scales and powerful presence. As a creature of its kind, it embodies both beauty and might, serving as a strong opponent in combat scenarios. With a Challenge Rating of 4, it presents a significant challenge for adventurers, boasting decent defensive capabilities, good hit points, and the ability to deal substantial damage. Its strengths lie in its elemental fire immunity and potent breath abilities, making it a dangerous foe in battle. However, despite its power, a Gold Dragon Wyrmling is not invincible and can be bested with strategic play.</summary>
 
 <detail>

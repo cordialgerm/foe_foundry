@@ -1,6 +1,8 @@
 <MonsterName/>Mold Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Mold Zombie is a Medium undead creature imbued with chaotic evil intentions. It thrives in grim environments, using its ability to spread disease and necrotic energy to weaken its foes. With a solid armor class of 13 and a moderately high hit point total of 75, it can endure a good amount of damage before being taken down. Its primary strengths lie in its resistant traits, including damage immunities to necrotic and poison damage. However, it has notable weaknesses, such as a very low Dexterity score, making it slow and susceptible to ranged attacks. Its challenge rating of 3 makes it a moderate threat for adventurers, able to deal decent amounts of bludgeoning and necrotic damage, while its unique special abilities allow it to affect the battlefield in significant ways.</summary>
 
 <detail>

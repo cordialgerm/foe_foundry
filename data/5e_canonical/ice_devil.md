@@ -1,7 +1,9 @@
 <MonsterName/>Ice Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
 <Subtype/>devil</Subtype>
+<CR/>14</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>180</HP>
 <summary>An Ice Devil is a towering, insect-like fiend with a hard, icy exoskeleton and a long, spiked tail. These devils come from the frozen realms of the Nine Hells and are known for their cold, calculating cruelty. Ice Devils wield powerful polearms and can command the frigid air around them to summon ice storms or freeze their enemies solid. Their natural resistance to cold and ice-based attacks makes them formidable foes in icy environments. In addition to their martial prowess, Ice Devils are skilled tacticians, often leading infernal armies or serving as lieutenants to more powerful devils.</summary>
 
 <summary>The Ice Devil is a formidable large fiend known for its menacing combination of physical strength and magical capabilities. With an armor class of 18 and a whopping 180 hit points, it demonstrates considerable resilience in battle, making it a challenging adversary with a challenge rating of 12. This creature is particularly effective in combat due to its high strength and constitution scores, reflecting an exceptional physical presence as well as robust durability. It possesses resistance to nonmagical and non-silvered weaponry and is immune to cold, fire, and poison damage, enhancing its survivability in various encounters. Notably, its magic resistance grants it an advantage on saving throws against spells, allowing it to withstand magical attacks more effectively. However, it could be vulnerable to keen strategic thinking from opponents who can exploit its limited weaknesses.</summary>

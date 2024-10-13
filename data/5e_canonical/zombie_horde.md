@@ -1,6 +1,8 @@
 <MonsterName/>Zombie Horde</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>8</AC>
+<HP/>75</HP>
 <summary>The Zombie Horde is a formidable foe in the realm of undead creatures, comprised of multiple zombies working as a collective. As a large undead entity, it carries both strength and resilience, with a total of 75 hit points and a good Constitution modifier, making it quite durable in combat. However, its low Armor Class of 8 leaves it vulnerable to attacks. With a Challenge Rating of 4, the Zombie Horde can offer a decent challenge for adventurers while becoming a greater threat when its numbers are at full capacity. Its exceptional ability to regenerate hit points by consuming the lives of its prey makes it a formidable opponent, but its vulnerabilities to area effects can be exploited by clever adventurers.</summary>
 
 <detail>

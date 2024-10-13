@@ -1,6 +1,8 @@
 <MonsterName/>Qorgeth</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>23</CR>
+<AC/>21 (natural armor)</AC>
+<HP/>370</HP>
 <summary>Qorgeth is a gargantuan fiend embodying chaotic evil, serving as a formidable opponent in combat encounters. With a robust armor class of 21 due to its natural armor and an impressive pool of 370 hit points, Qorgeth is capable of withstanding significant damage. Its challenge rating of 23 reflects its potential threat level, granting 50,000 experience points upon defeat. Qorgeth poses a unique combination of strengths, including exceptional offensive capabilities, damage immunities to various weapon types, and the ability to manipulate the battlefield with its burrowing and spellcasting abilities. However, it has a significant weakness in Dexterity, affected by its low modifier of -2, which may hinder its ability to dodge attacks.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Lakescourge Lotus</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Lakescourge Lotus is a Medium undead creature with chaotic evil tendencies. It possesses a significant amount of health and defense, indicated by its Armor Class of 15 and 90 hit points, making it a formidable opponent in combat. This creature is adept at manipulating its aquatic environment, showcasing strengths in stealth and offense through its unique abilities. With a Challenge Rating of 5, the Lakescourge Lotus presents a good challenge to adventurers, capable of poisoning foes and evading damage through its reflective form. Its weaknesses lie in its lack of proactive offensive spells and the potential vulnerability to area-effect attacks that deal damage other than bludgeoning, piercing, or slashing.</summary>
 
 <detail>

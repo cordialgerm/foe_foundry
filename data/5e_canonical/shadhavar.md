@@ -1,6 +1,8 @@
 <MonsterName/>Shadhavar</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural)</AC>
+<HP/>82</HP>
 <summary>The Shadhavar is a large neutral monstrosity that embodies both grace and danger, making it a formidable opponent in combat. With a challenge rating of 2, it offers a reasonable threat level for adventurers, possessing a robust combination of magical abilities and melee attacks. Notably, it has an armor class of 14, hit points totaling 82, and an impressive mobility with a walking speed of 50 feet, allowing it to maneuver effectively during battle. The Shadhavar excels in charm and subterfuge, utilizing its stealth skill, but its intelligence is notably weak, making it less effective in complex strategic planning. The creature's magical attributes and unique abilities make it a significant challenge, especially for unprepared adventurers.</summary>
 
 <detail>

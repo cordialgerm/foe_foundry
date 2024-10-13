@@ -1,6 +1,8 @@
 <MonsterName/>Giant Lizard</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>19</HP>
 <summary>A Giant Lizard is a large, cold-blooded reptile found in deserts, jungles, and caves. Its long, muscular body is covered in tough scales, and it moves with a slow, deliberate gait. Though not as dangerous as some other giant creatures, Giant Lizards are formidable when provoked, using their powerful tails and sharp teeth to defend themselves. They are excellent climbers and can scale walls or cliffs with ease. Giant Lizards are often domesticated or used as mounts by desert-dwelling tribes, prized for their endurance and ability to traverse difficult terrain.</summary>
 
 <summary>The Giant Lizard is a large beast that serves as a simple but effective adversary in Dungeons & Dragons. It has a moderate level of durability and damage potential, making it a suitable creature for lower-level encounters. With an armor class of 12, it has average defense against attacks, while its hit points totaling 19 grant it a decent amount of survivability in battle. Its challenge rating of 1/4 signifies that it is an easy foe, presenting minimal risk to more experienced adventurers. The creature possesses a good climbing speed, enhancing its mobility in various environments. However, its intelligence and charisma are markedly low, indicating that it lacks cunning and social skills, making it predictable in combat scenarios.</summary>

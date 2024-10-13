@@ -1,6 +1,8 @@
 <MonsterName/>Lindwurm</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>15</AC>
+<HP/>136</HP>
 <summary>The Lindwurm is a formidable Large Dragon with a neutral evil alignment, often lurking in icy terrain. This creature boasts a sturdy armor class of 15 and a total of 136 hit points, giving it a fair amount of resilience in combat. With a challenge rating of 6, it presents a significant threat to adventurers, capable of dealing considerable damage with its bite and claw attacks. The Lindwurm excels in environments that are snowy or icy, leveraging its special abilities which allow it to move effortlessly across such terrain. However, it has notable weaknesses, particularly its vulnerability to fire damage and an average intelligence score that limits its capacity for strategic combat. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>J’ba Fofi Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The J’ba Fofi Spider is a large, unaligned beast known for its lethal hunting prowess and stealthy tactics in forested environments. It has a formidable combination of attributes, with notable strength and dexterity, making it both dangerous in direct combat and skilled in evasive maneuvers. With an armor class of 18, this creature is resilient and can absorb substantial damage, boasting a total of 75 hit points, which equates to a good level of endurance. However, its challenge rating of 3 indicates that while it is a threat, it is not invincible, especially against coordinated groups. The J’ba Fofi Spider’s special abilities enhance its stealth, mobility, and control of battlefield space, while its actions include powerful melee attacks that can inflict both piercing and poison damage. Nevertheless, it has weaknesses, such as an exceptionally low charisma, making it less effective in social encounters.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Zanskaran Viper</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>34</HP>
 <summary>The Zanskaran Viper is a formidable beast, categorized as a large creature with no particular alignment. It boasts a solid Armor Class of 14, protected by its natural armor, and has a reasonable pool of hit points at 34, derived from rolling four ten-sided dice plus an additional 12. This creature moves at a speed of 30 feet per turn, allowing it to engage in combat effectively. With a Challenge Rating of 1, it presents a moderate threat level to adventurers, yielding 200 experience points upon defeat.</summary>
 
 <detail>

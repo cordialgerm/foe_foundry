@@ -1,6 +1,8 @@
 <MonsterName/>Muraenid</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural)</AC>
+<HP/>45</HP>
 <summary>The Muraenid is a large, neutral evil monstrosity that thrives in aquatic environments. With a Challenge Rating of 2, it presents a moderate threat, totaling 450 experience points for its slayers. This creature has a robust defensive capability due to its natural Armor Class of 14 and a decent pool of Hit Points totaling 45, equating to an average of 7d10+7. Its strengths lie primarily in its physical power and control over both battle and aquatic environments, utilizing Pack Tactics to gain an advantage in combat when allies are nearby. However, it has weaknesses in its low Charisma score, which can hinder social interactions. Notably, the Muraenid's abilities allow for unique interactions with aquatic creatures, making it a proficient controller of its underwater realm.</summary>
 
 <detail>

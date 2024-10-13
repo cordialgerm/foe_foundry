@@ -1,6 +1,8 @@
 <MonsterName/>Dragonleaf Tree</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Dragonleaf Tree is a formidable and imposing large plant creature that acts as a guardian of its draconic master. With a robust defense and a significant amount of health, this creature boasts an Armor Class of 16 due to its natural armor, along with 152 hit points, which translates to a high resilience in combat situations. Its challenge rating of 8 indicates that it is a significant threat to adventurers and can pose a considerable challenge, providing 3,900 experience points upon defeat. The Dragonleaf Tree is unaligned, making it neutral in ethical considerations. It has an impressive Strength score of 16, contributing to its effective melee attacks, while its Constitution score of 19 ensures it can withstand damage effectively. However, it is intellectually limited, with an Intelligence of 5, and it cannot communicate verbally, but it understands Draconic, making it a loyal protector. While its dexterity is average at 14, enabling decent movement, its slow speed of 15 feet limits its mobility on the battlefield.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Adult River Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>17</CR>
+<AC/>18</AC>
+<HP/>252</HP>
 <summary>The Adult River Dragon is a formidable Huge dragon known for its mastery over both land and water. It possesses a blend of strength, agility, and magical abilities, making it a dangerous opponent for any adventurer. With an impressive Armor Class of 18 and a substantial pool of 252 hit points, this creature is tough and resilient. Its speed is remarkable; it can walk at 60 feet, fly at 80 feet, and swim at a nimble 90 feet, allowing for rapid movement across different terrains. The Adult River Dragon has a Challenge Rating of 17, signifying it as a high-level threat capable of dishing out significant damage while also maintaining a variety of defensive abilities. However, despite its strengths, it's vulnerable to damage from magical weapons, and its reliance on being near its linked essence area can be a tactical disadvantage.</summary>
 
 <detail>

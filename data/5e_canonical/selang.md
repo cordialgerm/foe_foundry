@@ -1,6 +1,8 @@
 <MonsterName/>Selang</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Selang is a Medium-sized fey creature characterized by its chaotic evil alignment. With a high Armor Class of 15 due to natural armor and a substantial pool of Hit Points totaling 76, it possesses notable durability in combat. Its strengths include a combination of high Strength (18), Constitution (18), and Charisma (19), allowing it to deal significant damage and manipulate opponents through spells and abilities effectively. It has good mobility with a walking speed of 40 feet and a Challenge Rating of 4, indicating that it can pose a moderate challenge to adventurers. However, its weaknesses include vulnerability to magical attacks, as its resistances do not extend to magic, which makes it susceptible to spells and magical effects. </summary>
 
 <detail>

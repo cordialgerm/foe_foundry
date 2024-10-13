@@ -1,6 +1,8 @@
 <MonsterName/>Chort Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>187</HP>
 <summary>The Chort Devil is a formidable Medium fiend characterized by its lawful evil nature. Known for its brutal effectiveness in combat, it boasts high armor class and substantial hit points, making it a resilient opponent. With exceptional strength, constitution, and impressive spellcasting capabilities, this monster poses a significant threat in encounters. The Chort Devil's abilities grant it advantages in both melee and ranged situations, and it is particularly impactful due to its potent fire damage dealt with weapon attacks. While it possesses significant immunities and resistances, including immunity to poison and damage from nonmagical weapons, its reliance on melee combat can be viewed as a potential weakness if the environment favors ranged attacks.</summary>
 
 <detail>

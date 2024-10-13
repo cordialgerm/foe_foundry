@@ -1,6 +1,8 @@
 <MonsterName/>Devilbound Gnome</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (Infernal Blessing)</AC>
+<HP/>104</HP>
 <summary>The Devilbound Gnome is a cunning and powerful small humanoid creature that embodies the characteristics of both gnome ingenuity and fiendish malice. This creature operates on the darker edges of morality, leveraging its intellect and magical abilities to manipulate and control both allies and enemies. With a high Armor Class of 17 aided by its unique ability called Infernal Blessing, the gnome becomes a surprisingly resilient opponent. It possesses 104 hit points, making it durable in battle, and its Challenge Rating of 9 indicates a formidable foe that can provide significant challenges. The Devilbound Gnome excels in magical combat, making it particularly dangerous due to its ability to summon devils, inflict potent fire and poison damage, and manipulate others through its spells and abilities. Its strengths lie in its impressive Charisma and spellcasting prowess, while its weaknesses include lower physical strength and vulnerability to silvered weapons.</summary>
 
 <detail>

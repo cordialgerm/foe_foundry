@@ -1,6 +1,8 @@
 <MonsterName/>Dragonette, Shovel</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>33</HP>
 <summary>The Dragonette, Shovel is a tiny, neutral dragon creature that excels in stealth and mobility, making it a cunning opponent in combat. With an Armor Class of 12, this creature is relatively easy to hit, but its 33 hit points offer a reasonable buffer for survival. Its challenge rating of 1/2 means it poses a low to moderate threat, providing a mere 100 XP for defeating it. Notably, the Dragonette can burrow and utilize its floral camouflage to blend seamlessly into environments rich with vegetation, offering it tactical advantages in ambushes. While its physical attacks may not deal massive damage, it can control the battlefield effectively with its special abilities, making it a quirky and versatile foe.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Troglodyte</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>19</HP>
 <summary>The Troglodyte is a medium humanoid creature known for its cunningness and its reliance on stealth and ambush tactics. With a challenge rating of 1/2, it is considered a low-level threat, making it an ideal encounter for beginner adventurers. Its strengths lie in its ability to surprise its enemies, thanks to its stealth skills and special abilities like Stench, which can incapacitate foes. However, it struggles in direct sunlight, incurring disadvantage on attacks and perception checks when exposed. With moderate durability, the Troglodyte can inflict consistent damage through its multiattack capabilities, but it is still vulnerable to well-coordinated attacks from adventurers who are aware of its weaknesses.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Dipsa</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Dipsa is a small, but cunning ooze, characterized by its unique ability to blend into swampy environments and its stealthy attack methods. As a Tiny creature, it relies on its exceptional Dexterity and stealth capabilities to avoid detection. With a Challenge Rating of 1/4, it poses a minor threat to adventurers, yet its capabilities can become significant when utilized effectively in ambush scenarios. One of its notable strengths is its ability to attach itself to larger creatures, dealing ongoing damage and potentially reducing their maximum hit points. However, its physical strength is very poor, making it vulnerable in direct confrontations. Due to its nature as an ooze, it also has many immunities that allow it to evade various detrimental effects.</summary>
 
 <detail>

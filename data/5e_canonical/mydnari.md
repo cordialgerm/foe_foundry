@@ -1,6 +1,8 @@
 <MonsterName/>Mydnari</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>22</HP>
 <summary>The Mydnari is a medium humanoid creature with a neutral evil alignment, recognized for its unsettling nature and symbiotic relationship with a unique jelly substance. With a challenge rating of 1/2, this creature poses a moderate challenge due to its cunning and deceptive abilities. The Mydnari excels in dexterity and charisma, allowing it to evade attacks and manipulate others effectively. Its combat prowess is enhanced by its ability to deal acid damage and cause poisoning, making it a threat in both melee and ranged encounters. However, it relies heavily on its jelly; if separated, it suffers significant drawbacks, including the loss of its blindsight, key offensive abilities, and special traits. </summary>
 
 <detail>

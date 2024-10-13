@@ -1,7 +1,9 @@
 <MonsterName/>Kraken</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
 <Subtype/>titan</Subtype>
+<CR/>23</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>472</HP>
 <summary>The Kraken is an enormous, legendary sea monster feared by sailors across the seas. It has a massive, squid-like body with tentacles capable of dragging entire ships beneath the waves. Its tough, rubbery hide is nearly impervious to weapons, and its immense strength allows it to crush anything in its grasp. Krakens are highly intelligent and often command storms and sea creatures to do their bidding. They lurk in the darkest depths of the ocean, where they reign as kings of the deep, emerging only to wreak havoc on those who dare to challenge their dominion.</summary>
 
 <summary>The kraken is a gargantuan monstrosity, known for its immense size and powerful presence, especially within the depths of the ocean. It serves as a formidable challenge for any adventurer, boasting extraordinary defenses, a formidable assortment of attacks, and the ability to manipulate the battlefield. With a challenge rating of 25, the kraken possesses high durability with 444 hit points and exceptional armor class standing at 20. Its strengths lie in its numerous physical attack options, superior resistances, and devastating magical abilities. However, it has very poor Dexterity, making it less effective in quick maneuvers. This creature's notable features include its ability to summon storms and control lightning, along with its rather unique grappling attack mechanics that can severely hinder combatants.</summary>

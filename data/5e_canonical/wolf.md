@@ -1,6 +1,8 @@
 <MonsterName/>Wolf</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>11</HP>
 <summary>A Wolf is a medium-sized predator found in forests, mountains, and tundras. Known for their pack mentality, wolves are skilled hunters that rely on teamwork to take down larger prey. Wolves are swift and agile, using their sharp teeth and claws to tear into their victims. While they prefer to avoid humans, they will defend their territory or hunt when food is scarce. Wolves are intelligent and highly social animals, communicating through howls and other vocalizations. In the wild, they are apex predators, respected and feared by all creatures within their range.</summary>
 
 <summary>The Wolf is a medium-sized beast commonly found in wild and forested areas, often recognized for its keen senses and pack mentality. As a creature with a Challenge Rating of 1/4, the Wolf can be a formidable adversary when encountered in groups, leveraging its special abilities to outmaneuver and overpower its foes. It boasts a moderate Armor Class of 12, providing it with basic protection, and it possesses 11 hit points, making it somewhat resilient for its tier. The Wolf excels in stealth and perception, allowing it to effectively ambush prey or evade detection. Its primary weaknesses lie in its lower intelligence and charisma, making it less capable in social situations or complex strategies.</summary>

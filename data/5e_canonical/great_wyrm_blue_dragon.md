@@ -1,6 +1,8 @@
 <MonsterName/>Great Wyrm Blue Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>25</CR>
+<AC/>22</AC>
+<HP/>814</HP>
 <summary>The Great Wyrm Blue Dragon is a gargantuan creature that exemplifies the formidable power of draconic foes in Dungeons & Dragons. With an exceptionally high Armor Class of 22 and impressive Hit Points totaling 814, this dragon is a very durable opponent who can take significant punishment. Its slightly average Dexterity and high Constitution lend it durability in battle. It excels in ranged combat with a flight speed of 80 feet and lightning-based abilities that inflict severe damage. The dragon’s strengths include its devastating breath weapon, powerful melee attacks, and a host of unique abilities that allow it to manipulate the battlefield. However, its average Dexterity suggests potential weaknesses in avoiding certain attacks and spells. </summary>
 
 <detail>

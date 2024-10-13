@@ -1,6 +1,8 @@
 <MonsterName/>Aurora Horribilis</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>9</CR>
+<AC/>15</AC>
+<HP/>119</HP>
 <summary>The Aurora Horribilis is a large aberration with chaotic neutral alignment, presenting a unique mix of abilities that make it both formidable and unpredictable in combat. Its high charisma and dexterity allow it to excel in a variety of situations, while its numerous immunities and the ability to move through objects offer it a significant advantage defensively. Nevertheless, its weak strength and intelligence stats can limit its effectiveness in physical combat and complex problem-solving scenarios. The creature's distinctive features, such as its "Reality Adjacent" ability and its powerful "Void Song," allow it to manipulate the battlefield and create confusion among its foes, making it a challenging opponent for any adventuring party.</summary>
 
 <detail>

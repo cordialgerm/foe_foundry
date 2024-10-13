@@ -1,6 +1,8 @@
 <MonsterName/>Swarm, Vampire Blossom</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>82</HP>
 <summary>The Swarm of Vampire Blossoms is a menacing and unique creature that embodies the traits of a large, unaligned plant. Its primary role lies in its ability to manipulate the battlefield through an array of strong offensive capabilities while simultaneously exhibiting several defensive traits. The swarm is particularly notable for its advantage in attacking weakened foes, making it especially dangerous in protracted encounters. With a decent amount of hit points at 82, the swarm can endure a fair amount of damage, but its low Strength and moderate Constitution indicate significant vulnerabilities to overpowering physical attacks. The challenge rating of 3 suggests that it poses a moderate threat to parties at lower levels, granting 700 experience points upon defeat.</summary>
 
 <detail>

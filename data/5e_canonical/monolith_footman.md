@@ -1,6 +1,8 @@
 <MonsterName/>Monolith Footman</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Monolith Footman is a formidable large construct that serves as an intimidating presence on the battlefield. With its solid defenses, including natural armor, and a substantial pool of hit points, it can absorb a good amount of damage before being taken down. It possesses the ability to deal significant melee damage through its weapon attacks, which are enhanced with magical properties. The Monolith Footman is particularly resilient against various damage types, being immune to poison and psychic damage, and it also has resistances to nonmagical attacks, provided they are not made with adamantine weapons. However, while it boasts a powerful attack and is hard to put down, the construct does have limitations in terms of intelligence and charisma, rendering it less effective in situations requiring complex decision-making or social interactions. It can be a challenging opponent in combat, with unique abilities that can control the battlefield, especially when fighting in areas influenced by fey magic.</summary>
 
 <detail>

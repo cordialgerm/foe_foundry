@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Blight</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Shadow Blight is a small, neutral evil plant creature that lurks in the shadows and thrives on darkness and decay. It possesses a decent level of resilience and can inflict significant cold and necrotic damage through its attacks. The Shadow Blight is particularly effective in ambush situations, utilizing its False Appearance ability to blend in with the environment. However, it is vulnerable to fire damage, which can easily disrupt its plans. With its spell-like abilities, it can animate other plants to serve as additional threats, making it a formidable opponent in environments rich with vegetation.</summary>
 
 <detail>

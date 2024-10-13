@@ -1,6 +1,8 @@
 <MonsterName/>Narshark</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>25</HP>
 <summary>The Narshark is a large, unaligned monstrosity known for its unique combination of characteristics. With a solid armor class of 14 provided by its natural armor, it has a moderate pool of hit points totaling 25. This creature is notable for its ability to fly, moving at a speed of 40 feet, along with a slower walking speed of 10 feet, and possesses the capability to hover. Although its challenge rating stands at 1/2, meaning it is relatively easy to deal with for a low-level party, its abilities and mechanics can pose interesting challenges due to its magical horn and its aggressive nature when provoked. The Narshark's attributes reveal it to be physically strong with a Strength score of 16, which translates to a good modifier of +3, while its Dexterity is average at 12, providing a modifier of +1. However, it is notably lacking in intelligence and charisma, with scores of 2 and 4, respectively.</summary>
 
 <detail>

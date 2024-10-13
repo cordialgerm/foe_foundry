@@ -1,6 +1,8 @@
 <MonsterName/>Homunculus</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>0</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>5</HP>
 <summary>A Homunculus is a tiny, artificial creature magically created by a wizard or alchemist to serve as a helper or familiar. It has a bat-like body with leathery wings, a sharp-toothed mouth, and a humanoid face. Despite its grotesque appearance, the Homunculus is loyal to its creator, sharing a telepathic bond and carrying out tasks such as scouting or delivering messages. It is fragile and not meant for combat, relying on stealth and evasion to avoid danger. Homunculi are crafted from arcane magic and alchemical processes, and they act as an extension of their creator’s will.</summary>
 
 <summary>The Homunculus is a tiny construct that serves as a familiar or servant to its creator. Despite its diminutive size, it possesses a moderate level of agility and the ability to communicate telepathically with its creator, making it a valuable companion in various situations. With a challenge rating of 0, it is relatively weak in combat but offers utility through its special abilities. Its primary strengths lie in its dexterity and speed, allowing it to be mobile and evasive during encounters. However, it has very low strength and hit points, making it vulnerable and unable to withstand much damage.</summary>

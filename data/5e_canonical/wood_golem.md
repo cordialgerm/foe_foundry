@@ -1,6 +1,8 @@
 <MonsterName/>Wood Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Wood Golem is a medium-sized construct that serves as a protector or enforcer, typically created by a powerful entity to fulfill its commands. This creature has considerable physical strength and durability, making it a formidable opponent in combat situations. However, its intelligence is remarkably low, rendering it unable to perform any complex tasks or engage in deep strategic thinking. The Wood Golem has a Challenge Rating of 3, which translates to an experience value of 700 XP, making it a suitable challenge for lower-level adventurers. Its primary strengths lie in its high Strength and decent Constitution, along with a strong physical defense. However, it is particularly vulnerable to fire damage, which is its only damage vulnerability.</summary>
 
 <detail>

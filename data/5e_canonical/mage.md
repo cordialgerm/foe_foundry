@@ -1,8 +1,10 @@
 <MonsterName/>Mage</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
-<Subtype/>any lineage</Subtype>
 <Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>6</CR>
+<AC/>12</AC>
+<HP/>40</HP>
 <summary>A Mage is a powerful spellcaster who has devoted their life to the study of arcane magic. They wear robes adorned with mystical symbols and carry staffs, wands, or other arcane foci to channel their spells. Mages are highly intelligent and possess a wide array of spells, from destructive fireballs to complex illusions and teleportation. Though physically frail, they make up for it with their mastery of magic, able to manipulate the elements, summon creatures, or control the minds of others. Mages are often found in magical academies, wizard towers, or as advisors to powerful rulers.</summary>
 
 <summary>The Mage is a Medium humanoid creature that excels in spellcasting, possessing a wide array of potent magical abilities. With an Armor Class of 12 and 67 hit points, it can withstand moderate damage but remains vulnerable to physical attacks due to its relatively low AC. As a 9th level spellcaster, the Mage's strength lies in its intelligence, providing them with a spell save DC of 14 and a +6 modifier on spell attack rolls, marking this as a very good level of efficacy. The Mage can prepare a variety of spells across multiple levels, which allows it to control the battlefield and deal significant damage from a distance. While its physical attributes are average, it compensates with strong intelligence and dexterity scores, allowing it to dodge attacks effectively. However, it has limited melee capabilities with a dagger, which gives it a very bad output for physical damage compared to its magical prowess.</summary>

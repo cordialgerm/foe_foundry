@@ -1,6 +1,8 @@
 <MonsterName/>Snow Queen</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>16</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>182</HP>
 <summary>The Snow Queen is a formidable Medium Fey creature embodying the essence of winter and chill. With a neutral evil alignment, she possesses manipulative and destructive abilities that make her a dangerous adversary. Her high Armor Class of 17 due to natural armor and a generous pool of 182 hit points (28d8 + 56) demonstrate her resilience in battle. The Snow Queen showcases impressive Dexterity and Charisma, which enhance her agility and persuasive capabilities, making her both a formidable combatant and a cunning manipulator. While she is immune to cold and has resistances to nonmagical physical attacks, she is vulnerable to fire damage and other magical forces, which can turn the tide against her. With a Challenge Rating of 16, this creature presents a significant challenge, commanding respect and careful strategy from those who oppose her.</summary>
 
 <detail>

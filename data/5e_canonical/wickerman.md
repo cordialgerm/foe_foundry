@@ -1,6 +1,8 @@
 <MonsterName/>Wickerman</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>8</AC>
+<HP/>138</HP>
 <summary>The Wickerman is a huge construct with an ominous presence, exuding a neutral evil aura. Designed as a formidable adversary, it boasts high hit points and damage resistance against nonmagical attacks, making it a resilient opponent in combat. With a challenge rating of 9, it is intended for mid-level encounters and presents a serious threat due to its ability to deal fire damage and its devastating grappling capability. However, its low armor class and poor dexterity make it vulnerable to ranged attacks and agile opponents. Notably, the Wickerman's functionality is closely tied to its controlling staff, which adds an intriguing dynamic to its behavior in battle, as its aggression can increase dramatically if the staff is compromised.</summary>
 
 <detail>

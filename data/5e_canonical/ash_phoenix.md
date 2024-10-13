@@ -1,6 +1,8 @@
 <MonsterName/>Ash Phoenix</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>15</AC>
+<HP/>105</HP>
 <summary>The Ash Phoenix is a formidable Large Undead creature with a neutral evil alignment, making it a significant threat to adventurers. It boasts an impressive Armor Class of 15 and a substantial pool of Hit Points totaling 105, drawn from 14d10+28, allowing it to endure considerable punishment in combat. The creature has a flying speed of 90 feet, enabling it to maneuver with grace, while its ability to hover allows it to stay in one place without needing to land. However, its Challenge Rating of 9 indicates that it is a high-level foe, earning a substantial 5,000 experience points upon defeat. The Ash Phoenix exhibits notable strengths, including its high Dexterity and stealth capabilities, making it hard to detect and hit, while weaknesses include its vulnerability to radiant damage and reliance on dim lighting for effective stealth.</summary>
 
 <detail>

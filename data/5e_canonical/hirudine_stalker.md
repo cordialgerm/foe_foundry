@@ -1,6 +1,8 @@
 <MonsterName/>Hirudine Stalker</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Hirudine Stalker is a medium-sized monstrosity with a neutral evil alignment. Designed as a cunning ambush predator, it thrives in environments where it can leverage its strengths, such as climbing and swimming, to stalk its prey. It boasts a modest Armor Class of 13, meaning it has a good chance of being hit but is not overly difficult to damage. With 52 hit points and a Challenge Rating of 2, it presents a moderate challenge to adventurers. The creature excels in Dexterity and Constitution, indicating it is agile and hard to take down, while its intelligence and charisma are average. Notably, the Hirudine Stalker has advantages in tracking injured foes and possesses talents that can impair opponents, making it an effective combatant when set up properly.</summary>
 
 <detail>

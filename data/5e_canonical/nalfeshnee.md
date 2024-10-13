@@ -1,7 +1,9 @@
 <MonsterName/>Nalfeshnee (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
 <Subtype/>demon</Subtype>
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>184</HP>
 <summary>A Nalfeshnee is a grotesque, towering demon that combines the features of a boar, an ape, and a vulture. Its massive, bloated body and wings give it a horrifying, bloated appearance, and its tusked face is filled with hunger and rage. Nalfeshnees are known for their intelligence and cruelty, often serving as judges or overseers in the Abyss. They can unleash waves of demonic energy, spreading madness and confusion among their enemies. In battle, they rely on both their physical strength and their ability to summon dark magic to crush their foes. Though they are brutish in appearance, Nalfeshnees are cunning and manipulative, using their power to command legions of lesser demons.</summary>
 
 <summary>The Nalfeshnee is a formidable Large Fiend, embodying the essence of chaos and evil in the Dungeons & Dragons universe. With a high Armor Class of 18 and a substantial pool of 184 hit points, it can endure significant damage before succumbing in battle. This creature is proficient in both melee and magical combat, making it a versatile threat to any adventurer. With a Challenge Rating of 13, it presents a considerable challenge, capable of dealing heavy damage with its melee attacks as well as powerful area-of-effect spells. However, its speed is somewhat sluggish, only moving 20 feet on the ground and 30 feet while flying, which can be a weakness if it faces more agile opponents. The Nalfeshnee uses both its physical prowess and its magical abilities to dominate the battlefield, making it a dangerous foe when encountered.</summary>

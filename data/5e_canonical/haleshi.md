@@ -1,6 +1,8 @@
 <MonsterName/>Haleshi</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>17</AC>
+<HP/>123</HP>
 <summary>The Haleshi is a Large Fey creature characterized by its lawful neutral alignment. With a Challenge Rating of 7 and a combat prowess that integrates both spellcasting and melee attacks, this creature serves as a formidable opponent or an intriguing ally in any encounter. The Haleshi excels in both defense and utility, boasting a high Armor Class of 17 and a substantial pool of hit points totaling 123, which provides it resilience in battle. Its unique abilities allow it to utilize the environment to its advantage, particularly in aquatic scenarios, while its innate magical powers enhance its versatility. However, it possesses a weakness to physical damage types, specifically those that are not resisted by its cold damage resistance.</summary>
 
 <detail>

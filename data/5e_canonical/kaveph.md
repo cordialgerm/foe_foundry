@@ -1,6 +1,8 @@
 <MonsterName/>Kaveph</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Kaveph is a huge aberration with a neutral evil alignment that serves as a formidable foe in any encounter. With a challenge rating of 6, it has a robust design and represents a significant threat due to its high hit points of 136, natural armor providing an armor class of 16, and various damaging attacks. The Kaveph excels in melee combat through its Multiattack and has the ability to strike with powerful smash attacks. However, it does have vulnerabilities and resistances, being particularly susceptible to radiant damage while able to resist cold damage. Its intelligence is notably low, which may affect its ability to interact with more intelligent creatures, but its physical attributes are exceptional, granting it effectiveness in battle.</summary>
 
 <detail>

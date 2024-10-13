@@ -1,6 +1,8 @@
 <MonsterName/>Avestruzii</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (scale mail)</AC>
+<HP/>22</HP>
 <summary>The Avestruzii is a medium humanoid creature known for its resilience and moderate offensive capabilities. With an armor class of 14, it can withstand a fair amount of damage, while its hit points totaling 22 give it a decent amount of staying power in combat. This creature, characterized by its strong constitution (with a +3 modifier), serves well as a front-line fighter due to its physical strength, though its intelligence and charm are notably low, hindering its effectiveness in social interactions and tactical planning. While the Avestruzii is relatively straightforward to defeat for seasoned adventurers, it can pose a challenge for less experienced parties, especially given its ability to react effectively to imminent threats.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Angel, Haladron</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>28</HP>
 <summary>The Haladron is a tiny celestial being, embodying the principles of lawful good. With a challenge rating of 1/2 and 28 hit points, it is a relatively low-powered creature designed to assist and offer support rather than engage in direct confrontations. Its flight ability allows it to maneuver freely in combat, supplemented by its special abilities like Flyby, which enables it to avoid opportunity attacks, making it agile and difficult to pin down. The Haladron is resilient with resistances to radiant damage and immunity to several conditions, allowing it to serve effectively in a supportive role. However, its offensive capabilities are modest, relying primarily on a ranged attack and a healing ability that can benefit allies.</summary>
 
 <detail>

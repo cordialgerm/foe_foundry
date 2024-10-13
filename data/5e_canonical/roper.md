@@ -1,6 +1,8 @@
 <MonsterName/>Roper</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>93</HP>
 <summary>A Roper is a monstrous, stone-like creature that blends into cavern walls, lying in wait for unsuspecting prey. Its long, rope-like tendrils can extend outwards to grapple and reel in creatures, dragging them towards its maw filled with sharp teeth. Ropers are ambush predators, often lurking in dark caves or underground tunnels, using their camouflage to remain hidden until the perfect moment to strike. Despite their slow movement, their tendrils have an impressive reach, making them highly dangerous to anyone who enters their lair.</summary>
 
 <summary>The Roper is a large monstrosity that embodies the ambush predator archetype within the Dungeons & Dragons universe. It is proficient in both melee attacks and grappling, making it a formidable opponent in close quarters. With an impressive armor class of 20 and a substantial hit point total of 93, the Roper can withstand significant damage. Its challenge rating of 5 indicates that it is designed for mid-level adventurers, presenting a serious threat to unprepared characters. The Roper's ability to disguise itself as a stalactite or stalagmite allows it to ambush unsuspecting foes. However, its low mobility with a speed of only 10 feet can be a weakness, making it reliant on its ranged attacks with tendrils and static positioning.</summary>

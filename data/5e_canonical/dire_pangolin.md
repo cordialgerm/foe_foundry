@@ -1,6 +1,8 @@
 <MonsterName/>Dire Pangolin</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Dire Pangolin is a large beast that serves as a formidable defender in its environment. With an Armor Class of 16 due to its natural armor, this creature displays significant durability with 82 hit points, making it a tough opponent to take down. Its role in combat centers around dealing damage while leveraging its special abilities for both offense and defense. With a Challenge Rating of 4, it possesses a mix of strong melee attacks, resilient defenses, and unique abilities that make it a noteworthy adversary for adventurers. However, it has low Dexterity and Intelligence, which creates vulnerabilities that can be exploited by savvy players.</summary>
 
 <detail>

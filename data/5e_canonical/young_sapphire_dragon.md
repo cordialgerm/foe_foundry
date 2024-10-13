@@ -1,6 +1,8 @@
 <MonsterName/>Young Sapphire Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>10</CR>
+<AC/>18</AC>
+<HP/>161</HP>
 <summary>The Young Sapphire Dragon is a powerful and intelligent creature that embodies the essence of psionic energy. This Large Dragon possesses a formidable presence in combat, with a high Armor Class of 18, which makes it difficult for opponents to land successful hits. With a substantial pool of hit points totaling 161, it can endure significant damage before succumbing. Notably, its Challenge Rating of 10 indicates that it poses a serious threat, granting 5,900 experience points to those who defeat it. The dragon possesses a blend of physical prowess, excellent mobility with a flying speed of 80 feet, and potent mental abilities, making it a versatile combatant that excels in both melee and spells. However, its primary weakness lies in its reliance on psionic abilities, leaving it vulnerable to particular forms of attacks that target its mental or magical properties.</summary>
 
 <detail>

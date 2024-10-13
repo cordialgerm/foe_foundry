@@ -1,6 +1,8 @@
 <MonsterName/>Ghost Dragon</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>11</CR>
+<AC/>14</AC>
+<HP/>126</HP>
 <summary>The Ghost Dragon is a formidable large undead creature, presenting a challenging encounter for adventurers. With a Challenge Rating of 11, it has a good balance of offensive and defensive capabilities. Its high Dexterity score grants it an exceptional level of agility, making it difficult to hit and allowing for effective stealth. The creature possesses a range of immunities to various damage types, which significantly enhances its survivability in combat. However, its lack of mobility on the ground may be seen as a weakness, as it cannot walk but relies entirely on its ability to fly. The Ghost Dragon can be a terrifying opponent not only for its physical attacks but also for its special abilities, including its ability to instill fear and hinder opponents. </summary>
 
 <detail>

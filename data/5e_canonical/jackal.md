@@ -1,6 +1,8 @@
 <MonsterName/>Jackal</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>12</AC>
+<HP/>3</HP>
 <summary>A Jackal is a small, opportunistic predator and scavenger commonly found in deserts, savannas, and arid plains. These creatures are slender and quick, with sharp teeth and a keen sense of smell, allowing them to detect prey or carrion from great distances. Jackals are known for their cunning and often hunt in small packs, using their speed and coordination to bring down larger animals. Though not particularly dangerous on their own, Jackals are persistent and will take advantage of any weakness in their prey. They are also skilled at avoiding larger predators, quickly fleeing if threatened.</summary>
 
 <summary>The jackal is a small beast often found in various terrains, known for its keen senses and agility. With an armor class of 12, it has a relatively low defensive capacity, making it vulnerable to stronger attacks. It has a minimal hit point total of only 3, which means that it can be easily defeated in combat. The creature’s primary strengths lie in its dexterity and perception, allowing it to avoid attacks and detect threats effectively. However, its challenge rating of 0 indicates that it presents little challenge to experienced adventurers. The jackal is primarily a scavenger and opportunist, utilizing its keen senses to locate food and avoid danger rather than engaging in direct confrontation.</summary>

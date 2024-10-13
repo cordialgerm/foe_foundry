@@ -1,6 +1,8 @@
 <MonsterName/>Kobold Dragon Servitor</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>7</HP>
 <summary>The Kobold Dragon Servitor is a small humanoid creature that acts as a servant or warrior devoted to a dragon. With a challenge rating of 1, it is relatively weak in terms of overall hit points and defenses but can be formidable in numbers, particularly due to its special abilities. It has a unique combination of strengths and weaknesses: while it can strike effectively when supported by allies, it suffers greatly in sunlight, making it less effective in outdoor encounters during the day. The combat capabilities of the Kobold Dragon Servitor are enhanced through its ability to gain resistance to the specific damage type of its dragon master's breath weapon, making it a valuable ally in battles against adventurers, especially when operating in groups.</summary>
 
 <detail>

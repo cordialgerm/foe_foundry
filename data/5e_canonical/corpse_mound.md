@@ -1,6 +1,8 @@
 <MonsterName/>Corpse Mound</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>11</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>207</HP>
 <summary>The Corpse Mound is a fearsome creature, classified as a Huge Undead with a neutral evil alignment. It serves as a potent adversary in combat, leveraging its high hit points and formidable attacks to overwhelm its foes. With an Armor Class of 16, derived from its natural armor, it possesses durability that allows it to withstand significant damage. The Corpse Mound has remarkable strength, with a Strength score of 24, which gives it a good +7 modifier, allowing it to inflict substantial melee damage. Its Constitution score is also high at 21, resulting in a good +5 modifier that enhances its vitality and saving throws against various effects. However, its Intelligence, Wisdom, and Charisma scores are much lower, marking it as average or bad in terms of mental capabilities, which hinders its strategic options in combat and negotiations. The creature is resistant to necrotic damage, immune to poison damage, and does not suffer from conditions like charm or fear. Its abilities allow it to reclaim health by absorbing fallen creatures, project a noxious aura, and create zombies from corpses nearby.</summary>
 
 <detail>

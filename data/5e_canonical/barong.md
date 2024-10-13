@@ -1,6 +1,8 @@
 <MonsterName/>Barong</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>17</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>225</HP>
 <summary>Barong is a powerful celestial being that embodies lawfulness and goodness, serving as a protector and ally to those in need. It is classified as a Large creature, showcasing both impressive physical prowess and formidable magical abilities. With an Armor Class of 20 and 225 hit points, Barong can withstand considerable damage while engaging in combat. Its challenge rating of 17 signifies that it presents a significant threat to adventurers. Notable strengths of Barong include its high ability scores, particularly in Strength and Constitution, allowing it to deal substantial damage and endure incoming attacks. Its damage immunities and resistances make it particularly formidable against physical attacks, while its ability to summon allies further enhances its role as a powerful champion in battle.</summary>
 
 <detail>

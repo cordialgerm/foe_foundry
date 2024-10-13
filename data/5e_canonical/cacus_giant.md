@@ -1,6 +1,8 @@
 <MonsterName/>Cacus Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>138</HP>
 <summary>The Cacus Giant is a formidable and chaotic evil creature characterized as a huge giant with a chaotic alignment. With an impressive Armor Class of 16, robust Hit Points totaling 138, and a decent movement speed of 40 feet, it presents significant threats in combat. This creature's main strengths are its high Strength and Constitution scores, facilitating effective melee attacks and considerable endurance in battles. With an exceptional Strength modifier of +5, the Cacus Giant can deal significant damage, complemented by its immunity to fire damage, providing it with an added layer of protection. However, its weaknesses include low Dexterity and Intelligence scores. The Cacus Giant poses a challenge for mid-level adventurers, presenting a Challenge Rating of 6, which translates to an experience reward of 2,300 XP when defeated.</summary>
 
 <detail>

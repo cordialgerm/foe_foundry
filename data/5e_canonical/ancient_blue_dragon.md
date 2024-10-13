@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Blue Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>481</HP>
 <summary>The Ancient Blue Dragon is a magnificent and powerful creature, with scales that shimmer like sapphires and eyes that gleam with intelligence and pride. It rules the desert with a fearsome presence, and its lairs are often found deep beneath the sands in vast caverns filled with treasure. Known for their lightning breath, Ancient Blue Dragons unleash devastating bolts of electricity that can obliterate anything in their path. They are highly territorial and incredibly vain, seeking to dominate vast stretches of land and bending creatures to their will. Their cunning and patience make them masterful tacticians in battle.</summary>
 
 <summary>The Ancient Blue Dragon is a formidable and majestic creature, recognized as one of the most powerful dragons in Dungeons & Dragons 5th Edition. This gargantuan dragon typically serves as a high-level antagonist or a challenging boss in a campaign. Its impressive statistics, including a very high Armor Class of 22 and a massive Hit Point total of 407, make it tough to hit and capable of sustaining heavy damage. It has exceptional Strength and Constitution scores of 28 and 26, respectively, which allow it to deal significant melee damage and serve as a tank in battle. Additionally, it possesses formidable spellcasting abilities and a variety of powerful abilities that can manipulate the battlefield, control enemies, and devastate groups with area attacks. However, its relatively low Dexterity score of 10 might make it vulnerable to ranged attacks, especially from agile opponents.</summary>

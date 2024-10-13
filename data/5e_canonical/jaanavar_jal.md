@@ -1,6 +1,8 @@
 <MonsterName/>Jaanavar Jal</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>172</HP>
 <summary>The Jaanavar Jal is a massive, amphibious monstrosity characterized by its dual capability to thrive in both aquatic and terrestrial environments. With a formidable Armor Class of 15, this creature exhibits substantial resilience due to its regenerative abilities, allowing it to recover hit points each turn under normal conditions. However, it has specific vulnerabilities, particularly to cold damage which can temporarily prevent its regeneration. This creature is particularly deadly in combat, as it can deal significant damage through its multiattack actions, combining biting and grappling tactics to control the battlefield. </summary>
 
 <detail>

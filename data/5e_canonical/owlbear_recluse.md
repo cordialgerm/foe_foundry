@@ -1,6 +1,8 @@
 <MonsterName/>Owlbear Recluse</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>119</HP>
 <summary>The Owlbear Recluse is a large monstrosity that serves as a formidable opponent in the wild. With a solid Armor Class of 13 and a substantial pool of Hit Points at 119, the Owlbear is well-equipped to withstand attacks, making it a resilient adversary. This creature excels in physical combat, having a very good Strength score of 18, which significantly enhances its melee attacks. However, it has mediocre Dexterity and Intelligence scores, resulting in average agility and poor mental capabilities. The challenge posed by the Owlbear is rated at 3, indicating that it is appropriate for a party of moderate-level adventurers. The Owlbear’s notable strengths include its keen senses, allowing it to detect threats or prey effectively. The weaknesses mostly lie in its limited range of skills and low Charisma and Intelligence, which may impact interactions and certain tactical situations.</summary>
 
 <detail>

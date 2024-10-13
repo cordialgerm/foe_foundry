@@ -1,6 +1,8 @@
 <MonsterName/>Swamp Adder</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>18</HP>
 <summary>The Swamp Adder is a small, non-aligned beast that thrives in wet and murky environments. This creature has a stealthy nature, bolstered by its ability to camouflage itself in swampy areas, making it a formidable ambush predator. Its primary strength lies in its agility and the potential for debilitating poison, which can paralyze unsuspecting foes. However, with a low hit point total and weak physical strength, the Swamp Adder lacks durability in direct confrontations. Its role in combat primarily revolves around stealth and surprise, rather than facing opponents head-on.</summary>
 
 <detail>

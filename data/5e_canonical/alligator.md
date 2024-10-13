@@ -1,6 +1,8 @@
 <MonsterName/>Alligator</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>11</HP>
 <summary>The alligator is a medium-sized beast known for its agility in water and formidable bite. Unaligned in nature, this creature is primarily a predator, using its speed to ambush prey both in water and on land. It possesses moderate strength and constitution, making it a decent physical threat, but its intelligence and charisma are notably low, making it less effective in social interactions or complex strategies. With an Armor Class of 13, the alligator is relatively resilient to attacks, and given its Challenge Rating of 1/4, it presents a minor threat to adventurers. However, its ability to grapple opponents with its bite attack can turn the tide of a skirmish, as it restricts the target's movement.</summary>
 
 <detail>

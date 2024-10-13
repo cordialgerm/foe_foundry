@@ -1,6 +1,8 @@
 <MonsterName/>Weasel</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>13</AC>
+<HP/>1</HP>
 <summary>A Weasel is a small, slender mammal known for its agility and speed. Found in forests, grasslands, and other natural environments, weasels are excellent hunters of small prey, such as rodents and birds. Despite their size, weasels are fierce and determined hunters, using their sharp teeth and quick reflexes to catch and kill their prey. While not typically aggressive towards larger creatures, they can become territorial if threatened. Weasels are often used as familiars by spellcasters due to their keen senses and stealthy nature.</summary>
 
 <summary>The Weasel is a tiny beast that plays a minor role in the ecosystem of Dungeons & Dragons. Despite its small size, it possesses good dexterity and impressive stealth capabilities, making it adept at avoiding danger and sneaking up on larger creatures. With an Armor Class of 13 and just 1 hit point, the Weasel is fragile and easily susceptible to damage, making it more of a nuisance than a threat in combat. Its challenge rating is 0, indicating that it is not meant to pose a real challenge to adventurers, but it can still provide tactical advantages in certain scenarios, especially with its keen senses.</summary>

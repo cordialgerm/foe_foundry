@@ -1,6 +1,8 @@
 <MonsterName/>Adult Black Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>14</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>195</HP>
 <summary>An Adult Black Dragon is a fearsome, malevolent creature with glossy black scales that reflect no light, giving it an appearance of being cloaked in shadow. Its large, bat-like wings and barbed tail add to its intimidating presence. It prefers to dwell in swamps or desolate ruins, where it can hunt from the murky waters. Black Dragons are cunning and cruel, delighting in tormenting their prey before delivering the final blow. Their breath weapon is a stream of highly corrosive acid, capable of melting through armor and flesh alike. They are known to collect trophies from their victims as part of their hoards.</summary>
 
 <summary>The Adult Black Dragon is a formidable and cunning creature, characterized by its enormous size and menacing presence. With a Challenge Rating of 17, it serves as a powerful adversary for high-level adventurers. The dragon possesses exceptional physical attributes, culminating in high Armor Class and extensive Hit Points, making it a challenging opponent to defeat. Its ability to utilize stealth, particularly when submerged, combined with innate magical abilities and devastating breath attacks, solidifies its role as a deadly predator both in and out of water. With weaknesses primarily related to its reliance on saving throws and the potential costs associated with its Legendary Resistance, seasoned players may find ways to exploit these traits to bring the dragon down.</summary>

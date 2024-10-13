@@ -1,6 +1,8 @@
 <MonsterName/>Kezai</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>67</HP>
 <summary>The Kezai is a formidable Medium monstrosity characterized by its ability to inflict both poison and fire damage, as well as its capacity for flight. It possesses a solid Armor Class of 16 thanks to its natural armor and has a decent pool of hit points totaling 67, making it a resilient opponent. The creature excels in Dexterity with a score of 18, giving it a +4 modifier that reflects an exceptional ability to evade attacks. However, it is weak in Intelligence, scoring a mere 4, which results in a significant -3 modifier, making it ineffective at tasks that require cleverness. The Kezai's challenge rating of 4 indicates that it is a moderate threat, suitable for groups of low to mid-level adventurers. It can utilize its flight speed of 50 feet to maneuver around the battlefield, and its gas attacks can limit the movement and effectiveness of nearby enemies.</summary>
 
 <detail>

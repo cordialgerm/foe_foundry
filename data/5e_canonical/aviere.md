@@ -1,6 +1,8 @@
 <MonsterName/>Aviere</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>17</HP>
 <summary>The Aviere is a tiny celestial creature that serves as a protector and healer. With a celestial alignment, it embodies the virtues of good and light, making it a valuable ally to those who uphold similar values. Its strengths lie in its magical abilities, resistance to certain damages, and unique rejuvenation capability, which allows it to potentially return to life after death. However, its physical attributes are relatively weak, particularly its strength, making it less effective in direct combat situations. The Aviere is capable of dealing both slashing and fire damage with its attacks, but it is more focused on support through its healing songs and abilities that can stabilize allies in need.</summary>
 
 <detail>

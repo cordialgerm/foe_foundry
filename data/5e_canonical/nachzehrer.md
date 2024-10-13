@@ -1,6 +1,8 @@
 <MonsterName/>Nachzehrer</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Nachzehrer is a medium undead creature with a chaotic evil alignment that embodies the horrors of death and disease. With an Armor Class of 15, it is moderately difficult to hit, and its formidable Hit Points of 136 provide it with considerable durability in battle. As a Challenge Rating 8 creature, it presents a significant threat to low-level parties, offering 3,900 experience points upon defeat. The Nachzehrer is particularly notable for its ability to inflict necrotic damage and its diseases that can weaken adversaries significantly. Its strengths lie in its high Strength score of 20, providing it with a good melee attack capability, along with various effects from its special abilities. However, its low Charisma score of 9 could detract from its effectiveness in social interactions.</summary>
 
 <detail>

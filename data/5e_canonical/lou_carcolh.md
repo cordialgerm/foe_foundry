@@ -1,6 +1,8 @@
 <MonsterName/>Lou Carcolh</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Lou Carcolh is a Medium monstrosity that serves as a formidable foe in combat due to its unique abilities and deceptive tactics. With an Armor Class of 14, it can withstand significant damage, boasting 78 hit points derived from a total of 12d8 plus an additional 24. Its movement capabilities include climbing at 10 feet, swimming at 20 feet, and walking at 30 feet, making it versatile in various environments. The creature has a Challenge Rating of 2, indicating it poses a moderate threat to adventurers. While it possesses decent physical attributes, such as Strength, Dexterity, and Constitution, its Intelligence, Wisdom, and Charisma are notably lower. The Lou Carcolh excels in stealth and possesses a unique mixture of maneuvers for both offense and control in battle, but it is particularly vulnerable if its sticky tongues are targeted.</summary>
 
 <detail>

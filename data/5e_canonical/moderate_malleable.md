@@ -1,6 +1,8 @@
 <MonsterName/>Moderate Malleable</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Moderate Malleable is a large aberration with chaotic evil tendencies, presenting a significant challenge for adventurers. With a relatively high armor class of 12 provided by its natural armor and 136 hit points, the Moderate Malleable proves to be a resilient foe in combat. Its movement capability allows for climbing and walking at a speed of 30 feet, making it versatile in navigating different terrains. Its challenge rating of 5 indicates a moderate threat level, with players earning 1,800 experience points upon defeat. This creature excels in psychic abilities, boasting immunities against psychic damage and conditions like being blinded or prone, while it is adept at absorbing and merging with minor malleables, enhancing its own health and capabilities.</summary>
 
 <detail>

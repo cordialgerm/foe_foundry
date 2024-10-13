@@ -1,6 +1,8 @@
 <MonsterName/>Snow Terror</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>8</CR>
+<AC/>16</AC>
+<HP/>127</HP>
 <summary>The Snow Terror is a large fiend with a chaotic evil alignment, designed to instill fear and chaos among its foes. With a body that resembles a snow creature, it possesses potent abilities that make it formidable in battle. Its strengths lie in its high Dexterity and multiple damage immunities, allowing it to evade attacks effectively while inflicting significant damage with its biting attacks. However, it is vulnerable to fire damage, which can exploit one of its few weaknesses. Being a shapechanger, the Snow Terror can adapt its form to intimidate opponents or to disguise itself, adding an element of strategy to its encounters. </summary>
 
 <detail>

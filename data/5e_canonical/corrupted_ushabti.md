@@ -1,6 +1,8 @@
 <MonsterName/>Corrupted Ushabti</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>97</HP>
 <summary>The Corrupted Ushabti is a Medium-sized undead creature that embodies the essence of neutral evil. These fearsome entities are known for their dark magic and resilience in battle, making them formidable opponents for adventurers. With an Armor Class of 15 due to its natural armor and a healthy pool of 97 hit points, the Corrupted Ushabti can withstand a fair amount of damage. It possesses strengths such as necrotic weapon attacks that inflict extra damage, a regenerative ability that allows it to heal over time, and an unusual ability to move through tight spaces by utilizing a swarm of scarabs. However, it is vulnerable to fire damage and relies on magical protection against non-magical physical attacks, making it susceptible if caught off guard. </summary>
 
 <detail>

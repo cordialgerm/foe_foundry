@@ -1,6 +1,8 @@
 <MonsterName/>Nian</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Nian is a large chaotic neutral monstrosity that embodies a blend of fear and power. With a robust constitution and formidable strength, this creature is capable of both engaging enemies directly and utilizing its unique abilities strategically in combat. One of its notable strengths lies in its speed and mobility, allowing it to quickly traverse various terrains, including climbing and swimming. However, its susceptibility to loud noises, fire, and the color red presents a significant weakness, which marks it as a creature that can be easily frightened if those elements are used effectively against it. The Nian presents a challenge at a Challenge Rating of 4, making it a suitable adversary for mid-level adventurers who may employ various tactics to exploit its fears.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Couatl</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>4</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>97</HP>
 <summary>The Couatl is a celestial serpent with vibrant, feathered wings and iridescent scales that shimmer in a rainbow of colors. It is a wise and benevolent creature, often serving as a guardian of sacred places or protecting important individuals from evil forces. Couatls are known for their powerful magic, which they use to heal, protect, and even shape the future. They can communicate telepathically and are highly intelligent, often acting as guides for those on quests for good. Despite their peaceful nature, Couatls are formidable in combat, able to cast powerful spells and deliver a potent venomous bite.</summary>
 
 <summary>The Couatl is a powerful celestial creature known for its intelligence, magical abilities, and versatility in combat. As a Medium-sized being with a Challenge Rating of 4, it is well-equipped to face various adversaries, boasting a solid Armor Class of 16 and a substantial pool of Hit Points amounting to 85. The Couatl excels in support roles through its innate spellcasting and healing capabilities while also being capable of dealing significant damage and controlling the battlefield with its unique abilities.</summary>

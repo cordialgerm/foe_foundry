@@ -1,6 +1,8 @@
 <MonsterName/>Moonchild Naga</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Moonchild Naga is a large monstrosity of neutral evil alignment, embodying a blend of serpentine grace and eldritch power. With an Armor Class of 15, it possesses sound natural defenses, and its Hit Points total 75, reflecting its resilience in prolonged confrontations. The creature moves with a speed of 40 feet, positioning itself strategically in combat. It has a Challenge Rating of 6, which suggests it can pose a significant threat to a party of adventurers, providing 2,300 experience points upon defeat. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Balloon Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>36</HP>
 <summary>The Balloon Spider is a Medium beast that serves as an ambush predator, utilizing its unique abilities and mobility to control the battlefield effectively. With an unaligned nature, it does not favor any particular side and attacks based purely on opportunity. This creature has a moderate Armor Class of 13, making it somewhat resilient against attacks, and possesses 36 hit points which can absorb a fair amount of damage. Its hovering ability gives it excellent mobility, allowing it to evade ground-based attacks while flying. The challenge rating of 1 indicates that it poses a moderate threat to adventurers, providing 200 experience points upon defeat. The Balloon Spider excels in delivering lightning damage, but it has a very low intelligence, which limits its strategic capabilities. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Camazotz</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>22</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>537</HP>
 <summary>Camazotz is a large fiend characterized by its chaotic evil nature. As a formidable foe, it presents a significant challenge in combat, boasting an incredibly high armor class of 19, 537 hit points, and the ability to both fly and engage in melee. Camazotz excels in dealing massive amounts of damage with its attacks, primarily through its bite and claw strikes, which also inflict additional fire damage. It possesses various resistances and immunities, making it a difficult target for typical combat strategies, particularly against non-magical attacks. However, it is vulnerable to cold damage, which can be exploited by cunning adventurers. With a challenge rating of 22, Camazotz demands respect and caution from any party daring enough to confront it.</summary>
 
 <detail>

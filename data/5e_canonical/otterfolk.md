@@ -1,6 +1,8 @@
 <MonsterName/>Otterfolk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>18</HP>
 <summary>The Otterfolk is a small humanoid creature characterized as chaotic good. It embodies a playful and agile spirit, making it an intriguing addition to any Dungeons & Dragons campaign. With a good Dexterity score of 17, the Otterfolk excels in stealth and agility, allowing it to navigate its environment skillfully. Its average armor class of 14 provides a reasonable defense while its hit points are modest at 18, making it relatively fragile in direct confrontations. As a creature with a challenge rating of 1/4, the Otterfolk is best suited for lower-level encounters or as a whimsical ally for adventurers. Notably, its unique special abilities enhance its survival and evasion capabilities, giving it an edge in aquatic environments and against reptilian foes.</summary>
 
 <detail>

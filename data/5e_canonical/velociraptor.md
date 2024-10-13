@@ -1,6 +1,8 @@
 <MonsterName/>Velociraptor</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>25</HP>
 <summary>The Velociraptor is a small but agile beast known for its quickness and deadly coordination in packs. With a challenge rating of 1/2, it is often utilized as a cunning and dangerous opponent in combat scenarios. The Velociraptor is characterized by a high Dexterity score of +4, making it exceptionally good at evading attacks and striking swiftly. Its strengths lie in its ability to work with allies, enhancing its offense through the Pack Tactics ability, which grants it advantage on attack rolls against creatures that are threatened by its companions. However, it also suffers from relatively low Strength and Intelligence scores. In direct combat, the Velociraptor possesses a mix of claw and bite attacks and can grapple opponents, restraining them and controlling the battlefield effectively.</summary>
 
 <detail>

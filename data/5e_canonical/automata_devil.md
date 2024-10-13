@@ -1,6 +1,8 @@
 <MonsterName/>Automata Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Automata Devil is a formidable Large Fiend characterized by its lawful evil alignment. With a Challenge Rating of 10, it presents a significant threat in combat, showcasing impressive physical prowess and a range of abilities that impose fear and disadvantage on its foes. It boasts high statistics in Strength and Constitution, allowing it to deliver powerful attacks while sustaining a considerable amount of damage. Its defenses include immunity to fire and poison damage, as well as resistances to nonmagical attacks that are not silvered. Its notable special abilities enhance its combat effectiveness, such as Magic Resistance, which gives it an advantage against spells, and Fear Aura, which can incapacitate opponents with fear. However, its relatively low intelligence means it may not excel in certain strategic situations that require cunning.</summary>
 
 <detail>

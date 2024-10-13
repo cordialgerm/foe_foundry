@@ -1,6 +1,8 @@
 <MonsterName/>Ogrepede</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Ogrepede is a massive and fearsome undead creature with a chaotic evil alignment. As a Huge monster boasting a Challenge Rating of 6, it presents a significant threat in combat due to its high hit points and powerful attacks. The Ogrepede has an armor class of 13, which is average for its challenge level, and it can move at a speed of 40 feet, with the ability to climb at 20 feet. While its Dexterity is subpar, its high Strength and Constitution afford it a good chance of dealing damage and absorbing hits. One of the creature's notable features is its ability to inflict fear on nearby opponents, making it a formidable foe in battle. However, it suffers from low Intelligence, Wisdom, and Charisma, which may limit its strategic engagements and interactions.</summary>
 
 <detail>

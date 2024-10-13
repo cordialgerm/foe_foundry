@@ -1,6 +1,8 @@
 <MonsterName/>Moss Lurker</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Moss Lurker is a small humanoid creature characterized by its chaotic neutral alignment. It serves as a stealthy ambusher within forested areas, adept at utilizing natural cover to surprise its enemies. With a relatively high Armor Class of 15, it possesses decent durability but can still be vulnerable to more powerful foes due to its moderate Hit Points of 45. Its challenge rating of 1 indicates that it presents a manageable threat level for lower-level adventurers, providing a balance of skill, mobility, and poison-related abilities. Notably, the Moss Lurker excels in stealth and perception, making it a formidable adversary in wooded environments, although its effectiveness diminishes in open terrains. </summary>
 
 <detail>

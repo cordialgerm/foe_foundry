@@ -1,6 +1,8 @@
 <MonsterName/>Silenal</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>14</AC>
+<HP/>117</HP>
 <summary>The Silenal is a small fey creature with a chaotic neutral alignment, embodying mischief and charm. It has an Armor Class of 14 and possesses 117 hit points, making it reasonably durable although not overly robust. The creature has a walking speed of 25 feet and a Challenge Rating of 7, meaning it poses a moderate threat to a party of adventurers. With a dexterous nature, a high Charisma, and several unique abilities, the Silenal excels in social encounters and combat scenarios, particularly by utilizing its spells and skills effectively. However, it does have limitations in physical strength and resilience against powerful attacks. Notably, the Silenal's abilities revolve around intoxication, charming effects, and combat manipulation, making it a whimsical yet formidable presence in any game.</summary>
 
 <detail>

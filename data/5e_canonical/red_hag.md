@@ -1,6 +1,8 @@
 <MonsterName/>Red Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Red Hag is a Medium-sized Fey creature, known for its cunning and malevolent nature. As a neutral evil entity, it revels in causing suffering and mischief, utilizing its powerful magic and physical attacks to overwhelm foes. With a challenge rating of 7, it poses a significant threat to adventurers, boasting an impressive collection of attributes, special abilities, and spells that enhance its combat efficacy. While its combat prowess is formidable, it remains vulnerable to strategies that exploit its weaknesses, such as ranged attacks and magical effects that do not require constitution saving throws.</summary>
 
 <detail>

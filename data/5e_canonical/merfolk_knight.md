@@ -1,6 +1,8 @@
 <MonsterName/>Merfolk Knight</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15</AC>
+<HP/>52</HP>
 <summary>The Merfolk Knight is a medium humanoid known for its unique blend of combat capabilities both underwater and on land. It has a robust armor class of 15 and can endure significant damage with 52 hit points, granting it good resilience in battles. The creature excels in melee and ranged combat due to its strong strength score of 16, which offers a good +5 modifier to hit with its trident. With a decent swimming speed of 40 feet and capable of moving on land albeit slowly at 10 feet, the Merfolk Knight is adept in aquatic environments. Its abilities to inspire allies and resist fear make it a supportive force in combat, though it can be vulnerable to ranged attacks unless positioned carefully.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Roc Juvenile</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>8</CR>
+<AC/>14</AC>
+<HP/>147</HP>
 <summary>The Roc Juvenile is a massive beast known for its formidable presence and aerial prowess, making it a dangerous foe in any confrontation. With an Armor Class of 14 and a substantial Hit Points total of 147, it can absorb a good amount of damage before going down. Its challenge rating of 8 indicates that it poses a significant threat, especially to characters who are not adequately prepared. The Roc has exceptionally high Strength, allowing for devastating attacks, alongside a good Constitution for durability. While its Intelligence and Charisma are quite low, rendering it less effective in social interactions or strategic decision-making, its Keen Sight ability and substantial flying speed (100 feet) make it an agile combatant in the air, hunting down prey or engaging enemies from above.</summary>
 
 <detail>

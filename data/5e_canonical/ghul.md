@@ -1,6 +1,8 @@
 <MonsterName/>Ghul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Ghul is a Medium undead creature embodying a sinister presence and is known for its tricky combat style and ability to unleash chaos upon its foes. With an Armor Class of 15 and 105 hit points, the Ghul is formidable in battle, particularly due to its resistances and immunities. It is most effective in melee range, leveraging its claws to deal substantial damage while having the potential to paralyze enemies. Its special abilities and spells enhance its role as a tactical combatant that can influence the battlefield and disrupt enemy plans. However, its reliance on Charisma for spellcasting and the potential vulnerability from certain forms of attack indicates that it has weaknesses that can be exploited by attentive opponents.</summary>
 
 <detail>

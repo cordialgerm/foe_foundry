@@ -1,7 +1,9 @@
 <MonsterName/>Tarrasque</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
 <Subtype/>titan</Subtype>
+<CR/>30</CR>
+<AC/>25 (natural armor)</AC>
+<HP/>676</HP>
 <summary>The Tarrasque is a towering, unstoppable force of destruction, regarded as one of the most powerful creatures in existence. Its massive, armored body is nearly impervious to all forms of damage, and its regenerative abilities make it nearly impossible to kill. Standing over 50 feet tall, the Tarrasque has claws capable of tearing through stone and a maw large enough to swallow buildings whole. It moves with terrifying speed for its size and leaves devastation in its wake. Fortunately, the Tarrasque is rarely active, spending most of its existence in slumber beneath the earth.</summary>
 
 <summary>The Tarrasque is a massive and titanic monstrosity, renowned for its incredible durability and devastating offensive capabilities. With an exceptionally high Armor Class of 25 and a staggering 1,230 hit points, the Tarrasque is an extremely formidable opponent in any combat situation, effectively making it nearly indestructible without significant power or strategy from its foes. Despite its towering stature, its Dexterity is only average, which means it may not be the quickest creature on the battlefield. However, its Strength and Constitution are exceptional, allowing it to inflict severe damage and recover swiftly during combat. With abilities that enable it to regenerate health, resist magical effects, and deal double damage to structures, the Tarrasque is a menace that adventurers would be wise not to confront without careful planning.</summary>

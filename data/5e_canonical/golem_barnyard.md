@@ -1,6 +1,8 @@
 <MonsterName/>Golem, Barnyard</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>9</AC>
+<HP/>75</HP>
 <summary>The Barnyard Golem is a medium-sized construct that embodies the characteristics of an unaligned creature. This golem serves as a formidable defender and can be associated with rural or agricultural settings, making it an unusual yet intriguing addition to any campaign. It boasts a significant amount of hit points, making it durable in combat, but its low Armor Class indicates that it can be vulnerable to attack if not properly defended. The Golem is quite strong, with an exceptional Strength score of 19, enabling it to hit hard with physical attacks. However, it has weaknesses in Dexterity and Intelligence, which can limit its mobility and problem-solving abilities in various situations. The creature's unique abilities and immunities provide it with an edge but also necessitate strategic planning from its allies to maximize its potential in battle.</summary>
 
 <detail>

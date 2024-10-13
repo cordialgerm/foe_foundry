@@ -1,6 +1,8 @@
 <MonsterName/>Deathwisp</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>15</AC>
+<HP/>82</HP>
 <summary>The Deathwisp is a medium-sized undead creature defined by its neutral evil alignment. This haunting entity is both elusive and dangerous, excelling in stealth and bringing a potent mixture of physical and necrotic damage to its victims. With an Armor Class of 15 and a robust hit point total of 82, it holds its ground well in combat, making it a formidable foe. However, its susceptibility to radiant damage while in sunlight, along with its requirement to remain stealthy, can serve as a weakness. Deathwisps rely on their exceptional Dexterity and Charisma, enabling them to strike quickly and manipulate their surroundings to their advantage. Overall, they are a significant challenge for adventurers, offering 2,900 experience points upon defeat.</summary>
 
 <detail>

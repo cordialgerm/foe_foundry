@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Bronze Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>22</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>444</HP>
 <summary>The Ancient Bronze Dragon is a noble and disciplined creature, with scales that shimmer like polished bronze. These dragons are often found near coastlines or large bodies of water, where they protect and oversee vast regions. Known for their sense of justice and honor, Bronze Dragons often aid noble causes, defending coastal cities and ships from threats. Their breath weapon is a powerful blast of lightning, and they can also manipulate water to create tidal waves or storms. Despite their formidable power, Ancient Bronze Dragons are often diplomatic, preferring to resolve conflicts through reason rather than force.</summary>
 
 <summary>The Ancient Bronze Dragon is a gargantuan creature known for its power and versatility. As one of the most formidable dragons, it serves as a guardian of coastal regions and is revered for its intelligence and connection to nature. With a high Armor Class of 21, it is difficult to hit, while its impressive 425 hit points and formidable Constitution make it exceptionally resilient in battle. The dragon possesses a range of abilities that enhance its combat prowess, such as strong multiattack capabilities featuring devastating bite, claw, and tail strikes. Its lightning immunity and natural spellcasting abilities further augment its effectiveness. Notably, it has the capacity for flight and swimming, making it a threat both in the air and underwater. While it has exceptional offensive capabilities, its reliance on advantageous terrain and the potential vulnerability during its recharge abilities may be considered a weakness.</summary>

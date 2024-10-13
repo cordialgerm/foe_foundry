@@ -1,6 +1,8 @@
 <MonsterName/>Bone Swarm</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>198</HP>
 <summary>The Bone Swarm is a Large, chaotic evil undead creature that embodies a sinister collection of bones animated into a deadly swarm. With an Armor Class of 17, it boasts both durability and an impressive pool of Hit Points totaling 198, making it a formidable opponent in combat. The Bone Swarm is characterized by its unique movement capabilities, able to walk swiftly at a speed of 60 feet and fly at 20 feet, allowing it to navigate the battlefield effectively. In terms of challenge, it has a Challenge Rating of 10, indicating it can present a significant threat to adventurers, yielding 5,900 experience points upon defeat. This creature is particularly notable for its robust offensive prowess and high damage potential, while also being resistant to many forms of attack.</summary>
 
 <detail>

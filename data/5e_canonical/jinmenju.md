@@ -1,6 +1,8 @@
 <MonsterName/>Jinmenju</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>9</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Jinmenju is a Huge, chaotic neutral plant creature known for its unique capabilities in combat and interaction. With an impressive 126 hit points and a moderate armor class of 14 due to its natural armor, it presents a solid challenge to adventurers. It stands out with its ability to attack from a distance through its roots, which can burst from the ground at strategic locations. The Jinmenju is immune to certain damage types, making it very resilient to non-magical attacks, and it possesses a formidable Charisma score of 22, allowing it to effectively manipulate encounters and communicate with a wide range of creatures. However, it lacks mobility with a speed of 0 ft. and is heavily dependent on its roots for both offense and defense.</summary>
 
 <detail>

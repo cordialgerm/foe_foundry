@@ -1,6 +1,8 @@
 <MonsterName/>Necrotech Bonecage Constrictor</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>175</HP>
 <summary>The Necrotech Bonecage Constrictor is a formidable creature that embodies the fusion of both technology and necromancy. This Huge undead monster, classified as neutral evil, stands as a threat on the battlefield due to its high hit points, substantial damage output, and the ability to restrain foes within its ominous frame. With a Challenge Rating of 9, this creature presents a substantial challenge to adventurers, particularly with its unique special ability named Necrotic Prison. It is particularly weak against bludgeoning and thunder damage, which can make it vulnerable in the right scenarios. Its high Constitution score provides it with excellent durability, while its low Intelligence and Charisma suggest that it lacks social capabilities and cunning. </summary>
 
 <detail>

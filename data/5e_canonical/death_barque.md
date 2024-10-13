@@ -1,6 +1,8 @@
 <MonsterName/>Death Barque</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>198</HP>
 <summary>The Death Barque is a truly formidable and terrifying creature in the realm of Dungeons & Dragons. As a Gargantuan undead entity of neutral evil alignment, it serves as a powerful adversary in aquatic environments. Its significant defenses include a high Armor Class of 17 and an impressive pool of 198 hit points, making it a tough opponent for adventurers to face. The creature operates optimally in water, boasting a swim speed of 50 feet, but it is unable to walk, which may limit its effectiveness on land. The Death Barque's Challenge Rating of 12 indicates that it poses a serious threat, capable of yielding 8,400 experience points upon defeat. Notable strengths include its damage immunities to necrotic and poison damage, as well as condition immunities that allow it to resist various debilitating effects. However, its primary weaknesses lie in its low intelligence and charisma, which may limit its effectiveness in some social or intellectual encounters.</summary>
 
 <detail>

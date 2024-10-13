@@ -1,6 +1,8 @@
 <MonsterName/>Dhampir Commander</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>17</AC>
+<HP/>97</HP>
 <summary>The Dhampir Commander is a medium humanoid creature that embodies a blend of vampiric traits and a commanding presence. It is characterized by its ability to inspire allies in combat and its adeptness in both melee and ranged attacks. With a formidable Armor Class of 17 and a healthy pool of 97 hit points, it is a resilient opponent in battle. The Dhampir Commander has a Challenge Rating of 7, making it suitable for confronting parties of moderate level. Its strengths lie in its dexterity and charisma, allowing it to effectively manipulate foes and coordinate attacks among allies. However, it is susceptible to radiant damage and, despite its high defenses, can be overwhelmed if outnumbered. </summary>
 
 <detail>

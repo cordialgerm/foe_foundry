@@ -1,6 +1,8 @@
 <MonsterName/>Doom Creeper</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>6</CR>
+<AC/>15</AC>
+<HP/>137</HP>
 <summary>The Doom Creeper is a small, unaligned plant creature that embodies a menacing blend of abilities, making it a formidable opponent on the battlefield. It has a decent armor class of 15 and boasts a substantial pool of 137 hit points, which provides it with good durability. The Doom Creeper excels in dexterity with a +5 modifier, allowing it to move swiftly and evade attacks while also being able to climb and burrow effectively. However, it suffers from low strength and charisma, indicating that it is not built for physical confrontation or social interactions. Its challenge rating of 6 suggests that it is a suitable adversary for mid-level adventurers, capable of dealing substantial damage through its actions while also employing a variety of disabling effects through its special abilities.</summary>
 
 <detail>

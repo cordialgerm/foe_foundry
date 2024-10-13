@@ -1,6 +1,8 @@
 <MonsterName/>Yaga Goo</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>85</HP>
 <summary>The Yaga Goo is a small, neutral evil ooze known for its sinister and elusive nature. With an Armor Class of 14 and a substantial pool of 85 hit points, this creature poses a moderate challenge to adventurers, rated at a Challenge Rating of 5. The Yaga Goo is exceptionally agile, boasting a Dexterity of 18, which offers it a good bonus for actions relying on dexterous movements, including stealth where it excels with a +10 modifier. One of its most notable characteristics is its ability to inflict necrotic damage, making it particularly threatening to certain types of foes. However, its intelligence and charisma are relatively average, limiting its effectiveness in social interactions and strategic planning.</summary>
 
 <detail>

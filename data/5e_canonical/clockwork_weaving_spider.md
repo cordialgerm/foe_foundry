@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Weaving Spider</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>30</HP>
 <summary>The Clockwork Weaving Spider is a tiny, unaligned construct that embodies the intricate machinery and artistry of a clockwork design. With an Armor Class of 15 and 30 hit points, it is moderately resilient, making it a challenging opponent for low-level adventurers. Its strengths lie in its high Dexterity score of 16, which grants it a good modifier of +3, allowing it to evade many attacks and granting higher chances for successful strikes in combat. However, its Intelligence, Wisdom, and Charisma scores are quite low, with modifiers of -1, indicating average understanding and interaction capabilities. The spider excels in mobility and agility, evidenced by its speed of 40 feet and proficiency in Acrobatics, where it has an exceptional modifier of +5, while also possessing a good passive Perception of 13.</summary>
 
 <detail>

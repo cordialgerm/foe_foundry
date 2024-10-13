@@ -1,6 +1,8 @@
 <MonsterName/>Frost Mole</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>71</HP>
 <summary>The Frost Mole is a small beast that thrives in cold environments and is not aligned with any particular faction or entity. It is a creature adept at both burrowing and stealth, making it an effective ambusher in snowy terrain. With a good Armor Class of 14 and a significant pool of 71 hit points, it can withstand a fair amount of damage, making it a competent opponent for low-level adventurers. Its challenge rating of 3 indicates that it poses a moderate threat. While it is physically robust and has considerable stealth capabilities, it lacks intelligence and charisma, making it predictable in social situations. Notably, its abilities allow it to manipulate the terrain to its advantage, creating strategic opportunities in combat.</summary>
 
 <detail>

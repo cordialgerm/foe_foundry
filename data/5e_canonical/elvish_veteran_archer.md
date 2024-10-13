@@ -1,6 +1,8 @@
 <MonsterName/>Elvish Veteran Archer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>16 (studded leather)</AC>
+<HP/>66</HP>
 <summary>The Elvish Veteran Archer is a skilled humanoid warrior adept in ranged combat, blending agility and precision. With a medium size and an armor class of 16, it presents a good defense due to its studded leather armor. The archer has a total of 66 hit points, calculated as 12d8 + 12, which gives it decent resilience in battle, making it a moderate threat with a challenge rating of 3, worth 700 experience points for defeated characters. This creature is notable for its exceptional dexterity, boasting a score of 18 which provides a +4 modifier, enabling superior ranged attacks and stealth capabilities. While it has average strength and charisma, its skills in Nature, Perception, Stealth, and Survival allow it to excel in navigating various environments, particularly in tracking beasts.</summary>
 
 <detail>

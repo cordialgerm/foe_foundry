@@ -1,6 +1,8 @@
 <MonsterName/>Dwarven Ringmage</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>136</HP>
 <summary>The Dwarven Ringmage is a powerful and strategic spellcaster, adept in the manipulation of magical energies and battlefield control. With a robust armor class of 16 and a solid hit pool of 136 hit points, it can withstand moderate damage in combat. Its challenge rating of 7 indicates that it poses a significant threat to adventurers, offering a combination of spellcasting abilities and unique combat options. The ringmage excels in using its intelligence to execute spells effectively, making it a formidable opponent as well as a crucial ally. However, its low charisma and average physical strength may leave it vulnerable to social challenges and direct physical confrontations.</summary>
 
 <detail>

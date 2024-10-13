@@ -1,6 +1,8 @@
 <MonsterName/>Sandman</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>82</HP>
 <summary>The Sandman is a medium-sized celestial creature embodying chaotic neutrality. Known for its ethereal nature, it has both formidable abilities and notable vulnerabilities. With an Armor Class of 14, it features 82 hit points, making it fairly resilient for its challenge rating of 5, which corresponds to 1,800 experience points. The Sandman primarily excels in manipulating dreams and inflicting psychic damage, showcasing its strengths in stealth and magic resistance. However, it is vulnerable to magical forces and nonmagical attacks that can penetrate its defenses. The creature's chaotic essence allows it to sway encounters through fear and illusion, while its high Charisma makes it a potent influence in social interactions.</summary>
 
 <detail>

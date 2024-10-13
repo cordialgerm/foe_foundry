@@ -1,6 +1,8 @@
 <MonsterName/>Lizard</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>10</AC>
+<HP/>2</HP>
 <summary>A Lizard is a small, cold-blooded reptile commonly found in warm environments such as deserts, jungles, or rocky areas. Lizards are agile and quick, using their sharp claws and teeth to catch small insects and evade predators. Though individually harmless, some larger species of lizards can be more dangerous, especially when provoked. Lizards are often used as familiars or pets by spellcasters due to their stealth and adaptability. They are excellent climbers and can blend into their surroundings to avoid detection.</summary>
 
 <summary>The Lizard is a tiny, unassuming beast often found in various environments, primarily thriving in wetlands and rocky terrains. While it has a low challenge rating, making it a very weak combatant, the Lizard's role is primarily that of an insignificant creature in the world, harmless and easily overlooked. Its strengths lie in its low profile and ability to evade detection due to its small size, while its weaknesses are pronounced contributions to its minimal combat effectiveness and low hit points. Notably, the Lizard has unique game mechanics that allow it to participate in the ecosystem as a prey animal, but it can also serve as a useful, if inconsequential, familiar or companion for low-level characters.</summary>

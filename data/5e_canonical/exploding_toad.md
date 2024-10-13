@@ -1,6 +1,8 @@
 <MonsterName/>Exploding Toad</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>2</HP>
 <summary>The Exploding Toad is a tiny monstrosity characterized by its chaotic evil alignment. It poses an unexpected and dangerous threat to adventurers due to its explosive demise when defeated. Despite its minuscule size and meager hit points, it compensates with unique abilities and a knack for causing area damage, making it a surprisingly potent adversary. Its strengths include a higher Dexterity score which enhances its agility and stealth, while its low Strength and Intelligence stats render it ineffective in physical confrontations outside of its bite attack. With a challenge rating of 1/4, it is suitable for low-level encounters but can be lethal if not approached with caution.</summary>
 
 <detail>

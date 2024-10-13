@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Conductor</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>28</HP>
 <summary>The Clockwork Conductor is a small construct known for its lawful neutral alignment and mechanical precision. This creature serves as a support figure on the battlefield, enhancing the abilities of its allies through its unique skills and special features. Its strengths lie in its ability to confer advantages to allies, both by providing bonuses to attacks and helping them resist magical effects. However, its physical capabilities are fairly limited, with low scores in strength and constitution, making it vulnerable in direct combat. The Clockwork Conductor is a handy ally for parties looking to maximize their efficiency in combat through strategic support from a distance.</summary>
 
 <detail>

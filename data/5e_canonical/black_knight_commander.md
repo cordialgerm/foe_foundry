@@ -1,6 +1,8 @@
 <MonsterName/>Black Knight Commander</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>18 (plate)</AC>
+<HP/>91</HP>
 <summary>The Black Knight Commander is a formidable Medium humanoid creature that embodies a combination of martial prowess and dark magic, operating under a lawful evil alignment. It possesses a high Armor Class of 18, making it very resilient to attacks. With 91 hit points, it can withstand a good amount of damage in combat. As a challenge rating 5 creature, it presents a well-rounded threat with strong offensive capabilities and tactical advantages. Its notable strengths include powerful melee attacks, the ability to enhance allies' damage output, and an impressive mount that provides strategic mobility. However, its reliance on mounted combat can be a weakness if it finds itself without its warhorse.</summary>
 
 <detail>

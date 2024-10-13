@@ -1,6 +1,8 @@
 <MonsterName/>Feyward Tree</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Feyward Tree is a huge construct that embodies a blend of magical resilience and physical might, making it a formidable adversary in combat. With an impressive armor class of 17 and 126 hit points, the Feyward Tree is quite durable, capable of taking significant damage before being incapacitated. It excels in melee engagements with its potent attacks and has several special abilities that protect it from various damage types and conditions. However, its low mobility, limited to walking at only 20 feet, and its vulnerability to cold damage are notable weaknesses. Challenging to defeat, this creature operates best in proximity to its foes, where it can leverage its powerful attacks and ability to control the battlefield.</summary>
 
 <detail>

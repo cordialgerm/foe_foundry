@@ -1,6 +1,8 @@
 <MonsterName/>Duskthorn Dryad</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>77</HP>
 <summary>The Duskthorn Dryad is a Medium-sized Fey creature that embodies the chaotic neutrality of the fey world. With an Armor Class of 17, thanks to its natural armor, and a substantial hit point total of 77, it is a resilient opponent in combat, capable of enduring several rounds of engagement. The dryad possesses exceptional Charisma of 24, which enhances its ability to influence and deceive others, making it a formidable entity in social interactions. While its physical strength is average, its excellent Dexterity of 20 allows it to evade attacks effectively. This creature is particularly powerful in its ability to summon woodland allies and use nature-based magic, making it a strategic player in both combat and environmental manipulation. However, it is less effective in brute force and more inclined towards evasion, charm, and control.</summary>
 
 <detail>

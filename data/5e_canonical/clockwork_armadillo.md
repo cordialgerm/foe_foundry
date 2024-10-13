@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Armadillo</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Clockwork Armadillo is a Small, unaligned Construct that serves as a resilient guardian or helper in various settings. With a solid Armor Class of 14 and 22 hit points, it can endure some damage while also possessing specific immunities to various conditions and damage types. Its Dexterity is notably high at +4, allowing it to be very good at avoiding attacks and acting swiftly in combat. However, it has low Intelligence and Charisma, making it less effective in social interactions or complex problem-solving situations. Overall, the Clockwork Armadillo is a mechanical creature ideal for combat support, thanks to its special abilities and actions, while being relatively passive in roles that require emotional or intellectual engagement.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Lich Hound</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>85</HP>
 <summary>The Lich Hound is a medium-sized undead creature imbued with nefarious energy, embodying the essence of fear and death. With an armor class of 14, it has decent protection in combat. Possessing 85 hit points, calculated as 10d8 plus an additional 40, it can endure moderate amounts of damage before being overwhelmed. This creature moves swiftly with a walking speed of 50 feet and can even fly at a speed of 30 feet, allowing it to navigate the battlefield effectively. As a challenge rating of 4, the Lich Hound presents itself as a formidable opponent, granting 1,100 experience points upon defeat. Its strengths lie in its high Dexterity and Constitution scores, both at 18 (+4), along with an impressive Charisma of 16 (+3), which enhances its menacing presence. However, while it has an average Strength score of 10 (+0) and very low Intelligence of 6 (-2), it can be seen as a tactical disadvantage in certain situations. Notably, it has a suite of abilities that enhance its perception and tracking capabilities, making it a relentless predator.</summary>
 
 <detail>

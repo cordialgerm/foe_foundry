@@ -1,6 +1,8 @@
 <MonsterName/>Phase Monster</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>85</HP>
 <summary>The Phase Monster is a large monstrosity that combines formidable physical abilities with a range of magical traits, making it a challenging opponent for adventurers. It has an Armor Class of 13, which is generally considered average for creatures of its challenge rating, and it boasts 85 hit points, giving it considerable durability in combat. The monster’s speed allows it to walk at 30 feet and fly at 50 feet, enabling versatile movement options. It has a Challenge Rating of 4, indicating it poses a moderate threat, granting those who defeat it 1,100 experience points. The Phase Monster excels in agility and resilience, bolstered by a very good Strength score of 18 and good Constitution score of 16, while displaying average Dexterity. However, it suffers from exceptionally low Intelligence and Charisma, limiting its mental capabilities and social interactions.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Mahoru</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>105</HP>
 <summary>Mahoru is a formidable large monstrosity with an unaligned nature, characterized by its impressive physical abilities and unique combat tactics. With an armor class of 15 derived from its natural armor and a substantial hit point pool of 105, the mahoru is quite resilient in battle. It possesses a movement speed of 60 feet, allowing it to navigate the battlefield swiftly. Although its challenge rating is 3, suggesting it can be a moderate threat to adventurers, its advantages in combat, particularly through its abilities, can make it a significant adversary. The mahuru excels in melee combat with strong attack rolls and devastating damage potential. Its notable weaknesses include low intelligence and charisma scores, which may restrict its ability to engage in complex interactions outside of physical confrontations.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Lantern Hagfish</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>9</HP>
 <summary>The Lantern Hagfish is a small aberration that serves as a unique adversary in aquatic or void-themed encounters. With an Armor Class of 11 and a mere 9 Hit Points, it is relatively fragile compared to other creatures in its challenge rating of 1/8. However, its resistance to several conditions, along with special abilities that allow it to manipulate its environment, makes it a tricky foe. The Lantern Hagfish's bioluminescent slime not only provides illumination but also enhances its combat effectiveness when partnered with other hagfish, reflecting its tactical potential in groups. Its ability to move effortlessly through the Void and ability to burrow into prey adds layers to its combat strategy, making it an effective ambush predator in the right conditions. </summary>
 
 <detail>

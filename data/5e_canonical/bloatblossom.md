@@ -1,6 +1,8 @@
 <MonsterName/>Bloatblossom</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Bloatblossom is a Medium plant creature known for its unique abilities and its role in combat. It has a Challenge Rating of 2, indicating it is a moderately difficult foe for adventurers. The Bloatblossom has a solid Armor Class of 15 due to its natural armor, and with 60 hit points, it can sustain some damage before being defeated. Its movement speed is relatively slow at 20 feet, which may limit its positioning in battle. The creature is particularly potent with its poisonous attacks and has several actions that can inflict significant damage and debilitating effects on its enemies. One notable aspect of the Bloatblossom is its resistance to certain conditions, making it resilient against various forms of incapacitation. </summary>
 
 <detail>

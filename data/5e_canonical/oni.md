@@ -1,7 +1,9 @@
 <MonsterName/>Oni</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
 <Subtype/>outsider</Subtype>
+<CR/>7</CR>
+<AC/>16 (chain mail)</AC>
+<HP/>110</HP>
 <summary>An Oni is a malevolent, shape-shifting giant that can assume the form of a human or other creatures to deceive its enemies. Oni have blue or green skin, large tusks, and horns, and they wield powerful magic in addition to their physical strength. Known for their cunning and cruelty, Oni often infiltrate human settlements disguised as travelers, advisors, or merchants, where they sow chaos or feast on the weak. In combat, they use both their magical abilities and their brute strength to overpower enemies. Oni can also become invisible or fly, making them even more dangerous foes.</summary>
 
 <summary>The Oni is a formidable creature classified as a large giant and is often depicted as an outsider with both physical and magical prowess. With an Armor Class of 16 and a substantial 134 hit points, it can withstand significant damage while dishing out heavy attacks. The Oni possesses a unique ability to fly, which enhances its tactical options in combat. It has a Challenge Rating of 7, indicating it is a powerful adversary that can be a serious threat to adventurers. Its strengths include a mix of physical attacks and magical capabilities, along with resistances and regeneration that enhance its survivability. However, the Oni lacks exceptional mobility beyond its flying ability, and its effectiveness can be diminished by certain restorative spells or abilities used by opponents.</summary>

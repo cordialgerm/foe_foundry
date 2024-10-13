@@ -1,6 +1,8 @@
 <MonsterName/>Wraith, Oathrot</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Oathrot Wraith is a Medium undead creature with a neutral evil alignment, making it a formidable opponent in combat. With an Armor Class of 13 and 52 hit points, this wraith is capable of dealing significant damage while having notable resistances. It is primarily characterized by its ability to manipulate the oaths of living creatures, cursing them and imposing penalties on their ability to maintain concentration and perform proficient actions. The wraith can fly at a speed of 60 feet, allowing it to navigate the battlefield effectively while remaining immune to various damage types. However, it is vulnerable to radiant damage and suffers a disadvantage in sunlight, which can be exploited by clever players. </summary>
 
 <detail>

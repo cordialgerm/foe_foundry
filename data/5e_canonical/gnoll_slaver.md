@@ -1,6 +1,8 @@
 <MonsterName/>Gnoll Slaver</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>71</HP>
 <summary>The Gnoll Slaver is a medium humanoid creature embodying chaotic evil tendencies, known for its brutality and cunning in combat. With an armor class of 15, it is relatively resilient due to its chain shirt, making it capable of enduring significant damage. It has a total of 71 hit points, derived from rolling 11 eight-sided dice plus a modifier of 22, which allows it to withstand some punishment in battle. The creature has a movement speed of 30 feet, which is average for its size. Its challenge rating is 3, indicating it poses a moderate threat to adventurers, rewarding 700 experience points upon defeat. Notably, the Gnoll Slaver possesses strong physical attributes, with a strength value of 18 providing a very good modifier of +4, allowing it to deliver powerful melee attacks. Its dexterity and constitution are also decent, enhancing its agility and durability, while its intelligence, wisdom, and charisma are average or slightly above in effectiveness.</summary>
 
 <detail>

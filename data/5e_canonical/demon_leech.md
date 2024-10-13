@@ -1,6 +1,8 @@
 <MonsterName/>Demon, Leech</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Leech Demon is a Large chaotic evil fiend known for its insidious nature and characteristic blood-draining abilities. Residing within the depths of dark waters, this creature boasts a formidable presence with a robust set of skills, allowing it to both traverse aquatic environments and engage effectively in combat. With an Armor Class of 17, it is well-defended, and its Hit Points of 147 give it significant durability on the battlefield. The Leech Demon is particularly strong in Constitution with a modifier of +5, indicating exceptional resilience, while its Strength and Dexterity scores of +4 and +3 respectively make it a good melee combatant. However, it has weaknesses in Charisma at -2, making it less effective for social interactions or spells requiring a high Charisma score. Its challenge rating of 11 places it as a formidable opponent for parties of intermediate level.</summary>
 
 <detail>

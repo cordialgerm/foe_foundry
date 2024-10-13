@@ -1,6 +1,8 @@
 <MonsterName/>Young White Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>133</HP>
 <summary>A Young White Dragon is a savage and territorial creature, already displaying the brutal instincts of its kind. Its frosty white scales blend perfectly with the icy tundras and snow-covered mountains it calls home. Its breath weapon is a freezing blast of cold that can encase its enemies in ice. Unlike the more intelligent metallic dragons, Young White Dragons are driven by primal instincts, focusing on survival and hoarding food and treasure. They are solitary hunters, relying on their keen senses and brute strength to dominate their frozen territory. Their aggressiveness and territorial nature make them dangerous adversaries.</summary>
 
 <summary>The Young White Dragon is a formidable creature that represents the powerful and often feared nature of dragonkind. This large dragon features a high Armor Class of 17 and boasts an impressive pool of Hit Points totaling 152. With a Challenge Rating of 9, it is suitable for mid-level adventurers who may find themselves in peril when facing this icy predator. Its strengths lie primarily in its robust Constitution and strong attack capabilities, while it can easily navigate through icy environments due to its special abilities. However, its average Dexterity and low Intelligence may leave it susceptible to certain tactics from clever opponents. The dragon is proficient in various skills such as perception and history, and its immunities to cold damage make it an exceptionally resilient foe in wintry conditions.</summary>

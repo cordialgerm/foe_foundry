@@ -1,6 +1,8 @@
 <MonsterName/>Devil, Maelstrom</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>195</HP>
 <summary>The Maelstrom Devil is a formidable fiend known for its ability to manipulate weather and its impressive combat capabilities. With its lawful evil nature, the Maelstrom Devil excels in controlling both the battlefield and the environment to its advantage. It has a robust pool of hit points, making it a resilient adversary in combat. This creature's ability to resist various damage types, paired with high attack output and tactical control over its surroundings, makes it a dangerous opponent. However, it has a relatively low passive perception and lacks certain saving throws, which could be exploited by clever players.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Minotaur</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>76</HP>
 <summary>A Minotaur is a fearsome, humanoid creature with the head of a bull and the body of a massive, muscular man. Minotaurs are known for their incredible strength, aggressive nature, and skill in combat. They often wield large axes or clubs, using their horns to charge at enemies and gore them in battle. Minotaurs are often found in labyrinthine ruins or underground lairs, where they use their keen sense of direction and savage cunning to hunt down intruders. Though they are often depicted as brutal and violent, some Minotaurs live in small tribes with their own customs and hierarchies.</summary>
 
 <summary>The minotaur is a large monstrosity known for its immense strength and ferocity in battle. With a challenge rating of 4 and 76 hit points, it presents a substantial threat to players. Its notable physical prowess is reflected in its strong statistics, boasting an impressive Strength of 18, which translates to a +4 modifier, and a Constitution of 16, granting a +3 modifier. While its Dexterity and other mental stats are average, it compensates with exceptional combat abilities and a special power that allows it to recall any path it has taken, making it a formidable opponent in labyrinthine settings. The minotaur's primary weakness is its average Dexterity, making it less evasive in combat, and its reliance on melee attacks means it can be outmaneuvered at range.</summary>

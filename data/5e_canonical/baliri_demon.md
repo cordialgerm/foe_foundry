@@ -1,6 +1,8 @@
 <MonsterName/>Baliri Demon</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>14</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>190</HP>
 <summary>The Baliri Demon is a fearsome medium-sized fiend characterized by its chaotic evil nature. It possesses strong physical attributes, making it a formidable foe in combat, particularly with its high Strength, Dexterity, and Constitution scores. With an Armor Class of 17, thanks to its natural armor, and a total of 190 hit points, the Baliri Demon can endure a significant amount of damage. The creature is rated with a Challenge Rating of 14, which denotes it as a difficult opponent for mid-level adventurers. Its notable abilities include magic resistance and unique attacks that can cripple foes by severing their limbs, along with a terrifying area-of-effect ability that can stun and damage multiple enemies at once. While it has immunities, including poison and the ability to resist a variety of damage types, the Baliri Demon is still vulnerable to magical attacks if they bypass its high saving throw modifiers.</summary>
 
 <detail>

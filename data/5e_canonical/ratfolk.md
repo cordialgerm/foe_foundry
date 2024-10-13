@@ -1,6 +1,8 @@
 <MonsterName/>Ratfolk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (studded leather)</AC>
+<HP/>17</HP>
 <summary>The Ratfolk is a small humanoid creature known for its agility and cunning nature. With a neutral alignment, it is often seen as a sly opportunist rather than a malevolent being. The Ratfolk excels in evasion and teamwork, leveraging its nimbleness and the advantage provided by its allies in combat. Despite being physically weaker with low strength and moderate hit points, it compensates with good dexterity and intelligence, making it a capable combatant in groups. Its challenge rating of 1/4 suggests it can be a minor but interesting opponent or ally in adventures, offering unique strategic advantages.</summary>
 
 <detail>

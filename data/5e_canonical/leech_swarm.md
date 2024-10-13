@@ -1,6 +1,8 @@
 <MonsterName/>Leech Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>32</HP>
 <summary>The Leech Swarm is a medium-sized unaligned beast that embodies a predatory and parasitic nature. With an Armor Class of 13 and 32 hit points, it can withstand a fair amount of damage for its challenge rating of 2, representing moderate threat in combat scenarios. The creature thrives in aquatic environments, boasting a swimming speed of 40 feet, while its walking speed is limited to 10 feet. The Leech Swarm's dexterity is exceptional at +3, allowing it to be quite agile and stealthy, with a skill modifier of +5 in Stealth. However, it suffers from weak strength, with a value of just 5, and has significantly low intelligence and charisma. The swarm is adept at draining the life force from its victims, making it especially dangerous to those who are already wounded. On the downside, it is vulnerable in terms of limited damage resistance and cannot heal itself, making it rely on its offensive capabilities to secure victories in combat.</summary>
 
 <detail>

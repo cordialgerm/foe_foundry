@@ -1,6 +1,8 @@
 <MonsterName/>Angel, Shrouded</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Shrouded Angel is a powerful Medium celestial creature that embodies chaotic good ideals. With a challenge rating of 13, it boasts impressive combat capabilities alongside formidable defensive traits. The angel's armor class of 18 and its 161 hit points provide a strong base for both offense and survivability. Its mobility is enhanced by a walking speed of 40 feet and a flying speed of 60 feet, allowing it to maneuver effectively in battle. This creature is characterized by exceptionally high Dexterity and Constitution, making its physical attacks both reliable and potent, while its ability to resist numerous conditions grants it remarkable durability. However, despite its strengths, the Shrouded Angel possesses average Charisma, which may limit its interactions that rely on social finesse.</summary>
 
 <detail>

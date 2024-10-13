@@ -1,6 +1,8 @@
 <MonsterName/>Shriekbat</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>178</HP>
 <summary>The Shriekbat is a huge monstrosity that operates independently, without alignment. It showcases impressive combat capabilities combined with an ability to deliver devastating sound-based attacks, making it a formidable opponent for adventurers. With an Armor Class of 15 and a substantial pool of Hit Points totaling 178, the Shriekbat is durable and capable of withstanding considerable damage. Its natural armor and strong Constitution contribute to its resilience in battle. However, the creature has average Dexterity and very low Intelligence, Wisdom, and Charisma, which reflects its primal nature. Its primary role in combat is that of a bruiser, dealing significant melee damage while also affecting the battlefield with its Shriek ability. </summary>
 
 <detail>

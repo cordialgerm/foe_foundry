@@ -1,6 +1,8 @@
 <MonsterName/>Lord of the Hunt</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>18</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>229</HP>
 <summary>The Lord of the Hunt is a powerful fey creature that embodies the spirit of the hunt, commanding both respect and fear on the battlefield. As a lawful neutral being, it operates with a code, focusing on achieving its goals through strategic planning and unwavering determination. The creature possesses exceptional physical attributes, particularly in strength and dexterity, making it a formidable opponent in combat. With a high armor class of 18 and significant hit points totaling 229, it is durable and difficult to bring down. The Lord of the Hunt excels in ranged and melee attacks thanks to its magical weaponry and can deal substantial poison damage in addition to its regular attacks. However, its reliance on physical prowess and magical capabilities can also be seen as a weakness, as it may struggle against opponents who can outmaneuver or outsmart it.</summary>
 
 <detail>

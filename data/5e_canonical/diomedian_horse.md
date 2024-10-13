@@ -1,6 +1,8 @@
 <MonsterName/>Diomedian Horse</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>57</HP>
 <summary>The Diomedian Horse is a powerful large beast that serves as a formidable combatant in its environment. With a high Armor Class of 14 and plenty of hit points at 57, it stands as a resilient opponent on the battlefield. This creature excels in strength, boasting a Strength score of 20, which translates into an exceptional attack potential, while its Dexterity and Constitution scores also provide it with good agility and endurance. However, its Intelligence is notably low, making it relatively simple-minded. The Diomedian Horse has access to special abilities and a multiattack capability that enhances its effectiveness in combat, especially when teamed up with allies. Its challenge rating of 3 means that it poses a moderate threat to adventurers, offering 700 XP for overcoming it.</summary>
 
 <detail>

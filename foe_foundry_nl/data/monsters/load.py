@@ -64,6 +64,10 @@ def get_canonical_monsters() -> dict[str, CanonicalMonster]:
         creature_type = (
             srd.creature_type if srd is not None else artisinal.creature_type
         )
+        cr = srd.cr if srd is not None else artisinal.cr
+        ac = srd.ac if srd is not None else artisinal.ac
+        ac_detail = srd.ac_detail if srd is not None else artisinal.ac_detail
+        hp = srd.hp if srd is not None else artisinal.hp
 
         subtypes = set()
         for m in monsters:
@@ -79,6 +83,10 @@ def get_canonical_monsters() -> dict[str, CanonicalMonster]:
             name=name,
             creature_type=creature_type,
             creature_subtypes=list(subtypes),
+            cr=cr,
+            ac=ac,
+            hp=hp,
+            ac_detail=ac_detail,
             is_srd=srd is not None,
             infos=monsters,
             summary=summary,
@@ -110,6 +118,60 @@ def creature_type_from_markdown(text: str) -> tuple[str, list[str]]:
         subtypes = []
 
     return ct.title(), subtypes
+
+
+def challenge_rating_from_markdown(text: str) -> str:
+    lines = text.splitlines()
+    line = next((li for li in lines if "Challenge" in li or "CR" in li), None)
+    if line is None:
+        raise ValueError("Cannot find Challenge Rating")
+
+    pattern = r"Challenge Rating:.*?(?P<d1>\d+)|Challenge Rating: CR (?P<d2>\d+)|Challenge.*?(?P<d3>\d+)"
+    s = re.search(pattern, line)
+    if s is None:
+        raise ValueError("Cannot find Challenge Rating")
+
+    cr = next((cr for _, cr in s.groupdict().items() if cr is not None), None)
+    if cr is None:
+        raise ValueError("Cannot find Challenge Rating")
+
+    return cr
+
+
+def ac_from_markdown(text: str) -> tuple[int, str | None]:
+    lines = text.splitlines()
+    line = next((li for li in lines if "Armor Class" in li), None)
+    if line is None:
+        raise ValueError("Cannot find Armor Class")
+
+    pattern = r"\*\*Armor Class:?\*\*[:\s]*(?P<ac>\d+)\s*(?P<detail>\([a-zA-Z ]+\))?"
+    s = re.search(pattern, line)
+    if s is None:
+        raise ValueError("Cannot find Armor Class")
+
+    vals = s.groupdict()
+    ac = int(vals["ac"])
+    detail = vals.get("detail")
+    if detail is not None:
+        detail = detail.replace("(", "").replace(")", "")
+
+    return ac, detail
+
+
+def hp_from_markdown(text: str) -> int:
+    lines = text.splitlines()
+    line = next((li for li in lines if "Hit Points" in li), None)
+    if line is None:
+        raise ValueError("Cannot find Hit Points")
+
+    pattern = r"\*\*Hit Points:?\*\*[:\s]*(?P<hp>\d+)"
+    s = re.search(pattern, line)
+    if s is None:
+        raise ValueError("Cannot find Hit Points")
+
+    vals = s.groupdict()
+    hp = int(vals["hp"])
+    return hp
 
 
 def name_to_key(name: str) -> str:
@@ -206,11 +268,19 @@ def markdown_to_monster(
             raise ValueError("Cannot parse creature_type")
         key = name_to_key(monster_name)
 
+        cr = challenge_rating_from_markdown(text)
+        ac, ac_detail = ac_from_markdown(text)
+        hp = hp_from_markdown(text)
+
         return MonsterInfo(
             key=key,
             name=monster_name,
             creature_type=ct,
             creature_subtypes=subtypes,
+            cr=cr,
+            ac=ac,
+            hp=hp,
+            ac_detail=ac_detail,
             source=source,
             path=monster_path,
             type="markdown",

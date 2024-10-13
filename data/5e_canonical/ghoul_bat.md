@@ -1,6 +1,8 @@
 <MonsterName/>Ghoul Bat</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>14</HP>
 <summary>The Ghoul Bat is a small undead creature characterized by its neutral evil alignment. It serves as a low-level threat in its encounters, particularly adept at incapacitating foes with its abilities. With an Armor Class of 13 and 14 hit points, it is moderately resilient for its challenge rating of 1/4, making it a manageable opponent for lower-level adventurers. Its primary strengths rest in its speed and unique abilities, allowing it to engage foes effectively while remaining difficult to target. However, its low Strength and lack of significant melee combat capability identify clear weaknesses, as it relies more on its dexterous movements and special attacks to subdue others. </summary>
 
 <detail>

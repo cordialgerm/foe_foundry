@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Elf Champion Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>90</HP>
 <summary>The Shadow Elf Champion Warrior is a formidable Medium humanoid with a Challenge Rating of 5, indicating that it poses a significant threat to adventurers. With an impressive Armor Class of 16 and 90 hit points, this warrior is built to endure in combat. It excels in both melee and ranged combat, using its agility and strength effectively. The creature possesses exceptional Dexterity and Strength, both at 18 (+4 modifier), allowing it to strike accurately and evade attacks. The Shadow Elf is also capable of harnessing dark magic, enhancing its combat effectiveness further. Its spells, alongside a potent combination of weapon attacks, make it a versatile opponent. However, it shares a common weakness among humanoid creatures with its limited spell save DC of 13.</summary>
 
 <detail>

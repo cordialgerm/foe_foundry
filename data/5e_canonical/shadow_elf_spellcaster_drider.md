@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Elf Spellcaster Drider</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>17</AC>
+<HP/>114</HP>
 <summary>The Shadow Elf Spellcaster Drider is a large monstrosity that blends the traits of a drider, typically a drow turned into a spider-like creature, with spellcasting abilities reminiscent of its shadow elf heritage. This creature has a robust defensive capability with an Armor Class of 17 and considerable hit points totaling 114, making it a durable opponent in combat. Its primary strengths include its agility, indicated by a Dexterity score of 16, and its potent Wisdom of 16, allowing it to effectively utilize spellcasting while maintaining significant physical damage output. Nevertheless, it is vulnerable to sunlight, suffering disadvantage on attack rolls and perception checks when exposed. With a Challenge Rating of 6, it poses a serious challenge but can be matched by diligent adventurers.</summary>
 
 <detail>

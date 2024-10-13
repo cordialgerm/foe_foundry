@@ -1,6 +1,8 @@
 <MonsterName/>De Ogen</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>15</AC>
+<HP/>45</HP>
 <summary>De Ogen is a medium-sized undead creature with an alignment of neutral evil. It serves as a potent adversary capable of incapacitating foes and evading attacks effectively. With its formidable Dexterity score of 20, the creature has exceptional agility, making it difficult to hit in combat. De Ogen boasts a fair amount of resilience, featuring damage immunities to elements such as fire, necrotic, and poison, while resisting various other forms of damage from non-magical sources. However, its strength is notably weak, making it rely on its other abilities rather than direct physical confrontations. The creature's challenge rating of 4 hints at its moderate difficulty level for adventurers, presenting a mixture of offensive capabilities and structural defenses, particularly when using its special abilities.</summary>
 
 <detail>

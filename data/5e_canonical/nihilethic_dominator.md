@@ -1,6 +1,8 @@
 <MonsterName/>Nihilethic Dominator</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Nihilethic Dominator is a formidable Large Undead creature characterized by its Neutral Evil alignment. This entity stands as a significant challenge in combat scenarios, reflecting both its durability and offensive capabilities. With a challenge rating of 5, it offers 1,800 experience points upon defeat. The dominator possesses an armor class of 13, providing a decent level of defense, and boasts 82 hit points derived from a robust constitution, making it resilient against attacks. Its strengths lie in its damage immunities to cold, necrotic, and poison damage, along with being immune to the poisoned condition. Despite its low Dexterity score, which generates a bad modifier to initiative and ranged defenses, the dominator compensates for this with strong melee attacks and capabilities that allow it to maneuver effectively in battle. It can be particularly dangerous due to its ability to knock opponents prone and deal significant necrotic damage.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Deep One Archimandrite</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>153</HP>
 <summary>The Deep One Archimandrite is a formidable Large Humanoid creature that embodies chaotic evil. It has a high armor class of 15 due to its natural armor, making it reasonably tough to hit in combat. With 153 hit points, it can sustain significant damage, showcasing a good degree of resilience. The creature's movement speed is 40 feet, allowing it to engage effectively in battle. It holds a challenge rating of 8, which means it provides a substantial threat to adventurers, offering 3,900 experience points upon defeat. With strong physical attributes, particularly a remarkable Strength score of 20 (+5), the Deep One Archimandrite is capable of delivering powerful melee attacks. It also boasts decent Dexterity and Constitution scores, which help it evade attacks and maintain its hit points. Its high Charisma of 19 (+4) enhances its spellcasting ability, enabling it to invoke a variety of spells that can influence the battlefield and support its allies. </summary>
 
 <detail>

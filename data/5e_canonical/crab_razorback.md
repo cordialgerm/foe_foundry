@@ -1,6 +1,8 @@
 <MonsterName/>Crab, Razorback</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>58</HP>
 <summary>The Razorback Crab is a medium-sized beast characterized by its distinctive spiky shell and aggressive behavior. While it lacks any form of alignment, its instincts dictate its actions. It has a good Armor Class of 17 due to natural armor, making it relatively tough to hit. With 58 hit points, it can sustain some damage in combat. This creature possesses a challenge rating of 2, suitable for adventurers who are somewhat experienced but not yet experts. While it has decent Strength and Constitution scores, its low Dexterity and Intelligence make it less agile and less cognitively aware. The Razorback Crab’s main strengths lie in its unique abilities and its capability to grapple opponents, making it a formidable opponent in close combat, though it does have limited range of movement and strategy.</summary>
 
 <detail>

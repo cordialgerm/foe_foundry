@@ -1,6 +1,8 @@
 <MonsterName/>Chuul</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Chuul is a grotesque, amphibious creature resembling a massive crustacean. Its body is covered in thick, chitinous plates, with large pincers capable of crushing bone. Surrounding its maw are numerous writhing tentacles, which can paralyze its prey with a touch. Chuuls are ancient beings, often found lurking in swamps or the dark depths of the ocean. They are driven by a deep, alien intelligence and serve powerful, eldritch entities. Chuuls hunt by dragging their paralyzed victims into the water, where they drown and devour them. They are often employed as guardians for underwater ruins or other hidden places of power.</summary>
 
 <summary>The Chuul is a large aberration that serves as a formidable predator in aquatic environments. With an armor class of 16, it can withstand a good amount of damage, complemented by its 93 hit points derived from 11d10 plus 33, making it relatively resilient in combat. Its challenge rating of 5 indicates that it poses a moderate threat to a party of adventurers, granting 1,800 experience points upon defeat. The Chuul is particularly dangerous due to its ability to grapple and paralyze opponents, significantly hindering their ability to fight back. However, it does have weaknesses, including a low Dexterity score of 10, meaning its ability to dodge or evade attacks is average. With a strong Strength score of 18 and a decent Constitution of 16, the Chuul excels in physical combat, making it a powerful adversary in close quarters, especially in water.</summary>

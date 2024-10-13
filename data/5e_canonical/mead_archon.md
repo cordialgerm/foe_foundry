@@ -1,6 +1,8 @@
 <MonsterName/>Mead Archon</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>82</HP>
 <summary>The Mead Archon is a Medium-sized celestial being aligned with chaotic good. It thrives as a support character within a party, utilizing its powerful spellcasting and resilient defenses. With an Armor Class of 14 and a total of 82 hit points, it is moderately difficult to take down in battle. The archon has a movement speed of 30 feet on foot and 60 feet while flying, which allows it to navigate the battlefield strategically. With a Challenge Rating of 4, the Mead Archon can provide a considerable challenge for lower-level adventurers while also serving as an interesting ally thanks to its unique abilities. Its strengths lie in its robust defenses, enhanced by magic resistance and conditions immunities, while its weaknesses may involve lower physical damage output when compared to other combat-centric creatures. Notably, the archon can create potions and has a fun, thematic aspect of drunkenness that affects its abilities.</summary>
 
 <detail>

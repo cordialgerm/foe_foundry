@@ -1,6 +1,8 @@
 <MonsterName/>Ankheg Queen</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>59</HP>
 <summary>The Ankheg Queen is a formidable Huge monstrosity that poses a significant threat to adventurers in its territory. With an armor class of 14, it boasts a decent level of protection, complemented by 59 hit points, making it a tenacious foe in combat. As a creature designed for ambush, it has a burrowing speed of 15 feet, allowing it to strike from underground, catching unsuspecting prey off guard. Classified with a challenge rating of 3, it rewards 700 experience points upon defeat, making it a worthwhile adversary. The Ankheg Queen utilizes both physical attacks and acid sprays, showcasing its capacity for dealing high damage while grappling with its victims, thereby controlling the battlefield effectively. While it excels in attack and grappling, its intelligence is notably low, which hinders its problem-solving abilities and interactions outside of combat.</summary>
 
 <detail>

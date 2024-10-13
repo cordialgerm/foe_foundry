@@ -1,6 +1,8 @@
 <MonsterName/>Vampire Warrior</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>18</AC>
+<HP/>142</HP>
 <summary>The Vampire Warrior is a formidable Medium Undead creature known for its deadly prowess in combat and manipulative charm. With a Challenge Rating of 12, it is a significant threat in any encounter, boasting a high Armor Class of 18 and a substantial pool of Hit Points totaling 142. This vampire is characterized by exceptional physical attributes, notably a Strength of 20 and Constitution of 20, making it very strong and resilient. While it has a few notable weaknesses, including susceptibility to sunlight and running water, its myriad abilities and resistances provide it with a significant edge in battle. The Vampire Warrior wields a blend of melee attacks and powerful magical abilities, allowing it to dominate the battlefield while also having the potential to charm and manipulate foes.</summary>
 
 <detail>

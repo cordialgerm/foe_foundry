@@ -1,6 +1,8 @@
 <MonsterName/>Warlords Ghost</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>58</HP>
 <summary>The Warlord's Ghost is a medium undead creature that embodies the essence of a once-great warrior, now transformed into a haunting apparition bent on revenge. This spectral entity possesses notable strengths, including the ability to phase through obstacles and evade many harmful conditions that typically afflict living beings. Its high Charisma makes it exceptionally powerful in terms of spell-like abilities, particularly those that manipulate the fate of its adversaries. However, it also has weaknesses; its physical robustness is average, and it can still be harmed by magical attacks or by those who can see through its ethereal nature.</summary>
 
 <detail>

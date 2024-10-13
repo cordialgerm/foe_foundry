@@ -1,6 +1,8 @@
 <MonsterName/>Algorith</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>153</HP>
 <summary>The Algorith is a formidable medium-sized construct known for its role as a powerful entity in combat, capable of dealing substantial force damage and manipulating spells. With its exceptional armor class of 18 and robust hit points totaling 153, it stands as a resilient opponent. The Algorith's challenge rating of 10 indicates that it is a significant threat for adventuring parties, offering them 5,900 experience points upon defeat. This construct excels in strategic superiority due to its immunity to several conditions and various damage resistances. However, its reliance on physical power and potential vulnerabilities to certain attacks makes it crucial for players to approach it with a strong tactical focus.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Lambent Witchfyre</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Lambent Witchfyre is a large aberration that exists with an unaligned nature. It stands out in combat due to its unique fire-based abilities, making it a formidable opponent against enemies lacking fire resistance or immunity. With a respectable challenge rating of 7, it has significant hit points totaling 110, supported by its high Constitution, which offers good survivability. While it lacks intelligence and charisma, rendering it somewhat socially inept, its Dexterity grants it good agility, allowing for effective attacks. However, its Wisdom is average, indicating it won't easily perceive danger. The Witchfyre's main strengths lie in its immunities to fire and poison, as well as its ability to regain health through fire damage, making it especially difficult to take down if opponents are unprepared for its flame-based mechanics.</summary>
 
 <detail>

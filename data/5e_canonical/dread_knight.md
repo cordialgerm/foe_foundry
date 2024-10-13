@@ -1,6 +1,8 @@
 <MonsterName/>Dread Knight</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>19</CR>
+<AC/>18</AC>
+<HP/>262</HP>
 <summary>The Dread Knight is a formidable medium undead creature, boasting a high armor class of 18 and a substantial pool of hit points totaling 262, derived from 25d8 plus 150. With a challenge rating of 19, this creature presents a significant threat in combat, capable of dealing immense damage and possessing various powerful abilities. Its attributes reflect exceptional physical and mental prowess, with a strength of 22, a constitution of 22, and notably high charisma at 20. The Dread Knight is resilient against many forms of damage, being immune to cold, fire, necrotic, and poison damage, and it cannot be affected by conditions such as charm, fright, or stun. While it does not require air, sustenance, or sleep, its unholy aura grants advantages to itself and allies while imposing disadvantages on enemies. The Dread Knight's abilities make it a potent adversary and a strategic threat on the battlefield.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Treacle</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>The Treacle is a tiny, unaligned ooze that presents as an unusual and deceptive creature within the realm of Dungeons & Dragons. This diminutive entity serves as both a potential threat and a cunning trickster due to its ability to drain blood from unsuspecting victims while remaining undetected. With its unique blend of mobility and mimicry, the Treacle can navigate through tight spaces and disguise itself as familiar, less threatening objects. While it possesses low combat attributes, its average durability and clever tactics make it a noteworthy opponent for adventurers, particularly at low levels. However, its limited offensive capabilities mean that it is best used as a stealthy ambusher rather than a front-line combatant.</summary>
 
 <detail>

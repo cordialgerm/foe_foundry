@@ -1,6 +1,8 @@
 <MonsterName/>Stormboar</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Stormboar is a formidable large monstrosity characterized by its combination of physical prowess and electrical abilities. With a robust Armor Class of 15 and a substantial hit point pool of 95, the Stormboar can withstand a fair amount of damage while dishing out punishing attacks. Its Challenge Rating of 6 indicates that it poses a significant threat to mid-level adventurers. The creature is particularly notorious for its electrical immunities and its ability to deal both slashing and lightning damage, making it a versatile opponent. However, its low intelligence, wisdom, and charisma scores suggest limited capabilities in terms of spellcasting and tactical ingenuity, while its reliance on physical attacks means it may struggle against ranged or spellcasting opponents. </summary>
 
 <detail>

@@ -34,6 +34,7 @@ datasets = "^3.0.1"
 sentence-transformers = "^3.1.1"
 tiktoken = "^0.8.0"
 jupyter = "^1.1.1"
+mdpd = "^0.2.1"
 
 [tool.poetry.scripts]
 foe_foundry_nl = "foe_foundry_nl.__main__:cli"

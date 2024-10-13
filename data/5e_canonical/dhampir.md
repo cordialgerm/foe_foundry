@@ -1,6 +1,8 @@
 <MonsterName/>Dhampir</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>32</HP>
 <summary>The Dhampir is a Medium humanoid creature that blends the lineage of vampires with that of humans, allowing it to navigate both worlds with a unique set of abilities. It possesses a challenge rating of 1, making it a moderately strong adversary for low-level adventurers. Its strengths lie in its nimble Dexterity and Charisma, making it effective in both combat and social situations. With damage resistance to necrotic damage and a useful ability to charm others, the Dhampir can manipulate encounters to its advantage, yet it can be vulnerable to attacks due to its lower health pool of 32 hit points. </summary>
 
 <detail>

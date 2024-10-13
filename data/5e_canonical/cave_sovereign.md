@@ -1,6 +1,8 @@
 <MonsterName/>Cave Sovereign</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>16</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>253</HP>
 <summary>The Cave Sovereign is a formidable Huge Aberration with a chaotic evil alignment, designed to terrify and dominate its surroundings. With an impressive Armor Class of 18 due to its natural armor and a staggering total of 253 hit points, it proves to be a tough adversary in combat. Its Challenge Rating of 16 indicates that it should pose a significant threat to well-prepared adventurers. The creature features a range of strengths, such as resistance to various damage types and a unique ability to incapacitate foes with its mesmerizing Deathlights. However, it has weaknesses as well; for instance, its low Dexterity score reflects a below-average agility, making it less effective in dodging attacks. The Cave Sovereign is notable for its telepathic communication, which allows it to manipulate and control its environment without the need to speak.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Manggus</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (hide armor)</AC>
+<HP/>127</HP>
 <summary>The Manggus is a formidable creature characterized as a large, chaotic evil giant. It possesses a unique capability to shapeshift between its true form and a more terrifying hydra form, allowing it to adapt to different combat situations. With a strong armor class of 14 and substantial hit points totaling 127, the Manggus can withstand a considerable amount of damage. Its physical attributes are impressive, particularly its Strength score of 18, which grants it very good melee combat effectiveness, and a Constitution score of 16, enhancing its ability to endure attacks. However, it is less competent in mental faculties, with an Intelligence score of 8 (bad), Wisdom of 7 (very bad), and Charisma of 9 (bad), making it susceptible to mental effects and social interactions.</summary>
 
 <detail>

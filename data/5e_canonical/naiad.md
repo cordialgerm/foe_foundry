@@ -1,6 +1,8 @@
 <MonsterName/>Naiad</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>22</HP>
 <summary>The Naiad is a Medium-sized Fey creature often associated with water and nature, embodying the grace and ethereal beauty of aquatic environments. It has an Armor Class of 15, which is considered good, indicating that it can avoid attacks fairly well. With 22 hit points (5d8), its durability in combat is relatively low, positioning it as a creature that relies on agility and special abilities rather than raw endurance. The Naiad's speed is notable, with a walking speed of 30 feet and a swimming speed of the same, making it versatile in both land and water scenarios. Its Challenge Rating of 1 suggests it's suitable for early-level encounters, providing 200 experience points upon defeat.</summary>
 
 <detail>

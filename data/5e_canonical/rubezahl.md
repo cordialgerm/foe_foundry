@@ -1,6 +1,8 @@
 <MonsterName/>Rubezahl</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>10</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>Rubezahl is a medium fiend characterized by its chaotic evil nature. This monstrous entity is adept at both physical combat and deception, making it a formidable foe in any encounter. With a good Armor Class of 15 that comes from its natural armor and a hefty pool of hit points totaling 136, Rubezahl can withstand significant damage. It is also incredibly mobile, able to move at a speed of 50 feet. However, while it boasts strong offensive abilities and a variety of magical capabilities, it has weaknesses that can be exploited by astute adventurers. Its challenge rating of 10 indicates it can provide a tough challenge, dealing devastating damage with lightning and slashing attacks.</summary>
 
 <detail>

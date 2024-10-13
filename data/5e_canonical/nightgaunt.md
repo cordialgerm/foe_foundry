@@ -1,6 +1,8 @@
 <MonsterName/>Nightgaunt</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Nightgaunt is a formidable aberration characterized by its large size and lawful evil alignment. Serving as a hunter of dreams and nightmares, it is a creature that utilizes stealth and psychological terror to dominate its foes. With an Armor Class of 17 and a substantial pool of 142 hit points, the Nightgaunt is capable of withstanding a good deal of damage while effectively dealing it in return. It boasts strong physical attributes—particularly in Strength and Constitution, both rated at +4—making it a very good melee combatant. Despite its low Intelligence, reflected by a -3 modifier, the Nightgaunt compensates with a good Wisdom modifier of +3, allowing it to be perceptive and intimidating. Its abilities grant it advantages in combat, particularly when it is not alone, enhancing its threat level significantly.</summary>
 
 <detail>

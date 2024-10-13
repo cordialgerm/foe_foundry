@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Rats</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>24</HP>
 <summary>A Swarm of Rats is a seething mass of small rodents that move together in search of food. These swarms are commonly found in urban areas, sewers, or abandoned buildings, where they feed on anything they can find. While a single rat poses little danger, a swarm can quickly overwhelm an enemy with bites and scratches. Swarms of Rats are particularly dangerous in enclosed spaces, where their sheer numbers can make it difficult to escape. In addition to physical damage, they can spread disease, making them a hazard in both combat and in areas they infest.</summary>
 
 <summary>The Swarm of Rats is a Medium Beast that embodies a collective of small, vermin-like creatures working together as a singular entity. With an Armor Class of 11 and 17 hit points, this swarm is relatively weak, making it an easy target for adventurers. However, its Challenge Rating of 1/4 indicates that it poses some danger, especially when attacking in numbers. The swarm is resistant to bludgeoning, piercing, and slashing damage, which enhances its survivability against physical attacks, although its low Constitution score of -1 reflects its overall fragility. The swarm's keen senses and unique abilities allow it to navigate effectively in combat, making it a nuisance to encounter, especially in confined spaces where its swarm mechanics can be fully utilized.</summary>

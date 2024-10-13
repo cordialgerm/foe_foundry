@@ -1,6 +1,8 @@
 <MonsterName/>Death Vulture</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Death Vulture is a large monstrosity exuding an aura of horror and decay, primarily functioning as a formidable opponent in combat. This neutral evil creature is characterized by its exceptionally high Strength and Constitution, making it a tough adversary with a substantial pool of hit points. Notably, the Death Vulture's ability to inflict damage is enhanced by its special abilities, which promote teamwork among allies and can debilitate foes through its stench and necrotic attacks. However, while its Dexterity is average, it lacks any meaningful charisma or intelligence, limiting its interaction capacity in social contexts.</summary>
 
 <detail>

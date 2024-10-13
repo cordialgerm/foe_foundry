@@ -1,6 +1,8 @@
 <MonsterName/>Air Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>90</HP>
 <summary>An Air Elemental is a swirling, translucent mass of wind and vapor, constantly in motion. Its form is difficult to see, often appearing as little more than a gust of wind, though at times it condenses into a vaguely humanoid shape with swirling arms and legs made of pure air. These beings move swiftly and silently through the sky, capable of generating powerful gusts of wind and whirlwinds that can lift creatures off the ground. They can also suffocate foes by surrounding them in a vortex of air. Air Elementals are wild and free-spirited, embodying the chaotic nature of the element they come from.</summary>
 
 <summary>The Air Elemental is a formidable creature known for its speed and versatility in combat. As a Large Elemental, it possesses a strong armor class of 14 and can endure a significant amount of punishment with 90 hit points, reflecting its resilience in battle. With a Challenge Rating of 5, it provides a reasonable challenge for adventurers, boasting exceptional dexterity with a score of 18, which gives it a +4 modifier for high agility and maneuverability. While its strength and intelligence scores are average to low, its unique abilities and resistances make it a significant opponent. Notably, it is immune to poison damage and has resistance to lightning and thunder damage, providing it with substantial survivability against many attacks. It operates well within the battlefield using its flying ability, allowing it to engage or disengage effectively.</summary>

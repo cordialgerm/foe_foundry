@@ -1,6 +1,8 @@
 <MonsterName/>Kobold, Empyrean</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Kobold Empyrean is an extraordinary creature representing a blend of celestial and draconic powers, embodying the virtues of dragons and serving as a source of strength and inspiration for other kobolds. This small celestial being thrives in combat and supports its allies on the battlefield, all the while possessing formidable defenses and a unique array of abilities. With its robust armor class of 18 and significant hit points totaling 150, the Empyrean is well-equipped to withstand attacks, making it a stalwart presence. However, while its melee and magical attacks are powerful, they are somewhat limited by its reliance on situational effects and the nature of its actions. The creature excels in supporting its kin, providing advantages and moments of inspiration, but it may be vulnerable if isolated from its allies.</summary>
 
 <detail>

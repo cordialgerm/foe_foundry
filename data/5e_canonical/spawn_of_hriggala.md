@@ -1,6 +1,8 @@
 <MonsterName/>Spawn of Hriggala</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>138</HP>
 <summary>The Spawn of Hriggala is a fearsome, huge fiend characterized by its chaotic evil nature. It presents a significant challenge in battle, boasting a high armor class of 16 due to its natural armor, and a substantial health pool of 138 hit points. With its burrowing speed of 30 feet and walking speed of 40 feet, it is capable of navigating both the earth and ground with ease, making it versatile in combat. The challenge rating of 10 indicates that it is a formidable opponent, worth 5,900 experience points upon defeat. It possesses exceptional physical strength with a strength score of 25, providing it with a very good attack modifier of +7, while its constitution of 21 contributes to a good saving throw bonus against effects that target hit points. With low intelligence, wisdom, and charisma scores, the Spawn is not particularly adept at social interactions or mental prowess, making it less effective in scenarios requiring those skills. Its immunities and resistances to various damage types render it difficult to harm, emphasizing its role as a tank on the battlefield.</summary>
 
 <detail>

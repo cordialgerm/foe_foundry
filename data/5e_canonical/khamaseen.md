@@ -1,6 +1,8 @@
 <MonsterName/>Khamaseen</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Khamaseen is a tiny elemental creature, infused with the powers of dust and lightning. With a unique ability to fly and a notable resistance to various forms of damage, this creature poses a moderate threat despite its small size. Its challenge rating of 1 makes it accessible for low-level adventurers, and it has effective stealth capabilities due to its condition immunities. However, its lack of offensive spells and low intelligence may limit its strategic combat potential. The Khamaseen can disrupt opponents using its Stinging Dust and Choking Cloud abilities, making it an elusive foe in the heat of battle. </summary>
 
 <detail>

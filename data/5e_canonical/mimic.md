@@ -1,7 +1,9 @@
 <MonsterName/>Mimic</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
 <Subtype/>shapechanger</Subtype>
+<CR/>2</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>58</HP>
 <summary>A Mimic is a shape-shifting creature that can transform into inanimate objects to ambush unsuspecting prey. Most commonly, Mimics take the form of chests, doors, or other pieces of furniture, waiting for someone to come close before revealing their true form. When a Mimic attacks, it uses adhesive pseudopods to trap its victims, pulling them in with its powerful, toothy maw. Mimics are highly adaptable and can alter their appearance to fit any environment. They are intelligent, capable of understanding language, and can be quite cunning in their ambush tactics.</summary>
 
 <summary>The Mimic is a fascinating Medium monstrosity renowned for its ability to disguise itself as an inanimate object, luring in unsuspecting victims with its deceptive appearance. Often found in dungeons or treasure hoards, the Mimic serves as a trap for adventurers, using its sticky appendages to ensnare and consume those who are too curious. With a Challenge Rating of 2, it poses a fair threat to lower-level adventurers. Its robust physical attributes, especially its Strength of 18, make it a formidable opponent in close combat, while its stealth skills and unique abilities provide it with tactical advantages. However, its low Intelligence and Charisma mean it is not particularly formidable in social or strategic planning. Despite its durability and combat effectiveness, its reliance on ambush tactics makes it vulnerable to detection and area attacks.</summary>

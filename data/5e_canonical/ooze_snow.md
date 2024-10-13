@@ -1,6 +1,8 @@
 <MonsterName/>Ooze, Snow</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>7</CR>
+<AC/>6</AC>
+<HP/>171</HP>
 <summary>The Snow Ooze is a formidable, huge ooze creature that serves as a treacherous obstacle in icy environments. It is unaligned and acts mainly on instinct, relying on its physical prowess and unique abilities to dominate its surroundings. This creature possesses high durability, demonstrated by its significant hit points of 171, which allows it to withstand considerable damage. Its strengths lie in its cold damage capabilities, various movement options, and its power to blind foes, yet it has very low Dexterity and Intelligence, making it less agile and unable to strategize effectively. Notably, the Snow Ooze thrives in snowy and icy terrains, where it can move with ease and catch unsuspecting creatures off-guard.</summary>
 
 <detail>

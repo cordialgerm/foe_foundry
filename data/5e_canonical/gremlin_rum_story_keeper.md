@@ -1,6 +1,8 @@
 <MonsterName/>Gremlin, Rum Story Keeper</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>38</HP>
 <summary>The Rum Story Keeper is a tiny fey creature with chaotic evil tendencies, embodying both mischief and a penchant for intoxicating fun. With its unique powers revolving around the effects of drunkenness and storytelling, it can debilitate foes or enhance the capabilities of its allies. While it has strong magical resilience and can deliver potent poison attacks, the Rum Story Keeper can be frail due to its low hit points and armor class. Its most notable feature is its ability to manipulate the battlefield with its storytelling and drunken aura, making it both a supportive ally to fellow Rum Gremlins and a tricky foe.</summary>
 
 <detail>

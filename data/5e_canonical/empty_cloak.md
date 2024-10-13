@@ -1,6 +1,8 @@
 <MonsterName/>Empty Cloak</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Empty Cloak is a Medium Construct with a neutral alignment, serving as an interesting encounter for adventurers, particularly due to its unique mechanics and behavior in combat. With an Armor Class of 13, it can withstand moderate damage, and it boasts a total of 45 hit points, which is a respectable figure for its Challenge Rating of 1/2, making it a suitable foe for lower-level parties. The creature has exceptional Strength at 18 (+4), allowing it to deal significant damage with melee attacks, while its Dexterity of 14 (+2) also grants it good agility in combat scenarios. However, its Charisma at 1 (-5) reflects a complete lack of social skills, making it ineffective in any interactions that rely on Charisma. The Empty Cloak is particularly vulnerable to fire damage and has several immunities including poison and psychic damage, making it a resilient opponent in varied combat situations.</summary>
 
 <detail>

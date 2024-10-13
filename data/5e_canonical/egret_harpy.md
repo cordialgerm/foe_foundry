@@ -1,6 +1,8 @@
 <MonsterName/>Egret Harpy</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>75</HP>
 <summary>The Egret Harpy is a medium-sized monstrosity known for its aerial agility and enchanting songs. As a neutral creature, it possesses a unique balance of offensive and supportive capabilities, making it versatile in various encounters. With a challenge rating of 2 and a solid pool of 75 hit points, it can endure a fair bit of damage. The harpy’s strength lies in its innate spellcasting ability and its range of both melee and magical attacks. However, its armor class of 12 indicates a moderate level of defense, making it vulnerable to coordinated assaults. Its most notable feature is the ability to assist allies in navigation and effectiveness in marshy terrain, enhancing both combat and exploration dynamics.</summary>
 
 <detail>

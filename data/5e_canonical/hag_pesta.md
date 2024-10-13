@@ -1,6 +1,8 @@
 <MonsterName/>Hag, Pesta</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Pesta Hag is a formidable Medium Fey creature characterized by her chaotic neutral alignment, which grants her unpredictability in her actions. With a Challenge Rating of 4, she poses a significant threat to adventurers and is particularly known for her abilities centered around disease and pestilence. This hag has a well-rounded array of attributes, boasting a strong Constitution, Wisdom, and Strength, which contribute to her durability and effectiveness in combat. With an Armor Class of 17 due to her natural armor and a total of 105 hit points, she can withstand a moderate amount of damage while delivering powerful strikes to her foes. However, she is vulnerable to radiant damage, which can exploit her weaknesses in battle.</summary>
 
 <detail>

@@ -1,8 +1,10 @@
 <MonsterName/>Veteran</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
-<Subtype/>any lineage</Subtype>
 <Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>3</CR>
+<AC/>17 (splint)</AC>
+<HP/>58</HP>
 <summary>A Veteran is a seasoned warrior who has survived many battles and honed their combat skills over years of service. Veterans are highly trained in the use of a variety of weapons and armor, and they possess the experience and tactical knowledge to outmaneuver less experienced foes. Whether serving as guards, soldiers, or mercenaries, Veterans are respected for their discipline and combat prowess. They often lead smaller groups of soldiers or adventurers, offering both leadership and deadly combat abilities in the heat of battle.</summary>
 
 <summary>The Veteran is a formidable medium humanoid creature that embodies the archetype of a seasoned warrior. With an armor class of 16, it is quite resilient in combat, showcasing a total of 58 hit points, which grants it good survivability. The challenge rating of 3 indicates that it presents a moderate threat to adventurers, providing a rewarding encounter for parties of low to mid-level characters. The Veteran excels in melee combat thanks to its solid Strength score of 16, allowing it to deliver powerful attacks. While its Dexterity is average at 12, it still manages to be mobile on the battlefield. However, its Intelligence, Wisdom, and Charisma scores are all average as well at 10, indicating that it relies more on physical prowess than mental agility or charm. The Veteran is versatile, boasting diverse attacks and tactical capabilities that can significantly impact combat scenarios. </summary>

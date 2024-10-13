@@ -1,6 +1,8 @@
 <MonsterName/>Dread Troll</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>7</CR>
+<AC/>15</AC>
+<HP/>105</HP>
 <summary>The Dread Troll is a formidable Large Giant known for its terrifying resilience and strength. With a high Armor Class of 15 and a substantial pool of Hit Points totaling 105, it can withstand considerable damage in battle. The creature boasts an impressive Challenge Rating of 7, which indicates that it can present a significant challenge to a group of adventurers. The Dread Troll excels in physical combat, utilizing its multiple attacks and its ability to regenerate health, making it a tough opponent. However, it does have vulnerabilities, particularly to fire and acid damage, which can temporarily hinder its regenerative capabilities. This troll's unique trait of controlling severed limbs also adds a layer of complexity to encounters, as players must contend with an enemy that can still fight even when damaged.</summary>
 
 <detail>

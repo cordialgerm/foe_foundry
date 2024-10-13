@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Wharflings</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>66</HP>
 <summary>The Swarm of Wharflings is a large, unaligned beast that serves as a chaotic hazard in its environment. This creature's primary role in combat is to overwhelm enemies with swarming attacks while also creating disruption by stealing items. With an armor class of 13 and hit points totaling 66, it maintains a fair level of durability in battles, but it does not possess strong offensive capabilities aside from its swarm-based attacks. The swarm's mobility allows it to occupy spaces of other creatures, making it a strategic nuisance. It has strong resistance to physical damage types, but it lacks any intelligence or charm, making it susceptible to spells and abilities that target those weaknesses. Notably, the swarm's unique movement allows it to traverse any opening that fits a Tiny wharfling, giving it exceptional maneuverability despite its size.</summary>
 
 <detail>

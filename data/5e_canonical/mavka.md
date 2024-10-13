@@ -1,6 +1,8 @@
 <MonsterName/>Mavka</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>170</HP>
 <summary>The Mavka is a formidable Medium undead creature that embodies chaotic evil. This creature has strong offensive capabilities, enhanced by its ability to regenerate health and utilize powerful spells. The Mavka is particularly dangerous when mounted on its nightmare, as it gains additional combat options and mobility. However, it has notable weaknesses, primarily its hypersensitivity to sunlight, which inflicts significant damage and hampers its effectiveness in combat. This combination of strengths and weaknesses positions the Mavka as a challenging adversary for adventurers, particularly in environments that limit its sunlight vulnerabilities.</summary>
 
 <detail>

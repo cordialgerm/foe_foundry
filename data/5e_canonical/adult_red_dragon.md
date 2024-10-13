@@ -1,6 +1,8 @@
 <MonsterName/>Adult Red Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>17</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>256</HP>
 <summary>The Adult Red Dragon is the embodiment of fire and fury, with scales that glow like molten lava and smoke rising from its nostrils. It has large, bat-like wings and a crest of jagged spines running down its neck and back. Red Dragons are known for their overwhelming arrogance and greed, often amassing enormous hoards of treasure in their volcanic lairs. Their breath weapon is a cone of intense fire, capable of incinerating entire villages in an instant. These dragons are among the most feared and dangerous of their kind, attacking anything that they perceive as a threat to their dominance or their hoard.</summary>
 
 <summary>The Adult Red Dragon is a formidable creature known for its immense power and intelligence, making it a classic apex predator in the world of Dungeons and Dragons. Classified as a Huge Dragon, this creature boasts exceptional physical attributes and formidable magical abilities, standing as a significant challenge for adventurers. With an Armor Class of 19, it is quite tough to hit, and it can endure substantial damage thanks to its 310 Hit Points. Speed is also on its side, with the ability to walk and climb at 40 feet per round and fly at an impressive 80 feet. Being a Challenge Rating 20 creature, it is designed for high-level encounters and rewards a significant experience of 25,000 XP upon defeat. Noteworthy strengths include its immunity to fire damage and abilities that enhance its already intimidating presence in battle. However, reliance on high Dexterity rolls for certain abilities may signify a potential weakness, as its Dexterity modifier is only average.</summary>

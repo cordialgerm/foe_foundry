@@ -1,6 +1,8 @@
 <MonsterName/>Young Wind Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>123</HP>
 <summary>The Young Wind Dragon is a large, chaotic neutral creature that embodies the elemental power of storms and winds. With a formidable presence in combat, it boasts high physical attributes, including strong strength and constitution, making it a tough opponent both physically and through its unique abilities. It has a good armor class of 16, allowing it to withstand attacks efficiently, and an impressive pool of hit points totaling 123, which translates to a substantial survivability in battles. The dragon's speed is exceptional, boasting a walking speed of 90 feet and the ability to fly at 30 feet. However, it does have weaknesses; while it has immunity to lightning damage, it only resists cold damage. Overall, the Young Wind Dragon serves as a powerful enemy in battle, showcasing abilities that manipulate storm and wind effects to both damage and control the battlefield.</summary>
 
 <detail>

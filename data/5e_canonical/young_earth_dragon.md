@@ -1,6 +1,8 @@
 <MonsterName/>Young Earth Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>10</CR>
+<AC/>18</AC>
+<HP/>161</HP>
 <summary>The Young Earth Dragon is a large and powerful creature, often viewed as a guardian of the natural world, particularly of the earth and stone. With an impressive armor class of 18 and a substantial 161 hit points, this dragon is a formidable foe in combat. Its challenge rating of 10 indicates that it should present a significant challenge to a party of adventurers, providing 5,900 experience points if defeated. The Young Earth Dragon possesses a variety of strengths, including its high Constitution score of 18, granting it a good saving throw modifier of +8, which makes it hard to take down with direct attacks. Its ability to resist nonmagical damage gives it an additional layer of defense, and its mobility is enhanced by its burrowing capability, allowing it to maneuver through the battlefield unpredictably. However, its intelligence and charisma are relatively average, which may affect its spellcasting effectiveness and social interactions.</summary>
 
 <detail>

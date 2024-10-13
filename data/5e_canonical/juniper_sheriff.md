@@ -1,6 +1,8 @@
 <MonsterName/>Juniper Sheriff</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>31</HP>
 <summary>The Juniper Sheriff is a small fey creature embodying the lawful neutral alignment, operating as a guardian of truth and honesty. With a challenge rating of 1/2, this creature is adept at detecting deceit and enforcing integrity within its vicinity. It has a solid armor class of 13 due to its natural armor and possesses a moderate health pool of 31 hit points, which is derived from rolling 7 six-sided dice plus a bonus of 7. The Juniper Sheriff moves quickly, with a walking speed of 40 feet, allowing it to quickly engage or disengage in combat.</summary>
 
 <detail>

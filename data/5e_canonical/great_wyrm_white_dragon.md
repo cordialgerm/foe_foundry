@@ -1,6 +1,8 @@
 <MonsterName/>Great Wyrm White Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>22</CR>
+<AC/>20</AC>
+<HP/>740</HP>
 <summary>The Great Wyrm White Dragon is an exceptionally powerful and formidable creature in the Dungeons & Dragons universe, known for its vast size and mastery over ice and cold. As a Gargantuan dragon, it possesses a blend of destructive capabilities, strong physical attacks, and potent mystical abilities. With a high Armor Class of 20 and an impressive pool of hit points totaling 740, it is exceptionally durable in battle. Its challenge rating of 22 indicates that it poses a significant threat to adventurers, offering a blend of devastating breath attacks and magical prowess that can control the battlefield. While its cold damage immunities make it resilient against cold-based attacks, it lacks any significant resistance to non-cold damages, which may be exploited by clever opponents. This dragon has strengths in intimidation and perception, making it a terrifying opponent that commands respect.</summary>
 
 <detail>

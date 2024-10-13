@@ -1,6 +1,8 @@
 <MonsterName/>Corpse Worm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Corpse Worm is a large monstrosity that presents a formidable challenge to adventurers, especially given its unique abilities and combat style. With a robust hit point pool, a decent armor class, and the capacity to grapple and swallow its prey, it becomes a significant threat on the battlefield. Primarily, its strength lies in its melee attack, which not only deals piercing damage but also has the potential to inflict a debilitating disease on its victims. However, it has a low intelligence and charisma, which limits its strategic options outside direct combat. The Corpse Worm is best approached carefully, given its capacity to restrain and poison foes while remaining resilient against poison damage itself.</summary>
 
 <detail>

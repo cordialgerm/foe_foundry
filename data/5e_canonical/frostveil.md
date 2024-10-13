@@ -1,6 +1,8 @@
 <MonsterName/>Frostveil</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>67</HP>
 <summary>The Frostveil is a Medium-sized, unaligned plant creature that thrives in cold environments. With an Armor Class of 16, it has decent defenses bolstered by natural armor, allowing it to withstand a fair amount of damage. The Frostveil possesses 67 hit points, which gives it good durability during encounters. This creature has notably high Strength and Dexterity scores of 20, granting it very good capabilities in physical attacks and agility, making it a dangerous opponent in close quarters. However, it has very low Intelligence and Charisma, making it weak in terms of social interaction and mental-based challenges. One of its greatest strengths is its ability to absorb damage through its "Damage Transfer" ability, allowing it to mitigate harm when engulfing opponents. The Frostveil is particularly vulnerable to fire damage and boasts immunity to cold, making it a prime target for fire-based attacks. It can navigate both on land and in the air, with the flexibility provided by its speed varying depending on environmental conditions.</summary>
 
 <detail>

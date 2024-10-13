@@ -1,6 +1,8 @@
 <MonsterName/>August Rooster</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The August Rooster is a medium-sized monstrosity known for its cunning and manipulative nature, categorized as neutral evil. This creature boasts considerable mobility and intelligence, with a focus on charming its foes and irritating them with its sharp talons. Its Armor Class is 14 due to natural armor, making it sturdy but not overly difficult to hit. The August Rooster has 75 hit points, which gives it decent durability in combat. With a Challenge Rating of 4, it is capable of posing a challenge to parties of adventurers. However, it has weaknesses such as low Strength and poor Wisdom, which limit its effectiveness in melee combat and resisting certain mental effects. A standout feature of the August Rooster is its ability to charm other creatures, allowing it to manipulate opponents into performing its bidding.</summary>
 
 <detail>

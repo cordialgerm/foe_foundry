@@ -1,6 +1,8 @@
 <MonsterName/>Fallen Deva</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>10</CR>
+<AC/>17</AC>
+<HP/>153</HP>
 <summary>The Fallen Deva is a powerful celestial being that has fallen from grace, embodying both strength and resilience. With an armor class of 17 and 153 hit points, it is well-equipped for combat, capable of taking and dealing substantial damage. This creature moves gracefully with a walking speed of 30 feet and an impressive flying speed of 90 feet, making it agile during encounters. It boasts a challenge rating of 10, indicating that it poses a significant threat to adventurers. Notably, while it possesses many strengths, such as high saving throws and resistances to damage from nonmagical weapons, it is particularly vulnerable to radiant damage. The Fallen Deva has robust characteristics, particularly in Wisdom and Charisma, both scoring +5, allowing it to excel in social interactions and resist mental influences.</summary>
 
 <detail>

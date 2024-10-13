@@ -1,6 +1,8 @@
 <MonsterName/>Hantu Penanggal</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>123</HP>
 <summary>The Hantu Penanggal is a Medium Fiend aligned with evil, known for its menacing ability to detach its head from its body, creating a unique combat dynamic. With an Armor Class of 14 and Hit Points of 123, this creature proves to be a formidable opponent. It has a decent speed of 40 feet while flying and 30 feet on foot. The Hantu Penanggal has a Challenge Rating of 8, equating to a rewarding 3,900 experience points for those who manage to defeat it. Notably, it excels in stealth and deception, leveraging its high Charisma score of 18 for manipulatory tactics, making it a dangerous foe both in combat and social interactions.</summary>
 
 <detail>

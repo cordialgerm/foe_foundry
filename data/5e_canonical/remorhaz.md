@@ -1,6 +1,8 @@
 <MonsterName/>Remorhaz</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>195</HP>
 <summary>A Remorhaz is a massive, centipede-like creature that dwells in cold, arctic regions. Its body is covered in hard, icy-blue plates, and it can generate immense heat from within, causing the air around it to shimmer. Remorhazes are fearsome predators that burrow through snow and ice, ambushing prey from below. They are known for their ability to swallow victims whole, using the intense heat of their bodies to melt ice and incinerate their prey. Despite their size, Remorhazes are swift and highly dangerous to anyone venturing into their frozen domains.</summary>
 
 <summary>The Remorhaz is a formidable Huge monstrosity that serves as a terrifying force of nature in any encounter. With a high Armor Class of 17 and a substantial pool of Hit Points totaling 195, it is designed to withstand significant damage while delivering its own in close combat. The Remorhaz boasts exceptional strength with a Strength score of 22, allowing it to perform powerful melee attacks and grapple opponents effectively. However, its lower Dexterity score of 12 provides only average agility, making it less nimble in battle. The creature is immune to cold and fire damage, making it resilient against certain types of attacks, but it has very low Intelligence, Wisdom, and Charisma scores, resulting in poor mental capabilities and ineffective interactions outside of combat. Overall, the Remorhaz is a fierce combatant that thrives on grappling and dealing fiery damage, capable of swallowing its foes and subjecting them to continuous harm.</summary>

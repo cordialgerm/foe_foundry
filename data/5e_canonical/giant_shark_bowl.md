@@ -1,6 +1,8 @@
 <MonsterName/>Giant Shark Bowl</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>8</CR>
+<AC/>6</AC>
+<HP/>172</HP>
 <summary>The Giant Shark Bowl is a formidable creature categorized as a Huge ooze with a Challenge Rating of 8. This creature boasts a remarkable 172 hit points, making it a sturdy opponent that can withstand significant damage in combat. Its defensive capabilities are somewhat limited with an Armor Class of only 6, which suggests that it can be hit easily. However, it possesses several strong offensive abilities, particularly its Blood Frenzy, which grants it an advantage when attacking weakened foes. The Giant Shark Bowl's unique combination of traits makes it a potent threat, especially as it engages enemies in close quarters. The creature's ability to engulf smaller creatures and deal continuous damage to them while restraining them makes it dangerous in the right conditions. It is, however, weak against certain attack types, as it has moderate damage resistances and immunities, which can be exploited by careful players.</summary>
 
 <detail>

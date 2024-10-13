@@ -1,6 +1,8 @@
 <MonsterName/>Wind Witch</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>66</HP>
 <summary>The Wind Witch is a Large chaotic evil Plant creature that poses a unique threat to adventurers with its ability to fly and its cunning use of fire-based attacks. It has a Challenge Rating of 3 and offers 700 experience points upon defeat. With an Armor Class of 13 and 66 hit points, it can withstand a respectable amount of damage. Its strongest abilities stem from its interactions with fire, making it a dangerous opponent when ignited. However, it suffers from very low Strength and Intelligence scores, indicating it is not physically strong nor particularly clever. Its primary strengths are its Dexterity, allowing it to be nimble and evasive, and its ability to regenerate and transform into an inanimate form under certain conditions. The Wind Witch thrives in environments conducive to flight and fire, while it also possesses resistances that can make traditional forms of attack less effective against it.</summary>
 
 <detail>

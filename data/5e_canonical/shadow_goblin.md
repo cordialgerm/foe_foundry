@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Goblin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>13</HP>
 <summary>The Shadow Goblin is a small and cunning humanoid characterized by its neutral evil alignment. Its typical habitat is darkness, where it excels in stealth and evasion, making it a tricky opponent for adventurers. With a decent Armor Class of 13 and 13 hit points, this creature is not particularly durable but compensates with agility and clever abilities. The Shadow Goblin's strengths lie in its high Dexterity, allowing it to perform stealthy maneuvers and attack with precision. Its mobility and ability to escape or hide enhance its survivability. However, it suffers from sunlight sensitivity, which significantly weakens it in well-lit environments. </summary>
 
 <detail>

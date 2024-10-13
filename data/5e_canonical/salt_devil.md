@@ -1,6 +1,8 @@
 <MonsterName/>Salt Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Salt Devil is a medium-sized fiend embodying a lawful evil alignment, showcasing itself as a formidable adversary in combat. It possesses a respectable armor class of 13 and substantial hit points amounting to 93, making it capable of sustaining damage while dealing it effectively. With a Challenge Rating of 6, the Salt Devil presents a significant challenge for adventurers, yielding 2,300 experience points upon defeat. Notably, its dual resistance to fire and poison, along with the ability to become immune to certain non-magical attacks, allows it to withstand various forms of assault. However, despite its defensive capabilities, the Salt Devil has a vulnerability to silvered weapons, making it critical for opponents to exploit its weaknesses in combat.</summary>
 
 <detail>

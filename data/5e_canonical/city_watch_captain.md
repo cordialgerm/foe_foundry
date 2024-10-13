@@ -1,6 +1,8 @@
 <MonsterName/>City Watch Captain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>91</HP>
 <summary>The City Watch Captain is a formidable Medium humanoid creature that embodies leadership and tactical acumen within any lawful alignment faction. With an Armor Class of 15 and a total of 91 hit points, the city watch captain is well-equipped to withstand assaults, while also dealing substantial damage with both melee and ranged attacks. The creature boasts a commendable Challenge Rating of 4, indicating that it poses a significant threat to adventurers. While the captain has average durability and spellcasting capabilities, its special abilities, such as Point Blank Fencer and Tactical Insight, enhance its combat efficiency and bolster the capabilities of allies in the heat of battle.</summary>
 
 <detail>

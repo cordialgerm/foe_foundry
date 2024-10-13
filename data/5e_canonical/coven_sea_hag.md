@@ -1,6 +1,8 @@
 <MonsterName/>Coven Sea Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>75</HP>
 <summary>The Coven Sea Hag is a Medium fey creature that presents a formidable blend of magical prowess, combat efficacy, and cunning. It holds a Challenge Rating of 4, making it a moderately challenging opponent for adventurers. With a solid Armor Class of 14 and an impressive pool of 75 hit points, the Coven Sea Hag can hold its own in combat. It is noteworthy for its amphibious nature, allowing it to navigate both air and water with ease. The hag's strengths lie in its ability to inflict curses and wield powerful spells that can manipulate the environment and affect the minds of those who oppose it. Though robust in its approach to battle, it is not without weaknesses, as its reliance on spellcasting means it can be disrupted by foes who can silence or incapacitate its magic. </summary>
 
 <detail>

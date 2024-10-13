@@ -1,6 +1,8 @@
 <MonsterName/>Herald of the Void</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>123</HP>
 <summary>The Herald of the Void is a powerful Large Fiend that embodies chaotic evil and serves as a formidable adversary in combat. Its notable strengths include high mobility, with the ability to hover, walk, and fly, and the capability to deal significant cold and force damage with its attacks. This creature has an impressive Armor Class of 17 and substantial Hit Points totaling 123, allowing it to withstand considerable damage in battle. The Herald's skill set includes exceptional Dexterity and Constitution scores, both at 20, which grant it impressive defensive capabilities and excellent saving throw bonuses. However, its average Strength of 12 means it relies more on finesse and ranged attacks than physical brute strength. The Herald is immune to several damage types and conditions, making it a challenging foe to defeat, particularly for parties without the means to counter its immunities and resistances.</summary>
 
 <detail>

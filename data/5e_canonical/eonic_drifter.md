@@ -1,6 +1,8 @@
 <MonsterName/>Eonic Drifter</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>65</HP>
 <summary>The Eonic Drifter is a Medium-sized humanoid creature that operates within the realm of chaotic neutrality. It possesses a unique combination of magical and physical capabilities, making it a formidable opponent in combat. With an Armor Class of 13, it wears leather armor, providing average protection. The Drifter has a total of 65 hit points, calculated from rolling ten 8-sided dice plus an additional 20, offering it good durability in encounters. It has a challenge rating of 1, providing 200 experience points upon defeat. </summary>
 
 <detail>

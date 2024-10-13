@@ -1,6 +1,8 @@
 <MonsterName/>Mask Wight</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>13</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>207</HP>
 <summary>The Mask Wight is a formidable undead creature characterized by its inherent evil nature and its potent offensive capabilities. This Medium creature is notorious for inflicting significant necrotic damage while retaining an impressive durability with a high hit point total of 207, making it a challenging adversary. It has a strong armor class of 19 due to its natural armor, alongside exceptional attributes, particularly in Strength, Constitution, and high Dexterity, which enhance its combat effectiveness. However, it is vulnerable to radiant damage. The Mask Wight excels in targeting foes wielding fiendish powers, granting it advantage on attack rolls against such enemies. Additionally, its unique abilities make it resistant to many forms of damage and immune to a wide range of conditions, making it difficult to hinder through conventional means. </summary>
 
 <detail>

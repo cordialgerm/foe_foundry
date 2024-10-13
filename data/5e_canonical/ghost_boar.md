@@ -1,6 +1,8 @@
 <MonsterName/>Ghost Boar</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Ghost Boar is a Large, unaligned monstrosity that presents a unique blend of physical might and spectral abilities in combat scenarios. With an Armor Class of 13, it features natural armor that provides decent defense against attacks. It has a substantial pool of 68 hit points, demonstrating good durability in prolonged encounters. The Ghost Boar is rated at a Challenge Rating of 3, indicating that it can be a formidable opponent for low to mid-level adventurers, yielding 700 experience points upon defeat. Its strengths lie in its physical attributes, particularly a Strength score of 18, granting it an exceptional modifier of +4 for melee attack rolls, while its Constitution score of 16 provides good resilience against damage. However, it is hampered by a low Intelligence and Charisma, which are negligible in combat-related interactions.</summary>
 
 <detail>

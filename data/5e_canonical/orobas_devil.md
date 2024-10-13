@@ -1,6 +1,8 @@
 <MonsterName/>Orobas Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>14</CR>
+<AC/>19</AC>
+<HP/>203</HP>
 <summary>The Orobas Devil is a formidable fiend characterized by its large size and lawful evil nature. Serving as a powerful adversary, it boasts exceptional physical strength and resilience, combined with potent magical abilities. With an impressive armor class of 19 and a substantial pool of 203 hit points, the Orobas can endure significant damage in combat. It is particularly dangerous due to its combination of high damage output and versatile attacks, including a potent melee multiattack and fiery spells. However, while it has considerable resistances and immunities, it may struggle against overwhelming magical power that bypasses its defenses. The Orobas Devil is not only a fearsome combatant but also possesses a cunning intellect and a mastery of deception, making it a complex threat on the battlefield.</summary>
 
 <detail>

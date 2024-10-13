@@ -1,6 +1,8 @@
 <MonsterName/>Sphinx of Wonder</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>24</HP>
 
 
 ---

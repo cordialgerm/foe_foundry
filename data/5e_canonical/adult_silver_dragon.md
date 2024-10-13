@@ -1,6 +1,8 @@
 <MonsterName/>Adult Silver Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>16</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>243</HP>
 <summary>The Adult Silver Dragon is a regal and noble creature with scales that gleam like polished silver. Its wings are large and majestic, and it often radiates a calming, dignified presence. Silver Dragons are known for their compassion and justice, frequently taking human form to live among mortals and assist those in need. They make their lairs in high, snowy mountains, where they can survey vast landscapes. Their breath weapon is a cone of icy cold, freezing enemies in their tracks. In addition to their cold breath, they can also emit a paralyzing gas, immobilizing their foes without causing harm.</summary>
 
 <summary>The Adult Silver Dragon is a massive and powerful creature known for its grace and intelligence. As a formidable opponent, it boasts a high Armor Class of 19 and a substantial health pool, having 283 hit points. Its challenge rating of 19 signifies that it poses a significant threat in combat, often requiring a well-coordinated team of adventurers to defeat. This dragon excels in both physical and magical combat, backed by exceptional strength with a strength score of 24, which grants it a +7 modifier on related checks. Its innate spellcasting and unique abilities make it a cunning adversary. Although it has high resilience with damage immunity to cold and abilities allowing it to avoid damage under certain circumstances, its reliance on powerful breath weapons and splendid spells makes it vulnerable if disabled or outmaneuvered.</summary>

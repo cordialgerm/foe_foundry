@@ -1,6 +1,8 @@
 <MonsterName/>Nharyth</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>168</HP>
 <summary>Nharyth is a huge aberration characterized by its chaotic evil nature. This creature poses a significant threat to adventurers with its formidable combination of high hit points, effective attack options, and debilitating abilities. With an Armor Class of 17 and 168 hit points, the Nharyth is resilient in battle. It can hover and fly, making it difficult for melee attackers to reach, while its ability to create hazardous terrain with its Spine Trap adds strategic depth to encounters. On the offensive, the Nharyth relies on its strong melee and ranged attacks, as well as its ability to paralyze opponents, which can quickly turn the tide of combat. However, its low Intelligence and Charisma values suggest vulnerabilities in areas requiring mental acuity or persuasion.</summary>
 
 <detail>

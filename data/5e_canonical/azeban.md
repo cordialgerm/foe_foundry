@@ -1,6 +1,8 @@
 <MonsterName/>Azeban</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Azeban is a Medium-sized fey creature with chaotic neutral alignment, excelling in deception and evasion on the battlefield. With an Armor Class of 16, it is reasonably well-protected due to its natural armor. The Azeban's impressive 78 hit points, derived from rolling 12d8 plus 24, allows it to withstand a fair amount of damage during encounters. It operates at Challenge Rating 4, providing 1,100 XP upon defeat, indicating a moderate threat level to adventurers. The Azeban is known for its high mobility, being able to climb 30 feet and walk 40 feet each turn, which allows it to navigate various terrains skillfully. While it has decent defensive traits, it possesses notable strengths in magical resistance and innate spellcasting, making it a formidable opponent. However, it has a low Wisdom score, which can be seen as a significant weakness in certain situations, particularly against effects targeting that attribute.</summary>
 
 <detail>

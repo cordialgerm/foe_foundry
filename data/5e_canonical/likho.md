@@ -1,6 +1,8 @@
 <MonsterName/>Likho</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Likho is a medium-sized monstrosity embodying chaotic evil, making it a formidable foe for adventurers in Dungeons & Dragons. It boasts a robust armor class of 15 due to its natural armor and has a substantial pool of hit points totaling 105, derived from 14d8 plus an additional 42. This enduring creature has a walking speed of 40 feet and is classified with a challenge rating of 5, reflecting its capability to provide a significant challenge to a party while granting 1,800 experience points upon defeat. The Likho stands out due to its high dexterity and charisma, providing it with excellent agility in combat and the ability to manipulate or influence others effectively. However, its intelligence is relatively average, which may limit its strategic thinking. Overall, the Likho combines physical prowess, magical resilience, and deceptive abilities, making it a potent adversary.</summary>
 
 <detail>

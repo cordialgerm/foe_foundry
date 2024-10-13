@@ -1,6 +1,8 @@
 <MonsterName/>Grindylow</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Grindylow is a medium-sized aberration characterized by its chaotic evil nature. Residing underwater, this creature possesses a unique combination of cleverness and agility, making it a formidable opponent to unwary adventurers. With access to mimicry, the Grindylow can deceive foes by imitating humanoid voices, adding an element of psychological warfare to its combat strategy. However, its lack of robust intelligence makes it somewhat predictable in tactics, relying primarily on its physical attacks and the advantages provided by its aquatic environment. Its ability to move swiftly through water and use ink clouds for escape enhances its survivability, positioning it as a cunning adversary despite its relatively low challenge rating.</summary>
 
 <detail>

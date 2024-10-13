@@ -1,6 +1,8 @@
 <MonsterName/>Fierstjerren</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (studded leather)</AC>
+<HP/>105</HP>
 <summary>The Fierstjerren is a medium undead creature characterized by its neutral evil alignment. This ominous being is a formidable foe in battle, possessing a decent armor class of 14 and a robust pool of 105 hit points, making it capable of sustaining several rounds of combat. The Fierstjerren is particularly dangerous when its health is low, as its necrotic abilities become stronger, allowing it to deal significant extra damage with weapon attacks. While it has substantial strength and constitution, giving it good physical damage capacity and resilience, it is average in wisdom and charisma, limiting its mental fortitude and influence. The Fierstjerren's ability to charm humanoid victims and command them as thralls adds to its threat, making it not only a direct combat adversary but also a manipulator of those around it.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Millitaur</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Millitaur is a formidable large monstrosity characterized by its dual nature, combining the traits of a bull and a humanoid. As a neutral creature, the Millitaur primarily serves as a combatant and support figure in the heat of battle, boasting solid physical attributes and the ability to deal damage through various means. With a decent Armor Class of 14 due to natural armor and 85 hit points derived from rolling 10d10 and adding 30, it can withstand a fair amount of damage before succumbing to defeat. The Millitaur excels in melee combat, with respectable Strength and Constitution scores, allowing it to hit hard and take hits in return. However, its intelligence is quite low, making it less effective in social situations where cunning or knowledge might be required. Its challenge rating of 3 means it presents an average threat to parties of adventurers that are just starting to hone their combat skills.</summary>
 
 <detail>

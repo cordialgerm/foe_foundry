@@ -1,6 +1,8 @@
 <MonsterName/>Storm Maiden</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Storm Maiden is a medium-sized elemental creature embodying chaotic evil, renowned for its mastery of storms and lightning. With an Armor Class of 15 and a total of 78 hit points, it presents a formidable challenge to adventurers. It can swim, fly, and walk at a speed of 30 feet, providing it with excellent mobility. The Storm Maiden is rated with a Challenge Rating of 4, indicating it can pose a significant threat to parties of adventurers who are not adequately prepared to counter its abilities. Notably, it possesses immunity to poison damage and resistances to lightning, thunder, and non-magical physical damage, making it a durable opponent. Its strengths lie in its innate spellcasting abilities, strong physical attacks, and a unique capacity to incapacitate foes with its lightning attacks. However, it can be challenged through strategic planning and the right tactical responses.</summary>
 
 <detail>

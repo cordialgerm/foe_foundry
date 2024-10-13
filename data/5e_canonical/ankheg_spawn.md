@@ -1,6 +1,8 @@
 <MonsterName/>Ankheg Spawn</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>11</HP>
 <summary>The Ankheg Spawn is a Medium monstrosity that embodies a blend of predatory instincts and resilience. With a moderate armor class of 13, it can withstand a decent amount of damage for its size, while its 11 hit points, derived from 2d8+2, give it a fragile but serviceable life in combat. Its challenge rating of 1/4 indicates that it poses a minimal threat, suitable for low-level encounters, gauging around 50 experience points for a successful defeat. The Ankheg Spawn has a walk speed of 30 feet and can burrow at a speed of 10 feet, allowing for strategic movement and ambush opportunities. Notable attributes of the creature include a reasonable Strength score of 14, which translates to a good modifier of +2, making it physically capable. It has average agility with a Dexterity score of 12 (+1 modifier), but its intelligence is exceptionally low at 2, indicating a significant disadvantage in mental fortitude. The creature's Wisdom score of 14 (+2 modifier) suggests a good sense of awareness, while its Charisma is poor at 8 (-1 modifier).</summary>
 
 <detail>

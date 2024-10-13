@@ -1,6 +1,8 @@
 <MonsterName/>Giant Leech</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>7</HP>
 <summary>The Giant Leech is a Small beast that operates in aquatic environments, known primarily for its stealth and blood-draining capabilities. With a moderate Armor Class of 13 and low Hit Points totaling 7, it can be considered somewhat fragile, making it susceptible to damage. However, its strengths lie in its Dexterity of 16, which provides a good modifier of +3 to its attacks and defenses, allowing it to effectively evade threats and perform stealthy actions. Its Challenge Rating of 1/4 classifies it as a minor foe, providing 50 Experience Points upon defeat. The Giant Leech has the unique benefit of being amphibious, enabling it to thrive both in water and on land, which enhances its versatility in combat scenarios. While it lacks offensive intelligence or charisma, it compensates with its formidable ability to latch onto prey and drain life steadily.</summary>
 
 <detail>

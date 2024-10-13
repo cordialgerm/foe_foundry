@@ -1,6 +1,8 @@
 <MonsterName/>Young Sea Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>190</HP>
 <summary>The Young Sea Dragon is a formidable and fearsome creature that embodies the essence of aquatic dragons. Known for its neutrality and underlying evil tendencies, this large dragon thrives in both water and air. With a strong armor class of 18 due to its natural armor and impressive hit points totaling 190, it poses a challenging encounter for adventurers. It has a high challenge rating of 9, providing significant experience rewards upon defeat. The dragon possesses exceptional physical strength and constitution, allowing it to deal and withstand considerable damage in battle, while its cold damage immunity and amphibious nature give it an advantage in aquatic environments. However, its average dexterity indicates that it is not particularly agile, which could be a potential vulnerability.</summary>
 
 <detail>

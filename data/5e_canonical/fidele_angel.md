@@ -1,6 +1,8 @@
 <MonsterName/>Fidele Angel</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>104</HP>
 <summary>The Fidele Angel is a powerful celestial being known for its law-abiding nature and deep loyalty, often serving as a protector and advisor to those who embody good. With a challenge rating of 5, this creature boasts impressive physical and magical capabilities, making it a formidable ally or adversary in battle. The Fidele Angel has high Strength and Dexterity scores, allowing it to deliver strong melee attacks, while its exceptional Charisma enhances its spellcasting ability, enabling it to perform support roles effectively. It is notably resilient, featuring strong damage resistances, immunities, and a unique ability that allows it to share damage with its paired mate. However, its moderate lack of mobility when grounded and reliance on its partner can be seen as weaknesses. </summary>
 
 <detail>

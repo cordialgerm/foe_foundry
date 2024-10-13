@@ -1,6 +1,8 @@
 <MonsterName/>Ratfolk Mercenary</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (leather armor)</AC>
+<HP/>45</HP>
 <summary>The Ratfolk Mercenary is a small, humanoid creature that operates as a skilled combatant, often hired for its agile and cunning abilities. As a mercenary, this creature brings a mix of dexterous attacks and tactical advantages to the battlefield. With a Challenge Rating of 2, it presents a moderate threat to adventurers, possessing a high Armor Class of 15 which reflects its reliance on agility rather than durability, and a reasonable pool of 45 hit points. Its key strengths lie in its dexterity and teamwork, allowing it to deal additional damage when working alongside allies and to maneuver around larger foes with ease. However, its relatively low Strength and Constitution values make it vulnerable in direct confrontations where it might not leverage its advantages effectively.</summary>
 
 <detail>

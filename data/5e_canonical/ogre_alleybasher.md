@@ -1,6 +1,8 @@
 <MonsterName/>Ogre, Alleybasher</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (studded leather)</AC>
+<HP/>85</HP>
 <summary>The Alleybasher Ogre is a large, chaotic evil giant known for its brute strength and terrifying presence. With a challenge rating of 4, this creature is formidable in combat, possessing a high Strength score of 19, which allows it to deliver powerful attacks. Its Constitution of 16 grants it a significant number of hit points—85 in total—which makes it resilient in battle. However, the Alleybasher has weaknesses; its low Intelligence, Wisdom, and Charisma scores indicate that it is not particularly clever, perceptive, or charming. Additionally, while it has decent speed and is capable of ranged attacks, its reliance on raw power means it might struggle against more agile or tactically minded opponents. </summary>
 
 <detail>

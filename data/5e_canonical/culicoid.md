@@ -1,6 +1,8 @@
 <MonsterName/>Culicoid</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>190</HP>
 <summary>The Culicoid is a large fiend characterized by its chaotic evil nature. It is a formidable opponent due to its high armor class of 18, substantial hit points totaling 190, and its ability to fly with a speed of 60 feet. The creature is known for its aggressive multiattack capability, allowing it to strike multiple times in one turn. With a challenge rating of 12, it provides significant experience upon defeat, making it a notable encounter for adventurers. The Culicoid possesses a variety of strengths, including damage immunities to poison, resistances to multiple elemental damage types, and exceptional mobility due to its ability to hover. However, its weaknesses include a lack of extensive magical attacks and a relatively low Intelligence and Charisma, which may limit its ability to engage in certain types of interactions. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Faux-Garou</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>5</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Faux-Garou is a Medium Construct that operates independently and is unaligned. It has an armor class of 12, which is considered average due to its natural armor. With 93 hit points, derived from rolling 11d8 plus a constitution modifier of 4, this creature can withstand a considerable amount of damage in battle, making it a formidable opponent. The Faux-Garou moves with a walking speed of 30 feet and presents a challenge rating of 5, which translates to 1,800 experience points for players who defeat it. This creature is adept at hunting particular targets, benefiting from special abilities that enhance its tracking and combat capabilities, but it lacks mental prowess, reflected in its low intelligence and charisma scores.</summary>
 
 <detail>

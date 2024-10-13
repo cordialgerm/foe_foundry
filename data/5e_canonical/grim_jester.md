@@ -1,6 +1,8 @@
 <MonsterName/>Grim Jester</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>11</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Grim Jester is a Medium undead creature with a chaotic evil alignment, embodying both a whimsical and sinister presence. With an Armor Class of 18, it is relatively tough to hit due to its natural armor, and it has a substantial pool of Hit Points at 136, making it resilient in prolonged combat encounters. The creature possesses exceptional dexterity and charisma scores, allowing it to excel in stealth, deception, and performance. Its strengths lie in its ability to incapacitate foes with laughter, its spellcasting capability, and its ability to regenerate after death, which can make it a persistent foe in a campaign. However, it is vulnerable to radiant damage and relies on clever tactics to navigate combat, making it less effective in straightforward melee engagements.</summary>
 
 <detail>

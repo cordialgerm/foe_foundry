@@ -1,6 +1,8 @@
 <MonsterName/>Ratatosk</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>42</HP>
 <summary>The Ratatosk is a tiny celestial creature embodying chaotic neutrality. This creature excels in manipulation and subterfuge, employing a combination of psychic damage and clever tactics to destabilize its opponents. With an Armor Class of 14, it is reasonably tough for its size but more notable is its ability to resist nonmagical damage types, making it hard to harm with ordinary attacks. It has a solid pool of hit points at 42, giving it good survivability in combat while primarily relying on its dexterous movements and clever abilities to outmaneuver foes. The Ratatosk's primary strengths lie in its high Dexterity (18, which grants a +4 modifier that is considered very good), and Charisma (18, also a +4 modifier), allowing it to excel in skills like Deception and Persuasion, both of which it possesses at a +6 modifier, considered exceptional. However, its physical Strength is very low at 4, resulting in a -3 modifier that is categorically very bad for melee engagements that require brute force.</summary>
 
 <detail>

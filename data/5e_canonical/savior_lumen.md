@@ -1,6 +1,8 @@
 <MonsterName/>Savior Lumen</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>114</HP>
 <summary>The Savior Lumen is a formidable celestial creature embodying chaotic good. Characterized by its strong defensive capabilities and unique special abilities, it plays a supportive yet powerful role in the battlefield. With an Armor Class of 15 and a substantial pool of 114 hit points, it can withstand considerable damage while providing assistance to allies. Its diverse mobility options, including flight and swimming, make it highly versatile. However, its challenge rating of 5 suggests that while it is dangerous, it can be countered by clever strategies, especially since it has notable vulnerabilities to certain types of magical attacks despite its magic resistance. Its ability to manipulate light and memory adds layers of complexity to both its combat and role-playing interactions.</summary>
 
 <detail>

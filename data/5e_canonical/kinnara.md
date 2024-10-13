@@ -1,6 +1,8 @@
 <MonsterName/>Kinnara</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Kinnara is a celestial creature known for its strong ties to goodness and law, embodying a protective spirit in the form of a medium-sized entity. It has a challenge rating of 3, which indicates it is suitable for moderately skilled adventurers, offering 700 experience points upon defeat. With a balance of offense and support capabilities, the Kinnara is particularly effective in combat, boasting magical powers that enhance its attacks and allow for significant ally protection. However, despite its celestial nature, the Kinnara remains vulnerable to spells and effects that specifically target celestial beings, and it relies heavily on its partner for both offense and defense.</summary>
 
 <detail>

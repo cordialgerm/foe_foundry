@@ -1,6 +1,8 @@
 <MonsterName/>Insect, Giant Fire Beetle</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>7</HP>
 <summary>The Giant Fire Beetle is a small beast often found in various environments. It has a unique ability to illuminate its surroundings, making it a useful companion or nuisance in dark settings. With a low challenge rating of 0, it poses minimal threat to adventurers, but its igniting mucus ability can cause persistent damage over time, adding a point of interest during encounters. Despite its low hit points and modest armor class, it can serve as a minor hazard due to its damaging secretions and its capacity to light up a space.</summary>
 
 <detail>

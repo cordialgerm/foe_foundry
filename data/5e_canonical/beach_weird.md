@@ -1,6 +1,8 @@
 <MonsterName/>Beach Weird</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Beach Weird is a large elemental creature that embodies the essence of coastal environments. It serves as a guardian of tide pools and sandy shores, conveying a sense of untamed nature. With moderate defensive capabilities, including a good Armor Class of 14 and a solid pool of hit points totaling 65, it can withstand a fair amount of punishment in combat. Its challenge rating of 3 indicates that it is designed to be a noteworthy adversary for a group of lower-level adventurers. The Beach Weird boasts several strengths, including a powerful slam attack, the ability to create hazardous quicksand, and unique movement abilities that enable it to traverse its watery habitat effectively. However, it is bound to its tide pools, limiting its range, which represents a significant tactical weakness. </summary>
 
 <detail>

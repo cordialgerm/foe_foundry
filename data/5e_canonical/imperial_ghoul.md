@@ -1,6 +1,8 @@
 <MonsterName/>Imperial Ghoul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>93</HP>
 <summary>The Imperial Ghoul is a Medium-sized undead creature that embodies the essence of evil and decay. It is classified as Lawful Evil, making it a disciplined and strategical foe in combat situations. With an Armor Class of 16, it presents a decent defense against attacks. Its 93 hit points grant it considerable durability, allowing it to withstand a fair amount of damage before being taken down. While its movement speed of 15 feet on land is somewhat limited, it compensates with a burrowing speed of 30 feet, enabling it to navigate through terrain effectively and ambush unsuspecting opponents. With a challenge rating of 4, it presents a moderate challenge for adventurers, being capable of dealing significant damage through its bite and claw attacks, as well as inflicting debilitating effects.</summary>
 
 <detail>

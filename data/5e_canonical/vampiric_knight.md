@@ -1,6 +1,8 @@
 <MonsterName/>Vampiric Knight</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>11</CR>
+<AC/>20</AC>
+<HP/>127</HP>
 <summary>The Vampiric Knight is a formidable Medium undead creature with a neutral evil alignment that serves as both an elite warrior and a potent spellcaster in combat. Its impressive armor class of 20, coupled with 127 hit points, makes it a robust foe that can withstand a significant amount of damage. With a Challenge Rating of 11, this creature poses a considerable threat, providing an intense challenge for adventurers. The vampiric knight's strengths include its high strength and constitution scores, exceptional regeneration ability, and powerful melee attacks, while its vulnerabilities—such as weaknesses to radiant damage, running water, and wooden stakes—require strategic combat consideration.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Pustulent Shambler</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>13</CR>
+<AC/>10 (natural armor)</AC>
+<HP/>232</HP>
 <summary>The Pustulent Shambler is a formidable Gargantuan ooze that poses a significant threat to adventurers due to its unique abilities and potent attacks. With a competitive Challenge Rating of 13, it has an impressive pool of 232 hit points, making it difficult to defeat in combat. The shambler has several qualities that make it particularly dangerous, including its ability to infect creatures with the debilitating Bonerot disease, its capacity to absorb flesh to regain health, and a corrosive effect that can damage weapons made of bone. However, its low Dexterity score makes it vulnerable to ranged attacks, and its inability to understand language or engage in complex strategies adds a layer of predictability to its behavior in encounters. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Emerald Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>16</AC>
+<HP/>45</HP>
 <summary>The Emerald Dragon Wyrmling is a medium-sized dragon known for its cunning and psionic abilities. In combat, it poses a reasonable challenge with a Challenge Rating of 2, offering 450 XP to those who succeed in defeating it. This dragon has a good Armor Class of 16 and can absorb a total of 45 hit points, making it tough to take down. Its speed allows for versatile movement, with a walking speed of 30 feet, burrowing capabilities at 15 feet, and a flying speed of 50 feet, allowing it to maneuver effectively in various environments. With moderate physical attributes—strength and dexterity both at a value of 14 (+2)—it exhibits more than average capability in physical confrontations. However, its constitution is slightly lower at 12 (+1), rendering its resilience in prolonged battles only average. The Emerald Dragon Wyrmling excels in deception and stealth, with bonuses of +4 in these skills, and it is resistant to psychic and thunder damage, making it effective against certain damage types. Additionally, it has immunity to being fatigued, granting it an advantage in sustained engagements. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Wilderness Crone</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Wilderness Crone is a Medium-sized fey creature that embodies the essence of the natural world. With a neutral alignment, she exists in harmony with the beasts and flora around her, capable of both nurturing and defending her domain. Her armor class of 17 indicates she can withstand a good amount of damage, and with 105 hit points, she is fairly resilient in combat. The Wilderness Crone has a challenge rating of 6, making her a formidable opponent for groups of adventurers. While she possesses considerable wisdom and charisma, her relatively low strength and intelligence can limit her physical prowess and strategic thinking, making her more of a support character than a front-line fighter. Her unique abilities allow her to communicate with animals and plants, giving her influence over many creatures in the wild.</summary>
 
 <detail>

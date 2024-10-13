@@ -1,6 +1,8 @@
 <MonsterName/>Giant Ant</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Giant Ant is a large unaligned beast that poses a moderate challenge for adventurers, assigned a Challenge Rating of 2. It has a strong defensive capability with an Armor Class of 14 due to its natural armor, and it can endure a fair amount of damage, boasting 52 hit points, which makes it a resilient opponent in combat. With a walking speed of 40 feet, it can close the distance to its targets quickly. The Giant Ant relies on its impressive Strength and Constitution scores, reflecting good combat prowess and durability, while its Intelligence, Wisdom, and Charisma scores are low, indicating that it lacks mental acuity and social interaction capabilities. Notably, its Keen Smell ability grants it an edge in detecting foes or prey, allowing it to excel in tracking through its olfactory senses.</summary>
 
 <detail>

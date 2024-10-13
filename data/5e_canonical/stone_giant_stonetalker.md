@@ -1,6 +1,8 @@
 <MonsterName/>Stone Giant Stonetalker</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>8</CR>
+<AC/>17</AC>
+<HP/>126</HP>
 <summary>The Stone Giant Stonetalker is a formidable creature known for its immense size and strength, boasting exceptional abilities in combat and environmental manipulation. As a Huge Giant with an Armor Class of 17 and a hefty 126 hit points, it poses a significant challenge in combat, rated at a Challenge Rating of 8. The giant's physical attributes are notably high, with a Strength score of 23, granting it a +6 modifier, making its melee attacks very powerful. It also has a good Dexterity score, providing a +2 modifier, which aids its stealth abilities. However, its Intelligence score is average at 10, with no modifier, and while its Charisma and Wisdom scores are not particularly high, they still provide some utility in interactions. The Stone Giant Stonetalker excels in ambush tactics, thanks to its camouflage ability and innate spellcasting, which allows it to perform various spells that enhance its combat effectiveness and environmental control.</summary>
 
 <detail>

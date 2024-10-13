@@ -1,6 +1,8 @@
 <MonsterName/>Stone Colossus</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>16</CR>
+<AC/>17</AC>
+<HP/>263</HP>
 <summary>The Stone Colossus is a gargantuan construct designed for frontline combat, serving as an imposing protector or weapon in battles. With a formidable Armor Class of 17 and a robust pool of 263 hit points, it can withstand significant damage while delivering its own devastating attacks. The colossus possesses exceptional physical strength, represented by a Strength score of 22, which allows it to deal substantial melee damage. However, it lacks mobility and dexterity, indicated by its average Dexterity score of 10. While it has some limitations, such as low Intelligence and Charisma scores, rendering it incapable of complex thought or negotiation, its notable abilities make it a powerful adversary. With a challenge rating of 16, the Stone Colossus yields 15,000 experience points upon defeat, making it a valuable foe for adventurers.</summary>
 
 <detail>

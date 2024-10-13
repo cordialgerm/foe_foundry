@@ -1,6 +1,8 @@
 <MonsterName/>Spirit Naga</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>A Spirit Naga is a serpentine creature with a humanoid head, known for its mastery of necromancy and dark magic. These Nagas are malevolent beings that crave power and often serve as rulers of ancient ruins or hidden temples. Spirit Nagas have a strong connection to the undead, using their magic to command legions of skeletal and ghostly minions. They are skilled spellcasters, capable of casting powerful enchantments, curses, and death magic. Even if slain, Spirit Nagas can resurrect themselves, making them nearly impossible to defeat permanently.</summary>
 
 <summary>The Spirit Naga is a formidable Large Monstrosity known for its potent magical abilities and resilience in combat. With a Challenge Rating of 6, it poses a serious threat to adventurers, boasting an Armor Class of 16 and a substantial pool of hit points totaling 85, derived from 10d10 plus an additional 30 hit points. Its swimming and walking speed of 40 feet each allows it to maneuver effectively in various environments. As a creature steeped in both charm and cunning, the Spirit Naga has the ability to cast spells and can recover from defeat through its unique rejuvenation ability, making it a persistent adversary. However, despite its strengths, it has vulnerabilities rooted in its dependency on spell components and the limited number of spells it can prepare. </summary>

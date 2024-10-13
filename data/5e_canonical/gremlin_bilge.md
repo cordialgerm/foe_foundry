@@ -1,6 +1,8 @@
 <MonsterName/>Gremlin, Bilge</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>36</HP>
 <summary>The Bilge Gremlin is a tiny fey creature characterized by its chaotic evil nature. With a Challenge Rating of 1/2, it is a low-level threat to adventurers, primarily capable of disrupting technology and dealing damage with its bites and makeshift weapons. This creature excels in dexterity, boasting a +3 modifier, allowing it to avoid attacks and act swiftly. However, its strength is significantly lacking, rated at -2, which makes its physical confrontations less effective. Notable abilities include an aura that malfunctions nonmagical mechanical objects, creating an environment of chaos during encounters. Its immunities to poison and disease enhance its survivability, but it is generally weak against direct combat due to low hit points.</summary>
 
 <detail>

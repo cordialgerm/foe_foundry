@@ -1,6 +1,8 @@
 <MonsterName/>Suppurating Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>1</CR>
+<AC/>8</AC>
+<HP/>30</HP>
 <summary>The Suppurating Ooze is a Medium-sized ooze creature that operates without any alignment, making it a neutral force in the world. It serves as a challenge rating of 1, providing a moderate threat to adventurers, particularly due to its unique abilities and diseases. With an Armor Class of 8, it is relatively easy to hit, but it compensates for this with a decent pool of 30 hit points, translating to a good durability for its challenge rating. The creature is notable for its immunities and resistances, making it difficult to harm with certain damage types and conditions. However, it lacks intelligence and charisma, indicating its simplistic behavior in combat.</summary>
 
 <detail>

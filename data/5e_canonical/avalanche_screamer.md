@@ -1,6 +1,8 @@
 <MonsterName/>Avalanche Screamer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Avalanche Screamer is a large aberration characterized by its chaotic evil nature and its unique damage capabilities, specifically using thunder and piercing attacks. It has a formidable role in combat thanks to its ability to deal significant damage, manipulate terrain with its stealth, and control the battlefield through its scream ability. However, it possesses a moderate speed and average Dexterity, making its maneuverability somewhat limited. While resistant to cold damage and immune to certain conditions like being frightened or prone, the Avalanche Screamer's low intelligence and charisma mean it's not ideal for social interactions or complex strategies.</summary>
 
 <detail>

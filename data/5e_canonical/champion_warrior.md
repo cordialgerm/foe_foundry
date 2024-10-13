@@ -1,6 +1,8 @@
 <MonsterName/>Champion Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>90</HP>
 <summary>The Champion Warrior is a formidable humanoid combatant that exemplifies strength and agility, making it a formidable opponent in battle. With a challenge rating of 5, this creature poses a significant threat, demonstrating both resilience with 90 hit points and offensive capabilities derived from high strength and dexterity. The Champion Warrior can engage effectively at close range, using its multiattack ability to strike multiple times in a turn. While it excels in melee combat with a powerful greataxe, its reliance on physical attributes means it may struggle with ranged attacks or situations that necessitate high intelligence or charisma. Overall, the Champion Warrior presents a balanced but aggressive presence on the battlefield.</summary>
 
 <detail>

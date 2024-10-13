@@ -1,6 +1,8 @@
 <MonsterName/>Stone-Eater Slime</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Stone-Eater Slime is a small, unaligned ooze that poses a significant threat due to its formidable combat abilities and its unique interaction with stone and crystal structures. With an Armor Class of 12, it possesses a decent defense bolstered by its natural armor, making it somewhat resilient in battle. It boasts 90 hit points (12d6 + 48), which gives it a solid presence on the battlefield, allowing it to endure a fair amount of damage before succumbing. The slime moves at a speed of 20 feet on land and can climb at a speed of 10 feet, making it versatile in navigating different terrains. Although it has a weak challenge rating of 4, its strengths lie in its ability to petrify foes and dissolve stone, which can turn the tide in combat. </summary>
 
 <detail>

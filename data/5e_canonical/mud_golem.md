@@ -1,6 +1,8 @@
 <MonsterName/>Mud Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>27</HP>
 <summary>The Mud Golem is a small, unaligned construct that serves as a sturdy combatant with notable defenses and capabilities in battle. With an Armor Class of 10 and 27 hit points, it can withstand some attacks but lacks advanced agility. Its Challenge Rating of 1 indicates that it poses a moderate challenge for lower-level adventurers, granting 200 experience points upon defeat. The Mud Golem has a strong physical presence, reflected in its Strength score of 15 (+2), making it good at dealing damage, while its other attributes, particularly Intelligence (3, -4) and Charisma (1, -5), are very poor, indicating it lacks mental abilities and charm. Key strengths of the Mud Golem include its immunity to several conditions, resistance to non-magical physical damage, and inherent magical capabilities, although it is slow-moving with a speed of 20 feet. </summary>
 
 <detail>

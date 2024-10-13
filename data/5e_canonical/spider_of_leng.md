@@ -1,6 +1,8 @@
 <MonsterName/>Spider of Leng</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>144</HP>
 <summary>The Spider of Leng is a large aberration characterized by its chaotic evil nature. This creature is formidable due to its powerful attacks and its ability to utilize magic effectively. With an armor class of 15 and 144 hit points, it provides a significant challenge in combat settings. The spider combines physical prowess with a range of magical abilities, making it a versatile threat. However, it has a slow walking speed of only 20 feet, which is its primary weakness, limiting its mobility in combat. The Spider of Leng can deal substantial damage and inflict various debilitating conditions on its enemies while remaining immune to poison and certain conditions.</summary>
 
 <detail>

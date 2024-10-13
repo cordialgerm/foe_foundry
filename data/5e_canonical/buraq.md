@@ -1,6 +1,8 @@
 <MonsterName/>Buraq</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Buraq is a formidable celestial creature with a lawful good alignment, embodying both grace and power. Its primary role is as a protector and beacon of light, serving as a mount or ally to those who champion good. With a substantial Armor Class of 17 and high hit points at 152, it is well-protected and capable of enduring extended encounters. The Buraq possesses exceptional Dexterity and Charisma, making it agile in combat and persuasive in interaction. Its combination of radiant damage and magical abilities grants it an edge against foes, while its resistances and immunities allow it to mitigate some of the most common threats encountered. Notably, the Buraq has the ability to teleport and perceive nonmagical darkness, adding to its strategic versatility in combat situations.</summary>
 
 <detail>

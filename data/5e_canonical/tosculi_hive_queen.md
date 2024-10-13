@@ -1,6 +1,8 @@
 <MonsterName/>Tosculi Hive Queen</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>12</CR>
+<AC/>17</AC>
+<HP/>189</HP>
 <summary>The Tosculi Hive Queen is a formidable and sinister large monstrosity characterized by its Lawful Evil alignment. As the leader of its hive, the Hive Queen wields significant power in both combat and strategic planning. It boasts impressive speed and agility, being able to walk at a rate of 60 feet and fly at 40 feet, making it a versatile opponent. With an Armor Class of 17 and a substantial hit point pool of 189, it is highly durable and can take a considerable amount of damage before falling in battle. Its Challenge Rating of 12 indicates a significant threat level, capable of challenging seasoned adventurers. The Hive Queen's exceptional Dexterity and various abilities allow it to evade attacks and impose debilitating effects on its enemies, which can turn the tide of battle in favor of her hive. </summary>
 
 <detail>

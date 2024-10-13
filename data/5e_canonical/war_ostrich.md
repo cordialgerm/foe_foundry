@@ -1,6 +1,8 @@
 <MonsterName/>War Ostrich</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>42</HP>
 <summary>The War Ostrich is a large, unaligned beast known for its remarkable speed and agility. This creature serves as a surprising and powerful threat on the battlefield with a challenge rating of 1/2, making it a moderately challenging opponent for low-level adventurers. With a solid Armor Class of 11 and 42 hit points, the War Ostrich can withstand a fair amount of damage while dealing formidable attacks of its own. Its strong attributes, especially in strength (15 +2 modifier, which is good), constitution (16 +3 modifier, which is very good), and its special abilities that allow it to leap and knock foes prone, make it an effective combatant. However, its intelligence (2 -4 modifier, which is very bad) and charisma (5 -3 modifier, which is very bad) indicate that it is less capable in social encounters and may not be easily controlled or directed by players.</summary>
 
 <detail>

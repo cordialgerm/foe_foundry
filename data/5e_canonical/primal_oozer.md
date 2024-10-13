@@ -1,6 +1,8 @@
 <MonsterName/>Primal Oozer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Primal Oozer is a formidable aberration with a neutral evil alignment, designed to be a challenging adversary for adventurers. Characterized by its ooze-like form, this medium creature possesses a mix of offensive and defensive capabilities, making it a versatile opponent in combat. With an Armor Class of 14 derived from its natural armor and a total of 112 hit points, it can withstand a fair amount of damage. The Primal Oozer's strengths lie in its high Strength score of 18, granting it a strong melee attack, and its unique special abilities that can inflict debilitating effects on its enemies. However, it has a low Intelligence and Charisma, reflecting its lack of mental prowess and social skills. It is particularly dangerous due to its disease-inducing capability and its ability to move through various terrains, including climbing and swimming.</summary>
 
 <detail>

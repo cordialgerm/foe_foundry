@@ -1,6 +1,8 @@
 <MonsterName/>Drake, Bakery</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Bakery Drake is a small dragon with a lawful neutral alignment, known for its unique abilities that blend culinary traits with combat prowess. It serves as both a quirky encounter in a D&D campaign and a resourceful ally for those who can appreciate its skills. With an Armor Class of 14, and a robust 82 hit points, this creature is relatively durable. It combines agility and strength, utilizing its fly speed of 60 feet for mobility, while its fire damage resistance and specific condition immunities make it a formidable opponent. However, its fire weakness can leave it vulnerable to fire-based attacks, with a Challenge Rating of 3 that signifies a moderate threat, being capable of dealing significant damage while also providing beneficial effects.</summary>
 
 <detail>

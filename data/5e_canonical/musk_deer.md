@@ -1,6 +1,8 @@
 <MonsterName/>Musk Deer</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>17</HP>
 <summary>The Musk Deer is a tiny, unaligned beast known for its agility and unique ability to emit a potent musk. With a challenge rating of 1/4, it is more suited for scouting and evasion rather than direct confrontation. The Musk Deer has moderate defensive capabilities with an Armor Class of 13 and a total of 17 hit points, making it relatively fragile in battle. Its extraordinary Dexterity (16) provides it with a good ability to avoid attacks, while its Strength is very poor (4), indicating that it is not a melee powerhouse. The Musk Deer's main strengths lie in its evasive nature and its musk ability, which can hinder opponents' effectiveness during encounters. However, it is highly vulnerable due to its low Constitution and Intelligence scores, making it susceptible to various forms of control and manipulation.</summary>
 
 <detail>

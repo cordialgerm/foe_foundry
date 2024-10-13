@@ -1,6 +1,8 @@
 <MonsterName/>Lantern Beetle</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>2</HP>
 <summary>The Lantern Beetle is a tiny, unaligned beast known for its bioluminescence. With a challenge rating of 0, it serves primarily as a low-level creature that can be encountered in various environments. It possesses a moderate Armor Class of 13, making it somewhat resilient against weaker attacks. While its hit points are very low at just 2, it can still be relevant in certain contexts, such as providing illumination or interacting with adventurers in amusing or enigmatic ways. Its strengths lie in its ability to illuminate dark areas and its mobility with a speed of 30 feet walking, 10 feet climbing, and 10 feet flying. However, its physical attributes are lacking, particularly in strength and intelligence, which significantly affects its combat effectiveness.</summary>
 
 <detail>

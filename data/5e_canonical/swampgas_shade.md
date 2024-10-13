@@ -1,6 +1,8 @@
 <MonsterName/>Swampgas Shade</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>39</HP>
 <summary>The Swampgas Shade is a Medium-sized undead creature that embodies a neutral evil alignment. It serves as a lurking menace in swampy environments, utilizing its ability to fly and natural camouflage to ambush unsuspecting prey. With a moderate challenge rating of 2, the shade is a formidable foe thanks to its ability to drain the life force of others and the capacity to return from death, making it a persistent threat in its domain. While it is vulnerable to radiant damage, it is immune to necrotic and poison damage, and it exhibits numerous immunities to various conditions, which makes it tough to deal with in combat. Despite its relatively low armor class of 13, its hit points (39) provide it with decent durability, especially when coupled with its ability to return after death.</summary>
 
 <detail>

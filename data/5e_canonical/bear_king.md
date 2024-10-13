@@ -1,6 +1,8 @@
 <MonsterName/>Bear King</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Bear King is a formidable fey creature that embodies the power of nature with a regal presence. It serves as a guardian of the wild, capable of both brute strength and magical prowess. Known for its exceptional melee attacks enhanced by radiant damage, the Bear King can be a daunting opponent in combat. It has a high Armor Class of 18 due to its natural armor, which, combined with 133 hit points, allows it to withstand significant damage. The Bear King's prowess is further elevated by its resistance to cold damage and immunity to poison and nonmagical physical attacks, provided they are not made with cold iron weapons. Its most notable abilities grant it magical attacks, regeneration, and advantages in perception, making it an outstanding adversary that requires strategic planning to confront effectively.</summary>
 
 <detail>

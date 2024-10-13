@@ -1,6 +1,8 @@
 <MonsterName/>Vine Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Vine Drake is a Medium, neutral dragon that combines physical prowess with the ability to manipulate nature, making it a formidable creature in 5e Dungeons & Dragons. With an Armor Class of 16 and a robust pool of 105 hit points, it can withstand considerable damage. The creature is particularly effective in combat, boasting a Challenge Rating of 7, which indicates it is a strong foe for mid-level adventurers. Notably, the Vine Drake has the ability to communicate with plants, utilizes its natural defenses through thorny skin, and can cast the entangle spell without the need for material components, allowing it to control its environment and hinder enemies effectively. </summary>
 
 <detail>

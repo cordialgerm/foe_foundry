@@ -1,6 +1,8 @@
 <MonsterName/>Silver Dragon Wyrmling Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Silver Dragon Wyrmling Skeleton is a Medium-sized Undead creature with a lawful evil alignment. It serves as a formidable foe in combat, possessing good armor class and hit points that allow it to endure several rounds of fighting. With a Challenge Rating of 2, it poses a reasonable challenge for low-level adventurers. The skeleton has exceptional strength and a high constitution score, enabling it to deal significant damage and absorb hits well. However, its lack of dexterity and intelligence can be seen as weaknesses, contributing to its average speed and limited tactical options. Notably, it is vulnerable to bludgeoning damage, making it susceptible to hammer-like weapons or spells designed to crush.</summary>
 
 <detail>

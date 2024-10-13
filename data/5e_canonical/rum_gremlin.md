@@ -1,6 +1,8 @@
 <MonsterName/>Rum Gremlin</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>27</HP>
 <summary>The Rum Gremlin is a tiny fey creature embodying the chaotic evil alignment. It uses its mischievous nature and abilities to create havoc, particularly by instilling a state of drunkenness in its victims. With a relatively low Armor Class of 13 and 27 hit points, it relies on cunning and speed rather than brute force. Its Dexterity score of 16 grants it a good level of agility and the ability to remain hidden, while its Constitution score of 14 provides it with average resilience against damage. The Rum Gremlin is skilled in stealth and has the unique ability to coil its surroundings in an aura that can incapacitate those who fail to resist its effects, making it a troublesome foe for unsuspecting adventurers. </summary>
 
 <detail>

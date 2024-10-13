@@ -1,6 +1,8 @@
 <MonsterName/>Gloomflower</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>44</HP>
 <summary>The Gloomflower is a tiny, unaligned plant creature with a unique blend of defensive and offensive capabilities, particularly focusing on psychic damage and manipulation of its opponents. With a relatively high Armor Class of 12 and a respectable pool of 44 hit points, it can withstand a moderate amount of damage. The Gloomflower’s primary strengths are its ability to inflict psychic damage through its attacks as well as its special abilities, which can confuse and incapacitate enemies. However, its weaknesses include low Dexterity and Intelligence scores, which limit its agility and cognitive capabilities, respectively. Its challenge rating of 3 indicates that it can pose a significant threat to lower-level adventurers, but the creature's reliance on psychic powers makes it less effective against foes with appropriate resistances.</summary>
 
 <detail>

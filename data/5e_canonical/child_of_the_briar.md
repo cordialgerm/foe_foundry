@@ -1,6 +1,8 @@
 <MonsterName/>Child of the Briar</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>50</HP>
 <summary>The Child of the Briar is a Tiny, neutral evil plant creature that embodies cunning and stealth, making its role in combat primarily one of ambush and control. With an Armor Class of 13 and 50 hit points, it is relatively resilient for its size, but it can be vulnerable to fire damage. Its strengths lie in its Dexterity, which is very good, allowing for nimble movements and effective stealth, as well as its Charisma, which enhances its ability to influence others. However, its Strength is poor, making it less effective in direct physical confrontations against larger foes. The Child of the Briar is capable of grappling opponents, inflicting consistent damage over time, and casting spells that can hinder enemies, particularly through their entanglement abilities when in groups.</summary>
 
 <detail>

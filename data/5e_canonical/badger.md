@@ -1,6 +1,8 @@
 <MonsterName/>Badger</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>10</AC>
+<HP/>3</HP>
 <summary>The Badger is a small, stocky mammal with powerful digging claws and a black-and-white striped face. Badgers are solitary and territorial, making their homes in burrows that they dig into the ground. Though generally peaceful, badgers are fearless when provoked, attacking with sharp claws and teeth. They are known for their relentless nature, often fighting larger predators if threatened. Their digging skills allow them to create elaborate tunnel systems, where they store food and raise their young.</summary>
 
 <summary>The badger is a tiny beast known for its strong sense of smell and modest physical capabilities. With an Armor Class of 10 and only 3 hit points, it is not a formidable opponent in combat; however, it can be useful for scouting and sneaking due to its burrowing ability and keen senses. The badger has a challenge rating of 0, indicating it poses very little threat to experienced adventurers, granting only 25 experience points upon defeat. Its low strength and intelligence make it weak in direct confrontations, but its advantage in Perception checks relying on smell allows it to be a relatively effective tracker or scout in specific scenarios.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Adult Void Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>16</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>229</HP>
 <summary>The Adult Void Dragon is a formidable and chaotic neutral creature that embodies chaos and the mysterious nature of the void. This massive dragon is characterized by its impressive armor class of 19 and a significant pool of hit points totaling 229, making it a tough opponent in combat scenarios. With a challenging rating of 16, it poses a considerable threat, rewarding those who defeat it with 15,000 experience points. The dragon's blend of physical prowess and powerful magical abilities allows it to command the battlefield with tactical strikes and area control. However, its weaknesses lie in its limited mobility when not airborne and its dependency on effective saving throws to mitigate damage. Notably, the void dragon also exhibits traits related to cold damage and madness, providing unique challenges for any adventurers who encounter it.</summary>
 
 <detail>

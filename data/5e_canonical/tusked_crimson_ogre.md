@@ -1,6 +1,8 @@
 <MonsterName/>Tusked Crimson Ogre</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (half plate)</AC>
+<HP/>93</HP>
 <summary>The Tusked Crimson Ogre is a formidable creature that combines brute strength and chaotic tendencies. As a large giant, it boasts high physical attributes, making it a powerful opponent in melee combat. With a challenge rating of 5, it can pose a significant threat to parties of adventurers, especially due to its special abilities and attacks. The ogre is chaotic evil, which influences its unpredictable nature in battle. It has a high Armor Class of 14 and a substantial pool of hit points, totaling 93, which allows it to sustain a lot of damage. Its strengths lie in its ability to dish out heavy melee damage and capitalize on weakened foes, while its weaknesses include low Dexterity and Intelligence, indicating poor agility and mental acuity.</summary>
 
 <detail>

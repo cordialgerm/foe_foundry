@@ -1,7 +1,9 @@
 <MonsterName/>Djinni (Genie)</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
 <Subtype/>outsider</Subtype>
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>161</HP>
 <summary>A Djinni is a powerful, noble genie from the Elemental Plane of Air. It is a tall, muscular figure with blue skin, often adorned in flowing, ethereal garments, and surrounded by swirling winds. Djinn are known for their charm, wit, and capricious nature, often taking an interest in the lives of mortals. They can manipulate the air, summoning storms, whirlwinds, and even flying freely through the sky. Djinn live in magnificent palaces made of solidified clouds or within great windswept towers, ruling over lesser air elementals. Though generally benevolent, they can be prideful and mischievous, taking offense easily.</summary>
 
 <summary>The Djinni is a powerful elemental creature embodying air, known for its graceful movements and formidable abilities. With a considerable combination of high hit points (172) and good armor class (16), it can withstand significant damage in combat, earning it the rank of challenge rating 11, which indicates it poses a substantial threat to adventurers. The Djinni excels in spells and physical attacks, combining flying speed of 90 feet with multi-attack capabilities, making it a versatile combatant in various scenarios. While it holds exceptional strengths in Dexterity (22), Constitution (22), and Charisma (20), it also possesses weaknesses, such as its resistance limited to lightning and thunder damage. Additionally, its reliance on spells means that opponents who can dispel or counter its magical capabilities can significantly hinder its effectiveness in battle.</summary>

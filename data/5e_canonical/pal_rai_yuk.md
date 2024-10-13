@@ -1,6 +1,8 @@
 <MonsterName/>Pal-Rai-Yuk</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Pal-Rai-Yuk is a formidable Huge monstrosity characterized by its neutral evil alignment. Known for its dual abilities both in and out of the water, this creature can burrow through terrain, swim swiftly, and walk effectively on land. With a Challenge Rating of 8, it presents a significant threat to adventurers, capable of dealing substantial damage while also employing unique tactics to control and incapacitate its opponents. Its dual heads grant it enhanced perception and resistance to various conditions, contributing to its role as a cunning predator. Notably, the Pal-Rai-Yuk possesses abilities that can erase the memories of those it devours, making it a unique menace in encounters.</summary>
 
 <detail>

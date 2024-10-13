@@ -1,6 +1,8 @@
 <MonsterName/>Brown Bear</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>34</HP>
 <summary>A Brown Bear is a massive, powerful predator with thick, shaggy fur and long claws. Brown Bears are known for their strength and are capable of taking down large prey such as deer or moose. They are primarily solitary animals and spend much of their time foraging for food, particularly during the summer months when they prepare for hibernation. In combat, a Brown Bear can stand on its hind legs to tower over enemies, swiping with its powerful claws and delivering crushing bites. Despite their size, they are excellent swimmers and climbers.</summary>
 
 <summary>The brown bear is a large beast that plays the role of a formidable predator in the wilderness. With a robust build and notable physical strength, it boasts impressive combat abilities alongside a keen sense of smell that aids in detecting prey. Its strength (18) translates to a +4 modifier, making it very good at physical attacks, while its high constitution (16) provides decent hit points, giving it an average degree of durability in combat. However, with a limited intelligence score of 2, the brown bear lacks strategic prowess and complex problem-solving skills. Overall, this creature is a powerful but relatively straightforward opponent in encounters.</summary>

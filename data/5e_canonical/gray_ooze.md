@@ -1,6 +1,8 @@
 <MonsterName/>Gray Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>1</CR>
+<AC/>8</AC>
+<HP/>22</HP>
 <summary>The Gray Ooze is a formless, slimy creature that dwells in dark dungeons, caves, and sewers. Its body is a semi-liquid mass that can squeeze through cracks and crevices, making it difficult to avoid. Gray Oozes are known for their corrosive nature, capable of dissolving metal, wood, and organic matter. They move slowly but relentlessly, consuming anything they come into contact with. Though mindless, they are dangerous to adventurers, as their touch corrodes armor and weapons, and their amorphous bodies are difficult to strike effectively.</summary>
 
 <summary>The Gray Ooze is a Medium-sized ooze known for its unique and dangerous characteristics. It has a low Armor Class of 8, making it relatively easy to hit, but it compensates with a decent amount of Hit Points totaling 22. The creature is slow in movement with a speed of 15 feet on land, but it can also climb and swim at the same speed. With a Challenge Rating of 1/2, it poses a moderate threat, primarily due to its corrosive abilities and camouflage capabilities. One of its notable weaknesses is its sensitivity to sunlight, which imposes disadvantage on its attack rolls when exposed. Overall, the Gray Ooze is a formidable opponent in dark or confined environments but struggles in bright light.</summary>

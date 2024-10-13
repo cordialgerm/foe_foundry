@@ -1,6 +1,8 @@
 <MonsterName/>Bagiennik</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Bagiennik is a Medium-sized aberration characterized by its chaotic neutral alignment, making it an unpredictable adversary in combat. With an Armor Class of 15 and 75 Hit Points, this creature is reasonably well-armored and can withstand significant damage before being defeated. It boasts impressive Dexterity, allowing it to dodge attacks effectively, and its Strength is also quite good, which contributes to its melee capabilities. However, its intelligence is notably low, implying limited strategic thinking. The Bagiennik can navigate through combat with its notable speed of 40 feet and possesses a Challenge Rating of 3, indicating a moderate level of difficulty for adventurers. This unique creature has a penchant for both offense and support, capable of dealing substantial slashing damage while also providing healing options to allies.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Otyugh</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>114</HP>
 <summary>An Otyugh is a grotesque, three-legged creature with a bloated, writhing body covered in filth. Its long, tentacle-like appendages end in spiked, clawed grips, which it uses to snatch prey. Otyughs are typically found in sewers, refuse heaps, or other filthy places, where they feed on garbage, carrion, or any living creature that gets too close. They are highly adaptable scavengers, able to live off almost any kind of waste. Though not particularly intelligent, they are cunning enough to set ambushes or trap prey using their tentacles and sharp teeth.</summary>
 
 <summary>The Otyugh is a large aberration notable for its grotesque appearance and repulsive habits. It typically inhabits the sewers or other waste-filled areas, often lurking in filth and muck. With a solid armor class of 14 and a substantial pool of hit points totalizing 110, it presents a formidable challenge, particularly for less experienced adventurers. Its challenge rating of 6 means it can provide a significant threat, especially given its multi-attack capabilities and grappling proficiency. While its defensive attributes are decent, the Otyugh’s intelligence is notably low, reflecting its base instincts rather than strategic thinking. It excels in close combat, using its tentacles and bite as primary attacks, but its movement speed is average at 30 feet, allowing it to maneuver effectively in combat.</summary>

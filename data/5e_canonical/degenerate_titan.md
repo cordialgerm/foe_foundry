@@ -1,6 +1,8 @@
 <MonsterName/>Degenerate Titan</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>8</CR>
+<AC/>12 (armor scraps)</AC>
+<HP/>161</HP>
 <summary>The Degenerate Titan is a massive and perilous creature, categorized as a Huge Giant with a chaotic evil alignment. It boasts significant physical strength and durability, demonstrated by its high Strength score of 21, which grants it an exceptional +5 modifier for melee attacks. The titan has formidable hit points totaling 161, reflecting its ability to withstand substantial damage. However, its low Dexterity of 6, resulting in a bad -2 modifier, means it may struggle with agility and ranged attacks. The creature is highly resistant to magic, giving it an advantage on saving throws against spells and magical effects, which enhances its survivability in combat. </summary>
 
 <detail>

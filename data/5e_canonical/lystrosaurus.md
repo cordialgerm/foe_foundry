@@ -1,6 +1,8 @@
 <MonsterName/>Lystrosaurus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Lystrosaurus is a medium-sized beast characterized by its robust physique and unaligned nature. It serves as a formidable creature in combat, capable of dealing significant damage with its strong attacks. With an armor class of 14, it has decent protection, and it possesses 45 hit points, making it resilient against assaults. The creature's challenge rating of 2 indicates it can present a moderate challenge to adventurers, with a reward of 450 experience points for overcoming it. Notably, the Lystrosaurus has a high strength score of 16, providing it with a good modifier of +3, which enhances its physical attacks. However, its low intelligence and charisma scores suggest it lacks mental acuity and social prowess. The Lystrosaurus excels at mobility and powerful physical assaults, though its weaknesses lie in its lack of ranged attacks and lower dexterity.</summary>
 
 <detail>

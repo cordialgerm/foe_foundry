@@ -1,6 +1,8 @@
 <MonsterName/>Xhkarsh</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>171</HP>
 <summary>The Xhkarsh is a formidable Large Aberration with a Neutral Evil alignment, notable for its cunning and insidious abilities that make it a dangerous opponent. With a high Armor Class of 18 due to its natural armor, and a substantial pool of Hit Points totaling 171, it presents a tough challenge in combat. This creature has a Challenge Rating of 9, categorizing it as a strong adversary capable of inflicting significant damage while also manipulating the fates of those it targets. The Xhkarsh excels in Dexterity and Constitution, making it both agile and resilient, although its offensive capabilities rely heavily on its ability to corrupt its foes. Its special abilities allow for telepathic communication across planes and a notable disregard for physical needs, granting it exceptional survivability. However, its dependence on specific conditions for its more powerful abilities can be a tactical weakness.</summary>
 
 <detail>

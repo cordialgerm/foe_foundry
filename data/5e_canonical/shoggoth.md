@@ -1,6 +1,8 @@
 <MonsterName/>Shoggoth</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>19</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>325</HP>
 <summary>The Shoggoth is a massive aberration that embodies chaos and unpredictability in combat. Its formidable presence boasts a high armor class of 18 and an impressive pool of 325 hit points, making it a heavy-hitting adversary that can absorb tremendous damage before succumbing. As a creature with a Challenge Rating of 19, the Shoggoth represents a considerable threat, particularly given its unique abilities and resistances. It possesses extraordinary physical strength with a Strength score of 26 (+8), which allows it to deal significant melee damage and overpower lesser creatures with ease. The Shoggoth is resistant to various forms of damage, including bludgeoning, fire, and piercing, while being immune to cold, slashing, and thunder. Its chaotic nature can be both an advantage and liability, with features that disrupt opponents while being significantly difficult to control or harm.</summary>
 
 <detail>

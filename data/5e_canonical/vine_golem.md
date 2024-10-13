@@ -1,6 +1,8 @@
 <MonsterName/>Vine Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>67</HP>
 <summary>The Vine Golem is a medium-sized construct characterized by its ability to blend seamlessly into its surroundings and its formidable nature in combat. Created to serve under a master, this golem boasts a blend of offensive capabilities, impressive defensive traits, and unique communication skills with its creator, making it a valuable ally in various situations. While it possesses good mobility with a climbing speed of 30 feet, it has vulnerabilities to slashing damage and limited potency against magical attacks. Its primary strength lies in its ability to manipulate the battlefield by ensnaring enemies, while its overall challenge rating of 3 indicates a moderate level of threat for adventurers.</summary>
 
 <detail>

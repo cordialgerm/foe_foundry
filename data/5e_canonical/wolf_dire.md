@@ -1,6 +1,8 @@
 <MonsterName/>Wolf, Dire</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>40</HP>
 <summary>The Dire Wolf is a formidable large beast that serves as a terrifying predator within its environment. With a challenge rating of 1, it poses a significant threat to adventurers who underestimate its capabilities. The Dire Wolf has a good armor class of 14 thanks to its natural armor, and it possesses 40 hit points, making it relatively durable in combat. Its speed is exceptional at 50 feet, allowing it to quickly close the distance to its enemies. The wolf's strengths lie in its pack tactics that allow it to gain advantage on attack rolls when its allies are nearby, and its heightened senses make it a skilled hunter. However, it has weaknesses such as low intelligence and charisma scores, reflecting its limited problem-solving abilities and social interactions. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Boot Grabber</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>22</HP>
 <summary>The Boot Grabber is a small aberration that serves as a unique and cunning creature designed to entrap and confound its opponents. With a decent Armor Class of 11 and 22 hit points, it can withstand some damage, but it’s best utilized through its special abilities rather than direct confrontations. The Boot Grabber's notable strengths include its ability to adhere to creatures that come into contact with it, making it a formidable grappler, particularly for larger adversaries. However, its weaknesses lie in its relatively low hit points for tougher enemies and the requirement to remain motionless for its False Appearance ability to be effective. This creature has a Challenge Rating of 1/2, making it appropriate for low-level encounters, and it provides 100 experience points upon defeat.</summary>
 
 <detail>

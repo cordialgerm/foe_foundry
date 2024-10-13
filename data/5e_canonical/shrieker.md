@@ -1,6 +1,8 @@
 <MonsterName/>Shrieker (Fungi)</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>0</CR>
+<AC/>5</AC>
+<HP/>13</HP>
 <summary>A Shrieker is a type of large fungus found in dark, damp caves or underground environments. While it poses no direct threat, a Shrieker emits a loud, piercing scream when exposed to light or movement, serving as an alarm for nearby predators or guardians. This ear-splitting sound can attract dangerous creatures, making Shriekers an indirect hazard to adventurers. They are often found in clusters alongside other fungi, adding to the perils of exploring dark caverns. While they cannot move or attack, their ability to alert others to intruders makes them a dangerous part of their environment.</summary>
 
 <summary>The Shrieker is a medium plant creature that serves as an environmental hazard in various settings. With a very low armor class of 5, it is exceptionally vulnerable to physical attacks, making it a weak target. However, its 13 hit points allow it to withstand some damage before being defeated. The Shrieker has a challenge rating of 0, meaning it is not a significant threat to adventurers and primarily adds ambiance or challenges related to its abilities. One notable strength is its ability to remain motionless and blend in with its surroundings, making it difficult to detect until it chooses to react. However, it has many weaknesses, including vulnerability to fire damage, which can quickly eliminate it, as well as low stats across most attributes, rendering it ineffective in combat situations.</summary>

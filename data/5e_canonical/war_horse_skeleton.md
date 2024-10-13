@@ -1,6 +1,8 @@
 <MonsterName/>War Horse Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (barding scraps)</AC>
+<HP/>25</HP>
 <summary>The War Horse Skeleton is a formidable large undead creature, serving as an eerie mount or guard. It boasts a reasonably strong armor class of 13, bolstered by scraps of barding, and possesses 25 hit points, making it a resilient adversary in combat. With a speed of 60 feet, it can swiftly maneuver on the battlefield. The creature has a Challenge Rating of 1/2, indicating that it poses a moderate threat to lower-level adventurers. Its ability scores display a solid Strength of +4, allowing for powerful melee attacks, while its Dexterity of +1 contributes to its agility. However, it has poor mental attributes with Intelligence being -4 and Charisma at -3, reflecting its limited cognitive capabilities. Notably, the War Horse Skeleton is immune to poison damage and the poisoned condition, enhancing its durability during encounters.</summary>
 
 <detail>

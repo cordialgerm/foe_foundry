@@ -1,6 +1,8 @@
 <MonsterName/>Alchemical Apprentice</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>1</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>63</HP>
 <summary>The Alchemical Apprentice is a small ooze creature known for its unique abilities related to potions and alchemical substances. With an Armor Class of 11, it can withstand some attacks, though it has moderate hit points at 63, stemming from its 14d6 plus 14. Its Challenge Rating of 1 suggests that it is suitable for low-level encounters, awarding 200 XP upon defeat. The creature exhibits a blend of practical alchemical talent and resilience, with notable resistances to acid, cold, fire, and poison damage. However, it possesses a few significant weaknesses, especially in sunlight and prolonged travel away from its origin. This adds an element of strategy for both players and the creature’s potential adversaries, as the environment plays a critical role in the Alchemical Apprentice's survival.</summary>
 
 <detail>

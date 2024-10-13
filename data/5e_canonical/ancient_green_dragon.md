@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Green Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>22</CR>
+<AC/>21 (natural armor)</AC>
+<HP/>385</HP>
 <summary>The Ancient Green Dragon is a master of manipulation and cunning, with deep green scales that blend into the dense forests it calls home. Its long, sinuous body and sharp claws make it a fearsome predator, but it prefers to use lies and treachery to ensnare its prey. Green Dragons thrive in ancient forests, where they twist the flora and fauna to their advantage. Their breath weapon is a cloud of toxic, poisonous gas that can suffocate and kill in moments. Green Dragons are known for their intelligence and patience, often playing long, intricate games with their foes before delivering the killing blow.</summary>
 
 <summary>The Ancient Green Dragon is a gargantuan creature renowned for its cunning intelligence, overwhelming strength, and magical prowess. With an impressive Armor Class of 21 and a staggering 420 hit points, it is a formidable opponent in combat, capable of withstanding significant damage. The dragon's challenge rating is 24, indicating it offers a very high level of difficulty and presents a substantial challenge for adventurers, granting a substantial experience reward of 62,000 XP. Its impressive array of abilities allows it to control the battlefield through stealth, powerful attacks, and debilitating spells. However, despite its many strengths, its moderate Dexterity leaves it vulnerable to ranged attacks and some troop formations that require speed.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Mountain Dwarf Lord</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>14</CR>
+<AC/>20</AC>
+<HP/>171</HP>
 <summary>The Mountain Dwarf Lord is a formidable Medium humanoid character, designed for both offense and defense in combat situations. With a high armor class of 20 and an impressive pool of hit points totaling 171, this creature is exceptionally durable and can withstand significant damage. It has a challenge rating of 14, which reflects its capabilities in combat, making it a powerful opponent for adventurers. The Mountain Dwarf Lord excels in melee combat with its four attacks per turn using a battleaxe, while also having ranged capabilities with a composite longbow. One of its notable strengths is its resistance to being frightened and its advantageous saving throws against spells. However, it may be vulnerable to magical effects that bypass its resistance or target its more limited dexterity and intelligence scores.</summary>
 
 <detail>

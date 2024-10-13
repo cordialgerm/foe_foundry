@@ -1,6 +1,8 @@
 <MonsterName/>Fire Giant War Priest</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>12</CR>
+<AC/>18</AC>
+<HP/>162</HP>
 <summary>The Fire Giant War Priest is an imposing and powerful creature within the realm of giants, renowned for its immense size, martial prowess, and fiery abilities. As a spellcaster, this giant blends brute strength with mystical flame, making it a formidable foe on the battlefield. Its notable strengths include high damage output, resistance to fire damage, and the capability to empower its attacks with additional fire damage. However, the Fire Giant War Priest has a significant weakness against cold damage, which can hinder its mobility. With a substantial amount of hit points and a robust armor class, it can withstand significant punishment, making it a challenging opponent for adventurers.</summary>
 
 <detail>

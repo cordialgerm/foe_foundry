@@ -1,6 +1,8 @@
 <MonsterName/>Broodmother of Leng</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Broodmother of Leng is a formidable creature classified as a Huge Aberration with a chaotic evil alignment. This monster serves as a powerful antagonist that can manipulate her surroundings with a variety of spells while simultaneously commanding arachnid allies. With an impressive Armor Class of 17, 161 hit points, and a Challenge Rating of 11, the Broodmother is a significant threat to any adventuring party. She excels in melee combat, utilizing her high Strength score of 18 (+4), which allows her to deliver substantial damage through her Claw attacks. Additionally, her ability to summon swarms of spiderlings provides her with tactical support in battle, making her a challenging adversary that requires careful strategy to defeat. However, she is not without weaknesses; her reliance on melee attacks exposes her to ranged assaults, particularly considering her moderate Dexterity of 14 (+2).</summary>
 
 <detail>

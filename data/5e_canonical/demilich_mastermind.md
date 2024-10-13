@@ -1,6 +1,8 @@
 <MonsterName/>Demilich Mastermind</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>18</CR>
+<AC/>20</AC>
+<HP/>319</HP>
 <summary>The Demilich Mastermind is a powerful and cunning undead entity that embodies the essence of death and arcane knowledge. Known for its intelligence and strategic thinking, this Tiny creature is particularly lethal, with exceptional spellcasting abilities and unique actions that can decimate opponents and manipulate the battlefield. With a Challenge Rating of 18, it poses a significant threat to adventurers, being both durable and hard to pin down due to relying on flight rather than physical movement. Its major strengths include high Dexterity, superior intelligence, and a slew of immunities, making it a formidable opponent. However, the Demilich does lack in physical durability with a Strength score of only 10, indicating that while it excels at magic and manipulation, it has weaknesses in brute force confrontations.</summary>
 
 <detail>

@@ -1,8 +1,10 @@
 <MonsterName/>Cult Fanatic</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
-<Subtype/>any lineage</Subtype>
 <Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>2</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>33</HP>
 <summary>A Cult Fanatic is a fervent follower of a dark god or other sinister forces, willing to sacrifice anything, including their own life, to achieve their cult’s goals. Clad in dark robes and often adorned with strange symbols, Cult Fanatics are skilled in dark rituals and wield dangerous, often unholy, magic. They are charismatic leaders within their cult, able to inspire loyalty and fanaticism in their followers. In combat, they call upon the powers of their deity to smite their enemies or heal their allies. Cult Fanatics are dangerous opponents due to their unwavering dedication and the dark forces they serve.</summary>
 
 <summary>The Cult Fanatic is a Medium humanoid creature that embodies the fervor and zealotry often associated with cults. They possess a modest armor class of 12, making them vulnerable to physical attacks, but their hit points total 39, providing them with reasonable durability in combat situations. The Cult Fanatic’s challenge rating is 2, which is appropriate for a creature that can both support allies and hinder enemies through its spellcasting capabilities. They have notably good Dexterity, Wisdom, and Charisma scores, allowing them to excel in aspects of combat that involve agile movement and persuasive abilities. Their ability to resist charm and fear effects signifies a strong mental fortitude. While their melee capabilities using a dagger are reliable, their true strength lies in their spellcasting, where they can inflict considerable damage or manipulate foes with a variety of spells.</summary>

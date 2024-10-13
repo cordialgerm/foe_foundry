@@ -1,7 +1,9 @@
 <MonsterName/>Efreeti (Genie)</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
 <Subtype/>outsider</Subtype>
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>200</HP>
 <summary>An Efreeti is a powerful genie from the Elemental Plane of Fire, known for its fiery temper and immense strength. Standing tall and muscular, Efreeti are wreathed in flames, with skin like molten bronze and eyes that glow like embers. They rule over vast cities of brass and flame, often enslaving lesser creatures to serve them. Efreeti are cruel and tyrannical, enjoying the suffering of others, and they can manipulate fire at will, summoning walls of flame or hurling fireballs at their enemies. Despite their arrogance and cruelty, they are highly intelligent and possess powerful magic, making them dangerous adversaries.</summary>
 
 <summary>The Efreeti is a powerful elemental creature that embodies the essence of flame and fire. It is categorized as a Large elemental being, boasting impressive combat capabilities and innate spellcasting. With an Armor Class of 17 and a considerable Hit Points total of 172, the Efreeti is a formidable opponent capable of absorbing a significant amount of damage. Its high Challenge Rating of 11 signifies that it is a significant threat in combat encounters. Notably, the Efreeti possesses the ability to cast a variety of spells without the need for materials, making it a versatile foe in both offensive and defensive situations. Its strengths lie in its mastery of fire-based attacks, high physical attributes, and ability to manipulate the battlefield. However, it is particularly vulnerable to cold damage and relies heavily on its Dexterity and Charisma for defense and spellcasting.</summary>

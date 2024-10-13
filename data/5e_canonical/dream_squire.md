@@ -1,6 +1,8 @@
 <MonsterName/>Dream Squire</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>71</HP>
 <summary>The Dream Squire is a Medium Fey creature that maintains a neutral alignment. Functioning primarily as a servant or protector, this creature has notable strengths in its ability to follow commands and provide defense for its master. With a solid Armor Class of 15 and an impressive pool of 71 hit points, the Dream Squire can withstand considerable damage while also participating actively in combat. However, its low Charisma score of 8 indicates poor social skills, which may detract from its effectiveness in interactions that rely on persuasion or deception. The Dream Squire has a Challenge Rating of 2, indicating it is well-suited for lower-level adventures, granting 450 experience points upon defeat.</summary>
 
 <detail>

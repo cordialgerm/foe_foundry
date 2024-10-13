@@ -1,6 +1,8 @@
 <MonsterName/>King Fomor</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>22</CR>
+<AC/>21</AC>
+<HP/>656</HP>
 <summary>The King Fomor is a gargantuan celestial creature that commands immense power and is a formidable adversary for any adventuring party. With a challenge rating of 22, it boasts impressive statistics, including a high Armor Class of 21 and a staggering 656 hit points, making it exceptionally durable and difficult to defeat. The King Fomor combines potent melee attacks with devastating spellcasting, able to damage or control its foes with a variety of spells. While its physical attacks deal considerable amounts of bludgeoning and radiant damage, it also has resistances and immunities that make it resilient to conventional threats. However, despite its overwhelming strength, the creature’s reliance on its Charisma for spellcasting means it may be vulnerable to effects that target that ability. Overall, the King Fomor is a powerful celestial entity that can dominate the battlefield both through physical prowess and magical abilities.</summary>
 
 <detail>

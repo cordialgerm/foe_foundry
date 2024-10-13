@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Beast</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>15</AC>
+<HP/>112</HP>
 <summary>The Shadow Beast is a formidable and dangerous foe hailing from the fey realms, characterized by its chaotic evil nature. It presents a significant threat in combat due to its high agility and magic resistance, which allows it to evade many spell effects. With an armor class of 15 and a total of 112 hit points, this creature can withstand a decent amount of damage before being taken down. Its challenge rating of 7 indicates that it is a suitable encounter for a party of mid-level adventurers, offering a mix of physical and magical attacks. However, it suffers from sunlight sensitivity, which can hinder its effectiveness when exposed to direct sunlight.</summary>
 
 <detail>

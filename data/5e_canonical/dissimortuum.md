@@ -1,6 +1,8 @@
 <MonsterName/>Dissimortuum</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Dissimortuum is a medium-sized undead creature characterized by its chaotic evil alignment. This monster boasts a robust Armor Class of 15 due to its natural armor and has a significant pool of hit points totaling 112, which allows it to withstand substantial damage in combat. The Dissimortuum can move at a speed of 30 feet and is designated with a challenge rating of 7, indicating it is suitable for parties of mid-level adventurers seeking a formidable foe. Notably, this creature has exceptional Charisma, giving it a strong presence in social interactions and combat situations.</summary>
 
 <detail>

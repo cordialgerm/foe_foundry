@@ -1,6 +1,8 @@
 <MonsterName/>Lesser Scrag</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Lesser Scrag is a Medium-sized Monstrosity characterized by its chaotic evil nature. This aquatic creature, primarily dwelling in water, is known for its formidable melee combat abilities complemented by its regeneration skill, which allows it to recover health when in contact with water. With a challenge rating of 2, it presents a moderate threat to adventurers, boasting decent physical strength and resilience. However, its limited mobility on land and vulnerability to acid or fire make it susceptible to specific strategies, thereby offering opportunities for clever tactics against it.</summary>
 
 <detail>

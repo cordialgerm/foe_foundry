@@ -1,6 +1,8 @@
 <MonsterName/>Infiltrator</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (studded leather)</AC>
+<HP/>55</HP>
 <summary>The Infiltrator is a Medium humanoid creature characterized by its stealth and adaptability. It has a neutral alignment, granting it a certain level of flexibility in behavior. With an armor class of 13 derived from studded leather, the Infiltrator can withstand moderate attacks while employing agility to maneuver through combat with a speed of 30 feet. It has a total of 55 hit points, which presents a good amount of resilience for a creature of its challenge rating of 2, making it moderately challenging for adventurers. Known for its intelligence and charm, it possesses superior skills in subterfuge, allowing it to leverage its magical abilities for tactical advantages in encounters. However, its physical strengths are average, lacking the brute force that some other creatures may possess.</summary>
 
 <detail>

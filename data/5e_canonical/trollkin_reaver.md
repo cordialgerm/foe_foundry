@@ -1,6 +1,8 @@
 <MonsterName/>Trollkin Reaver</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (hide armor)</AC>
+<HP/>82</HP>
 <summary>The Trollkin Reaver is a medium-sized humanoid creature that embodies a fearsome presence on the battlefield. Characterized by its regenerative abilities and formidable physical strength, this neutral creature stands as an impressive opponent with a challenge rating of 4, granting it a total of 82 hit points. Its exceptional strength score of 19 (+4 modifier) enhances its melee attack capabilities, making it a dangerous attacker capable of dealing significant damage. However, it does have some weaknesses, particularly its reliance on regeneration, which can be thwarted by fire or acid damage.</summary>
 
 <detail>

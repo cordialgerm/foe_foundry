@@ -1,6 +1,8 @@
 <MonsterName/>Graknork</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>14</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>201</HP>
 <summary>Graknork is a gargantuan monstrosity that is not aligned with any particular philosophy or force. With an impressive Armor Class of 20, it is quite difficult to damage, and its robust Hit Points totaling 201 reflect its tremendous resilience in battle. Graknork is capable of moving swiftly both through land and water, with a walking speed of 50 feet and a swimming speed of 30 feet, making it a formidable presence in various environments. As a creature with a Challenge Rating of 14, it poses a significant threat, earning 11,500 experience points for those who defeat it. Notable strengths include exceptional physical capabilities, solid defensive attributes, and powerful offensive actions, while its weaknesses include a lack of proficiency in intelligence and charisma, making it vulnerable to mind-controlling effects or manipulation.</summary>
 
 <detail>

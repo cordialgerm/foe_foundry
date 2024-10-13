@@ -1,6 +1,8 @@
 <MonsterName/>Ice Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Ice Elemental is a powerful and imposing creature found in cold environments, embodying the essence of ice and frost. As a Large elemental, it has significant hit points totaling 114, making it a resilient foe. With a Challenge Rating of 5, it presents a formidable challenge to adventurers, particularly due to its unique abilities and defenses. The Ice Elemental excels in cold attacks and mobility, boasting skills in burrowing through ice and unaffected movement on icy surfaces. However, it is particularly vulnerable to fire damage, which can bypass its formidable defenses and exploit a significant weakness. While it lacks intelligence and charisma, its strength, constitution, and wisdom are notably high, enhancing its combat effectiveness. </summary>
 
 <detail>

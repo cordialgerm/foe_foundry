@@ -1,6 +1,8 @@
 <MonsterName/>Giant Eagle</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>26</HP>
 <summary>A Giant Eagle is a majestic, soaring predator with a wingspan that can reach up to 20 feet. These creatures are intelligent and often form close bonds with good-aligned humanoids, sometimes acting as guardians or mounts for noble warriors. Giant Eagles are typically found in high mountains or wide open skies, where they hunt for large prey such as deer or smaller predators. In combat, they dive at their foes with sharp talons and powerful beaks, using their speed and flight to gain an advantage. Giant Eagles are proud creatures, and their presence often symbolizes freedom and nobility.</summary>
 
 <summary>The Giant Eagle is a large beast characterized by its keen senses and aerial prowess, making it an effective scout and a fierce combatant. With a moderate Armor Class of 13 and 40 hit points, it presents a small challenge to unprepared adventurers, earning a Challenge Rating of 1. This creature combines decent physical abilities, particularly in Dexterity with a +3 modifier, which is considered good, allowing it superior agility in flight and combat. However, its Constitution is only average, with a +1 modifier, and it has low mental abilities with its Intelligence being -1, deemed very bad. Notably, the Giant Eagle possesses heightened sight, greatly enhancing its Perception when relying on vision. Its special ability to swim adds versatility, although it can face dangers if it remains submerged too long.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Quickserpent</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Quickserpent is a large, unaligned beast that thrives in swampy environments, leveraging its stealth and unique movement abilities to ambush unsuspecting foes. With a robust armor class of 15 and a relatively high hit point pool of 102, it is well-equipped to withstand attacks. The Quickserpent’s strengths lie in its powerful melee attacks, including a bite and a constrict ability that can immobilize opponents, alongside its clever control of the battlefield through its quicksand pit ability. Its weaknesses include a low intelligence score and limited magical abilities, leaving it reliant on physical prowess and environmental tactics instead of strategic spellcasting.</summary>
 
 <detail>

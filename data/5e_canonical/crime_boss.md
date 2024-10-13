@@ -1,6 +1,8 @@
 <MonsterName/>Crime Boss</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>15</AC>
+<HP/>127</HP>
 <summary>The Crime Boss is a formidable Medium humanoid antagonist known for its leadership and cunning in combat. With a robust Armor Class of 15 and a hefty 127 hit points, this character poses a considerable challenge to adventurers, making it a notable presence in encounters. The Crime Boss is equipped with impressive strength and constitution, boasting a Strength score of 18 (+4) and Constitution of 18 (+4), enabling it to endure and deliver substantial damage. Its high Intelligence, Wisdom, and Charisma scores (16, +3 each) provide it with excellent capabilities in social interactions and insight, as well as proficiency in combat strategies. The Crime Boss thrives on deception and intimidation, making it a dangerous opponent who often commands loyalty from allies while cunningly manipulating its foes.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Minotaur Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>67</HP>
 <summary>A Minotaur Skeleton is the reanimated remains of a Minotaur, brought back to unlife through dark necromantic magic. These undead creatures retain the immense strength of their living counterparts, but lack the flesh and vitality, appearing as skeletal warriors with large, rusted weapons. Despite their lack of intelligence, Minotaur Skeletons are relentless in combat, charging at their enemies with bone-crushing force. They are often found guarding ancient ruins or tombs, serving dark masters who control them through necromantic power.</summary>
 
 <summary>The Minotaur Skeleton is a formidable undead creature that serves as a terrifying guardian or foe in any encounter. With a challenge rating of 2, it presents a significant challenge to low-level adventurers, offering both raw physical power and unique special abilities. Its strengths lie in high damage output through melee attacks and the ability to deal extra damage with its Charge ability, making it a fearsome opponent when it can move to attack. The skeleton, however, has relatively low armor class and limited mobility, which could be exploited by clever players. One of its standout traits is the ability to remain undetected while motionless, presenting an element of surprise.</summary>

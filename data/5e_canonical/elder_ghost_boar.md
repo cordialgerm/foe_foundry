@@ -1,6 +1,8 @@
 <MonsterName/>Elder Ghost Boar</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>104</HP>
 <summary>The Elder Ghost Boar is a formidable Huge monstrosity that strikes fear into the hearts of adventurers. Unaligned, this spectral creature has enhanced strengths such as exceptional Strength and good Constitution, enabling it to deal and withstand significant damage. However, it has very bad Dexterity, making it less agile and easy to hit with ranged attacks. With a Challenge Rating of 6, it presents a challenging foe, capable of wreaking havoc with its powerful attacks and unique abilities. Notably, it has the ability to phase through objects and creatures, allowing for clever maneuvering in combat situations.</summary>
 
 <detail>

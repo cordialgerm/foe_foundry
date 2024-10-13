@@ -1,6 +1,8 @@
 <MonsterName/>Alchemist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>14</AC>
+<HP/>91</HP>
 <summary>The Alchemist is a medium humanoid creature known for its extraordinary skills in potion making and alchemical crafting. With a challenge rating of 6, it possesses a balance of good offensive capabilities and defensive endurance, boasting an armor class of 14 and 91 hit points, making it a moderately resilient threat. The Alchemist excels in intelligence and dexterity, allowing for effective spellcasting and agile combat maneuvers. It is adept at creating various potions, which can greatly enhance the abilities of its allies or hinder opponents, while its bombs provide a powerful area-effect attack. However, the Alchemist's physical strength is average, which limits its melee effectiveness, and relying heavily on alchemical resources can be a potential weakness.</summary>
 
 <detail>

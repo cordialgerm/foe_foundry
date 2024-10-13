@@ -1,6 +1,8 @@
 <MonsterName/>Venomous Snake</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>5</HP>
 
 
 ---

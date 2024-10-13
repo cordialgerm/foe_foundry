@@ -1,6 +1,8 @@
 <MonsterName/>Ijiraq</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Ijiraq is a Medium fey creature characterized by its chaotic neutral alignment. It possesses a strategic mix of abilities that allow it to be a tricky opponent in combat and exploration, particularly due to its capacity for memory manipulation and its unique shapeshifting abilities. With an Armor Class of 14 and a substantial pool of Hit Points at 127, the Ijiraq can withstand a fair amount of damage while delivering its own through powerful attacks. Although it has a good Constitution score of 19, which provides a very good damage resistance, its Charisma score of 9 indicates a weakness in social interactions. The Ijiraq serves as a unique foe that requires both physical and tactical consideration due to its inherent magical properties and ability to leave opponents with fragmented memories of encounters.</summary>
 
 <detail>

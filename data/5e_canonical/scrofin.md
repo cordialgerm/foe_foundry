@@ -1,6 +1,8 @@
 <MonsterName/>Scrofin</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Scrofin is a Medium Fey creature that embodies a playful yet formidable nature, often engaging in challenges and contests of strength. It operates under a lawful neutral alignment, maintaining a strict code in its interactions. With a solid Armor Class of 13 and 68 hit points, the Scrofin can hold its ground but is not invulnerable. Its strengths lie in its grappling ability and resilience, allowing it to restrain larger opponents effectively and endure damage. However, it has low Intelligence and Wisdom scores, which make it less adept at dealing with magical or perceptual challenges. Overall, the Scrofin is a captivating opponent that relies on physical strength and grappling prowess in battle.</summary>
 
 <detail>

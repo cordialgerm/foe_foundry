@@ -1,6 +1,8 @@
 <MonsterName/>Forest Falcon</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>13</HP>
 <summary>The Forest Falcon is a medium-sized beast that embodies both the grace of flight and the sharpness of its beak. With a notable speed in the air and skillful navigation through forest canopies, this creature exemplifies agility and quick attacks. While its strength is somewhat lacking, the Forest Falcon compensates with a very good dexterity and good wisdom, making it an effective hunter, particularly adept at spotting prey. The falcon has a challenge rating of 1/4, which means it is relatively easy for low-level adventurers to handle, but its flying capabilities and special abilities allow it to engage combat effectively and potentially surprise opponents. It is unaligned, suggesting that it doesn’t have any inherent bias or motivations.</summary>
 
 <detail>

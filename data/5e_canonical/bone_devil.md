@@ -1,7 +1,9 @@
 <MonsterName/>Bone Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
 <Subtype/>devil</Subtype>
+<CR/>9</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Bone Devil is a tall, skeletal fiend with a long, barbed tail and wings made of bony spines. Its skin is stretched tightly over its skeletal frame, giving it a gaunt and terrifying appearance. Bone Devils serve as tormentors and jailers in the Nine Hells, delighting in causing pain and suffering to their victims. They are skilled fighters, wielding polearms and using their tails to lash at enemies with precision and cruelty. Their stingers can inject a venom that causes agonizing pain. Bone Devils are merciless and cunning, often overseeing the torture of souls or enforcing the will of their infernal masters.</summary>
 
 <summary>The Bone Devil is a formidable and malevolent creature, classified as a Large fiend that embodies both strength and cunning. With a high Armor Class of 19 and substantial Hit Points totaling 142, this creature is hard to wound. It possesses excellent mobility, being able to walk at a speed of 50 feet and fly 40 feet, making it agile in combat. The Bone Devil has a Challenge Rating of 9, providing a significant level of challenge for adventurers, as it can deal considerable damage and withstand hits due to its resistance to cold and damage from nonmagical, non-silvered weapons. It features an array of powerful abilities, including Magic Resistance, granting it a very good chance of succeeding on saving throws against spells, and the ability to see in magical darkness. Its intelligence and charisma are above average, contributing to its capability to manipulate and deceive. </summary>

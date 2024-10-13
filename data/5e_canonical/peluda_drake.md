@@ -1,6 +1,8 @@
 <MonsterName/>Peluda Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Peluda Drake is a large, chaotic neutral dragon creature known for its piercing attacks and unique defensive abilities. With an Armor Class of 15, it possesses good natural armor that helps protect it in combat. The creature has a substantial pool of hit points, totaling 68, making it resilient in battle. Notably, it has a Challenge Rating of 3, indicating it is a challenging foe for moderately experienced adventurers, providing 700 XP upon defeat. While the Peluda has high strength, constitution, and a dynamic tactical reach with its burrowing and walking speeds, its intelligence and charisma are below average, which may limit its ability to interact with other characters effectively.</summary>
 
 <detail>

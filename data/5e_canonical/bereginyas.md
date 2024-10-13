@@ -1,6 +1,8 @@
 <MonsterName/>Bereginyas</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>81</HP>
 <summary>The Bereginyas is a tiny, neutral evil fey creature that excels in stealth and evasive tactics, making it a formidable opponent despite its small size. With an Armor Class of 14 and 81 hit points, it has a decent level of durability for its Challenge Rating of 4, which offers a balanced threat level for adventurers. Possessing high Dexterity grants it exceptional stealth capabilities, and its speed allows it to quickly maneuver in and out of combat. However, its reliance on poison may be a double-edged sword, as creatures that can resist or circumvent its effects will diminish its effectiveness. Notably, the Bereginyas can attach to its prey, effectively smothering them, which can be devastating in the right circumstances.</summary>
 
 <detail>

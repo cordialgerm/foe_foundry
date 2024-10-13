@@ -1,7 +1,9 @@
 <MonsterName/>Deva (Angel)</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
 <Subtype/>angel</Subtype>
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>136</HP>
 <summary>A Deva is a celestial being of great power and beauty, often acting as a messenger or servant of the gods. With a radiant, humanoid form, Devas are typically adorned with luminous wings and glowing skin, exuding an aura of peace and divine grace. They are known for their unwavering dedication to good, often intervening in mortal affairs to guide, protect, or defend those who are worthy. Devas possess powerful healing magic and can summon radiant energy to smite their foes. They are wise, just, and deeply compassionate, though they will fiercely battle against evil forces when necessary.</summary>
 
 <summary>The Deva is a Medium Celestial being known for its powerful abilities, defensive capabilities, and healing prowess. With a Challenge Rating of 10, it presents a significant threat on the battlefield, boasting high Armor Class and Hit Points, allowing it to withstand considerable damage. The Deva's strengths include impressive physical attributes, strong saving throws, and resistance to radiant damage, making it a fierce opponent. In addition to its combat prowess, the Deva can heal allies or deal substantial radiant damage, giving it both offensive and supportive roles in encounters. However, its reliance on magical attacks means it may struggle against foes with strong resistance to magical damage.</summary>

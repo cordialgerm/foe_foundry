@@ -1,6 +1,8 @@
 <MonsterName/>Lemure Band</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>2</CR>
+<AC/>7</AC>
+<HP/>67</HP>
 <summary>The Lemure Band is a Large-sized fiend known for its dark and menacing presence. It functions as a collective of lemures, which are lesser devils. With a relatively low Armor Class of 7 and 67 hit points, the band is vulnerable in direct combat, yet its ability to split into multiple entities when defeated gives it a form of resilience. Despite its underwhelming stats, the Lemure Band poses a challenge due to its high damage potential and several unique abilities, making them formidable foes particularly when encountered in groups or as a surprise ambush. Its vulnerabilities and low Dexterity, which is rated as bad, make it less nimble in critical situations.</summary>
 
 <detail>

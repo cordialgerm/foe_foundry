@@ -1,6 +1,8 @@
 <MonsterName/>Gearmass</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>115</HP>
 <summary>The Gearmass is a large ooze creature that serves as both a formidable adversary and a hazardous environmental obstacle in Dungeons & Dragons. With a challenge rating of 5, it is designed to pose a significant threat to parties composed of low to mid-level adventurers. This creature excels in grappling opponents and inflicting continual damage through its engulf ability. Its main strengths lie in its high constitution and the corrosive effects it has on non-magical metal weapons, which can turn the tide of battle by damaging the adventurers' tools. However, its low dexterity makes it clumsy in stealth, and its intelligence is exceptionally poor, limiting its strategic thinking. With immunities to many common conditions and a unique ability to pass through tight spaces, it exemplifies the unpredictable dangers present in dungeon environments.</summary>
 
 <detail>

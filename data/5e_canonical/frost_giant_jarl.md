@@ -1,6 +1,8 @@
 <MonsterName/>Frost Giant Jarl</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>12</CR>
+<AC/>15</AC>
+<HP/>184</HP>
 <summary>The Frost Giant Jarl is a formidable Huge Giant characterized by its impressive physical strength and resilience, making it a powerful adversary in combat. With an Armor Class of 15 and a substantial 184 hit points, it can withstand significant damage while dealing out its own through a range of devastating attacks. This creature's Challenge Rating of 12 signifies a threat level appropriate for high-level adventurers. It excels in melee combat, particularly with its powerful battleaxe and rock-throwing capabilities. However, it has a downside; the Frost Giant Jarl is vulnerable to fire damage, which can cause it to become rattled. Overall, this giant is a fearsome opponent that combines brute strength with tactical abilities.</summary>
 
 <detail>

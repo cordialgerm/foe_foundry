@@ -1,6 +1,8 @@
 <MonsterName/>Attercroppe</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>21</HP>
 <summary>The Attercroppe is a tiny fey creature embodying chaotic evil, known for its cunning and its malicious control over water sources. It has an imposing Armor Class of 14, which provides it with decent defensive capabilities for its challenge rating of 1/2. With 21 hit points, it can withstand a few blows in combat. The Attercroppe excels in Dexterity, boasting a +4 modifier, which allows it to move quickly and stealthily while supporting its abilities to evade attacks and capitalize on surprise. Its strengths are enhanced by its ability to poison water, become invisible, and use innate spellcasting, making it a formidable adversary in aquatic environments. However, its physical strength is poor, with a -1 modifier, and it has limited hit points, making it vulnerable if caught off guard. </summary>
 
 <detail>

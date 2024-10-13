@@ -1,6 +1,8 @@
 <MonsterName/>Peat Mammoth</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>172</HP>
 <summary>The Peat Mammoth is a formidable creature native to swampy environments, distinguished by its massive size and plant-based nature. Serving as a potent foe for adventurers, it combines a robust defensive capability with substantial offensive power. With an Armor Class of 16 and a significant pool of 172 hit points, it is resistant to fire and necrotic damage, making it a difficult target to bring down. However, its low Dexterity results in poor agility, giving it a notable weakness against swift characters. The mammoth's unique abilities, such as igniting upon receiving fire damage and exploding upon its death, introduce a high level of tactical depth, requiring careful positioning from players. Its ability to engulf and restrain opponents further cements the Peat Mammoth as a menacing presence on the battlefield.</summary>
 
 <detail>

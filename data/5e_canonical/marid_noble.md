@@ -1,6 +1,8 @@
 <MonsterName/>Marid Noble</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>11</CR>
+<AC/>17</AC>
+<HP/>344</HP>
 <summary>The Marid Noble is a powerful large elemental creature, known for its dominion over water and its majestic presence. It has a high armor class of 17, making it fairly difficult to hit, while boasting an impressive pool of hit points totaling 344, derived from 30d10 plus an additional 180. With a challenge rating of 11, it is a formidable opponent capable of dealing significant damage in combat, especially with its unique spellcasting abilities and a versatile range of attacks. The Marid Noble excels in both aquatic and aerial environments, as it can swim at a speed of 90 feet and fly at 60 feet. Despite its strengths, it has weaknesses such as being vulnerable to certain magical effects despite its resistances to acid, cold, and lightning damage. </summary>
 
 <detail>

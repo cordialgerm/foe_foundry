@@ -1,6 +1,8 @@
 <MonsterName/>Xenabsorber</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Xenabsorber is a medium-sized aberration known for its chaotic neutral alignment. This creature is notable for its unique camouflage abilities, which allow it to impersonate others, making it a deceptive opponent in combat and interactions. With an Armor Class of 15 due to its natural armor, it provides a decent level of protection. The Xenabsorber has a total of 65 hit points, which translates to a solid endurance in battle. With a challenge rating of 3, it poses a significant but manageable threat to adventurers. Its attributes reflect a creature that is physically capable with good strength and constitution, but average in intelligence and dexterity. It excels in deception and perception skills, making it very good at tricking others and noticing details in its surroundings. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Three-Headed Clockwork Dragon</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>14</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>275</HP>
 <summary>The Three-Headed Clockwork Dragon is a formidable construct, classified as a Huge size creature with a Challenge Rating of 14, which means it poses a significant threat to adventurers. It boasts an impressive Armor Class of 18, backed by 275 hit points, offering resilience in combat. This dragon is not just durable; it is also capable of flight, reaching speeds of 60 feet and walking at 40 feet. Its attributes highlight its strengths: a Strength score of 25 grants it a +12 bonus to Strength saving throws and the ability to excel in athletic contests, while a Constitution score of 23 gives it a +11 bonus to Constitution saving throws. However, it has a very low Charisma score of 1, resulting in a -5 modifier, making it ineffective in social interactions that require charm or persuasion. The dragon is immune to several types of damage, including poison and psychic, and it's also conditioned to resist being charmed, exhausted, frightened, paralyzed, petrified, or poisoned. </summary>
 
 <detail>

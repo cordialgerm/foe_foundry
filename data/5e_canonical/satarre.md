@@ -1,6 +1,8 @@
 <MonsterName/>Satarre</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (leather armor)</AC>
+<HP/>40</HP>
 <summary>The Satarre is a medium humanoid creature designed as a versatile combatant. It possesses a reasonable Armor Class of 12, complemented by 40 hit points, making it fairly resilient in battle for its challenge rating of 1. The Satarre has decent physical abilities with a strength modifier of +2, dexterity modifier of +1, and constitution modifier of +1, resulting in overall good effectiveness in melee combat, particularly with its attack options. However, its intelligence and wisdom scores are average, which may limit its utility in encounters that rely on knowledge or perception checks. Notably, the Satarre is resistant to certain debilitating conditions due to its special abilities, allowing it to maintain its effectiveness in combat.</summary>
 
 <detail>

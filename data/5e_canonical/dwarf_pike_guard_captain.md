@@ -1,6 +1,8 @@
 <MonsterName/>Dwarf, Pike Guard Captain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>18 (plate)</AC>
+<HP/>93</HP>
 <summary>The Dwarf Pike Guard Captain is a formidable medium humanoid, embodying the traits of a disciplined warrior with a lawful neutral alignment. This character shines in defensive and tactical roles, particularly in a fortified position where they can utilize their pike to control the battlefield. With a solid Armor Class of 18 and significant hit points totaling 93, the Pike Guard Captain can withstand a fair amount of punishment. Their challenge rating of 5 indicates that they are a considerable threat, capable of dealing consistent damage in combat while also providing support to their allies. Despite their strengths, including resistance to poison damage and the ability to provide tactical buffs to their allies, they have weaknesses such as low Dexterity, which can make them less evasive against ranged attacks. </summary>
 
 <detail>

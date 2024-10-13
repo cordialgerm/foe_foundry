@@ -1,6 +1,8 @@
 <MonsterName/>Chamrosh</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>39</HP>
 <summary>The Chamrosh is a Medium celestial creature that embodies a neutral good alignment. It is known for its speed and agility, capable of flying at 60 feet and walking at 40 feet. With a Challenge Rating of 1, the Chamrosh presents a moderate threat to adventurers, offering a total of 39 hit points that allows it to endure a fair amount of combat. Its armor class is 14, reflecting reasonable protection through its natural armor. This creature excels in perception and insight, making it an effective scout and information gatherer. However, its intelligence is notably low, which limits its strategic thinking in combat. The Chamrosh is particularly resilient against fire and radiant damage and is immune to being frightened. Its celestial nature grants it strong abilities in telepathy and communication, allowing it to engage with both allies and foes effectively.</summary>
 
 <detail>

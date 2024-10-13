@@ -1,6 +1,8 @@
 <MonsterName/>Zoog</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>0</CR>
+<AC/>13</AC>
+<HP/>3</HP>
 <summary>The Zoog is a tiny aberration characterized by its chaotic evil nature, making it a malevolent and cunning opponent. With a modest challenge rating of 0, it is not particularly powerful in combat, often posing more of a nuisance than a significant threat. Its notable features include high Dexterity, which allows it to move stealthily and evade attacks, and a climbing speed that makes it versatile in attacking from above or navigating its surroundings. However, it suffers from very low Strength, making it physically weak, and its overall hit points are quite low, giving it a significant vulnerability to damage. </summary>
 
 <detail>

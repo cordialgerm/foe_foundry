@@ -1,6 +1,8 @@
 <MonsterName/>Vanara</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>55</HP>
 <summary>The Vanara is a Medium-sized humanoid creature known for its playful and agile nature, embodying a neutral good alignment. It functions well as a skirmisher in combat, utilizing its high Dexterity and mobility to evade attacks and hinder opponents. With an armor class of 13 and 55 hit points, the Vanara offers moderate resilience, allowing it to withstand some damage while engaging in battle. One of its standout features is its ability to distract foes, which plays a pivotal role in controlling the flow of combat. However, while it boasts impressive abilities, it may struggle against more formidable opponents who can withstand its distractions and agile maneuvers. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Cueyatl Warchief</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>16</AC>
+<HP/>117</HP>
 <summary>The Cueyatl Warchief is a small humanoid creature characterized by its lawful evil alignment, making it a formidable and cunning adversary. This creature boasts a notable Armor Class of 16, derived from its studded leather armor and shield, which provides good protection in combat. With 117 hit points, the Warchief can endure significant damage before being incapacitated. Its movement abilities are versatile, allowing for a walk speed of 30 feet, a climb speed of 20 feet, and a swim speed of 30 feet. The Warchief has a Challenge Rating of 7, indicating a fair level of difficulty and a reward of 2,900 experience points for defeating it. </summary>
 
 <detail>

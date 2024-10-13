@@ -1,6 +1,8 @@
 <MonsterName/>Aniwye</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Aniwye is a formidable large monstrosity with an alignment leaning towards neutral evil. This creature possesses a blend of physical strength and cunning adaptability, making it a versatile opponent in combat. With an armor class of 15, it boasts notable resilience due to its natural armor, and it can withstand a fair amount of damage, having a total of 102 hit points. The Aniwye can traverse different terrains effectively, with a walking speed of 40 feet and a climbing speed of 20 feet. It is rated with a challenge level of 5, indicating that it presents a significant challenge for adventurers, garnering a reward of 1,800 experience points upon defeat. Notably, the Aniwye's ability to shapeshift between a skunk-like monstrosity and larger forms, such as an ogre or hill giant, allows it to adapt its strategy during encounters, although it has lower intelligence than most creatures. </summary>
 
 <detail>

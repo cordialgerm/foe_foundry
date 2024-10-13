@@ -1,6 +1,8 @@
 <MonsterName/>Alp</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>44</HP>
 <summary>The Alp is a Small fey creature characterized by its chaotic evil alignment. With a moderate Armor Class of 13 and a total of 44 hit points, it presents a notable challenge for lower-level adventurers due to its agility and magical abilities. As a challenge rating of 1, it rewards 200 XP upon defeat. The Alp excels in stealth and has innate spellcasting capabilities, allowing it to manipulate shadows and create illusions, making it a tricky opponent to deal with. Its weaknesses include vulnerability to bright light, which imposes disadvantages on its attacks and perception checks. Overall, the Alp is a deceptive enemy that uses clever tactics, illusions, and the ability to transform to evade and confuse its foes.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Vesiculosa</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>11</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>232</HP>
 <summary>The Vesiculosa is a gargantuan plant creature characterized by its ability to mimic an oasis, attracting unsuspecting creatures with its sweet fragrance and the promise of rejuvenating water. It has a significant challenge rating of 11, making it a formidable foe in combat, particularly due to its high hit points totaling 232. The Vesiculosa excels in restraining and incapacitating opponents with its multiattack capabilities, grappling roots, and its ability to put attackers to sleep with its water. However, its lack of mobility, with a walking speed of only 20 feet, coupled with its low intelligence and charisma, limits its tactical options and ability to interact with creatures on a social level.</summary>
 
 <detail>

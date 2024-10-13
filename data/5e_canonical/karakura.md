@@ -1,6 +1,8 @@
 <MonsterName/>Karakura</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Karakura is a Medium-sized fiend with a neutral evil alignment, designed to serve as a competent antagonist in a Dungeons & Dragons campaign. With a challenge rating of 5, it presents a moderate threat to adventurers, capable of charming and manipulating its foes. The Karakura has a notable flying speed and a combination of deceptive abilities, bolstered by its high Charisma, which enhances its charm and persuasion skills. However, it is vulnerable to radiant damage, making it easier for certain classes or spells to counteract its otherwise formidable abilities. The creature's special abilities, such as shape-changing and its unique connection to the Plane of Shadow, allow it to be both elusive and dangerous, particularly in lower light environments.</summary>
 
 <detail>

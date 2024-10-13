@@ -1,6 +1,8 @@
 <MonsterName/>Tatzelwurm</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>120</HP>
 <summary>The Tatzelwurm is a medium-sized dragon with a neutral evil alignment, known for its cunning and ferocity in combat. With a formidable Armor Class of 15 and 120 hit points, this creature proves to be a resilient foe. It can deal significant damage with its piercing and poison attacks, making it particularly dangerous in melee range. Its climbing ability of 30 feet enhances its mobility, allowing it to maneuver effectively in various terrains. While it has decent physical attributes, notably a Strength score of 17 (+3) and Constitution score of 16 (+3), its intelligence is quite low with a score of 5 (-3), which limits its tactical thinking. The Tatzelwurm excels in creating area denial through its poisonous attacks but lacks versatility in spells or ranged capabilities.</summary>
 
 <detail>

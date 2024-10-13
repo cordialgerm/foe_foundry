@@ -1,6 +1,8 @@
 <MonsterName/>Forest Hunter</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>104</HP>
 <summary>The Forest Hunter is a Medium humanoid creature with a lawful evil alignment that exemplifies the deadly blend of stealth and precision in combat. It stands out with a well-rounded set of abilities that makes it a formidable foe, particularly in forested or urban environments where it can utilize its skills to track and ambush prey. With an Armor Class of 15, it boasts good defensive capabilities and has significant hit points totaling 104, which provides it with decent durability in battle. However, its sensitivity to sunlight can be a notable weakness, as it suffers disadvantages while exposed to it. The Forest Hunter is particularly skilled in dexterity and charisma, giving it exceptional stealth capabilities and strong social manipulation through presence and charm.</summary>
 
 <detail>

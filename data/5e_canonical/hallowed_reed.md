@@ -1,6 +1,8 @@
 <MonsterName/>Hallowed Reed</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Hallowed Reed is a Medium-sized celestial creature of neutral good alignment, embodying purity and benevolence. With an Armor Class of 13 achieved through natural armor, it has a total of 22 hit points, which can sustain some level of combat before succumbing. This creature has a low movement speed of only 10 feet, making it less mobile compared to others. With a Challenge Rating of 1/2, it is relatively weak and commands 100 experience points upon defeat. Notably, the Hallowed Reed possesses strong abilities aligned with its essence of goodness and healing, yet it is vulnerable to more aggressive tactics from foes.</summary>
 
 <detail>

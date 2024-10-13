@@ -1,6 +1,8 @@
 <MonsterName/>Beli</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Beli is a small, neutral evil fey creature known for its cunning and agility. With a robust defensive capability, reflected in its Armor Class of 15 and 45 hit points, it poses a notable challenge for adventurers rated at a challenge level of 2. The Beli excels with its flying ability, allowing it to maneuver swiftly in combat, and its special abilities that enhance its survivability in cold environments significantly contribute to its role as a cunning predator. However, despite its strengths, it is vulnerable to fire, which can negate its regenerative abilities. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Blood Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Blood Giant is a formidable opponent in the world of Dungeons & Dragons, characterized by its large size and strong combat abilities. As a Huge Giant of lawful neutral alignment, it stands as a powerful creature within its challenge rating of 8, making it a significant threat to adventurers. The Blood Giant boasts high hit points, exceptional physical strength, and effective combat skills, complemented by its capacity to use powerful magic abilities. However, it does exhibit vulnerabilities in its lower mental capabilities and certain magical effects. Notably, its abilities to sense living creatures and its resistance to various types of damage make it a challenging adversary in both melee and ranged encounters.</summary>
 
 <detail>

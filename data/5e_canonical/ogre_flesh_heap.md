@@ -1,6 +1,8 @@
 <MonsterName/>Ogre Flesh Heap</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>11</AC>
+<HP/>59</HP>
 <summary>The Ogre Flesh Heap is a large undead creature that represents a reanimated hulk, formed from the remains of an ogre. It stands out as a formidable opponent in combat due to its strong physical attributes, high hit points, and immunity to various damage types. With its challenge rating of 4, it poses a moderate threat to adventurers. The creature excels in melee encounters, being capable of delivering powerful attacks while also possessing hardiness attributed to its undead nature. However, it is limited by its low Dexterity and Intelligence scores, making it fairly sluggish and not very cunning. Notably, the Ogre Flesh Heap can endure lethal blows thanks to its Undead Fortitude ability, which allows it to cheat death, making it a resilient foe that needs to be dispatched with radiant damage or critical hits to prevent it from recovering.</summary>
 
 <detail>

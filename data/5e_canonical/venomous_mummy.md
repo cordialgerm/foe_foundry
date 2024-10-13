@@ -1,6 +1,8 @@
 <MonsterName/>Venomous Mummy</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>58</HP>
 <summary>The Venomous Mummy is a medium undead creature characterized by its lawful evil alignment. As a formidable opponent, it wields the power of poison and curses, making it a dangerous foe in combat. With a challenge rating of 3, the Venomous Mummy presents a moderate threat to adventurers, providing a unique combination of melee attacks and environmental hazards through its toxic smoke. Its vulnerabilities to fire damage can be exploited, but its immunities to necrotic and poison damage, along with resistances to nonmagical physical attacks, make it difficult to defeat through traditional means. </summary>
 
 <detail>

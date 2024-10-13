@@ -1,6 +1,8 @@
 <MonsterName/>Coralfish</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>27</HP>
 <summary>The Coralfish is a small monstrosity known for its unique aquatic abilities and a dangerous bite that can petrify its foes. With an armor class of 12 and hit points totaling 27, it can be considered moderately resilient for its challenge rating of 1/2, making it a creature that can pose a significant threat to unprepared adventurers. The Coralfish primarily operates in water, as it has an excellent swimming speed of 40 feet but is limited to walking only 20 feet on land. Its notable strength lies in its petrifying bite, which can incapacitate opponents, rendering them helpless for a full day if not treated. However, it has very poor strength and intelligence, indicating that its physical power is minimal and its cognitive abilities are exceptionally limited. </summary>
 
 <detail>

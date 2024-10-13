@@ -1,6 +1,8 @@
 <MonsterName/>Giant Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>26</HP>
 <summary>A Giant Spider is a massive arachnid that weaves large, intricate webs to trap its prey. These creatures are commonly found in dark forests, caves, or abandoned ruins, where they patiently wait for their next meal to stumble into their web. Their venomous bite can paralyze or kill smaller creatures, and they are capable of spinning webbing to entangle foes. Giant Spiders are stealthy and fast, able to climb walls and ceilings with ease. Though solitary by nature, they are highly territorial and will defend their lairs fiercely from intruders.</summary>
 
 <summary>The Giant Spider is a formidable creature with a large and menacing presence. It combines the traits of a beast with a cunning predatory instinct, making it both a physical threat and a stealthy ambusher. With a Challenge Rating of 1, it presents a moderate challenge to adventurers. The spider possesses good agility and climbing skills, allowing it to navigate in environments that are vertical and difficult. It has average durability due to its 26 hit points and a decent Armor Class of 14. However, its intelligence is low, which can be seen as a weakness in scenarios requiring complex tactics or communication.</summary>

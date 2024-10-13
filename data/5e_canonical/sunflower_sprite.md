@@ -1,6 +1,8 @@
 <MonsterName/>Sunflower Sprite</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>14</HP>
 <summary>The Sunflower Sprite is a small fey creature embodying a neutral good alignment, known for its connection to nature and its radiant abilities. With a Challenge Rating of 1/2, it is suitable for low-level encounters, providing utility and support to its allies rather than acting as a frontline fighter. This sprite has a moderate armor class of 12 and possesses 14 hit points, making it relatively fragile in combat. However, its dexterity and charisma make it agile and capable of charm or influence. Notably, this creature thrives in sunlight, which enhances its abilities, but it suffers when deprived of natural light. The Sunflower Sprite stands out due to its magic resistance, making it resilient against spell effects and its ability to communicate with plants.</summary>
 
 <detail>

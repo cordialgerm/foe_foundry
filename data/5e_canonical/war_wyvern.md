@@ -1,6 +1,8 @@
 <MonsterName/>War Wyvern</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (scale mail)</AC>
+<HP/>119</HP>
 <summary>The War Wyvern is a formidable large dragon creature that operates independently, often serving as a powerful adversary in combat encounters. With a notable challenge rating of 7, it embodies significant physical strength and resilience, showcasing high hit points and effective attack capabilities. The War Wyvern has excellent mobility, able to fly up to 80 feet and walk 20 feet, giving it a tactical advantage in the air. Its primary attributes include a strength score of 20, resulting in a good modifier of +5, and a constitution score of 16, giving it a good +3 modifier, contributing to its durability in battle. However, the wyvern has a low intelligence and charisma, resulting in very bad modifiers of -2 for both, which limits its capability for complex interactions and strategizing beyond physical combat. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Caustic Charger</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Caustic Charger is a huge monstrosity that serves as a formidable opponent in combat, boasting high hit points and effective damage output. With a challenge rating of 7, it poses a significant threat to adventurers who are unprepared for its abilities. The creature has a strong physical presence, with a Strength score of 19, granting it a good melee attack modifier of +7 to hit. However, its Dexterity and Charisma scores are average to bad, indicating a lack of finesse and social prowess. The Caustic Charger is immune to acid damage, making it resistant to any attacks of that nature, while its burrowing speed allows it to maneuver effectively through terrain. It possesses unique abilities that enhance its role in combat, particularly in disrupting enemy positioning and inflicting debilitating effects through its Tentacles attack.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Wereshark</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>11</AC>
+<HP/>90</HP>
 <summary>The Wereshark is a large, chaotic evil humanoid creature that embodies the traits of both a shark and a human. This formidable foe is particularly dangerous due to its ability to switch between forms, allowing it to take advantage of its aquatic environment while also being a capable melee attacker on land. With a strong set of physical attributes, including exceptional strength and good constitution, the Wereshark can withstand significant damage and becomes even deadlier when its prey is wounded. While it possesses weaknesses to silvered weaponry, its damage immunities to nonmagical physical attacks make it a tough opponent. </summary>
 
 <detail>

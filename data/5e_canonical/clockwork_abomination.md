@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Abomination</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Clockwork Abomination is a formidable Large Construct characterized by its Lawful Evil alignment. As a challenging enemy with a Challenge Rating of 5, it presents a significant threat in combat due to its high offensive capabilities and resilience against various damage types. This creature has a robust Armor Class of 16 and can absorb a substantial amount of damage with 76 hit points. Its strengths lie in its powerful physique and special abilities that enhance its combat performance, making it a danger to party members. However, it is vulnerable to magical effects that could exploit its weaker dexterity save compared to its powerful strength, constitution, and resistances.</summary>
 
 <detail>

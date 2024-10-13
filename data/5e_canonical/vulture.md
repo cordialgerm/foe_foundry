@@ -1,6 +1,8 @@
 <MonsterName/>Vulture</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>10</AC>
+<HP/>5</HP>
 <summary>A Vulture is a large, carrion-eating bird with a bald head and sharp beak, known for scavenging the remains of dead creatures. Vultures play a vital role in their ecosystems, cleaning up decaying remains that other animals leave behind. Though not typically aggressive, Vultures are drawn to death and will circle above dying or dead creatures, waiting for the opportunity to feed. In battle, their sharp talons and beaks can be dangerous to smaller creatures, but they prefer to avoid conflict, relying on their keen senses to locate food from miles away.</summary>
 
 <summary>The vulture is a medium beast characterized by its scavenging attributes and keen sensory abilities. With an armor class of 10, it offers minimal protection, and it possesses just 4 hit points, indicating that it is rather frail and can be easily taken down in combat. The vulture has a flying speed of 50 feet, allowing it to escape threats quickly, but its walking speed of only 10 feet limits its mobility on the ground. It operates in a challenge rating of 0, indicating that it presents very little threat to adventurers, earning only 25 experience points upon defeat. Notably, the vulture can take advantage of its keen sight and smell, providing it with the ability to notice threats or opportunities effectively.</summary>

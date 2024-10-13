@@ -1,6 +1,8 @@
 <MonsterName/>Hill Dwarf Wrestler</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>75</HP>
 <summary>The Hill Dwarf Wrestler is a formidable combatant known for its grappling prowess and strong melee attacks. This medium humanoid stands out in close-quarters combat, utilizing its notable physical strength and dexterity to overpower foes. With an armor class of 14, the wrestler can withstand a fair amount of damage, while its hit points of 75 enable it to sustain prolonged engagements. The wrestler’s challenge rating of 4 indicates that it presents a significant threat in battle, suitable for parties of lower to mid-level adventurers. Despite its strengths, it lacks ranged capabilities and relies heavily on physical confrontations to dominate its opponents.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Dire Wildebeest</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Dire Wildebeest is a large, powerful beast that operates independently and exhibits no alignment tendencies. With an impressive Armor Class of 14 due to its natural armor and a substantial pool of 150 hit points, it can withstand significant damage in combat. This creature has a high movement speed of 50 feet, enabling it to traverse the battlefield quickly, often using that advantage to charge at opponents. With a Challenge Rating of 7, it is considered a formidable threat, capable of inflicting considerable damage while also being able to cause fear in its enemies. However, it is notable that the Dire Wildebeest has lower mental stats, making it vulnerable to effects that target intelligence, wisdom, or charisma. </summary>
 
 <detail>

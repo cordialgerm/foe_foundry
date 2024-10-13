@@ -1,6 +1,8 @@
 <MonsterName/>Dragon Eel</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>195</HP>
 <summary>The Dragon Eel is a formidable aquatic creature that embodies the might and majesty of a dragon while also possessing unique aquatic abilities. This huge, neutral dragon excels in combat with high damage output and impressive defenses, marked by a solid Armor Class of 18 and a substantial pool of hit points totaling 195. Its strengths lie in its powerful melee attacks, the ability to deal additional lightning damage, and its capacity to move freely between water and air, especially during storms. However, despite its high strength and constitution, it suffers from a moderate dexterity, which could make it less agile in combat situations. The Dragon Eel presents a captivating challenge for adventurers, blending raw power with strategic placement and environmental advantages.</summary>
 
 <detail>

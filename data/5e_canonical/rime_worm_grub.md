@@ -1,6 +1,8 @@
 <MonsterName/>Rime Worm Grub</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Rime Worm Grub is a Medium-sized elemental creature marked by its affinity for cold environments. With a challenge rating of 1, this creature is often found lurking in snowy terrain, utilizing its camouflage and burrowing abilities to ambush unsuspecting foes. Its strength lies in its ability to resist cold damage and its effective melee capabilities, especially against wounded opponents. However, its intelligence, wisdom, and charisma scores are quite low, which makes it less persuasive or insightful in interactions outside of combat. The Rime Worm Grub can serve as an interesting obstacle for adventurers, particularly in frigid landscapes.</summary>
 
 <detail>

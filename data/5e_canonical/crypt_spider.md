@@ -1,6 +1,8 @@
 <MonsterName/>Crypt Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>38</HP>
 <summary>The Crypt Spider is a Medium beast characterized by its lawful evil nature and predatory behavior. It is most commonly found dwelling in dark, web-infested areas where it uses its intelligence and cunning to ensnare and dominate prey. With a solid Armor Class of 15 and a total of 38 hit points, the Crypt Spider poses a moderate challenge to adventurers, making it a worthy adversary in lower-level encounters. Its strengths lie in its dexterous movements, impressive stealth capabilities, and ability to manipulate webs for both offense and defense. However, being a beast means it lacks the magical abilities that some creatures possess, and its relatively low hit points can be a drawback in drawn-out engagements. </summary>
 
 <detail>

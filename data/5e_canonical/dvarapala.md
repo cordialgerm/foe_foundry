@@ -1,6 +1,8 @@
 <MonsterName/>Dvarapala</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Dvarapala is a formidable Huge Giant that serves as a guardian figure, embodying the will of its patron deity. With a challenge rating of 5, it possesses a robust defensive capability with an Armor Class of 14 due to natural armor and a substantial pool of 136 hit points, providing it with good survivability in combat. This giant characteristically has exceptional strength, with a Strength score of 19 (+4), allowing it to be a powerful melee combatant. While it is notably less agile, exhibiting bad Dexterity with a score of 8 (-1), its considerable Constitution (18) and Wisdom (16) scores contribute to its endurance and perceptiveness. The Dvarapala's inherent divine abilities, resistance to magical effects, and unique attack capabilities make it a versatile opponent in various combat situations, although its average Intelligence and very bad Charisma suggest it may struggle with social interactions.</summary>
 
 <detail>

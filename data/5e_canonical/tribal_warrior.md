@@ -1,7 +1,9 @@
 <MonsterName/>Tribal Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
 <Subtype/>any race</Subtype>
+<CR/>1</CR>
+<AC/>12 (hide armor)</AC>
+<HP/>11</HP>
 <summary>A Tribal Warrior is a fierce and skilled fighter, often part of a close-knit tribe or clan. These warriors are trained from a young age to defend their people and are proficient with simple weapons such as spears, clubs, and bows. They rely on their knowledge of the land and their agility to outmaneuver enemies, often using hit-and-run tactics or ambushes. Tribal Warriors are deeply connected to their communities and fight not only for survival but for honor and tradition. They are highly adaptive, able to thrive in various environments, from deserts to jungles.</summary>
 
 

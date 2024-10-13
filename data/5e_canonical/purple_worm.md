@@ -1,6 +1,8 @@
 <MonsterName/>Purple Worm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>247</HP>
 <summary>The Purple Worm is a gigantic, burrowing creature that tunnels through the earth in search of food. Its massive, segmented body can grow up to 80 feet long, and its maw is lined with rows of sharp, crushing teeth. Purple Worms are apex predators of the Underdark, capable of swallowing creatures whole with a single bite. Their powerful tunneling ability allows them to create vast networks of tunnels, which often become the lairs of other subterranean creatures. Though blind, they use their tremorsense to detect movement and prey from miles away. Purple Worms are relentless hunters, feared by all who dwell underground.</summary>
 
 <summary>The Purple Worm is a gargantuan monstrosity known for its immense size and devastating attacks. With a high armor class of 18 and substantial hit points totaling 247, it poses a significant threat to adventurers. Its primary role in combat is that of a powerful melee attacker, utilizing its formidable strength to inflict severe damage while also possessing unique abilities that can dominate the battlefield. Despite its strengths, the Purple Worm has low Dexterity, making it somewhat sluggish and vulnerable to certain tactics, especially those that rely on speed and precision. The creature is particularly dangerous due to its unique swallowing ability, allowing it to incapacitate large foes while dealing acid damage over time. </summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Cave Mimic</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>7</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>174</HP>
 <summary>The Cave Mimic is a gargantuan monstrosity with the ability to blend in with its surroundings as an object or terrain feature. With a Challenge Rating of 7, it is a formidable opponent that can provide a nasty surprise for unprepared adventurers. It has a substantial pool of hit points totaling 174, making it resilient in combat. Its strengths lie in its exceptional Strength score of 20 and solid Constitution score of 18, allowing it to deal and withstand damage effectively. The Cave Mimic's weaknesses include low Dexterity and Intelligence scores, making it less nimble and strategic compared to more agile foes. The mimic can also be a cunning trap with its impressive ability to adhere to creatures and objects, grappling them with ease. </summary>
 
 <detail>

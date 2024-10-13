@@ -1,6 +1,8 @@
 <MonsterName/>Desert Troll</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Desert Troll is a large giant characterized by its chaotic evil alignment, making it a formidable adversary in battle. With a challenging rating of 6, it presents a considerable threat, particularly in desert terrains where its abilities and camouflage are optimized. The troll boasts high hit points, strong physical attributes, notably in strength and constitution, and possesses a range of special abilities that enhance its combat prowess. However, it is not without weaknesses, particularly its susceptibility to water, which can cause it harm. Its natural armor grants it a respectable Armor Class, allowing it to withstand attacks relatively well.</summary>
 
 <detail>

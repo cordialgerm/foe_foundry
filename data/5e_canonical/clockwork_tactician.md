@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Tactician</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>11</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Clockwork Tactician is a formidable Medium-sized Construct characterized by its lawful neutral alignment. Designed for combat strategy and battlefield control, it boasts a robust armor class of 16 and a total of 150 hit points, giving it impressive durability in battle. With a challenge rating of 11, it can present a significant challenge to adventurers, capable of dealing considerable damage through its multiattack feature and tactical abilities. Its strengths lie in its high intelligence and strength, with an intelligence score of 20 (+5) allowing it to effectively utilize battlefield commands. However, its weaknesses include a lack of mobility, restricted to a walking speed of only 30 feet, and a dependency on allies for enhanced effectiveness through its Pack Tactics feature.</summary>
 
 <detail>

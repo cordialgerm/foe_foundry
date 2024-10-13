@@ -1,6 +1,8 @@
 <MonsterName/>Skeleton Horde</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>65</HP>
 <summary>The Skeleton Horde is a formidable Large undead creature that plays a versatile role in combat. With a challenge rating of 4, it can pose a significant threat to adventuring parties, particularly due to its ability to deal considerable piercing damage with both melee and ranged attacks. While it possesses an average armor class of 13 and decent hit points totalling 65, its most notable strength lies in its damage immunity to poison and its condition immunities to fatigue and poisoned states, making it resilient in battle. However, its weaknesses include vulnerability to bludgeoning damage, which might serve as a tactical advantage for characters who exploit this weakness. The Skeleton Horde can serve effectively as a frontline soldier, using coordinated attacks to overwhelm enemies.</summary>
 
 <detail>

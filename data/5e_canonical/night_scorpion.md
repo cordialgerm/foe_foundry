@@ -1,6 +1,8 @@
 <MonsterName/>Night Scorpion</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Night Scorpion is a formidable and intimidating creature known for its large size and predatory instincts. It is classified as an unaligned beast, making it a flexible opponent that can be encountered in various settings. With a challenge rating of 3 and a notable array of physical attributes, this creature can pose a serious threat to adventurers. It possesses strong offensive capabilities due to its ability to deliver multiple attacks and inflict debilitating conditions such as poison and paralysis. However, its low intelligence and charisma render it less versatile in social interactions and strategic maneuvering. Despite having decent defenses with a natural armor providing an Armor Class of 14, it is not invincible and can be dealt with through tactical engagements.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Grave Behemoth</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>10</CR>
+<AC/>9</AC>
+<HP/>210</HP>
 <summary>The Grave Behemoth is a formidable opponent in Dungeons & Dragons 5th Edition, characterized as a Huge undead creature with a neutral evil alignment. With a Challenge Rating of 10, it possesses remarkable durability and damage potential, boasting 210 hit points derived from a substantial pool of 20d12+80. Its Armor Class of 9 indicates that it may be easier to hit compared to more agile foes, but its high hit points allow it to endure a significant amount of punishment before going down. The Grave Behemoth excels in close combat with powerful melee attacks and has the ability to summon zombies to assist in battle, increasing the threat level significantly. However, its low Dexterity and limited speed may render it vulnerable to nimble opponents that can maneuver around it.</summary>
 
 <detail>

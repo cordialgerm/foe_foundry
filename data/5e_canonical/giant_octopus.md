@@ -1,6 +1,8 @@
 <MonsterName/>Giant Octopus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>52</HP>
 <summary>The Giant Octopus is a massive, intelligent sea creature with long, flexible tentacles lined with powerful suction cups. Its body is soft and malleable, allowing it to squeeze through tight spaces, and its skin can change color to blend in with its surroundings. Giant Octopuses are stealthy predators, often ambushing their prey from hiding and ensnaring them with their tentacles. Once captured, the prey is crushed and consumed by its sharp beak. In addition to its strength, the Giant Octopus is a master of escape, able to squirt ink to create a cloud that obscures its retreat.</summary>
 
 <summary>The Giant Octopus is a large aquatic beast that excels in stealth and grappling opponents. With a moderate armor class of 11 and a total of 32 hit points, it can withstand some damage but is not particularly durable compared to larger creatures. Its challenge rating of 1 indicates that it is suitable for low-level adventurers. The Giant Octopus is agile in water, capable of moving quickly with a swim speed of 60 feet, while its walk speed is limited to 10 feet. Notably, the Giant Octopus possesses exceptional strength with a 16 in Strength, allowing it to effectively grapple and restrain foes. Its intelligence is low, but this creature compensates with proficient stealth and the ability to camouflage itself, making it a surprising threat in underwater encounters.</summary>

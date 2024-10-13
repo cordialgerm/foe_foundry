@@ -1,6 +1,8 @@
 <MonsterName/>Erina</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (leather armor)</AC>
+<HP/>22</HP>
 <summary>The Erina is a small humanoid creature known for its adaptability and unique abilities, which make it a noteworthy opponent despite its low challenge rating of 1/4. With a basic Armor Class of 12, it can withstand some attacks, but it's most notable for its mobility and the ability to burrow, allowing it to escape danger. The Erina possesses a good Constitution score, granting it a decent number of hit points at 22, which can keep it fighting longer than one might expect from a creature of its size. Its strengths lie in its special abilities, such as Keen Smell and Hardy, which enhance its perception and resilience against poison. However, its weaknesses include low Strength and Wisdom, making it ineffective in physical combat and limited in tasks that require strong will or insight.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Tosculi Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15</AC>
+<HP/>58</HP>
 <summary>The Tosculi Warrior is a small humanoid creature characterized by its lawful evil alignment. As a combatant, it excels in both melee and tactical situations, employing its speed and flight to maneuver effectively in battle. With an Armor Class of 15 and a health pool of 58 hit points, it can sustain some damage while delivering notable attacks. The Tosculi Warrior's strengths lie in its high dexterity of 20, which provides it with exceptional agility and accuracy in attacks, coupled with strong attacking options and debilitating abilities. However, its moderate strength and intelligence suggest limitations in physical might and mental prowess. The warrior's unique features—Crowd Tactics and Hive Sense—enhance its effectiveness in combat and connection to its hive, making it a formidable foe.</summary>
 
 <detail>

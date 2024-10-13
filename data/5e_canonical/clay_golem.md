@@ -1,6 +1,8 @@
 <MonsterName/>Clay Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Clay Golem is a towering, humanoid figure made entirely of soft, malleable clay. It is a construct brought to life through powerful magic, often serving as a guardian for temples or wizards' lairs. While slow and ponderous, the Clay Golem is nearly unstoppable in combat, as it regenerates damage rapidly and can crush enemies with its immense strength. When enraged, a Clay Golem can go berserk, attacking indiscriminately and destroying everything in its path. Its touch can also cause the cursed disease known as 'Golem's Plague,' slowly petrifying flesh into hardened clay.</summary>
 
 <summary>The Clay Golem is a large construct known for its formidable resilience and unique abilities on the battlefield. With an armor class of 14 and a substantial 163 hit points, it can absorb significant damage before going down. Its challenge rating of 9 indicates that it presents a notable threat to adventurers. One of its most striking features is its immunity to most forms of damage, particularly nonmagical attacks, and various conditions that can hinder other creatures. However, it does have a notable weakness to fire damage, which temporarily affects its movement and abilities. The golem can unleash powerful physical attacks and has the capacity to enhance its capabilities with special actions, making it a versatile foe in combat.</summary>

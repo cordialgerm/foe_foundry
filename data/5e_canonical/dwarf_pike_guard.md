@@ -1,6 +1,8 @@
 <MonsterName/>Dwarf, Pike Guard</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>16 (chain mail)</AC>
+<HP/>30</HP>
 <summary>The Dwarf Pike Guard is a medium humanoid creature that embodies the principles of lawful neutrality. They serve as stalwart defenders, armed with deadly pikes and an unwavering commitment to maintaining order. They possess a strong physical presence with an excellent Constitution, granting them durability in battle, while their combat capabilities shine through their attacks with a pike, making them formidable opponents. Their ability to work effectively in groups offers them enhanced defenses against ranged attacks, though they have vulnerabilities due to their limited mobility and low Dexterity.</summary>
 
 <detail>

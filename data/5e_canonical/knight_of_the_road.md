@@ -1,6 +1,8 @@
 <MonsterName/>Knight of the Road</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>117</HP>
 <summary>The Knight of the Road is a formidable humanoid creature, embodying the essence of shadowy intrigue and malevolence. This lawful evil entity is a master of manipulation and subterfuge, utilizing both physical prowess and cunning magical abilities to control its surroundings and dominate its foes. With a challenge rating of 5, it poses a significant threat to adventurers, possessing a solid combination of physical attacks and spells that can disrupt and disorient a party. However, it is sensitive to sunlight, which hampers its combat effectiveness. Notable features include its cunning abilities to obscure travel routes and its capacity to disappear into darkness, making it a master of evasion and ambush.</summary>
 
 <detail>

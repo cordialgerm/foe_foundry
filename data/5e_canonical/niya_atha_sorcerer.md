@@ -1,6 +1,8 @@
 <MonsterName/>Niya-Atha Sorcerer</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural)</AC>
+<HP/>66</HP>
 <summary>The Niya-Atha Sorcerer is a Medium Fey creature that embodies a unique combination of magic and physical prowess, categorized under the lawful neutral alignment. With its ability to inflict cold damage and manipulate its size, it serves as a formidable adversary in combat. The creature has a fair amount of resilience, given its Armor Class of 13 and Hit Points totaling 66, which allows it to withstand several rounds of battle. While its combat effectiveness is high, its reliance on ice-based abilities and spells makes it vulnerable to fire damage. With a Challenge Rating of 4, the Niya-Atha Sorcerer is considered an intermediate threat, capable of dealing significant damage and controlling the battlefield through its special abilities and actions.</summary>
 
 <detail>

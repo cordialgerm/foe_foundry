@@ -1,6 +1,8 @@
 <MonsterName/>Sand Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>135</HP>
 <summary>The Sand Spider is a formidable Large beast with a distinct predatory role in combat, leveraging its ability to ambush and grapple opponents. With a challenge rating of 7, it stands as a significant threat to adventurers, possessing a robust set of physical attributes and special abilities that enhance its combat effectiveness. The Sand Spider has a high Armor Class of 15 due to its natural armor, and its hit points, totaling 135, make it quite durable in battle. Its strengths lie in its powerful attacks, speed through burrowing, and camouflage in sandy environments, making it a very good ambusher. However, its weaknesses include low intelligence, charisma, and a lack of verbal communication, limiting its tactical depth.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Black Dragon Wyrmling (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>33</HP>
 <summary>The Black Dragon Wyrmling is a young, medium-sized dragon that possesses deadly abilities and a cunning nature. As a creature of the dark waters, it is both agile and formidable, capable of flight and swimming, which adds to its versatile combat strategies. With an Armor Class of 17, it can withstand a good amount of damage, while its Hit Points total 44, enabling it to endure in battle. This dragon has a Challenge Rating of 2, making it a moderate threat in encounters, providing 450 XP upon defeat. Notably, it has a damage immunity to acid, which makes it very resilient against certain types of attacks. Despite its vulnerabilities, it presents a significant challenge due to its combination of speed, stealth, and potent offensive capabilities, particularly its Acid Breath ability.</summary>
 
 <detail>

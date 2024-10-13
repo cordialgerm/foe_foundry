@@ -1,6 +1,8 @@
 <MonsterName/>Initiate of the Elder Elementals</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>33</HP>
 <summary>The Initiate of the Elder Elementals is a small humanoid creature associated with evil alignments, embodying the elemental forces of nature. With a Challenge Rating of 2, it is fairly powerful for its level, wielding both physical attacks and potent spells. This creature has a decent Armor Class of 12, which increases to 15 when utilizing the spell mage armor, making it reasonably hard to hit. It possesses 33 hit points, indicating moderate durability in combat. The Initiate is particularly strong in Intelligence and Constitution, which enhances its spellcasting and resilience against certain effects. However, its low Strength makes it physically weak, representing a significant vulnerability in melee engagements. Notably, it has several special abilities that provide it with unique advantages in battle, particularly when working alongside allies.</summary>
 
 <detail>

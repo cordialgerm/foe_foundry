@@ -1,6 +1,8 @@
 <MonsterName/>Daeodon</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Daeodon is a large, unaligned beast that serves as a formidable presence in any combat scenario. With substantial hit points and strong physical attributes, particularly its high Strength of 21 which provides it with a +5 modifier, it is capable of dealing significant damage. The creature has a decent Armor Class of 13, which gives it a good level of durability. However, it has poor Dexterity, which makes it less effective in avoiding attacks. The Daeodon's primary strengths lie in its powerful melee attacks and unique abilities that allow it to intimidate foes and absorb damage that would typically incapacitate lesser creatures. It is particularly noteworthy for its Relentless trait, enabling it to withstand serious injury and stay in the fight longer than average monsters. Despite its overwhelming physical abilities, its low Intelligence, Wisdom, and Charisma mean that it is not suited for social encounters or highly strategic play.</summary>
 
 <detail>

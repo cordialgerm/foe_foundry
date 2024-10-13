@@ -1,6 +1,8 @@
 <MonsterName/>Karkadann</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Karkadann is a formidable Huge monstrosity known for its impressive physical abilities and unique combat tactics. With an Armor Class of 15 due to its natural armor and a substantial pool of 157 hit points, it can withstand a considerable amount of damage before being taken down. The Karkadann's primary strengths lie in its melee attacks, which combine high damage output and the ability to grapple and restrain opponents. However, it does have weaknesses, particularly in saving throws against spells, though it does possess Magic Resistance which grants it advantage on such saves. Overall, its challenge rating of 7 indicates its capability to present a significant threat to adventurers, making it a notable creature in any encounter.</summary>
 
 <detail>

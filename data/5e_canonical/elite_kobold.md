@@ -1,6 +1,8 @@
 <MonsterName/>Elite Kobold</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>26</HP>
 <summary>The Elite Kobold is a small humanoid creature that embodies a cunning, resourceful, and tactical mindset typical of its kind. Operating under a lawful neutral alignment, the Elite Kobold often plays a supportive role in battles, using its skills and special abilities to aid allies and create strategic advantages. With a moderate Armor Class of 14, it is not particularly resilient but compensates with good mobility, stealth, and teamwork skills. However, it has sunlight sensitivity, which presents a significant weakness, as it hampers its abilities in bright environments. Overall, the Elite Kobold offers a mix of combat prowess and unique tactical benefits, making it a tricky adversary when encountered in groups.</summary>
 
 <detail>

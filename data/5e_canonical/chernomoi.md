@@ -1,6 +1,8 @@
 <MonsterName/>Chernomoi</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>32</HP>
 <summary>The Chernomoi is a tiny fey creature that embodies a versatile combination of cunning and magical abilities. With a neutral alignment, it plays a role that can be both mischievous and helpful, depending on the situation. The creature possesses a relatively high Armor Class of 14, bolstered by its substantial Hit Points of 32, which allows it to endure in combat. Its main strengths lie in agility and magical prowess, with an exceptional Dexterity score of 18, granting it a very good modifier of +4 for actions reliant on finesse and evasion. However, its Strength is notably low at 9, resulting in a very bad modifier of -1, meaning it struggles in physical confrontations where brute force is needed. The Chernomoi's challenge rating of 1 indicates that it poses a moderate threat to adventurers at its level, earning it 200 experience points when defeated.</summary>
 
 <detail>

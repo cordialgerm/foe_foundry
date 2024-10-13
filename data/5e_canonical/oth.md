@@ -1,6 +1,8 @@
 <MonsterName/>Oth</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>119</HP>
 <summary>Oth is a formidable Large Aberration with a lawful neutral alignment. This creature embodies both versatility and strength, making it a multifaceted opponent or ally depending on its chosen path. Oth has a solid armor class of 15 due to its natural armor and boasts a hefty 119 hit points, indicating it can withstand a good deal of damage in combat. With a challenge rating of 5, it poses a significant threat to parties of lower levels. Oth exhibits remarkable resilience with resistances to acid, cold, and fire damage, which gives it an edge in battles against spellcasters and elemental attacks. However, its Dexterity score is average at 10, which may limit its agility in evading attacks. Notably, Oth can choose to adopt the traits of either a Dripping Arcanist or a Paladin of Shoth, allowing it to either wield powerful magic or serve as a beacon of sacred light in battle.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Vallowex</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>123</HP>
 <summary>Vallowex is a large aberration with chaotic neutral alignment, designed to serve as a formidable challenge in combat and an eerie encounter for players. With a solid armor class of 14 due to its natural armor and a substantial pool of hit points totaling 123, the vallowex is resilient in battle. It combines aquatic and terrestrial movement, capable of swimming 30 feet and walking the same distance. The challenge rating of 7 indicates it can present a significant challenge to a party, earning 2,900 experience points upon defeat. Notably, the vallowex possesses an array of special abilities that can debilitate its foes while also utilizing effective offensive capabilities through its Multiattack action.</summary>
 
 <detail>

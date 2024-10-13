@@ -1,6 +1,8 @@
 <MonsterName/>Demon, Vetala</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>8</CR>
+<AC/>15</AC>
+<HP/>114</HP>
 <summary>The Vetala is a medium-sized fiend embodying chaotic evil, known for its sinister connection to death and undeath. This demon possesses exceptional agility and resilience with a high Dexterity and Constitution, along with a robust ability to resist magical effects due to its Magic Resistance feature. The Vetala serves as an efficient summoner of undead, able to raise corpses to do its bidding and bolster its forces. Weak against radiant damage, the Vetala thrives in darkness and graveyards, moving effortlessly through such terrain and controlling undead minions with deadly efficiency. It challenges adventurers with its ability to deal both slashing and necrotic damage, making it a formidable foe in combat.</summary>
 
 <detail>

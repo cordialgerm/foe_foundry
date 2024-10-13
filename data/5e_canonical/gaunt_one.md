@@ -1,6 +1,8 @@
 <MonsterName/>Gaunt One</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Gaunt One is a Medium aberration with a neutral evil alignment, primarily serving as a menacing opponent in combat. It possesses a strong offensive capability and can inflict significant damage on its foes, while also demonstrating a good degree of resilience through its decent hit points and natural armor. One of its notable strengths is its ability to grapple and execute a devastating finishing move by extracting the heart of a grappled target. However, its low Charisma makes it ineffective in social interactions, and although its perception is enhanced by keen hearing, it lacks versatility outside of combat.</summary>
 
 <detail>

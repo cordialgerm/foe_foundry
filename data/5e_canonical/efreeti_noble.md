@@ -1,6 +1,8 @@
 <MonsterName/>Efreeti Noble</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>11</CR>
+<AC/>17</AC>
+<HP/>344</HP>
 <summary>The Efreeti Noble is a powerful Large Elemental creature with a strong presence on the battlefield. It boasts a high Armor Class of 17 and a substantial pool of Hit Points totaling 344, making it resilient in combat. Its challenge rating of 11 indicates that it is a formidable opponent for adventurers and can deal significant damage while maintaining a good level of defense. The Efreeti Noble is characterized by its impressive Strength and Constitution, both having a value of 22, translating to a +6 modifier, which is very good. It also has high Dexterity (18, +4), enabling it to agilely evade attacks. Furthermore, its innate spellcasting ability, fueled by a Charisma modifier of +3, allows for additional versatility, enabling it to cast multiple spells without the need for material components. Its weakness lies in its lack of defensive immunities aside from fire, which does provide some vulnerability against non-fire-related damage types. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Malmbjorn</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>218</HP>
 <summary>The Malmbjorn is a huge monstrosity that operates outside of any alignment, making it unpredictable in its behaviors. With an impressive armor class of 18 due to its natural armor and a significant pool of hit points totaling 218, the Malmbjorn is a durable opponent on the battlefield, capable of withstanding substantial damage. It boasts high strength (24) and good constitution (20), making it exceptionally effective in melee combat, while its intelligence is very low (3), limiting its capacity for complex strategies. The creature is noted for its unique abilities, including its keen sense of smell and ability to burrow through solid rock, which contribute to its effectiveness as a predator. However, it has vulnerabilities, particularly to acid damage, and it is immune to cold damage, although it only resists nonmagical bludgeoning, piercing, and slashing attacks. </summary>
 
 <detail>

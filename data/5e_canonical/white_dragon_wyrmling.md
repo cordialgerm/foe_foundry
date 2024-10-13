@@ -1,6 +1,8 @@
 <MonsterName/>White Dragon Wyrmling (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>32</HP>
 <summary>The White Dragon Wyrmling is a Medium-sized dragon distinguished by its icy abilities and formidable presence. With an Armor Class of 16 and 45 Hit Points, it has a respectable defensive capacity and can shrug off damage thanks to its cold immunity. While its powers place it at a Challenge Rating of 2, which indicates it can pose a significant threat to low-level adventurers, the creature also exhibits weaknesses typical of its youth, particularly in its mental attributes. It excels in stealthy combat due to its decent Dexterity, and its special abilities enable it to maneuver effortlessly through icy terrains, making it a potent foe in cold environments.</summary>
 
 <detail>

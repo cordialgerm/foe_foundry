@@ -1,6 +1,8 @@
 <MonsterName/>Breathstealer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (leather armor)</AC>
+<HP/>99</HP>
 <summary>The Breathstealer is a Medium-sized humanoid creature of any non-good alignment, known for its cunning and psychic abilities. With an armor class of 15, it is relatively well-protected, and its substantial hit points total of 99 makes it durable in combat. The Breathstealer possesses a high Dexterity score of 18, granting it a good modifier of +4, which enhances its agility and evasiveness. It can deliver powerful psychic damage, making it a notable threat, especially with its ability to manipulate opponents' perceptions of suffocation. While it has average physical attributes like Strength and Constitution, its primary strength lies in its psychic abilities and high Dexterity. However, it lacks exceptional mental capabilities, as seen in its average Intelligence. </summary>
 
 <detail>

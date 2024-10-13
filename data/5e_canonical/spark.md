@@ -1,6 +1,8 @@
 <MonsterName/>Spark</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>7</CR>
+<AC/>15</AC>
+<HP/>104</HP>
 <summary>The Spark is a Tiny elemental creature with a Chaotic Neutral alignment, making it unpredictable and tricky in encounters. With a challenge rating of 7, it poses a moderate threat to adventurers, primarily due to its speed, lightning damage abilities, and powerful inhabitants attack. It has a good Armor Class of 15 and a considerable pool of hit points at 104, allowing it to endure in battle. Its high Dexterity of 20 provides a very good bonus, making it nimble and difficult to hit, while its Constitution of 18 gives it solid resilience. The Spark has specific immunities and resistances, particularly to lightning and to most forms of physical nonmagical damage, which makes it especially tough against melee attackers. While its strength is notably low, limiting its physical prowess, it compensates with impressive spell-like abilities, especially in combat scenarios.</summary>
 
 <detail>

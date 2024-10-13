@@ -1,6 +1,8 @@
 <MonsterName/>Young Emerald Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>17</AC>
+<HP/>133</HP>
 <summary>The Young Emerald Dragon is a formidable and intelligent creature, standing as a powerful and cunning adversary in any D&D campaign. As a Large Dragon, it possesses a strong presence on the battlefield, complemented by a high Armor Class of 17, making it adept at avoiding attacks. With a total of 133 hit points, it can withstand significant damage before being defeated. This dragon's Challenge Rating of 9 indicates that it poses a considerable threat to adventurers, offering 5,000 XP upon defeat. The Young Emerald Dragon excels in a variety of physical and mental capabilities, boasting strong Strength, Dexterity, and Intelligence scores, all of which contribute to its effectiveness in combat and strategic planning. However, it does have vulnerabilities, particularly against magical attacks that are not of the psychic or thunder types, as it only resists these damage types. </summary>
 
 <detail>

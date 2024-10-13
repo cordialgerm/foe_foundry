@@ -1,6 +1,8 @@
 <MonsterName/>Chimera</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Chimera is a fearsome, three-headed monstrosity with the body of a lion, the wings of a dragon, and a serpent's tail. Each of its three heads—lion, goat, and dragon—acts independently, attacking with savage force. The lion head bites and claws at its prey, while the dragon head breathes fire, and the goat head charges and rams. Chimeras are territorial predators, often lairing in remote mountain caves or desolate regions. They are chaotic and aggressive, attacking anything that enters their domain. Their ability to fly makes them even more dangerous, as they can strike from above.</summary>
 
 <summary>The Chimera is a large monstrosity with a fearsome presence that stands out in combat with its unique multi-headed anatomy. With an armor class of 13, it can withstand a fair amount of damage, while its substantial hit points of 114, derived from rolling 12d10 plus a substantial constitution modifier of +4, give it good durability for sustained encounters. The Chimera's challenge rating of 7 indicates that it presents a moderate difficulty for adventurers, providing 2,900 experience points upon defeat. In terms of mobility, it possesses a walking speed of 30 feet and the ability to fly at a speed of 60 feet, allowing it to maneuver effectively in diverse terrains. However, its low intelligence score of 3 (-4 modifier) indicates poor tactical awareness and problem-solving ability, despite its very good physical attributes.</summary>

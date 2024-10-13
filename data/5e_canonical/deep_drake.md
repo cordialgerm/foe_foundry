@@ -1,6 +1,8 @@
 <MonsterName/>Deep Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Deep Drake is a formidable Large Dragon embodying chaotic evil. With a challenge rating of 9, it presents a significant threat to adventurers, boasting high durability with an armor class of 17 and a substantial pool of 150 hit points. This drake thrives in chaotic environments, wielding impressive physical attacks and devastating magical capabilities. Its strengths include high physical attributes, particularly in Strength and Dexterity, allowing for strong melee attacks. However, it suffers from sunlight sensitivity, which hinders its performance when exposed to bright light. The Deep Drake is particularly dangerous due to its powerful abilities that can stun opponents and inflict necrotic damage, making it a fearsome adversary.</summary>
 
 <detail>

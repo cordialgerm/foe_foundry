@@ -1,6 +1,8 @@
 <MonsterName/>Divi</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>11</CR>
+<AC/>18</AC>
+<HP/>172</HP>
 <summary>The Divi is a large elemental creature known for its formidable physical presence and unique abilities related to earth and stone manipulation. With an impressive Armor Class of 18 and a substantial pool of 172 hit points, the Divi can endure significant damage in combat. It boasts high Strength and Constitution scores, allowing it to deal and withstand heavy damage effectively. However, its Intelligence, Wisdom, and Charisma are notably low, which limits its skillful interactions and magical prowess. The Divi excels in melee combat, utilizing two main attack options: the Crushing Hand and the Stone Club, both of which deliver substantial damage. Its Earth Glide ability enhances its mobility by allowing it to burrow through terrain without any disturbance, making it an unpredictable threat. Additionally, its innate spellcasting provides versatility, enabling strategic plays in various situations, particularly with spells like creation and move earth. Overall, the Divi is a powerful combatant with excellent resistances and immunities, particularly against conditions such as petrification, but with limited interaction options due to lower mental attributes.</summary>
 
 <detail>

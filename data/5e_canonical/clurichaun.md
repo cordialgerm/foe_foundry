@@ -1,6 +1,8 @@
 <MonsterName/>Clurichaun</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>22</HP>
 <summary>The Clurichaun is a tiny fey creature embodying a chaotic neutral alignment. Known for its mischievous and unpredictable nature, it holds a unique position as an entertainer and trickster within the fey realm. With a challenge rating of 1/4, the Clurichaun may initially seem weak, but its strengths lie in its cleverness and magical prowess. With a solid Armor Class of 14 thanks to its special ability, Clurichaun’s Luck, and a decent pool of hit points totaling 22, it can hold its ground in skirmishes. The creature has a well-rounded array of abilities that make it both a nuisance in combat and a potential ally under the right circumstances. However, its physical attributes are fairly average, and it relies heavily on its Charisma for both defense and attacking options.</summary>
 
 <detail>

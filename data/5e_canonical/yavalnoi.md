@@ -1,6 +1,8 @@
 <MonsterName/>Yavalnoi</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Yavalnoi is a large aberration with chaotic evil tendencies, known for its aquatic nature and its ability to manipulate water. It possesses a solid armor class of 16, long-range swimming capabilities, and a substantial hit point pool of 126, making it a formidable foe in underwater or coastal encounters. With a challenge rating of 6, it represents a significant threat to adventurers, particularly due to its strong physical attacks and potent spellcasting abilities. The Yavalnoi's strengths lie in its damage resilience against cold and its powerful multiattack, while its weaknesses include a limited movement speed on land. Additionally, its capacity to summon allies and control the environment enhances its combat effectiveness, providing both offensive and tactical advantages.</summary>
 
 <detail>

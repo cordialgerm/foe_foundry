@@ -1,6 +1,8 @@
 <MonsterName/>Firegeist</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>82</HP>
 <summary>The Firegeist is a small, neutral evil elemental creature that embodies the essence of fire, using its abilities to inflict fear and flame-based damage. With an Armor Class of 14 and 82 hit points, it falls into the challenge rating 2 category, presenting a moderate threat to adventurers. The Firegeist exhibits distinctive strengths such as high Dexterity and Wisdom, allowing it to be agile and perceptive, while being immune to fire and poison damage. However, it is weaker in terms of Strength and Intelligence, making it less effective in physical combat and problem-solving scenarios. Notable traits of the Firegeist include its ability to thrive in fiery environments, its sensitivity to magical light, and its vulnerability to water.</summary>
 
 <detail>

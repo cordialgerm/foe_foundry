@@ -1,6 +1,8 @@
 <MonsterName/>Horde Demon</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Horde Demon is a Medium-sized fiend characterized by its chaotic and evil nature. With an Armor Class of 13 and 52 hit points, it is moderately resilient and can withstand a fair amount of combat. The demon has a challenge rating of 3, signifying it poses a moderate threat to adventurers, and it grants 700 XP upon defeat. Notably, this fiend can adopt numerous attack patterns thanks to its Varied Shapes ability, allowing for a diverse arsenal in battle that can adapt to different scenarios. However, it has some weaknesses, particularly to radiant damage while bloodied, which can instigate fear. The creature's damage immunities include poison, while it resists cold, fire, lightning damage, and damage from nonmagical weapons. </summary>
 
 <detail>

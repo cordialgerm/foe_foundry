@@ -1,6 +1,8 @@
 <MonsterName/>Remorhaz Spawn</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>95</HP>
 <summary>The Remorhaz Spawn is a formidable large monstrosity primarily known for its ability to inflict significant damage through both physical and fiery attacks. With a challenge rating of 5, this creature has substantial hit points, making it a resilient opponent in combat. It possesses impressive strength and constitution scores, enabling it to deal heavy damage and withstand considerable punishment. While its intelligence, charisma, and dexterity scores are average at best, the Remorhaz Spawn compensates for these weaknesses with its powerful melee attacks and the heated body trait, which can deter attackers who engage it in close combat. Its dual immunities to cold and fire damage further emphasize its resilience, making it a challenging foe for adventurers.</summary>
 
 <detail>

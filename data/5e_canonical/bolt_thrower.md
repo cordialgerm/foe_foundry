@@ -1,6 +1,8 @@
 <MonsterName/>Bolt-Thrower</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>44</HP>
 <summary>The Bolt-Thrower is a small construct designed for ranged combat, functioning effectively as a turret-like guardian on the battlefield. With an armor class of 14 and hit points totaling 44, it is moderately durable for its challenge rating of 2, making it a viable opponent for lower-level adventurers. The creature excels in dexterity, boasting a +3 modifier, which allows it to perform well in ranged attacks without suffering penalties from close combats due to its unique ability, Clockwork Sights. However, its strength is alarmingly low at -2, ranking it as very bad, making it ineffective in melee situations. Its low intelligence, wisdom, and charisma also limit its ability to engage in complex interactions or tactics. Still, thanks to its damage immunities to poison and psychic, as well as several condition immunities, the Bolt-Thrower is a reliable and resilient foe.</summary>
 
 <detail>

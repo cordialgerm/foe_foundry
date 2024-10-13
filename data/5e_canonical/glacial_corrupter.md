@@ -1,6 +1,8 @@
 <MonsterName/>Glacial Corrupter</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>34</HP>
 <summary>The Glacial Corrupter is a formidable undead creature characterized by its medium size and lawful evil alignment. This monster possesses a unique blend of offensive capabilities and resilience, making it a noteworthy opponent for adventurers. With an Armor Class of 15 and a substantial pool of Hit Points totaling 34, it can endure a fair amount of damage while dealing consistent harm through its melee and ranged attacks. The Glacial Corrupter is imbued with chilling cold powers that inflict ongoing damage and can potentially transform victims into undying versions of itself, adding a level of threat to encounters. However, it has significant weaknesses stemming from its low Intelligence, Wisdom, and Charisma, rendering it less effective in mental contests and social interactions.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Soul Eater</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>7</CR>
+<AC/>16</AC>
+<HP/>105</HP>
 <summary>The Soul Eater is a formidable medium-sized fiend with a neutral evil alignment, embodying elements of horror and malice in its design. Known for its capacity to consume souls, it thrives on inflicting psychic damage while remaining resilient against a variety of attacks. The creature boasts a solid Armor Class of 16 and possesses 105 hit points derived from a robust pool of 14d8 plus 42, making it challenging for players to defeat. Its main strengths include high Dexterity, enabling a good attack modifier of +6 and exceptional Stealth capabilities with a +9 modifier, allowing it to approach unsuspecting foes. Conversely, its weaknesses lie in its reliance on physical attacks and the vulnerability to radiant damage. The Soul Eater’s challenge rating of 7 indicates that it should provide a moderately difficult combat encounter for a party of adventurers.</summary>
 
 <detail>

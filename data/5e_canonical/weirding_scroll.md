@@ -1,6 +1,8 @@
 <MonsterName/>Weirding Scroll</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>27</HP>
 <summary>The Weirding Scroll is a tiny, unaligned construct that possesses unique magical abilities, making it a fascinating creature in Dungeons & Dragons. It has low defensive capabilities, reflected in its Armor Class of 10, and a moderate pool of Hit Points totaling 27, utilizing a roll of six four-sided dice plus twelve for calculated resilience. Its challenge rating of 1/2 indicates that it is a relatively low threat compared to more formidable foes, providing only 100 experience points upon defeat. The Weirding Scroll can fly, albeit slowly at a speed of 10 feet, but cannot walk, revealing its reliance on its magical properties rather than physical movement. </summary>
 
 <detail>

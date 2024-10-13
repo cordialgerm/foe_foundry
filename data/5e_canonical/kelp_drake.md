@@ -1,6 +1,8 @@
 <MonsterName/>Kelp Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>60</HP>
 <summary></summary>
 
 <detail></detail>

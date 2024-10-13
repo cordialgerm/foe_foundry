@@ -1,6 +1,8 @@
 <MonsterName/>Dread Examiner</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>21</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>322</HP>
 <summary>The Dread Examiner is a large aberration with a neutral evil alignment, presenting a formidable presence in any encounter. With an impressive armor class of 19 and a staggering 322 hit points, this creature is built to withstand significant damage while dealing out formidable attacks. It boasts exceptional intelligence and charisma, making it not only a powerful physical adversary but also a master of manipulation and strategic planning. Its exceptional spellcasting abilities complement its physical prowess, allowing it to dominate both in melee and ranged combat. However, the Dread Examiner does have its weaknesses; it has limited effectiveness against magical attacks, despite its magic resistance, and relies heavily on its psychic abilities for reconnaissance and manipulation.</summary>
 
 <detail>

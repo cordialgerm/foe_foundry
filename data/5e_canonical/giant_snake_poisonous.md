@@ -1,6 +1,8 @@
 <MonsterName/>Snake, Giant Poisonous</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>14</HP>
 <summary>The Giant Poisonous Snake is a medium-sized beast that poses a significant danger despite its relatively low challenge rating of 1/4, making it suitable for lower-level encounters. It is agile, capable of swimming, and has decent stealth capabilities, making it effective in ambush situations. The snake has moderate hit points at 14 but its armor class is only 12, indicating it can be hit with average attack rolls. Its main strengths lie in its poisonous bite, which can incapacitate foes if they fail to resist the toxic effects. However, its physical strength is low, and it has no intelligence or charisma, making it reliant on its natural attacks and ambush tactics.</summary>
 
 <detail>

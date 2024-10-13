@@ -1,6 +1,8 @@
 <MonsterName/>Wind Eater</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>65</HP>
 <summary>The Wind Eater is a formidable Medium Undead creature characterized by its lawful evil alignment. It serves as a stealthy and cunning threat, employing its high Dexterity and powerful magical abilities to manipulate its environment and disorient foes. With an Armor Class of 14 and 65 hit points, the Wind Eater possesses decent durability for a creature of its level, categorized with a challenge rating of 2, making it an appropriate challenge for low- to mid-level adventurers. Notably, the Wind Eater has a range of resistances and immunities, making it difficult to damage with ordinary attacks, while its ability to become invisible and silence its surroundings adds to its tactical prowess in combat scenarios.</summary>
 
 <detail>

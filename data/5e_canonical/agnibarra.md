@@ -1,6 +1,8 @@
 <MonsterName/>Agnibarra</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>39</HP>
 <summary>The Agnibarra is a Small Monstrosity with a chaotic neutral alignment. This creature is characterized by its fiery nature and is particularly notable for its ability to inflict significant fire damage to its opponents both directly and indirectly. With an Armor Class of 12, the Agnibarra is reasonably easy to hit, but it compensates for this with relatively high hit points totaling 39, making it a moderate threat in combat. Its strengths lie in its fire-based abilities, which can ignite enemies and cause ongoing damage, while its vulnerabilities to cold damage hinder its resilience against certain attacks. Its challenge rating of 1 suggests it is an appropriate foe for a party of lower-level adventurers, rewarding them with 200 experience points upon defeat.</summary>
 
 <detail>

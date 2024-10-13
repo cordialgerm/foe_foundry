@@ -1,6 +1,8 @@
 <MonsterName/>Akanka</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>45</HP>
 <summary>The Akanka is a medium-sized fey creature with a chaotic evil alignment. It serves as a cunning and deceptive opponent in combat, utilizing its unique abilities to manipulate its environment and confound enemies. With moderate defenses, represented by an Armor Class of 12, and a decent pool of hit points totaling 45, the Akanka can sustain itself in battle while inflicting significant disruptions. It possesses a blend of magical and physical combat capabilities, thus being particularly dangerous in its ability to control engagements through illusions and incapacitation. However, its reliance on visual-based abilities means it can be challenged by foes that negate or diminish its sight, making it somewhat vulnerable to clever tactics that deny it its preferred methods of attack.</summary>
 
 <detail>

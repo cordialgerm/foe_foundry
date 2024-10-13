@@ -1,6 +1,8 @@
 <MonsterName/>Shadow River Lord</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>135</HP>
 <summary>The Shadow River Lord is a formidable creature classified as a Medium Undead with a neutral evil alignment. Possessing significant strengths, this creature excels in both melee and ranged combat, utilizing its unique abilities to impose debilitating effects on its foes. It boasts a high Armor Class of 16 due to its natural armor and has a substantial pool of Hit Points totaling 135, representing a good level of endurance in battle. However, its effectiveness is tempered by weaknesses to radiant and force damage, which are not explicitly mentioned but typically have a notable impact against undead entities. The Shadow River Lord’s mobility is exceptional, as it can swim at a speed of 60 feet and walk at 30 feet, enhancing its tactical positioning in various environments, particularly aquatic settings.</summary>
 
 <detail>

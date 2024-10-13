@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Wind Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>21</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>351</HP>
 <summary>The Ancient Wind Dragon is a gargantuan, chaotic neutral dragon that embodies the destructive force of storms and winds. With a formidable challenge rating of 21, this creature is capable of dealing massive damage and has high durability with 351 hit points. It possesses exceptional strength, constitution, and charisma, making it a threat in both physical combat and social encounters. The dragon's abilities allow it to maneuver swiftly across the battlefield, avoiding hazards while unleashing devastating attacks on its enemies. Its major strengths include high damage output through its multiattack options, immunity to lightning damage, and significant control over the battlefield with abilities like Frightful Presence and Tempest Breath. However, as a highly powerful creature, it may struggle against coordinated efforts from multiple foes seeking to exploit its few weaknesses.</summary>
 
 <detail>

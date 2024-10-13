@@ -1,6 +1,8 @@
 <MonsterName/>Ur-Otyugh</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>10</CR>
+<AC/>14</AC>
+<HP/>144</HP>
 <summary>The Ur-Otyugh is a large aberration that serves as a formidable foe in combat, typically encountered in environments such as underground lairs and polluted waters. It boasts a strong physical presence with a formidable armor class of 14, allowing it to withstand attacks from players. With 144 hit points, derived from a combination of 17d10 plus 51, it has a solid endurance, making it a challenging opponent. Although its Dexterity score is average at 10, the Ur-Otyugh excels in Strength and Constitution, with scores of 16, giving it a good modifier of +3. This translates to a very good effectiveness in grappling and resisting physical effects. However, the creature's Intelligence, Charisma, and Wisdom scores are relatively low, indicating that it may not be the most strategic or charismatic foe—this could be exploited during interactions or by spellcasters. It has a challenge rating of 10, which suggests it is suitable for encounters with a party of around five moderately experienced adventurers.</summary>
 
 <detail>

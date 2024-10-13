@@ -1,6 +1,8 @@
 <MonsterName/>Eala</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>40</HP>
 <summary>The Eala is a small, unaligned monstrosity known for its agility and fiery breath, making it a formidable opponent despite its less impressive physical stature. With an Armor Class of 15, it benefits from natural armor, providing good defense against attacks. It has 40 hit points, which is average for its challenge rating of 2, indicating it can endure some damage in combat. Notably, the Eala is quick on its feet with a walking speed of 60 feet and also has the ability to fly, albeit at a more limited speed of 10 feet. It possesses exceptional Dexterity, with a modifier of +3, allowing it to be effective in dodging attacks and executing its own. However, it struggles with its Intelligence, providing a very bad score of -4, which limits its ability to engage in complex strategies.</summary>
 
 <detail>

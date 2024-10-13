@@ -1,6 +1,8 @@
 <MonsterName/>Kalke</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>18</HP>
 <summary>The Kalke is a small fiend with a neutral evil alignment that excels in stealth and cunning. With a challenge rating of 1/4, it poses a minor threat to adventurers but can still surprise them with its magical abilities and agility. With a decent Dexterity score, the Kalke is quite nimble, allowing it to evade attacks and slip away when the situation grows dire. However, its other attributes show some weaknesses, such as low Strength and Wisdom, making it less effective in direct confrontation. It showcases notable strengths in magic resistance and can sense magical activity, potentially giving it an advantage in magical settings. Overall, the Kalke serves as a mischievous foe or an opportunistic ally within campaigns.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Blemmyes</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Blemmyes is a large monstrosity characterized by its chaotic evil alignment and formidable presence on the battlefield. With a strong build and a variety of attacking options, it poses a serious threat to adventurers. Its notable strengths include high hit points, impressive melee damage capabilities, and the ability to incapacitate foes. The Blemmyes has exceptional physical attributes, particularly in Strength and Constitution, which enhance its combat effectiveness. However, it suffers from very low Intelligence, Wisdom, and Charisma, which can limit its tactical options and ability to interact socially. It is important to note that the Blemmyes can be dangerously compelled to attack incapacitated creatures due to its Carnivorous Compulsion ability, which can lead to devastating ambushes.</summary>
 
 <detail>

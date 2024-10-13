@@ -1,6 +1,8 @@
 <MonsterName/>Eater of Dust</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Eater of Dust is a Medium aberration characterized by its neutral evil alignment. It operates as a formidable adversary in combat, showcasing an impressive combination of physical and spellcasting capabilities. This creature possesses high armor class and hit points, making it resilient in battle. Its strengths lie in strong melee attacks that inflict both piercing and necrotic damage, along with the ability to regenerate health each turn. It is especially dangerous due to its capacity to diminish its opponents' hit point maximum, a feature that can potentially lead to a quick downfall for ill-prepared characters. However, it has weaknesses, including vulnerabilities to fire damage which temporarily negates its regenerative abilities.</summary>
 
 <detail>

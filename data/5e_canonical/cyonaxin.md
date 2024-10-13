@@ -1,6 +1,8 @@
 <MonsterName/>Cyonaxin</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>8</CR>
+<AC/>16</AC>
+<HP/>117</HP>
 <summary>Cyonaxin is a medium-sized celestial creature with a chaotic good alignment, serving as a protector and ally to those in need. It possesses excellent mobility, with a walking speed of 50 feet and a swimming speed of 20 feet, allowing it to maneuver effectively in various environments. With a high Armor Class of 16 and substantial hit points totaling 117, Cyonaxin can withstand considerable damage. Its challenge rating of 8 indicates it is a formidable foe, granting 3,900 experience points upon defeat. Cyonaxin excels in both melee and utility roles in combat thanks to its magical attacks and powerful abilities, although it is primarily designed to support and uplift allies in battle.</summary>
 
 <detail>

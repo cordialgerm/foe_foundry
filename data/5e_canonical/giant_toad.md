@@ -1,6 +1,8 @@
 <MonsterName/>Giant Toad</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>39</HP>
 <summary>A Giant Toad is a large, amphibious predator that lives near swamps, ponds, and other bodies of water. Its rough, warty skin provides camouflage in its natural habitat, and its long, sticky tongue allows it to snatch prey from a distance. Giant Toads can swallow smaller creatures whole, digesting them slowly within their massive bellies. They are excellent swimmers and often ambush prey by hiding just beneath the water's surface. Though not aggressive unless provoked, Giant Toads can be dangerous to smaller creatures, and their size makes them formidable in combat.</summary>
 
 <summary>The Giant Toad is a Large Beast known for its formidable swamp-based capabilities. With an Armor Class of 11, it is not particularly tough defensively, but its 33 hit points provide a decent buffer against attacks. Its role in combat often revolves around grappling and swallowing smaller prey, making it a dangerous foe for unprepared adventurers. The toad's swimming speed of 40 feet gives it an advantage in aquatic environments, while its movement on land is limited to 20 feet, making it slower on dry ground. The creature has an overall challenge rating of 1, indicating it can provide a moderate challenge for low-level adventurers. Notably, its ability to grapple and swallow opponents makes it a unique threat, especially when using its Vaulting Leap to surprise foes.</summary>

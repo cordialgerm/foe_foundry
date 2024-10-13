@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Mandriano</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Ancient Mandriano is a formidable creature in the Dungeons & Dragons universe, classified as a Huge Plant with a lawful evil alignment. It possesses a high Armor Class of 14 due to its natural armor and robust hit points totaling 102, which makes it a challenging adversary for players. With a Challenge Rating of 8 and yielding 3,900 experience points upon defeat, it proves to be a significant threat, especially in terms of its unique capabilities in combat. This creature's strengths lie in its impressive physical attacks and its ability to manipulate life and death, making it a dangerous foe. However, it is vulnerable to fire damage, and its low Dexterity renders it less agile than other creatures, making its movements slightly predictable.</summary>
 
 <detail>

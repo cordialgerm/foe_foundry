@@ -1,6 +1,8 @@
 <MonsterName/>Wrackwraith</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>The Wrackwraith is a medium-sized undead creature characterized by its neutral evil alignment. It serves as an antagonist in combat scenarios due to its unique abilities to manipulate its environment and combat various foes. With a decent Armor Class of 13 and a total of 45 hit points, the Wrackwraith can be challenging for parties of lower levels. Its mobility is noteworthy, as it can walk 30 feet and fly the same distance, giving it an edge in both positioning and evasion. The creature operates at a challenge rating of 3, making it a formidable opponent for adventurers seeking to test their skills. One of its most interesting aspects is its ability to animate piles of debris, allowing it to protect itself while engaging its foes with necrotic attacks, making it both a powerful offensive and defensive entity.</summary>
 
 <detail>

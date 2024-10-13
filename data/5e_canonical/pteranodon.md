@@ -1,6 +1,8 @@
 <MonsterName/>Pteranodon</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>13</HP>
 <summary>The Pteranodon is a large beast resembling a prehistoric flying reptile. In the game, it serves as a nimble aerial threat with the ability to swoop down on unsuspecting prey and retreat without suffering attacks. With an Armor Class of 13, it is relatively resilient but not exceptionally tough, boasting 30 hit points, which gives it decent durability for a creature of its type. The Pteranodon has a Challenge Rating of 1/2, indicating that it poses a moderate challenge to low-level adventurers. Its strengths lie in its flying speed of 60 feet, allowing for quick movement in combat and strategic advantage over grounded opponents. However, its low intelligence and charisma scores indicate that it is not particularly adept in social interactions or problem-solving situations.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Grimalkin</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>22</HP>
 <summary>The Grimalkin is a Medium monstrosity known for its cunning and agility. It has a Challenge Rating of 1/2, making it a relatively weak adversary for adventurers, but it compensates for its lack of raw strength with speed and versatility. Its moderate Armor Class of 13 provides some protection, while its hit points total 22, which allows it to withstand a few hits in combat. Grimalkins are particularly stealthy creatures, exhibiting good Dexterity and a strong inclination for stealth and perception checks. Noteworthy is its ability to shift forms between a small cat and a larger panther, granting it strategic advantages in various situations. However, its Intelligence is very low, leading to a major weakness in complex interactions and spellcasting.</summary>
 
 <detail>

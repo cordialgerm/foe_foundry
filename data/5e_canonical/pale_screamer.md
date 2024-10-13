@@ -1,6 +1,8 @@
 <MonsterName/>Pale Screamer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Pale Screamer is a Medium Aberration known for its neutral evil alignment, characterized by both its physical prowess and disturbing capabilities. With an Armor Class of 14 and a total of 52 hit points, it presents a reasonable challenge for lower-level adventurers. It can swim and walk at a speed of 30 feet, making it quite versatile in different environments. The creature has a Challenge Rating of 3, granting it 700 experience points upon defeat. Its strength lies in its physical attacks and its powerful scream, but it suffers from low intelligence and charisma, which may limit its social interactions and cunning strategies.</summary>
 
 <detail>

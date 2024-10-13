@@ -4,7 +4,6 @@ import numpy as np
 
 from foe_foundry.creature_types import CreatureType
 
-from .data import CanonicalMonster
 from .load import get_canonical_monsters, name_to_key
 
 # try to embed the monster roles from FoF and find similar and different creatures
@@ -219,11 +218,13 @@ class SrdMonsterSelector:
             CreatureType.Undead: [CreatureType.Fiend, CreatureType.Construct],
         }
 
-    def random_positive_negative_triplet(self) -> tuple[str, str, str]:
+    def random_positive_negative_triplet(self) -> list[tuple[str, str, str, str]]:
         anchor = self._choose(self.keys)
-        return self.get_positive_negative_triplet(anchor)
+        return self.get_positive_negative_triplets(anchor)
 
-    def get_positive_negative_triplet(self, anchor: str) -> tuple[str, str, str]:
+    def get_positive_negative_triplets(
+        self, anchor: str
+    ) -> list[tuple[str, str, str, str]]:
         try:
             anchor = name_to_key(anchor)
             anchor_monster = self.srd_monsters[anchor]
@@ -251,18 +252,42 @@ class SrdMonsterSelector:
                     keys.update(k for k in self.lineages[lineage] if k != anchor)
                 return self._choose(list(keys))
 
-            if len(lineages) == 0:
-                similar = _similar_ct()
-                dissimilar = _dissimilar_ct()
-                return anchor, similar, dissimilar
-            else:
-                if self.rng.random() <= 0.5:
-                    similar = _similar_ct()
-                else:
-                    similar = _similar_lineage()
+            def _similar_cr():
+                keys = self._similar_cr(anchor_monster.cr, {anchor})
+                return self._choose(keys)
 
-                dissimilar = _dissimilar_ct()
-                return anchor, similar, dissimilar
+            def _dissimlar_cr():
+                keys = self._dissimilar_cr(anchor_monster.cr, {anchor})
+                return self._choose(keys)
+
+            def _similar_ac():
+                keys = self._similar_ac(anchor_monster.ac, {anchor})
+                return self._choose(keys)
+
+            def _dissimilar_ac():
+                keys = self._dissimilar_ac(anchor_monster.ac, {anchor})
+                return self._choose(keys)
+
+            def _similar_hp():
+                keys = self._similar_hp(anchor_monster.hp, {anchor})
+                return self._choose(keys)
+
+            def _dissimilar_hp():
+                keys = self._dissimilar_hp(anchor_monster.hp, {anchor})
+                return self._choose(keys)
+
+            results = []
+            results.append((anchor, _similar_ct(), _dissimilar_ct(), "creature_type"))
+            results.append((anchor, _similar_ac(), _dissimilar_ac(), "ac"))
+            results.append((anchor, _similar_hp(), _dissimilar_hp(), "hp"))
+            results.append((anchor, _similar_cr(), _dissimlar_cr(), "cr"))
+            if len(lineages):
+                results.append(
+                    (anchor, _similar_lineage(), _dissimilar_ct(), "lineage")
+                )
+
+            return results
+
         except Exception as x:
             raise ValueError(f"Error getting triplet for {anchor}") from x
 
@@ -297,6 +322,48 @@ class SrdMonsterSelector:
         exclusions = self._similar_creature_types(
             ct, include_self=True, exclude_keys=exclude_keys
         )
+        keys = all_keys - set(exclusions)
+        return list(keys)
+
+    def _similar_ac(self, ac: int, exclude_keys: set[str]) -> list[str]:
+        def is_similar(ac1: int, ac2: int):
+            return abs(ac1 - ac2) <= 1
+
+        keys = {k for k, m in self.srd_monsters.items() if is_similar(ac, m.ac)}
+        keys = keys - exclude_keys
+        return list(keys)
+
+    def _dissimilar_ac(self, ac: int, exclude_keys: set[str]) -> list[str]:
+        all_keys = set(self.srd_monsters.keys())
+        exclusions = self._similar_ac(ac, exclude_keys)
+        keys = all_keys - set(exclusions)
+        return list(keys)
+
+    def _similar_hp(self, hp: int, exclude_keys: set[str]) -> list[str]:
+        def is_similar(hp1: int, hp2: int):
+            if min(hp1, hp2) <= 10:
+                return abs(hp1 - hp2) <= 2
+            else:
+                return abs(hp1 - hp2) / min(hp1, hp2) <= 0.15
+
+        keys = {k for k, m in self.srd_monsters.items() if is_similar(hp, m.hp)}
+        keys = keys - exclude_keys
+        return list(keys)
+
+    def _dissimilar_hp(self, hp: int, exclude_keys: set[str]) -> list[str]:
+        all_keys = set(self.srd_monsters.keys())
+        exclusions = self._similar_hp(hp, exclude_keys)
+        keys = all_keys - set(exclusions)
+        return list(keys)
+
+    def _similar_cr(self, cr: str, exclude_keys: set[str]) -> list[str]:
+        keys = {k for k, m in self.srd_monsters.items() if m.cr == cr}
+        keys = keys - exclude_keys
+        return list(keys)
+
+    def _dissimilar_cr(self, cr: str, exclude_keys: set[str]) -> list[str]:
+        all_keys = set(self.srd_monsters.keys())
+        exclusions = self._similar_cr(cr, exclude_keys)
         keys = all_keys - set(exclusions)
         return list(keys)
 

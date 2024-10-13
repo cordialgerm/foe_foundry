@@ -1,6 +1,8 @@
 <MonsterName/>Pony</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>11</HP>
 <summary>A Pony is a small, sturdy breed of horse known for its strength and endurance. Often used as pack animals or mounts for smaller creatures like halflings or children, Ponies are reliable and sure-footed. They are commonly found on farms or in rural areas, where they help carry loads or transport riders across rough terrain. Though not as fast as larger horses, Ponies are valued for their resilience and ability to navigate difficult landscapes. They are typically gentle and easy to train, making them useful companions for travelers.</summary>
 
 <summary>The Pony is a Medium beast known for its charm and utility in various settings. With an Armor Class of 10 and 11 hit points, it is relatively easy to hit and can withstand a limited amount of damage in combat. Its speed of 40 feet allows it to maneuver quite effectively, making it adept at traveling short to moderate distances. However, its overall combat abilities are limited; it has low hit points and basic offensive capabilities. The Pony has a Challenge Rating of 1/8, denoting it as a creature that poses minor challenges to adventurers. While it lacks intelligence and charisma, its strength and constitution allow it to perform well in physical situations. Notably, it may serve as a companion or mount for players, enhancing the adventure experience.</summary>

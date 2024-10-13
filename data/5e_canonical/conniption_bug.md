@@ -1,6 +1,8 @@
 <MonsterName/>Conniption Bug</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>55</HP>
 <summary>The Conniption Bug is a small beast that presents a unique challenge in combat due to its distinctive abilities and its capacity to grapple foes. With an Armor Class of 13 and 55 hit points, it can withstand some damage, although it is not particularly sturdy compared to stronger monsters. It excels in mobility with a walking and swimming speed of 30 feet each, making it versatile in different environments. With a Challenge Rating of 1, it can pose a moderate challenge to low-level adventurers. Its primary strengths lie in its grappling capabilities and pack tactics, allowing it to deal consistent damage to enemies while receiving support from allies. Notably, it has a unique mechanic where it continues to inflict damage even after it dies, making it a dangerous foe if not dealt with quickly. </summary>
 
 <detail>

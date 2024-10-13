@@ -1,6 +1,8 @@
 <MonsterName/>Firebird</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>88</HP>
 <summary>The Firebird is a small celestial creature embodying a neutral good alignment. It plays a significant role as a protector and a healer, utilizing its magical abilities to assist allies and smite foes. With a challenge rating of 4, this creature is capable of inflicting substantial fire damage while also offering support through healing capabilities. Its strengths include high dexterity and charisma, making its attacks both swift and effective while enhancing its spell-casting potential. However, it has a moderate armor class and is somewhat vulnerable to magical attacks. Notably, the Firebird can influence the behavior of creatures it helps, compelling them to assist others in need.</summary>
 
 <detail>

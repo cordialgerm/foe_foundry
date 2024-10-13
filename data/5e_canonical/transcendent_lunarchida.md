@@ -1,6 +1,8 @@
 <MonsterName/>Transcendent Lunarchida</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>91</HP>
 <summary>The Transcendent Lunarchida is a formidable aberration characterized by its ability to manipulate light and darkness. As a neutral evil creature, it excels in deception and combat, using its spellcasting and physical prowess to outmaneuver foes. With an Armor Class of 16, it can withstand a considerable amount of damage before succumbing. Its health is robust, boasting 91 hit points, which allows it to remain active in battle for extended periods. However, the Lunarchida has notable weaknesses, particularly in bright sunlight, where it suffers disadvantages on attack rolls and perception checks. Its proficiency in stealth (highly effective with a +9 modifier) allows it to ambush enemies effectively, making it a dangerous opponent.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Monkey King</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>21</CR>
+<AC/>21 (natural armor)</AC>
+<HP/>262</HP>
 <summary>The Monkey King is a powerful celestial creature known for its agility and combat prowess. With a challenge rating of 21, it possesses formidable defensive and offensive capabilities, making it a significant threat in battle. It has high armor class at 21, resilient hit points totaling 262, and a remarkable movement speed of 60 feet both on foot and in flight. Notably, the Monkey King has advanced abilities that make it resistant to many forms of magical effects, and its legendary actions allow it to dominate the battlefield with speed and ferocity. While its strengths are considerable, its challenges in terms of physical confrontation and charisma can be exploited by tactful players.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Cavelight Moss</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Cavelight Moss is a large, unaligned plant creature known for its unique ability to illuminate dark areas, making it a fascinating addition to the subterranean ecosystem. This creature is particularly resilient due to its high hit points, and its natural armor provides decent protection against physical attacks. The Cavelight Moss excels in grappling and exhausting its foes, allowing it to sap the strength of adventurers who dare to approach. However, it is not particularly mobile, with a slow walking speed, and its intelligence is severely lacking, making it vulnerable to more cunning opponents. Players should be cautious when engaging the Cavelight Moss, as its abilities can hinder movement and impose debilitating exhaustion.</summary>
 
 <detail>

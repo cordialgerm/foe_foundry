@@ -1,6 +1,8 @@
 <MonsterName/>Hyena</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>11</AC>
+<HP/>5</HP>
 <summary>A Hyena is a carnivorous mammal known for its distinctive cackling calls and scavenging habits. They are typically found in savannas or deserts, where they hunt in packs or feed on the remains of other predators' kills. Hyenas are opportunistic, using their powerful jaws to crush bones and tear through flesh. While often seen as scavengers, they are also skilled hunters, capable of taking down large prey when working together in groups. Their endurance and pack mentality make them relentless in pursuit of food, and their keen senses allow them to detect potential meals from great distances.</summary>
 
 <summary>The Hyena is a medium-sized beast often characterized by its quick movements and pack mentality. With an Armor Class of 11, it offers minimal protection, making it vulnerable in combat. Its low hit points, totaling only 4, indicate it can be easily defeated if targeted. The Hyena's primary strength lies in its agility, as denoted by a decent Dexterity score of 12 (+1 modifier), allowing it to act more effectively in combat situations. However, its mental abilities are significantly lacking, particularly its Intelligence (2, -4 modifier), making it simple-minded and not capable of complex strategies. With a Challenge Rating of 0 and yielding only 25 experience points upon defeat, the Hyena poses a minimal threat to even low-level adventurers.</summary>

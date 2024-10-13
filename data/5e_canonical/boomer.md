@@ -1,6 +1,8 @@
 <MonsterName/>Boomer</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>7 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Boomer is a unique Medium Plant creature that embodies the role of a deceptive and damaging presence on the battlefield. With an Armor Class of 7, it lacks physical defense but compensates with abilities that can incapacitate and damage foes through its sonic attacks. While it has a modest 22 hit points, its challenge rating of 1/2 indicates it can be a surprising opponent for lower-level adventurers, dealing significant thunder damage with its special abilities. The Boomer’s strengths lie in its area control and ability to inflict status effects like deafening and incapacitation. However, its low Strength, Dexterity, and Charisma scores leave it vulnerable to direct attacks, as it is essentially immobile with a walking speed of 0 feet.</summary>
 
 <detail>

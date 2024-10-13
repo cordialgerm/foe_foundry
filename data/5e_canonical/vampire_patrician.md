@@ -1,6 +1,8 @@
 <MonsterName/>Vampire Patrician</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Vampire Patrician is a formidable Medium Undead creature infused with a lawful evil nature. With a Challenge Rating of 10, this powerful vampire boasts significant resistances and formidable combat abilities, making it an exceptional foe in terms of damage output and tactical advantages in battle. Possessing both efficient melee capabilities and terrifying special abilities, the Vampire Patrician excels at manipulating its enemies and avoiding danger. Its remarkable speed, cleverness in combat, and the ability to summon allies make it a versatile and dangerous adversary. However, it has notable weaknesses, such as its aversion to sunlight and the need for invitations to enter homes, which can be leveraged by vigilant adventurers.</summary>
 
 <detail>

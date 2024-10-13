@@ -1,6 +1,8 @@
 <MonsterName/>Rockwood</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>94</HP>
 <summary>The Rockwood is a formidable Huge Elemental with a chaotic neutral alignment, embodying the natural force of earth and stone. With a robust Armor Class of 17 and a substantial pool of hit points totaling 94, it presents a significant challenge in combat. Its movement capabilities include walking at a speed of 30 feet and burrowing through nonmagical earth and stone at a speed of 15 feet, allowing it to navigate the battlefield strategically. This creature has a Challenge Rating of 6, indicating that it is suitable for mid-level adventurers who can earn 2,300 experience points upon its defeat. Notable strengths include its damage immunities, resistances, and exceptional condition immunities, which highlight its resilience and ability to influence the terrain around it.</summary>
 
 <detail>

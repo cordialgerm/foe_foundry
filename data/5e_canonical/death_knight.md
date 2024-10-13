@@ -1,6 +1,8 @@
 <MonsterName/>Death Knight</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>18 (plate)</AC>
+<HP/>140</HP>
 <summary>The Death Knight is a formidable undead creature that serves as a powerful adversary in combat situations. With an impressive armor class of 18 and 140 hit points, it can withstand a considerable amount of damage. The Death Knight has a challenge rating of 8, indicating that it poses a significant threat to adventurers at lower levels. Its strengths lie in its ability to deal substantial necrotic damage, its magic resistance that offers it an advantage against spells, and its unique ability to return from destruction unless redeemed. However, it lacks mobility beyond a standard walking speed of 30 feet and is vulnerable to radiant damage, which can exploit its undead nature. Overall, the Death Knight is a relentless foe that embodies the themes of death and retribution.</summary>
 
 <detail>

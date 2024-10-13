@@ -1,6 +1,8 @@
 <MonsterName/>Mei Jiao Shou</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>139</HP>
 <summary>The Mei Jiao Shou is a gargantuan beast that serves as a formidable opponent in combat scenarios. With a Challenge Rating of 7, it possesses significant strengths thanks to its high damage potential and formidable physical presence. It features exceptionally high Strength and Constitution scores, ensuring it can deliver powerful attacks and sustain considerable damage. However, its Dexterity is notably low, rendering it vulnerable to ranged attacks and dexterous maneuvers. The creature’s role primarily revolves around physical dominance, often utilizing its size and strength to create chaos on the battlefield. Players must approach it with caution, considering both its devastating melee attacks and the ability to control the terrain around it.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Sunset Raptor</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>32</HP>
 <summary>The Sunset Raptor is a Medium-sized monstrosity characterized by its unaligned nature and unique abilities that revolve around charm and illusion. With a moderate armor class of 13 and 32 hit points, it poses a significant challenge to low-level adventurers, offering 200 experience points upon defeat. The creature excels in dexterity and charisma, boasting good movement speed and impressive stealth capabilities, making it an agile opponent. However, it has a weakness in intelligence, which is very bad, leaving it vulnerable to certain tactics. Notably, its special ability, Hypnotic Plumage, allows it to incapacitate opponents who fail a Wisdom saving throw, effectively controlling the battlefield. </summary>
 
 <detail>

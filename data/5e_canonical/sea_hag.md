@@ -1,6 +1,8 @@
 <MonsterName/>Sea Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>52</HP>
 <summary>A Sea Hag is a grotesque, fey creature that dwells in the depths of the ocean or along desolate, rocky shores. With matted hair, slimy skin, and an appearance so horrifying it can paralyze those who look upon her, Sea Hags delight in spreading misery and despair. They are skilled in illusion and enchantment magic, using their powers to lure sailors to watery graves or curse those who trespass into their domain. Sea Hags are vicious and cruel, often forming covens with other hags to amplify their powers and terrorize coastal communities.</summary>
 
 <summary>The Sea Hag is a Medium-sized Fey creature that embodies the sinister and unsettling aspects of the sea. With an Armor Class of 14, it is moderately tough to hit in combat, and with 52 hit points, it can withstand a fair amount of damage before being taken down. The hag can move at a speed of 30 feet on land and 40 feet in water, showcasing its amphibious nature, which allows it to thrive in both environments. As a Challenge Rating 2 creature, it poses a formidable threat to lower-level adventurers, primarily using deception, psychological manipulation, and spellcasting to overwhelm its foes. Key strengths include its high Strength and Constitution scores, coupled with strong Charisma, which aids in its spellcasting and social deception. However, its Dexterity is only average, making it less effective at avoiding attacks compared to faster foes. </summary>

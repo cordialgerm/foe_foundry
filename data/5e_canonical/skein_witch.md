@@ -1,6 +1,8 @@
 <MonsterName/>Skein Witch</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>12</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>162</HP>
 <summary>The Skein Witch is a medium celestial creature known for its exceptional magical abilities and defensive capabilities, making it a formidable opponent in combat. With an impressive Armor Class of 20 and a significant pool of Hit Points totaling 162, the Skein Witch can hold its ground against enemy attacks. Its strengths lie in its affinity for manipulating fate and its resistance to various forms of damage, including immunity to fire, lightning, and psychic damage, and resistance to radiant damage. While its physical attributes are relatively low, particularly its Strength score of 6, resulting in a very bad modifier of -2, the Skein Witch compensates with strong Intelligence, Wisdom, and Charisma scores, all having good to exceptional modifiers. Notably, its high Wisdom is paired with impressive saving throw bonuses, making it difficult for opponents to affect it with spells and abilities.</summary>
 
 <detail>

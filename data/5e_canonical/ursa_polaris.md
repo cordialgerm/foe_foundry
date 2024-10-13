@@ -1,6 +1,8 @@
 <MonsterName/>Ursa Polaris</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>133</HP>
 <summary>Ursa Polaris is a formidable large monstrosity characterized by its neutral evil alignment. This creature possesses significant strength and resilience, with a high Armor Class of 15 due to natural armor, and a substantial pool of hit points totaling 133, derived from 14d10+56. It moves adeptly through both land and water, boasting a walking speed of 40 feet and a swimming speed of 30 feet. With a challenge rating of 7, it presents a serious threat to adventurers, offering a reward of 2,900 experience points upon defeat. Notably, Ursa Polaris is vulnerable to fire damage while completely immune to cold. </summary>
 
 <detail>

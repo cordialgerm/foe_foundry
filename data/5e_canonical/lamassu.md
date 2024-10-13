@@ -1,6 +1,8 @@
 <MonsterName/>Lamassu</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Lamassu is a powerful celestial creature characterized by its large size and lawful good alignment. Known for its protective nature and affinity for magic, the Lamassu serves as a guardian and a guide. Its impressive attributes provide it with significant strength and resilience, making it adept in both combat and support roles. With access to an array of spells and abilities, the Lamassu can influence the battlefield while providing healing and utility to allies. However, despite its formidable powers, it is still vulnerable to magical damage due to its reliance on its high saving throws and resistances.</summary>
 
 <detail>

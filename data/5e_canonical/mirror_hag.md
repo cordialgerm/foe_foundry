@@ -1,6 +1,8 @@
 <MonsterName/>Mirror Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Mirror Hag is a Medium-sized fey creature that embodies chaotic neutrality. With a challenge rating of 6 and a total of 147 hit points, it possesses formidable combat prowess, primarily through its unique abilities and spells. The hag excels at incapacitating foes and altering their forms, making her a dangerous adversary in battle. With an armor class of 16 derived from natural armor, she can withstand a fair amount of damage. Defensively, she has resistance to thunder damage and is immune to conditions such as being charmed or frightened, rendering her resistant to typical crowd control tactics. However, her physical attributes show that she is only average in strength and intelligence, with exceptional constitution contributing to her durability.</summary>
 
 <detail>

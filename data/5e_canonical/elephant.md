@@ -1,6 +1,8 @@
 <MonsterName/>Elephant</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>76</HP>
 <summary>An Elephant is a massive, herbivorous mammal with thick, wrinkled skin and long, powerful tusks. Known for their strength and intelligence, Elephants use their trunks to manipulate objects, communicate, and care for their young. Though generally peaceful, they can be incredibly dangerous when threatened, charging at foes with their tusks or trampling anything in their path. Elephants are often found in grasslands or jungles, where they travel in herds. In battle, their size and strength make them formidable, and they are often used as war beasts by certain cultures.</summary>
 
 <summary>The Elephant is a massive beast characterized by its enormous size and significant physical power, making it an impressive presence on the battlefield. As a creature with a challenge rating of 4, it offers a moderate level of threat to adventurers, making it suitable for encounters with mid-level parties. It excels in physical combat with high strength and considerable hit points, allowing it to absorb damage while delivering devastating attacks. However, its dexterity is notably low, indicating that it is not particularly quick or agile. This makes it vulnerable to characters that rely on speed and tactical positioning. Overall, the Elephant serves as a formidable and intimidating combatant that can easily disrupt enemy formations with its charge and stomping attacks.</summary>

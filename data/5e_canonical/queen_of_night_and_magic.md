@@ -1,6 +1,8 @@
 <MonsterName/>Queen of Night and Magic</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>21</CR>
+<AC/>22 (Regal Bearing)</AC>
+<HP/>225</HP>
 <summary>The Queen of Night and Magic is a formidable Medium Fey creature characterized by her exceptional magical abilities and her dominance in combat. With a neutral evil alignment, she leverages her powers to manipulate and control her surroundings, making her a dangerous adversary for adventurers. She boasts a high Armor Class of 22, fortified by her ability to use her Charisma modifier, making physical attacks challenging to land. The Queen possesses a significant pool of hit points at 225, ensuring she can endure prolonged encounters. She is exceptionally skilled in various disciplines, particularly in Charisma-driven actions, allowing her to deceive and intimidate her opponents with ease. Her notable strengths include resistance to magic and damage immunity to cold and nonmagical attacks from weapons not made of cold iron. However, her reliance on magical effects may expose her to counterspell strategies, and her inability to heal makes her vulnerable if her spellcasting is disrupted.</summary>
 
 <detail>

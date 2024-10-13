@@ -1,6 +1,8 @@
 <MonsterName/>Rageipede</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>55</HP>
 <summary>The Rageipede is a small, beastly creature that inhabits forested areas and tall grasslands. It presents an interesting challenge for adventurers due to its ability to camouflage itself effectively within its environment and its unique attack mechanism that can induce a state of rage in its victims. While the Rageipede possesses a decent level of durability with an Armor Class of 15 and a respectable 55 hit points, its greatest strength lies in its surprise capabilities in combat. However, its low Intelligence, Wisdom, and Charisma scores indicate a notable lack of mental prowess, making it a straightforward adversary in terms of strategic interaction.</summary>
 
 <detail>

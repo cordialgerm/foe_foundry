@@ -1,6 +1,8 @@
 <MonsterName/>Truant Devourer</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>16</AC>
+<HP/>156</HP>
 <summary>The Truant Devourer is a powerful undead creature that roams the battlefield with dark intent. As a Medium-sized entity, it possesses a high armor class of 16 and significant durability with 156 hit points, obtained from rolling 24d8 plus an additional 48. This makes it a strong adversary, rated with a Challenge Rating of 9, granting 5,000 experience points for overcoming it in combat. Its strengths lie in its magic resistance and ability to detect heretics, which allows it to pinpoint enemies of its creator deity within close range. However, it is susceptible to radiant damage and magic attacks that are more effective than its resistances. With an average speed of 40 feet and the ability to teleport short distances, the Truant Devourer can quickly engage or disengage foes, demonstrating both offensive and tactical prowess.</summary>
 
 <detail>

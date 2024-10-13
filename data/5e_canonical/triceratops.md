@@ -1,6 +1,8 @@
 <MonsterName/>Triceratops (Dinosaur)</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>95</HP>
 <summary>A Triceratops is a massive, herbivorous dinosaur, known for its three facial horns and large, bony frill. This prehistoric creature uses its horns to defend itself from predators, charging with immense force and goring anything that threatens it. Standing as tall as an elephant and weighing several tons, the Triceratops is a formidable creature despite its peaceful grazing habits. It is commonly found in grasslands and jungles, where it grazes on vegetation. Though not aggressive by nature, it will not hesitate to use its horns to protect itself or its herd from danger.</summary>
 
 <summary>The Triceratops is a massive creature classified as a Huge Beast, notable for both its imposing physical presence and formidable defensive capabilities. With an Armor Class of 14 and substantial hit points totaling 84, it can withstand considerable damage in combat. This creature boasts impressive Strength at 20, making it highly effective in melee combat, and a solid Constitution score of 18, enhancing its resilience. Despite its low Dexterity, Intelligence, and Charisma scores, the Triceratops compensates with powerful attacks that utilize its natural weapons. With a Challenge Rating of 5, it poses a significant threat to adventurers, capable of dealing heavy damage while also imposing penalties on opponents.</summary>

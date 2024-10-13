@@ -1,6 +1,8 @@
 <MonsterName/>Cikavak</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>17</HP>
 <summary>The Cikavak is a tiny fey creature that embodies mischief and cleverness, making it a unique addition to any encounter. With its relatively low armor class of 12 and a total of 17 hit points, it can be seen as fragile in direct combat, which is reflected by its very bad Strength score of 4. However, it excels in Dexterity with a score of 15, granting it a good Dexterity modifier of +2, which aids its ability to evade attacks and enhance its stealth. The Cikavak's strengths lie in its agility, cunning, and magical abilities that enable it to manipulate the battlefield through silence and communication. It has limited combat capability with its beak attack, but it can serve as a stealthy scout and a tactical support companion. Additionally, its ability to communicate with other creatures opens up alternative forms of interaction. </summary>
 
 <detail>

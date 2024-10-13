@@ -1,6 +1,8 @@
 <MonsterName/>Leashed Lesion</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Leashed Lesion is a large aberration characterized by its chaotic evil nature. This creature stands out with an Armor Class of 15 due to its natural armor, making it relatively difficult to hit in combat. With 65 hit points, it has a moderate endurance but can still be defeated with focused attacks. The Leashed Lesion has a movement speed of 40 feet, allowing it to maneuver effectively during encounters. It is rated with a Challenge Rating of 3, indicating it can pose a significant threat to lower-level adventurers while being manageable for more experienced parties. Its notable features include damage resistance to necrotic damage and powerful abilities that allow it to drain health from opponents while recovering its own.</summary>
 
 <detail>

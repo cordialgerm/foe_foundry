@@ -1,6 +1,8 @@
 <MonsterName/>Commoner Mob</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>0</CR>
+<AC/>10</AC>
+<HP/>45</HP>
 <summary>The Commoner Mob is a huge humanoid creature that acts as a collective representation of a group of commoners, often used to portray the chaotic nature of a populace in a Dungeons & Dragons setting. Its weak armor class of 10 and modest hit points of 45 make it a relatively easy target in combat, but the mob's unique mechanics offer it intriguing tactical advantages. With a challenge rating of 0, it is not a significant threat, but its ability to disperse into multiple smaller commoners upon being defeated introduces an interesting dynamic. The Commoner Mob excels in overwhelming opponents through sheer numbers but also suffers from vulnerabilities, particularly when subjected to area effects.</summary>
 
 <detail>

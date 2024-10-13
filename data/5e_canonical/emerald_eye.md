@@ -1,6 +1,8 @@
 <MonsterName/>Emerald Eye</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>54</HP>
 <summary>The Emerald Eye is a tiny construct characterized by its unique magical abilities and psychic powers. Its strengths lie in its high intelligence and charm, making it a cunning manipulator in combat and social scenarios. With an Armor Class of 14, it has reasonable protection, and its 54 hit points provide a modest buffer for its survival. However, it has exceptionally low strength, indicating that it should avoid direct melee combat. The Emerald Eye operates well within a supportive role, using its psychic powers to bind and manipulate enemies or allies while remaining relatively safe thanks to its immunities and resistances. Notably, it must remain psychically bound to another creature to thrive; otherwise, it will start losing hit points. </summary>
 
 <detail>

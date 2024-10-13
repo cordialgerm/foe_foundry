@@ -1,6 +1,8 @@
 <MonsterName/>Forest Emperor</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Forest Emperor is a formidable creature classified as a Huge Aberration with a neutral evil alignment. Its high Armor Class of 18, along with a substantial pool of Hit Points totaling 161, grants it exceptional durability during combat, allowing it to withstand significant damage. This creature possesses a remarkable ability to traverse various terrains, evidenced by its ability to walk, climb, and fly, making it a highly mobile threat. With a Challenge Rating of 15, the Forest Emperor is a serious encounter for experienced adventurers. Its powerful physical attacks, including its acidic claws and a long-reaching tail, combined with debilitating abilities that frighten opponents, make it a fearsome adversary. However, its low Charisma score suggests it may struggle in interactions that rely on social finesse. </summary>
 
 <detail>

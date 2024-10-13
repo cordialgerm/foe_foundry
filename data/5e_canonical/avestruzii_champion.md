@@ -1,6 +1,8 @@
 <MonsterName/>Avestruzii Champion</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (scale mail)</AC>
+<HP/>45</HP>
 <summary>The Avestruzii Champion is a Medium humanoid creature that serves as a formidable opponent in combat while exhibiting characteristics of both versatility and brute strength. With a Challenge Rating of 2, it has a moderate level of power and can be a significant threat to lower-level adventurers. The champion is well-armored, having an Armor Class of 15 thanks to its scale mail, and possesses a total of 45 hit points, which grants it decent survivability in battle. Its physical abilities are robust, especially Strength at 17, which allows the Avestruzii Champion to hit hard with its melee attacks. However, it has only average Dexterity, which could make it slightly less agile in combat.</summary>
 
 <detail>

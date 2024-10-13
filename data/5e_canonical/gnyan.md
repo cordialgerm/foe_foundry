@@ -1,6 +1,8 @@
 <MonsterName/>Gnyan</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>90</HP>
 <summary>Gnyan is a large elemental creature that embodies the essence of winter, often associated with neutrality and goodness. It possesses the ability to aid its allies with an aura of hope, which bolsters their courage, while its unique milk restorative can help alleviate exhaustion and heal its companions. With good mobility and a strong dexterity score, Gnyan is adept at traversing snowy and icy terrain without leaving traces. However, it has a notable vulnerability to fire, making it susceptible to fire-based attacks. Gnyan's ability to strike swiftly and move confidently across difficult landscapes contributes to its role as an effective force in combat, able to control the battlefield with its cold-based attacks while providing support to its allies.</summary>
 
 <detail>

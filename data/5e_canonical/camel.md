@@ -1,6 +1,8 @@
 <MonsterName/>Camel</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>9</AC>
+<HP/>15</HP>
 <summary>The Camel is a large, long-legged mammal well-adapted to surviving in desert environments. With its humped back and thick, resilient skin, a camel can travel long distances across arid landscapes with little water. Camels are commonly used as mounts or beasts of burden, known for their endurance and ability to carry heavy loads through harsh climates. Though generally docile, camels can become aggressive when threatened, using their powerful legs to kick at predators or intruders. They are often found in desert caravans, serving as essential transportation for nomadic peoples and traders.</summary>
 
 <summary>The Camel is a Medium-sized beast that primarily serves as a mount or pack animal, often utilized in arid environments where its speed and endurance can shine. With an Armor Class of 10, it has limited defenses against attacks, making it vulnerable compared to combat-focused creatures. Its Hit Points total 15, which allows it to sustain some damage before falling in battle. The Camel has a walking speed of 50 feet, granting it good mobility. Given its Challenge Rating of 1/8, it represents a minor challenge for adventurers, granting only 25 experience points upon defeat. </summary>

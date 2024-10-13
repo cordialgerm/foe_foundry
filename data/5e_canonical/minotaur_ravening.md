@@ -1,6 +1,8 @@
 <MonsterName/>Minotaur, Ravening</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Ravening Minotaur is a large monstrosity with a chaotic evil alignment, notorious for its brutal and relentless nature. It possesses a formidable armor class of 14 due to its natural armor and has a significant pool of hit points totaling 85, making it a tough adversary in combat. With a movement speed of 40 feet, it can close the distance to its enemies quickly, enhancing its role as a powerful melee combatant. This creature has a challenge rating of 3, which indicates it is a moderate threat, yielding 700 experience points upon defeat. </summary>
 
 <detail>

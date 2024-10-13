@@ -1,6 +1,8 @@
 <MonsterName/>Volguloth</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Volguloth is a Medium-sized fiend with a neutral evil alignment, known for its sneaky and aggressive tactics in combat. With a Challenge Rating of 4, it poses a significant threat to adventurers with its combination of high damage output and defensive capabilities. The creature has an Armor Class of 14, supported by its natural armor, and possesses 78 hit points, derived from rolling 12d8 and adding 24. This durability allows it to withstand a fair amount of damage in battle. The Volguloth excels in stealth and evasion, making it a tricky opponent. Its innate abilities grant it advantages over spells, and its poisonous attacks further amplify its lethality. However, it can only grapple and enshroud one creature at a time, limiting its crowd control to individual targets.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Alpha Werewolf</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>12</AC>
+<HP/>104</HP>
 <summary>The Alpha Werewolf is a formidable opponent in the world of Dungeons & Dragons, exemplifying the perfect blend of finesse and brute strength that characterizes lycanthropes. As a medium humanoid, it boasts a solid armor class of 12, indicating a relatively average defensive capability against attacks. With hit points totaling 104, the Alpha Werewolf exhibits durability in battle, allowing it to absorb considerable damage before being defeated. Its utility extends beyond mere toughness, with a challenge rating of 6, making it a daunting challenge for adventurers seeking experience and glory. The creature is defined by its strong attributes, particularly in strength, dexterity, and constitution, each contributing a modifier of +2, marking them as good for physical engagements. However, the Werewolf lacks intelligence, wisdom, and charisma, all of which have a modifier of 0, rendering it average in social or mental confrontations. A noteworthy defensive trait of the Alpha Werewolf is its damage immunity to nonmagical and non-silvered attacks, making conventional weapons ineffective against it unless they are magically enhanced or silvered.</summary>
 
 <detail>

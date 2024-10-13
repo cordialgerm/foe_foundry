@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Poisonous Snakes</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>36</HP>
 <summary>A Swarm of Poisonous Snakes is a writhing mass of serpents, each capable of delivering venomous bites that can paralyze or kill their prey. These swarms are often found in jungles, swamps, or dark caves, where they lurk in hiding until disturbed. When they attack, the snakes strike quickly and repeatedly, overwhelming their enemies with venomous fangs. Though small individually, the combined effort of a swarm makes them a deadly threat, particularly when their venom causes pain, paralysis, or death. Their coordinated movements make it difficult to escape once they begin to strike.</summary>
 
 <summary>The Swarm of Poisonous Snakes is a Medium beast that presents a formidable challenge in combat due to its ability to occupy the same space as other creatures and its significant damage output with a combination of piercing and poison damage. With an Armor Class of 14 and 45 hit points, it offers decent durability for its Challenge Rating of 2. However, its low strength and intelligence limit its capabilities outside of combat. The swarm is exceptionally agile, boasting a Dexterity score of 18, which translates to a +4 modifier, making its attack capabilities very good. It is effective in ambush scenarios, thanks to its ability to move through tight spaces and strike unsuspicious targets. Despite its strengths, it is vulnerable to area effects due to its nature as a swarm and lacks any defensive spells or abilities to heal itself.</summary>

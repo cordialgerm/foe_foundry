@@ -1,6 +1,8 @@
 <MonsterName/>Harvest Horse</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>37</HP>
 <summary>The Harvest Horse is a large construct that functions mainly as a powerful yet unaligned creature without specific allegiances. Its role in combat is that of a robust frontline entity, capable of dealing significant damage while having the strength to carry heavy loads. It possesses a notably high Strength score of 15, giving it a good modifier of +2, which enhances its melee capabilities. However, it has poor Dexterity, reflected by a -3 modifier, making it less effective at dodging attacks. The Harvest Horse has average resilience, with a Constitution of 14, leading to a good +2 modifier and decent hit points totaling 37, making it durable, but not exceptionally survivable. </summary>
 
 <detail>

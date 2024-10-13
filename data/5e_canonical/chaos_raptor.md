@@ -1,6 +1,8 @@
 <MonsterName/>Chaos Raptor</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>248</HP>
 <summary>The Chaos Raptor is a gargantuan monstrosity embodying the principles of chaotic neutral alignment. It is a formidable creature capable of causing havoc both in and out of combat due to its unique abilities and powerful physical attacks. With a high Armor Class of 18 provided by its natural armor and robust Hit Points totaling 248, it proves to be a resilient opponent. The creature's movement capabilities are impressive, allowing it to walk 20 feet, burrow at a rapid 80 feet, and fly a remarkable 120 feet, making it agile in various terrains. The Chaos Raptor presents a challenge rating of 13, meaning it's a significant threat to lower-level adventurers and can provide a hefty experience reward of 10,000 XP.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Copperkill Slime</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>8</CR>
+<AC/>10</AC>
+<HP/>142</HP>
 <summary>The Copperkill Slime is a formidable Huge ooze known for its resilience, high damage output, and unique mobility characteristics. With an Armor Class of 10 and a substantial 142 hit points, it presents a durable challenge for adventurers. This creature's Challenge Rating of 8 signifies that it can provide a significant encounter for characters of that level, yielding 3,900 experience points. While it possesses a strong Strength score of 18, enhancing its grappling ability, its Intelligence, Wisdom, and Charisma are notably low, meaning it lacks advanced tactical thinking and social interaction capabilities. The Copperkill Slime can effectively immobilize opponents and deal substantial ongoing poison damage, but it is vulnerable to damage types that are not resisted, especially if struck by non-piercing or non-slashing attacks.</summary>
 
 <detail>

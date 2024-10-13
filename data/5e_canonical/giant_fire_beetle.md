@@ -1,6 +1,8 @@
 <MonsterName/>Giant Fire Beetle</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>4</HP>
 <summary>A Giant Fire Beetle is a large, insect-like creature that emits a faint glow from glands located near its head. These beetles are often found in dark caves, forests, or underground areas, where their bioluminescent glow provides light in the pitch-black surroundings. Despite their size, Giant Fire Beetles are relatively harmless, feeding on plants or small creatures. They can be captured and used as a source of light by adventurers. While not aggressive, they will defend themselves with their sharp mandibles if provoked.</summary>
 
 <summary>The Giant Fire Beetle is a small beast known for its unique ability to emit light from its body. With a challenge rating of 0, it is considered a very weak creature in Dungeons & Dragons, making it ideal for introductory encounters or as a minor obstacle for low-level characters. The beetle has low hit points and weak physical attributes, making it vulnerable in combat. However, its fire glands allow it to provide illumination, which can be a useful feature in dark environments. Overall, the Giant Fire Beetle adds a touch of light to any setting, even if it poses little threat to adventurers.</summary>

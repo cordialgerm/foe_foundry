@@ -1,6 +1,8 @@
 <MonsterName/>Giant Frog</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>18</HP>
 <summary>A Giant Frog is a large, amphibious predator often found in swamps, rivers, or other wetland areas. It has a long, sticky tongue that it uses to snatch prey from a distance, pulling it into its wide, toothless mouth. Giant Frogs can swallow smaller creatures whole and digest them slowly. These frogs are excellent swimmers, able to hide beneath the water's surface and ambush unsuspecting prey. Though not particularly dangerous on their own, they can be a threat to smaller creatures or when encountered in large numbers.</summary>
 
 <summary>The Giant Frog is a Medium-sized beast that serves as a creature commonly found in wetlands and swamps. With a challenge rating of 1/4, it is considered a low-level encounter in Dungeons & Dragons. Despite its relatively modest armor class of 11 and hit points totaling 15, the Giant Frog possesses notable mobility, being able to swim at a speed of 40 feet. Its strengths lie in its ability to grapple opponents, swallow smaller creatures, and its exceptional jumping capabilities. However, it struggles with low Constitution, Intelligence, Charisma, and moderate Dexterity, making it more vulnerable in direct confrontations with more intelligent foes.</summary>

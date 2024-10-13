@@ -1,6 +1,8 @@
 <MonsterName/>Dragon, Sand Young</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>11</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>189</HP>
 <summary>The Sand Young Dragon is a formidable opponent characterized by its neutral evil alignment and natural agility. This large dragon, known for its stealth in sandy environments, boasts a high armor class of 19 and an impressive health pool of 189 hit points, making it a resilient adversary in combat. Its combination of speed—on land, in the air, and underground—allows it to engage opponents strategically. With a challenge rating of 11, this dragon is a significant threat in battle, able to deal considerable damage while also inflicting debilitating effects on its foes. However, it has vulnerabilities, notably being limited by its requirement for half the usual sustenance of a creature its size and its immunity to fire, which reflects its connection to elemental forces.</summary>
 
 <detail>

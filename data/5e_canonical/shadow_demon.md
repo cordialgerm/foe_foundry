@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Demon</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>The Shadow Demon is a Medium fiend that embodies chaos and evil, often serving as a harbinger of darkness in the Dungeons and Dragons universe. With a Challenge Rating of 4, it poses a moderate threat to adventurers, boasting a total of 45 hit points and a mix of physical and magical abilities that make it a cunning opponent. The demon's notable strengths include its high Dexterity and Charisma scores, providing it with a good capacity for stealth and manipulative actions. However, it is particularly vulnerable to radiant damage, which can severely hinder its effectiveness in combat. Additionally, its ability to fly grants it excellent mobility, allowing it to engage or retreat from battles as necessary.</summary>
 
 <detail>

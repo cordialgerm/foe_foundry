@@ -1,6 +1,8 @@
 <MonsterName/>Megapede</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Megapede is a large monstrosity, notable for its formidable combination of physical attacks and unique abilities. With a high Armor Class of 15, it can withstand a decent amount of damage. The creature has a total of 75 hit points, making it moderately resilient in battle. Its challenge rating of 3 allows it to pose a genuine threat to lower-level adventurers, yielding 700 experience points upon defeat. The Megapede excels in dealing damage through its bite and stinger attacks, which can result in both slashing and poison damage. However, it has low intelligence, wisdom, and charisma, indicating a lack of mental acuity or social skills. Notably, the Megapede possesses a remarkable ability to sense metal from a distance, which can be both advantageous and thematic in gameplay, considering its ability to consume metal objects.</summary>
 
 <detail>

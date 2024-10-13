@@ -1,6 +1,8 @@
 <MonsterName/>Phantom</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>22</HP>
 <summary>The Phantom is a medium undead creature that embodies the essence of lost souls, drifting through the world with a chilling presence. It serves as a formidable opponent in combat, utilizing its spectral abilities to instill fear and damage its foes while maintaining a level of protection from physical attacks. The Phantom's strengths lie in its incorporeal movement, allowing it to pass through obstacles, and its debilitating abilities that can paralyze or frighten opponents. However, it is significantly weakened in sunlight, where it suffers disadvantages on its rolls. With a Challenge Rating of 1, it provides a moderately challenging encounter for adventurers, particularly those unprepared for its ghostly tactics.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Void Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>429</HP>
 <summary>The Ancient Void Dragon is a colossal creature steeped in chaos and fear. As a gargantuan dragon, it is a formidable opponent in combat, boasting an impressive Armor Class of 22 and a staggering 429 hit points. With a Challenge Rating of 24, it stands out as a significant threat that adventurers might face. The dragon’s primary strengths lie in its extraordinary physical abilities, including high Strength and Constitution scores, which grant it a modifier of +9 in both. This makes its attacks particularly deadly. It is immune to cold damage and has strong defenses against mental effects, rendering it immune to being charmed or frightened. However, its dexterity is average, which may leave it vulnerable to ranged attacks that rely on this attribute. The dragon's abilities and actions reflect its nature as a master of the void, capable of dealing massive amounts of damage and manipulating reality itself.</summary>
 
 <detail>

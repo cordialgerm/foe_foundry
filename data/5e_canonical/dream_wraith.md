@@ -1,6 +1,8 @@
 <MonsterName/>Dream Wraith</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>60</HP>
 <summary>The Dream Wraith is a medium undead creature characterized by its neutral evil alignment, making it a malevolent force that preys on the living. This creature thrives in the darkness and utilizes its ability to fly swiftly while being incorporeal, allowing it to move through solid objects and evade physical attacks. The Dream Wraith sports a respectable Armor Class of 14 and possesses 60 hit points, derived from a pool of eight eight-sided dice plus a modifier for its Constitution. While it exhibits significant strengths, such as high Dexterity, making it nimble in combat with a good stealth skill, it has glaring weaknesses, including a vulnerability to psychic damage. With its challenge rating of 5, it can serve as a formidable foe for a mid-level adventuring party, utilizing its unique abilities to control the battlefield and sap the very life force of its opponents.</summary>
 
 <detail>

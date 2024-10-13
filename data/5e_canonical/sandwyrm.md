@@ -1,6 +1,8 @@
 <MonsterName/>Sandwyrm</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Sandwyrm is a formidable creature, classified as a Large dragon of unaligned nature. This beast is adept at both ambush tactics and direct combat, utilizing its burrowing capabilities to remain hidden until the opportune moment. With a challenge rating of 6, it poses a significant threat, especially if its powerful attacks are combined effectively. The Sandwyrm's main strengths include its high hit points, decent armor class, and a variety of potent melee attacks. It excels in stealth due to its ability to burrow and ambush targets, using its impressive stealth score of +4. However, its Intelligence score of 5 indicates that it may not be the most strategic opponent when it comes to planning. </summary>
 
 <detail>

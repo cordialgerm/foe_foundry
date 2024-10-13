@@ -1,6 +1,8 @@
 <MonsterName/>Darkmantle</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>22</HP>
 <summary>The Darkmantle is a shadowy, octopus-like creature that clings to cavern ceilings, waiting to ambush prey below. Its leathery, dark-colored body blends into the shadows, making it nearly invisible in dim light. When a creature passes beneath it, the Darkmantle drops down, wrapping its tentacles around the victim’s head and smothering them. Darkmantles also have the ability to emit magical darkness, further disorienting their prey. They are solitary predators and are most commonly found in caves or the Underdark, lurking in areas where they can use their natural camouflage to deadly effect.</summary>
 
 <summary>The Darkmantle is a Small Monstrosity that primarily serves as a lurking predator in its environment. This creature possesses a range of abilities that make it effective at ambushing prey. With a decent Armor Class of 11 and moderate Hit Points totaling 22, the Darkmantle can withstand some damage but is not overly resilient. Its movement capabilities are unique, allowing it to walk at a slow pace of 10 feet while being able to fly swiftly at 30 feet, making it agile and hard to pin down. Its Challenge Rating of 1/2 indicates that it poses a moderate threat to low-level adventurers, with an experience reward of 100 XP upon defeat. A notable aspect of the Darkmantle is its ability to create areas of magical darkness, which can severely hinder its opponents' visibility, and its grappling power can constrain foes effectively.</summary>

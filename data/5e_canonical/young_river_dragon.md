@@ -1,6 +1,8 @@
 <MonsterName/>Young River Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>17</AC>
+<HP/>142</HP>
 <summary>The Young River Dragon is a formidable aquatic creature, characterized by its large size and impressive mobility both in water and in the air. With a challenge rating of 9, it poses a significant threat to adventurers, capable of dealing considerable damage while being difficult to hit due to its high armor class of 17. This dragon can breathe both air and water, underscoring its amphibious nature, and features a variety of abilities that enhance its evasiveness and provide tactical advantages in combat. Notably, the Young River Dragon is tied to a specific geographic location through its Essence Link ability; if it dies, the area loses its vital essence, affecting any creatures that subsequently enter it. With a powerful array of spells and physical attacks, this dragon serves well in both offensive and defensive roles, making it a balanced and challenging foe for any party.</summary>
 
 <detail>

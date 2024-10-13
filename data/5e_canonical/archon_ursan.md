@@ -1,6 +1,8 @@
 <MonsterName/>Archon, Ursan</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Ursan Archon is a formidable large celestial creature embodying chaotic good alignment. Known for its immense strength and magical capabilities, this creature excels in both melee combat and area control. With a Challenge Rating of 9, it presents a significant challenge for adventurers, capable of dealing high amounts of damage while also being resilient to various forms of attacks. The Archon possesses an array of innate abilities that enhance its combat effectiveness and survivability, such as magic resistance and the ability to mitigate fatal damage. However, its reliance on engaging in direct combat can be a weakness when facing agile opponents who can exploit its Reckless ability, potentially turning the advantage against it.</summary>
 
 <detail>

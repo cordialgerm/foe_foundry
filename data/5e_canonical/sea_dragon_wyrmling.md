@@ -1,6 +1,8 @@
 <MonsterName/>Sea Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Sea Dragon Wyrmling is a medium-sized dragon that embodies the characteristics of a neutral evil creature. With its strong physical attributes and a potent ability to manipulate cold, this dragon serves as both a formidable combatant and a cunning strategist. Its strength and constitution scores are above average, providing it with a good ability to withstand attacks and deliver harm. However, it has average dexterity, reducing its effectiveness in dodging attacks. While it excels in Charisma, allowing it to command respect and manipulate others, its intelligence and wisdom are also average, making it reasonably intelligent but not exceptionally so. This creature's cold immunity makes it particularly resilient against cold-based attacks, and its unique ability to breathe both air and water grants it versatility in aquatic environments. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Hodag</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Hodag is a large, unaligned beast known for its formidable physical prowess and agility in combat. With an Armor Class of 13, it possesses a decent level of protection thanks to its natural armor, while its 52 hit points make it moderately resilient in battle. The Hodag excels in melee encounters as evidenced by its strong Strength score of 19, which provides a +4 modifier for its attack rolls, indicative of exceptional melee combat effectiveness. However, it lacks mental acuity and charm resistance due to its low Intelligence and Charisma scores. The Hodag's special abilities, like its ability to charge and knock down foes, make it an imposing opponent on the battlefield while its improved critical attack chance enhances its already dangerous melee capabilities. It has some limitations due to the absence of ranged attacks and spells, relying instead on its physical attributes to dominate in confrontations.</summary>
 
 <detail>

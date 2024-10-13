@@ -1,6 +1,8 @@
 <MonsterName/>Alchemical Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Alchemical Golem is a formidable Large Construct creature that presents a significant challenge in combat. It has a robust Armor Class of 15 and impressive Hit Points totaling 147, making it resilient in battle. With a Challenge Rating of 9, it can provide a test for even experienced adventurers. The golem possesses high physical strength, reflected in its Strength score of 18, which gives it a good modifier of +4, allowing for effective melee attacks. It's known for its diverse and potent special abilities that can inflict damage on opponents while also protecting itself. However, it is not particularly agile or charming, having a Dexterity of only 7, which results in a bad modifier of -2. The golem is unaligned, meaning it does not adhere to any moral compass, which makes it unpredictable. Overall, the Alchemical Golem combines substantial damage-dealing capabilities with a significant amount of durability.</summary>
 
 <detail>

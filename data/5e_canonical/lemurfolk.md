@@ -1,6 +1,8 @@
 <MonsterName/>Lemurfolk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>21</HP>
 <summary>The Lemurfolk is a small humanoid creature characterized by its agile nature and unique gliding ability. With an armor class of 12, it possesses a relatively low defense, allowing it to be easily hit by more powerful creatures. Its hit points are 21, reflecting an average level of resilience for a creature of its challenge rating of 1/4, which translates to 50 experience points upon defeat. Lemurfolk are adept at moving stealthily and performing acrobatic maneuvers, with notable dexterity and skill in those areas. However, they exhibit a weakness in their charisma, making them less persuasive or charming than other creatures. Their gliding ability provides a tactical advantage, allowing them to mitigate falling damage and traverse spaces more effectively.</summary>
 
 <detail>

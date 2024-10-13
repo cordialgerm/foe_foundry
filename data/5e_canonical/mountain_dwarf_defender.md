@@ -1,6 +1,8 @@
 <MonsterName/>Mountain Dwarf Defender</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>20</AC>
+<HP/>52</HP>
 <summary>The Mountain Dwarf Defender is a robust medium humanoid that serves as a sturdy warrior on the battlefield. With a high armor class of 20 and a decent pool of hit points at 52, this defender can sustain significant damage while engaging in combat. The Mountain Dwarf Defender excels in melee combat, utilizing their warhammer for solid attacks, and can also employ a lance effectively while mounted. Their defensive capabilities are strengthened by special abilities such as "Brave," which provides them with an advantage against fear, and "Steadfast," which allows them to resist being pushed or knocked prone. However, their ranged attack capabilities are less impressive compared to their melee capabilities, making them somewhat vulnerable at a distance. Overall, the Mountain Dwarf Defender is a formidable presence on the front lines, supporting their allies while maintaining a strong defense against incoming threats.</summary>
 
 <detail>

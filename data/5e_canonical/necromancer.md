@@ -1,6 +1,8 @@
 <MonsterName/>Necromancer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>12</AC>
+<HP/>67</HP>
 <summary>The Necromancer is a medium humanoid creature characterized by its proficiency in magic, specifically necromancy. As a skilled spellcaster, it serves an important role in combat, wielding a variety of potent spells that can deal significant damage, manipulate the battlefield, and control the actions of others. With a respectable Armor Class of 12 and a total of 67 hit points, the Necromancer can withstand moderate damage. Its best attributes are its Intelligence and Constitution, both rated at 16 (+3), which contribute to its formidable spellcasting capabilities and resilience. However, its low Dexterity score of 14 (+2) can be considered average at best, making it slightly vulnerable to physical attacks. The Necromancer's greatest strengths lie in its extensive spell list, including area damage spells and abilities that enhance its survivability, such as greater invisibility. Notably, it lacks strong physical attack options, relying instead on its spells for offense and defense.</summary>
 
 <detail>

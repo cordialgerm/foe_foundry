@@ -1,6 +1,8 @@
 <MonsterName/>Ulnorya</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>14</AC>
+<HP/>119</HP>
 <summary>The Ulnorya is a large aberration known for its neutral evil alignment. This creature thrives in combat, showcasing a solid Armor Class of 14 and a substantial pool of Hit Points totaling 119, which provides it with considerable longevity in battle. With a Challenge Rating of 7, it poses a moderate threat to adventurers, rewarding those who defeat it with 2,900 experience points. The Ulnorya is particularly adept at both melee and stealth attacks, benefiting from exceptional Dexterity and good Constitution. Its resistances to bludgeoning damage, immunities to poison damage, and the ability to become invisible provide it with unique tactical advantages in encounters, although it is not without its weaknesses.</summary>
 
 <detail>

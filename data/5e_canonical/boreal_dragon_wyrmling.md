@@ -1,6 +1,8 @@
 <MonsterName/>Boreal Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>39</HP>
 <summary>The Boreal Dragon Wyrmling is a medium-sized dragon of chaotic neutral alignment, characterized by its icy breath and agile capabilities. This creature is notable for its ability to harness the power of fire, making it a formidable opponent in combat despite its youthful stage. It possesses a high Armor Class of 17 due to its natural armor, and with 39 hit points, it can endure a significant amount of damage before going down. The Boreal Dragon Wyrmling is capable of flying at a speed of 60 feet, providing exceptional mobility in battle. However, being a young dragon, it has weaker mental attributes, resulting in average Intelligence. The creature is best utilized in skirmishes where its fire breath can be maximized to deal area damage to multiple foes, although its relatively low Dexterity and limited ranged options can present weaknesses.</summary>
 
 <detail>

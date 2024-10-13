@@ -1,6 +1,8 @@
 <MonsterName/>Warlock's Trumpetbloom</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Warlock's Trumpetbloom is a large, neutral evil plant creature characterized by its sinister appearance and abilities. It serves as a formidable opponent for adventurers, possessing a strong defense and high hit points, making it quite durable in combat. The trumpetbloom's primary strength lies in its ability to frighten foes and incapacitate them with its poisonous stinger, along with its capacity to grapple smaller creatures using its tendrils. However, it has notable weaknesses, such as a relatively low Dexterity score, making it less agile and easy to evade compared to faster enemies. Overall, this creature is a dangerous adversary with a blend of offensive and defensive capabilities, presenting a significant challenge to any party that crosses its path.</summary>
 
 <detail>

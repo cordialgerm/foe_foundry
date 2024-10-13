@@ -1,6 +1,8 @@
 <MonsterName/>Falsifier Fog</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Falsifier Fog is a Huge Undead creature with a chaotic evil alignment, serving as a potent foe in combat. With an Armor Class of 13 and 52 hit points, it possesses a solid defense and enough resilience to withstand several rounds of attacks. Its primary strengths lie in its unique abilities that manipulate the battlefield and instill terror in its enemies. Notably, it has good Dexterity, allowing it to be quick and agile, but its Strength is exceptionally low, making it ineffective in physical confrontations. It hovers and flies, which grants it mobility advantages, particularly as it can move freely through narrow spaces and occupy the space of other creatures. </summary>
 
 <detail>

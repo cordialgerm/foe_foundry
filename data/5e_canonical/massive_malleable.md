@@ -1,6 +1,8 @@
 <MonsterName/>Massive Malleable</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>16</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>248</HP>
 <summary>The Massive Malleable is a formidable and chaotic aberration with a gargantuan size, capable of inflicting devastating effects on its surroundings and enemies. With a challenge rating of 16, this creature possesses a remarkable pool of hit points, totaling 248, making it highly durable in combat. Its unique abilities allow it to absorb other malleables to heal itself, manipulate its form seamlessly, and even drain the life force from its opponents. However, the Massive Malleable has low dexterity, which affects its agility and precision in combat, but it compensates for this with its high strength and constitution. Overall, the Massive Malleable is a terrifying foe characterized by its ability to shapeshift and regenerate, making it a significant threat in any encounter.</summary>
 
 <detail>

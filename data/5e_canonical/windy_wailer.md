@@ -1,6 +1,8 @@
 <MonsterName/>Windy Wailer</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>75</HP>
 <summary>The Windy Wailer is a large undead creature characterized by its neutral evil alignment and haunting abilities. This creature thrives on cold and necrotic energy, making it a formidable adversary in combat, especially against weaker foes. Its notable strengths include high dexterity, exceptional movement capabilities, and a suite of chilling attacks that can incapacitate and frighten its opponents. The Windy Wailer's weaknesses lie primarily in its reliance on the intimidation of its presence and its susceptibility to radiant damage, which is not mentioned as an immunity or resistance. With a challenge rating of 5, it poses a significant threat, particularly to adventurers who may be unprepared for its psychological and physical tactics.</summary>
 
 <detail>

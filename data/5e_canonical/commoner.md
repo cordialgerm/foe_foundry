@@ -1,8 +1,10 @@
 <MonsterName/>Commoner</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
-<Subtype/>any lineage</Subtype>
 <Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>0</CR>
+<AC/>10</AC>
+<HP/>4</HP>
 <summary>A Commoner is an ordinary human or humanoid, typically a farmer, laborer, or craftsman. They wear simple clothes and lack combat training, making them vulnerable to threats from monsters, bandits, or marauding armies. Though they are not skilled fighters, Commoners are often resilient and resourceful, able to survive in harsh conditions and make do with whatever tools they have. They form the backbone of most societies, tending fields, raising livestock, or practicing simple trades. Despite their lack of power, Commoners often play pivotal roles in the stories of adventurers, offering shelter, information, or aid.</summary>
 
 <summary>The Commoner is a humble and unassuming creature within the Dungeons & Dragons universe, representing the everyday folk who are often swept up in the grand adventures of heroes. As a Medium humanoid with a very low challenge rating of 0, it represents an extremely weak opponent in combat with minimal offensive capabilities and very few hit points. It is primarily notable for its simplicity in rules and mechanics, making it an ideal character for players to use for role-playing or for Dungeon Masters to populate their worlds with flavor. The Commoner lacks any significant strengths and poses a negligible threat in encounters, making them excellent for non-combat scenarios or as background characters.</summary>

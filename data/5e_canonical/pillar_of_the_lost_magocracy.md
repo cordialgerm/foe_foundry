@@ -1,6 +1,8 @@
 <MonsterName/>Pillar of the Lost Magocracy</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Pillar of the Lost Magocracy is a huge construct characterized by its chaotic neutral alignment and formidable magical prowess. Its primary role is to serve as a guardian or an obstacle within its domain, wielding significant control over its environment through unpredictable magical attacks. It boasts an impressive quantity of hit points, standing firm against physical damage while being immune to poison and resistant to nonmagical attacks. However, its low Dexterity and lack of mobility limit its physical capabilities, making it more reliant on its mental and magical abilities to influence combat. Additionally, the construct is immune to several debilitating conditions, granting it resilience in battle.</summary>
 
 <detail>

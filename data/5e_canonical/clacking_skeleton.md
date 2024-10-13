@@ -1,6 +1,8 @@
 <MonsterName/>Clacking Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (armor scraps)</AC>
+<HP/>45</HP>
 <summary>The Clacking Skeleton is a medium undead creature characterized by its neutral evil alignment. It serves primarily as a menacing melee combatant that can instill fear in its enemies. With an armor class of 14, it possesses a solid defense, while its 45 hit points indicate that it can endure a fair amount of damage before being defeated. The creature's notable abilities include its fear-inducing Horrid Clacking, which can disrupt the tactics of adventurers and make them hesitate in battle. However, despite its capabilities, the Clacking Skeleton has a few weaknesses, such as its vulnerability to bludgeoning damage, which can significantly reduce its effectiveness in combat. </summary>
 
 <detail>

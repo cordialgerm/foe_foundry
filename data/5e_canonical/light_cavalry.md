@@ -1,6 +1,8 @@
 <MonsterName/>Light Cavalry</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>39</HP>
 <summary>The Light Cavalry is a Medium humanoid creature characterized by its lawfully neutral alignment and adeptness in mounted combat. With a challenge rating of 1, this creature possesses solid combat capabilities, highlighted by its special abilities and proficiency in both melee and ranged attacks. One notable strength is the ability called "Infantry Slayer," which grants it an advantage in melee attacks against smaller opponents, making it especially lethal on the battlefield. However, its lower intelligence and charisma scores indicate weaknesses in problem-solving and social interactions. While the Light Cavalry is generally well-equipped for combat, its reliance on its mount and fire-based attacks can limit its versatility in non-combat scenarios.</summary>
 
 <detail>

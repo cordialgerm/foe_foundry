@@ -1,6 +1,8 @@
 <MonsterName/>Angel, Psychopomp</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Psychopomp Angel is a celestial creature that embodies the concepts of guidance and protection in the realms of the afterlife. Standing as a guardian for souls transitioning between worlds, this medium-sized entity exhibits a lawful neutral alignment, prioritizing order and balance above all. With a strong focus on radiant damage, it is capable of both offense and defense, able to resist various forms of harm due to its damage resistances and condition immunities. The Psychopomp Angel excels in scenarios requiring the support of allies or the disruption of enemies’ plans, especially through its powerful abilities to manipulate Will saving throw effects, granting it both strategic and tactical advantages in combat. However, its reliance on certain spells and abilities makes it vulnerable to effects that can bypass its defenses or disrupt its actions.</summary>
 
 <detail>

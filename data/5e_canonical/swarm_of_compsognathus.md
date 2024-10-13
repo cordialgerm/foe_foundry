@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Compsognathus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>44</HP>
 <summary>The Swarm of Compsognathus is a medium-sized beast characterized by its unaligned nature and a low challenge rating of 1, making it a relatively easy encounter for adventurers. With an Armor Class of 12 and Hit Points totaling 44 (calculated as 8d8 + 8), this swarm can withstand a moderate amount of damage before being taken down. The swarm moves swiftly with a speed of 30 feet and can pose a threat due to its stealth capabilities. Its strengths include resistance to bludgeoning, piercing, and slashing damage, as well as immunity to several conditions such as being charmed or stunned. However, the Swarm of Compsognathus has low strength and intelligence attributes, which could limit its effectiveness in direct confrontations. Notably, it can effectively hide in grass due to its special ability, Grasslands Camouflage, allowing for ambush tactics.</summary>
 
 <detail>

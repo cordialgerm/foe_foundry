@@ -1,6 +1,8 @@
 <MonsterName/>Ghost</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>11</AC>
+<HP/>45</HP>
 <summary>A Ghost is the spectral remains of a once-living being, often tied to unfinished business or intense emotions. Its translucent form drifts silently through the air, and it is able to pass through walls and objects effortlessly. Ghosts are hauntingly beautiful or horrifyingly distorted, depending on the circumstances of their death. They can possess the living, drain life energy, or induce supernatural fear in those who encounter them. Ghosts are often bound to a specific location or object and can be difficult to permanently destroy unless their underlying reason for remaining in the world is resolved.</summary>
 
 <summary>The Ghost is a Medium Undead creature, known for its ethereal presence and haunting abilities. With an Armor Class of 11, it possesses moderate defenses, but its low HP of 58, derived from 13d8, indicates that it can be vulnerable if hit enough times. Ghosts fly at a speed of 40 feet, allowing them to maneuver easily in combat. They are rated with a Challenge Rating of 4, making them moderately challenging opponents for adventurers, worth 1,100 XP upon defeat. Ghosts are primarily characterized by their incorporeal nature, allowing them to phase through physical entities, making them harder to hit, especially with nonmagical attacks.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Adult Amethyst Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>17</CR>
+<AC/>18</AC>
+<HP/>220</HP>
 <summary>The Adult Amethyst Dragon is a powerful and formidable foe within the Dungeons & Dragons universe, classified as a Huge Dragon with a Challenge Rating of 17. This dragon boasts an impressive Armor Class of 18 and an extensive pool of Hit Points totaling 220, indicating its considerable resilience in battle. As a master of psionics, the Amethyst Dragon excels in controlling the battlefield through its powerful abilities, particularly its capacity to charm and manipulate its enemies. While it possesses good physical capabilities, with strong Strength, Dexterity, and Constitution scores, it is its Intelligence and Charisma that truly set it apart, giving it exceptional prowess in spellcasting and telepathic interactions. One notable weakness is its dependency on its telepathic powers; if unable to use them, it may find itself less effective in combat.</summary>
 
 <detail>

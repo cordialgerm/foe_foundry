@@ -1,6 +1,8 @@
 <MonsterName/>Tosculi Jeweled Drone</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Tosculi Jeweled Drone is a small humanoid creature with lawful evil alignments, characterized by its striking appearance and unique abilities that enhance its allies while hindering its enemies. With an Armor Class of 15, it has reliable defenses thanks to its natural armor. The drone boasts a strong pool of hit points, totaling 90, making it resilient in combat. It has an impressive Dexterity of 18, allowing it to excel in Agile maneuvers and attacks, while its Constitution of 18 grants it formidable durability. The Jeweled Drone can fly with a speed of 60 feet, making it highly mobile, and walk at a speed of 30 feet. As a Challenge Rating of 4 creature, it is a moderately challenging foe that can be a powerful ally in battle. However, it is vulnerable to strategy and cunning, particularly when faced with opponents who can avoid its sight-based abilities.</summary>
 
 <detail>

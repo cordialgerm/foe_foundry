@@ -1,6 +1,8 @@
 <MonsterName/>Cueyatl</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>21</HP>
 <summary>The Cueyatl is a small, humanoid creature embodying a lawful evil alignment. This creature possesses unique abilities and adaptations that make it a formidable opponent in its natural habitat. With a decent level of cunning and dexterity, the Cueyatl excels in stealth and mobility, making it a threat in jungle terrains. Despite its relatively low armor class and hit points, its capacity for quick maneuvers and advantageous terrain interactions gives it a strategic edge in combat. The Cueyatl primarily uses its spear for attacks, capable of inflicting significant poison damage along with piercing damage, enhancing its lethality in battle.</summary>
 
 <detail>

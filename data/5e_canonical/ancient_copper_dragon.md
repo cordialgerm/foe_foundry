@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Copper Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>21</CR>
+<AC/>21 (natural armor)</AC>
+<HP/>350</HP>
 <summary>An Ancient Copper Dragon is a witty and playful creature, with scales that have taken on the dark greenish-brown color of weathered copper. Known for their sharp minds and love of riddles and games, Copper Dragons often dwell in rocky hills or mountains, where they make their lairs in hidden, labyrinthine caves. These dragons are known for their mischievous personalities, often playing harmless tricks on travelers. Despite their playful nature, they are formidable in combat, able to breathe a stream of corrosive acid or release a gas that slows and confuses their enemies. Copper Dragons value humor and wit above all else.</summary>
 
 <summary>The Ancient Copper Dragon is a gargantuan creature with an impressive presence, renowned for its cunning intelligence and powerful magical abilities. This creature serves both as a formidable combatant and a master of deception, capable of using its environment to its advantage. With a high Armor Class of 21 and substantial hit points totaling 367, it is tough to bring down. This dragon boasts a Challenge Rating of 23, indicating its potential to be a significant threat in any encounter, awarded 50,000 experience points upon defeat. Its strengths lie in its high Constitution, Charisma, and Strength scores, which enhance its melee attacks and magic usage. However, with average Dexterity and Wisdom, the dragon shows some vulnerabilities in terms of speed and perception, making stealth and maneuverability more challenging.</summary>

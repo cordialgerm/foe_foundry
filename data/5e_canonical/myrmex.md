@@ -1,6 +1,8 @@
 <MonsterName/>Myrmex</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Myrmex is a medium-sized elemental creature that embodies the essence of earth and nature, belonging to the neutral good alignment. It boasts impressive durability through its natural armor and hit points, making it a resilient opponent in combat. With a challenge rating of 5, the Myrmex strikes a balance between offense and defense, proficient at maneuvering through varied terrain due to its exceptional speed in walking, burrowing and climbing. This creature features a robust set of abilities that reflect its connection to the earth, utilizing both melee attacks and spell-like abilities to manipulate the battlefield. However, its low Charisma indicates that while it may have some knowledge, it is not particularly engaging in social interactions.</summary>
 
 <detail>

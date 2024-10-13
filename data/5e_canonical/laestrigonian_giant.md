@@ -1,6 +1,8 @@
 <MonsterName/>Laestrigonian Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Laestrigonian Giant is a formidable and chaotic evil creature that embodies raw power and menace on the battlefield. With a large stature and a natural armor providing a moderate level of protection, it boasts a significant pool of hit points, making it a challenging foe. The giant's strength is exceptional, allowing it to deal devastating damage with its physical attacks, while its constitution further enhances its durability. However, its intelligence and charisma are notably low, which limits its tactical options and social interactions. The Laestrigonian Giant's primary advantages lie in its brutal melee capabilities and the potential to inflict debilitating diseases on its targets, making it a dangerous adversary for adventurers who dare to confront it.</summary>
 
 <detail>

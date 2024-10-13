@@ -1,6 +1,8 @@
 <MonsterName/>Ashwalker</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>31</HP>
 <summary>The Ashwalker is a Medium-sized undead creature embodying a unique blend of draconic traits and malevolent energy. It is classified as Neutral Evil and has an overall challenge rating of 1, making it a relatively low-level adversary with a distinct threat due to its breath-based abilities. The Ashwalker has moderate resilience, having an Armor Class of 12, and a total of 31 hit points, which allows it to withstand a few hits before being incapacitated. Its strengths lie in its elemental resistances and abilities that deal damage based on the dragon type associated with its death. However, its intelligence and charisma are low, limiting its utility in social interactions and strategic planning. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Titan</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>12</CR>
+<AC/>15 (breastplate)</AC>
+<HP/>198</HP>
 <summary>The Ancient Titan is a formidable gargantuan celestial creature that embodies the essence of both strength and power, making it a literal titan among its peers in combat. With a neutral good alignment, it typically acts on the side of righteousness and justice. This creature boasts impressive physical prowess with a Strength score of 27, allowing it to deliver devastating attacks, while its high Constitution score of 22 grants it substantial hit points, making it a durable opponent in battles. It has a noticeable weakness to magical effects, which is mitigated by its Magic Resistance ability, granting it an advantage on saving throws against spells. With a Challenge Rating of 12, it presents a significant challenge to adventurers, requiring strategic planning and teamwork to overcome its might.</summary>
 
 <detail>

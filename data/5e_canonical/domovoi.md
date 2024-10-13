@@ -1,6 +1,8 @@
 <MonsterName/>Domovoi</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Domovoi is a medium-sized fey creature known for its chaotic neutral alignment. This creature serves as a guardian of household spaces, leveraging its magical abilities to protect and intimidate intruders. With a challenge rating of 4, it poses a moderate threat to adventurers, relying on a combination of physical strength and spellcasting for both offense and defense. The Domovoi has notable immunities to acid and lightning damage, complementing its high hit points of 93, which make it a resilient opponent. However, its low intelligence suggests limitations in mental tactics, while its charisma allows it to effectively utilize spells that affect its surroundings and allies.</summary>
 
 <detail>

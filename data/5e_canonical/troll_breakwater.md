@@ -1,6 +1,8 @@
 <MonsterName/>Troll, Breakwater</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Breakwater Troll is a formidable Large Giant with a chaotic neutral alignment. It has a strong presence in combat due to its high hit points, sturdy armor class, and its unique regenerative abilities. Characterized by its ability to thrive in both water and on land, this creature can deal substantial damage while being resistant to many attacks. Although it lacks intelligence and charisma, it compensates with significant strength and constitution. This makes it an excellent frontline combatant. However, it is vulnerable to lightning and force damage, which can temporarily hinder its regeneration.</summary>
 
 <detail>

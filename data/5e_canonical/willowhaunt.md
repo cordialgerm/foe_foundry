@@ -1,6 +1,8 @@
 <MonsterName/>Willowhaunt</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Willowhaunt is a formidable Huge Undead creature with a neutral evil alignment, renowned for its ability to manipulate and confuse foes with illusions and madness. This monster has a respectable Armor Class of 14 and boasts a total of 90 hit points, derived from rolling twelve d12 dice plus an additional twelve hit points. The Willowhaunt's movement is relatively slow, allowing it to walk only 20 feet per turn, but it compensates for this with various tactical abilities that can turn the tide of battle. Its Challenge Rating is 5, suggesting it’s a substantial threat worthy of 1,800 experience points upon defeat. Notably, this creature has high Charisma and Strength scores, giving it good proficiency in intimidation and the ability to deal significant damage. It is particularly dangerous due to its immunities to necrotic and poison damage, as well as its resistance to nonmagical physical attacks, making it tough to bring down without magical intervention.</summary>
 
 <detail>

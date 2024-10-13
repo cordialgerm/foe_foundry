@@ -1,6 +1,8 @@
 <MonsterName/>Dwarf, Firecracker</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (scale mail)</AC>
+<HP/>68</HP>
 <summary>The Dwarf Firecracker is a Medium humanoid creature known for its explosive combat style and formidable physical prowess. With a robust Armor Class of 14 and 68 hit points, it thrives in close-range battles, making it a tough opponent for adventurers. It has a Challenge Rating of 3, offering 700 experience points upon defeat. The Firecracker possesses strong physical attributes, particularly in strength and constitution, granting it exceptional capability in melee combat while also possessing some fire-based magical abilities. Its notable strengths include heightened agility in fire, making it more unpredictable in combat situations, and the ability to deal double damage to structures, making it especially dangerous in siege scenarios. However, it has weaknesses in wisdom and dexterity, which could make it susceptible to certain tactics or spells that target those attributes.</summary>
 
 <detail>

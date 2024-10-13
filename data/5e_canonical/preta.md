@@ -1,6 +1,8 @@
 <MonsterName/>Preta</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Preta is a Medium-sized undead creature characterized by its neutral evil alignment. It plays the role of a deceptive and stealthy attacker on the battlefield, employing its ability to manipulate blood and hide in the shadows to gain the upper hand in combat. Known for its - good attack potential and resilience, it can deal significant necrotic damage while sustaining itself through its unique Blood Siphon ability, giving it a sustainable foothold in prolonged encounters. Its weaknesses mainly stem from its moderate defenses and reliance on stealth tactics, making it less effective in direct confrontations against perceptive or high-damage foes.</summary>
 
 <detail>

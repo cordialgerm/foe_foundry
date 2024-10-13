@@ -1,6 +1,8 @@
 <MonsterName/>Chameleon Hydra</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>10</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>184</HP>
 <summary>The Chameleon Hydra is a massive, unaligned monstrosity known for its overwhelming presence in combat. With its five heads and exceptional regenerative abilities, this creature poses a significant threat on the battlefield. Its strengths include high hit points, formidable attack options, and the ability to evade harm through stealth and camouflage. However, it is notably vulnerable to fire damage, which can prevent its heads from regenerating. This hydra's challenge rating of 10 (providing 5,900 experience points) indicates it is a powerful foe, especially for groups that may underestimate its capabilities.</summary>
 
 <detail>

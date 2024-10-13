@@ -1,6 +1,8 @@
 <MonsterName/>Shield Guardian</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>142</HP>
 <summary>A Shield Guardian is a magical construct created to serve and protect its master. These towering, humanoid golems are typically controlled by a magical amulet, allowing their master to command them from a distance. Shield Guardians are incredibly durable, capable of absorbing damage and regenerating over time. In combat, they use their immense strength to defend their master, intercepting attacks and retaliating against foes. Shield Guardians are also enchanted to store and release spells cast by their master, making them versatile protectors. They are often found guarding powerful wizards or valuable treasures.</summary>
 
 <summary>The Shield Guardian is a large construct that serves as a magical protector and combatant. With a Challenge Rating of 7, it boasts impressive defensive and offensive capabilities, making it a strong ally in battles. It possesses a high Armor Class of 17 and 133 hit points, providing substantial durability. The Guardian’s primary strengths are its powerful melee attacks and special abilities that protect its master, enhance its survivability, and offer offensive magic capabilities. However, it is limited by its low Intelligence and Charisma, making it ineffective in complex problem-solving and social interactions. Overall, the Shield Guardian excels as a frontline defender and combat assistance, ideal for spellcasters who wish to have an enchanted protector.</summary>

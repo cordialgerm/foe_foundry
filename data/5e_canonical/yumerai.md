@@ -1,6 +1,8 @@
 <MonsterName/>Yumerai</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>65</HP>
 <summary>The Yumerai is a Medium-sized fey creature known for its connection to dreams and psychic abilities. As a neutral entity, it operates primarily as a manipulator in combat, using its charm and innate magic to alter the landscape of battle. With a decent Armor Class of 13 and 65 hit points, it possesses a good amount of durability for its Challenge Rating of 2, which offers a moderate challenge for adventurers. The Yumerai excels in stealth and psychic damage but is somewhat limited in physical combat options. Its most notable powers revolve around dream manipulation, allowing it to traverse between the dreams of sleeping creatures, control their actions, and inflict psychic harm.</summary>
 
 <detail>

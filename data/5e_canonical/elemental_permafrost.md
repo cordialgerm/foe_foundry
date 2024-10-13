@@ -1,6 +1,8 @@
 <MonsterName/>Elemental, Permafrost</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Permafrost Elemental is a large neutral elemental creature primarily associated with cold and ice. As a strong force in battles, it possesses significant hit points and layers of defense due to its natural armor, making it a formidable opponent. With a challenge rating of 6, it offers reasonable experience points for characters who defeat it. The Permafrost Elemental excels in dealing cold damage and possesses abilities that hinder movement and inflict dangerous diseases. However, it is particularly vulnerable to fire, which can be exploited by fire-wielding characters or spells.</summary>
 
 <detail>

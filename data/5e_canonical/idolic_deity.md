@@ -1,6 +1,8 @@
 <MonsterName/>Idolic Deity</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Idolic Deity is a Small Construct of neutral evil alignment that serves as a formidable adversary in combat. With its impressive armor class of 17 and a substantial 105 hit points, it can absorb a good amount of damage before falling. Its challenge rating of 8 indicates that it poses a significant threat to mid-level adventurers. The creature is highlighted by its high Dexterity and Charisma, which translate into exceptional stealth and deception skills, allowing it to operate effectively in a subtle manner. While it is immune to several damage types and conditions, its real strength lies in its ability to undermine divine power through its Apostasy Aura, making it particularly threatening to spellcasting allies.</summary>
 
 <detail>

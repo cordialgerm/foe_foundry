@@ -1,6 +1,8 @@
 <MonsterName/>Grimlock Technical</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>13</HP>
 <summary>The Grimlock Technical is a Medium humanoid that serves as a cunning and stealthy combatant, often found in rocky terrains where it employs its camouflage to gain the upper hand. With a modest challenge rating of 1/2, the Grimlock is designed to be an ambush predator, utilizing its keen senses and stealth skills to surprise opponents. Its strengths lie in its versatility in combat, able to deal bludgeoning and lightning damage with its melee attacks while also engaging at range with its sling and silenced blunderbuss. However, it has relatively low hit points and weak charisma, making it less effective in social situations and more susceptible to being overpowered by stronger foes.</summary>
 
 <detail>

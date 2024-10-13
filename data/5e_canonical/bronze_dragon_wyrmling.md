@@ -1,6 +1,8 @@
 <MonsterName/>Bronze Dragon Wyrmling (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>32</HP>
 <summary>The Bronze Dragon Wyrmling is a Medium-sized dragon that embodies the traits of its kind with characteristics typical of bronze dragons, including a penchant for cleverness and respect for honor. This creature plays the role of a formidable combatant, possessing significant mobility and the ability to inflict elemental damage through its breath weapon. With a challenge rating of 3, it presents a moderate challenge for adventurers, boasting a decent armor class of 16 and 39 hit points. Its strengths lie in its mobility, both on land and in water, combined with the ability to deliver potent area damage. However, the wyrmling's weaknesses are its relatively low Dexterity score, which is average, and its reliance on saving throws, which may be circumvented through careful strategy by players.</summary>
 
 <detail>

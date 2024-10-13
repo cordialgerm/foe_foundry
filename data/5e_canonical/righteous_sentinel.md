@@ -1,6 +1,8 @@
 <MonsterName/>Righteous Sentinel</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>104</HP>
 <summary>The Righteous Sentinel is a powerful large construct that embodies the lawful good alignment. It serves as a steadfast guardian, effectively combining strong defensive and offensive capabilities. With an armor class of 15 and 104 hit points, it presents a challenging foe. The sentinel excels in melee combat with high strength, having a +5 modifier, while it has notable defenses against a multitude of conditions and forms, making it an exceptional protector. Its main weaknesses lie in its vulnerability to thunder damage and its limited dexterity, which is average at +0. The sentinel's notable special abilities enhance its combat prowess, allowing it to not only absorb damage but also reflect spells back at their casters.</summary>
 
 <detail>

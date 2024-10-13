@@ -1,6 +1,8 @@
 <MonsterName/>Coven Green Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>97</HP>
 <summary>The Coven Green Hag is a cunning and dangerous creature hailing from the fey realms. As a Medium fey, it possesses a strong combination of magical abilities and physical prowess, making it a formidable opponent in combat and a master of deception. With an Armor Class of 14, the hag is somewhat difficult to hit, and its 97 hit points indicate that it can endure a fair amount of damage before falling. It boasts a Challenge Rating of 5, indicating that it poses a significant threat to adventurers. The hag's most notable strengths lie in its spellcasting ability, access to harmful hexes, and transformation powers, allowing it to shift between forms to gain tactical advantages. However, its reliance on spells and abilities means that it can be less effective when those resources are depleted or interrupted.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ooze, Leavesrot</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>8</AC>
+<HP/>105</HP>
 <summary>The Leavesrot is a large, unaligned ooze that serves as a formidable opponent in combat encounters. It possesses a substantial amount of hit points, making it resilient against damage. The ooze's primary strengths include its ability to move through narrow spaces and its effective use of poison to hinder opponents. Its passive abilities allow it to blend in with its environment, making it difficult to detect until it strikes. However, its low movement speed and poor Dexterity can limit its effectiveness in evading attacks. Overall, while it can inflict significant damage and impose debilitating conditions on its foes, the Leavesrot is not particularly agile, making it susceptible to ranged attacks.</summary>
 
 <detail>

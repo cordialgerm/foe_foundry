@@ -1,6 +1,8 @@
 <MonsterName/>Bilwis</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>49</HP>
 <summary>The bilwis is a medium-sized chaotic evil elemental creature that embodies the unpredictable and often destructive forces of nature. With its ability to fly and hover, it possesses remarkable mobility, allowing it to evade most ground-based threats. The bilwis has a relatively moderate Armor Class of 13 and a pool of 49 hit points, making it capable of surviving many encounters while still being moderately vulnerable to attacks. This creature is particularly effective in combat when using its special abilities, especially its unique Air Form, which enables it to navigate through tight spaces and overwhelm opponents. While it has good Dexterity and Charisma, the bilwis is less durable in terms of Constitution and has several immunities, making it challenging to pin down in a fight. However, its challenges mainly relate to its physical strikes, which are less potent against targets that can avoid its attacks.</summary>
 
 <detail>

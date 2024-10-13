@@ -1,6 +1,8 @@
 <MonsterName/>Cultist Psychophant</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>9</CR>
+<AC/>15 (Impenetrable Ego)</AC>
+<HP/>149</HP>
 <summary>The Cultist Psychophant is a Medium Humanoid creature with a non-good alignment that embodies the essence of manipulation and mental dominance. With an Armor Class of 15, bolstered by its special ability Impenetrable Ego, it is capable of avoiding many attacks, while its hit points of 149 (23d8+46) provide it with significant durability in combat. The psychophant excels in psychological warfare, utilizing its abilities to deal psychic damage and control the battlefield. Its Challenge Rating of 9, yielding 5,000 experience points, places it as a formidable opponent for groups of adventurers. However, it is not particularly strong in physical attributes, especially in Strength and Dexterity, which can serve as its weaknesses in direct melee combat scenarios.</summary>
 
 <detail>

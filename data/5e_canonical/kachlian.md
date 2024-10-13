@@ -1,6 +1,8 @@
 <MonsterName/>Kachlian</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Kachlian is a formidable huge aberration that embodies the concept of neutral evil. This creature presents a significant challenge due to its high hit points and powerful abilities, making it a notable foe in any encounter. With its capacity to consume souls, which prevents resurrection unless the Kachlian is defeated in a timely manner, it adds a layer of urgency to combat. Additionally, its spellcasting abilities, while not at the highest level, provide a diverse range of magical effects that can hinder opponents and manipulate the battlefield. Its strengths include high Constitution and a solid Armor Class, making it tough to take down, while its primary weaknesses are its low Dexterity and lack of mobility on the ground.</summary>
 
 <detail>

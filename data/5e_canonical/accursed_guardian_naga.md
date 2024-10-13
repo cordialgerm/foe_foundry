@@ -1,6 +1,8 @@
 <MonsterName/>Accursed Guardian Naga</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>12</CR>
+<AC/>18</AC>
+<HP/>136</HP>
 <summary>The Accursed Guardian Naga is a powerful Large Monstrosity that serves as a formidable foe or a complex ally in your campaign. With a challenge rating of 12, it possesses a significant level of danger, making it an intriguing addition to encounters. The guardian naga boasts both defensive and offensive capabilities: it has a high armor class of 18 and substantial hit points totaling 136. Its combining attributes, such as strong Dexterity and Wisdom, enhance its agility and spellcasting prowess. Capable of traveling both on land and in water, the naga’s amphibious nature adds to its versatility in various terrains. However, it is important to note that the naga is immune to poison and resistant to being charmed or poisoned, while its strong saving throws against magical effects make it more resilient in combat. </summary>
 
 <detail>

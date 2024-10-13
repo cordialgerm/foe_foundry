@@ -1,6 +1,8 @@
 <MonsterName/>Alliumite, Rapscallion</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>38</HP>
 <summary>The Alliumite, referred to as the Rapscallion, is a small chaotic neutral plant creature noted for its cunningness and unique abilities, making it an intriguing opponent in combat. It possesses a decent Armor Class of 15 due to its natural armor, and with 38 hit points, it can sustain moderate damage before going down. The Rapscallion has a good Dexterity score of 18, granting it a +4 modifier, which enhances its mobility and evasiveness. It has a moderate Constitution score of 14, giving it an average resilience to physical damage, but its other attributes, particularly its high Charisma score of 18, reflect its ability to manipulate situations and affect its foes. The creature has a Challenge Rating of 2, making it a suitable encounter for lower-level adventurers, with its ability to blend into natural environments and utilize a mix of physical and emotional attacks to subdue its adversaries.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Slaad Tadpole</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>10</HP>
 
 
 ---

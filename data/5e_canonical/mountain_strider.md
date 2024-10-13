@@ -1,6 +1,8 @@
 <MonsterName/>Mountain Strider</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>34</HP>
 <summary>The Mountain Strider is a Large Monstrosity with a chaotic neutral alignment, known for its imposing presence and agility in mountainous terrains. With an Armor Class of 12 and 34 hit points, it is moderately durable for its challenge rating of 1, where it can provide a significant challenge for lower-level adventurers. The creature’s Strength and Constitution are particularly strong, making it powerful in close combat, while its Dexterity gives it a decent chance to evade attacks and move quickly through challenging environments. The Mountain Strider excels when charging at its foes, dealing additional damage and potentially knocking them prone. However, it has a low Intelligence, Wisdom, and Charisma, which can limit its interactions and tactical decisions outside of combat.</summary>
 
 <detail>

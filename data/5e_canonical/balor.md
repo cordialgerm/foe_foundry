@@ -1,7 +1,9 @@
 <MonsterName/>Balor (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
 <Subtype/>demon</Subtype>
+<CR/>19</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>262</HP>
 <summary>The Balor is a towering, demonic figure of immense power, standing over 12 feet tall and wreathed in an aura of flame. Its leathery wings stretch wide, and its muscular body is clad in dark, infernal armor. The Balor wields a whip made of fire and a massive, lightning-infused sword, both capable of dealing immense damage. These demons are generals in the armies of the Abyss, commanding legions of lesser demons with ruthless efficiency. Their very presence ignites the ground beneath them, and they can summon storms of fire and lightning. Balors are beings of pure evil, driven by destruction and a thirst for chaos.</summary>
 
 <summary>The Balor is a formidable and overwhelming creature that embodies chaos and destruction, classified as a Huge Fiend. With a substantial Armor Class of 19 and a massive total of 299 hit points, this creature is built to withstand heavy assaults and inflict devastating damage. Its Challenge Rating of 19 signifies its potency, presenting a significant threat to even experienced adventurers, and it grants 22,000 experience points upon defeat. The Balor's impressive physical and magical capabilities make it an exceptional adversary in combat. It possesses a mix of high attributes, particularly in Strength with a value of 26, which translates to a modifier of +8, representing exceptional effectiveness in physical confrontations. However, it has a few vulnerabilities, such as susceptibility to damage from nonmagical weapons and contingent to its fire and poison immunities.</summary>

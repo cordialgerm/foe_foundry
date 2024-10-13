@@ -1,6 +1,8 @@
 <MonsterName/>Galidroo</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>172</HP>
 <summary>The Galidroo is a formidable, huge monstrosity characterized by its neutral evil alignment. With a Challenge Rating of 12, this creature poses a significant threat in combat, boasting high damage output, impressive hit points, and various debilitating abilities that weaken its enemies. Its combination of physical prowess and psychic abilities makes it a versatile opponent. The Galidroo excels in damaging foes and controlling the battlefield but has notable weaknesses against strong magical attacks that overcome its resistances. </summary>
 
 <detail>

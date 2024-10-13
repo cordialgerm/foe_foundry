@@ -1,6 +1,8 @@
 <MonsterName/>Ink Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>54</HP>
 <summary>The Ink Devil is a Small, Lawful Evil fiend that excels in stealth and manipulation, making it a formidable foe for adventurers who rely on magic and cunning. With an impressive Dexterity score of 18 and robust Intelligence, it is adept at sneaking around and casting spells to bewilder its enemies. The Ink Devil's primary strengths lie in its ability to resist magical effects, thanks to its Magic Resistance, and its unique capabilities to disrupt spellcasters and mark targets for its allies. Its challenge rating of 2 allows it to serve as a dangerous adversary to lower-level parties. One of its notable abilities, Devil's Ink, can severely hinder opponents by marking them and giving the Ink Devil’s allies an advantage against them.</summary>
 
 <detail>

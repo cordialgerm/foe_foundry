@@ -1,6 +1,8 @@
 <MonsterName/>Swamp Lily</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Swamp Lily is a medium-sized plant creature that occupies an unaligned status, serving primarily as a deceptive and manipulative force in swamp environments. With an Armor Class of 15 and a total of 136 hit points, it demonstrates a decent level of resilience in combat. It operates effectively within the Challenge Rating of 7, making it a noteworthy opponent for adventurers. The Swamp Lily excels at manipulation through its unique abilities, particularly its capacity to charm and incapacitate foes, while sustaining itself with good defensive capabilities such as damage immunities and condition immunities. However, its movement speed is limited to 15 feet, which can be considered a significant weakness in terms of mobility.</summary>
 
 <detail>

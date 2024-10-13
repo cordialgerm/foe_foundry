@@ -1,6 +1,8 @@
 <MonsterName/>Kamaitachi</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>84</HP>
 <summary>The Kamaitachi is a small but elusive monstrosity with a chaotic neutral alignment, making it a wild card in any encounter. With a challenge rating of 5, it possesses a balanced combination of speed, resilience, and striking power. A central aspect of the Kamaitachi's strength lies in its agility and deceptive offensive abilities, particularly in its unique forms. Its weaknesses primarily stem from its limited ability to engage in direct confrontations, as its performance relies heavily on the surrounding environment, particularly snowy conditions for optimal effectiveness. Creatures that manage to locate its true form may have an advantage, but until then, it thrives on chaos and stealth.</summary>
 
 <detail>

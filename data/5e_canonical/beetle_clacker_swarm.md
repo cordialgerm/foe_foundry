@@ -1,6 +1,8 @@
 <MonsterName/>Beetle, Clacker Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>36</HP>
 <summary>The Clacker Swarm is a Medium-sized beast that represents a gathering of aggressive beetles. Unaligned in its nature, this swarm carries a Challenge Rating of 3 and can serve as a significant threat to adventurers, especially when they become surrounded. With an Armor Class of 14, it is reasonably difficult to hit, although its hit points total 36, making it vulnerable to concentrated attacks. The swarm has a unique set of strengths and weaknesses; it inflicts thunder damage with its constant clacking ability, while also being immune to conditions that might debilitate individual creatures. However, its low Strength score and very low Intelligence limit its physical capabilities and tactical awareness.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Gelatinous Cube (Ooze)</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>2</CR>
+<AC/>6</AC>
+<HP/>84</HP>
 <summary>A Gelatinous Cube is a large, transparent ooze that takes the shape of a perfect cube. It slowly moves through dungeons and underground passages, dissolving and consuming organic material in its path. Its nearly invisible form makes it difficult to spot until it's too late, as the cube engulfs its prey and digests them with powerful acids. Gelatinous Cubes are mindless creatures, following a basic instinct to eat anything they come across. They are often found in old dungeons, keeping the corridors clean of debris and bodies, but are dangerous to any living creature that gets too close.</summary>
 
 <summary>The Gelatinous Cube is a large ooze that serves as a menacing and unique threat in dungeon environments. With a Challenge Rating of 2, it presents a moderate challenge to adventurers, primarily due to its ability to engulf creatures and deal ongoing acid damage. Its main strengths lie in its ability to surprise unsuspecting adventurers with its transparent form and its unique attack methods that can restrain and damage multiple foes simultaneously. However, its weaknesses include a low Armor Class of 6 and limited mobility on land, as it can only walk and swim at a speed of 15 feet. The cube represents both a physical danger and a tactical puzzle for players looking to outmaneuver or avoid its grasp.</summary>

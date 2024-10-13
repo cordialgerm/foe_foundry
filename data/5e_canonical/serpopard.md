@@ -1,6 +1,8 @@
 <MonsterName/>Serpopard</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Serpopard is a formidable large monstrosity known for its unique appearance and stealthy abilities. Unaligned in nature, this creature is adept at ambushing its foes in coastal or swampy environments, utilizing its camouflage and quick reflexes. With an Armor Class of 15 owing to its natural armor and a solid pool of 85 hit points, the Serpopard can endure significant damage in combat. It presents a Challenge Rating of 4, which makes it a mid-tier threat to adventurers, capable of dealing substantial damage with its multiattack feature, combining both bite and claw attacks. While it showcases strong Dexterity and Strength, it suffers from poor Intelligence and Charisma, indicating that it may lack in strategic interaction and social situations. Overall, the Serpopard is a dangerous predator that excels in ambush tactics but can be outmatched by clever opponents.</summary>
 
 <detail>

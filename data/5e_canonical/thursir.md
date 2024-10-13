@@ -1,6 +1,8 @@
 <MonsterName/>Thursir</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (chain shirt)</AC>
+<HP/>114</HP>
 <summary>The Thursir is a large giant known for its formidable presence and inherent malice, classified as either Neutral Evil or Lawful Evil. With a challenge rating of 3, it poses a moderate threat to adventurers. Its most notable attributes include high strength and constitution, providing it with substantial hit points and exceptional melee capabilities. The creature has an armor class of 13, which is relatively stable for its size, but its glaring weakness is a lack of agility. The Thursir excels in direct confrontations due to its potent attacks and the ability to inflict additional damage with its special abilities. However, it can be taken down through strategic planning, especially by utilizing tactics that capitalize on its lower dexterity and possible vulnerability to spells.</summary>
 
 <detail>

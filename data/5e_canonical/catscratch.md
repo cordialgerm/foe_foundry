@@ -1,6 +1,8 @@
 <MonsterName/>Catscratch</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Catscratch is a huge aberration embodying chaotic evil, serving as a formidable opponent in any Dungeons and Dragons campaign. With a Challenge Rating of 3, it presents a significant threat to low- to mid-level parties. The Catscratch relies on its physical prowess—recording a Strength score of 18, yielding a +4 modifier, which is considered very good. Its Dexterity of 14 provides a +2 modifier, resulting in a good level of agility, while its Constitution score of 17 grants it a +3 modifier, ensuring a solid amount of hit points with a total of 76, calculated as 8d12+24. While its mental attributes are notably weak, particularly with an Intelligence score of 3 (-4 modifier, which is very bad), the Catscratch compensates with its enhanced physical capabilities, speed, and special abilities that allow it to sustain itself in combat.</summary>
 
 <detail>

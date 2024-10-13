@@ -1,6 +1,8 @@
 <MonsterName/>Illhveli, Kembingur</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>210</HP>
 <summary>The Illhveli, known as Kembingur, is a gargantuan monstrosity that embodies chaotic evil. This fearsome aquatic creature combines substantial physical power with tactical advantages that make it a formidable opponent in combat. It boasts a high armor class of 17, which provides a good level of protection using natural armor. With a staggering 210 hit points, it can endure significant damage before being defeated. The Kembingur excels in melee combat, particularly against weakened foes due to its "Blood Frenzy" ability, which bestows it an advantage on attack rolls against creatures that are not at full health. Its ability to maneuver through water with a speed of 60 feet complements its lethargic walking speed of just 5 feet. While possessing strong physical attributes, notably a Strength score of 27 for exceptional melee capabilities, it suffers from lower Intelligence and Charisma. The Kembingur is particularly dangerous when blood is in the water, thanks to its "Blood Scent" ability, which allows it to detect and track injured creatures.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Dawnfly</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>19</CR>
+<AC/>21 (natural armor)</AC>
+<HP/>261</HP>
 <summary>The Dawnfly is a gargantuan beast that embodies the fierce and chaotic essence of both the skies and the ground. Unaligned and possessing no inherent loyalty, it acts purely on instinct and desire, making it a formidable force on the battlefield. Its strengths lie in its immense size, powerful physical attacks, and a unique combination of mobility and defensive traits. Notably, the Dawnfly is immune to certain types of damage, which makes it difficult to weaken through conventional means. However, its low Intelligence indicates that it may not employ complex strategies, and its challenge rating of 19 signals that it is a strong opponent that could overwhelm less experienced adventurers.</summary>
 
 <detail>

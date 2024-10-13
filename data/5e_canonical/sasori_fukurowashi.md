@@ -1,6 +1,8 @@
 <MonsterName/>Sasori Fukurowashi</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>123</HP>
 <summary>The Sasori Fukurowashi, a Medium-sized neutral good Fey creature, is an agile and versatile opponent within the D&D universe, particularly at a Challenge Rating of 9. Its natural armor provides a solid Armor Class of 17, while its robust Hit Points of 123 allow it to withstand considerable damage. Notably, the creature’s abilities include high Dexterity and Wisdom scores, providing it with exceptional stealth and perception capabilities, making it difficult to detect and formidable in both combat and exploration scenarios. The Sasori Fukurowashi is weakened by its vulnerability to magical attacks, but its resistance to various elemental damage types and its immunities to poison and exhaustion make it quite resilient.</summary>
 
 <detail>

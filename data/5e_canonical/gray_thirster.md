@@ -1,6 +1,8 @@
 <MonsterName/>Gray Thirster</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Gray Thirster is a Medium-sized Undead creature with a Neutral Evil alignment, serving as a formidable foe in combat through its unique abilities and resilience. With a Challenge Rating of 2, it presents a good challenge for lower-level adventurers, boasting a decent Armor Class of 13 and 52 hit points, stemming from eight dice rolls of eight plus an additional sixteen. Its speed is average at 30 feet, allowing it to engage effectively in close combat. Notably, the Gray Thirster features damage immunities to fire and poison, resistance to necrotic damage, and various immunities to conditions such as being charmed or frightened, making it quite resilient in confrontations. However, its intelligence is notably low at a score of 6, reflecting its simplicity in tactics beyond its abilities.</summary>
 
 <detail>

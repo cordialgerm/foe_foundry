@@ -1,6 +1,8 @@
 <MonsterName/>The Barbed</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>44</HP>
 <summary>The Barbed is a small, humanoid creature with a lawful evil alignment, often acting as a cunning and ruthless combatant in the shadows. With an Armor Class of 13 and a total of 44 hit points, it can absorb some damage but is not particularly sturdy in prolonged battles. It is capable of moving a moderate distance with a speed of 30 feet per round. Its Challenge Rating of 1 indicates that it provides a moderate challenge to low-level adventurers, offering 200 XP upon defeat. The Barbed excels in dexterity and stealth, making it a good ambush attacker and an excellent scout for its allies. However, it is not particularly intelligent or charming, which limits its effectiveness in social encounters.</summary>
 
 <detail>

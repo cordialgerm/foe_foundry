@@ -1,6 +1,8 @@
 <MonsterName/>Silent Crier</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Silent Crier is a medium-sized neutral evil fiend that excels in psychological and area control tactics during combat. With a respectable armor class of 15 and a significant pool of hit points totaling 105, it presents a solid challenge to adventurers. Its challenge rating of 6 makes it a formidable opponent, capable of dealing significant damage while also possessing strong crowd control abilities through its unique Bell Toll action. The creature has a well-rounded set of attributes, showcasing good strength, above-average constitution, and exceptional wisdom, making it both durable and threatening in combat. However, it has a weakness in speed, only being able to walk 30 feet per turn, which may restrict its ability to reposition effectively in battle.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Bleakheart</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>12</AC>
+<HP/>66</HP>
 <summary>The Bleakheart is a Medium-sized undead creature characterized by its neutral evil alignment. It embodies a haunting presence that instills despair in its victims. With a focus on stealth and manipulation, the Bleakheart is uniquely adept at infiltrating locations undetected and weakening its enemies spiritually. While it possesses a decent level of durability with a moderate armor class of 12 and 66 hit points, its major vulnerability lies in its exposure to sunlight, where it becomes significantly less effective. Overall, the Bleakheart is capable of delivering both psychic damage and debilitating effects to enemies, making it a formidable foe in darker settings.</summary>
 
 <detail>

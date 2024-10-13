@@ -1,6 +1,8 @@
 <MonsterName/>Eel Hound</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>77</HP>
 <summary>The Eel Hound is a medium-sized fey creature that embodies the characteristics of both land and aquatic life. With a neutral alignment, it can often be found in regions where water meets land, making it an adept hunter in both environments. The creature boasts a solid Armor Class of 14, enhanced by natural armor, and possesses 77 hit points, derived from a robust constitution. A Challenge Rating of 2 indicates that the Eel Hound is a formidable opponent for lower-level adventurers, rewarding a successful encounter with 450 experience points. It exhibits impressive physical attributes, particularly its Strength of 19, which gives it a good modifier of +4, and a Dexterity of 16, granting a modifier of +3, allowing it to be both powerful and agile in combat. Its key strengths include the ability to attack effectively with Pack Tactics, which gives it a great advantage when working alongside allies, and its versatile actions that can hinder opponents.</summary>
 
 <detail>

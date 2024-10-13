@@ -1,6 +1,8 @@
 <MonsterName/>Goblin Dreadnought</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>17</AC>
+<HP/>10</HP>
 <summary>The Goblin Dreadnought is a small humanoid creature known for its agility and tactical prowess. With an armor class of 17, it boasts a good defensive capability, allowing it to withstand attacks relatively well for its challenge rating of 1/2, offering 100 experience points upon defeat. Its hit points are limited to 10, which indicates a vulnerability to sustained attacks. The Goblin Dreadnought possesses average strength and constitution, but its dexterity of 12 provides it with good mobility and evasion. This creature excels in stealth, making it a valuable ambusher in combat scenarios, but it lacks any extraordinary intelligence, wisdom, or charisma, limiting its social interactions and tactical complexity. </summary>
 
 <detail>

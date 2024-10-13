@@ -1,6 +1,8 @@
 <MonsterName/>Ankou Soul Seeker</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>171</HP>
 <summary>The Ankou Soul Seeker is a formidable creature, classified as a large dragon with a neutral alignment. It serves primarily as a guardian of the boundary between life and death, utilizing its unique abilities to interact with undead creatures and transport souls between planes. The Ankou possesses a strong defensive ability with a notable Armor Class of 15 and substantial hit points totaling 171, making it challenging to defeat in combat. With an impressive flight speed of 80 feet, it can maneuver swiftly around the battlefield, while its various resistances to damage, including cold, necrotic, and poison, give it resilience against many forms of attack. However, while its Dexterity modifier of +0 is average, it excels in Constitution, granting it a good saving throw of +7, and shows exceptional skill in perception with a +8 modifier. Its challenge rating of 8 reflects its significant combat and support capabilities, suitable for advanced parties.</summary>
 
 <detail>

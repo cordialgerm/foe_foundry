@@ -1,6 +1,8 @@
 <MonsterName/>Cave Ogre</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>119</HP>
 <summary>The Cave Ogre is a large giant known for its considerable physical strength and resilience, making it a formidable opponent in combat. With an armor class of 12 and a decent pool of hit points totaling 119, it can endure multiple hits before succumbing to adversaries. This creature's challenge rating of 2 indicates that it is a moderately difficult opponent for a party of adventurers. The ogre's strengths lie in its high strength stat of 19, providing it with a +4 modifier, enabling it to deal significant melee damage. However, its dexterity is notably low at 8, leading to a -1 modifier, which reflects poor agility and coordination. The Cave Ogre possesses special abilities that allow it to recover from adverse effects, enhancing its survivability during encounters.</summary>
 
 <detail>

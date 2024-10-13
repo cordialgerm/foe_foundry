@@ -1,6 +1,8 @@
 <MonsterName/>Alchemist Archer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (studded leather)</AC>
+<HP/>135</HP>
 <summary>The Alchemist Archer is a skilled and formidable combatant, blending traditional archery with alchemical prowess to deliver various effects on the battlefield. This Medium humanoid can either operate independently or support allies, making it a versatile addition to any foe's lineup. With a commendable Armor Class of 17 and a robust hit point total of 135, it can withstand a significant amount of damage. This creature thrives at range, leveraging its high Dexterity and powerful ranged attacks to inflict substantial damage while simultaneously utilizing innovative alchemical arrows that can cause devastating effects. However, despite these strengths, the Alchemist Archer can be vulnerable to direct melee attacks due to its lower Strength score, reflecting weaknesses in close-quarter combat.</summary>
 
 <detail>

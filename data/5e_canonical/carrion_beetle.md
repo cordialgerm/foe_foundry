@@ -1,6 +1,8 @@
 <MonsterName/>Carrion Beetle</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Carrion Beetle is a formidable creature characterized as a Large unaligned beast. With a significant amount of hit points and impressive physical attributes, this beetle serves as a robust combatant in battle. It possesses a well-rounded mix of offensive capabilities and defensive traits, making it a threat in close encounters. The Carrion Beetle excels at dealing damage with its powerful bites and claws, while its acid spit ability allows it to engage multiple foes simultaneously from a distance. However, its slow movement and lack of intelligence limit its tactical options, making it less versatile than some other monsters.</summary>
 
 <detail>

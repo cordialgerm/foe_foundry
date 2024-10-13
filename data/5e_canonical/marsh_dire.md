@@ -1,6 +1,8 @@
 <MonsterName/>Marsh Dire</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Marsh Dire is a powerful Medium undead creature embodying a neutral evil alignment. This creature excels in both melee and restraining combat, making it a formidable opponent. With an impressive armor class of 15 and a substantial hit point total of 142, it boasts good durability. Its physical attributes favor strength and constitution, with a strength score of 18 (+4) providing it with exceptional melee capabilities. However, its intelligence, wisdom, and charisma are below average, which informs its basic strategic choices and interactions. The Marsh Dire is resistant to fire and necrotic damage while immune to poison damage and several conditions, enhancing its survivability. The unique "Cloying Stench" ability can poison nearby foes, while its multiple attack options enable it to inflict both slashing and necrotic damage with ease.</summary>
 
 <detail>

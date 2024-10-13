@@ -1,6 +1,8 @@
 <MonsterName/>Imperator</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>11</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>216</HP>
 <summary>The Imperator is a powerful and unique Huge Monstrosity that serves as a formidable foe within a Dungeons & Dragons campaign. Its combination of high hit points, strong damage output, and special abilities make it a dangerous adversary for adventurers. The Imperator possesses a significant swimming speed, allowing it to navigate aquatic environments with ease. Notably, it can command penguins telepathically, which can add an interesting layer to encounters in icy or snowy locales. While its high constitution provides significant resilience, its low intelligence suggests a lack of tactical cunning. Combat-wise, the Imperator excels in both melee attacks and area damage, making it a versatile threat. </summary>
 
 <detail>

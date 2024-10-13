@@ -1,6 +1,8 @@
 <MonsterName/>Sathaq Worm</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>149</HP>
 <summary>The Sathaq Worm is a massive elemental creature characterized by its neutrality and evil nature. This huge worm boasts impressive power with a strong constitution and a formidable array of abilities that make it a dangerous opponent in combat. Its strengths lie in its high hit points, strong melee attacks, and special abilities that can debilitate foes while it remains largely impervious to common forms of damage. However, it suffers from low dexterity, making it less agile compared to other foes, and its intelligence is also quite low, hindering its tactical capabilities. The Sathaq Worm is particularly effective in terrain it can camouflage into, using its ability to move through earth and stone to ambush unsuspecting adventurers. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Soldier</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>16</AC>
+<HP/>19</HP>
 <summary>The Soldier is a medium humanoid capable of serving as an effective combatant in various settings, such as military-themed adventures or skirmishes. With a Challenge Rating of 1/2, the Soldier presents a moderate threat to low-level parties. They possess a solid Armor Class of 16, making them reasonably difficult to hit, and have a decent pool of Hit Points totaling 19, representing their ability to withstand a few hits in battle. This creature excels in both melee and ranged combat, with key strengths in Strength and Constitution, allowing for efficient damage output and resilience. However, they exhibit average Intelligence, Wisdom, and Charisma, indicating that they are not particularly skilled in social interactions or spellcasting. The Soldier’s main weaknesses lie in its lower Dexterity, making it less adept in avoiding attacks compared to more agile foes.</summary>
 
 <detail>

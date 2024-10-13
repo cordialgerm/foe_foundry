@@ -1,6 +1,8 @@
 <MonsterName/>Reef Shark</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>22</HP>
 <summary>A Reef Shark is a medium-sized predator commonly found in warm, shallow waters near coral reefs. Known for its sharp teeth and swift swimming, the Reef Shark is an efficient hunter of fish and smaller sea creatures. While generally not aggressive towards larger creatures, they will attack if provoked or if blood is present in the water. Reef Sharks often hunt in small packs, making them dangerous to wounded or distracted swimmers. Their speed and agility in the water make them formidable predators in their natural environment.</summary>
 
 <summary>The Reef Shark is a medium-sized beast that thrives in aquatic environments, possessing the ability to swim at a speed of 40 feet but is unable to walk on land. With an armor class of 12, it offers average protection in combat, while its hit points total 22, equaling a moderate level of durability for a creature of its challenge rating of 1/2, making it an appropriate foe for low-level adventurers. Its strength is reasonably high, which enhances its melee attack damage, while its dexterity provides some evasion capabilities. The Reef Shark's most notable strengths include its natural aquatic abilities, pack tactics, and its capacity to breathe underwater. However, it is quite weak in intelligence and charisma, rendering it incapable of complex actions or social interactions.</summary>

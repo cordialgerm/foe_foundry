@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Esteron</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>54</HP>
 <summary>The Swarm of Esteron is a Medium-sized Beast that serves as a formidable and uniquely constructed adversary in combat. With a Challenge Rating of 2, it provides moderate difficulty for adventuring parties while offering 54 hit points, which makes it resistant to damage from bludgeoning, piercing, and slashing attacks. Its strength lies in its mobility; it can swim and fly at a speed of 30 feet, allowing it to maneuver around the battlefield effectively. While it has average physical strength and constitution, its dexterity is notably good, granting it a +3 modifier, which enhances its ability to avoid attacks. The Swarm of Esteron excels in situations where it can leverage its special abilities, such as its keen sense of smell, which gives it an advantage on perception checks relying on this sense. However, its intelligence is low, indicating that it may not be very strategic in its actions.</summary>
 
 <detail>

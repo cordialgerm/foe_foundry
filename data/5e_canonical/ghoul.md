@@ -1,6 +1,8 @@
 <MonsterName/>Ghoul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>A Ghoul is a ravenous, undead creature driven by an insatiable hunger for the flesh of the living. Its gaunt, decayed body moves with unnatural speed, and its long, clawed hands are capable of paralyzing those it strikes. Ghouls are often found in graveyards or crypts, feasting on the bodies of the dead, but they prefer fresh meat when they can find it. Though mindless and savage, ghouls retain a basic cunning, using their speed and numbers to overwhelm their prey. They are often created through dark magic or as a result of a cursed existence, forever trapped in their hunger.</summary>
 
 <summary>The ghoul is a medium-sized undead creature often prowling graveyards and dark places, drawn to the scent of the living. Its primary role in combat is that of a stealthy ambusher capable of incapacitating enemies with its paralyzing claw attack. With a decent agility score, the ghoul is good at dodging attacks but is relatively fragile with an armor class of only 12 and a modest pool of 22 hit points. The ghoul is immune to poison damage and resistant to necrotic damage, making it resilient against certain types of attacks. Its unique abilities include a weakness to radiant damage, which hampers its offensive capabilities, and its undead nature allows it to operate without the need for air or sleep.</summary>

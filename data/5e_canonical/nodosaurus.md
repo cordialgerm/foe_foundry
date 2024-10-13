@@ -1,6 +1,8 @@
 <MonsterName/>Nodosaurus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Nodosaurus is a large, unaligned beast that thrives in swampy environments. With a solid Armor Class of 13, it exhibits reasonable resilience, complemented by 45 hit points, which allows it to withstand moderate amounts of damage. The creature's Challenge Rating of 1 indicates that it poses a minimal threat to low-level adventurers, but it is not without its strengths, such as its high Strength score of 17, which provides a good attack bonus to its melee attacks. However, its Intelligence and Charisma scores are exceptionally low, indicating a lack of strategy and social interaction ability, which may hinder interactions with more intelligent foes. The Nodosaurus is particularly adept at stealth within its natural environment due to its Swamp Camouflage ability, making it a suitable ambush predator.</summary>
 
 <detail>

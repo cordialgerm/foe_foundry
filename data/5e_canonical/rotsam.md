@@ -1,6 +1,8 @@
 <MonsterName/>Rotsam</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>Rotsam is a tiny ooze creature that embodies the dangers of disease and decay. It operates as an unaligned entity, using its unique abilities to inflict suffering on others while remaining elusive. With a challenge rating of 2, it poses a moderate threat in combat, capable of dealing both piercing and significant necrotic damage. The Rotsam's strengths lie in its speed and ability to bypass obstacles, while its immunities to various conditions make it difficult to incapacitate. However, its low armor class and poor physical strength and charisma reveal its weaknesses. Creatures facing the Rotsam must be cautious, as failing to contend with its disease can lead to dire consequences.</summary>
 
 <detail>

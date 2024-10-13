@@ -1,6 +1,8 @@
 <MonsterName/>Giant, Thursir Armorer</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>6</CR>
+<AC/>19</AC>
+<HP/>138</HP>
 <summary>The Giant Thursir Armorer is a formidable foe in combat, characterized by its lawful evil alignment and impressive physical attributes. This large giant stands out due to its robust armor class of 19, bolstered by a combination of splint armor and a shield, which provides it excellent protection. With a substantial pool of hit points totaling 138, it can withstand considerable damage during encounters. The armorer’s strength is remarkable at 20, enabling it to deal significant melee damage. However, its dexterity is quite low at 9, making it less agile than other creatures. The Thursir Armorer is particularly adept in melee situations, utilizing a multiattack feature that allows it to unleash a sequence of powerful strikes. Its challenge rating of 6 indicates that it's a noteworthy adversary to mid-level parties, posing a serious threat if not handled carefully.</summary>
 
 <detail>

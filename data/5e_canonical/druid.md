@@ -1,8 +1,10 @@
 <MonsterName/>Druid</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
-<Subtype/>any lineage</Subtype>
 <Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>2</CR>
+<AC/>11</AC>
+<HP/>27</HP>
 <summary>A Druid is a spellcaster who draws their power from nature, often serving as a protector of the natural world. They wear simple, earthy clothes, and their appearance often reflects their deep connection to the land. Druids can call upon the elements to cast powerful spells, summon animals, or even shapeshift into the forms of beasts. They are often found in forests, mountains, or other wild areas, acting as guardians of sacred groves or guiding travelers through dangerous terrain. Druids are deeply attuned to the balance of nature and will fiercely defend it against those who seek to harm it.</summary>
 
 <summary>The Druid is a versatile medium humanoid creature that possesses a unique blend of spellcasting and physical abilities. With a moderate Armor Class of 11 and 39 hit points, the Druid can withstand some damage, but should not be at the forefront of combat given their average durability. Their Challenge Rating of 2, which yields 450 experience points upon defeat, highlights them as a moderately challenging foe or ally. Notable strengths include their spellcasting ability, particularly in nature-related spells that can control the battlefield and communicate with animals. Their ability to shapeshift into various beast forms adds tactical versatility, allowing them to adapt to different situations. However, while proficient in Wisdom saving throws and perception, their overall attributes show some weaknesses in physical combat and special abilities like Beast Form, which render them unable to cast spells during transformation.</summary>

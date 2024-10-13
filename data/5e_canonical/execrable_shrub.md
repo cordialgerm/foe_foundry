@@ -1,6 +1,8 @@
 <MonsterName/>Execrable Shrub</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>40</HP>
 <summary>The Execrable Shrub is a Medium-sized fiend with a neutral evil alignment. It possesses a blend of offensive capabilities and unique healing abilities that allow it to thrive in combat situations. Its Armor Class of 14 offers good protection thanks to its natural armor, while its 40 hit points, derived from 9d8, give it a decent level of durability for a creature with a Challenge Rating of 1/2, equating to 100 experience points upon defeat. The shrub's burrowing and walking speed of 10 feet grants it limited mobility. With a good Dexterity score of 14, it can effectively evade attacks, but its other attributes reveal some weaknesses. Despite having a poor Intelligence score of 7, its Wisdom of 14 enhances its perception skills, allowing it to notice threats easily. The Execrable Shrub has immunities to fire damage and resistance to piercing and poison damage, making it resilient against many attack types while it is also immune to the poisoned condition. Its senses include tremorsense within 60 feet, granting it awareness of nearby creatures through vibrations.</summary>
 
 <detail>

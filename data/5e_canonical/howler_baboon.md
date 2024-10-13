@@ -1,6 +1,8 @@
 <MonsterName/>Howler Baboon</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>13</HP>
 <summary>The Howler Baboon is a medium-sized beast that thrives in packs and is characterized by its agility and strength. This creature is largely unaligned, meaning it does not adhere to moral or ethical codes. With a challenge rating of 1/4, it is considered a minor threat to adventurers, offering a manageable challenge for low-level parties. The Howler Baboon excels in close combat, particularly when it can leverage its Pack Tactics ability, which allows it to gain an advantage when attacking alongside allies. However, its intelligence is notably low, and it lacks advanced problem-solving capabilities, making it less effective in strategic encounters.</summary>
 
 <detail>

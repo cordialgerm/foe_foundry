@@ -1,6 +1,8 @@
 <MonsterName/>Azza Gremlin</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>7</HP>
 <summary>The Azza Gremlin is a small fey creature known for its mischievous nature and affinity for lightning. It has a solid Armor Class of 14 and relatively low Hit Points totaling 7, making it somewhat fragile in direct combat. However, its notable agility and dexterity, represented by a Dexterity score of 18 (+4), allow it to evade attacks effectively, resulting in an overall good defense in combat situations. With a Challenge Rating of 1/4, this creature is suitable for lower-level encounters, posing a challenging but not overwhelming threat to adventurers. The Azza Gremlin's key strength lies in its ability to manipulate lightning, offering tactical advantages in battle. On the flip side, its Strength is very poor at 5 (-3), limiting its capability for melee attacks without spells. </summary>
 
 <detail>

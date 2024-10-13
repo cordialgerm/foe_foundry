@@ -1,6 +1,8 @@
 <MonsterName/>Ouroban</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>11</CR>
+<AC/>18 (plate)</AC>
+<HP/>209</HP>
 <summary>The Ouroban is a formidable Medium humanoid known for its neutral evil alignment, serving as a potent and ruthless combatant in battle. With an armor class of 18 due to its plate armor, the Ouroban is well-protected and boasts a high hit point pool of 209, allowing it to endure considerable damage. Its challenge rating of 11 indicates that it provides a significant challenge for adventurers, making it a formidable foe in encounters worth 7,200 experience points. The creature's greatest strengths lie in its strong physical attributes, particularly its strength, as well as its spellcasting capabilities, allowing it to deal devastating damage and control the battlefield. However, its weaknesses include a lack of speed, agility, and versatility, indicated by average dexterity and only a limited range of spells.</summary>
 
 <detail>

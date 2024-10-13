@@ -1,6 +1,8 @@
 <MonsterName/>Copper Dragon Wyrmling (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Copper Dragon Wyrmling is a Medium-sized dragon known for its cunning and agility. With an armor class of 16 and hit points totaling 44, it presents a formidable challenge for adventurers with a Challenge Rating of 2, making it well-suited for encounters with lower-level parties. Its strengths lie in its mobility; it can walk and climb at 30 feet and fly at a speed of 60 feet, granting it exceptional maneuverability in combat. Additionally, it possesses damage immunity to acid, making it resilient against certain attacks. Despite these strengths, the wyrmling has average Constitution and Wisdom scores, which may limit its durability in prolonged combat situations. Its special ability, "Flow Within the Mountain," provides it with very good stealth capabilities in mountainous regions, enhancing its ability to ambush foes. </summary>
 
 <detail>

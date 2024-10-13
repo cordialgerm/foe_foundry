@@ -1,6 +1,8 @@
 <MonsterName/>Shard Swarm</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Shard Swarm is a medium-sized construct characterized by its unorthodox composition and combat style. It embodies a swarm of sharp shards, capable of flying and enveloping its targets. This creature's primary strength lies in its unique abilities, allowing it to reform and restrain foes, while also being immune to several damage types. However, it is vulnerable to spells that target antimagic, which can incapacitate it. With an average Armor Class of 13 and 22 hit points, the Shard Swarm poses a moderate challenge to adventurers, especially in swarming and crowd-control situations.</summary>
 
 <detail>

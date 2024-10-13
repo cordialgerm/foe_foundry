@@ -1,6 +1,8 @@
 <MonsterName/>Trollkin Ironmonger</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>19 (plate)</AC>
+<HP/>105</HP>
 <summary>The Trollkin Ironmonger is a sturdy medium humanoid creature known for its powerful regenerative abilities and tough armor, making it a formidable opponent in combat. With a challenge rating of 5 and a significant amount of hit points, this creature can absorb a considerable amount of damage before being taken down. It excels in melee combat with its ability to make multiple attacks in a single turn, effectively threatening multiple adversaries. However, its low Charisma and average Dexterity suggest it may struggle in social interactions and with ranged attacks. The combination of regeneration and high Armor Class gives it good durability, although it's vulnerable to fire and acid damage, which can temporarily negate its regenerative abilities.</summary>
 
 <detail>

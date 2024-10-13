@@ -1,6 +1,8 @@
 <MonsterName/>Fleshspurned</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>75</HP>
 <summary>The Fleshspurned is a Medium undead creature with chaotic evil alignment, serving primarily as a combatant that thrives on causing confusion and disrupting its opponents. Its strengths lie in its ability to deal significant necrotic damage, particularly against other undead creatures, thanks to its unique Ghost Eater ability. While it has a respectable Armor Class of 14 and substantial Hit Points totaling 75, it possesses very low Strength, making it quite weak in direct melee confrontations. Its speed is notable, being able to fly at 40 feet while having no walking speed, allowing it to maneuver effectively in combat. The Fleshspurned excels in stealth and has strong defenses, with immunities to necrotic and poison damage, and resistant to multiple types of damage due to its undead nature.</summary>
 
 <detail>

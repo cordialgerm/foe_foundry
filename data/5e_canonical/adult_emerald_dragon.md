@@ -1,6 +1,8 @@
 <MonsterName/>Adult Emerald Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>17</CR>
+<AC/>18</AC>
+<HP/>241</HP>
 <summary>The Adult Emerald Dragon is a formidable creature categorized as a Huge Dragon, excelling in both physical and mental prowess. With a Challenge Rating of 17, this dragon is a significantly powerful adversary, capable of dealing immense damage and affecting the minds of its opponents. Its high Armor Class of 18 and substantial Hit Points of 241 make it a tough enemy to bring down. This dragon possesses exceptional strength in various attributes, notably in Strength, Dexterity, Intelligence, and Charisma, all scoring very high at +6-7 modifiers. The dragon's innate psionic abilities allow it to manipulate not just its physical surroundings but also the minds of its foes, making it a highly strategic combatant. Possessing resistance to psychic and thunder damage ensures it can withstand specific forms of attacks. While it excels in most areas, its Wisdom of +1 is relatively lower, making it vulnerable to effects that target that attribute, such as those involving Wisdom saving throws.</summary>
 
 <detail>

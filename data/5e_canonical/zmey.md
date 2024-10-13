@@ -1,6 +1,8 @@
 <MonsterName/>Zmey</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>189</HP>
 <summary>The Zmey is a formidable and chaotic evil dragon known for its impressive physical power and a suite of devastating abilities. As a huge creature, it boasts a high armor class of 18, making it quite resilient in combat. With a total of 189 hit points, derived from rolling 18 twelve-sided dice plus an additional 72, it can take substantial damage before being defeated. The Zmey's challenge rating of 15 indicates that it poses a significant threat to adventurers, offering 13,000 experience points upon defeat. Its strengths lie in its multiple heads, powerful attacks, and innate resistances, while its vulnerabilities include taking acid and fire damage that can negate its regeneration abilities.</summary>
 
 <detail>

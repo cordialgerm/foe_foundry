@@ -1,6 +1,8 @@
 <MonsterName/>Warhorse Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (barding scraps)</AC>
+<HP/>22</HP>
 <summary>A Warhorse Skeleton is the undead remains of a warhorse, animated by dark necromantic magic. Stripped of its flesh and driven by an unnatural will, this skeletal steed serves as a mount for undead riders or as a guardian in ancient tombs and battlefields. Warhorse Skeletons are fearless and tireless, charging into battle without hesitation, their bones clattering with every movement. While lacking the strength of a living warhorse, they make up for it with their resilience to pain and damage. They are often found accompanying undead knights or necromancers.</summary>
 
 

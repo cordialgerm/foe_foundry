@@ -1,6 +1,8 @@
 <MonsterName/>Tripwire Patch</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Tripwire Patch is a huge, unaligned plant creature that serves as an ambush predator in its territory. With its robust 95 hit points and a formidable challenge rating of 4, it poses a significant threat to unsuspecting adventurers. The Tripwire Patch excels in laying traps and creating difficult terrain that can hinder its foes. Its special ability, Bountiful Death, allows it to enrich the land upon defeating a creature, making it strategically valuable for controlling the environment. While its Dexterity is average, its Strength is very good, making its attacks quite formidable. However, it lacks any intelligence or charm, which limits its role in social interactions. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Will-o’-Wisp</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>17 (Ephemeral)</AC>
+<HP/>31</HP>
 <summary>The Will-o’-Wisp is a tiny undead creature known for its elusive and haunting nature. It typically serves as a trickster in the dark realms, luring adventurers into dangerous situations. The Will-o’-Wisp is a formidable opponent for its challenge rating of 2, boasting a high armor class of 17 due to its ephemeral nature, which makes it difficult to hit. With a good Dexterity modifier of +4, it has exceptional agility, allowing it to maneuver quickly in combat. However, it has weaknesses; it is a fragile entity with only 31 hit points and a very poor Strength score of -5, limiting its physical capabilities. The Will-o’-Wisp's ability to become invisible and pull enemies towards it can create a serious threat, especially when combined with its lightning damage attacks, making it a fearsome encounter for low-level adventurers.</summary>
 
 <detail>

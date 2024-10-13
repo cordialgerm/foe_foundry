@@ -1,6 +1,8 @@
 <MonsterName/>Satyr</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>31</HP>
 <summary>A Satyr is a fey creature with the upper body of a man and the lower body of a goat, complete with horns and hooves. Satyrs are known for their playful, hedonistic nature, often indulging in wine, music, and mischief. They are curious and love to cause harmless trouble for travelers, leading them astray with enchanting pipes or confusing them with illusions. Satyrs are highly charismatic and often use their charm to avoid conflict. However, when threatened, they are quick and nimble fighters, using their horns to ram enemies or fleeing into the safety of the forest.</summary>
 
 <summary>The Satyr is a Medium fey creature known for its mischievous and enchanting nature. With a Challenge Rating of 1/2, it is a relatively low-tier monster, making it suitable for lower-level adventurers seeking to encounter fey magic and whimsical trickery. The Satyr possesses a good range of Dexterity and Charisma, offering it exceptional capabilities in stealth and performance. Its strengths lie in its magical resistance and its ability to charm and incapacitate opponents with its enchanting dance and lullaby. However, its Hit Points are relatively low, making it vulnerable if engaged directly in combat, especially against multiple attackers.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Shroud Ray</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>13</AC>
+<HP/>97</HP>
 <summary>The Shroud Ray is a Large Aberration known for its unique blend of stealth and melee combat capabilities. It has a solid Armor Class of 13 and a robust pool of hit points totaling 97, making it a formidable opponent in battle. Its primary strengths lie in its aquatic nature and impressive grappling ability, allowing it to control encounters efficiently while inflicting both physical and psychological damage on its foes. However, its main weaknesses stem from its sensitivity to light, as it suffers disadvantages in bright conditions. This creature is especially dangerous when it can strike unsuspecting players, utilizing its camouflage to avoid detection and launch devastating attacks.</summary>
 
 <detail>

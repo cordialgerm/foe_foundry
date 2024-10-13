@@ -1,6 +1,8 @@
 <MonsterName/>Giant Albino Bat</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Giant Albino Bat is a huge monstrosity with a neutral evil alignment, primarily serving as a dangerous predator in its environment. It possesses formidable physical attributes, with a high strength score of 19, allowing it to deliver powerful bite and claw attacks. Its dexterity score of 16 grants it good agility in combat, while a constitution score of 15 helps it withstand damage. The bat has notable skills, including blindsight and keen hearing, which augment its ability to detect prey. However, its intelligence and charisma are quite low, limiting its cognitive functions and social interactions. Its armor class is 15, representing decent natural armor, and with 76 hit points, it can endure several rounds of combat before being incapacitated. As a challenge rating 3 creature, it poses a moderate threat to adventurers, offering 700 experience points upon defeat.</summary>
 
 <detail>

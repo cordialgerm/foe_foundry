@@ -1,6 +1,8 @@
 <MonsterName/>Backup Holler Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>14</HP>
 <summary>The Backup Holler Spider is a tiny beast with a chaotic neutral alignment, making it a creature that thrives on unpredictability. With a Challenge Rating of 1/4, it poses a minor threat to adventurers while also offering unique tactical advantages. While its Armor Class is relatively low at 12, its 14 hit points (derived from rolling 4d4 and adding 4) allow it to withstand some damage. This creature possesses a good Dexterity score of 15, providing it with a plus 2 modifier which makes its Dexterity saving throws also good at +4. However, its Strength and Charisma scores are notably low, rendering it very bad in melee combat situations and interactions that require persuasion or intimidation.</summary>
 
 <detail>

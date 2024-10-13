@@ -1,6 +1,8 @@
 <MonsterName/>Zimwi</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Zimwi is a medium-sized giant characterized by its chaotic evil nature, making it a formidable threat in combat. With an armor class of 16 thanks to its natural armor, and a significant pool of hit points totaling 110, the Zimwi is adept at sustaining damage. It is particularly rapid, able to walk at a speed of 60 feet. The challenge rating of 5 indicates that it is a moderately challenging adversary for adventurers, offering 1,800 experience points upon defeat. Notably, the Zimwi possesses high dexterity and constitution scores, which enhance its agility and hit point endurance, but lacks mental acuity, as reflected in its low intelligence, wisdom, and charisma. Its unique ability, Desperate Hunger, allows it to become especially dangerous when its health dips below half, granting it an advantage on melee attack rolls against non-construct creatures, making it a tenacious opponent when weakened.</summary>
 
 <detail>

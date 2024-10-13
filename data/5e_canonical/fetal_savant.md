@@ -1,6 +1,8 @@
 <MonsterName/>Fetal Savant</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>11</AC>
+<HP/>32</HP>
 <summary>The Fetal Savant is a Tiny, humanoid creature whose chaotic evil nature makes it a disturbing presence in any encounter. It possesses a relatively low Armor Class of 11 and moderate hit points totaling 32, which makes it somewhat vulnerable to attacks. However, its unique abilities, such as the Enchanted Cage, grant it significant defensive advantages, particularly immunity to damage while protected. The Fetal Savant thrives on psychological manipulation and disruption of its enemies, evidenced by its high Charisma score of 20, which enables its potent abilities like Maddening Babble. Despite its weaknesses, such as poor physical attributes and hypersensitivity to sunlight, its capacity to control and swap souls with humanoids can turn the tide in encounters, making it a formidable foe.</summary>
 
 <detail>

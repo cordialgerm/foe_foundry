@@ -1,6 +1,8 @@
 <MonsterName/>Roachling Lord</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>63</HP>
 <summary>The Roachling Lord is a small humanoid creature characterized by its chaotic neutral alignment. It boasts a commendable Armor Class of 15 thanks to its natural armor, making it relatively difficult to hit in combat. With an average of 63 hit points—derived from a combination of 14 six-sided dice and an extra 14—this creature has decent stamina for its level. The Roachling Lord operates effectively in an environment where stealth and cunning are pivotal, represented by its solid Dexterity score of 16, which grants a good modifier of +3 to related checks. However, its Strength, Intelligence, Wisdom, and Charisma scores remain average, providing no significant advantages in physical confrontations or social interactions. Its challenge rating of 2 indicates that it is a suitable encounter for low-level parties, worth 450 experience points.</summary>
 
 <detail>

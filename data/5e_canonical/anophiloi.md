@@ -1,6 +1,8 @@
 <MonsterName/>Anophiloi</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>33</HP>
 <summary>The Anophiloi is a small monstrosity known for its predatory nature and ability to drain the life force from its victims. With a challenge rating of 1, it poses a moderate threat to adventurers, particularly those who are weakened or injured. The Anophiloi can climb and fly, making it agile and difficult to evade. Its strengths lie in its ability to attack from both the ground and the air, enhanced by its Blood Frenzy ability which makes it particularly dangerous when confronting wounded foes. However, it has vulnerabilities to cold damage and possesses below-average intelligence, reducing its effectiveness in strategic planning. Overall, it is a creature that thrives on the chaos of combat, seeking to ambush and weaken its prey.</summary>
 
 <detail>

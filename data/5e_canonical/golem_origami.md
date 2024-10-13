@@ -1,6 +1,8 @@
 <MonsterName/>Golem, Origami</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Origami Golem is a large construct creature that embodies versatility through its unique forms. This creature possesses a significant amount of hit points, making it durable in combat, and its armor class is reasonably high due to its natural armor. The Golem excels in mobility with a combination of flight and walking speed, allowing it to engage enemies effectively. One of its key strengths is its magical resistance, granting it the advantage on saving throws against spells, enhancing its survivability against magic users. However, it is vulnerable to fire damage, which can be a significant weakness. Its intelligence is notably low, making it an unaligned entity without the ability to communicate verbally, though it understands languages spoken by its creator. The Golem can shift between different forms, such as a dragon, swan, or frog, each presenting unique abilities and combat tactics. </summary>
 
 <detail>

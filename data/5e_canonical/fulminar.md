@@ -1,6 +1,8 @@
 <MonsterName/>Fulminar</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>9</CR>
+<AC/>15</AC>
+<HP/>112</HP>
 <summary>The Fulminar is a formidable elemental creature characterized by its mastery over lightning and its ability to move swiftly in combat. As a large neutral elemental, it excels in aerial mobility, able to fly and hover with ease, making it a challenging opponent for melee attackers. With an Armor Class of 15 and 112 hit points, it presents a decent defense against physical attacks. Its offensive capabilities are enhanced by a high Dexterity score, granting it exceptional agility and effectiveness in combat, particularly through its swift movements and lightning-infused attacks. While it possesses a range of immunities and resistances, including immunity to poison and resistance to lightning and thunder, magical attacks can still pose a risk to it. Overall, the Fulminar is a well-rounded adversary that thrives in fast-paced encounters, dishing out substantial lightning damage while maintaining a strong defensive position.</summary>
 
 <detail>

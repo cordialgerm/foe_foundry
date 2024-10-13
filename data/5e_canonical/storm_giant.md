@@ -1,6 +1,8 @@
 <MonsterName/>Storm Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>13</CR>
+<AC/>16 (scale mail)</AC>
+<HP/>230</HP>
 <summary>Storm Giants are towering, majestic beings who dwell in remote mountains or beneath the ocean. As the most powerful of the giant kind, they are often seen as wise and noble, governing the natural forces of storms, thunder, and lightning. With their immense size and strength, Storm Giants wield massive weapons, and their command over the weather allows them to summon destructive storms or hurl bolts of lightning. Despite their power, they are generally peaceful, preferring isolation and contemplation. However, when provoked, a Storm Giant’s wrath can be as fierce and unstoppable as the storms they control.</summary>
 
 <summary>The Storm Giant is a powerful creature categorized as a Huge Giant, known for its formidable presence and devastating abilities. With an Armor Class of 16 and a robust pool of 230 hit points, it stands as a significant challenge to adventurers, boasting a Challenge Rating of 14, which translates to 11,500 experience points upon defeat. The Storm Giant excels in both melee and spellcasting, leveraging its exceptional Strength and Constitution scores to dominate in physical confrontations while also wielding potent magic. However, it is somewhat vulnerable due to its average Dexterity, which may make it susceptible to ranged attacks. This giant manifests unique abilities such as amphibious breathing and an innate connection to storm-related magic, making it a versatile adversary in combat scenarios.</summary>

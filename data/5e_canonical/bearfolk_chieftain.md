@@ -1,6 +1,8 @@
 <MonsterName/>Bearfolk Chieftain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>17</AC>
+<HP/>130</HP>
 <summary>The Bearfolk Chieftain is a medium-sized humanoid creature embodying chaotic good alignment, making it both a fierce warrior and a protector of its kin. It boasts high physical prowess, particularly in strength with a score of 21, indicating exceptional capabilities in melee combat and physical feats. The Bearfolk Chieftain has a robust Constitution score of 16, contributing to its good survivability with 130 hit points, which provides it a solid advantage in prolonged engagements. However, its intelligence is relatively low at 9, representing a weakness in strategic thinking or arcane knowledge. In combat, the chieftain excels with strong melee attacks and has special abilities that enhance its combat effectiveness, like the ability to deal extra damage and become harder to hit while in a frenzy. The tactical use of its abilities may shift the tide of battle, making it a formidable foe.</summary>
 
 <detail>

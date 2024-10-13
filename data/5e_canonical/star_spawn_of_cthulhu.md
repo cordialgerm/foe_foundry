@@ -1,6 +1,8 @@
 <MonsterName/>Star Spawn of Cthulhu</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>15</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>212</HP>
 <summary>The Star Spawn of Cthulhu is a formidable Large Fiend with chaotic evil tendencies, making it a powerful adversary in any encounter. Its significant strength and resilient defenses categorize it as a challenge for high-level players, with a challenge rating of 15. The creature boasts high armor class and a substantial pool of hit points, making it difficult to damage. The Star Spawn utilizes a mix of physical and necrotic damage attacks, paired with psychic defenses, creating a complex threat on the battlefield. Additional features, such as its ability to regenerate from psychic damage and its unique teleportation skills, enhance its mobility and survivability. However, while it excels in raw power, it is not without weaknesses, particularly if faced with radiant or force damage.</summary>
 
 <detail>

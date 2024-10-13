@@ -1,6 +1,8 @@
 <MonsterName/>Adult Flame Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>16</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>275</HP>
 <summary>The Adult Flame Dragon is a formidable creature that embodies chaos and destruction with its chaotic evil alignment. As a Huge Dragon, it boasts incredible strength, resilience, and a fierce array of abilities that make it a significant threat in any encounter. With a Challenge Rating of 16, it poses a serious challenge to adventurers, boasting high hit points at 275 and a robust Armor Class of 19 thanks to its natural armor. The dragon's capability to fly, coupled with its fire-based powers, allows it to dominate the battlefield both physically and psychologically. Its special abilities, such as being immune to fire damage while still being able to deal it without restriction, make it an extraordinary foe. However, its primary weakness lies in its susceptibility to certain forms of non-magical attacks since it lacks immunity beyond fire.</summary>
 
 <detail>

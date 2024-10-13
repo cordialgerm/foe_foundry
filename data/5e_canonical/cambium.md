@@ -1,6 +1,8 @@
 <MonsterName/>Cambium</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>14</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>264</HP>
 <summary>The Cambium is a powerful, large fiend of neutral evil alignment known for its cunning and deceit. It possesses a robust armor class of 19 characterized by natural armor, along with an impressive pool of hit points totaling 264, derived from 23d10 plus 138. With a challenge rating of 14, this creature can pose a significant threat to adventurers, providing 11,500 experience points upon defeat. The Cambium is capable of moving both on foot at a speed of 30 feet and flying at 40 feet, giving it an advantage in mobility during encounters. Its array of attributes showcases exceptional physical and mental capabilities, including a strength of 21 (+5), constitution of 23 (+6), and charisma of 18 (+4). </summary>
 
 <detail>

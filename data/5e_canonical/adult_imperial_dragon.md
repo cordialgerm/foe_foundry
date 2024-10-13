@@ -1,6 +1,8 @@
 <MonsterName/>Adult Imperial Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>20</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>297</HP>
 <summary>The Adult Imperial Dragon is a vast and powerful creature, classified as Huge in size and neutral in alignment. With exceptional attributes, it boasts a high Armor Class of 19, an impressive 297 hit points, and an overarching Challenge Rating of 20, indicating its formidable presence in any encounter. The dragon can fly at 80 feet, walk at 40 feet, and swim at 40 feet, making it a versatile opponent in various terrains. Its strengths lie in both its physical prowess and spellcasting abilities, making it a versatile threat in combat. However, it has vulnerabilities due to its reliance on Dexterity and must manage its powerful abilities judiciously to overcome strategic weaknesses.</summary>
 
 <detail>

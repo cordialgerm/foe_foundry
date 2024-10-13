@@ -1,6 +1,8 @@
 <MonsterName/>Vapor Lynx</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>127</HP>
 <summary>The Vapor Lynx is a large monstrosity that embodies a chaotic neutral alignment, making it unpredictable and dangerous. Known for its stealth and ability to manipulate its environment, the Vapor Lynx is equipped to thrive in foggy or misty conditions. With an Armor Class of 14 and a total of 127 hit points, it boasts a moderate level of defense and durability. This creature has a Challenge Rating of 5, offering 1,800 experience points for defeating it, indicating it's a formidable threat for mid-level adventurers. The Vapor Lynx’s strengths lie in its agility, with a Dexterity score of 18 providing a good modifier of +4, which enhances its Stealth skill, giving it an exceptional advantage in sneaky tactics. However, its Intelligence is average, at +0, signaling that it may not employ complex strategies in combat.</summary>
 
 <detail>

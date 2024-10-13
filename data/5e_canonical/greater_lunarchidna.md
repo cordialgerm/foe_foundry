@@ -1,6 +1,8 @@
 <MonsterName/>Greater Lunarchidna</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>58</HP>
 <summary>The Greater Lunarchidna is a medium-sized aberration characterized by its neutral evil alignment. This creature excels in stealth and cunning, enhanced by its climbing ability and its proficiency in spellcasting. It presents a notable challenge to adventurers with its capability of manipulating webbing and utilizing necrotic damage to weaken foes. However, it suffers from a significant disadvantage when exposed to sunlight, making it vulnerable in brightly lit environments. The combination of its stealth, spellcasting, and physical attacks gives the Lunarchidna a formidable presence in combat, but it must navigate carefully to avoid areas of direct sunlight.</summary>
 
 <detail>

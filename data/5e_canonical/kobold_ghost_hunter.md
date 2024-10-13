@@ -1,6 +1,8 @@
 <MonsterName/>Kobold, Ghost Hunter</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>11</CR>
+<AC/>18 (studded leather)</AC>
+<HP/>176</HP>
 <summary>The Kobold Ghost Hunter is a small humanoid creature characterized by its lawful neutral alignment and a unique aptitude for tracking and combat against undead entities. With a Challenge Rating of 11, this formidable foe possesses high hit points, making it resilient in battle, and an impressive Armor Class. Its key strengths include enhanced dexterity, which provides exceptional attack bonuses and agility, making it an effective combatant. The Ghost Hunter's abilities allow it to deal significant radiant damage, and it is particularly dangerous when engaging in battles against undead foes. However, it does suffer from sunlight sensitivity, which can hinder its effectiveness during the day. Furthermore, its combat prowess is amplified by the ability to become invisible to undead while remaining still, enabling tactical advantages in encounters.</summary>
 
 <detail>

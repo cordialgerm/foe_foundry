@@ -1,6 +1,8 @@
 <MonsterName/>Catamount</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>117</HP>
 <summary>The Catamount is a formidable large monstrosity that thrives in its environment, exhibiting remarkable prowess in combat and utility with its earth-manipulating abilities. Its robust build grants it substantial hit points, making it a durable opponent on the battlefield, while its movement speed allows it to maintain an aggressive presence. With a challenge rating of 4, it is a strong adversary for adventurers, blending its physical attacks with its unique bonus actions that manipulate the terrain to its advantage. Although it possesses weak intelligence and charisma, its physical strengths and special abilities compensate for these deficiencies, allowing it to control the battlefield effectively. Players should be cautious with its multiattack capability, which can deal significant damage.</summary>
 
 <detail>

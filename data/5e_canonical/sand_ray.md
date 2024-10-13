@@ -1,6 +1,8 @@
 <MonsterName/>Sand Ray</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>13</AC>
+<HP/>97</HP>
 <summary>The Sand Ray is a formidable Large Aberration known for its cunning and deceptive abilities. With a decent Armor Class of 13 and a considerable pool of Hit Points totaling 97, it is designed to withstand significant damage during combat. It can move at a low walking speed of 10 feet but excels in aerial maneuvers with a flying speed of 50 feet. With a Challenge Rating of 8, it presents a serious challenge, providing a notable 3,900 XP upon defeat. The Sand Ray is characterized by its high Strength score of 18 (+4), allowing for powerful physical attacks, while its Dexterity of 16 (+3) contributes to its agility and stealth. Although it has below-average Constitution and average Intelligence, Wisdom, and Charisma scores, its stealth skill (+6) makes it a masterful ambusher. The creature has resistance to bludgeoning damage and is immune to being charmed or frightened. However, its Light Sensitivity introduces a notable weakness, imposing disadvantage on its attack rolls and Perception checks in bright light. The Sand Ray communicates using Deep Speech and Undercommon and has darkvision up to 60 feet, enhancing its effectiveness in dim light or darkness.</summary>
 
 <detail>

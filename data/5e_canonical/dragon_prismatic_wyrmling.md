@@ -1,6 +1,8 @@
 <MonsterName/>Dragon, Prismatic Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>39</HP>
 <summary>The Prismatic Wyrmling is a medium-sized dragon known for its vibrant appearance and formidable magical abilities. It stands out due to its radiant damage immunity and ability to cast spells, making it a unique opponent in combat. With a challenge rating of 2, it presents a moderate threat to adventurers. The dragon's physical attributes are balanced, giving it good durability and reasonable offensive capabilities, while its spellcasting adds versatility to its actions. However, with average Dexterity, the wyrmling may not be as evasive, making it susceptible to being hit if its opponents have good accuracy.</summary>
 
 <detail>

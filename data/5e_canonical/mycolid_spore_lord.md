@@ -1,6 +1,8 @@
 <MonsterName/>Mycolid Spore Lord</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Mycolid Spore Lord is a Medium plant creature that serves as a formidable foe on the battlefield, often manifesting in the midst of dense mushrooms and rot. With a Challenge Rating of 3, it possesses a good amount of durability, represented by its 68 hit points and a respectable Armor Class of 14, which is bolstered by natural armor. The spore lord is particularly notable for its strategic use of toxic spores and its ability to support fellow mycolids through telepathy, making it an essential figure for biological warfare or defense. Its weaknesses lie in its relatively slow speed of 15 feet, and its inability to communicate verbally, relying instead on telepathy. It excels at boundary control and area effects, inflicting significant poison damage and debilitating effects on enemies while providing buffs to its allies.</summary>
 
 <detail>

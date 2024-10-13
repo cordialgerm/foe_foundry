@@ -1,6 +1,8 @@
 <MonsterName/>Hell Hound</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>45</HP>
 <summary>A Hell Hound is a fierce, fiery canine creature that serves as a guard or tracker for fiends and dark forces. Its body is covered in charred, blackened fur, and its eyes glow with an eerie red light. Hell Hounds can breathe fire, scorching their enemies with flames, and their bite can cause severe burns. These creatures are often found in the service of devils or other infernal beings, patrolling the borders of the Nine Hells or hunting down souls or enemies of their masters. Hell Hounds are intelligent and cunning, working together in packs to bring down their prey.</summary>
 
 <summary>The Hell Hound is a formidable medium fiend, known for its swift agility and its fiery breath. With an Armor Class of 15 and 52 Hit Points, it poses a moderate threat with both its physical and magical capabilities. The creature's physical attributes showcase a strong Strength of 16, providing a good melee capability, and an impressive Constitution score of 16, offering it decent durability in combat. While its intelligence and charisma are relatively low, its dexterity is good, allowing it to evade attacks effectively. The Hell Hound's challenge rating is 3, providing 700 experience points upon defeat, indicating that it is a viable opponent for mid-level adventurers. It possesses a strong fire immunity, making it resistant to many elemental attacks, but its lawful evil alignment suggests it is not bound by any morality, often working with allies to enforce its goals.</summary>

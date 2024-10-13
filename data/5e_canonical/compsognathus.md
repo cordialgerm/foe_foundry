@@ -1,6 +1,8 @@
 <MonsterName/>Compsognathus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>10</HP>
 <summary>The Compsognathus is a small, unaligned beast known for its agility and stealth. It has an armor class of 12 and can withstand up to 10 hit points, making it relatively fragile. With a movement speed of 30 feet, this creature can navigate its environment quickly but is best suited for ambush tactics rather than prolonged combat. Its challenge rating of 1/8 indicates that it is a minimal threat, primarily serving as a nuisance or a minor enemy in encounters. The Compsognathus excels in stealth and teamwork, leveraging its skills and abilities to gain advantages during combat. However, it struggles with physical strength and charisma, which limits its overall effectiveness.</summary>
 
 <detail>

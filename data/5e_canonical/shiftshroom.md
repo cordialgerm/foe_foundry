@@ -1,6 +1,8 @@
 <MonsterName/>Shiftshroom</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>5</AC>
+<HP/>18</HP>
 <summary>The Shiftshroom is a Medium-sized unaligned plant creature known for its unique abilities that allow it to change its appearance and instill fear in its foes. It has a low Armor Class of 5 and relatively few hit points (18, calculated as 4d8), which makes it vulnerable in direct combat. Despite this, the Shiftshroom can effectively weaken opponents with its special abilities, particularly its ability to frighten creatures nearby. With a Challenge Rating of 1/4 (50 XP), it is considered a minor threat but can capitalize on its fear-inducing effects to disrupt more powerful foes. Its main strengths include its Shapechanger ability, which allows for tactical versatility, and its immunity to several conditions such as being blinded, deafened, or frightened. On the downside, its physical prowess is limited, as evidenced by a poor Dexterity modifier of -5, making it ineffective at dodging attacks.</summary>
 
 <detail>

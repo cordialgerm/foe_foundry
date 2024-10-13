@@ -1,6 +1,8 @@
 <MonsterName/>Centaur Chieftain</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>110</HP>
 <summary>The Centaur Chieftain is a large monstrosity characterized by its blend of brute strength and tactical leadership, functioning as a formidable combatant on the battlefield. This chaotic neutral creature has a strong physique, boasting a high Strength score and respectable Constitution, making it both a dangerous melee attacker and a resilient opponent. Its Dexterity allows for some agility, but it is not as pronounced as its strength. Notable strengths include its high hit points and several damaging attacks, while its overall average Intelligence can make it less strategic in certain contexts. The chieftain also commands its allies effectively through its Leadership ability, and its Charge ability can significantly amplify its damage output. However, it may struggle against more intelligent foes who can exploit its predictability in combat.</summary>
 
 <detail>

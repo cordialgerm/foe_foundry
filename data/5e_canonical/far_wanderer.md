@@ -1,6 +1,8 @@
 <MonsterName/>Far Wanderer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>88</HP>
 <summary>The Far Wanderer is a Medium aberration characterized by its enigmatic nature and mysterious abilities. This creature serves as a manipulator on the battlefield, utilizing its unique powers to control situations and sow confusion among its foes. With a relatively high Armor Class of 14 and a total of 88 hit points, it has the capability to withstand a fair amount of damage, making it a moderately durable opponent. Its Challenge Rating of 3 indicates that it presents a balanced challenge for parties of lower-level adventurers. The Far Wanderer excels in Dexterity and Intelligence, allowing it to be both evasive and astute in its approach to combat and interaction. However, it is also limited by its lower Constitution, Wisdom, and Charisma scores, which could affect its resilience and interaction abilities in certain scenarios.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Air Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>9</CR>
+<AC/>14</AC>
+<HP/>127</HP>
 <summary>The Giant Air Elemental is a formidable force in combat, embodying the power of wind and air. As a Huge elemental creature, it stands out with its significant size and impressive flight capabilities. With an Armor Class of 14 and a considerable pool of Hit Points amounting to 127, which is calculated as 15d12 plus an additional 30, this creature can absorb quite a bit of damage thanks to its abilities. It is rated with a Challenge Rating of 9, indicating a strong level of threat, and offers 5,000 experience points upon defeat. The Giant Air Elemental excels in mobility with a flying speed of 90 feet, enabling it to maneuver quickly around the battlefield. Its damage immunities include poison, while it resists damage from lightning, thunder, and nonmagical weapons, making it a durable opponent. However, its low Strength and Intelligence make it somewhat vulnerable to attacks that exploit these weaknesses.</summary>
 
 <detail>

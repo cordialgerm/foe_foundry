@@ -1,6 +1,8 @@
 <MonsterName/>Virtuoso Lich</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>123</HP>
 <summary>The Virtuoso Lich is a medium undead creature with an evil alignment that serves as a twisted master of artistry and magic. With an impressive Armor Class of 17 and a substantial 123 hit points, this lich excels in both defensive and offensive capabilities. Its challenge rating of 12 indicates that it is a formidable adversary, capable of dealing substantial damage while also being highly resistant to physical attacks from nonmagical sources. The Virtuoso Lich combines spellcasting prowess with unique artistic abilities, allowing it to support allies and hinder enemies in various ways. Its strengths lie in its multiple legendary actions and the powerful effects of its spells, but it is not without its weaknesses, particularly its reliance on maintaining its phylactery to avoid destruction. </summary>
 
 <detail>

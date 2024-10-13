@@ -1,6 +1,8 @@
 <MonsterName/>Bronze Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>57</HP>
 <summary>The Bronze Golem is a formidable Large Construct that embodies the fusion of magic and metallurgy. Unaligned in nature, this golem serves as a powerful guardian or a weapon in the hands of a skilled creator. Its strengths lie in its robust defensive capabilities, with a decent Armor Class of 13 and substantial hit points totaling 57. The creature excels in resisting various damage types, especially from physical attacks that lack magical enhancement. While it boasts high Constitution and Strength scores, which provide it with good resilience and melee prowess, its low Dexterity and Intelligence make it relatively slow and unwise in combat situations. It remains an exceptional entity in combat, utilizing its unique abilities to threaten characters in close quarters.</summary>
 
 <detail>

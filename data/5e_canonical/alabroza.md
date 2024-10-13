@@ -1,6 +1,8 @@
 <MonsterName/>Alabroza</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>45</HP>
 <summary>The Alabroza is a small, unaligned monstrosity known for its insatiable thirst for blood, which is crucial for its survival. This creature is characterized by its ability to fly and its relatively high mobility, allowing it to engage or disengage from combat effectively. With an Armor Class of 12, it has a moderate level of defense, but with only 45 hit points, it can be taken down fairly easily. Its strength lies in its offensive capabilities, particularly through its Draining Fangs ability, which can cause significant ongoing damage to its prey. However, its weakness is its dependency on consuming blood or milk daily, which, if unmet, leads to exhaustion. This dependency adds a strategic layer to encounters with the Alabroza, as it must find sustenance regularly.</summary>
 
 <detail>

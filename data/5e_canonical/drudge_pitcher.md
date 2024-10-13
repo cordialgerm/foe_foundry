@@ -1,6 +1,8 @@
 <MonsterName/>Drudge Pitcher</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Drudge Pitcher is a formidable and unique creature in the realm of Dungeons & Dragons 5th Edition. This Huge Plant creature serves as both a powerful combatant and a manipulative force on the battlefield, using its ability to ensnare enemies and create undead minions from their remains. With an impressive pool of hit points, high armor class, and various combat abilities, the Drudge Pitcher is capable of absorbing a significant amount of damage while delivering strong attacks. However, its low Dexterity makes it less agile, leading to a vulnerability against ranged attacks and spells. Its key traits include the ability to regenerate by consuming foes and transforming them into zombies, which can create dangerous situations for unsuspecting adventurers.</summary>
 
 <detail>

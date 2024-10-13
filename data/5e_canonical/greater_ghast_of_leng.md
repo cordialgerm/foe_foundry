@@ -1,6 +1,8 @@
 <MonsterName/>Greater Ghast of Leng</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>153</HP>
 <summary>The Greater Ghast of Leng is a large aberration that embodies chaotic evil, presenting a formidable challenge for adventurers. With an Armor Class of 17 and a substantial hit point pool of 153, it is resilient in combat. This creature excels in melee attacks thanks to its impressive Dexterity and Strength, allowing it to strike quickly and ferociously. However, it has vulnerabilities, particularly to radiant damage, which can significantly weaken it, especially in sunlight where it suffers additional damage and operational penalties. Its challenge rating of 8 indicates that it is a powerful opponent, requiring strategic thinking from a party of adventurers.</summary>
 
 <detail>

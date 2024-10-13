@@ -1,8 +1,10 @@
 <MonsterName/>Spy</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
-<Subtype/>any lineage</Subtype>
 <Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>27</HP>
 <summary>A Spy is a highly skilled operative trained in stealth, deception, and infiltration. Often employed by kingdoms, guilds, or secret organizations, Spies gather information, steal secrets, or assassinate key targets without drawing attention to themselves. They are experts at disguises, false identities, and navigating the shadows. In combat, Spies rely on precision strikes with daggers or crossbows, preferring to avoid direct confrontations. Their ability to blend in and escape unnoticed makes them invaluable for covert operations and dangerous opponents when caught off guard.</summary>
 
 <summary>The Spy is a Medium humanoid that excels in stealth and deception. With a modest Armor Class of 12 and a pool of 27 hit points, it is not heavily armored but compensates with agility and cunning. Its Challenge Rating of 1 indicates it is a moderately challenging adversary suitable for low-level parties. A notable strength lies in its Dexterity, which allows for good stealth capabilities and effective ranged attacks with a hand crossbow. However, its average Strength and Constitution mean it is not as effective in direct melee combat. The Spy can be a formidable opponent when it utilizes its special abilities, particularly the Sneak Attack, which can significantly boost its damage output under the right conditions.</summary>

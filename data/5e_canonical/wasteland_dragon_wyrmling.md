@@ -1,6 +1,8 @@
 <MonsterName/>Wasteland Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Wasteland Dragon Wyrmling is a medium-sized dragon embodying chaotic evil, making it a formidable adversary for adventurers. With a strong combination of mobility and offensive capabilities, it poses a significant threat to those who encounter it. It boasts an Armor Class of 17 due to its natural armor, making it fairly difficult to hit. With 60 hit points derived from a roll of 8d8 plus 24, it has good durability in combat. The dragon has versatile movement abilities, including burrowing, climbing, flying, and walking, allowing it to navigate various terrains and engage or escape from foes effectively. Its challenge rating of 3 reflects a moderate level of difficulty for a party of adventurers. Notably, the Wasteland Dragon Wyrmling has an immunity to force damage and possesses keen senses, including blindsight and darkvision. However, its Dexterity is average, which could present an opportunity for tactical engagements where mobility is a factor.</summary>
 
 <detail>

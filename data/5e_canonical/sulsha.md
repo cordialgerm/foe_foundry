@@ -1,6 +1,8 @@
 <MonsterName/>Sulsha</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Sulsha is a large and imposing humanoid creature characterized by its lawful evil alignment and lethal combat tactics. With a robust Armor Class of 16 and an impressive 90 hit points, it presents a significant challenge to adventurers. Sulsha excel in both melee and ranged attacks, showcasing their versatility with multiple options during combat. Their ability to climb and fight simultaneously makes them formidable in environments with vertical elements, leveraging their speed to traverse the battlefield effectively. However, their low Charisma score of 9 indicates a weakness in social interactions, suggesting that they are not the most persuasive or charismatic beings. Using a combination of physical attacks and area damage from bombs, the Sulsha is a relentless foe capable of frightening its opponents and maintaining control over the battle.</summary>
 
 <detail>

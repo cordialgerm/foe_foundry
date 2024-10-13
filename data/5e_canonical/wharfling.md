@@ -1,6 +1,8 @@
 <MonsterName/>Wharfling</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>10</HP>
 <summary>The Wharfling is a tiny and agile beast characterized by its ability to navigate both land and water with ease. Unaligned and mischievous, it thrives in environments where it can use its dexterity and stealth to pilfer items from unsuspecting targets. With an average armor class of 12 and a modest 10 hit points, the Wharfling is relatively fragile and should be treated with caution if cornered. Its challenge rating of 1/8 indicates that it is a minor threat but can still surprise players by stealing valuable items. Overall, the Wharfling is notable for its exceptional dexterity and pilfering abilities, which can offer unique role-playing opportunities and dynamic combat encounters.</summary>
 
 <detail>

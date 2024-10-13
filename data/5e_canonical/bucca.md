@@ -1,6 +1,8 @@
 <MonsterName/>Bucca</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Bucca is a Tiny fey creature characterized by its mischievous and treacherous nature. As a neutral evil entity, it thrives in environments where it can play tricks and outwit unsuspecting foes. With a decent Armor Class of 14 due to natural armor and 27 hit points, it can withstand some damage before being taken down. The Bucca excels in stealth and deception, with exceptional Dexterity and Charisma scores, making it a formidable opponent in combat and a cunning manipulator in social interactions. However, its reliance on stealth and elusiveness can be hindered when exposed to sunlight, which poses a significant weakness.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Fabricator</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Fabricator is a Large Construct that serves as a neutral entity within the realm of Dungeons & Dragons 5th Edition. With a Challenge Rating of 10, it poses a notable threat to adventurers, providing a combination of robust defenses and unique crafting abilities. This creature boasts an impressive 147 hit points and an Armor Class of 13, making it moderately durable in combat. One of its standout features is its ability to create objects from raw materials, allowing it to forge useful items during downtime. While its Strength is exceptional at +4, giving it a solid offensive capability, its Dexterity is quite low at -2, making it less effective in dodging attacks. Damage immunities to force, poison, and psychic types, along with resistances to nonmagical bludgeoning, piercing, and slashing attacks, enhance its resilience. However, the Fabricator's weakest point lies in its low Charisma, which is -3, leaving it vulnerable in social interactions. </summary>
 
 <detail>

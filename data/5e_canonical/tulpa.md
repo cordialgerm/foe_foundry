@@ -1,6 +1,8 @@
 <MonsterName/>Tulpa</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>39</HP>
 <summary>The Tulpa is a medium undead creature characterized by its neutral evil alignment. This entity serves as a manifestation of a creator's mental disturbances, making it a potent adversary that can linger nearly indefinitely unless its creator is eliminated or their mental issues resolved. The Tulpa boasts a combination of physical and psychic abilities, allowing it to strike from a distance while also posing a psychological threat on the battlefield. With a decent Armor Class of 13 and 39 hit points, it can hold its own but is notably vulnerable to radiant damage. The creature's unique abilities, including incorporeal movement and a frightening aura, transform it into a challenging opponent, particularly for unsuspecting foes.</summary>
 
 <detail>

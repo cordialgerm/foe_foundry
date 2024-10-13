@@ -1,6 +1,8 @@
 <MonsterName/>Field Commander</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>10</CR>
+<AC/>19</AC>
+<HP/>170</HP>
 <summary>The Field Commander is a formidable medium humanoid, embodying a strategic leader in battle with an impressive combination of athleticism and charisma. With an Armor Class of 19, it possesses a strong defense augmented by a breastplate and a shield, making it quite resilient against attacks. The commander has a substantial pool of hit points, totaling 170, which contributes to its longevity in combat. Its Strength score is exceptionally high at 19, allowing for powerful melee attacks, while its Charisma of 18 enables it to effectively wield spells and rally allies. The Field Commander is particularly notable for its ability to protect and bolster allies, providing advantages in combat situations, though it may find itself lacking in certain skills, such as perception. Overall, the Field Commander is an excellent leader on the battlefield, capable of turning the tide in favor of its allies through its special abilities and spells.</summary>
 
 <detail>

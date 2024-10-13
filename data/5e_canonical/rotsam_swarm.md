@@ -1,6 +1,8 @@
 <MonsterName/>Rotsam Swarm</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>6</CR>
+<AC/>9</AC>
+<HP/>142</HP>
 <summary>The Rotsam Swarm is a large ooze creature characterized by its unaligned nature and an affinity for necrotic energy. This monster thrives in environments where decay is prevalent, representing a menacing force with strong defensive capabilities due to its immunities and resistances. The Rotsam Swarm exhibits significant health and can endure prolonged encounters, thanks to its high hit points and ability to inflict debilitating diseases. Its main offensive threat lies in its diseased bites, which can not only cause substantial damage but also spread a dangerous disease called bog rot. The Rotsam Swarm's weaknesses include a low Armor Class, making it vulnerable to concentrated attacks, and its poor Dexterity score, which results in clumsiness.</summary>
 
 <detail>

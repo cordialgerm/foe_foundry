@@ -1,6 +1,8 @@
 <MonsterName/>Angelic Enforcer</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Angelic Enforcer is a powerful creature known for its role as a divine protector and punisher within celestial realms. This large celestial being embodies the principles of law and good, making it a formidable presence in combat. Its notable strengths include high armor class, significant hit points, and a range of potent abilities and spells that allow it to deal heavy damage while resisting many forms of attacks. Additionally, the enforcer possesses innate spellcasting abilities, making it effective in both combat and supportive roles. Its primary weaknesses include a vulnerability to magic attacks, despite its resistance to nonmagical damage, and its reliance on maintaining a lawful good nature which can impact its interactions with potentially evil characters.</summary>
 
 <detail>

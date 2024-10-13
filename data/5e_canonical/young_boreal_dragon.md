@@ -1,6 +1,8 @@
 <MonsterName/>Young Boreal Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>8</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Young Boreal Dragon is a formidable and chaotic neutral creature, embodying the essence of both power and agility. With a strong focus on dealing damage and controlling the battlefield, it possesses high hit points and impressive offensive capabilities, making it a challenging opponent for adventurers. However, it also has weaknesses, such as its susceptibility to cold and the limitations of its Dexterity. Its natural armor provides a good level of defense, and it can engage in both melee and ranged combat effectively. Notably, it has the ability to unleash a powerful breath weapon that can significantly impact multiple foes within a wide area.</summary>
 
 <detail>

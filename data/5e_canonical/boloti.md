@@ -1,6 +1,8 @@
 <MonsterName/>Boloti</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>45</HP>
 <summary>The Boloti is a Tiny Fey creature known for its cunning and agility, embodying a neutral evil alignment. This creature excels in aquatic environments, using its special abilities and skills to enhance its combat effectiveness, particularly when submerged in water. With an Armor Class of 15 and Hit Points totaling 45, the Boloti can withstand a fair amount of damage while also being exceptionally fast, capable of walking 60 feet per turn. Its defining feature is its dual nature, allowing it to switch between a true form and a vortex form, adapting its tactics to the environment. However, it is somewhat limited when on dry land, facing disadvantages that can be exploited by careful opponents. Overall, the Boloti poses a moderate threat in aquatic scenarios, boasting good offensive capabilities coupled with strategic maneuvering.</summary>
 
 <detail>

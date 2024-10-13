@@ -1,6 +1,8 @@
 <MonsterName/>Ork Urk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>The Ork Urk is a medium humanoid creature known for its ferocity in combat and its role as a frontline warrior within orc war bands. With a challenge rating of 2, the Urk is a moderate threat that presents both strengths and weaknesses. This creature has a solid balance between defensive capabilities and offensive power, making it a formidable opponent. With an Armor Class of 13 and hit points totaling 45, the Urk can absorb a fair amount of damage, while its powerful attacks, particularly with a greataxe, allow it to deal significant slashing damage to foes. Notably, when bloodied, the Ork Urk becomes more dangerous, attacking with advantage but also becoming susceptible to more damage due to the same condition. </summary>
 
 <detail>

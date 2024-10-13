@@ -1,6 +1,8 @@
 <MonsterName/>Giant Sloth</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Giant Sloth is a large, unaligned beast known for its impressive physical power and considerable durability. With an armor class of 15 due to its natural armor and a robust health pool of 168 hit points, the Giant Sloth is a tough adversary that can absorb significant damage. Its challenge rating of 7 indicates that it poses a medium threat to a party of adventurers. The creature's high strength score of 19 (+4) enables it to deliver powerful attacks, while its Constitution score of 19 (+4) ensures a good resilience to physical attacks. However, the sloth is slow, with a movement speed of only 20 feet for both walking and climbing, making it less agile in combat situations. The Giant Sloth has some formidable special abilities, including its "Foul Odor," which can hinder opponents, and "Hunter's Dash," allowing it to move swiftly and attack with increased effectiveness.</summary>
 
 <detail>

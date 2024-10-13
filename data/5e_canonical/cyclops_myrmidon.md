@@ -1,6 +1,8 @@
 <MonsterName/>Cyclops Myrmidon</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>10</CR>
+<AC/>17</AC>
+<HP/>126</HP>
 <summary>The Cyclops Myrmidon is a formidable Huge Giant creature known for its physical strength, resilience, and unique combat abilities. With an impressive Armor Class of 17 and a significant pool of 126 hit points, it can withstand considerable damage in battle. The cyclops excels in melee combat, making it a dangerous opponent, particularly when threatened. However, it struggles with ranged attacks due to its Poor Depth Perception, which reduces its effectiveness at a distance. While it possesses some basic skills such as survival and animal handling, its low Intelligence suggests limited strategic thinking. Overall, it serves as a heavy-hitting melee attacker, capable of unleashing devastating blows while providing a level of support with its special abilities during encounters.</summary>
 
 <detail>

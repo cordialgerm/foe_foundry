@@ -1,6 +1,8 @@
 <MonsterName/>Piercer</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>17</AC>
+<HP/>9</HP>
 <summary>The Piercer is a small monstrosity that poses a unique challenge for adventurers. While it has a relatively low health pool of 9 hit points and an average armor class of 17, making it somewhat resilient for its size, its main strength lies in its deceptive nature. The Piercer can blend in with its surroundings as it resembles a stalactite when motionless. This allows it to ambush unsuspecting creatures beneath it. However, despite its ambush potential, the Piercer has very low attributes in intelligence, wisdom, and charisma, making it a fundamentally unthinking creature driven only by instinct. It has a challenge rating of 1/2, indicating that it is suitable for low-level encounters but can be dangerous if players are not cautious.</summary>
 
 <detail>

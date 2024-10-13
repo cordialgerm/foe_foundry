@@ -1,6 +1,8 @@
 <MonsterName/>Swampgas Bubble</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>2</CR>
+<AC/>8</AC>
+<HP/>59</HP>
 <summary>The Swampgas Bubble is a Medium ooze-type creature with an unaligned disposition, found in swampy environments. It operates with a challenge rating of 2, making it a moderate threat for adventurers, capable of dealing considerable damage through its unique abilities and actions. This creature has a notably high Constitution modifier of +4, which grants it strong hit points, totaling 59 (7d8 + 28). It is able to fly and hover but has a limited walking speed. The creature excels in dealing poison damage and can suffocate its victims, but it is particularly vulnerable to fire damage, which can result in its explosive demise when injured in critical condition. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Azer Forgemaster</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>4</CR>
+<AC/>16</AC>
+<HP/>78</HP>
 <summary>The Azer Forgemaster is a formidable medium elemental creature known for its affinity with fire and mastery as a craftsman. With a challenge rating of 4, it is a capable adversary in combat. The azer possesses a good armor class of 16 and a decent pool of hit points totaling 78, making it resilient in battle. It excels in close-quarters combat, utilizing its special abilities and fire-based attacks to deal damage. However, it has a vulnerability to cold damage, which can be exploited by opponents. The creature's strength also lies in its fiery aura that not only damages nearby foes but also provides light, emphasizing its role as a battlefield control element.</summary>
 
 <detail>

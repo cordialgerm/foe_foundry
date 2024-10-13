@@ -1,6 +1,8 @@
 <MonsterName/>Resinous Frog</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>19</HP>
 <summary>The Resinous Frog is a small beast that serves as a low-level creature in Dungeons & Dragons 5th Edition. Unaligned and notable for its unique abilities, this frog can pose a surprising challenge for adventurers. It has a modest armor class of 12 due to its natural armor and possesses a decent pool of health with 19 hit points, calculated through the roll of three six-sided dice plus a constitution modifier. The frog can move at a speed of 30 feet, making it reasonably agile for a small creature. With a Challenge Rating of 1/4, it offers 50 experience points to those who manage to defeat it. Its attributes reflect a creature that is strong and resilient, though lacking in dexterity and intelligence: it has a Strength score of 14 (+2 modifier), which is good, a Dexterity score of 9 (-1 modifier), which is bad, and a Constitution score of 16 (+3 modifier), which is very good. </summary>
 
 <detail>

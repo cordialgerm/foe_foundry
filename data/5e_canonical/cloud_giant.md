@@ -1,6 +1,8 @@
 <MonsterName/>Cloud Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>9</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>200</HP>
 <summary>Cloud Giants are towering, majestic beings who live among the clouds in vast, floating castles. Standing over 20 feet tall, these giants have pale, almost translucent skin, and their hair and clothing often seem to billow as if caught in an eternal breeze. They are powerful spellcasters and are known to control the weather, summoning thunderstorms and hurling bolts of lightning. Cloud Giants are aristocratic by nature, considering themselves the nobility of the giant races. They are often aloof and can be either benevolent or tyrannical rulers, depending on their whims. They treasure wealth, particularly valuable objects, and rare gemstones.</summary>
 
 <summary>The Cloud Giant is a Huge creature representing a powerful type of giant within the D&D universe. Known for its impressive physical statistics and magical capabilities, the Cloud Giant excels in both melee and ranged combat while possessing the ability to control its environment with spells. With a challenge rating of 10, it poses a significant threat, particularly to unprepared adventurers. Its notable attributes include a high Strength score of 27, granting it exceptional melee attack power, as well as a good Constitution score of 22, which contributes to its high hit points and overall durability in battle. However, its Dexterity is average, making it less effective in terms of initiative and ranged defense. The Cloud Giant can utilize a variety of innate spells and special abilities that enhance its versatility, notably in controlling the battlefield and using the environment to its advantage.</summary>

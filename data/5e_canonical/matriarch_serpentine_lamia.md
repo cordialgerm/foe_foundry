@@ -1,6 +1,8 @@
 <MonsterName/>Matriarch Serpentine Lamia</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Matriarch Serpentine Lamia is a large monstrosity embodying the essence of a cunning, deceptive character. This creature is neutral evil and thrives in the shadows, using its powers of manipulation and stealth to control and ambush its prey. With a strong ability to influence others through deception and intimidation, the Matriarch is a formidable opponent, boasting a decent armor class of 15 and a substantial pool of hit points totaling 90. Its movement capabilities are versatile, allowing it to walk, swim, and climb effectively, which enhances its tactical positioning in a variety of environments. While it has a lower Intelligence score, its high Charisma and Dexterity, along with unique magical abilities, make it a dangerous creature capable of charming foes and controlling the battlefield.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Polar Bear</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>42</HP>
 <summary>The Polar Bear is a massive, white-furred predator found in the icy tundras and frozen seas of the north. Known for their strength, Polar Bears are fierce hunters, preying on seals, fish, and other animals in their frigid environment. They are excellent swimmers and can travel long distances across ice and water in search of food. In combat, Polar Bears rely on their powerful claws and crushing bites to overwhelm their enemies. Though they are solitary by nature, they will fiercely defend their territory and young from intruders.</summary>
 
 <summary>The Polar Bear is a large beast known for its formidable strength and resilience in its natural environment. This creature has an Armor Class of 12, indicating that it has a decent level of defense against attacks, but it's not particularly difficult to hit. With 42 hit points, calculated as 5d10 plus 15, it has a solid amount of endurance in combat. The challenge rating of 2 suggests that it is suitable for groups of low to mid-level adventurers. Its primary strengths lie in its high Strength score of 20, providing a +5 modifier that reflects its exceptional physical prowess, and a good Constitution score of 16, which gives it a +3 modifier, enhancing its durability. However, the bear has weaknesses in Intelligence and Charisma, with scores of 2 (-4) and 4 (-3) respectively, demonstrating a very limited capacity for social interaction and problem-solving. </summary>

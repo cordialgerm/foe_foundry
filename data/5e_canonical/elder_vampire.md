@@ -1,6 +1,8 @@
 <MonsterName/>Elder Vampire</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>11</CR>
+<AC/>16</AC>
+<HP/>285</HP>
 <summary>The Elder Vampire is a formidable creature, serving as both a powerful adversary in combat and a master manipulator outside of it. With an armor class of 16 and a staggering 285 hit points, this Medium undead being is resilient and difficult to take down. Its strengths lie in high attributes, especially in Strength and Constitution, both at 20, indicating exceptional physical prowess and durability. The Elder Vampire is also skilled in Dexterity and Charisma, making it agile and a capable deceiver. However, it is vulnerable to sunlight and running water, taking significant radiant damage when exposed, which can incapacitate it and prevent it from utilizing its regeneration or mist form abilities. The Elder Vampire’s challenge rating of 11 reflects its dangerous combination of combat abilities, spellcasting potential, and intimidating presence, requiring careful strategy from any adventurers encountering it.</summary>
 
 <detail>

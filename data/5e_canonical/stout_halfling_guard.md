@@ -1,6 +1,8 @@
 <MonsterName/>Stout Halfling Guard</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>11</HP>
 <summary>The Stout Halfling Guard is a small humanoid creature that serves as a basic defensive unit in various settings. It has a solid armor class of 15, making it relatively resilient in battle for its challenge rating of 1/8. With 11 hit points, it can withstand a few hits before falling, and its speed allows it to move with average agility, covering 30 feet in a single turn. This guard possesses basic combat abilities and skills that make it a competent protector, but it lacks high damage output or exceptional combat prowess. Notable attributes include its perception abilities, which enable it to notice hidden threats effectively.</summary>
 
 <detail>

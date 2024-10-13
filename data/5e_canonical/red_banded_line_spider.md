@@ -1,6 +1,8 @@
 <MonsterName/>Red-Banded Line Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>15</HP>
 <summary>The Red-Banded Line Spider is a tiny, unaligned beast characterized by its speed and agility. With a challenge rating of 1/4, it serves as a minor but formidable adversary in combat situations. The spider possesses a respectable Armor Class of 13 and hit points of 15, making it relatively resilient for its size. Its strengths lie in its high Dexterity score of 16, enabling impressive stealth capabilities and agility in movement, while its weak Strength score of 4 makes it poor at physical confrontations. The creature's unique abilities, such as its poison-infused attacks and mobility through webbing, allow it to effectively harass unsuspecting foes, making it a valuable asset in ambush scenarios.</summary>
 
 <detail>

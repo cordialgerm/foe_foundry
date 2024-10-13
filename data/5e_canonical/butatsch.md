@@ -1,6 +1,8 @@
 <MonsterName/>Butatsch</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>14</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>248</HP>
 <summary>The Butatsch is a gargantuan aberration with a chaotic neutral alignment, dominating its environment with a strategy of ambush and area denial. It wields formidable physical strength and possesses notable magical capabilities, making it a considerable threat in combat. With a high armor class of 17 and an impressive hit point total of 248, it can withstand significant damage. The creature is particularly resilient against bludgeoning attacks, while it enjoys immunity to acid and fire, making it difficult to damage with typical elemental attacks. However, its speed is below average on land, limiting its mobility to 20 feet when on foot, though it compensates with a swimming speed of 50 feet. It excels in combat through its unique abilities, namely its Immolating Gaze and grappling actions, both of which can severely hinder or eliminate opponents. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Archon</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>201</HP>
 <summary>The Clockwork Archon is a formidable Gargantuan Construct that plays a unique role in combat as a heavily armored and resilient warrior. With an Armor Class of 18 and a substantial pool of Hit Points totaling 201, it stands as a significant threat on the battlefield. Its high Strength of 24 allows it to deal considerable damage, making it a powerful frontline fighter. While its Dexterity of 9 is a weakness, its impressive Constitution of 20 ensures that it can withstand a lot of punishment. Additionally, the archon benefits from several special abilities that enhance its defensive and offensive capabilities. Notably, it can act as a transport for smaller allies, providing them protection while they are inside its torso. However, its low Intelligence, Wisdom, and Charisma scores mean that it lacks versatility and social interaction skills.</summary>
 
 <detail>

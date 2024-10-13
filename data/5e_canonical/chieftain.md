@@ -1,6 +1,8 @@
 <MonsterName/>Chieftain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>110</HP>
 <summary>The Chieftain is a Small Humanoid creature classified as Lawful Evil, often serving as a commanding figure among its kind. With a solid Armor Class of 16 and a substantial pool of Hit Points amounting to 110, this creature is designed to withstand significant damage in combat. Its Challenge Rating is 5, indicating a moderate difficulty level for a party of adventurers. The Chieftain possesses impressive Strength, allowing it to deal extra damage with melee weapons, thanks to its Brute ability. However, it is sensitive to sunlight, suffering disadvantages in combat while exposed. Its strengths lie in commanding allies, dealing damage, and inflicting fear upon opponents, making it formidable in battle. </summary>
 
 <detail>

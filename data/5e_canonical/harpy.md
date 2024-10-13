@@ -1,6 +1,8 @@
 <MonsterName/>Harpy</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>38</HP>
 <summary>Harpies are vicious, winged creatures with the upper body of a human woman and the lower body of a bird. Their voices are hauntingly beautiful, and they use their songs to lure unsuspecting victims to their doom. Once their prey is close, Harpies swoop down and attack with sharp talons and claws. They are known for their cruelty and love of torment, often playing with their victims before delivering a fatal blow. Harpies typically make their nests in high cliffs or remote islands, where they can ambush travelers and sailors from above.</summary>
 
 <summary>The Harpy is a Medium-sized monstrosity known for its alluring and dangerous presence. With a challenge rating of 1, it poses a moderate threat to adventurers, particularly through its ability to charm and manipulate enemies. Although its physical attributes are average, its strength lies in its Luring Song ability, which can incapacitate foes, rendering them vulnerable to its attacks. However, the Harpy is relatively fragile, with only 38 hit points and an armor class of 11, making it susceptible to damage if enemies can successfully save against its charms or if they can close the distance and engage in combat. </summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Quoreq</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Quoreq is a chaotic evil aberration known for its unsettling appearance and regenerative capabilities. This medium-sized creature exhibits a strong offensive presence, with formidable physical damage potential and abilities that instill fear in its opponents. With its high constitution, the Quoreq boasts a significant pool of hit points, making it quite durable in combat encounters. However, its intelligence is average, which can limit its strategic capabilities. The Quoreq is particularly susceptible to acid and fire damage, which can prevent its regeneration and potentially lead to its destruction. Overall, the Quoreq thrives in direct confrontations, using its special abilities to manipulate the battlefield and instill terror in enemies.</summary>
 
 <detail>

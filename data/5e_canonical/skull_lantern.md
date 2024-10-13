@@ -1,6 +1,8 @@
 <MonsterName/>Skull Lantern</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>14</HP>
 <summary>The Skull Lantern is a tiny undead creature, notable for its eerie glow and vulnerability despite its unique abilities. With an armor class of 13 and 14 hit points, it possesses modest defenses but can be quite effective in combat due to its flying speed of 30 feet and the ability to hover. The Skull Lantern primarily operates in support roles, illuminating areas and potentially disrupting magical darkness while also having some offensive capabilities. Its challenge rating of 1/4 indicates it is best suited for low-level encounters, offering 50 experience points upon defeat. While its attributes portray it as frail, especially with a strength score of only 1, it shines in dexterity with a +3 modifier, making its attacks significantly more accurate.</summary>
 
 <detail>

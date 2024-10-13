@@ -1,6 +1,8 @@
 <MonsterName/>Guard Squad</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15</AC>
+<HP/>55</HP>
 <summary>The Guard Squad is a large humanoid creature that functions primarily as a protective unit in combat. With a challenge rating of 3, it serves as a mid-level threat on the battlefield. Its strengths lie in its ability to absorb damage and transform when severely injured, allowing it to continue affecting the encounter even when faced with heavy attacks. However, the Guard Squad has notable vulnerabilities, particularly concerning area attacks, which can deal double damage. This combination of resilience and vulnerability makes it a unique and strategic opponent that requires careful handling by players.</summary>
 
 <detail>

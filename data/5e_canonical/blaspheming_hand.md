@@ -1,6 +1,8 @@
 <MonsterName/>Blaspheming Hand</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Blaspheming Hand is a Large fiend that embodies lawful evil, serving as a unique adversary in combat scenarios. With a reasonable Armor Class of 14, a substantial pool of 68 hit points, and a Challenge Rating of 3, it poses a moderate threat to adventurers. Notable for its flight ability and a variety of powerful actions, the Blaspheming Hand can control the battlefield through grappling and magical effects. However, it has weaknesses against magic weapons and can be overwhelmed if isolated from its allies, as its special ability Steadfast relies on having them nearby. The combination of damage immunities, resistances, and skill set makes it a formidable foe, best approached with strategic teamwork and spellcasting.</summary>
 
 <detail>

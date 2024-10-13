@@ -1,6 +1,8 @@
 <MonsterName/>Crimson Mist</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>15</AC>
+<HP/>68</HP>
 <summary>The Crimson Mist is a Medium undead creature characterized by its chaotic evil nature. Hovering in a spectral form, it combines the traits of a vampire with mist-like qualities, making it a formidable opponent to adventurers. With an armor class of 15 and a total of 68 hit points, it can withstand a fair amount of damage. The creature excels in dealing necrotic damage and can threaten the life of characters with blood by reducing their hit point maximum while recovering its own vitality. Although it possesses several strengths, such as immunities to various damage types and conditions, the Crimson Mist is notably vulnerable to sunlight, which can severely handicap its effectiveness in combat. </summary>
 
 <detail>

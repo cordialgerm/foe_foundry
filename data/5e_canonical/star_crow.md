@@ -1,6 +1,8 @@
 <MonsterName/>Star Crow</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>12</HP>
 <summary>The Star Crow is a tiny aberration known for its unsettling features and arcane abilities. With a Challenge Rating of 1/4, it is not particularly strong in combat but possesses unique strengths that can disrupt and manipulate foes. It has a natural armor granting it a decent Armor Class of 15, but its hit points are relatively low at just 12, making it vulnerable to damage. The Star Crow is exceptionally agile, boasting a Dexterity score of +3, which provides it with a good modifier for actions involving agility and stealth. Its special abilities, including Aberrant Resilience and Illumination, enhance its survivability and utility in both combat and exploration settings. While it can be a nuisance due to its ability to attach to opponents, it also has several weaknesses, particularly its low Strength and Intelligence scores.</summary>
 
 <detail>

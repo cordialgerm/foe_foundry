@@ -1,6 +1,8 @@
 <MonsterName/>One-Horned Ogre</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (scale mail)</AC>
+<HP/>93</HP>
 <summary>The One-Horned Ogre is a formidable foe with significant physical strength and magical abilities, making it a dangerous opponent in combat. As a Large Giant with a challenge rating of 5, it poses a serious threat to adventurers, boasting strong hit points and decent armor. Its strengths lie in its high Strength score of 21, enabling it to deal considerable damage with melee attacks, and its Charisma score of 18, which enhances its spellcasting abilities. However, its weaknesses include an average Dexterity, rendering it less adept at dodging attacks, and its Intelligence and Wisdom scores being below average, affecting its strategic awareness in combat. The One-Horned Ogre excels in intimidation and can inflict additional psychological damage using its unique abilities.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Tembril</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Tembril is a large monstrosity characterized by its cunning and lethal abilities in combat. With a high Armor Class of 15, it is relatively sturdy thanks to its natural armor. It has a commendable pool of Hit Points totaling 114, which allows it to absorb considerable damage before being taken down. The Tembril is a formidable opponent with a Challenge Rating of 6, providing 2,300 experience points for defeating it. It possesses exceptional physical strength and constitution, boasting a Strength score of 19 and a Constitution score of 18, which contributes to its high damage potential and resilience in battle. With a dexterous agility and stealth, it can effectively maneuver within combat, making it a threatening predator. However, it has a poor Intelligence score of 4, meaning it lacks complex thought processes, and it is unaligned, showing no inherent allegiance.</summary>
 
 <detail>

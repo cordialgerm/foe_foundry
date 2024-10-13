@@ -1,6 +1,8 @@
 <MonsterName/>Mallqui</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>120</HP>
 <summary>The Mallqui is a Medium undead creature characterized by its lawful neutral alignment. This being excels in both offense and defense, boasting a solid Armor Class of 14 and a substantial pool of hit points at 120, making it quite durable in combat. The creature's challenge rating of 8 means that it presents a significant threat to parties of adventurers, providing a balance of necrotic damage and debilitating abilities that can weaken opponents. Its impressive Wisdom score allows it to excel in Insight checks, further enhancing its role as a dangerous and cunning adversary. However, it is notably vulnerable to radiant damage, which can negate its regenerative abilities, making it crucial for players to exploit this weakness during encounters. </summary>
 
 <detail>

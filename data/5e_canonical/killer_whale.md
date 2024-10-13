@@ -1,6 +1,8 @@
 <MonsterName/>Killer Whale</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Killer Whale, also known as an orca, is a massive, intelligent predator that dominates the oceans. Its sleek, black-and-white body allows it to move through the water with incredible speed and agility. Killer Whales are social creatures, often hunting in pods and using coordinated strategies to take down large prey, such as seals, fish, or even other sea creatures. Their powerful jaws and sharp teeth make them deadly hunters. While they primarily hunt marine animals, they are known to be highly intelligent and can be trained or directed by seafaring cultures.</summary>
 
 <summary>The Killer Whale is a powerful and sizable creature that falls into the category of Huge Beasts, making it a formidable opponent in aquatic environments. Its strengths lie in its impressive grappling capabilities and its proficiency in swimming, allowing it to maneuver adeptly in water. With an Armor Class of 12, the Killer Whale has a moderate defense, but its significant hit point total of 75 provides a sturdy buffer against attacks. The creature possesses a good Strength score of 18, which enhances its melee combat effectiveness, while its Dexterity is average, resulting in a less impressive agility in combat. Although the Killer Whale's Intelligence and Charisma scores are very low, its Wisdom is decent which means it's perceptive to its surroundings, particularly through sound. However, its Challenge Rating of 3 indicates that while it is capable, it might not be an overwhelming threat in a diverse party of adventurers.</summary>

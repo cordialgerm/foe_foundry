@@ -1,6 +1,8 @@
 <MonsterName/>Mandrake</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>8</AC>
+<HP/>22</HP>
 <summary>The Mandrake is a tiny, unaligned plant creature that embodies a unique blend of characteristics and abilities. With a low Armor Class of 8 and moderate health totaling 22 hit points, the Mandrake is not built for direct confrontation. Its real strengths lie in its unique abilities, particularly the Shriek, which can stun or incapacitate opponents. However, with low Dexterity and Intelligence, its effectiveness in physical combat and strategic thinking is very poor, limiting its role mainly to providing disruptive support through sound rather than melee prowess. Players encountering a Mandrake should be cautious of its Shriek, as it can significantly impact the battlefield dynamics.</summary>
 
 <detail>

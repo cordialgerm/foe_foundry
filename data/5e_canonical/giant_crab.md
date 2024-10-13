@@ -1,6 +1,8 @@
 <MonsterName/>Giant Crab</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>13</HP>
 <summary>A Giant Crab is a massive, crustacean predator with a hard, chitinous shell and enormous pincers capable of crushing bone. Found in coastal waters, rocky shores, and sometimes underground caves, Giant Crabs are territorial and will defend their nests or hunting grounds fiercely. They can move surprisingly fast on land despite their size and use their pincers to capture and dismember prey. In combat, they rely on their tough shell for defense, while their pincers deliver powerful, crushing blows. Giant Crabs are often hunted for their meat, but they are formidable foes to anyone who crosses their path.</summary>
 
 <summary>The Giant Crab is a medium-sized beast that serves as a minor threat in various encounters, particularly for adventurers operating near water bodies or coastal regions. It has a decent armor class of 15, thanks to its natural armor, and possesses a modest pool of hit points at 13, making it relatively easy to defeat for a party of adventurers. With a challenge rating of 1/4, it is typically not meant to be a significant opponent but can be dangerous in groups or in ambush situations, especially with its grappling capabilities. The crab's strengths lie in its amphibious nature, which allows it to thrive both on land and underwater, and its capacity to incapacitate targets through grappling and suffocation. However, its overall combat effectiveness is hampered by its average physical attributes, lack of intelligence, and low charisma.</summary>

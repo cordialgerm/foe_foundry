@@ -1,6 +1,8 @@
 <MonsterName/>Greyfur</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>67</HP>
 <summary>The Greyfur is a small humanoid creature known for its agility and magical abilities. With a neutral alignment, it stands out in encounters due to its unique glide ability, which allows it to control its descent when falling, making it adept at navigating vertical spaces. Its notable strengths lie in its dexterity, intelligence, and a selection of spells that can manipulate the battlefield to its advantage. However, its physical strength is lacking, making it vulnerable in direct melee combat. The Greyfur's considerable skills in Acrobatics and Stealth enhance its capability to ambush or evade attackers, while its moderate hit points allow it to withstand a reasonable amount of damage.</summary>
 
 <detail>

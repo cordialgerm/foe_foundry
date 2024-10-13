@@ -1,6 +1,8 @@
 <MonsterName/>Ratfolk Warlock</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>27</HP>
 <summary>The Ratfolk Warlock is a small humanoid creature characterized by its dexterous movements and potent spellcasting abilities. With a challenge rating of 1, this creature is not only capable in close combat but also excels in using a variety of spells to control the battlefield and support its allies. Its strengths lie in its high Dexterity and Charisma scores, which enhance its spellcasting and ability to evade attacks. However, it has low Strength and average Constitution, making it somewhat vulnerable in direct physical confrontations. The Ratfolk Warlock utilizes its nimbleness and tactical advantages, such as Pack Tactics, which allow it to coordinate effectively with allies during combat. Overall, the Ratfolk Warlock is a clever and resourceful opponent that blends agility with magical prowess.</summary>
 
 <detail>

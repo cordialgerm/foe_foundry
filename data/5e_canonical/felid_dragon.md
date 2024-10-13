@@ -1,6 +1,8 @@
 <MonsterName/>Felid Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>19</CR>
+<AC/>18</AC>
+<HP/>275</HP>
 <summary>The Felid Dragon is a formidable and neutral creature with incredible speed and agility, suited for both aerial and terrestrial combat. As a Huge Dragon, it boasts a high Armor Class of 18 and a substantial pool of hit points totaling 275, making it difficult to defeat. With a Challenge Rating of 19, it presents a significant challenge to adventurers, having a total experience point reward of 22,000 upon defeat. The dragon's remarkable Dexterity score of 26 grants it exceptional reflexes, and its magical resistance makes it difficult to affect with spells. However, while it possesses numerous strengths such as powerful melee attacks and various debilitating abilities, it may need to rely on strategic positioning to maintain the upper hand in combat.</summary>
 
 <detail>

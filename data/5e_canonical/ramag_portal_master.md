@@ -1,6 +1,8 @@
 <MonsterName/>Ramag Portal Master</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>12</AC>
+<HP/>71</HP>
 <summary>The Ramag Portal Master is a medium neutral humanoid and a formidable spellcaster whose abilities are centered around manipulation of space and magic. With a challenge rating of 5, it serves as a mid-level adversary capable of both dealing significant damage and controlling the battlefield. Its strengths include its impressive spellcasting capabilities, particularly in crowd control and area denial, as well as its natural resistance to magic. However, its moderate armor class of 12, which can be increased to 15 with the use of mage armor, makes it somewhat vulnerable to physical attacks, particularly if caught off-guard. The Ramag’s intelligence and magical prowess make it a cunning opponent, one that can outmaneuver and outwit adventurers trying to close the distance.</summary>
 
 <detail>

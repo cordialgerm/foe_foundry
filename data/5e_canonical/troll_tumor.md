@@ -1,6 +1,8 @@
 <MonsterName/>Troll, Tumor</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>6</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>125</HP>
 <summary>The Tumor Troll is a large chaotic evil giant characterized by its horrifying regenerative abilities and the chaos brought about by its unique teratomas. With a high number of hit points, it stands as a formidable adversary in battle, proving difficult to defeat unless targeted effectively with fire or acid. Its strength and vitality make it dangerous, while its low dexterity and intelligence present opportunities for smarter combat strategies. This creature thrives in chaotic encounters, constantly adapting through its unpredictable special abilities, which can significantly alter the dynamics of a fight.</summary>
 
 <detail>

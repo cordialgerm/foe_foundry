@@ -1,6 +1,8 @@
 <MonsterName/>Nihilethic Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>8</AC>
+<HP/>37</HP>
 <summary>The Nihilethic Zombie is an undead creature characterized by its eerie connection to the void and its role as a harbinger of decay and darkness. It possesses a unique hybrid ability to shift between two forms: an Undead form and a Void Ghost form. The zombie is physically resilient with a total of 37 hit points, making it capable of enduring moderate amounts of damage before succumbing. However, it possesses a low armor class of 8, making it relatively easy to hit. Its special abilities grant it exceptional survivability; for example, it can potentially avoid being reduced to zero hit points altogether. The Nihilethic Zombie can maneuver through enemies and obstacles in its ghost form, though it suffers damage for doing so. It is immune to certain damage types such as cold, necrotic, and poison, but it is vulnerable to radiant damage, making it weaker against specific threats. While it can understand certain languages, it cannot communicate verbally, which limits its interaction options.</summary>
 
 <detail>

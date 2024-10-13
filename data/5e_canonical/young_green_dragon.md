@@ -1,6 +1,8 @@
 <MonsterName/>Young Green Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>8</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>136</HP>
 <summary>A Young Green Dragon is a devious and manipulative creature, already adept at using lies and deceit to achieve its goals. Its emerald-green scales blend perfectly with the dense forests or jungles it calls home, allowing it to ambush unsuspecting prey. Its poisonous breath weapon can engulf its foes in a cloud of toxic gas. Young Green Dragons are highly territorial and cunning, often using fear and manipulation to control weaker creatures and bend them to their will. They are patient hunters, enjoying the thrill of playing with their prey before delivering the final blow.</summary>
 
 <summary>The Young Green Dragon is a formidable and cunning creature that serves as a powerful adversary in the Dungeons & Dragons universe. With an impressive size classified as Huge, it boasts a high armor class of 17 and a significant hit point pool of 161, which makes it resistant to elimination in combat. This dragon's challenge rating of 10 indicates that it is meant for parties of characters that are around level 10. Its dual ability to maneuver both in the air, with a flying speed of 80 feet, and on land, with a walking speed of 40 feet, gives it exceptional mobility in battles. Notable for its innate spellcasting abilities, the Young Green Dragon can manipulate the battlefield with magic while simultaneously delivering potent physical attacks. Although it has strength and resilience, it does carry some weaknesses, particularly against characters capable of dealing with its poison damage and using higher-level combat strategies to evade its defensive capabilities. </summary>

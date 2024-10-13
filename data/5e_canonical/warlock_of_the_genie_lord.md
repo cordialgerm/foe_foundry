@@ -1,6 +1,8 @@
 <MonsterName/>Warlock Of The Genie Lord</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (studded leather)</AC>
+<HP/>78</HP>
 <summary>The Warlock of the Genie Lord is a medium humanoid creature with a versatile set of abilities primarily focused on elemental damage and spellcasting. This character is adept at manipulating elemental forces, dealing significant damage through melee attacks and spells, and has a solid defense with a decent armor class of 15 provided by studded leather. With a total of 78 hit points, it can endure considerable punishment in combat. Its challenge rating of 5 indicates that it presents a moderate challenge for adventurers. Notably, the Warlock of the Genie Lord possesses resistance to several types of damage, including acid, cold, fire, lightning, and thunder, making it quite resilient against various attacks. It excels in delivering burst damage while having the option to control the battlefield with spells, although it has an average capability in physical combat due to its average Strength. The character's reliance on Charisma for its spellcasting makes it particularly potent, especially in tandem with its ability to enhance its attack efficiency through its special ability.</summary>
 
 <detail>

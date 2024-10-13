@@ -1,6 +1,8 @@
 <MonsterName/>Giant Mantis Shrimp</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Giant Mantis Shrimp is a formidable Large beast known for its striking appearance and lethal capabilities. With a challenge rating of 5, it poses a significant threat to adventurers, boasting a robust hit point pool of 110, bolstered by its natural armor that grants it an armor class of 14. This creature's movements are versatile, allowing it to walk, burrow, and swim effectively. Its strengths lie in its physical power and unique abilities, particularly its capacity to inflict both piercing and thunder damage while grappling enemies. However, the Mantis Shrimp has very weak mental attributes, which makes it easy to manipulate or outsmart in social interactions. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Goblin Siege Engine</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>11</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>178</HP>
 <summary>The Goblin Siege Engine is a formidable construct, categorized as a Huge creature that serves an often chaotic role in combat scenarios. It is designed for heavy damage output and exceptional durability, boasting an Armor Class of 20 and a substantial pool of 178 hit points. With a Challenge Rating of 11, it is a significant adversary in battle. Notably, it has high Strength and Constitution scores, making it exceptionally resilient and capable of dealing out damage. However, it lacks intelligence and charisma, which limits its utility in social interactions. Its key strengths include immunity to multiple damage types and conditions, along with special abilities that facilitate mobility and defense, while its weaknesses lie in its low Dexterity and reliance on its physical attacks.</summary>
 
 <detail>

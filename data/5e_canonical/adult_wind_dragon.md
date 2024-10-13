@@ -1,6 +1,8 @@
 <MonsterName/>Adult Wind Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>16</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>187</HP>
 <summary>The Adult Wind Dragon is a powerful and imposing creature that embodies the chaotic forces of nature, particularly the tempestuous elements of wind and lightning. This Huge Dragon is categorized as Chaotic Neutral, which means it acts according to its own whims without a clear moral direction. With impressive statistics, it boasts an Armor Class of 17, making it resilient against attacks, and possesses 187 hit points, which provide it with substantial durability in battle. With a Challenge Rating of 16, this creature poses a significant threat to adventurers, rewarding them with 15,000 experience points upon defeat. The dragon excels in physical prowess with high attributes in Strength and Constitution, while also demonstrating notable Dexterity, Intelligence, Wisdom, and Charisma. It holds a variety of damaging and debilitating abilities, but its penchant for chaos can also present disadvantages in more structured engagements.</summary>
 
 <detail>

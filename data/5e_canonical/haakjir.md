@@ -1,6 +1,8 @@
 <MonsterName/>Haakjir</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Haakjir is a medium-sized monstrosity characterized by its unique combination of earth manipulation and lethal claw attacks. It is a neutral creature that excels in tactical combat situations, especially when working alongside allies, thanks to its Pack Tactics ability. With a respectable Armor Class of 15, the Haakjir can endure moderate damage, and its solid hit point pool of 52 allows it to withstand encounters sufficiently. Although its intelligence and charisma scores are notably low, which can hinder social interactions or complex problem-solving, its physical attributes are strong, facilitating effective melee attacks and agility in combat. It is particularly adept at navigating diverse terrains, given its climbing and burrowing capabilities, giving it an advantage in encounters that might take place in rocky or uneven environments.</summary>
 
 <detail>

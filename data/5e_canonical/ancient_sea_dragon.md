@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Sea Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>518</HP>
 <summary>The Ancient Sea Dragon is a powerful and imposing creature categorized as a Gargantuan dragon with neutral evil alignment. With an exceptional Armor Class of 22 and an astounding 518 hit points, it epitomizes strength and durability in combat. This dragon boasts impressive statistical values, particularly in Strength and Constitution, making it formidable both as an attacker and a defender. Its challenge rating of 23 suggests that it is a significant threat in higher-level campaigns, rewarding players with considerable experience points upon its defeat. Notable traits include its ability to breathe both air and water, and its immunity to cold damage, showcasing its adaptation to aquatic environments. However, it has a mundane Dexterity score, which presents an opportunity for adversaries to exploit its lack of agility.</summary>
 
 <detail>

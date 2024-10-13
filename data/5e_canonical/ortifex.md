@@ -1,6 +1,8 @@
 <MonsterName/>Ortifex</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Ortifex is a Medium-sized undead creature known for its neutral evil alignment, making it a formidable adversary in any combat encounter. With a Challenge Rating of 4, it poses a substantial threat to lower-level parties, offering 1,100 XP upon defeat. It has an Armor Class of 12, which is average and can result in some hits getting through, but it compensates with a substantial pool of 78 hit points, representing good durability thanks to its natural armor. The Ortifex’s speed is unique as it cannot walk but can fly at a speed of 30 feet and hover, giving it excellent mobility in the air. However, its attributes show certain weaknesses; it has very poor intelligence and average dexterity, making it less effective in situations requiring cleverness or agility, though it boasts very good strength and good constitution, enhancing its melee combat capabilities. </summary>
 
 <detail>

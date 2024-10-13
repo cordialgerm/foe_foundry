@@ -1,6 +1,8 @@
 <MonsterName/>Suturefly</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>10</HP>
 <summary>The Suturefly is a tiny, unaligned beast that serves as both a stealthy adversary and a unique source of disruption in combat. With a reasonable armor class of 12 and hit points totaling 10, it is relatively fragile. However, its strengths lie in its mobility, particularly its walk speed of 40 feet and a flying speed of 10 feet, allowing it to evade attacks and reposition quickly. The creature has very good Dexterity, reflected in its +2 modifier, which grants it advantage in stealth situations, making it a difficult target to pin down. Notably, its special abilities offer interesting mechanics during encounters, particularly its capacity to detect lies and inflict debilitating conditions with its sewing attack. While it has very low Strength, Intelligence, and Charisma scores, its stealth-focused fighter role allows it to thrive in forested environments.</summary>
 
 <detail>

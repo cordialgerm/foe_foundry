@@ -1,6 +1,8 @@
 <MonsterName/>Warrior Band</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>55</HP>
 <summary>The Warrior Band is a large humanoid creature that embodies the essence of teamwork and resilience in battle. With a challenge rating of 3, it is a formidable opponent that can endure significant punishment before being defeated. The band has a robust set of attributes, relying on its physical strength and teamwork to engage in combat effectively. One of its notable strengths is its ability to disperse into multiple warriors when reduced to zero hit points, allowing it to potentially thrive even in its defeat. However, it has weaknesses, such as a vulnerability to area damage effects which can drastically increase the damage it takes. Overall, the Warrior Band serves as a tactical threat in encounters, engaging in close-quarters combat with a capable array of attacks while maintaining resilience through its numbers.</summary>
 
 <detail>

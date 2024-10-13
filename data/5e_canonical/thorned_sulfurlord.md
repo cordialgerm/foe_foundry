@@ -1,6 +1,8 @@
 <MonsterName/>Thorned Sulfurlord</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>171</HP>
 <summary>The Thorned Sulfurlord is a formidable Huge Fiend that embodies chaos and evil in its very essence. As a challenge rating 11 creature, it possesses a high degree of durability and offensive capability, making it a significant threat on the battlefield. With an impressive 171 hit points, the Thorned Sulfurlord can endure substantial damage before going down. Its high Armor Class of 17 provides a solid defense against attacks. While its movement speed is relatively low at 20 feet, its special abilities compensate for this limitation, allowing it to manipulate the terrain and deal consistent damage to nearby foes. Vulnerable only to cold damage while immune to fire and poison, it presents a unique challenge for adventurers, who must strategize carefully to overcome its strengths.</summary>
 
 <detail>

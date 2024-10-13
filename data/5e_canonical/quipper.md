@@ -1,6 +1,8 @@
 <MonsterName/>Quipper</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>13</AC>
+<HP/>1</HP>
 <summary>A Quipper is a small, carnivorous fish with razor-sharp teeth, known for its aggressive nature and ability to strip flesh from bone in seconds. Found in rivers, lakes, or coastal waters, Quippers often swim in large schools, which makes them particularly dangerous to any creature that ventures into their territory. While individually weak, the combined efforts of a school of Quippers can overwhelm even larger creatures. They are highly territorial and will attack anything that enters their waters.</summary>
 
 <summary>The Quipper is a tiny aquatic beast known for its swift swimming ability and aggressive nature despite its minuscule size. With an armor class of 13, it possesses decent defenses for a creature of its stature. Its hit points are exceptionally low, totaling only 1, which makes it fragile in combat. However, its swimming speed of 40 feet allows it to navigate through water and evade threats efficiently. As a challenge rating of 0, it is considered a minor threat in the context of the game, primarily seen as a food source for larger predators than anything else. The Quipper's strengths lie in its agility and bite attacks, but its significantly low strength and constitution also make it susceptible to quick defeats.</summary>

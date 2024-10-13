@@ -1,6 +1,8 @@
 <MonsterName/>Darakhul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>18</AC>
+<HP/>78</HP>
 <summary>The Darakhul is a Medium undead creature characterized by its neutral evil alignment. In combat, it serves as a powerful foe with a variety of attacks and abilities that enhance its effectiveness against living creatures. With an Armor Class of 18 and a total of 78 hit points, the Darakhul can withstand a fair amount of damage. It possesses a good blend of physical attributes, including a Strength of 16, Dexterity of 17, and Constitution of 14, making it a formidable combatant. However, it does carry weaknesses such as vulnerability to sunlight, which imposes disadvantages on its attack rolls and perception checks. Overall, the Darakhul is notable for its mastery of disguise, ability to inflict disease, and the capability to paralyze its foes, posing a serious threat to unprepared adventurers.</summary>
 
 <detail>

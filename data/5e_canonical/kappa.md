@@ -1,6 +1,8 @@
 <MonsterName/>Kappa</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>49</HP>
 <summary>The Kappa is a small fey creature that embodies the characteristics of chaos, often straddling the line between neutral and evil alignments. With its inherent agility and cleverness, the Kappa serves as a trickster in its natural habitat, typically found near lakes or rivers. It possesses considerable physical strength, making it a formidable opponent in close combat. The Kappa's notable abilities include grappling larger creatures and manipulating the unique bowl-shaped indent on its head, which impacts its combat effectiveness. However, should it lose the water from its head bowl, it faces significant challenges, indicating that while it has strengths, it also has distinct vulnerabilities.</summary>
 
 <detail>

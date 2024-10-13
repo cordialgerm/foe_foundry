@@ -1,6 +1,8 @@
 <MonsterName/>Goliath Longlegs</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>162</HP>
 <summary>The Goliath Longlegs is a gargantuan monstrosity that presents both a formidable challenge and a unique tactical threat in combat. With a high armor class and significant hit points, this creature can absorb damage while dealing consistent harm to its opponents. Its most notable qualities lie in its multi-faceted attack capabilities, its ability to camouflage itself in forested environments, and its unique vulnerability mechanic related to its legs. Despite its power, the Goliath Longlegs has limitations, particularly its slow movement and reliance on its numerous legs for stability, which makes it susceptible to strategic damage.</summary>
 
 <detail>

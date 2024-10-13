@@ -1,6 +1,8 @@
 <MonsterName/>Beheaded Vengeful Spirit</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (Angry Defiance)</AC>
+<HP/>54</HP>
 <summary>The Beheaded Vengeful Spirit is a formidable Medium Undead creature that embodies rage and vengeance, with a particular focus on manipulating emotions during combat. Bearing a Challenge Rating of 4, it provides 1,100 experience points upon defeat. With an impressive Armor Class of 15 and a total of 54 hit points, this spirit is difficult to strike down, especially with its special ability called Angry Defiance, which enhances its defensive capabilities. It excels in certain damage immunities, particularly to cold, necrotic, and poison damage, while also resisting many forms of physical harm. However, it is not particularly strong in physical attributes, especially Strength, where it receives a very bad modifier (-2). Instead, this spirit thrives on its high Charisma value, allowing it to unleash powerful psychic attacks that can turn the tide of battle. </summary>
 
 <detail>

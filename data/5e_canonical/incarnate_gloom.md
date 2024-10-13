@@ -1,6 +1,8 @@
 <MonsterName/>Incarnate Gloom</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>13</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>184</HP>
 <summary>The Incarnate Gloom is a gargantuan undead creature of neutral evil alignment, designed to instill fear and despair in its foes. With an impressive 184 hit points and a Challenge Rating of 13, it serves as a formidable opponent in combat. It possesses strong defenses due to its natural armor and various resistances and immunities. The Incarnate Gloom excels in stealth and intimidation, making it a dangerous foe that can ambush unsuspecting characters. Its unique abilities allow it to manipulate darkness and inflict significant psychic and necrotic damage while simultaneously restraining and blinding its enemies. However, it is vulnerable to radiant damage, which can significantly hinder its effectiveness in battle.</summary>
 
 <detail>

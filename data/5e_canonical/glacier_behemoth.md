@@ -1,6 +1,8 @@
 <MonsterName/>Glacier Behemoth</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>172</HP>
 <summary>The Glacier Behemoth is a formidable and massive creature within the Dungeons & Dragons universe, classified as a huge unaligned beast. Renowned for its incredible bulk and power, it boasts an armor class of 18 due to its natural armor, and possesses a substantial pool of 172 hit points, derived from 15d12 plus 75. This behemoth has a challenge rating of 12, which signifies that it presents a significant threat to mid-level adventurers. Its primary strengths lie in its powerful physical attacks, exceptional resilience to many forms of damage, and its unique abilities that manipulate the terrain around it. However, it suffers from very low dexterity, making it less effective at avoiding incoming attacks. It also lacks any cognitive abilities, as evidenced by its below-average intelligence and charisma. </summary>
 
 <detail>

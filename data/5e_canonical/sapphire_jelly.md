@@ -1,6 +1,8 @@
 <MonsterName/>Sapphire Jelly</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>6</CR>
+<AC/>9</AC>
+<HP/>144</HP>
 <summary>The Sapphire Jelly is a formidable Medium ooze creature that presents a unique challenge in combat. With a notable Armor Class of 9 and a substantial pool of 144 hit points, it can absorb significant damage before succumbing. Functioning at Challenge Rating 6, it offers a reward of 2,300 XP to those who defeat it. This gelatinous monster is unaligned, which means it does not adhere to any moral philosophy, making it a neutral entity in the world. The Sapphire Jelly’s strengths include its impressive Constitution, granting it resistance to a range of conditions, as well as its freezing and engulfing attacks that threaten characters with both damage and debilitating effects. Its weaknesses lie primarily in its low Dexterity, which affects its ability to dodge attacks. The Sapphire Jelly's most distinctive feature is its ability to transform slain humanoids into glacial corrupters if not resurrected or destroyed, adding a layer of danger to encounters with this creature.</summary>
 
 <detail>

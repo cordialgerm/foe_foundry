@@ -1,6 +1,8 @@
 <MonsterName/>Emerald Order Cult Leader</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (Divine Blessing)</AC>
+<HP/>156</HP>
 <summary>The Emerald Order Cult Leader is a powerful humanoid figure, embodying a mix of martial prowess and divine magic. This medium creature is known for its Lawful Neutral or Lawful Evil alignment, suggesting a strict adherence to its own beliefs and the authority of its deity. With a formidable Armor Class of 15 and a significant pool of 156 hit points, the cult leader can withstand considerable damage in combat. Its strengths lie in both melee and spellcasting capabilities, making it a versatile opponent on the battlefield. One of its notable features is the ability to enhance its allies' effectiveness in combat, providing tactical advantages. However, it is crucial to recognize its vulnerabilities; although its defensive options are robust, it lacks mobility compared to other fast-moving creatures. </summary>
 
 <detail>

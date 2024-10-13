@@ -1,6 +1,8 @@
 <MonsterName/>Lizardfolk Shaman</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>57</HP>
 <summary>The Lizardfolk Shaman is a medium humanoid creature that functions as a spellcaster and a combatant in encounters. With an Armor Class of 13, it demonstrates good durability, maintaining a solid pool of 57 Hit Points. Its Challenge Rating of 2 indicates that it poses a moderate threat in combat scenarios. The shaman is adept in navigating its environment with a speed of 30 feet, climbing ability of 15 feet, and swimming ability of 30 feet, making it highly versatile in natural terrains. It possesses a variety of spellcasting capabilities and a potent set of attacks allowing it to inflict significant damage while also supporting its allies through healing and control spells. Although its attributes are mostly average, it shines with an exceptional Wisdom score of +5, enhancing its spells and perception.</summary>
 
 <detail>

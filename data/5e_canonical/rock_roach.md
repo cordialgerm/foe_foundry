@@ -1,6 +1,8 @@
 <MonsterName/>Rock Roach</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>67</HP>
 <summary>The Rock Roach is a formidable Medium Beast with a unique set of abilities that make it a challenging opponent, particularly for adventurers of lower levels. With a solid Armor Class of 16 and a significant pool of hit points totaling 67, the Rock Roach is quite durable in combat. While its Challenge Rating of 2 suggests it is a moderate threat, the creature's two brains grant it a resilience that can catch unwary players off guard. The Rock Roach is primarily offensive in nature, employing its biting attacks and Acid Spit to inflict damage on enemies. However, it possesses weaknesses such as being vulnerable to more sophisticated strategies due to its low Intelligence and Charisma scores. Taken together, the Rock Roach represents both physical prowess and unique tactical advantages, making it an interesting encounter.</summary>
 
 <detail>

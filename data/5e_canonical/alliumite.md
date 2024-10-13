@@ -1,6 +1,8 @@
 <MonsterName/>Alliumite</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>18</HP>
 <summary>The Alliumite is a small, chaotic neutral plant creature known for its stealthy and agile nature. With an impressive Dexterity score of 18, it is exceptionally skilled in avoiding detection and maneuvering through various terrains. This creature possesses a solid Armor Class of 14 and moderate Hit Points totaling 18, making it fairly resilient for its Challenge Rating of 1/4. The Alliumite excels at ambush tactics thanks to its clever use of plant camouflage and its potent Tearful Stench ability, which can incapacitate foes nearby. However, it lacks strength and charisma, leading to weaknesses in physical confrontations and interactions that rely on persuasion or influence.</summary>
 
 <detail>

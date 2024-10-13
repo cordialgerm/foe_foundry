@@ -1,6 +1,8 @@
 <MonsterName/>Sootwing</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>13</HP>
 <summary>The Sootwing is a small beast that embodies a unique blend of traits suitable for a surprise attack or distraction in combat scenarios. With an armor class of 11, it possesses basic defensive capabilities that can be easily overcome by more seasoned attackers. Its hit points total 13, which is relatively low, making it vulnerable to sustained damage. The creature has a flying speed of 30 feet and a walking speed of 25 feet, allowing it to maneuver effectively in the air and reposition quickly during encounters. The challenge rating of 1/4 indicates that it is a low-tier adversary, making it suitable for encounters with inexperienced adventurers or as a lesser companion for more formidable foes.</summary>
 
 <detail>

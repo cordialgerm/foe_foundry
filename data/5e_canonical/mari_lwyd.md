@@ -1,6 +1,8 @@
 <MonsterName/>Mari Lwyd</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>66</HP>
 <summary>The Mari Lwyd is a large undead creature characterized by its eerie presence and unique combat abilities, making it a formidable opponent in any encounter. With a challenge rating of 4, it poses a significant threat, especially due to its higher-than-average hit points of 66 and solid defenses, highlighted by an armor class of 15. This creature moves at a speed of 40 feet and is especially resilient to certain types of damage, having immunities to poison and resistances to necrotic damage. Despite its strengths, it is not invulnerable, particularly vulnerable to charm effects as indicated by its lower Charisma saving throw modifier. Creatures facing the Mari Lwyd must be wary of its strong melee attacks and its ability to utilize magic to enhance its combat effectiveness or control the battlefield.</summary>
 
 <detail>

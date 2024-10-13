@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Fire Dancers</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>7</CR>
+<AC/>15</AC>
+<HP/>90</HP>
 <summary>The Swarm of Fire Dancers is a medium-sized swarm of elemental creatures embodying the chaotic and destructive nature of fire. With a challenge rating of 7, they present a significant threat to unprepared adventurers, dealing substantial fire damage while being highly resistant to various damage types. Their ability to occupy the same space as other creatures allows them to effectively swarm opponents while causing ongoing fire damage and spreading fear through their appearance. Though they possess above-average defenses and immunities, their vulnerabilities to cold damage and susceptibility to water can be exploited by clever players.</summary>
 
 <detail>

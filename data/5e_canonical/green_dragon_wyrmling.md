@@ -1,6 +1,8 @@
 <MonsterName/>Green Dragon Wyrmling (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>38</HP>
 <summary>The Green Dragon Wyrmling is a powerful young dragon that embodies the characteristics common to its kind, being a formidable presence in both combat and exploration. It is classified as a Huge creature, which allows it to dominate the battlefield with significant attack power and resilience. With an Armor Class of 16, the wyrmling demonstrates good defensive capabilities, while its 55 hit points provide a solid buffer in combat. This dragon excels in forest environments, utilizing its Woodland Stalker ability to become especially adept at stealth, which can be advantageous for ambush tactics. However, it is still developing its full powers compared to older dragons, making it somewhat less dangerous than its adult counterparts. It possesses strong melee attacks and a potent breath weapon, which can impact multiple characters at once, but it is somewhat limited by its recharge mechanic.</summary>
 
 <detail>

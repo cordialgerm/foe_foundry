@@ -1,6 +1,8 @@
 <MonsterName/>Lotus Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>14</AC>
+<HP/>82</HP>
 <summary>The Lotus Golem is a large construct that possesses both resilience and unique spellcasting abilities, making it a formidable opponent in combat. With an Armor Class of 14 and 82 hit points, it is capable of sustaining a fair amount of damage, classified under Challenge Rating 9 which indicates it presents a significant challenge for party members. This creature is agile, boasting a Dexterity score of 19 (+4), allowing it to evade attacks well, while its Strength of 14 (+2) makes it somewhat effective in melee combat. However, its low Intelligence, Wisdom, and Charisma scores limit its interaction and effectiveness with mental and social skills, making it very bad in these areas. Notably, the Lotus Golem has multiple damage immunities and resistances, allowing it to withstand various types of damage, and its special abilities provide it with enhanced capabilities in magical contexts.</summary>
 
 <detail>

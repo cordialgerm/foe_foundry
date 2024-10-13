@@ -1,6 +1,8 @@
 <MonsterName/>Herald of Blood</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>12</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>184</HP>
 <summary>The Herald of Blood is a powerful and imposing creature categorized as a Huge Fiend with a Neutral Evil alignment. With a robust Armor Class of 15 and a staggering 184 hit points, this monster is designed to dominate the battlefield through both melee and ranged attacks. Its high Strength score of 22 grants it exceptional power in combat, while its high Constitution of 20 gives it remarkable durability. The Herald excels in dealing necrotic damage and can inflict debilitating effects on its foes, including the potential to poison or exhaust them. Its movement capabilities, allowing it to walk and fly at a speed of 30 feet, provide tactical advantages in combat. While it is vulnerable to radiant damage and has a few weaknesses, its numerous immunities make it a formidable foe that challenges adventurers with a Challenge Rating of 12.</summary>
 
 <detail>

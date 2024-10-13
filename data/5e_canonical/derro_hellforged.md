@@ -1,6 +1,8 @@
 <MonsterName/>Derro, Hellforged</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>112</HP>
 <summary>The Derro, Hellforged is a small yet formidable humanoid creature characterized by its lawful evil alignment. With a robust Armor Class of 16, the Hellforged boasts impressive hit points totaling 112, making it a resilient opponent in combat. Its challenge rating of 6 indicates that it poses a significant threat to parties of adventurers, providing 2,300 experience points upon defeat. Notably, the Hellforged possesses a unique combination of abilities that enhance its combat prowess while also introducing some vulnerabilities, particularly to light. Its strengths lie in its magical weapon attacks and resistance to certain types of damage, while its disadvantages include its impaired performance in bright sunlight and lower Wisdom, which means it struggles with perception checks.</summary>
 
 <detail>

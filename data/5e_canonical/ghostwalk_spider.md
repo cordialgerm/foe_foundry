@@ -1,6 +1,8 @@
 <MonsterName/>Ghostwalk Spider</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>15</AC>
+<HP/>119</HP>
 <summary>The Ghostwalk Spider is a formidable large monstrosity that embodies both stealth and strength, primarily functioning as a predator in its environment. With a neutral evil alignment, it typically engages its victims with cunning and lethality. This creature boasts an Armor Class of 15 and a substantial pool of Hit Points totaling 119, meaning it can withstand a significant amount of damage while dishing out high-damage attacks in return. It moves swiftly with a speed of 50 feet and has a Challenge Rating of 9, making it a significant encounter for adventurers. Notably, the Ghostwalk Spider has a diverse set of abilities, including an intrinsic resistance to various forms of elemental and non-magical damage while in its ghostly form, providing it with exceptional evasion capabilities. However, it does have weaknesses, primarily its low Charisma and Intelligence, which affect its ability to engage in social interactions or resist certain magical effects.</summary>
 
 <detail>

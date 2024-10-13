@@ -1,6 +1,8 @@
 <MonsterName/>Infernal Knight</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>16</CR>
+<AC/>18 (plate)</AC>
+<HP/>247</HP>
 <summary>The Infernal Knight is a formidable fiend, embodying lawful evil tendencies with its chaotic presence on the battlefield. Residing within the Medium size category, it boasts a substantial challenge rating of 16, making it a difficult adversary for most adventuring parties. With an impressive 247 hit points and high armor class of 18, it can sustain considerable damage while also dealing significant harm to its foes through both melee and ranged attacks. The Infernal Knight has exceptional strength, physical resilience, and magical prowess, underscored by its ability to regenerate health and resist various forms of damage. However, it may struggle in situations requiring high mobility or evasion, as its Dexterity is only average. Overall, the Infernal Knight serves as a relentless pursuer and adept combatant, capable of sending opponents into panic through its necrotic powers and soul-capturing abilities.</summary>
 
 <detail>

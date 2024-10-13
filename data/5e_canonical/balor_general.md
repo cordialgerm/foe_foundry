@@ -1,6 +1,8 @@
 <MonsterName/>Balor General</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>24</CR>
+<AC/>19</AC>
+<HP/>379</HP>
 <summary>The Balor General is a huge fiend characterized by its formidable presence on the battlefield. As a powerful demon, it embodies chaotic evil, radiating an aura that affects creatures around it. It boasts an impressive Armor Class of 19 and a staggering 379 hit points, making it exceptionally resilient to attacks. With a challenge rating of 24, this fiend is considered a high-level adversary, requiring considerable strategy and power from player characters to defeat. Its abilities center around its control of fire and lightning, along with exceptional mobility, allowing it to teleport and react swiftly in combat. However, despite its incredible power and damage immunities, it can be defeated through concentrated efforts and smart tactics.</summary>
 
 <detail>

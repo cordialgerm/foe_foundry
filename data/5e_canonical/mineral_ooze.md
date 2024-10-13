@@ -1,6 +1,8 @@
 <MonsterName/>Mineral Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>3</CR>
+<AC/>9</AC>
+<HP/>76</HP>
 <summary>The Mineral Ooze is a Large, neutral ooze that serves as a unique adversary in encounters, particularly effective in ambush scenarios due to its deceptive appearance and ability to restrain enemies. With a relatively low Armor Class of 9, it compensates with a high hit point total of 76, providing it with resilience in battle. Its challenge rating of 3 indicates that it poses a moderate threat to adventurers, particularly when it can utilize its grappling and encasing abilities to capture and neutralize foes. The ooze is particularly well-defended against damage types such as acid, cold, and fire. However, its weaknesses include a slow movement speed of only 20 feet and poor dexterity, making it vulnerable to ranged attacks from quick adversaries.</summary>
 
 <detail>

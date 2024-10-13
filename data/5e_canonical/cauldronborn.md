@@ -1,6 +1,8 @@
 <MonsterName/>Cauldronborn</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>13</HP>
 <summary>The Cauldronborn is a small construct that embodies a unique blend of magical abilities and specialized skills, making it an intriguing encounter for adventurers. Its unaligned nature means it doesn't lean towards good or evil, allowing it to pursue its goals without moral constraints. With a challenge rating of 2, its strengths lie in its ability to consume potions, enhance its health, and detect magical items, while its weaknesses include low Dexterity and Charisma scores, which make it relatively ineffective in social interactions and susceptible to attacks that require agility. The Cauldronborn can serve as a formidable opponent, especially in environments rich with potions and magical items, potentially overwhelming players with its ability to consume potions and heal itself while simultaneously fighting.</summary>
 
 <detail>

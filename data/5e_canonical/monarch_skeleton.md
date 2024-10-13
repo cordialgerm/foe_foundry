@@ -1,6 +1,8 @@
 <MonsterName/>Monarch Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (chain mail)</AC>
+<HP/>142</HP>
 <summary>The Monarch Skeleton is a formidable undead creature with a neutral evil alignment. Serving as a tactical leader for other skeletons, it possesses strengths in combat through its high strength and constitution scores, as well as its ability to coordinate attacks with allies. With an armor class of 16 and a substantial pool of 142 hit points, it can withstand a fair amount of punishment. The skeleton is particularly frightening due to its potent necrotic attacks, which can not only deal damage but also reduce the maximum hit points of its victims, making it a prime threat in battle. However, it is vulnerable to radiant damage and has no offensive capabilities against magical attacks made with silver. Its challenge rating of 9 indicates that it can pose a significant challenge to a well-prepared party.</summary>
 
 <detail>

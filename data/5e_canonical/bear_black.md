@@ -1,6 +1,8 @@
 <MonsterName/>Bear, Black</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>25</HP>
 <summary>The Black Bear is a medium-sized beast that serves as an ideal encounter for low-level adventurers, often found in wilderness areas. With a Challenge Rating of 1/2, it poses a moderate threat, capable of dealing a significant amount of damage with its attacks. Its strengths lie in its decent hit points of 25 and its mobility, allowing it to traverse quickly on land and climb efficiently. However, it lacks any particularly high armor and has low intelligence, making it relatively easy to outsmart. The bear's heightened sense of smell enhances its ability to be aware of its surroundings, making it a formidable opponent in its natural habitat.</summary>
 
 <detail>

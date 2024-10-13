@@ -1,6 +1,8 @@
 <MonsterName/>Crab</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>2</HP>
 <summary>A Crab is a small, hard-shelled creature that scuttles sideways along beaches and shallow waters. It has two large pincers, which it uses to defend itself or to crack open shells and catch prey. Crabs are not inherently aggressive but will snap at anything that comes too close. They are often found in coastal regions, hiding under rocks or burrowing into the sand. Though not a significant threat, they can be a nuisance in large numbers or when disturbed in their natural habitat.</summary>
 
 <summary>The Crab is a tiny beast that resides in aquatic environments, possessing the capability to function both on land and underwater. It has a low challenge rating of 0, making it a non-threatening creature in the game world. While it has limited combat abilities and low hit points, it can offer a unique element in certain encounters due to its amphibious nature, allowing it to traverse land and water with ease. The Crab's physical attributes are quite poor, particularly its strength and intelligence, making it vulnerable in combat situations. However, it can still create minor challenges for inexperienced characters.</summary>

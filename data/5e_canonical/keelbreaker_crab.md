@@ -1,6 +1,8 @@
 <MonsterName/>Keelbreaker Crab</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Keelbreaker Crab is a Huge monstrosity that embodies a versatile threat both in aquatic and terrestrial environments. This creature is particularly known for its impressive durability and the ability to deal significant damage to structures, making it a formidable opponent in both combat and siege scenarios. With a robust Armor Class of 16 and a substantial pool of Hit Points totaling 157, it can sustain significant amounts of damage. The crab excels in grappling enemies with its powerful pincers and may disorient foes with its magical wailing abilities. However, it lacks intelligence and social interaction capabilities, as reflected in its low Intelligence score. The presence of magical figureheads adds an interesting tactical layer, as their destruction can limit the crab's abilities.</summary>
 
 <detail>

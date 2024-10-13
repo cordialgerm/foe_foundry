@@ -1,6 +1,8 @@
 <MonsterName/>Grolar Bear Alpha</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural)</AC>
+<HP/>152</HP>
 <summary>The Grolar Bear Alpha is a formidable large monstrosity that serves as a powerful antagonist in combat scenarios, particularly known for its potent physical attacks and unique abilities that can turn the tide of battle. With an Armor Class of 16, it boasts a significant level of resilience, backed by a robust pool of hit points totaling 152. This creature is intimidating with a Challenge Rating of 8, making it suitable for mid-level adventurers. Its strengths lie in its high Strength score of 23, which gives it exceptional melee attack potential, particularly with its multiattack capability that includes a bite and two claw strikes. While it lacks high Dexterity and Charisma scores, its adaptability in various terrains through camouflage and its critical hit capability with the Dismembering Strike make it a versatile threat. However, its low Intelligence and absence of language skills indicate it operates purely on instinct and ferocity. </summary>
 
 <detail>

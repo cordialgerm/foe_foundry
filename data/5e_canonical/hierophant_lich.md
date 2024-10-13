@@ -1,6 +1,8 @@
 <MonsterName/>Hierophant Lich</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>91</HP>
 <summary>The Hierophant Lich is a formidable Medium Undead creature with any evil alignment. It serves as an exceptional combatant due to its high hit points of 91, derived from 14d8 plus a constitution modifier of 28, giving it good durability in battle. With an Armor Class of 14, it is reasonably difficult to hit, but it also benefits from various spellcasting abilities and strong saving throws. Its Challenge Rating of 9, offering 5,000 XP for defeating it, indicates that it is a significant threat to adventurers. The Hierophant Lich possesses several notable strengths, including resistance to a range of damage types and the ability to evade some debilitating conditions. However, its overall physical capabilities are average, with a Strength of 12, Dexterity of 13, and Intelligence of 12, making it less effective in melee combat compared to more physically robust creatures.</summary>
 
 <detail>

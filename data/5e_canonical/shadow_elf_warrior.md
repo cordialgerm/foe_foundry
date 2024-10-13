@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Elf Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>11</HP>
 <summary>The Shadow Elf Warrior is a medium humanoid capable of blending into the darkness and striking from the shadows. This creature excels in stealth and is equipped for both melee and ranged combat, making it a versatile opponent in battles. With a challenge rating of 1/4, the Shadow Elf Warrior is considered a minor threat that can be significantly effective when ambushing unsuspecting players or positioned strategically. It has average physical attributes but excels in wisdom, making its perception skills high. Though its hit points are relatively low, its ability to poison targets adds a powerful tactical edge in combat situations.</summary>
 
 <detail>

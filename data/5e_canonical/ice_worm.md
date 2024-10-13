@@ -1,6 +1,8 @@
 <MonsterName/>Ice Worm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>15</CR>
+<AC/>18</AC>
+<HP/>247</HP>
 <summary>The Ice Worm is a gargantuan monstrosity, formidable in its environment and terrifying to face in combat. With a high Armor Class of 18 and a substantial pool of Hit Points at 247, this creature is notoriously resilient. Its Challenge Rating of 15 indicates that it poses a significant threat, capable of dealing considerable damage while absorbing a lot of punishment. The Ice Worm excels in melee combat with powerful attacks, particularly its bite, which can swallow smaller opponents, and its tail stinger, which inflicts debilitating poison damage. Its capabilities include burrowing through earth and rock, making it adept at ambush tactics and navigating environments that hinder movement for other creatures. However, despite its physical power, both its Dexterity and Intelligence are notably low, suggesting that it may struggle with certain dexterity-based tasks or intelligence checks. </summary>
 
 <detail>

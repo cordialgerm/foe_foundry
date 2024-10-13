@@ -1,6 +1,8 @@
 <MonsterName/>Orphan of the Black</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>49</HP>
 <summary>The Orphan of the Black is a small fey creature characterized by its neutral evil alignment. It is a cunning and manipulative being that thrives on chaos and violence, taking advantage of its abilities to incite conflict among others. With decent defensive capabilities, the Orphan of the Black can absorb damage effectively, but it is primarily adept at influencing and controlling the actions of others. Its main strengths lie in its agility and unique powers, allowing it to resist various conditions and manipulate the battlefield. However, it has low physical strength and intelligence, which may limit its direct combat effectiveness. </summary>
 
 <detail>

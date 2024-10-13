@@ -1,6 +1,8 @@
 <MonsterName/>Dire Lionfish</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Dire Lionfish is a formidable aquatic creature that serves as both a predator and a guardian of its underwater territory. With a large physique and impressive swimming speed, it is adept at ambushing foes who venture too close. Its combination of natural armor and significant hit points makes it a robust opponent capable of withstanding damage, while its challenge rating of 6 indicates that it poses a serious threat to adventurers. Notably, the Dire Lionfish relies on its poisonous defenses and ambush tactics to gain the upper hand in combat, but it is limited by its inability to move on land.</summary>
 
 <detail>

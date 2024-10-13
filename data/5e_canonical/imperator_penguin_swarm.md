@@ -1,6 +1,8 @@
 <MonsterName/>Imperator, Penguin Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (natural)</AC>
+<HP/>114</HP>
 <summary>The Imperator, a Penguin Swarm, is a Huge, unaligned beast that presents a unique challenge to adventurers. With its ability to swarm and occupy the same space as its enemies, it can overwhelm foes with sheer numbers and its swift movement across icy terrain makes it particularly dangerous in snowy encounters. Notably, it has a solid pool of hit points at 114, reflecting a strong capacity for endurance in battle. However, it has a relatively low Armor Class of 13, indicating that while it can withstand damage, it is susceptible to attacks, especially from diligent ranged attackers. The creature capitalizes on its resistances, allowing it to evade various damage types, and its condition immunities make it hard to control in combat.</summary>
 
 <detail>

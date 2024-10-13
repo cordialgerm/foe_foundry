@@ -1,6 +1,8 @@
 <MonsterName/>Dawnfly, Desolation Nymph</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Dawnfly, also known as the Desolation Nymph, is a large unaligned beast that embodies the cruel and harsh aspects of nature. With its significant armor class of 13, it is moderately resilient in combat, particularly against physical attacks. This creature possesses a healthy pool of hit points at 68, making it capable of enduring several rounds of battle before succumbing. Its movement speed is versatile, featuring a walk speed of 30 feet, and it can burrow, climb, and swim at 15 feet and 30 feet respectively, allowing it to adapt to various environments. The Dawnfly is rated at Challenge Rating 2, which means it can pose a reasonable threat to an adventuring party. However, it has low Intelligence and Charisma scores, which can limit its effectiveness in social situations and strategic planning. It thrives in natural terrain and utilizes its unique camouflage and grappling abilities to outmaneuver opponents.</summary>
 
 <detail>

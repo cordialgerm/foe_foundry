@@ -1,6 +1,8 @@
 <MonsterName/>Stellar Rorqual</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>12</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>165</HP>
 <summary>The Stellar Rorqual is a gargantuan aberration known for its cosmic theme and extraordinary abilities. With an armor class of 14, it can withstand a significant amount of damage due to its natural armor, and its impressive hit point total of 165 allows it to endure prolonged encounters. This creature is particularly strong in melee combat, boasting a Strength score of 26, which contributes to extremely powerful physical attacks. However, its Dexterity is relatively poor, scoring only -1, which makes it less effective at evading attacks. The Stellar Rorqual flies gracefully, able to soar at 80 feet per turn and swim at 40 feet, which gives it considerable maneuverability in combat. This creature is vulnerable to force damage but is immune to cold, fire, and radiant damage, making it resilient against many sources of harm. The Stellar Rorqual communicates through telepathy but cannot speak, and it has a unique ability called Mouth Compartment that creates a secure space in its mouth for other creatures, giving them total cover from attacks outside. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Miremal</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>The Miremal is a small, chaotic evil fey creature that thrives in swampy environments. Its role in a combat scenario is that of a sneaky and evasive attacker, capable of employing hit-and-run tactics due to its agility and special abilities. With an Armor Class of 12 and 22 hit points, it can withstand a fair amount of damage before going down. However, its low Challenge Rating of 1/2 makes it relatively weak against more powerful adventurers, though its unique capabilities, particularly its ability to escape destruction and blend into its surroundings, provide it with tactical advantages. The Miremal is notably skilled in stealth, making it a deceptive opponent in its natural habitat.</summary>
 
 <detail>

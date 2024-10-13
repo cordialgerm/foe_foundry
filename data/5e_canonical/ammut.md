@@ -1,6 +1,8 @@
 <MonsterName/>Ammut</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>172</HP>
 <summary>Ammut is a powerful celestial creature, classified as large in size. Its natural armor provides a robust defense with an Armor Class of 17, while it boasts a substantial pool of health at 172 hit points, typically reflecting its challenging nature for adventurers at a Challenge Rating of 9. Ammut excels in combat through strong physical attacks and unique abilities that inflict conditions upon its foes, particularly targeting undead creatures. Its strengths include high physical attributes, particularly in Strength and Constitution, with modifiers of +5 and +6 respectively, which are considered very good. However, its Intelligence and Charisma scores are average, showing that it may not excel in trickery or deception. Notably, Ammut has a variety of damage immunities and resistances, which further contribute to its resilience in battle.</summary>
 
 <detail>

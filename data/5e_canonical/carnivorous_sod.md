@@ -1,6 +1,8 @@
 <MonsterName/>Carnivorous Sod</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>33</HP>
 <summary>The Carnivorous Sod is a medium-sized, unaligned plant creature that serves as an ambush predator in its natural habitat. Its ability to blend in with typical grass landscapes allows it to surprise unsuspecting creatures. With a reasonable armor class of 12 and a decent pool of 33 hit points, this creature can withstand some damage while it employs its unique abilities. Although its Dexterity and Intelligence scores are low, its Strength is above average, making it capable in melee combat. Particularly notable is its immunity to poison and various conditions, which enhances its survivability against typical adventurer tactics. However, its lack of mobility, with a walking speed of only 20 feet, limits its versatility on the battlefield. </summary>
 
 <detail>

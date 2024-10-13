@@ -1,6 +1,8 @@
 <MonsterName/>Drake, Riptide</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>231</HP>
 <summary>The Riptide Drake is a large and imposing dragon with a lawful evil alignment known for its formidable presence in aquatic environments. With a well-rounded role as both a melee and ranged combatant, it utilizes its significant hit points and natural armor to withstand attacks, making it a tough opponent for even seasoned adventurers. With a challenge rating of 11, it can poses a substantial threat with its powerful abilities, particularly in water where it excels. Its weaknesses are primarily associated with its limited dexterity and reliance on an aquatic setting to unleash its full range of capabilities. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ancient River Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>20</AC>
+<HP/>372</HP>
 <summary>The Ancient River Dragon is a formidable gargantuan creature known for its immense power and territorial nature, typically dwelling in large bodies of water. With an impressive Armor Class of 20 and a staggering 372 Hit Points, this dragon is not only hard to hit but can also endure a significant amount of punishment in combat. Its Challenge Rating of 23 indicates that it is a very powerful foe, ideally suited for high-level adventurers. The Ancient River Dragon boasts exceptional Strength, Dexterity, Wisdom, and Charisma, making it a well-rounded creature in both physical prowess and magical capabilities. However, its damage resistance against nonmagical weapons, while a significant strength, leaves it vulnerable to magical attacks. This dragon has unique abilities that enhance its survivability and combat effectiveness, such as moving gracefully through both air and water, making it difficult for enemies to land effective strikes. </summary>
 
 <detail>

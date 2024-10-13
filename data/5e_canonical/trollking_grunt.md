@@ -1,6 +1,8 @@
 <MonsterName/>Trollking Grunt</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (hide armor)</AC>
+<HP/>45</HP>
 <summary>The Trollking Grunt is a Medium-sized humanoid creature that operates under a neutral alignment. This monster stands out with its robust physical capabilities and notable regenerative abilities, making it a formidable opponent in battle. With a challenge rating of 2, it presents a moderate threat to adventurers, primarily relying on its high strength and constitution to deal and endure damage effectively. The Trollking Grunt has a good level of armor class and hit points, making it relatively resilient, but it is somewhat limited in intelligence and charisma. It possesses useful combat abilities and an exceptional regeneration trait, allowing it to stay in the fight longer unless faced with fire or acid damage, which temporarily suppresses its regenerative capabilities.</summary>
 
 <detail>

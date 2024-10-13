@@ -1,6 +1,8 @@
 <MonsterName/>Deep One Priest</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Deep One Priest is a formidable medium humanoid creature characterized by its chaotic evil alignment. Known for its aquatic origins, this priest embodies a mix of both charm and menace, adept at manipulating and overpowering its foes. With a robust constitution and a high strength rating, it excels in melee combat, while its spellcasting abilities provide it with strategic options in various encounters. However, it is vulnerable to fire damage, which can exploit its weaknesses in combat. As a creature capable of fascinating listeners and altering their memories, it presents a unique challenge in both social interactions and conflict situations.</summary>
 
 <detail>

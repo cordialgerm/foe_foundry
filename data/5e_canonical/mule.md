@@ -1,6 +1,8 @@
 <MonsterName/>Mule</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>11</HP>
 <summary>A Mule is a hybrid animal, born from the breeding of a horse and a donkey. Mules are valued for their strength, endurance, and ability to carry heavy loads over long distances. They are commonly used by travelers, merchants, and adventurers as pack animals, capable of navigating difficult terrain. While not aggressive by nature, Mules can be stubborn and difficult to control, especially when overworked or mistreated. Their sure-footedness makes them ideal for transporting goods through mountainous regions or uneven landscapes.</summary>
 
 <summary>The Mule is a medium-sized beast that occupies a unique role as a reliable mount and pack animal in Dungeons & Dragons. It has a solid endurance with a modest amount of hit points, making it a durable choice for players looking for a creature to carry heavy loads. The Mule's strengths lie in its carrying capacity due to its special ability, "Beast of Burden," which allows it to be treated as a larger creature for the purposes of determining how much weight it can bear. However, it has low intelligence and charisma, making it ineffective in social situations or strategy-based endeavors. Its combat abilities are basic, mainly revolving around a hoof attack that inflicts a small amount of bludgeoning damage. Overall, the Mule serves primarily as a practical asset for adventurers in need of transportation and storage.</summary>

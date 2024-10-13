@@ -1,6 +1,8 @@
 <MonsterName/>Skitterhaunt</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Skitterhaunt is a Large ooze creature that operates unaligned in nature. This monster is particularly known for its ability to infest other creatures, making it dangerous to any large or smaller beasts it encounters. Its relatively good Armor Class of 14 and solid Hit Points totaling 95 give it respectable durability in combat. The Skitterhaunt excels at delivering acid damage, boasting a combination of natural attacks and special abilities that can severely debilitate its opponents. However, it suffers from rather low Dexterity, Intelligence, Wisdom, and Charisma scores, which make it less effective in initiating interactions or avoiding detection. Its unique abilities, like Vermin Encasement, allow it to persist even when reduced to zero hit points, transforming into a smaller, but still threatening ooze form.</summary>
 
 <detail>

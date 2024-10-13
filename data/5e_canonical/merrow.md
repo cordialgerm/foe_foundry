@@ -1,6 +1,8 @@
 <MonsterName/>Merrow</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>A Merrow is a monstrous, corrupted version of Merfolk, often twisted by dark magic or malevolent deities. These aquatic brutes have the same fish-like lower body as Merfolk but are much larger and more savage, with long, sharp claws and jagged teeth. Merrow dwell in deep waters, preying on ships, coastal villages, and even their own kin. They are known for their cruelty, often dragging their victims into the depths to drown. Merrow use crude weapons like harpoons or their natural claws and teeth in combat, and they are relentless hunters in their aquatic domains.</summary>
 
 <summary>The Merrow is a large monstrosity that serves as a formidable aquatic foe in Dungeons & Dragons. With a strong emphasis on melee combat, it boasts considerable strength and resilience, making it a significant challenge for players encountering it. It has a moderate Armor Class of 13, which offers decent protection, and a total of 45 hit points, reflecting its ability to withstand damage before being brought down. The Merrow's swimming speed of 40 feet allows it to maneuver swiftly underwater, while its capability to breathe both air and water adds to its versatility. Overall, it presents a good challenge rating of 2, offering 450 experience points upon defeat, primarily due to its potent melee attacks and the ability to grapple and control its opponents.</summary>

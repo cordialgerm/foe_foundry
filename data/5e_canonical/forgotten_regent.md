@@ -1,6 +1,8 @@
 <MonsterName/>Forgotten Regent</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>187</HP>
 <summary>The Forgotten Regent is a formidable Medium undead creature with a lawful neutral alignment, often manifesting as a powerful leader of necromantic forces. It stands as a significant challenge in battle, managing its legions of undead while wielding frost-based abilities that can both immobilize foes and empower allies. With a high Armor Class and impressive hit points, it is built to endure extended conflicts. Notably, the Forgotten Regent has a variety of special abilities that allow it to manipulate the battlefield, protect its undead troops, and inflict debilitating cold damage on its enemies. Its weaknesses include vulnerability to fire and a reliance on its undead companions for full effectiveness.</summary>
 
 <detail>

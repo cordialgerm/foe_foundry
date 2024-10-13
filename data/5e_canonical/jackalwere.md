@@ -1,6 +1,8 @@
 <MonsterName/>Jackalwere</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>18</HP>
 <summary>The Jackalwere is a Medium-sized fiend that embodies chaotic evil tendencies and deception. With a challenge rating of 1/2, it serves as an opportunistic enemy in combat, leveraging its shapeshifting abilities to ambush unsuspecting foes. The Jackalwere boasts a decent speed of 40 feet and a total of 18 hit points, making it somewhat fragile but capable of quick assaults. It has good dexterity and charisma, enabling it to sneak effectively and manipulate interactions through deception. Its primary strengths lie in its ability to form packs with allies, facilitating coordinated attacks, and its special abilities, which include a dangerous gaze attack capable of charming and incapacitating prey. However, its dependence on deceit and its vulnerability to magical attacks and silvered weapons are noteworthy weaknesses.</summary>
 
 <detail>

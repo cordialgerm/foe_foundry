@@ -1,6 +1,8 @@
 <MonsterName/>Mordant Snare</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>248</HP>
 <summary>The Mordant Snare is a formidable and grotesque aberration known for its chaotic evil nature. With a gargantuan size, it poses a significant threat in combat and is an expert in ambush tactics. One of its greatest strengths lies in its substantial hit points, allowing it to absorb considerable damage before being defeated. Its high Armor Class and resistance to physical damage from nonmagical sources further enhance its survivability. The creature's ability to create Mordant Puppets from deceased humanoids adds a strategic layer to its offensive capabilities, allowing it to control additional combatants. However, the Mordant Snare struggles with low Charisma and has average Wisdom, affecting its interactions outside of combat. </summary>
 
 <detail>

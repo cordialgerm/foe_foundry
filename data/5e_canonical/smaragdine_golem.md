@@ -1,6 +1,8 @@
 <MonsterName/>Smaragdine Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>14</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>231</HP>
 <summary>The Smaragdine Golem is a formidable Large Construct with a Challenge Rating of 14, making it a significant threat in combat encounters. With an impressive Armor Class of 17 and a substantial pool of 231 hit points, this golem boasts high durability that allows it to withstand considerable damage. As an unaligned creature, it acts as a loyal guardian or a weapon of its creator, using magical attacks to deal formidable damage while imbuing a unique ability to absorb and release spells. However, the golem is not without its weaknesses; it lacks intelligence and cannot communicate, making it reliant on its creator for guidance. Its strengths lie in its defensive capabilities, damage immunity against nonmagical attacks, and powerful magical abilities that can turn the tide of battle.</summary>
 
 <detail>

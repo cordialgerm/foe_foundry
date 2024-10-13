@@ -1,6 +1,8 @@
 <MonsterName/>Deep Troll</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>63</HP>
 <summary>The Deep Troll is a formidable adversary categorized as a Large Giant with chaotic evil tendencies. Known for its resilience and remarkable regenerative capabilities, this creature can be an intimidating presence in any encounter. Its high Constitution score provides a significant pool of hit points, allowing it to outlast many foes in battle. Coupled with its ability to spawn oozing duplicates of itself when injured, the Deep Troll can overwhelm adventurers by increasing the number of threats on the battlefield. While it excels in physical combat, especially with its Multiattack feature that combines bite and claw strikes, the Deep Troll does have a low Intelligence and Charisma, making it less effective in areas requiring cunning or social interaction.</summary>
 
 <detail>

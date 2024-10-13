@@ -1,6 +1,8 @@
 <MonsterName/>Horakh</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Horakh is a formidable medium-sized monstrosity with a neutral alignment, known for its malicious and cunning nature. This creature has a robust Armor Class of 17, bolstered by natural armor, and boasts a substantial pool of hit points amounting to 161, derived from a very good Constitution score of 19. With a Challenge Rating of 9, the Horakh presents a significant threat, offering 5,000 experience points upon defeat. It excels in Dexterity, also scoring 19, which grants it agility in combat and proficiency in Stealth, making it an effective ambush predator. However, its Intelligence is notably poor, at 5, limiting its ability to engage in intricate strategies or social interactions. Its dual threats come from its physical attacks and a unique parasitic ability involving implanting eggs into its prey.</summary>
 
 <detail>

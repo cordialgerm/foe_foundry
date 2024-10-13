@@ -1,6 +1,8 @@
 <MonsterName/>Young Blue Dragon Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Young Blue Dragon Zombie is a large undead creature that embodies a neutral evil alignment, serving as a potent adversary in combat. This formidable opponent possesses a commendable Armor Class of 18, making it difficult to hit, and boasts a considerable pool of hit points totaling 152. Its challenge rating of 10 indicates that it presents a significant threat to adventurers, while its strengths lie in its high Strength and Constitution scores, allowing it to inflict substantial damage and endure attacks. However, its low Dexterity and Intelligence scores reveal weaknesses, making it susceptible to ranged attacks and limiting its strategic capabilities in battle. Notably, the creature's abilities allow it to rise again even after sustaining fatal damage, making it a challenging foe to dispatch.</summary>
 
 <detail>

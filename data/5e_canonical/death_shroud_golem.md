@@ -1,6 +1,8 @@
 <MonsterName/>Death Shroud Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>5</CR>
+<AC/>12</AC>
+<HP/>95</HP>
 <summary>The Death Shroud Golem is a large construct that serves as a formidable foe in combat, particularly known for its ability to grapple and restrain opponents. With an armor class of 12, it is moderately difficult to hit, but its high hit points of 95, derived from 10d10 plus 40, allow it to endure numerous attacks. This golem has an average speed while walking, but it can fly at 40 feet, giving it the ability to traverse the battlefield with ease. Its challenge rating of 5 illustrates that it presents a substantial challenge to adventurers, offering 1,800 experience points upon defeat. The golem has significant strengths, including various immunities and resistances to damage, making it hard to injure with mundane attacks. However, it does hold a weakness against magical effects that can bypass its defenses.</summary>
 
 <detail>

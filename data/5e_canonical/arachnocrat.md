@@ -1,6 +1,8 @@
 <MonsterName/>Arachnocrat</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Arachnocrat is a Medium fiend characterized by its lawful evil alignment and cunning tactics. It possesses notable strengths such as high Dexterity and Charisma, making it effective in both combat and social interactions. With an Armor Class of 15, it is reasonably tough to hit and has 93 hit points, indicating it can sustain a fair amount of damage in battle. The Arachnocrat's movement capabilities are impressive, being able to walk 30 feet and climb at an even faster pace of 40 feet. Its challenge rating of 5 signifies a moderate difficulty level for adventurers, and its abilities lean heavily toward deception and combat maneuvers that can restrain opponents effectively.</summary>
 
 <detail>

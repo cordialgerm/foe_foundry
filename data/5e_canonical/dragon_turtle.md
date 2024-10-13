@@ -1,6 +1,8 @@
 <MonsterName/>Dragon Turtle</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>17</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>341</HP>
 <summary>The Dragon Turtle is a colossal, turtle-like creature with a massive, heavily armored shell and the head of a dragon. Its scales are dark and thick, providing incredible defense, and its size allows it to rival even the largest ships in the ocean. Dragon Turtles live in deep seas and coastal waters, where they can cause devastating damage to ships and coastal settlements. They have the ability to breathe scalding steam, which can boil the water around them and sear their enemies. Despite their immense power, they are intelligent and often demand tribute or negotiate with sailors rather than resort to violence.</summary>
 
 <summary>The Dragon Turtle is a gargantuan dragon classified within the creature hierarchy of Dungeons & Dragons. This formidable entity possesses impressive durability and powerful offensive capabilities, making it a formidable foe for any adventuring party. The Dragon Turtle boasts an exceptional Armor Class of 21 and significantly high hit points totaling 264, which translates to strong survivability in combat. With a Challenge Rating of 17, it presents a considerable threat, capable of dealing substantial damage with its attacks. When engaging enemies, the Dragon Turtle utilizes its amphibious nature to navigate both water and land, giving it added strategic advantages in various environments.</summary>

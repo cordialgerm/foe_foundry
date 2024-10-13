@@ -1,6 +1,8 @@
 <MonsterName/>Dinosaur, Razorfeather Raptor</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>39</HP>
 <summary>The Razorfeather Raptor is a medium-sized monstrosity characterized by its neutral evil alignment. This creature serves as a cunning predator on the battlefield, capable of dealing significant damage while also impairing its foes' ability to maneuver. With an Armor Class of 16, it possesses good defensive capabilities due to its natural armor. Its Hit Points are 39, reflecting a moderate level of durability for a creature of its Challenge Rating of 2. The Razorfeather Raptor is very mobile with a walking speed of 40 feet, allowing it to engage quickly in combat. Its strengths lie in its Dexterity and Strength scores, which are good at 17 (+3) and 15 (+2) respectively, making it nimble and capable of dealing consistent damage. However, it has low Charisma and Intelligence scores, which makes it ineffective at social interactions and mental tasks.</summary>
 
 <detail>

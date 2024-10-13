@@ -1,6 +1,8 @@
 <MonsterName/>Xanka</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>27</HP>
 <summary>Xanka is a small, unaligned construct known for its destructive capabilities, particularly effective against inanimate objects and weaponry. With an Armor Class of 14, it has good defenses that make it somewhat resilient in combat. It possesses a total of 27 hit points, which are decent for its Challenge Rating of 1/2, recognizing it as a weaker opponent that can still pose a threat through its unique abilities. Xanka operates at a walking speed of 15 feet and can absorb and degrade nonmagical objects, adding an interesting tactical layer to its encounters. Its primary strengths lie in its immunity to various conditions and its ability to devastate structures, while its weaknesses include limited mobility and a lack of combat versatility that comes with lower Strength and Intelligence scores. </summary>
 
 <detail>

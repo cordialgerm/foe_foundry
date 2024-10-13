@@ -1,6 +1,8 @@
 <MonsterName/>Aatxe</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Aatxe is a large celestial creature with a lawful good alignment, representing its role as a guardian and protector. It boasts a strong physical presence, with high strength and constitution, making it a formidable opponent in melee combat. The Aatxe has a total of 105 hit points, indicating its durability in battle. Its primary strengths lie in its ability to charge at enemies for additional damage, read surface thoughts to gauge intent, and its advantage against spells due to magic resistance. However, its dexterity is average, which may hinder its speed and agility in certain situations. The Aatxe is classified with a challenge rating of 5, suggesting it is a moderately challenging adversary for a party of adventurers.</summary>
 
 <detail>

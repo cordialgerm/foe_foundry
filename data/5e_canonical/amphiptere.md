@@ -1,6 +1,8 @@
 <MonsterName/>Amphiptere</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The amphiptere is a medium-sized beast that presents a unique challenge to adventurers due to its combination of agility and poison effects. With an unaligned nature, it does not exhibit allegiance to any side, making it a wild card in encounters. It possesses a good Armor Class of 15 due to its natural armor, allowing it to withstand moderate attacks. With 60 hit points, calculated as 8d8 + 24, it has a decent amount of health for its Challenge Rating of 3, representing an experience value of 700 XP. Notable strengths of the amphiptere lie in its high Dexterity of 18, providing it with a strong advantage in initiative and ranged attacks, compounded by its Flyby ability that allows it to disengage without provoking opportunity attacks. However, it has low Intelligence and Charisma, which does not contribute significantly to its combat prowess.</summary>
 
 <detail>

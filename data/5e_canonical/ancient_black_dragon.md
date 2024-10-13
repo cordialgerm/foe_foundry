@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Black Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>21</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>367</HP>
 <summary>The Ancient Black Dragon is a terror of the swamp, with scales so dark they seem to absorb the light around them. Its massive wings create a shadow over the land as it soars through the air, and its breath is a stream of highly corrosive acid. These dragons are twisted and cruel, reveling in tormenting their enemies both physically and psychologically. Their lairs are often in decayed ruins or deep in murky swamps, where they thrive in the putrid, fetid air. The Ancient Black Dragon is a cunning strategist, often enslaving lesser creatures and manipulating them to achieve its dark goals.</summary>
 
 <summary>The Ancient Black Dragon is a powerful and imposing creature, classified as a Gargantuan dragon. With an armor class of 22, it presents a formidable challenge to adventurers, boasting an impressive pool of 367 hit points. This dragon is known for its amphibious nature, allowing it to thrive both in air and underwater, with a speed of 40 feet on land, 80 feet in the air, and 40 feet through water. It has a devastating attack combination, capable of delivering piercing, slashing, and bludgeoning damage, as well as powerful acid attacks. The Ancient Black Dragon is a cunning ambusher, particularly effective in aquatic environments, where it can utilize its stealth prowess to surprise enemies. Its legendary resistances and spellcasting abilities make it a considerable threat, while its challenge rating of 23 indicates the level of expertise required to defeat this creature. </summary>

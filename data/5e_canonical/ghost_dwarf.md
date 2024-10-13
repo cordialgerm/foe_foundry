@@ -1,6 +1,8 @@
 <MonsterName/>Ghost Dwarf</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>81</HP>
 <summary>The Ghost Dwarf is a Medium undead creature with a neutral evil alignment that embodies the restless spirit of a once-living dwarf. It serves as an effective combatant in encounters, leveraging its combination of melee abilities and necrotic damage to weaken opponents. With a Challenge Rating of 6, it is a dangerous opponent, especially in environments that allow for stealth and ambush. Its flying speed and incorporeal movement grant it mobility advantages, while its special abilities, like Aura of Defiance and Prayers Unanswered, provide it with significant defensive capabilities and crowd control potential. However, it suffers from sunlight sensitivity, making it vulnerable in daylight situations.</summary>
 
 <detail>

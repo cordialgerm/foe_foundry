@@ -1,6 +1,8 @@
 <MonsterName/>Scarecrow Harvester</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>67</HP>
 <summary>The Scarecrow Harvester is a medium-sized construct that presents a unique mix of offense and utility, making it an intriguing opponent in combat. With an Armor Class of 14 and 67 hit points, it boasts a respectable durability for its Challenge Rating of 4, representing a moderate threat level for adventurers. The Scarecrow Harvester is characterized by high Dexterity and Charisma, allowing it to evade attacks effectively and use fear-based abilities to control the battlefield. While it possesses significant resistances and immunities that make it a difficult foe to eliminate through traditional means, its vulnerability to fire damage both is a notable weakness. Tactically, this creature can employ its powerful abilities to create chaos among foes while maintaining solid damage output with its claw attacks.</summary>
 
 <detail>

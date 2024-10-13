@@ -1,6 +1,8 @@
 <MonsterName/>Goblin Skulker</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>10</HP>
 <summary>The Goblin Skulker is a Small humanoid creature, well-suited for stealth and ambush tactics in combat. With a reasonable Armor Class of 13 and 10 Hit Points, the Goblin Skulker is more resilient than some of its kin but remains vulnerable when isolated. This creature operates best in groups, using its special ability to deal extra damage when it strikes from a position of advantage or when allies are nearby. Its Challenge Rating of 1/2 indicates that it is a relatively easy opponent, making it suitable for low-level adventurers or as a minor threat in larger encounters. The Goblin Skulker is characterized by agility rather than brute strength, as reflected in its Dexterity score of 12, which grants it average effectiveness in combat.</summary>
 
 <detail>

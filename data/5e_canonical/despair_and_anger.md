@@ -1,6 +1,8 @@
 <MonsterName/>Despair And Anger</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>161</HP>
 <summary>Despair and Anger is a powerful large celestial creature characterized by its dual natures, embodying both overwhelming sorrow and fierce rage. With a challenge rating of 10, it presents a formidable challenge in combat, dealing both radiant and necrotic damage effectively, while also having a number of resistances and immunities that protect it from various conditions. Its ability to fly grants it tactical advantages in battle, enabling it to engage both melee and ranged opponents. Notable strengths include high armor class and hit points, making it a durable adversary, while its ability to switch between two powerful forms grants it dynamic playstyles during encounters. However, its dependency on maintaining these forms may be considered a strategic weakness if not managed properly.</summary>
 
 <detail>

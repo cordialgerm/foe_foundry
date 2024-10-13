@@ -1,6 +1,8 @@
 <MonsterName/>Harbinger of Wrath</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>20</CR>
+<AC/>21 (natural armor)</AC>
+<HP/>297</HP>
 <summary>The Harbinger of Wrath is a formidable gargantuan construct characterized by its chaotic evil alignment. This creature possesses an exceptional armor class of 21, making it difficult to hit, and a staggering 297 hit points, allowing it to endure substantial damage in combat. The Harbinger is designed for melee combat with a speed of 50 feet, enabling it to swiftly engage with foes. With a challenge rating of 20, it presents a high-stakes encounter for adventurers. Its strengths lie in its superior physical attributes, particularly its strong Strength score of 28, which provides a +9 modifier, allowing for devastating melee attacks, and its excellent Constitution score of 22, giving it a +6 modifier that bolsters its hit points and resilience. However, its Dexterity score of 8 results in a -1 modifier, making it quite slow and less agile. Notably, the Harbinger's damage immunities to cold, fire, poison, psychic, and nonmagical attacks not made with adamantine weapons, alongside its array of special abilities, make it a particularly dangerous opponent.</summary>
 
 <detail>

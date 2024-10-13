@@ -1,6 +1,8 @@
 <MonsterName/>Folk of Leng</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (studded leather)</AC>
+<HP/>68</HP>
 <summary>The Folk of Leng is a Medium humanoid with a neutral evil alignment, known for its cunning and mystical capabilities. With an Armor Class of 14, it presents a decent defense thanks to its studded leather armor, but its true strengths lie in its formidable combination of robust hit points totaling 68 and an array of unique abilities that enhance its combat effectiveness. Possessing high Dexterity and Charisma, this creature is agile and has potent magical capabilities that allow it to manipulate its enemies and engage effectively in combat. Additionally, it is immune to necrotic damage and possesses resistances to cold, making it a challenging adversary. However, it is particularly vulnerable to radiant damage, which can prevent it from regenerating. </summary>
 
 <detail>

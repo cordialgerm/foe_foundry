@@ -1,6 +1,8 @@
 <MonsterName/>Spawn of Arbeyach</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Spawn of Arbeyach is a Medium fiend that embodies lawful evil, making it a formidable adversary in combat. With an Armor Class of 17, it is defensively well-equipped due to its natural armor. It has considerable endurance with 78 hit points, derived from rolling 12d8 and adding 24, placing it above average in terms of survivability for its Challenge Rating of 5. This creature is especially potent in environments where it can utilize its special abilities and hive bonds, which enhance its capabilities significantly. While it possesses good physical attributes, such as a Strength score of 18 granting a +4 modifier which is very good, its weaknesses lie in its relatively low movement speed of 20 feet and lack of spellcasting. The Spawn of Arbeyach is particularly dangerous due to its poison abilities which can incapacitate foes. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Orcish Wildling Minstrel</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>15</AC>
+<HP/>32</HP>
 <summary>The Orcish Wildling Minstrel is a medium humanoid creature that plays a unique role in both combat and narrative through its musical talents and spellcasting abilities. It possesses a moderate armor class of 15, allowing it to withstand some attacks with its 32 hit points, which translates to an average durability for its challenge rating of 2. The minstrel excels in dexterity and charisma with scores of 16 (+3), giving it good dexterity modifiers which enhance its ability to evade attacks and perform impressive feats. Although it does not have high strength, constitution, intelligence, or wisdom, it excels in charisma-driven interactions and can significantly influence allies and enemies with its spells and abilities. The minstrel's strength lies in its support capabilities, bolstering allies with its martial encouragement and healing spells, while incapacitating foes with its variety of charm and illusion spells.</summary>
 
 <detail>

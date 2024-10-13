@@ -1,6 +1,8 @@
 <MonsterName/>Fraughashar</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>22</HP>
 <summary>Fraughashar is a small fey creature aligned with neutral evil, characterized by its cunning nature and affinity for icy terrains. With a Challenge Rating of 1/2, this creature presents a moderate threat to adventurers, particularly when in favorable conditions that enhance its mobility. The fraughashar excels with its agility, utilizing its dexterous build to evade threats and launch quick, impactful attacks. Its ability to navigate icy surfaces seamlessly lends it an advantage in challenging environments. However, its low strength and charisma, coupled with an overall fragile health pool, mark it as vulnerable in direct confrontations, especially against opponents capable of overcoming its defenses or exploiting its weaknesses.</summary>
 
 <detail>

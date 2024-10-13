@@ -1,6 +1,8 @@
 <MonsterName/>Astralsupial</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Astralsupial is a Medium Beast with unaligned traits, known for its unique blend of capabilities that allow it to occupy a versatile role in combat and exploration. With an armor class of 14, derived from its natural armor, and a robust pool of hit points totaling 82, this creature can withstand a considerable amount of damage, marking it as a decent threat in encounters where it is featured. The Astralsupial is capable of both terrestrial and arboreal movement, with a walking and climbing speed of 30 feet each. With a Challenge Rating of 4, it provides an encounter worth 1,100 experience points for adventurers. It possesses a mix of strengths, particularly in dexterity with a score of 17, giving it a good chance of dodging attacks and performing nimble maneuvers. However, its intelligence is very low, which limits its tactical capabilities in battle, and while it has an average wisdom score for perception, it is unremarkable in physical strength.</summary>
 
 <detail>

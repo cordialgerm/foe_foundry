@@ -1,6 +1,8 @@
 <MonsterName/>Moonless Hunter</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>75</HP>
 <summary>The Moonless Hunter is a Medium-sized fey creature characterized by its neutral evil alignment, making it a formidable adversary. With a challenge rating of 4, it presents a significant challenge to adventurers, possessing a robust combination of offensive capabilities, unique special abilities, and resistances. The creature is agile and stealthy, with high Dexterity, enabling it to evade attacks effectively. However, it is vulnerable to silvered weapons and can be affected by certain holy effects. The Moonless Hunter excels in psychological manipulation, employing nightmares to debilitate foes while simultaneously being capable of direct physical attacks. It thrives in darkness, gaining advantages in stealth and movement in shadowy environments, but is hindered in direct sunlight.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Warmth Thief</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Warmth Thief is a tiny fey creature embodying the essence of cold and stealth. Its neutral evil alignment drives it to manipulate and harm those around it, using its innate abilities to siphon warmth and life force from unsuspecting victims. With impressive mobility due to its flying speed, it can maneuver easily in combat, making it hard to pin down. The creature possesses a relatively high Armor Class of 16 and a substantial pool of hit points, totaling 112, that makes it resilient in battle. However, it is vulnerable to the environment, as excessive warmth can cause it to suffer from exhaustion. The Warmth Thief primarily employs cold damage in its attacks and abilities, making it a formidable foe in colder climates but less effective in warmer environments.</summary>
 
 <detail>

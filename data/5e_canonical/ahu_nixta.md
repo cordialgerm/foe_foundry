@@ -1,6 +1,8 @@
 <MonsterName/>Ahu-Nixta</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (clockwork armor)</AC>
+<HP/>67</HP>
 <summary>The Ahu-Nixta is a large aberration of neutral evil alignment, presenting a unique blend of mechanical prowess and unsettling magical abilities. With a respectable Armor Class of 14 and a total of 67 hit points, it poses a significant threat to adventurers and is rated at Challenge Rating 3, which means it is suitable for encounters with parties of lower levels. The creature benefits from considerable strength and intelligence, paired with a variety of damage immunities, making it difficult to incapacitate through conventional means. However, it is vulnerable when it exits its clockwork armor, losing many of its defensive attributes and becoming significantly weaker. This combination of strengths and weaknesses contributes to its versatility in battle and roleplay, as it can shift between being a formidable opponent and a more vulnerable entity depending on its current form and situation.</summary>
 
 <detail>

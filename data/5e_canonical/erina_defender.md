@@ -1,6 +1,8 @@
 <MonsterName/>Erina Defender</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>44</HP>
 <summary>The Erina Defender is a small, humanoid creature characterized by its neutral alignment and protective instincts. This creature has a moderate armor class of 15 thanks to its chain shirt, making it reasonably durable in combat, with hit points totaling 44. It is capable of walking and burrowing at a speed of 20 feet each, giving it unique mobility options. With a challenge rating of 1, the Erina Defender is suited for low-level encounters, providing a good balance of offense and defense with its notable abilities. It excels in protecting its allies with its special talents, particularly in situations requiring tactical positioning. However, it lacks high offensive capability, resulting in average damage output, making it dependent on teamwork for effectiveness in battles.</summary>
 
 <detail>

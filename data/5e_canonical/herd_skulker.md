@@ -1,6 +1,8 @@
 <MonsterName/>Herd Skulker</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Herd Skulker is a medium monstrosity with a neutral evil alignment, known for its cunning and stealthy nature. This creature can move quickly, possessing a walk speed of 50 feet, and it relies heavily on its dexterity to remain unseen and manipulate its surroundings. The Herd Skulker has decent defenses with an armor class of 15, derived from its natural armor, and possesses 45 hit points, which provides moderate survivability in combat. Its challenge rating of 1 indicates a manageable opponent for parties that are just starting out. Significantly, the Herd Skulker can shapeshift into domesticated herd animals, allowing it to blend in seamlessly and deceive both animals and adventurers alike. While it has good offensive capabilities with a biting attack, its true strength lies in its ability to manipulate its environment and avoid confrontation.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Elf High Priest</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>18</AC>
+<HP/>82</HP>
 <summary>The Shadow Elf High Priest is a formidable Medium humanoid, serving as a powerful spellcaster and guardian for those who follow its dark and mysterious ways. With an Armor Class of 18 and a decent pool of Hit Points totaling 82, it is resilient in combat. The priest has a challenge rating of 6, signifying a capacity to challenge lower-level adventurers with its blend of spellcasting abilities and physical attacks. Notably, the priest relies on its Wisdom for both spellcasting and special abilities, allowing it to inflict significant damage and control the battlefield with spells that create difficult terrain or summon protective guardians. While the priest has commendable physical and defensive attributes, it can only moderately engage in direct melee combat, making it heavily reliant on its spellcasting for the majority of its offensive capabilities.</summary>
 
 <detail>

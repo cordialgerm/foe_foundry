@@ -1,6 +1,8 @@
 <MonsterName/>Snatch Bat</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>97</HP>
 <summary>The Snatch Bat is a medium-sized aberration characterized by its chaotic neutral alignment. It serves primarily as a cunning ambush predator, utilizing its flying ability and agility to strike quickly and evade retaliation. With an Armor Class of 16 due to its natural armor and decent hit points totaling 97, it can endure a fair amount of damage. However, while its Strength and Dexterity offer good offensive and defensive capabilities, with modifiers of +3 and +5 respectively, its mental attributes are significantly lower, particularly Intelligence and Charisma, which are very bad at -2 and -3. The Snatch Bat is notable for its unique ability to pilfer items from its prey, adding a strategic twist to its combat style.</summary>
 
 <detail>

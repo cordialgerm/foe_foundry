@@ -1,6 +1,8 @@
 <MonsterName/>Alehouse Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>The Alehouse Drake is a tiny, chaotic neutral dragon known for its mischievous nature and clever tactics in battle. With a moderate challenge rating of 1, it poses a nuisance rather than a significant threat to more experienced adventurers. The drake's strengths lie in its agility and various abilities that can incapacitate opponents, making it a cunning adversary. It has a good armor class of 13, decent hit points totaling 45, and can move quickly on both land and in the air. However, its physical strength is notably low, which limits its effectiveness in direct combat. Overall, the Alehouse Drake excels in using its charm and trickery, while its notable immunity to poison adds to its survivability.</summary>
 
 <detail>

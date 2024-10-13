@@ -1,6 +1,8 @@
 <MonsterName/>Leonino</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>13</HP>
 <summary>The Leonino is a tiny beast that serves as a nimble and elusive creature in the Dungeons & Dragons universe. With a Challenge Rating of 1/8, it is a relatively low-powered opponent, providing 25 experience points upon defeat. Notably agile, with a Dexterity score of 16, the Leonino can fly with a speed of 40 feet and walk at 30 feet. Its good mobility is complemented by a decent armor class of 13 and a modest hit point total of 13, giving it a balance of survivability and evasion. The creature possesses a variety of special abilities that enhance its capacity to stay out of harm's way while also presenting unique challenges to potential adversaries. </summary>
 
 <detail>

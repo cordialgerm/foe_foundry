@@ -1,6 +1,8 @@
 <MonsterName/>Diminution Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>71</HP>
 <summary>The Diminution Drake is a Medium-sized dragon of neutral evil alignment, known for its cunning and deceptive capabilities. With an Armor Class of 15 and 71 hit points, it can withstand moderate damage while effectively maneuvering in combat due to its fly speed of 60 feet and walk speed of 30 feet. As a Challenge Rating 5 creature, it poses a significant threat to adventurers, particularly due to its unique size-altering abilities and poison-based attacks. Its strengths lie in speed, stealth, and its potent shrinking abilities, while it is particularly weak against psychic attacks, given its low Intelligence score. </summary>
 
 <detail>

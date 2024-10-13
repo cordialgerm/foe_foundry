@@ -1,6 +1,8 @@
 <MonsterName/>Skull Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Skull Drake is a Medium-sized Dragon with a neutral alignment, presenting a balanced blend of strength and agility. It has an Armor Class of 15 due to its natural armor, and possesses a total of 75 hit points, making it a formidable opponent with a decent amount of resilience in combat. With a challenge rating of 3, it offers 700 experience points for a successful encounter. The creature's mobility is notable, boasting a flying speed of 60 feet, walking speed of 40 feet, and the ability to burrow at a rate of 10 feet. However, its strengths are somewhat countered by vulnerability to radiant damage and a significant disadvantage in sunlight, impacting its effectiveness in certain environments.</summary>
 
 <detail>

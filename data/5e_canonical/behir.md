@@ -1,6 +1,8 @@
 <MonsterName/>Behir</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Behir is a massive, serpentine creature with a dozen clawed legs and scales the color of storm clouds. It resembles a dragon, though it lacks wings and prefers to slither along the ground or crawl up sheer surfaces. Behirs are known for their ability to breathe a line of lightning, frying anything in its path. They are solitary predators that live in mountains or deep underground, hunting large prey such as giants or other monsters. A Behir can also swallow creatures whole, using its immense size and strength to overpower its prey before devouring it.</summary>
 
 <summary>The Behir is a huge monstrosity known for its speed and strength, functioning as a formidable foe in combat. With high hit points and decent armor class, it can absorb considerable damage while dealing significant amounts of damage itself. It excels in both melee and lightning damage, making it a versatile threat in various scenarios. The Behir has the unique ability to maneuver through tight spaces despite its large size and can climb and swim efficiently, giving it substantial mobility in diverse environments as well as the ability to capture smaller prey by swallowing them whole. Its main weaknesses include its reliance on direct melee attacks and the risks associated with being overwhelmed by multiple attackers.</summary>

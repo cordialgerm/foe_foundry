@@ -1,6 +1,8 @@
 <MonsterName/>Gorgon</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Gorgon is a large, bull-like creature with metallic scales and horns, known for its ability to petrify its prey with a cloud of toxic, petrifying gas. Its body is covered in gleaming iron-like plates, providing it with natural armor that makes it nearly impervious to most attacks. Gorgons are aggressive and territorial, often charging at any intruders with their powerful horns. When threatened, they exhale a cloud of green gas that can instantly turn flesh to stone. These creatures are often found in remote forests or mountain valleys, guarding their territory fiercely.</summary>
 
 <summary>The Gorgon is a formidable and large monstrosity known for its brute strength and petrifying abilities. With a solid Armor Class of 19 and a substantial pool of 110 hit points, the Gorgon is quite durable in combat, making it a challenging foe for adventurers. Its challenge rating of 6 indicates that it poses a significant threat to parties of mid-level adventurers, rewarding them with 2,300 experience points upon defeat. The Gorgon excels in melee combat, utilizing its powerful Gore and Hooves attacks to inflict considerable damage. However, its intelligence is low, limiting its strategic capabilities. The Gorgon can also utilize its petrifying breath to immobilize and potentially eliminate foes, making it vital to manage position and distance during encounters.</summary>

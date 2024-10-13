@@ -1,6 +1,8 @@
 <MonsterName/>Flab Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Flab Giant is a powerful creature representing the chaotic evil alignment in the Dungeons & Dragons universe. This large giant is slow-moving, with a walking speed of only 20 feet, but it compensates for this with impressive strength and durability. Boasting an Armor Class of 14 due to its natural armor and a significant pool of 110 hit points, the Flab Giant can withstand a fair amount of damage in combat. It possesses an exceptional Strength score of 20, allowing it to deal hefty melee damage and grapple smaller opponents effectively. However, its Dexterity is very low, making it poor at avoiding ranged attacks, and it lacks intelligence, charisma, and wisdom, which limits its utility outside of combat. The Flab Giant's biggest strengths lie in its ability to restrain and damage foes through grappling maneuvers, making it a formidable opponent for unprepared adventurers.</summary>
 
 <detail>

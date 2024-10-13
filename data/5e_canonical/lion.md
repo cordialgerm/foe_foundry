@@ -1,6 +1,8 @@
 <MonsterName/>Lion</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>26</HP>
 <summary>A Lion is a large, powerful predator found in grasslands and savannas. Known as the 'king of the beasts,' lions are apex predators that hunt in prides, using their strength and coordination to take down large prey like antelope, buffalo, or zebras. Lions have muscular bodies, sharp claws, and powerful jaws, making them fearsome hunters. Male lions are distinguished by their thick manes, while females, the primary hunters, are sleeker and faster. Though lions are often seen as majestic and noble, they are fierce and aggressive when defending their territory or pride.</summary>
 
 <summary>The lion is a large beast known for both its physical prowess and predatory instincts. It boasts an impressive speed and the ability to attack swiftly, making it a formidable opponent in combat. With a challenge rating of 1, it is adequate for early encounters but possesses strong abilities, allowing it to coordinate effectively with allies. The lion's strengths lie in its potent melee attacks and its bonus from pack tactics, which enhances its effectiveness when fighting alongside others. However, it has low hit points and is susceptible to various forms of attacks, making it moderately vulnerable despite its offensive capabilities.</summary>

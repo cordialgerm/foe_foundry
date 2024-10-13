@@ -1,6 +1,8 @@
 <MonsterName/>Drake, Reef</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural)</AC>
+<HP/>152</HP>
 <summary>The Reef Drake is a massive and formidable creature categorized as a Huge Dragon with a neutral evil alignment. Standing out due to its 18 Armor Class, it boasts a significant pool of Hit Points totaling 152, providing it with considerable durability in battle. This drake excels in both melee and modified tactics, leveraging its exceptional Strength of 25 to deliver devastating attacks. With a burrowing speed of 30 feet and an impressive swimming capability of 60 feet, it can navigate through diverse terrains, making it a versatile adversary. However, its Intelligence of 7 indicates it lacks tactical acumen, potentially leading to predictable behavior in combat. The Reef Drake is designed for high-stakes encounters, presenting challenges for adventurers seeking to defeat it.</summary>
 
 <detail>

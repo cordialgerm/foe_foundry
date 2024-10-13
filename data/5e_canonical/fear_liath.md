@@ -1,6 +1,8 @@
 <MonsterName/>Fear Liath</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>33</HP>
 <summary>The Fear Liath is a Large undead creature characterized by its neutral evil alignment. It serves as a menacing presence in any adventurer's path, utilizing its ability to enact a powerful curse and its incorporeal form to confound opponents. The Fear Liath is notably resilient to various forms of damage, imposing its gray curse on those it defeats. However, it has lower hit points and relatively average defenses, making it vulnerable to strategic attacks that exploit its weaknesses. It is equipped with a decent melee attack, but its true strength lies in its ability to manipulate the battlefield and instill fear in its enemies.</summary>
 
 <detail>

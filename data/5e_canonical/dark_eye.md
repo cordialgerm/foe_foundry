@@ -1,6 +1,8 @@
 <MonsterName/>Dark Eye</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>71</HP>
 <summary>The Dark Eye is a medium humanoid creature with a neutral evil alignment, known for its manipulative and sinister nature. It boasts an impressive armor class of 16, indicating a good level of defense with its breastplate. With 71 hit points, it can sustain a fair amount of damage before being defeated, making it a resilient opponent. The Dark Eye excels at dealing psychic damage and incapacitating foes, showcasing its ability to control and dominate the battlefield. However, it suffers from a significant disadvantage when exposed to sunlight, which can hinder its effectiveness during the day. With a challenge rating of 3, the Dark Eye presents a moderate threat to adventurers, offering opportunities for both combat and strategic encounters.</summary>
 
 <detail>

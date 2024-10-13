@@ -1,6 +1,8 @@
 <MonsterName/>Djinni Noble</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>11</CR>
+<AC/>16</AC>
+<HP/>344</HP>
 <summary>The Djinni Noble is a powerful elemental creature known for its mastery of wind and storm. Residing in the Elemental Plane of Air, this majestic being not only possesses significant physical prowess but also wields formidable magical abilities. With an Armor Class of 16 and a substantial pool of Hit Points at 344, it can withstand a considerable amount of damage in combat. The Djinni is particularly effective in aerial combat, able to fly at impressive speeds while maintaining a good range of spells. While it has excellent Dexterity and Constitution, along with strong Charisma, the Djinni's Intelligence is average and may limit its strategic use of certain spells. Its challenge rating of 11 indicates it poses a serious threat to adventurers, providing them with a formidable opponent in battle.</summary>
 
 <detail>

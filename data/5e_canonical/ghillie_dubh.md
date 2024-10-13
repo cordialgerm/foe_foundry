@@ -1,6 +1,8 @@
 <MonsterName/>Ghillie Dubh</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Ghillie Dubh is a Medium Celestial creature that embodies the essence of good within forested environments. With a lawful good alignment, it is known for its strong connection to nature and its protective role over its woodland domain. This creature has several notable strengths, including a solid mix of Wisdom and Charisma, allowing it to excel in perception and social interactions. Its natural armor gives it a decent level of protection, while its special abilities enhance its stealth and adaptability in forested areas. However, despite its abilities and moderate hit points, the Ghillie Dubh can sometimes struggle against powerful foes due to its relatively low overall damage output. </summary>
 
 <detail>

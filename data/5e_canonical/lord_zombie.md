@@ -1,6 +1,8 @@
 <MonsterName/>Lord Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Lord Zombie is a powerful and malevolent undead creature that serves as a formidable opponent in combat. With traits such as high hit points and the ability to rise from death, it poses a significant threat to adventurers. Equipped with a natural armor class of 15 and a challenge rating of 5, it can be a challenging encounter, especially due to its offensive capabilities and spells. The Lord Zombie showcases characteristics typical of undead beings, such as immunity to necrotic and poison damage, making it particularly resilient against various attacks. However, it is not invulnerable; it is susceptible to radiant damage, which can bypass many of its defenses.</summary>
 
 <detail>

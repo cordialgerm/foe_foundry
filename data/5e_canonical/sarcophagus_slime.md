@@ -1,6 +1,8 @@
 <MonsterName/>Sarcophagus Slime</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>11</AC>
+<HP/>102</HP>
 <summary>The Sarcophagus Slime is a Medium undead creature classified as neutral evil, characterized by its menacing presence and formidable abilities. With a Challenge Rating of 5, it poses a significant threat to adventurers, boasting a healthy pool of hit points at 102, derived from a combination of 12d8 hit dice and a Constitution modifier of +4. The slime’s defenses are marked by an Armor Class of 11, making it relatively easy to hit. Its speed is diminished to 20 feet, but its movement is enhanced by its special ability, Amorphous, allowing it to move through narrow spaces with ease. The Sarcophagus Slime thrives in extending its influence over foes and weakening their vitality, making it a dangerous foe, especially in numbers. While it possesses vulnerabilities to radiant damage, it is immune to poison and resistant to acid and necrotic damage.</summary>
 
 <detail>

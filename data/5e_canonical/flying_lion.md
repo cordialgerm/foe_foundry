@@ -1,6 +1,8 @@
 <MonsterName/>Flying Lion</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>12</AC>
+<HP/>57</HP>
 <summary>The Flying Lion is a formidable large monstrosity, presenting an intriguing mix of strengths and weaknesses. It boasts a good Armor Class of 12, making it reasonably difficult to hit, and a significant pool of Hit Points at 57, which allows it to endure during combat. Its speed is substantial, with a walking speed of 30 feet and a flying speed of 80 feet, enabling it to quickly engage or disengage from enemies. The Flying Lion has a Challenge Rating of 3, indicating that it can pose a moderate threat to a party of adventurers. Notably, its strong Strength and Constitution scores enhance its physical attacks and durability. However, it lacks intelligence, charisma, and has only basic comprehension of language, which may limit its tactical versatility in certain scenarios.</summary>
 
 <detail>

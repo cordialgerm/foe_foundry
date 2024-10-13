@@ -1,6 +1,8 @@
 <MonsterName/>Rimewing</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>The Rimewing is a small, unaligned beast resembling a giant moth. Known for its icy beauty and enchanting abilities, the Rimewing serves as a minor yet fascinating creature within the Dungeons & Dragons ecosystem. With a Challenge Rating of 1/4, it poses a minimal threat to adventurers, with its primary strength lying in its ability to charm opponents and the natural advantage it possesses in stealth. While its combat attributes are decent, with an Armor Class of 12 and 22 hit points, it lacks significant offensive capability, making it more reliant on its special abilities for combat effectiveness. Its cold damage immunity adds to its resilience against certain attacks, providing it some degree of protection in icy environments, but its overall low attributes limit its impact in more challenging encounters.</summary>
 
 <detail>

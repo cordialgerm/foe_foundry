@@ -1,6 +1,8 @@
 <MonsterName/>Ramag</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>27</HP>
 <summary>The Ramag is a Medium humanoid creature characterized by its neutral alignment. It is somewhat resilient due to its average armor class of 13 and a total of 27 hit points, making it a moderately difficult opponent for lower-level adventurers. Its strengths lie in its proficiency with magic resistance, providing it with a very good advantage on saving throws against spells and magical effects. Additionally, the Ramag possesses an exceptional ability known as Portal Sense, enabling it to locate planar portals and learn about their properties. However, with a Strength score of 9, the Ramag is physically weak, resulting in a very bad modifier for Strength-related tasks. Overall, the Ramag serves as a smart and tactical combatant, relying on its agility and magical knowledge to gain an upper hand.</summary>
 
 <detail>

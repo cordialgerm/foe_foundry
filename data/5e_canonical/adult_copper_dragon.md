@@ -1,6 +1,8 @@
 <MonsterName/>Adult Copper Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>14</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>184</HP>
 <summary>The Adult Copper Dragon is a lithe and agile creature, with scales the color of aged copper that shimmer with a dull, metallic gleam. It is known for its playful and mischievous personality, often playing pranks or engaging in wordplay with those it encounters. Copper Dragons prefer rocky hills or mountains, where they make their lairs in hidden caves. Despite their lighthearted nature, they are formidable in battle, able to breathe a gout of corrosive acid or unleash a gas that can slow and confuse enemies. Copper Dragons enjoy riddles and puzzles, and often challenge those they meet to games of wit.</summary>
 
 <summary>The Adult Copper Dragon is a huge and formidable creature that serves as an iconic representation of powerful dragons in Dungeons & Dragons. With a challenge rating of 17, it possesses significant offensive and defensive capabilities. Its impressive armor class of 18 and robust hit points totaling 253 render it a challenging adversary in combat. This dragon has strengths in both melee attacks and spellcasting, making it versatile in various tactical scenarios. Despite its formidable nature, it has a few weaknesses, notably its reliance on its legendary resistances, which, when depleted, lowers its Armor Class. With its unique ability to blend into terrain and the potential to frighten foes, the Adult Copper Dragon is a master of battle who can control the battlefield's dynamics effectively.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Wind Demon</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>28</HP>
 <summary>The Wind Demon is a small fiend with a chaotic evil alignment, embodying a sinister and elusive nature. It typically serves as a menace in combat, utilizing its high dexterity and innate agility to evade attacks, while its unique traits provide opportunities to complicate battles for opposing characters. With an Armor Class of 15, it boasts decent defenses, but only 28 hit points, making it vulnerable to concentrated damage. The creature's challenge rating of 2 indicates that it poses a moderate threat to adventurers, offering a balanced mix of offensive and defensive capabilities. Notable characteristics include strong dexterity and unique special abilities that effectively alter the flow of combat in its favor.</summary>
 
 <detail>

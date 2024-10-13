@@ -1,6 +1,8 @@
 <MonsterName/>Al-Aeshma Genie</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>149</HP>
 <summary>The Al-Aeshma Genie is a large and chaotic evil elemental creature known for its agility and commanding presence in combat. With a formidable combination of high armor class and robust hit points, the Al-Aeshma poses a significant threat to adventurers, inflicting both slashing and necrotic damage through its attacks. It excels in aerial encounters, having advantages against flying enemies due to its Air Hatred ability. However, it is somewhat grounded by its Earth Bound trait, which limits its altitude and exposes it to vulnerabilities when flying too high. The Al-Aeshma possesses a unique form of regeneration that allows it to recover health every turn while also making it exceptionally resilient to damage, barring certain types. Despite these strengths, the Al-Aeshma remains susceptible to fire and radiant damage, adding a layer of strategy for those looking to defeat it.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Manastorm Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Manastorm Golem is a formidable medium-sized construct that operates independently without alignment. It presents a challenge rating of 8, making it a significant adversary, especially for parties with lower levels. With an armor class of 14, it offers a decent level of protection, aided by its 90 hit points, which reflect its robust nature. The golem's ability to fly and walk at a speed of 60 feet allows it to maneuver effectively in combat scenarios. It is equipped with a variety of resistances and immunities that make it particularly resilient against numerous damage types and conditions, showcasing its strengths in magical combat. However, it suffers from low strength and charisma, which can limit its physical interactions and social engagements. </summary>
 
 <detail>

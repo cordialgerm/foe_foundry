@@ -1,6 +1,8 @@
 <MonsterName/>Yakirian</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (chain shirt)</AC>
+<HP/>67</HP>
 <summary>The Yakirian is a medium humanoid creature known for its lawful neutral alignment. It exhibits notable physical strength and resilience, making it a formidable opponent in combat. It possesses moderate armor class and a significant pool of hit points, indicating durability. The Yakirian is particularly effective at resisting various psychological effects due to its special ability, Resilient Soul, which enhances its mental fortitude. While it has decent melee combat capabilities, its true strength lies in its ability to assimilate knowledge and enhance its capabilities through its unique action, Consume Heart. The creature can thrive in combat, but its low charisma suggests that it may struggle in social scenarios.</summary>
 
 <detail>

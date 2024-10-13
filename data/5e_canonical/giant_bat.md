@@ -1,6 +1,8 @@
 <MonsterName/>Giant Bat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>22</HP>
 <summary>A Giant Bat is a large, nocturnal predator with a wingspan that can reach up to 15 feet. These creatures hunt at night, using echolocation to find their prey in complete darkness. Giant Bats are often found in caves, forests, or other dark environments where they roost during the day. While they primarily feed on smaller creatures, such as birds or rodents, they can attack larger targets when threatened. Their sharp teeth and powerful wings make them dangerous in close quarters, and their ability to fly allows them to swoop down on unsuspecting prey from above.</summary>
 
 <summary>The Giant Bat is a large beast that poses a notable but manageable challenge for adventurers, rated at a Challenge Rating of 1/4. With a moderate Armor Class of 12 and 15 hit points, it is not particularly tough. However, its unique abilities, such as echolocation and heightened hearing, allow it to be an effective predator in its environment. Despite its relatively low combat statistics, its ability to disrupt its enemies with the Dizzying Screech can significantly impact combat dynamics. It has good agility, as indicated by its Dexterity score, but it is limited in intelligence and charisma, making it less effective in social interactions.</summary>

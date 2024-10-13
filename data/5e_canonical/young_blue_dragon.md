@@ -1,6 +1,8 @@
 <MonsterName/>Young Blue Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>152</HP>
 <summary>A Young Blue Dragon is an arrogant and strategic predator that rules over the deserts and arid regions it calls home. Its vibrant blue scales crackle with electrical energy, and its breath weapon releases devastating bolts of lightning. Even at this stage, Blue Dragons are master tacticians, using the terrain to their advantage and striking from unexpected angles. They often build their lairs beneath the sand, where they hide their growing hoards. Young Blue Dragons are proud and demanding, frequently subjugating weaker creatures to serve their needs and expand their influence.</summary>
 
 <summary>The Young Blue Dragon is a formidable creature known for its agility and cunning. As a Large Dragon with a Challenge Rating of 10, it presents a significant challenge for adventurers, boasting 152 hit points, which allows it to endure sustained combat. With an Armor Class of 18, it is well-defended against many attacks, making it a resilient opponent. The dragon possesses exceptional strength, a solid constitution, and good charisma, allowing it not only to inflict heavy damage but also to execute powerful spells. Its speed is noteworthy, with the ability to fly at 80 feet, enabling it to strike from above, retreat quickly, or engage in aerial combat. While it is immune to lightning damage, its relatively low Dexterity can be considered both a strength, allowing for positional advantages, and a weakness, making it more susceptible to stealthy attacks if the terrain favors them.</summary>

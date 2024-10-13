@@ -1,6 +1,8 @@
 <MonsterName/>Crab, Duffel</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Duffel Crab is a formidable Large monstrosity that resides in aquatic environments. Known for its exceptional ability to manipulate extradimensional spaces, this creature serves as both a predator and a complex trap. It can hold multiple creatures within its unique "shell," allowing it to capture its prey efficiently. With strong physical attributes, particularly in strength and constitution, the Duffel Crab poses a significant threat in combat, especially to those who find themselves within its grasp. Though it has some weaknesses, such as low intelligence and charisma, its ability to incapacitate foes by trapping them makes it a challenging encounter for adventurers.</summary>
 
 <detail>

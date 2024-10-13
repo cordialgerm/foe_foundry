@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Leech</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Clockwork Leech is a medium-sized construct that embodies a blend of mechanical precision and predatory instincts. Designed with a solid armor class of 13, it can endure a fair amount of damage thanks to its 45 hit points, which it gains from rolling 6d8 plus an additional 18. With a challenge rating of 1, it presents a notable but manageable threat, particularly for low to mid-level adventurers. This creature excels in stealth with a good dexterity bonus and is immune to poison and psychic damage, making it a sturdy opponent in battles that do not revolve around mental attacks. Its unique abilities allow it to inflict debilitating effects on its targets while remaining resilient to many forms of magical disruption.</summary>
 
 <detail>

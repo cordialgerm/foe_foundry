@@ -1,6 +1,8 @@
 <MonsterName/>Fate Eater</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>130</HP>
 <summary>The Fate Eater is a medium aberration known for its dark and unsettling nature. It embodies the concept of manipulating destiny and inflicting psychic damage, making it a formidable opponent in combat. With an Armor Class of 16 and a substantial pool of Hit Points totaling 130, the Fate Eater can withstand a considerable amount of damage before succumbing. Its Challenge Rating of 6 indicates that it poses a moderate threat to adventurers, offering 2,300 experience points upon defeat. This creature is notable for its resilience and its ability to poison creatures that consume its flesh, as well as its potent psychic attacks that can alter a target's fate, introducing a strategic layer to encounters with it.</summary>
 
 <detail>

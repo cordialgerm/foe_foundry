@@ -1,6 +1,8 @@
 <MonsterName/>Lady in White</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>49</HP>
 <summary>The Lady in White is a medium undead creature that embodies sorrow and despair, haunting its environment with a ghostly grace. It has an Armor Class of 12 and 49 hit points, making it moderately resilient. The Lady is unique in its ability to fly and hover, although it cannot walk. It has a Challenge Rating of 2, indicating that it presents a moderate threat to a party of adventurers. Notably, the Lady in White possesses high Charisma, granting it exceptional social prowess, while its other attributes are relatively weak. This creature is immune to cold, necrotic, and poison damage, providing it with considerable resilience against many attacks. However, its low strength makes it less effective in physical combat. The Lady's incorporeal movement allows it to pass through solid objects, giving it a tactical advantage during encounters.</summary>
 
 <detail>

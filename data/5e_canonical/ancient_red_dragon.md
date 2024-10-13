@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Red Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>546</HP>
 <summary>The Ancient Red Dragon is the most feared and dangerous of all dragons, with scales that burn like molten lava and smoke constantly rising from its nostrils. These dragons make their homes in volcanic mountains, surrounded by vast hoards of treasure. Red Dragons are driven by greed and an overwhelming sense of superiority, believing themselves to be the pinnacle of dragonkind. Their breath weapon is a devastating blast of fire, capable of incinerating entire cities in moments. Ancient Red Dragons are ferociously territorial and will destroy anything that dares to challenge their dominance or lay claim to their treasure.</summary>
 
 <summary>The Ancient Red Dragon is a gargantuan creature known for its immense power and ferocity. This apex predator dominates its surroundings, exhibiting both physical and magical prowess that makes it a formidable opponent. With a Challenge Rating of 26, it presents an exceptional challenge to even the most experienced adventurers, boasting high offensive and defensive capabilities. The dragon has an extraordinary Armor Class of 22, making it very hard to hit, paired with a massive pool of 448 hit points, which allows it to soak up substantial damage. Its strengths lie in its overwhelming damage potential, particularly through its powerful bite, claws, and fire breath attacks. One notable ability, Legendary Resistance, grants it the opportunity to succeed on saving throws an impressive three times per day, enhancing its survivability. However, the Ancient Red Dragon possesses weaknesses, such as vulnerabilities to spells that target its lesser ability scores, notably its below-average Dexterity. Its innate magical abilities and fear-inducing presence make it not only a deadly combatant but also a strategic contender.</summary>

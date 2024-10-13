@@ -1,6 +1,8 @@
 <MonsterName/>Light Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>24</HP>
 <summary>The Light Drake is a tiny dragon that embodies the essence of light and goodness. With its neutral good alignment, this creature plays a support role, using its innate spellcasting abilities to assist allies and illuminate its surroundings. The Light Drake possesses decent defenses with an Armor Class of 13 and a modest hit point pool of 24, making it somewhat resilient in combat. Its mobility is excellent, flying at 60 feet and also able to walk and hover at low speeds. While its physical strength is limited, it compensates with high dexterity, allowing it to be nimble in battle. </summary>
 
 <detail>

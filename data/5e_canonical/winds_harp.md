@@ -1,6 +1,8 @@
 <MonsterName/>Wind's Harp</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>63</HP>
 <summary>The Wind's Harp is a Medium-sized evil fiend that serves a position of cunning and malicious influence in the world of Dungeons & Dragons. With a lawful evil alignment, its role in combat typically revolves around utilizing its magical abilities to disrupt opponents and synergize with allies. The creature's notable strengths include its high Charisma, which significantly boosts its spellcasting efficacy, and its resistance to spells, making it difficult for enemies to directly counter its abilities. However, its Armor Class is relatively low at 12, which, combined with a modest pool of hit points totaling 63, highlights its vulnerability to physical attacks if not protected properly. The Wind's Harp exemplifies the chaotic and manipulative nature of fiends, excelling in psychic damage and control tactics while being remarkably resilient against certain conditions.</summary>
 
 <detail>

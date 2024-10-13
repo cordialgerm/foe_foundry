@@ -1,6 +1,8 @@
 <MonsterName/>The Flesh</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Flesh is a Medium-sized aberration with a neutral evil alignment, making it a cunning and dangerous foe in any encounter. With an Armor Class of 14 derived from its natural armor and a substantial pool of 78 hit points, it can take a considerable amount of damage before falling in battle. As a Challenge Rating 4 creature, it presents a moderate challenge for adventurers, earning 1,100 experience points upon defeat. The Flesh is versatile in its movement, capable of walking, climbing, and swimming at a speed of 30 feet each. This creature's combat effectiveness is boosted by its strong Strength score of 18 (+4), which allows it to deal significant damage, alongside its reasonable Dexterity (14, +2) that contributes to its agility. However, it has a notably low Intelligence score of 8 (-1), which indicates its lack of cunning strategies. The Flesh is immune to being charmed or frightened, making it difficult to control in combat situations.</summary>
 
 <detail>

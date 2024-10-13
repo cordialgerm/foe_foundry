@@ -1,6 +1,8 @@
 <MonsterName/>Bearing Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Bearing Golem is a Medium construct that operates independently and does not have alignment. It possesses an Armor Class of 16, which is classified as natural armor, and has a total of 75 hit points, calculated by rolling ten eight-sided dice and adding thirty. With a walking speed of 30 feet, it is agile in combat settings. The challenge rating for this creature is 6, indicating that it provides a moderate challenge, awarding 2,300 experience points upon defeat. </summary>
 
 <detail>

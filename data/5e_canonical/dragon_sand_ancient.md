@@ -1,6 +1,8 @@
 <MonsterName/>Dragon, Sand Ancient</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>21 (natural armor)</AC>
+<HP/>507</HP>
 <summary>The Sand Ancient Dragon is a gargantuan and formidable creature of neutral evil alignment, serving as a powerful adversary in any campaign. With a challenge rating of 23, this dragon boasts an impressive array of abilities, making it a significant threat in combat encounters. Its strengths lie in its formidable physical attacks, incredible resilience, and the strategic use of its breath weapon and frightful presence, which can incapacitate foes. On the downside, despite its high constitution, the dragon has only average dexterity and is vulnerable to certain magical effects due to its specific immunities and resistances. Encountering a Sand Ancient Dragon poses a daunting challenge for adventurers, as its combination of raw power, elemental characteristics, and debilitating abilities can swiftly turn the tide of battle.</summary>
 
 <detail>

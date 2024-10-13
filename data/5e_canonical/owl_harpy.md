@@ -1,6 +1,8 @@
 <MonsterName/>Owl Harpy</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Owl Harpy is a medium monstrosity known for its deceptive charm and sinister abilities. As a neutral evil creature, it thrives on causing chaos and manipulating its prey, often ambushing unsuspecting adventurers. It possesses a combination of mobility and stealth, making it a formidable foe in battle. With a decent Armor Class of 14 and a robust pool of 112 hit points, it is resilient but still vulnerable to thunder damage. The harpy excels in Dexterity, giving it an exceptional ability to evade attacks and remain undetected while flying. Its notable magical abilities, including the ability to incapacitate foes with its Sleeping Song and create zones of impenetrable darkness, give it significant control over the battlefield. These strengths are somewhat balanced by its lower Constitution and Intelligence, making it susceptible to certain strategies.</summary>
 
 <detail>

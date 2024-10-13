@@ -1,6 +1,8 @@
 <MonsterName/>Cave Goat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>22</HP>
 <summary>The Cave Goat is a small, unaligned beast known for its agility and robust climbing capabilities. This creature possesses a moderate Armor Class of 11, making it relatively easy to hit, while its pool of 22 hit points, derived from rolling 4d6 and adding 8, provides a decent buffer against damage. It has a movement speed of 50 feet, allowing it to traverse terrain quickly. With a Challenge Rating of 1/4, it is considered a minor threat in combat situations, typically yielding 50 experience points when defeated. The Cave Goat's strengths lie in its physical attributes, particularly in Strength and Constitution, which enhance its resilience and ability to climb. However, its mental attributes are notably low, indicating that it lacks cognitive capabilities, which reflects its behavior as a beast rather than a sentient creature.</summary>
 
 <detail>

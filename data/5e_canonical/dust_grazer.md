@@ -1,6 +1,8 @@
 <MonsterName/>Dust Grazer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Dust Grazer is a large aberration known for its grotesque nature and unique adaptations for survival. It presents a challenge for adventurers due to its high health pool and ability to inflict debilitating poison damage. With an exceptional Constitution score of 20, the Dust Grazer boasts impressive hit points, making it a tough opponent to bring down. Its primary methods of attack include its tendrils and a dangerous special ability called Death Spores, which can severely harm or incapacitate creatures around it. However, its low Dexterity makes it somewhat vulnerable to ranged attacks and quick maneuvers. </summary>
 
 <detail>

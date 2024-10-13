@@ -1,6 +1,8 @@
 <MonsterName/>Kobold, Planes Hunter</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>181</HP>
 <summary>The Kobold Planes Hunter is a small humanoid creature that serves as a formidable opponent in combat. With a neutral alignment and a Challenge Rating of 10, it boasts a significantly high Armor Class of 16 and 181 hit points. Its attributes are well-rounded, particularly excelling in Strength with a value of 18 (+4), Dexterity at 17 (+3), and Charisma at 18 (+4). The Planes Hunter utilizes its magical weapon attacks to deal additional elemental damage, showcasing its adaptability in combat situations. Although it has decent resistances and advantages, it suffers from sunlight sensitivity, which can hinder its performance in brightly lit environments.</summary>
 
 <detail>

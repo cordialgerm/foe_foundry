@@ -1,6 +1,8 @@
 <MonsterName/>Speaker to the Darkness</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (scale mail)</AC>
+<HP/>135</HP>
 <summary>The Speaker to the Darkness is a small, humanoid creature embodying chaotic evil, characterized by its dark and terrifying presence. With an Armor Class of 16, thanks to its scale mail, and a substantial pool of 135 hit points, it can sustain significant damage while remaining a formidable foe in combat. Its unique combination of abilities focuses on fear and necrotic damage, allowing it to control the battlefield and instill dread in its opponents. Notably, it can summon ghasts to bolster its presence in battle, making it a challenge for groups of adventurers. However, it is particularly vulnerable to radiant damage, which can decrease its effectiveness.</summary>
 
 <detail>

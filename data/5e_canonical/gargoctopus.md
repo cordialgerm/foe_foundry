@@ -1,6 +1,8 @@
 <MonsterName/>Gargoctopus</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>104</HP>
 <summary>The Gargoctopus is a large monstrosity that serves as a formidable opponent in underwater or aquatic combat scenarios. With a natural armor class of 13, it possesses a decent defense, while its substantial hit points of 104, calculated from 16d10 plus 16, indicates that it can withstand significant damage before being taken down. The creature is capable of climbing and swimming effectively, with a speed of 20 feet for climbing, 40 feet for swimming, and 40 feet for walking. The Gargoctopus has a challenge rating of 5, which suggests it would provide a challenging encounter for a party of mid-level adventurers. Notable for its strong strength attribute of 18, the Gargoctopus can deal significant melee damage while also exhibiting remarkable intelligence with a score of 19, enabling it to be cunning in battle. Its weaknesses may lie in its moderate Dexterity, Constitution, and lack of ranged capabilities, which could be exploited by quicker opponents.</summary>
 
 <detail>

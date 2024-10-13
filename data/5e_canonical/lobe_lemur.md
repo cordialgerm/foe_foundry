@@ -1,6 +1,8 @@
 <MonsterName/>Lobe Lemur</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>93</HP>
 <summary>The Lobe Lemur is a small monstrosity known for its agility and unique combat abilities. With an Armor Class of 14 and 93 hit points, it possesses a good level of durability for its challenge rating of 4, making it a respectable threat in combat. The Lobe Lemur excels in Dexterity, boasting a score of 18 (+4), which grants it good agility in both attacks and evasive maneuvers. However, its Intelligence and Charisma are quite low, which may hinder its interactions and strategic decisions outside of combat. The creature is particularly adept at ambushing foes due to its special jumping abilities and excellent camouflage in swampy environments, although its average Strength and Wisdom provide it with limited resilience to physical attacks and social encounters.</summary>
 
 <detail>

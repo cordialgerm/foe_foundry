@@ -1,6 +1,8 @@
 <MonsterName/>Warhordling Orc Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>11</HP>
 <summary>The Warhordling Orc Warrior is a Medium-sized humanoid creature, embodying the brutish strength and tenacity typical of orc warriors. With an Armor Class of 13, the warrior has a fair level of defense, making it somewhat tricky for attackers to land successful blows. Its Hit Points of 11, derived from rolling 2d8 and adding 2, indicate a moderate endurance, allowing it to withstand a few attacks before being incapacitated. The challenge rating of 1/4 indicates that while it poses a threat, it is suitable for low-level adventurers. The warrior possesses a blend of combat and survival skills, making it a versatile opponent on the battlefield. However, its overall intelligence and charisma remain average, reflecting its brute strength over tactical cunning.</summary>
 
 <detail>

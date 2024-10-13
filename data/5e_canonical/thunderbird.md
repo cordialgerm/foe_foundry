@@ -1,6 +1,8 @@
 <MonsterName/>Thunderbird</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>12</AC>
+<HP/>57</HP>
 <summary>The Thunderbird is a large monstrosity known for its powerful lightning abilities and impressive mobility, able to soar through the skies with speed and grace. Its Armor Class is relatively low at 12, making it vulnerable to attacks, but it possesses a solid pool of hit points, totaling 57, which provides it with a decent buffer in combat. The creature has a Challenge Rating of 3, indicating it can pose a significant threat to low to mid-level adventurers, and is proficient in perception, exemplifying its keen awareness in battle. The Thunderbird has exceptional strength and constitution, with scores of 18 (+4) in both, making it very good at dealing damage and resisting physical attacks. While its intelligence and charisma are notably low, the creature compensates with strong wisdom, which influences its perception and ability to notice threats. </summary>
 
 <detail>

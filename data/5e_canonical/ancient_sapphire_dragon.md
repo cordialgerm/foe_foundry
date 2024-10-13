@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Sapphire Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>25</CR>
+<AC/>21</AC>
+<HP/>429</HP>
 <summary>The Ancient Sapphire Dragon is a formidable Gargantuan creature known for its immense power, intelligence, and exceptional psionic abilities. As a high-level dragon, it serves as a formidable adversary in any campaign, presenting significant challenges to players. With a powerful armor class of 21 and a massive pool of hit points totaling 429, it is a resilient opponent in combat. The dragon is exceptionally strong and dexterous, making it an agile threat that can move quickly both on the ground and in the air. Its challenge rating of 25 indicates its status as a powerful foe, with tactics that blend physical might with potent psychic powers. While the dragon possesses immunity to psychic damage and is unaffected by fatigue, its weaknesses lie in its reliance on specific abilities that can temporarily leave it vulnerable. Notably, its capacity for precognition and psionic observation makes it a master strategist, anticipating and countering enemy actions before they unfold.</summary>
 
 <detail>

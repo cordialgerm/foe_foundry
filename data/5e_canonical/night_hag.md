@@ -1,6 +1,8 @@
 <MonsterName/>Night Hag</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>112</HP>
 <summary>A Night Hag is a fiendish creature that haunts the dreams of mortals, feeding on fear and misery. These ancient, malevolent hags have withered, gray skin and glowing red eyes. Night Hags can enter the Ethereal Plane to stalk their victims and infiltrate their dreams, where they plant nightmarish visions and sap the victim's life force. They are known for their dark magic, casting spells that curse or corrupt, and for their ability to shapeshift into more appealing forms to deceive their targets. Night Hags often collect the souls of their victims, trading them in the infernal markets of the Lower Planes.</summary>
 
 <summary>The Night Hag is a Medium Fey creature embodying the essence of cunning and malice. With a challenge rating of 5, it poses a significant threat to adventurers, utilizing its formidable magical abilities and deceptive nature to manipulate foes. Its strengths lie in its solid defenses, including a high Armor Class of 17 and a substantial pool of 105 hit points, derived from its Constitution. The Night Hag's magical resistance grants it an advantage on saving throws against spells, rendering it difficult for spellcasters to neutralize. While it excels in magical deception and manipulation, its lack of mobility—moving at only 30 feet per turn—could be seen as a vulnerability.</summary>

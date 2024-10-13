@@ -1,6 +1,8 @@
 <MonsterName/>Dune Mimic</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Dune Mimic is a formidable Huge monstrosity that poses a unique challenge in combat and exploration scenarios. Its ability to disguise itself as ordinary sandy terrain allows it to blend in, creating ambush opportunities for unsuspecting adventurers. With a good Armor Class of 13 and a substantial 168 hit points, it showcases a strong defensive and offensive presence on the battlefield. The Dune Mimic's strengths lie in its grappling abilities and damage immunity to acid and fire, while its low Dexterity makes it vulnerable to ranged attacks, making it somewhat slow and less evasive. This creature operates effectively as a terrain-based ambusher, utilizing its adhesive properties and engulfing attacks to incapacitate its foes.</summary>
 
 <detail>

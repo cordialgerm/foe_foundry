@@ -1,6 +1,8 @@
 <MonsterName/>Rum Lord</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>15</AC>
+<HP/>78</HP>
 <summary>The Rum Lord is a small fey creature embodying chaotic evil, known for its ability to manipulate and debilitate foes through its intoxicating powers. With a high Armor Class of 15 and a considerable pool of 78 hit points, it presents a decent challenge. Its strengths lie in its Aura of Drunkenness that can incapacitate enemies, along with its magical resilience, making it tricky for spellcasters to affect. However, its low Wisdom score of 9 indicates that it may struggle against effects that target that attribute. The Rum Lord excels at close combat, with effective melee attacks and additional poison damage, marking it as a dangerous opponent in melee situations.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Yowler</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>The Yowler is a tiny undead creature that embodies chaotic evil. It possesses a unique blend of agility and resilience, making it an unpredictable foe in combat. With an armor class of 12 and a total of 22 hit points, it is relatively fragile but compensates with a high dexterity score of 15, granting it a good dexterity modifier of +2, which enhances its ability to dodge attacks. The Yowler can climb at a speed of 30 feet and walk at a speed of 40 feet, allowing it to maneuver effectively in various environments. However, it is hindered by its abysmal strength score of 3, resulting in a very bad strength modifier of -4, making it incapable of dealing physical damage through strength-based attacks. As a challenge rating of 1/2, it poses a moderate threat, particularly due to its ability to frighten opponents and resist certain damage types.</summary>
 
 <detail>

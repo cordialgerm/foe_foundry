@@ -1,6 +1,8 @@
 <MonsterName/>Blink Dog</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>22</HP>
 <summary>The Blink Dog is a canine creature with sleek fur and bright, intelligent eyes. What sets it apart from ordinary dogs is its ability to teleport short distances, a trait it uses both in hunting and to escape danger. Blink Dogs are pack animals and are highly loyal to their kin and any companions they form bonds with. They are often found in forests or plains, where they use their teleportation ability to outmaneuver predators or catch prey. Though generally peaceful creatures, they will defend their territory or their pack with ferocity.</summary>
 
 <summary>The Blink Dog is a Medium fey creature known for its agility and mystical teleportation abilities. With an Armor Class of 13 and 22 hit points, it is relatively fragile, yet it poses a unique challenge for adventurers due to its high Dexterity and stealth capabilities. Its Challenge Rating of 1/4 indicates that it is suitable for low-level encounters, providing players with an engaging and whimsical opponent. The Blink Dog's strengths lie in its exceptional Dexterity, granting it a +3 modifier, and its ability to teleport, making it difficult to pin down in combat. However, it lacks significant offensive power with a mediocre bite attack. Notably, its keen senses enhance its effectiveness in perception checks that rely on hearing and smell.</summary>

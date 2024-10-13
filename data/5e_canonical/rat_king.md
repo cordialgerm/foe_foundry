@@ -1,6 +1,8 @@
 <MonsterName/>Rat King</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Rat King is a Medium-sized monstrosity characterized by its chaotic evil nature. As a sinister leader of the rats, this creature boasts a unique blend of stealth and resilience, making it a formidable opponent that can manipulate its environment to sow misfortune among its enemies. With a total of 76 hit points, an Armor Class of 14, and the ability to burrow, the Rat King possesses significant defensive capabilities. However, its Strength score is quite low at 6, which is very bad, while its Dexterity at 16 and Constitution at 18 are exceptional, allowing it to evade attacks and withstand damage effectively. The Rat King's challenge rating of 5 indicates that it is a suitable challenge for a party of mid-range level adventurers, offering 1,800 experience points upon defeat.</summary>
 
 <detail>

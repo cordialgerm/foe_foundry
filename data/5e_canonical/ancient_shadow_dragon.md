@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Shadow Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>21</AC>
+<HP/>296</HP>
 <summary>The Ancient Shadow Dragon is a formidable Gargantuan creature, embodying the essence of darkness and malevolence. With impressive armor class and hit points, it poses a significant challenge for adventurers, boasting a challenge rating of 24, which reflects its incredibly high difficulty level. Its ability to fly, swim, and maneuver with grace makes it exceptionally agile in battle, while its innate spellcasting and legendary actions allow it to manipulate the battlefield further. This dragon is adept at evading physical attacks through its incorporeal movement and possesses various resistances and immunities that make it a tough adversary. However, its reliance on a specific area through its Essence Link can be seen as a weakness, as it limits its recovery away from its vital location.</summary>
 
 <detail>

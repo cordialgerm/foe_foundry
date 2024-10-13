@@ -1,6 +1,8 @@
 <MonsterName/>Quipper, Swarm of Quippers</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>34</HP>
 <summary>The Quipper, Swarm of Quippers, is a medium-sized swarm composed of tiny aquatic creatures known for their aggressive and voracious nature. These swarms are typically encountered in underwater environments, where they can swiftly maneuver to attack unsuspecting creatures. Their strength lies in their ability to strike multiple times and cause lingering damage through bleeding, making them a formidable threat in combat. However, they possess a low amount of hit points and can be easily dispersed if sufficiently damaged. Notably, they reside in water and cannot survive outside it, restricting their mobility on land.</summary>
 
 <detail>

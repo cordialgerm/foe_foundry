@@ -1,6 +1,8 @@
 <MonsterName/>Animated Instrument, Symphony</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>15</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>201</HP>
 <summary>The Animated Instrument, Symphony is a gargantuan construct known for its impressive musical abilities and unique combat style. With a Challenge Rating of 15, this creature has formidable hit points totaling 201 and maintains a solid defense with an Armor Class of 15, derived from its natural armor. Its high strength and exceptional charisma make it a powerful presence in any encounter. One of the key components of its combat strategy is its various musical arrangements that can influence and control the battlefield by affecting the actions and states of nearby creatures. While it possesses multiple resistances and immunities, it does have a vulnerability to anti-magic fields, making it especially susceptible to certain spellcasters. Its ability to occupy the same space as other creatures allows it to perform manipulative tactics, enhancing its effectiveness in combat.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Waterkledde</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>123</HP>
 <summary>The Waterkledde is a large chaotic evil fiend that embodies the destructive forces of nature with its swift waterborne capabilities, making it a formidable adversary in combat. With an impressive Armor Class of 14 due to its natural armor, it boasts 123 hit points, making it quite resilient, though its challenge rating of 5 indicates that it is of moderate difficulty for adventurers. This creature excels in mobility, possessing a walking, flying, and swimming speed of 40 feet, allowing it to navigate various terrains effectively. As a fiend, it brings fear and chaos, often using its manipulative abilities to terrorize opponents.</summary>
 
 <detail>

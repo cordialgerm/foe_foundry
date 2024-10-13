@@ -1,6 +1,8 @@
 <MonsterName/>Hooden Horse</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>117</HP>
 <summary>The Hooden Horse is a medium undead creature embodying a lawful evil alignment. This monstrous, spectral steed is characterized by its ability to hunt down wrongdoers and exact a chilling form of justice. With a formidable presence on the battlefield, it boasts a good armor class of 14 and 117 hit points, allowing it to endure significant damage. The Hooden Horse has high strength, good dexterity, and an exceptional charisma, enabling it to be both a formidable combatant and an eerie manipulator in social situations. It has vulnerabilities to fire, but it is immune to necrotic and poison damage, making it resistant to common damage types faced by many foes. </summary>
 
 <detail>

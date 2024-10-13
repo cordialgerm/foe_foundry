@@ -1,6 +1,8 @@
 <MonsterName/>Spider Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Spider Drake is a formidable creature in Dungeons & Dragons, classified as a Large Dragon of lawful evil alignment. It possesses a combination of strengths that make it a challenging foe, including high armor class, significant hit points, and a versatile array of attacks. Its climbing and flying speed, coupled with its poison immunity, adds to its resilience in combat and makes it an unpredictable opponent. However, despite its impressive attributes, it is less effective in terms of intelligence and charisma, which can limit its tactical options in certain scenarios. </summary>
 
 <detail>

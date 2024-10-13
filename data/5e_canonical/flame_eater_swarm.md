@@ -1,6 +1,8 @@
 <MonsterName/>Flame Eater Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>33</HP>
 <summary>The Flame Eater Swarm is a Medium Beast that behaves like a collective of tiny, flame-consuming creatures. It is unaligned and possesses unique abilities to extinguish fires, making it a nuisance for spellcasters who rely on fire magic. With an Armor Class of 12 and 33 hit points, it is relatively easy to hit but can be quite resilient due to its immunities and resistances. The Challenge Rating of 2 indicates that while it might not be overwhelmingly powerful, it can still present a substantial challenge, especially if combined with other threats. It boasts high Dexterity, allowing it to evade attacks effectively, but its other attributes are quite weak. The swarm operates best in situations where fires are present, using its abilities to consume flames and bolster its attack power.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Prismatic Beetles</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>60</HP>
 <summary>The Swarm of Prismatic Beetles is a Medium-sized swarm beast with a unique set of abilities that allow it to manipulate its environment and incapacitate enemies effectively. Its strong Dexterity gives it good maneuverability, while its decent hit points make it moderately durable in combat. The swarm excels at creating distraction and disorientation through its special abilities, particularly its Glittering Carapace, which can render opponents helpless. However, it suffers from low Strength and poor performance in direct melee combat, as its attack relies on a swarm of creatures rather than individual strength. With a Challenge Rating of 3, it poses a moderate threat, primarily using its swarm tactics to control the battlefield.</summary>
 
 <detail>

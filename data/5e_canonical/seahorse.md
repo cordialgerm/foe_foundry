@@ -1,6 +1,8 @@
 <MonsterName/>Seahorse</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>11</AC>
+<HP/>1</HP>
 <summary>The seahorse is a tiny beast that exists primarily in aquatic environments, showcasing its unique adaptations for underwater life. With a challenge rating of 0, it serves more as a whimsical representation of marine life than a formidable threat to adventurers. Its main strengths lie in its ability to swim, albeit slightly hindered by its very low hit points and poor physical attributes. The seahorse's low armor class makes it vulnerable in combat, but its primary advantage is its ability to breathe underwater, which allows it to thrive in its aquatic habitat. Overall, the seahorse is not designed to be a combatant but rather to add flavor to marine ecosystems in a campaign.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Chill Haunt</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>39</HP>
 <summary>The Chill Haunt is a medium-sized undead creature embodying a neutral evil alignment. It wields significant power through its unique abilities and damage immunities, making it a formidable foe in combat. The Chill Haunt excels in avoidance, primarily through its incorporeal movement, allowing it to bypass physical barriers, but it has weaknesses as it cannot withstand nonmagical attacks effectively. With a challenge rating of 3, it poses a significant threat, particularly due to its cold damage abilities and life-draining abilities that can hinder its opponents in battle.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Dire Tyrannosaurus Rex</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>8</CR>
+<AC/>13</AC>
+<HP/>253</HP>
 <summary>The Dire Tyrannosaurus Rex is an enormous beast that exemplifies raw physical power and ferocity. With a challenge rating of 8, it serves as a formidable adversary in combat scenarios, posing a significant threat to players with its high damage output and durability. It has a notable strength score of 22, which translates to a very good attack and grappling potential. However, its intelligence score is low, indicating that while it is a fearsome creature in battle, it lacks complexity in reasoning and strategy. The creature's high Constitution score contributes to its impressive hit points, allowing it to withstand substantial damage before being taken down. Its speed of 50 feet enables it to close distances rapidly, making it a dangerous opponent on the battlefield.</summary>
 
 <detail>

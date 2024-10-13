@@ -1,6 +1,8 @@
 <MonsterName/>Pyrohydra</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>13</CR>
+<AC/>16</AC>
+<HP/>218</HP>
 <summary>The Pyrohydra is a formidable Huge monstrosity known for its multiple fire-breathing heads and regeneration abilities. With an impressive Armor Class of 16 and a significant pool of Hit Points totaling 218, the Pyrohydra can endure extensive damage before being taken down, making it a resilient foe in combat. Its challenge rating of 13 signifies that it poses a serious threat to adventurers, providing a substantial 10,000 experience points upon defeat. Although it possesses a low Intelligence of 2, restricting its tactical capabilities, the Pyrohydra compensates with exceptional physical stats, particularly in Strength and Constitution, both rated at +5, marking their effectiveness as very good. The hydra is adept at using its environment to its advantage, with a speed of 30 feet on land and the same aquatic capability, allowing it to engage enemies both in and out of water.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Nilbog</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>14</HP>
 <summary>The Nilbog is a small humanoid creature known for its quirky and troublesome nature. With its unique ability to reverse damage into healing, the Nilbog poses an unusual challenge for adventurers. It has a slim build, but its strengths lie in its deceptive traits and reactive capabilities. While its physical prowess is average at best, it can effectively evade attacks and manipulate battles to its advantage. However, its reliance on peculiar mechanics makes it susceptible to healing magic, as it can only be harmed by spells or effects that restore hit points. This creature is often encountered in mischievous situations, creating conflicts not just through direct combat, but also through clever tactics.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Aboleth</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>135</HP>
 <summary>The Aboleth is a massive, aberrant creature that dwells in the deepest, darkest parts of the ocean or underground lakes. Its body is long and eel-like, covered in slimy, mucus-coated skin that reeks of decay. It has three glowing eyes stacked one on top of the other, and four long, powerful tentacles that it uses to ensnare prey. The Aboleth is incredibly ancient, with memories stretching back to primordial times, and it has powerful psychic abilities, including mind control and telepathy. It is a manipulator and enslaver of other creatures, twisting their minds and bodies to serve its purposes.</summary>
 
 <summary>The Aboleth is a large aberration known for its cunning intellect and formidable presence, often lurking in the depths of dark waters. With a robust armor class of 17 and a substantial pool of hit points at 171, it poses a significant threat to adventurers who venture too close to its lair. The creature's speed allows it to move swiftly in water, swimming at 40 feet, but its terrestrial movement is limited to only 10 feet. The Aboleth operates at challenge rating 11, making it a powerful adversary for parties of lower levels, and it can be expected to provide a serious combat challenge with its multiattack capabilities and potent special abilities.</summary>

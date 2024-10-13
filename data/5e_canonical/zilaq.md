@@ -1,6 +1,8 @@
 <MonsterName/>Zilaq</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>82</HP>
 <summary>Zilaq is a tiny, neutral dragon that serves as an intriguing and formidable presence on the battlefield. With an armor class of 15 and a considerable amount of hit points, totaling 82, Zilaq is able to withstand moderate amounts of damage while engaging opponents. This creature can walk at a speed of 30 feet and fly at an impressive speed of 60 feet, granting it exceptional mobility in combat. With a challenge rating of 4, Zilaq poses a moderate challenge for adventurers, rewarding a group with 1,100 experience points upon defeat. Notably, Zilaq possesses a range of special abilities and spells, enhancing its combat efficacy and strategic options, making it a well-rounded adversary.</summary>
 
 <detail>

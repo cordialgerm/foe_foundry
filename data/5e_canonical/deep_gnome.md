@@ -1,6 +1,8 @@
 <MonsterName/>Deep Gnome</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>23</HP>
 <summary>Deep Gnomes, also known as Svirfneblin, are a secretive and cautious race of gnomes who live deep underground. Unlike their surface-dwelling cousins, Deep Gnomes are more somber and pragmatic, often dwelling in the Underdark to mine for precious gems and minerals. They have dark, stone-colored skin, which helps them blend into their subterranean surroundings. Deep Gnomes are expert miners and craftsmen, known for their ability to create intricate machinery and traps. They are wary of outsiders and have developed strong defenses to protect their hidden cities from the dangers of the Underdark.</summary>
 
 <summary>The Deep Gnome, a small humanoid creature, is known for its cunning and adaptability in underground environments. With a challenge rating of 1/2, it stands as a competent opponent, particularly adept at stealth and utilizing its crystalline-based abilities in combat. The creature possesses a decent armor class of 15 and has a total of 23 hit points, making it somewhat resilient for its size. Its notable strengths include a blend of agility and intelligence represented by its +2 Dexterity and +2 Constitution scores, as well as its proficiency in stealth, making it a formidable hunter in rocky terrains. However, its low Charisma score of -1 can limit its effectiveness in social interactions. </summary>

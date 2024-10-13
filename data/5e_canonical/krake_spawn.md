@@ -1,6 +1,8 @@
 <MonsterName/>Krake Spawn</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>14</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>175</HP>
 <summary>The Krake Spawn is a formidable creature characterized as a Huge Monstrosity with a neutral evil alignment. It possesses robust physical attributes, particularly in Strength and Constitution, making it exceptionally durable in combat. With a significant pool of hit points and a challenge rating of 14, it serves as a powerful adversary for adventurers. Its primary strengths lie in its multiple attacks, high damage output, and the ability to grapple opponents with its tentacles, all while being immune to cold, poison, and psychic damage. However, its relatively low Dexterity leaves it vulnerable to ranged attacks and finesse-based maneuvers. Notably, the Krake Spawn's amphibious nature allows it to thrive both underwater and on land, enhancing its versatility during encounters.</summary>
 
 <detail>

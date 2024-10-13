@@ -1,6 +1,8 @@
 <MonsterName/>Tar Ghoul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>66</HP>
 <summary>The Tar Ghoul is a Medium undead creature characterized by its neutral evil alignment and formidable presence. With a challenge rating of 4, it is well-suited for ambushing unsuspecting foes and controlling the battlefield using its unique abilities. The Tar Ghoul exhibits strong physical attributes, particularly in Strength and Dexterity, granting it good melee capabilities and tricky escape potential. It possesses immunities to fire and poison damage, making it resilient against certain attack types. However, its low Charisma and Wisdom can be seen as weaknesses, indicating it may not be as persuasive or perceptive as other undead creatures. Its notable ability to ignite itself and others adds a deadly layer of strategy to encounters.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ogrekin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>32</HP>
 <summary>The Ogrekin is a Medium humanoid creature, characterized by its strength and resilience. With a Challenge Rating of 1, it presents a moderate threat in combat, capable of dealing significant damage with its melee attacks and possessing good physical attributes. Its Armor Class of 11 makes it relatively easy to hit, but it compensates for this with a solid pool of hit points totaling 32. The Ogrekin's special ability, "Giant Build," allows it to utilize its size effectively, increasing its damage output and lifting capacity. While it lacks any significant ranged options aside from the handaxe, its melee combat potential is notable. Overall, the Ogrekin is a formidable foe, especially in close quarters.</summary>
 
 <detail>

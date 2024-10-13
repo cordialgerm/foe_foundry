@@ -1,6 +1,8 @@
 <MonsterName/>Scorchrunner Jackal</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>38</HP>
 <summary>The Scorchrunner Jackal is a medium-sized monstrosity that roams the landscape, often striking from the shadows and utilizing its affinity for fire and sunlight to gain an advantage in combat. With a Challenge Rating of 1, this creature can serve as a formidable opponent for low-level adventurers, possessing enhanced mobility and unique abilities that allow it to effectively evade attacks while inflicting damage. Its strengths lie in its high Dexterity, granting it a good ability to avoid hits, and its immunity to fire damage, which makes it resistant to various spells and attacks. However, it has a below-average Strength score and limited hit points, making it vulnerable to direct physical confrontations in close quarters. </summary>
 
 <detail>

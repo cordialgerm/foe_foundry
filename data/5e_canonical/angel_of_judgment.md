@@ -1,6 +1,8 @@
 <MonsterName/>Angel of Judgment</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>18</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>229</HP>
 <summary>The Angel of Judgment is a formidable Huge Celestial creature that embodies the principles of balance between law and chaos. With a high Challenge Rating of 18, it is an incredibly powerful opponent, well-suited to confront adventurers directly or serve as a pivotal character in their quests. The Angel's strengths lie in its versatility through the Change Face ability, allowing it to shift its alignment in battle, and its high damage output combined with impressive defenses, such as Magic Resistance. Its weaknesses are typically its reliance on targeting specific creature types and potential vulnerabilities inherent in facing powerful adversaries who can exploit its elemental resistances. Notably, the Angel of Judgment has both critical offensive and defensive capabilities, which will challenge any party attempting to navigate through an encounter with it.</summary>
 
 <detail>

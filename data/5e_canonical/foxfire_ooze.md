@@ -1,6 +1,8 @@
 <MonsterName/>Foxfire Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>10</CR>
+<AC/>9</AC>
+<HP/>126</HP>
 <summary>The Foxfire Ooze is a formidable ooze creature with unique mobility and combat abilities. It presents a significant challenge at Challenge Rating 10 and can absorb and deal considerable damage, especially with its special Lightning Storm ability. This creature is exceptionally durable, boasting high hit points and various immunities that make it resistant to many forms of damage. However, its low Armor Class makes it vulnerable to attacks if it can be engaged effectively. The ooze is particularly dangerous in close quarters, where it can surprise foes and unleash devastating attacks.</summary>
 
 <detail>

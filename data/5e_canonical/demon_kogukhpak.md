@@ -1,6 +1,8 @@
 <MonsterName/>Demon, Kogukhpak</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>18</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>262</HP>
 <summary>The Kogukhpak is a formidable demon of immense size, embodying chaotic evil. This Huge fiend presents a significant threat due to its high damage output and robust defenses, boasting an Armor Class of 17, which is considered good for a creature of its challenge level. With a whopping 262 hit points resulting from a tough constitution, the Kogukhpak is capable of withstanding considerable punishment in combat. Its movement options include both walking and swimming at 40 feet, allowing it to navigate various environments effectively. However, its low Dexterity score does hinder its agility, providing only average archer and stealth capabilities. Its magical powers and fierce physical attacks make it a formidable opponent for groups of adventurers. On the downside, the Kogukhpak suffers from sunlight hypersensitivity, which dramatically reduces its combat effectiveness when exposed to sunlight.</summary>
 
 <detail>

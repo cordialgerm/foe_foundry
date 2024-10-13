@@ -1,6 +1,8 @@
 <MonsterName/>Blue Dragon Wyrmling (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Blue Dragon Wyrmling is a medium-sized dragon renowned for its affinity with deserts and lightning. With a relatively high Armor Class of 17 and 58 hit points, it can withstand a fair amount of damage, making it a formidable opponent in combat. The wyrmling possesses a solid Strength score of 16, allowing it to deliver significant bite attacks, while its Dexterity and Constitution scores contribute to its agility and durability, respectively. However, its Intelligence, Wisdom, and Charisma scores are average, limiting its magical capabilities and social effectiveness. The creature's abilities, such as its unique movement capabilities and the powerful Lightning Breath, enable it to maneuver effectively through its environment and deal substantial damage in combat. While it has immunities to lightning damage, its lower resistances to other elemental attacks make it somewhat vulnerable to varied forms of assault.</summary>
 
 <detail>

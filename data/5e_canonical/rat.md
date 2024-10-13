@@ -1,6 +1,8 @@
 <MonsterName/>Rat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>10</AC>
+<HP/>1</HP>
 <summary>A Rat is a small, agile rodent found in cities, sewers, forests, and other environments where it can scavenge for food. While Rats are not dangerous on their own, they can become a nuisance when they gather in large numbers. They are known for spreading disease and infesting homes or dungeons. Rats are quick and stealthy, able to slip through small spaces to avoid predators. In many urban environments, they are often seen as pests, though they can sometimes be trained or used by spellcasters as familiars.</summary>
 
 <summary>The Rat is a tiny beast often found in urban and rural settings, serving primarily as a low-level creature encountered by adventurers. With a challenge rating of 0, it poses minimal threat, mainly serving as a nuisance or a source of potential food for other creatures. Its greatest strengths lie in its speed and ability to remain undetected, thanks to its keen sense of smell, while its weaknesses are evident in its extraordinarily low hit points and poor physical attributes. Overall, the rat is not meant to be an adversary but rather a minor creature that may fit into various scenarios within a campaign.</summary>

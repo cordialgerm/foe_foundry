@@ -1,6 +1,8 @@
 <MonsterName/>Bat, Swarm of Bats</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>14</HP>
 <summary>The Swarm of Bats is a Medium swarm made up of tiny beasts, typically found in dark, cavernous environments. This creature is known for its unique ability to disrupt spellcasting with its cacophonous behavior, making it a nuisance to spellcasters in particular. While it has a relatively low Armor Class of 12 and only 14 hit points, its swarm nature allows it to occupy the same space as other creatures, creating tactical opportunities in combat. The swarm does not regain hit points, meaning it is somewhat vulnerable if sustained damage is dealt to it. Its strengths lie in its special abilities, including resistance to many types of damage and immunity to several debilitating conditions that would affect individual creatures. </summary>
 
 <detail>

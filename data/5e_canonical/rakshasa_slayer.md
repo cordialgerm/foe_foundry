@@ -1,6 +1,8 @@
 <MonsterName/>Rakshasa, Slayer</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Rakshasa, Slayer is a formidable medium-sized fiend characterized by its lawful evil alignment and cunning abilities. It serves as an assassin or a lethal enforcer with impressive skills and strategic advantages in combat. With an armor class of 18, it is well-protected, while its hit points totaling 142 provide it with substantial durability in battle. The creature possesses a strong dexterity, making it very agile, and its charm is notable, allowing it to manipulate situations to its benefit. However, it is vulnerable to piercing damage from magic weapons wielded by good creatures, presenting a clear weakness for any heroes utilizing such weapons. The Rakshasa's challenge rating of 9 indicates that it is a dangerous foe that can inflict significant damage with its multiattack capability and exploit its magical advantages effectively.</summary>
 
 <detail>

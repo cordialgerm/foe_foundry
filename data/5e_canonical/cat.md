@@ -1,6 +1,8 @@
 <MonsterName/>Cat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>12</AC>
+<HP/>2</HP>
 <summary>The Cat is a small, agile mammal known for its grace and independence. With sharp claws, quick reflexes, and keen senses, cats are excellent hunters, often stalking small prey like mice and birds. Cats are typically solitary creatures, though they can form strong bonds with their owners or companions. They are known for their ability to climb, their silent movement, and their knack for finding hidden places to rest. Though not a threat in combat, their agility and stealth make them adept at avoiding danger.</summary>
 
 <summary>The Cat is a tiny beast that embodies agility and alertness, making it an excellent companion for adventurers or a common sight in many settlements. With a challenge rating of 0, it is relatively weak and poses little threat in combat, but its special abilities and skills enhance its survivability and usefulness. The Cat has a sleek body with noteworthy dexterity—resulting in a good Armor Class of 12 and providing it a reasonable chance to evade attacks. Despite having very low hit points, the Cat is equipped with a keen awareness of its surroundings and is skilled in stealth, making it effective for reconnaissance or as a distraction. Overall, it performs best in non-combat scenarios or as a familiar.</summary>

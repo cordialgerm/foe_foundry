@@ -1,6 +1,8 @@
 <MonsterName/>Unhatched</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>71</HP>
 <summary>The Unhatched is a small, chaotic evil undead creature that embodies darkness and malice, often acting as a curse upon those who heal. With a Challenge Rating of 4 and a high intelligence score of 18, it is a potent adversary in combat, especially against those who engage in restorative magic. Its strengths lie in its ability to resist various forms of damage and conditions, as well as its powerful multiattack capabilities. However, it is particularly vulnerable to bludgeoning damage, making it less effective against foes who capitalize on that weakness.</summary>
 
 <detail>

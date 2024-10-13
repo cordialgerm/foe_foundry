@@ -1,6 +1,8 @@
 <MonsterName/>Howler Of The Hill</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>14</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>178</HP>
 <summary>The Howler of the Hill is a formidable Large Aberration infused with a neutral evil alignment. Its role in combat revolves around its high mobility, exceptional psychic abilities, and a powerful howl that can incapacitate or stun multiple opponents simultaneously. With a Challenge Rating of 14, it poses a significant threat, possessing 178 hit points and a natural armor class of 18, making it a tough adversary to defeat. Notably, the Howler is immune to psychic damage and possesses advantageous resistances, allowing it to withstand various forms of attacks while inflicting heavy psychic damage in return.</summary>
 
 <detail>

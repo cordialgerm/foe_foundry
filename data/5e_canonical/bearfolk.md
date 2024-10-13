@@ -1,6 +1,8 @@
 <MonsterName/>Bearfolk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (hide armor)</AC>
+<HP/>45</HP>
 <summary>The Bearfolk is a medium-sized humanoid creature characterized by its chaotic good alignment, embodying traits of both bear and humanoid. It strikes a balance between formidable physical capabilities and a somewhat low intelligence level. With an armor class of 14, it is moderately well-protected thanks to its hide armor, while its 45 hit points provide decent durability in combat scenarios. The Bearfolk's strengths lie in its high strength and good constitution, making it an exceptional frontline combatant, able to absorb damage and deal significant blows. However, its vulnerabilities include a relatively low intelligence and charisma, which limit its effectiveness in social situations and strategy-based interactions.</summary>
 
 <detail>

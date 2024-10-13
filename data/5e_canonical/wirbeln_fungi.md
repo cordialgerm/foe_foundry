@@ -1,6 +1,8 @@
 <MonsterName/>Wirbeln Fungi</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>16</HP>
 <summary>The Wirbeln Fungi is a small, plant-like creature that embodies a unique blend of stealth and subtlety. With a lawful neutral alignment, it plays the role of an enigmatic and cunning adversary. It boasts a formidable Dexterity score of 16, making it very good in evading attacks, while its Constitution allows it to withstand some punishment. Its modest array of special abilities, coupled with its capacity to remain motionless and appear as ordinary fungus, enables it to ambush unsuspecting prey. However, it suffers from low Strength and Charisma, which limits its effectiveness in direct confrontations and interactions. </summary>
 
 <detail>

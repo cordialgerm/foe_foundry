@@ -1,8 +1,10 @@
 <MonsterName/>Scout</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
-<Subtype/>any lineage</Subtype>
 <Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>1</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>16</HP>
 <summary>A Scout is a skilled hunter and tracker, often employed by military forces, rangers, or adventuring parties to navigate dangerous terrain or gather intelligence. Scouts are highly trained in survival skills, stealth, and archery, making them experts at avoiding detection while observing enemies or mapping out new areas. They typically carry light armor and weapons, such as bows or short swords, allowing them to move quickly and quietly. Scouts are often found patrolling borders, exploring wilderness areas, or acting as guides for those traveling through treacherous regions.</summary>
 
 <summary>The Scout is a Medium humanoid creature designed for stealth and reconnaissance. With its notable agility and keen senses, it excels in situations requiring stealthy movement and perception. Its strengths lie in high Dexterity and decent Constitution, allowing it to be nimble and somewhat resilient in combat. However, it lacks notable strength and charisma, making it less effective in direct confrontations or social interactions. The Scout's role often involves gathering information or ambushing foes, making it a valuable addition to any team that requires subtlety and strategy.</summary>

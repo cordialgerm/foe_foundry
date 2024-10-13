@@ -1,6 +1,8 @@
 <MonsterName/>Gigantura</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>13</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>248</HP>
 <summary>The Gigantura is a Gargantuan monstrosity that thrives in aquatic environments, showcasing high durability and formidable offensive capabilities. With an Armor Class of 16 and a substantial pool of 248 hit points, it can withstand significant damage in combat. The creature has a robust blend of strength, constitution, and dexterity, making it a dangerous opponent. It also possesses unique abilities that enhance its perception and survivability underwater. However, it has low intelligence and charisma, revealing a lack of sophisticated tactics and social interaction skills. The Gigantura’s primary power lies in its ability to incapacitate foes with its horrifying gaze and swallow them whole, creating a tense and dangerous situation for any adventurers that encounter it.</summary>
 
 <detail>

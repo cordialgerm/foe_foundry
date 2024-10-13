@@ -1,6 +1,8 @@
 <MonsterName/>Ecstatic Bloom</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>11</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>171</HP>
 <summary>The Ecstatic Bloom is a powerful Huge Celestial creature aligned with neutral good. It serves as a guardian of life and a beacon of protection against undead threats. With a high hit point total of 171, this creature is resilient, bolstered by its healing abilities and damage immunities. One of its notable strengths lies in its ability to regenerate health and bolster allied creatures, making it a significant asset in battle against evil foes. However, it is vulnerable to fire damage, which can disrupt its healing capabilities. The Ecstatic Bloom excels in support roles within a party, thanks to its various auras and cooperative abilities.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Keg Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Keg Golem is a Medium-sized Construct that serves as a unique, unaligned creature. Its notable characteristics include a solid physical presence, with a robust armor class of 11, and a healthy pool of hit points totaling 45. This creature excels in its role on the battlefield due to its strong physical attributes—particularly its Strength of 16, granting a +3 modifier, and Constitution of 16, which also provides a +3 modifier—making it able to deal significant damage and withstand attacks. However, its weaknesses include a low Dexterity of 10 (+0 modifier), which provides only average agility, and a poor Intelligence, Wisdom, and Charisma, indicating that it lacks sophistication in both combat strategy and social interactions. The Keg Golem can be a resilient foe with some ability to knock opponents prone, but it depends on ale to maintain its combat effectiveness, enforcing an interesting tactical element.</summary>
 
 <detail>

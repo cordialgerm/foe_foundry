@@ -1,6 +1,8 @@
 <MonsterName/>Leshy</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Leshy is a medium-sized monstrosity with a chaotic neutral alignment, embodying the spirit of nature and mischief. It possesses a notable Armor Class of 14 due to its natural armor, and has a decent pool of 45 hit points, which translates to a solid durability for its Challenge Rating of 1, granting it 200 experience points. The Leshy's strengths lie in its high Strength of 16, granting a good modifier of +3, and its impressive Charisma of 16, leading to an exceptional +3 modifier. These attributes make the Leshy effective in both physical combat and social interactions. However, it displays average Dexterity at 12, causing it to have a modest +1 modifier. With its concentration on stealth and survival skills, the Leshy excels in areas where deception or the natural environment is a factor. It is also immune to poison damage and the poisoned condition, granting it a significant advantage in encounters involving those elements.</summary>
 
 <detail>

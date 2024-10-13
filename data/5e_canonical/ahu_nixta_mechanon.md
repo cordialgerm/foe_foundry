@@ -1,6 +1,8 @@
 <MonsterName/>Ahu-Nixta Mechanon</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>51</HP>
 <summary>The Ahu-Nixta Mechanon is a Medium-sized construct that operates independently of any moral alignment. With a Challenge Rating of 2, it poses a moderate threat to adventurers, providing both combat capabilities and unique restorative abilities. The construct boasts an impressive Armor Class of 14 due to its natural armor and a total of 51 hit points, making it somewhat durable for its challenge level. Notably, it is immune to poison and psychic damage, as well as various debilitating conditions like exhaustion and paralysis. Its strengths lie in physical prowess with a Strength score of 16, combined with abilities that allow it to grapple enemies or incapacitate them with sonic attacks. However, it has a very low Intelligence and Charisma, resulting in poor mental capabilities and unremarkable social interactions. The Ahu-Nixta also has unique features that can either hinder it or allow it to surprise its opponents, particularly with its ability to reactivate after falling to zero hit points, regaining health from the souls of the fallen.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ooze, Sinkhole</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>7</AC>
+<HP/>108</HP>
 <summary>The Sinkhole Ooze is a gargantuan unaligned creature that presents a formidable obstacle for adventurers. These amorphous blobs inhabit the earth, often surprisingly blending into their surroundings, and are designed to ensnare unsuspecting creatures that venture too close. With a challenging rating of 4, the Sinkhole Ooze possesses considerable physical durability, boasting 108 hit points and a robust Constitution score of 16, which offers a good degree of resilience against attacks. Its low Armor Class of 7 makes it vulnerable to physical attacks, but it compensates with damage and condition immunities, notably being immune to acid damage, which allows it to thrive in its natural environment. One of its powerful offensive strategies involves grappling and restraining foes with its pseudopods, making it a significant threat in combat scenarios.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Quickstep</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (studded leather)</AC>
+<HP/>49</HP>
 <summary>The Quickstep is a small, fey creature characterized by its neutral evil alignment. As a Challenge Rating 5 entity, it possesses a dynamic combination of speed and agility, making it a formidable opponent in combat. With a strong Dexterity score of 19, the Quickstep exhibits exceptional evasion capabilities and can dodge attacks effectively. It combines this agility with decent offensive abilities, utilizing a moonlight rapier and hidden dagger to deliver both piercing and cold damage. Despite its strengths, it can be vulnerable if incapacitated or restrained, as its special abilities heavily rely on mobility. Additionally, its low hit points relative to its Challenge Rating indicate that while it can deal damage efficiently, it is not overly resilient in direct confrontations.</summary>
 
 <detail>

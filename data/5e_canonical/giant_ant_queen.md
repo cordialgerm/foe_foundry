@@ -1,6 +1,8 @@
 <MonsterName/>Giant Ant Queen</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Giant Ant Queen is a large beast that plays a crucial role in its ecosystem, representing the apex of ant colonies. With an Armor Class of 15, it boasts decent protection from physical attacks due to its natural armor. Its formidable Hit Points of 119 allow it to endure substantial damage in combat, making it a resilient opponent. The queen has a movement speed of 40 feet, enabling her to maneuver effectively during encounters. As a Challenge Rating 5 creature, facing the Giant Ant Queen presents a moderate challenge, yielding 1,800 experience points upon defeat. </summary>
 
 <detail>

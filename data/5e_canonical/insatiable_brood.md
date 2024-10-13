@@ -1,6 +1,8 @@
 <MonsterName/>Insatiable Brood</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>63</HP>
 <summary>The Insatiable Brood is a medium swarm made up of tiny aberrations, characterized by its chaotic movement and otherworldly nature. In combat, this creature can be quite formidable due to its magical bite attacks, ability to double damage to structures, and its strong resistances. With an Armor Class of 13 and 63 hit points, it can sustain a decent amount of damage before being subdued. Additionally, its mobility is impressive, as it can fly at a speed of 50 feet. However, the Insatiable Brood's Challenge Rating of 3 indicates that while it is a dangerous foe, it can be tested and potentially overcome by a well-coordinated group of adventurers. Notably, it is resistant to most damage types and several crowd-control conditions, making it a resilient adversary. </summary>
 
 <detail>

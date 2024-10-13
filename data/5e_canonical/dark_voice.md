@@ -1,6 +1,8 @@
 <MonsterName/>Dark Voice</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (chain mail)</AC>
+<HP/>91</HP>
 <summary>The Dark Voice is a medium humanoid creature aligned with neutral evil, effectively serving as a cunning and manipulative adversary in combat. With a solid armor class of 16 due to its chain mail and a significant pool of 91 hit points, it is notably resilient. Its primary strengths lie in its high charisma of 18, as well as its impressive abilities in persuasion and intimidation, making it a formidable foe in social interactions and conflicts alike. The creature's regeneration ability allows it to heal in dim light or darkness, enhancing its survivability, while its proficiency in both melee and ranged attacks enables it to deal considerable damage. However, its weakness lies in its sunlight sensitivity; when exposed to sunlight, it suffers disadvantages on attacks and perception checks. Overall, the Dark Voice is a potent enemy that thrives in low-light conditions, using its abilities to manipulate and frighten adversaries.</summary>
 
 <detail>

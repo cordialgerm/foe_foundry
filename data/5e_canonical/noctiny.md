@@ -1,6 +1,8 @@
 <MonsterName/>Noctiny</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (studded leather)</AC>
+<HP/>52</HP>
 <summary>The Noctiny is a medium-sized humanoid of neutral evil alignment, making it a cunning and unpredictable adversary in combat. With its notable roster of abilities, it serves as a formidable opponent, particularly in magical confrontations. The Noctiny features a good Armor Class of 13 and has 52 hit points, placing it in a solid position for resilience. Its primary strengths include Eldritch Weapons, which augment its damage output significantly, and Magic Resistance, granting it an advantage against spells. However, its lack of advanced skills or special senses might leave it vulnerable in certain scenarios. Overall, the Noctiny embodies a blend of potent offense, decent defense, and strategic magical advantages.</summary>
 
 <detail>

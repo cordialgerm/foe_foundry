@@ -1,6 +1,8 @@
 <MonsterName/>Son of Fenris</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>175</HP>
 <summary>The Son of Fenris is a formidable Huge monstrosity that embodies chaos and evil. With an impressive armor class of 17 and a substantial hit point pool of 175, it is designed to withstand considerable punishment in combat. Its challenge rating of 12 indicates that it is a significant threat to adventurers, offering 8,400 experience points upon defeat. The creature has powerful physical attributes, including a strength score of 26, which provides it with an exceptional +8 modifier, making it incredibly effective in melee combat. Additionally, its dexterity and constitution scores afford it good defensive and resilience capabilities. The Son of Fenris is armed with extensive special abilities, including immunity to various forms of damage and conditions, making it a robust opponent. However, its chaotic nature may also lead to unpredictable outcomes in battle.</summary>
 
 <detail>

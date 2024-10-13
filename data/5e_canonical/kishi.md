@@ -1,6 +1,8 @@
 <MonsterName/>Kishi</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>8</CR>
+<AC/>18</AC>
+<HP/>119</HP>
 <summary>The Kishi is a Medium-sized fiend characterized by its chaotic evil nature. As a formidable opponent, it boasts high armor class and hit points, making it resilient in combat. Its exceptional Dexterity and Charisma make the Kishi adept in both physical and magical confrontations. With a Challenge Rating of 8, it significantly endangers adventurers who underestimate its abilities. The creature is particularly dangerous due to its ability to deal both piercing and cold damage simultaneously with its attacks, alongside its robust magical resistances and skills in deception and performance, making it a cunning adversary. However, the Kishi's reliance on its magical abilities means that it may struggle against particularly powerful spellcasters.</summary>
 
 <detail>

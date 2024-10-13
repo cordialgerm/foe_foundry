@@ -1,6 +1,8 @@
 <MonsterName/>Ancient White Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>20</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>333</HP>
 <summary>The Ancient White Dragon is a savage and feral creature, with scales as cold and hard as ice. It rules the frozen tundras and glaciers, where it hunts anything unfortunate enough to cross its path. White Dragons are primal and instinct-driven, relying more on brute force than on cunning. Their breath weapon is a cone of icy cold that can freeze even the hardiest creatures in seconds. They are territorial and aggressive, making their lairs in massive ice caverns and jealously guarding their hoards. Ancient White Dragons are relentless predators, often toying with their prey before delivering a final, killing blow.</summary>
 
 <summary>The Ancient White Dragon is a gargantuan and formidable creature known for its mastery of icy elements and its terrifying presence on the battlefield. With an exceptionally high Armor Class of 20 and a massive pool of Hit Points totaling 370, this dragon possesses both durability and resilience, making it a significant challenge for adventurers. Its movement options are versatile, including walking, flying, and even burrowing through snow and ice, allowing it to navigate various terrains with ease. This dragon's offensive capabilities are impressive, including powerful physical attacks and devastating cold-based abilities. However, it has lower Dexterity, which could make it vulnerable to ranged attacks if not adequately protected. The Ancient White Dragon excels in controlling the battlefield, devastating foes with icy breath weapons and powerful spells, making it a notable threat in any encounter.</summary>

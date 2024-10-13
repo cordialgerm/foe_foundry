@@ -1,6 +1,8 @@
 <MonsterName/>Harpy, Plague</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Plague Harpy is a medium, neutral evil monstrosity that embodies the essence of disease and despair. With a challenge rating of 6, it represents a formidable opponent, boasting a considerable amount of hit points at 142 and a decent armor class of 15 due to its natural armor. Its key strengths lie in its ability to inflict disease upon its foes, particularly through its Virulence ability, which can spread harpy's plague among those who come too close. The harpy is also fairly agile, with a good Dexterity of 14, allowing for effective movement both on the ground and in the air, where it can fly at a speed of 60 feet. Its offensive capabilities are bolstered by strong melee and ranged attacks, making it a dangerous creature in combat. However, its relatively average intelligence and wisdom suggest that it may not be the most cunning adversary. </summary>
 
 <detail>

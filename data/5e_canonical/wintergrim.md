@@ -1,6 +1,8 @@
 <MonsterName/>Wintergrim</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (hide armor)</AC>
+<HP/>26</HP>
 <summary>The Wintergrim is a small fey creature characterized by its chaotic good alignment. It serves as a guardian of nature, embodying the playful yet fierce aspects of winter. With a challenge rating of 1/2, it holds an average power level for low-level adventurers, making it a notable opponent or ally. Its strengths lie in its high strength and constitution, providing it with solid resilience and good physical attack capabilities. However, it has a rather average Dexterity, making it less nimble than other creatures. The Wintergrim is equipped with some compelling abilities, including its unique rules that allow it to become enraged when its conduct rules are broken, bolstering its effectiveness in combat. It also has innate spellcasting abilities, granting it access to useful spells. While it possesses cold damage resistance and immunity to charmed conditions, it can be vulnerable to more powerful spells or damage types. </summary>
 
 <detail>

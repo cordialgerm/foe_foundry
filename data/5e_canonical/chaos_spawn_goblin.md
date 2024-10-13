@@ -1,6 +1,8 @@
 <MonsterName/>Chaos-Spawn Goblin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Chaos-Spawn Goblin is a small, humanoid creature that embodies the chaotic essence of evil. This goblin's cunning and agility make it a formidable foe, especially given its ability to sneak and evade attacks. With an average armor class of 13, it possesses a decent hit point pool of 22, providing it with some resilience in combat. Its strengths lie in its dexterity and skills in stealth, allowing it to execute ambushes effectively and avoid detection. However, its combat abilities are comparatively limited due to low strength and intelligence, making it less effective in direct confrontations. This creature can be quite annoying for adventurers, as its ability to disengage and hide offers it opportunities to escape or reposition during battle.</summary>
 
 <detail>

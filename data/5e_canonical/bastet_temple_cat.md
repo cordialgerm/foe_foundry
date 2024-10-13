@@ -1,6 +1,8 @@
 <MonsterName/>Bastet Temple Cat</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>40</HP>
 <summary>The Bastet Temple Cat is a small chaotic neutral monstrosity that serves as a unique companion and spellcaster in the realm of Dungeons & Dragons. With a solid Armor Class of 14 and 40 hit points, it is reasonably resilient, allowing it to engage in combat while also providing valuable support through its spellcasting abilities. Its Dexterity score of 19 grants it exceptional agility and stealth, making it an effective scout and ambusher. Notably, the Bastet Temple Cat is capable of charming opponents with its Fascinating Purr, incapacitating them and compelling them to approach it, while its Priestly Purr ability allows it to assist spellcasting clerics and paladins by imbuing it with their spells. However, lacking in Strength and Constitution means it is not particularly strong or tough, making it vulnerable to damage if it finds itself targeted directly in combat.</summary>
 
 <detail>

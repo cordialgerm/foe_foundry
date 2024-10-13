@@ -1,6 +1,8 @@
 <MonsterName/>Storm Spirit</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Storm Spirit is a medium elemental creature that embodies the forces of lightning and thunder. As a neutral entity, it serves as both a threat and a potential asset in encounters, particularly in environments where storms are prevalent. With an Armor Class of 14 and 22 hit points spread across 5d8, it is relatively frail but can deftly avoid attacks due to its ability to fly and hover. It has a Challenge Rating of 1/2, making it a moderately challenging opponent for lower-level adventurers. The Storm Spirit excels in close-range combat through its special abilities, dealing significant damage to those who come too close. However, its weaknesses lie in its low hit points, minimal physical capability, and lack of melee movement due to its ground speed being zero.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Sodwose</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>6</CR>
+<AC/>15</AC>
+<HP/>127</HP>
 <summary>The Sodwose is a Medium-sized, neutral evil plant creature characterized by its agility and cunning. With an Armor Class of 15 and a total of 127 hit points, it is a resilient opponent. The Sodwose excels in stealth and subterfuge, making it a potent ambush predator in grassland environments. Its Dexterity score of 21 (+5 modifier) allows for exceptional agility, while its Constitution score of 18 (+4 modifier) provides it with commendable durability. However, it is vulnerable to fire damage, which can severely weaken it. The Sodwose can use its camouflage to hide effectively in grasslands, employing psychological tactics to frighten intruders. Its special abilities and action-oriented attacks make it a façade of tranquility that can quickly turn hostile.</summary>
 
 <detail>

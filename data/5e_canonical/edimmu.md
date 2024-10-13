@@ -1,6 +1,8 @@
 <MonsterName/>Edimmu</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Edimmu is a medium undead creature with a chaotic evil alignment, presenting a significant threat on the battlefield due to its ability to sap the life force from opponents. It possesses a good Armor Class of 15, making it adept at avoiding attacks, and has a substantial pool of hit points totaling 75, which provides it with significant durability in combat situations. With a speed of 60 feet, it can maneuver well during encounters. The Edimmu is rated as a Challenge Rating of 4, which indicates that it is a moderate threat to parties of adventurers. It excels in combat with its high Dexterity, granting it a +4 modifier that results in good effectiveness for initiatives and ranged attacks. However, it has very poor Strength at -5, rendering it ineffective in melee combat, along with average Intelligence and Charisma scores, indicating it is not reliant on social interactions or intellectual challenges. The Edimmu has factors that make it resilient, such as immunities to necrotic and poison damage, and resistances to several elemental damages and nonmagical physical attacks. Overall, while it has weaknesses, its regenerative capabilities and unique movement make it a formidable adversary.</summary>
 
 <detail>

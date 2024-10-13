@@ -1,6 +1,8 @@
 <MonsterName/>Wight</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (studded leather)</AC>
+<HP/>45</HP>
 <summary>A Wight is an undead creature driven by hatred and malice, often serving dark powers or necromancers. Wights retain the intelligence they had in life but are twisted by death and the dark magic that animates them. They drain the life force from living creatures with their touch, creating new undead from those they slay. Wights are skilled combatants, often wielding weapons they carried in life, and they are immune to many effects that harm the living. Their ability to raise the dead makes them particularly dangerous, as they can quickly amass an army of undead servants.</summary>
 
 <summary>The Wight is a Medium undead creature typically found in dark and ominous locations. As an undead entity, it has the ability to drain the life force of its victims, thereby gaining strength and power. With an Armor Class of 15 and 45 hit points, the Wight is moderately resilient, making it a formidable foe for lower-level adventurers. Its attack abilities include both melee and ranged options, allowing it to adapt to various combat situations. However, the Wight is significantly hindered in sunlight, suffering disadvantages that may leave it vulnerable in well-lit areas. Its various resistances, including to cold and necrotic damage, further add to its defensive capabilities.</summary>

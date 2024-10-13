@@ -1,6 +1,8 @@
 <MonsterName/>Lymarien Swarm</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>90</HP>
 <summary>The Lymarien Swarm is a large fey creature known for its neutral good alignment. It occupies a challenging role on the battlefield, using its enchanting beauty and flight capabilities to disorient enemies while supporting allies. With a reasonable armor class of 14 and a substantial hit point total of 90, it can endure multiple strikes in combat. This creature is particularly effective in crowd control, utilizing a series of distracting abilities and spells, which can sway the tide of battle in favor of its companions. However, its strength in dexterity, indicated by a +4 modifier, is offset by low strength, giving it only average physical combat potential. With its swarm ability, it can maneuver flexibly through the battlefield, though it cannot regain health once engaged in combat.</summary>
 
 <detail>

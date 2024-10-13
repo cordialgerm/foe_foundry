@@ -1,6 +1,8 @@
 <MonsterName/>Blood Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>11</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>204</HP>
 <summary>The Blood Hag is a medium-sized fey creature embodying chaotic evil, making it a formidable and sinister presence in any campaign. With a robust armor class of 16 and exceptionally high hit points of 204, this creature can endure significant damage in battle. Its primary role is that of a combatant who specializes in grappling and draining life from her foes, leveraging her special abilities, such as Blood Sense and a variety of devastating melee and spell attacks. The Blood Hag excels with her high strength and constitution, represented by scores of 20 and 18, respectively, providing her with both offensive and defensive capabilities, as well as critical survivability. Despite her strengths, she has a weakness to radiant damage and can be overwhelmed by swift attacks if caught off-guard, particularly by characters that can negate her grapple capabilities.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Necrotech Thunderer</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Necrotech Thunderer is a massive, undead creature characterized by its formidable presence on the battlefield. With a neutral evil alignment, it utilizes its size and necromantic powers to create havoc, serving as a resilient frontline combatant due to its high hit points and defensive capabilities. The Necrotech Thunderer excels in destroying structures and dealing significant damage in combat, although its speed is limited. It has very high strength, making its melee attacks particularly devastating, but it is very slow and vulnerable to ranged and magical attacks, especially those that can bypass its resistances. Overall, it poses a serious threat to adventurers who are not adequately prepared to handle its powerful attacks and resilient undead nature.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Phoenixborn</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>33</HP>
 <summary>The Phoenixborn is a Medium humanoid creature that embodies the essence of fire and rebirth. It possesses a balance of melee and ranged capabilities, enhanced by its flight ability, making it versatile in combat. While its Armor Class is moderate at 13, it has a respectable total of 33 hit points, allowing it to sustain some damage in battles. The creature has a Challenge Rating of 1/2, indicating it is suitable for low-level encounters, offering 100 experience points upon defeat. Notably, the Phoenixborn is resistant to fire damage, which makes it formidable against enemies using fire-based attacks. Its special abilities give it a unique flavor, including the ability to heal itself when it is brought to the brink of death, giving it an air of resilience that can surprise unprepared adventurers.</summary>
 
 <detail>

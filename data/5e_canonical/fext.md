@@ -1,6 +1,8 @@
 <MonsterName/>Fext</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>17</AC>
+<HP/>77</HP>
 <summary>The Fext is a formidable Medium undead creature characterized by its powerful magic-infused weaponry and unsettling presence. With a challenge rating of 6, it poses a significant threat to adventurers, boasting high armor class and hit points, making it quite resilient in battle. The Fext’s key strengths lie in its exceptional Charisma, which enhances its defense and offensive capabilities, empowering its magical attacks to deal substantial damage. While it is immune to several conditions and resistant to nonmagical physical damage, its reliance on spell-based attacks over melee combat is noteworthy and opens potential vulnerabilities to specific forms of combat or strategic defenses.</summary>
 
 <detail>

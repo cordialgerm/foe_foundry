@@ -1,6 +1,8 @@
 <MonsterName/>Will-o-Wisp</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>19</AC>
+<HP/>22</HP>
 <summary>A Will-o'-Wisp is a small, floating orb of light that lures travelers into dangerous areas, such as swamps or bogs, where they meet their doom. Will-o'-Wisps are malevolent spirits, often feeding on the fear and despair of their victims. They are incredibly fast and elusive, able to turn invisible or dart away to avoid danger. Despite their small size, Will-o'-Wisps can deliver deadly shocks of electrical energy to those who get too close. They are often found haunting graveyards, marshes, or cursed lands, guiding the lost into deadly traps or ambushes.</summary>
 
 <summary>The Will-o-Wisp is a small undead creature known for its ethereal and mischievous nature. Floating through the air, it is often encountered in dark, eerie locations and can create a sense of dread among adventurers. It possesses a high Armor Class of 17, making it relatively difficult to hit, and it has 28 hit points, allowing it to survive several rounds of combat. With its ability to fly at a speed of 50 feet, it can evade attacks effectively and control the battlefield. The Will-o-Wisp's Challenge Rating of 2 indicates it's suitable for parties of adventurers with moderate experience. It has significant strengths, including strong dexterity and various immunities, but it is physically weak, with a strength score of just 2, contributing a very bad modifier. Notably, it has abilities that deal damage to those who come too close, encouraging a tactical engagement when faced by players.</summary>

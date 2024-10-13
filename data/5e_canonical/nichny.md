@@ -1,6 +1,8 @@
 <MonsterName/>Nichny</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Nichny is a medium-sized fey creature of neutral evil alignment, known for its cunning intelligence and magical abilities. It has an armor class of 17 due to its natural armor, making it difficult for enemies to hit. The Nichny possesses a significant pool of hit points, totaling 127, derived from 17d8 plus an additional 51, allowing it to endure a substantial amount of damage. With a challenge rating of 6, it is considered a formidable foe in battle, capable of inflicting and resisting various types of damage while manipulating luck in its favor. While it has notable weaknesses, such as vulnerability to radiant damage, its immunities and resistances allow it to thrive in combat and evade numerous threats.</summary>
 
 <detail>

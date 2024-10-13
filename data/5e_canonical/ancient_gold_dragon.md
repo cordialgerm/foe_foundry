@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Gold Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>546</HP>
 <summary>The Ancient Gold Dragon is a majestic and awe-inspiring creature, with scales that gleam like burnished gold. Its wings are massive, and its eyes shine with wisdom and benevolence. Gold Dragons are known for their kindness and sense of justice, often acting as protectors of the innocent and champions of good. Their lairs are typically found in high, secluded mountains, where they watch over the world below. They possess a powerful fire breath capable of reducing entire armies to ash, as well as a weakening gas that can sap the strength of their foes. Gold Dragons are highly intelligent, preferring to resolve conflicts through diplomacy whenever possible.</summary>
 
 <summary>The Ancient Gold Dragon is a gargantuan and powerful creature renowned for its regal presence and formidable combat abilities. With an impressive challenge rating of 26, it poses a significant threat to adventurers. Its high armor class of 22 and substantial hit points totaling 487 make it exceptionally durable in battle. The dragon possesses exceptional abilities in both offense and defense, including devastating breath weapons and a suite of spells that can shift the tide of combat. However, its reliance on legendary actions and its limited usage of certain abilities do present weaknesses. Overall, the Ancient Gold Dragon embodies both majesty and terror, serving as a fitting adversary for experienced adventuring parties.</summary>

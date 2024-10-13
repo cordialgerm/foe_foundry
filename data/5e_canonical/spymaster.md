@@ -1,6 +1,8 @@
 <MonsterName/>Spymaster</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>16</AC>
+<HP/>97</HP>
 <summary>The Spymaster is a cunning and skilled humanoid known for its stealth and deception, making it a formidable opponent in combat. Its challenge rating is 7, indicating that it poses a significant threat to lower-level adventurers. With an armor class of 16 and a robust 97 hit points, the Spymaster can withstand a fair amount of damage. While it has an average strength score of 10, its dexterity (16) allows for agile movement and precise attacks, making it very good at both evasion and stealth. However, its intelligence, wisdom, and charisma are all average, limiting its performance in some social and magical contexts. The Spymaster excels at dealing damage through surprise and deception, leveraging abilities that enhance its effectiveness in combat and allowing for strategic maneuvers.</summary>
 
 <detail>

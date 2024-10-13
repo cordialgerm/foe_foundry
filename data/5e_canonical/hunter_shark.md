@@ -1,6 +1,8 @@
 <MonsterName/>Hunter Shark</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>45</HP>
 <summary>A Hunter Shark is a large, predatory fish with powerful jaws lined with razor-sharp teeth. It is one of the ocean's most efficient killers, known for its incredible speed and keen sense of smell. Hunter Sharks can detect the scent of blood from miles away, relentlessly pursuing wounded prey. These creatures are solitary hunters, patrolling coastal waters or deep oceans in search of food. Their streamlined bodies allow them to ambush their prey with sudden bursts of speed, delivering devastating bites that can tear through flesh and bone.</summary>
 
 <summary>The Hunter Shark is a large beast particularly adapted to aquatic environments, possessing significant strengths in speed and physical power. With a challenge rating of 2, it presents a moderate threat to adventurers, especially in water-based encounters. The Hunter Shark excels in melee combat thanks to its high strength and formidable bite, capable of inflicting considerable damage. Its ability to breathe underwater allows it to operate freely in its natural habitat, diminishing its susceptibility to land-bound aggression. While its intelligence and charisma are notably poor, making it less strategic in battle and failing to engage in social interactions, it compensates with its physical capabilities and agility.</summary>

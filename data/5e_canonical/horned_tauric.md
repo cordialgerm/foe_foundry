@@ -1,6 +1,8 @@
 <MonsterName/>Horned Tauric</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>The Horned Tauric is a large fey creature that embodies the strength and agility of both horned beasts and fey magic. With a challenge rating of 2, it serves as a formidable opponent for adventurers, featuring a mix of powerful melee attacks and ranged capabilities. Its notable attributes include high strength and dexterity, making it capable of dealing significant damage swiftly. While its hit points are moderate, its ability to maneuver effectively in combat gives it the potential to evade counterattacks. The Horned Tauric's dual nature allows it to communicate in multiple languages, enhancing its interactions with other creatures, while its skills in nature, perception, and survival make it a competent tracker and scout in wilderness scenarios.</summary>
 
 <detail>

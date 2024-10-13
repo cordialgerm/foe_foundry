@@ -1,6 +1,8 @@
 <MonsterName/>Horde of Shadows</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>90</HP>
 <summary>The Horde of Shadows is a formidable undead creature classified as large in size. It has a significant number of hit points at 90, making it resilient in combat. Its strength lies in its ability to function as a cohesive mass of shadows that can overwhelm opponents through sheer numbers and strategic presence on the battlefield, particularly in dimly lit or dark environments. This creature is vulnerable to radiant damage, while being immune to necrotic and poison damage, alongside several conditions that thwart many attacks. It has a decent Dexterity score, enhancing its stealth capabilities, making it a tricky opponent to detect and fight. However, it suffers when exposed to sunlight, which imposes disadvantages on its attacks and ability checks. </summary>
 
 <detail>

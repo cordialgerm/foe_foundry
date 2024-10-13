@@ -1,6 +1,8 @@
 <MonsterName/>Werynax</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>114</HP>
 <summary>Werynax is a formidable Large Monstrosity within the Dungeons & Dragons universe, boasting remarkable resilience and a diverse range of attack options. With an Armor Class of 15, it possesses good defensive capabilities thanks to its natural armor. The creature has a high pool of Hit Points at 114, making it very durable in combat. Positioned with a Challenge Rating of 6, Werynax presents a significant challenge for adventurers. It excels in both melee and area damage, as well as having powerful special abilities that can control the battlefield. Despite its strengths, Werynax does not have the ability to communicate, which could limit its interactions in certain scenarios.</summary>
 
 <detail>

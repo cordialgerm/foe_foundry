@@ -1,6 +1,8 @@
 <MonsterName/>Fire Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (plate)</AC>
+<HP/>162</HP>
 <summary>A Fire Giant is a towering, muscular humanoid with coal-black skin and glowing red eyes, resembling living volcanoes. Clad in heavy, ornate armor, Fire Giants are known for their militaristic society and skill in blacksmithing, creating powerful weapons and armor. They live in volcanic regions or massive forges, where they craft weapons of war and command armies of lesser giants or humanoid slaves. Fire Giants are fearsome warriors, wielding enormous swords and hammers that they can swing with devastating force. They have a natural affinity for fire, able to withstand extreme heat and even summon flames in battle.</summary>
 
 <summary>The Fire Giant is a formidable Huge Giant known for its immense physical prowess and ability to wield fire with immunity to its damage. With a strong Armor Class of 18 and a significant pool of hit points totaling 162 (derived from rolling 13d12 and adding 78), it poses a considerable threat in battle, rated with a Challenge Rating of 11 equating to 7,200 experience points for defeating it. This creature’s exceptional Strength of 25 grants it a +7 modifier, making its melee attacks particularly devastating, while its Constitution of 22 ensures high durability in combat. However, it is notably vulnerable to cold damage, which can slow it down. The Fire Giant's range and area of effect, combined with its potential to knock opponents prone and push them away, make it an intimidating presence on the battlefield.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Alchemical Skunk</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>66</HP>
 <summary>The Alchemical Skunk is a small monstrosity known for its unique and mischievous nature, often found in adventures that require a touch of quirky unpredictability. With a challenge rating of 4, it poses an average threat to adventurers, utilizing its high Dexterity and stealth to remain elusive in combat. The skunk has a robust armor class of 15, thanks to its natural armor, and a decent amount of hit points at 66, which allows it to withstand a fair amount of damage. While it excels in magical resistance, it possesses average physical strength and charisma, making it primarily a tactical foe rather than a frontal attacker. Notably, the skunk can manipulate its surroundings and foes through a range of alchemical sprays, enhancing its role as a combat disruptor.</summary>
 
 <detail>

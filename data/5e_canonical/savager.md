@@ -1,6 +1,8 @@
 <MonsterName/>Savager</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Savager is a formidable large beast that embodies primal ferocity and relentless aggression, making it a dangerous adversary in combat. With a neutral evil alignment, it demonstrates ruthless behavior in pursuit of its goals. The Savager has impressive physical attributes, boasting high Strength and Constitution, which contribute to its devastating melee attacks and durability in battle. However, it is limited in Dexterity and Intelligence, which affects its speed and cunning. Noteworthy features include its ability to resist damage from nonmagical attacks, making it a tough opponent for less potent combatants, along with special abilities that enhance its attack potency and defensive measures. Overall, the Savager's power lies in its raw physicality and ability to inflict continuous damage while remaining resilient.</summary>
 
 <detail>

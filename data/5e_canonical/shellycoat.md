@@ -1,6 +1,8 @@
 <MonsterName/>Shellycoat</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Shellycoat is a Medium-sized fey creature that embodies the essence of neutrality mingled with a tinge of evil. It possesses the unique ability to thrive both in water and on land, making it versatile in various environments. With an Armor Class of 14, it has decent defenses, bolstered by its natural armor. The Shellycoat has a solid 52 hit points, derived from 7d8 rolled alongside a constitution bonus of +3, allowing it to withstand a moderate amount of damage. As a Challenge Rating 2 creature, it is relatively balanced for encounters, particularly against adventurers of low to mid-level. Among its notable features are its regeneration ability, which allows it to recover hit points over time, and its susceptibility to sunlight, which can petrify it if it remains in nonmagical sunlight for an extended period. Its combat abilities, combined with powerful special traits, make it a formidable opponent in water-heavy confrontations, while its weaknesses to fire and acid damage can be exploited by savvy players.</summary>
 
 <detail>

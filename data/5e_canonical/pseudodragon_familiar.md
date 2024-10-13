@@ -1,6 +1,8 @@
 <MonsterName/>Pseudodragon Familiar</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>7</HP>
 <summary>The Pseudodragon is a tiny, dragon-like creature known for its role as a magical familiar. It is agile and offers significant advantages to spellcasters by enhancing their magic resistance and providing telepathic communication. With a challenge rating of 1/4, it is relatively weak in direct combat, displaying only limited offensive capabilities and low hit points. Despite its size and frailty, the Pseudodragon's unique abilities, such as its telepathy and resistance to magic, make it a valuable companion in both reconnaissance and magic-related endeavors.</summary>
 
 <detail>

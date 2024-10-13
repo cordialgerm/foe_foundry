@@ -1,6 +1,8 @@
 <MonsterName/>Giant Pufferfish</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Giant Pufferfish is a small, unaligned beast that thrives in aquatic environments, notably utilizing its unique adaptations for both defense and offense in underwater combat. With a challenge rating of 2, it poses a moderate threat to low-level adventurers, relying on its ability to inflict damage from a distance while also delivering significant retaliation when provoked. The Creature's strengths lie in its impressive physical attributes, notably its strength and constitution, which allow it to withstand attacks and deal damage. However, it lacks intelligence and charisma, rendering it less effective in social interactions and strategic maneuvers. The Giant Pufferfish has a notable reliance on its environmental niche, as it can only breathe underwater and is immobile on land, limiting its overall versatility.</summary>
 
 <detail>

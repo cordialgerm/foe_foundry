@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Assassin</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>99</HP>
 <summary>The Clockwork Assassin is a versatile Medium Construct known for its efficiency in dealing damage and its ability to maneuver through various obstacles. With a Challenge Rating of 6, it poses a threat to adventurers, especially when it can take advantage of surprise attacks. The Clockwork Assassin has solid defenses, boasting an Armor Class of 16 and considerable Hit Points totaling 99, making it resilient against damage. However, it has a few weaknesses, particularly when faced with psychic damage, which hampers its combat capabilities. Its role primarily revolves around stealthy, surprise assaults and high mobility, being capable of climbing and walking at a speed of 30 feet.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Birgemon Seal</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>60</HP>
 <summary>The Birgemon Seal is a medium aberration that operates independently, presenting both a physical challenge and a unique environmental advantage in snow or ice. With an armor class of 12, it has average durability, complemented by a solid pool of 60 hit points, making it fairly resilient for its challenge rating of 2. The creature excels in underwater navigation with a swim speed of 60 feet, while its land speed is limited to 20 feet. Notably, the Birgemon Seal has moderate ability scores, particularly strong in Constitution and Dexterity, which bolster its survivability and agility in combat. Its primary weaknesses lie in its low Intelligence and Charisma, rendering it less effective in roles that rely on mental acuity or social interaction.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Mirager</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>78</HP>
 <summary>The Mirager is a neutral evil fey creature that embodies seduction and deception, making it a cunning opponent in any encounter. With a Challenge Rating of 3, it presents a moderate threat level, possessing 78 hit points and maintaining a good armor class of 13. While its physical strength is only average with a Strength score of 12, its Dexterity of 16 allows it to be nimble and evasive, providing good defenses and offensive capabilities. The Mirager possesses exceptional Charisma, indicated by a score of 19, which enhances its deceptive skills and ability to charm opponents. Notably, the Mirager has a variety of abilities that allow it to manipulate its foes and alter its appearance, making it particularly dangerous in social encounters and ambushes.</summary>
 
 <detail>

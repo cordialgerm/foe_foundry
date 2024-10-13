@@ -1,6 +1,8 @@
 <MonsterName/>Blood Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Blood Elemental is a formidable creature in the elemental category, characterized by its large size and unique connection to blood and vitality. With a challenge rating of 5, it poses a significant threat with its ability to grapple and drain the life force from adventurers. The Blood Elemental has an impressive amount of hit points at 95, making it quite resilient in combat. However, it is vulnerable to poison damage, which can significantly reduce its effectiveness. The elemental excels in close combat, utilizing its high Strength score of 16, while its Constitution score of 18 grants it excellent durability against many forms of damage. Its abilities allow it to manipulate and control the battlefield, using its liquid form to slip through narrow spaces and invade enemy territory. However, its intelligence and charisma scores are markedly low, making it poor at social interactions and strategy.</summary>
 
 <detail>

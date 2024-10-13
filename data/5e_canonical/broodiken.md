@@ -1,6 +1,8 @@
 <MonsterName/>Broodiken</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>44</HP>
 <summary>The Broodiken is a tiny construct creature characterized by its durability and specialized abilities, making it a challenging opponent for characters of low to moderate level. With a Challenge Rating of 1, it poses a moderate threat, particularly through its ability to deal consistent damage and remain largely unaffected by spells and other typical damage sources. One of its notable strengths lies in its high Constitution and impressive resistances, allowing it to withstand significant amounts of damage. However, it does have limitations in terms of its low Strength and Intelligence, and while its agility is decent, it primarily focuses on support and attachment rather than independent maneuverability. </summary>
 
 <detail>

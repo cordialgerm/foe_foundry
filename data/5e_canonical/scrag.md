@@ -1,6 +1,8 @@
 <MonsterName/>Scrag</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>84</HP>
 <summary>The Scrag is a formidable large giant known for its resilience and aquatic adaptability. With a robust armor class of 15 and 84 hit points, it presents a decent challenge to adventurers, particularly with its regenerative abilities and amphibious nature. The Scrag excels in combat not only through its physicality but also due to its ability to recover from damage quickly. However, it does have some weaknesses, notably its susceptibility to fire and acid damage, which can inhibit its regeneration. The creature’s challenge rating of 5 indicates that it is suitable for a party of mid-level adventurers, providing opportunities for strategic combat and potential for high-stakes interactions.</summary>
 
 <detail>

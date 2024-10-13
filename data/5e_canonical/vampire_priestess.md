@@ -1,6 +1,8 @@
 <MonsterName/>Vampire Priestess</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (chain mail)</AC>
+<HP/>105</HP>
 <summary>The Vampire Priestess is a formidable medium undead creature with a lawful evil alignment, designed to be a potent adversary in combat and a manipulator in social encounters. Possessing a significant challenge rating of 8, she boasts a well-rounded set of attributes and abilities that make her a versatile foe. With a high Wisdom score, she excels in spellcasting and can control the battlefield with her cleric spells. Her regenerative capabilities and ability to escape injury through mist form enhance her survivability, allowing her to evade defeat and launch counterattacks even when she seems vulnerable. However, she harbors critical weaknesses, such as hypersensitivity to sunlight and a reliance on specific conditions for her full range of abilities to function, presenting opportunities for strategic play by her enemies.</summary>
 
 <detail>

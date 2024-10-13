@@ -1,6 +1,8 @@
 <MonsterName/>Putrid Haunt</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>44</HP>
 <summary>The Putrid Haunt is a Medium-sized undead creature that embodies the essence of decay and malice. It is classified as Neutral Evil, suggesting a malevolent nature driven by a desire to inflict harm without moral considerations. The Putrid Haunt is particularly effective in swampy terrains, using its special abilities to hide and move through difficult environments easily. Its strengths lie in its high Strength score of 17, granting it a good melee attack. However, its Dexterity is notably low at 8, making it less effective at avoiding attacks. With a Challenge Rating of 2, it poses a moderate threat to adventurers, capable of delivering substantial damage through its physical attacks and its ability to summon vermin. On the downside, this creature’s low Constitution and Charisma scores limit its durability and social interactions, respectively.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Huecambra</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Huecambra is a large monstrosity that poses a significant threat in combat, with its formidable damage output and the ability to inflict debilitating curses. It has a strong defensive capability with an armor class of 17 and a substantial hit point total of 136, allowing it to withstand a considerable amount of damage. The creature excels in both aquatic and terrestrial environments, with a swimming speed of 30 feet and a walking speed of 40 feet. Its challenge rating of 8 indicates that it can provide a challenging encounter for mid-level adventurers. However, it has low intelligence and no associated languages, suggesting that it acts on instinct rather than strategy. Notably, it is immune to poison and thunder damage, and it is unaffected by being charmed, petrified, or poisoned.</summary>
 
 <detail>

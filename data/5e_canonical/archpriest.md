@@ -1,6 +1,8 @@
 <MonsterName/>Archpriest</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>16</CR>
+<AC/>20</AC>
+<HP/>150</HP>
 <summary>The Archpriest is a powerful Medium humanoid, known for its combination of martial prowess and potent magical abilities. With an exceptional Armor Class of 20 and a substantial pool of hit points totaling 150, the Archpriest is capable of enduring considerable damage while also providing substantial healing and support to its allies. This creature excels in both offensive and defensive roles, utilizing a mix of devastating spells and physical attacks to overwhelm opponents. However, it has some weaknesses, particularly in its Dexterity, which is average, making it less nimble than other combatants. As a challenge rating 16 creature, it poses a significant threat in battle, capable of dealing large amounts of damage while also aiding its allies with healing spells and buffs.</summary>
 
 <detail>

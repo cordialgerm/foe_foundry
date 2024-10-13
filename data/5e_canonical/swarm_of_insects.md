@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Insects</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>22</HP>
 <summary>A Swarm of Insects is a buzzing, crawling mass of small creatures such as beetles, ants, or wasps. These swarms overwhelm their prey with sheer numbers, biting and stinging relentlessly. In jungles, forests, or deserts, such swarms can strip vegetation or flesh in moments, leaving little behind. Swarms of Insects are difficult to combat due to their size and ability to move through small spaces. They can be particularly dangerous when provoked, with some swarms carrying venom or disease, adding to the threat they pose to adventurers or wildlife.</summary>
 
 <summary>The Swarm of Insects is a Medium beast that poses a unique challenge in combat by overwhelming opponents with its numbers. With an Armor Class of 12 and 22 hit points, its defenses are average, making it relatively easy to hit but allowing it to sustain some damage. As a creature with a Challenge Rating of 1/2, it is considered an entry-level threat that can provide 100 experience points. A notable feature of the swarm is its ability to occupy the space of other creatures, which can lead to tactical advantages. The swarm excels at dealing damage through its bites and venom, especially when it is at full strength, but it is limited by low strength and intelligence values, indicating that it is not particularly effective in physical confrontations beyond its bite attacks or in any situation that requires higher reasoning.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Swarm, Swamp Slirghs</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>3</CR>
+<AC/>10</AC>
+<HP/>66</HP>
 <summary>The Swarm of Swamp Slirghs is a large elemental creature that haunts wetlands and swamps. With a challenge rating of 3, it presents a moderate threat to adventurers, capable of dealing considerable poison damage while being relatively durable, given its 66 hit points. The Slirghs are adept at maneuvering through water and use their special abilities to teleport and confuse enemies, making them effective in combat situations, especially in aquatic environments. Their weaknesses include low armor class and moderate resistance to physical damage types, which can be exploited by disciplined attackers. They lack intelligence and charisma, making them fairly predictable in strategy and unpersuasive in social interactions.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Wasp</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>13</HP>
 <summary>The Giant Wasp is a fearsome insect the size of a large dog, with a sharp stinger capable of injecting potent venom. Found in forests, jungles, or underground nests, these creatures are territorial and aggressive, defending their hives with lethal precision. Giant Wasps can fly at high speeds and often attack in swarms, making them dangerous to any creature that ventures too close to their nest. Their venom can paralyze or severely injure their prey, and they use their stingers and mandibles to finish off any who fall victim to their attacks.</summary>
 
 <summary>The Giant Wasp is a medium-sized beast known for its agility and poisonous sting. With a moderate armor class of 12 and hit points totaling 18, it can withstand a few hits, but its real strength lies in its speed, with a fly speed of 50 feet allowing for rapid movement during combat. Although its Challenge Rating is only 1/2, indicating it is a lower-level threat, it compensates with powerful attacks and debilitating poison effects. It has average physical attributes but noteworthy dexterity, providing a good attack bonus and making it elusive in battle. However, it possesses very poor intelligence and charisma, which limits its utility in social situations. Its significant weakness is tied to its lack of durability; it can be dispatched relatively quickly if targeted effectively.</summary>

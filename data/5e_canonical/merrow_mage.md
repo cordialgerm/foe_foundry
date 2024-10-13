@@ -1,6 +1,8 @@
 <MonsterName/>Merrow Mage</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>The Merrow Mage is a large monstrosity that inhabits aquatic environments, blending the physicality of the merrow with arcane prowess. It possesses solid defensive capabilities with an Armor Class of 13 and a moderate pool of Hit Points totaling 45, which allows it to withstand several encounters. Its unique combination of amphibious respiration and swimming speed of 40 feet makes it superbly agile in water, often allowing the creature to ambush hapless adventurers. Weighing heavily on its strategic strengths, the Merrow Mage employs innate spellcasting to manipulate combat conditions, making it a challenging foe. While its Strength score is notably high, granting it good melee capabilities with attacks like its claws and harpoon, it does show weaknesses in Dexterity, rendering it average in avoiding ranged threats. The mage's ability to regenerate Hit Points alongside its spells makes it particularly resilient but it does rely on its Charisma for spellcasting efficacy.</summary>
 
 <detail>

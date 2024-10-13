@@ -1,6 +1,8 @@
 <MonsterName/>Gearforged Templar</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>6</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>71</HP>
 <summary>The Gearforged Templar is a Medium-sized constructed being that embodies the principles of order and law. It is classified as Lawful Neutral and stands out as a formidable guardian and combatant in any encounter. With an Armor Class of 18, it boasts a solid defensive capability alongside a substantial pool of hit points totaling 71, derived from rolling 11d8 plus a constitution modifier of 2. This makes it moderately resistant to damage due to its immunities, which include poison and psychic damage, as well as resistances to nonmagical bludgeoning, piercing, and slashing attacks. While it is a strong fighter, its Dexterity is low, resulting in a poor initiative and agility due to a -1 modifier in that attribute, which is considered bad. Additionally, its average intelligence and charisma scores mean it is neither particularly insightful nor persuasive.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Adult Boreal Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>17</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>212</HP>
 <summary>The Adult Boreal Dragon is a formidable creature in the Dungeons & Dragons universe, classified as a huge dragon with a chaotic neutral alignment. It boasts a significant Armor Class of 19 due to its natural armor and has an impressive pool of Hit Points totaling 212, making it a tough opponent in combat. The dragon's Challenge Rating of 17 indicates that it poses a serious threat, awarding 18,000 XP upon defeat. With its exceptionally high Strength score of 25 (+7), it can deal significant physical damage, while its good Constitution (23, +6) boosts its durability in battle. The dragon has average Dexterity (10, +0), making it relatively slow to dodge attacks. It possesses strong mental capabilities with a decent Intelligence score (15, +2), a good Wisdom score (17, +3), and a high Charisma score (16, +3), allowing it to engage effectively in social situations or manipulate opponents. Notable immunities and resistances include immunity to fire damage and resistance to cold damage, making it an especially challenging creature in icy environments.</summary>
 
 <detail>

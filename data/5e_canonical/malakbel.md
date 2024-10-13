@@ -1,6 +1,8 @@
 <MonsterName/>Malakbel</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>9</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>102</HP>
 <summary>Malakbel is a Medium-sized Fiend characterized by its Chaotic Evil alignment and formidable presence in combat. With an Armor Class of 14, it is moderately difficult to hit, but it compensates for this with a solid pool of 102 hit points, making it capable of sustaining considerable damage in battle. Its Challenge Rating of 9 indicates that it is a significant threat for mid-level adventurers, offering 5,000 experience points upon defeat. Malakbel's strengths lie in its strong Dexterity and Charisma, with modifiers of +3 and +5, respectively, indicating very good capabilities in those areas. Its abilities grant it resilience against various attacks and the power to deal substantial damage through both radiant and fire attacks. However, it is still susceptible to cold and lightning damage and can be injured by nonmagical attacks, which are only resisted. Notably, its Blistering Radiance lights up the battlefield, dealing consistent damage to nearby foes and dispelling lower-level darkness spells.</summary>
 
 <detail>

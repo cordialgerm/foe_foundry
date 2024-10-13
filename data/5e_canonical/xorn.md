@@ -1,6 +1,8 @@
 <MonsterName/>Xorn</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>73</HP>
 <summary>A Xorn is a strange, three-legged creature with a thick, rocky hide and a large, gaping mouth on top of its head. It has three arms ending in sharp claws and three eyes that allow it to see in all directions. Xorns are native to the Elemental Plane of Earth and are primarily interested in consuming gems, precious metals, and minerals. They can phase through solid earth and stone with ease, making them formidable in their native environment. Though generally neutral, Xorns can become aggressive if they sense a valuable treasure hoard nearby or if they are threatened.</summary>
 
 <summary>The Xorn is a Medium Elemental creature that serves as a highly skilled and resilient guardian of treasure within rocky environments. With an Armor Class of 19 and formidable hit points totaling 73, the Xorn is exceptionally durable, capable of withstanding significant damage before being defeated. Its burrowing ability allows it to navigate through earth and stone seamlessly, making it a versatile combatant in its favored terrain. The creature possesses a significant strength score of 18, which provides it with a good modifier for physical attacks, while its high Constitution score of 22 conveys its outstanding endurance. The Xorn's primary strengths lie in its ability to hide effectively within rocky terrains and its remarkable detection of valuable items through its Treasure Sense ability. However, it is limited in mobility, moving slowly at just 20 feet, which can make it vulnerable to ranged attacks. This particular creature poses a challenging encounter due to its damage resistances and unique actions that can disrupt character strategies.</summary>

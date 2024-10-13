@@ -1,6 +1,8 @@
 <MonsterName/>Sammael</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>104</HP>
 <summary>Sammael is a celestial being of medium size and neutral good alignment, serving as a powerful agent of divine will. With a challenge rating of 7, it poses a significant threat in combat while also offering support to allies through its impressive abilities. Sammael is exceptionally strong and wise, enabling it to manipulate the battlefield and impose lasting consequences on its foes. It possesses resistances to radiant damage and nonmagical physical attacks, along with several immunities to conditions that hinder other creatures. However, its effectiveness is somewhat diminished by average dexterity and intelligence scores, which can limit its agility and cleverness in more complex scenarios.</summary>
 
 <detail>

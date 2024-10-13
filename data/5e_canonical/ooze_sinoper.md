@@ -1,6 +1,8 @@
 <MonsterName/>Ooze, Sinoper</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>9</CR>
+<AC/>7</AC>
+<HP/>170</HP>
 <summary>The Sinoper Ooze is a formidable medium-sized ooze that serves as a unique threat in combat scenarios. With a high challenge rating of 9, it possesses significant hit points totaling 170, making it a durable opponent. This creature has an exceptional Strength score of 21, granting it a strong melee presence, while its Constitution of 19 ensures it can withstand considerable damage. The Sinoper Ooze's Dexterity is low at 5, resulting in very poor mobility, yet it compensates with climbing abilities and the advantage of moving through tight spaces without difficulty due to its Amorphous nature. It is unaligned, meaning it does not adhere to moral constraints, allowing it to act unpredictably. Notably resistant to various damage types, including acid, cold, fire, and poison, it also enjoys immunities to several conditions, making it difficult to combat effectively.</summary>
 
 <detail>

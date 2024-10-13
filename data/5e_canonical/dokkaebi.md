@@ -1,6 +1,8 @@
 <MonsterName/>Dokkaebi</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>78</HP>
 <summary>The Dokkaebi is a medium-sized fey creature that embodies chaotic neutrality or goodness, often acting as mischievous tricksters in the world. With a decent blend of melee attack capabilities and unique magical abilities, the Dokkaebi serves as an intriguing opponent or ally in various adventures. Its strengths lie in its decent hit points and advantages in grappling, thanks to its special abilities, while its weaknesses include a moderately low Armor Class and an average skill in perception. Overall, the Dokkaebi is a playful and elusive creature, capable of altering the course of encounters through its invisibility and trickster nature.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Shadow Skeleton is a medium undead creature with a neutral evil alignment, created from the remnants of a being that once lived. It serves as a formidable enemy in combat, relying on its agility and a mix of melee and ranged attacks to confound and weaken foes. With an Armor Class of 13 and Hit Points totaling 52, this creature demonstrates strong resilience in battle, augmented by its immunities to poison damage and several resistances, including fire, piercing, and slashing. The Shadow Skeleton possesses average physical strength but excels in Dexterity, enabling it to evade attacks effectively while delivering swift strikes. Notably, its actions can inflict significant damage while imposing debilitating effects on its targets.</summary>
 
 <detail>

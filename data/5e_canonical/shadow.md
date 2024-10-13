@@ -1,6 +1,8 @@
 <MonsterName/>Shadow</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>16</HP>
 <summary>A Shadow is an undead entity formed from the darkness and negative energy, often the remnant of a corrupted soul. Shadows are insubstantial creatures that lurk in dark places, attacking living creatures to drain their strength and vitality. They are difficult to fight, as normal weapons pass through their shadowy forms with little effect. Shadows can slip through cracks and hide in the darkness, waiting for the right moment to strike. They are cold, malevolent beings driven by a need to consume the living, and their touch saps the life from those they attack.</summary>
 
 <summary>The Shadow is a Medium Undead creature known for its stealth and ability to instill fear in its foes. With a Challenge Rating of 1, it presents a moderate threat to adventurers and relies on its agility and the element of surprise to inflict damage. The Shadow has a moderate Armor Class of 12, making it reasonably difficult to hit, and it possesses a modest pool of Hit Points totaling 18. Its primary strength lies in its agility, as indicated by a Dexterity score of 14, giving it a good modifier of +2 that enhances its stealth capabilities. The creature is vulnerable to radiant damage but is immune to necrotic and poison damage, offering a solid defense against many types of attacks. While the Shadow can be effective in combat, it has a significant downside in the presence of sunlight, which hampers its abilities considerably.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Shukankor</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>115</HP>
 <summary>The Shukankor is a formidable and chaotic evil aberration steeped in the depths of the darkest parts of the multiverse. This creature possesses immense physical power and resilience, making it a dangerous opponent in combat. With a high Armor Class and substantial hit points, it can withstand considerable damage while dealing devastating blows to its enemies. Its most notable characteristics include the ability to duplicate itself, creating chaos in battle, and the capacity to communicate telepathically with its replicas. Despite its strengths, the Shukankor has weaknesses in its low Intelligence and Charisma, making it less effective in certain social interactions and strategies that rely on wit or persuasion.</summary>
 
 <detail>

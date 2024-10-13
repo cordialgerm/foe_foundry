@@ -1,6 +1,8 @@
 <MonsterName/>Cockatrice</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>27</HP>
 <summary>The Cockatrice is a small, dragon-like creature with the wings of a bat, the body of a chicken, and a long, scaly tail. Despite its somewhat comical appearance, the Cockatrice is highly dangerous due to its ability to petrify creatures with a single peck. Its stone-turning gaze and bite can leave unsuspecting creatures as lifeless statues, frozen in mid-motion. Cockatrices are often found in caves, forests, or swamps, where they can stalk small prey or ambush larger creatures. Though they are not particularly intelligent or strong, their petrifying abilities make them a feared encounter.</summary>
 
 <summary>The Cockatrice is a small monstrosity known for its deadly bite that has the potential to petrify its victims. With a challenge rating of 1/2, it poses a moderate threat to lower-level adventurers but is not without its weaknesses. Its low Armor Class of 12 and modest Hit Points of 27 means it can be taken down relatively easily by characters with average to good attack rolls. The Cockatrice can fly, which grants it an advantage in mobility compared to many ground-based foes. However, its low Strength score makes it less effective in melee combat, while its Intelligence is poor, limiting its tactical choices. The ability to petrify opponents adds a level of danger that can create significant challenges if players are unprepared.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Loxoda</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Loxoda is a huge monstrosity characterized by its neutral evil alignment. This creature serves as a formidable opponent in combat, boasting a robust combination of high hit points and solid attack options. With an Armor Class of 13, the Loxoda can sustain a decent amount of damage before being overwhelmed. Its challenge rating of 6 makes it a dangerous encounter for adventurers, yielding 2,300 experience points upon defeat. The Loxoda excels in both strength and constitution, making it a powerful physical combatant, while its decent wisdom allows for practical survival instincts. However, it has lower flexibility and intelligence, affecting its ability to interact and strategize beyond brute force.</summary>
 
 <detail>

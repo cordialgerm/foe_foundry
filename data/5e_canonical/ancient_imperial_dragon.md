@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Imperial Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>26</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>546</HP>
 <summary>The Ancient Imperial Dragon is a gargantuan, neutral dragon known for its overwhelming power and mastery of nature. It boasts formidable physical prowess, exceptional defensive capabilities, and unique magical abilities. With an impressive Armor Class of 22 due to its natural armor, the dragon proves difficult to hit. The dragon's massive pool of hit points, totaling 546, provides it with substantial resilience in battle. Its mobility is remarkable, with a walking speed of 40 feet, swimming speed of 40 feet, and flying speed of 80 feet, allowing it to maneuver effectively in diverse environments. The Ancient Imperial Dragon's attributes are exceptionally high, particularly its Strength at 30, making its physical attacks devastating. It is also capable of charming opponents and has the ability to transform its appearance, providing it with versatility in combat and social interactions.</summary>
 
 <detail>

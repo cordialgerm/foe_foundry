@@ -1,6 +1,8 @@
 <MonsterName/>Manticore</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>68</HP>
 <summary>A Manticore is a fearsome predator with the body of a lion, the wings of a bat, and a human-like face with a mouth full of sharp teeth. Its tail is covered in barbed spikes, which it can fling at enemies with deadly accuracy. Manticores are cunning hunters, often stalking their prey from the air before swooping down to attack. They are territorial and aggressive, attacking anything that enters their domain. Manticores are known for their cruelty and hunger for human flesh, making them feared by travelers and adventurers alike. They often make their lairs in mountains or remote wilderness areas.</summary>
 
 <summary>The Manticore is a large monstrosity known for its fearsome appearance and abilities, making it a formidable opponent in combat. With an armor class of 14 and hit points totaling 68, it possesses good resilience in battle, allowing it to withstand several attacks. The creature's speed capabilities are noteworthy, as it can walk 30 feet and fly 50 feet, giving it significant mobility on the battlefield. Rated at a challenge level of 3, it offers moderate experience points of 700 XP, making it suitable for a party of adventurers seeking a challenging encounter. The Manticore has a strong physical presence with high strength (16) and constitution (16), along with dexterity (14), allowing it both offensive and defensive capabilities. However, it has low intelligence (8) and charisma (8), which limits its interactions and magical abilities. The Manticore's multiattack feature allows it to strike multiple times in a single turn, and it has several unique actions, including a volley of tail spikes, enhancing its role as a ranged attacker.</summary>

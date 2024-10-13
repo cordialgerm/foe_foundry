@@ -1,6 +1,8 @@
 <MonsterName/>Minor Malleable</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>32</HP>
 <summary>The Minor Malleable is a Medium aberration characterized by its chaotic evil nature. Renowned for its shapeshifting abilities, this creature embodies amorphous features, allowing it to navigate through tight spaces and adapt its form at will. With an Armor Class of 11, it is relatively easy to hit, but it compensates for this vulnerability with hit points totaling 32, derived from 5d8 plus 10. Due to its unique traits, the Minor Malleable can absorb psychic damage rather than take it, which significantly enhances its resilience against psychic attacks. Although it boasts a good Strength score of 16, making it physically capable, it has a very bad Dexterity rating of 8, indicating it struggles with agility and finesse. The Minor Malleable's ability to work in conjunction with other versions of itself to form larger entities adds a layer of complexity to encounters, ensuring that players must strategize carefully to overcome them.</summary>
 
 <detail>

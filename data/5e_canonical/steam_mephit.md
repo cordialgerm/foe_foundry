@@ -1,6 +1,8 @@
 <MonsterName/>Steam Mephit</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>21</HP>
 <summary>A Steam Mephit is a small, elemental creature composed of steam and hot vapor. Mischievous and sly, Steam Mephits are often found near geothermal vents, hot springs, or volcanic areas. They can exhale scalding steam to burn their enemies and create thick clouds of mist to obscure themselves from view. While physically weak, their ability to fly and control steam makes them tricky opponents. Steam Mephits are fond of causing chaos and confusion, often working alongside other elemental creatures or serving more powerful masters who dwell in hot or volcanic regions.</summary>
 
 <summary>The Steam Mephit is a small elemental creature that embodies the essence of steam and fire, making it a unique foe in a Dungeons & Dragons game. With a challenge rating of 1/4, it is considered a low-level opponent and offers an encounter that is manageable for beginner groups. Its primary strengths lie in its ability to deal fire damage and its resilience to certain types of damage, as it is immune to fire and poison. However, its low hit points and weak physical attributes make it susceptible to being easily overpowered in combat. Notably, the Steam Mephit can explode in a burst of steam upon its defeat, dealing damage to nearby foes and providing a final burst of challenge before it is vanquished.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Qumdaq</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>18</HP>
 <summary>The Qumdaq is a small elemental creature that embodies the essence of sand and earth. It is considered neutral in alignment, making it less likely to take sides in conflicts. With a Challenge Rating of 1/4, it is relatively low-power compared to other creatures, but it possesses unique abilities that allow it to disrupt foes and support its allies effectively. Its strengths lie in its ability to manipulate its environment through burrowing and its capacity to enhance its allies' effectiveness in combat. However, it has low hit points, which makes it vulnerable if not utilized strategically. </summary>
 
 <detail>

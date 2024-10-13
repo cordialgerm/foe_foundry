@@ -1,6 +1,8 @@
 <MonsterName/>Scorpionfolk Imperator</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>52</HP>
 <summary>The Scorpionfolk Imperator is a formidable Large monstrosity that serves as both a spellcaster and a melee combatant. With a decent Armor Class of 15 and 52 hit points, it has respectable durability for its Challenge Rating of 5, making it a significant threat in combat. Scorpionfolk Imperators exhibit a blend of magical prowess and physical capabilities, possessing a range of spells and attacks that allow them to deal damage, control the battlefield, and heal their allies. They have strong Intelligence, contributing to their spellcasting ability, although their Wisdom and Charisma are average. One notable aspect of the Scorpionfolk Imperator is its ability to grapple opponents with its claws, giving it tactical advantages in combat.</summary>
 
 <detail>

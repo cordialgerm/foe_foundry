@@ -1,6 +1,8 @@
 <MonsterName/>Thuellai</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>12</CR>
+<AC/>17</AC>
+<HP/>161</HP>
 <summary>Thuellai is a formidable entity hailing from the elemental planes, classified as a huge elemental creature with a chaotic neutral alignment. It is known for its immense speed and resilience in battles, able to traverse the battlefield at an extraordinary 100 feet per turn. With an Armor Class of 17 and a substantial pool of 161 hit points, Thuellai poses a significant challenge, rated at a Challenge Rating of 12, translating to 8,400 experience points for overcoming it. Its combat prowess is greatly amplified by high strength and dexterity scores, making its physical attacks highly effective. Administratively, Thuellai benefits from resistances to several damage types and immunities to various conditions that would otherwise hinder its performance. Flame-based attacks are notably less effective against it due to its vulnerability to fire. </summary>
 
 <detail>

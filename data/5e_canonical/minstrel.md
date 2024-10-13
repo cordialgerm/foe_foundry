@@ -1,6 +1,8 @@
 <MonsterName/>Minstrel</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>15</AC>
+<HP/>32</HP>
 <summary>The Minstrel is a Medium humanoid creature that serves as a versatile spellcaster and support character in combat. With a strong emphasis on Charisma, the Minstrel possesses exceptional skills in deception, performance, and persuasion, making them an effective manipulator both in social encounters and battle. With Armor Class of 15 and Hit Points totaling 32 (derived from rolling 5d8 and adding 10), the Minstrel is well-defended, though their average Constitution score indicates they are somewhat fragile. The Minstrel's Dexterity of 16 (+3) allows for good nimbleness in combat, while their access to a range of spells provides them with the ability to control and influence the battlefield. The Minstrel has a Challenge Rating of 2, making them a moderate threat to low-level adventurers. </summary>
 
 <detail>

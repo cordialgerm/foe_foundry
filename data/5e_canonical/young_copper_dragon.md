@@ -1,6 +1,8 @@
 <MonsterName/>Young Copper Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>119</HP>
 <summary>A Young Copper Dragon is a playful and quick-witted creature, known for its love of riddles, jokes, and pranks. Its copper-colored scales gleam in the sunlight, and its breath weapon can either create acid or a debilitating slowing gas. Young Copper Dragons are typically found in hilly or mountainous regions, where they enjoy playing tricks on travelers and collecting treasure. Although mischievous, they are generally good-natured and prefer to avoid violence, using their wit and agility to outmaneuver opponents. They defend their hoard with tenacity but always try to resolve conflicts with cleverness before resorting to combat.</summary>
 
 <summary>The Young Copper Dragon is a large and powerful dragon known for its cunning and playful demeanor. It has a strong presence in combat, capable of dealing substantial damage with its physical attacks and breath weapons. With an impressive Armor Class of 17 and a total of 144 hit points, this dragon is relatively durable and can withstand significant amounts of damage. It is especially dangerous at high altitudes, possessing excellent flying capabilities. However, it has average Dexterity, which makes it slightly less agile compared to other creatures. The Young Copper Dragon excels in stealth in mountainous environments, thanks to its special ability, "Flow Within the Mountain." In terms of magical capabilities, it can cast a variety of spells, enhancing its utility beyond just physical attacks. </summary>

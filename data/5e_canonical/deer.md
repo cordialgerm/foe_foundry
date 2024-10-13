@@ -1,6 +1,8 @@
 <MonsterName/>Deer</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>13</AC>
+<HP/>4</HP>
 <summary>A Deer is a graceful, herbivorous creature often found in forests, grasslands, or near freshwater sources. It has slender legs, a sleek body, and typically sports a brown coat with white markings. Male deer, known as stags or bucks, may have impressive antlers, which they use during the mating season to compete with rivals. Deer are highly alert and skittish, relying on their speed and agility to escape predators. They are peaceful animals that forage on grasses, leaves, and shrubs, contributing to the natural balance of their environment.</summary>
 
 <summary>The deer is a Medium beast known for its agility and keen senses. With an Armor Class of 13, it has a moderate level of protection, making it somewhat difficult to hit in combat. The creature has 4 hit points, which signifies its fragility in battle; a single successful attack from many adversaries could take it down. It boasts a remarkable walking speed of 50 feet, allowing it to maneuver quickly on the battlefield. The challenge rating of 0 indicates that the deer poses negligible difficulty for adventurers, making it suitable for low-level encounters or as a target for tracking and hunting. Key strengths of the deer include its exceptional Dexterity, which contributes to its swift movements and enhanced ability to avoid danger, as well as its keen sense of smell, which allows it to detect threats from a distance. However, its overall combat capabilities are limited due to its low Strength and poor mental attributes.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Flea</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Giant Flea is a small, beastly creature that poses a unique challenge in combat due to its ability to attach to its prey and drain their life force. With a challenge rating of 1/4, it is relatively easy to defeat, though its capacity to cause significant ongoing damage through blood loss can be troubling for unsuspecting adventurers. It is agile, able to climb and leap impressively, though it lacks intelligence and charisma, making it a straightforward opponent that relies on its physical abilities and senses.</summary>
 
 <detail>

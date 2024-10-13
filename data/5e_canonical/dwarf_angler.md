@@ -1,6 +1,8 @@
 <MonsterName/>Dwarf, Angler</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Dwarf Angler is a medium humanoid creature with a neutral evil alignment that embodies a cunning and treacherous demeanor. This creature has a challenge rating of 4, allowing it to pose a significant threat to adventurers. With a total of 65 hit points, it has a solid foundation for sustaining damage in battle. One of its notable strengths is its ability to manipulate light, using it to charm and incapacitate foes, while also possessing decent physical capabilities. However, it has weaknesses in its lower Dexterity and Charisma scores, which can impact its agility and social interactions. The Dwarf Angler thrives in rocky underground terrains, utilizing camouflage to gain advantages in stealth, making it a formidable ambusher in its preferred environment.</summary>
 
 <detail>

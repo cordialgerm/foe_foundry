@@ -1,6 +1,8 @@
 <MonsterName/>Isonade</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>14</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>222</HP>
 <summary>The Isonade is a gargantuan monstrosity of chaotic neutral alignment, known for its immense size and terrifying presence in aquatic environments. With an impressive armor class of 18 and a substantial pool of hit points totaling 222, it is a formidable opponent. Its notable strengths include powerful physical attacks augmented by a high Strength score of 30, allowing it to deal immense damage and even swallow smaller creatures. The Isonade can manipulate weather conditions in its vicinity while exhibiting significant magical resistance. However, it has a low Intelligence and Charisma, which limits its social interactions and strategic maneuvering in complex scenarios. With a Challenge Rating of 14, it poses a serious threat to adventurers who encounter it, especially in watery domains.</summary>
 
 <detail>

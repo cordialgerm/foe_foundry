@@ -1,6 +1,8 @@
 <MonsterName/>Wendigo</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>11</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Wendigo is a Medium monstrosity characterized by its chaotic evil alignment and fearsome abilities. Operating at a Challenge Rating of 11, it presents a significant threat to adventurers with its high hit points, strong melee attacks, and devastating magical abilities. The Wendigo possesses a high Armor Class of 16, allowing it to withstand considerable damage, and its immunities and resistances provide it with formidable defense against common forms of attack. Notably, its Aura of Starvation can incapacitate multiple foes at once, creating opportunities for it to strike with its powerful claw and bite attacks. However, its intelligence and charisma scores are relatively low, potentially limiting its effectiveness in more strategic roles or social encounters.</summary>
 
 <detail>

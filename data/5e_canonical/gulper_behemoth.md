@@ -1,6 +1,8 @@
 <MonsterName/>Gulper Behemoth</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>188</HP>
 <summary>The Gulper Behemoth is a gargantuan monstrosity, primarily characterized by its immense size and aquatic nature, making it a formidable adversary in water-based environments. With an Armor Class of 16 and a substantial pool of 188 hit points, it can absorb a significant amount of damage before being incapacitated. This creature boasts impressive physical strength with a Strength score of 20, allowing it to inflict considerable damage and excel in grappling opponents. However, it is hampered by poor Dexterity and Intelligence scores, resulting in average agility and tactical awareness. The Gulper Behemoth can be vulnerable to piercing damage, and while it has resistances to acid and thunder damage and immunity to being blinded, it is unable to attack effectively when deafened. Overall, its strengths lie in its raw power and its ability to control the battlefield through grappling, area damage, and stunning effects, though its limitations in mobility and environmental adaptability may introduce weaknesses in combat.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Roachling Skirmisher</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>21</HP>
 <summary>The Roachling Skirmisher is a small humanoid creature with a chaotic neutral alignment, often characterized by its agility and tricky nature. It has an Armor Class of 13, making it somewhat resilient, along with 21 hit points derived from rolling six six-sided dice, or 6d6. This creature has a walking speed of 25 feet and presents a challenge rating of 1/4, which means it is considered a low-level opponent, typically yielding 50 experience points when defeated. The Roachling Skirmisher excels in Dexterity-related tasks, reflected by its good Dexterity score of 14, which grants it a +2 modifier. This modifier allows the Roachling to effectively evade attacks and perform Acrobatics and Stealth maneuvers with a total bonus of +4 and +6 respectively, showcasing its exceptional natural ability to remain hidden and agile. However, its low Wisdom and Charisma scores of 9 and 8 respectively are indicative of its bad performance in social interactions and perception-based tasks.</summary>
 
 <detail>

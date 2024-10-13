@@ -1,6 +1,8 @@
 <MonsterName/>Kobold Spellclerk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>21</HP>
 <summary>The Kobold Spellclerk is a small humanoid creature that embodies a unique blend of cunning and magical prowess. With a lawful neutral alignment, it operates based on logic and reason, often serving as a crafty supporter within a group. The Spellclerk stands out due to its ability to cast spells and utilize tactical advantages gained through teamwork. It has some notable strengths, such as its proficiency in spellcasting and the ability to maneuver effectively in combat, making it a valuable ally. However, the Spellclerk's weaknesses lie in its low physical strength and sensitivity to sunlight, which can significantly impair its performance in certain environments.</summary>
 
 <detail>

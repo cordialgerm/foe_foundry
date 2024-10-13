@@ -1,6 +1,8 @@
 <MonsterName/>Darakhul Captain</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>165</HP>
 <summary>The Darakhul Captain is a formidable Medium undead creature that embodies the epitome of tactical malevolence. With a lawful evil alignment, it serves as a master manipulator and fierce combatant on the battlefield. The captain boasts a high armor class of 16, thanks to its breastplate, and an impressive pool of hit points totaling 165, granting it remarkable durability. Its challenge rating of 9 implies that it poses a significant threat to adventurers, rewarding foes with 5,000 experience points upon defeat. Notably, the Darakhul Captain wields a range of abilities that make it dangerous both in melee and at range, while its special features enhance its combat effectiveness and leadership role in undead hordes. However, its susceptibility to sunlight reduces its effectiveness in direct light, making it vulnerable in certain environments.</summary>
 
 <detail>

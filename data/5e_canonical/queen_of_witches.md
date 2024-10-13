@@ -1,6 +1,8 @@
 <MonsterName/>Queen of Witches</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>17</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>218</HP>
 <summary>The Queen of Witches is a formidable Large fey creature characterized by her magical prowess and ability to manipulate the battlefield. She possesses a strong combination of offensive capabilities and defensive strategies that make her a significant challenge for adventurers. With a high Armor Class of 18 and a substantial pool of Hit Points totaling 218, she is resilient in combat. Her Challenge Rating of 17 reflects her proficiency in both direct confrontations and magical engagements, earning her 18,000 experience points upon defeat. Notably, she has exceptional Charisma and Intelligence, allowing her to excel in spellcasting and social interactions, while her resistance to various damage types and conditions enhances her survivability.</summary>
 
 <detail>

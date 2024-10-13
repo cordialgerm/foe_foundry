@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Servant</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>22</HP>
 <summary>The Clockwork Servant is a Medium Construct with an unaligned nature, making it a versatile helper rather than a combat-focused creature. With a modest armor class of 11 and 22 hit points, it is not particularly durable, but its strengths lie in its ability to assist characters and its immunity to a variety of detrimental effects, making it a reliable ally in non-combat scenarios. The servant's challenge rating of 1/8 indicates that it is a low-level threat, providing only 25 experience points upon defeat. </summary>
 
 <detail>

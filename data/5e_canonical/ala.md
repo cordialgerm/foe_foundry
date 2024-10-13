@@ -1,6 +1,8 @@
 <MonsterName/>Ala</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Ala is a medium-sized Fey creature classified as chaotic evil, presenting a formidable threat in combat encounters. With a high Armor Class of 17 and a substantial pool of 127 hit points, it is well-equipped to endure assaults from adventurers. The Ala's exceptional Strength of 20 allows it to deliver powerful melee attacks, complemented by its ability to fly and evade attacks with its Flyby ability, adding to its strategic mobility in battle. Notably, the creature is immune to lightning, poison, and thunder damage, making it particularly resilient against certain types of magical and physical attacks. However, its low Charisma score of 8 indicates it may struggle with social interactions and certain charm effects. </summary>
 
 <detail>

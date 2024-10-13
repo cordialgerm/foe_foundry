@@ -1,6 +1,8 @@
 <MonsterName/>Quagga</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (shield)</AC>
+<HP/>84</HP>
 <summary>The Quagga is a medium-sized monstrosity that embodies a unique blend of agility and ferocity, making it a formidable opponent on the battlefield. With a solid armor class of 16 when utilizing its shield, it boasts 84 hit points, resulting in good durability for its challenge rating of 4, which translates to a threat level capable of providing a meaningful challenge for low to mid-level adventuring parties. The Quagga excels in speed with a walking speed of 50 feet, allowing it to quickly close the gap with foes or retreat as needed. Its impressive Dexterity score of 18 grants it a good initiative, making it effective at avoiding damage and striking first. However, its intelligence score of 9 indicates below-average cognitive abilities, which may affect its decision-making in complex situations. Notably, its special abilities, which include keen senses and tactical advantages when fighting alongside allies, enhance its combat prowess, while also requiring strategic positioning on the part of both the Quagga and its allies.</summary>
 
 <detail>

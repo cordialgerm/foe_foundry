@@ -1,6 +1,8 @@
 <MonsterName/>Gnoll Pack Leader</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>45</HP>
 <summary>The Gnoll Pack Leader is a Medium humanoid characterized by its role as a tactical and aggressive combatant. With a decent Armor Class of 14 and 45 hit points, this creature can sustain a moderate amount of damage during encounters. It thrives in combat situations that leverage teamwork due to its special ability called Pack Tactics, which enhances its offensive capabilities when allies are near. The Pack Leader strikes a balance between offensive prowess and strategic positioning, yet it has a few weaknesses, particularly with a low Wisdom score and a modest challenge rating of 2. This implies that while it can pose a threat when supported by allies, it may struggle against more powerful foes alone.</summary>
 
 <detail>

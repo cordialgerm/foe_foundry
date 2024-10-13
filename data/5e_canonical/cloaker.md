@@ -1,6 +1,8 @@
 <MonsterName/>Cloaker</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>78</HP>
 <summary>A Cloaker is a bizarre and terrifying creature that resembles a large, dark manta ray with long, whip-like tails. It often lurks in the shadows or hangs from ceilings, waiting to ambush its prey. When it strikes, the Cloaker wraps itself around its target, enveloping them in its leathery wings and suffocating them. It can also emit bone-chilling moans that disorient and terrify its victims. Cloakers are highly intelligent, and they often work in coordination with other dark-dwelling creatures, preying on unsuspecting adventurers who wander too deep into the caverns and ruins where they reside.</summary>
 
 <summary>The Cloaker is a large aberration that serves as both a stealthy combatant and a cunning deceiver in encounters. It possesses a challenging combination of durability, mobility, and diverse attacks, making it a formidable foe. With an Armor Class of 13 and 97 hit points, it showcases good resilience. The Cloaker can walk at 10 feet and fly at 50 feet, allowing it to effectively engage or evade opponents depending on the situation. It has a Challenge Rating of 8, equating it to a level 8 encounter and yielding 3,900 experience points upon defeat. However, it exhibits weaknesses in bright light, since it suffers disadvantages on attack rolls and Perception checks in such conditions.</summary>

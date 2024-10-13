@@ -1,6 +1,8 @@
 <MonsterName/>Liosalfar</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>10</CR>
+<AC/>17</AC>
+<HP/>132</HP>
 <summary>The Liosalfar is a large elemental creature characterized by its neutral alignment and formidable abilities in combat, making it a notable adversary in the Dungeons & Dragons universe. With an impressive Armor Class of 17 and 132 hit points derived from 24d10, it can withstand significant damage. It possesses exceptional Dexterity, with a modifier of +7, allowing it to perform agility-based actions very effectively. With the Challenge Rating of 10, it provides a balanced encounter for a party of adventurers, offering 5,900 experience points upon defeat. The Liosalfar excels at dealing radiant damage through its attacks and is known for its mesmerizing abilities, which can incapacitate foes.</summary>
 
 <detail>

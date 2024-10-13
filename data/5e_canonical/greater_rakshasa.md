@@ -1,6 +1,8 @@
 <MonsterName/>Greater Rakshasa</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>144</HP>
 <summary>The Greater Rakshasa is a formidable and manipulative fiend, known for its cunning and malevolent nature. This creature serves as a powerful adversary in any campaign, wielding both physical prowess and potent magical abilities. With an armor class of 18, it is quite resilient in combat, and its substantial hit points total 144, making it a daunting opponent. The creature's strengths lie in its high Dexterity and Charisma, enabling it to evade attacks while also effectively manipulating others through its charm and spellcasting. Notably, it possesses damage immunities to bludgeoning, piercing, and slashing from non-magical attacks, making it further difficult to confront without magic. However, it has vulnerabilities to piercing damage from magic weapons wielded by good creatures, which can be exploited by its adversaries. </summary>
 
 <detail>

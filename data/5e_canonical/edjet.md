@@ -1,6 +1,8 @@
 <MonsterName/>Edjet</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (chain shirt)</AC>
+<HP/>52</HP>
 <summary>The Edjet is a medium humanoid creature, categorized as lawful neutral, providing a balanced presence in any combat scenario. With a respectable armor class of 14 provided by its chain shirt and a total of 52 hit points derived from rolling eight eight-sided dice plus an additional16 points, it can endure a fair amount of damage. The Edjet has an average movement speed of 30 feet, allowing for standard mobility in combat and exploration situations. It has a challenge rating of 3, indicating that it offers a moderate challenge for adventuring parties, rewarding them with 700 experience points upon defeat.</summary>
 
 <detail>

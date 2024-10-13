@@ -1,6 +1,8 @@
 <MonsterName/>Hvalfiskr</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>15</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>275</HP>
 <summary>The Hvalfiskr is a formidable creature, embodying the essence of a giant whale and a frost giant in a single entity. As a huge giant with a lawful neutral alignment, the Hvalfiskr exhibits a unique blend of strength, resilience, and determination. It boasts an impressive Armor Class of 16 due to its natural armor and possesses a substantial pool of 275 hit points, making it a challenging foe for adventurers. With a Challenge Rating of 15, it presents a significant threat in combat, capable of delivering powerful attacks and employing various tactical abilities. Its strengths include damage immunities to cold, lightning, and thunder, along with condition immunity to exhaustion. However, its reliance on water for mobility in its whale form and its potential weaknesses to sonic-based attacks can be exploited by astute opponents.</summary>
 
 <detail>

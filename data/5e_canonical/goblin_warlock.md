@@ -1,6 +1,8 @@
 <MonsterName/>Goblin Warlock</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>21</HP>
 <summary>The Goblin Warlock is a small humanoid creature that wields both cunning and magical abilities. Serving as a spellcaster on the battlefield, it uses its intelligence and charm to manipulate and intimidate foes. With a challenge rating of 1, the Goblin Warlock has moderate hit points, indicated by its 21 total from 6d6, making it somewhat fragile in direct confrontations. However, its Armor Class of 15 and mobility with a speed of 30 feet allow it to avoid damage effectively in combat. The creature is proficient in stealth and uses its magical powers to deal fire damage, create illusions, and escape danger, revealing the creature's innovative and tricky nature. Despite its formidable spells, its strengths are balanced by low physical strength and constitution.</summary>
 
 <detail>

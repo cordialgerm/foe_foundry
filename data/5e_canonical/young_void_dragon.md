@@ -1,6 +1,8 @@
 <MonsterName/>Young Void Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Young Void Dragon is a formidable presence in any encounter, embodying the essence of chaos and power associated with dragonkind. With a large size and an exceptional Armor Class of 18, this creature poses a significant challenge to adventurers. The dragon boasts a total of 157 hit points, making it capable of enduring substantial damage in combat. Its abilities allow it to move swiftly, with a walking speed of 80 feet and a flying speed of 40 feet, positioning it strategically in battle. As a creature with a Challenge Rating of 9, the Young Void Dragon offers valuable experience when defeated, specifically 5,000 XP. Notably, its mastery over cold damage and its innate immunity to being charmed or frightened make it a dangerous opponent, both in battle and in negotiations.</summary>
 
 <detail>

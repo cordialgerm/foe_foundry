@@ -1,6 +1,8 @@
 <MonsterName/>Brain Coral</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Brain Coral is a formidable Huge Aberration characterized by its neutral evil alignment. It serves as a unique and strategic creature in combat due to its colony-like structure. The Brain Coral possesses a mix of offensive and defensive capabilities, making it a versatile adversary. Its strengths include high hit points and considerable damage immunities, specifically to psychic damage, as well as the ability to control multiple clusters that can provide additional attacks. However, it suffers from low dexterity, limiting its speed and agility in direct confrontations. This creature can dominate underwater battles, boasting the ability to breathe underwater and manipulate its surrounding environment effectively through summoned sea creatures.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Salamander Monarch</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>13</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Salamander Monarch is a formidable creature within the elemental realm, embodying a blend of fire and authority. This large elemental is aligned with neutral evil, showcasing both combat prowess and powerful spellcasting abilities. With an impressive armor class of 17 and a substantial hit point pool of 161, the Salamander Monarch is a durable opponent who can endure significant damage. Its strengths lie in its high strength and dexterity, as well as its potent fire-related abilities. However, it has a vulnerability to cold damage, which can be exploited by clever adventurers. As a challenge rating 13 creature, it poses a significant threat to lower-level parties but can be managed with strategic planning.</summary>
 
 <detail>

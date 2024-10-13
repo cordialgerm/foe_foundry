@@ -1,6 +1,8 @@
 <MonsterName/>Brownie Beastrider</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>15</AC>
+<HP/>54</HP>
 <summary>The Brownie Beastrider is a tiny fey creature known for its nimbleness and ability to command animals. As a neutral good being, it often plays a supportive role, leveraging its magic to assist allies and summon beasts for aid in combat. With a strong Dexterity score of 20, the Beastrider is exceptionally agile in battle, allowing it to dodge attacks effectively. However, its low Strength makes it physically weak, which poses a challenge in direct combat scenarios. The Beastrider has a moderate number of hit points at 54, providing it decent survivability. Notably, its special abilities make it a formidable ally, particularly when it comes to using its magic and communicating with animals, while its mounted capabilities enhance its effectiveness in various situations.</summary>
 
 <detail>

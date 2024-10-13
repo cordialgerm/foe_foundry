@@ -1,6 +1,8 @@
 <MonsterName/>Armory Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Armory Golem is a formidable Large Construct that serves as a powerful guardian in any encounter. It possesses significant defensive capabilities with an armor class of 15 and substantial hit points totaling 136. This creature has a challenge rating of 7, making it a moderately challenging opponent for adventurers. Its melee attacks deal considerable damage due to its high strength score of 20, which gives it a +5 modifier, allowing it to hit its targets effectively. However, the Armory Golem has a very poor Charisma of -4, meaning it lacks social power and can easily fail in interactions that require presence or persuasion. It is immune to many common negative effects such as poison and psychic damage, making it a resilient foe. However, smart players might find ways to exploit the golem's weaknesses related to its focus, presenting a tactical challenge in combat situations.</summary>
 
 <detail>

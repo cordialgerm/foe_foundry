@@ -1,6 +1,8 @@
 <MonsterName/>Kobold, Drake Rider</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (studded leather)</AC>
+<HP/>71</HP>
 <summary>The Kobold Drake Rider is a small humanoid creature that operates under a lawful neutral alignment. It is designed to serve both as a nimble and strategic combatant when paired with a drake mount, enhancing its effectiveness in battle while providing a mix of mobility and tactical options. With an Armor Class of 15 due to its studded leather armor and a total of 71 hit points derived from rolling 13d6 and adding 26, it possesses decent durability for its challenge rating of 3, indicating it is appropriate for mid-level encounters. Its attributes reflect a good balance of physical strength and dexterity, giving it a strong emphasis on melee and mounted combat.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>15</CR>
+<AC/>17</AC>
+<HP/>209</HP>
 <summary>The Shadow Giant is a Huge chaotic evil creature that embodies the darkness of the Shadow Realm. With a formidable presence on the battlefield, it poses a significant threat to any adventuring party. With a high Armor Class of 17 and an impressive 209 hit points, it can withstand considerable punishment while delivering devastating attacks. Its Strength and Dexterity are both notably high, granting it powerful melee attacks and excellent agility in combat. Despite its strengths, the Shadow Giant has a medium-level Challenge Rating of 15, suggesting that while it is a challenge, it can be effectively managed with strategy. It has notable resistances to cold and necrotic damage, making it more durable against certain attacks. However, its reliance on vision and the mechanics of its special abilities, particularly in relation to saving throws, can present opportunities for clever adventurers.</summary>
 
 <detail>

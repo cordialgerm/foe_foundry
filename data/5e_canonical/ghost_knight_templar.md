@@ -1,6 +1,8 @@
 <MonsterName/>Ghost Knight Templar</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (plate)</AC>
+<HP/>127</HP>
 <summary>The Ghost Knight Templar is a powerful medium undead creature that embodies lawful evil. With a high Armor Class of 18 and significant Hit Points totaling 127, it poses a formidable challenge in combat situations, receiving a Challenge Rating of 10. This makes it a dangerous foe, particularly in encounters requiring strong melee capabilities and tactical awareness. The Ghost Knight Templar possesses exceptional Strength, Dexterity, and Constitution, as well as good Wisdom and Charisma scores. This combination allows the creature to be agile in combat while maintaining a solid defense against many attacks. Its notable abilities include powerful melee attacks, the capacity to move through objects, resistance to various forms of damage, and an ability to negatively impact foes that attempt to turn it. </summary>
 
 <detail>

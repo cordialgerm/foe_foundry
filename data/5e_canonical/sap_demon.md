@@ -1,6 +1,8 @@
 <MonsterName/>Sap Demon</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>81</HP>
 <summary>The Sap Demon is a small, chaotic evil ooze that serves as a unique threat on the battlefield. With an Armor Class of 13, it is moderately difficult to hit, and with 81 hit points, it can absorb a significant amount of damage before being defeated. The creature possesses a blend of both physical and magical capabilities, allowing it to grapple opponents, inflict bludgeoning and acid damage, and even possess humanoid targets. The Sap Demon's abilities allow for tactical maneuvering in combat, with particular strengths against smaller foes and an interesting interaction with elemental damage. However, its low Dexterity makes it less effective at avoiding attacks, and its lack of ranged attacks for all but one option may limit its options for dealing damage when out of reach.</summary>
 
 <detail>

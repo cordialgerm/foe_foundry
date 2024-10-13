@@ -1,6 +1,8 @@
 <MonsterName/>Pseudodragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>7</HP>
 <summary>A Pseudodragon is a small, dragon-like creature about the size of a cat. It has leathery wings, a barbed tail, and shimmering scales that often come in shades of red, gold, or green. Despite their small size, Pseudodragons are intelligent and magical creatures, capable of telepathic communication with those they trust. They are often sought after as familiars by wizards or other spellcasters due to their loyalty and keen senses. Pseudodragons can deliver a painful sting with their barbed tail, which also carries a mild venom that causes sleepiness. They are naturally curious and playful, though they can be fiercely protective of their companions.</summary>
 
 <summary>The Pseudodragon is a tiny dragon-like creature often favored for its intelligence and magical abilities. With an Armor Class of 13 and only 7 hit points, it is relatively fragile in combat but can be a valuable companion due to its magical resistance and ability to communicate telepathically. Its primary strength lies in its agility, with a Dexterity score of 14 that provides a good modifier (+2) for actions involving stealth, making it particularly adept at sneaking around or escaping danger. Despite its frail nature, it can inflict potent effects through its sting attack and spells like Telepathic Static, particularly in disrupting enemy actions.</summary>

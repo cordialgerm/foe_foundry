@@ -1,6 +1,8 @@
 <MonsterName/>Ychen Bannog</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>186</HP>
 <summary>The Ychen Bannog is a gargantuan, unaligned beast that serves as a formidable presence in any encounter. With an impressive Armor Class of 17 due to its natural armor and a total of 186 hit points, it operates primarily as a tank in battle, capable of absorbing significant damage while dealing out devastating blows. This creature boasts exceptional Strength and Constitution scores, granting it powerful melee attacks and the ability to endure many hits, although its lack of Dexterity may make it somewhat predictable. While it cannot cast spells or communicate, its special abilities and fearsome physical attacks make it a powerful adversary.</summary>
 
 <detail>

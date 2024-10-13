@@ -1,6 +1,8 @@
 <MonsterName/>Dragonflesh Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>115</HP>
 <summary>The Dragonflesh Golem is a formidable large construct that serves as a significant adversary in combat. With a robust armor class of 18 and a total of 115 hit points from an average of rolling 11 ten-sided dice plus an additional 55 points, it is a resilient foe. This golem's challenge rating of 10 signifies it poses a serious threat, capable of delivering substantial damage while also withstanding various forms of attack. It has exceptionally high strength (22, +6), allowing it to hit with powerful melee attacks, and a very good constitution (20, +5) that contributes to its durability. However, its low dexterity (7, -2) makes it less agile in combat, which is its primary weakness, alongside a very low intelligence, charisma, and wisdom, indicating a lack of strategic capability and social interaction.</summary>
 
 <detail>

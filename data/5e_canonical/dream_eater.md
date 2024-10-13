@@ -1,6 +1,8 @@
 <MonsterName/>Dream Eater</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Dream Eater is a medium-sized fiend characterized by its lawful evil alignment. Known for its deceptive nature and nightmarish abilities, it plays the role of a cunning predator that feeds on the dreams and mental states of its victims. With robust hit points and a combination of physical and psychic damage capabilities, the Dream Eater poses a significant threat in combat. It has strong Charisma and Dexterity, making it not only an effective attacker with its claws and bite but also highly skilled in deception and charm effects. Its key strengths include its damage immunities and resistances, while it is notably vulnerable to magical attacks that overcome its resistances.</summary>
 
 <detail>

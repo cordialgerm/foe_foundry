@@ -1,6 +1,8 @@
 <MonsterName/>Rakshasa, Myrmidon</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>3</CR>
+<AC/>18</AC>
+<HP/>51</HP>
 <summary>The Rakshasa Myrmidon is a medium-sized fiend characterized by its lawful evil alignment. This creature possesses significant combat prowess, highlighted by its high Armor Class of 18 due to its scale mail and shield. With 51 hit points resulting from a solid constitution, it can withstand considerable damage before being taken down. The Myrmidon is notably versatile in combat, capable of both melee and ranged attacks, and it excels at disrupting enemy actions with its special abilities. However, it is susceptible to piercing damage from magical weapons wielded by good-aligned creatures. Overall, the Rakshasa Myrmidon is a formidable opponent that combines brute strength with tactical support capabilities and magical defenses.</summary>
 
 <detail>

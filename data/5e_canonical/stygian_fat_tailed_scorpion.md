@@ -1,6 +1,8 @@
 <MonsterName/>Stygian Fat-Tailed Scorpion</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>63</HP>
 <summary>The Stygian Fat-Tailed Scorpion is a Tiny beast that operates independently and is unaligned. It possesses a significant challenge rating of 3, making it a moderately dangerous foe for adventurers. With a good Armor Class of 14 provided by its natural armor and a robust health pool of 63 hit points, it can withstand substantial damage. Its speed is moderate, allowing it to maneuver effectively in combat. Despite its low strength, which is very bad at -4, it compensates with a good dexterity of +2, which enhances its ability to evade attacks. Additionally, its constitution is solid at +2, granting it resilience. However, this creature lacks intelligence, wisdom, and charisma, severely limiting its ability to engage in non-physical interactions.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Duelist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>90</HP>
 <summary>The Duelist is a skilled and agile humanoid warrior known for their exceptional finesse in combat. Positioned as a medium creature, they thrive in one-on-one engagements, making them a formidable opponent on the battlefield. With high dexterity and strength, the Duelist can deal significant damage while effectively dodging incoming attacks. Their challenge rating of 5 indicates that they are suitable for a group of characters with an average level of difficulty, presenting a balanced challenge for adventurers. However, the Duelist's defenses, while solid, can be overcome with strategic planning and teamwork from the players.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Bone Lord</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>19</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>285</HP>
 <summary>The Bone Lord is a formidable Huge Undead creature, embodying the essence of decay and command over lesser undead minions. It operates with a neutral evil alignment, often serving as a potent adversary for adventurers. With impressive defensive capabilities, a high health pool, and a suite of powerful abilities, the Bone Lord can manipulate the battlefield, summon reinforcements, and deal substantial damage to its foes. It is particularly dangerous when surrounded by its undead allies, utilizing teamwork to gain tactical advantages in combat. However, it has inherent weaknesses, such as being vulnerable to effects targeting constructs or powerful radiant spells, which can turn the tide against it.</summary>
 
 <detail>

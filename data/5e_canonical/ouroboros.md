@@ -1,6 +1,8 @@
 <MonsterName/>Ouroboros</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>94</HP>
 <summary>The Ouroboros is a formidable creature resembling a massive dragon, embodying the essence of rebirth and transformation. As a neutral entity, it plays a unique role in encounters, presenting both a challenge to adventurers and an opportunity for unexpected outcomes. Its substantial hit points of 94, coupled with a good Armor Class of 15, make it a durable opponent. Among its strengths are its ability to rebirth itself upon death, granting healing to allies or inflicting damage to enemies. However, its intelligence and charisma scores are only average, which may limit its effectiveness in some social interactions or strategic planning.</summary>
 
 <detail>

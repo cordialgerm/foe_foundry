@@ -1,6 +1,8 @@
 <MonsterName/>Vættir</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>97</HP>
 <summary>The Vættir is a Medium-sized undead creature with a lawful evil alignment, known for its tricky and deceptive behaviors. It possesses a solid Armor Class of 15, making it reasonably difficult to hit, and has a total of 97 hit points, which allows it to withstand considerable damage in combat. The Vættir is particularly effective at both melee and ranged attacks, utilizing a combination of physical weapon strikes and necrotic energy. Its strengths lie in its high Strength score of 20, giving it an exceptional melee attack modifier of +7, while its decent Dexterity and Constitution scores enhance its defenses and survivability. However, the Vættir has a weakness to sunlight, suffering from disadvantages while exposed to it. Its notable special abilities, such as Grave Goods Sense and Rejuvenation, allow it to track its belongings and return to a new body, presenting further challenges for adventurers confronting this creature.</summary>
 
 <detail>

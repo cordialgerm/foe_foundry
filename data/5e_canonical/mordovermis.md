@@ -1,6 +1,8 @@
 <MonsterName/>Mordovermis</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>72</HP>
 <summary>Mordovermis is a large aberration known for its eerie and otherworldly presence. With a challenge rating of 3, it poses a moderate threat to adventurers. It has a solid armor class of 13, protecting it adequately in combat, and possesses 72 hit points, allowing it to withstand several attacks. Its ability to fly at 40 feet (hover) gives it exceptional mobility, though its walking speed is limited to 10 feet. Notably, the mordovermis excels in mental manipulation and crowd control through its special abilities as well as maintaining versatility in attacks thanks to its multiattack feature. However, it is sensitive to sunlight, suffering disadvantages when operating in such conditions, which can lead to strategic vulnerabilities.</summary>
 
 <detail>

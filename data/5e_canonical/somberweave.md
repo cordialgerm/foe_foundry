@@ -1,6 +1,8 @@
 <MonsterName/>Somberweave</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>78</HP>
 <summary>The Somberweave is a medium-sized fey creature with a neutral evil alignment. It has a cunning nature, thriving in the shadows and using its unique abilities to entrap and manipulate prey. With an armor class of 14 and hit points totaling 78, the Somberweave presents a formidable challenge for adventurers, rated as challenge level 5. The creature possesses impressive dexterity and charisma, along with decent strength and constitution, making it agile and imposing in social situations. While it has some defenses against damage, like immunity to poison, its reliance on ambush tactics gives it an edge, especially when using its webs to ensnare opponents. However, this creature is less effective in open combat and relies heavily on its special abilities and stealth.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Garlicle</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>31</HP>
 <summary>The Garlicle is a small, chaotic neutral plant creature that plays a role as an unpredictable trickster in combat scenarios. It possesses moderate defenses with an Armor Class of 12 and a decent pool of Hit Points totaling 31, allowing it to withstand some damage. The Garlicle has a unique combination of abilities that can impair opponents while granting advantageous effects to its allies. It is particularly adept at stealth due to its dexterity, although its overall physical strength is quite weak. The Garlicle’s spells focus on utility and support, providing options for both combat enhancement and information gathering. Its notable weaknesses include low strength and a reliance on its spells and special abilities to contribute effectively in battles.</summary>
 
 <detail>

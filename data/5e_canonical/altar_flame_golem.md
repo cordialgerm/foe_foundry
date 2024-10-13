@@ -1,6 +1,8 @@
 <MonsterName/>Altar Flame Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Altar Flame Golem is a large construct characterized by its neutral alignment. It serves primarily as a formidable guardian, likely of sacred sites or important locations, drawing its power from the flames it embodies. The golem boasts a robust defense with an Armor Class of 16, along with a considerable pool of Hit Points totaling 152, making it a durable opponent. Its strengths lie in its fire-related abilities, immunity to many conditions, and its capacity to regain health from fire damage. However, it is notably weak against cold damage, causing it to become less effective in combat, and it has low Dexterity, making it less mobile. Despite its limitations, the altar flame golem presents a significant challenge, particularly in areas where it can leverage its fire abilities.</summary>
 
 <detail>

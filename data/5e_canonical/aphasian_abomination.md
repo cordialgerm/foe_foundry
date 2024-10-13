@@ -1,6 +1,8 @@
 <MonsterName/>Aphasian Abomination</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>15</AC>
+<HP/>170</HP>
 <summary>The Aphasian Abomination is a formidable Large Construct, designed to operate independently without alignment to any particular moral code. This creature boasts a solid Armor Class of 15 and a substantial Hit Points total of 170, providing it with an impressive degree of resilience in combat, classified as Challenge Rating 10, which means it is appropriate for mid-level adventurers. It possesses exceptional Dexterity, allowing it to avoid attacks with a +9 modifier on Dexterity saving throws, while its considerable intelligence and wisdom also enhance its effectiveness in encounters. However, its physical strength is incredibly weak, rated at one with a -5 modifier. The Aphasian Abomination thrives in environments where it can utilize its unique abilities, particularly those related to psychic manipulation and resistance to magic, but it lacks the capacity for social interaction due to severely low Charisma.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Elemental, Rockslide</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Rockslide is a formidable Large Elemental that embodies the powerful forces of the earth. Neutral in nature, this creature presents a significant challenge, boasting a strong physical presence with high hit points and formidable strength. With an armor class of 14, it is reasonably resilient, and its capacity to endure damage makes it a tough opponent in combat. Its strengths lie in its melee attacks and special abilities, which can deal substantial damage and potentially knock opponents prone. However, the Rockslide has weaknesses, primarily due to its low dexterity, making it less agile and more susceptible to ranged attacks. As an elemental being, it does not need air, food, drink, or sleep, allowing it to operate in a consistent and relentless manner in combat situations.</summary>
 
 <detail>

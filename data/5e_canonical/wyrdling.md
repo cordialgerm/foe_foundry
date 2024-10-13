@@ -1,6 +1,8 @@
 <MonsterName/>Wyrdling</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>40</HP>
 <summary>The Wyrdling is a Medium humanoid creature known for its unique connection to fate and intuition. With a Challenge Rating of 1, it serves as an intriguing adversary or ally in various campaigns. The Wyrdling possesses a moderate Armor Class of 12 and 40 hit points, which makes it resilient without being excessively tough. Its most notable strengths lie in its high Wisdom score, which allows it to excel in perception-related checks, and a range of psychic abilities that can inflict damage or manipulate fate itself. While its physical attributes are relatively unremarkable, the Wyrdling compensates with powerful abilities and spells, making it a character agent of uncertainty on the battlefield. Its weaknesses include lower physical defenses and hit points compared to more formidable foes.</summary>
 
 <detail>

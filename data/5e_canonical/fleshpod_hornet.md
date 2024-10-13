@@ -1,6 +1,8 @@
 <MonsterName/>Fleshpod Hornet</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>6</CR>
+<AC/>14</AC>
+<HP/>120</HP>
 <summary>The Fleshpod Hornet is a large, unaligned beast known for its agility and potent attacks. With an Armor Class of 14 and 120 hit points, it is reasonably durable, allowing it to withstand a fair amount of damage before falling. It has a flying speed of 60 feet, which, combined with its ability to hover and moderate walking speed, gives it exceptional maneuverability in combat. The Fleshpod Hornet presents a significant challenge with a Challenge Rating of 6 and rewards adventurers with 2,300 experience points upon defeat. Its strengths lie in its skills and unique abilities, particularly its capacity to inflict poison damage and debilitating effects through its stinger. However, despite its strong Dexterity score of 18 (+4), it has poor intelligence and charisma, limiting its influence in social or strategic situations.</summary>
 
 <detail>

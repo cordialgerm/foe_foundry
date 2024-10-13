@@ -1,6 +1,8 @@
 <MonsterName/>Insect, Giant Wasp</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>25</HP>
 <summary>The Giant Wasp is a Medium-sized beast, presenting a challenge rating of 1/2, making it a moderately threatening foe for lower-level adventurers. With an Armor Class of 12 and 25 hit points, it has a decent level of durability, though it remains vulnerable to effective attacks due to its relatively flat physical defenses. Its movement capabilities are notable, allowing it to fly at a speed of 50 feet, making it agile and able to bypass obstacles on the ground. The wasp's strengths lie in its agility, with a Dexterity modifier of +2, indicating a good level of nimbleness when dodging attacks. However, it possesses a weakness in its mental attributes, particularly Intelligence and Charisma, which are very low, making it ineffective in social interactions and strategy. Notably, the Giant Wasp inflicts both piercing and poison damage through its sting, presenting a significant threat due to its capacity to paralyze victims.</summary>
 
 <detail>

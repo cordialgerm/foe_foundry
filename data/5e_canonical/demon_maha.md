@@ -1,6 +1,8 @@
 <MonsterName/>Demon, Maha</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>12</CR>
+<AC/>15</AC>
+<HP/>178</HP>
 <summary>The Maha is a formidable medium fiend of chaotic evil alignment, presenting a significant challenge to adventurers. With a challenge rating of 12, it offers 8,400 experience points upon defeat. The Maha possesses impressive physical attributes, including a high Dexterity of 21, which grants it exceptional agility, and strong Strength and Constitution scores, making it durable and capable in combat. Its notable features include abilities that manipulate the battlefield through its Frozen Aura, which hinders movement, and its ability to resist many magical effects, making it hard to control through spells. The Maha’s actions can incapacitate foes with its laughter, allowing it to control the flow of battle while dealing psychic damage. However, its low Intelligence indicates a lack of strategic awareness, and its vulnerability to nonmagical attacks in certain conditions can be exploited by clever adventurers.</summary>
 
 <detail>

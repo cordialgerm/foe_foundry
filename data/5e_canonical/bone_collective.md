@@ -1,6 +1,8 @@
 <MonsterName/>Bone Collective</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>120</HP>
 <summary>The Bone Collective is a small, chaotic evil swarm of animated bones that commands a unique blend of cunning and might on the battlefield. Its formidable armor class of 17, combined with a high hit point total of 120, allows it to withstand significant damage. The Collective excels in Dexterity with a score of 20, granting it very good agility and making it difficult for enemies to hit. The creature's ability to communicate telepathically through its Collective Mind makes it nearly impossible to surprise, enhancing its tactical capabilities. However, its Intelligence can become drastically limited if it suffers heavy damage, forcing it into a shapeless form that diminishes its threat. The Bone Collective can inflict poison and Charisma debuffs on its foes, rendering it a dangerous adversary, especially for characters reliant on their Charisma. </summary>
 
 <detail>

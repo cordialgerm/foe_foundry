@@ -1,6 +1,8 @@
 <MonsterName/>Veritigibbet</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>63</HP>
 <summary>The Veritigibbet is a small, chaotic neutral fey creature, known for its cunning and trickery. With an Armor Class of 14 and 63 hit points, it is moderately resilient in combat. Its flying speed of 60 feet allows it to maneuver effectively, making it difficult for opponents to pin down. With a challenge rating of 4, it provides a good experience reward of 1,100 XP when defeated. This creature specializes in psychological manipulation and deceit, with unique abilities that make it a troublesome adversary or a tricky ally. Notable traits include its high dexterity and charisma, contributing to its effectiveness in dodging attacks and influencing other creatures. However, its weakness lies in its low strength and modest constitution, making it less effective in direct physical confrontations.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Roachling Scout</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>63</HP>
 <summary>The Roachling Scout is a small humanoid creature known for its chaotic neutral alignment. This creature operates as a scout, often navigating through environments with exceptional stealth and agility. With an Armor Class of 14 and 63 hit points, it can withstand a fair amount of punishment while engaging in hit-and-run tactics. The Roachling Scout's strengths lie in its dexterity and perceptiveness, boasting a Dexterity score of 18, resulting in a +4 modifier which is considered very good. This allows it to excel in stealth and acrobatics, while its perception skills make it a formidable tracker. However, its Charisma is notably low at -1, indicating disadvantages in social interactions with non-roachlings, making it less effective in roles requiring charisma.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Young Mithral Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>170</HP>
 <summary>The Young Mithral Dragon is a formidable creature that serves as a powerful adversary or potential ally in a Dungeons & Dragons campaign. As a Large Dragon of neutral alignment, it has great strength and agility, making it a versatile opponent in combat. With an Armor Class of 16, the dragon can withstand significant damage, while its robust Hit Points of 170 provide excellent durability. This dragon has a Challenge Rating of 7, which indicates a balanced difficulty for parties at that level. Among its notable qualities, the Young Mithral Dragon possesses slashing damage immunity and the ability to charm-proof itself, presenting both threats and opportunities for creative engagement. </summary>
 
 <detail>

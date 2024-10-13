@@ -1,6 +1,8 @@
 <MonsterName/>Allosaurus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>51</HP>
 <summary>The Allosaurus is a formidable creature in the realm of Dungeons and Dragons, classified as a Huge Beast that serves as a terror on the battlefield. With a challenge rating of 3, it presents a decent challenge for adventurers, being capable of dealing significant damage while possessing considerable hit points. Its defenses are reinforced by a moderate armor class of 15, which allows it to withstand a fair amount of punishment before falling. The Allosaurus excels at physical combat thanks to its high strength and dexterity, which not only improve its attack capabilities but also its ability to maneuver quickly around the battlefield. However, it is hampered by its low intelligence and charisma, making it susceptible to tactics that exploit its primitive instincts. </summary>
 
 <detail>

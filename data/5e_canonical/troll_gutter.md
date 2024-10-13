@@ -1,6 +1,8 @@
 <MonsterName/>Troll, Gutter</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Gutter Troll is a Medium-sized Giant that embodies a neutral evil alignment. It excels in melee combat with a powerful set of attacks and special abilities that make it a formidable presence in a battle. With a high Armor Class of 15 and a solid pool of Hit Points totaling 75, the Gutter Troll is capable of taking a significant amount of punishment while dishing out damage to its enemies. Although its intelligence and charisma are low, its physical attributes are noteworthy, particularly its Strength of 18, which contributes to its melee attack potency. The Gutter Troll has some notable weaknesses, especially to acid and fire, which can disrupt its regenerative abilities. Overall, it serves as a threatening adversary that can poison foes and potentially heal itself during combat.</summary>
 
 <detail>

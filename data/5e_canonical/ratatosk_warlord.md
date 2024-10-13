@@ -1,6 +1,8 @@
 <MonsterName/>Ratatosk Warlord</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>77</HP>
 <summary>The Ratatosk Warlord is a small celestial creature defined by its chaotic neutral alignment. Known for its cunning tactics on the battlefield, this creature blends speed and agility with a unique ability to command its kin. With an Armor Class of 16 and a decent pool of 77 hit points, it can withstand moderate assaults while delivering significant damage through both physical and psychic attacks. Its attributes reveal a high Dexterity of 18, granting it an exceptional modifier of +4, which enhances its agility and finesse in combat. However, its Strength is quite low at 7, resulting in a very bad modifier of -2, making it less effective in measures that rely on raw physical power. The Ratatosk Warlord serves as a formidable opponent often ambushing and outmaneuvering enemies, yet it relies on its swift strategy rather than brute strength.</summary>
 
 <detail>

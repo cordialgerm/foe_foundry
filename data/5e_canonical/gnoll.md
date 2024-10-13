@@ -1,7 +1,9 @@
 <MonsterName/>Gnoll</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
 <Subtype/>gnoll</Subtype>
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>22</HP>
 <summary>A Gnoll is a hyena-like humanoid, known for its savage and brutal nature. Standing over six feet tall, Gnolls are covered in matted fur and wield crude weapons such as axes and spears. They are chaotic and bloodthirsty, often attacking in packs to overwhelm their enemies. Gnolls are driven by a hunger for destruction and are known to serve dark gods or demonic forces. They roam in warbands, raiding villages and slaughtering any who stand in their way. Though not particularly intelligent, their strength and ferocity make them dangerous opponents.</summary>
 
 <summary>The Gnoll is a medium humanoid creature known for its aggressive nature and teamwork in combat, making it a formidable opponent despite its relatively low challenge rating of 1/2, which grants it 100 experience points. With an Armor Class of 14 and 22 hit points, the Gnoll can withstand a fair amount of damage. Its physical attributes show a preferred strength score of 14, granting it a good modifier of +2, while its dexterity is average with a score of 12 and a +1 modifier. However, its intelligence and wisdom are both low, at 10 and 8 respectively, giving it average and bad modifiers, which limits its effectiveness in skill checks and spellcasting. The Gnoll is equipped with a unique ability called Pack Tactics, allowing it to gain advantage on attack rolls when fighting alongside allies. This means it’s more likely to hit its target when in a group, enhancing its overall threat level during combat.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Relentless Hound</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>52</HP>
 <summary>The Relentless Hound is a menacing undead creature that embodies the chaotic nature of death and decay. This Medium-sized monstrosity has a unique combination of strengths, such as its respectable Armor Class of 12 and Hit Points totaling 52, allowing it to endure a fair amount of combat. Its speed, being able to walk at 40 feet and fly at 20 feet, offers tactical mobility to engage foes. The creature's challenge rating of 4 designates it as a significant adversary that can provide a formidable challenge to adventurers, granting 1,100 experience points upon defeat. The hound boasts formidable physical attributes, particularly in Strength with a score of 17 (+3), which makes its melee attacks potent and dangerous. However, its mental capacities are notably weak, reflected in an Intelligence of 4 (-3) and Charisma of 6 (-2), rendering it less effective in social or intellectual engagements. The Relentless Hound also has several immunities, resistances, and special abilities that make it a unique addition to any encounter.</summary>
 
 <detail>

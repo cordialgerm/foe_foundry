@@ -2232,6 +2232,20 @@ files = [
 traitlets = "*"
 
 [[package]]
+name = "mdpd"
+version = "0.2.1"
+description = "a simpler tool for convert markdown table to pandas"
+optional = false
+python-versions = ">=3.9,<3.13"
+files = [
+    {file = "mdpd-0.2.1-py3-none-any.whl", hash = "sha256:7735776f1fa96ac318e89e536aa0e8a9a896163e042d57b1e1c43298d6f6fc26"},
+    {file = "mdpd-0.2.1.tar.gz", hash = "sha256:041bcd0faabddc8982f70432b71ebe033442f6d495ae4026678ace1b8c4f9897"},
+]
+
+[package.dependencies]
+pandas = ">=2.1.1,<3.0.0"
+
+[[package]]
 name = "mistune"
 version = "3.0.2"
 description = "A sane and fast Markdown parser with useful plugins and renderers"
@@ -5574,4 +5588,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.5"
-content-hash = "28d06bade827701f2b09f0520bae0270cd5b869e30f110852b51373ca0e72220"
+content-hash = "79d8caad18cece02e5cf5067e31bd04ce488c8f61cf9e65258356a76e2ce345b"

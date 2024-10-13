@@ -1,6 +1,8 @@
 <MonsterName/>Ogre, Kadag</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Kadag Ogre is a Large Giant characterized by a neutral evil alignment, embodying a fearsome presence in combat thanks to its significant physical strength and unique abilities. With a high Armor Class of 14, bolstered by natural armor, it boasts impressive durability, allowing it to withstand a fair amount of punishment. The ogre has 133 hit points, which translates to a solid resilience in battles, making it difficult to take down quickly. Its strengths lie in its high Strength score of 20, allowing for devastating melee attacks, and a decent Constitution score of 18, which provides substantial damage resistance. However, its Dexterity is notably low at 8, making it less effective in ranged combat maneuverability. The Kadag Ogre's innate abilities revolve around influencing both living creatures and the undead, providing it with tactical advantages in scenarios involving necromancy. Its weaknesses include a relatively low Intelligence and Charisma, hindering its ability to engage in social interactions and strategic thinking.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Locksmith</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Locksmith is a Medium-sized Construct characterized by its exceptional capabilities in picking locks and disarming traps, making it a valuable asset for any adventuring party in a heist or dungeon scenario. With a moderately high Armor Class of 18 and a substantial pool of Hit Points at 102, the Locksmith can withstand a significant amount of damage in combat, positioning it as a resilient foe. It possesses strong physical attributes, particularly in Strength with a +5 modifier, making its melee attacks effective. However, its weakness lies in low Charisma (-2), indicating limited social interaction and persuasive abilities. Notably, the Locksmith is largely immune to several forms of damage and many debilitating conditions, which grants it an exceptional level of durability.</summary>
 
 <detail>

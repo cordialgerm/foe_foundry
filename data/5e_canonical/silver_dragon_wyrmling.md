@@ -1,6 +1,8 @@
 <MonsterName/>Silver Dragon Wyrmling (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Silver Dragon Wyrmling is a powerful and cunning creature, embodying both the grace and ferocity characteristic of dragonkin. As a medium dragon, it presents a considerable threat in combat, with a notable Armor Class of 17 and a solid pool of 60 hit points, making it resilient against attacks. Its speed allows for excellent mobility, boasting a walk speed of 30 feet and a flying speed of 60 feet, which it can utilize effectively to maneuver around the battlefield. The creature has a Challenge Rating of 3, indicating it is a suitable challenge for inexperienced adventurers. </summary>
 
 <detail>

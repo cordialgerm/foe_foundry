@@ -1,6 +1,8 @@
 <MonsterName/>Dragonette, Sedge</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Sedge Dragonette is a tiny, neutral dragon known for its deceptive appearance and agile movements, making it a unique creature in swampy environments. With an Armor Class of 13, it can withstand moderate attacks, supported by its Hit Points tally of 27, derived from rolling 5d4 plus 15. Its Challenge Rating of 1/2 allows it to pose a considerable threat to low-level adventurers, while its proficiency in stealth and damage resistances provide it with strategic advantages. The Sedge Dragonette has exceptional Constitution, scoring a +3 modifier, which makes it resilient and capable of enduring combat situations. However, its Dexterity and Charisma scores are average at +0, limiting its effectiveness in Evade and Charisma-related interactions.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Bannik</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Bannik is a Medium Fey creature characterized by its neutral alignment, making it an interesting entity within social interactions and combat scenarios. With a moderate Armor Class of 13 and a total of 60 hit points, it can endure some damage but is not heavily armored compared to more formidable foes. The Bannik's movement speed allows it to navigate both land and water with equal ease, possessing a walking speed of 30 feet and a swimming speed of 30 feet as well. It presents a Challenge Rating of 2, indicating that it can pose an interesting challenge to lower-level adventurers while rewarding 450 experience points for overcoming it. Notable strengths of the Bannik include its ability to see through fog and smoke, as well as its fire resistance and damage mitigation against nonmagical bludgeoning, piercing, and slashing attacks. However, it is vulnerable to cold damage, which can be exploited by clever foes.</summary>
 
 <detail>

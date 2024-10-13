@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Boreal Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>407</HP>
 <summary>The Ancient Boreal Dragon is a formidable gargantuan dragon that embodies chaotic neutral alignment. With a towering presence and immense power, this creature commands respect and fear from adventurers. It has an exceptionally high armor class of 22, reflecting its natural toughness, and it possesses 407 hit points, making it incredibly durable in battle. The dragon's primary strengths lie in its devastating breath attack, powerful melee abilities, and the capacity to frighten its enemies. However, it is not without weaknesses; it has vulnerabilities such as being susceptible to cold damage. Moreover, its dexterity is average, making it less evasive compared to its striking power. Overall, the Ancient Boreal Dragon is a dangerous foe that can turn the tide of an encounter with its sheer might and terrifying presence.</summary>
 
 <detail>

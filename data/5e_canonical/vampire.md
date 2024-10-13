@@ -1,7 +1,9 @@
 <MonsterName/>Vampire</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
 <Subtype/>shapechanger</Subtype>
+<CR/>13</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>144</HP>
 <summary>A Vampire is an undead creature of immense power, known for its immortality, charm, and thirst for blood. Vampires retain the intelligence and personality they had in life but are twisted by their undead nature. They possess superhuman strength, speed, and the ability to regenerate from most wounds. Vampires can charm their victims, turn into mist or bats, and summon creatures of the night to their aid. While they are vulnerable to sunlight, running water, and holy symbols, they are dangerous foes in the darkness, using both their physical abilities and dark magic to manipulate and destroy.</summary>
 
 <summary>The Vampire is a formidable Medium Undead creature, known for its cunning and overwhelming strength on the battlefield. With a challenge rating of 11, it poses a significant threat to adventurers, bolstered by impressive abilities and high defenses. The Vampire possesses strong melee capabilities, allowing it to grapple and drain the life force of its victims while also charming them, making it a dangerous adversary both in combat and when manipulating party dynamics. Its high Armor Class of 16 and substantial hit points of 142 provide resilience. However, it is vulnerable to sunlight and running water, which can impose significant damage and deactivate some of its abilities. This combination of strengths and weaknesses makes the Vampire a challenging foe that requires careful strategy to defeat.</summary>

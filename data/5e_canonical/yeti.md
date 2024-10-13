@@ -1,6 +1,8 @@
 <MonsterName/>Yeti</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>68</HP>
 <summary>The Yeti is a large monstrosity known for its formidable strength and adaptability in snowy environments. With an Armor Class of 12, it can withstand a moderate amount of attacks, while its 68 hit points provide it with decent durability in combat. The Yeti has a challenge rating of 4, making it a suitable foe for mid-level adventurers. It excels in cold environments where its camouflage ability gives it a tactical advantage. Notably, the Yeti is immune to cold damage, but it has a weakness to fire; when it suffers fire damage, it becomes rattled, affecting its performance for the turn. While not particularly intelligent, the Yeti shows a charismatic presence that enhances its engagement with other creatures. </summary>
 
 <detail>

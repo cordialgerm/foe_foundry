@@ -1,6 +1,8 @@
 <MonsterName/>Gilded Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Gilded Devil is a medium-sized fiend known for embodying lawful evil nature. It excels in deception and manipulation while wielding potent magical abilities that can turn the tide of battle. With a high Armor Class of 16 and significant hit points totaling 112, it proves to be a resilient opponent. The Gilded Devil's strength lies in its powerful attacks and spellcasting capabilities, as well as its proficiency in persuading and deceiving others. However, it is vulnerable to silvered weapons and is primarily reliant on its spells for crowd control and manipulation. The Gilded Devil represents both physical prowess and cunning intellect, making it a dangerous adversary.</summary>
 
 <detail>

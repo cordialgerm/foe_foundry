@@ -1,6 +1,8 @@
 <MonsterName/>Carrier Mosquito</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Carrier Mosquito is a large beast representing a unique threat in any encounter due to its agility and disruptive abilities. With a decent armor class of 13 and a significant pool of 75 hit points, this creature can withstand a fair amount of damage before being taken down. It is capable of moving swiftly, with a walking speed of 20 feet and a flying speed of 40 feet, allowing it to evade attacks and position itself strategically in combat. The Carrier Mosquito's challenge rating of 3 indicates that it is a moderate threat for adventurers, offering 700 experience points upon defeat. Its strengths lie in its impressive strength and constitution scores, as well as its unique special actions, while its intelligence, wisdom, and charisma scores are particularly low, which means it lacks higher cognitive functions and social influence. </summary>
 
 <detail>

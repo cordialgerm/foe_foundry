@@ -1,6 +1,8 @@
 <MonsterName/>Baleful Miasma</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Baleful Miasma is a medium elemental creature with a neutral evil alignment, embodying both stealth and danger through its poisonous presence. With an armor class of 13 and a total of 52 hit points, it poses a moderate challenge, particularly due to its unique ability to fly freely while its walk speed is reduced to zero. Its challenge rating is 2, making it an engaging encounter for adventurers who may underestimate its ability to manipulate space and deliver potent area-of-effect damage. The creature's strengths lie in its immunities to various conditions and damage types, particularly its complete immunity to poison damage, while maintaining a good defense against lightning and nonmagical bludgeoning, piercing, or slashing attacks. However, its low intelligence, charisma, and modest wisdom indicate a lack of tactical awareness or social skills.</summary>
 
 <detail>

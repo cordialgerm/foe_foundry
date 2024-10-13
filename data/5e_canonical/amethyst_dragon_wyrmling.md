@@ -1,6 +1,8 @@
 <MonsterName/>Amethyst Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>16</AC>
+<HP/>45</HP>
 <summary>The Amethyst Dragon Wyrmling is a medium-sized dragon known for its telepathic abilities and psionic prowess. This creature serves as both a formidable opponent and a potential ally, depending on its inclination. With an Armor Class of 16 and Hit Points totaling 45, it possesses a good level of durability for a challenge rating of 2, which makes it suitable for adventurers at lower levels. Its notable strengths lie in its spells and telepathy skills, allowing it to engage in combat from a distance while remaining aware of threats in its vicinity. The dragon is particularly resistant to force and psychic damage and is immune to the fatigued condition, making it a effective survivor in prolonged encounters. However, its physical attributes are average, with no exceptional strengths or weaknesses, maintaining a balanced profile.</summary>
 
 <detail>

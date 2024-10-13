@@ -1,6 +1,8 @@
 <MonsterName/>Haugbui</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>13</CR>
+<AC/>15</AC>
+<HP/>153</HP>
 <summary>The Haugbui is a formidable undead creature that serves a unique role in gameplay, combining elements of spellcasting and physical prowess. With a challenge rating of 13, it presents a significant obstacle for adventurers, boasting a total of 153 hit points, which makes it very durable in battle. The Haugbui possesses a high Armor Class of 15, indicating it is fairly resistant to attacks. Its primary strengths include exceptional Dexterity and Wisdom, allowing it to evade attacks and make effective perception checks. It has very good spellcasting abilities and access to a variety of powerful spells, which can impact combat dynamics greatly. However, the Haugbui exhibits a weakness to sunlight, suffering penalties while exposed to it. Its incorporeal nature allows it to move through obstacles, providing tactical advantages during encounters.</summary>
 
 <detail>

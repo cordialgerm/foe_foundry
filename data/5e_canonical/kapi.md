@@ -1,6 +1,8 @@
 <MonsterName/>Kapi</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>13</HP>
 <summary>The Kapi is a medium humanoid creature aligned with chaotic good tendencies, making it a nimble and agile character on the battlefield. With a Challenge Rating of 1/2, it offers 100 experience points when defeated. This creature is characterized by its impressive Dexterity, which is valued at 18 with a modifier of +4, allowing it to excel in acrobatic maneuvers and stealth. The Kapi's ability to climb and traverse both vertically and horizontally at a speed of 30 feet each gives it considerable mobility advantages in various terrains. However, it has relatively low hit points, totaling only 13, making it vulnerable if caught in prolonged combat.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Dau</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>49</HP>
 <summary>The Dau is a small fey creature that embodies chaotic neutrality, presenting an intriguing blend of agility, magical prowess, and deceptive abilities. With a relatively moderate armor class of 13 and a good pool of hit points totaling 49, the Dau remains resilient in battles, particularly due to its exceptional magic resistance, granting it an advantage on saving throws against spells. It has capabilities to engage effectively in melee combat with two slam attacks per turn, each potentially debilitating opponents by reducing their maximum hit points. While it excels in dexterity and charisma with good scores, its strength is quite low, making physical attacks less effective. The Dau is also armed with a range of spells that contribute to its versatility, allowing it to manipulate perceptions and control the battlefield. Overall, the Dau is a tricky foe, using its speed and illusion magic to outmaneuver opponents while dealing significant damage.</summary>
 
 <detail>

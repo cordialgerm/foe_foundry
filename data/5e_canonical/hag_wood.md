@@ -1,6 +1,8 @@
 <MonsterName/>Hag, Wood</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>170</HP>
 <summary>The Wood Hag is a medium-sized fey creature characterized by its neutral evil alignment. This cunning monster is known for its mastery of woodland environments and has a strong affinity for trickery and manipulation. With an impressive armor class of 16 and a considerable pool of hit points totaling 170, this creature can endure significant damage in combat. The Wood Hag's challenge rating of 9 indicates that it is a formidable opponent, capable of providing a significant challenge to adventurers. Its strengths lie in its powerful melee and ranged attacks, magical capabilities, and unique abilities that allow it to blend seamlessly into its natural surroundings. However, despite its resilience and versatile combat tactics, the Wood Hag maintains weaknesses typical of fey creatures, including susceptibility to certain spells and effects outside its sphere of influence.</summary>
 
 <detail>

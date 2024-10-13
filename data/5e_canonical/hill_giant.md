@@ -1,6 +1,8 @@
 <MonsterName/>Hill Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>105</HP>
 <summary>Hill Giants are enormous, brutish humanoids that live in hills and caves, often raiding nearby settlements for food and supplies. These giants are dim-witted and driven by an insatiable hunger, eating anything they can find, including livestock, crops, and even other creatures. Hill Giants are physically powerful, capable of crushing foes with massive clubs or throwing boulders with great force. Despite their strength, they are lazy and cowardly, preferring to bully weaker creatures rather than face a real challenge. They often live in crude tribes, ruled by the strongest and most gluttonous among them.</summary>
 
 <summary>The Hill Giant is a formidable creature often found in hilly or mountainous regions, characterized by its immense size and strength. As a Huge Giant, it serves as a powerful melee combatant on the battlefield. With an Armor Class of 13 and Hit Points totaling 105, the Hill Giant can absorb a significant amount of damage. Its Challenge Rating of 6 indicates that it presents a moderate challenge to a party of adventurers. The Hill Giant possesses exceptional physical attributes, with a Strength of 20 providing very good attack capabilities. However, it has poor Dexterity and Intelligence, featuring weaknesses in agility and cognitive ability that may lead to tactical disadvantages in encounters.</summary>

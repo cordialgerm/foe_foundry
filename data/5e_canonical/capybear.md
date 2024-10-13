@@ -1,6 +1,8 @@
 <MonsterName/>Capybear</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Capybear is a medium-sized monstrosity with a neutral alignment, embodying a unique blend of traits that makes it an interesting creature for adventurers to encounter. With a challenge rating of 1, it provides moderate difficulty in combat scenarios and can be a formidable opponent thanks to its solid hit points and various abilities. The Capybear excels in environments like swamps, utilizing its camouflage and pack tactics to gain an advantage over its foes. However, its intelligence is notably low, which may impact its strategic decision-making during encounters. Overall, it poses a good balance between offense and defense without overwhelming players, making it a captivating addition to Dungeons & Dragons.</summary>
 
 <detail>

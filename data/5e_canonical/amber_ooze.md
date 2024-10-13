@@ -1,6 +1,8 @@
 <MonsterName/>Amber Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>7</AC>
+<HP/>76</HP>
 <summary>The Amber Ooze is a formidable foe within its environment, characterized by its large, amorphous body that allows it to navigate various terrains with ease. This unaligned ooze possesses a significant number of hit points, making it quite durable in combat. Its strengths include damage immunities to poison and resistance to many physical damage types from nonmagical attacks, granting it exceptional survivability. However, it has very low Dexterity, making it less effective in situations that rely on agility. The Amber Ooze is primarily a melee attacker that can engulf foes, a mechanic that could prove devastating if it manages to ensnare characters in its grasp. Its capabilities of movement through trees without hindrance and ability to navigate difficult surfaces only enhance its tactical options in battle.</summary>
 
 <detail>

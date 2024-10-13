@@ -1,6 +1,8 @@
 <MonsterName/>Nyctli</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>7</HP>
 <summary>The Nyctli is a tiny fey creature characterized by its chaotic evil nature. Known for its mischievous and malevolent demeanor, the Nyctli excels in stealth and surprising its opponents with its unique abilities. With a moderate armor class of 14 and limited hit points totaling 7, it is relatively fragile in direct combat. However, its high Dexterity and specialized abilities give it the edge to evade attack and inflict status effects on its foes. Its primary weaknesses include low physical stats such as Strength and Constitution, making it vulnerable in direct melee confrontations. Notably, the Nyctli can also manipulate lighting conditions, providing tactical advantages in combat.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Manabane Scarabs</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Swarm of Manabane Scarabs is a formidable and unique creature that fills the role of a pestilent magical antagonist in combat, particularly adept at combat against spellcasters. With a Challenge Rating of 4, boasting good defenses and hit points, this swarm has a latent capability to disrupt magic, making it a significant threat in encounters where spellcasting is prevalent. Its abilities allow it to drain magic items and become temporarily immune to certain spells, which can frustrate players relying on magical abilities. However, despite its strengths, the swarm lacks offensive prowess when it comes to direct attacks, reflected in its relatively low strength score of 3. Additionally, it cannot regain hit points or gain temporary hit points, making it susceptible to sustained damage if enemies manage to effectively target it.</summary>
 
 <detail>

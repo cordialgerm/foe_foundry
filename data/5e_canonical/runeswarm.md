@@ -1,6 +1,8 @@
 <MonsterName/>Runeswarm</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>15</AC>
+<HP/>150</HP>
 <summary>The Runeswarm is a large unaligned construct that combines formidable defenses with a complex array of magical abilities. With an Armor Class of 15 and a substantial pool of hit points totaling 150, this creature can endure considerable damage in combat. It has a flying speed of 60 feet, allowing it to maneuver quickly and evade attacks. Although it possesses a very low Strength score, indicating poor physical power, its Dexterity score of 20 (+5) grants it exceptional agility, enabling it to avoid many attacks. It also has noteworthy Charisma and Constitution scores, allowing it to impose magical effects and shrug off spells efficiently. However, its low Intelligence reflects a lack of cognitive ability, which may limit its tactical awareness during engagements. The Runeswarm excels in resilience due to various resistances and immunities, making it a challenging opponent in battle.</summary>
 
 <detail>

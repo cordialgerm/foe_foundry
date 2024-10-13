@@ -1,6 +1,8 @@
 <MonsterName/>Zouyu</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>17</AC>
+<HP/>114</HP>
 <summary>The Zouyu is a huge chaotic good monstrosity that exudes an aura of wild energy and unpredictable tactics. Its exceptional Dexterity and ability to manipulate luck make it a formidable foe in combat, while its high Armor Class and significant hit points allow it to endure substantial damage. The creature excels in mobility, boasting the ability to quickly cover vast distances, but it has vulnerabilities, particularly to thunder damage. With access to a variety of abilities that enhance its attack effectiveness and disrupt opponent actions, the Zouyu is both a resilient combatant and a strategic supporter for its allies.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Mammoth</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>6</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>126</HP>
 <summary>A Mammoth is a massive, woolly beast resembling an enormous elephant with long, curved tusks. These creatures once roamed icy tundras and cold forests, using their tusks to dig through snow and ice to reach vegetation. Mammoths are powerful and resilient, able to crush enemies with their weight or gore them with their tusks. Despite their size, they are generally peaceful herbivores, but they will defend their herd or territory with ferocity if threatened. Mammoths are symbols of strength and endurance in many cultures, revered for their size and majesty.</summary>
 
 <summary>The Mammoth is a massive creature representing a powerful and persistent force on the battlefield. As a Huge Beast with significant hit points and a formidable challenge rating, it excels in melee combat, capable of dealing heavy damage through its physical attacks. With a strong Strength score of 24, it has exceptional modifiers for its attack rolls and damage, making it a reliable frontline fighter. However, its low Dexterity score indicates that it may struggle with agility and evasive maneuvers. Despite its strengths in raw power, the Mammoth's limited intelligence and charisma scores suggest that it may not be particularly adept in social interactions or complex strategies.</summary>

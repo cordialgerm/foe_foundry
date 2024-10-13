@@ -1,6 +1,8 @@
 <MonsterName/>Giant Constrictor Snake</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>60</HP>
 <summary>A Giant Constrictor Snake is an enormous serpent that can grow to over 30 feet in length. It is a fearsome predator, capable of wrapping its muscular body around its prey and squeezing with crushing force. These snakes are typically found in jungles or swamps, where they ambush their prey from the water or dense vegetation. Once they have ensnared their victim, they constrict tightly until the prey is suffocated. Despite their size, Giant Constrictor Snakes are stealthy and patient hunters, using their camouflage to remain unseen until it's too late.</summary>
 
 <summary>The Giant Constrictor Snake is a formidable creature, classified as a Huge Beast that thrives in various environments, including land, water, and trees, with a notable speed of 30 feet for walking, climbing, and swimming. This snake has an Armor Class of 12 and total Hit Points of 52, which means it can withstand a moderate amount of damage in combat. With a Challenge Rating of 2, it poses a moderate threat to parties but can be particularly dangerous when it employs its characteristics effectively. The snake's Strength is very good at 18, providing it with significant physical power, while its Dexterity and Constitution are average. However, its Intelligence, Wisdom, and Charisma values are surprisingly low, which reflects its primitive nature. The Giant Constrictor Snake excels at grappling opponents, constricting their movements, and dealing with substantial biting damage.</summary>

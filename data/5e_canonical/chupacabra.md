@@ -1,6 +1,8 @@
 <MonsterName/>Chupacabra</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>36</HP>
 <summary>The Chupacabra is a small monstrosity that operates independently of any alignment. This creature is known for its distinctive predatory behavior and has capabilities that make it a notable threat to unsuspecting adventurers. With a moderate armor class of 13 and 36 hit points, it is relatively resilient for its challenge rating of 1/2, which generally indicates that it poses a low to moderate threat. The Chupacabra specializes in stealthy attacks, leveraging its good Dexterity and exceptional Strength to inflict damage while remaining hard to detect. However, its low Intelligence and Charisma suggest it lacks social finesse and strategic planning when engaging with other creatures. </summary>
 
 <detail>

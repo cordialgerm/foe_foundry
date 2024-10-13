@@ -1,6 +1,8 @@
 <MonsterName/>Berstuc</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>11</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Berstuc is a formidable Large Fiend of chaotic evil alignment, noted for its cunning and strength. With a Challenge Rating of 11, it presents a significant challenge for adventurers, boasting strong offensive capabilities, high durability, and various abilities that can manipulate the battlefield. The Berstuc's natural armor provides a robust Armor Class of 18, and its substantial hit points allow it to withstand considerable damage. Its physical attributes are impressive, with a Strength score of 22 contributing to its powerful attacks. This creature is particularly dangerous in forested environments, where its abilities allow it to conceal itself and ambush unsuspecting foes. Additionally, it is resistant to a variety of damage types and immune to poison. While it excels in stealth and deception, the Berstuc's reliance on its natural terrain can sometimes be a weakness if fought in open spaces.</summary>
 
 <detail>

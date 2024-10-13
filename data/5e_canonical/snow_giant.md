@@ -1,6 +1,8 @@
 <MonsterName/>Snow Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>11</AC>
+<HP/>138</HP>
 <summary>The Snow Giant is a huge and formidable creature, classified as a neutral giant. It possesses considerable physical strength, exceptional constitution, and notable resilience, making it a powerful opponent in battle. With an Armor Class of 11, it is relatively easy to hit, but its substantial Hit Points of 138 grant it substantial durability – translating to a good amount of damage before it is incapacitated. The Snow Giant is particularly effective in snowy environments, where it can take advantage of its camouflage and special regenerative abilities. However, it has vulnerabilities to fire damage, which can be a significant weakness to exploit in combat. Overall, this creature serves as a strong melee attack option while posing environmental challenges to adventurers.</summary>
 
 <detail>

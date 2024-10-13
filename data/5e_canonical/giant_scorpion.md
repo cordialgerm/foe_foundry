@@ -1,6 +1,8 @@
 <MonsterName/>Giant Scorpion</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>52</HP>
 <summary>A Giant Scorpion is a massive, predatory arachnid with a hard exoskeleton, large pincers, and a long, venomous stinger at the end of its tail. These creatures are typically found in deserts, caves, or other arid environments, where they use their pincers to capture prey and their stingers to deliver a deadly dose of venom. Giant Scorpions are territorial and aggressive, attacking anything that comes too close to their burrows. Their tough exoskeleton provides natural armor, making them difficult to injure, and their pincers can crush bones with ease.</summary>
 
 <summary>The Giant Scorpion is a formidable creature found in many wilderness and dungeon environments. As a large beast, it serves primarily as a predator or guardian in its territory. Its strengths lie in its decent armor class of 15, providing a good level of protection, and its ability to deal significant damage through its claws and sting attacks. With 52 hit points, the scorpion can endure several rounds of combat. However, its challenge rating of 3 indicates that while it is a credible threat, it is suitable for mid-level adventuring parties. Notably, the Giant Scorpion has a very low intelligence and charisma, making it less effective in social situations and tactics that require cunning.</summary>

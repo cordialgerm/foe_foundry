@@ -1,6 +1,8 @@
 <MonsterName/>Bouda</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Bouda is a medium-sized fiend characterized by its neutral evil alignment. This creature excels in combat due to its impressive physical attributes and abilities. With a high Armor Class of 15, substantial hit points totaling 93, and a formidable challenge rating of 5, the Bouda is a resilient opponent. Its superior Strength score of 19 grants it very good melee attack capabilities. However, it has weaknesses against magic and silvered weapons, which can bypass its resistances. With its diverse skills and innate powers, the Bouda stands as a cunning adversary proficient in ambush tactics, making it a potent foe in any encounter.</summary>
 
 <detail>

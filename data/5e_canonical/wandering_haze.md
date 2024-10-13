@@ -1,6 +1,8 @@
 <MonsterName/>Wandering Haze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>170</HP>
 <summary>The Wandering Haze is a gargantuan ooze with a unique and unsettling nature, acting as a formidable presence on the battlefield. With a high Armor Class of 16 due to its natural armor and an impressive pool of 170 hit points, it can withstand considerable damage. It has a movement speed of 5 feet on the ground but is capable of flying at 40 feet, making it flexible in positioning. The creature's challenge rating of 10 suggests that it is an appropriate foe for a group of adventurers, providing a significant challenge with a reward of 5,900 experience points upon defeat. </summary>
 
 <detail>

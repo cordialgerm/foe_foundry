@@ -1,6 +1,8 @@
 <MonsterName/>Mummy Lord</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>15</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>97</HP>
 <summary>A Mummy Lord is a powerful undead ruler, often a former king or high priest preserved through ancient rituals. Unlike ordinary mummies, Mummy Lords retain their intelligence and magical abilities, using dark magic to curse and control their enemies. Their decayed, bandage-wrapped bodies are imbued with powerful necromantic energy, making them nearly impervious to most forms of attack. Mummy Lords command legions of undead and are often found guarding ancient tombs filled with riches. They can curse enemies with a mere touch, and their presence alone can cause dread and despair in those who face them.</summary>
 
 <summary>The Mummy Lord is a formidable undead creature with a medium size classification, embodying the horrors of ancient curses and necromancy. With an impressive Armor Class of 17 and a substantial pool of hit points totaling 221, the Mummy Lord stands as a resilient adversary. Its challenge rating of 15 indicates that it is intended for high-level encounters, rewarding players with 13,000 experience points upon defeat. The creature excels in ranged and melee combat with abilities that cause severe status effects like the Mummy Rot curse, making it a significant threat in both combat and strategy. However, like many undead, it has its vulnerabilities, particularly to fire damage, which can cause it to ignite.</summary>

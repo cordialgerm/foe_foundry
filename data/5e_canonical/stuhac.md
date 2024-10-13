@@ -1,6 +1,8 @@
 <MonsterName/>Stuhac</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>209</HP>
 <summary>The Stuhac is a medium-sized fiend known for its neutral evil alignment and formidable combat capabilities. With a challenge rating of 13, this creature presents a significant threat to adventurers, boasting a high armor class of 18 due to its natural armor, along with 209 hit points derived from 22d8 plus an additional 110. One of its notable strengths lies in its impressive attributes, particularly its strength and constitution, which are exceptional at +6 and +5 respectively, making it a formidable opponent in direct combat. The Stuhac is also versatile, with strong dexterity and wisdom scores, allowing for decent agility and perception. However, it is vulnerable to magical attacks that deal nonmagical bludgeoning or piercing damage, as it has resistances to various elemental damage types. Its intelligence and charisma are less noteworthy, suggesting it may not excel in magical abilities beyond its specific traits.</summary>
 
 <detail>

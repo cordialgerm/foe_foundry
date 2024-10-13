@@ -1,6 +1,8 @@
 <MonsterName/>Zoryas</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>104</HP>
 <summary>Zoryas are medium celestial beings with a lawful good alignment, embodying the principles of light and order. They act as protectors and guides, often intervening in mortal matters to uphold justice and assist those in need. With a solid hit point pool and decent armor class, the Zoryas can endure in combat, leveraging their magical abilities to gain an edge. Their ability to regenerate provides them with longevity in battle, although they are vulnerable to necrotic damage. With proficiency in charisma saving throws and impressive wisdom stats, Zoryas are especially potent against magical effects and possess remarkable insight and perception skills. Their unique abilities allow them to deal significant radiant or fire damage, manipulate light and darkness, and open celestial gateways, making them formidable and versatile opponents.</summary>
 
 <detail>

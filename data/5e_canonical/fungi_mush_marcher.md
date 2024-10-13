@@ -1,6 +1,8 @@
 <MonsterName/>Fungi, Mush Marcher</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Mush Marcher is a large neutral plant creature that embodies the essence of fungal life. It is characterized by its strong physical attributes and the ability to deal substantial damage through physical attacks and debilitating spore effects. With an armor class of 13, bolstered by natural armor, and hit points totaling 85, this creature can endure a significant amount of punishment in combat. Its challenge rating of 3 indicates that it can pose a moderate challenge to adventurers. The Mush Marcher is particularly effective in controlling the battlefield with its abilities, especially its Mycelial Harpoon and Slowing Spores, allowing it to hinder the movement and actions of its foes while delivering damage. However, it is vulnerable to thunder damage and cannot communicate verbally, which may limit its strategic capabilities in various encounters.</summary>
 
 <detail>

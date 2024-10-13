@@ -1,6 +1,8 @@
 <MonsterName/>Citrullus</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Citrullus is a medium-sized plant creature that embodies a blend of defensive and offensive capabilities, making it a notable adversary in combat. With an Armor Class of 15 due to its natural armor, it can withstand considerable damage while boasting 85 hit points. The Citrullus exhibits impressive strength with a Strength score of 18, translating to a very good +4 modifier that enhances its physical attacks. However, it suffers from a poor Dexterity score of 8, which provides a bad -1 modifier, limiting its agility and reflexes. This plant is particularly vulnerable to bludgeoning damage but is immune to acid, giving it some resilience in specific combat situations. The Citrullus is also able to appear as a normal melon plant while stationary, giving it stealth-like qualities.</summary>
 
 <detail>

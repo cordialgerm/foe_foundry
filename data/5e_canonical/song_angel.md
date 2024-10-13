@@ -1,6 +1,8 @@
 <MonsterName/>Song Angel</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Song Angel is a powerful celestial creature embodying lawful good, standing large among its peers. It possesses notable strengths such as a high Charisma, which enhances its spellcasting and ability to support allies, as well as exceptional resistances to nonmagical attacks and certain conditions. With a solid Armor Class of 15 and a generous pool of hit points totaling 76, it can sustain itself in combat while also dealing substantial damage with its magical attacks. Moreover, its ability to cast spells innately and support allies with its special abilities makes it a formidable presence on the battlefield, although it is somewhat reliant on its saving throws and the efficacy of its spells, requiring careful positioning and planning.</summary>
 
 <detail>

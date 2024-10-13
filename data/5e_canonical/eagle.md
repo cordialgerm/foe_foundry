@@ -1,6 +1,8 @@
 <MonsterName/>Eagle</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>12</AC>
+<HP/>3</HP>
 <summary>An Eagle is a large bird of prey known for its sharp talons, keen eyesight, and graceful flight. It soars through the sky, using its incredible vision to spot prey from great distances. Eagles are often symbols of strength and freedom, admired for their independence and hunting prowess. In the wild, they hunt small mammals, fish, and birds, diving at great speeds to capture their prey with deadly precision. Eagles are also known to defend their nests fiercely, and while they are not magical creatures, their natural agility and strength make them formidable in their own right.</summary>
 
 <summary>The Eagle is a small beast known for its keen eyesight and swift flying abilities. With an Armor Class of 12, it can take a hit but has limited resilience due to its low hit points of just 3. The Eagle's primary strengths lie in its Dexterity of 14, which grants it a good attack bonus when it strikes with its talons, and its exceptional perception skills. However, it has very poor strength with a score of 6, making it ineffectual in melee combat beyond its unremarkable talon attack. This creature is best utilized for reconnaissance and support, rather than as a direct combatant.</summary>

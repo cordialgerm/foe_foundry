@@ -1,6 +1,8 @@
 <MonsterName/>Forgotten God</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>10</CR>
+<AC/>17</AC>
+<HP/>161</HP>
 <summary>The Forgotten God is a powerful celestial being that embodies divine attributes, boasting a formidable presence due to its high armor class and hit points. This creature operates primarily as a damage dealer and controller on the battlefield, utilizing a combination of melee attacks and potent spells. With a challenge rating of 10, it poses a significant threat to adventurers. The Forgotten God possesses exceptional physical and magical defenses, making it resilient to many forms of attack, while its impressive Charisma and Wisdom allow it to manipulate the battlefield and impose effects on foes. However, its spellcasting is flawed, introducing a degree of unpredictability, and it may not always act in accordance with its divine alignment.</summary>
 
 <detail>

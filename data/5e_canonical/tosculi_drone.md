@@ -1,6 +1,8 @@
 <MonsterName/>Tosculi Drone</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>22</HP>
 <summary>The Tosculi Drone is a small humanoid creature that embodies a lawful evil alignment, making it a strategic and cunning adversary in combat. It has a moderate amount of hit points at 22, which can sustain it through a few rounds of battle. Its strengths lie primarily in its dexterity, allowing it to be agile and accurate, coupled with its special abilities that enhance cooperative combat tactics. However, it has low strength and charisma, making it less effective in physical confrontations where brute force is needed or when interacting socially. While its challenge rating is relatively low at 1/2, it can become more formidable when paired with other Tosculi or when leveraging its unique abilities.</summary>
 
 <detail>

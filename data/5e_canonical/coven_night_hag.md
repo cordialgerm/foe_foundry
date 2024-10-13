@@ -1,6 +1,8 @@
 <MonsterName/>Coven Night Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>17</AC>
+<HP/>120</HP>
 <summary>The Coven Night Hag is a Medium Fey creature known for its sinister and manipulative nature. It has a powerful presence on the battlefield, marked by a formidable armor class of 17 and a substantial pool of hit points totaling 120, derived from rolling 16d8 plus an additional 48 from its Constitution. With a challenge rating of 7, the Night Hag is a force to be reckoned with for mid-level adventurers, offering a challenging encounter that can alter the course of a campaign. This hag excels in spell resistance and has several unique abilities that can inflict debilitating curses on its foes while manipulating their fears. However, it has vulnerabilities typical of spellcasters, such as reliance on maintaining its distance and its focus on cunning rather than brute strength.</summary>
 
 <detail>

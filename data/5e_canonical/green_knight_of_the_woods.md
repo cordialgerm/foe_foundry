@@ -1,6 +1,8 @@
 <MonsterName/>Green Knight of the Woods</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>20</AC>
+<HP/>78</HP>
 <summary>The Green Knight of the Woods is a formidable Medium-sized fey creature known for its strong defensive capabilities and unique combat mechanics. It embodies a lawful neutral alignment, making it a strict enforcer of order within its domain. With an impressive armor class of 20 and a high hit point total of 78, the Green Knight is quite durable in battle. Its strengths lie in its magical resistance and the ability to compel foes into melee combat, ensuring it can dominate the battlefield. However, its vulnerabilities include susceptibility to cold iron attacks and a limited range of offensive spells. Overall, the Green Knight is a powerful adversary, challenging the might of adventurers with its skills and unique abilities.</summary>
 
 <detail>

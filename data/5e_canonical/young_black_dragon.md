@@ -1,6 +1,8 @@
 <MonsterName/>Young Black Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>127</HP>
 <summary>A Young Black Dragon is a fierce and cunning predator, already showing the cruelty and greed that will grow as it ages. Its glossy black scales glisten like wet obsidian, and its acidic breath is potent enough to melt armor and flesh. Young Black Dragons prefer to dwell in swamps or other decaying environments, where they use the murky waters to their advantage, ambushing prey with deadly precision. They are highly territorial and will go to great lengths to protect their hoard and hunting grounds. Despite their youth, they are formidable opponents, feared for their ruthlessness.</summary>
 
 <summary>The Young Black Dragon is a formidable foe in combat, characterized by its size and abilities that make it both fearsome and versatile. It boasts an impressive Armor Class of 18, allowing it to effectively defend against attacks, and a substantial pool of hit points totaling 144, which makes it resilient in prolonged battles. This dragon can navigate multiple terrains with its ability to walk, fly, and swim, showcasing a speed that makes it agile and hard to pin down. With a Challenge Rating of 9, it poses a significant threat to adventurers, capable of delivering high damage while harnessing innate magical powers. However, despite its strengths, it is essential for players to devise strategies to overcome its abilities, particularly with regard to its high damage potential and environmental advantages.</summary>

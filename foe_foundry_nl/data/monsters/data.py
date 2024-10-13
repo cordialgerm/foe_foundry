@@ -10,6 +10,10 @@ class MonsterInfo:
     path: Path
     creature_type: str
     creature_subtypes: list[str]
+    cr: str
+    ac: int
+    hp: int
+    ac_detail: str | None
     source: str
     type: str
     text: str
@@ -22,6 +26,10 @@ class CanonicalMonster:
     is_srd: bool
     creature_type: str
     creature_subtypes: list[str]
+    cr: str
+    ac: int
+    hp: int
+    ac_detail: str | None
     infos: list[MonsterInfo]
     summary: str | None
     description: str | None
@@ -32,9 +40,18 @@ class CanonicalMonster:
             path.parent.mkdir(parents=True, exist_ok=True)
         with path.open("w", encoding="utf-8") as f:
             f.write(f"<MonsterName/>{self.name}</MonsterName>\n")
-            f.write(f"<CreatureType/>{self.creature_type}</CreatureType>\n\n")
+            f.write(f"<CreatureType/>{self.creature_type}</CreatureType>\n")
             for subtype in self.creature_subtypes:
                 f.write(f"<Subtype/>{subtype}</Subtype>\n")
+            f.write(f"<CR/>{self.cr}</CR>\n")
+
+            if self.ac_detail is not None:
+                f.write(f"<AC/>{self.ac} ({self.ac_detail})</AC>\n")
+            else:
+                f.write(f"<AC/>{self.ac}</AC>\n")
+
+            f.write(f"<HP/>{self.hp}</HP>\n")
+
             if self.description is not None:
                 f.write(f"<summary>{self.description}</summary>\n\n")
             if self.summary is not None:

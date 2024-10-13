@@ -1,6 +1,8 @@
 <MonsterName/>Ring Servant</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Ring Servant is a large construct creature that functions primarily as a powerful ally for its creator in combat scenarios. With a notable armor class of 15 due to its natural armor and a significant pool of hit points totaling 114, it is quite durable on the battlefield. This creature excels in melee combat, utilizing its strong physical attributes, particularly its impressive Strength score of 20, resulting in good attack modifiers. It possesses various resistances and immunities that make it a challenging opponent, especially against non-magical attacks. However, despite its high physical prowess, the Ring Servant is of neutral alignment and cannot initiate spoken communication, relying instead on its understanding of the creator's language. Its challenge rating of 8 denotes a moderate level of threat, making it a substantial foe for adventurers.</summary>
 
 <detail>

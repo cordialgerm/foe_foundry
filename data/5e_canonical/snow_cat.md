@@ -1,6 +1,8 @@
 <MonsterName/>Snow Cat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>13</HP>
 <summary>The Snow Cat is a medium-sized beast that thrives in snowy terrains, characterized by its agility and keen senses. It operates independently, as it is unaligned, making its motivations purely instinctual. With a challenge rating of 1/4, the Snow Cat is considered a low-level threat, primarily suited for skirmishes or to add flavor to winter-themed encounters. It boasts decent speed and climbing ability, alongside notable skills in stealth and perception, which contribute to its role as an ambush predator. While it can be a challenge for lower-level characters due to its ability to grapple surprised foes, its overall resilience is limited by its relatively low hit points.</summary>
 
 <detail>

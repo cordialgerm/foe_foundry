@@ -1,6 +1,8 @@
 <MonsterName/>Sprite</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (leather armor)</AC>
+<HP/>2</HP>
 <summary>A Sprite is a tiny, winged fey creature known for its sharp senses, stealth, and magical abilities. Sprites resemble miniature elves with insect-like wings, often found in enchanted forests or glades, where they protect nature from intruders. They are shy and elusive but fiercely protective of their homes. Sprites are skilled archers, using tiny bows tipped with sleep-inducing poison. They can also sense the emotions and intentions of others, making them excellent judges of character. While not aggressive by nature, Sprites will fight bravely to defend their territory.</summary>
 
 <summary>The Sprite is a tiny fey creature known for its agility and magical abilities. It has a low armor class of 14 and only 2 hit points, making it quite fragile in combat. However, its high Dexterity score of 18 (+4 modifier) allows it to be very evasive and effective in stealth, enabling it to remain undetected while flying at a speed of 40 feet. The Sprite serves as a charming but mischievous trickster, utilizing its spell-like abilities to create chaos on the battlefield. With a challenge rating of 1/4, it poses a minimal threat to more powerful adventurers. Its notable abilities, such as the ability to become invisible and its access to poison damage, can complicate encounters despite its low durability. This creature's greatest strengths lie in its speed, stealth capabilities, and magical effects that can manipulate the environment and others' perceptions.</summary>

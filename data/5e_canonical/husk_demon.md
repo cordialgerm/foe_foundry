@@ -1,7 +1,9 @@
 <MonsterName/>Husk Demon</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
 <Subtype/>demon</Subtype>
+<CR/>4</CR>
+<AC/>15</AC>
+<HP/>82</HP>
 <summary>The Husk Demon is a Medium fiend that embodies the chaotic and destructive nature of demonic entities. With a challenge rating of 4, it is a formidable opponent in combat, primarily using its life-draining abilities to weaken foes while restoring its own vitality. It possesses decent defenses with an armor class of 15 and a total of 82 hit points, allowing it to withstand a fair amount of damage. Its speed of 40 feet and ability to fly 25 feet enhances its mobility, making it a versatile threat on the battlefield. However, despite its strengths, the Husk Demon has a range of ability scores that indicate below-average physical prowess, particularly in strength, intelligence, and charisma, making it less effective in certain combat situations. </summary>
 
 <detail>

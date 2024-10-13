@@ -1,6 +1,8 @@
 <MonsterName/>Quiet Soul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Quiet Soul is a Medium undead creature characterized by its neutral evil alignment. This creature presents a significant threat in combat due to its ability to incapacitate opponents with its melancholic emanation, allowing it to control the battlefield effectively. With an Armor Class of 15 and 90 hit points, it poses a reasonable challenge, particularly at Challenge Rating 6, indicating that it provides moderate to advanced difficulty for adventuring parties. However, it is weakened by its low physical attributes, including a Strength score of 6, which is considered very bad for attacking or grappling, and a Dexterity score of 10, which is average. Its monstrous nature is enhanced by its exceptional Wisdom score of 18, granting it a very good perception skill, making it difficult for enemies to evade its influence.</summary>
 
 <detail>

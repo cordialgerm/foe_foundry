@@ -1,6 +1,8 @@
 <MonsterName/>Ophanim</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>16</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>200</HP>
 <summary>The Ophanim is a formidable celestial creature characterized by its lawful good alignment and significant powers, making it a reliable ally for heroic parties. This large being possesses not only high durability and magical abilities but also remarkable physical attributes, placing it among the stronger creatures in the Dungeons & Dragons universe. With a challenge rating of 16, it poses a serious threat to opponents but can serve as an invaluable guardian or guide for those who align with its ideals. Its strengths lie in its exceptional physical and magical defenses, as well as its potent spellcasting capabilities, while its weaknesses include vulnerability to non-magical attacks. Notably, the Ophanim possesses unique qualities, such as the ability to discern deception and resist many forms of magical influence.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Koralk</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>11</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Koralk is a formidable Large fiend classified as Lawful Evil, serving as a potentially challenging adversary for adventurers. With an Armor Class of 15, it possesses decent defensive capabilities, complemented by a significant pool of hit points totaling 136. The creature's capabilities are further enhanced by its impressive Strength score of 20, which grants it exceptional melee attack power. However, it has average Dexterity and Wisdom, indicating some vulnerabilities in those areas. The Koralk boasts potent offensive capabilities through a variety of attacks and special abilities, while also exhibiting strong resistances, particularly to poison and fire, making it a tricky foe to combat. Importantly, its immunity to certain conditions and advantages against magic solidify its role as a challenging opponent in combat scenarios.</summary>
 
 <detail>

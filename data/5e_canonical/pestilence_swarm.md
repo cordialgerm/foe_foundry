@@ -1,6 +1,8 @@
 <MonsterName/>Pestilence Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Pestilence Swarm is a medium beast characterized by its unaligned nature, and it embodies a menacing force in the realm of Dungeons & Dragons. This creature is primarily designed for ambush tactics and can incapacitate foes with its diseased bites while remaining dormant in darkness. With a Challenge Rating of 1, it presents a moderate threat to adventurers, particularly through its ability to inflict the sewer plague, which leads to debilitating conditions over time. However, its low hit points and reliance on ambush opportunities can be seen as weaknesses, making it vulnerable if confronted directly while exposed to light.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Mbielu</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Mbielu is a huge, unaligned beast that embodies both strength and resilience, making it a formidable presence in combat. With a high Armor Class of 15 due to its natural armor and a substantial pool of 76 hit points, the Mbielu can endure significant damage while dishing out substantial retaliatory strikes. Its notable attributes include very good strength and good constitution, which enhance its physical attacks and durability, but it suffers from very bad intelligence and charisma, indicating a lack of mental acuity and charm. The Mbielu has a challenge rating of 3, providing it with a balanced level of threat that can challenge parties of varying levels. The creature excels at close-range combat, aided by its damaging tail attack and frightening bellow, while its toxic skin can incapacitate foes and inflict poison damage.</summary>
 
 <detail>

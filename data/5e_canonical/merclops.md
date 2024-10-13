@@ -1,6 +1,8 @@
 <MonsterName/>Merclops</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>7</CR>
+<AC/>13</AC>
+<HP/>126</HP>
 <summary>The Merclops is a formidable Huge Giant, known for its immense strength and resilience in combat. With a significant hit point pool of 126, it can withstand substantial damage, making it a tough opponent. Its primary strengths lie in its powerful melee attacks, access to advantageous abilities when frightened, and its ability to operate underwater, which can catch opponents off guard. However, it has a substantial weakness in ranged combat due to poor depth perception, resulting in disadvantage on all ranged attacks. This creature operates effectively in close quarters and is a force to be reckoned with, particularly in aquatic environments.</summary>
 
 <detail>

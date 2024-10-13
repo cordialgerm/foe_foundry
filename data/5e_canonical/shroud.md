@@ -1,6 +1,8 @@
 <MonsterName/>Shroud</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>13</HP>
 <summary>The Shroud is a Medium-sized undead creature imbued with a neutral evil alignment. It has distinct strengths in stealth and mobility, making it a cunning opponent on the battlefield. Its defenses are respectable, featuring immunities to necrotic and poison damage, along with resistances to a variety of other damage types. However, the Shroud is exceptionally vulnerable to radiant damage, which can be a critical weakness if faced with the right foes. With a Challenge Rating of 1/8, it acts best as a nuisance or a minor threat, primarily through its ability to weaken opponents with debilitating attacks and the potential to evolve into a more dangerous form—a shadow—if it successfully drains life from its enemies.</summary>
 
 <detail>

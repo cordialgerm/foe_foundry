@@ -1,6 +1,8 @@
 <MonsterName/>Derro Shadowseeker</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (studded leather)</AC>
+<HP/>112</HP>
 <summary>The Derro Shadowseeker is a small humanoid creature that embodies chaotic evil, adept in stealth and unpredictable movements. With a notable armor class of 17, it is quite resilient in combat, boasting a substantial pool of hit points totaling 112. This creature can be a formidable opponent due to its dexterous nature, featuring an exceptional Dexterity score of 20 which translates to a +5 modifier. Shadowseekers excel in agility and evasion, making them challenging targets in battle, but they are weakened by exposure to sunlight, suffering from disadvantage on attacks and Wisdom checks that require sight. Their ability to use the environment to their advantage, along with a potent sneak attack feature, makes them excellent ambushers and skirmishers on the battlefield.</summary>
 
 <detail>

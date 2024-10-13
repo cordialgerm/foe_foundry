@@ -1,6 +1,8 @@
 <MonsterName/>Salamander</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>Salamanders are serpentine creatures native to the Elemental Plane of Fire, with bodies made of molten metal and flame. They are intelligent and cunning, often serving powerful fire-wielding beings or ruling their own fiery realms. Salamanders have the ability to generate intense heat, causing objects and creatures near them to burn. In combat, they use spears and their burning touch to ignite their enemies. Salamanders are often found in volcanic regions or near sources of intense heat in the Material Plane. Their fiery nature makes them dangerous opponents for those unprepared for intense heat.</summary>
 
 <summary>The Salamander is a large elemental creature known for its connection to fire and its formidable physical prowess in combat. With an Armor Class of 15 and a substantial 90 hit points, it presents a durable opponent. Its challenge rating of 6 indicates that it offers a moderate challenge to groups of adventurers, being able to deal significant damage while also avoiding certain attacks due to its damage immunities and resistances. Notably, the Salamander’s body is always heated, creating a dangerous environment for those who grapple with it or strike it in melee range. However, it is vulnerable to cold damage, which can temporarily neutralize some of its defensive capabilities.</summary>

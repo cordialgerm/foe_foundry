@@ -1,6 +1,8 @@
 <MonsterName/>Animated Instrument</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>17</HP>
 <summary>The Animated Instrument is a tiny construct that serves the unique role of a support character in combat. This creature has an unaligned nature, providing versatility without alignment constraints. With an Armor Class of 12 and 17 hit points, it is not particularly durable but possesses certain resistances and immunities that make it difficult for most attacks to be effective. Its primary strength lies in its ability to influence creature behavior through music, making it a tactical companion on the battlefield. However, it has major drawbacks, such as its low strength and intelligence, rendering it ineffective in direct confrontation and strategy. Notably, its effectiveness is hampered in the presence of antimagic fields, making it vulnerable to spells that could nullify its powers.</summary>
 
 <detail>

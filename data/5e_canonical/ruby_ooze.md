@@ -1,6 +1,8 @@
 <MonsterName/>Ruby Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>6</CR>
+<AC/>9</AC>
+<HP/>93</HP>
 <summary>The Ruby Ooze is a Medium unaligned ooze creature that embodies a deceptive and hazardous element in combat. With a challenge rating of 6, it presents a significant threat due to its ability to inflict both bludgeoning and acid damage, alongside unique abilities that can shock and overwhelm unsuspecting adventurers. While its Armor Class is low at 9, the ooze has a substantial pool of Hit Points at 93, making it resilient against attacks. Its strength lies in surprise attacks and its corrosive nature, which can wear down weapons and ensnare foes. However, it is vulnerable to lightning damage, and its low Dexterity score results in poor evasion against ranged attacks.</summary>
 
 <detail>

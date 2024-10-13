@@ -1,6 +1,8 @@
 <MonsterName/>Ostinato</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>15</AC>
+<HP/>39</HP>
 <summary>The Ostinato is a medium-sized aberration with a chaotic neutral alignment, known for its unique abilities and reliance on psychic manipulation. Its armor class is 15, making it moderately protected in combat, while it has 39 hit points derived from rolling six dice of eight plus an additional twelve. With a movement speed of 50 feet, it can maneuver effectively on the battlefield. The creature has a challenge rating of 4, allowing it to be a notable encounter for a party, yielding 1,100 experience points upon defeat. Ostinatos are distinctive for their chaotic and unpredictable nature, harnessing a combination of spell-like abilities and their knack for creating a disorienting musical environment that can be both beneficial and detrimental to their foes.</summary>
 
 <detail>

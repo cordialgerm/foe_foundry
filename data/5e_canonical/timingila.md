@@ -1,6 +1,8 @@
 <MonsterName/>Timingila</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>232</HP>
 <summary>The Timingila is a gargantuan monstrosity that embodies the nature of chaos and destruction. This creature is neutral evil, thriving in aquatic environments and capable of devastating attacks both in and out of water. With a solid Armor Class of 18, it boasts a substantial pool of hit points totaling 232, making it a challenging adversary for any party. The creature excels in close-quarters combat through its various melee attacks and has the unique capacity to obliterate structures thanks to its Siege Monster ability. While it has exceptional strength indicated by a Strength score of 28, its Dexterity is very poor, reflecting how slow and clumsy it is on land. Being primarily an aquatic creature, its ability to only breathe underwater limits its versatility outside of its oceanic domain.</summary>
 
 <detail>

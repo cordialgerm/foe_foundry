@@ -1,6 +1,8 @@
 <MonsterName/>Moon Nymph</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>13</AC>
+<HP/>110</HP>
 <summary>The Moon Nymph is a medium-sized aberration characterized by its chaotic neutral alignment. This creature is formidable in combat, boasting a strong combination of psychic and radiant damage abilities, which makes it particularly dangerous. With its powerful magic resistance and the ability to disappear in darkness or bright light, the Moon Nymph is both elusive and damaging. A total of 110 hit points grants it substantial endurance in battle, but its relatively low strength indicates it is not built for physical confrontations. Instead, the Moon Nymph relies on its dexterity and charisma to outmaneuver opponents and manipulate the battlefield effectively.</summary>
 
 <detail>

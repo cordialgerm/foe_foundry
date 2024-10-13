@@ -1,6 +1,8 @@
 <MonsterName/>Parzz’val</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>115</HP>
 <summary>Parzz’val is a large aberration embodying chaotic evil, known for its devastating capabilities in combat as well as its strategic use of area control through its unique abilities. With an armor class of 14, it relies on its natural armor to withstand attacks, while boasting a significant pool of 115 hit points, making it a challenging adversary rated at a challenge level of 8, which translates to 3,900 experience points for defeating it. Its movement speed is a nimble 50 feet, allowing it to engage or retreat efficiently during encounters. Notably, the parzz’val is vulnerable to thunder damage but is immune to acid, bludgeoning, piercing, and slashing from non-magical attacks, making it resilient against physical damage types. Its ability to regenerate health at the start of each of its turns adds to its longevity in battle.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Golem, Tar</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Tar Golem is a Medium Construct creature that embodies the raw, sticky nature of tar, serving as a formidable adversary in combat. Its primary strengths lie in its impressive resilience, with an Armor Class of 14 derived from natural armor and robust Hit Points totaling 119, which provides substantial durability. The golem is well-equipped for melee engagements with strong Slam attack capabilities, but its maneuverability is limited by a Dexterity score of 9, making it less effective in dexterous actions. A notable downside is its vulnerability to cold damage, while it boasts immunities to fire, poison, and psychic damage, as well as being impervious to non-magical physical attacks that are not made with adamantine weapons. Its construction allows it to function without the need for air, food, drink, or sleep, enhancing its effectiveness as a relentless combatant.</summary>
 
 <detail>

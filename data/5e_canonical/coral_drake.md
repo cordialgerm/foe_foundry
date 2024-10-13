@@ -1,6 +1,8 @@
 <MonsterName/>Coral Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Coral Drake is a Medium-sized dragon known for its neutral evil alignment. It is a formidable creature that thrives in aquatic environments, using its abilities to maintain stealth and combat effectiveness underwater. The Coral Drake has a challenging presence in combat, boasting a strong combination of physical attacks and special abilities that make it a serious threat. With high hit points, strong melee attacks, and the ability to inflict poison damage, it stands out among its peers. However, its reliance on aquatic habitats can be viewed as a weakness when faced with adventurers in non-water settings. </summary>
 
 <detail>

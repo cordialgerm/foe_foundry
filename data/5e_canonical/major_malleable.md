@@ -1,6 +1,8 @@
 <MonsterName/>Major Malleable</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>10</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>218</HP>
 <summary>The Major Malleable is a sprawling and chaotic aberration that embodies the concept of fluidity and unpredictability in combat. This Huge creature operates under a chaotic evil alignment, leveraging its unique abilities to manipulate its form and absorb the strength of others. With a solid Armor Class of 13 and a substantial hit point pool of 218, the Major Malleable presents a formidable challenge in battle, especially with its ability to grapple and drain the life force of its adversaries. Although its Dexterity is relatively poor, leading to a bad modifier of -1, its Strength of 22 provides it with a very good +6 modifier for physical attacks. Its notable defenses include immunity to psychic damage and various conditions, making it resilient against mental assaults. The creature's challenge rating of 10 indicates a significant threat in encounters. </summary>
 
 <detail>

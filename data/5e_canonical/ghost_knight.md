@@ -1,6 +1,8 @@
 <MonsterName/>Ghost Knight</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (half plate)</AC>
+<HP/>130</HP>
 <summary>The Ghost Knight is a formidable undead creature characterized by its medium size, lawful evil nature, and spectral appearance. Serving as a dangerous opponent in combat, it possesses a high armor class and a substantial pool of hit points, making it resilient in battle. With a challenge rating of 7, the Ghost Knight is designed for mid-level encounters and can deal significant damage thanks to its magical weapon attacks and special abilities. Its strong melee capabilities are enhanced further when mounted on its loyal warhorse skeleton, which shares in its combat prowess. Notably, the Ghost Knight is immune to certain conditions and benefits from several advantageous combat features, but it is inherently vulnerable to radiant damage, which can exploit its undead nature.</summary>
 
 <detail>

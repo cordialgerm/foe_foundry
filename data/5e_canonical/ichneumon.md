@@ -1,6 +1,8 @@
 <MonsterName/>Ichneumon</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>11</CR>
+<AC/>16</AC>
+<HP/>123</HP>
 <summary>The Ichneumon is a formidable Large Monstrosity characterized by its impressive physical attributes and a set of advantageous abilities that make it a challenging foe in combat. With an armor class of 16, which can increase to 18 with its Mud Armor, and a substantial hit point total of 123, it displays good resilience in battle. The creature moves swiftly with a walking speed of 50 feet, allowing it to engage or retreat strategically during encounters. Its Challenge Rating of 11 signifies that it poses a significant threat, offering 7,200 experience points upon defeat. Notable strengths include its high Strength and Dexterity scores, granting it powerful melee attacks and good evasiveness. However, its low Intelligence indicates that it may struggle with tasks requiring reasoning or complex thought.</summary>
 
 <detail>

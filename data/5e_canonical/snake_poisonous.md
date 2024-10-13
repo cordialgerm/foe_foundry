@@ -1,6 +1,8 @@
 <MonsterName/>Snake, Poisonous</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>9</HP>
 <summary>The Poisonous Snake is a tiny beast that is primarily likely to serve in low-level encounters or as a trap for unsuspecting adventurers. With a Challenge Rating of 1/8, this creature is not particularly formidable in combat but is designed to exploit its agility and poison capabilities. It has a low Armor Class of 11 and only 9 hit points, making it quite fragile. However, its Dexterity modifier of +1 is considered average, allowing it to evade attacks reasonably well. The snake's primary strength lies in its ability to inflict additional poison damage, which can be detrimental to characters who fail their Constitution saving throws. Its main weaknesses are its low Strength and Constitution values, which limit its physical prowess and resilience in combat.</summary>
 
 <detail>

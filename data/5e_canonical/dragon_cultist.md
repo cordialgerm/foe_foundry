@@ -1,6 +1,8 @@
 <MonsterName/>Dragon Cultist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>39</HP>
 <summary>The Dragon Cultist is a medium humanoid creature who serves the will of dragon masters, embodying a twisted devotion that manifests in various abilities. With an Armor Class of 12 and Hit Points totaling 39, they can sustain a moderate amount of damage in combat. Their Challenge Rating of 2 indicates a moderate threat level for adventurers, providing 450 XP upon defeat. The Dragon Cultist has a blend of strengths and weaknesses, notably benefiting from good Dexterity and Wisdom scores, which enhance their agility and spellcasting. However, their average Strength and Intelligence, combined with a lack of heavy armor, makes them less effective in direct melee combat.</summary>
 
 <detail>

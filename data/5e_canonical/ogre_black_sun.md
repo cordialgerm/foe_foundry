@@ -1,6 +1,8 @@
 <MonsterName/>Ogre, Black Sun</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>8</CR>
+<AC/>17</AC>
+<HP/>152</HP>
 <summary>The Black Sun Ogre is a formidable foe within its challenge rating of 8, indicating it poses a significant threat to adventurers. Its large size and lawful evil alignment suggest a dangerous and cunning creature that can act both brutishly and strategically. With a robust armor class of 17, bolstered by its infernal tattoos, it is well-protected. The ogre boasts a substantial pool of hit points at 152, allowing it to withstand considerable punishment in combat. Its high strength score of 20 provides it with exceptional melee capabilities, while its respectable constitution and charisma scores enable it to further dominate on the battlefield and in any potential social encounters.</summary>
 
 <detail>

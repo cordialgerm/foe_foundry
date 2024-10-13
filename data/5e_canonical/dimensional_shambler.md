@@ -1,6 +1,8 @@
 <MonsterName/>Dimensional Shambler</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Dimensional Shambler is a large aberration embodying a neutral evil alignment. It serves as a formidable foe, capable of inflicting psychological terror and significant physical harm. The creature boasts high hit points and strong physical attributes that make it a compelling opponent in combat. Its exceptional Strength, Dexterity, and Intelligence scores allow it to deal substantial damage while maintaining excellent evasive maneuvers. However, the Dimensional Shambler does have some weaknesses, such as a vulnerability to magical attacks which can bypass its resistances. Notably, it possesses abilities that manipulate space and the minds of its adversaries, making it a unique threat in any encounter.</summary>
 
 <detail>

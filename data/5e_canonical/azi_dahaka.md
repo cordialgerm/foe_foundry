@@ -1,6 +1,8 @@
 <MonsterName/>Azi Dahaka</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>14</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>157</HP>
 <summary>Azi Dahaka is a huge dragon embodying chaotic evil, renowned for its formidable presence in battle. As an apex predator, it boasts high durability with an Armor Class of 15 and a substantial Hit Points total of 157, ensuring it can withstand significant damage in combat. Its flying speed of 80 feet allows for impressive mobility, making it difficult for enemies to pin it down. With a Challenge Rating of 14, it poses a considerable threat, granting 11,500 experience points upon defeat. The creature excels in melee combat, wielding powerful bite and claw attacks, while its array of special abilities amplifies its resilience and tactical versatility. However, it is vulnerable to magical attacks that penetrate its defenses, highlighting a strategic avenue for opponents.</summary>
 
 <detail>

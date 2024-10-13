@@ -1,6 +1,8 @@
 <MonsterName/>Young Silver Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>168</HP>
 <summary>A Young Silver Dragon is a graceful and kind creature, its metallic silver scales gleaming in the sunlight. It has a powerful breath weapon that can unleash freezing cold, making it a formidable defender of the innocent. Young Silver Dragons are often found in cold, mountainous regions, where they protect nearby settlements from monsters or evil forces. They are known for their wisdom and generosity, often taking an interest in the affairs of mortals and providing guidance or aid when necessary. They prefer to avoid conflict but will fight fiercely when the safety of others is at stake.</summary>
 
 <summary>The Young Silver Dragon is a formidable creature that serves as both a powerful adversary and an iconic ally for characters within the Dungeons & Dragons universe. With a challenge rating of 10, it presents a significant threat with its impressive physical attributes, strong magical capabilities, and excellent defenses. Possessing immunity to cold damage, along with high hit points and a good armor class, it is particularly resilient in combat. The dragon's special abilities allow it to thrive in lofty environments without harm, and its innate spellcasting adds another layer of strategy in encounters. While it has strong offensive abilities and formidable breath weapon attacks, the Young Silver Dragon is not without limits, as its lower Wisdom and Intelligence scores suggest potential vulnerabilities in certain tactical situations.</summary>

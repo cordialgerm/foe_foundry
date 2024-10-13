@@ -1,6 +1,8 @@
 <MonsterName/>Wood Herald</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Wood Herald is a small plant creature that embodies the essence of nature and acts as a guardian of the woods. With a moderate Armor Class of 13 and 27 hit points, it can withstand a fair amount of damage, particularly considering its resistances to exhaustion and various debilitating conditions. While it moves slowly with a speed of 20 feet, it can climb with the same efficiency. The Wood Herald is a Challenge Rating of 1/2, making it a manageable foe for lower-level adventurers. It excels in environments that offer cover, thanks to its Plant Camouflage ability, allowing it to become significantly harder to detect when surrounded by foliage. It can attack using physical strikes or ranged thorns, and its special reactions can punish melee attackers.</summary>
 
 <detail>

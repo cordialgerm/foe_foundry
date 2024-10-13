@@ -1,6 +1,8 @@
 <MonsterName/>Young Red Dragon Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>11</CR>
+<AC/>16</AC>
+<HP/>178</HP>
 <summary>The Young Red Dragon Zombie is a formidable Large Undead creature, embodying the terrifying aspects of both dragons and the undead. It possesses a strong combination of durability and offensive capabilities, boasting an impressive 178 hit points and a high Armor Class of 16. While it lacks agility due to a low Dexterity score, its exceptional Strength and Constitution make it a powerhouse in combat, capable of delivering powerful attacks and taking substantial damage. However, its intelligence and charisma are markedly low, suggesting a creature driven by instinct rather than cunning. This makes the Young Red Dragon Zombie a dangerous but straightforward adversary, particularly in environments where its fire-based abilities can be fully utilized. </summary>
 
 <detail>

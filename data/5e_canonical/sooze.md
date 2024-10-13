@@ -1,6 +1,8 @@
 <MonsterName/>Sooze</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>49</HP>
 <summary>The Sooze is a Medium-sized Aberration characterized by its unique ability to alter its form and characteristics based on its chosen roles: Laborer or Warrior. As a lawful neutral creature, it can serve multiple purposes in a party, such as a robust frontline combatant or a resilient support unit. With a reasonable Armor Class of 12 and hit points totaling 49, it is moderately durable. The Sooze's challenges and strengths stem from its significant versatility; however, it is inherently vulnerable when isolated, lacking overwhelming offensive capabilities apart from its special abilities and traits.</summary>
 
 <detail>

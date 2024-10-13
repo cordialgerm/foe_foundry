@@ -1,6 +1,8 @@
 <MonsterName/>Crystalline Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Crystalline Devil is a Medium-sized fiend with a lawful evil alignment. This creature is notable for its ability to disguise itself as an ordinary gemstone, making it an effective ambush predator. Its significant strengths include robust defenses provided by natural armor and high hit points, allowing it to withstand considerable damage in combat. The Crystalline Devil's duality of forms—capable of transforming into a gemstone or revealing its true fiendish nature—provides it with unique tactical options. Notable abilities include charm effects that can incapacitate opponents, as well as magical resistance that enhances its survivability. However, it is vulnerable to attacks made with silvered weapons, which can bypass its impressive resistances.</summary>
 
 <detail>

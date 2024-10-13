@@ -1,6 +1,8 @@
 <MonsterName/>Rust Monster</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>27</HP>
 <summary>A Rust Monster is a strange, insect-like creature that feeds on metal. Its antennae can detect and rust metal objects, which it consumes as its primary food source. Rust Monsters are often found in caverns, ruins, or near forges, where they search for discarded weapons, armor, or other metal objects. Though not aggressive towards living creatures, they are highly dangerous to adventurers due to their ability to destroy metal equipment. Their appetite for metal makes them a bane to anyone carrying armor or weapons made of iron or steel.</summary>
 
 <summary>The Rust Monster is a medium-sized monstrosity known for its unique ability to corrode and destroy metal objects, making it a significant threat to adventurers who rely on metallic weapons and armor. With an armor class of 15 and 27 hit points, it can endure a fair amount of punishment, but its challenge rating of 1/2 indicates that it is best approached with caution rather than brute strength. It is particularly effective against characters who use nonmagical metal equipment, as its special abilities can severely weaken or destroy these items. However, its intelligence is notably low, and it relies more on instinct and sensory abilities than strategic thinking. </summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Qiqirn</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>38</HP>
 <summary>The Qiqirn is a small monstrosity known for its stealth and agility on the battlefield. With an Armor Class of 14 and 38 hit points, it can endure a moderate amount of damage, making it a cunning opponent for adventurers. It possesses a Challenge Rating of 2, which indicates it can provide a decent challenge for lower-level parties, offering them 450 experience points upon defeat. Notably, the Qiqirn has very high Dexterity with a value of 18 (+4), allowing it to excel in stealth and ranged maneuvers. However, its intelligence is quite low, sitting at 5 (-3), making it relatively easy to outwit. Despite its weaknesses, the Qiqirn can inflict significant damage and is capable of causing fear in its adversaries. </summary>
 
 <detail>

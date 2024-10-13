@@ -1,6 +1,8 @@
 <MonsterName/>Scarecrow</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>31</HP>
 <summary>The Scarecrow is a medium-sized construct, designed to resist fear and create terror among the living while being strategically used by its creator. Its strengths lie in its ability to instill fear in opponents and its very good Dexterity that allows it to evade attacks effectively. While it has some inherent defenses like damage immunities and resistances, it is vulnerable to fire, which can cause ongoing damage. The Scarecrow's subpar Intelligence and Constitution suggest that it may not be great in tactics but can function effectively as an unsettling presence on the battlefield with the right abilities and tactics. With a challenge rating of 1, it is suitable for low-level encounters but can create significant challenges if used cunningly.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Walking Stick</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Giant Walking Stick is a large, unaligned beast that inhabits forested areas. With a Challenge Rating of 4, it serves as a formidable opponent or an unexpected ally in combat due to its unique abilities and behaviors. It has a robust defense with an Armor Class of 14 derived from its natural armor and possesses 76 hit points, allowing it to endure significant damage. The creature can move effectively in various ways: it can walk at 30 feet, climb at 40 feet, and fly at 15 feet, granting it versatile movement options to navigate its environment and avoid threats. Its strengths lie in its camouflage and the ability to surprise foes, while its weaknesses include a lack of intelligence and charm, limiting its interaction capabilities.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Shambling Mound</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>A Shambling Mound is a mass of rotting vegetation animated by natural or magical forces. These plant-based creatures are slow-moving but incredibly strong, using their tendrils to ensnare and crush their prey. Found in swamps, forests, and other overgrown areas, Shambling Mounds consume both animals and plants, absorbing their nutrients to sustain their hulking form. They are resilient, capable of regenerating from wounds, and their plant-like nature allows them to blend into their environment, making them dangerous ambush predators. In battle, they use their bulk and strength to overwhelm foes, slowly crushing them within their tangled bodies.</summary>
 
 <summary>The Shambling Mound is a large plant creature that serves as a formidable opponent in combat. It possesses a robust physical presence, making it a challenge at a challenge rating of 6, which translates to a worth of 2,300 experience points for defeating it. With an armor class of 15 and an impressive 123 hit points, this creature can endure significant damage while being able to deal harm in return. The Shambling Mound excels in grappling opponents and can absorb lightning damage, turning what would be harmful to it into healing. However, it suffers from weaknesses to certain types of damage, particularly that which is not resisted by its immunities. Its low Dexterity hampers its agility, making it predictable in movement.</summary>

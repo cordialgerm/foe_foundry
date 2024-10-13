@@ -1,6 +1,8 @@
 <MonsterName/>Iron Ghoul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>143</HP>
 <summary>The Iron Ghoul is a formidable undead creature that embodies a terrifying blend of speed, strength, and resilience. With a lawful evil alignment, it operates under a twisted sense of purpose, often acting as an enforcer of dark wills. Its attributes reflect exceptional physical power, particularly in strength, which is crucial for its melee attacks. The Iron Ghoul possesses significant durability with a challenging armor class of 16 and a robust pool of hit points totaling 143, making it a tough opponent for adventurers. While immune to poison damage and resistant to conditions like being charmed, the Iron Ghoul can turn the tide in battle with its powerful attacks that can inflict debilitating diseases and paralysis on its victims. However, it is slow in movement, which can be a strategic disadvantage if caught at range.</summary>
 
 <detail>

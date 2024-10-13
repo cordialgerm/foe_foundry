@@ -1,6 +1,8 @@
 <MonsterName/>Invisible Stalker</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>6</CR>
+<AC/>14</AC>
+<HP/>104</HP>
 <summary>An Invisible Stalker is an elemental spirit of air summoned to the Material Plane to carry out tasks, usually hunting or tracking down specific targets. As its name suggests, it is completely invisible, making it nearly impossible to detect. Invisible Stalkers are relentless in their pursuit, following their quarry across any distance until they complete their mission. They are silent, patient, and deadly, using their invisibility and mastery of stealth to ambush their targets. Though bound to serve those who summon them, Invisible Stalkers are intelligent and can resent their servitude, sometimes twisting their orders to cause harm.</summary>
 
 <summary>The Invisible Stalker is a Medium Elemental creature known for its stealth and tracking abilities, making it a formidable presence on the battlefield. With an Armor Class of 14 and a substantial pool of Hit Points, totaling 104, it can withstand a fair amount of damage while remaining elusive. Its Challenge Rating is 6, suggesting it poses a moderate threat to adventurers, offering 2,300 XP upon defeat. The Invisible Stalker possesses high Dexterity and Strength, with Dexterity at 18 (+4), making its stealth capabilities exceptional, and Strength at 16 (+3) allows for decent melee damage. While it is immune to poison and resistant to damage from nonmagical weapons, it excels in conditions that grant it even greater survivability. The Stalker can easily navigate both the physical and mystical realms due to its elemental nature, which allows it to move through the world without needing air or rest. </summary>

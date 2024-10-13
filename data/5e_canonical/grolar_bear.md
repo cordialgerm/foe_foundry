@@ -1,6 +1,8 @@
 <MonsterName/>Grolar Bear</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural)</AC>
+<HP/>68</HP>
 <summary>The Grolar Bear is a formidable large beast that strikes a balance between power and resilience, making it a notable predator in its environment. With high strength and decent constitution, it can deal significant physical damage while also withstanding attacks. The bear possesses a surprising ability to swim and climb, enhancing its mobility in various terrains. It operates unaligned, indicating that it does not have moral inclinations that could sway its actions. However, its low intelligence suggests a creature driven mainly by instinct rather than strategy or cunning. Given its challenge rating of 3, it presents a solid challenge to adventurers seeking to engage with it.</summary>
 
 <detail>

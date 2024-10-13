@@ -1,6 +1,8 @@
 <MonsterName/>Titanoboa</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>12</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>232</HP>
 <summary>The Titanoboa is a gargantuan beast that serves as a formidable predator in the wilds, boasting significant physical strength and impressive defenses. With an armor class of 14 due to its natural armor and a substantial pool of hit points totaling 232, it can withstand considerable damage before being defeated. Its challenge rating of 12 indicates it presents a considerable challenge for a party of adventurers, and its ability to attack multiple times each round elevates its threat level. Notable strengths include its powerful bite, capable of inflicting piercing damage, as well as its constricting attack that can restrain and incapacitate foes. However, its weaknesses come from its low Dexterity, which hinders its maneuverability and responsiveness in battle.</summary>
 
 <detail>

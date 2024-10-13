@@ -1,6 +1,8 @@
 <MonsterName/>Pech</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>33</HP>
 <summary>The Pech is a small elemental creature that embodies a neutral good alignment, known for its mastery of stone and earth. Standing out with an Armor Class of 15 due to its natural armor, the Pech boasts a decent pool of hit points totaling 33, thanks to its Constitution score of 14, which gives it good resilience in battle. The Pech is also uniquely adapted for navigation within rocky environments, able to climb with a speed of 10 feet and walk at a rate of 20 feet. With a Challenge Rating of 2, it provides around 450 experience points to those who defeat it. Notable for its immunity to poison and various conditions such as exhaustion and paralysis, the Pech presents a unique challenge, especially considering its special abilities, which grant it resilience and powerful melee attacks.</summary>
 
 <detail>

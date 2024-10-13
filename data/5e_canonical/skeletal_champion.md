@@ -1,6 +1,8 @@
 <MonsterName/>Skeletal Champion</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>15</AC>
+<HP/>58</HP>
 <summary>The Skeletal Champion is a Medium undead creature that serves as a formidable opponent in combat, especially noted for its resilience and attack capabilities. With a challenge rating of 3, it poses a significant threat to adventurers, especially those who are unprepared for its particular defenses. This undead warrior is well-rounded, boasting a good Armor Class of 15 and 58 hit points, making it a robust foe in battle. Its strengths lie primarily in its physical attributes, particularly strength and dexterity, both rated at +3, indicating above-average combat proficiency. However, it is vulnerable to bludgeoning damage, which can be a crucial weakness for adventurers to exploit. Its undead nature grants it immunity to poison damage and conditions such as fatigue and being poisoned, which further enhances its durability in encounters.</summary>
 
 <detail>

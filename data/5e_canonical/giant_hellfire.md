@@ -1,6 +1,8 @@
 <MonsterName/>Giant, Hellfire</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>168</HP>
 <summary>The Giant Hellfire is a formidable creature characterized by its immense size and neutral good alignment. It serves a significant role as a guardian or protector, utilizing both its physical might and magical abilities in combat. With a high Armor Class of 16 and substantial Hit Points totaling 168, it boasts a resilient presence in battles. The Giant Hellfire is particularly effective in dealing fire damage, thanks to its magical weapon attacks which inflict additional fire damage. Its challenge rating of 9 indicates it presents a moderate threat to adventurers, earning it 5,000 experience points upon defeat. One of its notable abilities is Death Malison, which can severely hinder nearby creatures upon its death.</summary>
 
 <detail>

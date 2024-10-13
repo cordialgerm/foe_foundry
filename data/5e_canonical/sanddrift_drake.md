@@ -1,6 +1,8 @@
 <MonsterName/>Sanddrift Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Sanddrift Drake is a formidable dragon-type creature that thrives in sandy environments, exhibiting both agility and resilience. With a large frame and natural armor giving it a solid Armor Class of 16, it is quite difficult to hit. The drake possesses a hefty pool of 102 hit points, making it capable of sustaining considerable damage during encounters. It is strong in Dexterity and Constitution, granting it good saving throws and skill-based actions. However, its intelligence and charisma are notably low, making it less effective in situations involving mental acuity or persuasion. The Sanddrift Drake's notable abilities include its proficiency in stealth and its capacity to burrow through sand, allowing it to ambush unsuspecting foes. While it is immune to fire damage, it does take reduced damage from poison, and it boasts an array of dangerous attacks and abilities that make it a significant threat in combat.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ogre, Cunning Artisan</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (breastplate)</AC>
+<HP/>119</HP>
 <summary>The Cunning Artisan Ogre is a large, neutral evil giant known for its unexpected intelligence and magical prowess, distinguishing it from typical ogres. With a significant challenge rating of 5, this creature poses a notable threat to adventurers, boasting high hit points and effective combat abilities. Its special abilities allow it to utilize magic with its weapon attacks, as well as to detect and manipulate magical items, making it a formidable opponent. However, its weaknesses lie in its limited mobility and average dexterity, which can be exploited by agile foes. The Cunning Artisan's unique combination of brute strength and cunning intelligence makes it a versatile adversary in any encounter.</summary>
 
 <detail>

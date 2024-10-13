@@ -1,6 +1,8 @@
 <MonsterName/>Xiphus</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>55</HP>
 <summary>The Xiphus is a small yet formidable fey creature, embodying chaotic evil and capable of swiftly maneuvering through combat while inflicting devastating damage. With a challenge rating of 5, it presents a considerable threat to unprepared adventurers. The Xiphus excels in agility and dexterity, boasting an exceptional Dexterity score of 21, which grants it a high bonus on attack rolls, defensive capabilities, and skills such as acrobatics and stealth. It is resilient against lightning damage, allowing it to regenerate health when hit by such attacks. However, despite its weaknesses, the Xiphus's strategic abilities enable it to manipulate the flow of battle, turning the tide in its favor with various unique abilities and powerful attacks.</summary>
 
 <detail>

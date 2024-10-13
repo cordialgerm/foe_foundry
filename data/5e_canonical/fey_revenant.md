@@ -1,6 +1,8 @@
 <MonsterName/>Fey Revenant</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Fey Revenant is a formidable creature that embodies both the cunning and danger of the fey realm, classified as large and lawful evil. With 161 hit points and an exceptional armor class of 19 due to its natural armor, it proves to be a tough opponent in combat. It possesses high dexterity and constitution scores, making it good at dodging attacks and resilient to damage. However, it is vulnerable to sunlight, suffering disadvantage on attacks and perception checks while exposed. The Fey Revenant excels in stealth and has several powerful abilities, including magical resistance, making it challenging to overcome with spells. This monster's unique mobility through shadows and its ability to cause damage through touch make it a versatile threat.</summary>
 
 <detail>

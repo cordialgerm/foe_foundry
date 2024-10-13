@@ -1,6 +1,8 @@
 <MonsterName/>Bull</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>25</HP>
 <summary>The bull is a large, unaligned beast typically found in pastoral and rural environments. It has a robust physical presence characterized by strong attacks and reasonable durability, making it a formidable creature for its Challenge Rating of 1/4, which is relatively low. With an armor class of 11, it has average defensive capabilities, while its 25 hit points grant it good staying power in combat. The bull excels in melee combat with high strength and effective attacks but lacks intelligence, wisdom, and charisma, indicating it is mostly a brute without any social tact or understanding.</summary>
 
 <detail>

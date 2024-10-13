@@ -1,6 +1,8 @@
 <MonsterName/>Kongamato</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Kongamato is a large, unaligned beast known for its ferocity in combat and immense strength. With high natural armor and a considerable pool of hit points, this creature is a formidable opponent that can withstand significant damage while delivering powerful attacks of its own. Its movement capabilities include a fast walking speed and limited flight, allowing it to maneuver effectively in various environments. However, despite its physical prowess, the Kongamato has very low intelligence and charisma scores, which reflect its lack of social or tactical acumen. It serves as a challenging foe for adventurers, particularly with its unique abilities that disrupt standard combat strategies.</summary>
 
 <detail>

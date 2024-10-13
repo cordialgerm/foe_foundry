@@ -1,6 +1,8 @@
 <MonsterName/>Wraith</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>13</AC>
+<HP/>67</HP>
 <summary>A Wraith is a malevolent, incorporeal undead creature that embodies death and darkness. It appears as a shadowy, wisp-like figure with glowing eyes, floating silently through the air. Wraiths are driven by a burning hatred for all life, and their touch drains the life force from living beings, turning their victims into wraiths or lesser undead. They are immune to most physical attacks and can pass through walls or objects, making them difficult to fight. Wraiths are often found in ancient crypts or haunted places, serving as guardians for cursed treasures or as agents of necromancers.</summary>
 
 <summary>The Wraith is a Medium Undead creature that embodies fear and death, often serving as a formidable opponent for adventurers. It has a significant challenge rating of 5, reflecting its potency and the threat it poses to any who cross its path. Wraiths are known for their incorporeal nature, allowing them to move freely through obstacles, and their ability to sap life from their victims. With an Armor Class of 13 and 67 hit points, they can withstand a moderate amount of damage but should not be underestimated due to their unique abilities and resistances. Notably, they are immune to necrotic and poison damage, making them especially dangerous in encounters with characters relying on such attack types. Wraiths excel in dealing necrotic damage and controlling the battlefield with fear, but their Light Sensitivity makes them vulnerable when exposed to bright light.</summary>

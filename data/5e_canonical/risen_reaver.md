@@ -1,6 +1,8 @@
 <MonsterName/>Risen Reaver</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (studded leather)</AC>
+<HP/>168</HP>
 <summary>The Risen Reaver is a formidable undead creature that embodies chaotic evil, serving as both a relentless attacker and a terrifying presence on the battlefield. With a high armor class and a significant pool of hit points, it can withstand considerable damage while delivering powerful melee attacks. Its strength and constitution scores are impressive, making its physical attacks particularly dangerous. The Risen Reaver is not only resilient but also possesses a unique ability to absorb nonmagical melee weapons, enhancing its combat capabilities. While it lacks intelligence and wisdom, which limits its strategic options and awareness, its exceptional mobility and blood sense make it a menacing opponent that can pinpoint the location of living foes. </summary>
 
 <detail>

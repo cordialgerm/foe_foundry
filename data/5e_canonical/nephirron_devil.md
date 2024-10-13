@@ -1,6 +1,8 @@
 <MonsterName/>Nephirron Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>16</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>225</HP>
 <summary>The Nephirron Devil is a formidable creature within the Dungeons & Dragons universe, classified as a Huge Fiend of lawful evil alignment. Known for its cunning and lethal capabilities, it possesses exceptional physical strength and magical prowess. With an Armor Class of 19, it boasts impressive defensive abilities complemented by a substantial pool of Hit Points at 225. The Nephirron's mobility is noteworthy, with a walking speed of 40 feet and the capability to fly at 80 feet, allowing it to ambush or escape effectively. It operates at a Challenge Rating of 16, marking it as a significant threat for adventurers, with an experience reward of 15,000 XP. With numerous immunities and resistances, this devil is particularly resilient against various forms of damage, and its ability to deceive and manipulate makes it a dangerous adversary in both combat and social encounters.</summary>
 
 <detail>

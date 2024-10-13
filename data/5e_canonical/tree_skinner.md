@@ -1,6 +1,8 @@
 <MonsterName/>Tree Skinner</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>38</HP>
 <summary>The Tree Skinner is a Medium-sized chaotic evil fiend that poses a significant threat to adventurers and those who venture too close to its wooded domain. With an Armor Class of 13 and a total of 38 hit points, it presents a moderate challenge, rated at Challenge Level 2, making it suitable for lower to mid-level parties. The creature's high Dexterity score of 16 (+3) makes it agile and difficult to hit, while its Charisma score of 18 (+4) enhances its interactions, giving it a forceful presence. The Tree Skinner’s primary strength lies in its ability to utilize trees as concealment, allowing it to blend in as a normal tree when motionless. However, its vulnerabilities include a susceptibility to fire damage and a limited capacity to inhabit a single tree for only three days before needing to relocate. </summary>
 
 <detail>

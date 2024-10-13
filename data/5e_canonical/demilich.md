@@ -1,6 +1,8 @@
 <MonsterName/>Demilich</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>18</CR>
+<AC/>20</AC>
+<HP/>159</HP>
 <summary>The Demilich is a powerful and eerie undead creature that serves as a formidable opponent in combat. Drawing from its magical background, it possesses exceptional intelligence and charisma, making it a master of manipulation and defense. With an Armor Class of 20 and 159 hit points, it can withstand considerable damage, while its ability to fly enhances its mobility on the battlefield. The Demilich excels in debilitating foes, stealing their souls, and using them to heal itself, making it a dangerous entity that can shift the tide of battle in its favor. However, its reliance on souls for sustenance means that if faced with opponents who can destroy its soul gems, it becomes vulnerable. </summary>
 
 <detail>

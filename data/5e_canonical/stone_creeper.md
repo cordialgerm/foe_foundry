@@ -1,6 +1,8 @@
 <MonsterName/>Stone Creeper</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>30</HP>
 <summary>The Stone Creeper is a Medium-sized plant creature that functions effectively as a cunning ambush predator in its environment. Not aligned to any particular cause, it relies on its deceptive abilities and climbing skills to outmaneuver foes. With a modest armor class of 12, it is somewhat resilient, boasting 30 hit points thanks to its constitution score of 16, which grants it a good level of durability. The Stone Creeper's movement capabilities are notable; it can walk at a speed of 30 feet and climb at 20 feet, allowing it to navigate both ground and vertical spaces with ease. Despite its lower intelligence, wisdom, and charisma scores, it compensates with advantages in dexterity and constitution, giving it a good foundational ability for evasion and survival. It has a challenge rating of 1, providing 200 experience points upon defeat, marking it as a suitable encounter for lower-level adventurers.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Hound of the Night</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Hound of the Night is a large and formidable monstrosity, serving as a powerful adversary in combat. With exceptional physical attributes, particularly in Strength and Dexterity, it exhibits both brute force and agility, making it a threat in close confrontations. The creature has good defensive capabilities with a respectable Armor Class of 15 and a substantial hit point pool of 112, which allows it to sustain damage in battle. It also possesses the ability to deal both piercing and cold damage, making it versatile in its attacks. However, it has a vulnerability to fire damage, which can be exploited by wise adventurers. Its tracking abilities make it particularly dangerous when hunting down fleeing foes, especially those of fey origin.</summary>
 
 <detail>

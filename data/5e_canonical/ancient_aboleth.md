@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Aboleth</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>11</CR>
+<AC/>17</AC>
+<HP/>342</HP>
 <summary>The Ancient Aboleth is a formidable aberration primarily characterized by its immense size and psychic abilities. As a huge creature, it boasts a high armor class of 17 and a substantial pool of hit points totaling 342, making it exceptionally durable in combat. With a challenge rating of 11, the Aboleth poses a significant threat to adventurers, especially due to its capability to manipulate weaker minds and severely afflict them through its diseases and psychic attacks. Its amphibious nature allows it to thrive in both water and air, enhancing its versatility on the battlefield. While it boasts impressive intelligence and wisdom that exceed average levels, its dexterity is only average, meaning its physical dexterity is less noteworthy compared to its mental faculties. The Aboleth can effectively attack in close range with its tentacles and utilizes insidious spells and abilities to hinder opponents while bolstering its own position, making it a dangerous adversary for any party.</summary>
 
 <detail>

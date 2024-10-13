@@ -1,6 +1,8 @@
 <MonsterName/>Awakened Tree</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>59</HP>
 <summary>An Awakened Tree is a massive, ancient tree brought to life by magic. Towering over most creatures, it moves slowly on thick, root-like legs, and its gnarled branches creak and sway as it walks. Though peaceful by nature, an Awakened Tree is immensely strong and can crush or batter foes with its heavy branches if provoked. These creatures are often protectors of sacred groves or enchanted forests, watching over the land for centuries. They can communicate telepathically with other plant creatures and have a deep connection to nature, defending it from any who would seek to harm it.</summary>
 
 <summary>The Awakened Tree is a massive plant creature that exudes an eerie presence in the natural world. Functioning primarily as a guardian or protector of its territory, it possesses notable strength and resilience, making it a formidable opponent in combat. With a high strength score of 18, the Awakened Tree can deal substantial damage, whereas its dexterity is notably low, which means it is not very agile. Despite its vulnerabilities, particularly to fire damage, it possesses some resistance to bludgeoning and piercing attacks, allowing it to withstand physical confrontations better than average opponents. This creature's challenge rating of 2 indicates it is suitable for encounters with lower-level parties, making it a reasonable opponent, especially in areas where it can blend in with its surroundings. </summary>

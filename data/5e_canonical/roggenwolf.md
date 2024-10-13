@@ -1,6 +1,8 @@
 <MonsterName/>Roggenwolf</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>60</HP>
 <summary>The Roggenwolf is a medium-sized monstrosity known for its neutral evil demeanor. It presents a balanced challenge to adventurers with a Challenge Rating of 2, providing a total of 450 experience points upon defeat. With an Armor Class of 13 and 60 hit points derived from 11d8+11, it can hold its own in combat. The Roggenwolf is a formidable opponent in encounters due to its decent speed of 40 feet, its proficiency in stealth, and its resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, unless they are made with silver, making it a tactically challenging foe. Its attributes reflect an agile and perceptive predator, boasting a strong Dexterity score of 16 (+3) and a good Strength score of 14 (+2), while its Intelligence is notably low at 5 (-3). Furthermore, this creature possesses the ability to instill fear in its enemies with a unique howl, making it a dangerous adversary in both ambushes and direct confrontations.</summary>
 
 <detail>

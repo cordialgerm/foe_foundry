@@ -1,6 +1,8 @@
 <MonsterName/>Ooze, Manure</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>1</CR>
+<AC/>7</AC>
+<HP/>45</HP>
 <summary>The Manure Ooze is a Medium-sized unaligned ooze that presents a unique challenge for adventurers due to its solid defenses and distinctive abilities. With an Armor Class of 7 and 45 hit points, it is not particularly difficult to hit, yet its damage immunities and condition immunities make it a formidable opponent in its element. Its challenge rating of 1 suggests it is appropriate for low-level encounters, granting 200 experience points upon defeat. The Manure Ooze has a Strength score of 14 (+2), allowing it to maintain a good physical presence in combat, while its Dexterity score is very bad at 5 (-3), indicating sluggishness in agility. The creature's Constitution score of 16 (+3) grants it exceptional durability, making it hard to take down, especially as it can regenerate health by consuming corpses. </summary>
 
 <detail>

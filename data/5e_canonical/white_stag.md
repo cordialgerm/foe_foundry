@@ -1,6 +1,8 @@
 <MonsterName/>White Stag</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The White Stag is a large celestial creature known for its chaotic good nature. It serves as a beacon of divine will and protection within the natural world. With a balance of agility and strength, it stands out as a formidable opponent in combat while also possessing unique abilities that can influence its interactions with adventurers and the environment around it. Although its armor class is moderate, its mobility and special abilities offer substantial advantages, including avoidance of difficult terrain and the potential to bestow curses on its foes. However, it also has a limited pool of hit points, making it vulnerable if it comes under concentrated attack.</summary>
 
 <detail>

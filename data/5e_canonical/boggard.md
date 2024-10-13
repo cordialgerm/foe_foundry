@@ -1,6 +1,8 @@
 <MonsterName/>Boggard</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>13</HP>
 <summary>The Boggard is a Medium humanoid creature known for its agility and amphibious nature, making it an adept swimmer and a competent stealthy combatant. With a low Armor Class of 12 and a modest hit point total of 13, the Boggard is not particularly durable in prolonged combat but can be dangerous due to its ability to move quickly and strike with advantage. It has a Challenge Rating of 1/4, making it a relatively weak opponent in terms of overall power, but its unique abilities make it an interesting addition to encounters, particularly in aquatic or swampy environments. The Boggard has a good Dexterity score, which enhances its stealth capabilities, but its other attributes are average, indicating a well-rounded but not particularly remarkable creature overall.</summary>
 
 <detail>

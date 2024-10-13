@@ -1,6 +1,8 @@
 <MonsterName/>Bloated Ghoul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Bloated Ghoul is a Medium-sized undead creature that embodies a sinister force with its neutral evil alignment. This creature has a stronger physique and greater resilience compared to typical ghouls, making it a notable adversary in combat. With an armor class of 14, it has good defense due to its natural armor, and it possesses a total of 142 hit points, making it quite durable. Its challenge rating of 6 indicates that it is a formidable opponent, suitable for parties of varied levels. The Bloated Ghoul's strengths lie in its solid Constitution and its unique abilities that enhance its survivability and damage potential, while its weaknesses include modest Dexterity and Intelligence scores.</summary>
 
 <detail>

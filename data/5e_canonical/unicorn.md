@@ -1,6 +1,8 @@
 <MonsterName/>Unicorn</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>5</CR>
+<AC/>12</AC>
+<HP/>67</HP>
 <summary>A Unicorn is a majestic, celestial creature with the body of a horse, a flowing mane, and a spiraled, magical horn on its forehead. These pure-hearted creatures are protectors of forests and sacred places, using their healing magic to aid the innocent and combat evil. Unicorns are often revered as symbols of purity and grace, and their presence can bring peace and serenity to the lands they inhabit. In battle, Unicorns use their horn to heal allies and defend against foes, and their magical abilities allow them to teleport and move swiftly across great distances. They are often seen as guardians of nature and allies to good-aligned beings.</summary>
 
 <summary>The unicorn is a majestic and powerful celestial creature known for its exceptional grace and benevolence. With a Challenge Rating of 5, it serves as a protector of the natural world and embodiments of purity and goodness. Its strengths lie in its formidable combat abilities, including both physical attacks and potent magical spells. The unicorn boasts high mobility with a walking speed of 80 feet, making it an agile presence in both combat and exploration scenarios. Its defensive capabilities are enhanced by an Armor Class of 14 and a substantial hit point total of 85, providing it the durability needed to withstand attacks. However, despite its strengths, the unicorn is still susceptible to some forms of magical effects that it does not resist. </summary>

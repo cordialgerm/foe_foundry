@@ -1,6 +1,8 @@
 <MonsterName/>Tveirherjar</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>18</AC>
+<HP/>102</HP>
 <summary>The Tveirherjar is a formidable undead creature characterized by its lawful evil nature. This Medium undead entity possesses a strong physical presence, with a notable Armor Class of 18, allowing it to withstand a significant amount of damage. With a total of 102 hit points, it can endure a fair amount of combat, making it a dangerous opponent. The Tveirherjar thrives in battle with its high strength and constitution, granting it advantages in physical attacks and resilience. Additionally, it has several fearsome abilities that enhance its combat prowess and its ability to track opponents effectively. Its main weaknesses include vulnerabilities to magical attacks due to resistance to non-magical damage and potential strategy counterplays from players who may be aware of its special abilities.</summary>
 
 <detail>

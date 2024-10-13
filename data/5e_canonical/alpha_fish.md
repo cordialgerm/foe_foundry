@@ -1,6 +1,8 @@
 <MonsterName/>Alpha Fish</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>59</HP>
 <summary>The Alpha Fish is a large, aquatic beast that serves as a formidable predator in its underwater habitat. With a high hit point total and average armor class, it can endure significant damage in combat. The Alpha Fish relies on its swimming speed to navigate quickly through water, making it agile in its environment. While it possesses an aggressive demeanor due to its "Too Aggressive" trait, which causes it to attack perceived threats indiscriminately, its intelligence is notably low, rendering it susceptible to illusions and tactics that exploit its lack of awareness. Its challenge rating of 3 signifies that it can provide a moderate challenge for low to mid-level adventurers.</summary>
 
 <detail>

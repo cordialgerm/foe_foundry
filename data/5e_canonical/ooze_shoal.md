@@ -1,6 +1,8 @@
 <MonsterName/>Ooze, Shoal</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>10</CR>
+<AC/>9</AC>
+<HP/>232</HP>
 <summary>The Shoal is a gargantuan ooze that primarily resides underwater and poses a unique threat due to its unusual ability to mimic a school of fish. Despite its low Armor Class of 9 and relative slowness on land, it boasts a substantial pool of Hit Points totaling 232, making it quite resilient in combat. The Shoal is a formidable opponent with a Challenge Rating of 10, which means it is designed to be a significant challenge for a party of adventurers. Its deceptive appearance and the ability to incapacitate enemies make it a dangerous enemy in aquatic environments. It shares a symbiotic relationship with fish, which enhances its capabilities further. However, its lack of intelligence and reliance on physical attacks can render it vulnerable to more strategic opponents. </summary>
 
 <detail>

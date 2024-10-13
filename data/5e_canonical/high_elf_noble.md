@@ -1,6 +1,8 @@
 <MonsterName/>High Elf Noble</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>13</HP>
 <summary>The High Elf Noble is a Medium humanoid creature, embodying elegance and charisma typical of high elf lineage. This character plays the role of a social manipulator and a skilled combatant, leveraging their high charisma and proficiency in deception, persuasion, and intimidation to exert influence in social encounters. With a modest challenge rating of 1/4, they are more suited for outsmarting opponents than direct confrontation, marking them as average in terms of hit points and armor class. The character's notable abilities in social interactions make them invaluable in diplomatic settings, but their weaknesses lie in their low physical strength and constitution, which limits their resilience in direct combat scenarios.</summary>
 
 <detail>

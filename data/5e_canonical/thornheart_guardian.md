@@ -1,6 +1,8 @@
 <MonsterName/>Thornheart Guardian</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Thornheart Guardian is a formidable large construct with a lawful evil alignment. Serving as a sentinel or protector, it boasts impressive defensive capabilities, including a high armor class of 18 and a substantial pool of hit points totaling 133. This creature excels in physical combat, utilizing its strong strength attribute of 19 to deliver devastating attacks. With its magical enhancements and immunities, it presents a significant threat to adventurers. Notably, it can resist various forms of damage while remaining unaffected by many conditions. However, its intelligence is low, meaning it lacks sophisticated tactical reasoning, which can be exploited by clever players.</summary>
 
 <detail>

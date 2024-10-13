@@ -1,6 +1,8 @@
 <MonsterName/>Young Shadow Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>10</CR>
+<AC/>17</AC>
+<HP/>114</HP>
 <summary>The Young Shadow Dragon is a formidable creature that embodies the darkness and malevolence inherent in its nature. As a Large Dragon, it possesses a combination of strong attributes, significant hit points, and a range of powerful abilities that make it a challenging opponent. With an Armor Class of 17 and 114 hit points, it can sustain damage while delivering lethal strikes with its multiattack feature, which allows it to bite and use its claws in a single turn. Its strengths include high physical and mental capabilities, notably a Charisma score of 18, granting it exceptional proficiency in deception and powerful innate spellcasting. The Young Shadow Dragon also has resistances to various damage types and can move incorporeally, adding to its tactical advantages in combat. However, it is spiritually bound to a specific area, meaning it is vulnerable when separated from this essence link. Overall, it presents a significant challenge for adventurers, with a challenge rating of 10.</summary>
 
 <detail>

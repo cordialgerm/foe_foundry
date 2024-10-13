@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Wolf Spirits</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>104</HP>
 <summary>The Swarm of Wolf Spirits is a formidable undead entity, both fearsome and mobile in combat. This creature, categorized as a Large Swarm and known for its neutrality towards good and evil, possesses a robust armor class of 16, indicating a good level of durability for a swarm. With a total of 104 hit points resulting from rolling 16 ten-sided dice and adding 16, it boasts an impressive health pool, making it a significant challenge for adventurers. The swarm's movement capabilities are exceptional, allowing it to walk 50 feet and fly at the same distance. Agile and stealthy, it has a Dexterity score of 18, which translates to a good modifier of +4, while its Strength and Constitution provide average to good modifiers of +2 and +1, respectively. This creature's challenge rating of 6 suggests it can effectively serve as a medium-level boss encounter. </summary>
 
 <detail>

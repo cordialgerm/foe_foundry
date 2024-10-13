@@ -1,6 +1,8 @@
 <MonsterName/>Wind Acolyte</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>105</HP>
 <summary>The Wind Acolyte is a Medium humanoid creature that embodies the essence of air and wind, capable of manipulating breezes and currents to its advantage. This neutral creature operates primarily as a spellcaster and ranged attacker, using its impressive dexterity and wisdom to outmaneuver opponents. With an Armor Class of 15, it can withstand moderate damage, while its 105 hit points, derived from 14d8+42, allow it to endure extended engagements. The Wind Acolyte boasts a flying speed of 50 feet, enabling high mobility, while its challenge rating of 5 indicates it is a formidable opponent, worth 1,800 XP to defeating adventurers. Though powerful in ranged combat and able to impose significant effects on its foes, it has no exceptional defenses against direct physical attacks.</summary>
 
 <detail>

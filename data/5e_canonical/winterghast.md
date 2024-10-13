@@ -1,6 +1,8 @@
 <MonsterName/>Winterghast</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>78</HP>
 <summary>The Winterghast is a sinister undead creature with a chaotic evil alignment, known for its ability to inflict debilitating cold and necrotic damage on its foes. With a medium size and a challenge rating of 4, it poses a significant threat to adventurers, particularly due to its ability to spread disease and cause paralysis. The Winterghast's strengths lie in its decent armor class of 13 and a robust hit point total of 78, providing it with durability in combat. However, its vulnerability to fire and lower Charisma make it susceptible to certain tactics. Notably, its abilities can create long-term complications for affected characters, making it a strategic encounter for players.</summary>
 
 <detail>

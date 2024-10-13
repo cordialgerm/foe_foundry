@@ -1,6 +1,8 @@
 <MonsterName/>Void Constructor</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>19 (natural)</AC>
+<HP/>43</HP>
 <summary>The Void Constructor is a Medium-sized neutral evil Construct known for its formidable presence and unique capabilities. It boasts a high Armor Class of 19 due to its natural defenses, making it a challenging opponent in combat. With 43 hit points, it can endure a fair amount of damage before being incapacitated. The Void Constructor has a challenge rating of 3, indicating a moderate difficulty for adventurers, yielding 700 experience points upon defeat. Its ability to fly at a speed of 30 feet while having a walking speed of 0 feet contributes to its tactical advantage in combat, allowing it to engage or evade as necessary. Notably, it possesses various immunities including necrotic, poison, and psychic damage, as well as several conditions, enhancing its resilience significantly.</summary>
 
 <detail>

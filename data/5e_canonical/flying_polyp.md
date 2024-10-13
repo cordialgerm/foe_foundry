@@ -1,6 +1,8 @@
 <MonsterName/>Flying Polyp</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>171</HP>
 <summary>The Flying Polyp is a formidable Huge Aberration embodying chaotic evil. Its extraordinary flight capabilities make it a challenging foe in combat, allowing it to engage from above while avoiding ground-based attacks. With a hefty number of hit points, high defenses through natural armor, and various resistances, it can sustain significant damage while dishing out its own. The polyp excels in controlling the battlefield with its unique abilities, particularly its Aura of Wind and Cyclone attack, which can force opponents to reposition or take substantial damage. However, it has vulnerabilities to lightning damage, requiring strategic planning from opponents who can exploit this weakness.</summary>
 
 <detail>

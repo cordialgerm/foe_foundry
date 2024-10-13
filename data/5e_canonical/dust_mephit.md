@@ -1,6 +1,8 @@
 <MonsterName/>Dust Mephit</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>17</HP>
 <summary>A Dust Mephit is a small, impish elemental creature made of swirling dust and sand. Its body constantly shifts and crumbles, as if it might blow away at any moment, and its wings are like torn, fluttering rags. Dust Mephits are mischievous and cruel, delighting in causing confusion and blinding their foes with clouds of dust. They are often found in desolate areas such as deserts or ruins, where they can hide in the swirling sands. In battle, they can exhale a cone of choking dust that blinds and disorients their enemies, and they may summon small dust storms to cover their escape.</summary>
 
 <summary>The Dust Mephit is a small elemental creature that embodies the essence of dust and earth. It possesses a unique combination of mobility and deceptive abilities, allowing it to navigate combat situations with agility while remaining elusive. With a moderate challenge rating of 1/2, it is a suitable opponent for low-level adventurers. The Dust Mephit has a decent Armor Class of 12, making it moderately difficult to hit. Its hit points total 17, providing it with a little durability in battle. One notable strength of the Dust Mephit is its ability to create blindness or incapacitate opposing characters with its special abilities. However, its low strength and constitution mean it is physically weak and not particularly durable against strong physical attacks. </summary>

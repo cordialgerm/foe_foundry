@@ -1,6 +1,8 @@
 <MonsterName/>Mountain Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>21</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>313</HP>
 <summary>The Mountain Giant is a gargantuan creature that embodies the raw power of the mountains. As a neutral evil being, it uses its immense physical strength and mastery of the terrain to dominate battles and instill fear. With a formidable Armor Class of 20, it is quite resistant to physical attacks, bolstered by a whopping 313 hit points, making it a long-lasting foe in combat. Its high Strength score of 26 offers exceptional melee capabilities, complemented by a solid Constitution score that enhances its durability. However, its Dexterity is average, leaving it somewhat vulnerable to ranged attacks. The Mountain Giant's abilities allow it to manipulate the environment and unleash devastating area attacks, making it a versatile threat on the battlefield.</summary>
 
 <detail>

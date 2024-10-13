@@ -1,6 +1,8 @@
 <MonsterName/>Gerridae</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Gerridae is a unique large fey creature that possesses both strengths and weaknesses, making it a notable presence in any encounter. While it has a decent armor class of 14 and a robust 76 hit points, its low speed of 20 feet limits mobility. The challenge rating of 1 indicates that it is suitable for low-level adventurers, providing 200 experience points upon defeat. It has excellent physical attributes, particularly in Strength (16) and Constitution (17), showcasing its ability to withstand attacks effectively. However, its Intelligence, Charisma, and even Wisdom scores are quite low, rendering it less competent in social or cognitive challenges. Its special abilities emphasize its aquatic nature and adaptability while engaging with riders.</summary>
 
 <detail>

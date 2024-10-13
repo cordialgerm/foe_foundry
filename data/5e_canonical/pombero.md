@@ -1,6 +1,8 @@
 <MonsterName/>Pombero</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Pombero is a medium-sized fey creature known for its chaotic nature and playful yet canny demeanor. With a sturdy armor class of 15 and a robust 90 hit points, it proves to be a formidable opponent despite its relatively low Challenge Rating of 3, which grants 700 experience points to those who defeat it. The Pombero possesses a well-balanced mix of physical strength and agility, demonstrated by its strength, dexterity, and constitution scores of 17, 16, and 16 respectively, all providing good to very good modifiers that enhance its physical effectiveness in combat. Furthermore, its charming capabilities and special traits grant it versatility in both combat and interaction with characters, making it a noteworthy adversary or ally.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Red Dragon Wyrmling (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>4</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Red Dragon Wyrmling is a fierce and fearsome creature, embodying the raw elemental power of fire with its dragon lineage. As a Medium-sized dragon, it has a significant presence in combat, showcasing a good mix of offensive abilities and defensive capabilities. With an Armor Class of 17 and 75 hit points, it is reasonably durable for its Challenge Rating of 4, making it a formidable foe for adventurers. Its strengths lie in its high Strength score of 18, which grants it an exceptional melee attack, as well as its immunity to fire damage. However, its Dexterity and Intelligence are more average, providing it with moderate agility and intellect, making it less effective in ranged combat and problem-solving situations. Overall, the Red Dragon Wyrmling remains a strong opponent, particularly in fiery environments where it can leverage its special abilities.</summary>
 
 <detail>

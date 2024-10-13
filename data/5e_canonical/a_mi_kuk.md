@@ -1,6 +1,8 @@
 <MonsterName/>A-mi-kuk</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>115</HP>
 <summary>The A-mi-kuk is a large aberration that presents a significant challenge to adventurers due to its unique abilities and resilience in combat. With a chaotic evil alignment, it thrives on creating fear and chaos among its foes. It possesses notable physical strength with a Strength score of 21, which is exceptional, allowing it to perform powerful melee attacks and grapple effectively. Its constitution score of 20 is also very good, providing it with substantial hit points and durability. However, the creature suffers from poor Dexterity, making it less evasive in combat. The A-mi-kuk's unique abilities, like its icy slime and immunity to cold damage, make it a formidable opponent, while its fear of fire can be exploited by clever adventurers. </summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Fire Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>13</AC>
+<HP/>102</HP>
 <summary>A Fire Elemental is a living, ever-burning mass of flame, constantly flickering and shifting in form. Its body is composed entirely of fire, with no solid matter, and its movements are fast and unpredictable, like a wildfire. Fire Elementals are incredibly destructive, igniting everything they touch and consuming it in flames. They are summoned from the Elemental Plane of Fire and are often used by powerful spellcasters to wreak havoc on their enemies. Despite their chaotic nature, Fire Elementals are intelligent and can be commanded by those who summon them, though they are always eager to burn and destroy.</summary>
 
 <summary>The Fire Elemental is a Large elemental creature characterized by its mastery over fire and its ability to move swiftly across the battlefield. With a Challenge Rating of 5, it poses a respectable threat to adventurers, especially those unprepared for its fiery capabilities. Its notable strengths include being immune to fire and poison damage, as well as having several damaging effects that can continuously harm enemies within close proximity. However, it does have vulnerabilities, particularly to cold damage, which it takes if it encounters water. The Fire Elemental excels in melee combat with its Multiattack action and has powerful area denial abilities through its Fiery Aura.</summary>

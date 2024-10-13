@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Cave Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>25</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>507</HP>
 <summary>The Ancient Cave Dragon is a formidable and dangerous creature that embodies a sinister presence with its neutral evil alignment. This gargantuan dragon boasts exceptional attributes that make it a prime obstacle for any adventurer. With a robust defense featuring an Armor Class of 20 due to its natural armor, and a staggering pool of 507 hit points, it can withstand a great deal of punishment. Its challenge rating of 25 signifies that it is a significant threat in any campaign, offering 75,000 experience points upon defeat. In combat, the dragon’s strengths lie in its high strength (30), impressive constitution (29), and decent charisma (18). However, it does possess weaknesses, such as its below-average dexterity (12), which means it is not as agile as other entities. Its suite of special abilities grants it significant control over the battlefield, while its multiple powerful attacks make it a devastating opponent.</summary>
 
 <detail>

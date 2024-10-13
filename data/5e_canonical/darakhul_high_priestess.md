@@ -1,6 +1,8 @@
 <MonsterName/>Darakhul High Priestess</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (half plate)</AC>
+<HP/>112</HP>
 <summary>The Darakhul High Priestess is a formidable Medium undead creature with a neutral evil alignment, serving as a potent foe in combat. With a high Armor Class of 17 and substantial Hit Points totaling 112, she is resilient and difficult to take down. Her challenge rating of 9 indicates that she presents a strong threat to adventurers, especially with her various abilities and spells. The High Priestess possesses a range of offensive and defensive capabilities, enhanced by strong physical attributes, particularly in Wisdom and Constitution, making her a versatile spellcaster and a dangerous melee combatant. However, her reliance on the shadows and disadvantage in sunlight can be exploited by clever players.</summary>
 
 <detail>

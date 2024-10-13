@@ -1,6 +1,8 @@
 <MonsterName/>Wraith Bear</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>13</AC>
+<HP/>133</HP>
 <summary>The Wraith Bear is a formidable and terrifying creature, embodying the chaos and malevolence typically associated with undead beings. As a large undead creature, it presents significant threats both in terms of damage and the unique abilities it wields. With a Challenge Rating of 9, it has the potential to be a serious challenge for adventurers, boasting a robust pool of Hit Points at 133 and several powerful attacks and abilities. The Wraith Bear's strengths lie in its ability to regenerate health, deal significant necrotic damage, and incapacitate foes with its supernatural roar. However, it does have weaknesses, as its effectiveness against silvered weapons and magical attacks can be heightened due to its immunities and resistances. Overall, the Wraith Bear is a dangerous foe that can manipulate the battlefield to its advantage while draining life from its enemies.</summary>
 
 <detail>

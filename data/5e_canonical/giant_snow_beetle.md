@@ -1,6 +1,8 @@
 <MonsterName/>Giant Snow Beetle</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Giant Snow Beetle is a large, unaligned beast that serves as a formidable opponent in cold environments. Its notable characteristics include good mobility and the ability to utilize its environment effectively through its special abilities. With an armor class of 12, it has decent defense due to its natural armor, while its 45 hit points provide it with enough durability for sustained combat. The creature is particularly strong in strength, possessing a strength score of 17 which results in a +3 modifier, categorizing this modifier as good. However, its intelligence and charisma scores are exceptionally low, reflecting its nature as a beast. The Giant Snow Beetle's challenge rating of 1 suggests it is an appropriate encounter for lower-level adventurers, providing 200 experience points upon defeat.</summary>
 
 <detail>

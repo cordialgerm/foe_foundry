@@ -1,6 +1,8 @@
 <MonsterName/>Great Wyrm Green Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>21</AC>
+<HP/>840</HP>
 <summary>The Great Wyrm Green Dragon is a gargantuan and formidable creature, often viewed as one of the most powerful dragons in existence within the game world. It serves as an apex predator, cunningly navigating both air and aquatic environments with exceptional speed and versatility. With an impressive array of abilities and high damage output, the Great Wyrm excels in combat, utilizing poison to debilitate its foes while employing stealth and intimidation tactics. Despite its strengths, its vulnerability stems from its reliance on saving throws and its limited use of powerful abilities, making it crucial for players to strategize effectively to overcome it.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Angler Worm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>104</HP>
 <summary>The Angler Worm is a huge, unaligned monstrosity that serves as a formidable opponent within the realm of Dungeons & Dragons. Its primary role in combat is that of a grappler and damage dealer, with unique abilities that allow it to control the battlefield effectively. With a solid Armor Class of 14 and a substantial pool of hit points totaling 104, the Angler Worm is capable of enduring significant damage while inflicting harm on its enemies. However, it has low Dexterity, making it less effective in avoiding attacks. The creature is adept at using snares to trap enemies and can manipulate its environment to gain an advantage, creating danger zones for unsuspecting adventurers. Overall, the Angler Worm is dangerous when utilized in its favored terrain but may struggle when faced with fast, dexterous foes.</summary>
 
 <detail>

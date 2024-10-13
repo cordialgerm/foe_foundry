@@ -1,6 +1,8 @@
 <MonsterName/>Niya-Atha Raja</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (shield)</AC>
+<HP/>117</HP>
 <summary>The Niya-Atha Raja is a formidable Medium Fey creature characterized by its lawful neutral alignment. With a strong ability to command the battlefield through a combination of physical prowess and magical abilities, it stands out as a significant challenge for adventurers. With an Armor Class of 17 and 117 hit points, the Raja can endure considerable damage while delivering its own through powerful melee and ranged attacks. It excels in Dexterity, granting it a good modifier of +5, which translates into superior agility and attack accuracy. However, its Wisdom and Intelligence scores are average, which limits its capacity for insight and knowledge-based interactions. This creature has notable strengths in resisting magical effects, but these advantages are somewhat diminished while it is enlarged.</summary>
 
 <detail>

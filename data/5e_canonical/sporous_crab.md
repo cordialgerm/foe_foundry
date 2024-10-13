@@ -1,6 +1,8 @@
 <MonsterName/>Sporous Crab</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>33</HP>
 <summary>The Sporous Crab is a small, unaligned beast that thrives in filthy environments, often found in swamps or dank caves. With an armor class of 14, it possesses natural armor that provides decent protection. It has a total of 33 hit points, giving it a moderate amount of durability in combat. The crab's speed allows it to walk and swim at 30 feet, making it quite mobile in both aquatic and terrestrial settings. Being a challenge rating of 1, it is a manageable opponent for low-level adventurers, providing an experience reward of 200 XP when defeated. Its primary strengths include its ability to infect creatures with spores and its resistance to bludgeoning damage, while it is vulnerable to fire attacks. The Sporous Crab relies on its special abilities and attacks to incapacitate and overwhelm foes, with some limitations in its overall offensive potential.</summary>
 
 <detail>

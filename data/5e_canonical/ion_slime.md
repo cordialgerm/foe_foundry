@@ -1,6 +1,8 @@
 <MonsterName/>Ion Slime</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>5</CR>
+<AC/>13</AC>
+<HP/>112</HP>
 <summary>The Ion Slime is a small oozing creature with unique properties that make it a formidable presence on the battlefield. Unaligned and capable of contorting through tight spaces, the Ion Slime excels in agility and resilience, particularly when exposed to lightning. It possesses a decent armor class of 13 and a substantial pool of health, totaling 112 hit points. In combat, the Ion Slime can deliver a potent mix of bludgeoning and lightning damage, making it a threat to unsuspecting foes. However, its vulnerability to cold damage and a lack of high Intelligence or Charisma scores suggest that it may be outmatched in specific tactical or social situations. </summary>
 
 <detail>

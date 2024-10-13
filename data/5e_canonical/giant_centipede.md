@@ -1,6 +1,8 @@
 <MonsterName/>Giant Centipede</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>4</HP>
 <summary>A Giant Centipede is a long, multi-legged insect that can grow to terrifying proportions. Its segmented body moves with speed and agility, allowing it to slither through tight spaces or burrow into the ground. Giant Centipedes are often found in dark caves, forests, or swamps, where they ambush their prey with surprising speed. Their bite is venomous, paralyzing or weakening their victims before they devour them. Though not the strongest of creatures, their speed and venom make them dangerous predators, especially when encountered in large numbers.</summary>
 
 <summary>The Giant Centipede is a small beast characterized by its agility and ability to inflict poisonous attacks. With a relatively low Armor Class (AC) of 12 and 9 hit points, it is not particularly durable but makes up for these weaknesses with its moderate dexterity and unique venomous bite. This creature is classified as a Challenge Rating (CR) of 1/4, indicating that it is suitable for low-level encounters. It poses a significant threat with its ability to potentially paralyze its targets, making it an interesting addition to lower-tier adventures.</summary>

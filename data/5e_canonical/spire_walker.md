@@ -1,6 +1,8 @@
 <MonsterName/>Spire Walker</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>49</HP>
 <summary>The Spire Walker is a tiny chaotic neutral fey creature known for its swift movements and magical prowess. It possesses a high armor class of 16 due to its natural armor, combined with a total of 49 hit points, providing it with moderate durability in combat. With a Challenge Rating of 3, it can pose a reasonable threat to adventurers, especially when leveraging its lightning-based abilities and unique mobility options. The Spire Walker excels in dexterity, boasting a +4 modifier, which translates to very good effectiveness in agility and evasive maneuvers; however, its strength is very poor, reflected in a -4 modifier. Its high Charisma of +3 supports its spellcasting capabilities, while its other mental attributes are average, ensuring decent skill versatility.</summary>
 
 <detail>

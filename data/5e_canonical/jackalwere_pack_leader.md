@@ -1,6 +1,8 @@
 <MonsterName/>Jackalwere Pack Leader</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>36</HP>
 <summary>The Jackalwere Pack Leader is a medium fiend known for its cunning and deceptive capabilities. Functioning as a charismatic and manipulative leader of both jackalweres and other fiends, it employs its skills in deception and stealth to outmaneuver opponents and control encounters. The creature has an Armor Class of 12, which is considered average for its challenge rating of 2, and it possesses 36 hit points, providing it with decent endurance in combat. With a movement speed of 40 feet, it can navigate the battlefield effectively, and its challenge rating indicates it can provide a moderate challenge for adventurers. While it is resilient to damage from nonmagical or non-silvered weapons, its weaknesses lie in its inability to resist magical attacks and its reliance on allies to enhance its combat effectiveness.</summary>
 
 <detail>

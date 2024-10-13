@@ -1,6 +1,8 @@
 <MonsterName/>Elemental Locus</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>17</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>290</HP>
 <summary>The Elemental Locus is a gargantuan elemental creature that serves as a powerful guardian of its territory, embodying the raw forces of nature. With an impressive armor class of 16 and a substantial pool of hit points totaling 290, it stands as a formidable opponent in combat. The Locus possesses exceptional physical strength with a Strength score of 28, allowing it to effectively deal high amounts of bludgeoning damage. However, its Dexterity is notably low at 1, indicating that it may struggle with agility and evasion. The creature’s defined role is to control an area, leveraging its abilities to summon allies and deal significant damage to structures while remaining virtually immortal—and bound to its territory. Its multiple resistances and immunities make it a challenging adversary, though its limitations in mobility due to its bound nature can be a critical weakness in open environments.</summary>
 
 <detail>

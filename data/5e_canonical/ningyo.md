@@ -1,6 +1,8 @@
 <MonsterName/>Ningyo</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>15</AC>
+<HP/>77</HP>
 <summary>The Ningyo is a small aberration characterized by its neutral evil nature. This creature is a master of manipulation and possesses the ability to redirect attacks aimed at it, making it both a tricky opponent and a potent damage dealer. With an Armor Class of 15 and a substantial pool of Hit Points totaling 77, the Ningyo can withstand a decent amount of punishment before being brought down. Its significant Dexterity score of 21 grants it a very good modifier, enhancing its agility in combat and improving its chances of avoiding attacks. However, its Strength is notably weak, which may limit its physicality. The Ningyo excels in aquatic environments, possessing the ability to fly and swim at a speed of 60 feet, while it is unable to walk. Its challenge rating of 7 indicates that it poses a formidable threat to adventurers, providing 2,900 experience points upon defeat.</summary>
 
 <detail>

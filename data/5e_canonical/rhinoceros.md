@@ -1,6 +1,8 @@
 <MonsterName/>Rhinoceros</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>45</HP>
 <summary>A Rhinoceros is a large, herbivorous mammal with thick, tough skin and a distinctive horn on its nose. Found in grasslands or savannas, Rhinoceroses are solitary creatures that graze on plants and foliage. While generally peaceful, they can become highly aggressive if threatened, charging at perceived dangers with surprising speed and using their horn to gore attackers. Their size and thick hide provide natural protection, making them formidable animals in their environment.</summary>
 
 <summary>The rhinoceros is a large beast known for its immense physical strength and simple but powerful attacks. It has moderate defensive capabilities with an Armor Class of 12 and a total of 45 hit points, allowing it to absorb a fair amount of damage in combat. The rhinoceros moves quickly for its size, boasting a walking speed of 40 feet. With a challenge rating of 2, it presents a reasonable threat to low-level adventuring parties. Its main strengths lie in its powerful melee attack called Gore, which can deal significant bludgeoning damage and potentially knock down opponents. However, it has a low Dexterity score, making it less agile, and its Intelligence and Charisma scores are also notably low, indicating that it lacks complex thought and social interaction capabilities.</summary>

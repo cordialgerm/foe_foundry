@@ -1,6 +1,8 @@
 <MonsterName/>Boneshard Wraith</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Boneshard Wraith is a formidable Medium Undead creature with a neutral evil alignment, lurking in the shadows and striking dread into the hearts of adventurers. It boasts a strong armor class of 16 due to its natural armor and has a considerable pool of hit points totaling 127, which gives it a good chance to withstand a fair amount of damage during encounters. The wraith's ability to hover, walk, and fly at impressive speeds makes it highly mobile, allowing it to evade attacks and position itself strategically in combat. Its Challenge Rating of 12 indicates it is a dangerous foe, likely requiring a well-prepared party to defeat it. Notably, the Boneshard Wraith has a variety of skills and resistances, making it a tough opponent especially in environments where it can utilize its mobility and incorporeal nature effectively.</summary>
 
 <detail>

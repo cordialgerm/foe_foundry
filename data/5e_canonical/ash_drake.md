@@ -1,6 +1,8 @@
 <MonsterName/>Ash Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>117</HP>
 <summary>The Ash Drake is a small dragon classified as neutral evil, known for its cunning and stealth. With an armor class of 16, it is well protected due to its natural armor. It has a solid 117 hit points, giving it good staying power in combat. This creature moves quickly, walking at a speed of 60 feet and flying at 30 feet, which allows it to engage or escape effectively. Its challenge rating of 4 indicates it can pose a significant threat, offering 1,100 experience points when defeated. The Ash Drake possesses noteworthy abilities, including damage immunity to fire, which enhances its survivability against many attacks. However, it has low intelligence, which limits its use of tactics or spellcasting. </summary>
 
 <detail>

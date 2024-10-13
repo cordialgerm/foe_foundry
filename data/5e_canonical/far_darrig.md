@@ -1,6 +1,8 @@
 <MonsterName/>Far Darrig</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (hide armor)</AC>
+<HP/>84</HP>
 <summary>The Far Darrig is a small fey creature with a neutral alignment, showcasing characteristics commonly found in woodland beings. It possesses a notable combination of agility and strength, making it a formidable opponent despite its small size. The creature has a solid armor class of 14, offering moderate protection. With 84 hit points, it can endure multiple attacks in combat. The Far Darrig excels in melee combat with its Antler Glaive, striking quickly with a combination of piercing or slashing damage, along with an additional force damage effect. It can also summon woodland creatures to aid it during battle, enhancing its capabilities. However, its intelligence is average, which somewhat limits its tactical options. The Far Darrig has strong skills in nature-related tasks, animal handling, and survival, making it adept in its natural environment.</summary>
 
 <detail>

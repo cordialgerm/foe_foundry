@@ -1,6 +1,8 @@
 <MonsterName/>Mi-Go</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>5</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Mi-Go is a formidable entity classified as a Medium Plant with a neutral evil alignment. It features exceptional attributes, particularly in its Intelligence at +7, which is very good, and Constitution at +5, indicating high durability in combat. Its Dexterity of +4 grants it good agility, making it a threat both in melee and ranged situations. The Mi-Go has a solid Armor Class of 17 thanks to its natural armor, coupled with a substantial hit points pool of 95, making it quite durable during encounters. It can navigate terrain by walking 60 feet and has the ability to fly at a speed of 30 feet, providing it with tactical options in battle. As a Challenge Rating 5 creature, it poses a moderate threat to adventurers, earning 1,800 experience points upon defeat. </summary>
 
 <detail>

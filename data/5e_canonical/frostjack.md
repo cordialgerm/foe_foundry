@@ -1,6 +1,8 @@
 <MonsterName/>Frostjack</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>135</HP>
 <summary>The Frostjack is a formidable Medium-sized fey creature characterized by its neutral evil alignment. With a high armor class of 17 due to its natural armor and a substantial pool of hit points totaling 135, the Frostjack is designed to endure significant damage while being an effective adversary in battle. It boasts strong Dexterity and Constitution attributes, granting it good reflexes and resilience against physical threats. However, while it can deal considerable damage through its unique abilities and attacks, it is particularly vulnerable to fire damage, although it mitigates this weakness with its special reaction. The creature primarily relies on its chilling presence to sap the strength of nearby foes, manipulate ice and cold, and frustrate any spellcasters that may attempt to weaken it.</summary>
 
 <detail>

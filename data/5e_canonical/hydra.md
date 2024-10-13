@@ -1,6 +1,8 @@
 <MonsterName/>Hydra</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>172</HP>
 <summary>A Hydra is a massive, multi-headed reptilian monster with a serpentine body and regenerative abilities. Each of its heads is capable of independently attacking with sharp fangs and delivering deadly bites. When one of its heads is severed, two more grow in its place unless the wound is cauterized. Hydras are found in swamps, lakes, or caves near bodies of water, where they ambush their prey. Their thick, scaly hide makes them resistant to most attacks, and their regeneration makes them nearly unstoppable in combat. Hydras are relentless predators, and their many heads make them capable of striking multiple enemies at once.</summary>
 
 <summary>The Hydra is a formidable Huge monstrosity known for its multiple heads and regeneration abilities. It serves as a challenging opponent in combat, often found in watery lairs, and can present a significant threat to adventurers due to its high damage output, resistance to being incapacitated, and poison-infused environment. With a Challenge Rating of 9, it provides substantial experience for defeating it and can overwhelm enemies through sheer numbers, making it a central figure in battles. However, it does have notable weaknesses, particularly its vulnerability to fire damage, which can prevent its regenerative abilities. </summary>

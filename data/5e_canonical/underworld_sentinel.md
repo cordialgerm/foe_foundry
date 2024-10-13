@@ -1,6 +1,8 @@
 <MonsterName/>Underworld Sentinel</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Underworld Sentinel is a formidable creature embodying the essence of undead power, serving as a powerful guardian in its domain. As a Huge undead being, it presents a significant challenge to adventurers, with a high Armor Class of 17 and an impressive pool of 126 hit points. This sentinel is particularly robust in combat due to its high Strength of 23, allowing it to deliver devastating melee attacks with great effectiveness and precision. It is adept at area control, possessing unique abilities that enhance its defensive capabilities, particularly against enemies attempting to flee or advance. However, it has limitations in terms of spellcasting and lacks mobility beyond its normal walking speed. The creature's primary strengths lie in its damage immunities and resistances, making it particularly resilient against common forms of attack. </summary>
 
 <detail>

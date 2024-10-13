@@ -1,6 +1,8 @@
 <MonsterName/>Marid</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>11</CR>
+<AC/>17</AC>
+<HP/>172</HP>
 <summary>The Marid is a formidable Large Elemental creature, embodying the essence of water and capable of both melee and magical combat. With an Armor Class of 17 and a substantial pool of 172 hit points, it is well-equipped to endure extended conflicts. The Marid boasts impressive Strength and Constitution scores, both at 22, which grants it exceptional attack capabilities and resilience in battle, while its Dexterity of 16 ensures decent mobility. As a Challenge Rating 11 creature, it is intended for high-level encounters, providing considerable challenge and tactical depth.</summary>
 
 <detail>

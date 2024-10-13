@@ -1,6 +1,8 @@
 <MonsterName/>Hobgoblin Warlord</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>18</AC>
+<HP/>104</HP>
 <summary>The Hobgoblin Warlord is a formidable warrior and strategist, serving as a key tactical leader on the battlefield. With notable strengths in combat and strategic decision-making, this medium humanoid possesses a high armor class of 18 and a significant hit point pool of 104, allowing it to endure substantial damage. Its challenge rating of 3 reflects its ability to pose a threat to low-level adventurers, granting 700 experience points upon defeat. The Warlord’s strengths include strong melee capabilities with its greatsword and javelin, along with various abilities that can turn the tide of combat in favor of its allies. However, its reliance on being bloodied to maximize its attack potential can serve as a double-edged sword, exposing it to vulnerability when health is low.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Fear Smith</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>149</HP>
 <summary>The Fear Smith is a medium fey creature known for its chaotic neutral nature. It possesses a good balance of defensive capabilities with a high Armor Class of 17 and a substantial pool of Hit Points totaling 149, granting it decent survivability in combat. With a Challenge Rating of 10, it poses a significant threat to adventurers, earning it 5,900 experience points upon defeat. Notably, the Fear Smith excels in manipulating the fears of its opponents through its unique abilities and spells, making it a formidable foe. It has exceptional Charisma, allowing it to excel in Intimidation and stealth tactics, while it is notably weaker in physical strength and intelligence.</summary>
 
 <detail>

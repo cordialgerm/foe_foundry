@@ -1,6 +1,8 @@
 <MonsterName/>Mummy</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>58</HP>
 <summary>A Mummy is an undead creature, preserved through ancient embalming techniques and bound to serve in death. Wrapped in decayed bandages, Mummies possess supernatural strength and resilience, making them formidable opponents in combat. They are often found in tombs or pyramids, guarding the resting places of ancient kings or priests. Mummies can strike fear into the hearts of their enemies with their mere presence, and their touch carries a deadly curse that can rot the flesh of those they strike. Though mindless compared to their Mummy Lord masters, they are relentless in carrying out their duty.</summary>
 
 <summary>The Mummy is a Medium undead creature that serves as an intimidating foe in D&D encounters, often found in ancient tombs or cursed places. It boasts a modest Armor Class of 11 and a respectable 67 hit points, allowing it to withstand a fair amount of damage before being defeated. With a Challenge Rating of 3, it is considered a formidable enemy, offering a challenge to parties composed of lower-level adventurers, rewarding them with 700 experience points upon its defeat. Mummies are known for their unique abilities, particularly the dreaded Mummy Rot curse, which can significantly weaken and potentially eliminate characters if they fail to evade its effects. While they possess average Dexterity and poor mobility—only capable of walking at 20 feet per round—they exhibit strength in their Constitution and Strength, giving them good durability in combat. However, they are significantly hindered by their very low Dexterity, making them vulnerable to ranged attacks and nimble opponents.</summary>

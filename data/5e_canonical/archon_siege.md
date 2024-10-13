@@ -1,6 +1,8 @@
 <MonsterName/>Archon, Siege</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (plate)</AC>
+<HP/>187</HP>
 <summary>The Archon, Siege, is a formidable Huge Celestial creature with a lawful good alignment. It serves as a powerful combatant in battles, wielding immense physical strength and potent magical abilities. With a high Armor Class of 18 and a significant pool of Hit Points totaling 187, it is well-equipped to withstand considerable damage while dealing devastating hits in return. The Archon has a notable Challenge Rating of 13, reflecting its ability to pose a serious challenge to adventurers. Its resilience is enhanced by its magical resistance, immunities to certain conditions, and an impressive array of abilities that exploit its size and celestial nature. While it excels in dealing damage, especially to structures with its Siege Monster ability, it is important to note that its defense against ranged attacks is less impressive, making tactics against it critical for opponents.</summary>
 
 <detail>

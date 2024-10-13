@@ -1,6 +1,8 @@
 <MonsterName/>Library Automaton</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>24</HP>
 <summary>The Library Automaton is a small construct known for its role as a guardian and organizer of knowledge. It possesses a its own inherent understanding of written languages and is capable of performing a variety of tasks involving books and written records. Despite its limited physical capabilities, it compensates with clever abilities, including the manipulation of objects from a distance and the storage of valuable written works in its extradimensional space. With a challenge rating of 1/2, the Library Automaton is not particularly formidable in combat, but its utility in managing and safeguarding information makes it an interesting resource in many scenarios. Its armor class of 13 provides average protection, while its hit points totaling 24 indicate that it can withstand a moderate amount of punishment before being incapacitated.</summary>
 
 <detail>

@@ -1,7 +1,9 @@
 <MonsterName/>Griffon</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
 <Subtype/>animal</Subtype>
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>59</HP>
 <summary>A Griffon is a majestic, powerful creature with the body of a lion and the head and wings of an eagle. These fearsome predators are often found in high mountains or remote wilderness areas, where they hunt large prey such as deer or horses. Griffons are highly territorial and will fiercely defend their nests or hunting grounds from intruders. In combat, they use their sharp talons and beak to tear apart foes, and their ability to fly allows them to strike from above with devastating speed. Despite their wild nature, Griffons can sometimes be trained as mounts by skilled handlers.</summary>
 
 <summary>The Griffon is a formidable large monstrosity known for its fierce nature and aerial prowess. Standing as a challenging opponent with a Challenge Rating of 3, this creature possesses a strong combination of physical attributes, allowing it to be both a powerful predator on the ground and a fearsome hunter from the sky. With high Strength and Constitution scores, the Griffon can inflict significant damage, while its decent Dexterity offers it a good level of agility in combat. However, its Intelligence and Charisma scores are notably low, indicating that the Griffon lacks social finesse and complex thinking. Notably, its Keen Sight ability enhances its perceptive capabilities, making it adept at detecting hidden threats or prey from a distance.</summary>

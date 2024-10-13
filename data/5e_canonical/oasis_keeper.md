@@ -1,6 +1,8 @@
 <MonsterName/>Oasis Keeper</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>123</HP>
 <summary>The Oasis Keeper is a formidable Huge Monstrosity that inhabits desert oases, showcasing both strength and cunning in combat. With a solid Armor Class of 15, it possesses a large pool of Hit Points totaling 123, making it resilient against attackers. This creature excels in stealth with a good Dexterity score of 14, and its high Strength attribute of 20 gives it exceptional physical prowess in melee attacks. One of the Oasis Keeper’s notable strengths is its ability to incapacitate foes with its poison and its unique ability to calm creatures drinking poisoned water, making it an intriguing adversary. However, it lacks intelligence, with an Intelligence score of only 3, which may affect its strategic capabilities. This creature's challenge rating of 9 suggests it is suitable for high-level encounters, providing a significant challenge to adventurers.</summary>
 
 <detail>

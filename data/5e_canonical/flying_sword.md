@@ -1,6 +1,8 @@
 <MonsterName/>Flying Sword (Animated Object)</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>17</HP>
 <summary>A Flying Sword is an enchanted weapon, typically a sword, that hovers in the air and attacks under its own power. Created by magical means, Flying Swords are often used as sentinels or guards, patrolling areas without needing a wielder. They can move with incredible speed and precision, striking at intruders with deadly accuracy. While they lack intelligence, they follow simple commands set by their creators and are relentless in their attacks. Flying Swords are typically found in ancient castles, wizard's towers, or other places where powerful magic is present.</summary>
 
 <summary>The Flying Sword is a small construct that serves primarily as a magical guardian or combatant in various scenarios. With an armor class of 17, it has decent defenses for its size and a moderate hit point total of 10, making it relatively fragile but capable of taking a few hits. Its primary mode of movement is flying, allowing it to maneuver easily across the battlefield with a flying speed of 30 feet. The creature has a Challenge Rating of 1/4, indicating that it can be faced by low-level adventurers, providing a manageable threat that can still be dangerous in the right circumstances. Notably, it has considerable resistances and immunities to various forms of damage and conditions, making it a resilient opponent.</summary>

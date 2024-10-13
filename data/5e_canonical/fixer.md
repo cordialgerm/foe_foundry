@@ -1,6 +1,8 @@
 <MonsterName/>Fixer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>44</HP>
 <summary>The Fixer is a Medium humanoid creature classified as lawful neutral. It possesses notable skills in both stealth and perception, making it a capable scout or support character. The Fixer has a good mix of defensive and offensive capabilities, evident in its armor class of 13 and hit points totaling 44, which provides average durability for encounters. With a challenge rating of 2, the Fixer can pose a moderate threat to adventurers, particularly through its ability to conceal itself and others from magical scrutiny. It is adept at using various tools and techniques to influence the battlefield and protect allies, although its overall combat prowess is average.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Valkyrie</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>11</CR>
+<AC/>18</AC>
+<HP/>150</HP>
 <summary>The Valkyrie is a powerful celestial creature that serves as a warrior and protector on the battlefield. With a neutral alignment, it provides both offensive and supportive abilities, enhancing its allies while dealing significant radiant damage to its enemies. The Valkyrie's best strengths include a high armor class of 18, a substantial pool of hit points totaling 150, and impressive saving throws, particularly in charisma and constitution. Its notable weaknesses include vulnerability to magical damage types not specified in its resistances, making it susceptible to well-placed spell attacks. With a challenge rating of 11, the Valkyrie poses a formidable challenge for lower-level adventurers, embodying the role of both a fierce combatant and a divine healer.</summary>
 
 <detail>

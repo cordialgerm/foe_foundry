@@ -1,9 +1,11 @@
 <MonsterName/>Wererat (Lycanthrope)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
-<Subtype/>human</Subtype>
 <Subtype/>shapechanger</Subtype>
+<Subtype/>human</Subtype>
 <Subtype/>lycanthrope</Subtype>
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>33</HP>
 <summary>A Wererat is a humanoid cursed with the ability to transform into a rat or a rat-like hybrid form. Unlike other lycanthropes, Wererats are cunning and sneaky, often living in urban environments or sewers, where they form criminal networks or gangs. They use their ability to slip through small spaces and remain unnoticed to engage in thievery and sabotage. Wererats are not as physically strong as other lycanthropes, but they make up for it with their stealth and intelligence. They are immune to most conventional weapons unless silvered and can spread lycanthropy through their bites.</summary>
 
 <summary>The Wererat is a Medium humanoid creature that embodies the sneaky and cunning nature of a lycanthrope. It serves as both a formidable opponent and a stealthy infiltrator, making it a versatile threat in combat scenarios. With an Armor Class of 12 and 33 hit points, it is relatively resilient but can be easily taken down by characters that excel in dealing damage quickly. Its primary strengths lie in its Dexterity score of 14, granting it a good initiative and proficiency in stealth, allowing it to approach situations unnoticed. Furthermore, its Pack Tactics ability allows it to work effectively with allies, gaining advantage on attack rolls when near them. However, it is vulnerable to wolfsbane, which can incapacitate it and amplify damage done to it by non-silvered weapons. </summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Tosculi Elite Bow Raider</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>17</AC>
+<HP/>97</HP>
 <summary>The Tosculi Elite Bow Raider is a Medium humanoid creature embodying lawful evil. It excels in ranged combat with remarkable dexterity, allowing it to deliver powerful attacks from a distance while also being resilient in melee situations. Its high Armor Class of 17, combined with a substantial pool of 97 hit points, makes it a formidable opponent on the battlefield. The Tusculi Elite Bow Raider's challenge rating of 5 reflects its ability to deal significant damage through its attacks and its tactical advantages in combat. Notably, it possesses exceptional mobility, able to walk at 60 feet and fly at 30 feet, enabling quick repositioning during encounters. Nevertheless, its reliance on ranged attacks means it can be at a disadvantage if engaged in close combat without proper support.</summary>
 
 <detail>

@@ -1,7 +1,9 @@
 <MonsterName/>Sahuagin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
 <Subtype/>sahuagin</Subtype>
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>22</HP>
 <summary>Sahuagin are vicious, fish-like humanoids that dwell in the deep oceans and coastal waters. Known for their aggressive nature, they frequently raid coastal settlements and ships, seeking food and slaves. Sahuagin have sharp claws, webbed hands and feet, and rows of razor-sharp teeth. They are highly territorial and often engage in battles with other aquatic creatures, particularly merfolk and sea elves. Sahuagin live in underwater communities ruled by priestesses or barons and worship dark, oceanic deities. Their society values strength and brutality, and they are ruthless in combat.</summary>
 
 <summary>The Sahuagin is a medium humanoid creature often found in aquatic environments. They serve as fierce combatants known for their relentless aggression and swimming prowess. With a challenge rating of 1/2, they are relatively easy to defeat for experienced adventurers, but their ability to exploit wounded foes through their Blood Frenzy makes them dangerous in skirmishes. While their armor class is average at 12, their total of 22 hit points provides them sufficient durability in battle. Notably, their limited amphibiousness allows them to thrive both in water and on land, giving them a tactical advantage in diverse environments. They also have the unique ability to communicate telepathically with sharks, which can further enhance their combat capabilities if they are near these creatures.</summary>

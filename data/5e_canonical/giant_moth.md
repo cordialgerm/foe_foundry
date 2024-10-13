@@ -1,6 +1,8 @@
 <MonsterName/>Giant Moth</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>7</HP>
 <summary>The Giant Moth is a Small Beast that embodies a unique and whimsical aspect of nature, unaligned and often encountered in forested or overgrown environments. With an Armor Class of 11 and 7 Hit Points, it is relatively fragile in combat, making it more suited for evasion than direct confrontation. The creature has a Challenge Rating of 1/8, indicating it is not particularly formidable and is best suited for low-level encounters or as an environmental feature. It possesses a moderate speed, able to fly at 30 feet and walk 25 feet, allowing it to maneuver effectively. While it lacks notable intelligence and charisma, its Dexterity is slightly above average, making it capable of stealthy movements and perceptive awareness, particularly relying on its sense of smell.</summary>
 
 <detail>

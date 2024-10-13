@@ -1,6 +1,8 @@
 <MonsterName/>Sand Silhouette</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Sand Silhouette is a Medium undead creature that embodies the dark, eerie aspects of the desert. It serves as a formidable adversary in encounters, especially in sandy terrains where it can utilize its special abilities to stealthily approach and ensnare its prey. With a notable high Strength score of 18, it excels in physical combat, dealing substantial damage with its Slam attacks, which combine bludgeoning and necrotic damage. However, it does have weaknesses, particularly to water; when exposed, it takes cold damage that can quickly mitigate its effectiveness in battle. This creature's unique abilities, such as its capability to engender storms of sand and engulf enemies, allow it to dominate the battlefield and apply pressure on its foes.</summary>
 
 <detail>

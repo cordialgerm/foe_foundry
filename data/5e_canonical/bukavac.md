@@ -1,6 +1,8 @@
 <MonsterName/>Bukavac</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>199</HP>
 <summary>The Bukavac is a large and formidable monstrosity characterized by its Neutral Evil alignment. It boasts impressive physical capabilities, including high strength and constitution, making it a resilient creature that can withstand significant damage. With a challenge rating of 9, it is considered a serious threat, particularly due to its capacity for dealing substantial damage in melee combat and its ability to create devastating area effects with its special abilities. However, its intelligence is notably low, which may limit its strategic thinking in combat situations. Its reliance on physical prowess and its moderate speed give it certain strengths, but its relatively low armor class could be seen as a weakness.</summary>
 
 <detail>

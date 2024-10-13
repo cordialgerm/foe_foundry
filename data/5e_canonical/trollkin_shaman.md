@@ -1,6 +1,8 @@
 <MonsterName/>Trollkin Shaman</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (hide armor)</AC>
+<HP/>78</HP>
 <summary>The Trollkin Shaman is a Medium humanoid with a neutral alignment known for its ability to bolster allies while also being difficult to defeat in battle. With a challenge rating of 4, it serves as a competent combatant and spellcaster, posing a moderate threat to adventurers. Its regeneration ability allows it to recover hit points each turn, making it resilient in prolonged engagements, though it is vulnerable to fire and acid damage, which can impede its regenerative capabilities. The trollkin shaman's proficiency in spellcasting combined with its support abilities makes it a strategic asset on the battlefield, though its strengths come with medium-tier physical abilities, resulting in a balanced but not overwhelming presence.</summary>
 
 <detail>

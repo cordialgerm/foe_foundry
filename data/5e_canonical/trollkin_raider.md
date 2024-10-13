@@ -1,6 +1,8 @@
 <MonsterName/>Trollkin Raider</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (hide armor)</AC>
+<HP/>32</HP>
 <summary>The Trollkin Raider is a medium humanoid creature characterized by its resilience and combat prowess. With a neutral alignment, it can operate in various capacities during encounters, making it a versatile opponent or ally. Its notable strengths include natural regeneration and thick hide, which enhance its survivability in battle. Despite having average ability scores across the board, its proficiency in survival and perception skills allows it to excel in outdoor settings. Nevertheless, its low intelligence suggests that it may struggle with complex tasks or strategies. Overall, the Trollkin Raider serves well as a frontline fighter, possessing decent offense and impressive durability.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Fragrite</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>91</HP>
 <summary>The Fragrite is a medium-sized elemental creature with a chaotic neutral alignment, embodying the essence of sand and glass. As a challenge rating 6 monster, it presents a significant threat to adventurers, boasting a solid hit point pool of 91, along with good armor class and innate resistances. It excels in its unique ability to shift between forms—sand and glass—allowing it to evade attacks and effectively control the battlefield. However, it is notably weak to thunder damage while in glass form. With a blend of melee attacks and explosive abilities, the Fragrite is versatile in combat, posing challenges that require strategic thinking to overcome.</summary>
 
 <detail>

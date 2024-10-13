@@ -1,6 +1,8 @@
 <MonsterName/>Giant Weasel</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>9</HP>
 <summary>A Giant Weasel is a large, sleek predator known for its agility and stealth. These creatures are often found in forests or grasslands, where they hunt small to medium-sized prey such as rabbits or birds. Giant Weasels have long, muscular bodies and sharp teeth, which allow them to kill with a swift bite to the neck. They are skilled at sneaking up on their prey and are known for their intelligence and curiosity. Though not naturally aggressive towards larger creatures, they will defend themselves fiercely if threatened.</summary>
 
 <summary>The Giant Weasel is a medium-sized beast known for its agility and keen senses, making it an adept hunter and scout. It possesses a decent Armor Class of 12, which provides it with a modest level of defense, while its low Hit Points of 9 (calculated from rolling 2d8) indicate that it is somewhat fragile and should avoid direct confrontations with stronger foes. With a movement speed of 40 feet, the Giant Weasel can swiftly maneuver around the battlefield, allowing it to engage or evade targets effectively. It is rated at a Challenge Rating of 1/8, making it a weaker opponent intended for low-level encounters, yielding 25 experience points upon defeat.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Rug of Smothering (Animated Object)</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>33</HP>
 <summary>A Rug of Smothering is an animated object, often appearing as a simple, decorative rug. When triggered, it wraps itself around its victim, constricting and suffocating them in its tight folds. These rugs are commonly found in enchanted homes or dungeons, used as traps by their creators. Though inanimate when not in motion, they spring to life when a creature steps on them, attacking relentlessly until the victim is unconscious or dead. Their appearance as a mundane object makes them a surprising and deadly trap for the unwary.</summary>
 
 <summary>The Rug of Smothering is a large construct designed to ambush unsuspecting adventurers. Its deceptive appearance allows it to blend in with the environment, often catching characters off guard as it springs to life. With an Armor Class of 12 and a total of 45 hit points, it can endure a moderate amount of damage. The creature has strong physical attributes, particularly in Strength, which is rated at 16, giving it a very good +3 modifier. This creature operates primarily in close quarters, using its ability to grapple opponents to restrain them while simultaneously dealing damage. However, with inherent weaknesses such as being susceptible to dispel magic, where a DC of 19 is required to destroy it, it is crucial for adventurers to be mindful of their magical capabilities during encounters.</summary>

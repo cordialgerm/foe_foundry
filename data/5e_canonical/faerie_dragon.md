@@ -1,6 +1,8 @@
 <MonsterName/>Faerie Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>14</HP>
 <summary>The Faerie Dragon is a Tiny dragon known for its whimsical nature and playful demeanor. With an Armor Class of 15 and 14 hit points, it is relatively fragile in combat, but its high Dexterity and Charisma scores make it quite elusive and effective in spellcasting. The dragon's speed allows for swift aerial maneuvers, flying at 60 feet per round, while its combat abilities primarily focus on evasion and confusion rather than brute force. Notably, Faerie Dragons possess innate spellcasting abilities which grow as they age, endowing them with a variety of spells that can influence the battlefield and provide utility. While they have low Strength, their strong Dexterity offers them good capabilities in stealth and agility, although their overall combat effectiveness is primarily disruptive rather than damaging.</summary>
 
 <detail>

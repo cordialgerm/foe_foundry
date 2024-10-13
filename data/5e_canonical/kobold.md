@@ -1,7 +1,9 @@
 <MonsterName/>Kobold</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
 <Subtype/>kobold</Subtype>
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>5</HP>
 <summary>Kobolds are small, reptilian humanoids known for their cowardly yet cunning nature. Standing about three feet tall, they have scaly skin, often reddish or brown in color, and large, beady eyes. Kobolds are often found living in tribes, dwelling in tunnels, caves, or ruins. Though weak individually, they are dangerous in large numbers, relying on traps, ambushes, and overwhelming their foes with sheer numbers. Kobolds are resourceful, using whatever tools or weapons they can find, and are fiercely loyal to their tribe and dragon-like ancestors, whom they worship as gods.</summary>
 
 <summary>The Kobold is a small humanoid creature known for its cunning and dexterity. With an Armor Class of 12, it can withstand moderate attacks but is quite fragile with a low Hit Points total of 7, which provides it with limited resilience in battle. Its Challenge Rating of 1/8 indicates that it is a less powerful creature, suitable for low-level encounters. The Kobold thrives in packs, utilizing its Pack Tactics ability to gain advantages during combat alongside its companions. However, it suffers from Sunlight Sensitivity, which imposes disadvantages while exposed to sunlight. Overall, the Kobold serves as a skirmisher, making use of its agility and teamwork to overcome stronger foes.</summary>

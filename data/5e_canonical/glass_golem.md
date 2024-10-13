@@ -1,6 +1,8 @@
 <MonsterName/>Glass Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>45</HP>
 <summary>The Glass Golem is a small construct that serves as a formidable guardian, crafted from glass materials. Its role in encounters often involves protecting areas or treasures, delivering significant damage while resisting many forms of magical attacks. With an Armor Class of 12 and 45 hit points, it has decent durability but is vulnerable to bludgeoning damage, which can compromise its structure. The golem possesses a relatively low Challenge Rating of 2, making it a suitable opponent for low to mid-level adventurers. Its strengths lie in its advantages against magic and its ability to deliver reliable slashing attacks, but its susceptibility to bludgeoning damage is a notable weakness.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Death Butterfly Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Death Butterfly Swarm is a large, unaligned creature that serves as a formidable foe in combat, primarily due to its unique swarm mechanics and potent poison abilities. With an Armor Class of 15 and 60 hit points, it possesses moderate durability, though its utility is significantly enhanced by its ability to occupy spaces and move through tight openings like other swarms. The swarm excels at hindering enemy movement and inflicting poison damage, making it a dangerous encounter for any adventurer who underestimates its capabilities. However, the swarm is particularly vulnerable to cold and fire damage, and it lacks offensive capabilities outside its swarm dynamics.</summary>
 
 <detail>

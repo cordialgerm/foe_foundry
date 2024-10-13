@@ -1,6 +1,8 @@
 <MonsterName/>Mechuiti</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>27</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>462</HP>
 <summary>Mechuiti is a formidable and gargantuan fiend embodying chaotic evil, serving as an exceptionally challenging adversary for parties of high-level adventurers. With an Armor Class of 19 and a staggering 462 hit points, Mechuiti presents a significant threat on the battlefield, relying on both its physical prowess and powerful magical abilities. Its primary strengths lie in its high damage potential, debilitating disease, and fear-inducing presence. Despite its strengths, Mechuiti suffers from a vulnerability to cold damage, making it crucial for adventurers to exploit this weakness during encounters. Overall, Mechuiti is designed to be an overwhelming force, with mechanics that encourage strategic planning and powerful responses from players.</summary>
 
 <detail>

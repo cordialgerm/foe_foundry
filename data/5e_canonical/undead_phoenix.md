@@ -1,6 +1,8 @@
 <MonsterName/>Undead Phoenix</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Undead Phoenix is a formidable creature characterized by its huge size and chaotic evil alignment. As an undead entity, it has a unique combination of resilience and destructive capabilities, making it a significant threat in combat scenarios. With a high armor class of 17 and a substantial hit point pool of 142, it is well-equipped to withstand prolonged conflicts. The creature's speed allows it to fly swiftly at 90 feet and walk at a moderate pace of 30 feet, enhancing its mobility in battles. Its challenge rating of 12 indicates that it presents a serious challenge for adventurers, granting it a reward of 8,400 experience points upon defeat. </summary>
 
 <detail>

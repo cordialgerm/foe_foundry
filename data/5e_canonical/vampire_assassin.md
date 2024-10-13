@@ -1,6 +1,8 @@
 <MonsterName/>Vampire Assassin</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>16</AC>
+<HP/>142</HP>
 <summary>The Vampire Assassin is a formidable Medium Undead creature known for its stealth and lethal combat capabilities. This creature combines immense strength, agility, and various supernatural abilities, making it a deadly opponent in any encounter. With a Challenge Rating of 12, it poses a significant threat to adventurers, capable of inflicting heavy damage while also employing clever tactics such as charm and deception. Its regeneration and ability to turn into mist provide it with excellent survivability, but it does have notable weaknesses, particularly to radiant damage and certain types of magical actions. Notably, the Vampire Assassin can charm opponents, making them easier targets for its attacks, creating a terrifying combination of control and damage potential on the battlefield.</summary>
 
 <detail>

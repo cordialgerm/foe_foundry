@@ -1,6 +1,8 @@
 <MonsterName/>Hebi-Doku</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>8</CR>
+<AC/>15</AC>
+<HP/>123</HP>
 <summary>The Hebi-Doku is a formidable Medium-sized Fey creature, embodying chaotic evil with its sleek and serpentine form. With an Armor Class of 15 and 123 hit points, it can sustain a fair amount of damage in combat, making it a resilient adversary. It boasts impressive Dexterity and Constitution scores of 21, granting it good evasion and the capacity to endure physical turmoil. Additionally, the Hebi-Doku’s Challenge Rating of 8 indicates its high level of threat in battle, with an expected experience value of 3,900 for defeating it. This creature excels in offensive capabilities, leveraging multi-attack options and venomous attacks to incapacitate foes. However, it is vulnerable to radiant damage, a fact that players can exploit to turn the tide of battle.</summary>
 
 <detail>

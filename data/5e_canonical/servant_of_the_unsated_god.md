@@ -1,6 +1,8 @@
 <MonsterName/>Servant of the Unsated God</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>17</AC>
+<HP/>82</HP>
 <summary>The Servant of the Unsated God is a formidable undead creature that embodies the vile hunger and malice of its dark deity. It serves as a challenging adversary with a mix of melee attacks and spellcasting abilities, making it a versatile foe in combat. With a solid Armor Class of 17 and 82 hit points, it can withstand a fair amount of damage before being taken down. Its primary strengths lie in its ability to deal necrotic damage that ignores resistances, as well as its advantageous positioning when using its special abilities. However, it suffers from disadvantages in sunlight, which can limit its effectiveness during the day. This creature is particularly dangerous in darker environments where its abilities can freely unleash terror upon unsuspecting adventurers.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Phase Spider</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>32</HP>
 <summary>A Phase Spider is a predatory arachnid with the terrifying ability to shift between the Material Plane and the Ethereal Plane. These creatures are highly dangerous, using their ability to phase out of existence to ambush their prey. A Phase Spider's bite is venomous and can paralyze or kill, and they are skilled at using their phasing ability to escape if the fight turns against them. Found in dark forests, caves, or planar rifts, Phase Spiders are solitary hunters that strike from the shadows, phasing in and out of the Ethereal Plane to confuse and disorient their enemies.</summary>
 
 <summary>The Phase Spider is a formidable Large Monstrosity with unique abilities that allow it to traverse both the Material and Ethereal Planes, making it a challenging opponent for adventurers. With an Armor Class of 14 and hit points totaling 39, it can sustain considerable damage before being incapacitated. Its strengths lie primarily in its mobility and stealth, allowing it to ambush unsuspecting victims. While it has decent physical and dexterous attributes, its intelligence, wisdom, and charisma scores are quite low, suggesting a creature more driven by instinct than strategic thought. The Phase Spider's challenge rating of 3 reflects its moderate difficulty, rewarding players with 700 experience points upon defeat.</summary>

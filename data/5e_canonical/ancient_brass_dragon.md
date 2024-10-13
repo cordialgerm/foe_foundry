@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Brass Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>20</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>297</HP>
 <summary>The Ancient Brass Dragon is a wise and curious creature, with dull, tarnished brass-colored scales that shimmer in the sunlight. These dragons are known for their love of conversation and storytelling, often speaking with travelers for hours or even days before allowing them to pass through their territory. They prefer hot, dry environments, such as deserts, where they make their homes in vast, labyrinthine caves. While they may seem amiable and lighthearted, Ancient Brass Dragons are still powerful creatures, capable of breathing a devastating heat or releasing a gas that can put creatures to sleep. They value knowledge and prefer to avoid violence.</summary>
 
 <summary>The Ancient Brass Dragon is an exceptionally powerful and intelligent creature classified as Gargantuan in size. With an impressive Armor Class of 20 and a hefty 367 hit points, this dragon serves as a formidable opponent in combat. Notably, its strengths include a high Constitution score of 24, which enhances its durability, and a wide array of spells that enhance its versatility. Its ability to fly at a speed of 80 feet allows for swift maneuvers in battle. However, it has a poor Dexterity score of 10, making it vulnerable to ranged attacks. With a Challenge Rating of 22, the Ancient Brass Dragon is a significant threat to any adventuring party, capable of dealing devastating amounts of damage while showcasing its deep knowledge as a scholar.</summary>

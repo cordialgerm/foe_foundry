@@ -1,6 +1,8 @@
 <MonsterName/>Radiant Spark Swarm</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>3</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>38</HP>
 <summary>The Radiant Spark Swarm is a Medium elemental creature known for its swift movements and affinity for magic. With a Challenge Rating of 3, it presents a moderate challenge for adventurers, boasting a combination of resilience and damage potential. The swarm is immune to fire, poison, and radiant damage, making it particularly difficult to harm with typical attacks. It can fly and hover freely, avoiding the limitations of ground movement while being incapable of walking. The swarm's ability to target magic items makes it a dangerous adversary, especially in environments rich with magic. However, its relatively low hit points and poor Strength score render it vulnerable to crowd control and area-of-effect tactics.</summary>
 
 <detail>

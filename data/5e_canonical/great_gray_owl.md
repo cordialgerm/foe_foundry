@@ -1,6 +1,8 @@
 <MonsterName/>Great Gray Owl</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>10</HP>
 <summary>The Great Gray Owl is a small, unaligned beast known for its keen senses and ability to maneuver swiftly in the air. With an impressive flying speed of 60 feet, this creature excels at aerial tactics, allowing it to avoid ground-based threats efficiently. It has moderate defenses with an armor class of 13, and its hit points total 10, indicating it can withstand a few hits before being incapacitated. As a challenge rating of 1/4 suggests, it poses a minor threat, primarily suitable for low-level encounters. Notably, its strong dexterity gives it good agility and stealth capabilities, making it an effective scout or ambusher. However, its low strength and intelligence make it physically weak and not particularly clever in combat situations.</summary>
 
 <detail>

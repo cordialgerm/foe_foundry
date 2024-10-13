@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Light Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>22</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>407</HP>
 <summary>The Ancient Light Dragon is a gargantuan creature characterized by its neutral good alignment, often seen as a guardian of cosmic balance, light, and knowledge. This formidable dragon boasts impressive defenses, with an Armor Class of 22 due to its natural armor and a staggering 407 hit points derived from rolling 22d20 plus an additional 176. Its flight speed of 80 feet allows for rapid mobility, while its walking speed of 40 feet ensures considerable ground maneuverability. With a Challenge Rating of 22, this dragon presents an extraordinary challenge to adventurers, having an experience point value of 41,000. It exhibits several notable strengths, including high damage immunity to radiant attacks and damage from nonmagical sources, as well as robust saving throws and skill proficiencies. However, its weaknesses include susceptibility to fire damage. </summary>
 
 <detail>

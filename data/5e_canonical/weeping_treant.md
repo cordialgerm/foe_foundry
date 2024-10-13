@@ -1,6 +1,8 @@
 <MonsterName/>Weeping Treant</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Weeping Treant is a large, neutral plant creature that plays a unique role in combat and environmental interactions. With its notable high hit points and robust Armor Class, it serves as a formidable frontline tank. This creature excels at both melee and ranged attacks, capable of inflicting significant damage while also providing strategic advantages through its special abilities. Its primary weaknesses include vulnerability to fire damage and a low Dexterity, making it less agile in combat situations. The Weeping Treant’s notable abilities, particularly its acidic tears and ability to communicate with plants, highlight its connection to nature and provide opportunities for role-playing and tactical maneuvering.</summary>
 
 <detail>

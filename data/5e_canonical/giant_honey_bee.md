@@ -1,6 +1,8 @@
 <MonsterName/>Giant Honey Bee</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>9</HP>
 <summary>The Giant Honey Bee is a small, unaligned beast that plays a unique role in the ecosystem and serves as a fascinating adversary or ally in various game scenarios. With a challenge rating of 1/4, it is a relatively weak opponent in terms of combat, but its combination of mobility and poison capabilities can pose a significant threat to unsuspecting characters. The creature has decent Dexterity, allowing it to evade attacks effectively, while its Constitution makes it slightly resilient, although it is frail overall in terms of health with only 9 hit points. Notably, its sting attack not only inflicts damage but can also incapacitate characters with poison, making it a creature best dealt with cautiously.</summary>
 
 <detail>

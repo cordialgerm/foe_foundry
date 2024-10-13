@@ -1,6 +1,8 @@
 <MonsterName/>Kobold, Sapper</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (studded leather)</AC>
+<HP/>66</HP>
 <summary>The Kobold Sapper is a small humanoid creature that embodies cunning and resourcefulness, designed for ambush and sabotage. As a lawful neutral being, it operates with a set code of behavior, often adhering to strict loyalty towards its tribe. With an Armor Class of 15, the Sapper can evade attacks reasonably well, supported by its decent hit points of 66, allowing it to endure several rounds in battle. Although physically weak with a Strength score of 7 (-2), it possesses exceptional Dexterity with a score of 16 (+3) which enhances its agility and accuracy, making it a threat in ranged combat. The Sapper also excels in intelligence-related tasks, with an Intelligence score of 16 (+3) allowing for clever traps and tactics. However, its low Charisma and Wisdom scores may hinder its interactions with others and its perception abilities.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Quicksilver Siege Orb</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>82</HP>
 <summary>The Quicksilver Siege Orb is a small, unaligned construct that combines resilience with agility, making it a formidable opponent in battle. With an Armor Class of 15 and 82 hit points, it is designed to withstand a fair amount of damage while presenting challenges to melee attackers. Its primary strengths lie in its high Dexterity score of 21, granting it excellent agility and good stealth capabilities, marked by a Stealth skill bonus of +8. However, its Intelligence and Charisma scores are very low, limiting its ability to engage in intricate tactical planning or social interactions. The creature can fly and walk, providing it with mobility options that can exploit its environment and position in combat effectively.</summary>
 
 <detail>

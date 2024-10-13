@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Silver Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>487</HP>
 <summary>The Ancient Silver Dragon is a noble and compassionate creature, with scales that gleam like pure silver. These dragons are often mistaken for statues or icy outcroppings when resting in their high mountain homes. Silver Dragons are known for their deep sense of honor and their dedication to protecting the innocent. They can take human form, allowing them to walk among mortals and assist in their struggles. Their breath weapon is a cone of freezing cold, and they can also emit a gas that paralyzes their foes. Despite their immense power, Silver Dragons prefer to resolve conflicts through diplomacy and peaceful means.</summary>
 
 <summary>The Ancient Silver Dragon is a formidable gargantuan creature and serves as one of the most powerful dragon types in the game. It possesses an impressive armor class of 22 and boasts a staggering 429 hit points, making it highly durable in battle. The dragon's movement capabilities are exceptional, with a walking speed of 40 feet and a flying speed of 80 feet, allowing it to maneuver easily on the battlefield. With a challenge rating of 25, it poses a significant threat to adventurers, and its various abilities enhance its effectiveness in combat. Notably, the dragon has strong cold damage resistance, advanced spellcasting abilities, and the capacity to change shape, making it a versatile opponent. However, it may be vulnerable to certain magical effects if it exhausts its legendary resistances.</summary>

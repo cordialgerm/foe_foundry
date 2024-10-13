@@ -1,6 +1,8 @@
 <MonsterName/>Adult Brass Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>172</HP>
 <summary>An Adult Brass Dragon is a friendly, talkative creature with burnished, golden-brown scales that gleam like polished metal. It has large, rounded wings and a curving tail, giving it an elegant, if not overly intimidating, appearance. Brass Dragons prefer hot, dry climates such as deserts, where they enjoy basking in the sun and striking up conversations with travelers. They are known for their curiosity and love of conversation, often engaging in lengthy discussions with other beings. While not as fearsome as other dragons, they can still unleash a deadly breath weapon: a scorching blast of heat or a blinding cloud of sleep-inducing gas.</summary>
 
 <summary>The Adult Brass Dragon is a formidable creature known for its intelligence, charm, and combat prowess. As a Huge dragon, it serves a significant role in both combat and social interactions, leveraging its innate spellcasting abilities and high intelligence. With an impressive Armor Class of 18 and a substantial pool of hit points totaling 161, this dragon is exceptionally resilient in battle. Its strengths lie in its fire immunity, versatility in actions, and its powerful breath weapons, such as the Molten Breath and Sleep Breath, which can control the battlefield effectively. The dragon's weaknesses include its lower Dexterity, only average for a creature of its caliber, and its reliance on legendary actions to maximize its combat potential. Notably, its ability to change shape allows it to navigate social encounters more adeptly.</summary>

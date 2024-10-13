@@ -1,6 +1,8 @@
 <MonsterName/>Alliumite, Husker</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>2</CR>
+<AC/>15</AC>
+<HP/>68</HP>
 <summary>The Alliumite, known as the Husker, is a Medium-sized chaotic neutral plant creature that poses a unique challenge in combat. With an Armor Class of 15 due to its natural armor and shield, it is reasonably well-protected. The Husker has 68 hit points, giving it good durability in encounters, especially for its Challenge Rating of 2, which makes it suitable for mid-level adventurers. The creature's strengths lie in its abilities to inflict conditions on foes, such as blindness and psychic damage, while its mobility is enhanced by the ability to burrow. However, it has a low Intelligence score, indicating that it may not be highly strategic in its actions. </summary>
 
 <detail>

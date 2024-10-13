@@ -1,6 +1,8 @@
 <MonsterName/>Tusked Skyfish</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Tusked Skyfish is a formidable creature classified as a Large Aberration, known for its unique blend of offensive capabilities and defensive traits. With an Armor Class of 14 and a substantial pool of 102 hit points, it can absorb a fair amount of damage before being defeated, making it a resilient opponent in combat. The skyfish possesses a challenge rating of 4, which indicates it presents a moderate level of difficulty for adventurers, providing them with 1,100 experience points upon defeat. Notably, the creature is immune to lightning damage, which enhances its survivability against certain attacks. Its strengths lie in its powerful physical attacks and the ability to grapple and restrain opponents, while its low Intelligence score reveals a lack of strategic thinking.</summary>
 
 <detail>

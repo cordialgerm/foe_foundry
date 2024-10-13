@@ -1,6 +1,8 @@
 <MonsterName/>Drake, Ethereal</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Ethereal Drake is a large dragon known for its chaotic neutral alignment and unique ability to traverse both the Material and Ethereal Planes. With a respectable Armor Class of 16, the drake can withstand significant damage while possessing a solid pool of hit points at 133, allowing it to endure engagements long enough to leverage its powerful abilities in battle. The drake has a Challenge Rating of 7, making it a formidable opponent for parties of adventurers, and it provides 2,900 experience points upon defeat. Notably, the Ethereal Drake specializes in ethereal movement, making it both elusive and unpredictable in combat scenarios.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Lycanthrope, Wereotter</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>44</HP>
 <summary>The Wereotter is a medium-sized humanoid lycanthrope that embodies the playful and tenacious nature of otters while retaining human intelligence and capabilities. These chaotic good creatures are known for their adaptability both in water and on land, exhibiting skills that make them formidable opponents in combat. The Wereotter boasts a decent hit point pool, an average Armor Class, and possesses strong Dexterity and Charisma, making it agile in battles and effective in social interactions. However, like many lycanthropes, it is vulnerable to silvered weapons, and its moderate Strength and Constitution score means that while it can deal some decent damage, it may struggle against tougher foes.</summary>
 
 <detail>

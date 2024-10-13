@@ -1,6 +1,8 @@
 <MonsterName/>Great Wyrm Gold Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>26</CR>
+<AC/>22</AC>
+<HP/>975</HP>
 <summary>The Great Wyrm Gold Dragon is a gargantuan and highly powerful creature known for its majestic appearance and formidable abilities. As one of the most powerful dragons in existence, it boasts exceptional combat abilities, incredible defense, and versatile spellcasting capabilities. Its high Armor Class of 22 and massive hit points of 975 indicate that it can withstand significant damage. With a Challenge Rating of 26, it presents a grave threat to any adventurers who dare to confront it. Notable for its immunity to fire damage and mastery of both melee and magic, the Great Wyrm can overwhelm opponents with punishing attacks and debilitating spells. However, its reliance on physical attacks means that it could be challenged by foes capable of ranged combat or strategic spell use.</summary>
 
 <detail>

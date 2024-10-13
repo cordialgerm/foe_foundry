@@ -1,6 +1,8 @@
 <MonsterName/>Zmey Headling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Zmey Headling is a medium-sized dragon that embodies chaotic evil. It is a formidable opponent in combat due to its high Armor Class of 16 and robust Hit Points totaling 105, making it resilient in battle. This creature has a slower movement speed of 20 feet on land, which could hinder its mobility compared to faster adversaries. With a Challenge Rating of 5, it offers a moderate challenge to adventurers, providing 1,800 experience points upon defeat. The Zmey Headling possesses a combination of physical strength, represented by a Strength score of 16 (+3 modifier, categorized as good), and solid Constitution at 17 (+3 modifier, also good). However, it has poor mental statistics, especially with Intelligence at 8 (-1, very bad) and Charisma at 8 (-1, very bad). The creature has some notable resistances to cold and fire damage, making it less vulnerable to elemental attacks.</summary>
 
 <detail>

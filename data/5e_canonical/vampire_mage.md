@@ -1,6 +1,8 @@
 <MonsterName/>Vampire Mage</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>13</CR>
+<AC/>16</AC>
+<HP/>142</HP>
 <summary>The Vampire Mage is a powerful Medium Undead being that serves as a formidable adversary in any encounter. With an impressive hit point total and a high armor class, this creature is not only resilient but also capable of inflicting devastating damage through both spellcasting and melee attacks. The Vampire Mage is particularly notable for its combination of spellcasting abilities and its innate vampire powers, which allow it to charm, regenerate, and evade attacks effectively. However, it has weaknesses, especially against radiant damage and certain types of spells, making tactical play essential when facing it. The creature has a challenge rating of 13, indicating its ability to pose a significant threat to a party of adventurers.</summary>
 
 <detail>

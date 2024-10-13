@@ -1,6 +1,8 @@
 <MonsterName/>Elk</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>13</HP>
 <summary>An Elk is a large, majestic herbivore often found in forests and grasslands. It has a powerful, muscular body, with males sporting impressive antlers that they use to challenge rivals during the mating season. Elks are fast and agile, capable of running at great speeds to escape predators. While generally peaceful, they can become aggressive if threatened, using their antlers to defend themselves. Elks are commonly seen in herds, grazing on grasses and leaves, and their presence in the wild is often a symbol of the untamed beauty of nature.</summary>
 
 <summary>The Elk is a large beast that serves primarily as a physical presence in the wilderness. With its notable speed and the ability to ram into foes, it can be utilized effectively in combat situations, particularly to knock down weaker opponents. While its offense is reasonably strong, its Armor Class of 10 makes it less resilient to attacks, and its intelligence is exceptionally low, limiting its tactical capabilities. The Elk possesses a Challenge Rating of 1/4, making it suitable for lower-level encounters where it can provide a challenge without overwhelming inexperienced players.</summary>

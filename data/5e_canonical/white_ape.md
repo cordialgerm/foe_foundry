@@ -1,6 +1,8 @@
 <MonsterName/>White Ape</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The White Ape is a large monstrosity that serves as a formidable challenge in combat, boasting both physical prowess and dangerous magical abilities. With an Armor Class of 14, it is somewhat resilient but primarily relies on its significant pool of hit points—114, equivalent to 12d10 + 48. This creature thrives on melee combat with its powerful attacks and possesses a unique disease, arcane wasting, which can debilitate spellcasters over time. Its notable strengths include high Strength (18) and Constitution (18), making it exceptionally strong and durable. Its Dexterity (16) also provides good agility in combat. However, its Intelligence (8) and Charisma (8) are low, which is a significant weakness that limits interactions with other creatures and the use of intelligence-based skills. </summary>
 
 <detail>

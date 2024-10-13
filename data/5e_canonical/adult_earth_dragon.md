@@ -1,6 +1,8 @@
 <MonsterName/>Adult Earth Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>18</CR>
+<AC/>19</AC>
+<HP/>287</HP>
 <summary>The Adult Earth Dragon is a formidable Huge Dragon known for its power as a guardian of the earth and stone. With high armor class and substantial hit points, it presents a significant threat to adventurers. Its abilities allow it to manipulate the battlefield through terrain alterations, while its innate spellcasting affords tactical advantages. The dragon benefits from substantial physical attributes, particularly in strength and constitution, making it a powerful melee combatant. However, its reliance on its linked essence means that when separated from its territory, it becomes less effective. Players must strategize when engaging this creature, considering its strengths in combat alongside its unique terrain-based abilities.</summary>
 
 <detail>

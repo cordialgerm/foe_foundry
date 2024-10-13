@@ -1,6 +1,8 @@
 <MonsterName/>Rime Worm</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Rime Worm is a formidable Large Elemental creature that thrives in icy environments. Unaligned in its motivations, it embodies the harshness of winter, making it a challenging foe for adventurers. With a solid Armor Class of 15, it can withstand significant damage, complemented by its robust 114 hit points derived from rolling twelve ten-sided dice plus an additional 48. The Rime Worm can efficiently traverse both land and burrow through ice and snow, boasting a speed of 30 feet on foot and another 30 feet while burrowing. It is rated as a Challenge Rating 6 creature, rewarding players with 2,300 experience points upon defeat, indicating that it presents a balanced level of threat for a party of adventurers. The Rime Worm's strengths lie in its impressive Strength (20, which offers an exceptional +5 modifier), high Constitution (19, granting a good +4 modifier), and unique cold damage abilities, while its Intelligence and Charisma scores are very low, reflecting a simplistic mindset and limited social interaction.</summary>
 
 <detail>

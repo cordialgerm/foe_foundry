@@ -1,6 +1,8 @@
 <MonsterName/>Bulbous Violet</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>38</HP>
 <summary>The Bulbous Violet is a Medium-sized plant creature that operates without alignment, making it a neutral entity in its interactions. It possesses a relatively low Armor Class of 12 and has 38 hit points, which consist of a combination of 7d8 plus a Constitution modifier. The violet can move at a speed of 20 feet on the ground and can also climb at the same pace. With a Challenge Rating of 1, it is considered a minor threat, granting 200 experience points upon defeat. The Bulbous Violet has notable physical attributes, particularly good Strength and Dexterity scores, indicating its capabilities in grappling and mobility. However, it has exceptionally low Intelligence and Charisma, reflecting its primal nature as a plant.</summary>
 
 <detail>

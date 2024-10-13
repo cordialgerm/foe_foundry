@@ -1,6 +1,8 @@
 <MonsterName/>Vampire Spawn</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>82</HP>
 <summary>A Vampire Spawn is a lesser form of vampire, created when a mortal is drained of their blood by a vampire but not given the full transformation. These undead creatures retain some of their former appearance but are bound to their vampire masters, acting as loyal servants. Vampire Spawn are fast, strong, and have many of the abilities of a full vampire, including enhanced strength, regeneration, and the ability to charm mortals. However, they lack the independence and full power of their creators. They are often used as enforcers or guardians by more powerful vampires.</summary>
 
 <summary>The Vampire Spawn is a Medium undead creature that functions as a formidable opponent in combat. It offers a mix of durability and offensive capabilities, reinforced by its special abilities and regeneration. With an Armor Class of 15 and a significant pool of 76 hit points, the Vampire Spawn can withstand a fair amount of damage. Its challenge rating of 4 signifies it can be a strong foe for a party of low to mid-level adventurers, offering 1,100 experience points upon defeat. The creature's strengths include high strength, constitution, and dexterity scores, allowing it to hit hard and avoid damage effectively. However, it has notable weaknesses, particularly to radiant damage and specific vulnerabilities to sunlight and running water.</summary>

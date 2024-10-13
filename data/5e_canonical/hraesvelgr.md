@@ -1,6 +1,8 @@
 <MonsterName/>Hraesvelgr</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>19</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>241</HP>
 <summary>Hraesvelgr is a formidable giant titan characterized by its immense size and powerful abilities, making it a dangerous adversary in combat. With a challenge rating of 19, Hraesvelgr exemplifies raw strength and durability, garnering a massive pool of hit points totaling 241. This creature can transition between two forms: a towering giant and a colossal roc, each providing unique tactical options. Its exceptional strength score of 25 allows it to deal significant damage, while its damage immunities to cold and nonmagical attacks add to its resilience. However, despite its formidable presence, it is vulnerable to magical attacks and strategies that exploit its slower speed when flying. Hraesvelgr's ability to influence weather enhances its battlefield control, enabling it to alter environmental conditions to its advantage.</summary>
 
 <detail>

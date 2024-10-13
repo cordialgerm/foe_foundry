@@ -1,6 +1,8 @@
 <MonsterName/>Aklea</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>22</CR>
+<AC/>21</AC>
+<HP/>656</HP>
 <summary>Aklea is a gargantuan celestial creature, embodying immense power and divine authority. With a formidable Armor Class of 21 and a substantial pool of Hit Points totaling 656, it is a challenging opponent rated at Challenge Level 22, making it a significant threat in any encounter. Aklea possesses tremendous physical and magical capabilities, evidenced by its high attributes across Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. Its distinguishing features include exceptional damage immunities to radiant damage and damage from non-magical weapons, positioning it as a resilient adversary. However, despite its strengths, the creature is primarily reliant on its spellcasting and physical attacks to dominate the battlefield.</summary>
 
 <detail>

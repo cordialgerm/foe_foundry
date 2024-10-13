@@ -1,6 +1,8 @@
 <MonsterName/>Giant Vulture</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>22</HP>
 <summary>The Giant Vulture is a massive bird of prey with a wingspan that can stretch over 10 feet. Its bald head and neck, hooked beak, and sharp talons make it a fearsome scavenger, often feeding on the remains of large creatures. Giant Vultures are intelligent and aggressive, sometimes hunting in groups to overpower weakened or wounded prey. They are often found in deserts or savannahs, circling high above in search of carrion. Though primarily scavengers, they will attack if provoked or if they sense easy prey.</summary>
 
 <summary>The Giant Vulture is a large beast characterized by its impressive flying ability and keen senses, making it an opportunistic predator in the wild. With a challenge rating of 1, it is an adequate combatant for lower-level adventurers seeking to test their mettle. The vulture's ability to attack with both its beak and talons allows it to deal a decent amount of damage, while its special abilities, particularly keen sight and smell, provide it with a significant advantage in perception-related tasks. However, its moderate armor class and hit points reveal its vulnerability, making it susceptible to focused attacks by agile opponents.</summary>

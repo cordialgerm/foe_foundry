@@ -1,6 +1,8 @@
 <MonsterName/>Fungi, Duskwilt</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>97</HP>
 <summary>The Duskwilt is a small plant creature with a lawful neutral alignment that presents a unique blend of combat abilities and environmental manipulation. With a respectable Armor Class of 15 thanks to its natural armor and a hit point total of 97, it boasts durability in battle. The Duskwilt's significant speed enables it to move effectively across the battlefield, making it a versatile opponent. It demonstrates strong dexterity, making it quite agile, while also possessing a good constitution for resilience against damage. However, it has vulnerabilities to radiant damage, which can make it susceptible to specific divine attacks. Notable features include its ability to absorb light, altering visibility in its vicinity, and its capacity to inflict necrotic damage through physical and ranged attacks.</summary>
 
 <detail>

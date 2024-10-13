@@ -1,6 +1,8 @@
 <MonsterName/>Behtu</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Behtu is a small humanoid creature characterized by its chaotic evil nature, making it a formidable opponent in combat scenarios. With a solid armor class of 14, it possesses good defensive capabilities, while its hit points of 52, derived from eight six-sided dice plus a substantial constitution bonus, give it moderate endurance in battle. This creature boasts strong physical attributes, particularly in strength, dexterity, and constitution, all of which are rated at +3, marking them as good in effectiveness. However, its intelligence and wisdom attributes are average, and its charisma is notably poor at -2, which may affect its interactions and ability to influence others. The Behtu is capable of dealing significant damage with its melee attacks and has a powerful area-of-effect fire breath ability that can deal major damage to multiple targets.</summary>
 
 <detail>

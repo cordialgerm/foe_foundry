@@ -1,6 +1,8 @@
 <MonsterName/>Splinter Matron</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Splinter Matron is a medium-sized fey creature embodying chaotic evil, known for its mischievous and malevolent nature. It has a strong presence in combat due to its high Armor Class of 16 and significant Hit Points totaling 136, making it a challenging foe for adventurers. With a Challenge Rating of 7, it provides a worthy encounter with a mix of melee and ranged attacks. The Splinter Matron is agile, boasting a Dexterity score of 18, allowing for good reliability with its attacks. Its ability to resist non-magical bludgeoning, piercing, and slashing damage is a significant defensive asset, but while its Intelligence is average at 11, its Wisdom and Charisma scores of 9 and 14, respectively, limit its perceptive and social capabilities. Notable strengths include its Magic Resistance, providing advantage on saving throws against spells, which keeps it resilient against magical assaults. However, its Wisdom is below average, making it vulnerable to effects dependent on Wisdom saves.</summary>
 
 <detail>

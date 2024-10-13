@@ -1,6 +1,8 @@
 <MonsterName/>Scheznyki</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>135</HP>
 <summary>The Scheznyki is a small fey creature that embodies chaotic evil. With a formidable armor class of 16 and a significant 135 hit points, it stands out in combat due to its ability to both engage in melee and cast spells. The Scheznyki's main strengths include high physical damage output augmented by its brute ability, making its attacks particularly deadly. However, it is vulnerable to having its beard cut off, which disables its spellcasting. Its combination of physical prowess and magical abilities makes it a versatile opponent in battle. Notably, it has robust magic resistance, giving it an advantage against spells. </summary>
 
 <detail>

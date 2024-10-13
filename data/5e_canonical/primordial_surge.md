@@ -1,6 +1,8 @@
 <MonsterName/>Primordial Surge</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>16</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>232</HP>
 <summary>The Primordial Surge is a formidable Gargantuan Elemental creature known for its devastating powers and transformative abilities. Its high mobility, both in flight and on the ground, combined with impressive defensive traits including significant damage immunities and resistances make it a daunting adversary. With a Challenge Rating of 16, it presents a serious threat to adventurers, capable of dealing heavy damage while also having the unique ability to restore life in its wake. It has low intelligence, wisdom, and charisma, but its physical abilities are very strong, especially in dexterity, making it agile and lethal in combat. Notably, it can create lush landscapes and even revive fallen allies upon its death, adding a layer of challenge and tactical consideration when facing this being.</summary>
 
 <detail>

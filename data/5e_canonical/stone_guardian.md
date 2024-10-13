@@ -1,6 +1,8 @@
 <MonsterName/>Stone Guardian</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>17</AC>
+<HP/>178</HP>
 <summary>The Stone Guardian is a powerful Large Construct known for its robust physical defense and high damage output. With an Armor Class of 17 and hit points totaling 178, the Guardian is a formidable opponent in combat, able to withstand significant damage while dealing heavy blows to its enemies. It possesses exceptional Strength with a score of 22, allowing for strong melee attacks, while its Constitution also provides good durability. However, its Intelligence, Charisma, and Dexterity are notably low, making it less effective in situations that require social interaction or agility. The Guardian's special abilities, such as defensive capabilities and resistance to magic, make it a reliable guardian for any site or purpose.</summary>
 
 <detail>

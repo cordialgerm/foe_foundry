@@ -1,6 +1,8 @@
 <MonsterName/>Baba Yaga’s Horsemen</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>11</CR>
+<AC/>20</AC>
+<HP/>171</HP>
 <summary>Baba Yaga’s Horsemen are formidable Medium Fey creatures that embody the power and dark magic associated with the legendary figure of Baba Yaga. With a lawful neutral alignment, they serve as mystical guardians with a focus on delivering both physical and magical damage. They boast a strong defense due to their high Armor Class of 20 and substantial Hit Points totaling 171, making them capable of enduring sustained combat. The horsemen shine with their unique abilities, particularly their Enchanted Weapons that allow them to deal additional magical damage depending on their individual themes. They possess resilience against spells and benefit from the Peerless Rider ability, which allows them to share damage resistance and immunities with their mounts. However, their weaknesses include a reliance on their mount and vulnerability to nonmagical attacks under certain circumstances.</summary>
 
 <detail>

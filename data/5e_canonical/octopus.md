@@ -1,6 +1,8 @@
 <MonsterName/>Octopus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>12</AC>
+<HP/>3</HP>
 <summary>An Octopus is a small, intelligent sea creature known for its ability to camouflage and squeeze through tight spaces. With its eight tentacles lined with suction cups, it can grasp objects or prey with ease. Octopuses are found in shallow coastal waters, where they hunt small fish and crustaceans. Though not aggressive, an Octopus can use its ink cloud to obscure predators and escape quickly. Its intelligence and problem-solving abilities make it one of the more curious and crafty creatures in the ocean, but it is not typically a threat to adventurers.</summary>
 
 <summary>The octopus is a tiny beast that excels in stealth and aquatic environments. With a speed of 30 feet when swimming and the ability to camouflage itself, it is adept at hiding and maneuvering in water. However, its low hit points and relatively low armor class make it vulnerable in combat situations. The octopus's abilities allow it to escape dangerous encounters by creating clouds of ink, which can provide crucial cover. Although its physical attacks are weak, its ability to grapple opponents allows it to control foes and limit their actions effectively.</summary>

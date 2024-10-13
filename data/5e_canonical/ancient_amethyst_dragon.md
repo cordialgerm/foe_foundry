@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Amethyst Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>20</AC>
+<HP/>313</HP>
 <summary>The Ancient Amethyst Dragon is a gargantuan creature that embodies the power and majesty of dragons in the world of Dungeons & Dragons. This dragon is not only formidable in combat due to its impressive physical stats but also possesses powerful psionic abilities that can manipulate the minds of foes from great distances. With an armor class of 20 and a substantial pool of hit points totalling 313, the Ancient Amethyst Dragon is designed to withstand significant damage. This dragon is rated as a Challenge Rating of 23, making it an exceptionally high-tier adversary worth 50,000 experience points when defeated. It has a variety of strengths including resistances to force and psychic damage, a wide range of telepathic communication abilities, and formidable spells. However, its reliance on psionic powers may expose it to weaknesses against opponents who are immune or particularly resistant to psychic effects.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Einherjar</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>18</AC>
+<HP/>119</HP>
 <summary>The Einherjar is a medium humanoid that embodies chaotic neutrality, drawing upon celestial powers for strength and resilience in combat. With a robust armor class of 18, it is well-equipped to withstand attacks. Its hit points are notably high at 119, giving it considerable durability in battle. The creature is designed for melee and ranged combat, boasting a challenge rating of 7, which makes it a formidable opponent with a good experience reward of 2,900 XP. The Einherjar possesses a variety of special abilities that enhance its capabilities, and while it excels at Intimidation and can deal significant damage, it is somewhat average in intelligence and charisma.</summary>
 
 <detail>

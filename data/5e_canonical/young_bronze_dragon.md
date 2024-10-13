@@ -1,6 +1,8 @@
 <MonsterName/>Young Bronze Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>8</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>142</HP>
 <summary>A Young Bronze Dragon is a noble and courageous creature that dwells near coastlines or large bodies of water. Its gleaming bronze scales shimmer in the sun, and its lightning breath weapon is as devastating as a storm. Young Bronze Dragons are highly intelligent and often take an interest in the affairs of mortals, particularly when justice or protection is needed. They are known to aid sailors in distress or defend coastal settlements from pirates and monsters. Despite their youth, they are already wise and noble, using their strength to promote peace and justice.</summary>
 
 <summary>The Young Bronze Dragon is a formidable creature within the Dungeons & Dragons realm, often serving as a guardian of coastal regions and an ally to good-aligned adventurers. This large dragon possesses a diverse set of offensive and defensive capabilities, making it a tough opponent in combat scenarios. With exceptional physical attributes, particularly in Strength and Constitution, it becomes a force to be reckoned with. The dragon exhibits good mobility with the ability to walk, fly, and swim efficiently. It is highly intelligent and charismatic, able to manipulate and interact with others effectively. This dragon's strongest assets include its powerful breath weapons and innate spellcasting, while its vulnerabilities are limited, as it is immune to lightning damage.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Psychic Vampire</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>13</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>144</HP>
 <summary>The Psychic Vampire is a Medium-sized Undead creature that embodies the essence of lawful evil. Known for its devastating mental powers, this monster excels in manipulating and incapacitating its opponents. It possesses a high Armor Class of 17 and significant hit points totaling 144, making it quite durable in battle. With a Challenge Rating of 13, it poses a formidable threat to adventurers, providing substantial experience if defeated. Although it has tremendous psychic abilities, it does have notable weaknesses, including vulnerabilities to sunlight and a reliance on using its environment strategically. </summary>
 
 <detail>

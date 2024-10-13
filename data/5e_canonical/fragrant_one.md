@@ -1,6 +1,8 @@
 <MonsterName/>Fragrant One</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>11</AC>
+<HP/>45</HP>
 <summary>The Fragrant One is a small fey creature characterized by a chaotic neutral alignment. It serves as a manipulative charm caster, capable of influencing the minds of others with its sweet-smelling pheromones. With an Armor Class of 11, it possesses only average defense capabilities. However, it boasts a notable pool of hit points at 45, making it reasonably resilient. The Fragrant One is effective at mind control, using its charm abilities to bend allies to its will, which also enhances its own combat effectiveness as it gains temporary hit points and deals extra damage when surrounded by charmed allies. Despite its prowess in charm and manipulation, it has low physical strength indicated by a Strength score of 7, resulting in a very bad modifier, which makes it vulnerable in physical confrontations.</summary>
 
 <detail>

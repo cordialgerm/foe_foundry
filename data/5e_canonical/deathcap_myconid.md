@@ -1,6 +1,8 @@
 <MonsterName/>Deathcap Myconid</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Deathcap Myconid is a Medium-sized, neutral evil plant creature that embodies a blend of resilience and toxic power. This myconid is equipped with a noteworthy Armor Class of 15, enabling it to withstand a fair amount of damage, along with substantial hit points totaling 90, derived from rolling 12 eight-sided dice plus an additional 36 hit points. Its movement speed is limited to 20 feet, giving it a slower presence in battle, but its dangerous capabilities are found in its toxic spores. The creature has a challenge rating of 4, which indicates it can pose a moderate threat to a party of adventurers. However, it suffers from sunlight hypersensitivity, making it vulnerable to radiant damage and less effective in brighter conditions.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Noth-norren</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>13</CR>
+<AC/>14</AC>
+<HP/>203</HP>
 <summary>The Noth-norren is a gargantuan elemental creature that embodies chaotic evil. It has significant power and resilience, boasting a high armor class of 14 and an extensive pool of hit points totaling 203. This creature serves as a formidable opponent due to its ability to control the battlefield with its air turbulence, which forces flying creatures to land or risk falling. The Noth-norren exhibits exceptional physical strength and dexterity, which enhance its melee and ranged attack capabilities. While it has weaknesses against certain magical effects, its ability to resist damage from various types of attacks makes it a challenging adversary. Players must tread carefully when facing this elemental, as its ability to manipulate its environment can turn the tide of combat in its favor.</summary>
 
 <detail>

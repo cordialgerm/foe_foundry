@@ -1,6 +1,8 @@
 <MonsterName/>Magma Mephit</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>22</HP>
 <summary>A Magma Mephit is a small, impish elemental creature made of molten rock and fire. These mischievous creatures are found near volcanoes, lava flows, or other areas of intense heat. Magma Mephits are capable of breathing gouts of fire and spewing molten rock at their enemies. They delight in causing destruction and chaos, using their ability to ignite objects and create small eruptions of magma. Magma Mephits can also summon other mephits to aid them in battle. Though weak individually, their fiery nature makes them dangerous in groups.</summary>
 
 <summary>The Magma Mephit is a small elemental creature that embodies fire and magma, often found in volcanic regions or near geothermal features. With an Armor Class of 11 and 21 hit points, it is relatively fragile but possesses some interesting abilities that can turn the tide in combat. The mephit operates effectively as a skirmisher, using its flying speed to engage from the air while employing a range of fiery attacks. Its weaknesses include vulnerability to cold damage, while it is immune to fire and poison, making it a strong contender against certain attacks. The Magma Mephit has abilities that allow for clever positioning and surprising explosions upon death, making it a hazardous foe for unwary adventurers.</summary>

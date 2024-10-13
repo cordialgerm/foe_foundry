@@ -1,9 +1,11 @@
 <MonsterName/>Werewolf (Lycanthrope)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
-<Subtype/>human</Subtype>
 <Subtype/>shapechanger</Subtype>
+<Subtype/>human</Subtype>
 <Subtype/>lycanthrope</Subtype>
+<CR/>3</CR>
+<AC/>11</AC>
+<HP/>58</HP>
 <summary>A Werewolf is a humanoid cursed with the ability to transform into a wolf or a wolf-like hybrid form. Werewolves are among the most feared lycanthropes, known for their savage nature and insatiable bloodlust. In their wolf form, they possess heightened senses, sharp claws, and fangs, making them deadly hunters. Werewolves are often driven by primal instincts and are known to form packs, preying on humans and animals alike. They are immune to most conventional weapons unless made of silver, and they can spread lycanthropy through their bite, creating new werewolves to join their pack.</summary>
 
 <summary>The Werewolf is a Medium-sized humanoid that embodies the dual nature of humanity and beast. With a Challenge Rating of 3, it presents a moderate level of threat, capable of dealing significant damage when engaging in combat. Its notable strengths include a solid Armor Class of 12 and decent Hit Points, totaling 58. Werewolves possess strong physical attributes with a Strength, Dexterity, and Constitution score of 14, each providing a good modifier of +2, which enhances their effectiveness in combat and physical activities. However, their Intelligence, Wisdom, and Charisma are average, each sitting at 10, offering no bonus or drawback to their social interactions or ability checks reliant on those attributes. </summary>

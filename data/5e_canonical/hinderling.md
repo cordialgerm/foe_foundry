@@ -1,6 +1,8 @@
 <MonsterName/>Hinderling</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>13</HP>
 <summary>The Hinderling is a small fey creature with chaotic neutral alignment, embodying mischief and cunning. Its primary role in encounters is to create chaos for its enemies while evading direct confrontation. With a challenge rating of 1/4, it is relatively weak in terms of durability, possessing only 13 hit points and an armor class of 13, making it vulnerable to damaging attacks. However, it is agile, sporting a dexterity score of 17, which grants it a good modifier of +3 to dexterity-based checks and saving throws. The Hinderling’s abilities are centered around causing misfortune to foes and evading danger, but it relies heavily on its environment and the positioning of other characters to be most effective.</summary>
 
 <detail>

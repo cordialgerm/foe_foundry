@@ -1,6 +1,8 @@
 <MonsterName/>Stegosaurus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>16</AC>
+<HP/>63</HP>
 <summary>The Stegosaurus is a massive dinosaur-like creature categorized as a huge beast. Its notable characteristics include a robust armor class of 16, providing it with a good level of defense in combat situations, and a substantial pool of hit points totaling 63, which allows it to endure a fair amount of damage before being taken down. With a challenge rating of 3, it poses a moderate threat to adventurers, offering 700 experience points upon defeat. In terms of abilities, the Stegosaurus excels in physical strength and constitution, boasting a strength score of 18 (+4) and a constitution score of 18 (+4), both of which contribute to its good combat capabilities and resilience. However, it has poor intelligence and charisma scores, making it very bad at complex tasks and social interactions. The Stegosaurus's movement speed is 30 feet on foot, allowing it to traverse the battlefield at an average pace. Its primary action is a powerful tail attack, which can deal significant damage and has the potential to knock down smaller foes.</summary>
 
 <detail>

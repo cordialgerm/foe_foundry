@@ -1,6 +1,8 @@
 <MonsterName/>Giant Hyena</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>45</HP>
 <summary>A Giant Hyena is a massive, predatory beast that roams savannahs and deserts, hunting in packs or scavenging for food. Its large, muscular body is covered in coarse fur, and its jaws are powerful enough to crush bones. Giant Hyenas are known for their ferocious hunting tactics, chasing down prey with relentless stamina and tearing them apart with sharp teeth. They are opportunistic feeders, attacking weakened creatures or feeding on carcasses left behind by other predators. In battle, their strength and pack tactics make them formidable foes, capable of overwhelming larger animals or adventurers.</summary>
 
 <summary>The Giant Hyena is a large beast commonly found in the wilderness, characterized by its speed and aggression. With a Challenge Rating of 1, it poses a moderate threat to low-level adventurers, particularly due to its high movement speed of 50 feet which allows it to close distances quickly. It has a good Armor Class of 12 that provides decent protection, alongside a solid pool of hit points totaling 34, making it capable of surviving a few hits in combat. The Giant Hyena excels in melee combat with its powerful bite attack, but its intelligence and charisma are notably poor, reflecting its bestial nature.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Earth Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>126</HP>
 <summary>An Earth Elemental is a towering creature made of rock, stone, and dirt, animated by powerful elemental magic. Its massive, hulking form is slow but incredibly strong, capable of smashing through walls and crushing anything in its path. Earth Elementals are often summoned by druids or wizards to serve as guardians or to assist in battles. They move through the ground as easily as walking, blending into the earth and emerging to surprise their foes. Earth Elementals are nearly unstoppable in combat, using their immense strength to batter enemies and their ability to merge with stone to avoid attacks.</summary>
 
 <summary>The Earth Elemental is a powerful and resilient creature, classified as a Large Elemental in Dungeons & Dragons. With a strong armor class of 17 and a significant pool of hit points totaling 114, it excels in combat situations, making it a formidable opponent with a challenge rating of 5. One of its major strengths lies in its high Strength and Constitution scores, granting it exceptional physical attacks and resilience against damage. The elemental's ability to burrow through earth without disturbing it allows for strategic movement on the battlefield, while its immunity to poison and resistance to nonmagical weapons makes it a tough adversary. However, it has low Dexterity and Intelligence scores, which limits its agility and cognitive abilities. Overall, the Earth Elemental is adept at dealing melee damage while evading most threats due to its unique characteristics.</summary>

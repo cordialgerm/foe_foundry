@@ -1,6 +1,8 @@
 <MonsterName/>Vila</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>77</HP>
 <summary>The Vila is a Medium-sized creature that belongs to the Fey type and is characterized by its Lawful Neutral alignment. Serving as both a protector of the forest and a formidable opponent, it possesses a variety of abilities that make it quite dangerous in combat. With an Armor Class of 15, it demonstrates good defensive capabilities, while its 77 hit points provide a solid buffer against attacks. The Vila can navigate through difficult terrain with ease, making it particularly effective in woodland environments, and it has excellent dexterity, reflected in a Dexterity score of 20 (+5), which contributes to its high initiative and stealth capabilities. Although it has some vulnerabilities, such as being susceptible to magical damage, its unique abilities and skills allow it to control the battlefield effectively. </summary>
 
 <detail>

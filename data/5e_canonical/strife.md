@@ -1,6 +1,8 @@
 <MonsterName/>Strife</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>15</AC>
+<HP/>60</HP>
 <summary>Strife is a small and cunning fey creature deeply entrenched in chaotic evil. It excels in manipulative strategies and deception, using its abilities to create confusion among foes and discourage teamwork. With a good Armor Class of 15 and a health pool of 60 hit points, Strife can withstand a fair amount of damage in combat. Its speed allows it to maneuver quickly on the battlefield, both on foot and in the air. Strife possesses exceptional Dexterity, granting it a +5 modifier, making its stealth capability very good. However, its Strength is below average, which limits its physical prowess. Notably, Strife can sow discord among enemies, providing strategic advantages during encounters.</summary>
 
 <detail>

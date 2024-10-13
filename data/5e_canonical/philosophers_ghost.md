@@ -1,6 +1,8 @@
 <MonsterName/>Philosopher's Ghost</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>77</HP>
 <summary>The Philosopher's Ghost is a Medium-sized ooze with a burning presence that symbolizes profound thoughts turned chaotic. Functioning primarily as an offensive creature, it possesses the ability to inflict persistent fire damage and is uniquely adept at moving through narrow spaces without hindrance. It thrives in combat scenarios where it can maximize its area effects, particularly in environments where targets can be caught off guard or remain immobilized. Despite its strengths, the Philosopher's Ghost is vulnerable to water, which can severely impair its mobility and effectively neutralize its burning touch damage capabilities. Its defensive capabilities are bolstered by its immunities and resistances but are somewhat offset by its low Constitution score, which results in an average resistance to general damage.</summary>
 
 <detail>

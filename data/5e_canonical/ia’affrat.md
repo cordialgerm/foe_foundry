@@ -1,6 +1,8 @@
 <MonsterName/>Ia’Affrat</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>15</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>170</HP>
 <summary>Ia’Affrat is a formidable Large Swarm Fiend, embodying the essence of lawful evil. With a powerful combination of high intelligence, charisma, and dexterity, he is a master manipulator and a cunning combatant. His stats reflect his strength as he has an impressive Armor Class of 17 derived from natural armor and a considerable pool of Hit Points totaling 170, which allows him to endure through battles. However, he has a significantly low strength score of 3, indicating that he is not physically strong. Ia’Affrat excels in spellcasting and has numerous resistances and immunities, making him difficult to affect with spells and physical attacks alike. He has notable vulnerabilities to cold damage, which can be exploited in combat. His telepathic communication abilities allow him to coordinate effectively with his allies, enhancing his tactical prowess during encounters.</summary>
 
 <detail>

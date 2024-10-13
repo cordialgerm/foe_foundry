@@ -1,6 +1,8 @@
 <MonsterName/>Befouled Weird</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Befouled Weird is a Medium-sized elemental creature that embodies neutral evil tendencies, thriving in its murky aquatic environment. With a Challenge Rating of 5, it possesses a strong offensive capability through its innate abilities and physical attacks, making it a formidable opponent in combat. The Befouled Weird has a total of 75 hit points, reinforced by good armor class at 14 due to its natural armor, allowing it to withstand a fair amount of damage. Its swimming speed of 60 feet grants it exceptional mobility in water, while a decent walking speed of 30 feet allows for terrestrial movement. However, it has moderate mental defenses, with a very bad Intelligence score of 5, limiting its strategic capabilities. Notable abilities include parasite-inflicting mechanics that can significantly debilitate enemies and a powerful Drown in Filth attack that combines bludgeoning and necrotic damage, applying relentless pressure on its foes.</summary>
 
 <detail>

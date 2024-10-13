@@ -1,6 +1,8 @@
 <MonsterName/>Fungi, Void Fungus</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Void Fungus is a peculiar and eerie creature of medium size classified under the plant type with a chaotic neutral alignment. This unique fungus blends into its environment with the ability to remain motionless, making it difficult for adventurers to detect until it is too late. With a respectable armor class of 14 and 65 hit points, it can endure moderate combat situations. Its challenge rating of 3 suggests that it presents a solid challenge to a well-prepared party, providing 700 XP upon defeat. Notably, the Void Fungus possesses high wisdom, granting it a good perception skill, but it lacks in charisma, which may limit its interactions with other creatures. </summary>
 
 <detail>

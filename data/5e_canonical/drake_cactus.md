@@ -1,6 +1,8 @@
 <MonsterName/>Drake, Cactus</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Cactus Drake is a Medium Dragon with a neutral good alignment, embodying qualities that make it both a formidable teammate and an intriguing foe. With an Armor Class of 14, it is moderately difficult to hit, and its 75 hit points, derived from 10d8+30, provide it with respectable durability, making it a good medium-tier challenge for adventurers (Challenge Rating 4, worth 1,100 XP). This creature possesses a blend of mobility with its walking and climbing speed of 20 feet and utility in the form of its unique abilities, particularly in support roles such as providing nourishment through its Offering of Flesh ability. While it features good Dexterity and Constitution scores of 17 (+3) and 16 (+3) respectively, making it agile and resilient, its low Intelligence and Charisma scores (9 and 11, respectively) suggest that it is not particularly cunning or persuasive.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Ssadar</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>71</HP>
 <summary>The Ssadar is a medium humanoid creature that embodies chaotic evil, characterized by its fiery nature and potent combat abilities. With a challenge rating of 3, it possesses a respectable number of hit points at 71, making it a formidable opponent for low to mid-level adventurers. The Ssadar excels in melee combat and has a strong affinity for fire, both in its attacks and its special abilities. Although it is vulnerable to cold damage, it is immune to fire, providing it with an exceptional defensive presence when facing fire-based opponents. Its unique abilities mean that Ssadar warriors gain an advantage in battle when exposed to fire damage, which can enhance their offensive capabilities.</summary>
 
 <detail>

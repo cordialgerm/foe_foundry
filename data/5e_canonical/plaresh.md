@@ -1,6 +1,8 @@
 <MonsterName/>Plaresh</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>30</HP>
 <summary>The Plaresh is a Medium-sized Fiend of chaotic evil alignment, making it a formidable foe in any encounter. It possesses several advantageous abilities that grant it resilience in combat, including damage immunities to poison and resistances to various elements like cold, fire, and lightning. Its natural armor provides it with good defensive capabilities, while its ability to burrow allows it to create destructive pathways through solid materials. However, its physical strength is exceptionally weak, making it reliant on its agility and cunning in battle. The Plaresh also has a significant challenge rating of 3, signaling that it poses a substantial threat to low-level adventurers.</summary>
 
 <detail>

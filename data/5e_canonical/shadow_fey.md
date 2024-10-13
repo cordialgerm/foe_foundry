@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Fey</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>31</HP>
 <summary>The Shadow Fey is a medium-sized humanoid creature that falls under the lawful evil alignment. With a Challenge Rating of 1/4, it embodies a blend of mischief and malice common to fey creatures, paired with a distinctive ability to operate in darkness. The Shadow Fey has notable strengths that include proficiency in stealth and a unique ability to traverse shadows. However, it has a significant weakness when exposed to sunlight, making it less effective in bright conditions. The creature wields both a shortsword and shortbow, allowing it to engage effectively in melee and ranged combat.</summary>
 
 <detail>

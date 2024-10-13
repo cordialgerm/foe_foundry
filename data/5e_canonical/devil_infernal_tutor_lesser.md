@@ -1,6 +1,8 @@
 <MonsterName/>Devil, Infernal Tutor, Lesser</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Infernal Tutor, Lesser is a Medium fiend characterized by its lawful evil nature. This creature plays the role of a cunning manipulator in combat and social interactions, using its intelligence and charm to influence others. With a Challenge Rating of 7, it possesses notable strengths such as high Charisma and effective spellcasting capabilities, making it a formidable foe when manipulating the minds of its enemies. Its natural armor grants it a decent Armor Class of 15, while its 110 hit points provide substantial durability. However, it does exhibit weaknesses, particularly against magic attacks and silver weapons, reflecting its connection to fire and poison immunity. The Infernal Tutor excels in social situations, showing exceptional prowess in deception and persuasion, but it can be vulnerable when directly attacked.</summary>
 
 <detail>

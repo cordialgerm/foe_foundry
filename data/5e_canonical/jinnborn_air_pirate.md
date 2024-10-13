@@ -1,6 +1,8 @@
 <MonsterName/>Jinnborn Air Pirate</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (Flamboyant Defense)</AC>
+<HP/>26</HP>
 <summary>The Jinnborn Air Pirate is a Medium humanoid that embodies the essence of air and lightning, characterized by its non-lawful behavior. With a Challenge Rating of 1/2, this creature presents a moderate challenge to low-level adventurers, showcasing versatility in both melee and ranged combat. The Jinnborn's notable strengths lie in its ability to deal additional lightning damage and its enhanced defensive capabilities when not armored. However, it remains vulnerable due to its moderate hit points and reliance on dexterity, making it somewhat fragile in prolonged engagements. The combination of elemental attacks and skilled navigation on vehicles presents a unique challenge for players.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Deathweaver</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Deathweaver is a huge monstrosity characterized by its neutral evil alignment, making it a formidable and malevolent force within the world of Dungeons & Dragons. With a Challenge Rating of 5, this creature poses a significant challenge for adventurers, boasting a strong physical presence and a variety of spells that enhance its combat effectiveness. The Deathweaver’s abilities enable it to navigate difficult terrain with ease and maintain awareness of its surroundings through web connections. While its offensive capabilities are impressive, particularly with its necrotic damage attacks, it has notable weaknesses against fire damage. Overall, the Deathweaver excels in ambush tactics and can alter the battlefield in its favor by creating webbed zones that hinder players.</summary>
 
 <detail>

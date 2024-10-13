@@ -1,6 +1,8 @@
 <MonsterName/>Wanyudo</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>115</HP>
 <summary>The Wanyudo is a large, lawful evil fiend characterized by its sinister nature and powerful abilities. With a high Armor Class of 16 due to its natural armor and 115 hit points, it excels in durability, making it a formidable adversary in combat. The Wanyudo boasts strong physical attributes, particularly in Strength and Constitution, both rated at 20 (+5), allowing for exceptional melee attacks. However, its Intelligence is low (8, -1), indicating limited cognitive abilities, which may impact its strategic planning. Its challenge rating of 8 signifies a significant threat, offering 3,900 XP for encounters. Notably, the Wanyudo possesses strong resistances and immunities, creating a daunting challenge for unprepared adventurers.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Bulette</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>94</HP>
 <summary>The Bulette, also known as a 'land shark,' is a massive, burrowing predator with a thick, armored hide. Its head is large and wedge-shaped, allowing it to dig through the earth with ease, while its powerful limbs propel it through the soil at great speeds. Bulettes are ambush predators, bursting out of the ground to devour anything in their path. Their sharp teeth and claws can tear through flesh, stone, and metal alike. These creatures are highly territorial and will attack anything that enters their hunting grounds. Though not particularly intelligent, their brute strength and speed make them formidable.</summary>
 
 <summary>The Bulette is a formidable large monstrosity known for its brute strength and tenacity in combat. Its notable ability to burrow allows it to surprise unsuspecting foes while its powerful attacks can deal substantial damage. With a challenging rating of 6, the Bulette poses a significant threat to adventurers who venture into its territory. However, despite its physical prowess and low intelligence, which is rated at a very bad -4, the Bulette compensates with high scores in strength and constitution, reflecting its hardy nature. Its weaknesses include a lack of ranged attacks and reliance on direct confrontation.</summary>

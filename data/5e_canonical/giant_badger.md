@@ -1,6 +1,8 @@
 <MonsterName/>Giant Badger</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>13</HP>
 <summary>The Giant Badger is an oversized version of its smaller kin, known for its powerful claws and relentless digging. These creatures are typically found in forests or grasslands, where they burrow to create extensive tunnel networks. Giant Badgers are aggressive if provoked and use their sharp claws to defend themselves from threats. They can dig through earth and soft rock with ease, and their keen senses allow them to detect prey or danger even underground. Despite their fierce appearance, Giant Badgers are primarily foragers, feeding on roots, insects, and small animals.</summary>
 
 <summary>The Giant Badger is a medium-sized beast known for its ferocity and tenacity in combat. With an armor class of 10 and 15 hit points, it presents a relatively low defensive capability, but its challenge rating of 1/4 indicates that it can still provide a decent challenge to low-level adventurers. Its strengths lie in its burrowing capability, allowing it to navigate underground, and its notable special abilities. However, its intelligence is very low, signifying that it operates mostly on instinct. The Giant Badger is adept at sensing its surroundings through heightened smell and reacts aggressively to threats, making it a formidable foe despite its small stature.</summary>

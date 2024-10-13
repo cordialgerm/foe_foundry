@@ -1,6 +1,8 @@
 <MonsterName/>Sigilian</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>65</HP>
 <summary>The Sigilian is a Medium Construct known for its unique abilities which allow it to manipulate books and utilize the energies within. This creature presents a challenge for adventurers, possessing good mobility and the ability to restore its health through its environment. The Sigilian's strengths lie in its resilience to many forms of damage, as well as its ability to delve into the abilities of those it encounters. Its primary weaknesses include vulnerability to psychic damage and its low physical strength. The Sigilian's power is amplified when it interacts with spellbooks, allowing it to absorb magical energies, making it a fascinating yet formidable opponent for those who may underestimate its capabilities.</summary>
 
 <detail>

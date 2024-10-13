@@ -1,6 +1,8 @@
 <MonsterName/>Necrohydra</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>207</HP>
 <summary>The Necrohydra is a massive undead creature with a terrifying presence, designed to instill fear in its adversaries and dominate the battlefield. It boasts a formidable challenge rating of 9, which makes it a significant threat for adventurers. With high hit points totaling 207, the Necrohydra can withstand a substantial amount of damage, and its multiple heads give it numerous advantages in combat. However, its low Dexterity and intelligence limits its ability to evade attacks and strategize, leading to poor maneuverability and tactical choices. The creature is immune to certain conditions like exhaustion and poison, making it difficult to debilitate with standard methods. Its undead nature allows it to operate without the need for basic biological functions, adding to its resilience.</summary>
 
 <detail>

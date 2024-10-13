@@ -1,6 +1,8 @@
 <MonsterName/>Brass Dragon Wyrmling (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>16</HP>
 <summary>The Brass Dragon Wyrmling is a medium-sized dragon known for its fiery breath and magical abilities, serving as both a formidable opponent and a cunning trickster. This young dragon possesses a good level of power, with an Armor Class of 16 and hit points totaling 38, making it a tough adversary for lower-level adventurers. Its challenge rating of 2 reflects its capabilities in combat, allowing it to deal significant damage, especially with its ranged breath attacks. However, its physical attributes, while respectable, are not exceptionally high, giving it some vulnerabilities. Notably, it is immune to fire damage, which grants it a strategic advantage against foes relying on fire-based attacks. The brass dragon's ability to easily sustain itself with minimal food and water also highlights its resilience in prolonged encounters.</summary>
 
 <detail>

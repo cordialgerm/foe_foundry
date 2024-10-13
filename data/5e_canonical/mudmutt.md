@@ -1,6 +1,8 @@
 <MonsterName/>Mudmutt</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>105</HP>
 <summary>The Mudmutt is a Large monstrosity characterized by its adaptability to both land and water environments, giving it a significant edge in combat. With a Challenge Rating of 5, it presents a moderate threat to adventurers, boasting 105 hit points and a good armor class of 15. The creature exhibits strong physical attributes, particularly in Strength and Dexterity, allowing it to perform powerful melee attacks and evade incoming strikes. However, it has extremely low Intelligence and Charisma scores, reflecting its brutish nature. The Mudmutt excels in ambush tactics and can work effectively in groups thanks to its Pack Tactics ability, making it a dangerous opponent when engaging in combat alongside allies.</summary>
 
 <detail>

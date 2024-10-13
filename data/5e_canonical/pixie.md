@@ -1,6 +1,8 @@
 <MonsterName/>Pixie</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>2</HP>
 <summary>The Pixie is a diminutive fey creature known for its whimsical and mischievous nature. With a Challenge Rating of 1, it is generally weaker in terms of health and damage output, possessing only 2 hit points and dealing minimal piercing damage with its thorn dagger. Its greatest strengths lie in its agility and magical abilities, highlighted by a high Dexterity score of 20, providing it with exceptional stealth capabilities and a rapid flight speed of 30 feet. The Pixie's ability to resist spells with its Magic Resistance makes it a challenging opponent for spellcasters, offering strategic advantages during encounters. Its primary weaknesses include low Strength and Constitution scores, rendering it physically weak and unable to sustain much damage. The Pixie's skills in perception and stealth further enhance its versatility, allowing it to remain hidden while observing its surroundings.</summary>
 
 <detail>

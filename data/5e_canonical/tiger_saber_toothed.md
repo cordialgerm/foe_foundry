@@ -1,6 +1,8 @@
 <MonsterName/>Tiger, Saber-Toothed</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>63</HP>
 <summary>The saber-toothed tiger is a large beast known for its fearsome appearance and predatory instincts. As a challenge rating 2 creature, it poses a moderate threat to adventurers, leveraging its high speed and strength in combat. The tiger boasts an Armor Class of 12, making it relatively easy to hit, and a sizable hit point pool of 63, which allows it to endure a fair amount of damage. With a strong base Strength score of +4 and decent Dexterity and Constitution values, its physical attacks are potent but are counterbalanced by poor Intelligence and Charisma scores. This creature is particularly dangerous when it can utilize its special abilities, such as its heightened sense of smell and the pounce attack, allowing it to gain an advantage on its targets. However, its lack of ranged abilities can be considered a significant weakness.</summary>
 
 <detail>

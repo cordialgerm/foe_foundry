@@ -1,6 +1,8 @@
 <MonsterName/>Wood Ward</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>19</HP>
 <summary>The Wood Ward is a medium-sized construct that serves as a magical guardian or protector of natural spaces, constructed from wood and enchantments. It has an armor class of 13, making it reasonably hard to hit, and possesses 19 hit points, allowing it to endure modest amounts of damage before being defeated. With a challenge rating of 1, it is a suitable encounter for lower-level adventurers, offering 200 experience points upon defeat. The Wood Ward has some notable strengths, including its high Constitution which gives it a very good ability to absorb damage, and its damage immunities, which protect it from most forms of attacks. However, it is vulnerable to fire, which is a significant weakness that clever adventurers can exploit. </summary>
 
 <detail>

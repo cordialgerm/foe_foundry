@@ -1,6 +1,8 @@
 <MonsterName/>Purple Slime</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>3</CR>
+<AC/>7</AC>
+<HP/>76</HP>
 <summary>The Purple Slime is a large ooze that presents a formidable challenge in combat, primarily using its unique abilities and attacks to weaken foes while remaining incredibly resilient. With an armor class of 7, the Purple Slime is not particularly sturdy defensively, but its high hit points of 76, due to a constitution score of 18, make it quite durable. This creature is challenging for adventurers with a challenge rating of 3, worth 700 experience points upon defeat. It has the ability to thrive both underwater and on land, allowing it to traverse difficult terrain with great ease. However, its intelligence is very low, indicating a lack of tactical skill or complex thought.</summary>
 
 <detail>

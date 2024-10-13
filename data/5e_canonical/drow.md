@@ -1,7 +1,9 @@
 <MonsterName/>Drow</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
 <Subtype/>elf</Subtype>
+<CR/>1</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>13</HP>
 <summary>Drow, or dark elves, are a race of dark-skinned, subterranean elves who dwell in the vast, dangerous caverns of the Underdark. Known for their cruelty, cunning, and devotion to the dark goddess Lolth, Drow are skilled in magic and stealth. Their society is highly hierarchical, ruled by powerful priestesses of Lolth, and it is rife with intrigue, betrayal, and conflict. Drow are usually armed with poisoned weapons and are masters of ambush tactics, using the darkness of the Underdark to their advantage. Despite their evil reputation, some rare Drow may reject their society and seek redemption on the surface.</summary>
 
 <summary>The drow is a Medium humanoid known for its cunning and agility, often found in subterranean environments. With an Armor Class of 15 and only 12 hit points, the drow relies heavily on its dexterity and stealth to evade attacks rather than absorbing damage. Its challenge rating of 1/4 indicates that it is suitable for low-level encounters, making it a staple adversary in early adventures. Notable for its darkvision, the drow can see in complete darkness up to 120 feet, giving it a significant tactical advantage in dimly lit areas. However, it possesses a weakness to sunlight, which imposes disadvantages on its attack rolls and perception checks when exposed. Drow combatants excel with their ranged and melee attacks, enhanced by their ability to use poisons strategically, making them formidable foes despite their lower resilience.</summary>

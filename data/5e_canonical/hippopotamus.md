@@ -1,6 +1,8 @@
 <MonsterName/>Hippopotamus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The hippopotamus is a large, unaligned beast that plays a role similar to that of a tank in combat scenarios. With a robust armor class and a substantial pool of hit points, it is able to withstand significant damage, making it a formidable opponent. Its high strength allows it to deal considerable damage with its melee attacks, while its special abilities enhance its versatility in battle, particularly with powerful area effects. However, its low Dexterity makes it less agile and more vulnerable to attacks that require precise movement. Overall, the hippopotamus can serve as both a frontline combatant and a destabilizing force in encounters.</summary>
 
 <detail>

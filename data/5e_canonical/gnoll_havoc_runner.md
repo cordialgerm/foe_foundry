@@ -1,6 +1,8 @@
 <MonsterName/>Gnoll Havoc Runner</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>58</HP>
 <summary>The Gnoll Havoc Runner is a medium-sized humanoid monster classified as chaotic evil, embodying a cunning and relentless predator. With a robust Armor Class of 15 and 58 hit points, it can endure several attacks before succumbing in battle. It possesses good mobility with a walking speed of 30 feet, allowing it to engage effectively in skirmishes. As a challenge rating 3 creature, it offers a moderate level of difficulty for adventurers, being capable of dealing significant damage and disrupting enemy actions. Its abilities to coordinate with allies and hinder opponents make it a formidable opponent on the battlefield.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Owl</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>19</HP>
 <summary>A Giant Owl is an enormous bird of prey, standing as tall as a horse with a wingspan that allows it to soar silently through the night sky. Its large, forward-facing eyes give it exceptional vision in the dark, and its sharp talons and beak make it a deadly predator. Giant Owls are intelligent creatures and sometimes form bonds with humanoids, acting as guardians or companions. They are often found in ancient forests or high mountain ranges, where they hunt for large prey like deer or other large creatures. Their silent flight and keen senses make them elusive and dangerous.</summary>
 
 <summary>The Giant Owl is a large beast known for its agility and keen senses, making it a notable scout or companion in various settings. With a challenge rating of 1/4, it is considered a relatively easy threat for adventurers, yet it possesses impressive flying capabilities and can evade attacks quite effectively. Its primary weaknesses include low hit points and relatively modest armor class, making it somewhat frail if caught in sustained combat. However, its ability to fly quickly and utilize stealth makes it a valuable asset for reconnaissance or unexpected strikes against foes.</summary>

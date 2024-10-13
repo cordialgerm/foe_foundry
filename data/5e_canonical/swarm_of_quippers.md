@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Quippers</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>28</HP>
 <summary>A Swarm of Quippers is a fast-moving, vicious school of carnivorous fish that can strip flesh from bone in seconds. These small, sharp-toothed predators are found in rivers, lakes, or coastal waters, often lurking in murky depths. Though individually weak, in large numbers they become a serious threat, capable of overwhelming creatures many times their size. Swarms of Quippers are especially dangerous to injured or bleeding creatures, as they are drawn to the scent of blood in the water. Their rapid, frenzied attacks can quickly incapacitate even the strongest of swimmers.</summary>
 
 <summary>The Swarm of Quippers is a Medium-sized beast known for its aggressive and relentless nature in aquatic environments. This creature has a challenge rating of 1, making it a moderately-sized threat. With a decent armor class of 13 and 28 hit points, it can withstand some attacks but is not particularly durable. Its strengths lie in its swimming speed of 40 feet, allowing it to maneuver effectively in water. Given its resistance to bludgeoning, piercing, and slashing damage, it can absorb non-magical assaults well. However, it has a weakness in its low Constitution, resulting in a very bad modifier of -1, which impacts its overall damage resilience. The swarm's ability to swarm over enemies and attack en masse makes it a formidable opponent, especially when engaged in melee. </summary>

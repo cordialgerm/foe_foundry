@@ -1,6 +1,8 @@
 <MonsterName/>Adult Blue Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>16</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>225</HP>
 <summary>The Adult Blue Dragon is a majestic, serpentine creature with shimmering sapphire scales and large, muscular wings. Its long, curved horns and ridged spine give it a regal appearance, befitting its prideful and territorial nature. These dragons thrive in deserts and arid landscapes, where they can blend in with the sand and strike with the ferocity of a thunderstorm. Their breath weapon is a powerful bolt of lightning, capable of reducing enemies to ash in an instant. Blue Dragons are known for their cunning, often using mirages and deception to outwit their foes before moving in for the kill.</summary>
 
 <summary>The Adult Blue Dragon is a formidable and powerful creature that dominates the skies and deserts of the Dungeons and Dragons universe. As a Huge Dragon with a challenge rating of 19, it boasts an impressive array of abilities and resistances that make it a significant threat to adventurers. This dragon's armor class of 19 and substantial hit points totaling 275 make it exceptionally durable in battle. Its strengths lie not only in its physical attacks but also in its innate magical abilities. However, it has limited dexterity, which could leave it vulnerable to certain tactics. With the capabilities to fly, burrow, and swim, as well as proficient knowledge of lightning and terrain manipulation, the Adult Blue Dragon presents both a physical and strategic challenge for any group of heroes.</summary>

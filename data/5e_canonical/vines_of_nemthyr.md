@@ -1,6 +1,8 @@
 <MonsterName/>Vines of Nemthyr</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Vines of Nemthyr is a Large neutral evil plant creature that serves as a formidable presence in the wild. With a challenge rating of 8, it poses a significant threat to adventurers not prepared for its capabilities. Its defenses are bolstered by an armor class of 15, and it boasts a substantial pool of 133 hit points, allowing it to endure considerable punishment in battle. The Vines of Nemthyr are adept at evasion, with the ability to burrow and move quickly on land at a speed of 30 feet. With exceptional strength and constitution, this creature can deliver formidable attacks while also resisting cold and poison damage, alongside being immune to a variety of conditions. However, it suffers from very low intelligence and charisma, making it less effective in interactions that require those traits. </summary>
 
 <detail>

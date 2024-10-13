@@ -1,6 +1,8 @@
 <MonsterName/>Tiger</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>37</HP>
 <summary>The Tiger is a large and powerful predator, known for its stealth and hunting prowess. With its orange and black striped fur, the Tiger blends into its natural jungle or forest environment, making it a master of ambush. Tigers are solitary hunters, using their speed and strength to bring down prey with a single pounce. Their sharp claws and powerful jaws allow them to tear through flesh with ease. While typically not aggressive towards humans, Tigers will defend their territory or cubs fiercely. In the wild, they are apex predators, feared by all creatures that share their domain.</summary>
 
 <summary>The tiger is a formidable large beast known for its stealth and powerful physical presence. Its role in combat revolves around agility and melee attacks, making it a dangerous adversary, especially in environments that allow it to utilize its stealth. With moderate armor class and a reasonable amount of hit points, the tiger can withstand some attacks before falling. It boasts high strength and dexterity, which enhance its attacking capabilities, along with notable skills in perception and stealth. However, it has a very low intelligence and charisma, indicating that it operates purely on instinct rather than any kind of complexity in thought or social interaction. As a challenge rating 1 creature, it poses a balanced threat for low-level adventurers.</summary>

@@ -1,6 +1,8 @@
 <MonsterName/>Sand Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>120</HP>
 <summary>The Sand Hag is a Medium-sized Fey creature known for its chaotic evil nature. As a formidable opponent, it boasts a combination of high hit points and strong defensive mechanisms, making it a challenging foe for adventurers. The Sand Hag's ability to manipulate the battlefield through spells, its agility in moving through sandy terrain, and its capacity to mimic sounds gives it a deceptive edge in combat. However, while it has strong offensive capabilities, its challenge rating of 6 indicates that it is best suited for mid-level parties, and it can be susceptible to well-coordinated strategies. </summary>
 
 <detail>

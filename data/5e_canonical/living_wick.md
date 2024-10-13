@@ -1,6 +1,8 @@
 <MonsterName/>Living Wick</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>28</HP>
 <summary>The Living Wick is a small construct creature characterized by its unique ability to operate using a lit wick, which serves as both its power source and its life force. With an armor class of 13 and a total of 28 hit points, it is relatively defensively moderate for its challenge rating of 1/4, making it suitable for lower-level encounters. It possesses an above-average Strength score of 14, enabling it to perform physical attacks, though its Dexterity and Constitution are average, granting it a basic level of durability. It lacks intelligence, wisdom, and charisma, limiting its cognitive and social interactions significantly. This creature is particularly vulnerable to fire damage, but it is immune to poison and psychic effects. It can be a strategic ally due to its ability to lash out with fire through its special abilities but must be used carefully as its health depletes each day that it remains active.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Foxin</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>16</HP>
 <summary>The Foxin is a small fey creature exuding a neutral alignment, characterized by its unique blend of charm and agility. With a decent Armor Class of 14 due to its natural armor, it is not overly formidable but possesses a notable speed of 40 feet, allowing it to maneuver effectively in combat. The Foxin has a Challenge Rating of 1/2, indicating it's a relatively low-level threat, yielding 100 experience points upon defeat. This creature showcases various strengths including its high Dexterity and Charisma scores, rated at +3, making it both nimble and inherently persuasive. It is particularly adept at perception, gaining a +4 bonus in that skill, and is immune to being charmed, giving it considerable durability in social encounters and battles. However, the Foxin's Constitution and Intelligence scores sit at a modest +2 and +0 respectively, which can be seen as average, leaving it vulnerable to attacks that target its physical stamina and mental acuity.</summary>
 
 <detail>

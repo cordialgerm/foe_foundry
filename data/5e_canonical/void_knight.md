@@ -1,6 +1,8 @@
 <MonsterName/>Void Knight</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>153</HP>
 <summary>The Void Knight is a formidable Medium Construct that embodies malevolence and an array of potent abilities designed to manipulate its foes and exert control on the battlefield. With a Challenge Rating of 10, this creature presents a significant threat, boasting an Armor Class of 18 due to its natural armor and an impressive pool of 153 hit points. Its primary strengths lie in its high Strength score of 22, enabling powerful melee attacks, and its ability to deal both slashing and force damage, making it versatile in combat. However, the Void Knight's Dexterity is relatively low at 7, reflecting a slower movement speed, which may hinder its maneuverability in certain scenarios. Its abilities and actions create a dangerous combination that can greatly influence the flow of combat, while its immunities and resistances make it a challenging adversary to defeat.</summary>
 
 <detail>

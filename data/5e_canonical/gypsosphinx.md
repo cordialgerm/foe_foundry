@@ -1,6 +1,8 @@
 <MonsterName/>Gypsosphinx</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>14</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>190</HP>
 <summary>The Gypsosphinx is a formidable creature, classified as a Large Monstrosity with a neutral evil alignment. This powerful foe possesses a strong physical presence with tough natural armor, making it difficult to defeat. With a challenge rating of 14, it offers a significant challenge for adventurers, embodying both offensive and defensive capabilities thanks to its high hit points, strong melee attacks, and potent spellcasting. The Gypsosphinx has several strengths, such as immunity to psychic damage and resistance to necrotic damage, making it particularly resilient. However, its weaknesses lie in its reliance on physical attacks and the effectiveness of spells against it if an opponent can outsmart its defenses. Notably, the Gypsosphinx is imbued with magical properties that enhance its combat abilities and grant it unique sensory capabilities.</summary>
 
 <detail>

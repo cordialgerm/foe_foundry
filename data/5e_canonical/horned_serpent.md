@@ -1,6 +1,8 @@
 <MonsterName/>Horned Serpent</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>210</HP>
 <summary>The Horned Serpent is a formidable Large Monstrosity often encountered in aquatic environments, capable of thriving both in water and on land. With a high Armor Class of 18 due to its natural armor and a substantial pool of Hit Points totaling 210, this creature poses a significant challenge for adventurers, holding a Challenge Rating of 12. Its combination of powerful melee attacks and dangerous special abilities makes it a lethal opponent, especially when it utilizes its poisonous aura and the debilitating effects of the Corpse Cough disease. However, its low Intelligence stat and lack of magical capabilities can be viewed as weaknesses, making it susceptible to clever tactics that exploit its limitations.</summary>
 
 <detail>

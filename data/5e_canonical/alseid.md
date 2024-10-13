@@ -1,6 +1,8 @@
 <MonsterName/>Alseid</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>33</HP>
 <summary>The Alseid is a medium-sized monstrosity that embodies chaotic neutral alignment. Renowned for its agility and stealth in forested environments, this creature excels in both ranged and melee combat. With an Armor Class of 14 provided by its leather armor, it has a moderate level of protection. The Alseid has 33 hit points, derived from rolling six eight-sided dice plus an additional six points, which indicates an average endurance for creatures within its challenge rating of 1/2, allowing it to remain a valid threat while presenting a reasonable challenge for lower-level adventurers. Its primary strengths include high Dexterity, which affords it good initiative and agility in combat, as well as notable skills in Nature, Perception, Stealth, and Survival. However, the Alseid has weaknesses, having relatively low Constitution, Intelligence, and Charisma, which can affect its resilience and effectiveness in social interactions and spellcasting.</summary>
 
 <detail>

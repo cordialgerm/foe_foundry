@@ -1,6 +1,8 @@
 <MonsterName/>Monkey’S Bane Vine</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Monkey's Bane Vine is a Large, unaligned plant creature known for its strength and unique abilities that make it a formidable opponent in combat. With an Armor Class of 13, it boasts good natural defenses, while its 119 hit points, gained from rolling 14 ten-sided dice and adding an additional 42, provides it with a substantial buffer against damage. The creature’s Challenge Rating of 4 indicates it can pose a significant threat to adventurers, offering 1,100 experience points upon defeat. Notably, the Monkey's Bane Vine is not particularly mobile, with a walking speed of only 10 feet, but it compensates for this with its potent attacks that can restrain its foes and deal continuous damage.</summary>
 
 <detail>

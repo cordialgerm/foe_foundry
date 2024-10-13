@@ -1,6 +1,8 @@
 <MonsterName/>Derro, Abysswalker</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>112</HP>
 <summary>The Derro, Abysswalker is a small, humanoid creature characterized by its chaotic evil nature. It serves as a cunning and dangerous opponent in the battlefield, leveraging its agility and potent abilities. With an Armor Class of 16, it possesses good defenses, while its Hit Points total 112, making it significantly durable. The Abysswalker excels in Dexterity and Constitution, each having a value of 18, which translates to a very good modifier of +4 for both. This creature's speed is average at 25 feet, and it operates primarily within a Challenge Rating of 6, indicating it can provide a decent challenge for an adventuring party. Notably, the Abysswalker is immune to poison damage and conditions, resistant to cold, fire, and lightning damage, and has darkvision that extends to 120 feet.</summary>
 
 <detail>

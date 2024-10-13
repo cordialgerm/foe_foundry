@@ -1,6 +1,8 @@
 <MonsterName/>Cueyatl Moon Priest</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (studded leather)</AC>
+<HP/>81</HP>
 <summary>The Cueyatl Moon Priest is a small humanoid creature with a lawful evil alignment, a role that positions it as a cunning and manipulative foe in gameplay. This creature possesses a range of magical abilities and skills that make it a formidable opponent, particularly in jungle environments where its camouflage and stealth increase its effectiveness. With a Challenge Rating of 5, the Cueyatl Moon Priest offers a moderate challenge for adventurers, being capable of both melee and magical attacks. Its primary strengths include its spellcasting abilities, stealth features, and its agility, while it has average physical attributes and an average armor class. The combination of its abilities, including spellcasting and advantageous movement, gives it a unique edge in certain combat situations, though it also has weaknesses, such as lower physical damage output and reliance on stealth to be effective.</summary>
 
 <detail>

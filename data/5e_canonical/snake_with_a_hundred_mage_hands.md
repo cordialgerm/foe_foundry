@@ -1,6 +1,8 @@
 <MonsterName/>Snake with a Hundred Mage Hands</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>67</HP>
 <summary>The Snake with a Hundred Mage Hands is a small monstrosity that emphasizes cunning and a unique magical prowess. With a challenge rating of 3, it fits well in encounters against mid-level adventurers, offering both direct and indirect ways to create chaos on the battlefield. One of its key strengths is its high Dexterity score of 18, resulting in an exceptional +4 modifier, which enables it to move stealthily and execute various tricks with its magical hands. However, its Strength of 8 gives it a very bad modifier, making it physically weak and reliant on its abilities rather than brute force. Its high Intelligence (also +4) suggests it is quite clever, while its low Charisma (-2) indicates that it might struggle with social interactions. Notably, its special abilities allow for clever tactical plays, including disrupting enemy actions and using the spectral hands for utility, while remaining difficult to target due to their magical nature.</summary>
 
 <detail>

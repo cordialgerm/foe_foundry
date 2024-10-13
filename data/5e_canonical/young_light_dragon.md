@@ -1,6 +1,8 @@
 <MonsterName/>Young Light Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Young Light Dragon is a large, neutral good dragon known for its celestial powers and unique abilities that make it a formidable yet benevolent creature. With a challenge rating of 7, it has a strong presence in combat, boasting a high hit point pool of 142, which makes it resilient against attacks. Its armor class is 15, providing good defense due to its natural armor. The Young Light Dragon possesses significant physical strength with a Strength score of 18, offering exceptional melee capabilities, while its Constitution of 19 ensures great durability. However, its Dexterity is average with a score of 10, making it less agile than many other creatures. Notable for its damage immunities to radiant damage and resistances against non-magical physical damage, its weaknesses are minimal. With the ability to communicate in Draconic and perceive its surroundings with advanced sensory abilities like blindsight and darkvision, this dragon stands out as both a mystical and formidable ally in any adventure.</summary>
 
 <detail>

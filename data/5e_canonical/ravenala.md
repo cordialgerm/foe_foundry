@@ -1,6 +1,8 @@
 <MonsterName/>Ravenala</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Ravenala is a large plant creature that plays the role of a guardian of nature, embodying neutrality while exhibiting formidable strengths. With a high armor class of 15 and impressive hit points of 126, it is resilient in combat. The Ravenala boasts exceptional physical attributes, particularly in Strength and Constitution, both scoring at 20 (+5), making it capable of dealing significant melee damage and enduring attacks effectively. However, it does have vulnerabilities to cold and fire damage, which can be exploited by opponents. Its challenge rating of 5 indicates that it is a medium-threat creature, presenting a notable challenge for adventurers who encounter it. Special abilities like Magic Resistance provide an edge against magical attacks, while its Woodland Stride allows it to maneuver through plant life effortlessly.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Abominable Snowman</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>136</HP>
 <summary>The Abominable Snowman is a large monstrosity known for its formidable presence and deadly abilities in icy environments. With a Challenge Rating of 4, this creature possesses a significant amount of hit points, totaling 136, which makes it quite durable in combat. Its strength is exceptional, with a Strength score of 18 and a +4 modifier, allowing it to deal substantial melee damage. The Abominable Snowman is not overly quick but possesses average Dexterity, leading to some decent maneuverability. Notably, it is immune to cold damage, which defines its strengths and provides it with a clear advantage in cold climates. On the downside, it has below-average Intelligence, limiting its ability to engage in complex problem-solving. The Snowman's notable abilities, such as camouflage and its chilling gaze, add to its menace on the battlefield, making it a creature for adventurers to be wary of.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Wolpertinger</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>9</HP>
 <summary>The Wolpertinger is a tiny monstrosity that embodies a unique blend of whimsical features, making it both an elusive and potentially troublesome creature in the world of Dungeons & Dragons. Despite its small size, this creature can pose a threat due to its decent agility and special abilities. It boasts a good Armor Class of 13 and moderate hit points totaling 9, allowing it to withstand a few blows in combat. The Wolpertinger possesses strengths such as its ability to fly and burrow, as well as its charge attack which can add extra damage. However, it has notably low strength and intelligence scores, which limit its physical power and cognitive capabilities. With a Challenge Rating of 1/4, it is suitable for lower-level adventurers looking to test their mettle against quirky foes.</summary>
 
 <detail>

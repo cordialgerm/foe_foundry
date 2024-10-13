@@ -1,6 +1,8 @@
 <MonsterName/>Grick</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>27</HP>
 <summary>A Grick is a serpentine predator with a rubbery, gray body and a beak-like maw surrounded by tentacles. These creatures live in dark caves or dungeons, where they blend into the shadows and strike at unwary prey. Gricks are ambush predators, using their tentacles to lash out and grab victims before delivering a vicious bite with their sharp beaks. They are nearly silent and can climb walls with ease, making them difficult to detect. Their tough, rubbery hide protects them from most physical attacks, and they are skilled at hunting in the darkness.</summary>
 
 <summary>The Grick is a medium-sized monstrosity known for its unique ability to blend seamlessly into rocky environments, making it a cunning ambush predator. With a respectable armor class of 14 and a total of 33 hit points, it presents a moderate challenge to adventurers, rated at Challenge Level 2. The Grick is agile with a speed of 30 feet on both the ground and when climbing, which enhances its tactical positioning in combat. The creature is particularly dangerous due to its tentacle attacks that can grapple opponents, limiting their actions while it inflicts damage. However, its low intelligence and charisma scores indicate that it lacks mental fortitude in social interactions or complex strategies. This creature's vulnerabilities include taking full damage from magical weapons, as it only resists damage from nonmagical attacks.</summary>

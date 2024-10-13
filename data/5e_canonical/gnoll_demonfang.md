@@ -1,6 +1,8 @@
 <MonsterName/>Gnoll Demonfang</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>15</AC>
+<HP/>65</HP>
 <summary>The Gnoll Demonfang is a medium humanoid creature that embodies a blend of speed, strength, and chaotic evil. With a Challenge Rating of 4, it presents a formidable challenge for adventurers. Its notable features include a solid Armor Class of 15 and a decent pool of Hit Points totaling 65, making it resilient in combat. The creature excels in melee combat with its high Strength and Dexterity scores, both at 16, providing it an effective attack modifier of +5 on its melee attacks. However, it has average Intelligence, Wisdom, and Charisma, which gives it less versatility in spellcasting and skill checks. The Gnoll Demonfang can inflict significant damage with its multiattack feature and has special abilities that can alter its form and survival conditions.</summary>
 
 <detail>

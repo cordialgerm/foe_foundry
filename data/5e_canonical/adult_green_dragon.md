@@ -1,6 +1,8 @@
 <MonsterName/>Adult Green Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>15</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>207</HP>
 <summary>The Adult Green Dragon is a cunning and deceptive creature with scales that range from vibrant emerald to dark, forest green. It has a long, sinuous body with leaf-shaped wings and sharp, curved horns. Green Dragons are known for their manipulative nature, preferring to ensnare their enemies through lies and mind games rather than direct combat. They dwell deep in forests, often corrupting the natural world around them to suit their whims. Their breath weapon is a cloud of noxious, poisonous gas that can choke the life out of those who inhale it. Green Dragons are territorial and highly intelligent, often using their wit to outmaneuver rivals and prey.</summary>
 
 <summary>The Adult Green Dragon is a formidable creature known for its cunning intelligence and vast powers, making it a significant threat in any encounter. This huge dragon is particularly adept at stealth and manipulation, often taking advantage of forested environments where it can blend in and surprise its foes. With a challenge rating of 18, it has a high degree of resilience, backed by its 287 hit points and strong defensive capabilities, including a solid armor class of 18. The dragon's strengths lie in its array of special abilities and high damage output, alongside its capacity to control the battlefield using spells and fright tactics. However, despite its exceptional abilities, it has a relatively low Dexterity score, making it less agile than some opponents. </summary>

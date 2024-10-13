@@ -1,6 +1,8 @@
 <MonsterName/>Witchlight</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>20</HP>
 <summary>The Witchlight is a tiny construct that serves as a unique and enchanting creature within the D&D world. With a challenge rating of 1/4, it is considered a minor threat, but its abilities can present interesting challenges for unprepared adventurers. It boasts a moderate Armor Class of 12, ensuring it has decent protection against attacks, but with only 20 hit points, it remains quite fragile. Its speed of 40 feet allows for agile movement on the battlefield. One notable aspect of the Witchlight is its immunity to various damage types, including poison, psychic, and radiant, along with its resilience to many conditions that can hinder other creatures. However, it is susceptible to antimagic effects, which can incapacitate it readily.</summary>
 
 <detail>

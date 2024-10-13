@@ -1,6 +1,8 @@
 <MonsterName/>Grimmlet</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>28</HP>
 <summary>The Grimmlet is a tiny, unaligned monstrosity that serves as a unique adversary in Dungeons & Dragons gameplay. Notably, the Grimmlet possesses a range of peculiar abilities that make it a formidable foe despite its small size and relatively low hit points of 28, which are derived from rolling 8d4 and adding 8. Its armor class of 11 offers minimal protection, making it vulnerable in combat, but its capacity to hover and fly at a speed of 30 feet allows for strategic positioning in battle. The Grimmlet has a challenge rating of 1, translating to an experience value of 200 XP, indicating that while it can be a minor threat, it can quickly escalate the danger it poses through its replication abilities and psychic damage attacks.</summary>
 
 <detail>

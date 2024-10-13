@@ -1,6 +1,8 @@
 <MonsterName/>Berberoka</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Berberoka is a large neutral giant known for its affinity with wet environments, enabling it to thrive in swamps and marshlands. With a challenge rating of 7, this creature presents a significant threat in combat thanks to its high hit points and powerful melee attacks. It possesses exceptional strength, allowing it to deal substantial bludgeoning damage, particularly when it employs its unique muck-coated slam or water jet abilities. The Berberoka’s weaknesses are its average Dexterity, which makes it less agile than some other creatures, and its limited intelligence, reflecting a more instinctual nature. Its amphibious trait aids its versatility in combat, allowing it to engage foes both on land and in water.</summary>
 
 <detail>

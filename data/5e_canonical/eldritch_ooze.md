@@ -1,6 +1,8 @@
 <MonsterName/>Eldritch Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>5</CR>
+<AC/>8</AC>
+<HP/>153</HP>
 <summary>The Eldritch Ooze is a formidable Large sized ooze with an unaligned nature. It has a challenge rating of 5, signifying a moderate threat to adventuring parties and yielding 1,800 experience points upon defeat. Its defensive capabilities are somewhat lacking, with an Armor Class of 8, but it boasts a substantial pool of hit points totaling 153, derived from 18d10+54, making it quite resilient. The ooze has a slow movement speed, only able to walk and climb at 10 feet per turn. Its attributes are noteworthy; it possesses a strong Strength score of 16, allowing for solid physical attacks, while its Constitution score of 16 provides it with durability. However, its Dexterity is relatively poor at 6, which reflects a very bad agility, making it vulnerable to ranged attacks. </summary>
 
 <detail>

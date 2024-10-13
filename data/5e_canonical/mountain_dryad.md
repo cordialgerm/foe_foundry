@@ -1,6 +1,8 @@
 <MonsterName/>Mountain Dryad</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>172</HP>
 <summary>The Mountain Dryad is a formidable Huge creature within the Fey category, known for its neutrality and deeply ingrained connection to the earth. With a challenge rating of 11, it holds a considerable amount of power, thanks to its tough armor class of 17 and a substantial hit point pool of 172, which translates into exceptional durability in combat. This creature excels in both melee and ranged attacks, making it a versatile opponent. Although it possesses remarkable strength and is adept in various skills, its weaknesses lie primarily in its mobility and reliance on its environment. Notably, the Mountain Dryad can burrow through earth and stone, making it difficult to pin down in battle, while also utilizing its natural powers to manipulate terrain and charm adversaries.</summary>
 
 <detail>

@@ -1,6 +1,8 @@
 <MonsterName/>Sinstar</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>17</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>275</HP>
 <summary>The Sinstar is a tiny plant creature embodying lawfully evil traits, known for its cunning and manipulative nature. With an impressive Armor Class of 17, it is well-protected by its natural defenses, and its substantial Hit Points of 275 make it a formidable adversary. The Sinstar's Challenge Rating of 17 indicates a high difficulty level for adventurers, and it can grant 18,000 experience points upon defeat. While it has moderate physical strength, its intelligence of 21, combined with its powerful telepathic abilities, makes it a clever strategist in combat. The Sinstar possesses numerous immunities and resistances that make it difficult to damage, particularly in relation to poison, and its ability to influence others through both psychic attacks and disease adds to its menace. However, its slow movement speed of just 5 feet can be a significant drawback.</summary>
 
 <detail>

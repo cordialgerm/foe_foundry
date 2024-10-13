@@ -1,6 +1,8 @@
 <MonsterName/>Cloud Giant Noble</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>12</CR>
+<AC/>14</AC>
+<HP/>187</HP>
 <summary>The Cloud Giant Noble is a formidable opponent in any encounter, boasting both impressive physical capabilities and potent magical abilities. This Huge Giant has an Armor Class of 14 and a staggering 187 hit points, making it tough to take down. With a Challenge Rating of 12, it provides a significant challenge to adventurers, offering 8,400 XP upon defeat. The Cloud Giant has exceptional Strength of 27, granting it a +12 modifier to Strength saving throws and melee attacks. Its Constitution is also high at 22, reflecting its resilience. While its Dexterity is average at 10, it compensates with a good Wisdom and Charisma, both at 16 (+3), showcasing its ability to influence and perceive. The creature excels in magical abilities with an innate spellcasting capability, allowing it to control the battlefield and manipulate weather and fog. Its notable weaknesses include vulnerabilities to magical attacks and strategies focusing on ranged combat, as it thrives in melee situations.</summary>
 
 <detail>

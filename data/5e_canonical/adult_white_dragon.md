@@ -1,6 +1,8 @@
 <MonsterName/>Adult White Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>200</HP>
 <summary>An Adult White Dragon is a fierce and primal creature with scales that blend seamlessly into its icy surroundings. Its eyes are cold and calculating, and its large wings are covered in a thin layer of frost. White Dragons are the smallest and most feral of the chromatic dragons, relying more on brute strength and instinct than on cunning. They dwell in frozen wastelands and make their lairs in ice caves or glaciers. Their breath weapon is a cone of freezing cold that can instantly encase their enemies in ice. White Dragons are territorial and often hunt large prey such as mammoths or polar bears.</summary>
 
 <summary>The Adult White Dragon is a formidable creature, being a huge dragon with both significant physical prowess and magical capabilities. It is known for its icy breath and adeptness in cold environments, allowing it to dominate during encounters in snowy or icy conditions. With impressive hit points totaling 250 and a high Armor Class of 18, this dragon can endure considerable damage while also inflicting it back with powerful melee attacks and cold-based abilities. Its strengths lie in its ability to freeze opponents, both in an offensive and defensive manner, and its skill in controlling the battlefield with various spells and legendary actions. However, it has a relatively low Intelligence score (8) and could be seen as easy to outsmart in social interactions. </summary>

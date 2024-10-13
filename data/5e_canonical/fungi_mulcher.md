@@ -1,6 +1,8 @@
 <MonsterName/>Fungi, Mulcher</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>139</HP>
 <summary>The Mulcher is a gargantuan plant creature that presents a formidable challenge in combat, characterized by its ability to manipulate the battlefield with its burrowing capabilities and strong offensive attacks. With an Armor Class of 15, it provides decent resistance to physical attacks, while its impressive 139 hit points make it a durable adversary. Notably, the Mulcher can create difficult terrain and pit traps to hinder foes and it has a critical vulnerability if its central stalk is targeted. The creature excels in grappling enemies and deals significant piercing damage, making it a threat to groups of adventurers. However, its low Dexterity indicates that it is relatively slow and not agile, which could be exploited by more nimble opponents.</summary>
 
 <detail>

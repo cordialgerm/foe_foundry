@@ -1,6 +1,8 @@
 <MonsterName/>Rust Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Rust Drake is a medium-sized dragon characterized by its chaotic evil nature. As a formidable adversary in combat, it possesses a high Armor Class of 17 due to its natural armor, making it relatively tough to hit. With 161 hit points, calculated through 19d8 plus 76, it can endure a significant amount of damage. Its movement capabilities are impressive; it can walk at a speed of 80 feet and has a fly speed of 30 feet, allowing it to maneuver effectively in battle. The Rust Drake has a challenge rating of 8, making it an appropriate encounter for a party that has gained some experience, providing a reward of 3,900 experience points upon defeat. Its attributes are robust, showcasing exceptional strength and constitution, which enhance its offensive and defensive capabilities.</summary>
 
 <detail>

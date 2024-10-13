@@ -1,6 +1,8 @@
 <MonsterName/>Paper Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>78</HP>
 <summary>The Paper Drake is a small dragon known for its unique ability to transform between a dragon form and a book form. It serves as both a guardian and a source of knowledge due to its understanding of written languages. The Paper Drake is capable of dealing significant slashing damage with its breath weapon and physical attacks while also using clever tactics by disguising itself as an ordinary book when motionless. Its strengths lie in its dexterity and constitution, with good speed on foot, though it lacks flying mobility in book form. On the downside, its low strength makes it less effective in melee combat when compared to more physical creatures, and its intelligence is average, which limits its magical prowess.</summary>
 
 <detail>

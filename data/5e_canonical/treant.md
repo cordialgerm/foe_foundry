@@ -1,6 +1,8 @@
 <MonsterName/>Treant</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>138</HP>
 <summary>A Treant is a towering, sentient tree-like creature that serves as a guardian of the forest. Standing over 20 feet tall, Treants have bark-like skin, branches for arms, and roots for legs. They are wise and ancient beings, deeply connected to nature, and they often act as protectors of their woodland homes. In combat, Treants use their massive strength to crush enemies and can animate trees to fight alongside them. They are generally peaceful, preferring to live in harmony with the natural world, but they will not hesitate to defend their forests from those who seek to harm them.</summary>
 
 <summary>The Treant is a powerful, huge plant creature that serves as a guardian of forests and natural spaces. With a formidable Armor Class of 18 and a significant pool of Hit Points totaling 138, the Treant is a tough opponent in battle. Its primary strengths lie in its robust physical stats, boasting an impressive Strength of 22 (+6) which makes its melee attacks particularly dangerous. However, its Dexterity score is quite low at 8 (-1), indicating that it is not very nimble, which could be a vulnerability against faster adversaries. With a Challenge Rating of 9, the Treant is a challenging foe for adventurers, especially as it can resist bludgeoning and piercing damage. Notably, the Treant's ability to animate plants and communicate with creatures of the forest adds to its role as a protector and manipulator of its environment.</summary>

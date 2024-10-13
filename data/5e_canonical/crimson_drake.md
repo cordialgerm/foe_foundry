@@ -1,6 +1,8 @@
 <MonsterName/>Crimson Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Crimson Drake is a tiny dragon with a chaotic evil alignment, making it a mischievous and unpredictable creature that can be a challenge for adventurers. It possesses a good balance of mobility and magical resistance, which allows it to evade many spells while delivering a damaging combination of physical and fire attacks. With a solid set of abilities, it is particularly notable for its poison and fire-based attacks, which can inflict ongoing damage. However, as a creature with a low challenge rating of 1, it is not overwhelmingly powerful, making it more suited for lower-level encounters or as a cunning foe that relies on tactics rather than brute force.</summary>
 
 <detail>
