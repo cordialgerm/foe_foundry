@@ -33,6 +33,7 @@ For its actions, the Hongaek employs a Multiattack option, making two attacks wi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hongaek
 
 *Large* *Elemental* *neutral evil*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The hongaek magically turns invisible until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the hongaek wears or carries is invisible with it.
 
 
+</statblock>
 
 

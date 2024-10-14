@@ -27,6 +27,7 @@ For legendary actions, the Sand Adult Dragon can detect its surroundings with a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Sand Adult
 
 *Huge* *Dragon* *neutral evil*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Detect:** Makes a Wis (Perception) check.
 - **Tail Attack:** Makes a tail attack.
 - **Wing Attack (2):** All within 15 feet: 14 (2d6+7) bludgeoning damage and knocked prone (DC 21 Wis negates). Can then fly up to half its fly speed.
+</statblock>
 
 

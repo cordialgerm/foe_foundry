@@ -38,6 +38,7 @@ As a reaction, the Erinyes can perform a Parry, which allows it to add 4 to its 
 
 Source: 5e_srd
 
+<statblock>
 ### Erinyes (Devil)
 
 *Medium fiend (devil), lawful evil*
@@ -80,7 +81,8 @@ Source: 5e_srd
 
 ###### Reactions
 
-***Parry***. The erinyes adds 4 to its AC against one melee attack that would hit it. To do so, the erinyes must see the attacker and be wielding a melee weapon.
+***Parry***. The erinyes adds 4 to its AC against one melee attack that would hit it. To do so, the erinyes must see the attacker and be wielding a melee weapon.</statblock>
+
 
 
 
@@ -88,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Erinyes
 
 *Medium* *Fiend*
@@ -127,6 +130,7 @@ Source: 5e_artisinal_monsters
 - **Parry:** If the erinyes is wielding a longsword and can see its attacker, it adds 4 to its AC against one melee attack that would hit it.
 
 
+</statblock>
 
 
 
@@ -135,6 +139,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Erinyes
 
 *Medium fiend (devil)*
@@ -171,5 +176,6 @@ Source: 5e_artisinal_monsters
 
 - **Parry.** The erinyes adds 4 to its AC against one melee attack that would hit it. To do so, the erinyes must see the attacker and be wielding a melee weapon.
 
+</statblock>
 
 

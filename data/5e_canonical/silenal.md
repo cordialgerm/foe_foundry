@@ -19,6 +19,7 @@ In combat, the Silenal can make three attacks through its "Multiattack" action. 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Silenal
 
 *Small* *Fey* *chaotic neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Cause Row (1/Day):** The silenal magically stirs humanoids it can see within 60 feet of it into a frenzy. The frenzied patrons use the statistics of 4d4 commoners or 1 bar brawl. The frenzied patrons don’t attack the silenal. The patrons remain frenzied for 10 minutes, until the silenal dies, or until the silenal calms and disperses the mass as a bonus action.
 
 
+</statblock>
 
 

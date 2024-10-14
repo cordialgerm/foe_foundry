@@ -29,6 +29,7 @@ In combat, De Ogen can use its Burning Touch attack, which requires a melee weap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # De Ogen
 
 *Medium* *Undead* *neutral evil*
@@ -66,5 +67,6 @@ Creatures immune to being frightened are immune to the de ogen’s Transfixing G
 - **Burning Touch:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (4d6) fire damage. A creature slain by this attack turns to ash. A humanoid slain by this attack rises 24 hours later as a shadow, unless the humanoid is restored to life or its ashes are doused in holy water. The shadow isn’t under the de ogen’s control, but it follows in the de ogen’s wake and aids the de ogen when possible.
 
 
+</statblock>
 
 

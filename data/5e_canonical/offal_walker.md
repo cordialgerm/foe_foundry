@@ -21,6 +21,7 @@ In terms of actions, the Offal Walker can execute a "Multiattack" by making one 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Offal Walker
 
 *Medium* *Undead* *neutral evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Reel:** Pulls one creature grappled by it up to 25 ft. straight toward it.
 
 
+</statblock>
 
 

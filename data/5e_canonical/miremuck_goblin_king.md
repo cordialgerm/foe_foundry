@@ -21,6 +21,7 @@ For reactions, the Goblin King has the ability to "Parry," which allows it to ad
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Miremuck Goblin King
 
 *Medium* *Humanoid*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Parry:** The goblin king adds 2 to his AC against onemelee attack that would hit him. To do this the goblinking must see the attacker and be wielding a meleeweapon.
 
 
+</statblock>
 
 

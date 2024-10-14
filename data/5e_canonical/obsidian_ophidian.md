@@ -28,6 +28,7 @@ Overall, the Obsidian Ophidian represents a formidable foe that excels in both o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Obsidian Ophidian
 
 *Huge* *Elemental* *neutral*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Lava Splash (Recharge 4–6):** Writhes and flails splashing lava at everything. Each creature within 20' of it: 21 (6d6) fire (DC 15 Dex half). To use this must be touching or within 5 ft. of lava.
 
 
+</statblock>
 
 

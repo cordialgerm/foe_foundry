@@ -21,6 +21,7 @@ One of her most powerful actions is Icy Embrace, which she can use after a recha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Maiden
 
 *Medium* *Fey* *Lawful Evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Snow Step:** The ice maiden teleports, along with any equipment she is wearing or carrying, up to 30 feet to an unoccupied space she can see. The origin and destination spaces must contain snow or ice.
+</statblock>
 
 

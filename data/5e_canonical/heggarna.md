@@ -32,6 +32,7 @@ In summary, Heggarna blends stealth with psychological manipulation, making it a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Heggarna
 
 *Tiny* *Aberration* *neutral evil*
@@ -66,5 +67,6 @@ The heggarna can detach itself by spending 5 feet of its movement. It does so af
 - **Illusory Appearance:** The heggarna covers itself with a magical illusion that makes it look like a Tiny cat. The illusion ends if the heggarna takes a bonus action to end it or if the heggarna dies. The illusion ends immediately if the heggarna attacks or takes damage, but it doesn’t end when the heggarna uses Dream Eating.<br><br>The changes wrought by this effect fail to hold up to physical inspection. For example, the heggarna could appear to have fur, but someone touching it would feel its slippery flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 15 Intelligence (Investigation) check to discern the heggarna is disguised.
 
 
+</statblock>
 
 

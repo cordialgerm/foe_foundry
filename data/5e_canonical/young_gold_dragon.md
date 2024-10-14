@@ -43,6 +43,7 @@ Overall, the Young Gold Dragon is a magnificent and dangerous creature that comb
 
 Source: 5e_srd
 
+<statblock>
 # Young Gold Dragon (Metallic)
 
 *Large dragon, lawful good*
@@ -83,7 +84,8 @@ Source: 5e_srd
 
 **Fire Breath**. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 55 (10d10) fire damage on a failed save, or half as much damage on a successful one.
 
-**Weakening Breath**. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+**Weakening Breath**. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</statblock>
+
 
 
 
@@ -91,6 +93,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Gold Dragon
 
 *Large* *Dragon*
@@ -126,6 +129,7 @@ Source: 5e_artisinal_monsters
 - **Weakening Breath:** The dragon exhales gas in a 30-foot cone. Each creature in the area must succeed on a DC 17 Constitution saving throw or suffer disadvantage on weapon attack rolls for 1 minute. A weakened creature repeats the saving throw at the end of each of its turns  ending the effect on a success.
 
 
+</statblock>
 
 
 
@@ -134,6 +138,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Gold Dragon
 
 *Large dragon*
@@ -170,5 +175,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The dragon magically transforms into a Beast or Humanoid that has a challenge rating no higher than its own, or back into its true form, which is Dragon. Any equipment it is wearing or carrying transforms with it or is borne by the new form (the dragon’s choice). It reverts to its true form if it dies. In a new form, the dragon retains its HP, ability to speak, proficiencies, and INT, WIS, and CHA scores, as well as this bonus action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
 
+</statblock>
 
 

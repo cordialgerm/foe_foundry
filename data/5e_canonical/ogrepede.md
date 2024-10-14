@@ -19,6 +19,7 @@ In combat, the Ogrepede makes use of its Multiattack action to strike twice: onc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogrepede
 
 *Huge* *Undead* *chaotic evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 12 (2d6 + 5) bludgeoning damage, or 8 (1d6 + 5) bludgeoning damage if the ogrepede has half its hp or fewer. If the ogrepede scores a critical hit, it rolls the damage dice three times, instead of twice.
 
 
+</statblock>
 
 

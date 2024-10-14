@@ -38,6 +38,7 @@ Overall, the sahuagin excels in aquatic environments, leveraging their unique ab
 
 Source: 5e_srd
 
+<statblock>
 ## Sahuagin
 
 *Medium humanoid (sahuagin), lawful evil*
@@ -74,7 +75,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 3 (1d4+1) slashing damage.
 
-***Spear***. *Melee or Ranged Weapon Attack:* +3 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (1d6+1) piercing damage, or 5 (1d8+1) piercing damage if used with two hands to make a melee attack.
+***Spear***. *Melee or Ranged Weapon Attack:* +3 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (1d6+1) piercing damage, or 5 (1d8+1) piercing damage if used with two hands to make a melee attack.</statblock>
+
 
 
 
@@ -82,6 +84,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sahuagin
 
 *Medium* *Humanoid*
@@ -116,6 +119,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.
 
 
+</statblock>
 
 
 
@@ -124,6 +128,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sahuagin
 
 *Medium humanoid*
@@ -160,5 +165,6 @@ Source: 5e_artisinal_monsters
 
 - **Circling Sharks.** If the sahuagin ends its turn within 10 feet of at least two other friendly sahuagin or sharks, the sahuagin can snap its teeth at one creature within 15 feet of it that it can see and that can see or hear it. The target must succeed on a DC 11 WIS save or be frightened until the end of its next turn.
 
+</statblock>
 
 

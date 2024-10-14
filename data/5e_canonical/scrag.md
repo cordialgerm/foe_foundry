@@ -19,6 +19,7 @@ In combat, the Scrag employs a Multiattack action, which allows it to make a bit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scrag
 
 *Large* *Giant*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (2d4 + 4) slashing damage.
 
 
+</statblock>
 
 

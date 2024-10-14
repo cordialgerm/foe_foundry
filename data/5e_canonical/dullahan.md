@@ -23,6 +23,7 @@ Overall, the Dullahan's impressive combination of abilities, high damage output,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dullahan
 
 *Large* *Fey* *Lawful Evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Deathly Doom:** The dullahan magically dooms a creature for 1 hour. It can have only one creature doomed at a time. If it dooms another, the effect on the previous target ends. The dullahan knows the direction to the doomed creature as long as both are on the same plane of existence.
+</statblock>
 
 

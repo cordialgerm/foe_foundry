@@ -29,6 +29,7 @@ Overall, the Boomer leverages its sound-based abilities to create chaos and conf
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boomer
 
 *Medium* *Plant* *unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Shriek:** If bright light or a creature is within 30 feet of the boomer, it emits a shriek audible within 300 feet of it. The boomer continues to shriek until the disturbance moves out of range and for 1d4 of the boomer’s turns afterward.
 
 
+</statblock>
 
 

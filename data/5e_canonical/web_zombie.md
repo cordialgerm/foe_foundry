@@ -27,6 +27,7 @@ In terms of actions, the Web Zombie can perform a Multiattack, which allows it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Web Zombie
 
 *Medium* *Undead* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.
 
 
+</statblock>
 
 

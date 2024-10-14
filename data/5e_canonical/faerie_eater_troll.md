@@ -27,6 +27,7 @@ During combat, the Faerie Eater Troll can perform a Multiattack action, allowing
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Faerie Eater Troll
 
 *Large* *Giant*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Charming Murmur:** One creature within 60 feet that can hear the troll makes a DC 12 Charisma saving throw. On a failure  it is charmed for 1 minute. While charmed  its Speed is 0. The creature repeats the saving throw whenever it takes damage.
 
 
+</statblock>
 
 

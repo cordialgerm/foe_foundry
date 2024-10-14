@@ -19,6 +19,7 @@ In terms of actions, the Cackling Skeleton can execute a Slam attack, making a m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cackling Skeleton
 
 *Medium* *Undead* *neutral evil*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Mock (Recharge 5-6):** The cackling skeleton mocks the futile efforts of up to three creatures it can see within 30 feet of it that aren’t undead or constructs. Each target must make a DC 12 Charisma saving throw, taking 5 (2d4) psychic damage on a failed save, or half as much damage on a successful one. A demoralized target has disadvantage on this saving throw.
 
 
+</statblock>
 
 

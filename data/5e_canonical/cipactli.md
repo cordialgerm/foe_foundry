@@ -23,6 +23,7 @@ Overall, the Cipactli is a formidable opponent, especially in aquatic environmen
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cipactli
 
 *Medium* *Fiend* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Ancient Lullaby (Recharge 5-6):** A cipactli sings a soporific, primordial song of eternal rest and divine repose from its many mouths. Each creature within 100 feet of the cipactli that can hear the song must succeed on a DC 14 Charisma saving throw or fall asleep and remain unconscious for 10 minutes. A creature awakens if it takes damage or another creature takes an action to wake it. This song has no effect on constructs and undead.
 
 
+</statblock>
 
 

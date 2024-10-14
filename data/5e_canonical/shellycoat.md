@@ -35,6 +35,7 @@ Lastly, the Shellycoat can use its **Shellycoat’s Fog** ability once per day w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shellycoat
 
 *Medium* *Fey* *Neutral Evil*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: 12 (2d8 + 3) slashing damage, and the target is grappled (escape DC 13) if it is a Large or smaller creature. Until this grapple ends, the creature is restrained. The shellycoat has two claws, each of which can grapple only one creature.
 - **Shellycoat’s Fog (1/Day):** While in contact with water, the shellycoat can create a 20-foot-radius sphere of fog centered on a point it can see within 60 feet of it for 1 minute. The sphere spreads around corners, and its area is heavily obscured. A creature that enters the fog for the first time on a turn or starts its turn there must succeed on a DC 13 Constitution saving throw or be poisoned and unable to breathe, unless it can breathe water, for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

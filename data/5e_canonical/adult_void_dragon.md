@@ -25,6 +25,7 @@ Finally, the Adult Void Dragon can also employ legendary actions, including "Det
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Void Dragon
 
 *Huge* *Dragon* *Chaotic Neutral*
@@ -74,5 +75,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a Tail attack.
 - **Void Slip (Costs 2 Actions):** The dragon twists the fabric of space around it, disappearing and reappearing in an unoccupied space it can see within 120 feet of it. Each creature within 10 feet of the dragon must succeed on a DC 20 Constitution saving throw or take 14 (4d6) cold damage and be knocked prone.
+</statblock>
 
 

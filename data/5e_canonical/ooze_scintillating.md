@@ -25,6 +25,7 @@ The creature also possesses legendary actions that enhance its potential during 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ooze, Scintillating
 
 *Large* *Ooze* *neutral*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Move:** Up to its speed with o provoking opportunity attacks.
 - **Grasping Pseudopod:** Launches a pseudopod at one creature it can see within 30' of it. Target must make DC 17 Str save or be pulled up to 30' toward the ooze.
 - **Lunging Attack (2):** Makes one Weapon Thrash attack at a creature it can see within 10 ft. of it.
+</statblock>
 
 

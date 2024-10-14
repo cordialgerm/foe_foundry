@@ -21,6 +21,7 @@ As a bonus action, the Catterball can "Change Form," giving it versatility in co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Catterball
 
 *Small* *Fey* *chaotic neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Change Form:** Can extend its body roll up into a ball or return to true form. Each time it extends its body its reach with slam increases by 5 feet max 15 feet and Armor Class decreases by 1.
 
 
+</statblock>
 
 

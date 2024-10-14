@@ -37,6 +37,7 @@ Finally, one of its notable reactions is the Shower of Petals, which triggers wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dancing Foliage
 
 *Medium* *Plant* *chaotic good*
@@ -76,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Shower of Petals:** When a creature the dancing foliage can see targets it with an attack, it releases a shower of flower petals, giving the attacker disadvantage on that attack roll.
 
 
+</statblock>
 
 

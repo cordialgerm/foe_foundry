@@ -25,6 +25,7 @@ Lastly, the Ravenfolk Warrior has a powerful reaction known as Odin's Call, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ravenfolk Warrior
 
 *Medium* *Humanoid* *Neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Odin’s Call (Recharge 6):** When the ravenfolk warrior takes damage while below half its hp maximum, it moves up to half its speed without provoking opportunity attacks.
+</statblock>
 
 

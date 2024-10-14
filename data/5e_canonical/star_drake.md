@@ -21,6 +21,7 @@ Other extraordinary actions include "Planar Traveler," enabling the drake to tel
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Star Drake
 
 *Large* *Dragon* *Neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Searing Star:** Ranged Spell Attack: +12 to hit, range 120 ft., one target. Hit: 14 (2d6 + 7) radiant damage plus 9 (2d8) force damage.
 - **Planar Traveler:** The star drake can transport itself to a different plane of existence. This works like the plane shift spell, except the drake can affect only itself and can’t use this action to banish an unwilling creature to another plane.
 - **Plane-Altered Breath (Recharge 5–6):** The drake exhales raw magic in a 60-foot cone. Each creature in that area must make a DC 18 Dexterity saving throw, taking 55 (10d10) force damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

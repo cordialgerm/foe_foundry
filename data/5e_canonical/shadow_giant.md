@@ -21,6 +21,7 @@ When it comes to actions, the Shadow Giant can initiate a Multiattack, allowing 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Giant
 
 *Huge* *Giant* *chaotic evil*
@@ -60,5 +61,6 @@ While in the Plane of Shadow, the shadow giant can see and hear 120 feet into th
 - **Cold Shadow (Recharge 5-6):** The shadow giant directs its shadow to stretch out in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw. On a failure, a creature takes 52 (15d6) cold damage and has disadvantage on attack rolls and saving throws until the end of its next turn. On a success, a creature takes half the damage and doesn’t have disadvantage.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ Additionally, the Ikuchi has a powerful attack known as Crush, which can be used
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ikuchi
 
 *Gargantuan* *Elemental* *chaotic neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Crush (Recharge 4-6):** Each creature grappled by the ikuchi must make a DC 16 Strength saving throw, taking 23 (4d8 + 5) bludgeoning damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

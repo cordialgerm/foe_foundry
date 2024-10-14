@@ -21,6 +21,7 @@ In direct combat actions, the Angel engages using a Multiattack feature that all
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angel of Judgment
 
 *Huge* *Celestial* *neutral*
@@ -62,5 +63,6 @@ At will: detect evil and good, detect magic, detect thoughts, invisibility (self
 - **Greataxe:** Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 25 (3d12 + 6) slashing damage plus 27 (6d8) force damage.
 
 
+</statblock>
 
 

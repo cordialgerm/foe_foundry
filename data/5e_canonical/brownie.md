@@ -38,6 +38,7 @@ Overall, the Brownie is a cunning and agile fey that uses magic and stealth to o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brownie
 
 *Tiny* *Fey* *neutral good*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** Magically turns invisible until it attacks or uses Domestic Magic or until its concentration ends (as if concentrating on a spell). Any equipment the brownie wears or carries is invisible with it.
 
 
+</statblock>
 
 

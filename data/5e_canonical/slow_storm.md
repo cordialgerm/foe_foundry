@@ -23,6 +23,7 @@ Finally, the Slow Storm has a special ability called Static Shock, which recharg
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Slow Storm
 
 *Medium* *Elemental* *Chaotic Neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage plus 9 (2d8) lightning damage.
 - **Lightning Bolt:** Ranged Spell Attack: +9 to hit, range 120 ft., one target. Hit: 22 (4d8 + 4) lightning damage.
 - **Static Shock (Recharge 5–6):** The slow storm releases built-up electricity in a 60-foot cone. Each creature in the area must make a DC 18 Constitution saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one. A creature that fails this saving throw by 5 or more is also stunned for 1 minute. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

@@ -37,6 +37,7 @@ In combat, the Naizu-Ha's abilities create a unique combination of offense and d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Naizu-Ha
 
 *Small* *Fey* *neutral evil*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Dagger Legs:** Melee Weapon Attack: +6 to hit, reach 5 ft., one prone creature. Hit: 8 (2d4 + 3) piercing damage.
 
 
+</statblock>
 
 

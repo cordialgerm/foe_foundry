@@ -19,6 +19,7 @@ In terms of actions, the Trapsmith can perform a Multiattack by using its Makesh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trapsmith
 
 *Small* *Humanoid* *Lawful Neutral*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Dagger:** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.
 - **Spare Part:** Ranged Weapon Attack:+5 to hit, range 20/60 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage or slashing damage (the trapsmith’s choice).
 - **Makeshift Trap:** The kobold trapsmith cobbles together a quick trap with materials at hand and throws it at a point on the ground it can see within 30 feet of it. The trapsmith chooses one of the following traps. Each creature in the trap’s area must succeed on a DC 13 Dexterity saving throw or suffer the trap’s effects.
+</statblock>
 
 

@@ -23,6 +23,7 @@ Combining its physical prowess with its unique abilities and special actions, th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold War Machine
 
 *Large* *Construct* *unaligned*
@@ -63,5 +64,6 @@ If a creature scores a critical hit against the kobold war machine, the creature
 - **Fire Breath (Recharge 5-6):** The kobold war machine exhales fire in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 35 (10d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

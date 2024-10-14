@@ -21,6 +21,7 @@ Additionally, the Bone Swarm has a powerful ability known as Death’s Embrace, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Swarm
 
 *Large* *Swarm* *Undead* *Chaotic Evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The bone swarm makes two Swirling Bones attacks. It can replace one Swirling Bones attack with one Death’s Embrace attack, if available.
 - **Swirling Bones:** Melee Weapon Attack: +10 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 36 (8d8) bludgeoning, piercing, or slashing damage (the bone swarm’s choice), or 18 (4d8) bludgeoning, piercing, or slashing damage (the bone swarm’s choice) if the swarm has half of its hp or fewer.
 - **Death’s Embrace (Recharge 5–6):** Melee Weapon Attack: +10 to hit, reach 0 ft., one creature in the swarm’s space. Hit: The target is grappled (escape DC 16) if it is a Large or smaller creature. Until this grapple ends, the creature is restrained and any attack against the bone swarm has a 50 percent chance of hitting the grappled creature instead. The bone swarm can have only one creature grappled at a time. The grappled creature has advantage on ability checks made to escape the grapple when the bone swarm has half of its hp or fewer.
+</statblock>
 
 

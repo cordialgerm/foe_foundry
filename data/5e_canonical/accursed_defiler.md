@@ -19,6 +19,7 @@ For actions, the Accursed Defiler can perform a Multiattack, allowing it to make
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Accursed Defiler
 
 *Medium* *Undead* *Neutral Evil*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The accursed defiler makes two Slam attacks.
 - **Slam:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 11 (2d6 + 4) bludgeoning damage. If the accursed defiler scores a critical hit, the target suffers one level of exhaustion.
 - **Sandslash (Recharge 5–6):** The accursed defiler intensifies the vortex of sand that surrounds it. Each creature within 10 feet of the accursed defiler must make a DC 14 Dexterity saving throw, taking 21 (6d6) slashing damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

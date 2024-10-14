@@ -19,6 +19,7 @@ In terms of actions, the Hobgoblin Warlord can perform a Multiattack which allow
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hobgoblin Warlord
 
 *Medium* *Humanoid*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Officers Command (1/Day):** The hobgoblin inspires creatures of its choice within 30 feet that can hear and understand it and that have a Challenge Rating of 2 or lower. For the next minute  inspired creatures gain an expertise die on attack rolls and saving throws. A creature can benefit from only one Officers Command at a time.
 
 
+</statblock>
 
 

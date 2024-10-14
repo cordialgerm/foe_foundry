@@ -37,6 +37,7 @@ The Transcendent Lunarchida represents a balance of cunning strategy and raw for
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Transcendent Lunarchida
 
 *Medium* *Aberration* *neutral evil*
@@ -80,5 +81,6 @@ Cantrips (at will): minor illusion, mage hand, poison spray, ray of frost
 - **Lunar Beam (Recharge 5–6):** The lunarchidna flashes a beam of moonlight in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 28 (8d6) radiant damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

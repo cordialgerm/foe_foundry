@@ -23,6 +23,7 @@ Overall, the Orniraptor combines relative mobility and a unique defensive trait 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Orniraptor
 
 *Small* *Monstrosity* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Spit Stone:** Ranged Weapon Attack: +3 to hit, range 20/60 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.
 
 
+</statblock>
 
 

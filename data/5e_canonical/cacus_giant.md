@@ -23,6 +23,7 @@ The Cacus Giant also has access to a formidable breath weapon called Fire Breath
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cacus Giant
 
 *Huge* *Giant* *chaotic evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 4-6):** The cacus giant exhales fire in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

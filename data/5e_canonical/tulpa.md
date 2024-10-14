@@ -21,6 +21,7 @@ In summary, the Tulpa is an undead entity with formidable physical and psychic c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tulpa
 
 *Medium* *Undead* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Imposing Dread (1/Day):** The tulpa uses its action to fill a 40-foot radius around itself with dread-inducing psychic energy. Each creature, other than the tulpa's creator, within that area must succeed on a DC 13 Wisdom saving throw or be frightened of the tulpa until the end of its next turn and become cursed. A creature with an Intelligence of 5 or lower can't be cursed. While cursed by the tulpa, that creature's own thoughts turn ever more dark and brooding. Its sense of hope fades, and shadows seem overly large and ominous. The cursed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on itself on a success. If not cured within three days, the cursed creature manifests its own tulpa.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Quoreq poses a formidable challenge in combat, utilizing its abilit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quoreq
 
 *Medium* *Aberration* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage. If the quoreq scores a critical hit, it rolls damage dice three times, instead of twice.
 
 
+</statblock>
 
 

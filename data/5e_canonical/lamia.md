@@ -39,6 +39,7 @@ In addition to its main actions, the Lamia can use a bonus action for "Intoxicat
 
 Source: 5e_srd
 
+<statblock>
 ## Lamia
 
 *Large monstrosity, chaotic evil*
@@ -77,7 +78,8 @@ At will: *disguise self* (any humanoid form), *major image*
 
 ***Dagger***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d4+3) piercing damage.
 
-***Intoxicating Touch***. *Melee Spell Attack:* +5 to hit, reach 5 ft., one creature. *Hit:* The target is magically cursed for 1 hour. Until the curse ends, the target has disadvantage on Wisdom saving throws and all ability checks.
+***Intoxicating Touch***. *Melee Spell Attack:* +5 to hit, reach 5 ft., one creature. *Hit:* The target is magically cursed for 1 hour. Until the curse ends, the target has disadvantage on Wisdom saving throws and all ability checks.</statblock>
+
 
 
 
@@ -85,6 +87,7 @@ At will: *disguise self* (any humanoid form), *major image*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lamia
 
 *Large* *Monstrosity*
@@ -120,6 +123,7 @@ Source: 5e_artisinal_monsters
 - **Misty Step (2nd-Level; V):** The lamia teleports to an unoccupied space it can see within 30 feet. The lamia can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 
 
@@ -128,6 +132,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lamia
 
 *Large monstrosity*
@@ -167,5 +172,6 @@ Source: 5e_artisinal_monsters
 
 - **Intoxicating Gaze.** The lamia gazes at one creature it can see within 30 feet of it. The target must succeed on a DC 13 CHA save or be charmed until the end of its next turn and cursed for 1 hour. While cursed, the target has disadvantage on WIS saves and on all ability checks.
 
+</statblock>
 
 

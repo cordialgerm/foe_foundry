@@ -39,6 +39,7 @@ Overall, the Frostjack presents a significant challenge to adventurers, particul
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frostjack
 
 *Medium* *Fey* *neutral evil*
@@ -79,5 +80,6 @@ Source: 5e_artisinal_monsters
 - **Hoarfrost Warding (3/Day):** When it takes fire it gains resistance to fire including triggering attack until end of its next turn.
 
 
+</statblock>
 
 

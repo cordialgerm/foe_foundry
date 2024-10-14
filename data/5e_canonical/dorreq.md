@@ -27,6 +27,7 @@ As a bonus action, the Dorreq can use Stone Step to teleport up to 30 feet to an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dorreq
 
 *Medium* *Aberration* *Neutral Evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Stone Step:** The dorreq teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see. The origin and destination spaces must contain a stone or rocky surface, such as a cliff face or rocky terrain.
+</statblock>
 
 

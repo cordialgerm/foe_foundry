@@ -23,6 +23,7 @@ One of the Rust Drake's notable abilities is Vomit Scrap, which has a recharge m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rust Drake
 
 *Medium* *Dragon* *Chaotic Evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) piercing damage, and the target must succeed on a DC 15 Constitution save or contract the rust drake lockjaw disease (see the Rust Drake Lockjaw trait).
 - **Tail Swipe:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.
 - **Vomit Scrap (Recharge 5–6):** The rust drake vomits forth a 15-foot cone of rusted metal. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (5d8) slashing damage and 22 (5d8) poison damage on a failed save, or half as much damage on a successful one. In addition, each creature that failed the saving throw must succeed on a DC 15 Constitution saving throw or contract the rust drake lockjaw disease (see the Rust Drake Lockjaw trait).
+</statblock>
 
 

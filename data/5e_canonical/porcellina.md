@@ -21,6 +21,7 @@ The Porcellina also has a reaction called Squeal, which it can use when it is hi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Porcellina
 
 *Tiny* *Beast* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Squeal:** When a porcellina is hit with an attack it can let out a blood-curdling scream. Each creature within 10 ft. of the porcellina must make DC 11 Wis save or become frightened until the end of its next turn.
 
 
+</statblock>
 
 

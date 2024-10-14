@@ -35,6 +35,7 @@ The vulture also possesses a Reaction called Defensive Bile. When hit by a melee
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Vulture
 
 *Large beast, neutral evil*
@@ -69,7 +70,8 @@ Source: 5e_srd
 
 ***Talons***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 9 (2d6+2) slashing damage.
 
-A **giant vulture** has advanced intelligence and a malevolent bent. Unlike its smaller kin, it will attack a wounded creature to hasten its end. Giant vultures have been known to haunt a thirsty, starving creature for days to enjoy its suffering.
+A **giant vulture** has advanced intelligence and a malevolent bent. Unlike its smaller kin, it will attack a wounded creature to hasten its end. Giant vultures have been known to haunt a thirsty, starving creature for days to enjoy its suffering.</statblock>
+
 
 
 
@@ -77,6 +79,7 @@ A **giant vulture** has advanced intelligence and a malevolent bent. Unlike its 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Vulture
 
 *Large* *Beast*
@@ -110,6 +113,7 @@ Source: 5e_artisinal_monsters
 - **Retreat:** When the vulture would be hit by a melee attack, the vulture can move 5 feet away from the attacker. If this moves the vulture out of the attackers reach, the attacker has disadvantage on its attack.
 
 
+</statblock>
 
 
 
@@ -118,6 +122,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vulture, Giant
 
 *Large beast*
@@ -153,5 +158,6 @@ Source: 5e_artisinal_monsters
 
 - **Defensive Bile.** When a creature the vulture can see hits it with a melee attack while within 5 feet of it, the vulture can spit partially digested carrion at the creature. The attacker must succeed on a DC 13 CON save or take 5 (2d4) acid damage and be incapacitated until the end of its next turn.
 
+</statblock>
 
 

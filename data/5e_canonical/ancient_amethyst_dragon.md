@@ -27,6 +27,7 @@ The Ancient Amethyst Dragon also has access to three legendary actions that it c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Amethyst Dragon
 
 *Gargantuan* *Dragon*
@@ -76,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Stupefy:** The dragon targets a creature within 60 feet. If the target is concentrating on a spell, it must make a DC 22 Constitution saving throw or lose concentration.
 - **Psionic Wave (Costs 2 Actions):** The dragon uses Psionic Wave.
 - **Captivating Harmonics (1/Day):** Each creature of the dragons choice within 120 feet makes a DC 18 Wisdom saving throw. On a failure, it becomes psionically charmed by the dragon for 1 minute. A creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

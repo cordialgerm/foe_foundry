@@ -21,6 +21,7 @@ For movement, the centipede has a bonus action called Swift Hunter, allowing it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Insect, Giant Centipede
 
 *Small beast*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 
 - **Swift Hunter.** The centipede moves up to its speed toward a hostile creature that it can see.
 
+</statblock>
 
 

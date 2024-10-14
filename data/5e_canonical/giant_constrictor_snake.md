@@ -25,6 +25,7 @@ Overall, the Giant Constrictor Snake poses a serious threat in combat due to its
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Constrictor Snake
 
 *Huge beast, unaligned*
@@ -51,7 +52,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +6 to hit, reach 10 ft., one creature. *Hit:* 11 (2d6+4) piercing damage.
 
-***Constrict***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one creature. *Hit:* 13 (2d8+4) bludgeoning damage, and the target is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.
+***Constrict***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one creature. *Hit:* 13 (2d8+4) bludgeoning damage, and the target is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.</statblock>
+
 
 
 
@@ -59,6 +61,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Constrictor Snake
 
 *Huge* *Beast*
@@ -83,5 +86,6 @@ Source: 5e_artisinal_monsters
 - **Constrict:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6+4) bludgeoning damage and the target is grappled (escape DC 16). Until this grapple ends  the target is restrained and the snake can't constrict a different target.
 
 
+</statblock>
 
 

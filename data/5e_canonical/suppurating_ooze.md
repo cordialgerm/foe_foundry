@@ -21,6 +21,7 @@ For its actions, the Suppurating Ooze can make a melee weapon attack with its Ps
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Suppurating Ooze
 
 *Medium* *Ooze* *unaligned*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Pseudopod:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 9 (2d8) necrotic damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or become infected with the seeping death disease (see the Seeping Death trait).
 
 
+</statblock>
 
 

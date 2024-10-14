@@ -30,6 +30,7 @@ In summary, the Succubus is a potent manipulator with strong charm abilities and
 
 Source: 5e_srd
 
+<statblock>
 ## Succubus
 
 *Medium fiend (shapechanger), neutral evil*
@@ -70,7 +71,8 @@ The fiend can have only one target charmed at a time. If it charms another, the 
 
 Constitution saving throw against this magic, taking 32 (5d10+5) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
 
-***Etherealness***. The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa.
+***Etherealness***. The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa.</statblock>
+
 
 
 
@@ -78,6 +80,7 @@ Constitution saving throw against this magic, taking 32 (5d10+5) psychic damage 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Succubus
 
 *Medium fiend (shapechanger)*
@@ -117,5 +120,6 @@ Source: 5e_artisinal_monsters
 
 - **Defend Me, Love!** When a creature the succubus can see within 5 feet of a creature charmed by the succubus attacks the succubus, the succubus can command the charmed creature to use its reaction to make one melee weapon attack against the attacker.
 
+</statblock>
 
 

@@ -37,6 +37,7 @@ Overall, the Lord of the Hunt is a complex and versatile adversary with a variet
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lord of the Hunt
 
 *Medium* *Fey* *Lawful Neutral*
@@ -87,5 +88,6 @@ The Lord of the Hunt can take 3 legendary actions, choosing from the options bel
 - **Attack:** The Lord of the Hunt makes one Spear or Longbow attack.
 - **Tenacious Stride:** The Lord of the Hunt moves up to his speed without provoking opportunity attacks. If he is mounted, he can force the mount to move up to half its speed without provoking opportunity attacks instead.
 - **Call to the Hunt (Costs 2 Actions):** The Lord of the Hunt blows his hunting horn and chooses one creature he can see within 60 feet. If the creature can hear the horn, it must succeed on a DC 16 Charisma saving throw or be charmed by the Lord of the Hunt for 8 hours. The charmed target obeys the Lord’s verbal commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to the Lord’s Call to the Hunt for the next 24 hours. The Lord can have only one target charmed at a time. If he charms another, the effect on the previous target ends.
+</statblock>
 
 

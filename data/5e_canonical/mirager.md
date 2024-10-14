@@ -27,6 +27,7 @@ Lastly, when in sandy terrain, the Mirager can use its "Sand Dancer" ability to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mirager
 
 *Medium* *Fey* *Neutral Evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Sand Dancer:** While in sandy terrain, the mirager takes the Dash or Disengage action.
+</statblock>
 
 

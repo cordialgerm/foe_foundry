@@ -23,6 +23,7 @@ In terms of actions, the Woodwose can attack with a club, making a melee weapon 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Woodwose
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -56,5 +57,6 @@ At will: shillelagh
 - **Shortbow:** Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage plus 5 (2d4) poison damage.
 
 
+</statblock>
 
 

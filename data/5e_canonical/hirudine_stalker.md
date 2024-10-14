@@ -25,6 +25,7 @@ As a bonus action, the Hirudine Stalker can utilize Hidden Predator, allowing it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hirudine Stalker
 
 *Medium* *Monstrosity* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Hidden Predator:** Takes the Hide action.
 
 
+</statblock>
 
 

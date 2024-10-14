@@ -21,6 +21,7 @@ In combat, the Lake Troll can use a Multiattack to make one Bite attack and two 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lake Troll
 
 *Large* *Giant* *Chaotic Evil*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The lake troll makes one Bite attack and two Claw attacks. If both Claw attacks hit one creature that is wielding a weapon, the target must succeed on a DC 16 Dexterity saving throw or the target’s weapon takes a permanent and cumulative −1 penalty to damage rolls. If the weapon’s penalty drops to −5, the weapon is destroyed. If the target is wielding more than one weapon, the troll chooses which weapon to affect.
 - **Bite:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 6) slashing damage.
 - **Claw:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) piercing damage.
+</statblock>
 
 

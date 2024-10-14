@@ -23,6 +23,7 @@ Finally, as a reaction, the Haleshi can use Water Shield (recharge on a roll of 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Haleshi
 
 *Large* *Fey* *lawful neutral*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Water Shield (Recharge 5-6):** The haleshi adds 3 to its AC against one attack that would hit it. To do so, the haleshi must be within 5 feet of a gallon or more of water. Alternatively, if the haleshi would take fire damage from an attack or spell, it can negate that damage if it is within 5 feet of a gallon or more of water.
 
 
+</statblock>
 
 

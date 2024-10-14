@@ -31,6 +31,7 @@ Overall, the Radiant Spark Swarm is a dynamic foe that can disrupt adventurers w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Radiant Spark Swarm
 
 *Medium* *Elemental* *neutral*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Radiant Sparks:** Melee Weapon Attack: +5 to hit, reach 0 ft., one target in the swarm’s space. Hit: 9 (2d8) radiant damage plus 9 (2d8) fire damage, or 4 (1d8) radiant damage plus 4 (1d8) fire damage if the swarm has half of its hp or fewer.
 
 
+</statblock>
 
 

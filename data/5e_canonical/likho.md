@@ -19,6 +19,7 @@ In combat, the Likho can use a Multiattack action, enabling it to employ its Dis
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Likho
 
 *Medium* *Monstrosity* *Chaotic Evil*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The likho can use its Disruptive Gaze. It then makes four Claw attacks.
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage.
 - **Disruptive Gaze:** One creature the likho can see within 60 feet of it must succeed on a DC 15 Charisma saving throw or have disadvantage on attack rolls, ability checks, and saving throws until the end of its next turn.
+</statblock>
 
 

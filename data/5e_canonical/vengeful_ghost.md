@@ -36,6 +36,7 @@ Additionally, the ghost has a reaction that allows it to use Horrifying Visage u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vengeful Ghost
 
 *Medium* *Undead*
@@ -77,5 +78,6 @@ Source: 5e_artisinal_monsters
 - **Horrifying Visage:** If the ghost takes damage from an attack or spell, it uses Horrifying Visage.
 
 
+</statblock>
 
 

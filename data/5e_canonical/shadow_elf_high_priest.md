@@ -23,6 +23,7 @@ Overall, the Shadow Elf High Priest is a versatile opponent with excellent spell
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Elf High Priest
 
 *Medium* *Humanoid*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Insect Plague (5th-Level; V, S, M, Concentration):** A 20-foot-radius sphere of biting and stinging insects appears centered on a point the priest can see within 300 feet and remains for 10 minutes. The cloud spreads around corners  and the area is lightly obscured and difficult terrain. Each creature in the area when the cloud appears  and each creature that enters it for the first time on a turn or ends its turn there  makes a DC 15 Constitution saving throw  taking 22 (4d10) piercing damage on a failed save or half damage on a success. The priest is immune to this damage.
 
 
+</statblock>
 
 

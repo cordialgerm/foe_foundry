@@ -25,6 +25,7 @@ Ammut can also unleash a potent ability called Ghost Breath once per day, where 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ammut
 
 *Large* *Celestial* *neutral*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Absorb Spirit (1/Day):** The ammut attempts to absorb the spirit of a dead or undead creature in its belly. The creature must succeed on a DC 16 Wisdom saving throw or be absorbed by the ammut. A creature absorbed this way is destroyed and can't be reanimated, though it can be restored to life by powerful magic, such as a resurrection spell. The ammut regains hp equal to the absorbed creature's hp maximum.
 
 
+</statblock>
 
 

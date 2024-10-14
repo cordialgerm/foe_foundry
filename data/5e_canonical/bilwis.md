@@ -23,6 +23,7 @@ The bilwis also possesses a powerful special action called Whirlwind, which can 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bilwis
 
 *Medium* *Elemental* *chaotic evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Whirlwind (Recharge 5-6):** Each creature in the bilwis' space and within 5 feet of it must make a DC 12 Strength saving throw. On a failure, a target takes 14 (4d6) bludgeoning damage and is knocked prone. On a success, a target takes half the bludgeoning damage and isn't knocked prone.
 
 
+</statblock>
 
 

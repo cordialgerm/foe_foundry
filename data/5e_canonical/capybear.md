@@ -21,6 +21,7 @@ For reactions, the Capybear can use its Protect the Community ability. When anot
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Capybear
 
 *Medium* *Monstrosity* *neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Protect the Community:** When another capybear within 5 ft. of this capybear is hit by an attack this capybear can leap in the way becoming the new target of the attack.
 
 
+</statblock>
 
 

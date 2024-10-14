@@ -29,6 +29,7 @@ For bonus actions, the Moppet has Nimble Moves, which allows it to take the Dash
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moppet
 
 *Tiny* *Construct* *unaligned*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Moves:** Takes the Dash or Disengage action.
 
 
+</statblock>
 
 

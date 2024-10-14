@@ -37,6 +37,7 @@ Overall, the War Machine Golem is a formidable foe that can adapt and deal signi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # War Machine Golem
 
 *Gargantuan* *Construct* *unaligned*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 5-6):** The war machine golem breathes fire in a 60-foot cone. Each creature in the area must make a DC 19 Dexterity saving throw, taking 35 (10d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -54,6 +54,7 @@ Lastly, the King Fomor can utilize legendary actions, allowing it to perform one
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # King Fomor
 
 *Gargantuan* *Celestial*
@@ -101,5 +102,6 @@ Source: 5e_artisinal_monsters
 - **Cast Spell:** The empyrean casts a spell. The empyrean can't use this option if it has cast a spell since the start of its last turn.
 - **Fly:** The empyrean flies up to half its fly speed.
 - **Shout (Recharge 5-6):** Each creature within 120 feet that can hear the empyrean makes a DC 25 Constitution saving throw. On a failure, a creature takes 24 (7d6) thunder damage and is stunned until the end of the empyreans next turn. On a success, a creature takes half damage.
+</statblock>
 
 

@@ -21,6 +21,7 @@ Overall, the Bulbous Violet presents a unique blend of environmental camouflage,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bulbous Violet
 
 *Medium* *Plant* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Tendril:** Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage plus 2 (1d4) acid damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained and takes 2 (1d4) acid damage at the start of each of its turns. The violet has two tendrils strong enough to grapple creatures; each can grapple only one target. If the acid damage reduces the target to 0 hp, the violet regains 7 (2d6) hp.
 
 
+</statblock>
 
 

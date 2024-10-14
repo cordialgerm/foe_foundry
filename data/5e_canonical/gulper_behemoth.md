@@ -34,6 +34,7 @@ The combination of its formidable melee capabilities, area control through sonic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gulper Behemoth
 
 *Gargantuan* *Monstrosity* *unaligned*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Sonic Pulse (Recharge 5-6):** The gulper behemoth expels a sonic pulse in a 60-foot cone. Each creature in that area must make a DC 16 Constitution saving throw. On a failure, the creature takes 21 (6d6) thunder damage and is stunned until the end of its next turn. On a success, the creature takes half the damage and isn’t stunned.
 
 
+</statblock>
 
 

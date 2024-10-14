@@ -19,6 +19,7 @@ When it comes to actions, the Serpentfolk can perform a Multiattack, allowing it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Serpentfolk of Yig
 
 *Medium* *Humanoid* *neutral evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Shortbow:** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 
 
+</statblock>
 
 

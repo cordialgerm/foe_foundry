@@ -21,6 +21,7 @@ The Djinni Noble can transform into Giant Form once per day, becoming a Huge cre
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Djinni Noble
 
 *Large* *Elemental*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **As a bonus action:** The whirlwind disappears if the djinni loses sight of it, if the djinni dies or is incapacitated, or if the djinni dismisses it as an action.
 
 
+</statblock>
 
 

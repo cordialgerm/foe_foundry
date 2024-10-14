@@ -31,6 +31,7 @@ Overall, the Mycolid Spore Lord is a unique creature that focuses on area contro
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mycolid Spore Lord
 
 *Medium plant*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 
 - **Fetid Feast.** The spore lord draws sustenance from a Medium or larger pile of carrion or rotting vegetation within 5 feet of it. It regains 7 (2d6) HP. The spore lord can’t use Fetid Feast on a pile of carrion or vegetation if it or another mycolid has already used Fetid Feast on that pile.
 
+</statblock>
 
 

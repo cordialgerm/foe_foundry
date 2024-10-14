@@ -37,6 +37,7 @@ As a bonus action, the Scout can employ the Escape to Report ability, allowing i
 
 Source: 5e_srd
 
+<statblock>
 ### Scout
 
 *Medium humanoid (any race), any alignment*
@@ -69,7 +70,8 @@ Source: 5e_srd
 
 ***Longbow***. *Ranged Weapon Attack:* +4 to hit, ranged 150/600 ft., one target. *Hit:* 6 (1d8 + 2) piercing damage.
 
-**Scouts** are skilled hunters and trackers who offer their services for a fee. Most hunt wild game, but a few work as bounty hunters, serve as guides, or provide military reconnaissance.
+**Scouts** are skilled hunters and trackers who offer their services for a fee. Most hunt wild game, but a few work as bounty hunters, serve as guides, or provide military reconnaissance.</statblock>
+
 
 
 
@@ -77,6 +79,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scout
 
 *Medium* *Humanoid*
@@ -106,6 +109,7 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
 
 
+</statblock>
 
 
 
@@ -114,6 +118,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scout
 
 *Medium humanoid (any lineage)*
@@ -147,5 +152,6 @@ Source: 5e_artisinal_monsters
 
 - **Escape to Report.** The scout takes the Dash or Disengage action.
 
+</statblock>
 
 

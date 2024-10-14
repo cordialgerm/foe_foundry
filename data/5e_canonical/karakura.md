@@ -25,6 +25,7 @@ Lastly, the "Shadow Walk" ability allows the Karakura to magically enter the Pla
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Karakura
 
 *Medium* *Fiend* *neutral evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Walk:** The karakura can magically enter the Plane of Shadow from the Material Plane, or vice versa.
 
 
+</statblock>
 
 

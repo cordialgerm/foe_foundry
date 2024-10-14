@@ -19,6 +19,7 @@ In terms of actions, the Befouled Weird can execute a Multiattack, performing tw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Befouled Weird
 
 *Medium* *Elemental* *neutral evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Drown in Filth (Recharge 4-6):** A creature in the befouled weird’s space must make a DC 13 Strength saving throw. On a failure, the target takes 10 (2d6 + 3) bludgeoning damage and 7 (2d6) necrotic damage, and, if it is Medium or smaller, it is grappled (escape DC 13). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the weird’s space. At the start of each of the weird’s turns, the grappled target takes 10 (2d6 + 3) bludgeoning damage and 7 (2d6) necrotic damage, and it must make a DC 13 Constitution saving throw or become infected with parasitic amoebas. A creature within 5 feet of the weird can pull the target out of it by taking an action to make a DC 13 Strength check and succeeding.
 
 
+</statblock>
 
 

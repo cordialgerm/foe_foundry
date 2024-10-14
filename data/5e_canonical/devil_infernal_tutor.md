@@ -29,6 +29,7 @@ For reactions, the Infernal Tutor can use an ability named Str of Character, rea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil, Infernal Tutor
 
 *Medium* *Fiend* *lawful evil*
@@ -75,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Str of Character:** When it succeeds on a save tutor responds with scathing magical insult if source of effect is a creature within 60' of tutor. That creature: DC 18 Wis save or take 14 (4d6) psychic and have disadvantage on next save it makes vs. a spell cast by tutor.
 
 
+</statblock>
 
 

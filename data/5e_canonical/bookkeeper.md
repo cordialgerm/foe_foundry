@@ -25,6 +25,7 @@ Finally, the ability 'Elusive Pages' allows the Bookkeeper, while inside its boo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bookkeeper
 
 *Tiny* *Construct* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Elusive Pages:** While inside its book, the bookkeeper magically turns its book invisible until it attacks, or until its concentration ends (as if concentrating on a spell). The bookkeeper is also invisible while inside the invisible book
 
 
+</statblock>
 
 

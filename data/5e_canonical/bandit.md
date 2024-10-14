@@ -39,6 +39,7 @@ Overall, the Bandit is an agile, stealthy opponent best used in ambushes and hit
 
 Source: 5e_srd
 
+<statblock>
 ### Bandit
 
 *Medium humanoid (any race), any non-lawful alignment*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 **Bandits** rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.
 
-**Pirates** are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation's vessels.
+**Pirates** are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation's vessels.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bandit
 
 *Medium* *Humanoid*
@@ -100,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Bandits are outlaws who live by violence:** Most are highway robbers  though a few are principled exiles or freedom fighters.
 
 
+</statblock>
 
 
 
@@ -108,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bandit
 
 *Medium humanoid (any lineage)*
@@ -140,5 +145,6 @@ Source: 5e_artisinal_monsters
 
 - **Steal Item.** The bandit steals an object from one creature it can see within 5 feet of it. The target must succeed on a DC 11 DEX save or lose one object it is wearing or carrying of the bandit’s choice. The object must weigh no more than 10 pounds, can’t be a weapon, and can’t be wrapped around or firmly attached to the target, such as a shirt or armor.
 
+</statblock>
 
 

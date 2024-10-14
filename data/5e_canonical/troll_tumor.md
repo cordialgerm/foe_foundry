@@ -25,6 +25,7 @@ Overall, the Tumor Troll is an unpredictable monster that thrives on chaos and r
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Troll, Tumor
 
 *Large* *Giant* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Fling Limb:** Ranged Weapon Attack: +7 to hit 20/60' one target 9 (2d4+4) bludgeoning damage + 7 (2d6) poison. Remove a teratoma from itself if it has one.
 
 
+</statblock>
 
 

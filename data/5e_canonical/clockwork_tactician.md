@@ -23,6 +23,7 @@ In reaction to attacks, the Clockwork Tactician can utilize Quick Study, which a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Tactician
 
 *Medium* *Construct* *lawful neutral*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Quick Study:** When a creature hits tactician with attack tactician makes DC 13 Int check. Success: it chooses one of:Tactician has advantage on melee attack rolls vs. the attacker.Attacker has disadvantage on attack rolls vs. the tactician.Tactician has resistance to damage type of attack that hit it.Can have more than one benefit active at a time. They end when it attacks a different creature or uses Quick Study on another.
 
 
+</statblock>
 
 

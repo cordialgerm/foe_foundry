@@ -21,6 +21,7 @@ In combat, the Irid can perform a Multiattack, using its Gossip ability followed
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Irid
 
 *Tiny* *Celestial* *chaotic neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The irid magically turns invisible until it attacks or uses Gossip, or until its concentration ends (as if concentrating on a spell). Any equipment the irid wears or carries is invisible with it.
 
 
+</statblock>
 
 

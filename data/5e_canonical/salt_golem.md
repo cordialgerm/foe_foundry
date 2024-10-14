@@ -23,6 +23,7 @@ Overall, the Salt Golem is a robust and imposing presence on the battlefield, ca
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Salt Golem
 
 *Large* *Construct* *Unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The salt golem makes two Slam attacks. If both attacks hit one creature, the target must succeed on a DC 17 Constitution saving throw or suffer one level of exhaustion.
 - **Slam:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage plus 18 (4d8) necrotic damage.
+</statblock>
 
 

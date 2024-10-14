@@ -25,6 +25,7 @@ Overall, the Tosculi Jeweled Drone is a versatile and cunning opponent that exce
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tosculi Jeweled Drone
 
 *Small* *Humanoid* *lawful evil*
@@ -62,5 +63,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Protect the Queen:** When a creature makes an attack against a tosculi hive queen, the jeweled drone grants a +2 bonus to the queen's AC if the drone is within 5 feet of the queen.
 
 
+</statblock>
 
 

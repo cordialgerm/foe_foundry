@@ -21,6 +21,7 @@ In terms of actions during combat, the Excavator can perform a "Multiattack," al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dread Walker Excavator
 
 *Large* *Construct* *neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Excavation Beam:** Ranged Weapon Attack: +7 to hit, range 30/60 ft., one target. Hit: 17 (5d6) force damage.
 
 
+</statblock>
 
 

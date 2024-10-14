@@ -21,6 +21,7 @@ In combat, the Chaos Raptor can make use of its **Multiattack**, which allows it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chaos Raptor
 
 *Gargantuan* *Monstrosity* *chaotic neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +14 to hit, 5 ft., one target, 23 (4d6+9) slashing damage and target is grappled (escape DC 18). Until this grapple ends target is restrained and raptor can’t use its talons on another target.
 
 
+</statblock>
 
 

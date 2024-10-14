@@ -33,6 +33,7 @@ The Serpentine Lamia is thus well-equipped for both direct confrontation and mor
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Serpentine Lamia
 
 *Medium* *Monstrosity* *neutral evil*
@@ -67,5 +68,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Shortbow:** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 
 
+</statblock>
 
 

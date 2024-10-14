@@ -32,6 +32,7 @@ Additionally, the Kaveph has a reaction called Revenge, which activates when it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kaveph
 
 *Huge* *Aberration* *neutral evil*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Revenge:** When a kaveph is dealt 20 damage or more by a single attack and survives, it can make a smash attack against the attacker.
 
 
+</statblock>
 
 

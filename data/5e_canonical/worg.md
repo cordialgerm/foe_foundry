@@ -38,6 +38,7 @@ Overall, the Worg is a fearsome adversary that utilizes its strengths in physica
 
 Source: 5e_srd
 
+<statblock>
 ### Worg
 
 *Large monstrosity, neutral evil*
@@ -66,7 +67,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
 
-A **worg** is an evil predator that delights in hunting and devouring creatures weaker than itself. Cunning and malevolent, worgs roam across the remote wilderness or are raised by goblins and hobgoblins. Those creatures use worgs as mounts, but a worg will turn on its rider if it feels mistreated or malnourished. Worgs speak in their own language and Goblin, and a few learn to speak Common as well.
+A **worg** is an evil predator that delights in hunting and devouring creatures weaker than itself. Cunning and malevolent, worgs roam across the remote wilderness or are raised by goblins and hobgoblins. Those creatures use worgs as mounts, but a worg will turn on its rider if it feels mistreated or malnourished. Worgs speak in their own language and Goblin, and a few learn to speak Common as well.</statblock>
+
 
 
 
@@ -74,6 +76,7 @@ A **worg** is an evil predator that delights in hunting and devouring creatures 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Worg
 
 *Large* *Monstrosity*
@@ -101,6 +104,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6+2) piercing damage. If the target is a creature  it makes a DC 13 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 
 
@@ -109,6 +113,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Worg
 
 *Large monstrosity (animal)*
@@ -141,5 +146,6 @@ Source: 5e_artisinal_monsters
 
 - **Loathsome Howl (1/Day).** The worg unleashes an unnatural howl audible out to a distance of 300 feet. Each creature of the worg’s choice within 30 feet of it must succeed on a DC 13 CHA save or be frightened of it for 1 minute. A frightened creature can repeat the save at the end of each of its turns, ending the effect on itself on a success. Until it finishes a long rest, the worg can sense the direction but not the exact location of each creature that was frightened by Loathsome Howl.
 
+</statblock>
 
 

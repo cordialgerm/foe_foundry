@@ -21,6 +21,7 @@ In summary, the Champion Warrior is a highly capable melee combatant, proficient
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Champion Warrior
 
 *Medium* *Humanoid*
@@ -46,5 +47,6 @@ Source: 5e_artisinal_monsters
 - **Greataxe:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) slashing damage. If the warrior has moved this turn, this attack is made with advantage.
 
 
+</statblock>
 
 

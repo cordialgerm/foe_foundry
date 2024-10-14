@@ -23,6 +23,7 @@ Overall, the Ratfolk is a versatile small creature with strategic potential, bes
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ratfolk
 
 *Small* *Humanoid* *Neutral*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Dagger:** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 - **Light Crossbow:** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage.
+</statblock>
 
 

@@ -23,6 +23,7 @@ In summary, the Colláis is a powerful monstrosity that leverages its physical s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Colláis
 
 *Large* *Monstrosity* *neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Cry of the Forest:** The colláis sounds a dreadful and reverberating call. Each creature within 100 feet of the colláis that can hear the cry must succeed on a DC 16 Charisma saving throw or be frightened until the end of its next turn. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the colláis’s Cry of the Forest for the next 24 hours. Forest-dwelling beasts and monstrosities with an Intelligence of 4 or lower automatically succeed or fail on this saving throw, the colláis’s choice.
 
 
+</statblock>
 
 

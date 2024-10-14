@@ -29,6 +29,7 @@ In summary, the Galidroo presents a multi-faceted threat with its robust physica
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Galidroo
 
 *Huge* *Monstrosity* *neutral evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Prophetic Screech (Recharge 5-6):** The galidroo unleashes a burst of prophetic power in a 60-foot cone. Each creature in that area must make a DC 17 Intelligence saving throw. On a failure, a creature takes 35 (10d6) psychic damage and is incapacitated for 1 minute as its mind is bombarded with visions of its past and future. On a success, a creature takes half the damage and isn’t incapacitated. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

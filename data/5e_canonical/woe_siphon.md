@@ -33,6 +33,7 @@ Lastly, the Woe Siphon possesses the ability to turn invisible until it attacks 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Woe Siphon
 
 *Medium* *Fey* *chaotic neutral*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The woe siphon magically turns invisible until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the woe siphon wears or carries is invisible with it.
 
 
+</statblock>
 
 

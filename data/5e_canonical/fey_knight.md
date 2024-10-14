@@ -23,6 +23,7 @@ In a defensive capacity, the Fey Knight can use a reaction called **Nature's Shi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fey Knight
 
 *Medium* *Fey*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Natures Shield:** When the knight would be hit by an attack while the knight is within 5 feet of a tree or other large plant, the knights AC magically increases by 3 against that attack as the plant interposes branches or vines between the knight and the attacker.
 
 
+</statblock>
 
 

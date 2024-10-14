@@ -21,6 +21,7 @@ The Devil Bough also possesses a reaction known as Arcasynthesis, which it can u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil Bough
 
 *Huge* *Fiend* *neutral evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Arcasynthesis:** When a spell of 5th level or lower is cast within 100 feet of the devil bough, it attempts to synthesize the magic. The spell resolves as normal, but the devil bough has a 50% chance of regaining 5 (1d10) hp per level of the spell cast.
 
 
+</statblock>
 
 

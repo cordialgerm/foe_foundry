@@ -32,6 +32,7 @@ Overall, the Giant Bombardier Beetle is effective for its size and challenge lev
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Bombardier Beetle
 
 *Medium* *Beast* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Spray:** Ranged Weapon Attack: +4 to hit, range 15/30 ft., one target. Hit: 7 (2d4 + 2) fire damage.
 
 
+</statblock>
 
 

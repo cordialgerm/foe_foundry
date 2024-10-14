@@ -35,6 +35,7 @@ Overall, the Saber-Toothed Tiger relies on its physical prowess and predatory ab
 
 Source: 5e_srd
 
+<statblock>
 ### Saber-Toothed Tiger
 
 *Large beast, unaligned*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (1d10+5) piercing damage.
 
-***Claw***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 12 (2d6+5) slashing damage.
+***Claw***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 12 (2d6+5) slashing damage.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Saber-Toothed Tiger
 
 *Large* *Beast*
@@ -105,5 +108,6 @@ Source: 5e_artisinal_monsters
 - **Opportune Bite:** The tiger makes a bite attack against a prone creature.
 
 
+</statblock>
 
 

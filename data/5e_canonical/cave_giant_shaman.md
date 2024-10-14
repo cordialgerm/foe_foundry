@@ -25,6 +25,7 @@ All these abilities and characteristics make the Cave Giant Shaman a multi-facet
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Giant Shaman
 
 *Huge* *Giant* *chaotic evil*
@@ -65,5 +66,6 @@ Cantrips (at will): acid splash, mage hand, mending, prestidigitation, shocking 
 - **Rock:** Ranged Weapon Attack: +13 to hit, range 60/240 ft., one creature. Hit: 30 (4d10 + 8) bludgeoning damage.
 
 
+</statblock>
 
 

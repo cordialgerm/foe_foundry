@@ -39,6 +39,7 @@ Lastly, the Alleybasher has a reaction:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre, Alleybasher
 
 *Large* *Giant* *chaotic evil*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Intimidating Rebuff:** When a creature the alleybasher can see within 30' of it targets it with an attack ogre can make a Str (Intimidation) check taking half a step forward snarling or otherwise spooking the attacker. If check is equal to or higher than attack roll attacker must reroll the attack using lower of the two results.
 
 
+</statblock>
 
 

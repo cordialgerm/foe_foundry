@@ -23,6 +23,7 @@ The Jinmenju also has access to legendary actions, allowing it to perform key ma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jinmenju
 
 *Huge* *Plant* *chaotic neutral*
@@ -61,5 +62,6 @@ The jinmenju can take 3 legendary actions, choosing from the options below. Only
 - **Root:** The jimenju makes one root attack.
 - **Revitalize Roots:** The jinmenju restores 10 (3d6) hp to each of its exposed roots.
 - **Mirthful Miasma (Costs 2 Actions):** The jinmenju emits a puff of purple gas around its roots. Each creature within 10 feet of an exposed root must succeed on a DC 16 Constitution saving throw or fall prone with laughter, becoming incapacitated and unable to stand up until the end of its next turn. A creature in an area of overlapping gas only makes the saving throw once. A creature with an Intelligence score of 4 or less isn't affected.
+</statblock>
 
 

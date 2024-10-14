@@ -21,6 +21,7 @@ During combat, the Arcanaphage can take advantage of multiattack to make two ten
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arcanaphage
 
 *Medium* *Monstrosity* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Voracious:** The arcanaphage's tentacles glow when a spell is cast within 30 feet of it, countering the spell. This reaction works like the counterspell spell, except the arcanaphage must always make a spellcasting ability check, no matter the spell level. Its ability check for this is +5. If it successfully counters the spell, the arcanaphage feeds.
 
 
+</statblock>
 
 

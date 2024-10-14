@@ -31,6 +31,7 @@ Overall, the Xenabsorber's combination of physical prowess, deceptive abilities,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Xenabsorber
 
 *Medium* *Aberration* *chaotic neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

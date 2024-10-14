@@ -25,6 +25,7 @@ Overall, the Boggard Bravo is a nimble and capable opponent, thriving in its nat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boggard Bravo
 
 *Medium* *Humanoid*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Tongue:** Melee Weapon Attack: +3 to hit, reach 15 ft., one creature. Hit: The target must make a DC 11 Strength saving throw. On a failure, the boggard pulls the target up to 10 feet, or knocks the target prone, or forces the target to drop one item it is holding (boggards choice).
 
 
+</statblock>
 
 

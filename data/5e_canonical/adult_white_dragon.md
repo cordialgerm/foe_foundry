@@ -39,6 +39,7 @@ In addition to its powerful presence and abilities, the Adult White Dragon can c
 
 Source: 5e_srd
 
+<statblock>
 # Adult White Dragon (Chromatic)
 
 *Huge dragon, chaotic evil*
@@ -91,7 +92,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6+6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6+6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -99,6 +101,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult White Dragon
 
 *Huge* *Dragon*
@@ -146,6 +149,7 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 15 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turn, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 19 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Raging Storm (1/Day:** For 1 minute, gusts of sleet emanate from the dragon in a 40-foot-radius sphere, spreading around corners. The area is lightly obscured and the ground is difficult terrain The first time a creature moves on its turn while in the area, it must succeed on a DC 15 Dexterity saving throw or fall prone (or fall if it is flying).
+</statblock>
 
 
 
@@ -154,6 +158,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult White Dragon
 
 *Huge dragon*
@@ -200,5 +205,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days.
+</statblock>
 
 

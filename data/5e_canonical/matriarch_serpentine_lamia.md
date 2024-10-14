@@ -26,6 +26,7 @@ In combat, the Matriarch can perform multiple actions. With her "Multiattack," s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Matriarch Serpentine Lamia
 
 *Large* *Monstrosity* *neutral evil*
@@ -63,5 +64,6 @@ At will: animal friendship (snakes only), disguise self (any humanoid form), sug
 - **Seduce:** One humanoid the matriarch serpentine lamia can see within 30 feet of her must succeed on a DC 15 Charisma saving throw or be magically charmed for 1 day. The charmed target obeys the matriarch's verbal commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect ends on it, the target is immune to the matriarch's Seduce for the next 24 hours. The matriarch can have only one target seduced at a time. If it seduces another, the effect on the previous target ends.
 
 
+</statblock>
 
 

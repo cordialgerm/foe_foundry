@@ -25,6 +25,7 @@ Overall, Azi Dahaka is a powerful foe that excels in both offensive and defensiv
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Azi Dahaka
 
 *Huge* *Dragon* *chaotic evil*
@@ -67,5 +68,6 @@ Azi Dahaka can take 3 legendary actions, choosing from the options below. Only o
 
 - **Control Weather:** Azi Dahaka can alter the weather in a 5-mile radius centered on itself. The effect is identical to the control weather spell, except the casting time and effects are immediate. Call Lightning (Cost 2 Actions). A bolt of lightning flashes down from the clouds to a point Azi Dahaka can see within 100 feet of it. Each creature within 5 feet of that point must make a DC 20 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one.
 - **Wing Attack (Costs 2 Actions):** Azi Dahaka beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 12 (2d6 + 5) bludgeoning damage and be knocked prone. Azi Dahaka can then fly up to half its flying speed.
+</statblock>
 
 

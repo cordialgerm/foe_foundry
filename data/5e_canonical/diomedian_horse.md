@@ -32,6 +32,7 @@ In combat, the combination of its high mobility, strength, and advantageous abil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Diomedian Horse
 
 *Large* *Beast* *unaligned*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +7 to hit, 5 ft., one creature,. 10 (2d4+5) slashing damage.
 
 
+</statblock>
 
 

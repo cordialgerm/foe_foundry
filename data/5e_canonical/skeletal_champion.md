@@ -21,6 +21,7 @@ The Skeletal Champion possesses a reaction called "Shielding Riposte." When a cr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skeletal Champion
 
 *Medium* *Undead*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Shielding Riposte:** When a creature within the skeletons reach misses with a melee attack against the skeleton or a creature within 5 feet, the skeleton makes a longsword attack against the attacker. The skeleton must be wielding a longsword to use this reaction.
 
 
+</statblock>
 
 

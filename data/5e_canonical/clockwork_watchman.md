@@ -19,6 +19,7 @@ As a bonus action, the Clockwork Watchman can utilize its Reel ability to pull a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Watchman
 
 *Medium* *Construct* *Unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Reel:** The clockwork watchman pulls a creature restrained by its net up to 15 feet straight toward it.
+</statblock>
 
 

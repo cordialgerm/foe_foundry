@@ -21,6 +21,7 @@ For its bonus action, the Quagga can utilize War Surge, which allows it to move 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quagga
 
 *Medium* *Monstrosity* *neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **War Surge:** When the quagga reduces a creature to 0 hp with melee attack on its turn the quagga can move up to half its speed and make a Twin Blade attack.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ The Light Dragon Wyrmling features two powerful breath weapons, both of which op
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Light Dragon Wyrmling
 
 *Medium* *Dragon* *neutral good*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapon (Recharge 5-6):** The dragon uses one of the following breath weapons:<br>Radiant Breath. The dragon exhales radiant energy in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 16 (3d10) radiant damage on a failed save, or half as much damage on a successful one.<br>Flaring Breath. The dragon emits a flash of dazzling light from its maw in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw or be blinded. Undead within the area of effect must also make a DC 12 Wisdom saving throw or be turned for 1 minute. Undead of CR 1/2 or lower who fail the saving throw are instantly destroyed.
 
 
+</statblock>
 
 

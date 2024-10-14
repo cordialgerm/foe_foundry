@@ -37,6 +37,7 @@ Overall, the Drider is a cunning adversary that skillfully uses its abilities an
 
 Source: 5e_srd
 
+<statblock>
 ## Drider
 
 *Large monstrosity, chaotic evil*
@@ -81,7 +82,8 @@ At will: *dancing lights*
 
 ***Longsword***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) slashing damage, or 8 (1d10+3) slashing damage if used with two hands.
 
-***Longbow***. *Ranged Weapon Attack:* +6 to hit, range 150/600 ft., one target. *Hit:* 7 (1d8+3) piercing damage plus 4 (1d8) poison damage.
+***Longbow***. *Ranged Weapon Attack:* +6 to hit, range 150/600 ft., one target. *Hit:* 7 (1d8+3) piercing damage plus 4 (1d8) poison damage.</statblock>
+
 
 
 
@@ -89,6 +91,7 @@ At will: *dancing lights*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drider
 
 *Large* *Monstrosity*
@@ -123,6 +126,7 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Melee Weapon Attack: +6 to hit, range 120/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) poison damage.
 
 
+</statblock>
 
 
 
@@ -131,6 +135,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drider
 
 *Large monstrosity*
@@ -166,5 +171,6 @@ Source: 5e_artisinal_monsters
 - **Skewer.** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) piercing damage plus 13 (3d8) poison damage.
 - **Web Shot.** Ranged Weapon Attack: +6 to hit, range 30/60 ft., one target. Hit: 14 (2d10 + 3) bludgeoning damage, and the target must succeed on a DC 15 STR save or be restrained by webbing. A creature, including the restrained target, can take its action to break the webbing and free the restrained target by succeeding on a DC 15 STR check.
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ During combat, the panther can also use its bonus action to engage in stealth wi
 
 Source: 5e_srd
 
+<statblock>
 ### Panther
 
 *Medium beast, unaligned*
@@ -63,7 +64,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Claw***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) slashing damage.
+***Claw***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) slashing damage.</statblock>
+
 
 
 
@@ -71,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Panther
 
 *Medium* *Beast*
@@ -103,6 +106,7 @@ Source: 5e_artisinal_monsters
 - **Opportune Bite:** The panther makes a bite attack against a prone creature.
 
 
+</statblock>
 
 
 
@@ -111,6 +115,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Panther
 
 *Medium beast*
@@ -144,5 +149,6 @@ Source: 5e_artisinal_monsters
 
 - **Stealthy Hunter.** The panther takes the Hide action.
 
+</statblock>
 
 

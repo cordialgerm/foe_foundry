@@ -21,6 +21,7 @@ Lastly, the 3rd-level spell "Hypnotic Pattern" creates a charming visual effect 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Orcish Wildling Minstrel
 
 *Medium* *Humanoid*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Many orc tribes use song to preserve a communal memory of history:** Minstrels are the keepers of the tribes wisdom and identity.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ For bonus actions, the Orc Warlord can use "Warrior’s Advance," potentially en
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Orc Warlord
 
 *Medium humanoid*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Warrior’s Advance.** As the orc.
 - **Warlord’s Rally (Recharge 4–6)** . The warlord yells a rallying cry to its allies. Each friendly creature within 30 feet of the warlord and that can hear the warlord has advantage on the next attack roll it makes before the start of the warlord’s next turn.
 
+</statblock>
 
 

@@ -36,6 +36,7 @@ Overall, the Giant Seahorse is well-suited for aquatic encounters where its abil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Seahorse
 
 *Large* *Beast*
@@ -63,6 +64,7 @@ Source: 5e_artisinal_monsters
 - **Ram:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4+1) bludgeoning damage. If the seahorse moves at least 20 feet straight towards the target before the attack  the attack deals an extra 5 (2d4) bludgeoning damage and the target makes a DC 11 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 
 
@@ -71,6 +73,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Seahorse, Giant
 
 *Large beast*
@@ -104,5 +107,6 @@ Source: 5e_artisinal_monsters
 
 - **Grasping Tail.** The seahorse grabs one Medium or smaller creature within 10 feet of it. The target must succeed on a DC 12 STR save or be grappled (escape DC 12). Until this grapple ends, the target is restrained, and the seahorse can’t use Grasping Tail on another creature.
 
+</statblock>
 
 

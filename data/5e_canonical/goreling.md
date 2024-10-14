@@ -19,6 +19,7 @@ In terms of actions, the Goreling can perform a Slam attack, which is a melee we
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goreling
 
 *Small* *Undead* *unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Multiplying:** When a goreling is hit but not reduced to 0 hp, it splits into two new gorelings. Each new goreling has 1 hp, doesn't have this reaction, and is one size smaller than the original goreling.
 
 
+</statblock>
 
 

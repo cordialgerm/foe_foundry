@@ -21,6 +21,7 @@ Overall, the Liminal Drake commands respect and fear on the battlefield, capable
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Liminal Drake
 
 *Large* *Dragon* *neutral evil*
@@ -60,5 +61,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Warp Space:** The liminal drake can fold in on itself to travel to a different plane. This works like the plane shift spell, except the drake can only affect itself, not other creatures, and it can’t use the effect to banish an unwilling creature to another plane.
 
 
+</statblock>
 
 

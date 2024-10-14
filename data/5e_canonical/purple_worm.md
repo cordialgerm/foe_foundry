@@ -37,6 +37,7 @@ Overall, the purple worm's combination of powerful melee attacks, significant re
 
 Source: 5e_srd
 
+<statblock>
 ## Purple Worm
 
 *Gargantuan monstrosity, unaligned*
@@ -69,7 +70,8 @@ Source: 5e_srd
 
 If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.
 
-***Tail Stinger***. *Melee Weapon Attack:* +14 to hit, reach 10 ft., one creature. *Hit:* 19 (3d6+9) piercing damage, and the target must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.
+***Tail Stinger***. *Melee Weapon Attack:* +14 to hit, reach 10 ft., one creature. *Hit:* 19 (3d6+9) piercing damage, and the target must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -77,6 +79,7 @@ If the worm takes 30 damage or more on a single turn from a creature inside it, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Purple Worm
 
 *Gargantuan* *Monstrosity*
@@ -112,6 +115,7 @@ Source: 5e_artisinal_monsters
 - **Fighting Retreat:** When a creature makes an opportunity attack on the worm, the worm attacks with either its bite or its tail stinger.
 
 
+</statblock>
 
 
 
@@ -120,6 +124,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Purple Worm
 
 *Gargantuan monstrosity*
@@ -155,5 +160,6 @@ Source: 5e_artisinal_monsters
 
 - **Rapid Digestion.** The purple worm’s digestive system absorbs some of the already digested material from creatures it has swallowed. If the purple worm has at least one swallowed creature inside it, the purple worm regains 9 (2d8) HP. This healing increases by 4 (1d8) for each creature currently inside the purple worm, to a maximum of 10d8.
 
+</statblock>
 
 

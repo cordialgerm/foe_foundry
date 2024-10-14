@@ -25,6 +25,7 @@ In summary, the Mycolid Commoner is a unique plant creature that, while not form
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mycolid Commoner
 
 *Small plant*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 
 - **Fetid Feast.** The mycolid draws sustenance from a Medium or larger pile of carrion or rotting vegetation within 5 feet of it. It regains 5 (2d4) HP. The mycolid can’t use Fetid Feast on a pile of carrion or vegetation if it or another mycolid has already used Fetid Feast on that pile.
 
+</statblock>
 
 

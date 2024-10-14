@@ -23,6 +23,7 @@ Overall, the Scorchrunner Jackal is a cunning and agile opponent that thrives in
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scorchrunner Jackal
 
 *Medium* *Monstrosity* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Daylight Skirmish:** While in sunlight the jackal takes the Dash or Dodge action.
 
 
+</statblock>
 
 

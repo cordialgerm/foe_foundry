@@ -23,6 +23,7 @@ As a bonus action, the ogre has the ability to Change Shape, allowing it to tran
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre, Rainforest
 
 *Large* *Giant* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Transforms into a Large boar or back into its true ogre form. Its stats are the same in each form. Any equipment it is wearing or carrying isn’t transformed. Reverts on death.
 
 
+</statblock>
 
 

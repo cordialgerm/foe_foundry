@@ -41,6 +41,7 @@ This combination of powerful attacks and controlling abilities makes the Suncatc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scarab, Suncatcher
 
 *Gargantuan* *Beast* *unaligned*
@@ -75,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Wing Beat (Recharge 5–6):** The suncatcher scarab rapidly beats its wings releasing sound or light in a 60' cone.Effect depends on if the elytra is closed or open:Closed Elytra: Creature takes 35 (10d6) thunder is pushed up to 15 ft. away from the scarab and is knocked prone (DC 16 Con half and isn’t pushed or knocked prone).Open Elytra: Creature takes 35 (10d6) radiant and blinded until end of its next turn (DC 16 Con half and isn’t blinded).
 
 
+</statblock>
 
 

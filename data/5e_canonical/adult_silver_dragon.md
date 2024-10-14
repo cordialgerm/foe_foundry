@@ -45,6 +45,7 @@ In the event of the dragon's death, regional effects will dissipate over the cou
 
 Source: 5e_srd
 
+<statblock>
 # Adult Silver Dragon (Metallic)
 
 *Huge dragon, lawful good*
@@ -103,7 +104,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 21 Dexterity saving throw or take 15 (2d6+8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 21 Dexterity saving throw or take 15 (2d6+8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -111,6 +113,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Silver Dragon
 
 *Huge* *Dragon*
@@ -162,6 +165,7 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 19 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 21 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Windstorm (Costs 2 Actions):** Pounding winds surround the dragon in a 20-foot radius. A creature in this area attempting to move closer to the dragon must spend 2 feet of movement for every 1 foot closer it moves, and ranged attacks against the dragon are made with disadvantage. A creature that starts its turn in the windstorm makes a DC 20 Constitution saving throw, taking 5 (1d10) cold damage on a failure. The windstorm lasts until the start of the dragons next turn.
+</statblock>
 
 
 
@@ -170,6 +174,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Silver Dragon
 
 *Huge dragon*
@@ -220,5 +225,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days.
+</statblock>
 
 

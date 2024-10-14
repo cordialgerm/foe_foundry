@@ -25,6 +25,7 @@ Overall, the Clockwork Myrmidon serves as a formidable foe in various combat sce
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Myrmidon
 
 *Large* *Construct* *Unaligned*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Grease Spray (4/Day):** The clockwork myrmidon’s chest fires a spray of alchemical grease on a point on the ground within 30 feet of it. The grease covers a 10-foot square centered on that point, and the area is difficult terrain. Each creature standing in the area must succeed on a DC 16 Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a DC 16 Dexterity saving throw or fall prone.
+</statblock>
 
 

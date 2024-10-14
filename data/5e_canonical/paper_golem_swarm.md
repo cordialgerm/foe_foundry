@@ -21,6 +21,7 @@ Overall, the Paper Golem Swarm is a strategic and thematic creature that uses it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Paper Golem Swarm
 
 *Medium* *Construct* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Whirlwind (Recharge 5-6):** The air is momentarily filled with paper golems. Each creature within 5 feet of the swarm must make a DC 13 Dexterity saving throw, taking 7 (2d6) slashing damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

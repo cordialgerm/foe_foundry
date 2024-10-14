@@ -33,6 +33,7 @@ Overall, the Hill Giant Chief is a powerful melee combatant capable of controlli
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hill Giant Chief
 
 *Huge* *Giant*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Stomp (1/Day):** The giant stamps its foot, causing the ground to tremble. Each creature within 60 feet makes a DC 15 Dexterity saving throw. On a failure, it falls prone.
 
 
+</statblock>
 
 

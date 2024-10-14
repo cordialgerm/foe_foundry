@@ -38,6 +38,7 @@ Overall, the Minotaur Champion is a highly aggressive melee combatant with stron
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Minotaur Champion
 
 *Huge* *Monstrosity*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Roar of Triumph:** If the minotaur reduced a living creature to 0 hit points since the end of its last turn, it roars and gains 35 (10d6) temporary hit points.
 
 
+</statblock>
 
 

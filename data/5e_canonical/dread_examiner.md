@@ -25,6 +25,7 @@ The Dread Examiner also has legendary actions that enhance its versatility in ba
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dread Examiner
 
 *Large* *Aberration* *neutral evil*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Teleport:** Magically teleports along with any equipment it is wearing or carrying up to 120' to an unoccupied spot it sees.
 - **Reform (2):** The dread examiner rearranges its disjointed parts and regains 36 (8d8) hp.
 - **Psychic Surge (3):** The dread examiner releases a wave of psychic energy. Each creature within 20' of it: 21 (6d6) psychic can’t use reactions and has disadvantage on attack rolls and ability checks until the end of its next turn. (DC 20 Wis half damage and ignores the other effects.)
+</statblock>
 
 

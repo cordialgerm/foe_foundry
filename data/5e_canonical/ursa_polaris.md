@@ -25,6 +25,7 @@ Overall, Ursa Polaris presents a blend of brute force, elemental damage, and con
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ursa Polaris
 
 *Large* *Monstrosity* *neutral evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Hypnotic Array (Recharge 5-6):** The ursa polaris sways its back, causing the ice formations on its shoulders to catch available light. Each creature within 30 feet of the ursa polaris that sees the light pattern must make a DC 15 Wisdom saving throw. On a failure, a creature takes 21 (6d6) radiant damage and is stunned for 1 minute. On a success, a creature takes half the damage and isn't stunned. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The effect also ends if the creature takes any damage or if another creature takes an action to shake it out of its stupor.
 
 
+</statblock>
 
 

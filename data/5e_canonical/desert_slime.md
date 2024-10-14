@@ -27,6 +27,7 @@ Overall, the Desert Slime presents unique challenges in combat, combining stealt
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Desert Slime
 
 *Large* *Ooze* *unaligned*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Surging Sands (Recharge 4–6):** Takes the Dash action.
 
 
+</statblock>
 
 

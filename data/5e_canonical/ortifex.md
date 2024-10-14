@@ -19,6 +19,7 @@ In terms of actions, the Ortifex can deliver a melee attack with its slam action
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ortifex
 
 *Medium* *Undead* *neutral evil*
@@ -54,5 +55,6 @@ Unless surprised, a creature can plug its ears to avoid the saving throw at the 
 - **Blood Siphon (Recharge 6):** The ortifex drains blood from nearby creatures. Each creature within 20 feet of the ortifex must make a DC 13 Constitution saving throw, taking 14 (4d6) necrotic damage on a failed save, or half as much damage on a successful one. The ortifex gains temporary hp equal to the single highest amount of necrotic damage dealt. If it gains temporary hp from this action while it still has temporary hp from a previous use of this action, the temporary hp add together. The ortifex’s temporary hp can’t exceed half its hp maximum. A creature that doesn’t have blood is immune to Blood Siphon.
 
 
+</statblock>
 
 

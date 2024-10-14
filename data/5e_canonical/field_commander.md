@@ -23,6 +23,7 @@ Lastly, the Field Commander can utilize its reaction, Bolster Soldier, to enhanc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: Field Commander
 
 *Medium* *Humanoid* *any alignment*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Bolster Soldier:** When a friendly creature the field commander can see is hit with weapon attack the commander calls out encouragement and creature gains 5 (1d10) temp hp.
 
 
+</statblock>
 
 

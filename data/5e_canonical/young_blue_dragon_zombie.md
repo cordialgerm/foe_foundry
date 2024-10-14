@@ -31,6 +31,7 @@ In addition to its melee attacks, the Young Blue Dragon Zombie can unleash a spe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Blue Dragon Zombie
 
 *Large* *Undead* *neutral evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Rotting Breath (Recharge 5-6):** The dragon zombie exhales rotting breath in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) necrotic damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hp by this damage dies, and it rises as a zombie and acts immediately after the dragon zombie in the initiative count. The new zombie is under the control of the creature controlling the dragon zombie.
 
 
+</statblock>
 
 

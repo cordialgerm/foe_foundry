@@ -40,6 +40,7 @@ Overall, the Haunted Giant stands as a robust and intimidating presence in any b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Haunted Giant
 
 *Huge* *Giant* *chaotic neutral*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +8 to hit, range 60/240 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage.
 
 
+</statblock>
 
 

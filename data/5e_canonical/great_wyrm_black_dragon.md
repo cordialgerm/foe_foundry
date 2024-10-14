@@ -25,6 +25,7 @@ Overall, the Great Wyrm Black Dragon is a master of both melee and magical comba
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Great Wyrm Black Dragon
 
 *Gargantuan* *Dragon*
@@ -75,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Darkness:** The dragon creates a 40-foot-radius sphere of magical darkness originating from a point it can see within 120 feet. Darkvision can't penetrate this darkness. The darkness lasts for 1 minute or until the dragon uses this action again.
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 19 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 22 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
+</statblock>
 
 

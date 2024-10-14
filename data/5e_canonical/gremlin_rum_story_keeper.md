@@ -27,6 +27,7 @@ Moreover, the Rum Story Keeper can cast spells as part of its abilities, using C
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gremlin, Rum Story Keeper
 
 *Tiny* *Fey* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 13) no material components: At will: prestidigitation3/day ea: charm person mirror image
 
 
+</statblock>
 
 

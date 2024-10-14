@@ -23,6 +23,7 @@ The "Sting" attack allows it to make a melee weapon attack that has a +5 to hit 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Khalkos Spawn
 
 *Tiny* *Aberration*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage plus 3 (1d6) poison damage.
 
 
+</statblock>
 
 

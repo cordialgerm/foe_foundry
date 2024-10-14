@@ -19,6 +19,7 @@ In terms of actions, the Void Knight can execute a multiattack, making either tw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Void Knight
 
 *Medium* *Construct* *lawful evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Pull of the Void (Recharge 5–6):** Sends Void tendrils at up to three creatures it can see within 60' of it that are not behind total cover. Each target must make DC 16 strength Saving throw or be pulled up to 30' toward the knight. Then each creature within 5 ft. of knight takes 36 (8d8) force.
 
 
+</statblock>
 
 

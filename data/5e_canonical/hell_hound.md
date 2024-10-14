@@ -33,6 +33,7 @@ The Hell Hound also has a Fire Breath ability that can be used after a recharge 
 
 Source: 5e_srd
 
+<statblock>
 ## Hell Hound
 
 *Medium fiend, lawful evil*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) piercing damage plus 7 (2d6) fire damage.
 
-***Fire Breath (Recharge 5-6)***. The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.
+***Fire Breath (Recharge 5-6)***. The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hell Hound
 
 *Medium* *Fiend*
@@ -104,6 +107,7 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 5-6):** The hound exhales fire in a 15-foot cone. Each creature in that area makes a DC 12 Dexterity saving throw  taking 21 (6d6) fire damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -112,6 +116,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hell Hound
 
 *Medium fiend*
@@ -142,5 +147,6 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) fire damage.
 - **Fire Breath (Recharge 5–6).** The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 DEX save, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

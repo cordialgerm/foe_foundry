@@ -23,6 +23,7 @@ Additionally, it has a reaction called Protective Bite, which allows it to respo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hound Guardian
 
 *Medium* *Construct*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Protective Bite:** When a creature within 5 feet hits the guardians owner with a melee attack, the guardian bites the attacker.
 
 
+</statblock>
 
 

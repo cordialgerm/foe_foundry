@@ -21,6 +21,7 @@ In combat, the Nodosaurus employs a tail attack. This melee weapon attack has a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nodosaurus
 
 *Large* *Beast* *unaligned*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

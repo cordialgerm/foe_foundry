@@ -19,6 +19,7 @@ For its actions, the Kobold Dragon Servitor can use a melee attack called Shiv, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold Dragon Servitor
 
 *Small* *Humanoid*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Sling:** Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

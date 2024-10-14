@@ -21,6 +21,7 @@ In terms of its actions during combat, the Cueyatl Warrior wields a battleaxe. F
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cueyatl Warrior
 
 *Small* *Humanoid* *lawful evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Battleaxe:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage plus 7 (2d6) poison damage, or 7 (1d10 + 2) slashing damage plus 7 (2d6) poison damage if used with two hands.
 
 
+</statblock>
 
 

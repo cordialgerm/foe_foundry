@@ -23,6 +23,7 @@ The Ghost Dragon also possesses the ability to shift between planes through Ethe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghost Dragon
 
 *Large* *Undead* *any alignment*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Horrifying Breath (Recharge 5-6):** The ghost dragon exhales a blast of icy terror in a 30-foot cone. Each living creature in that area must make a DC 16 Wisdom saving throw. On a failure, a creature takes 44 (8d10) psychic damage and is frightened for 1 minute. On a success, it takes half the damage and isn't frightened. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

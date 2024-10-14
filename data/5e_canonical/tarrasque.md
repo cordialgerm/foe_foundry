@@ -40,6 +40,7 @@ Finally, regional effects related to the Tarrasque's presence in its habitat can
 
 Source: 5e_srd
 
+<statblock>
 ## Tarrasque
 
 *Gargantuan monstrosity (titan), unaligned*
@@ -100,7 +101,8 @@ The tarrasque can take 3 legendary actions, choosing from the options below. Onl
 
 **Move**. The tarrasque moves up to half its speed.
 
-**Chomp (Costs 2 Actions)**. The tarrasque makes one bite attack or uses its Swallow.
+**Chomp (Costs 2 Actions)**. The tarrasque makes one bite attack or uses its Swallow.</statblock>
+
 
 
 
@@ -108,6 +110,7 @@ The tarrasque can take 3 legendary actions, choosing from the options below. Onl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tarrasque
 
 *Titanic* *Monstrosity*
@@ -161,6 +164,7 @@ Source: 5e_artisinal_monsters
 - **Elite Recovery (While Bloodied):** The tarrasque ends one negative effect currently affecting it. It can use this action as long as it has at least 1 hit point, even while unconscious or incapacitated.
 - **Chomp (Costs 2 Actions):** The tarrasque makes a bite attack or uses Swallow.
 - **Inescapable Earth (Costs 3 Actions):** Each flying creature or object within 300 feet falls and its flying speed is reduced to 0 until the start of the tarrasques next turn.
+</statblock>
 
 
 
@@ -169,6 +173,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tarrasque
 
 *Gargantuan monstrosity*
@@ -217,5 +222,6 @@ The tarrasque can take 3 legendary actions, choosing from the options below. Onl
 ### Regional Effects
 
 - **1d10** If the tarrasque dies, these effects fade in  days, except for Food Aplenty, which fades within 1 year.
+</statblock>
 
 

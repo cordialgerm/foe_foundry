@@ -36,6 +36,7 @@ Overall, the Grim Jester is a whimsical yet deadly adversary, capable of manipul
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grim Jester
 
 *Medium* *Undead* *Chaotic Evil*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Joker’s Shuffle (Recharge 6):** The grim jester exchanges locations with a Medium or smaller creature it can see within 60 feet of it. The jester and target each teleport to the other’s space, and each becomes covered in a magical illusion to look and sound like the other. A creature must take an action to visually inspect an illusion and succeed on a DC 19 Intelligence (Investigation) check to discern that the jester and target are disguised. The illusions last for 1 minute, until the jester dies, or until the jester dismisses them as a bonus action.
+</statblock>
 
 

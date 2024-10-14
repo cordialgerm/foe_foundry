@@ -27,6 +27,7 @@ As for reactions, the Naga can cast **Shield**, a first-level spell that grants 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Accursed Spirit Naga
 
 *Large* *Monstrosity*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Shield (1st-Level; V):** When the naga is hit by an attack or targeted by magic missile, it gains a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the beginning of its next turn.
 
 
+</statblock>
 
 

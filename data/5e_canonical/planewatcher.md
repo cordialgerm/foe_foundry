@@ -27,6 +27,7 @@ All these factors make the Planewatcher a standout celestial entity, adept in co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Planewatcher
 
 *Medium* *Celestial* *Lawful Neutral*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Reel:** The planewatcher pulls a creature grappled by it up to 25 feet straight toward it.
+</statblock>
 
 

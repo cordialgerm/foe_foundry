@@ -23,6 +23,7 @@ As a powerful area attack, the Salamander Noble possesses the Fire Breath abilit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Salamander Noble
 
 *Huge* *Elemental*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath:** The salamander exhales fire in a 30-foot cone. Each creature in the area makes a DC 13 Dexterity saving throw  taking 21 (6d6) fire damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

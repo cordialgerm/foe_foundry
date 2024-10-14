@@ -31,6 +31,7 @@ Lastly, the Shadow Antipaladin’s reaction, Parry, allows it to add 3 to its AC
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Antipaladin
 
 *Small* *Humanoid* *Chaotic Evil*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Parry:** The shadow antipaladin adds 3 to its AC against one melee attack that would hit it. To do so, the antipaladin must see the attacker and be wielding a melee weapon.
+</statblock>
 
 

@@ -25,6 +25,7 @@ Overall, the High Priest serves as a formidable entity in any encounter, providi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # High Priest
 
 *Medium* *Humanoid*
@@ -80,5 +81,6 @@ Source: 5e_artisinal_monsters
 - **Healing Word (1st-Level; V):** The priest or a living creature within 60 feet regains 6 (1d4 + 4) hit points. The priest can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 

@@ -41,6 +41,7 @@ The Sarsaok represents a well-rounded threat that can deal significant damage wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sarsaok
 
 *Huge* *Monstrosity* *unaligned*
@@ -77,5 +78,6 @@ Source: 5e_artisinal_monsters
 - **Immolating Purge (Recharge 5-6):** The sarsaok spews burning blood in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

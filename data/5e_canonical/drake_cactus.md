@@ -19,6 +19,7 @@ Overall, the Cactus Drake offers a unique combination of hit-and-run tactics, ar
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drake, Cactus
 
 *Medium* *Dragon* *neutral good*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Thorn Spray (Recharge 5–6):** Shakes its body spraying thorns around it. Each creature within 20' of it: 18 (4d8) piercing damage (DC 13 Dex half). A creature that fails by 5+ has its speed reduced by 10 ft. until it uses action to remove thorns. When drake uses this it loses Thorny Body trait until start of its next turn.
 
 
+</statblock>
 
 

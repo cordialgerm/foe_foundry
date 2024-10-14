@@ -21,6 +21,7 @@ The ambassador's Honeyed Words ability recharges after a long rest and showcases
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Fey Ambassador
 
 *Medium* *Humanoid* *lawful evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Withering Stare:** The shadow fey ambassador targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the ambassador's Withering Stare for the next 24 hours.
 
 
+</statblock>
 
 

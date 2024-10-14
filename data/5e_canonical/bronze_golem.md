@@ -29,6 +29,7 @@ One of its most dangerous abilities is the Brazen Bull. If the golem grapples a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bronze Golem
 
 *Large* *Construct* *unaligned*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Brazen Bull:** The golem makes a slam attack against a target it is grappling as it opens a plate in its chest and exposes its arcane boiler. If the attack hits, the target is forced into the golem's boiler, and the grapple ends. While inside the boiler, the target is blinded and restrained, it has total cover against attacks and other effects outside the boiler, and it takes 14 (4d6) fire damage at the start of each of its turns. To escape, it or another creature must succeed on a DC 13 Strength (Athletics) check to open the boiler, freeing the target, which falls prone in a space within 5 feet of the golem. A bronze golem can only have one creature in its boiler at a time.
 
 
+</statblock>
 
 

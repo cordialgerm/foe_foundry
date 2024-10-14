@@ -27,6 +27,7 @@ Lastly, the giant can also perform a Claw attack, which has a +10 to hit, a reac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thin Giant
 
 *Huge* *Giant* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +10 to hit, reach 20 ft., one target. Hit: 13 (2d6 + 6) slashing damage.
 
 
+</statblock>
 
 

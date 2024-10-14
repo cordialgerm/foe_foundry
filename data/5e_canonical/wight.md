@@ -47,6 +47,7 @@ As a bonus action, the Wight can activate Command Horde, allowing it to command 
 
 Source: 5e_srd
 
+<statblock>
 ## Wight
 
 *Medium undead, neutral evil*
@@ -87,7 +88,8 @@ A humanoid slain by this attack rises 24 hours later as a zombie under the wight
 
 ***Longsword***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d8+2) slashing damage, or 7 (1d10+2) slashing damage if used with two hands.
 
-***Longbow***. *Ranged Weapon Attack:* +4 to hit, range 150/600 ft., one target. *Hit:* 6 (1d8+2) piercing damage.
+***Longbow***. *Ranged Weapon Attack:* +4 to hit, range 150/600 ft., one target. *Hit:* 6 (1d8+2) piercing damage.</statblock>
+
 
 
 
@@ -95,6 +97,7 @@ A humanoid slain by this attack rises 24 hours later as a zombie under the wight
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wight
 
 *Medium* *Undead*
@@ -131,6 +134,7 @@ Source: 5e_artisinal_monsters
 - **Life Drain:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) necrotic damage, and the target makes a DC 13 Constitution saving throw. On a failure, the targets hit point maximum is reduced by an amount equal to the necrotic damage dealt. The reduction lasts until the target finishes a long rest. A humanoid or beast reduced to 0 hit points by this attack dies. Its corpse rises 24 hours later as a zombie under the wights control.
 
 
+</statblock>
 
 
 
@@ -139,6 +143,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wight
 
 *Medium undead*
@@ -180,5 +185,6 @@ Source: 5e_artisinal_monsters
 	- Overwhelm. Until the start of the wight’s next turn, each target has advantage on attack rolls against a creature on its turn if at least one other target is within 5 feet of the creature and the allied target isn’t incapacitated.
 	- Shamble. Each target uses its reaction to move up to its speed in a direction chosen by the wight. If this movement provokes an opportunity attack, that attack is made with disadvantage.
 
+</statblock>
 
 

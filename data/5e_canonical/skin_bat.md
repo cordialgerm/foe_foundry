@@ -23,6 +23,7 @@ Additionally, the Skin Bat can use its Attract Bats reaction once per day. If it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skin Bat
 
 *Small* *Undead* *Neutral Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Attract Bats (1/Day):** When the skin bat is reduced to below half its hp maximum while underground or outside at night, it releases a high-frequency cry similar to that of an injured bat, attracting other bats to it. On initiative count 20 of the next round, 1d6 bats arrive and aid the skin bat. These bats aren’t under the skin bat’s control, but they protect it to the best of their abilities, attacking those that harm the skin bat.
+</statblock>
 
 

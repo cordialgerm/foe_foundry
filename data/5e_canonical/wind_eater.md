@@ -33,6 +33,7 @@ Overall, the Wind Eater combines stealth, magical manipulation, and melee combat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wind Eater
 
 *Medium* *Undead* *lawful evil*
@@ -71,5 +72,6 @@ At will: silent image
 - **Claw:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.
 
 
+</statblock>
 
 

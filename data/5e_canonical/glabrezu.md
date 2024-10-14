@@ -34,6 +34,7 @@ As a bonus action, the Glabrezu can utilize Manipulating Whispers to influence a
 
 Source: 5e_srd
 
+<statblock>
 ### Glabrezu (Demon)
 
 *Large fiend (demon), chaotic evil*
@@ -76,7 +77,8 @@ At will: *darkness*, *detect magic*, *dispel magic*
 
 ***Pincer***. *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit:* 16 (2d10+5) bludgeoning damage. If the target is a Medium or smaller creature, it is grappled (escape DC 15). The glabrezu has two pincers, each of which can grapple only one target.
 
-***Fist***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) bludgeoning damage.
+***Fist***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) bludgeoning damage.</statblock>
+
 
 
 
@@ -84,6 +86,7 @@ At will: *darkness*, *detect magic*, *dispel magic*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Glabrezu
 
 *Large* *Fiend*
@@ -125,6 +128,7 @@ Source: 5e_artisinal_monsters
 - **Confusion (1/Day):** The glabrezu targets up to three creatures within 90 feet. Each target makes a DC 16 Wisdom saving throw, becoming confused for 1 minute on a failure. A target repeats this saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 
 
@@ -133,6 +137,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Glabrezu
 
 *Large fiend (demon)*
@@ -172,5 +177,6 @@ Source: 5e_artisinal_monsters
 	- Confirmation of Wealth. The target is briefly overcome with the desire to confirm the amount and status of its valuables. It uses either an action or bonus action on its next turn (the glabrezu’s choice) to count and take stock of its valuables.
 	- Wrathful Strike. Anger temporarily fills the target, and it immediately lashes out at those nearby. The target uses its reaction to make one melee weapon attack against a creature of the glabrezu’s choice within 5 feet of the target.
 
+</statblock>
 
 

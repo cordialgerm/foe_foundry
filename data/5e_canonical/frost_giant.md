@@ -39,6 +39,7 @@ Overall, the Frost Giant is a powerful adversary capable of dealing substantial 
 
 Source: 5e_srd
 
+<statblock>
 ### Frost Giant
 
 *Huge giant, neutral evil*
@@ -71,7 +72,8 @@ Source: 5e_srd
 
 ***Greataxe***. *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit:* 25 (3d12+6) slashing damage.
 
-***Rock***. *Ranged Weapon Attack:* +9 to hit, range 60/240 ft., one target. *Hit:* 28 (4d10+6) bludgeoning damage.
+***Rock***. *Ranged Weapon Attack:* +9 to hit, range 60/240 ft., one target. *Hit:* 28 (4d10+6) bludgeoning damage.</statblock>
+
 
 
 
@@ -79,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frost Giant
 
 *Huge* *Giant*
@@ -115,6 +118,7 @@ Source: 5e_artisinal_monsters
 - **Stomp (1/Day):** Melee Weapon Attack: +10 to hit, reach 10 ft., one prone target. Hit: 13 (3d4 + 6) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -123,6 +127,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frost Giant
 
 *Huge giant*
@@ -159,5 +164,6 @@ Source: 5e_artisinal_monsters
 
 - **Wintry Blast.** A blast of wintry air extends in a 30-foot line that is 5 feet wide from the frost giant’s outstretched hand. Each creature in the line must succeed on a DC 16 CON save or its speed is halved until the end of its next turn. A creature that fails the save by 5 or more is petrified in ice for 1 hour or until a creature spends 1 minute warming the petrified creature.
 
+</statblock>
 
 

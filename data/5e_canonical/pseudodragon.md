@@ -33,6 +33,7 @@ Overall, the Pseudodragon is a small but capable creature, offering intriguing o
 
 Source: 5e_srd
 
+<statblock>
 ## Pseudodragon
 
 *Tiny dragon, neutral good*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) piercing damage.
 
-***Sting***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 4 (1d4+2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. If the saving throw fails by 5 or more, the target falls unconscious for the same duration, or until it takes damage or another creature uses an action to shake it awake.
+***Sting***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 4 (1d4+2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. If the saving throw fails by 5 or more, the target falls unconscious for the same duration, or until it takes damage or another creature uses an action to shake it awake.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pseudodragon
 
 *Tiny* *Dragon*
@@ -102,6 +105,7 @@ Source: 5e_artisinal_monsters
 - **Telepathic Static (3/Day):** The pseudodragon targets one creature it can see within 10 feet  forcing it to make a DC 11 Charisma saving throw. On a failure  its stunned until the end of its next turn as it suffers a barrage of telepathic imagery.
 
 
+</statblock>
 
 
 
@@ -110,6 +114,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pseudodragon
 
 *Tiny dragon*
@@ -141,5 +146,6 @@ Source: 5e_artisinal_monsters
 - **Sting.** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 2 (1d4) poison damage, and the target must succeed on a DC 11 CON save or be poisoned for 1 hour. If the creature fails the save by 5 or more, it falls unconscious while poisoned in this way, or until it takes damage or another creature uses an action to shake it awake.
 - **Puff of Smoke (1/Day).** The pseudodragon exhales a cloud of smoke in a 10-foot-radius sphere centered on itself. The sphere spreads around corners, and its area is heavily obscured. It lasts for 1 minute or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ In terms of actions, the Necrotech Thunderer can perform a "Multiattack," allowi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Necrotech Thunderer
 
 *Huge* *Undead* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Concentrated Shot (Recharge 5–6):** Picks a point it can see within 120' of it. Each creature within 20' of that point must make a DC 15 Con save. On a failure a creature takes 35 (10d6) necrotic and suffers one level of exhaustion. On a success a creature takes half the damage and doesn’t suffer a level of exhaustion.
 
 
+</statblock>
 
 

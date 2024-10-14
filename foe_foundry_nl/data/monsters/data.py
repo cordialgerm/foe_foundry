@@ -76,5 +76,8 @@ class CanonicalMonster:
                 f.write("\n\n")
                 f.write("---\n\n")
                 f.write(f"Source: {info.source}\n\n")
+
+                f.write("<statblock>\n")
                 f.write(info.text)
+                f.write("</statblock>\n")
                 f.write("\n\n")

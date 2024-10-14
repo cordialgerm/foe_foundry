@@ -25,6 +25,7 @@ Finally, it can utilize the Protective Interference reaction, which allows it to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Guardian
 
 *Large* *Humanoid* *Neutral Evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Protective Interference:** When a friendly creature the shadow fey guardian can see within 5 feet of it is the target of an attack, the guardian can impose disadvantage on the attack roll. To do so, the guardian must see the attacker and be wielding a melee weapon.
+</statblock>
 
 

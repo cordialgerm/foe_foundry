@@ -21,6 +21,7 @@ Overall, the Razorback Crab presents a range of options for attack and defense, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crab, Razorback
 
 *Medium* *Beast* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Shell Bash:** Melee Weapon Attack: +5 to hit, 5 ft., one target, 5 (1d4+3) bludgeoning damage + 3 (1d6) slashing damage.
 
 
+</statblock>
 
 

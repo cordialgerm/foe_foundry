@@ -21,6 +21,7 @@ The Spider Thief also has a unique bonus action called Wire Jump. This action al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spider Thief
 
 *Small* *Construct* *Unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Wire Jump:** The spider thief throws a hooked wire at a point on a surface, such as the ground or wall, it can see within 30 feet of it, attaching one end of the wire to that point. It then reels in the wire, pulling itself to an unoccupied space within 5 feet of that point. It can bring along objects and willing creatures as long as their total weight doesn’t exceed 100 pounds. When the spider moves in this way, opportunity attacks against it have disadvantage.
+</statblock>
 
 

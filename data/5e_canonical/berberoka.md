@@ -25,6 +25,7 @@ As a bonus action, the Saturated Expansion ability allows the Berberoka to absor
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Berberoka
 
 *Large* *Giant* *neutral*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Saturated Expansion:** While in contact with body of water it absorbs water that is a cube up to 10 ft. on a side and becomes saturated as water fills its body. While saturated increases in size along with anything it is wearing or carrying becoming Huge and has advantage on Str checks and Str saves. If it lacks room to become Huge it attains max size possible in space available. Ground exposed by the absorbed water becomes difficult terrain.
 
 
+</statblock>
 
 

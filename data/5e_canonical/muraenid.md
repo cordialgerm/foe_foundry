@@ -23,6 +23,7 @@ Moreover, the Muraenid has the powerful ability Lord of the Fishes, usable once 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Muraenid
 
 *Large* *Monstrosity* *neutral evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Lord of the Fishes (1/Day):** One Beast with swimming speed muraenid can see within 30' of it: DC 12 Wis save or be magically charmed by it for 1 day or until it dies or is more than 1 mile from target. Charmed target obeys muraenid’s verbal or telepathic commands can’t take reactions and can telepathically communicate with muraenid over any distance provided they are on same plane of existence. If target suffers any harm can re-save success ends effect on itself.
 
 
+</statblock>
 
 

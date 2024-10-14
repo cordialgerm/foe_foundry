@@ -45,6 +45,7 @@ Overall, the Spy is a versatile combatant effective in deceptive tactics and ste
 
 Source: 5e_srd
 
+<statblock>
 ### Spy
 
 *Medium humanoid (any race), any alignment*
@@ -79,7 +80,8 @@ Source: 5e_srd
 
 ***Hand Crossbow***. *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one target. *Hit:* 5 (1d6 + 2) piercing damage.
 
-Rulers, nobles, merchants, guildmasters, and other wealthy individuals use **spies** to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loyal spies would rather die than divulge information that could compromise them or their employers.
+Rulers, nobles, merchants, guildmasters, and other wealthy individuals use **spies** to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loyal spies would rather die than divulge information that could compromise them or their employers.</statblock>
+
 
 
 
@@ -87,6 +89,7 @@ Rulers, nobles, merchants, guildmasters, and other wealthy individuals use **spi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spy
 
 *Medium* *Humanoid*
@@ -121,6 +124,7 @@ Source: 5e_artisinal_monsters
 - **Rapid Attack:** The cutthroat attacks with their shortsword.
 
 
+</statblock>
 
 
 
@@ -129,6 +133,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spy
 
 *Medium humanoid (any lineage)*
@@ -165,5 +170,6 @@ Source: 5e_artisinal_monsters
 - **Cunning Action.** The spy takes the Dash, Disengage, or Hide action.
 - **Feint (Recharge 4–6).** The spy makes a feint at one creature within 5 feet of it, pretending to go in for an attack in one direction only to change it up at the last moment. The target must succeed on a DC 13 WIS save or the spy has advantage on the next attack roll it makes against the target.
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ As a bonus action, the Horakh can execute "Shadow Stealth," allowing it to hide 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horakh
 
 *Medium* *Monstrosity* *Neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Stealth:** While in dim light or darkness, the horakh takes the Hide action.
+</statblock>
 
 

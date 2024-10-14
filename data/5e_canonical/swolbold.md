@@ -21,6 +21,7 @@ In terms of actions, the Swolbold can perform a Slam attack, which involves a +6
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swolbold
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Crush:** One creature grappled by the swolbold must make a DC 14 Strength saving throw, taking 21 (5d6 + 4) bludgeoning damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

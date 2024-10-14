@@ -19,6 +19,7 @@ Regarding its actions, the Ice Urchin can make a melee attack with its "Ice Spin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Urchin
 
 *Large* *Monstrosity* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Venomous Spine:** Ranged Weapon Attack: +3 to hit range 20/60' one target 3 (1d4+1) piercing damage + 2 (1d4) cold and 7 (2d6) poison.
 
 
+</statblock>
 
 

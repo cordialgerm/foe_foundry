@@ -21,6 +21,7 @@ In terms of its actions, the Külmking can perform a "Multiattack," making two c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Külmking
 
 *Large* *Undead* *chaotic evil*
@@ -60,5 +61,6 @@ On a success, a creature is immune to the külmking's Corruption for the next 24
 - **Hooves:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

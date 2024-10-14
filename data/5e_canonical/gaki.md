@@ -19,6 +19,7 @@ Overall, the Gaki presents a multifaceted challenge, combining strong offensive 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gaki
 
 *Medium* *Undead* *chaotic evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Spit Acid:** Ranged Spell Attack: +6 to hit, range 30 ft., one target. Hit: 21 (6d6) acid damage.
 
 
+</statblock>
 
 

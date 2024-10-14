@@ -19,6 +19,7 @@ In combat, the Flame Eater Swarm utilizes a "Multiattack" action to make two bit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flame Eater Swarm
 
 *Medium* *Beast* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 0 ft., one creature in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hp or fewer.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ Finally, the Living Colossus has a reaction called Bolstering Spirit. When a nea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Living Colossus
 
 *Gargantuan construct*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Reactions** 
 - **Bolstering Spirit.** When a friendly creature the living colossus can see within 60 feet of it, other than itself, takes damage, the living colossus can share some of the life force of the spirit animating it with that friendly creature. The target gains 14 (4d6) temporary HP for 1 minute. If the target would take enough damage to reduce it to 0 HP, it instead regains 14 (4d8) HP.
 
+</statblock>
 
 

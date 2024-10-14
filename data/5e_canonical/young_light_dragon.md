@@ -19,6 +19,7 @@ In terms of actions, the Young Light Dragon can perform a Bite attack, which is 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Light Dragon
 
 *Large* *Dragon* *neutral good*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapon (Recharge 5-6):** The dragon uses one of the following breath weapons:<br>Radiant Breath. The dragon exhales radiant energy in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 44 (8d10) radiant damage on a failed save, or half as much damage on a successful one.<br>Flaring Breath. The dragon emits a flash of dazzling light from its maw in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw or be blinded. Undead within the area of effect must also make a DC 15 Wisdom saving throw or be turned for 1 minute. Undead of CR 1 or lower who fail the saving throw are instantly destroyed.
 
 
+</statblock>
 
 

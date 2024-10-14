@@ -42,6 +42,7 @@ Overall, the Giant Hyena is a vicious creature that thrives in the chaos of batt
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Hyena
 
 *Large beast, unaligned*
@@ -68,7 +69,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage.</statblock>
+
 
 
 
@@ -76,6 +78,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Hyena
 
 *Large* *Beast*
@@ -99,6 +102,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6+2) piercing damage. If this damage reduces the target to 0 hit points  the hyena can use its bonus action to move half its Speed and make a second bite attack.
 
 
+</statblock>
 
 
 
@@ -107,6 +111,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hyena, Giant
 
 *Large beast*
@@ -142,5 +147,6 @@ Source: 5e_artisinal_monsters
 
 - **Rampage.** When the hyena reduces a creature to 0 HP, it can move up to half its speed and make one Bite attack. If it does, attack rolls against it have advantage until the start of its next turn.
 
+</statblock>
 
 

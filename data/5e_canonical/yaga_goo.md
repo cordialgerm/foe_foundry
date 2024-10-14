@@ -25,6 +25,7 @@ Overall, the Yaga Goo is a cunning and sinister foe, adept at using its unique a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yaga Goo
 
 *Small* *Ooze* *neutral evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Puddle Splash:** When a creature the Yaga goo can see targets it with a melee attack while within 5 feet of the goo, the goo can teleport to a puddle created by its Foul Transit, if that puddle's space is unoccupied, negating the damage from the attack. If it does, the attacker must succeed on a DC 16 Constitution saving throw or take 10 (3d6) necrotic damage and become poisoned until the end of its next turn.
 
 
+</statblock>
 
 

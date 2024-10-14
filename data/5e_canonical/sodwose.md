@@ -25,6 +25,7 @@ For bonus actions, the Sodwose has the "Grass Step" ability, allowing it to tele
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sodwose
 
 *Medium* *Plant* *neutral evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Set Snare:** Creates a snare in a square area it can see within 30' of it that is 5 ft. on a side and 50%+ grass. 1st creature to moves into that space within next min: DC 15 Str save or be restrained by grasses. A creature including restrained creature can use action to free restrained creature via DC 15 Str check. It can have at most 3 snares set at a time. If it sets a 4th oldest ceases to function.
 
 
+</statblock>
 
 

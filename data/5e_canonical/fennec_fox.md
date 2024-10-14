@@ -23,6 +23,7 @@ In combat, the Fennec Fox can use its Bite attack, which is a melee weapon attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fennec Fox
 
 *Tiny* *Beast* *unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.
 
 
+</statblock>
 
 

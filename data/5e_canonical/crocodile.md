@@ -31,6 +31,7 @@ As a bonus action, the crocodile can perform a Death Roll against a creature it 
 
 Source: 5e_srd
 
+<statblock>
 ### Crocodile
 
 *Large beast, unaligned*
@@ -57,7 +58,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 7 (1d10+2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.
+***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 7 (1d10+2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.</statblock>
+
 
 
 
@@ -65,6 +67,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crocodile
 
 *Large* *Beast*
@@ -92,6 +95,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10+2) piercing damage and the target is grappled (escape DC 12). Until this grapple ends  the target is restrained and the crocodile can't bite a different target.
 
 
+</statblock>
 
 
 
@@ -100,6 +104,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crocodile
 
 *Large beast*
@@ -131,5 +136,6 @@ Source: 5e_artisinal_monsters
 
 - **Death Roll.** One creature grappled by the crocodile must make a DC 12 STR save, taking 5 (2d4) slashing damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

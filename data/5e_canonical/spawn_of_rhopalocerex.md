@@ -23,6 +23,7 @@ As a unique action, the Spawn has the Enchanting Display, which can be used afte
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spawn of Rhopalocerex
 
 *Large* *Fiend* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Enchanting Display (Recharge 5-6):** The spawn of Rhopalocerex flutters its wings, and its large eyes briefly shine. Each creature within 30 feet of the spawn and that can see it must make a DC 15 Charisma saving throw. On a failure, a creature is charmed for 1 minute. On a success, a creature takes 14 (4d6) psychic damage.
 
 
+</statblock>
 
 

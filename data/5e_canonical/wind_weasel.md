@@ -19,6 +19,7 @@ In combat, the Wind Weasel can execute a Multiattack, making one bite attack and
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wind Weasel
 
 *Medium* *Fey* *chaotic neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Whirling Leaves (Whirlwind Form Only):** Each creature in the wind weasel's space must make a DC 13 Dexterity saving throw, taking 21 (6d6) slashing damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

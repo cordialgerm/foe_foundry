@@ -21,6 +21,7 @@ Overall, the Polar Bear excels as a physical combatant and hunter, utilizing its
 
 Source: 5e_srd
 
+<statblock>
 ### Polar Bear
 
 *Large beast, unaligned*
@@ -51,7 +52,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 9 (1d8+5) piercing damage.
 
-***Claws.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 12 (2d6+5) slashing damage.
+***Claws.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 12 (2d6+5) slashing damage.</statblock>
+
 
 
 
@@ -59,6 +61,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Polar Bear
 
 *Large* *Beast*
@@ -88,5 +91,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d4+5) slashing damage. If the target is a Medium or smaller creature  it is grappled (escape DC 15). Until this grapple ends  the bear can't attack a different target with its claws.
 
 
+</statblock>
 
 

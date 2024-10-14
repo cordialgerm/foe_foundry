@@ -21,6 +21,7 @@ Additionally, the Moon Weaver has a bonus action called Emboldening Song, which 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moon Weaver
 
 *Small* *Beast* *neutral*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Emboldening Song (2/Day):** Delivers a burst of beautiful song that motivates and emboldens one friendly creature the moon weaver can see within 60' of it. If the target can hear the song it gains one Embolden die a d6. Once within the next 10 min the target can roll the die and add the number rolled to one ability check attack roll or save it makes.
 
 
+</statblock>
 
 

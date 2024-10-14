@@ -21,6 +21,7 @@ In terms of actions, the Witchlight has a "Light Blast" attack that can be execu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Witchlight
 
 *Tiny* *Construct* *Any Alignment*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 
 - **Light Blast:** Melee or Ranged Spell Attack: +4 to hit, range 30 ft., one target. Hit: 5 (1d6 + 2) radiant damage.
 - **Flash (3/Day):** The witchlight emits a bright burst of light. Each creature within 20 feet of the witchlight must succeed on a DC 12 Dexterity saving throw or be blinded for 1 minute. A creature can make a DC 12 Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

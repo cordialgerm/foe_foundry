@@ -21,6 +21,7 @@ For its actions, the Crocotta can make a Bite or Claw attack. The Bite attack ha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crocotta
 
 *Medium* *Monstrosity* *neutral evil*
@@ -57,5 +58,6 @@ Canines are immune to the crocotta’s Paralyzing Gaze, and canine-like humanoid
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.
 
 
+</statblock>
 
 

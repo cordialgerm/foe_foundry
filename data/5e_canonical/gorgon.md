@@ -51,6 +51,7 @@ Overall, the gorgon is a tough adversary that combines brute strength with a pot
 
 Source: 5e_srd
 
+<statblock>
 ## Gorgon
 
 *Large monstrosity, unaligned*
@@ -83,7 +84,8 @@ Source: 5e_srd
 
 ***Hooves***. *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 16 (2d10+5) bludgeoning damage.
 
-***Petrifying Breath (Recharge 5-6)***. The gorgon exhales petrifying gas in a 30-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw. On a failed save, a target begins to turn to stone and is restrained. The restrained target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is petrified until freed by the *greater restoration* spell or other magic.
+***Petrifying Breath (Recharge 5-6)***. The gorgon exhales petrifying gas in a 30-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw. On a failed save, a target begins to turn to stone and is restrained. The restrained target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is petrified until freed by the *greater restoration* spell or other magic.</statblock>
+
 
 
 
@@ -91,6 +93,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gorgon
 
 *Large* *Monstrosity*
@@ -121,6 +124,7 @@ Source: 5e_artisinal_monsters
 - **Trample Underfoot:** The gorgon attacks a prone creature with its hooves.
 
 
+</statblock>
 
 
 
@@ -129,6 +133,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gorgon
 
 *Large monstrosity*
@@ -164,5 +169,6 @@ Source: 5e_artisinal_monsters
 
 - **Poisonous Retort.** When the gorgon is hit by an attack from a creature it can see within 10 feet of it, the gorgon can snort angrily, releasing a puff of poisonous gas at the creature. The attacker must succeed on a DC 16 CON save or be poisoned until the end of its next turn.
 
+</statblock>
 
 

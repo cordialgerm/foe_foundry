@@ -28,6 +28,7 @@ The Draft Horse can perform a singular action in combat:
 
 Source: 5e_srd
 
+<statblock>
 ### Draft Horse
 
 *Large beast, unaligned*
@@ -50,7 +51,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (2d4+4) bludgeoning damage.
+***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (2d4+4) bludgeoning damage.</statblock>
+
 
 
 
@@ -58,6 +60,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Draft Horse
 
 *Large* *Beast*
@@ -81,5 +84,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.
 
 
+</statblock>
 
 

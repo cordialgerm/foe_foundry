@@ -23,6 +23,7 @@ When reacting to threats, the Warchief can utilize the Mounted Parry reaction. T
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cueyatl Warchief
 
 *Small* *Humanoid* *lawful evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Mounted Parry:** Adds 3 to its AC or its mount’s AC vs. one melee attack that would hit it or its mount. To do so warchief must see attacker and be wielding a melee weapon.
 
 
+</statblock>
 
 

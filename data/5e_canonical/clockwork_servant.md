@@ -21,6 +21,7 @@ For its actions, the Clockwork Servant has a melee weapon attack called "Slam" t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Servant
 
 *Medium* *Construct* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

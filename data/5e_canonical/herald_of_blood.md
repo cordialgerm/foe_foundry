@@ -31,6 +31,7 @@ As a bonus action, the Herald can use Grant Blood Rage to unleash chaos upon a t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Herald of Blood
 
 *Huge* *Fiend* *Neutral Evil*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Grant Blood Rage:** The herald of blood infuses reckless rage in one creature it can see within 60 feet of it that isn’t a Construct or Undead. The target must succeed on a DC 17 Constitution saving throw or be enraged for a number of rounds equal to the target’s Constitution modifier. While enraged, the target has advantage on all melee attack rolls, and attack rolls against it have advantage. When the rage ends, the target takes 13 (3d8) necrotic damage and suffers one level of exhaustion. A creature with any levels of exhaustion automatically succeeds on this saving throw.
+</statblock>
 
 

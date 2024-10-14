@@ -34,6 +34,7 @@ The Planetar can also cast spells without needing material components, using its
 
 Source: 5e_srd
 
+<statblock>
 ### Planetar (Angel)
 
 *Large celestial, lawful good*
@@ -82,7 +83,8 @@ At will: *detect evil and good*, *invisibility* (self only)
 
 ***Greatsword***. *Melee Weapon Attack:* +12 to hit, reach 5 ft., one target. *Hit:* 21 (4d6+7) slashing damage plus 22 (5d8) radiant damage.
 
-***Healing Touch (4/Day)***. The planetar touches another creature. The target magically regains 30 (6d8+3) hit points and is freed from any curse, disease, poison, blindness, or deafness.
+***Healing Touch (4/Day)***. The planetar touches another creature. The target magically regains 30 (6d8+3) hit points and is freed from any curse, disease, poison, blindness, or deafness.</statblock>
+
 
 
 
@@ -90,6 +92,7 @@ At will: *detect evil and good*, *invisibility* (self only)
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Planetar
 
 *Large* *Celestial*
@@ -133,6 +136,7 @@ Source: 5e_artisinal_monsters
 - **Protective Parry:** When a creature within 5 feet would be hit with a melee attack, the planetar applies disadvantage to the attack roll.
 
 
+</statblock>
 
 
 
@@ -141,6 +145,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Planetar
 
 *Large celestial (angel)*
@@ -181,5 +186,6 @@ Source: 5e_artisinal_monsters
 	- At will: command, invisibility (self only)
 	- 3/day each: daylight, raise dead (as an action)
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ As a reaction, the Merclops employs "Big Windup," which allows it to prepare a p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Merclops
 
 *Huge* *Giant*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Big Windup:** When a creature hits the merclops with a melee attack, the merclops readies a powerful strike against its attacker. The merclops has advantage on the next club attack it makes against the attacker before the end of its next turn.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ These combat options highlight the Harefolk's ability to engage in various ways,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Harefolk
 
 *Small* *Humanoid* *chaotic good*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Sling:** Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

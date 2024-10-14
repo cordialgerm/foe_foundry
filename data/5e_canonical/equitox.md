@@ -27,6 +27,7 @@ In terms of legendary actions, the Equitox can teleport up to 60 feet to an unoc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Equitox
 
 *Large* *Fiend* *chaotic evil*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Teleport:** With items it has up to 60' to unoccupied space it can see.
 - **Withering Gaze (2):** Locks eyes with one creature within 60' that can see it. Target: DC 18 Wis or stunned by thirst until end of its next turn.
 - **Gore (2):** Makes one Gore attack.
+</statblock>
 
 

@@ -23,6 +23,7 @@ As a bonus action, the spider can use Swingline to throw a webbing to a visible 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Red-Banded Line Spider
 
 *Tiny* *Beast* *Unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Swingline:** The spider throws a length of webbing at a point on a surface, such as the ground or wall, it can see within 30 feet of it, attaching one end of the webbing to that point. It then reels in the webbing, pulling itself to an unoccupied space within 5 feet of that point. When the spider moves in this way, opportunity attacks against it have disadvantage. If the spider pulled itself at least 15 feet straight toward a creature, it has advantage on the next Bite attack it makes against that creature before the start of its next turn.
+</statblock>
 
 

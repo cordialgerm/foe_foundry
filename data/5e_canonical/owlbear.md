@@ -38,6 +38,7 @@ The Owlbear can also use a bonus action to perform a Rend on a creature it is gr
 
 Source: 5e_srd
 
+<statblock>
 ## Owlbear
 
 *Large monstrosity, unaligned*
@@ -68,7 +69,8 @@ Source: 5e_srd
 
 ***Beak***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one creature. *Hit:* 10 (1d10+5) piercing damage.
 
-***Claws.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d8+5) slashing damage.
+***Claws.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d8+5) slashing damage.</statblock>
+
 
 
 
@@ -76,6 +78,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Owlbear
 
 *Large* *Monstrosity*
@@ -105,6 +108,7 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
 
 
+</statblock>
 
 
 
@@ -113,6 +117,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Owlbear
 
 *Large monstrosity (animal)*
@@ -149,5 +154,6 @@ Source: 5e_artisinal_monsters
 
 - **Rend.** The owlbear violently wrenches a Medium or smaller creature it is currently grappling. The target must make a DC 15 STR save, taking 9 (2d8) slashing damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

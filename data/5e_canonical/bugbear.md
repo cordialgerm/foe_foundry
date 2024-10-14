@@ -52,6 +52,7 @@ Overall, the Bugbear combines brute strength with stealth, making it a dangerous
 
 Source: 5e_srd
 
+<statblock>
 ## Bugbear
 
 *Medium humanoid (goblinoid), chaotic evil*
@@ -82,7 +83,8 @@ Source: 5e_srd
 
 ***Morningstar***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 11 (2d8+2) piercing damage.
 
-***Javelin***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 9 (2d6+2) piercing damage in melee or 5 (1d6+2) piercing damage at range.
+***Javelin***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 9 (2d6+2) piercing damage in melee or 5 (1d6+2) piercing damage at range.</statblock>
+
 
 
 
@@ -90,6 +92,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bugbear
 
 *Medium* *Humanoid*
@@ -116,6 +119,7 @@ Source: 5e_artisinal_monsters
 - **Stealthy Sneak:** The bugbear moves up to half its Speed without provoking opportunity attacks. It can then attempt to hide.
 
 
+</statblock>
 
 
 
@@ -124,6 +128,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bugbear
 
 *Medium humanoid*
@@ -152,5 +157,6 @@ Source: 5e_artisinal_monsters
 - **Spiked Club.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage. A surprised target takes an extra 4 (1d8) piercing damage and must succeed on a DC 13 CON save or be stunned until the end of its next turn.
 - **Javelin.** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 10 (2d6 + 3) piercing damage in melee or 5 (1d6 + 2) piercing damage at range.
 
+</statblock>
 
 

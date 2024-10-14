@@ -25,6 +25,7 @@ Overall, the Ankheg Spawn presents a mix of physical prowess and ambush potentia
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ankheg Spawn
 
 *Medium* *Monstrosity*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Acid Spit:** Ranged Weapon Attack: +3 to hit, range 30 ft., one creature. Hit: 4 (1d8) acid damage.
 
 
+</statblock>
 
 

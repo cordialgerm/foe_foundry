@@ -27,6 +27,7 @@ Overall, the Death Worm combines decent mobility and damaging abilities with eff
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Death Worm
 
 *Small* *Monstrosity* *unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Spit Poison:** Ranged Weapon Attack: +4 to hit 15/30' one creature. 9 (2d8) poison and the target must make DC 12 Con save or succumb to the worm’s venom (see Dreaming Venom).
 
 
+</statblock>
 
 

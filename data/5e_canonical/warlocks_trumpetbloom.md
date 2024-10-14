@@ -25,6 +25,7 @@ The tendril attacks benefit from a +6 to hit and a reach of 15 feet, dealing 10 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Warlock's Trumpetbloom
 
 *Large* *Plant* *neutral evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Tendril:** Melee Weapon Attack: +6 to hit, reach 15 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage and the target is grappled (escape DC 14) if it is a Medium or smaller creature. The trumpetbloom has two tendrils, each of which can grapple only one target.
 
 
+</statblock>
 
 

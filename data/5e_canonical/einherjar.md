@@ -23,6 +23,7 @@ Lastly, the "Celestial Blessing" ability can be invoked if the recharge is succe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Einherjar
 
 *Medium* *Humanoid* *Chaotic Neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Battleaxe:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands, plus 13 (3d8) radiant damage.
 - **Celestial Bolt:** Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 15 (3d8 + 2) radiant damage.
 - **Celestial Blessing (Recharge 5–6):** The einherjar calls on its celestial patrons for one of the following blessings:
+</statblock>
 
 

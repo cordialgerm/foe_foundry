@@ -27,6 +27,7 @@ Additionally, the Rhinoceros can use its Quaking Stomp as a bonus action. This a
 
 Source: 5e_srd
 
+<statblock>
 ### Rhinoceros
 
 *Large beast, unaligned*
@@ -51,7 +52,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Gore***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d8+5) bludgeoning damage.
+***Gore***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d8+5) bludgeoning damage.</statblock>
+
 
 
 
@@ -59,6 +61,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rhinoceros
 
 *Large* *Beast*
@@ -82,6 +85,7 @@ Source: 5e_artisinal_monsters
 - **Gore:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8+5) bludgeoning damage. If the rhinoceros moves at least 20 feet straight towards the target before the attack  the attack deals an extra 4 (1d8) bludgeoning damage and the target makes a DC 15 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 
 
@@ -90,6 +94,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rhinoceros
 
 *Large beast*
@@ -122,5 +127,6 @@ Source: 5e_artisinal_monsters
 
 - **Quaking Stomp.** The rhinoceros rears up and slams its forefeet on the ground, shaking the area. Each creature within 10 feet of the rhinoceros must succeed on a DC 15 DEX save or be knocked prone.
 
+</statblock>
 
 

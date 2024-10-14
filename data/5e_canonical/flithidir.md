@@ -27,6 +27,7 @@ Overall, the Flithidir is a resourceful and deceptive creature, excelling in agi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flithidir
 
 *Small* *Fey* *chaotic neutral*
@@ -64,5 +65,6 @@ At will: minor illusion (auditory only), vicious mockery
 - **Mocking Retort:** When a creature the flithidir can see misses it with an attack, the flithidir can cast vicious mockery at the attacker.
 
 
+</statblock>
 
 

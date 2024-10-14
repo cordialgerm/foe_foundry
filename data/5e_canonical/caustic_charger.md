@@ -33,6 +33,7 @@ These attributes and abilities create a complex and dangerous creature capable o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Caustic Charger
 
 *Huge* *Monstrosity* *Unaligned*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Slurp:** The caustic charger feeds on a creature paralyzed by its Tentacles attack. The target must succeed on a DC 15 Constitution saving throw or its hp maximum is reduced by half the amount of acid damage dealt by the Tentacles attack that caused the paralysis, and the charger regains hp equal to that amount. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hp maximum to 0.
+</statblock>
 
 

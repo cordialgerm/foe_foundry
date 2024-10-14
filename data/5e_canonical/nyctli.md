@@ -29,6 +29,7 @@ The Nyctli can perform the following actions in gameplay:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nyctli
 
 *Tiny* *Fey* *chaotic evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Douse Light:** The nyctli magically dispels or douses a single magical or nonmagical light source within 30 feet of it. The nyctli can’t dispel light created by a spell of 3rd level or higher.
 
 
+</statblock>
 
 

@@ -42,6 +42,7 @@ Overall, the Mage combines magical prowess and utility in combat, maintaining a 
 
 Source: 5e_srd
 
+<statblock>
 ### Mage
 
 *Medium humanoid (any race), any alignment*
@@ -79,7 +80,8 @@ Cantrips (at will): *fire bolt*, *light*, *mage hand*, *prestidigitation*
 
 ***Dagger***. *Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (1d4 + 1) piercing damage.
 
-**Mages** spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.
+**Mages** spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.</statblock>
+
 
 
 
@@ -87,6 +89,7 @@ Cantrips (at will): *fire bolt*, *light*, *mage hand*, *prestidigitation*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mage
 
 *Medium* *Humanoid*
@@ -146,6 +149,7 @@ Source: 5e_artisinal_monsters
 - **Shield (1st-Level; V:** When the mage is hit by an attack or targeted by magic missile, they gain a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the start of their next turn.
 
 
+</statblock>
 
 
 
@@ -154,6 +158,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mage
 
 *Medium humanoid (any lineage)*
@@ -189,5 +194,6 @@ Source: 5e_artisinal_monsters
 	- 2/day each: fireball, haste, slow
 	- 1/day each: cone of cold, greater invisibility
 
+</statblock>
 
 

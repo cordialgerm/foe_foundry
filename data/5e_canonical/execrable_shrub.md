@@ -17,6 +17,7 @@ In terms of actions, the Execrable Shrub has the "Burning Slash" attack, which i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Execrable Shrub
 
 *Medium* *Fiend* *neutral evil*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Smolder (Recharge 5-6):** The execrable shrub releases a billowing cloud of smoke in a 10-foot-radius that lasts for 1 minute and moves with the shrub. The area affected by the smoke is heavily obscured.
 
 
+</statblock>
 
 

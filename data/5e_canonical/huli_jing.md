@@ -29,6 +29,7 @@ Lastly, its Draining Glance ability, which recharges on a roll of 5 or 6, allows
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Huli Jing
 
 *Medium* *Fey* *neutral*
@@ -69,5 +70,6 @@ At will: charm person, invisibility (self only), major image
 - **Draining Glance (Recharge 5-6):** The huli jing draws sustenance from the psyches of living creatures in a 30-foot cone. Each creature in the area that isn’t a construct or an undead must make a DC 16 Wisdom saving throw, taking 28 (8d6) psychic damage on a failed save, or half as much damage on a successful one. The huli jing regains hp equal to the single highest amount of psychic damage dealt.
 
 
+</statblock>
 
 

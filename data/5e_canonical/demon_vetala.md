@@ -25,6 +25,7 @@ Finally, the Vetala possesses a devastating reaction called Corpse Detonation. W
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Demon, Vetala
 
 *Medium* *Fiend* *chaotic evil*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Corpse Detonation:** When Undead under its control is reduced to 0 hp vetala can force it to explode. Each creature that isn’t Undead or vetala within 5 ft. of exploding Undead: 10 (3d6) bludgeoning damage (if zombie) or slashing (if skeleton) damage and 5 (2d4) poison (DC 15 Dex half).
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Revenant is a relentless and powerful adversary that can significan
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Revenant
 
 *Medium* *Undead*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Burning Hatred (Recharge 4-6):** The revenant targets the focus of its Fearsome Pursuit  assuming the creature is within 30 feet. The target makes a DC 15 Wisdom saving throw. On a failure  it takes 14 (4d6) psychic damage and is paralyzed until the end of its next turn. On a success  it takes half damage and is frightened until the end of its next turn.
 
 
+</statblock>
 
 

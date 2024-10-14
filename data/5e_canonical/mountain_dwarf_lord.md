@@ -38,6 +38,7 @@ For reaction capabilities, the Mountain Dwarf Lord has Shield Block, which can i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mountain Dwarf Lord
 
 *Medium* *Humanoid*
@@ -76,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Shield Block:** When a creature attacks the mountain dwarf lord or a target within 5 feet, the mountain dwarf lord imposes disadvantage on that attack. To do so, the mountain dwarf lord must see the attacker and be wielding a shield.
 
 
+</statblock>
 
 

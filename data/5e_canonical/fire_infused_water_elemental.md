@@ -21,6 +21,7 @@ Overall, the Fire-Infused Water Elemental is a well-rounded adversary with stron
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire-Infused Water Elemental
 
 *Huge* *Elemental* *neutral*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Scald (Recharge 6):** A fire-infused water elemental sprays a 30-foot cone of superheated water. Each creature in the area must make a DC 12 Dexterity saving throw. On a failure, a creature takes 21 (6d6) fire damage and is knocked prone. On a success, a creature takes half as much damage and isn’t knocked prone.
 
 
+</statblock>
 
 

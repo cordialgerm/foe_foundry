@@ -23,6 +23,7 @@ Overall, the Chuhaister presents a versatile threat in battle, engaging opponent
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chuhaister
 
 *Large* *Giant* *chaotic evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Deadfall Shield (Recharge 5-6):** When the chuhaister or one ally within 30 feet of it is hit by an attack, the chuhaister can create a magical, wooden barrier that interrupts the attack. The attack causes no damage. The shield splinters and disappears afterwards.
 
 
+</statblock>
 
 

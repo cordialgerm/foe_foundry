@@ -25,6 +25,7 @@ Finally, the **Whispers of Madness** attack, rechargeable on a roll of 5-6, infl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Willowhaunt
 
 *Huge* *Undead* *neutral evil*
@@ -61,5 +62,6 @@ The changes wrought by this illusion fail to hold up to physical inspection. For
 - **Whispers of Madness (Recharge 5-6):** The willowhaunt whispers in the minds of nearby creatures. Each creature of the willowhaunt’s choice within 30 feet of it must make a DC 15 Wisdom saving throw. On a failure, a creature takes 18 (4d8) psychic damage and is afflicted with short term madness. On a success, a creature takes half the damage and isn’t afflicted with madness. If a saving throw fails by 5 or more, the creature is afflicted with long term madness instead. A creature afflicted with madness caused by the willowhaunt’s whispers has disadvantage on its saving throw against the Willowhaunt’s Provoke Murder.
 
 
+</statblock>
 
 

@@ -34,6 +34,7 @@ Overall, the Lacedon is a dangerous foe, especially in tight encounters where pa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lacedon
 
 *Medium* *Undead*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one incapacitated creature. Hit: 6 (1d8 + 2) piercing damage.
 
 
+</statblock>
 
 

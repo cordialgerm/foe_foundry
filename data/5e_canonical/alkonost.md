@@ -19,6 +19,7 @@ The Alkonost can use its claws to make a melee weapon attack, which has a +4 to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alkonost
 
 *Small* *Monstrosity* *neutral*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Charged Melody (Recharge 6):** The alkonost sings a beautiful melody. Each creature within 30 feet of it that can hear the melody must succeed on a DC 12 Charisma saving throw or take 7 (2d6) lightning damage the next time it moves.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ The Narshark’s primary action is its Bite attack which is a melee weapon attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Narshark
 
 *Large* *Monstrosity* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8 + 3) piercing damage. If the creature isn’t an undead or a construct, it must succeed on a DC 13 Constitution saving throw or lose 2 (1d4) hp at the start of each of its turns as one of the shark’s teeth chips off into the wound. Any creature can take an action to stanch the wound by removing the tooth. The wound also closes and the tooth pops out if the target receives magical healing.
 
 
+</statblock>
 
 

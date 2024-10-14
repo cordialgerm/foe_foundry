@@ -25,6 +25,7 @@ Overall, the Yeti's combination of physical prowess, tactical abilities, and spe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yeti
 
 *Large* *Monstrosity*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Chilling Gaze (Gaze):** One creature within 30 feet that is not immune to cold damage makes a DC 13 Constitution saving throw. On a failure  the creature takes 10 (3d6) cold damage and is paralyzed for 1 minute. It repeats the saving throw at the end of each of its turns  ending the effect on a success. If a creatures saving throw is successful or the effect ends for it  it is immune to any Chilling Gaze for 24 hours.
 
 
+</statblock>
 
 

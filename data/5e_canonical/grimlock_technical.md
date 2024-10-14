@@ -26,6 +26,7 @@ Overall, the Grimlock Technical is a clever combatant that excels in stealth and
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grimlock Technical
 
 *Medium* *Humanoid*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Smoke Bomb (3/Day):** The grimlock throws a vial at a point up to 20 feet away. The area within 30 feet of that point is heavily obscured for 1 minute or until cleared by a strong wind.
 
 
+</statblock>
 
 

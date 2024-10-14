@@ -21,6 +21,7 @@ If the situation necessitates, the Alabroza can detach itself by spending 5 feet
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alabroza
 
 *Small* *Monstrosity* *unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +4 to hit, 5 ft., one creature,. 5 (1d6+2) slashing damage.
 
 
+</statblock>
 
 

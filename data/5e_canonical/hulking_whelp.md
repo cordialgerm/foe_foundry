@@ -23,6 +23,7 @@ Finally, its reaction ability, "Defensive Transformation," can trigger when it i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hulking Whelp
 
 *Small* *Fey* *Chaotic Neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Defensive Transformation (Whelp Form Only):** When the hulking whelp is hit with an attack or when a creature it can see or hear within 30 feet of it threatens to harm it, it must succeed on a DC 12 Wisdom saving throw or transform into its hulking canine form (see the Change Shape bonus action).
+</statblock>
 
 

@@ -17,6 +17,7 @@ Additionally, the Bugbear Chief has a special ability called Move Out, which it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bugbear Chief
 
 *Medium* *Humanoid*
@@ -43,5 +44,6 @@ Source: 5e_artisinal_monsters
 - **Move Out (1/Day):** The bugbear and creatures of its choice within 30 feet move up to half their Speed without provoking opportunity attacks.
 
 
+</statblock>
 
 

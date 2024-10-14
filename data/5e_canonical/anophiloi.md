@@ -23,6 +23,7 @@ The Claws attack also has a +4 to hit, a reach of 5 feet, and deals 4 (1d4 + 2) 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Anophiloi
 
 *Small* *Monstrosity* *neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.
 
 
+</statblock>
 
 

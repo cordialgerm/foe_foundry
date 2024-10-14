@@ -21,6 +21,7 @@ Additionally, it can utilize the bonus action Shadow Stealth, allowing for a Hid
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Idolic Deity
 
 *Small* *Construct* *Neutral Evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Stealth:** While in dim light or darkness, the idolic deity takes the Hide action.
+</statblock>
 
 

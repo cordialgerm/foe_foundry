@@ -48,6 +48,7 @@ The combination of these abilities makes the Specter a unique and dangerous adve
 
 Source: 5e_srd
 
+<statblock>
 ## Specter
 
 *Medium undead, chaotic evil*
@@ -80,7 +81,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Life Drain***. *Melee Spell Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+***Life Drain***. *Melee Spell Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</statblock>
+
 
 
 
@@ -88,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Specter
 
 *Medium* *Undead*
@@ -122,6 +125,7 @@ Source: 5e_artisinal_monsters
 - **Fade:** While not in sunlight  the specter turns invisible and takes the Hide action. It remains invisible for 1 minute or until it uses Life Drain or takes damage. If the specter takes radiant damage  it can't use this action until the end of its next turn.
 
 
+</statblock>
 
 
 
@@ -130,6 +134,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Specter
 
 *Medium undead*
@@ -164,5 +169,6 @@ Source: 5e_artisinal_monsters
 
 - **Retributive Shriek.** When the specter takes damage from a creature it can see within 30 feet of it, the specter can shriek with the fury of its tormented existence. That creature must succeed on a DC 12 WIS save or be frightened until the end of its next turn.
 
+</statblock>
 
 

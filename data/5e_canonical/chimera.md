@@ -37,6 +37,7 @@ Overall, the Chimera serves as a multifaceted opponent, challenging players to e
 
 Source: 5e_srd
 
+<statblock>
 ## Chimera
 
 *Large monstrosity, chaotic evil*
@@ -69,7 +70,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.
 
-***Fire Breath (Recharge 5-6)***. The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.
+***Fire Breath (Recharge 5-6)***. The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -77,6 +79,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chimera
 
 *Large* *Monstrosity*
@@ -121,6 +124,7 @@ Source: 5e_artisinal_monsters
 - **The chimera can take 2 legendary actions:** Only one legendary action can be used at a time and only at the end of another creatures turn. It regains spent legendary actions at the start of its turn.
 - **Bite:** The chimera uses its Bite attack.
 - **Claw:** The chimera uses its Claw attack.
+</statblock>
 
 
 
@@ -129,6 +133,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chimera
 
 *Large monstrosity*
@@ -162,5 +167,6 @@ Source: 5e_artisinal_monsters
 - **Claws.** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.
 - **Fire Breath (Recharge 5–6).** The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 DEX save, taking 27 (6d8) fire damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

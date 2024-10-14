@@ -21,6 +21,7 @@ In combat, the Mold Zombie can utilize its Multiattack feature, allowing it to m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mold Zombie
 
 *Medium* *Undead* *chaotic evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Plague Breath (Recharge 6):** The zombie breathes a cloud of spores in 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or take 10 (3d6) necrotic damage and contract iumenta pox (see Iumenta Pox sidebar).
 
 
+</statblock>
 
 

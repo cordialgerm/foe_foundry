@@ -25,6 +25,7 @@ In summary, the Skull Lantern is a unique undead creature that excels in illumin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skull Lantern
 
 *Tiny* *Undead* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Fire Beam (Recharge 6):** The skull lantern opens its mouth, releasing a searing beam of light in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 13 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

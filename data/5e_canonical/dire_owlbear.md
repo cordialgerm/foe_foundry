@@ -23,6 +23,7 @@ Overall, the Dire Owlbear is a robust and menacing creature that relies on its p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dire Owlbear
 
 *Large* *Monstrosity* *unaligned*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +8 to hit, 5 ft., one target, 14 (2d8+5) slashing damage.
 
 
+</statblock>
 
 

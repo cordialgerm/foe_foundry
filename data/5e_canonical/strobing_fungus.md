@@ -21,6 +21,7 @@ In combat, the Strobing Fungus can execute a "Multiattack," allowing it to make 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Strobing Fungus
 
 *Medium* *Plant* *unaligned*
@@ -54,5 +55,6 @@ While emitting light, the strobing fungus can’t attack. It can stop emitting l
 - **Chemical Burn:** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one creature. Hit: 13 (3d6 + 3) acid damage.
 
 
+</statblock>
 
 

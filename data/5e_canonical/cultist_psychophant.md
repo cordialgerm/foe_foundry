@@ -27,6 +27,7 @@ Finally, the psychophant’s reaction, Appeal to the Fervent, enables it to call
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: Cultist Psychophant
 
 *Medium* *Humanoid* *any non-good alignment*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Appeal to the Fervent:** When a creature psychophant can see targets it with attack psychophant calls for aid from its followers switching places with friendly creature within 5 ft. of it. Friendly creature becomes target of the attack instead.
 
 
+</statblock>
 
 

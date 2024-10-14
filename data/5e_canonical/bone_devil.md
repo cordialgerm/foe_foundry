@@ -44,6 +44,7 @@ Overall, the Bone Devil stands out as a cunning and powerful adversary in combat
 
 Source: 5e_srd
 
+<statblock>
 ### Bone Devil
 
 *Large fiend (devil), lawful evil*
@@ -84,7 +85,8 @@ Source: 5e_srd
 
 ***Claw***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 8 (1d8+4) slashing damage.
 
-***Sting***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 13 (2d8+4) piercing damage plus 17 (5d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+***Sting***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 13 (2d8+4) piercing damage plus 17 (5d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</statblock>
+
 
 
 
@@ -92,6 +94,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Devil
 
 *Large* *Fiend*
@@ -129,6 +132,7 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 13 (2d8 + 4) piercing damage plus 14 (4d6) poison damage, and the target makes a DC 15 Constitution saving throw, becoming poisoned for 1 minute on a failure. The target can repeat this saving throw at the end of each of its turns, ending the effect on a success.
 
 
+</statblock>
 
 
 
@@ -137,6 +141,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Devil
 
 *Large fiend (devil)*
@@ -175,5 +180,6 @@ Source: 5e_artisinal_monsters
 - **Beg for Mercy.** The target immediately falls prone and can’t cast spells with verbal components on its next turn as it is magically compelled to speak pleas of mercy.
 - **Flee.** The target uses its reaction to move up to its speed directly away from the bone devil. This movement doesn’t provoke opportunity attacks, but the target doesn’t avoid damaging terrain, such as lava.
 
+</statblock>
 
 

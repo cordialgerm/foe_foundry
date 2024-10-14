@@ -11,6 +11,7 @@
 
 Source: 5e_srd
 
+<statblock>
 ### Sea Horse
 
 *Tiny beast, unaligned*
@@ -31,5 +32,6 @@ Source: 5e_srd
 
 **Challenge** 0 (0 XP)
 
-***Water Breathing***. The sea horse can breathe only underwater.
+***Water Breathing***. The sea horse can breathe only underwater.</statblock>
+
 

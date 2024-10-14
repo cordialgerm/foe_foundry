@@ -25,6 +25,7 @@ Overall, the Alliumite Rapscallion is a highly versatile creature that combines 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alliumite, Rapscallion
 
 *Small* *Plant* *chaotic neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Pungent Retort:** When a creature rapscallion can see within 60' of it starts its turn or casts a spell rapscallion issues forth a string of insults cleverly crafted to make a foe cry. If it can hear the rapscallion target: DC 14 Wis save or sob uncontrollably until start of rapscallion’s next turn. A sobbing creature has disadvantage on ability checks and attack rolls and must make DC 14 Con save to cast a spell that requires spellcaster to see its target. Spellcaster doesn’t lose the spell slot on a failure.
 
 
+</statblock>
 
 

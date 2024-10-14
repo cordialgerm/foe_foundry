@@ -33,6 +33,7 @@ In terms of reactions, the Giant Goat can emit a Terrifying Scream when it takes
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Goat
 
 *Large beast, unaligned*
@@ -59,7 +60,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Ram***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (2d4+3) bludgeoning damage.
+***Ram***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (2d4+3) bludgeoning damage.</statblock>
+
 
 
 
@@ -67,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Goat
 
 *Large* *Beast*
@@ -91,6 +94,7 @@ Source: 5e_artisinal_monsters
 - **Ram:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4+3) bludgeoning damage. If the target is a creature and the goat moves at least 20 feet straight towards the target before the attack  the target takes an additional 5 (2d4) bludgeoning damage and makes a DC 13 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 
 
@@ -99,6 +103,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goat, Giant
 
 *Large beast*
@@ -130,5 +135,6 @@ Source: 5e_artisinal_monsters
 
 - **Terrifying Scream.** When the goat takes damage, it can release a high-pitched scream, frightening creatures within 10 feet of it. Each creature in that area that can hear the scream must succeed on a DC 13 WIS save or be frightened until the end of its next turn. A creature frightened in this way can’t be frightened by this goat’s Terrifying Scream again for the next 24 hours.
 
+</statblock>
 
 

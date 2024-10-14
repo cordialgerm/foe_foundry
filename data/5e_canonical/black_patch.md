@@ -23,6 +23,7 @@ In terms of actions, the Black Patch is capable of making a Multiattack, which a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Patch
 
 *Large* *Ooze* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Viscid Suffocation:** One creature in patch’s space: DC 15 Dex save or take 18 (4d8) acid and patch attaches to it coating creature and its equipment. While patch is attached to it creature’s speed is halved can’t breathe and takes 9 (2d8) acid at start of each of its turns. Also if creature is in the water has disadvantage on ability checks to swim or stay afloat. Patch can devour flesh quickly but its acid doesn’t harm metal wood or similar objects or creatures with o flesh. Patch can detach itself by spending 5 ft. of move. A creature including target can take its action to detach patch via DC 15 Str check.
 
 
+</statblock>
 
 

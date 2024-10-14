@@ -21,6 +21,7 @@ Finally, the Merchant Captain can react in combat by providing Inspiration, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: Merchant Captain
 
 *Medium* *Humanoid* *any alignment*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Inspiration (4/Day):** When a creature within 30' of the merchant captain fails an attack roll ability check or save the captain can force it to reroll the die. The target must use the new roll.
 
 
+</statblock>
 
 

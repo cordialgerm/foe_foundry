@@ -25,6 +25,7 @@ Overall, the Venom Maw Hydra stands as a powerful creature in combat, requiring 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Venom Maw Hydra
 
 *Huge* *Monstrosity* *unaligned*
@@ -69,5 +70,6 @@ The venom maw hydra can take 3 legendary actions, choosing from the options belo
 - **Bite:** The venom maw hydra makes one bite attack.
 - **Spit (Costs 2 Actions):** The venom maw hydra makes one spit attack.
 - **Wallowing Rampage (Costs 3 Actions):** When the venom maw hydra is in water, it wallows, causing the water to hiss, froth, and splash within 20 feet. Each creature in that area must make a DC 16 Dexterity saving throw, taking 14 (4d6) acid damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

@@ -47,6 +47,7 @@ Overall, the Adult Brass Dragon is a highly versatile and dangerous creature tha
 
 Source: 5e_srd
 
+<statblock>
 # Adult Brass Dragon (Metallic)
 
 *Huge dragon, chaotic good*
@@ -101,7 +102,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6+6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6+6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -109,6 +111,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Brass Dragon
 
 *Huge* *Dragon*
@@ -161,6 +164,7 @@ Source: 5e_artisinal_monsters
 - **Analyze:** The dragon evaluates one creature it can see within 60 feet. It learns the creatures resistances, immunities, vulnerabilities, and current and maximum hit points. That creatures next attack roll against the dragon before the start of the dragons next turn is made with disadvantage.
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 16 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 19 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
+</statblock>
 
 
 
@@ -169,6 +173,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Brass Dragon
 
 *Huge dragon*
@@ -219,5 +224,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days. If the dragon spends more than 30 days away from either its desert or humanoid lair, that lair loses its associated regional effects. If the dragon has only one lair, the regional effects fade only if the dragon dies.
+</statblock>
 
 

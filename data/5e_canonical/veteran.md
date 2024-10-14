@@ -49,6 +49,7 @@ Overall, the Veteran's combination of weapon proficiency, ability to multitask i
 
 Source: 5e_srd
 
+<statblock>
 ### Veteran
 
 *Medium humanoid (any race), any alignment*
@@ -81,7 +82,8 @@ Source: 5e_srd
 
 ***Heavy Crossbow***. *Ranged Weapon Attack:* +3 to hit, range 100/400 ft., one target. *Hit:* 6 (1d10 + 1) piercing damage.
 
-**Veterans** are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long service and warriors who never served anyone but themselves.
+**Veterans** are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long service and warriors who never served anyone but themselves.</statblock>
+
 
 
 
@@ -89,6 +91,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Veteran
 
 *Medium* *Humanoid*
@@ -124,6 +127,7 @@ Source: 5e_artisinal_monsters
 - **Off-Hand Counter:** When the veteran is missed by a melee attack by an attacker they can see within 5 feet, the veteran makes a shortsword attack against the attacker.
 
 
+</statblock>
 
 
 
@@ -132,6 +136,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Veteran
 
 *Medium humanoid (any lineage)*
@@ -173,5 +178,6 @@ Source: 5e_artisinal_monsters
 
 - **Parry.** The veteran adds 2 to its AC against one melee attack that would hit it. To do so, the veteran must see the attacker and be wielding a melee weapon.
 
+</statblock>
 
 

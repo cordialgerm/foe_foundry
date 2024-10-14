@@ -29,6 +29,7 @@ Akyishigal can take legendary actions, allowing it to teleport, skitter, or cast
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Akyishigal
 
 *Large* *Fiend* *Chaotic Evil*
@@ -78,5 +79,6 @@ Akyishigal can take 3 legendary actions, choosing from the options below. Only o
 - **Teleport:** Akyishigal magically teleports, along with any equipment he is wearing or carrying, up to 120 feet to an unoccupied space he can see.
 - **Skitter (Costs 2 Actions):** Akyishigal moves up to half his speed and makes one Claw attack. This movement doesn’t provoke opportunity attacks.
 - **Cast a Spell (Costs 2 Actions):** Akyishigal uses Spellcasting.
+</statblock>
 
 

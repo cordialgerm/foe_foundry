@@ -21,6 +21,7 @@ Overall, the Gelatinous Wall represents a solid challenge with powerful abilitie
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gelatinous Wall
 
 *Huge* *Ooze*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **An engulfed creature can escape by using an action to make a DC 13 Strength check:** On a success  the creature moves to a space within 5 feet of the cube. A creature within 5 feet can take the same action to free an engulfed creature  but takes 10 (3d6) acid damage plus 9 (2d6 + 2) bludgeoning damage in the process.
 
 
+</statblock>
 
 

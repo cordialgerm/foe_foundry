@@ -27,6 +27,7 @@ In combat, the Whisperer employs a multiattack strategy, making two Grasp of the
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Whisperer in Darkness
 
 *Medium* *Aberration* *neutral evil*
@@ -64,5 +65,6 @@ At will: alter self, detect magic, detect thoughts, disguise self, fear, identif
 - **Grasp of the Void:** Melee Spell Attack: +12 to hit, reach 5 ft., one target. Hit: 21 (6d6) force damage, and the target must succeed on a DC 18 Constitution saving throw or be stunned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

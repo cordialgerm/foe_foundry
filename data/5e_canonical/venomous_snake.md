@@ -9,6 +9,7 @@
 
 Source: 5e_srd
 
+<statblock>
 ## Venomous Snake
 
 _Tiny Beast, Unaligned_
@@ -30,5 +31,6 @@ _Tiny Beast, Unaligned_
 
 **Bite.** _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target.
 _Hit:_ 4 (1d4 + 2) piercing damage plus 3 (1d6) poison damage.
+</statblock>
 
 

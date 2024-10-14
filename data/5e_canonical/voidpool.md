@@ -33,6 +33,7 @@ Overall, the Voidpool combines formidable physical grappling power with unique p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Voidpool
 
 *Large* *Ooze* *unaligned*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Pseudopod:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage plus 7 (2d6) necrotic damage. The target is grappled (escape DC 13) if it is a Medium or smaller creature and the voidpool doesn’t have two other creatures grappled. Until this grapple ends, the target is restrained, and it risks being pulled into the Void (see the Planar Portal trait).
 
 
+</statblock>
 
 

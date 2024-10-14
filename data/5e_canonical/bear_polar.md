@@ -19,6 +19,7 @@ Overall, the Polar Bear is designed to be a tough melee combatant with strong of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bear, Polar
 
 *Large beast*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 9 (1d8 + 5) piercing damage.
 - **Claws.** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.
 
+</statblock>
 
 

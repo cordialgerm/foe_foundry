@@ -25,6 +25,7 @@ Overall, the Clockwork Assassin is a formidable opponent that combines mobility,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Assassin
 
 *Medium* *Construct* *unaligned*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Disassembly:** The assassin breaks its body down into a snakelike, segmented cylinder, which allows it to move through a space as narrow as 6 inches wide. It can reassemble itself into its true form by using this action again. While disassembled into its snake form, the assassin can't attack and attack rolls against it have advantage.
 
 
+</statblock>
 
 

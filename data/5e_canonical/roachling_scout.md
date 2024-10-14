@@ -21,6 +21,7 @@ In combat, the Roachling Scout can perform a "Multiattack," allowing it to make 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Roachling Scout
 
 *Small* *Humanoid* *chaotic neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Begrimed Dart:** Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage plus 7 (2d6) poison damage.
 
 
+</statblock>
 
 

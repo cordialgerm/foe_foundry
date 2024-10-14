@@ -23,6 +23,7 @@ Lastly, the creature has a reaction called Prickly Defense. If it is hit by a me
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragonette, Sedge
 
 *Tiny* *Dragon* *neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Prickly Defense:** When a creature dragonette can see hits dragonette with melee attack while within 5 ft. of it dragonette can make one Spines attack vs. the creature.
 
 
+</statblock>
 
 

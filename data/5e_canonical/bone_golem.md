@@ -23,6 +23,7 @@ In combat, the Bone Golem can execute various actions. It has a Multiattack abil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Golem
 
 *Medium* *Construct* *unaligned*
@@ -62,5 +63,6 @@ The golem's creator, if within 60 feet of the berserk golem, can calm it by spea
 - **Bone Shard:** Ranged Weapon Attack: +6 to hit, range 60/240 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) necrotic damage.
 
 
+</statblock>
 
 

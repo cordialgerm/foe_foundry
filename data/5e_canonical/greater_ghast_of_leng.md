@@ -23,6 +23,7 @@ Overall, the Greater Ghast of Leng presents a unique and dangerous challenge, le
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greater Ghast of Leng
 
 *Large* *Aberration* *chaotic evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 11 (2d6 + 4) slashing damage.
 
 
+</statblock>
 
 

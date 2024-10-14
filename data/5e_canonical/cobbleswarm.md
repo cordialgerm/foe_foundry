@@ -21,6 +21,7 @@ Additionally, the Cobbleswarm can utilize a bonus action called Shift and Tumble
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cobbleswarm
 
 *Medium* *Swarm* *Beast* *Unaligned*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shift and Tumble:** The cobbleswarm pushes a prone creature in its space up to 5 feet away from it.
+</statblock>
 
 

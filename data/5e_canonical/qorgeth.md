@@ -23,6 +23,7 @@ Lastly, Qorgeth has three legendary actions that can be taken at the end of anot
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Qorgeth
 
 *Gargantuan* *Fiend* *Chaotic Evil*
@@ -67,5 +68,6 @@ Qorgeth can take 3 legendary actions, choosing from the options below. Only one 
 - **Shriek:** Each creature within 60 feet of Qorgeth and that can hear the demon must succeed on a DC 21 Wisdom saving throw or be frightened for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Death Roll (Costs 2 Actions):** Qorgeth moves up to half its speed straight toward a creature and makes one Crush attack against the creature. Each object and structure between Qorgeth and the target takes 33 (6d10) bludgeoning damage.
 - **Devour (Costs 3 Actions):** Qorgeth makes one Bite attack.
+</statblock>
 
 

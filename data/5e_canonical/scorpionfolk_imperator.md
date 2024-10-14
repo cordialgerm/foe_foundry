@@ -32,6 +32,7 @@ Overall, the Scorpionfolk Imperator is a versatile opponent capable of dealing s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scorpionfolk Imperator
 
 *Large* *Monstrosity*
@@ -77,5 +78,6 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +4 to hit, reach 10 ft., one creature. Hit: 5 (1d6 + 2) piercing damage, and the target makes a DC 12 Constitution saving throw, taking 16 (3d10) poison damage on a failure or half damage on a success.
 
 
+</statblock>
 
 

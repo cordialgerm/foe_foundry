@@ -21,6 +21,7 @@ In terms of actions, the Archaeopteryx can perform a Multiattack, allowing it to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archaeopteryx
 
 *Tiny* *Beast* *unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage.
 
 
+</statblock>
 
 

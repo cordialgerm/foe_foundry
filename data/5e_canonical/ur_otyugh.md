@@ -19,6 +19,7 @@ For its legendary actions, the Ur-Otyugh can swiftly move, make an extended tent
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ur-Otyugh
 
 *Large* *Aberration*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Mad Dash:** The ur-otyugh moves up to half its Speed.
 - **Tentacle:** The ur-otyugh makes a tentacle attack. This attack has a range of 15 feet.
 - **Mental Fuzz (Costs 2 Actions:** The ur-otyugh transmits a burst of psionic static. Each non-aberration within 30 feet makes a DC 14 Intelligence saving throw. On a failure, a creature takes 14 (4d6) psychic damage and is stunned until the end of the ur-otyughs next turn. On a success, the creature takes half damage.
+</statblock>
 
 

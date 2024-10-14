@@ -23,6 +23,7 @@ Lastly, the wrestler can react with "Opportune Jab" if a creature tries to grapp
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hill Dwarf Wrestler
 
 *Medium* *Humanoid*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Opportune Jab:** If a creature attempts to grapple the pugilist, the pugilist attacks that creature with their fists.
 
 
+</statblock>
 
 

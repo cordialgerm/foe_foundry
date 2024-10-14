@@ -21,6 +21,7 @@ As a reaction, the Climbing Vine can trigger Grasping Retaliation when a creatur
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Climbing Vine
 
 *Medium* *Plant* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Grasping Retaliation:** When a creature hits the climbing vine with melee attack while within 5 ft. of the vine the vine can make one Dewvine attack vs. it.
 
 
+</statblock>
 
 

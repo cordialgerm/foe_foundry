@@ -55,6 +55,7 @@ The Priest serves as a multifunctional character capable of contributing both in
 
 Source: 5e_srd
 
+<statblock>
 ### Priest
 
 *Medium humanoid (any race), any alignment*
@@ -92,7 +93,8 @@ Cantrips (at will): *light*, *sacred flame*, *thaumaturgy*
 
 **Priests** bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites.
 
-A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties.
+A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties.</statblock>
+
 
 
 
@@ -100,6 +102,7 @@ A priest typically has one or more acolytes to help with religious ceremonies an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Priest
 
 *Medium* *Humanoid*
@@ -148,6 +151,7 @@ Source: 5e_artisinal_monsters
 - **Healing Word (1st-Level; V):** The priest or a living creature within 60 feet regains 5 (1d4 + 3) hit points. The priest can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 
 
@@ -156,6 +160,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Priest
 
 *Medium humanoid (any lineage)*
@@ -190,5 +195,6 @@ Source: 5e_artisinal_monsters
 	- 2/day each: bane, bless, cure wounds
 	- 1/day each: dispel magic, restoration
 
+</statblock>
 
 

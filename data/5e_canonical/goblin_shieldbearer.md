@@ -21,6 +21,7 @@ As a bonus action, the Shieldbearer can utilize "Nimble Escape," allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Shieldbearer
 
 *Small* *Humanoid*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 

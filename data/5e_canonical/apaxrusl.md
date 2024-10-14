@@ -25,6 +25,7 @@ Lastly, the Apaxrusl has a reaction called "Shifting Sands." When it takes damag
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Apaxrusl
 
 *Medium* *Construct* *neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Shifting Sands:** The apaxrusl can shift the flowing sands of its body to avoid harm. When the apaxrusl takes damage, roll a d12. Reduce the damage it takes by the number rolled.
 
 
+</statblock>
 
 

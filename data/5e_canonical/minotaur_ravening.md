@@ -23,6 +23,7 @@ Overall, the Ravening Minotaur is a fierce opponent that thrives in close-quarte
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Minotaur, Ravening
 
 *Large* *Monstrosity* *chaotic evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Gore:** Melee Weapon Attack: +6 to hit, 5 ft., one target, 13 (2d8+4) piercing damage.
 
 
+</statblock>
 
 

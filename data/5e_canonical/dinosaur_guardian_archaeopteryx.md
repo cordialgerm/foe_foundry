@@ -36,6 +36,7 @@ Additionally, as a bonus action, the Guardian Archaeopteryx can use its Imbue Po
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dinosaur, Guardian Archaeopteryx
 
 *Small* *Beast* *unaligned*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Imbue Poison:** The guardian archaeopteryx chooses a friendly creature it can see within 30' of it and imbues that creature’s attacks with magical poison. The next time the friendly creature hits with an attack before the start of archaeopteryx’s next turn target of attack takes an extra 2 (1d4) poison and must make DC 11 Con save or be poisoned until end of its next turn.
 
 
+</statblock>
 
 

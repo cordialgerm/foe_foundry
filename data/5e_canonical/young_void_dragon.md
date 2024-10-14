@@ -25,6 +25,7 @@ Lastly, the Young Void Dragon can augment its defenses with the "Void Twist" rea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Void Dragon
 
 *Large* *Dragon* *Chaotic Neutral*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Void Twist:** The dragon adds 4 to its AC against one attack that would hit it, as it twists reality to open a small rift in space to protect itself. To do so, the dragon must be able to see the attacker.
+</statblock>
 
 

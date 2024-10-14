@@ -27,6 +27,7 @@ The Mbielu has a powerful special attack known as Rumbling Bellow, which recharg
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mbielu
 
 *Huge* *Beast* *Unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 
 - **Tail:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 20 (3d10 + 4) bludgeoning damage plus 2 (1d4) poison damage. If the target is a Large or smaller creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
 - **Rumbling Bellow (Recharge 5–6):** The mbielu releases a deep bellow that vibrates within the bodies of those nearby. Each creature within 15 feet of the mbielu must make a DC 13 Constitution saving throw, taking 18 (4d8) thunder damage on a failed save, or half as much damage on a successful one. If a creature poisoned by the mbielu’s Toxic Skin fails this saving throw, it is also incapacitated until the end of its next turn as the combined vibrations and hallucinations disorient it.
+</statblock>
 
 

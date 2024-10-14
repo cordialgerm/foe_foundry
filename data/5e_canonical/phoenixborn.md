@@ -27,6 +27,7 @@ Regarding its actions, the Phoenixborn can use its "Talon" melee attack, which i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Phoenixborn
 
 *Medium* *Humanoid* *any*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Hurl Flame:** Ranged Spell Attack: +4 to hit, 60 ft., one target, 5 (1d6+2) fire.
 
 
+</statblock>
 
 

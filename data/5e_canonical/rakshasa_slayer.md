@@ -25,6 +25,7 @@ Lastly, for reactions, the Rakshasa can utilize Shadow Leap, allowing it to tele
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rakshasa, Slayer
 
 *Medium* *Fiend* *lawful evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Leap:** When a creature moves into a space within 5 ft. of slayer while slayer is in dim light or darkness slayer can teleport to unoccupied space it can see within 30' of it. Destination must also be in dim light or darkness.
 
 
+</statblock>
 
 

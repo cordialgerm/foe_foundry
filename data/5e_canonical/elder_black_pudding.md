@@ -35,6 +35,7 @@ The Elder Black Pudding's reaction is:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elder Black Pudding
 
 *Huge* *Ooze*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Split:** When a Medium or larger pudding with at least 10 hit points is subjected to lightning or slashing damage, it splits into two puddings that are each one size smaller. Each new pudding has half the originals hit points (rounded down).
 
 
+</statblock>
 
 

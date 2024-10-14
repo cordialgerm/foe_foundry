@@ -38,6 +38,7 @@ Overall, the Nullicorn represents a versatile and dangerous opponent, with stron
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nullicorn
 
 *Large* *Aberration* *chaotic evil*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Ripple of darkness:** Each creature within 20' of the nullicorn: 18 (4d8) necrotic and contracts the nullifying blight disease (above; DC 13 Con half and doesn’t contract it).
 
 
+</statblock>
 
 

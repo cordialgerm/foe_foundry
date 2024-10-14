@@ -31,6 +31,7 @@ The Boreal Dragon Wyrmling, with its combination of mobility, breath weapon, and
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boreal Dragon Wyrmling
 
 *Medium* *Dragon* *chaotic neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Cinder Breath (Recharge 5-6):** The dragon exhales a 15-foot cone of superheated air filled with white-hot embers. Each creature in that area must make a DC 12 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

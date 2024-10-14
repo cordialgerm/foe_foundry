@@ -23,6 +23,7 @@ Additionally, the thrall can perform a reaction called "Self-Sacrifice," which i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aboleth Thrall
 
 *Medium* *Humanoid*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Self-Sacrifice:** When a creature within 5 feet of the thrall that the thrall can see hits an aboleth with an attack, the thrall can make itself the target of the attack instead.
 
 
+</statblock>
 
 

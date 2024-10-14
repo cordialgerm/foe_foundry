@@ -27,6 +27,7 @@ Lastly, as a bonus action, the Fidele Angel can utilize "Change Shape" to transf
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fidele Angel
 
 *Medium* *Celestial* *Lawful Good*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The fidele angel transforms into a Medium or smaller Humanoid, a Large or smaller birdlike Beast, or back into its true form, which is a winged Celestial. Without wings, it loses its flying speed. Its statistics, other than its size and speed, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
+</statblock>
 
 

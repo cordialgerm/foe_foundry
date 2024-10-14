@@ -27,6 +27,7 @@ In addition to her standard actions, the Queen of Witches has access to three le
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Queen of Witches
 
 *Large* *Fey* *Neutral*
@@ -75,5 +76,6 @@ The Queen of Witches can take 3 legendary actions, choosing from the options bel
 - **Mystical Blast:** The Queen makes one Mystical Blast attack.
 - **Teleport:** The Queen magically teleports, along with any equipment she is wearing or carrying, to an unoccupied space she can see within 60 feet.
 - **Cast a Spell (Costs 2 Actions):** The Queen of Witches uses Spellcasting.
+</statblock>
 
 

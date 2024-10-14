@@ -27,6 +27,7 @@ Lastly, the Consume Energy ability allows the Void Fungus to draw psychic energy
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fungi, Void Fungus
 
 *Medium* *Plant* *chaotic neutral*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Consume Energy:** Hair-like tendrils dangling from its cap flash as it draws psychic energy from creature it can see within 30' of it. Target 18 (4d8) psychic (DC 13 Cha half). Fungus regains equal hp.
 
 
+</statblock>
 
 

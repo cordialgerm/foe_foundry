@@ -41,6 +41,7 @@ In terms of reactions, it has the Magic Absorption ability. If the Void Giant su
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Void Giant
 
 *Huge* *Giant* *chaotic neutral*
@@ -82,5 +83,6 @@ Cantrips (at will): chill touch, light, mending, shocking grasp
 - **Magic Absorption:** If the void giant succeeds on a saving throw against an enemy spell, the void giant doesn't suffer the effects of that spell. If it uses Void Casting on its next turn, the void giant can affect all creatures hit by its spell or who fail a saving throw against its spell instead of just one creature.
 
 
+</statblock>
 
 

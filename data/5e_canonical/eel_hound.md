@@ -23,6 +23,7 @@ As a bonus action, the Eel Hound can perform Water Step, allowing it to teleport
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eel Hound
 
 *Medium* *Fey* *Neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Water Step:** The eel hound teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see. The origin and destination spaces must contain enough water to partially submerge the hound.
+</statblock>
 
 

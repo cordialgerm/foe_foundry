@@ -25,6 +25,7 @@ Overall, the Wild Sirocco presents a unique challenge that emphasizes mobility, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wild Sirocco
 
 *Large* *Elemental* *neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Scorching Winds (Recharge 5–6):** Whips up scorching winds around it. Each creature within 10 ft. of it: 21 (6d6) fire ignites and is thrown up to 20' in random direction and knocked prone (DC 15 Str negates). If thrown creature strikes solid surface creature takes 3 (1d6) bludgeoning damage per 10 ft. it was thrown. If thrown at another creature that creature must make DC 15 Dex save or take same damage and be knocked prone. Until creature uses action to douse fire ignited creature takes 3 (1d6) fire at start of each of its turns.
 
 
+</statblock>
 
 

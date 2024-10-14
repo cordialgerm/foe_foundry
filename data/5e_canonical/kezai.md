@@ -23,6 +23,7 @@ Overall, the Kezai presents both a tactical challenge and a damaging threat, eng
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kezai
 
 *Medium* *Monstrosity* *unaligned*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Searing Acid (Recharge 6):** The kezai’s mandibles drip a searing acid, instantly igniting the gas around it. Each creature within 20 feet of the kezai must make a DC 14 Dexterity saving throw, taking 18 (4d8) fire damage on a failed save, or half as much damage on a successful one. The kezai’s Nauseous Gas trait becomes inactive for 1 minute. The kezai can’t use Searing Gas unless Nauseous Gas has been active for at least 1 minute.
 
 
+</statblock>
 
 

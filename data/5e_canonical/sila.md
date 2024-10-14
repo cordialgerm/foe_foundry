@@ -26,6 +26,7 @@ Overall, the Sila combines formidable defenses, impressive mobility, and potent 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sila
 
 *Large elemental (outsider)*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Clouded Eyes.** The sila condenses the air or water around the head or eyes of up to two creatures it can see within 30 feet of it. Each target must succeed on a DC 17 DEX save or be blinded until the end of its next turn.
 - **Genie Shape.** The sila magically transforms into a Medium cloud of thick mist that leaves droplets of water on everything it touches or back into its bipedal form. Its statistics are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its bipedal form if it dies. The sila can’t use this bonus action to transform into its bipedal form while inside a Medium or smaller container.
 
+</statblock>
 
 

@@ -27,6 +27,7 @@ The Web ability is a ranged attack with a +5 to hit and a range of 60/120 feet. 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spider Drake
 
 *Large* *Dragon* *lawful evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Web (Recharge 5-6):** Ranged Weapon Attack: +5 to hit, range 60/120 ft., one Large or smaller creature. Hit: The creature is restrained by webbing. As an action, the restrained creature can make a DC 16 Strength check, escaping from the webbing on a success. The effect also ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage.
 
 
+</statblock>
 
 

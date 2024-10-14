@@ -21,6 +21,7 @@ Overall, the Conniption Bug is a formidable opponent for adventurers who underes
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Conniption Bug
 
 *Small* *Beast* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Barbed Claws:** Melee Weapon Attack: +4 to hit, 5 ft., one target, 7 (2d4+2) piercing damage.
 
 
+</statblock>
 
 

@@ -57,6 +57,7 @@ Overall, the Vampire Spawn combines effective physical attacks with dangerous ab
 
 Source: 5e_srd
 
+<statblock>
 ### Vampire Spawn
 
 *Medium undead, neutral evil*
@@ -103,7 +104,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one creature. *Hit:* 8 (2d4+3) slashing damage. Instead of dealing damage, the vampire can grapple the target (escape DC 13).
 
-***Bite***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. *Hit:* 6 (1d6+3) piercing damage plus 7 (2d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+***Bite***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. *Hit:* 6 (1d6+3) piercing damage plus 7 (2d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</statblock>
+
 
 
 
@@ -111,6 +113,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire Spawn
 
 *Medium* *Undead*
@@ -149,6 +152,7 @@ Source: 5e_artisinal_monsters
 - **Hissing Scuttle (1/Day):** When the vampire takes radiant damage, it moves up to its Speed without provoking opportunity attacks.
 
 
+</statblock>
 
 
 
@@ -157,6 +161,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire Spawn
 
 *Medium undead*
@@ -195,5 +200,6 @@ Source: 5e_artisinal_monsters
 
 - **Call Blood.** The vampire calls to the blood within one injured creature it can see within 10 feet of it, causing blood to pour from the creature’s wounds. If the target doesn’t have all its HP, it must make a DC 14 CON save, losing 7 (2d6) HP on a failed save, or losing half as much HP on a successful one. Before the end of its next turn, the vampire has advantage on the next attack roll it makes against a creature that failed the save.
 
+</statblock>
 
 

@@ -38,6 +38,7 @@ Overall, the Clay Golem serves as a formidable enemy, capable of dealing signifi
 
 Source: 5e_srd
 
+<statblock>
 ### Clay Golem
 
 *Large construct, unaligned*
@@ -78,7 +79,8 @@ Source: 5e_srd
 
 ***Slam***. *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 16 (2d10+5) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the *greater restoration* spell or other magic.
 
-***Haste (Recharge 5-6)***. Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.
+***Haste (Recharge 5-6)***. Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.</statblock>
+
 
 
 
@@ -86,6 +88,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clay Golem
 
 *Large construct*
@@ -125,5 +128,6 @@ Source: 5e_artisinal_monsters
 
 - **Mold Hand.** The clay golem molds its hand into the shape of a weapon or back into a hand. The golem’s Slam attack deals bludgeoning, piercing, or slashing damage, depending on the type of weapon chosen, until the golem uses this bonus action again. For example, a hand shaped like an axe deals slashing damage.
 
+</statblock>
 
 

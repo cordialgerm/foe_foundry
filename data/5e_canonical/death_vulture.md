@@ -21,6 +21,7 @@ In terms of actions, the Death Vulture performs a "Multiattack," allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Death Vulture
 
 *Large* *Monstrosity* *neutral evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Decaying Breath (Recharge 6):** The vulture breathes necrotic energy in a 15-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 22 (4d10) necrotic damage on a failed save, or half as much damage on a successful one. Creatures that fail this saving throw by 5 or more also age a number of years equal to half the damage taken.
 
 
+</statblock>
 
 

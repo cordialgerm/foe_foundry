@@ -25,6 +25,7 @@ The creature also has a bonus action called "Change Aspect," allowing it to swit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Despair And Anger
 
 *Large* *Celestial* *neutral evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Change Aspect:** Changes aspect in control. Only one active at a time. Creature grappled by despair no longer grappled by anger.
 
 
+</statblock>
 
 

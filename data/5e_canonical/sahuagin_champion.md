@@ -30,6 +30,7 @@ In action, the Sahuagin Champion can use its **Multiattack** feature to strike t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sahuagin Champion
 
 *Medium* *Humanoid*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage.
 
 
+</statblock>
 
 

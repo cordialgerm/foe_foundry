@@ -21,6 +21,7 @@ The Son of Fenris also has access to a ranged spell-like ability called Divine B
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Son of Fenris
 
 *Huge* *Monstrosity* *Chaotic Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (1d10 + 8) bludgeoning damage plus 10 (3d6) necrotic damage or radiant damage (the son’s choice).
 - **Divine Bolt:** Ranged Spell Attack: +8 to hit, range 60 ft., one target. Hit: 18 (4d6 + 4) necrotic damage or radiant damage (the son’s choice).
 - **Snake Breath (Recharge 5–6):** The two snake tongues of the son of Fenris each exhale poison in a 30-foot line that is 5 feet wide, resulting in two lines. Each creature in a line must make a DC 18 Dexterity saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one. If the lines overlap, each creature in the overlapping lines must make one saving throw with disadvantage against only one of the lines rather than one saving throw for each line.
+</statblock>
 
 

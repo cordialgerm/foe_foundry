@@ -19,6 +19,7 @@ In combat, the Rattok can perform a Multiattack, making three attacks consisting
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rattok
 
 *Small* *Fiend* *chaotic evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Necrotic Rush (Recharge 5-6):** The rattok unleashes a wave of shadowy versions of itself that fan out and rake dark claws across all creatures within 15 feet. Each creature in that area must make a DC 13 Dexterity saving throw, taking 14 (4d6) necrotic damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

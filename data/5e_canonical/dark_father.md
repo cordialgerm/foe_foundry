@@ -23,6 +23,7 @@ The Dark Father can also react to spells cast nearby through "Banish Hope," prov
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dark Father
 
 *Large* *Undead* *lawful neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Banish Hope:** When a spell from the evocation or necromancy school is cast within 30 feet of the dark father, the dark father can counter the spell with a successful ability check. This works like the counterspell spell with a +5 spellcasting ability check, except the dark father must make the ability check no matter the level of the spell.
 
 
+</statblock>
 
 

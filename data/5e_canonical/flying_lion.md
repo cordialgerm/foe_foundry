@@ -32,6 +32,7 @@ Overall, the Flying Lion is a potent combination of aerial mobility and strong p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flying Lion
 
 *Large* *Monstrosity*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage  or 11 (2d6 + 4) slashing damage if the griffon started its turn at least 20 feet above the target  and the target is grappled (escape DC 14). Until this grapple ends  the griffon can't attack a different target with its talons.
 
 
+</statblock>
 
 

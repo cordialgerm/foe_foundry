@@ -38,6 +38,7 @@ Overall, the Buraq is a powerful, resilient, and strategically adept celestial c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Buraq
 
 *Medium* *Celestial* *Lawful Good*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage plus 18 (4d8) radiant damage.
 - **Teleport (1/Day):** The buraq magically teleports itself and its rider, along with any equipment it is wearing or carrying, to a location the buraq is familiar with, up to 1 mile away.
 - **Spellcasting:** The buraq casts one of the following spells, requiring no components and using Charisma as the spellcasting ability (spell save DC 17):<br>At will: comprehend languages, detect evil and good, holy aura, pass without trace<br>3/day each: haste, longstrider<br>1/day each: plane shift, wind walk<br>Teleport (1/Day)The buraq magically teleports itself and its rider, along with any equipment it is wearing or carrying, to a location the buraq is familiar with, up to 1 mile away.
+</statblock>
 
 

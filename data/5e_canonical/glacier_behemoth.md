@@ -23,6 +23,7 @@ Overall, the Glacier Behemoth is a powerful adversary that can control the battl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Glacier Behemoth
 
 *Huge* *Beast* *unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Inexorable Charge:** If the glacier behemoth moves at least 10 feet, it can then use this action to continue moving in a 40-foot line that is 15 feet wide. Each creature in this line must make a DC 17 Dexterity saving throw. On a failure, a creature takes 35 (10d6) bludgeoning damage and is knocked prone. On a success, a creature takes half the damage and isn’t knocked prone. The glacier behemoth’s movement along this line doesn’t provoke opportunity attacks.
 
 
+</statblock>
 
 

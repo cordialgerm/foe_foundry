@@ -23,6 +23,7 @@ As a bonus action, the Giant Mole Lizard can execute a "Mass Shove," forcing eac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Mole Lizard
 
 *Large* *Beast* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Mass Shove:** Each Large or smaller creature within 10 ft. of the giant mole lizard and that isn’t grappled by it must make DC 14 Str save or be pushed up to 15 ft. away from the lizard and knocked prone.
 
 
+</statblock>
 
 

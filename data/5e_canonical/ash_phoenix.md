@@ -19,6 +19,7 @@ In combat, the Ash Phoenix utilizes a Multiattack action, allowing it to make tw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ash Phoenix
 
 *Large* *Undead* *neutral evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Ash Storm (Recharge 5-6):** The ash phoenix furiously beats its wings, throwing clinging ash into a 30-foot cone. Each creature in the area must make a DC 16 Dexterity saving throw. On a failure, a creature takes 28 (8d6) necrotic damage and is blinded until the end of its next turn. On a success, a creature takes half the damage and isn’t blinded.
 
 
+</statblock>
 
 

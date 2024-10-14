@@ -30,6 +30,7 @@ In terms of reactions, the Giant Mongoose features a Defensive Roll ability. Thi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Mongoose
 
 *Medium* *Beast* *unaligned*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Defensive Roll:** The mongoose adds its Athletics bonus to its AC against one attack that would hit it. To do so, the mongoose must see the attacker.
 
 
+</statblock>
 
 

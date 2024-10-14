@@ -19,6 +19,7 @@ For actions, the Fey Revenant can perform a Multiattack, making three attacks ei
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fey Revenant
 
 *Large* *Fey* *lawful evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Queen’s Grasp:** Ranged Weapon Attack: +7 to hit, ranged 30/60 ft., one target. Hit: The target is restrained by icy wisps of shadow. While restrained, the creature takes 7 (2d6) cold damage at the start of each of its turns. As an action, the restrained creature can make a DC 15 Strength check, bursting through the icy shadow on a success. The icy shadow can also be attacked and destroyed (AC 10; 5 hp; resistance to bludgeoning, piercing, and slashing damage; immunity to cold, necrotic, poison, and psychic damage).
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ Furthermore, the Apostle is capable of spellcasting, utilizing Wisdom as the spe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: Apostle
 
 *Medium* *Humanoid* *any alignment*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Wis (DC 15): At will: guidance spare the dying thaumaturgy3/day ea: bless cure wounds (3rd-level) hold person lesser restoration1/day ea: bestow curse daylight freedom of movement mass cure wounds revivify
 
 
+</statblock>
 
 

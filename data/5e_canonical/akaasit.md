@@ -35,6 +35,7 @@ With its potent combination of speed, resistance to magic, and offensive capabil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Akaasit
 
 *Medium* *Construct* *unaligned*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Time-Assisted Counterattack:** The akaasit’s awareness of the near future allows it to see attacks before they happen. When a creature the akaasit can see attacks it while within 5 feet of it, the akaasit can attack the creature before the creature’s attack hits. The akaasit makes a single arm blade attack against the creature. If the creature is reduced to 0 hp as a result of the akaasit’s attack, the creature’s attack doesn’t hit the akaasit.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ The Segmented Gaze ability allows the Wardu to concentrate magical energy within
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wardu
 
 *Medium* *Aberration* *neutral evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Segmented Gaze:** The wardu’s segmented central eye flares with unstable magical energy. One creature the wardu can see within 30 feet of it must succeed on a DC 15 Constitution saving throw or suffer a random condition until the end of its next turn. Roll a d4 to determine the condition: blinded (1), frightened (2), deafened (3), or incapacitated (4).
 
 
+</statblock>
 
 

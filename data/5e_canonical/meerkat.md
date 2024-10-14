@@ -23,6 +23,7 @@ For actions in combat, the Meerkat has a Bite attack, which is a melee weapon at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Meerkat
 
 *Tiny* *Beast* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, 5 ft., one creature,. 1 piercing.
 
 
+</statblock>
 
 

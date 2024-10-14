@@ -21,6 +21,7 @@ In terms of reactions, the Sand Spider can perform a Trapdoor Ambush, where it s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sand Spider
 
 *Large* *Beast* *Unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Trapdoor Ambush:** When the sand spider is burrowed just below the surface of sand and a Medium or smaller creature enters the space on the surface just above where it is burrowed, the sand spider makes one Impaling Leg attack against the creature, bursting from the sand and revealing itself in the process. The target has disadvantage on the saving throw to avoid being grappled.
+</statblock>
 
 

@@ -23,6 +23,7 @@ In summary, the Alchemical Apprentice provides a mix of clever potion-related ab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alchemical Apprentice
 
 *Small* *Ooze* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Magical Burble:** Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 10 (3d6) acid, cold, fire, or poison damage.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ Overall, the Wind's Harp combines strategic use of stealth, powerful ranged atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wind's Harp
 
 *Medium* *Fiend* *lawful evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Diabolical Countersong:** When a spell is cast within 60 feet of it, the wind's harp devil plays a single, infernal note, interrupting the spell. This reaction works like the counterspell spell, except it only works on spells of 3rd level or lower.
 
 
+</statblock>
 
 

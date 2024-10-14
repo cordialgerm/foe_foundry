@@ -23,6 +23,7 @@ Overall, the Lotus Golem serves as an effective frontline fighter, capable of de
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lotus Golem
 
 *Large* *Construct* *unaligned*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Arcane Absorption:** When a spell is cast within 30 feet of it, the golem absorbs some of the spell's potency. If it is a spell that forces a saving throw, the DC to succeed drops by 2. If it is a spell with an attack roll, the attack roll has disadvantage. The golem regains 20 hp and gains 1 charge point in its Arcane Pool.
 
 
+</statblock>
 
 

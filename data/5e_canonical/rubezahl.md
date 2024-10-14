@@ -25,6 +25,7 @@ Rubezahl can also cast spells using Charisma as its spellcasting ability. It has
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rubezahl
 
 *Medium* *Fiend* *Chaotic Evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Gore:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) piercing damage, and the target creature must succeed on a DC 16 Strength saving throw or be knocked prone.
 - **Thunderstrike (Recharge 5–6):** The rubezahl calls a sizzling bolt of lightning out of the sky, or from the air if underground or indoors, to strike a point the rubezahl can see within 150 feet of it. Each creature within 20 feet of that point must make a DC 16 Dexterity saving throw. On a failure, the creature takes 36 (8d8) lightning damage and is stunned until the end of its next turn. On a success, the creature takes half the damage and isn’t stunned.
 - **Spellcasting:** The rubezahl casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 16):<br>At will: disguise self, fog cloud<br>3/day each: gust of wind, sleet storm<br>1/day: control weather (as an action)
+</statblock>
 
 

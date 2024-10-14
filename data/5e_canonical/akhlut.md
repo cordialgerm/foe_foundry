@@ -21,6 +21,7 @@ For combat, the Akhlut can utilize a Multiattack action, allowing it to make two
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Akhlut
 
 *Large* *Beast* *unaligned*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Tail Slam:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 22 (4d8 +4) bludgeoning damage.
 
 
+</statblock>
 
 

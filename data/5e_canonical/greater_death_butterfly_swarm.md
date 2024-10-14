@@ -21,6 +21,7 @@ The Greater Death Butterfly Swarm is a compelling mix of danger and strategy tha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greater Death Butterfly Swarm
 
 *Huge* *Swarm* *Beast* *Unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The swarm makes two Bites attacks.
 - **Bites:** Melee Weapon Attack: +7 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 21 (6d6) piercing damage, or 10 (3d6) piercing damage if the swarm has half of its hp or fewer. The target must make a DC 15 Constitution saving throw. On a failure, it takes 10 (3d6) poison damage and is poisoned for 1 minute. On a success, it takes half the damage and isn’t poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

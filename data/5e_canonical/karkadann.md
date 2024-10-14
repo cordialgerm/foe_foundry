@@ -19,6 +19,7 @@ The Karkadann's actions include a Multiattack option, allowing it to strike twic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Karkadann
 
 *Huge* *Monstrosity* *neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Healing Touch (3/Day):** Touches another creature with its horn. The target magically regains 22 (4d8+2) hp and is cured of all diseases and poisons afflicting it.
 
 
+</statblock>
 
 

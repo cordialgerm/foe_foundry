@@ -23,6 +23,7 @@ The ability to become invisible for up to an hour through its Invisibility spell
 
 Source: 5e_srd
 
+<statblock>
 ### Green Hag
 
 *Medium fey, neutral evil*
@@ -61,7 +62,8 @@ At will: *dancing lights*, *minor illusion*, *vicious mockery*
 
 The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 20 Intelligence (Investigation) check to discern that the hag is disguised.
 
-***Invisible Passage***. The hag magically turns invisible until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While invisible, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is invisible with her.
+***Invisible Passage***. The hag magically turns invisible until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While invisible, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is invisible with her.</statblock>
+
 
 
 
@@ -69,6 +71,7 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Green Hag
 
 *Medium* *Fey*
@@ -105,5 +108,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility (2nd-Level; V, S, Concentration):** The hag is invisible for 1 hour. The spell ends if the hag attacks  uses Hex  or casts a spell.
 
 
+</statblock>
 
 

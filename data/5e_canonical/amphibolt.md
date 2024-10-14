@@ -34,6 +34,7 @@ In terms of actions, the Amphibolt can perform the following:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Amphibolt
 
 *Large* *Monstrosity* *unaligned*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Swallow:** Makes one Bite vs. a Med or smaller target it is grappling. If attack hits target is swallowed and grapple ends. Swallowed target is blinded and restrained has total cover vs. attacks and effects outside ambphibolt and it takes 10 (3d6) lightning at start of each of amphibolt’s turns. Amphibolt can have only one target swallowed at a time. If amphibolt takes 15 damage or more on a single turn from swallowed creature amphibolt: DC 14 Con save at end of that turn or regurgitate creature which falls prone in a space within 5 ft. of amphibolt. If amphibolt dies swallowed creature is no longer restrained by it and can escape corpse using 5 ft. of move exiting prone.
 
 
+</statblock>
 
 

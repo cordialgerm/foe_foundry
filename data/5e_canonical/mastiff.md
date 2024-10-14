@@ -39,6 +39,7 @@ As a reaction, the Mastiff can utilize the Protect Friend ability. This ability 
 
 Source: 5e_srd
 
+<statblock>
 ### Mastiff
 
 *Medium beast, unaligned*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
 
-**Mastiffs** are impressive hounds prized by humanoids for their loyalty and keen senses. Mastiffs can be trained as guard dogs, hunting dogs, and war dogs. Halflings and other Small humanoids ride them as mounts.
+**Mastiffs** are impressive hounds prized by humanoids for their loyalty and keen senses. Mastiffs can be trained as guard dogs, hunting dogs, and war dogs. Halflings and other Small humanoids ride them as mounts.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mastiff
 
 *Medium* *Beast*
@@ -102,6 +105,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) piercing damage. If the target is a creature  it makes a DC 11 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 
 
@@ -110,6 +114,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mastiff
 
 *Medium beast*
@@ -141,5 +146,6 @@ Source: 5e_artisinal_monsters
 
 - **Protect Friend.** When a friendly Humanoid the mastiff can see is hit by an attack from a creature within 5 feet of the mastiff, the mastiff can make one Bite attack against that attacking creature.
 
+</statblock>
 
 

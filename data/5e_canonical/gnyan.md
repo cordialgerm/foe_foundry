@@ -23,6 +23,7 @@ As a bonus action, Gnyan can utilize "Snow Step" to teleport up to 30 feet to an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gnyan
 
 *Large* *Elemental* *neutral good*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Snow Step:** Teleports with items worn/carried up to 30' to unoccupied space it can see. Origin and destination must have snow.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ During its action sequence, the Burrowling can perform a "Multiattack," using bo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Burrowling
 
 *Small* *Humanoid* *Lawful Neutral*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage.
 - **Sling:** Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage.
+</statblock>
 
 

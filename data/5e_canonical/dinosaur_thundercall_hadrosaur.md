@@ -32,6 +32,7 @@ Lastly, it can utilize the Sonic Shield reaction, which grants it a +4 bonus to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dinosaur, Thundercall Hadrosaur
 
 *Huge* *Monstrosity* *unaligned*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Sonic Shield:** The hadrosaur adds 4 to its AC vs. one ranged attack that would hit it. To do so the hadrosaur must see the attacker and not be in an area of magical silence.
 
 
+</statblock>
 
 

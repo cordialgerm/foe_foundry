@@ -23,6 +23,7 @@ The Ravenala also possesses healing abilities, having three uses of Healing Leav
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ravenala
 
 *Large* *Plant* *Neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Lamenting Engulfment:** The ravenala engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded and restrained, it has total cover against attacks and other effects outside the ravenala, and it must succeed on a DC 14 Charisma saving throw at the start of each of the ravenala’s turns or sing a lament of the mistakes and misdeeds it has performed in its lifetime. While singing, the engulfed creature can still act, but it can’t otherwise speak, including casting spells with verbal components. If the ravenala moves, the engulfed creature moves with it. The ravenala can have only one creature engulfed at a time.
 - **Healing Leaves (3/Day):** The ravenala removes a leaf from its head and wraps the leaf around the wounds of one creature it can see within 5 feet of it. The target magically regains 10 (3d6) hp and is freed from any disease, poison, blindness, or deafness.
 - **Encourage Growth (3/Day):** The ravenala whispers magical words of growth to nonmagical plants on a point it can see within 30 feet of it. The plants burst with life and spread rapidly. The area within 20 feet of that point becomes difficult terrain for 24 hours.
+</statblock>
 
 

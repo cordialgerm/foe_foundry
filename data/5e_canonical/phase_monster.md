@@ -31,6 +31,7 @@ As a bonus action, the Phase Monster can shapeshift into the form of a small goa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Phase Monster
 
 *Large* *Monstrosity*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Shapeshift:** The phase monster magically changes its form to that of a Small goat or into its true form. While in goat form, it loses its fly speed and Mirror Image trait. Its statistics, other than its size and speed, are unchanged in each form.
 
 
+</statblock>
 
 

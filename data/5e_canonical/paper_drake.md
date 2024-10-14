@@ -29,6 +29,7 @@ Lastly, the Paper Drake has a unique bonus action called Fold, which enables it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Paper Drake
 
 *Small* *Dragon* *Neutral*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Fold:** The paper drake can fold and reshape its papery body to change its size between Tiny, Small, and Medium. It can also use this bonus action to fold itself into the shape of a book, which doesn’t have wings, or back into its Small form. Without wings, it loses its flying speed. Its statistics, other than its size and speed, are the same in each form. It reverts to its Small form if it dies.
+</statblock>
 
 

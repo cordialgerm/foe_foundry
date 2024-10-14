@@ -23,6 +23,7 @@ In terms of actions, the Spirit Lamp can execute a Multiattack, allowing it to m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spirit Lamp
 
 *Medium* *Undead* *chaotic evil*
@@ -61,5 +62,6 @@ If the creature remains cursed after 30 days, it is irreversibly changed by the 
 - **Lantern Beam:** Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 11 (2d10) fire damage.
 
 
+</statblock>
 
 

@@ -19,6 +19,7 @@ Overall, the Sewer Weird showcases a blend of resilience, mobility, and damaging
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sewer Weird
 
 *Large* *Elemental* *neutral evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Sewer Overflow (Recharge 5–6):** Emits a tide of filth and water from itself in a 15 ft. cube. Each creature in this cube: 18 (4d8) bludgeoning damage and 18 (4d8) poison and is infected with sewer plague (DC 15 Con half damage and isn’t infected).
 
 
+</statblock>
 
 

@@ -36,6 +36,7 @@ Overall, while the Pony is not a formidable combatant, it serves valuable roles 
 
 Source: 5e_srd
 
+<statblock>
 ### Pony
 
 *Medium beast, unaligned*
@@ -58,7 +59,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Hooves***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) bludgeoning damage.
+***Hooves***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) bludgeoning damage.</statblock>
+
 
 
 
@@ -66,6 +68,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pony
 
 *Medium* *Beast*
@@ -89,6 +92,7 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -97,6 +101,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pony
 
 *Medium beast*
@@ -124,5 +129,6 @@ Source: 5e_artisinal_monsters
 
 - **Hooves.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
 
+</statblock>
 
 

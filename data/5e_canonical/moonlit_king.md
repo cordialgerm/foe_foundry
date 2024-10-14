@@ -32,6 +32,7 @@ Additionally, the Moonlit King has the option to take three legendary actions, w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moonlit King
 
 *Medium* *Fey* *Neutral Good*
@@ -83,5 +84,6 @@ The Moonlit King can take 3 legendary actions, choosing from the options below. 
 - **Shift Moonlight:** The Moonlit King changes the brightness of each area of moonlight he can see within 120 feet of him from dim light to bright light or vice versa.
 - **Attack (Costs 2 Actions):** The Moonlit King makes a Crystal Staff or Moon Bolt attack.
 - **Spread Madness (Costs 2 Actions):** Each creature within 30 feet of the Moonlit King must succeed on a DC 19 Wisdom saving throw or suffer short-term madness. The Moonlit King can use this legendary action only when he is in moonlight.
+</statblock>
 
 

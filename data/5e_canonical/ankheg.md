@@ -38,6 +38,7 @@ Lastly, the Ankheg can use a bonus action called Save for Later. This allows it 
 
 Source: 5e_srd
 
+<statblock>
 ## Ankheg
 
 *Large monstrosity, unaligned*
@@ -62,7 +63,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage plus 3 (1d6) acid damage. If the target is a Large or smaller creature, it is grappled (escape DC 13). Until this grapple ends, the ankheg can bite only the grappled creature and has advantage on attack rolls to do so.
 
-***Acid Spray (Recharge 6)***. The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.
+***Acid Spray (Recharge 6)***. The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -70,6 +72,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ankheg
 
 *Large* *Monstrosity*
@@ -96,6 +99,7 @@ Source: 5e_artisinal_monsters
 - **Acid Spray (Recharge 6):** The ankheg spits a 30-foot-long  5-foot-wide stream of acid. Each creature in the area makes a DC 13 Dexterity saving throw  taking 14 (4d6) acid damage on a failure or half damage on a success. If the ankheg is grappling a target  it instead bathes the target in acid  dealing 14 (4d6) acid damage with no saving throw only to that target.
 
 
+</statblock>
 
 
 
@@ -104,6 +108,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ankheg
 
 *Large monstrosity (animal)*
@@ -136,5 +141,6 @@ Source: 5e_artisinal_monsters
 
 - **Save for Later.** The ankheg quickly digs a small hole and stuffs one creature grappled by it into the hole, burying the creature and ending the grapple. A buried creature is restrained and unable to breathe or stand up. A creature, including the buried creature, can take its action to free the buried creature by succeeding on a DC 13 STR check.
 
+</statblock>
 
 

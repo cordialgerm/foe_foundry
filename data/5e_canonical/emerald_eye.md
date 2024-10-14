@@ -23,6 +23,7 @@ Overall, the Emerald Eye serves as a sly and manipulative ally or adversary, str
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Emerald Eye
 
 *Tiny* *Construct* *Neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Phrenic Burst:** Melee or Ranged Spell Attack: +5 to hit, range 60 ft., one creature. Hit: 10 (2d6 + 3) psychic damage.
 - **Bind:** The emerald eye chooses a creature it can see within 30 feet of it that has an Intelligence of 6 or higher. The target must succeed on a DC 13 Charisma saving throw or the eye psychically binds itself to the target. If the target succeeds on the saving throw by 5 or more, it knows the eye attempted to bind to it. Otherwise, the target is unaware of the attempt. While bound to the emerald eye, the creature has resistance to psychic damage, but it has disadvantage on saving throws against the eye’s Compulsion. The eye can be bound to only one target at a time. If it binds to another, the effect on the previous target ends.
 - **Compel:** The emerald eye magically compels one creature it can see within 30 feet of it to move. The target must succeed on a DC 13 Charisma saving throw or be charmed by the eye for 1 minute. At the start of each of the charmed target’s turns, the emerald eye chooses a direction horizontal to the eye, and the target must use as much of its movement as possible to move in that direction on its turn. The target can take its action before it moves. The target can’t be compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

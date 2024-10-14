@@ -21,6 +21,7 @@ Overall, the Giant Snow Beetle's combination of strength, environmental camoufla
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Snow Beetle
 
 *Large* *Beast* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Snowball Shove:** The giant snow beetle tosses one of its rolled snowballs at a point it can see within 20 feet of it. Each creature within 5 feet of that point must make a DC 12 Dexterity saving throw. On a failure, a target takes 7 (2d6) bludgeoning damage and is knocked prone. On a success, a target takes half the damage and isn’t knocked prone.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ As a bonus action, the Incandescent One can use Celestial Inspiration to inspire
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Incandescent One
 
 *Medium* *Celestial* *chaotic good*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Celestial Inspiration:** Inspires one creature it can see within 60' of it. Whenever target makes attack roll or save before start of incandescent one’s next turn target can roll a d4 and add number rolled to the attack roll or save.
 
 
+</statblock>
 
 

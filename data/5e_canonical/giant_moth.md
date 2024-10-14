@@ -29,6 +29,7 @@ Additionally, once per day, the Giant Moth can unleash a special ability called 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Moth
 
 *Small* *Beast* *unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Powdery Wings (1/Day):** A 10-foot radius cloud of fine powder disperses from the giant moth. Each creature in that area must succeed on a DC 10 Constitution saving throw or be blinded until the end of its next turn.
 
 
+</statblock>
 
 

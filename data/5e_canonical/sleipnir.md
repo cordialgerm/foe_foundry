@@ -23,6 +23,7 @@ Lastly, Sleipnir’s reaction ability, Eight Hooves, can be triggered three time
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sleipnir
 
 *Large* *Monstrosity* *neutral good*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Eight Hooves (3/Day):** When a creature moves within 5 feet of the sleipnir, the sleipnir can move up to its speed without provoking opportunity attacks.
 
 
+</statblock>
 
 

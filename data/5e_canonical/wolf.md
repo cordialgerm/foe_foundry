@@ -33,6 +33,7 @@ Overall, the wolf is a dangerous creature in the wild, especially when encounter
 
 Source: 5e_srd
 
+<statblock>
 ### Wolf
 
 *Medium beast, unaligned*
@@ -61,7 +62,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
+***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.</statblock>
+
 
 
 
@@ -69,6 +71,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wolf
 
 *Medium* *Beast*
@@ -97,6 +100,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage. If the target is a creature  it makes a DC 12 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 
 
@@ -105,6 +109,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wolf
 
 *Medium beast*
@@ -133,5 +138,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage. If the target is a creature, it must succeed on a DC 12 STR save or be knocked prone.
 
+</statblock>
 
 

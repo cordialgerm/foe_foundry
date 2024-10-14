@@ -34,6 +34,7 @@ As a bonus action, the Goblin Skulker can employ Nimble Escape, allowing it to e
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Skulker
 
 *Small* *Humanoid*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 

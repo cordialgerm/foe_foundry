@@ -25,6 +25,7 @@ One of its most powerful abilities is the Discognitive Breath, which recharges o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Sapphire Dragon
 
 *Large* *Dragon*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Discognitive Breath (Recharge 5-6):** The dragon unleashes psychic energy in a 30-foot cone. Each creature in that area makes a DC 15 Intelligence saving throw  taking 49 (9d10) psychic damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

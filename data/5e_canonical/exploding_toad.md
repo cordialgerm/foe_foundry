@@ -27,6 +27,7 @@ Finally, the toad's reaction, “Death Leap,” allows it to turn a missed attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Exploding Toad
 
 *Tiny* *Monstrosity* *chaotic evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Death Leap:** The exploding toad can turn an attack that missed it into a hit or turn a successful saving throw into a failure.
 
 
+</statblock>
 
 

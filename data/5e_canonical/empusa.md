@@ -21,6 +21,7 @@ Overall, the Empusa is a dangerous foe with a blend of physical prowess, magical
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Empusa
 
 *Medium* *Monstrosity* *chaotic evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Kick:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage, and the target must succeed on a DC 15 Strength saving throw or be pushed up to 10 feet away from the empusa and knocked prone.
 
 
+</statblock>
 
 

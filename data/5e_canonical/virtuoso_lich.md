@@ -39,6 +39,7 @@ In conclusion, the Virtuoso Lich is an undead menace that combines artistic flai
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Virtuoso Lich
 
 *Medium* *Undead* *any evil alignment*
@@ -91,6 +92,7 @@ The virtuoso lich can take 3 legendary actions, choosing from the options below.
 - **Move:** The lich moves up to its speed without provoking opportunity attacks.
 - **Cast a Spell (Costs 3 Actions):** The lich casts a spell from its list of prepared spells, using a spell slot as normal.
 - **Unrestrained Art (Costs 3 Actions):** The lich unleashes the full force of its artistic talents on those nearby. Each creature with 10 feet of the lich must make a DC 16 Dexterity saving throw. On a failure, a creature takes 18 (4d8) damage of the type chosen with the Versatile Artist trait and is knocked prone. On a success, a creature takes half the damage and isn’t knocked prone.
+</statblock>
 
 
 
@@ -99,6 +101,7 @@ The virtuoso lich can take 3 legendary actions, choosing from the options below.
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Virtuoso Lich
 
 *Medium undead*
@@ -159,5 +162,6 @@ The virtuoso lich can take 3 legendary actions, choosing from the options below.
 ### Regional Effects
 
 - **1d10** If the lich dies, these effects fade in  days.
+</statblock>
 
 

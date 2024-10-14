@@ -27,6 +27,7 @@ In terms of actions, the Caltrop Golem can make two slam attacks or utilize its 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Caltrop Golem
 
 *Medium* *Construct* *unaligned*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Scattershot (Recharge 5-6):** The golem’s body explodes. Each creature within 15 feet of the golem must make a DC 15 Dexterity saving throw. On a failure, a creature takes 36 (8d8) piercing damage and is knocked prone. On a success, a creature takes half the damage and isn’t knocked prone. The golem immediately scatters.
 
 
+</statblock>
 
 

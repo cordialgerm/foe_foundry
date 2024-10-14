@@ -39,6 +39,7 @@ Overall, the Black Shuck is a powerful and versatile foe that can disrupt combat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Shuck
 
 *Large* *Fiend* *chaotic evil*
@@ -79,5 +80,6 @@ Source: 5e_artisinal_monsters
 - **Mist Stalker:** In dim light fog or mist it takes the Hide action.
 
 
+</statblock>
 
 

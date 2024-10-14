@@ -19,6 +19,7 @@ As a reaction, the Bugbear Champion has "Stubborn Attacker," which recharges on 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bugbear Champion
 
 *Medium humanoid*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 
 - **Stubborn Attacker (Recharge 5–6).** When the bugbear champion misses with an attack, it can change that miss to a hit.
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ For a bonus action, the Dire Wolf can use Hungry Growl. By staring down a creatu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wolf, Dire
 
 *Large beast*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Hungry Growl.** The wolf stares down and growls at one creature it can see within 30 feet of it. The target must succeed on a DC 13 WIS save or be frightened until the end of its next turn. The wolf has advantage on the next attack roll it makes against the frightened creature.
 
+</statblock>
 
 

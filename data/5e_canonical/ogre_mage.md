@@ -21,6 +21,7 @@ The Ogre Mage possesses several formidable spells with powerful effects: Hold Pe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre Mage
 
 *Large* *Giant*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Shapeshift:** The ogre changes its form into a Small or Medium humanoid, or back into its true form, which is a Large giant. Other than its size, its statistics are the same in each form. Its iron club, armor, and clothing change size with it. It reverts to its true form when it dies.
 
 
+</statblock>
 
 

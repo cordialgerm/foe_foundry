@@ -41,6 +41,7 @@ Overall, the Night Hag combines magical prowess with psychological manipulation,
 
 Source: 5e_srd
 
+<statblock>
 ### Night Hag
 
 *Medium fiend, neutral evil*
@@ -83,7 +84,8 @@ At will: *detect magic*, *magic missile*
 
 ***Etherealness***. The hag magically enters the Ethereal Plane from the Material Plane, or vice versa. To do so, the hag must have a *heartstone* in her possession.
 
-***Nightmare Haunting (1/Day)***. While on the Ethereal Plane, the hag magically touches a sleeping humanoid on the Material Plane. A *protection from evil and good* spell cast on the target prevents this contact, as does a *magic circle*. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 (1d10). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in the hag's *soul bag*. The reduction to the target's hit point maximum lasts until removed by the *greater restoration* spell or similar magic.
+***Nightmare Haunting (1/Day)***. While on the Ethereal Plane, the hag magically touches a sleeping humanoid on the Material Plane. A *protection from evil and good* spell cast on the target prevents this contact, as does a *magic circle*. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 (1d10). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in the hag's *soul bag*. The reduction to the target's hit point maximum lasts until removed by the *greater restoration* spell or similar magic.</statblock>
+
 
 
 
@@ -91,6 +93,7 @@ At will: *detect magic*, *magic missile*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Night Hag
 
 *Medium* *Fey*
@@ -125,6 +128,7 @@ Source: 5e_artisinal_monsters
 - **Nightmare Haunting (1/Day):** While on the Ethereal Plane  the hag magically touches a sleeping creature that is under the night hags Curse and is not protected by a magic circle or protection from evil and good spell or similar magic. As long as the touch persists  the target has terrible nightmares. If the nightmares last for 1 hour  the target gains no benefit from the rest  and its hit point maximum is reduced by 5 (1d10) until the curse ends. If this effect reduces the targets hit points maximum to 0  the target dies and the hag captures its soul. The reduction to the targets hit point maximum lasts until removed by greater restoration or similar magic.
 
 
+</statblock>
 
 
 
@@ -133,6 +137,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Night Hag
 
 *Medium fiend*
@@ -171,5 +176,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape.** The hag magically transforms into Medium or smaller Humanoid, or back into its true form, which is Fiend. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies.
 - **Etherealness.** The hag magically enters the Ethereal Plane from the Material Plane, or vice versa. The hag can use Cause Sorrow on an unconscious creature not on its plane; otherwise, the hag can’t affect or be affected by anything on the other plane.
 
+</statblock>
 
 

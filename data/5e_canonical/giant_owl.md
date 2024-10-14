@@ -35,6 +35,7 @@ Overall, the Giant Owl is a highly mobile and perceptive creature, perfect for s
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Owl
 
 *Large beast, neutral*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ***Talons***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 8 (2d6+1) slashing damage.
 
-**Giant owls** often befriend fey and other sylvan creatures and are guardians of their woodland realms.
+**Giant owls** often befriend fey and other sylvan creatures and are guardians of their woodland realms.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Owl
 
 *Large* *Beast*
@@ -101,6 +104,7 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) slashing damage.
 
 
+</statblock>
 
 
 
@@ -109,6 +113,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Owl, Giant
 
 *Large beast*
@@ -142,5 +147,6 @@ Source: 5e_artisinal_monsters
 
 - **Puffed Up Display.** When a creature the owl is aware of and that is within 30 feet of it attacks it, the owl can suddenly turn its piercing gaze on the creature, puff up its feathers, and release a quick hiss, startling the creature. The attacker has disadvantage on the attack roll.
 
+</statblock>
 
 

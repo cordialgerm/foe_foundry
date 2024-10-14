@@ -23,6 +23,7 @@ Additionally, as a bonus action, the Dawnfly can perform a Water Jet attack, whi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dawnfly, Desolation Nymph
 
 *Large* *Beast* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Water Jet:** Takes the Disengage action and each creature within 5 ft. of nymph: DC 13 Dex save or be blinded until end of its next turn.
 
 
+</statblock>
 
 

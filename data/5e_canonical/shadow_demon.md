@@ -25,6 +25,7 @@ As a bonus action, the Shadow Demon can use Shadow Sneak to take the Hide action
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Demon
 
 *Medium* *Fiend*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Sneak:** The demon takes the Hide action even if obscured only by dim light or darkness.
 
 
+</statblock>
 
 

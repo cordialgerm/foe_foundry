@@ -39,6 +39,7 @@ With a combination of combat skills, tactical abilities, and decent defenses, th
 
 Source: 5e_srd
 
+<statblock>
 ## Hobgoblin
 
 *Medium humanoid (goblinoid), lawful evil*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ***Longsword***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (1d8+1) slashing damage, or 6 (1d10+1) slashing damage if used with two hands.
 
-***Longbow***. *Ranged Weapon Attack:* +3 to hit, range 150/600 ft., one target. *Hit:* 5 (1d8+1) piercing damage.
+***Longbow***. *Ranged Weapon Attack:* +3 to hit, range 150/600 ft., one target. *Hit:* 5 (1d8+1) piercing damage.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hobgoblin
 
 *Medium* *Humanoid*
@@ -101,6 +104,7 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage.
 
 
+</statblock>
 
 
 
@@ -109,6 +113,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hobgoblin
 
 *Medium humanoid*
@@ -144,5 +149,6 @@ Source: 5e_artisinal_monsters
 
 - **Tactical Analysis.** The hobgoblin briefly studies one creature it can see within 30 feet of it. It has advantage on the next attack roll it makes against that creature before the start of the hobgoblin’s next turn.
 
+</statblock>
 
 

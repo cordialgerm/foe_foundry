@@ -23,6 +23,7 @@ In terms of actions, the Devil Shark has several damaging options. Its Bite atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil Shark
 
 *Gargantuan* *Monstrosity* *neutral evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Freezing Breath (Recharge 5-6):** The devil shark exhales a 60-foot cone of supernaturally cold water. Each creature in that area must make a DC 18 Constitution saving throw. On a failed save, a target takes 54 (12d8) cold damage and is pushed 20 feet away from the devil shark. On a success, a target takes half the damage but isn't pushed.
 
 
+</statblock>
 
 

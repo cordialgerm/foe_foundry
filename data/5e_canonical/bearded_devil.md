@@ -38,6 +38,7 @@ Overall, the Bearded Devil is a versatile and formidable foe that excels in comb
 
 Source: 5e_srd
 
+<statblock>
 ### Bearded Devil
 
 *Medium fiend (devil), lawful evil*
@@ -78,7 +79,8 @@ Source: 5e_srd
 
 ***Beard***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one creature. *Hit:* 6 (1d8+2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
-***Glaive***. *Melee Weapon Attack:* +5 to hit, reach 10 ft., one target. *Hit:* 8 (1d10+3) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1d10) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.
+***Glaive***. *Melee Weapon Attack:* +5 to hit, reach 10 ft., one target. *Hit:* 8 (1d10+3) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1d10) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.</statblock>
+
 
 
 
@@ -86,6 +88,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bearded Devil
 
 *Medium* *Fiend*
@@ -121,6 +124,7 @@ Source: 5e_artisinal_monsters
 - **Glaive:** Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 8 (1d10 + 3) slashing damage. If the target is a creature other than an undead or construct  it makes a DC 12 Constitution saving throw. On a failure  it receives an infernal wound and takes 5 (1d10) ongoing slashing damage. Each time the devil hits the wounded target with this attack  the ongoing damage increases by 5 (1d10). A creature can spend an action to make a DC 12 Medicine check  ending the ongoing damage on a success. At least 1 hit point of magical healing also ends the ongoing damage.
 
 
+</statblock>
 
 
 
@@ -129,6 +133,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bearded Devil
 
 *Medium fiend (devil)*
@@ -165,5 +170,6 @@ Source: 5e_artisinal_monsters
 
 - **Enhance Pain.** The bearded devil enhances the pain in one creature it can see within 30 feet of it that is poisoned from the devil’s Beard Spines attack or suffering an infernal wound from the devil’s Glaive attack. The target must succeed on a DC 13 CON save or be incapacitated until the end of its next turn, as it doubles over in pain.
 
+</statblock>
 
 

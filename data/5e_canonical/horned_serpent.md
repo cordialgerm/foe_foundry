@@ -23,6 +23,7 @@ In summary, the Horned Serpent is a powerful aquatic foe characterized by high d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horned Serpent
 
 *Large* *Monstrosity* *unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Gem Gaze (Recharge 5-6):** The horned serpent's gem flashes, bathing a 30-foot cone in iridescent light. Each creature in the area must make a DC 17 Constitution saving throw. On a failed save, a creature takes 35 (10d6) radiant damage and is infected with the corpse cough disease (see the Corpse Cough trait). On a success, a creature takes half the damage and isn't infected with the disease. Gem Gaze has no effect on constructs and undead.
 
 
+</statblock>
 
 

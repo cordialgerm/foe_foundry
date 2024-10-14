@@ -23,6 +23,7 @@ As a bonus action, the Volguloth can use Strangle on an enshrouded target, forci
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Volguloth
 
 *Medium* *Fiend* *Neutral Evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Strangle:** A creature enshrouded by the volguloth must succeed on a DC 13 Strength saving throw or take 10 (3d6) bludgeoning damage and begin suffocating, as the air is squeezed from its lungs.
+</statblock>
 
 

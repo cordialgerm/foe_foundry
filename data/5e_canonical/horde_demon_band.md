@@ -27,6 +27,7 @@ In terms of actions, the band has the following:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horde Demon Band
 
 *Large* *Fiend*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Mob Attack:** Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 50 (10d6 + 15) slashing damage  or half damage if the band is bloodied.
 
 
+</statblock>
 
 

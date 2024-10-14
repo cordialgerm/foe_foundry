@@ -27,6 +27,7 @@ Overall, the Ophio Fungus is a complex adversary that leverages its abilities to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ophio Fungus
 
 *Huge* *Plant* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Release Spores:** The ophio fungus focuses its spores on up to three creatures it can see within 30 feet of it. Each creature must make a DC 15 Constitution saving throw. On a failure, a creature takes 14 (4d6) poison damage and, if it is a humanoid, it becomes infected with ophio spores. On a success, a creature takes half the damage and isn’t infected with spores. A creature that doesn’t need to breathe automatically succeeds on this saving throw. A creature that does need to breathe can still be affected, even if it holds its breath.
 
 
+</statblock>
 
 

@@ -27,6 +27,7 @@ For reactions, the Chained Angel has Fiendish Cunning, which allows it to respon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chained Angel
 
 *Medium* *Celestial* *Neutral Evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Fiendish Cunning:** When a creature the chained angel can see within 60 feet of it casts a spell that appears on the cleric or paladin spell list, the chained angel can counter the spell with a successful ability check. This works like the counterspell spell with a +5 spellcasting ability check, except the chained angel must make the ability check no matter the level of the spell.
+</statblock>
 
 

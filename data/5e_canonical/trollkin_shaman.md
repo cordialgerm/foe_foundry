@@ -26,6 +26,7 @@ For its actions, the shaman can make a Multiattack, allowing it to use its staff
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trollkin Shaman
 
 *Medium* *Humanoid* *neutral*
@@ -62,5 +63,6 @@ Cantrips (at will): druidcraft, produce flame, shillelagh
 - **Inspire Ferocity (1/Day):** The trollkin shaman inspires ferocity in up to three trollkin it can see. Those trollkin have advantage on attack rolls and saving throws until the end of the shaman's next turn and gain 10 temporary hp.
 
 
+</statblock>
 
 

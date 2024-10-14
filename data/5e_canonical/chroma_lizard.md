@@ -19,6 +19,7 @@ In combat, the Chroma Lizard is capable of performing multiple actions thanks to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chroma Lizard
 
 *Large* *Beast* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Dazzling Display:** Causes its chrome scales to ripple casting dizzying reflections of light. Each creature that can see the chroma lizard must make DC 15 Con save or be blinded until the end of its next turn. The lizard can’t use this action while in darkness and creatures have advantage on the save if the chroma lizard is in dim light.
 
 
+</statblock>
 
 

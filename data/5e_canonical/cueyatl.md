@@ -23,6 +23,7 @@ In combat, the Cueyatl can attack with a spear, which can be used either as a me
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cueyatl
 
 *Small* *Humanoid* *lawful evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Spear:** Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage plus 7 (2d6) poison damage or 4 (1d8) piercing damage plus 7 (2d6) poison damage if used with two hands to make a melee attack.
 
 
+</statblock>
 
 

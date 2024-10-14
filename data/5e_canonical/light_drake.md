@@ -23,6 +23,7 @@ As for its actions, the Light Drake can make a melee weapon attack with its Bite
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Light Drake
 
 *Tiny* *Dragon* *neutral good*
@@ -55,5 +56,6 @@ At will: dancing lights, light, guiding star, starburst
 - **Breath Weapon (Recharge 6):** A light drake can breathe a 30-foot line of brilliant white light. Each creature in that line must make a DC 13 Dexterity saving throw. On a failure, a creature takes 5 (2d4) radiant damage and is blinded for 1 minute. On a success, a creature takes half the damage and isn’t blinded. A blinded creature can make a DC 13 Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

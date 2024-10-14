@@ -24,6 +24,7 @@ As a reaction, the Mire Fiend possesses Acidic Retribution. Upon taking any dama
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mire Fiend
 
 *Medium fiend (demon)*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 
 - **Acidic Retribution.** When the mire fiend takes damage, including any damage that reduces it to 0 HP, it can expel acid from its stinger in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 14 DEX save, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

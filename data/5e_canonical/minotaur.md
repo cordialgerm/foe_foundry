@@ -33,6 +33,7 @@ Overall, the Minotaur is a powerful melee combatant with abilities that enhance 
 
 Source: 5e_srd
 
+<statblock>
 ## Minotaur
 
 *Large monstrosity, chaotic evil*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ***Greataxe***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 17 (2d12+4) slashing damage.
 
-***Gore***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) piercing damage.
+***Gore***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) piercing damage.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Minotaur
 
 *Large* *Monstrosity*
@@ -105,6 +108,7 @@ Source: 5e_artisinal_monsters
 - **Roar of Triumph:** If the minotaur reduced a living creature to 0 hit points since the end of its last turn, it roars and gains 10 (3d6) temporary hit points.
 
 
+</statblock>
 
 
 
@@ -113,6 +117,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Minotaur
 
 *Large monstrosity*
@@ -150,5 +155,6 @@ Source: 5e_artisinal_monsters
 
 - **Bleeding Frenzy (44 HP or Fewer).** The minotaur enters a frenzy until the start of its next turn. Until the frenzy ends, the minotaur deals an extra 3 (1d6) damage of the weapon’s type each time it hits with a melee weapon attack, and the minotaur takes an extra 3 (1d6) damage of the weapon’s type the first time it is hit with a melee weapon attack before the frenzy ends.
 
+</statblock>
 
 

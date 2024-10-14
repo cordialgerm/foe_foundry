@@ -43,6 +43,7 @@ Overall, the mammoth is a powerful beast that excels in direct confrontations, u
 
 Source: 5e_srd
 
+<statblock>
 ### Mammoth
 
 *Huge beast, unaligned*
@@ -71,7 +72,8 @@ Source: 5e_srd
 
 ***Stomp***. *Melee Weapon Attack:* +10 to hit, reach 5 ft., one prone creature. *Hit:* 29 (4d10+7) bludgeoning damage.
 
-A **mammoth** is an elephantine creature with thick fur and long tusks. Stockier and fiercer than normal elephants, mammoths inhabit a wide range of climes, from subarctic to subtropical.
+A **mammoth** is an elephantine creature with thick fur and long tusks. Stockier and fiercer than normal elephants, mammoths inhabit a wide range of climes, from subarctic to subtropical.</statblock>
+
 
 
 
@@ -79,6 +81,7 @@ A **mammoth** is an elephantine creature with thick fur and long tusks. Stockier
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mammoth
 
 *Huge* *Beast*
@@ -108,6 +111,7 @@ Source: 5e_artisinal_monsters
 - **Trunk Fling:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (1d6+7) bludgeoning damage. If the target is a Large or smaller creature, it is pushed 10 feet away from the mammoth and knocked prone.
 
 
+</statblock>
 
 
 
@@ -116,6 +120,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mammoth
 
 *Huge beast*
@@ -149,5 +154,6 @@ Source: 5e_artisinal_monsters
 
 - **Trunk Grab.** The mammoth grabs one Large or smaller creature within 10 feet of it. The target must succeed on a DC 17 STR save or be grappled (escape DC 17). Until this grapple ends, the target is restrained, and the mammoth can’t use Trunk Grab on another creature.
 
+</statblock>
 
 

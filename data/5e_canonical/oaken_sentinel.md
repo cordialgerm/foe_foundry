@@ -21,6 +21,7 @@ With its various abilities and attacks, the Oaken Sentinel is a dangerous oppone
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Oaken Sentinel
 
 *Huge* *Plant* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Fling:** One Med or smaller creature grappled by the oaken sentinel is thrown up to 60' in a random direction and knocked prone. If a thrown target strikes a solid surface the target takes 3 (1d6) bludgeoning damage for every 10 ft. it was thrown. If the target is thrown at another creature that creature must make DC 16 Dex save or take the same damage and be knocked prone.
 
 
+</statblock>
 
 

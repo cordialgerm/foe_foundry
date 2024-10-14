@@ -21,6 +21,7 @@ Additionally, the weasel possesses a unique Musk Spray ability that recharges on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Albino Death Weasel
 
 *Large* *Beast* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Musk Spray (Recharge 5-6):** The weasel unleashes a spray of foul musk in a 20-foot cone. Each creature in that area must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

@@ -31,6 +31,7 @@ Overall, the Floe Hag is a unique blend of physical prowess and magical capabili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hag, Floe
 
 *Medium* *Fey* *neutral evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 13) no material components: At will: minor illusion prestidigitation3/day ea: fog cloud sleep1/day: sleet storm
 
 
+</statblock>
 
 

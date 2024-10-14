@@ -21,6 +21,7 @@ Overall, the Grave Behemoth is a terrifying embodiment of necromancy in an encou
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grave Behemoth
 
 *Huge* *Undead* *neutral evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Hurl Flesh (Recharge 5-6):** The grave behemoth vomits putrid flesh and 5 (2d4) zombies in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw. On a failure, a target takes 38 (11d6) necrotic damage and is covered in rotting slime for 1 minute. On a success, a target takes half the necrotic damage and isn't covered in slime. A creature, including the target, can take an action to clean off the slime. Zombies under the grave behemoth's control have advantage on attack rolls against creatures covered in a grave behemoth's slime.
 
 
+</statblock>
 
 

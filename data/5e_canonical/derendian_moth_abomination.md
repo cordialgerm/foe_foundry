@@ -21,6 +21,7 @@ For legendary actions, the Derendian Moth Abomination can use up to three of the
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Derendian Moth Abomination
 
 *Huge* *Monstrosity* *neutral evil*
@@ -64,5 +65,6 @@ The Derendian moth abomination can take 3 legendary actions, choosing from the o
 - **Detect:** The abomination makes a Perception check.
 - **Pursue:** The abomination moves its flying speed.
 - **Lay Eggs (Costs 2 Actions):** The Derendian moth abomination ejects a sticky mass of eggs within 5 feet of itself. At the beginning of the abomination’s next turn, the eggs hatch as a swarm of insects that attacks the abomination’s enemies.
+</statblock>
 
 

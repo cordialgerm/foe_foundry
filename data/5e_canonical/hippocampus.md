@@ -21,6 +21,7 @@ As a bonus action, the Hippocampus can perform a Rearing Kick, targeting a creat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hippocampus
 
 *Large beast*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Rearing Kick.** The hippocampus rears up and kicks its forelegs at one creature it can see within 5 feet of it. The target must succeed on a DC 14 STR save or be knocked prone or pushed up to 10 feet away from the hippocampus (the hippocampus’s choice).
 
+</statblock>
 
 

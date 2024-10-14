@@ -23,6 +23,7 @@ As a reaction, the Banshee can activate "Wounded Warning" when it takes damage f
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Banshee
 
 *Medium* *Undead*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Wounded Warning:** When the banshee takes damage from a creature within 60 feet, it uses Presage Death on the attacker.
 
 
+</statblock>
 
 

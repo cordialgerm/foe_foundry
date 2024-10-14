@@ -24,6 +24,7 @@ As a bonus action, the Hinn can utilize Churned Earth, causing the ground at a p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hinn
 
 *Large elemental (outsider)*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Churned Earth.** The hinn causes the ground on a point it can see within 60 feet of it to erupt. Each creature within 15 feet of that point must succeed on a DC 16 DEX save or take 10 (3d6) bludgeoning damage and be knocked prone.
 - **Genie Shape.** The hinn magically transforms into a Medium cloud of dust filled with miniscule clashing, bursting, and reforming rocks or back into its bipedal form. Its statistics are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its bipedal form if it dies. The hinn can’t use this bonus action to transform into its bipedal form while inside a Medium or smaller container.
 
+</statblock>
 
 

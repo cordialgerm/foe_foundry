@@ -21,6 +21,7 @@ In combat, the Shimmer Seal employs a Multiattack strategy, which allows it to m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shimmer Seal
 
 *Medium* *Beast* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Tusk:** Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 14 (3d6 + 4) slashing damage.
 
 
+</statblock>
 
 

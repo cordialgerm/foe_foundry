@@ -21,6 +21,7 @@ The Sting is another powerful melee weapon attack with the same +6 hit bonus and
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Ant Queen
 
 *Large* *Beast* *Unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The giant ant queen makes two Bite attacks and one Sting attack.
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the giant ant queen can’t Bite a different target.
 - **Sting:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage. The target must make a DC 13 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

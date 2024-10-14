@@ -35,6 +35,7 @@ Overall, the Young Green Dragon is a deadly and clever adversary with a mix of p
 
 Source: 5e_srd
 
+<statblock>
 # Young Green Dragon (Chromatic)
 
 *Large dragon, lawful evil*
@@ -73,7 +74,8 @@ Source: 5e_srd
 
 ***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.
 
-***Poison Breath (Recharge 5-6)***. The dragon exhales poisonous gas in a 30-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.
+***Poison Breath (Recharge 5-6)***. The dragon exhales poisonous gas in a 30-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -81,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Green Dragon
 
 *Huge* *Dragon*
@@ -116,6 +119,7 @@ Source: 5e_artisinal_monsters
 - **Poison Breath (Recharge 5-6):** The dragon exhales poisonous gas in a 30-foot cone. Each creature in that area makes a DC 15 Constitution saving throw  taking 42 (12d6) poison damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -124,6 +128,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Green Dragon
 
 *Large dragon*
@@ -155,5 +160,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.
 - **Poison Breath (Recharge 5–6).** The dragon exhales poisonous gas in a 30-foot cone. Each creature in that area must make a DC 14 CON save, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

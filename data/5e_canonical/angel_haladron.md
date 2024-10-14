@@ -21,6 +21,7 @@ For actions, the Haladron can use its Bolt of Law ranged spell attack, which has
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angel, Haladron
 
 *Tiny* *Celestial* *lawful good*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Stitch (3/Day):** The haladron repairs a single break or tear in an object it touches leaving no trace of the former damage. If the haladron uses this feature on a creature the creature regains 3 (1d6) hp.
 
 
+</statblock>
 
 

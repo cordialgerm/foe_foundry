@@ -27,6 +27,7 @@ Overall, the Great Wyrm White Dragon is a terror on the battlefield with its ble
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Great Wyrm White Dragon
 
 *Gargantuan* *Dragon*
@@ -75,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 18 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turn, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 23 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Raging Storm (1/Day:** For 1 minute, gusts of sleet emanate from the dragon in a 40-foot-radius sphere, spreading around corners. The area is lightly obscured, the ground is difficult terrain, and nonmagical flames are extinguished. The first time a creature other than the dragon moves on its turn while in the area, it must succeed on a DC 18 Dexterity saving throw or take 11 (2d10) cold damage and fall prone (or fall if it is flying).
+</statblock>
 
 

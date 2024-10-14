@@ -19,6 +19,7 @@ In combat, the Shiftshroom can use the Slam action. This melee weapon attack has
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shiftshroom
 
 *Medium* *Plant* *unaligned*
@@ -47,5 +48,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ It also has legendary actions that further enhance its combat prowess. The Move 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tatzelwurm
 
 *Medium* *Dragon* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Move:** Up to half its speed with o provoking opportunity attacks.
 - **Angry Hiss (2):** Each creature within 30' of it: frightened until the end of its next turn (DC 13 Wis negates).
 - **Tail Slap (2):** Swings its tail in a wide arc around it. Each creature within 10 ft. knocked prone (DC 14 Str negates).
+</statblock>
 
 

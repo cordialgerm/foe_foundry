@@ -21,6 +21,7 @@ Overall, the Vampire Patrician is a multi-faceted adversary, combining resilienc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire Patrician
 
 *Medium* *Undead* *lawful evil*
@@ -67,5 +68,6 @@ Sunlight Hypersensitivity. The patrician takes 20 radiant damage when it starts 
 - **Release the Hounds! (1/Day):** The vampire patrician calls 4d6 hunting hounds (use mastiff statistics) to its side. While outdoors, the vampire patrician can call 4d6 hunting raptors (use blood hawk statistics) instead. These creatures arrive in 1d4 rounds, helping the patrician and obeying its spoken commands. The beasts remain for 1 hour, until the patrician dies, or until the patrician dismisses them as a bonus action.
 
 
+</statblock>
 
 

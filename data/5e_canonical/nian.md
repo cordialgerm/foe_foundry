@@ -25,6 +25,7 @@ The Nian also has a special ability called Year's Termination, which it can use 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nian
 
 *Large* *Monstrosity* *chaotic neutral*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Year's Termination (1/Day):** The nian creates magical darkness and silence around it in a 15-foot-radius sphere that moves with it and spreads around corners. The dark silence lasts as long as the nian maintains concentration, up to 10 minutes (as if concentrating on a spell). The nian sees objects in the sphere in shades of gray. Darkvision can't penetrate the darkness, no natural light can illuminate it, no sound can be created within or pass through it, and any creature or object entirely inside the sphere of dark silence is immune to thunder damage. Creatures entirely inside the darkness are deafened and can't cast spells that include a verbal component. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is destroyed.
 
 
+</statblock>
 
 

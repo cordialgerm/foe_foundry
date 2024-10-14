@@ -23,6 +23,7 @@ Lastly, it possesses an Invisibility ability that it can use once a day, enablin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scarecrow Harvester
 
 *Medium* *Construct*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility (1/Day):** The scarecrow  along with any mount it is riding  is invisible for 1 hour or until it attacks or uses Scare  Fire Breath  or Pumpkin Head.
 
 
+</statblock>
 
 

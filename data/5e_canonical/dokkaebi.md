@@ -25,6 +25,7 @@ Overall, the Dokkaebi stands out as a versatile creature, capable of engaging in
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dokkaebi
 
 *Medium* *Fey* *chaotic neutral or chaotic good*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** Magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Items wears or carries are invisible with it. Can’t use this if it doesn’t have its hat.
 
 
+</statblock>
 
 

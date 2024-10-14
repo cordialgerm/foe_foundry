@@ -23,6 +23,7 @@ Overall, the Flying Snake utilizes its speed and flight to avoid confrontation, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snake, Flying
 
 *Tiny beast*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 
 - **Reflexive Escape.** When a creature the snake can see attacks it, the snake can move up to 5 feet. If this movement puts the snake out of reach of the attack, the attack misses.
 
+</statblock>
 
 

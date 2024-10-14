@@ -29,6 +29,7 @@ Overall, the Warlord's Ghost is a formidable undead opponent with abilities and 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Warlords Ghost
 
 *Medium* *Undead*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Wounded Warning:** When the banshee takes damage from a creature within 60 feet, it uses Presage Death on the attacker.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ Overall, the Ala is a dangerous opponent that combines mobility, poison damage, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ala
 
 *Medium* *Fey* *Chaotic Evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage plus 7 (2d6) poison damage.
 - **Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) slashing damage plus 7 (2d6) poison damage.
 - **Lightning’s Kiss (Recharge 5–6):** The ala launches a bolt of lightning at up to three targets it can see within 30 feet of it. Each target must make a DC 16 Dexterity saving throw, taking 28 (8d6) lightning damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

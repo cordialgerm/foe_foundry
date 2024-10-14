@@ -25,6 +25,7 @@ Additionally, the Lamassu can take three legendary actions. These actions includ
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lamassu
 
 *Large* *Celestial* *lawful good*
@@ -69,5 +70,6 @@ The lamassu can take 3 legendary actions, choosing from the options below. Only 
 - **Detect:** The lamassu makes a Wisdom (Perception) check.
 - **Claw Attack:** The lamassu makes one claw attack.
 - **Wing Attack (Costs 2 Actions):** The lamassu beats its wings. Each creature within 10 feet of it must succeed on a DC 16 Dexterity saving throw or take 11 (2d6 + 4) bludgeoning damage and be knocked prone. The lamassu can then fly up to its flying speed.
+</statblock>
 
 

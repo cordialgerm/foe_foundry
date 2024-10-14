@@ -31,6 +31,7 @@ For its defensive maneuver, the Moon Drake can employ the Form of Moonlight reac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moon Drake
 
 *Medium* *Dragon* *neutral*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Form of Moonlight:** When the moon drake takes damage or is restrained, it can transmute its physical form into an incorporeal form of pure moonlight until the end of its next turn. While in this form, it has resistance to cold, fire, and lightning damage and immunity to bludgeoning, piercing, and slashing damage from nonmagical attacks. While in this form, the drake can pass through openings at least 1 inch wide and through transparent objects. It takes 5 (1d10) force damage if it ends its turn inside an object.
 
 
+</statblock>
 
 

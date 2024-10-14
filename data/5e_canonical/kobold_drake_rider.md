@@ -34,6 +34,7 @@ As a reaction, the Kobold Drake Rider possesses **Failsafe Equipment**, which in
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold, Drake Rider
 
 *Small* *Humanoid* *lawful neutral*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Failsafe Equipment:** The drake rider wears wing-like arm and feet flaps folded on its back. If its mount dies or it is dismounted the rider descends 60' per round and takes no damage from falling if its mount was flying or it gains a swimming speed of 30' for 1 min if its mount was swimming.
 
 
+</statblock>
 
 

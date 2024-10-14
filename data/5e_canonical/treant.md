@@ -31,6 +31,7 @@ Overall, the Treant is a formidable foe, able to deal substantial damage, contro
 
 Source: 5e_srd
 
+<statblock>
 ## Treant
 
 *Huge plant, chaotic good*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Rock***. *Ranged Weapon Attack:* +10 to hit, range 60/180 ft., one target. *Hit:* 28 (4d10+6) bludgeoning damage.
 
-***Animate Trees (1/Day)***. The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.
+***Animate Trees (1/Day)***. The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Treant
 
 *Huge* *Plant*
@@ -109,5 +112,6 @@ Source: 5e_artisinal_monsters
 - **Animate Plant:** The treant magically animates a Large or larger plant within 60 feet. The plant is immobile  but it acts on the treants initiative and can make slam attacks  or rock attacks if there are rocks to throw within 10 feet of it. Non-plant creatures treat the ground within 15 feet of the plant as difficult terrain  as surrounding roots conspire to trip and grasp moving creatures. The plant remains animated for 1 hour. If the treant uses this action while it has three plants animated in this way  the plant that has been animated the longest returns to normal.
 
 
+</statblock>
 
 

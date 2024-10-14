@@ -21,6 +21,7 @@ Finally, as a bonus action, the Tosculi Elite Bow Raider can utilize the Skirmis
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tosculi Elite Bow Raider
 
 *Medium* *Humanoid* *Lawful Evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Skirmisher:** The tosculi takes the Dash or Disengage action.
+</statblock>
 
 

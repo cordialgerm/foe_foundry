@@ -23,6 +23,7 @@ Additionally, as a bonus action, the Vapor Lynx can perform a "Fog Step," telepo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vapor Lynx
 
 *Large* *Monstrosity* *Chaotic Neutral*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Fog Step:** The vapor lynx teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see. The origin and destination spaces must contain fog.
+</statblock>
 
 

@@ -23,6 +23,7 @@ The Cutthroat has two bonus actions that enhance its combat versatility. The fir
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cutthroat
 
 *Medium* *Humanoid*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Rapid Attack:** The cutthroat attacks with their shortsword.
 
 
+</statblock>
 
 

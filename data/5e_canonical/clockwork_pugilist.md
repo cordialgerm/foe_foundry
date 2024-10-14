@@ -41,6 +41,7 @@ Overall, the Clockwork Pugilist is a formidable combatant, efficiently blending 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Pugilist
 
 *Medium* *Construct* *unaligned*
@@ -80,5 +81,6 @@ Source: 5e_artisinal_monsters
 - **:** [+]Parry[/+] +2 to its AC vs. one melee attack that would hit it. Must see attacker and have at least one hand empty.
 
 
+</statblock>
 
 

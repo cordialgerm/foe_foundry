@@ -23,6 +23,7 @@ In summary, the Doppelrat excels in evasion, deception, and inflicting debilitat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Doppelrat
 
 *Tiny* *Monstrosity* *Unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or contract the horrific doppeling disease (see the Horrific Doppeling trait).
+</statblock>
 
 

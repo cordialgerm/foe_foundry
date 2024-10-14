@@ -21,6 +21,7 @@ In terms of reactions, the Fiendish Sacrifice ability allows the Devilbound Gnom
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devilbound Gnome
 
 *Small* *Humanoid* *Any Evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Fiendish Sacrifice:** When the devilbound gnome is reduced to 0 hp, it can sacrifice a Fiend called with the Hell’s Servitor’s action or sacrifice its bonded imp, preventing the damage and killing the chosen Fiend. If the gnome sacrifices its bonded imp, it loses its Infernal Blessing and Infernal Bond traits until it receives a new imp from its patron devil.
+</statblock>
 
 

@@ -35,6 +35,7 @@ As a bonus action, the Ettercap can use the Web ability, which recharges on a ro
 
 Source: 5e_srd
 
+<statblock>
 ## Ettercap
 
 *Medium monstrosity, neutral evil*
@@ -71,7 +72,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) slashing damage.
 
-***Web (Recharge 5-6)***. *Ranged Weapon Attack:* +4 to hit, range 30/60 ft., one Large or smaller creature. *Hit:* The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect also ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage.
+***Web (Recharge 5-6)***. *Ranged Weapon Attack:* +4 to hit, range 30/60 ft., one Large or smaller creature. *Hit:* The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect also ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage.</statblock>
+
 
 
 
@@ -79,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ettercap
 
 *Medium* *Monstrosity*
@@ -117,6 +120,7 @@ Source: 5e_artisinal_monsters
 - **Web (Recharge 5-6):** Ranged Weapon Attack: +5 to hit, range 20/60 ft., one Large or smaller creature. Hit: The creature is restrained by webs. As an action, a creature can make a DC 11 Strength check, breaking the webs on a success. The effect also ends if the webs are destroyed. They have AC 10, 1 hit point, and immunity to all damage except slashing, fire, and force.
 
 
+</statblock>
 
 
 
@@ -125,6 +129,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ettercap
 
 *Medium monstrosity*
@@ -162,5 +167,6 @@ Source: 5e_artisinal_monsters
 
 - **Web (Recharge 4–6).** The ettercap launches a gob of webbing at one creature it can see within 30 feet of it. The target must succeed on a DC 13 DEX save or be restrained. A creature, including the restrained target, can take its action to free the target from the webbing by succeeding on a DC 13 STR check. The webbing can also be attacked and destroyed (AC 10; HP 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).
 
+</statblock>
 
 

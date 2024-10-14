@@ -25,6 +25,7 @@ Overall, the Vines of Nemthyr is a potent creature that combines defensive capab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vines of Nemthyr
 
 *Large* *Plant* *neutral evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Thorn Spray (Recharge 6):** The vines of Nemthyr shoots poisonous thorns in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 35 (10d6) poison damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

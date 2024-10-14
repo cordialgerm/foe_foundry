@@ -21,6 +21,7 @@ Overall, the Giant Wasp poses a vicious threat, leveraging its poison capabiliti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Insect, Giant Wasp
 
 *Medium beast*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 
 - **Assailing Pheromone.** When the wasp takes damage, it can release a scent perceptible only to other wasps. Each wasp within 10 feet of this wasp has advantage on the next attack roll it makes before the end of its next turn.
 
+</statblock>
 
 

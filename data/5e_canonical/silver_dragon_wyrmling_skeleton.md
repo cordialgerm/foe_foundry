@@ -41,6 +41,7 @@ Overall, the Silver Dragon Wyrmling Skeleton combines formidable offensive capab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Silver Dragon Wyrmling Skeleton
 
 *Medium* *Undead* *lawful evil*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapons (Recharge 5-6):** The dragon uses one of the following breath weapons: <br>* Shard Breath. The skeleton exhales a 15-foot cone of bone shards. Each creature in that area must make a DC 13 Dexterity saving throw, taking 18 (4d8) piercing damage on a failed save, or half as much damage on a successful one. <br>* Noxious Breath. The skeleton exhales a 15-foot cone of gas. Each creature in the area must succeed on a DC 13 Constitution saving throw or become poisoned for 1 minute. A creature poisoned in this way can repeat the saving throw at the end of each of its turns, ending the poisoned condition on itself on a success.
 
 
+</statblock>
 
 

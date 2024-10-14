@@ -21,6 +21,7 @@ Additionally, the Efreeti Noble can use its bonus action to create a Fiery Wall 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Efreeti Noble
 
 *Large* *Elemental*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Fiery Wall (1/Day):** An opaque wall of magical flame rises from the ground within 60 feet. The wall is 6 inches thick and can be up to 20 feet high and 30 feet long. Each creature within the wall when it appears makes a DC 15 Dexterity saving throw, taking 18 (4d8) fire damage on a failed save or half damage on a success. A creature also takes 18 (4d8) fire damage when it enters the wall for the first time on a turn or ends its turn there. The wall disappears when the efreet is killed or incapacitated, or when it uses an action to dismiss it.
 
 
+</statblock>
 
 

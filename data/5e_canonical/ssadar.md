@@ -23,6 +23,7 @@ Ssadar are dangerous foes on the battlefield, bringing both melee prowess and de
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ssadar
 
 *Medium* *Humanoid* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Spit Fire:** Ranged Weapon Attack: +4 to hit, range 60 ft., one target. Hit: 7 (2d6) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 2 (1d4) fire damage at the start of each of its turns.
 
 
+</statblock>
 
 

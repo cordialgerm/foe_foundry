@@ -25,6 +25,7 @@ In summary, the Clurichaun is a clever and tricky fey creature with both magical
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clurichaun
 
 *Tiny* *Fey* *Chaotic Neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.
 - **Bawdy Remark:** Ranged Spell Attack: +5 to hit, range 30 ft., one creature. Hit: 5 (1d4 + 3) psychic damage, and the target must succeed on a DC 13 Wisdom saving throw or be incapacitated until the end of its next turn as it doubles over in laughter or freezes up in embarrassment (the target’s choice).
 - **Spellcasting:** The clurichaun casts one of the following spells, requiring alcohol as the only material component and using Charisma as the spellcasting ability (spell save DC 13):<br>At will: mending, purify food and drink<br>1/day each: blur, heroism, suggestion
+</statblock>
 
 

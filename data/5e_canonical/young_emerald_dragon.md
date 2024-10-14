@@ -27,6 +27,7 @@ The Young Emerald Dragon can utilize its "Maddening Breath" special ability, whi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Emerald Dragon
 
 *Large* *Dragon*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Maddening Breath (Recharge 5-6):** The dragon screams  stripping flesh from bone in a 30-foot cone. Each creature in that area makes a DC 15 Constitution saving throw  taking 44 (8d10) thunder damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

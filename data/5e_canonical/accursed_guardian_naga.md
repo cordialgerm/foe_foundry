@@ -39,6 +39,7 @@ Additionally, the Accursed Guardian Naga has a Bonus Action called **Shapeshift*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Accursed Guardian Naga
 
 *Large* *Monstrosity*
@@ -99,5 +100,6 @@ Source: 5e_artisinal_monsters
 - **Shapeshift:** The naga changes its form to that of a specific Medium humanoid, a Medium snake-human hybrid with the lower body of a snake, or its true form, which is a Large snake. While shapeshifted, its statistics are unchanged except for its size. It reverts to its true form if it dies.
 
 
+</statblock>
 
 

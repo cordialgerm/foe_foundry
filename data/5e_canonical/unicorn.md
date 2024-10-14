@@ -41,6 +41,7 @@ Overall, the unicorn is a powerful ally with strong defensive capabilities, effe
 
 Source: 5e_srd
 
+<statblock>
 ## Unicorn
 
 *Large celestial, lawful good*
@@ -97,7 +98,8 @@ The unicorn can take 3 legendary actions, choosing from the options below. Only 
 
 **Shimmering Shield (Costs 2 Actions)**. The unicorn creates a shimmering, magical field around itself or another creature it can see within 60 feet of it. The target gains a +2 bonus to AC until the end of the unicorn's next turn.
 
-**Heal Self (Costs 3 Actions)**. The unicorn magically regains 11 (2d8+2) hit points.
+**Heal Self (Costs 3 Actions)**. The unicorn magically regains 11 (2d8+2) hit points.</statblock>
+
 
 
 
@@ -105,6 +107,7 @@ The unicorn can take 3 legendary actions, choosing from the options below. Only 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Unicorn
 
 *Large* *Celestial*
@@ -142,6 +145,7 @@ Source: 5e_artisinal_monsters
 - **Resolution: The creature is immune to being charmed or frightened for 24 hours:** 
 
 
+</statblock>
 
 
 
@@ -150,6 +154,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Unicorn
 
 *Large celestial*
@@ -195,5 +200,6 @@ Source: 5e_artisinal_monsters
 - **Radiant Stomp (Costs 2 Actions).** The unicorn raises its hooves glowing with golden light and brings them down with a reverberating stomp. Each hostile creature within 10 feet of the unicorn must make a DC 14 STR save. On a failure, a creature takes 10 (3d6) radiant damage and is knocked prone. On a success, a creature takes half the damage and isn’t knocked prone.
 - **Heal Self (Costs 3 Actions).** The unicorn magically regains 11 (2d8 + 2) HP.
 
+</statblock>
 
 

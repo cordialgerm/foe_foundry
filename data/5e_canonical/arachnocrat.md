@@ -33,6 +33,7 @@ Additionally, the Arachnocrat can perform a Bite attack, also with a +6 to hit, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arachnocrat
 
 *Medium* *Fiend* *lawful evil*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must make a DC 14 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hp, the target is stable but poisoned for 1 hour, even after regaining hp, and is paralyzed while poisoned in this way. The skin of a creature that dies while poisoned takes on a golden hue.
 
 
+</statblock>
 
 

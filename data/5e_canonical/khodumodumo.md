@@ -23,6 +23,7 @@ Overall, the Khodumodumo excels in both offense and defense, utilizing its physi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Khodumodumo
 
 *Gargantuan* *Monstrosity* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Reel:** The khodumodumo pulls each creature grappled by it up to 25 feet straight toward it.
 
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ In combat scenarios, the Giant Constrictor Snake's ability to grapple and deal d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snake, Giant Constrictor
 
 *Huge beast*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 
 - **Crush.** One creature grappled by the snake must succeed on a DC 14 STR or take 9 (2d8) bludgeoning damage and begin suffocating. The creature continues suffocating until the grapple ends.
 
+</statblock>
 
 

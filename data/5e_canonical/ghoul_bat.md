@@ -28,6 +28,7 @@ Overall, the Ghoul Bat presents a mix of speed and incapacitating abilities, mak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghoul Bat
 
 *Small* *Undead* *neutral evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage. If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving  throw or be paralyzed until the end of its next turn.
 
 
+</statblock>
 
 

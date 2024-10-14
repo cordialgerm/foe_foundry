@@ -21,6 +21,7 @@ Zalikum’s most devastating ability is the Death-infused Desert Breath, which h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zalikum
 
 *Huge* *Construct* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Death-infused Desert Breath (Recharge 6):** The zalikum exhales superheated sand infused with the power of damned souls in a 30-foot cone. Each creature in the area must make a DC 16 Dexterity saving throw, taking 14 (4d6) fire damage and 14 (4d6) necrotic damage on a failed save, or half as much damage on a successful one. If a creature’s saving throw fails by 5 or more, the creature also suffers one level of exhaustion.
 
 
+</statblock>
 
 

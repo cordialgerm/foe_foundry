@@ -23,6 +23,7 @@ Overall, the Necrotech Bonecage Constrictor offers a unique combination of durab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Necrotech Bonecage Constrictor
 
 *Huge* *Undead* *neutral evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Crush:** Each creature caged by constrictor must make DC 16 Str save or take 11 (2d6+4) bludgeoning damage.
 
 
+</statblock>
 
 

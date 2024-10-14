@@ -23,6 +23,7 @@ In terms of defensive plays, the Rochade has a reaction called "Switch." When it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rochade
 
 *Small* *Fey* *neutral*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Switch:** When a creature rochade can see targets it with attack rochade can switch places with any creature it can see within 15 ft. of it. An unwilling creature must make DC 14 Dex save to avoid the switch. If the switch is successful switched creature becomes attack's target instead.
 
 
+</statblock>
 
 

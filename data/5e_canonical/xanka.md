@@ -19,6 +19,7 @@ In terms of actions, Xanka utilizes "Dismantling Leg" which is a melee weapon at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Xanka
 
 *Small* *Construct* *Unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 
 - **Dismantling Leg:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is subjected to the xanka’s Absorb trait.
 - **Release Energy (Recharge 5–6):** The xanka releases energy created from absorbed material in a burst. Each creature within 10 feet of it must make a DC 11 Dexterity saving throw, taking 7 (2d6) force damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

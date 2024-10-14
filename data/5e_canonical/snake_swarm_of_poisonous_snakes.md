@@ -19,6 +19,7 @@ In terms of actions, the swarm can perform bites against creatures within its ar
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snake, Swarm of Poisonous Snakes
 
 *Medium swarm (of tiny beasts)*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 
 - **Bites.** Melee Weapon Attack: +6 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its HP or fewer. The target must make a DC 14 CON save, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

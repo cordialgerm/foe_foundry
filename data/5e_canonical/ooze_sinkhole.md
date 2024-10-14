@@ -25,6 +25,7 @@ In terms of reactions, the Pluck ability enables the Sinkhole Ooze to grab creat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ooze, Sinkhole
 
 *Gargantuan* *Ooze* *unaligned*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Pluck (Stretched Body Only):** When 1+ creature falls down center of its cylinder can try to grab up to 2 of them. Each must make DC 14 Dex save or grappled (escape DC 14) in Pseudopod.
 
 
+</statblock>
 
 

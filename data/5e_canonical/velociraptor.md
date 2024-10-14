@@ -19,6 +19,7 @@ In terms of actions, the Velociraptor can perform a Multiattack, using one Bite 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Velociraptor
 
 *Small beast*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Claws.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.
 - **Maul.** The velociraptor uses its claws to rip into one creature it is grappling. The target must make a DC 12 STR save, taking 10 (4d4) slashing damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

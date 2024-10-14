@@ -41,6 +41,7 @@ The dragon can employ three legendary actions per turn, which can include detect
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Void Dragon
 
 *Gargantuan* *Dragon* *Chaotic Neutral*
@@ -91,5 +92,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a Tail attack.
 - **Void Slip (Costs 2 Actions):** The dragon twists the fabric of space around it, disappearing and reappearing in an unoccupied space it can see within 120 feet of it. Each creature within 15 feet of the dragon must succeed on a DC 21 Dexterity saving throw or take 17 (5d6) cold damage and be knocked prone.
+</statblock>
 
 

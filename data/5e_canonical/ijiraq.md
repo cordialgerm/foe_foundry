@@ -23,6 +23,7 @@ The combination of these attributes, abilities, and actions makes the Ijiraq a c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ijiraq
 
 *Medium* *Fey* *chaotic neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** The ijiraq magically polymorphs into any beast that has a challenge rating no higher than its own, into its caribou-human hybrid form, or back into its true from. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the ijiraq's choice). <br><br>While in its true form or its hybrid form, its statistics are the same. When in a beast form, the ijiraq retains its alignment, hp, Hit Dice, ability to speak, proficiencies, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
 
 
+</statblock>
 
 

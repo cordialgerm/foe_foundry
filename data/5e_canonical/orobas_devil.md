@@ -23,6 +23,7 @@ Lastly, the Orobas has a reaction called Prediction, which it can use three time
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Orobas Devil
 
 *Large* *Fiend* *Lawful Evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Prediction (3/Day):** When the orobas makes an ability check or attack, it can choose to have advantage on the roll.
+</statblock>
 
 

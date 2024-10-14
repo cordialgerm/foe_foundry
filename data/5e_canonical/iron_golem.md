@@ -23,6 +23,7 @@ Overall, the Iron Golem serves as an effective and challenging opponent in battl
 
 Source: 5e_srd
 
+<statblock>
 ### Iron Golem
 
 *Large construct, unaligned*
@@ -63,7 +64,8 @@ Source: 5e_srd
 
 ***Sword***. *Melee Weapon Attack:* +13 to hit, reach 10 ft., one target. *Hit:* 23 (3d10+7) slashing damage.
 
-***Poison Breath (Recharge 6)***. The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.
+***Poison Breath (Recharge 6)***. The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -71,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Iron Golem
 
 *Large construct*
@@ -107,5 +110,6 @@ Source: 5e_artisinal_monsters
 - **Spear Arm.** Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 25 (4d8 + 7) piercing damage.
 - **Expel Poisonous Gas (Recharge 5–6).** The golem vents poisonous gas from small holes across its body. Each creature within 15 feet of the golem must make a DC 18 CON save, taking 54 (12d8) poison damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

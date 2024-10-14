@@ -25,6 +25,7 @@ Overall, the Cyclops Myrmidon is a strong yet flawed giant that thrives in melee
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cyclops Myrmidon
 
 *Huge* *Giant*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Big Windup:** When a creature hits the cyclops with a melee attack, the cyclops readies a powerful strike against its attacker. The cyclops has advantage on the next club attack it makes against the attacker before the end of its next turn.
 
 
+</statblock>
 
 

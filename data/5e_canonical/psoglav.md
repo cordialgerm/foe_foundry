@@ -33,6 +33,7 @@ For bonus actions, "Shadow Jump" can be used three times per day, enabling the P
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Psoglav
 
 *Large* *Fiend* *Chaotic Evil*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Jump (3/Day):** While in shadows, dim light, or darkness, the psoglav disappears into the darkness and reappears in an unoccupied space it can see within 60 feet.
+</statblock>
 
 

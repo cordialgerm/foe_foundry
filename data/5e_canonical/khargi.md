@@ -21,6 +21,7 @@ As a reaction, the Khargi can employ *Adaptive Carapace*, which allows it to mag
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Khargi
 
 *Huge* *Fiend* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Adaptive Carapace:** When it takes acid cold force lightning or thunder it can magically attune itself to that type of damage. Until end of its next turn khargi has resistance to damage of the triggering type and when it hits with any weapon target takes an extra 7 (2d6) damage of the triggering type.
 
 
+</statblock>
 
 

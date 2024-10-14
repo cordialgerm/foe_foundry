@@ -41,6 +41,7 @@ Lastly, the "Punish Transgressor" action targets creatures that have violated th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pact Drake
 
 *Small* *Dragon* *lawful neutral*
@@ -80,5 +81,6 @@ At will: detect magic
 - **Punish Transgressor:** The drake targets a single creature within 60 feet that broke the terms of a pact witnessed by the drake. The creature must succeed on a DC 15 Charisma saving throw or be blinded, deafened, and stunned for 1d6 minutes. The conditions can be ended early only with a dispel magic (DC 15) spell or similar magic. When these conditions end, the affected creature has disadvantage on saving throws until it finishes a long rest.
 
 
+</statblock>
 
 

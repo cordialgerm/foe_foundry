@@ -35,6 +35,7 @@ Overall, the Centaur is a robust and agile creature with a mix of melee and rang
 
 Source: 5e_srd
 
+<statblock>
 ## Centaur
 
 *Large monstrosity, neutral good*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage.
 
-***Longbow***. *Ranged Weapon Attack:* +4 to hit, range 150/600 ft., one target. *Hit:* 6 (1d8+2) piercing damage.
+***Longbow***. *Ranged Weapon Attack:* +4 to hit, range 150/600 ft., one target. *Hit:* 6 (1d8+2) piercing damage.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Centaur
 
 *Large* *Fey*
@@ -102,6 +105,7 @@ Source: 5e_artisinal_monsters
 - **Deadeye Shot (1/Day):** The centaur makes a shortbow attack with advantage.
 
 
+</statblock>
 
 
 
@@ -110,6 +114,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Centaur
 
 *Large monstrosity*
@@ -145,5 +150,6 @@ Source: 5e_artisinal_monsters
 
 - **Defensive Kick.** When a creature the centaur can see within 5 feet of it hits it with an attack, the centaur can kick the attacker. The attacker must succeed on a DC 14 STR save or be knocked prone or pushed up to 5 feet away from the centaur (the centaur’s choice).
 
+</statblock>
 
 

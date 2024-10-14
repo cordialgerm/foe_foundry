@@ -25,6 +25,7 @@ Overall, the combination of strong defensive attributes, magical enhancements, a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre, Black Sun
 
 *Large* *Giant* *lawful evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Gauntleted Backhand:** When a creature within 5 ft. of the ogre misses the ogre with melee attack the attacker must make DC 16 Dex save or be knocked prone
 
 
+</statblock>
 
 

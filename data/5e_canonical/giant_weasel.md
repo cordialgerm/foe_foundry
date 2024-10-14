@@ -33,6 +33,7 @@ The Giant Weasel also has a defensive reaction called "Repellent Spray." When an
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Weasel
 
 *Medium beast, unaligned*
@@ -59,7 +60,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d4+3) piercing damage.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d4+3) piercing damage.</statblock>
+
 
 
 
@@ -67,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Weasel
 
 *Medium* *Beast*
@@ -95,6 +98,7 @@ Source: 5e_artisinal_monsters
 - **Grab:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: The target is grappled (escape DC 12).
 
 
+</statblock>
 
 
 
@@ -103,6 +107,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Weasel, Giant
 
 *Medium beast*
@@ -134,5 +139,6 @@ Source: 5e_artisinal_monsters
 
 - **Repellent Spray.** When a creature the weasel can see moves to a space within 15 feet of it, the weasel can release a pungent spray at the creature. The target must succeed on a DC 13 CON save or be poisoned until the end of its next turn. While poisoned, the creature can’t move to a space within 5 feet of the weasel.
 
+</statblock>
 
 

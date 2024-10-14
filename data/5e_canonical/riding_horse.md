@@ -30,6 +30,7 @@ Overall, the Riding Horse serves as a reliable transport option for adventurers,
 
 Source: 5e_srd
 
+<statblock>
 ### Riding Horse
 
 *Large beast, unaligned*
@@ -52,7 +53,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Hooves***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (2d4+3) bludgeoning damage.
+***Hooves***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (2d4+3) bludgeoning damage.</statblock>
+
 
 
 
@@ -60,6 +62,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Riding Horse
 
 *Large* *Beast*
@@ -83,5 +86,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) bludgeoning damage
 
 
+</statblock>
 
 

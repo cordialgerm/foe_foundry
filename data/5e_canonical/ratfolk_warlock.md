@@ -32,6 +32,7 @@ One of its unique actions includes Darken, which lets the Warlock unleash tendri
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ratfolk Warlock
 
 *Small* *Humanoid* *any alignment*
@@ -67,5 +68,6 @@ At will: dancing lights, eldritch blast, fire bolt, mage armor, mage hand, minor
 - **Darken:** The ratfolk warlock causes tendrils of shadow to reach out from its body toward all creatures within 10 feet of it. Each creature in the area must succeed on a DC 13 Wisdom saving throw or be restrained by the tendrils until the end of the ratfolk warlock's next turn.
 
 
+</statblock>
 
 

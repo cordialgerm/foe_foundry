@@ -19,6 +19,7 @@ In terms of actions, the Savior Lumen can unleash a Flurry of Tools, a melee wea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Savior Lumen
 
 *Large* *Celestial* *chaotic good*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 14) no material components: At will: floating disk mending spare the dying3/day ea: gentle repose knock sending1/day ea: locate creature passwall
 
 
+</statblock>
 
 

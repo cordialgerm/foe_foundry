@@ -23,6 +23,7 @@ Additionally, the Cave Drake can use a ranged ability called "Blinding Spit," wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Drake
 
 *Large* *Dragon* *neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Blinding Spit (Recharge 5-6):** Ranged Weapon Attack: +4 to hit, range 30 ft., one target. Hit: The target is poisoned for 1 minute and must succeed on a DC 13 Constitution saving throw or be blinded while poisoned in this way.
 
 
+</statblock>
 
 

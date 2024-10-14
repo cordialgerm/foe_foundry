@@ -25,6 +25,7 @@ Finally, the Alnaar exhibits a reaction called "On the Hunt." When an enemy it c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alnaar
 
 *Large* *Fiend* *chaotic evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **On the Hunt:** When a creature the alnaar can see moves, the alnaar can move up to 20 feet toward the moving creature. If the alnaar moves within 10 feet of that creature, it can make one fiery fangs attack against the creature.
 
 
+</statblock>
 
 

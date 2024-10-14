@@ -23,6 +23,7 @@ Additionally, the worm can use the "Mental Summons" as a bonus action. Creatures
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Murmuring Worm
 
 *Huge* *Aberration*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Mental Summons:** One creature with an Intelligence score greater than 3 within 120 feet makes a DC 16 Wisdom saving throw. On a failure, it uses its reaction to move up to its Speed towards the worm by the shortest route possible, avoiding hazards but not opportunity attacks. This is a magical charm effect.
 
 
+</statblock>
 
 

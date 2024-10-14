@@ -21,6 +21,7 @@ The archon's ability to create a Potion of Healing once per day allows it to tra
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mead Archon
 
 *Medium* *Celestial* *chaotic good*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Divine Guzzle (Recharge 4-6):** The mead archon drinks a pint of alcohol and chooses one of the following effects: <br>* The archon belches fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one. <br>* The archon has advantage on attack rolls and saving throws until the end of its next turn. <br>* The archon regains 10 hit points.
 
 
+</statblock>
 
 

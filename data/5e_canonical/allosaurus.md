@@ -19,6 +19,7 @@ Overall, the Allosaurus stands out as a powerful primal predator within encounte
 
 Source: 5e_srd
 
+<statblock>
 ## Allosaurus
 
 _Large Beast, Unaligned_
@@ -52,6 +53,7 @@ _Hit:_ 15 (2d10 + 4) piercing damage.
 
 **_Claw._** _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target.
 _Hit:_ 8 (1d8 + 4) slashing damage.
+</statblock>
 
 
 
@@ -60,6 +62,7 @@ _Hit:_ 8 (1d8 + 4) slashing damage.
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Allosaurus
 
 *Huge* *Beast*
@@ -83,5 +86,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) slashing damage. If the allosaurus moves at least 10 feet towards its target before making this attack  it gains advantage on the attack.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ Overall, the Darakhul Spy stands as a lethal blend of stealth, deception, and co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Darakhul Spy
 
 *Medium* *Undead* *neutral evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Light Crossbow:** Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 8 (1d8 + 4) piercing damage.
 
 
+</statblock>
 
 

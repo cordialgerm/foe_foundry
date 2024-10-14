@@ -25,6 +25,7 @@ Overall, the Imperator, as a Penguin Swarm, is a formidable beast that thrives i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Imperator, Penguin Swarm
 
 *Huge* *Beast* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Toboggan Charge (Recharge 5–6):** The swarm moves up to 20' in a straight line over ice or snow and can move through the space of any Large or smaller creature. The first time it enters a creature’s space during this move that creature must make a DC 14 Str save. On a failure a creature takes 10 (3d6) bludgeoning damage and 10 (3d6) piercing damage and is knocked prone. On a success a creature takes half the damage and isn’t knocked prone.
 
 
+</statblock>
 
 

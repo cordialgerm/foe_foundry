@@ -42,6 +42,7 @@ Overall, the Skeleton is a resilient and tricky undead that utilizes its special
 
 Source: 5e_srd
 
+<statblock>
 ### Skeleton
 
 *Medium undead, lawful evil*
@@ -72,7 +73,8 @@ Source: 5e_srd
 
 ***Shortsword***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Shortbow***. *Ranged Weapon Attack:* +4 to hit, range 80/320 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
+***Shortbow***. *Ranged Weapon Attack:* +4 to hit, range 80/320 ft., one target. *Hit:* 5 (1d6+2) piercing damage.</statblock>
+
 
 
 
@@ -80,6 +82,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skeleton
 
 *Medium* *Undead*
@@ -111,6 +114,7 @@ Source: 5e_artisinal_monsters
 - **Shortbow:** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 
 
+</statblock>
 
 
 
@@ -119,6 +123,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skeleton
 
 *Medium undead*
@@ -153,5 +158,6 @@ Source: 5e_artisinal_monsters
 
 - **Counterattack (Recharge 6).** When a creature the skeleton can see hits it with an attack, the skeleton can make one Shortsword or Shortbow attack against the attacker.
 
+</statblock>
 
 

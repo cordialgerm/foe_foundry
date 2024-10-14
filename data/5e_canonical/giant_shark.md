@@ -37,6 +37,7 @@ Overall, the Giant Shark is a deadly predator that thrives in aquatic environmen
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Shark
 
 *Huge beast, unaligned*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 22 (3d10+6) piercing damage.
 
-A **giant shark** is 30 feet long and normally found in deep oceans. Utterly fearless, it preys on anything that crosses its path, including whales and ships.
+A **giant shark** is 30 feet long and normally found in deep oceans. Utterly fearless, it preys on anything that crosses its path, including whales and ships.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ A **giant shark** is 30 feet long and normally found in deep oceans. Utterly fea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Shark
 
 *Huge* *Beast*
@@ -103,6 +106,7 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 15 (3d6+5) bludgeoning damage  and the shark can swim 20 feet without provoking opportunity attacks.
 
 
+</statblock>
 
 
 
@@ -111,6 +115,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shark, Giant
 
 *Huge beast*
@@ -146,5 +151,6 @@ Source: 5e_artisinal_monsters
 
 - **Swift Hunter.** The shark moves up to half its speed toward a hostile creature that it can see. This movement doesn’t provoke opportunity attacks.
 
+</statblock>
 
 

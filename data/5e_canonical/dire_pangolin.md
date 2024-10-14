@@ -23,6 +23,7 @@ The Tuck In action allows the Dire Pangolin to curl into a protective ball, gran
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dire Pangolin
 
 *Large* *Beast* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Tuck In:** Curls its entire body forming an armored ball. While an armored ball it moves by rolling has resistance to B/P/S damage is immune to the prone condition and it can’t make Claw or Tail Slap attacks or climb. The dire pangolin can uncurl its body as a bonus action.
 
 
+</statblock>
 
 

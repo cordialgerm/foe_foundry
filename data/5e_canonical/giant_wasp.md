@@ -28,6 +28,7 @@ The Giant Wasp has a notable action:
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Wasp
 
 *Medium beast, unaligned*
@@ -50,7 +51,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Sting***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 5 (1d6+2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
+***Sting***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 5 (1d6+2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.</statblock>
+
 
 
 
@@ -58,6 +60,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Wasp
 
 *Medium* *Beast*
@@ -81,5 +84,6 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage and the target makes a DC 11 Constitution saving throw  taking 7 (2d6) poison damage on a failure or half damage on a success. If the poison damage reduces the target to 0 hit points  the target is made stable but poisoned for 1 hour  even if it regains hit points  and it is paralyzed while poisoned in this way.
 
 
+</statblock>
 
 

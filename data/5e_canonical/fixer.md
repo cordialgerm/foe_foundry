@@ -23,6 +23,7 @@ Additionally, the Fixer has a unique action called "Cleaner," allowing it to cas
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: Fixer
 
 *Medium* *Humanoid* *lawful neutral*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Cleaner:** Can cast the prestidigitation and unseen servant spells at will requiring no material components and using Wis as the spellcasting ability
 
 
+</statblock>
 
 

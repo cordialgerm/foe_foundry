@@ -21,6 +21,7 @@ In terms of actions, the altar flame golem can perform a "Multiattack," allowing
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Altar Flame Golem
 
 *Large* *Construct* *neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Flame Breath (Recharge 5-6):** The golem breathes fire in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 36 (8d8) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ As a reaction, the Wilderness Crone possesses "Transmigratory Strike." If she ki
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wilderness Crone
 
 *Medium* *Fey* *neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Transmigratory Strike:** When she kills a Humanoid can immediately restore it to life as a Beast with CR no higher the Humanoid’s CR or level. Otherwise works as reincarnate spell.
 
 
+</statblock>
 
 

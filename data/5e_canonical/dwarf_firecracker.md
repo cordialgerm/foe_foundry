@@ -21,6 +21,7 @@ One of the Firecracker's more powerful abilities is "Combustion Wave," which rec
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dwarf, Firecracker
 
 *Medium* *Humanoid* *any alignment*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Combustion Wave (Recharge 5–6):** The firecracker slams its massive hammer into the ground battering itself and its foes with fiery shockwave. Each creature within 20' of the firecracker including itself must make a DC 13 Con save taking 10 (3d6) fire and 10 (3d6) thunder on a failed save or half damage if made. Creatures behind cover have advantage on the save.
 
 
+</statblock>
 
 

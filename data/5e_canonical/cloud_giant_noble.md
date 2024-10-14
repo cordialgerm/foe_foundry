@@ -54,6 +54,7 @@ This combination of physical prowess, spellcasting, and tactical abilities makes
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cloud Giant Noble
 
 *Huge* *Giant*
@@ -96,5 +97,6 @@ Source: 5e_artisinal_monsters
 - **Misty Step (2nd-Level; V):** The giant teleports to an unoccupied space it can see within 30 feet. The giant can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 

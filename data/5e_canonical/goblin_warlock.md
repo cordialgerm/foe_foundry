@@ -29,6 +29,7 @@ Overall, the Goblin Warlock combines clever spellcasting, stealth tactics, and t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Warlock
 
 *Small* *Humanoid*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Quick Switch:** When the warlock is hit by an attack, it magically teleports, switching places with a goblin ally within 30 feet. The goblin ally is hit by the triggering attack and suffers its effects.
 
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ The Star Crow’s combination of stealth, utility in combat, and unique psychic 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Star Crow
 
 *Tiny aberration*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 
 - **Blinding Burst (Recharge 5–6).** The star crow dims then suddenly bursts with blinding light. Each creature within 30 feet of the star crow must succeed on a DC 13 CON save or be blinded until the end of its next turn.
 
+</statblock>
 
 

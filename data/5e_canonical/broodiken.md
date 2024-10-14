@@ -21,6 +21,7 @@ In terms of actions, the Broodiken has a Bite attack. It makes a Melee Weapon At
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Broodiken
 
 *Tiny* *Construct* *Unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage, and the broodiken attaches to the target. While attached, the broodiken can’t attack, and at the start of each of the broodiken’s turns, the target takes 9 (2d6 + 2) piercing damage.
+</statblock>
 
 

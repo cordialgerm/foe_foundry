@@ -23,6 +23,7 @@ As a bonus action, the Boloti can transform into a Vortex Form, allowing it to b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boloti
 
 *Tiny* *Fey* *Neutral Evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Vortex Form:** The boloti magically transforms into a Small vortex of swirling, churning water or back into its true form, which is Fey. The boloti can transform into its vortex form only while at least half of its body is submerged in water, and any creature it is grappling with Whirlpool is freed if the boloti transforms back to its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies.
+</statblock>
 
 

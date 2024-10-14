@@ -23,6 +23,7 @@ As a bonus action, the Nilbog can utilize "Nimble Escape," which allows it to ta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nilbog
 
 *Small* *Humanoid*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 

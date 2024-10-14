@@ -35,6 +35,7 @@ Overall, the eagle serves as a nimble and perceptive creature in the wilderness,
 
 Source: 5e_srd
 
+<statblock>
 ### Eagle
 
 *Small beast, unaligned*
@@ -61,7 +62,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Talons***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) slashing damage.
+***Talons***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) slashing damage.</statblock>
+
 
 
 
@@ -69,6 +71,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eagle
 
 *Small* *Beast*
@@ -96,6 +99,7 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 slashing damage.
 
 
+</statblock>
 
 
 
@@ -104,6 +108,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eagle
 
 *Small beast*
@@ -132,5 +137,6 @@ Source: 5e_artisinal_monsters
 
 - **Talons.** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) slashing damage.
 
+</statblock>
 
 

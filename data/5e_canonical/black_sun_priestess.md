@@ -21,6 +21,7 @@ In combat, the Black Sun Priestess can engage with her melee weapon, a greatclub
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Sun Priestess
 
 *Medium* *Humanoid* *chaotic evil*
@@ -55,5 +56,6 @@ Cantrips (at will): guidance, mending, resistance, sacred flame
 - **Greatclub:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

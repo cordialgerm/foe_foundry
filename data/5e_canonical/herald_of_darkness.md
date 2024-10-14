@@ -29,6 +29,7 @@ As a bonus action, the Herald can use "Shadow Shape" to change its form into a L
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Herald of Darkness
 
 *Large* *Fiend* *Neutral Evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Shape:** The herald magically transforms into a Large shadow or back into its true form, which is a Fiend. Its statistics are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies.
+</statblock>
 
 

@@ -40,6 +40,7 @@ Overall, the Storm Lord represents a significant threat on the battlefield with 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Storm Lord
 
 *Huge* *Elemental* *neutral*
@@ -78,5 +79,6 @@ Each creature that starts its turn within 30 feet of the storm lord must succeed
 - **Thunder Clap (Recharge 5-6):** The storm lord creates a peal of ear-splitting thunder. Each creature within 30 feet of the storm lord must make a DC 17 Constitution saving throw. On a failure, a target takes 54 (12d8) thunder damage and is deafened. On a success, a target takes half the damage but isn't deafened. The deafness lasts until it is lifted by the lesser restoration spell or similar magic.
 
 
+</statblock>
 
 

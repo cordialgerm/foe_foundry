@@ -40,6 +40,7 @@ Overall, the Nalfeshnee presents a mix of deception, fear, and brutal strength, 
 
 Source: 5e_srd
 
+<statblock>
 ### Nalfeshnee (Demon)
 
 *Large fiend (demon), chaotic evil*
@@ -80,7 +81,8 @@ Source: 5e_srd
 
 ***Horror Nimbus (Recharge 5-6)***. The nalfeshnee magically emits scintillating, multicolored light. Each creature within 15 feet of the nalfeshnee that can see the light must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the nalfeshnee's Horror Nimbus for the next 24 hours.
 
-***Teleport***. The nalfeshnee magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+***Teleport***. The nalfeshnee magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.</statblock>
+
 
 
 
@@ -88,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nalfeshnee
 
 *Large* *Fiend*
@@ -128,6 +131,7 @@ Source: 5e_artisinal_monsters
 - **Teleport:** The nalfeshnee magically teleports up to 120 feet to an unoccupied space it can see.
 
 
+</statblock>
 
 
 
@@ -136,6 +140,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nalfeshnee
 
 *Large fiend (demon)*
@@ -176,5 +181,6 @@ Source: 5e_artisinal_monsters
 
 - **Sudden Feast.** When a creature the nalfeshnee can see within 20 feet of it is reduced to 0 HP or dies, the nalfeshnee can move up to its speed toward the creature without provoking opportunity attacks then feast on the creature, if it moves to within 5 feet of the creature. The nalfeshnee regains HP equal to twice the creature’s CR or class level, and the creature has disadvantage on the next death save it makes, if it is making death saves.
 
+</statblock>
 
 

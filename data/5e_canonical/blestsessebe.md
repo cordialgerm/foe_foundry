@@ -21,6 +21,7 @@ Overall, the Blestsessebe epitomizes a powerful celestial guardian, capable of b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blestsessebe
 
 *Large* *Celestial* *neutral good*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Free Runner:** Can take the Dash action.
 
 
+</statblock>
 
 

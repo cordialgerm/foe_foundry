@@ -27,6 +27,7 @@ In terms of actions, the Dire Centipede uses a Bite attack, which is a melee wea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dire Centipede
 
 *Large* *Beast*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage and the target makes a DC 11 Constitution saving throw. On a failure  the target takes 10 (3d6) poison damage and is poisoned for 1 minute. The target is paralyzed while poisoned in this way. The target repeats the saving throw at the end of each of its turns  ending the effect on a success.
 
 
+</statblock>
 
 

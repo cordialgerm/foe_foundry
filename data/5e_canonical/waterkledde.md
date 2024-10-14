@@ -25,6 +25,7 @@ As a bonus action, the Waterkledde can magically Change Shape, transforming into
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Waterkledde
 
 *Large* *Fiend* *chaotic evil*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Supernatural Speed:** Takes Dash or Disengage.
 
 
+</statblock>
 
 

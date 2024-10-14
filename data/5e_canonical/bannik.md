@@ -23,6 +23,7 @@ The Bannik is also capable of spellcasting, with a Wisdom saving throw DC of 13.
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bannik
 
 *Medium* *Fey* *neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Wis (DC 13) only wand of bound fir required: At will: augury create or destroy water fog cloud3/day: lesser restoration
 
 
+</statblock>
 
 

@@ -37,6 +37,7 @@ Overall, the Plesiosaurus is a powerful creature that thrives in aquatic environ
 
 Source: 5e_srd
 
+<statblock>
 ### Plesiosaurus (Dinosaur)
 
 *Large beast, unaligned*
@@ -63,7 +64,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +6 to hit, reach 10 ft., one target. *Hit:* 14 (3d6+4) piercing damage.
+***Bite***. *Melee Weapon Attack:* +6 to hit, reach 10 ft., one target. *Hit:* 14 (3d6+4) piercing damage.</statblock>
+
 
 
 
@@ -71,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Plesiosaurus
 
 *Large* *Beast*
@@ -98,6 +101,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage. The target makes a DC 14 Strength saving throw. On a failure  it is pulled up to 5 feet towards the plesiosaurus.
 
 
+</statblock>
 
 
 
@@ -106,6 +110,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Plesiosaurus
 
 *Large beast*
@@ -139,5 +144,6 @@ Source: 5e_artisinal_monsters
 
 - **Flipper Slam.** While underwater, the plesiosaurus slams its flippers together, sending a shockwave of water in a 15-foot cone. Each creature in the area must succeed on a DC 13 CON save or be off-balance until the end of its next turn. While off-balance, a creature’s speed is halved, and it has disadvantage on the first attack roll it makes on each of its turns.
 
+</statblock>
 
 

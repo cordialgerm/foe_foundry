@@ -19,6 +19,7 @@ For bonus actions, the Goblin Musketeer can use Nimble Escape, which allows it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Musketeer
 
 *Small* *Humanoid*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 

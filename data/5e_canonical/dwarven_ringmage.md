@@ -27,6 +27,7 @@ Overall, the Dwarven Ringmage is a nuanced and varied combatant that blends phys
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dwarven Ringmage
 
 *Medium* *Humanoid* *Any Alignment*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Ring Staff:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage plus 10 (3d6) acid, cold, fire, lightning, or thunder damage (the ringmage’s choice).
 - **Ring Magic:** The dwarven ringmage draws circles of magic in the air and sends them toward one creature it can see within 30 feet of it, causing one of the following effects:
 - **Spellcasting:** The dwarven ringmage casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save DC 15):<br>At will: color spray, mage hand, true strike<br>3/day each: expeditious retreat, fly, haste<br>1/day each: greater invisibility, wall of stone
+</statblock>
 
 

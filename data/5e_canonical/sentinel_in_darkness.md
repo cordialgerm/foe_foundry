@@ -25,6 +25,7 @@ Overall, the Sentinel in Darkness offers formidable offensive and defensive capa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sentinel in Darkness
 
 *Large* *Construct* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Curse of the Wanderer (Recharge 6):** One creature the sentinel can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or suffer the Curse of the Wanderer. While cursed, the creature's speed is halved and it can't regain hp. For every 24 hours it goes without discovering or learning new information, it takes 10 (3d6) psychic damage. The curse lasts until it is lifted by a remove curse spell or similar magic.
 
 
+</statblock>
 
 

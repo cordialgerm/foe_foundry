@@ -21,6 +21,7 @@ In combat, the Sasquatch can use its Multiattack to perform three separate attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sasquatch
 
 *Large* *Beast* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Vanishing Tantrum (Recharge 5-6):** The sasquatch roars and stomps, kicking up debris and leaving deep footprints in the ground. Each creature within 20 feet of it must make a DC 14 Dexterity saving throw, taking 14 (4d6) thunder damage on a failed save, or half as much damage on a successful one. The sasquatch can then move up to half its speed without provoking opportunity attacks and take the Hide action as a bonus action.
 
 
+</statblock>
 
 

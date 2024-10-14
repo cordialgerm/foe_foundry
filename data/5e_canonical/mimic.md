@@ -42,6 +42,7 @@ One of its notable reactions is "Prey Shield," which allows the Mimic to strateg
 
 Source: 5e_srd
 
+<statblock>
 ## Mimic
 
 *Medium monstrosity (shapechanger), neutral*
@@ -80,7 +81,8 @@ Source: 5e_srd
 
 ***Pseudopod***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait.
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) piercing damage plus 4 (1d8) acid damage.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) piercing damage plus 4 (1d8) acid damage.</statblock>
+
 
 
 
@@ -88,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mimic
 
 *Medium* *Monstrosity*
@@ -127,6 +130,7 @@ Source: 5e_artisinal_monsters
 - **Shapeshift:** The mimic changes its form to resemble an inanimate object of its approximate size or changes into its true form, which is an amorphous blob. Objects it is carrying or stuck to are not transformed. While shapeshifted, its statistics are unchanged. It reverts to its true form if it dies.
 
 
+</statblock>
 
 
 
@@ -135,6 +139,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mimic
 
 *Medium monstrosity (shapechanger)*
@@ -175,5 +180,6 @@ Source: 5e_artisinal_monsters
 
 - **Prey Shield.** When a creature the mimic can see hits it with an attack while it is grappling a creature, the mimic can roll the grappled creature in front of the blow, forcing the grappled creature to take the damage instead.
 
+</statblock>
 
 

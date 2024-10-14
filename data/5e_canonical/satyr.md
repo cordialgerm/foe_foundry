@@ -45,6 +45,7 @@ Overall, the satyr is a captivating creature that excels in charm and manipulati
 
 Source: 5e_srd
 
+<statblock>
 ## Satyr
 
 *Medium fey, chaotic neutral*
@@ -75,7 +76,8 @@ Source: 5e_srd
 
 ***Shortsword***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6+3) piercing damage.
 
-***Shortbow***. *Ranged Weapon Attack:* +5 to hit, range 80/320 ft., one target. *Hit:* 6 (1d6+3) piercing damage.
+***Shortbow***. *Ranged Weapon Attack:* +5 to hit, range 80/320 ft., one target. *Hit:* 6 (1d6+3) piercing damage.</statblock>
+
 
 
 
@@ -83,6 +85,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Satyr
 
 *Medium* *Fey*
@@ -114,6 +117,7 @@ Source: 5e_artisinal_monsters
 - **Lullaby:** Each humanoid or giant within 30 feet that can hear the satyr makes a DC 13 Constitution saving throw. On a failure  it falls asleep. It wakes up if a creature uses an action to wake it or if the satyr ends a turn without using its action to continue the lullaby. If a creatures saving throw is successful or the effect ends for it  it is immune to any satyrs Lullaby for 24 hours. This is a magical charm effect.
 
 
+</statblock>
 
 
 
@@ -122,6 +126,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Satyr
 
 *Medium fey*
@@ -158,5 +163,6 @@ Source: 5e_artisinal_monsters
 	- Overindulge. The satyr’s song is laced with magical enchantments, and the target is forced to dance along with the music. Until the start of the satyr’s next turn, the target is charmed, and its speed is reduced by 10 feet, as it dances uncontrollably.
 	- Unnerve. The satyr’s song and dance turn frightful with heavy stomps, shrill notes, and a rapid, staccato melody. The target is frightened until the end of its next turn.
 
+</statblock>
 
 

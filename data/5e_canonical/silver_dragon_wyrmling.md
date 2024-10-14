@@ -45,6 +45,7 @@ The combination of these abilities and spells makes the Silver Dragon Wyrmling a
 
 Source: 5e_srd
 
+<statblock>
 # Silver Dragon Wyrmling (Metallic)
 
 *Medium dragon, lawful good*
@@ -79,7 +80,8 @@ Source: 5e_srd
 
 **Cold Breath**. The dragon exhales an icy blast in a 15- foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.
 
-**Paralyzing Breath**. The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+**Paralyzing Breath**. The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</statblock>
+
 
 
 
@@ -87,6 +89,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Silver Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -118,6 +121,7 @@ Source: 5e_artisinal_monsters
 - **Paralyzing Breath:** The dragon exhales paralytic gas in a 15-foot cone. Each creature in the area must succeed on a DC 13 Constitution saving throw or be paralyzed until the end of its next turn.
 
 
+</statblock>
 
 
 
@@ -126,6 +130,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Silver Dragon Wyrmling
 
 *Medium dragon*
@@ -157,5 +162,6 @@ Source: 5e_artisinal_monsters
 - **Cold Breath (Recharge 5–6).** The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 13 CON save, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.
 - **Paralyzing Breath (Recharge 6).** The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 CON save or be paralyzed for 1 minute. A creature can repeat the save at the end of each of its turns, ending the effect on itself on a success.
 
+</statblock>
 
 

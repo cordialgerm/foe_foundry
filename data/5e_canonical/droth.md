@@ -25,6 +25,7 @@ Overall, the Droth represents a multi-faceted encounter with powerful actions, s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Droth
 
 *Huge* *Aberration* *lawful neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Acid Wave (Recharge 5-6):** The droth rises up and crashes down, releasing a 20-foot-radius wave of acidic ooze. Each creature in the area must make a DC 17 Dexterity saving throw. On a failure, a creature takes 45 (10d8) acid damage and is knocked prone. On a success, a creature takes half the damage and isn't knocked prone.
 
 
+</statblock>
 
 

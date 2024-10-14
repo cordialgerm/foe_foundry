@@ -21,6 +21,7 @@ In combat, the King Kobold can utilize multiattack to make two shortsword strike
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # King Kobold
 
 *Small* *Humanoid* *lawful neutral*
@@ -63,5 +64,6 @@ Cantrips (at will): fire bolt, mage hand, minor illusion, poison spray
 - **Uncanny Dodge:** The king kobold halves the damage from one attack that hits it. To do so, it must see the attacker.
 
 
+</statblock>
 
 

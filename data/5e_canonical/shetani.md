@@ -25,6 +25,7 @@ As a bonus action, the Shetani can "Change Shape," transforming into a Large or 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shetani
 
 *Medium* *Fiend* *neutral evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Transforms into a Large or smaller Beast or Humanoid or back into its true form which is a Fiend. Without wings it loses its flying speed. Its statistics other than size and speed are the same in each form. Items worn/carried transformed as desired by the shetani taking whatever color or shape it deems appropriate. Reverts on death.
 
 
+</statblock>
 
 

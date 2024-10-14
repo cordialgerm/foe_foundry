@@ -30,6 +30,7 @@ This combination of abilities and attacks makes the Derro, Abysswalker a formida
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Derro, Abysswalker
 
 *Small* *Humanoid* *chaotic evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Scimitar:** Melee Weapon Attack: +7 to hit, 5 ft., one target, 7 (1d6+4) slashing damage.
 
 
+</statblock>
 
 

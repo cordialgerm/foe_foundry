@@ -25,6 +25,7 @@ Moreover, the Dread Knight can summon a Fiendish Steed, such as a fell nightmare
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dread Knight Champion
 
 *Medium* *Undead*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Break Magic:** The dread knight ends all spell effects created by a 5th-level or lower spell slot on a creature, object, or point within 30 feet.
 
 
+</statblock>
 
 

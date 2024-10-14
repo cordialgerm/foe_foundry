@@ -31,6 +31,7 @@ Overall, the Lou Carcolh is a cunning and engaging opponent that utilizes a mix 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lou Carcolh
 
 *Medium* *Monstrosity* *unaligned*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Reel:** The lou carcolh pulls in each creature of Large size or smaller who is restrained by one of its sticky tongues. The creature is knocked prone and dragged up to 30 feet towards the lou carcolh. If a creature is dragged within 5 feet of the lou carcolh, it can make one bite attack against the creature as a bonus action.
 
 
+</statblock>
 
 

@@ -31,6 +31,7 @@ Overall, the Fabricator stands out as a versatile and formidable construct capab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fabricator
 
 *Large* *Construct* *neutral*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Disassembling Slam:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage plus 10 (3d6) force damage. A creature reduced to 0 hp by this attack immediately dies and its body and nonmagical equipment is disassembled and absorbed into the fabricator. The creature can be restored to life only by means of a true resurrection or a wish spell. The fabricator can choose to not disassemble a creature or its equipment after reducing it to 0 hp.
 
 
+</statblock>
 
 

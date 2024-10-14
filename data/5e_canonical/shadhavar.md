@@ -23,6 +23,7 @@ For bonus actions, the Shadhavar can utilize its Plaintive Melody ability three 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadhavar
 
 *Large* *Monstrosity* *Neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Plaintive Melody (3/Day):** The shadhavar plays a captivating melody through its hollow horn. Each creature within 60 feet of the shadhavar that can hear it must succeed on a DC 13 Wisdom saving throw or be charmed until the start of the shadhavar’s next turn. While charmed, a creature is incapacitated, its speed is reduced to 0, and the shadhavar has advantage on attack rolls against it.
+</statblock>
 
 

@@ -25,6 +25,7 @@ Overall, the Trollking Grunt is an agile and robust combatant that can pose a se
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trollking Grunt
 
 *Medium* *Humanoid* *neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage.
 
 
+</statblock>
 
 

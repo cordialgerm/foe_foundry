@@ -33,6 +33,7 @@ The Rangerfolk Scout can perform several actions in combat:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ravenfolk Scout
 
 *Medium* *Humanoid* *Neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Rapier:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.
 - **Longbow:** Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.
 - **Ghost Wings:** The ravenfolk scout furiously “beats” a set of phantasmal wings. Each creature within 5 feet of the ravenfolk must succeed on a DC 12 Dexterity saving throw or be blinded until the start of its next turn.
+</statblock>
 
 

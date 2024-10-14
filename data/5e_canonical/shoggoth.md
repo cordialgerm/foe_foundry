@@ -21,6 +21,7 @@ With its enormous size, myriad abilities, and terrifying presence, the Shoggoth 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shoggoth
 
 *Huge* *Aberration* *Chaotic Neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The shoggoth makes four Slam attacks. It can replace two Slam attacks with a use of Crush.
 - **Slam:** Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage, and the target is grappled (escape DC 18) if it is a Large or smaller creature.
 - **Crush:** The shoggoth crushes up to two creatures it is grappling by rolling them beneath its bulk. Each target must succeed on a DC 19 Strength saving throw or take 30 (4d10 + 8) bludgeoning damage, be unable to breathe, and be restrained until the grapple ends. If the shoggoth moves, a creature beneath it is no longer restrained and is able to breathe, but it remains grappled.
+</statblock>
 
 

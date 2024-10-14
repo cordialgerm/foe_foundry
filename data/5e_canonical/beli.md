@@ -19,6 +19,7 @@ In terms of actions, the Beli can make an Ice Dagger melee attack with a +5 to h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Beli
 
 *Small* *Fey* *Neutral Evil*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Ice Dagger:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 5 (2d4) cold damage.
 - **Icy Shortbow:** Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 5 (2d4) cold damage, and the target must succeed on a DC 13 Constitution saving throw or suffer one level of exhaustion from the arrow’s icy chill. On a success, the target can’t suffer further levels of exhaustion from any beli’s Icy Shortbow for 24 hours. If a creature would suffer a sixth level of exhaustion from this attack, it is reduced to 0 hp instead and must make death saving throws as normal. A creature reduced to 0 hp in this way can’t suffer further levels of exhaustion from any beli’s Icy Shortbow for 24 hours.
 - **Invisibility:** The beli magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the beli wears or carries is invisible with it.
+</statblock>
 
 

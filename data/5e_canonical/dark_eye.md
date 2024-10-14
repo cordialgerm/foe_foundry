@@ -19,6 +19,7 @@ For actions, the Dark Eye uses the Multiattack feature to make two dagger attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dark Eye
 
 *Medium* *Humanoid* *neutral evil*
@@ -51,5 +52,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Dagger:** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 4 (1d8) cold damage.
 
 
+</statblock>
 
 

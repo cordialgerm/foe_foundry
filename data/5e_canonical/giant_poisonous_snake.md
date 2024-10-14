@@ -28,6 +28,7 @@ Overall, the Giant Poisonous Snake serves as a swift and stealthy predator, capa
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Poisonous Snake
 
 *Medium beast, unaligned*
@@ -52,7 +53,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +6 to hit, reach 10 ft., one target. *Hit:* 6 (1d4+4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.
+***Bite***. *Melee Weapon Attack:* +6 to hit, reach 10 ft., one target. *Hit:* 6 (1d4+4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -60,6 +62,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Poisonous Snake
 
 *Medium* *Beast*
@@ -83,5 +86,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 1 piercing damage and the target makes a DC 11 Constitution saving throw  taking 7 (2d6) poison damage on a failure or half damage on a success.
 
 
+</statblock>
 
 

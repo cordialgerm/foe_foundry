@@ -23,6 +23,7 @@ Overall, the Deathsworn Elf is a highly mobile and stealthy adversary that excel
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deathsworn Elf
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Volley (Recharge 5-6):** The deathsworn shoots a rain of fiery arrows in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 18 (4d8) piercing damage and 7 (2d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

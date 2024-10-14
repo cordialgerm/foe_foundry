@@ -19,6 +19,7 @@ When engaging in combat, the Tosculi Drone can utilize its **Claw** action, maki
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tosculi Drone
 
 *Small* *Humanoid* *Lawful Evil*
@@ -46,5 +47,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage.
+</statblock>
 
 

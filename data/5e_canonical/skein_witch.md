@@ -29,6 +29,7 @@ Overall, the Skein Witch is a challenging foe that leverages its magic, strategi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skein Witch
 
 *Medium* *Celestial* *Neutral*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Parry Spell:** If the skein witch succeeds on a saving throw against a spell of 4th level or lower that targets only the skein witch, the spell has no effect. If the skein witch succeeds on the saving throw by 5 or more, the spell is reflected back at the spellcaster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster.
+</statblock>
 
 

@@ -21,6 +21,7 @@ Additionally, Werynax possesses Nature’s Healing, which it can use twice per d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Werynax
 
 *Large* *Monstrosity* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Nature’s Healing (2/Day):** The werynax taps into the power inherent in the land around it. It regains 13 (3d8) hp and is freed from any disease, poison, blindness, or deafness.
 
 
+</statblock>
 
 

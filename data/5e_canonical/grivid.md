@@ -23,6 +23,7 @@ As a bonus action, the Grivid can use the Consume Worms ability, allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grivid
 
 *Large* *Aberration* *neutral*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Consume Worms:** Consumes up to 3 cheek worms regaining 5 (2d4) hp for each worm consumed.
 
 
+</statblock>
 
 

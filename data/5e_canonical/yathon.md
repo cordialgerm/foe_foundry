@@ -25,6 +25,7 @@ For reactions, the Yathon has Precognition (Recharge 6), allowing it to foresee 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yathon
 
 *Large* *Humanoid* *neutral*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Precognition (Recharge 6):** The yathon catches a glimpse of an attack just before it lands, giving it time to react. When a creature the yathon can see hits it with a melee attack, the attacker has disadvantage on the attack roll. Alternatively, when the yathon misses with a melee weapon attack, it can reroll the attack roll with advantage.
 
 
+</statblock>
 
 

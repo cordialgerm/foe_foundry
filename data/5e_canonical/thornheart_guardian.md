@@ -25,6 +25,7 @@ Overall, the Thornheart Guardian combines physical prowess with potent magical q
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thornheart Guardian
 
 *Large* *Construct* *lawful evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Grasp of the Briar (Recharge 5-6):** The thornheart guardian summons grasping, thorny vines to impede and drain the life of its foes. The ground within 20 feet of the thornheart guardian becomes difficult terrain for 1 minute. This difficult terrain doesn’t cost the thornheart guardian extra movement. A creature that enters or starts its turn in the area must succeed on a DC 16 Strength saving throw or be restrained by the plants. A restrained creature takes 7 (2d6) necrotic damage at the start of each of its turns. A creature, including the restrained target, can take its action to break the target free of the vines by succeeding on a DC 16 Strength check.
 
 
+</statblock>
 
 

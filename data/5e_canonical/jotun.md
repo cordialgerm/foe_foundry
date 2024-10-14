@@ -25,6 +25,7 @@ As a reaction, the Jotun can employ Rock Catching, allowing it to catch thrown r
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jotun
 
 *Gargantuan* *Giant* *Chaotic Neutral*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Rock Catching:** If a rock or similar object is hurled at the jotun, the jotun can, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.
+</statblock>
 
 

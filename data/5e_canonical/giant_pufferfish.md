@@ -37,6 +37,7 @@ Overall, the Giant Pufferfish is a defensive powerhouse in its natural habitat, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Pufferfish
 
 *Small* *Beast* *unaligned*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Puff Up (Recharge: Short/Long Rest):** For 1 min it increases in size by filling its stomach with air or water. While puffed up it is Medium doubles its damage dice on Bite and Spine attacks (included above) and makes Str checks and Str saves with advantage. If pufferfish lacks the room to become Medium it attains the max size possible in space available.
 
 
+</statblock>
 
 

@@ -32,6 +32,7 @@ Overall, the Giant Frilled Lizard combines agility, physical strength, and a sur
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Frilled Lizard
 
 *Large* *Beast* *unaligned*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

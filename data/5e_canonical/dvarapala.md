@@ -23,6 +23,7 @@ Overall, the Dvarapala serves as a powerful guardian with a mix of physical migh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dvarapala
 
 *Huge* *Giant* *any alignment (as its patron deity)*
@@ -61,5 +62,6 @@ At will: sacred flame (2d8)
 - **Sweeping Strike (Recharge 4-6):** The dvarapala targets one or more creatures it can see within 10 feet of it. Each target must make a DC 16 Strength saving throw, taking 24 (7d6) bludgeoning damage on a failed save, or half as much damage on a successful one. A creature who fails its save is pushed 5 feet away from the dvarapala.
 
 
+</statblock>
 
 

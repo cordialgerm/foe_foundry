@@ -27,6 +27,7 @@ Overall, the Veritigibbet is a clever, tricky fey that thrives on mental manipul
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Veritigibbet
 
 *Small* *Fey* *chaotic neutral*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Liar Liar:** When a creature lies while within 30' of the veritigibbet that creature: 3 (1d6) fire and it ignites (DC 14 Dex negates). Until creature uses action to douse the fire target takes 3 (1d6) fire at start of each of its turns.
 
 
+</statblock>
 
 

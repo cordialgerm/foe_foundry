@@ -29,6 +29,7 @@ In terms of actions, the frog can perform a Bite attack. This melee weapon attac
 
 Source: 5e_srd
 
+<statblock>
 ### Frog
 
 *Tiny beast, unaligned*
@@ -55,7 +56,8 @@ Source: 5e_srd
 
 ***Standing Leap***. The frog's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start.
 
-A **frog** has no effective attacks. It feeds on small insects and typically dwells near water, in trees, or underground. The frog's statistics can also be used to represent a **toad**.
+A **frog** has no effective attacks. It feeds on small insects and typically dwells near water, in trees, or underground. The frog's statistics can also be used to represent a **toad**.</statblock>
+
 
 
 
@@ -63,6 +65,7 @@ A **frog** has no effective attacks. It feeds on small insects and typically dwe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frog
 
 *Tiny* *Beast*
@@ -87,6 +90,7 @@ Source: 5e_artisinal_monsters
 - **Jumper:** The frog can jump up to 10 feet horizontally and 5 feet vertically without a running start.
 
 
+</statblock>
 
 
 
@@ -95,6 +99,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frog
 
 *Tiny beast*
@@ -123,5 +128,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite.** Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 2 (1d4) bludgeoning damage.
 
+</statblock>
 
 

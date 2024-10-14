@@ -39,6 +39,7 @@ Overall, the Inkling is a clever and elusive creature that can be a valuable ass
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Inkling
 
 *Tiny* *Construct* *unaligned*
@@ -75,5 +76,6 @@ At will: fire bolt, mending, minor illusion, prestidigitation
 - **Redirect Spell:** If a spell attack hits the inkling, it can force the attacker to make a DC 12 Intelligence saving throw. If the attacker fails the saving throw, the spell is redirected to hit another creature of the inkling's choice within 30 feet.
 
 
+</statblock>
 
 

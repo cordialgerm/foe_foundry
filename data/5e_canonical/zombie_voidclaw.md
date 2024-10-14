@@ -21,6 +21,7 @@ As for its bonus action, "Nimble Fighter" enables the Voidclaw Zombie to take ei
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zombie, Voidclaw
 
 *Small* *Undead* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Fighter:** Takes Dash or Disengage action.
 
 
+</statblock>
 
 

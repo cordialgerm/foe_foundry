@@ -21,6 +21,7 @@ In combat, the Sasori Fukurowashi can engage in a Multiattack, performing three 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sasori Fukurowashi
 
 *Medium* *Fey* *neutral good*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ As a strategic option, the Clockwork Sentinel can utilize a bonus action called 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Sentinel
 
 *Medium* *Construct*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Parry:** The sentinel adds 2 to its AC against one melee attack that would hit it.
 
 
+</statblock>
 
 

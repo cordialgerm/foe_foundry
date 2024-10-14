@@ -21,6 +21,7 @@ Additionally, the Stone Guardian has a unique bonus action called Slow, which ca
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stone Guardian
 
 *Large* *Construct*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Slow (Recharge 5-6):** The guardian targets one or more creatures within 30 feet. Each target makes a DC 17 Wisdom saving throw. On a failure, the target is slowed for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

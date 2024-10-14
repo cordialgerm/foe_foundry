@@ -35,6 +35,7 @@ In terms of actions, the Young Black Dragon can use Multiattack to unleash one B
 
 Source: 5e_srd
 
+<statblock>
 # Young Black Dragon (Chromatic)
 
 *Large dragon, chaotic evil*
@@ -71,7 +72,8 @@ Source: 5e_srd
 
 ***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.
 
-***Acid Breath (Recharge 5-6)***. The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one.
+***Acid Breath (Recharge 5-6)***. The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -79,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Black Dragon
 
 *Large* *Dragon*
@@ -114,6 +117,7 @@ Source: 5e_artisinal_monsters
 - **Acid Breath (Recharge 5-6):** The dragon exhales sizzling acid in a 40-foot-long  5-foot-wide line. Each creature in that area makes a DC 15 Dexterity saving throw  taking 45 (10d8) acid damage on a failed save or half damage on a success. A creature that fails the save is blinded until the end of its next turn.
 
 
+</statblock>
 
 
 
@@ -122,6 +126,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Black Dragon
 
 *Large dragon*
@@ -153,5 +158,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.
 - **Acid Breath (Recharge 5–6).** The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 15 DEX save, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

@@ -27,6 +27,7 @@ As for its actions, the Wharfling can utilize its Pilfering Bite in combat. This
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wharfling
 
 *Tiny* *Beast* *Unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Pilfering Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Instead of dealing damage, the wharfling can steal one item the target is wearing or carrying, provided the item weighs no more than 10 pounds, isn’t a weapon, and isn’t wrapped around or firmly attached to the target, such as a shirt or armor.
+</statblock>
 
 

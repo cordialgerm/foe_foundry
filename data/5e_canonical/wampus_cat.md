@@ -25,6 +25,7 @@ As a bonus action, the Wampus Cat can use its Change Shape ability to polymorph 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wampus Cat
 
 *Medium* *Monstrosity* *Chaotic Neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The wampus cat magically polymorphs into a Medium female Humanoid, or back into her true form. Her statistics are the same in each form. Any equipment she is wearing or carrying transforms with her. She reverts to her true form if she dies.
+</statblock>
 
 

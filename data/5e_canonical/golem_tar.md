@@ -23,6 +23,7 @@ Overall, the Tar Golem presents a unique combination of melee threat, area contr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Golem, Tar
 
 *Medium* *Construct* *unaligned*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Draw Flames:** Extinguishes up to 10 ft. cube of nonmagical fire within 5 ft. of it drawing fire into itself and activating its Fire Hazard.
 
 
+</statblock>
 
 

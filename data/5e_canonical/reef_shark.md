@@ -27,6 +27,7 @@ When it comes to actions, the Reef Shark can perform a melee attack with its **B
 
 Source: 5e_srd
 
+<statblock>
 ### Reef Shark
 
 *Medium beast, unaligned*
@@ -57,7 +58,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d8+2) piercing damage.
 
-Smaller than giant sharks and hunter sharks, **reef sharks** inhabit shallow waters and coral reefs, gathering in small packs to hunt. A full-grown specimen measures 6 to 10 feet long.
+Smaller than giant sharks and hunter sharks, **reef sharks** inhabit shallow waters and coral reefs, gathering in small packs to hunt. A full-grown specimen measures 6 to 10 feet long.</statblock>
+
 
 
 
@@ -65,6 +67,7 @@ Smaller than giant sharks and hunter sharks, **reef sharks** inhabit shallow wat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Reef Shark
 
 *Medium* *Beast*
@@ -93,5 +96,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8+2) piercing damage.
 
 
+</statblock>
 
 

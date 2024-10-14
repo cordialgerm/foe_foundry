@@ -23,6 +23,7 @@ For bonus actions, the Drain Magic Item ability allows the swarm to drain the ma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Manabane Scarabs
 
 *Medium* *Swarm* *Beast* *Unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Drain Magic Item:** The swarm drains the magic from one magic item in its space that isn’t being worn or carried. A magic item with charges loses 1d4 charges, an item with limited uses per day loses one daily use, and a single-use item, such as a potion or spell scroll is destroyed. All other magic items have their effects suppressed for 1 minute. A drained item regains its magic after 1 hour.
+</statblock>
 
 

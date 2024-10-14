@@ -21,6 +21,7 @@ These mechanics create a complex and dangerous foe, capable of controlling battl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Neophron
 
 *Medium* *Fiend* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage. The target must succeed on a DC 16 Constitution saving throw or be poisoned until the end of its next turn.
 
 
+</statblock>
 
 

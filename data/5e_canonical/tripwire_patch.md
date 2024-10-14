@@ -23,6 +23,7 @@ The Tripwire Patch can also react with its No Escape ability, which lets it make
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tripwire Patch
 
 *Huge* *Plant* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **No Escape:** If a prone creature within 5 ft. of patch stands up from prone patch can make one Bite vs. it.
 
 
+</statblock>
 
 

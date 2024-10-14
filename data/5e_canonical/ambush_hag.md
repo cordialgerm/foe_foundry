@@ -25,6 +25,7 @@ Overall, the Ambush Hag is a resourceful and deadly opponent, blending physical 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ambush Hag
 
 *Medium fey*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 
 - **Illusory Appearance.** The hag covers itself and anything it is wearing or carrying with a magical illusion that makes it look like another creature of its general size and humanoid shape. The illusion ends if the hag takes a bonus action to end it or if the hag dies.The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have smooth skin, but someone touching it would feel its rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 20 INT (Investigation) check to discern that the hag is disguised.
 
+</statblock>
 
 

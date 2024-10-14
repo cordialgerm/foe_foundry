@@ -25,6 +25,7 @@ In combat, the dragon can also use its legendary actions, which include making a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Prismatic Ancient
 
 *Gargantuan* *Dragon* *neutral*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Tail Attack:** Makes a tail attack.
 - **Cast a Spell (2):** Uses Spellcasting.
 - **Shimmering Wings (2):** Each creature within 20': DC 19 Wis save or take 16 (3d10) radiant and blinded until start of its next turn.
+</statblock>
 
 

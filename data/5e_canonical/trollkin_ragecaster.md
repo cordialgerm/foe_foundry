@@ -23,6 +23,7 @@ As a bonus action, the Trollkin Ragecaster can enter a state of Ragecasting up t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trollkin Ragecaster
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Ragecasting (3/Day):** Enters special rage that lets it channel elemental power for 1 min. While ragecasting: disadvantage on Wis saves and gains fly speed of 60'. It can end ragecasting as a bonus action. When ragecasting ends it descends 60'/round until it lands on a solid surface and can continue concentrating on spell it cast while ragecasting.
 
 
+</statblock>
 
 

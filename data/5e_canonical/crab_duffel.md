@@ -27,6 +27,7 @@ The "Collect" action is particularly dangerous, as it allows the crab to place a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crab, Duffel
 
 *Large* *Monstrosity* *unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Collect:** Places one target it is grappling into its extradimensional space if there is room and grapple ends. Target blinded and restrained and has total cover vs. attacks and effects outside. A trapped creature can take its action to climb out of the bag by succeeding on a DC 13 Str or Dex check (creature’s choice). If crab dies trapped creature is no longer restrained by crab and can escape bag using 5 ft. of movement exiting prone.
 
 
+</statblock>
 
 

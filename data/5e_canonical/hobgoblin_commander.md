@@ -23,6 +23,7 @@ Overall, the Hobgoblin Commander is a solid combatant with good leadership abili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hobgoblin Commander
 
 *Medium humanoid*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 	- Emboldening Shout. One friendly creature within 30 feet of the hobgoblin commander that it can see gains 7 (2d6) temporary HP until the start of the commander’s next turn.
 	- Pressing Advance. The commander moves up to half its speed and commands one friendly creature it can see within 30 feet of it to also move. The target can use its reaction to move up to half its speed in the direction of the commander’s choosing. This movement for both creatures is unaffected by difficult terrain and doesn’t provoke opportunity attacks.
 
+</statblock>
 
 

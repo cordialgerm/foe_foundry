@@ -26,6 +26,7 @@ Overall, the Boggard's combination of agility, stealth, and amphibious abilities
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boggard
 
 *Medium* *Humanoid*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 
 
+</statblock>
 
 

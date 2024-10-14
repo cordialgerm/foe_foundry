@@ -34,6 +34,7 @@ Together, the Oculo Swarm's traits, abilities, and actions make it a complex and
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Oculo Swarm
 
 *Large* *Swarm* *Aberration* *Neutral Evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The oculo swarm makes two Extract Eye attacks. If both attacks hit one creature, the target must succeed on a DC 13 Strength saving throw or the swarm removes one of its eyes. While missing half or fewer of its total number of eyes, the target has disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight. While missing more than half its total number of eyes, the target is blinded until its sight is restored. If the target’s eye is recovered from the defeated swarm, it can be reattached with a successful DC 12 Wisdom (Medicine) check, provided the eye is reattached within 1 hour of the target losing the eye.
 - **Extract Eye:** Melee Weapon Attack: +7 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 18 (4d8) piercing damage, or 9 (2d8) piercing damage if the swarm has half of its hp or fewer.
 - **Disorienting Gaze (Recharge 5–6):** The swarm’s many eyes suddenly turn in different directions. Each creature within 10 feet of the oculo swarm must make a DC 13 Charisma saving throw. On a failure, a creature takes 21 (6d6) psychic damage and is disoriented until the end of its next turn. On a success, a creature takes half the damage and isn’t disoriented. A disoriented creature is incapacitated and moves in a random direction when it moves.
+</statblock>
 
 

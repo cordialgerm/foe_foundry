@@ -25,6 +25,7 @@ Overall, the Crystallite is a dangerous opponent whose unique abilities challeng
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crystallite
 
 *Large* *Giant* *lawful neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Calcify:** When it takes 5+ damage on a single turn it can reduce its hp max by an amount equal to damage taken and gains a +1 bonus to AC. Reduction and bonus last until it finishes a long rest. Can’t increase its AC above 20 using this.
 
 
+</statblock>
 
 

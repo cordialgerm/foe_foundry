@@ -1,7 +1,7 @@
 <MonsterName/>Quasit (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-<Subtype/>shapechanger</Subtype>
 <Subtype/>demon</Subtype>
+<Subtype/>shapechanger</Subtype>
 <CR/>1</CR>
 <AC/>13</AC>
 <HP/>7</HP>
@@ -49,6 +49,7 @@ Lastly, its Scare ability, usable once per day, targets a creature within 20 fee
 
 Source: 5e_srd
 
+<statblock>
 ### Quasit (Demon)
 
 *Tiny fiend (demon, shapechanger), chaotic evil*
@@ -87,7 +88,8 @@ Source: 5e_srd
 
 ***Scare (1/Day)***. One creature of the quasit's choice within 20 feet of it must succeed on a DC 10 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success.
 
-***Invisibility***. The quasit magically turns invisible until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is invisible with it.
+***Invisibility***. The quasit magically turns invisible until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is invisible with it.</statblock>
+
 
 
 
@@ -95,6 +97,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quasit
 
 *Tiny* *Fiend*
@@ -132,6 +135,7 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The quasit magically turns invisible, along with any equipment it carries. This invisibility ends if the quasit makes an attack, falls unconscious, or dismisses the effect.
 
 
+</statblock>
 
 
 
@@ -140,6 +144,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quasit
 
 *Tiny fiend (demon)*
@@ -175,5 +180,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape.** The quasit magically transforms into a Medium or smaller Beast that has a CR no higher than its own or back into its true form, which is a Fiend. Its statistics, other than its size and speed, are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies.
 - **Scare (1/Day; True Form Only).** One creature of the quasit’s choice within 20 feet of it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
+</statblock>
 
 

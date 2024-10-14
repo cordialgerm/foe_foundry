@@ -23,6 +23,7 @@ Overall, the Stout Halfling Guard is an entry-level opponent that serves well to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stout Halfling Guard
 
 *Small* *Humanoid*
@@ -46,5 +47,6 @@ Source: 5e_artisinal_monsters
 - **Spear:** Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage.
 
 
+</statblock>
 
 

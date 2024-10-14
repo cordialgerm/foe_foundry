@@ -23,6 +23,7 @@ Overall, the Caretaker Weevil stands out as an unusual companion, offering stabi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Caretaker Weevil
 
 *Medium* *Beast* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Regenerative Spittle (3/Day):** Launches spittle at one creature it can see within 10 ft. of it. Target regains 2 (1d4) hp. For 1 min target regains 1 hp at the start of each of its turns.
 
 
+</statblock>
 
 

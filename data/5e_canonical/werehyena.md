@@ -21,6 +21,7 @@ Overall, the werehyena is a formidable foe with unique abilities that can turn t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Werehyena
 
 *Medium* *Humanoid* *chaotic evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Scimitar (Gnoll or Hybrid Form Only):** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.
 
 
+</statblock>
 
 

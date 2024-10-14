@@ -21,6 +21,7 @@ As a bonus action, the Anubian can utilize Sand Step, allowing it to teleport up
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Anubian
 
 *Medium* *Elemental* *Chaotic Evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Sand Step:** The anubian collapses into loose sand and teleports up to 30 feet to an unoccupied space it can see, reforming in that space. If the destination space contains sand, the anubian can immediately Hide. The anubian can’t use Sand Step while Haboob is active.
+</statblock>
 
 

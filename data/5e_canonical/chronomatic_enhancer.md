@@ -29,6 +29,7 @@ In summary, the Chronomatic Enhancer represents a powerful combination of offens
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chronomatic Enhancer
 
 *Large* *Construct* *unaligned*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Alter Timeline:** When a friendly creature within 15 feet of the chronomatic enhancer takes damage, the enhancer can modify time to protect the creature, changing all damage dice rolled to 1s.
 
 
+</statblock>
 
 

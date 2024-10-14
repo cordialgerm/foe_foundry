@@ -23,6 +23,7 @@ Additionally, the Ring Servant can unleash its Ring of Destruction ability, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ring Servant
 
 *Large* *Construct* *neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Ring of Destruction (Recharge 5-6):** The ring servant discharges a spinning ring of magical energy. Each creature within 20 feet of the servant must make a DC 16 Dexterity saving throw, taking 45 (10d8) force damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ The Spellhound can also use its Nullifying Howl once per day. This action involv
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spellhound
 
 *Large* *Monstrosity* *lawful neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Nullifying Howl (1/Day):** The spellhound lets out a high-pitched, multiphonic howl to disrupt magical effects within 60 feet of it. Any spell of 3rd level or lower within the area ends. For each spell of 4th-level or higher in the area, the spellhound makes an ability check, adding its Constitution modifier to the roll. The DC equals 10 + the spell’s level. On a success, the spell ends.<br><br>In addition, each spellcaster within 30 feet of the spellhound that can hear the howl must succeed on a DC 14 Constitution saving throw or be stunned until the end of its next turn.
 
 
+</statblock>
 
 

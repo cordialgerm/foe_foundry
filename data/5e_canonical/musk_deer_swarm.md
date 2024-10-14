@@ -21,6 +21,7 @@ For its bonus actions, the Musk Deer Swarm has the ability to use "Musk," which 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Musk Deer, Swarm
 
 *Medium* *Beast* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Sprinter:** Takes the Dash action.
 
 
+</statblock>
 
 

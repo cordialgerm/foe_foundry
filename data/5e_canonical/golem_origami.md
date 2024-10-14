@@ -32,6 +32,7 @@ As a bonus action, the Golem can fold into different forms, reshaping its body t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Golem, Origami
 
 *Large* *Construct* *unaligned*
@@ -76,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Fold:** Reshape papery body to resemble Large dragon Large swan or Med frog. Use again to unfold into Large flat piece of fabric/paper. Stats except size same in each form. Unfolded if it dies.
 
 
+</statblock>
 
 

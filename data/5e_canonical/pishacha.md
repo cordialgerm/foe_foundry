@@ -33,6 +33,7 @@ Lastly, the Pishacha is capable of magical invisibility, which it can activate t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pishacha
 
 *Medium* *Fiend* *chaotic evil*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The pishacha magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell).
 
 
+</statblock>
 
 

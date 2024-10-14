@@ -19,6 +19,7 @@ In terms of actions, the Chaos Creeper can make a Multiattack, allowing it to ei
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chaos Creeper
 
 *Medium* *Plant* *chaotic neutral*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Fruit Bomb:** Ranged Weapon Attack: +8 to hit 30/120' one target 31 (5d10+4) acid cold fire lightning poison or thunder (creeper’s choice). Instead of dealing damage creeper can choose for fruit to trigger its Wondrous Cornucopia. Treat target as if it ate fruit where applicable.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ In terms of reactions, the Dogmole can access its "Wormkiller Rage" when it take
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dogmole
 
 *Medium* *Beast* *Unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Wormkiller Rage:** When the dogmole takes damage from a Small or larger insectoid Beast, such as a giant centipede, or when it deals damage to such a creature, it enters a special rage for 3 rounds. While in this rage, it has advantage on attack rolls and Strength checks and deals an extra 2 (1d4) piercing damage with its Bite attack, but its Armor Class is reduced by 2. The dogmole can’t end this rage willingly.
+</statblock>
 
 

@@ -19,6 +19,7 @@ In combat, the Sand Wyrmling can use two primary actions: a bite and its breath 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Sand Wyrmling
 
 *Medium* *Dragon* *neutral evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapon (Recharge 5–6):** Uses one of the following:Sand Blast. Exhales superheated sand in a 15 ft. cone. Each creature in area: 11 (2d10) piercing damage and 11 (2d10) fire (DC 13 Dex half). Blinding Sand. Breathes fine sand in a 15 ft. cone. Each creature in area: blinded for 1 min (DC 13 Con negates). Blinded creature can take an action to clear its eyes of sand ending effect for it.
 
 
+</statblock>
 
 

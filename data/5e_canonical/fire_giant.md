@@ -35,6 +35,7 @@ Overall, the Fire Giant represents a powerful and imposing challenge, capable of
 
 Source: 5e_srd
 
+<statblock>
 ### Fire Giant
 
 *Huge giant, lawful evil*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Greatsword***. *Melee Weapon Attack:* +11 to hit, reach 10 ft., one target. *Hit:* 28 (6d6+7) slashing damage.
 
-***Rock***. *Ranged Weapon Attack:* +11 to hit, range 60/240 ft., one target. *Hit:* 29 (4d10+7) bludgeoning damage.
+***Rock***. *Ranged Weapon Attack:* +11 to hit, range 60/240 ft., one target. *Hit:* 29 (4d10+7) bludgeoning damage.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire Giant
 
 *Huge* *Giant*
@@ -111,6 +114,7 @@ Source: 5e_artisinal_monsters
 - **Kick:** When hit by a melee attack by a Medium or smaller creature the giant can see within 10 feet, the giant kicks its attacker. The attacker makes a DC 19 Dexterity saving throw. On a failure, it takes 14 (3d4 + 7) bludgeoning damage, is pushed up to 20 feet from the giant, and falls prone.
 
 
+</statblock>
 
 
 
@@ -119,6 +123,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire Giant
 
 *Huge giant*
@@ -153,5 +158,6 @@ Source: 5e_artisinal_monsters
 
 - **Pyroclastic Surge.** A burst of volcanic gas and rock fragments flows in a 60-foot-line that is 5 feet wide from the fire giant’s outstretched hand. Each creature in the line must succeed on a DC 16 DEX save or be poisoned until the end of its next turn and pushed up to 15 feet away from the giant. A creature that fails the save by 5 or more is petrified in volcanic ash for 1 hour or until a creature spends 1 minute soaking the petrified creature in cool water.
 
+</statblock>
 
 

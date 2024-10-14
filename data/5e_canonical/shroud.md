@@ -23,6 +23,7 @@ As a bonus action, the Shroud can use Shadow Stealth, allowing it to take the Hi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shroud
 
 *Medium* *Undead* *Neutral Evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Stealth:** While in dim light or darkness, the shroud takes the Hide action.
+</statblock>
 
 

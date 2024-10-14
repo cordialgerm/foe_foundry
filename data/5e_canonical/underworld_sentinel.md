@@ -36,6 +36,7 @@ Finally, the Grim Reaping ability, which recharges on rolls of 5 or 6, allows th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Underworld Sentinel
 
 *Huge* *Undead* *neutral*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Grim Reaping (Recharge 5–6):** Spins with its scythe extended and makes one Scythe attack vs. each creature within its reach. A creature that takes necrotic from this attack can’t regain hp until the end of its next turn.
 
 
+</statblock>
 
 

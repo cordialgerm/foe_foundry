@@ -23,6 +23,7 @@ As a reaction, the Song Angel can use Heavenly Inspiration to assist allies. If 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Song Angel
 
 *Large* *Celestial* *lawful good*
@@ -64,5 +65,6 @@ At will: alter self, calm emotions, charm person, create food and water, detect 
 - **Heavenly Inspiration:** When a creature the song angel can see fails an ability check or saving throw or misses with a weapon attack, the angel can sing a verse of divine music. If the creature hears this song, it can reroll the failed check, save, or attack roll with advantage.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Its most formidable ability is Alter Fate, which it can use on a recharge of 5 o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fate Eater
 
 *Medium* *Aberration* *Neutral*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The fate eater makes two Bite attacks.
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage plus 7 (2d6) necrotic damage.
 - **Alter Fate (Recharge 5–6):** The fate eater alters the fate of one creature it can see within 30 feet of it. The creature must make a DC 15 Charisma saving throw. On a failure, the creature takes 36 (8d8) psychic damage, and its fate is altered. Roll a d6 to determine which of the following alterations affects the creature. On a success, the creature takes half the damage, and its fate isn’t altered. A creature with an altered fate for 1 minute or less can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Otherwise, a creature with an altered fate can repeat the saving throw at the end of each long rest, ending the effect on itself on a success.
+</statblock>
 
 

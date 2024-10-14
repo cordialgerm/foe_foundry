@@ -21,6 +21,7 @@ Overall, the Bonespitter is a brutal and powerful foe, thriving in its ability t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bonespitter
 
 *Gargantuan* *Monstrosity* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Shard Spray (Recharge 5-6):** The bonespitter exhales a 60-foot cone of bone shards. Each creature in that area must make a DC 18 Dexterity saving throw, taking 35 (10d6) piercing damage on a failed save, or half as much on a successful one. If a Large or smaller creature fails this saving throw, it is also knocked prone, pinned to the ground by a shard, and restrained. As an action, the restrained creature or a creature within 5 feet of it can make a DC 18 Strength check, removing the shard and ending the condition on a success. The shard can also be attacked and destroyed (AC 12; hp 15; vulnerability to bludgeoning damage; immunity to poison and psychic damage).
 
 
+</statblock>
 
 

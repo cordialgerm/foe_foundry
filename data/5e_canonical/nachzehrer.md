@@ -23,6 +23,7 @@ In summary, the Nachzehrer is a powerful and insidious undead creature that can 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nachzehrer
 
 *Medium* *Undead* *chaotic evil*
@@ -57,5 +58,6 @@ When an infected creature finishes a long rest, it must succeed on a DC 16 Const
 - **Fist:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ For actions, the Scorpion has a singular attack option called "Sting." This is a
 
 Source: 5e_srd
 
+<statblock>
 ### Scorpion
 
 *Tiny beast, unaligned*
@@ -43,7 +44,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Sting***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one.
+***Sting***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -51,6 +53,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scorpion
 
 *Tiny* *Beast*
@@ -74,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage and the target makes a DC 9 Constitution save  taking 4 (1d8) poison damage on a failure or half damage on a success.
 
 
+</statblock>
 
 

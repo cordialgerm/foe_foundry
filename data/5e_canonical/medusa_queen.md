@@ -35,6 +35,7 @@ Her abilities and tactical potential make the Medusa Queen a captivating adversa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Medusa Queen
 
 *Medium* *Monstrosity*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Snake Hair:** The medusa uses Snake Hair.
 - **Frenzy of Snakes (1/Day:** The medusa uses Snake Hair on each creature within 5 feet.
 - **Imperious Command:** A creature with averted or covered eyes within 60 feet that can hear the medusa makes a DC 13 Wisdom saving throw. On a failure, it looks at the medusa, making itself the target of Petrifying Gaze if it and the medusa can see each other. On a success, the creature is immune to Imperious Command for 24 hours. This is a charm effect.
+</statblock>
 
 

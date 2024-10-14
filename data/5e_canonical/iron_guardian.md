@@ -21,6 +21,7 @@ As a reaction, the Iron Guardian possesses the Deflection ability, which allows 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Iron Guardian
 
 *Large* *Construct*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Deflection:** When missed by a ranged attack by a creature the guardian can see, the guardian redirects the attack against a creature within 60 feet that it can see. The original attacker must reroll the attack against the new target.
 
 
+</statblock>
 
 

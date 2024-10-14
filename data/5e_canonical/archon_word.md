@@ -35,6 +35,7 @@ Overall, the Archon, Word is a highly supportive creature that enhances the capa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archon, Word
 
 *Tiny* *Celestial* *lawful good*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 13) no material or somatic components: At will: dancing lights message true strike1/day ea: faerie fire heroism
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ In combat, the Monkey's Bane Vine utilizes a Multiattack feature, enabling it to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Monkey’S Bane Vine
 
 *Large* *Plant* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Tendril:** Melee Weapon Attack: +6 to hit, 20 ft., one target, 11 (2d6+4) bludgeoning damage. If the target is a Large or smaller creature it is grappled (escape DC 14). Until this grapple ends the creature is restrained and takes 7 (2d6) bludgeoning damage at the start of each of its turns. The monkey’s bane vine has two tendrils each of which can grapple only one target.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Giant Poisonous Snake is a stealthy and dangerous creature that rel
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snake, Giant Poisonous
 
 *Medium beast*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 
 - **Reflexive Nip.** When a creature the snake can see hits it with a melee attack while within 5 feet of it, the snake can make a quick nip at the creature. The attacker must succeed on a DC 11 CON save or be poisoned until the end of its next turn.
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ Additionally, it can hurl rocks as a ranged weapon attack, which also has a +12 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Giant
 
 *Huge* *Giant* *chaotic evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +12 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage.
 
 
+</statblock>
 
 

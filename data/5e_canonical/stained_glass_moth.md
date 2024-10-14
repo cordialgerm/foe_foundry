@@ -38,6 +38,7 @@ Overall, the Stained-Glass Moth serves as a compelling addition to any D&D adven
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stained-Glass Moth
 
 *Small* *Construct* *unaligned*
@@ -75,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Blessed Wings:** Marks one creature it can see within 30' of it with holy power. If the target is a hostile creature the next attack roll made vs. the target before the start of the moth’s next turn has advantage. If the target is a friendly creature it gains a +2 bonus to AC until the start of the moth’s next turn.
 
 
+</statblock>
 
 

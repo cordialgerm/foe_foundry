@@ -32,6 +32,7 @@ The creature is capable of spellcasting, using its high Charisma for the spell s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spectral Guardian
 
 *Medium* *Undead* *Neutral Evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Spectral Blade:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage plus 9 (2d8) necrotic damage, and the target must succeed on a DC 14 Wisdom saving throw or be frightened until the end of its next turn.
 - **Spectral Burst:** Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 120 ft., one target. Hit: 9 (1d10 + 4) force damage plus 9 (2d8) necrotic damage.
 - **Spellcasting:** The arcane guardian casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 15):<br>At will: dancing lights, fog cloud, minor illusion<br>3/day each: fear, slow<br>1/day each: arcane hand
+</statblock>
 
 

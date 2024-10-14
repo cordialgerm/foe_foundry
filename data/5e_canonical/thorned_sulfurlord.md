@@ -21,6 +21,7 @@ In combat, the Thorned Sulfurlord can take advantage of its Multiattack feature,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thorned Sulfurlord
 
 *Huge* *Fiend* *chaotic evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **The World Shall Know Fire (Recharge 5-6):** The thorned sulfurlord targets a creature that has taken fire damage from it within the last minute and causes a burst of fire to expand out from that creature in a 30-foot-radius. Each creature in the area, including the target, must make a DC 17 Dexterity saving throw, taking 35 (10d6) fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried.
 
 
+</statblock>
 
 

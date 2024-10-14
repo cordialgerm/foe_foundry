@@ -19,6 +19,7 @@ In terms of actions, the Giant Water Scorpion can perform a Multiattack, allowin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Water Scorpion
 
 *Large* *Beast* *unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 6 (1d6 + 3) piercing damage. The target is grappled (escape DC 13) if it is a Medium or smaller creature and the scorpion doesn’t have another creature grappled.
 
 
+</statblock>
 
 

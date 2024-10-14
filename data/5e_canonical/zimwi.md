@@ -21,6 +21,7 @@ Overall, the Zimwi's combination of high dexterity, mighty constitution, multi-a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zimwi
 
 *Medium* *Giant* *Chaotic Evil*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.
 - **Claws:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage, and the target is grappled (escape DC 12) if it is a Medium or smaller creature. The zimwi has two claws, each of which can grapple only one target.
 - **Swallow:** The zimwi makes one Bite attack against a Medium or smaller creature it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the zimwi, and it takes 10 (3d6) acid damage at the start of each of the zimwi’s turns. A zimwi can have up to two creatures swallowed at a time.
+</statblock>
 
 

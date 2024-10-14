@@ -23,6 +23,7 @@ For movement, the Star Spawn can utilize a bonus action known as Interdimensiona
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Star Spawn of Cthulhu
 
 *Large* *Fiend* *Chaotic Evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Interdimensional Step:** The star spawn of Cthulhu teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see. Small tears in reality appear at the origin and destination when it uses this bonus action.
+</statblock>
 
 

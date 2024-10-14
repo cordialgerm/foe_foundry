@@ -40,6 +40,7 @@ As a bonus action, the Vrock can perform a Startling Screech to target a creatur
 
 Source: 5e_srd
 
+<statblock>
 ### Vrock (Demon)
 
 *Large fiend (demon), chaotic evil*
@@ -80,7 +81,8 @@ Source: 5e_srd
 
 ***Spores (Recharge 6)***. A 15-foot radius cloud of toxic spores extends out from the vrock. The spores spread around corners. Each creature in that area must succeed on a DC 14 Constitution saving throw or become poisoned. While poisoned in this way, a target takes 5 (1d10) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Emptying a vial of holy water on the target also ends the effect on it.
 
-***Stunning Screech (1/Day)***. The vrock emits a horrific screech. Each creature within 20 feet of it that can hear it and that isn't a demon must succeed on a DC 14 Constitution saving throw or be stunned until the end of the vrock's next turn.
+***Stunning Screech (1/Day)***. The vrock emits a horrific screech. Each creature within 20 feet of it that can hear it and that isn't a demon must succeed on a DC 14 Constitution saving throw or be stunned until the end of the vrock's next turn.</statblock>
+
 
 
 
@@ -88,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vrock
 
 *Large* *Fiend*
@@ -127,6 +130,7 @@ Source: 5e_artisinal_monsters
 - **Stunning Screech (1/Day):** The vrock screeches. Each non-demon creature within 20 feet that can hear it makes a DC 14 Constitution saving throw. On a failure, it is stunned until the end of the vrocks next turn.
 
 
+</statblock>
 
 
 
@@ -135,6 +139,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vrock
 
 *Large fiend (demon)*
@@ -170,5 +175,6 @@ Source: 5e_artisinal_monsters
 
 - **Startling Screech.** The vrock emits a horrific screech at one creature it can see within 30 feet of it. The target must succeed on a DC 14 CON save or be able to take either an action or bonus action on its turn, not both, and it can’t take reactions.
 
+</statblock>
 
 

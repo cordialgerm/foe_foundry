@@ -21,6 +21,7 @@ In combat, Vellso can utilize its Multiattack feature, making two separate attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vellso
 
 *Medium* *Fiend* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.<br><br>Constitution saving throw or gain one level of exhaustion. If an infected creature succeeds on the saving throw, it no longer gains exhaustion levels each day. A second successful save at the end of a long rest cures the disease. The abyssal disease resists many efforts at treatment and can only be cured by a greater restoration spell or similar magic. A living creature that dies from the effects of carrion curse has a 75% chance of rising again as a blood zombie (see page 393) within 24 hours.
 
 
+</statblock>
 
 

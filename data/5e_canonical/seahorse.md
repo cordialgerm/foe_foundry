@@ -30,6 +30,7 @@ Overall, the seahorse is a minor creature with interesting adaptations for under
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Seahorse
 
 *Tiny* *Beast*
@@ -53,6 +54,7 @@ Source: 5e_artisinal_monsters
 - **Water Breathing:** The seahorse breathes only water.
 
 
+</statblock>
 
 
 
@@ -61,6 +63,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Seahorse
 
 *Tiny beast*
@@ -89,5 +92,6 @@ Source: 5e_artisinal_monsters
 
 - **Ram.** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.
 
+</statblock>
 
 

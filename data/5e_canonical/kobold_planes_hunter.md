@@ -29,6 +29,7 @@ Overall, the Kobold Planes Hunter is a cunning and agile combatant, capable of d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold, Planes Hunter
 
 *Small* *Humanoid* *neutral*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Parry:** + 4 to its AC vs. one melee attack that would hit it if it can see attacker and wielding melee weapon.
 
 
+</statblock>
 
 

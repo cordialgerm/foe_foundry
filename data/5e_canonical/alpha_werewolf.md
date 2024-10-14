@@ -21,6 +21,7 @@ Overall, the Alpha Werewolf combines brutal offensive capabilities with strong d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alpha Werewolf
 
 *Medium* *Humanoid*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Frenzied Bite (While Bloodied:** The werewolf makes a bite attack.
 
 
+</statblock>
 
 

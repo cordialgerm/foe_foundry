@@ -19,6 +19,7 @@ Overall, the Roachling Skirmisher melds agility and cunning, making it a suitabl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Roachling Skirmisher
 
 *Small* *Humanoid* *Chaotic Neutral*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 
 - **Shortsword:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 - **Dart:** Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
+</statblock>
 
 

@@ -49,6 +49,7 @@ In summary, the Young River Dragon is a versatile and dangerous enemy, with stro
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young River Dragon
 
 *Large* *Dragon*
@@ -86,5 +87,6 @@ Source: 5e_artisinal_monsters
 - **Torrential Breath (Recharge 5-6):** The dragon exhales water in a 30-foot-long  5-foot-wide line. Each creature in the area makes a DC 14 Dexterity saving throw  taking 42 (12d6) bludgeoning damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

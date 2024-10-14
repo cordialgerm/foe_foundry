@@ -25,6 +25,7 @@ For its reactions, the Kinnara can use Share the Pain. When its partner is attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kinnara
 
 *Medium* *Celestial* *lawful good*
@@ -66,5 +67,6 @@ At will: detect good and evil, guidance, light, spare the dying
 - **Share the Pain:** When the kinnara's partner is hit with a melee or ranged attack, the kinnara can teleport to an unoccupied space within 5 feet of its partner. The damage caused by the attack is divided evenly between the two kinnara.
 
 
+</statblock>
 
 

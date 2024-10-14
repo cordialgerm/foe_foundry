@@ -21,6 +21,7 @@ Apart from its regular actions, the Niya-Atha Warrior can also perform a bonus a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Niya-Atha Warrior
 
 *Medium* *Fey* *lawful neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Enlarge:** Magically increases in size along with anything it is wearing or carrying. While enlarged it is Large doubles its damage dice on weapon attacks (included above) and makes Str checks and Str saves with advantage. While enlarged it also can no longer use the Standing Leap trait. If it lacks the room to become Large this action fails.
 
 
+</statblock>
 
 

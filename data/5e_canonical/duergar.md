@@ -28,6 +28,7 @@ Overall, the Duergar is a well-rounded humanoid capable of adapting its combat s
 
 Source: 5e_srd
 
+<statblock>
 ## Duergar
 
 *Medium humanoid (dwarf), lawful evil*
@@ -62,7 +63,8 @@ Source: 5e_srd
 
 ***Javelin***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 5 (1d6+2) piercing damage, or 9 (2d6+2) piercing damage while enlarged.
 
-***Invisibility (Recharges after a Short or Long Rest)***. The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it.
+***Invisibility (Recharges after a Short or Long Rest)***. The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it.</statblock>
+
 
 
 
@@ -70,6 +72,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Duergar
 
 *Medium humanoid*
@@ -109,5 +112,6 @@ Source: 5e_artisinal_monsters
 
 - **Shield Wall.** The duergar adds 2 to its AC against one weapon attack that would hit it. To do so, the duergar must be wielding a shield and within 5 feet of another duergar that is also wielding a shield.
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ The Plaresh's Infest Corpse ability can be used after a long rest, allowing it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Plaresh
 
 *Medium* *Fiend* *chaotic evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Infest Corpse (Recharges after a Long Rest):** The plaresh targets one dead humanoid in its space. The body is destroyed, and a new plaresh rises from the corpse. The newly created plaresh is free-willed but usually joins its creator.
 
 
+</statblock>
 
 

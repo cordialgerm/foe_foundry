@@ -21,6 +21,7 @@ In combat, the Razorleaf can use the Multiattack action to make two melee attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Razorleaf
 
 *Medium* *Plant* *neutral evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Shower of Razors (Recharge 5-6):** The razorleaf shakes loose a deadly shower of slicing leaves. Each creature within 10 feet of the razorleaf must make a DC 14 Dexterity saving throw, taking 21 (6d6) slashing damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

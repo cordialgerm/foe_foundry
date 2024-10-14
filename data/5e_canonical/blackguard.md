@@ -23,6 +23,7 @@ Additionally, the Blackguard can invoke a powerful curse once per day through it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blackguard
 
 *Medium* *Humanoid*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Vile Curse (1/Day):** The knight utters hellish words that scald the soul. Living creatures of the knights choice within 30 feet that can hear and understand them are magically cursed for 1 minute. A d4 is subtracted from attack rolls and saving throws made by a cursed creature. A creature immune to the frightened condition is immune to this curse.
 
 
+</statblock>
 
 

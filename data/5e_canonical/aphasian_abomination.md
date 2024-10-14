@@ -19,6 +19,7 @@ In combat, the Aphasian Abomination can perform a Multiattack, delivering three 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aphasian Abomination
 
 *Large* *Construct* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Force Blast:** Melee or Ranged Spell Attack: +9 to hit 5 ft. or range 120' one target 23 (4d8+5) force.
 
 
+</statblock>
 
 

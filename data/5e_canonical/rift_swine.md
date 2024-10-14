@@ -23,6 +23,7 @@ Overall, the Rift Swine is a unique creature that combines physical menace and c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rift Swine
 
 *Large* *Aberration* *Chaotic Neutral*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Tusk:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
 - **Tentacle:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the target is restrained. The rift swine has two tentacles, each of which can grapple only one target.
 - **Warping Bolt:** Ranged Spell Attack: +4 to hit, range 60 ft., one target. Hit: 11 (3d6 + 1) force damage, and the target must succeed on a DC 14 Constitution saving throw or have disadvantage on attack rolls as reality-warping energies temporarily distort its body.
+</statblock>
 
 

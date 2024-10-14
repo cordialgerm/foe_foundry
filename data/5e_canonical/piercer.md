@@ -27,6 +27,7 @@ In terms of actions, the Piercer has a melee weapon attack called Pierce. This a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Piercer
 
 *Small* *Monstrosity*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Pierce:** Melee Weapon Attack: +2 to hit  one target directly underneath the piercer. Hit: 10 (3d6) piercing damage. This attack has disadvantage against a creature that is protecting its head with a shield or similar object. If the attack misses  the piercer dies.
 
 
+</statblock>
 
 

@@ -40,6 +40,7 @@ Overall, the Dread Knight is an overwhelmingly powerful foe that combines high d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dread Knight
 
 *Medium* *Undead*
@@ -81,5 +82,6 @@ Source: 5e_artisinal_monsters
 - **Break Magic:** The dread knight ends all spell effects created by a 5th-level or lower spell slot on a creature, object, or point within 30 feet.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ In combat, the chuul is designed to engage fighters head-on through multiattacks
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spell-warped Chuul
 
 *Large* *Aberration*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Tentacle:** A grappled creature makes a DC 14 Constitution saving throw. On a failure  it is paralyzed for 1 minute. The creature repeats the saving throw at the end of each of its turns  ending the paralysis on a success.
 
 
+</statblock>
 
 

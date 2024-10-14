@@ -1,8 +1,8 @@
 <MonsterName/>Wereboar (Lycanthrope)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-<Subtype/>shapechanger</Subtype>
 <Subtype/>human</Subtype>
 <Subtype/>lycanthrope</Subtype>
+<Subtype/>shapechanger</Subtype>
 <CR/>4</CR>
 <AC/>10</AC>
 <HP/>78</HP>
@@ -38,6 +38,7 @@ Overall, the wereboar serves as a powerful and strategic opponent in combat, cap
 
 Source: 5e_srd
 
+<statblock>
 ### Wereboar (Lycanthrope)
 
 *Medium humanoid (human, shapechanger), neutral evil*
@@ -74,7 +75,8 @@ Source: 5e_srd
 
 ***Maul (Humanoid or Hybrid Form Only)***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) bludgeoning damage.
 
-***Tusks (Boar or Hybrid Form Only)***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with wereboar lycanthropy.
+***Tusks (Boar or Hybrid Form Only)***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with wereboar lycanthropy.</statblock>
+
 
 
 
@@ -82,6 +84,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wereboar
 
 *Medium* *Humanoid*
@@ -118,6 +121,7 @@ Source: 5e_artisinal_monsters
 - **Frenzied Tusks (While Bloodied:** The wereboar attacks with its tusks.
 
 
+</statblock>
 
 
 
@@ -126,6 +130,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wereboar
 
 *Medium humanoid (lycanthrope)*
@@ -162,5 +167,6 @@ Source: 5e_artisinal_monsters
 - **Challenging Snort (Boar or Hybrid Form Only).** The wereboar snorts and stomps its feet at a creature it can see within 30 feet of it. The target must succeed on a DC 13 WIS save or be frightened until the end of its next turn and have disadvantage on the next save it makes against being knocked prone by the wereboar.
 - **Change Shape.** The wereboar transforms into a Medum or Large boar, a Medium boar-humanoid hybrid, or back into its true form, which is Humanoid. Its statistics, other than its size, speed, and AC, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
 
+</statblock>
 
 

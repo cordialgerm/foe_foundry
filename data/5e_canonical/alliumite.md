@@ -19,6 +19,7 @@ The Alliumite can use two attacks. The Thorn Dart is a ranged weapon attack with
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alliumite
 
 *Small* *Plant* *chaotic neutral*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Grass Blade:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage.
 
 
+</statblock>
 
 

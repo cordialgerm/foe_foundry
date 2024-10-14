@@ -37,6 +37,7 @@ Finally, the Elephant has a bonus action called Trunk Grab, where it can grab on
 
 Source: 5e_srd
 
+<statblock>
 ### Elephant
 
 *Huge beast, unaligned*
@@ -63,7 +64,8 @@ Source: 5e_srd
 
 ***Gore***. *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 19 (3d8+6) piercing damage.
 
-***Stomp***. *Melee Weapon Attack:* +8 to hit, reach 5 ft., one prone creature. *Hit:* 22 (3d10+6) bludgeoning damage.
+***Stomp***. *Melee Weapon Attack:* +8 to hit, reach 5 ft., one prone creature. *Hit:* 22 (3d10+6) bludgeoning damage.</statblock>
+
 
 
 
@@ -71,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elephant
 
 *Huge* *Beast*
@@ -99,6 +102,7 @@ Source: 5e_artisinal_monsters
 - **Trample Underfoot:** The elephant makes a stomp attack against a prone creature.
 
 
+</statblock>
 
 
 
@@ -107,6 +111,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elephant
 
 *Huge beast*
@@ -140,5 +145,6 @@ Source: 5e_artisinal_monsters
 
 - **Trunk Grab.** The elephant grabs one Large or smaller creature within 10 feet of it. The target must succeed on a DC 15 STR save or be grappled (escape DC 15). The elephant can grapple only one creature at a time.
 
+</statblock>
 
 

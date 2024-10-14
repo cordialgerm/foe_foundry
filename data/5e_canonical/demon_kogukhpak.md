@@ -23,6 +23,7 @@ The Kogukhpak is a formidable foe due to its powerful attacks, significant defen
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Demon, Kogukhpak
 
 *Huge* *Fiend* *chaotic evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 6):** Exhales fire in a 90' cone. Each creature in that area: 70 (20d6) fire (DC 20 Dex half).
 
 
+</statblock>
 
 

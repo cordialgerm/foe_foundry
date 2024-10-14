@@ -49,6 +49,7 @@ As a bonus action:
 
 Source: 5e_srd
 
+<statblock>
 ### Rug of Smothering (Animated Object)
 
 *Large construct, unaligned*
@@ -81,7 +82,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Smother***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one Medium or smaller creature. *Hit:* The creature is grappled (escape DC 13). Until this grapple ends, the target is restrained, blinded, and at risk of suffocating, and the rug can't smother another target. In addition, at the start of each of the target's turns, the target takes 10 (2d6+3) bludgeoning damage.
+***Smother***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one Medium or smaller creature. *Hit:* The creature is grappled (escape DC 13). Until this grapple ends, the target is restrained, blinded, and at risk of suffocating, and the rug can't smother another target. In addition, at the start of each of the target's turns, the target takes 10 (2d6+3) bludgeoning damage.</statblock>
+
 
 
 
@@ -89,6 +91,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rug of Smothering
 
 *Large* *Construct*
@@ -121,6 +124,7 @@ Source: 5e_artisinal_monsters
 - **Squeeze:** One creature grappled by the rug takes 10 (2d6 + 3) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -129,6 +133,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rug of Smothering
 
 *Large construct*
@@ -165,5 +170,6 @@ Source: 5e_artisinal_monsters
 
 - **Rolling Charge (25 HP or Fewer).** If it isn’t grappling a creature, the rug curls up and rolls along the ground up to triple its speed straight toward a creature it can sense. If it stops within 5 feet of the target, it can make one Smother attack against the target.
 
+</statblock>
 
 

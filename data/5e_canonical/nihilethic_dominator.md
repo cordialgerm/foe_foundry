@@ -23,6 +23,7 @@ For reactions, the Nihilethic Dominator has the Void Body ability, allowing it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nihilethic Dominator
 
 *Large* *Undead* *Neutral Evil*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Void Body:** When the nihilethic dominator takes damage that isn’t radiant, it can reduce the damage by 1d12.
+</statblock>
 
 

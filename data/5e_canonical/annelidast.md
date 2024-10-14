@@ -27,6 +27,7 @@ Overall, the Annelidast breeds chaos and risk on the battlefield, with its poten
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Annelidast
 
 *Huge* *Monstrosity* *Unaligned*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Defensive Recoil:** When the annelidast takes damage, it can make one Slam attack against a creature restrained by it.
+</statblock>
 
 

@@ -21,6 +21,7 @@ For a swift maneuver, the Warhordling Orc Warrior has a bonus action called Aggr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Warhordling Orc Warrior
 
 *Medium* *Humanoid*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Aggressive Charge:** The warrior moves up to their Speed towards an enemy they can see or hear.
 
 
+</statblock>
 
 

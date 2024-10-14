@@ -21,6 +21,7 @@ The Koralk can perform a "Multiattack," allowing it to strike with one Bite atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Koralk
 
 *Large* *Fiend* *Lawful Evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Scythe:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) slashing damage.
 - **Stinger:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 7 (1d4 + 5) piercing damage plus 7 (2d6) poison damage, and the target must succeed on a DC 17 Constitution saving throw or succumb to the devil’s venom (see the Harvester Venom trait).
 - **Vestigial Arms:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: If the target is a Medium or smaller creature, it is grappled (escape DC 17). Until this grapple ends, the creature is restrained, and the devil can’t use its Vestigial Arms on another target.
+</statblock>
 
 

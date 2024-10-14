@@ -23,6 +23,7 @@ Overall, the Map Mimic provides an intriguing option for players and Dungeon Mas
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Map Mimic
 
 *Tiny* *Monstrosity* *Neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The mimic transforms into a Tiny object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
+</statblock>
 
 

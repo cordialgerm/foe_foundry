@@ -25,6 +25,7 @@ Overall, the Megapede's mixture of physical attacks, poison effects, and unique 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Megapede
 
 *Large* *Monstrosity* *unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Acid Spray (Recharge 6):** The megapede spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ Lastly, the chieftain can react with its "Parry" ability to enhance its defense 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dust Goblin Chieftain
 
 *Small* *Humanoid* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Parry:** The dust goblin chieftain adds 2 to its AC against one melee attack that would hit it. To do so, the chieftain must see the attacker and be wielding a melee weapon.
 
 
+</statblock>
 
 

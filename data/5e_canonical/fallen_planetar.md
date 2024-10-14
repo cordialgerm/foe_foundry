@@ -29,6 +29,7 @@ Lastly, the Fallen Planetar has a Protective Parry reaction that allows it to im
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fallen Planetar
 
 *Large* *Celestial*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Protective Parry:** When a creature within 5 feet would be hit with a melee attack, the planetar applies disadvantage to the attack roll.
 
 
+</statblock>
 
 

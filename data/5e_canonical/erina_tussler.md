@@ -19,6 +19,7 @@ In terms of actions, the Erina Tussler can perform a "Multiattack," which allows
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Erina Tussler
 
 *Small* *Humanoid* *neutral*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Throw Spine:** Ranged Weapon Attack: +5 to hit 20/60' one target 8 (2d4+3) piercing damage and spine sticks in target until a creature uses an action to remove it. While spine is stuck target has disadvantage on weapon attacks that use Str.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ In summary, the Balor General is a formidable foe that combines powerful offensi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Balor General
 
 *Huge* *Fiend*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Avenging Bolt (1/Day:** When damaged by a ranged weapon attack, spell, or magical effect, a 100-foot-long, 5-foot-wide lightning bolt springs from the balors extended sword. Each creature in the area makes a DC 19 Dexterity saving throw, taking 42 (12d6) lightning damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

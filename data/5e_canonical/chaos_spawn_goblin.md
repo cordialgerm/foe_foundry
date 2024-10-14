@@ -21,6 +21,7 @@ The goblin also possesses a unique action called Psychic Stab, which has a recha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chaos-Spawn Goblin
 
 *Small* *Humanoid* *neutral evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Psychic Stab (Recharge 6):** The chaos-spawn goblin targets one creature that it can sense within 30 feet of it. The target must make a DC 12 Intelligence saving throw, taking 7 (2d6) psychic damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

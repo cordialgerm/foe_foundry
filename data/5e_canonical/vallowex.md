@@ -23,6 +23,7 @@ Once per week, the vallowex can unleash a 40-foot-radius cloud of microscopic eg
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vallowex
 
 *Large* *Aberration* *chaotic neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Release Eggs (1/Week):** A vallowex can release a 40-foot-radius cloud of microscopic eggs into a body of water it touches. The eggs live for 1 hour. Any humanoid or beast that drinks the eggs must succeed on a DC 15 Constitution saving throw or be infected with a disease—a vallowex tadpole. A host can carry only one vallowex tadpole to term at a time. While diseased, the host must make a DC 15 Constitution saving throw at the end of each long rest. On a failed save, the host’s Strength score is reduced by 1d4. This reduction lasts until the host finishes a long rest after the disease is cured. If the host’s Strength score is reduced to 0, the host dies, and a vallowex emerges from the corpse. If the host succeeds on three saving throws or the disease is magically cured, the unborn tadpole disintegrates.
 
 
+</statblock>
 
 

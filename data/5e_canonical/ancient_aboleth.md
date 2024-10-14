@@ -28,6 +28,7 @@ In summary, the Ancient Aboleth serves as a potent adversary with a mix of physi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Aboleth
 
 *Huge* *Aberration*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Elite Recovery:** The aboleth ends one negative effect currently affecting it. It can use this action as long as it has at least 1 hit point, even while unconscious or incapacitated.
 - **Look Upon My Works (1/Day):** Each creature within 90 feet makes a DC 16 Wisdom saving throw. On a failure, the creature sees a fragmentary vision of the aboleths memories, taking 33 (6d10) psychic damage. After taking the damage, the creature forgets the vision, but it may learn one piece of lore.
 - **Lunging Attack:** The aboleth moves up to its swim speed without provoking opportunity attacks and makes a tentacle attack.
+</statblock>
 
 

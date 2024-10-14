@@ -27,6 +27,7 @@ In summary, the Dire Wildebeest is a creature that combines physical prowess wit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dire Wildebeest
 
 *Large* *Beast* *unaligned*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Incite Stampede (1/Day):** Moves up to 30' in straight line and can move through space of any up to Med creature. Each friendly creature within 120' of wildebeest can use its reaction to join stampede and move up to 30' in straight line and move through space of any up to Med creature. This move doesn’t provoke opportunity attacks. 1st time stampeding creature enters creature’s space during this move that creature: 14 (4d6) bludgeoning damage and knocked prone (DC 13 Dex half damage not knocked prone). For each creature in stampede after 1st: save increases by 1 max DC 17 and damage increases by 3 (1d6) max 8d6.
 
 
+</statblock>
 
 

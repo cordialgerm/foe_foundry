@@ -21,6 +21,7 @@ The Wyrmling also has spellcasting abilities that utilize its Intelligence with 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Prismatic Wyrmling
 
 *Medium* *Dragon* *neutral*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Int (DC 12) no material components: At will: dancing lights1/day ea: charm person color spray
 
 
+</statblock>
 
 

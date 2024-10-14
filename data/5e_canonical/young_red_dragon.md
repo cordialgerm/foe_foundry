@@ -37,6 +37,7 @@ Overall, the Young Red Dragon is a highly dangerous opponent, possessing strong 
 
 Source: 5e_srd
 
+<statblock>
 # Young Red Dragon (Chromatic)
 
 Large dragon, chaotic evil
@@ -71,7 +72,8 @@ Large dragon, chaotic evil
 
 ***Claw***. *Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 13 (2d6+6) slashing damage.
 
-***Fire Breath (Recharge 5-6)***. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.
+***Fire Breath (Recharge 5-6)***. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -79,6 +81,7 @@ Large dragon, chaotic evil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Red Dragon
 
 *Large* *Dragon*
@@ -113,6 +116,7 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 5-6):** The dragon exhales a blast of fire that fills a 30-foot cone. Each creature in that area makes a DC 17 Dexterity saving throw  taking 52 (15d6) fire damage on a failed save or half damage on a success. A creature that fails the saving throw also takes 5 (1d10) ongoing fire damage. While affected by this ongoing damage  it is frightened of the dragon. A creature can use an action to end the ongoing damage.
 
 
+</statblock>
 
 
 
@@ -121,6 +125,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Red Dragon
 
 *Large dragon*
@@ -151,5 +156,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.
 - **Fire Breath (Recharge 5–6).** The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 DEX save, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

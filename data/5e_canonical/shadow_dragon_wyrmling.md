@@ -40,6 +40,7 @@ The combination of these attributes and abilities makes the Shadow Dragon Wyrmli
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Anguished Breath (Recharge 5-6):** The dragon exhales a shadowy maelstrom of anguish in a 15-foot cone. Each creature in that area makes a DC 12 Wisdom saving throw  taking 22 (4d8) necrotic damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

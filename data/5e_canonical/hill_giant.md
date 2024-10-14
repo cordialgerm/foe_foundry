@@ -39,6 +39,7 @@ Overall, Hill Giants are physically dominant creatures with a focus on brute str
 
 Source: 5e_srd
 
+<statblock>
 ### Hill Giant
 
 *Huge giant, chaotic evil*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Greatclub***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 18 (3d8+5) bludgeoning damage.
 
-***Rock***. *Ranged Weapon Attack:* +8 to hit, range 60/240 ft., one target. *Hit:* 21 (3d10+5) bludgeoning damage.
+***Rock***. *Ranged Weapon Attack:* +8 to hit, range 60/240 ft., one target. *Hit:* 21 (3d10+5) bludgeoning damage.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hill Giant
 
 *Huge* *Giant*
@@ -110,6 +113,7 @@ Source: 5e_artisinal_monsters
 - **Grab:** One creature within 5 feet makes a DC 10 Dexterity saving throw. On a failure, it is grappled (escape DC 16). Until this grapple ends, the giant can't grab another target, and it makes greatclub attacks with advantage against the grappled target.
 
 
+</statblock>
 
 
 
@@ -118,6 +122,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hill Giant
 
 *Huge giant*
@@ -152,5 +157,6 @@ Source: 5e_artisinal_monsters
 
 - **Body Bounce.** The hill giant bumps its stomach, hip, shoulder, knee, or other part of its body into a creature within 10 feet of it. The target must succeed on a DC 16 STR save or be pushed up to 10 feet away from the giant and knocked prone.
 
+</statblock>
 
 

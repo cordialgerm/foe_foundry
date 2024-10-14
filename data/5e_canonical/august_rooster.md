@@ -31,6 +31,7 @@ For actions in combat, the August Rooster can execute a **Multiattack**, using a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # August Rooster
 
 *Medium* *Monstrosity* *neutral evil*
@@ -67,5 +68,6 @@ At will: dancing lights, mage hand, message, vicious mockery
 - **Talon:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.
 
 
+</statblock>
 
 

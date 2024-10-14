@@ -23,6 +23,7 @@ In combat, the Oathrot Wraith can utilize its "Life Drain" melee weapon attack, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wraith, Oathrot
 
 *Medium* *Undead* *neutral evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Life Drain:** Melee Weapon Attack: +5 to hit, 5 ft., one creature,. 20 (4d8+2) necrotic. The target must make DC 13 Con save or its hp max is reduced by amount equal to damage taken. Reduction lasts until target finishes long rest. Target dies if this reduces its hp max to 0.
 
 
+</statblock>
 
 

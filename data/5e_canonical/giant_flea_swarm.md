@@ -19,6 +19,7 @@ In terms of actions, the Giant Flea Swarm can use its Bite attack as a melee wea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Flea Swarm
 
 *Medium* *Beast* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, 0 ft., one creature, in the swarm’s space. 14 (4d6) piercing damage or 7 (2d6) piercing damage if the swarm has half its hp or fewer.
 
 
+</statblock>
 
 

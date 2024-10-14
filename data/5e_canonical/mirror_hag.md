@@ -23,6 +23,7 @@ The Mirror Hag is capable of casting spells as well, using Charisma for spellcas
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mirror Hag
 
 *Medium* *Fey* *Chaotic Neutral*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage plus 5 (2d4) necrotic damage.
 - **Reconfiguring Curse:** The mirror hag curses one creature she can see within 60 feet of her, corrupting its form. The target must make a DC 15 Constitution saving throw. On a success, the target is immune to the hag’s Reconfiguring Curse for the next 24 hours. On a failure, the target is cursed, suffering one of the following effects of the hag’s choice:
 - **Spellcasting:** The mirror hag casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 15):<br>At will: disguise self, ray of enfeeblement<br>1/day each: dispel magic, locate creature
+</statblock>
 
 

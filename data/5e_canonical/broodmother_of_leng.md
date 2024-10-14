@@ -44,6 +44,7 @@ For her reactions, **Protect the Future** allows her to redirect incoming attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Broodmother of Leng
 
 *Huge* *Aberration* *chaotic evil*
@@ -88,5 +89,6 @@ At will: charm person, chill touch, comprehend languages, detect magic
 - **Protect the Future:** When a creature the broodmother can see attacks her, she can call on a spider of Leng within 5 feet of her to protect her. The spider of Leng becomes the target of the attack instead.
 
 
+</statblock>
 
 

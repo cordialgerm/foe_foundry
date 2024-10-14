@@ -44,6 +44,7 @@ In summary, the Barnyard Golem is a resilient guardian with strong melee capabil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Golem, Barnyard
 
 *Medium* *Construct* *unaligned*
@@ -81,5 +82,6 @@ Source: 5e_artisinal_monsters
 - **Chymus Expulsion (Recharge 5–6):** Exhales semi-digested decayed meat and vegetation in a 15 ft. cone. Each creature in that area: 14 (4d6) poison (DC 13 Con half).
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ In terms of combat, the Clockwork Soldier wields a halberd, making melee attacks
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Soldier
 
 *Medium* *Construct* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Overdrive Flurry (Recharge 6):** The soldier makes four halberd attacks. After taking this action, it is stunned until the end of its next turn.
 
 
+</statblock>
 
 

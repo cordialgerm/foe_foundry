@@ -37,6 +37,7 @@ Overall, the Alazai presents a dangerous and unpredictable opponent due to its c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alazai
 
 *Large* *Elemental* *chaotic neutral*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Scorching Aura (Recharge 6):** Increases power of its inner fire causing metal weapons and armor to burn red-hot. Each creature within 30' of it in physical contact with manufactured metal object (ex: metal weapon suit of heavy or medium metal armor): 22 (5d8) fire and must make DC 16 Con save or drop object if it can. If it doesn’t drop object (or take off armor) has disadvantage on attacks and ability checks until start of alazai’s next turn.
 
 
+</statblock>
 
 

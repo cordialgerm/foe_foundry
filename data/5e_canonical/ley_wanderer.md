@@ -29,6 +29,7 @@ In response to enemy spells, it can use the Absorb Spell reaction. When it detec
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ley Wanderer
 
 *Huge* *Aberration* *neutral*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Absorb Spell:** When a creature wanderer can see within 30' of it casts spell wanderer can absorb spell’s energy countering it. Works like counterspell except wanderer must always make spellcasting ability check no matter spell’s level. Its ability check for this is +7. If it successfully counters the spell it gains 5 temp hp/spell level.
 
 
+</statblock>
 
 

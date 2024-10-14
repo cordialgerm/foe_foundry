@@ -23,6 +23,7 @@ Overall, the War Wyvern is a dangerous and robust creature, adept at physical co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # War Wyvern
 
 *Large* *Dragon* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Spit Venom (Recharge 5-6):** The wyvern spits venom at a target within 60 feet. The target must make a DC 16 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

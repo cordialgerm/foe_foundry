@@ -21,6 +21,7 @@ As a bonus action, the Dune Mimic can use "Change Shape" to transform into a Hug
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dune Mimic
 
 *Huge* *Monstrosity* *Neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The dune mimic transforms into a Huge sand- or gravel-covered object, shapes itself into a sandy or rocky terrain feature no larger than a 20-foot cube or transforms back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
+</statblock>
 
 

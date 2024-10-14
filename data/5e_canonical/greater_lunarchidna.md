@@ -25,6 +25,7 @@ The Lunarchidna can use its Web ability, which recharges on a roll of 5 or 6; th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greater Lunarchidna
 
 *Medium* *Aberration* *neutral evil*
@@ -65,5 +66,6 @@ Cantrips (at will): minor illusion, mage hand, poison spray, ray of frost
 - **Wrap Up:** The lunarchidna wraps up a Medium or smaller creature restrained by webbing. The wrapped target is blinded, restrained, and unable to breathe, and it must succeed on a DC 13 Constitution saving throw at the start of each of the lunarchidna’s turns or take 5 (1d4 + 3) bludgeoning damage. The webbing can be attacked and destroyed (AC 10; hp 15; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage). The lunarchidna can have only one creature wrapped at a time.
 
 
+</statblock>
 
 

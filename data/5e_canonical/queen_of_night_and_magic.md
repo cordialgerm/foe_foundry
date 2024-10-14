@@ -27,6 +27,7 @@ For legendary actions, the Queen can make an additional attack with Star Strike,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Queen of Night and Magic
 
 *Medium* *Fey* *Neutral Evil*
@@ -80,5 +81,6 @@ The Queen of Night and Magic can take 3 legendary actions, choosing from the opt
 - **Move:** The Queen of Night and Magic moves up to her walking speed or up to half of her flying speed without provoking opportunity attacks.
 - **Cast a Spell (Costs 2 Actions):** The Queen of Night and Magic uses Spellcasting.
 - **Swirling Stars (Costs 2 Actions):** The stars on the Queen’s gown pulse with brilliant starlight. Each creature within 15 feet of her must succeed on a DC 23 Dexterity saving throw or be blinded until the end of its next turn.
+</statblock>
 
 

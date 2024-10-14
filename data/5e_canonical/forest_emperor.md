@@ -27,6 +27,7 @@ Overall, the Forest Emperor is a complex and dangerous foe with both strong phys
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forest Emperor
 
 *Huge* *Aberration* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Toxic Nectar Spray (Recharge 5-6):** The forest emperor sprays a 60-foot cone of acid from its flower-ringed eye pits. Creatures in the path of this cone must make a DC 18 Dexterity saving throw, taking 42 (12d6) acid damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

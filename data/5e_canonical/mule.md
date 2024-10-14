@@ -31,6 +31,7 @@ Overall, while the Mule may not be a fearsome creature in combat or intelligence
 
 Source: 5e_srd
 
+<statblock>
 ### Mule
 
 *Medium beast, unaligned*
@@ -57,7 +58,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Hooves***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) bludgeoning damage.
+***Hooves***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) bludgeoning damage.</statblock>
+
 
 
 
@@ -65,6 +67,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mule
 
 *Medium* *Beast*
@@ -93,6 +96,7 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -101,6 +105,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mule
 
 *Medium beast*
@@ -128,5 +133,6 @@ Source: 5e_artisinal_monsters
 
 - **Hooves.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
 
+</statblock>
 
 

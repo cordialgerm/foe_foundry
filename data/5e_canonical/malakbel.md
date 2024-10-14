@@ -21,6 +21,7 @@ Overall, Malakbel is a powerful enemy that excels in inflicting radiant and fire
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Malakbel
 
 *Medium* *Fiend* *Chaotic Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Scorching Blast:** Melee or Ranged Spell Attack: +9 to hit, reach 5 ft. or range 120 ft., one target. Hit: 18 (3d8 + 5) fire damage.
 - **Searing Flare (Recharge 5–6):** The malakbel intensifies the heat and light it sheds to withering levels. Each creature in the bright light shed by the malakbel’s Blistering Radiance trait must make a DC 16 Constitution saving throw. On a failure, a creature takes 13 (3d8) fire damage and 22 (4d10) radiant damage and suffers one level of exhaustion. On a success, a creature takes half the damage and doesn’t suffer exhaustion.
 - **Teleport:** The malakbel magically teleports, along with any equipment it is wearing or carrying, up to 100 feet to an unoccupied space it can see.
+</statblock>
 
 

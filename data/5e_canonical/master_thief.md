@@ -21,6 +21,7 @@ For bonus actions, the Master Thief can utilize "Cunning Action" to Dash, Diseng
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Master Thief
 
 *Medium* *Humanoid*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Rapid Attack:** The assassin attacks with their shortsword.
 
 
+</statblock>
 
 

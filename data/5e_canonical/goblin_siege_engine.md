@@ -19,6 +19,7 @@ In terms of actions, the Goblin Siege Engine can perform a "Multiattack," which 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Siege Engine
 
 *Huge* *Construct* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Acid Jet (Recharge 5–6):** Sprays jet of acid in 30' line by 5 ft. wide. Each creature in line: 40 (9d8) acid (DC 17 Dex half).
 
 
+</statblock>
 
 

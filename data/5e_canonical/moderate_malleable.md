@@ -23,6 +23,7 @@ As a reaction, the Moderate Malleable can trigger "Sudden Separation" if it suff
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moderate Malleable
 
 *Large* *Aberration* *chaotic evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Sudden Separation:** When the moderate malleable takes 10 damage or more from a single attack, it can choose to immediately use Separate Malleables. If it does so, the damage is divided evenly among the separate malleables it becomes.
 
 
+</statblock>
 
 

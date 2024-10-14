@@ -27,6 +27,7 @@ In combat, the Vampire Priestess can utilize multiattack, making two attacks aft
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire Priestess
 
 *Medium* *Undead* *lawful evil*
@@ -77,5 +78,6 @@ Sunlight Hypersensitivity. The priestess takes 20 radiant damage when she starts
 - **Bewitching Gaze:** The vampire priestess targets one humanoid she can see within 30 feet. If the target can see her, the target must succeed on a DC 16 Wisdom saving throw or be charmed by the priestess for 1 minute. While charmed, the creature is incapacitated and has a speed of 0. Each time the vampire priestess or her allies do anything harmful to the target, it can repeat the saving throw, ending the effect on a success. The target can also repeat the saving throw if another creature uses an action to shake the target out of its stupor.
 
 
+</statblock>
 
 

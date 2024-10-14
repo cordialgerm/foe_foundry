@@ -23,6 +23,7 @@ As a bonus action, the Hvalfiskr can Change Shape, transforming between its whal
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hvalfiskr
 
 *Huge* *Giant* *lawful neutral*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Reel Anchor:** Pulls on the chain connected to anchor returning it to its empty hand. If anchor is hooked around a creature creature: DC 19 Str save or be pulled up to 30' toward hvalfiskr.
 
 
+</statblock>
 
 

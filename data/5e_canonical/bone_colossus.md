@@ -21,6 +21,7 @@ Overall, the Bone Colossus presents a complex challenge for adventurers, capable
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Colossus
 
 *Gargantuan* *Undead* *chaotic evil*
@@ -59,5 +60,6 @@ As an action, the swarms can reform into a single bone colossus as long as all s
 - **Razor Teeth (Swarm Form Only):** Melee Weapon Attack: +12 to hit, reach 0 ft., one target in the swarm’s space. Hit: 21 (6d6) piercing damage, or 10 (3d6) piercing damage if the swarm has half its hp or fewer.
 
 
+</statblock>
 
 

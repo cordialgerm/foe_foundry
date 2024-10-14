@@ -21,6 +21,7 @@ As a reaction, the Roc can utilize its Retributive Strike ability when struck by
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Roc Juvenile
 
 *Huge* *Beast*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Retributive Strike:** When a creature the roc can see hits it with a melee weapon attack, the roc makes a beak attack against its attacker.
 
 
+</statblock>
 
 

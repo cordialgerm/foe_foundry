@@ -23,6 +23,7 @@ In summary, the Bunyip is a powerful aquatic beast with strong melee capabilitie
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bunyip
 
 *Huge* *Beast*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Terrifying Howl:** The bunyip unleashes a terrifying howl. Each creature of its choice within 120 feet that can see and hear it makes a DC 17 Wisdom saving throw, becoming frightened for 1 minute on a failure. A creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creatures saving throw is successful or the effect ends for it, the creature is immune to the bunyips Terrifying Howl for the next 24 hours.
 
 
+</statblock>
 
 

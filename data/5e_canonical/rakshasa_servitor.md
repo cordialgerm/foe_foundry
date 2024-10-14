@@ -23,6 +23,7 @@ For reactions, the Rakshasa, Servitor possesses Protecting Pounce. This allows i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rakshasa, Servitor
 
 *Medium* *Fiend* *lawful evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Protecting Pounce:** When a rakshasa the servitor can see within 15 ft. of it is the target of an attack the servitor can move up to half its speed toward that rakshasa with o provoking opportunity attacks. If it ends this movement within 5 ft. of the rakshasa the servitor becomes the target of the attack instead.
 
 
+</statblock>
 
 

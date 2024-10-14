@@ -19,6 +19,7 @@ In terms of actions, the Manggus can attack multiple times depending on its form
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Manggus
 
 *Large* *Giant* *chaotic evil*
@@ -56,5 +57,6 @@ At the end of its turn, the manggus regrows two heads for each of its heads that
 - **Greataxe (Giant Form Only):** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing damage.
 
 
+</statblock>
 
 

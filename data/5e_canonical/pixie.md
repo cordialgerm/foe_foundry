@@ -35,6 +35,7 @@ As a bonus action, the Pixie can use:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pixie
 
 *Tiny* *Fey*
@@ -77,5 +78,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The pixie and any equipment it wears or carries magically turns invisible until the pixie attacks, casts a spell, becomes incapacitated, or uses a bonus action to become visible.
 
 
+</statblock>
 
 

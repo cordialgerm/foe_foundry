@@ -21,6 +21,7 @@ In terms of actions, the Veteran Swordbreaker Skeleton can perform a multiattack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Veteran Swordbreaker Skeleton
 
 *Medium* *Undead* *lawful evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Heavy Crossbow:** Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target. Hit: 6 (1d10 + 1) piercing damage.
 
 
+</statblock>
 
 

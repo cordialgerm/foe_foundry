@@ -36,6 +36,7 @@ Additionally, the Jubjub Bird can respond to attacks with its reaction:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jubjub Bird
 
 *Large* *Beast* *unaligned*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Impassioned Riposte:** When a creature the jubjub bird can see misses it with an attack while within 10 ft. of it the jubjub bird can make one Bite attack vs. the attacker.
 
 
+</statblock>
 
 

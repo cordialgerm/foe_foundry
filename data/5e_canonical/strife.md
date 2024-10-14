@@ -23,6 +23,7 @@ Overall, Strife is a tactical creature, well-suited for interactions that involv
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Strife
 
 *Small* *Fey* *Chaotic Evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 
 - **Induce Doubt:** If a creature misses the strife with an attack, the strife can cause the attacker to doubt itself. The attacker must succeed on a DC 13 Wisdom saving throw or each time it makes an attack roll or saving throw before the end of its next turn, it must roll a d4 and subtract the number rolled from the attack roll or saving throw.
 - **Familiar:** The stryx can serve another creature as a familiar, forming a magic, telepathic bond with that willing companion. While the two are bonded, the companion can sense what the stryx senses as long as they are within 1 mile of each other. While the stryx is within 10 feet of its companion, the companion shares the stryx’s Keen Hearing and Sight trait. At any time and for any reason, the stryx can end its service as a familiar, ending the telepathic bond.
+</statblock>
 
 

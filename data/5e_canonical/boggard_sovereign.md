@@ -29,6 +29,7 @@ Overall, the Boggard Sovereign serves as a formidable foe and a tactically cleve
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boggard Sovereign
 
 *Large* *Humanoid*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Summon Frog Guardians (1/Day):** The boggard magically summons two Medium frog guardians  which wriggle from the ground in an empty space within 30 feet. They follow the boggards orders and disappear after 1 minute. They have the statistics of boggards except they have Intelligence 2  have no spear attack  and can make a bite attack as part of their Vaulting Leap.
 
 
+</statblock>
 
 

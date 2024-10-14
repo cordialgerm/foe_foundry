@@ -25,6 +25,7 @@ Lastly, the Angelic Enforcer has a Change Shape ability, allowing it to polymorp
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angelic Enforcer
 
 *Large* *Celestial* *lawful good*
@@ -64,5 +65,6 @@ At will: detect evil and good
 - **Change Shape:** The angelic enforcer magically polymorphs into a humanoid or a lion that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the enforcer’s choice). In a new form, the enforcer retains its own game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has.
 
 
+</statblock>
 
 

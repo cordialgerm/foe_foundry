@@ -19,6 +19,7 @@ In terms of actions, the Shadow Boxer can make a Multiattack, performing two cla
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Boxer
 
 *Small* *Fey* *chaotic neutral*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The shadow boxer magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the shadow boxer wears or carries is invisible with it.
 
 
+</statblock>
 
 

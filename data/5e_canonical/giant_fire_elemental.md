@@ -25,6 +25,7 @@ Additionally, the elemental can unleash the Wildfire ability, which requires a r
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Fire Elemental
 
 *Huge* *Elemental*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Wildfire (Recharge 4-6):** The elemental moves up to half its Speed without provoking opportunity attacks. It can enter the spaces of hostile creatures but not end this movement there. When a creature shares its space with the elemental for the first time during this movement  the creature is subject to the elementals Fiery Aura and the elemental can make a slam attack against that creature.
 
 
+</statblock>
 
 

@@ -27,6 +27,7 @@ The creature's "Thrall Enslavement" ability allows it to target humanoids within
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fierstjerren
 
 *Medium* *Undead* *neutral evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Thrall Enslavement:** The fierstjerren targets one humanoid it can see within 30 feet of it that has a CR up to 1/2. The humanoid must succeed on a DC 15 Wisdom saving throw or be magically charmed by the fierstjerren. The fierstjerren can telepathically communicate with any creature it has charmed. The charmed target can't take reactions and obeys the fierstjerren's verbal and telepathic commands. A fierstjerren can have up to twelve charmed thralls at one time. A charmed thrall loses the memories of its previous life and devotes itself to the fierstjerren and the cult. The charm lasts for 24 hours or until the fierstjerren is destroyed, is more than 300 feet from the charmed target, or takes a bonus action to end the effect. The fierstjerren can attempt to reassert control over all of its thralls by using this action. Each thrall can repeat the saving throw when the fierstjerren uses this action to reassert control.
 
 
+</statblock>
 
 

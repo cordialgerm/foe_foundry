@@ -25,6 +25,7 @@ Overall, the Cadaver Sprite is highly adept at stealth and cunning, utilizing it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cadaver Sprite
 
 *Tiny* *Undead* *neutral evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The cadaver sprite magically turns invisible until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the sprite wears or carries is invisible with it.
 
 
+</statblock>
 
 

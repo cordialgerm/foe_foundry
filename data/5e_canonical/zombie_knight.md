@@ -21,6 +21,7 @@ The combination of these abilities and attacks makes the Zombie Knight a formida
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zombie Knight
 
 *Medium* *Undead*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature grappled by a zombie. Hit: 8 (1d10 + 3) piercing damage  and the zombie regains hit points equal to the damage dealt.
 
 
+</statblock>
 
 

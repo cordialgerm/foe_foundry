@@ -34,6 +34,7 @@ In combat, the Sunflower Sprite can perform several actions:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sunflower Sprite
 
 *Small* *Fey* *neutral good*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Healing Radiance (Recharge: Short/Long Rest):** Radiates a warm light. Each friendly creature within 10 ft. of the sprite regains 5 (2d4) hp. It can’t use this action if it hasn’t been exposed to sunlight in the past 24 hrs.
 
 
+</statblock>
 
 

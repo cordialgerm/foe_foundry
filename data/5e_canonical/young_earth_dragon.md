@@ -19,6 +19,7 @@ In combat, the Young Earth Dragon can launch a coordinated Multiattack, using it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Earth Dragon
 
 *Large* *Dragon*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Scouring Breath (Recharge 5-6):** The dragon exhales scouring sand and stones in a 30-foot cone. Each creature in that area makes a DC 16 Dexterity saving throw  taking 38 (11d6) slashing damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

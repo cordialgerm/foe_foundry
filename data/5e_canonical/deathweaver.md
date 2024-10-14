@@ -25,6 +25,7 @@ Additionally, the Deathweaver can launch a Web attack, which recharges on a roll
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deathweaver
 
 *Huge* *Monstrosity* *neutral evil*
@@ -61,5 +62,6 @@ At will: chill touch
 - **Web (Recharge 5-6):** Ranged Weapon Attack: +5 to hit, range 40/80 ft., one creature. Hit: The target is restrained by webbing and takes 3 (1d6) necrotic damage each round. As an action, the restrained target can make a DC 14 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, necrotic, poison, and psychic damage). A humanoid slain by this attack rises 24 hours later as a web zombie under the deathweaver’s control, unless the humanoid is restored to life or its body is destroyed. The deathweaver can have no more than twelve web zombies under its control at one time.
 
 
+</statblock>
 
 

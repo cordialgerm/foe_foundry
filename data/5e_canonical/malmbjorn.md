@@ -23,6 +23,7 @@ Lastly, the Ironhide reaction enhances the Malmbjorn's defenses when hit by meta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Malmbjorn
 
 *Huge* *Monstrosity* *unaligned*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Ironhide:** When hit by a metal weapon fur-like metal spikes grow out of its hide until end of its next turn. While spikes remain its AC increases 2 and any critical hit vs. it becomes a normal hit.
 
 
+</statblock>
 
 

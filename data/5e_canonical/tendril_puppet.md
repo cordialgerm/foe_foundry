@@ -19,6 +19,7 @@ In terms of attacks, the Tendril Puppet has two primary actions: Thorned Slam an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tendril Puppet
 
 *Medium* *Plant* *Lawful Neutral*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Thorned Slam:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage plus 5 (2d4) piercing damage.
 - **Ball of Thorns:** Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 12 (4d4 + 2) piercing damage, and the ball bursts, scattering sharp thorns around the target. Each creature within 5 feet of the target must succeed on a DC 13 Dexterity saving throw or take 5 (2d4) piercing damage.
+</statblock>
 
 

@@ -40,6 +40,7 @@ Additionally, as a bonus action, the Giant Eagle can use its Beak attack on one 
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Eagle
 
 *Large beast, neutral good*
@@ -72,7 +73,8 @@ Source: 5e_srd
 
 ***Talons***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage.
 
-A **giant eagle** is a noble creature that speaks its own language and understands speech in the Common tongue. A mated pair of giant eagles typically has up to four eggs or young in their nest (treat the young as normal eagles).
+A **giant eagle** is a noble creature that speaks its own language and understands speech in the Common tongue. A mated pair of giant eagles typically has up to four eggs or young in their nest (treat the young as normal eagles).</statblock>
+
 
 
 
@@ -80,6 +82,7 @@ A **giant eagle** is a noble creature that speaks its own language and understan
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eagle, Giant
 
 *Large beast*
@@ -110,6 +113,7 @@ Source: 5e_artisinal_monsters
 - **Beak.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 - **Talons.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage, and the target is grappled (escape DC 13) if it is a Medium or smaller creature. Until this grapple ends, the target is restrained, and the eagle can’t use its Talons on another target.
 
+</statblock>
 
 
 
@@ -118,6 +122,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Eagle
 
 *Large* *Beast*
@@ -149,5 +154,6 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +4 to hit, reach 5 ft., one grappled creature. Hit: 5 (1d6+2) piercing damage.
 
 
+</statblock>
 
 

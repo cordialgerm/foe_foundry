@@ -21,6 +21,7 @@ In combat, the Will-o-Wisp can use the "Shock" action to make a melee spell atta
 
 Source: 5e_srd
 
+<statblock>
 ## Will-o-Wisp
 
 *Tiny undead, chaotic evil*
@@ -59,7 +60,8 @@ Source: 5e_srd
 
 ***Shock***. *Melee Spell Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 9 (2d8) lightning damage.
 
-***Invisibility***. The will-o'-wisp and its light magically become invisible until it attacks or uses its Consume Life, or until its concentration ends (as if concentrating on a spell).
+***Invisibility***. The will-o'-wisp and its light magically become invisible until it attacks or uses its Consume Life, or until its concentration ends (as if concentrating on a spell).</statblock>
+
 
 
 
@@ -67,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Will-o-Wisp
 
 *Small* *Undead*
@@ -104,5 +107,6 @@ Source: 5e_artisinal_monsters
 - **Illumination:** The will-o-wisp alters the radius of its glow (shedding bright light in a 5- to 20-foot radius and dim light for the same number of feet beyond that radius), changes the color of its glow, or extinguishes its glow (making it invisible).
 
 
+</statblock>
 
 

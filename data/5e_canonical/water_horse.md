@@ -23,6 +23,7 @@ Overall, the Water Horse is a versatile combatant that excels in strategic decep
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Water Horse
 
 *Medium* *Fey* *neutral evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Charming Gaze:** The water horse targets one creature it can see within 30 feet of it. The target must succeed on a DC 12 Charisma saving throw or be charmed for 1 minute. While charmed, the target is incapacitated and can only move toward the water horse. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The target has advantage on the saving throw if it has taken damage since the end of its last turn. If the target successfully saves or if the effect ends for it, the target is immune to this water horse's Charming Gaze for the next 24 hours.
 
 
+</statblock>
 
 

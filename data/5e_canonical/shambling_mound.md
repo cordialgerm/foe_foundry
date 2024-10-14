@@ -45,6 +45,7 @@ Overall, the Shambling Mound is a fierce opponent that thrives in close quarters
 
 Source: 5e_srd
 
+<statblock>
 ## Shambling Mound
 
 *Large plant, unaligned*
@@ -81,7 +82,8 @@ Source: 5e_srd
 
 ***Slam***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage.
 
-***Engulf***. The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8+4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.
+***Engulf***. The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8+4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.</statblock>
+
 
 
 
@@ -89,6 +91,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shambling Mound
 
 *Large* *Plant*
@@ -121,6 +124,7 @@ Source: 5e_artisinal_monsters
 - **Engulf:** The shambling mound absorbs a Medium or smaller grappled creature into its body. The engulfed creature is blinded  restrained can't breathe  and moves with the shambling mound. At the start of each of the shambling mounds turns  the target takes 11 (2d6 + 4) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -129,6 +133,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shambling Mound
 
 *Large plant*
@@ -163,5 +168,6 @@ Source: 5e_artisinal_monsters
 
 - **Engulf.** The shambling mound engulfs a Medium or smaller creature grappled by it. In addition to being grappled, the engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 CON save at the start of each of the mound’s turns or take 4 (1d8) bludgeoning damage and 3 (1d6) poison damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.
 
+</statblock>
 
 

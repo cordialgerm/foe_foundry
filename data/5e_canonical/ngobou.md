@@ -27,6 +27,7 @@ In terms of offensive actions, the Ngobou can perform a Gore attack as a melee w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ngobou
 
 *Large* *Beast* *Unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 
 - **Gore:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 27 (4d10 + 5) piercing damage.
 - **Stomp:** Melee Weapon Attack: +8 to hit, reach 5 ft., one prone creature. Hit: 18 (3d8 + 5) bludgeoning damage.
+</statblock>
 
 

@@ -34,6 +34,7 @@ Overall, the Derro Shadowseeker is a well-rounded adversary in combat, thriving 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Derro Shadowseeker
 
 *Small* *Humanoid* *chaotic evil*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Maddening Convulsions (Recharge 5-6):** The shadowseeker’s body contorts and spasms in bizarre ways, confounding other creatures. Each non-derro creature within 5 feet of the shadowseeker that can see it must succeed on a DC 15 Wisdom saving throw or be affected as if by a confusion spell for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the shadowseeker’s Maddening Convulsions for the next 24 hours.
 
 
+</statblock>
 
 

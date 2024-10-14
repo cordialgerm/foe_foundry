@@ -23,6 +23,7 @@ In terms of combat actions, the brown bear can perform two main attacks: Bite an
 
 Source: 5e_srd
 
+<statblock>
 ### Brown Bear
 
 *Large beast, unaligned*
@@ -53,7 +54,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 8 (1d8+4) piercing damage.
 
-***Claws.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.
+***Claws.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.</statblock>
+
 
 
 
@@ -61,6 +63,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brown Bear
 
 *Large* *Beast*
@@ -89,5 +92,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4+4) slashing damage. If the target is a Medium or smaller creature  it is grappled (escape DC 14). Until this grapple ends  the bear can't attack a different target with its claws.
 
 
+</statblock>
 
 

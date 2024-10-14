@@ -31,6 +31,7 @@ Overall, the Laestrigonian Giant is a dangerous creature that combines physical 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Laestrigonian Giant
 
 *Large* *Giant* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 60/240 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage.
 
 
+</statblock>
 
 

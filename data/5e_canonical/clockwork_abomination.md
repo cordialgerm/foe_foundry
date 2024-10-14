@@ -19,6 +19,7 @@ In actions, the Clockwork Abomination is capable of performing a Multiattack, wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Abomination
 
 *Large* *Construct* *Lawful Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) piercing damage plus 7 (2d6) fire damage.
 - **Slam:** Melee Weapon Attack: +8 to hit, reach 15 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage.
 - **Fire Breath (Recharge 5–6):** The clockwork abomination’s infernal power source allows it to breathe fire in a 30-foot cone. Each creature in the area must make a DC 14 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

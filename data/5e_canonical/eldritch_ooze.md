@@ -21,6 +21,7 @@ As a reactive ability, the Eldritch Ooze can Split when subjected to lightning o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eldritch Ooze
 
 *Large* *Ooze* *unaligned*
@@ -58,5 +59,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Split:** When an eldritch ooze that is Medium or larger is subjected to lightning or slashing damage, it splits into two new oozes if it has at least 10 hp. Each new ooze has hp equal to half the original ooze’s, rounded down. New oozes are one size smaller than the original ooze.
 
 
+</statblock>
 
 

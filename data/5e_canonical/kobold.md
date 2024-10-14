@@ -42,6 +42,7 @@ Additionally, the Kobold has a useful bonus action called Scurry. This ability p
 
 Source: 5e_srd
 
+<statblock>
 ## Kobold
 
 *Small humanoid (kobold), lawful evil*
@@ -70,7 +71,8 @@ Source: 5e_srd
 
 ***Dagger***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) piercing damage.
 
-***Sling***. *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one target. *Hit:* 4 (1d4+2) bludgeoning damage.
+***Sling***. *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one target. *Hit:* 4 (1d4+2) bludgeoning damage.</statblock>
+
 
 
 
@@ -78,6 +80,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold
 
 *Small* *Humanoid*
@@ -107,6 +110,7 @@ Source: 5e_artisinal_monsters
 - **Sling:** Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -115,6 +119,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold
 
 *Small humanoid*
@@ -148,5 +153,6 @@ Source: 5e_artisinal_monsters
 
 - **Scurry.** The kobold moves up to 15 feet without provoking opportunity attacks. If the kobold is aware of traps in the area, the kobold can choose if this movement triggers any of them.
 
+</statblock>
 
 

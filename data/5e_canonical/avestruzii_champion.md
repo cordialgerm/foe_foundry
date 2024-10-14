@@ -21,6 +21,7 @@ The Avestruzii Champion exhibits strength and durability, making it a formidable
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Avestruzii Champion
 
 *Medium* *Humanoid* *any alignment*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Dig In:** As Avestruzi above.
 
 
+</statblock>
 
 

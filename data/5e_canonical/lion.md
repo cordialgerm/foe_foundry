@@ -37,6 +37,7 @@ As a bonus action, the lion can use Rattling Roar, which has a recharge mechanic
 
 Source: 5e_srd
 
+<statblock>
 ### Lion
 
 *Large beast, unaligned*
@@ -71,7 +72,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) piercing damage.
 
-***Claw***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6+3) slashing damage.
+***Claw***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6+3) slashing damage.</statblock>
+
 
 
 
@@ -79,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lion
 
 *Large* *Beast*
@@ -113,6 +116,7 @@ Source: 5e_artisinal_monsters
 - **Opportune Bite:** The lion makes a bite attack against a prone creature.
 
 
+</statblock>
 
 
 
@@ -121,6 +125,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lion
 
 *Large beast*
@@ -157,5 +162,6 @@ Source: 5e_artisinal_monsters
 
 - **Rattling Roar (Recharge 4–6).** The lion releases a bone-shaking roar in a 15-foot cone. Each creature in the area must succeed on a DC 13 CON save or have disadvantage on attack rolls until the end of its next turn.
 
+</statblock>
 
 

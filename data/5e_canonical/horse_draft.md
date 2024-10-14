@@ -19,6 +19,7 @@ In terms of offensive capabilities, the Draft Horse can use its Hooves attack. T
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horse, Draft
 
 *Large beast*
@@ -46,5 +47,6 @@ Source: 5e_artisinal_monsters
 
 - **Hooves.** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage.
 
+</statblock>
 
 

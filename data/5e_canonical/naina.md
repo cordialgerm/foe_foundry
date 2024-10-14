@@ -40,6 +40,7 @@ As a Bonus Action, Naina can utilize "Change Shape" to transform into a Medium H
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Naina
 
 *Large* *Dragon* *Lawful Evil*
@@ -81,5 +82,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The naina transforms into a Medium Humanoid or back into her true form, which is a Dragon. Her statistics, other than her size, are the same in each form. Any equipment she is wearing or carrying isn’t transformed. It reverts to its true from if she dies.
+</statblock>
 
 

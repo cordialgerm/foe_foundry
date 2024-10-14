@@ -32,6 +32,7 @@ Overall, the Doom Golem is a powerful adversary that combines physical strength,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Doom Golem
 
 *Large* *Construct* *unaligned*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Doom Upon You:** When a creature the doom golem can see within 60 feet of it hits it with a spell or attack that requires a ranged attack roll, the doom golem strikes the attacker with a doom bolt. The doom bolt is a shadowy reflection of the original attack, using the same attack roll and effects as the original, except it deals necrotic damage.
 
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ Overall, the Lymarien Swarm is a unique and enchanting creature designed to cont
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lymarien Swarm
 
 *Large* *Fey* *neutral good*
@@ -68,5 +69,6 @@ At will: dancing lights, minor illusion
 - **Flight of the Fey (Recharge 4-6):** The lymarien swarm lifts a Large or smaller creature in its space. The target must succeed on a DC 15 Dexterity saving throw or be lifted directly upward to a height up to the swarm’s flying speed. When the swarm moves, the lifted creature moves with it. At the end of the swarm’s turn, the swarm drops the creature, which takes falling damage as normal.
 
 
+</statblock>
 
 

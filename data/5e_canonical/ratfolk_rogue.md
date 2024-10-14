@@ -23,6 +23,7 @@ As a bonus action, the Ratfolk Rogue can use Cunning Action, allowing it to take
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ratfolk Rogue
 
 *Small* *Humanoid* *Neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Cunning Action:** The ratfolk rogue takes the Dash, Disengage, or Hide action.
+</statblock>
 
 

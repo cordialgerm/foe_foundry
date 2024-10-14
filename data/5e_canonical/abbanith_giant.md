@@ -21,6 +21,7 @@ As a reaction, the Abbanith Giant can perform "Earth Counter" (with a recharge t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Abbanith Giant
 
 *Large* *Giant* *neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Earth Counter (Recharge 6):** When a creature the abbanith can see within 30 feet of it casts a spell, the abbanith counters it. This reaction works like the counterspell spell, except the abbanith can only counter spells that directly affect or create earth or stone, such as stone shape, wall of stone, or move earth, and it doesn’t need to make a spellcasting ability check, regardless of the spell’s level.
 
 
+</statblock>
 
 

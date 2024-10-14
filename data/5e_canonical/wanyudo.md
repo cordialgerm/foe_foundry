@@ -28,6 +28,7 @@ When it comes to actions, the Wanyudo employs a Multiattack, utilizing two bite 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wanyudo
 
 *Large* *Fiend* *lawful evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Flaming Breath (Recharge 5-6):** The wanyudo exhales fire in a 20-foot cone from one of its heads. Each creature in the area must make a DC 15 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

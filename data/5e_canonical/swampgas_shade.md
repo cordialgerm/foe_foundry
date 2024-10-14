@@ -34,6 +34,7 @@ Overall, the Swampgas Shade is a clever and dangerous opponent, adept at evasion
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swampgas Shade
 
 *Medium* *Undead* *neutral evil*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Swampland Stealth:** Takes the Hide action. It must be in swampy terrain to use this bonus action.
 
 
+</statblock>
 
 

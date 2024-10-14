@@ -23,6 +23,7 @@ In combat, the Cueyatl Moon Priest wields a morningstar, making melee weapon att
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cueyatl Moon Priest
 
 *Small* *Humanoid* *lawful evil*
@@ -60,5 +61,6 @@ Cantrips (at will): guidance, resistance, sacred flame, spare the dying
 - **Night's Chill (Recharge 5-6):** The cueyatl moon priest harnesses moonlight, dispelling magical light in a 30-foot radius. In addition, each hostile creature within 30 feet must make a DC 13 Constitution saving throw, taking 16 (3d10) cold damage on a failed save, and half as much damage on a successful one. A creature that has total cover from the moon priest is not affected.
 
 
+</statblock>
 
 

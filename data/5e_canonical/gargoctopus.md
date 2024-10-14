@@ -23,6 +23,7 @@ Finally, the Gargoctopus can unleash its Ink Cloud, which creates a heavily obsc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gargoctopus
 
 *Large* *Monstrosity* *neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Ink Cloud (Recharge 6):** A 20-foot-radius cloud of darkness extends around the gargoctopus. The area is heavily obscured until the start of the gargoctopus' next turn. If underwater, the gargoctopus can use the Dash action as a bonus action after releasing the cloud.
 
 
+</statblock>
 
 

@@ -29,6 +29,7 @@ In combat, the Giant Fire Beetle can make a melee attack with a Bite action. Thi
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Fire Beetle
 
 *Small beast, unaligned*
@@ -55,7 +56,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +1 to hit, reach 5 ft., one target. *Hit:* 2 (1d6-1) slashing damage.
 
-A **giant fire beetle** is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle's glands continue to shed light for 1d6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.
+A **giant fire beetle** is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle's glands continue to shed light for 1d6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.</statblock>
+
 
 
 
@@ -63,6 +65,7 @@ A **giant fire beetle** is a nocturnal creature that takes its name from a pair 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Fire Beetle
 
 *Small* *Beast*
@@ -90,5 +93,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 slashing damage.
 
 
+</statblock>
 
 

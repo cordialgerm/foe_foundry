@@ -31,6 +31,7 @@ Overall, the Walking Statue is a heavy-hitting creature that poses unique challe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Walking Statue
 
 *Large* *Construct*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Smash:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

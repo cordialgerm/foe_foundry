@@ -48,6 +48,7 @@ Additionally, the Cultist has a reaction named For the Cause!. This ability allo
 
 Source: 5e_srd
 
+<statblock>
 ### Cultist
 
 *Medium humanoid (any race), any non-good alignment*
@@ -76,7 +77,8 @@ Source: 5e_srd
 
 ***Scimitar***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one creature. *Hit:* 4 (1d6 + 1) slashing damage.
 
-**Cultists** swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Unlike evil acolytes, cultists often show signs of insanity in their beliefs and practices.
+**Cultists** swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Unlike evil acolytes, cultists often show signs of insanity in their beliefs and practices.</statblock>
+
 
 
 
@@ -84,6 +86,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cultist
 
 *Medium* *Humanoid*
@@ -112,6 +115,7 @@ Source: 5e_artisinal_monsters
 - **Cultists worship forbidden gods, devils, demons, and other sinister beings:** Many cultists work to summon the object of their devotion to the world so it might grant them power and destroy their enemies.
 
 
+</statblock>
 
 
 
@@ -120,6 +124,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cultist
 
 *Medium humanoid (any lineage)*
@@ -151,5 +156,6 @@ Source: 5e_artisinal_monsters
 
 - **For the Cause!** When a friendly creature the cultist can see within 5 feet of it is hit by an attack that would reduce that creature to 0 HP, the cultist can leap in front of the attack, taking the damage instead.
 
+</statblock>
 
 

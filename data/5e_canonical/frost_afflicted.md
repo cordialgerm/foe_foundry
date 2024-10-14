@@ -29,6 +29,7 @@ In addition to its standard actions, the Frost-Afflicted can utilize the reactio
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: Frost-Afflicted
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Frigid Flare:** When a creature hits the frost-afflicted with weapon attack ice bursts from the frost-afflicted. Each creature within 5 ft. of the frost-afflicted must make a DC 13 Con save taking 5 (2d4) cold on a failed save or half damage if made.
 
 
+</statblock>
 
 

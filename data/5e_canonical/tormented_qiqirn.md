@@ -27,6 +27,7 @@ Overall, the Tormented Qiqirn is a dangerous opponent that combines physical pro
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tormented Qiqirn
 
 *Large* *Fiend* *chaotic evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Protective Spirits:** When the qiqirn takes damage, the spirits infusing it rise up to protect it. Roll 2d8 and reduce the damage by the result.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ When it comes to actions in combat, the Clockwork Mantis can perform a "Multiatt
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Mantis
 
 *Large* *Construct* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The clockwork mantis turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the mantis wears or carries is invisible with it.
 
 
+</statblock>
 
 

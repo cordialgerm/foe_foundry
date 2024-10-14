@@ -27,6 +27,7 @@ As a reaction, the Onyx Magistrate can utilize Tip the Scales, which allows it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Onyx Magistrate
 
 *Large* *Construct* *lawful evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Tip the Scales (Recharge 5-6):** The onyx magistrate adds 3 to its AC against one attack that would hit it. Alternatively, the onyx magistrate succeeds on a saving throw it failed.
 
 
+</statblock>
 
 

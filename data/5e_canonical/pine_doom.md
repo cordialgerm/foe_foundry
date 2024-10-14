@@ -37,6 +37,7 @@ The combination of its abilities and attacks makes the Pine Doom an intimidating
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pine Doom
 
 *Huge* *Plant* *neutral*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Flurry of Pinecones (Recharge 6):** Each creature within 30 feet of the pine doom must make a DC 16 Dexterity saving throw, taking 15 (6d4) slashing damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

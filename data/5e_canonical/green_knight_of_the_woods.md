@@ -23,6 +23,7 @@ For its reactions, the Green Knight can use "Knight's Rebuke." When struck by a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Green Knight of the Woods
 
 *Medium* *Fey* *lawful neutral*
@@ -65,5 +66,6 @@ On its turn, the affected creature must move towards the green knight and make a
 - **Knight's Rebuke:** When the green knight is hit by a melee attack from a creature it has successfully challenged, it can make one battle axe attack with advantage against the attacker.
 
 
+</statblock>
 
 

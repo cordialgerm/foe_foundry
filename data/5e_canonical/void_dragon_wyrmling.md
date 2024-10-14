@@ -23,6 +23,7 @@ Lastly, the wyrmling can respond to threats with its reaction "Void Twist," whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Void Dragon Wyrmling
 
 *Medium* *Dragon* *Chaotic Neutral*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Void Twist:** The dragon adds 2 to its AC against one attack that would hit it, as it twists reality to open a small rift in space to protect itself. To do so, the dragon must be able to see the attacker.
+</statblock>
 
 

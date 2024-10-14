@@ -21,6 +21,7 @@ For bonus actions, the Spymaster can use Cunning Action to Dash, Disengage, Hide
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spymaster
 
 *Medium* *Humanoid*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Study Adversary:** The spymaster studies the defenses of a creature engaged in combat. The spymaster gains advantage on all attacks and contested ability checks against that creature for 24 hours or until they study a different creature.
 
 
+</statblock>
 
 

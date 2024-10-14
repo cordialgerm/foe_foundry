@@ -25,6 +25,7 @@ For its reaction, the Kryt can unleash a Haunting Vision that targets an attacki
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kryt
 
 *Medium* *Humanoid* *neutral evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Haunting Vision:** When a kryt is attacked by a creature it can see within 30 feet of it, the kryt can haunt the creature with a vision of the creature's death. The haunted creature has disadvantage on its next attack roll. Undead creatures and creatures that are unable to be killed are immune to this reaction.
 
 
+</statblock>
 
 

@@ -39,6 +39,7 @@ The "Bite" attack is resolved as a melee weapon attack with a +5 to hit and has 
 
 Source: 5e_srd
 
+<statblock>
 ### Tiger
 
 *Large beast, unaligned*
@@ -69,7 +70,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (1d10+3) piercing damage.
 
-***Claw***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) slashing damage.
+***Claw***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) slashing damage.</statblock>
+
 
 
 
@@ -77,6 +79,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tiger
 
 *Large* *Beast*
@@ -109,6 +112,7 @@ Source: 5e_artisinal_monsters
 - **Opportune Bite:** The tiger makes a bite attack against a prone creature.
 
 
+</statblock>
 
 
 
@@ -117,6 +121,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tiger
 
 *Large beast*
@@ -147,5 +152,6 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) piercing damage.
 - **Claws.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage.
 
+</statblock>
 
 

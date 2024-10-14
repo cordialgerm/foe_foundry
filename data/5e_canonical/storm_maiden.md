@@ -27,6 +27,7 @@ Overall, the Storm Maiden is a versatile threat in combat, bolstered by its elem
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Storm Maiden
 
 *Medium* *Elemental* *chaotic evil*
@@ -61,5 +62,6 @@ At will: create or destroy water, ray of frost, misty step, thunderwave
 - **Throw Lightning:** Ranged Spell Attack: +5 to hit, range 120 ft., one target. Hit: 14 (4d6) lightning damage, and the target must succeed on a DC 13 Constitution saving throw or be incapacitated until the end of its next turn.
 
 
+</statblock>
 
 

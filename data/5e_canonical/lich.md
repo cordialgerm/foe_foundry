@@ -45,6 +45,7 @@ Overall, the Lich stands as a powerful undead spellcaster with a variety of abil
 
 Source: 5e_srd
 
+<statblock>
 ## Lich
 
 *Medium undead, any evil alignment*
@@ -108,7 +109,8 @@ The lich can take 3 legendary actions, choosing from the options below. Only one
 
 **Frightening Gaze (Costs 2 Actions)**. The lich fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a DC 18 Wisdom saving throw against this magic or become frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the lich's gaze for the next 24 hours.
 
-**Disrupt Life (Costs 3 Actions)**. Each non-undead creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.
+**Disrupt Life (Costs 3 Actions)**. Each non-undead creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -116,6 +118,7 @@ The lich can take 3 legendary actions, choosing from the options below. Only one
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lich
 
 *Medium* *Undead*
@@ -203,6 +206,7 @@ Source: 5e_artisinal_monsters
 - **Cast Spell:** The lich casts cantrip or a 1st-level spell. The lich can use 2 legendary actions to cast a 2nd-level spell or 3 legendary actions to cast a 3rd-level spell.
 - **Paralyzing Touch (Costs 2 Actions):** The lich uses Paralyzing Touch.
 - **Arc Lightning (Costs 3 Actions):** The lich uses Arc Lightning.
+</statblock>
 
 
 
@@ -211,6 +215,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lich
 
 *Medium undead*
@@ -270,5 +275,6 @@ The lich can take 3 legendary actions, choosing from the options below. Only one
 ### Regional Effects
 
 - **1d10** If the lich dies, these effects fade in  days.
+</statblock>
 
 

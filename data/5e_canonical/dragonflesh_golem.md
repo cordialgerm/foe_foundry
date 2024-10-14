@@ -23,6 +23,7 @@ Overall, the Dragonflesh Golem is a powerful construct that utilizes both its ph
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragonflesh Golem
 
 *Large* *Construct* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Elemental Breath (Recharge 5-6):** The dragonflesh golem exhales energy in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 21 (6d6) fire damage and 21 (6d6) damage of another type on a failed save, or half as much damage on a successful one. Roll a d4 to determine the additional damage type: 1 is acid, 2 is cold, 3 is lightning, and 4 is poison.
 
 
+</statblock>
 
 

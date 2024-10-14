@@ -25,6 +25,7 @@ Another potent action is Puppet Link, which allows the Jack to establish a magic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jack of Strings
 
 *Medium* *Fey* *chaotic neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Puppet Link:** One humanoid or beast the jack of strings can see within 60 feet of it must succeed on a DC 15 Wisdom saving throw or become magically linked to the jack’s marionette. This link appears as a barely perceptible string between the jack’s marionette and the target. A linked creature can repeat the saving throw at the end of each of its turns, ending the link on a success.<br><br>While a target is linked, the jack of strings can use its reaction at the start of the target’s turn to control the linked target. The jack of strings can make the target move, manipulate objects, attack, or take other purely physical actions. The jack can’t make the target cast spells. While controlled, the target moves awkwardly and has disadvantage on attack rolls and ability checks. If the target receives a suicidal command from the jack of strings, it can repeat the saving throw, ending the effect on a success.<br><br>The jack of strings can have only one target linked at a time. If it links another, the effect on the previous target ends. If a creature dies while linked to the jack’s marionette, the creature’s body becomes a wooden puppet that resembles the creature.
 
 
+</statblock>
 
 

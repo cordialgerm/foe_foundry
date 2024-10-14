@@ -23,6 +23,7 @@ In combat, the Trollkin Raider can utilize its Multiattack action to perform two
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trollkin Raider
 
 *Medium* *Humanoid* *neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Spear:** Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.
 
 
+</statblock>
 
 

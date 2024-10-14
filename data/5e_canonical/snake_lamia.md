@@ -23,6 +23,7 @@ As a bonus action, the Snake Lamia can use "Misty Step," teleporting to any unoc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snake Lamia
 
 *Large* *Monstrosity*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Misty Step (2nd-Level; V):** The lamia teleports to an unoccupied space it can see within 30 feet. The lamia can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 

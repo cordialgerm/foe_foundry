@@ -51,6 +51,7 @@ The Vampire Assassin represents a frighteningly capable adversary, utilizing bot
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire Assassin
 
 *Medium* *Undead*
@@ -105,5 +106,6 @@ Source: 5e_artisinal_monsters
 - **Grab:** The vampire makes a grab attack.
 - **Mist Form:** The vampire transforms into a mist or back into its true form. As mist, the vampire has a flying speed of 30, can't speak, can't take actions or manipulate objects, is immune to nonmagical damage from weapons, and has advantage on saving throws and Stealth checks. It can pass through a space as narrow as 1 inch without squeezing but can't pass through water. Anything its carrying transforms with it.
 - **Shapechange:** The vampire transforms into the shape of a Medium or smaller beast or back into its true form. While transformed, it has the beasts size and movement modes. It can't use reactions or legendary actions, and can't speak. Otherwise, it uses the vampires statistics. Anything its carrying transforms with it.
+</statblock>
 
 

@@ -27,6 +27,7 @@ As a bonus action, the Arcane Leviathan can use "Arcane Barrage" to target a cre
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arcane Leviathan
 
 *Gargantuan* *Construct* *unaligned*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Arcane Barrage:** Sends arcane energy toward a creature it can see within 120' of it. Target begins to glow with arcane energy and at end of target’s next turn: 35 (10d6) radiant (DC 19 Con half). Damage is divided evenly between target and all creatures within 10 ft. of it except leviathan.
 
 
+</statblock>
 
 

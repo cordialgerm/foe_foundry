@@ -25,6 +25,7 @@ Its most formidable ability is Life Drain, where a creature grappled by the ooze
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ichor Ooze
 
 *Medium* *Ooze* *neutral evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Life Drain:** One creature grappled by the ooze must make a DC 12 Constitution saving throw, taking 10 (3d6) necrotic damage on a failed save, or half as much damage on a successful one. The target’s hp maximum is reduced by an amount equal to the damage taken, and the ooze regains hp equal to that amount. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hp maximum to 0.
 
 
+</statblock>
 
 

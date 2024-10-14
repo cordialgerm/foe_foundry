@@ -27,6 +27,7 @@ This combination of psychological manipulation, stealth, and the ability to cont
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Intellect Devourer
 
 *Tiny* *Aberration*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **While the intellect devourer is in control of the target, the intellect devourer retains its own Intelligence, Wisdom, and Charisma, its telepathy, and its knowledge of Deep Speech:** It otherwise uses the targets statistics  including proficiencies  languages  class features  and spells. It has vague knowledge about the targets life but must make a DC 15 Intelligence check to recall specific facts.
 
 
+</statblock>
 
 

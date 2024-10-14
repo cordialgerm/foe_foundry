@@ -29,6 +29,7 @@ Overall, the Pit Fiend General is a compelling adversary characterized by its si
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pit Fiend General
 
 *Huge* *Fiend*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 8) bludgeoning damage.
 
 
+</statblock>
 
 

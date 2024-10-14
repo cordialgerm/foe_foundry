@@ -31,6 +31,7 @@ Overall, the Swarm of Biting Gnats excels in numbers providing debilitating dist
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm, Biting Gnat
 
 *Medium* *Beast* *unaligned*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Bites:** Melee Weapon Attack: +5 to hit 0' 1 tgt in the swarm’s space. 5 (2d4) piercing damage or 2 (1d4) piercing damage if the swarm has half its hp or fewer. The target must make DC 11 Con save or become blinded for 1 min. The target can re-save at end of each of its turns success ends effect on itself. Alternatively target can use action to clear its eyes of the insects ending effect.
 
 
+</statblock>
 
 

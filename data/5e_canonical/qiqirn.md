@@ -23,6 +23,7 @@ The Qiqirn also has a reaction called Horrifying Wail that triggers when it take
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Qiqirn
 
 *Small* *Monstrosity* *neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Horrifying Wail:** When the qiqirn takes damage, the spirits infusing it cry out, afraid of losing their host. If the creature that dealt the damage can hear the qiqirn, it must succeed on a DC 12 Wisdom saving throw or be frightened until the end of its next turn.
 
 
+</statblock>
 
 

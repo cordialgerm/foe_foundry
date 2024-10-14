@@ -37,6 +37,7 @@ In summary, the Nightmare combines strong physical capabilities with fire-themed
 
 Source: 5e_srd
 
+<statblock>
 ## Nightmare
 
 *Large fiend, neutral evil*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage plus 7 (2d6) fire damage.
 
-***Ethereal Stride***. The nightmare and up to three willing creatures within 5 feet of it magically enter the Ethereal Plane from the Material Plane, or vice versa.
+***Ethereal Stride***. The nightmare and up to three willing creatures within 5 feet of it magically enter the Ethereal Plane from the Material Plane, or vice versa.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nightmare
 
 *Large* *Fiend*
@@ -106,6 +109,7 @@ Source: 5e_artisinal_monsters
 - **Ethereal Shift (Recharge 5-6):** The nightmare and a rider magically pass from the Ethereal Plane to the Material Plane or vice versa.
 
 
+</statblock>
 
 
 
@@ -114,6 +118,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nightmare
 
 *Large fiend*
@@ -148,5 +153,6 @@ Source: 5e_artisinal_monsters
 
 - **Burning Hoofprints.** The nightmare increases the intensity of the heat on its hooves. Until the start of its next turn, it leaves burning hoofprints in any surface through which it walks, creating a trail of fire in its wake. A creature that enters a space with burning hoofprints for the first time on a turn or starts its turn there must succeed on a DC 13 DEX save or take 3 (1d6) fire damage. The hoofprints stop burning at the start of the nightmare’s next turn.
 
+</statblock>
 
 

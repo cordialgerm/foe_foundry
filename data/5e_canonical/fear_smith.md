@@ -21,6 +21,7 @@ Regarding spellcasting, the Fear Smith can cast certain spells without requiring
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fear Smith
 
 *Medium* *Fey* *Chaotic Neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage plus 9 (2d8) psychic damage. If the target is disoriented by Distortion Gaze, the fear smith regains hp equal to the amount of psychic damage dealt.
 - **Heart-Stopping Stare:** The fear smith terrifies a creature within 30 feet of it with a look. The target must succeed on a DC 16 Wisdom saving throw or take 13 (3d8) psychic damage and be stunned until the end of its next turn. The fear smith regains hp equal to the psychic damage dealt.
 - **Spellcasting:** The fear smith casts one of the following spells, requiring no verbal or material components and using Charisma as the spellcasting ability (spell save DC 16):<br>At will: detect thoughts, fear<br>2/day each: charm person, command
+</statblock>
 
 

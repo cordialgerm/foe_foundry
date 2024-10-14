@@ -23,6 +23,7 @@ Each bite attack functions as follows: the canine heads make a melee weapon atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Orthrus
 
 *Medium* *Monstrosity* *lawful neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Bite (Snake Head):** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must make a DC 12 Constitution saving throw. On a failed save, it takes 14 (4d6) poison damage and is poisoned for 1 minute. On a success, it takes half the damage and isn't poisoned.
 
 
+</statblock>
 
 

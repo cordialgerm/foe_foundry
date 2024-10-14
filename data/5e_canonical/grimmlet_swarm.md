@@ -37,6 +37,7 @@ Overall, the Grimmlet Swarm is a multifaceted adversary that combines physical p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grimmlet Swarm
 
 *Large* *Monstrosity* *unaligned*
@@ -75,5 +76,6 @@ At will: maddening whispers, crushing curse, minor illusion
 - **Crystal Edges:** Melee Weapon Attack: +8 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 18 (4d8) slashing damage, or 9 (2d8) slashing damage if the swarm has half of its hp or fewer. The target must make a DC 17 Intelligence saving throw, taking 21 (6d6) psychic damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

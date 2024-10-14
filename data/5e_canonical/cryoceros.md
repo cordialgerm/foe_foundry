@@ -23,6 +23,7 @@ Additionally, the Cryoceros can unleash "Shards of Ice," a powerful area effect 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cryoceros
 
 *Large* *Monstrosity* *unaligned*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Shards of Ice (Recharge 4-6):** The cryoceros exhales razor-sharp ice in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 10 (3d6) cold damage and 10 (3d6) piercing damage on a failed save, or half as much on a successful one.
 
 
+</statblock>
 
 

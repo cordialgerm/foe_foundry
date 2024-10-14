@@ -19,6 +19,7 @@ In combat, the drake can employ a Multiattack pattern, which consists of one Bit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drake, Vapor
 
 *Large* *Dragon* *neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Poisonous Breath (Recharge 5–6):** Exhales poisonous swamp gas in 30' cone. Each creature in area: 27 (5d8) poison (DC 15 Con half). If drake is flying its Gaseous Ascension immediately ends takes falling damage as normal and each creature that failed save: poisoned 1 min. Poisoned creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

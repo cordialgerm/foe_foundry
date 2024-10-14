@@ -19,6 +19,7 @@ In terms of combat actions, the Ghost Boar can use its tusks to deliver strong m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghost Boar
 
 *Large* *Monstrosity* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Tusk Swipe:** When a creature hits the ghost boar with a melee weapon attack, the ghost boar can make one tusk attack against the creature. The ghost boar must see the attacker and be within 5 feet of it.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Inciter is designed to manipulate and create disorder on the battle
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Demon, Inciter
 
 *Medium* *Fiend* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** Magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment it wears or carries is invisible with it.
 
 
+</statblock>
 
 

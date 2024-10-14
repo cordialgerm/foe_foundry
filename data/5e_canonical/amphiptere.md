@@ -23,6 +23,7 @@ This combination of abilities and attacks makes the amphiptere a fast, poisonous
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Amphiptere
 
 *Medium* *Beast* *Unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The amphiptere makes one Bite attack and one Stinger attack.
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d6 + 4) piercing damage.
 - **Stinger:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d6 + 4) piercing damage plus 10 (3d6) poison damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour.
+</statblock>
 
 

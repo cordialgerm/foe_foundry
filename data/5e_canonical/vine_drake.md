@@ -21,6 +21,7 @@ Overall, the Vine Drake is a versatile and dangerous creature that excels in bot
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vine Drake
 
 *Medium* *Dragon* *neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Acid Breath (Recharge 5-6):** The vine drake exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 22 (5d8) acid damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

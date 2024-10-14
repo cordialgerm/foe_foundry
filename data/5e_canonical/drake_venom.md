@@ -21,6 +21,7 @@ Overall, the Venom Drake combines speed, strength, and deadly poison to create a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drake, Venom
 
 *Large* *Dragon* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Venom Breath (Recharge 5–6):** Spits venom in a 60' line that is 5 ft. wide. Each creature in that line: 36 (8d8) poison and succumbs to the drake’s venom (see above; DC 16 Con half damage and doesn’t succumb to the venom).
 
 
+</statblock>
 
 

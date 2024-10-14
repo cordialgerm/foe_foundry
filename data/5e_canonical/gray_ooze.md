@@ -25,6 +25,7 @@ In combat, the Gray Ooze can take the Pseudopod action, which involves a melee w
 
 Source: 5e_srd
 
+<statblock>
 ### Gray Ooze
 
 *Medium ooze, unaligned*
@@ -61,7 +62,8 @@ The ooze can eat through 2-inch-thick, nonmagical metal in 1 round.
 
 ###### Actions
 
-***Pseudopod***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) bludgeoning damage plus 7 (2d6) acid damage, and if the target is wearing nonmagical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.
+***Pseudopod***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) bludgeoning damage plus 7 (2d6) acid damage, and if the target is wearing nonmagical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.</statblock>
+
 
 
 
@@ -69,6 +71,7 @@ The ooze can eat through 2-inch-thick, nonmagical metal in 1 round.
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gray Ooze
 
 *Medium* *Ooze*
@@ -102,6 +105,7 @@ Source: 5e_artisinal_monsters
 - **Pseudopod:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage plus 5 (2d4) acid damage. Nonmagical metal armor worn by the target corrodes  taking a permanent -1 penalty to its AC protection per hit. If the penalty reduces the armors AC protection to 10  the armor is destroyed.
 
 
+</statblock>
 
 
 
@@ -110,6 +114,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gray Ooze
 
 *Medium ooze*
@@ -146,5 +151,6 @@ Source: 5e_artisinal_monsters
 
 - **Solidify.** When the ooze is hit by an attack, it can partially solidify its body, reducing the damage it takes by 2 (1d4). If it has taken fire damage since the start of its last turn, the damage it takes is reduced by 3 (1d6) instead. The ooze can’t use this reaction if it has taken cold damage since the start of its last turn.
 
+</statblock>
 
 

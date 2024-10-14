@@ -37,6 +37,7 @@ As a reaction, the Shrieker can perform a Startled Shriek whenever bright light 
 
 Source: 5e_srd
 
+<statblock>
 ### Shrieker (Fungi)
 
 *Medium plant, unaligned*
@@ -63,7 +64,8 @@ Source: 5e_srd
 
 ###### Reactions
 
-***Shriek***. When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker's turns afterward.
+***Shriek***. When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker's turns afterward.</statblock>
+
 
 
 
@@ -71,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shrieker
 
 *Medium* *Plant*
@@ -100,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Shriek:** If the shrieker perceives a creature within 30 feet  or if an area of bright light is within 30 feet  it shrieks loudly and continuously. The shriek is audible within 300 feet. The shrieker continues to shriek for 1 minute after the creature or light has moved away.
 
 
+</statblock>
 
 
 
@@ -108,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shrieker
 
 *Medium plant*
@@ -144,5 +149,6 @@ Source: 5e_artisinal_monsters
 
 - **Startled Shriek.** When bright light or a creature other than a Plant moves to within 30 feet of the shrieker, the shrieker can use Shriek, if it isn’t already shrieking.
 
+</statblock>
 
 

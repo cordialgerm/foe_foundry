@@ -25,6 +25,7 @@ Overall, the City Watch Captain serves as both a potent combatant and a supporti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # City Watch Captain
 
 *Medium* *Humanoid* *Any Lawful Alignment*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Rapier:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage. Instead of dealing damage, the city watch captain can force the target to drop one weapon it is wielding or drop one item it is carrying. If the captain chooses to make the target drop an item, the item can’t be wrapped around or firmly attached to the target, such as a shirt or armor. The item lands in a space of the captain’s choice within 5 feet of the target.
 - **Light Crossbow:** Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
 - **Issue Orders:** The city watch captain shouts orders at up to two friendly creatures it can see within 30 feet of it. Each target can do one of the following as a reaction:
+</statblock>
 
 

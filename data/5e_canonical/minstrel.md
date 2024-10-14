@@ -42,6 +42,7 @@ Overall, the Minstrel stands out as a dynamic bardic figure equipped with powerf
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Minstrel
 
 *Medium* *Humanoid*
@@ -92,5 +93,6 @@ Source: 5e_artisinal_monsters
 - **Healing Word (1st-Level; V):** The minstrel or a living creature within 60 feet regains 5 (1d4 + 3) hit points. The minstrel can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ In terms of reactions, the Death Knight can use "Parry" to enhance its defense. 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Death Knight
 
 *Medium undead*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Parry.** The death knight adds 3 to its AC against one melee attack that would hit it. To do so, the death knight must see the attacker and be wielding a melee weapon.
 - **Soul Drain.** When the death knight reduces a Humanoid to 0 HP, it can absorb the creature’s soul. The target must succeed on a DC 15 WIS save or immediately die, its soul becoming trapped in the death knight’s sword. The death knight has advantage on attack rolls for 1 minute after absorbing a soul. The creature can’t be restored to life until the death knight is permanently destroyed.
 
+</statblock>
 
 

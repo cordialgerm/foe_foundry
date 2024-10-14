@@ -27,6 +27,7 @@ Overall, the Chupacabra is characterized by its stealthy nature, relentless pred
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chupacabra
 
 *Small* *Monstrosity* *unaligned*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Malodorous Stench:** When the chupacabra is reduced to less than half of its maximum hp, it releases a foul, sulphurous stench. Each creature within 5 feet of the chupacabra must succeed on a DC 11 Constitution saving throw or be poisoned until the end of its next turn.
 
 
+</statblock>
 
 

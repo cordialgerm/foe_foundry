@@ -23,6 +23,7 @@ Overall, the Flayed Wraith serves as a formidable foe that manipulates both ment
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flayed Wraith
 
 *Medium* *Undead* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Howl of Agony:** The wraith screams its pain into the mind of one creature it can see within 30 feet of it. The target must make a DC 14 Wisdom saving throw. On a failure, the target takes 10 (3d6) psychic damage and is incapacitated as it doubles over in pain. On a success, the target takes half the damage and isn’t incapacitated.
 
 
+</statblock>
 
 

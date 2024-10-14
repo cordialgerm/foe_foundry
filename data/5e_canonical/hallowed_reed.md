@@ -21,6 +21,7 @@ In terms of actions, the Hallowed Reed possesses "Searing Grasp," which is a mel
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hallowed Reed
 
 *Medium* *Celestial* *neutral good*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Searing Grasp:** Melee Weapon Attack: +4 to hit, reach 15 ft., one creature. Hit: 4 (1d4 + 2) radiant damage, and the target is grappled (escape DC 12). Until this grapple ends, the creature is restrained, it takes 2 (1d4) radiant damage at the start of each of its turns, and the hallowed reed can't grasp another target. Undead and fiends have disadvantage on ability checks made to escape the grapple.
 
 
+</statblock>
 
 

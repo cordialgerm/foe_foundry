@@ -21,6 +21,7 @@ As a bonus action, the Werecrocodile can Change Shape, transforming into a Large
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lycanthrope, Werecrocodile
 
 *Medium* *Humanoid* *neutral evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Transforms into a Large crocodile or into a crocodile-humanoid hybrid or back into its true form which is Humanoid. Its stats other than size are the same in each form. Any equipment worn/carried isn't transformed. Reverts to its true form if it dies.
 
 
+</statblock>
 
 

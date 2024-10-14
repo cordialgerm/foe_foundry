@@ -21,6 +21,7 @@ The Gear Spider also has a unique bonus action called "Photograph," which allows
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gear Spider
 
 *Tiny* *Construct*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Photograph:** The gear spider stores a black and white image of what it can see. The gear spider can hold up to 10 images at a time. Retrieving the image storage device inside the gear spider requires 1 minute. Once the device is accessed, viewing a stored image requires a DC 12 Investigation check to make out any details.
 
 
+</statblock>
 
 

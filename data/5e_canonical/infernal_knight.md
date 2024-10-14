@@ -25,6 +25,7 @@ This combination of abilities makes the Infernal Knight a challenging foe, capab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Infernal Knight
 
 *Medium* *Fiend* *lawful evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Planar Rift (1/Day):** The infernal knight magically tears a rift in the fabric of the multiverse. The rift is a portal to a plane of the infernal knight's choice. The portal remains open for 1 hour, during which time any creature can pass through it, moving from one plane to the other. A dispel magic spell targeting the rift can destroy it if the caster succeeds on a DC 18 spellcasting ability check.
 
 
+</statblock>
 
 

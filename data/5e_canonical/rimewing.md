@@ -19,6 +19,7 @@ For its actions, the Rimewing can attack with its Proboscis, making a melee weap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rimewing
 
 *Small* *Beast* *unaligned*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Frosted Wings (1/Day):** A 20-foot radius cloud of colorful ice crystals extends from the rimewing. Each creature in that area must succeed on a DC 10 Wisdom saving throw or be charmed by the rimewing for 1 minute. While charmed by the rimewing, a creature is incapacitated and must move up to its speed toward the rimewing at the start of its turn, stopping when it is 5 feet away. A charmed creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

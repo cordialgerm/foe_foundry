@@ -25,6 +25,7 @@ Overall, the Tidehunter is a masterful ambusher and trapper, with robust physica
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tidehunter
 
 *Huge* *Monstrosity* *unaligned*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Entangle Weapon:** When the tidehunter is targeted by a melee weapon attack, the attacker must succeed on a DC 16 Dexterity saving throw or miss the attack as the tidehunter uses its net to interfere with the weapon. The tidehunter must have an empty net to use this reaction.
 
 
+</statblock>
 
 

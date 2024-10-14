@@ -23,6 +23,7 @@ As a bonus action, the Nkosi possesses the Change Shape ability, allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nkosi
 
 *Medium* *Humanoid* *Shapechanger)*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The nkosi transforms into a Large lion or back into its true form, which is Humanoid. Its statistics, other than its size, speed, and AC, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
+</statblock>
 
 

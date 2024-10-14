@@ -23,6 +23,7 @@ The Spree's "Claw" attack involves a melee weapon attack that again has a +6 to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spree
 
 *Small* *Fiend* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage plus 10 (3d6) poison damage, and the creature must make a DC 14 Constitution saving throw. On a failure, the target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn for 1 minute. This works like the confusion spell. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to this effect for the next 24 hours.
 
 
+</statblock>
 
 

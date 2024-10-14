@@ -23,6 +23,7 @@ Overall, the Giant Scorpion is a strong physical combatant that can be a challen
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Scorpion
 
 *Large beast, unaligned*
@@ -49,7 +50,8 @@ Source: 5e_srd
 
 ***Claw***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d8+2) bludgeoning damage, and the target is grappled (escape DC 12). The scorpion has two claws, each of which can grapple only one target.
 
-***Sting***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 7 (1d10+2) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one.
+***Sting***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 7 (1d10+2) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -57,6 +59,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Scorpion
 
 *Large* *Beast*
@@ -82,5 +85,6 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8+2) piercing damage and the target makes a DC 12 Constitution saving throw  taking 16 (3d10) poison damage on a failure or half damage on a success.
 
 
+</statblock>
 
 

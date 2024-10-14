@@ -21,6 +21,7 @@ Overall, the Giant Armadillo is a creature that emphasizes defense over offense,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Armadillo
 
 *Small* *Beast* *unaligned*
@@ -45,5 +46,6 @@ Source: 5e_artisinal_monsters
 - **Tuck In:** The giant armadillo tucks its entire body into its shell, forming an armored ball. While in this form, it moves by rolling around, it has resistance to bludgeoning, piercing, and slashing damage, and it can’t take the Attack action or burrow. The giant armadillo can return to its true form as a bonus action.
 
 
+</statblock>
 
 

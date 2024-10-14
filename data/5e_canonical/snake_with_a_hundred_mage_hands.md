@@ -31,6 +31,7 @@ With its unique blend of magical utility and potent area control, the Snake with
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snake with a Hundred Mage Hands
 
 *Small* *Monstrosity* *neutral*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Flying Fists (Recharge 5-6):** The snake unleashes a flurry of spectral punches in a 30-foot cone. Each creature in the area must make a DC 14 Dexterity saving throw. On a failure, a creature takes 10 (3d6) bludgeoning damage and is knocked prone. On a success, a creature takes half the damage and isn’t knocked prone.
 
 
+</statblock>
 
 

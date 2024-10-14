@@ -21,6 +21,7 @@ In terms of actions, the Alchemist Archer can execute a Multiattack, making eith
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alchemist Archer
 
 *Medium* *Humanoid* *any alignment*
@@ -56,5 +57,6 @@ Explosive. The target takes an extra 18 (4d8) fire damage and catches on fire, t
 - **Longbow:** Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 9 (1d8 + 5) piercing damage.
 
 
+</statblock>
 
 

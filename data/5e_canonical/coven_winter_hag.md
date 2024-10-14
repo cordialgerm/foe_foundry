@@ -27,6 +27,7 @@ Overall, the Coven Winter Hag is a cunning and powerful adversary, masterfully u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Coven Winter Hag
 
 *Medium* *Fey*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Ice Shield:** The hag adds 3 to its AC against one melee attack that would hit it made by a creature it can see. If the attack misses, the attacker takes 14 (4d6) cold damage.
 
 
+</statblock>
 
 

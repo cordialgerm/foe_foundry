@@ -23,6 +23,7 @@ Lastly, as a bonus action, the Faerie Dragon can turn invisible, along with any 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Faerie Dragon Familiar
 
 *Tiny* *Dragon*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The dragon and any equipment it wears or carries magically turns invisible. This invisibility ends if the dragon falls unconscious, dismisses the effect, or uses Bite, Euphoria Breath, Prismatic Light, or Beast Form.
 
 
+</statblock>
 
 

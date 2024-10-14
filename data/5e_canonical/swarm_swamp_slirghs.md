@@ -21,6 +21,7 @@ For its actions, the Swarm can bite with a melee weapon attack, which has a +5 t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm, Swamp Slirghs
 
 *Large* *Elemental* *neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Soggy Relocation (Recharge 5–6):** While at least one creature is in swarm’s space swarm uses Puddle Jump attempting to pull one creature along for the ride. Target magically teleported with swarm to swarm’s destination (DC 13 Str negates).
 
 
+</statblock>
 
 

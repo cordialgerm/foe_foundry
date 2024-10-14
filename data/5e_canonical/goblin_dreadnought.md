@@ -29,6 +29,7 @@ In addition to its regular actions, the Goblin Dreadnought has a bonus action ca
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Dreadnought
 
 *Small* *Humanoid*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 

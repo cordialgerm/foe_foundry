@@ -21,6 +21,7 @@ Overall, the Atavist is a cunning and dangerous foe that excels in physical conf
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: Atavist
 
 *Medium* *Humanoid* *lawful evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bone Shard:** Ranged Weapon Attack: +4 to hit 30/120' one target 7 (2d4+2) piercing damage.
 
 
+</statblock>
 
 

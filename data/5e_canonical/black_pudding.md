@@ -46,6 +46,7 @@ Overall, the Black Pudding is a dangerous foe that combines acidic attacks with 
 
 Source: 5e_srd
 
+<statblock>
 ### Black Pudding (Ooze)
 
 *Large ooze, unaligned*
@@ -84,7 +85,8 @@ The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.
 
 ###### Reactions
 
-***Split***. When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding.
+***Split***. When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding.</statblock>
+
 
 
 
@@ -92,6 +94,7 @@ The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Pudding
 
 *Large* *Ooze*
@@ -129,6 +132,7 @@ Source: 5e_artisinal_monsters
 - **Split:** When a Medium or larger pudding with at least 10 hit points is subjected to lightning or slashing damage, it splits into two puddings that are each one size smaller. Each new pudding has half the originals hit points (rounded down).
 
 
+</statblock>
 
 
 
@@ -137,6 +141,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Pudding
 
 *Large ooze*
@@ -177,5 +182,6 @@ Source: 5e_artisinal_monsters
 
 - **Split.** When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 HP. Each new pudding has HP equal to half the original pudding’s, rounded down. New puddings are one size smaller than the original pudding.
 
+</statblock>
 
 

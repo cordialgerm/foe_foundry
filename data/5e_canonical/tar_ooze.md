@@ -40,6 +40,7 @@ Overall, the Tar Ooze is a tactically challenging adversary due to its control o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tar Ooze
 
 *Large* *Ooze* *unaligned*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Hurl Tar:** Ranged Weapon Attack: +2 to hit, range 60 ft., one target. Hit: 14 (4d6) necrotic damage and the target must succeed on a DC 14 Dexterity saving throw or be covered in tar (see Sticky Situation).
 
 
+</statblock>
 
 

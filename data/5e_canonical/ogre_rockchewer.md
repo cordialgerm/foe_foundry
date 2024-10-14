@@ -29,6 +29,7 @@ Overall, the Rockchewer Ogre is a potent force in battle, utilizing its physical
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre, Rockchewer
 
 *Huge* *Giant* *lawful neutral*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Rock Catching:** If a rock or similar object is hurled at the rockchewer ogre the ogre can with successful DC 10 Dex save catch the missile and take no bludgeoning from it.
 
 
+</statblock>
 
 

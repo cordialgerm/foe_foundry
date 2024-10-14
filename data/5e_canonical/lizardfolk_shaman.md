@@ -23,6 +23,7 @@ Finally, as a bonus action, when the shaman has 32 Hit Points or fewer, it can u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizardfolk Shaman
 
 *Medium humanoid*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Poisoned Body (32 HP or Fewer).** The shaman coats itself in poison until the start of its next turn. It takes 3 (1d6) poison damage. In addition, the next time a creature hits the shaman with a melee attack while within 5 feet of the shaman before the start of the shaman’s next turn, the attacker takes 7 (2d6) poison damage.
 
+</statblock>
 
 

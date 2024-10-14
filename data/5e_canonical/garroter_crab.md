@@ -21,6 +21,7 @@ In terms of actions, the Garroter Crab can make a melee weapon attack using its 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Garroter Crab
 
 *Tiny* *Beast* *Unaligned*
@@ -47,5 +48,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Whip-Claw:** Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 5 (1d6 + 2) slashing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target can’t speak or cast spells with verbal components, and the crab can’t use its Whip Claw on another target.
+</statblock>
 
 

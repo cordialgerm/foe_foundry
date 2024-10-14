@@ -19,6 +19,7 @@ As a bonus action, the Dead Man's Fingers can use Telekinetic Pull to target one
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dead Mans Fingers
 
 *Medium* *Plant*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Telekinetic Pull (Ethereal or Material Plane):** One creature within 90 feet makes a DC 15 Strength saving throw. On a failure, it is magically pulled up to 60 feet straight towards the dead mans fingers.
 
 
+</statblock>
 
 

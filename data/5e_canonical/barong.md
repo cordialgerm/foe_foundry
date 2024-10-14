@@ -25,6 +25,7 @@ In addition to its standard abilities, Barong has three legendary actions it can
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Barong
 
 *Large* *Celestial* *lawful good*
@@ -72,5 +73,6 @@ Barong can take 3 legendary actions, choosing from the options below. Only one l
 - **Claw:** Barong makes one claw attack.
 - **Enlightening Roar:** Each creature he chooses within 30 feet of him can immediately repeat a saving throw to end one condition currently affecting it.
 - **Divine Command (Costs 2 Actions):** Barong roars a command at one allied undead or celestial within 30 feet of him. It can move up to its speed and make one attack as a reaction. The creature doesn't provoke an opportunity attack from this movement. Bats Bats exist in hundreds of species, from the harmless messenger bats of the ghoul empire to the ravening blood-devouring vampire bats found in various castles and deep jungles. The giant albino bat and the giant vampire bat are two monsters that vex adventurers more often than most, and they are often allies of darakhul, werebats, dhampirs, and vampires.
+</statblock>
 
 

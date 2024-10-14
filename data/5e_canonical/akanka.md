@@ -23,6 +23,7 @@ The Akanka is also capable of spellcasting. With a Charisma-based spellcasting a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Akanka
 
 *Medium* *Fey* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 13) no material components: At will: minor illusion silent image3/day: major image1/day: hallucinatory terrain
 
 
+</statblock>
 
 

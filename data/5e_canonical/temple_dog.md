@@ -21,6 +21,7 @@ During combat, the Temple Dog uses a Multiattack action to perform two Bite atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Temple Dog
 
 *Medium* *Celestial* *Any Good*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The temple dog makes two Bite attacks. If both attacks hit a Medium or smaller target, the temple dog sinks in its teeth, shaking its head violently, and the target must succeed on a DC 15 Strength saving throw or take 9 (2d8) slashing damage and be grappled (escape DC 15). Until this grapple ends, the target is restrained, and temple dog can’t Bite another target.
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 7 (2d6) radiant damage.
+</statblock>
 
 

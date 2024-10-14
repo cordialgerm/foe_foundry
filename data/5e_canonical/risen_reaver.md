@@ -27,6 +27,7 @@ In reaction to being hit with a nonmagical melee weapon, the Risen Reaver can ac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Risen Reaver
 
 *Large* *Undead* *Chaotic Evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Infused Arsenal:** When the risen reaver is hit with a nonmagical melee weapon or when it starts its turn in the same space as a nonmagical melee weapon that isn’t being worn or carried, it absorbs the weapon into its body. If the weapon is being wielded by an attacker, the attacker must succeed on a DC 15 Strength saving throw or lose its weapon. For 1 minute, the reaver has resistance to the type of damage dealt by that weapon, and when it hits with its Bladed Fist, the fist deals an extra 2 (1d4) damage of the type dealt by the weapon. The reaver can absorb no more than three weapons in this way every 24 hours.
+</statblock>
 
 

@@ -21,6 +21,7 @@ The Heatwave Breath is a powerful breath weapon that requires a recharge of 6 tu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sanddrift Drake
 
 *Large* *Dragon* *neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Heatwave Breath (Recharge 6):** The drake exhales superheated air in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one. If a creature fails the saving throw by 5 or more, it suffers one level of exhaustion.
 
 
+</statblock>
 
 

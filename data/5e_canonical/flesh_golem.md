@@ -23,6 +23,7 @@ Overall, the Flesh Golem is a powerful combatant that benefits from its high res
 
 Source: 5e_srd
 
+<statblock>
 ### Flesh Golem
 
 *Medium construct, neutral*
@@ -65,7 +66,8 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 
 ***Multiattack***. The golem makes two slam attacks.
 
-***Slam***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage.
+***Slam***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flesh Golem
 
 *Medium construct*
@@ -109,5 +112,6 @@ Source: 5e_artisinal_monsters
 - **Slam.** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) bludgeoning damage.
 - **Creator’s Anguish (Recharge 5–6).** The golem releases a wave of emotional anguish from its core. Each creature within 15 feet of the golem must make a DC 15 WIS save. On a failure, a creature takes 31 (9d6) psychic damage and is incapacitated until the end of its next turn, as its mind fills with memories of its greatest failures. On a success, a creature takes half the damage and isn’t incapacitated.
 
+</statblock>
 
 

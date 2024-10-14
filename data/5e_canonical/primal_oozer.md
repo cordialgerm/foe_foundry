@@ -21,6 +21,7 @@ In combat, the Primal Oozer can utilize its Multiattack feature to make two bite
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Primal Oozer
 
 *Medium* *Aberration* *neutral evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.
 
 
+</statblock>
 
 

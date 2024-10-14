@@ -17,6 +17,7 @@ In terms of combat actions, the Frostveil can perform a "Multiattack," making tw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frostveil
 
 *Medium* *Plant* *Unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Frozen Tendril:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 5) bludgeoning damage plus 3 (1d6) cold damage.
 - **Snowy Engulf:** The frostveil engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded and restrained, and it must succeed on a DC 15 Constitution saving throw at the start of each of the frostveil’s turns or take 4 (1d8) acid damage and 3 (1d6) cold damage. If the frostveil moves, the engulfed target moves with it. The frostveil can have only one creature engulfed at a time.
 - **Spirit Spores (Recharge 6):** The frostveil releases a puff of psychotropic spores around itself. Each creature within 10 feet of the frostveil must make a DC 15 Constitution saving throw. On a failure, a creature takes 21 (6d6) cold damage and is incapacitated for 1 minute. On a success, a creature takes half the damage and isn’t incapacitated. When an incapacitated creature moves, it moves in a random direction. An incapacitated creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

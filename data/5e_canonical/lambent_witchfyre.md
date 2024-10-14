@@ -21,6 +21,7 @@ Overall, the Lambent Witchfyre's combination of immunities, regenerating abiliti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lambent Witchfyre
 
 *Large* *Aberration* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Blazing Touch:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns. If a creature is slain by this attack, the lambent witchfyre regains hp equal to the damage dealt. The body of a creature slain by this attack turns to ash, along with any nonmagical items it was wearing or carrying. The creature can be restored to life only by means of a resurrection or wish spell.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ As a bonus action, the Moonweb can use Ethereal Jaunt to shift between the Mater
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moonweb
 
 *Medium* *Aberration* *unaligned*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Ethereal Jaunt:** Magically shifts from the Material Plane to the Ethereal Plane or vice versa.
 
 
+</statblock>
 
 

@@ -26,6 +26,7 @@ Overall, the Horned Tauric is a versatile and capable creature that combines phy
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horned Tauric
 
 *Large* *Fey*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Deadeye Shot (1/Day):** The centaur makes a shortbow attack with advantage.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ Overall, the Putrid Haunt stands as a formidable opponent in swamp terrains, lev
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Putrid Haunt
 
 *Medium* *Undead* *Neutral Evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 
 - **Slam:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage plus 5 (2d4) poison damage.
 - **Expel Vermin (Recharge 6):** The putrid haunt vomits forth the leeches, stinging insects, and other swamp vermin infesting its innards in a 15-foot cone. Each creature in the area must make a DC 13 Dexterity saving throw. On a failure, a creature takes 7 (2d6) piercing damage and 7 (2d6) poison damage and is poisoned for 1 minute. On a success, a creature takes half the damage and isn’t poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

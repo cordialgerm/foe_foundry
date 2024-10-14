@@ -21,6 +21,7 @@ Additionally, the Giant Hellfire can use the Invisibility Rune to magically beco
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant, Hellfire
 
 *Huge* *Giant* *neutral good*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Runic Shield:** Adds 4 to its AC vs. one attack that would hit it as green runes encircle the giant. To do so giant must see the attacker and can’t be invisible
 
 
+</statblock>
 
 

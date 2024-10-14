@@ -19,6 +19,7 @@ The Tricenatorus uses Multiattack to take two offensive actions during its turn,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tricenatorus
 
 *Huge* *Monstrosity* *unaligned*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Tail Spike:** Ranged Weapon Attack: +12 to hit, range 150/300 ft., one target. Hit: 26 (4d8 + 8) piercing damage.
 
 
+</statblock>
 
 

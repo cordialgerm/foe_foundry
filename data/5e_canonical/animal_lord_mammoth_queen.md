@@ -27,6 +27,7 @@ Overall, the Mammoth Queen is a masterful blend of offensive power, defensive re
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animal Lord, Mammoth Queen
 
 *Huge* *Fey* *chaotic good*
@@ -85,5 +86,6 @@ Source: 5e_artisinal_monsters
 - **Trunk:** Makes one Trunk attack.
 - **Shoving Stampede (2):** Charges becoming unstoppable stampede in line up to 80' long × 15 ft. wide. All in line: 14 (4d6) bludgeoning damage and pushed up to 15 ft. away and knocked prone (DC 20 Dex half not pushed/prone). Queen’s move along this line doesn’t provoke opportunity attacks.
 - **Queen’s Trumpet (3):** Emits loud trumpeting audible to 300'. Chooses up to 3 creatures that can hear trumpet. If target is friendly has advantage on its next attack roll ability check or save. If hostile: DC 20 Wis save or frightened til end of its next turn.
+</statblock>
 
 

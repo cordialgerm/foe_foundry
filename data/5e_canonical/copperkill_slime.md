@@ -25,6 +25,7 @@ Lastly, the Copperkill Slime can use a bonus action to Stretch Body, allowing it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Copperkill Slime
 
 *Huge* *Ooze* *unaligned*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Stretch Body:** Stretches its body across surface of a Gargantuan or smaller object or across surface of a wall pillar or similar structure no larger than a 20' square within 5 ft. of it sharing the space of the object or structure. Slime can end the stretch as a bonus action occupying nearest unoccupied space to the object or structure.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ In summary, Alabroza is a cunning and formidable opponent capable of dealing sig
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alabroza, Bloodfiend
 
 *Small* *Fiend* *neutral evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Transforms into Med humanoid Small mist cloud or back into true bird-like fiend form. Other than size and speed stats are same in each form with mist form exceptions. Items worn/carried not transformed. Reverts on death. Mist form: can’t take any actions speak or manipulate objects resistance to nonmagical damage. Weightless fly speed 20' can hover can enter hostile creature’s space and stop there. If air can pass through a space mist can with o squeezing but can’t pass through water.
 
 
+</statblock>
 
 

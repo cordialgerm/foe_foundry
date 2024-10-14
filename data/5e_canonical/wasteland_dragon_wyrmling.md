@@ -19,6 +19,7 @@ Overall, the Wasteland Dragon Wyrmling is a fearsome creature that combines soli
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wasteland Dragon Wyrmling
 
 *Medium* *Dragon* *chaotic evil*
@@ -45,5 +46,6 @@ Source: 5e_artisinal_monsters
 - **Warped Energy Breath (Recharge 6):** The dragon blasts warped arcane energy in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (5d8) force damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

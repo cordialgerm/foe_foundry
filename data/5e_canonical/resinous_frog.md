@@ -21,6 +21,7 @@ Overall, the Resinous Frog is a clever opponent for low-level characters, utiliz
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Resinous Frog
 
 *Small* *Beast* *unaligned*
@@ -55,5 +56,6 @@ As a bonus action, the frog can release one creature or weapon stuck to it. The 
 - **Tongue:** Melee Weapon Attack: +4 to hit, reach 10 ft., one creature. Hit: 4 (1d4 + 2) bludgeoning damage. If the creature is Medium or smaller, it is grappled (escape DC 12), and the frog can’t make tongue attacks against other targets.
 
 
+</statblock>
 
 

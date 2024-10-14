@@ -19,6 +19,7 @@ For its offensive capability, the Pteranodon can use its Bite action, which is a
 
 Source: 5e_srd
 
+<statblock>
 ## Pteranodon
 
 _Medium Beast, Unaligned_
@@ -49,6 +50,7 @@ _Medium Beast, Unaligned_
 
 **Bite.** _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target.
 _Hit:_ 6 (2d4 + 1) piercing damage.
+</statblock>
 
 
 
@@ -57,6 +59,7 @@ _Hit:_ 6 (2d4 + 1) piercing damage.
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pteranodon
 
 *Large* *Beast*
@@ -84,5 +87,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.
 
 
+</statblock>
 
 

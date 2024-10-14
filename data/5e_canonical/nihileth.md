@@ -31,6 +31,7 @@ The Nihileth can also take three legendary actions. It can make a perception che
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nihileth
 
 *Large* *Undead* *Chaotic Evil*
@@ -84,5 +85,6 @@ The nihileth can take 3 legendary actions, choosing from the options below. Only
 - **Detect:** The nihileth makes a Wisdom (Perception) check.
 - **Tail Swipe:** The nihileth makes one Tail attack.
 - **Rotten Drain (Costs 2 Actions):** One creature infected with the nihilethic rot disease within 30 feet of the nihileth takes 10 (3d6) psychic damage, and the nihileth regains hp equal to that amount.
+</statblock>
 
 

@@ -21,6 +21,7 @@ Additionally, it can unleash a powerful "Whirlwind" attack, which requires a rec
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Air Elemental
 
 *Huge* *Elemental*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Whirlwind (Recharge 5-6):** The elemental takes the form of a whirlwind  flies up to half of its fly speed without provoking opportunity attacks  and then resumes its normal form. When a creature shares its space with the whirlwind for the first time during this movement  that creature makes a DC 15 Strength saving throw. On a failure  the creature is carried inside the elementals space until the whirlwind ends  taking 3 (1d6) bludgeoning damage for each 10 feet it is carried  and falls prone at the end of the movement. The whirlwind can carry one Large creature or up to four Medium or smaller creatures.
 
 
+</statblock>
 
 

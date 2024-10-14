@@ -31,6 +31,7 @@ The Basilisk can employ actions during combat, including a Multiattack option, w
 
 Source: 5e_srd
 
+<statblock>
 ## Basilisk
 
 *Medium monstrosity, unaligned*
@@ -59,7 +60,8 @@ If the basilisk sees its reflection within 30 feet of it in bright light, it mis
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage plus 7 (2d6) poison damage.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage plus 7 (2d6) poison damage.</statblock>
+
 
 
 
@@ -67,6 +69,7 @@ If the basilisk sees its reflection within 30 feet of it in bright light, it mis
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Basilisk
 
 *Medium* *Monstrosity*
@@ -95,6 +98,7 @@ Source: 5e_artisinal_monsters
 - **Stone Glance:** If a creature within 60 feet that the basilisk can see hits the basilisk with an attack, the basilisk uses Stone Gaze on the attacker.
 
 
+</statblock>
 
 
 
@@ -103,6 +107,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Basilisk
 
 *Medium monstrosity*
@@ -133,5 +138,6 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) poison damage.
 - **Poison Spit.** Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 13 (3d6 + 3) poison damage.
 
+</statblock>
 
 

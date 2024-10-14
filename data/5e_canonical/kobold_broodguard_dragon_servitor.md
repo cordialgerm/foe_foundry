@@ -31,6 +31,7 @@ As a reaction, the Kobold Broodguard can use **Rally!** once per day. When it ta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold Broodguard Dragon Servitor
 
 *Small* *Humanoid*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Rally! (1/Day:** When the kobold takes damage, it shouts a rallying cry. All kobolds within 30 feet that can hear it gain immunity to the frightened condition for 1 minute, and their next attack roll made before this effect ends deals an extra 1d4 damage.
 
 
+</statblock>
 
 

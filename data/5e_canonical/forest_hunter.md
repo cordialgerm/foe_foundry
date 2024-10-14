@@ -21,6 +21,7 @@ As a bonus action, the Forest Hunter can use Shadow Traveler up to three times a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forest Hunter
 
 *Medium* *Humanoid* *Lawful Evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Traveler (3/Day):** While in shadows, dim light, or darkness, the shadow fey disappears into the darkness and reappears in an unoccupied space it can see within 30 feet. A tendril of inky smoke appears at the origin and destination when it uses this bonus action.
+</statblock>
 
 

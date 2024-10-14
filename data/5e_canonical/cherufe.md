@@ -23,6 +23,7 @@ Finally, the Quake ability requires a recharge period of 6 rounds. By slamming i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cherufe
 
 *Huge* *Elemental* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Quake (Recharge 6):** The cherufe slams its fists into the ground, shaking the terrain within 60 feet of it. Each creature standing on the ground in that area must make a DC 18 Dexterity saving throw. On a failure, the creature takes 45 (10d8) bludgeoning damage and is knocked prone. On a success, the creature takes half the damage and isn’t knocked prone.
 
 
+</statblock>
 
 

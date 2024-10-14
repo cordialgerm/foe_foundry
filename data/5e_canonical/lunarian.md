@@ -23,6 +23,7 @@ In combat, the Lunarian can engage in a "Multiattack," allowing it to strike wit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lunarian
 
 *Medium* *Fey* *chaotic neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Halberd:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) slashing damage plus 4 (1d8) radiant damage.
 
 
+</statblock>
 
 

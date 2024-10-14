@@ -23,6 +23,7 @@ The Sootwing's Sooty Wings ability is a powerful area effect that can be used on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sootwing
 
 *Small* *Beast* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Sooty Wings (1/Day):** A 20-foot radius cloud of smoldering ash disperses from the sootwing. Each creature in that area must make a DC 11 Constitution saving throw. On a failure, a creature takes 4 (1d8) fire damage and is blinded until the end of its next turn. On a success, a creature takes half the damage and isn't blinded.
 
 
+</statblock>
 
 

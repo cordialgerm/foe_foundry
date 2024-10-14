@@ -27,6 +27,7 @@ Overall, the Walled Horror emerges as a terrifying foe, utilizing its defensive 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Walled Horror
 
 *Large* *Undead* *chaotic evil*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Entomb:** The walled horror makes one spectral claw attack against a Medium or smaller creature it is grappling. If the attack hits, the creature is partially entombed in the wall, and the grapple ends. The entombed target is blinded and restrained, and it takes 9 (2d8) psychic damage at the start of each of the walled horror’s turns. A walled horror can have only one creature entombed at a time. <br><br>A creature, including the entombed target, can take its action to free the entombed target by succeeding on a DC 15 Strength check.<br><br>A creature slain while entombed is pulled fully into the wall and can be restored to life only by means of a true resurrection or a wish spell.
 
 
+</statblock>
 
 

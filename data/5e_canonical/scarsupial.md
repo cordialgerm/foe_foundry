@@ -17,6 +17,7 @@ The Scarsupial's actions include a "Multiattack" option that allows it to make b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scarsupial
 
 *Small* *Beast* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Scrabble:** Takes the Dash or Disengage action
 
 
+</statblock>
 
 

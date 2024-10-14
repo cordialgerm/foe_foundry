@@ -21,6 +21,7 @@ One of the creature's most formidable actions, "Engulfing Sootstorm," can be use
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Living Soot
 
 *Large* *Elemental* *neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Engulfing Sootstorm (Recharge 4–6):** Spins violently in place spreading out tendrils of thick poisonous ash. Each creature within 20' of it:21 (6d6) poison and speed is halved (DC 15 Dex half damage and speed isn’t reduced). Speed reduction lasts until creature uses action cleaning off the ash.
 
 
+</statblock>
 
 

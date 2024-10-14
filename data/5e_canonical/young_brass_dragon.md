@@ -39,6 +39,7 @@ As a bonus action, the Young Brass Dragon can use "Change Shape" to magically tr
 
 Source: 5e_srd
 
+<statblock>
 # Young Brass Dragon (Metallic)
 
 *Large dragon, chaotic good*
@@ -77,7 +78,8 @@ Source: 5e_srd
 
 **Fire Breath**. The dragon exhales fire in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 42 (12d6) fire damage on a failed save, or half as much damage on a successful one.
 
-**Sleep Breath**. The dragon exhales sleep gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.
+**Sleep Breath**. The dragon exhales sleep gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.</statblock>
+
 
 
 
@@ -85,6 +87,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Brass Dragon
 
 *Large* *Dragon*
@@ -120,6 +123,7 @@ Source: 5e_artisinal_monsters
 - **Sleep Breath:** The dragon exhales sleep gas in a 30-foot cone. Each creature in the area makes a DC 15 Constitution saving throw. On a failure  a creature falls unconscious for 10 minutes or until it takes damage or someone uses an action to wake it.
 
 
+</statblock>
 
 
 
@@ -128,6 +132,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Brass Dragon
 
 *Large dragon*
@@ -163,5 +168,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The dragon magically transforms into a Beast or Humanoid that has a challenge rating no higher than its own, or back into its true form, which is Dragon. Any equipment it is wearing or carrying transforms with it or is borne by the new form (the dragon’s choice). It reverts to its true form if it dies. In a new form, the dragon retains its HP, ability to speak, proficiencies, and INT, WIS, and CHA scores, as well as this bonus action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
 
+</statblock>
 
 

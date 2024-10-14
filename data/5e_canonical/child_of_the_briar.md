@@ -33,6 +33,7 @@ In combat, the Child of the Briar can execute several actions:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Child of the Briar
 
 *Tiny* *Plant* *Neutral Evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 - **Spitdart Tongue (Recharge 4–6):** Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 - **Entangle:** While within 10 feet of at least one other child of the briar, this child can cast the entangle spell (spell save DC 13). Each friendly child of the briar within 30 feet of this child can use its reaction to join the casting. For each child beyond the first participating in the casting, the save DC increases by 1, to a maximum of DC 17, and the size increases by 5 feet, to a maximum of a 40-foot square. The entangled area must include at least one of the children involved in the casting. All participating children of the briar are immune to the spell’s effects.
+</statblock>
 
 

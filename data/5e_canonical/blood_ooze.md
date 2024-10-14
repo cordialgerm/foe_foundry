@@ -23,6 +23,7 @@ Finally, the ooze has a powerful reaction called Overflow. When hit by a melee a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Ooze
 
 *Large* *Ooze* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Overflow:** When the blood ooze is hit with a melee attack, it can drain blood from the attacker. The attacker must make a DC 15 Constitution saving throw, taking 11 (2d10) necrotic damage on a failed save, or half as much damage on a successful one. The ooze gains temporary hp equal to the necrotic damage taken.
 
 
+</statblock>
 
 

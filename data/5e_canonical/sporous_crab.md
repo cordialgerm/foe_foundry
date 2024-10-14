@@ -21,6 +21,7 @@ Its unique "Spore" action can be used every 6 turns. When activated, the crab sp
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sporous Crab
 
 *Small* *Beast* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Spore (Recharge 6):** The sporous crab sprays spores in a 15-foot cone. Each creature in the area must make a DC 12 Constitution saving throw. On a failure, a creature takes 7 (2d6) poison damage and becomes infected with the crab’s spores. On a success, a creature takes half the damage and isn’t infected with spores. After 1 hour, small bubbles and bumps appear across the skin of the infected creature. At the end of each long rest, the infected creature must make a DC 12 Constitution saving throw. On a success, the infected creature’s body fights off the spores and no longer has to make the saving throw. If a creature fails the saving throw every day for 7 days, young sporous crabs hatch from the creature’s skin, and the creature takes 9 (2d8) slashing damage. The spores can also be removed with a lesser restoration spell or similar magic.
 
 
+</statblock>
 
 

@@ -39,6 +39,7 @@ Overall, the Insect Swarm serves as a tactical creature with utility for disrupt
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Insect, Swarm of Insects
 
 *Medium swarm (of tiny beasts)*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 
 - **Bites.** Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm’s space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its HP or fewer.
 
+</statblock>
 
 

@@ -45,6 +45,7 @@ Lastly, the Divi Noble has a bonus action that is:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Divi Noble
 
 *Large* *Elemental*
@@ -83,5 +84,6 @@ Source: 5e_artisinal_monsters
 - **Stone Wall (1/Day):** A permanent stone wall magically rises from an earth or stone surface within 60 feet. The wall is 6 inches thick and can be up to 20 feet high and 30 feet long. If it appears in a creatures space, the creature can choose which side of the wall to move to. Each 10-foot-by-10-foot section of the wall is an object with AC 18 and 30 hit points.
 
 
+</statblock>
 
 

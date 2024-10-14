@@ -23,6 +23,7 @@ In terms of actions, the Cavefish Zombie can perform a simple Slam attack, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cavefish Zombie
 
 *Medium* *Undead* *neutral evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

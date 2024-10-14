@@ -23,6 +23,7 @@ Overall, the Kobold Empyrean is a powerful and inspiring force among kobolds, en
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold, Empyrean
 
 *Small* *Celestial* *neutral*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Draconic Ascension:** When a kobold it can see is reduced to 0 hp empyrean can reincarnate the kobold as a wyrmling dragon of a type befitting that kobold and its virtues. Empyrean can provide ascension to up to two kobolds each hr with this reaction.
 
 
+</statblock>
 
 

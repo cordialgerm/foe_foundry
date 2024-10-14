@@ -33,6 +33,7 @@ Overall, while the Quipper is not a formidable enemy on its own, its special abi
 
 Source: 5e_srd
 
+<statblock>
 ### Quipper
 
 *Tiny beast, unaligned*
@@ -61,7 +62,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.
 
-A **quipper** is a carnivorous fish with sharp teeth. Quippers can adapt to any aquatic environment, including cold subterranean lakes. They frequently gather in swarms; the statistics for a swarm of quippers appear later in this appendix.
+A **quipper** is a carnivorous fish with sharp teeth. Quippers can adapt to any aquatic environment, including cold subterranean lakes. They frequently gather in swarms; the statistics for a swarm of quippers appear later in this appendix.</statblock>
+
 
 
 
@@ -69,6 +71,7 @@ A **quipper** is a carnivorous fish with sharp teeth. Quippers can adapt to any 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quipper
 
 *Tiny* *Beast*
@@ -96,6 +99,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage. On a hit  the quipper can use a bonus action to make a second bite attack.
 
 
+</statblock>
 
 
 
@@ -104,6 +108,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quipper
 
 *Tiny beast*
@@ -133,5 +138,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite.** Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 2 (1d4) piercing damage.
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ For defensive strategies, the Goblin Captain can use its reaction ability, "Prot
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Captain
 
 *Small humanoid*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 
 - **Protect Me!** When a creature the goblin captain can see targets it with an attack, the captain can sidestep behind an ally within 5 feet of it, moving to an unoccupied space within 5 feet of the ally. The chosen ally becomes the target of the attack instead.
 
+</statblock>
 
 

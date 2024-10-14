@@ -29,6 +29,7 @@ Finally, for legendary actions, the Titanic Dragon Turtle can take three actions
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Titanic Dragon Turtle
 
 *Titanic* *Dragon*
@@ -81,5 +82,6 @@ Source: 5e_artisinal_monsters
 - **Emerald Radiance (1/Day):** Searing green light emanates from the dragon turtle. Each creature within 90 feet makes a DC 17 Dexterity saving throw, taking 70 (20d6) radiant damage on a failure or half damage on a success. A creature that fails the saving throw is blinded until the end of its next turn.
 - **Lightning Storm (1/Day:** The dragon turtle recharges and uses Lightning Storm.
 - **Tail (Costs 2 Actions):** The dragon turtle makes a tail attack.
+</statblock>
 
 

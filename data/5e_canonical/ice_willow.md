@@ -25,6 +25,7 @@ Overall, the Ice Willow is a tactical and resilient enemy that can control the b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Willow
 
 *Large* *Plant* *neutral*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Melting Icicles:** When the ice willow takes fire it can immediately use Icicle Drop if available.
 
 
+</statblock>
 
 

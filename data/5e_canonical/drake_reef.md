@@ -23,6 +23,7 @@ Additionally, the drake can employ two strategic bonus actions. Reef Stealth all
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drake, Reef
 
 *Huge* *Dragon* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Siege Follow-Through:** If it destroys an object or structure it can make a bite attack vs. a creature it can see within 5 ft. of that object or structure.
 
 
+</statblock>
 
 

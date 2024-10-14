@@ -23,6 +23,7 @@ Lastly, the creature can use Flaming Oil Spittle, a powerful attack that recharg
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jaanavar Jal
 
 *Huge* *Monstrosity* *unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Flaming Oil Spittle (Recharge 5-6):** The jaanavar jal expels a line of burning oil that is 40 feet long and 5 feet wide from glands beside its mouth. Each creature in that line must make a DC 16 Dexterity saving throw, taking 31 (9d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Otterfolk brings a unique set of skills and abilities to encounters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Otterfolk
 
 *Small* *Humanoid* *chaotic good*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Secrete Oil (Recharge 4-6):** The otterfolk secretes an oil that makes it slippery until the end of its next turn. It has advantage on ability checks and saving throws made to escape a grapple. If it is grappled when it takes this action, it can take a bonus action to escape the grapple.
 
 
+</statblock>
 
 

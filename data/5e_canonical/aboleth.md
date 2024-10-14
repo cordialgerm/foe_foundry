@@ -41,6 +41,7 @@ Overall, the Aboleth is a cunning and terrifying foe, capable of manipulating it
 
 Source: 5e_srd
 
+<statblock>
 ## Aboleth
 
 *Large aberration, lawful evil*
@@ -91,7 +92,8 @@ The aboleth can take 3 legendary actions, choosing from the options below. Only 
 
 **Tail Swipe**. The aboleth makes one tail attack.
 
-**Psychic Drain (Costs 2 Actions)**. One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.
+**Psychic Drain (Costs 2 Actions)**. One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.</statblock>
+
 
 
 
@@ -99,6 +101,7 @@ The aboleth can take 3 legendary actions, choosing from the options below. Only 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aboleth
 
 *Large* *Aberration*
@@ -138,6 +141,7 @@ Source: 5e_artisinal_monsters
 - **Telepathic Summon:** One creature within 90 feet makes a DC 16 Wisdom saving throw. On a failure, it must use its reaction, if available, to move up to its speed toward the aboleth by the most direct route that avoids hazards, not avoiding opportunity attacks. This is a magical charm effect.
 - **Baleful Charm (Costs 2 Actions):** The aboleth targets one creature within 60 feet that has contracted Sea Change. The target makes a DC 16 Wisdom saving throw. On a failure, it is magically charmed by the aboleth until the aboleth dies. The target can repeat this saving throw every 24 hours and when it takes damage from the aboleth or the aboleths allies. While charmed in this way, the target can communicate telepathically with the aboleth over any distance and it follows the aboleths orders.
 - **Soul Drain (Costs 2 Actions):** One creature charmed by the aboleth takes 22 (4d10) psychic damage, and the aboleth regains hit points equal to the damage dealt.
+</statblock>
 
 
 
@@ -146,6 +150,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aboleth
 
 *Large aberration*
@@ -192,5 +197,6 @@ The aboleth can take 3 legendary actions, choosing from the options below. Only 
 ### Regional Effects
 
 - **1d10** If the aboleth dies, these effects fade in  days.
+</statblock>
 
 

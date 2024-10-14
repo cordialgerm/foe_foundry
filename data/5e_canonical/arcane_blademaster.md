@@ -27,6 +27,7 @@ In summary, the Arcane Blademaster is a highly versatile and dangerous enemy, ex
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arcane Blademaster
 
 *Medium* *Humanoid*
@@ -103,5 +104,6 @@ Source: 5e_artisinal_monsters
 - **Misty Step (2nd-Level; V):** The blademaster teleports to an unoccupied space they can see within 30 feet. The blademaster can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 

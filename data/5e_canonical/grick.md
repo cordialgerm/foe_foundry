@@ -29,6 +29,7 @@ When it comes to actions, the Grick can perform a Multiattack, allowing it to ma
 
 Source: 5e_srd
 
+<statblock>
 ## Grick
 
 *Medium monstrosity, neutral*
@@ -59,7 +60,8 @@ Source: 5e_srd
 
 ***Tentacles***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 9 (2d6+2) slashing damage.
 
-***Beak***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
+***Beak***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.</statblock>
+
 
 
 
@@ -67,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grick
 
 *Medium* *Monstrosity*
@@ -100,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature grappled by the grick. Hit: 9 (2d6 + 2) piercing damage.
 
 
+</statblock>
 
 
 
@@ -108,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grick
 
 *Medium monstrosity*
@@ -139,5 +144,6 @@ Source: 5e_artisinal_monsters
 - **Beak.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage.
 - **Tentacles.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 12 (4d4 + 2) piercing damage.
 
+</statblock>
 
 

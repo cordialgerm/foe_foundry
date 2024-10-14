@@ -31,6 +31,7 @@ The Harpy can also use its "Luring Song" as a bonus action. This magical melody 
 
 Source: 5e_srd
 
+<statblock>
 ## Harpy
 
 *Medium monstrosity, chaotic evil*
@@ -63,7 +64,8 @@ Source: 5e_srd
 
 While charmed by the harpy, a target is incapacitated and ignores the songs of other harpies. If the charmed target is more than 5 feet away from the harpy, the target must move on its turn toward the harpy by the most direct route, trying to get within 5 feet. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the harpy, the target can repeat the saving throw. A charmed target can also repeat the saving throw at the end of each of its turns. If the saving throw is successful, the effect ends on it.
 
-A target that successfully saves is immune to this harpy's song for the next 24 hours.
+A target that successfully saves is immune to this harpy's song for the next 24 hours.</statblock>
+
 
 
 
@@ -71,6 +73,7 @@ A target that successfully saves is immune to this harpy's song for the next 24 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Harpy
 
 *Medium* *Monstrosity*
@@ -100,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Luring Song:** The harpy sings a magical song. Each humanoid and giant within 300 feet that can hear it makes a DC 12 Wisdom saving throw. On a failure, a creature becomes charmed until the harpy fails to use its bonus action to continue the song. While charmed by the harpy, a creature is incapacitated and ignores other harpy songs. On each of its turns, the creature moves towards the harpy by the most direct route, not avoiding opportunity attacks or hazards. The creature repeats its saving throw whenever it is damaged and before it enters damaging terrain such as lava. If a saving throw is successful or the effect ends on it, it is immune to any harpys song for the next 24 hours.
 
 
+</statblock>
 
 
 
@@ -108,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Harpy
 
 *Medium monstrosity*
@@ -141,5 +146,6 @@ Source: 5e_artisinal_monsters
 
 - **Luring Song.** The harpy sings a magical melody. Every Humanoid and Giant within 300 feet of the harpy that can hear the song must succeed on a DC 11 WIS save or be charmed until the song ends. The harpy must use a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated.
 
+</statblock>
 
 

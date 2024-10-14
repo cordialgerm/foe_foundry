@@ -19,6 +19,7 @@ In combat, the Barometz can make two attacks in one turn through its **Multiatta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Barometz
 
 *Large* *Plant* *chaotic neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

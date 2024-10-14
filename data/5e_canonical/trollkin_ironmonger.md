@@ -39,6 +39,7 @@ Overall, the Trollkin Ironmonger is a resilient and deadly combatant that can di
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trollkin Ironmonger
 
 *Medium* *Humanoid* *neutral*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Impregnable Counter:** When a creature within 5 ft. of the ironmonger misses a melee attack vs. it the attacker must make DC 15 Str save or be knocked prone.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ In terms of its actions during combat, the Necrophage Ghast can make a melee wea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Necrophage Ghast
 
 *Medium* *Undead* *chaotic evil*
@@ -58,5 +59,6 @@ Cantrips (at will): friends, mage hand, poison spray, prestidigitation
 - **Claws:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

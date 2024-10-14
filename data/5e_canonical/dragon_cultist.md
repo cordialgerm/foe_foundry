@@ -30,6 +30,7 @@ In summary, the Dragon Cultist is a versatile and manipulative foe with both off
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon Cultist
 
 *Medium* *Humanoid*
@@ -75,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Hold Person (2nd-Level; V, S, M, Concentration):** One humanoid the cult fanatic can see within 60 feet makes a DC 12 Wisdom saving throw. On a failure  the target is paralyzed for 1 minute. The target repeats the saving throw at the end of each of its turns  ending the effect on a success.
 
 
+</statblock>
 
 

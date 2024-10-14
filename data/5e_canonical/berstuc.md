@@ -53,6 +53,7 @@ Overall, the Berstuc is a stealthy and powerful foe that thrives in woodland env
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Berstuc
 
 *Large* *Fiend* *Chaotic Evil*
@@ -88,5 +89,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The berstuc makes three Slam attacks. If two Slam attacks hit a Medium or smaller creature, the berstuc can use Enclose on it.
 - **Slam:** Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage, and the target is grappled (escape DC 17) if it is a Large or smaller creature and the berstuc doesn’t have two other creatures grappled.
 - **Enclose:** The berstuc encloses a Medium or smaller creature grappled by it in a mossy growth on the berstuc’s body, and the grapple ends. While enclosed in the berstuc’s growth, the target is blinded and restrained, it has total cover from attacks and other effects outside the berstuc, and it takes 21 (6d6) poison damage at the start of each of the berstuc’s turns. The berstuc can have only one creature enclosed at a time.
+</statblock>
 
 

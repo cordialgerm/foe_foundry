@@ -11,6 +11,7 @@
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Sea Horse
 
 *Large beast, unaligned*
@@ -39,5 +40,6 @@ Source: 5e_srd
 
 ***Ram***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) bludgeoning damage.
 
-Like their smaller kin, **giant sea horses** are shy, colorful fish with elongated bodies and curled tails. Aquatic elves train them as mounts.
+Like their smaller kin, **giant sea horses** are shy, colorful fish with elongated bodies and curled tails. Aquatic elves train them as mounts.</statblock>
+
 

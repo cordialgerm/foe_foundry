@@ -23,6 +23,7 @@ Overall, the Bearfolk is an effective melee combatant that excels in sustained b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bearfolk
 
 *Medium* *Humanoid* *Chaotic Good*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Frenzy (Recharges after a Long or Short Rest):** The bearfolk triggers a berserk frenzy that lasts 1 minute. While in frenzy, it has resistance to bludgeoning, piercing, and slashing damage and has advantage on attack rolls. Attack rolls made against a frenzied bearfolk have advantage.
+</statblock>
 
 

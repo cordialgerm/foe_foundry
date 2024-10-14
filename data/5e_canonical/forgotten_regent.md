@@ -29,6 +29,7 @@ In terms of legendary actions, it can empower its undead allies through 'Army of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forgotten Regent
 
 *Medium* *Undead* *lawful neutral*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Army of the Damned:** Raises an arm into the air sending out a chill wind that empowers Undead allies. Each friendly Undead within 30' of it gains 10 temp hp.
 - **Teleport (2):** Magically teleports along with any items worn or carried up to 120' to an unoccupied spot it sees.
 - **Frozen Rune Maul (2):** Makes one Frozen Rune Maul attack.
+</statblock>
 
 

@@ -19,6 +19,7 @@ In terms of combat actions, the Harvest Horse's primary attack is its "Slam," wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Harvest Horse
 
 *Large* *Construct* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Harvester’s Stampede (Recharge 5–6):** Moves up to its speed in a straight line and can move through the space of any Large or smaller creature. The first time the harvest horse enters a creature’s space during this move that creature must make a DC 12 Dex save. On a failure it takes 7 (2d6) slashing damage and is knocked prone. On a success it takes half damage and isn’t knocked prone. When the harvest horse moves in this way it doesn’t provoke opportunity attacks.
 
 
+</statblock>
 
 

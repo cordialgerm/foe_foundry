@@ -23,6 +23,7 @@ This creature's combination of strong melee attacks, unique mobility, and an abi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Earth Elemental
 
 *Large* *Elemental*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +7 to hit, range 30/90 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

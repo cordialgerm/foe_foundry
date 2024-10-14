@@ -31,6 +31,7 @@ In terms of actions, the Vulture can make a melee weapon attack with its beak. T
 
 Source: 5e_srd
 
+<statblock>
 ### Vulture
 
 *Medium beast, unaligned*
@@ -59,7 +60,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Beak***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) piercing damage.
+***Beak***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) piercing damage.</statblock>
+
 
 
 
@@ -67,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vulture
 
 *Medium* *Beast*
@@ -98,6 +101,7 @@ Source: 5e_artisinal_monsters
 - **Retreat:** When the vulture would be hit by a melee attack, the vulture can move 5 feet away from the attacker. If this moves the vulture out of the attackers reach, the attacker has disadvantage on its attack.
 
 
+</statblock>
 
 
 
@@ -106,6 +110,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vulture
 
 *Medium beast*
@@ -139,5 +144,6 @@ Source: 5e_artisinal_monsters
 
 - **Defensive Bile.** When a creature the vulture can see hits it with a melee attack while within 5 feet of it, the vulture can spit partially digested carrion at the creature. The attacker must succeed on a DC 11 CON save or be incapacitated until the end of its next turn.
 
+</statblock>
 
 

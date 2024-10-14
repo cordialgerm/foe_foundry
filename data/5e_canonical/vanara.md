@@ -23,6 +23,7 @@ In summary, the Vanara is an agile and clever combatant that excels in mobility 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vanara
 
 *Medium* *Humanoid* *neutral good*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Howl (Recharge 5-6):** The vanara releases a sonorous howl in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw. On a failure, a creature takes 18 (4d8) thunder damage and is deafened for 1 minute. On a success, the creature takes half the damage and isn't deafened.
 
 
+</statblock>
 
 

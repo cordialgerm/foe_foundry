@@ -37,6 +37,7 @@ Overall, the Giant Elk is a notable creature that provides both a challenge and 
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Elk
 
 *Huge beast, unaligned*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one prone creature. *Hit:* 22 (4d8+4) bludgeoning damage.
 
-The majestic **giant elk** is rare to the point that its appearance is often taken as a foreshadowing of an important event, such as the birth of a king. Legends tell of gods that take the form of giant elk when visiting the Material Plane. Many cultures therefore believe that to hunt these creatures is to invite divine wrath.
+The majestic **giant elk** is rare to the point that its appearance is often taken as a foreshadowing of an important event, such as the birth of a king. Legends tell of gods that take the form of giant elk when visiting the Material Plane. Many cultures therefore believe that to hunt these creatures is to invite divine wrath.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ The majestic **giant elk** is rare to the point that its appearance is often tak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elk, Giant
 
 *Huge beast*
@@ -108,6 +111,7 @@ Source: 5e_artisinal_monsters
 
 - **Bolstering Bugle (27 HP or Higher).** The elk bugles its might at its opponents, bolstering its confidence. It has advantage on the next attack roll it makes before the start of its next turn.
 
+</statblock>
 
 
 
@@ -116,6 +120,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Elk
 
 *Huge* *Beast*
@@ -143,5 +148,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +6 to hit, reach 5 ft., one prone creature. Hit: 9 (2d4+4) bludgeoning damage.
 
 
+</statblock>
 
 

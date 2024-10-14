@@ -19,6 +19,7 @@ Overall, the Two-Headed Eagle combines aerial agility, strong physical attacks, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Two-Headed Eagle
 
 *Huge* *Monstrosity* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing damage and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the two-headed eagle can't use its talons on another target.
 
 
+</statblock>
 
 

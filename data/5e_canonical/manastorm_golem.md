@@ -19,6 +19,7 @@ In combat, the Manastorm Golem can execute a Multiattack, allowing it to make tw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Manastorm Golem
 
 *Medium* *Construct* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Force Bolt:** Ranged Spell Attack: +6 to hit, range 120/480 ft., one target. Hit: 25 (4d10 + 3) force damage.
 
 
+</statblock>
 
 

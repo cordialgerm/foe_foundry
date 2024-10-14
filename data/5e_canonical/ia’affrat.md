@@ -27,6 +27,7 @@ In addition to his abilities, Ia’Affrat can use legendary actions during comba
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ia’Affrat
 
 *Large* *Swarm* *Fiend* *Lawful Evil*
@@ -81,5 +82,6 @@ Ia’Affrat can take 3 legendary actions, choosing from the options below. Only 
 - **Teleport:** Ia’Affrat teleports, along with any equipment he is wearing or carrying, up to 120 feet to an unoccupied space he can see.
 - **Vermin Breath (Costs 2 Actions; Humanoid Form Only):** Ia’Affrat exhales 1d4 swarms of insects in spaces he can see within 30 feet. The swarms take their turns immediately after Ia’Affrat, and they are allies of Ia’Affrat, obeying his telepathic commands. They remain for 1 minute, until Ia’Affrat dies, or until Ia’Affrat dismisses them as a bonus action. Ia’Affrat can have no more than five swarms of insects under his control at a time.
 - **Consume Host (Costs 3 Actions; Shapeless Form Only):** While inhabiting a Humanoid, Ia’Affrat consumes the host from the inside. The host takes 18 (4d8) necrotic damage, and Ia’Affrat regains hp equal to that amount.
+</statblock>
 
 

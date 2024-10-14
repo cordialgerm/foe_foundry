@@ -28,6 +28,7 @@ As a bonus action, with the ability Reproduce, the Crimson Jelly can split a por
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crimson Jelly
 
 *Tiny ooze*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 
 - **Reproduce (Requires Temporary HP).** While the crimson jelly has 1 or more temporary HP, it can split part of itself off into a new crimson jelly with HP equal to the original crimson jelly’s temporary HP. The original crimson jelly then loses any temporary HP it has. The new crimson jelly otherwise has all the same statistics as its parent, except the new jelly can’t gain temporary HP from Feeding Paddles attacks until it finishes a long rest.
 
+</statblock>
 
 

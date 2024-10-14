@@ -27,6 +27,7 @@ In combat, the Wizard Kobold can attack with a dagger, utilizing a +5 to hit for
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wizard Kobold
 
 *Small* *Humanoid* *lawful neutral*
@@ -64,5 +65,6 @@ Cantrips (at will): fire bolt, minor illusion, poison spray, prestidigitation
 - **Breath of the Visage:** Ranged Spell Attack: +6 to hit, range 120 ft., one target. Hit: 7 (2d6) damage of the type dealt by the chosen dragon's breath weapon.
 
 
+</statblock>
 
 

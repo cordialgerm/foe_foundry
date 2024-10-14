@@ -21,6 +21,7 @@ Another powerful ability is the Stunning Scales. This attack affects all creatur
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scitalis
 
 *Large* *Monstrosity* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Stunning Scales:** Each creature of the scitalis' choice that is within 60 feet of the scitalis and can see it must succeed on a DC 14 Wisdom saving throw or be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the scitalis' Stunning Scales for the next 24 hours.
 
 
+</statblock>
 
 

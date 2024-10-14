@@ -37,6 +37,7 @@ Overall, the Yali is a powerful construct that excels in physical combat and mob
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yali
 
 *Medium* *Construct* *unaligned*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Trumpeting Blast (Recharge 5–6):** Unleashes a warbling sound in a 15 ft. cone. Each creature in area: 10 (4d4) thunder and is deafened for 1 min (DC 12 Con half damage and not deafened). A deafened creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

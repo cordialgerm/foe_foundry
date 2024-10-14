@@ -29,6 +29,7 @@ For reactions, Malphas can utilize Shadow Call; when hit by a ranged attack, it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Malphas
 
 *Medium* *Fey* *Neutral Evil*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Shadow Call:** When the malphas is hit by a ranged attack, it can make one Shadow Bolt attack against the attacker. The malphas doesn’t have disadvantage on this attack from being within 5 feet of a hostile creature, though it may still have disadvantage from other sources.
+</statblock>
 
 

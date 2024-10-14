@@ -23,6 +23,7 @@ As a bonus action, the Faux-Garou can Change Shape, transforming into a Large or
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Faux-Garou
 
 *Medium* *Construct* *unaligned*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Transforms into Large or smaller Beast matching type of lycanthrope it resembles (wolf if it resembles a werewolf etc.) or back into its true form. Its stats other than size and speed are same in each form. While transformed retains constructed appearance and claws at end of its forelimbs. Items worn or carried not transformed. Reverts to true form if it dies.
 
 
+</statblock>
 
 

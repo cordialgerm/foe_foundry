@@ -21,6 +21,7 @@ In combat, the Gbahali can utilize the Multiattack action, allowing it to strike
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gbahali
 
 *Huge* *Beast* *Unaligned*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The gbahali makes one Bite attack and two Claw attacks.
 - **Bite:** Melee Weapon Attack:+7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the gbahali can’t Bite another target.
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
+</statblock>
 
 

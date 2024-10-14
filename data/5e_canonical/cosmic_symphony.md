@@ -27,6 +27,7 @@ In addition to its standard actions, the Cosmic Symphony has several legendary a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cosmic Symphony
 
 *Large* *Celestial* *unaligned*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Fly:** Flies up to half its flying speed with o provoking opportunity attacks.
 - **Major Chord (2):** The symphony regains 18 (4d8) hp.
 - **Minor Chord (2):** Each creature within 10 ft. of the symphony must make DC 18 Con save or take 9 (2d8) thunder.
+</statblock>
 
 

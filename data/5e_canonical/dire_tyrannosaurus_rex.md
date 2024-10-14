@@ -25,6 +25,7 @@ In summary, the Dire Tyrannosaurus Rex is an imposing force in any encounter, ca
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dire Tyrannosaurus Rex
 
 *Huge* *Beast*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.
 
 
+</statblock>
 
 

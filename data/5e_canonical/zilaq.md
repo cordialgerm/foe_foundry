@@ -25,6 +25,7 @@ Overall, Zilaq is a strategically sound opponent, leveraging its mobility, intel
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zilaq
 
 *Tiny* *Dragon* *neutral*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Phantasmal Oratory (1/Day):** Describes a creature so vividly it takes on a semblance of reality. Zilaq creates an illusory creature that resembles a Beast Monstrosity or Plant with CR 1 or less for 1 hr. The illusory creature moves and acts according to zilaq’s mental direction and takes its turn immediately after zilaq; uses statistics of creature it resembles except it can’t use traits actions or spells that force target to save.
 
 
+</statblock>
 
 

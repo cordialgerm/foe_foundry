@@ -35,6 +35,7 @@ Overall, the Constrictor Snake excels at ambushing targets and controlling battl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snake, Constrictor
 
 *Large beast*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 
 - **Crush.** One creature grappled by the snake must succeed on a DC 12 STR or take 4 (1d8) bludgeoning damage and begin suffocating. The creature continues suffocating until the grapple ends.
 
+</statblock>
 
 

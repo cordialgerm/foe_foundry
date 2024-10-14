@@ -23,6 +23,7 @@ Through its legendary actions, the Pact Vampire can maneuver without provoking o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pact Vampire
 
 *Medium* *Undead* *Any Evil Alignment*
@@ -69,5 +70,6 @@ The pact vampire can take 3 legendary actions, choosing from the options below. 
 - **Move:** The pact vampire moves up to its speed without provoking opportunity attacks.
 - **Call Blood (Costs 2 Actions):** The pact vampire uses Call Blood.
 - **Spread Poison (Costs 2 Actions):** The pact vampire’s blood briefly turns into a mist around it. Each creature within 15 feet of the vampire must succeed on a DC 18 Constitution saving throw or take 14 (4d6) poison damage and be poisoned until the end of its next turn.
+</statblock>
 
 

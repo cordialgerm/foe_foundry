@@ -19,6 +19,7 @@ For its actions, the Forest Gnome Scout wields a shortsword, making a melee weap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forest Gnome Scout
 
 *Medium* *Humanoid*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
 
 
+</statblock>
 
 

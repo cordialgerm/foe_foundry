@@ -21,6 +21,7 @@ In terms of actions, the Infernal Centaur can make two attacks with its daggers 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Infernal Centaur
 
 *Medium* *Fiend* *lawful evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Fiery Breath (Recharge 5-6):** The infernal centaur exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 28 (8d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -37,6 +37,7 @@ With its blend of physical prowess, magical versatility, and tactical abilities,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chelicerae
 
 *Large* *Aberration* *Neutral Evil*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 
 - **Nimble Moves:** The chelicerae takes the Dash or Disengage action.
 - **Siphon Magic:** The chelicerae siphons magic from a spellcaster it is grappling. The target must succeed on a DC 15 Intelligence saving throw or lose one spell slot of the highest level it can cast. The chelicerae then regains an expended use of its Spellcasting.
+</statblock>
 
 

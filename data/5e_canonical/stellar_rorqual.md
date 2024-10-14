@@ -19,6 +19,7 @@ Two special abilities further enhance the Stellar Rorqual's combat prowess. The 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stellar Rorqual
 
 *Gargantuan* *Aberration* *neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Planar Dive:** The stellar rorqual can transport itself and any willing creature inside its mouth to the Astral, Ethereal, or Material Planes or to the Void. This works like the plane shift spell, except the stellar rorqual can transport any number of willing creatures as long as they are inside its mouth. The stellar rorqual can’t use this action to banish an unwilling creature.
 
 
+</statblock>
 
 

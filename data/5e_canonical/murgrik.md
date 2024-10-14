@@ -23,6 +23,7 @@ Overall, Murgrik represents a dangerous foe with both potent physical attacks an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Murgrik
 
 *Large* *Aberration* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Unsettling Ululations (Recharge 6):** The stalk on the murgrik’s head unleashes a dispiriting wail. Each creature within 30 feet of the murgrik that can hear it must make a DC 14 Wisdom saving throw. On a failure, a creature takes 21 (6d6) psychic damage and is frightened for 1 minute. On a success, a creature takes half the damage and isn’t frightened. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

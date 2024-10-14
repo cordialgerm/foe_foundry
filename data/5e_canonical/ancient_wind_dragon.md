@@ -25,6 +25,7 @@ Finally, the dragon can take legendary actions, which include Detect for a Wisdo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Wind Dragon
 
 *Gargantuan* *Dragon* *Chaotic Neutral*
@@ -69,5 +70,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a Tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+</statblock>
 
 

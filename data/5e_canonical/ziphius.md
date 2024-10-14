@@ -27,6 +27,7 @@ Overall, the Ziphius is a fearsome adversary that thrives in its aquatic domain,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ziphius
 
 *Gargantuan* *Aberration* *neutral*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Dorsal Fin:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 20 (3d10 + 4) slashing damage.
 
 
+</statblock>
 
 

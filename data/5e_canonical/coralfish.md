@@ -32,6 +32,7 @@ Overall, the Coralfish’s combination of aquatic abilities, petrifying bite, an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Coralfish
 
 *Small* *Monstrosity*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Frenzy (1/Day):** When attacked by a creature it can see within 20 feet, the cockatrice moves up to half its Speed and makes a bite attack against that creature.
 
 
+</statblock>
 
 

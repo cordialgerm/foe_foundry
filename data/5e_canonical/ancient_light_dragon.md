@@ -23,6 +23,7 @@ Moreover, the Ancient Light Dragon has an array of legendary actions to augment 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Light Dragon
 
 *Gargantuan* *Dragon* *neutral good*
@@ -68,5 +69,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+</statblock>
 
 

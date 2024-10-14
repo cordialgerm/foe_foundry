@@ -29,6 +29,7 @@ One of the Spark's most formidable abilities is Inhabit. It targets a humanoid i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spark
 
 *Tiny* *Elemental* *Chaotic Neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The spark makes three Electric Touch attacks.
 - **Electric Touch:** Melee Spell Attack: +6 to hit, reach 5 ft., one target. Hit: 16 (3d8 + 3) lightning damage.
 - **Inhabit:** One Humanoid that the spark can see within 5 feet of it must succeed on a DC 14 Charisma saving throw or be inhabited by the spark. The spark then disappears, fusing with the target’s nervous system, and the target is incapacitated and loses control of its body. The spark now controls the body but doesn’t deprive the target of awareness. The spark can’t be targeted by any attack, spell, or other effect, and it retains its alignment, Intelligence, Wisdom, Charisma, immunity to being paralyzed, petrified, or unconscious, and its Electric Touch attack. It otherwise uses the inhabited target’s statistics, but doesn’t gain access to the target’s knowledge, class features, or proficiencies.
+</statblock>
 
 

@@ -25,6 +25,7 @@ The second action is Absorb, which can only be used against a medium or smaller 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dust Grazer
 
 *Large* *Aberration* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Absorb:** Makes one Tendril attack vs. a Med or smaller creature it is grappling. If attack hits target is  also absorbed into grazer’s body and grapple ends. While absorbed creature is blinded and restrained has total cover vs. attacks and effects outside grazer and takes 7 (2d6) acid at start of each of grazer’s turns. Grazer can have only one creature absorbed at a time. If grazer takes 10+ damage on a single turn from absorbed creature grazer must make DC 15 Con save at end of that turn or expel the creature which falls prone in a space within 5 ft. of grazer. If grazer is flying expelled creature takes normal fall damage. If grazer dies absorbed creature no longer restrained but has disadvantage on save vs. grazer Death Spores.
 
 
+</statblock>
 
 

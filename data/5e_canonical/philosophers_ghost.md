@@ -25,6 +25,7 @@ Overall, the Philosopher's Ghost represents a unique blend of danger and vulnera
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Philosopher's Ghost
 
 *Medium* *Ooze* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Burning Touch:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) fire damage. If the target is a creature, it suffers a burning lesion, taking 2 (1d4) fire damage at the start of each of its turns. Any creature can take an action to soothe the burning lesion with a successful DC 12 Wisdom (Medicine) check. The lesion is also soothed if the target receives magical healing.
 
 
+</statblock>
 
 

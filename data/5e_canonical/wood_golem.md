@@ -23,6 +23,7 @@ Overall, the Wood Golem embodies the characteristics of a well-built defense mec
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wood Golem
 
 *Medium* *Construct* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

@@ -27,6 +27,7 @@ The Ashen Custodian's spellcasting capabilities are driven by its innate spellca
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ashen Custodian
 
 *Medium* *Fey* *neutral*
@@ -65,5 +66,6 @@ At will: druidcraft, produce flame
 - **Cleansing Strike:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) bludgeoning damage plus 9 (2d8) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.
 
 
+</statblock>
 
 

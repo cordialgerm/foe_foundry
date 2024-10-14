@@ -25,6 +25,7 @@ As a bonus action, the Thunderstomper can enter a Frenzy, which lasts for one mi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bearfolk Thunderstomper
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Taunt (2/Day):** Jests at one creature it can see within 30' of it. If target can hear bearfolk target: DC 15 Cha save or disadvantage on ability checks attacks and saves until start of bearfolk’s next turn.
 
 
+</statblock>
 
 

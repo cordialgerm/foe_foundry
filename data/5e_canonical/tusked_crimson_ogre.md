@@ -25,6 +25,7 @@ In summary, the Tusked Crimson Ogre is a brutish and chaotic foe, thriving on ph
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tusked Crimson Ogre
 
 *Large* *Giant* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Berserker's Blood (Recharge 5-6):** If the tusked crimson ogre doesn't have all of its hp, it flexes and roars, spraying blood from its wounds. Each creature within 15 feet of the ogre must make a DC 14 Constitution saving throw. On a failure, a creature takes 21 (6d6) acid damage and goes berserk. On a success, a creature takes half the damage and doesn't go berserk. On each of its turns, a berserk creature must attack the nearest creature it can see, eschewing ranged or magical attacks in favor of melee attacks. If no creature is near enough to move to and attack, the berserk creature attacks an object, with preference for an object smaller than itself. Once a creature goes berserk, it continues to do so until it is unconscious, regains all of its hp, or is cured through lesser restoration or similar magic.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ Overall, the Moonless Hunter is a cunning and dangerous foe that uses psychologi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moonless Hunter
 
 *Medium* *Fey* *neutral evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Whispered Terrors (Recharge 5–6):** Bombards the minds of up to 3 creatures it can see within 60' of it with nightmares: 18 (4d8) psychic and frightened until end of its next turn (DC 14 Wis half not frightened). If creature fails by 5+ also suffers short-term madness.
 
 
+</statblock>
 
 

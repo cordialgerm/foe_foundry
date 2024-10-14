@@ -21,6 +21,7 @@ Agnibarra's actions include "Burning Claw" and "Spit Fire." The "Burning Claw" m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Agnibarra
 
 *Small* *Monstrosity* *chaotic neutral*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Spit Fire:** Ranged Weapon Attack: +4 to hit, range 15/30 ft., one target. Hit: 9 (2d6 + 2) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.
 
 
+</statblock>
 
 

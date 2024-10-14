@@ -25,6 +25,7 @@ Overall, the Duskthorn Dryad is an adept manipulator of combat and nature, creat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Duskthorn Dryad
 
 *Medium* *Fey* *Chaotic Neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Thorn:** Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 10 (2d4 + 5) piercing damage.
 - **Children of the Forest (1/Day):** The dryad magically calls 1d4 boars, constrictor snakes, or wolves, or it calls 1 child of the briar. The called creatures arrive in 1d4 rounds, acting as allies of the dryad and obeying her spoken commands. The creatures remain for 1 hour, until the dryad dies, or until the dryad dismisses them as a bonus action.
 - **Spellcasting:** The dryad casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 17):<br>At will: druidcraft<br>3/day each: charm person, entangle, invisibility<br>1/day each: barkskin, spike growth, suggestion
+</statblock>
 
 

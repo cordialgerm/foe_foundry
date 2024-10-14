@@ -25,6 +25,7 @@ One of its most interesting abilities is the Breath Weapon, which can be used ev
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drake, Bakery
 
 *Small* *Dragon* *lawful neutral*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapon (Recharge 5–6):** Uses one of: Purifying Breath Exhales the aroma of a warm hearty meal in a 15 ft. cone. All nonmagical food and drink in the area is purified and rendered free of poison and disease and its flavor is enhanced in quality for 1 hr.Yeast Slurry Expels sticky yeast in a 15 ft. cone. Each creature in the area: 14 (4d6) bludgeoning damage and is restrained for 1 min (DC 14 Dex half damage and its speed is reduced by 10 ft. until the end of its next turn). A creature including restrained target can use its action to free a restrained target by succeeding on a DC 13 Str check.
 
 
+</statblock>
 
 

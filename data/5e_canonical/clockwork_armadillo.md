@@ -23,6 +23,7 @@ The "Tuck In" action allows the Clockwork Armadillo to retract into its shell, f
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Armadillo
 
 *Small* *Construct* *unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Tuck In:** Tucks its entire body into its shell forming an armored ball. While an armored ball it moves by rolling has resistance to B/P/S damage is immune to the prone condition and it can’t make Scissor Claws attacks. As part of this action the armadillo can expand its shell outward to contain one object of its size or smaller that isn’t being worn or carried and is within 5 ft. of the armadillo. The armadillo can uncurl its body and release any contained item as a bonus action.
 
 
+</statblock>
 
 

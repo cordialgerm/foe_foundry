@@ -23,6 +23,7 @@ The Enchanter also possesses the Beguiling Parry reaction, which it can use when
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Enchanter
 
 *Medium* *Humanoid* *any alignment*
@@ -67,5 +68,6 @@ Enchantment spell of 1st level or higher
 - **Beguiling Parry (Recharge 4-6):** When a creature within 30 feet that the enchanter can see targets it with an attack, the enchanter can stop the attacker with a glance. The attacker must succeed on a DC 15 Charisma saving throw or immediately stop the attack. The attacker can't attack the enchanter again until the start of its next turn.
 
 
+</statblock>
 
 

@@ -19,6 +19,7 @@ In terms of actions during combat, the Chamrosh can perform a melee attack with 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chamrosh
 
 *Medium* *Celestial* *neutral good*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Healing Lick (2/Day):** The chamrosh licks another creature. The target magically regains 10 (2d8 + 1) hp and is cured of the charmed, frightened, and poisoned conditions.
 
 
+</statblock>
 
 

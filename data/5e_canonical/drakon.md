@@ -21,6 +21,7 @@ Overall, the Drakon is a powerful foe with a blend of swift attacks and debilita
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drakon
 
 *Large* *Dragon* *Unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 10 (4d4) acid damage.
 - **Tail:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage.
 - **Acid Breath (Recharge 5–6):** The drakon exhales acidic vapors in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 28 (8d6) acid damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

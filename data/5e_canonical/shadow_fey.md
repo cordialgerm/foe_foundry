@@ -25,6 +25,7 @@ Additionally, the Shadow Fey possesses a bonus action called Shadow Traveler, wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Fey
 
 *Medium* *Humanoid* *Lawful Evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Traveler (2/Day):** While in shadows, dim light, or darkness, the shadow fey disappears into the darkness and reappears in an unoccupied space it can see within 30 feet. A tendril of inky smoke appears at the origin and destination when it uses this bonus action.
+</statblock>
 
 

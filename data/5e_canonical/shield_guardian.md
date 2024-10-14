@@ -33,6 +33,7 @@ As a **Bonus Action**, the Shield Guardian can utilize **Protective Step** to te
 
 Source: 5e_srd
 
+<statblock>
 ## Shield Guardian
 
 *Large construct, unaligned*
@@ -71,7 +72,8 @@ Source: 5e_srd
 
 ###### Reactions
 
-***Shield***. When a creature makes an attack against the wearer of the guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if the guardian is within 5 feet of the wearer.
+***Shield***. When a creature makes an attack against the wearer of the guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if the guardian is within 5 feet of the wearer.</statblock>
+
 
 
 
@@ -79,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shield Guardian
 
 *Large* *Construct*
@@ -119,6 +122,7 @@ Source: 5e_artisinal_monsters
 - **Shield:** If the guardian is within 5 feet of its master when the master is attacked, the guardian grants a +3 bonus to its masters AC.
 
 
+</statblock>
 
 
 
@@ -127,6 +131,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shield Guardian
 
 *Large construct*
@@ -168,5 +173,6 @@ Source: 5e_artisinal_monsters
 
 - **Shield.** When a creature the guardian can see makes an attack against the amulet’s wearer, the guardian grants a +2 bonus to the wearer’s AC if the guardian is within 5 feet of the wearer.
 
+</statblock>
 
 

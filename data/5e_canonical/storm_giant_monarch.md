@@ -23,6 +23,7 @@ When bloodied, the Storm Giant Monarch can use the Sword Sweep special action to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Storm Giant Monarch
 
 *Huge* *Giant*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Stomp:** Melee Weapon Attack: +14 to hit, reach 5 ft., one Medium or smaller prone target. Hit: 19 (3d6 + 9) bludgeoning damage.
 
 
+</statblock>
 
 

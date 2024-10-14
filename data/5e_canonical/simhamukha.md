@@ -21,6 +21,7 @@ In terms of actions during combat, the Simhamukha can utilize a Multiattack opti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Simhamukha
 
 *Huge* *Celestial* *chaotic good*
@@ -61,5 +62,6 @@ At will: aid, guidance, spiritual weapon
 - **Weird (Recharge 6):** The simhamukha draws upon the deepest fears and regrets of the creatures around it, creating illusions visible only to them. Each creature within 40 feet of the simhamukha, must succeed on a DC 15 Charisma saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, taking 11 (2d10) psychic damage on a failure or ending the effect on itself on a success.
 
 
+</statblock>
 
 

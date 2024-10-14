@@ -28,6 +28,7 @@ The Spawn Elemental action enables the Locus to magically create a number of all
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elemental Locus
 
 *Gargantuan* *Elemental* *Neutral*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The elemental locus makes three Slam attacks. It can replace one attack with a use of Spawn Elemental.
 - **Slam:** Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 31 (5d8 + 9) bludgeoning damage. If the target is a creature, it must succeed on a DC 18 Strength saving throw or be knocked prone.
 - **Spawn Elemental:** The elemental locus magically creates up to 2d6 mephits or 1 Elemental with a challenge rating of 5 or lower. The Elementals arrive at the start of the locus’s next turn, acting as allies of the locus and obeying its spoken commands. The locus can create only Elementals that share an element with a terrain feature comprising at least 100,000 square feet of the locus’s bound land. For example, a desert-bound locus can’t create a water-based Elemental, unless its bound desert contains an oasis or other source of water around the size of a small pond.
+</statblock>
 
 

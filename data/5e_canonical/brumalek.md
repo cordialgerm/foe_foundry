@@ -25,6 +25,7 @@ As a bonus action, the Brumalek can take the "Skittish" action, which allows it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brumalek
 
 *Small* *Beast* *unaligned*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Skittish:** Can take the Dash or Disengage action.
 
 
+</statblock>
 
 

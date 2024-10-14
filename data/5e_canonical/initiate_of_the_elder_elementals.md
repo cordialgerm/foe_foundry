@@ -21,6 +21,7 @@ In terms of actions, the Initiate is equipped with a dagger, which it can use fo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Initiate of the Elder Elementals
 
 *Small* *Humanoid* *any evil alignment*
@@ -58,5 +59,6 @@ Cantrips (at will): pummelstone, light, mage hand, ray of frost
 - **Gift of the Elder Elementals:** Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 7 (2d6) acid, cold, fire, or lightning damage, and the target has disadvantage on its next saving throw against any of the initiate’s spells that deal the chosen type of damage.
 
 
+</statblock>
 
 

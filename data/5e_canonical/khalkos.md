@@ -46,6 +46,7 @@ Overall, the Khalkos presents a unique blend of psionic abilities and physical a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Khalkos
 
 *Medium* *Aberration*
@@ -88,5 +89,6 @@ Source: 5e_artisinal_monsters
 - **Telekinetic Shield:** When the khalkos is hit by an attack made by a creature that it can see or sense with its Detect Alignment trait, it gains a +4 bonus to AC against the triggering attack.
 
 
+</statblock>
 
 

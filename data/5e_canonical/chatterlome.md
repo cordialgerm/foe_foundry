@@ -23,6 +23,7 @@ Overall, the Chatterlome is a clever and elusive adversary that relies on stealt
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chatterlome
 
 *Medium* *Fiend* *lawful evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Box Teleport:** The chatterlome magically teleports up to 120 feet into a box, chest, wardrobe, or other wooden container with a lid or door. The chatterlome can hide inside the container as a bonus action after teleporting. If the chatterlome uses this action while inside a container, it can teleport into another container within range or it can teleport back to the Hells. If it teleports to the Hells, it can’t return to the Material Plane until it is summoned.
 
 
+</statblock>
 
 

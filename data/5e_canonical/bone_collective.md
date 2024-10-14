@@ -25,6 +25,7 @@ In addition to its standard actions, the Bone Collective can use the Shape Swarm
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Collective
 
 *Small* *Swarm* *Undead* *Chaotic Evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shape Swarm:** The bone collective can shape itself into a Small Humanoid or back into a shapeless form of Tiny bones. Its statistics are the same in each form, and it can’t regain hp or gain temporary hp. It can’t take on a Humanoid form if it is occupying the space of another creature.
+</statblock>
 
 

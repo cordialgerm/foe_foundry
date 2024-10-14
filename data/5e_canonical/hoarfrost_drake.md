@@ -25,6 +25,7 @@ Finally, the Hoarfrost Drake possesses a reaction called Retaliatory Slip. When 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hoarfrost Drake
 
 *Medium* *Dragon* *chaotic evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Retaliatory Slip:** When a creature grapples the drake, the drake can immediately attempt to escape. If it succeeds, it can make a bite attack against the creature that grappled it.
 
 
+</statblock>
 
 

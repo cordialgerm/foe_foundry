@@ -19,6 +19,7 @@ When taking actions, the Pustulent Shambler can perform a Multiattack, allowing 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pustulent Shambler
 
 *Gargantuan* *Ooze* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Absorb Flesh:** The pustulent shambler feeds on a corpse within 5 feet of it. It regains 1d8 hp per size category of the creature it consumes. For example, the shambler regains 1d8 hp when consuming a Tiny creature’s corpse or 4d8 hp when consuming a Large creature’s corpse. The shambler can’t use Absorb Flesh on a corpse if it or another pustulent shambler has already used Absorb Flesh on the corpse. If the corpse has intact bones, the shambler loses its Amorphous trait for 1 minute.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ In combat, the Astri can make multiple attacks, performing a "Multiattack" actio
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Astri
 
 *Small* *Celestial* *chaotic good*
@@ -64,5 +65,6 @@ At will: create or destroy water, detect poison and disease, produce flame, puri
 - **Defensive Counter:** When a creature within 5 feet of the astri makes an attack against a creature other than the astri, the astri can bite the attacker. To do so, the astri must be able to see the attacker.
 
 
+</statblock>
 
 

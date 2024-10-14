@@ -36,6 +36,7 @@ As a bonus action, the Djinni can create whirlwinds around up to two creatures w
 
 Source: 5e_srd
 
+<statblock>
 ### Djinni (Genie)
 
 *Large elemental, chaotic good*
@@ -78,7 +79,8 @@ At will: *detect evil and good*, *detect magic*, *thunderwave*
 
 ***Create Whirlwind***. A 5-foot radius, 30-foot tall cylinder of swirling air magically forms on a point the djinni can see within 120 feet of it. The whirlwind lasts as long as the djinni maintains concentration (as if concentrating on a spell). Any creature but the djinni that enters the whirlwind must succeed on a DC 18 Strength saving throw or be restrained by it. The djinni can move the whirlwind up to 60 feet as an action, and creatures restrained by the whirlwind move with it. The whirlwind ends if the djinni loses sight of it.
 
-A creature can use its action to free a creature restrained by the whirlwind, including itself, by succeeding on a DC 18 Strength check. If the check succeeds, the creature is no longer restrained and moves to the nearest space outside the whirlwind.
+A creature can use its action to free a creature restrained by the whirlwind, including itself, by succeeding on a DC 18 Strength check. If the check succeeds, the creature is no longer restrained and moves to the nearest space outside the whirlwind.</statblock>
+
 
 
 
@@ -86,6 +88,7 @@ A creature can use its action to free a creature restrained by the whirlwind, in
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Djinni
 
 *Large* *Elemental*
@@ -124,6 +127,7 @@ Source: 5e_artisinal_monsters
 - **As a bonus action:** The whirlwind disappears if the djinni loses sight of it, if the djinni dies or is incapacitated, or if the djinni dismisses it as an action.
 
 
+</statblock>
 
 
 
@@ -132,6 +136,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Djinni
 
 *Large elemental (outsider)*
@@ -168,5 +173,6 @@ Source: 5e_artisinal_monsters
 - **Create Whirlwind.** The djinni creates whirlwinds of air around up to two creatures it can see within 60 feet of it. Each target must succeed on a DC 17 STR check or be restrained by a whirlwind. A creature, including the target, can take its action to free the restrained target by succeeding on a DC 17 STR check.
 - **Genie Shape.** The djinni magically transforms into a Medium cloud of sparkling, blue air or back into its bipedal form. Its statistics are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its bipedal form if it dies. The djinni can’t use this bonus action to transform into its bipedal form while inside a Medium or smaller container.
 
+</statblock>
 
 

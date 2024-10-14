@@ -23,6 +23,7 @@ As a reaction, the Dream Wraith can use "Dreamer's Gaze" to create an illusion o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dream Wraith
 
 *Medium* *Undead* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Dreamer's Gaze:** When a creature the dream wraith can see starts its turn within 30 feet of the dream wraith, the dream wraith can create the illusion that it looks like that creature's most recently departed loved one. If the creature can see the dream wraith, it must succeed on a DC 14 Wisdom saving throw or be stunned until the end of its turn.
 
 
+</statblock>
 
 

@@ -41,6 +41,7 @@ With its powerful attacks, substantial hit points, and tactical abilities, the S
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sand Worm
 
 *Gargantuan* *Monstrosity*
@@ -77,5 +78,6 @@ Source: 5e_artisinal_monsters
 - **Fighting Retreat:** When a creature makes an opportunity attack on the worm, the worm attacks with either its bite or its tail stinger.
 
 
+</statblock>
 
 

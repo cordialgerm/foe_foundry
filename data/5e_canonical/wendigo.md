@@ -23,6 +23,7 @@ When it comes to actions, the Wendigo can make multiple attacks in a single turn
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wendigo
 
 *Medium* *Monstrosity* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Frozen Spittle:** Ranged Spell Attack: +7 to hit, range 100 ft., one target. Hit: 28 (8d6) cold damage, and the target must succeed on a DC 16 Dexterity saving throw or be restrained until the end of its next turn.
 
 
+</statblock>
 
 

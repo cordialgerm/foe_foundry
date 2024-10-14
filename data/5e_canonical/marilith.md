@@ -38,6 +38,7 @@ In terms of reactions, the Marilith can utilize Parry to boost its Armor Class a
 
 Source: 5e_srd
 
+<statblock>
 ### Marilith (Demon)
 
 *Large fiend (demon), chaotic evil*
@@ -84,7 +85,8 @@ Source: 5e_srd
 
 ###### Reactions
 
-***Parry***. The marilith adds 5 to its AC against one melee attack that would hit it. To do so, the marilith must see the attacker and be wielding a melee weapon.
+***Parry***. The marilith adds 5 to its AC against one melee attack that would hit it. To do so, the marilith must see the attacker and be wielding a melee weapon.</statblock>
+
 
 
 
@@ -92,6 +94,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Marilith
 
 *Large* *Fiend*
@@ -134,6 +137,7 @@ Source: 5e_artisinal_monsters
 - **Reactive Teleport:** When the marilith is hit or missed by a ranged attack, it uses Teleport. If it teleports within 5 feet of a creature, it can attack with its tail.
 
 
+</statblock>
 
 
 
@@ -142,6 +146,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Marilith
 
 *Large fiend (demon)*
@@ -188,5 +193,6 @@ Source: 5e_artisinal_monsters
 
 - **Parry.** The marilith adds 5 to its AC against one melee attack that would hit it. To do so, the marilith must see the attacker and be wielding a melee weapon.
 
+</statblock>
 
 

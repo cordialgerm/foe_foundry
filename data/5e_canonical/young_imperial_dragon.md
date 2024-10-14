@@ -23,6 +23,7 @@ In combat, the Young Imperial Dragon utilizes its Multiattack feature, allowing 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Imperial Dragon
 
 *Large* *Dragon* *neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Breath (Recharge 5-6):** The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 17 Dexterity saving throw, taking 44 (8d10) lightning damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

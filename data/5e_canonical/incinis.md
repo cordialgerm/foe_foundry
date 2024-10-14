@@ -19,6 +19,7 @@ In combat, the Incinis can execute a "Multiattack" action, where it can make two
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Incinis
 
 *Large* *Elemental* *neutral evil*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Wave of Magma (Recharge 5-6):** The incinis transforms into a wave of magma, moving up to its speed in a straight line. Each creature in the path where the incinis moves must make a DC 17 Dexterity saving throw. On a failure, a target takes 21 (6d6) fire damage and, if it is a Large or smaller creature, it is pushed ahead of the incinis and knocked prone in an unoccupied space within 5 feet of where the incinis ends its movement. On a success, a target takes half the damage and is neither pushed nor knocked prone.
 
 
+</statblock>
 
 

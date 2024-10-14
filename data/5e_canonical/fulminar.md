@@ -23,6 +23,7 @@ The Fulminar's Lightning Shackles ability is particularly powerful; it can magic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fulminar
 
 *Large* *Elemental* *neutral*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Shackles (Recharge 5-6):** The fulminar magically creates three sets of shackles of lightning, each of which can strike a creature the fulminar can see within 60 feet of it. A target must make a DC 16 Dexterity saving throw. On a failure, the target takes 18 (4d8) lightning damage and is restrained for 1 minute. On a success, the target takes half the damage but isn't restrained. A restrained creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

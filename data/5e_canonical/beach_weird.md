@@ -21,6 +21,7 @@ These attributes and abilities make the Beach Weird a unique and dangerous oppon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Beach Weird
 
 *Large* *Elemental* *neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Create Quicksand (3/Day):** Creates a 10 ft. radius 5 ft. deep area of quicksand centered on a point it can see within 30' of it. A creature that starts its turn in the quicksand or enters area for the first time on a turn: DC 13 Str save or be grappled by it. Grappled creature must make DC 13 Str save at start of each of its turns or sink 1 foot into the quicksand. A Small creature that sinks 2'+ or a Med creature that sinks 3'+ is restrained instead.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ Overall, the Pirate Captain is a balanced and strategically minded adversary wit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pirate Captain
 
 *Medium* *Humanoid*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Parry:** If the bandit captain is wielding a melee weapon and can see their attacker, they add 2 to their AC against one melee attack that would hit them.
 
 
+</statblock>
 
 

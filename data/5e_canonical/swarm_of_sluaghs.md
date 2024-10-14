@@ -23,6 +23,7 @@ As a bonus action, the swarm has access to Shadow Stealth, allowing it to take t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Sluaghs
 
 *Medium* *Swarm* *Fey* *Chaotic Evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Stealth:** While in dim light or darkness, the swarm of sluaghs takes the Hide action.
+</statblock>
 
 

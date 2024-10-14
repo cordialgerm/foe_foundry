@@ -19,6 +19,7 @@ Furthermore, the unicorn has the capacity to grant boons to itself or willing cr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corrupted Unicorn
 
 *Large* *Celestial*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Resolution:** The creature is immune to being charmed or frightened for 24 hours.
 
 
+</statblock>
 
 

@@ -34,6 +34,7 @@ Overall, the Erina is a crafty little foe, leveraging its abilities and environm
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Erina
 
 *Small* *Humanoid* *Neutral*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 
 - **Dagger:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage.
 - **Sling:** Ranged Weapon Attack: +3 to hit, range 30/120 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.
+</statblock>
 
 

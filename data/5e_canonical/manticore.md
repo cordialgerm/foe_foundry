@@ -43,6 +43,7 @@ Overall, the Manticore is a versatile creature that combines melee and ranged at
 
 Source: 5e_srd
 
+<statblock>
 ## Manticore
 
 *Large monstrosity, lawful evil*
@@ -73,7 +74,8 @@ Source: 5e_srd
 
 ***Claw***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6+3) slashing damage.
 
-***Tail Spike***. *Ranged Weapon Attack:* +5 to hit, range 100/200 ft., one target. *Hit:* 7 (1d8+3) piercing damage.
+***Tail Spike***. *Ranged Weapon Attack:* +5 to hit, range 100/200 ft., one target. *Hit:* 7 (1d8+3) piercing damage.</statblock>
+
 
 
 
@@ -81,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Manticore
 
 *Large* *Monstrosity*
@@ -112,6 +115,7 @@ Source: 5e_artisinal_monsters
 - **Tail Whip:** If a creature the manticore can see hits it with a melee attack, the manticore attacks the attacker with its tail. If it hits, it can fly up to half its fly speed without provoking opportunity attacks from the attacker.
 
 
+</statblock>
 
 
 
@@ -120,6 +124,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Manticore
 
 *Large monstrosity*
@@ -156,5 +161,6 @@ Source: 5e_artisinal_monsters
 
 - **Spiky Retaliation.** When a creature the manticore can see hits it with a melee attack while within 5 feet of it, the manticore can jab a spike into the attacker. The attacker must succeed on a DC 13 DEX save or take 5 (2d4) poison damage.
 
+</statblock>
 
 

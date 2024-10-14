@@ -33,6 +33,7 @@ The hawk can also perform a bonus action called "Evasive Flight," which enables 
 
 Source: 5e_srd
 
+<statblock>
 ### Hawk
 
 *Tiny beast, unaligned*
@@ -59,7 +60,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Talons***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.
+***Talons***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.</statblock>
+
 
 
 
@@ -67,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hawk
 
 *Tiny* *Beast*
@@ -94,6 +97,7 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage.
 
 
+</statblock>
 
 
 
@@ -102,6 +106,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hawk
 
 *Tiny beast*
@@ -133,5 +138,6 @@ Source: 5e_artisinal_monsters
 
 - **Evasive Flight.** The hawk takes the Disengage or Dodge action. It can use this bonus action only while flying.
 
+</statblock>
 
 

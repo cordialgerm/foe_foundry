@@ -37,6 +37,7 @@ For reactions, the Wind Witch has:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wind Witch
 
 *Large* *Plant* *chaotic evil*
@@ -75,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Bouncy Escape:** When it takes damage from a melee attack can move up to half its fly speed. This move doesn’t provoke opportunity attacks. It releases a captured creature when it uses this.
 
 
+</statblock>
 
 

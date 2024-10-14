@@ -19,6 +19,7 @@ In combat, the Oliphaunt can execute a Multiattack, using its trunk first, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Oliphaunt
 
 *Gargantuan* *Beast* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Tusk Sweep (Recharge 5-6):** The oliphaunt sweeps its tusks in a wide arc. Each creature in a 20-foot cube must make a DC 17 Dexterity saving throw, taking 35 (10d6) bludgeoning damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

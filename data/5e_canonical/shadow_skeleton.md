@@ -23,6 +23,7 @@ Additionally, it employs its Finger Darts as a ranged attack. This ability also 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Skeleton
 
 *Medium* *Undead* *neutral evil*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Finger Darts:** Ranged Weapon Attack: +5 to hit, range 30 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 3 (1d6) necrotic damage. If the target is a creature other than an undead or a construct, it must make a DC 12 Constitution saving throw. On a failure, the target is surrounded by a shadowy aura for 1 minute. While surrounded by the aura, the target takes an extra 7 (2d6) necrotic damage when hit by the scimitar attack of a shadow skeleton. Any creature can take an action to extinguish the shadow with a successful DC 12 Intelligence (Arcana) check. The shadow also extinguishes if the target receives magical healing.
 
 
+</statblock>
 
 

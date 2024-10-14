@@ -31,6 +31,7 @@ Overall, the War Horse is a valuable companion in battle, offering both signific
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horse, War
 
 *Large beast*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Trained Shift.** If the horse’s rider is subjected to an effect that would knock it prone or dismount it, the horse can shift its body to assist the rider. The rider has advantage on the check or save to avoid the effect.
 
+</statblock>
 
 

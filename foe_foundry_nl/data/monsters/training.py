@@ -1,6 +1,9 @@
+import re
+from dataclasses import dataclass
 from fnmatch import fnmatch
 
 import numpy as np
+from backports.strenum import StrEnum
 from datasets import Dataset, DatasetDict
 
 from foe_foundry.creature_types import CreatureType
@@ -137,6 +140,70 @@ lineages = {
 }
 
 
+class SimilarityType(StrEnum):
+    desc_to_statblock = "desc_to_statblock"
+    desc_to_desc = "desc_to_desc"
+    statblock_to_statblock = "statblock_to_statblock"
+
+
+class SimilarityReason(StrEnum):
+    same_creature = "same_creature"
+    similar_creature_type = "similar_creature_type"
+    similar_lineage = "similar_lineage"
+    similar_ac = "similar_ac"
+    similar_hp = "similar_hp"
+    similar_cr = "similar_cr"
+
+
+@dataclass(kw_only=True)
+class TrainingTriplet:
+    anchor: str
+    positive: str
+    negative: str
+    reason: SimilarityReason
+    type: SimilarityType
+
+    def to_text(self) -> tuple[str, str, str]:
+        raw_anchor = load_canonical_monster_text(self.anchor)
+        raw_positive = load_canonical_monster_text(self.positive)
+        raw_negative = load_canonical_monster_text(self.negative)
+
+        if self.type == SimilarityType.desc_to_statblock:
+            anchor_desc = self._get_summary(raw_anchor)
+            positive_statblock = self._get_statblock(raw_positive)
+            negative_statblock = self._get_statblock(raw_negative)
+            return anchor_desc, positive_statblock, negative_statblock
+        elif self.type == SimilarityType.desc_to_desc:
+            anchor_desc = self._get_summary(raw_anchor)
+            positive_desc = self._get_summary(raw_positive)
+            negative_desc = self._get_summary(raw_negative)
+            return anchor_desc, positive_desc, negative_desc
+        elif self.type == SimilarityType.statblock_to_statblock:
+            anchor_statblock = self._get_statblock(raw_anchor)
+            positive_statblock = self._get_statblock(raw_positive)
+            negative_statblock = self._get_statblock(raw_negative)
+            return anchor_statblock, positive_statblock, negative_statblock
+        else:
+            raise NotImplementedError(f"Unknown similarity type: {self.type}")
+
+    def _get_summary(self, text: str) -> str:
+        # need to get just the description
+        summary_pattern = re.compile(r"<summary>(.*?)</summary>", re.DOTALL)
+        detail_pattern = re.compile(r"<detail>(.*?)</detail>", re.DOTALL)
+        summaries = summary_pattern.findall(text)
+        details = detail_pattern.findall(text)
+        # TODO - pick random
+        # TODO - mask monster's name ???
+        return "\n\n".join(summaries + details)
+
+    def _get_statblock(self, text: str) -> str:
+        statblock_pattern = re.compile(r"<statblock>(.*?)</statblock>", re.DOTALL)
+        results = statblock_pattern.findall(text)
+        # TODO - pick random
+        # TODO - mask monster's name ???
+        return "\n\n".join(results)
+
+
 class SrdMonsterSelector:
     def __init__(self, rng: np.random.Generator):
         self.rng = rng
@@ -218,26 +285,12 @@ class SrdMonsterSelector:
             CreatureType.Undead: [CreatureType.Fiend, CreatureType.Construct],
         }
 
-    def random_positive_negative_triplet(
-        self, keys_only=True
-    ) -> list[tuple[str, str, str, str]]:
+    def random_positive_negative_triplets(self) -> list[TrainingTriplet]:
         anchor = self._choose(self.keys)
-        results = self.get_positive_negative_triplets(anchor)
+        triplets = self.get_positive_negative_triplets(anchor)
+        return triplets
 
-        if keys_only:
-            return results
-        else:
-            text_results = []
-            for anchor, positive, negative, type in results:
-                anchor_text = load_canonical_monster_text(anchor)
-                positive_text = load_canonical_monster_text(positive)
-                negative_text = load_canonical_monster_text(negative)
-                text_results.append((anchor_text, positive_text, negative_text, type))
-            return text_results
-
-    def get_positive_negative_triplets(
-        self, anchor: str
-    ) -> list[tuple[str, str, str, str]]:
+    def get_positive_negative_triplets(self, anchor: str) -> list[TrainingTriplet]:
         try:
             anchor = name_to_key(anchor)
             anchor_monster = self.srd_monsters[anchor]
@@ -289,35 +342,108 @@ class SrdMonsterSelector:
                 keys = self._dissimilar_hp(anchor_monster.hp, {anchor})
                 return self._choose(keys)
 
-            results = []
+            results: list[TrainingTriplet] = []
 
             try:
+                # a creature to itself
+                positive = anchor
+                negative = _dissimilar_ct()
+                for type in [
+                    SimilarityType.desc_to_desc,
+                    SimilarityType.desc_to_statblock,
+                    SimilarityType.statblock_to_statblock,
+                ]:
+                    results.append(
+                        TrainingTriplet(
+                            anchor=anchor,
+                            positive=positive,
+                            negative=negative,
+                            reason=SimilarityReason.same_creature,
+                            type=type,
+                        )
+                    )
+            except ValueError:
+                pass
+
+            try:
+                # a creature to a similar creature type
+                positive = _similar_ct()
+                negative = _dissimilar_ct()
+                for type in [
+                    SimilarityType.desc_to_desc,
+                    SimilarityType.desc_to_statblock,
+                    SimilarityType.statblock_to_statblock,
+                ]:
+                    results.append(
+                        TrainingTriplet(
+                            anchor=anchor,
+                            positive=positive,
+                            negative=negative,
+                            reason=SimilarityReason.similar_creature_type,
+                            type=type,
+                        )
+                    )
+            except ValueError:
+                pass
+
+            try:
+                # a statblock with similar AC to another statblock
                 results.append(
-                    (anchor, _similar_ct(), _dissimilar_ct(), "creature_type")
+                    TrainingTriplet(
+                        anchor=anchor,
+                        positive=_similar_ac(),
+                        negative=_dissimilar_ac(),
+                        reason=SimilarityReason.similar_ac,
+                        type=SimilarityType.statblock_to_statblock,
+                    )
                 )
             except ValueError:
                 pass
 
             try:
-                results.append((anchor, _similar_ac(), _dissimilar_ac(), "ac"))
+                # a statblock with similar HP to another statblock
+                results.append(
+                    TrainingTriplet(
+                        anchor=anchor,
+                        positive=_similar_hp(),
+                        negative=_dissimilar_hp(),
+                        reason=SimilarityReason.similar_hp,
+                        type=SimilarityType.statblock_to_statblock,
+                    )
+                )
             except ValueError:
                 pass
 
             try:
-                results.append((anchor, _similar_hp(), _dissimilar_hp(), "hp"))
-            except ValueError:
-                pass
-
-            try:
-                results.append((anchor, _similar_cr(), _dissimlar_cr(), "cr"))
+                results.append(
+                    TrainingTriplet(
+                        anchor=anchor,
+                        positive=_similar_cr(),
+                        negative=_dissimlar_cr(),
+                        reason=SimilarityReason.similar_cr,
+                        type=SimilarityType.statblock_to_statblock,
+                    )
+                )
             except ValueError:
                 pass
 
             if len(lineages):
                 try:
-                    results.append(
-                        (anchor, _similar_lineage(), _dissimilar_ct(), "lineage")
-                    )
+                    # similar lineage
+                    for type in [
+                        SimilarityType.desc_to_desc,
+                        SimilarityType.desc_to_statblock,
+                        SimilarityType.statblock_to_statblock,
+                    ]:
+                        results.append(
+                            TrainingTriplet(
+                                anchor=anchor,
+                                positive=_similar_lineage(),
+                                negative=_dissimilar_ct(),
+                                reason=SimilarityReason.similar_hp,
+                                type=SimilarityType.statblock_to_statblock,
+                            )
+                        )
                 except ValueError:
                     pass
 
@@ -432,8 +558,9 @@ def load_triplet_loss_dataset() -> tuple[DatasetDict, int, int, int]:
 
     examples: list[dict] = []
     for _ in range(2000):
-        selections = selector.random_positive_negative_triplet(keys_only=False)
-        for anchor, positive, negative, _ in selections:
+        triplets = selector.random_positive_negative_triplets()
+        for triplet in triplets:
+            anchor, positive, negative = triplet.to_text()
             examples.append(dict(anchor=anchor, positive=positive, negative=negative))
     n_examples = len(examples)
 

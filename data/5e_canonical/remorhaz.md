@@ -45,6 +45,7 @@ In summary, the Remorhaz is a terrifying monster characterized by its overwhelmi
 
 Source: 5e_srd
 
+<statblock>
 ## Remorhaz
 
 *Huge monstrosity, unaligned*
@@ -75,7 +76,8 @@ Source: 5e_srd
 
 ***Swallow***. The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz's turns.
 
-If the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.
+If the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.</statblock>
+
 
 
 
@@ -83,6 +85,7 @@ If the remorhaz takes 30 damage or more on a single turn from a creature inside 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Remorhaz
 
 *Huge* *Monstrosity*
@@ -115,6 +118,7 @@ Source: 5e_artisinal_monsters
 - **Constrict:** Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 16 (3d6 + 6) bludgeoning damage  and the target is subjected to the remorhazs Heated Body trait. The target is grappled (escape DC 18) and restrained while grappled. The remorhaz can grapple three creatures at once.
 
 
+</statblock>
 
 
 
@@ -123,6 +127,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Remorhaz
 
 *Huge monstrosity*
@@ -156,5 +161,6 @@ Source: 5e_artisinal_monsters
 
 - **Vent Heat (119 HP or Fewer).** As the remorhaz’s life force ebbs, its body generates more heat to protect itself. The remorhaz can open valves in its carapace to vent this excess heat. Each creature within 5 feet of the remorhaz must succeed on a DC 17 CON save or suffer one level of exhaustion.
 
+</statblock>
 
 

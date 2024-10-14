@@ -31,6 +31,7 @@ Overall, the Forest Marauder combines stealth and powerful physical attacks, mak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forest Marauder
 
 *Large* *Giant* *Chaotic Evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Forest Ambusher:** While in a forest, the forest marauder can take the Hide action.
+</statblock>
 
 

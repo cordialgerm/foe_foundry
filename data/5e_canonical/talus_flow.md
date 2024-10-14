@@ -19,6 +19,7 @@ In terms of actions, the Talus Flow can perform a "Multiattack," allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Talus Flow
 
 *Large* *Elemental* *neutral evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Grind:** Grinds its form over one creature in its space or that is grappled by it. Target takes 21 (6d6) bludgeoning damage (DC 13 Dex half). Flow regains hp equal to half the damage taken if creature is not a Construct or Undead.
 
 
+</statblock>
 
 

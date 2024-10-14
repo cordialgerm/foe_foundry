@@ -19,6 +19,7 @@ In terms of actions, the Alpha Fish can use "Multiattack," enabling it to perfor
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alpha Fish
 
 *Large* *Beast* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Fin Flare:** The alpha fish flares its fins in an attempt to frighten its opponents. Each creature within 30 feet that can see the fish must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the alpha fish’s Fin Flare for the next 24 hours.
 
 
+</statblock>
 
 

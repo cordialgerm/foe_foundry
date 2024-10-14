@@ -37,6 +37,7 @@ Overall, the Ice Mephit is a cunning and versatile adversary, utilizing its elem
 
 Source: 5e_srd
 
+<statblock>
 ### Ice Mephit
 
 *Small elemental, neutral evil*
@@ -75,7 +76,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +3 to hit, reach 5 ft., one creature. *Hit:* 3 (1d4+1) slashing damage plus 2 (1d4) cold damage.
 
-***Frost Breath (Recharge 6)***. The mephit exhales a 15- foot cone of cold air. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 5 (2d4) cold damage on a failed save, or half as much damage on a successful one.
+***Frost Breath (Recharge 6)***. The mephit exhales a 15- foot cone of cold air. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 5 (2d4) cold damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -83,6 +85,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Mephit
 
 *Small* *Elemental*
@@ -117,6 +120,7 @@ Source: 5e_artisinal_monsters
 - **Freezing Breath (1/Day):** The mephit exhales a 15-foot cone of ice. Each creature in the area makes a DC 10 Constitution saving throw  taking 5 (2d4) cold damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -125,6 +129,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Mephit
 
 *Small elemental*
@@ -159,5 +164,6 @@ Source: 5e_artisinal_monsters
 
 - **Cloud of Snow (1/Day).** The mephit casts the fog cloud spell, requiring no material components and using CHA as the spellcasting ability.
 
+</statblock>
 
 

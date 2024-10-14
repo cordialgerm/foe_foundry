@@ -52,6 +52,7 @@ Overall, the Roc is a fearsome creature that excels in combat with its high dama
 
 Source: 5e_srd
 
+<statblock>
 ## Roc
 
 *Gargantuan monstrosity, unaligned*
@@ -84,7 +85,8 @@ Source: 5e_srd
 
 ***Beak***. *Melee Weapon Attack:* +13 to hit, reach 10 ft., one target. *Hit:* 27 (4d8+9) piercing damage.
 
-***Talons***. *Melee Weapon Attack:* +13 to hit, reach 5 ft., one target. *Hit:* 23 (4d6+9) slashing damage, and the target is grappled (escape DC 19). Until this grapple ends, the target is restrained, and the roc can't use its talons on another target.
+***Talons***. *Melee Weapon Attack:* +13 to hit, reach 5 ft., one target. *Hit:* 23 (4d6+9) slashing damage, and the target is grappled (escape DC 19). Until this grapple ends, the target is restrained, and the roc can't use its talons on another target.</statblock>
+
 
 
 
@@ -92,6 +94,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Roc
 
 *Gargantuan* *Beast*
@@ -127,6 +130,7 @@ Source: 5e_artisinal_monsters
 - **Retributive Strike:** When a creature the roc can see hits it with a melee weapon attack, the roc makes a beak attack against its attacker.
 
 
+</statblock>
 
 
 
@@ -135,6 +139,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Roc
 
 *Gargantuan monstrosity (animal)*
@@ -170,5 +175,6 @@ Source: 5e_artisinal_monsters
 
 - **Territorial Shriek.** The roc shrieks a territorial challenge at up to two creatures it can see within 60 feet of it. Each target must succeed on a DC 17 CHA save or be frightened until the end of its next turn. While frightened by this shriek, a creature must take the Dash action on its turn and move away from the roc by the safest available route, unless there is nowhere to move.
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ The Ettin also possesses a "Bonus Action" called "That One!" where one of its he
 
 Source: 5e_srd
 
+<statblock>
 ## Ettin
 
 *Large giant, chaotic evil*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ***Battleaxe***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d8+5) slashing damage.
 
-***Morningstar***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d8+5) piercing damage.
+***Morningstar***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d8+5) piercing damage.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ettin
 
 *Large* *Giant*
@@ -107,6 +110,7 @@ Source: 5e_artisinal_monsters
 - **Axe Whirl (1/Day):** The ettin makes a battleaxe attack against each creature within 10 feet.
 
 
+</statblock>
 
 
 
@@ -115,6 +119,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ettin
 
 *Large giant*
@@ -151,5 +156,6 @@ Source: 5e_artisinal_monsters
 
 - **That** One! One of the ettin’s heads picks a creature the ettin can see within 30 feet of it, gaining advantage on its next attack against that creature. The other head doesn’t like being told what to do and has disadvantage on its next attack against that creature. Each weapon attack notes which head controls that weapon.
 
+</statblock>
 
 

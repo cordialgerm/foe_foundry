@@ -38,6 +38,7 @@ Lastly, the Mystic has a reaction known as Void Deflection. When targeted by a r
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mystic
 
 *Medium* *Humanoid* *neutral evil*
@@ -78,5 +79,6 @@ Source: 5e_artisinal_monsters
 - **Void Deflection:** When a creature the mystic can see targets it with a ranged spell attack, the mystic can attempt to deflect the spell. The mystic makes a Constitution saving throw. If the result is higher than the attack roll, the mystic is unaffected by the spell.
 
 
+</statblock>
 
 

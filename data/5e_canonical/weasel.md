@@ -29,6 +29,7 @@ In terms of actions in combat, the weasel can use its Bite attack. This is a mel
 
 Source: 5e_srd
 
+<statblock>
 ### Weasel
 
 *Tiny beast, unaligned*
@@ -55,7 +56,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.</statblock>
+
 
 
 
@@ -63,6 +65,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Weasel
 
 *Tiny* *Beast*
@@ -90,6 +93,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage. If this damage would reduce a Small or larger target to 0 hit points  the target takes no damage from this attack.
 
 
+</statblock>
 
 
 
@@ -98,6 +102,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Weasel
 
 *Tiny beast*
@@ -125,5 +130,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite.** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) piercing damage. Instead of dealing damage, the weasel can steal one item the target is wearing or carrying, provided the item weighs no more than 5 pounds, can fit in one hand, isn’t a weapon, and isn’t wrapped around or firmly attached to the target. For example, a weasel could steal a hat or belt pouch but not a creature’s shirt or armor.
 
+</statblock>
 
 

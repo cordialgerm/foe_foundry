@@ -23,6 +23,7 @@ Lastly, the "Curse Item" ability can inflict a curse on a magic item within 60 f
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre, Cunning Artisan
 
 *Large* *Giant* *neutral evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Curse Item (Recharge 5–6):** Curses one magic item it can see within 60' of it. If item is being worn or carried by a creature creature must make DC 15 Cha save to avoid curse. For 1 min cursed item suffers one curse described below based on type.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ The beetle has two main actions. The first action, Bite, is a melee weapon attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Insect, Giant Fire Beetle
 
 *Small beast*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) slashing damage.
 - **Igniting Mucus.** Ranged Weapon Attack: +2 to hit, range 15/30 ft., one target. Hit: 2 (1d4) poison damage, and the target is covered in mucus that ignites after 1d4 rounds or if the target takes fire damage. An ignited creature takes 2 (1d4) fire damage at the start of each of its turns until a creature takes an action to douse the fire. A creature can remove the mucus before it ignites by taking an action.
 
+</statblock>
 
 

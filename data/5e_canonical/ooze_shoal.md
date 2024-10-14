@@ -33,6 +33,7 @@ Overall, the Shoal is a robust and cunning adversary that relies on its unique a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ooze, Shoal
 
 *Gargantuan* *Ooze* *unaligned*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Mesmerizing Spiral:** The fish inside it swim rapidly in a hypnotic spiral. Each creature within 20' of it that can see the fish: incapacitated 1 min (DC 16 Wis negates). While incapacitated its speed is reduced to 0. Incapacitated creature can re-save at end of each of its turns success ends effect on itself. If a creature’s save is successful or effect ends for it creature is immune to Mesmerizing Spiral of all shoal oozes for the next 24 hrs.
 
 
+</statblock>
 
 

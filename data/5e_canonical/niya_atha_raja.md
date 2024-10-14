@@ -25,6 +25,7 @@ As a bonus action, the Raja can use "Enlarge" to magically increase its size, wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Niya-Atha Raja
 
 *Medium* *Fey* *lawful neutral*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Enlarge:** Magically increases in size with anything worn/carried. While enlarged is Large 2× damage dice on weapon attacks (included above) and makes Str checks and Str saves with advantage. Enlarged can no longer use Evasion and Magic Resistance. If it lacks room to become Large this action fails.
 
 
+</statblock>
 
 

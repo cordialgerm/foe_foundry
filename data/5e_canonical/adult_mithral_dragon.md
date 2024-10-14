@@ -27,6 +27,7 @@ Overall, the Adult Mithral Dragon serves as a potent, multifaceted enemy with nu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Mithral Dragon
 
 *Huge* *Dragon* *Neutral*
@@ -70,5 +71,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a Tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+</statblock>
 
 

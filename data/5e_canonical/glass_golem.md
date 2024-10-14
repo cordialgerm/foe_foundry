@@ -23,6 +23,7 @@ The Golem also has a reaction called Shatter. When it takes bludgeoning damage, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Glass Golem
 
 *Small* *Construct* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Shatter:** When a glass golem takes bludgeoning damage, it can make one shard attack against each creature within 5 feet of it.
 
 
+</statblock>
 
 

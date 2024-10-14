@@ -25,6 +25,7 @@ Finally, the Mavka can cast spells, using Charisma as its spellcasting ability w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mavka
 
 *Medium* *Undead* *Chaotic Evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Necrotic Bolt:** Ranged Spell Attack: +8 to hit, range 60 ft., one target. Hit: 26 (4d10 + 4) necrotic damage.
 - **Flame Burst (Recharge 5–6):** While riding a nightmare, the mavka channels her power into her mount, causing its fiery light to burn those nearby. Each creature within 20 feet of the mavka must make a DC 16 Dexterity saving throw, taking 54 (12d8) fire damage on a failed save, or half as much damage on a successful one.
 - **Spellcasting:** The mavka casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 16):<br>At will: create or destroy water, dancing lights<br>3/day each: darkness, hold person, silence<br>1/day each: bestow curse, dispel magic
+</statblock>
 
 

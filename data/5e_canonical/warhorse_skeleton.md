@@ -11,6 +11,7 @@
 
 Source: 5e_srd
 
+<statblock>
 ### Warhorse Skeleton
 
 *Large undead, lawful evil*
@@ -39,5 +40,6 @@ Source: 5e_srd
 
 ###### Actions
 
-***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage.
+***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage.</statblock>
+
 

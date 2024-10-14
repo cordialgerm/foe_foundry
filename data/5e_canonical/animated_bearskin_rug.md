@@ -25,6 +25,7 @@ Overall, the Animated Bearskin Rug combines a strong physical presence with clev
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animated Bearskin Rug
 
 *Large* *Construct* *unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Menacing Roar (Recharge 6):** The bearskin rug lets out a hideous, supernatural howl. Each creature within 20 feet of the rug that can hear the roar must succeed on a DC 13 Wisdom saving throw or become frightened for 1 minute. A creature frightened this way must spend its turns trying to move as far away from the rug as it can. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action. At the end of each of its turns and when it takes damage, the creature can repeat the saving throw, ending the effect on itself on a success.
 
 
+</statblock>
 
 

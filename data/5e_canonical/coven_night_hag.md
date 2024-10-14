@@ -29,6 +29,7 @@ Overall, the Coven Night Hag serves as a diabolical and strategic opponent, capa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Coven Night Hag
 
 *Medium* *Fey*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Steal Magic (3/Day):** When a creature the hag can see within 60 feet casts a spell using a 3rd-level or lower spell slot, the hag attempts to steal its power. The caster makes a DC 14 saving throw using its spellcasting ability. On a failure, the spell fails, and the hag gains 5 (1d10) temporary hit points per level of the spell slot used.
 
 
+</statblock>
 
 

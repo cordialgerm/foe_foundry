@@ -25,6 +25,7 @@ As a bonus action, the Riptide Drake is capable of manipulating water currents a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drake, Riptide
 
 *Large* *Dragon* *lawful evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Manipulate Currents:** While underwater changes water flow within 60' of it. Chooses one of below which lasts until start of its next turn.A 20' cube of rushing water forms on a point drake can see in the water. The cube’s space is difficult terrain and a creature that starts its turn swimming in the area must make DC 17 Str save or be pushed out of the cube directly away from drake.The current shoots in a 60' long 10 ft. wide line from drake in a direction it chooses. Each creature in area: pushed up to 15 ft. away from drake in a direction following the line (DC 17 Str negates).The drake takes the Dash action.
 
 
+</statblock>
 
 

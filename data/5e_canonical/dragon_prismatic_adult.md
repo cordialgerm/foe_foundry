@@ -31,6 +31,7 @@ Overall, this dragon represents a high-level challenge capable of devastating ef
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Prismatic Adult
 
 *Huge* *Dragon* *neutral*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Tail Attack:** Makes a tail attack.
 - **Cast a Spell (2):** The prismatic dragon uses Spellcasting.
 - **Shimmering Wings (2):** Each creature within 20': DC 16 Wis save or take 11 (2d10) radiant and blinded until start of its next turn.
+</statblock>
 
 

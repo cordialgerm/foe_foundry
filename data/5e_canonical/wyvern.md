@@ -33,6 +33,7 @@ As a reaction, the Wyvern can utilize "Reflexive Tail Whip." When an enemy enter
 
 Source: 5e_srd
 
+<statblock>
 ## Wyvern
 
 *Large dragon, unaligned*
@@ -63,7 +64,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) slashing damage.
 
-***Stinger***. *Melee Weapon Attack:* +7 to hit, reach 10 ft., one creature. *Hit:* 11 (2d6+4) piercing damage. The target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.
+***Stinger***. *Melee Weapon Attack:* +7 to hit, reach 10 ft., one creature. *Hit:* 11 (2d6+4) piercing damage. The target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -71,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wyvern
 
 *Large* *Dragon*
@@ -101,6 +104,7 @@ Source: 5e_artisinal_monsters
 - **Stinger:** Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: 11 (2d6 + 4) piercing damage. The target makes a DC 15 Constitution saving throw  taking 24 (7d6) poison damage on a failure or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -109,6 +113,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wyvern
 
 *Large dragon*
@@ -143,5 +148,6 @@ Source: 5e_artisinal_monsters
 
 - **Reflexive Tail Whip.** When a creature moves into a space within 15 feet of the wyvern, it can whip its tail at the creature. The target must succeed on a DC 15 STR save or be knocked prone.
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ Overall, the Owl serves as an effective scout and companion, embodying traits th
 
 Source: 5e_srd
 
+<statblock>
 ### Owl
 
 *Tiny beast, unaligned*
@@ -61,7 +62,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Talons***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.
+***Talons***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.</statblock>
+
 
 
 
@@ -69,6 +71,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Owl
 
 *Tiny* *Beast*
@@ -97,6 +100,7 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 slashing damage. If this damage would reduce a Small or larger target to 0 hit points  the target takes no damage from this attack.
 
 
+</statblock>
 
 
 
@@ -105,6 +109,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Owl
 
 *Tiny beast*
@@ -134,5 +139,6 @@ Source: 5e_artisinal_monsters
 
 - **Talons.** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) slashing damage.
 
+</statblock>
 
 

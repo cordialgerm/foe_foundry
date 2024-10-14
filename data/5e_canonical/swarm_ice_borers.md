@@ -33,6 +33,7 @@ Overall, the Ice Borers Swarm serves as a formidable adversary in cold environme
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm, Ice Borers
 
 *Medium* *Elemental* *unaligned*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Impale:** Melee Weapon Attack: +4 to hit, 0 ft., one creature, in the swarm’s space. 7 (2d6) piercing damage + 9 (2d8) cold or 3 (1d6) piercing damage + 4 (1d8) cold if the swarm has half its hp or fewer.
 
 
+</statblock>
 
 

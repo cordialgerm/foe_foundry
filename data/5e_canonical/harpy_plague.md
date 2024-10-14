@@ -23,6 +23,7 @@ In summary, the Plague Harpy is an exceptional threat in combat due to its abili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Harpy, Plague
 
 *Medium* *Monstrosity* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Dirge:** Telepathically sings a mournful hymn and projects images of sickly and dying loved ones in mind of one creature it can see within 90' of it. Target: DC 15 Wis save or be disheartened for 1 min. While disheartened creature has disadvantage on saves vs. being poisoned or contracting a disease. Disheartened creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ It also possesses a special action called Petty Mockery, which allows it to unle
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wicked Skull
 
 *Tiny* *Monstrosity* *chaotic neutral*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Petty Mockery:** The wicked skull unleashes a string of insults laced with subtle enchantments at a creature it can see within 60 feet. If the target can hear the wicked skull (though it does not have to understand it), the target must succeed on a DC 11 Wisdom saving throw or have disadvantage on the next attack roll it makes before the end of its next turn.
 
 
+</statblock>
 
 

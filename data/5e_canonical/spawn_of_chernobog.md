@@ -25,6 +25,7 @@ Overall, the Spawn of Chernobog is a creature that merges offensive capabilities
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spawn of Chernobog
 
 *Large* *Fiend* *chaotic evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.
 
 
+</statblock>
 
 

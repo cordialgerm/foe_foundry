@@ -48,6 +48,7 @@ Additionally, the Gelatinous Cube can utilize a reaction called "Skewer Prey." W
 
 Source: 5e_srd
 
+<statblock>
 ### Gelatinous Cube (Ooze)
 
 *Large ooze, unaligned*
@@ -90,7 +91,8 @@ On a successful save, the creature can choose to be pushed 5 feet back or to the
 
 On a failed save, the cube enters the creature's space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 21 (6d6) acid damage at the start of each of the cube's turns. When the cube moves, the engulfed creature moves with it.
 
-An engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.
+An engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.</statblock>
+
 
 
 
@@ -98,6 +100,7 @@ An engulfed creature can try to escape by taking an action to make a DC 12 Stren
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gelatinous Cube
 
 *Large* *Ooze*
@@ -132,6 +135,7 @@ Source: 5e_artisinal_monsters
 - **An engulfed creature can escape by using an action to make a DC 13 Strength check:** On a success  the creature moves to a space within 5 feet of the cube. A creature within 5 feet can take the same action to free an engulfed creature  but takes 10 (3d6) acid damage in the process.
 
 
+</statblock>
 
 
 
@@ -140,6 +144,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gelatinous Cube
 
 *Large ooze*
@@ -176,5 +181,6 @@ Source: 5e_artisinal_monsters
 
 - **Skewer Prey.** When the gelatinous cube is subjected to piercing damage, it can move a random creature engulfed by it to intercept the attack. The creature takes the piercing damage as if it were the target.
 
+</statblock>
 
 

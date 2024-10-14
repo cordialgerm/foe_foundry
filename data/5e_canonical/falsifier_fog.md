@@ -21,6 +21,7 @@ In combat, the Falsifier Fog can execute a multiattack utilizing two "Chill" att
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Falsifier Fog
 
 *Huge* *Undead* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Reaching Phantasms (Recharge 5-6):** The phantasmal images within the falsifier fog reach outward. Each creature within 10 feet of the fog must make a DC 13 Wisdom saving throw, taking 18 (4d8) psychic damage on a failed save, or half as much damage on a successful one. Creatures in the fog’s space have disadvantage on the saving throw.
 
 
+</statblock>
 
 

@@ -19,6 +19,7 @@ In terms of actions, the Gerridae can execute a multiattack, allowing it to make
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gerridae
 
 *Large* *Fey* *Unaligned*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The gerridae makes one Bite attack and one Claw attack.
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage.
+</statblock>
 
 

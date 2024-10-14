@@ -19,6 +19,7 @@ In terms of actions, Pescavitus can make a melee attack called Slam, with a +5 t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pescavitus
 
 *Small* *Celestial* *neutral good*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Healing Touch (3/Day):** Touches another creature. Target magically regains 5 (1d8+1) hp and is freed from any disease poison blindness or deafness.
 
 
+</statblock>
 
 

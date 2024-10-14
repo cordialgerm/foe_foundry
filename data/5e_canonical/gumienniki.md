@@ -23,6 +23,7 @@ Finally, the Gumienniki has a reactive ability called Taunting Cackle. When it i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gumienniki
 
 *Small* *Fiend* *neutral evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Taunting Cackle:** When the gumienniki is missed by an attack, it can taunt the attacker. The attacking creature must succeed on a DC 12 Wisdom saving throw or have disadvantage on its next attack roll or saving throw.
 
 
+</statblock>
 
 

@@ -19,6 +19,7 @@ For its actions, the Thread-Bound Constrictor Snake can perform a Constrict atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thread-Bound Constrictor Snake
 
 *Huge* *Construct* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Constrict:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 13 (2d8 + 4) bludgeoning damage and the creature is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.
 
 
+</statblock>
 
 

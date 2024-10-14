@@ -19,6 +19,7 @@ In terms of actions, the Skeleton Horde is equipped with a Shortsword and a Shor
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skeleton Horde
 
 *Large* *Undead*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Shortbow:** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 27 (5d6 + 10) piercing damage  or half damage if the horde is bloodied.
 
 
+</statblock>
 
 

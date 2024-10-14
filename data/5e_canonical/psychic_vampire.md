@@ -27,6 +27,7 @@ Overall, the Psychic Vampire is a cunning and powerful foe, adept at controlling
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Psychic Vampire
 
 *Medium* *Undead* *lawful evil*
@@ -75,5 +76,6 @@ The psychic vampire can take 3 legendary actions, choosing from the options belo
 - **Move:** The vampire moves up to its speed without provoking opportunity attacks. If it uses this legendary action while levitating, the vampire can move up to half its speed horizontally instead.
 - **Unarmed Strike:** The vampire makes one unarmed strike.
 - **Psychic Pulse (Costs 3 Actions):** The vampire releases a powerful wave of psychic energy. Each creature within 20 feet of the vampire must succeed on a DC 17 Intelligence saving throw or be stunned until the end of its next turn.
+</statblock>
 
 

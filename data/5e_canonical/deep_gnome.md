@@ -27,6 +27,7 @@ In reaction to being attacked, the Deep Gnome can utilize "Crystalline Flash." T
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deep Gnome
 
 *Small humanoid*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 
 - **Crystalline Flash.** When a creature the deep gnome can see within 5 feet of it attacks it, it can throw a magic-infused crystal on the ground, shattering the crystal in a brilliant flash of light. If the attacker uses sight to perceive the gnome, the attacker must succeed on a DC 12 DEX save or have disadvantage on the attack roll.
 
+</statblock>
 
 

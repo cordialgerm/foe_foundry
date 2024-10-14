@@ -56,6 +56,7 @@ In summary, the Giant Frog is a versatile and unusual combatant with grappling a
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Frog
 
 *Medium beast, unaligned*
@@ -88,7 +89,8 @@ Source: 5e_srd
 
 ***Swallow***. The frog makes one bite attack against a Small or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the frog, and it takes 5 (2d4) acid damage at the start of each of the frog's turns. The frog can have only one target swallowed at a time.
 
-If the frog dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.
+If the frog dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.</statblock>
+
 
 
 
@@ -96,6 +98,7 @@ If the frog dies, a swallowed creature is no longer restrained by it and can esc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frog, Giant
 
 *Medium beast*
@@ -129,6 +132,7 @@ Source: 5e_artisinal_monsters
 
 - **Reeling Tongue.** The frog lashes out its tongue at one Medium or smaller creature it can see within 15 feet of it. The target must succeed on a DC 12 STR save or be pulled up to 10 feet closer to the frog.
 
+</statblock>
 
 
 
@@ -137,6 +141,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Frog
 
 *Medium* *Beast*
@@ -166,5 +171,6 @@ Source: 5e_artisinal_monsters
 - **Vaulting Leap:** The frog jumps up to 10 feet horizontally and 5 feet vertically. If its within 5 feet of a creature that it is not grappling at the end of this movement  it may make a bite attack against that creature with advantage.
 
 
+</statblock>
 
 

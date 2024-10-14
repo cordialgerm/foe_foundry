@@ -25,6 +25,7 @@ Overall, while the Edjet Initiate is not a formidable opponent, it can be bolste
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Edjet Initiate
 
 *Medium* *Humanoid* *lawful neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Shortbow:** Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage.
 
 
+</statblock>
 
 

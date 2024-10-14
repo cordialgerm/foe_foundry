@@ -19,6 +19,7 @@ For their actions, the Zoryas can perform a "Multiattack," allowing them to make
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zoryas
 
 *Medium* *Celestial* *lawful good*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Dusk's Arrival (Recharges after a Long Rest):** The zoryas' lantern darkens, snuffing out nearby natural and magical sources of light. Each creature within 30 feet of the zoryas must make a DC 16 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one. The area is bathed in darkness like the darkness spell until the end of the zoryas' next turn.
 
 
+</statblock>
 
 

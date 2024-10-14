@@ -43,6 +43,7 @@ Overall, the Magmin's unique abilities and elemental synergy make it a notable c
 
 Source: 5e_srd
 
+<statblock>
 ## Magmin
 
 *Small elemental, chaotic neutral*
@@ -73,7 +74,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Touch***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d6) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 3 (1d6) fire damage at the end of each of its turns.
+***Touch***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d6) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 3 (1d6) fire damage at the end of each of its turns.</statblock>
+
 
 
 
@@ -81,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Magmin
 
 *Small* *Elemental*
@@ -113,6 +116,7 @@ Source: 5e_artisinal_monsters
 - **Spurt Magma (Ablaze Only):** Ranged Weapon Attack: +5 to hit, range 30 ft., one target. Hit: 5 (1d6 + 2) fire damage.
 
 
+</statblock>
 
 
 
@@ -121,6 +125,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Magmin
 
 *Small elemental*
@@ -154,5 +159,6 @@ Source: 5e_artisinal_monsters
 
 - **Ignited Illumination.** The magmin sets itself ablaze or extinguishes its flames. While ablaze, the magmin sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ The Skull Drake's actions in combat include a Multiattack feature, allowing it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skull Drake
 
 *Medium* *Dragon* *neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Necrotic Breath (Recharge 6):** The skull drake exhales a 15-foot cone of noxious, black gas. Each creature in the area must make a DC 13 Constitution saving throw, taking 14 (4d6) necrotic damage on a failed save, or half as much damage on a successful one. A creature reduced to 0 hp by this damage dies.
 
 
+</statblock>
 
 

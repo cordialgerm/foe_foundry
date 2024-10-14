@@ -33,6 +33,7 @@ This combination of features makes the Cave Mimic a dangerous foe, able to ambus
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Mimic
 
 *Gargantuan* *Monstrosity* *neutral*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Into Gargantuan object or stretches out as terrain up to 35 ft. cube or back to true amorphous form. Stats same. Items worn/carried not transformed. Reverts on death.
 
 
+</statblock>
 
 

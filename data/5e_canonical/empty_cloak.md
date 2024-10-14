@@ -22,6 +22,7 @@ Through its unique attributes and abilities, the Empty Cloak serves as both an o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Empty Cloak
 
 *Medium* *Construct* *Neutral*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Protective Embrace:** When a creature the cloak can see attacks a creature in the cloak’s space, the cloak can briefly wrap itself around the creature in its space. The creature in its space takes only half the damage from the attack, and the cloak takes the other half.
+</statblock>
 
 

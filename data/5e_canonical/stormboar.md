@@ -28,6 +28,7 @@ The Stormboar is a challenging adversary, combining high durability, substantial
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stormboar
 
 *Large* *Monstrosity* *unaligned*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Thunder Leap (Recharge 6):** The boar moves up to 20 feet, jumping over obstacles in its way. Difficult terrain doesn’t cost it extra movement when it leaps. Each creature within 10 feet of the boar when it leaps and each creature within 10 feet of where it lands must make a DC 15 Constitution saving throw. On a failure, a creature takes 16 (3d10) thunder damage and is pushed up to 10 feet away from the boar. On a success, a creature takes half the damage and isn’t pushed.
 
 
+</statblock>
 
 

@@ -39,6 +39,7 @@ Furthermore, as a bonus action, the Spirit Naga can use Hidden Step to teleport 
 
 Source: 5e_srd
 
+<statblock>
 ### Spirit Naga
 
 *Large monstrosity, chaotic evil*
@@ -78,7 +79,8 @@ Cantrips (at will): *mage hand*, *minor illusion*, *ray of frost*
 
 ***Bite***. *Melee Weapon Attack:* +7 to hit, reach 10 ft., one creature. *Hit:* 7 (1d6+4) piercing damage, and the target must make a DC 13 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one.
 
-[Nightmare](new/Nightmare.md)
+[Nightmare](new/Nightmare.md)</statblock>
+
 
 
 
@@ -86,6 +88,7 @@ Cantrips (at will): *mage hand*, *minor illusion*, *ray of frost*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spirit Naga
 
 *Large* *Monstrosity*
@@ -137,6 +140,7 @@ Source: 5e_artisinal_monsters
 - **Shield (1st-Level; V):** When the naga is hit by an attack or targeted by magic missile, it gains a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the beginning of its next turn.
 
 
+</statblock>
 
 
 
@@ -145,6 +149,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spirit Naga
 
 *Large monstrosity*
@@ -186,5 +191,6 @@ Source: 5e_artisinal_monsters
 
 - **Hidden Step.** The spirit naga magically teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see and takes the Hide action.
 
+</statblock>
 
 

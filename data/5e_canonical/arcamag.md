@@ -25,6 +25,7 @@ Overall, the Arcamag represents a stealthy and manipulative creature that can ha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arcamag
 
 *Tiny* *Monstrosity* *neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Teleport (1/Day):** The arcamag magically teleports up to 60 feet to an unoccupied space. If it is attached to a host when it uses this action, it automatically detaches.
 
 
+</statblock>
 
 

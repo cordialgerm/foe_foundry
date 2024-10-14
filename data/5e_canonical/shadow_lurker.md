@@ -21,6 +21,7 @@ In addition to its actions, the Shadow Lurker can use its bonus action, Shadowâ€
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Lurker
 
 *Medium* *Fey* *chaotic evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Shadowâ€™s Embrace:** Dim light/darkness: Hide action.
 
 
+</statblock>
 
 

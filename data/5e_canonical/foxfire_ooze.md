@@ -39,6 +39,7 @@ In terms of actions during combat, the Foxfire Ooze can:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Foxfire Ooze
 
 *Large* *Ooze* *unaligned*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Pseudopod:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 20 (3d10 + 4) bludgeoning damage plus 4 (1d8) lightning damage.
 
 
+</statblock>
 
 

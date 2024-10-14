@@ -21,6 +21,7 @@ Overall, the Harbinger of Wrath is an exceptionally powerful adversary that comb
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Harbinger of Wrath
 
 *Gargantuan* *Construct* *chaotic evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Spike Volley (Recharge 5-6):** The harbinger launches a volley of adamantine spikes. Each creature within 60 feet of the harbinger must make a DC 20 Dexterity saving throw, taking 42 (12d6) piercing damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

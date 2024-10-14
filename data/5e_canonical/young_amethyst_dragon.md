@@ -21,6 +21,7 @@ For its actions, the Young Amethyst Dragon can perform a "Multiattack," which al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Amethyst Dragon
 
 *Large* *Dragon*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Concussive Breath (Recharge 5-6):** The dragon psionically unleashes telekinetic energy in a 30-foot cone. Each creature in that area makes a DC 15 Constitution saving throw  taking 44 (8d10) force damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

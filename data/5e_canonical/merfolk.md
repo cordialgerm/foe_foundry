@@ -34,6 +34,7 @@ Furthermore, the Merfolk has a Reaction called Coral Scrape that can be utilized
 
 Source: 5e_srd
 
+<statblock>
 ## Merfolk
 
 *Medium humanoid (merfolk), neutral*
@@ -60,7 +61,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Spear***. *Melee or Ranged Weapon Attack:* +2 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used with two hands to make a melee attack.
+***Spear***. *Melee or Ranged Weapon Attack:* +2 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used with two hands to make a melee attack.</statblock>
+
 
 
 
@@ -68,6 +70,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Merfolk
 
 *Medium* *Humanoid*
@@ -95,6 +98,7 @@ Source: 5e_artisinal_monsters
 - **Trident:** Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d8) piercing damage if used with two hands to make a melee attack  or 3 (1d6) piercing damage if thrown.
 
 
+</statblock>
 
 
 
@@ -103,6 +107,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Merfolk
 
 *Medium humanoid*
@@ -139,5 +144,6 @@ Source: 5e_artisinal_monsters
 
 - **Coral Scrape.** When a creature the merfolk can see hits it with a melee attack while within 5 feet of it, the merfolk can twist its body to scrape the attacker’s arm or similar attacking appendage across the rough coral of its armor. The attacker must succeed on a DC 11 DEX save or have disadvantage on the next attack roll it makes before the end of its next turn, as its attacking appendage hurts from the abrasion.
 
+</statblock>
 
 

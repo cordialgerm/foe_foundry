@@ -19,6 +19,7 @@ In terms of actions, the Death Butterfly Swarm can perform a melee attack called
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Death Butterfly Swarm
 
 *Large* *Swarm* *Beast* *Unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Bites:** Melee Weapon Attack: +4 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 21 (6d6) piercing damage, or 10 (3d6) piercing damage if the swarm has half of its hp or fewer. The target must make a DC 12 Constitution saving throw. On a failure, it takes 10 (3d6) poison damage and is poisoned until the end of its next turn. On a success, it takes half the damage and isn’t poisoned.
+</statblock>
 
 

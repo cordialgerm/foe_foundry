@@ -25,6 +25,7 @@ The Bear King can also take legendary actions, including moving without provokin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bear King
 
 *Medium* *Fey* *Lawful Neutral*
@@ -76,5 +77,6 @@ The Bear King can take 3 legendary actions, choosing from the options below. Onl
 - **Move:** The Bear King moves up to his speed without provoking opportunity attacks.
 - **Honey Toss:** The Bear King throws a jar of magical honey at a creature he can see within 120 feet of him. The target must succeed on a DC 17 Dexterity saving throw or be restrained by sticky honey until the end of its next turn.
 - **Frightful Roar (Costs 2 Actions):** The Bear King lets out a blood-curdling roar. Each hostile creature within 60 feet of the Bear King and that can hear the roar must succeed on a DC 17 Wisdom saving throw or be frightened until the end of its next turn.
+</statblock>
 
 

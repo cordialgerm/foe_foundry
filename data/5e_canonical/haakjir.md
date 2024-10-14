@@ -21,6 +21,7 @@ For its actions, the Haakjir can perform a Multiattack, which consists of one Bi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Haakjir
 
 *Medium* *Monstrosity* *neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit 5 ft one target 8 (2d4+3) slashing damage.
 
 
+</statblock>
 
 

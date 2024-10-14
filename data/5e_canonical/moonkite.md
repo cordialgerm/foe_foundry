@@ -19,6 +19,7 @@ In combat, the Moonkite can perform a "Multiattack," which allows it to unleash 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moonkite
 
 *Large* *Celestial* *lawful good*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Planar Traveler:** The moonkite can transport itself to a different plane of existence. This works like the plane shift spell, except the moonkite can affect only itself and a willing rider, and can’t banish an unwilling creature to another plane.
 
 
+</statblock>
 
 

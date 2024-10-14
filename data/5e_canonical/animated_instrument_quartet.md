@@ -23,6 +23,7 @@ Furthermore, the quartet can perform a Musical Arrangement, where it plays one o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animated Instrument, Quartet
 
 *Large* *Construct* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Musical Arrangement:** The quartet plays one of the following songs:Dreadful Dirge. The quartet plays a hair-raising tune that evokes terror. Each hostile creature within 30' of the quartet must make DC 14 Wis save or be frightened until the end of its next turn.Oppressive Overture. The quartet plays a heavy melody that reverberates through nearby creatures. Each hostile creature within 30' of the quartet must make DC 14 Str save or be knocked prone.Seditious Sonata. The quartet plays a song that incites disobedience and rebellion. Each hostile creature within 30' of the quartet must make DC 14 Cha save
 
 
+</statblock>
 
 

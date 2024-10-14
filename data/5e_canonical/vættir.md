@@ -35,6 +35,7 @@ In summary, confronting a Vættir demands strategic planning, particularly in de
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vættir
 
 *Medium* *Undead* *Lawful Evil*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Necrotic Bolt:** Ranged Spell Attack: +4 to hit, range 120 ft., one target. Hit: 15 (3d8 + 2) necrotic damage.
 - **Disorienting Gaze:** The vættir locks eyes with one creature it can see within 30 feet of it. The target must succeed on a DC 15 Charisma saving throw or be incapacitated for 1 minute. While incapacitated, the creature moves in a random direction when it moves. An incapacitated creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the vættir’s Disorienting Gaze for the next 24 hours.
 - **Corpse Breath (Recharge 5–6):** The vættir spews forth a 15-foot cone of putrid gas. Each creature in the area must make a DC 15 Constitution saving throw. On a failure, a creature takes 21 (6d6) poison damage and is poisoned for 1 minute. On a success, a creature takes half the damage and isn’t poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

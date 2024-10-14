@@ -21,6 +21,7 @@ Overall, the Lorelei is a master manipulator and a dangerous combatant, capable 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lorelei
 
 *Medium* *Fey* *Chaotic Evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Corrupted Kiss:** Melee Spell Attack: +8 to hit, reach 5 ft., one willing creature, or a creature that is incapacitated or restrained. Hit: 14 (2d8 + 5) necrotic damage, and the lorelei regains hp equal to that amount.
 - **Psychic Blast:** Melee or Ranged Spell Attack: +8 to hit, reach 5 ft. or range 60 ft., one target. Hit: 12 (2d6 + 5) psychic damage.
 - **Stunning Glance:** The lorelei sends a seductive glance at a creature she can see within 30 feet of her. The target must succeed on a DC 15 Wisdom saving throw or be stunned until the end of its next turn. On a successful save, a creature is immune to this lorelei’s Stunning Glance for the next 24 hours.
+</statblock>
 
 

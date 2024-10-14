@@ -23,6 +23,7 @@ In summary, Yeks are dangerous fiends that adapt well to combat situations with 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yek
 
 *Small* *Fiend* *chaotic evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (3d4 + 3) slashing damage.
 
 
+</statblock>
 
 

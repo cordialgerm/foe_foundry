@@ -21,6 +21,7 @@ For actions, the Archon can perform a **Multiattack**, which consists of either 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archon, Siege
 
 *Huge* *Celestial* *lawful good*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Sundering Quake (Recharge 5–6):** Slams its forelegs into the ground. Each creature in contact with the ground within 20' of it: 49 (14d6) force (DC 19 Dex half). Each structure in contact with the ground within 20' of archon also takes the damage and collapses if the damage reduces it to 0 hp.
 
 
+</statblock>
 
 

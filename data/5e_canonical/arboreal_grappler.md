@@ -19,6 +19,7 @@ In combat, the Arboreal Grappler can perform a Multiattack, consisting of one Bi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arboreal Grappler
 
 *Medium* *Aberration* *Neutral Evil*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The arboreal grappler makes one Bite attack and two Tentacle attacks.
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) piercing damage.
 - **Tentacle:** Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained. The arboreal grappler has two tentacles, each of which can grapple only one target.
+</statblock>
 
 

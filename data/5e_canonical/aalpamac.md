@@ -27,6 +27,7 @@ In combat, the aalpamac uses its Multiattack action to perform three attacks: on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aalpamac
 
 *Huge* *Monstrosity* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.
 
 
+</statblock>
 
 

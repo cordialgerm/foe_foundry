@@ -33,6 +33,7 @@ In terms of reactions, the Jackalope can employ **Uncanny Dodge**; if an attacke
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jackalope
 
 *Tiny* *Beast*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Uncanny Dodge:** When an attacker the jackalope can see hits it with an attack, the jackalope halves the attacks damage against it.
 
 
+</statblock>
 
 

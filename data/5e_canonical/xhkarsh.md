@@ -21,6 +21,7 @@ The Xhkarsh can also turn invisible, remaining unseen until it launches an attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Xhkarsh
 
 *Large* *Aberration* *Neutral Evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Fate-Altering Stinger:** Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 15 (2d10 + 4) piercing damage, and the target must succeed on a DC 16 Charisma saving throw or have its fate corrupted. A creature with corrupted fate has disadvantage on Charisma checks and Charisma saving throws, can’t be targeted by any divination magic, can’t be perceived through magical scrying sensors, and is immune to any effect that would sense its emotions or read its thoughts. The target’s fate can be restored, ending the corruption and breaking the xhkarsh’s magical tie to the target, by a dispel evil and good spell or similar magic.
 - **Invisibility:** The xhkarsh magically turns invisible until it attacks or uses Seize Strand, or until its concentration ends (as if concentrating on a spell). Any equipment the xhkarsh wears or carries is invisible with it.
 - **Seize Strand:** One creature whose fate is corrupted by this xhkarsh must succeed on a DC 16 Charisma saving throw or be affected by the geas spell for 8 hours. While under the geas, the affected creature must perform a specific, seemingly minor task that furthers the decades-long goals of the xhkarsh. Such a task could be writing a letter to a specific person, damaging a seemingly random piece of equipment, or speaking a specific sentence to a particular person. The xhkarsh can use Seize Strand on a particular creature no more than once every 24 hours, regardless of success or failure on the saving throw.
+</statblock>
 
 

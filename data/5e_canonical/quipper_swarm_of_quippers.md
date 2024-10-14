@@ -23,6 +23,7 @@ In combat, the swarm primarily uses its Bites action. This melee weapon attack h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quipper, Swarm of Quippers
 
 *Medium swarm (of tiny beasts)*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 
 - **Bites.** Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 18 (4d8) piercing damage, or 9 (2d8) piercing damage if the swarm has half of its HP or fewer, and the target must succeed on a DC 13 DEX save or have its flesh shredded by the attack. A creature with shredded flesh loses 4 (1d8) HP at the start of each of its turns as the wound bleeds profusely. Any creature can take an action to stanch the wound with a successful DC 10 WIS (Medicine) check. The wound also closes if the target receives magical healing.
 
+</statblock>
 
 

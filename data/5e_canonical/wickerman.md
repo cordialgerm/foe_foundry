@@ -23,6 +23,7 @@ The Wickerman is an engine of destruction that requires strategic thinking to ov
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wickerman
 
 *Huge* *Construct* *neutral evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Imprison:** The wickerman makes one slam attack against a target it is grappling. If the attack hits, the target is imprisoned inside its burning body, and the grapple ends. A creature imprisoned in the wickerman is blinded, restrained, has total cover against attacks and other effects outside the wickerman, and it takes 17 (5d6) fire damage at the start of each of the wickerman's turns. Up to 6 Medium or smaller creatures can fit inside a wickerman's body. If the wickerman takes 25 damage or more from a creature inside of it, the wickerman must succeed on a DC 14 Constitution saving throw or the creature bursts free from it. The creature falls prone in a space within 10 feet of the wickerman. If the wickerman dies, all creatures inside of it are no longer restrained by it and can escape from the burning corpse by using 15 feet of movement, exiting prone.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ In terms of combat actions, the Ahu-Nixta can perform a Multiattack, making up t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ahu-Nixta
 
 *Large* *Aberration* *neutral evil*
@@ -60,5 +61,6 @@ At will: fear, fire bolt (2d10), telekinesis
 - **Bashing Rod:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

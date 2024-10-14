@@ -19,6 +19,7 @@ The Kelp Eel’s actions in combat include a "Multiattack," which permits it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kelp Eel
 
 *Huge* *Plant* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Reel:** The kelp eel pulls each creature grappled by it up to 25 feet straight toward it.
 
 
+</statblock>
 
 

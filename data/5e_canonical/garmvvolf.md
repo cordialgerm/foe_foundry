@@ -21,6 +21,7 @@ Overall, the Garmvvolf provides a strong adversarial presence with a mix of high
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Garmvvolf
 
 *Huge* *Monstrosity* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Tripartite Howl (Recharge 5–6):** Its heads exhale a three-part howl one filled with poisonous spittle one a thunderous bellow and one a frightful bay in a 30' cone. Each creature in area: 17 (5d6) poison and 17 (5d6) thunder and becomes frightened 1 min (DC 16 Dex half damage isn’t frightened). A frightened creature can re-save at end of each of its turns ending effect on itself on a success.
 
 
+</statblock>
 
 

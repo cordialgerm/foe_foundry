@@ -21,6 +21,7 @@ Finally, the **Join Malleables** action allows the Minor Malleable to collaborat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Minor Malleable
 
 *Medium* *Aberration* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Join Malleables:** As long as the malleable is within 10 feet of at least three other minor malleables, each minor malleable in range can use this action option at the same time to join together and create a larger malleable. The new malleable’s hp total is equal to the combined hp total of all the minor malleables. and it is affected by any conditions, spells, and other magical effects that affected any of the minor malleables. The new malleable acts on the same initiative count as the malleables that formed it and occupies any unoccupied space that previously contained at least one of the malleables that formed it. <br>* Four minor malleables can join to create one moderate malleable. <br>* Eight minor malleables can join to create one major malleable. <br>* Sixteen minor malleables can join to create one massive malleable.
 
 
+</statblock>
 
 

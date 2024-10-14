@@ -29,6 +29,7 @@ Lastly, its reaction ability, Hex, allows the Kobold Witch to hinder opponents b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold Witch
 
 *Small humanoid*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 
 - **Hex.** When a creature the kobold witch can see within 60 feet of it makes an ability check, attack roll, or save, the target must roll a d6 and subtract the number rolled from that ability check, attack roll, or save.
 
+</statblock>
 
 

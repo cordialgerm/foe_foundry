@@ -23,6 +23,7 @@ Overall, the Kobold Sapper is a clever and dangerous creature, particularly effe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold, Sapper
 
 *Small* *Humanoid* *lawful neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Explosive Charge (Recharge 5–6):** Throws a powerful explosive at a point it can see on the ground within 60' of it. Each creature within 15 ft. of that point: 9 (2d8) fire and 9 (2d8) force and is pushed up to 10 ft. away from the point and knocked prone (DC 13 Dex half damage and isn’t pushed or knocked prone). If creature fails save by 5+ it is also deafened for 1 min. Alternatively sapper can place the explosive in a space within 5 ft. of it and delay the explosion until end of sapper’s next turn or when a creature moves to a space within 5 ft. of the explosive whichever happens first.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ In summary, the Huecambra's blend of high damage potential, the ability to curse
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Huecambra
 
 *Large* *Monstrosity* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Gem Explosion (Recharge 6):** The huecambra causes some of the gem-like nodules on its body to detonate. Each creature within 20 feet of the huecambra must make a DC 16 Dexterity saving throw. On a failure, a creature takes 24 (7d6) thunder damage and is stunned until the end of its next turn. On a success, a creature takes half the damage and isn’t stunned. A creature cursed by the huecambra’s bite has disadvantage on this saving throw.
 
 
+</statblock>
 
 

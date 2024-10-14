@@ -23,6 +23,7 @@ The Nautiloid also has a reaction called "Withdraw." When targeted by an attack,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nautiloid
 
 *Gargantuan* *Elemental* *neutral good*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Withdraw:** When a creature the nautiloid can see targets it with an attack the nautiloid can pull its body into its shell gaining a +5 bonus to AC until the start of its next turn.
 
 
+</statblock>
 
 

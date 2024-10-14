@@ -17,6 +17,7 @@ In terms of actions, the Wakwak can make a Multiattack, which consists of one Be
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wakwak
 
 *Large* *Beast* *unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Wing Slap (Recharge 5–6):** Slams its sharp-edged wings together in front of itself in a 15 ft. cone. All in area make a DC 13 Dex save. On a failure a creature takes 10 (3d6) slashing damage and is pushed up to 10 ft. away from the wakwak and knocked prone. On a success a creature takes half the damage and isn’t pushed or knocked prone.
 
 
+</statblock>
 
 

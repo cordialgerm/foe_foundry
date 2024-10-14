@@ -21,6 +21,7 @@ Overall, the Mngwa is a cunning and powerful creature that thrives in melee comb
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mngwa
 
 *Medium* *Aberration* *Neutral Evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Ethereal Step:** The mngwa magically shifts from the Material Plane to the Ethereal Plane, or vice versa. When it leaves or enters the Material Plane, a puff of gray smoke briefly appears in the space on the Material Plane it leaves or enters.
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Gnarljak is a dangerous opponent that combines stealth, surprising 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gnarljak
 
 *Small* *Construct* *Unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Secure Tail:** When within 10 feet of the ground, structure, wall, or other solid surface, the gnarljak can secure its tail spike on a point in the surface within 10 feet of it. While secured, the gnarljak can’t be knocked prone, it can’t move more than 10 feet from that point, and its Chain Tail attack’s reach is reduced to 5 feet. If the gnarljak is attached to a creature while its tail is secured, the creature is restrained until the gnarljak is no longer attached to it.
+</statblock>
 
 

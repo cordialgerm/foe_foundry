@@ -31,6 +31,7 @@ The dragon features two breath weapon abilities: Fire Breath and Sleep Breath. F
 
 Source: 5e_srd
 
+<statblock>
 # Brass Dragon Wyrmling (Metallic)
 
 *Medium dragon, chaotic good*
@@ -66,6 +67,7 @@ Source: 5e_srd
 **Fire Breath**. The dragon exhales fire in an 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.
 
 **Sleep Breath**. The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 1 minute. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.
+</statblock>
 
 
 
@@ -74,6 +76,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brass Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -105,6 +108,7 @@ Source: 5e_artisinal_monsters
 - **Sleep Breath:** The dragon exhales sleep gas in a 15-foot cone. Each creature in the area makes a DC 11 Constitution saving throw. On a failure  a creature falls unconscious for 10 minutes or until it takes damage or someone uses an action to wake it.
 
 
+</statblock>
 
 
 
@@ -113,6 +117,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brass Dragon Wyrmling
 
 *Medium dragon*
@@ -144,5 +149,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 5–6).** The dragon exhales fire in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 11 DEX save, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.
 - **Sleep Breath (Recharge 6).** The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 CON save or fall unconscious for 1 minute. This effect ends for a creature if the creature takes damage or another creature uses an action to wake it.
 
+</statblock>
 
 

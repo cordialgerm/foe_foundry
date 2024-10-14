@@ -25,6 +25,7 @@ Overall, the One-Headed Clockwork Dragon is a highly tactical and powerful adver
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # One-Headed Clockwork Dragon
 
 *Large* *Construct* *unaligned*
@@ -67,5 +68,6 @@ Each circlet is a magic item that must be attuned.
 - **Tail Sweep:** The dragon swings its bladed tail. Each creature within 10 feet of the dragon must make a DC 17 Dexterity saving throw, taking 15 (2d8 + 6) slashing damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

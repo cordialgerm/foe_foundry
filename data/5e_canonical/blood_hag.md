@@ -31,6 +31,7 @@ In summary, the Blood Hag is a dangerous foe that combines swift physical attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Hag
 
 *Medium* *Fey* *Chaotic Evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Face Peel:** The blood hag peels the face off one creature grappled by her. The target must succeed on a DC 17 Dexterity saving throw or take 14 (4d6) slashing damage and be stunned until the end of its next turn. The target’s hp maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. While its hp maximum is reduced in this way, the target has disadvantage on all Charisma checks. The target dies if this effect reduces its hp maximum to 0.
 - **Sanguine Curse:** The blood hag curses one creature she can see or sense within 60 feet of her. The target must succeed on a DC 17 Wisdom saving throw or be cursed for 1 minute. A creature automatically succeeds on this saving throw if it doesn’t have blood. While cursed, the target is incapacitated and takes 9 (2d8) necrotic damage at the start of each of its turns as its internal blood vessels rupture. The cursed target can repeat the saving throw at the end of each of its turns, ending the curse on itself on a success.
 - **Spellcasting:** The blood hag casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save DC 17):<br>At will: disguise self, knock, tongues<br>3/day each: modify memory, pass without trace
+</statblock>
 
 

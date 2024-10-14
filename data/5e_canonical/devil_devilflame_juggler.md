@@ -23,6 +23,7 @@ As a bonus action, the Juggler can perform a Nimble Leap, allowing it to take th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil, Devilflame Juggler
 
 *Large* *Fiend* *lawful evil*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Uncanny Dodge:** When an attacker it can see hits it with an attack can choose to take half dmg instead.
 
 
+</statblock>
 
 

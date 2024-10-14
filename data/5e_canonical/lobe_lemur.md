@@ -21,6 +21,7 @@ Overall, the Lobe Lemur is an agile and stealthy creature that poses a unique ch
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lobe Lemur
 
 *Small* *Monstrosity* *neutral*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Face Clamp:** Melee Weapon Attack: +6 to hit, 5 ft., one target, 9 (2d4+4) piercing damage and lemur attaches to target’s head. If lemur is already attached to the target when it hits with this attack it doesn’t deal damage. Instead target is blinded until end of its next turn. While attached to the target lemur can attack no other creature except target but has advantage on its attack rolls. Lemur’s speed also becomes 0 it can’t benefit from any bonus to its speed and it moves with target. Creature including target can use action to detach lemur via DC 14 Str check. On its turn lemur can detach itself from target by using 5 ft. of move.
 
 
+</statblock>
 
 

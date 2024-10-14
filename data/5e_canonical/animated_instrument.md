@@ -21,6 +21,7 @@ Finally, the Courageous Anthem can be played once per day, granting a +1 bonus t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animated Instrument
 
 *Tiny* *Construct* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Courageous Anthem (1/Day):** Plays a song that bolsters its allies. Each friendly creature within 30' of the instrument that can hear song has a +1 bonus to attack rolls ability checks and saves until song ends. Instrument must take a bonus action on subsequent turns to continue playing the song. Can stop playing at any time. Song ends if animated instrument is incapacitated. A creature can benefit from only one Courageous Anthem at a time.
 
 
+</statblock>
 
 

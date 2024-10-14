@@ -21,6 +21,7 @@ As a bonus action, the Wrackwraith can perform **Wrack Jump**, which has a recha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wrackwraith
 
 *Medium* *Undead* *neutral evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Wrack Jump (Recharge 4–6):** Leaves current pile magically teleports to another within 60' of it and uses Animate Wrack.
 
 
+</statblock>
 
 

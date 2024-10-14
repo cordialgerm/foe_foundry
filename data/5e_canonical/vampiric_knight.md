@@ -25,6 +25,7 @@ Finally, as a reaction, the Vampiric Knight can use its Shield ability. This gra
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampiric Knight
 
 *Medium* *Undead* *neutral evil*
@@ -64,5 +65,6 @@ Stake to the Heart. If a piercing weapon made of wood is driven into the vampiri
 - **Shield:** When a creature makes an attack against an allied vampire, the knight can grant the vampire a +3 bonus to its AC if the knight is within 5 feet of the vampire.
 
 
+</statblock>
 
 

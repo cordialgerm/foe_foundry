@@ -21,6 +21,7 @@ In combat, the Stryx can use its Talons for a melee attack, boasting a +4 to hit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stryx
 
 *Tiny* *Monstrosity* *Neutral*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 
 - **Talons:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.
 - **Spellcasting:** (3/Day)The stryx casts the comprehend languages spell, requiring no material components and using Wisdom as the spellcasting ability.
+</statblock>
 
 

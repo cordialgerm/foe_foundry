@@ -23,6 +23,7 @@ Additionally, the **Guiding Song** is a remarkable ability that enhances navigat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Egret Harpy
 
 *Medium* *Monstrosity* *neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Guiding Song:** The egret harpy sings a magical melody. Each humanoid and giant of the harpy’s choice within 300 feet of the harpy has advantage on Wisdom (Survival) checks to navigate marshes, and difficult terrain composed of mud, standing water, or other features of a marsh doesn’t cost it extra movement. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated.<br><br>The harpy can use an action to end the song and cast mass suggestion. Each creature that can hear the harpy’s song must succeed on a DC 12 Wisdom saving throw or be affected by the spell for 8 hours. If the harpy chooses to end the song this way, it can’t use Guiding Song again until it finishes a long rest.
 
 
+</statblock>
 
 

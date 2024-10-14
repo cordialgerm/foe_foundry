@@ -33,6 +33,7 @@ For actions, the Flying Sword can execute a melee weapon attack named Slash, whe
 
 Source: 5e_srd
 
+<statblock>
 ### Flying Sword (Animated Object)
 
 *Small construct, unaligned*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Longsword***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (1d8+1) slashing damage.
+***Longsword***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (1d8+1) slashing damage.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flying Sword
 
 *Small* *Construct*
@@ -104,6 +107,7 @@ Source: 5e_artisinal_monsters
 - **Longsword:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage.
 
 
+</statblock>
 
 
 
@@ -112,6 +116,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flying Sword
 
 *Small construct*
@@ -146,5 +151,6 @@ Source: 5e_artisinal_monsters
 
 - **Whirling Blade (6 HP or Fewer).** The flying sword makes a Slash attack against a target it can sense within 5 feet of it.
 
+</statblock>
 
 

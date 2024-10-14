@@ -37,6 +37,7 @@ Overall, the Salamander stands out as a powerful elemental ally in battle, lever
 
 Source: 5e_srd
 
+<statblock>
 ## Salamander
 
 *Large elemental, neutral evil*
@@ -73,7 +74,8 @@ Source: 5e_srd
 
 ***Spear***. *Melee or Ranged Weapon Attack:* +7 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 11 (2d6+4) piercing damage, or 13 (2d8+4) piercing damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage.
 
-***Tail***. *Melee Weapon Attack:* +7 to hit, reach 10 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage plus 7 (2d6) fire damage, and the target is grappled (escape DC 14). Until this grapple ends, the target is restrained, the salamander can automatically hit the target with its tail, and the salamander can't make tail attacks against other targets.
+***Tail***. *Melee Weapon Attack:* +7 to hit, reach 10 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage plus 7 (2d6) fire damage, and the target is grappled (escape DC 14). Until this grapple ends, the target is restrained, the salamander can automatically hit the target with its tail, and the salamander can't make tail attacks against other targets.</statblock>
+
 
 
 
@@ -81,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Salamander
 
 *Large* *Elemental*
@@ -113,6 +116,7 @@ Source: 5e_artisinal_monsters
 - **Pike:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage plus 3 (1d6) fire damage.
 
 
+</statblock>
 
 
 
@@ -121,6 +125,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Salamander
 
 *Large elemental*
@@ -156,5 +161,6 @@ Source: 5e_artisinal_monsters
 
 - **Tighten Grip.** The salamander tightens its grip around one creature it is grappling. Until the start of the salamander’s next turn, the target has disadvantage on any check made to escape the grapple, and other than a successful check to escape the grapple, the target can’t be moved, knocked prone, or otherwise removed from the salamander’s grasp without the salamander’s permission.
 
+</statblock>
 
 

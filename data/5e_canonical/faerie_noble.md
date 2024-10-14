@@ -27,6 +27,7 @@ For reactions, the Faerie Noble can perform a Riposte when hit by a melee attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Faerie Noble
 
 *Medium* *Fey*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Vengeful Eye:** When the noble is hit by a ranged attack or targeted with a spell by a creature within 60 feet, it uses Evil Eye on the attacker if they can see each other.
 
 
+</statblock>
 
 

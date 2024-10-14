@@ -25,6 +25,7 @@ Overall, the Chronalmental presents players with a unique combination of powerfu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chronalmental
 
 *Large* *Elemental* *Neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Step Between Seconds (Recharge 4–6):** When a creature the chronalmental can see moves within 5 feet of it, the chronalmental can teleport, along with any equipment it is wearing or carrying, to an unoccupied space within 60 feet that it occupied within the past minute.
+</statblock>
 
 

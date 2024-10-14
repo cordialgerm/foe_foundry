@@ -19,6 +19,7 @@ The primary action it can take is its Bite attack. This melee weapon attack has 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alligator Turtle
 
 *Medium* *Beast* *unaligned*
@@ -47,5 +48,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 5 (1d6 + 2) slashing damage and the target is grappled (escape DC 12). Until this grapple ends, the turtle can’t bite another target.
 
 
+</statblock>
 
 

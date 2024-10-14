@@ -38,6 +38,7 @@ Overall, the Grolar Bear Alpha is an exceptional creature that combines brute st
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grolar Bear Alpha
 
 *Large* *Monstrosity* *unaligned*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Versatile Coat:** White fur white to brown vice versa.
 
 
+</statblock>
 
 

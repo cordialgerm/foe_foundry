@@ -23,6 +23,7 @@ The Edjet's signature move is its Fire Breath, which can be used after a short o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Edjet
 
 *Medium* *Humanoid* *lawful neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharges after a Short or Long Rest):** The dragonborn edjet exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

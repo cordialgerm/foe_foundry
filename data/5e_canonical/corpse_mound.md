@@ -31,6 +31,7 @@ Overall, the Corpse Mound presents a powerful and tactical challenge that can sh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corpse Mound
 
 *Huge* *Undead* *Neutral Evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 18 (2d10 + 7) bludgeoning damage plus 10 (3d6) necrotic damage, and the target is grappled (escape DC 17). Until this grapple ends, the target is restrained.
 - **Bone Shard:** Ranged Weapon Attack: +11 to hit, range 30/120 ft., one target. Hit: 14 (2d6 + 7) piercing damage plus 10 (3d6) necrotic damage, and the target must succeed on a DC 17 Strength saving throw or be knocked prone and restrained as it is pinned to the ground by the shard. A creature, including the restrained target, can take its action to free the target by succeeding on a DC 17 Strength check.
 - **Envelop:** The corpse mound envelops a Large or smaller creature within 5 feet of it that is restrained by its Bone Shard or a Large or smaller creature grappled by it. The enveloped target is blinded, restrained, and unable to breathe, and it must succeed on a DC 17 Strength saving throw at the start of each of the mound’s turns or take 18 (2d10 + 7) bludgeoning damage. If the mound moves, the enveloped target moves with it. The mound can have no more than four creatures enveloped at a time.
+</statblock>
 
 

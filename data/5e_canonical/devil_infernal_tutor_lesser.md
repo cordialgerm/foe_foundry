@@ -49,6 +49,7 @@ Overall, the Infernal Tutor, Lesser is a complex and versatile creature, capable
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil, Infernal Tutor, Lesser
 
 *Medium* *Fiend* *lawful evil*
@@ -94,5 +95,6 @@ Source: 5e_artisinal_monsters
 - **:** [+]Stren[/+][+]gth of Character[/+] On successful save responds with magic insult if source is creature within 60'. Creature: 7 (2d6) psychic disadvantage on next save vs. tutor's spell (DC 15 Wis negates both).
 
 
+</statblock>
 
 

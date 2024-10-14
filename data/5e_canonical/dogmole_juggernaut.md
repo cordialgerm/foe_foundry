@@ -23,6 +23,7 @@ The Dogmole Juggernaut also has a unique reaction called "Wormkiller Rage." This
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dogmole Juggernaut
 
 *Large* *Monstrosity* *Unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Wormkiller Rage:** When the juggernaut takes damage from a Small or larger insectoid Beast, such as a giant centipede, or when it deals damage to such a creature, it enters a special rage for 3 rounds. While in this rage, it has advantage on attack rolls and Strength checks and deals an extra 5 (2d4) piercing damage with its Bite attack, but its Armor Class is reduced by 2. The juggernaut can’t end this rage willingly.
+</statblock>
 
 

@@ -27,6 +27,7 @@ All these traits make the Ghillie Dubh a formidable and insightful guardian of t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghillie Dubh
 
 *Medium* *Celestial* *lawful good*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Forest Knowledge (Recharge 6):** The ghillie dubh can alter nearby creatures’ knowledge of the forest, choosing one of the following. An effect lasts for 24 hours, until the creature leaves the ghillie dubh’s forest, or until the ghillie dubh dismisses it as a bonus action. <br>* Remove Knowledge. Each creature within 30 feet of the ghillie dubh must succeed on a DC 13 Charisma saving throw or become hopelessly lost in the ghillie dubh’s forest. The creature has disadvantage on Wisdom (Survival) checks and takes 50 percent more time on overland travel, even delaying clearheaded companions. <br>* Share Knowledge. Each creature within 30 feet of the ghillie dubh has advantage on Wisdom (Survival) checks. The creature can move at a fast pace through forest terrain, and difficult terrain composed of nonmagical plants doesn’t cost it extra movement.
 
 
+</statblock>
 
 

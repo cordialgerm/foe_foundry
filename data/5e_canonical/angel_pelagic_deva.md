@@ -42,6 +42,7 @@ Overall, the Pelagic Deva is an effective guardian of aquatic realms, capable of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angel, Pelagic Deva
 
 *Medium* *Celestial* *neutral good*
@@ -82,5 +83,6 @@ Source: 5e_artisinal_monsters
 - **Anoxic Aura (1/Day):** Removes oxygen from nearby water for 1 min. Each creature that requires oxygen to live (including air-breathing creatures under effects of water breathing) and starts its turn within 20' of deva: DC 17 Con save or begin suffocating. Deva never suffers effects of this; can choose any creatures in area to ignore it.
 
 
+</statblock>
 
 

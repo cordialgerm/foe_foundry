@@ -21,6 +21,7 @@ In combat, the Mytholabe has a Multiattack ability, allowing it to make three he
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mytholabe
 
 *Large* *Construct* *unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Purifying Resonance (Recharge 5-6):** The mytholabe thrums with a harmonic resonance that brings order to those within 30 feet. Each creature in that area must succeed on a DC 16 Constitution saving throw or have all conditions and magical effects on it ended immediately and any concentration it's maintaining broken.
 
 
+</statblock>
 
 

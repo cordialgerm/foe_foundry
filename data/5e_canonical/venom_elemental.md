@@ -19,6 +19,7 @@ In terms of actions, the Venom Elemental can perform a "Multiattack," allowing i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Venom Elemental
 
 *Large* *Elemental* *neutral*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) poison damage, and the creature must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its next turn.
 
 
+</statblock>
 
 

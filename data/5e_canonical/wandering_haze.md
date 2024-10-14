@@ -25,6 +25,7 @@ The Wandering Haze combines high mobility with a damaging presence, capable of m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wandering Haze
 
 *Gargantuan* *Ooze* *unaligned*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Acidic Cloudburst (Recharge 5–6):** Releases a deluge of acid. Each creature within 10 ft. of it: 35 (10d6) acid and speed halved 1 min (DC 17 Dex half damage and speed not reduced). A creature with halved speed can make a DC 17 Con save at the end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ This combination of abilities and attacks makes the Starving Specter a menacing 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Starving Specter
 
 *Medium* *Undead* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Bladed Arm:** Melee Weapon Attack: +6 to hit, 10 ft., one target, 10 (2d6+3) slashing damage. This attack can target a creature on the Ethereal or Material Plane.
 
 
+</statblock>
 
 

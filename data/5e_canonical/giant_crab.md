@@ -33,6 +33,7 @@ In terms of actions, the Giant Crab can perform a Claw attack. This melee weapon
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Crab
 
 *Medium beast, unaligned*
@@ -59,7 +60,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Claw***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) bludgeoning damage, and the target is grappled (escape DC 11). The crab has two claws, each of which can grapple only one target.
+***Claw***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) bludgeoning damage, and the target is grappled (escape DC 11). The crab has two claws, each of which can grapple only one target.</statblock>
+
 
 
 
@@ -67,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crab, Giant
 
 *Medium beast*
@@ -98,6 +101,7 @@ Source: 5e_artisinal_monsters
 
 - **Pincer Pinch.** One breathing creature grappled by the crab must succeed on a DC 12 STR save or be unable to speak or cast spells with verbal components and begin suffocating, as the crab squeezes the air from the target’s lungs. This effect lasts until the grapple ends.
 
+</statblock>
 
 
 
@@ -106,6 +110,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Crab
 
 *Medium* *Beast*
@@ -133,5 +138,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) bludgeoning damage and the target is grappled (escape DC 11). The crab has two claws and can grapple one creature with each.
 
 
+</statblock>
 
 

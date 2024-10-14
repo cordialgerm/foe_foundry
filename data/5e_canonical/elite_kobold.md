@@ -25,6 +25,7 @@ Another special action is Small but Fierce, which allows two Elite Kobolds stand
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elite Kobold
 
 *Small* *Humanoid* *lawful neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Small but Fierce:** Two elite kobolds within 5 feet of each other can combine their actions to slam their mining picks into the ground and split the earth in a 20-foot line that is 5 feet wide, extending from one of the pair. Each creature in that line must make a DC 13 Dexterity saving throw. On a failure, a creature takes 7 (2d6) bludgeoning damage and is knocked prone. On a success, a creature takes half the damage and isn't knocked prone.
 
 
+</statblock>
 
 

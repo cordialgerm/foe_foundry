@@ -23,6 +23,7 @@ Overall, the J’ba Fofi Spider is a fierce opponent, particularly in forested t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # J’ba Fofi Spider
 
 *Large* *Beast* *Unaligned*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 8 (1d10 + 3) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hp, the target is stable but poisoned for 1 hour, even after regaining hp, and is paralyzed while poisoned in this way.
 - **Call Spiderlings (1/Day):** The j’ba fofi releases pheromones and calls 1 swarm of spiders. The spiders arrive in 1d4 rounds, acting as allies of the j’ba fofi and obeying its pheromone commands. The spiders remain for 1 hour, until the j’ba fofi dies, or until the j’ba fofi dismisses them as a bonus action.
+</statblock>
 
 

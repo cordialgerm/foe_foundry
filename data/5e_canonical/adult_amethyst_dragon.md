@@ -29,6 +29,7 @@ Overall, the Adult Amethyst Dragon serves as an unparalleled foe or potential al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Amethyst Dragon
 
 *Huge* *Dragon*
@@ -78,5 +79,6 @@ Source: 5e_artisinal_monsters
 - **Stupefy:** The dragon targets a creature within 60 feet. If the target is concentrating on a spell, it must make a DC 19 Constitution saving throw or lose concentration.
 - **Psionic Wave (Costs 2 Actions):** The dragon uses Psionic Wave.
 - **Captivating Harmonics (1/Day):** Each creature of the dragons choice within 90 feet makes a DC 16 Wisdom saving throw. On a failure, it becomes psionically charmed by the dragon for 1 minute. A creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

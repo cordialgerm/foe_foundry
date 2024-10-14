@@ -23,6 +23,7 @@ The Dream Squire's bond with its master can be disrupted through magical effects
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dream Squire
 
 *Medium* *Fey* *neutral*
@@ -61,5 +62,6 @@ A dispel evil and good spell's break enchantment option that targets a dream squ
 - **For the Master:** When the dream squire's master is targeted by an attack or spell, the squire magically teleports to an unoccupied space within 5 feet of the master, and the attack or spell targets the squire instead. If the attack or spell deals damage, the dream squire takes half damage from it. To use this ability, the master and squire must be on the same plane.
 
 
+</statblock>
 
 

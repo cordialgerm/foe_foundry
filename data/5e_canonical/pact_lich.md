@@ -23,6 +23,7 @@ The Pact Lich can also utilize legendary actions, such as casting an at-will spe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pact Lich
 
 *Medium* *Undead* *any evil alignment*
@@ -70,5 +71,6 @@ The pact lich can take 3 legendary actions, choosing from the options below. Onl
 - **Fiendish Resilience:** The pact lich chooses one damage type, gaining resistance to that damage type until it chooses a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance.
 - **Maddening Touch (Costs 2 Actions):** The pact lich uses its Maddening Touch.
 - **Eldritch Master (Costs 3 Actions, 1/Day):** The lich entreats its patron for aid, regaining all expended spells.
+</statblock>
 
 

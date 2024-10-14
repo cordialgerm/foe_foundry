@@ -23,6 +23,7 @@ Overall, the Ghoulsteed is a dangerous undead opponent, leveraging its mobility,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghoulsteed
 
 *Large* *Undead* *neutral evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage and the ghoulsteed gains 5 (1d10) temporary hp. These temporary hp stack with each other, but the ghoulsteed can only have a maximum of 10 temporary hp at one time.
 
 
+</statblock>
 
 

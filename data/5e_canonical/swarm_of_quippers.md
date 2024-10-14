@@ -23,6 +23,7 @@ When it comes to actions, the Swarm of Quippers can perform a melee attack known
 
 Source: 5e_srd
 
+<statblock>
 ### Swarm of Quippers
 
 *Medium swarm of Tiny beasts, unaligned*
@@ -55,7 +56,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bites***. *Melee Weapon Attack:* +5 to hit, reach 0 ft., one creature in the swarm's space. *Hit:* 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.
+***Bites***. *Melee Weapon Attack:* +5 to hit, reach 0 ft., one creature in the swarm's space. *Hit:* 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.</statblock>
+
 
 
 
@@ -63,6 +65,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Quippers
 
 *Medium* *Beast*
@@ -93,5 +96,6 @@ Source: 5e_artisinal_monsters
 - **Bites:** Melee Weapon Attack: +5 to hit, reach 0 ft., one target. Hit: 10 (4d4) piercing damage  or 5 (2d4) piercing damage if the swarm is bloodied. On a hit  the swarm can use a bonus action to make a second bites attack.
 
 
+</statblock>
 
 

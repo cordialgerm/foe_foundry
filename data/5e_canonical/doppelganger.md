@@ -24,6 +24,7 @@ For its bonus actions, the Doppelganger can use Shapeshift to transform into any
 
 Source: 5e_srd
 
+<statblock>
 ## Doppelganger
 
 *Medium monstrosity (shapechanger), neutral*
@@ -60,7 +61,8 @@ Source: 5e_srd
 
 ***Slam***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 7 (1d6+4) bludgeoning damage.
 
-***Read Thoughts***. The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.
+***Read Thoughts***. The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.</statblock>
+
 
 
 
@@ -68,6 +70,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Doppelganger
 
 *Medium* *Monstrosity*
@@ -96,5 +99,6 @@ Source: 5e_artisinal_monsters
 - **Read Thoughts:** The doppelganger magically reads the surface thoughts of one creature within 60 feet that it can see. Until the end of its turn, it has advantage on attack rolls and on Deception, Insight, Intimidation, and Persuasion checks against the creature.
 
 
+</statblock>
 
 

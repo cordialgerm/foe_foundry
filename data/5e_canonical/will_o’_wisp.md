@@ -40,6 +40,7 @@ Overall, the Will-o’-Wisp's blend of speed, evasion, and tactical manipulation
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Will-o’-Wisp
 
 *Tiny undead*
@@ -81,5 +82,6 @@ Source: 5e_artisinal_monsters
 
 - **Consume Life.** When a creature the will-o’-wisp can see within 15 feet of it is reduced to 0 HP, the will-o’-wisp can consume some of that creature’s fading life. The will-o’-wisp gains 7 (2d6) temporary HP, and the creature has disadvantage on the next death save it makes before the end of the wisp’s next turn.
 
+</statblock>
 
 

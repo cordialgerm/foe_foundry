@@ -19,6 +19,7 @@ In combat, the Clockwork Beetle has one primary action: the Bite attack. This is
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Beetle
 
 *Tiny* *Construct* *Unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

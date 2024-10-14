@@ -25,6 +25,7 @@ Finally, the Shadow River Lord possesses a powerful ability called Shadow Geyser
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow River Lord
 
 *Medium* *Undead* *neutral evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Geyser (Recharge 6):** The shadow river lord expels a geyser of shadowy water from its staff in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 21 (6d6) necrotic damage and 21 (6d6) cold damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Ion Slime is a dynamic and versatile ooze that can turn the tide of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ion Slime
 
 *Small* *Ooze* *unaligned*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Supercharge (Recharge 5–6):** Gathers ambient electricity to supercharge itself for 3 rounds. While supercharged slime gains +2 bonus to its AC and it gains an additional action on each of its turns. At end of the third round if the slime hasn’t used the Discharge action it suffers feedback taking 18 (4d8) force. Its supercharged state then ends.
 
 
+</statblock>
 
 

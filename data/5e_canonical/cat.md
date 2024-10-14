@@ -50,6 +50,7 @@ For bonus actions, the cat can use its Charming Mewl ability. This allows it to 
 
 Source: 5e_srd
 
+<statblock>
 ### Cat
 
 *Tiny beast, unaligned*
@@ -76,7 +77,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Claws.*** *Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.
+***Claws.*** *Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.</statblock>
+
 
 
 
@@ -84,6 +86,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cat
 
 *Tiny* *Beast*
@@ -112,6 +115,7 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 slashing damage. If this damage would reduce a Small or larger target to 0 hit points  the target takes no damage from this attack.
 
 
+</statblock>
 
 
 
@@ -120,6 +124,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cat
 
 *Tiny beast*
@@ -151,5 +156,6 @@ Source: 5e_artisinal_monsters
 
 - **Charming Mewl.** The cat emits a soft, high-pitched meow at a creature it can see within 10 feet of it. The target must succeed on a DC 11 CHA save or be charmed until the end of its next turn. If a creature’s save is successful or the effect ends for it, the creature is immune to the cat’s Charming Mewl for the next 24 hours.
 
+</statblock>
 
 

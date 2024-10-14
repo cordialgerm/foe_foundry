@@ -35,6 +35,7 @@ Lastly, in terms of defense, the Cloud Giant can use "Cirrus Deflection" as a re
 
 Source: 5e_srd
 
+<statblock>
 ### Cloud Giant
 
 *Huge giant, neutral good (50%) or neutral evil (50%)*
@@ -75,7 +76,8 @@ At will: *detect magic*, *fog cloud*, *light*
 
 ***Morningstar***. *Melee Weapon Attack:* +12 to hit, reach 10 ft., one target. *Hit:* 21 (3d8+8) piercing damage.
 
-***Rock***. *Ranged Weapon Attack:* +12 to hit, range 60/240 ft., one target. *Hit:* 30 (4d10+8) bludgeoning damage.
+***Rock***. *Ranged Weapon Attack:* +12 to hit, range 60/240 ft., one target. *Hit:* 30 (4d10+8) bludgeoning damage.</statblock>
+
 
 
 
@@ -83,6 +85,7 @@ At will: *detect magic*, *fog cloud*, *light*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cloud Giant
 
 *Huge* *Giant*
@@ -121,6 +124,7 @@ Source: 5e_artisinal_monsters
 - **Misty Step (2nd-Level; V):** The giant teleports to an unoccupied space it can see within 30 feet. The giant can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 
 
@@ -129,6 +133,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cloud Giant
 
 *Huge giant*
@@ -169,5 +174,6 @@ Source: 5e_artisinal_monsters
 
 - **Cirrus Deflection.** The cloud giant creates a bit of hardened cloud between it and an attacker, increasing the giant’s AC by 4. To do so, it must be able to see the attacker.
 
+</statblock>
 
 

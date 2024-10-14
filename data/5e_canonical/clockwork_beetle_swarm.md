@@ -23,6 +23,7 @@ In combat, the swarm uses its Bites action, which is a melee weapon attack with 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Beetle Swarm
 
 *Large* *Swarm* *Construct* *Unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Bites:** Melee Weapon Attack: +5 to hit, reach 0 ft., one target in the swarm’s space. Hit: 18 (4d8) piercing damage, or 9 (2d8) piercing damage if the swarm has half of its hp or fewer, plus 3 (1d6) poison damage.
+</statblock>
 
 

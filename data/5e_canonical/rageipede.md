@@ -21,6 +21,7 @@ The Claw attack, on the other hand, also has a +4 to hit and deals 5 piercing da
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rageipede
 
 *Small* *Beast* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 
 
+</statblock>
 
 

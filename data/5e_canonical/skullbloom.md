@@ -21,6 +21,7 @@ Overall, the Skullbloom presents a unique challenge for adventurers, utilizing i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skullbloom
 
 *Medium plant*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Instinct to Pursue.** The skullboom takes the Dash action toward an uninfected Humanoid it can see or sense.
 
+</statblock>
 
 

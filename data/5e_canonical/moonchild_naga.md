@@ -23,6 +23,7 @@ In combat, the Moonchild Naga has several actions at its disposal. Its Bite atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moonchild Naga
 
 *Large* *Monstrosity* *neutral evil*
@@ -59,5 +60,6 @@ At will: charm person, friends, mage hand, message, minor illusion, poison spray
 - **Starry Gaze:** The moonchild naga's bottomless gaze inexorably draws the eye of one target within 30 feet. If the target can see the naga, it must succeed on a DC 15 Wisdom saving throw or be stunned until the end of the naga's next turn. If the target's saving throw is successful, it is immune to the naga's gaze for the next 24 hours.
 
 
+</statblock>
 
 

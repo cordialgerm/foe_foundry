@@ -23,6 +23,7 @@ For bonus actions, the Far Darrig can activate its Nimble Woodsman ability, perm
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Far Darrig
 
 *Small* *Fey* *Neutral*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Nimble Woodsman:** The far darrig takes the Dash or Disengage action. The far darrig can use this bonus action only if it is in a forest.
+</statblock>
 
 

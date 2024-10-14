@@ -21,6 +21,7 @@ In combat, the Cauldronborn can execute a "Multiattack," allowing it to make two
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cauldronborn
 
 *Small* *Construct* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Call Potion (Recharge 5-6):** The cauldronborn releases a hungry screech, magically reaching out to nearby potions. All potions within 10 feet of the cauldronborn magically move toward the cauldronborn by rolling out of backpacks, hopping off of belts, unburying themselves, etc. A creature wearing or carrying a potion must succeed on a DC 13 Dexterity saving throw or its potion moves to within 5 feet of the cauldronborn. The target must make a separate saving throw for each potion it is attempting to keep in its possession.
 
 
+</statblock>
 
 

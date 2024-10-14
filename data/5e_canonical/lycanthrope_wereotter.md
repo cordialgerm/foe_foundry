@@ -23,6 +23,7 @@ As a bonus action, the Wereotter possesses the Change Shape ability, allowing it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lycanthrope, Wereotter
 
 *Medium* *Humanoid* *chaotic good*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Transforms into a Med otter-humanoid hybrid or into Large otter or back into true form: Humanoid. Stats other than size are same in each form. Items worn/ carried not transformed. Reverts to its true form if it dies.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Another action it can utilize is "Thunderous Bray," which can be activated once 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hippopotamus
 
 *Large* *Beast* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Thunderous Bray (Recharge 5–6):** Emits a resounding bray in a 15 ft. cone. All in area make a DC 13 Con save. On a failure a creature takes 14 (4d6) thunder and is incapacitated until the end of its next turn. On a success a creature takes half the damage and isn’t incapacitated.
 
 
+</statblock>
 
 

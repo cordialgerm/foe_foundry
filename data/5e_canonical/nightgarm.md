@@ -25,6 +25,7 @@ Additionally, the Nightgarm can use its Lupine Howl ability once per day to magi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nightgarm
 
 *Large* *Monstrosity* *Chaotic Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) piercing damage. If the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be swallowed. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the nightgarm, and it takes 10 (3d6) acid damage at the start of each of the nightgarm’s turns. The nightgarm can have only one creature swallowed at a time.
 - **Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.
 - **Lupine Howl (1/Day):** The nightgarm magically calls 2d4 wolves or 2 dire wolves. The wolves arrive in 1d4 rounds, acting as allies of the nightgarm and obeying her telepathic commands. The wolves remain for 1 hour, until the nightgarm dies, or until the nightgarm dismisses them as a bonus action.
+</statblock>
 
 

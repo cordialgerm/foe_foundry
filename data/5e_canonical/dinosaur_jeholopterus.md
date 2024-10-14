@@ -33,6 +33,7 @@ Overall, the Jeholopterus acts as a strategic creature, using its mobility and u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dinosaur, Jeholopterus
 
 *Small* *Beast* *unaligned*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit, 5 ft., one creature,. 7 (1d6+3) slashing damage.
 
 
+</statblock>
 
 

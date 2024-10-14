@@ -19,6 +19,7 @@ In terms of offensive capabilities, the Luck Leech can perform a Multiattack, al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Luck Leech
 
 *Medium* *Fey* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Feast of Fortune (Recharge 6):** Each creature the luck leech can see within 30 feet of it must make a DC 16 Charisma saving throw. On a failure, the creature takes 27 (6d8) psychic damage, becomes blinded until the end of its next turn, and is cursed with falling fortunes. On a success, a creature takes half the damage and isn’t blinded or cursed. For each creature that fails this saving throw, the luck leech gains 1 luck point.
 
 
+</statblock>
 
 

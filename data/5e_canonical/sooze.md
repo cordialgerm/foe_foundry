@@ -21,6 +21,7 @@ In terms of actions, the Sooze possesses the Oozing Slam ability, which is a mel
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sooze
 
 *Medium* *Aberration* *lawful neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Merge:** A shoth who has less than half its maximum hp can merge with any other shoth creature within 10 feet, adding its remaining hp to that creature's. The hp gained this way can exceed the normal maximum of that creature. A shoth can accept one such merger every 24 hours.
 
 
+</statblock>
 
 

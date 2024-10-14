@@ -25,6 +25,7 @@ The creature can also utilize the Animate Plants action, which recharges after a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Blight
 
 *Small* *Plant* *neutral evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Animate Plants (Recharges after a Short or Long Rest):** The shadow blight magically animates 1d4 plants within 60 feet of it, turning them into awakened shrubs under its control. These plants' attacks deal an additional 3 (1d6) necrotic damage. If the shrubs are not destroyed before 1 hour passes, they become new shadow blights.
 
 
+</statblock>
 
 

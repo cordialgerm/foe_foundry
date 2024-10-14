@@ -23,6 +23,7 @@ Overall, the Giant Poisonous Frog is a unique creature that combines offensive c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frog, Giant Poisonous
 
 *Large beast*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 
 - **Reeling Tongue.** The frog lashes out its tongue at one Large or smaller creature it can see within 20 feet of it. The target must succeed on a DC 13 STR save or be pulled up to 15 feet closer to the frog.
 
+</statblock>
 
 

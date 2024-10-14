@@ -21,6 +21,7 @@ In combat, the spider can execute a "Multiattack," allowing it to make two Trimm
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Weaving Spider
 
 *Tiny* *Construct* *Unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The clockwork weaving spider makes two Trimming Blade attacks or two Poisoned Needle Shuttle attacks.
 - **Trimming Blade:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage.
 - **Poisoned Needle Shuttle:** Ranged Weapon Attack: +5 to hit, range 30 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or become paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

@@ -25,6 +25,7 @@ Additionally, as a bonus action, the Coven Sea Hag can invoke Horrific Transform
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Coven Sea Hag
 
 *Medium* *Fey*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Horrific Transformation:** The hag briefly takes on a terrifying form or reveals its true form. Each creature within 30 feet that can see the hag makes a DC 11 Wisdom saving throw. A creature under the hags curse automatically fails this saving throw. On a failure, the creature is frightened until the end of its next turn. If a creatures saving throw is successful, it is immune to the hags Horrific Transformation for 24 hours.
 
 
+</statblock>
 
 

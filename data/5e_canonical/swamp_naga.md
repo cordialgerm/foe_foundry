@@ -35,6 +35,7 @@ Overall, the Swamp Naga is a cunning and dangerous creature, skilled in manipula
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swamp Naga
 
 *Large* *Monstrosity* *lawful evil*
@@ -74,5 +75,6 @@ Cantrips (at will): dancing lights, mage hand, message, poison spray
 - **Constrict:** Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 14 (3d6 + 4) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the target is restrained, and the naga can’t constrict another target.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ In terms of actions, the Fire Imp can perform a melee spell attack with its Fire
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire Imp
 
 *Tiny* *Fiend* *lawful evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Hurl Flame:** Ranged Spell Attack: +4 to hit, range 150 ft., one target. Hit: 5 (2d4) fire damage and if the target is a flammable object that isn't being worn or carried, it also catches fire.
 
 
+</statblock>
 
 

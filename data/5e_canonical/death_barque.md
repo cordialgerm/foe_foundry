@@ -25,6 +25,7 @@ Finally, the Death Barque can unleash a potent Necrotic Breath attack, which rec
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Death Barque
 
 *Gargantuan* *Undead* *neutral evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Necrotic Breath (Recharge 5-6):** The death barque exhales a dark cloud of necrotic energy in a 60-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 54 (12d8) necrotic damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Barbed is a clever and dangerous foe that thrives in a team and the
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # The Barbed
 
 *Small* *Humanoid* *lawful evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Javelin:** Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 
 
+</statblock>
 
 

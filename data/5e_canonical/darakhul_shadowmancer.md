@@ -21,6 +21,7 @@ Overall, the Darakhul Shadowmancer is a challenging foe that blends stealth, mag
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Darakhul Shadowmancer
 
 *Medium* *Undead* *neutral evil*
@@ -65,5 +66,6 @@ Cantrips (at will): acid splash, chill touch, mage hand, prestidigitation
 - **Dagger:** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 
 
+</statblock>
 
 

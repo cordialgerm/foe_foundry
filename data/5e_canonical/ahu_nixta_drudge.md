@@ -25,6 +25,7 @@ For its actions during combat, the Ahu-Nixta Drudge can use whirring blades as a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ahu-Nixta Drudge
 
 *Medium* *Aberration* *neutral evil*
@@ -58,5 +59,6 @@ At will: fire bolt  (1d10)
 - **Whirring Blades:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage.
 
 
+</statblock>
 
 

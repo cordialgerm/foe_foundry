@@ -27,6 +27,7 @@ The Derro can also unleash a Void Speech Rant, which recharges on a roll of 5 or
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Derro, Voidwarped
 
 *Small* *Humanoid* *neutral evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Void Speech Rant (Recharge 5–6):** Spews a tirade of Void Speech. Each creature within 40' of it that can hear the tirade: 27 (5d10) psychic and is incapacitated until the end of its next turn (DC 15 Wis half damage and isn’t incapacitated).
 
 
+</statblock>
 
 

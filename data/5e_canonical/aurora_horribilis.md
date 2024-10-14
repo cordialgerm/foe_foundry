@@ -29,6 +29,7 @@ Overall, the Aurora Horribilis is a terrifying and complex creature that present
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aurora Horribilis
 
 *Large* *Aberration* *chaotic neutral*
@@ -65,5 +66,6 @@ This trait is disrupted while the aurora is incapacitated or has a speed of 0.
 - **Void Song:** The aurora horribilis creates a dissonant song. Each creature within 100 feet of the aurora that can hear the song must succeed on a DC 16 Wisdom saving throw or be charmed until the song ends. This song has no effect on constructs, undead, or creatures that can speak or understand Void Speech. The aurora must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the aurora is incapacitated.<br><br>While charmed by the aurora, the target suffers the effects of the confusion spell and hums along with the maddening tune. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A target that successfully saves is immune to this aurora’s song for the next 24 hours. A target that stays charmed by the aurora’s song for more than 1 minute gains one long-term madness.
 
 
+</statblock>
 
 

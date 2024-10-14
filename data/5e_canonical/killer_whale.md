@@ -21,6 +21,7 @@ In terms of actions, the Killer Whale can perform a Bite attack, making a melee 
 
 Source: 5e_srd
 
+<statblock>
 ### Killer Whale
 
 *Huge beast, unaligned*
@@ -51,7 +52,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 21 (5d6+4) piercing damage.
+***Bite***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 21 (5d6+4) piercing damage.</statblock>
+
 
 
 
@@ -59,6 +61,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Killer Whale
 
 *Huge* *Beast*
@@ -88,5 +91,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (3d6+4) piercing damage. If the target is a creature  it is grappled (escape DC 14). Until this grapple ends  the whale can't bite another target and it has advantage on bite attacks against the creature it is grappling.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Sunset Raptor is a cunning and agile adversary, utilizing its charm
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sunset Raptor
 
 *Medium* *Monstrosity* *unaligned*
@@ -55,5 +56,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Claw:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage
 
 
+</statblock>
 
 

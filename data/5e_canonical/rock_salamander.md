@@ -37,6 +37,7 @@ Through these abilities and characteristics, the Rock Salamander proves to be a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rock Salamander
 
 *Tiny* *Elemental* *unaligned*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Manipulate Stone:** If it is touching stone it can manipulate stone contiguous with its location to create one of the following:Rumbling Earth: One creature touching stone within 10 ft. of salamander is knocked prone (DC 12 Dex negates).Softened Earth One creature touching stone within 10 ft. of salamander is restrained by softened mud-like stone until the end of its next turn (DC 12 Str negates).Stone Armor Salamander’s AC +2 until start of its next turn.
 
 
+</statblock>
 
 

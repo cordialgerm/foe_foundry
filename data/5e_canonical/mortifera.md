@@ -25,6 +25,7 @@ Mortifera can utilize its Chomp action against one creature it has grappled, pul
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mortifera
 
 *Large* *Aberration* *chaotic neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Poison Spray (Recharge 5–6):** Sprays poison from its central maw in a 30' cone. Each creature in that area: 27 (6d8) poison (DC 15 Dex half).
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ The Valkyrie also has a noteworthy reaction known as Ascension. When a friendly 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Valkyrie
 
 *Medium* *Celestial* *Neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Ascension:** When a friendly creature the valkyrie can see and within its Aura of Valor is reduced to 0 hp while engaged in melee combat, the valkyrie can reincarnate the creature as a gladiator. If the gladiator reduces at least three creatures to 0 hp within 1 minute of its reincarnation, it transforms into an einherjar. The valkyrie can provide ascension to up to two creatures each hour with this reaction.
+</statblock>
 
 

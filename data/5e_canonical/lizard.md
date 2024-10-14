@@ -35,6 +35,7 @@ In summary, the lizard is a low-impact creature with limited combat value but of
 
 Source: 5e_srd
 
+<statblock>
 ### Lizard
 
 *Tiny beast, unaligned*
@@ -57,7 +58,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.
+***Bite***. *Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.</statblock>
+
 
 
 
@@ -65,6 +67,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizard
 
 *Tiny* *Beast*
@@ -88,6 +91,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage. If this damage would reduce a Small or larger target to 0 hit points  the target takes no damage from this attack.
 
 
+</statblock>
 
 
 
@@ -96,6 +100,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizard
 
 *Tiny beast*
@@ -127,5 +132,6 @@ Source: 5e_artisinal_monsters
 
 - **Detach Tail (5 HP or Fewer, Recharges after a Short or Long Rest).** When the lizard takes damage, it can detach its tail, reducing the damage by 2 (1d4), and immediately move up to its speed without provoking opportunity attacks.
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ As a bonus action, the Psychopomp Angel can use "Spirit Usher" three times per d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angel, Psychopomp
 
 *Medium* *Celestial* *lawful neutral*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Spirit Usher (3/Day):** Wards a creature with divine power for 1 hr. While warded Celestials Fiends and Undead have disadvantage on attack rolls vs. the creature and creature can’t be charmed frightened or possessed by them. Warded creature gains 11 temp hp and if slain can’t be raised as an Undead for 1 year.
 
 
+</statblock>
 
 

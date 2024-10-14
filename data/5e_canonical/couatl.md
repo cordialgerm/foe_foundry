@@ -49,6 +49,7 @@ Overall, the Couatl is a powerful celestial being with excellent combat abilitie
 
 Source: 5e_srd
 
+<statblock>
 ## Couatl
 
 *Medium celestial, lawful good*
@@ -95,7 +96,8 @@ At will: *detect evil and good*, *detect magic*, *detect thoughts*
 
 ***Change Shape***. The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).
 
-In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.
+In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.</statblock>
+
 
 
 
@@ -103,6 +105,7 @@ In a new form, the couatl retains its game statistics and ability to speak, but 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Couatl
 
 *Medium* *Celestial*
@@ -139,6 +142,7 @@ Source: 5e_artisinal_monsters
 - **Shielding Wing:** When the couatl or a creature within 5 feet is attacked, the couatl can interpose a wing and impose disadvantage on the attack.
 
 
+</statblock>
 
 
 
@@ -147,6 +151,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Couatl
 
 *Medium celestial*
@@ -188,5 +193,6 @@ Source: 5e_artisinal_monsters
 
 - **Rainbow Shield.** When a creature the couatl can see within 30 feet of it, including itself, is targeted with an attack, the couatl can interpose a shield of rainbow-hued light between the attacker and the creature. The attacker has disadvantage on the attack roll. If the protected creature hasn’t attacked or harmed another creature within the last minute, the attacker’s attack misses instead.
 
+</statblock>
 
 

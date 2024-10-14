@@ -25,6 +25,7 @@ Overall, the Ningyo is a cunning and dangerous creature, perfect for ambush tact
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ningyo
 
 *Small* *Aberration* *neutral evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Share Pain:** When the ningyo takes damage, it can choose to take half the damage instead. The ningyo then chooses a creature within 60 feet. The target must succeed on a DC 15 Constitution saving throw or have disadvantage until the end of its next turn as it is wracked with the pain of the attack.
 
 
+</statblock>
 
 

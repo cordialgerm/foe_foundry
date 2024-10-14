@@ -17,6 +17,7 @@ In terms of actions, the Sinstar Thrall can make a melee weapon attack with a "S
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sinstar Thrall
 
 *Medium* *Plant* *unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Shoot Spines (Recharge 5–6):** Sprays spines in a burst around itself. Each creature within 15 ft. of it must make a DC 13 Dex save. On a failure a creature takes 10 (3d6) piercing damage and is paralyzed until the end of its next turn. On a success a creature takes half the damage and isn’t paralyzed.
 
 
+</statblock>
 
 

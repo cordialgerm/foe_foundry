@@ -44,6 +44,7 @@ As a bonus action, the Fire Elemental can use "Fiery Dash" (which recharges on a
 
 Source: 5e_srd
 
+<statblock>
 ### Fire Elemental
 
 *Large elemental, neutral*
@@ -80,7 +81,8 @@ Source: 5e_srd
 
 ***Multiattack***. The elemental makes two touch attacks.
 
-***Touch***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.
+***Touch***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.</statblock>
+
 
 
 
@@ -88,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire Elemental
 
 *Large* *Elemental*
@@ -123,6 +126,7 @@ Source: 5e_artisinal_monsters
 - **Wildfire (Recharge 4-6):** The elemental moves up to half its Speed without provoking opportunity attacks. It can enter the spaces of hostile creatures but not end this movement there. When a creature shares its space with the elemental for the first time during this movement  the creature is subject to the elementals Fiery Aura and the elemental can make a slam attack against that creature.
 
 
+</statblock>
 
 
 
@@ -131,6 +135,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire Elemental
 
 *Large elemental*
@@ -169,5 +174,6 @@ Source: 5e_artisinal_monsters
 
 - **Fiery Dash (Recharge 4–6).** The elemental moves up to 20 feet in a straight line and can move through the space of any Large or smaller creature without provoking opportunity attacks. Each space along that line catches fire until the start of the elemental’s next turn. A creature that enters a burning space for the first time on a turn or starts its turn there must succeed on a DC 14 DEX save or take 5 (1d10) fire damage.
 
+</statblock>
 
 

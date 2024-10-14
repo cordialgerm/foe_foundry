@@ -29,6 +29,7 @@ In combat, the ghoul can trigger the Coalesce reaction, allowing it to change fr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bonepowder Ghoul
 
 *Small* *Undead* *Neutral Evil*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Coalesce:** When a bonepowder ghoul deals necrotic damage with Gravedust to at least one creature that isn’t a Construct or Undead, it can magically transform from its dusty form into a coalesced form. Its statistics are the same in each form, except it can speak audibly only in its coalesced form. The coalesced form lasts for a number of minutes equal to the total necrotic damage it dealt with Gravedust to creatures that aren’t Constructs or Undead or until the ghoul ends it as a bonus action.
+</statblock>
 
 

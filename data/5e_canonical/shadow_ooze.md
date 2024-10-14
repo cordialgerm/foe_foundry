@@ -23,6 +23,7 @@ The Snuff Out action allows the ooze to extinguish a light source within 60 feet
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Ooze
 
 *Medium* *Ooze* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Snuff Out:** The ooze extinguishes one natural or magical light source within 60 feet of it. If the light source is created by a spell, it is dispelled.
 
 
+</statblock>
 
 

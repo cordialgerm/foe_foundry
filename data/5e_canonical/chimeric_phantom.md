@@ -21,6 +21,7 @@ In combat, the Chimeric Phantom can take a Multiattack action, allowing it to ma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chimeric Phantom
 
 *Medium* *Undead* *chaotic neutral*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Maddening Grasp:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) necrotic damage.
 
 
+</statblock>
 
 

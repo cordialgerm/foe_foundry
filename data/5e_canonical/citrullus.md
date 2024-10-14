@@ -19,6 +19,7 @@ As a bonus action, the Citrullus can use Creeping Seedlings, which allows it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Citrullus
 
 *Medium* *Plant* *Unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Creeping Seedlings:** The seeds in the sticky juice grow viny tendrils and drag each creature restrained by Bile Spray and Gush up to 25 feet straight toward the citrullus.
+</statblock>
 
 

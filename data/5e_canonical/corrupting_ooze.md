@@ -23,6 +23,7 @@ Additionally, as a bonus action, the Corrupting Ooze can use "Reshape Body" to m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corrupting Ooze
 
 *Large* *Ooze* *Neutral Evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Reshape Body:** The corrupting ooze can reshape its mass into a vaguely Humanoid shape or back into its amorphous shape. It reverts to its amorphous shape if it dies. While in a Humanoid shape, it can take any action that requires hands, except it can’t wield weapons or a shield or don armor.
+</statblock>
 
 

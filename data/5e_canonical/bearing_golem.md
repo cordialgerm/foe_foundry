@@ -23,6 +23,7 @@ In combat, the Bearing Golem can make multiattacks, executing either two slam at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bearing Golem
 
 *Medium* *Construct* *unaligned*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Scattershot (Recharge 5-6):** The golem’s body explodes. Each creature within 15 feet of the golem must make a DC 15 Dexterity saving throw. On a failure, a creature takes 36 (8d8) bludgeoning damage and is knocked prone. On a success, a creature takes half the damage and isn’t knocked prone. The golem immediately scatters.
 
 
+</statblock>
 
 

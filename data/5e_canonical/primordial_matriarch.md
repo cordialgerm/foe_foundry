@@ -27,6 +27,7 @@ The Primordial Matriarch stands as a terrifying embodiment of elemental chaos an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Primordial Matriarch
 
 *Gargantuan* *Elemental* *neutral*
@@ -78,5 +79,6 @@ Source: 5e_artisinal_monsters
 - **Fly:** Up to half her flying speed with o provoking opportunity attacks.
 - **Create Elemental (2):** Uses Create Elementals.
 - **Return to Mother (3):** Absorbs Elemental within 10 ft. of her gaining temp hp equal to 10 times the CR of Elemental absorbed.
+</statblock>
 
 

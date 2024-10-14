@@ -30,6 +30,7 @@ Overall, the Kobold Spellclerk is a crafty and multifaceted creature, capable of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold Spellclerk
 
 *Small* *Humanoid* *lawful neutral*
@@ -64,5 +65,6 @@ Cantrips (at will): fire bolt, message, minor illusion
 - **Dagger:** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 
 
+</statblock>
 
 

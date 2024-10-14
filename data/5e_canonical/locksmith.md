@@ -37,6 +37,7 @@ Overall, the Locksmith serves as a sturdy combatant that excels in manipulation 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Locksmith
 
 *Medium* *Construct* *unaligned*
@@ -73,5 +74,6 @@ At will: mending
 - **Acid Wash (Recharge 5-6):** The locksmith emits a cloud of rust in a 60-foot cone. Each creature in that area must succeed on a DC 16 Dexterity saving throw, taking 35 (10d6) acid damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

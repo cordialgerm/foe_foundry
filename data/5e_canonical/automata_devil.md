@@ -25,6 +25,7 @@ The Shredding Maw action allows the Automata Devil to pull a grappled creature t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Automata Devil
 
 *Large* *Fiend* *Lawful Evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Whip:** Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 12 (2d4 + 7) slashing damage, and the target is grappled (escape DC 17). The automata devil has two whips, each of which can grapple only one target.
 - **Shredding Maw:** One creature grappled by the automata devil is pulled up to 10 feet toward the devil’s central maw, which shreds the creature with churning gears, razor teeth, and whirling blades. The target must make a DC 17 Strength saving throw, taking 36 (8d8) slashing damage on a failed save, or half as much damage on a successful one.
 - **Teleport:** The automata devil magically teleports, along with any equipment it is wearing or carrying up to 120 feet to an unoccupied space it can see.
+</statblock>
 
 

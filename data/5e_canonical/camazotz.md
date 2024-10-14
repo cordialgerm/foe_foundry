@@ -25,6 +25,7 @@ Camazotz can further utilize legendary actions, allowing it to detect creatures,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Camazotz
 
 *Large* *Fiend* *Chaotic Evil*
@@ -80,5 +81,6 @@ Camazotz can take 3 legendary actions, choosing from the options below. Only one
 - **Move:** Camazotz moves up to his speed, or he flies up to half his speed. This movement doesn’t provoke opportunity attacks.
 - **Cast a Spell (Costs 2 Actions):** Camazotz uses Spellcasting.
 - **Fiery Wing Beat (Costs 2 Actions):** Camazotz beats his wings, extinguishing mundane and magical light sources. Each creature within 10 feet of Camazotz must succeed on a DC 22 Dexterity saving throw or take 14 (4d6) fire damage and be knocked prone.
+</statblock>
 
 

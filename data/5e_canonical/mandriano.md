@@ -21,6 +21,7 @@ Its special ability, Consume the Spark, allows it to drain the essence of any gr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mandriano
 
 *Large* *Plant* *lawful evil*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Consume the Spark:** The mandriano drains the essence of one grappled target. The target must make a DC 14 Constitution saving throw, taking 13 (4d6) necrotic damage on a failed save, or half as much damage on a successful one. The target's hp maximum is reduced by an amount equal to the necrotic damage taken, and the mandriano regains hp equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hp maximum to 0. A humanoid slain in this way rises 24 hours later as a zombie or skeleton under the mandriano's control, unless the humanoid is restored to life or its body is destroyed. The mandriano can control up to twelve undead at one time.
 
 
+</statblock>
 
 

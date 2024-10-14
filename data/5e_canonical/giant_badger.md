@@ -29,6 +29,7 @@ For its actions in combat, the Giant Badger can use its Bite attack. This is a m
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Badger
 
 *Medium beast, unaligned*
@@ -57,7 +58,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) piercing damage.
 
-***Claws.*** *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 6 (2d4+1) slashing damage.
+***Claws.*** *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 6 (2d4+1) slashing damage.</statblock>
+
 
 
 
@@ -65,6 +67,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Badger, Giant
 
 *Medium beast*
@@ -95,6 +98,7 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) piercing damage.
 - **Claws.** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage.
 
+</statblock>
 
 
 
@@ -103,6 +107,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Badger
 
 *Medium* *Beast*
@@ -130,5 +135,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) piercing damage.
 
 
+</statblock>
 
 

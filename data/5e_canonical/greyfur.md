@@ -25,6 +25,7 @@ Furthermore, the Greyfur has access to spellcasting abilities. It can cast spell
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greyfur
 
 *Small* *Humanoid* *Neutral*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Greyfur’s Staff:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 5 (2d4) force damage.
 - **Arcane Bolt:** Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 10 (2d6 + 3) force damage.
 - **Spellcasting:** The greyfur casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save DC 13):<br>At will: light, mage hand, prestidigitation<br>3/day each: color spray, sleep
+</statblock>
 
 

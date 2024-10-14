@@ -21,6 +21,7 @@ In terms of actions, the Monolith Footman can make two attacks with a Shortsword
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Monolith Footman
 
 *Large* *Construct* *Neutral*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The footman makes two Shortsword attacks.
 - **Shortsword:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage plus 4 (1d8) cold damage or fire damage (the footman’s choice). If the target is within a fey court or castle, the target must succeed on a DC 12 Charisma saving throw or become invisible, silent, and paralyzed for 1 minute, while an illusory version of the target under the footman’s control remains visible and audible. The illusion shouts to the target’s allies for a retreat or similar action. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself and destroying the illusory double on a success.
+</statblock>
 
 

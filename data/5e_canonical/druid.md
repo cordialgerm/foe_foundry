@@ -42,6 +42,7 @@ As a bonus action, the druid can change shape into a medium or smaller beast wit
 
 Source: 5e_srd
 
+<statblock>
 ### Druid
 
 *Medium humanoid (any race), any alignment*
@@ -74,7 +75,8 @@ Cantrips (at will): *druidcraft*, *produce flame*, *shillelagh*
 
 ***Quarterstaff***. *Melee Weapon Attack:* +2 to hit (+4 to hit with *shillelagh*), reach 5 ft., one target. *Hit:* 3 (1d6) bludgeoning damage, 4 (1d8) bludgeoning damage if wielded with two hands, or 6 (1d8 + 2) bludgeoning damage with *shillelagh*.
 
-**Druids** dwell in forests and other secluded wilderness locations, where they protect the natural world from monsters and the encroachment of civilization. Some are **tribal shamans** who heal the sick, pray to animal spirits, and provide spiritual guidance.
+**Druids** dwell in forests and other secluded wilderness locations, where they protect the natural world from monsters and the encroachment of civilization. Some are **tribal shamans** who heal the sick, pray to animal spirits, and provide spiritual guidance.</statblock>
+
 
 
 
@@ -82,6 +84,7 @@ Cantrips (at will): *druidcraft*, *produce flame*, *shillelagh*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Druid
 
 *Medium* *Humanoid*
@@ -125,6 +128,7 @@ Source: 5e_artisinal_monsters
 - **Thunderwave (1st-Level; V, S):** Thunder rolls from the druid in a 15-foot cube. Each creature in the area makes a DC 12 Constitution saving throw. On a failure  a creature takes 9 (2d8) thunder damage and is pushed 10 feet from the druid. On a success  a creature takes half damage and is not pushed.
 
 
+</statblock>
 
 
 
@@ -133,6 +137,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Druid
 
 *Medium humanoid (any lineage)*
@@ -173,5 +178,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The druid magically transforms into a Medium or smaller Beast that has a challenge rating no higher than its own, or back into its true form, which is Humanoid. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies. In a new form, the druid retains its HP, ability to speak, proficiencies, and INT, WIS, and CHA modifiers, as well as this bonus action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
 
+</statblock>
 
 

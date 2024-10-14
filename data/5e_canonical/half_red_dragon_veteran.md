@@ -27,6 +27,7 @@ Overall, the Half-Red Dragon Veteran combines martial strength, fire-based abili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Half-Red Dragon Veteran
 
 *Medium* *Humanoid*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Off-Hand Counter:** When the veteran is missed by a melee attack by an attacker it can see within 5 feet, the veteran makes a shortsword attack against the attacker.
 
 
+</statblock>
 
 

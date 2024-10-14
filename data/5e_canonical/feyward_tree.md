@@ -21,6 +21,7 @@ In combat, the Feyward Tree can perform a multiattack, allowing it to make two R
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Feyward Tree
 
 *Huge* *Construct* *Unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The feyward tree makes two Razor-Leafed Branch attacks.
 - **Razor-Leafed Branch:** Melee Weapon Attack: +10 to hit, reach 15 ft., one target. Hit: 16 (2d8 + 7) slashing damage plus 9 (2d8) force damage.
 - **Flaying Leaves (Recharge 5–6):** The feyward tree launches a barrage of razor-sharp cold iron leaves from its branches. Each creature within 20 feet of the tree must make a DC 15 Dexterity saving throw, taking 28 (8d6) slashing damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

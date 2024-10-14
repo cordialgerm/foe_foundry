@@ -21,6 +21,7 @@ For its action, the Gray Orc can use its claws to make a melee weapon attack. Th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gray Orc
 
 *Medium* *Humanoid* *neutral*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage.
 
 
+</statblock>
 
 

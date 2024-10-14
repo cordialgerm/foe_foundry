@@ -41,6 +41,7 @@ As a bonus action, the Violet Fungus can utilize Necrotic Spores if it has 8 hit
 
 Source: 5e_srd
 
+<statblock>
 ### Violet Fungus (Fungi)
 
 *Medium plant, unaligned*
@@ -69,7 +70,8 @@ Source: 5e_srd
 
 ***Multiattack***. The fungus makes 1d4 Rotting Touch attacks.
 
-***Rotting Touch***. *Melee Weapon Attack:* +2 to hit, reach 10 ft., one creature. *Hit:* 4 (1d8) necrotic damage.
+***Rotting Touch***. *Melee Weapon Attack:* +2 to hit, reach 10 ft., one creature. *Hit:* 4 (1d8) necrotic damage.</statblock>
+
 
 
 
@@ -77,6 +79,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Violet Fungus
 
 *Medium* *Plant*
@@ -107,6 +110,7 @@ Source: 5e_artisinal_monsters
 - **Rotting Touch:** Melee Weapon Attack: +2 to hit, reach 15 ft., one target. Hit: 5 (1d10) necrotic damage.
 
 
+</statblock>
 
 
 
@@ -115,6 +119,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Violet Fungus
 
 *Medium plant*
@@ -147,5 +152,6 @@ Source: 5e_artisinal_monsters
 
 - **Necrotic Spores (8 HP or Fewer).** The violet fungus sends out a burst of necrotic-laced spores, rapidly rotting nearby flesh. Each creature within 10 feet of the violet fungus that isn’t a Construct must make a DC 10 CON save, taking 5 (2d4) necrotic damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

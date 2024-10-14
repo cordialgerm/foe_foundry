@@ -30,6 +30,7 @@ Lastly, the Div has access to some powerful spellcasting abilities, with Charism
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Div
 
 *Small* *Elemental* *neutral evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 14) no material components: At will: disguise self minor illusion3/day ea: charm person suggestion1/day ea: dream fear
 
 
+</statblock>
 
 

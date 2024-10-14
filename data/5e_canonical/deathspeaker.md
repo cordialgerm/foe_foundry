@@ -23,6 +23,7 @@ The Deathspeaker also possesses the terrifying ability called Pronounce Death. T
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deathspeaker
 
 *Medium* *Undead* *lawful evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Pronounce Death:** The deathspeaker chooses a creature it can see within 30 feet of it that has been reduced to 0 hp. The target must succeed on a DC 13 Constitution saving throw or immediately die. Creatures cursed by the Deathspeak trait have disadvantage on this saving throw.
 
 
+</statblock>
 
 

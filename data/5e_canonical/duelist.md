@@ -52,6 +52,7 @@ Overall, the Duelist is a clever and agile foe, using its abilities and skills t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Duelist
 
 *Medium* *Humanoid*
@@ -81,6 +82,7 @@ Source: 5e_artisinal_monsters
 - **Riposte:** When the duelist is missed by a melee attack by an attacker they can see within 5 feet, the duelist makes a rapier attack against the attacker with advantage.
 
 
+</statblock>
 
 
 
@@ -89,6 +91,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Duelist
 
 *Medium* *Humanoid* *Lawful Evil*
@@ -127,5 +130,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Parry:** The shadow fey duelist adds 3 to its AC against one melee attack that would hit it. To do so, the duelist must see the attacker and be wielding a melee weapon.
+</statblock>
 
 

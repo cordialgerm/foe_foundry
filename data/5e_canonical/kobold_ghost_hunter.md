@@ -23,6 +23,7 @@ In reaction to threats, the Ghost Hunter can unleash a Flame Burst when a hostil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold, Ghost Hunter
 
 *Small* *Humanoid* *lawful neutral*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Flame Burst:** When a hostile creature enters a space within 5 ft. of the ghost hunter the hunter can release a burst of fire from its clockwork hand. The creature must make DC 17 Dex save or take 7 (2d6) fire and have disadvantage on the next attack roll it makes vs. the ghost hunter before the end of the ghost hunter’s next turn.
 
 
+</statblock>
 
 

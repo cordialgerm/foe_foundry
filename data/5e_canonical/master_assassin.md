@@ -43,6 +43,7 @@ The Master Assassin's combination of high damage potential, evasive maneuvers, a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Master Assassin
 
 *Medium* *Humanoid*
@@ -83,5 +84,6 @@ Source: 5e_artisinal_monsters
 - **Rapid Attack:** The assassin attacks with their shortsword.
 
 
+</statblock>
 
 

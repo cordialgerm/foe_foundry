@@ -25,6 +25,7 @@ For reactions, they have the "Brace Pike" ability. When a creature enters their 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dwarf, Pike Guard
 
 *Medium* *Humanoid* *lawful neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Brace Pike:** When a creature enters the pike guard’s reach the pike guard can brace its pike. If it does so it has advantage on its next attack roll vs. that creature.
 
 
+</statblock>
 
 

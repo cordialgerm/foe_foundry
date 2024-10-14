@@ -21,6 +21,7 @@ For its actions, the Warrior Band uses spears as its primary form of attack. It 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Warrior Band
 
 *Large* *Humanoid*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Spears:** Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 22 (5d6 + 5) piercing damage  or half damage when bloodied.
 
 
+</statblock>
 
 

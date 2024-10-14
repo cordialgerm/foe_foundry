@@ -21,6 +21,7 @@ The Engulf ability allows the ooze to move through the spaces of larger or small
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Amber Ooze
 
 *Large* *Ooze* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Engulf:** The ooze moves up to its speed. While doing so, it can enter Large or smaller creatures’ spaces. Whenever the ooze enters a creature’s space, the creature must make a DC 13 Dexterity saving throw.<br><br>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the ooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.<br><br>On a failed save, the ooze enters the creature’s space and the creature is engulfed. The engulfed creature can’t breathe, is restrained, and, after 1d4 rounds, the creature is petrified. A creature petrified by the ooze remains petrified until 24 hours after it exits the ooze. When the ooze moves, the engulfed creature moves with it.<br><br>An engulfed creature can try to escape by taking an action to make a DC 13 Strength (Athletics) check. On a success, the creature escapes and enters a space of its choice within 5 feet of the ooze.
 
 
+</statblock>
 
 

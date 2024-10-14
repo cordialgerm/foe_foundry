@@ -35,6 +35,7 @@ Overall, the Fragrite is a formidable opponent, harnessing its unique elemental 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fragrite
 
 *Medium* *Elemental* *chaotic neutral*
@@ -71,5 +72,6 @@ While in sand form, the fragrite has a burrow speed of 50 feet, it can move thro
 - **Spontaneous Explosion (Glass Form Only; Recharge 5-6):** The fragrite explodes into shards of glass, reducing its hp by 5 (2d4). Each creature within 15 feet of it must make a DC 14 Dexterity saving throw, taking 27 (6d8) slashing damage on a failed save, or half as much damage on a successful one. The fragrite then polymorphs into its sand form.
 
 
+</statblock>
 
 

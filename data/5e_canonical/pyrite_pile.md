@@ -19,6 +19,7 @@ When it comes to actions, the Pyrite Pile can engage in a multiattack, deliverin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pyrite Pile
 
 *Large* *Elemental* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Eat Gold:** Absorbs 52 (8d12) gp worth of nonmagical items and coins made of precious metals ignoring copper worn or carried by one creature grappled by it and the pile regains hp equal to half that. Absorbed metal is destroyed.
 
 
+</statblock>
 
 

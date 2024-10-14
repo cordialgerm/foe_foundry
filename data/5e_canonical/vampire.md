@@ -75,6 +75,7 @@ Lastly, the Vampire has regional effects that come into play in areas it haunts,
 
 Source: 5e_srd
 
+<statblock>
 ### Vampire
 
 *Medium undead (shapechanger), lawful evil*
@@ -149,7 +150,8 @@ The vampire can take 3 legendary actions, choosing from the options below. Only 
 
 **Unarmed Strike**. The vampire makes one unarmed strike.
 
-**Bite (Costs 2 Actions)**. The vampire makes one bite attack.
+**Bite (Costs 2 Actions)**. The vampire makes one bite attack.</statblock>
+
 
 
 
@@ -157,6 +159,7 @@ The vampire can take 3 legendary actions, choosing from the options below. Only 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire
 
 *Medium* *Undead*
@@ -209,6 +212,7 @@ Source: 5e_artisinal_monsters
 - **Grab:** The vampire makes a grab attack.
 - **Mist Form:** The vampire transforms into a mist or back into its true form. As mist, the vampire has a flying speed of 30, can't speak, can't take actions or manipulate objects, is immune to nonmagical damage from weapons, and has advantage on saving throws and Stealth checks. It can pass through a space as narrow as 1 inch without squeezing but can't pass through water. Anything its carrying transforms with it.
 - **Shapechange:** The vampire transforms into the shape of a Medium or smaller beast or back into its true form. While transformed, it has the beasts size and movement modes. It can't use reactions or legendary actions, and can't speak. Otherwise, it uses the vampires statistics. Anything its carrying transforms with it.
+</statblock>
 
 
 
@@ -217,6 +221,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire
 
 *Medium undead (shapechanger)*
@@ -272,5 +277,6 @@ The vampire can take 3 legendary actions, choosing from the options below. Only 
 ### Regional Effects
 
 - **1d10** If the vampire dies, these effects fade in  days.
+</statblock>
 
 

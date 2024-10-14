@@ -21,6 +21,7 @@ In combat, the Blood Zombie's primary action is called Slam, which functions as 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Zombie
 
 *Medium* *Undead* *neutral evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) bludgeoning damage plus 4 (1d8) necrotic damage. The zombie gains temporary hp equal to the necrotic damage taken.
 
 
+</statblock>
 
 

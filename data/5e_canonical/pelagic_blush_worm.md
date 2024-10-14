@@ -25,6 +25,7 @@ Additionally, the Pelagic Blush Worm can unleash a Red Acid Spume (recharge 5-6)
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pelagic Blush Worm
 
 *Gargantuan* *Monstrosity* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Red Acid Spume (Recharge 5–6):** Exhales crimson stomach acid in 30' cone if worm is underwater or 50' line × 5 ft. wide if above water. Each creature in area: 31 (9d6) acid (DC 16 Dex half).
 
 
+</statblock>
 
 

@@ -32,6 +32,7 @@ The Horde Demon's Multiattack action allows it to make two attacks using any gra
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horde Demon
 
 *Medium* *Fiend*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The demon makes two attacks  using any attack granted by its Varied Shapes trait.
 
 
+</statblock>
 
 

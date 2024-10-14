@@ -21,6 +21,7 @@ For its actions, the Terror Bird utilizes its Serrated Beak in melee combat. Whe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Terror Bird
 
 *Large* *Beast* *unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Serrated Beak:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) slashing damage. The target must succeed on a DC 12 Constitution saving throw or take 7 (2d6) slashing damage at the beginning of its next turn.
 
 
+</statblock>
 
 

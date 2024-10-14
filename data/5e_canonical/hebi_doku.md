@@ -23,6 +23,7 @@ The combination of these attacks and abilities makes the Hebi-Doku a versatile a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hebi-Doku
 
 *Medium* *Fey* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Transfixing Rattle:** The hebi-doku rattles its tail at one creature it can see within 30 feet of it. The target must make a DC 14 Wisdom saving throw or be incapacitated and have its speed reduced to 0 until the end of its next turn.
 
 
+</statblock>
 
 

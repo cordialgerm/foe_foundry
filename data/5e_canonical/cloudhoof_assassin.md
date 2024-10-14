@@ -23,6 +23,7 @@ Overall, the Cloudhoof Assassin is a tactical beast with potential for controlli
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cloudhoof Assassin
 
 *Medium* *Beast* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Shoving Kick:** Melee Weapon Attack: +5 to hit, 5 ft., one target, 5 (1d4+3) bludgeoning damage and the target must make DC 13 Str save or be pushed up to 5 ft. away from the cloudhoof assassin. If the cloudhoof scores a critical hit the target is pushed up to 10 ft. on a failed save.
 
 
+</statblock>
 
 

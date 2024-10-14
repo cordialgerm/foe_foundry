@@ -17,6 +17,7 @@ For its actions, the Brown Bear can execute a Multiattack, a powerful feature th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bear, Brown
 
 *Large beast*
@@ -46,5 +47,6 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 8 (1d8 + 4) piercing damage.
 - **Claws.** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage.
 
+</statblock>
 
 

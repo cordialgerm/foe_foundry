@@ -19,6 +19,7 @@ In terms of actions, the Azeban can employ a Multiattack feature that allows it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Azeban
 
 *Medium* *Fey* *chaotic neutral*
@@ -57,5 +58,6 @@ At will: dancing lights, disguise self, faerie fire, minor illusion
 - **Ear-Splitting Yawp (Recharge 5-6):** The azeban emits a piercing yell in a 15-foot cone. Each creature in the area must make a DC 14 Constitution saving throw. On a failure, a target takes 21 (6d6) thunder damage and is deafened for 1 minute. On a success, a creature takes half the damage but isn't deafened. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw. A nonmagical object that isn't being worn or carried also takes the damage if it's in the area.
 
 
+</statblock>
 
 

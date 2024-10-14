@@ -19,6 +19,7 @@ In terms of actions, the Tetomatli can make a Multiattack, which consists of one
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tetomatli
 
 *Large* *Construct* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Tremor (Recharge 6):** The tetomatli slams its head repeatedly into the ground, creating a magical shockwave. Each creature within 20 feet of the tetomatli must succeed on a DC 15 Dexterity saving throw or be knocked prone and have disadvantage on attack rolls and Dexterity checks until the end of its next turn.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ Another significant ability is Clack, where the Clacker Soldier clacks its mandi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Beetle, Clacker Soldier
 
 *Small* *Beast* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Clack:** Clacks its mandibles to create small but dangerous booming noise in 15 ft. cone. Each creature in area: 5 (2d4) thunder (DC 13 Con half). When multiple beetles clack in same turn and create overlapping cones each creature in overlapping cones makes one save with disadvantage vs. total damage from all overlapping cones rather than one save for each.
 
 
+</statblock>
 
 

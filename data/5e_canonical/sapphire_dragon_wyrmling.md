@@ -19,6 +19,7 @@ In terms of combat actions, the Sapphire Dragon Wyrmling has a melee attack opti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sapphire Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Discognitive Breath (Recharge 5-6):** The dragon unleashes psychic energy in a 15-foot cone. Each creature in that area makes a DC 12 Intelligence saving throw  taking 22 (4d10) psychic damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

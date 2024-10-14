@@ -23,6 +23,7 @@ Overall, the Carbuncle serves well in a support role, providing both environment
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Carbuncle
 
 *Small* *Monstrosity* *chaotic good*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Light Beam (Recharge 5-6):** The carbuncle shoots a 30-foot-long, 5-foot-wide line of scintillating light from the garnet on its forehead. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) radiant damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

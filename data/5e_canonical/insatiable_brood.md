@@ -36,6 +36,7 @@ Overall, the Insatiable Brood is a dangerous enemy, particularly effective in sw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Insatiable Brood
 
 *Medium swarm (of tiny aberrations)*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 
 - **Void Gaze.** The insatiable brood turns all its individual heads in one direction, and its hundreds of Void-filled eyes stare at one creature the brood can see within 30 feet of it. The target must succeed on a DC 13 WIS save or be frightened until the end of its next turn. If the target fails the save by 5 or more, it suffers a random, short-term dread effect for 1 minute.
 
+</statblock>
 
 

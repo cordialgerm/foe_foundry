@@ -25,6 +25,7 @@ In addition to its standard actions, the Gypsosphinx can make use of three legen
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gypsosphinx
 
 *Large* *Monstrosity* *Neutral Evil*
@@ -67,5 +68,6 @@ The sphinx can take 3 legendary actions, choosing from the options below. Only o
 - **Beak Attack:** The sphinx makes one Beak attack.
 - **Cast a Spell (Costs 2 Actions):** The sphinx uses Spellcasting.
 - **Teleport (Costs 2 Actions):** The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+</statblock>
 
 

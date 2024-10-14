@@ -25,6 +25,7 @@ Finally, as a bonus action, the Folk of Leng can shift between the Material Plan
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Folk of Leng
 
 *Medium* *Humanoid* *Neutral Evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Etherealness:** The folk of Leng enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can’t affect or be affected by anything on the other plane.
+</statblock>
 
 

@@ -25,6 +25,7 @@ Additionally, the "Call the Dead" ability can be activated three times per day, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Mandriano
 
 *Huge* *Plant* *lawful evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Call the Dead (3/Day):** The ancient mandriano animates one humanoid corpse within 60 feet. This works like the animate dead spell, except it only creates zombies and the zombies. The mandriano can control up to twenty zombies at one time.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Additionally, as a bonus action, the Imp Familiar can use "Invisibility," magica
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Imp Familiar
 
 *Tiny* *Fiend*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The imp magically turns invisible, along with any equipment carried. This invisibility ends if the imp makes an attack, falls unconscious, or dismisses the effect.
 
 
+</statblock>
 
 

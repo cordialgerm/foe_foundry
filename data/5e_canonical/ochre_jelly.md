@@ -37,6 +37,7 @@ Overall, the Ochre Jelly serves as a challenging and interesting monster filled 
 
 Source: 5e_srd
 
+<statblock>
 ### Ochre Jelly (Ooze)
 
 *Large ooze, unaligned*
@@ -73,7 +74,8 @@ Source: 5e_srd
 
 ###### Reactions
 
-***Split***. When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly.
+***Split***. When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly.</statblock>
+
 
 
 
@@ -81,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ochre Jelly
 
 *Large* *Ooze*
@@ -117,6 +120,7 @@ Source: 5e_artisinal_monsters
 - **Split:** When a Medium or larger jelly with at least 10 hit points is subjected to lightning or slashing damage, it splits into two jellies that are each one size smaller, freeing any grappled targets. Each new jelly has half the originals hit points (rounded down).
 
 
+</statblock>
 
 
 
@@ -125,6 +129,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ochre Jelly
 
 *Large ooze*
@@ -160,5 +165,6 @@ Source: 5e_artisinal_monsters
 
 - **Split.** When an ochre jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new ochre jellies if it has at least 10 HP. Each new jelly has HP equal to half the original jelly’s, rounded down. New jellies are one size smaller than the original jelly.
 
+</statblock>
 
 

@@ -34,6 +34,7 @@ As a Bonus Action, the Balor can teleport up to 60 feet to an unoccupied space i
 
 Source: 5e_srd
 
+<statblock>
 ### Balor (Demon)
 
 *Huge fiend (demon), chaotic evil*
@@ -78,7 +79,8 @@ Source: 5e_srd
 
 ***Whip***. *Melee Weapon Attack:* +14 to hit, reach 30 ft., one target. *Hit:* 15 (2d6+8) slashing damage plus 10 (3d6) fire damage, and the target must succeed on a DC 20 Strength saving throw or be pulled up to 25 feet toward the balor.
 
-***Teleport***. The balor magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+***Teleport***. The balor magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.</statblock>
+
 
 
 
@@ -86,6 +88,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Balor
 
 *Huge* *Fiend*
@@ -128,6 +131,7 @@ Source: 5e_artisinal_monsters
 - **Instinctive Teleport:** After the balor takes damage, it uses Teleport.
 
 
+</statblock>
 
 
 
@@ -136,6 +140,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Balor
 
 *Huge fiend (demon)*
@@ -175,5 +180,6 @@ Source: 5e_artisinal_monsters
 
 - **Teleport.** The balor magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see.
 
+</statblock>
 
 

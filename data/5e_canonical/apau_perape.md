@@ -31,6 +31,7 @@ Finally, once per day, the Apau Perape can use Summon Demon to call forth 1d4 ap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Apau Perape
 
 *Large* *Fiend* *Chaotic Evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage.
 - **Fiery Roar (Recharge 6):** The apau perape releases a terrifying, flame-coated roar in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 31 (9d6) fire damage and is frightened until the end of its next turn. On a success, a creature takes half the damage and isn’t frightened.
 - **Summon Demon (1/Day):** The apau perape magically calls 1d4 apes that are Fiends with the apau perape’s damage resistances and immunities. It has a 50 percent chance of calling one apau perape instead. The called creatures arrive in 1d4 rounds, acting as allies of the apau perape and obeying its telepathic commands. The creatures remain for 1 hour, until the apau perape dies, or until the apau perape dismisses them as a bonus action.
+</statblock>
 
 

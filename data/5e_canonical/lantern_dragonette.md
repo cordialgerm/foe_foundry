@@ -21,6 +21,7 @@ It also has a notable bonus action called Lantern Belly. This ability allows the
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lantern Dragonette
 
 *Tiny* *Dragon* *Lawful Neutral*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Lantern Belly:** The dragonette sheds bright light in a 20-foot radius and dim light for an additional 20 feet or stops shedding light. To shed light, it must have eaten at least 4 ounces of candle wax in the past 24 hours. It can shed light for up to 1 hour for every 4 ounces of candle wax it has eaten in the past 24 hours, to a maximum of 4 hours every 24 hours.
+</statblock>
 
 

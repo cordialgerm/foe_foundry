@@ -23,6 +23,7 @@ The Forest Drake's **Fire Breath** ability allows it to exhale a blast of fire i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forest Drake
 
 *Small* *Dragon* *neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 5-6):** The drake exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 17 (5d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

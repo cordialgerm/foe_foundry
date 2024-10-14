@@ -41,6 +41,7 @@ Overall, the Stone Giant is a well-rounded melee combatant with the ability to c
 
 Source: 5e_srd
 
+<statblock>
 ### Stone Giant
 
 *Huge giant, neutral*
@@ -77,7 +78,8 @@ Source: 5e_srd
 
 ###### Reactions
 
-***Rock Catching***. If a rock or similar object is hurled at the giant, the giant can, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.
+***Rock Catching***. If a rock or similar object is hurled at the giant, the giant can, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.</statblock>
+
 
 
 
@@ -85,6 +87,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stone Giant
 
 *Huge* *Giant*
@@ -125,6 +128,7 @@ Source: 5e_artisinal_monsters
 - **Rock Catching:** If a rock or other Small or larger projectile is hurled or fired at the giant, the giant makes a DC 10 Dexterity saving throw. On a success, the giant catches the projectile, takes no bludgeoning or piercing damage from it, and is not pushed or knocked prone by it.
 
 
+</statblock>
 
 
 
@@ -133,6 +137,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stone Giant
 
 *Huge giant*
@@ -175,5 +180,6 @@ Source: 5e_artisinal_monsters
 
 - **Missile Deflection.** If a creature the giant can see makes a ranged weapon attack against the giant, the giant can add 3 to its AC. If the attack misses, the giant can catch the missile, provided the attack included a projectile, and throw it back at the attacker, using the giant’s normal ranged weapon attack bonus and the weapon’s normal damage.
 
+</statblock>
 
 

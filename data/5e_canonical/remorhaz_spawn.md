@@ -23,6 +23,7 @@ In terms of actions, the Remorhaz Spawn can perform a Multiattack, where it make
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Remorhaz Spawn
 
 *Large* *Monstrosity*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Constrict:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage  and the target is subjected to the remorhazs Heated Body trait. The target is grappled (escape DC 15) and restrained while grappled. Until this grapple ends  the remorhaz can't grapple another creature.
 
 
+</statblock>
 
 

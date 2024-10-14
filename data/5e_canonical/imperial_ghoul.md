@@ -21,6 +21,7 @@ Overall, the Imperial Ghoul serves as a formidable opponent with strategic capab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Imperial Ghoul
 
 *Medium* *Undead* *Lawful Evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage, and, if the target is a Humanoid, it must succeed on a DC 11 Constitution saving throw or contract the darakhul fever disease (see the Darakhul Fever sidebar).
 - **Claw:** Melee Weapon Attack: +5 to hit, reach, one target. Hit: 17 (4d6 + 3) slashing damage. If the target is a creature other than an elf or Undead, it must succeed on a DC 11 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Light Crossbow:** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage.
+</statblock>
 
 

@@ -21,6 +21,7 @@ Finally, the Mamura has a bonus action called Shadow Stealth, which allows it to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mamura
 
 *Small* *Aberration* *Neutral Evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Stealth:** While in dim light or darkness, the mamura takes the Hide action.
+</statblock>
 
 

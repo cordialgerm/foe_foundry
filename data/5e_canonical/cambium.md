@@ -21,6 +21,7 @@ As a bonus action, the Cambium can twist the bodily humors of a non-Construct, n
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cambium
 
 *Large* *Fiend* *Neutral Evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Choleric Flux:** The target becomes confused for 1 minute. This effect works as if the target failed a saving throw against the confusion spell, except the cambium doesn’t have to maintain concentration.
 - **Melancholic Flux:** The target is incapacitated and its speed is halved for 1 minute.
 - **Phlegmatic Flux:** The target is poisoned for 1 minute.<br><br><br>Carrion Beetle<br><br>The beetles wore golden bridles and carried huge leather sacks of stone and guano. They marched without stopping; dozens, even hundreds, bringing fresh earth to the white-fungus trees of the great forests. Their claws skittered with a sound like horseshoes slipping on stone, but their multiple legs ensured they never fell. The air around them singed the nostrils with the taint of acid.
+</statblock>
 
 

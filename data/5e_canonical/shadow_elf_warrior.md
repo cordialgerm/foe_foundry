@@ -21,6 +21,7 @@ Overall, the Shadow Elf Warrior offers a blend of stealth, strategic positioning
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Elf Warrior
 
 *Medium* *Humanoid*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Hand Crossbow:** Ranged Weapon Attack: +3 to hit, range 30/120 ft., one target. Hit: 4 (1d6 + 1) piercing damage. If the target is a creature  it makes a DC 13 Constitution saving throw. On a failure  the target is poisoned for 1 hour. If it fails the saving throw by 5 or more  it falls unconscious until it is no longer poisoned  it takes damage  or a creature takes an action to shake it awake.
 
 
+</statblock>
 
 

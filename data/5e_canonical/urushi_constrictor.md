@@ -23,6 +23,7 @@ Overall, the Urushi Constrictor is a formidable predator that thrives in its env
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Urushi Constrictor
 
 *Large* *Monstrosity* *unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Poisonous Constriction:** Melee Weapon Attack: +6 to hit, 5 ft., one creature,. 12 (2d8+3) bludgeoning damage and target is grappled (escape DC 15). Until this grapple ends target is restrained and takes 10 (3d6) poison at start of each of its turns and snake can't use Poisonous Constriction on another target. Each time target takes this poison it must make DC 15 Con save or contract urushi blight.
 
 
+</statblock>
 
 

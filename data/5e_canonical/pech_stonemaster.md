@@ -25,6 +25,7 @@ For its actions, the Pech Stonemaster can perform a multiattack, making two stri
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pech Stonemaster
 
 *Small* *Elemental* *neutral good*
@@ -60,5 +61,6 @@ At will: thunderwave
 - **Hammer:** Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

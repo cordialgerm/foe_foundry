@@ -30,6 +30,7 @@ Overall, the Putrescent Slime is an intriguing and dangerous opponent for low-le
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Putrescent Slime
 
 *Medium* *Ooze* *unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Pseudopod:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) bludgeoning damage plus 3 (1d6) poison damage.
 
 
+</statblock>
 
 

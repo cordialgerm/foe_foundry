@@ -37,6 +37,7 @@ Overall, the Animated Offal is a formidable adversary with the potential to turn
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animated Offal
 
 *Huge* *Ooze* *unaligned*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Subsume:** Begins absorbing one creature it is grappling. Creature takes 18 (4d8) necrotic (DC 17 Con half). Offal regains hp equal to half the damage dealt. If offal is at its hp max it gains temp hp for 1 hr instead. Offal can add temp hp gained from this trait to temp hp gained earlier from this trait. Temporary hp can’t exceed 48. If its temp hp would exceed 48 a new animated offal appears in an unoccupied space within 5 ft. of offal. The new Ooze is Small doesn’t have this bonus action and has 10 hp. Creature killed by this bonus action is fully subsumed into offal and can be restored to life only by means of a resurrection spell or similar magic.
 
 
+</statblock>
 
 

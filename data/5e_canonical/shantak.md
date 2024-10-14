@@ -19,6 +19,7 @@ In terms of actions, the Shantak can perform a Multiattack, making two attacks p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shantak
 
 *Large* *Monstrosity* *lawful evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Insane Tittering (Recharge 4-6):** The shantak emits a horrific screech. Each non-shantak creature within 60 feet of it that can hear it must succeed on a DC 15 Constitution saving throw or be frightened until the end of the shantak's next turn. The shantak can choose to include or exclude its rider when using this action.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ The Spawn can unleash "Swarming Cough" three times per day, releasing a swarm of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spawn of Akyishigal
 
 *Medium* *Fiend* *Chaotic Evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.
 - **Sting:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage plus 3 (1d6) poison damage, and the target must succeed on a DC 15 Constitution saving throw or become poisoned until the end of its next turn.
 - **Swarming Cough (3/Day):** The spawn belches forth a swarm of insects. The swarm is an ally of the spawn, obeys its spoken commands, and takes its turn immediately after the spawn’s. The swarm remains for 1 minute, until the spawn dies, or until the spawn dismisses it as a bonus action. The spawn can have no more than two swarms under its control at a time.
+</statblock>
 
 

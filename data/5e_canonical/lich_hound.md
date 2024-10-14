@@ -19,6 +19,7 @@ In combat, the Lich Hound can engage in several aggressive actions. It possesses
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lich Hound
 
 *Medium* *Undead* *Neutral Evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Ethereal Jaunt:** The lich hound magically shifts from the Material Plane to the Ethereal Plane, or vice versa.
+</statblock>
 
 

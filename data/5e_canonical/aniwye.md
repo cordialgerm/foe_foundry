@@ -25,6 +25,7 @@ In its skunk form, the Aniwye can unleash a deadly musk with the Deadly Musk abi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aniwye
 
 *Large* *Monstrosity* *neutral evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Deadly Musk (Recharge 5-6; Skunk Form Only):** The aniwye releases a cloud of highly poisonous musk from its tail in a 15-foot cone. Each creature in that area must make a DC 15 Constitution saving throw. On a failure, a creature takes 24 (7d6) poison damage and is stunned until the end of its next turn. On a success, a creature takes half the damage and isn’t stunned.
 
 
+</statblock>
 
 

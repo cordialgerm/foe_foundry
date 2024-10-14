@@ -23,6 +23,7 @@ Lastly, the Trollkin Reaver’s darkvision ability allows it to see in dim light
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trollkin Reaver
 
 *Medium* *Humanoid* *Neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Battleaxe:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands.
 - **Handaxe:** Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) slashing damage.
 - **Howl of Battle (Recharge 6):** The trollkin reaver howls a battle cry at up to three friendly creatures it can see within 30 feet of it. Each target can make one weapon attack as a reaction and has advantage on the attack roll.
+</statblock>
 
 

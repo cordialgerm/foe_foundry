@@ -23,6 +23,7 @@ As a bonus action, the Leashed Lesion can utilize its Life Tether ability, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Leashed Lesion
 
 *Large* *Aberration* *chaotic evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Life Tether:** Attaches a symbiotic tether to a creature sitting in the recess in its back. A creature in the recess that isn’t attached to the tether takes 7 (2d6) piercing damage at the end of the lesion’s turn and the lesion regains hp equal to the damage dealt. While the tether is attached the creature is grappled by the lesion. The lesion or the creature can detach the tether as a bonus action. Lesion can have its symbiotic tether attached to only one creature at a time.
 
 
+</statblock>
 
 

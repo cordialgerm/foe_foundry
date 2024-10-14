@@ -23,6 +23,7 @@ Overall, the Magma Octopus is a formidable opponent with high combat potential, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Magma Octopus
 
 *Large* *Elemental* *neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Magma Blast (Recharge 6):** The magma octopus sprays magma in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 28 (8d6) fire damage on a failed save, or half as much damage on a successful one. If a creature fails the saving throw by 5 or more, it catches fire. Until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns.
 
 
+</statblock>
 
 

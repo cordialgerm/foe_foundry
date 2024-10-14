@@ -23,6 +23,7 @@ As for reactions, the Ratfolk Mercenary has the Guard the Big Cheese ability, wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ratfolk Mercenary
 
 *Small* *Humanoid* *neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Guard the Big Cheese:** When a creature makes an attack against the ratfolk mercenary's current employer, the mercenary grants a +2 bonus to the employer's AC if the mercenary is within 5 feet of the employer.
 
 
+</statblock>
 
 

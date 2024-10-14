@@ -25,6 +25,7 @@ These combined attributes and abilities make the Chameleon Hydra a fierce advers
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chameleon Hydra
 
 *Huge* *Monstrosity* *unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Reel:** The hydra pulls a creature grappled by it up to 25 feet straight toward it.
 
 
+</statblock>
 
 

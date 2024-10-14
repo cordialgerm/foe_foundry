@@ -21,6 +21,7 @@ For tactical flexibility, the alchemist can use a Bonus Action to Alter Bomb, sw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cosmopolitan Alchemist
 
 *Medium* *Humanoid*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Desperate Drink (1/Day:** When the alchemist is dealt damage, they drink a potion.
 
 
+</statblock>
 
 

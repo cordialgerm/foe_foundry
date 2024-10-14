@@ -23,6 +23,7 @@ The Hierophant Lich can also make use of its legendary actions to enhance its co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hierophant Lich
 
 *Medium* *Undead* *any evil alignment*
@@ -70,5 +71,6 @@ The hierophant lich can take 3 legendary actions, choosing from the options belo
 - **Cantrip:** The hierophant lich casts a cantrip.
 - **Unholy Smite (Costs 2 Actions):** The heirophant lich uses its Unholy Smite.
 - **Damnation (Costs 2 Actions):** The hierophant lich threatens one creature within 10 feet of it with eternal suffering. The target must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the hierophant lich's Damnation for the next 24 hours.
+</statblock>
 
 

@@ -29,6 +29,7 @@ For its reactions, the Xiphus can use Borrowed Time when facing lethal damage. T
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Xiphus
 
 *Small* *Fey* *chaotic evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Borrowed Time (Recharges after a Short or Long Rest):** If damage is dealt to a xiphus that would kill it, it can attempt to temporarily borrow time from another creature to avoid death. One creature the xiphus can see within 30 feet of it must succeed on a DC 16 Constitution saving throw or take 10 (3d6) necrotic damage, and the xiphus regains hp equal to the damage taken. The target is stable and doesn't die if this effect reduces its hp to 0. After 2 rounds, the xiphus takes necrotic damage, and the target regains hp, equal to the original amount borrowed.
 
 
+</statblock>
 
 

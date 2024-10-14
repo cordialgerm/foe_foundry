@@ -21,6 +21,7 @@ Lastly, the Giant Lantern possesses spellcasting abilities without the need for 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant, Lantern
 
 *Huge* *Giant* *neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 15) no material components:At will: detect magic identify (as an action)3/day ea: control water freedom of movement water breathing
 
 
+</statblock>
 
 

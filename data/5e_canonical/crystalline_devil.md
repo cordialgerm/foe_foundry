@@ -23,6 +23,7 @@ In addition, the Crystalline Devil has two bonus actions. The **Betraying Carbun
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crystalline Devil
 
 *Medium* *Fiend* *Lawful Evil*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Betraying Carbuncle:** The crystalline devil magically transforms into a Small or smaller gemstone or back into its true form, which is a Fiend. Its statistics, other than its size, are the same in each form, except it can’t move or speak when in its gemstone form. Any equipment it is wearing or carrying transforms with it. It reverts to its true from if it dies.
 - **Summon Devil (1/Day):** The crystalline devil magically calls one jewel-encrusted, fiendish animated armor that has the crystalline devil’s damage resistances and immunities. The crystalline devil has a 25 percent chance of calling one crystalline devil instead. The called creature arrives in 1d4 rounds, acting as an ally of the devil and obeying its telepathic commands. The creature remains for 1 hour, until the devil dies, or until the devil dismisses it as a bonus action.
+</statblock>
 
 

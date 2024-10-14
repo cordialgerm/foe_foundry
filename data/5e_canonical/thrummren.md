@@ -23,6 +23,7 @@ For defense, the Thrummren has a reaction called Protect Rider, which allows it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thrummren
 
 *Gargantuan* *Celestial* *chaotic good*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Protect Rider:** When the thrummren’s rider is the target of an attack the thrummren can see, the thrummren can choose to become the target of the attack instead.
 
 
+</statblock>
 
 

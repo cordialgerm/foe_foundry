@@ -36,6 +36,7 @@ This combination of mobility, crowd control, and item theft makes the Swarm of W
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Wharflings
 
 *Large* *Swarm* *Beast* *Unaligned*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Pilfering Bites:** Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 28 (8d6) piercing damage, or 14 (4d6) piercing damage if the swarm has half of its hp or fewer, and the target must succeed on a DC 13 Dexterity saving throw or lose one item it is wearing or carrying to the swarm, provided the item weighs no more than 10 pounds, isn’t a weapon, and isn’t wrapped around or firmly attached to the target, such as a shirt or armor.
+</statblock>
 
 

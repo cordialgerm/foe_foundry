@@ -21,6 +21,7 @@ The Stone Creeper also possesses the "Weaken Stone" ability, which is particular
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stone Creeper
 
 *Medium* *Plant* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Weaken Stone:** While climbing on a wall or ceiling made of worked stone, the stone creeper injects its acid into the mortar, weakening the structure. Each creature within 10 feet of the wall or in a 10-foot cube beneath the ceiling must make a DC 12 Dexterity saving throw, taking 7 (2d6) bludgeoning damage on a failed save, or half as much damage on a successful one. A creature that fails its saving throw when beneath a ceiling is also knocked prone and buried. The buried target is restrained and unable to breathe or stand up. A creature, including the target, can take its action to remove the rubble and free the buried target by succeeding on a DC 10 Strength check.
 
 
+</statblock>
 
 

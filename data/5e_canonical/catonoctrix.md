@@ -25,6 +25,7 @@ Finally, the Catonoctrix can react to attacks with "Precognitive Dodge," which i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Catonoctrix
 
 *Large* *Aberration* *neutral evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Precognitive Dodge:** Adds 4 to its AC vs. one attack that would hit it. To do so it must see the attacker and be within 30' of it.
 
 
+</statblock>
 
 

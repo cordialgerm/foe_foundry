@@ -33,6 +33,7 @@ Additionally, the Darkmantle has a bonus action called Darkness Aura, which it c
 
 Source: 5e_srd
 
+<statblock>
 ## Darkmantle
 
 *Small monstrosity, unaligned*
@@ -67,7 +68,8 @@ While attached to the target, the darkmantle can attack no other creature except
 
 A creature can detach the darkmantle by making a successful DC 13 Strength check as an action. On its turn, the darkmantle can detach itself from the target by using 5 feet of movement.
 
-***Darkness Aura (1/Day)***. A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.
+***Darkness Aura (1/Day)***. A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ A creature can detach the darkmantle by making a successful DC 13 Strength check
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Darkmantle
 
 *Small* *Monstrosity*
@@ -105,6 +108,7 @@ Source: 5e_artisinal_monsters
 - **Crush:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) bludgeoning damage  and the target is grappled (escape DC 13). If the darkmantle made the attack with advantage  it attaches to the targets head  and the target is blinded and can't breathe. While grappling  the darkmantle can only attack the grappled creature but has advantage on its attack roll. The darkmantles speed becomes 0  and it moves with its target.
 
 
+</statblock>
 
 
 
@@ -113,6 +117,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Darkmantle
 
 *Small monstrosity*
@@ -148,5 +153,6 @@ Source: 5e_artisinal_monsters
 
 - **Darkness Aura (1/Day).** A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can’t penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.
 
+</statblock>
 
 

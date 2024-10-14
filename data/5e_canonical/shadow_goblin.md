@@ -21,6 +21,7 @@ For reactions, the Shadow Goblin can employ "Vengeful Jinx," a strategic move th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Goblin
 
 *Small* *Humanoid* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Vengeful Jinx:** When the shadow goblin is hit by an attack from a creature it can see, it can curse the attacker. The attacker has disadvantage on attack rolls until the end of its next turn.
 
 
+</statblock>
 
 

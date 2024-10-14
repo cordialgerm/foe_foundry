@@ -19,6 +19,7 @@ In terms of its offensive capabilities, the Zoog has a melee attack called Bite.
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zoog
 
 *Tiny* *Aberration* *chaotic evil*
@@ -42,5 +43,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage.
 
 
+</statblock>
 
 

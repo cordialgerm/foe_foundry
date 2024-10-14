@@ -21,6 +21,7 @@ The Kachlian’s main actions include a multiattack that allows it to strike thr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kachlian
 
 *Huge* *Aberration* *neutral evil*
@@ -57,5 +58,6 @@ Cantrips (at will): chill touch, minor illusion, ray of frost, shocking grasp
 - **Tentacle:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 17 (3d8 + 4) bludgeoning damage. If the target is a Large or smaller creature, it is grappled (escape DC 16). The kachlian has three tentacles, each of which can grapple only one target.
 
 
+</statblock>
 
 

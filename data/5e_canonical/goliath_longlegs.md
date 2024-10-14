@@ -25,6 +25,7 @@ Overall, the Goliath Longlegs combines offense, defense, and environmental manip
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goliath Longlegs
 
 *Gargantuan* *Monstrosity* *unaligned*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Reel:** The goliath longlegs pulls one creature caught in its web up to 30 feet straight toward it. If the target is within 10 feet of the goliath longlegs, the goliath longlegs can make one bite attack as a bonus action.
 
 
+</statblock>
 
 

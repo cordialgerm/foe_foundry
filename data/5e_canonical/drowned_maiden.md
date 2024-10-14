@@ -23,6 +23,7 @@ Finally, as a bonus action, the Drowned Maiden can use the Reel ability to pull 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drowned Maiden
 
 *Medium* *Undead* *Neutral Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Reel:** The drowned maiden pulls each creature grappled by her up to 15 feet straight toward her.
+</statblock>
 
 

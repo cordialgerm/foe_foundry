@@ -40,6 +40,7 @@ The combination of these features and abilities makes the Flesh Guardian a uniqu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flesh Guardian
 
 *Medium* *Construct*
@@ -78,5 +79,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Bolt (1/Day, While Bloodied):** An 80-foot-long  5-foot-wide lightning bolt springs from the guardians chest. Each creature in the area makes a DC 15 Dexterity saving throw  taking 28 (8d6) lightning damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

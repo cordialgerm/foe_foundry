@@ -42,6 +42,7 @@ Overall, as a Darakhul High Priestess, she is an undead manipulator and spellcas
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Darakhul High Priestess
 
 *Medium* *Undead* *neutral evil*
@@ -89,5 +90,6 @@ Cantrips (at will): guidance, mending, resistance, sacred flame, spare the dying
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a humanoid is paralyzed for more than 2 rounds, it contracts darakhul fever.
 
 
+</statblock>
 
 

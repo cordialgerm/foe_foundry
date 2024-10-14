@@ -19,6 +19,7 @@ In combat, the Mud Golem can utilize its Multiattack feature to make two slam at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mud Golem
 
 *Small* *Construct* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Mud Ball:** Ranged Weapon Attack: +2 to hit, range 30/120 ft., one target. Hit: 3 (1d6) bludgeoning damage, and the target is blinded until the end of its next turn.
 
 
+</statblock>
 
 

@@ -35,6 +35,7 @@ Overall, the Mountain Strider combines strength and tactical abilities with an i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mountain Strider
 
 *Large* *Monstrosity* *chaotic neutral*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Revenge for the Fallen:** When an ally the mountain strider can see is reduced to 0 hp within 30 feet of the mountain strider, the strider can move up to half its speed and make a headbutt attack.
 
 
+</statblock>
 
 

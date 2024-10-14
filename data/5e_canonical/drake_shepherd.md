@@ -35,6 +35,7 @@ Finally, the reaction called Shepherd’s Safeguard enables the drake to protect
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drake, Shepherd
 
 *Medium* *Dragon* *lawful neutral*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Shepherd’s Safeguard:** When a Beast within 30' of the drake would be hit by an attack drake can chirp and beast adds 3 to its AC vs. the attack. To do so drake must see attacker and Beast.
 
 
+</statblock>
 
 

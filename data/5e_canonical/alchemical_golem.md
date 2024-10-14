@@ -44,6 +44,7 @@ These attributes and abilities make the Alchemical Golem a unique and dangerous 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alchemical Golem
 
 *Large* *Construct* *unaligned*
@@ -83,5 +84,6 @@ Salt: The golem takes 17 (5d6) necrotic damage when it activates this infusion. 
 - **Poison Breath (Brimstone Infusion Only; Recharge 5-6):** The golem exhales poisonous fumes in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 31 (9d6) poison damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

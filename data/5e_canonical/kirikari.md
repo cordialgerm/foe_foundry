@@ -21,6 +21,7 @@ Additionally, the Kirikari can use its Blinding Veil ability (which recharges on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kirikari
 
 *Huge* *Monstrosity* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Blinding Veil (Recharge 5-6):** The kirikari expels a cloud of intensified mist, heavily obscuring everything within 30 feet of it. The mist thins back to lightly obscuring the area at the end of the kirikari’s next turn.
 
 
+</statblock>
 
 

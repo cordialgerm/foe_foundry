@@ -21,6 +21,7 @@ For its actions, the Lystrosaurus can use a ram attack, which is a melee weapon 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lystrosaurus
 
 *Medium* *Beast* *unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 3) piercing damage.
 
 
+</statblock>
 
 

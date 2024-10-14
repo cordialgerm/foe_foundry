@@ -25,6 +25,7 @@ This combination of physical attributes, special abilities, and combat actions m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wolf Reaver Dwarf
 
 *Medium* *Humanoid* *Any Chaotic Alignment*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Battleaxe:** Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands.
 - **Handaxe:** Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) slashing damage.
 - **Spear:** Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage if used with two hands to make a melee attack.
+</statblock>
 
 

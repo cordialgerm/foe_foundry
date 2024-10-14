@@ -21,6 +21,7 @@ For a bonus action, the Mountain Dwarf Soldier can utilize Tactical Movement, wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mountain Dwarf Soldier
 
 *Medium* *Humanoid*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Tactical Movement:** Until the end of the soldiers turn, their Speed is halved and their movement doesnt provoke opportunity attacks.
 
 
+</statblock>
 
 

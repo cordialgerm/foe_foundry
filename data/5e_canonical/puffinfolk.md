@@ -21,6 +21,7 @@ For reactions, the Puffinfolk benefits from the "Quick and Nimble" ability, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Puffinfolk
 
 *Small* *Humanoid* *neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Quick and Nimble:** When a creature the puffinfolk can see targets it with melee or ranged weapon attack puffinfolk darts out of the way and attacker has disadvantage on the attack.
 
 
+</statblock>
 
 

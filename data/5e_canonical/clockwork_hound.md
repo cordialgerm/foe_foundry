@@ -19,6 +19,7 @@ In terms of actions, the Clockwork Hound can perform two main attacks. Its Bite 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Hound
 
 *Medium* *Construct* *Unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) piercing damage.
 - **Tripping Tongue:** Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: 12 (2d8 + 3) slashing damage, and the target must succeed on a DC 13 Strength saving throw or be knocked prone.
+</statblock>
 
 

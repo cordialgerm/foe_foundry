@@ -38,6 +38,7 @@ This combination of abilities and actions makes the Necrohydra a particularly da
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Necrohydra
 
 *Huge* *Undead* *Neutral Evil*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 7 (1d4 + 5) piercing damage plus 4 (1d8) necrotic damage.
 - **Dreadful Dirge:** The necrohydra’s heads emit a cacophonous, moaning wail. Each creature that isn’t a Construct or Undead within 30 feet of the necrohydra that can hear the wail must succeed on a DC 17 Wisdom saving throw or be frightened until the wail ends. The necrohydra must take a bonus action on its subsequent turns to continue wailing. It can stop wailing at any time. The wail ends if the necrohydra is incapacitated. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Necrotic Bile (Recharge 6):** The necrohydra spews rotten bile soaked in necrotic energy in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 21 (6d6) poison damage and 18 (4d8) necrotic damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

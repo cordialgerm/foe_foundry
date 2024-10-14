@@ -22,6 +22,7 @@ The spellcasting capability of the Mage Apprentice allows it to use its Intellig
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mage Apprentice
 
 *Medium humanoid (any lineage)*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 	- At will: mage hand, minor illusion
 	- 1/day each: color spray, mage armor, sleep
 
+</statblock>
 
 

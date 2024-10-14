@@ -1,8 +1,8 @@
 <MonsterName/>Werewolf (Lycanthrope)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-<Subtype/>shapechanger</Subtype>
 <Subtype/>human</Subtype>
 <Subtype/>lycanthrope</Subtype>
+<Subtype/>shapechanger</Subtype>
 <CR/>3</CR>
 <AC/>11</AC>
 <HP/>58</HP>
@@ -38,6 +38,7 @@ Overall, the Werewolf embodies a potent mix of strength, tactical advantages, an
 
 Source: 5e_srd
 
+<statblock>
 ### Werewolf (Lycanthrope)
 
 *Medium humanoid (human, shapechanger), chaotic evil*
@@ -74,7 +75,8 @@ Source: 5e_srd
 
 ***Claws (Hybrid Form Only)***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 7 (2d4+2) slashing damage.
 
-***Spear (Humanoid Form Only)***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 20/60 ft., one creature. *Hit:* 5 (1d6+2) piercing damage, or 6 (1d8+2) piercing damage if used with two hands to make a melee attack.
+***Spear (Humanoid Form Only)***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 20/60 ft., one creature. *Hit:* 5 (1d6+2) piercing damage, or 6 (1d8+2) piercing damage if used with two hands to make a melee attack.</statblock>
+
 
 
 
@@ -82,6 +84,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Werewolf
 
 *Medium* *Humanoid*
@@ -119,6 +122,7 @@ Source: 5e_artisinal_monsters
 - **Frenzied Bite (While Bloodied:** The werewolf makes a bite attack.
 
 
+</statblock>
 
 
 
@@ -127,6 +131,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Werewolf
 
 *Medium humanoid (lycanthrope)*
@@ -163,5 +168,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape.** The werewolf transforms into a Medum or Large wolf, a Medium wolf-humanoid hybrid, or back into its true form, which is Humanoid. Its statistics, other than its size, speed, and AC, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
 - **Hungry Growl (Wolf and Hybrid Form Only).** The werewolf stares down and growls at one creature it can see within 30 feet of it. The target must succeed on a DC 13 WIS save or be frightened until the end of its next turn. The werewolf has advantage on the next attack roll it makes against the frightened creature.
 
+</statblock>
 
 

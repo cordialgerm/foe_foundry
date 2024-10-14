@@ -31,6 +31,7 @@ Ascetic Grandmasters are often the most revered martial artists or solitary wand
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ascetic Grandmaster
 
 *Medium* *Humanoid*
@@ -77,5 +78,6 @@ Source: 5e_artisinal_monsters
 - **Ascetic grandmasters lead the finest monasteries in the world or travel alone seeking worthy challenges and students:** They often appear unassuming, but challenging the speed and strength of these legendary martial artists is akin to challenging a hurricane.
 
 
+</statblock>
 
 

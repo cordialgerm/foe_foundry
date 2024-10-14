@@ -21,6 +21,7 @@ Overall, the Three-Headed Clockwork Dragon presents a blend of physical might an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Three-Headed Clockwork Dragon
 
 *Huge* *Construct* *unaligned*
@@ -63,5 +64,6 @@ Each circlet is a magic item that must be attuned.
 - **Tail Sweep:** The dragon swings its bladed tail. Each creature within 15 feet of the dragon must make a DC 19 Dexterity saving throw. On a failure, a creature takes 16 (2d8 + 7) slashing damage and is knocked prone. On a success, a creature takes half the damage but isn't knocked prone.
 
 
+</statblock>
 
 

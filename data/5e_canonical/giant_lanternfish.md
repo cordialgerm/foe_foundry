@@ -27,6 +27,7 @@ The combination of physical attacks, deception, and powerful spell abilities mak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Lanternfish
 
 *Large* *Monstrosity*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Misty Step (2nd-Level; V):** The giant lanternfish teleports to an unoccupied space it can see within 30 feet. The giant lanternfish can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ The Phantom can perform the action Ghostly Grasp, which is a melee weapon attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Phantom
 
 *Medium* *Undead* *any alignment*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Chilling Moan (Recharge 5-6):** The phantom emits an eerie moan. Each creature within 30 feet that isn't an undead or a construct must make a DC 13 Wisdom saving throw. On a failure, the target takes 9 (2d8) cold damage and is frightened until the end of the phantom's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. On a success, the target takes half the damage and isn't frightened.
 
 
+</statblock>
 
 

@@ -35,6 +35,7 @@ As a bonus action, the Merrow can use Shoving Rush, allowing it to move swiftly 
 
 Source: 5e_srd
 
+<statblock>
 ## Merrow
 
 *Large monstrosity, chaotic evil*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (2d4+4) slashing damage.
 
-***Harpoon***. *Melee or Ranged Weapon Attack:* +6 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 11 (2d6+3) piercing damage. If the target is a Huge or smaller creature, it must succeed on a Strength contest against the merrow or be pulled up to 20 feet toward the merrow.
+***Harpoon***. *Melee or Ranged Weapon Attack:* +6 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 11 (2d6+3) piercing damage. If the target is a Huge or smaller creature, it must succeed on a Strength contest against the merrow or be pulled up to 20 feet toward the merrow.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Merrow
 
 *Large* *Monstrosity*
@@ -105,6 +108,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage, or 9 (2d4 + 4) piercing damage if the target is grappled.
 
 
+</statblock>
 
 
 
@@ -113,6 +117,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Merrow
 
 *Large monstrosity*
@@ -149,5 +154,6 @@ Source: 5e_artisinal_monsters
 - **Shoving Rush.** The merrow takes the Dash action. If it moves, it can propel itself into one creature it can see along its path. The target must succeed on a DC 14 STR save or be knocked prone. This movement doesn’t provoke opportunity attacks from a target that fails this save.
 - **Recall Harpoon.** The merrow pulls on the cord connected to its harpoon, returning the harpoon to its empty hand. If the harpoon is stuck in a creature, that creature must succeed on a DC 14 STR save or be pulled up to 20 feet toward the merrow. Regardless, the harpoon is dislodged and returned to the merrow’s hand.
 
+</statblock>
 
 

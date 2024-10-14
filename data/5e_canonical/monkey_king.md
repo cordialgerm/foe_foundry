@@ -23,6 +23,7 @@ The Monkey King has access to legendary actions, which enable it to act outside 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Monkey King
 
 *Medium* *Celestial* *neutral*
@@ -68,5 +69,6 @@ The Monkey King can take 3 legendary actions, choosing from the options below. O
 - **Great Leap:** The Monkey King moves up to his speed without provoking opportunity attacks.
 - **Quick Staff:** The Monkey King makes a golden staff attack.
 - **Golden Burst (Costs 3 Actions):** Each creature of the Monkey King's choice within 10 feet of him must make a DC 18 Charisma saving throw, taking 36 (8d8) radiant damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

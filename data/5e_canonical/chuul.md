@@ -35,6 +35,7 @@ Overall, the Chuul embodies a creature that thrives on grappling and manipulatin
 
 Source: 5e_srd
 
+<statblock>
 ## Chuul
 
 *Large aberration, chaotic evil*
@@ -71,7 +72,8 @@ Source: 5e_srd
 
 ***Pincer***. *Melee Weapon Attack:* +6 to hit, reach 10 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage. The target is grappled (escape DC 14) if it is a Large or smaller creature and the chuul doesn't have two other creatures grappled.
 
-***Tentacles***. One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+***Tentacles***. One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</statblock>
+
 
 
 
@@ -79,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chuul
 
 *Large* *Aberration*
@@ -111,6 +114,7 @@ Source: 5e_artisinal_monsters
 - **Tentacle:** A grappled creature makes a DC 14 Constitution saving throw. On a failure  it is paralyzed for 1 minute. The creature repeats the saving throw at the end of each of its turns  ending the paralysis on a success.
 
 
+</statblock>
 
 
 
@@ -119,6 +123,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chuul
 
 *Large aberration*
@@ -154,5 +159,6 @@ Source: 5e_artisinal_monsters
 
 - **Paralyzing Tentacles.** One creature grappled by the chuul must succeed on a DC 14 CON save or be poisoned for 1 minute. Until this poison ends, the creature is paralyzed. A poisoned creature can repeat the save at the end of each of its turns, ending the effect on itself on a success.
 
+</statblock>
 
 

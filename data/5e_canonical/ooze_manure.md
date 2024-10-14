@@ -19,6 +19,7 @@ The Manure Ooze also possesses a Split reaction. If it takes slashing damage whi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ooze, Manure
 
 *Medium* *Ooze* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Split:** When a Med or larger manure ooze is subjected to slashing damagesplits into 2 new oozes if it has 10+ hp. Each new ooze has half original’s hp rounded down. New oozes are one size smaller than original.
 
 
+</statblock>
 
 

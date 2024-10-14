@@ -21,6 +21,7 @@ In combat, the Zombie, Smokeplume has several actions. Its primary attack is "Sl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zombie, Smokeplume
 
 *Large* *Undead* *chaotic evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Smoke Breath (Recharge 5–6):** The zombie breathes a cloud of smoke in a 15 ft. cone. Each creature in the area: 9 (2d8) fire and 7 (2d6) poison (DC 15 Con half). Smoke remains until the start of the zombie’s next turn and its area is heavily obscured.
 
 
+</statblock>
 
 

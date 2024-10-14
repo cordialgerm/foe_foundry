@@ -21,6 +21,7 @@ In combat, she can use a Multiattack to make three longbow attacks, leveraging h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mountain Nymph
 
 *Medium* *Fey* *chaotic neutral*
@@ -56,5 +57,6 @@ At will: hunter’s mark
 - **Longbow:** Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage.
 
 
+</statblock>
 
 

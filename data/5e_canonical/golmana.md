@@ -24,6 +24,7 @@ The Golmana’s **Bonus Action**, known as **Consuming Rend**, allows it to dig 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Golmana
 
 *Medium fiend (demon)*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 
 - **Consuming Rend.** The golmana violently digs its small, torso claws into one creature it is grappling. The target must make a DC 15 DEX save, taking 7 (2d6) slashing damage on a failed save, or half as much damage on a successful one. The golmana then regains HP equal to the damage dealt.
 
+</statblock>
 
 

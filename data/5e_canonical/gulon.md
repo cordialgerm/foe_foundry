@@ -23,6 +23,7 @@ Overall, the Gulon is a resilient and powerful creature capable of navigating ti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gulon
 
 *Large* *Monstrosity* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Too Full (Recharge 5-6):** The gulon belches a 15-foot-radius cloud of toxic gas around itself. Each creature in the area must make a DC 16 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

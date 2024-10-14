@@ -9,6 +9,7 @@
 
 Source: 5e_srd
 
+<statblock>
 ## Sphinx of Wonder
 
 _Tiny Celestial, Lawful Good_
@@ -46,5 +47,6 @@ _Hit:_ 5 (1d4 + 3) slashing damage plus 7 (2d6) radiant damage.
 
 **Burst of Ingenuity (2/Day).** _Trigger:_ The sphinx or another creature within 30 feet makes an ability check or a saving throw.
 _Response:_ The sphinx adds 2 to the roll.
+</statblock>
 
 

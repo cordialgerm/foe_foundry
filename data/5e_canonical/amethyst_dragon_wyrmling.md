@@ -19,6 +19,7 @@ For combat actions, the Amethyst Dragon Wyrmling can make a melee attack with it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Amethyst Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Concussive Breath (Recharge 5-6):** The dragon psionically unleashes telekinetic energy in a 15-foot cone. Each creature in that area makes a DC 12 Constitution saving throw  taking 16 (3d10) force damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

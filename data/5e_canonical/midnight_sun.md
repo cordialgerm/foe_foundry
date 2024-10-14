@@ -21,6 +21,7 @@ In combat, the Midnight Sun can execute a Multiattack that allows it to make thr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Midnight Sun
 
 *Large* *Aberration* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Energy Pulse (Recharge 5–6):** Each creature within 15 ft. of it: 28 (8d6) damage of type determined by sun’s form (DC 15 Con half).
 
 
+</statblock>
 
 

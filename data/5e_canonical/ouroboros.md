@@ -27,6 +27,7 @@ Lastly, the Reactive Hide ability grants the Ouroboros damage resistance to the 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ouroboros
 
 *Huge* *Dragon* *neutral*
@@ -69,5 +70,6 @@ The ouroboros can take 3 legendary actions, choosing from the options below. Onl
 - **Bite Attack:** The ouroboros makes one bite attack.
 - **Blurring Façade (Costs 2 Actions):** The ouroboros blurs and shifts light around itself or another creature it can see within 60 feet of it. Attacks against the target have disadvantage until the end of the ouroboros' next turn. The target can resist this effect with a successful DC 15 Wisdom saving throw.
 - **Guiding Beacon (Costs 2 Actions):** The ouroboros causes itself or another creature it can see within 60 feet of it to illuminate with white flame. Attacks against the target have advantage until the end of the ouroboros' next turn. The target can resist this effect with a successful DC 15 Wisdom saving throw.
+</statblock>
 
 

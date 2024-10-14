@@ -21,6 +21,7 @@ The Ramag also possesses the Dimensional Seal ability, which it recharges after 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ramag Portal Master
 
 *Medium* *Humanoid* *neutral*
@@ -58,5 +59,6 @@ Cantrips (at will): fire bolt, light, prestidigitation, shocking grasp
 - **Weave Dimensions:** The ramag creates two magical gateways in unoccupied spaces it can see within 100 feet of it. The gateways appear as shimmering, opaque ovals in the air. A creature that moves into one gateway appears at the other immediately. The gateways last for 1 minute, or until the ramag loses concentration on them as if concentrating on a spell.
 
 
+</statblock>
 
 

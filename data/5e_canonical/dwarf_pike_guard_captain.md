@@ -25,6 +25,7 @@ For reactions, the Captain can utilize "Brace Pike" when an enemy enters its rea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dwarf, Pike Guard Captain
 
 *Medium* *Humanoid* *lawful neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Bring It Down:** When a creature within captain’s reach takes damage from a pike guard or pike guard captain captain can make one opportunity attack vs. that creature.
 
 
+</statblock>
 
 

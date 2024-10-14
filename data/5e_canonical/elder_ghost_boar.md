@@ -25,6 +25,7 @@ Overall, the Elder Ghost Boar is a powerful and unique opponent that utilizes bo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elder Ghost Boar
 
 *Huge* *Monstrosity* *unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Ghostly Slip:** When it is targeted by an attack or spell or is grappled or restrained, the ghost boar becomes momentarily incorporeal. It gains resistance to any damage that isn't force and ends any grappled or restrained conditions on itself.
 
 
+</statblock>
 
 

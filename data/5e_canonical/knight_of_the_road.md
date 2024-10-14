@@ -29,6 +29,7 @@ Overall, the Knight of the Road is a cunning and powerful adversary that combine
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Knight of the Road
 
 *Medium* *Humanoid* *lawful evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Shortbow:** Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 7 (1d6 + 4) piercing damage and the target must succeed on a DC 15 Constitution saving throw or become poisoned for 1 minute. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

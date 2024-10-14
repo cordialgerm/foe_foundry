@@ -40,6 +40,7 @@ For its reactions, the Righteous Sentinel has Reflective Retribution, allowing i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Righteous Sentinel
 
 *Large* *Construct* *lawful good*
@@ -80,5 +81,6 @@ Source: 5e_artisinal_monsters
 - **Reflective Retribution:** The sentinel adds 3 to its AC against one melee attack that would hit it. To do so, the sentinel must see the attacker. If the attack misses, the attacker takes 11 (2d10) psychic damage.
 
 
+</statblock>
 
 

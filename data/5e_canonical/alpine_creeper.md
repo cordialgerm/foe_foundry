@@ -25,6 +25,7 @@ As a bonus action, the Alpine Creeper can enact Lethargic Stupor, which inflicts
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alpine Creeper
 
 *Huge* *Plant* *unaligned*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Lethargic Stupor:** One unconscious Humanoid or Giant in creeper’s space suffers one level of exhaustion. A creature with more than half its hp max can’t suffer more than one level of exhaustion from this. This exhaustion lasts until creature finishes short rest.
 
 
+</statblock>
 
 

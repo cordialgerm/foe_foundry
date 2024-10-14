@@ -27,6 +27,7 @@ For its actions, the Cikavak can make a melee attack using its Beak, which yield
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cikavak
 
 *Tiny* *Fey* *Neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Beak:** Melee Weapon Attack: +4 to hit, range 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 - **Silencing Squawk (Recharge 6):** The cikavak lets out a magical squawk in a 30-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or be deafened and unable to speak for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

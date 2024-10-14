@@ -35,6 +35,7 @@ Overall, while the Spider is not a fearsome combatant, its abilities in stealth 
 
 Source: 5e_srd
 
+<statblock>
 ### Spider
 
 *Tiny beast, unaligned*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must succeed on a DC 9 Constitution saving throw or take 2 (1d4) poison damage.
+***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must succeed on a DC 9 Constitution saving throw or take 2 (1d4) poison damage.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spider
 
 *Tiny* *Beast*
@@ -102,6 +105,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage and the target makes a DC 9 Constitution saving throw  taking 2 (1d4) poison damage on a failure.
 
 
+</statblock>
 
 
 
@@ -110,6 +114,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spider
 
 *Tiny beast*
@@ -143,5 +148,6 @@ Source: 5e_artisinal_monsters
 
 - **Web Shot (Recharge 4–6).** The spider launches a gob of webbing at one creature it can see within 15 feet of it. The target must succeed on a DC 9 DEX save or have its speed reduced by 10 feet. A creature can take an action to remove the webbing, ending the effect.
 
+</statblock>
 
 

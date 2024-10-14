@@ -23,6 +23,7 @@ As a bonus action, the Ushabti can use Telekinesis to attempt to move one creatu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ushabti
 
 *Medium* *Construct* *Unaligned*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Telekinesis:** One creature the ushabti can see within 60 feet of it must succeed on a DC 16 Strength saving throw or the ushabti moves the creature up to 30 feet in any direction (including upward). The target is restrained until the start of the ushabti’s next turn.
+</statblock>
 
 

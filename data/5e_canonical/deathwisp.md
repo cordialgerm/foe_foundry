@@ -25,6 +25,7 @@ For bonus actions, the Deathwisp has the Shadow Traveler ability, which it can u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deathwisp
 
 *Medium* *Undead* *Neutral Evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Traveler (3/Day):** While in shadows, dim light, or darkness, the deathwisp disappears into the darkness and reappears in an unoccupied space it can see within 30 feet. A tendril of inky smoke appears at the origin and destination when it uses this bonus action.
+</statblock>
 
 

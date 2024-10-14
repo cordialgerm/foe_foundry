@@ -19,6 +19,7 @@ One of its notable special actions, Elemental Leaves, can be used after a rechar
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragonleaf Tree
 
 *Large* *Plant* *Unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage plus 7 (2d6) damage of the type noted in the Elemental Affinity trait.
 - **Throw Leaves:** Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 12 (4d4 + 2) slashing damage plus 7 (2d6) damage of the type noted in the Elemental Affinity trait.
 - **Elemental Leaves (Recharge 6):** The dragonleaf tree’s leaves rain acid, shed bolts of lightning, shake loose icicles, or similarly emit the elemental energies of the dragon that grew the tree. Each creature within 20 feet of the dragonleaf tree must make a DC 15 Dexterity saving throw, taking 42 (12d6) damage of the type noted in the Elemental Affinity trait.
+</statblock>
 
 

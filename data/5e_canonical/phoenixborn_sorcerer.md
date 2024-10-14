@@ -35,6 +35,7 @@ Lastly, the Phoenixborn Sorcerer is capable of spellcasting, with its spellcasti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Phoenixborn Sorcerer
 
 *Medium* *Humanoid* *any*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 13): At will: mage hand minor illusion light prestidigitation2/day ea: charm person continual flame mage armor1/day: dispel magic
 
 
+</statblock>
 
 

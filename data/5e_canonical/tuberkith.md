@@ -19,6 +19,7 @@ In terms of actions, the Tuberkith has two melee weapon attacks. The Peeler atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tuberkith
 
 *Small* *Plant* *any alignment*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Masher:** Melee Weapon Attack: +4 to hit, 5 ft., one target, 6 (1d8+2) bludgeoning damage. If the target is a creature it must make DC 12 Str save or be knocked prone.
 
 
+</statblock>
 
 

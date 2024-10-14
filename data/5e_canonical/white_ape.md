@@ -29,6 +29,7 @@ The White Ape is a dangerous adversary with a combination of physical might and 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # White Ape
 
 *Large* *Monstrosity* *Neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Fist:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage.
 - **Frenzy (Recharge 5–6):** The white ape lashes out wildly at nearby creatures, flailing and biting. Each creature within 10 feet of the white ape must make a DC 15 Dexterity saving throw. On a failure, a creature takes 35 (10d6) bludgeoning damage and is pushed up to 10 feet away from the ape. On a success, a creature takes half the damage and isn’t pushed. A creature that succeeds on this saving throw also has advantage on attack rolls against the white ape until the end of its next turn.
 - **Familiar:** The witchlight can serve another creature as a familiar, forming a magic, telepathic bond with that willing companion. While the two are bonded, the companion can sense what the witchlight senses as long as they are within 1 mile of each other. While the witchlight is within 10 feet of its companion, the companion can’t be blinded. At any time and for any reason, the witchlight can end its service as a familiar, ending the telepathic bond.
+</statblock>
 
 

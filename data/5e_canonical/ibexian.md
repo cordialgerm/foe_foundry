@@ -21,6 +21,7 @@ Once per day, the Ibexian can unleash a powerful ability called "Pyroclasm." Thi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ibexian
 
 *Large* *Fiend* *chaotic evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Pyroclasm (1/Day):** Moves up to 30' in straight line to creature and can move through space of any Med or smaller creature stopping when it moves within 5 ft. of target. Each friendly ibexian within 50' of ibexian can use its reaction to also move up to its speed in straight line to target stopping when it moves within 5 ft. of target. This move doesn’t provoke opportunity attacks. Target and each creature within 20' of it: 14 (4d6) fire (DC 15 Dex half damage). For each ibexian in Pyroclasm after 1st fire increases by 3 (1d6) max (28) 8d6.
 
 
+</statblock>
 
 

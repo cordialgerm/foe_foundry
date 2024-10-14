@@ -29,6 +29,7 @@ With its blend of stealth, regeneration, and aggressive area damage capabilities
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pyrrhic Podthrower
 
 *Small* *Plant* *unaligned*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Unstable Bulb:** When podthrower is grappled and removed from the ground while above 0 hp its bulb bursts. Each creature within 10 ft.: 12 (5d4) fire (DC 15 Dex half).
 
 
+</statblock>
 
 

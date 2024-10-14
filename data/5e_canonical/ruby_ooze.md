@@ -21,6 +21,7 @@ Overall, the Ruby Ooze is a formidable foe in battle, leveraging surprise, corro
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ruby Ooze
 
 *Medium* *Ooze* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Acid Spray (Recharge 5-6):** The ooze sprays its bright red protoplasm in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw. On a failure, the creature takes 21 (6d6) acid damage and is restrained as its flesh begins to turn into a translucent ruby-like stone. On a success, the creature takes half the damage and isn't restrained. The restrained creature must make a DC 15 Constitution saving throw at the end of its next turn, taking 21 (6d6) acid damage and becoming petrified on a failure or ending the effect on a success.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ As a reaction, the Wyrdling can use "Call on Fate" when it is attacked by a visi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wyrdling
 
 *Medium humanoid*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 
 - **Call on Fate** . When the wyrdling is attacked by a creature it can see, it can pluck the strands of fate around the creature, imposing disadvantage on that attack roll. If the attack misses, the wyrdling or one friendly creature it can see within 30 feet of it has advantage on the next attack roll it makes against the attacker before the end of the wyrdling’s next turn.
 
+</statblock>
 
 

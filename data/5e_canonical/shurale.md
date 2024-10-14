@@ -21,6 +21,7 @@ In terms of actions, the Shurale can use a Multiattack option, utilizing its Tic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shurale
 
 *Medium* *Fey* *neutral evil*
@@ -60,5 +61,6 @@ At will: dancing lights, invisibility (self only), minor illusion
 - **Tickle:** The shurale touches a creature within 5 feet of it. The target must succeed on a DC 15 Wisdom saving or begin to laugh uncontrollably for 1 minute. While laughing, the target falls prone, is incapacitated, and unable to move. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the shurale’s Tickle for the next 24 hours. If the target fails the saving throw three times, it must succeed on a DC 15 Constitution saving throw or be reduced to 0 hp and begin dying. On a success, the laughter ends on the target, as normal.
 
 
+</statblock>
 
 

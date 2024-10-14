@@ -43,6 +43,7 @@ Overall, the Steam Mephit is a versatile creature that can serve a variety of ro
 
 Source: 5e_srd
 
+<statblock>
 ### Steam Mephit
 
 *Small elemental, neutral evil*
@@ -75,7 +76,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +2 to hit, reach 5 ft., one creature. *Hit:* 2 (1d4) slashing damage plus 2 (1d4) fire damage.
 
-***Steam Breath (Recharge 6)***. The mephit exhales a 15- foot cone of scalding steam. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 4 (1d8) fire damage on a failed save, or half as much damage on a successful one.
+***Steam Breath (Recharge 6)***. The mephit exhales a 15- foot cone of scalding steam. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 4 (1d8) fire damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -83,6 +85,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Steam Mephit
 
 *Small* *Elemental*
@@ -115,6 +118,7 @@ Source: 5e_artisinal_monsters
 - **Steam Breath (1/Day):** The mephit exhales a 15-foot cone of steam. Each creature in the area makes a DC 10 Constitution saving throw  taking 4 (1d8) fire damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -123,6 +127,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Steam Mephit
 
 *Small elemental*
@@ -157,5 +162,6 @@ Source: 5e_artisinal_monsters
 
 - **Hazy Form (1/Day).** The mephit casts the blur spell, requiring no material components and using WIS as the spellcasting ability.
 
+</statblock>
 
 

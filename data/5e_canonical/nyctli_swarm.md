@@ -21,6 +21,7 @@ Overall, the Nyctli Swarm presents both a formidable challenge and tactical oppo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nyctli Swarm
 
 *Large* *Fey* *chaotic evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Douse Light:** As the nyctli, except the swarm can’t dispel light created by a spell of 6th level or higher.
 
 
+</statblock>
 
 

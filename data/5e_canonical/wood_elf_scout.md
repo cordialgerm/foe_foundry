@@ -19,6 +19,7 @@ In combat, the Wood Elf Scout can use a shortsword in melee, receiving a +5 to h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wood Elf Scout
 
 *Medium* *Humanoid*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
 
 
+</statblock>
 
 

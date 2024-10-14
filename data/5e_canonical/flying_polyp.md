@@ -23,6 +23,7 @@ As a reaction, the Flying Polyp can use Fist of Wind in response to being target
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flying Polyp
 
 *Huge* *Aberration* *chaotic evil*
@@ -68,5 +69,6 @@ At will: invisibility (self only)
 - **Fist of Wind:** When a creature the flying polyp can see targets it with an attack, the flying polyp can unleash a line of strong wind 60 feet long and 10 feet wide in the direction of the attacker. The wind lasts until the start of the flying polyp's next turn. Each creature in the wind when it appears or that starts its turn in the wind must succeed on a DC 17 Strength saving throw or be pushed 15 feet away from the flying polyp in a direction following the line. Any creature in the line treats all movement as difficult terrain.
 
 
+</statblock>
 
 

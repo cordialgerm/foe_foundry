@@ -21,6 +21,7 @@ As a bonus action, the Robot Drone can execute a Fueled Escape. This allows it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Robot Drone
 
 *Tiny construct*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 
 - **Fueled Escape.** The drone takes the Dash or Disengage action, leaving a small cloud of fuel fumes behind it. Each creature within 5 feet must succeed on a DC 13 CON save or be poisoned until the end of its next turn.
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ For legendary actions, the Pyrohydra has two options available at the end of ano
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pyrohydra
 
 *Huge* *Monstrosity*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **The hydra can take 2 legendary actions:** Only one legendary action can be used at a time and only at the end of another creatures turn. It regains spent legendary actions at the start of its turn.
 - **Rush:** The hydra moves or swims up to half its Speed without provoking opportunity attacks. If this movement would pass through the space of creatures that are not incapacitated or prone, each creature makes a DC 17 Strength saving throw. On a failure, the creature is knocked prone and the hydra can enter its space without treating it as difficult terrain. On a success, the hydra can't enter the creatures space, and the hydras movement ends. If this movement ends while the hydra is sharing a space with a creature, the creature is pushed to the nearest unoccupied space.
 - **Wrap:** Melee Weapon Attack: +9 to hit, reach 10 ft., one Medium or smaller creature. Hit: The target is grappled (escape DC 17) and restrained until this grappled ends. The hydra can grapple one creature for each of its heads. When one of the hydras heads is killed while it is grappling a creature, the creature that killed the head can choose one creature to free from the grapple.
+</statblock>
 
 

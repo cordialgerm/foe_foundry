@@ -21,6 +21,7 @@ In combat, the Vexxeh can utilize its "Multiattack" action to make three attacks
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vexxeh
 
 *Huge* *Fiend* *lawful evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) slashing damage.
 
 
+</statblock>
 
 

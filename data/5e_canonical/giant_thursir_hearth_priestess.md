@@ -21,6 +21,7 @@ Additionally, she has the ability to cast spells, leveraging her Wisdom with a s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant, Thursir Hearth Priestess
 
 *Large* *Giant* *lawful evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Wis (DC 13): At will: mending spare the dying thaumaturgy3/day ea: cure wounds heat metal1/day: haste
 
 
+</statblock>
 
 

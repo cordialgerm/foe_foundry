@@ -32,6 +32,7 @@ As for its actions, the Quiet Soul can unleash a psychic lash, which is a ranged
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quiet Soul
 
 *Medium* *Undead* *neutral evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Psychic Lash:** Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 21 (6d6) psychic damage. If an unconscious creature is hit by this attack, that creature must make a DC 15 Wisdom saving throw, remaining unconscious on a failed save, or waking on a successful one.
 
 
+</statblock>
 
 

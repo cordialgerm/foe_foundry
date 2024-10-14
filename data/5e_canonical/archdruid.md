@@ -24,6 +24,7 @@ Additionally, the Archdruid has a unique bonus action called Change Shape, allow
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archdruid
 
 *Medium humanoid (any lineage)*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The archdruid magically transforms into a Beast that has a challenge rating no higher than its own, or back into its true form, which is Humanoid. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies. In a new form, the archdruid retains its HP, ability to speak, proficiencies, and INT, WIS, and CHA modifiers, as well as this bonus action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
 
+</statblock>
 
 

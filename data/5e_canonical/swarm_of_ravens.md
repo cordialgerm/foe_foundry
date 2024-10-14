@@ -23,6 +23,7 @@ For actions, the Swarm of Ravens can perform a "Beaks" attack. This is a melee w
 
 Source: 5e_srd
 
+<statblock>
 ### Swarm of Ravens
 
 *Medium swarm of Tiny beasts, unaligned*
@@ -53,7 +54,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Beaks***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target in the swarm's space. *Hit:* 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.
+***Beaks***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target in the swarm's space. *Hit:* 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.</statblock>
+
 
 
 
@@ -61,6 +63,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Ravens
 
 *Medium* *Beast*
@@ -90,5 +93,6 @@ Source: 5e_artisinal_monsters
 - **Beaks:** Melee Weapon Attack: +4 to hit, reach 0 ft., one target. Hit: 7 (2d6) piercing damage  or 3 (1d6) piercing damage if the swarm is bloodied.
 
 
+</statblock>
 
 

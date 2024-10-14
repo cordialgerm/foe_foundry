@@ -21,6 +21,7 @@ In terms of actions, the Compsognathus can perform a Bite attack, which is a mel
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Compsognathus
 
 *Tiny* *Beast* *unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ As a bonus action, the Blood Hawk can use Evasive Flight to either disengage fro
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hawk, Blood
 
 *Small beast*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 
 - **Evasive Flight.** The hawk takes the Disengage or Dodge action. It can use this bonus action only while flying.
 
+</statblock>
 
 

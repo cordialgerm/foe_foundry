@@ -38,6 +38,7 @@ Additionally, the Witch Queen can execute a melee attack called Maddening Scimit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Witch Queen
 
 *Small* *Humanoid* *chaotic evil*
@@ -73,5 +74,6 @@ Cantrips (at will): acid splash, mage hand, message, ray of frost
 - **Maddening Scimitar:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage. If the target is a creature, it must succeed on a DC 14 Charisma saving throw or use its reaction to move up to its speed and make a melee attack against the nearest enemy of the witch queen.
 
 
+</statblock>
 
 

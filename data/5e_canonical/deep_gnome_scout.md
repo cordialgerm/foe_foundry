@@ -27,6 +27,7 @@ For actions, the scout can make a melee weapon attack with its War Pick, which h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deep Gnome Scout
 
 *Medium* *Humanoid*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Blindness (2nd-Level; V):** A creature within 30 feet makes a DC 10 Constitution saving throw. On a failure  the target is blinded for 1 minute. It repeats the saving throw at the end of each of its turns  ending the effect on a success.
 
 
+</statblock>
 
 

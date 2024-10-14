@@ -51,6 +51,7 @@ Overall, the Triceratops is a powerful creature ideal for aggressive tactics, ca
 
 Source: 5e_srd
 
+<statblock>
 ### Triceratops (Dinosaur)
 
 *Huge beast, unaligned*
@@ -79,7 +80,8 @@ If the target is prone, the triceratops can make one stomp attack against it as 
 
 ***Gore***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 24 (4d8+6) piercing damage.
 
-***Stomp***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one prone creature. *Hit:* 22 (3d10+6) bludgeoning damage.
+***Stomp***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one prone creature. *Hit:* 22 (3d10+6) bludgeoning damage.</statblock>
+
 
 
 
@@ -87,6 +89,7 @@ If the target is prone, the triceratops can make one stomp attack against it as 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Triceratops
 
 *Huge* *Beast*
@@ -111,6 +114,7 @@ Source: 5e_artisinal_monsters
 - **Trample:** The triceratops moves up to its speed in a straight line. It can move through the spaces of Large and smaller creatures. Each of these creatures makes a DC 14 Dexterity saving throw  taking 21 (3d10 + 5) bludgeoning damage on a failure.
 
 
+</statblock>
 
 
 
@@ -119,6 +123,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Triceratops
 
 *Huge beast*
@@ -153,5 +158,6 @@ Source: 5e_artisinal_monsters
 
 - **Warning Bugle.** The triceratops emits a piercing call in a 30-foot cone, signaling its impending attack. Each creature in the area must succeed on a DC 14 WIS save or be frightened until the end of its next turn. If the triceratops uses this bonus action before moving the requisite 20 feet for Trampling Charge, the target of its charge has disadvantage on this save, and the triceratops can make a Stomp attack against the prone target without needing to use a bonus action, provided the target fails the STR save from the charge.
 
+</statblock>
 
 

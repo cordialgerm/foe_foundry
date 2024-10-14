@@ -28,6 +28,7 @@ Overall, while the Vampire Thrall is a capable fighter and useful ally to its va
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire Thrall
 
 *Medium humanoid (any lineage)*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 
 - **Repay the Gift.** When a friendly vampire the thrall can see within 5 feet of it is hit by an attack that would reduce the vampire to 0 HP, the thrall can give some of its life force to save the vampire. The thrall loses 10 (3d6) HP, and the vampire regains HP equal to that amount.
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ In summary, the Corrupted Ushabti is a dangerous foe, blending resilience and co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corrupted Ushabti
 
 *Medium* *Undead* *Neutral Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The corrupted ushabti makes two Ceremonial Greatsword attacks.
 - **Ceremonial Greatsword:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 11 (2d6 + 3) slashing damage plus 7 (2d6) necrotic damage.
 - **Vomit Swarm (Recharge 5–6):** The corrupted ushabti exhales scarabs in a 30-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 25 (10d4) piercing damage and is covered in scarabs. On a success, a creature takes half the damage and isn’t covered in scarabs. A creature covered in scarabs takes 2 (1d4) piercing damage at the start of each of its turns. A creature, including the covered creature, can take its action to brush the scarabs off the covered creature by succeeding on a DC 15 Dexterity check.
+</statblock>
 
 

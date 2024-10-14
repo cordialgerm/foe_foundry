@@ -34,6 +34,7 @@ Overall, the Master Alchemist combines potent offensive capabilities with tactic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Master Alchemist
 
 *Medium humanoid (any lineage)*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 
 - **Protective Draught (Recharge 4–6).** The master alchemist drinks one of its brews and gains resistance to acid, cold, fire, or poison damage (the master alchemist’s choice) until the end of its next turn.
 
+</statblock>
 
 

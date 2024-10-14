@@ -25,6 +25,7 @@ For a bonus action, the Giant Flea can utilize its Leaping Escape ability, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Flea
 
 *Small* *Beast* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Leaping Escape:** Leaps up to 15 ft. with o provoking opportunity attacks.
 
 
+</statblock>
 
 

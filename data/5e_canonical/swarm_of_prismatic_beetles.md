@@ -21,6 +21,7 @@ For its actions, the swarm can perform Bites, making a melee weapon attack with 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Prismatic Beetles
 
 *Medium* *Swarm* *Beast* *Unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Bites:** Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hp or fewer. The target must make a DC 13 Constitution saving throw. On a failure, a creature takes 10 (4d4) poison damage and is euphoric for 1 minute. On a success, a creature takes half the damage and isn’t euphoric. A euphoric creature has disadvantage on saving throws. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

@@ -33,6 +33,7 @@ Overall, the Obeleric combines strong physical abilities and damaging attacks wi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Obeleric
 
 *Medium* *Aberration* *chaotic evil*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Reflux:** When the obeleric takes bludgeoning it can vomit acid at one creature within 5 ft. of it. That creature must make DC 13 Dex save or take 3 (1d6) acid.
 
 
+</statblock>
 
 

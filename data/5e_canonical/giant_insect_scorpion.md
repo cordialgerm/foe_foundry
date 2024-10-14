@@ -19,6 +19,7 @@ Additionally, the giant scorpion has one reaction called Reflexive Sting. If a c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Insect, Giant Scorpion
 
 *Large beast*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 
 - **Reflexive Sting.** When a creature the scorpion can see attacks it while within 10 feet of the scorpion, the scorpion can whip its tail defensively at the creature. The attacker must succeed on a DC 12 DEX save or take 5 (1d10) piercing damage.
 
+</statblock>
 
 

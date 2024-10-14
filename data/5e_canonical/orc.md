@@ -28,6 +28,7 @@ Overall, the Orc is a straightforward yet effective combatant that thrives in me
 
 Source: 5e_srd
 
+<statblock>
 ## Orc
 
 *Medium humanoid (orc), chaotic evil*
@@ -56,7 +57,8 @@ Source: 5e_srd
 
 ***Greataxe***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 9 (1d12+3) slashing damage.
 
-***Javelin***. *Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 6 (1d6+3) piercing damage.
+***Javelin***. *Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 6 (1d6+3) piercing damage.</statblock>
+
 
 
 
@@ -64,6 +66,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Orc
 
 *Medium humanoid*
@@ -96,5 +99,6 @@ Source: 5e_artisinal_monsters
 
 - **Warrior’s Advance.** The orc moves up to its speed toward a hostile creature that it can see.
 
+</statblock>
 
 

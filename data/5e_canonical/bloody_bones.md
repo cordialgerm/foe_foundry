@@ -34,6 +34,7 @@ Finally, as a reaction, Bloody Bones can utilize "Its Crown Runs Red." When hit 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bloody Bones
 
 *Medium* *Monstrosity* *chaotic evil*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Its Crown Runs Red:** When it is hit by an attack, the bloody bones regains 5 (1d10) hit points and has resistance to that damage type until the end of its next turn as life-giving blood pours from the top of its skull.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ The Giant Centipede has one primary action: Bite. This is a melee weapon attack 
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Centipede
 
 *Small beast, unaligned*
@@ -43,7 +44,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 4 (1d4+2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
+***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 4 (1d4+2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.</statblock>
+
 
 
 
@@ -51,6 +53,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Centipede
 
 *Small* *Beast*
@@ -74,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage and the target makes a DC 11 Constitution saving throw  taking 10 (3d6) poison damage on a failure. If the poison damage reduces the target to 0 hit points  it is made stable but poisoned for 1 hour  even if it regains hit points  and it is paralyzed while poisoned in this way.
 
 
+</statblock>
 
 

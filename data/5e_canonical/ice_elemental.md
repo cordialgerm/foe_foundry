@@ -21,6 +21,7 @@ When engaging in combat, the Ice Elemental can perform a Multiattack, making two
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Elemental
 
 *Large* *Elemental* *neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Encase in Ice:** Melee Weapon Attack: +7 to hit, reach 10 ft. one creature. Hit: 14 (4d6) cold damage, and the target must make a DC 14 Constitution saving throw. On a failure, ice begins to form around the creature, and it is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified in ice on a failure or ending the effect on a success. The petrification lasts until the creature spends at least 1 hour in a warm environment. Alternatively, a creature can be freed of the restrained or petrified conditions if it takes at least 10 fire damage.
 
 
+</statblock>
 
 

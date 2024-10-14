@@ -25,6 +25,7 @@ The Bite is a melee weapon attack that has a +7 to hit with a range of 5 feet an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grolar Bear
 
 *Large* *Beast* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +7 to hit, 5 ft., one target, 12 (2d6+5) slashing damage.
 
 
+</statblock>
 
 

@@ -27,6 +27,7 @@ One of its most powerful features is "Midas Breath," which it can use after a re
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hoard Drake
 
 *Large* *Dragon* *neutral evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Midas Breath (Recharge 6):** The hoard drake spits molten gold in a 30-foot cone. Each creature in the area must make a DC 16 Dexterity saving throw. On a failure, a creature takes 36 (8d8) fire damage and the gold clings to it. On a success, a creature takes half the damage and the gold doesn’t cling to it. A creature with gold clinging to it has its speed halved until it takes an action to scrape off the gold.<br><br>The gold produced by Midas Breath can be collected once it has cooled, providing roughly 50 gp worth of gold dust and scraps each time it spits molten gold.
 
 
+</statblock>
 
 

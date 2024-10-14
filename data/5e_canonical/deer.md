@@ -43,6 +43,7 @@ As a bonus action, the deer can utilize its "Skittish" ability, which allows it 
 
 Source: 5e_srd
 
+<statblock>
 ### Deer
 
 *Medium beast, unaligned*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) piercing damage.
+***Bite***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) piercing damage.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deer
 
 *Medium* *Beast*
@@ -101,6 +104,7 @@ Source: 5e_artisinal_monsters
 - **Headbutt:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.
 
 
+</statblock>
 
 
 
@@ -109,6 +113,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deer
 
 *Medium beast*
@@ -140,5 +145,6 @@ Source: 5e_artisinal_monsters
 
 - **Skittish.** The deer takes the Dash or Disengage action.
 
+</statblock>
 
 

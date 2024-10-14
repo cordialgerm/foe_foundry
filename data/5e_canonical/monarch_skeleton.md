@@ -23,6 +23,7 @@ The "Grasp of the Grave" is a special attack that requires a recharge on a roll 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Monarch Skeleton
 
 *Medium* *Undead* *neutral evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Grasp of the Grave (Recharge 5-6):** Each non-skeleton creature within 30 feet of the monarch must succeed on a DC 16 Dexterity saving throw or be restrained by ghostly, skeletal hands for 1 minute. A restrained target takes 10 (3d6) necrotic damage at the start of each of its turns. A creature, including the target, can take its action to break the ghostly restraints by succeeding on a DC 16 Strength check.
 
 
+</statblock>
 
 

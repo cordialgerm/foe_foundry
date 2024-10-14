@@ -25,6 +25,7 @@ Overall, the Deep Troll is a potent combination of offensive power and regenerat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deep Troll
 
 *Large* *Giant* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 11 (2d6 + 4) slashing damage.
 
 
+</statblock>
 
 

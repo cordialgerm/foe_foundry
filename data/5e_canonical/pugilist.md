@@ -21,6 +21,7 @@ Lastly, the Pugilist has a reaction called Opportune Jab, which allows it to mak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pugilist
 
 *Medium* *Humanoid*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Opportune Jab:** If a creature attempts to grapple the pugilist, the pugilist attacks that creature with their fists.
 
 
+</statblock>
 
 

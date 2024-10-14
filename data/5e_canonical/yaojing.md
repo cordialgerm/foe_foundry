@@ -23,6 +23,7 @@ The "Blasphemer’s Bane" ability allows the Yaojing to create a ward against a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yaojing
 
 *Medium* *Celestial* *neutral good*
@@ -64,5 +65,6 @@ At will: detect evil and good, silence
 - **Radiant Spin (Recharge 5-6):** The yaojing performs a spinning kick brimming with radiant energy. Each creature within 10 feet of the yaojing must make a DC 18 Dexterity saving throw. On a failure, a creature takes 22 (5d8) bludgeoning damage and 22 (5d8) radiant damage and is pushed up to 10 feet away from the yaojing. On a success, a creature takes half the damage and isn’t pushed.
 
 
+</statblock>
 
 

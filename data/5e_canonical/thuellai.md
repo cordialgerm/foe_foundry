@@ -21,6 +21,7 @@ Overall, Thuellai is a threatening adversary that excels at controlling the batt
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thuellai
 
 *Huge* *Elemental* *Chaotic Neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The thuellai makes three Icy Claw attacks.
 - **Icy Claw:** Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) slashing damage plus 10 (3d6) cold damage.
 - **Freezing Breath (Recharge 5–6):** The thuellai exhales an icy blast in a 60-foot cone. Each creature in the area must make a DC 17 Dexterity saving throw, taking 49 (14d6) cold damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

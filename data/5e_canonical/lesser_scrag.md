@@ -23,6 +23,7 @@ Overall, the Lesser Scrag combines solid melee attacks with reasonable survivabi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lesser Scrag
 
 *Medium* *Monstrosity* *chaotic evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4)
 
 
+</statblock>
 
 

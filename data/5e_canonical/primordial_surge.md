@@ -35,6 +35,7 @@ Overall, the Primordial Surge is a complex and dangerous foe that serves both as
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Primordial Surge
 
 *Gargantuan* *Elemental* *neutral*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Primordial Storm (Recharge 6):** Rain of energies produces one of: Restorative Rain Each non Construct/Undead creature within 30' of the surge regains 27 (5d10) hp. Area becomes difficult terrain as nonmagical plants in the area become thick and overgrown.Ruinous Rain Each creature within 30' of the surge: 27 (5d10) acid and 27 (5d10) fire and is coated in burning acid (DC 18 Dex half damage not coated in acid). A creature coated in acid: 5 (1d10) acid and 5 (1d10) fire at the start of each of its turns until it or another creature takes an action to scrape/wash off the acid.
 
 
+</statblock>
 
 

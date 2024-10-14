@@ -23,6 +23,7 @@ Overall, the Fleshspurned is a formidable enemy that utilizes its undead nature 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fleshspurned
 
 *Medium* *Undead* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Chatter:** The fleshspurned clashes its oversized teeth together to create a clattering din. Each creature within 30 feet of the fleshspurned must succeed on a DC 14 Wisdom saving throw or be confused for 1 minute. While confused, a creature acts as if under the effects of the confusion spell. A confused creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the target is immune to the fleshspurned’s Chatter for the next 24 hours.
 
 
+</statblock>
 
 

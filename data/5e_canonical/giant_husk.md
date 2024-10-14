@@ -23,6 +23,7 @@ In combat, the Giant Husk can utilize the Multiattack feature, allowing it to ma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Husk
 
 *Huge* *Undead* *chaotic evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Smother:** Melee Weapon Attack: +8 to hit, reach 5 ft., one Huge or smaller creature. Hit: The creature is grappled (escape DC 14). Until this grapple ends, the target is restrained, blinded, and at risk of suffocating. In addition, at the start of each of the target’s turns, the target takes 14 (3d6 + 4) bludgeoning damage. The husk can smother one Huge, two Large, or four Medium or smaller creatures at a time.
 
 
+</statblock>
 
 

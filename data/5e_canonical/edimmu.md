@@ -25,6 +25,7 @@ In terms of actions, the Edimmu can perform a Multiattack, making two Draining T
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Edimmu
 
 *Medium* *Undead* *Chaotic Evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The edimmu makes two Draining Touch attacks. If both attacks hit one creature that isn’t a Construct or Undead, the target must succeed on a DC 14 Constitution saving throw or suffer one level of exhaustion. A creature that fails this saving throw by 5 or more is also stunned until the end of its next turn.
 - **Draining Touch:** Melee Spell Attack: +6 to hit, reach 5 ft., one creature. Hit: 13 (2d8 + 4) necrotic damage, and the target must succeed on a DC 14 Constitution saving throw or its hp maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest after drinking 1 pint of water. The target dies if this effect reduces its hp maximum to 0.
+</statblock>
 
 

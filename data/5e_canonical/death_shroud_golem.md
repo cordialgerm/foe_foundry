@@ -21,6 +21,7 @@ Additionally, the "Direct Victim" action allows the golem to manipulate a grappl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Death Shroud Golem
 
 *Large* *Construct* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Direct Victim:** The death shroud golem forces a creature it is grappling to move up to the creature’s speed and make one attack with a melee weapon the creature is holding. If the creature isn’t holding a melee weapon, it makes one unarmed strike instead. The death shroud golem decides the direction of the movement and the target of the attack. The grappled creature can use its reaction and isn’t considered blinded or restrained when moving and attacking in this way.
 
 
+</statblock>
 
 

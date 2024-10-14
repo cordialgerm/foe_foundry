@@ -40,6 +40,7 @@ The Infernal Swarm's blend of defensive capabilities and versatile attack option
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Infernal Swarm
 
 *Huge* *Fiend* *lawful evil*
@@ -81,5 +82,6 @@ While in shapeless form, it can occupy another creature’s space and vice versa
 - **Slam (Fiend Form Only):** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) bludgeoning damage, and the target is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the infernal swarm can’t slam another target. In addition, at the start of each of the target’s turns, the target takes 14 (4d6) piercing damage.
 
 
+</statblock>
 
 

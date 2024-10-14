@@ -19,6 +19,7 @@ In addition to its attacks, the Young Cave Dragon can react to nearby movements 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Cave Dragon
 
 *Large* *Dragon* *Neutral Evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Ruff Spikes:** When a creature moves to a space within 5 feet of the cave dragon, the dragon flares its many feelers and spikes. The creature must succeed on a DC 17 Dexterity saving throw or take 4 (1d8) piercing damage and be prevented from entering that space.
+</statblock>
 
 

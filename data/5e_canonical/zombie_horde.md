@@ -29,6 +29,7 @@ Overall, the Zombie Horde embodies the terror of relentless undead foes that can
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zombie Horde
 
 *Large* *Undead*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one grappled target. Hit: 32 (5d10 + 5) piercing damage  and the horde regains the same number of hit points.
 
 
+</statblock>
 
 

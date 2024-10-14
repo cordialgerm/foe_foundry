@@ -23,6 +23,7 @@ Overall, the Necrotic Tick is a small but deadly foe that can alter the dynamics
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Necrotic Tick
 
 *Tiny* *Beast* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Blood Drain:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the tick attaches to the target. While attached, the necrotic tick doesn't attack. Instead, at the start of each of the tick's turns, the target loses 5 (1d4 + 3) hp due to blood loss. The target must make a DC 13 Wisdom saving throw. If it fails, it is affected by the tick's toxins and doesn't attempt to remove the tick. The host will even replace a dislodged tick unless prevented from doing so for 1 minute, after which the tick's influence fades. <br><br>The tick can detach itself by spending 5 feet of its movement. It does so when seeking a new host or if the target dies. A creature, including the target, can use its action to detach the tick. When a necrotic tick detaches, voluntarily or otherwise, its host takes 1 necrotic damage.
 
 
+</statblock>
 
 

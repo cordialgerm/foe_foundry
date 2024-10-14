@@ -25,6 +25,7 @@ Finally, as a reaction, the Fire Giant War Priest can execute a Kick when hit by
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire Giant War Priest
 
 *Huge* *Giant*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Kick:** When hit by a melee attack by a Medium or smaller creature the giant can see within 10 feet, the giant kicks its attacker. The attacker makes a DC 19 Dexterity saving throw. On a failure, it takes 14 (3d4 + 7) bludgeoning damage, is pushed up to 20 feet from the giant, and falls prone.
 
 
+</statblock>
 
 

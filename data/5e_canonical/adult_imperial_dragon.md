@@ -29,6 +29,7 @@ For legendary actions, the dragon can perform a Wisdom (Perception) check with D
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Imperial Dragon
 
 *Huge* *Dragon* *neutral*
@@ -76,5 +77,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a tail attack.
 - **Cast a Spell (Costs 3 Actions):** The dragon casts a spell from its list of innate spells, consuming a use of the spell as normal.
+</statblock>
 
 

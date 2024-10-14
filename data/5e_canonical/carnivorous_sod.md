@@ -19,6 +19,7 @@ In terms of actions, the Carnivorous Sod can deliver a bite attack, with a +4 to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Carnivorous Sod
 
 *Medium* *Plant* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Grass Trip:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: The target is knocked prone.
 
 
+</statblock>
 
 

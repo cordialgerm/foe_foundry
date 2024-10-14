@@ -25,6 +25,7 @@ For its legendary actions, the dragon can utilize Corrupting Presence to impose 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Shadow Dragon
 
 *Huge* *Dragon*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Lurk:** If the dragon is in dim light or darkness, it magically becomes invisible until it attacks, causes a creature to make a saving throw, or enters an area of bright light. It can't use this ability if it has taken radiant damage since the end of its last turn.
 - **Slip Through Shadows:** If the dragon is in dim light or darkness, it magically teleports up to 45 feet to an unoccupied space that is also in dim light or darkness. The dragon can't use this ability if it has taken radiant damage since the end of its last turn.
 - **Horrid Whispers (Costs 2 Actions):** A creature that can hear the dragon makes a DC 21 Wisdom saving throw. On a failure, the creature takes 13 (3d8) psychic damage, and the dragon regains the same number of hit points.
+</statblock>
 
 

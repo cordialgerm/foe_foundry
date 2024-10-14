@@ -21,6 +21,7 @@ As a spellcaster, the Alseid has access to a variety of spells, using Wisdom as 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alseid
 
 *Medium* *Monstrosity* *Chaotic Neutral*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Thorned Staff:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage plus 5 (2d4) piercing damage.
 - **Thorn Bolt:** Ranged Weapon Attack: +5 to hit, range 120 ft., one target. Hit: 8 (2d4 + 3) piercing damage.
 - **Spellcasting:** The grovekeeper casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 13):<br>At will: animal friendship, animal messenger, druidcraft<br>1/day each: cure wounds, faerie fire, lesser restoration
+</statblock>
 
 

@@ -19,6 +19,7 @@ As a swift and agile fighter, the War Ostrich relies on its speed and ability to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # War Ostrich
 
 *Large* *Beast* *Unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Skittish:** The war ostrich takes the Dash or Disengage action.
+</statblock>
 
 

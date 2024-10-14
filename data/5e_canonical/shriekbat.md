@@ -21,6 +21,7 @@ One of the Shriekbat's most powerful features is its Shriek ability, which recha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shriekbat
 
 *Huge* *Monstrosity* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Shriek (Recharge 5-6):** The shriekbat emits a powerful burst of sound in a 30-foot cone. Each creature in that area must make a DC 16 Constitution saving throw, taking 42 (12d6) thunder damage on a failed save, or half as much damage on a successful one. If the saving throw fails by 5 or more, the target is also stunned for 1 minute. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

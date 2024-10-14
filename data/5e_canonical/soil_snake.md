@@ -34,6 +34,7 @@ Overall, the Soil Snake is a strong combatant with effective area control tactic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Soil Snake
 
 *Huge* *Construct* *unaligned*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Soil Blast (Recharge 5–6):** Expels soil in a 30' cone. Each creature in that area: 18 (4d8) bludgeoning damage and is knocked prone (DC 14 Dex half damage not prone).
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ As a bonus action, the Mantis Shrimp can use "Water Jet." This ability causes ea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Mantis Shrimp
 
 *Large* *Beast* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Water Jet:** Each creature within 5 ft. of shrimp is blinded until start of its next turn (DC 14 Dex negates). The shrimp then swims up to half its swimming speed with o provoking opportunity attacks.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ In close combat, the Grimmlet can make a **Crystal Edge** melee weapon attack wi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grimmlet
 
 *Tiny* *Monstrosity* *unaligned*
@@ -57,5 +58,6 @@ At will: crushing curse, minor illusion
 - **Crystal Edge:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage plus 2 (1d4) psychic damage.
 
 
+</statblock>
 
 

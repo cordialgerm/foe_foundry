@@ -25,6 +25,7 @@ Overall, the Alliumite, Husker is a versatile creature that combines physical mi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alliumite, Husker
 
 *Medium* *Plant* *chaotic neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Taunting Threat:** The husker throws a series of rude and menacing gestures at one creature it can see within 30' of it. The target must make a DC 13 Cha save. On a failure the target takes 7 (2d6) psychic and has disadvantage on all attacks not made vs. the husker until the end of its next turn. On a success the target takes half the damage and doesn’t have disadvantage on attacks not made vs. the husker.
 
 
+</statblock>
 
 

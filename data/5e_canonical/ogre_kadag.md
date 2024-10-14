@@ -27,6 +27,7 @@ In terms of actions, the Kadag Ogre can perform a Multiattack, allowing it to la
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre, Kadag
 
 *Large* *Giant* *neutral evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Master of Death (Recharge 5–6):** Empowers up to three friendly Undead it can see within 30' of it. Each can use a reaction to move up to half its speed and make one melee weapon attack. In addition an empowered Undead gains 5 (2d4) temp hp for 1 min. The kadag ogre can’t empower Undead with Int score of 10 or higher.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Lastly, the Ahu-Nixta's unique abilities include Construct Nature, meaning it do
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ahu-Nixta Mechanon
 
 *Medium* *Construct* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Repair (2/Day):** Touches an ahu-nixta or a Construct. Target regains 11 (2d8+2) hp.
 
 
+</statblock>
 
 

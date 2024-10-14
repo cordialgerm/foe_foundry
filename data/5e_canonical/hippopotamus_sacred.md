@@ -21,6 +21,7 @@ The creature also has a notable bonus action known as Protector's Step, enabling
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hippopotamus, Sacred
 
 *Huge* *Celestial* *any alignment (as its deity)*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Protector’s Step:** Magically teleports with any items worn/carried up to 120' to unoccupied space within its sacred site or within 30' of exterior of its site. Golden light swirls or inky shadown tendrils (hippo’s choice) appear at origin and destination.
 
 
+</statblock>
 
 

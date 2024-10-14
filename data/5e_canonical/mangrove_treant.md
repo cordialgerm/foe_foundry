@@ -33,6 +33,7 @@ In terms of actions, the Mangrove Treant can perform the following:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mangrove Treant
 
 *Huge* *Plant* *neutral*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Mangrove Mosquitos:** The mangrove treant calls a swarm of mosquitos from its branches. The swarm of mosquitos uses the statistics of a swarm of insects, except it has a flying speed of 30 feet. The swarm acts an ally of the treant and obeys its spoken commands. The swarm remains for 1 day, until the treant dies, or until the treant dismisses it as a bonus action.<br><br>The treant can have only one swarm of mosquitos at a time. If it calls another, the previous swarm disperses.
 
 
+</statblock>
 
 

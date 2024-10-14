@@ -44,6 +44,7 @@ Overall, the Hinderling's abilities make it a slippery and unpredictable opponen
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hinderling
 
 *Small* *Fey* *chaotic neutral*
@@ -83,5 +84,6 @@ Source: 5e_artisinal_monsters
 - **Run and Hide:** When a creature hinderling can see targets it with weapon hinderling chooses another creature within 5 ft. as attack's target then moves up to half its speed with o provoking opportunity attacks.
 
 
+</statblock>
 
 

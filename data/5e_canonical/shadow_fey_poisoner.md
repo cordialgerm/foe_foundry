@@ -21,6 +21,7 @@ In terms of actions in combat, the Shadow Fey Poisoner can perform a Multiattack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Fey Poisoner
 
 *Medium* *Humanoid* *neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Ranged Weapon Attack: +8 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 28 (8d6) poison damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -31,6 +31,7 @@ In combat, the Bearmit Crab can use its Multiattack action to perform two attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bearmit Crab
 
 *Large* *Monstrosity* *unaligned*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.
 
 
+</statblock>
 
 

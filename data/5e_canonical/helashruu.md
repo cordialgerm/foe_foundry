@@ -27,6 +27,7 @@ Overall, the Helashruu is a complex and powerful creature that poses a significa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Helashruu
 
 *Huge* *Aberration* *chaotic evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Dimensional Hop (3/Day):** The helashruu can transport itself to a different plane of existence. This works like the plane shift spell, except the helashruu can affect only itself and can’t use this action to banish an unwilling creature to another plane.
 
 
+</statblock>
 
 

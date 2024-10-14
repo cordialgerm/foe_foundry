@@ -23,6 +23,7 @@ As a bonus action, the Dipsa can take the Translucent ability to hide, which ena
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dipsa
 
 *Tiny* *Ooze* *Unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Translucent:** The dipsa takes the Hide action.
+</statblock>
 
 

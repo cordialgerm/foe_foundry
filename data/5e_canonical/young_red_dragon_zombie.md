@@ -21,6 +21,7 @@ Notably, its Fire Breath ability is particularly devastating. When it uses this 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Red Dragon Zombie
 
 *Large* *Undead*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 5-6):** The dragon exhales a blast of fire that fills a 30-foot cone. Each creature in that area makes a DC 17 Dexterity saving throw  taking 52 (15d6) fire damage on a failed save or half damage on a success. A creature that fails the saving throw also suffers 5 (1d10) ongoing fire damage. While affected by this ongoing damage  it is frightened of the dragon. A creature can use an action to end the ongoing damage.
 
 
+</statblock>
 
 

@@ -39,6 +39,7 @@ Overall, the Frost Mole is a cunning creature that uses its environment to outma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frost Mole
 
 *Small* *Beast* *unaligned*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 8 (2d4 + 3) slashing damage.
 
 
+</statblock>
 
 

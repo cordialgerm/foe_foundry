@@ -45,6 +45,7 @@ Overall, the Ushabti Royal Guard presents a daunting challenge with its strong d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ushabti Royal Guard
 
 *Large* *Construct* *Unaligned*
@@ -95,5 +96,6 @@ The ushabti can take 3 legendary actions, choosing from the options below. Only 
 - **Move:** The ushabti moves up to its speed without provoking opportunity attacks.
 - **Medjai’s Scepter (Costs 2 Actions):** The ushabti makes one Medjai’s Scepter attack.
 - **Telekinesis (Costs 2 Actions):** Up to two creatures the ushabti can see within 60 feet of it must succeed on a DC 18 Strength saving throw or the ushabti moves the creature up to 30 feet in any direction (including upward). A moved target is then restrained until the start of the ushabti’s next turn.
+</statblock>
 
 

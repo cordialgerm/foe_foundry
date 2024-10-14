@@ -19,6 +19,7 @@ In terms of actions, the swarm can bite, making a melee weapon attack with a +5 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Esteron
 
 *Medium* *Beast* *unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Bites:** Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half its hp or fewer.
 
 
+</statblock>
 
 

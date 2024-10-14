@@ -21,6 +21,7 @@ In terms of actions, the Possessed Pillar can perform a Multiattack, allowing it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Possessed Pillar
 
 *Large* *Construct* *Unaligned*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The possessed pillar makes two Slam attacks.
 - **Slam:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage plus 9 (2d8) necrotic damage or radiant damage (the pillar’s choice).
+</statblock>
 
 

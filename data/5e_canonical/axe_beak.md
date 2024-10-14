@@ -31,6 +31,7 @@ The Axe Beak also has a bonus action called "Evasive," which allows it to take t
 
 Source: 5e_srd
 
+<statblock>
 ### Axe Beak
 
 *Large beast, unaligned*
@@ -55,7 +56,8 @@ Source: 5e_srd
 
 ***Beak***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d8+2) slashing damage.
 
-An **axe beak** is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close.
+An **axe beak** is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close.</statblock>
+
 
 
 
@@ -63,6 +65,7 @@ An **axe beak** is a tall flightless bird with strong legs and a heavy, wedge-sh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Axe Beak
 
 *Large* *Beast*
@@ -86,6 +89,7 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) slashing damage.
 
 
+</statblock>
 
 
 
@@ -94,6 +98,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Axe Beak
 
 *Large beast*
@@ -125,5 +130,6 @@ Source: 5e_artisinal_monsters
 
 - **Evasive.** The axe beak takes the Disengage or Dodge action.
 
+</statblock>
 
 

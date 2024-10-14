@@ -19,6 +19,7 @@ During combat, the Bolt-Thrower can perform a Multiattack action, allowing it to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bolt-Thrower
 
 *Small* *Construct*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Heavy Crossbow:** Ranged Weapon Attack: +5 to hit, range 100/400 ft., one target. Hit: 8 (1d10 + 3) piercing damage.
 
 
+</statblock>
 
 

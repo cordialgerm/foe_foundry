@@ -24,6 +24,7 @@ Overall, the Thunderbird serves as an aerial combatant and formidable threat on 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thunderbird
 
 *Large* *Monstrosity*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Strike (Recharge 6):** The thunderbird exhales a blast of lightning at one target within 60 feet. The target makes a DC 12 Dexterity saving throw  taking 28 (8d6) lightning damage on a failure or half the damage on a success.
 
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ Additionally, the Rust Monster can use the Iron Dash bonus action to move up to 
 
 Source: 5e_srd
 
+<statblock>
 ## Rust Monster
 
 *Medium monstrosity, unaligned*
@@ -63,7 +64,8 @@ Source: 5e_srd
 
 ***Antennae***. The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a DC 11 Dexterity saving throw to avoid the rust monster's touch.
 
-If the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait.
+If the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait.</statblock>
+
 
 
 
@@ -71,6 +73,7 @@ If the object touched is either metal armor or a metal shield being worn or carr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rust Monster
 
 *Medium* *Monstrosity*
@@ -105,6 +108,7 @@ Source: 5e_artisinal_monsters
 - **Defensive Bite:** When the rust monster is hit by a melee attack made by a creature it can see within 5 feet, it bites the attacker.
 
 
+</statblock>
 
 
 
@@ -113,6 +117,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rust Monster
 
 *Medium monstrosity*
@@ -149,5 +154,6 @@ Source: 5e_artisinal_monsters
 
 - **Iron Dash.** The rust monster moves up to half its speed toward a source of ferrous metal it can sense.
 
+</statblock>
 
 

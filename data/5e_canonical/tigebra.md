@@ -23,6 +23,7 @@ Additionally, the Tigebra has a potent bonus action known as "Hypnotic Gaze," wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tigebra
 
 *Large* *Monstrosity* *chaotic evil*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Hypnotic Gaze:** Gazes on one creature it can see within 60' of it. If target can see it: paralyzed until end of its next turn (DC 17 Wis negates immune to tigebra’s Hypnotic Gaze 24 hrs).
 
 
+</statblock>
 
 

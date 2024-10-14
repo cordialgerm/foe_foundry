@@ -35,6 +35,7 @@ As a reaction, the Shoreline Scrapper can use **Shell Protection** which allows 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shoreline Scrapper
 
 *Large* *Beast* *unaligned*
@@ -73,5 +74,6 @@ Items made of gold and silver are unaffected by the shoreline scrapper's Magneti
 - **Shell Protection:** The shoreline scrapper adds 4 to its AC against one melee attack that would hit it as it withdraws into its shell. Until it emerges, it increases its AC by 4, has a speed of 0 ft., and can't use its claws or magnetic pulse. The shoreline scrapper can emerge from its shell as a bonus action.
 
 
+</statblock>
 
 

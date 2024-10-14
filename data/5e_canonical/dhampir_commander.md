@@ -27,6 +27,7 @@ In conclusion, the Dhampir Commander is a tactical and resilient figure in the b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dhampir Commander
 
 *Medium* *Humanoid* *any alignment*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Leadership (Recharges after a Short or Long Rest):** For 1 minute, the dhampir can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the dhampir. A creature can benefit from only one Leadership die at a time. This effect ends if the dhampir is incapacitated. Dinosaur
 
 
+</statblock>
 
 

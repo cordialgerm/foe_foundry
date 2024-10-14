@@ -23,6 +23,7 @@ As a bonus action, the Infiltrator has the Cunning Action ability enabling it to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: Infiltrator
 
 *Medium* *Humanoid* *neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Cunning Action:** Takes the Dash Disengage or Hide action.
 
 
+</statblock>
 
 

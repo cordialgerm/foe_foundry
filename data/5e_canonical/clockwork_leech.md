@@ -23,6 +23,7 @@ Lastly, the Clockwork Leech has a Tail attack that also bears a +4 to hit, with 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Leech
 
 *Medium* *Construct* *neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 7 (1d10 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

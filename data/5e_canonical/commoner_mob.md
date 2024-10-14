@@ -19,6 +19,7 @@ In terms of offensive actions, the Commoner Mob can perform melee attacks with c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Commoner Mob
 
 *Huge* *Humanoid*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Stones:** Ranged Weapon Attack: +2 to hit, range 10/30 ft., up to two targets. Hit: 10 (4d4) bludgeoning damage or half damage if the mob is bloodied.
 
 
+</statblock>
 
 

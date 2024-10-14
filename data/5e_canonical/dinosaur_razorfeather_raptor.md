@@ -21,6 +21,7 @@ Overall, the Razorfeather Raptor is a formidable opponent that thrives in pack t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dinosaur, Razorfeather Raptor
 
 *Medium* *Monstrosity* *neutral evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit, 5 ft., one target, 7 (1d8+3) slashing damage.
 
 
+</statblock>
 
 

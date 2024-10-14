@@ -57,6 +57,7 @@ Finally, its Counter Spell reaction is a defensive measure against enemy spellca
 
 Source: 5e_srd
 
+<statblock>
 ### Archmage
 
 *Medium humanoid (any race), any alignment*
@@ -105,7 +106,8 @@ Cantrips (at will): *fire bolt*, *light*, *mage hand*, *prestidigitation*, *shoc
 
 **Archmages** are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.
 
-An archmage typically has one or more apprentice mages, and an archmage's abode has numerous magical wards and guardians to discourage interlopers.
+An archmage typically has one or more apprentice mages, and an archmage's abode has numerous magical wards and guardians to discourage interlopers.</statblock>
+
 
 
 
@@ -113,6 +115,7 @@ An archmage typically has one or more apprentice mages, and an archmage's abode 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archmage
 
 *Medium* *Humanoid*
@@ -184,6 +187,7 @@ Source: 5e_artisinal_monsters
 - **Shield (1st-Level; V:** When the archmage is hit by an attack or targeted by magic missile, they gain a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the start of their next turn.
 
 
+</statblock>
 
 
 
@@ -192,6 +196,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archmage
 
 *Medium humanoid (any lineage)*
@@ -234,5 +239,6 @@ Source: 5e_artisinal_monsters
 
 - **Counter Spell.** When a creature the archmage can see within 30 feet of it casts a spell, the archmage can counter the spell, interrupting the casting. This reaction works like the counterspell spell with a +5 spellcasting ability check, except the archmage must always make the ability check, regardless of the spell’s circle. The archmage has advantage on this check if the spell is on the Arcane source spell list.
 
+</statblock>
 
 

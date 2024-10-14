@@ -25,6 +25,7 @@ Finally, the Ice Bogie can use its reaction Frosty Aid once per day. When an all
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Bogie
 
 *Small* *Fey* *chaotic neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Frosty Aid (1/Day):** Whenever an allied ice bogie within 30 feet is reduced to 0 hp, this ice bogie can choose to reduce its hp by 3 (1d6), and the ally regains hp equal to the amount of hp this ice bogie lost.
 
 
+</statblock>
 
 

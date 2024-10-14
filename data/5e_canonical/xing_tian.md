@@ -25,6 +25,7 @@ Overall, Xing Tian is a tough and resilient adversary with strong offensive capa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Xing Tian
 
 *Huge* *Giant* *neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Dance of the Unyielding:** The xing tian stomps and waves its arms in a martial dance, and it regains 10 hp. Until the dance ends, the xing tian regains 10 hp at the start of each of its turns and melee attack rolls against the xing tian have disadvantage. It must take a bonus action on its subsequent turns to continue dancing. It can stop dancing at any time. The dance ends if the xing tian is incapacitated.
 
 
+</statblock>
 
 

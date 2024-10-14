@@ -23,6 +23,7 @@ One of its powerful actions is the "Breath of the North Wind", which requires a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boreas’ Chosen
 
 *Medium* *Humanoid* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Breath of the North Wind:** (Recharge 5-6). Boreas’ chosen exhales freezing breath in a 15-foot cone. Each creature in that area must make a DC 15 Constitution saving throw. On a failure, a creature takes 28 (8d6) cold damage and its speed is reduced by 10 feet until the end of its next turn. On a success, a creature takes half the damage and its speed isn’t reduced. A creature that fails the saving throw by 5 or more is petrified in ice until the end of its next turn instead.
 
 
+</statblock>
 
 

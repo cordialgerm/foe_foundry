@@ -23,6 +23,7 @@ Overall, the Phase Giant is a dangerous opponent in combat, capable of dealing h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Phase Giant
 
 *Huge* *Giant* *neutral*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +8 to hit, range 60/240 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.
 
 
+</statblock>
 
 

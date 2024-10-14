@@ -23,6 +23,7 @@ Additionally, the Gnoll Havoc Runner has access to a bonus action called Lightni
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gnoll Havoc Runner
 
 *Medium* *Humanoid* *Chaotic Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Lightning Lope:** The gnoll takes the Dash or Disengage action.
+</statblock>
 
 

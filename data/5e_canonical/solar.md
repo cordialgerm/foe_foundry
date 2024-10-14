@@ -46,6 +46,7 @@ Ultimately, the Solar is not only a powerful adversary or ally in battle, but it
 
 Source: 5e_srd
 
+<statblock>
 ### Solar (Angel)
 
 *Large celestial, lawful good*
@@ -110,7 +111,8 @@ The solar can take 3 legendary actions, choosing from the options below. Only on
 
 **Searing Burst (Costs 2 Actions)**. The solar emits magical, divine energy. Each creature of its choice in a 10-foot radius must make a DC 23 Dexterity saving throw, taking 14 (4d6) fire damage plus 14 (4d6) radiant damage on a failed save, or half as much damage on a successful one.
 
-**Blinding Gaze (Costs 3 Actions)**. The solar targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a DC 15 Constitution saving throw or be blinded until magic such as the *lesser restoration* spell removes the blindness.
+**Blinding Gaze (Costs 3 Actions)**. The solar targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a DC 15 Constitution saving throw or be blinded until magic such as the *lesser restoration* spell removes the blindness.</statblock>
+
 
 
 
@@ -118,6 +120,7 @@ The solar can take 3 legendary actions, choosing from the options below. Only on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Solar
 
 *Large* *Celestial*
@@ -167,6 +170,7 @@ Source: 5e_artisinal_monsters
 - **Approach! The creature must use its reaction:** 
 - **Flee! The creature must use its reaction:** 
 - **Surrender! The creature drops anything it is holding:** 
+</statblock>
 
 
 
@@ -175,6 +179,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Solar
 
 *Large celestial (angel)*
@@ -234,5 +239,6 @@ The solar can take 3 legendary actions, choosing from the options below. Only on
 ### Regional Effects
 
 - **1d6** If the solar dies, these effects end immediately. If the solar leaves the area and establishes a new lair elsewhere, these effects fade in  days.
+</statblock>
 
 

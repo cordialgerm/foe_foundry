@@ -25,6 +25,7 @@ The Treacle can use the reaction called Mimic Innocence when it sees a creature 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Treacle
 
 *Tiny* *Ooze* *Unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Mimic Innocence:** When a creature the treacle can see moves within 120 feet of it, the treacle squishes, stretches, and molds its body into the shape of a Tiny Beast or object the creature finds least threatening, such as an injured rabbit or a long-lost toy. The treacle’s body takes on most of the coloration of the desired shape, but some part of it is always white, pale, or pearlescent. Regardless of the shape, the treacle’s flesh doesn’t change and is soft and plush to the touch. The treacle can maintain this shape for up to 8 hours or until another creature it can see moves within 120 feet of it.
+</statblock>
 
 

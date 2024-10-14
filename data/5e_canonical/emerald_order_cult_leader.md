@@ -23,6 +23,7 @@ Finally, it possesses the reactive ability "Esoteric Vengeance," which activates
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Emerald Order Cult Leader
 
 *Medium* *Humanoid* *Lawful Neutral or Lawful Evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Esoteric Vengeance:** When a creature the cult leader can see within 30 feet of it hits it with an attack, the cult leader intonates a mind-bending arcane secret, and the attacker takes 7 (2d6) psychic damage.
+</statblock>
 
 

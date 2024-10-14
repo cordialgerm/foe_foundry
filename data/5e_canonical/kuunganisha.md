@@ -21,6 +21,7 @@ One unique action available to the Kuunganisha is Invisibility, which allows the
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kuunganisha
 
 *Small* *Fiend* *any evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The kuunganisha magically turns invisible until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the fiend wears or carries becomes invisible with it.
 
 
+</statblock>
 
 

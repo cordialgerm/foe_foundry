@@ -21,6 +21,7 @@ In terms of its actions, the Dust Goblin can use a shortsword for melee attacks,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dust Goblin
 
 *Small* *Humanoid* *Neutral Evil*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 
 - **Shortsword:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 - **Light Crossbow:** Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
+</statblock>
 
 

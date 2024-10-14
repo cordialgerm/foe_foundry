@@ -23,6 +23,7 @@ Overall, the Lantern Hagfish offers both tactical challenges and thematic depth,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lantern Hagfish
 
 *Small aberration*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 
 - **Slime Slide.** While on a solid surface, the lantern hagfish slides up to 15 feet in a straight line and can move through the space of any creature without provoking opportunity attacks. Each space on that surface along that line is coated in slime until the start of the hagfish’s next turn. Each creature in that line, and any creature that enters a slime-coated space for the first time on a turn must succeed on a DC 11 DEX save or fall prone.
 
+</statblock>
 
 

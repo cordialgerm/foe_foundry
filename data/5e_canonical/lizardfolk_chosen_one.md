@@ -23,6 +23,7 @@ As a reaction, the Lizardfolk can perform "Supernatural Rebuke" once per day. Th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizardfolk Chosen One
 
 *Medium* *Humanoid*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Supernatural Rebuke (1/Day):** When the lizardfolk is dealt damage by a creature it can see within 60 feet, its attacker makes a DC 13 Dexterity saving throw. On a failure, the attacker takes 11 (2d10) fire or radiant damage (the lizardfolks choice).
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ Additionally, the Alseid can use its "Dye Bomb" ability three times per day, lob
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alseid, Woad Warrior
 
 *Medium* *Monstrosity* *chaotic neutral*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Dye Bomb (3/Day):** Lobs a sphere of concentrated dye that explodes on impact marking creatures caught in its effect. Each creature within a 10 ft. radius of where sphere landed: DC 13 Dex save or be brightly painted for 8 hrs. Any attack roll vs. creature has advantage if attacker can see it and other creatures have advantage on any Wis (Perception) or Wis (Survival) check made to find the marked creature. To remove the effect a creature must spend 1 min bathing. Alternatively spells that create water or clean objects such as prestidigitation also remove the effect.
 
 
+</statblock>
 
 

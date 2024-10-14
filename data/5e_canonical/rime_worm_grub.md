@@ -21,6 +21,7 @@ In terms of actions, the Rime Worm Grub can perform a melee weapon attack known 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rime Worm Grub
 
 *Medium* *Elemental* *Unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Rime Tendril:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 4 (1d8) cold damage.
+</statblock>
 
 

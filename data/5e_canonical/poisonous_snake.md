@@ -21,6 +21,7 @@ In terms of its actions, the primary one available to the Poisonous Snake is its
 
 Source: 5e_srd
 
+<statblock>
 ### Poisonous Snake
 
 *Tiny beast, unaligned*
@@ -43,7 +44,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -51,6 +53,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Poisonous Snake
 
 *Tiny* *Beast*
@@ -74,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage and the target makes a DC 10 Constitution saving throw  taking 5 (2d4) poison damage on a failure or half damage on a success.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ In combat, the Rotting Wind can perform a Multiattack, making two Wind of Decay 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rotting Wind
 
 *Large* *Undead* *Neutral Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The rotting wind makes two Wind of Decay attacks. If both attacks hit one creature, the target must succeed on a DC 14 Constitution saving throw or contract the tomb rot disease (see the Tomb Rot trait).
 - **Wind of Decay:** Melee Weapon Attack: +8 to hit, reach 0 ft., one target in the rotting wind’s space. Hit: 12 (2d6 + 5) bludgeoning damage plus 10 (3d6) necrotic damage.
+</statblock>
 
 

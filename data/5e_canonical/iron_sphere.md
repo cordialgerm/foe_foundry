@@ -23,6 +23,7 @@ In sum, the Iron Sphere is a resilient and versatile construct that excels in de
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Iron Sphere
 
 *Small* *Construct* *unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Cannon (Recharge 5-6):** The sphere extends a metal rod from one of its many facets and fires a bolt of lightning in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

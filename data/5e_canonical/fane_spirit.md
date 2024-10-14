@@ -23,6 +23,7 @@ For actions during combat, the Fane Spirit has the Touch of Forgetfulness, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fane Spirit
 
 *Medium* *Undead* *any lawful alignment*
@@ -61,5 +62,6 @@ At will: chill touch, spare the dying
 - **Touch of Forgetfulness:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) psychic damage. A target hit by this attack must succeed on a DC 13 Wisdom saving throw or forget any or all events that happened up to 5 minutes prior to this attack, as if affected by the modify memory spell. The GM decides how this affects the target.
 
 
+</statblock>
 
 

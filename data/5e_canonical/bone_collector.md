@@ -27,6 +27,7 @@ Overall, the Bone Collector employs its abilities and actions to disrupt and wea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Collector
 
 *Small* *Undead* *neutral evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Bad Omen (1/Day):** Places a bad omen on a creature it can see within 20' of it. Target: DC 10 Wis save or be cursed for 1 min. While cursed target has disadvantage on attack rolls vs. bone collector. Target can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

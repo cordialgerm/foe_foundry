@@ -53,6 +53,7 @@ The Androsphinx is a formidable foe and a strategic component in any encounter, 
 
 Source: 5e_srd
 
+<statblock>
 ### Androsphinx (Sphinx)
 
 *Large monstrosity, lawful neutral*
@@ -117,7 +118,8 @@ The sphinx can take 3 legendary actions, choosing from the options below. Only o
 
 **Teleport (Costs 2 Actions)**. The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
 
-**Cast a Spell (Costs 3 Actions)**. The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.
+**Cast a Spell (Costs 3 Actions)**. The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.</statblock>
+
 
 
 
@@ -125,6 +127,7 @@ The sphinx can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Androsphinx
 
 *Large monstrosity*
@@ -179,5 +182,6 @@ The sphinx can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the sphinx dies, these effects fade in  days.
+</statblock>
 
 

@@ -23,6 +23,7 @@ In combat, the Far Dorocha can utilize its "Multiattack" action to make two atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Far Dorocha
 
 *Medium* *Fey* *lawful evil*
@@ -60,5 +61,6 @@ At will: disguise self, thaumaturgy
 - **Dark Invitation:** One humanoid within 30 feet of the far dorocha and that can hear it must succeed on a DC 15 Charisma saving throw or be magically charmed for 1 day. The charmed target believes it has been invited to meet with the far dorocha’s master and accompanies the far dorocha. Although the target isn’t under the far dorocha’s control, it takes the far dorocha’s requests or actions in the most favorable way it can. Each time the far dorocha or its companions do anything harmful to the target, the target can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect ends if the far dorocha is destroyed, is on a different plane of existence than the target, or uses its bonus action to end the effect. If the target successfully saves against the effect, or if the effect ends for it, the target is immune to the far dorocha’s Dark Invitation for the next 24 hours.<br><br>The far dorocha can have only one target charmed at a time. If it charms another, the effect on the previous target ends.
 
 
+</statblock>
 
 

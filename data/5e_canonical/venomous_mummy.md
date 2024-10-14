@@ -23,6 +23,7 @@ In terms of actions during combat, the Venomous Mummy can make a Venomous Fist m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Venomous Mummy
 
 *Medium* *Undead* *Lawful Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Venomous Fist:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage plus 10 (3d6) poison damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed. Every 24 hours that elapse, the cursed target must succeed on a DC 12 Constitution saving throw or take 7 (2d6) poison damage, and its hp maximum is reduced by that amount. This reduction lasts until the target finishes a long rest after the curse is removed. The target dies if this effect reduces its hp maximum to 0. The curse lasts until removed by the remove curse spell or similar magic.
+</statblock>
 
 

@@ -21,6 +21,7 @@ The Constrictor Snake can take two primary actions in combat: **Bite** and **Con
 
 Source: 5e_srd
 
+<statblock>
 ### Constrictor Snake
 
 *Large beast, unaligned*
@@ -45,7 +46,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 5 (1d6+2) piercing damage.
 
-***Constrict***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 6 (1d8+2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.
+***Constrict***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 6 (1d8+2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.</statblock>
+
 
 
 
@@ -53,6 +55,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Constrictor Snake
 
 *Large* *Beast*
@@ -77,5 +80,6 @@ Source: 5e_artisinal_monsters
 - **Constrict:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) bludgeoning damage and the target is grappled (escape DC 14). Until this grapple ends  the target is restrained and the snake can't constrict a different target.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Additionally, the Grindylow can utilize the Ink Cloud ability, which recharges a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grindylow
 
 *Medium* *Aberration* *chaotic evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Ink Cloud (Recharges after a Short or Long Rest):** A 20-foot-radius cloud of ink extends all around the grindylow if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink.<br><br>After releasing the ink, the grindylow can use the Dash action as a bonus action.
 
 
+</statblock>
 
 

@@ -40,6 +40,7 @@ Overall, the Bandit Lord is a dynamic and aggressive character that excels in bo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bandit Lord
 
 *Medium* *Humanoid* *Any Non-Lawful Alignment*
@@ -85,5 +86,6 @@ Source: 5e_artisinal_monsters
 <a class="ddb-lightbox-outer compendium-image-center" href="https://media.dndbeyond.com/compendium-images/tob1/Qc1PO9Ot6SRQVGPG/27-002.black-knight-commander.png" data-lightbox="1" data-title=""><img src="https://media.dndbeyond.com/compendium-images/tob1/Qc1PO9Ot6SRQVGPG/27-002.black-knight-commander.png" class="ddb-lightbox-inner" style="width: 600px;" alt="A fully armored knight with a red cape lunges forward, reaching out with one gauntleted hand while readying a deadly lance in the other." /></a>
 </figure>
 <div class=":** When a creature the bandit lord can see targets it with an attack, the bandit lord can sidestep behind an ally within 5 feet of it, moving to an unoccupied space within 5 feet of the ally. The chosen ally becomes the target of the attack instead.
+</statblock>
 
 

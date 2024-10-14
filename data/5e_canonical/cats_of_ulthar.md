@@ -19,6 +19,7 @@ In terms of actions, the Cats of Ulthar can bite, performing a melee weapon atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cats of Ulthar
 
 *Huge* *Beast* *unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Bites:** Melee Weapon Attack: +6 to hit, reach 0 ft., up to two creatures in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.
 
 
+</statblock>
 
 

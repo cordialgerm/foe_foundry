@@ -24,6 +24,7 @@ Overall, the Wild Warrior is a resourceful and tactical creature that thrives in
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wild Warrior
 
 *Medium humanoid (any lineage)*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 
 - **Quick Trap.** The wild warrior cobbles together a makeshift trap with materials at hand and throws the trap at a creature it can see within 15 feet of it. The target must succeed on a DC 11 DEX save or be restrained until the end of its next turn.
 
+</statblock>
 
 

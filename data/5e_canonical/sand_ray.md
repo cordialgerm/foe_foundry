@@ -21,6 +21,7 @@ For reactive strategies, when attacked in melee, the Sand Ray can retaliate inst
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sand Ray
 
 *Large* *Aberration*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Angry Moan:** When the cloaker takes damage, it uses Moan.
 
 
+</statblock>
 
 

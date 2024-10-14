@@ -23,6 +23,7 @@ In combat, the Eonic Savant can make three melee attacks as part of its "Multiat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eonic Savant
 
 *Medium* *Humanoid* *neutral*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Time Warping Staff:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 7 (2d6) force damage.
 
 
+</statblock>
 
 

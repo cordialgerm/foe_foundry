@@ -27,6 +27,7 @@ As a bonus action, the Sphinx can use "Speed Time" once per day to double its sp
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sphinx
 
 *Large* *Monstrosity*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Time:** The creatures appear in empty spaces of the sphinxs choosing anywhere on the Material Plane, at any time from 1,000 years in the past to 1,000 years in the future. At the Narrators discretion, changes made in the past may alter the present.
 
 
+</statblock>
 
 

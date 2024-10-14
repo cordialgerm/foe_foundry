@@ -25,6 +25,7 @@ Finally, as a bonus action, Belu has the ability to "Change Shape." This ability
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Belu
 
 *Huge* *Giant* *chaotic good*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Magically transforms into a Small or Med Humanoid or back into its true form. Its stats other than size are same in each form. Any equipment it is wearing or carrying transforms with it. If it dies it reverts to its true form.
 
 
+</statblock>
 
 

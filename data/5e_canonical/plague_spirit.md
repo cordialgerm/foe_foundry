@@ -23,6 +23,7 @@ Lastly, the special action **Dance of Death** (available only on a recharge of 5
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Plague Spirit
 
 *Medium* *Fey* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Dance of Death (Recharge 5-6):** The plague spirit dances and twirls its censer. Each creature within 20 feet of the plague spirit that can see it must make a DC 16 Constitution saving throw. On a failure, a creature takes 28 (8d6) necrotic damage and is frightened for 1 minute. On a success, a creature takes half the damage and isn’t frightened. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

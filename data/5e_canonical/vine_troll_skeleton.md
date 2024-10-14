@@ -21,6 +21,7 @@ In terms of attacks, the Vine Troll Skeleton uses the Multiattack action, allowi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vine Troll Skeleton
 
 *Large* *Undead* *Unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 21 (3d10 + 5) piercing damage.
 - **Claw:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 19 (4d6 + 5) slashing damage.
 - **Poisoned Thorn:** Ranged Weapon Attack:+5 to hit, range 20/60 ft., one target. Hit: 8 (2d6 + 1) piercing damage plus 10 (3d6) poison damage.
+</statblock>
 
 

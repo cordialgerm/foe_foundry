@@ -23,6 +23,7 @@ Additionally, as a bonus action, the knight can make a single trident attack, al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Merfolk Knight
 
 *Medium* *Humanoid*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Trident:** The knight makes a trident attack.
 
 
+</statblock>
 
 

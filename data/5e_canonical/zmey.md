@@ -21,6 +21,7 @@ Furthermore, the Zmey has legendary actions, allowing for tactical flexibility. 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zmey
 
 *Huge* *Dragon* *Chaotic Evil*
@@ -63,5 +64,6 @@ The zmey can take 3 legendary actions, choosing from the options below. Only one
 - **Move:** The zmey moves up to its speed, or flies up to half its flying speed, without provoking opportunity attacks.
 - **Tail Whip:** The zmey whips its tail around it. Each creature within 15 feet of the zmey must succeed on a DC 17 Dexterity saving throw or be knocked prone.
 - **Tripartite Roar (Costs 2 Actions):** The zmey’s heads exhale a three-part roar, one a deafening shriek, one a frightful screech, and one a stunning bellow, in a 30-foot cone. Each creature in that area must succeed on a DC 17 Wisdom saving throw or suffer the effects of the roars until the end of its next turn. The effects depend upon the number of heads the zmey has remaining: deafened for only one head, deafened and frightened for two heads, or stunned for three heads.
+</statblock>
 
 

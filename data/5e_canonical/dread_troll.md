@@ -19,6 +19,7 @@ In terms of offensive capabilities, the Dread Troll can make multiple attacks in
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dread Troll
 
 *Large* *Giant*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The troll makes two bite attacks and three claw attacks.
 
 
+</statblock>
 
 

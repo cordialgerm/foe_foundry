@@ -25,6 +25,7 @@ Overall, the Guard Squad presents a formidable challenge with its tactical abili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Guard Squad
 
 *Large* *Humanoid*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Spears:** Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 feet  one target. Hit: 17 (5d6) piercing damage  or half damage if the squad is bloodied.
 
 
+</statblock>
 
 

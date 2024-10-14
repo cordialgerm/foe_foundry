@@ -27,6 +27,7 @@ Together, these qualities make the mordovermis a unique adversary, blending offe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mordovermis
 
 *Large aberration*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Transfixing Gaze.** The mordovermis focuses its gaze on one creature it can see within 30 feet of it. The target must succeed on a DC 13 WIS save or be charmed until the end of its next turn. While charmed, the creature is incapacitated and has a speed of 0.
 
+</statblock>
 
 

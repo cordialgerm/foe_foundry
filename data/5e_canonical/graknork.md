@@ -19,6 +19,7 @@ Graknork also possesses the Eye Ray ranged attack, which has a +9 to hit and can
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Graknork
 
 *Gargantuan* *Monstrosity* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Freezing Eye (Recharge 5-6):** The graknork’s blue eye flares open and releases a beam of icy energy in a line that is 120-feet long and 10 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw. On a failure, a creature takes 35 (10d6) cold damage and is restrained for 1 minute as its limbs freeze. On a success, a creature takes half the damage and isn’t restrained. A restrained creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Alternatively, the restrained creature can be freed if it takes at least 10 fire damage.
 
 
+</statblock>
 
 

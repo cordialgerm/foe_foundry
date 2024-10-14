@@ -23,6 +23,7 @@ Overall, the Quickstep is a highly mobile and intelligent fey creature, capable 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quickstep
 
 *Small* *Fey* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Quick Dodge:** When a creature the quickstep can see targets it with an attack, the quickstep can move to an unoccupied space within 5 feet of it without provoking opportunity attacks. If this movement would put the quickstep out of reach of the attacker, the attack misses.
 
 
+</statblock>
 
 

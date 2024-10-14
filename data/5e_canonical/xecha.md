@@ -21,6 +21,7 @@ In terms of actions, Xecha can perform a Multiattack, allowing it to strike with
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Xecha
 
 *Medium* *Fiend* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Sensory Overload (Recharge 5–6):** Psychic pulse. Each creature that isn’t a Construct or Undead within 20' of the xecha: 24 (7d6) psychic and blinded and deafened until end of its next turn (DC 15 Int half damage not blinded/deafened).
 
 
+</statblock>
 
 

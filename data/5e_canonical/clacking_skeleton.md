@@ -25,6 +25,7 @@ Overall, the Clacking Skeleton presents a moderate challenge, capable of causing
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clacking Skeleton
 
 *Medium* *Undead* *neutral evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Shortbow:** Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage.
 
 
+</statblock>
 
 

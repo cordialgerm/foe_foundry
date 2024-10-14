@@ -19,6 +19,7 @@ The Leech Demon also features the Release Swarm ability, which can be activated 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Demon, Leech
 
 *Large* *Fiend* *chaotic evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Release Swarm (Recharge 5–6):** Shakes loose dozens of leeches creating a leech swarm. Swarm acts as ally of demon and obeys its spoken commands. Swarm remains for 1 min until demon dies or until demon dismisses it as a bonus action. If demon is within 5 ft. of the swarm it can use its action to consume the swarm gaining temp hp equal to swarm’s current hp. It can add temp hp gained this way with temp hp from Tentacle Bite. Demon’s temp hp can’t exceed half its hp max. Can have only one swarm active at a time.
 
 
+</statblock>
 
 

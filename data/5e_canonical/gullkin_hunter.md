@@ -40,6 +40,7 @@ These abilities and actions make the Gullkin Hunter a well-rounded opponent that
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gullkin Hunter
 
 *Medium* *Humanoid* *any alignment*
@@ -75,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Mark Quarry (Recharges: Short/Long Rest):** Marks a creature as its quarry. Whenever hunter hits marked creature with weapon attack deals extra 1d6 damage to target.
 
 
+</statblock>
 
 

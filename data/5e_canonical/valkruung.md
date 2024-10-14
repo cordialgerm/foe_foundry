@@ -27,6 +27,7 @@ Overall, the Valkruung is a quirky adversary that utilizes its unique anatomy an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Valkruung
 
 *Tiny* *Monstrosity* *chaotic neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Disarming Tendrils:** When a creature the valkruung can see targets it with a melee weapon attack, the attacker must succeed on a DC 13 Dexterity saving throw or its weapon is knocked out of its grasp into a random unoccupied space within 5 feet of the attacker. The valkruung can’t use this reaction against attackers wielding a heavy or two-handed weapon.
 
 
+</statblock>
 
 

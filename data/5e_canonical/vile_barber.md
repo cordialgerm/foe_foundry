@@ -35,6 +35,7 @@ The combination of its sneaky tactics, ability to inflict ongoing damage, and fe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vile Barber
 
 *Small* *Fey* *Chaotic Evil*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Hidden Step:** The vile barber magically teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see and takes the Hide action.
+</statblock>
 
 

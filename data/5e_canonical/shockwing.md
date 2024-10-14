@@ -21,6 +21,7 @@ In combat, the Shockwing can make two attacks due to its Multiattack feature, bo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shockwing
 
 *Small* *Beast* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Fulminating Wings (1/Day):** A 20-foot radius burst of electricity releases from the shockwing. Each creature in that area must succeed on a DC 12 Constitution saving throw or be stunned until the end of its next turn.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ In combat, the cobra can utilize its Multiattack feature to make three separate 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Three-Headed Cobra
 
 *Large* *Monstrosity* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 15 ft., one target. Hit: 7 (1d6 + 4) piercing damage and the target must make a DC 15 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

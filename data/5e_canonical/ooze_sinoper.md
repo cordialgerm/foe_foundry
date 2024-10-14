@@ -23,6 +23,7 @@ Overall, the Sinoper Ooze presents a blend of resilience and strategic attack op
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ooze, Sinoper
 
 *Medium* *Ooze* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Foment Pigment (Recharge 4–6):** Activates latent magic in its paint burning/freezing paint off creatures affected by Paint Splash. Each creature coated in paint within 60' of it: 35 (10d6) cold (if coated in cool color) or fire (warm color) and poisoned 1 min (DC 16 Con half damage and isn’t poisoned). Each affected creature no longer coated in paint.
 
 
+</statblock>
 
 

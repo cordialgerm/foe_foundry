@@ -21,6 +21,7 @@ Finally, the Balara has a reaction called Relentless Pursuit. When a creature it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Balara
 
 *Large undead*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 
 - **Relentless Pursuit.** When a creature the balara can see moves away from it, the balara can move up to half its speed toward that creature. This movement doesn’t provoke opportunity attacks.
 
+</statblock>
 
 

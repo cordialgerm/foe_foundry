@@ -21,6 +21,7 @@ In terms of actions, the Clacker Swarm can execute a Bite attack. It makes a mel
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Beetle, Clacker Swarm
 
 *Medium* *Beast* *unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit 0' 1 tgt in the swarm’s space. 14 (4d6) piercing damage or 7 (2d6) piercing damage if the swarm has half of its hp or fewer.
 
 
+</statblock>
 
 

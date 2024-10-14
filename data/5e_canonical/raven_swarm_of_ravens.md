@@ -21,6 +21,7 @@ Overall, the Raven, Swarm of Ravens offers unique gameplay opportunities through
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Raven, Swarm of Ravens
 
 *Medium swarm (of tiny beasts)*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 
 - **Beaks.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target in the swarm’s space. Hit: 9 (2d8) piercing damage, or 4 (1d8) piercing damage if the swarm has half of its HP or fewer.
 
+</statblock>
 
 

@@ -19,6 +19,7 @@ The Nalusa Falaya has multiple actions it can take during combat. The Bite attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nalusa Falaya
 
 *Medium* *Aberration* *neutral evil*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Terrifying Glare:** The nalusa falaya targets one creature it can see within 30 feet of it. If the target can see the nalusa falaya, the target must succeed on a DC 12 Wisdom saving throw or be frightened until the end of the nalusa falaya's next turn.
 
 
+</statblock>
 
 

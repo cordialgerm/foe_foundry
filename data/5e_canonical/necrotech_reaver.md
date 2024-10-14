@@ -19,6 +19,7 @@ The Bladed Sweep is a powerful action it can initiate, recharging on rolls of 5 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Necrotech Reaver
 
 *Huge* *Undead* *neutral evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bladed Sweep (Recharge 5–6):** Swings its chains in a wide arc. Each creature within 15 ft. of the reaver must make a DC 15 Dex save. On a failure a creature takes 21 (6d6) slashing damage and is knocked prone. On a success a creature takes half the damage and isn’t knocked prone. A creature that fails the save by 5 or more is pushed up to 15 ft. away from the reaver and knocked prone.
 
 
+</statblock>
 
 

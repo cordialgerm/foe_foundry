@@ -1,7 +1,7 @@
 <MonsterName/>Imp (Devil)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-<Subtype/>shapechanger</Subtype>
 <Subtype/>devil</Subtype>
+<Subtype/>shapechanger</Subtype>
 <CR/>1</CR>
 <AC/>13</AC>
 <HP/>10</HP>
@@ -55,6 +55,7 @@ Furthermore, the Imp can use Invisibility, allowing it to vanish from sight unti
 
 Source: 5e_srd
 
+<statblock>
 ### Imp (Devil)
 
 *Tiny fiend (devil, shapechanger), lawful evil*
@@ -93,7 +94,8 @@ Source: 5e_srd
 
 ***Sting (Bite in Beast Form)***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d4+3) piercing damage, and the target must make on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.
 
-***Invisibility***. The imp magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the imp wears or carries is invisible with it.
+***Invisibility***. The imp magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the imp wears or carries is invisible with it.</statblock>
+
 
 
 
@@ -101,6 +103,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Imp
 
 *Tiny* *Fiend*
@@ -139,6 +142,7 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The imp magically turns invisible, along with any equipment carried. This invisibility ends if the imp makes an attack, falls unconscious, or dismisses the effect.
 
 
+</statblock>
 
 
 
@@ -147,6 +151,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Imp
 
 *Tiny fiend (devil)*
@@ -182,5 +187,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The imp magically transforms into a Medium or smaller Beast that has a CR no higher than its own or back into its true form, which is a Fiend. Without wings, it loses its flying speed. Its statistics, other than its size and speed, are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies.
 
+</statblock>
 
 

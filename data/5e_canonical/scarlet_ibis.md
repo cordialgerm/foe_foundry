@@ -21,6 +21,7 @@ Overall, the Scarlet Ibis is a formidable opponent in D&D 5e that combines physi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scarlet Ibis
 
 *Medium* *Monstrosity* *neutral*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) slashing damage.
 
 
+</statblock>
 
 

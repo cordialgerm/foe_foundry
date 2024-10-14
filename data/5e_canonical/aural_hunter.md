@@ -34,6 +34,7 @@ Overall, the Aural Hunter is a deadly foe that relies on its physical strength a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aural Hunter
 
 *Large* *Aberration* *chaotic evil*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Consume Sound:** Siphons energy from audible vibrations surrounding a creature grappled by it. Target: 14 (4d6) necrotic and becomes deafened and unable to speak until end of its next turn (DC 13 Con half damage and is able to hear and speak). Aural hunter regains hp equal to damage dealt. Consume Sound has no effect on creatures that are already deafened and unable to speak. It can’t use this action if it is deafened.
 
 
+</statblock>
 
 

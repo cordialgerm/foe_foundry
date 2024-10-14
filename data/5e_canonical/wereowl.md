@@ -40,6 +40,7 @@ Overall, the Wereowl is a dangerous and versatile adversary with the potential t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wereowl
 
 *Medium* *Humanoid* *lawful evil*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Shortbow (Humanoid or Hybrid Form Only):** Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 
 
+</statblock>
 
 

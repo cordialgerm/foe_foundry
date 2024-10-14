@@ -27,6 +27,7 @@ Lastly, the Rearing Strike, which can be used after a recharge period of 5-6, al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Centaur Chieftain
 
 *Large* *Monstrosity* *chaotic neutral*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Rearing Strike (Recharge 5-6):** The centaur chieftain rears back on its hind legs and makes a powerful stomp with its hooves. Each creature within 15 feet of the chieftain must make a DC 15 Dexterity saving throw, taking 28 (8d6) bludgeoning damage on a failed save, or half as much damage on a successful one. The attack leaves the centaur chieftain vulnerable, reducing its<br>Armor Class by 2 until the start of its next turn.
 
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ In combat, the Attercroppe can make a Bite attack with a +6 to hit, dealing 6 (1
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Attercroppe
 
 *Tiny* *Fey* *chaotic evil*
@@ -68,5 +69,6 @@ At will: poison spray
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage.
 
 
+</statblock>
 
 

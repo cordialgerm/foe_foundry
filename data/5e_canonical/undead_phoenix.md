@@ -23,6 +23,7 @@ Overall, the Undead Phoenix embodies a blend of overwhelming power and a persist
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Undead Phoenix
 
 *Huge* *Undead* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Decaying Bite:** Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) piercing damage plus 14 (4d6) necrotic damage. The target must succeed on a DC 15 Constitution saving throw or be cursed with perpetual decay. The cursed target can't regain hp until the curse is lifted by the remove curse spell or similar magic.
 
 
+</statblock>
 
 

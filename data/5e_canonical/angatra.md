@@ -19,6 +19,7 @@ In terms of combat actions, the Angatra can make a Multiattack, allowing it to s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angatra
 
 *Medium* *Undead* *Neutral Evil*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The angatra makes two Claw attacks.
 - **Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 14 (2d8 + 5) piercing damage, and the creature must succeed on a DC 15 Constitution saving throw or be paralyzed by pain until the end of its next turn.
+</statblock>
 
 

@@ -21,6 +21,7 @@ The Yowl action releases a dreadful scream that can terrify its enemies. Every h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yowler
 
 *Tiny* *Undead* *chaotic evil*
@@ -56,5 +57,6 @@ The changes wrought by this illusion fail to hold up to physical inspection. For
 - **Yowl:** The yowler lets loose a horrid scream. Each hostile creature within 30 feet of the yowler that can hear it must succeed on a DC 12 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the yowler’s Yowl for the next 24 hours.
 
 
+</statblock>
 
 

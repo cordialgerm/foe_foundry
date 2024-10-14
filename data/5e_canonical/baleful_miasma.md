@@ -23,6 +23,7 @@ The creature's reaction, known as Swift Advance, enables it to instantly adjust 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Baleful Miasma
 
 *Medium* *Elemental* *neutral evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Swift Advance:** If a creature in same space as miasma moves miasma can move up to its speed with the creature. This move doesn’t provoke opportunity attacks but miasma must move in same spaces creature moved ending in creature’s space or space nearest to it.
 
 
+</statblock>
 
 

@@ -19,6 +19,7 @@ In terms of actions, the Emperor’s Hyena can perform a **Multiattack**, allowi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Emperor’s Hyena
 
 *Medium* *Undead* *neutral evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Black Breath (Recharge 5-6):** The emperor’s hyena breathes a 15-foot cone of noxious black vapor. Each creature in the area that isn’t an undead or a construct must make a DC 12 Constitution saving throw, taking 14 (4d6) necrotic damage on a failed save, or half as much damage on a successful one. If the saving throw fails by 5 or more, the creature gains one level of exhaustion. This exhaustion lasts until the creature finishes a short or long rest.
 
 
+</statblock>
 
 

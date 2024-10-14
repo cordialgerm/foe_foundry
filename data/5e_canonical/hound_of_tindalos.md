@@ -27,6 +27,7 @@ Lastly, the "Hunter of the Lost" ability allows the Hound to transport itself to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hound of Tindalos
 
 *Medium* *Aberration* *neutral evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Hunter of the Lost:** The hound can transport itself to a different plane of existence. This works like the plane shift spell, except the hound can only affect itself, not other creatures, and can't use it to banish an unwilling creature to another plane.
 
 
+</statblock>
 
 

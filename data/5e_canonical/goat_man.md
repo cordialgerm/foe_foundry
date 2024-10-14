@@ -31,6 +31,7 @@ Its action economy is quite potent, as it can make multiple attacks. The Multiat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goat-Man
 
 *Medium* *Monstrosity* *Chaotic Evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The goat-man makes one Bite attack and two Slam attacks. If both Slam attacks hit the same target, the target must succeed on a DC 14 Constitution saving throw or be stunned until the end of its next turn.
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage.
 - **Slam:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage.
+</statblock>
 
 

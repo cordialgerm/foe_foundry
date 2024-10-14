@@ -25,6 +25,7 @@ Overall, the Forgotten God is a formidable opponent on any battlefield, blending
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forgotten God
 
 *Large* *Celestial*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Flame Strike (5th-Level; V, S):** A 10-foot-radius  40-foot-high column of divine flame appears centered on a point the god can see within 60 feet. Each creature in the area makes a DC 17 Dexterity saving throw  taking 14 (4d6) fire damage and 14 (4d6) radiant damage on a failed save  or half damage on a success.
 
 
+</statblock>
 
 

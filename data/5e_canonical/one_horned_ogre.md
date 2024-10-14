@@ -27,6 +27,7 @@ Overall, the One-Horned Ogre combines brute strength with tactical spellcasting,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # One-Horned Ogre
 
 *Large* *Giant* *any evil alignment*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Fiendish Horn Blast:** The one-horned ogre directs the power of its horn at a target it can see within 30 feet of it. The target must make a DC 15 Wisdom saving throw. On a failure, the target takes 10 (3d6) psychic damage and suffers a condition for 1 minute based on the color of the ogre’s horn: blinded (black), charmed (crimson), or frightened (white). On a success, the target takes half the damage and doesn’t suffer the condition. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ Overall, the Titanic Kraken stands as one of the most powerful and challenging c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Titanic Kraken
 
 *Titanic* *Monstrosity*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Tentacle:** The kraken makes one tentacle attack.
 - **Fling:** The kraken uses Fling.
 - **Squeeze (Costs 2 Actions):** The kraken ends any magical effect that is restraining it or reducing its movement and then swims up to half its swim speed without provoking opportunity attacks. During this movement, it can fit through gaps as narrow as 10 feet wide without squeezing.
+</statblock>
 
 

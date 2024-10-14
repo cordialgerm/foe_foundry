@@ -27,6 +27,7 @@ Overall, the Diplodocus is an impressive beast, utilizing its size and strength 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Diplodocus
 
 *Gargantuan* *Beast*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +10 to hit, reach 15 ft., one target. Hit: 17 (3d6 + 7) bludgeoning damage. If the target is a Large or smaller creature  it is pushed 10 feet away from the diplodocus and knocked prone.
 
 
+</statblock>
 
 

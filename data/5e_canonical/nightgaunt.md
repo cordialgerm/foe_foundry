@@ -25,6 +25,7 @@ Overall, the Nightgaunt presents a unique combination of terror, stealth, and ph
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nightgaunt
 
 *Large* *Aberration* *lawful evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Baneful Presence:** Each creature of the nightgaunt's choice that is within 30 feet of the nightgaunt and aware of it must succeed on a DC 16 Wisdom saving throw or have disadvantage on all attack rolls and saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the nightgaunt's Baneful Presence for the next 24 hours.
 
 
+</statblock>
 
 

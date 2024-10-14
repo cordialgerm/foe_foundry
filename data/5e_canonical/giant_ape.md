@@ -49,6 +49,7 @@ For actions, the Giant Ape performs the Multiattack ability, allowing it to stri
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Ape
 
 *Huge beast, unaligned*
@@ -77,7 +78,8 @@ Source: 5e_srd
 
 ***Fist***. *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit:* 22 (3d10+6) bludgeoning damage.
 
-***Rock***. *Ranged Weapon Attack:* +9 to hit, range 50/100 ft., one target. *Hit:* 30 (7d6+6) bludgeoning damage.
+***Rock***. *Ranged Weapon Attack:* +9 to hit, range 50/100 ft., one target. *Hit:* 30 (7d6+6) bludgeoning damage.</statblock>
+
 
 
 
@@ -85,6 +87,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ape, Giant
 
 *Huge beast*
@@ -120,6 +123,7 @@ Source: 5e_artisinal_monsters
 
 - **Throw.** One Large or smaller creature grappled by the ape is thrown up to 50 feet in a random direction and knocked prone. If a thrown target strikes a solid surface, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 16 DEX save or take the same damage and be knocked prone.
 
+</statblock>
 
 
 
@@ -128,6 +132,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Ape
 
 *Huge* *Beast*
@@ -153,5 +158,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +8 to hit, range 50/100 ft., one target. Hit: 26 (6d6+5) bludgeoning damage.
 
 
+</statblock>
 
 

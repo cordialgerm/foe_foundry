@@ -25,6 +25,7 @@ In terms of actions, the Blood Hawk can perform a **Beak** attack. This is a mel
 
 Source: 5e_srd
 
+<statblock>
 ### Blood Hawk
 
 *Small beast, unaligned*
@@ -55,7 +56,8 @@ Source: 5e_srd
 
 ***Beak***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) piercing damage.
 
-Taking its name from its crimson feathers and aggressive nature, the **blood hawk** fearlessly attacks almost any animal, stabbing it with its daggerlike beak. Blood hawks flock together in large numbers, attacking as a pack to take down prey.
+Taking its name from its crimson feathers and aggressive nature, the **blood hawk** fearlessly attacks almost any animal, stabbing it with its daggerlike beak. Blood hawks flock together in large numbers, attacking as a pack to take down prey.</statblock>
+
 
 
 
@@ -63,6 +65,7 @@ Taking its name from its crimson feathers and aggressive nature, the **blood haw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Hawk
 
 *Small* *Beast*
@@ -91,5 +94,6 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) piercing damage.
 
 
+</statblock>
 
 

@@ -56,6 +56,7 @@ Overall, the Elk is an agile creature that can deal damage effectively, particul
 
 Source: 5e_srd
 
+<statblock>
 ### Elk
 
 *Large beast, unaligned*
@@ -82,7 +83,8 @@ Source: 5e_srd
 
 ***Ram***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6+3) bludgeoning damage.
 
-***Hooves***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one prone creature. *Hit:* 8 (2d4+3) bludgeoning damage.
+***Hooves***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one prone creature. *Hit:* 8 (2d4+3) bludgeoning damage.</statblock>
+
 
 
 
@@ -90,6 +92,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elk
 
 *Large* *Beast*
@@ -117,6 +120,7 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +4 to hit, reach 5 ft., one prone creature. Hit: 7 (2d4+2) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -125,6 +129,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elk
 
 *Large beast*
@@ -153,5 +158,6 @@ Source: 5e_artisinal_monsters
 - **Ram.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.
 - **Kick.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage, and the target must succeed on a DC 12 STR save or be pushed up to 10 feet away from the elk.
 
+</statblock>
 
 

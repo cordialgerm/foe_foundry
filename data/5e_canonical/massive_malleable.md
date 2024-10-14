@@ -23,6 +23,7 @@ The ability "Separate Malleables" enables the Massive Malleable to split into mu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Massive Malleable
 
 *Gargantuan* *Aberration* *chaotic evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Sudden Separation:** When the massive malleable takes 30 damage or more from a single attack, it can choose to immediately use Separate Malleables. If it does so, the damage is divided evenly among the separate malleables it becomes.
 
 
+</statblock>
 
 

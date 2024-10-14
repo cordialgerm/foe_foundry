@@ -19,6 +19,7 @@ In combat, the Lost Minotaur can make a Multiattack, allowing it to strike with 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lost Minotaur
 
 *Large* *Undead* *neutral evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Gore:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage.
 
 
+</statblock>
 
 

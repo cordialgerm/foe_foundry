@@ -23,6 +23,7 @@ The Crab Samurai can utilize the bonus action "Fighting Stance," which allows it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crab, Samurai
 
 *Medium* *Beast* *lawful neutral*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Fighting Stance:** Adopts a fighting stance choosing from the options below. The stance lasts until the crab ends it (no action required) or uses this bonus action again.Banded Claw. Adopts a wide grappler’s stance. While the samurai crab is in this stance each creature that starts its turn grappled by the crab takes 3 (1d6) bludgeoning damage.Hard Shell. Defensive stance increasing its AC by 2.Soft Shell. Adopts an offensive stance gaining advantage on the first Crustaceous Sword attack it makes each turn.
 
 
+</statblock>
 
 

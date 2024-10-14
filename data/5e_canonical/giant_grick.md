@@ -33,6 +33,7 @@ Overall, the Giant Grick is a dangerous and mobile combatant, adept at surprise 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Grick
 
 *Medium* *Monstrosity*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +8 to hit, reach 5 ft., one creature grappled by the grick. Hit: 14 (2d8 + 5) piercing damage.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Crime Boss serves as an engaging and tactically challenging opponen
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crime Boss
 
 *Medium* *Humanoid*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Offhand Dagger:** When missed by an attack, the boss makes a dagger attack.
 
 
+</statblock>
 
 

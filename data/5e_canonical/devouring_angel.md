@@ -21,6 +21,7 @@ Additionally, the Devouring Angel can unleash Shed Spines as a recharge action t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devouring Angel
 
 *Large* *Aberration* *neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Shed Spines (Recharge 5–6):** Shakes its body sending acid-coated spines outward. Each creature within 10 ft. of it: 18 (4d8) piercing damage and 24 (7d6) acid (DC 17 Dex half).
 
 
+</statblock>
 
 

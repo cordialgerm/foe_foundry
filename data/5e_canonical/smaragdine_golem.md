@@ -23,6 +23,7 @@ Overall, the Smaragdine Golem serves as a powerful combatant and defender, lever
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Smaragdine Golem
 
 *Large* *Construct* *Unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Absorb Spell:** When a creature the smaragdine golem can see within 30 feet of it casts a spell, the golem can absorb the spell’s energy, countering it. This works like the counterspell spell, except the golem must always make a spellcasting ability check, no matter the spell’s level. Alternatively, when a creature the golem can see within 30 feet of the golem starts its turn while under the effects of a spell, such as bless or heroes’ feast, the golem can absorb the spell’s magic, ending the effect. In either case, the golem’s ability check for this is +10. If it successfully counters or ends the spell, it becomes Charged (see the Magic Vessel trait). The golem can’t use Absorb Spell while it is Charged.
+</statblock>
 
 

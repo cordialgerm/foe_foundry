@@ -29,6 +29,7 @@ Finally, the Uraeus has the reaction ability called Bonded Savior. When its bond
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Uraeus
 
 *Tiny* *Celestial* *Lawful Neutral*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Bonded Savior:** When the uraeus’s bonded ward takes damage, the uraeus prevents the ward from taking the damage and loses hp equal to that amount instead, regardless of the type of damage dealt.
+</statblock>
 
 

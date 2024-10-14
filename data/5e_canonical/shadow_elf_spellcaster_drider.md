@@ -25,6 +25,7 @@ This combination of physical prowess, spellcasting abilities, and strategic move
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Elf Spellcaster Drider
 
 *Large* *Monstrosity*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Web (2nd-Level; V, S, Concentration):** Thick  sticky webs fill a 20-foot cube within 60 feet  lightly obscuring it and making it difficult terrain. The webs must either be anchored between two solid masses (such as walls) or layered 5 feet deep over a flat surface. Each creature that starts its turn in the webs or that enters them during its turn makes a DC 14 Dexterity saving throw. On a failure  it is restrained. A creature can escape by using an action to make a DC 14 Strength check. Any 5-foot cube of webs exposed to fire burns away in 1 round  dealing 5 (2d4) fire damage to any creature that starts its turn in the fire. The webs remain for 1 minute.
 
 
+</statblock>
 
 

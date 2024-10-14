@@ -34,6 +34,7 @@ As a bonus action, the Dretch can use Fetid Cloud once per day, creating a cloud
 
 Source: 5e_srd
 
+<statblock>
 ### Dretch (Demon)
 
 *Small fiend (demon), chaotic evil*
@@ -68,7 +69,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 5 (2d4) slashing damage.
 
-***Fetid Cloud (1/Day)***. A 10-foot radius of disgusting green gas extends out from the dretch. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can't take reactions.
+***Fetid Cloud (1/Day)***. A 10-foot radius of disgusting green gas extends out from the dretch. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can't take reactions.</statblock>
+
 
 
 
@@ -76,6 +78,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dretch
 
 *Small* *Fiend*
@@ -107,6 +110,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.
 
 
+</statblock>
 
 
 
@@ -115,6 +119,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dretch
 
 *Small fiend (demon)*
@@ -147,5 +152,6 @@ Source: 5e_artisinal_monsters
 
 - **Fetid Cloud (1/Day).** A 10-foot radius cloud of disgusting green gas extends out from the dretch, moves with it, and spreads around corners. The cloud’s area is lightly obscured and lasts 1 minute or until a strong wind disperses it. A creature that starts its turn in the cloud must succeed on a DC 11 CON save or be poisoned until the start of its next turn. While poisoned in this way, a creature can take either an action or a bonus action on its turn, not both, and can’t take reactions.
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ Overall, the Black Dragon Wyrmling excels in combat scenarios that allow it to u
 
 Source: 5e_srd
 
+<statblock>
 # Black Dragon Wyrmling (Chromatic)
 
 *Medium dragon, chaotic evil*
@@ -66,6 +67,7 @@ Source: 5e_srd
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (1d10+2) piercing damage plus 2 (1d4) acid damage.
 
 ***Acid Breath (Recharge 5-6)***. The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (5d8) acid damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 
 
@@ -74,6 +76,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -104,6 +107,7 @@ Source: 5e_artisinal_monsters
 - **Acid Breath (Recharge 5-6):** The dragon exhales sizzling acid in a 20-foot-long  5-foot-wide line. Each creature in that area makes a DC 11 Dexterity saving throw  taking 13 (3d8) acid damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -112,6 +116,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Dragon Wyrmling
 
 *Medium dragon*
@@ -143,5 +148,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.
 - **Acid Breath (Recharge 5–6).** The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 DEX save, taking 22 (5d8) acid damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

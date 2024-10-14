@@ -21,6 +21,7 @@ In combat, the Corpse Thief can engage in a Multiattack, allowing it to perform 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corpse Thief
 
 *Medium* *Humanoid* *neutral*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Steal:** The corpse thief targets one creature within 5 feet of it and attempts to steal one small item. The target must succeed on a DC 13 Dexterity saving throw or lose one non-weapon, non-armor object that is small enough to fit in one hand.
 
 
+</statblock>
 
 

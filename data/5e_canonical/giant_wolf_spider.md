@@ -33,6 +33,7 @@ The action available to the Giant Wolf Spider is its bite:
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Wolf Spider
 
 *Medium beast, unaligned*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one creature. *Hit:* 4 (1d6+1) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
 
-Smaller than a giant spider, a **giant wolf spider** hunts prey across open ground or hides in a burrow or crevice, or in a hidden cavity beneath debris.
+Smaller than a giant spider, a **giant wolf spider** hunts prey across open ground or hides in a burrow or crevice, or in a hidden cavity beneath debris.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Smaller than a giant spider, a **giant wolf spider** hunts prey across open grou
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Wolf Spider
 
 *Medium* *Beast*
@@ -102,5 +105,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) piercing damage and the target makes a DC 11 Constitution saving throw  taking 5 (2d4) poison damage on a failure or half damage on a success. If the poison damage reduces the target to 0 hit points  the target is made stable but poisoned for 1 hour  even if it regains hit points  and it is paralyzed while poisoned in this way.
 
 
+</statblock>
 
 

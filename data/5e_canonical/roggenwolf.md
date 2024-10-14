@@ -21,6 +21,7 @@ Overall, the Roggenwolf combines agility, stealth, and psychological tactics in 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Roggenwolf
 
 *Medium* *Monstrosity* *neutral evil*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Howl (Recharge 5-6):** The roggenwolf lets loose a howl that can only be heard inside the minds of nearby creatures. Each creature within 30 feet of the roggenwolf that isn't an undead or a construct must succeed on a DC 13 Wisdom saving throw or become frightened and restrained for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending both effects on itself on a success.
 
 
+</statblock>
 
 

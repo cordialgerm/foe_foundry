@@ -23,6 +23,7 @@ Overall, the Swarm of Khalkos Spawn is a dangerous adversary that can outmaneuve
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Khalkos Spawn
 
 *Medium* *Aberration*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Chaos Pheromones:** The swarm emits a cloud of pheromones in the air in a 10-foot-radius. The cloud spreads around corners. Each non-khalkos creature in the area makes a DC 12 Intelligence saving throw. On a failure  the creature is confused for 1 minute. It repeats the saving throw at the end of each of its turns  ending the effect on itself on a success. If the creature makes its saving throw or the condition ends for it  it is immune to the chaos pheromones of khalkos spawn for the next 24 hours.
 
 
+</statblock>
 
 

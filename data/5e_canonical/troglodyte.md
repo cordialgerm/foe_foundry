@@ -21,6 +21,7 @@ In combat, the Troglodyte can use a Multiattack feature to deliver both a bite a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Troglodyte
 
 *Medium* *Humanoid*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Dart:** Melee Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 3 (1d6) poison damage.
 
 
+</statblock>
 
 

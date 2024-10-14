@@ -19,6 +19,7 @@ For its actions, the Knight Ab-errant can make two melee attacks as part of its 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Knight Ab-errant
 
 *Large* *Humanoid* *any alignment*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Fist:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

@@ -32,6 +32,7 @@ As a bonus action, the Azer Forgemaster can use Fire Step, enabling it to telepo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Azer Forgemaster
 
 *Medium* *Elemental*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Fire Step:** While standing in fire, the azer can magically teleport up to 90 feet to a space within fire.
 
 
+</statblock>
 
 

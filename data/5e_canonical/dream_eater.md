@@ -31,6 +31,7 @@ For mobility and strategy, the Dream Eater can use a bonus action called “Chan
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dream Eater
 
 *Medium* *Fiend* *Lawful Evil*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The dream eater magically transforms into a Small or Medium humanoid it has seen, or back into its true form, which is a Fiend. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies.
+</statblock>
 
 

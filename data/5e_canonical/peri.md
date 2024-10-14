@@ -30,6 +30,7 @@ For its actions, the Peri has a range of combat options:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Peri
 
 *Small* *Elemental* *chaotic good*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Storm Wave (1/Day):** Throws its arms forward releasing a blast of stormy wind in a 30' line that is 5 ft. wide. All in line make a DC 12 Dex save. On a failure a creature takes 7 (2d6) lightning and 7 (2d6) thunder and is pushed up to 10 ft. away from the peri. On a success a creature takes half the damage and isn’t pushed.
 
 
+</statblock>
 
 

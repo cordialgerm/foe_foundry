@@ -29,6 +29,7 @@ Overall, the Crypt Spider is a formidable low-tier opponent in D&D 5e, with stra
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crypt Spider
 
 *Medium* *Beast* *lawful evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Create Zombie:** The crypt spider creates a swarm of spiders statistics). The crypt spider can have no more than four zombies under its control at one time.
 
 
+</statblock>
 
 

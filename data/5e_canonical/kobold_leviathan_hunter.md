@@ -27,6 +27,7 @@ Overall, the Kobold Leviathan Hunter is a tactical combatant that excels in grap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold, Leviathan Hunter
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Grappled Redirect:** If it is target of an attack it can see while grappling a creature it can hold the grappled creature in the way and the grappled creature becomes attack's target instead.
 
 
+</statblock>
 
 

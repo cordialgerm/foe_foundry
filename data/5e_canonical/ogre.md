@@ -43,6 +43,7 @@ As a bonus action, the Ogre can perform a "Shoving Rush," which allows it to tak
 
 Source: 5e_srd
 
+<statblock>
 ## Ogre
 
 *Large giant, chaotic evil*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Greatclub***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage.
 
-***Javelin***. *Melee or Ranged Weapon Attack:* +6 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 11 (2d6+4) piercing damage.
+***Javelin***. *Melee or Ranged Weapon Attack:* +6 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 11 (2d6+4) piercing damage.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre
 
 *Large* *Giant*
@@ -100,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Javelin:** Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage.
 
 
+</statblock>
 
 
 
@@ -108,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre
 
 *Large giant*
@@ -142,5 +147,6 @@ Source: 5e_artisinal_monsters
 
 - **Shoving Rush.** The ogre takes the Dash action. If it moves, it can propel itself into one creature it can see along its path. The target must succeed on a DC 14 STR save or be knocked prone. This movement doesn’t provoke opportunity attacks from a target that fails this save.
 
+</statblock>
 
 

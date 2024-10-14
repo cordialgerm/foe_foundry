@@ -23,6 +23,7 @@ Additionally, the Miremal can use the Bog Spew ability, which recharges on a rol
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Miremal
 
 *Small* *Fey* *Chaotic Evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 - **Claw:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.
 - **Bog Spew (Recharge 5–6):** The miremal spews a noxious stream of bog filth mixed with stomach acid at one creature it can see within 20 feet of it. The target must make a DC 11 Constitution saving throw. On a failure, the target takes 7 (2d6) acid damage and is blinded until the end of its next turn. On a success, the target takes half the damage and isn’t blinded.
+</statblock>
 
 

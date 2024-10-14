@@ -29,6 +29,7 @@ In combat, the orc utilizes its **Poisoned Spear** attack, which is versatile as
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Green Abyss Orc
 
 *Medium* *Humanoid* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Poisoned Spear:** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack. If the target is a creature, it must succeed on a DC 13 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hp, the target is stable but poisoned for 1 hour, even after regaining hp, and is paralyzed while poisoned in this way.
 
 
+</statblock>
 
 

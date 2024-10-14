@@ -49,6 +49,7 @@ Overall, the Zombie is a straightforward yet troublesome adversary that can over
 
 Source: 5e_srd
 
+<statblock>
 ### Zombie
 
 *Medium undead, neutral evil*
@@ -79,7 +80,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Slam***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) bludgeoning damage.
+***Slam***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) bludgeoning damage.</statblock>
+
 
 
 
@@ -87,6 +89,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zombie
 
 *Medium* *Undead*
@@ -118,6 +121,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one grappled target. Hit: 6 (1d10 + 1) piercing damage  and the zombie regains the same number of hit points.
 
 
+</statblock>
 
 
 
@@ -126,6 +130,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zombie
 
 *Medium undead*
@@ -159,5 +164,6 @@ Source: 5e_artisinal_monsters
 
 - **Rotten Hold.** The zombie gnaws idly on the creature grappled by it. The target must succeed on a DC 12 CON save or take 2 (1d4) poison damage. A Humanoid slain by this bonus action rises 24 hours later as a zombie, unless the Humanoid is restored to life or its body is destroyed.
 
+</statblock>
 
 

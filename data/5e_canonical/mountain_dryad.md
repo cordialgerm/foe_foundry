@@ -21,6 +21,7 @@ Overall, the Mountain Dryad is a versatile and imposing creature capable of mani
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mountain Dryad
 
 *Huge* *Fey* *neutral*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Mountain’s Awe (1/Day):** The mountain dryad emits a magical aura that radiates out from it for 1 minute. Each creature that starts its turn within 30 feet of the dryad must succeed on a DC 16 Charisma saving throw or be charmed for 1 minute. A charmed creature is incapacitated and, if it is more than 5 feet away from the mountain dryad, it must move on its turn toward the dryad by the most direct route, trying to get within 5 feet. It doesn’t avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the dryad, it can repeat the saving throw. While charmed within 5 feet of the dryad, a Medium or smaller creature must climb the dryad, no check required. After climbing 20 feet, the charmed creature throws itself off the mountain dryad, taking falling damage and landing prone in an unoccupied space within 5 feet of the mountain dryad. A charmed creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ For reactions, the Scrofin has the Quick to Anger ability, which recharges after
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scrofin
 
 *Medium* *Fey* *lawful neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Quick to Anger (Recharges after a Short or Long Rest):** If the scrofin is wrestling a foe as part of a challenge and takes damage, or when it is reduced to half its hp maximum, it becomes angry. While angry, the scrofin has advantage on melee attack rolls and on saving throws against spells or effects that would charm or frighten it or make it unconscious, and it has resistance to bludgeoning damage. It remains angry for 1 minute, or until it is knocked unconscious. Alternatively, it can end its anger as a bonus action.
 
 
+</statblock>
 
 

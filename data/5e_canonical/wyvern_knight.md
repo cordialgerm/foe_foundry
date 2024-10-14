@@ -25,6 +25,7 @@ For defensive strategies, the Wyvern Knight can utilize the Protection reaction 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wyvern Knight
 
 *Medium* *Humanoid* *lawful evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Protection:** When a creature the wyvern knight can see attacks a target that is within 5 feet of it, including a creature it is riding, the knight can use a reaction to impose disadvantage on the attack roll. The knight must be wielding a shield.
 
 
+</statblock>
 
 

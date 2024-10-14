@@ -25,6 +25,7 @@ Overall, the Shadow Elf Champion Warrior embodies a well-rounded combatant in bo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Elf Champion Warrior
 
 *Medium* *Humanoid*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Hand Crossbow:** Ranged Weapon Attack: +7 to hit, range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage. If the target is a creature  it makes a DC 13 Constitution saving throw. On a failure  the target is poisoned for 1 hour. If it fails the saving throw by 5 or more  it falls unconscious until it is no longer poisoned  it takes damage  or a creature takes an action to shake it awake.
 
 
+</statblock>
 
 

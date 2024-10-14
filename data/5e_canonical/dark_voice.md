@@ -21,6 +21,7 @@ One of its most intriguing abilities, "Whispers of Shadow," recharges on a roll 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dark Voice
 
 *Medium* *Humanoid* *neutral evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Whispers of Shadow (Recharge 5-6):** The dark voice speaks in Umbral, whispering of what it sees beyond the dark. The area within 30 feet of the dark voice becomes dimly lit until the end of the dark voice's next turn. Only sunlight can illuminate the area brightly during this time. Each non-dark folk creature in the area must succeed on a DC 15 Charisma saving throw or take 13 (3d8) psychic damage and be frightened until the start of its next turn.
 
 
+</statblock>
 
 

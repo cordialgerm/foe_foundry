@@ -21,6 +21,7 @@ Additionally, the Crusher can utilize a bonus action called Overclock, which has
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crusher
 
 *Large* *Construct*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Overclock (Recharge 5-6):** The crusher takes the Dash action.
 
 
+</statblock>
 
 

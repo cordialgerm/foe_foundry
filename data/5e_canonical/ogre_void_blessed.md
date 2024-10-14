@@ -41,6 +41,7 @@ As a reaction, the Ogre can utilize its Volatile Stomach ability. When it takes 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre, Void Blessed
 
 *Large* *Giant* *chaotic evil*
@@ -80,5 +81,6 @@ Source: 5e_artisinal_monsters
 - **Volatile Stomach:** When it takes bludgeoning piercing or slashing can regurgitate some of its stomach contents. Each creature within 5 ft. of it: 4 (1d8) necrotic and be poisoned until end of its next turn (DC 15 Con negates). A pool of Void infused stomach contents forms in a space ogre can see within 5 ft. of it and lasts until start of ogre’s next turn. A creature that enters pool for first time on a turn or starts its turn there: 4 (1d8) necrotic.
 
 
+</statblock>
 
 

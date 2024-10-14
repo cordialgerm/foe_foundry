@@ -23,6 +23,7 @@ Additionally, the Jackalwere can use a "Shapeshift" bonus action, transforming i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jackalwere
 
 *Medium* *Fiend*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Combat The jackalwere shifts to hybrid form and uses Sleep Gaze on an unsuspecting target:** It then fights with its scimitar, staying next to at least one ally. A jackalwere is fearless when facing enemies armed with mundane weapons, but it retreats if it is outnumbered by enemies capable of bypassing its resistances.
 
 
+</statblock>
 
 

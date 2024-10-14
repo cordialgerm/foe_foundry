@@ -21,6 +21,7 @@ For its actions, the Weirding Scroll can dominate a humanoid it sees within a 30
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Weirding Scroll
 
 *Tiny* *Construct* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Tendril of Light:** Melee Spell Attack: +5 to hit, reach 10 ft., one target. Hit: 3 (1d6) psychic damage plus 3 (1d6) radiant damage.
 
 
+</statblock>
 
 

@@ -27,6 +27,7 @@ As a reaction, the Clockwork Scorpion can activate Gas Nozzles when it takes dam
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Scorpion
 
 *Large* *Construct* *unaligned*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Gas Nozzles:** When it takes damage all within 5 feet: 5 (1d10) poison. If damage taken was fire gas ignites deals + 5 (1d10) fire.
 
 
+</statblock>
 
 

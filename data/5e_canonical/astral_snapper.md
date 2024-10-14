@@ -21,6 +21,7 @@ The Claws attack is its primary offensive option, dealing reliable damage and po
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Astral Snapper
 
 *Medium* *Aberration* *neutral evil*
@@ -53,5 +54,6 @@ From the time the astral snapper succeeds on the initial dive into the host thro
 - **Claws:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.
 
 
+</statblock>
 
 

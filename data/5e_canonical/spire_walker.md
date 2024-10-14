@@ -23,6 +23,7 @@ Lastly, the Spire Walker can use its bonus action, Steeple Step, to teleport up 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spire Walker
 
 *Tiny* *Fey* *Chaotic Neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Steeple Step:** The spire walker teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see. The destination must be on the steeple of a building, mast of a ship, corner of a rooftop, or similar narrow point or feature.
+</statblock>
 
 

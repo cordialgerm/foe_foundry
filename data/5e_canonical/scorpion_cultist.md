@@ -21,6 +21,7 @@ In terms of actions, the Scorpion Cultist can perform a melee attack with a scim
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scorpion Cultist
 
 *Medium* *Humanoid* *Neutral*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Scimitar:** Melee Weapon Attack: +5 to hit, reach 5 ft, one target. Hit: 6 (1d6 + 3) slashing damage plus 2 (1d4) poison damage.
 - **Sling:** Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) poison damage.
+</statblock>
 
 

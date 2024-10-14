@@ -33,6 +33,7 @@ Finally, the "Shield Wall" ability is a defensive maneuver that requires recharg
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Armory Golem
 
 *Large* *Construct* *unaligned*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Shield Wall (Recharge 4-6):** The golem reconfigures its construction, moving shields and armor to encase its body. It regains 10 hp, and its AC increases by 2 until the end of its next turn.
 
 
+</statblock>
 
 

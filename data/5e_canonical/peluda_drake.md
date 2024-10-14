@@ -23,6 +23,7 @@ Moreover, the Peluda possesses powerful breath weapons, which recharge on a roll
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Peluda Drake
 
 *Large* *Dragon* *chaotic neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapons (Recharge 5-6):** The peluda uses one of the following breath weapons:<br>Steam Breath. The drake exhales scalding steam in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one.<br>Acid Breath. The drake exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 13 Dexterity saving throw, taking 22 (4d10) acid damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

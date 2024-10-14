@@ -21,6 +21,7 @@ For its legendary actions, the Ankou can use *Detect* to sense the location of l
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ankou Soul Herald
 
 *Gargantuan* *Dragon* *neutral*
@@ -71,5 +72,6 @@ The ankou can take 3 legendary actions, choosing from the options below. Only on
 - **Detect:** The ankou learns the location of all living creatures within 120 feet. Alternatively, it can learn the location of all undead creatures or creatures that have been dead no longer than 1 hour within 1 mile.
 - **Tail Attack:** The ankou makes a tail attack.
 - **Envelope in Shadow (Costs 2 Actions):** The ankou moves up to half its speed without provoking opportunity attacks. Any creature whose space it moves through must make a DC 22 Dexterity saving throw, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

@@ -23,6 +23,7 @@ As a reaction, the Erina Defender has Protective Interference, which allows it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Erina Defender
 
 *Small* *Humanoid* *Neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Protective Interference:** When a friendly creature the erina defender can see within 5 feet of it is the target of an attack, the defender can impose disadvantage on the attack roll. To do so, the defender must see the attacker and be wielding a melee weapon.
+</statblock>
 
 

@@ -25,6 +25,7 @@ As a bonus action, the Asanbosam can utilize its Arboreal Escape when within a t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Asanbosam
 
 *Large* *Aberration* *Chaotic Evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Arboreal Escape:** While in a tree, the asanbosam takes the Disengage or Hide action.
+</statblock>
 
 

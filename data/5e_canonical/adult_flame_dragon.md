@@ -38,6 +38,7 @@ Lastly, the dragon can utilize legendary actions, allowing it to make additional
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Flame Dragon
 
 *Huge* *Dragon* *Chaotic Evil*
@@ -87,5 +88,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a Tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 17 Dexterity saving throw or take 11 (2d6 + 4) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+</statblock>
 
 

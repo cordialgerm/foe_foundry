@@ -33,6 +33,7 @@ Lastly, the Truant Devourer can teleport up to 60 feet as a bonus action using i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Truant Devourer
 
 *Medium* *Undead* *any alignment (as its creator deity)*
@@ -74,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Dusty Step:** Teleports  with items worn/carried up to 60' to unoccupied space it can see. Dust cloud appears at origin and destination.
 
 
+</statblock>
 
 

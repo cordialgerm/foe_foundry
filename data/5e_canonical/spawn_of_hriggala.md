@@ -21,6 +21,7 @@ The Spawn's Escape the Material ability allows it to burrow through at least 20 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spawn of Hriggala
 
 *Huge* *Fiend* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Escape the Material:** The spawn burrows at least 20 feet through natural rock and opens a portal to the plane of the undead at the end of this movement. The portal remains for 2d4 rounds. The spawn can’t have more than one portal open at a time.
 
 
+</statblock>
 
 

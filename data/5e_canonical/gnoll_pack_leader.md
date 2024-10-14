@@ -27,6 +27,7 @@ Overall, the Gnoll Pack Leader is a cunning and strategic foe, best utilized in 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gnoll Pack Leader
 
 *Medium* *Humanoid*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Rampaging Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one bloodied creature. Hit: 4 (1d4 + 2) piercing damage.
 
 
+</statblock>
 
 

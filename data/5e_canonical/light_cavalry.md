@@ -25,6 +25,7 @@ In summary, the Light Cavalry is a versatile combatant particularly effective in
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Light Cavalry
 
 *Medium* *Humanoid* *lawful neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharges after a Short or Long Rest):** The dragonborn breathes fire in a 15-foot cone. All creatures in that area must make a DC 12 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

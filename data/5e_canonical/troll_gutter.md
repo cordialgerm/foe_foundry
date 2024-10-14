@@ -35,6 +35,7 @@ The Gutter Troll's combination of regenerative abilities, melee prowess, and tox
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Troll, Gutter
 
 *Medium* *Giant* *neutral evil*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Sticky Tongue:** Melee Weapon Attack: +6 to hit, 20 ft., one target, 7 (1d6+4) bludgeoning damage and the target must make DC 14 Str save or be pulled up to 15 ft. toward the troll.
 
 
+</statblock>
 
 

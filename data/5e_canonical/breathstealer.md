@@ -25,6 +25,7 @@ Lastly, as a bonus action, the Breathstealer can execute a Cunning Action, grant
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: Breathstealer
 
 *Medium* *Humanoid* *any non-good*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Cunning Action:** Dash Disengage or Hide action.
 
 
+</statblock>
 
 

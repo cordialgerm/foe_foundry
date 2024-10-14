@@ -21,6 +21,7 @@ In terms of offensive actions, the Swarm can use Petal Slashes, a melee weapon a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm, Vampire Blossom
 
 *Large* *Plant* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Petal Slashes:** Melee Weapon Attack: +6 to hit, 0 ft., one creature, in the swarm’s space. 18 (4d8) slashing damage or 9 (2d8) slashing damage if the swarm has half its hp or fewer. Target must make a DC 13 Con save reducing its hp max by an amount equal to damage taken on a failed save or by half as much if made. This reduction lasts until creature finishes a long rest. Target dies if this reduces its hp max to 0.
 
 
+</statblock>
 
 

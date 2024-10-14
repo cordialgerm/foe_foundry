@@ -21,6 +21,7 @@ During combat, the Oasis Keeper utilizes its Multiattack feature, allowing it to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Oasis Keeper
 
 *Huge* *Monstrosity* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Stinger:** Melee Weapon Attack: +9 to hit, reach 10 ft, one target. Hit: 14 (2d8 + 5) piercing damage, and the target must make a DC 15 Constitution saving throw. On a failure, the target takes 14 (4d6) poison damage and is incapacitated for 1 minute. On a success, the target takes half the damage and isn’t incapacitated. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

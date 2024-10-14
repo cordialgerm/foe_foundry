@@ -39,6 +39,7 @@ Overall, the Blink Dog is an agile and cunning creature, making it an excellent 
 
 Source: 5e_srd
 
+<statblock>
 ### Blink Dog
 
 *Medium fey, lawful good*
@@ -69,7 +70,8 @@ Source: 5e_srd
 
 ***Teleport (Recharge 4-6)***. The dog magically teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one bite attack.
 
-A **blink dog** takes its name from its ability to blink in and out of existence, a talent it uses to aid its attacks and to avoid harm. Blink dogs harbor a long- standing hatred for displacer beasts and attack them on sight.
+A **blink dog** takes its name from its ability to blink in and out of existence, a talent it uses to aid its attacks and to avoid harm. Blink dogs harbor a long- standing hatred for displacer beasts and attack them on sight.</statblock>
+
 
 
 
@@ -77,6 +79,7 @@ A **blink dog** takes its name from its ability to blink in and out of existence
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blink Dog
 
 *Medium* *Fey*
@@ -108,6 +111,7 @@ Source: 5e_artisinal_monsters
 - **Teleport (Recharge 4-6):** The blink dog magically teleports up to 40 feet to an unoccupied space it can see.
 
 
+</statblock>
 
 
 
@@ -116,6 +120,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blink Dog
 
 *Medium fey*
@@ -146,5 +151,6 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 - **Teleport (Recharge 4–6).** The blink dog teleports, along with any equipment it is wearing or carrying, up to 40 feet to an unoccupied space it can see. Before or after teleporting, the dog can make one Bite attack.
 
+</statblock>
 
 

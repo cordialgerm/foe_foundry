@@ -40,6 +40,7 @@ For reactions, the Chain Devil can utilize its Unnerving Mask ability. When a cr
 
 Source: 5e_srd
 
+<statblock>
 ### Chain Devil
 
 *Medium fiend (devil), lawful evil*
@@ -84,7 +85,8 @@ Each animated chain is an object with AC 20, 20 hit points, resistance to pierci
 
 ###### Reactions
 
-***Unnerving Mask***. When a creature the devil can see starts its turn within 30 feet of the devil, the devil can create the illusion that it looks like one of the creature's departed loved ones or bitter enemies. If the creature can see the devil, it must succeed on a DC 14 Wisdom saving throw or be frightened until the end of its turn.
+***Unnerving Mask***. When a creature the devil can see starts its turn within 30 feet of the devil, the devil can create the illusion that it looks like one of the creature's departed loved ones or bitter enemies. If the creature can see the devil, it must succeed on a DC 14 Wisdom saving throw or be frightened until the end of its turn.</statblock>
+
 
 
 
@@ -92,6 +94,7 @@ Each animated chain is an object with AC 20, 20 hit points, resistance to pierci
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chain Devil
 
 *Medium* *Fiend*
@@ -136,6 +139,7 @@ Source: 5e_artisinal_monsters
 - **Unnerving Mask:** When damaged by a creature within 30 feet that can see the devil, the devil momentarily assumes the magical illusory form of one of the attackers enemies or loved ones, alive or dead. The illusory figure may speak words that only the attacker can hear. The attacker makes a DC 15 Wisdom saving throw. On a failure, it takes 9 (2d8) psychic damage and is frightened until the end of its next turn.The attacker is then immune to this effect for the next 24 hours.
 
 
+</statblock>
 
 
 
@@ -144,6 +148,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chain Devil
 
 *Medium fiend (devil)*
@@ -182,5 +187,6 @@ Source: 5e_artisinal_monsters
 
 - **Unnerving Mask.** When a creature the devil can see starts its turn within 30 feet of the devil, the devil can command its mask to shift to look like one of the creature’s departed loved ones or bitter enemies. If the creature can see the mask, it must succeed on a DC 15 WIS save or be frightened until the end of its turn.
 
+</statblock>
 
 

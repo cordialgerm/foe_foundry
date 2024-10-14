@@ -23,6 +23,7 @@ Overall, the Living Shade serves as a stealthy ambusher that thrives in dark env
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Living Shade
 
 *Medium* *Fey* *neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Touch:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 2 (1d4) cold damage.
 
 
+</statblock>
 
 

@@ -37,6 +37,7 @@ One of the dragon's most formidable abilities is its Cold Breath, which has a re
 
 Source: 5e_srd
 
+<statblock>
 # Young White Dragon (Chromatic)
 
 *Large dragon, chaotic evil*
@@ -73,7 +74,8 @@ Source: 5e_srd
 
 ***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.
 
-***Cold Breath (Recharge 5-6)***. The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) cold damage on a failed save, or half as much damage on a successful one.
+***Cold Breath (Recharge 5-6)***. The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) cold damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -81,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young White Dragon
 
 *Large* *Dragon*
@@ -114,6 +117,7 @@ Source: 5e_artisinal_monsters
 - **Cold Breath (Recharge 5-6):** The dragon exhales a 30-foot cone of frost. Each creature in that area makes a DC 15 Constitution saving throw  taking 35 (10d6) cold damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -122,6 +126,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young White Dragon
 
 *Large dragon*
@@ -153,5 +158,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.
 - **Cold Breath (Recharge 5–6).** The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 CON save, taking 31 (7d8) cold damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

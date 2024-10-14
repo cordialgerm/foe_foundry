@@ -23,6 +23,7 @@ Overall, the Arborcyte combines strong physical attacks with an ability to adapt
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arborcyte
 
 *Large* *Plant* *chaotic neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Animated Tendril:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 5) piercing damage.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ The gremlin's reaction, Ride the Bolt, allows it to instantly teleport along any
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Azza Gremlin
 
 *Small* *Fey* *Neutral*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Ride the Bolt:** The azza gremlin can travel instantly along any bolt of lightning. When a bolt of lightning strikes or an effect deals lightning damage within 30 feet of the gremlin, it can teleport to an unoccupied space within 5 feet of where the lightning struck or dealt damage.
+</statblock>
 
 

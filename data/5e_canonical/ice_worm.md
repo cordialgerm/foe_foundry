@@ -37,6 +37,7 @@ Finally, the Ice Worm has a reaction called **Fighting Retreat.** When it is the
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Worm
 
 *Gargantuan* *Monstrosity*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Fighting Retreat:** When a creature makes an opportunity attack on the worm, the worm attacks with either its bite or its tail stinger.
 
 
+</statblock>
 
 

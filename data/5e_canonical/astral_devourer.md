@@ -31,6 +31,7 @@ Overall, the Astral Devourer presents a unique and challenging encounter, emphas
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Astral Devourer
 
 *Medium* *Aberration* *chaotic evil*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Recombine:** When one or more astral devourers that are Small or smaller and share a collective mind are within 5 feet of each other, they can combine into a new astral devourer. The new astral devourer is one size larger than the largest original creature, and it has hp equal to the combined total of the original creatures. The new astral devourer’s hp can’t exceed the normal hp maximum of a Medium astral devourer.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ For bonus actions, the executioner can **Recall Severed Head**, calling any of i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elf, Shadow Fey Executioner
 
 *Medium* *Humanoid* *lawful evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Traveler (3/Day):** In shadows/dim light/darkness disappears into darkness and reappears in unoccupied space it can see within 30'. Smoke tendril appears at origin and destination.
 
 
+</statblock>
 
 

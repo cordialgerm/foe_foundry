@@ -21,6 +21,7 @@ Overall, Pirates are nimble, skilled combatants who can deal reasonable damage b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pirate
 
 *Medium* *Humanoid*
@@ -45,5 +46,6 @@ Source: 5e_artisinal_monsters
 - **Light Crossbow:** Ranged Weapon Attack: +2 to hit, range 80/320 ft., one target. Hit: 4 (1d8) piercing damage.
 
 
+</statblock>
 
 

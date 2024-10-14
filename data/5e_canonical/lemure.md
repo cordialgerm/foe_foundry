@@ -34,6 +34,7 @@ The Lemure also has a bonus action called "Rippling Heat," usable once per day. 
 
 Source: 5e_srd
 
+<statblock>
 ### Lemure (Devil)
 
 *Medium fiend (devil), lawful evil*
@@ -66,7 +67,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Fist***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) bludgeoning damage.
+***Fist***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) bludgeoning damage.</statblock>
+
 
 
 
@@ -74,6 +76,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lemure
 
 *Medium* *Fiend*
@@ -106,6 +109,7 @@ Source: 5e_artisinal_monsters
 - **Fist:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -114,6 +118,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lemure
 
 *Medium fiend (devil)*
@@ -147,5 +152,6 @@ Source: 5e_artisinal_monsters
 
 - **Rippling Heat (1/Day).** The lemure exudes an aura of extreme heat for 1 minute. Each creature that starts its turn within 15 feet of the lemure and that isn’t a devil must succeed on a DC 11 CON save or be weakened until the start of its next turn. A weakened creature has disadvantage on all attack rolls, and it deals only half damage with weapon attacks that use Strength. A creature that fails this save by 5 or more suffers one level of exhaustion. A creature that has suffered a level of exhaustion from this lemure’s Rippling Heat can’t suffer another level from this lemure’s Rippling Heat for 24 hours.
 
+</statblock>
 
 

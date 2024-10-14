@@ -31,6 +31,7 @@ As a bonus action, the Goblin Alchemist can utilize Nimble Escape, allowing it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Alchemist
 
 *Small* *Humanoid*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 

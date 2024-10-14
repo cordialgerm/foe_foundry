@@ -25,6 +25,7 @@ For additional actions, the Chemosit can use its bonus action to Change Shape, a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chemosit
 
 *Medium* *Fiend* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Magically transforms into a Small or Med Humanoid or back into its true Fiendish form. Its stats other than size are the same in each form. No matter the form chemosit always has only one leg. Its crutch adjusts to fit its new form but no other equipment transforms. Reverts on death. Crutch becomes nonmagical.
 
 
+</statblock>
 
 

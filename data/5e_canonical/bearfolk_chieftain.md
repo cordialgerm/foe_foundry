@@ -38,6 +38,7 @@ It also has a tactical ability called **Leadership** which can be used as a reac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bearfolk Chieftain
 
 *Medium* *Humanoid* *chaotic good*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Leadership (Recharges after a Short or Long Rest):** For 1 minute, the bearfolk chieftain can, as a reaction, utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll, provided it can hear and understand the bearfolk chieftain. A creature can benefit from only one Leadership die at a time. This effect ends if the bearfolk chieftain is incapacitated.
 
 
+</statblock>
 
 

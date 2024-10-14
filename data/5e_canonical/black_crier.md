@@ -35,6 +35,7 @@ The Black Crier is a strategically complex foe due to its abilities that manipul
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Crier
 
 *Medium* *Undead* *neutral*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Crier’s Lament (1/Day):** The black crier unleashes a devastating peal of anguish and rage in a 30-foot cone. Each creature in the area must make a DC 16 Charisma saving throw. On a failure, a creature drops to 0 hp. On a success, a creature takes 21 (6d6) psychic damage and is frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

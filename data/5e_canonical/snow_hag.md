@@ -23,6 +23,7 @@ The Illusory Appearance ability allows the Snow Hag to disguise itself as anothe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snow Hag
 
 *Medium* *Fey* *neutral evil*
@@ -57,5 +58,6 @@ At will: minor illusion, prestidigitation, ray of frost
 - **Illusory Appearance:** The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like another creature of her general size and humanoid shape. The illusion ends if the hag takes a bonus action to end it or if she dies. <br><br>The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have human hands, but someone touching them would feel her sharp claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 20 Intelligence (Investigation) check to discern that the hag is disguised.
 
 
+</statblock>
 
 

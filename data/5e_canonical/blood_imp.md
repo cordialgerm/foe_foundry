@@ -34,6 +34,7 @@ Overall, the Blood Imp is a clever and deceptive creature, capable of manipulati
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Imp
 
 *Tiny* *Fiend* *lawful evil*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Spew Blood:** Ranged Spell Attack: +4 to hit, range 20/60 ft., one target. Hit: 5 (2d4) poison damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned until the end of its next turn.
 
 
+</statblock>
 
 

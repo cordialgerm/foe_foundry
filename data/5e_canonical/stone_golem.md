@@ -23,6 +23,7 @@ As a bonus action, the Stone Golem can use Rearrange Stone, altering the configu
 
 Source: 5e_srd
 
+<statblock>
 ### Stone Golem
 
 *Large construct, unaligned*
@@ -59,7 +60,8 @@ Source: 5e_srd
 
 ***Slam***. *Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 19 (3d8+6) bludgeoning damage.
 
-***Slow (Recharge 5-6)***. The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+***Slow (Recharge 5-6)***. The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</statblock>
+
 
 
 
@@ -67,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stone Golem
 
 *Large construct*
@@ -106,5 +109,6 @@ Source: 5e_artisinal_monsters
 	- Jagged Stones. The golem turns several of the stones of its body to point outward. Its AC is reduced by 2, and each time a creature within 5 feet of the golem hits it with a melee attack, the attacker takes 5 (2d4) piercing damage.
 	- Protective Slabs. The golem slides several flat stones around its body to protect its vulnerable areas. Its speed is reduced by 10 feet, and each time it takes damage, the damage is reduced by 5 (2d4).
 
+</statblock>
 
 

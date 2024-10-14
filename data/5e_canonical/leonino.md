@@ -19,6 +19,7 @@ The Leonino can attack using its Bite action, which is a melee weapon attack tha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Leonino
 
 *Tiny* *Beast* *unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage. If this is the first time the leonino has hit the target within the past 24 hours, the target must succeed on a DC 10 Wisdom saving throw or be charmed by the leonino for 1 hour.
 
 
+</statblock>
 
 

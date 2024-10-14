@@ -21,6 +21,7 @@ The "Prepare Host" ability is particularly deadly; if a target is already paraly
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tosculi Warrior
 
 *Small* *Humanoid* *Lawful Evil*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d4 + 5) slashing damage.
 - **Stinger:** Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 10 (2d4 + 5) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target is also paralyzed. A poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Prepare Host:** The tosculi extends the paralysis on a creature within 5 feet of it that was paralyzed by a tosculi’s Stinger attack. The paralyzed target must succeed on a DC 13 Constitution saving throw or be paralyzed for 8 hours and no longer makes saving throws to end the paralysis. The paralysis ends if the target takes damage while below half its hp maximum. Otherwise, a spell or effect that cures disease ends this paralysis.
+</statblock>
 
 

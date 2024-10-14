@@ -25,6 +25,7 @@ In summary, the Ophidiotaur is a complex and dangerous adversary that combines s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ophidiotaur
 
 *Large* *Monstrosity* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Call Serpents (1/Day):** The ophidiotaur magically calls 1d6 poisonous snakes or flying snakes (ophidiotaur’s choice). The called creatures arrive in 1d4 rounds, acting as allies of the ophidiotaur and obeying its spoken commands. The snakes remain for 1 hour, until the ophidiotaur dies, or until the ophidiotaur dismisses them as a bonus action.
 
 
+</statblock>
 
 

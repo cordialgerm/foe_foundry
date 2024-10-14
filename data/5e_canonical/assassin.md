@@ -53,6 +53,7 @@ As a bonus action, the Assassin can utilize its Hidden Step ability, which allow
 
 Source: 5e_srd
 
+<statblock>
 ### Assassin
 
 *Medium humanoid (any race), any non-good alignment*
@@ -93,7 +94,8 @@ Source: 5e_srd
 
 ***Light Crossbow***. *Ranged Weapon Attack:* +6 to hit, range 80/320 ft., one target. *Hit:* 7 (1d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.
 
-Trained in the use of poison, **assassins** are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them.
+Trained in the use of poison, **assassins** are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them.</statblock>
+
 
 
 
@@ -101,6 +103,7 @@ Trained in the use of poison, **assassins** are remorseless killers who work for
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Assassin
 
 *Medium* *Humanoid*
@@ -139,6 +142,7 @@ Source: 5e_artisinal_monsters
 - **Assassins specialize in dealing quiet:** While some kill for pay, others do so for ideological or political reasons.
 
 
+</statblock>
 
 
 
@@ -147,6 +151,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Assassin
 
 *Medium humanoid (any lineage)*
@@ -181,5 +186,6 @@ Source: 5e_artisinal_monsters
 
 - **Hidden Step.** The assassin magically teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see and takes the Hide action.
 
+</statblock>
 
 

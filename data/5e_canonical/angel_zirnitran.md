@@ -29,6 +29,7 @@ Finally, the Zirnitran is equipped with legendary actions that enhance its capab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angel, Zirnitran
 
 *Huge* *Celestial* *neutral good*
@@ -85,5 +86,6 @@ Source: 5e_artisinal_monsters
 - **Attack (2):** Makes one Anointed Claws or Draconic Blast attack.
 - **Cast a Spell (2):** Uses Spellcasting.
 - **Under Black Wings (3):** Creates a magical feathered shield around itself or another creature it can see within 120' of it. Target gains +2 to AC and 20 temp hp until the end of zirnitran’s next turn.
+</statblock>
 
 

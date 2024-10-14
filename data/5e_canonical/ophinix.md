@@ -31,6 +31,7 @@ The combination of damage immunity, strong physical attacks, and electrical abil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ophinix
 
 *Large* *Monstrosity* *unaligned*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Strike (Recharge Special):** The ophinix releases its static electricity at up to three targets it can see within 30 feet of it. Each creature must make a DC 12 Dexterity saving throw, taking 5 (2d4) lightning damage on a failed save, or half as much damage on a successful one. After using Lightning Strike, the ophinix is no longer charged with electricity. It can’t use Lightning Strike if isn’t charged with electricity.
 
 
+</statblock>
 
 

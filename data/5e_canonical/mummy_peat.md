@@ -21,6 +21,7 @@ In combat, the Peat Mummy can perform a multiattack, using two "Rabid Bite" atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mummy, Peat
 
 *Medium* *Undead* *neutral evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Rabid Bite:** Melee Weapon Attack: +7 to hit, 5 ft., one target, 11 (2d6+4) piercing damage + 7 (2d6) necrotic.
 
 
+</statblock>
 
 

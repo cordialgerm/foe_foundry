@@ -23,6 +23,7 @@ The Blood Bray ability, which has a recharge requirement, unleashes a horrific s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Baliri Demon
 
 *Medium* *Fiend* *chaotic evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Blood Bray (Recharge 6):** The baliri demon unleashes an otherworldly braying that causes the internal organs of nearby creatures to twist and rupture. Each creature within 20 feet of the baliri that can hear it must make a DC 18 Constitution saving throw. On a failure, the creature takes 36 (8d8) necrotic damage and is stunned until the end of its next turn as it doubles over in agony. On a success, the creature takes half the damage and isn’t stunned. The bray doesn’t affect creatures without internal organs, such as constructs, elementals, and oozes.
 
 
+</statblock>
 
 

@@ -19,6 +19,7 @@ In terms of actions, the Cave Goat can perform a melee attack called Ram. This a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Goat
 
 *Small* *Beast* *unaligned*
@@ -47,5 +48,6 @@ Source: 5e_artisinal_monsters
 - **Ram:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

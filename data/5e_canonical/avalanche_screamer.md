@@ -31,6 +31,7 @@ Another powerful ability, Scream, has a recharge mechanism (5-6). This ability a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Avalanche Screamer
 
 *Large* *Aberration* *chaotic evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Scream (Recharge 5-6):** The avalanche screamer shrieks thunderously in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 27 (6d8) thunder damage and is deafened for 1 hour. On a success, a creature takes half as much damage and isn’t deafened.
 
 
+</statblock>
 
 

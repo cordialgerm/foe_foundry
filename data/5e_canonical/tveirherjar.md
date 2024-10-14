@@ -19,6 +19,7 @@ In terms of actions, the Tveirherjar can perform a Multiattack, using its Niflhe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tveirherjar
 
 *Medium* *Undead* *lawful evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Terrifying Glare (Recharge 5-6):** The tveirherjar targets one creature it can see within 30 feet of it. If the creature can see the tveirherjar, it must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. While frightened, the creature is paralyzed. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

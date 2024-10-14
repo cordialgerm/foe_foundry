@@ -59,6 +59,7 @@ This dragon is not just a brute but a cunning combatant that leverages its psych
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Sapphire Dragon
 
 *Gargantuan* *Dragon*
@@ -109,5 +110,6 @@ Source: 5e_artisinal_monsters
 - **Foretell:** The dragon psionically catches a glimpse of a fast-approaching moment and plans accordingly. The dragon rolls a d20 and records the number rolled. Until the end of the dragons next turn, the dragon can replace the result of any d20 rolled by it or a creature within 120 feet with the foretold number. Each foretold roll can be used only once.
 - **Psionic Wave (Costs 2 Actions):** The dragon uses Psionic Wave.
 - **Shatter Mind (Costs 2 Actions):** The dragon targets a creature within 60 feet, forcing it to make a DC 23 Intelligence saving throw. On a failure, the target takes 22 (4d10) ongoing psychic damage. An affected creature repeats the saving throw at the end of each of its turns, ending the ongoing psychic damage on a success. A creature can also use an action to ground itself in reality, ending the ongoing damage.
+</statblock>
 
 

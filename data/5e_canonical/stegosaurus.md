@@ -17,6 +17,7 @@ The Stegosaurus has a notable action called Tail, which is a melee weapon attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stegosaurus
 
 *Huge* *Beast*
@@ -40,5 +41,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 17 (3d8 + 4) piercing damage. If the target is a Large or smaller creature  it makes a DC 14 Strength saving throw. On a failure  it is knocked prone.
 
 
+</statblock>
 
 

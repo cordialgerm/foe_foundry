@@ -19,6 +19,7 @@ In terms of actions, the Void Constructor can make a Multiattack, delivering two
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Void Constructor
 
 *Medium* *Construct* *neutral evil*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Tentacles:** Melee Weapon Attack: +5 to hit, 10 ft., one target, 13 (4d4+3) bludgeoning damage and the target is grappled (escape DC 13). Until this grapple ends the constructor can’t use its tentacles on another target.
 
 
+</statblock>
 
 

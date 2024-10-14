@@ -25,6 +25,7 @@ For actions during combat, the Púca can perform a "Multiattack," using two Chai
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Púca
 
 *Large* *Fey* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +7 to hit, 5 ft., one target, 13 (2d8+4) bludgeoning damage and target must make DC 15 Str save or be knocked prone.
 
 
+</statblock>
 
 

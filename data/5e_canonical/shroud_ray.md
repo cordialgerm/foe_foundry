@@ -27,6 +27,7 @@ Overall, the Shroud Ray is a cunning and dangerous creature, thriving in aquatic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shroud Ray
 
 *Large* *Aberration*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Angry Moan:** When the cloaker takes damage, it uses Moan.
 
 
+</statblock>
 
 

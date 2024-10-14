@@ -23,6 +23,7 @@ The "Hideous Feast" special action allows the Bloated Ghoul to consume a corpse 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bloated Ghoul
 
 *Medium* *Undead* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Hideous Feast:** The bloated ghoul feeds on a corpse within 5 feet of it that is less than 1 week old. It regains 1d8 hit points per size category of the creature it consumes. For example, the ghoul regains 1d8 hit points when consuming a Tiny creature or 4d8 hit points when consuming a Large creature. The bloated ghoul can’t use Hideous Feast on a corpse if it or another bloated ghoul has already used Hideous Feast on the corpse.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ As a reaction, when a creature successfully hits the Wood Herald with a melee at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wood Herald
 
 *Small plant*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 
 - **Brambly Bark.** When a creature the wood herald can see hits it with a melee attack while within 5 feet of it, the herald can extend sharp brambles along its body, dealing 2 (1d4) piercing damage to the attacker.
 
+</statblock>
 
 

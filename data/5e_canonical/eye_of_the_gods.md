@@ -21,6 +21,7 @@ In terms of actions, the Eye can perform a Slam attack with a +6 to hit and a re
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eye of the Gods
 
 *Small* *Celestial* *any alignment (as its creator deity)*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Divine Inspiration (Recharge 5-6):** The eye of the gods inspires all allies within 10 feet. For 1 minute, all inspired creatures have advantage on saving throws against being frightened.
 
 
+</statblock>
 
 

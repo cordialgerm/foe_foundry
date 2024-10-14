@@ -37,6 +37,7 @@ Overall, the Slithy Tove utilizes its Dexterity and unique abilities to create d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Slithy Tove
 
 *Small* *Monstrosity* *unaligned*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Hidden Step:** Magically teleports along with any equipment it is wearing or carrying up to 30' to an unoccupied space it can see and takes the Hide action.
 
 
+</statblock>
 
 

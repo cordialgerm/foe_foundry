@@ -35,6 +35,7 @@ Overall, the Thug is designed to be a straightforward fighter that can benefit g
 
 Source: 5e_srd
 
+<statblock>
 ### Thug
 
 *Medium humanoid (any race), any non-good alignment*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Heavy Crossbow***. *Ranged Weapon Attack:* +2 to hit, range 100/400 ft., one target. *Hit:* 5 (1d10) piercing damage.
 
-**Thugs** are ruthless enforcers skilled at intimidation and violence. They work for money and have few scruples.
+**Thugs** are ruthless enforcers skilled at intimidation and violence. They work for money and have few scruples.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thug
 
 *Medium* *Humanoid*
@@ -100,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Heavy Crossbow:** Ranged Weapon Attack: +4 to hit, range 100/400 feet  one target. Hit: 7 (1d10 + 2) piercing damage.
 
 
+</statblock>
 
 
 
@@ -108,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thug
 
 *Medium humanoid (any lineage)*
@@ -141,5 +146,6 @@ Source: 5e_artisinal_monsters
 
 - **Sucker Punch.** The thug employs unscrupulous tactics to hit its opponent in a vulnerable spot. One creature the thug can see within 5 feet of it must make a DC 12 DEX save. On a failure, the target takes 2 (1d4) bludgeoning damage.
 
+</statblock>
 
 

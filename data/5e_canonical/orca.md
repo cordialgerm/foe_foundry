@@ -23,6 +23,7 @@ Overall, the orca's unique abilities and physical prowess make it a dangerous cr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Orca
 
 *Huge beast*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 
 - **Tail Slap.** The orca slaps one creature it can see within 15 feet of it with its tail. The target must succeed on a DC 14 STR save or be pushed up to 15 feet away from the orca and knocked prone. A creature that fails this save by 5 or more is also stunned until the end of its next turn.
 
+</statblock>
 
 

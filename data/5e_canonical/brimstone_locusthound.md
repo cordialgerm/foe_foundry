@@ -21,6 +21,7 @@ Overall, the Brimstone Locusthound is an ambush predator that thrives in chaotic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brimstone Locusthound
 
 *Medium* *Monstrosity* *neutral*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Sticky Spittle:** Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 9 (2d6 + 2) acid damage, and the target must succeed on a DC 13 Dexterity saving throw or be restrained until the end of its next turn.
 
 
+</statblock>
 
 

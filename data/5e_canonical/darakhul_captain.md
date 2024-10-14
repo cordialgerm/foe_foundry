@@ -23,6 +23,7 @@ The Captain can unleash a powerful ability known as Imperial Conscription, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Darakhul Captain
 
 *Medium* *Undead* *lawful evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Leadership (Recharges after a Short or Long Rest):** For 1 minute, the darakhul captain can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the captain. A creature can benefit from only one Leadership die at a time. This effect ends if the captain is incapacitated.
 
 
+</statblock>
 
 

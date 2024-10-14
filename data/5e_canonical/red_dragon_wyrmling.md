@@ -54,6 +54,7 @@ Overall, the Red Dragon Wyrmling is a well-rounded and dangerous foe, effectivel
 
 Source: 5e_srd
 
+<statblock>
 # Red Dragon Wyrmling (Chromatic)
 
 *Medium dragon, chaotic evil*
@@ -85,6 +86,7 @@ Source: 5e_srd
 ***Bite***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (1d10+4) piercing damage plus 3 (1d6) fire damage.
 
 ***Fire Breath (Recharge 5-6)***. The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 
 
@@ -93,6 +95,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Red Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -122,6 +125,7 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 5-6):** The dragon exhales a blast of fire in a 15-foot cone. Each creature in that area makes a DC 15 Dexterity saving throw  taking 24 (7d6) fire damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -130,6 +134,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Red Dragon Wyrmling
 
 *Medium dragon*
@@ -160,5 +165,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage.
 - **Fire Breath (Recharge 5–6).** The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 DEX save, taking 28 (8d6) fire damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ As a bonus action, the Juniper Sheriff can utilize Hop Away to take the Dash or 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Juniper Sheriff
 
 *Small* *Fey* *lawful neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Hop Away:** Takes the Dash or Disengage action.
 
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ The jackal can use a melee attack called Bite, which has a +3 to hit (good) and 
 
 Source: 5e_srd
 
+<statblock>
 ### Jackal
 
 *Small beast, unaligned*
@@ -61,7 +62,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +1 to hit, reach 5 ft., one target. *Hit:* 1 (1d4-1) piercing damage.
+***Bite***. *Melee Weapon Attack:* +1 to hit, reach 5 ft., one target. *Hit:* 1 (1d4-1) piercing damage.</statblock>
+
 
 
 
@@ -69,6 +71,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jackal
 
 *Small* *Beast*
@@ -96,6 +99,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage.
 
 
+</statblock>
 
 
 
@@ -104,6 +108,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jackal
 
 *Small beast*
@@ -132,5 +137,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite.** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 10 CON save or contract shriveling fever disease, named for the way the disease causes an infected creature’s muscles to shrivel. Until the disease is cured, the creature is poisoned, and at the end of each long rest, the infected creature must succeed on a DC 10 CON save or its STR score is reduced by 1d4. This reduction lasts until the creature finishes a long rest after the disease is cured. If the disease reduces the creature’s STR to 0, the creature dies. A creature that succeeds on two saves recovers from the disease.
 
+</statblock>
 
 

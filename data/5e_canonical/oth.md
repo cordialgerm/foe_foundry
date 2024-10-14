@@ -19,6 +19,7 @@ In combat, Oth employs its multiattack ability to deliver a combination of attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Oth
 
 *Large* *Aberration* *lawful neutral*
@@ -58,5 +59,6 @@ Cantrip (at will): fire bolt (2d10), light, thaumaturgy _
 - **Spray (Recharge 6):** The oth sprays acid in a 30-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw, taking 22 (5d8) acid damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

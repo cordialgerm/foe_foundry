@@ -37,6 +37,7 @@ The Naga also possesses a unique bonus action called Protector's Step, enabling 
 
 Source: 5e_srd
 
+<statblock>
 ### Guardian Naga
 
 *Large monstrosity, lawful good*
@@ -81,7 +82,8 @@ Cantrips (at will): *mending*, *sacred flame*, *thaumaturgy*
 
 ***Bite***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one creature. *Hit:* 8 (1d8+4) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.
 
-***Spit Poison***. *Ranged Weapon Attack:* +8 to hit, range 15/30 ft., one creature. *Hit:* The target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.
+***Spit Poison***. *Ranged Weapon Attack:* +8 to hit, range 15/30 ft., one creature. *Hit:* The target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -89,6 +91,7 @@ Cantrips (at will): *mending*, *sacred flame*, *thaumaturgy*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Guardian Naga
 
 *Large* *Monstrosity*
@@ -144,6 +147,7 @@ Source: 5e_artisinal_monsters
 - **Shapeshift:** The naga changes its form to that of a specific Medium humanoid, a Medium snake-human hybrid with the lower body of a snake, or its true form, which is a Large snake. While shapeshifted, its statistics are unchanged except for its size. It reverts to its true form if it dies.
 
 
+</statblock>
 
 
 
@@ -152,6 +156,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Guardian Naga
 
 *Large monstrosity*
@@ -193,5 +198,6 @@ Source: 5e_artisinal_monsters
 
 - **Protector’s Step.** The naga magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space within the sacred site or temple it protects or within 30 feet of the exterior of such a site. Swirls of golden light or tendrils of inky shadow (the naga’s choice) appear at the origin and destination when it uses this bonus action.
 
+</statblock>
 
 

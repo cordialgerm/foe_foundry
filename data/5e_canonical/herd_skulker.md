@@ -21,6 +21,7 @@ The Herd Skulker can also use the "Change Shape" ability as a bonus action, allo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Herd Skulker
 
 *Medium* *Monstrosity* *neutral evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** Takes the Disengage or Hide action.
 
 
+</statblock>
 
 

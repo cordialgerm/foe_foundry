@@ -25,6 +25,7 @@ In its combat capabilities, the Ghul can make use of a "Multiattack" action to m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghul
 
 *Medium* *Undead* *any evil alignment*
@@ -62,5 +63,6 @@ At will: chill touch, fire bolt, ray of frost, shocking grasp
 - **Claws:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

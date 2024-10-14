@@ -33,6 +33,7 @@ As a reaction, the Myrmidon has the ability called **Allied Parry**, which allow
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rakshasa, Myrmidon
 
 *Medium* *Fiend* *lawful evil*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Allied Parry:** When a creature myrmidon can see attacks creature within 5 ft. of it myrmidon can impose disadvantage on attack roll. To do so myrmidon must be wielding a shield.
 
 
+</statblock>
 
 

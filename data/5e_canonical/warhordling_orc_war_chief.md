@@ -21,6 +21,7 @@ For bonus actions, the War Chief has the **Aggressive Charge**, which enables it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Warhordling Orc War Chief
 
 *Medium* *Humanoid*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Whirling Axe:** The war chief attacks with their greataxe.
 
 
+</statblock>
 
 

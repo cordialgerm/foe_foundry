@@ -21,6 +21,7 @@ As a bonus action, the Birgemon Seal can execute an "Ice Slide," allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Birgemon Seal
 
 *Medium* *Aberration* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Ice Slide:** If the birgemon seal moves at least 10 ft. in a straight line while on snow or ice during its turn it can slide up to 40 feet.
 
 
+</statblock>
 
 

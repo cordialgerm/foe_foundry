@@ -23,6 +23,7 @@ As a bonus action, the Soldier Squad can execute "Tactical Movement," which decr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Soldier Squad
 
 *Large* *Humanoid*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Tactical Movement:** Until the end of the squads turn, their Speed is halved and their movement doesn't provoke opportunity attacks.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Its most intimidating ability, Patron’s Might (recharge 5–6), allows the Fex
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fext
 
 *Medium* *Undead* *Any Alignment*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Eldritch Blade:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage plus 9 (2d8) force damage.
 - **Eldritch Fury:** Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 17 (3d8 + 4) force damage.
 - **Patron’s Might (Recharge 5–6):** The fext channels its patron’s awe-inspiring presence, terrifying those nearby. Each creature within 10 feet of the fext must make a DC 15 Wisdom saving throw. On a failure, a creature takes 35 (10d6) psychic damage and is frightened for 1 minute. On a success, a creature takes half the damage and isn’t frightened. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

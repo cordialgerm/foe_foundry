@@ -27,6 +27,7 @@ Additionally, the Umbral Vampire can use the bonus action Shadow Stealth while i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Umbral Vampire
 
 *Medium* *Undead* *Chaotic Evil*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Stealth:** While in dim light or darkness, the umbral vampire takes the Hide action.
+</statblock>
 
 

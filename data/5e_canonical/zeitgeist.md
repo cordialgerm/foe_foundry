@@ -25,6 +25,7 @@ Finally, the Rewind reaction allows the Zeitgeist to negate damage it has taken 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zeitgeist
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Rewind (Recharge 4-6):** When the zeitgeist takes damage or when it starts its turn afflicted with a condition, it can rewind time around it, preventing the damage or undoing the condition. It can use this reaction even while paralyzed or stunned.
 
 
+</statblock>
 
 

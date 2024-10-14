@@ -29,6 +29,7 @@ In summary, the Yann-An-Oed is a strong aquatic opponent adept at stealth and gr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yann-An-Oed
 
 *Huge* *Aberration* *neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Hoot (Recharges after a Short or Long Rest):** The yann-an-oed emits an owl-like hoot from a blowhole near the top of its head. Each creature within 120 feet that is able to hear the sound must succeed on a DC 12 Wisdom saving throw or return the hooting sound, if it can make noise. The yann-an-oed is able to unerringly track a creature that responds to its call for 1 hour, even if the creature is hidden by magic or on another plane of existence.
 
 
+</statblock>
 
 

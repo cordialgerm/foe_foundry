@@ -31,6 +31,7 @@ The Bleakheart thrives in environments where shadows loom and is a true embodime
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bleakheart
 
 *Medium* *Undead* *neutral evil*
@@ -67,5 +68,6 @@ At will: detect thoughts, minor illusion
 - **Steal Joy (Recharge 5-6):** Each creature of the bleakheart’s choice that is within 20 feet of the bleakheart and aware of it must succeed on a DC 13 Wisdom saving throw or its Charisma score is reduced by 1d4. A creature that has taken psychic damage from the bleakheart’s Disheartening Touch within the last minute has disadvantage on this saving throw. A creature that has its Charisma reduced to 0 ends its life at the earliest opportunity, and a new bleakheart rises from its corpse 1d4 hours later. Otherwise, the Charisma reduction lasts until the target finishes a long rest.
 
 
+</statblock>
 
 

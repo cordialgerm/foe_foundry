@@ -29,6 +29,7 @@ The Bone Lord has access to legendary actions that allow it to repeat its comman
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Lord
 
 *Huge* *Undead* *neutral evil*
@@ -81,5 +82,6 @@ Source: 5e_artisinal_monsters
 - **Sovereign’s Reprisal:** Commands one friendly Undead within 30' to attack. Target can make one weapon attack as reaction.
 - **Call Servants (2):** Uses Servants of Death.
 - **Fling (2):** Uses Fling.
+</statblock>
 
 

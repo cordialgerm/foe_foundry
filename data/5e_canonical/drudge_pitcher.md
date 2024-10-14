@@ -31,6 +31,7 @@ Upon the Drudge Pitcher's death, any creature trapped within is no longer restra
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drudge Pitcher
 
 *Huge* *Plant* *unaligned*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Pitcher Swallow:** Melee Weapon Attack: +9 to hit, 15 ft., one target, 12 (2d6+5) bludgeoning damage + 7 (2d6) necrotic. If target is a Large or smaller creature scooped up into the pitcher (DC 16 Dex negates). A creature scooped up into a pitcher is blinded and restrained has total cover vs. attacks and other effects outside pitcher and takes 10 (3d6) necrotic at start of each of pitcher’s turns. Pitcher has 4 pitchers each of which can have only one creature at a time. If pitcher takes 30+ damage on a single turn from a creature inside one of its pitchers pitcher must make DC 14 Con save at end of that turn or spill that creature out of the pitcher. Creature falls prone in a space within 5 ft. of pitcher. If pitcher dies a creature in a pitcher is no longer restrained by it and can escape using 15 ft. of movement.
 
 
+</statblock>
 
 

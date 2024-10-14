@@ -35,6 +35,7 @@ Furthermore, the dragon has Spellcasting abilities, with a spellcasting DC of 14
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Prismatic Young
 
 *Large* *Dragon* *neutral*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Int (DC 14) no material components: At will: dancing lights3/day ea: charm person color spray1/day: prismatic spray
 
 
+</statblock>
 
 

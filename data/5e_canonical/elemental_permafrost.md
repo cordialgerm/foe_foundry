@@ -21,6 +21,7 @@ In combat, the Permafrost Elemental can perform a Multiattack, using two Slam at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elemental, Permafrost
 
 *Large* *Elemental* *neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Plague-Ridden Pound (Recharge 5–6):** Brings both of its fists down striking ground and sending ice shards from its body flying at nearby creatures. Each creature on the ground within 20' of it: 10 (3d6) bludgeoning damage and 10 (3d6) cold knocked prone and becomes infected with primordial plague (see Plague Bearer; DC 14 Dex half damage and not prone or infected).
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ Finally, it has a unique Bonus Action called Ghostwalk, allowing the Ghostwalk S
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghostwalk Spider
 
 *Large* *Monstrosity* *Neutral Evil*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Ghostwalk:** The ghostwalk spider magically takes on a ghostly form or returns to its true, tangible form. Its statistics are the same in each form. Any equipment it is wearing or carrying becomes ghostly with it. It reverts to its true form if it dies.
+</statblock>
 
 

@@ -19,6 +19,7 @@ In terms of actions, the Giant Sloth can perform a multiattack, making two separ
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Sloth
 
 *Large* *Beast* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Sloth's Embrace:** The giant sloth crushes a creature it is grappling by pulling the creature against its fetid, furry chest. The target must make a DC 15 Strength saving throw, taking 27 (6d8) bludgeoning damage on a failed save, or half as much damage on a successful one. A creature that fails the save is also stunned until the end of its next turn.
 
 
+</statblock>
 
 

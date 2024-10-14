@@ -23,6 +23,7 @@ Regarding actions, the Black Bear has a Multiattack feature that allows it to ma
 
 Source: 5e_srd
 
+<statblock>
 ### Black Bear
 
 *Medium beast, unaligned*
@@ -53,7 +54,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Claws.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) slashing damage.
+***Claws.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) slashing damage.</statblock>
+
 
 
 
@@ -61,6 +63,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Bear
 
 *Medium* *Beast*
@@ -90,5 +93,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) slashing damage.
 
 
+</statblock>
 
 

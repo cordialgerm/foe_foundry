@@ -21,6 +21,7 @@ The Wallflower can also execute a bonus action using its beak. This melee weapon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wallflower
 
 *Medium* *Plant*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature grappled by the grick. Hit: 9 (2d6 + 2) piercing damage.
 
 
+</statblock>
 
 

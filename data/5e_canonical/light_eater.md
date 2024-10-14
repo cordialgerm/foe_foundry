@@ -26,6 +26,7 @@ Overall, the Light Eater is a crafty foe that uses its abilities to control the 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Light Eater
 
 *Small* *Aberration* *unaligned*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Emergency Flare (Recharges: Short/Long Rest):** When it takes damage can emit brilliant flash of light. Each creature within 30': blinded 1 min (DC 12 Con negates). Blinded creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ In terms of its offensive capabilities, the Mari Lwyd can perform a multiattack,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mari Lwyd
 
 *Large* *Undead* *neutral*
@@ -58,5 +59,6 @@ At will: chill touch, mage hand
 - **Hooves:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 10 (2d6 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

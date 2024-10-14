@@ -25,6 +25,7 @@ In combat, the Pattern Dancer can utilize its Shortsword with a +5 to hit for 6 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pattern Dancer
 
 *Medium* *Humanoid* *chaotic evil*
@@ -66,5 +67,6 @@ At will: hold person
 - **Longbow:** Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
 
 
+</statblock>
 
 

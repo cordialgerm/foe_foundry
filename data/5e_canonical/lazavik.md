@@ -19,6 +19,7 @@ In terms of actions, Lazavik can use its Reed Whip melee weapon attack with a +6
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lazavik
 
 *Tiny* *Fey* *neutral good*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Eye Flare (Recharge 5-6):** The lazavik’s eye flares with blinding light in a 15-foot cone. Each creature in the area much make a DC 13 Dexterity saving throw. On a failure, a creature takes 10 (3d6) radiant damage and is blinded for 1 minute. On a success, a creature takes half the damage and isn’t blinded. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ Dubius also features reactions, including Hesitation and Self-Pity. With Hesitat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dubius
 
 *Small* *Fiend* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Self-Pity:** If a creature dubius can see within 30' of it regains hp dubius regains hp equal to half that amount.
 
 
+</statblock>
 
 

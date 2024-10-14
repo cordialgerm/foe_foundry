@@ -23,6 +23,7 @@ Overall, the Witchalder is a dangerous enemy well-equipped for ambush tactics an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Witchalder
 
 *Medium* *Plant* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Pollen Cloud (Recharge 6):** Each creature within 15 ft. of witchalder: 22 (5d8) poison and incapacitated for 1 min (DC 15 Con half damage and isn’t incapacitated). Incapacitated creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

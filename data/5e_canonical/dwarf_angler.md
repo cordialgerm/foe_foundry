@@ -23,6 +23,7 @@ The Blazing Beacon ability allows the angler to summon a burst of bright light, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dwarf, Angler
 
 *Medium* *Humanoid* *neutral evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Blazing Beacon:** Summons a bright burst of light from its lure. Each creature that isn’t an angler dwarf within 20' of the angler: 9 (2d8) radiant and is blinded until end of its next turn (DC 14 Dex half damage not blinded).
 
 
+</statblock>
 
 

@@ -27,6 +27,7 @@ In summary, the Stargazer is a strong contender in combat with significant hit p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stargazer
 
 *Huge* *Monstrosity* *unaligned*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Wing Trap Snap:** When 1+ creatures step onto a space on ground within 10 ft. directly above a hidden stargazer stargazer can burrow up to 10 ft. and snap its wing-like appendages shut emerging on the ground in space directly above where it was buried and that contains one or more other creatures. Each creature must make DC 16 Dex save or be trapped as if it failed save vs. Wing Trap.
 
 
+</statblock>
 
 

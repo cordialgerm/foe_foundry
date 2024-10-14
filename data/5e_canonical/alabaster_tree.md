@@ -35,6 +35,7 @@ Overall, the Alabaster Tree stands as a powerful protector with unique abilities
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alabaster Tree
 
 *Huge* *Celestial* *neutral good*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Cloud of Needles (Recharge 5-6, Pine Only):** The alabaster tree fires a cloud of sharp needles at all creatures within 30 feet of it. Each creature in that area must make a DC 15 Dexterity saving throw, taking 18 (4d8) piercing damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

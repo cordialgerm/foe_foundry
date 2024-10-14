@@ -21,6 +21,7 @@ Another fear-inducing ability is Create Wraith, allowing the Wraith Lord to crea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wraith Lord
 
 *Medium* *Undead*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Corporeal Form (1/Day):** The wraith lord takes on a material form. In material form  it loses its incorporeal trait  its fly speed  and its immunity to the grappled  prone  and restrained conditions. The wraith instantly reverts to its incorporeal form if it is bloodied  and it can do so voluntarily at any time as an action.
 
 
+</statblock>
 
 

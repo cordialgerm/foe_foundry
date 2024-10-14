@@ -25,6 +25,7 @@ Additionally, the Arcane Scavenger can cast spells without requiring material co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arcane Scavenger
 
 *Large* *Construct* *neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Int (DC 15) no material components: At will: detect magic locate object3/day ea: counterspell dispel magic
 
 
+</statblock>
 
 

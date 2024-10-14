@@ -53,6 +53,7 @@ Overall, the Acolyte plays an essential role in enhancing the performance and su
 
 Source: 5e_srd
 
+<statblock>
 ### Acolyte
 
 *Medium humanoid (any race), any alignment*
@@ -84,7 +85,8 @@ Cantrips (at will): *light*, *sacred flame*, *thaumaturgy*
 
 ***Club***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) bludgeoning damage.
 
-**Acolytes** are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.
+**Acolytes** are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.</statblock>
+
 
 
 
@@ -92,6 +94,7 @@ Cantrips (at will): *light*, *sacred flame*, *thaumaturgy*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Acolyte
 
 *Medium* *Humanoid*
@@ -130,6 +133,7 @@ Source: 5e_artisinal_monsters
 - **An acolyte is a priest in training or an assistant to a more senior member of the clergy:** While acolytes may be found acting as servants or messengers in major temples  an acolyte may also be the only representative of their faith serving a village or roadside shrine.
 
 
+</statblock>
 
 
 
@@ -138,6 +142,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Acolyte
 
 *Medium humanoid (any lineage)*
@@ -169,5 +174,6 @@ Source: 5e_artisinal_monsters
 	- At will: light, thaumaturgy
 	- 3/day each: bless, cure wounds, sanctuary
 
+</statblock>
 
 

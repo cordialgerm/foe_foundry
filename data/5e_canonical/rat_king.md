@@ -27,6 +27,7 @@ Overall, the Rat King is a cunning and resilient threat that leverages stealth, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rat King
 
 *Medium* *Monstrosity* *Chaotic Evil*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Absorption:** When a friendly rat, giant rat, or swarm of rats starts its turn within 5 feet of the rat king, the rat king can absorb it. If the rat king does so, the target dies, and the rat king gains temporary hp equal to the target’s remaining hp.
+</statblock>
 
 

@@ -21,6 +21,7 @@ As a bonus action, the Wood Elf Sharpshooter can use Aimed Strike, which grants 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wood Elf Sharpshooter
 
 *Medium* *Humanoid*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Skirmish Step:** The strider moves up to half their Speed without provoking opportunity attacks.
 
 
+</statblock>
 
 

@@ -19,6 +19,7 @@ The Ankylosaurus has a single action available in combat, which is its tail atta
 
 Source: 5e_srd
 
+<statblock>
 ## Ankylosaurus
 
 _Huge Beast, Unaligned_
@@ -45,6 +46,7 @@ _Huge Beast, Unaligned_
 
 **_Tail._** _Melee Weapon Attack:_ +7 to hit, reach 10 ft., one target.
 _Hit:_ 18 (4d6 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.
+</statblock>
 
 
 
@@ -53,6 +55,7 @@ _Hit:_ 18 (4d6 + 4) bludgeoning damage. If the target is a creature, it must suc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ankylosaurus
 
 *Huge* *Beast*
@@ -76,5 +79,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 17 (3d8 + 4) bludgeoning damage. If the target is a Large or smaller creature  it makes a DC 14 Strength saving throw. On a failure  it is knocked prone.
 
 
+</statblock>
 
 

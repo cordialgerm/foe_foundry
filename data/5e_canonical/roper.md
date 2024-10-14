@@ -33,6 +33,7 @@ Overall, the Roper is a patient ambusher with tactics centered around controllin
 
 Source: 5e_srd
 
+<statblock>
 ## Roper
 
 *Large monstrosity, neutral evil*
@@ -69,7 +70,8 @@ Source: 5e_srd
 
 ***Tendril***. *Melee Weapon Attack:* +7 to hit, reach 50 ft., one creature. *Hit:* The target is grappled (escape DC 15). Until the grapple ends, the target is restrained and has disadvantage on Strength checks and Strength saving throws, and the roper can't use the same tendril on another target.
 
-***Reel***. The roper pulls each creature grappled by it up to 25 feet straight toward it.
+***Reel***. The roper pulls each creature grappled by it up to 25 feet straight toward it.</statblock>
+
 
 
 
@@ -77,6 +79,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Roper
 
 *Large* *Monstrosity*
@@ -109,6 +112,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage plus 9 (2d8) acid damage.
 
 
+</statblock>
 
 
 
@@ -117,6 +121,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Roper
 
 *Large monstrosity*
@@ -158,5 +163,6 @@ Source: 5e_artisinal_monsters
 
 - **Snapping Tendril.** When a Grasping Tendril that is grappling a creature is destroyed, the roper can quickly pull the remains of that tendril back to it with a whipping snap. Each creature within 10 feet of the roper must succeed on a DC 15 DEX save or be knocked prone.
 
+</statblock>
 
 

@@ -9,6 +9,7 @@
 
 Source: 5e_srd
 
+<statblock>
 ## Half-Dragon Template
 
 A creature can become a half-dragon. It keeps its statistics, except as follows. To avoid recalculating the creature's challenge rating, apply the template only to a creature that meets the optional prerequisite in the Breath Weapon table below. Otherwise, recalculate the rating after you apply the template.
@@ -76,5 +77,6 @@ _Medium humanoid (human), any alignment_
 **_Heavy Crossbow_**. _Ranged Weapon Attack:_ +3 to hit, range 100/400 ft., one target. _Hit:_ 6 (1d10+1) piercing damage.
 
 **_Fire Breath (Recharge 5-6)_**. The veteran exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

@@ -45,6 +45,7 @@ Additionally, the Earth Elemental can use a bonus action called Earth Tremor (wh
 
 Source: 5e_srd
 
+<statblock>
 ### Earth Elemental
 
 *Large elemental, neutral*
@@ -81,7 +82,8 @@ Source: 5e_srd
 
 ***Multiattack***. The elemental makes two slam attacks.
 
-***Slam***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 14 (2d8+5) bludgeoning damage.
+***Slam***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 14 (2d8+5) bludgeoning damage.</statblock>
+
 
 
 
@@ -89,6 +91,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Earth Elemental
 
 *Large* *Elemental*
@@ -125,6 +128,7 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +7 to hit, range 30/90 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -133,6 +137,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Earth Elemental
 
 *Large elemental*
@@ -170,5 +175,6 @@ Source: 5e_artisinal_monsters
 
 - **Earth Tremor (Recharge 4–6).** The earth elemental causes the ground on a point it can see within 30 feet of it to rumble and shake violently. Each creature within 10 feet of that point must succeed on a DC 16 DEX save or be knocked prone.
 
+</statblock>
 
 

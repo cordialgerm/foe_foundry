@@ -27,6 +27,7 @@ Once per day, the Mountain Dwarf Defender can use "Knightly Inspiration," inspir
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mountain Dwarf Defender
 
 *Medium* *Humanoid*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Knightly Inspiration (1/Day):** The knight inspires creatures of their choice within 30 feet that can hear and understand them. For the next minute  inspired creatures gain an expertise die (1d4) on attack rolls and saving throws. A creature can benefit from only one Knightly Inspiration at a time  and the knight cannot target themselves.
 
 
+</statblock>
 
 

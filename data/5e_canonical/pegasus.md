@@ -36,6 +36,7 @@ Overall, the Pegasus embodies both grace and power, providing valuable support a
 
 Source: 5e_srd
 
+<statblock>
 ## Pegasus
 
 *Large celestial, chaotic good*
@@ -62,7 +63,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage.
+***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage.</statblock>
+
 
 
 
@@ -70,6 +72,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pegasus
 
 *Large* *Celestial*
@@ -99,6 +102,7 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. If the target is a Large or smaller creature and the pegasus moves at least 20 feet toward it before the attack  the target makes a DC 14 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 
 
@@ -107,6 +111,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pegasus
 
 *Large celestial (animal)*
@@ -142,5 +147,6 @@ Source: 5e_artisinal_monsters
 
 - **Catch Rider.** If the pegasus’s rider fails a check or save to remain in the saddle or is subjected to an effect that would dismount it, the pegasus can shift to catch the falling rider, preventing the rider from being dismounted.
 
+</statblock>
 
 

@@ -45,6 +45,7 @@ Overall, the Royal Chimera serves as a versatile and dangerous foe in combat, ch
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chimera, Royal
 
 *Huge* *Monstrosity* *neutral evil*
@@ -90,5 +91,6 @@ Source: 5e_artisinal_monsters
 - **Serpent Strike:** Makes one Serpent Strike attack.
 - **Cast a Spell (2):** Uses Spellcasting.
 - **Roar of the King (2):** Lion head's bellow spurs allies. Each friendly creature including chimera within 30' of it that can hear roar gains 11 (2d10) temp hp and can’t be frightened for 1 min.
+</statblock>
 
 

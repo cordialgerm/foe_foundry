@@ -21,6 +21,7 @@ The dragon can also use its Change Shape ability to polymorph into a humanoid or
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Imperial Dragon
 
 *Gargantuan* *Dragon* *neutral*
@@ -68,5 +69,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a tail attack.
 - **Cast a Spell (Costs 3 Actions):** The dragon casts a spell from its list of innate spells, consuming a use of the spell as normal.
+</statblock>
 
 

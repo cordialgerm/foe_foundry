@@ -23,6 +23,7 @@ For movement, the Hivebound can employ the Swift Flight bonus action to ascend u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hivebound
 
 *Small monstrosity*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 
 - **Swift Flight.** The hivebound flies up to half its speed without provoking opportunity attacks.
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Glacial Crawler is a powerful and resilient creature that brings a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Glacial Crawler
 
 *Huge* *Aberration* *unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Acidic Spray (Recharge 5–6):** Spews superheated digestive juices in a 30' cone. Each creature in that area: 18 (4d8) acid and 18 (4d8) fire and is coated in heated acid (DC 17 Dex half damage and isn’t coated in acid). A creature coated in heated acid takes 4 (1d8) acid and 4 (1d8) fire at start of each of its turns. A creature including coated target can take its action to wash or scrub off the acid ending the effect.
 
 
+</statblock>
 
 

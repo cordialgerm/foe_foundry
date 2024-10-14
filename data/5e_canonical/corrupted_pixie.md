@@ -21,6 +21,7 @@ The Corrupted Pixie also has two notable actions. The "Confusion Touch" ability 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corrupted Pixie
 
 *Tiny* *Fiend* *chaotic evil*
@@ -52,5 +53,6 @@ At will: vicious mockery
 - **Superior Invisibility:** The pixie magically turns invisible until its concentration ends (as if concentrating on a spell). Any equipment the pixie wears or carries is invisible with it.
 
 
+</statblock>
 
 

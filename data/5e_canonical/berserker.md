@@ -43,6 +43,7 @@ In combat, the Berserker utilizes its Multiattack feature to deliver two attacks
 
 Source: 5e_srd
 
+<statblock>
 ### Berserker
 
 *Medium humanoid (any race), any chaotic alignment*
@@ -69,7 +70,8 @@ Source: 5e_srd
 
 ***Greataxe***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 9 (1d12 + 3) slashing damage.
 
-Hailing from uncivilized lands, unpredictable **berserkers** come together in war parties and seek conflict wherever they can find it.
+Hailing from uncivilized lands, unpredictable **berserkers** come together in war parties and seek conflict wherever they can find it.</statblock>
+
 
 
 
@@ -77,6 +79,7 @@ Hailing from uncivilized lands, unpredictable **berserkers** come together in wa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Berserker
 
 *Medium* *Humanoid*
@@ -109,6 +112,7 @@ Source: 5e_artisinal_monsters
 - **Berserkers are lightly-armored and heavily-armed shock troops:** In battle  they tend to prefer charges and heroic single combats over formations and disciplined marches.
 
 
+</statblock>
 
 
 
@@ -117,6 +121,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Berserker
 
 *Medium humanoid (any lineage)*
@@ -146,5 +151,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack** . The berserker makes two Greataxe attacks.
 - **Greataxe** . Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) slashing damage.
 
+</statblock>
 
 

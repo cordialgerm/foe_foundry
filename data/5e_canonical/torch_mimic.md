@@ -23,6 +23,7 @@ For actions, the Torch Mimic can attack with a "Bite," which is a melee weapon a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Torch Mimic
 
 *Tiny* *Monstrosity* *neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Fire Blast:** Ranged Weapon Attack: +4 to hit 20/60' one target 7 (2d4+2) fire.
 
 
+</statblock>
 
 

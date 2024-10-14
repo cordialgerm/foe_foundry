@@ -23,6 +23,7 @@ Overall, the Swarm of Bats is best used as a harassing force, targeting weaker f
 
 Source: 5e_srd
 
+<statblock>
 ### Swarm of Bats
 
 *Medium swarm of Tiny beasts, unaligned*
@@ -55,7 +56,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bites***. *Melee Weapon Attack:* +4 to hit, reach 0 ft., one creature in the swarm's space. *Hit:* 5 (2d4) piercing damage, or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.
+***Bites***. *Melee Weapon Attack:* +4 to hit, reach 0 ft., one creature in the swarm's space. *Hit:* 5 (2d4) piercing damage, or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.</statblock>
+
 
 
 
@@ -63,6 +65,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Bats
 
 *Medium* *Beast*
@@ -94,5 +97,6 @@ Source: 5e_artisinal_monsters
 - **Bites:** Melee Weapon Attack: +4 to hit, reach 0 ft., one target. Hit: 7 (2d6) piercing damage  or 3 (1d6) piercing damage if the swarm is bloodied.
 
 
+</statblock>
 
 

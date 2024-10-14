@@ -25,6 +25,7 @@ As a reaction, the Fragrant One can employ the Interpose Ally ability. When targ
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fragrant One
 
 *Small* *Fey* *chaotic neutral*
@@ -63,5 +64,6 @@ The fragrant one can have no more than six creatures charmed at a time. The frag
 - **Interpose Ally:** When a creature the fragrant one can see targets it with an attack, the fragrant one can force a charmed ally within 5 feet of it to move between it and the attack. The charmed ally becomes the target of the attack instead. If the charmed ally takes damage from this attack, it can immediately repeat the Fragrant Aura’s saving throw, ending the charmed condition on itself on a success.
 
 
+</statblock>
 
 

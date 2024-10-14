@@ -26,6 +26,7 @@ In summary, the Wraith Bear is an imposing undead creature marked by its life-dr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wraith Bear
 
 *Large* *Undead* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Baleful Roar (Recharge 6):** The bear lets out a supernatural roar in a 30-foot cone. Each creature in that area that can hear the bear must make a DC 15 Wisdom saving throw. On a failure, a creature is incapacitated for 1 minute. On a success, a creature is frightened until the end of its next turn. An incapacitated creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

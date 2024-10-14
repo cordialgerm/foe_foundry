@@ -23,6 +23,7 @@ Overall, the Blaspheming Hand serves as a complex enemy that rewards tactical th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blaspheming Hand
 
 *Large* *Fiend* *lawful evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Evil Fingers:** Gestures at one creature it can see within 60' causing one of the following effects:Beckoning Finger Target: DC 14 Str save or be magically pulled up to 30' in a straight line toward hand. If creature is pulled to within 5 ft. of the hand hand can make one Claw attack vs. it as a bonus action.Punishing Finger Target: DC 14 Cha save or take 10 (3d6) fire and be marked for punishment. Until start of hand’s next turn each time punished target makes an attack vs. the hand or its rider target takes 7 (2d6) fire.Repelling Finger Target: DC 14 Str save or take 11 (2d10) force and be pushed up to 10 ft. away from the hand and knocked prone.Unravelling Finger Target: DC 14 Wis save or bear a magical mark. When hand deals damage to marked creature regains hp equal to half damage dealt. Mark lasts until hand dismisses it as a bonus action or it uses Unravelling Finger again.
 
 
+</statblock>
 
 

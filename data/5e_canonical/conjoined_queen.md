@@ -45,6 +45,7 @@ Overall, the Conjoined Queen combines versatile movement, charm abilities, and p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Conjoined Queen
 
 *Large* *Monstrosity* *chaotic neutral*
@@ -87,5 +88,6 @@ Cantrips (at will): acid splash, mage hand, prestidigitation, ray of frost
 - **Queen’s Wrathful Clattering (1/Day):** The conjoined queen clacks her long chitinous legs together, inciting rage in her allies. Each ally within 60 feet of the queen who can hear her has advantage on its next attack roll, and its speed is increased by 10 until the end of its next turn.
 
 
+</statblock>
 
 

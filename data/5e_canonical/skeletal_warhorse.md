@@ -21,6 +21,7 @@ Overall, the Skeletal Warhorse is a powerful undead creature with solid offensiv
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skeletal Warhorse
 
 *Large* *Undead*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage. If the skeleton moves at least 20 feet straight towards the target before the attack  the target makes a DC 14 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 

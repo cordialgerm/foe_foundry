@@ -21,6 +21,7 @@ Finally, the Abyssal Fires ability represents a powerful area effect, summoning 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ouroban
 
 *Medium* *Humanoid* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Abyssal Fires (Recharges after a Short or Long Rest):** The ouroban summons green flames under up to five creatures within 30 feet of it. Each target must succeed on a DC 17 Dexterity saving throw or take 18 (4d8) fire damage and be poisoned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a success.<br><br>The ouroban has advantage on attack rolls and ability checks against a creature poisoned by its Abyssal Fires.
 
 
+</statblock>
 
 

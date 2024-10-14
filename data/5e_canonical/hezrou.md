@@ -53,6 +53,7 @@ Overall, the Hezrou stands as a challenging and capable opponent in combat, comb
 
 Source: 5e_srd
 
+<statblock>
 ### Hezrou (Demon)
 
 *Large fiend (demon), chaotic evil*
@@ -91,7 +92,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 15 (2d10+4) piercing damage.
 
-***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.
+***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.</statblock>
+
 
 
 
@@ -99,6 +101,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hezrou
 
 *Large* *Fiend*
@@ -140,6 +143,7 @@ Source: 5e_artisinal_monsters
 - **Stench (1/Day):** When hit by a melee attack, the hezrou emits a cloud of foul-smelling poison gas in a 20-foot radius. Each creature in the area makes a DC 14 Constitution saving throw. On a failure, a creature is poisoned for 1 minute. A creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success
 
 
+</statblock>
 
 
 
@@ -148,6 +152,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hezrou
 
 *Large fiend (demon)*
@@ -187,5 +192,6 @@ Source: 5e_artisinal_monsters
 
 - **Quick Leap.** The hezrou jumps horizontally up to 20 feet to an unoccupied space it can see without provoking opportunity attacks.
 
+</statblock>
 
 

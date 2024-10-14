@@ -19,6 +19,7 @@ Moreover, the swarm has several relevant special abilities. Its Incorporeal Move
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Wolf Spirits
 
 *Large* *Swarm* *Undead* *Neutral Evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The swarm of wolf spirits makes two Spectral Bites attacks.
 - **Spectral Bites:** Melee Weapon Attack: +7 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 14 (4d6) cold damage plus 9 (2d8) necrotic damage, or 7 (2d6) cold damage plus 4 (1d8) necrotic damage if the swarm has half of its hp or fewer.
 - **Chilling Howl (Recharge 5–6):** The swarm of wolf spirits howls, causing cold fear to course through those that hear it. Each creature within 15 feet that can hear the howl must make a DC 15 Constitution saving throw. On a failure, a creature takes 35 (10d6) cold damage and is frightened for 1 minute. On a success, a creature takes half the damage and isn’t frightened. A creature that fails the saving throw by 5 or more also suffers one level of exhaustion. A frightened creature can make a DC 15 Wisdom saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

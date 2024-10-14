@@ -29,6 +29,7 @@ In summary, the Crimson Shambler serves as a devious adversary in lower-level en
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crimson Shambler
 
 *Medium* *Plant* *unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Slime Glob:** Ranged Weapon Attack: +2 to hit, range 20/60 ft., one target. Hit: 3 (1d6) acid damage and the target must succeed on a DC 12 Constitution saving throw or become infected with the shambler’s spores (see the Spores trait).
 
 
+</statblock>
 
 

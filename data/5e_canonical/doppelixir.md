@@ -46,6 +46,7 @@ Overall, the Doppelixir offers a mix of mobility, deception, and damage potentia
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Doppelixir
 
 *Tiny* *Ooze* *unaligned*
@@ -83,5 +84,6 @@ Source: 5e_artisinal_monsters
 - **Imitative Liquid:** Imitates one common or uncommon potion oil or other alchemical substance until it uses this bonus action again to end it or to imitate a different liquid. If it takes no acid fire or poison on the round it is slain creature can collect its remains which can be used as the liquid it was imitating as died.
 
 
+</statblock>
 
 

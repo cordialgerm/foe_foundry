@@ -19,6 +19,7 @@ In terms of actions, the Fell Nightmare can execute a Hooves attack, making a me
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fell Nightmare
 
 *Large* *Fiend*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Ethereal Shift (Recharge 5-6):** The nightmare and a rider magically pass from the Ethereal Plane to the Material Plane or vice versa.
 
 
+</statblock>
 
 

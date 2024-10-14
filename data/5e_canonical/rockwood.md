@@ -23,6 +23,7 @@ The Rockwood, with its mix of physical might, terrain manipulation, and strong d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rockwood
 
 *Huge* *Elemental* *chaotic neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Fossil Barrage (Recharge 6):** Stone shards in 30' cone. Each creature in area: 28 (8d6) piercing damage (DC 15 Dex half).
 
 
+</statblock>
 
 

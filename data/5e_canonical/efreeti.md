@@ -34,6 +34,7 @@ As a bonus action, the Efreeti can create a blazing palisade, a wall of fire tha
 
 Source: 5e_srd
 
+<statblock>
 ### Efreeti (Genie)
 
 *Large elemental, lawful evil*
@@ -74,7 +75,8 @@ At will: *detect magic*
 
 ***Scimitar***. *Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 13 (2d6+6) slashing damage plus 7 (2d6) fire damage.
 
-***Hurl Flame***. *Ranged Spell Attack:* +7 to hit, range 120 ft., one target. *Hit:* 17 (5d6) fire damage.
+***Hurl Flame***. *Ranged Spell Attack:* +7 to hit, range 120 ft., one target. *Hit:* 17 (5d6) fire damage.</statblock>
+
 
 
 
@@ -82,6 +84,7 @@ At will: *detect magic*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Efreeti
 
 *Large* *Elemental*
@@ -118,6 +121,7 @@ Source: 5e_artisinal_monsters
 - **Fiery Wall (1/Day):** An opaque wall of magical flame rises from the ground within 60 feet. The wall is 6 inches thick and can be up to 20 feet high and 30 feet long. Each creature within the wall when it appears makes a DC 15 Dexterity saving throw, taking 18 (4d8) fire damage on a failed save or half damage on a success. A creature also takes 18 (4d8) fire damage when it enters the wall for the first time on a turn or ends its turn there. The wall disappears when the efreet is killed or incapacitated, or when it uses an action to dismiss it.
 
 
+</statblock>
 
 
 
@@ -126,6 +130,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Efreeti
 
 *Large elemental (outsider)*
@@ -162,5 +167,6 @@ Source: 5e_artisinal_monsters
 - **Blazing Palisade.** The efreeti magically creates a translucent wall of fire along a solid surface at a point it can see within 30 feet of it. The wall can be up to 1 foot thick, up to 45 feet long, and up to 5 feet high, and it can be any shape. Each creature in a space where the fire appears must succeed on a DC 15 DEX save or take 7 (2d6) fire damage. A creature that successfully saves can move to the wall’s edge, out of the fire. A creature that enters the wall for the first time on a turn or ends its turn within 5 feet of the wall must succeed on a DC 15 DEX save or take 7 (2d6) fire damage. The efreeti can have only one fire wall active at a time. If it creates another, the previous fire wall disappears.
 - **Genie Shape.** The efreeti magically transforms into a Medium cloud of thick smoke filled with sparks of fire or back into its bipedal form. Its statistics are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its bipedal form if it dies. The efreeti can’t use this bonus action to transform into its bipedal form while inside a Medium or smaller container.
 
+</statblock>
 
 

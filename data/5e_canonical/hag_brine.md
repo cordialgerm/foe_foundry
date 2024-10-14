@@ -25,6 +25,7 @@ The Brine Hag is also capable of spellcasting, with Charisma as its spellcasting
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hag, Brine
 
 *Medium* *Fey* *lawful evil*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 16) no material components: At will: minor illusion  • 3/day ea: charm person major image1/day: control water
 
 
+</statblock>
 
 

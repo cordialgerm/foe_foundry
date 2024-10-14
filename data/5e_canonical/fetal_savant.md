@@ -35,6 +35,7 @@ Finally, the Soul Exchange ability, which has a recharge of 6, enables the savan
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fetal Savant
 
 *Tiny* *Humanoid* *Chaotic Evil*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The fetal savant makes two Psychic Burst attacks.
 - **Psychic Burst:** Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 60 ft., one target. Hit: 14 (2d8 + 5) psychic damage.
 - **Soul Exchange (Recharge 6):** The savant exchanges its soul with one Humanoid it can see within 20 feet of it. Its body becomes paralyzed, the target’s soul inhabits the savant’s paralyzed body, and the savant inhabits the target’s body, taking full control of it. The savant retains its alignment, its Intelligence, Wisdom, and Charisma scores, its Psychic Burst action, and its immunity to being charmed and frightened. It otherwise uses the target’s statistics, but doesn’t gain access to the target’s knowledge, class features, or proficiencies.
+</statblock>
 
 

@@ -19,6 +19,7 @@ As a reaction, the Cactid can unleash a Hail of Needles once per day when its he
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cactid
 
 *Large* *Plant* *Unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Hail of Needles (1/Day):** When reduced to below half its hp maximum, the cactid releases a hail of needles. Each creature within 15 feet of the cactid must make a DC 14 Dexterity saving throw, taking 10 (3d6) piercing damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

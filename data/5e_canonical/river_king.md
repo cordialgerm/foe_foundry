@@ -42,6 +42,7 @@ Overall, the River King is a powerful and versatile creature that excels in both
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # River King
 
 *Medium* *Fey* *Chaotic Neutral*
@@ -89,5 +90,6 @@ The River King can take 3 legendary actions, choosing from the options below. On
 - **Attack:** The River King makes a Longsword or Flood Blast attack.
 - **Flow:** The River King moves up to his walking speed, or swims up to half his swimming speed, without provoking opportunity attacks.
 - **Ripple (Costs 2 Actions):** The River King magically ripples like sunlight on the surface of water. Until the start of his next turn, attack rolls against him have disadvantage.
+</statblock>
 
 

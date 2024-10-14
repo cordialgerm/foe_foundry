@@ -35,6 +35,7 @@ Overall, while the badger may not be a formidable opponent, it features a flavor
 
 Source: 5e_srd
 
+<statblock>
 ### Badger
 
 *Tiny beast, unaligned*
@@ -59,7 +60,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.
+***Bite***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.</statblock>
+
 
 
 
@@ -67,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Badger
 
 *Tiny* *Beast*
@@ -94,6 +97,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage. If this damage would reduce a Small or larger target to 0 hit points  the target takes no damage from this attack.
 
 
+</statblock>
 
 
 
@@ -102,6 +106,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Badger
 
 *Tiny beast*
@@ -130,5 +135,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite.** Melee Weapon Attack: -1 to hit, reach 5 ft., one creature. Hit: 1 (1d4-3) piercing damage.
 
+</statblock>
 
 

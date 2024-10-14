@@ -9,6 +9,7 @@
 
 Source: 5e_srd
 
+<statblock>
 ## Slaad Tadpole
 
 _Tiny Aberration, Chaotic Neutral_
@@ -41,5 +42,6 @@ _Tiny Aberration, Chaotic Neutral_
 
 **Bite.** _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target.
 _Hit:_ 4 (1d4 + 2) piercing damage.
+</statblock>
 
 

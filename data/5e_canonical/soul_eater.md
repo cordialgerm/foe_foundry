@@ -23,6 +23,7 @@ As a reaction to reducing a target to 0 hit points, the Soul Eater can use its S
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Soul Eater
 
 *Medium* *Fiend* *Neutral Evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Soul Drain:** When the soul eater reduces a target to 0 hp, the soul eater consumes that creature’s soul. The victim must succeed on a DC 14 Constitution saving throw or immediately die as the soul eater consumes its soul. A creature killed in this way can be restored to life only by means of a true resurrection or a wish spell. If the soul eater is killed within 120 feet of the body of a soul it consumed and the victim has been dead for no longer than 1 minute, the victim’s soul returns to the body and returns to life, unconscious and stable with 0 hp.
+</statblock>
 
 

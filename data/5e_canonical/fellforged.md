@@ -23,6 +23,7 @@ As a bonus action, the Fellforged can use "Burst Gears," causing the specter to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fellforged
 
 *Medium* *Construct* *Lawful Evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Burst Gears:** The specter within the fellforged strains the construct’s body, sending broken springs and gears flying. Each creature within 5 feet of the fellforged must make a DC 14 Dexterity saving throw, taking 7 (2d6) piercing damage on a failed save, or half as much damage on a successful one. Each time the fellforged uses this bonus action, its speed is reduced by 5 feet, and it can’t use this bonus action if its speed is 0. Its speed returns to normal when it finishes a long rest.
+</statblock>
 
 

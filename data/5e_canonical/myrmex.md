@@ -27,6 +27,7 @@ For bonus actions, the Myrmex can use Earth Manipulation, allowing it to move an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Myrmex
 
 *Medium* *Elemental* *neutral good*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Earth Manipulation:** Can manipulate and move earth within 30' of it that fits within a 5 ft. cube. This manipulation is limited only by its imagination but it often includes creating caricatures of creatures to tell stories of travels or etching symbols to denote dangerous caverns or similar markers for those in the colony. It can also choose to make the ground within 10 ft. of it difficult terrain or to make difficult terrain normal if the ground is earth or stone. Changes caused by Earth Manipulation are permanent.
 
 
+</statblock>
 
 

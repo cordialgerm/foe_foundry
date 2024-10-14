@@ -21,6 +21,7 @@ Finally, the swarm has a special ability called Gather, which can be used once p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greed Swarm
 
 *Medium* *Construct* *unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Gather (1/Day):** The swarm magically gathers up to 100 gp worth of coins, gems, and other small, valuable objects within 60 feet of it, adding them to its mass. It regains 7 (2d6) hit points and has advantage on its next attack roll. A creature wearing or carrying such valuables must succeed on a DC 11 Dexterity saving throw or its valuables fly toward the swarm, joining the mass.
 
 
+</statblock>
 
 

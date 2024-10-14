@@ -23,6 +23,7 @@ The Mudmutt can unleash a powerful special attack called Sonic Croak, which rech
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mudmutt
 
 *Large* *Monstrosity* *unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Sonic Croak (Recharge 5–6):** Unleashes an earpiercing croak in a 30' cone. Each creature in that area: 18 (4d8) thunder and is stunned until the end of its next turn (DC 15 Con half damage and isn’t stunned). Creatures submerged in water have disadvantage on the save and take 27 (6d8) thunder instead of 18 (4d8).
 
 
+</statblock>
 
 

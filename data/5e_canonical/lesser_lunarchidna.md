@@ -19,6 +19,7 @@ In terms of actions, the Lesser Lunarchidna can perform a Multiattack, allowing 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lesser Lunarchidna
 
 *Medium* *Aberration* *neutral evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.
 
 
+</statblock>
 
 

@@ -27,6 +27,7 @@ In terms of actions, the Subek has a Multiattack feature, enabling it to make on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Subek
 
 *Large* *Humanoid* *Lawful Neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The subek makes one Bite attack and two Claw attacks. If both Claw attacks hit one creature, the target must succeed on a DC 15 Strength saving throw or take 7 (2d6) slashing damage as the subek tears into the target.
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.
+</statblock>
 
 

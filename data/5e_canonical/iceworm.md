@@ -21,6 +21,7 @@ In combat, the Iceworm has a melee attack called Icy Bite, which utilizes a +5 t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Iceworm
 
 *Small* *Monstrosity* *unaligned*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Icy Spit:** Ranged Weapon Attack: +5 to hit 20/60' one creature. 10 (2d6+3) cold and target is coated in freezing viscous slime. While coated creature’s speed reduced by 10 ft. and has disadvantage on 1st attack roll it makes on each of its turns. Creature including target can use action to clean off the slime ending effect.
 
 
+</statblock>
 
 

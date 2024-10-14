@@ -40,6 +40,7 @@ Additionally, the Splinter Matron can unleash a powerful area effect called Spli
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Splinter Matron
 
 *Medium* *Fey* *chaotic evil*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Splinter Spray (Recharge 6):** Blasts a spray of splinters in a 15 ft. cone. Each creature in the area: 45 (10d8) piercing damage and is blinded for 1 min (DC 15 Dex half damage and isn’t blinded). A blinded creature can make a DC 15 Con save at end of each of its turns ending effect on itself on a success
 
 
+</statblock>
 
 

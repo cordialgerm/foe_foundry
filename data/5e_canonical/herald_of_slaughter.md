@@ -27,6 +27,7 @@ In battle, the Herald utilizes a Multiattack action, making three attacks: one G
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Herald of Slaughter
 
 *Large* *Fiend* *chaotic evil*
@@ -67,5 +68,6 @@ At will: detect thoughts
 - **Cleaver:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) slashing damage plus 9 (2d8) necrotic damage.
 
 
+</statblock>
 
 

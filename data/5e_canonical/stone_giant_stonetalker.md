@@ -42,6 +42,7 @@ Overall, the Stone Giant Stonetalker is a blend of brute strength, environmental
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stone Giant Stonetalker
 
 *Huge* *Giant*
@@ -85,5 +86,6 @@ Source: 5e_artisinal_monsters
 - **Rock Catching:** If a rock or other Small or larger projectile is hurled or fired at the giant, the giant makes a DC 10 Dexterity saving throw. On a success, the giant catches the projectile, takes no bludgeoning or piercing damage from it, and is not pushed or knocked prone by it.
 
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ As a bonus action, the Phase Spider possesses Ethereal Jaunt, allowing it to mag
 
 Source: 5e_srd
 
+<statblock>
 ### Phase Spider
 
 *Large monstrosity, unaligned*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 7 (1d10+2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
 
-A **phase spider** possesses the magical ability to phase in and out of the Ethereal Plane. It seems to appear out of nowhere and quickly vanishes after attacking. Its movement on the Ethereal Plane before coming back to the Material Plane makes it seem like it can teleport.
+A **phase spider** possesses the magical ability to phase in and out of the Ethereal Plane. It seems to appear out of nowhere and quickly vanishes after attacking. Its movement on the Ethereal Plane before coming back to the Material Plane makes it seem like it can teleport.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ A **phase spider** possesses the magical ability to phase in and out of the Ethe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Phase Spider
 
 *Large* *Monstrosity*
@@ -106,6 +109,7 @@ Source: 5e_artisinal_monsters
 - **Ethereal Jaunt:** The spider magically shifts from the Material Plane to the Ethereal Plane or vice versa.
 
 
+</statblock>
 
 
 
@@ -114,6 +118,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Phase Spider
 
 *Large monstrosity*
@@ -151,5 +156,6 @@ Source: 5e_artisinal_monsters
 
 - **Ethereal Jaunt.** The phase spider magically shifts from the Material Plane to the Ethereal Plane, or vice versa.
 
+</statblock>
 
 

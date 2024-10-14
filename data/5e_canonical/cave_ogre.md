@@ -31,6 +31,7 @@ Finally, the ogre can use the **Javelin** attack, which can be performed as eith
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Ogre
 
 *Large* *Giant*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Javelin:** Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ Additionally, its Float reaction enables the Pixie’s Umbrella to evade danger.
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pixie’s Umbrella
 
 *Small* *Plant* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Float:** When a pixie’s umbrella senses motion within 30 feet of it, it fills its cap with air and flies 20 feet away from the motion without provoking opportunity attacks.
 
 
+</statblock>
 
 

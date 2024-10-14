@@ -38,6 +38,7 @@ For actions available in combat:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ahu-Nixta Cataphract
 
 *Large* *Aberration* *neutral evil*
@@ -78,5 +79,6 @@ At will: fear, fire bolt (2d10), telekinesis
 - **Arcane Cannon:** Ranged Spell Attack: +7 to hit, range 100 ft., one target. Hit: 18 (4d8) force damage, and the target must succeed on a DC 15 Strength saving throw or be knocked prone.
 
 
+</statblock>
 
 

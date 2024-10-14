@@ -27,6 +27,7 @@ Together, these attributes and abilities make the Rock Roach a versatile and pot
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rock Roach
 
 *Medium* *Beast* *unaligned*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) piercing damage.
 
 
+</statblock>
 
 

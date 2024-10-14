@@ -19,6 +19,7 @@ In terms of actions, its main attack is the claw, which is a melee weapon attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Crab
 
 *Small* *Beast* *Unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Claw:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage.
+</statblock>
 
 

@@ -27,6 +27,7 @@ Lastly, the Cambion possesses the Shapeshift ability, allowing it to change its 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cambion
 
 *Medium* *Fiend*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Shapeshift:** The cambion magically changes its form to that of any humanoid creature it has seen before, or back into its true form. While shapeshifted, its statistics are unchanged except that it has no armor or equipment, can't use its black iron blade, and can fly only if it is in a form with wings. It reverts to its true form if it dies.
 
 
+</statblock>
 
 

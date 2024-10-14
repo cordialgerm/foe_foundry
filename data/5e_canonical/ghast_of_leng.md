@@ -25,6 +25,7 @@ Overall, the Ghast of Leng is a menacing presence in the darker corners of a cam
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghast of Leng
 
 *Large* *Aberration* *neutral evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.
 
 
+</statblock>
 
 

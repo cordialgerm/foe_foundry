@@ -21,6 +21,7 @@ In terms of actions, the Jaculus has a Multiattack option, allowing it to perfor
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jaculus
 
 *Small* *Dragon* *Neutral Evil*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The jaculus makes one Bite attack and two Claw attacks.
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.
 - **Claws:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage.
+</statblock>
 
 

@@ -21,6 +21,7 @@ Furthermore, it possesses a formidable area attack known as "Maddening Breath," 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Emerald Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Maddening Breath (Recharge 5-6):** The dragon screams  stripping flesh from bone in a 15-foot cone. Each creature in that area makes a DC 11 Constitution saving throw  taking 16 (3d10) thunder damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

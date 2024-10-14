@@ -21,6 +21,7 @@ Overall, the Lindwurm is a dangerous foe, particularly adept at exploiting its i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lindwurm
 
 *Large* *Dragon* *Neutral Evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or contract a disease and be poisoned until the disease is cured. At the end of each long rest, the diseased creature must repeat the saving throw. On a failure, the creature suffers one level of exhaustion and doesn’t regain expended Hit Dice from the rest. On a success, the creature’s exhaustion level decreases by one, and it regains expended Hit Dice as normal from the rest. If a successful saving throw reduces the diseased creature’s level of exhaustion below 1, the creature recovers from the disease, ending it.
 - **Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.
 - **Constrict:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the lindwurm can’t Constrict another target.
+</statblock>
 
 

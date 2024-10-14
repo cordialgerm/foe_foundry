@@ -21,6 +21,7 @@ In combat, the White Stag can utilize multiattacks, allowing it to perform both 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # White Stag
 
 *Large* *Celestial* *chaotic good*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 10 (2d6 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

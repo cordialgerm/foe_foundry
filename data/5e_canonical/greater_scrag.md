@@ -19,6 +19,7 @@ In combat, the Greater Scrag can perform a Multiattack, enabling it to make thre
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greater Scrag
 
 *Large* *Monstrosity* *chaotic evil*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 12 (3d4 + 5)
 
 
+</statblock>
 
 

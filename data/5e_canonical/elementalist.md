@@ -21,6 +21,7 @@ In terms of actions, the Elementalist employs a Multiattack feature, enabling it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elementalist
 
 *Medium* *Humanoid* *lawful neutral*
@@ -56,5 +57,6 @@ Cave (Earth): The dragonborn has resistance to poison damage. It can cast the bl
 - **Fire Breath (Recharges after a Short or Long Rest):** The dragonborn breathes elemental energy in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 10 (3d6) damage of the elementalist's elemental focus type on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

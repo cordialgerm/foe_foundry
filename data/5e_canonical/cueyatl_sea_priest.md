@@ -21,6 +21,7 @@ For weaponry, the Cueyatl wields a trident with attack modifiers of +2. When use
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cueyatl Sea Priest
 
 *Small* *Humanoid* *lawful evil*
@@ -56,5 +57,6 @@ Cantrips (at will): guidance, poison spray
 - **Trident:** Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage plus 7 (2d6) poison damage, or 4 (1d8) piercing damage plus 7 (2d6) poison damage if used with two hands to make a melee attack.
 
 
+</statblock>
 
 

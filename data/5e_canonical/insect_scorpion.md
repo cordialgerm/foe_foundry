@@ -19,6 +19,7 @@ Overall, the scorpion serves as a minor threat with a few tactical advantages in
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Insect, Scorpion
 
 *Tiny beast*
@@ -46,5 +47,6 @@ Source: 5e_artisinal_monsters
 
 - **Sting.** Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 2 (1d4) piercing damage, and the target must succeed on a DC 10 CON save or take 2 (1d4) poison damage.
 
+</statblock>
 
 

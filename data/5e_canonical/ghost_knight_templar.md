@@ -21,6 +21,7 @@ As a bonus action, the Ghost Knight Templar can summon or dismiss a ghostly moun
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghost Knight Templar
 
 *Medium* *Undead* *lawful evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Ghostly Mount:** Can summon or dismiss a ghostly mount mounting or dismounting it as part of this bonus action with o spending movement. Mount uses the stats of a warhorse skeleton except it has the Incorporeal Movement trait a flying speed of 60 feet 40 hp and resistance to cold and necrotic and B/P/S damage from nonmagical attacks. If mount is slain it disappears leaving behind no physical form and templar must wait 1 hr before summoning it again.
 
 
+</statblock>
 
 

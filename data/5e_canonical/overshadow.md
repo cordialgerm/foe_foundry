@@ -17,6 +17,7 @@ In combat, the Overshadow can make two attacks in a single turn through its Mult
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Overshadow
 
 *Large* *Undead* *chaotic evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bringer of Darkness:** The overshadow dims the light around it. The radius of each light source within 60 feet of it is halved for 1 minute. The overshadow can’t use this action while in sunlight.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ In terms of bonus actions, the Grimalkin has capabilities that further augment i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grimalkin
 
 *Medium* *Monstrosity*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Shapeshift:** The grimalkin changes its form to a Tiny cat or into its true form, which resembles a panther. While shapeshifted, its statistics are unchanged except for its size. It reverts to its true form if it dies.
 
 
+</statblock>
 
 

@@ -19,6 +19,7 @@ In combat, Cyonaxin can utilize its "Multiattack" feature to make one Bite attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cyonaxin
 
 *Medium* *Celestial* *chaotic good*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Free Runner:** Can take the Dash action.
 
 
+</statblock>
 
 

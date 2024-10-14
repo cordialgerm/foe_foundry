@@ -31,6 +31,7 @@ Overall, the Archpriest serves as a formidable enemy or powerful ally, embodying
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archpriest
 
 *Medium* *Humanoid*
@@ -108,5 +109,6 @@ Source: 5e_artisinal_monsters
 - **Archpriests head religious orders and often serve on a monarchs council:** Sometimes an archpriest is the highest-ranking leader in the land, and they are often considered the direct mouthpieces of their gods by those who worship.
 
 
+</statblock>
 
 

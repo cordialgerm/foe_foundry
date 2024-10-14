@@ -21,6 +21,7 @@ When it comes to actions, the Deep One can utilize its Claws as a melee weapon a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deep One
 
 *Medium* *Humanoid* *Chaotic Evil*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Claws:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage.
+</statblock>
 
 

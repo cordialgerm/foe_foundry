@@ -23,6 +23,7 @@ As a reaction, the Ice Golem can choose to Freeze or Liquefy its Ice Cavity, giv
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Golem, Ice
 
 *Large* *Construct* *unaligned*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Freeze or Liquefy Cavity:** Freezes/liquefies its Ice Cavity.
 
 
+</statblock>
 
 

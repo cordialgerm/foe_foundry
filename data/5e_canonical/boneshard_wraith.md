@@ -23,6 +23,7 @@ The Boneshard Cyclone is its most powerful action, which it can use after rechar
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boneshard Wraith
 
 *Medium* *Undead* *neutral evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Boneshard Cyclone (Recharge 5-6):** The wraith chooses a creature it can see within 60 feet of it. The target must make a DC 16 Strength saving throw. On a failure, a creature takes 20 (3d12) slashing damage and 27 (6d8) necrotic damage and is enveloped in a whirlwind of sharp bone fragments for 1 minute or until the wraith dies. On a success, a creature takes half the damage and isn’t enveloped. While enveloped, a creature is blinded and deafened and takes 18 (4d8) necrotic damage at the start of each of its turns. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature dies while enveloped, it rises as a boneshard wraith on the next new moon unless it is restored to life or the bless spell is cast on the remains.
 
 
+</statblock>
 
 

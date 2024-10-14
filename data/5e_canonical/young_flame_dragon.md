@@ -25,6 +25,7 @@ One of its most fearsome abilities is the "Fire Breath," which allows the dragon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Flame Dragon
 
 *Large* *Dragon* *Chaotic Evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 13 (2d10 + 2) piercing damage plus 7 (2d6) fire damage.
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.
 - **Fire Breath (Recharge 5–6):** The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 42 (12d6) fire damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

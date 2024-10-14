@@ -33,6 +33,7 @@ These attacks make the Owlbear recluse both a powerful predator and a fearsome o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Owlbear Recluse
 
 *Large* *Monstrosity*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
 
 
+</statblock>
 
 

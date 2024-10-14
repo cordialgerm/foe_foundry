@@ -23,6 +23,7 @@ Overall, the Snow Ooze is a dangerous opponent particularly well-suited to ambus
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ooze, Snow
 
 *Huge* *Ooze* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Avalanche (Recharge 4–6):** Rumbles forward stirring up snow. Moves up to 30' in straight line and can move through space of any Large or smaller creature. 1st time it enters creature’s space during this move that creature: 10 (3d6) bludgeoning damage and 18 (4d8) cold and buried in slushy snow (DC 15 Dex half damage not buried). Buried creature is restrained and unable to breathe or stand up. A creature including buried creature can use action to free buried creature via DC 15 Str check. A buried creature with swim speed has advantage on this check.
 
 
+</statblock>
 
 

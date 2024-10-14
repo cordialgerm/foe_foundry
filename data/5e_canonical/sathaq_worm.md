@@ -23,6 +23,7 @@ In combat, the Sathaq Worm uses the **Multiattack** action to perform a combinat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sathaq Worm
 
 *Huge* *Elemental* *Neutral Evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 24 (4d8 + 6) piercing damage, and the target is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the sathaq worm can’t Bite another target.
 - **Slam:** Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.
 - **Swallow:** The sathaq worm makes one Bite attack against a Large or smaller creature it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the worm (including the worm’s Agonizing Aura), and takes 10 (3d6) piercing damage and 10 (3d6) acid damage at the start of each of the sathaq worm’s turns. The sathaq worm can have only one creature swallowed at a time.
+</statblock>
 
 

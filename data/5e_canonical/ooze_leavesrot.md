@@ -25,6 +25,7 @@ The Leavesrot can also release spores as a special action, which recharges on a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ooze, Leavesrot
 
 *Large* *Ooze* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Release Spores (Recharge 5–6):** Releases spores from the mold coating its leaves. Each creature within 20' of ooze: 14 (4d6) poison and is choking (DC 13 Con half damage and isn’t choking). A choking creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ In terms of actions, the Mydnari can attack with a shortsword, which has a +5 to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mydnari
 
 *Medium* *Humanoid* *neutral evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Acid Glob:** Ranged Weapon Attack: +5 to hit, range 30/60 ft., one target. Hit: 5 (1d4 + 3) acid damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

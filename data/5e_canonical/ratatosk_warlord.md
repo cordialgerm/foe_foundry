@@ -19,6 +19,7 @@ In combat scenarios, the Ratatosk Warlord can perform a "Multiattack," executing
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ratatosk Warlord
 
 *Small* *Celestial* *chaotic neutral*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Chatter of War (Recharges 5-6):** Each non-ratatosk creature within 30 feet that can hear the warlord must succeed on a DC 15 Charisma saving throw or have disadvantage on all attack rolls until the start of the warlord's next turn.
 
 
+</statblock>
 
 

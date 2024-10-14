@@ -25,6 +25,7 @@ Additionally, the Crystalline Monolith has legendary actions at its disposal, wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crystalline Monolith
 
 *Huge* *Aberration* *lawful neutral*
@@ -70,5 +71,6 @@ The crystalline monolith can take 3 legendary actions, choosing from one of the 
 - **Detect:** The crystalline monolith makes a Wisdom (Perception) check.
 - **Teleport (Costs 2 Actions):** The crystalline monolith magically teleports up to 120 feet to an unoccupied space it can see.
 - **Cast a Spell (Costs 3 Actions):** The crystalline monolith casts a spell from its list of innate spells, expending a daily use as normal.
+</statblock>
 
 

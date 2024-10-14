@@ -34,6 +34,7 @@ For bonus actions, the Life Broker has the Quick-Footed ability, allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Life Broker
 
 *Medium* *Fey* *lawful neutral*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Quick-Footed:** Takes Dash Disengage or Dodge.
 
 
+</statblock>
 
 

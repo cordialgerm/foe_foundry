@@ -19,6 +19,7 @@ When it comes to its actions, the Culicoid can perform a Multiattack, allowing i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Culicoid
 
 *Large* *Fiend* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Proboscis:** Melee Weapon Attack: +9 to hit, reach 5 ft., one creature. Hit: 14 (2d8 + 5) piercing damage plus 7 (2d6) poison damage. The target must succeed on a DC 16 Constitution saving throw or be poisoned for 1 minute. While poisoned, a creature must succeed on a DC 16 Wisdom saving throw at the start of each of its turns or spend its full turn scratching the rash. A poisoned creature can repeat the Constitution saving throw at the end of each of its turns, ending the poisoned condition on itself on a success.
 
 
+</statblock>
 
 

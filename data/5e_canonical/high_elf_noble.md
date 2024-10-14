@@ -29,6 +29,7 @@ Finally, the High Elf Noble has the reaction ability "Parry." This ability allow
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # High Elf Noble
 
 *Medium* *Humanoid*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Parry:** If the noble is wielding a melee weapon and can see their attacker, they add 2 to their AC against one melee attack that would hit them.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ As for actions, the Lemurfolk can perform a melee attack called Slam, which is e
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lemurfolk
 
 *Small* *Humanoid* *Neutral*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 
 - **Slam:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.
 - **Blowgun:** Ranged Weapon Attack: +4 to hit, range 25/100 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.
+</statblock>
 
 

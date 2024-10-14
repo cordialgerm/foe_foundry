@@ -49,6 +49,7 @@ For reactions, the Warlock can use:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: Warlock Of The Genie Lord
 
 *Medium* *Humanoid* *any alignment*
@@ -85,5 +86,6 @@ Source: 5e_artisinal_monsters
 - **Genie Lord’s Favor:** When it takes acid cold fire lightning or thunder warlock has advantage on next Elemental Burst attack it makes before end of its next turn provided Elemental Burst deals same damage as damage warlock took.
 
 
+</statblock>
 
 

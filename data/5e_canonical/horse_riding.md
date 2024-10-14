@@ -19,6 +19,7 @@ In terms of actions, the Riding Horse can perform a melee attack with its Hooves
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horse, Riding
 
 *Large beast*
@@ -46,5 +47,6 @@ Source: 5e_artisinal_monsters
 
 - **Hooves.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.
 
+</statblock>
 
 

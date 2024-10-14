@@ -33,6 +33,7 @@ In terms of actions, the Vorthropod can perform the following:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vorthropod
 
 *Medium* *Monstrosity* *unaligned*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Molten Tail Slap (Recharge 4–6):** Unfurls its tail and slaps it down showering area with searing sparks and superheated rock. Each creature within 15 ft. of it: 28 (8d6) fire (DC 14 Dex half).
 
 
+</statblock>
 
 

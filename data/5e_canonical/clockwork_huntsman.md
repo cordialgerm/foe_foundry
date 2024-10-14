@@ -37,6 +37,7 @@ As a bonus action, the Clockwork Huntsman can use:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Huntsman
 
 *Medium* *Construct* *Unaligned*
@@ -75,5 +76,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Reel:** The clockwork huntsman pulls a creature restrained by its net up to 15 feet straight toward it.
+</statblock>
 
 

@@ -21,6 +21,7 @@ The bull utilizes two primary attacks in combat: Hooves and Gore. The Hooves att
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bull
 
 *Large* *Beast* *unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Gore:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage.
 
 
+</statblock>
 
 

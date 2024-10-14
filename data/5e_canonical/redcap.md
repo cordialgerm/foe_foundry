@@ -23,6 +23,7 @@ Overall, the Redcap is a ruthless foe with a blend of straightforward attacks an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Redcap
 
 *Medium* *Fey* *Neutral Evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Solid Kick:** The redcap kicks a Medium or smaller creature within 5 feet of it. The target must succeed on a DC 15 Strength saving throw or be knocked prone.
+</statblock>
 
 

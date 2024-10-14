@@ -24,6 +24,7 @@ The Bard's spellcasting includes a variety of utility and control spells, employ
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bard
 
 *Medium humanoid (any lineage)*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 	- 3/day each: faerie fire, hold, suggestion
 	- 1/day each: confusion, greater invisibility
 
+</statblock>
 
 

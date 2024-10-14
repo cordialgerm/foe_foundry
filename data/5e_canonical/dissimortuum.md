@@ -21,6 +21,7 @@ In terms of actions during combat, the Dissimortuum can perform a Multiattack, a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dissimortuum
 
 *Medium* *Undead* *Chaotic Evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The dissimortuum makes three Claw attacks. It can replace one Claw attack with a use of Terrifying Mask.
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 15 (3d8 + 2) slashing damage.
 - **Terrifying Mask:** Each non-Undead creature within 60 feet of the dissimortuum that can see it must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A frightened creature can repeat the saving throw, ending the effect on itself on a success. If a target’s saving throw is successful or the effect ends for it, the target becomes immune to the dissimortuum’s Terrifying Mask for the next 24 hours.
+</statblock>
 
 

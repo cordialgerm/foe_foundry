@@ -25,6 +25,7 @@ Finally, as a bonus action, Healing Hands can be activated with a recharge of 5 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: First Servant
 
 *Medium* *Humanoid* *any alignment*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Healing Hands (Recharge 5–6):** Touches a creature within 5 ft. of it: creature regains 14 (4d6) hp.
 
 
+</statblock>
 
 

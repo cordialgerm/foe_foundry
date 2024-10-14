@@ -23,6 +23,7 @@ Its "Horrifying Visage" action forces each non-undead creature within 60 feet th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snow Terror
 
 *Large* *Fiend* *chaotic evil*
@@ -59,5 +60,6 @@ While in the form of the creature it most recently killed, creatures that knew t
 - **Horrifying Visage:** Each non-undead creature within 60 feet of the snow terror that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to this snow terror’s Horrifying Visage for the next 24 hours.
 
 
+</statblock>
 
 

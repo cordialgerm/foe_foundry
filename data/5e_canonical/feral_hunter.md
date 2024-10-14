@@ -38,6 +38,7 @@ Overall, the Feral Hunter is a strategic asset in combat, relying on its speed, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Feral Hunter
 
 *Medium fey*
@@ -76,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Reactions** 
 - **Reposition.** When the feral hunter takes damage, it can move up to 10 feet without provoking opportunity attacks.
 
+</statblock>
 
 

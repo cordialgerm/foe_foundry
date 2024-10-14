@@ -25,6 +25,7 @@ Overall, the Howler of the Hill represents a blend of speed, psychological manip
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Howler Of The Hill
 
 *Large* *Aberration* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Otherworldly Hunter:** Transport itself to a different plane of existence. Works like plane shift except howler can affect only itself and can’t use this to banish unwilling creature to another plane.
 
 
+</statblock>
 
 

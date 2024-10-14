@@ -25,6 +25,7 @@ As a bonus action, they can use their Temporal Strike (recharging on a roll of 5
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Baba Yaga’s Horsemen
 
 *Medium* *Fey* *Lawful Neutral*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Temporal Strike (Recharge 5–6):** One creature the horseman can see and that the horseman hit with a Horseman’s Bolt or Longsword attack within the last minute must succeed on a DC 17 Constitution saving throw or age 16 (3d10) years. A creature that ages this way has disadvantage on attack rolls, ability checks, and saving throws that use Strength, Dexterity, and Constitution until the aging is reversed. A creature that ages beyond its lifespan dies immediately. The aging lasts until the creature finishes a long rest, or until it is reversed by a greater restoration spell or similar magic. On a successful saving throw, the creature is immune to the horseman’s Temporal Strike for 24 hours.
+</statblock>
 
 

@@ -25,6 +25,7 @@ Overall, the Snow Giant is a powerful combatant that thrives in snowy environmen
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snow Giant
 
 *Huge* *Giant* *neutral*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Giant Snowball:** Ranged Weapon Attack: +7 to hit, range 60/240 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage plus 4 (1d8) cold damage, and the target must succeed on a DC 16 Dexterity save or be blinded until the end of its next turn.
 
 
+</statblock>
 
 

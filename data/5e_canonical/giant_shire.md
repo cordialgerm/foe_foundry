@@ -19,6 +19,7 @@ The grab action enables the Giant, Shire to seize a medium or smaller creature w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant, Shire
 
 *Huge* *Giant* *lawful evil*
@@ -46,5 +47,6 @@ Source: 5e_artisinal_monsters
 - **Throw:** Throws a creature it is grappling at a space it can see within 30' of it. The thrown creature takes 14 (4d6) bludgeoning damage and must make DC 15 Dex save or land prone. If the target space is occupied by another creature that creature must make DC 15 Dex save or take 14 (4d6) bludgeoning damage and be knocked prone.
 
 
+</statblock>
 
 

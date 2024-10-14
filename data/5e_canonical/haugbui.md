@@ -45,6 +45,7 @@ Overall, the Haugbui is a strong opponent that combines physical might with impr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Haugbui
 
 *Medium* *Undead* *Lawful Neutral*
@@ -83,5 +84,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Sepulchral Scrying (Recharge 6):** While within 1 mile of its burial mound, the haugbui creates an invisible sensor within 5 miles of the mound for 1 minute. When it uses this bonus action and as a bonus action on each of its turns for the duration, the haugbui can switch between using its own senses and projecting its senses through the sensor. While projecting its senses through the sensor, it can see, hear, telepathically communicate, and cast spells as if it was in the sensor’s space, and it is blinded and deafened with regard to its own senses. The sensor can be dispelled (DC 14).
+</statblock>
 
 

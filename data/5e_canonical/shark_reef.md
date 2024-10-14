@@ -21,6 +21,7 @@ Overall, the Reef Shark is a formidable predator within its watery domain, capab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shark, Reef
 
 *Medium beast*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Stealthy Hunter.** The shark takes the Hide action.
 
+</statblock>
 
 

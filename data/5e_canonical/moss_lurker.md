@@ -19,6 +19,7 @@ In combat, the Moss Lurker can execute two distinct actions. Firstly, it may att
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moss Lurker
 
 *Small* *Humanoid* *Chaotic Neutral*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Poisoned Claw:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage plus 7 (2d6) poison damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned until the end of its next turn.
 - **Throw Stone:** Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage. If the target is at least 10 feet below the moss lurker, such as at the base of a cliff where the moss lurker stands, the target must succeed on a DC 12 Strength saving throw or take 1d4 bludgeoning damage for every 10 feet the rock fell before hitting the target, to a maximum of 10d4.
+</statblock>
 
 

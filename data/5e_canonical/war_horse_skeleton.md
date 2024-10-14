@@ -19,6 +19,7 @@ Overall, the War Horse Skeleton is a resilient undead creature, with a strong me
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # War Horse Skeleton
 
 *Large undead*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 
 - **Counterattack (Recharge 6).** When a creature the war horse skeleton can see hits it with a melee attack while within 5 feet of it, the skeleton can make one Hooves attack against the attacker.
 
+</statblock>
 
 

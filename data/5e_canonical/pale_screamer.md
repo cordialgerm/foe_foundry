@@ -25,6 +25,7 @@ Additionally, the Pale Screamer can unleash its Scream of the Deep ability, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pale Screamer
 
 *Medium* *Aberration* *neutral evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Scream of the Deep (Recharge 6):** The pale screamer unleashes an alien screech in a 30-foot cone. Each creature in that area must make a DC 14 Constitution saving throw. On a failure, a creature takes 10 (3d6) thunder damage and is deafened until the end of its next turn. On a success, a creature takes half the damage and isn’t deafened.
 
 
+</statblock>
 
 

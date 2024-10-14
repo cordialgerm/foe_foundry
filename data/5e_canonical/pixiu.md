@@ -19,6 +19,7 @@ In combat, the Pixiu utilizes a "Multiattack" feature, allowing it to strike thr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pixiu
 
 *Large* *Monstrosity* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) slashing damage.
 
 
+</statblock>
 
 

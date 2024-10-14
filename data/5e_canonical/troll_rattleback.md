@@ -23,6 +23,7 @@ Overall, the Rattleback Troll is a dangerous and resilient creature, capable of 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Troll, Rattleback
 
 *Large* *Giant* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Venom Spray (Recharge 5–6):** Sprays its venom in a 30' cone. Each creature in that area: 28 (8d6) poison and is poisoned for 1 min (DC 15 Con half damage and isn’t poisoned). While poisoned in this way a creature can’t regain hp. A poisoned creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

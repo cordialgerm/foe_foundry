@@ -44,6 +44,7 @@ Overall, the Kraken is a terrifying creature that combines raw power with strate
 
 Source: 5e_srd
 
+<statblock>
 ## Kraken
 
 *Gargantuan monstrosity (titan), chaotic evil*
@@ -98,7 +99,8 @@ The kraken can take 3 legendary actions, choosing from the options below. Only o
 
 **Lightning Storm (Costs 2 Actions)**. The kraken uses Lightning Storm.
 
-**Ink Cloud (Costs 3 Actions)**. While underwater, the kraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the kraken. Each creature other than the kraken that ends its turn there must succeed on a DC 23 Constitution saving throw, taking 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the kraken's next turn.
+**Ink Cloud (Costs 3 Actions)**. While underwater, the kraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the kraken. Each creature other than the kraken that ends its turn there must succeed on a DC 23 Constitution saving throw, taking 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the kraken's next turn.</statblock>
+
 
 
 
@@ -106,6 +108,7 @@ The kraken can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kraken
 
 *Gargantuan* *Monstrosity*
@@ -152,6 +155,7 @@ Source: 5e_artisinal_monsters
 - **Tentacle:** The kraken makes one tentacle attack.
 - **Fling:** The kraken uses Fling.
 - **Squeeze (Costs 2 Actions):** The kraken ends any magical effect that is restraining it or reducing its movement and then swims up to half its swim speed without provoking opportunity attacks. During this movement, it can fit through gaps as narrow as 10 feet wide without squeezing.
+</statblock>
 
 
 
@@ -160,6 +164,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kraken
 
 *Gargantuan monstrosity*
@@ -210,5 +215,6 @@ The kraken can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the kraken dies, these effects fade in  days.
+</statblock>
 
 

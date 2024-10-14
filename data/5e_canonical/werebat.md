@@ -21,6 +21,7 @@ Overall, the Werebat is a cunning and dangerous monster that players must approa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Werebat
 
 *Medium* *Humanoid* *lawful evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Mace (Humanoid Form Only):** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

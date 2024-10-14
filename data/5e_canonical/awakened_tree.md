@@ -37,6 +37,7 @@ Overall, the Awakened Tree combines substantial strength and resilience with a n
 
 Source: 5e_srd
 
+<statblock>
 ### Awakened Tree
 
 *Huge plant, unaligned*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Slam***. *Melee Weapon Attack:* +6 to hit, reach 10 ft., one target. *Hit:* 14 (3d6+4) bludgeoning damage.
 
-An **awakened tree** is an ordinary tree given sentience and mobility by the *awaken* spell or similar magic.
+An **awakened tree** is an ordinary tree given sentience and mobility by the *awaken* spell or similar magic.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ An **awakened tree** is an ordinary tree given sentience and mobility by the *aw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Awakened Tree
 
 *Huge* *Plant*
@@ -104,6 +107,7 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6+4) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -112,6 +116,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Awakened Tree
 
 *Huge plant*
@@ -145,5 +150,6 @@ Source: 5e_artisinal_monsters
 
 - **Entangling Roots.** One creature on the ground the tree can see within 10 feet of it must succeed on a DC 14 STR save or be restrained by roots until the end of its next turn.
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ The Consume Heart ability allows the Yakirian to absorb the heart of a dead huma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yakirian
 
 *Medium* *Humanoid* *lawful neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Consume Heart:** The yakiran consumes the heart of a dead humanoid or giant within 5 feet. If the creature also less than 1 minute ago, the yakirian gains the following benefits: <br>* The yakirian absorbs the dead creature's knowledge and asks two questions. If the dead creature knew the answers in life, the yakirian learns them instantly. <br>* The yakirian's maximum and current hp increase by 10 for 1 hour. <br>* The yakirian has advantage on Strength-based attack rolls and ability checks, as well as on all saving throws for 1 hour.
 
 
+</statblock>
 
 

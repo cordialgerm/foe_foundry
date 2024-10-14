@@ -48,6 +48,7 @@ The Adult Emerald Dragon embodies a blend of physical ferocity and mental manipu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Emerald Dragon
 
 *Huge* *Dragon*
@@ -97,5 +98,6 @@ Source: 5e_artisinal_monsters
 - **Pandorum (Costs 2 Actions):** The dragon psionically targets one creature within 60 feet. The target makes a DC 15 Wisdom saving throw, becoming confused on a failure. While confused in this way, the target regards their allies as traitorous enemies. When rolling to determine its actions, treat a roll of 1 to 4 as a result of 8. The target repeats the saving throw at the end of each of its turns, ending the effect on a success.
 - **Psionic Wave (Costs 2 Actions):** The dragon makes a psionic wave attack.
 - **Maddening Harmonics (1/Day):** Each creature of the dragons choice that can hear within 90 feet makes a DC 15 Wisdom saving throw. On a failure, a creature becomes psionically confused for 1 minute. A creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

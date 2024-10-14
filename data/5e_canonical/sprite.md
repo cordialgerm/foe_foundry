@@ -43,6 +43,7 @@ As a bonus action, the Sprite can use Heart Sight to touch a creature and determ
 
 Source: 5e_srd
 
+<statblock>
 ## Sprite
 
 *Tiny fey, neutral good*
@@ -73,7 +74,8 @@ Source: 5e_srd
 
 ***Heart Sight***. The sprite touches a creature and magically knows the creature's current emotional state. If the target fails a DC 10 Charisma saving throw, the sprite also knows the creature's alignment. Celestials, fiends, and undead automatically fail the saving throw.
 
-***Invisibility***. The sprite magically turns invisible until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the sprite wears or carries is invisible with it.
+***Invisibility***. The sprite magically turns invisible until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the sprite wears or carries is invisible with it.</statblock>
+
 
 
 
@@ -81,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sprite
 
 *Tiny* *Fey*
@@ -115,6 +118,7 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The sprite and any equipment it wears or carries magically turns invisible until the sprite attacks, becomes incapacitated, or uses a bonus action to become visible.
 
 
+</statblock>
 
 
 
@@ -123,6 +127,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sprite
 
 *Tiny fey*
@@ -158,5 +163,6 @@ Source: 5e_artisinal_monsters
 - **Heart Sight.** The sprite touches a creature and magically knows the creature’s current emotional state. If the target fails a DC 13 CHA save, the sprite also knows if the creature has malign intentions or intends to commit malevolent acts within the next hour. Celestials, Fiends, and Undead automatically fail the save.
 - **Swift Flight.** The sprite moves up to half its speed without provoking opportunity attacks.
 
+</statblock>
 
 

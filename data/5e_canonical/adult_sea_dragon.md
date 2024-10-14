@@ -25,6 +25,7 @@ Finally, the Adult Sea Dragon can also perform three legendary actions each roun
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Sea Dragon
 
 *Huge* *Dragon* *Neutral Evil*
@@ -67,5 +68,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a Tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 21 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then move up to half its flying speed, or half its swimming speed if in the water.
+</statblock>
 
 

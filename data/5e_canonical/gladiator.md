@@ -37,6 +37,7 @@ Additionally, the Gladiator possesses a reaction called "Parry," enabling it to 
 
 Source: 5e_srd
 
+<statblock>
 ### Gladiator
 
 *Medium humanoid (any race), any alignment*
@@ -77,7 +78,8 @@ Source: 5e_srd
 
 ***Parry***. The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon.
 
-**Gladiators** battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death.
+**Gladiators** battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death.</statblock>
+
 
 
 
@@ -85,6 +87,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gladiator
 
 *Medium* *Humanoid*
@@ -124,6 +127,7 @@ Source: 5e_artisinal_monsters
 - **Shield Block:** If the gladiator is wielding a shield and can see their attacker, they add 3 to their AC against one melee or ranged attack that would hit them.
 
 
+</statblock>
 
 
 
@@ -132,6 +136,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gladiator
 
 *Medium humanoid (any lineage)*
@@ -169,5 +174,6 @@ Source: 5e_artisinal_monsters
 
 - **Parry.** The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon.
 
+</statblock>
 
 

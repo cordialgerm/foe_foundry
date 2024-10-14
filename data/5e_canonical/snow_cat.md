@@ -29,6 +29,7 @@ Overall, the Snow Cat is an agile and perceptive beast, well-suited to ambushing
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snow Cat
 
 *Medium* *Beast* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) slashing damage.
 
 
+</statblock>
 
 

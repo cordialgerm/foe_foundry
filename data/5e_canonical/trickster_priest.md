@@ -26,6 +26,7 @@ The Trickster Priest's abilities allow for a strategic mixing of offense and sup
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trickster Priest
 
 *Medium* *Humanoid*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Healing Word (1st-Level; V):** The priest or a living creature within 60 feet regains 5 (1d4 + 3) hit points. The priest can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 

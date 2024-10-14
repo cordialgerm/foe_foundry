@@ -25,6 +25,7 @@ Overall, the Corpselight Moth is a dynamic and versatile creature that can pose 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corpselight Moth
 
 *Large* *Beast* *unaligned*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Radiant Wind (Recharge 4–6):** Flaps its wings releasing magical wind in a 30' cone. Each creature in area: 21 (6d6) radiant and is flung up 15 ft. away from moth in a direction following cone and knocked prone (DC 15 Str half damage and isn’t flung or knocked prone). If a thrown target strikes an object such as a wall or floor target takes 3 (1d6) bludgeoning damage per 10 ft. it was thrown. If target is thrown into another creature that creature: DC 15 Dex save or take same damage and knocked prone.
 
 
+</statblock>
 
 

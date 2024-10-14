@@ -21,6 +21,7 @@ In terms of actions, the Ichneumon uses its Multiattack to make a total of three
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ichneumon
 
 *Large* *Monstrosity* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 16 (3d6 + 6) slashing damage.
 
 
+</statblock>
 
 

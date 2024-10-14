@@ -29,6 +29,7 @@ Through its psychological manipulation, potent melee attacks, and interdimension
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dimensional Shambler
 
 *Large* *Aberration* *neutral evil*
@@ -66,5 +67,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Drag Through:** The dimensional shambler shifts through multiple dimensions with a target it is grappling, ending in the same dimension it began. The creature must make a DC 16 Wisdom saving throw, taking 21 (6d6) psychic damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

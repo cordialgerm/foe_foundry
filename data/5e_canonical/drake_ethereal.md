@@ -25,6 +25,7 @@ Overall, the Ethereal Drake's mobility, high damage potential, and ability to ma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drake, Ethereal
 
 *Large* *Dragon* *chaotic neutral*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Ethereal Step:** Magically shifts from Material Plane to Ethereal or vice versa. Drake can bring creatures grappled by it into the Ethereal Plane with it. A creature not native to Ethereal Plane returns to Material Plane in 1d4 rounds if brought to the plane while grappled by drake.
 
 
+</statblock>
 
 

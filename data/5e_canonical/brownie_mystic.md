@@ -21,6 +21,7 @@ Additionally, the Brownie Mystic can turn invisible, remaining undetected until 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brownie Mystic
 
 *Tiny* *Fey* *neutral good*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Wis (DC 13) no material components: At will: mending minor illusion prestidigitation3/day ea: entangle mirror image1/day ea: confusion conjure animals dimension door
 
 
+</statblock>
 
 

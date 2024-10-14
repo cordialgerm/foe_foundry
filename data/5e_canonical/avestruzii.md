@@ -29,6 +29,7 @@ Overall, the Avestruzii is a robust and resilient creature, offering a balanced 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Avestruzii
 
 *Medium* *Humanoid* *any alignment*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Dig In:** Has resistance to one melee weapon attack that would hit it. To do so the avestruzii must see the attacker and must not have moved during its previous turn.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Its primary ranged option is "Frost Bolt," a spell that allows the fraughashar t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fraughashar
 
 *Small* *Fey* *Neutral Evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 - **Dagger:** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 - **Frost Bolt:** Ranged Spell Attack: +4 to hit, range 60 ft., one target. Hit: 7 (2d4 + 2) cold damage.
+</statblock>
 
 

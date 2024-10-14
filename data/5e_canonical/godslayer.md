@@ -27,6 +27,7 @@ Finally, the Godslayer has legendary actions it can use, including marking targe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Godslayer
 
 *Huge* *Construct* *unaligned*
@@ -81,5 +82,6 @@ Source: 5e_artisinal_monsters
 - **Attack:** Makes one Energy Glaive or Rune Discus attack.
 - **Move:** Up to its speed with o provoking opportunity attacks.
 - **Rejuvenating Repair (2):** Regains 65 (10d12) hp.
+</statblock>
 
 

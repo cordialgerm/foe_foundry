@@ -22,6 +22,7 @@ As a bonus action, the Husk Demon can use Soul Feed to target up to two creature
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Husk Demon
 
 *Medium fiend (demon)*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 	- Hope Feast. The husk demon feasts on the target’s hope, causing the target to become despondent. The target has disadvantage on saves until the end of its next turn.
 	- Motivation Feast. The husk demon feasts on the target’s motivation, causing the target to lose its ambitions and become apathetic. The target’s speed is halved until the end of its next turn.
 
+</statblock>
 
 

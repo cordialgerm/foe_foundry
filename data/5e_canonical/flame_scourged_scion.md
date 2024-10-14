@@ -23,6 +23,7 @@ The Ember ability, which has a recharge time of 6 rounds, allows the Flame-Scour
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flame-Scourged Scion
 
 *Huge* *Aberration* *chaotic evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Embers (Recharge 6):** The flame-scourged scion fills the area around itself with a cloud of burning embers. Each creature within 10 feet of the flame-scourged scion must make a DC 18 Constitution saving throw, taking 28 (8d6) fire damage on a failed save, or half as much damage on a successful one. The embers die out within moments.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ Overall, the Catscratch combines resilience, mobility, and a set of dangerous at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Catscratch
 
 *Huge* *Aberration* *chaotic evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Vomit (Recharge 5-6):** The catscratch vomits poisonous bile in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 10 (3d6) poison damage on a failed save or half as much damage on a successful one. A felid or feline humanoid that fails this saving throw contracts catscratch fugue.
 
 
+</statblock>
 
 

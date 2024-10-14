@@ -23,6 +23,7 @@ Overall, the Flinderbeast stands out as a tricky and resourceful foe, blending a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flinderbeast
 
 *Small fey*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Reactions** 
 - **Catch Snack.** When the flinderbeast is the target of a ranged weapon attack that uses ammunition made mostly of wood, such as an arrow, the flinderbeast can attempt to catch and eat the ammunition. The flinderbeast must make a DC 14 DEX save. On a success, it gains 3 (1d6) temporary HP and prevents the attack’s damage.
 
+</statblock>
 
 

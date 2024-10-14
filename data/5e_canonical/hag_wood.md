@@ -23,6 +23,7 @@ As a bonus action, the Wood Hag can use "Nettling Word," which allows it to prov
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hag, Wood
 
 *Medium* *Fey* *neutral evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Nettling Word:** Heckles mocks or jeers one creature she can see within 30' of her. If creature can hear and understand her enraged until end of its next turn (DC 16 Cha negates). While enraged: advantage on melee attacks unable to distinguish friend from foe and must move to and attack nearest creature (not hag). If none is near enough to move to and attack enraged creature stalks off in random direction. Attacks vs. enraged creature: advantage.
 
 
+</statblock>
 
 

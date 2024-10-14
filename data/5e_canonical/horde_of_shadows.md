@@ -40,6 +40,7 @@ Altogether, the Horde of Shadows is a unique and dangerous undead threat that re
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horde of Shadows
 
 *Large* *Undead*
@@ -81,5 +82,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Sneak:** The horde takes the Hide action even if obscured only by dim light or darkness.
 
 
+</statblock>
 
 

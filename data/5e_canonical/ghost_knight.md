@@ -38,6 +38,7 @@ The Ghost Knight is a potent and challenging opponent, capable of leveraging its
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghost Knight
 
 *Medium* *Undead* *Lawful Evil*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The ghost knight makes three Battleaxe or Lance attacks. If the ghost knight is mounted, it can make two Battleaxe or Lance attacks, and its mount can make one melee weapon attack.
 - **Battleaxe:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands, plus 7 (2d6) necrotic damage.
 - **Lance:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d12 + 3) piercing damage plus 7 (2d6) necrotic damage.
+</statblock>
 
 

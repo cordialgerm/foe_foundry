@@ -25,6 +25,7 @@ Overall, Morko serves as a tricky adversary, relying on magical resistance and c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Morko
 
 *Small* *Fey* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Shrink (Recharges after a Short or Long Rest):** For 1 minute, the morko magically decreases in size, along with anything it is wearing or carrying. While shrunken, the morko is Tiny, halves its damage dice on Strength-based weapon attacks, and makes Strength checks and Strength saving throws with disadvantage. If the morko lacks the room to grow back to its regular size, it attains the maximum size possible in the space available.
 
 
+</statblock>
 
 

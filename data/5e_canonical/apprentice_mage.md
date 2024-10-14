@@ -25,6 +25,7 @@ Additionally, the Apprentice Mage can represent various characters, such as a st
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Apprentice Mage
 
 *Medium* *Humanoid*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Whether a student attending a wizard college or serving a crotchety master:** Apprentice mage statistics can also be used to represent an older hedge wizard of limited accomplishments.
 
 
+</statblock>
 
 

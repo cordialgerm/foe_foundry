@@ -39,6 +39,7 @@ In summary, the Ape is a straightforward, yet dangerous opponent, particularly w
 
 Source: 5e_srd
 
+<statblock>
 ### Ape
 
 *Medium beast, unaligned*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Fist***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6+3) bludgeoning damage.
 
-***Rock***. *Ranged Weapon Attack:* +5 to hit, range 25/50 ft., one target. *Hit:* 6 (1d6+3) bludgeoning damage.
+***Rock***. *Ranged Weapon Attack:* +5 to hit, range 25/50 ft., one target. *Hit:* 6 (1d6+3) bludgeoning damage.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ape
 
 *Medium* *Beast*
@@ -100,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6+3) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -108,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ape
 
 *Medium beast*
@@ -139,5 +144,6 @@ Source: 5e_artisinal_monsters
 - **Fist.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage.
 - **Rock.** Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.
 
+</statblock>
 
 

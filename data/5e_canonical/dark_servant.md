@@ -21,6 +21,7 @@ When it comes to actions, the Dark Servant can execute a Multiattack, allowing i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dark Servant
 
 *Medium* *Humanoid* *neutral evil*
@@ -54,5 +55,6 @@ against being charmed or frightened.
 - **Light Crossbow:** Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 5 (1d8 + 1) piercing damage.
 
 
+</statblock>
 
 

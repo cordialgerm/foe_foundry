@@ -38,6 +38,7 @@ Overall, the Forest Gnome Illusionist is a crafty and resourceful spellcaster th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forest Gnome Illusionist
 
 *Medium* *Humanoid*
@@ -99,5 +100,6 @@ Source: 5e_artisinal_monsters
 - **Shield (1st-Level; V:** When the mage is hit by an attack or targeted by magic missile, they gain a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the start of their next turn.
 
 
+</statblock>
 
 

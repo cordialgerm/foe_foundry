@@ -21,6 +21,7 @@ Another available action is the Heavy Crossbow attack, which has a +3 to hit and
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deep Dwarf Soldier
 
 *Medium* *Humanoid*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Tactical Movement:** Until the end of the soldiers turn, their Speed is halved and their movement doesnt provoke opportunity attacks.
 
 
+</statblock>
 
 

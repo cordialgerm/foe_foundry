@@ -25,6 +25,7 @@ In combat, the Incarnate Gloom uses a multiattack feature, allowing it to make t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Incarnate Gloom
 
 *Gargantuan* *Undead* *neutral evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Engulf in Shadow:** The incarnate gloom moves up to its speed. While doing so, it can enter Huge or smaller creatures’ spaces. Whenever the gloom enters a creature’s space, the creature must make a DC 18 Dexterity saving throw.<br><br>On a successful save, the creature can choose to sidestep to just outside the gloom’s space. A creature that chooses not to sidestep suffers the consequences of a failed saving throw.<br><br>On a failed save, the gloom enters the creature’s space, the creature takes 18 (4d8) necrotic damage, suffers one level of exhaustion, and is engulfed in shadow. The engulfed creature is blinded and restrained, it has total cover against attacks and other effects outside the gloom, and it takes 18 (4d8) necrotic damage at the start of each of the gloom’s turns. When the gloom moves, the engulfed creature doesn’t move with it.<br><br>An engulfed creature can try to escape by taking an action to make a DC 18 Wisdom check. On a success, the creature escapes the gloom and enters a space of its choice within 5 feet of the gloom.
 
 
+</statblock>
 
 

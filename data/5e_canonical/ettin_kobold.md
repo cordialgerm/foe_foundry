@@ -23,6 +23,7 @@ The Kobold Ettin also has a special action called Echoing Burps which can be use
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ettin, Kobold
 
 *Medium* *Giant* *lawful evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Echoing Burps (Recharge 5–6):** Tries to let loose double roar but instead sends forth a series of obnoxious smelly belches in a 15 ft. cone. Each creature in the area: 10 (4d4) thunder and is incapacitated until end of its next turn (DC 13 Con half damage and isn’t incapacitated).
 
 
+</statblock>
 
 

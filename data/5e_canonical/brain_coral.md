@@ -25,6 +25,7 @@ Overall, the Brain Coral presents a complex challenge due to its unique mechanic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brain Coral
 
 *Huge* *Aberration* *neutral evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Beasts of the Sea (1/Day):** Magically calls 2d4 giant crabs 2 giant sea horses or reef sharks or 1 swarm of quippers provided coral is underwater. The called creatures arrive in 1d4 rounds acting as allies of coral and obeying its telepathic commands. Beasts remain 1 hr until coral dies or until coral dismisses them as a bonus action.
 
 
+</statblock>
 
 

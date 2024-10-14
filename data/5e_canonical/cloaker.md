@@ -37,6 +37,7 @@ As a bonus action, the Cloaker can use the Cloak of Shadows ability three times 
 
 Source: 5e_srd
 
+<statblock>
 ## Cloaker
 
 *Large aberration, chaotic neutral*
@@ -79,7 +80,8 @@ Source: 5e_srd
 
 Whenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can't see or if it relies on senses other than sight.
 
-A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.
+A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.</statblock>
+
 
 
 
@@ -87,6 +89,7 @@ A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cloaker
 
 *Large* *Aberration*
@@ -126,6 +129,7 @@ Source: 5e_artisinal_monsters
 - **Angry Moan:** When the cloaker takes damage, it uses Moan.
 
 
+</statblock>
 
 
 
@@ -134,6 +138,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cloaker
 
 *Large aberration*
@@ -171,5 +176,6 @@ Source: 5e_artisinal_monsters
 
 - **Cloak of Shadows (3/Day).** While the cloaker isn’t in bright light, it pulls shadows around itself, partially obscuring its form. For 1 minute or until the cloaker is hit with an attack, the cloaker’s Stealth is 20, and creatures have disadvantage on attack rolls against the cloaker.
 
+</statblock>
 
 

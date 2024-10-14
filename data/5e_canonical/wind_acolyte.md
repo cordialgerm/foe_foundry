@@ -23,6 +23,7 @@ For defensive maneuvers, the Wind Acolyte can use "Buoying Wind" as a reaction, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: Wind Acolyte
 
 *Medium* *Humanoid* *neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Drift:** When a creature moves to within 15 ft. of the wind acolyte the acolyte can fly up to half its flying speed.
 
 
+</statblock>
 
 

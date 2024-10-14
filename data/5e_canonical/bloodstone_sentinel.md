@@ -23,6 +23,7 @@ In combat, the Bloodstone Sentinel can make a Multiattack, allowing it to execut
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bloodstone Sentinel
 
 *Large* *Construct* *neutral evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
 
 
+</statblock>
 
 

@@ -36,6 +36,7 @@ Overall, the Lizardfolk's combination of physical resilience, mobility in water,
 
 Source: 5e_srd
 
+<statblock>
 ## Lizardfolk
 
 *Medium humanoid (lizardfolk), neutral*
@@ -70,7 +71,8 @@ Source: 5e_srd
 
 ***Javelin***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Spiked Shield***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
+***Spiked Shield***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.</statblock>
+
 
 
 
@@ -78,6 +80,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizardfolk
 
 *Medium* *Humanoid*
@@ -109,6 +112,7 @@ Source: 5e_artisinal_monsters
 - **Javelin:** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 
 
+</statblock>
 
 
 
@@ -117,6 +121,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizardfolk
 
 *Medium humanoid*
@@ -152,5 +157,6 @@ Source: 5e_artisinal_monsters
 
 - **Shoving Counter.** If a creature misses the lizardfolk with an attack and the lizardfolk is wielding a shield, the lizardfolk can shove its shield into the creature. The attacker must succeed on a DC 12 STR save or be pushed up to 10 feet away from the lizardfolk and knocked prone.
 
+</statblock>
 
 

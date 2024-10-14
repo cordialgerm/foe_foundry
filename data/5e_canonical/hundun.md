@@ -23,6 +23,7 @@ The Hundun is also capable of casting spells, requiring no material components a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hundun
 
 *Large* *Celestial* *Chaotic Good*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage plus 7 (2d6) radiant damage.
 - **Motivating Babble:** The hundun babbles incoherently at one creature it can see within 60 feet of it. The target must succeed on a DC 17 Wisdom saving throw or suffer one of the following effects until the end of its next turn. Roll a d4 to determine which effect happens.
 - **Spellcasting:** The hundun casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save DC 17):<br>At will: create or destroy water, dancing lights, minor illusion, prestidigitation<br>3/day each: black tentacles, fabricate (as an action), irresistible dance<br>1/day each: creation (as an action), plant growth
+</statblock>
 
 

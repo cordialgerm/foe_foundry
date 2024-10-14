@@ -21,6 +21,7 @@ In terms of actions, the Lemure Band has a melee attack called Fists. This has a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lemure Band
 
 *Large* *Fiend*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Fists:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 12 (5d4) bludgeoning damage.
 
 
+</statblock>
 
 

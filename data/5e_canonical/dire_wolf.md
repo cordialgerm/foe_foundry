@@ -31,6 +31,7 @@ In terms of actions, the Dire Wolf's primary attack is its Bite. This melee weap
 
 Source: 5e_srd
 
+<statblock>
 ### Dire Wolf
 
 *Large beast, unaligned*
@@ -59,7 +60,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</statblock>
+
 
 
 
@@ -67,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dire Wolf
 
 *Large* *Beast*
@@ -95,5 +98,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4+3) piercing damage. If the target is a creature  it makes a DC 13 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ In combat, the primary action available to the Hunter Shark is its Bite attack. 
 
 Source: 5e_srd
 
+<statblock>
 ### Hunter Shark
 
 *Large beast, unaligned*
@@ -55,7 +56,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) piercing damage.
 
-Smaller than a giant shark but larger and fiercer than a reef shark, a **hunter shark** haunts deep waters. It usually hunts alone, but multiple hunter sharks might feed in the same area. A fully grown hunter shark is 15 to 20 feet long.
+Smaller than a giant shark but larger and fiercer than a reef shark, a **hunter shark** haunts deep waters. It usually hunts alone, but multiple hunter sharks might feed in the same area. A fully grown hunter shark is 15 to 20 feet long.</statblock>
+
 
 
 
@@ -63,6 +65,7 @@ Smaller than a giant shark but larger and fiercer than a reef shark, a **hunter 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hunter Shark
 
 *Large* *Beast*
@@ -90,5 +93,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6+4) piercing damage. On a hit  the shark can use a bonus action to make a second bite attack.
 
 
+</statblock>
 
 

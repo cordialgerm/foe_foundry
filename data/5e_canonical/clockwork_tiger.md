@@ -21,6 +21,7 @@ For its reactions, the Deflecting Leap ability is a strategic move that allows t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Tiger
 
 *Large* *Construct* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Deflecting Leap:** When the clockwork tiger’s ward is the target of an attack the tiger can see, the tiger can move up to 10 feet toward its ward without provoking opportunity attacks. If it ends this movement within 5 feet of its ward, the tiger becomes the target of the attack instead.
 
 
+</statblock>
 
 

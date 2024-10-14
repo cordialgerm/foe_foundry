@@ -19,6 +19,7 @@ When it comes to actions in combat, the Spawn of Alquam can perform a Multiattac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spawn of Alquam
 
 *Large* *Fiend* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Gloomspittle:** Ranged Weapon Attack: +6 to hit, range 30 ft., one creature. Hit: 10 (2d6 + 3) necrotic damage, and the target must succeed on a DC 15 Dexterity saving throw or be blinded until the end of its next turn.
 
 
+</statblock>
 
 

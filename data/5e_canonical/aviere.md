@@ -23,6 +23,7 @@ The Aviere’s actions include a melee attack called Claw, which has a +4 to hit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aviere
 
 *Tiny* *Celestial* *any good*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Song of Healing (1/Day):** The aviere sings a song of healing. The aviere chooses one creature within 60 feet of it. If the creature can hear the aviere’s song and isn’t an undead or a construct, it regains 1d4 hp.
 
 
+</statblock>
 
 

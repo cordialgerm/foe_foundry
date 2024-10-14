@@ -40,6 +40,7 @@ The lizard also possesses a reaction called Detach Tail, which triggers when it 
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Lizard
 
 *Large beast, unaligned*
@@ -64,7 +65,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d8+2) piercing damage.
 
-A **giant lizard** can be ridden or used as a draft animal. Lizardfolk also keep them as pets, and subterranean giant lizards are used as mounts and pack animals by drow, duergar, and others.
+A **giant lizard** can be ridden or used as a draft animal. Lizardfolk also keep them as pets, and subterranean giant lizards are used as mounts and pack animals by drow, duergar, and others.</statblock>
+
 
 
 
@@ -72,6 +74,7 @@ A **giant lizard** can be ridden or used as a draft animal. Lizardfolk also keep
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Lizard
 
 *Large* *Beast*
@@ -95,6 +98,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) piercing damage.
 
 
+</statblock>
 
 
 
@@ -103,6 +107,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizard, Giant
 
 *Large beast*
@@ -134,5 +139,6 @@ Source: 5e_artisinal_monsters
 
 - **Detach Tail (9 HP or Fewer, Recharges after a Short or Long Rest).** When the lizard takes damage, it can detach its tail, reducing the damage by 4 (1d8), and immediately move up to its speed without provoking opportunity attacks.
 
+</statblock>
 
 

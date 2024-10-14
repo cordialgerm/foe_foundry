@@ -23,6 +23,7 @@ As a bonus action, the Thursir can use Runic Blood up to three times a day. This
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thursir
 
 *Large* *Giant* *Neutral Evil (50%) or Lawful Evil (50%)*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Runic Blood (3/Day):** The thursir touches a weapon, painting the thurs rune on the weapon in the thursir’s blood. When the thursir hits with the weapon while the rune is active, the weapon deals an extra 9 (2d8) lightning damage, and the target can’t take reactions until the start of its next turn. The rune lasts for 1 minute.
+</statblock>
 
 

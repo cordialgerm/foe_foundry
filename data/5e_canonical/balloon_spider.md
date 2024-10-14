@@ -23,6 +23,7 @@ Finally, the Draw In ability allows the Balloon Spider to magically pull all cre
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Balloon Spider
 
 *Medium* *Beast* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Draw In:** The balloon spider magically pulls all creatures grappled by its webbing up to 10 feet toward it. If this movement pulls the creature within 5 feet of the balloon spider, the spider can make one bite attack against the creature as a bonus action.
 
 
+</statblock>
 
 

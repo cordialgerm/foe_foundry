@@ -21,6 +21,7 @@ For reactions, the Springspike Shield allows the Chieftain to counterattack when
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chieftain
 
 *Small* *Humanoid* *Lawful Evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Springspike Shield:** When the kobold chieftain is wielding its shield and is hit by a melee attack within 5 feet of it, the chieftain can fire one of its shield spikes at the attacker. The attacker takes 5 (2d4) piercing damage.
+</statblock>
 
 

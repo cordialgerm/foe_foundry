@@ -21,6 +21,7 @@ One of its most terrifying abilities is the Frightening Visage, which can be use
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Coastline Reaper
 
 *Large* *Monstrosity* *unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Frightening Visage (Recharge 5–6):** If underwater it flares the light from its organs making skull-like structure within more apparent. If above water the coastline reaper tightly pulls in its outer flesh causing its body to take on a fleshy skull-like appearance. Each Humanoid within 30' of it that can see it: 21 (6d6) psychic and frightened 1 min (DC 16 Wis half not frightened). Frightened creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

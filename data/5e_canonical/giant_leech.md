@@ -27,6 +27,7 @@ In terms of actions, the Giant Leech has a Bite attack that functions as a melee
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Leech
 
 *Small* *Beast* *unaligned*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage, and the leech attaches to the target. While attached, the leech doesn’t attack. Instead, at the start of each of the leech’s turns, the target loses 5 (1d4 + 3) hp due to blood loss.<br><br>The leech can detach itself by spending 5 feet of its movement. It does so after it drains 15 hp of blood from the target or the target dies. A creature, including the target, can use its action to detach the leech.
 
 
+</statblock>
 
 

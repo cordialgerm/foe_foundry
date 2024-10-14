@@ -21,6 +21,7 @@ One notable special attack is Menace Captives, which can be used after a recharg
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gnoll Slaver
 
 *Medium* *Humanoid* *chaotic evil*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Menace Captives (Recharge 5-6):** The gnoll selects up to three creatures it has taken captive within 30 feet. Each creature must succeed on a DC 15 Wisdom saving throw or have disadvantage for 1 minute on any attack rolls or skill checks to take actions other than those the gnoll has ordered it to take.
 
 
+</statblock>
 
 

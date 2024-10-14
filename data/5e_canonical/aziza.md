@@ -35,6 +35,7 @@ For defense, the Aziza has a reaction called "Dazzling Glow." When targeted by a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aziza
 
 *Tiny* *Fey* *chaotic good*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Dazzling Glow:** When a creature the aziza can see targets it with melee attack its skin briefly glows brightly causing the attacker to have disadvantage on the attack roll.
 
 
+</statblock>
 
 

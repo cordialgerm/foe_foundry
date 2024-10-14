@@ -21,6 +21,7 @@ Overall, the Cave Troll's combination of high hit points, regeneration, and powe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Troll
 
 *Large* *Giant*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

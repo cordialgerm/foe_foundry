@@ -23,6 +23,7 @@ Overall, the Kobold Sorcerer combines spellcasting finesse with some combat capa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold Sorcerer
 
 *Small* *Humanoid*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Expeditious Retreat (1st-Level; V:** When casting this spell and as a bonus action on subsequent turns for 10 minutes, the kobold sorcerer can take the Dash action.
 
 
+</statblock>
 
 

@@ -19,6 +19,7 @@ In terms of actions, the Windy Wailer has several options. The "Chilling Touch" 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Windy Wailer
 
 *Large* *Undead* *neutral evil*
@@ -55,5 +56,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Frightful Gale (Recharge 5-6):** The windy wailer unleashes freezing wind filled with fearful wailing in a 30-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 14 (4d6) cold damage and is frightened for 1 minute. On a success, a creature takes half the damage and isn’t frightened. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br><br>A creature reduced to 0 hp by the windy wailer’s Frightful Gale and later revived is permanently marked by a shock of white hair somewhere on its body.
 
 
+</statblock>
 
 

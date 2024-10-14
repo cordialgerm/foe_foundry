@@ -21,6 +21,7 @@ Overall, the Foxin is a cunning and elusive creature, adept in the arts of steal
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Foxin
 
 *Small* *Fey* *neutral*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Illusory Calm:** The foxin targets any number of non-foxin creatures within 30 feet. Each creature in that area must succeed on a DC 13 Wisdom saving throw or be treated as charmed against all enemies and dangers for 1 minute. A charmed creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the foxin's Illusory Calm for the next 24 hours. A creature has advantage on the saving throw if it suffers any harm while charmed.
 
 
+</statblock>
 
 

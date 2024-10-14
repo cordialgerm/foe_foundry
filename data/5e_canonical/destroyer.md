@@ -21,6 +21,7 @@ As for its actions, the Destroyer has a feature called "Multiattack" which allow
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Destroyer
 
 *Medium* *Humanoid* *neutral evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Spear:** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage, or 7 (1d8 + 3) piercing damage if used with two hands to make a melee attack.
 
 
+</statblock>
 
 

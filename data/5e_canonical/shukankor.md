@@ -27,6 +27,7 @@ Overall, the Shukankor serves as a strong and strategic threat in combat, utiliz
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shukankor
 
 *Huge* *Aberration* *chaotic evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Sacrifice Replica:** When a creature the shukankor can see targets it with an attack, the shukankor forces a replica within 5 feet of it to jump in the way. The chosen replica becomes the target of the attack instead.
 
 
+</statblock>
 
 

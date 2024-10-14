@@ -19,6 +19,7 @@ In terms of actions, the Swamp Adder can use a melee attack called Bite. The att
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swamp Adder
 
 *Small* *Beast* *Unaligned*
@@ -44,5 +45,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 11 Constitution saving throw. On a failure, the target takes 5 (2d4) poison damage and is paralyzed for 1 minute. On a success, a target takes half the damage and isn’t paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

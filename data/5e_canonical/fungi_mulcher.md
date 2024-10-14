@@ -35,6 +35,7 @@ Overall, the Mulcher is a powerful and tactical adversary in combat, utilizing i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fungi, Mulcher
 
 *Gargantuan* *Plant* *unaligned*
@@ -77,5 +78,6 @@ Source: 5e_artisinal_monsters
 - **Emergent Stalk:** When reduced below half hp max or creature scores critical hit vs. it immediately uses Expose Stalk.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ Its slam attack is a melee weapon attack with a +11 to hit and a reach of 10 fee
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Butatsch
 
 *Gargantuan* *Aberration* *chaotic neutral*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Ingest:** The butatsch ingests a Large or smaller creature grappled by it, ending the grapple. While ingested, the target is blinded and restrained, it has total cover against attacks and other effects outside the butatsch, and it takes 17 (5d6) acid damage at the start of each of the butatsch’s turns. A butatsch can have up to four Medium or smaller targets or up to two Large targets ingested at a time. If the butatsch takes 30 damage or more on a single turn from an ingested creature, the butatsch must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all ingested creatures, which fall prone in a space within 10 feet of the butatsch. If the butatsch dies, an ingested creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.
 
 
+</statblock>
 
 

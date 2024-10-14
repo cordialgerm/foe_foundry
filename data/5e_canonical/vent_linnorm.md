@@ -27,6 +27,7 @@ Lastly, the Inky Breath, which has a recharge mechanic of 5-6, allows the linnor
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vent Linnorm
 
 *Gargantuan* *Dragon* *neutral evil*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Inky Breath (Recharge 5-6):** The linnorm exhales a cloud of briny ink in a 60-foot cone. Each creature in that area must make a DC 19 Constitution saving throw. On a failure, a creature takes 52 (15d6) necrotic damage and is blinded for 1 minute. On a success, a creature takes half the damage and isn’t blinded. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

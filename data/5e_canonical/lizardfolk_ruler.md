@@ -21,6 +21,7 @@ In reaction, the "Inspiring Hiss" ability empowers friendly Lizardfolk within 30
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizardfolk Ruler
 
 *Medium humanoid*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Inspiring Hiss.** When a friendly lizardfolk the ruler can see within 30 feet of it is hit by an attack, the ruler can hiss out inspiring words to encourage the lizardfolk to keep going. The target gains 5 (2d4) temporary HP for 1 minute.
 
+</statblock>
 
 

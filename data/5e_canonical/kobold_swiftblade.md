@@ -23,6 +23,7 @@ Overall, the Kobold Swiftblade excels at ambushing and flanking opponents, makin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold Swiftblade
 
 *Small humanoid*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 
 - **Hidden Scurry.** The swiftblade moves up to 15 feet without provoking opportunity attacks, and if it moves into a lightly or heavily obscured area, it takes the Hide action, using its Stealth value as the result of the check. If the swiftblade is aware of traps in the area, it can choose if this movement triggers any of them.
 
+</statblock>
 
 

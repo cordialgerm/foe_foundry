@@ -21,6 +21,7 @@ Finally, the Chernomoi's spellcasting is another critical aspect of its combat s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chernomoi
 
 *Tiny* *Fey* *Neutral*
@@ -45,5 +46,6 @@ Source: 5e_artisinal_monsters
 - **Scimitar:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage.
 - **Shriek (Recharge 5–6):** The chernomoi emits a loud shriek that is audible out to 100 feet. Each creature within 60 feet of the chernomoi and that can hear it must make a DC 13 Constitution saving throw, taking 10 (3d6) thunder damage on a failed save, or half as much damage on a successful one.
 - **Spellcasting:** The chernomoi casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 13):<br>At will: detect magic, mage hand, mending, message, prestidigitation<br>1/day each: detect poison and disease, dimension door
+</statblock>
 
 

@@ -23,6 +23,7 @@ Additionally, the Deva possesses a powerful healing or damaging ability known as
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fallen Deva
 
 *Medium* *Celestial*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Consume Life Energy (1/Day):** The angel feasts on the departing life energy of a humanoid within 5 feet. The target must have been slain within the last hour. The angel magically gains temporary hit points equal to half the dead creatures maximum hit points. These hit points last until depleted. Only a spell cast with a 9th-level slot can raise the corpse from the dead.
 
 
+</statblock>
 
 

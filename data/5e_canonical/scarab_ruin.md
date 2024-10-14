@@ -23,6 +23,7 @@ Overall, the Ruin Scarab is a powerful undead adversary that leverages its abili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scarab, Ruin
 
 *Large* *Undead* *neutral evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Relentless Pursuit:** When a creature within 10 ft. of the scarab moves away from it scarab can move up to half its speed toward that creature.
 
 
+</statblock>
 
 

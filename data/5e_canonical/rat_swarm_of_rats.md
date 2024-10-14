@@ -19,6 +19,7 @@ In terms of actions, the Swarm of Rats can perform a Bites attack, which is a me
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rat, Swarm of Rats
 
 *Medium swarm (of tiny beasts)*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 
 - **Bites.** Melee Weapon Attack: +2 to hit, reach 0 ft., one target in the swarm’s space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its HP or fewer. If the target is a creature, it must make a DC 9 CON save. On a failure, the target contracts the rat plague disease (see Diseased Rats sidebar) or is poisoned until the end of its next turn (the GM’s choice).
 
+</statblock>
 
 

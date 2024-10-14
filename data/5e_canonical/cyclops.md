@@ -37,6 +37,7 @@ The Cyclops also features bonus actions and reactions:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cyclops
 
 *Huge* *Giant*
@@ -75,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Big Windup:** When a creature hits the cyclops with a melee attack, the cyclops readies a powerful strike against its attacker. The cyclops has advantage on the next club attack it makes against the attacker before the end of its next turn.
 
 
+</statblock>
 
 

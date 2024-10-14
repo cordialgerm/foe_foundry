@@ -19,6 +19,7 @@ For actions during combat, the Ink Guardian can execute a "Multiattack," allowin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ink Guardian
 
 *Large* *Ooze* *unaligned*
@@ -55,5 +56,6 @@ When the ink guardian is defeated, the bottle becomes inactive for 3d8 hours. Af
 - **Pseudopod:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage plus 7 (2d6) acid damage.
 
 
+</statblock>
 
 

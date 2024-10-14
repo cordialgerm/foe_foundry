@@ -21,6 +21,7 @@ In melee combat, it uses the Shivering Touch, which is a melee weapon attack wit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chill Haunt
 
 *Medium* *Undead* *neutral evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Shivering Touch:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 10 (2d6 + 3) cold damage plus 3 (1d6) necrotic damage. The target must succeed on a DC 12 Constitution saving throw or take 3 (1d6) cold damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target takes fire damage, the effect ends.
 
 
+</statblock>
 
 

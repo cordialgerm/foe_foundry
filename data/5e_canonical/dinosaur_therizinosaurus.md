@@ -19,6 +19,7 @@ In combat, the Therizinosaurus can make multiple attacks in a turn thanks to its
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dinosaur, Therizinosaurus
 
 *Huge* *Beast* *unaligned*
@@ -47,5 +48,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +8 to hit, 15 ft., one target, 18 (3d8+5) slashing damage and the target must make DC 16 Str save or be knocked prone.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Kapi's skills and abilities emphasize maneuverability and tactical 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kapi
 
 *Medium* *Humanoid* *chaotic good*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Sling:** Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 6 (1d4 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ In summary, the Abominable Beauty combines high charisma with wide-ranging offen
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Abominable Beauty
 
 *Medium* *Fey* *Neutral Evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage plus 21 (6d6) fire damage.
 - **Blinding Gaze:** The abominable beauty fixes her gaze on a creature within 30 feet of her. If the target can see the beauty’s eyes, the target must succeed on a DC 16 Charisma saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful, the creature is immune to the abominable beauty’s Blinding Gaze for the next 24 hours.
 - **Deafening Voice (Recharge 5–6):** The abominable beauty speaks a lilting incantation. Each creature within 30 feet of her and that can hear her voice must make a DC 16 Constitution saving throw. On a failure, a creature takes 31 (9d6) thunder damage and is deafened for 1 hour. On a success, a creature takes half the damage, isn’t deafened, and is immune to the abominable beauty’s Deafening Voice for the next 24 hours.
+</statblock>
 
 

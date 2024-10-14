@@ -23,6 +23,7 @@ In terms of actions, the Kappa can perform a Multiattack, making two claw attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kappa
 
 *Small* *Fey* *chaotic neutral or chaotic evil*
@@ -57,5 +58,6 @@ Normal movement and combat do not cause water to spill from the bowl, but an opp
 - **Claw:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage. The target is grappled (escape DC 14) if it is a Large or smaller creature and the kappa doesn't already have another creature grappled.
 
 
+</statblock>
 
 

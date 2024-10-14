@@ -32,6 +32,7 @@ The Goblin Boss can also use its bonus action:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Boss
 
 *Small* *Humanoid*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ For its innate spellcasting, the Young Shadow Dragon can innately cast the spell
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Shadow Dragon
 
 *Large* *Dragon*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Anguished Breath (Recharge 5-6):** The dragon exhales a shadowy maelstrom of anguish in a 30-foot cone. Each creature in that area makes a DC 16 Wisdom saving throw  taking 40 (9d8) necrotic damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

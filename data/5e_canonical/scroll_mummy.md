@@ -41,6 +41,7 @@ Overall, the Scroll Mummy is a dynamic opponent with unique abilities that can t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scroll Mummy
 
 *Medium* *Undead* *neutral*
@@ -79,5 +80,6 @@ At will: comprehend languages, fire bolt, mage hand, prestidigitation, ray of si
 - **Spell-Siphoning Fist:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage plus 11 (2d10) force damage. If the target is a spellcaster, it must succeed on a DC 15 Charisma saving throw or lose one random unused spell slot. The scroll mummy inscribes one of the spellcaster’s spells of that slot level onto the parchment wrappings that cover its body (see the Scroll Body trait).
 
 
+</statblock>
 
 

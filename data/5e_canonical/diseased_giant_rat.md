@@ -19,6 +19,7 @@ When it comes to actions, the Diseased Giant Rat can use its Bite attack as a me
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Diseased Giant Rat
 
 *Small* *Beast*
@@ -47,5 +48,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) piercing damage. Giant rats who dwell in sewers and filth can carry debilitating disease. A creature bitten by a diseased giant rat makes a DC 10 Constitution saving throw or it becomes infected with sewer plague.
 
 
+</statblock>
 
 

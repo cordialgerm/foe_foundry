@@ -31,6 +31,7 @@ Overall, the Nharyth demonstrates a blend of power, control, and resilience that
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nharyth
 
 *Huge* *Aberration* *chaotic evil*
@@ -66,5 +67,6 @@ The nharyth can plant up to 24 spines in a web when creating it. Once it has use
 - **Spine Shot:** Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 12 (3d6 + 2) piercing damage, and the target must succeed on a DC 16 Constitution saving throw or its speed is halved until the end of its next turn. If the nharyth scores a critical hit, the target doesn’t make a saving throw and is paralyzed until the end of its next turn instead.
 
 
+</statblock>
 
 

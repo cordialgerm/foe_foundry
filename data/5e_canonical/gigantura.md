@@ -38,6 +38,7 @@ Lastly, the Horrific Gaze ability allows the Gigantura to fix its unsettling gaz
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gigantura
 
 *Gargantuan* *Monstrosity* *unaligned*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Horrific Gaze:** Its telescoping eyes swirl disconcertingly in direction of one creature it can see within 60' of it. If target can see gigantura target stunned until end of its next turn (DC 18 Con negates). A target that successfully saves is immune to this gigantura’s Horrific Gaze for the next 24 hrs.
 
 
+</statblock>
 
 

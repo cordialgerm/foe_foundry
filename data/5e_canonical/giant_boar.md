@@ -43,6 +43,7 @@ Overall, the Giant Boar serves as a challenging adversary in combat, leveraging 
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Boar
 
 *Large beast, unaligned*
@@ -69,7 +70,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Tusk***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage.
+***Tusk***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage.</statblock>
+
 
 
 
@@ -77,6 +79,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boar, Giant
 
 *Large beast*
@@ -110,6 +113,7 @@ Source: 5e_artisinal_monsters
 
 - **Challenging Snort.** The boar snorts and stomps its feet at a creature it can see within 30 feet of it. The target must succeed on a DC 13 WIS save or be frightened until the end of its next turn and have disadvantage on the next save it makes against being knocked prone by the boar.
 
+</statblock>
 
 
 
@@ -118,6 +122,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Boar
 
 *Large* *Beast*
@@ -145,5 +150,6 @@ Source: 5e_artisinal_monsters
 - **Tusk:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6+3) slashing damage. If the boar moves at least 20 feet straight towards the target before the attack  the attack deals an extra 7 (2d6) slashing damage and the target makes a DC 13 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 

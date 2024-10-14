@@ -21,6 +21,7 @@ Overall, the Megantereon embodies the characteristics of a swift and lethal hunt
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Megantereon
 
 *Medium* *Beast* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +6 to hit, 5 ft., one creature,. 11 (2d6+4) slashing damage.
 
 
+</statblock>
 
 

@@ -19,6 +19,7 @@ Overall, the Zanskaran Viper is a dangerous and effective predator that combines
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zanskaran Viper
 
 *Large* *Beast* *Unaligned*
@@ -40,5 +41,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or become poisoned for 1 minute. While poisoned in this way, the target is blinded and takes 7 (2d6) poison damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

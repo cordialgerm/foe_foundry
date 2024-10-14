@@ -21,6 +21,7 @@ In combat, the Ghost Dwarf can utilize several actions. Its Multiattack allows i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghost Dwarf
 
 *Medium* *Undead* *neutral evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Etherealness:** The ghost dwarf enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane. Ghoul, Darakhul Though all darakhul acknowledge dark gods, the priestess holds a closer link than most-always first to the feast, dividing out the choice morsels, intoning the words of hideous praise for the feast.
 
 
+</statblock>
 
 

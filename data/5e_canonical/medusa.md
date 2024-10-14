@@ -37,6 +37,7 @@ Overall, the Medusa presents a complex combination of offensive capabilities and
 
 Source: 5e_srd
 
+<statblock>
 ## Medusa
 
 *Medium monstrosity, lawful evil*
@@ -73,7 +74,8 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 
 ***Shortsword***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Longbow***. *Ranged Weapon Attack:* +5 to hit, range 150/600 ft., one target. *Hit:* 6 (1d8+2) piercing damage plus 7 (2d6) poison damage.
+***Longbow***. *Ranged Weapon Attack:* +5 to hit, range 150/600 ft., one target. *Hit:* 6 (1d8+2) piercing damage plus 7 (2d6) poison damage.</statblock>
+
 
 
 
@@ -81,6 +83,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Medusa
 
 *Medium* *Monstrosity*
@@ -111,6 +114,7 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 7 (2d6) poison damage.
 
 
+</statblock>
 
 
 
@@ -119,6 +123,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Medusa
 
 *Medium monstrosity*
@@ -155,5 +160,6 @@ Source: 5e_artisinal_monsters
 
 - **Interruptive Hiss.** When a creature the medusa can see targets it with an attack, the medusa’s snakes can suddenly rise and hiss at the attacker. The attacker must succeed on a DC 14 WIS save or fail the attack roll.
 
+</statblock>
 
 

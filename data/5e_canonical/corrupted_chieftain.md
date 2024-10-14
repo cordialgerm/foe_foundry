@@ -21,6 +21,7 @@ Chieftain’s Command allows the giant to grant advantage on the next attack rol
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corrupted Chieftain
 
 *Large* *Giant* *Chaotic Evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Aggressive:** The corrupted chieftain moves up to its speed toward a hostile creature it can see.
+</statblock>
 
 

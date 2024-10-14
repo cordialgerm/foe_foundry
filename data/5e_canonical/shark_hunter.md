@@ -19,6 +19,7 @@ In combat, the shark can perform a Multiattack, enabling it to make two Bite att
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shark, Hunter
 
 *Large beast*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 
 - **Swift Hunter.** The shark moves up to half its speed toward a hostile creature that it can see. This movement doesn’t provoke opportunity attacks.
 
+</statblock>
 
 

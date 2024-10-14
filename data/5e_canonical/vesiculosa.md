@@ -23,6 +23,7 @@ Overall, the Vesiculosa poses a unique blend of danger and deception on the batt
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vesiculosa
 
 *Gargantuan* *Plant* *Unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Bury:** One creature grappled by the vesiculosa is knocked prone, dragged into the ground, and buried just below the surface, ending the grapple. The buried creature is restrained and unable to breathe or stand up. A creature, including the buried creature, can take its action to free the buried creature by succeeding on a DC 16 Strength check. This bonus action doesn’t wake a creature that is unconscious from the vesiculosa’s Sweet Water trait or Spit Sweet Water action.
+</statblock>
 
 

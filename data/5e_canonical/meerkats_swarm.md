@@ -19,6 +19,7 @@ For their actions, the meerkat swarm can perform a "Bite," which is a melee weap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Meerkats, Swarm
 
 *Medium* *Beast* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, 0 ft., one creature, in the swarm's space. 10 (4d4) piercing damage or 5 (2d4) piercing damage if swarm has half of its hp or fewer.
 
 
+</statblock>
 
 

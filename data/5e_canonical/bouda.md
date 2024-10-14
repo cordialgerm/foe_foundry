@@ -48,6 +48,7 @@ Overall, the Bouda presents a multifaceted challenge with its physical prowess, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bouda
 
 *Medium* *Fiend* *Neutral Evil*
@@ -86,5 +87,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape:** The bouda transforms into a human, a hyena, or back into its true form, which is a hyena-human hybrid. Its statistics, other than its speed, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies, then crumbles to dust moments later.
 - **Defiling Smear (1/Day):** The bouda secretes a disgusting whitish-yellow substance with the viscosity of tar and smears the substance on an object, unoccupied space, or creature within 5 feet of it. An unwilling creature must succeed on a DC 15 Dexterity saving throw to avoid the smear. Each creature, other than a bouda or hyena, that starts its turn within 30 feet of the smeared target must succeed on a DC 15 Constitution saving throw or be poisoned for 1 minute. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to that source of Defiling Smear for the next 24 hours. The stench of a smear remains potent for 7 days or until removed by the greater restoration spell or similar magic.
+</statblock>
 
 

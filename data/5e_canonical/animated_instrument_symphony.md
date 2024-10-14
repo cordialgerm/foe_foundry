@@ -23,6 +23,7 @@ The Symphony can also perform legendary actions. It can Move without provoking o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animated Instrument, Symphony
 
 *Gargantuan* *Construct* *neutral*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Harmonize (2):** Tunes its worn-out instruments back to working harmony regaining 20 hp and ending one condition affecting it.
 - **Orchestral Flourish (2):** Plays a short fierce melody. Each creature within 10 ft. of symphony including creatures in its space:  10 (3d6) thunder (DC 19 Con half).
 - **Syncopated Melody (3):** Mimics a spell that was cast since the end of its last turn. It makes a Performance check where the DC is the caster's DC+the level of the spell symphony is trying to mimic. If successful symphony casts the spell using original caster’s DC and spell attack bonus.
+</statblock>
 
 

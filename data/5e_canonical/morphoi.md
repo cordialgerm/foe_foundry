@@ -29,6 +29,7 @@ For bonus actions, the Morphoi has the **Change Shape** ability. This grants it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Morphoi
 
 *Medium* *Plant* *Chaotic Evil*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The morphoi transforms into a Medium Humanoid or back into its true form, which is a Plant. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form when it dies.
+</statblock>
 
 

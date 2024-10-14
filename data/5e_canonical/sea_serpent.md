@@ -25,6 +25,7 @@ For reactions, the Sea Serpent can execute a Reactive Bite if it takes 15 or mor
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sea Serpent
 
 *Gargantuan* *Monstrosity*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Reactive Tail:** If the serpent takes 15 damage or more from an attack made by a creature or object it can see, it makes a tail attack against the attacker.
 
 
+</statblock>
 
 

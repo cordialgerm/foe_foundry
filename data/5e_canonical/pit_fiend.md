@@ -54,6 +54,7 @@ The overall combination of these characteristics and abilities makes the Pit Fie
 
 Source: 5e_srd
 
+<statblock>
 ### Pit Fiend (Devil)
 
 *Large fiend (devil), lawful evil*
@@ -104,7 +105,8 @@ At will: *detect magic*, *fireball*
 
 ***Mace***. *Melee Weapon Attack:* +14 to hit, reach 10 ft., one target. *Hit:* 15 (2d6+8) bludgeoning damage plus 21 (6d6) fire damage.
 
-***Tail***. *Melee Weapon Attack:* +14 to hit, reach 10 ft., one target. *Hit:* 24 (3d10+8) bludgeoning damage.
+***Tail***. *Melee Weapon Attack:* +14 to hit, reach 10 ft., one target. *Hit:* 24 (3d10+8) bludgeoning damage.</statblock>
+
 
 
 
@@ -112,6 +114,7 @@ At will: *detect magic*, *fireball*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pit Fiend
 
 *Large* *Fiend*
@@ -154,6 +157,7 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 8) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -162,6 +166,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pit Fiend
 
 *Large fiend (devil)*
@@ -197,5 +202,6 @@ Source: 5e_artisinal_monsters
 - **Tail.** Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 8) bludgeoning damage plus 14 (4d6) fire damage, and the target must succeed on a DC 21 STR save or be knocked prone.
 - **Hurl Flame.** Ranged Spell Attack: +10 to hit, range 120 ft., one target. Hit: 25 (6d6 + 4) fire damage.
 
+</statblock>
 
 

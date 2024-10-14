@@ -27,6 +27,7 @@ As a bonus action, the Thursir Armorer can utilize "Harness Dwarven Soul," drawi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant, Thursir Armorer
 
 *Large* *Giant* *lawful evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Harness Dwarven Soul:** Draws on the soul fragment trapped in one of the dwarven skulls on its belt. Armorer has advantage on ability checks when using smith’s tools and on attack rolls using a battleaxe handaxe light hammer or warhammer until start of its next turn. It carries six skulls on its belt.
 
 
+</statblock>
 
 

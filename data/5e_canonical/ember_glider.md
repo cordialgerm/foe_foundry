@@ -23,6 +23,7 @@ Furthermore, the Ember Glider’s Blazing Tail is a potent special action that c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ember Glider
 
 *Medium* *Monstrosity* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Blazing Tail (Recharge 5–6):** Lashes its tail releasing an arc of fire. Each creature in a 15 ft. cone: 14 (4d6) fire (DC 13 Dex half). The fire ignites flammable objects in  area that aren’t being worn or carried.
 
 
+</statblock>
 
 

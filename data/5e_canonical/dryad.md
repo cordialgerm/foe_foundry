@@ -33,6 +33,7 @@ As a bonus action, the Dryad can utilize Charming Scent to release an alluring f
 
 Source: 5e_srd
 
+<statblock>
 ## Dryad
 
 *Medium fey, neutral*
@@ -77,7 +78,8 @@ At will: *druidcraft*
 
 Each time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.
 
-The dryad can have no more than one humanoid and up to three beasts charmed at a time.
+The dryad can have no more than one humanoid and up to three beasts charmed at a time.</statblock>
+
 
 
 
@@ -85,6 +87,7 @@ The dryad can have no more than one humanoid and up to three beasts charmed at a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dryad
 
 *Medium* *Fey*
@@ -117,6 +120,7 @@ Source: 5e_artisinal_monsters
 - **Fey Charm (3/Day):** A humanoid or beast within 30 feet makes a DC 13 Wisdom saving throw. On a failure  it is magically charmed. While charmed in this way  the target regards the dryad as a trusted ally and is disposed to interpret the dryads requests and actions favorably. The creature can repeat this saving throw if the dryad or the dryads allies harm it  ending the effect on a success. Otherwise  the effect lasts 24 hours. If the creature succeeds on a saving throw against Fey Charm or the effect ends for it  it is immune to Fey Charm for 24 hours.
 
 
+</statblock>
 
 
 
@@ -125,6 +129,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dryad
 
 *Medium fey*
@@ -163,5 +168,6 @@ Source: 5e_artisinal_monsters
 - **Charming Scent.** The dryad emits an alluring, floral scent toward one Beast or Humanoid it can see within 30 feet of it. The target must succeed on a DC 14 WIS save or be charmed for 1 minute. While charmed, the target views the dryad as an ally and views the dryad’s requests favorably, though it isn’t under the dryad’s control. The charmed creature can repeat the save at the end of each of its turns, ending the effect on itself on a success. The dryad can have up to two creatures charmed in this way at a time.
 - **Forest’s Aid (21 HP or Fewer, 1/Day).** The dryad magically calls a horde of squirrels, rabbits, mice, and other small animals native to the forest. The horde uses the statistics of 1 swarm of rats. The called creatures arrive on initiative count 20 of the next round, acting as allies of the dryad and obeying its spoken commands. They remain for 1 hour, until the dryad dies, or until the dryad dismisses them as a bonus action.
 
+</statblock>
 
 

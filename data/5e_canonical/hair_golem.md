@@ -21,6 +21,7 @@ In summary, the Hair Golem is a construct that excels in speed and immunity to v
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hair Golem
 
 *Small* *Construct* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Lash:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage. The target must succeed on a DC 11 Dexterity saving throw or be knocked prone.
 
 
+</statblock>
 
 

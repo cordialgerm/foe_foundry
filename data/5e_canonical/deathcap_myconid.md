@@ -21,6 +21,7 @@ The Eject Spores ability allows the Deathcap Myconid to release a cloud of spore
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deathcap Myconid
 
 *Medium* *Plant* *Neutral Evil*
@@ -48,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The myconid can use its Eject Spores. It then makes two Spore-Coated Fist attacks.
 - **Spore-Coated Fist:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage plus 10 (3d6) poison damage.
 - **Eject Spores:** The myconid ejects one of the following types of spores at one creature it can see within 15 feet of it.
+</statblock>
 
 

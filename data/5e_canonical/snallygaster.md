@@ -29,6 +29,7 @@ Finally, the Snallygaster possesses a unique reaction known as Parry Spell, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snallygaster
 
 *Huge* *Aberration* *unaligned*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Parry Spell:** If it succeeds on save vs. spell of 5th level or lower that targets only snallygaster spell has no effect. If snallygaster succeeds on save by 5+ spell is reflected back at spellcaster using slot level spell save DC attack bonus and spellcasting ability of caster
 
 
+</statblock>
 
 

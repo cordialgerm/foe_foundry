@@ -27,6 +27,7 @@ In addition to these actions, Hraesvelgr can take legendary actions after anothe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hraesvelgr
 
 *Huge* *Giant* *Titan)*
@@ -79,5 +80,6 @@ Hraesvelgr can take 3 legendary actions, choosing from the options below. Only o
 - **Attack:** Hraesvelgr makes a Fist or Talons attack.
 - **Move:** Hraesvelgr moves up to his speed, or flies up to half his flying speed if in roc form, without provoking opportunity attacks.
 - **Ear-Splitting Screech (Costs 2 Actions; Roc Form Only):** Hraesvelgr lets out an ear-splitting screech. Each creature within 30 feet of Hraesvelgr must succeed on a DC 19 Constitution saving throw or take 14 (4d6) thunder damage and be deafened until the end of its next turn.
+</statblock>
 
 

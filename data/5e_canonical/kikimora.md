@@ -21,6 +21,7 @@ Another special ability, House Pests, allows the Kikimora to summon a swarm of b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kikimora
 
 *Medium* *Fey* *Chaotic Neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Homeward Step:** While within a structure containing its hidden home (see the Hidden Home trait), the kikimora magically teleports, along with any equipment it is wearing or carrying, to an unoccupied space within 15 feet of the hidden home’s symbol.
+</statblock>
 
 

@@ -23,6 +23,7 @@ If the A-mi-kuk successfully grapples a target, it can use its Strangle ability.
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # A-mi-kuk
 
 *Huge* *Aberration* *chaotic evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Strangle:** The a-mi-kuk strangles one creature grappled by it. The target must make a DC 16 Strength saving throw. On a failure, the target takes 27 (6d8) bludgeoning damage, can’t breathe, speak, or cast spells, and begins suffocating. On a success, the target takes half the bludgeoning damage and is no longer grappled. Until this strangling grapple ends (escape DC 16), the target takes 13 (3d8) bludgeoning damage at the start of each of its turns. The a-mi-kuk can strangle up to two Medium or smaller targets or one Large target at a time.
 
 
+</statblock>
 
 

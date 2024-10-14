@@ -19,6 +19,7 @@ Overall, the Wood Ward is a durable and fear-inducing protector with specific vu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wood Ward
 
 *Medium* *Construct* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Horror Gaze (1/Day):** The wood ward’s eye sockets release an eerie glow in a 30-foot cone. Each creature in the area must succeed on a DC 10 Charisma saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the wood ward’s Horror Gaze for the next 24 hours.
 
 
+</statblock>
 
 

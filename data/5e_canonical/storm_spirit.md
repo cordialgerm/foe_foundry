@@ -19,6 +19,7 @@ In terms of actions, the Storm Spirit can perform a Thunder Slam, a melee weapon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Storm Spirit
 
 *Medium* *Elemental* *neutral*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Tempest (Recharge 6):** Each creature within 10 feet of the spirit must succeed on a DC 12 Dexterity saving throw. On a failure, a creature takes 5 (2d4) lightning damage, 5 (2d4) thunder damage, is thrown 10 feet in a random direction, and is knocked prone.
 
 
+</statblock>
 
 

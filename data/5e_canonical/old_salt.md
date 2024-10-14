@@ -27,6 +27,7 @@ Finally, as a bonus action, the Old Salt can use "Cunning Action" to take a Dash
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Old Salt
 
 *Medium* *Undead* *neutral evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Cunning Action:** Take Dash Disengage or Hide.
 
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ This combination of physical and magical capabilities makes the Merrow Mage an u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Merrow Mage
 
 *Large* *Monstrosity*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility (2nd-Level; V:** The mage is invisible for 1 hour or until it attacks, uses Mage Bolt, or casts a spell.
 
 
+</statblock>
 
 

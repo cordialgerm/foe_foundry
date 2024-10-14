@@ -44,6 +44,7 @@ Overall, the Ice Devil is a powerful adversary with an array of abilities that e
 
 Source: 5e_srd
 
+<statblock>
 ### Ice Devil
 
 *Large fiend (devil), lawful evil*
@@ -90,7 +91,8 @@ Source: 5e_srd
 
 When the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is incapacitated. The creature then makes a DC 17 Dexterity saving throw, taking 35 (10d6) cold damage on a failed save, or half as much damage on a successful one.
 
-The wall lasts for 1 minute or until the devil is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes.
+The wall lasts for 1 minute or until the devil is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes.</statblock>
+
 
 
 
@@ -98,6 +100,7 @@ The wall lasts for 1 minute or until the devil is incapacitated or dies. The wal
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Devil
 
 *Large* *Fiend*
@@ -144,6 +147,7 @@ Source: 5e_artisinal_monsters
 - **Freezing Blood (1/Day):** When a creature within 60 feet that the devil can see hits it with a ranged attack or includes it in a spells area, the creature makes a DC 16 Constitution saving throw. On a failure, the creature takes 10 (3d6) cold damage and is slowed until the end of its next turn.
 
 
+</statblock>
 
 
 
@@ -152,6 +156,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Devil
 
 *Large fiend (devil)*
@@ -193,5 +198,6 @@ Source: 5e_artisinal_monsters
 
 - **Ice Shield.** When the ice devil or a friendly creature it can see is hit by an attack, the devil can create a magical barrier of ice to disrupt the attack. The target halves the damage from the attack.
 
+</statblock>
 
 

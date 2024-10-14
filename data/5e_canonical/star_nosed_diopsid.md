@@ -21,6 +21,7 @@ Additionally, the Star-Nosed Diopsid can utilize **Share Senses** to see and hea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Star-Nosed Diopsid
 
 *Large* *Aberration* *lawful evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Control Envenomed (3/Day):** While within 300' of an envenomed Humanoid diopsid can telepathically suggest course of activity to it. Humanoid must make DC 16 Wis save or pursue the activity suggested to it. Success: Humanoid takes 11 (2d10) psychic and has disadvantage next time it makes this save. Works like suggestion spell and Humanoid unaware of diopsid’s influence.
 
 
+</statblock>
 
 

@@ -29,6 +29,7 @@ Lastly, as a bonus action, the Ink Devil can use Disrupt Concentration, forcing 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ink Devil
 
 *Small* *Fiend* *Lawful Evil*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Disrupt Concentration:** One spellcaster concentrating on a spell within 30 feet of the ink devil that the devil can see must succeed on a DC 13 Wisdom saving throw or lose concentration on the spell.
+</statblock>
 
 

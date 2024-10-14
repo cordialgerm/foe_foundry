@@ -25,6 +25,7 @@ As for its spellcasting capabilities, the Deep One Priest has access to several 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deep One Priest
 
 *Medium* *Humanoid* *Chaotic Evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
 - **Jolting Touch:** Melee Spell Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) lightning damage, and the target’s speed is reduced by 10 until the end of its next turn.
 - **Spellcasting:** The deep one priest casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 13):<br>At will: guidance, thaumaturgy<br>3/day each: command, sleep<br>1/day each: spirit guardians
+</statblock>
 
 

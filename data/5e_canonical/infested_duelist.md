@@ -48,6 +48,7 @@ The Infested Duelist can react to attacks with a unique ability:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Npc: Infested Duelist
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -88,5 +89,6 @@ Source: 5e_artisinal_monsters
 - **Spore Cloud:** When it takes damage from a ranged attack emits a burst of thick yellow spores that surround infested duelist and heavily obscure area within 5 ft. of it. Spores dissipate at start of duelist’s next turn.
 
 
+</statblock>
 
 

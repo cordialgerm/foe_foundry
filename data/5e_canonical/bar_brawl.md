@@ -35,6 +35,7 @@ Overall, the Bar Brawl serves as an impactful combatant that thrives in chaotic 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bar Brawl
 
 *Huge* *Humanoid* *unaligned*
@@ -69,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Darts:** Ranged Weapon Attack: +3 to hit, range 20/40 ft. Hit: 10 (4d4) piercing damage, or 5 (2d4) if the bar brawl has half its hit points or fewer.
 
 
+</statblock>
 
 

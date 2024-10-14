@@ -19,6 +19,7 @@ The Mi-Go's actions in combat include a "Multiattack" option, allowing it to per
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mi-Go
 
 *Medium* *Plant* *Neutral Evil*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) slashing damage, and the target is grappled (escape DC 15) if it is a Large or smaller creature.
 - **Psychic Bolt:** Ranged Spell Attack: +10 to hit, range 120 ft., one target. Hit: 17 (3d6 + 7) psychic damage.
 - **Spore Burst (Recharge 5–6):** The mi-go releases hallucinogenic spores in a 30-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 21 (6d6) poison damage and is incapacitated until the end of its next turn. On a success, a creature takes half the damage and isn’t incapacitated.
+</statblock>
 
 

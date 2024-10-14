@@ -25,6 +25,7 @@ Another potent action it can take is "Shadow Shift." This ability allows the Som
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Somberweave
 
 *Medium* *Fey* *neutral evil*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Shift:** The somberweave touches a creature restrained by its webbing and transports itself and the creature into the Shadow Realm or the Material Plane, the somberweave’s choice. The somberweave and the target appear within 5 feet of each other in unoccupied spaces in the chosen plane. The destination location must be within 10 feet of the somberweave’s anchored web. If the target is unwilling, it can make a DC 14 Charisma saving throw. On a success, the somberweave is transported but the target isn’t.
 
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ Finally, the Fomorian has the ability called Immortal Form that allows it to cha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fomorian
 
 *Huge* *Fey*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Immortal Form:** While in its lair, the fomorian magically changes into a specific Medium humanoid resembling a human or back to its true form. Apart from its size, its statistics are unchanged. The fomorian reverts to its true form when it dies, is incapacitated, or leaves its lair.
 
 
+</statblock>
 
 

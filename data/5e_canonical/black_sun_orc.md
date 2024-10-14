@@ -35,6 +35,7 @@ Overall, the Black Sun Orc is a hybrid predator that can engage effectively in v
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Sun Orc
 
 *Medium* *Humanoid* *chaotic evil*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Sling:** Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

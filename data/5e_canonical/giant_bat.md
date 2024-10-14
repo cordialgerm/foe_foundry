@@ -31,6 +31,7 @@ For actions, the Giant Bat can perform a Bite attack. This is a melee weapon att
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Bat
 
 *Large beast, unaligned*
@@ -57,7 +58,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 5 (1d6+2) piercing damage.
+***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 5 (1d6+2) piercing damage.</statblock>
+
 
 
 
@@ -65,6 +67,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bat, Giant
 
 *Large beast*
@@ -97,6 +100,7 @@ Source: 5e_artisinal_monsters
 
 - **Dizzying Screech.** The bat releases a dizzying screech at one creature within 10 feet of it. If the target can hear the screech, it must succeed on a DC 12 CON save or be disoriented until the end of its next turn. When a disoriented creature moves, it moves in a random direction.
 
+</statblock>
 
 
 
@@ -105,6 +109,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Bat
 
 *Large* *Beast*
@@ -133,5 +138,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ One of its most strategic abilities is Invisibility, allowing the Beastrider to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brownie Beastrider
 
 *Tiny* *Fey* *neutral good*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Beasts of the Forest (1/Day):** Magically calls 2d4 hawks or ravens or it calls 1 black bear or wolf. Called creatures arrive in 1d4 rounds acting as allies of brownie and obeying its spoken commands. The Beasts remain for 1 hr until brownie dies or until brownie dismisses them as a bonus action.
 
 
+</statblock>
 
 

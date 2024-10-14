@@ -23,6 +23,7 @@ Overall, the Giant Firestorm leads with its impressive offensive capabilities, s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant, Firestorm
 
 *Huge* *Giant* *neutral*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Lava Geyser (Recharge 5–6):** Gestures at a point on the ground it can see within 60' of it. A fountain of molten rock erupts from that point in a 10 ft. radius 40' high cylinder. The area is difficult terrain for 1 min. Each creature in the cylinder must make a DC 16 Dex save. On a failure a creature takes 24 (7d6) fire and is coated in hardened lava. On a success a creature takes half the damage and isn’t coated in hardened lava. A creature coated in hardened lava has its speed halved while it remains coated. A creature including the coated creature can take its action to break and remove the hardened lava ending the effect.
 
 
+</statblock>
 
 

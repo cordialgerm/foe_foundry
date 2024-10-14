@@ -25,6 +25,7 @@ Overall, the Nariphon is a dangerous opponent that uses its environment and clon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nariphon
 
 *Huge* *Plant* *neutral*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Bury:** One creature grappled by nariphon is knocked prone dragged into ground and buried just below surface ending grapple. Victim is restrained unable to breathe or stand up. Creature including victim can use action to free buried creature via DC 18 Str.
 
 
+</statblock>
 
 

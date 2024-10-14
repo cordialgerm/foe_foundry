@@ -23,6 +23,7 @@ Overall, the Wereshark is a cunning and dangerous predator, ready to exploit any
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wereshark
 
 *Large* *Humanoid* *chaotic evil*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Trident (Humanoid or Hybrid Form Only):** Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage if used with two hands to make a melee attack.
 
 
+</statblock>
 
 

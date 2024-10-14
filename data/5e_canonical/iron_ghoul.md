@@ -21,6 +21,7 @@ Overall, the Iron Ghoul presents a complex challenge, combining physical might w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Iron Ghoul
 
 *Medium* *Undead* *Lawful Evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 18 (4d6 + 4) slashing damage. If the target is a creature other than an elf or Undead, it must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Glaive:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) slashing damage.
 - **Heavy Crossbow:** Ranged Weapon Attack: +6 to hit, range 100/400, one target. Hit: 8 (1d10 + 3) piercing damage.
+</statblock>
 
 

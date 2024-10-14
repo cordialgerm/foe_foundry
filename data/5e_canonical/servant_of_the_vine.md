@@ -32,6 +32,7 @@ The Servant also possesses a powerful action called Stuporous Breath, which can 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Servant of the Vine
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -71,5 +72,6 @@ Cantrips (at will): guidance, light, sacred flame, thaumaturgy
 - **Stuporous Breath (Recharge 5-6):** The servant of the vine exhales potent fumes in a 15-foot cone. Each creature in that area must make a DC 14 Constitution saving throw. On a failure, a creature takes 21 (6d6) poison damage and falls asleep, remaining unconscious for 1 minute. On a success, a creature takes half the damage but doesn't fall asleep. The unconscious target awakens if it takes damage or another creature takes an action to wake it. When the creature wakes, it is poisoned until it finishes a short or long rest. The breath has no effect on constructs or undead.
 
 
+</statblock>
 
 

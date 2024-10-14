@@ -25,6 +25,7 @@ Additionally, the Behir Magus has various reactive abilities. Vengeful Breath ca
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Behir Magus
 
 *Huge* *Monstrosity*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Drain Charge (1/Day):** When subjected to lightning damage, the behir takes no damage, and the attacker or caster takes necrotic damage equal to the lightning damage dealt.
 
 
+</statblock>
 
 

@@ -27,6 +27,7 @@ Finally, the Mindshard can react to attacks with its Enthralling Defense. When a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mindshard
 
 *Small* *Aberration* *neutral evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Enthralling Defense:** When a creature the mindshard can see within 30' of it hits it with an attack that creature must make DC 14 Cha save or be charmed until end of its next turn.
 
 
+</statblock>
 
 

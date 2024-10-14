@@ -25,6 +25,7 @@ The Extract Heart ability is a powerful melee weapon attack that can only be exe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gaunt One
 
 *Medium* *Aberration* *neutral evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Extract Heart:** Melee Weapon Attack: +6 to hit, reach 5 ft., one humanoid grappled by the gaunt one. Hit: The target must make a DC 13 Constitution saving throw, taking 22 (5d8) piercing damage on a failed save, or half as much damage on a successful one. If this damage reduces the target to 0 hp, the gaunt one kills the target by extracting and devouring its heart.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ For reactions, the Whistle ability allows the Steam Golem to disrupt spellcastin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Steam Golem
 
 *Large* *Construct* *Unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Whistle (Recharge 4–6):** When a creature the steam golem can see within 30 feet of it casts a spell, the steam golem emits a shriek from its twin steam whistles. The spellcaster must succeed on a DC 17 Constitution saving throw or the spell fails and has no effect.
+</statblock>
 
 

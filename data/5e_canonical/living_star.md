@@ -19,6 +19,7 @@ When it comes to its actions, the Living Star can make three attacks using its M
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Living Star
 
 *Huge* *Celestial* *any alignment*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Silvered Ray:** Ranged Spell Attack: +12 to hit, range 150 ft., one target. Hit: 28 (4d10 + 6) radiant damage, and the target must succeed on a DC 19 Charisma saving throw or be stunned until the end of its next turn.
 
 
+</statblock>
 
 

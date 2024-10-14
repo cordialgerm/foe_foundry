@@ -19,6 +19,7 @@ In combat, the Library Automaton can perform the Piston-Powered Kick action, whi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Library Automaton
 
 *Small* *Construct* *Lawful Neutral*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Piston-Powered Kick:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) bludgeoning damage.
 - **Unnerving Gaze:** Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 6 (1d6 + 3) psychic damage, and the target must succeed on a DC 13 Wisdom saving throw or have disadvantage on the next attack roll, ability check, or saving throw it makes before the start of the automaton’s next turn.
+</statblock>
 
 

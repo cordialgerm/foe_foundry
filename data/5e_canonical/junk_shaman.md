@@ -35,6 +35,7 @@ Additionally, the Junk Shaman can unleash a Flame Jet as a ranged spell attack w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Junk Shaman
 
 *Small* *Humanoid* *lawful neutral*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Flame Jet:** Ranged Spell Attack: +5 to hit, range 120 ft., one target. Hit: 7 (2d6) fire damage. If the target is a creature or flammable object that isn't being worn or carried, it ignites. Until a creature takes an action to douse the fire, the target takes 3 (1d6) fire damage at the start of each of its turns.
 
 
+</statblock>
 
 

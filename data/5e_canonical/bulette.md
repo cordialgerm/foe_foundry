@@ -43,6 +43,7 @@ Overall, the bulette presents a formidable challenge in combat, relying on both 
 
 Source: 5e_srd
 
+<statblock>
 ## Bulette
 
 *Large monstrosity, unaligned*
@@ -71,7 +72,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 30 (4d12+4) piercing damage.
 
-***Deadly Leap***. If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6+4) bludgeoning damage plus 14 (3d6+4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space.
+***Deadly Leap***. If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6+4) bludgeoning damage plus 14 (3d6+4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space.</statblock>
+
 
 
 
@@ -79,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bulette
 
 *Large* *Monstrosity*
@@ -114,6 +117,7 @@ Source: 5e_artisinal_monsters
 - **Hard Carapace (1/Day):** After taking damage from an attack, the bulette lies down and closes its eyes, protecting all vulnerable spots. Until the beginning of its next turn, its AC becomes 21 and it has advantage on saving throws.
 
 
+</statblock>
 
 
 
@@ -122,6 +126,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bulette
 
 *Large monstrosity*
@@ -156,5 +161,6 @@ Source: 5e_artisinal_monsters
 
 - **Seek Prey.** The bulette looks and sniffs around for new prey, releasing a satisfied, guttural chirp when it settles on one. One creature the bulette can see or sense within 30 feet of it and that can see or hear the bulette must make a DC 15 WIS save. On a failure, the target is frightened until the end of its next turn, and the bulette has advantage on the next attack roll it makes against the creature before the start of its next turn.
 
+</statblock>
 
 

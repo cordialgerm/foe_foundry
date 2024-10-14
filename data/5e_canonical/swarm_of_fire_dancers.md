@@ -23,6 +23,7 @@ The Frightening Visage, which has a recharge time requiring a roll of 5-6 on a s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Fire Dancers
 
 *Medium* *Swarm* *Elemental* *Neutral Evil*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The swarm of fire dancers can use its Frightening Visage, if available. It then makes two Singe attacks.
 - **Singe:** Melee Weapon Attack: +8 to hit, reach 0 ft., one target in the swarm’s space. Hit: 22 (4d10) fire damage, or 11 (2d10) fire damage if the swarm has half its hp or fewer.
 - **Frightening Visage (Recharge 5–6):** The swarm rearranges itself into the shape of a giant, blue, flaming Humanoid skull. Each Humanoid within 30 feet of the swarm that can see it must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

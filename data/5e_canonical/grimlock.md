@@ -37,6 +37,7 @@ Overall, the Grimlock is a creature that relies on stealth, awareness, and cleve
 
 Source: 5e_srd
 
+<statblock>
 ## Grimlock
 
 *Medium humanoid (grimlock), neutral evil*
@@ -69,7 +70,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Spiked Bone Club***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d4+3) bludgeoning damage plus 2 (1d4) piercing damage.
+***Spiked Bone Club***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d4+3) bludgeoning damage plus 2 (1d4) piercing damage.</statblock>
+
 
 
 
@@ -77,6 +79,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grimlock
 
 *Medium* *Humanoid*
@@ -108,6 +111,7 @@ Source: 5e_artisinal_monsters
 - **Sling:** Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -116,6 +120,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grimlock
 
 *Medium humanoid*
@@ -152,5 +157,6 @@ Source: 5e_artisinal_monsters
 	- Illusory Dancer. The grimlock throws a small disk that emits a blurry, fractured illusion of a graceful, humanoid dancer. The target must succeed on a DC 11 CHA save or be incapacitated until the end of its next turn as it is mesmerized by the dance.
 	- Whirling Death. The grimlock throws a small, bladed gear that grows larger and larger as it travels toward the target, threatening to slice the target into pieces. The target must succeed on a DC 11 WIS save or be frightened until the end of its next turn. On a success, the target realizes the gear’s growth was a magical, illusory effect and that the gear never increased in size.
 
+</statblock>
 
 

@@ -28,6 +28,7 @@ Overall, the Moldering Devil presents a unique challenge that focuses on environ
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil, Moldering
 
 *Small* *Fiend* *lawful evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, 5 ft., one target, 4 (1d4+2) piercing damage + 3 (1d6) necrotic.
 
 
+</statblock>
 
 

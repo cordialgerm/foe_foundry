@@ -21,6 +21,7 @@ As a bonus action, the Myling can use its Bury Alive ability, which can be activ
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Myling
 
 *Small* *Undead* *Chaotic Evil*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Bury Alive (Recharge 6):** The creature to which the myling is attached is knocked prone, dragged into the ground, and buried just below the surface, ending the attachment. The buried creature is restrained and unable to breathe or stand up. A creature, including the buried creature, can take its action to free the buried creature by succeeding on a DC 13 Strength check.
+</statblock>
 
 

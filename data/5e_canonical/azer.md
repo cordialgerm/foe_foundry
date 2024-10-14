@@ -37,6 +37,7 @@ As a bonus action, the Azer can activate "Blazing Bulwark," creating a line of f
 
 Source: 5e_srd
 
+<statblock>
 ## Azer
 
 *Medium elemental, lawful neutral*
@@ -71,7 +72,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Warhammer***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) bludgeoning damage, or 8 (1d10+3) bludgeoning damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage.
+***Warhammer***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) bludgeoning damage, or 8 (1d10+3) bludgeoning damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage.</statblock>
+
 
 
 
@@ -79,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Azer
 
 *Medium* *Elemental*
@@ -114,6 +117,7 @@ Source: 5e_artisinal_monsters
 - **Fire Step:** While standing in fire, the azer can magically teleport up to 90 feet to a space within fire.
 
 
+</statblock>
 
 
 
@@ -122,6 +126,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Azer
 
 *Medium elemental*
@@ -156,5 +161,6 @@ Source: 5e_artisinal_monsters
 
 - **Blazing Bulwark.** The azer creates fire in a 15-foot line that is 1 foot wide, originating from a point the azer can see within 15 feet of it. This line is an opaque wall that is 3 feet tall and provides half-cover to creatures behind it. A creature that moves through the line takes damage as if it touched the azer. The line of fire lasts for 1 minute or until the azer uses this bonus action again.
 
+</statblock>
 
 

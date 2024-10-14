@@ -23,6 +23,7 @@ Overall, the Howler Baboon is an agile and strong beast that thrives in group co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Howler Baboon
 
 *Medium* *Beast* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

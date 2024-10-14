@@ -21,6 +21,7 @@ Additionally, as a bonus action, the Vampiric Vanguard can perform the "Fleet of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampiric Vanguard
 
 *Medium* *Undead* *neutral evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Fleet of Foot:** Takes the Dash action.
 
 
+</statblock>
 
 

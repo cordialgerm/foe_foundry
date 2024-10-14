@@ -21,6 +21,7 @@ For bonus actions, the assassin has access to Cunning Action, enabling it to qui
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Half-Shadow Dragon Assassin
 
 *Medium* *Humanoid*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Rapid Attack:** The assassin attacks with their shortsword.
 
 
+</statblock>
 
 

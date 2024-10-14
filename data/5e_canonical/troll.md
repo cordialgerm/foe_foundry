@@ -33,6 +33,7 @@ Additionally, the troll has a "Ravenous Frenzy" bonus action that it can activat
 
 Source: 5e_srd
 
+<statblock>
 ## Troll
 
 *Large giant, chaotic evil*
@@ -65,7 +66,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 7 (1d6+4) piercing damage.
 
-***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.
+***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.</statblock>
+
 
 
 
@@ -73,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Troll
 
 *Large* *Giant*
@@ -106,6 +109,7 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (2d4 + 4) slashing damage.
 
 
+</statblock>
 
 
 
@@ -114,6 +118,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Troll
 
 *Large giant*
@@ -149,5 +154,6 @@ Source: 5e_artisinal_monsters
 
 - **Ravenous Frenzy (52 HP or Fewer).** Desperate for a meal as its injuries mount, the troll moves up to half its speed and makes one Bite attack against a creature it can see within range. The troll then regains HP equal to half the damage dealt.
 
+</statblock>
 
 

@@ -35,6 +35,7 @@ Overall, the Lakescourge Lotus is a deadly aquatic foe that excels in area contr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lakescourge Lotus
 
 *Medium* *Undead* *chaotic evil*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Enter Reflection:** Touches a body of water large enough to hold it and becomes a reflection on water's surface. While in this form has immunity to B/P/S damage from nonmagical attacks and resistance to B/P/S from magical attacks. While a reflection speed is 5 ft. can’t use Tainted Claw and can revert to its true form as a bonus action. If it takes damage that isn’t bludgeoning piercing or slashing while a reflection forced back into its true form.
 
 
+</statblock>
 
 

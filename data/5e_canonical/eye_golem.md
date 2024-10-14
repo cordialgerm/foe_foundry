@@ -36,6 +36,7 @@ Overall, the Eye Golem is a major asset in a confrontation, capable of deliverin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eye Golem
 
 *Large* *Construct* *Unaligned*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) bludgeoning damage plus 18 (4d8) radiant damage.
 - **Gaze of Ancient Light (Recharge 5–6):** The golem opens all of its eyes and emits a burst of blinding light. Each creature within 30 feet of it must make a DC 17 Dexterity saving throw. On a failure, a creature takes 35 (10d6) radiant damage and is blinded for 1 minute. On a success, a creature takes half the damage and isn’t blinded. A creature that fails the saving throw by 5 or more is also stunned until the end of its next turn. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Primal Voice of Doom:** The golem intones a disturbing invocation of the sun god at one creature it can see within 30 feet of it. The target must succeed on a DC 17 Wisdom saving throw or be frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

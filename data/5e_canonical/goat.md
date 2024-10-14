@@ -35,6 +35,7 @@ In terms of actions, the Goat can perform a Ram attack, which requires it to mak
 
 Source: 5e_srd
 
+<statblock>
 ### Goat
 
 *Medium beast, unaligned*
@@ -61,7 +62,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Ram***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 3 (1d4+1) bludgeoning damage.
+***Ram***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 3 (1d4+1) bludgeoning damage.</statblock>
+
 
 
 
@@ -69,6 +71,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goat
 
 *Medium* *Beast*
@@ -92,6 +95,7 @@ Source: 5e_artisinal_monsters
 - **Ram:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage. If the target is a creature and the goat moves at least 20 feet straight towards the target before the attack  the target takes an extra 2 (1d4) bludgeoning damage and makes a DC 10 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 
 
@@ -100,6 +104,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goat
 
 *Medium beast*
@@ -127,5 +132,6 @@ Source: 5e_artisinal_monsters
 
 - **Ram.** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Overall, the Giant Wolf Spider serves as a nimble and stealthy predator, using i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spider, Giant Wolf
 
 *Medium beast*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Hunter’s Leap.** The spider jumps up to 20 feet horizontally or up to 10 feet vertically toward a hostile creature that it can see. This movement doesn’t provoke opportunity attacks.
 
+</statblock>
 
 

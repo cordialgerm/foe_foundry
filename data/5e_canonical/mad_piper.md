@@ -28,6 +28,7 @@ In terms of actions, the Mad Piper can perform the following:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mad Piper
 
 *Large* *Construct* *neutral*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Terrible Dirge:** The mad piper plays a haunting dirge. Each creature of the mad piper’s choice that is within 30 feet of the piper and can hear the dirge must succeed o a DC 13 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the mad piper’s Terrible Dirge for the next 24 hours.
 
 
+</statblock>
 
 

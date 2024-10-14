@@ -25,6 +25,7 @@ Overall, the Speaker to the Darkness presents an intriguing combination of necro
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Speaker to the Darkness
 
 *Small* *Humanoid* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Extinguish Light (1/rest):** The speaker creates a 15-foot-radius sphere of magical darkness on a point it can see within 60 feet. This darkness works like the darkness spell, except creatures inside it have disadvantage on saving throws and the speaker and its conjured ghasts are unaffected by the darkness.
 
 
+</statblock>
 
 

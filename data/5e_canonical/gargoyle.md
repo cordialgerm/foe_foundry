@@ -54,6 +54,7 @@ Overall, the gargoyle balances offensive capabilities with tactical advantages t
 
 Source: 5e_srd
 
+<statblock>
 ## Gargoyle
 
 *Medium elemental, chaotic evil*
@@ -88,7 +89,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Claws.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) slashing damage.
+***Claws.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) slashing damage.</statblock>
+
 
 
 
@@ -96,6 +98,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gargoyle
 
 *Medium* *Elemental*
@@ -131,6 +134,7 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -139,6 +143,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gargoyle
 
 *Medium elemental*
@@ -173,5 +178,6 @@ Source: 5e_artisinal_monsters
 
 - **Fearsome Mien.** When a creature the gargoyle can see hits it with an attack, the gargoyle can shift its face to appear more monstrous. The attacker must succeed on a DC 13 WIS save or be frightened of the gargoyle until the end of its next turn.
 
+</statblock>
 
 

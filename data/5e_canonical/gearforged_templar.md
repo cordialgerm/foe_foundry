@@ -25,6 +25,7 @@ Overall, the Gearforged Templar stands as a resilient and formidable presence on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gearforged Templar
 
 *Medium* *Construct* *Lawful Neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Defensive Zone:** When a creature enters the gearforged templar’s reach, the templar makes one Greatsword attack against the creature.
 - **Parry:** The gearforged templar adds 3 to its AC against one melee attack that would hit it. To do so, the templar must be able to see the attacker and must be wielding a melee weapon.
+</statblock>
 
 

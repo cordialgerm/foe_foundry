@@ -23,6 +23,7 @@ The Pesta Hag has supportive abilities as well, like **Curative Touch**, which s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hag, Pesta
 
 *Medium* *Fey* *chaotic neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Summon Plague Rats (1/Day):** Magically calls 1d3 rat swarms. Arrive in 1d4 rounds act as hag allies and obey her spoken commands. Swarms carry a terrible disease. If creature takes damage from swarm’s Bites: DC 10 Con save or contract the disease. Until disease is cured creature can’t regain hp except by magically and target’s hp max decreases by 3 (1d6) every 24 hrs. If creature’s hp max drops to 0 as a result of this disease it dies. Rats remain 1 hr until hag dies or hag dismisses them as bonus action.
 
 
+</statblock>
 
 

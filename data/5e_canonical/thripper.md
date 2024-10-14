@@ -23,6 +23,7 @@ Overall, the Thripper is a formidable foe, especially against fey enemies, lever
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thripper
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Glamour Counter:** When creature thripper can see within 30' of it casts spell can counter the spell. This works like counterspell spell with +6 spellcasting ability check except thripper can counter only enchantment or illusion spells and it must make the ability check regardless of spell’s level.
 
 
+</statblock>
 
 

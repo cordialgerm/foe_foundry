@@ -27,6 +27,7 @@ Its most formidable action is the Tidal Breath ability, which recharges on a rol
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sea Dragon Wyrmling
 
 *Medium* *Dragon* *Neutral Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) cold damage.
 - **Tidal Breath (Recharge 5–6):** The dragon exhales a crushing wave of frigid seawater in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw. On a failure, the creature takes 11 (2d10) bludgeoning damage and 11 (2d10) cold damage and is pushed up to 5 feet away from the dragon and knocked prone. On a success, the creature takes half the damage and isn’t pushed or knocked prone.
+</statblock>
 
 

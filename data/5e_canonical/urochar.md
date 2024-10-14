@@ -23,6 +23,7 @@ The Urochar also has a bonus action called "Hidden Step," allowing it to magical
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Urochar
 
 *Huge* *Aberration* *Chaotic Evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Hidden Step:** The urochar magically teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see and takes the Hide action. Grappled creatures are no longer grappled and don’t teleport with it.
+</statblock>
 
 

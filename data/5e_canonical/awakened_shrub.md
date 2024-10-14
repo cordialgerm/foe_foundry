@@ -37,6 +37,7 @@ Overall, the Awakened Shrub represents a quirky and non-threatening presence in 
 
 Source: 5e_srd
 
+<statblock>
 ### Awakened Shrub
 
 *Small plant, unaligned*
@@ -67,7 +68,8 @@ Source: 5e_srd
 
 ***Rake***. *Melee Weapon Attack:* +1 to hit, reach 5 ft., one target. *Hit:* 1 (1d4-1) slashing damage.
 
-An **awakened shrub** is an ordinary shrub given sentience and mobility by the *awaken* spell or similar magic.
+An **awakened shrub** is an ordinary shrub given sentience and mobility by the *awaken* spell or similar magic.</statblock>
+
 
 
 
@@ -75,6 +77,7 @@ An **awakened shrub** is an ordinary shrub given sentience and mobility by the *
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Awakened Shrub
 
 *Small* *Plant*
@@ -104,6 +107,7 @@ Source: 5e_artisinal_monsters
 - **Rake:** Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 slashing damage.
 
 
+</statblock>
 
 
 
@@ -112,6 +116,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Awakened Shrub
 
 *Small plant*
@@ -141,5 +146,6 @@ Source: 5e_artisinal_monsters
 - **Rake.** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) slashing damage.
 - **Thorn.** Ranged Weapon Attack: +2 to hit, range 15/30 ft., one target. Hit: 2 (1d4) piercing damage.
 
+</statblock>
 
 

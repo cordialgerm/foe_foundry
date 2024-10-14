@@ -60,6 +60,7 @@ Overall, the Cave Sovereign is a complex and dangerous adversary whose combinati
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Sovereign
 
 *Huge* *Aberration* *chaotic evil*
@@ -109,5 +110,6 @@ Source: 5e_artisinal_monsters
 - **Telekinetic Reel:** Magically pulls incapacitated or stunned creature by its Deathlights it can see up to 20' straight toward it.
 - **Cast a Spell (2):** Uses Spellcasting.
 - **Tail Attack (2):** Makes one Tail attack.
+</statblock>
 
 

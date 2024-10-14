@@ -23,6 +23,7 @@ The Greater Rakshasa is also capable of performing legendary actions. It can mak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greater Rakshasa
 
 *Medium* *Fiend* *lawful evil*
@@ -65,5 +66,6 @@ The greater rakshasa can take 3 legendary actions, choosing from the options bel
 - **Claw Attack:** The greater rakshasa makes one claw attack.
 - **Misleading Escape (Costs 2 Actions):** The greater rakshasa becomes invisible at the same time that an illusory double of itself appears where it is standing. This switch is indiscernible to others. After the double appears, the greater rakshasa can move up to its speed. Both effects last until the start of the greater rakshasa's next turn, but the invisibility ends if the greater rakshasa makes an attack or casts a spell before then.
 - **Cast a Spell (Costs 3 Actions):** The greater rakshasa casts a spell from its list of innate spells, consuming a use of the spell as normal.
+</statblock>
 
 

@@ -23,6 +23,7 @@ The Aatxe is capable of three legendary actions, providing it with additional ta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aatxe
 
 *Large* *Celestial* *lawful good*
@@ -61,5 +62,6 @@ The aatxe can take 3 legendary actions, choosing from the options below. Only on
 - **Detect:** The aatxe makes a Wisdom (Perception) check.
 - **Gore (Costs 2 Actions):** The aatxe makes one gore attack.
 - **Bulwark (Costs 3 Actions):** The aatxe flares crimson with celestial power, protecting those nearby. The next attack that would hit an ally within 5 feet of the aatxe hits the aatxe instead.
+</statblock>
 
 

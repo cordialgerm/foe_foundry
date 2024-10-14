@@ -23,6 +23,7 @@ Overall, the Swarm of Insects serves as a swarm-style combatant that relies on i
 
 Source: 5e_srd
 
+<statblock>
 ### Swarm of Insects
 
 *Medium swarm of Tiny beasts, unaligned*
@@ -69,7 +70,8 @@ Source: 5e_srd
 >
 >Web Walker. The swarm ignores movement restrictions caused by webbing.
 >
->**Swarm of Wasps**. A swarm of wasps has a walking speed of 5 feet, a flying speed of 30 feet, and no climbing speed.
+>**Swarm of Wasps**. A swarm of wasps has a walking speed of 5 feet, a flying speed of 30 feet, and no climbing speed.</statblock>
+
 
 
 
@@ -77,6 +79,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Insects
 
 *Medium* *Beast*
@@ -107,5 +110,6 @@ Source: 5e_artisinal_monsters
 - **Venom:** Melee Weapon Attack: +4 to hit, reach 0 ft., one target. Hit: 5 (2d4) piercing damage plus 7 (2d6) poison damage  or 2 (1d4) piercing damage plus 3 (1d6) poison damage if the swarm is bloodied.
 
 
+</statblock>
 
 

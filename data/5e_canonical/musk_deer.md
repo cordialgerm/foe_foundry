@@ -21,6 +21,7 @@ Overall, the Musk Deer is well-adapted for evasion and support, using its mobili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Musk Deer
 
 *Tiny* *Beast* *unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Sprinter:** Takes the Dash action.
 
 
+</statblock>
 
 

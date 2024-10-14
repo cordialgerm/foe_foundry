@@ -37,6 +37,7 @@ The Chain Golem serves as a resilient and punishing entity in combat, making it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Golem, Chain
 
 *Large* *Construct* *unaligned*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Imprison:** Creates prison of chains around an up to Med creature grappled by it. Imprisoned: restrained and takes 14 (4d6) piercing damage at start of each of its turns. Imprisoned creature or creature within 5 ft. of golem can use action to free imprisoned creature. Doing so requires DC 16 Str check and creature attempting takes 7 (2d6) piercing damage.
 
 
+</statblock>
 
 

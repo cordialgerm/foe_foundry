@@ -23,6 +23,7 @@ In combat, the Brain Hood attacks using its Slam action, which is a melee weapon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brain Hood
 
 *Tiny* *Aberration* *neutral evil*
@@ -58,5 +59,6 @@ At will: acid splash, chill touch, fire bolt, ray of frost, shocking grasp
 - **Slam:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage. If the target is a beast, the brain hood can attempt to take control of it (see the Merge with Beast trait).
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ In addition to its main actions, The Flesh can use a bonus action called Assume 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # The Flesh
 
 *Medium* *Aberration* *neutral evil*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Assume Form:** Consumes corpse of Med or smaller Humanoid or Beast within 5 ft. and transforms into it. Stats other than size are the same in new form. Any items worn/carried meld into new form. Can’t activate use wield or otherwise benefit from any of its equipment. It reverts to its true aberrant form if it dies makes a Manipulate Flesh attack or uses Assume Form while transformed.
 
 
+</statblock>
 
 

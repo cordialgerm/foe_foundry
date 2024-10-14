@@ -19,6 +19,7 @@ In terms of actions, the Keg Golem has a 'Slam' attack that allows it to perform
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Keg Golem
 
 *Medium* *Construct* *unaligned*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Ale Blast (Recharge 5-6):** The keg golem shoots a 1 gallon jet of ale in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 13 Constitution saving throw. On a failure, a target takes 9 (2d8) poison damage and is poisoned for 1 minute. On a success, a target takes half the damage and isn't poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

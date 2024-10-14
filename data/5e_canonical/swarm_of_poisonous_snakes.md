@@ -23,6 +23,7 @@ Overall, the Swarm of Poisonous Snakes can be a dangerous adversary in the right
 
 Source: 5e_srd
 
+<statblock>
 ### Swarm of Poisonous Snakes
 
 *Medium swarm of Tiny beasts, unaligned*
@@ -51,7 +52,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bites***. *Melee Weapon Attack:* +6 to hit, reach 0 ft., one creature in the swarm's space. *Hit:* 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one.
+***Bites***. *Melee Weapon Attack:* +6 to hit, reach 0 ft., one creature in the swarm's space. *Hit:* 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -59,6 +61,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Poisonous Snakes
 
 *Medium* *Beast*
@@ -88,5 +91,6 @@ Source: 5e_artisinal_monsters
 - **Bites:** Melee Weapon Attack: +6 to hit, reach 0 ft., one target. Hit: 7 (2d6) piercing damage plus 14 (4d6) poison damage  or 3 (1d6) poison damage plus 7 (2d6) poison damage if the swarm is bloodied.
 
 
+</statblock>
 
 

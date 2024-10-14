@@ -25,6 +25,7 @@ The Sinstar also possesses Legendary Actions, such as making an additional Spine
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sinstar
 
 *Tiny* *Plant* *lawful evil*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Spines:** Makes one Spines attack.
 - **Teleport:** Magically teleports up to 120' to an unoccupied spot it sees.
 - **Detonate Thrall (2):** Orders one of its star thralls to explode. Each creature within 10 ft. of the thrall must make a DC 19 Dex save taking 10 (3d6) bludgeoning damage and 7 (2d6) piercing damage on a failed save or half damage if made.
+</statblock>
 
 

@@ -23,6 +23,7 @@ Lastly, the **Echoes of the Abyss** ability, usable once per day, allows the Ech
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Echo
 
 *Medium* *Fiend* *chaotic evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Echoes of the Abyss (1/Day):** The echo demon summons horrible wails from the deep crevasses of the Abyss. Creatures within 60 feet who can hear the wails must succeed on a DC 15 Wisdom saving throw or be stunned until the start of the echo demon's next turn. An affected creature continues hearing the troubling echoes of these cries until it finishes a long rest, and it has disadvantage on Intelligence checks until then.
 
 
+</statblock>
 
 

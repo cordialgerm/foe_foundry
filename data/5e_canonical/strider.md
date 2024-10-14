@@ -21,6 +21,7 @@ As for bonus actions, the Strider can execute an Aimed Strike, granting it advan
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Strider
 
 *Medium* *Humanoid*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Skirmish Step:** The strider moves up to half their Speed without provoking opportunity attacks.
 
 
+</statblock>
 
 

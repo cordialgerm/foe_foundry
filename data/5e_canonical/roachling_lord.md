@@ -19,6 +19,7 @@ During combat, the Roachling Lord can execute a Multiattack action, allowing it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Roachling Lord
 
 *Small* *Humanoid* *Chaotic Neutral*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The roachling lord makes two Begrimed Shortsword or Begrimed Dart attacks.
 - **Begrimed Shortsword:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 3 (1d6) poison damage.
 - **Begrimed Dart:** Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 3 (1d6) poison damage.
+</statblock>
 
 

@@ -23,6 +23,7 @@ Furthermore, the Bloatblossom has a Bonus Action called Instinct to Pursue, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bloatblossom
 
 *Medium plant*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 
 - **Instinct to Pursue.** The bloatblossom takes the Dash action toward an uninfected Humanoid it can see or sense.
 
+</statblock>
 
 

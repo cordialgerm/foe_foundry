@@ -25,6 +25,7 @@ Overall, Avulzor is a complex creature that offers a mix of offensive and defens
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Avulzor
 
 *Large* *Aberration* *lawful evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Animate Bones (Recharge 5-6):** The avulzor creates a skeleton out of a pile of bones or a the corpse of a Large or smaller creature within 10 feet of it. The skeleton is under the control of the avulzor, obeying the avulzor’s mental commands, and uses the statistics of a CR 1 or lower skeleton of your choice. The avulzor can control up to three skeletons at one time. If the avulzor creates a skeleton while it already has three under its control, the oldest skeleton crumbles to dust.
 
 
+</statblock>
 
 

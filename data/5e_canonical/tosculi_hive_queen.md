@@ -25,6 +25,7 @@ In terms of legendary actions, the Hive Queen can choose to fly up to half her f
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tosculi Hive Queen
 
 *Large* *Monstrosity* *Lawful Evil*
@@ -65,5 +66,6 @@ The hive queen can take 3 legendary actions, choosing from the options below. On
 - **Flight:** The hive queen flies up to half her flying speed without provoking opportunity attacks.
 - **Stinger (Costs 2 Actions):** The hive queen makes one Stinger attack.
 - **Glitter Dust (Costs 2 Actions):** The hive queen beats her wings and creates a cloud of glittering, golden particles. Each non-tosculi creature within 20 feet of her must succeed on a DC 17 Dexterity saving throw or be blinded until the end of its next turn.
+</statblock>
 
 

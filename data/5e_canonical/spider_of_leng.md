@@ -23,6 +23,7 @@ Finally, the Spider of Leng has a reaction known as Poisonous Riposte, which all
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spider of Leng
 
 *Large* *Aberration* *Chaotic Evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Poisonous Riposte:** The spider of Leng adds 3 to its AC against one melee attack that would hit it. To do so, the spider must see the attacker. If this effect causes the attack to miss, the attacker takes 4 (1d8) poison damage.
+</statblock>
 
 

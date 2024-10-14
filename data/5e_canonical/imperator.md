@@ -31,6 +31,7 @@ Overall, the Imperator is a formidable presence on the battlefield with a blend 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Imperator
 
 *Huge* *Monstrosity* *neutral*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Muster the Legions (1/Day):** When the imperator is reduced to half its hp or lower it magically calls 1d4 swarms of penguins. The penguins arrive on initiative count 20 of the next round acting as allies of the imperator and obeying its telepathic commands. The penguins remain for 1 hr until the imperator dies or until the imperator dismisses them as a bonus action.
 
 
+</statblock>
 
 

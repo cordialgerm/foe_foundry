@@ -19,6 +19,7 @@ For its actions, the Rum Lord can perform a Multiattack, making two attacks in o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rum Lord
 
 *Small* *Fey* *chaotic evil*
@@ -57,5 +58,6 @@ At will: prestidigitation
 - **Bring Me Another Round! (1/Day):** The rum lord lets out a thunderous belch, calling 1d4 rum gremlins. The called rum gremlins arrive in 1d4 rounds, acting as allies of the lord and obeying its spoken commands. The rum gremlins remain for 1 hour, until the lord dies, or until the lord dismisses them as a bonus action.
 
 
+</statblock>
 
 

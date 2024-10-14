@@ -19,6 +19,7 @@ In combat, the Yumerai makes two attacks using its "Multiattack," employing a "P
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yumerai
 
 *Medium* *Fey* *neutral*
@@ -54,5 +55,6 @@ At will: dancing lights, message, minor illusion
 - **Somnambulism:** The yumerai targets one sleeping creature it can see within 30 feet of it. The yumerai can issue simple commands to the creature, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature takes damage, receives a suicidal command, is told to move into damaging terrain, such as lava or a pit, or is grappled while carrying out the order, it can make a DC 13 Wisdom saving throw, awakening and ending the yumerai’s control on a success. The yumerai can control only one sleeping creature at a time. If it takes control of another, the effect on the previous target ends.
 
 
+</statblock>
 
 

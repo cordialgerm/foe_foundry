@@ -34,6 +34,7 @@ Lastly, the Blood Barnacle can react defensively:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Barnacle
 
 *Tiny* *Beast* *unaligned*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Host Defense:** When a creature damages an attached blood barnacle with anything other than fire creature hosting barnacle must make DC 12 Wis save or use its reaction to protect the barnacle. Barnacle takes half the damage dealt to it and host takes the other half.
 
 
+</statblock>
 
 

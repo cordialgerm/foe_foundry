@@ -32,6 +32,7 @@ In legendary actions, the Avatar can cast spells at will or make a tentacle atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Avatar of Shoth
 
 *Gargantuan* *Aberration* *lawful neutral*
@@ -80,5 +81,6 @@ The avatar can take 3 legendary actions, choosing from the options below. Only o
 - **At Will Spell:** The avatar casts one at will spell.
 - **Oozing Tentacle:** The avatar makes one oozing tentacle attack.
 - **Acid Wave (Costs 2 Actions):** The avatar uses Acid Wave, if it is available.
+</statblock>
 
 

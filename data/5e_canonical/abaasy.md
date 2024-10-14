@@ -31,6 +31,7 @@ In terms of actions, the Abaasy can perform the following:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Abaasy
 
 *Huge* *Giant* *neutral evil*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Eyebeam (Recharge 5–6):** Fires a beam of oscillating energy from its eye in a 90' line that is 5 ft. wide. Each creature in the line: 27 (5d10) radiant (DC 16 Dex half).
 
 
+</statblock>
 
 

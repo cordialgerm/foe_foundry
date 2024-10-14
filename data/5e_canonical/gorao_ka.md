@@ -21,6 +21,7 @@ In combat, the Gorao-Ka can strike with its action called Sack of Coins, making 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gorao-Ka
 
 *Tiny* *Fey* *neutral good*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Find a Penny (Recharge 5-6):** The gorao-ka throws a copper piece into a space within 5 feet of it. A creature that is not hostile to the gorao-ka that picks up the copper piece is blessed with good luck. At any point within the next 1 hour, the creature can roll a d6 and add the number rolled to one attack roll, ability check, or saving throw.<br><br>Alternatively, the bearer of the coin can pass it to another creature of its choice. At any point within the next 8 hours, the new bearer of the coin can roll 2d6 and add the higher result to one attack roll, ability check, or saving throw.
 
 
+</statblock>
 
 

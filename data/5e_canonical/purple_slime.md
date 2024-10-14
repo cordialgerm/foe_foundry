@@ -19,6 +19,7 @@ In combat, the Purple Slime can perform a Multiattack action, making two separat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Purple Slime
 
 *Large* *Ooze* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Spike:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) piercing damage and 10 (3d6) poison damage. In addition, the target must succeed on a DC 14 Constitution saving throw or its Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.
 
 
+</statblock>
 
 

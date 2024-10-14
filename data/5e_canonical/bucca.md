@@ -23,6 +23,7 @@ Overall, the Bucca is a clever and elusive adversary that relies on trickery and
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bucca
 
 *Tiny* *Fey* *Neutral Evil*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 
 - **Dagger:** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or become poisoned for 1 minute. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Invisibility:** The bucca magically turns invisible until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the bucca wears or carries is invisible with it.
+</statblock>
 
 

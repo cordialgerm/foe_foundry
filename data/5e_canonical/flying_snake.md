@@ -25,6 +25,7 @@ Overall, the Flying Snake serves as a minor yet pesky adversary, leveraging its 
 
 Source: 5e_srd
 
+<statblock>
 ### Flying Snake
 
 *Tiny beast, unaligned*
@@ -51,7 +52,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage plus 7 (3d4) poison damage.
 
-A **flying snake** is a brightly colored, winged serpent found in remote jungles. Tribespeople and cultists sometimes domesticate flying snakes to serve as messengers that deliver scrolls wrapped in their coils.
+A **flying snake** is a brightly colored, winged serpent found in remote jungles. Tribespeople and cultists sometimes domesticate flying snakes to serve as messengers that deliver scrolls wrapped in their coils.</statblock>
+
 
 
 
@@ -59,6 +61,7 @@ A **flying snake** is a brightly colored, winged serpent found in remote jungles
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flying Snake
 
 *Tiny* *Beast*
@@ -86,5 +89,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 3 (1d6) poison damage.
 
 
+</statblock>
 
 

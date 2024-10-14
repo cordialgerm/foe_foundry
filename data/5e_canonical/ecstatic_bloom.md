@@ -21,6 +21,7 @@ In terms of actions, the Ecstatic Bloom has a Multiattack feature, allowing it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ecstatic Bloom
 
 *Huge* *Celestial* *neutral good*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Castigate (Recharges after a Short or Long Rest):** The bloom summons a chorus of booming celestial voices that descend into the minds of nearby creatures. Each creature within 30 feet of the bloom must succeed on a DC 17 Wisdom saving throw or be stunned until the end of its next turn. Castigate only affects non-good-aligned creatures with an Intelligence of 5 or higher.
 
 
+</statblock>
 
 

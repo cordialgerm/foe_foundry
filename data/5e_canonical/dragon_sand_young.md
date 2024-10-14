@@ -23,6 +23,7 @@ The dragon's Breath Weapon, which recharges on a roll of 5 or 6, offers two deva
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Sand Young
 
 *Large* *Dragon* *neutral evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapon (Recharge 5–6):** Uses one of the following:Sand Blast. Exhales superheated sand in a 30' cone. Each creature in area: 22 (4d10) piercing damage and 22 (4d10) fire (DC 17 Dex half). If a creature fails its save by 5+ it suffers one level of exhaustion as it dehydrates.Blinding Sand. Breathes fine sand in a 30' cone. Each creature in area: blinded for 1 min (DC 17 Con negates). Blinded creature can take an action to clear its eyes of sand ending effect for it.
 
 
+</statblock>
 
 

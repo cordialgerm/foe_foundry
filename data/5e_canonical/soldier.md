@@ -31,6 +31,7 @@ Overall, the Soldier's combination of solid combat abilities, decent hit points,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Soldier
 
 *Medium* *Humanoid*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Tactical Movement:** Until the end of the soldiers turn, their Speed is halved and their movement doesnt provoke opportunity attacks.
 
 
+</statblock>
 
 

@@ -27,6 +27,7 @@ Finally, the shaman has a special reaction called Fiery Escape, which can be use
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trollkin Fire Shaman
 
 *Medium* *Humanoid* *neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Fiery Escape (2/Day):** When shaman takes damage each creature within 5 ft. of it: DC 13 Dex save or take 7 (2d6) fire. Shaman is then wreathed in flames and teleports up to 30' to unoccupied space it can see.
 
 
+</statblock>
 
 

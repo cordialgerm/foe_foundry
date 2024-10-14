@@ -29,6 +29,7 @@ The Hidden Illusionist ability enables the Preta to become invisible until it ma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Preta
 
 *Medium* *Undead* *neutral evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Hidden Illusionist:** The preta turns invisible until it attacks or uses Blood Siphon, or until its concentration ends (as if concentrating on a spell). While invisible, it leaves no physical evidence of its passage, leaving it traceable only by magic. Any equipment the preta wears or carriers is invisible with it. While invisible, the preta can create small illusory sounds and images like the minor illusion spell except it can create either two images, two sounds, or one sound and one image.
 
 
+</statblock>
 
 

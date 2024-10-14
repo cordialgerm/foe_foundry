@@ -27,6 +27,7 @@ As a bonus action, the Painted Phantasm can utilize Painting Portal to move thro
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Painted Phantasm
 
 *Medium* *Construct* *neutral*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Painting Portal:** Uses 10 ft. of move to step magically into one artwork within reach and emerge from 2nd artwork within 100' of 1st appearing in unoccupied space within 5 ft. of 2nd. If both are Large or larger can bring up to 3 willing creatures.
 
 
+</statblock>
 
 

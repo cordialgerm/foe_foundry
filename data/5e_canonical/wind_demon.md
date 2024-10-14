@@ -31,6 +31,7 @@ As a reaction, the Wind Demon can utilize "Swift as Frost," enabling it to move 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wind Demon
 
 *Small* *Fiend* *chaotic evil*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Swift as Frost:** After a creature the wind demon can see damages it with an attack, the wind demon can move up to its speed without provoking opportunity attacks.
 
 
+</statblock>
 
 

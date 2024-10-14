@@ -19,6 +19,7 @@ In terms of actions, the Living Wick can perform a "Slam," which is a melee atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Living Wick
 
 *Small* *Construct* *Unaligned*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 
 - **Slam:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.
 - **Consuming Inferno:** The living wick’s controller can command the living wick to rapidly burn through the remains of its wick, creating a devastating ball of fire. Each creature within 20 feet of the living wick must make a DC 12 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one. Flammable objects in the area and that aren’t being worn or carried ignite. The living wick then dies, becoming a lifeless puddle of wax.
+</statblock>
 
 

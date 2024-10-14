@@ -21,6 +21,7 @@ In combat, the Hverhuldra employs a Multiattack action allowing it to make two S
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hverhuldra
 
 *Small* *Fey* *neutral good*
@@ -64,5 +65,6 @@ At will: create or destroy water, detect poison and disease, purify food and dri
 - **Steam Cloud:** When the hverhuldra takes cold damage, it uses the steam from the impact of the cold on its body to magically create a cloud of steam centered on a point it can see within 60 feet of it. This cloud works like the fog cloud spell, except the hverhuldra can dismiss it as a bonus action.
 
 
+</statblock>
 
 

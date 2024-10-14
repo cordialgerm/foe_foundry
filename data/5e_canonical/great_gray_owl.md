@@ -23,6 +23,7 @@ In combat, the Great Gray Owl can use its Talons attack, which is a melee weapon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Great Gray Owl
 
 *Small* *Beast* *unaligned*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 
 
+</statblock>
 
 

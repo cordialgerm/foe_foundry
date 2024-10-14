@@ -23,6 +23,7 @@ In combat, the Kamaitachi can use the Multiattack action to deliver two sickle p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kamaitachi
 
 *Small* *Monstrosity* *chaotic neutral*
@@ -57,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Wintry Assault (Wintry Swirl Form Only):** Each creature in the kamaitachi’s space must make a DC 15 Dexterity saving throw. On a failure, the creature takes 9 (2d8) slashing damage plus 9 (2d8) cold damage and is blinded until the end of its next turn. On a success, it takes half the damage and isn’t blinded.
 
 
+</statblock>
 
 

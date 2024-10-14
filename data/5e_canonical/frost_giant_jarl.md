@@ -25,6 +25,7 @@ This blend of abilities and attacks makes the Frost Giant Jarl a challenging opp
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frost Giant Jarl
 
 *Huge* *Giant*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Icy Gaze:** One creature the giant can see within 60 feet makes a DC 17 Constitution saving throw. On a failure, it takes 21 (6d6) cold damage, and its Speed is halved until the end of its next turn. On a success, it takes half as much damage.
 
 
+</statblock>
 
 

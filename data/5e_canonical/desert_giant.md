@@ -19,6 +19,7 @@ In combat, the Desert Giant can execute a "Multiattack," allowing it to make two
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Desert Giant
 
 *Huge* *Giant* *Neutral*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The giant makes two Falchion attacks.
 - **Falchion:** Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 23 (6d4 + 8) slashing damage.
 - **Rock:** Ranged Weapon Attack: +12 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage.
+</statblock>
 
 

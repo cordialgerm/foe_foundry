@@ -21,6 +21,7 @@ In combat, the Crinaea can also utilize a dagger in melee attacks, providing a +
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crinaea
 
 *Medium* *Fey* *neutral*
@@ -57,5 +58,6 @@ At will: poison spray
 - **Dagger:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 7 (2d6) cold damage.
 
 
+</statblock>
 
 

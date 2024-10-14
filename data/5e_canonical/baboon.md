@@ -29,6 +29,7 @@ In addition to their offensive capabilities, baboons can also utilize a reaction
 
 Source: 5e_srd
 
+<statblock>
 ### Baboon
 
 *Small beast, unaligned*
@@ -53,7 +54,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +1 to hit, reach 5 ft., one target. *Hit:* 1 (1d4-1) piercing damage.
+***Bite***. *Melee Weapon Attack:* +1 to hit, reach 5 ft., one target. *Hit:* 1 (1d4-1) piercing damage.</statblock>
+
 
 
 
@@ -61,6 +63,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Baboon
 
 *Small* *Beast*
@@ -88,6 +91,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 piercing damage.
 
 
+</statblock>
 
 
 
@@ -96,6 +100,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Baboon
 
 *Small beast*
@@ -127,5 +132,6 @@ Source: 5e_artisinal_monsters
 
 - **Startling Display.** When a creature the baboon can see attacks it while within 5 feet of it, the baboon can bare its teeth, puff its chest, or emit a quick series of barks. The attacker must succeed on a DC 11 WIS save or have disadvantage on the attack roll.
 
+</statblock>
 
 

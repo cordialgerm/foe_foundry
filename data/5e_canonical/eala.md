@@ -21,6 +21,7 @@ Overall, the Eala combines agility, striking offense, and unique magical abiliti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eala
 
 *Small* *Monstrosity* *Unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Swan Song:** When the eala is reduced to 0 hp, it can use its last breath to sing a plaintive and beautiful melody. Each creature within 20 feet of it that can hear the eala must succeed on a DC 13 Charisma saving throw or be incapacitated until the end of its next turn. While incapacitated, the creature’s speed is reduced to 0.
+</statblock>
 
 

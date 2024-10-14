@@ -31,6 +31,7 @@ In combat, the bat can use a bite attack as its primary action. This melee weapo
 
 Source: 5e_srd
 
+<statblock>
 ### Bat
 
 *Tiny beast, unaligned*
@@ -57,7 +58,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +0 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage.
+***Bite***. *Melee Weapon Attack:* +0 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage.</statblock>
+
 
 
 
@@ -65,6 +67,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bat
 
 *Tiny* *Beast*
@@ -93,6 +96,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage. If this damage would reduce a Small or larger target to 0 hit points  the target takes no damage from this attack.
 
 
+</statblock>
 
 
 
@@ -101,6 +105,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bat
 
 *Tiny beast*
@@ -129,5 +134,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite.** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) piercing damage.
 
+</statblock>
 
 

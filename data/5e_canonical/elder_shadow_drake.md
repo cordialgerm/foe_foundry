@@ -36,6 +36,7 @@ In combat encounters, the Elder Shadow Drake serves as a challenging enemy that 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elder Shadow Drake
 
 *Large* *Dragon* *Chaotic Evil*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Step:** The drake teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see. The origin and destination spaces must be in dim light or darkness.
+</statblock>
 
 

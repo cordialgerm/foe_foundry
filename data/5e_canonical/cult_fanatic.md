@@ -60,6 +60,7 @@ As a bonus action, the fanatics can use **Unholy Brand** (recharge on a roll of 
 
 Source: 5e_srd
 
+<statblock>
 ### Cult Fanatic
 
 *Medium humanoid (any race), any non-good alignment*
@@ -96,7 +97,8 @@ Cantrips (at will): *light*, *sacred flame*, *thaumaturgy*
 
 ***Dagger***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 20/60 ft., one creature. *Hit:* 4 (1d4 + 2) piercing damage.
 
-**Fanatics** are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.
+**Fanatics** are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.</statblock>
+
 
 
 
@@ -104,6 +106,7 @@ Cantrips (at will): *light*, *sacred flame*, *thaumaturgy*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cult Fanatic
 
 *Medium* *Humanoid*
@@ -148,6 +151,7 @@ Source: 5e_artisinal_monsters
 - **Hold Person (2nd-Level; V, S, M, Concentration):** One humanoid the cult fanatic can see within 60 feet makes a DC 12 Wisdom saving throw. On a failure  the target is paralyzed for 1 minute. The target repeats the saving throw at the end of each of its turns  ending the effect on a success.
 
 
+</statblock>
 
 
 
@@ -156,6 +160,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cult Fanatic
 
 *Medium humanoid (any lineage)*
@@ -194,5 +199,6 @@ Source: 5e_artisinal_monsters
 
 - **Unholy Brand (Recharge 5–6).** One creature the fanatic can see within 30 feet of it must succeed on a DC 13 CHA save or be marked with an unholy brand until the start of the fanatic’s next turn. While the creature is branded, Fiends and cultists have advantage on attack rolls against it.
 
+</statblock>
 
 

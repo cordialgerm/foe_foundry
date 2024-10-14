@@ -21,6 +21,7 @@ Additionally, the dragon has legendary actions that allow it to act outside of i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Sand Ancient
 
 *Gargantuan* *Dragon* *neutral evil*
@@ -66,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Detect:** Makes a Wis (Perception) check.
 - **Tail Attack:** Makes a tail attack.
 - **Wing Attack (2):** All within 15 feet: 15 (2d6+8) bludgeoning damage and knocked prone (DC 24 Wis negates). Can then fly up to half its fly speed.
+</statblock>
 
 

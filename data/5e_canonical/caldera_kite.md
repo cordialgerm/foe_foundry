@@ -25,6 +25,7 @@ Overall, the combination of mobility, poison effects, and grappling capabilities
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Caldera Kite
 
 *Large* *Monstrosity* *unaligned*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Dust Cloud (Recharge 4–6):** Kite thrashes its body and releases stored toxic gases. Each creature within 20' of kite: 28 (8d6) poison (DC 14 Con half). Creature that fails save can’t speak and is suffocating until it is no longer within 20' of caldera kite.
 
 
+</statblock>
 
 

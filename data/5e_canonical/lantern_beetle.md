@@ -23,6 +23,7 @@ In summary, the Lantern Beetle is an endearing yet fragile creature that emphasi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lantern Beetle
 
 *Tiny* *Beast* *unaligned*
@@ -50,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Horn:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 piercing damage.
 
 
+</statblock>
 
 

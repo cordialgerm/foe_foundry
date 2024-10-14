@@ -23,6 +23,7 @@ As a reaction, the Shrouded Angel can use "Executioner's Judgment" on a creature
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angel, Shrouded
 
 *Medium* *Celestial* *chaotic good*
@@ -64,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Executioner's Judgment:** When a creature poisoned by shrouded angel starts its turn angel demands target repent. If it doesn’t repent: DC 17 Con save. Fail: reduced to 0 hp. Success: 22 (5d8) radiant. If target repents its next action is chosen by angel as if it failed a save vs. the command spell: “Draw Nigh” (approach) “Clasp Hands in Prayer” (drop) “Seek Redemption” (flee) “Be Penitent” (grovel) or “In Stillness Hear the Truth” (halt). Once angel uses this reaction it must deal poison to a poisoned target before using it again.
 
 
+</statblock>
 
 

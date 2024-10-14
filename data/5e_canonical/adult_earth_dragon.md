@@ -27,6 +27,7 @@ The dragon can also perform legendary actions. "Shake the Foundation" creates di
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Earth Dragon
 
 *Huge* *Dragon*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Shake the Foundation:** The dragon causes the ground to roil, creating a permanent, 40-foot-radius area of difficult terrain centered on a point the dragon can see. If the dragon is bloodied, creatures in the area make a DC 20 Dexterity saving throw, falling prone on a failure.
 - **Slam Attack (Costs 2 Actions):** The dragon makes a slam attack.
 - **Entomb (While Bloodied:** The dragon targets a creature on the ground within 60 feet, forcing it to make a DC 15 Dexterity saving throw. On a failure, the creature is magically entombed 5 feet under the earth. While entombed, the target is blinded, restrained, and can't breathe. A creature can use an action to make a DC 15 Strength check, freeing an entombed creature on a success.
+</statblock>
 
 

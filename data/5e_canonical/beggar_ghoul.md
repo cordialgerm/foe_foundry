@@ -21,6 +21,7 @@ Overall, the Beggar Ghoul is an intimidating adversary, making effective use of 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Beggar Ghoul
 
 *Medium* *Undead* *Chaotic Evil*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage.
 - **Claws:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or Undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. A paralyzed target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

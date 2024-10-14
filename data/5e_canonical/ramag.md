@@ -31,6 +31,7 @@ Additionally, the Ramag has a special bonus action titled Portal Traveler, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ramag
 
 *Medium* *Humanoid* *Neutral*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Portal Traveler (Recharge 5–6):** The ramag creates and steps into a small portal and out of an identical portal in a space it can see within 60 feet of it. If a creature is in the destination space, the creature must make a DC 13 Intelligence saving throw. On a failure, the ramag trades spaces with the creature. On a success, the ramag fails to teleport. Whatever the result, the portal disappears.
+</statblock>
 
 

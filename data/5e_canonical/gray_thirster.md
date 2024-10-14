@@ -23,6 +23,7 @@ Overall, the combination of the Gray Thirster's abilities makes it an effective 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gray Thirster
 
 *Medium* *Undead* *Neutral Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage.
 - **Withering Turban:** Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 7 (1d8 + 3) necrotic damage. The target must succeed on a DC 12 Constitution saving throw or its hp maximum is reduced by an amount equal to the damage taken. The target has disadvantage on this saving throw if it failed the saving throw against the thirster’s Thirst Aura. This reduction lasts until the target finishes a long rest with no levels of exhaustion. The target dies if this effect reduces its hp maximum to 0.
 - **Drought (1/Day):** The gray thirster draws the moisture from containers and creatures around it. Nonmagical water and other liquids within 20 feet of the thirster that aren’t being worn or carried turn to dust. Each creature within 20 feet of the thirster that isn’t a Construct or Undead must make a DC 12 Constitution saving throw. On a failure, a creature takes 9 (2d8) necrotic damage and up to 5 gallons of nonmagical liquid it is wearing or carrying turn to dust. On a success, a creature takes half the damage, and nonmagical liquids it is wearing or carrying don’t turn to dust. Plants, Oozes, creatures with the Amphibious or Water Breathing trait, and creatures made mostly of water, such as water elementals or steam mephits, have disadvantage on the saving throw.
+</statblock>
 
 

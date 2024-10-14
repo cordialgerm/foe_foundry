@@ -27,6 +27,7 @@ Overall, the Lady in White is a haunting presence that employs both stealth and 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lady in White
 
 *Medium* *Undead* *any alignment*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Corpse Revealed:** The lady in white does away with her living disguise and reveals her undead state. Each non-undead creature within 50 feet of the lady that can see her must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the lady's Corpse Revealed for the next 24 hours.
 
 
+</statblock>
 
 

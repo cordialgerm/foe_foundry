@@ -21,6 +21,7 @@ In combat, the Ophanim can make multiple attacks through its Multiattack action,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ophanim
 
 *Large* *Celestial* *lawful good*
@@ -59,5 +60,6 @@ At will: bless, detect evil and good, invisibility (self only), scrying, thaumat
 - **Holy Fire (Recharge 5-6):** The ophanim emits a burst of holy fire. Each creature within 30 feet of the ophanim must make a DC 19 Dexterity saving throw, taking 63 (18d6) radiant damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hp by this damage dies, leaving only a pile of fine ash.
 
 
+</statblock>
 
 

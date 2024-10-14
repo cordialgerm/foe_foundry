@@ -38,6 +38,7 @@ Overall, the Dracotaur combines strong physical attacks with lightning-based abi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dracotaur
 
 *Large* *Dragon* *chaotic neutral*
@@ -72,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Breath (Recharge 5-6):** The dracotaur exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 33 (6d10) lightning damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

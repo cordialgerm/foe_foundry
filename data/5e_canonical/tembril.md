@@ -33,6 +33,7 @@ Overall, the Tembril is a powerful and unpredictable adversary, capable of surpr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tembril
 
 *Large* *Monstrosity* *unaligned*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Maddening Chitter (Recharge 6):** The tembril chitters maddeningly in a 30-foot cone. Each creature in that area must make a DC 15 Wisdom saving throw. On a failure, a creature takes 21 (6d6) psychic damage and is incapacitated for 1 minute. On a success, a creature takes half the damage and isn’t incapacitated. If a creature fails the saving throw by 5 or more, it also suffers short-term madness. An incapacitated creature can repeat the saving throw at the end of each of its turns, ending the incapacitated condition on itself on a success.
 
 
+</statblock>
 
 

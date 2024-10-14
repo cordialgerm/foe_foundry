@@ -25,6 +25,7 @@ Overall, the Lymarien serves as a nimble supporter and disruptor on the battlefi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lymarien
 
 *Tiny* *Fey* *neutral good*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage.
 
 
+</statblock>
 
 

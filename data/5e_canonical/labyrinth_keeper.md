@@ -23,6 +23,7 @@ For its actions, the Labyrinth Keeper can make a multiattack, combining a gore a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Labyrinth Keeper
 
 *Large* *Monstrosity* *chaotic evil*
@@ -57,5 +58,6 @@ At will: acid arrow, fire bolt, locate object, misty step
 - **Shortsword:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage.
 
 
+</statblock>
 
 

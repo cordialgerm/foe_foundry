@@ -40,6 +40,7 @@ Overall, the Duskwilt is an effective combatant and a tactical environmental man
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fungi, Duskwilt
 
 *Small* *Plant* *lawful neutral*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Necrotizing Spores (3/Day):** Each creature within 15 ft. of the duskwilt and that isn’t a Construct or Undead must make a DC 14 Con save. On a failure a creature takes 15 (6d4) poison and is poisoned for 1 min. On a success a creature takes half the damage and isn’t poisoned. The poisoned creature can re-save at end of each of its turns success ends effect on itself. In addition each Undead within 15 ft. of the duskwilt gains 7 (2d6) temp hp.
 
 
+</statblock>
 
 

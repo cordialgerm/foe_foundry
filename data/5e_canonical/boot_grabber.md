@@ -21,6 +21,7 @@ In combat, the Boot Grabber can use its Adhesive Hands attack, which functions a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boot Grabber
 
 *Small* *Aberration* *neutral*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Unearthly Hum:** The boot grabber targets one creature it can see within 60 feet of it. It emits a high frequency humming noise which can only be heard by the target. The target must succeed on a DC 11 Wisdom saving throw or move toward the boot grabber on its turn by the shortest and most direct route, ending its turn when it comes within 5 feet of the boot grabber.
 
 
+</statblock>
 
 

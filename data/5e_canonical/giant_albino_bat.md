@@ -23,6 +23,7 @@ Overall, the Giant Albino Bat is a fierce and deadly opponent, utilizing its phy
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Albino Bat
 
 *Huge* *Monstrosity* *neutral evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage. If the target is a Large or smaller creature, it is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the bat can't use its claws against another target.
 
 
+</statblock>
 
 

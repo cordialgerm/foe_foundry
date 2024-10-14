@@ -23,6 +23,7 @@ As a bonus action, the Mush Marcher can use **Recall Harpoon** to pull the harpo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fungi, Mush Marcher
 
 *Large* *Plant* *neutral*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Recall Harpoon:** Pulls on the mycelial threads connecting it to its harpoon returning the harpoon to its empty hand. If harpoon is stuck in a creature that creature must make DC 13 Str save or be pulled up to 15 ft. toward marcher.
 
 
+</statblock>
 
 

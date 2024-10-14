@@ -42,6 +42,7 @@ Overall, the Hodag is a strikingly effective beast in melee combat scenarios, ma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hodag
 
 *Large* *Beast* *unaligned*
@@ -77,5 +78,6 @@ Source: 5e_artisinal_monsters
 - **Territorial Display (Recharge 6):** The hodag rears and stomps on the ground then roars a territorial challenge. Each creature within 10 feet of the hodag must make a DC 14 Dexterity saving throw, taking 14 (4d6) thunder damage on a failed save, or half as much damage on a successful one. A creature that fails the saving throw by 5 or more is also knocked prone.
 
 
+</statblock>
 
 

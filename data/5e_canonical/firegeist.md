@@ -19,6 +19,7 @@ In terms of actions, the Firegeist can make a Burning Slam, a melee attack that 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Firegeist
 
 *Small* *Elemental* *Neutral Evil*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 
 - **Burning Slam:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 7 (2d6) fire damage. If the target is a flammable object, it ignites. If the target is a creature, the target must succeed on a DC 13 Dexterity saving throw or ignite. Until a creature takes an action to douse the fire, the target takes 3 (1d6) fire damage at the start of each of its turns.
 - **Burning Terror (Recharge 5–6):** The firegeist assaults the mind of one creature it can see within 30 feet of it with the painful, humiliating memory of the firegeist’s first death. The target must make a DC 13 Wisdom saving throw. On a failure, the target takes 14 (4d6) fire damage and is frightened for 1 minute. On a success, the target takes half the damage and isn’t frightened. While frightened, the creature takes 3 (1d6) fire damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

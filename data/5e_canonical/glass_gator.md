@@ -23,6 +23,7 @@ In terms of reactions, the Glass Gator can activate a Silt Cloud ability, which 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Glass Gator
 
 *Large* *Beast* *Unaligned*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Silt Cloud (Recharges after a Short or Long Rest):** When it takes damage while underwater and within 5 feet of the bottom of a body of water, the glass gator stirs up a 10-foot-radius sphere of silt centered on it. The silt spreads around corners, and its area is heavily obscured. It lasts for 1 minute or until a strong current disperses it. The glass gator can then swim up to half its speed. The cloud of silt doesn’t move with the glass gator.
+</statblock>
 
 

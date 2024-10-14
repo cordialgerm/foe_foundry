@@ -27,6 +27,7 @@ As a bonus action, the Pustakam can use "Change Shape" to transform into a Tiny 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rakshasa, Pustakam
 
 *Small* *Fiend* *lawful evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Transforms into Tiny object or back into true fiend form. Its stats except size are same in each form. Items worn/carried not transformed. Reverts on death.
 
 
+</statblock>
 
 

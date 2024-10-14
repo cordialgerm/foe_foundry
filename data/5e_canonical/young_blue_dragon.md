@@ -39,6 +39,7 @@ Additionally, the dragon has access to its infamous Lightning Breath, which rech
 
 Source: 5e_srd
 
+<statblock>
 # Young Blue Dragon (Chromatic)
 
 *Large dragon, lawful evil*
@@ -73,7 +74,8 @@ Source: 5e_srd
 
 ***Claw***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 12 (2d6+5) slashing damage.
 
-***Lightning Breath (Recharge 5-6)***. The dragon exhales lightning in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.
+***Lightning Breath (Recharge 5-6)***. The dragon exhales lightning in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -81,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Blue Dragon
 
 *Large* *Dragon*
@@ -115,6 +118,7 @@ Source: 5e_artisinal_monsters
 - **Lightning Breath (Recharge 5-6):** The dragon exhales a 60-foot-long  5-foot-wide line of lightning. Each creature in that area makes a DC 16 Dexterity saving throw  taking 44 (8d10) lightning damage on a failed save or half damage on a success. A creature that fails the save can't take reactions until the end of its next turn.
 
 
+</statblock>
 
 
 
@@ -123,6 +127,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Blue Dragon
 
 *Large dragon*
@@ -153,5 +158,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.
 - **Lightning Breath (Recharge 5–6).** The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 DEX save, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

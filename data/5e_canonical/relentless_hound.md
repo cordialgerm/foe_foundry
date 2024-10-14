@@ -21,6 +21,7 @@ For its reaction, the Relentless Hound can activate the "Multiply" ability three
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Relentless Hound
 
 *Medium* *Undead* *chaotic neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Multiply (3/Day):** When it takes damage while below half its hp max it creates a spectral hound. Spectral hound uses the stats of a shadow except it doesn’t have Sunlight Weakness trait and can’t make new shadows when it kills Humanoids. It appears in an unoccupied space within 5 ft. of the relentless hound and acts on same initiative as that hound. After spectral hound finishes a long rest it becomes a relentless hound.
 
 
+</statblock>
 
 

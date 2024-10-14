@@ -19,6 +19,7 @@ In terms of actions during combat, the Vine Lord can execute a Multiattack, allo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vine Lord
 
 *Medium* *Plant* *Lawful Neutral*
@@ -54,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Tendril:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 7 (1d4 + 5) slashing damage plus 7 (2d6) poison damage, and the target must succeed on a DC 16 Constitution saving throw or become infected with a vine seed (see the Vine Seed trait).
 - **Thorned Slam:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage plus 10 (4d4) piercing damage.
 - **Forest Protectors (1/Day):** The vine lord magically calls 1d4 awakened trees or tendril puppets, or it calls 1 Plant with a challenge rating of 4 or lower. The called creatures arrive in 1d4 rounds, acting as allies of the vine lord and obeying its spoken commands. The Plants remain for 1 hour, until the vine lord dies, or until the vine lord dismisses them as a bonus action.
+</statblock>
 
 

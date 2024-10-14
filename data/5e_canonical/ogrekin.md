@@ -23,6 +23,7 @@ The second action is a Handaxe attack that can either be a melee attack or a ran
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogrekin
 
 *Medium* *Humanoid*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Handaxe:** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 10 (2d6 + 3) slashing damage.
 
 
+</statblock>
 
 

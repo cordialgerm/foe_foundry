@@ -21,6 +21,7 @@ As a bonus action, the Marid Noble can create a "Fog Cloud" once a day, obscurin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Marid Noble
 
 *Large* *Elemental*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Water Jet (While Bloodied):** The marid shoots water in a 5-foot-wide, 60-foot-long jet. Each creature in the area makes a DC 18 Dexterity saving throw. On a failure, a target takes 21 (6d6) bludgeoning damage and is pushed 20 feet away from the marid, to a maximum of 60 feet away, and knocked prone. On a success, a target takes half damage.
 
 
+</statblock>
 
 

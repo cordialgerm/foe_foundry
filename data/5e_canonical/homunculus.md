@@ -35,6 +35,7 @@ Overall, the Homunculus is a strategic creature that can assist its creator with
 
 Source: 5e_srd
 
+<statblock>
 ## Homunculus
 
 *Tiny construct, neutral*
@@ -63,7 +64,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.
+***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.</statblock>
+
 
 
 
@@ -71,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Homunculus
 
 *Tiny* *Construct*
@@ -100,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 1 piercing damage  and the target makes a DC 10 Constitution saving throw. On a failure  it is poisoned. At the end of its next turn  it repeats the saving throw. On a success  the effect ends. On a failure  it falls unconscious for 1 minute. If it takes damage or a creature uses an action to shake it awake  it wakes up  and the poisoned effect ends.
 
 
+</statblock>
 
 
 
@@ -108,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Homunculus
 
 *Tiny construct*
@@ -137,5 +142,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite.** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage plus 5 (2d4) poison damage, and the target must succeed on a DC 12 CON save or be poisoned for 1 minute. If the save fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.
 
+</statblock>
 
 

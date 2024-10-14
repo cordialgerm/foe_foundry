@@ -21,6 +21,7 @@ The Qwyllion can also use a Charm action on a humanoid or beast within 30 feet. 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Qwyllion
 
 *Medium* *Aberration* *Neutral Evil*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) slashing damage.
 - **Deadly Gaze:** Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 17 (4d6 + 3) psychic damage. A Humanoid slain by this attack rises 8 hours later as a specter under the qwyllion’s control, unless the Humanoid is restored to life. The qwyllion can have no more than ten specters under its control at one time.
 - **Charm:** One Humanoid or Beast the qwyllion can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the qwyllion’s verbal commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to the qwyllion’s Charm for the next 24 hours.
+</statblock>
 
 

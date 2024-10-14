@@ -44,6 +44,7 @@ As a bonus action, the Quasit has access to:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quasit Familiar
 
 *Tiny* *Fiend*
@@ -82,5 +83,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The quasit magically turns invisible, along with any equipment it carries. This invisibility ends if the quasit makes an attack, falls unconscious, or dismisses the effect.
 
 
+</statblock>
 
 

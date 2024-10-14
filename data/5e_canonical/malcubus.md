@@ -25,6 +25,7 @@ For its bonus action, the Malcubus can "Shapeshift," changing its form to a Medi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Malcubus
 
 *Medium* *Fiend*
@@ -67,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Living Shield:** When a creature the malcubus can see hits it with an attack, the malcubus can give an order to a creature charmed by it within 5 feet. The charmed creature uses its reaction, if available, to swap places with the malcubus. The attack hits the charmed creature instead of the malcubus.
 
 
+</statblock>
 
 

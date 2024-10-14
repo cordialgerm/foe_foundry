@@ -30,6 +30,7 @@ Overall, the Clockwork Archon is a strategic force in combat, effective both for
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Archon
 
 *Gargantuan* *Construct* *unaligned*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Fire from Heaven (Recharge 5-6):** The clockwork archon unleashes a brilliant beam in a 90-foot line that is 10-feet wide. Each creature in that line must make a DC 17 Dexterity saving throw, taking 58 (13d8) radiant damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -21,6 +21,7 @@ Overall, the Bathhouse Drake is a creature that effectively combines offensive c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bathhouse Drake
 
 *Medium* *Dragon* *lawful neutral*
@@ -59,5 +60,6 @@ At will: create or destroy water, misty step, prestidigitation
 - **Steam Burst (Recharge 5-6):** The bathhouse drake creates a burst of hot steam. Each creature within 20 feet of it must make a DC 14 Constitution saving throw. On a failure, a target takes 14 (4d6) fire damage and is blinded for 1 minute. On a success, a target takes half the damage but isn't blinded. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

@@ -35,6 +35,7 @@ The Titanoboa embodies the essence of a colossal snake, fusing raw strength with
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Titanoboa
 
 *Gargantuan* *Beast* *Unaligned*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 30 (5d8 + 8) piercing damage.
 - **Constrict:** Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage, and the target is grappled (escape DC 18) if it is a Huge or smaller creature. Until this grapple ends, the target is restrained, and the titanoboa can’t Constrict another target.
 - **Swallow:** The titanoboa makes one Bite attack against a Huge or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the titanoboa, and it takes 21 (6d6) acid damage at the start of each of the titanoboa’s turns. If the titanoboa takes 30 damage or more on a single turn from a swallowed creature, the titanoboa must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the titanoboa. If the titanoboa dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.
+</statblock>
 
 

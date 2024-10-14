@@ -27,6 +27,7 @@ Overall, Akkorokamui acts as both a protector and combatant, leveraging its vast
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Akkorokamui
 
 *Gargantuan* *Celestial* *chaotic good*
@@ -73,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Jet:** Swims up to half its swimming speed with o provoking opportunity attacks.
 - **Cast a Spell (2):** Uses Spellcasting.
 - **Tentacle Sweep (2):** Spins in place with its tentacles extended. Each creature within 20' of it that isn’t grappled by it: DC 17 Dex save or take 19 (4d6+5) bludgeoning damage and be knocked prone. Each creature grappled by akkorokamui must make DC 17 Str save or take 12 (2d6+5) bludgeoning damage.
+</statblock>
 
 

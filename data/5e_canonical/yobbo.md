@@ -23,6 +23,7 @@ Overall, the Yobbo's potential for magic consumption and explosive combat conseq
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yobbo
 
 *Small* *Humanoid*
@@ -52,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Spike ball:** Ranged Weapon Attack: +4 to hit, range 30/90 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

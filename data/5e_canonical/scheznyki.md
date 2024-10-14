@@ -23,6 +23,7 @@ The Scheznyki has the ability to turn invisible, allowing it to escape the notic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scheznyki
 
 *Small* *Fey* *Chaotic Evil*
@@ -55,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Arcane Bolt:** Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 13 (3d6 + 3) force damage.
 - **Invisibility:** The scheznyki magically turns invisible until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment it wears or carries is invisible with it.
 - **Spellcasting:** The scheznyki casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 14):<br>At will: dancing lights, faerie fire<br>3/day each: locate object, hideous laughter, ray of enfeeblement<br>1/day each: dispel magic, hold person
+</statblock>
 
 

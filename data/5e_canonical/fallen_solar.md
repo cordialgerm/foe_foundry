@@ -29,6 +29,7 @@ Overall, the Fallen Solar is a powerful and complex entity capable of both deali
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fallen Solar
 
 *Large* *Celestial*
@@ -80,5 +81,6 @@ Source: 5e_artisinal_monsters
 - **Approach! The creature must use its reaction:** 
 - **Flee! The creature must use its reaction:** 
 - **Surrender! The creature drops anything it is holding:** 
+</statblock>
 
 

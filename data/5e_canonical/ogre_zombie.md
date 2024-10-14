@@ -53,6 +53,7 @@ The combination of its powerful melee attacks and special abilities makes the Og
 
 Source: 5e_srd
 
+<statblock>
 ### Ogre Zombie
 
 *Large undead, neutral evil*
@@ -83,7 +84,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Morningstar***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage.
+***Morningstar***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage.</statblock>
+
 
 
 
@@ -91,6 +93,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre Zombie
 
 *Large* *Undead*
@@ -124,6 +127,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target grappled by a zombie. Hit: 15 (2d10 + 4) piercing damage  and the zombie regains hit points equal to the damage dealt.
 
 
+</statblock>
 
 
 
@@ -132,6 +136,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre Zombie
 
 *Large undead*
@@ -163,5 +168,6 @@ Source: 5e_artisinal_monsters
 - **Greatclub.** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.
 - **Lumbering Charge (Recharge 5–6).** The ogre zombie shoulders its weapon and charges forward, shoving into creatures on its way. It moves up to 20 feet in a straight line and can move through the space of any Medium or smaller creature. The first time it enters a creature’s space during this move, that creature must make a DC 14 STR save. On a failure, a creature takes 14 (4d6) bludgeoning damage and is knocked prone. On a success, a creature takes half the damage and isn’t knocked prone.
 
+</statblock>
 
 

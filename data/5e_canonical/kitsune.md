@@ -19,6 +19,7 @@ In terms of actions, the Kitsune can perform a Multiattack, which includes one r
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kitsune
 
 *Small* *Fey* *chaotic neutral*
@@ -53,5 +54,6 @@ At will: detect thoughts, fire bolt (2d10), invisibility (self only), major imag
 - **Attack:** +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 
 
+</statblock>
 
 

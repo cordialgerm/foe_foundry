@@ -38,6 +38,7 @@ Overall, the Wirbeln Fungi presents an intriguing challenge for adventurers, rel
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wirbeln Fungi
 
 *Small* *Plant* *lawful neutral*
@@ -68,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Spore Cloud:** (Recharge 5-6). The wirbeln ejects spores in a 15foot cone. All creatures that are not wirbeln fungi must succeed on a DC 13 Constitution saving throw or take 5 (1d10) poison damage and be subject to one of the following effects for 1 minute, depending on the wirbeln's color: green is poisoned; red is blinded; yellow is incapacitated; blue is paralyzed; purple is frightened; and black is 5 (2d4) poison damage each round. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

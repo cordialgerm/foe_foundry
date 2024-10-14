@@ -38,6 +38,7 @@ Overall, the Goblin might seem weak when on its own, but in a group, its speed, 
 
 Source: 5e_srd
 
+<statblock>
 ## Goblin
 
 *Small humanoid (goblinoid), neutral evil*
@@ -66,7 +67,8 @@ Source: 5e_srd
 
 ***Scimitar***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) slashing damage.
 
-***Shortbow***. *Ranged Weapon Attack:* +4 to hit, range 80/320 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
+***Shortbow***. *Ranged Weapon Attack:* +4 to hit, range 80/320 ft., one target. *Hit:* 5 (1d6+2) piercing damage.</statblock>
+
 
 
 
@@ -74,6 +76,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin
 
 *Small* *Humanoid*
@@ -102,6 +105,7 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 
 
@@ -110,6 +114,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin
 
 *Small humanoid*
@@ -145,5 +150,6 @@ Source: 5e_artisinal_monsters
 
 - **Nimble Escape.** The goblin takes the Disengage or Hide action.
 
+</statblock>
 
 

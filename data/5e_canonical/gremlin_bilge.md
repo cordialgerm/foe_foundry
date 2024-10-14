@@ -31,6 +31,7 @@ In terms of actions, the Bilge Gremlin can bite its targets with a melee weapon 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gremlin, Bilge
 
 *Tiny* *Fey* *chaotic evil*
@@ -63,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Makeshift Weapon:** Melee or Ranged Weapon Attack: +5 to hit 5 ft. or range 20/60' one target 6 (1d6+3) bludgeoning damage P or S
 
 
+</statblock>
 
 

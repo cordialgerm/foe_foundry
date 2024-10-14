@@ -35,6 +35,7 @@ Overall, the Umbral Shambler is a cunning creature, leveraging darkness to outma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Umbral Shambler
 
 *Medium* *Aberration* *neutral evil*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Twisted Step:** Can project itself beyond reality for a short time. Until start of its next turn it can move through objects as if they were difficult terrain provided an object is no more than 3' thick and at least one side of the object is in dim light or darkness. It takes 5 (1d10) force if it starts its turn inside an object.
 
 
+</statblock>
 
 

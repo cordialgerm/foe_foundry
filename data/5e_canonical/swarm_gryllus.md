@@ -19,6 +19,7 @@ In combat, the Gryllus Swarm can perform a "Multiattack," allowing it to make tw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm, Gryllus
 
 *Large* *Construct* *lawful neutral*
@@ -56,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Timber:** Calls out in synchronous tiny voices before chopping away at the feet of one creature in the swarm’s space. Target knocked prone (DC 15 Str negates). If target is knocked prone swarm can then make one Go for the Knees attack vs. it as a bonus action.
 
 
+</statblock>
 
 

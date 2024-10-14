@@ -21,6 +21,7 @@ Regarding its actions, the Swarm of Compsognathus can execute a Bite attack. Thi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Compsognathus
 
 *Medium* *Beast* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hp or fewer.
 
 
+</statblock>
 
 

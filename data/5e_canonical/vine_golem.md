@@ -23,6 +23,7 @@ Overall, the Vine Golem combines its stealthy nature, telepathic abilities, and 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vine Golem
 
 *Medium* *Construct* *neutral*
@@ -60,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Thorned Embrace:** Melee Weapon Attack: +6 to hit, reach 5 ft., one Medium or smaller creature. Hit: 13 (2d8 + 4) piercing damage, and the target is grappled (escape DC 11). Until the grapple ends, the target is restrained, and the vine golem can’t embrace another target.
 
 
+</statblock>
 
 

@@ -33,6 +33,7 @@ The most notable special ability of the Commoner is Angry Mob, which can be used
 
 Source: 5e_srd
 
+<statblock>
 ### Commoner
 
 *Medium humanoid (any race), any alignment*
@@ -57,7 +58,8 @@ Source: 5e_srd
 
 ***Club***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) bludgeoning damage.
 
-**Commoners** include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.
+**Commoners** include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.</statblock>
+
 
 
 
@@ -65,6 +67,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Commoner
 
 *Medium* *Humanoid*
@@ -89,6 +92,7 @@ Source: 5e_artisinal_monsters
 - **Stone:** Ranged Weapon Attack: +2 to hit, range 10/30 ft., one target. Hit: 2 (1d4) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -97,6 +101,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Commoner
 
 *Medium humanoid (any lineage)*
@@ -128,5 +133,6 @@ Source: 5e_artisinal_monsters
 - **Sling.** Ranged Weapon Attack: +2 to hit, range 30/120 ft., one target. Hit: 2 (1d4) bludgeoning damage.
 - **Angry Mob (1/Day).** The commoner moves up to half its speed toward a creature it can see. Each friendly commoner within 30 feet of the commoner can use its reaction to join the angry mob and move up to half its speed toward the same target. This movement doesn’t provoke opportunity attacks. If the initiating commoner is within 5 feet of the target, the target must make a DC 10 DEX save, taking 2 (1d4) bludgeoning damage on a failed save, or half as much damage on a successful one. For each commoner after the first that participated in the angry mob and that is within 10 feet of the target, the damage increases by 1 as stones, clubs, sticks, and similar “weapons” fly at the target from all angles. Afterwards, each commoner after the first that participated in the mob can’t use Angry Mob until it finishes a short or long rest.
 
+</statblock>
 
 

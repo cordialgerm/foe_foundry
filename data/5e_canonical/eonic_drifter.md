@@ -23,6 +23,7 @@ As a bonus action, the Eonic Drifter can use Call to the Future once per day. Th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eonic Drifter
 
 *Medium* *Humanoid* *Chaotic Neutral*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Call to the Future (1/Day):** The eonic drifter calls to a future version of itself, which appears in an unoccupied space the drifter can see within 30 feet of it. The drifter’s future self acts on the drifter’s turn, and each turn it makes one Time-Warping Staff attack against a creature of the drifter’s choice or uses the Help action to aid the drifter. The future self can be attacked and destroyed (AC 13; hp 30; resistance to bludgeoning, piercing, and slashing damage; immunity to poison and psychic damage), otherwise it remains until the drifter dismisses it as a bonus action or the drifter finishes a long rest. If the drifter’s future self is destroyed, the drifter must succeed on a DC 13 Wisdom saving throw or be stunned until the end of its next turn.
+</statblock>
 
 

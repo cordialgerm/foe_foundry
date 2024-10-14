@@ -59,6 +59,7 @@ These attributes, actions, and abilities make the Mummy Lord a complex opponent 
 
 Source: 5e_srd
 
+<statblock>
 ### Mummy Lord
 
 *Medium undead, lawful evil*
@@ -123,7 +124,8 @@ The mummy lord can take 3 legendary actions, choosing from the options below. On
 
 **Channel Negative Energy (Costs 2 Actions)**. The mummy lord magically unleashes negative energy. Creatures within 60 feet of the mummy lord, including ones behind barriers and around corners, can't regain hit points until the end of the mummy lord's next turn.
 
-**Whirlwind of Sand (Costs 2 Actions)**. The mummy lord magically transforms into a whirlwind of sand, moves up to 60 feet, and reverts to its normal form. While in whirlwind form, the mummy lord is immune to all damage, and it can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment worn or carried by the mummy lord remain in its possession.
+**Whirlwind of Sand (Costs 2 Actions)**. The mummy lord magically transforms into a whirlwind of sand, moves up to 60 feet, and reverts to its normal form. While in whirlwind form, the mummy lord is immune to all damage, and it can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment worn or carried by the mummy lord remain in its possession.</statblock>
+
 
 
 
@@ -131,6 +133,7 @@ The mummy lord can take 3 legendary actions, choosing from the options below. On
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mummy Lord
 
 *Medium* *Undead*
@@ -199,6 +202,7 @@ Source: 5e_artisinal_monsters
 - **Attack (Costs 2 Actions):** The mummy lord uses Dreadful Glare or attacks with its rotting fist.
 - **Blasphemous Word (Costs 2 Actions):** Each non-undead creature within 10 feet of the mummy lord that can hear its magical imprecation makes a DC 16 Constitution saving throw. On a failure, a creature is stunned until the end of the mummy lords next turn.
 - **Dispel Magic (Costs 2 Actions):** The mummy lord casts dispel magic.
+</statblock>
 
 
 
@@ -207,6 +211,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mummy Lord
 
 *Medium undead*
@@ -264,5 +269,6 @@ The mummy lord can take 3 legendary actions, choosing from the options below. On
 ### Regional Effects
 
 - **1d10** If the mummy lord dies, these effects fade in  days.
+</statblock>
 
 

@@ -37,6 +37,7 @@ Additionally, the Stirge has a reaction called Reactive Wiggle. If it is targete
 
 Source: 5e_srd
 
+<statblock>
 ## Stirge
 
 *Tiny beast, unaligned*
@@ -61,7 +62,8 @@ Source: 5e_srd
 
 ***Blood Drain***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one creature. *Hit:* 5 (1d4+3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4+3) hit points due to blood loss.
 
-The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.
+The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.</statblock>
+
 
 
 
@@ -69,6 +71,7 @@ The stirge can detach itself by spending 5 feet of its movement. It does so afte
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stirge
 
 *Tiny* *Beast*
@@ -93,6 +96,7 @@ Source: 5e_artisinal_monsters
 - **Blood Drain:** The stirge drains blood from the creature it is attached to. The creature loses 4 (1d8) hit points. After the stirge has drained 8 hit points  it detaches itself and can't use Blood Drain again until it finishes a rest.
 
 
+</statblock>
 
 
 
@@ -101,6 +105,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stirge
 
 *Tiny beast*
@@ -132,5 +137,6 @@ Source: 5e_artisinal_monsters
 
 - **Reactive Wiggle.** When the stirge is the target of an attack from a creature within 5 feet of it while it is attached to a creature, the stirge can wiggle, exposing the flesh where it is attached. The attacker must succeed on a DC 12 DEX save or the attack targets the creature to which the stirge is attached instead of the stirge.
 
+</statblock>
 
 

@@ -25,6 +25,7 @@ The Chort Devil's spellcasting ability is considerable, casting spells using Cha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chort Devil
 
 *Medium* *Fiend* *Lawful Evil*
@@ -61,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Hurl Flame:** Ranged Spell Attack: +9 to hit, range 120 ft., one target. Hit: 19 (4d6 + 5) fire damage.
 - **Teleport:** The chort devil magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
 - **Spellcasting:** The chort devil casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 17):<br>At will: charm person, illusory script (as an action)<br>3/day each: dispel magic, modify memory<br>1/day: haste
+</statblock>
 
 

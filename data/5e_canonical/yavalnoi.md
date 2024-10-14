@@ -25,6 +25,7 @@ Finally, the Yavalnoi can use its Call of the Deep ability once per day to summo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yavalnoi
 
 *Large* *Aberration* *chaotic evil*
@@ -62,5 +63,6 @@ At will: ray of enfeeblement, silent image
 - **Call of the Deep (1/Day):** The yavalnoi magically calls 2d4 giant crabs or 1 giant octopus. The called creatures arrive in 1d4 rounds, acting as allies of the yavalnoi and obeying its spoken commands. The beasts remain for 1 hour, until the yavalnoi dies, or until the yavalnoi dismisses them as a bonus action.
 
 
+</statblock>
 
 

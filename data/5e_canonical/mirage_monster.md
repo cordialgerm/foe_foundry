@@ -25,6 +25,7 @@ Overall, the Mirage Monster is primarily a cunning ambusher with significant phy
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mirage Monster
 
 *Huge* *Monstrosity*
@@ -71,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **The mirage monster can take 2 legendary actions:** Only one legendary action can be used at a time and only at the end of another creatures turn. It regains spent legendary actions at the start of its turn.
 - **Grasping Pseudopod:** The mirage monster makes a pseudopod attack with a range of 15 feet. On a hit, the target makes a DC 14 Strength saving throw. On a failure, the target is pulled up to 15 feet towards the mirage monster.
 - **Bite (Costs 2 Actions):** The mirage monster attacks with its bite.
+</statblock>
 
 

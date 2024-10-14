@@ -23,6 +23,7 @@ As a reaction, the Nephirron possesses the Sculpt Breath ability, which allows i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nephirron Devil
 
 *Huge* *Fiend* *lawful evil*
@@ -66,5 +67,6 @@ At will: detect thoughts, protection from evil and good, teleport (self plus 150
 - **Sculpt Breath (Recharge 6):** When the nephirron is in the area of a spell, such as fireball, or a breath weapon, it can create a hole in the spell or breath weapon, protecting itself from the effects. If it does so, the nephirron automatically succeeds on its saving throw against the spell or breath weapon and takes no damage if it would normally take half damage on a successful save.
 
 
+</statblock>
 
 

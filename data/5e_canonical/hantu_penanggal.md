@@ -29,6 +29,7 @@ Finally, the Entrails attack is unique to the head. This attack, rolling +6 to h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hantu Penanggal
 
 *Medium* *Fiend* *any evil*
@@ -70,5 +71,6 @@ At will: darkness, detect evil and good
 - **Entrails (Head Only):** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the penanggal can’t use its entrails on another target.
 
 
+</statblock>
 
 

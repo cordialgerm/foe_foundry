@@ -47,6 +47,7 @@ This dragon, with its combination of formidable physical prowess, resilience, an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Cave Dragon
 
 *Huge* *Dragon* *Neutral Evil*
@@ -95,5 +96,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a Tail attack.
 - **Limb Sweep (Costs 2 Actions):** The dragon sweeps its wingless limbs outward. Each creature within 10 feet of the dragon must succeed on a DC 21 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be pushed up to 10 feet away from the dragon and knocked prone.
+</statblock>
 
 

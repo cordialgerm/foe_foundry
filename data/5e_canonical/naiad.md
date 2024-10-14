@@ -19,6 +19,7 @@ When it comes to actions, the Naiad can perform a melee attack known as Watery G
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Naiad
 
 *Medium* *Fey*
@@ -49,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Watery Grasp:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage  and the target is grappled (escape DC 12). While grappling a creature this way  the naiad can't use Watery Grasp on a different target and can swim at full speed.
 
 
+</statblock>
 
 

@@ -23,6 +23,7 @@ Moreover, the Spinosaurus can take legendary actions, allowing it to perform add
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spinosaurus
 
 *Gargantuan* *Beast* *Unaligned*
@@ -62,5 +63,6 @@ The spinosaurus can take 3 legendary actions, choosing from the options below. O
 - **Move:** The spinosaurus moves up to half its speed without provoking opportunity attacks.
 - **Roar:** The spinosaurus uses Frightful Presence.
 - **Tail Attack (Costs 2 Actions):** The spinosaurus makes one Tail attack.
+</statblock>
 
 

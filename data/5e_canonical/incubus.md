@@ -12,6 +12,7 @@
 
 Source: 5e_srd
 
+<statblock>
 ## Incubus
 
 *Medium fiend (shapechanger), neutral evil*
@@ -52,5 +53,6 @@ The fiend can have only one target charmed at a time. If it charms another, the 
 
 Constitution saving throw against this magic, taking 32 (5d10+5) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
 
-***Etherealness***. The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa.
+***Etherealness***. The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa.</statblock>
+
 

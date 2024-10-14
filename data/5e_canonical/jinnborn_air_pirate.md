@@ -23,6 +23,7 @@ As a reaction, the Jinnborn can perform a Parry, which grants a +2 bonus to its 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jinnborn Air Pirate
 
 *Medium* *Humanoid* *non-lawful*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Parry:** + 2 to its AC vs. one melee attack that would hit it if it can see attacker and wielding melee weapon.
 
 
+</statblock>
 
 

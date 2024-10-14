@@ -25,6 +25,7 @@ During combat, the Desert Troll is capable of a multiattack, allowing it to make
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Desert Troll
 
 *Large* *Giant* *chaotic evil*
@@ -59,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.
 
 
+</statblock>
 
 

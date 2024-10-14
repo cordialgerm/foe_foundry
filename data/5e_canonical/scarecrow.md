@@ -29,6 +29,7 @@ Overall, the Scarecrow offers a blend of fear-inducing tactics and physical dura
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scarecrow
 
 *Medium* *Construct*
@@ -65,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Hat of Illusion (1/Day):** While wearing a hat or other head covering  the scarecrow takes on the illusory appearance of the last living humanoid to wear that hat. It requires a DC 12 Insight or Perception check to recognize the illusion. The illusion ends when the scarecrow is touched  takes damage  attacks  or uses Scare  or when the scarecrow chooses to end it as a bonus action.
 
 
+</statblock>
 
 

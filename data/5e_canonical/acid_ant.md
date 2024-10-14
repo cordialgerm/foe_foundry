@@ -21,6 +21,7 @@ Overall, the Acid Ant serves as a minor but hazardous foe in combat scenarios, c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Acid Ant
 
 *Small* *Monstrosity* *unaligned*
@@ -51,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 2 (1d4) acid damage.
 
 
+</statblock>
 
 

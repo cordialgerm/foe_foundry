@@ -21,6 +21,7 @@ Overall, the Child of Yggdrasil is a potent foe that capitalizes on its abilitie
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Child of Yggdrasil
 
 *Large* *Aberration* *neutral evil*
@@ -53,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack. +6 to hit, reach 10 ft., one target. Hit: 7 (1d8 + 3) slashing damage plus 7 (2d6) acid damage.
 
 
+</statblock>
 
 

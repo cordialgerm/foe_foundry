@@ -21,6 +21,7 @@ For reaction abilities, the "Fury of the Storm" allows the Rimepacted Devil to m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil, Rimepacted
 
 *Medium* *Fiend* *lawful evil*
@@ -62,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Fury of the Storm:** When a creature rimepacted can see is knocked prone by Frigid Vortex rimepacted can move up to half its speed toward the creature.
 
 
+</statblock>
 
 

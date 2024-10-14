@@ -35,6 +35,7 @@ In summary, the Diminution Drake excels in mobility, size manipulation, and stea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Diminution Drake
 
 *Medium* *Dragon* *neutral evil*
@@ -70,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Shrinking Breath (Recharge 5-6):** The drake exhales poison in a 15-foot-line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw. On a failure, a creature takes 17 (5d6) poison damage and its size is reduced by one category until it completes a short or long rest. On a success, it takes half the damage and isn’t reduced in size. This breath can reduce a creature’s size to no smaller than Tiny.
 
 
+</statblock>
 
 

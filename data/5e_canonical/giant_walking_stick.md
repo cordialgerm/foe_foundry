@@ -21,6 +21,7 @@ As a bonus action, the Giant Walking Stick can perform a Startling Display, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Walking Stick
 
 *Large* *Beast* *unaligned*
@@ -58,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Startling Display:** Each creature within 5 ft. of the stick: DC 13 Int save or be incapacitated until end of its next turn. The walking stick then flies up to its flying speed with o provoking opportunity attacks.
 
 
+</statblock>
 
 
