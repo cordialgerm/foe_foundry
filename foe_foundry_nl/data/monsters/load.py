@@ -299,6 +299,16 @@ def iter_5e_monster_nl() -> Iterable[tuple[Path, str]]:
             print(f"Unable to load {monster_file}. {x}")
 
 
+def load_canonical_monster_text(key: str) -> str:
+    path = (
+        Path(__file__).parent.parent.parent.parent
+        / "data"
+        / "5e_canonical"
+        / f"{key}.md"
+    )
+    return _read(path)
+
+
 def _read(path: Path) -> str:
     try:
         with path.open("r", encoding="utf-8") as f:

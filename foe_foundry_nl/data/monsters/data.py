@@ -35,6 +35,10 @@ class CanonicalMonster:
     description: str | None
     natural_language: str | None
 
+    @property
+    def cr_numeric(self) -> float:
+        return float(self.cr)
+
     def save(self, path: Path):
         if not path.parent.exists():
             path.parent.mkdir(parents=True, exist_ok=True)

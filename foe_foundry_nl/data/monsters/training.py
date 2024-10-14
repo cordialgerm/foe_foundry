@@ -1,10 +1,11 @@
 from fnmatch import fnmatch
 
 import numpy as np
+from datasets import Dataset, DatasetDict
 
 from foe_foundry.creature_types import CreatureType
 
-from .load import get_canonical_monsters, name_to_key
+from .load import get_canonical_monsters, load_canonical_monster_text, name_to_key
 
 # try to embed the monster roles from FoF and find similar and different creatures
 # find similar and different creatures based on mental stats
@@ -89,7 +90,6 @@ lineages = {
     "goblinoids": ["Goblin", "Hobgoblin", "Bugbear", "*goblin*", "Orc", "*orc*"],
     "petrify": ["Cockatrice", "Medusa", "Gorgon", "Basilisk"],
     "mephit": ["*mephit*"],
-    "gnoll": ["*gnoll*"],
     "hag": ["*hag*"],
     "spirit": [
         "Ghost",
@@ -218,9 +218,22 @@ class SrdMonsterSelector:
             CreatureType.Undead: [CreatureType.Fiend, CreatureType.Construct],
         }
 
-    def random_positive_negative_triplet(self) -> list[tuple[str, str, str, str]]:
+    def random_positive_negative_triplet(
+        self, keys_only=True
+    ) -> list[tuple[str, str, str, str]]:
         anchor = self._choose(self.keys)
-        return self.get_positive_negative_triplets(anchor)
+        results = self.get_positive_negative_triplets(anchor)
+
+        if keys_only:
+            return results
+        else:
+            text_results = []
+            for anchor, positive, negative, type in results:
+                anchor_text = load_canonical_monster_text(anchor)
+                positive_text = load_canonical_monster_text(positive)
+                negative_text = load_canonical_monster_text(negative)
+                text_results.append((anchor_text, positive_text, negative_text, type))
+            return text_results
 
     def get_positive_negative_triplets(
         self, anchor: str
@@ -277,14 +290,36 @@ class SrdMonsterSelector:
                 return self._choose(keys)
 
             results = []
-            results.append((anchor, _similar_ct(), _dissimilar_ct(), "creature_type"))
-            results.append((anchor, _similar_ac(), _dissimilar_ac(), "ac"))
-            results.append((anchor, _similar_hp(), _dissimilar_hp(), "hp"))
-            results.append((anchor, _similar_cr(), _dissimlar_cr(), "cr"))
-            if len(lineages):
+
+            try:
                 results.append(
-                    (anchor, _similar_lineage(), _dissimilar_ct(), "lineage")
+                    (anchor, _similar_ct(), _dissimilar_ct(), "creature_type")
                 )
+            except ValueError:
+                pass
+
+            try:
+                results.append((anchor, _similar_ac(), _dissimilar_ac(), "ac"))
+            except ValueError:
+                pass
+
+            try:
+                results.append((anchor, _similar_hp(), _dissimilar_hp(), "hp"))
+            except ValueError:
+                pass
+
+            try:
+                results.append((anchor, _similar_cr(), _dissimlar_cr(), "cr"))
+            except ValueError:
+                pass
+
+            if len(lineages):
+                try:
+                    results.append(
+                        (anchor, _similar_lineage(), _dissimilar_ct(), "lineage")
+                    )
+                except ValueError:
+                    pass
 
             return results
 
@@ -357,7 +392,23 @@ class SrdMonsterSelector:
         return list(keys)
 
     def _similar_cr(self, cr: str, exclude_keys: set[str]) -> list[str]:
-        keys = {k for k, m in self.srd_monsters.items() if m.cr == cr}
+        cr_float = float(cr)
+
+        def is_similar(cr1: float, cr2: float):
+            if cr1 <= 1:
+                return cr1 == cr2
+            elif cr1 <= 10:
+                return abs(cr1 - cr2) <= 1
+            elif cr1 <= 20:
+                return abs(cr1 - cr2) <= 3
+            else:
+                return abs(cr1 - cr2) <= 6
+
+        keys = {
+            k
+            for k, m in self.srd_monsters.items()
+            if is_similar(cr_float, m.cr_numeric)
+        }
         keys = keys - exclude_keys
         return list(keys)
 
@@ -373,3 +424,39 @@ class SrdMonsterSelector:
 
         index = self.rng.choice(len(keys))
         return keys[index]
+
+
+def load_triplet_loss_dataset() -> tuple[DatasetDict, int, int, int]:
+    rng = np.random.default_rng(20240711)
+    selector = SrdMonsterSelector(rng)
+
+    examples: list[dict] = []
+    for _ in range(100):
+        selections = selector.random_positive_negative_triplet(keys_only=False)
+        for anchor, positive, negative, _ in selections:
+            examples.append(dict(anchor=anchor, positive=positive, negative=negative))
+    n_examples = len(examples)
+
+    n_test = n_eval = n_examples // 10
+    n_train = n_examples - n_test - n_eval
+    train_examples = examples[:n_train]
+    eval_examples = examples[n_train : n_train + n_eval]
+    test_examples = examples[n_train + n_eval :]
+
+    train_dataset = Dataset.from_list(train_examples)
+    eval_dataset = Dataset.from_list(eval_examples)
+    test_dataset = Dataset.from_list(test_examples)
+
+    return (
+        DatasetDict(
+            {
+                "train": train_dataset,
+                "eval": eval_dataset,
+                "test": test_dataset,
+            },
+            field_names=["anchor", "positive", "negative"],
+        ),
+        n_train,
+        n_eval,
+        n_test,
+    )

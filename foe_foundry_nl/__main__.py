@@ -1,7 +1,7 @@
 import click
 
 from .data.monsters import save_monsters
-from .train import fine_tune_bert_on_background_corpus
+from .train import fine_tune_bert_contrastive, fine_tune_bert_on_background_corpus
 
 
 @click.group()
@@ -19,6 +19,11 @@ def test():
 @click.option("--skip-training", is_flag=True, help="Whether to skip training")
 def train_bg(fresh: bool, skip_training: bool = False):
     fine_tune_bert_on_background_corpus(fresh=fresh, skip_training=skip_training)
+
+
+@cli.command()
+def train_contrastive():
+    fine_tune_bert_contrastive()
 
 
 @cli.command()
