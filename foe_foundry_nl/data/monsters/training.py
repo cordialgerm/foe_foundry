@@ -431,7 +431,7 @@ def load_triplet_loss_dataset() -> tuple[DatasetDict, int, int, int]:
     selector = SrdMonsterSelector(rng)
 
     examples: list[dict] = []
-    for _ in range(100):
+    for _ in range(2000):
         selections = selector.random_positive_negative_triplet(keys_only=False)
         for anchor, positive, negative, _ in selections:
             examples.append(dict(anchor=anchor, positive=positive, negative=negative))

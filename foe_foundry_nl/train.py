@@ -106,7 +106,7 @@ def _setup_contrastive_trainer(
     train_loss = losses.TripletLoss(
         model=model,
         distance_metric=losses.TripletDistanceMetric.COSINE,
-        triplet_margin=0.5,
+        triplet_margin=1.0,
     )
 
     trainer = SentenceTransformerTrainer(
@@ -117,8 +117,7 @@ def _setup_contrastive_trainer(
             eval_strategy="epoch",
             save_strategy="epoch",
             logging_dir="./logs",
-            logging_strategy="steps",
-            logging_steps=50,
+            logging_strategy="epoch",
             save_total_limit=2,  # Only save the last two models
             num_train_epochs=num_train_epochs,
             per_device_train_batch_size=train_batch_size,
@@ -127,6 +126,7 @@ def _setup_contrastive_trainer(
             lr_scheduler_type="cosine",
             warmup_steps=warmup_steps,
             load_best_model_at_end=True,
+            save_steps=50,  # Save checkpoint every 500 steps
         ),
         loss=train_loss,
         train_dataset=dataset["train"],
