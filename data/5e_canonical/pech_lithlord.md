@@ -1,6 +1,8 @@
 <MonsterName/>Pech Lithlord</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>104</HP>
 <summary>The Pech Lithlord is a small elemental creature characterized by its neutral good alignment. It serves as a protector of natural elements, particularly stone. With an armor class of 17 and 104 hit points, it exhibits good defensive capabilities. The creature has a challenge rating of 7, making it a moderately strong opponent for player characters, providing an experience of 2,900 XP upon defeat. It possesses notable strengths in its physical attacks and spellcasting, but its vulnerability to bright light reduces its effectiveness in well-lit areas. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ For its actions in combat, the Pech Lithlord has a "Multiattack" feature allowin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pech Lithlord
 
 *Small* *Elemental* *neutral good*
@@ -57,5 +60,6 @@ At will: mending, thunderwave (4d8)
 - **Hammer:** Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

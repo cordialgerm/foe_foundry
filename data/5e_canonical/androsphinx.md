@@ -1,6 +1,8 @@
 <MonsterName/>Androsphinx (Sphinx)</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>17</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>199</HP>
 <summary>The Androsphinx is a majestic and enigmatic creature with the body of a lion and the face of a regal, bearded man. Its golden fur glows with an otherworldly light, and its wings are vast and powerful, allowing it to soar through the skies with ease. Androsphinxes are known for their immense wisdom and their love of riddles, often testing travelers with cryptic questions. Those who answer correctly may earn their favor, while those who fail often face dire consequences. Androsphinxes are also powerful spellcasters, capable of calling forth divine magic to smite enemies or protect allies. They guard ancient temples and hidden knowledge, challenging those who seek the treasures they protect.</summary>
 
 <summary>The Androsphinx is a large monstrosity revered for its dual nature as a fierce combatant and potent spellcaster. It boasts a high Armor Class of 17 and a substantial pool of Hit Points at 284, making it very durable in combat. With a Challenge Rating of 17, it poses a significant threat to adventurers. The Androsphinx exhibits remarkable strengths, including magical attacks through its claws that deal additional force damage and powerful spells that can influence the battlefield. It is well-equipped with defensive capabilities, such as resistance to exhaustion and the frightened condition, combined with the unique ability to remain inscrutable to those trying to read its thoughts or emotions. On the downside, it is a large target that could make it vulnerable in certain scenarios, especially if caught unaware.</summary>
@@ -51,6 +53,7 @@ The Androsphinx is a formidable foe and a strategic component in any encounter, 
 
 Source: 5e_srd
 
+<statblock>
 ### Androsphinx (Sphinx)
 
 *Large monstrosity, lawful neutral*
@@ -115,7 +118,8 @@ The sphinx can take 3 legendary actions, choosing from the options below. Only o
 
 **Teleport (Costs 2 Actions)**. The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
 
-**Cast a Spell (Costs 3 Actions)**. The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.
+**Cast a Spell (Costs 3 Actions)**. The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.</statblock>
+
 
 
 
@@ -123,6 +127,7 @@ The sphinx can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Androsphinx
 
 *Large monstrosity*
@@ -177,5 +182,6 @@ The sphinx can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the sphinx dies, these effects fade in  days.
+</statblock>
 
 

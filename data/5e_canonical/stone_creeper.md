@@ -1,6 +1,8 @@
 <MonsterName/>Stone Creeper</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>30</HP>
 <summary>The Stone Creeper is a Medium-sized plant creature that functions effectively as a cunning ambush predator in its environment. Not aligned to any particular cause, it relies on its deceptive abilities and climbing skills to outmaneuver foes. With a modest armor class of 12, it is somewhat resilient, boasting 30 hit points thanks to its constitution score of 16, which grants it a good level of durability. The Stone Creeper's movement capabilities are notable; it can walk at a speed of 30 feet and climb at 20 feet, allowing it to navigate both ground and vertical spaces with ease. Despite its lower intelligence, wisdom, and charisma scores, it compensates with advantages in dexterity and constitution, giving it a good foundational ability for evasion and survival. It has a challenge rating of 1, providing 200 experience points upon defeat, marking it as a suitable encounter for lower-level adventurers.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Stone Creeper also possesses the "Weaken Stone" ability, which is particular
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stone Creeper
 
 *Medium* *Plant* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Weaken Stone:** While climbing on a wall or ceiling made of worked stone, the stone creeper injects its acid into the mortar, weakening the structure. Each creature within 10 feet of the wall or in a 10-foot cube beneath the ceiling must make a DC 12 Dexterity saving throw, taking 7 (2d6) bludgeoning damage on a failed save, or half as much damage on a successful one. A creature that fails its saving throw when beneath a ceiling is also knocked prone and buried. The buried target is restrained and unable to breathe or stand up. A creature, including the target, can take its action to remove the rubble and free the buried target by succeeding on a DC 10 Strength check.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Rotsam</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>Rotsam is a tiny ooze creature that embodies the dangers of disease and decay. It operates as an unaligned entity, using its unique abilities to inflict suffering on others while remaining elusive. With a challenge rating of 2, it poses a moderate threat in combat, capable of dealing both piercing and significant necrotic damage. The Rotsam's strengths lie in its speed and ability to bypass obstacles, while its immunities to various conditions make it difficult to incapacitate. However, its low armor class and poor physical strength and charisma reveal its weaknesses. Creatures facing the Rotsam must be cautious, as failing to contend with its disease can lead to dire consequences.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Rotsam can use its Diseased Bite action. This melee weapon attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rotsam
 
 *Tiny* *Ooze* *unaligned*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Diseased Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage plus 10 (3d6) necrotic damage, and the rotsam attaches to the target. While attached, the rotsam doesn’t attack. Instead, at the start of each of the rotsam’s turns, the target takes 10 (3d6) necrotic damage. If a creature ends its turn with a rotsam attached to it, the creature must succeed on a DC 12 Constitution saving throw or contract a disease (see the Bog Rot trait). The rotsam can detach itself by spending 5 feet of its movement. It does so after the target contracts its disease or the target dies. A creature, including the target, can take its action to detach the rotsam by succeeding on a DC 12 Strength check.
 
 
+</statblock>
 
 

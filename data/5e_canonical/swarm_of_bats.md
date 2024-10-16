@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Bats</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>A Swarm of Bats is a chaotic, flurry of small, nocturnal creatures that can overwhelm and disorient their prey. Found in caves, ruins, or forests, these swarms move with incredible speed, using their keen sense of echolocation to navigate the darkness. While individual bats are harmless, a swarm can be dangerous due to their numbers, as they bite and scratch in a frenzy. They are particularly troublesome in dark, confined spaces, where their collective movement creates confusion and panic. Swarms of Bats are often drawn to areas rich in insects or blood.</summary>
 
 <summary>The Swarm of Bats is a Medium-sized beast characterized by its ability to maneuver in groups, utilizing numbers to overwhelm opponents. With a Challenge Rating of 1/4, this creature has a fair amount of versatility in combat, primarily relying on its speed and ability to continuously swarm its foes. It possesses reasonable defenses with an Armor Class of 12, and its Hit Points of 18 provide some resilience in battle. Notably, the swarm is immune to a variety of conditions, allowing it to maintain its effectiveness in combat against a multitude of attacks. However, its overall physical attributes are quite limited, with a very poor Strength score, making it reliant on its swarm tactics and damage output rather than sheer physical might.</summary>
@@ -21,6 +23,7 @@ Overall, the Swarm of Bats is best used as a harassing force, targeting weaker f
 
 Source: 5e_srd
 
+<statblock>
 ### Swarm of Bats
 
 *Medium swarm of Tiny beasts, unaligned*
@@ -53,7 +56,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bites***. *Melee Weapon Attack:* +4 to hit, reach 0 ft., one creature in the swarm's space. *Hit:* 5 (2d4) piercing damage, or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.
+***Bites***. *Melee Weapon Attack:* +4 to hit, reach 0 ft., one creature in the swarm's space. *Hit:* 5 (2d4) piercing damage, or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.</statblock>
+
 
 
 
@@ -61,6 +65,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Bats
 
 *Medium* *Beast*
@@ -92,5 +97,6 @@ Source: 5e_artisinal_monsters
 - **Bites:** Melee Weapon Attack: +4 to hit, reach 0 ft., one target. Hit: 7 (2d6) piercing damage  or 3 (1d6) piercing damage if the swarm is bloodied.
 
 
+</statblock>
 
 

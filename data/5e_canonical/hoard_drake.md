@@ -1,6 +1,8 @@
 <MonsterName/>Hoard Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Hoard Drake is a large, neutral evil dragon known for its greed and affinity for treasure. As a creature of significant power, it embodies both physical prowess and the unique ability to manipulate its surroundings through its knowledge of valuable items. With a strong Constitution of 20 and an excellent Armor Class of 16, the Hoard Drake is resilient in battle, able to withstand a considerable amount of damage. However, its Dexterity is notably low, making it less agile in combat. The creature is particularly dangerous when facing opponents who possess items of value to it, as it gains advantages against such targets. Its unique abilities, like detecting treasures within proximity and the special attack known as Midas Breath, make it a formidable foe in both combat and strategic encounters.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ One of its most powerful features is "Midas Breath," which it can use after a re
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hoard Drake
 
 *Large* *Dragon* *neutral evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Midas Breath (Recharge 6):** The hoard drake spits molten gold in a 30-foot cone. Each creature in the area must make a DC 16 Dexterity saving throw. On a failure, a creature takes 36 (8d8) fire damage and the gold clings to it. On a success, a creature takes half the damage and the gold doesn’t cling to it. A creature with gold clinging to it has its speed halved until it takes an action to scrape off the gold.<br><br>The gold produced by Midas Breath can be collected once it has cooled, providing roughly 50 gp worth of gold dust and scraps each time it spits molten gold.
 
 
+</statblock>
 
 

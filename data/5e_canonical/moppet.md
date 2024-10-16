@@ -1,6 +1,8 @@
 <MonsterName/>Moppet</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>17</HP>
 <summary>The Moppet is a tiny construct, primarily designed not for combat but rather as a tool for psychological manipulation and confusion. It is characterized by its low physical capabilities but compensates with a unique set of abilities that can disrupt the actions and thoughts of its foes. With an Armor Class of 10 and a modest 17 hit points, the Moppet has very low durability. However, it's immune to poison and psychic damage, and it cannot be affected by many common conditions. Its strength lies in its ability to absorb psychic energy and manifest nightmares, making it a threatening presence despite its small size. The Moppet can contribute to combat by incapacitating foes and invoking their fears, but its overall challenge rating of 1 means that it is not particularly strong in a direct confrontation.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ For bonus actions, the Moppet has Nimble Moves, which allows it to take the Dash
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moppet
 
 *Tiny* *Construct* *unaligned*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Moves:** Takes the Dash or Disengage action.
 
 
+</statblock>
 
 

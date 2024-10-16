@@ -1,6 +1,8 @@
 <MonsterName/>Warhorse</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>19</HP>
 <summary>A Warhorse is a powerful, trained mount bred for battle. These horses are larger and more muscular than ordinary riding horses, with thick hides and a fierce temperament. Warhorses are disciplined and loyal to their riders, charging fearlessly into combat and trampling enemies under their hooves. They are often outfitted with barding (armor for horses) and are commonly used by knights, cavalry units, and adventurers. Warhorses are not only fast and strong but also well-trained to remain calm amidst the chaos of battle.</summary>
 
 <summary>The Warhorse is a large beast commonly used as a mount in various campaigns, known for its speed and strength. With a challenge rating of 1/2, it presents a moderate threat in combat, primarily leveraging its powerful melee attacks. The Warhorse has strengths in its strength attribute, making it very good at physical confrontations, but it has weaknesses in its intelligence and charisma, rendering it ineffective in mental or social interactions. It has a decent amount of hit points, allowing it to endure some damage before succumbing in battle.</summary>
@@ -19,6 +21,7 @@ In terms of actions, the Warhorse can execute a "Hooves" attack, which is a mele
 
 Source: 5e_srd
 
+<statblock>
 ### Warhorse
 
 *Large beast, unaligned*
@@ -43,7 +46,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage.
+***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage.</statblock>
+
 
 
 
@@ -51,6 +55,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Warhorse
 
 *Large* *Beast*
@@ -74,5 +79,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6+4) bludgeoning damage. If the horse moves at least 20 feet straight towards the target before the attack  the target makes a DC 14 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 

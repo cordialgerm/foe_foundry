@@ -1,6 +1,8 @@
 <MonsterName/>Moonweb</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>97</HP>
 <summary>The Moonweb is a daunting aberration that operates without alignment, marking its existence as a creature from the realms beyond normal understanding. With a challenge rating of 6, it poses a significant threat to adventurers, boasting a high armor class of 16 due to its natural armor, along with a total of 97 hit points. Its primary strengths include a powerful flying ability, advantageous stealth capabilities, and an array of damaging and debilitating attacks. However, its intelligence is notably low, which may hinder its strategic capabilities. The Moonweb has exceptional dexterity, enabling it to evade attacks effectively, and it is immune to numerous conditions, making it a resilient opponent in combat.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ As a bonus action, the Moonweb can use Ethereal Jaunt to shift between the Mater
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moonweb
 
 *Medium* *Aberration* *unaligned*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Ethereal Jaunt:** Magically shifts from the Material Plane to the Ethereal Plane or vice versa.
 
 
+</statblock>
 
 

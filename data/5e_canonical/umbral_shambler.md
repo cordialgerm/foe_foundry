@@ -1,6 +1,8 @@
 <MonsterName/>Umbral Shambler</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>39</HP>
 <summary>The Umbral Shambler is a medium-sized aberration with a neutral evil alignment, embodying a creature of shadows and darkness. It is capable of dealing both slashing and necrotic damage, which makes it a threat in combat situations while also providing it with a decent amount of hit points at 39, making it moderately resilient. The shambler excels in low-light environments, where its mobility increases significantly, allowing it to evade attacks and strike from the shadows. However, it struggles in bright sunlight; its abilities are hindered, causing disadvantage on attack rolls and perception checks. It has a challenge rating of 2, indicating it can pose a challenge to low-level adventurers, particularly if they are unprepared for its unique traits and attacks.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the Umbral Shambler is a cunning creature, leveraging darkness to outma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Umbral Shambler
 
 *Medium* *Aberration* *neutral evil*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Twisted Step:** Can project itself beyond reality for a short time. Until start of its next turn it can move through objects as if they were difficult terrain provided an object is no more than 3' thick and at least one side of the object is in dim light or darkness. It takes 5 (1d10) force if it starts its turn inside an object.
 
 
+</statblock>
 
 

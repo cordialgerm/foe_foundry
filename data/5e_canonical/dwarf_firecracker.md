@@ -1,6 +1,8 @@
 <MonsterName/>Dwarf, Firecracker</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (scale mail)</AC>
+<HP/>68</HP>
 <summary>The Dwarf Firecracker is a Medium humanoid creature known for its explosive combat style and formidable physical prowess. With a robust Armor Class of 14 and 68 hit points, it thrives in close-range battles, making it a tough opponent for adventurers. It has a Challenge Rating of 3, offering 700 experience points upon defeat. The Firecracker possesses strong physical attributes, particularly in strength and constitution, granting it exceptional capability in melee combat while also possessing some fire-based magical abilities. Its notable strengths include heightened agility in fire, making it more unpredictable in combat situations, and the ability to deal double damage to structures, making it especially dangerous in siege scenarios. However, it has weaknesses in wisdom and dexterity, which could make it susceptible to certain tactics or spells that target those attributes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ One of the Firecracker's more powerful abilities is "Combustion Wave," which rec
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dwarf, Firecracker
 
 *Medium* *Humanoid* *any alignment*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Combustion Wave (Recharge 5–6):** The firecracker slams its massive hammer into the ground battering itself and its foes with fiery shockwave. Each creature within 20' of the firecracker including itself must make a DC 13 Con save taking 10 (3d6) fire and 10 (3d6) thunder on a failed save or half damage if made. Creatures behind cover have advantage on the save.
 
 
+</statblock>
 
 

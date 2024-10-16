@@ -1,6 +1,8 @@
 <MonsterName/>Jackal</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>12</AC>
+<HP/>3</HP>
 <summary>A Jackal is a small, opportunistic predator and scavenger commonly found in deserts, savannas, and arid plains. These creatures are slender and quick, with sharp teeth and a keen sense of smell, allowing them to detect prey or carrion from great distances. Jackals are known for their cunning and often hunt in small packs, using their speed and coordination to bring down larger animals. Though not particularly dangerous on their own, Jackals are persistent and will take advantage of any weakness in their prey. They are also skilled at avoiding larger predators, quickly fleeing if threatened.</summary>
 
 <summary>The jackal is a small beast often found in various terrains, known for its keen senses and agility. With an armor class of 12, it has a relatively low defensive capacity, making it vulnerable to stronger attacks. It has a minimal hit point total of only 3, which means that it can be easily defeated in combat. The creature’s primary strengths lie in its dexterity and perception, allowing it to avoid attacks and detect threats effectively. However, its challenge rating of 0 indicates that it presents little challenge to experienced adventurers. The jackal is primarily a scavenger and opportunist, utilizing its keen senses to locate food and avoid danger rather than engaging in direct confrontation.</summary>
@@ -31,6 +33,7 @@ The jackal can use a melee attack called Bite, which has a +3 to hit (good) and 
 
 Source: 5e_srd
 
+<statblock>
 ### Jackal
 
 *Small beast, unaligned*
@@ -59,7 +62,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +1 to hit, reach 5 ft., one target. *Hit:* 1 (1d4-1) piercing damage.
+***Bite***. *Melee Weapon Attack:* +1 to hit, reach 5 ft., one target. *Hit:* 1 (1d4-1) piercing damage.</statblock>
+
 
 
 
@@ -67,6 +71,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jackal
 
 *Small* *Beast*
@@ -94,6 +99,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage.
 
 
+</statblock>
 
 
 
@@ -102,6 +108,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jackal
 
 *Small beast*
@@ -130,5 +137,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite.** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 10 CON save or contract shriveling fever disease, named for the way the disease causes an infected creature’s muscles to shrivel. Until the disease is cured, the creature is poisoned, and at the end of each long rest, the infected creature must succeed on a DC 10 CON save or its STR score is reduced by 1d4. This reduction lasts until the creature finishes a long rest after the disease is cured. If the disease reduces the creature’s STR to 0, the creature dies. A creature that succeeds on two saves recovers from the disease.
 
+</statblock>
 
 

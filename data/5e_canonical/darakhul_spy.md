@@ -1,6 +1,8 @@
 <MonsterName/>Darakhul Spy</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (studded leather)</AC>
+<HP/>91</HP>
 <summary>The Darakhul Spy is a formidable Medium undead creature characterized by its devious and stealthy nature. As a neutral evil being, it excels in subterfuge and manipulation, making it particularly dangerous in social situations and combat alike. With an impressive Armor Class of 16, it can withstand significant damage, supported by a robust pool of 91 hit points derived from 14d8+28. The Darakhul Spy moves quietly, with a walking speed of 30 feet, and is rated with a Challenge Rating of 5, indicating that it poses a serious threat to adventurers, providing 1,800 experience points upon defeat. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Darakhul Spy stands as a lethal blend of stealth, deception, and co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Darakhul Spy
 
 *Medium* *Undead* *neutral evil*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Light Crossbow:** Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 8 (1d8 + 4) piercing damage.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Peri</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Peri is a small elemental creature embodying chaotic goodness, known for its agility and magical prowess. With an Armor Class of 15 due to its natural armor and 60 hit points, the Peri is a nimble combatant with good flying speed, allowing it to engage strategically in battle. Its overall challenge rating of 2 signifies a moderate threat level, yielding 450 experience points for defeating it. Peris are characterized by their strong Charisma, indicating their potential in both spellcasting and influence, while their Dexterity and Constitution are also above average, enhancing their effectiveness in combat and resilience. However, their Strength score is significantly low, making physical melee attacks less effective. They possess elemental resistances to lightning and thunder damage, which adds to their survivability in certain encounters. Notably, if a Peri is defeated, it disintegrates into a warm breeze, leaving behind only its equipment.</summary>
 
 <detail>
@@ -28,6 +30,7 @@ For its actions, the Peri has a range of combat options:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Peri
 
 *Small* *Elemental* *chaotic good*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Storm Wave (1/Day):** Throws its arms forward releasing a blast of stormy wind in a 30' line that is 5 ft. wide. All in line make a DC 12 Dex save. On a failure a creature takes 7 (2d6) lightning and 7 (2d6) thunder and is pushed up to 10 ft. away from the peri. On a success a creature takes half the damage and isn’t pushed.
 
 
+</statblock>
 
 

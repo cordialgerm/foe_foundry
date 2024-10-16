@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Emerald Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>20</AC>
+<HP/>346</HP>
 <summary>The Ancient Emerald Dragon is a formidable gargantuan creature known for its dominating presence and extraordinary abilities. Occupying the 24th Challenge Rating tier, it boasts a substantial pool of hit points, high offensive capabilities, and devastating psionic powers. With an exceptional Armor Class of 20 and multiple actions per turn, it poses a significant threat to adventurers. However, its strengths are offset by its limited physical space for mobility and potential vulnerabilities to certain magical influences. Notably, it can manipulate both magical and psionic forces, making it a versatile adversary in combat.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ Overall, the Ancient Emerald Dragon is a highly intelligent and powerful foe tha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Emerald Dragon
 
 *Gargantuan* *Dragon*
@@ -80,5 +83,6 @@ Source: 5e_artisinal_monsters
 - **Pandorum (Costs 2 Actions):** The dragon psionically targets one creature within 60 feet. The target makes a DC 17 Wisdom saving throw, becoming confused on a failure. While confused in this way, the target regards their allies as traitorous enemies. When rolling to determine its actions, treat a roll of 1 to 4 as a result of 8. The target repeats the saving throw at the end of each of its turns, ending the effect on a success.
 - **Psionic Wave (Costs 2 Actions):** The dragon uses Psionic Wave.
 - **Maddening Harmonics (1/Day):** Each creature of the dragons choice that can hear it within 120 feet makes a DC 17 Wisdom saving throw. On a failure, a creature becomes psionically confused for 1 minute. A creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

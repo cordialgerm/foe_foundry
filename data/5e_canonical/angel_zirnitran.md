@@ -1,6 +1,8 @@
 <MonsterName/>Angel, Zirnitran</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>20</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>325</HP>
 <summary>The Zirnitran is a formidable celestial creature, classified as Huge and neutral good in alignment. It boasts an impressive Armor Class of 19 thanks to its natural armor and has an enormous pool of Hit Points totaling 325, making it highly resilient in combat. With a Speed of 30 feet on the ground and 80 feet in flight, it is versatile in movement. The creature holds a Challenge Rating of 20, indicating a significant threat level, and offers an experience reward of 25,000 XP for defeating it. The Zirnitran’s strengths include powerful magical attacks, numerous resistances, and impressive abilities that enhance its effectiveness in battle, but it is also vulnerable to certain conditions if caught off-guard.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Finally, the Zirnitran is equipped with legendary actions that enhance its capab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angel, Zirnitran
 
 *Huge* *Celestial* *neutral good*
@@ -83,5 +86,6 @@ Source: 5e_artisinal_monsters
 - **Attack (2):** Makes one Anointed Claws or Draconic Blast attack.
 - **Cast a Spell (2):** Uses Spellcasting.
 - **Under Black Wings (3):** Creates a magical feathered shield around itself or another creature it can see within 120' of it. Target gains +2 to AC and 20 temp hp until the end of zirnitran’s next turn.
+</statblock>
 
 

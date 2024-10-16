@@ -1,6 +1,8 @@
 <MonsterName/>Sap Demon</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>81</HP>
 <summary>The Sap Demon is a small, chaotic evil ooze that serves as a unique threat on the battlefield. With an Armor Class of 13, it is moderately difficult to hit, and with 81 hit points, it can absorb a significant amount of damage before being defeated. The creature possesses a blend of both physical and magical capabilities, allowing it to grapple opponents, inflict bludgeoning and acid damage, and even possess humanoid targets. The Sap Demon's abilities allow for tactical maneuvering in combat, with particular strengths against smaller foes and an interesting interaction with elemental damage. However, its low Dexterity makes it less effective at avoiding attacks, and its lack of ranged attacks for all but one option may limit its options for dealing damage when out of reach.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Soul Sap ability recharges on a roll of a 6 and can potentially turn the tid
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sap Demon
 
 *Small* *Ooze* *Chaotic Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage plus 7 (2d6) acid damage.
 - **Lob Sap:** Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 12 (3d6 + 2) bludgeoning damage, and the target’s speed is reduced by 10 feet until the end of its next turn.
 - **Soul Sap (Recharge 6):** One humanoid the sap demon is grappling or that is incapacitated within 5 feet of the sap demon must succeed on a DC 12 Constitution saving throw or be possessed by the sap demon. The sap demon then disappears, and the target is incapacitated and loses control of its body. The sap demon now controls the body but doesn’t deprive the target of awareness. The ooze can’t be targeted by any attack, spell, or other effect, except ones that restore a creature’s hp maximum. The ooze retains its Intelligence, Wisdom, and Charisma and condition immunities. It otherwise uses the possessed target’s statistics, but doesn’t gain access to the target’s knowledge, class features, or proficiencies.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Lurker</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>84</HP>
 <summary>The Shadow Lurker is a chaotic evil fey creature that excels in stealth and manipulation through shadowy abilities. With a good Armor Class of 16 and solid hit points totaling 84, it is a formidable opponent for average adventurers. Its speed is decent, allowing it to move 40 feet per turn. The creature operates best in dim light or darkness, leveraging its impressive Dexterity score of 22, which provides a very good +6 modifier to stealth-related tasks. Additionally, its Constitution score of 14 gives it a good +2 modifier for resilience. However, the Shadow Lurker suffers greatly in sunlight, where it suffers from disadvantage on attacks and Wisdom (Perception) checks that require sight due to its Sunlight Sensitivity.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In addition to its actions, the Shadow Lurker can use its bonus action, Shadowâ€
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Lurker
 
 *Medium* *Fey* *chaotic evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Shadowâ€™s Embrace:** Dim light/darkness: Hide action.
 
 
+</statblock>
 
 

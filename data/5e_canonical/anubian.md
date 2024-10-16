@@ -1,6 +1,8 @@
 <MonsterName/>Anubian</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>44</HP>
 <summary>The Anubian is a Medium elemental creature that embodies chaotic evil, making it a formidable foe in combat. With an Armor Class of 13 and 44 hit points, it features decent resilience in battle, though not particularly exceptional. Its key strengths lie in its Dexterity score of 16, granting it good agility and a high Stealth skill modifier of +5, allowing it to effectively hide in sandy environments. Additionally, it possesses unique abilities that enable it to manipulate its surroundings and impose hindrances on its opponents, such as its Haboob action, which creates a heavily obscured area that restrains enemies. However, its vulnerability to water presents a significant weakness, causing it to take cold damage when moving through it or when splashed. In gameplay, the Anubian is likely to use its mobility and stealth to ambush unsuspecting parties, leveraging its advantages in sandy terrain while avoiding unfavorable conditions.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Anubian can utilize Sand Step, allowing it to teleport up
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Anubian
 
 *Medium* *Elemental* *Chaotic Evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Sand Step:** The anubian collapses into loose sand and teleports up to 30 feet to an unoccupied space it can see, reforming in that space. If the destination space contains sand, the anubian can immediately Hide. The anubian can’t use Sand Step while Haboob is active.
+</statblock>
 
 

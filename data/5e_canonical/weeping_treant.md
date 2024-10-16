@@ -1,6 +1,8 @@
 <MonsterName/>Weeping Treant</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Weeping Treant is a large, neutral plant creature that plays a unique role in combat and environmental interactions. With its notable high hit points and robust Armor Class, it serves as a formidable frontline tank. This creature excels at both melee and ranged attacks, capable of inflicting significant damage while also providing strategic advantages through its special abilities. Its primary weaknesses include vulnerability to fire damage and a low Dexterity, making it less agile in combat situations. The Weeping Treant’s notable abilities, particularly its acidic tears and ability to communicate with plants, highlight its connection to nature and provide opportunities for role-playing and tactical maneuvering.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Weeping Treant can perform a "Multiattack," making two Slam or Ro
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Weeping Treant
 
 *Huge* *Plant* *Neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The weeping treant makes two Slam or Rock attacks.
 - **Slam:** Melee Weapon Attack: +8 to hit, reach 5 ft., single target. Hit: 15 (3d6 + 5) bludgeoning damage plus 3 (2d6) acid damage, and the target takes 3 (1d6) acid damage at the end of its next turn unless it or another creature takes an action to wipe off the acid.
 - **Rock:** Ranged Weapon Attack: +8 to hit, range 60/180 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage.
+</statblock>
 
 

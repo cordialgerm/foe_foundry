@@ -1,6 +1,8 @@
 <MonsterName/>Scrofin</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Scrofin is a Medium Fey creature that embodies a playful yet formidable nature, often engaging in challenges and contests of strength. It operates under a lawful neutral alignment, maintaining a strict code in its interactions. With a solid Armor Class of 13 and 68 hit points, the Scrofin can hold its ground but is not invulnerable. Its strengths lie in its grappling ability and resilience, allowing it to restrain larger opponents effectively and endure damage. However, it has low Intelligence and Wisdom scores, which make it less adept at dealing with magical or perceptual challenges. Overall, the Scrofin is a captivating opponent that relies on physical strength and grappling prowess in battle.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ For reactions, the Scrofin has the Quick to Anger ability, which recharges after
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scrofin
 
 *Medium* *Fey* *lawful neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Quick to Anger (Recharges after a Short or Long Rest):** If the scrofin is wrestling a foe as part of a challenge and takes damage, or when it is reduced to half its hp maximum, it becomes angry. While angry, the scrofin has advantage on melee attack rolls and on saving throws against spells or effects that would charm or frighten it or make it unconscious, and it has resistance to bludgeoning damage. It remains angry for 1 minute, or until it is knocked unconscious. Alternatively, it can end its anger as a bonus action.
 
 
+</statblock>
 
 

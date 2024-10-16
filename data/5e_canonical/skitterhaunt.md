@@ -1,6 +1,8 @@
 <MonsterName/>Skitterhaunt</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Skitterhaunt is a Large ooze creature that operates unaligned in nature. This monster is particularly known for its ability to infest other creatures, making it dangerous to any large or smaller beasts it encounters. Its relatively good Armor Class of 14 and solid Hit Points totaling 95 give it respectable durability in combat. The Skitterhaunt excels at delivering acid damage, boasting a combination of natural attacks and special abilities that can severely debilitate its opponents. However, it suffers from rather low Dexterity, Intelligence, Wisdom, and Charisma scores, which make it less effective in initiating interactions or avoiding detection. Its unique abilities, like Vermin Encasement, allow it to persist even when reduced to zero hit points, transforming into a smaller, but still threatening ooze form.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Finally, the Skitterhaunt demonstrates its offensive prowess with **Acid Spray**
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skitterhaunt
 
 *Large* *Ooze* *Unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) piercing damage plus 9 (2d8) acid damage.
 - **Infest Vermin:** The skitterhaunt infests a Large or smaller Beast with an exoskeleton within 5 feet of it. The target must succeed on a DC 14 Constitution saving throw or become poisoned until the skitterhaunt no longer infests it. Every 24 hours that elapse, the target must repeat the saving throw or take 7 (2d6) acid damage, and its hp maximum is reduced by that amount. This reduction lasts until the target finishes a long rest after the skitterhaunt no longer infests it. The target dies if this reduces its hp maximum to 0. The skitterhaunt then takes control of the body, dissolving the flesh and hiding within the exoskeleton. A target that succeeds on two consecutive saving throws forces the skitterhaunt out of its body and is immune to the skitterhaunt’s Infest Vermin for the next 24 hours.
 - **Acid Spray (Recharge 6):** The skitterhaunt spits acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Walking Statue</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>16</AC>
+<HP/>66</HP>
 <summary>The Walking Statue is a large construct that serves as a formidable guardian in various settings, often tasked with protecting valuable treasures or locations. Its notable features include a robust Armor Class of 16, making it relatively durable in combat, and a solid pool of hit points totaling 66, which allows it to withstand significant damage before succumbing. It has formidable strength with a score of 18 and a +4 modifier, making its melee attacks powerful and effective. However, the statue has low Dexterity (8) and Intelligence (1), leading to bad performance in agility and mental tasks—characteristic of a creature constructed for strength rather than finesse. The statue is immune to poison and psychic damage, as well as a wide range of conditions, making it a tough opponent that can endure most physical confrontations. Its challenge rating of 3 indicates it is a suitable encounter for a party of mid-level adventurers. The combination of its special abilities, like falling prone when taking excessive bludgeoning damage, adds strategic depth to how players may choose to engage with it.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the Walking Statue is a heavy-hitting creature that poses unique challe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Walking Statue
 
 *Large* *Construct*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Smash:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Phase Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Phase Giant is a formidable creature classified as a Huge, neutral giant. Its notable strengths include high hit points, effective physical attacks, and the ability to shift between the Material and Ethereal Planes, making it a challenging opponent for adventurers. With an Armor Class of 15, it possesses a good defense derived from its natural armor. The giant's formidable Strength and Constitution values imply it is a powerful melee combatant, while its average Dexterity makes it somewhat less agile. Its challenge rating of 5 indicates that it can serve as a significant threat in battle while offering a rewarding experience for defeated players.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Phase Giant is a dangerous opponent in combat, capable of dealing h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Phase Giant
 
 *Huge* *Giant* *neutral*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +8 to hit, range 60/240 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.
 
 
+</statblock>
 
 

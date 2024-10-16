@@ -1,6 +1,8 @@
 <MonsterName/>Wyvern Knight</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>20</AC>
+<HP/>102</HP>
 <summary>The Wyvern Knight is a Medium-sized humanoid creature with a lawful evil alignment, serving as a formidable enemy in battle with a challenge rating of 5. It possesses a high armor class of 20, indicating strong defenses, and impressive hit points totaling 102, providing it with significant durability in confrontations. Notable for its high Strength and Constitution scores, the knight can deal substantial damage and withstand hits, although its Dexterity is average, making it less agile. It can effectively maneuver on the battlefield with a walking speed of 30 feet while displaying proficiency with poisonous attacks that can greatly weaken its foes. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ For defensive strategies, the Wyvern Knight can utilize the Protection reaction 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wyvern Knight
 
 *Medium* *Humanoid* *lawful evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Protection:** When a creature the wyvern knight can see attacks a target that is within 5 feet of it, including a creature it is riding, the knight can use a reaction to impose disadvantage on the attack roll. The knight must be wielding a shield.
 
 
+</statblock>
 
 

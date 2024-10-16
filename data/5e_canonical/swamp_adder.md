@@ -1,6 +1,8 @@
 <MonsterName/>Swamp Adder</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>18</HP>
 <summary>The Swamp Adder is a small, non-aligned beast that thrives in wet and murky environments. This creature has a stealthy nature, bolstered by its ability to camouflage itself in swampy areas, making it a formidable ambush predator. Its primary strength lies in its agility and the potential for debilitating poison, which can paralyze unsuspecting foes. However, with a low hit point total and weak physical strength, the Swamp Adder lacks durability in direct confrontations. Its role in combat primarily revolves around stealth and surprise, rather than facing opponents head-on.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Swamp Adder can use a melee attack called Bite. The att
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swamp Adder
 
 *Small* *Beast* *Unaligned*
@@ -42,5 +45,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 11 Constitution saving throw. On a failure, the target takes 5 (2d4) poison damage and is paralyzed for 1 minute. On a success, a target takes half the damage and isn’t paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

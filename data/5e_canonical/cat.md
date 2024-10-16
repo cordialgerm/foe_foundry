@@ -1,6 +1,8 @@
 <MonsterName/>Cat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>12</AC>
+<HP/>2</HP>
 <summary>The Cat is a small, agile mammal known for its grace and independence. With sharp claws, quick reflexes, and keen senses, cats are excellent hunters, often stalking small prey like mice and birds. Cats are typically solitary creatures, though they can form strong bonds with their owners or companions. They are known for their ability to climb, their silent movement, and their knack for finding hidden places to rest. Though not a threat in combat, their agility and stealth make them adept at avoiding danger.</summary>
 
 <summary>The Cat is a tiny beast that embodies agility and alertness, making it an excellent companion for adventurers or a common sight in many settlements. With a challenge rating of 0, it is relatively weak and poses little threat in combat, but its special abilities and skills enhance its survivability and usefulness. The Cat has a sleek body with noteworthy dexterity—resulting in a good Armor Class of 12 and providing it a reasonable chance to evade attacks. Despite having very low hit points, the Cat is equipped with a keen awareness of its surroundings and is skilled in stealth, making it effective for reconnaissance or as a distraction. Overall, it performs best in non-combat scenarios or as a familiar.</summary>
@@ -48,6 +50,7 @@ For bonus actions, the cat can use its Charming Mewl ability. This allows it to 
 
 Source: 5e_srd
 
+<statblock>
 ### Cat
 
 *Tiny beast, unaligned*
@@ -74,7 +77,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Claws.*** *Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.
+***Claws.*** *Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.</statblock>
+
 
 
 
@@ -82,6 +86,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cat
 
 *Tiny* *Beast*
@@ -110,6 +115,7 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 slashing damage. If this damage would reduce a Small or larger target to 0 hit points  the target takes no damage from this attack.
 
 
+</statblock>
 
 
 
@@ -118,6 +124,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cat
 
 *Tiny beast*
@@ -149,5 +156,6 @@ Source: 5e_artisinal_monsters
 
 - **Charming Mewl.** The cat emits a soft, high-pitched meow at a creature it can see within 10 feet of it. The target must succeed on a DC 11 CHA save or be charmed until the end of its next turn. If a creature’s save is successful or the effect ends for it, the creature is immune to the cat’s Charming Mewl for the next 24 hours.
 
+</statblock>
 
 

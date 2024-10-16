@@ -1,6 +1,8 @@
 <MonsterName/>Treacle</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>The Treacle is a tiny, unaligned ooze that presents as an unusual and deceptive creature within the realm of Dungeons & Dragons. This diminutive entity serves as both a potential threat and a cunning trickster due to its ability to drain blood from unsuspecting victims while remaining undetected. With its unique blend of mobility and mimicry, the Treacle can navigate through tight spaces and disguise itself as familiar, less threatening objects. While it possesses low combat attributes, its average durability and clever tactics make it a noteworthy opponent for adventurers, particularly at low levels. However, its limited offensive capabilities mean that it is best used as a stealthy ambusher rather than a front-line combatant.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The Treacle can use the reaction called Mimic Innocence when it sees a creature 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Treacle
 
 *Tiny* *Ooze* *Unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Mimic Innocence:** When a creature the treacle can see moves within 120 feet of it, the treacle squishes, stretches, and molds its body into the shape of a Tiny Beast or object the creature finds least threatening, such as an injured rabbit or a long-lost toy. The treacle’s body takes on most of the coloration of the desired shape, but some part of it is always white, pale, or pearlescent. Regardless of the shape, the treacle’s flesh doesn’t change and is soft and plush to the touch. The treacle can maintain this shape for up to 8 hours or until another creature it can see moves within 120 feet of it.
+</statblock>
 
 

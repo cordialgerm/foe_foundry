@@ -1,6 +1,8 @@
 <MonsterName/>Ghost Knight</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (half plate)</AC>
+<HP/>130</HP>
 <summary>The Ghost Knight is a formidable undead creature characterized by its medium size, lawful evil nature, and spectral appearance. Serving as a dangerous opponent in combat, it possesses a high armor class and a substantial pool of hit points, making it resilient in battle. With a challenge rating of 7, the Ghost Knight is designed for mid-level encounters and can deal significant damage thanks to its magical weapon attacks and special abilities. Its strong melee capabilities are enhanced further when mounted on its loyal warhorse skeleton, which shares in its combat prowess. Notably, the Ghost Knight is immune to certain conditions and benefits from several advantageous combat features, but it is inherently vulnerable to radiant damage, which can exploit its undead nature.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ The Ghost Knight is a potent and challenging opponent, capable of leveraging its
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghost Knight
 
 *Medium* *Undead* *Lawful Evil*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The ghost knight makes three Battleaxe or Lance attacks. If the ghost knight is mounted, it can make two Battleaxe or Lance attacks, and its mount can make one melee weapon attack.
 - **Battleaxe:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands, plus 7 (2d6) necrotic damage.
 - **Lance:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d12 + 3) piercing damage plus 7 (2d6) necrotic damage.
+</statblock>
 
 

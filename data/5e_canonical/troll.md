@@ -1,6 +1,8 @@
 <MonsterName/>Troll</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>84</HP>
 <summary>Trolls are large, hulking humanoids known for their incredible regenerative abilities. Standing over 10 feet tall, with long limbs and green, warty skin, Trolls are fearsome predators that hunt anything they can overpower. Their ability to regenerate from nearly any wound makes them particularly difficult to kill, as they can regrow lost limbs and recover from severe injuries in moments. Trolls are not very intelligent, but they are cunning hunters, using their brute strength and sharp claws to tear apart enemies. They dwell in caves, swamps, and forests, always hungry and ready to devour anything in their path.</summary>
 
 <summary>The troll is a large giant known for its formidable physical capabilities and regenerative abilities, making it a tough opponent in combat. With a high hit point total of 84 and solid armor class of 15, it can endure significant damage while dishing out powerful attacks of its own. The troll's challenge rating of 5 indicates that it poses a serious threat to mid-level adventurers. Its keen sense of smell enhances its ability to detect foes, giving it an edge in stealthy environments. However, it has notable weaknesses, primarily its vulnerability to fire and acid damage, which can negate its remarkable regeneration ability. Overall, the troll is a versatile and dangerous foe that requires strategic planning to defeat effectively.</summary>
@@ -31,6 +33,7 @@ Additionally, the troll has a "Ravenous Frenzy" bonus action that it can activat
 
 Source: 5e_srd
 
+<statblock>
 ## Troll
 
 *Large giant, chaotic evil*
@@ -63,7 +66,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 7 (1d6+4) piercing damage.
 
-***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.
+***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.</statblock>
+
 
 
 
@@ -71,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Troll
 
 *Large* *Giant*
@@ -104,6 +109,7 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (2d4 + 4) slashing damage.
 
 
+</statblock>
 
 
 
@@ -112,6 +118,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Troll
 
 *Large giant*
@@ -147,5 +154,6 @@ Source: 5e_artisinal_monsters
 
 - **Ravenous Frenzy (52 HP or Fewer).** Desperate for a meal as its injuries mount, the troll moves up to half its speed and makes one Bite attack against a creature it can see within range. The troll then regains HP equal to half the damage dealt.
 
+</statblock>
 
 

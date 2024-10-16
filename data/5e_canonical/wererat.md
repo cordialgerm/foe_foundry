@@ -1,6 +1,11 @@
 <MonsterName/>Wererat (Lycanthrope)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>human</Subtype>
+<Subtype/>lycanthrope</Subtype>
+<Subtype/>shapechanger</Subtype>
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>33</HP>
 <summary>A Wererat is a humanoid cursed with the ability to transform into a rat or a rat-like hybrid form. Unlike other lycanthropes, Wererats are cunning and sneaky, often living in urban environments or sewers, where they form criminal networks or gangs. They use their ability to slip through small spaces and remain unnoticed to engage in thievery and sabotage. Wererats are not as physically strong as other lycanthropes, but they make up for it with their stealth and intelligence. They are immune to most conventional weapons unless silvered and can spread lycanthropy through their bites.</summary>
 
 <summary>The Wererat is a Medium humanoid creature that embodies the sneaky and cunning nature of a lycanthrope. It serves as both a formidable opponent and a stealthy infiltrator, making it a versatile threat in combat scenarios. With an Armor Class of 12 and 33 hit points, it is relatively resilient but can be easily taken down by characters that excel in dealing damage quickly. Its primary strengths lie in its Dexterity score of 14, granting it a good initiative and proficiency in stealth, allowing it to approach situations unnoticed. Furthermore, its Pack Tactics ability allows it to work effectively with allies, gaining advantage on attack rolls when near them. However, it is vulnerable to wolfsbane, which can incapacitate it and amplify damage done to it by non-silvered weapons. </summary>
@@ -49,6 +54,7 @@ Overall, the Wererat excels in stealth and tactical advantage through its transf
 
 Source: 5e_srd
 
+<statblock>
 ### Wererat (Lycanthrope)
 
 *Medium humanoid (human, shapechanger), lawful evil*
@@ -85,7 +91,8 @@ Source: 5e_srd
 
 ***Shortsword (Humanoid or Hybrid Form Only)***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Hand Crossbow (Humanoid or Hybrid Form Only)***. *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
+***Hand Crossbow (Humanoid or Hybrid Form Only)***. *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one target. *Hit:* 5 (1d6+2) piercing damage.</statblock>
+
 
 
 
@@ -93,6 +100,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wererat
 
 *Medium* *Humanoid*
@@ -130,6 +138,7 @@ Source: 5e_artisinal_monsters
 - **Frenzied Bite (While Bloodied:** The wererat makes a bite attack.
 
 
+</statblock>
 
 
 
@@ -138,6 +147,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wererat
 
 *Medium humanoid (lycanthrope)*
@@ -174,5 +184,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The wererat transforms into a Tiny or Small rat, a Medium rat-humanoid hybrid, or back into its true form, which is Humanoid. Its statistics, other than its size and speed, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Chuhaister</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Chuhaister is a large, chaotic evil giant notable for its raw physical strength and imposing presence on the battlefield. With an Armor Class of 16, it possesses a good natural defense due to its thick skin, making it quite resilient to physical attacks. Its impressive hit points of 157, derived from 15d10+75, allow it to endure considerable damage before being defeated. While its Dexterity is somewhat lacking, reflected in a modifier of -1, the Chuhaister compensates with excellent Strength and Constitution scores, with +6 and +5 modifiers, respectively. This giant excels in melee combat thanks to its Multiattack ability, allowing it to strike twice with a powerful greatclub, dealing substantial bludgeoning damage. However, the Chuhaister is sensitive to bright light, suffering from disadvantage on attack rolls and perception checks in such conditions. Its Feybane ability provides a unique advantage against fey creatures, preventing them from regaining spell slots and allowing the Chuhaister to see through magical illusions. Additionally, it has a reactive ability called Deadfall Shield, which can negate damage to itself or an ally, emphasizing its defensive capabilities in combat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Chuhaister presents a versatile threat in battle, engaging opponent
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chuhaister
 
 *Large* *Giant* *chaotic evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Deadfall Shield (Recharge 5-6):** When the chuhaister or one ally within 30 feet of it is hit by an attack, the chuhaister can create a magical, wooden barrier that interrupts the attack. The attack causes no damage. The shield splinters and disappears afterwards.
 
 
+</statblock>
 
 

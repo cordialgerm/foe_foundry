@@ -1,6 +1,8 @@
 <MonsterName/>Gelatinous Cube (Ooze)</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>2</CR>
+<AC/>6</AC>
+<HP/>84</HP>
 <summary>A Gelatinous Cube is a large, transparent ooze that takes the shape of a perfect cube. It slowly moves through dungeons and underground passages, dissolving and consuming organic material in its path. Its nearly invisible form makes it difficult to spot until it's too late, as the cube engulfs its prey and digests them with powerful acids. Gelatinous Cubes are mindless creatures, following a basic instinct to eat anything they come across. They are often found in old dungeons, keeping the corridors clean of debris and bodies, but are dangerous to any living creature that gets too close.</summary>
 
 <summary>The Gelatinous Cube is a large ooze that serves as a menacing and unique threat in dungeon environments. With a Challenge Rating of 2, it presents a moderate challenge to adventurers, primarily due to its ability to engulf creatures and deal ongoing acid damage. Its main strengths lie in its ability to surprise unsuspecting adventurers with its transparent form and its unique attack methods that can restrain and damage multiple foes simultaneously. However, its weaknesses include a low Armor Class of 6 and limited mobility on land, as it can only walk and swim at a speed of 15 feet. The cube represents both a physical danger and a tactical puzzle for players looking to outmaneuver or avoid its grasp.</summary>
@@ -46,6 +48,7 @@ Additionally, the Gelatinous Cube can utilize a reaction called "Skewer Prey." W
 
 Source: 5e_srd
 
+<statblock>
 ### Gelatinous Cube (Ooze)
 
 *Large ooze, unaligned*
@@ -88,7 +91,8 @@ On a successful save, the creature can choose to be pushed 5 feet back or to the
 
 On a failed save, the cube enters the creature's space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 21 (6d6) acid damage at the start of each of the cube's turns. When the cube moves, the engulfed creature moves with it.
 
-An engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.
+An engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.</statblock>
+
 
 
 
@@ -96,6 +100,7 @@ An engulfed creature can try to escape by taking an action to make a DC 12 Stren
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gelatinous Cube
 
 *Large* *Ooze*
@@ -130,6 +135,7 @@ Source: 5e_artisinal_monsters
 - **An engulfed creature can escape by using an action to make a DC 13 Strength check:** On a success  the creature moves to a space within 5 feet of the cube. A creature within 5 feet can take the same action to free an engulfed creature  but takes 10 (3d6) acid damage in the process.
 
 
+</statblock>
 
 
 
@@ -138,6 +144,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gelatinous Cube
 
 *Large ooze*
@@ -174,5 +181,6 @@ Source: 5e_artisinal_monsters
 
 - **Skewer Prey.** When the gelatinous cube is subjected to piercing damage, it can move a random creature engulfed by it to intercept the attack. The creature takes the piercing damage as if it were the target.
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Guardian</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>110</HP>
 <summary>The Guardian is a large humanoid creature characterized by its neutral evil alignment. It serves as a powerful protector and combatant, making it a formidable foe in encounters. Its defining strengths lie in its excellent physical attributes, with notably high Strength and Constitution, which make it quite capable in melee combat. The Guardian also benefits from immunities to charm and fright effects and possesses a keen sense of perception in darkness, bolstering its effectiveness in stealthy or ambush scenarios. However, it exhibits weaknesses, particularly when exposed to sunlight, where it suffers disadvantages on attacks and sight-based perception checks. With a challenge rating of 4, it presents a significant threat to lower-level adventurers.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, it can utilize the Protective Interference reaction, which allows it to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Guardian
 
 *Large* *Humanoid* *Neutral Evil*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Protective Interference:** When a friendly creature the shadow fey guardian can see within 5 feet of it is the target of an attack, the guardian can impose disadvantage on the attack roll. To do so, the guardian must see the attacker and be wielding a melee weapon.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Flame-Scourged Scion</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>125</HP>
 <summary>The Flame-Scourged Scion is a formidable creature characterized as a Huge Aberration with a chaotic evil alignment. With a Challenge Rating of 9, it presents a significant threat to adventurers, boasting a relatively high Armor Class of 16 thanks to its natural armor and substantial Hit Points totaling 125. Its key strengths lie in its exceptional Constitution, which grants it superior resilience, along with abilities that enhance its combat effectiveness after taking fire damage. However, despite its prowess, it has a very low Wisdom score, which could leave it vulnerable in scenarios that require insight or perception. The Flame-Scourged Scion is well-equipped to dominate the battlefield, using its tentacle attacks and the unique Ember ability to inflict area damage.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Ember ability, which has a recharge time of 6 rounds, allows the Flame-Scour
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flame-Scourged Scion
 
 *Huge* *Aberration* *chaotic evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Embers (Recharge 6):** The flame-scourged scion fills the area around itself with a cloud of burning embers. Each creature within 10 feet of the flame-scourged scion must make a DC 18 Constitution saving throw, taking 28 (8d6) fire damage on a failed save, or half as much damage on a successful one. The embers die out within moments.
 
 
+</statblock>
 
 

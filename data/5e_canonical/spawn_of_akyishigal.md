@@ -1,6 +1,8 @@
 <MonsterName/>Spawn of Akyishigal</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Spawn of Akyishigal is a medium-sized chaotic evil fiend, embodying a mixture of cunning and malice. With a solid armor class of 15 and a hefty pool of hit points totaling 119, it presents a formidable challenge for adventurers. This creature boasts impressive physical and magical resilience, with notable damage immunities and resistances. The Spawn excels in manipulating the battlefield through its command over lesser beasts, making it particularly dangerous in environments teeming with insectoid life forms. While its physical attacks can inflict significant damage, its true strength lies in its ability to summon swarms of allies and its inherent magic resistance, which gives it an edge in confronting spellcasters. However, its Intelligence is average, which could limit its strategic options in more cerebral contests.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Spawn can unleash "Swarming Cough" three times per day, releasing a swarm of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spawn of Akyishigal
 
 *Medium* *Fiend* *Chaotic Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.
 - **Sting:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage plus 3 (1d6) poison damage, and the target must succeed on a DC 15 Constitution saving throw or become poisoned until the end of its next turn.
 - **Swarming Cough (3/Day):** The spawn belches forth a swarm of insects. The swarm is an ally of the spawn, obeys its spoken commands, and takes its turn immediately after the spawn’s. The swarm remains for 1 minute, until the spawn dies, or until the spawn dismisses it as a bonus action. The spawn can have no more than two swarms under its control at a time.
+</statblock>
 
 

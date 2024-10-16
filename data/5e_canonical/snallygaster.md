@@ -1,6 +1,8 @@
 <MonsterName/>Snallygaster</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>15</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>207</HP>
 <summary>The Snallygaster is a formidable creature characterized as a Huge Aberration. As an unaligned entity, it does not adhere to any moral compass, making it a wild and unpredictable force on the battlefield. With a high challenge rating of 15, it is designed to challenge high-level adventurers. Its strengths lie in its robust physical attributes, ability to inflict substantial damage, and formidable defensive capabilities such as magic resistance and regeneration. However, it does exhibit weaknesses, particularly in intelligence and dexterity, making it somewhat predictable in its movement patterns. Overall, the Snallygaster is a fearsome opponent, harnessing both brute force and magical defenses.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Finally, the Snallygaster possesses a unique reaction known as Parry Spell, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snallygaster
 
 *Huge* *Aberration* *unaligned*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Parry Spell:** If it succeeds on save vs. spell of 5th level or lower that targets only snallygaster spell has no effect. If snallygaster succeeds on save by 5+ spell is reflected back at spellcaster using slot level spell save DC attack bonus and spellcasting ability of caster
 
 
+</statblock>
 
 

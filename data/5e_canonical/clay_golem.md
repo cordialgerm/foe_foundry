@@ -1,6 +1,8 @@
 <MonsterName/>Clay Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Clay Golem is a towering, humanoid figure made entirely of soft, malleable clay. It is a construct brought to life through powerful magic, often serving as a guardian for temples or wizards' lairs. While slow and ponderous, the Clay Golem is nearly unstoppable in combat, as it regenerates damage rapidly and can crush enemies with its immense strength. When enraged, a Clay Golem can go berserk, attacking indiscriminately and destroying everything in its path. Its touch can also cause the cursed disease known as 'Golem's Plague,' slowly petrifying flesh into hardened clay.</summary>
 
 <summary>The Clay Golem is a large construct known for its formidable resilience and unique abilities on the battlefield. With an armor class of 14 and a substantial 163 hit points, it can absorb significant damage before going down. Its challenge rating of 9 indicates that it presents a notable threat to adventurers. One of its most striking features is its immunity to most forms of damage, particularly nonmagical attacks, and various conditions that can hinder other creatures. However, it does have a notable weakness to fire damage, which temporarily affects its movement and abilities. The golem can unleash powerful physical attacks and has the capacity to enhance its capabilities with special actions, making it a versatile foe in combat.</summary>
@@ -36,6 +38,7 @@ Overall, the Clay Golem serves as a formidable enemy, capable of dealing signifi
 
 Source: 5e_srd
 
+<statblock>
 ### Clay Golem
 
 *Large construct, unaligned*
@@ -76,7 +79,8 @@ Source: 5e_srd
 
 ***Slam***. *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 16 (2d10+5) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the *greater restoration* spell or other magic.
 
-***Haste (Recharge 5-6)***. Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.
+***Haste (Recharge 5-6)***. Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.</statblock>
+
 
 
 
@@ -84,6 +88,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clay Golem
 
 *Large construct*
@@ -123,5 +128,6 @@ Source: 5e_artisinal_monsters
 
 - **Mold Hand.** The clay golem molds its hand into the shape of a weapon or back into a hand. The golem’s Slam attack deals bludgeoning, piercing, or slashing damage, depending on the type of weapon chosen, until the golem uses this bonus action again. For example, a hand shaped like an axe deals slashing damage.
 
+</statblock>
 
 

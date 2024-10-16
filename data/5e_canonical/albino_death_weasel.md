@@ -1,6 +1,8 @@
 <MonsterName/>Albino Death Weasel</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Albino Death Weasel is a large beast that exemplifies cunning and ferocity in its natural habitat. It possesses a solid combination of speed and strength, making it a dangerous adversary despite its unaligned nature. The creature has an Armor Class of 13, which is relatively average for a creature of its challenge rating, and it boasts 45 hit points, allowing it to endure a decent amount of damage in combat. With a challenge rating of 1, it is considered a low-level threat, thus rewarding its defeat with 200 experience points. Notable traits of the Albino Death Weasel include its remarkable senses and the ability to incapacitate its prey with effective grappling and poison attacks, making it a formidable opponent that can disrupt the strategies of adventurers.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the weasel possesses a unique Musk Spray ability that recharges on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Albino Death Weasel
 
 *Large* *Beast* *unaligned*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Musk Spray (Recharge 5-6):** The weasel unleashes a spray of foul musk in a 20-foot cone. Each creature in that area must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

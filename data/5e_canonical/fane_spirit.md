@@ -1,6 +1,8 @@
 <MonsterName/>Fane Spirit</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Fane Spirit is a medium undead creature that embodies the essence of those who were once living, now bound to the laws of the afterlife. With a challenge rating of 3, it serves as an intriguing opponent that can engage with players both tactically and thematically. The Fane Spirit has several strengths, including the ability to resist a wide array of damage types and immunity to conditions that often hinder other creatures. However, its low speed and vulnerability to damage from silvered weapons can be seen as significant weaknesses. Notably, the Fane Spirit's unique ability to shift between its incorporeal and living forms adds complexity to encounters, making it a challenging foe in various scenarios.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ For actions during combat, the Fane Spirit has the Touch of Forgetfulness, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fane Spirit
 
 *Medium* *Undead* *any lawful alignment*
@@ -59,5 +62,6 @@ At will: chill touch, spare the dying
 - **Touch of Forgetfulness:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) psychic damage. A target hit by this attack must succeed on a DC 13 Wisdom saving throw or forget any or all events that happened up to 5 minutes prior to this attack, as if affected by the modify memory spell. The GM decides how this affects the target.
 
 
+</statblock>
 
 

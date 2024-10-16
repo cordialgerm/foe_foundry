@@ -1,6 +1,8 @@
 <MonsterName/>Cats of Ulthar</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>55</HP>
 <summary>The Cats of Ulthar are a unique and fearsome presence in the realm of D&D. These Huge unaligned beasts function primarily as a swarm, utilizing their numbers and agility to overwhelm foes. With a respectable Armor Class of 14 and a total of 55 hit points combined from ten 10-sided dice, they are hardy opponents. They possess high Dexterity, allowing for exceptional agility and stealth, making their stealth skill notably strong at +6. The Cats’ key strengths lie in their ability to inflict piercing damage through coordinated bites, their innate swarming capability that lets them occupy the same space as other creatures, and their powerful Feline Terror ability that can incapacitate enemies with fear. However, their physical strength is lacking, as indicated by a Strength score of only 9, and they have low Constitution and Intelligence scores, making them relatively vulnerable to effects that require these attributes. Overall, the Cats of Ulthar represent a blend of agility, fear induction, and resilience.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Cats of Ulthar can bite, performing a melee weapon atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cats of Ulthar
 
 *Huge* *Beast* *unaligned*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Bites:** Melee Weapon Attack: +6 to hit, reach 0 ft., up to two creatures in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.
 
 
+</statblock>
 
 

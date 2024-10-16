@@ -1,6 +1,8 @@
 <MonsterName/>Fang of the Great Wolf</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Fang of the Great Wolf is a large monstrosity that embodies the ferocity and cunning of a predator. With a neutral evil alignment, this creature is both formidable and tactical in its approach to combat. It possesses considerable physical strength and speed, making it a dangerous opponent in battle. Notable for its significant hit points and natural armor, the Fang of the Great Wolf can endure a decent amount of damage while dealing substantial piercing damage with its bite attack. However, it has a low intelligence and charisma, which limits its social interactions and strategy-based abilities. Its main strengths lie in its physical attacks and the ability to grapple opponents, while its weaknesses include lower damage resistances and a reliance on melee combat.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ If the Fang is no longer enlarged or dies, any swallowed creature is also releas
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fang of the Great Wolf
 
 *Large* *Monstrosity* *neutral evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Might of the Great Wolf (Recharges after a Short or Long Rest):** The fang of the Great Wolf grows in size. This works like the enlarge/reduce spell, except the worg can only enlarge and it lasts for 1 minute. While enlarged, the fang of the Great Wolf gains the following action:<br>Swallow. The worg makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the worg, and it takes 10 (3d6) acid damage at the start of each of the worg's turns. The worg can have only one creature swallowed at a time. <br><br>If the worg takes 10 damage or more on a single turn from the swallowed creature, the worg must succeed on a DC 11 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 5 feet of the worg. The creature is automatically regurgitated when the worg is no longer enlarged. If the worg dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 10 feet of movement, exiting prone.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Flithidir</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>27</HP>
 <summary>The Flithidir is a small fey creature with chaotic tendencies, known for its mischievous nature and ability to disrupt opponents with its unique abilities. It has an Armor Class of 13, making it somewhat resilient but still vulnerable to attacks. With 27 hit points, it can withstand a few hits before succumbing to defeat. The Flithidir's greatest strengths lie in its DEXTERITY, which is very good (16), allowing it to evade attacks and excel in acrobatics, and its CHARISMA, which is good (15), enabling it to perform and cast spells effectively. On the downside, its physical strength and constitution are average, with scores of 10 and 12, respectively, which makes it less effective in physical confrontations. This creature can fly at a speed of 60 feet, giving it an advantage in mobility during combat. With a challenge rating of 1, it poses a moderate threat to low-level adventurers, rewarding its defeat with 200 experience points.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Flithidir is a resourceful and deceptive creature, excelling in agi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flithidir
 
 *Small* *Fey* *chaotic neutral*
@@ -62,5 +65,6 @@ At will: minor illusion (auditory only), vicious mockery
 - **Mocking Retort:** When a creature the flithidir can see misses it with an attack, the flithidir can cast vicious mockery at the attacker.
 
 
+</statblock>
 
 

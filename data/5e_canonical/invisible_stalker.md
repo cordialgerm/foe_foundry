@@ -1,6 +1,8 @@
 <MonsterName/>Invisible Stalker</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>6</CR>
+<AC/>14</AC>
+<HP/>104</HP>
 <summary>An Invisible Stalker is an elemental spirit of air summoned to the Material Plane to carry out tasks, usually hunting or tracking down specific targets. As its name suggests, it is completely invisible, making it nearly impossible to detect. Invisible Stalkers are relentless in their pursuit, following their quarry across any distance until they complete their mission. They are silent, patient, and deadly, using their invisibility and mastery of stealth to ambush their targets. Though bound to serve those who summon them, Invisible Stalkers are intelligent and can resent their servitude, sometimes twisting their orders to cause harm.</summary>
 
 <summary>The Invisible Stalker is a Medium Elemental creature known for its stealth and tracking abilities, making it a formidable presence on the battlefield. With an Armor Class of 14 and a substantial pool of Hit Points, totaling 104, it can withstand a fair amount of damage while remaining elusive. Its Challenge Rating is 6, suggesting it poses a moderate threat to adventurers, offering 2,300 XP upon defeat. The Invisible Stalker possesses high Dexterity and Strength, with Dexterity at 18 (+4), making its stealth capabilities exceptional, and Strength at 16 (+3) allows for decent melee damage. While it is immune to poison and resistant to damage from nonmagical weapons, it excels in conditions that grant it even greater survivability. The Stalker can easily navigate both the physical and mystical realms due to its elemental nature, which allows it to move through the world without needing air or rest. </summary>
@@ -33,6 +35,7 @@ As a bonus action, the stalker can use Steal Breath, targeting a creature it can
 
 Source: 5e_srd
 
+<statblock>
 ## Invisible Stalker
 
 *Medium elemental, neutral*
@@ -69,7 +72,8 @@ Source: 5e_srd
 
 ***Multiattack***. The stalker makes two slam attacks.
 
-***Slam***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) bludgeoning damage.
+***Slam***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) bludgeoning damage.</statblock>
+
 
 
 
@@ -77,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Invisible Stalker
 
 *Medium* *Elemental*
@@ -114,6 +119,7 @@ Source: 5e_artisinal_monsters
 - **Gust (Recharge 6):** The stalker briefly turns into a gust of wind and moves up to its Speed without provoking opportunity attacks. It is able to pass through an opening as narrow as 1 inch wide without squeezing.
 
 
+</statblock>
 
 
 
@@ -122,6 +128,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Invisible Stalker
 
 *Medium elemental*
@@ -157,5 +164,6 @@ Source: 5e_artisinal_monsters
 
 - **Steal Breath.** The invisible stalker calls on the air in the lungs of one breathing creature it can see within 30 feet of it, causing the air to leave the creature. The target must succeed on a DC 15 CON save or be unable to speak or cast spells with verbal components until the end of its next turn. A creature that fails the save by 5 or more is also incapacitated and suffocating for the duration, as it coughs uncontrollably.
 
+</statblock>
 
 

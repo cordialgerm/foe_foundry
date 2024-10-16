@@ -1,6 +1,8 @@
 <MonsterName/>Bone Collective</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>120</HP>
 <summary>The Bone Collective is a small, chaotic evil swarm of animated bones that commands a unique blend of cunning and might on the battlefield. Its formidable armor class of 17, combined with a high hit point total of 120, allows it to withstand significant damage. The Collective excels in Dexterity with a score of 20, granting it very good agility and making it difficult for enemies to hit. The creature's ability to communicate telepathically through its Collective Mind makes it nearly impossible to surprise, enhancing its tactical capabilities. However, its Intelligence can become drastically limited if it suffers heavy damage, forcing it into a shapeless form that diminishes its threat. The Bone Collective can inflict poison and Charisma debuffs on its foes, rendering it a dangerous adversary, especially for characters reliant on their Charisma. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ In addition to its standard actions, the Bone Collective can use the Shape Swarm
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Collective
 
 *Small* *Swarm* *Undead* *Chaotic Evil*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shape Swarm:** The bone collective can shape itself into a Small Humanoid or back into a shapeless form of Tiny bones. Its statistics are the same in each form, and it can’t regain hp or gain temporary hp. It can’t take on a Humanoid form if it is occupying the space of another creature.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Salamander Nymph</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>27</HP>
 <summary>The Salamander Nymph is a Medium-sized elemental creature known for its fiery nature and unique abilities. It has a moderate armor class of 14, making it somewhat resilient in combat, and it possesses a total of 27 hit points, reflecting average durability for its Challenge Rating of 1. The Salamander Nymph can move at a speed of 30 feet, allowing it to navigate the battlefield effectively. Its strengths lie in its fire damage immunity, making it particularly tricky for elemental-focused attackers, and its Heated Body ability, which punishes foes that engage with it in close combat. However, the Salamander Nymph does face vulnerabilities, particularly against cold damage, which disables some of its defensive traits.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The creature has inherent skills and attributes related to damage immunities, sp
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Salamander Nymph
 
 *Medium* *Elemental*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage  and the target is subjected to the salamanders Heated Body trait.
 
 
+</statblock>
 
 

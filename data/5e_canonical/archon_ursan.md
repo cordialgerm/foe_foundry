@@ -1,6 +1,8 @@
 <MonsterName/>Archon, Ursan</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Ursan Archon is a formidable large celestial creature embodying chaotic good alignment. Known for its immense strength and magical capabilities, this creature excels in both melee combat and area control. With a Challenge Rating of 9, it presents a significant challenge for adventurers, capable of dealing high amounts of damage while also being resilient to various forms of attacks. The Archon possesses an array of innate abilities that enhance its combat effectiveness and survivability, such as magic resistance and the ability to mitigate fatal damage. However, its reliance on engaging in direct combat can be a weakness when facing agile opponents who can exploit its Reckless ability, potentially turning the advantage against it.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ The Archon has a notable reaction called Rallying Roar, which it can use when it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archon, Ursan
 
 *Large* *Celestial* *chaotic good*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Rallying Roar:** When it reduces a creature to 0 hp it can utter a triumphant roar. Each friendly creature within 60' of the archon that is frightened paralyzed stunned or unconscious has advantage on its next save. A friendly creature with o those conditions has advantage on its next attack roll. In addition each friendly creature within 60' of archon that can hear the roar gains 14 (4d6) temp hp.
 
 
+</statblock>
 
 

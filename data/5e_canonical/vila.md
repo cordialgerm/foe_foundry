@@ -1,6 +1,8 @@
 <MonsterName/>Vila</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>77</HP>
 <summary>The Vila is a Medium-sized creature that belongs to the Fey type and is characterized by its Lawful Neutral alignment. Serving as both a protector of the forest and a formidable opponent, it possesses a variety of abilities that make it quite dangerous in combat. With an Armor Class of 15, it demonstrates good defensive capabilities, while its 77 hit points provide a solid buffer against attacks. The Vila can navigate through difficult terrain with ease, making it particularly effective in woodland environments, and it has excellent dexterity, reflected in a Dexterity score of 20 (+5), which contributes to its high initiative and stealth capabilities. Although it has some vulnerabilities, such as being susceptible to magical damage, its unique abilities and skills allow it to control the battlefield effectively. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ When engaging in combat, the Vila can use Multiattack, which involves deploying 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vila
 
 *Medium* *Fey* *Lawful Neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Shortbow:** Ranged Weapon Attack: +8 to hit, range 80/320 ft., one target. Hit: 8 (1d6 + 5) piercing damage plus 7 (2d6) poison damage.
 - **Song of the Forest:** The vila sings one of the following songs at up to three creatures it can see within 30 feet of it. Each target that can hear the song must succeed on a DC 14 Wisdom saving throw or suffer the song’s effect.
 - **Denizens of the Wilds (1/Day):** The vila magically calls 1d4 wolves or 1 wampus cat. The called creatures arrive in 1d4 rounds, acting as allies of the vila and obeying its spoken commands. The creatures remain for 1 hour, until the vila dies, or until the vila dismisses them as a bonus action.
+</statblock>
 
 

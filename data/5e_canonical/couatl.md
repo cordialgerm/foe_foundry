@@ -1,6 +1,8 @@
 <MonsterName/>Couatl</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>4</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>97</HP>
 <summary>The Couatl is a celestial serpent with vibrant, feathered wings and iridescent scales that shimmer in a rainbow of colors. It is a wise and benevolent creature, often serving as a guardian of sacred places or protecting important individuals from evil forces. Couatls are known for their powerful magic, which they use to heal, protect, and even shape the future. They can communicate telepathically and are highly intelligent, often acting as guides for those on quests for good. Despite their peaceful nature, Couatls are formidable in combat, able to cast powerful spells and deliver a potent venomous bite.</summary>
 
 <summary>The Couatl is a powerful celestial creature known for its intelligence, magical abilities, and versatility in combat. As a Medium-sized being with a Challenge Rating of 4, it is well-equipped to face various adversaries, boasting a solid Armor Class of 16 and a substantial pool of Hit Points amounting to 85. The Couatl excels in support roles through its innate spellcasting and healing capabilities while also being capable of dealing significant damage and controlling the battlefield with its unique abilities.</summary>
@@ -47,6 +49,7 @@ Overall, the Couatl is a powerful celestial being with excellent combat abilitie
 
 Source: 5e_srd
 
+<statblock>
 ## Couatl
 
 *Medium celestial, lawful good*
@@ -93,7 +96,8 @@ At will: *detect evil and good*, *detect magic*, *detect thoughts*
 
 ***Change Shape***. The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).
 
-In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.
+In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.</statblock>
+
 
 
 
@@ -101,6 +105,7 @@ In a new form, the couatl retains its game statistics and ability to speak, but 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Couatl
 
 *Medium* *Celestial*
@@ -137,6 +142,7 @@ Source: 5e_artisinal_monsters
 - **Shielding Wing:** When the couatl or a creature within 5 feet is attacked, the couatl can interpose a wing and impose disadvantage on the attack.
 
 
+</statblock>
 
 
 
@@ -145,6 +151,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Couatl
 
 *Medium celestial*
@@ -186,5 +193,6 @@ Source: 5e_artisinal_monsters
 
 - **Rainbow Shield.** When a creature the couatl can see within 30 feet of it, including itself, is targeted with an attack, the couatl can interpose a shield of rainbow-hued light between the attacker and the creature. The attacker has disadvantage on the attack roll. If the protected creature hasn’t attacked or harmed another creature within the last minute, the attacker’s attack misses instead.
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Paper Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>7</HP>
 <summary>The Paper Golem is a tiny construct that serves as a unique and whimsical addition to any encounter in Dungeons & Dragons 5e. It possesses a blend of skills and impenetrable defenses, making it a challenging opponent despite its modest hit points. With a low challenge rating, the Paper Golem is likely to serve as a guardian or a trickster in many settings. Its notable strengths include high dexterity and resistance to various forms of damage, which allow it to evade hits and defend itself against non-magical assaults. However, its vulnerabilities to fire damage present a significant weakness that players can exploit during combat. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Paper Golem offers a unique mix of charm and danger, with its notab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Paper Golem
 
 *Tiny* *Construct* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Paper Cut:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.
 
 
+</statblock>
 
 

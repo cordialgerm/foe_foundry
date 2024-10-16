@@ -1,6 +1,8 @@
 <MonsterName/>Tigebra</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>190</HP>
 <summary>The Tigebra is a large and formidable monstrosity characterized by its chaotic evil nature, making it a fearsome opponent in combat. It boasts a high Armor Class of 18 due to its natural armor, and it possesses an impressive pool of hit points totaling 190, allowing it to endure significant damage before being defeated. The Tigebra is classified at a Challenge Rating of 13, representing its considerable threat level and making it a notable encounter for adventurers. While its strength and constitution are exceptionally high, granting it formidable melee attack potential and durability, its intelligence and charisma are very low, limiting its social interaction and strategic capabilities. The creature's notable attributes include damage immunities to poison and immunity to several conditions, allowing it to remain a persistent threat in battle.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the Tigebra has a potent bonus action known as "Hypnotic Gaze," wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tigebra
 
 *Large* *Monstrosity* *chaotic evil*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Hypnotic Gaze:** Gazes on one creature it can see within 60' of it. If target can see it: paralyzed until end of its next turn (DC 17 Wis negates immune to tigebra’s Hypnotic Gaze 24 hrs).
 
 
+</statblock>
 
 

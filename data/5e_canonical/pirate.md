@@ -1,6 +1,8 @@
 <MonsterName/>Pirate</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>9</HP>
 <summary>The Pirate is a medium humanoid creature that embodies the adventurous and dangerous life of seafaring rogues. With a challenge rating of 1/8, it is not exceptionally powerful, but it can still pose a threat, particularly in swarms or as part of a more substantial encounter. The Pirate's strengths lie in its nimbleness and moderate combat capabilities, while its weaknesses include low hit points and an unremarkable overall attribute spread. Notably, the Pirate can deal moderate damage with both melee and ranged attacks, making it a versatile opponent in combat scenarios.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, Pirates are nimble, skilled combatants who can deal reasonable damage b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pirate
 
 *Medium* *Humanoid*
@@ -43,5 +46,6 @@ Source: 5e_artisinal_monsters
 - **Light Crossbow:** Ranged Weapon Attack: +2 to hit, range 80/320 ft., one target. Hit: 4 (1d8) piercing damage.
 
 
+</statblock>
 
 

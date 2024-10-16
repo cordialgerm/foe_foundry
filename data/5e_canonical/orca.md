@@ -1,6 +1,8 @@
 <MonsterName/>Orca</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>80</HP>
 <summary>The orca is a formidable and intelligent huge beast, often found in aquatic environments. With a Challenge Rating of 3, it poses a significant threat to adventurers who venture into its territory. Orcas have strong physical capabilities, reflected in their solid Strength score of +4, allowing for powerful melee attacks. Though their Dexterity and Constitution are average, their impressive swimming speed of 60 feet enables them to navigate swiftly through water. However, they have low Intelligence and Charisma, making them less capable in social interactions or complex strategies. Notable abilities include echolocation, which helps them navigate underwater, and a remarkable capability to hold their breath for extended periods. Despite their strength, they have limitations, particularly on land where their speed drops to 0 feet.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the orca's unique abilities and physical prowess make it a dangerous cr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Orca
 
 *Huge beast*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 
 - **Tail Slap.** The orca slaps one creature it can see within 15 feet of it with its tail. The target must succeed on a DC 14 STR save or be pushed up to 15 feet away from the orca and knocked prone. A creature that fails this save by 5 or more is also stunned until the end of its next turn.
 
+</statblock>
 
 

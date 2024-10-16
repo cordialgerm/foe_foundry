@@ -1,6 +1,8 @@
 <MonsterName/>Adult Void Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>16</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>229</HP>
 <summary>The Adult Void Dragon is a formidable and chaotic neutral creature that embodies chaos and the mysterious nature of the void. This massive dragon is characterized by its impressive armor class of 19 and a significant pool of hit points totaling 229, making it a tough opponent in combat scenarios. With a challenging rating of 16, it poses a considerable threat, rewarding those who defeat it with 15,000 experience points. The dragon's blend of physical prowess and powerful magical abilities allows it to command the battlefield with tactical strikes and area control. However, its weaknesses lie in its limited mobility when not airborne and its dependency on effective saving throws to mitigate damage. Notably, the void dragon also exhibits traits related to cold damage and madness, providing unique challenges for any adventurers who encounter it.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the Adult Void Dragon can also employ legendary actions, including "Det
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Void Dragon
 
 *Huge* *Dragon* *Chaotic Neutral*
@@ -72,5 +75,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a Tail attack.
 - **Void Slip (Costs 2 Actions):** The dragon twists the fabric of space around it, disappearing and reappearing in an unoccupied space it can see within 120 feet of it. Each creature within 10 feet of the dragon must succeed on a DC 20 Constitution saving throw or take 14 (4d6) cold damage and be knocked prone.
+</statblock>
 
 

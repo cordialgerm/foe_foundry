@@ -1,6 +1,8 @@
 <MonsterName/>Swarm, Ice Borers</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>40</HP>
 <summary>The Ice Borers Swarm is a medium elemental creature that embodies the chilling aspects of winter in its attack style and abilities. It has a moderately resilient defense with an Armor Class of 12 and a total of 40 hit points, rendering it fairly tough to eliminate for lower-level adventurers. While it mainly deals damage through its swarm tactics, its ability to inflict significant cold damage makes it particularly dangerous, especially against warm-blooded opponents. However, its Strength score is notably low, indicating a weakness in physical confrontations, and its combat effectiveness can be severely affected when its hit points are reduced. This creature thrives in icy environments and utilizes its unique abilities to gain an upper hand in battle.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ Overall, the Ice Borers Swarm serves as a formidable adversary in cold environme
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm, Ice Borers
 
 *Medium* *Elemental* *unaligned*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Impale:** Melee Weapon Attack: +4 to hit, 0 ft., one creature, in the swarm’s space. 7 (2d6) piercing damage + 9 (2d8) cold or 3 (1d6) piercing damage + 4 (1d8) cold if the swarm has half its hp or fewer.
 
 
+</statblock>
 
 

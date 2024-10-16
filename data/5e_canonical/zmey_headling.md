@@ -1,6 +1,8 @@
 <MonsterName/>Zmey Headling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Zmey Headling is a medium-sized dragon that embodies chaotic evil. It is a formidable opponent in combat due to its high Armor Class of 16 and robust Hit Points totaling 105, making it resilient in battle. This creature has a slower movement speed of 20 feet on land, which could hinder its mobility compared to faster adversaries. With a Challenge Rating of 5, it offers a moderate challenge to adventurers, providing 1,800 experience points upon defeat. The Zmey Headling possesses a combination of physical strength, represented by a Strength score of 16 (+3 modifier, categorized as good), and solid Constitution at 17 (+3 modifier, also good). However, it has poor mental statistics, especially with Intelligence at 8 (-1, very bad) and Charisma at 8 (-1, very bad). The creature has some notable resistances to cold and fire damage, making it less vulnerable to elemental attacks.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ Overall, the Zmey Headling is a dangerous adversary for adventurers, armed with 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zmey Headling
 
 *Medium* *Dragon* *Chaotic Evil*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 16 (2d12 + 3) piercing damage.
 - **Claw:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.
 - **Fire Breath (Recharge 5–6):** The zmey headling exhales fire in a 30-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw, taking 28 (8d6) fire damage on a failed save, or half as much damage on a successful one. The headling can choose for this breath to not harm plants or Plant creatures.
+</statblock>
 
 

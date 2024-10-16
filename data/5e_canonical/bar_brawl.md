@@ -1,6 +1,8 @@
 <MonsterName/>Bar Brawl</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>12 (leather armor)</AC>
+<HP/>67</HP>
 <summary>The Bar Brawl is a gigantic, unaligned humanoid that epitomizes rough-and-tumble barroom brawls. With a considerable presence due to its size, it strikes fear into the hearts of tavern patrons while also eliciting a sense of chaotic fun. Despite having a moderate Armor Class of 12 and a pool of 67 hit points, its combat effectiveness can be amplified by its special abilities, notably "Liquid Courage," which temporarily boosts its resilience. However, its reliance on melee attacks and limitations on healing make it vulnerable in prolonged fights, particularly against bludgeoning damage.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the Bar Brawl serves as an impactful combatant that thrives in chaotic 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bar Brawl
 
 *Huge* *Humanoid* *unaligned*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Darts:** Ranged Weapon Attack: +3 to hit, range 20/40 ft. Hit: 10 (4d4) piercing damage, or 5 (2d4) if the bar brawl has half its hit points or fewer.
 
 
+</statblock>
 
 

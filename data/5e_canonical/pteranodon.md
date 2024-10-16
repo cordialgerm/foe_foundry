@@ -1,6 +1,8 @@
 <MonsterName/>Pteranodon</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>13</HP>
 <summary>The Pteranodon is a large beast resembling a prehistoric flying reptile. In the game, it serves as a nimble aerial threat with the ability to swoop down on unsuspecting prey and retreat without suffering attacks. With an Armor Class of 13, it is relatively resilient but not exceptionally tough, boasting 30 hit points, which gives it decent durability for a creature of its type. The Pteranodon has a Challenge Rating of 1/2, indicating that it poses a moderate challenge to low-level adventurers. Its strengths lie in its flying speed of 60 feet, allowing for quick movement in combat and strategic advantage over grounded opponents. However, its low intelligence and charisma scores indicate that it is not particularly adept in social interactions or problem-solving situations.</summary>
 
 <detail>
@@ -15,8 +17,49 @@ For its offensive capability, the Pteranodon can use its Bite action, which is a
 
 ---
 
+Source: 5e_srd
+
+<statblock>
+## Pteranodon
+
+_Medium Beast, Unaligned_
+
+**Armor Class** 13 (natural armor)
+
+**Hit Points** 13 (3d8)
+
+**Speed** 10 ft., fly 60 ft.
+
+|   STR   |   DEX   |   CON   |  INT   |  WIS   |  CHA   |
+| :-----: | :-----: | :-----: | :----: | :----: | :----: |
+| 12 (+1) | 15 (+2) | 10 (+0) | 2 (-4) | 9 (-1) | 5 (-3) |
+
+**Skills** Perception +1
+
+**Senses** passive Perception 11
+
+**Languages** —
+
+**Challenge** 1/4 (50 XP)
+
+**Proficiency Bonus** +2
+
+**_Flyby_**. The pteranodon doesn’t provoke an opportunity attack when it flies out of an enemy’s reach.
+
+### **Actions**
+
+**Bite.** _Melee Weapon Attack:_ +3 to hit, reach 5 ft., one target.
+_Hit:_ 6 (2d4 + 1) piercing damage.
+</statblock>
+
+
+
+
+---
+
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pteranodon
 
 *Large* *Beast*
@@ -44,5 +87,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.
 
 
+</statblock>
 
 

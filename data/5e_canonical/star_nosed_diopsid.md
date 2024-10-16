@@ -1,6 +1,8 @@
 <MonsterName/>Star-Nosed Diopsid</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural)</AC>
+<HP/>153</HP>
 <summary>The Star-Nosed Diopsid is a formidable large aberration known for its lawful evil nature and its deep-rooted ties to magical venoms. With a Challenge Rating of 9, it serves as a potent adversary in combat, leveraging its varied abilities to control, poison, and physically dominate its foes. One of the most notable features of the Star-Nosed Diopsid is its ability to transform humanoids into new diopsids, creating a cycle of horror that can turn the tide of battle. It boasts strong physical stats, particularly in Strength (19) and Constitution (17), granting it great resilience and dealing significant damage. While it excels in melee combat, it is less effective against magical attacks, making it vulnerable to powerful spells and abilities.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the Star-Nosed Diopsid can utilize **Share Senses** to see and hea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Star-Nosed Diopsid
 
 *Large* *Aberration* *lawful evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Control Envenomed (3/Day):** While within 300' of an envenomed Humanoid diopsid can telepathically suggest course of activity to it. Humanoid must make DC 16 Wis save or pursue the activity suggested to it. Success: Humanoid takes 11 (2d10) psychic and has disadvantage next time it makes this save. Works like suggestion spell and Humanoid unaware of diopsid’s influence.
 
 
+</statblock>
 
 

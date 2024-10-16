@@ -1,6 +1,8 @@
 <MonsterName/>Bearfolk Chieftain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>17</AC>
+<HP/>130</HP>
 <summary>The Bearfolk Chieftain is a medium-sized humanoid creature embodying chaotic good alignment, making it both a fierce warrior and a protector of its kin. It boasts high physical prowess, particularly in strength with a score of 21, indicating exceptional capabilities in melee combat and physical feats. The Bearfolk Chieftain has a robust Constitution score of 16, contributing to its good survivability with 130 hit points, which provides it a solid advantage in prolonged engagements. However, its intelligence is relatively low at 9, representing a weakness in strategic thinking or arcane knowledge. In combat, the chieftain excels with strong melee attacks and has special abilities that enhance its combat effectiveness, like the ability to deal extra damage and become harder to hit while in a frenzy. The tactical use of its abilities may shift the tide of battle, making it a formidable foe.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ It also has a tactical ability called **Leadership** which can be used as a reac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bearfolk Chieftain
 
 *Medium* *Humanoid* *chaotic good*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Leadership (Recharges after a Short or Long Rest):** For 1 minute, the bearfolk chieftain can, as a reaction, utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll, provided it can hear and understand the bearfolk chieftain. A creature can benefit from only one Leadership die at a time. This effect ends if the bearfolk chieftain is incapacitated.
 
 
+</statblock>
 
 

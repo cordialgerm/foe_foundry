@@ -1,6 +1,8 @@
 <MonsterName/>Primordial Surge</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>16</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>232</HP>
 <summary>The Primordial Surge is a formidable Gargantuan Elemental creature known for its devastating powers and transformative abilities. Its high mobility, both in flight and on the ground, combined with impressive defensive traits including significant damage immunities and resistances make it a daunting adversary. With a Challenge Rating of 16, it presents a serious threat to adventurers, capable of dealing heavy damage while also having the unique ability to restore life in its wake. It has low intelligence, wisdom, and charisma, but its physical abilities are very strong, especially in dexterity, making it agile and lethal in combat. Notably, it can create lush landscapes and even revive fallen allies upon its death, adding a layer of challenge and tactical consideration when facing this being.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the Primordial Surge is a complex and dangerous foe that serves both as
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Primordial Surge
 
 *Gargantuan* *Elemental* *neutral*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Primordial Storm (Recharge 6):** Rain of energies produces one of: Restorative Rain Each non Construct/Undead creature within 30' of the surge regains 27 (5d10) hp. Area becomes difficult terrain as nonmagical plants in the area become thick and overgrown.Ruinous Rain Each creature within 30' of the surge: 27 (5d10) acid and 27 (5d10) fire and is coated in burning acid (DC 18 Dex half damage not coated in acid). A creature coated in acid: 5 (1d10) acid and 5 (1d10) fire at the start of each of its turns until it or another creature takes an action to scrape/wash off the acid.
 
 
+</statblock>
 
 

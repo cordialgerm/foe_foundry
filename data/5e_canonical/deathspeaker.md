@@ -1,6 +1,8 @@
 <MonsterName/>Deathspeaker</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>97</HP>
 <summary>The Deathspeaker is a medium undead creature with a lawful evil alignment that presents a formidable challenge in combat and social interactions. It possesses a decent Armor Class of 14, providing it with good defense, and a significant pool of 97 hit points, indicating good resilience in battle. With a Challenge Rating of 4, it is an adversary suitable for groups of adventurers looking for a mid-level encounter. The Deathspeaker excels in manipulation and deception, boasting high scores in Intelligence (18) and Charisma (15), making it very good at using skills like deception and persuasion, both having a +8 modifier. However, it is somewhat reliant on language, as its more potent abilities can only affect creatures that share a language with it, which can limit its effectiveness in certain scenarios.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Deathspeaker also possesses the terrifying ability called Pronounce Death. T
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deathspeaker
 
 *Medium* *Undead* *lawful evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Pronounce Death:** The deathspeaker chooses a creature it can see within 30 feet of it that has been reduced to 0 hp. The target must succeed on a DC 13 Constitution saving throw or immediately die. Creatures cursed by the Deathspeak trait have disadvantage on this saving throw.
 
 
+</statblock>
 
 

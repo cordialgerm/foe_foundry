@@ -1,6 +1,8 @@
 <MonsterName/>Stone-Eater Slime</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Stone-Eater Slime is a small, unaligned ooze that poses a significant threat due to its formidable combat abilities and its unique interaction with stone and crystal structures. With an Armor Class of 12, it possesses a decent defense bolstered by its natural armor, making it somewhat resilient in battle. It boasts 90 hit points (12d6 + 48), which gives it a solid presence on the battlefield, allowing it to endure a fair amount of damage before succumbing. The slime moves at a speed of 20 feet on land and can climb at a speed of 10 feet, making it versatile in navigating different terrains. Although it has a weak challenge rating of 4, its strengths lie in its ability to petrify foes and dissolve stone, which can turn the tide in combat. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ One of its notable abilities is Dissolve Stone, which allows the slime to touch 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stone-Eater Slime
 
 *Small* *Ooze* *unaligned*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Dissolve Stone:** Touches petrified creature or nonmagical object or structure made of crystal or stone within 5 ft. of it ingesting some. If object isn't being worn or carried touch destroys a 6-inch cube of it and slime regains 10 (3d6) hp. If object is being worn or carried by a creature creature can make DC 14 Dex save to avoid slime's touch. If target is a petrified creature: 21 (6d6) acid (DC 14 Con half). Being petrified doesn’t give creature resistance to this damage. Slime regains hp equal to half the damage taken. If object touched is stone armor or stone shield worn or carried it takes a permanent and cumulative –1 penalty to AC it offers. Armor reduced to AC 10 or shield that drops to +0 bonus is destroyed. If object touched is a held stone weapon it takes a permanent and cumulative –1 penalty to damage rolls. If penalty drops to –5 it is destroyed
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Pillar of the Lost Magocracy</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Pillar of the Lost Magocracy is a huge construct characterized by its chaotic neutral alignment and formidable magical prowess. Its primary role is to serve as a guardian or an obstacle within its domain, wielding significant control over its environment through unpredictable magical attacks. It boasts an impressive quantity of hit points, standing firm against physical damage while being immune to poison and resistant to nonmagical attacks. However, its low Dexterity and lack of mobility limit its physical capabilities, making it more reliant on its mental and magical abilities to influence combat. Additionally, the construct is immune to several debilitating conditions, granting it resilience in battle.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Pillar of the Lost Magocracy serves as a significant threat on the 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pillar of the Lost Magocracy
 
 *Huge* *Construct* *chaotic neutral*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Anger of the Ancient Mage:** The pillar of lost magocracy unleashes a random magical attack on a target or area within 120 feet. Roll a d4 to determine the effect:<br>1. Mutant Plants. Grasping tendrils of alien vegetation sprout from the ground in a 20-foot radius centered on a point the pillar can see within 120 feet. The area becomes difficult terrain, and each creature in the area must succeed on a DC 14 Strength saving throw or become restrained. Treat as an entangle spell, except it only lasts for 2d4 rounds.<br>2. Acid Rain. Corrosive acid falls from the sky centered on a point the pillar can see within 120 feet. Each creature in a 20-foot-radius, 40-foot-high cylinder must make a DC 14 Dexterity saving throw, taking 13 (3d8) acid damage on a failed save, or half as much damage on a successful one.<br>3. Noxious Cloud. The pillar creates a 20-foot-radius sphere of reddish, stinging mist centered on a point it can see within 120 feet. The area is heavily obscured, and each creature inside the cloud at the start of its turn must make a DC 14 Constitution saving throw. On a failed save, the creature takes 13 (3d8) poison damage and is blinded until the start of its next turn. On a success, the creature takes half the damage and isn't blinded. The cloud lasts for 1d4 rounds.<br>4. Shrinking Ray. A bright green ray strikes a single creature within 120 feet. The creature must succeed on a DC 14 Constitution saving throw or be shrunk to half its size. Treat as an enlarge/reduce spell, except it lasts for 2d4 rounds.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Earth Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>17</AC>
+<HP/>58</HP>
 <summary>The Earth Dragon Wyrmling is a medium-sized dragon known for its connection to the earth, both in its abilities and its role as a guardian of specific locations. With an Armor Class of 17 and 58 hit points, it is a moderately tough opponent for adventurers rated at Challenge Level 3, providing a balance of physical strength and unique abilities that make it formidable. The wyrmling exhibits good physical attributes, particularly in Strength and Constitution, while being average in Dexterity. It is capable of burrowing through earth and stone seamlessly, making it a cunning ambusher in its natural habitat. However, it is vulnerable to magical weapons, which can bypass its resistances. Its essence linking ability ties it to the land, affecting its power and longevity based on its proximity to a specific area, presenting both tactical advantages and potential weaknesses.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of combat actions, the wyrmling can make a melee attack with its Bite, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Earth Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Scouring Breath (Recharge 5-6):** The dragon breathes scouring sand and stones in a 15-foot cone. Each creature in that area makes a DC 12 Dexterity saving throw  taking 10 (3d6) slashing damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

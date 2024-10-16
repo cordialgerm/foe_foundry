@@ -1,6 +1,8 @@
 <MonsterName/>Black Knight Commander</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>18 (plate)</AC>
+<HP/>91</HP>
 <summary>The Black Knight Commander is a formidable Medium humanoid creature that embodies a combination of martial prowess and dark magic, operating under a lawful evil alignment. It possesses a high Armor Class of 18, making it very resilient to attacks. With 91 hit points, it can withstand a good amount of damage in combat. As a challenge rating 5 creature, it presents a well-rounded threat with strong offensive capabilities and tactical advantages. Its notable strengths include powerful melee attacks, the ability to enhance allies' damage output, and an impressive mount that provides strategic mobility. However, its reliance on mounted combat can be a weakness if it finds itself without its warhorse.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Black Knight Commander is a powerful combatant with a focus on moun
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Knight Commander
 
 *Medium* *Humanoid* *Lawful Evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Lance:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 10 (1d12 + 4) piercing damage.
 - **Mace:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage.
 - **Frightful Charge (Recharges after a Short or Long Rest):** While mounted, the black knight commander lets loose a terrifying cry. It then moves up to 30 feet in a straight line and can move through the space of any Large or smaller creature. This movement doesn’t provoke opportunity attacks. The first time it enters a creature’s space during this move, that creature must make a DC 15 Dexterity saving throw. On a failure, a creature takes 28 (8d6) bludgeoning damage and is frightened for 1 minute. On a success, a creature takes half the damage and isn’t frightened. A frightened creature can make a DC 15 Wisdom saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

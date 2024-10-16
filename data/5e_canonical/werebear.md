@@ -1,6 +1,11 @@
 <MonsterName/>Werebear (Lycanthrope)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>human</Subtype>
+<Subtype/>lycanthrope</Subtype>
+<Subtype/>shapechanger</Subtype>
+<CR/>5</CR>
+<AC/>10</AC>
+<HP/>135</HP>
 <summary>A Werebear is a humanoid cursed with the ability to transform into a massive bear, either fully or in a hybrid form. Werebears are often noble and protective, using their immense strength and resilience to guard their territory or allies. In their bear form, they have the strength and durability of a giant bear, with thick fur and powerful claws. Unlike many other lycanthropes, Werebears tend to be good-natured, though they can be fearsome in battle. They are immune to most conventional weapons unless made of silver and can transmit lycanthropy through their bite.</summary>
 
 <summary>The Werebear is a formidable Medium Humanoid with a powerful presence in any encounter. With a Challenge Rating of 5, it possesses significant combat capabilities, thanks to its strong attributes and unique abilities. The creature has a high Armor Class of 11, augmented by substantial Hit Points totaling 135, which provides it a good degree of survivability. Its physical strength is exceptional, exemplified by an impressive Strength score of 18, which grants it a +4 modifier. This strength is coupled with a good Constitution score of 16 (+3), making it resilient in battle, but its Dexterity is average at 10 (+0). The Werebear has immunity to damage from nonmagical and non-silvered weapons, which makes it challenging for unprepared adventurers to combat. With a keen sense of smell, it excels in perception, while its ability to shapeshift allows for versatility in combat and roleplaying scenarios.</summary>
@@ -43,6 +48,7 @@ Overall, the Werebear is a dynamic combatant with noteworthy transformations and
 
 Source: 5e_srd
 
+<statblock>
 ### Werebear (Lycanthrope)
 
 *Medium humanoid (human, shapechanger), neutral good*
@@ -79,7 +85,8 @@ Source: 5e_srd
 
 ***Claw (Bear or Hybrid Form Only)***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) slashing damage.
 
-***Greataxe (Humanoid or Hybrid Form Only)***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 10 (1d12+4) slashing damage.
+***Greataxe (Humanoid or Hybrid Form Only)***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 10 (1d12+4) slashing damage.</statblock>
+
 
 
 
@@ -87,6 +94,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Werebear
 
 *Medium* *Humanoid*
@@ -125,6 +133,7 @@ Source: 5e_artisinal_monsters
 - **Frenzied Bite (While Bloodied:** The werebear makes a bite attack.
 
 
+</statblock>
 
 
 
@@ -133,6 +142,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Werebear
 
 *Medium humanoid (lycanthrope)*
@@ -168,5 +178,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape.** The werebear transforms into a Medum or Large bear, a Large bear-humanoid hybrid, or back into its true form, which is Humanoid. Its statistics, other than its size, speed, and AC, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
 - **Pin.** One creature grappled by the werebear is knocked prone, and it is restrained until the grapple ends.
 
+</statblock>
 
 

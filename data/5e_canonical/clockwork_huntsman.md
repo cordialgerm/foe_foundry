@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Huntsman</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>99</HP>
 <summary>The Clockwork Huntsman is a medium-sized construct characterized by its mechanical nature and unaligned disposition. It serves as an effective enforcer or guardian, utilizing its substantial physical attacks and clever net-based tactics to control the battlefield. The creature boasts durable armor and reasonably high hit points, making it resilient in combat, while its capabilities to resist magical effects provide it with a strong defense against spellcasters. However, the Clockwork Huntsman suffers from low intelligence, wisdom, and charisma, limiting its ability to engage in social situations or strategic planning beyond its programmed directives. Its explosive core serves as a last-resort deterrent, dealing damage upon its destruction.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ As a bonus action, the Clockwork Huntsman can use:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Huntsman
 
 *Medium* *Construct* *Unaligned*
@@ -73,5 +76,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Reel:** The clockwork huntsman pulls a creature restrained by its net up to 15 feet straight toward it.
+</statblock>
 
 

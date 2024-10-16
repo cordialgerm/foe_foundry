@@ -1,6 +1,8 @@
 <MonsterName/>Dark Servant</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (leather armor)</AC>
+<HP/>55</HP>
 <summary>The Dark Servant is a Medium humanoid creature steeped in neutral evil, making it a formidable foe to encounter in a D&D campaign. Possessing a fair amount of resilience with 55 hit points and a reasonable Armor Class of 12, the Dark Servant can withstand moderate damage while inflicting it back with its two types of weapon attacks. This creature thrives in the shadows, benefiting from abilities like Dark Devotion, which provides it an advantage against charm and fear effects, and Darksight, allowing it to see even in magical darkness. However, it has a notable weakness to sunlight, suffering disadvantage on attacks and perception checks when exposed. With its engaging abilities, the Dark Servant can operate effectively as part of a group, utilizing Pack Tactics for enhanced attack opportunities against isolated opponents.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ When it comes to actions, the Dark Servant can execute a Multiattack, allowing i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dark Servant
 
 *Medium* *Humanoid* *neutral evil*
@@ -52,5 +55,6 @@ against being charmed or frightened.
 - **Light Crossbow:** Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 5 (1d8 + 1) piercing damage.
 
 
+</statblock>
 
 

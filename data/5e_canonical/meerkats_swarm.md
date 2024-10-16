@@ -1,6 +1,8 @@
 <MonsterName/>Meerkats, Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>The meerkat swarm is a medium-sized beast that operates without alignment, often representing a quirky yet formidable presence in the game. This swarm is capable of overwhelming opponents through sheer numbers, using its ability to occupy the same space as other creatures to restrict movement. It has a moderate Armor Class of 12 and 22 hit points, derived from rolling five eight-sided dice, making it relatively resilient for its Challenge Rating of 1/2, which yields 100 experience points upon defeat. While it excels in dexterity with a modifier of +2, allowing for good performance in nimble maneuvers, its strength is subpar at -1, making it physically weaker in direct confrontations. The swarm is especially adept at avoiding conditions like being charmed or frightened, as it possesses numerous immunities, though it lacks any language capabilities.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For their actions, the meerkat swarm can perform a "Bite," which is a melee weap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Meerkats, Swarm
 
 *Medium* *Beast* *unaligned*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, 0 ft., one creature, in the swarm's space. 10 (4d4) piercing damage or 5 (2d4) piercing damage if swarm has half of its hp or fewer.
 
 
+</statblock>
 
 

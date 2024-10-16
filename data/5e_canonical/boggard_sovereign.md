@@ -1,6 +1,8 @@
 <MonsterName/>Boggard Sovereign</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>67</HP>
 <summary>The Boggard Sovereign is a large humanoid creature that thrives in aquatic environments, exhibiting both amphibious traits and a commanding presence among its kind. This creature has a respectable Armor Class of 13, coupled with a hit point total of 67, making it moderately durable in combat scenarios. Its unique blend of abilities allows it to influence the behavior of other boggards and frogs, enabling it to turn the tide of battle by summoning allies or inciting frenzy among its comrades. While not exceptionally fast on land with a walking speed of 20 feet, the Boggard Sovereign compensates with a swimming speed of 40 feet, allowing it to maneuver effectively in water. With a Challenge Rating of 3, it presents a significant threat but is manageable for a party of adventurers. </summary>
 
 <detail>
@@ -27,6 +29,7 @@ Overall, the Boggard Sovereign serves as a formidable foe and a tactically cleve
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boggard Sovereign
 
 *Large* *Humanoid*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Summon Frog Guardians (1/Day):** The boggard magically summons two Medium frog guardians  which wriggle from the ground in an empty space within 30 feet. They follow the boggards orders and disappear after 1 minute. They have the statistics of boggards except they have Intelligence 2  have no spear attack  and can make a bite attack as part of their Vaulting Leap.
 
 
+</statblock>
 
 

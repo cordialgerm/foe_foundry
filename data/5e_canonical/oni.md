@@ -1,6 +1,9 @@
 <MonsterName/>Oni</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<Subtype/>outsider</Subtype>
+<CR/>7</CR>
+<AC/>16 (chain mail)</AC>
+<HP/>110</HP>
 <summary>An Oni is a malevolent, shape-shifting giant that can assume the form of a human or other creatures to deceive its enemies. Oni have blue or green skin, large tusks, and horns, and they wield powerful magic in addition to their physical strength. Known for their cunning and cruelty, Oni often infiltrate human settlements disguised as travelers, advisors, or merchants, where they sow chaos or feast on the weak. In combat, they use both their magical abilities and their brute strength to overpower enemies. Oni can also become invisible or fly, making them even more dangerous foes.</summary>
 
 <summary>The Oni is a formidable creature classified as a large giant and is often depicted as an outsider with both physical and magical prowess. With an Armor Class of 16 and a substantial 134 hit points, it can withstand significant damage while dishing out heavy attacks. The Oni possesses a unique ability to fly, which enhances its tactical options in combat. It has a Challenge Rating of 7, indicating it is a powerful adversary that can be a serious threat to adventurers. Its strengths include a mix of physical attacks and magical capabilities, along with resistances and regeneration that enhance its survivability. However, the Oni lacks exceptional mobility beyond its flying ability, and its effectiveness can be diminished by certain restorative spells or abilities used by opponents.</summary>
@@ -39,6 +42,7 @@ As a bonus action, the Oni can Change Shape, altering its appearance to a Small 
 
 Source: 5e_srd
 
+<statblock>
 ## Oni
 
 *Large giant, lawful evil*
@@ -81,7 +85,8 @@ At will: *darkness*, *invisibility*
 
 ***Glaive***. *Melee Weapon Attack:* +7 to hit, reach 10 ft., one target. *Hit:* 15 (2d10+4) slashing damage, or 9 (1d10+4) slashing damage in Small or Medium form.
 
-***Change Shape***. The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.
+***Change Shape***. The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.</statblock>
+
 
 
 
@@ -89,6 +94,7 @@ At will: *darkness*, *invisibility*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Oni
 
 *Large giant (outsider)*
@@ -129,5 +135,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The oni magically transforms into a Small or Medium Humanoid, a Large ogre, or back into its true form, which is Giant. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying transforms with it, except for its glaive, which adjusts to fit its new form. If the oni dies, it reverts to its true form, and the glaive reverts to its normal size.
 
+</statblock>
 
 

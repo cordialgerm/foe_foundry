@@ -1,6 +1,8 @@
 <MonsterName/>Ettin, Kobold</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (armor scraps)</AC>
+<HP/>34</HP>
 <summary>The Kobold Ettin is a medium-sized giant with a chaotic and mischievous nature, characterized by its two heads that engage in constant bickering. As a creature of lawful evil alignment, it embodies a unique combination of giant strength and kobold cunning. This creature has a solid foundation in melee combat, boasting decent hit points and strong physical attributes, particularly in Strength and Constitution. However, its intelligence and charisma are notably low, making it less effective in social interactions and strategic planning. The Kobold Ettin excels in situations where it can leverage its size and combat abilities, especially when supported by allies, but it suffers significantly in bright light due to its sunlight sensitivity, which hinders its accuracy and perception.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Kobold Ettin also has a special action called Echoing Burps which can be use
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ettin, Kobold
 
 *Medium* *Giant* *lawful evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Echoing Burps (Recharge 5–6):** Tries to let loose double roar but instead sends forth a series of obnoxious smelly belches in a 15 ft. cone. Each creature in the area: 10 (4d4) thunder and is incapacitated until end of its next turn (DC 13 Con half damage and isn’t incapacitated).
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Scroll Mummy</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Scroll Mummy is a formidable undead creature known for its unique ability to absorb and inscribe spells, making it a dangerous opponent in any encounter. A medium-sized monster with a challenge rating of 6, it has a balanced combination of high hit points, decent natural armor, and various resistances that make it resilient in battle. The Scroll Mummy's most notable strength lies in its ability to cast spells and drain magical energy from foes, which adds a strategic layer to its combat style. With a moderate Speed of 30 feet, it can engage opponents effectively but is hindered by low Dexterity, impacting its agility significantly. Thus, while it possesses exceptional spellcasting capabilities, its physical defenses and agility are considered average.</summary>
 
 <detail>
@@ -39,6 +41,7 @@ Overall, the Scroll Mummy is a dynamic opponent with unique abilities that can t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scroll Mummy
 
 *Medium* *Undead* *neutral*
@@ -77,5 +80,6 @@ At will: comprehend languages, fire bolt, mage hand, prestidigitation, ray of si
 - **Spell-Siphoning Fist:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage plus 11 (2d10) force damage. If the target is a spellcaster, it must succeed on a DC 15 Charisma saving throw or lose one random unused spell slot. The scroll mummy inscribes one of the spellcaster’s spells of that slot level onto the parchment wrappings that cover its body (see the Scroll Body trait).
 
 
+</statblock>
 
 

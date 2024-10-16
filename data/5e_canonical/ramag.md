@@ -1,6 +1,8 @@
 <MonsterName/>Ramag</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>27</HP>
 <summary>The Ramag is a Medium humanoid creature characterized by its neutral alignment. It is somewhat resilient due to its average armor class of 13 and a total of 27 hit points, making it a moderately difficult opponent for lower-level adventurers. Its strengths lie in its proficiency with magic resistance, providing it with a very good advantage on saving throws against spells and magical effects. Additionally, the Ramag possesses an exceptional ability known as Portal Sense, enabling it to locate planar portals and learn about their properties. However, with a Strength score of 9, the Ramag is physically weak, resulting in a very bad modifier for Strength-related tasks. Overall, the Ramag serves as a smart and tactical combatant, relying on its agility and magical knowledge to gain an upper hand.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Additionally, the Ramag has a special bonus action titled Portal Traveler, which
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ramag
 
 *Medium* *Humanoid* *Neutral*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Portal Traveler (Recharge 5–6):** The ramag creates and steps into a small portal and out of an identical portal in a space it can see within 60 feet of it. If a creature is in the destination space, the creature must make a DC 13 Intelligence saving throw. On a failure, the ramag trades spaces with the creature. On a success, the ramag fails to teleport. Whatever the result, the portal disappears.
+</statblock>
 
 

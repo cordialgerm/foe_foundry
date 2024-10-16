@@ -1,6 +1,8 @@
 <MonsterName/>Trickster Priest</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>32</HP>
 <summary>The Trickster Priest is a Medium humanoid character that serves as a frontline spellcaster, combining the mystical abilities of a cleric with a subtle approach to combat. With an Armor Class of 12 and 32 hit points, it possesses average resilience but relies heavily on its spells to manage combat and support allies. The creature has a Challenge Rating of 2, indicating it is suitable for encounters involving mid-level adventurers. The Trickster Priest excels in Wisdom and offers strong spellcasting capabilities, making it a versatile opponent or ally in various situations. It utilizes supportive and deceptive tactics, showcasing notable strengths in healing, damage-dealing, and area control through its spells. However, its physical attributes are only average, which may limit its effectiveness in direct melee confrontations.</summary>
 
 <detail>
@@ -24,6 +26,7 @@ The Trickster Priest's abilities allow for a strategic mixing of offense and sup
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trickster Priest
 
 *Medium* *Humanoid*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Healing Word (1st-Level; V):** The priest or a living creature within 60 feet regains 5 (1d4 + 3) hit points. The priest can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 

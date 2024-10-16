@@ -1,6 +1,8 @@
 <MonsterName/>Arachnocrat</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Arachnocrat is a Medium fiend characterized by its lawful evil alignment and cunning tactics. It possesses notable strengths such as high Dexterity and Charisma, making it effective in both combat and social interactions. With an Armor Class of 15, it is reasonably tough to hit and has 93 hit points, indicating it can sustain a fair amount of damage in battle. The Arachnocrat's movement capabilities are impressive, being able to walk 30 feet and climb at an even faster pace of 40 feet. Its challenge rating of 5 signifies a moderate difficulty level for adventurers, and its abilities lean heavily toward deception and combat maneuvers that can restrain opponents effectively.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ Additionally, the Arachnocrat can perform a Bite attack, also with a +6 to hit, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arachnocrat
 
 *Medium* *Fiend* *lawful evil*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must make a DC 14 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hp, the target is stable but poisoned for 1 hour, even after regaining hp, and is paralyzed while poisoned in this way. The skin of a creature that dies while poisoned takes on a golden hue.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Dragon, Sand Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Sand Wyrmling is a medium-sized dragon that embodies the essence of the arid desert, exuding a neutral evil alignment. With a well-rounded set of attributes, it boasts considerable physical durability and agility, making it a formidable foe in combat. It has an Armor Class of 18 due to its natural armor, which provides good protection against attacks. The Sand Wyrmling has 52 hit points, representing an average resilience for a challenge rating of 3, which allows it to endure a fair amount of punishment before being vanquished. Its high Strength and Constitution scores of 17 each grant it exceptional effectiveness in physical confrontations and resilience, while its Dexterity score of 12 reflects a somewhat above-average ability to evade attacks. However, its Intelligence at 11 is merely average, which might limit its strategic options. Its Wisdom (+2) and Charisma (+1) scores are also moderately strong, giving it decent perceptual abilities and social presence. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Sand Wyrmling can use two primary actions: a bite and its breath 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Sand Wyrmling
 
 *Medium* *Dragon* *neutral evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapon (Recharge 5–6):** Uses one of the following:Sand Blast. Exhales superheated sand in a 15 ft. cone. Each creature in area: 11 (2d10) piercing damage and 11 (2d10) fire (DC 13 Dex half). Blinding Sand. Breathes fine sand in a 15 ft. cone. Each creature in area: blinded for 1 min (DC 13 Con negates). Blinded creature can take an action to clear its eyes of sand ending effect for it.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Young Blue Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>152</HP>
 <summary>A Young Blue Dragon is an arrogant and strategic predator that rules over the deserts and arid regions it calls home. Its vibrant blue scales crackle with electrical energy, and its breath weapon releases devastating bolts of lightning. Even at this stage, Blue Dragons are master tacticians, using the terrain to their advantage and striking from unexpected angles. They often build their lairs beneath the sand, where they hide their growing hoards. Young Blue Dragons are proud and demanding, frequently subjugating weaker creatures to serve their needs and expand their influence.</summary>
 
 <summary>The Young Blue Dragon is a formidable creature known for its agility and cunning. As a Large Dragon with a Challenge Rating of 10, it presents a significant challenge for adventurers, boasting 152 hit points, which allows it to endure sustained combat. With an Armor Class of 18, it is well-defended against many attacks, making it a resilient opponent. The dragon possesses exceptional strength, a solid constitution, and good charisma, allowing it not only to inflict heavy damage but also to execute powerful spells. Its speed is noteworthy, with the ability to fly at 80 feet, enabling it to strike from above, retreat quickly, or engage in aerial combat. While it is immune to lightning damage, its relatively low Dexterity can be considered both a strength, allowing for positional advantages, and a weakness, making it more susceptible to stealthy attacks if the terrain favors them.</summary>
@@ -37,6 +39,7 @@ Additionally, the dragon has access to its infamous Lightning Breath, which rech
 
 Source: 5e_srd
 
+<statblock>
 # Young Blue Dragon (Chromatic)
 
 *Large dragon, lawful evil*
@@ -71,7 +74,8 @@ Source: 5e_srd
 
 ***Claw***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 12 (2d6+5) slashing damage.
 
-***Lightning Breath (Recharge 5-6)***. The dragon exhales lightning in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.
+***Lightning Breath (Recharge 5-6)***. The dragon exhales lightning in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -79,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Blue Dragon
 
 *Large* *Dragon*
@@ -113,6 +118,7 @@ Source: 5e_artisinal_monsters
 - **Lightning Breath (Recharge 5-6):** The dragon exhales a 60-foot-long  5-foot-wide line of lightning. Each creature in that area makes a DC 16 Dexterity saving throw  taking 44 (8d10) lightning damage on a failed save or half damage on a success. A creature that fails the save can't take reactions until the end of its next turn.
 
 
+</statblock>
 
 
 
@@ -121,6 +127,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Blue Dragon
 
 *Large dragon*
@@ -151,5 +158,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.
 - **Lightning Breath (Recharge 5–6).** The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 DEX save, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

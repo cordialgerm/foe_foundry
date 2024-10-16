@@ -1,6 +1,8 @@
 <MonsterName/>Alnaar</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>212</HP>
 <summary>The Alnaar is a large fiend characterized by its chaotic evil nature. It possesses a strong combination of speed, durability, and devastating attacks, making it a formidable opponent on the battlefield. With an impressive Armor Class of 17 and a whopping 212 hit points, the Alnaar can endure significant damage. However, it does have weaknesses, particularly against cold damage, and can be affected by the starvation mechanic which temporarily reduces its defenses. Its abilities, such as the fiery aura and devastating multiattack, allow it to deal severe damage while also potentially crippling its enemies. Despite its high damage output and resilience, the Alnaar must be careful to avoid the effects of starvation, which can hinder its effectiveness in combat.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the Alnaar exhibits a reaction called "On the Hunt." When an enemy it c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alnaar
 
 *Large* *Fiend* *chaotic evil*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **On the Hunt:** When a creature the alnaar can see moves, the alnaar can move up to 20 feet toward the moving creature. If the alnaar moves within 10 feet of that creature, it can make one fiery fangs attack against the creature.
 
 
+</statblock>
 
 

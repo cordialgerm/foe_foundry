@@ -1,6 +1,8 @@
 <MonsterName/>Terror Bird</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Terror Bird is a large, unaligned beast known for its fierce nature and formidable combat prowess. With an Armor Class of 12 and a total of 65 hit points, the Terror Bird can withstand some damage while dealing significant harm to its opponents. It has a walking speed of 50 feet, allowing it to cover ground quickly, which enhances its offensive capabilities. The creature's strengths lie in its powerful melee attacks and tactical advantages in combat situations, particularly when working in tandem with allies. However, its intelligence is very low, making it simple-minded and unable to engage in complex strategies or tactics beyond instinctual behavior. The Terror Bird has a challenge rating of 2, making it a moderate threat that can provide a challenge to low-level adventurers.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For its actions, the Terror Bird utilizes its Serrated Beak in melee combat. Whe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Terror Bird
 
 *Large* *Beast* *unaligned*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Serrated Beak:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) slashing damage. The target must succeed on a DC 12 Constitution saving throw or take 7 (2d6) slashing damage at the beginning of its next turn.
 
 
+</statblock>
 
 

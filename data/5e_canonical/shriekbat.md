@@ -1,6 +1,8 @@
 <MonsterName/>Shriekbat</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>178</HP>
 <summary>The Shriekbat is a huge monstrosity that operates independently, without alignment. It showcases impressive combat capabilities combined with an ability to deliver devastating sound-based attacks, making it a formidable opponent for adventurers. With an Armor Class of 15 and a substantial pool of Hit Points totaling 178, the Shriekbat is durable and capable of withstanding considerable damage. Its natural armor and strong Constitution contribute to its resilience in battle. However, the creature has average Dexterity and very low Intelligence, Wisdom, and Charisma, which reflects its primal nature. Its primary role in combat is that of a bruiser, dealing significant melee damage while also affecting the battlefield with its Shriek ability. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ One of the Shriekbat's most powerful features is its Shriek ability, which recha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shriekbat
 
 *Huge* *Monstrosity* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Shriek (Recharge 5-6):** The shriekbat emits a powerful burst of sound in a 30-foot cone. Each creature in that area must make a DC 16 Constitution saving throw, taking 42 (12d6) thunder damage on a failed save, or half as much damage on a successful one. If the saving throw fails by 5 or more, the target is also stunned for 1 minute. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Young Copper Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>119</HP>
 <summary>A Young Copper Dragon is a playful and quick-witted creature, known for its love of riddles, jokes, and pranks. Its copper-colored scales gleam in the sunlight, and its breath weapon can either create acid or a debilitating slowing gas. Young Copper Dragons are typically found in hilly or mountainous regions, where they enjoy playing tricks on travelers and collecting treasure. Although mischievous, they are generally good-natured and prefer to avoid violence, using their wit and agility to outmaneuver opponents. They defend their hoard with tenacity but always try to resolve conflicts with cleverness before resorting to combat.</summary>
 
 <summary>The Young Copper Dragon is a large and powerful dragon known for its cunning and playful demeanor. It has a strong presence in combat, capable of dealing substantial damage with its physical attacks and breath weapons. With an impressive Armor Class of 17 and a total of 144 hit points, this dragon is relatively durable and can withstand significant amounts of damage. It is especially dangerous at high altitudes, possessing excellent flying capabilities. However, it has average Dexterity, which makes it slightly less agile compared to other creatures. The Young Copper Dragon excels in stealth in mountainous environments, thanks to its special ability, "Flow Within the Mountain." In terms of magical capabilities, it can cast a variety of spells, enhancing its utility beyond just physical attacks. </summary>
@@ -42,6 +44,7 @@ Additionally, the dragon has a **Change Shape** bonus action, allowing it to tra
 
 Source: 5e_srd
 
+<statblock>
 # Young Copper Dragon (Metallic)
 
 *Large dragon, chaotic good*
@@ -80,7 +83,8 @@ Source: 5e_srd
 
 **Acid Breath**. The dragon exhales acid in an 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 40 (9d8) acid damage on a failed save, or half as much damage on a successful one.
 
-**Slowing Breath**. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.
+**Slowing Breath**. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.</statblock>
+
 
 
 
@@ -88,6 +92,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Copper Dragon
 
 *Large* *Dragon*
@@ -123,6 +128,7 @@ Source: 5e_artisinal_monsters
 - **Slowing Breath:** The dragon exhales toxic gas in a 30-foot cone. Each creature in the area makes a DC 15 Constitution saving throw  becoming slowed for 1 minute on a failure. A creature repeats the saving throw at the end of each of its turns  ending the effect on itself on a success.
 
 
+</statblock>
 
 
 
@@ -131,6 +137,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Copper Dragon
 
 *Large dragon*
@@ -166,5 +173,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The dragon magically transforms into a Beast or Humanoid that has a challenge rating no higher than its own, or back into its true form, which is Dragon. Any equipment it is wearing or carrying transforms with it or is borne by the new form (the dragon’s choice). It reverts to its true form if it dies. In a new form, the dragon retains its HP, ability to speak, proficiencies, and INT, WIS, and CHA scores, as well as this bonus action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
 
+</statblock>
 
 

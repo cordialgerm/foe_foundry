@@ -1,6 +1,10 @@
 <MonsterName/>Mage</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>6</CR>
+<AC/>12</AC>
+<HP/>40</HP>
 <summary>A Mage is a powerful spellcaster who has devoted their life to the study of arcane magic. They wear robes adorned with mystical symbols and carry staffs, wands, or other arcane foci to channel their spells. Mages are highly intelligent and possess a wide array of spells, from destructive fireballs to complex illusions and teleportation. Though physically frail, they make up for it with their mastery of magic, able to manipulate the elements, summon creatures, or control the minds of others. Mages are often found in magical academies, wizard towers, or as advisors to powerful rulers.</summary>
 
 <summary>The Mage is a Medium humanoid creature that excels in spellcasting, possessing a wide array of potent magical abilities. With an Armor Class of 12 and 67 hit points, it can withstand moderate damage but remains vulnerable to physical attacks due to its relatively low AC. As a 9th level spellcaster, the Mage's strength lies in its intelligence, providing them with a spell save DC of 14 and a +6 modifier on spell attack rolls, marking this as a very good level of efficacy. The Mage can prepare a variety of spells across multiple levels, which allows it to control the battlefield and deal significant damage from a distance. While its physical attributes are average, it compensates with strong intelligence and dexterity scores, allowing it to dodge attacks effectively. However, it has limited melee capabilities with a dagger, which gives it a very bad output for physical damage compared to its magical prowess.</summary>
@@ -38,6 +42,7 @@ Overall, the Mage combines magical prowess and utility in combat, maintaining a 
 
 Source: 5e_srd
 
+<statblock>
 ### Mage
 
 *Medium humanoid (any race), any alignment*
@@ -75,7 +80,8 @@ Cantrips (at will): *fire bolt*, *light*, *mage hand*, *prestidigitation*
 
 ***Dagger***. *Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (1d4 + 1) piercing damage.
 
-**Mages** spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.
+**Mages** spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.</statblock>
+
 
 
 
@@ -83,6 +89,7 @@ Cantrips (at will): *fire bolt*, *light*, *mage hand*, *prestidigitation*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mage
 
 *Medium* *Humanoid*
@@ -142,6 +149,7 @@ Source: 5e_artisinal_monsters
 - **Shield (1st-Level; V:** When the mage is hit by an attack or targeted by magic missile, they gain a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the start of their next turn.
 
 
+</statblock>
 
 
 
@@ -150,6 +158,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mage
 
 *Medium humanoid (any lineage)*
@@ -185,5 +194,6 @@ Source: 5e_artisinal_monsters
 	- 2/day each: fireball, haste, slow
 	- 1/day each: cone of cold, greater invisibility
 
+</statblock>
 
 

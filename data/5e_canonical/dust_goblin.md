@@ -1,6 +1,8 @@
 <MonsterName/>Dust Goblin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>16</HP>
 <summary>The Dust Goblin is a small humanoid creature characterized by its neutral evil alignment and stealthy nature. This creature has a modest challenge rating of 1/4, making it suitable for low-level encounters. The Dust Goblin is adept at ambushing foes, leveraging its high Dexterity to remain hidden and strike when the moment is right. With a good Armor Class of 14, it can withstand some damage but is still relatively fragile due to its limited hit points of 16. One of the notable attributes of the Dust Goblin lies in its ability to instill fear in its opponents, making it a tricky adversary despite its small size.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of its actions, the Dust Goblin can use a shortsword for melee attacks,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dust Goblin
 
 *Small* *Humanoid* *Neutral Evil*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 
 - **Shortsword:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 - **Light Crossbow:** Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
+</statblock>
 
 

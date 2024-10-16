@@ -1,6 +1,8 @@
 <MonsterName/>Sentinel in Darkness</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>7</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Sentinel in Darkness is a large, unaligned construct characteristic of its imposing size and formidable combat abilities. It is highly resilient with a significant pool of hit points, making it a robust adversary or guardian in any scenario. Notably, it has exceptional Strength and Wisdom, allowing it to excel in combat and perception, while its Intelligence and Charisma are remarkably low. The Sentinel possesses several special abilities that enhance its combat effectiveness, specifically targeting opponents with darkvision, blindsight, or truesight. Additionally, it cleverly manipulates its environment to increase the challenge of navigating certain hidden pathways or illusions. This creature’s resilience to nonmagical damage and various conditions makes it a tough encounter, though its mobility is hindered by a low Dexterity score.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Sentinel in Darkness offers formidable offensive and defensive capa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sentinel in Darkness
 
 *Large* *Construct* *unaligned*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Curse of the Wanderer (Recharge 6):** One creature the sentinel can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or suffer the Curse of the Wanderer. While cursed, the creature's speed is halved and it can't regain hp. For every 24 hours it goes without discovering or learning new information, it takes 10 (3d6) psychic damage. The curse lasts until it is lifted by a remove curse spell or similar magic.
 
 
+</statblock>
 
 

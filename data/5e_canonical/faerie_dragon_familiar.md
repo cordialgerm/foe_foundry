@@ -1,6 +1,8 @@
 <MonsterName/>Faerie Dragon Familiar</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>14</HP>
 <summary>The Faerie Dragon Familiar is a tiny dragon that serves as both a companion and a useful helper to spellcasters, particularly those who embrace the whimsical and enchanting elements of magic. This creature possesses a very good Armor Class of 15, making it relatively resilient for its size, with a total of 14 hit points, which reflects an average level of durability for such a creature. Weighing in at Challenge Rating 1, it can earn 200 experience points and usually acts as a supportive ally in combat rather than a front-line fighter. The Faerie Dragon excels in Dexterity and Charisma, which enhances its stealth capabilities, magical abilities, and general agility, making it quite adept at avoiding damage and influencing others. However, its low Strength score results in a very bad melee attack capability.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Lastly, as a bonus action, the Faerie Dragon can turn invisible, along with any 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Faerie Dragon Familiar
 
 *Tiny* *Dragon*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The dragon and any equipment it wears or carries magically turns invisible. This invisibility ends if the dragon falls unconscious, dismisses the effect, or uses Bite, Euphoria Breath, Prismatic Light, or Beast Form.
 
 
+</statblock>
 
 

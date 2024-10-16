@@ -1,6 +1,8 @@
 <MonsterName/>Ostinato</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>15</AC>
+<HP/>39</HP>
 <summary>The Ostinato is a medium-sized aberration with a chaotic neutral alignment, known for its unique abilities and reliance on psychic manipulation. Its armor class is 15, making it moderately protected in combat, while it has 39 hit points derived from rolling six dice of eight plus an additional twelve. With a movement speed of 50 feet, it can maneuver effectively on the battlefield. The creature has a challenge rating of 4, allowing it to be a notable encounter for a party, yielding 1,100 experience points upon defeat. Ostinatos are distinctive for their chaotic and unpredictable nature, harnessing a combination of spell-like abilities and their knack for creating a disorienting musical environment that can be both beneficial and detrimental to their foes.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Finally, the Ostinato can unleash Contagious Tune once per day while merged with
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ostinato
 
 *Medium* *Aberration* *Chaotic Neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Cacophony Burst:** Melee or Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 16 (3d8 + 3) thunder damage.
 - **Aural Symbiosis (Recharge 6):** One Humanoid that the ostinato can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or the ostinato merges with the target, becoming an enjoyable, repetitive tune in its host’s mind. The ostinato can’t be targeted by any attack, spell, or other effect, and it can’t attack. The host retains control of its body and is aware of the ostinato’s presence only as a melody, not as a living entity. The host no longer needs to eat or drink, gains the ostinato’s Magic Resistance trait, and has advantage on Charisma checks. In addition, the host has disadvantage on Wisdom saving throws, and it can’t maintain concentration on spells or other effects. At the end of each long rest, the host can make a DC 13 Wisdom (Insight) check, realizing that the music it hears comes from an external entity on a success.
 - **Contagious Tune (1/Day):** While merged with a Humanoid host, the ostinato fills the minds of nearby creatures with the same catchy tune playing in its host’s mind. Each creature within 30 feet of the ostinato’s host must make a DC 13 Charisma saving throw, taking 21 (6d6) psychic damage on a failed save, or half as much damage on a successful one. The ostinato then gains temporary hp equal to the single highest amount of psychic damage dealt. A deafened creature is immune to Contagious Tune.
+</statblock>
 
 

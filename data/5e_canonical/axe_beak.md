@@ -1,6 +1,8 @@
 <MonsterName/>Axe Beak</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>19</HP>
 <summary>The Axe Beak is a large, flightless bird with a sharp, axe-shaped beak that it uses to slash through prey and predators alike. Standing taller than a human, this bird is covered in thick, coarse feathers, with long, powerful legs that allow it to sprint at incredible speeds across plains and savannahs. Axe Beaks are aggressive hunters, and their sharp beaks make them particularly dangerous when they attack in groups. They are often used as mounts by tribes or raiders who value their speed and ferocity in battle.</summary>
 
 <summary>The Axe Beak is a large beast known for its swift movements and sharp beak, making it an effective creature for both combat scenarios and as a mount. With moderate hit points of 16, it is relatively easy to take down, placing it in the category of less formidable foes. However, it can still pose a threat due to its good movement speed of 50 feet and the ability to deal decent slashing damage with its beak attack. The Axe Beak's strengths lie in its agility and physical prowess, while its weaknesses include low armor class and minimal hit points, making it vulnerable in a fight. Overall, this creature serves primarily as an agile combatant or a serviceable mount but may not be the best choice for solo encounters.</summary>
@@ -29,6 +31,7 @@ The Axe Beak also has a bonus action called "Evasive," which allows it to take t
 
 Source: 5e_srd
 
+<statblock>
 ### Axe Beak
 
 *Large beast, unaligned*
@@ -53,7 +56,8 @@ Source: 5e_srd
 
 ***Beak***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d8+2) slashing damage.
 
-An **axe beak** is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close.
+An **axe beak** is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close.</statblock>
+
 
 
 
@@ -61,6 +65,7 @@ An **axe beak** is a tall flightless bird with strong legs and a heavy, wedge-sh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Axe Beak
 
 *Large* *Beast*
@@ -84,6 +89,7 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) slashing damage.
 
 
+</statblock>
 
 
 
@@ -92,6 +98,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Axe Beak
 
 *Large beast*
@@ -123,5 +130,6 @@ Source: 5e_artisinal_monsters
 
 - **Evasive.** The axe beak takes the Disengage or Dodge action.
 
+</statblock>
 
 

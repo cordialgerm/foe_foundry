@@ -1,6 +1,8 @@
 <MonsterName/>Corpselight Moth</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Corpselight Moth is a large, unaligned beast that serves as a formidable opponent in combat. With a sturdy armor class of 15, it boasts a substantial pool of hit points totaling 136, thanks to its notable Constitution score of 16, which grants it a good resilience in battle. The moth is particularly mobile, possessing a walking speed of 15 feet, as well as climbing and flying speeds of 15 and 60 feet respectively. It is classified as a Challenge Rating 5 creature, making it a considerable threat for parties encountering it, averaging 1,800 experience points. The Corpselight Moth has distinctive strengths, particularly its ability to deal radiant damage and its reliance on agility, underscored by its high Dexterity score of 19, which provides it with a good effectiveness in dexterous tasks. However, it has a very low Intelligence score of 2, indicating that it operates on instinct rather than strategy, and its low Charisma also suggests difficulty in social interactions.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Corpselight Moth is a dynamic and versatile creature that can pose 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corpselight Moth
 
 *Large* *Beast* *unaligned*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Radiant Wind (Recharge 4–6):** Flaps its wings releasing magical wind in a 30' cone. Each creature in area: 21 (6d6) radiant and is flung up 15 ft. away from moth in a direction following cone and knocked prone (DC 15 Str half damage and isn’t flung or knocked prone). If a thrown target strikes an object such as a wall or floor target takes 3 (1d6) bludgeoning damage per 10 ft. it was thrown. If target is thrown into another creature that creature: DC 15 Dex save or take same damage and knocked prone.
 
 
+</statblock>
 
 

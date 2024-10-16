@@ -1,6 +1,8 @@
 <MonsterName/>Myrmex, Young</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>54</HP>
 <summary>The Myrmex, a small elemental creature, embodies neutrality and a sense of good. It exists in the natural world with abilities that allow it to manipulate its environment and navigate various terrains easily. With a Challenge Rating of 1, it presents a manageable challenge for adventurers but boasts features that make it a unique opponent or ally. The Myrmex is resilient against several conditions and possesses keen sensory skills that enhance its awareness. Its primary strengths include superior navigation and the ability to alter the battlefield, while its weaknesses lie in its limited offensive power. Notably, its interaction with the earth provides it opportunities to control encounters favorably.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ For its bonus action, the Myrmex can use Earth Manipulation, enabling it to mani
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Myrmex, Young
 
 *Small* *Elemental* *neutral good*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Earth Manipulation:** Can manipulate and move earth within 30' of it that fits within a 5 ft. cube. This manipulation is limited only by its imagination but it often includes creating caricatures of creatures to tell stories of travels or etching symbols to denote dangerous caverns or similar markers for those in the colony. Can also choose to make ground within 10 ft. of it difficult terrain or to make difficult terrain normal if the ground is earth or stone. Changes caused by Earth Manipulation are permanent.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Iron Ghoul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>143</HP>
 <summary>The Iron Ghoul is a formidable undead creature that embodies a terrifying blend of speed, strength, and resilience. With a lawful evil alignment, it operates under a twisted sense of purpose, often acting as an enforcer of dark wills. Its attributes reflect exceptional physical power, particularly in strength, which is crucial for its melee attacks. The Iron Ghoul possesses significant durability with a challenging armor class of 16 and a robust pool of hit points totaling 143, making it a tough opponent for adventurers. While immune to poison damage and resistant to conditions like being charmed, the Iron Ghoul can turn the tide in battle with its powerful attacks that can inflict debilitating diseases and paralysis on its victims. However, it is slow in movement, which can be a strategic disadvantage if caught at range.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Iron Ghoul presents a complex challenge, combining physical might w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Iron Ghoul
 
 *Medium* *Undead* *Lawful Evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 18 (4d6 + 4) slashing damage. If the target is a creature other than an elf or Undead, it must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Glaive:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) slashing damage.
 - **Heavy Crossbow:** Ranged Weapon Attack: +6 to hit, range 100/400, one target. Hit: 8 (1d10 + 3) piercing damage.
+</statblock>
 
 

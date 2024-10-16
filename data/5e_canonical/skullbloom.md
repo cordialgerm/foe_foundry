@@ -1,6 +1,8 @@
 <MonsterName/>Skullbloom</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>23</HP>
 <summary>The Skullbloom is a Medium plant creature that embodies a fusion of ferocity and resilience. With an Armor Class of 11 due to its natural armor and a modest pool of 23 hit points, it presents a moderate challenge to adventurers with a Challenge Rating of 1/2. The Skullbloom can move at a speed of 30 feet, enabling it to close the distance to its prey quickly. Its physical attributes are generally average; it has a Strength of +1, Dexterity of +0, Constitution of +2, and significantly lower mental capabilities, with Intelligence at -4, Wisdom at -1, and Charisma at -3. The creature's strengths lie in its heightened hearing, which enhances its Perception when relying on auditory senses, and its Plant Resilience, providing it with resistance against exhaustion and several debilitating conditions. However, its weaknesses stem from its poor mental attributes, making it less effective in circumstances that require cleverness or charm.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Skullbloom presents a unique challenge for adventurers, utilizing i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skullbloom
 
 *Medium plant*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Instinct to Pursue.** The skullboom takes the Dash action toward an uninfected Humanoid it can see or sense.
 
+</statblock>
 
 

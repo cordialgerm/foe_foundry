@@ -1,6 +1,8 @@
 <MonsterName/>Half-Red Dragon Veteran</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>16</AC>
+<HP/>58</HP>
 <summary>The Half-Red Dragon Veteran is a humanoid warrior known for its connection to draconic heritage, granting it both formidable combat abilities and breath weapon powers. With a challenge rating of 3, this creature poses a moderate threat to well-prepared adventurers. It excels in melee combat, capable of dealing substantial slashing and piercing damage, while its fire resistance gives it an edge against fire-based attacks. However, its average dexterity and wisdom make it less effective in situations requiring quick reflexes or insight. The veteran's combination of martial prowess and tactical abilities makes it a versatile opponent, capable of influencing the battlefield with its strategic movements and devastating breath attack.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Half-Red Dragon Veteran combines martial strength, fire-based abili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Half-Red Dragon Veteran
 
 *Medium* *Humanoid*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Off-Hand Counter:** When the veteran is missed by a melee attack by an attacker it can see within 5 feet, the veteran makes a shortsword attack against the attacker.
 
 
+</statblock>
 
 

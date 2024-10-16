@@ -1,6 +1,8 @@
 <MonsterName/>Black Bear</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>19</HP>
 <summary>A Black Bear is a large, powerful mammal with thick, dark fur and sharp claws. It is primarily a forager, eating berries, fish, and small animals, but it can be dangerous if provoked or defending its territory. Black Bears are solitary creatures and typically avoid humans unless they feel threatened. In combat, a Black Bear uses its immense strength and claws to swipe at foes, and it can stand on its hind legs to appear even more intimidating. Though not inherently aggressive, it will fiercely protect its cubs or food sources.</summary>
 
 <summary>The Black Bear is a medium-sized beast known for its strong physical presence and formidable combat abilities. It has a challenge rating of 1/2, indicating that it poses a moderate threat to lower-level adventurers. The bear's primary strengths lie in its physical attacks and keen senses. With a speed of 40 feet on land and the ability to climb at 30 feet, it can navigate various terrains effectively. However, its weaknesses include a low armor class of 11 and limited versatility, as it relies primarily on its strength in combat without any ranged attacks or magical abilities.</summary>
@@ -21,6 +23,7 @@ Regarding actions, the Black Bear has a Multiattack feature that allows it to ma
 
 Source: 5e_srd
 
+<statblock>
 ### Black Bear
 
 *Medium beast, unaligned*
@@ -51,7 +54,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Claws.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) slashing damage.
+***Claws.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) slashing damage.</statblock>
+
 
 
 
@@ -59,6 +63,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Black Bear
 
 *Medium* *Beast*
@@ -88,5 +93,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) slashing damage.
 
 
+</statblock>
 
 

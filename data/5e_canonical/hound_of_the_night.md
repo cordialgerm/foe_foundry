@@ -1,6 +1,8 @@
 <MonsterName/>Hound of the Night</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Hound of the Night is a large and formidable monstrosity, serving as a powerful adversary in combat. With exceptional physical attributes, particularly in Strength and Dexterity, it exhibits both brute force and agility, making it a threat in close confrontations. The creature has good defensive capabilities with a respectable Armor Class of 15 and a substantial hit point pool of 112, which allows it to sustain damage in battle. It also possesses the ability to deal both piercing and cold damage, making it versatile in its attacks. However, it has a vulnerability to fire damage, which can be exploited by wise adventurers. Its tracking abilities make it particularly dangerous when hunting down fleeing foes, especially those of fey origin.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The teleportation ability of the hound allows it to magically shift positions up
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hound of the Night
 
 *Large* *Monstrosity* *Neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage plus 4 (1d8) cold damage, and the target must succeed on a DC 14 Strength saving throw or be knocked prone.
 - **Frost Breath (Recharge 5–6):** The hound exhales frost in a 15-foot cone. Each creature in the area must make a DC 14 Dexterity saving throw, taking 27 (6d8) cold damage on a failed save, or half as much damage on a successful one.
 - **Teleport (Recharge 4–6):** The hound magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see. Before or after teleporting, the hound can make one Bite attack.
+</statblock>
 
 

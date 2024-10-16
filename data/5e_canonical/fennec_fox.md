@@ -1,6 +1,8 @@
 <MonsterName/>Fennec Fox</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>7</HP>
 <summary>The Fennec Fox is a tiny, unaligned beast known for its exceptional senses and speed. With its high Dexterity and ability to stealth effectively, it excels in evasion and reconnaissance roles, making it a valuable companion in exploration scenarios. Despite its low hit points and average defenses, it can leverage its speed and keen senses to avoid direct confrontations. The Fennec Fox is notably fragile but compensates with stealthy movement and advantageous sensory abilities, enabling it to remain undetected in most encounters.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Fennec Fox can use its Bite attack, which is a melee weapon attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fennec Fox
 
 *Tiny* *Beast* *unaligned*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.
 
 
+</statblock>
 
 

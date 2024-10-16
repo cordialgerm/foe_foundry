@@ -1,6 +1,8 @@
 <MonsterName/>Abbanith Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Abbanith Giant is a formidable Large-sized creature of the Giant type, known for its neutral alignment. With an Armor Class of 13, it relies on natural armor to defend itself and possesses a robust pool of Hit Points totaling 76, derived from rolling 9d10 and adding 27. This giant has a movement capability that allows it to burrow at a speed of 30 feet and walk at 40 feet, making it versatile in diverse terrains. With a Challenge Rating of 3, it provides a decent challenge for adventurers, awarding 700 experience points upon defeat. Its impressive Strength score of 20 (+5) gives it exceptional melee capabilities, while its Constitution of 17 (+3) ensures good durability. With a Dexterity of 9 (-1), its agility is less effective, making it relatively vulnerable to ranged attacks. The Abbanith Giant has a Wisdom score of 13 (+1), giving it an average perception of danger, and it can communicate in both Giant and Terran languages.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a reaction, the Abbanith Giant can perform "Earth Counter" (with a recharge t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Abbanith Giant
 
 *Large* *Giant* *neutral*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Earth Counter (Recharge 6):** When a creature the abbanith can see within 30 feet of it casts a spell, the abbanith counters it. This reaction works like the counterspell spell, except the abbanith can only counter spells that directly affect or create earth or stone, such as stone shape, wall of stone, or move earth, and it doesn’t need to make a spellcasting ability check, regardless of the spell’s level.
 
 
+</statblock>
 
 

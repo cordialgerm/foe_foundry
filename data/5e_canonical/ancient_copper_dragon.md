@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Copper Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>21</CR>
+<AC/>21 (natural armor)</AC>
+<HP/>350</HP>
 <summary>An Ancient Copper Dragon is a witty and playful creature, with scales that have taken on the dark greenish-brown color of weathered copper. Known for their sharp minds and love of riddles and games, Copper Dragons often dwell in rocky hills or mountains, where they make their lairs in hidden, labyrinthine caves. These dragons are known for their mischievous personalities, often playing harmless tricks on travelers. Despite their playful nature, they are formidable in combat, able to breathe a stream of corrosive acid or release a gas that slows and confuses their enemies. Copper Dragons value humor and wit above all else.</summary>
 
 <summary>The Ancient Copper Dragon is a gargantuan creature with an impressive presence, renowned for its cunning intelligence and powerful magical abilities. This creature serves both as a formidable combatant and a master of deception, capable of using its environment to its advantage. With a high Armor Class of 21 and substantial hit points totaling 367, it is tough to bring down. This dragon boasts a Challenge Rating of 23, indicating its potential to be a significant threat in any encounter, awarded 50,000 experience points upon defeat. Its strengths lie in its high Constitution, Charisma, and Strength scores, which enhance its melee attacks and magic usage. However, with average Dexterity and Wisdom, the dragon shows some vulnerabilities in terms of speed and perception, making stealth and maneuverability more challenging.</summary>
@@ -59,6 +61,7 @@ This dragon creates a formidable presence in any campaign, capable of altering t
 
 Source: 5e_srd
 
+<statblock>
 # Ancient Copper Dragon (Metallic)
 
 *Gargantuan dragon, chaotic good*
@@ -117,7 +120,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6+8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6+8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -125,6 +129,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Copper Dragon
 
 *Gargantuan* *Dragon*
@@ -179,6 +184,7 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 19 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 23 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Tricksters Gambit (Costs 2 Actions):** The dragon magically teleports to an unoccupied space it can see within 30 feet and creates two illusory duplicates in different unoccupied spaces within 30 feet. These duplicates have an AC of 11, and a creature that hits one with an attack can make a DC 19 Intelligence (Investigation) check, identifying it as a fake on a success. The duplicates disappear at the end of the dragons next turn but otherwise mimic the dragons actions perfectly, even moving according to the dragons will.
+</statblock>
 
 
 
@@ -187,6 +193,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Copper Dragon
 
 *Gargantuan dragon*
@@ -237,5 +244,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, the defensible effect fades after 1 year, but the other effects fade in  days.
+</statblock>
 
 

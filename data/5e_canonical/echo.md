@@ -1,6 +1,8 @@
 <MonsterName/>Echo</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>15</AC>
+<HP/>102</HP>
 <summary>The Echo is a medium-sized chaotic evil fiend characterized by its unsettling presence and formidable combat abilities. With an Armor Class of 15 and a substantial pool of Hit Points totaling 102, it poses a significant threat to adventurers. It is capable of both flying and walking, with movements of 20 feet and 30 feet, respectively. Its Challenge Rating of 6 indicates that it is a moderate challenge for a party of adventurers, offering 2,300 experience points upon defeat. Notably, the Echo wields both physical and psychological tactics, employing its special abilities and actions to disrupt opponents while also dealing consistent damage. Its strengths lie in its high Strength and Dexterity scores, both rated at 20 (+5), making it exceptionally effective in combat situations. However, it does possess weaknesses such as being vulnerable to specific damage types not detailed in its resistances.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Lastly, the **Echoes of the Abyss** ability, usable once per day, allows the Ech
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Echo
 
 *Medium* *Fiend* *chaotic evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Echoes of the Abyss (1/Day):** The echo demon summons horrible wails from the deep crevasses of the Abyss. Creatures within 60 feet who can hear the wails must succeed on a DC 15 Wisdom saving throw or be stunned until the start of the echo demon's next turn. An affected creature continues hearing the troubling echoes of these cries until it finishes a long rest, and it has disadvantage on Intelligence checks until then.
 
 
+</statblock>
 
 

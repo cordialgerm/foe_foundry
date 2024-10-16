@@ -1,6 +1,8 @@
 <MonsterName/>Giant Honey Bee</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>9</HP>
 <summary>The Giant Honey Bee is a small, unaligned beast that plays a unique role in the ecosystem and serves as a fascinating adversary or ally in various game scenarios. With a challenge rating of 1/4, it is a relatively weak opponent in terms of combat, but its combination of mobility and poison capabilities can pose a significant threat to unsuspecting characters. The creature has decent Dexterity, allowing it to evade attacks effectively, while its Constitution makes it slightly resilient, although it is frail overall in terms of health with only 9 hit points. Notably, its sting attack not only inflicts damage but can also incapacitate characters with poison, making it a creature best dealt with cautiously.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ Overall, the Giant Honey Bee is a small but dangerous foe whose unique abilities
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Honey Bee
 
 *Small* *Beast* *unaligned*
@@ -41,5 +44,6 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hp, the target is stable but poisoned for 1 hour, even after regaining hp, and is paralyzed while poisoned in this way.
 
 
+</statblock>
 
 

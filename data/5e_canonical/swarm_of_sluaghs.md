@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Sluaghs</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>54</HP>
 <summary>The Swarm of Sluaghs is a medium-sized fey creature that represents chaotic evil. With a unique blend of mobility and magical abilities, this swarm poses a significant challenge to adventurers. It can both walk swiftly and fly, allowing it to maneuver around the battlefield effectively. With a total of 54 hit points, the swarm can endure a fair amount of damage before being defeated. However, its dependence on stealth and its weaknesses when exposed to sunlight can be exploited by cunning opponents. It operates under the challenge rating of 3, which signifies it is a moderate threat for a party of adventurers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the swarm has access to Shadow Stealth, allowing it to take t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Sluaghs
 
 *Medium* *Swarm* *Fey* *Chaotic Evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Stealth:** While in dim light or darkness, the swarm of sluaghs takes the Hide action.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Shark, Reef</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Reef Shark is a medium-sized beast known for its agility and predatory instincts in aquatic environments. With a challenge rating of 1/2, it serves primarily as a threat in coastal or underwater encounters. The shark is equipped with natural armor that grants it a moderate level of protection, making it resilient against minor attacks. Its ability to swim at a speed of 40 feet enhances its maneuverability in water, allowing it to close the distance to prey quickly. While it offers a fair offensive capability with its bite attack, it is relatively weak on land as it has a speed of 0 feet when out of the water. Notably, the Reef Shark has special abilities such as Blood Sense, which enables it to detect wounded creatures within a significant range, and Pack Tactics, which boosts its effectiveness when working with allies.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Reef Shark is a formidable predator within its watery domain, capab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shark, Reef
 
 *Medium beast*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Stealthy Hunter.** The shark takes the Hide action.
 
+</statblock>
 
 

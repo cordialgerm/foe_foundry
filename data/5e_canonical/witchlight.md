@@ -1,6 +1,8 @@
 <MonsterName/>Witchlight</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>20</HP>
 <summary>The Witchlight is a tiny construct that serves as a unique and enchanting creature within the D&D world. With a challenge rating of 1/4, it is considered a minor threat, but its abilities can present interesting challenges for unprepared adventurers. It boasts a moderate Armor Class of 12, ensuring it has decent protection against attacks, but with only 20 hit points, it remains quite fragile. Its speed of 40 feet allows for agile movement on the battlefield. One notable aspect of the Witchlight is its immunity to various damage types, including poison, psychic, and radiant, along with its resilience to many conditions that can hinder other creatures. However, it is susceptible to antimagic effects, which can incapacitate it readily.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Witchlight has a "Light Blast" attack that can be execu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Witchlight
 
 *Tiny* *Construct* *Any Alignment*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 
 - **Light Blast:** Melee or Ranged Spell Attack: +4 to hit, range 30 ft., one target. Hit: 5 (1d6 + 2) radiant damage.
 - **Flash (3/Day):** The witchlight emits a bright burst of light. Each creature within 20 feet of the witchlight must succeed on a DC 12 Dexterity saving throw or be blinded for 1 minute. A creature can make a DC 12 Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

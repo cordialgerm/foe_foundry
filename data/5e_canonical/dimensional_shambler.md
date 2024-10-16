@@ -1,6 +1,8 @@
 <MonsterName/>Dimensional Shambler</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Dimensional Shambler is a large aberration embodying a neutral evil alignment. It serves as a formidable foe, capable of inflicting psychological terror and significant physical harm. The creature boasts high hit points and strong physical attributes that make it a compelling opponent in combat. Its exceptional Strength, Dexterity, and Intelligence scores allow it to deal substantial damage while maintaining excellent evasive maneuvers. However, the Dimensional Shambler does have some weaknesses, such as a vulnerability to magical attacks which can bypass its resistances. Notably, it possesses abilities that manipulate space and the minds of its adversaries, making it a unique threat in any encounter.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Through its psychological manipulation, potent melee attacks, and interdimension
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dimensional Shambler
 
 *Large* *Aberration* *neutral evil*
@@ -64,5 +67,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Drag Through:** The dimensional shambler shifts through multiple dimensions with a target it is grappling, ending in the same dimension it began. The creature must make a DC 16 Wisdom saving throw, taking 21 (6d6) psychic damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

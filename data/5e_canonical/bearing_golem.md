@@ -1,6 +1,8 @@
 <MonsterName/>Bearing Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Bearing Golem is a Medium construct that operates independently and does not have alignment. It possesses an Armor Class of 16, which is classified as natural armor, and has a total of 75 hit points, calculated by rolling ten eight-sided dice and adding thirty. With a walking speed of 30 feet, it is agile in combat settings. The challenge rating for this creature is 6, indicating that it provides a moderate challenge, awarding 2,300 experience points upon defeat. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Bearing Golem can make multiattacks, executing either two slam at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bearing Golem
 
 *Medium* *Construct* *unaligned*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Scattershot (Recharge 5-6):** The golem’s body explodes. Each creature within 15 feet of the golem must make a DC 15 Dexterity saving throw. On a failure, a creature takes 36 (8d8) bludgeoning damage and is knocked prone. On a success, a creature takes half the damage and isn’t knocked prone. The golem immediately scatters.
 
 
+</statblock>
 
 

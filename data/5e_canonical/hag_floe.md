@@ -1,6 +1,8 @@
 <MonsterName/>Hag, Floe</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>135</HP>
 <summary>The Floe Hag is a formidable Medium Fey creature with a neutral evil alignment, known for its cunning and manipulative nature. With a Challenge Rating of 5, it presents a significant threat to adventurers, boasting a considerable 135 hit points and protective capabilities in combat. The hag's natural armor grants it an Armor Class of 15, making it relatively challenging to hit. Its dual nature allows it to traverse across land and aquatic environments effortlessly, reinforcing its adaptability in various terrains. The Floe Hag excels with its cold damage immunities and unique abilities that can turn the tide of combat, providing both offensive and defensive options. However, while its attributes are strong, including a high Strength score of 18 and decent Dexterity and Constitution, its character is best defined by its social manipulation and magical prowess, which can be equally dangerous.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the Floe Hag is a unique blend of physical prowess and magical capabili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hag, Floe
 
 *Medium* *Fey* *neutral evil*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 13) no material components: At will: minor illusion prestidigitation3/day ea: fog cloud sleep1/day: sleet storm
 
 
+</statblock>
 
 

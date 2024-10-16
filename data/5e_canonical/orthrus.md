@@ -1,6 +1,8 @@
 <MonsterName/>Orthrus</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>60</HP>
 <summary>Orthrus is a Medium monstrosity characterized by its two canine heads and a serpent-like head, fitting the lawful neutral alignment. With an Armor Class of 13 and 60 hit points, it presents a moderate challenge on the battlefield, rated at Challenge Level 3, making it a suitable adversary for mid-level adventurers. Its strengths lie in its high Dexterity (16) and Constitution (16), which provide both agility and durability in combat. The creature's multiple heads grant it unique advantages, including enhanced perception and resilience against various status effects. However, its Intelligence (8) and Charisma (7) are notably low, limiting its ability to engage in strategic interactions or social situations.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Each bite attack functions as follows: the canine heads make a melee weapon atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Orthrus
 
 *Medium* *Monstrosity* *lawful neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Bite (Snake Head):** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must make a DC 12 Constitution saving throw. On a failed save, it takes 14 (4d6) poison damage and is poisoned for 1 minute. On a success, it takes half the damage and isn't poisoned.
 
 
+</statblock>
 
 

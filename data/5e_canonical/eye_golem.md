@@ -1,6 +1,8 @@
 <MonsterName/>Eye Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>11</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Eye Golem is a formidable Large Construct with an unaligned nature, primarily serving as a potent guardian or tool for its creator. With a strong Armor Class of 20 and a significant pool of 157 hit points, it can withstand considerable punishment in battle. It boasts exceptional physical strength with a Strength score of 22, granting it a +6 modifier, and a good Constitution score of 20, giving it a +5 modifier for resilience. However, its Dexterity is notably low at 9, resulting in a -1 modifier, making it vulnerable to ranged attacks. The golem’s damage immunities include poison, psychic, and radiant damage, and it is particularly resilient against nonmagical attacks not made with adamantine. Its unique abilities enable it to deliver devastating attacks, inflict blindness, and resist magical spells effectively, making it a significant threat in combat scenarios.</summary>
 
 <detail>
@@ -34,6 +36,7 @@ Overall, the Eye Golem is a major asset in a confrontation, capable of deliverin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eye Golem
 
 *Large* *Construct* *Unaligned*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) bludgeoning damage plus 18 (4d8) radiant damage.
 - **Gaze of Ancient Light (Recharge 5–6):** The golem opens all of its eyes and emits a burst of blinding light. Each creature within 30 feet of it must make a DC 17 Dexterity saving throw. On a failure, a creature takes 35 (10d6) radiant damage and is blinded for 1 minute. On a success, a creature takes half the damage and isn’t blinded. A creature that fails the saving throw by 5 or more is also stunned until the end of its next turn. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Primal Voice of Doom:** The golem intones a disturbing invocation of the sun god at one creature it can see within 30 feet of it. The target must succeed on a DC 17 Wisdom saving throw or be frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

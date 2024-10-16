@@ -1,6 +1,8 @@
 <MonsterName/>Dwarf, Pike Guard</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>16 (chain mail)</AC>
+<HP/>30</HP>
 <summary>The Dwarf Pike Guard is a medium humanoid creature that embodies the principles of lawful neutrality. They serve as stalwart defenders, armed with deadly pikes and an unwavering commitment to maintaining order. They possess a strong physical presence with an excellent Constitution, granting them durability in battle, while their combat capabilities shine through their attacks with a pike, making them formidable opponents. Their ability to work effectively in groups offers them enhanced defenses against ranged attacks, though they have vulnerabilities due to their limited mobility and low Dexterity.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ For reactions, they have the "Brace Pike" ability. When a creature enters their 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dwarf, Pike Guard
 
 *Medium* *Humanoid* *lawful neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Brace Pike:** When a creature enters the pike guard’s reach the pike guard can brace its pike. If it does so it has advantage on its next attack roll vs. that creature.
 
 
+</statblock>
 
 

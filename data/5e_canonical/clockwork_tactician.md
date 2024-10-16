@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Tactician</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>11</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Clockwork Tactician is a formidable Medium-sized Construct characterized by its lawful neutral alignment. Designed for combat strategy and battlefield control, it boasts a robust armor class of 16 and a total of 150 hit points, giving it impressive durability in battle. With a challenge rating of 11, it can present a significant challenge to adventurers, capable of dealing considerable damage through its multiattack feature and tactical abilities. Its strengths lie in its high intelligence and strength, with an intelligence score of 20 (+5) allowing it to effectively utilize battlefield commands. However, its weaknesses include a lack of mobility, restricted to a walking speed of only 30 feet, and a dependency on allies for enhanced effectiveness through its Pack Tactics feature.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In reaction to attacks, the Clockwork Tactician can utilize Quick Study, which a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Tactician
 
 *Medium* *Construct* *lawful neutral*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Quick Study:** When a creature hits tactician with attack tactician makes DC 13 Int check. Success: it chooses one of:Tactician has advantage on melee attack rolls vs. the attacker.Attacker has disadvantage on attack rolls vs. the tactician.Tactician has resistance to damage type of attack that hit it.Can have more than one benefit active at a time. They end when it attacks a different creature or uses Quick Study on another.
 
 
+</statblock>
 
 

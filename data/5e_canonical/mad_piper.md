@@ -1,6 +1,8 @@
 <MonsterName/>Mad Piper</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>12 (padded armor)</AC>
+<HP/>19</HP>
 <summary>The Mad Piper is a Large Construct creature that embodies a bizarre and unsettling presence on the battlefield. It serves as a blend of support and control, using its musical abilities to inspire allies while simultaneously instilling fear in opponents. With a solid Armor Class of 12 and 19 hit points, it is somewhat durable but not heavily armored. Its strengths lie primarily in its Charisma of 16, allowing it to perform impressively, alongside its Strength of 16, which makes its melee attacks effective. However, its Dexterity is notably low at 8, making it less nimble and resulting in a bad initiative modifier. The Mad Piper's special abilities offer both offensive and supportive options, allowing it to sway combat dynamics. Notably, it has immunities to the poisoned condition and several other debilitating effects, making it quite resilient against various forms of control.</summary>
 
 <detail>
@@ -26,6 +28,7 @@ In terms of actions, the Mad Piper can perform the following:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mad Piper
 
 *Large* *Construct* *neutral*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Terrible Dirge:** The mad piper plays a haunting dirge. Each creature of the mad piper’s choice that is within 30 feet of the piper and can hear the dirge must succeed o a DC 13 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the mad piper’s Terrible Dirge for the next 24 hours.
 
 
+</statblock>
 
 

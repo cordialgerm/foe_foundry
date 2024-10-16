@@ -1,6 +1,8 @@
 <MonsterName/>Trollkin Shaman</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (hide armor)</AC>
+<HP/>78</HP>
 <summary>The Trollkin Shaman is a Medium humanoid with a neutral alignment known for its ability to bolster allies while also being difficult to defeat in battle. With a challenge rating of 4, it serves as a competent combatant and spellcaster, posing a moderate threat to adventurers. Its regeneration ability allows it to recover hit points each turn, making it resilient in prolonged engagements, though it is vulnerable to fire and acid damage, which can impede its regenerative capabilities. The trollkin shaman's proficiency in spellcasting combined with its support abilities makes it a strategic asset on the battlefield, though its strengths come with medium-tier physical abilities, resulting in a balanced but not overwhelming presence.</summary>
 
 <detail>
@@ -24,6 +26,7 @@ For its actions, the shaman can make a Multiattack, allowing it to use its staff
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trollkin Shaman
 
 *Medium* *Humanoid* *neutral*
@@ -60,5 +63,6 @@ Cantrips (at will): druidcraft, produce flame, shillelagh
 - **Inspire Ferocity (1/Day):** The trollkin shaman inspires ferocity in up to three trollkin it can see. Those trollkin have advantage on attack rolls and saving throws until the end of the shaman's next turn and gain 10 temporary hp.
 
 
+</statblock>
 
 

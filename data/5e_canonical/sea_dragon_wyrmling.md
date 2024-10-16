@@ -1,6 +1,8 @@
 <MonsterName/>Sea Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Sea Dragon Wyrmling is a medium-sized dragon that embodies the characteristics of a neutral evil creature. With its strong physical attributes and a potent ability to manipulate cold, this dragon serves as both a formidable combatant and a cunning strategist. Its strength and constitution scores are above average, providing it with a good ability to withstand attacks and deliver harm. However, it has average dexterity, reducing its effectiveness in dodging attacks. While it excels in Charisma, allowing it to command respect and manipulate others, its intelligence and wisdom are also average, making it reasonably intelligent but not exceptionally so. This creature's cold immunity makes it particularly resilient against cold-based attacks, and its unique ability to breathe both air and water grants it versatility in aquatic environments. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ Its most formidable action is the Tidal Breath ability, which recharges on a rol
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sea Dragon Wyrmling
 
 *Medium* *Dragon* *Neutral Evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) cold damage.
 - **Tidal Breath (Recharge 5–6):** The dragon exhales a crushing wave of frigid seawater in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw. On a failure, the creature takes 11 (2d10) bludgeoning damage and 11 (2d10) cold damage and is pushed up to 5 feet away from the dragon and knocked prone. On a success, the creature takes half the damage and isn’t pushed or knocked prone.
+</statblock>
 
 

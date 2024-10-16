@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Beast</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>15</AC>
+<HP/>112</HP>
 <summary>The Shadow Beast is a formidable and dangerous foe hailing from the fey realms, characterized by its chaotic evil nature. It presents a significant threat in combat due to its high agility and magic resistance, which allows it to evade many spell effects. With an armor class of 15 and a total of 112 hit points, this creature can withstand a decent amount of damage before being taken down. Its challenge rating of 7 indicates that it is a suitable encounter for a party of mid-level adventurers, offering a mix of physical and magical attacks. However, it suffers from sunlight sensitivity, which can hinder its effectiveness when exposed to direct sunlight.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Shadow Beast is a powerful creature that thrives in darkness and ex
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Beast
 
 *Medium* *Fey* *Chaotic Evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage plus 7 (2d6) necrotic damage.
 - **Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) slashing damage plus 7 (2d6) necrotic damage.
 - **Frightful Shadows (Recharge 5–6):** The shadow beast releases a wave of shadows filled with frightening images of eyes, fangs, and other barely seen and terrifying beasts in a 30-foot cone. Each creature in the area must make a DC 15 Wisdom saving throw. On a failure, a creature takes 42 (12d6) necrotic damage and is frightened for 1 minute. On a success, a creature takes half the damage and isn’t frightened. A frightened creature must take the Dash action and move away from the shadow beast by the safest available route on each of its turns, unless there is nowhere to move. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

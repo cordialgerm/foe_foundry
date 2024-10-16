@@ -1,6 +1,8 @@
 <MonsterName/>Dire Owlbear</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Dire Owlbear is a large monstrosity that serves as a challenging adversary for adventurers, exhibiting a mix of brute strength and primal instincts. With a significant Armor Class of 15 due to its natural armor and a substantial pool of Hit Points totaling 102, it can absorb considerable damage while delivering powerful attacks. The creature has a Challenge Rating of 5, indicating it is suitable for mid-level parties. Notably, the Dire Owlbear possesses strong physical attributes, most notably a Strength score of 20 (+5 modifier), making its melee attacks quite fearsome. However, it is not particularly quick or charismatic, leading to some vulnerabilities in dexterity and social interactions.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Dire Owlbear is a robust and menacing creature that relies on its p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dire Owlbear
 
 *Large* *Monstrosity* *unaligned*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +8 to hit, 5 ft., one target, 14 (2d8+5) slashing damage.
 
 
+</statblock>
 
 

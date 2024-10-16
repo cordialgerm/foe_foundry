@@ -1,6 +1,8 @@
 <MonsterName/>Crusher</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>20</AC>
+<HP/>115</HP>
 <summary>The Crusher is a formidable Large Construct designed for combat, with an impressive Armor Class of 20 and a substantial health pool of 115 hit points, represented by 11d10 plus an additional 55 hit points. This creature has a Challenge Rating of 10, making it a significant threat, particularly for adventurers at levels 10 and above. The Crusher excels in dealing crushing damage, has high physical capability, and possesses unique defensive traits, but it has low Dexterity, which reflects in its slow movement speed of 20 feet and limits its mobility. It can deliver devastating blows, knock opponents prone, and is immune to various conditions and effects that would hinder its form, making it a resilient opponent on the battlefield.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the Crusher can utilize a bonus action called Overclock, which has
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crusher
 
 *Large* *Construct*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Overclock (Recharge 5-6):** The crusher takes the Dash action.
 
 
+</statblock>
 
 

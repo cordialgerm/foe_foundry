@@ -1,6 +1,8 @@
 <MonsterName/>Monkey King</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>21</CR>
+<AC/>21 (natural armor)</AC>
+<HP/>262</HP>
 <summary>The Monkey King is a powerful celestial creature known for its agility and combat prowess. With a challenge rating of 21, it possesses formidable defensive and offensive capabilities, making it a significant threat in battle. It has high armor class at 21, resilient hit points totaling 262, and a remarkable movement speed of 60 feet both on foot and in flight. Notably, the Monkey King has advanced abilities that make it resistant to many forms of magical effects, and its legendary actions allow it to dominate the battlefield with speed and ferocity. While its strengths are considerable, its challenges in terms of physical confrontation and charisma can be exploited by tactful players.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Monkey King has access to legendary actions, which enable it to act outside 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Monkey King
 
 *Medium* *Celestial* *neutral*
@@ -66,5 +69,6 @@ The Monkey King can take 3 legendary actions, choosing from the options below. O
 - **Great Leap:** The Monkey King moves up to his speed without provoking opportunity attacks.
 - **Quick Staff:** The Monkey King makes a golden staff attack.
 - **Golden Burst (Costs 3 Actions):** Each creature of the Monkey King's choice within 10 feet of him must make a DC 18 Charisma saving throw, taking 36 (8d8) radiant damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

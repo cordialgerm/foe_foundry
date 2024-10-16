@@ -1,6 +1,8 @@
 <MonsterName/>Porcellina</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>28</HP>
 <summary>The Porcellina is a tiny beast known for its agility and cunning, often exhibiting surprising resilience in combat despite its small size. With a challenge rating of 1/2, it poses an intriguing challenge for low-level adventurers. The Porcellina possesses a moderate armor class of 13, making it somewhat difficult to hit, and it has a total of 28 hit points, providing it with a good chance to withstand several encounters. Its primary strengths lie in its dexterity and unique abilities, which allow it to effectively coordinate with allies and create tactical advantages through its pack tactics. However, its low strength and intelligence result in poor melee and cognitive performance, making it reliant on its companions for success in battle.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Porcellina also has a reaction called Squeal, which it can use when it is hi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Porcellina
 
 *Tiny* *Beast* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Squeal:** When a porcellina is hit with an attack it can let out a blood-curdling scream. Each creature within 10 ft. of the porcellina must make DC 11 Wis save or become frightened until the end of its next turn.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Zombie Knight</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>16</AC>
+<HP/>52</HP>
 <summary>The Zombie Knight is a medium undead creature that embodies a fearsome and relentless force of decay. With a solid Armor Class of 16 and 52 hit points, it presents a moderate threat on the battlefield, especially with its high Strength modifier and resistance to certain conditions. Its primary role in combat is as a frontline brawler, using its melee attacks to disrupt and damage enemies. The Zombie Knight possesses some notable strengths, including abilities that allow it to continue fighting even after taking lethal damage, and it is immune to poison and fatigue. However, it has weaknesses as well, such as low Dexterity and Intelligence scores, making it rather slow and not particularly clever in battle.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The combination of these abilities and attacks makes the Zombie Knight a formida
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zombie Knight
 
 *Medium* *Undead*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature grappled by a zombie. Hit: 8 (1d10 + 3) piercing damage  and the zombie regains hit points equal to the damage dealt.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Dread Examiner</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>21</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>322</HP>
 <summary>The Dread Examiner is a large aberration with a neutral evil alignment, presenting a formidable presence in any encounter. With an impressive armor class of 19 and a staggering 322 hit points, this creature is built to withstand significant damage while dealing out formidable attacks. It boasts exceptional intelligence and charisma, making it not only a powerful physical adversary but also a master of manipulation and strategic planning. Its exceptional spellcasting abilities complement its physical prowess, allowing it to dominate both in melee and ranged combat. However, the Dread Examiner does have its weaknesses; it has limited effectiveness against magical attacks, despite its magic resistance, and relies heavily on its psychic abilities for reconnaissance and manipulation.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The Dread Examiner also has legendary actions that enhance its versatility in ba
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dread Examiner
 
 *Large* *Aberration* *neutral evil*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Teleport:** Magically teleports along with any equipment it is wearing or carrying up to 120' to an unoccupied spot it sees.
 - **Reform (2):** The dread examiner rearranges its disjointed parts and regains 36 (8d8) hp.
 - **Psychic Surge (3):** The dread examiner releases a wave of psychic energy. Each creature within 20' of it: 21 (6d6) psychic can’t use reactions and has disadvantage on attack rolls and ability checks until the end of its next turn. (DC 20 Wis half damage and ignores the other effects.)
+</statblock>
 
 

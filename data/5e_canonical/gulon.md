@@ -1,6 +1,8 @@
 <MonsterName/>Gulon</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Gulon is a large and formidable monstrosity that possesses a unique combination of agility and resilience. With an Armor Class of 14, it has decent defenses, bolstered by its 110 hit points, making it a robust foe in combat. The creature excels in melee with a Multiattack capability, allowing it to strike effectively three times in one turn. Its impressive Strength score of 19 grants it an exceptional modifier of +4, improving its melee attack effectiveness. While it has a low Intelligence and Charisma, making its social interactions and mental defenses relatively poor, its Dexterity of 14 provides a good modifier of +2, allowing it to act swiftly and stealthily. The Gulon is immune to poison damage and conditions, such as being poisoned, rendering it resilient against certain attacks. Notably, its ability to move through narrow spaces without squeezing makes it unpredictable in movement, enhancing its tactical advantage.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Gulon is a resilient and powerful creature capable of navigating ti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gulon
 
 *Large* *Monstrosity* *unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Too Full (Recharge 5-6):** The gulon belches a 15-foot-radius cloud of toxic gas around itself. Each creature in the area must make a DC 16 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

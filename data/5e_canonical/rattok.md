@@ -1,6 +1,8 @@
 <MonsterName/>Rattok</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>66</HP>
 <summary>The Rattok is a Small fiend characterized by its chaotic evil nature. This creature is known for its speed and the ability to deftly navigate through its environment, making it a formidable opponent in combat. With an Armor Class of 14 and hit points totaling 66, the Rattok demonstrates decent resilience. However, despite its strengths, it has weakness in the Wisdom and Charisma attributes, showing a lack of perception and social influence. With a challenge rating of 4, it poses a fair but manageable threat to adventurers, offering a rewarding experience upon defeat. Notably, the Rattok's abilities to regenerate health quickly and its immunity to common damage types make it a challenging foe in battles.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Rattok can perform a Multiattack, making three attacks consisting
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rattok
 
 *Small* *Fiend* *chaotic evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Necrotic Rush (Recharge 5-6):** The rattok unleashes a wave of shadowy versions of itself that fan out and rake dark claws across all creatures within 15 feet. Each creature in that area must make a DC 13 Dexterity saving throw, taking 14 (4d6) necrotic damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

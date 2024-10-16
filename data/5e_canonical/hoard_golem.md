@@ -1,6 +1,8 @@
 <MonsterName/>Hoard Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Hoard Golem is a formidable Huge Construct that serves as a guardian of wealth and treasure. Unaligned in its motives, it is often found in places where vast riches are stored, such as treasure hoards or vaults. The golem has impressive defensive capabilities with an Armor Class of 18, primarily due to its natural armor, and possesses significant durability with 161 hit points. It is designed to inflict heavy damage, particularly through its magical attacks, which include additional force damage. However, the Hoard Golem has low intelligence and charisma, making it less effective in situations requiring cunning or social interaction. Its main strengths lie in its resistance to numerous damage types, immunity to various conditions, and abilities to instill fear and disable opponents with its presence.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Hoard Golem can execute a Multiattack by making two Sla
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hoard Golem
 
 *Huge* *Construct* *Unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The hoard golem makes two Slam attacks.
 - **Slam:** Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) bludgeoning damage plus 18 (4d8) force damage.
 - **Thieving Whirlwind (Recharge 5–6):** The hoard golem partially disperses into a whirlwind of coins, gemstones, and other valuables then recoalesces. Each creature within 20 feet of the golem must make a DC 17 Dexterity saving throw. On a failure, a creature takes 44 (8d10) bludgeoning damage and loses one object it is wearing or carrying. On a success, a creature takes half the damage and doesn’t lose an object. Each object the golem steals must weigh no more than 20 pounds and not be wrapped around or firmly attached to a creature. For example, the golem could steal a belt pouch full of coins or a creature’s jewel-encrusted dagger, but it can’t steal a creature’s shirt or armor. The hoard golem steals objects of high value over those of minimal value. The stolen object becomes part of the golem’s body and can’t be retrieved until the golem dies.
+</statblock>
 
 

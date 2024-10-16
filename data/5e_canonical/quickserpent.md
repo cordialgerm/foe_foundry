@@ -1,6 +1,8 @@
 <MonsterName/>Quickserpent</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Quickserpent is a large, unaligned beast that thrives in swampy environments, leveraging its stealth and unique movement abilities to ambush unsuspecting foes. With a robust armor class of 15 and a relatively high hit point pool of 102, it is well-equipped to withstand attacks. The Quickserpent’s strengths lie in its powerful melee attacks, including a bite and a constrict ability that can immobilize opponents, alongside its clever control of the battlefield through its quicksand pit ability. Its weaknesses include a low intelligence score and limited magical abilities, leaving it reliant on physical prowess and environmental tactics instead of strategic spellcasting.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ One of the Quickserpent’s most formidable abilities is the Quicksand Pit, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quickserpent
 
 *Large* *Beast* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Quicksand Pit (Recharge 5-6):** The quickserpent turns a 10-foot cube of natural mud or loose stone into a pit of quicksand. Each creature in the area when the quickserpent creates the pit must succeed on a DC 15 Dexterity saving throw or sink 1d4 feet into the quicksand and become restrained. A creature that successfully saves moves to the pit’s edge as it is formed. A creature that enters the quicksand for the first time on a turn or starts its turn in the quicksand it sinks 1d4 feet and is restrained. A creature that is completely submerged in quicksand can’t breathe.<br><br>A restrained creature can try to escape by taking an action to make a DC 15 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the edge of the quicksand. A creature within 5 feet of the quicksand can take an action to pull a creature out of the quicksand. Doing so requires a successful DC 15 Strength check, and the quickserpent has advantage on attack rolls against the creature until the end of the creature’s next turn.
 
 
+</statblock>
 
 

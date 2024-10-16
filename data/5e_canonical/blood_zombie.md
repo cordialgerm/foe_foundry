@@ -1,6 +1,8 @@
 <MonsterName/>Blood Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>10 (natural armor)</AC>
+<HP/>51</HP>
 <summary>The Blood Zombie is a Medium undead creature embodying a neutral evil alignment, often serving as a menacing threat in combat scenarios. With an Armor Class of 10, it is relatively easy to hit, but it compensates for this vulnerability with impressive durability due to its 51 hit points. The Blood Zombie boasts a high Constitution score of 18, providing it with a very good resilience against attacks. It is particularly dangerous due to its Blood Drain ability, which allows it to regain health by siphoning life from those who engage it in melee combat. While its Dexterity is low, making it slow and lacking in agility, it has the potential to become quite formidable through the accumulation of temporary hit points. This creature is especially vulnerable to radiant damage, which can severely hinder its regenerative capabilities.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Blood Zombie's primary action is called Slam, which functions as 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Zombie
 
 *Medium* *Undead* *neutral evil*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) bludgeoning damage plus 4 (1d8) necrotic damage. The zombie gains temporary hp equal to the necrotic damage taken.
 
 
+</statblock>
 
 

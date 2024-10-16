@@ -1,6 +1,8 @@
 <MonsterName/>Titanic Dragon Turtle</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>21</AC>
+<HP/>396</HP>
 <summary>The Titanic Dragon Turtle is a formidable aquatic creature known for its size and power. With an impressive Armor Class of 21 and a substantial pool of 396 hit points, it presents a significant challenge for adventurers. This creature moves proficiently both in water, accelerating to a speed of 80 feet, and limiting its land speed to 20 feet, showcasing its aquatic nature. As a Challenge Rating 24 monster, the Titanic Dragon Turtle is capable of dealing considerable damage while also possessing several potent defensive abilities. With a high Strength score of 24, it excels in physical confrontations, while its good Constitution of 22 adds to its durability. However, the turtle's Dexterity score is average at 10, making it less nimble compared to other creatures. The creature is well-suited for combat with its powerful melee attacks and various offensive spells, making it a versatile foe. Notably, its innate spellcasting grants it control over weather and water, further emphasizing its mastery of aquatic environments.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Finally, for legendary actions, the Titanic Dragon Turtle can take three actions
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Titanic Dragon Turtle
 
 *Titanic* *Dragon*
@@ -79,5 +82,6 @@ Source: 5e_artisinal_monsters
 - **Emerald Radiance (1/Day):** Searing green light emanates from the dragon turtle. Each creature within 90 feet makes a DC 17 Dexterity saving throw, taking 70 (20d6) radiant damage on a failure or half damage on a success. A creature that fails the saving throw is blinded until the end of its next turn.
 - **Lightning Storm (1/Day:** The dragon turtle recharges and uses Lightning Storm.
 - **Tail (Costs 2 Actions):** The dragon turtle makes a tail attack.
+</statblock>
 
 

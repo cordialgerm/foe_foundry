@@ -1,6 +1,8 @@
 <MonsterName/>Dau</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>49</HP>
 <summary>The Dau is a small fey creature that embodies chaotic neutrality, presenting an intriguing blend of agility, magical prowess, and deceptive abilities. With a relatively moderate armor class of 13 and a good pool of hit points totaling 49, the Dau remains resilient in battles, particularly due to its exceptional magic resistance, granting it an advantage on saving throws against spells. It has capabilities to engage effectively in melee combat with two slam attacks per turn, each potentially debilitating opponents by reducing their maximum hit points. While it excels in dexterity and charisma with good scores, its strength is quite low, making physical attacks less effective. The Dau is also armed with a range of spells that contribute to its versatility, allowing it to manipulate perceptions and control the battlefield. Overall, the Dau is a tricky foe, using its speed and illusion magic to outmaneuver opponents while dealing significant damage.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ For reactions, the Dau has the ability "Mirror Dodge," which lets it teleport aw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dau
 
 *Small* *Fey* *Chaotic Neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 
 - **Mirror Dodge:** When a creature the dau can see within 30 feet of it attacks the dau or targets it with a spell, the dau replaces itself with an illusory duplicate and teleports to any unoccupied space that it can see within 30 feet. The dau isn’t affected by the attack or spell, and the illusory duplicate is destroyed.
 - **Tangible Illusion (1/Day):** When the dau casts a spell that creates an illusion of an object, the dau temporarily transforms that illusion into a physical, nonmagical object. The temporary object lasts 10 minutes, after which it reverts to being an illusion (or vanishes, if the duration of the original illusion expires). During that time, the illusion has all the physical properties of the object it represents, but it doesn’t have any of the object’s magical properties. The dau must touch the illusion to trigger this transformation, and the object can be no larger than 5 cubic feet.
+</statblock>
 
 

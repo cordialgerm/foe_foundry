@@ -1,6 +1,8 @@
 <MonsterName/>Felid Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>19</CR>
+<AC/>18</AC>
+<HP/>275</HP>
 <summary>The Felid Dragon is a formidable and neutral creature with incredible speed and agility, suited for both aerial and terrestrial combat. As a Huge Dragon, it boasts a high Armor Class of 18 and a substantial pool of hit points totaling 275, making it difficult to defeat. With a Challenge Rating of 19, it presents a significant challenge to adventurers, having a total experience point reward of 22,000 upon defeat. The dragon's remarkable Dexterity score of 26 grants it exceptional reflexes, and its magical resistance makes it difficult to affect with spells. However, while it possesses numerous strengths such as powerful melee attacks and various debilitating abilities, it may need to rely on strategic positioning to maintain the upper hand in combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Deafening Roar affects all creatures within 60 feet who can hear it, requiri
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Felid Dragon
 
 *Huge* *Dragon* *neutral*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Sickening Bile (Recharge 5-6):** The dragon coughs up partially digested food and slimy bile in a 90-foot cone. Each creature in that area must make a DC 20 Constitution saving throw. On a failure, a creature takes 70 (20d6) poison damage and is coated in bile. On a success, a creature takes half the damage and isn’t coated in bile. While coated in bile, a creature is poisoned. A creature, including the target coated in bile, can use its action to remove the bile, ending the poisoned condition.
 
 
+</statblock>
 
 

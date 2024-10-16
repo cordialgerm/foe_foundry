@@ -1,6 +1,8 @@
 <MonsterName/>Rat, Swarm of Rats</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>14</HP>
 <summary>The Swarm of Rats is a Medium swarm composed of multiple tiny beasts, typically utilized as a low-level enemy in encounters or as environmental hazards in dungeons and urban settings. Its strengths lie in its ability to overwhelm foes with numerous bites and its high resistance to various forms of damage and conditions. However, it has very low armor class and hit points, making it vulnerable to strong attacks. The creature thrives in filth and can effectively navigate through narrow spaces, making it challenging to deal with in tight quarters. Its ability to spread disease also poses a significant threat to characters who engage it in close combat.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Swarm of Rats can perform a Bites attack, which is a me
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rat, Swarm of Rats
 
 *Medium swarm (of tiny beasts)*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 
 - **Bites.** Melee Weapon Attack: +2 to hit, reach 0 ft., one target in the swarm’s space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its HP or fewer. If the target is a creature, it must make a DC 9 CON save. On a failure, the target contracts the rat plague disease (see Diseased Rats sidebar) or is poisoned until the end of its next turn (the GM’s choice).
 
+</statblock>
 
 

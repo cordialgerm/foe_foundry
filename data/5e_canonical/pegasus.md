@@ -1,6 +1,9 @@
 <MonsterName/>Pegasus</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<Subtype/>animal</Subtype>
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>59</HP>
 <summary>A Pegasus is a magnificent, winged horse known for its grace and beauty. These celestial creatures are often associated with good-aligned deities and are seen as symbols of freedom and purity. Pegasi are incredibly fast fliers, capable of soaring through the skies with incredible speed and agility. They are intelligent and noble beings, sometimes allowing virtuous mortals to ride them in battle or on quests. Pegasi are highly sought after as mounts due to their ability to travel great distances quickly and their loyalty to those they trust.</summary>
 
 <summary>The Pegasus is a celestial creature known for its majestic appearance, characterized by its large, horse-like frame and magnificent wings. As a creature of good alignment, the Pegasus serves as both a noble mount and a protector of the realms. With a respectable challenge rating of 2, it presents a moderate threat in combat while also offering significant utility to those fortunate enough to bond with it. The creature's strengths lie in its high mobility, both on the ground and in the air, due to its walking speed of 60 feet and flying speed of 80 feet. Additionally, it boasts strong physical attributes with high Strength and Constitution scores, making it durable and effective in melee combat. However, it has a relatively average intelligence score, limiting its tactical abilities. The Pegasus excels in providing support to its rider, reflecting its nature as a divine being.</summary>
@@ -33,6 +36,7 @@ Overall, the Pegasus embodies both grace and power, providing valuable support a
 
 Source: 5e_srd
 
+<statblock>
 ## Pegasus
 
 *Large celestial, chaotic good*
@@ -59,7 +63,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage.
+***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) bludgeoning damage.</statblock>
+
 
 
 
@@ -67,6 +72,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pegasus
 
 *Large* *Celestial*
@@ -96,6 +102,7 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. If the target is a Large or smaller creature and the pegasus moves at least 20 feet toward it before the attack  the target makes a DC 14 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 
 
@@ -104,6 +111,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pegasus
 
 *Large celestial (animal)*
@@ -139,5 +147,6 @@ Source: 5e_artisinal_monsters
 
 - **Catch Rider.** If the pegasus’s rider fails a check or save to remain in the saddle or is subjected to an effect that would dismount it, the pegasus can shift to catch the falling rider, preventing the rider from being dismounted.
 
+</statblock>
 
 

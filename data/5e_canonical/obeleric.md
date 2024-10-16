@@ -1,6 +1,8 @@
 <MonsterName/>Obeleric</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Obeleric is a Medium aberration characterized by its chaotic evil nature. It stands out with an impressive physical presence and various combat abilities, making it a formidable opponent in battle. It possesses a total of 75 hit points, signifying above-average durability, and an Armor Class of 15 due to its natural armor, which provides decent protection. The creature's speed allows it to walk up to 30 feet and burrow 15 feet, offering tactical mobility in combat. With a challenge rating of 3, the Obeleric is a moderate threat to adventurers and can deal significant damage with its various attacks, while its skills and special abilities provide it with unique advantages in combat scenarios. However, it has a low intelligence and charisma, indicating weaknesses in social or cognitive situations.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ Overall, the Obeleric combines strong physical abilities and damaging attacks wi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Obeleric
 
 *Medium* *Aberration* *chaotic evil*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Reflux:** When the obeleric takes bludgeoning it can vomit acid at one creature within 5 ft. of it. That creature must make DC 13 Dex save or take 3 (1d6) acid.
 
 
+</statblock>
 
 

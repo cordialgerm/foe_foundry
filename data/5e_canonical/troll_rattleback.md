@@ -1,6 +1,8 @@
 <MonsterName/>Troll, Rattleback</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Rattleback Troll is a formidable foe embodying chaos and savagery. As a large giant creature with chaotic evil alignment, it boasts a robust armor class of 16 due to its natural armor, with 126 hit points derived from 12d10+60, making it a durable adversary. Its strengths lie in its impressive physical attributes—particularly its strength, constitution, and dexterity each score at least 18, translating to good modifiers that enhance its combat abilities and resilience. However, its intelligence and charisma are notably low and classified as very bad, hindering its ability to engage in tactical maneuvers or charismatic interactions. The challenge rating of 7 indicates that it provides a moderate to tough challenge for a party of adventurers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Rattleback Troll is a dangerous and resilient creature, capable of 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Troll, Rattleback
 
 *Large* *Giant* *chaotic evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Venom Spray (Recharge 5–6):** Sprays its venom in a 30' cone. Each creature in that area: 28 (8d6) poison and is poisoned for 1 min (DC 15 Con half damage and isn’t poisoned). While poisoned in this way a creature can’t regain hp. A poisoned creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

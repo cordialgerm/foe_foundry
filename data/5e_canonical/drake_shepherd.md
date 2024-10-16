@@ -1,6 +1,8 @@
 <MonsterName/>Drake, Shepherd</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Shepherd Drake is a medium-sized dragon notable for its unique role in assisting and protecting beasts. With a lawful neutral alignment, it embodies a protective and nurturing presence, often found safeguarding other creatures, particularly those that may be vulnerable. It possesses notable strengths in both mobility and defensive capabilities, including high hit points and the ability to fly. While its challenge rating of 5 indicates that it can pose a moderate threat in combat, the drake’s most remarkable abilities center around its interactions with other creatures. Weak against high-damage spells or powerful creatures, the Shepherd Drake is primarily designed to support others rather than serve as a frontline combatant. </summary>
 
 <detail>
@@ -33,6 +35,7 @@ Finally, the reaction called Shepherd’s Safeguard enables the drake to protect
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drake, Shepherd
 
 *Medium* *Dragon* *lawful neutral*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Shepherd’s Safeguard:** When a Beast within 30' of the drake would be hit by an attack drake can chirp and beast adds 3 to its AC vs. the attack. To do so drake must see attacker and Beast.
 
 
+</statblock>
 
 

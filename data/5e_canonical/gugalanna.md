@@ -1,6 +1,8 @@
 <MonsterName/>Gugalanna</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>21</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>253</HP>
 <summary>Gugalanna is a formidable Huge Celestial creature that embodies chaotic good. With its immense power and abilities, Gugalanna serves as both a protector and a challenger, capable of dealing significant damage while also resisting many forms of attack. It stands out with its high Armor Class of 18, substantial hit points totaling 253, and impressive speed, being able to fly at 80 feet and walk at 60 feet. As a Challenge Rating 21 creature, Gugalanna is a formidable opponent that poses a significant threat to adventurers, delivering substantial melee damage and magical effects. Its notable strengths include damage immunities to fire and radiant damage, as well as the ability to avoid opportunity attacks while flying. However, Gugalanna is not without weaknesses; it is susceptible to necrotic damage, which can be a factor in combat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, Gugalanna presents a complex and powerful adversary in Dungeons & Drago
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gugalanna
 
 *Huge* *Celestial* *chaotic good*
@@ -63,5 +66,6 @@ Gugalanna can take 3 legendary actions, choosing from the options below. Only on
 - **Kick:** Gugalanna makes a kick attack.
 - **Rearing Stomp (Costs 2 Actions):** Gugalanna spreads his wings and stomps his hooves, shaking the earth. Each creature within 10 feet of Gugalanna must make a DC 22 Strength saving throw. On a failure, a target takes 18 (2d10 + 7) bludgeoning damage and is pushed 20 feet away from Gugalanna. On a success, a target takes half the damage and isn't pushed. Gugalanna can then fly up to half his flying speed.
 - **Blazing Sun Disc (Costs 2 Actions, Recharge 5-6):** The sun disc floating between Gugalanna's horns flares. Each creature within 30 feet of Gugalanna must make a DC 18 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Demon, Balbazu</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>36</HP>
 <summary>The Balbazu is a tiny fiend characterized by its chaotic evil alignment, making it a dangerous opponent in the realm of Dungeons & Dragons 5e. With a challenge rating of 2 and a total of 36 hit points, the Balbazu can be a surprising menace despite its small size. Its unique capabilities, including aquatic invisibility and a blood-draining ability, grant it both stealth and the potential to heal itself. However, the creature is physically weak, with a strength score of only 3, leading to very bad effectiveness in physical confrontations. While it withstands damage effectively due to resistances and immunities, it remains vulnerable to mental attacks, given its low intelligence and charisma scores. This combination of traits makes the Balbazu a strategic creature that thrives in environments where it can exploit its abilities while avoiding direct combat.</summary>
 
 <detail>
@@ -30,6 +32,7 @@ In combat, the Balbazu's primary attack is its Bite, a melee weapon attack that 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Demon, Balbazu
 
 *Tiny* *Fiend* *chaotic evil*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, 5 ft., one creature,. 10 (2d6+3) piercing damage and it attaches to target. While attached balbazu doesn’t attack. Instead at start of each of balbazu’s turns target loses 10 (2d6+3) hp from blood loss. When balbazu first attaches to the target and each time target loses hp from blood loss target unaware of the attack (and balbazu if it is invisible). Target is still aware of the hp loss but it feels no pain from the attack. (DC 11 Con target is aware of the attack and balbazu and doesn’t need to continue making this save while it remains attached to it.) Regains hp equal to half hp of blood it drains. Balbazu can detach itself by spending 5 ft. of its move. A creature that is aware of the balbazu including the target can use its action to detach the balbazu.
 
 
+</statblock>
 
 

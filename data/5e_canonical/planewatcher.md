@@ -1,6 +1,8 @@
 <MonsterName/>Planewatcher</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (plate)</AC>
+<HP/>136</HP>
 <summary>The Planewatcher is a formidable celestial creature that embodies the principles of law and order in the multiverse. Possessing exceptional speed and flight capabilities, it can traverse great distances quickly while maintaining a high degree of agility. With a strong focus on control through grappling and debilitating attacks, the Planewatcher excels in both offense and defense. Its robust defensive stats are complemented by its strong magical abilities and resistance to nonmagical damage, making it a tough opponent to face. However, despite its strengths, it has a moderate challenge rating, indicating that it can be overcome with strategy and teamwork.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ All these factors make the Planewatcher a standout celestial entity, adept in co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Planewatcher
 
 *Medium* *Celestial* *Lawful Neutral*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Reel:** The planewatcher pulls a creature grappled by it up to 25 feet straight toward it.
+</statblock>
 
 

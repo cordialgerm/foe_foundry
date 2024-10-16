@@ -1,6 +1,8 @@
 <MonsterName/>Intellect Devourer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>36</HP>
 <summary>The Intellect Devourer is a Tiny Aberration known for its cunning and insidious nature. Its primary role in encounters is that of a stealthy manipulator and mental assailant, making it a formidable foe despite its small size. With an Armor Class of 14, it provides decent defense, while its 36 hit points offer moderate durability in combat. This creature thrives on exploiting the minds of opponents, and its ability to possess others through its Body Thief ability makes it particularly dangerous. However, despite its strengths, the Intellect Devourer has low physical attributes, most notably a Strength score of only 6, which means its physical attacks are weak. Its challenge rating of 3 suggests it poses a significant threat to parties of low to moderate level.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ This combination of psychological manipulation, stealth, and the ability to cont
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Intellect Devourer
 
 *Tiny* *Aberration*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **While the intellect devourer is in control of the target, the intellect devourer retains its own Intelligence, Wisdom, and Charisma, its telepathy, and its knowledge of Deep Speech:** It otherwise uses the targets statistics  including proficiencies  languages  class features  and spells. It has vague knowledge about the targets life but must make a DC 15 Intelligence check to recall specific facts.
 
 
+</statblock>
 
 

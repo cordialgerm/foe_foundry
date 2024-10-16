@@ -1,6 +1,8 @@
 <MonsterName/>Crimson Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Crimson Drake is a tiny dragon with a chaotic evil alignment, making it a mischievous and unpredictable creature that can be a challenge for adventurers. It possesses a good balance of mobility and magical resistance, which allows it to evade many spells while delivering a damaging combination of physical and fire attacks. With a solid set of abilities, it is particularly notable for its poison and fire-based attacks, which can inflict ongoing damage. However, as a creature with a low challenge rating of 1, it is not overwhelmingly powerful, making it more suited for lower-level encounters or as a cunning foe that relies on tactics rather than brute force.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Crimson Drake is a clever and formidable opponent that utilizes its
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crimson Drake
 
 *Tiny* *Dragon* *Chaotic Evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Stinger:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute. If the saving throw fails by 5 or more, the target takes 2 (1d4) poison damage at the start of each of its turns while poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Fire Breath (Recharge 6):** The drake exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save, or half as much damage on a successful one.
 - **Familiar:** The drake can serve another creature as a familiar, forming a magic, telepathic bond with that willing companion. While the two are bonded, the companion can sense what the drake senses as long as they are within 1 mile of each other. While the drake is within 10 feet of its companion, the companion shares the drake’s Magic Resistance trait. At any time and for any reason, the drake can end its service as a familiar, ending the telepathic bond.
+</statblock>
 
 

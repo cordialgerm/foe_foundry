@@ -1,6 +1,8 @@
 <MonsterName/>Lotus Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>14</AC>
+<HP/>82</HP>
 <summary>The Lotus Golem is a large construct that possesses both resilience and unique spellcasting abilities, making it a formidable opponent in combat. With an Armor Class of 14 and 82 hit points, it is capable of sustaining a fair amount of damage, classified under Challenge Rating 9 which indicates it presents a significant challenge for party members. This creature is agile, boasting a Dexterity score of 19 (+4), allowing it to evade attacks well, while its Strength of 14 (+2) makes it somewhat effective in melee combat. However, its low Intelligence, Wisdom, and Charisma scores limit its interaction and effectiveness with mental and social skills, making it very bad in these areas. Notably, the Lotus Golem has multiple damage immunities and resistances, allowing it to withstand various types of damage, and its special abilities provide it with enhanced capabilities in magical contexts.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Lotus Golem serves as an effective frontline fighter, capable of de
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lotus Golem
 
 *Large* *Construct* *unaligned*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Arcane Absorption:** When a spell is cast within 30 feet of it, the golem absorbs some of the spell's potency. If it is a spell that forces a saving throw, the DC to succeed drops by 2. If it is a spell with an attack roll, the attack roll has disadvantage. The golem regains 20 hp and gains 1 charge point in its Arcane Pool.
 
 
+</statblock>
 
 

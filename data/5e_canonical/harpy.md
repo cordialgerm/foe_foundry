@@ -1,6 +1,8 @@
 <MonsterName/>Harpy</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>38</HP>
 <summary>Harpies are vicious, winged creatures with the upper body of a human woman and the lower body of a bird. Their voices are hauntingly beautiful, and they use their songs to lure unsuspecting victims to their doom. Once their prey is close, Harpies swoop down and attack with sharp talons and claws. They are known for their cruelty and love of torment, often playing with their victims before delivering a fatal blow. Harpies typically make their nests in high cliffs or remote islands, where they can ambush travelers and sailors from above.</summary>
 
 <summary>The Harpy is a Medium-sized monstrosity known for its alluring and dangerous presence. With a challenge rating of 1, it poses a moderate threat to adventurers, particularly through its ability to charm and manipulate enemies. Although its physical attributes are average, its strength lies in its Luring Song ability, which can incapacitate foes, rendering them vulnerable to its attacks. However, the Harpy is relatively fragile, with only 38 hit points and an armor class of 11, making it susceptible to damage if enemies can successfully save against its charms or if they can close the distance and engage in combat. </summary>
@@ -29,6 +31,7 @@ The Harpy can also use its "Luring Song" as a bonus action. This magical melody 
 
 Source: 5e_srd
 
+<statblock>
 ## Harpy
 
 *Medium monstrosity, chaotic evil*
@@ -61,7 +64,8 @@ Source: 5e_srd
 
 While charmed by the harpy, a target is incapacitated and ignores the songs of other harpies. If the charmed target is more than 5 feet away from the harpy, the target must move on its turn toward the harpy by the most direct route, trying to get within 5 feet. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the harpy, the target can repeat the saving throw. A charmed target can also repeat the saving throw at the end of each of its turns. If the saving throw is successful, the effect ends on it.
 
-A target that successfully saves is immune to this harpy's song for the next 24 hours.
+A target that successfully saves is immune to this harpy's song for the next 24 hours.</statblock>
+
 
 
 
@@ -69,6 +73,7 @@ A target that successfully saves is immune to this harpy's song for the next 24 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Harpy
 
 *Medium* *Monstrosity*
@@ -98,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Luring Song:** The harpy sings a magical song. Each humanoid and giant within 300 feet that can hear it makes a DC 12 Wisdom saving throw. On a failure, a creature becomes charmed until the harpy fails to use its bonus action to continue the song. While charmed by the harpy, a creature is incapacitated and ignores other harpy songs. On each of its turns, the creature moves towards the harpy by the most direct route, not avoiding opportunity attacks or hazards. The creature repeats its saving throw whenever it is damaged and before it enters damaging terrain such as lava. If a saving throw is successful or the effect ends on it, it is immune to any harpys song for the next 24 hours.
 
 
+</statblock>
 
 
 
@@ -106,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Harpy
 
 *Medium monstrosity*
@@ -139,5 +146,6 @@ Source: 5e_artisinal_monsters
 
 - **Luring Song.** The harpy sings a magical melody. Every Humanoid and Giant within 300 feet of the harpy that can hear the song must succeed on a DC 11 WIS save or be charmed until the song ends. The harpy must use a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated.
 
+</statblock>
 
 

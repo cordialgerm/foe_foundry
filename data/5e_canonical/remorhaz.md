@@ -1,6 +1,8 @@
 <MonsterName/>Remorhaz</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>195</HP>
 <summary>A Remorhaz is a massive, centipede-like creature that dwells in cold, arctic regions. Its body is covered in hard, icy-blue plates, and it can generate immense heat from within, causing the air around it to shimmer. Remorhazes are fearsome predators that burrow through snow and ice, ambushing prey from below. They are known for their ability to swallow victims whole, using the intense heat of their bodies to melt ice and incinerate their prey. Despite their size, Remorhazes are swift and highly dangerous to anyone venturing into their frozen domains.</summary>
 
 <summary>The Remorhaz is a formidable Huge monstrosity that serves as a terrifying force of nature in any encounter. With a high Armor Class of 17 and a substantial pool of Hit Points totaling 195, it is designed to withstand significant damage while delivering its own in close combat. The Remorhaz boasts exceptional strength with a Strength score of 22, allowing it to perform powerful melee attacks and grapple opponents effectively. However, its lower Dexterity score of 12 provides only average agility, making it less nimble in battle. The creature is immune to cold and fire damage, making it resilient against certain types of attacks, but it has very low Intelligence, Wisdom, and Charisma scores, resulting in poor mental capabilities and ineffective interactions outside of combat. Overall, the Remorhaz is a fierce combatant that thrives on grappling and dealing fiery damage, capable of swallowing its foes and subjecting them to continuous harm.</summary>
@@ -43,6 +45,7 @@ In summary, the Remorhaz is a terrifying monster characterized by its overwhelmi
 
 Source: 5e_srd
 
+<statblock>
 ## Remorhaz
 
 *Huge monstrosity, unaligned*
@@ -73,7 +76,8 @@ Source: 5e_srd
 
 ***Swallow***. The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz's turns.
 
-If the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.
+If the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.</statblock>
+
 
 
 
@@ -81,6 +85,7 @@ If the remorhaz takes 30 damage or more on a single turn from a creature inside 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Remorhaz
 
 *Huge* *Monstrosity*
@@ -113,6 +118,7 @@ Source: 5e_artisinal_monsters
 - **Constrict:** Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 16 (3d6 + 6) bludgeoning damage  and the target is subjected to the remorhazs Heated Body trait. The target is grappled (escape DC 18) and restrained while grappled. The remorhaz can grapple three creatures at once.
 
 
+</statblock>
 
 
 
@@ -121,6 +127,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Remorhaz
 
 *Huge monstrosity*
@@ -154,5 +161,6 @@ Source: 5e_artisinal_monsters
 
 - **Vent Heat (119 HP or Fewer).** As the remorhaz’s life force ebbs, its body generates more heat to protect itself. The remorhaz can open valves in its carapace to vent this excess heat. Each creature within 5 feet of the remorhaz must succeed on a DC 17 CON save or suffer one level of exhaustion.
 
+</statblock>
 
 

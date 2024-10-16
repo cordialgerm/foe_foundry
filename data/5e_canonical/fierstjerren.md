@@ -1,6 +1,8 @@
 <MonsterName/>Fierstjerren</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (studded leather)</AC>
+<HP/>105</HP>
 <summary>The Fierstjerren is a medium undead creature characterized by its neutral evil alignment. This ominous being is a formidable foe in battle, possessing a decent armor class of 14 and a robust pool of 105 hit points, making it capable of sustaining several rounds of combat. The Fierstjerren is particularly dangerous when its health is low, as its necrotic abilities become stronger, allowing it to deal significant extra damage with weapon attacks. While it has substantial strength and constitution, giving it good physical damage capacity and resilience, it is average in wisdom and charisma, limiting its mental fortitude and influence. The Fierstjerren's ability to charm humanoid victims and command them as thralls adds to its threat, making it not only a direct combat adversary but also a manipulator of those around it.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ The creature's "Thrall Enslavement" ability allows it to target humanoids within
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fierstjerren
 
 *Medium* *Undead* *neutral evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Thrall Enslavement:** The fierstjerren targets one humanoid it can see within 30 feet of it that has a CR up to 1/2. The humanoid must succeed on a DC 15 Wisdom saving throw or be magically charmed by the fierstjerren. The fierstjerren can telepathically communicate with any creature it has charmed. The charmed target can't take reactions and obeys the fierstjerren's verbal and telepathic commands. A fierstjerren can have up to twelve charmed thralls at one time. A charmed thrall loses the memories of its previous life and devotes itself to the fierstjerren and the cult. The charm lasts for 24 hours or until the fierstjerren is destroyed, is more than 300 feet from the charmed target, or takes a bonus action to end the effect. The fierstjerren can attempt to reassert control over all of its thralls by using this action. Each thrall can repeat the saving throw when the fierstjerren uses this action to reassert control.
 
 
+</statblock>
 
 

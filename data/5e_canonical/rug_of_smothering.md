@@ -1,6 +1,8 @@
 <MonsterName/>Rug of Smothering (Animated Object)</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>33</HP>
 <summary>A Rug of Smothering is an animated object, often appearing as a simple, decorative rug. When triggered, it wraps itself around its victim, constricting and suffocating them in its tight folds. These rugs are commonly found in enchanted homes or dungeons, used as traps by their creators. Though inanimate when not in motion, they spring to life when a creature steps on them, attacking relentlessly until the victim is unconscious or dead. Their appearance as a mundane object makes them a surprising and deadly trap for the unwary.</summary>
 
 <summary>The Rug of Smothering is a large construct designed to ambush unsuspecting adventurers. Its deceptive appearance allows it to blend in with the environment, often catching characters off guard as it springs to life. With an Armor Class of 12 and a total of 45 hit points, it can endure a moderate amount of damage. The creature has strong physical attributes, particularly in Strength, which is rated at 16, giving it a very good +3 modifier. This creature operates primarily in close quarters, using its ability to grapple opponents to restrain them while simultaneously dealing damage. However, with inherent weaknesses such as being susceptible to dispel magic, where a DC of 19 is required to destroy it, it is crucial for adventurers to be mindful of their magical capabilities during encounters.</summary>
@@ -47,6 +49,7 @@ As a bonus action:
 
 Source: 5e_srd
 
+<statblock>
 ### Rug of Smothering (Animated Object)
 
 *Large construct, unaligned*
@@ -79,7 +82,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Smother***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one Medium or smaller creature. *Hit:* The creature is grappled (escape DC 13). Until this grapple ends, the target is restrained, blinded, and at risk of suffocating, and the rug can't smother another target. In addition, at the start of each of the target's turns, the target takes 10 (2d6+3) bludgeoning damage.
+***Smother***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one Medium or smaller creature. *Hit:* The creature is grappled (escape DC 13). Until this grapple ends, the target is restrained, blinded, and at risk of suffocating, and the rug can't smother another target. In addition, at the start of each of the target's turns, the target takes 10 (2d6+3) bludgeoning damage.</statblock>
+
 
 
 
@@ -87,6 +91,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rug of Smothering
 
 *Large* *Construct*
@@ -119,6 +124,7 @@ Source: 5e_artisinal_monsters
 - **Squeeze:** One creature grappled by the rug takes 10 (2d6 + 3) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -127,6 +133,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rug of Smothering
 
 *Large construct*
@@ -163,5 +170,6 @@ Source: 5e_artisinal_monsters
 
 - **Rolling Charge (25 HP or Fewer).** If it isn’t grappling a creature, the rug curls up and rolls along the ground up to triple its speed straight toward a creature it can sense. If it stops within 5 feet of the target, it can make one Smother attack against the target.
 
+</statblock>
 
 

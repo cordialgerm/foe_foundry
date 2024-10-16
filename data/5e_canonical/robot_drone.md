@@ -1,6 +1,8 @@
 <MonsterName/>Robot Drone</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>21</HP>
 <summary>The Robot Drone is a small construct that acts as an effective scout and automatic combatant in various scenarios. With its high armor class of 18 and 21 hit points, it is quite resilient for a creature of its size, allowing it to endure some attacks while remaining capable of delivering damage in return. The drone's ability to fly at a speed of 40 feet makes it agile and capable of avoiding ground-based threats. Its challenge rating of 1/2 indicates it is suitable for beginner adventurers. However, its strengths are somewhat tempered by low scores in Strength, Intelligence, and Charisma. This predominantly limits its effectiveness in physical confrontations and social interactions. The drone’s notable abilities like implausible resilience to various conditions and effects, as well as its unique electrical malfunction mechanic, add depth to its role in gameplay.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Robot Drone can execute a Fueled Escape. This allows it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Robot Drone
 
 *Tiny construct*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 
 - **Fueled Escape.** The drone takes the Dash or Disengage action, leaving a small cloud of fuel fumes behind it. Each creature within 5 feet must succeed on a DC 13 CON save or be poisoned until the end of its next turn.
 
+</statblock>
 
 

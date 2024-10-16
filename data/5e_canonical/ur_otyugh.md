@@ -1,6 +1,8 @@
 <MonsterName/>Ur-Otyugh</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>10</CR>
+<AC/>14</AC>
+<HP/>144</HP>
 <summary>The Ur-Otyugh is a large aberration that serves as a formidable foe in combat, typically encountered in environments such as underground lairs and polluted waters. It boasts a strong physical presence with a formidable armor class of 14, allowing it to withstand attacks from players. With 144 hit points, derived from a combination of 17d10 plus 51, it has a solid endurance, making it a challenging opponent. Although its Dexterity score is average at 10, the Ur-Otyugh excels in Strength and Constitution, with scores of 16, giving it a good modifier of +3. This translates to a very good effectiveness in grappling and resisting physical effects. However, the creature's Intelligence, Charisma, and Wisdom scores are relatively low, indicating that it may not be the most strategic or charismatic foe—this could be exploited during interactions or by spellcasters. It has a challenge rating of 10, which suggests it is suitable for encounters with a party of around five moderately experienced adventurers.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For its legendary actions, the Ur-Otyugh can swiftly move, make an extended tent
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ur-Otyugh
 
 *Large* *Aberration*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Mad Dash:** The ur-otyugh moves up to half its Speed.
 - **Tentacle:** The ur-otyugh makes a tentacle attack. This attack has a range of 15 feet.
 - **Mental Fuzz (Costs 2 Actions:** The ur-otyugh transmits a burst of psionic static. Each non-aberration within 30 feet makes a DC 14 Intelligence saving throw. On a failure, a creature takes 14 (4d6) psychic damage and is stunned until the end of the ur-otyughs next turn. On a success, the creature takes half damage.
+</statblock>
 
 

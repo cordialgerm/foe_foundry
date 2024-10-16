@@ -1,6 +1,9 @@
 <MonsterName/>Kraken</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<Subtype/>titan</Subtype>
+<CR/>23</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>472</HP>
 <summary>The Kraken is an enormous, legendary sea monster feared by sailors across the seas. It has a massive, squid-like body with tentacles capable of dragging entire ships beneath the waves. Its tough, rubbery hide is nearly impervious to weapons, and its immense strength allows it to crush anything in its grasp. Krakens are highly intelligent and often command storms and sea creatures to do their bidding. They lurk in the darkest depths of the ocean, where they reign as kings of the deep, emerging only to wreak havoc on those who dare to challenge their dominion.</summary>
 
 <summary>The kraken is a gargantuan monstrosity, known for its immense size and powerful presence, especially within the depths of the ocean. It serves as a formidable challenge for any adventurer, boasting extraordinary defenses, a formidable assortment of attacks, and the ability to manipulate the battlefield. With a challenge rating of 25, the kraken possesses high durability with 444 hit points and exceptional armor class standing at 20. Its strengths lie in its numerous physical attack options, superior resistances, and devastating magical abilities. However, it has very poor Dexterity, making it less effective in quick maneuvers. This creature's notable features include its ability to summon storms and control lightning, along with its rather unique grappling attack mechanics that can severely hinder combatants.</summary>
@@ -41,6 +44,7 @@ Overall, the Kraken is a terrifying creature that combines raw power with strate
 
 Source: 5e_srd
 
+<statblock>
 ## Kraken
 
 *Gargantuan monstrosity (titan), chaotic evil*
@@ -95,7 +99,8 @@ The kraken can take 3 legendary actions, choosing from the options below. Only o
 
 **Lightning Storm (Costs 2 Actions)**. The kraken uses Lightning Storm.
 
-**Ink Cloud (Costs 3 Actions)**. While underwater, the kraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the kraken. Each creature other than the kraken that ends its turn there must succeed on a DC 23 Constitution saving throw, taking 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the kraken's next turn.
+**Ink Cloud (Costs 3 Actions)**. While underwater, the kraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the kraken. Each creature other than the kraken that ends its turn there must succeed on a DC 23 Constitution saving throw, taking 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the kraken's next turn.</statblock>
+
 
 
 
@@ -103,6 +108,7 @@ The kraken can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kraken
 
 *Gargantuan* *Monstrosity*
@@ -149,6 +155,7 @@ Source: 5e_artisinal_monsters
 - **Tentacle:** The kraken makes one tentacle attack.
 - **Fling:** The kraken uses Fling.
 - **Squeeze (Costs 2 Actions):** The kraken ends any magical effect that is restraining it or reducing its movement and then swims up to half its swim speed without provoking opportunity attacks. During this movement, it can fit through gaps as narrow as 10 feet wide without squeezing.
+</statblock>
 
 
 
@@ -157,6 +164,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kraken
 
 *Gargantuan monstrosity*
@@ -207,5 +215,6 @@ The kraken can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the kraken dies, these effects fade in  days.
+</statblock>
 
 

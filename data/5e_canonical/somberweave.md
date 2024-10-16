@@ -1,6 +1,8 @@
 <MonsterName/>Somberweave</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>78</HP>
 <summary>The Somberweave is a medium-sized fey creature with a neutral evil alignment. It has a cunning nature, thriving in the shadows and using its unique abilities to entrap and manipulate prey. With an armor class of 14 and hit points totaling 78, the Somberweave presents a formidable challenge for adventurers, rated as challenge level 5. The creature possesses impressive dexterity and charisma, along with decent strength and constitution, making it agile and imposing in social situations. While it has some defenses against damage, like immunity to poison, its reliance on ambush tactics gives it an edge, especially when using its webs to ensnare opponents. However, this creature is less effective in open combat and relies heavily on its special abilities and stealth.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Another potent action it can take is "Shadow Shift." This ability allows the Som
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Somberweave
 
 *Medium* *Fey* *neutral evil*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Shift:** The somberweave touches a creature restrained by its webbing and transports itself and the creature into the Shadow Realm or the Material Plane, the somberweave’s choice. The somberweave and the target appear within 5 feet of each other in unoccupied spaces in the chosen plane. The destination location must be within 10 feet of the somberweave’s anchored web. If the target is unwilling, it can make a DC 14 Charisma saving throw. On a success, the somberweave is transported but the target isn’t.
 
 
+</statblock>
 
 

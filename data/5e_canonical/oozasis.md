@@ -1,6 +1,8 @@
 <MonsterName/>Oozasis</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>9</CR>
+<AC/>7</AC>
+<HP/>217</HP>
 <summary>The Oozasis is a gargantuan, amorphous ooze creature that presents itself as an oasis in desert environments, making it a deceptive and formidable foe. Its high hit points and resilience to most types of damage, along with its ability to grapple multiple targets, give it considerable staying power in combat. The Oozasis has a unique ability to ensnare creatures with its waters, which can compel them into performing tasks that serve its long-term plans. However, its low Armor Class and weak Dexterity make it relatively easy to hit, and its vulnerability to cold attacks can be exploited by savvy adventurers. Overall, the Oozasis is both a threatening combatant and a clever manipulator, using its abilities to influence the actions of characters in unexpected ways.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Oozasis presents unique challenges for adventurers, both in face-to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Oozasis
 
 *Gargantuan* *Ooze* *Unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The oozasis makes three Pseudopod attacks.
 - **Pseudopod:** Melee Weapon Attack: +8 to hit, reach 15 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage plus 7 (2d6) acid damage. If the target is a Large or smaller creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained. The oozasis can have up to two creatures grappled at a time.
 - **Compelling Vapors (Recharge 5–6):** The oozasis emits mind-altering vapors. Each creature within 20 feet of the oozasis must make a DC 16 Constitution saving throw. On a failure, a creature takes 45 (10d8) psychic damage and suffers either tranquility or turmoil for minute. On a success, a creature takes half the damage and doesn’t suffer tranquility or turmoil. A creature suffering tranquility is charmed and can’t attack. A creature suffering turmoil is unable to distinguish friend from foe and must move to and attack the nearest creature other than the oozasis on each of its turns, stalking off in a random direction if no creature is in range. A creature suffering tranquility or turmoil can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

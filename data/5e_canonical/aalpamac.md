@@ -1,6 +1,8 @@
 <MonsterName/>Aalpamac</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The aalpamac is a formidable huge monstrosity that operates independently and poses a significant challenge to adventurers. It possesses strong physical capabilities, reflected in its high strength, making it an effective melee combatant, while its formidable hit points allow it to absorb a good amount of damage during encounters. Its unique abilities, particularly the Distance Distortion Aura, can severely hinder opponents' effectiveness in combat, making it a strategic threat. However, it has notably low Dexterity and Intelligence scores, which limits its mobility and cognitive abilities in certain situations. The aalpamac's challenge rating of 7 indicates that it can provide a rigorous challenge for parties of a suitable level.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In combat, the aalpamac uses its Multiattack action to perform three attacks: on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aalpamac
 
 *Huge* *Monstrosity* *unaligned*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.
 
 
+</statblock>
 
 

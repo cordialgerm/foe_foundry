@@ -1,6 +1,8 @@
 <MonsterName/>Cryoceros</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Cryoceros is a formidable predator in the realm of Dungeons & Dragons, classified as a Large Monstrosity. This creature serves as an aggressive opponent in combat, utilizing its powerful physical attacks and unique abilities to dominate encounters. With an Armor Class of 15, it presents a good defensive challenge, while its substantial hit points totaling 133 allow it to withstand significant amounts of damage before being taken down. The Challenge Rating of 6 indicates it poses a noteworthy threat to a party of adventurers, especially given its impressive Strength of 19, which contributes to its high melee damage output. However, it lacks versatility coming from its Intelligence, Charisma, and Dexterity scores, which are relatively low. Its damage resistances to bludgeoning and cold provide additional resilience, making it a rugged opponent in snowy terrains.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the Cryoceros can unleash "Shards of Ice," a powerful area effect 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cryoceros
 
 *Large* *Monstrosity* *unaligned*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Shards of Ice (Recharge 4-6):** The cryoceros exhales razor-sharp ice in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 10 (3d6) cold damage and 10 (3d6) piercing damage on a failed save, or half as much on a successful one.
 
 
+</statblock>
 
 

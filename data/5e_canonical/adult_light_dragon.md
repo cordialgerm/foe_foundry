@@ -1,6 +1,8 @@
 <MonsterName/>Adult Light Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>16</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>212</HP>
 <summary>The Adult Light Dragon is a formidable and majestic creature that embodies the essence of light and goodness in the Dungeons & Dragons universe. As a Huge-sized dragon, it represents a significant challenge with a Challenge Rating of 16, compelling players to strategize carefully. Its extraordinary abilities, including powerful breath weapons, immense hit points, and resistance to specific types of damage, make it a stellar opponent in combat. This dragon excels in both physical attacks and spell-like effects, allowing it to engage effectively with multiple foes at once. However, its reliance on high damage output may pose weaknesses against magical attacks that bypass its resistances. Notably, its capacity to function within the Ethereal Plane and access to legendary actions further enhance its versatility in battle.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Overall, the Adult Light Dragon stands out as a powerful ally or adversary for a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Light Dragon
 
 *Huge* *Dragon* *neutral good*
@@ -73,5 +76,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+</statblock>
 
 

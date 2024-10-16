@@ -1,6 +1,8 @@
 <MonsterName/>Brachyura Shambler</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>71</HP>
 <summary>The Brachyura Shambler is a Medium-sized monstrosity characterized by its neutral evil alignment. It serves as a formidable opponent in combat due to its strong physical attacks and debilitating abilities. With an Armor Class of 14, it has good defensive capabilities primarily derived from its natural armor, while its hit points of 71 indicate that it can absorb a decent amount of damage before being taken down. Its Challenge Rating of 4 means it is a suitable encounter for a group of adventurers looking to test their mettle. Notably, the Brachyura Shambler possesses potent grappling abilities and can inflict the sewer plague disease, making it a dangerous adversary in extended encounters.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the Brachyura Shambler can use "Diseased Spit," a ranged weapon at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brachyura Shambler
 
 *Medium* *Monstrosity* *neutral evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Diseased Spit:** Ranged Weapon Attack: +3 to hit, range 20/60 ft., one creature. Hit: 7 (2d4 + 2) acid damage. The creature must succeed on a DC 11 Constitution saving throw or contract sewer plague. It takes 1d4 days for sewer plague’s symptoms to manifest in an infected creature. Symptoms include fatigue and cramps. The infected creature suffers one level of exhaustion, and it regains only half the normal number of hp from spending Hit Dice and no hp from finishing a long rest. At the end of each long rest, an infected creature must make a DC 11 Constitution saving throw. On a failed save, the character gains one level of exhaustion. On a successful save, the character’s exhaustion level decreases by 1 level. If a successful saving throw reduces the infected creature’s level of exhaustion below 1, the creature recovers from the disease.
 
 
+</statblock>
 
 

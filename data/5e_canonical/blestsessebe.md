@@ -1,6 +1,8 @@
 <MonsterName/>Blestsessebe</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>144</HP>
 <summary>The Blestsessebe is a large celestial creature known for its neutrality and goodness. It serves as a guardian or protector in various narratives, utilizing its strengths in agility and magic resistance to fend off threats. With a robust hit point pool and solid armor class, it can endure combat effectively. The Blestsessebe's powers shine in its mobility and ability to disrupt enemy actions, along with its advantage against magical effects. However, its average intelligence may limit its tactical versatility in complex encounters.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Blestsessebe epitomizes a powerful celestial guardian, capable of b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blestsessebe
 
 *Large* *Celestial* *neutral good*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Free Runner:** Can take the Dash action.
 
 
+</statblock>
 
 

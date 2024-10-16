@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Blue Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>481</HP>
 <summary>The Ancient Blue Dragon is a magnificent and powerful creature, with scales that shimmer like sapphires and eyes that gleam with intelligence and pride. It rules the desert with a fearsome presence, and its lairs are often found deep beneath the sands in vast caverns filled with treasure. Known for their lightning breath, Ancient Blue Dragons unleash devastating bolts of electricity that can obliterate anything in their path. They are highly territorial and incredibly vain, seeking to dominate vast stretches of land and bending creatures to their will. Their cunning and patience make them masterful tacticians in battle.</summary>
 
 <summary>The Ancient Blue Dragon is a formidable and majestic creature, recognized as one of the most powerful dragons in Dungeons & Dragons 5th Edition. This gargantuan dragon typically serves as a high-level antagonist or a challenging boss in a campaign. Its impressive statistics, including a very high Armor Class of 22 and a massive Hit Point total of 407, make it tough to hit and capable of sustaining heavy damage. It has exceptional Strength and Constitution scores of 28 and 26, respectively, which allow it to deal significant melee damage and serve as a tank in battle. Additionally, it possesses formidable spellcasting abilities and a variety of powerful abilities that can manipulate the battlefield, control enemies, and devastate groups with area attacks. However, its relatively low Dexterity score of 10 might make it vulnerable to ranged attacks, especially from agile opponents.</summary>
@@ -70,6 +72,7 @@ Finally, upon the dragon's demise, it generates regional effects that can manife
 
 Source: 5e_srd
 
+<statblock>
 # Ancient Blue Dragon (Chromatic)
 
 *Gargantuan dragon, lawful evil*
@@ -120,7 +123,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6+9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6+9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -128,6 +132,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Blue Dragon
 
 *Gargantuan* *Dragon*
@@ -177,6 +182,7 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 21 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 24 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Quake (Costs 2 Actions):** The dragon uses its Quake action.
+</statblock>
 
 
 
@@ -185,6 +191,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Blue Dragon
 
 *Gargantuan dragon*
@@ -230,5 +237,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days.
+</statblock>
 
 

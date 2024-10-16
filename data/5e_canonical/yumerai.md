@@ -1,6 +1,8 @@
 <MonsterName/>Yumerai</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>65</HP>
 <summary>The Yumerai is a Medium-sized fey creature known for its connection to dreams and psychic abilities. As a neutral entity, it operates primarily as a manipulator in combat, using its charm and innate magic to alter the landscape of battle. With a decent Armor Class of 13 and 65 hit points, it possesses a good amount of durability for its Challenge Rating of 2, which offers a moderate challenge for adventurers. The Yumerai excels in stealth and psychic damage but is somewhat limited in physical combat options. Its most notable powers revolve around dream manipulation, allowing it to traverse between the dreams of sleeping creatures, control their actions, and inflict psychic harm.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Yumerai makes two attacks using its "Multiattack," employing a "P
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yumerai
 
 *Medium* *Fey* *neutral*
@@ -52,5 +55,6 @@ At will: dancing lights, message, minor illusion
 - **Somnambulism:** The yumerai targets one sleeping creature it can see within 30 feet of it. The yumerai can issue simple commands to the creature, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature takes damage, receives a suicidal command, is told to move into damaging terrain, such as lava or a pit, or is grappled while carrying out the order, it can make a DC 13 Wisdom saving throw, awakening and ending the yumerai’s control on a success. The yumerai can control only one sleeping creature at a time. If it takes control of another, the effect on the previous target ends.
 
 
+</statblock>
 
 

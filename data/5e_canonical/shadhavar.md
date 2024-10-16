@@ -1,6 +1,8 @@
 <MonsterName/>Shadhavar</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural)</AC>
+<HP/>82</HP>
 <summary>The Shadhavar is a large neutral monstrosity that embodies both grace and danger, making it a formidable opponent in combat. With a challenge rating of 2, it offers a reasonable threat level for adventurers, possessing a robust combination of magical abilities and melee attacks. Notably, it has an armor class of 14, hit points totaling 82, and an impressive mobility with a walking speed of 50 feet, allowing it to maneuver effectively during battle. The Shadhavar excels in charm and subterfuge, utilizing its stealth skill, but its intelligence is notably weak, making it less effective in complex strategic planning. The creature's magical attributes and unique abilities make it a significant challenge, especially for unprepared adventurers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ For bonus actions, the Shadhavar can utilize its Plaintive Melody ability three 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadhavar
 
 *Large* *Monstrosity* *Neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Plaintive Melody (3/Day):** The shadhavar plays a captivating melody through its hollow horn. Each creature within 60 feet of the shadhavar that can hear it must succeed on a DC 13 Wisdom saving throw or be charmed until the start of the shadhavar’s next turn. While charmed, a creature is incapacitated, its speed is reduced to 0, and the shadhavar has advantage on attack rolls against it.
+</statblock>
 
 

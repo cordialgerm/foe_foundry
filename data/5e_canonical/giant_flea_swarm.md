@@ -1,6 +1,8 @@
 <MonsterName/>Giant Flea Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>58</HP>
 <summary>The Giant Flea Swarm is a medium-sized beast that poses a notable threat in combat due to its sheer numbers and unique abilities. With an armor class of 14, it is moderately difficult to hit, while its 58 hit points give it reasonable durability for a creature of its challenge rating of 2. This swarm operates effectively by overwhelming its foes with multiple attacks, leveraging its ability to inflict continuous damage through its ravaging bites and blood-sensing capabilities. While the Giant Flea Swarm's intelligence is very low, rendering it unskilled in non-combat situations, it compensates with exceptional mobility and resistance to various damage types, making it difficult to control or restrain. However, despite its strengths, the swarm cannot regain hit points, which means it must be cautious in prolonged engagements.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Giant Flea Swarm can use its Bite attack as a melee wea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Flea Swarm
 
 *Medium* *Beast* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, 0 ft., one creature, in the swarm’s space. 14 (4d6) piercing damage or 7 (2d6) piercing damage if the swarm has half its hp or fewer.
 
 
+</statblock>
 
 

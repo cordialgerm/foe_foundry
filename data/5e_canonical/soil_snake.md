@@ -1,6 +1,8 @@
 <MonsterName/>Soil Snake</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>115</HP>
 <summary>The Soil Snake is a huge constructed creature that serves as a powerful entity in combat, primarily designed for ambushing foes and controlling the battlefield. With a high armor class of 14 due to its natural armor and a substantial hit point pool of 115, it is a durable opponent. The Soil Snake excels with its high Strength score of 21, allowing it to deliver potent melee attacks, while its Dexterity is average, resulting in slower movement responses. Its ability to burrow adds an element of tactical advantage, enabling it to engage targets unexpectedly. The creature is immune to several conditions and types of damage, which underscores its defensive strengths, but it lacks intelligence and charisma, making it less effective in social interactions or tasks requiring thought. </summary>
 
 <detail>
@@ -32,6 +34,7 @@ Overall, the Soil Snake is a strong combatant with effective area control tactic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Soil Snake
 
 *Huge* *Construct* *unaligned*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Soil Blast (Recharge 5–6):** Expels soil in a 30' cone. Each creature in that area: 18 (4d8) bludgeoning damage and is knocked prone (DC 14 Dex half damage not prone).
 
 
+</statblock>
 
 

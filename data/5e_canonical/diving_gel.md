@@ -1,6 +1,8 @@
 <MonsterName/>Diving Gel</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>17</HP>
 <summary>The Diving Gel is a tiny ooze that is unaligned, making it a rather peculiar creature in the world of Dungeons and Dragons. With an Armor Class of 13, it possesses a decent level of protection, and its Hit Points are 17, giving it moderate durability for its Challenge Rating of 1/4, which translates to 50 experience points when defeated. Notably, the Diving Gel is adept at swimming, with a speed of 40 feet in the water, but it moves slowly on land, capable of only 5 feet of movement. Though limited in combat skills, it has good physical agility and can effectively maneuver through small spaces, leveraging its unique abilities both in and out of water. Its primary strengths lie in its high Dexterity (16, +3), making its attacks quite effective, and its resistance to acid, fire, and poison damage. However, it is very weak in Strength (3, -4), making it less effective in physical confrontations against stronger foes. Its lack of intelligence and charisma means it lacks the ability to perform complex actions or interact socially. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Diving Gel can perform two notable attacks. The first i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Diving Gel
 
 *Tiny* *Ooze* *unaligned*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Attach:** Melee Weapon Attack: +5 to hit, 5 ft., one creature,. The gel attaches itself to the head face or gills of a creature. If the creature is Large or smaller and can breathe air it continues to breathe normally as the air-filled gel provides breathable air for the creature. If the creature can’t breathe air it must hold its breath or begin to suffocate. If the gel is attached to a creature it has advantage on attack rolls vs. that creature. A creature including the target can take its action to detach the diving gel by succeeding on a DC 12 Str check.
 
 
+</statblock>
 
 

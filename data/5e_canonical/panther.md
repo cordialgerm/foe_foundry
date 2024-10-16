@@ -1,6 +1,8 @@
 <MonsterName/>Panther</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>13</HP>
 <summary>A Panther is a sleek, powerful big cat known for its stealth, agility, and lethal hunting prowess. Typically found in jungles, forests, or savannas, Panthers use their black or dark-colored fur as natural camouflage to stalk their prey in the shadows. With sharp claws, strong jaws, and the ability to move silently, Panthers are formidable predators. They prefer to ambush their targets, leaping from cover to deliver a killing blow. In combat, they rely on their speed and stealth to strike before their enemies have a chance to react.</summary>
 
 <summary>The Panther is a medium-sized beast known for its agility and stealth, making it a formidable presence in the wild or as a companion in the heat of battle. With an armor class of 12 and 13 hit points, it exhibits average durability but compensates with a remarkable speed of 50 feet walking and 40 feet climbing, enabling it to maneuver easily through different terrains. The panther has a challenge rating of 1/4, indicating it poses a minor threat to adventurers, especially those who are unprepared for ambush tactics. Notably, it excels in perception and stealth, boasting keen senses that enhance its hunting capabilities.</summary>
@@ -31,6 +33,7 @@ During combat, the panther can also use its bonus action to engage in stealth wi
 
 Source: 5e_srd
 
+<statblock>
 ### Panther
 
 *Medium beast, unaligned*
@@ -61,7 +64,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Claw***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) slashing damage.
+***Claw***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) slashing damage.</statblock>
+
 
 
 
@@ -69,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Panther
 
 *Medium* *Beast*
@@ -101,6 +106,7 @@ Source: 5e_artisinal_monsters
 - **Opportune Bite:** The panther makes a bite attack against a prone creature.
 
 
+</statblock>
 
 
 
@@ -109,6 +115,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Panther
 
 *Medium beast*
@@ -142,5 +149,6 @@ Source: 5e_artisinal_monsters
 
 - **Stealthy Hunter.** The panther takes the Hide action.
 
+</statblock>
 
 

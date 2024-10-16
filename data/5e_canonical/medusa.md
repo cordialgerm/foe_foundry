@@ -1,6 +1,8 @@
 <MonsterName/>Medusa</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>127</HP>
 <summary>A Medusa is a cursed creature with the body of a humanoid and a head full of writhing, venomous snakes in place of hair. Medusas are infamous for their ability to turn living creatures to stone with a single gaze. They are often found in ancient ruins or hidden lairs, where they surround themselves with petrified victims and treasures. Medusas are cunning and manipulative, using both their gaze and their serpent hair in combat. They may also wield weapons or magic, but their most feared ability is their petrifying gaze, which can instantly end a fight if their victim meets their eyes.</summary>
 
 <summary>The Medusa is a formidable Medium Monstrosity known for its ability to petrify foes with its deadly gaze. With a challenge rating of 7, it poses a significant threat to adventurers, thanks to its combination of dexterous movements, poisonous attacks, and the terrifying power of its petrifying gaze. Its moderate armor class of 14 and a robust hit point pool of 120 allows it to withstand considerable punishment in combat. However, it is somewhat reliant on its abilities to control the battlefield and can be vulnerable if caught off guard or overwhelmed by multiple attackers.</summary>
@@ -35,6 +37,7 @@ Overall, the Medusa presents a complex combination of offensive capabilities and
 
 Source: 5e_srd
 
+<statblock>
 ## Medusa
 
 *Medium monstrosity, lawful evil*
@@ -71,7 +74,8 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 
 ***Shortsword***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Longbow***. *Ranged Weapon Attack:* +5 to hit, range 150/600 ft., one target. *Hit:* 6 (1d8+2) piercing damage plus 7 (2d6) poison damage.
+***Longbow***. *Ranged Weapon Attack:* +5 to hit, range 150/600 ft., one target. *Hit:* 6 (1d8+2) piercing damage plus 7 (2d6) poison damage.</statblock>
+
 
 
 
@@ -79,6 +83,7 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Medusa
 
 *Medium* *Monstrosity*
@@ -109,6 +114,7 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 7 (2d6) poison damage.
 
 
+</statblock>
 
 
 
@@ -117,6 +123,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Medusa
 
 *Medium monstrosity*
@@ -153,5 +160,6 @@ Source: 5e_artisinal_monsters
 
 - **Interruptive Hiss.** When a creature the medusa can see targets it with an attack, the medusa’s snakes can suddenly rise and hiss at the attacker. The attacker must succeed on a DC 14 WIS save or fail the attack roll.
 
+</statblock>
 
 

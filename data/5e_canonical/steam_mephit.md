@@ -1,6 +1,8 @@
 <MonsterName/>Steam Mephit</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>21</HP>
 <summary>A Steam Mephit is a small, elemental creature composed of steam and hot vapor. Mischievous and sly, Steam Mephits are often found near geothermal vents, hot springs, or volcanic areas. They can exhale scalding steam to burn their enemies and create thick clouds of mist to obscure themselves from view. While physically weak, their ability to fly and control steam makes them tricky opponents. Steam Mephits are fond of causing chaos and confusion, often working alongside other elemental creatures or serving more powerful masters who dwell in hot or volcanic regions.</summary>
 
 <summary>The Steam Mephit is a small elemental creature that embodies the essence of steam and fire, making it a unique foe in a Dungeons & Dragons game. With a challenge rating of 1/4, it is considered a low-level opponent and offers an encounter that is manageable for beginner groups. Its primary strengths lie in its ability to deal fire damage and its resilience to certain types of damage, as it is immune to fire and poison. However, its low hit points and weak physical attributes make it susceptible to being easily overpowered in combat. Notably, the Steam Mephit can explode in a burst of steam upon its defeat, dealing damage to nearby foes and providing a final burst of challenge before it is vanquished.</summary>
@@ -41,6 +43,7 @@ Overall, the Steam Mephit is a versatile creature that can serve a variety of ro
 
 Source: 5e_srd
 
+<statblock>
 ### Steam Mephit
 
 *Small elemental, neutral evil*
@@ -73,7 +76,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +2 to hit, reach 5 ft., one creature. *Hit:* 2 (1d4) slashing damage plus 2 (1d4) fire damage.
 
-***Steam Breath (Recharge 6)***. The mephit exhales a 15- foot cone of scalding steam. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 4 (1d8) fire damage on a failed save, or half as much damage on a successful one.
+***Steam Breath (Recharge 6)***. The mephit exhales a 15- foot cone of scalding steam. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 4 (1d8) fire damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -81,6 +85,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Steam Mephit
 
 *Small* *Elemental*
@@ -113,6 +118,7 @@ Source: 5e_artisinal_monsters
 - **Steam Breath (1/Day):** The mephit exhales a 15-foot cone of steam. Each creature in the area makes a DC 10 Constitution saving throw  taking 4 (1d8) fire damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -121,6 +127,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Steam Mephit
 
 *Small elemental*
@@ -155,5 +162,6 @@ Source: 5e_artisinal_monsters
 
 - **Hazy Form (1/Day).** The mephit casts the blur spell, requiring no material components and using WIS as the spellcasting ability.
 
+</statblock>
 
 

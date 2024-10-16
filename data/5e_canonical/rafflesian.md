@@ -1,6 +1,8 @@
 <MonsterName/>Rafflesian</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Rafflesian is a small, plant-based creature that acts largely as a symbiotic partner to humanoids, enhancing their capabilities while drawing upon their life force. This unaligned entity possesses a high armor class of 17, making it quite resilient in combat, and has robust hit points totaling 136, which allows it to withstand significant damage. The Rafflesian has remarkable physical attributes, particularly in Constitution with a score of 20, providing it with exceptional durability. Its primary role in an adventurer's party centers on its ability to bond with humanoids, providing defensive bonuses and the ability to act as a life-sustaining link. However, the creature has relatively low Dexterity, which may hinder its evasion skills during combat. Its challenge rating of 7 indicates a notable threat level, making it a creature to respect in battle.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a reaction, the Rafflesian possesses the Last Resort ability, enabling it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rafflesian
 
 *Small* *Plant* *unaligned*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Last Resort:** When host dies rafflesian can reanimate it up to 10 days if body is still intact. During this time host protected from decay and can’t become undead. Rafflesian can use bonus action to cause host to move as in life but host can’t take other actions. If host could speak in life rafflesian can speak with host’s voice. Host reanimated this way can be restored to life by any spell capable of that.
 
 
+</statblock>
 
 

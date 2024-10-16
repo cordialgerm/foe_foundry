@@ -1,6 +1,8 @@
 <MonsterName/>Goblin Musketeer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>10</HP>
 <summary>The Goblin Musketeer is a small humanoid creature known for its agility and reliance on ranged combat. With a challenge rating of 1/2, it is considered a low-level adversary but can be surprisingly effective in groups, particularly when coordinated with another goblin musketeer. While its armor class of 13 offers a decent level of protection, its low hit points, totaling 10, make it relatively fragile in direct confrontation. The goblin musketeer's strengths lie in its dexterous movements and its ability to strike from a distance with a musket, delivering substantial damage if it can avoid close combat. However, its low strength and constitution mean that it struggles in melee and is vulnerable to direct attacks.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For bonus actions, the Goblin Musketeer can use Nimble Escape, which allows it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Musketeer
 
 *Small* *Humanoid*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 

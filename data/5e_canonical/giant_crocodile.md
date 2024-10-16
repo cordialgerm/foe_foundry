@@ -1,6 +1,8 @@
 <MonsterName/>Giant Crocodile</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Giant Crocodile is a massive, predatory reptile that lurks in rivers, swamps, and lakes. It is a stealthy ambush predator, lying motionless in the water until an unsuspecting creature comes close, then striking with terrifying speed. Its powerful jaws can crush bone, and once it has its prey in its grip, the Giant Crocodile performs a deadly death roll, spinning and tearing its victim apart. These creatures are highly territorial and aggressive, defending their hunting grounds from any intruders. Despite their size, they can move with surprising speed both in water and on land.</summary>
 
 <summary>The Giant Crocodile is a huge beast that excels in aquatic environments, featuring a formidable presence both in and out of the water. With a challenge rating of 5, it poses a significant threat to adventurers who venture too close. It boasts impressive combat capabilities, backed by its high strength, allowing it to deliver devastating bite and tail attacks. The crocodile's natural armor provides it with a good level of protection, while its ability to swim at high speed enhances its versatility as a predator. However, its low dexterity and intelligence mean it is not particularly nimble or cunning outside of combat scenarios. </summary>
@@ -36,6 +38,7 @@ Overall, the Giant Crocodile is an excellent example of a creature that excels i
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Crocodile
 
 *Huge beast, unaligned*
@@ -64,7 +67,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 21 (3d10+5) piercing damage, and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.
 
-***Tail***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target not grappled by the crocodile. *Hit:* 14 (2d8+5) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone.
+***Tail***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target not grappled by the crocodile. *Hit:* 14 (2d8+5) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone.</statblock>
+
 
 
 
@@ -72,6 +76,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crocodile, Giant
 
 *Huge beast*
@@ -105,6 +110,7 @@ Source: 5e_artisinal_monsters
 
 - **Death Roll.** One creature grappled by the crocodile must make a DC 16 STR save, taking 7 (2d6) slashing damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 
 
@@ -113,6 +119,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Crocodile
 
 *Huge* *Beast*
@@ -142,5 +149,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +8 to hit, reach 10 ft., one creature not grappled by the crocodile. Hit: 14 (2d8+5) bludgeoning damage and the target makes a DC 18 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Stained-Glass Moth</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>45</HP>
 <summary>The Stained-Glass Moth is a small, unaligned construct known for its unique ability to blend seamlessly with its surroundings, appearing as a mere stained-glass window when motionless. It has moderate armor class and a significant pool of hit points, making it resilient in battle, though its overall challenge rating suggests it should be encountered by lower-level adventurers or as a secondary opponent in a larger encounter. The creature possesses good dexterity and exceptional constitution, allowing it to withstand damage effectively. However, it is vulnerable to bludgeoning and thunder damage, which means it can be significantly affected by certain attack types. The Stained-Glass Moth's strengths include its mobility, magic resistance, and the ability to mark targets with blessed power, providing tactical advantages in combat.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ Overall, the Stained-Glass Moth serves as a compelling addition to any D&D adven
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stained-Glass Moth
 
 *Small* *Construct* *unaligned*
@@ -73,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Blessed Wings:** Marks one creature it can see within 30' of it with holy power. If the target is a hostile creature the next attack roll made vs. the target before the start of the moth’s next turn has advantage. If the target is a friendly creature it gains a +2 bonus to AC until the start of the moth’s next turn.
 
 
+</statblock>
 
 

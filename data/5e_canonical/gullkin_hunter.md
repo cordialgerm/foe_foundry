@@ -1,6 +1,8 @@
 <MonsterName/>Gullkin Hunter</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Gullkin Hunter is a Medium humanoid creature notable for its versatility in both melee and ranged combat, as well as its ability to maneuver in aquatic environments. Capable of flying and swimming, the Gullkin Hunter can adapt to various terrains, making it a formidable opponent. With an Armor Class of 14 and a total of 45 hit points, it is reasonably durable for its Challenge Rating of 3, allowing it to withstand a fair amount of damage. Its strengths lie in its high Dexterity (17) which offers a good attack bonus and makes it agile in combat. However, its Strength and Charisma scores are average, limiting its effectiveness in situations that rely on physical prowess or social interactions. Overall, the Gullkin Hunter presents a good mix of offensive capabilities and survivability.</summary>
 
 <detail>
@@ -38,6 +40,7 @@ These abilities and actions make the Gullkin Hunter a well-rounded opponent that
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gullkin Hunter
 
 *Medium* *Humanoid* *any alignment*
@@ -73,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Mark Quarry (Recharges: Short/Long Rest):** Marks a creature as its quarry. Whenever hunter hits marked creature with weapon attack deals extra 1d6 damage to target.
 
 
+</statblock>
 
 

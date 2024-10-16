@@ -1,6 +1,8 @@
 <MonsterName/>Dawnfly</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>19</CR>
+<AC/>21 (natural armor)</AC>
+<HP/>261</HP>
 <summary>The Dawnfly is a gargantuan beast that embodies the fierce and chaotic essence of both the skies and the ground. Unaligned and possessing no inherent loyalty, it acts purely on instinct and desire, making it a formidable force on the battlefield. Its strengths lie in its immense size, powerful physical attacks, and a unique combination of mobility and defensive traits. Notably, the Dawnfly is immune to certain types of damage, which makes it difficult to weaken through conventional means. However, its low Intelligence indicates that it may not employ complex strategies, and its challenge rating of 19 signals that it is a strong opponent that could overwhelm less experienced adventurers.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Dawnfly represents a dangerous and complex adversary with immense p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dawnfly
 
 *Gargantuan* *Beast* *unaligned*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Dust Burst:** Its wings shed blinding dust within 10 ft. of it. Each creature in the area: DC 19 Con save or be blinded until end of its next turn.
 - **Fiery Downburst (2):** 15 ft. cone hot air downdraft. All in area: 9 (2d8) bludgeoning damage and 7 (2d6) fire pushed up to 15 ft. from dawnfly in direction following cone and knocked prone (DC 19 Str half damage not pushed/prone). 
 - **Snatch and Drop (3):** Flies up to half its fly speed making one Tail attack at creature within reach on the way. Hits: creature grappled carried and dropped at end of move; normal fall damage.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Vulture</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>22</HP>
 <summary>The Giant Vulture is a massive bird of prey with a wingspan that can stretch over 10 feet. Its bald head and neck, hooked beak, and sharp talons make it a fearsome scavenger, often feeding on the remains of large creatures. Giant Vultures are intelligent and aggressive, sometimes hunting in groups to overpower weakened or wounded prey. They are often found in deserts or savannahs, circling high above in search of carrion. Though primarily scavengers, they will attack if provoked or if they sense easy prey.</summary>
 
 <summary>The Giant Vulture is a large beast characterized by its impressive flying ability and keen senses, making it an opportunistic predator in the wild. With a challenge rating of 1, it is an adequate combatant for lower-level adventurers seeking to test their mettle. The vulture's ability to attack with both its beak and talons allows it to deal a decent amount of damage, while its special abilities, particularly keen sight and smell, provide it with a significant advantage in perception-related tasks. However, its moderate armor class and hit points reveal its vulnerability, making it susceptible to focused attacks by agile opponents.</summary>
@@ -33,6 +35,7 @@ The vulture also possesses a Reaction called Defensive Bile. When hit by a melee
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Vulture
 
 *Large beast, neutral evil*
@@ -67,7 +70,8 @@ Source: 5e_srd
 
 ***Talons***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 9 (2d6+2) slashing damage.
 
-A **giant vulture** has advanced intelligence and a malevolent bent. Unlike its smaller kin, it will attack a wounded creature to hasten its end. Giant vultures have been known to haunt a thirsty, starving creature for days to enjoy its suffering.
+A **giant vulture** has advanced intelligence and a malevolent bent. Unlike its smaller kin, it will attack a wounded creature to hasten its end. Giant vultures have been known to haunt a thirsty, starving creature for days to enjoy its suffering.</statblock>
+
 
 
 
@@ -75,6 +79,7 @@ A **giant vulture** has advanced intelligence and a malevolent bent. Unlike its 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Vulture
 
 *Large* *Beast*
@@ -108,6 +113,7 @@ Source: 5e_artisinal_monsters
 - **Retreat:** When the vulture would be hit by a melee attack, the vulture can move 5 feet away from the attacker. If this moves the vulture out of the attackers reach, the attacker has disadvantage on its attack.
 
 
+</statblock>
 
 
 
@@ -116,6 +122,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vulture, Giant
 
 *Large beast*
@@ -151,5 +158,6 @@ Source: 5e_artisinal_monsters
 
 - **Defensive Bile.** When a creature the vulture can see hits it with a melee attack while within 5 feet of it, the vulture can spit partially digested carrion at the creature. The attacker must succeed on a DC 13 CON save or take 5 (2d4) acid damage and be incapacitated until the end of its next turn.
 
+</statblock>
 
 

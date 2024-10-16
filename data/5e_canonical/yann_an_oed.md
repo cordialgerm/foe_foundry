@@ -1,6 +1,8 @@
 <MonsterName/>Yann-An-Oed</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>2</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>47</HP>
 <summary>The Yann-An-Oed is a huge aberration known for its dual adaptability in both water and land environments. With a neutral alignment, it serves a role as a powerful aquatic predator capable of grappling and swallowing foes, while also presenting a curious challenge for adventurers through its unique abilities. The creature holds a challenge rating of 2, indicating it poses a moderate threat to parties. Its physical attributes show that it has notably good strength and constitution, allowing it to endure damage, while its intelligence and charisma are significantly below average making it less effective in social interactions or spellcasting. The Yann-An-Oed excels in its stealth capabilities, especially underwater, making it an ambush predator. Overall, it presents both an intriguing combat challenge and a unique encounter with its hooting call mechanic.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ In summary, the Yann-An-Oed is a strong aquatic opponent adept at stealth and gr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yann-An-Oed
 
 *Huge* *Aberration* *neutral*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Hoot (Recharges after a Short or Long Rest):** The yann-an-oed emits an owl-like hoot from a blowhole near the top of its head. Each creature within 120 feet that is able to hear the sound must succeed on a DC 12 Wisdom saving throw or return the hooting sound, if it can make noise. The yann-an-oed is able to unerringly track a creature that responds to its call for 1 hour, even if the creature is hidden by magic or on another plane of existence.
 
 
+</statblock>
 
 

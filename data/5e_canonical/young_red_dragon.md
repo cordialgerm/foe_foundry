@@ -1,6 +1,8 @@
 <MonsterName/>Young Red Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>178</HP>
 <summary>A Young Red Dragon is a fiery and ambitious predator, already displaying the arrogance and pride that will define its adult years. Its deep crimson scales shimmer with heat, and its breath weapon can incinerate anything in its path with a blast of intense fire. Young Red Dragons are typically found in volcanic regions or mountains, where they hoard treasure and assert their dominance over weaker creatures. Even at this stage, they are powerful, aggressive, and determined to prove their superiority. They are quick to anger and slow to forgive, and their greed drives them to constantly seek more wealth and power.</summary>
 
 <summary>The Young Red Dragon is a formidable creature known for its fiery breath and intimidating presence. As a Large Dragon with a challenge rating of 11, it serves as a potent adversary in battle, capable of dealing severe damage while remaining quite resilient due to its high hit points and defensive abilities. With an Armor Class of 18, it is relatively difficult to hit in combat. Its most notable strengths lie in its powerful multiattack capability and devastating fire breath, allowing it to control the battlefield effectively. However, its weaknesses may arise from being a creature susceptible to targeted tactics as it primarily relies on melee attacks and spells to deal damage.</summary>
@@ -35,6 +37,7 @@ Overall, the Young Red Dragon is a highly dangerous opponent, possessing strong 
 
 Source: 5e_srd
 
+<statblock>
 # Young Red Dragon (Chromatic)
 
 Large dragon, chaotic evil
@@ -69,7 +72,8 @@ Large dragon, chaotic evil
 
 ***Claw***. *Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 13 (2d6+6) slashing damage.
 
-***Fire Breath (Recharge 5-6)***. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.
+***Fire Breath (Recharge 5-6)***. The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -77,6 +81,7 @@ Large dragon, chaotic evil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Red Dragon
 
 *Large* *Dragon*
@@ -111,6 +116,7 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 5-6):** The dragon exhales a blast of fire that fills a 30-foot cone. Each creature in that area makes a DC 17 Dexterity saving throw  taking 52 (15d6) fire damage on a failed save or half damage on a success. A creature that fails the saving throw also takes 5 (1d10) ongoing fire damage. While affected by this ongoing damage  it is frightened of the dragon. A creature can use an action to end the ongoing damage.
 
 
+</statblock>
 
 
 
@@ -119,6 +125,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Red Dragon
 
 *Large dragon*
@@ -149,5 +156,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.
 - **Fire Breath (Recharge 5–6).** The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 DEX save, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

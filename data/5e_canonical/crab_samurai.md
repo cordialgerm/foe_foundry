@@ -1,6 +1,8 @@
 <MonsterName/>Crab, Samurai</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Crab Samurai is a formidable and unique creature within the D&D 5e universe, classified as a Medium Beast with a lawful neutral alignment. This creature is robust, boasting a solid Armor Class of 16 due to its natural armor and a significant pool of Hit Points totaling 105, which provides it with exceptional durability in combat situations. The challenge rating of 6 indicates that it poses a medium-level threat to adventurers, granting a reward of 2,300 experience points upon defeat. The Crab Samurai is particularly notable for its diverse capabilities including effective melee attacks and the ability to grapple opponents, making it a strategic combatant in its environment. While it possesses limited intelligence and cannot speak, its combat abilities and special traits make it quite effective in battle.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Crab Samurai can utilize the bonus action "Fighting Stance," which allows it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crab, Samurai
 
 *Medium* *Beast* *lawful neutral*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Fighting Stance:** Adopts a fighting stance choosing from the options below. The stance lasts until the crab ends it (no action required) or uses this bonus action again.Banded Claw. Adopts a wide grappler’s stance. While the samurai crab is in this stance each creature that starts its turn grappled by the crab takes 3 (1d6) bludgeoning damage.Hard Shell. Defensive stance increasing its AC by 2.Soft Shell. Adopts an offensive stance gaining advantage on the first Crustaceous Sword attack it makes each turn.
 
 
+</statblock>
 
 

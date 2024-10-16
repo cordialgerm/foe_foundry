@@ -1,6 +1,8 @@
 <MonsterName/>Dinosaur, Guardian Archaeopteryx</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>36</HP>
 <summary>The Guardian Archaeopteryx is a small, unaligned beast that plays a unique role in combat as a nimble and elusive creature. With a well-rounded set of abilities, it excels in both melee and ranged attacks while offering some magical support to its allies. The Archaeopteryx has an Armor Class of 15, indicating good defense due to its natural armor. It possesses 36 hit points, which provides adequate durability in battle, and its movement is versatile with a walking speed of 15 feet and a flying speed of 50 feet, allowing it to evade ground attacks effectively. Its Challenge Rating of 2 suggests that it presents a moderate threat to adventurers, granting 450 experience points upon defeat. Despite its strengths, the creature has low strength and intelligence, leading to weaknesses in physical attacks and mental challenges.</summary>
 
 <detail>
@@ -34,6 +36,7 @@ Additionally, as a bonus action, the Guardian Archaeopteryx can use its Imbue Po
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dinosaur, Guardian Archaeopteryx
 
 *Small* *Beast* *unaligned*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Imbue Poison:** The guardian archaeopteryx chooses a friendly creature it can see within 30' of it and imbues that creature’s attacks with magical poison. The next time the friendly creature hits with an attack before the start of archaeopteryx’s next turn target of attack takes an extra 2 (1d4) poison and must make DC 11 Con save or be poisoned until end of its next turn.
 
 
+</statblock>
 
 

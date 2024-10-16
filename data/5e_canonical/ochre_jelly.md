@@ -1,6 +1,8 @@
 <MonsterName/>Ochre Jelly (Ooze)</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>2</CR>
+<AC/>8</AC>
+<HP/>45</HP>
 <summary>An Ochre Jelly is a large, amorphous ooze that can dissolve flesh, wood, and metal with ease. It is a slow-moving creature that lurks in dark, damp places such as caves or dungeons, waiting for unsuspecting creatures to stumble into its path. Ochre Jellies are nearly mindless, driven only by hunger, and they attack by engulfing their prey and secreting a corrosive acid. When struck, an Ochre Jelly can split into smaller versions of itself, making it difficult to kill. Despite its slow speed, its persistence and ability to dissolve most materials make it a dangerous threat.</summary>
 
 <summary>The Ochre Jelly is a Large ooze creature known for its amorphous form and unique movement abilities. It possesses moderate defensive capabilities, reflected in its Armor Class of 8, but relies on its ability to navigate through narrow spaces and difficult terrains to avoid direct confrontation. With 45 hit points, it can sustain a fair amount of damage, making it a noteworthy challenge for adventurers. This creature's strength lies in its capacity to grapple foes and deal ongoing acid damage while managing to split into multiple entities when exposed to slashing or lightning damage, effectively multiplying its threat level. However, it suffers from disadvantages when in sunlight, which can be exploited by savvy players.</summary>
@@ -35,6 +37,7 @@ Overall, the Ochre Jelly serves as a challenging and interesting monster filled 
 
 Source: 5e_srd
 
+<statblock>
 ### Ochre Jelly (Ooze)
 
 *Large ooze, unaligned*
@@ -71,7 +74,8 @@ Source: 5e_srd
 
 ###### Reactions
 
-***Split***. When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly.
+***Split***. When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly.</statblock>
+
 
 
 
@@ -79,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ochre Jelly
 
 *Large* *Ooze*
@@ -115,6 +120,7 @@ Source: 5e_artisinal_monsters
 - **Split:** When a Medium or larger jelly with at least 10 hit points is subjected to lightning or slashing damage, it splits into two jellies that are each one size smaller, freeing any grappled targets. Each new jelly has half the originals hit points (rounded down).
 
 
+</statblock>
 
 
 
@@ -123,6 +129,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ochre Jelly
 
 *Large ooze*
@@ -158,5 +165,6 @@ Source: 5e_artisinal_monsters
 
 - **Split.** When an ochre jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new ochre jellies if it has at least 10 HP. Each new jelly has HP equal to half the original jelly’s, rounded down. New jellies are one size smaller than the original jelly.
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Apau Perape</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Apau Perape is a large fiend characterized by its chaotic evil nature. It possesses a robust melee attack profile and a suite of powerful magical abilities, making it a formidable opponent in combat. With an AC of 16 and 95 hit points, it is quite durable. The creature excels with a strength score of 21, giving it a very good modifier of +5 for physical attacks, while its dexterity and constitution scores, both at 18 and 19 respectively, provide additional advantages in agility and resilience. However, the Apau Perape is vulnerable to cold damage and cannot withstand poison, despite its immunity to poisonous conditions. Its fanciful nature is further emphasized by its abilities which focus on area control and summoning, allowing it to manipulate combat conditions in its favor.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Finally, once per day, the Apau Perape can use Summon Demon to call forth 1d4 ap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Apau Perape
 
 *Large* *Fiend* *Chaotic Evil*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage.
 - **Fiery Roar (Recharge 6):** The apau perape releases a terrifying, flame-coated roar in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 31 (9d6) fire damage and is frightened until the end of its next turn. On a success, a creature takes half the damage and isn’t frightened.
 - **Summon Demon (1/Day):** The apau perape magically calls 1d4 apes that are Fiends with the apau perape’s damage resistances and immunities. It has a 50 percent chance of calling one apau perape instead. The called creatures arrive in 1d4 rounds, acting as allies of the apau perape and obeying its telepathic commands. The creatures remain for 1 hour, until the apau perape dies, or until the apau perape dismisses them as a bonus action.
+</statblock>
 
 

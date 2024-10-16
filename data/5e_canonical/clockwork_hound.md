@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Hound</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>71</HP>
 <summary>The Clockwork Hound is a Medium Construct with an unaligned nature, serving as an efficient tracking and combat companion. With an Armor Class of 12 and Hit Points totaling 71, it exhibits respectable durability for its Challenge Rating of 2, making it a suitable foe or ally for low-level adventurers. One of the standout features of the Clockwork Hound is its high Strength score of 16 (+3), which allows it to pack a punch in melee combat with good attack modifiers. However, its Intelligence and Charisma are very low, indicating it lacks social skills and complex thought processes. The hound has a movement speed of 50 feet, enabling it to maneuver swiftly around the battlefield. Its array of damage immunities and condition immunities provide it with excellent resilience against various threats.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Clockwork Hound can perform two main attacks. Its Bite 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Hound
 
 *Medium* *Construct* *Unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) piercing damage.
 - **Tripping Tongue:** Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: 12 (2d8 + 3) slashing damage, and the target must succeed on a DC 13 Strength saving throw or be knocked prone.
+</statblock>
 
 

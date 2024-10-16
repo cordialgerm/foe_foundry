@@ -1,6 +1,8 @@
 <MonsterName/>Insect, Giant Centipede</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>14</HP>
 <summary>The Giant Centipede is a small beast that plays the role of an agile and venomous creature in any Dungeons & Dragons encounter. It has an Armor Class of 13, thanks to its natural armor, making it somewhat resilient against attacks, though not exceptionally so. With 14 hit points, it can endure a few hits before falling in battle. The centipede moves swiftly, with a speed of 30 feet on the ground and the ability to climb at the same speed, making it a nimble foe that can navigate terrain easily. Its challenge rating of 1/4 indicates that it poses a manageable threat to low-level adventurers. The centipede's primary strength lies in its potent bite, which not only delivers piercing damage but also inflicts additional poison damage that can incapacitate its foes, making it particularly dangerous in ambush situations. However, its combat traits are counterbalanced by very poor strength and intelligence scores, which limit its effectiveness in physical confrontation and strategic planning.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For movement, the centipede has a bonus action called Swift Hunter, allowing it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Insect, Giant Centipede
 
 *Small beast*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 
 - **Swift Hunter.** The centipede moves up to its speed toward a hostile creature that it can see.
 
+</statblock>
 
 

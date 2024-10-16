@@ -1,6 +1,8 @@
 <MonsterName/>Cyclops</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>7</CR>
+<AC/>13</AC>
+<HP/>126</HP>
 <summary>The Cyclops is a formidable creature in the world of Dungeons & Dragons, known for its massive size and brute strength. Classified as a Huge Giant, it boasts a high hit point total and a powerful melee presence, making it an imposing opponent in battle. While the Cyclops has very good strength and constitution scores, contributing to its physical durability and damage output, its intelligence, wisdom, and charisma are notably low, rendering it less effective in social interactions and mental contests. It possesses unique abilities that can turn the tide during combat, especially under duress, but struggles with ranged attacks due to its poor depth perception. Overall, the Cyclops is a challenging foe that relies on its sheer might and terrifying presence to dominate the battlefield.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ The Cyclops also features bonus actions and reactions:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cyclops
 
 *Huge* *Giant*
@@ -73,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Big Windup:** When a creature hits the cyclops with a melee attack, the cyclops readies a powerful strike against its attacker. The cyclops has advantage on the next club attack it makes against the attacker before the end of its next turn.
 
 
+</statblock>
 
 

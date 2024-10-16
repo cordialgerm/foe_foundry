@@ -1,6 +1,8 @@
 <MonsterName/>Frog</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>11</AC>
+<HP/>1</HP>
 <summary>A Frog is a small, amphibious creature commonly found near ponds, swamps, or rivers. Its smooth, moist skin is typically green or brown, allowing it to blend into its surroundings. Frogs are not aggressive and pose no threat to adventurers, but they are quick and agile, often leaping to escape danger. They feed on insects and other small creatures and are often part of a larger ecosystem. In magical or enchanted locations, frogs might be enchanted or serve as familiars for spellcasters, though ordinary frogs are harmless.</summary>
 
 <summary>The Frog is a tiny beast known for its basic physical capabilities and unique amphibious nature. With an Armor Class of 11 and just 1 hit point, the Frog is not built for combat and can be easily defeated by most threats. However, it possesses specific advantages in terms of mobility and environment adaptability. With its ability to breathe both air and water, the Frog excels in aquatic as well as terrestrial settings. Its challenge rating of 0 indicates it is not a significant threat in combat but serves as an interesting creature for players to encounter in various situations, particularly as a source of utility or when exploring watery environments.</summary>
@@ -27,6 +29,7 @@ In terms of actions, the frog can perform a Bite attack. This melee weapon attac
 
 Source: 5e_srd
 
+<statblock>
 ### Frog
 
 *Tiny beast, unaligned*
@@ -53,7 +56,8 @@ Source: 5e_srd
 
 ***Standing Leap***. The frog's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start.
 
-A **frog** has no effective attacks. It feeds on small insects and typically dwells near water, in trees, or underground. The frog's statistics can also be used to represent a **toad**.
+A **frog** has no effective attacks. It feeds on small insects and typically dwells near water, in trees, or underground. The frog's statistics can also be used to represent a **toad**.</statblock>
+
 
 
 
@@ -61,6 +65,7 @@ A **frog** has no effective attacks. It feeds on small insects and typically dwe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frog
 
 *Tiny* *Beast*
@@ -85,6 +90,7 @@ Source: 5e_artisinal_monsters
 - **Jumper:** The frog can jump up to 10 feet horizontally and 5 feet vertically without a running start.
 
 
+</statblock>
 
 
 
@@ -93,6 +99,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frog
 
 *Tiny beast*
@@ -121,5 +128,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite.** Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 2 (1d4) bludgeoning damage.
 
+</statblock>
 
 

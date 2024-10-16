@@ -1,6 +1,8 @@
 <MonsterName/>Allosaurus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>51</HP>
 <summary>The Allosaurus is a formidable creature in the realm of Dungeons and Dragons, classified as a Huge Beast that serves as a terror on the battlefield. With a challenge rating of 3, it presents a decent challenge for adventurers, being capable of dealing significant damage while possessing considerable hit points. Its defenses are reinforced by a moderate armor class of 15, which allows it to withstand a fair amount of punishment before falling. The Allosaurus excels at physical combat thanks to its high strength and dexterity, which not only improve its attack capabilities but also its ability to maneuver quickly around the battlefield. However, it is hampered by its low intelligence and charisma, making it susceptible to tactics that exploit its primitive instincts. </summary>
 
 <detail>
@@ -15,8 +17,52 @@ Overall, the Allosaurus stands out as a powerful primal predator within encounte
 
 ---
 
+Source: 5e_srd
+
+<statblock>
+## Allosaurus
+
+_Large Beast, Unaligned_
+
+**Armor Class** 13 (natural armor)
+
+**Hit Points** 51 (6d10 + 18)
+
+**Speed** 60 ft.
+
+|   STR   |   DEX   |   CON   |  INT   |   WIS   |  CHA   |
+| :-----: | :-----: | :-----: | :----: | :-----: | :----: |
+| 19 (+4) | 13 (+1) | 17 (+3) | 2 (-4) | 12 (+1) | 5 (-3) |
+
+**Skills** Perception +5
+
+**Senses** passive Perception 15
+
+**Languages** --
+
+**Challenge** 2 (450 XP)
+
+**Proficiency Bonus** +2
+
+**_Pounce._** If the allosaurus moves at least 30 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the allosaurus can make one bite attack against it as a bonus action.
+
+##### **Actions**
+
+**_Bite._** _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target.
+_Hit:_ 15 (2d10 + 4) piercing damage.
+
+**_Claw._** _Melee Weapon Attack:_ +6 to hit, reach 5 ft., one target.
+_Hit:_ 8 (1d8 + 4) slashing damage.
+</statblock>
+
+
+
+
+---
+
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Allosaurus
 
 *Huge* *Beast*
@@ -40,5 +86,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) slashing damage. If the allosaurus moves at least 10 feet towards its target before making this attack  it gains advantage on the attack.
 
 
+</statblock>
 
 

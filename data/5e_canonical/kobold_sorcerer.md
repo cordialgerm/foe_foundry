@@ -1,6 +1,8 @@
 <MonsterName/>Kobold Sorcerer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>27</HP>
 <summary>The Kobold Sorcerer is a small humanoid creature that plays the role of a spellcasting adversary in various combat scenarios. With a challenge rating of 1, this creature poses a moderate threat to adventurers, particularly due to its innate spellcasting abilities. Its strengths lie in its agility and Charisma, allowing it to effectively use spells and ranged attacks. Despite its low hit points at 27, it compensates with the ability to cast powerful spells that can outmaneuver and intimidate characters. However, it lacks physical strength, making it reliant on its magical abilities to stay out of danger. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Kobold Sorcerer combines spellcasting finesse with some combat capa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold Sorcerer
 
 *Small* *Humanoid*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Expeditious Retreat (1st-Level; V:** When casting this spell and as a bonus action on subsequent turns for 10 minutes, the kobold sorcerer can take the Dash action.
 
 
+</statblock>
 
 

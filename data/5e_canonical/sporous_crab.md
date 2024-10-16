@@ -1,6 +1,8 @@
 <MonsterName/>Sporous Crab</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>33</HP>
 <summary>The Sporous Crab is a small, unaligned beast that thrives in filthy environments, often found in swamps or dank caves. With an armor class of 14, it possesses natural armor that provides decent protection. It has a total of 33 hit points, giving it a moderate amount of durability in combat. The crab's speed allows it to walk and swim at 30 feet, making it quite mobile in both aquatic and terrestrial settings. Being a challenge rating of 1, it is a manageable opponent for low-level adventurers, providing an experience reward of 200 XP when defeated. Its primary strengths include its ability to infect creatures with spores and its resistance to bludgeoning damage, while it is vulnerable to fire attacks. The Sporous Crab relies on its special abilities and attacks to incapacitate and overwhelm foes, with some limitations in its overall offensive potential.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Its unique "Spore" action can be used every 6 turns. When activated, the crab sp
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sporous Crab
 
 *Small* *Beast* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Spore (Recharge 6):** The sporous crab sprays spores in a 15-foot cone. Each creature in the area must make a DC 12 Constitution saving throw. On a failure, a creature takes 7 (2d6) poison damage and becomes infected with the crab’s spores. On a success, a creature takes half the damage and isn’t infected with spores. After 1 hour, small bubbles and bumps appear across the skin of the infected creature. At the end of each long rest, the infected creature must make a DC 12 Constitution saving throw. On a success, the infected creature’s body fights off the spores and no longer has to make the saving throw. If a creature fails the saving throw every day for 7 days, young sporous crabs hatch from the creature’s skin, and the creature takes 9 (2d8) slashing damage. The spores can also be removed with a lesser restoration spell or similar magic.
 
 
+</statblock>
 
 

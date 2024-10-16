@@ -1,6 +1,8 @@
 <MonsterName/>Marid Noble</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>11</CR>
+<AC/>17</AC>
+<HP/>344</HP>
 <summary>The Marid Noble is a powerful large elemental creature, known for its dominion over water and its majestic presence. It has a high armor class of 17, making it fairly difficult to hit, while boasting an impressive pool of hit points totaling 344, derived from 30d10 plus an additional 180. With a challenge rating of 11, it is a formidable opponent capable of dealing significant damage in combat, especially with its unique spellcasting abilities and a versatile range of attacks. The Marid Noble excels in both aquatic and aerial environments, as it can swim at a speed of 90 feet and fly at 60 feet. Despite its strengths, it has weaknesses such as being vulnerable to certain magical effects despite its resistances to acid, cold, and lightning damage. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Marid Noble can create a "Fog Cloud" once a day, obscurin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Marid Noble
 
 *Large* *Elemental*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Water Jet (While Bloodied):** The marid shoots water in a 5-foot-wide, 60-foot-long jet. Each creature in the area makes a DC 18 Dexterity saving throw. On a failure, a target takes 21 (6d6) bludgeoning damage and is pushed 20 feet away from the marid, to a maximum of 60 feet away, and knocked prone. On a success, a target takes half damage.
 
 
+</statblock>
 
 

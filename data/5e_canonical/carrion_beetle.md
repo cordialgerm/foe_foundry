@@ -1,6 +1,8 @@
 <MonsterName/>Carrion Beetle</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Carrion Beetle is a formidable creature characterized as a Large unaligned beast. With a significant amount of hit points and impressive physical attributes, this beetle serves as a robust combatant in battle. It possesses a well-rounded mix of offensive capabilities and defensive traits, making it a threat in close encounters. The Carrion Beetle excels at dealing damage with its powerful bites and claws, while its acid spit ability allows it to engage multiple foes simultaneously from a distance. However, its slow movement and lack of intelligence limit its tactical options, making it less versatile than some other monsters.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The beetle's Acid Spit ability has a recharge time of 5 to 6, allowing it to unl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Carrion Beetle
 
 *Large* *Beast* *Unaligned*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit: 10 (1d12 + 4) piercing damage.
 - **Claw:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 4) slashing damage.
 - **Acid Spit (Recharge 5–6):** The carrion beetle spits acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 13 Dexterity saving throw, taking 26 (4d12) acid damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

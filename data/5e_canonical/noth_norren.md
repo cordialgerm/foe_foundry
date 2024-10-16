@@ -1,6 +1,8 @@
 <MonsterName/>Noth-norren</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>13</CR>
+<AC/>14</AC>
+<HP/>203</HP>
 <summary>The Noth-norren is a gargantuan elemental creature that embodies chaotic evil. It has significant power and resilience, boasting a high armor class of 14 and an extensive pool of hit points totaling 203. This creature serves as a formidable opponent due to its ability to control the battlefield with its air turbulence, which forces flying creatures to land or risk falling. The Noth-norren exhibits exceptional physical strength and dexterity, which enhance its melee and ranged attack capabilities. While it has weaknesses against certain magical effects, its ability to resist damage from various types of attacks makes it a challenging adversary. Players must tread carefully when facing this elemental, as its ability to manipulate its environment can turn the tide of combat in its favor.</summary>
 
 <detail>
@@ -34,6 +36,7 @@ In battle, the Noth-norren presents a daunting challenge with its ability to con
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Noth-norren
 
 *Gargantuan* *Elemental* *chaotic evil*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Vortex (Recharge 5-6):** The noth-norren pulls nearby creatures into its central vortex to be torn apart by its jagged teeth. Each creature within 5 feet of the noth-norren must succeed on a DC 16 Strength saving throw or be pulled into the vortex. A creature in the vortex is blinded and restrained, it has total cover against attacks and other effects outside the vortex, and it takes 21 (6d6) slashing damage at the start of each of the noth-norren’s turns.<br><br>If the noth-norren takes 30 damage or more on a single turn from a creature inside the vortex, the noth-norren must succeed on a DC 18 Constitution saving throw at the end of that turn or release all creatures caught in its vortex, which fall prone in a space within 10 feet of the noth-norren. If the noth-norren dies, it becomes a pile of teeth, its windy form dissipating, and releases all trapped creatures.
 
 
+</statblock>
 
 

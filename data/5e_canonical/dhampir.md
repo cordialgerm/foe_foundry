@@ -1,6 +1,8 @@
 <MonsterName/>Dhampir</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>32</HP>
 <summary>The Dhampir is a Medium humanoid creature that blends the lineage of vampires with that of humans, allowing it to navigate both worlds with a unique set of abilities. It possesses a challenge rating of 1, making it a moderately strong adversary for low-level adventurers. Its strengths lie in its nimble Dexterity and Charisma, making it effective in both combat and social situations. With damage resistance to necrotic damage and a useful ability to charm others, the Dhampir can manipulate encounters to its advantage, yet it can be vulnerable to attacks due to its lower health pool of 32 hit points. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ In conclusion, the Dhampir is a cunning and charismatic combatant capable of out
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dhampir
 
 *Medium* *Humanoid* *any alignment*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Predatory Charm:** The dhampir magically beguiles the mind of one humanoid it can see within 30 feet for 1 hour. The target must succeed on a DC 13 Charisma saving throw or the dhampir has advantage on Charisma checks against the target. If the dhampir or any of its allies damage the target, the effect ends. If the target's saving throw is successful or the effect ends, the target is immune to this dhampir's Predatory Charm for the next 24 hours. A creature immune to being charmed is immune to this effect. A dhampir can have only one target affected by its Predatory Charm at a time. If it uses its Predatory Charm on another target, the effect on the previous target ends.
 
 
+</statblock>
 
 

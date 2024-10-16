@@ -1,6 +1,8 @@
 <MonsterName/>Dokkaebi</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>78</HP>
 <summary>The Dokkaebi is a medium-sized fey creature that embodies chaotic neutrality or goodness, often acting as mischievous tricksters in the world. With a decent blend of melee attack capabilities and unique magical abilities, the Dokkaebi serves as an intriguing opponent or ally in various adventures. Its strengths lie in its decent hit points and advantages in grappling, thanks to its special abilities, while its weaknesses include a moderately low Armor Class and an average skill in perception. Overall, the Dokkaebi is a playful and elusive creature, capable of altering the course of encounters through its invisibility and trickster nature.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Dokkaebi stands out as a versatile creature, capable of engaging in
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dokkaebi
 
 *Medium* *Fey* *chaotic neutral or chaotic good*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** Magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Items wears or carries are invisible with it. Can’t use this if it doesn’t have its hat.
 
 
+</statblock>
 
 

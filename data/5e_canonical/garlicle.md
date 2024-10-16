@@ -1,6 +1,8 @@
 <MonsterName/>Garlicle</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>31</HP>
 <summary>The Garlicle is a small, chaotic neutral plant creature that plays a role as an unpredictable trickster in combat scenarios. It possesses moderate defenses with an Armor Class of 12 and a decent pool of Hit Points totaling 31, allowing it to withstand some damage. The Garlicle has a unique combination of abilities that can impair opponents while granting advantageous effects to its allies. It is particularly adept at stealth due to its dexterity, although its overall physical strength is quite weak. The Garlicle’s spells focus on utility and support, providing options for both combat enhancement and information gathering. Its notable weaknesses include low strength and a reliance on its spells and special abilities to contribute effectively in battles.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Garlicle has a basic melee attack called Walking Staff,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Garlicle
 
 *Small* *Plant* *chaotic neutral*
@@ -50,5 +53,6 @@ At will: guidance, shillelagh
 - **Cloves of Fate (Recharge 4-6):** The garlicle plucks cloves from its head and throws them at up to three creatures it can see within 30 feet of it. Roll a d4 for each creature. The garlicles allies have +1 on the roll while its enemies have a -1 on the roll. Determine the result and consult the following table. <br>| d4 | Fate |<br>|----|------|<br>| 0 | Worst Fortune. Whatever the target is holding slips from its grasp into a random space within 5 feet of the target, and the target falls prone as it trips over a rock, rain-dampened grass, its shoelaces, or similar. |<br>| 1 | Bad Fortune. The target takes 10 (3d6) poison damage and must succeed on a DC 14 Constitution saving throw or be poisoned until the end of its next turn. |<br>| 2 | Adverse Fortune. The target has disadvantage on its next attack roll. |<br>| 3 | Favorable Fortune. The target has advantage on its next attack roll. |<br>| 4 | Good Fortune. The target regains 5 (2d4) hp. |<br>| 5 | Best Fortune. The target’s next successful hit is critical. |
 
 
+</statblock>
 
 

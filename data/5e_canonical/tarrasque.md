@@ -1,6 +1,9 @@
 <MonsterName/>Tarrasque</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<Subtype/>titan</Subtype>
+<CR/>30</CR>
+<AC/>25 (natural armor)</AC>
+<HP/>676</HP>
 <summary>The Tarrasque is a towering, unstoppable force of destruction, regarded as one of the most powerful creatures in existence. Its massive, armored body is nearly impervious to all forms of damage, and its regenerative abilities make it nearly impossible to kill. Standing over 50 feet tall, the Tarrasque has claws capable of tearing through stone and a maw large enough to swallow buildings whole. It moves with terrifying speed for its size and leaves devastation in its wake. Fortunately, the Tarrasque is rarely active, spending most of its existence in slumber beneath the earth.</summary>
 
 <summary>The Tarrasque is a massive and titanic monstrosity, renowned for its incredible durability and devastating offensive capabilities. With an exceptionally high Armor Class of 25 and a staggering 1,230 hit points, the Tarrasque is an extremely formidable opponent in any combat situation, effectively making it nearly indestructible without significant power or strategy from its foes. Despite its towering stature, its Dexterity is only average, which means it may not be the quickest creature on the battlefield. However, its Strength and Constitution are exceptional, allowing it to inflict severe damage and recover swiftly during combat. With abilities that enable it to regenerate health, resist magical effects, and deal double damage to structures, the Tarrasque is a menace that adventurers would be wise not to confront without careful planning.</summary>
@@ -37,6 +40,7 @@ Finally, regional effects related to the Tarrasque's presence in its habitat can
 
 Source: 5e_srd
 
+<statblock>
 ## Tarrasque
 
 *Gargantuan monstrosity (titan), unaligned*
@@ -97,7 +101,8 @@ The tarrasque can take 3 legendary actions, choosing from the options below. Onl
 
 **Move**. The tarrasque moves up to half its speed.
 
-**Chomp (Costs 2 Actions)**. The tarrasque makes one bite attack or uses its Swallow.
+**Chomp (Costs 2 Actions)**. The tarrasque makes one bite attack or uses its Swallow.</statblock>
+
 
 
 
@@ -105,6 +110,7 @@ The tarrasque can take 3 legendary actions, choosing from the options below. Onl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tarrasque
 
 *Titanic* *Monstrosity*
@@ -158,6 +164,7 @@ Source: 5e_artisinal_monsters
 - **Elite Recovery (While Bloodied):** The tarrasque ends one negative effect currently affecting it. It can use this action as long as it has at least 1 hit point, even while unconscious or incapacitated.
 - **Chomp (Costs 2 Actions):** The tarrasque makes a bite attack or uses Swallow.
 - **Inescapable Earth (Costs 3 Actions):** Each flying creature or object within 300 feet falls and its flying speed is reduced to 0 until the start of the tarrasques next turn.
+</statblock>
 
 
 
@@ -166,6 +173,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tarrasque
 
 *Gargantuan monstrosity*
@@ -214,5 +222,6 @@ The tarrasque can take 3 legendary actions, choosing from the options below. Onl
 ### Regional Effects
 
 - **1d10** If the tarrasque dies, these effects fade in  days, except for Food Aplenty, which fades within 1 year.
+</statblock>
 
 

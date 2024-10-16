@@ -1,6 +1,8 @@
 <MonsterName/>Myling</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Myling is a Small undead creature with chaotic evil tendencies that embodies the essence of malevolent spirits in the Dungeons and Dragons universe. With an Armor Class of 13, it possesses a reasonable level of defense, making it somewhat challenging to hit in combat. Its hit points total 45, providing a moderate buffer against attacks, while its challenge rating of 2 indicates it can pose a significant threat to lower-level adventurers. The Myling's effective movement includes a walk speed of 10 feet and a burrow speed of 30 feet, allowing it to navigate terrain creatively, especially in ambush scenarios. Its core strengths lie in its agility with a Dexterity score of 16, which gives it exceptional maneuverability and skill in Stealth. However, it is vulnerable to silvered weapons and magical attacks due to its resistance and immunity profile. Notable abilities include damaging necrotic attacks and the potential for crippling strength reductions, which can drastically turn the tide of a battle.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Myling can use its Bury Alive ability, which can be activ
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Myling
 
 *Small* *Undead* *Chaotic Evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Bury Alive (Recharge 6):** The creature to which the myling is attached is knocked prone, dragged into the ground, and buried just below the surface, ending the attachment. The buried creature is restrained and unable to breathe or stand up. A creature, including the buried creature, can take its action to free the buried creature by succeeding on a DC 13 Strength check.
+</statblock>
 
 

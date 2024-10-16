@@ -1,6 +1,8 @@
 <MonsterName/>Cosmopolitan Alchemist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>14</AC>
+<HP/>91</HP>
 <summary>The Cosmopolitan Alchemist is a formidable Medium humanoid adept in the art of potion crafting and alchemical creation. With a Challenge Rating of 6, this character poses a significant threat to unsuspecting adventurers. The alchemist has a decent pool of hit points at 91, giving it a good chance of surviving combat while also possessing moderate protections with an Armor Class of 14. Their primary strengths lie in their intelligence and dexterity, with an Intelligence score of 19 (+4), granting them exceptional abilities in arcana, investigation, and nature skills, all sitting at +7. The alchemist also has the ability to craft powerful potions, offering essential support to allies or dealing substantial damage to foes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For tactical flexibility, the alchemist can use a Bonus Action to Alter Bomb, sw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cosmopolitan Alchemist
 
 *Medium* *Humanoid*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Desperate Drink (1/Day:** When the alchemist is dealt damage, they drink a potion.
 
 
+</statblock>
 
 

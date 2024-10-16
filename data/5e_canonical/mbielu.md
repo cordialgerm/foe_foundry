@@ -1,6 +1,8 @@
 <MonsterName/>Mbielu</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Mbielu is a huge, unaligned beast that embodies both strength and resilience, making it a formidable presence in combat. With a high Armor Class of 15 due to its natural armor and a substantial pool of 76 hit points, the Mbielu can endure significant damage while dishing out substantial retaliatory strikes. Its notable attributes include very good strength and good constitution, which enhance its physical attacks and durability, but it suffers from very bad intelligence and charisma, indicating a lack of mental acuity and charm. The Mbielu has a challenge rating of 3, providing it with a balanced level of threat that can challenge parties of varying levels. The creature excels at close-range combat, aided by its damaging tail attack and frightening bellow, while its toxic skin can incapacitate foes and inflict poison damage.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ The Mbielu has a powerful special attack known as Rumbling Bellow, which recharg
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mbielu
 
 *Huge* *Beast* *Unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 
 - **Tail:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 20 (3d10 + 4) bludgeoning damage plus 2 (1d4) poison damage. If the target is a Large or smaller creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
 - **Rumbling Bellow (Recharge 5–6):** The mbielu releases a deep bellow that vibrates within the bodies of those nearby. Each creature within 15 feet of the mbielu must make a DC 13 Constitution saving throw, taking 18 (4d8) thunder damage on a failed save, or half as much damage on a successful one. If a creature poisoned by the mbielu’s Toxic Skin fails this saving throw, it is also incapacitated until the end of its next turn as the combined vibrations and hallucinations disorient it.
+</statblock>
 
 

@@ -1,5 +1,9 @@
 <MonsterName/>Will-o-Wisp</MonsterName>
 <CreatureType/>Undead</CreatureType>
+<CR/>2</CR>
+<AC/>19</AC>
+<HP/>22</HP>
+<summary>A Will-o'-Wisp is a small, floating orb of light that lures travelers into dangerous areas, such as swamps or bogs, where they meet their doom. Will-o'-Wisps are malevolent spirits, often feeding on the fear and despair of their victims. They are incredibly fast and elusive, able to turn invisible or dart away to avoid danger. Despite their small size, Will-o'-Wisps can deliver deadly shocks of electrical energy to those who get too close. They are often found haunting graveyards, marshes, or cursed lands, guiding the lost into deadly traps or ambushes.</summary>
 
 <summary>The Will-o-Wisp is a small undead creature known for its ethereal and mischievous nature. Floating through the air, it is often encountered in dark, eerie locations and can create a sense of dread among adventurers. It possesses a high Armor Class of 17, making it relatively difficult to hit, and it has 28 hit points, allowing it to survive several rounds of combat. With its ability to fly at a speed of 50 feet, it can evade attacks effectively and control the battlefield. The Will-o-Wisp's Challenge Rating of 2 indicates it's suitable for parties of adventurers with moderate experience. It has significant strengths, including strong dexterity and various immunities, but it is physically weak, with a strength score of just 2, contributing a very bad modifier. Notably, it has abilities that deal damage to those who come too close, encouraging a tactical engagement when faced by players.</summary>
 
@@ -17,6 +21,7 @@ In combat, the Will-o-Wisp can use the "Shock" action to make a melee spell atta
 
 Source: 5e_srd
 
+<statblock>
 ## Will-o-Wisp
 
 *Tiny undead, chaotic evil*
@@ -55,7 +60,8 @@ Source: 5e_srd
 
 ***Shock***. *Melee Spell Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 9 (2d8) lightning damage.
 
-***Invisibility***. The will-o'-wisp and its light magically become invisible until it attacks or uses its Consume Life, or until its concentration ends (as if concentrating on a spell).
+***Invisibility***. The will-o'-wisp and its light magically become invisible until it attacks or uses its Consume Life, or until its concentration ends (as if concentrating on a spell).</statblock>
+
 
 
 
@@ -63,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Will-o-Wisp
 
 *Small* *Undead*
@@ -100,5 +107,6 @@ Source: 5e_artisinal_monsters
 - **Illumination:** The will-o-wisp alters the radius of its glow (shedding bright light in a 5- to 20-foot radius and dim light for the same number of feet beyond that radius), changes the color of its glow, or extinguishes its glow (making it invisible).
 
 
+</statblock>
 
 

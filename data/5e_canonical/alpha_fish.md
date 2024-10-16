@@ -1,6 +1,8 @@
 <MonsterName/>Alpha Fish</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>59</HP>
 <summary>The Alpha Fish is a large, aquatic beast that serves as a formidable predator in its underwater habitat. With a high hit point total and average armor class, it can endure significant damage in combat. The Alpha Fish relies on its swimming speed to navigate quickly through water, making it agile in its environment. While it possesses an aggressive demeanor due to its "Too Aggressive" trait, which causes it to attack perceived threats indiscriminately, its intelligence is notably low, rendering it susceptible to illusions and tactics that exploit its lack of awareness. Its challenge rating of 3 signifies that it can provide a moderate challenge for low to mid-level adventurers.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Alpha Fish can use "Multiattack," enabling it to perfor
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alpha Fish
 
 *Large* *Beast* *unaligned*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Fin Flare:** The alpha fish flares its fins in an attempt to frighten its opponents. Each creature within 30 feet that can see the fish must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the alpha fish’s Fin Flare for the next 24 hours.
 
 
+</statblock>
 
 

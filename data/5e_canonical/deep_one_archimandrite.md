@@ -1,6 +1,8 @@
 <MonsterName/>Deep One Archimandrite</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>153</HP>
 <summary>The Deep One Archimandrite is a formidable Large Humanoid creature that embodies chaotic evil. It has a high armor class of 15 due to its natural armor, making it reasonably tough to hit in combat. With 153 hit points, it can sustain significant damage, showcasing a good degree of resilience. The creature's movement speed is 40 feet, allowing it to engage effectively in battle. It holds a challenge rating of 8, which means it provides a substantial threat to adventurers, offering 3,900 experience points upon defeat. With strong physical attributes, particularly a remarkable Strength score of 20 (+5), the Deep One Archimandrite is capable of delivering powerful melee attacks. It also boasts decent Dexterity and Constitution scores, which help it evade attacks and maintain its hit points. Its high Charisma of 19 (+4) enhances its spellcasting ability, enabling it to invoke a variety of spells that can influence the battlefield and support its allies. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Lastly, the Deep One Archimandrite has a spellcasting capability that includes a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deep One Archimandrite
 
 *Large* *Humanoid* *Chaotic Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Jolt:** Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 60 ft., one target. Hit: 14 (3d6 + 4) lightning damage, and the target’s speed is reduced by 10 until the end of its next turn.
 - **Call of the Archimandrite (1/Day):** With a ringing shout, the archimandrite magically calls 1d4 reef sharks or 1 swarm of quippers, provided the archimandrite is at least partially submerged in a body of water that can contain the creatures. The called creatures arrive in 1d4 rounds, acting as allies of the archimandrite and obeying its spoken commands. The creatures remain for 1 hour, until the archimandrite dies, or until the archimandrite dismisses them as a bonus action. Each deep one within 1 mile of the archimandrite can hear this call, though these deep ones are under no magical compulsion to make their way toward the archimandrite.
 - **Spellcasting:** The deep one archimandrite casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 15):<br>At will: bless, guidance, suggestion, thaumaturgy<br>3/day each: charm person, command, sleep<br>1/day each: augury, lightning bolt, spirit guardians
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Silver Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>487</HP>
 <summary>The Ancient Silver Dragon is a noble and compassionate creature, with scales that gleam like pure silver. These dragons are often mistaken for statues or icy outcroppings when resting in their high mountain homes. Silver Dragons are known for their deep sense of honor and their dedication to protecting the innocent. They can take human form, allowing them to walk among mortals and assist in their struggles. Their breath weapon is a cone of freezing cold, and they can also emit a gas that paralyzes their foes. Despite their immense power, Silver Dragons prefer to resolve conflicts through diplomacy and peaceful means.</summary>
 
 <summary>The Ancient Silver Dragon is a formidable gargantuan creature and serves as one of the most powerful dragon types in the game. It possesses an impressive armor class of 22 and boasts a staggering 429 hit points, making it highly durable in battle. The dragon's movement capabilities are exceptional, with a walking speed of 40 feet and a flying speed of 80 feet, allowing it to maneuver easily on the battlefield. With a challenge rating of 25, it poses a significant threat to adventurers, and its various abilities enhance its effectiveness in combat. Notably, the dragon has strong cold damage resistance, advanced spellcasting abilities, and the capacity to change shape, making it a versatile opponent. However, it may be vulnerable to certain magical effects if it exhausts its legendary resistances.</summary>
@@ -69,6 +71,7 @@ Lastly, the Ancient Silver Dragon has regional effects that may manifest if it i
 
 Source: 5e_srd
 
+<statblock>
 # Ancient Silver Dragon (Metallic)
 
 *Gargantuan dragon, lawful good*
@@ -127,7 +130,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6+10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6+10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -135,6 +139,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Silver Dragon
 
 *Gargantuan* *Dragon*
@@ -186,6 +191,7 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 21 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 25 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Windstorm (Costs 2 Actions):** Pounding winds surround the dragon in a 20-foot radius. A creature in this area attempting to move closer to the dragon must spend 2 feet of movement for every 1 foot closer it moves, and ranged attacks against the dragon are made with disadvantage. A creature that starts its turn in the windstorm makes a DC 24 Constitution saving throw, taking 11 (2d10) cold damage on a failure. The windstorm lasts until the start of the dragons next turn.
+</statblock>
 
 
 
@@ -194,6 +200,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Silver Dragon
 
 *Gargantuan dragon*
@@ -244,5 +251,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days.
+</statblock>
 
 

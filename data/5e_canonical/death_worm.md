@@ -1,6 +1,8 @@
 <MonsterName/>Death Worm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>44</HP>
 <summary>The Death Worm is a small monstrosity that poses a unique threat to its opponents through a combination of mobility and debilitating abilities. It boasts a moderate Armor Class of 13, offering decent protection due to its natural armor, and possesses 44 hit points, making it resilient in combat. The Death Worm's speed allows it to both walk and burrow effectively at 20 feet, enabling it to maneuver quickly in different terrains. With a Challenge Rating of 1, it represents a moderate challenge for adventurers, granting 200 experience points upon defeat. The creature has exceptional dexterity and constitution, reflected in its Dexterity score of 15 (+2) and Constitution score of 14 (+2), which contribute to its agility and endurance in battle. However, its poor Strength (9, -1) and Intelligence (1, -5) weaken its melee capabilities and cognitive abilities, respectively.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Death Worm combines decent mobility and damaging abilities with eff
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Death Worm
 
 *Small* *Monstrosity* *unaligned*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Spit Poison:** Ranged Weapon Attack: +4 to hit 15/30' one creature. 9 (2d8) poison and the target must make DC 12 Con save or succumb to the worm’s venom (see Dreaming Venom).
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Incandescent One</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural)</AC>
+<HP/>144</HP>
 <summary>The Incandescent One is a medium-sized celestial creature aligned with chaotic good. It embodies a unique combination of mobility, resilience, and powerful magical abilities, making it a formidable ally in combat. With a solid armor class of 16 and a substantial pool of hit points totaling 144, this creature can withstand a notable amount of damage. Its speed and aerial capabilities allow it to maneuver effectively in battle, while its multiple resistances and immunities provide strong defenses against various damage types and conditions. Despite its community-oriented nature, it possesses significant offensive capabilities through both melee and ranged attacks. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Incandescent One can use Celestial Inspiration to inspire
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Incandescent One
 
 *Medium* *Celestial* *chaotic good*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Celestial Inspiration:** Inspires one creature it can see within 60' of it. Whenever target makes attack roll or save before start of incandescent one’s next turn target can roll a d4 and add number rolled to the attack roll or save.
 
 
+</statblock>
 
 

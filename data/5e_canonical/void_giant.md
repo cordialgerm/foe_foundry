@@ -1,6 +1,8 @@
 <MonsterName/>Void Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>11</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>210</HP>
 <summary>The Void Giant is a powerful creature categorized as a huge giant with a chaotic neutral alignment. Standing tall and imposing, it possesses significant physical strength and magical prowess, making it a formidable opponent in battle. With an Armor Class of 14 and a substantial pool of hit points totaling 210, the Void Giant can withstand considerable punishment while dealing damage both physically and via spellcasting. Its strengths lie in its high Strength score of 24, granting it powerful melee attacks, and an Intelligence score of 18, which enhances its spellcasting capabilities. On the downside, it has a relatively low Dexterity at 10, making it average in terms of agility. This creature, with a challenge rating of 11, is a significant threat to adventurers and has notable abilities that can turn the tide of combat.</summary>
 
 <detail>
@@ -39,6 +41,7 @@ In terms of reactions, it has the Magic Absorption ability. If the Void Giant su
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Void Giant
 
 *Huge* *Giant* *chaotic neutral*
@@ -80,5 +83,6 @@ Cantrips (at will): chill touch, light, mending, shocking grasp
 - **Magic Absorption:** If the void giant succeeds on a saving throw against an enemy spell, the void giant doesn't suffer the effects of that spell. If it uses Void Casting on its next turn, the void giant can affect all creatures hit by its spell or who fail a saving throw against its spell instead of just one creature.
 
 
+</statblock>
 
 

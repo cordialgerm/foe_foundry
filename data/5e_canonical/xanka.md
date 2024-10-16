@@ -1,6 +1,8 @@
 <MonsterName/>Xanka</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>27</HP>
 <summary>Xanka is a small, unaligned construct known for its destructive capabilities, particularly effective against inanimate objects and weaponry. With an Armor Class of 14, it has good defenses that make it somewhat resilient in combat. It possesses a total of 27 hit points, which are decent for its Challenge Rating of 1/2, recognizing it as a weaker opponent that can still pose a threat through its unique abilities. Xanka operates at a walking speed of 15 feet and can absorb and degrade nonmagical objects, adding an interesting tactical layer to its encounters. Its primary strengths lie in its immunity to various conditions and its ability to devastate structures, while its weaknesses include limited mobility and a lack of combat versatility that comes with lower Strength and Intelligence scores. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, Xanka utilizes "Dismantling Leg" which is a melee weapon at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Xanka
 
 *Small* *Construct* *Unaligned*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 
 - **Dismantling Leg:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is subjected to the xanka’s Absorb trait.
 - **Release Energy (Recharge 5–6):** The xanka releases energy created from absorbed material in a burst. Each creature within 10 feet of it must make a DC 11 Dexterity saving throw, taking 7 (2d6) force damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

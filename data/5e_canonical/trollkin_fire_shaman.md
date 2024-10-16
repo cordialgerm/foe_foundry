@@ -1,6 +1,8 @@
 <MonsterName/>Trollkin Fire Shaman</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>45</HP>
 <summary>The Trollkin Fire Shaman is a medium humanoid creature that embodies a unique blend of elemental fire magic and innate regeneration abilities. Positioned as a challenge rating 2 creature, it is relatively formidable for adventurers, possessing 45 hit points derived from rolling 7 eight-sided dice plus a constitution modifier of 14, which offers a good buffer in combat. The creature’s armor class of 14, achieved through leather armor and its thick skin ability that adds a bonus, makes it reasonably difficult to hit. With capabilities focused on fire spells and magical effects, it excels in ranged combat while still being able to engage in melee. However, its weaknesses are its vulnerability to acid and fire, which temporarily disables its regenerative abilities. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ Finally, the shaman has a special reaction called Fiery Escape, which can be use
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trollkin Fire Shaman
 
 *Medium* *Humanoid* *neutral*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Fiery Escape (2/Day):** When shaman takes damage each creature within 5 ft. of it: DC 13 Dex save or take 7 (2d6) fire. Shaman is then wreathed in flames and teleports up to 30' to unoccupied space it can see.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Scorpion</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>52</HP>
 <summary>A Giant Scorpion is a massive, predatory arachnid with a hard exoskeleton, large pincers, and a long, venomous stinger at the end of its tail. These creatures are typically found in deserts, caves, or other arid environments, where they use their pincers to capture prey and their stingers to deliver a deadly dose of venom. Giant Scorpions are territorial and aggressive, attacking anything that comes too close to their burrows. Their tough exoskeleton provides natural armor, making them difficult to injure, and their pincers can crush bones with ease.</summary>
 
 <summary>The Giant Scorpion is a formidable creature found in many wilderness and dungeon environments. As a large beast, it serves primarily as a predator or guardian in its territory. Its strengths lie in its decent armor class of 15, providing a good level of protection, and its ability to deal significant damage through its claws and sting attacks. With 52 hit points, the scorpion can endure several rounds of combat. However, its challenge rating of 3 indicates that while it is a credible threat, it is suitable for mid-level adventuring parties. Notably, the Giant Scorpion has a very low intelligence and charisma, making it less effective in social situations and tactics that require cunning.</summary>
@@ -21,6 +23,7 @@ Overall, the Giant Scorpion is a strong physical combatant that can be a challen
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Scorpion
 
 *Large beast, unaligned*
@@ -47,7 +50,8 @@ Source: 5e_srd
 
 ***Claw***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (1d8+2) bludgeoning damage, and the target is grappled (escape DC 12). The scorpion has two claws, each of which can grapple only one target.
 
-***Sting***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 7 (1d10+2) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one.
+***Sting***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 7 (1d10+2) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -55,6 +59,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Scorpion
 
 *Large* *Beast*
@@ -80,5 +85,6 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8+2) piercing damage and the target makes a DC 12 Constitution saving throw  taking 16 (3d10) poison damage on a failure or half damage on a success.
 
 
+</statblock>
 
 

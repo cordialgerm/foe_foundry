@@ -1,6 +1,8 @@
 <MonsterName/>Alabaster Tree</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>7</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Alabaster Tree is a large celestial creature embodying neutral goodness, serving as a guardian of nature and a protector of the virtuous. Its formidable presence is characterized by a high Armor Class of 18, making it difficult to hit, and it possesses 105 hit points, offering a substantial buffer against damage. Its movement speed is limited to 10 feet, but this is offset by its ability to traverse the battlefield quickly with its special ability Churning Advance. The Alabaster Tree excels at defending allies; it can bolster good-aligned creatures and disrupt enemies through various powerful actions and abilities. However, it is vulnerable to magical damage as it has resistances to nonmagical attacks but not to magical ones. </summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the Alabaster Tree stands as a powerful protector with unique abilities
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alabaster Tree
 
 *Huge* *Celestial* *neutral good*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Cloud of Needles (Recharge 5-6, Pine Only):** The alabaster tree fires a cloud of sharp needles at all creatures within 30 feet of it. Each creature in that area must make a DC 15 Dexterity saving throw, taking 18 (4d8) piercing damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

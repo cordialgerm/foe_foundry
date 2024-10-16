@@ -1,6 +1,8 @@
 <MonsterName/>Sulsha</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Sulsha is a large and imposing humanoid creature characterized by its lawful evil alignment and lethal combat tactics. With a robust Armor Class of 16 and an impressive 90 hit points, it presents a significant challenge to adventurers. Sulsha excel in both melee and ranged attacks, showcasing their versatility with multiple options during combat. Their ability to climb and fight simultaneously makes them formidable in environments with vertical elements, leveraging their speed to traverse the battlefield effectively. However, their low Charisma score of 9 indicates a weakness in social interactions, suggesting that they are not the most persuasive or charismatic beings. Using a combination of physical attacks and area damage from bombs, the Sulsha is a relentless foe capable of frightening its opponents and maintaining control over the battle.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Finally, the Sulsha can use its "Terrifying Display" ability, which recharges on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sulsha
 
 *Large* *Humanoid* *lawful evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Terrifying Display (Recharge 5-6):** The sulsha beats furiously on its chest and hollers with rage. Each creature within 30 feet of the sulsha that can see or hear it must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

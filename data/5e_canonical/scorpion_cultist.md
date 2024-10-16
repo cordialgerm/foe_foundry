@@ -1,6 +1,8 @@
 <MonsterName/>Scorpion Cultist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>26</HP>
 <summary>The Scorpion Cultist is a medium-sized humanoid creature that embodies the principles of a sinister cult. It operates with neutrality, typically aligned with dark powers. With an armor class of 13, this cultist is fairly well-protected, though its hit points are relatively modest at 26, giving it a good but not exceptional capacity to withstand damage in combat. The Scorpion Cultist poses a moderate challenge, categorized at a Challenge Rating of 1/2, indicating it is suitable for low-level adventurers. Notably, the cultist excels in Dexterity, making it nimble and a competent stealth-focused combatant, while its attacks are augmented by poison damage, enhancing its offensive capabilities.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Scorpion Cultist can perform a melee attack with a scim
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scorpion Cultist
 
 *Medium* *Humanoid* *Neutral*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Scimitar:** Melee Weapon Attack: +5 to hit, reach 5 ft, one target. Hit: 6 (1d6 + 3) slashing damage plus 2 (1d4) poison damage.
 - **Sling:** Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) poison damage.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Leech Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>32</HP>
 <summary>The Leech Swarm is a medium-sized unaligned beast that embodies a predatory and parasitic nature. With an Armor Class of 13 and 32 hit points, it can withstand a fair amount of damage for its challenge rating of 2, representing moderate threat in combat scenarios. The creature thrives in aquatic environments, boasting a swimming speed of 40 feet, while its walking speed is limited to 10 feet. The Leech Swarm's dexterity is exceptional at +3, allowing it to be quite agile and stealthy, with a skill modifier of +5 in Stealth. However, it suffers from weak strength, with a value of just 5, and has significantly low intelligence and charisma. The swarm is adept at draining the life force from its victims, making it especially dangerous to those who are already wounded. On the downside, it is vulnerable in terms of limited damage resistance and cannot heal itself, making it rely on its offensive capabilities to secure victories in combat.</summary>
 
 <detail>
@@ -30,6 +32,7 @@ For its actions, the Leech Swarm can perform Bites as a melee weapon attack with
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Leech Swarm
 
 *Medium* *Beast* *unaligned*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Bites:** Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half its hp or fewer. If the target is a creature other than a construct or an undead, it must succeed on a DC 13 Dexterity saving throw or lose 2 (1d4) hp at the start of each of its turns as leeches attach to it and drain its blood. Any creature can take an action to find and remove the leeches with a successful DC 13 Wisdom (Perception) check. The leeches also detach if the target takes fire damage.
 
 
+</statblock>
 
 

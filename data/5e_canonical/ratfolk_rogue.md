@@ -1,6 +1,8 @@
 <MonsterName/>Ratfolk Rogue</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (studded leather)</AC>
+<HP/>31</HP>
 <summary>The Ratfolk Rogue is a cunning and agile little humanoid, characterized by its superior dexterity and stealth capabilities, making it a formidable opponent in the shadows. With a small stature and exceptional nimbleness, it can slip past larger enemies and strike from unexpected angles. Despite its relatively low health at 31 hit points, the Ratfolk Rogue compensates with a strong base Armor Class of 15 and the ability to deal significant damage, especially when taking advantage of its allies through tactics like flanking. However, its strength is notably poor, making it less effective in direct melee combat. It has an average constitution, leading to moderate survivability, but the rogue excels in stealth and quick maneuvers that can shift the tide of battle.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Ratfolk Rogue can use Cunning Action, allowing it to take
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ratfolk Rogue
 
 *Small* *Humanoid* *Neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Cunning Action:** The ratfolk rogue takes the Dash, Disengage, or Hide action.
+</statblock>
 
 

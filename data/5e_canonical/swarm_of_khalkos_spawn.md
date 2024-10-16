@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Khalkos Spawn</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>2</CR>
+<AC/>16</AC>
+<HP/>71</HP>
 <summary>The Swarm of Khalkos Spawn is a menacing Medium Aberration known for its effective combat capabilities and unique debuffing skills. With a Challenge Rating of 2, it can pose a significant threat to lesser adventurers, making it a formidable opponent in battle. This creature boasts a good Armor Class of 16 and a healthy pool of hit points totaling 71, which provides it with decent durability. The swarm's strengths lie in its above-average Dexterity and Intelligence, allowing it to strike quickly and strategically, while its ability to emit chaos pheromones can severely disrupt enemy formations. However, it has very low Strength, which makes its physical attacks less effective in raw power. The Khalkos Spawn's resistances to multiple damage types further contribute to its survivability in encounters.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Swarm of Khalkos Spawn is a dangerous adversary that can outmaneuve
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Khalkos Spawn
 
 *Medium* *Aberration*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Chaos Pheromones:** The swarm emits a cloud of pheromones in the air in a 10-foot-radius. The cloud spreads around corners. Each non-khalkos creature in the area makes a DC 12 Intelligence saving throw. On a failure  the creature is confused for 1 minute. It repeats the saving throw at the end of each of its turns  ending the effect on itself on a success. If the creature makes its saving throw or the condition ends for it  it is immune to the chaos pheromones of khalkos spawn for the next 24 hours.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Vile Barber</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>35</HP>
 <summary>The Vile Barber is a small, chaotic evil fey creature known for its deceptive and treacherous behavior. It excels in stealth and mobility, using its high Dexterity to evade attacks while inflicting harm with its unique abilities. With a Challenge Rating of 2, it poses a moderate threat to adventurers, particularly due to its ability to attack swiftly and cause ongoing damage through wounding effects. The creature is resistant to damage from most nonmagical attacks, making it harder to defeat with mundane weapons. However, its weaknesses lie in its low Constitution and Wisdom scores, making it somewhat vulnerable to effects that rely on these attributes.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ The combination of its sneaky tactics, ability to inflict ongoing damage, and fe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vile Barber
 
 *Small* *Fey* *Chaotic Evil*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Hidden Step:** The vile barber magically teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see and takes the Hide action.
+</statblock>
 
 

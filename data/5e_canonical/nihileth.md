@@ -1,6 +1,8 @@
 <MonsterName/>Nihileth</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>13</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Nihileth is a formidable undead creature characterized by its chaotic evil alignment and an array of powerful abilities. With a large stature and a significant challenge rating of 13, it poses a serious threat to adventurers. Its strengths lie in its high hit points of 157 and a respectable armor class of 17, along with various immunities and resistances that allow it to withstand a range of damage types. Notably, the Nihileth can switch between a ghostly form and an undead form, each offering unique advantages in combat. However, it has weaknesses in its slow Dexterity score and its reliance on the psychic condition to affect its enemies. The Nihileth’s notable abilities include its capability to spread a debilitating disease known as Nihilethic Rot, which can lead to dire consequences for those affected.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ The Nihileth can also take three legendary actions. It can make a perception che
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nihileth
 
 *Large* *Undead* *Chaotic Evil*
@@ -82,5 +85,6 @@ The nihileth can take 3 legendary actions, choosing from the options below. Only
 - **Detect:** The nihileth makes a Wisdom (Perception) check.
 - **Tail Swipe:** The nihileth makes one Tail attack.
 - **Rotten Drain (Costs 2 Actions):** One creature infected with the nihilethic rot disease within 30 feet of the nihileth takes 10 (3d6) psychic damage, and the nihileth regains hp equal to that amount.
+</statblock>
 
 

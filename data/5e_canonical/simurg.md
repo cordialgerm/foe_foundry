@@ -1,6 +1,8 @@
 <MonsterName/>Simurg</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>108</HP>
 <summary>The Simurg is a gargantuan celestial creature associated with neutral good alignment. It serves as a powerful ally in combat, with formidable flying capabilities and a range of abilities that allow it to heal, protect, and exert control over the battlefield. With strong physical attacks and potent spellcasting, the Simurg excels in both offense and support roles, making it a valuable addition to any party. However, its relatively low armor class for its size means that it can be vulnerable to focused attacks, especially from ranged enemies that can avoid its melee reach.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ The Simurg has a unique ability named Forceful Gale, which recharges on a roll o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Simurg
 
 *Gargantuan* *Celestial* *neutral good*
@@ -62,5 +65,6 @@ At will: detect poison and disease, detect thoughts, spare the dying
 - **Forceful Gale (Recharge 5-6):** The simurg beats its wings, creating wind in a 30-foot cone. Each creature in that area must make a DC 15 Strength saving throw. On a failure, a creature takes 27 (6d8) bludgeoning damage, is pushed 10 feet away from the simurg and is knocked prone. On a success, a creature takes half the damage and isn't pushed or knocked prone.
 
 
+</statblock>
 
 

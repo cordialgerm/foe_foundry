@@ -1,6 +1,10 @@
 <MonsterName/>Commoner</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>0</CR>
+<AC/>10</AC>
+<HP/>4</HP>
 <summary>A Commoner is an ordinary human or humanoid, typically a farmer, laborer, or craftsman. They wear simple clothes and lack combat training, making them vulnerable to threats from monsters, bandits, or marauding armies. Though they are not skilled fighters, Commoners are often resilient and resourceful, able to survive in harsh conditions and make do with whatever tools they have. They form the backbone of most societies, tending fields, raising livestock, or practicing simple trades. Despite their lack of power, Commoners often play pivotal roles in the stories of adventurers, offering shelter, information, or aid.</summary>
 
 <summary>The Commoner is a humble and unassuming creature within the Dungeons & Dragons universe, representing the everyday folk who are often swept up in the grand adventures of heroes. As a Medium humanoid with a very low challenge rating of 0, it represents an extremely weak opponent in combat with minimal offensive capabilities and very few hit points. It is primarily notable for its simplicity in rules and mechanics, making it an ideal character for players to use for role-playing or for Dungeon Masters to populate their worlds with flavor. The Commoner lacks any significant strengths and poses a negligible threat in encounters, making them excellent for non-combat scenarios or as background characters.</summary>
@@ -29,6 +33,7 @@ The most notable special ability of the Commoner is Angry Mob, which can be used
 
 Source: 5e_srd
 
+<statblock>
 ### Commoner
 
 *Medium humanoid (any race), any alignment*
@@ -53,7 +58,8 @@ Source: 5e_srd
 
 ***Club***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) bludgeoning damage.
 
-**Commoners** include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.
+**Commoners** include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.</statblock>
+
 
 
 
@@ -61,6 +67,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Commoner
 
 *Medium* *Humanoid*
@@ -85,6 +92,7 @@ Source: 5e_artisinal_monsters
 - **Stone:** Ranged Weapon Attack: +2 to hit, range 10/30 ft., one target. Hit: 2 (1d4) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -93,6 +101,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Commoner
 
 *Medium humanoid (any lineage)*
@@ -124,5 +133,6 @@ Source: 5e_artisinal_monsters
 - **Sling.** Ranged Weapon Attack: +2 to hit, range 30/120 ft., one target. Hit: 2 (1d4) bludgeoning damage.
 - **Angry Mob (1/Day).** The commoner moves up to half its speed toward a creature it can see. Each friendly commoner within 30 feet of the commoner can use its reaction to join the angry mob and move up to half its speed toward the same target. This movement doesn’t provoke opportunity attacks. If the initiating commoner is within 5 feet of the target, the target must make a DC 10 DEX save, taking 2 (1d4) bludgeoning damage on a failed save, or half as much damage on a successful one. For each commoner after the first that participated in the angry mob and that is within 10 feet of the target, the damage increases by 1 as stones, clubs, sticks, and similar “weapons” fly at the target from all angles. Afterwards, each commoner after the first that participated in the mob can’t use Angry Mob until it finishes a short or long rest.
 
+</statblock>
 
 

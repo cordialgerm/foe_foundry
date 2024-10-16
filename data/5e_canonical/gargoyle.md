@@ -1,6 +1,8 @@
 <MonsterName/>Gargoyle</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>52</HP>
 <summary>A Gargoyle is a grotesque, stone-skinned creature that perches atop buildings or cliffs, blending in with statues or natural rock formations. Its leathery wings, sharp claws, and fanged maw make it a fearsome predator when it descends upon its prey. Gargoyles are known for their ability to remain perfectly still for long periods, waiting for the perfect moment to strike. They are often used as guardians for ancient temples, castles, or tombs, animated by magic to protect treasures or sacred sites. Gargoyles are tough and resilient, their stone bodies providing natural armor against most attacks.</summary>
 
 <summary>The Gargoyle is a medium elemental creature that excels in both offensive and defensive capabilities, making it a formidable adversary in combat. With an Armor Class of 15, it can withstand a considerable amount of damage. Its 45 hit points give it average durability, allowing it to endure several rounds in battle. The creature possesses a flight speed of 60 feet, enhancing its mobility and giving it the ability to engage or retreat from threats effectively. Its main strengths include a decent Strength score of 14 and a high Constitution score of 16, which translates to good physical resilience. However, its mental attributes—particularly its low Intelligence and Charisma—are very bad, making it less effective in social situations or complicated problem-solving. Its versatility in combat is notable, as it can attack multiple times per turn, delivering both piercing and slashing damage.</summary>
@@ -52,6 +54,7 @@ Overall, the gargoyle balances offensive capabilities with tactical advantages t
 
 Source: 5e_srd
 
+<statblock>
 ## Gargoyle
 
 *Medium elemental, chaotic evil*
@@ -86,7 +89,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Claws.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) slashing damage.
+***Claws.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) slashing damage.</statblock>
+
 
 
 
@@ -94,6 +98,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gargoyle
 
 *Medium* *Elemental*
@@ -129,6 +134,7 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -137,6 +143,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gargoyle
 
 *Medium elemental*
@@ -171,5 +178,6 @@ Source: 5e_artisinal_monsters
 
 - **Fearsome Mien.** When a creature the gargoyle can see hits it with an attack, the gargoyle can shift its face to appear more monstrous. The attacker must succeed on a DC 13 WIS save or be frightened of the gargoyle until the end of its next turn.
 
+</statblock>
 
 

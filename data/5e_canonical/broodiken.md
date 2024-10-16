@@ -1,6 +1,8 @@
 <MonsterName/>Broodiken</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>44</HP>
 <summary>The Broodiken is a tiny construct creature characterized by its durability and specialized abilities, making it a challenging opponent for characters of low to moderate level. With a Challenge Rating of 1, it poses a moderate threat, particularly through its ability to deal consistent damage and remain largely unaffected by spells and other typical damage sources. One of its notable strengths lies in its high Constitution and impressive resistances, allowing it to withstand significant amounts of damage. However, it does have limitations in terms of its low Strength and Intelligence, and while its agility is decent, it primarily focuses on support and attachment rather than independent maneuverability. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Broodiken has a Bite attack. It makes a Melee Weapon At
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Broodiken
 
 *Tiny* *Construct* *Unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage, and the broodiken attaches to the target. While attached, the broodiken can’t attack, and at the start of each of the broodiken’s turns, the target takes 9 (2d6 + 2) piercing damage.
+</statblock>
 
 

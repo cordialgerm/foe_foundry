@@ -1,6 +1,9 @@
 <MonsterName/>Incubus</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>shapechanger</Subtype>
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>66</HP>
 <summary>An Incubus is the male counterpart to the Succubus, a demon that seduces and manipulates mortals to drain their life force and spread corruption. Incubi are masterful deceivers, often using their charm and illusion magic to manipulate their victims into submission. Like Succubi, they can take on a humanoid form that is irresistibly attractive, using seduction to fulfill their dark agendas. Incubi enjoy creating chaos and turning mortals against each other, all while feeding off their victims' emotions and vitality. Their ability to move between the Material and Ethereal planes makes them difficult to catch.</summary>
 
 
@@ -9,6 +12,7 @@
 
 Source: 5e_srd
 
+<statblock>
 ## Incubus
 
 *Medium fiend (shapechanger), neutral evil*
@@ -49,5 +53,6 @@ The fiend can have only one target charmed at a time. If it charms another, the 
 
 Constitution saving throw against this magic, taking 32 (5d10+5) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
 
-***Etherealness***. The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa.
+***Etherealness***. The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa.</statblock>
+
 

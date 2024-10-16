@@ -1,6 +1,10 @@
 <MonsterName/>Priest</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>2</CR>
+<AC/>13 (chain shirt)</AC>
+<HP/>27</HP>
 <summary>A Priest is a devout servant of a deity, often acting as a spiritual leader within a temple or religious community. Priests are knowledgeable in divine magic, capable of casting healing spells, blessings, and other holy rites to aid their followers. They are also skilled in using divine magic to smite enemies or ward off evil forces. Priests are typically clad in robes and carry holy symbols or relics of their faith, which they use to focus their magic. Though not physically powerful, Priests play an important role in guiding and protecting their communities with their wisdom and divine powers.</summary>
 
 <summary>The Priest is a Medium humanoid creature with a Challenge Rating of 2, making it a moderately challenging opponent for adventurers. With an Armor Class of 14, it presents a reasonable defense, while its hit points total 32, suggesting it can endure some damage before being defeated. The Priest excels in spellcasting, harnessing its Wisdom to effectively heal and protect allies and hinder foes. Notable spells include healing options and utility spells that can sway the course of a battle, establishing the Priest as a reliable support character. However, its physical capabilities are average, relying more on its magical prowess than combat skills. </summary>
@@ -51,6 +55,7 @@ The Priest serves as a multifunctional character capable of contributing both in
 
 Source: 5e_srd
 
+<statblock>
 ### Priest
 
 *Medium humanoid (any race), any alignment*
@@ -88,7 +93,8 @@ Cantrips (at will): *light*, *sacred flame*, *thaumaturgy*
 
 **Priests** bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites.
 
-A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties.
+A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties.</statblock>
+
 
 
 
@@ -96,6 +102,7 @@ A priest typically has one or more acolytes to help with religious ceremonies an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Priest
 
 *Medium* *Humanoid*
@@ -144,6 +151,7 @@ Source: 5e_artisinal_monsters
 - **Healing Word (1st-Level; V):** The priest or a living creature within 60 feet regains 5 (1d4 + 3) hit points. The priest can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 
 
@@ -152,6 +160,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Priest
 
 *Medium humanoid (any lineage)*
@@ -186,5 +195,6 @@ Source: 5e_artisinal_monsters
 	- 2/day each: bane, bless, cure wounds
 	- 1/day each: dispel magic, restoration
 
+</statblock>
 
 

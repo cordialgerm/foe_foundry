@@ -1,6 +1,8 @@
 <MonsterName/>Hobgoblin Captain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>18</AC>
+<HP/>52</HP>
 <summary>The Hobgoblin Captain is a formidable Medium humanoid creature that takes on the role of a tactical leader within a hobgoblin military structure. With an Armor Class of 18, it is well-defended against attacks, and boasts a respectable pool of Hit Points totaling 52, allowing it to withstand significant damage in combat. This captain is skilled both in physical combat and in leadership, having strong physical attributes and access to strategic abilities that enhance its allies' effectiveness. With a Challenge Rating of 3, it represents a moderate challenge for adventurers, rewarding careful planning and teamwork to overcome. The hobgoblin captain's ability to command fire, along with its various attack options, makes it a notable threat on the battlefield. However, without allies nearby, its combat effectiveness may diminish, particularly in terms of movement.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ An important special ability is Officers Command, which can be used once per day
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hobgoblin Captain
 
 *Medium* *Humanoid*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Officers Command (1/Day):** The hobgoblin inspires creatures of its choice within 30 feet that can hear and understand it and that have a Challenge Rating of 2 or lower. For the next minute  inspired creatures gain an expertise die on attack rolls and saving throws. A creature can benefit from only one Officers Command at a time.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Devil, Moldering</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Moldering Devil is a small, lawful evil fiend known for its corrupting touch and ability to decay food and water in its vicinity. With a Challenge Rating of 1/2, it is a lower-tier threat, but its capabilities can catch unsuspecting adventurers off guard. It has a respectable Armor Class of 13 due to its natural armor, allowing it to withstand some attacks while its 27 hit points provide a decent buffer in combat. With a speed of 30 feet and the ability to fly up to 40 feet with its Field Hopper ability, it can maneuver effectively in battle. The creature excels in creating hazardous environments where food and drink are rendered poisonous, making it a unique opponent in encounters. However, its low Charisma at -2 renders it less effective in social situations.</summary>
 
 <detail>
@@ -26,6 +28,7 @@ Overall, the Moldering Devil presents a unique challenge that focuses on environ
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil, Moldering
 
 *Small* *Fiend* *lawful evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, 5 ft., one target, 4 (1d4+2) piercing damage + 3 (1d6) necrotic.
 
 
+</statblock>
 
 

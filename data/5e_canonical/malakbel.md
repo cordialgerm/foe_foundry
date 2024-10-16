@@ -1,6 +1,8 @@
 <MonsterName/>Malakbel</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>9</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>102</HP>
 <summary>Malakbel is a Medium-sized Fiend characterized by its Chaotic Evil alignment and formidable presence in combat. With an Armor Class of 14, it is moderately difficult to hit, but it compensates for this with a solid pool of 102 hit points, making it capable of sustaining considerable damage in battle. Its Challenge Rating of 9 indicates that it is a significant threat for mid-level adventurers, offering 5,000 experience points upon defeat. Malakbel's strengths lie in its strong Dexterity and Charisma, with modifiers of +3 and +5, respectively, indicating very good capabilities in those areas. Its abilities grant it resilience against various attacks and the power to deal substantial damage through both radiant and fire attacks. However, it is still susceptible to cold and lightning damage and can be injured by nonmagical attacks, which are only resisted. Notably, its Blistering Radiance lights up the battlefield, dealing consistent damage to nearby foes and dispelling lower-level darkness spells.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, Malakbel is a powerful enemy that excels in inflicting radiant and fire
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Malakbel
 
 *Medium* *Fiend* *Chaotic Evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Scorching Blast:** Melee or Ranged Spell Attack: +9 to hit, reach 5 ft. or range 120 ft., one target. Hit: 18 (3d8 + 5) fire damage.
 - **Searing Flare (Recharge 5–6):** The malakbel intensifies the heat and light it sheds to withering levels. Each creature in the bright light shed by the malakbel’s Blistering Radiance trait must make a DC 16 Constitution saving throw. On a failure, a creature takes 13 (3d8) fire damage and 22 (4d10) radiant damage and suffers one level of exhaustion. On a success, a creature takes half the damage and doesn’t suffer exhaustion.
 - **Teleport:** The malakbel magically teleports, along with any equipment it is wearing or carrying, up to 100 feet to an unoccupied space it can see.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Necrophage Ghast</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>65</HP>
 <summary>The Necrophage Ghast is a Medium undead creature embodying chaotic evil. This monster possesses a mix of physical and magical capabilities that make it a formidable foe in combat. With an Armor Class of 13, the Necrophage Ghast can absorb some damage while boasting a total of 65 hit points, allowing it to endure a fair amount of harm. It has a relatively high Dexterity score of 17, granting it a good modifier of +3, making its attacks quick and nimble. Despite its strengths, the creature has a low Charisma of 8, which presents a significant weakness in social interactions and spells that rely on this stat. The presence of the Necrophage Ghast can significantly hinder its opponents with its special abilities, such as Necrophage Stench and Turning Defiance, while its spellcasting options grant it control and damage-dealing capabilities.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of its actions during combat, the Necrophage Ghast can make a melee wea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Necrophage Ghast
 
 *Medium* *Undead* *chaotic evil*
@@ -56,5 +59,6 @@ Cantrips (at will): friends, mage hand, poison spray, prestidigitation
 - **Claws:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

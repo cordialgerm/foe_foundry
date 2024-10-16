@@ -1,6 +1,8 @@
 <MonsterName/>Conjoined Queen</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Conjoined Queen is a large monstrosity characterized by its chaotic neutral alignment. It is a formidable opponent in combat, possessing a strong combination of physical might and spellcasting abilities. With an impressive Armor Class of 18 and 168 hit points, it can withstand significant damage before falling. The queen excels in both melee combat and magical support, particularly utilizing charm effects and enhanced mobility through burrowing and climbing. However, its reliance on spells makes it vulnerable to disruptions if not managed properly. As a Challenge Rating 10 creature, the Conjoined Queen presents a solid challenge for adventurers, combining strong offensive capabilities with defensive traits and magical versatility.</summary>
 
 <detail>
@@ -43,6 +45,7 @@ Overall, the Conjoined Queen combines versatile movement, charm abilities, and p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Conjoined Queen
 
 *Large* *Monstrosity* *chaotic neutral*
@@ -85,5 +88,6 @@ Cantrips (at will): acid splash, mage hand, prestidigitation, ray of frost
 - **Queen’s Wrathful Clattering (1/Day):** The conjoined queen clacks her long chitinous legs together, inciting rage in her allies. Each ally within 60 feet of the queen who can hear her has advantage on its next attack roll, and its speed is increased by 10 until the end of its next turn.
 
 
+</statblock>
 
 

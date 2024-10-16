@@ -1,6 +1,10 @@
 <MonsterName/>Acolyte</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>9</HP>
 <summary>An Acolyte is a devout follower of a deity or religious order, often seen as an apprentice or lower-ranking member of a temple or church. They wear simple robes, usually bearing the symbol of their faith, and carry religious icons or holy books. While they may not be physically imposing, Acolytes possess divine magic, allowing them to heal the wounded, ward off evil, or offer blessings to those in need. They are deeply devoted to their god or goddess and often serve as assistants to higher-ranking clergy, tending to shrines, performing rituals, and spreading the teachings of their faith.</summary>
 
 <summary>The Acolyte is a Medium humanoid creature often found in religious settings, acting as a novice priest or an assistant to more experienced clergy members. With a challenge rating of 1/4, it presents a moderate level of threat in combat primarily due to its spellcasting abilities rather than physical prowess. Its strengths lie in its access to supportive spells, such as healing and blessings, and its ability to deal radiant damage from a distance. However, with low armor class (10) and limited hit points (11), the Acolyte is vulnerable if engaged directly, making it reliant on allies and careful positioning during encounters.</summary>
@@ -49,6 +53,7 @@ Overall, the Acolyte plays an essential role in enhancing the performance and su
 
 Source: 5e_srd
 
+<statblock>
 ### Acolyte
 
 *Medium humanoid (any race), any alignment*
@@ -80,7 +85,8 @@ Cantrips (at will): *light*, *sacred flame*, *thaumaturgy*
 
 ***Club***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) bludgeoning damage.
 
-**Acolytes** are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.
+**Acolytes** are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.</statblock>
+
 
 
 
@@ -88,6 +94,7 @@ Cantrips (at will): *light*, *sacred flame*, *thaumaturgy*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Acolyte
 
 *Medium* *Humanoid*
@@ -126,6 +133,7 @@ Source: 5e_artisinal_monsters
 - **An acolyte is a priest in training or an assistant to a more senior member of the clergy:** While acolytes may be found acting as servants or messengers in major temples  an acolyte may also be the only representative of their faith serving a village or roadside shrine.
 
 
+</statblock>
 
 
 
@@ -134,6 +142,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Acolyte
 
 *Medium humanoid (any lineage)*
@@ -165,5 +174,6 @@ Source: 5e_artisinal_monsters
 	- At will: light, thaumaturgy
 	- 3/day each: bless, cure wounds, sanctuary
 
+</statblock>
 
 

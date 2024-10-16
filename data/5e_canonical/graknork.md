@@ -1,6 +1,8 @@
 <MonsterName/>Graknork</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>14</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>201</HP>
 <summary>Graknork is a gargantuan monstrosity that is not aligned with any particular philosophy or force. With an impressive Armor Class of 20, it is quite difficult to damage, and its robust Hit Points totaling 201 reflect its tremendous resilience in battle. Graknork is capable of moving swiftly both through land and water, with a walking speed of 50 feet and a swimming speed of 30 feet, making it a formidable presence in various environments. As a creature with a Challenge Rating of 14, it poses a significant threat, earning 11,500 experience points for those who defeat it. Notable strengths include exceptional physical capabilities, solid defensive attributes, and powerful offensive actions, while its weaknesses include a lack of proficiency in intelligence and charisma, making it vulnerable to mind-controlling effects or manipulation.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ Graknork also possesses the Eye Ray ranged attack, which has a +9 to hit and can
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Graknork
 
 *Gargantuan* *Monstrosity* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Freezing Eye (Recharge 5-6):** The graknork’s blue eye flares open and releases a beam of icy energy in a line that is 120-feet long and 10 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw. On a failure, a creature takes 35 (10d6) cold damage and is restrained for 1 minute as its limbs freeze. On a success, a creature takes half the damage and isn’t restrained. A restrained creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Alternatively, the restrained creature can be freed if it takes at least 10 fire damage.
 
 
+</statblock>
 
 

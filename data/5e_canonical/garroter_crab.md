@@ -1,6 +1,8 @@
 <MonsterName/>Garroter Crab</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>18</HP>
 <summary>The Garroter Crab is a tiny beast characterized by its vicious predatory behavior and unique abilities. With an armor class of 13, it possesses moderate protection that allows it to withstand some attacks. Having hit points totaling 18, it is not particularly durable but can still be a nuisance to adventurers. The crab has a walking speed of 20 feet and operates best in ambushes due to its grappling capability. It belongs to a challenge rating of 1/4, indicating that it presents a manageable threat to low-level adventurers. Notably, the Garroter Crab has the ability to deliver a significant mental revelation through its Strangling Divination when it reduces a humanoid to 0 hit points while grappling them, making it more than just a physical attacker.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Garroter Crab can make a melee weapon attack using its 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Garroter Crab
 
 *Tiny* *Beast* *Unaligned*
@@ -45,5 +48,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Whip-Claw:** Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 5 (1d6 + 2) slashing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target can’t speak or cast spells with verbal components, and the crab can’t use its Whip Claw on another target.
+</statblock>
 
 

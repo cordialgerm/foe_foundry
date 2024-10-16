@@ -1,6 +1,8 @@
 <MonsterName/>Diseased Giant Rat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>7</HP>
 <summary>The Diseased Giant Rat is a small beast that poses a challenge for unsuspecting adventurers, especially in urban or dungeon settings where it often lurks in sewers and filth. With an Armor Class of 12 and a modest 7 hit points, it is relatively easy to defeat, but its ability to infect characters with disease makes it a notable threat despite its low Challenge Rating of 1/8. The rat's keen sense of smell and pack tactics allow it to be more effective when engaging in combat with its allies. Although it has low physical strength and intelligence, its speed and agility make it a savvy opponent, relying on numbers to overwhelm its targets.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ When it comes to actions, the Diseased Giant Rat can use its Bite attack as a me
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Diseased Giant Rat
 
 *Small* *Beast*
@@ -45,5 +48,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) piercing damage. Giant rats who dwell in sewers and filth can carry debilitating disease. A creature bitten by a diseased giant rat makes a DC 10 Constitution saving throw or it becomes infected with sewer plague.
 
 
+</statblock>
 
 

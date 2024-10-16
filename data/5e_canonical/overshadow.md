@@ -1,6 +1,8 @@
 <MonsterName/>Overshadow</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>90</HP>
 <summary>The Overshadow is a large, chaotic evil undead creature that thrives in darkness and stealth. With an Armor Class of 14 and 90 hit points, it presents a moderate challenge to adventurers, rated at Challenge Rating 4. Its physical capabilities are quite poor, having a low Strength score of 6, which results in a very bad modifier of -2. However, it compensates for this weakness with a high Dexterity of 18, yielding a good modifier of +4 that enhances its stealth abilities. The Overshadow excels in avoiding damage, being resistant to most damage types and immune to necrotic and poison damage, making it a formidable foe in battle. However, it suffers from a significant weakness to radiant damage and has its effectiveness severely diminished in sunlight.</summary>
 
 <detail>
@@ -15,6 +17,7 @@ In combat, the Overshadow can make two attacks in a single turn through its Mult
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Overshadow
 
 *Large* *Undead* *chaotic evil*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bringer of Darkness:** The overshadow dims the light around it. The radius of each light source within 60 feet of it is halved for 1 minute. The overshadow can’t use this action while in sunlight.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Young Bronze Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>8</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>142</HP>
 <summary>A Young Bronze Dragon is a noble and courageous creature that dwells near coastlines or large bodies of water. Its gleaming bronze scales shimmer in the sun, and its lightning breath weapon is as devastating as a storm. Young Bronze Dragons are highly intelligent and often take an interest in the affairs of mortals, particularly when justice or protection is needed. They are known to aid sailors in distress or defend coastal settlements from pirates and monsters. Despite their youth, they are already wise and noble, using their strength to promote peace and justice.</summary>
 
 <summary>The Young Bronze Dragon is a formidable creature within the Dungeons & Dragons realm, often serving as a guardian of coastal regions and an ally to good-aligned adventurers. This large dragon possesses a diverse set of offensive and defensive capabilities, making it a tough opponent in combat scenarios. With exceptional physical attributes, particularly in Strength and Constitution, it becomes a force to be reckoned with. The dragon exhibits good mobility with the ability to walk, fly, and swim efficiently. It is highly intelligent and charismatic, able to manipulate and interact with others effectively. This dragon's strongest assets include its powerful breath weapons and innate spellcasting, while its vulnerabilities are limited, as it is immune to lightning damage.</summary>
@@ -45,6 +47,7 @@ As a bonus action, the Young Bronze Dragon can Change Shape, transforming into a
 
 Source: 5e_srd
 
+<statblock>
 # Young Bronze Dragon (Metallic)
 
 *Large dragon, lawful good*
@@ -85,7 +88,8 @@ Source: 5e_srd
 
 **Lightning Breath**. The dragon exhales lightning in a 60- foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.
 
-**Repulsion Breath**. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw. On a failed save, the creature is pushed 40 feet away from the dragon.
+**Repulsion Breath**. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw. On a failed save, the creature is pushed 40 feet away from the dragon.</statblock>
+
 
 
 
@@ -93,6 +97,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Bronze Dragon
 
 *Large* *Dragon*
@@ -144,6 +149,7 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 18 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 21 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Foresight (Costs 2 Actions):** The dragon focuses on the many sprawling futures before it and predicts what will come next. Attacks against it are made with disadvantage until the start of its next turn.
+</statblock>
 
 
 
@@ -152,6 +158,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Bronze Dragon
 
 *Large dragon*
@@ -188,5 +195,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The dragon magically transforms into a Beast or Humanoid that has a challenge rating no higher than its own, or back into its true form, which is Dragon. Any equipment it is wearing or carrying transforms with it or is borne by the new form (the dragon’s choice). It reverts to its true form if it dies. In a new form, the dragon retains its HP, ability to speak, proficiencies, and INT, WIS, and CHA scores, as well as this bonus action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
 
+</statblock>
 
 

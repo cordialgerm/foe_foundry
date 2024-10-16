@@ -1,6 +1,8 @@
 <MonsterName/>Rimewing</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>The Rimewing is a small, unaligned beast resembling a giant moth. Known for its icy beauty and enchanting abilities, the Rimewing serves as a minor yet fascinating creature within the Dungeons & Dragons ecosystem. With a Challenge Rating of 1/4, it poses a minimal threat to adventurers, with its primary strength lying in its ability to charm opponents and the natural advantage it possesses in stealth. While its combat attributes are decent, with an Armor Class of 12 and 22 hit points, it lacks significant offensive capability, making it more reliant on its special abilities for combat effectiveness. Its cold damage immunity adds to its resilience against certain attacks, providing it some degree of protection in icy environments, but its overall low attributes limit its impact in more challenging encounters.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For its actions, the Rimewing can attack with its Proboscis, making a melee weap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rimewing
 
 *Small* *Beast* *unaligned*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Frosted Wings (1/Day):** A 20-foot radius cloud of colorful ice crystals extends from the rimewing. Each creature in that area must succeed on a DC 10 Wisdom saving throw or be charmed by the rimewing for 1 minute. While charmed by the rimewing, a creature is incapacitated and must move up to its speed toward the rimewing at the start of its turn, stopping when it is 5 feet away. A charmed creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

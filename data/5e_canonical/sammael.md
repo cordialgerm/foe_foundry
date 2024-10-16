@@ -1,6 +1,8 @@
 <MonsterName/>Sammael</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>104</HP>
 <summary>Sammael is a celestial being of medium size and neutral good alignment, serving as a powerful agent of divine will. With a challenge rating of 7, it poses a significant threat in combat while also offering support to allies through its impressive abilities. Sammael is exceptionally strong and wise, enabling it to manipulate the battlefield and impose lasting consequences on its foes. It possesses resistances to radiant damage and nonmagical physical attacks, along with several immunities to conditions that hinder other creatures. However, its effectiveness is somewhat diminished by average dexterity and intelligence scores, which can limit its agility and cleverness in more complex scenarios.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, Sammael is a powerful celestial warrior, adept at dealing damage and ma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sammael
 
 *Medium* *Celestial* *neutral good*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Whip (Punisher Form Only):** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 6 (1d4 + 4) slashing damage plus 9 (2d8) radiant damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or be stunned until the end of its next turn. A creature's hp maximum is reduced by an amount equal to the radiant damage taken. This reduction lasts until the creature finishes a short or long rest.
 
 
+</statblock>
 
 

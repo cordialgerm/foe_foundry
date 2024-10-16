@@ -1,6 +1,8 @@
 <MonsterName/>Risen Reaver</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (studded leather)</AC>
+<HP/>168</HP>
 <summary>The Risen Reaver is a formidable undead creature that embodies chaotic evil, serving as both a relentless attacker and a terrifying presence on the battlefield. With a high armor class and a significant pool of hit points, it can withstand considerable damage while delivering powerful melee attacks. Its strength and constitution scores are impressive, making its physical attacks particularly dangerous. The Risen Reaver is not only resilient but also possesses a unique ability to absorb nonmagical melee weapons, enhancing its combat capabilities. While it lacks intelligence and wisdom, which limits its strategic options and awareness, its exceptional mobility and blood sense make it a menacing opponent that can pinpoint the location of living foes. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ In reaction to being hit with a nonmagical melee weapon, the Risen Reaver can ac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Risen Reaver
 
 *Large* *Undead* *Chaotic Evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Infused Arsenal:** When the risen reaver is hit with a nonmagical melee weapon or when it starts its turn in the same space as a nonmagical melee weapon that isn’t being worn or carried, it absorbs the weapon into its body. If the weapon is being wielded by an attacker, the attacker must succeed on a DC 15 Strength saving throw or lose its weapon. For 1 minute, the reaver has resistance to the type of damage dealt by that weapon, and when it hits with its Bladed Fist, the fist deals an extra 2 (1d4) damage of the type dealt by the weapon. The reaver can absorb no more than three weapons in this way every 24 hours.
+</statblock>
 
 

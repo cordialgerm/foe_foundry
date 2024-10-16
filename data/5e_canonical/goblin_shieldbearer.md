@@ -1,6 +1,8 @@
 <MonsterName/>Goblin Shieldbearer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>10</HP>
 <summary>The Goblin Shieldbearer is a small humanoid creature that serves as a nimble and strategic combatant on the battlefield. With a challenge rating of 1/2, it is considered a low-threat enemy; however, it brings a notable tactical advantage through its abilities, particularly in providing cover to its allies. While its offensive capabilities are somewhat limited, it compensates for this with defensive tactics and the ability to evade attacks. With a modest Armor Class of 13, this goblin can take a few hits but is generally fragile, having only 10 hit points on average. Its strengths lie in stealth and the ability to work alongside other goblins, but it is also hindered by low physical strength and constitution.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Shieldbearer can utilize "Nimble Escape," allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Shieldbearer
 
 *Small* *Humanoid*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 

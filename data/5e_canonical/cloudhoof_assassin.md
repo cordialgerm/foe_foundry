@@ -1,6 +1,8 @@
 <MonsterName/>Cloudhoof Assassin</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>The Cloudhoof Assassin is a Medium-sized beast characterized by its agility and strength, making it a formidable opponent for adventurers. It boasts a respectable Armor Class of 13 and a moderately high hit point total of 45, derived from rolling seven eight-sided dice plus an additional 14 hit points, providing it with good durability in combat. With a challenge rating of 1, it offers a manageable but engaging encounter that can reward players with 200 experience points. The Cloudhoof excels in maneuverability, able to walk at a speed of 40 feet, and showcases both exceptional strength and dexterity, each at a score of 17. However, it has a low intelligence, charisma, and wisdom, indicating that it's not particularly perceptive or charming in social situations.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Cloudhoof Assassin is a tactical beast with potential for controlli
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cloudhoof Assassin
 
 *Medium* *Beast* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Shoving Kick:** Melee Weapon Attack: +5 to hit, 5 ft., one target, 5 (1d4+3) bludgeoning damage and the target must make DC 13 Str save or be pushed up to 5 ft. away from the cloudhoof assassin. If the cloudhoof scores a critical hit the target is pushed up to 10 ft. on a failed save.
 
 
+</statblock>
 
 

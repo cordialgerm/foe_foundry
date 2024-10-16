@@ -1,6 +1,8 @@
 <MonsterName/>Fear Liath</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>33</HP>
 <summary>The Fear Liath is a Large undead creature characterized by its neutral evil alignment. It serves as a menacing presence in any adventurer's path, utilizing its ability to enact a powerful curse and its incorporeal form to confound opponents. The Fear Liath is notably resilient to various forms of damage, imposing its gray curse on those it defeats. However, it has lower hit points and relatively average defenses, making it vulnerable to strategic attacks that exploit its weaknesses. It is equipped with a decent melee attack, but its true strength lies in its ability to manipulate the battlefield and instill fear in its enemies.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ For its combat actions, the Fear Liath can execute a melee attack with a slam. T
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fear Liath
 
 *Large* *Undead* *neutral evil*
@@ -61,5 +64,6 @@ Unless surprised, a creature can avert its eyes to avoid looking directly at the
 - **Slam:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage. The target must succeed on a DC 13 Constitution saving throw or be blinded for 1 minute. It can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Magmin</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>9</HP>
 <summary>A Magmin is a small, fiery elemental creature made of molten rock and living flame. These creatures are born from the Elemental Plane of Fire and are known for their destructive tendencies. Magmins are highly energetic and reckless, often setting fire to everything around them as they move. In combat, they can ignite objects and enemies with their touch, and when they are destroyed, they explode in a burst of fire. Magmins revel in destruction and are often summoned by fire-wielding spellcasters to cause chaos and havoc in battle.</summary>
 
 <summary>The Magmin is a small elemental creature that embodies the raw essence of fire and magma. With a challenge rating of 1/2 and a hit point maximum of 14, the Magmin serves as a minor yet dangerous foe in combat, particularly excelling in environments where fire damage can be abundant. It has unique abilities that allow it to sustain itself in battle, including its ability to ignite itself, create bursts of flame upon death, and resist nonmagical weapon damage. However, its low strength and constitution make it relatively fragile in terms of endurance. The Magmin is best characterized by its unpredictable and explosive nature, making it a challenging opponent for lower-level adventurers.</summary>
@@ -41,6 +43,7 @@ Overall, the Magmin's unique abilities and elemental synergy make it a notable c
 
 Source: 5e_srd
 
+<statblock>
 ## Magmin
 
 *Small elemental, chaotic neutral*
@@ -71,7 +74,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Touch***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d6) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 3 (1d6) fire damage at the end of each of its turns.
+***Touch***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (2d6) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 3 (1d6) fire damage at the end of each of its turns.</statblock>
+
 
 
 
@@ -79,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Magmin
 
 *Small* *Elemental*
@@ -111,6 +116,7 @@ Source: 5e_artisinal_monsters
 - **Spurt Magma (Ablaze Only):** Ranged Weapon Attack: +5 to hit, range 30 ft., one target. Hit: 5 (1d6 + 2) fire damage.
 
 
+</statblock>
 
 
 
@@ -119,6 +125,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Magmin
 
 *Small elemental*
@@ -152,5 +159,6 @@ Source: 5e_artisinal_monsters
 
 - **Ignited Illumination.** The magmin sets itself ablaze or extinguishes its flames. While ablaze, the magmin sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
 
+</statblock>
 
 

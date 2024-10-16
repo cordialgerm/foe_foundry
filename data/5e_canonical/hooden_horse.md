@@ -1,6 +1,8 @@
 <MonsterName/>Hooden Horse</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>117</HP>
 <summary>The Hooden Horse is a medium undead creature embodying a lawful evil alignment. This monstrous, spectral steed is characterized by its ability to hunt down wrongdoers and exact a chilling form of justice. With a formidable presence on the battlefield, it boasts a good armor class of 14 and 117 hit points, allowing it to endure significant damage. The Hooden Horse has high strength, good dexterity, and an exceptional charisma, enabling it to be both a formidable combatant and an eerie manipulator in social situations. It has vulnerabilities to fire, but it is immune to necrotic and poison damage, making it resistant to common damage types faced by many foes. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Hooden Horse is a powerful undead adversary that combines physical 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hooden Horse
 
 *Medium* *Undead* *lawful evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Call to Judgment:** The hooden horse points at a being it can see and demands that the creature submit to justice. The target must succeed on a DC 15 Charisma saving throw or be charmed for 1 minute. If the charmed target is more than 5 feet away from the hooden horse, the target must take the Dash action on its turn to move toward the hooden horse by the most direct route. It doesn’t avoid opportunity attacks, but, before moving into damaging terrain, such as lava or a pit, the target can repeat the saving throw. The creature can also repeat the saving throw at the end of each of its turns or whenever it takes damage from the hooden horse. If a creature’s saving throw is successful, the effect ends on it.<br><br>The hooden horse can have only one target charmed at a time. If it charms another, the effect on the previous target ends.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Jackalope</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>55</HP>
 <summary>The Jackalope is a tiny beast that thrives on agility and cunning. With an armor class of 14 and a hit point total of 55, it presents a decent challenge that can test a party’s strategic approach. Its speed of 50 feet allows for quick movements during combat, while its challenge rating of 3 indicates that it can hold its own against a low to mid-tier adventuring party. The creature has remarkable abilities that focus on evasion and stealth, making it difficult to pin down during encounters. While it has relatively low physical attack power compared to larger foes, its maneuverability and special abilities can make it a surprisingly resilient opponent. The Jackalope's notable strengths include high Dexterity, which provides excellent dexterity saving throws and the ability to navigate combat fluidly, while it suffers from a very low Intelligence score which limits its problem-solving capabilities. </summary>
 
 <detail>
@@ -31,6 +33,7 @@ In terms of reactions, the Jackalope can employ **Uncanny Dodge**; if an attacke
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jackalope
 
 *Tiny* *Beast*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Uncanny Dodge:** When an attacker the jackalope can see hits it with an attack, the jackalope halves the attacks damage against it.
 
 
+</statblock>
 
 

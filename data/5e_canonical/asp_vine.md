@@ -1,6 +1,8 @@
 <MonsterName/>Asp Vine</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>55</HP>
 <summary>The Asp Vine is a Medium-sized plant creature that plays a role in ambush and crowd control within its environment. With a challenge rating of 4, it presents a moderate threat to adventurers, particularly due to its ability to grapple and poison multiple targets simultaneously. Its strengths lie in its decent armor class of 13 and a respectable pool of hit points totaling 55, allowing it to endure several attacks. However, it is vulnerable to slashing damage and lacks offensive capabilities when grappling multiple targets, which can be seen as a significant weakness. Notably, the Asp Vine camouflages itself as a normal bundle of vines when motionless, making it an effective ambusher.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In combat, the Asp Vine can perform a Multiattack, allowing it to make four Vine
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Asp Vine
 
 *Medium* *Plant* *unaligned*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Vine:** Melee Weapon Attack: +6 to hit, 5 ft., one target, 4 (1d4+2) piercing damage and 5 (2d4) poison and the target must make DC 14 Con save or be poisoned for 1 min. If the target is a creature it is grappled (escape DC 14). Until this grapple ends the target is restrained and must succeed on a new save each round it remains grappled or take another 5 (2d4) poison. The asp vine can grapple up to four targets at a time though it can still make vine attacks vs. other targets even if it has four grappled opponents.
 
 
+</statblock>
 
 

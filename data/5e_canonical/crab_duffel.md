@@ -1,6 +1,8 @@
 <MonsterName/>Crab, Duffel</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Duffel Crab is a formidable Large monstrosity that resides in aquatic environments. Known for its exceptional ability to manipulate extradimensional spaces, this creature serves as both a predator and a complex trap. It can hold multiple creatures within its unique "shell," allowing it to capture its prey efficiently. With strong physical attributes, particularly in strength and constitution, the Duffel Crab poses a significant threat in combat, especially to those who find themselves within its grasp. Though it has some weaknesses, such as low intelligence and charisma, its ability to incapacitate foes by trapping them makes it a challenging encounter for adventurers.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ The "Collect" action is particularly dangerous, as it allows the crab to place a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crab, Duffel
 
 *Large* *Monstrosity* *unaligned*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Collect:** Places one target it is grappling into its extradimensional space if there is room and grapple ends. Target blinded and restrained and has total cover vs. attacks and effects outside. A trapped creature can take its action to climb out of the bag by succeeding on a DC 13 Str or Dex check (creature’s choice). If crab dies trapped creature is no longer restrained by crab and can escape bag using 5 ft. of movement exiting prone.
 
 
+</statblock>
 
 

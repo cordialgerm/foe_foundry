@@ -1,6 +1,8 @@
 <MonsterName/>Giant, Shire</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>138</HP>
 <summary>The Giant, Shire is a huge, lawful evil creature that plays a menacing role on the battlefield. With a formidable armor class of 14 and a generous pool of hit points totaling 138, this giant is capable of withstanding significant damage while dishing out powerful attacks. Its distinct strengths lie in its high strength and constitution, making it exceptionally tough and effective in melee combat. However, the Giant, Shire suffers from low dexterity, which limits its speed and agility, making it somewhat predictable in its movements. This giant can wield a pitchfork with deadly precision and also has the capability to throw its opponents, adding to its versatility in combat scenarios. The challenge rating of 8 indicates that it is a worthy foe for a party of adventurers, providing them with 3,900 experience points for their efforts in defeating it.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ The grab action enables the Giant, Shire to seize a medium or smaller creature w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant, Shire
 
 *Huge* *Giant* *lawful evil*
@@ -44,5 +47,6 @@ Source: 5e_artisinal_monsters
 - **Throw:** Throws a creature it is grappling at a space it can see within 30' of it. The thrown creature takes 14 (4d6) bludgeoning damage and must make DC 15 Dex save or land prone. If the target space is occupied by another creature that creature must make DC 15 Dex save or take 14 (4d6) bludgeoning damage and be knocked prone.
 
 
+</statblock>
 
 

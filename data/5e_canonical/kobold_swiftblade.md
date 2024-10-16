@@ -1,6 +1,8 @@
 <MonsterName/>Kobold Swiftblade</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (leather armor)</AC>
+<HP/>80</HP>
 <summary>The Kobold Swiftblade is a small humanoid creature renowned for its agility and cunning in combat. With an Armor Class of 15 due to its leather armor, it is relatively hard to hit, although it has moderate durability with 80 hit points. It moves quickly on the ground with a speed of 30 feet and can climb at a rate of 15 feet, enhancing its mobility in various environments. The creature is rated at a Challenge Rating of 3, indicating that it poses a moderate threat to adventurers. Its high Dexterity of +6 gives it exceptional competence in ranged and melee attacks, allowing it to strike with accuracy and deal significant damage using its weapons. However, its low Strength (-1) and average Constitution (+0) make it less effective in straightforward physical confrontations. Notably, the Kobold Swiftblade benefits from its Pack Tactics ability, which grants it advantage on attack rolls when its allies are near, making it particularly deadly in groups. Conversely, its Sunlight Sensitivity exposes it to disadvantages while in bright light, reducing its effectiveness in daylight encounters.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Kobold Swiftblade excels at ambushing and flanking opponents, makin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold Swiftblade
 
 *Small humanoid*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 
 - **Hidden Scurry.** The swiftblade moves up to 15 feet without provoking opportunity attacks, and if it moves into a lightly or heavily obscured area, it takes the Hide action, using its Stealth value as the result of the check. If the swiftblade is aware of traps in the area, it can choose if this movement triggers any of them.
 
+</statblock>
 
 

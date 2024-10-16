@@ -1,6 +1,8 @@
 <MonsterName/>Alp</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>44</HP>
 <summary>The Alp is a Small fey creature characterized by its chaotic evil alignment. With a moderate Armor Class of 13 and a total of 44 hit points, it presents a notable challenge for lower-level adventurers due to its agility and magical abilities. As a challenge rating of 1, it rewards 200 XP upon defeat. The Alp excels in stealth and has innate spellcasting capabilities, allowing it to manipulate shadows and create illusions, making it a tricky opponent to deal with. Its weaknesses include vulnerability to bright light, which imposes disadvantages on its attacks and perception checks. Overall, the Alp is a deceptive enemy that uses clever tactics, illusions, and the ability to transform to evade and confuse its foes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Alp's signature action is the Sleeper's Slap, a melee attack with
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alp
 
 *Small* *Fey* *chaotic evil*
@@ -54,5 +57,6 @@ At will: invisibility (self only)
 - **Sleeper's Slap:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage, and, if the target was sleeping or unconscious before it was hit, it must succeed on a DC 13 Wisdom saving throw or become frightened and restrained for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the restrained condition on itself on a success. The creature must succeed on another saving throw on a following round to end the frightened condition.
 
 
+</statblock>
 
 

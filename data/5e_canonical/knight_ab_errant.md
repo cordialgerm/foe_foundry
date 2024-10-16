@@ -1,6 +1,8 @@
 <MonsterName/>Knight Ab-errant</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (armor scraps)</AC>
+<HP/>93</HP>
 <summary>The Knight Ab-errant is a formidable combatant in the realm of Dungeons & Dragons, exhibiting a blend of physical strength and tactical prowess. This large humanoid creature is versatile and can adapt to various combat scenarios, making it a strong opponent on the battlefield. With a high Strength score of 19 (+4), the Knight Ab-errant excels in melee combat, capable of delivering devastating blows. Its decent Constitution score of 17 (+3) provides it with a solid pool of health, totaling 93 hit points, ensuring it can withstand considerable damage before succumbing. However, it is vulnerable to psychic damage, making it susceptible to specific magical attacks. The Knight Ab-errant also boasts several special abilities that enhance its effectiveness in combat, such as increased damage against smaller foes and resilience against magical effects. Its average Dexterity score allows for some agility, though it is mainly built for strength.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For its actions, the Knight Ab-errant can make two melee attacks as part of its 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Knight Ab-errant
 
 *Large* *Humanoid* *any alignment*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Fist:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

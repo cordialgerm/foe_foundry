@@ -1,6 +1,8 @@
 <MonsterName/>Young Flame Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>8</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>190</HP>
 <summary>The Young Flame Dragon is a formidable creature in the Dungeons & Dragons universe, embodying the chaotic and malevolent nature typical of dragons. With a large and imposing presence, it serves as an exceptional adversary in combat, offering a blend of physical attacks and devastating fire-based abilities. Its notable immunity to fire damage, along with its exceptional speed and multiple attack options, make it a compelling opponent. However, despite its strengths, it is vulnerable to cold damage and relies on positioning due to its relatively high Armor Class. The creature can challenge parties with its potent breath attack and its ability to inflict damage simply by being engaged in melee.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ One of its most fearsome abilities is the "Fire Breath," which allows the dragon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Flame Dragon
 
 *Large* *Dragon* *Chaotic Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 13 (2d10 + 2) piercing damage plus 7 (2d6) fire damage.
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.
 - **Fire Breath (Recharge 5–6):** The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 42 (12d6) fire damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

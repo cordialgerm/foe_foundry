@@ -1,6 +1,8 @@
 <MonsterName/>Dread Walker Excavator</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Dread Walker Excavator is a formidable Large Construct characterized by its resilience and offensive capabilities. With a challenge rating of 5, it can pose a significant threat to adventurers, especially in combat scenarios. The Excavator's high armor class of 16, combined with its substantial hit points totaling 75, makes it a tough opponent to take down. It is particularly adept in mobility, having a climbing, walking, and swimming speed of 30 feet. Notable strengths include its damage immunities to poison and psychic effects, as well as resistances to nonmagical bludgeoning, piercing, and slashing damage, which allow it to sustain considerable physical punishment. However, it is vulnerable to magical attacks that bypass its resistances. In combat, it can deliver powerful strikes while also possessing a special ability that can deal damage to those who engage it closely when its health is critically low.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions during combat, the Excavator can perform a "Multiattack," al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dread Walker Excavator
 
 *Large* *Construct* *neutral*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Excavation Beam:** Ranged Weapon Attack: +7 to hit, range 30/60 ft., one target. Hit: 17 (5d6) force damage.
 
 
+</statblock>
 
 

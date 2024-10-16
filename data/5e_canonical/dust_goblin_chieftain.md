@@ -1,6 +1,8 @@
 <MonsterName/>Dust Goblin Chieftain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>16 (studded leather)</AC>
+<HP/>44</HP>
 <summary>The Dust Goblin Chieftain is a small humanoid creature characterized by its neutral evil alignment. It thrives in ambush situations, using cunning tactics and a combination of stealth and speed to outmaneuver its enemies. With an Armor Class of 16 due to studded leather armor and a decent pool of Hit Points totaling 44, this chieftain can withstand some damage while delivering swift and lethal attacks. It has a Challenge Rating of 3, making it a formidable opponent for low-level adventurers, capable of dealing significant damage and applying debilitating effects through its poisonous strikes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Lastly, the chieftain can react with its "Parry" ability to enhance its defense 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dust Goblin Chieftain
 
 *Small* *Humanoid* *neutral evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Parry:** The dust goblin chieftain adds 2 to its AC against one melee attack that would hit it. To do so, the chieftain must see the attacker and be wielding a melee weapon.
 
 
+</statblock>
 
 

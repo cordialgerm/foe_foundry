@@ -1,6 +1,8 @@
 <MonsterName/>Brownie</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>28</HP>
 <summary>The Brownie is a small fey creature characterized by its neutral good alignment and deft abilities. It excels in agility and magic, making it a nimble and unpredictable opponent on the battlefield. With a relatively high Armor Class of 15 and decent hit points totaling 28, the Brownie is somewhat durable for its size. Its main strengths lie in its high Dexterity, allowing it to evade attacks easily, and its magic capabilities, which include resisting spell effects. However, its physical strength is notably weak, with a Strength score of just 4, making it less effective in direct melee combat. The Brownie's Challenge Rating of 1 suggests it poses a manageable threat for lower-level adventurers but can still use its magical abilities and skills to support allies or hinder foes.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ Overall, the Brownie is a cunning and agile fey that uses magic and stealth to o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brownie
 
 *Tiny* *Fey* *neutral good*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** Magically turns invisible until it attacks or uses Domestic Magic or until its concentration ends (as if concentrating on a spell). Any equipment the brownie wears or carries is invisible with it.
 
 
+</statblock>
 
 

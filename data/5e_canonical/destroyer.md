@@ -1,6 +1,8 @@
 <MonsterName/>Destroyer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (scale mail)</AC>
+<HP/>60</HP>
 <summary>The Destroyer is a medium humanoid creature embodying a neutral evil alignment, known for its command over the undead and powerful melee capabilities. With a decent armor class of 15 provided by its scale mail, it has a robust amount of hit points at 60, which indicates a commendable resilience in combat and allows it to withstand various attacks. The Destroyer possesses strong physical attributes, particularly in Strength and Constitution, which enhance its combat prowess and durability. However, its poor Intelligence and average Wisdom may make it less effective in strategic scenarios. The creature is designed to be an offensive threat with powerful melee attacks enhanced by necrotic damage, making it particularly dangerous against living foes. One of its notable tactical advantages is the ability to command undead allies, making it a significant presence on the battlefield.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As for its actions, the Destroyer has a feature called "Multiattack" which allow
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Destroyer
 
 *Medium* *Humanoid* *neutral evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Spear:** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage, or 7 (1d8 + 3) piercing damage if used with two hands to make a melee attack.
 
 
+</statblock>
 
 

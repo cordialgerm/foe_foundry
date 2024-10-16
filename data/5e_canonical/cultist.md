@@ -1,6 +1,10 @@
 <MonsterName/>Cultist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>1</CR>
+<AC/>12 (leather armor)</AC>
+<HP/>9</HP>
 <summary>A Cultist is a lower-ranking member of a dark or forbidden religious sect, devoted to an evil deity or entity. Cultists wear simple, often tattered robes, and carry crude weapons like daggers or clubs. They are fanatically loyal to their leaders and are willing to follow orders without question, even to their own death. Though individually weak, Cultists can be dangerous in large groups or when performing dark rituals to summon creatures or invoke the power of their gods. They are often found in hidden temples, caves, or abandoned ruins, conducting their secretive and malevolent practices.</summary>
 
 <summary>The Cultist is a medium humanoid creature typically serving as a follower of sinister entities and forbidden deities. With a Challenge Rating of 1/8, Cultists are relatively weak but can still pose a threat when encountered in groups or within the context of their dark rituals. Cultists possess a decent Dexterity score, allowing them to be agile in combat, but they lack in other attributes, making them fragile and vulnerable in direct confrontations. Their special ability, Fanatic, grants them an advantage against being charmed or frightened by non-cultist foes, reflecting their unwavering devotion. While they may not be individually powerful, their association with darker powers can lead to dangerous situations for adventurers.</summary>
@@ -44,6 +48,7 @@ Additionally, the Cultist has a reaction named For the Cause!. This ability allo
 
 Source: 5e_srd
 
+<statblock>
 ### Cultist
 
 *Medium humanoid (any race), any non-good alignment*
@@ -72,7 +77,8 @@ Source: 5e_srd
 
 ***Scimitar***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one creature. *Hit:* 4 (1d6 + 1) slashing damage.
 
-**Cultists** swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Unlike evil acolytes, cultists often show signs of insanity in their beliefs and practices.
+**Cultists** swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Unlike evil acolytes, cultists often show signs of insanity in their beliefs and practices.</statblock>
+
 
 
 
@@ -80,6 +86,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cultist
 
 *Medium* *Humanoid*
@@ -108,6 +115,7 @@ Source: 5e_artisinal_monsters
 - **Cultists worship forbidden gods, devils, demons, and other sinister beings:** Many cultists work to summon the object of their devotion to the world so it might grant them power and destroy their enemies.
 
 
+</statblock>
 
 
 
@@ -116,6 +124,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cultist
 
 *Medium humanoid (any lineage)*
@@ -147,5 +156,6 @@ Source: 5e_artisinal_monsters
 
 - **For the Cause!** When a friendly creature the cultist can see within 5 feet of it is hit by an attack that would reduce that creature to 0 HP, the cultist can leap in front of the attack, taking the damage instead.
 
+</statblock>
 
 

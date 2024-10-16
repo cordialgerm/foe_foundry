@@ -1,6 +1,8 @@
 <MonsterName/>Asanbosam</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Asanbosam is a large aberration characterized by its chaotic evil nature. Known for its sinister appearance and tactics, it serves as a fearsome opponent in combat. The creature thrives on ambush tactics, taking advantage of its ability to climb and stealth to surprise its foes. With strong physical capabilities and a dangerous disease-spreading bite, the Asanbosam can quickly become a formidable threat in an encounter. It has a moderate level of resilience with an armor class of 14 and significant hit points totaling 102. However, it lacks any meaningful charm or intelligence, which can be seen as a considerable weakness.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ As a bonus action, the Asanbosam can utilize its Arboreal Escape when within a t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Asanbosam
 
 *Large* *Aberration* *Chaotic Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Arboreal Escape:** While in a tree, the asanbosam takes the Disengage or Hide action.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Blood Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>6</CR>
+<AC/>8</AC>
+<HP/>76</HP>
 <summary>The Blood Ooze is a large, unaligned ooze that presents a formidable challenge in combat environments due to its unique ability to drain life from its opponents. With an Armor Class of 8 and 76 hit points, it relies on its resilience and special abilities rather than defensive capabilities. The creature excels in close-quarters combat, allowing it to inflict necrotic damage to whittle down the health of its foes while simultaneously healing itself. However, its dexterity score of 6 indicates a very bad ability to avoid attacks, making it vulnerable when targeted. It possesses immunities to several damaging conditions and types, enhancing its survival capabilities. Overall, the Blood Ooze is a dangerous foe, especially in scenarios where it can engage multiple enemies at close range.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Finally, the ooze has a powerful reaction called Overflow. When hit by a melee a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Ooze
 
 *Large* *Ooze* *unaligned*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Overflow:** When the blood ooze is hit with a melee attack, it can drain blood from the attacker. The attacker must make a DC 15 Constitution saving throw, taking 11 (2d10) necrotic damage on a failed save, or half as much damage on a successful one. The ooze gains temporary hp equal to the necrotic damage taken.
 
 
+</statblock>
 
 

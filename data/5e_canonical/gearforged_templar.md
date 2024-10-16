@@ -1,6 +1,8 @@
 <MonsterName/>Gearforged Templar</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>6</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>71</HP>
 <summary>The Gearforged Templar is a Medium-sized constructed being that embodies the principles of order and law. It is classified as Lawful Neutral and stands out as a formidable guardian and combatant in any encounter. With an Armor Class of 18, it boasts a solid defensive capability alongside a substantial pool of hit points totaling 71, derived from rolling 11d8 plus a constitution modifier of 2. This makes it moderately resistant to damage due to its immunities, which include poison and psychic damage, as well as resistances to nonmagical bludgeoning, piercing, and slashing attacks. While it is a strong fighter, its Dexterity is low, resulting in a poor initiative and agility due to a -1 modifier in that attribute, which is considered bad. Additionally, its average intelligence and charisma scores mean it is neither particularly insightful nor persuasive.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Gearforged Templar stands as a resilient and formidable presence on
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gearforged Templar
 
 *Medium* *Construct* *Lawful Neutral*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Defensive Zone:** When a creature enters the gearforged templar’s reach, the templar makes one Greatsword attack against the creature.
 - **Parry:** The gearforged templar adds 3 to its AC against one melee attack that would hit it. To do so, the templar must be able to see the attacker and must be wielding a melee weapon.
+</statblock>
 
 

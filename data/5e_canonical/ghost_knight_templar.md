@@ -1,6 +1,8 @@
 <MonsterName/>Ghost Knight Templar</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (plate)</AC>
+<HP/>127</HP>
 <summary>The Ghost Knight Templar is a powerful medium undead creature that embodies lawful evil. With a high Armor Class of 18 and significant Hit Points totaling 127, it poses a formidable challenge in combat situations, receiving a Challenge Rating of 10. This makes it a dangerous foe, particularly in encounters requiring strong melee capabilities and tactical awareness. The Ghost Knight Templar possesses exceptional Strength, Dexterity, and Constitution, as well as good Wisdom and Charisma scores. This combination allows the creature to be agile in combat while maintaining a solid defense against many attacks. Its notable abilities include powerful melee attacks, the capacity to move through objects, resistance to various forms of damage, and an ability to negatively impact foes that attempt to turn it. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Ghost Knight Templar can summon or dismiss a ghostly moun
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghost Knight Templar
 
 *Medium* *Undead* *lawful evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Ghostly Mount:** Can summon or dismiss a ghostly mount mounting or dismounting it as part of this bonus action with o spending movement. Mount uses the stats of a warhorse skeleton except it has the Incorporeal Movement trait a flying speed of 60 feet 40 hp and resistance to cold and necrotic and B/P/S damage from nonmagical attacks. If mount is slain it disappears leaving behind no physical form and templar must wait 1 hr before summoning it again.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Dragon, Prismatic Young</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Prismatic Young Dragon is a formidable creature within the Dungeons & Dragons universe, characterized by its large size and neutral alignment. With impressive physical resilience and a powerful arsenal of attacks, this dragon serves as a memorable encounter for adventurers. It boasts a robust Armor Class of 17, which results from its natural armor, and has 142 hit points, providing a good buffer against damage. The creature’s strengths lie in its high Constitution and Strength scores, enabling it to endure and deal substantial damage, while its average Dexterity allows it to act competently in combat situations. However, it possesses a weakness to certain effects due to its only average Dexterity saving throw and condition immunity. Overall, the Prismatic Young Dragon presents a unique challenge with a mix of powerful physical attacks and spellcasting capabilities.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Furthermore, the dragon has Spellcasting abilities, with a spellcasting DC of 14
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Prismatic Young
 
 *Large* *Dragon* *neutral*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Int (DC 14) no material components: At will: dancing lights3/day ea: charm person color spray1/day: prismatic spray
 
 
+</statblock>
 
 

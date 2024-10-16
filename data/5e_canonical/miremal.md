@@ -1,6 +1,8 @@
 <MonsterName/>Miremal</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>The Miremal is a small, chaotic evil fey creature that thrives in swampy environments. Its role in a combat scenario is that of a sneaky and evasive attacker, capable of employing hit-and-run tactics due to its agility and special abilities. With an Armor Class of 12 and 22 hit points, it can withstand a fair amount of damage before going down. However, its low Challenge Rating of 1/2 makes it relatively weak against more powerful adventurers, though its unique capabilities, particularly its ability to escape destruction and blend into its surroundings, provide it with tactical advantages. The Miremal is notably skilled in stealth, making it a deceptive opponent in its natural habitat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the Miremal can use the Bog Spew ability, which recharges on a rol
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Miremal
 
 *Small* *Fey* *Chaotic Evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 - **Claw:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.
 - **Bog Spew (Recharge 5–6):** The miremal spews a noxious stream of bog filth mixed with stomach acid at one creature it can see within 20 feet of it. The target must make a DC 11 Constitution saving throw. On a failure, the target takes 7 (2d6) acid damage and is blinded until the end of its next turn. On a success, the target takes half the damage and isn’t blinded.
+</statblock>
 
 

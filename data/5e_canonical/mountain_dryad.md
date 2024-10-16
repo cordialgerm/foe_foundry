@@ -1,6 +1,8 @@
 <MonsterName/>Mountain Dryad</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>172</HP>
 <summary>The Mountain Dryad is a formidable Huge creature within the Fey category, known for its neutrality and deeply ingrained connection to the earth. With a challenge rating of 11, it holds a considerable amount of power, thanks to its tough armor class of 17 and a substantial hit point pool of 172, which translates into exceptional durability in combat. This creature excels in both melee and ranged attacks, making it a versatile opponent. Although it possesses remarkable strength and is adept in various skills, its weaknesses lie primarily in its mobility and reliance on its environment. Notably, the Mountain Dryad can burrow through earth and stone, making it difficult to pin down in battle, while also utilizing its natural powers to manipulate terrain and charm adversaries.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Mountain Dryad is a versatile and imposing creature capable of mani
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mountain Dryad
 
 *Huge* *Fey* *neutral*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Mountain’s Awe (1/Day):** The mountain dryad emits a magical aura that radiates out from it for 1 minute. Each creature that starts its turn within 30 feet of the dryad must succeed on a DC 16 Charisma saving throw or be charmed for 1 minute. A charmed creature is incapacitated and, if it is more than 5 feet away from the mountain dryad, it must move on its turn toward the dryad by the most direct route, trying to get within 5 feet. It doesn’t avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the dryad, it can repeat the saving throw. While charmed within 5 feet of the dryad, a Medium or smaller creature must climb the dryad, no check required. After climbing 20 feet, the charmed creature throws itself off the mountain dryad, taking falling damage and landing prone in an unoccupied space within 5 feet of the mountain dryad. A charmed creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

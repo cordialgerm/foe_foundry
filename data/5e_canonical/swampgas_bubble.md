@@ -1,6 +1,8 @@
 <MonsterName/>Swampgas Bubble</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>2</CR>
+<AC/>8</AC>
+<HP/>59</HP>
 <summary>The Swampgas Bubble is a Medium ooze-type creature with an unaligned disposition, found in swampy environments. It operates with a challenge rating of 2, making it a moderate threat for adventurers, capable of dealing considerable damage through its unique abilities and actions. This creature has a notably high Constitution modifier of +4, which grants it strong hit points, totaling 59 (7d8 + 28). It is able to fly and hover but has a limited walking speed. The creature excels in dealing poison damage and can suffocate its victims, but it is particularly vulnerable to fire damage, which can result in its explosive demise when injured in critical condition. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Swampgas Bubble poses a significant threat through its ability to d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swampgas Bubble
 
 *Medium* *Ooze* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Suffocating Grasp:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) bludgeoning damage. If the target is Medium or smaller, the swampgas bubble attaches to the target’s head, and the target is blinded while the bubble is attached. While attached, the bubble can’t make pseudopod attacks against the target. At the start of each of the bubble’s turns, the target takes 9 (2d8) poison damage and begins suffocating as it breathes in the poisonous gases within the bubble. A creature is affected even if it holds its breath, but creatures that don’t need to breathe aren’t affected.<br><br>The bubble can detach itself by spending 5 feet of its movement. It does so if its target falls unconscious or dies. A creature, including the target, can take its action to detach the bubble by succeeding on a DC 13 Strength check.
 
 
+</statblock>
 
 

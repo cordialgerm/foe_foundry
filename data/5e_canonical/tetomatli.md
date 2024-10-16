@@ -1,6 +1,8 @@
 <MonsterName/>Tetomatli</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Tetomatli is a large, chaotic evil construct that presents a formidable challenge in combat with a Challenge Rating of 8. It boasts a robust Armor Class of 16 and significant hit points totaling 152, derived from 16d10+64. This creature embodies strength through its impressive physical stats, particularly with a Strength score of 20, which provides a +5 modifier, indicating exceptional prowess in physical interactions, such as grappling and attacking. However, it has a very poor Intelligence score of 5, giving it a -3 modifier, which reflects its limited cognitive abilities. With good Constitution and average Dexterity, this creature excels at enduring hits but does not possess agility. The Tetomatli is notable for its wide range of immunities and resistances, making it a challenging opponent who can withstand various forms of damage while being impervious to multiple conditions.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Tetomatli can make a Multiattack, which consists of one
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tetomatli
 
 *Large* *Construct* *chaotic evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Tremor (Recharge 6):** The tetomatli slams its head repeatedly into the ground, creating a magical shockwave. Each creature within 20 feet of the tetomatli must succeed on a DC 15 Dexterity saving throw or be knocked prone and have disadvantage on attack rolls and Dexterity checks until the end of its next turn.
 
 
+</statblock>
 
 

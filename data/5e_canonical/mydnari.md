@@ -1,6 +1,8 @@
 <MonsterName/>Mydnari</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>22</HP>
 <summary>The Mydnari is a medium humanoid creature with a neutral evil alignment, recognized for its unsettling nature and symbiotic relationship with a unique jelly substance. With a challenge rating of 1/2, this creature poses a moderate challenge due to its cunning and deceptive abilities. The Mydnari excels in dexterity and charisma, allowing it to evade attacks and manipulate others effectively. Its combat prowess is enhanced by its ability to deal acid damage and cause poisoning, making it a threat in both melee and ranged encounters. However, it relies heavily on its jelly; if separated, it suffers significant drawbacks, including the loss of its blindsight, key offensive abilities, and special traits. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of actions, the Mydnari can attack with a shortsword, which has a +5 to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mydnari
 
 *Medium* *Humanoid* *neutral evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Acid Glob:** Ranged Weapon Attack: +5 to hit, range 30/60 ft., one target. Hit: 5 (1d4 + 3) acid damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

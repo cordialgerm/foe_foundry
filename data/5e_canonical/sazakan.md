@@ -1,6 +1,8 @@
 <MonsterName/>Sazakan</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Sazakan is a Medium elemental creature embodying the essence of cold and ice, categorized as lawful neutral. It boasts an impressive Armor Class of 16 due to its natural armor, making it relatively resilient in combat. With 142 hit points, derived from rolling 19d8 plus a constitution modifier, it can withstand significant damage before being defeated. The Sazakan is recognized for its Challenge Rating of 8, making it a formidable foe worth 3,900 experience points. It has decent physical and mental attributes, particularly notable for its above-average Wisdom score of 18, which contributes to its proficiency in saving throws and perception. While it excels in dealing cold damage, it also has resistances and immunities that give it an advantage in specific situations, while its weaknesses lie in its inability to change wind conditions and reliance on environmental factors. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Sazakan can also unleash the "Ice Whirlwind" ability, which has a recharge m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sazakan
 
 *Medium* *Elemental* *lawful neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Ice Whirlwind (Recharge 5–6):** Surrounds itself in icy wind. Each creature within 10 ft. of it:  28 (8d6) cold and pushed up to 15 ft. from sazakan and knocked prone (DC 15 Str half damage and not pushed/knocked prone). If save fails by 5+ creature is also restrained as its limbs become encased in ice. Creature including encased creature can break encased creature free via DC 15 Str check. Encased creature also freed if it takes fire damage.
 
 
+</statblock>
 
 

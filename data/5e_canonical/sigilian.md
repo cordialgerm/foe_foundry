@@ -1,6 +1,8 @@
 <MonsterName/>Sigilian</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>65</HP>
 <summary>The Sigilian is a Medium Construct known for its unique abilities which allow it to manipulate books and utilize the energies within. This creature presents a challenge for adventurers, possessing good mobility and the ability to restore its health through its environment. The Sigilian's strengths lie in its resilience to many forms of damage, as well as its ability to delve into the abilities of those it encounters. Its primary weaknesses include vulnerability to psychic damage and its low physical strength. The Sigilian's power is amplified when it interacts with spellbooks, allowing it to absorb magical energies, making it a fascinating yet formidable opponent for those who may underestimate its capabilities.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, the Sigilian has the Devour Spell ability, which allows it to cons
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sigilian
 
 *Medium* *Construct* *unaligned*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Devour Spell:** While inside a spellbook, the sigilian eats one spell of the highest level present then exits the spellbook. It chooses to either make its next Paste attack with a number of damage dice equal to the eaten spell's level or regain 3 hp per spell level. The sigilian can only eat one spell at a time and must use the devoured spell's energy before attempting to enter another spellbook. The eaten spell's entry is garbled, but the owner can repair it for half the gold and time usually spent to copy a spell. If the owner has the spell prepared, it can re-record the spell during a long rest for no additional cost.
 
 
+</statblock>
 
 

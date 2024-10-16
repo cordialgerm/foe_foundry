@@ -1,6 +1,8 @@
 <MonsterName/>War Machine Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>18</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>232</HP>
 <summary>The War Machine Golem is a gargantuan construct that serves as a formidable opponent on the battlefield, boasting a massive pool of hit points and devastating damage output. With an Armor Class of 18, it is well-protected, making it harder for opponents to land successful hits. One of its most notable strengths is its ability to withstand nonmagical attacks, while its intelligence is negligible, limiting its strategic capabilities in complex scenarios. Its high Strength score of 26 grants it exceptional melee prowess, while its Dexterity is poor, making it less agile in avoiding attacks. It excels in dealing with structures and objects due to its siege ability. However, it is unaligned, meaning it does not have any inherent moral direction, which may affect interactions with other characters. </summary>
 
 <detail>
@@ -35,6 +37,7 @@ Overall, the War Machine Golem is a formidable foe that can adapt and deal signi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # War Machine Golem
 
 *Gargantuan* *Construct* *unaligned*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 5-6):** The war machine golem breathes fire in a 60-foot cone. Each creature in the area must make a DC 19 Dexterity saving throw, taking 35 (10d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

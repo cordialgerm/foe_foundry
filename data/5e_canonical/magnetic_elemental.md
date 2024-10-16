@@ -1,6 +1,8 @@
 <MonsterName/>Magnetic Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Magnetic Elemental is a powerful large creature of elemental origin with a neutral alignment. It serves as a formidable opponent in combat, leveraging its magnetic powers to manipulate metal objects and significantly hinder armored foes. With a decent armor class of 16 and a substantial pool of hit points totaling 95, this elemental can sustain itself in engagements. It excels in melee combat with a good attack modifier, particularly against those wearing metal armor. However, its intelligence, wisdom, and charisma are notably low, limiting its effectiveness in social interactions and tactics that might require mental acuity. Key traits such as damage immunities to lightning and poison, along with various condition immunities, bolster its resilience in battle. While it deals substantial bludgeoning damage through its slam attacks, its true potential lies in its ability to control the battlefield with magnetism.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ In conclusion, the Magnetic Elemental is a unique and powerful foe with signific
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Magnetic Elemental
 
 *Large* *Elemental* *neutral*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Magnetic Pulse (Recharge 4-6):** The magnetic elemental releases a magnetic pulse, choosing to pull or push nearby metal objects. Objects made of gold or silver are unaffected by the elemental’s Pulse. <br>* Pull. Each creature that is wearing metal armor or holding a metal weapon within 5 feet of the magnetic elemental must succeed on a DC 15 Strength saving throw or the metal items worn or carried by it stick to the magnetic elemental. A creature that is made of metal or is wearing metal armor and that fails the saving throw is stuck to the elemental and grappled (escape DC 15). If the item is a weapon and the wielder can’t or won’t let go of the weapon, the wielder is stuck to the elemental and grappled (escape DC 15). A stuck object can’t be used. Grappled and stuck creatures and objects move with the elemental when it moves. A creature can take its action to remove one creature or object from the elemental by succeeding on a DC 15 Strength check. The magnetic elemental’s Armor Class increases by 1 for each creature grappled in this way. <br>* Push. Each creature that is wearing metal armor or holding a metal weapon within 10 feet of the elemental must make a DC 15 Strength saving throw. On a failure, a target takes 21 (6d6) force damage and is pushed up to 10 feet away from the elemental. On a success, a target takes half the damage and isn’t pushed. A creature grappled by the elemental has disadvantage on this saving throw.
 
 
+</statblock>
 
 

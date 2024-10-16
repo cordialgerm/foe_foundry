@@ -1,6 +1,8 @@
 <MonsterName/>Adult Green Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>15</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>207</HP>
 <summary>The Adult Green Dragon is a cunning and deceptive creature with scales that range from vibrant emerald to dark, forest green. It has a long, sinuous body with leaf-shaped wings and sharp, curved horns. Green Dragons are known for their manipulative nature, preferring to ensnare their enemies through lies and mind games rather than direct combat. They dwell deep in forests, often corrupting the natural world around them to suit their whims. Their breath weapon is a cloud of noxious, poisonous gas that can choke the life out of those who inhale it. Green Dragons are territorial and highly intelligent, often using their wit to outmaneuver rivals and prey.</summary>
 
 <summary>The Adult Green Dragon is a formidable creature known for its cunning intelligence and vast powers, making it a significant threat in any encounter. This huge dragon is particularly adept at stealth and manipulation, often taking advantage of forested environments where it can blend in and surprise its foes. With a challenge rating of 18, it has a high degree of resilience, backed by its 287 hit points and strong defensive capabilities, including a solid armor class of 18. The dragon's strengths lie in its array of special abilities and high damage output, alongside its capacity to control the battlefield using spells and fright tactics. However, despite its exceptional abilities, it has a relatively low Dexterity score, making it less agile than some opponents. </summary>
@@ -63,6 +65,7 @@ If the Adult Green Dragon perishes, it triggers regional effects that may fade w
 
 Source: 5e_srd
 
+<statblock>
 # Adult Green Dragon (Chromatic)
 
 *Huge dragon, lawful evil*
@@ -117,7 +120,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6+6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6+6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -125,6 +129,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Green Dragon
 
 *Huge* *Dragon*
@@ -175,6 +180,7 @@ Source: 5e_artisinal_monsters
 - **Honeyed Words:** The dragon uses Honeyed Words.
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 17 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 19 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
+</statblock>
 
 
 
@@ -183,6 +189,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Green Dragon
 
 *Huge dragon*
@@ -229,5 +236,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days.
+</statblock>
 
 

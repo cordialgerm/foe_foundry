@@ -1,6 +1,8 @@
 <MonsterName/>Akaasit</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>91</HP>
 <summary>The Akaasit is a formidable medium-sized construct that operates independently and lacks alignment, making it an unpredictable opponent in combat. With a solid armor class of 15 due to its natural armor and a substantial pool of hit points totaling 91, the Akaasit can endure considerable damage. It possesses a challenge rating of 6, making it suitable for mid-level adventurers seeking a challenging encounter. The creature's primary strengths lie in its agility—boasting a dexterity score of 18 for very good agility—along with its innate defenses, which grant it resistance to several damage types and immunities to various conditions. However, it has a dismal intelligence and charisma score, which translates to average understanding and social interaction capabilities. The Akaasit excels in combat with its swift movements and powerful blade attacks, but its weaknesses lie primarily in its low hit point recovery and vulnerability to mental effects if it fails to succeed on saving throws.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ With its potent combination of speed, resistance to magic, and offensive capabil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Akaasit
 
 *Medium* *Construct* *unaligned*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Time-Assisted Counterattack:** The akaasit’s awareness of the near future allows it to see attacks before they happen. When a creature the akaasit can see attacks it while within 5 feet of it, the akaasit can attack the creature before the creature’s attack hits. The akaasit makes a single arm blade attack against the creature. If the creature is reduced to 0 hp as a result of the akaasit’s attack, the creature’s attack doesn’t hit the akaasit.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Qumdaq</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>18</HP>
 <summary>The Qumdaq is a small elemental creature that embodies the essence of sand and earth. It is considered neutral in alignment, making it less likely to take sides in conflicts. With a Challenge Rating of 1/4, it is relatively low-power compared to other creatures, but it possesses unique abilities that allow it to disrupt foes and support its allies effectively. Its strengths lie in its ability to manipulate its environment through burrowing and its capacity to enhance its allies' effectiveness in combat. However, it has low hit points, which makes it vulnerable if not utilized strategically. </summary>
 
 <detail>
@@ -20,6 +22,7 @@ In combat, the Qumdaq has a Slam attack, which is a melee weapon attack with a +
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Qumdaq
 
 *Small* *Elemental* *neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Desiccation Field (1/Day):** Extends its arms sending sand and grit swirling around itself. Each non-qumdaq creature within 10 ft. of it: 5 (2d4) bludgeoning damage and suffers one level of exhaustion for 1 hr or until it drinks 1+ pint of water (DC 10 Con half damage and isn’t exhausted). A creature can suffer no more than 3 total levels of exhaustion from Desiccation Field regardless of how many qumdaqs use the action.
 
 
+</statblock>
 
 

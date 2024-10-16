@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Elf Mage</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>12</AC>
+<HP/>67</HP>
 <summary>The Shadow Elf Mage is a formidable medium humanoid character, well-versed in arcane arts, and primarily serves as a spellcasting threat in combat situations. With a solid Armor Class of 12 and 67 hit points, it can sustain some damage but should not be underestimated for its potent magical abilities. The creature excels in Intelligence and Dexterity, granting it an exceptional ability to cast spells while maintaining a decent defense through spells like Shield and Greater Invisibility. However, its relatively low Strength score at 10 reflects a lack of physical prowess. The Shadow Elf Mage is capable of inflicting significant damage with spells, particularly using lightning bolt and cloudkill, which can dramatically shift the tides of battle. While it has many strengths, it remains vulnerable to direct attacks, particularly in the absence of its defensive spells.</summary>
 
 <detail>
@@ -37,6 +39,7 @@ Overall, the Shadow Elf Mage is a high-damage magical opponent that can control 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Elf Mage
 
 *Medium* *Humanoid*
@@ -97,5 +100,6 @@ Source: 5e_artisinal_monsters
 - **Shield (1st-Level; V:** When the mage is hit by an attack or targeted by magic missile, they gain a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the start of their next turn.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Accursed Defiler</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>75</HP>
 <summary>The Accursed Defiler is a medium undead creature embodying the malevolence of the wasteland. This neutral evil entity is known for its ability to blend into desert environments and re-form after death unless specific conditions are met. With a decent armor class of 12 and robust hit points of 75, it can endure quite a lot of punishment before going down. Its strengths lie in its formidable physical attributes, particularly a high Strength score of 19, which grants it a good ability to deal damage. It is resilient to several types of damage, including necrotic and nonmagical slashing, bludgeoning, and piercing, while being immune to conditions like exhaustion and poisoning. However, it is not without weaknesses; most notably, its Intelligence score of 6 indicates that it has a very bad ability to handle more complex tasks or strategies.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For actions, the Accursed Defiler can perform a Multiattack, allowing it to make
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Accursed Defiler
 
 *Medium* *Undead* *Neutral Evil*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The accursed defiler makes two Slam attacks.
 - **Slam:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 11 (2d6 + 4) bludgeoning damage. If the accursed defiler scores a critical hit, the target suffers one level of exhaustion.
 - **Sandslash (Recharge 5–6):** The accursed defiler intensifies the vortex of sand that surrounds it. Each creature within 10 feet of the accursed defiler must make a DC 14 Dexterity saving throw, taking 21 (6d6) slashing damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Strider</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>90</HP>
 <summary>The Strider is a medium humanoid creature known for its agility and stealth. It possesses a strong Armor Class of 16, making it relatively difficult to hit in combat, and has a robust pool of 90 hit points, which translates to a good degree of survivability. The Strider’s strength lies in its dexterity, allowing it to excel in ranged and melee combat while also being adept at evasion. Its challenge rating of 5 indicates its capability to pose a significant threat to adventurers, providing 1,800 experience points upon defeat. The Strider's distinctive abilities, such as tracking evasion and heightened senses, grant it an edge in exploration and ambush tactics, allowing it to be both a formidable opponent and a master of the wilderness.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As for bonus actions, the Strider can execute an Aimed Strike, granting it advan
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Strider
 
 *Medium* *Humanoid*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Skirmish Step:** The strider moves up to half their Speed without provoking opportunity attacks.
 
 
+</statblock>
 
 

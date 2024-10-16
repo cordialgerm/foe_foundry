@@ -1,6 +1,8 @@
 <MonsterName/>Sprite</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (leather armor)</AC>
+<HP/>2</HP>
 <summary>A Sprite is a tiny, winged fey creature known for its sharp senses, stealth, and magical abilities. Sprites resemble miniature elves with insect-like wings, often found in enchanted forests or glades, where they protect nature from intruders. They are shy and elusive but fiercely protective of their homes. Sprites are skilled archers, using tiny bows tipped with sleep-inducing poison. They can also sense the emotions and intentions of others, making them excellent judges of character. While not aggressive by nature, Sprites will fight bravely to defend their territory.</summary>
 
 <summary>The Sprite is a tiny fey creature known for its agility and magical abilities. It has a low armor class of 14 and only 2 hit points, making it quite fragile in combat. However, its high Dexterity score of 18 (+4 modifier) allows it to be very evasive and effective in stealth, enabling it to remain undetected while flying at a speed of 40 feet. The Sprite serves as a charming but mischievous trickster, utilizing its spell-like abilities to create chaos on the battlefield. With a challenge rating of 1/4, it poses a minimal threat to more powerful adventurers. Its notable abilities, such as the ability to become invisible and its access to poison damage, can complicate encounters despite its low durability. This creature's greatest strengths lie in its speed, stealth capabilities, and magical effects that can manipulate the environment and others' perceptions.</summary>
@@ -41,6 +43,7 @@ As a bonus action, the Sprite can use Heart Sight to touch a creature and determ
 
 Source: 5e_srd
 
+<statblock>
 ## Sprite
 
 *Tiny fey, neutral good*
@@ -71,7 +74,8 @@ Source: 5e_srd
 
 ***Heart Sight***. The sprite touches a creature and magically knows the creature's current emotional state. If the target fails a DC 10 Charisma saving throw, the sprite also knows the creature's alignment. Celestials, fiends, and undead automatically fail the saving throw.
 
-***Invisibility***. The sprite magically turns invisible until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the sprite wears or carries is invisible with it.
+***Invisibility***. The sprite magically turns invisible until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the sprite wears or carries is invisible with it.</statblock>
+
 
 
 
@@ -79,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sprite
 
 *Tiny* *Fey*
@@ -113,6 +118,7 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The sprite and any equipment it wears or carries magically turns invisible until the sprite attacks, becomes incapacitated, or uses a bonus action to become visible.
 
 
+</statblock>
 
 
 
@@ -121,6 +127,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sprite
 
 *Tiny fey*
@@ -156,5 +163,6 @@ Source: 5e_artisinal_monsters
 - **Heart Sight.** The sprite touches a creature and magically knows the creature’s current emotional state. If the target fails a DC 13 CHA save, the sprite also knows if the creature has malign intentions or intends to commit malevolent acts within the next hour. Celestials, Fiends, and Undead automatically fail the save.
 - **Swift Flight.** The sprite moves up to half its speed without provoking opportunity attacks.
 
+</statblock>
 
 

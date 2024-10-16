@@ -1,6 +1,8 @@
 <MonsterName/>Pustulent Shambler</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>13</CR>
+<AC/>10 (natural armor)</AC>
+<HP/>232</HP>
 <summary>The Pustulent Shambler is a formidable Gargantuan ooze that poses a significant threat to adventurers due to its unique abilities and potent attacks. With a competitive Challenge Rating of 13, it has an impressive pool of 232 hit points, making it difficult to defeat in combat. The shambler has several qualities that make it particularly dangerous, including its ability to infect creatures with the debilitating Bonerot disease, its capacity to absorb flesh to regain health, and a corrosive effect that can damage weapons made of bone. However, its low Dexterity score makes it vulnerable to ranged attacks, and its inability to understand language or engage in complex strategies adds a layer of predictability to its behavior in encounters. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ When taking actions, the Pustulent Shambler can perform a Multiattack, allowing 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pustulent Shambler
 
 *Gargantuan* *Ooze* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Absorb Flesh:** The pustulent shambler feeds on a corpse within 5 feet of it. It regains 1d8 hp per size category of the creature it consumes. For example, the shambler regains 1d8 hp when consuming a Tiny creature’s corpse or 4d8 hp when consuming a Large creature’s corpse. The shambler can’t use Absorb Flesh on a corpse if it or another pustulent shambler has already used Absorb Flesh on the corpse. If the corpse has intact bones, the shambler loses its Amorphous trait for 1 minute.
 
 
+</statblock>
 
 

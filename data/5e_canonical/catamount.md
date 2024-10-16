@@ -1,6 +1,8 @@
 <MonsterName/>Catamount</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>117</HP>
 <summary>The Catamount is a formidable large monstrosity that thrives in its environment, exhibiting remarkable prowess in combat and utility with its earth-manipulating abilities. Its robust build grants it substantial hit points, making it a durable opponent on the battlefield, while its movement speed allows it to maintain an aggressive presence. With a challenge rating of 4, it is a strong adversary for adventurers, blending its physical attacks with its unique bonus actions that manipulate the terrain to its advantage. Although it possesses weak intelligence and charisma, its physical strengths and special abilities compensate for these deficiencies, allowing it to control the battlefield effectively. Players should be cautious with its multiattack capability, which can deal significant damage.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Catamount is a versatile and powerful foe with a blend of physical 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Catamount
 
 *Large* *Monstrosity* *unaligned*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Control Earth:** Molds the ground near it causing one of: Stone Wall Causes wall of rock to rise from ground at a point it can see within 30' of it. Wall is up to 30' long 5 ft. high and 5 ft. thick. It can be any shape as long as its base is connected to the ground. If wall cuts through creature’s space when it appears creature is pushed to one side (catamount’s choice). If creature would be surrounded on all sides by the wall it can make a DC 14 Dex save. On success it can use its reaction to move up to its speed so it is not enclosed by the wall. Wall lasts 1 min or until catamount creates new wall.Fissure Catamount causes a rift to form in the ground at a point it can see within 30' of it. Rift can be up to 15 ft. wide up to 30' long and up to 10 ft. deep and can be any shape. Each creature standing on a spot where fissure opens must make DC 14 Dex save or fall in. Creature that successfully saves moves with fissure’s edge as it opens. Fissure that opens beneath a structure causes it to automatically collapse as if structure was in the area of an earthquake spell. It can have only one fissure open at a time. If it opens another previous fissure closes shunting all creatures inside it to surface.Tremors Catamount causes earth beneath its feet to shake and shift. Each creature within 30' of it: 3 (1d6) bludgeoning damage and be knocked prone (DC 14 Str negates both).
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Cueyatl Sea Priest</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (leather armor)</AC>
+<HP/>45</HP>
 <summary>The Cueyatl Sea Priest is a small humanoid creature characterized by its lawful evil alignment, making it a cunning adversary in various encounters. Possessing an armor class of 12 due to its leather armor and a moderate hit point pool of 45—equivalent to 10d6+10—the Cueyatl is relatively resilient for its challenge rating of 1, which indicates it can be a formidable foe for lower-level parties. This creature excels in aquatic and jungle environments, leveraging its abilities to hide effectively and communicate with aquatic life, putting it at an advantage in such settings. However, its overall physical strength and combatting capabilities are somewhat average, given its moderate attributes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For weaponry, the Cueyatl wields a trident with attack modifiers of +2. When use
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cueyatl Sea Priest
 
 *Small* *Humanoid* *lawful evil*
@@ -54,5 +57,6 @@ Cantrips (at will): guidance, poison spray
 - **Trident:** Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage plus 7 (2d6) poison damage, or 4 (1d8) piercing damage plus 7 (2d6) poison damage if used with two hands to make a melee attack.
 
 
+</statblock>
 
 

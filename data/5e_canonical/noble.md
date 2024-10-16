@@ -1,6 +1,10 @@
 <MonsterName/>Noble</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>1</CR>
+<AC/>15 (breastplate)</AC>
+<HP/>9</HP>
 <summary>A Noble is a high-born individual, often a ruler or member of a wealthy, influential family. Nobles are usually adorned in fine clothing, bearing symbols of their status such as signet rings or coats of arms. While not trained fighters, Nobles are often well-versed in diplomacy, politics, and manipulation. They command the loyalty of guards, servants, and other followers and are known to wield great power within their domains. Though not dangerous themselves, they can marshal resources to bring ruin to their enemies through political schemes or hired muscle.</summary>
 
 <summary>The Noble is a Medium humanoid creature, serving as a representation of aristocracy and political influence in the game world. With an Armor Class of 15 and moderate hit points of 13, the Noble is relatively durable for a low-level character, allowing them to engage in conversations, negotiations, or light combat. Its Challenge Rating of 1/4 suggests that it is not a significant threat in combat but could provide minor obstacles to unprepared adventurers. The Noble's strengths lie in its Charisma and social skills, making it a good diplomat or performer, while its physical combat abilities are more limited. Notable weaknesses include average attributes for melee combat and a reliance on social skills, leaving them vulnerable to direct confrontation.</summary>
@@ -35,6 +39,7 @@ Overall, the Noble is a charming and strategically clever character that shines 
 
 Source: 5e_srd
 
+<statblock>
 ### Noble
 
 *Medium humanoid (any race), any alignment*
@@ -67,7 +72,8 @@ Source: 5e_srd
 
 **Nobles** wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.
 
-The noble's statistics can also be used to represent **courtiers** who aren't of noble birth.
+The noble's statistics can also be used to represent **courtiers** who aren't of noble birth.</statblock>
+
 
 
 
@@ -75,6 +81,7 @@ The noble's statistics can also be used to represent **courtiers** who aren't of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Noble
 
 *Medium* *Humanoid*
@@ -102,6 +109,7 @@ Source: 5e_artisinal_monsters
 - **Parry:** If the noble is wielding a melee weapon and can see their attacker, they add 2 to their AC against one melee attack that would hit them.
 
 
+</statblock>
 
 
 
@@ -110,6 +118,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Noble
 
 *Medium humanoid (any lineage)*
@@ -141,5 +150,6 @@ Source: 5e_artisinal_monsters
 
 - **Parry.** The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon.
 
+</statblock>
 
 

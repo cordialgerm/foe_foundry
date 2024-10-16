@@ -1,6 +1,8 @@
 <MonsterName/>Pestilence Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Pestilence Swarm is a medium beast characterized by its unaligned nature, and it embodies a menacing force in the realm of Dungeons & Dragons. This creature is primarily designed for ambush tactics and can incapacitate foes with its diseased bites while remaining dormant in darkness. With a Challenge Rating of 1, it presents a moderate threat to adventurers, particularly through its ability to inflict the sewer plague, which leads to debilitating conditions over time. However, its low hit points and reliance on ambush opportunities can be seen as weaknesses, making it vulnerable if confronted directly while exposed to light.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Pestilence Swarm can employ a melee attack called "Diseased Bites
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pestilence Swarm
 
 *Medium* *Beast* *unaligned*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Diseased Bites:** Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half its hp or fewer. The creature must succeed on a DC 11 Constitution saving throw or contract sewer plague. It takes 1d4 days for sewer plague’s symptoms to manifest in an infected creature. Symptoms include fatigue and cramps. The infected creature suffers one level of exhaustion, and it regains only half the normal number of hp from spending Hit Dice and no hp from finishing a long rest. At the end of each long rest, an infected creature must make a DC 11 Constitution saving throw. On a failed save, the creature gains one level of exhaustion. On a successful save, the creature’s exhaustion level decreases by one level. If a successful saving throw reduces the infected creature’s level of exhaustion below 1, the creature recovers from the disease.
 
 
+</statblock>
 
 

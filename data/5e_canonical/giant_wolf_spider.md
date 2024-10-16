@@ -1,6 +1,8 @@
 <MonsterName/>Giant Wolf Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>11</HP>
 <summary>A Giant Wolf Spider is a fast, deadly predator that hunts its prey through sheer speed and stealth rather than relying on webs. These spiders are covered in dark, bristly hairs and have multiple eyes that allow them to detect movement from all directions. Found in forests, caves, or grasslands, they ambush their prey, striking with venomous fangs that paralyze or kill. Giant Wolf Spiders can climb walls and move with surprising speed, making them difficult to escape. They are solitary creatures, fiercely territorial, and will attack anything that invades their hunting grounds.</summary>
 
 <summary>The Giant Wolf Spider is a Medium-sized beast known for its agility and stealth in combat. With an Armor Class of 13, it can withstand some damage but is not particularly tough, having only 13 hit points. Its primary strength lies in its dexterity, which is rated at 16, granting it a good +3 modifier that enhances its chances to hit opponents and dodge attacks. Additionally, it possesses useful abilities such as Spider Climb, allowing it to maneuver easily in various environments, and Web Sense, which grants it awareness of creatures in contact with webs. The spider can deal damage with its bite attack, which not only inflicts piercing damage but also has the potential to paralyze its target if the poison effect is successful. Its weak intelligence score indicates that it lacks strategic thinking, but its stealth capabilities and web-related features make it a dangerous ambush predator. Overall, the Giant Wolf Spider excels in surprise attacks, making it a formidable foe despite its relatively low durability.</summary>
@@ -31,6 +33,7 @@ The action available to the Giant Wolf Spider is its bite:
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Wolf Spider
 
 *Medium beast, unaligned*
@@ -63,7 +66,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one creature. *Hit:* 4 (1d6+1) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
 
-Smaller than a giant spider, a **giant wolf spider** hunts prey across open ground or hides in a burrow or crevice, or in a hidden cavity beneath debris.
+Smaller than a giant spider, a **giant wolf spider** hunts prey across open ground or hides in a burrow or crevice, or in a hidden cavity beneath debris.</statblock>
+
 
 
 
@@ -71,6 +75,7 @@ Smaller than a giant spider, a **giant wolf spider** hunts prey across open grou
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Wolf Spider
 
 *Medium* *Beast*
@@ -100,5 +105,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) piercing damage and the target makes a DC 11 Constitution saving throw  taking 5 (2d4) poison damage on a failure or half damage on a success. If the poison damage reduces the target to 0 hit points  the target is made stable but poisoned for 1 hour  even if it regains hit points  and it is paralyzed while poisoned in this way.
 
 
+</statblock>
 
 

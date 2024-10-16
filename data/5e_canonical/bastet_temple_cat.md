@@ -1,6 +1,8 @@
 <MonsterName/>Bastet Temple Cat</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>40</HP>
 <summary>The Bastet Temple Cat is a small chaotic neutral monstrosity that serves as a unique companion and spellcaster in the realm of Dungeons & Dragons. With a solid Armor Class of 14 and 40 hit points, it is reasonably resilient, allowing it to engage in combat while also providing valuable support through its spellcasting abilities. Its Dexterity score of 19 grants it exceptional agility and stealth, making it an effective scout and ambusher. Notably, the Bastet Temple Cat is capable of charming opponents with its Fascinating Purr, incapacitating them and compelling them to approach it, while its Priestly Purr ability allows it to assist spellcasting clerics and paladins by imbuing it with their spells. However, lacking in Strength and Constitution means it is not particularly strong or tough, making it vulnerable to damage if it finds itself targeted directly in combat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the Bastet Temple Cat can cast spells, utilizing Charisma as its s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bastet Temple Cat
 
 *Small* *Monstrosity* *Chaotic Neutral*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage.
 - **Fascinating Purr:** The temple cat purrs loudly at a Humanoid it can see within 30 feet of it and that can hear it. The target must succeed on a DC 14 Wisdom saving throw or be charmed. While charmed by the temple cat, the target is incapacitated and must move on its turn toward the cat by the most direct route, trying to get within 5 feet of the cat and pet or hold it. The target doesn’t avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the cat, the target can repeat the saving throw. A charmed target can also repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful, the creature is immune to the temple cat’s Fascinating Purr for the next 24 hours. The temple cat has advantage on attack rolls against any creature petting or holding it.
 - **Spellcasting:** The temple cat casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 14):<br>At will: guidance<br>3/day each: charm person, cure wounds<br>1/day: enhance ability (only Cat’s Grace)
+</statblock>
 
 

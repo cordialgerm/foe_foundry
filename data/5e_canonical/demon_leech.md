@@ -1,6 +1,8 @@
 <MonsterName/>Demon, Leech</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Leech Demon is a Large chaotic evil fiend known for its insidious nature and characteristic blood-draining abilities. Residing within the depths of dark waters, this creature boasts a formidable presence with a robust set of skills, allowing it to both traverse aquatic environments and engage effectively in combat. With an Armor Class of 17, it is well-defended, and its Hit Points of 147 give it significant durability on the battlefield. The Leech Demon is particularly strong in Constitution with a modifier of +5, indicating exceptional resilience, while its Strength and Dexterity scores of +4 and +3 respectively make it a good melee combatant. However, it has weaknesses in Charisma at -2, making it less effective for social interactions or spells requiring a high Charisma score. Its challenge rating of 11 places it as a formidable opponent for parties of intermediate level.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ The Leech Demon also features the Release Swarm ability, which can be activated 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Demon, Leech
 
 *Large* *Fiend* *chaotic evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Release Swarm (Recharge 5–6):** Shakes loose dozens of leeches creating a leech swarm. Swarm acts as ally of demon and obeys its spoken commands. Swarm remains for 1 min until demon dies or until demon dismisses it as a bonus action. If demon is within 5 ft. of the swarm it can use its action to consume the swarm gaining temp hp equal to swarm’s current hp. It can add temp hp gained this way with temp hp from Tentacle Bite. Demon’s temp hp can’t exceed half its hp max. Can have only one swarm active at a time.
 
 
+</statblock>
 
 

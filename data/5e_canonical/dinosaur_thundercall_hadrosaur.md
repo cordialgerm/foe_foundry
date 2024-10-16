@@ -1,6 +1,8 @@
 <MonsterName/>Dinosaur, Thundercall Hadrosaur</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>11</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Thundercall Hadrosaur is a massive creature classified as a Huge Monstrosity with a challenge rating of 11. This dinosaur is known for its powerful attacks and its ability to unleash devastating thunderous bellow, making it a formidable opponent in combat. With a high Armor Class of 16 from natural armor and an impressive 168 hit points, it can withstand significant damage. The Thundercall Hadrosaur features outstanding physical strength, with a Strength score of 24, giving it an exceptional modifier of +7 to its melee attacks. However, it is hindered by a low Dexterity score, leading to a bad modifier of -1, affecting its ability to dodge attacks. Its other attributes also reflect its brute nature, with average Wisdom but poor Intelligence and Charisma. While it has resistance to thunder damage and immunity to deafness, it lacks any communicative abilities or other forms of nuanced interaction.</summary>
 
 <detail>
@@ -30,6 +32,7 @@ Lastly, it can utilize the Sonic Shield reaction, which grants it a +4 bonus to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dinosaur, Thundercall Hadrosaur
 
 *Huge* *Monstrosity* *unaligned*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Sonic Shield:** The hadrosaur adds 4 to its AC vs. one ranged attack that would hit it. To do so the hadrosaur must see the attacker and not be in an area of magical silence.
 
 
+</statblock>
 
 

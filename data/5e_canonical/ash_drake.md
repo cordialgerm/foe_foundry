@@ -1,6 +1,8 @@
 <MonsterName/>Ash Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>117</HP>
 <summary>The Ash Drake is a small dragon classified as neutral evil, known for its cunning and stealth. With an armor class of 16, it is well protected due to its natural armor. It has a solid 117 hit points, giving it good staying power in combat. This creature moves quickly, walking at a speed of 60 feet and flying at 30 feet, which allows it to engage or escape effectively. Its challenge rating of 4 indicates it can pose a significant threat, offering 1,100 experience points when defeated. The Ash Drake possesses noteworthy abilities, including damage immunity to fire, which enhances its survivability against many attacks. However, it has low intelligence, which limits its use of tactics or spellcasting. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Ash Breath ability is another powerful attack, available every 5 to 6 turns.
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ash Drake
 
 *Small* *Dragon* *Neutral Evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.
 - **Ash Cloud (Recharge 6):** The ash drake beats its wings, filling the area within 10 feet of it with ash for 1 minute. The ash spreads around corners, and its area is heavily obscured. Each creature that isn’t an ash drake and that enters the cloud for the first time on its turn or starts its turn there must succeed on a DC 13 Constitution saving throw or become blinded until the end of its next turn. The ash moves with the drake, remaining centered on it for the duration.
 - **Ash Breath (Recharge 5–6):** The ash drake spews blistering hot, choking ash in a 30-foot cone. Each creature in the area must make a DC 13 Dexterity saving throw. On a failure, a creature takes 14 (4d6) fire damage and is poisoned for 1 minute. On a success, a creature takes half the damage and isn’t poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

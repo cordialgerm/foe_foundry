@@ -1,6 +1,8 @@
 <MonsterName/>Ammut</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>172</HP>
 <summary>Ammut is a powerful celestial creature, classified as large in size. Its natural armor provides a robust defense with an Armor Class of 17, while it boasts a substantial pool of health at 172 hit points, typically reflecting its challenging nature for adventurers at a Challenge Rating of 9. Ammut excels in combat through strong physical attacks and unique abilities that inflict conditions upon its foes, particularly targeting undead creatures. Its strengths include high physical attributes, particularly in Strength and Constitution, with modifiers of +5 and +6 respectively, which are considered very good. However, its Intelligence and Charisma scores are average, showing that it may not excel in trickery or deception. Notably, Ammut has a variety of damage immunities and resistances, which further contribute to its resilience in battle.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Ammut can also unleash a potent ability called Ghost Breath once per day, where 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ammut
 
 *Large* *Celestial* *neutral*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Absorb Spirit (1/Day):** The ammut attempts to absorb the spirit of a dead or undead creature in its belly. The creature must succeed on a DC 16 Wisdom saving throw or be absorbed by the ammut. A creature absorbed this way is destroyed and can't be reanimated, though it can be restored to life by powerful magic, such as a resurrection spell. The ammut regains hp equal to the absorbed creature's hp maximum.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>War Wyvern</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (scale mail)</AC>
+<HP/>119</HP>
 <summary>The War Wyvern is a formidable large dragon creature that operates independently, often serving as a powerful adversary in combat encounters. With a notable challenge rating of 7, it embodies significant physical strength and resilience, showcasing high hit points and effective attack capabilities. The War Wyvern has excellent mobility, able to fly up to 80 feet and walk 20 feet, giving it a tactical advantage in the air. Its primary attributes include a strength score of 20, resulting in a good modifier of +5, and a constitution score of 16, giving it a good +3 modifier, contributing to its durability in battle. However, the wyvern has a low intelligence and charisma, resulting in very bad modifiers of -2 for both, which limits its capability for complex interactions and strategizing beyond physical combat. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the War Wyvern is a dangerous and robust creature, adept at physical co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # War Wyvern
 
 *Large* *Dragon* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Spit Venom (Recharge 5-6):** The wyvern spits venom at a target within 60 feet. The target must make a DC 16 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

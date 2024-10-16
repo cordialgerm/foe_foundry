@@ -1,6 +1,8 @@
 <MonsterName/>Moon Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>76</HP>
 <summary>The Moon Drake is a medium-sized dragon with neutral alignment, well-known for its dynamic abilities that correlate with the lunar phases. With an Armor Class of 15 and a robust 76 hit points, the Moon Drake proves to be a formidable foe in combat. Its impressive speed allows it to fly at 100 feet per turn while still being able to walk 25 feet. The Moon Drake is categorized with a Challenge Rating of 5, which denotes an experience worth 1,800 for its defeat. This creature has a strong Dexterity score of 20, providing a good modifier of +5, and a high Constitution of 19 gives it a good +4 modifier. The Moon Drake has a versatile presence in battle thanks to its special abilities and unique actions, but its powers are subject to the phases of the moon, making it both a powerful ally and a strategic challenge for adversaries.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ For its defensive maneuver, the Moon Drake can employ the Form of Moonlight reac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moon Drake
 
 *Medium* *Dragon* *neutral*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Form of Moonlight:** When the moon drake takes damage or is restrained, it can transmute its physical form into an incorporeal form of pure moonlight until the end of its next turn. While in this form, it has resistance to cold, fire, and lightning damage and immunity to bludgeoning, piercing, and slashing damage from nonmagical attacks. While in this form, the drake can pass through openings at least 1 inch wide and through transparent objects. It takes 5 (1d10) force damage if it ends its turn inside an object.
 
 
+</statblock>
 
 

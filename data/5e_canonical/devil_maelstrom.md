@@ -1,6 +1,8 @@
 <MonsterName/>Devil, Maelstrom</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>195</HP>
 <summary>The Maelstrom Devil is a formidable fiend known for its ability to manipulate weather and its impressive combat capabilities. With its lawful evil nature, the Maelstrom Devil excels in controlling both the battlefield and the environment to its advantage. It has a robust pool of hit points, making it a resilient adversary in combat. This creature's ability to resist various damage types, paired with high attack output and tactical control over its surroundings, makes it a dangerous opponent. However, it has a relatively low passive perception and lacks certain saving throws, which could be exploited by clever players.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Lastly, the Maelstrom Devil has a unique spell-like ability called "Crown of Wat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil, Maelstrom
 
 *Large* *Fiend* *lawful evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Crown of Water (1/Day):** The water on devil’s head erupts in a geyser. Each creature within 10 ft. of devil: 35 (10d6) cold (DC 16 Con half). For 1 min when a creature enters a space within 10 ft. of the devil for 1st time on a turn or starts its turn there that creature: DC 16 Con save or take 10 (3d6) cold.
 
 
+</statblock>
 
 

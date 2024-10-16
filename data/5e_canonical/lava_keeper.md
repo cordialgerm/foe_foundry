@@ -1,6 +1,8 @@
 <MonsterName/>Lava Keeper</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>18</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>276</HP>
 <summary>The Lava Keeper is a formidable Huge elemental that embodies the essence of fire and earth, standing as a guardian of volcanic landscapes. Its role in combat is as a powerful adversary that can deal significant damage with both melee and ranged attacks, while also using environmental tactics to control the battlefield. With a Challenge Rating of 18, it presents a serious threat to adventurers, leveraging high hit points, strong physical attacks, and a suite of innate spellcasting abilities. Its natural armor makes it difficult to hit, while its immunities to fire and poison grant it resilience against many typical attacks. However, its weaknesses lie in its moderate Dexterity, making it less agile compared to other creatures, which could be exploited by nimble opponents.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Lava Keeper's actions are quite lethal. It can perform a "Multiattack," allo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lava Keeper
 
 *Huge* *Elemental* *lawful neutral*
@@ -57,5 +60,6 @@ At will: move earth, stone shape
 - **Fumarole (Recharge 5-6):** The crater between the lava keeper’s shoulders erupts in a plume of fire, rock, and toxic smoke. Each creature within 60 feet of the lava keeper must make a DC 19 Constitution saving throw. On a failure, a creature takes 21 (6d6) bludgeoning damage and 21 (6d6) fire damage and becomes poisoned for 1 minute. On a success, a creature takes half the damage and isn’t poisoned. A poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The eruption surrounds the lava keeper in a 20-foot-radius sphere of smoke, considered heavily obscured until the end of its next turn. A wind of moderate or greater speed (at least 10 miles per hour) disperses the smoke.
 
 
+</statblock>
 
 

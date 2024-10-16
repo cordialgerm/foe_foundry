@@ -1,6 +1,8 @@
 <MonsterName/>Bear King</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Bear King is a formidable fey creature that embodies the power of nature with a regal presence. It serves as a guardian of the wild, capable of both brute strength and magical prowess. Known for its exceptional melee attacks enhanced by radiant damage, the Bear King can be a daunting opponent in combat. It has a high Armor Class of 18 due to its natural armor, which, combined with 133 hit points, allows it to withstand significant damage. The Bear King's prowess is further elevated by its resistance to cold damage and immunity to poison and nonmagical physical attacks, provided they are not made with cold iron weapons. Its most notable abilities grant it magical attacks, regeneration, and advantages in perception, making it an outstanding adversary that requires strategic planning to confront effectively.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The Bear King can also take legendary actions, including moving without provokin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bear King
 
 *Medium* *Fey* *Lawful Neutral*
@@ -74,5 +77,6 @@ The Bear King can take 3 legendary actions, choosing from the options below. Onl
 - **Move:** The Bear King moves up to his speed without provoking opportunity attacks.
 - **Honey Toss:** The Bear King throws a jar of magical honey at a creature he can see within 120 feet of him. The target must succeed on a DC 17 Dexterity saving throw or be restrained by sticky honey until the end of its next turn.
 - **Frightful Roar (Costs 2 Actions):** The Bear King lets out a blood-curdling roar. Each hostile creature within 60 feet of the Bear King and that can hear the roar must succeed on a DC 17 Wisdom saving throw or be frightened until the end of its next turn.
+</statblock>
 
 

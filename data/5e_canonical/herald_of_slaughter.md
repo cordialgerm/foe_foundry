@@ -1,6 +1,8 @@
 <MonsterName/>Herald of Slaughter</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>11</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Herald of Slaughter is a formidable Large fiend embodying chaotic evil, known for its brutality and destructive capabilities. It possesses a robust Armor Class of 15 due to its natural armor and boasts a substantial pool of Hit Points at 133, making it difficult to bring down in combat. The creature has a high Challenge Rating of 11, indicating its significant threat level in encounters. It excels in both melee and ranged attacks, utilizing a multi-faceted approach in battle. With resistance to several damage types and immunity to many debilitating conditions, it is a resilient adversary. However, its relatively low Dexterity affects its agility in combat, resulting in an average movement speed of 40 ft. Notably, the Herald can inflict hostile effects on nearby creatures and can deftly manipulate its appearance through shapechanging abilities.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In battle, the Herald utilizes a Multiattack action, making three attacks: one G
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Herald of Slaughter
 
 *Large* *Fiend* *chaotic evil*
@@ -65,5 +68,6 @@ At will: detect thoughts
 - **Cleaver:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) slashing damage plus 9 (2d8) necrotic damage.
 
 
+</statblock>
 
 

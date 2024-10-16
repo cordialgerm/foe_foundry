@@ -1,6 +1,8 @@
 <MonsterName/>Hill Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>105</HP>
 <summary>Hill Giants are enormous, brutish humanoids that live in hills and caves, often raiding nearby settlements for food and supplies. These giants are dim-witted and driven by an insatiable hunger, eating anything they can find, including livestock, crops, and even other creatures. Hill Giants are physically powerful, capable of crushing foes with massive clubs or throwing boulders with great force. Despite their strength, they are lazy and cowardly, preferring to bully weaker creatures rather than face a real challenge. They often live in crude tribes, ruled by the strongest and most gluttonous among them.</summary>
 
 <summary>The Hill Giant is a formidable creature often found in hilly or mountainous regions, characterized by its immense size and strength. As a Huge Giant, it serves as a powerful melee combatant on the battlefield. With an Armor Class of 13 and Hit Points totaling 105, the Hill Giant can absorb a significant amount of damage. Its Challenge Rating of 6 indicates that it presents a moderate challenge to a party of adventurers. The Hill Giant possesses exceptional physical attributes, with a Strength of 20 providing very good attack capabilities. However, it has poor Dexterity and Intelligence, featuring weaknesses in agility and cognitive ability that may lead to tactical disadvantages in encounters.</summary>
@@ -37,6 +39,7 @@ Overall, Hill Giants are physically dominant creatures with a focus on brute str
 
 Source: 5e_srd
 
+<statblock>
 ### Hill Giant
 
 *Huge giant, chaotic evil*
@@ -65,7 +68,8 @@ Source: 5e_srd
 
 ***Greatclub***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 18 (3d8+5) bludgeoning damage.
 
-***Rock***. *Ranged Weapon Attack:* +8 to hit, range 60/240 ft., one target. *Hit:* 21 (3d10+5) bludgeoning damage.
+***Rock***. *Ranged Weapon Attack:* +8 to hit, range 60/240 ft., one target. *Hit:* 21 (3d10+5) bludgeoning damage.</statblock>
+
 
 
 
@@ -73,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hill Giant
 
 *Huge* *Giant*
@@ -108,6 +113,7 @@ Source: 5e_artisinal_monsters
 - **Grab:** One creature within 5 feet makes a DC 10 Dexterity saving throw. On a failure, it is grappled (escape DC 16). Until this grapple ends, the giant can't grab another target, and it makes greatclub attacks with advantage against the grappled target.
 
 
+</statblock>
 
 
 
@@ -116,6 +122,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hill Giant
 
 *Huge giant*
@@ -150,5 +157,6 @@ Source: 5e_artisinal_monsters
 
 - **Body Bounce.** The hill giant bumps its stomach, hip, shoulder, knee, or other part of its body into a creature within 10 feet of it. The target must succeed on a DC 16 STR save or be pushed up to 10 feet away from the giant and knocked prone.
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Adult White Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>200</HP>
 <summary>An Adult White Dragon is a fierce and primal creature with scales that blend seamlessly into its icy surroundings. Its eyes are cold and calculating, and its large wings are covered in a thin layer of frost. White Dragons are the smallest and most feral of the chromatic dragons, relying more on brute strength and instinct than on cunning. They dwell in frozen wastelands and make their lairs in ice caves or glaciers. Their breath weapon is a cone of freezing cold that can instantly encase their enemies in ice. White Dragons are territorial and often hunt large prey such as mammoths or polar bears.</summary>
 
 <summary>The Adult White Dragon is a formidable creature, being a huge dragon with both significant physical prowess and magical capabilities. It is known for its icy breath and adeptness in cold environments, allowing it to dominate during encounters in snowy or icy conditions. With impressive hit points totaling 250 and a high Armor Class of 18, this dragon can endure considerable damage while also inflicting it back with powerful melee attacks and cold-based abilities. Its strengths lie in its ability to freeze opponents, both in an offensive and defensive manner, and its skill in controlling the battlefield with various spells and legendary actions. However, it has a relatively low Intelligence score (8) and could be seen as easy to outsmart in social interactions. </summary>
@@ -37,6 +39,7 @@ In addition to its powerful presence and abilities, the Adult White Dragon can c
 
 Source: 5e_srd
 
+<statblock>
 # Adult White Dragon (Chromatic)
 
 *Huge dragon, chaotic evil*
@@ -89,7 +92,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6+6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6+6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -97,6 +101,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult White Dragon
 
 *Huge* *Dragon*
@@ -144,6 +149,7 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 15 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turn, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 19 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Raging Storm (1/Day:** For 1 minute, gusts of sleet emanate from the dragon in a 40-foot-radius sphere, spreading around corners. The area is lightly obscured and the ground is difficult terrain The first time a creature moves on its turn while in the area, it must succeed on a DC 15 Dexterity saving throw or fall prone (or fall if it is flying).
+</statblock>
 
 
 
@@ -152,6 +158,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult White Dragon
 
 *Huge dragon*
@@ -198,5 +205,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days.
+</statblock>
 
 

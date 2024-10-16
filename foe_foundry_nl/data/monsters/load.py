@@ -1,6 +1,7 @@
 import json
 import re
 from collections.abc import Iterable
+from functools import cached_property
 from pathlib import Path
 
 from foe_foundry.creature_types import CreatureType
@@ -8,7 +9,20 @@ from foe_foundry.creature_types import CreatureType
 from .data import CanonicalMonster, MonsterInfo
 
 
+class _Loader:
+    @cached_property
+    def monsters(self) -> dict[str, CanonicalMonster]:
+        return load_canonical_monsters()
+
+
+_loader = _Loader()
+
+
 def get_canonical_monsters() -> dict[str, CanonicalMonster]:
+    return _loader.monsters
+
+
+def load_canonical_monsters() -> dict[str, CanonicalMonster]:
     # load SRD monsters
     srd_monsters = [m for m in iter_srd_md_monsters()]
 
@@ -61,7 +75,17 @@ def get_canonical_monsters() -> dict[str, CanonicalMonster]:
         natural_language = natural_language_descriptions.get(key)
 
         name = srd.name if srd is not None else artisinal.name
-        creature_type = srd.creature_type if srd is not None else artisinal.creature_type
+        creature_type = (
+            srd.creature_type if srd is not None else artisinal.creature_type
+        )
+        cr = srd.cr if srd is not None else artisinal.cr
+        ac = srd.ac if srd is not None else artisinal.ac
+        ac_detail = srd.ac_detail if srd is not None else artisinal.ac_detail
+        hp = srd.hp if srd is not None else artisinal.hp
+
+        subtypes = set()
+        for m in monsters:
+            subtypes.update(m.creature_subtypes)
 
         if natural_language is not None:
             summary = natural_language.split("\n")[0]
@@ -72,6 +96,11 @@ def get_canonical_monsters() -> dict[str, CanonicalMonster]:
             key=key,
             name=name,
             creature_type=creature_type,
+            creature_subtypes=list(subtypes),
+            cr=cr,
+            ac=ac,
+            hp=hp,
+            ac_detail=ac_detail,
             is_srd=srd is not None,
             infos=monsters,
             summary=summary,
@@ -82,7 +111,7 @@ def get_canonical_monsters() -> dict[str, CanonicalMonster]:
     return all_monsters
 
 
-def creature_type_from_markdown(text: str):
+def creature_type_from_markdown(text: str) -> tuple[str, list[str]]:
     all_creature_types = CreatureType.all()
 
     first_lines = "\n".join(
@@ -90,9 +119,73 @@ def creature_type_from_markdown(text: str):
     )  # skip title because of "Giant Elk" for example
     creature_types = [ct for ct in all_creature_types if ct.lower() in first_lines]
     if len(creature_types) == 0:
-        return None
+        return "", []
+
+    ct = creature_types[0]
+    index = first_lines.index(ct)
+    remaining = first_lines[index + len(ct) :].strip()
+    if remaining.startswith("(") and ")" in remaining:
+        end = remaining.index(")")
+        subtypes = remaining[1:end]
+        subtypes = [s.strip() for s in subtypes.split(",")]
     else:
-        return creature_types[0].title()
+        subtypes = []
+
+    return ct.title(), subtypes
+
+
+def challenge_rating_from_markdown(text: str) -> str:
+    lines = text.splitlines()
+    line = next((li for li in lines if "Challenge" in li or "CR" in li), None)
+    if line is None:
+        raise ValueError("Cannot find Challenge Rating")
+
+    pattern = r"Challenge Rating:.*?(?P<d1>\d+)|Challenge Rating: CR (?P<d2>\d+)|Challenge.*?(?P<d3>\d+)"
+    s = re.search(pattern, line)
+    if s is None:
+        raise ValueError("Cannot find Challenge Rating")
+
+    cr = next((cr for _, cr in s.groupdict().items() if cr is not None), None)
+    if cr is None:
+        raise ValueError("Cannot find Challenge Rating")
+
+    return cr
+
+
+def ac_from_markdown(text: str) -> tuple[int, str | None]:
+    lines = text.splitlines()
+    line = next((li for li in lines if "Armor Class" in li), None)
+    if line is None:
+        raise ValueError("Cannot find Armor Class")
+
+    pattern = r"\*\*Armor Class:?\*\*[:\s]*(?P<ac>\d+)\s*(?P<detail>\([a-zA-Z ]+\))?"
+    s = re.search(pattern, line)
+    if s is None:
+        raise ValueError("Cannot find Armor Class")
+
+    vals = s.groupdict()
+    ac = int(vals["ac"])
+    detail = vals.get("detail")
+    if detail is not None:
+        detail = detail.replace("(", "").replace(")", "")
+
+    return ac, detail
+
+
+def hp_from_markdown(text: str) -> int:
+    lines = text.splitlines()
+    line = next((li for li in lines if "Hit Points" in li), None)
+    if line is None:
+        raise ValueError("Cannot find Hit Points")
+
+    pattern = r"\*\*Hit Points:?\*\*[:\s]*(?P<hp>\d+)"
+    s = re.search(pattern, line)
+    if s is None:
+        raise ValueError("Cannot find Hit Points")
+
+    vals = s.groupdict()
+    hp = int(vals["hp"])
+    return hp
 
 
 def name_to_key(name: str) -> str:
@@ -103,13 +196,20 @@ def name_to_key(name: str) -> str:
         key = key.replace(", giant", "")
         prefix = "giant_"
 
+    if key.startswith("npc: "):
+        key = key[5:]
+
     # Remove any text within parentheses
     key = re.sub(r"\s*\(.*?\)\s*", "", key)
     key = (
         key.replace(", ", "_")
+        .replace(": ", "_")
+        .replace(":", "_")
+        .replace("' ", "")
         .replace(",", "_")
         .replace(" ", "_")
         .replace("-", "_")
+        .replace("'", "")
         .strip()
     )
 
@@ -165,6 +265,9 @@ def markdown_to_monster(
 ) -> MonsterInfo:
     with monster_path.open("r", encoding=encoding) as f:
         monster_name = f.readline().replace("#", "").strip()
+        if monster_name.startswith("Npc: "):
+            monster_name = monster_name[5:]
+
         f.seek(0)
 
         text = f.read()
@@ -174,15 +277,24 @@ def markdown_to_monster(
         except ValueError:
             pass
 
-        ct = creature_type_from_markdown(text)
-        if ct is None:
+        ct, subtypes = creature_type_from_markdown(text)
+        if ct == "":
             raise ValueError("Cannot parse creature_type")
         key = name_to_key(monster_name)
+
+        cr = challenge_rating_from_markdown(text)
+        ac, ac_detail = ac_from_markdown(text)
+        hp = hp_from_markdown(text)
 
         return MonsterInfo(
             key=key,
             name=monster_name,
             creature_type=ct,
+            creature_subtypes=subtypes,
+            cr=cr,
+            ac=ac,
+            hp=hp,
+            ac_detail=ac_detail,
             source=source,
             path=monster_path,
             type="markdown",
@@ -201,6 +313,15 @@ def iter_5e_monster_nl() -> Iterable[tuple[Path, str]]:
             print(f"Unable to load {monster_file}. {x}")
 
 
+def load_canonical_monster_text(key: str) -> str:
+    path = (
+        Path(__file__).parent.parent.parent.parent
+        / "data"
+        / "5e_canonical"
+        / f"{key}.md"
+    )
+    return _read(path)
+
 
 def _read(path: Path) -> str:
     try:
@@ -218,4 +339,3 @@ def save_monsters():
     for key, monster in monsters.items():
         path = dir / f"{key}.md"
         monster.save(path)
-

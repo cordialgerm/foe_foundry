@@ -1,6 +1,8 @@
 <MonsterName/>Adult Silver Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>16</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>243</HP>
 <summary>The Adult Silver Dragon is a regal and noble creature with scales that gleam like polished silver. Its wings are large and majestic, and it often radiates a calming, dignified presence. Silver Dragons are known for their compassion and justice, frequently taking human form to live among mortals and assist those in need. They make their lairs in high, snowy mountains, where they can survey vast landscapes. Their breath weapon is a cone of icy cold, freezing enemies in their tracks. In addition to their cold breath, they can also emit a paralyzing gas, immobilizing their foes without causing harm.</summary>
 
 <summary>The Adult Silver Dragon is a massive and powerful creature known for its grace and intelligence. As a formidable opponent, it boasts a high Armor Class of 19 and a substantial health pool, having 283 hit points. Its challenge rating of 19 signifies that it poses a significant threat in combat, often requiring a well-coordinated team of adventurers to defeat. This dragon excels in both physical and magical combat, backed by exceptional strength with a strength score of 24, which grants it a +7 modifier on related checks. Its innate spellcasting and unique abilities make it a cunning adversary. Although it has high resilience with damage immunity to cold and abilities allowing it to avoid damage under certain circumstances, its reliance on powerful breath weapons and splendid spells makes it vulnerable if disabled or outmaneuvered.</summary>
@@ -43,6 +45,7 @@ In the event of the dragon's death, regional effects will dissipate over the cou
 
 Source: 5e_srd
 
+<statblock>
 # Adult Silver Dragon (Metallic)
 
 *Huge dragon, lawful good*
@@ -101,7 +104,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 21 Dexterity saving throw or take 15 (2d6+8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 21 Dexterity saving throw or take 15 (2d6+8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -109,6 +113,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Silver Dragon
 
 *Huge* *Dragon*
@@ -160,6 +165,7 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 19 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 21 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Windstorm (Costs 2 Actions):** Pounding winds surround the dragon in a 20-foot radius. A creature in this area attempting to move closer to the dragon must spend 2 feet of movement for every 1 foot closer it moves, and ranged attacks against the dragon are made with disadvantage. A creature that starts its turn in the windstorm makes a DC 20 Constitution saving throw, taking 5 (1d10) cold damage on a failure. The windstorm lasts until the start of the dragons next turn.
+</statblock>
 
 
 
@@ -168,6 +174,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Silver Dragon
 
 *Huge dragon*
@@ -218,5 +225,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Gray Orc</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>15</HP>
 <summary>The Gray Orc is a Medium humanoid that embodies the characteristics of a stealthy and resourceful predator. With a neutral alignment, this creature exhibits strengths in both agility and resilience, making it a formidable foe despite its relatively low hit points. It has a notable Challenge Rating of 1/4, indicating it can be used effectively in combat scenarios designed for lower-level adventurers. The Gray Orc excels in stealth and mobility, capable of climbing, walking, and burrowing efficiently, which allows it to take advantage of its surroundings. However, it has vulnerabilities, specifically its sunlight sensitivity, which can significantly hinder its effectiveness in bright conditions. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ For its action, the Gray Orc can use its claws to make a melee weapon attack. Th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gray Orc
 
 *Medium* *Humanoid* *neutral*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Kamaitachi</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>84</HP>
 <summary>The Kamaitachi is a small but elusive monstrosity with a chaotic neutral alignment, making it a wild card in any encounter. With a challenge rating of 5, it possesses a balanced combination of speed, resilience, and striking power. A central aspect of the Kamaitachi's strength lies in its agility and deceptive offensive abilities, particularly in its unique forms. Its weaknesses primarily stem from its limited ability to engage in direct confrontations, as its performance relies heavily on the surrounding environment, particularly snowy conditions for optimal effectiveness. Creatures that manage to locate its true form may have an advantage, but until then, it thrives on chaos and stealth.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Kamaitachi can use the Multiattack action to deliver two sickle p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kamaitachi
 
 *Small* *Monstrosity* *chaotic neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Wintry Assault (Wintry Swirl Form Only):** Each creature in the kamaitachi’s space must make a DC 15 Dexterity saving throw. On a failure, the creature takes 9 (2d8) slashing damage plus 9 (2d8) cold damage and is blinded until the end of its next turn. On a success, it takes half the damage and isn’t blinded.
 
 
+</statblock>
 
 

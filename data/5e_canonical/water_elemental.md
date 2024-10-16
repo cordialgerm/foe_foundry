@@ -1,6 +1,8 @@
 <MonsterName/>Water Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>114</HP>
 <summary>A Water Elemental is a living embodiment of water, summoned from the Elemental Plane of Water. Its fluid form can shift and flow, taking the shape of towering waves or crashing torrents. Water Elementals are highly versatile, able to envelop and drown their enemies, battering them with crushing force. They are often summoned by spellcasters to serve as guardians or to wreak havoc in battle. Water Elementals are almost impossible to injure with conventional weapons, as they can reform and regenerate from most physical damage. They are commonly found in aquatic environments or guarding sacred bodies of water.</summary>
 
 <summary>The Water Elemental is a large creature of the elemental type, embodying the essence of water. Its primary role in combat is that of a devastating melee fighter, utilizing its strength and unique abilities to control the battlefield. With a relatively high Armor Class of 14 and a substantial pool of Hit Points totaling 114, it can withstand considerable damage. Its speed is impressive as well, with a walking speed of 30 feet and a swimming speed of 90 feet, giving it exceptional mobility in aquatic environments. However, despite its formidable presence, it possesses low intelligence and charisma, making it relatively simple-minded and less effective in social interactions. The Water Elemental is known for its damage immunities and resistances, which allow it to shrug off many attacks, but it can be hindered by cold damage.</summary>
@@ -37,6 +39,7 @@ Additionally, the Water Elemental has a bonus action called **Purify Blood**, us
 
 Source: 5e_srd
 
+<statblock>
 ### Water Elemental
 
 *Large elemental, neutral*
@@ -75,7 +78,8 @@ Source: 5e_srd
 
 ***Whelm (Recharge 4-6)***. Each creature in the elemental's space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8+4) bludgeoning damage. If it is Large or smaller, it is also grappled (escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space.
 
-The elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 13 (2d8+4) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength and succeeding.
+The elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 13 (2d8+4) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength and succeeding.</statblock>
+
 
 
 
@@ -83,6 +87,7 @@ The elemental can grapple one Large creature or up to two Medium or smaller crea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Water Elemental
 
 *Large* *Elemental*
@@ -117,6 +122,7 @@ Source: 5e_artisinal_monsters
 - **Whelm:** The elemental targets each Large or smaller creature in its space. Each target makes a DC 15 Strength saving throw. On a failure  the target is grappled (escape DC 15). Until this grapple ends  the target is restrained and unable to breathe air. The elemental can move at full speed while carrying grappled creatures inside its space. It can grapple one Large creature or up to four Medium or smaller creatures.
 
 
+</statblock>
 
 
 
@@ -125,6 +131,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Water Elemental
 
 *Large elemental*
@@ -164,5 +171,6 @@ Source: 5e_artisinal_monsters
 
 - **Purify Blood (3/Day).** The water elemental touches a willing creature that isn’t a Construct or Undead. The target is cured of the poisoned condition and of any disease afflicting it.
 
+</statblock>
 
 

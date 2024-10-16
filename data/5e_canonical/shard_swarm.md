@@ -1,6 +1,8 @@
 <MonsterName/>Shard Swarm</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Shard Swarm is a medium-sized construct characterized by its unorthodox composition and combat style. It embodies a swarm of sharp shards, capable of flying and enveloping its targets. This creature's primary strength lies in its unique abilities, allowing it to reform and restrain foes, while also being immune to several damage types. However, it is vulnerable to spells that target antimagic, which can incapacitate it. With an average Armor Class of 13 and 22 hit points, the Shard Swarm poses a moderate challenge to adventurers, especially in swarming and crowd-control situations.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Shard Swarm is a unique and tactical opponent that utilizes its swa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shard Swarm
 
 *Medium* *Construct* *unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Contain (Recharge 5-6):** The shard swarm envelopes one Medium or smaller creature in its space. The target must succeed on a DC 13 Dexterity saving throw or be restrained inside the swarm for 1 minute. The target has disadvantage on this saving throw if the shard swarm used Come Together to form in the target's space. While restrained, the target doesn't take damage from the swarm's Shards action, but it takes 5 (2d4) slashing damage if it takes an action that requires movement, such as attacking or casting a spell with somatic components. A creature within 5 feet of the swarm can take an action to pull a restrained creature out of the swarm. Doing so requires a successful DC 13 Strength check, and the creature making the attempt takes 5 (2d4) slashing damage.
 
 
+</statblock>
 
 

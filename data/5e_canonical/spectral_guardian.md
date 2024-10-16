@@ -1,6 +1,8 @@
 <MonsterName/>Spectral Guardian</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>14</AC>
+<HP/>93</HP>
 <summary>The Spectral Guardian is a Medium undead creature classified as Neutral Evil. It serves as a formidable protector of specific locations tied to its past disgrace, often found haunting tombs or ruins. With an armor class of 14, it offers a reasonable defense against attacks but relies on its hit points, totaling 93, to sustain itself in combat. The Spectral Guardian has a challenge rating of 6, making it a significant adversary, capable of dealing considerable necrotic damage while inflicting conditions that can hinder or terrify its opponents. Its strengths lie in its high Dexterity and Charisma, allowing it to evade blows and manipulate fear effectively. However, it is relatively weak in Strength, making it less effective in physical confrontations.</summary>
 
 <detail>
@@ -30,6 +32,7 @@ The creature is capable of spellcasting, using its high Charisma for the spell s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spectral Guardian
 
 *Medium* *Undead* *Neutral Evil*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Spectral Blade:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage plus 9 (2d8) necrotic damage, and the target must succeed on a DC 14 Wisdom saving throw or be frightened until the end of its next turn.
 - **Spectral Burst:** Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 120 ft., one target. Hit: 9 (1d10 + 4) force damage plus 9 (2d8) necrotic damage.
 - **Spellcasting:** The arcane guardian casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 15):<br>At will: dancing lights, fog cloud, minor illusion<br>3/day each: fear, slow<br>1/day each: arcane hand
+</statblock>
 
 

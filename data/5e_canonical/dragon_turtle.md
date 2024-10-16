@@ -1,6 +1,8 @@
 <MonsterName/>Dragon Turtle</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>17</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>341</HP>
 <summary>The Dragon Turtle is a colossal, turtle-like creature with a massive, heavily armored shell and the head of a dragon. Its scales are dark and thick, providing incredible defense, and its size allows it to rival even the largest ships in the ocean. Dragon Turtles live in deep seas and coastal waters, where they can cause devastating damage to ships and coastal settlements. They have the ability to breathe scalding steam, which can boil the water around them and sear their enemies. Despite their immense power, they are intelligent and often demand tribute or negotiate with sailors rather than resort to violence.</summary>
 
 <summary>The Dragon Turtle is a gargantuan dragon classified within the creature hierarchy of Dungeons & Dragons. This formidable entity possesses impressive durability and powerful offensive capabilities, making it a formidable foe for any adventuring party. The Dragon Turtle boasts an exceptional Armor Class of 21 and significantly high hit points totaling 264, which translates to strong survivability in combat. With a Challenge Rating of 17, it presents a considerable threat, capable of dealing substantial damage with its attacks. When engaging enemies, the Dragon Turtle utilizes its amphibious nature to navigate both water and land, giving it added strategic advantages in various environments.</summary>
@@ -41,6 +43,7 @@ Lastly, the Dragon Turtle possesses a reaction known as Siege Follow-Through. If
 
 Source: 5e_srd
 
+<statblock>
 ## Dragon Turtle
 
 *Gargantuan dragon, neutral*
@@ -77,7 +80,8 @@ Source: 5e_srd
 
 ***Tail***. *Melee Weapon Attack:* +13 to hit, reach 15 ft., one target. *Hit:* 26 (3d12+7) bludgeoning damage. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be pushed up to 10 feet away from the dragon turtle and knocked prone.
 
-***Steam Breath (Recharge 5-6)***. The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance against this damage.
+***Steam Breath (Recharge 5-6)***. The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance against this damage.</statblock>
+
 
 
 
@@ -85,6 +89,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon Turtle
 
 *Gargantuan* *Dragon*
@@ -128,6 +133,7 @@ Source: 5e_artisinal_monsters
 - **Tail:** When the dragon turtle is hit by an opportunity attack, it makes a tail attack.
 
 
+</statblock>
 
 
 
@@ -136,6 +142,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon Turtle
 
 *Gargantuan dragon*
@@ -172,5 +179,6 @@ Source: 5e_artisinal_monsters
 
 - **Siege Follow-Through.** If the dragon turtle destroys an object or structure with an attack, it can make a Bite or Tail attack against a creature it can see within 5 feet of that object or structure.
 
+</statblock>
 
 

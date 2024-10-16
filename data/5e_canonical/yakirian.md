@@ -1,6 +1,8 @@
 <MonsterName/>Yakirian</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (chain shirt)</AC>
+<HP/>67</HP>
 <summary>The Yakirian is a medium humanoid creature known for its lawful neutral alignment. It exhibits notable physical strength and resilience, making it a formidable opponent in combat. It possesses moderate armor class and a significant pool of hit points, indicating durability. The Yakirian is particularly effective at resisting various psychological effects due to its special ability, Resilient Soul, which enhances its mental fortitude. While it has decent melee combat capabilities, its true strength lies in its ability to assimilate knowledge and enhance its capabilities through its unique action, Consume Heart. The creature can thrive in combat, but its low charisma suggests that it may struggle in social scenarios.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The Consume Heart ability allows the Yakirian to absorb the heart of a dead huma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yakirian
 
 *Medium* *Humanoid* *lawful neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Consume Heart:** The yakiran consumes the heart of a dead humanoid or giant within 5 feet. If the creature also less than 1 minute ago, the yakirian gains the following benefits: <br>* The yakirian absorbs the dead creature's knowledge and asks two questions. If the dead creature knew the answers in life, the yakirian learns them instantly. <br>* The yakirian's maximum and current hp increase by 10 for 1 hour. <br>* The yakirian has advantage on Strength-based attack rolls and ability checks, as well as on all saving throws for 1 hour.
 
 
+</statblock>
 
 

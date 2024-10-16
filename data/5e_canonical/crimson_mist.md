@@ -1,6 +1,8 @@
 <MonsterName/>Crimson Mist</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>15</AC>
+<HP/>68</HP>
 <summary>The Crimson Mist is a Medium undead creature characterized by its chaotic evil nature. Hovering in a spectral form, it combines the traits of a vampire with mist-like qualities, making it a formidable opponent to adventurers. With an armor class of 15 and a total of 68 hit points, it can withstand a fair amount of damage. The creature excels in dealing necrotic damage and can threaten the life of characters with blood by reducing their hit point maximum while recovering its own vitality. Although it possesses several strengths, such as immunities to various damage types and conditions, the Crimson Mist is notably vulnerable to sunlight, which can severely handicap its effectiveness in combat. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Crimson Mist can use "Engulf," where it moves up to its
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crimson Mist
 
 *Medium* *Undead* *chaotic evil*
@@ -53,5 +56,6 @@ Sunlight Hypersensitivity. The crimson mist takes 20 radiant damage when it star
 - **Engulf:** The mist moves up to its speed. While doing so, it can enter a Medium or smaller creature's space. When the mist enters a creature's space, the creature must make a DC 15 Dexterity saving throw. On a successful save, the creature can choose to be pushed 5 feet back or to the side of the mist. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.<br><br>On a failed save, the mist enters the creature's space, and the creature takes 15 (4d6) necrotic damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 15 (4d6) necrotic damage at the start of each of the mist's turns. When the mist moves, the engulfed creature doesn't move with it, and is freed. An engulfed creature can try to escape by taking an action to make a DC 14 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the mist. A creature within 5 feet of the mist can take an action to pull a creature out of the mist. Doing so requires a DC 14 Strength check, and the creature making the attempt takes 14 (4d6) necrotic damage. The mist can only engulf one Medium or smaller creature at a time.
 
 
+</statblock>
 
 

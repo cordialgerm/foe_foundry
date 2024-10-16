@@ -1,6 +1,8 @@
 <MonsterName/>Glass Gator</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Glass Gator is a Large beast that embodies the perfect blend of agility and cunning in aquatic environments. With an Armor Class of 15, it possesses a reasonable level of defense due to its natural armor. Its Hit Points total 45, derived from rolling seven ten-sided dice and adding seven, making it fairly resilient for a challenge rating of 1, which awards 200 experience points to those who defeat it in combat. The Glass Gator's key strengths are its impressive speed of 50 feet on land and its amphibious nature, allowing it to thrive both in water and on land. However, it has a low Intelligence score of 4 and a Charisma score of 5, marking it as a creature with poor social skills and minimal cognitive ability. Its various abilities make it a formidable hunter that relies on stealth, concealment, and powerful physical attacks to overpower its targets.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of reactions, the Glass Gator can activate a Silt Cloud ability, which 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Glass Gator
 
 *Large* *Beast* *Unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Silt Cloud (Recharges after a Short or Long Rest):** When it takes damage while underwater and within 5 feet of the bottom of a body of water, the glass gator stirs up a 10-foot-radius sphere of silt centered on it. The silt spreads around corners, and its area is heavily obscured. It lasts for 1 minute or until a strong current disperses it. The glass gator can then swim up to half its speed. The cloud of silt doesn’t move with the glass gator.
+</statblock>
 
 

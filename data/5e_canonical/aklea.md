@@ -1,6 +1,8 @@
 <MonsterName/>Aklea</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>22</CR>
+<AC/>21</AC>
+<HP/>656</HP>
 <summary>Aklea is a gargantuan celestial creature, embodying immense power and divine authority. With a formidable Armor Class of 21 and a substantial pool of Hit Points totaling 656, it is a challenging opponent rated at Challenge Level 22, making it a significant threat in any encounter. Aklea possesses tremendous physical and magical capabilities, evidenced by its high attributes across Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. Its distinguishing features include exceptional damage immunities to radiant damage and damage from non-magical weapons, positioning it as a resilient adversary. However, despite its strengths, the creature is primarily reliant on its spellcasting and physical attacks to dominate the battlefield.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ In combat, Aklea can take up to one legendary action at a time, choosing to atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aklea
 
 *Gargantuan* *Celestial*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Cast Spell:** The empyrean casts a spell. The empyrean can't use this option if it has cast a spell since the start of its last turn.
 - **Fly:** The empyrean flies up to half its fly speed.
 - **Shout (Recharge 5-6):** Each creature within 120 feet that can hear the empyrean makes a DC 25 Constitution saving throw. On a failure, a creature takes 24 (7d6) thunder damage and is stunned until the end of the empyreans next turn. On a success, a creature takes half damage.
+</statblock>
 
 

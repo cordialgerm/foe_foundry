@@ -1,6 +1,8 @@
 <MonsterName/>Whisperer in Darkness</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>15</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Whisperer in Darkness is a formidable Medium Aberration characterized by its neutral evil alignment. This creature stands out due to its impressive spellcasting abilities and its role as a manipulator of both physical and psychic forces. With a high Armor Class of 17 and significant hit points totaling 142, it can endure considerable damage in combat. The creature is particularly powerful, wielding an array of spells that allow it to control the battlefield and influence the minds of its foes. However, it does have some weaknesses, particularly to magical attacks that bypass its damage resistances. Overall, the Whisperer in Darkness poses a significant challenge to adventurers, utilizing its intelligence and cunning alongside powerful abilities to dominate confrontations.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In combat, the Whisperer employs a multiattack strategy, making two Grasp of the
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Whisperer in Darkness
 
 *Medium* *Aberration* *neutral evil*
@@ -62,5 +65,6 @@ At will: alter self, detect magic, detect thoughts, disguise self, fear, identif
 - **Grasp of the Void:** Melee Spell Attack: +12 to hit, reach 5 ft., one target. Hit: 21 (6d6) force damage, and the target must succeed on a DC 18 Constitution saving throw or be stunned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

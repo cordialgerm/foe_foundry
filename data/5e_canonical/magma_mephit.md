@@ -1,6 +1,8 @@
 <MonsterName/>Magma Mephit</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>22</HP>
 <summary>A Magma Mephit is a small, impish elemental creature made of molten rock and fire. These mischievous creatures are found near volcanoes, lava flows, or other areas of intense heat. Magma Mephits are capable of breathing gouts of fire and spewing molten rock at their enemies. They delight in causing destruction and chaos, using their ability to ignite objects and create small eruptions of magma. Magma Mephits can also summon other mephits to aid them in battle. Though weak individually, their fiery nature makes them dangerous in groups.</summary>
 
 <summary>The Magma Mephit is a small elemental creature that embodies fire and magma, often found in volcanic regions or near geothermal features. With an Armor Class of 11 and 21 hit points, it is relatively fragile but possesses some interesting abilities that can turn the tide in combat. The mephit operates effectively as a skirmisher, using its flying speed to engage from the air while employing a range of fiery attacks. Its weaknesses include vulnerability to cold damage, while it is immune to fire and poison, making it a strong contender against certain attacks. The Magma Mephit has abilities that allow for clever positioning and surprising explosions upon death, making it a hazardous foe for unwary adventurers.</summary>
@@ -37,6 +39,7 @@ Overall, the Magma Mephit is a cunning and explosive foe, capable of dealing sig
 
 Source: 5e_srd
 
+<statblock>
 ### Magma Mephit
 
 *Small elemental, neutral evil*
@@ -75,7 +78,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +3 to hit, reach 5 ft., one creature. *Hit:* 3 (1d4+1) slashing damage plus 2 (1d4) fire damage.
 
-***Fire Breath (Recharge 6)***. The mephit exhales a 15-foot cone of fire. Each creature in that area must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one.
+***Fire Breath (Recharge 6)***. The mephit exhales a 15-foot cone of fire. Each creature in that area must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -83,6 +87,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Magma Mephit
 
 *Small* *Elemental*
@@ -117,6 +122,7 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (1/Day):** The mephit exhales a 15-foot cone of fire. Each creature in the area makes a DC 10 Constitution saving throw  taking 7 (2d6) fire damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -125,6 +131,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Magma Mephit
 
 *Small elemental*
@@ -159,5 +166,6 @@ Source: 5e_artisinal_monsters
 
 - **Pyrotechnic Display (1/Day).** The mephit casts the color spray spell (spell save DC 11), requiring no material components and using CHA as the spellcasting ability.
 
+</statblock>
 
 

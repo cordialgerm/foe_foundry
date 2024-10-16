@@ -1,6 +1,8 @@
 <MonsterName/>Arx</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>171</HP>
 <summary>The Arx is a formidable Large Fiend characterized by its lawful evil alignment, making it a powerful adversary in combat scenarios. With an impressive Armor Class of 17 due to its natural armor and a substantial pool of Hit Points totaling 171, it is well-equipped to withstand damage. The Arx has a Challenge Rating of 9, suggesting that it presents a significant challenge to adventurers, offering 5,000 XP upon defeat. Its strengths include high physical strength, with a Strength score of 20 that grants it a +5 modifier, allowing for very good melee attacks. However, it has a low Dexterity score of 8, which gives it a -1 modifier and makes it somewhat vulnerable to ranged attacks. The Arx is resilient to multiple damage types, including cold, fire, lightning, and poison, thanks to its damage resistances. Notably, it possesses a mix of powerful melee attacks, defensive abilities, and strategic options that can control the battlefield.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Arx serves as both a formidable opponent in direct melee combat and
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arx
 
 *Large* *Fiend* *Lawful Evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Emplace Wall (Recharge 3–6):** The arx extends its hardened elytra and casts them into the ground, creating a wall. The wall is 3 inches thick and is composed of two 10-foot-by-10-foot panels. The panels must connect perpendicular to each other, forming a corner behind the arx. If the wall falls in a creature’s space when the arx places it, the creature must make a DC 16 Dexterity saving throw. On a failure, the creature takes 10 (3d6) bludgeoning damage, and the arx determines to which side of the wall the creature is pushed. On a success, the creature takes half the damage and decides to which side of the wall it is pushed.
+</statblock>
 
 

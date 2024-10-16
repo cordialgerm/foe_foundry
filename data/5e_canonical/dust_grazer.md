@@ -1,6 +1,8 @@
 <MonsterName/>Dust Grazer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Dust Grazer is a large aberration known for its grotesque nature and unique adaptations for survival. It presents a challenge for adventurers due to its high health pool and ability to inflict debilitating poison damage. With an exceptional Constitution score of 20, the Dust Grazer boasts impressive hit points, making it a tough opponent to bring down. Its primary methods of attack include its tendrils and a dangerous special ability called Death Spores, which can severely harm or incapacitate creatures around it. However, its low Dexterity makes it somewhat vulnerable to ranged attacks and quick maneuvers. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ The second action is Absorb, which can only be used against a medium or smaller 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dust Grazer
 
 *Large* *Aberration* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Absorb:** Makes one Tendril attack vs. a Med or smaller creature it is grappling. If attack hits target is  also absorbed into grazer’s body and grapple ends. While absorbed creature is blinded and restrained has total cover vs. attacks and effects outside grazer and takes 7 (2d6) acid at start of each of grazer’s turns. Grazer can have only one creature absorbed at a time. If grazer takes 10+ damage on a single turn from absorbed creature grazer must make DC 15 Con save at end of that turn or expel the creature which falls prone in a space within 5 ft. of grazer. If grazer is flying expelled creature takes normal fall damage. If grazer dies absorbed creature no longer restrained but has disadvantage on save vs. grazer Death Spores.
 
 
+</statblock>
 
 

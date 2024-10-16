@@ -1,6 +1,8 @@
 <MonsterName/>Paper Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>78</HP>
 <summary>The Paper Drake is a small dragon known for its unique ability to transform between a dragon form and a book form. It serves as both a guardian and a source of knowledge due to its understanding of written languages. The Paper Drake is capable of dealing significant slashing damage with its breath weapon and physical attacks while also using clever tactics by disguising itself as an ordinary book when motionless. Its strengths lie in its dexterity and constitution, with good speed on foot, though it lacks flying mobility in book form. On the downside, its low strength makes it less effective in melee combat when compared to more physical creatures, and its intelligence is average, which limits its magical prowess.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Lastly, the Paper Drake has a unique bonus action called Fold, which enables it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Paper Drake
 
 *Small* *Dragon* *Neutral*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Fold:** The paper drake can fold and reshape its papery body to change its size between Tiny, Small, and Medium. It can also use this bonus action to fold itself into the shape of a book, which doesn’t have wings, or back into its Small form. Without wings, it loses its flying speed. Its statistics, other than its size and speed, are the same in each form. It reverts to its Small form if it dies.
+</statblock>
 
 

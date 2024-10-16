@@ -1,6 +1,8 @@
 <MonsterName/>Ophidiotaur</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Ophidiotaur is a large monstrosity embodying chaotic evil, making it a formidable foe in combat. With a high armor class of 16 due to its natural armor and a considerable pool of hit points totaling 95, it can withstand significant damage while dealing it out with its powerful attacks. The Ophidiotaur excels in physical prowess, showcasing strong attributes in Strength (19) and Constitution (18), giving it a very good effectiveness in melee combat. Its Challenge Rating of 5, which translates to 1,800 experience points for defeating it, places it as a mid-tier threat. While its Intelligence is notably low (8), its Wisdom (16) and Charisma (14) provide moderate advantages in perception and social interactions, respectively. However, it possesses vulnerabilities in controlling its actions, being chaotic in nature. The creature is particularly dangerous due to its poison immunities and powerful attacks, augmented by abilities such as Charge, which can enhance its damage output significantly.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ In summary, the Ophidiotaur is a complex and dangerous adversary that combines s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ophidiotaur
 
 *Large* *Monstrosity* *chaotic evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Call Serpents (1/Day):** The ophidiotaur magically calls 1d6 poisonous snakes or flying snakes (ophidiotaur’s choice). The called creatures arrive in 1d4 rounds, acting as allies of the ophidiotaur and obeying its spoken commands. The snakes remain for 1 hour, until the ophidiotaur dies, or until the ophidiotaur dismisses them as a bonus action.
 
 
+</statblock>
 
 

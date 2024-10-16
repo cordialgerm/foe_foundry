@@ -1,6 +1,8 @@
 <MonsterName/>Darakhul Shadowmancer</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>52</HP>
 <summary>The Darakhul Shadowmancer is a Medium undead creature with a neutral evil alignment, embodying the combination of cunning and dark magic. With a Challenge Rating of 4, this creature stands as a formidable adversary in combat, capable of manipulating shadows and employing a range of spells. It has a good mix of defensive and offensive capabilities, bolstered by spells and abilities that allow it to deceive and ambush foes. However, its dependence on darkness and aversion to sunlight can be seen as significant weaknesses. Notably, the Darakhul Shadowmancer's mastery of disguise and shadowy evasion grants it an edge in stealthy endeavors and surprise attacks.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Darakhul Shadowmancer is a challenging foe that blends stealth, mag
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Darakhul Shadowmancer
 
 *Medium* *Undead* *neutral evil*
@@ -63,5 +66,6 @@ Cantrips (at will): acid splash, chill touch, mage hand, prestidigitation
 - **Dagger:** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>River Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>16</AC>
+<HP/>44</HP>
 <summary>The River Dragon Wyrmling is a medium-sized dragon with a unique affinity for water, showcasing its strengths as both a formidable aquatic combatant and a nimble flyer. With an Armor Class of 16, it can withstand various attacks while boasting 44 hit points, giving it good durability in battle. Its speed is notable; this dragon can walk at 50 feet, fly at 60 feet, and swim at 60 feet, allowing for versatile movement in almost any environment. A Challenge Rating of 2, earning 450 experience points upon defeat, makes it an appropriate encounter for lower-level adventurers. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ For its actions, the River Dragon Wyrmling can perform a melee weapon attack wit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # River Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Torrential Breath (Recharge 5-6):** The dragon exhales water in a 15-foot-long  5-foot-wide line. Each creature in the area makes a DC 11 Dexterity saving throw  taking 14 (4d6) bludgeoning damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

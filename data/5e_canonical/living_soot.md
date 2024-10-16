@@ -1,6 +1,8 @@
 <MonsterName/>Living Soot</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>7</CR>
+<AC/>15</AC>
+<HP/>142</HP>
 <summary>The Living Soot is a large elemental creature that embodies the chaotic and hazardous nature of soot and ash. Its primary role in combat is as a damaging and controlling presence on the battlefield, utilizing its ability to move through tight spaces and engulf opponents in toxic fumes. With an Armor Class of 15 and a substantial pool of Hit Points at 142 (which is derived from 15d10 plus an additional 60 hit points), the Living Soot proves to be a resilient adversary, capable of enduring significant damage. Its Challenge Rating of 7 indicates that it poses a moderate challenge to a party of adventurers, offering 2,900 experience points upon defeat. The Living Soot possesses various strengths, such as the ability to fly at a speed of 50 feet and it is immune to fire and poison damage, which enhances its longevity in combat. However, it is vulnerable to cold damage, as this temporarily reduces its mobility and defensive capabilities. Notably, it has a low Intelligence and Charisma, indicating its limited ability to engage in higher-level strategies or social interactions.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ One of the creature's most formidable actions, "Engulfing Sootstorm," can be use
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Living Soot
 
 *Large* *Elemental* *neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Engulfing Sootstorm (Recharge 4–6):** Spins violently in place spreading out tendrils of thick poisonous ash. Each creature within 20' of it:21 (6d6) poison and speed is halved (DC 15 Dex half damage and speed isn’t reduced). Speed reduction lasts until creature uses action cleaning off the ash.
 
 
+</statblock>
 
 

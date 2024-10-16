@@ -1,6 +1,8 @@
 <MonsterName/>Brain Coral</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Brain Coral is a formidable Huge Aberration characterized by its neutral evil alignment. It serves as a unique and strategic creature in combat due to its colony-like structure. The Brain Coral possesses a mix of offensive and defensive capabilities, making it a versatile adversary. Its strengths include high hit points and considerable damage immunities, specifically to psychic damage, as well as the ability to control multiple clusters that can provide additional attacks. However, it suffers from low dexterity, limiting its speed and agility in direct confrontations. This creature can dominate underwater battles, boasting the ability to breathe underwater and manipulate its surrounding environment effectively through summoned sea creatures.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Brain Coral presents a complex challenge due to its unique mechanic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brain Coral
 
 *Huge* *Aberration* *neutral evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Beasts of the Sea (1/Day):** Magically calls 2d4 giant crabs 2 giant sea horses or reef sharks or 1 swarm of quippers provided coral is underwater. The called creatures arrive in 1d4 rounds acting as allies of coral and obeying its telepathic commands. Beasts remain 1 hr until coral dies or until coral dismisses them as a bonus action.
 
 
+</statblock>
 
 

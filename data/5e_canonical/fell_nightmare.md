@@ -1,6 +1,8 @@
 <MonsterName/>Fell Nightmare</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>13</AC>
+<HP/>93</HP>
 <summary>The Fell Nightmare is a Large Fiend that embodies darkness and flame, making it a formidable creature in combat and a terrifying presence on the battlefield. It boasts a well-rounded set of attributes: a strong Strength score of 18 (+4), which allows it to deal significant physical damage; a respectable Constitution score of 16 (+3), granting it durability with 93 hit points; and an above-average Dexterity of 14 (+2) that enhances its mobility. The creature's Challenge Rating is 5, making it an appropriate foe for mid-level adventurers, providing an experience reward of 1,800 XP. Noteworthy strengths include its ability to create a fiery trail, leaving a path of fire that damages opponents and ignites flammable materials. However, its weaknesses include a low Armour Class (AC 13), making it more susceptible to being hit by attacks.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Fell Nightmare can execute a Hooves attack, making a me
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fell Nightmare
 
 *Large* *Fiend*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Ethereal Shift (Recharge 5-6):** The nightmare and a rider magically pass from the Ethereal Plane to the Material Plane or vice versa.
 
 
+</statblock>
 
 

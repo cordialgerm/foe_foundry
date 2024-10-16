@@ -1,6 +1,8 @@
 <MonsterName/>Pyrite Pile</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>6</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Pyrite Pile is a large elemental creature that resembles a mound of gold nuggets, making it an elusive and deceptive foe. With an armor class of 18, it boasts strong defenses due to its natural armor, and with 136 hit points, it can withstand a fair amount of damage in combat. Its presence on the battlefield is intimidating, particularly with its ability to charm nearby humanoids and xorns, compelling them to draw closer in the hopes of acquiring its precious façade. Despite its impressive physical attributes, its low Intelligence and Wisdom scores suggest that it relies on instinct rather than strategy, leaving it vulnerable to more cunning opponents. The Pyrite Pile fits into mid-level encounters, providing challenges not only through its combat abilities but also its ability to manipulate the actions of adventurers who come too close.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ When it comes to actions, the Pyrite Pile can engage in a multiattack, deliverin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pyrite Pile
 
 *Large* *Elemental* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Eat Gold:** Absorbs 52 (8d12) gp worth of nonmagical items and coins made of precious metals ignoring copper worn or carried by one creature grappled by it and the pile regains hp equal to half that. Absorbed metal is destroyed.
 
 
+</statblock>
 
 

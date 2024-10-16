@@ -1,6 +1,8 @@
 <MonsterName/>Nautiloid</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>216</HP>
 <summary>The Nautiloid is a gargantuan elemental creature with a neutral good alignment, known for its impressive swimming capabilities and magical properties. Its high armor class of 18 and substantial hit points of 216 make it a formidable opponent, able to withstand significant damage in combat, while also possessing unique abilities that enhance its utility and protection for allies. With an impressive swimming speed of 90 feet, the Nautiloid can navigate aquatic environments effectively. However, its walking speed is 0 feet, indicating it is primarily suited for underwater battles. The Nautiloid's challenge rating of 13 suggests that it presents a strong challenge to parties of adventurers, making it a notable entity in campaigns. While it is immune to cold damage and resistant to non-magical physical attacks, its weaknesses lie in its low intelligence and charisma scores, which are notably bad, potentially affecting its strategic capabilities in battle. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Nautiloid also has a reaction called "Withdraw." When targeted by an attack,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nautiloid
 
 *Gargantuan* *Elemental* *neutral good*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Withdraw:** When a creature the nautiloid can see targets it with an attack the nautiloid can pull its body into its shell gaining a +5 bonus to AC until the start of its next turn.
 
 
+</statblock>
 
 

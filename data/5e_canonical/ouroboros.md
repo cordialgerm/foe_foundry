@@ -1,6 +1,8 @@
 <MonsterName/>Ouroboros</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>94</HP>
 <summary>The Ouroboros is a formidable creature resembling a massive dragon, embodying the essence of rebirth and transformation. As a neutral entity, it plays a unique role in encounters, presenting both a challenge to adventurers and an opportunity for unexpected outcomes. Its substantial hit points of 94, coupled with a good Armor Class of 15, make it a durable opponent. Among its strengths are its ability to rebirth itself upon death, granting healing to allies or inflicting damage to enemies. However, its intelligence and charisma scores are only average, which may limit its effectiveness in some social interactions or strategic planning.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Lastly, the Reactive Hide ability grants the Ouroboros damage resistance to the 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ouroboros
 
 *Huge* *Dragon* *neutral*
@@ -67,5 +70,6 @@ The ouroboros can take 3 legendary actions, choosing from the options below. Onl
 - **Bite Attack:** The ouroboros makes one bite attack.
 - **Blurring Façade (Costs 2 Actions):** The ouroboros blurs and shifts light around itself or another creature it can see within 60 feet of it. Attacks against the target have disadvantage until the end of the ouroboros' next turn. The target can resist this effect with a successful DC 15 Wisdom saving throw.
 - **Guiding Beacon (Costs 2 Actions):** The ouroboros causes itself or another creature it can see within 60 feet of it to illuminate with white flame. Attacks against the target have advantage until the end of the ouroboros' next turn. The target can resist this effect with a successful DC 15 Wisdom saving throw.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Goblin Alchemist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>10</HP>
 <summary>The Goblin Alchemist is a small humanoid creature that serves as a cunning and capable combatant with a specialty in alchemical substances. Though relatively weak in terms of hit points, it relies on its agility and a mix of melee and ranged attacks to outmaneuver opponents. With a challenge rating of 1/2, it is an accessible threat for low-level adventurers, providing both challenge and surprise. Notably, its potent alchemical skills allow it to deal ongoing fire damage, while its ability to escape quickly makes it harder to pin down in combat. However, its physical attributes are below average, making it vulnerable in direct confrontations.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ As a bonus action, the Goblin Alchemist can utilize Nimble Escape, allowing it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Alchemist
 
 *Small* *Humanoid*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 

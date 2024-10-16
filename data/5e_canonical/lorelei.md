@@ -1,6 +1,8 @@
 <MonsterName/>Lorelei</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>93</HP>
 <summary>The Lorelei is a Medium-sized fey creature that embodies chaotic evil, making her a formidable foe in any encounter. With an Armor Class of 15 and a significant pool of 93 hit points, she can withstand a fair amount of damage. Her high Dexterity score of 21 (+5 modifier) grants her exceptional agility, allowing her to dodge incoming attacks effectively. The Lorelei thrives in combat situations, particularly against humanoid opponents, using her enchanting abilities and spell-like powers to control the battlefield and incapacitate her enemies. While she appears to be powerful, she lacks physical strength, as indicated by her average Strength score of 10 (+0 modifier), which limits her capability in direct melee combat. Her challenge rating of 5 suggests that she poses a fair threat, especially to parties of lower levels.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Lorelei is a master manipulator and a dangerous combatant, capable 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lorelei
 
 *Medium* *Fey* *Chaotic Evil*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Corrupted Kiss:** Melee Spell Attack: +8 to hit, reach 5 ft., one willing creature, or a creature that is incapacitated or restrained. Hit: 14 (2d8 + 5) necrotic damage, and the lorelei regains hp equal to that amount.
 - **Psychic Blast:** Melee or Ranged Spell Attack: +8 to hit, reach 5 ft. or range 60 ft., one target. Hit: 12 (2d6 + 5) psychic damage.
 - **Stunning Glance:** The lorelei sends a seductive glance at a creature she can see within 30 feet of her. The target must succeed on a DC 15 Wisdom saving throw or be stunned until the end of its next turn. On a successful save, a creature is immune to this lorelei’s Stunning Glance for the next 24 hours.
+</statblock>
 
 

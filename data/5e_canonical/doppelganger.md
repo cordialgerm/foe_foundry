@@ -1,6 +1,9 @@
 <MonsterName/>Doppelganger</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<Subtype/>shapechanger</Subtype>
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>52</HP>
 <summary>A Doppelganger is a shapeshifting creature capable of assuming the appearance of any humanoid it sees. Its natural form is a pale, featureless figure with large, unsettling eyes and a smooth, almost gelatinous body. Doppelgangers are highly intelligent and often use their abilities to infiltrate societies, posing as other people to gather information, steal, or cause chaos. They are masters of deception and can mimic the voices, mannerisms, and even memories of those they impersonate. Doppelgangers typically work alone or in small groups, using their powers to manipulate others for their own gain.</summary>
 
 <summary>The Doppelganger is a Medium monstrosity known for its remarkable abilities to mimic and deceive. Functioning as both a combatant and an infiltrator, it possesses a high dexterity and charisma, allowing it to excel in stealth and deception. With an Armor Class of 14, it has a decent level of defense, while its 52 hit points provide it with a fair amount of endurance in combat. The creature is classified with a Challenge Rating of 3, indicating it poses a moderate threat to adventurers. While its melee attacks are potent, particularly when hitting surprised targets, its true strength lies in its shapeshifting and mind-reading abilities, making it a formidable opponent in both direct confrontation and more subtle scenarios. However, its average physical strength and low constitution might be considered weaknesses in prolonged fighting situations.</summary>
@@ -21,6 +24,7 @@ For its bonus actions, the Doppelganger can use Shapeshift to transform into any
 
 Source: 5e_srd
 
+<statblock>
 ## Doppelganger
 
 *Medium monstrosity (shapechanger), neutral*
@@ -57,7 +61,8 @@ Source: 5e_srd
 
 ***Slam***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 7 (1d6+4) bludgeoning damage.
 
-***Read Thoughts***. The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.
+***Read Thoughts***. The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.</statblock>
+
 
 
 
@@ -65,6 +70,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Doppelganger
 
 *Medium* *Monstrosity*
@@ -93,5 +99,6 @@ Source: 5e_artisinal_monsters
 - **Read Thoughts:** The doppelganger magically reads the surface thoughts of one creature within 60 feet that it can see. Until the end of its turn, it has advantage on attack rolls and on Deception, Insight, Intimidation, and Persuasion checks against the creature.
 
 
+</statblock>
 
 

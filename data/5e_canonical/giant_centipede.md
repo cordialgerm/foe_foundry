@@ -1,6 +1,8 @@
 <MonsterName/>Giant Centipede</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>4</HP>
 <summary>A Giant Centipede is a long, multi-legged insect that can grow to terrifying proportions. Its segmented body moves with speed and agility, allowing it to slither through tight spaces or burrow into the ground. Giant Centipedes are often found in dark caves, forests, or swamps, where they ambush their prey with surprising speed. Their bite is venomous, paralyzing or weakening their victims before they devour them. Though not the strongest of creatures, their speed and venom make them dangerous predators, especially when encountered in large numbers.</summary>
 
 <summary>The Giant Centipede is a small beast characterized by its agility and ability to inflict poisonous attacks. With a relatively low Armor Class (AC) of 12 and 9 hit points, it is not particularly durable but makes up for these weaknesses with its moderate dexterity and unique venomous bite. This creature is classified as a Challenge Rating (CR) of 1/4, indicating that it is suitable for low-level encounters. It poses a significant threat with its ability to potentially paralyze its targets, making it an interesting addition to lower-tier adventures.</summary>
@@ -19,6 +21,7 @@ The Giant Centipede has one primary action: Bite. This is a melee weapon attack 
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Centipede
 
 *Small beast, unaligned*
@@ -41,7 +44,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 4 (1d4+2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
+***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 4 (1d4+2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.</statblock>
+
 
 
 
@@ -49,6 +53,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Centipede
 
 *Small* *Beast*
@@ -72,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage and the target makes a DC 11 Constitution saving throw  taking 10 (3d6) poison damage on a failure. If the poison damage reduces the target to 0 hit points  it is made stable but poisoned for 1 hour  even if it regains hit points  and it is paralyzed while poisoned in this way.
 
 
+</statblock>
 
 

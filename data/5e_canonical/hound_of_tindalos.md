@@ -1,6 +1,8 @@
 <MonsterName/>Hound of Tindalos</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Hound of Tindalos is a formidable Medium-sized aberration known for its neutral evil alignment. This creature poses a significant threat due to its high mobility and powerful attacks, making it a dangerous adversary on the battlefield. With an Armor Class of 17, it boasts strong defense attributed to its natural armor. The creature has 93 hit points, accommodating its role as a resilient foe. Its speed of 40 feet allows for agile movement. With a challenge rating of 8, the Hound of Tindalos is designed for encounters that yield 3,900 experience points, emphasizing its status as a high-level enemy. Notably, it can navigate sharp corners to teleport, making it quite unpredictable.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Lastly, the "Hunter of the Lost" ability allows the Hound to transport itself to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hound of Tindalos
 
 *Medium* *Aberration* *neutral evil*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Hunter of the Lost:** The hound can transport itself to a different plane of existence. This works like the plane shift spell, except the hound can only affect itself, not other creatures, and can't use it to banish an unwilling creature to another plane.
 
 
+</statblock>
 
 

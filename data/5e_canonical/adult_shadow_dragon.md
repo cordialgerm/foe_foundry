@@ -1,6 +1,8 @@
 <MonsterName/>Adult Shadow Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>19</CR>
+<AC/>18</AC>
+<HP/>212</HP>
 <summary>The Adult Shadow Dragon is a formidable creature that embodies the essence of darkness and malevolence, serving as a powerful adversary in any campaign. As a Huge Dragon, it boasts a high Armor Class of 18 and a substantial pool of Hit Points totaling 212, making it incredibly resilient in battle. The dragon is agile in movement, capable of walking, climbing, and swimming at 40 feet per round, with a flying speed of 80 feet. With a Challenge Rating of 19, it presents a significant challenge to high-level adventurers, rewarding them with 22,000 experience points upon defeat. The dragon is not only physically powerful but also possesses a variety of special abilities and a potent spellcasting capability, primarily based on its high Charisma score of +6. However, its reliance on shadow-based tactics can be a double-edged sword; if it is exposed to radiant damage, it loses some of its potent abilities. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ For its legendary actions, the dragon can utilize Corrupting Presence to impose 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Shadow Dragon
 
 *Huge* *Dragon*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Lurk:** If the dragon is in dim light or darkness, it magically becomes invisible until it attacks, causes a creature to make a saving throw, or enters an area of bright light. It can't use this ability if it has taken radiant damage since the end of its last turn.
 - **Slip Through Shadows:** If the dragon is in dim light or darkness, it magically teleports up to 45 feet to an unoccupied space that is also in dim light or darkness. The dragon can't use this ability if it has taken radiant damage since the end of its last turn.
 - **Horrid Whispers (Costs 2 Actions):** A creature that can hear the dragon makes a DC 21 Wisdom saving throw. On a failure, the creature takes 13 (3d8) psychic damage, and the dragon regains the same number of hit points.
+</statblock>
 
 

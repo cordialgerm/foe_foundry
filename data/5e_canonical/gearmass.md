@@ -1,6 +1,8 @@
 <MonsterName/>Gearmass</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>115</HP>
 <summary>The Gearmass is a large ooze creature that serves as both a formidable adversary and a hazardous environmental obstacle in Dungeons & Dragons. With a challenge rating of 5, it is designed to pose a significant threat to parties composed of low to mid-level adventurers. This creature excels in grappling opponents and inflicting continual damage through its engulf ability. Its main strengths lie in its high constitution and the corrosive effects it has on non-magical metal weapons, which can turn the tide of battle by damaging the adventurers' tools. However, its low dexterity makes it clumsy in stealth, and its intelligence is exceptionally poor, limiting its strategic thinking. With immunities to many common conditions and a unique ability to pass through tight spaces, it exemplifies the unpredictable dangers present in dungeon environments.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In summary, the Gearmass is a formidable ooze that balances high durability, uni
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gearmass
 
 *Large* *Ooze* *unaligned*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Engulf:** Engulfs Med or smaller creature grappled by it. Engulfed target is blinded restrained and unable to breathe and it must make DC 14 Con save at start of each of gearmass's turns or take 14 (4d6) acid. Any nonmagical ferrous metal armor weapons or other items target is wearing corrode at start of each of gearmass’s turns. If object is either metal armor or metal shield being worn/carried it takes permanent and cumulative –1 penalty to AC it offers. Armor reduced to AC of 10 or shield that drops to a +0 bonus is destroyed. If object is a metal weapon it rusts as described in the Rust Metal trait. If gearmass moves engulfed target moves with it. Gearmass can have only one creature engulfed at a time.
 
 
+</statblock>
 
 

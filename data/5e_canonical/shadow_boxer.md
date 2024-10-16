@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Boxer</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>55</HP>
 <summary>The Shadow Boxer is a small, fey creature that embodies chaotic neutrality. With its unique abilities and fast movements, it acts as a trickster in combat, relying on agility and stealth to outmaneuver its foes. It possesses a solid Armor Class of 13 and can endure a good amount of damage with 55 hit points, attributed to its decent Constitution score. The Shadow Boxer excels in Dexterity and Charisma, with Dexterity at +3, enabling it to excel in stealth and agility-based actions. It features unique abilities that allow it to manipulate shadows and impair the movement of adversaries, although it is vulnerable to area effects due to its lesser durability. Overall, the Shadow Boxer is a cunning adversary that can create chaos on the battlefield through its tactical maneuvers and shadow projection.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Shadow Boxer can make a Multiattack, performing two cla
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Boxer
 
 *Small* *Fey* *chaotic neutral*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The shadow boxer magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the shadow boxer wears or carries is invisible with it.
 
 
+</statblock>
 
 

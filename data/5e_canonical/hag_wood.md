@@ -1,6 +1,8 @@
 <MonsterName/>Hag, Wood</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>170</HP>
 <summary>The Wood Hag is a medium-sized fey creature characterized by its neutral evil alignment. This cunning monster is known for its mastery of woodland environments and has a strong affinity for trickery and manipulation. With an impressive armor class of 16 and a considerable pool of hit points totaling 170, this creature can endure significant damage in combat. The Wood Hag's challenge rating of 9 indicates that it is a formidable opponent, capable of providing a significant challenge to adventurers. Its strengths lie in its powerful melee and ranged attacks, magical capabilities, and unique abilities that allow it to blend seamlessly into its natural surroundings. However, despite its resilience and versatile combat tactics, the Wood Hag maintains weaknesses typical of fey creatures, including susceptibility to certain spells and effects outside its sphere of influence.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Wood Hag can use "Nettling Word," which allows it to prov
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hag, Wood
 
 *Medium* *Fey* *neutral evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Nettling Word:** Heckles mocks or jeers one creature she can see within 30' of her. If creature can hear and understand her enraged until end of its next turn (DC 16 Cha negates). While enraged: advantage on melee attacks unable to distinguish friend from foe and must move to and attack nearest creature (not hag). If none is near enough to move to and attack enraged creature stalks off in random direction. Attacks vs. enraged creature: advantage.
 
 
+</statblock>
 
 

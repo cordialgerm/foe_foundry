@@ -1,6 +1,8 @@
 <MonsterName/>Fleshspurned</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>75</HP>
 <summary>The Fleshspurned is a Medium undead creature with chaotic evil alignment, serving primarily as a combatant that thrives on causing confusion and disrupting its opponents. Its strengths lie in its ability to deal significant necrotic damage, particularly against other undead creatures, thanks to its unique Ghost Eater ability. While it has a respectable Armor Class of 14 and substantial Hit Points totaling 75, it possesses very low Strength, making it quite weak in direct melee confrontations. Its speed is notable, being able to fly at 40 feet while having no walking speed, allowing it to maneuver effectively in combat. The Fleshspurned excels in stealth and has strong defenses, with immunities to necrotic and poison damage, and resistant to multiple types of damage due to its undead nature.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Fleshspurned is a formidable enemy that utilizes its undead nature 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fleshspurned
 
 *Medium* *Undead* *chaotic evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Chatter:** The fleshspurned clashes its oversized teeth together to create a clattering din. Each creature within 30 feet of the fleshspurned must succeed on a DC 14 Wisdom saving throw or be confused for 1 minute. While confused, a creature acts as if under the effects of the confusion spell. A confused creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the target is immune to the fleshspurned’s Chatter for the next 24 hours.
 
 
+</statblock>
 
 

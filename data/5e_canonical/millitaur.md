@@ -1,6 +1,8 @@
 <MonsterName/>Millitaur</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Millitaur is a formidable large monstrosity characterized by its dual nature, combining the traits of a bull and a humanoid. As a neutral creature, the Millitaur primarily serves as a combatant and support figure in the heat of battle, boasting solid physical attributes and the ability to deal damage through various means. With a decent Armor Class of 14 due to natural armor and 85 hit points derived from rolling 10d10 and adding 30, it can withstand a fair amount of damage before succumbing to defeat. The Millitaur excels in melee combat, with respectable Strength and Constitution scores, allowing it to hit hard and take hits in return. However, its intelligence is quite low, making it less effective in social situations where cunning or knowledge might be required. Its challenge rating of 3 means it presents an average threat to parties of adventurers that are just starting to hone their combat skills.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the Millitaur can utilize a Healing Tonic twice per day to provide
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Millitaur
 
 *Large* *Monstrosity* *Neutral*
@@ -45,5 +48,6 @@ Source: 5e_artisinal_monsters
 - **Handaxe:** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 10 (2d6 + 3) slashing damage plus 3 (1d6) poison damage.
 - **Poisonous Flask (Recharge 5–6):** The millitaur hastily combines alchemical substances into a poisonous concoction and throws it at a point the millitaur can see within 30 feet. Each creature within 15 feet of that point must make a DC 13 Dexterity saving throw. On a failure, a creature takes 14 (4d6) poison damage and is poisoned for 1 minute. On a success, a creature takes half the damage and isn’t poisoned. A poisoned creature can make a DC 13 Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Healing Tonic (2/Day):** The millitaur administers a healing tonic to a willing creature within 5 feet of it. The target magically regains 7 (2d6) hp and is freed from any disease or poison.
+</statblock>
 
 

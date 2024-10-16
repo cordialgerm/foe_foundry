@@ -1,6 +1,8 @@
 <MonsterName/>Hippocampus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>42</HP>
 <summary>The Hippocampus is a large beast that can adapt to both aquatic and aerial environments, making it a versatile creature in its home habitats. With an Armor Class of 11 and 42 hit points, its defenses are relatively low, making it vulnerable to attacks if caught unaware. However, its ability to swim at 60 feet gives it exceptional mobility in water, allowing it to evade threats effectively. With a challenge rating of 1, it represents a moderate threat to low-level adventurers, particularly in aquatic settings where it can utilize its speed and special abilities to their fullest extent. The Hippocampus possesses the unique ability to provide fresh air to riders through its special gills, offering utility beyond just combat scenarios.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Hippocampus can perform a Rearing Kick, targeting a creat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hippocampus
 
 *Large beast*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Rearing Kick.** The hippocampus rears up and kicks its forelegs at one creature it can see within 5 feet of it. The target must succeed on a DC 14 STR save or be knocked prone or pushed up to 10 feet away from the hippocampus (the hippocampus’s choice).
 
+</statblock>
 
 

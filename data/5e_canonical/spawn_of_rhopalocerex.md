@@ -1,6 +1,8 @@
 <MonsterName/>Spawn of Rhopalocerex</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Spawn of Rhopalocerex is a large fiend characterized by its chaotic evil nature, making it a formidable opponent in battle. It possesses a reasonable Armor Class of 17 due to its natural armor, combined with substantial Hit Points totaling 112, making it quite resilient. The creature can manipulate its movement through a combination of hovering, walking, and flying, each allowing it to reposition strategically on the battlefield. It carries a Challenge Rating of 6, which denotes it as a moderately difficult adversary, capable of inflicting significant damage and utilizing its magical resistance to mitigate spell effects. However, while it boasts strengths like damage immunities and resistances, it lacks remarkable intelligence and wisdom, which could be considered a weakness in encounters involving more cunning opponents or complex strategies.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a unique action, the Spawn has the Enchanting Display, which can be used afte
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spawn of Rhopalocerex
 
 *Large* *Fiend* *chaotic evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Enchanting Display (Recharge 5-6):** The spawn of Rhopalocerex flutters its wings, and its large eyes briefly shine. Each creature within 30 feet of the spawn and that can see it must make a DC 15 Charisma saving throw. On a failure, a creature is charmed for 1 minute. On a success, a creature takes 14 (4d6) psychic damage.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Dragonette, Barnyard</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>18</HP>
 <summary>The Barnyard Dragonette is a tiny dragon known for its relatively low challenge rating of 1/4, making it suitable for beginning adventurers or as a minor creature encounter. It possesses a mixture of physical capability and magical traits, balanced by its slightly low hit points totaling 18. As a neutral creature, it lacks any strong alignment toward good or evil, making it unpredictable in character interactions. The Barnyard Dragonette is notable for its ability to communicate with beasts and its keen sense of smell, which enhances its perception in the wild.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Barnyard Dragonette also possesses a special attack known as Gritty Breath, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragonette, Barnyard
 
 *Tiny* *Dragon* *neutral*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Gritty Breath (Recharge 5–6):** Exhales a cloud of stinging dust in a 15 ft. cone. Each creature in the area: DC 12 Con save or be blinded 1 min. A blinded creature can repeat the save at end of each of its turns ending effect on itself on a success
 
 
+</statblock>
 
 

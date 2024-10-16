@@ -1,6 +1,8 @@
 <MonsterName/>Duskthorn Dryad</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>77</HP>
 <summary>The Duskthorn Dryad is a Medium-sized Fey creature that embodies the chaotic neutrality of the fey world. With an Armor Class of 17, thanks to its natural armor, and a substantial hit point total of 77, it is a resilient opponent in combat, capable of enduring several rounds of engagement. The dryad possesses exceptional Charisma of 24, which enhances its ability to influence and deceive others, making it a formidable entity in social interactions. While its physical strength is average, its excellent Dexterity of 20 allows it to evade attacks effectively. This creature is particularly powerful in its ability to summon woodland allies and use nature-based magic, making it a strategic player in both combat and environmental manipulation. However, it is less effective in brute force and more inclined towards evasion, charm, and control.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Duskthorn Dryad is an adept manipulator of combat and nature, creat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Duskthorn Dryad
 
 *Medium* *Fey* *Chaotic Neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Thorn:** Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 10 (2d4 + 5) piercing damage.
 - **Children of the Forest (1/Day):** The dryad magically calls 1d4 boars, constrictor snakes, or wolves, or it calls 1 child of the briar. The called creatures arrive in 1d4 rounds, acting as allies of the dryad and obeying her spoken commands. The creatures remain for 1 hour, until the dryad dies, or until the dryad dismisses them as a bonus action.
 - **Spellcasting:** The dryad casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 17):<br>At will: druidcraft<br>3/day each: charm person, entangle, invisibility<br>1/day each: barkskin, spike growth, suggestion
+</statblock>
 
 

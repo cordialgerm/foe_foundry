@@ -1,6 +1,8 @@
 <MonsterName/>Carnivorous Ship</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>13</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>186</HP>
 <summary>The Carnivorous Ship is a gargantuan monstrosity characterized by its ability to traverse both land and sea, making it a formidable foe in aquatic and coastal adventures. With an Armor Class of 17, it has a good defense due to its natural armor, and it boasts a substantial 186 hit points, allowing it to withstand significant damage. The ship can move slowly on land at 10 feet but is capable of swimming at a remarkable speed of 60 feet. The challenge it presents is rated at 13, indicating a tough opponent that rewards players with 10,000 XP upon defeat. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Another powerful action is the "Surge," allowing the Carnivorous Ship to move up
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Carnivorous Ship
 
 *Gargantuan* *Monstrosity* *neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Surge:** The carnivorous ship moves up to 400 feet in a straight line and can move through Huge and smaller objects as if they were difficult terrain. This movement doesn’t provoke opportunity attacks. If it moves through a Huge or smaller object, the object takes 55 (10d10) bludgeoning damage. If it moves through a ship, the ship’s pilot can make a DC 15 Wisdom check using navigator’s tools, halving the damage on a success.
 
 
+</statblock>
 
 

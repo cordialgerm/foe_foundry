@@ -1,6 +1,8 @@
 <MonsterName/>Eye of the Gods</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>36</HP>
 <summary>The Eye of the Gods is a small celestial creature that serves as a divine conduit for its creator deity. This unique being possesses a notable range of abilities that make it both a valuable ally and a formidable opponent. With a Challenge Rating of 1 and 36 hit points, it is not overly powerful, but its high Dexterity gives it a good Armor Class of 14, allowing it to evade attacks effectively. The Eye's capabilities are enhanced by its flying speed of 50 feet, enabling it to navigate the battlefield with ease. While the creature is vulnerable to magical attacks, it is immunized against necrotic and poison damage and benefits from additional resistances, making it quite durable. Its special abilities revolve around dealing damage, providing truesight to allies, and connecting directly to its deity, highlighting its role as a supporter in combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Eye can perform a Slam attack with a +6 to hit and a re
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eye of the Gods
 
 *Small* *Celestial* *any alignment (as its creator deity)*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Divine Inspiration (Recharge 5-6):** The eye of the gods inspires all allies within 10 feet. For 1 minute, all inspired creatures have advantage on saving throws against being frightened.
 
 
+</statblock>
 
 

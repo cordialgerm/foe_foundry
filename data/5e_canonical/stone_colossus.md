@@ -1,6 +1,8 @@
 <MonsterName/>Stone Colossus</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>16</CR>
+<AC/>17</AC>
+<HP/>263</HP>
 <summary>The Stone Colossus is a gargantuan construct designed for frontline combat, serving as an imposing protector or weapon in battles. With a formidable Armor Class of 17 and a robust pool of 263 hit points, it can withstand significant damage while delivering its own devastating attacks. The colossus possesses exceptional physical strength, represented by a Strength score of 22, which allows it to deal substantial melee damage. However, it lacks mobility and dexterity, indicated by its average Dexterity score of 10. While it has some limitations, such as low Intelligence and Charisma scores, rendering it incapable of complex thought or negotiation, its notable abilities make it a powerful adversary. With a challenge rating of 16, the Stone Colossus yields 15,000 experience points upon defeat, making it a valuable foe for adventurers.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Stone Colossus serves as a formidable force on the battlefield, wit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stone Colossus
 
 *Gargantuan* *Construct*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Fling:** The colossus throws one Large or smaller object or creature it is grappling up to 60 feet. The target lands prone and takes 21 (6d6) bludgeoning damage. If the colossus throws the target at another creature, that creature makes a DC 18 Dexterity saving throw, taking the same damage on a failure.
 - **Stomp:** Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 20 (4d6 + 6) bludgeoning damage. If the target is a Large or smaller creature, it makes a DC 18 Strength check, falling prone on a failure.
 - **Bolt from the Blue (Costs 2 Actions):** If the colossus is outside, it calls a bolt of energy down from the sky, hitting a point on the ground or water within 120 feet. Each creature in a 10-foot-radius, sky-high cylinder centered on that point makes a DC 17 Dexterity saving throw, taking 28 (8d6) lightning damage on a failed save or half damage on a success. The colossus can choose to make the bolt deal fire or radiant damage instead of lightning.
+</statblock>
 
 

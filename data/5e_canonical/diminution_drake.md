@@ -1,6 +1,8 @@
 <MonsterName/>Diminution Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>71</HP>
 <summary>The Diminution Drake is a Medium-sized dragon of neutral evil alignment, known for its cunning and deceptive capabilities. With an Armor Class of 15 and 71 hit points, it can withstand moderate damage while effectively maneuvering in combat due to its fly speed of 60 feet and walk speed of 30 feet. As a Challenge Rating 5 creature, it poses a significant threat to adventurers, particularly due to its unique size-altering abilities and poison-based attacks. Its strengths lie in speed, stealth, and its potent shrinking abilities, while it is particularly weak against psychic attacks, given its low Intelligence score. </summary>
 
 <detail>
@@ -33,6 +35,7 @@ In summary, the Diminution Drake excels in mobility, size manipulation, and stea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Diminution Drake
 
 *Medium* *Dragon* *neutral evil*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Shrinking Breath (Recharge 5-6):** The drake exhales poison in a 15-foot-line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw. On a failure, a creature takes 17 (5d6) poison damage and its size is reduced by one category until it completes a short or long rest. On a success, it takes half the damage and isn’t reduced in size. This breath can reduce a creature’s size to no smaller than Tiny.
 
 
+</statblock>
 
 

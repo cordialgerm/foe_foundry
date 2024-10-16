@@ -1,6 +1,8 @@
 <MonsterName/>Orniraptor</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>16</HP>
 <summary>The Orniraptor is a small monstrosity that embodies a unique blend of agility and a defensive capability through its caustic blood. With its role often serving as a nuisance in combat, the Orniraptor possesses the ability to inflict damage not just from direct attacks but also in retaliation against creatures that harm it. It has average durability with a modest armor class of 11 and a total of 16 hit points, presenting a vulnerability to focused attacks. However, its mobility and the ability to work collectively with other Orniraptors provide strategic advantages in a skirmish. Its notable weaknesses include low intelligence and wisdom, making it susceptible to manipulation and subterfuge.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Orniraptor combines relative mobility and a unique defensive trait 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Orniraptor
 
 *Small* *Monstrosity* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Spit Stone:** Ranged Weapon Attack: +3 to hit, range 20/60 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Green Dragon Wyrmling (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>38</HP>
 <summary>The Green Dragon Wyrmling is a powerful young dragon that embodies the characteristics common to its kind, being a formidable presence in both combat and exploration. It is classified as a Huge creature, which allows it to dominate the battlefield with significant attack power and resilience. With an Armor Class of 16, the wyrmling demonstrates good defensive capabilities, while its 55 hit points provide a solid buffer in combat. This dragon excels in forest environments, utilizing its Woodland Stalker ability to become especially adept at stealth, which can be advantageous for ambush tactics. However, it is still developing its full powers compared to older dragons, making it somewhat less dangerous than its adult counterparts. It possesses strong melee attacks and a potent breath weapon, which can impact multiple characters at once, but it is somewhat limited by its recharge mechanic.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the Green Dragon Wyrmling is a formidable youthful dragon that relies o
 
 Source: 5e_srd
 
+<statblock>
 # Green Dragon Wyrmling (Chromatic)
 
 *Medium dragon, lawful evil*
@@ -68,6 +71,7 @@ Source: 5e_srd
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (1d10+2) piercing damage plus 3 (1d6) poison damage.
 
 ***Poison Breath (Recharge 5-6)***. The dragon exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 11 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 
 
@@ -76,6 +80,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Green Dragon Wyrmling
 
 *Huge* *Dragon*
@@ -107,6 +112,7 @@ Source: 5e_artisinal_monsters
 - **Poison Breath (Recharge 5-6):** The dragon exhales poisonous gas in a 15-foot cone. Each creature in that area makes a DC 11 Constitution saving throw  taking 14 (4d6) poison damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -115,6 +121,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Green Dragon Wyrmling
 
 *Medium dragon*
@@ -146,5 +153,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.
 - **Poison Breath (Recharge 5–6).** The dragon exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 11 CON save, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

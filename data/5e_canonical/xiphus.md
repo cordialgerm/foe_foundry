@@ -1,6 +1,8 @@
 <MonsterName/>Xiphus</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>55</HP>
 <summary>The Xiphus is a small yet formidable fey creature, embodying chaotic evil and capable of swiftly maneuvering through combat while inflicting devastating damage. With a challenge rating of 5, it presents a considerable threat to unprepared adventurers. The Xiphus excels in agility and dexterity, boasting an exceptional Dexterity score of 21, which grants it a high bonus on attack rolls, defensive capabilities, and skills such as acrobatics and stealth. It is resilient against lightning damage, allowing it to regenerate health when hit by such attacks. However, despite its weaknesses, the Xiphus's strategic abilities enable it to manipulate the flow of battle, turning the tide in its favor with various unique abilities and powerful attacks.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ For its reactions, the Xiphus can use Borrowed Time when facing lethal damage. T
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Xiphus
 
 *Small* *Fey* *chaotic evil*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Borrowed Time (Recharges after a Short or Long Rest):** If damage is dealt to a xiphus that would kill it, it can attempt to temporarily borrow time from another creature to avoid death. One creature the xiphus can see within 30 feet of it must succeed on a DC 16 Constitution saving throw or take 10 (3d6) necrotic damage, and the xiphus regains hp equal to the damage taken. The target is stable and doesn't die if this effect reduces its hp to 0. After 2 rounds, the xiphus takes necrotic damage, and the target regains hp, equal to the original amount borrowed.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Animated Instrument, Quartet</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Animated Instrument, Quartet is a large construct that exudes an aura of musicality and creation, serving as both an entertainer and a formidable opponent in combat. These constructs are typically unaligned, which means they do not lean towards good or evil, operating purely on their programmed intent. The quartet has a respectable Armor Class of 14, making it moderately difficult to hit due to its natural armor. With 102 hit points resulting from a robust combination of 12d10 plus 36, it can endure a fair amount of damage before being incapacitated. The creature’s movement combines a walking speed of 30 feet and a flying speed of 50 feet, providing it with good maneuverability. With a challenge rating of 4, the Animated Instrument can present notable challenges to relatively lower-level adventurers, rewarding 1,100 experience points upon defeat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Furthermore, the quartet can perform a Musical Arrangement, where it plays one o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animated Instrument, Quartet
 
 *Large* *Construct* *unaligned*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Musical Arrangement:** The quartet plays one of the following songs:Dreadful Dirge. The quartet plays a hair-raising tune that evokes terror. Each hostile creature within 30' of the quartet must make DC 14 Wis save or be frightened until the end of its next turn.Oppressive Overture. The quartet plays a heavy melody that reverberates through nearby creatures. Each hostile creature within 30' of the quartet must make DC 14 Str save or be knocked prone.Seditious Sonata. The quartet plays a song that incites disobedience and rebellion. Each hostile creature within 30' of the quartet must make DC 14 Cha save
 
 
+</statblock>
 
 

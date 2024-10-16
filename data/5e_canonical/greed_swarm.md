@@ -1,6 +1,8 @@
 <MonsterName/>Greed Swarm</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Greed Swarm is a Medium Construct that embodies the insatiable desire for wealth and material goods. It typically plays the role of a menacing foe that can ambush unsuspecting adventurers with its deceptive appearance and potent attacks. With an Armor Class of 13 and 22 hit points, it stands as a moderately resilient opponent for low-level parties. Its Challenge Rating of 1/2 reflects its manageable threat level, making it an interesting encounter for inexperienced players. The Greed Swarm excels in mobility with a flying speed of 40 feet and is particularly tricky due to its ability to resemble a harmless pile of coins. However, it exhibits a notable weakness to force damage and can be incapacitated by antimagic effects, which can severely limit its effectiveness in combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Finally, the swarm has a special ability called Gather, which can be used once p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greed Swarm
 
 *Medium* *Construct* *unaligned*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Gather (1/Day):** The swarm magically gathers up to 100 gp worth of coins, gems, and other small, valuable objects within 60 feet of it, adding them to its mass. It regains 7 (2d6) hit points and has advantage on its next attack roll. A creature wearing or carrying such valuables must succeed on a DC 11 Dexterity saving throw or its valuables fly toward the swarm, joining the mass.
 
 
+</statblock>
 
 

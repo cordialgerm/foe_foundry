@@ -1,6 +1,8 @@
 <MonsterName/>Stryx</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>10</HP>
 <summary>The Stryx is a tiny monstrosity characterized by its stealth and ability to blend seamlessly into its surroundings. It serves as a cunning scout or spy, utilizing its impressive skills in perception and stealth to gather information without being detected. The creature's noteworthy strengths include its exceptional Dexterity, which allows it to be quick and elusive, as well as its special abilities like Flyby that enable it to avoid opportunity attacks. While it has a low Armor Class and limited Hit Points, making it relatively fragile in combat, its ability to mimic a normal owl provides excellent camouflage, making it very challenging for enemies to spot.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Stryx can use its Talons for a melee attack, boasting a +4 to hit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stryx
 
 *Tiny* *Monstrosity* *Neutral*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 
 - **Talons:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.
 - **Spellcasting:** (3/Day)The stryx casts the comprehend languages spell, requiring no material components and using Wisdom as the spellcasting ability.
+</statblock>
 
 

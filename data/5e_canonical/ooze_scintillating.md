@@ -1,6 +1,8 @@
 <MonsterName/>Ooze, Scintillating</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>12</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>165</HP>
 <summary>The Scintillating Ooze is a formidable Large ooze creature with a neutral alignment, presenting an intriguing blend of resilience and offense in combat. With a solid Armor Class of 15 due to its natural armor and a substantial pool of 165 hit points, it is a durable foe that can withstand significant damage. The creature excels at close-quarters combat, utilizing its corrosive form and unique ability to create smaller oozlings under specific conditions. While its Intelligence and Charisma are exceptionally low, rendering it inept at most strategic or social interactions, its physical attributes, particularly its Strength of 20 and Constitution of 16, provide it with great raw power and survivability. However, its Dexterity is average, which may limit its agility in combat scenarios. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ The creature also possesses legendary actions that enhance its potential during 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ooze, Scintillating
 
 *Large* *Ooze* *neutral*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Move:** Up to its speed with o provoking opportunity attacks.
 - **Grasping Pseudopod:** Launches a pseudopod at one creature it can see within 30' of it. Target must make DC 17 Str save or be pulled up to 30' toward the ooze.
 - **Lunging Attack (2):** Makes one Weapon Thrash attack at a creature it can see within 10 ft. of it.
+</statblock>
 
 

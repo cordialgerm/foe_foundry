@@ -1,6 +1,8 @@
 <MonsterName/>Qwyllion</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Qwyllion is a medium-sized aberration with a neutral evil alignment, showcasing a blend of physical and magical prowess that makes it a formidable opponent in combat. It possesses a strong Armor Class of 16 due to its natural armor and has a considerable pool of Hit Points, totaling 110, which allows it to withstand significant damage before being defeated. Its movement speed is average, at 30 feet, but its Dexterity score of 20 (+5 modifier) provides it with exceptional agility and finesse, yielding a +8 to Dexterity saving throws and an impressive +11 modifier in Acrobatics. The Qwyllion is also quite resilient, with a Constitution score of 19 (+4 modifier), making it good at resisting effects that would require a saving throw against it. However, with its Intelligence score of only 12 (+1), it possesses average problem-solving abilities, while its Wisdom and Charisma scores (13 and 16, respectively) grant it above-average perceptive and manipulative capabilities. Its main strengths lie in its special abilities, powerful ranged and melee attacks, and the ability to control and charm other creatures, although it is vulnerable to certain effects that target its lower mental defenses. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Qwyllion can also use a Charm action on a humanoid or beast within 30 feet. 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Qwyllion
 
 *Medium* *Aberration* *Neutral Evil*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) slashing damage.
 - **Deadly Gaze:** Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 17 (4d6 + 3) psychic damage. A Humanoid slain by this attack rises 8 hours later as a specter under the qwyllion’s control, unless the Humanoid is restored to life. The qwyllion can have no more than ten specters under its control at one time.
 - **Charm:** One Humanoid or Beast the qwyllion can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the qwyllion’s verbal commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to the qwyllion’s Charm for the next 24 hours.
+</statblock>
 
 

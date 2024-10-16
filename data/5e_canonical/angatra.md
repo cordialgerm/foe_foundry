@@ -1,6 +1,8 @@
 <MonsterName/>Angatra</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Angatra is a Medium-sized undead creature embodying a neutral evil alignment. It possesses a notable blend of speed and resilience, with an effective armor class of 17 due to its natural armor and substantial hit points totaling 85. This monster is particularly dangerous due to its ability to incapacitate foes with its painful attacks, making it a formidable opponent in combat. While it has some weaknesses, particularly to magical weaponry, it compensates with remarkable agility and powerful abilities that target the vulnerabilities of its enemies. The Angatra commands a challenge rating of 6, reflecting its proficiency in combat and its potential to overwhelm unprepared adventurers.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of combat actions, the Angatra can make a Multiattack, allowing it to s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angatra
 
 *Medium* *Undead* *Neutral Evil*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The angatra makes two Claw attacks.
 - **Claw:** Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 14 (2d8 + 5) piercing damage, and the creature must succeed on a DC 15 Constitution saving throw or be paralyzed by pain until the end of its next turn.
+</statblock>
 
 

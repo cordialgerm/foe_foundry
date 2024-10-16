@@ -1,6 +1,8 @@
 <MonsterName/>Eonic Drifter</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>65</HP>
 <summary>The Eonic Drifter is a Medium-sized humanoid creature that operates within the realm of chaotic neutrality. It possesses a unique combination of magical and physical capabilities, making it a formidable opponent in combat. With an Armor Class of 13, it wears leather armor, providing average protection. The Drifter has a total of 65 hit points, calculated from rolling ten 8-sided dice plus an additional 20, offering it good durability in encounters. It has a challenge rating of 1, providing 200 experience points upon defeat. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Eonic Drifter can use Call to the Future once per day. Th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eonic Drifter
 
 *Medium* *Humanoid* *Chaotic Neutral*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Call to the Future (1/Day):** The eonic drifter calls to a future version of itself, which appears in an unoccupied space the drifter can see within 30 feet of it. The drifter’s future self acts on the drifter’s turn, and each turn it makes one Time-Warping Staff attack against a creature of the drifter’s choice or uses the Help action to aid the drifter. The future self can be attacked and destroyed (AC 13; hp 30; resistance to bludgeoning, piercing, and slashing damage; immunity to poison and psychic damage), otherwise it remains until the drifter dismisses it as a bonus action or the drifter finishes a long rest. If the drifter’s future self is destroyed, the drifter must succeed on a DC 13 Wisdom saving throw or be stunned until the end of its next turn.
+</statblock>
 
 

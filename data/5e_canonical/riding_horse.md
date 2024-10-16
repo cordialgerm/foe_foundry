@@ -1,6 +1,8 @@
 <MonsterName/>Riding Horse</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>13</HP>
 <summary>A Riding Horse is a domesticated horse bred for speed, stamina, and carrying riders across long distances. These horses are commonly used by travelers, soldiers, and messengers for transportation. Riding Horses are typically strong and well-trained, capable of navigating various terrains and enduring long journeys. Though not aggressive, they can be spooked easily, but with proper care and training, they serve as reliable companions on the road.</summary>
 
 <summary>The Riding Horse is a large beast commonly utilized as a mount in adventures. With a good speed of 60 feet and a modest challenge rating of 1/4, this creature is primarily valued for its ability to transport characters rather than for direct combat prowess. Its strengths lie in its robust Strength score of 16, allowing it to effectively engage in melee attacks with its hooves, and its decent Constitution score of 12, giving it a fair amount of hit points. However, it presents very bad intelligence, low wisdom, and poor charisma, making it incapable of understanding languages or performing complex actions outside of its basic instincts.</summary>
@@ -28,6 +30,7 @@ Overall, the Riding Horse serves as a reliable transport option for adventurers,
 
 Source: 5e_srd
 
+<statblock>
 ### Riding Horse
 
 *Large beast, unaligned*
@@ -50,7 +53,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Hooves***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (2d4+3) bludgeoning damage.
+***Hooves***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (2d4+3) bludgeoning damage.</statblock>
+
 
 
 
@@ -58,6 +62,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Riding Horse
 
 *Large* *Beast*
@@ -81,5 +86,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) bludgeoning damage
 
 
+</statblock>
 
 

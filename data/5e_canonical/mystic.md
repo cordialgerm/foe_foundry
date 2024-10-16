@@ -1,6 +1,8 @@
 <MonsterName/>Mystic</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (hide armor)</AC>
+<HP/>75</HP>
 <summary>The Mystic is a Medium humanoid creature with a neutral evil alignment, serving as a cunning and dangerous adversary in combat. With an Armor Class of 14 due to its hide armor and 75 Hit Points (calculated from 10d8+30), the Mystic can withstand a fair amount of damage while employing its abilities to manipulate the battlefield. Its Challenge Rating of 3 indicates it represents a moderate threat to adventurers, offering 700 experience points upon defeat. The Mystic excels in arcane knowledge with its high Intelligence and has notable defensive capabilities through its magical attacks and special abilities. Although it is not the most physically imposing foe, it compensates with its spell-like abilities, strong strategic options, and resilience against damage, particularly necrotic attacks.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ Lastly, the Mystic has a reaction known as Void Deflection. When targeted by a r
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mystic
 
 *Medium* *Humanoid* *neutral evil*
@@ -76,5 +79,6 @@ Source: 5e_artisinal_monsters
 - **Void Deflection:** When a creature the mystic can see targets it with a ranged spell attack, the mystic can attempt to deflect the spell. The mystic makes a Constitution saving throw. If the result is higher than the attack roll, the mystic is unaffected by the spell.
 
 
+</statblock>
 
 

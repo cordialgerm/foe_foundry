@@ -1,6 +1,8 @@
 <MonsterName/>Mudmutt</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>105</HP>
 <summary>The Mudmutt is a Large monstrosity characterized by its adaptability to both land and water environments, giving it a significant edge in combat. With a Challenge Rating of 5, it presents a moderate threat to adventurers, boasting 105 hit points and a good armor class of 15. The creature exhibits strong physical attributes, particularly in Strength and Dexterity, allowing it to perform powerful melee attacks and evade incoming strikes. However, it has extremely low Intelligence and Charisma scores, reflecting its brutish nature. The Mudmutt excels in ambush tactics and can work effectively in groups thanks to its Pack Tactics ability, making it a dangerous opponent when engaging in combat alongside allies.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Mudmutt can unleash a powerful special attack called Sonic Croak, which rech
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mudmutt
 
 *Large* *Monstrosity* *unaligned*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Sonic Croak (Recharge 5–6):** Unleashes an earpiercing croak in a 30' cone. Each creature in that area: 18 (4d8) thunder and is stunned until the end of its next turn (DC 15 Con half damage and isn’t stunned). Creatures submerged in water have disadvantage on the save and take 27 (6d8) thunder instead of 18 (4d8).
 
 
+</statblock>
 
 

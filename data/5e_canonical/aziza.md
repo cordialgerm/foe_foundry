@@ -1,6 +1,8 @@
 <MonsterName/>Aziza</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (leather)</AC>
+<HP/>21</HP>
 <summary>Aziza is a Tiny chaotic good Fey creature that plays a versatile role in encounters, often blending combat with supportive and confusing abilities. With a Challenge Rating of 1/2, the Aziza has an Armor Class of 15 and 21 Hit Points, making it fairly resilient for its size but still vulnerable to focused attacks. Its strengths lie in high Dexterity, allowing for agile movements, and several magical abilities to influence the battlefield. While its physical strength is lacking, the Aziza compensates with agility, intelligence, and spellcasting capabilities. It is notable for its ability to communicate with frogs and toads, which may lend itself to unique role-playing opportunities in appropriate settings.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ For defense, the Aziza has a reaction called "Dazzling Glow." When targeted by a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aziza
 
 *Tiny* *Fey* *chaotic good*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Dazzling Glow:** When a creature the aziza can see targets it with melee attack its skin briefly glows brightly causing the attacker to have disadvantage on the attack roll.
 
 
+</statblock>
 
 

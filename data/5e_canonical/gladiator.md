@@ -1,6 +1,10 @@
 <MonsterName/>Gladiator</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>112</HP>
 <summary>A Gladiator is a highly trained and disciplined warrior who fights for sport, honor, or survival in arenas or in battle. Clad in armor and wielding a variety of weapons, such as swords, spears, or tridents, Gladiators are masters of combat. They are skilled in both offense and defense, using their agility and strength to overpower their opponents. Gladiators may fight for glory or fame, or they may be slaves forced into combat. Their experience in fighting multiple foes makes them formidable in any battlefield, and they are capable of tactical thinking in the heat of battle.</summary>
 
 <summary>The Gladiator is a formidable Medium humanoid known for its impressive combat skills and resilience in battle. With an Armor Class of 16 and a substantial pool of 105 hit points, this creature can withstand significant punishment while dealing out considerable damage with its melee and ranged attacks. The Gladiator's high Strength of 18 grants it a powerful attack bonus and enhances the damage it inflicts on adversaries. It has well-rounded Dexterity and Constitution scores, making it agile and durable, but its mental attributes are average at best. The Gladiator excels in intimidation and performance, reflecting its prowess as a fighter and showman in arenas. Notably, it benefits from a special ability that enhances its damage output, giving it an edge in encounters. </summary>
@@ -33,6 +37,7 @@ Additionally, the Gladiator possesses a reaction called "Parry," enabling it to 
 
 Source: 5e_srd
 
+<statblock>
 ### Gladiator
 
 *Medium humanoid (any race), any alignment*
@@ -73,7 +78,8 @@ Source: 5e_srd
 
 ***Parry***. The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon.
 
-**Gladiators** battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death.
+**Gladiators** battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death.</statblock>
+
 
 
 
@@ -81,6 +87,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gladiator
 
 *Medium* *Humanoid*
@@ -120,6 +127,7 @@ Source: 5e_artisinal_monsters
 - **Shield Block:** If the gladiator is wielding a shield and can see their attacker, they add 3 to their AC against one melee or ranged attack that would hit them.
 
 
+</statblock>
 
 
 
@@ -128,6 +136,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gladiator
 
 *Medium humanoid (any lineage)*
@@ -165,5 +174,6 @@ Source: 5e_artisinal_monsters
 
 - **Parry.** The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon.
 
+</statblock>
 
 

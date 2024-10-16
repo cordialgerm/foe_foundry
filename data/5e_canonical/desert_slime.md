@@ -1,6 +1,8 @@
 <MonsterName/>Desert Slime</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>3</CR>
+<AC/>8</AC>
+<HP/>75</HP>
 <summary>The Desert Slime is a formidable large ooze creature that inhabits arid environments, resembling ordinary sand when still. With a Challenge Rating of 3, it is suitable for mid-level encounters and possesses a total of 75 hit points, which offers decent durability in combat. Its low Armor Class of 8 signifies that it can be hit quite easily, making it somewhat vulnerable in battle. However, it compensates for this with solid offensive capabilities, particularly its ability to restrain and damage opponents through its unique traits and actions. While the Desert Slime is unaligned and does not possess any language or communication skills, it excels in ambushing and incapacitating creatures foolish enough to wander too close.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Desert Slime presents unique challenges in combat, combining stealt
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Desert Slime
 
 *Large* *Ooze* *unaligned*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Surging Sands (Recharge 4–6):** Takes the Dash action.
 
 
+</statblock>
 
 

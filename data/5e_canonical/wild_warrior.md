@@ -1,6 +1,9 @@
 <MonsterName/>Wild Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any lineage</Subtype>
+<CR/>1</CR>
+<AC/>12 (hide armor)</AC>
+<HP/>9</HP>
 <summary>The Wild Warrior is a medium humanoid creature that embodies the essence of survival in various natural terrains. Often found in forests, hills, and mountainous regions, the Wild Warrior portrays the characteristics of a skilled tracker and hunter. It possesses a decent armor class of 12, low hit points of 9, and a modest challenge rating of CR 1/8, making it a relatively easy opponent for experienced adventurers. Although its strength and constitution are only slightly above average, the Wild Warrior has notable special abilities that enhance its capabilities in combat, particularly when working as part of a group. With its abilities centered around stealth, teamwork, and environmental awareness, the Wild Warrior is a clever foe, although its combat effectiveness is limited by its lower damage output and fragility.</summary>
 
 <detail>
@@ -21,6 +24,7 @@ Overall, the Wild Warrior is a resourceful and tactical creature that thrives in
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wild Warrior
 
 *Medium humanoid (any lineage)*
@@ -53,5 +57,6 @@ Source: 5e_artisinal_monsters
 
 - **Quick Trap.** The wild warrior cobbles together a makeshift trap with materials at hand and throws the trap at a creature it can see within 15 feet of it. The target must succeed on a DC 11 DEX save or be restrained until the end of its next turn.
 
+</statblock>
 
 

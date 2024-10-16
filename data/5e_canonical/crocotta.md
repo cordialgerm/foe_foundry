@@ -1,6 +1,8 @@
 <MonsterName/>Crocotta</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>39</HP>
 <summary>The Crocotta is a Medium-sized monstrosity with a neutral evil alignment, renowned for its cunning and predatory instincts. With a formidable Armor Class of 14 derived from its natural armor and a healthy amount of Hit Points totaling 39, the Crocotta is a significant threat in combat, rated with a Challenge Rating of 3, which makes it suitable for encounters with mid-level adventurers. It boasts impressive physical attributes, particularly its Strength of 16, giving it a good attack modifier of +5 for melee attacks. While it can move swiftly with a speed of 50 feet, its intelligence is below average, which somewhat limits its tactical options. Notably, this creature can utilize its special abilities to deceive and incapacitate opponents, making it a strategic foe that can manipulate its environment and other creatures.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For its actions, the Crocotta can make a Bite or Claw attack. The Bite attack ha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crocotta
 
 *Medium* *Monstrosity* *neutral evil*
@@ -55,5 +58,6 @@ Canines are immune to the crocotta’s Paralyzing Gaze, and canine-like humanoid
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.
 
 
+</statblock>
 
 

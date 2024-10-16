@@ -1,6 +1,8 @@
 <MonsterName/>Foxfire Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>10</CR>
+<AC/>9</AC>
+<HP/>126</HP>
 <summary>The Foxfire Ooze is a formidable ooze creature with unique mobility and combat abilities. It presents a significant challenge at Challenge Rating 10 and can absorb and deal considerable damage, especially with its special Lightning Storm ability. This creature is exceptionally durable, boasting high hit points and various immunities that make it resistant to many forms of damage. However, its low Armor Class makes it vulnerable to attacks if it can be engaged effectively. The ooze is particularly dangerous in close quarters, where it can surprise foes and unleash devastating attacks.</summary>
 
 <detail>
@@ -37,6 +39,7 @@ In terms of actions during combat, the Foxfire Ooze can:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Foxfire Ooze
 
 *Large* *Ooze* *unaligned*
@@ -72,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Pseudopod:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 20 (3d10 + 4) bludgeoning damage plus 4 (1d8) lightning damage.
 
 
+</statblock>
 
 

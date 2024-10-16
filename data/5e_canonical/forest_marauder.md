@@ -1,6 +1,8 @@
 <MonsterName/>Forest Marauder</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Forest Marauder is a large giant embodying chaotic evil, serving as a formidable opponent in forest encounters. With a relatively high Armor Class of 15 due to its natural armor and substantial Hit Points totaling 114, it can withstand significant damage in battle. The creature has a Challenge Rating of 4, indicating that it is appropriately challenging for a group of adventurers. The Forest Marauder’s primary strengths lie in its powerful melee attacks and its ability to remain hidden in wooded environments, making it an effective ambusher. However, it suffers from notable weaknesses, particularly its Sunlight Sensitivity, which hampers its effectiveness when exposed to light. Overall, the Forest Marauder is a dangerous adversary, utilizing stealth and brute force to achieve its goal.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the Forest Marauder combines stealth and powerful physical attacks, mak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forest Marauder
 
 *Large* *Giant* *Chaotic Evil*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Forest Ambusher:** While in a forest, the forest marauder can take the Hide action.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Alliumite, Rapscallion</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>38</HP>
 <summary>The Alliumite, referred to as the Rapscallion, is a small chaotic neutral plant creature noted for its cunningness and unique abilities, making it an intriguing opponent in combat. It possesses a decent Armor Class of 15 due to its natural armor, and with 38 hit points, it can sustain moderate damage before going down. The Rapscallion has a good Dexterity score of 18, granting it a +4 modifier, which enhances its mobility and evasiveness. It has a moderate Constitution score of 14, giving it an average resilience to physical damage, but its other attributes, particularly its high Charisma score of 18, reflect its ability to manipulate situations and affect its foes. The creature has a Challenge Rating of 2, making it a suitable encounter for lower-level adventurers, with its ability to blend into natural environments and utilize a mix of physical and emotional attacks to subdue its adversaries.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Alliumite Rapscallion is a highly versatile creature that combines 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alliumite, Rapscallion
 
 *Small* *Plant* *chaotic neutral*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Pungent Retort:** When a creature rapscallion can see within 60' of it starts its turn or casts a spell rapscallion issues forth a string of insults cleverly crafted to make a foe cry. If it can hear the rapscallion target: DC 14 Wis save or sob uncontrollably until start of rapscallion’s next turn. A sobbing creature has disadvantage on ability checks and attack rolls and must make DC 14 Con save to cast a spell that requires spellcaster to see its target. Spellcaster doesn’t lose the spell slot on a failure.
 
 
+</statblock>
 
 

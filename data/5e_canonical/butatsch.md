@@ -1,6 +1,8 @@
 <MonsterName/>Butatsch</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>14</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>248</HP>
 <summary>The Butatsch is a gargantuan aberration with a chaotic neutral alignment, dominating its environment with a strategy of ambush and area denial. It wields formidable physical strength and possesses notable magical capabilities, making it a considerable threat in combat. With a high armor class of 17 and an impressive hit point total of 248, it can withstand significant damage. The creature is particularly resilient against bludgeoning attacks, while it enjoys immunity to acid and fire, making it difficult to damage with typical elemental attacks. However, its speed is below average on land, limiting its mobility to 20 feet when on foot, though it compensates with a swimming speed of 50 feet. It excels in combat through its unique abilities, namely its Immolating Gaze and grappling actions, both of which can severely hinder or eliminate opponents. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Its slam attack is a melee weapon attack with a +11 to hit and a reach of 10 fee
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Butatsch
 
 *Gargantuan* *Aberration* *chaotic neutral*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Ingest:** The butatsch ingests a Large or smaller creature grappled by it, ending the grapple. While ingested, the target is blinded and restrained, it has total cover against attacks and other effects outside the butatsch, and it takes 17 (5d6) acid damage at the start of each of the butatsch’s turns. A butatsch can have up to four Medium or smaller targets or up to two Large targets ingested at a time. If the butatsch takes 30 damage or more on a single turn from an ingested creature, the butatsch must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all ingested creatures, which fall prone in a space within 10 feet of the butatsch. If the butatsch dies, an ingested creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.
 
 
+</statblock>
 
 

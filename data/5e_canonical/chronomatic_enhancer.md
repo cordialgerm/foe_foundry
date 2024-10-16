@@ -1,6 +1,8 @@
 <MonsterName/>Chronomatic Enhancer</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>12</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Chronomatic Enhancer is a formidable Large Construct that plays a unique role in combat and tactical scenarios. Its primary strength lies in its ability to manipulate time around it, providing significant advantages to allies while debilitating enemies. With robust defensive capabilities, including damage immunities and resistances, it is a challenging opponent to overcome. However, the Chronomatic Enhancer's low Intelligence and Charisma suggest that it may lack strategic cunning compared to more intelligent creatures, which could be considered a weakness. Overall, this construct presents a blend of offensive power and strategic support, making it a valuable asset on the battlefield.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ In summary, the Chronomatic Enhancer represents a powerful combination of offens
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chronomatic Enhancer
 
 *Large* *Construct* *unaligned*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Alter Timeline:** When a friendly creature within 15 feet of the chronomatic enhancer takes damage, the enhancer can modify time to protect the creature, changing all damage dice rolled to 1s.
 
 
+</statblock>
 
 

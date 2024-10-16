@@ -1,6 +1,8 @@
 <MonsterName/>Sphinx</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>11</CR>
+<AC/>20</AC>
+<HP/>142</HP>
 <summary>The Sphinx is a powerful Large Monstrosity that serves as a guardian of knowledge and wisdom in many fantasy realms. With high armor class and hit points, this creature can withstand significant damage, boasting an exceptional combat capability alongside formidable spellcasting ability. It has very good attributes in Strength, Wisdom, and Intelligence, making it a versatile foe that excels both in melee combat and magical prowess. However, its challenges lie in the fact that it is not particularly quick and relies on its abilities and spells to control the battlefield. Overall, the Sphinx is a formidable opponent designed to test adventurers' strength and intellect.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ As a bonus action, the Sphinx can use "Speed Time" once per day to double its sp
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sphinx
 
 *Large* *Monstrosity*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Time:** The creatures appear in empty spaces of the sphinxs choosing anywhere on the Material Plane, at any time from 1,000 years in the past to 1,000 years in the future. At the Narrators discretion, changes made in the past may alter the present.
 
 
+</statblock>
 
 

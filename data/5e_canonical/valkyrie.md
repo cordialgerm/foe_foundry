@@ -1,6 +1,8 @@
 <MonsterName/>Valkyrie</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>11</CR>
+<AC/>18</AC>
+<HP/>150</HP>
 <summary>The Valkyrie is a powerful celestial creature that serves as a warrior and protector on the battlefield. With a neutral alignment, it provides both offensive and supportive abilities, enhancing its allies while dealing significant radiant damage to its enemies. The Valkyrie's best strengths include a high armor class of 18, a substantial pool of hit points totaling 150, and impressive saving throws, particularly in charisma and constitution. Its notable weaknesses include vulnerability to magical damage types not specified in its resistances, making it susceptible to well-placed spell attacks. With a challenge rating of 11, the Valkyrie poses a formidable challenge for lower-level adventurers, embodying the role of both a fierce combatant and a divine healer.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Valkyrie also has a noteworthy reaction known as Ascension. When a friendly 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Valkyrie
 
 *Medium* *Celestial* *Neutral*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Ascension:** When a friendly creature the valkyrie can see and within its Aura of Valor is reduced to 0 hp while engaged in melee combat, the valkyrie can reincarnate the creature as a gladiator. If the gladiator reduces at least three creatures to 0 hp within 1 minute of its reincarnation, it transforms into an einherjar. The valkyrie can provide ascension to up to two creatures each hour with this reaction.
+</statblock>
 
 

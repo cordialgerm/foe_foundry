@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Antipaladin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>18</AC>
+<HP/>82</HP>
 <summary>The Shadow Antipaladin is a small humanoid that embodies chaotic evil, making it a formidable opponent in any encounter. With an armor class of 18, it is well-protected, and its 82 hit points allow it to withstand a fair amount of damage. Its movement speed is average at 30 feet, but its Dexterity and Constitution scores, both at 18, give it good agility and resilience in battle. The creature's Challenge Rating is 5, indicating that it presents a significant challenge for a party of adventurers. The Shadow Antipaladin possesses a range of abilities that enhance its combat effectiveness and spell resistance, but it is hindered by its sensitivity to sunlight, which imposes disadvantages on its actions in bright light. Altogether, the Shadow Antipaladin is an agile and dangerous foe capable of inflicting devastating necrotic damage while also manipulating the minds of its enemies.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Lastly, the Shadow Antipaladin’s reaction, Parry, allows it to add 3 to its AC
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Antipaladin
 
 *Small* *Humanoid* *Chaotic Evil*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Parry:** The shadow antipaladin adds 3 to its AC against one melee attack that would hit it. To do so, the antipaladin must see the attacker and be wielding a melee weapon.
+</statblock>
 
 

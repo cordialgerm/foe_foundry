@@ -1,6 +1,8 @@
 <MonsterName/>Obsidian Ophidian</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Obsidian Ophidian is a huge elemental creature that represents a unique blend of power and resilience derived from its fiery environment. With a challenge rating of 5, it can pose a significant threat to adventurers, thanks not only to its formidable physical attacks but also its distinct abilities that enhance its survivability in combat. It has an impressive armor class of 16, providing good defense, and its hit points total 136, reflecting its ability to withstand prolonged battles. Notably, this creature is vulnerable to bludgeoning and cold damage, which can be exploited by clever adventurers. Its skills and condition immunities make it a tough opponent, as it can effectively resist a range of debilitating effects.</summary>
 
 <detail>
@@ -26,6 +28,7 @@ Overall, the Obsidian Ophidian represents a formidable foe that excels in both o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Obsidian Ophidian
 
 *Huge* *Elemental* *neutral*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Lava Splash (Recharge 4–6):** Writhes and flails splashing lava at everything. Each creature within 20' of it: 21 (6d6) fire (DC 15 Dex half). To use this must be touching or within 5 ft. of lava.
 
 
+</statblock>
 
 

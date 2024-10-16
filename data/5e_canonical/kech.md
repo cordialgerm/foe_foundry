@@ -1,6 +1,8 @@
 <MonsterName/>Kech</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>30</HP>
 <summary>The Kech is a Medium humanoid creature known for its stealth and grappling capabilities. With a challenge rating of 1, it can provide a decent threat level for low-level adventurers. The Kech's strengths include a good mix of Strength, Dexterity, and Constitution, all sitting at a +2 modifier, which indicates a solid physical presence and agility. It has access to effective skills such as athletics and stealth, allowing for ambush tactics. Its weaknesses include average intelligence with no bonuses, along with low armor class and health compared to stronger variants, making it vulnerable to concentrated attacks. Notably, the Kech thrives in surprise situations, leveraging its abilities to grapple opponents and deal sustained damage.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In summary, the Kech excels in ambush tactics with its stealth and grappling abi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kech
 
 *Medium* *Humanoid*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Stealthy Sneak:** The kech moves up to half its Speed without provoking opportunity attacks. It can then attempt to hide.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Murgrik</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>152</HP>
 <summary>Murgrik is a formidable and disturbing creature classified as a large aberration with a chaotic evil alignment. With an impressive armor class of 18 thanks to its natural armor and a significant hit point pool of 152, Murgrik is designed to endure prolonged encounters. It possesses a diverse range of movement options, being able to swim at 40 feet, fly at 20 feet, and walk at 40 feet, making it difficult for adversaries to corner. Its challenge rating is 9, representing a considerable threat to adventurers, providing 5,000 experience points upon defeat. This creature presents a high level of challenge due to its physical capabilities and unique abilities, such as its blood frenzy and unsettling ululations. However, it has low intelligence and charisma, which could be considered weaknesses in certain situations, especially in interactions involving social skills.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, Murgrik represents a dangerous foe with both potent physical attacks an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Murgrik
 
 *Large* *Aberration* *chaotic evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Unsettling Ululations (Recharge 6):** The stalk on the murgrik’s head unleashes a dispiriting wail. Each creature within 30 feet of the murgrik that can hear it must make a DC 14 Wisdom saving throw. On a failure, a creature takes 21 (6d6) psychic damage and is frightened for 1 minute. On a success, a creature takes half the damage and isn’t frightened. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

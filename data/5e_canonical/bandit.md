@@ -1,6 +1,10 @@
 <MonsterName/>Bandit</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>1</CR>
+<AC/>12 (leather armor)</AC>
+<HP/>11</HP>
 <summary>A Bandit is a rough, scrappy human or humanoid who lives outside the law, preying on the weak for their own gain. They wear mismatched armor and carry simple weapons such as swords, axes, or bows. Bandits often operate in gangs, ambushing travelers on remote roads or raiding small villages. They are typically motivated by greed, but some may resort to banditry out of desperation or necessity. While they are not highly trained fighters, their strength lies in numbers and their willingness to do whatever it takes to survive.</summary>
 
 <summary>The Bandit is a medium humanoid character that primarily serves as an enemy in combat encounters, particularly in scenarios involving theft or ambush. With a Challenge Rating of 1/8, they are relatively weak opponents, offering limited experience points and presenting challenges suitable for lower-level adventurers. Their strengths lie in their ability to engage in both melee and ranged combat using a scimitar and a light crossbow, respectively. However, their lack of high hit points and poor defensive capabilities make them vulnerable in direct confrontations. Bandits are typically driven by a code of violence, varying from common highway robbers to principled freedom fighters, which adds depth and narrative potential to their encounters.</summary>
@@ -35,6 +39,7 @@ Overall, the Bandit is an agile, stealthy opponent best used in ambushes and hit
 
 Source: 5e_srd
 
+<statblock>
 ### Bandit
 
 *Medium humanoid (any race), any non-lawful alignment*
@@ -63,7 +68,8 @@ Source: 5e_srd
 
 **Bandits** rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.
 
-**Pirates** are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation's vessels.
+**Pirates** are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation's vessels.</statblock>
+
 
 
 
@@ -71,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bandit
 
 *Medium* *Humanoid*
@@ -96,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Bandits are outlaws who live by violence:** Most are highway robbers  though a few are principled exiles or freedom fighters.
 
 
+</statblock>
 
 
 
@@ -104,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bandit
 
 *Medium humanoid (any lineage)*
@@ -136,5 +145,6 @@ Source: 5e_artisinal_monsters
 
 - **Steal Item.** The bandit steals an object from one creature it can see within 5 feet of it. The target must succeed on a DC 11 DEX save or lose one object it is wearing or carrying of the bandit’s choice. The object must weigh no more than 10 pounds, can’t be a weapon, and can’t be wrapped around or firmly attached to the target, such as a shirt or armor.
 
+</statblock>
 
 

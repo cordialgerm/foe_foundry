@@ -1,6 +1,8 @@
 <MonsterName/>Dream Squire</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (chain shirt)</AC>
+<HP/>71</HP>
 <summary>The Dream Squire is a Medium Fey creature that maintains a neutral alignment. Functioning primarily as a servant or protector, this creature has notable strengths in its ability to follow commands and provide defense for its master. With a solid Armor Class of 15 and an impressive pool of 71 hit points, the Dream Squire can withstand considerable damage while also participating actively in combat. However, its low Charisma score of 8 indicates poor social skills, which may detract from its effectiveness in interactions that rely on persuasion or deception. The Dream Squire has a Challenge Rating of 2, indicating it is well-suited for lower-level adventures, granting 450 experience points upon defeat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Dream Squire's bond with its master can be disrupted through magical effects
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dream Squire
 
 *Medium* *Fey* *neutral*
@@ -59,5 +62,6 @@ A dispel evil and good spell's break enchantment option that targets a dream squ
 - **For the Master:** When the dream squire's master is targeted by an attack or spell, the squire magically teleports to an unoccupied space within 5 feet of the master, and the attack or spell targets the squire instead. If the attack or spell deals damage, the dream squire takes half damage from it. To use this ability, the master and squire must be on the same plane.
 
 
+</statblock>
 
 

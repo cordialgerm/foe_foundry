@@ -1,6 +1,8 @@
 <MonsterName/>Light Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>24</HP>
 <summary>The Light Drake is a tiny dragon that embodies the essence of light and goodness. With its neutral good alignment, this creature plays a support role, using its innate spellcasting abilities to assist allies and illuminate its surroundings. The Light Drake possesses decent defenses with an Armor Class of 13 and a modest hit point pool of 24, making it somewhat resilient in combat. Its mobility is excellent, flying at 60 feet and also able to walk and hover at low speeds. While its physical strength is limited, it compensates with high dexterity, allowing it to be nimble in battle. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ As for its actions, the Light Drake can make a melee weapon attack with its Bite
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Light Drake
 
 *Tiny* *Dragon* *neutral good*
@@ -53,5 +56,6 @@ At will: dancing lights, light, guiding star, starburst
 - **Breath Weapon (Recharge 6):** A light drake can breathe a 30-foot line of brilliant white light. Each creature in that line must make a DC 13 Dexterity saving throw. On a failure, a creature takes 5 (2d4) radiant damage and is blinded for 1 minute. On a success, a creature takes half the damage and isn’t blinded. A blinded creature can make a DC 13 Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

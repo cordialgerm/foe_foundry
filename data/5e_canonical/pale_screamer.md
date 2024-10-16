@@ -1,6 +1,8 @@
 <MonsterName/>Pale Screamer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Pale Screamer is a Medium Aberration known for its neutral evil alignment, characterized by both its physical prowess and disturbing capabilities. With an Armor Class of 14 and a total of 52 hit points, it presents a reasonable challenge for lower-level adventurers. It can swim and walk at a speed of 30 feet, making it quite versatile in different environments. The creature has a Challenge Rating of 3, granting it 700 experience points upon defeat. Its strength lies in its physical attacks and its powerful scream, but it suffers from low intelligence and charisma, which may limit its social interactions and cunning strategies.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, the Pale Screamer can unleash its Scream of the Deep ability, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pale Screamer
 
 *Medium* *Aberration* *neutral evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Scream of the Deep (Recharge 6):** The pale screamer unleashes an alien screech in a 30-foot cone. Each creature in that area must make a DC 14 Constitution saving throw. On a failure, a creature takes 10 (3d6) thunder damage and is deafened until the end of its next turn. On a success, a creature takes half the damage and isn’t deafened.
 
 
+</statblock>
 
 

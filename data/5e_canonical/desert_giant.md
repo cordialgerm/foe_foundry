@@ -1,6 +1,8 @@
 <MonsterName/>Desert Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>175</HP>
 <summary>The Desert Giant is a massive and imposing creature classified as a Huge Giant with a Neutral alignment. It serves as a formidable combatant in the natural landscapes of arid deserts, leveraging its impressive physical attributes and special abilities to dominate its environment. With a high Armor Class of 17 due to its natural armor and robust Hit Points totaling 175, it can absorb a significant amount of damage in battle. The Desert Giant’s challenge rating of 9 indicates a substantial threat level, making it suitable for mid-level adventurers. Notable strengths include exceptional strength and constitution scores, allowing it to deal substantial damage and withstand attacks. However, its Dexterity is average, making it less agile than other creatures, and its Charisma is only good, meaning it's not particularly persuasive or inspiring.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Desert Giant can execute a "Multiattack," allowing it to make two
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Desert Giant
 
 *Huge* *Giant* *Neutral*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The giant makes two Falchion attacks.
 - **Falchion:** Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 23 (6d4 + 8) slashing damage.
 - **Rock:** Ranged Weapon Attack: +12 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage.
+</statblock>
 
 

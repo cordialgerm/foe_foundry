@@ -1,6 +1,8 @@
 <MonsterName/>Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>12</AC>
+<HP/>1</HP>
 <summary>A Spider is a small, predatory arachnid known for spinning webs to trap its prey. Found in forests, caves, and other dark places, Spiders are stealthy hunters that rely on their webs to ensnare creatures before delivering a venomous bite. While common Spiders pose little threat to adventurers, their larger cousins, such as Giant Spiders, can be deadly. Spiders are highly adaptable, able to climb walls and ceilings with ease, and their natural camouflage allows them to blend into their surroundings to ambush unsuspecting prey.</summary>
 
 <summary>The Spider is a tiny beast that serves as a common and minor threat in the realms of Dungeons & Dragons. Although its challenge rating is low, indicating that it poses little danger to experienced adventurers, the Spider's agility and stealth make it an effective ambush predator in the right environment. Its ability to climb surfaces easily and to sense creatures in contact with its webs adds a layer of tactical advantage in encounters. However, with only 1 hit point and very low physical abilities, it is easily defeated. In combat, the Spider's primary strength lies in its stealth and the potential for a surprise attack, although its low damage output limits its effectiveness against stronger foes.</summary>
@@ -33,6 +35,7 @@ Overall, while the Spider is not a fearsome combatant, its abilities in stealth 
 
 Source: 5e_srd
 
+<statblock>
 ### Spider
 
 *Tiny beast, unaligned*
@@ -63,7 +66,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must succeed on a DC 9 Constitution saving throw or take 2 (1d4) poison damage.
+***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must succeed on a DC 9 Constitution saving throw or take 2 (1d4) poison damage.</statblock>
+
 
 
 
@@ -71,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spider
 
 *Tiny* *Beast*
@@ -100,6 +105,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage and the target makes a DC 9 Constitution saving throw  taking 2 (1d4) poison damage on a failure.
 
 
+</statblock>
 
 
 
@@ -108,6 +114,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spider
 
 *Tiny beast*
@@ -141,5 +148,6 @@ Source: 5e_artisinal_monsters
 
 - **Web Shot (Recharge 4–6).** The spider launches a gob of webbing at one creature it can see within 15 feet of it. The target must succeed on a DC 9 DEX save or have its speed reduced by 10 feet. A creature can take an action to remove the webbing, ending the effect.
 
+</statblock>
 
 

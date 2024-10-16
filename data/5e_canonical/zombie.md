@@ -1,6 +1,8 @@
 <MonsterName/>Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>8</AC>
+<HP/>22</HP>
 <summary>A Zombie is a reanimated corpse, brought back to life through necromantic magic. These shambling, rotting creatures are mindless and driven only by a desire to consume the living. Zombies are slow and clumsy, but they are incredibly resilient to damage, continuing to fight even after suffering grievous injuries. They are often found in groups, raised by dark sorcerers or found wandering in cursed graveyards and ancient tombs. While they lack intelligence, Zombies' sheer persistence and resistance to pain make them dangerous foes in large numbers.</summary>
 
 <summary>The Zombie is a formidable and iconic creature in the Dungeons & Dragons universe, categorized as a Medium Undead. Its low Armor Class of 8 makes it relatively easy to hit, while its 15 hit points provide a moderate buffer in battle. With a Challenge Rating of 1/4, it serves as an appropriate foe for low-level adventurers, providing a balance of threat and manageability. One of the Zombie's most notable strengths is its Undead Fortitude ability, which allows it to potentially remain on the battlefield even after taking lethal damage. However, its mobility is limited to walking 20 feet per turn, and its low Dexterity means it is ineffective at dodging attacks. Overall, the Zombie excels in being a persistent and menacing opponent, particularly in numbers, but it is not particularly versatile or adaptive in combat.</summary>
@@ -47,6 +49,7 @@ Overall, the Zombie is a straightforward yet troublesome adversary that can over
 
 Source: 5e_srd
 
+<statblock>
 ### Zombie
 
 *Medium undead, neutral evil*
@@ -77,7 +80,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Slam***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) bludgeoning damage.
+***Slam***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) bludgeoning damage.</statblock>
+
 
 
 
@@ -85,6 +89,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zombie
 
 *Medium* *Undead*
@@ -116,6 +121,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one grappled target. Hit: 6 (1d10 + 1) piercing damage  and the zombie regains the same number of hit points.
 
 
+</statblock>
 
 
 
@@ -124,6 +130,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zombie
 
 *Medium undead*
@@ -157,5 +164,6 @@ Source: 5e_artisinal_monsters
 
 - **Rotten Hold.** The zombie gnaws idly on the creature grappled by it. The target must succeed on a DC 12 CON save or take 2 (1d4) poison damage. A Humanoid slain by this bonus action rises 24 hours later as a zombie, unless the Humanoid is restored to life or its body is destroyed.
 
+</statblock>
 
 

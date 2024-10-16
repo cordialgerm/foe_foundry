@@ -1,6 +1,8 @@
 <MonsterName/>Infernal Swarm</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>12</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Infernal Swarm is a formidable Huge fiend that embodies both cunning and chaotic power. As a lawful evil creature, it operates within a structured framework of malevolence, using its shape-shifting abilities to confuse and overwhelm foes. With a high Armor Class of 16, significant Hit Points totaling 150, and a Challenge Rating of 12, it poses a serious threat in combat. Its strengths include impressive combat capabilities, including resistance to a variety of damage types and several abilities that allow it to manipulate its form and the environment. However, it is vulnerable to thunder damage, which could significantly impair its abilities and force it into a shapeless form. </summary>
 
 <detail>
@@ -38,6 +40,7 @@ The Infernal Swarm's blend of defensive capabilities and versatile attack option
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Infernal Swarm
 
 *Huge* *Fiend* *lawful evil*
@@ -79,5 +82,6 @@ While in shapeless form, it can occupy another creature’s space and vice versa
 - **Slam (Fiend Form Only):** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) bludgeoning damage, and the target is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the infernal swarm can’t slam another target. In addition, at the start of each of the target’s turns, the target takes 14 (4d6) piercing damage.
 
 
+</statblock>
 
 

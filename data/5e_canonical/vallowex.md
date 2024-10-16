@@ -1,6 +1,8 @@
 <MonsterName/>Vallowex</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>123</HP>
 <summary>Vallowex is a large aberration with chaotic neutral alignment, designed to serve as a formidable challenge in combat and an eerie encounter for players. With a solid armor class of 14 due to its natural armor and a substantial pool of hit points totaling 123, the vallowex is resilient in battle. It combines aquatic and terrestrial movement, capable of swimming 30 feet and walking the same distance. The challenge rating of 7 indicates it can present a significant challenge to a party, earning 2,900 experience points upon defeat. Notably, the vallowex possesses an array of special abilities that can debilitate its foes while also utilizing effective offensive capabilities through its Multiattack action.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Once per week, the vallowex can unleash a 40-foot-radius cloud of microscopic eg
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vallowex
 
 *Large* *Aberration* *chaotic neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Release Eggs (1/Week):** A vallowex can release a 40-foot-radius cloud of microscopic eggs into a body of water it touches. The eggs live for 1 hour. Any humanoid or beast that drinks the eggs must succeed on a DC 15 Constitution saving throw or be infected with a disease—a vallowex tadpole. A host can carry only one vallowex tadpole to term at a time. While diseased, the host must make a DC 15 Constitution saving throw at the end of each long rest. On a failed save, the host’s Strength score is reduced by 1d4. This reduction lasts until the host finishes a long rest after the disease is cured. If the host’s Strength score is reduced to 0, the host dies, and a vallowex emerges from the corpse. If the host succeeds on three saving throws or the disease is magically cured, the unborn tadpole disintegrates.
 
 
+</statblock>
 
 

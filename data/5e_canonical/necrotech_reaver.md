@@ -1,6 +1,8 @@
 <MonsterName/>Necrotech Reaver</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Necrotech Reaver is a formidable and sinister creature, categorized as a Huge Undead with a neutral evil alignment. It serves as a menacing foe for adventurers, featuring a large pool of hit points and significant damage output capabilities. With an Armor Class of 15 provided by its natural armor, the Reaver demonstrates resilience in combat. It possesses a Challenge Rating of 6, making it a challenging opponent worth 2,300 XP upon defeat. Notably, its physical prowess, particularly its high Strength score of 21, grants it an exceptional modifier of +5, allowing it to deal significant damage in melee combat. However, its Dexterity is quite poor at 7, resulting in a bad -2 modifier, which contributes to its sluggishness and low evasion capabilities. The Reaver is immune to poison damage and the poisoned condition, but its low Intelligence, Wisdom, and Charisma scores indicate that it suffers from average to bad effectiveness in checks related to these attributes.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ The Bladed Sweep is a powerful action it can initiate, recharging on rolls of 5 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Necrotech Reaver
 
 *Huge* *Undead* *neutral evil*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bladed Sweep (Recharge 5–6):** Swings its chains in a wide arc. Each creature within 15 ft. of the reaver must make a DC 15 Dex save. On a failure a creature takes 21 (6d6) slashing damage and is knocked prone. On a success a creature takes half the damage and isn’t knocked prone. A creature that fails the save by 5 or more is pushed up to 15 ft. away from the reaver and knocked prone.
 
 
+</statblock>
 
 

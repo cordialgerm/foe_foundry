@@ -1,6 +1,8 @@
 <MonsterName/>Roachling Lord</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>63</HP>
 <summary>The Roachling Lord is a small humanoid creature characterized by its chaotic neutral alignment. It boasts a commendable Armor Class of 15 thanks to its natural armor, making it relatively difficult to hit in combat. With an average of 63 hit points—derived from a combination of 14 six-sided dice and an extra 14—this creature has decent stamina for its level. The Roachling Lord operates effectively in an environment where stealth and cunning are pivotal, represented by its solid Dexterity score of 16, which grants a good modifier of +3 to related checks. However, its Strength, Intelligence, Wisdom, and Charisma scores remain average, providing no significant advantages in physical confrontations or social interactions. Its challenge rating of 2 indicates that it is a suitable encounter for low-level parties, worth 450 experience points.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ During combat, the Roachling Lord can execute a Multiattack action, allowing it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Roachling Lord
 
 *Small* *Humanoid* *Chaotic Neutral*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The roachling lord makes two Begrimed Shortsword or Begrimed Dart attacks.
 - **Begrimed Shortsword:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 3 (1d6) poison damage.
 - **Begrimed Dart:** Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 3 (1d6) poison damage.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Life Broker</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>13</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>190</HP>
 <summary>The Life Broker is a formidable Medium Fey creature characterized by its lawful neutral alignment. This being specializes in manipulating life energy, making it a powerful opponent in combat and a potential ally in specific circumstances. With a high Armor Class of 16 and a significant pool of hit points totaling 190, the Life Broker can sustain prolonged encounters. Its statistics reveal exceptional Dexterity and Constitution, granting it good reflexes and resilience. Although it possesses strong offensive capabilities, its primary strength lies in its unique life-draining abilities, which can turn the tide of battle by weakening foes while simultaneously enhancing its own vitality. However, its reliance on life essence means that it can be vulnerable if confronted with beings that cannot willingly provide energy, and its low saving throw modifiers in Constitution, Wisdom, and Charisma suggest its defenses may not hold up against certain spells or effects.</summary>
 
 <detail>
@@ -32,6 +34,7 @@ For bonus actions, the Life Broker has the Quick-Footed ability, allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Life Broker
 
 *Medium* *Fey* *lawful neutral*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Quick-Footed:** Takes Dash Disengage or Dodge.
 
 
+</statblock>
 
 

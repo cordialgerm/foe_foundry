@@ -1,6 +1,8 @@
 <MonsterName/>Great Wyrm Black Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>22</AC>
+<HP/>735</HP>
 <summary>The Great Wyrm Black Dragon is a formidable and awe-inspiring creature known for its immense power and cunning. As a Gargantuan dragon, it commands a significant presence on the battlefield, utilizing its strengths to dominate foes with both physical attacks and innate magic. With an exceptionally high Armor Class of 22 and an impressive pool of 735 hit points, this dragon is a tank capable of sustaining damage while dishing out severe harm to its enemies. Its abilities allow it to excel in stealth and combat, particularly when submerged in water, where it gains advantages in ambushing targets. Despite its strengths, the Great Wyrm does have vulnerabilities; once its legendary resistances are exhausted, its defenses can weaken, making it slightly more susceptible to attacks.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Great Wyrm Black Dragon is a master of both melee and magical comba
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Great Wyrm Black Dragon
 
 *Gargantuan* *Dragon*
@@ -73,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Darkness:** The dragon creates a 40-foot-radius sphere of magical darkness originating from a point it can see within 120 feet. Darkvision can't penetrate this darkness. The darkness lasts for 1 minute or until the dragon uses this action again.
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 19 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 22 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
+</statblock>
 
 

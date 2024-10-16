@@ -1,6 +1,8 @@
 <MonsterName/>Minor Malleable</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>32</HP>
 <summary>The Minor Malleable is a Medium aberration characterized by its chaotic evil nature. Renowned for its shapeshifting abilities, this creature embodies amorphous features, allowing it to navigate through tight spaces and adapt its form at will. With an Armor Class of 11, it is relatively easy to hit, but it compensates for this vulnerability with hit points totaling 32, derived from 5d8 plus 10. Due to its unique traits, the Minor Malleable can absorb psychic damage rather than take it, which significantly enhances its resilience against psychic attacks. Although it boasts a good Strength score of 16, making it physically capable, it has a very bad Dexterity rating of 8, indicating it struggles with agility and finesse. The Minor Malleable's ability to work in conjunction with other versions of itself to form larger entities adds a layer of complexity to encounters, ensuring that players must strategize carefully to overcome them.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Finally, the **Join Malleables** action allows the Minor Malleable to collaborat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Minor Malleable
 
 *Medium* *Aberration* *chaotic evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Join Malleables:** As long as the malleable is within 10 feet of at least three other minor malleables, each minor malleable in range can use this action option at the same time to join together and create a larger malleable. The new malleable’s hp total is equal to the combined hp total of all the minor malleables. and it is affected by any conditions, spells, and other magical effects that affected any of the minor malleables. The new malleable acts on the same initiative count as the malleables that formed it and occupies any unoccupied space that previously contained at least one of the malleables that formed it. <br>* Four minor malleables can join to create one moderate malleable. <br>* Eight minor malleables can join to create one major malleable. <br>* Sixteen minor malleables can join to create one massive malleable.
 
 
+</statblock>
 
 

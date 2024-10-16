@@ -1,6 +1,8 @@
 <MonsterName/>Nichny</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Nichny is a medium-sized fey creature of neutral evil alignment, known for its cunning intelligence and magical abilities. It has an armor class of 17 due to its natural armor, making it difficult for enemies to hit. The Nichny possesses a significant pool of hit points, totaling 127, derived from 17d8 plus an additional 51, allowing it to endure a substantial amount of damage. With a challenge rating of 6, it is considered a formidable foe in battle, capable of inflicting and resisting various types of damage while manipulating luck in its favor. While it has notable weaknesses, such as vulnerability to radiant damage, its immunities and resistances allow it to thrive in combat and evade numerous threats.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Nichny can also create a "Lucky Stone," imbuing a small stone with good luck
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nichny
 
 *Medium* *Fey* *Neutral Evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Luck-Stealing Bolt:** Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 22 (4d8 + 4) force damage, and the target has disadvantage on ability checks and attack rolls until the end of its next turn.
 - **Create Lucky Stone:** The nichny magically imbues a small stone with good luck. A creature, other than the nichny, wearing or carrying the stone has a +1 bonus to saving throws. The nichny can have no more than three such stones actively imbued at a time. If it imbues a fourth, the effect on the oldest imbued stone ends. The nichny can end the magic on any of the stones at any time (no action required).
 - **Teleport (Recharge 6):** The nichny magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+</statblock>
 
 

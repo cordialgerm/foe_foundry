@@ -1,6 +1,8 @@
 <MonsterName/>Vulture</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>10</AC>
+<HP/>5</HP>
 <summary>A Vulture is a large, carrion-eating bird with a bald head and sharp beak, known for scavenging the remains of dead creatures. Vultures play a vital role in their ecosystems, cleaning up decaying remains that other animals leave behind. Though not typically aggressive, Vultures are drawn to death and will circle above dying or dead creatures, waiting for the opportunity to feed. In battle, their sharp talons and beaks can be dangerous to smaller creatures, but they prefer to avoid conflict, relying on their keen senses to locate food from miles away.</summary>
 
 <summary>The vulture is a medium beast characterized by its scavenging attributes and keen sensory abilities. With an armor class of 10, it offers minimal protection, and it possesses just 4 hit points, indicating that it is rather frail and can be easily taken down in combat. The vulture has a flying speed of 50 feet, allowing it to escape threats quickly, but its walking speed of only 10 feet limits its mobility on the ground. It operates in a challenge rating of 0, indicating that it presents very little threat to adventurers, earning only 25 experience points upon defeat. Notably, the vulture can take advantage of its keen sight and smell, providing it with the ability to notice threats or opportunities effectively.</summary>
@@ -29,6 +31,7 @@ In terms of actions, the Vulture can make a melee weapon attack with its beak. T
 
 Source: 5e_srd
 
+<statblock>
 ### Vulture
 
 *Medium beast, unaligned*
@@ -57,7 +60,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Beak***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) piercing damage.
+***Beak***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) piercing damage.</statblock>
+
 
 
 
@@ -65,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vulture
 
 *Medium* *Beast*
@@ -96,6 +101,7 @@ Source: 5e_artisinal_monsters
 - **Retreat:** When the vulture would be hit by a melee attack, the vulture can move 5 feet away from the attacker. If this moves the vulture out of the attackers reach, the attacker has disadvantage on its attack.
 
 
+</statblock>
 
 
 
@@ -104,6 +110,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vulture
 
 *Medium beast*
@@ -137,5 +144,6 @@ Source: 5e_artisinal_monsters
 
 - **Defensive Bile.** When a creature the vulture can see hits it with a melee attack while within 5 feet of it, the vulture can spit partially digested carrion at the creature. The attacker must succeed on a DC 11 CON save or be incapacitated until the end of its next turn.
 
+</statblock>
 
 

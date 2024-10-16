@@ -1,6 +1,8 @@
 <MonsterName/>Merclops</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>7</CR>
+<AC/>13</AC>
+<HP/>126</HP>
 <summary>The Merclops is a formidable Huge Giant, known for its immense strength and resilience in combat. With a significant hit point pool of 126, it can withstand substantial damage, making it a tough opponent. Its primary strengths lie in its powerful melee attacks, access to advantageous abilities when frightened, and its ability to operate underwater, which can catch opponents off guard. However, it has a substantial weakness in ranged combat due to poor depth perception, resulting in disadvantage on all ranged attacks. This creature operates effectively in close quarters and is a force to be reckoned with, particularly in aquatic environments.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ As a reaction, the Merclops employs "Big Windup," which allows it to prepare a p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Merclops
 
 *Huge* *Giant*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Big Windup:** When a creature hits the merclops with a melee attack, the merclops readies a powerful strike against its attacker. The merclops has advantage on the next club attack it makes against the attacker before the end of its next turn.
 
 
+</statblock>
 
 

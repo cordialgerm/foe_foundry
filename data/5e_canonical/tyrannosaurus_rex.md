@@ -1,6 +1,8 @@
 <MonsterName/>Tyrannosaurus Rex (Dinosaur)</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>8</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Tyrannosaurus Rex is a colossal, carnivorous dinosaur known for its massive size and ferocity. Standing over 20 feet tall and weighing several tons, the T-Rex is one of the most fearsome predators in existence. Its powerful jaws are lined with sharp teeth, capable of crushing bone, and its massive legs allow it to charge at surprising speeds. The T-Rex uses its size and strength to dominate its territory, preying on large creatures with devastating bites and powerful tail swipes. Despite its size, it is an agile and relentless hunter, feared by all creatures in its domain.</summary>
 
 <summary>The Tyrannosaurus Rex is a formidable creature in the world of Dungeons & Dragons, classified as a Huge Beast that embodies the essence of prehistoric terror. With a Challenge Rating of 8, it presents a significant challenge to adventurers, boasting impressive physical attributes coupled with powerful attacks. The creature has an Armor Class of 13, which is considered average, allowing it to withstand a fair amount of damage while delivering devastating blows of its own. It possesses 126 hit points, reflecting its resilience in battle, and its movement speed of 50 feet enables it to close distances quickly. The T. rex's greatest strengths lie in its high Strength score of 22 and Constitution score of 20, allowing it to deal substantial damage and endure a great deal of punishment. However, its low Dexterity score indicates that it may struggle with more agile foes. Its Intelligence, Charisma, and Wisdom scores are notably low, meaning it has minimal capabilities in social interactions and strategic thinking.</summary>
@@ -27,6 +29,7 @@ Additionally, the T. Rex has a bonus action called Rending Shake. While grapplin
 
 Source: 5e_srd
 
+<statblock>
 ### Tyrannosaurus Rex (Dinosaur)
 
 *Huge beast, unaligned*
@@ -55,7 +58,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +10 to hit, reach 10 ft., one target. *Hit:* 33 (4d12+7) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the tyrannosaurus can't bite another target.
 
-***Tail***. *Melee Weapon Attack:* +10 to hit, reach 10 ft., one target. *Hit:* 20 (3d8+7) bludgeoning damage.
+***Tail***. *Melee Weapon Attack:* +10 to hit, reach 10 ft., one target. *Hit:* 20 (3d8+7) bludgeoning damage.</statblock>
+
 
 
 
@@ -63,6 +67,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tyrannosaurus Rex
 
 *Huge* *Beast*
@@ -88,6 +93,7 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -96,6 +102,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tyrannosaurus Rex
 
 *Huge beast*
@@ -129,5 +136,6 @@ Source: 5e_artisinal_monsters
 
 - **Rending Shake.** While grappling a creature, the tyrannosaurus shakes its head, tearing at the creature. The grappled creature must succeed on a DC 16 STR save or take 6 (1d12) slashing damage and be thrown up to 20 feet in a random direction and knocked prone. If the thrown target strikes a solid surface, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 16 DEX save or take the same damage and be knocked prone.
 
+</statblock>
 
 

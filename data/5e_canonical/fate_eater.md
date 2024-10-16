@@ -1,6 +1,8 @@
 <MonsterName/>Fate Eater</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>130</HP>
 <summary>The Fate Eater is a medium aberration known for its dark and unsettling nature. It embodies the concept of manipulating destiny and inflicting psychic damage, making it a formidable opponent in combat. With an Armor Class of 16 and a substantial pool of Hit Points totaling 130, the Fate Eater can withstand a considerable amount of damage before succumbing. Its Challenge Rating of 6 indicates that it poses a moderate threat to adventurers, offering 2,300 experience points upon defeat. This creature is notable for its resilience and its ability to poison creatures that consume its flesh, as well as its potent psychic attacks that can alter a target's fate, introducing a strategic layer to encounters with it.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Its most formidable ability is Alter Fate, which it can use on a recharge of 5 o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fate Eater
 
 *Medium* *Aberration* *Neutral*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The fate eater makes two Bite attacks.
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage plus 7 (2d6) necrotic damage.
 - **Alter Fate (Recharge 5–6):** The fate eater alters the fate of one creature it can see within 30 feet of it. The creature must make a DC 15 Charisma saving throw. On a failure, the creature takes 36 (8d8) psychic damage, and its fate is altered. Roll a d6 to determine which of the following alterations affects the creature. On a success, the creature takes half the damage, and its fate isn’t altered. A creature with an altered fate for 1 minute or less can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Otherwise, a creature with an altered fate can repeat the saving throw at the end of each long rest, ending the effect on itself on a success.
+</statblock>
 
 

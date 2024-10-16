@@ -1,6 +1,8 @@
 <MonsterName/>Hverhuldra</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>120</HP>
 <summary>The Hverhuldra is a small fey creature that embodies a neutral good alignment, known for its enchanting presence and magical abilities. It possesses a bountiful amount of hit points, making it resilient in battles, and it is capable of both swimming and walking at a moderate speed. With a challenge rating of 6, the Hverhuldra presents a suitable challenge for parties of adventurers. Its strengths lie in its damage immunities to fire and poison, resistance to cold damage, and a range of abilities that allow it to manipulate water and protect allies. Weaknesses include vulnerability to cold damage, as its protective traits diminish when affected by it. Notably, the Hverhuldra can execute powerful spells and changes the battlefield with its abilities, making it an intriguing opponent or ally.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Hverhuldra employs a Multiattack action allowing it to make two S
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hverhuldra
 
 *Small* *Fey* *neutral good*
@@ -62,5 +65,6 @@ At will: create or destroy water, detect poison and disease, purify food and dri
 - **Steam Cloud:** When the hverhuldra takes cold damage, it uses the steam from the impact of the cold on its body to magically create a cloud of steam centered on a point it can see within 60 feet of it. This cloud works like the fog cloud spell, except the hverhuldra can dismiss it as a bonus action.
 
 
+</statblock>
 
 

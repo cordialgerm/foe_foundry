@@ -1,6 +1,8 @@
 <MonsterName/>Aurora Horribilis</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>9</CR>
+<AC/>15</AC>
+<HP/>119</HP>
 <summary>The Aurora Horribilis is a large aberration with chaotic neutral alignment, presenting a unique mix of abilities that make it both formidable and unpredictable in combat. Its high charisma and dexterity allow it to excel in a variety of situations, while its numerous immunities and the ability to move through objects offer it a significant advantage defensively. Nevertheless, its weak strength and intelligence stats can limit its effectiveness in physical combat and complex problem-solving scenarios. The creature's distinctive features, such as its "Reality Adjacent" ability and its powerful "Void Song," allow it to manipulate the battlefield and create confusion among its foes, making it a challenging opponent for any adventuring party.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Overall, the Aurora Horribilis is a terrifying and complex creature that present
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aurora Horribilis
 
 *Large* *Aberration* *chaotic neutral*
@@ -63,5 +66,6 @@ This trait is disrupted while the aurora is incapacitated or has a speed of 0.
 - **Void Song:** The aurora horribilis creates a dissonant song. Each creature within 100 feet of the aurora that can hear the song must succeed on a DC 16 Wisdom saving throw or be charmed until the song ends. This song has no effect on constructs, undead, or creatures that can speak or understand Void Speech. The aurora must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the aurora is incapacitated.<br><br>While charmed by the aurora, the target suffers the effects of the confusion spell and hums along with the maddening tune. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A target that successfully saves is immune to this aurora’s song for the next 24 hours. A target that stays charmed by the aurora’s song for more than 1 minute gains one long-term madness.
 
 
+</statblock>
 
 

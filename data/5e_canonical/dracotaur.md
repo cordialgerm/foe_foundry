@@ -1,6 +1,8 @@
 <MonsterName/>Dracotaur</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Dracotaur is a formidable Large creature with the traits of both dragons and taurs, embodying a chaotic neutral alignment. It possesses a high Armor Class of 17 due to its natural armor and boasts a substantial pool of 110 hit points which provide significant durability in combat. As a creature with a Challenge Rating of 6, it offers a moderate challenge to adventurers, yielding 2,300 experience points upon defeat. The Dracotaur's mobility is notable, able to burrow at 20 feet and walk at a speed of 50 feet, providing it with versatile movement options that can be tactically advantageous. Among its strengths, the Dracotaur has impressive Strength and Constitution scores, granting it exceptional capability in melee combat and resilience against damage. However, its Intelligence is average, making it less proficient in problem-solving compared to other creatures. Its ability to utilize lightning damage, both through its attacks and special abilities, adds a layer of lethality that adventurers must contend with.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ Overall, the Dracotaur combines strong physical attacks with lightning-based abi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dracotaur
 
 *Large* *Dragon* *chaotic neutral*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Breath (Recharge 5-6):** The dracotaur exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 33 (6d10) lightning damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

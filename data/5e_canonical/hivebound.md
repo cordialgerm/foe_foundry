@@ -1,6 +1,8 @@
 <MonsterName/>Hivebound</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>108</HP>
 <summary>The Hivebound is a small monstrosity that embodies the essence of insect swarms, making it a cunning and versatile opponent in combat. It boasts a respectable Armor Class of 15 due to its natural armor, allowing it to withstand blows from less skilled attackers. With 108 hit points, the Hivebound is capable of enduring significant damage, making it a challenging adversary with a Challenge Rating of 5. It can move at a speed of 25 feet on the ground and 40 feet while flying, giving it exceptional mobility on the battlefield. The Hivebound has a variety of strengths, including its ability to control swarms of insects and its good Dexterity and Constitution scores, which aid in evasiveness and durability. However, its weaknesses include a low Intelligence and Charisma, limiting its social interactions and certain mental resistances.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ For movement, the Hivebound can employ the Swift Flight bonus action to ascend u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hivebound
 
 *Small monstrosity*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 
 - **Swift Flight.** The hivebound flies up to half its speed without provoking opportunity attacks.
 
+</statblock>
 
 

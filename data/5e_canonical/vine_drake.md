@@ -1,6 +1,8 @@
 <MonsterName/>Vine Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Vine Drake is a Medium, neutral dragon that combines physical prowess with the ability to manipulate nature, making it a formidable creature in 5e Dungeons & Dragons. With an Armor Class of 16 and a robust pool of 105 hit points, it can withstand considerable damage. The creature is particularly effective in combat, boasting a Challenge Rating of 7, which indicates it is a strong foe for mid-level adventurers. Notably, the Vine Drake has the ability to communicate with plants, utilizes its natural defenses through thorny skin, and can cast the entangle spell without the need for material components, allowing it to control its environment and hinder enemies effectively. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Vine Drake is a versatile and dangerous creature that excels in bot
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vine Drake
 
 *Medium* *Dragon* *neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Acid Breath (Recharge 5-6):** The vine drake exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 22 (5d8) acid damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

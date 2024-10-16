@@ -1,6 +1,8 @@
 <MonsterName/>Dullahan</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>178</HP>
 <summary>The Dullahan is a formidable entity from the fey realm, embodying lawful evil capable of instilling fear and dread in its enemies. This large creature boasts a high armor class of 17, thanks to its natural armor, and an impressive 178 hit points, which grants it exceptional durability in combat. With a movement speed of 60 feet, the Dullahan is adept at traversing the battlefield swiftly. It has a challenge rating of 11, indicating a significant threat level and awarding 7,200 experience points to those who manage to defeat it. The Dullahan's strengths lie in its high physical attributes, particularly in its Strength of 19, Dexterity of 18, and Constitution of 20, which yield very good modifiers of +4 and +5 respectively. However, its Intelligence, Wisdom, and Charisma, while still above average, limit its versatility in social situations. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Dullahan's impressive combination of abilities, high damage output,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dullahan
 
 *Large* *Fey* *Lawful Evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Deathly Doom:** The dullahan magically dooms a creature for 1 hour. It can have only one creature doomed at a time. If it dooms another, the effect on the previous target ends. The dullahan knows the direction to the doomed creature as long as both are on the same plane of existence.
+</statblock>
 
 

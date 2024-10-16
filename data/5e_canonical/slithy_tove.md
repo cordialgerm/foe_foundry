@@ -1,6 +1,8 @@
 <MonsterName/>Slithy Tove</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>91</HP>
 <summary>The Slithy Tove is a small monstrosity known for its agility and cunning tactics in combat. Largely unaligned, it primarily relies on its impressive Dexterity and various disruptive abilities to incapacitate opponents and control the battlefield. With a Challenge Rating of 4, it poses a moderate threat, especially when it utilizes its special abilities effectively. While it boasts a strong Armor Class of 15 due to its natural armor and a substantial hit point pool of 91, its weaknesses include low Intelligence and Charisma, making it less capable in social interactions and strategic thinking. Notable for its unique ability to distract foes and its swift movement, the Slithy Tove can create chaos among enemy ranks.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ Overall, the Slithy Tove utilizes its Dexterity and unique abilities to create d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Slithy Tove
 
 *Small* *Monstrosity* *unaligned*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Hidden Step:** Magically teleports along with any equipment it is wearing or carrying up to 30' to an unoccupied space it can see and takes the Hide action.
 
 
+</statblock>
 
 

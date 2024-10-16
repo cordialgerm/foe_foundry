@@ -1,6 +1,8 @@
 <MonsterName/>Dragonbound Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>11</HP>
 <summary>The Dragonbound Warrior is a Medium humanoid creature that embodies the might and influence of its draconic masters, serving as a powerful minion or guardian in combat scenarios. With a Challenge Rating of 1/4, this warrior is not excessively formidable on its own, yet it possesses notable abilities that enhance its combat effectiveness. The Dragonbound Warrior is equipped with moderate physical defenses and health, showcasing average resilience against attacks. Its primary strengths lie in its skills related to stealth, perception, and survival, making it adept at ambushing or tracking enemies. However, its overall performance in combat can be considered average due to its limited hit points and moderate damage output.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Dragonbound Warrior can make a melee or ranged weapon a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragonbound Warrior
 
 *Medium* *Humanoid*
@@ -45,5 +48,6 @@ Source: 5e_artisinal_monsters
 - **Spear:** Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage.
 
 
+</statblock>
 
 

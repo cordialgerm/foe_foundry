@@ -1,6 +1,8 @@
 <MonsterName/>Painted Phantasm</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>97</HP>
 <summary>The Painted Phantasm is a Medium Construct that embodies the essence of artistic creation through its unique ability to capture and restrain its opponents within a painted image. This creature serves as a formidable opponent in combat with robust defenses and powerful, unconventional attack strategies. It boasts a solid Armor Class of 15, providing good protection against physical attacks, and it has a decent pool of Hit Points totaling 97, which allows it to endure several rounds of combat. The Painted Phantasm's primary strengths lie in its high Dexterity, granting it good agility, and its exceptional Charisma, which enhances its magical abilities. However, its low Intelligence indicates a lack of cognitive reasoning, making it less effective at strategic thinking in battle. Notably, it is immune to many debilitating conditions that would afflict living creatures, such as exhaustion and fear.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ As a bonus action, the Painted Phantasm can utilize Painting Portal to move thro
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Painted Phantasm
 
 *Medium* *Construct* *neutral*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Painting Portal:** Uses 10 ft. of move to step magically into one artwork within reach and emerge from 2nd artwork within 100' of 1st appearing in unoccupied space within 5 ft. of 2nd. If both are Large or larger can bring up to 3 willing creatures.
 
 
+</statblock>
 
 

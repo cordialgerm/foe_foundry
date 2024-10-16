@@ -1,6 +1,8 @@
 <MonsterName/>Ogre Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>8</AC>
+<HP/>85</HP>
 <summary>An Ogre Zombie is the reanimated corpse of a massive ogre, brought back to unlife through necromantic magic. Its decayed flesh and mindless state make it slower and less cunning than a living ogre, but its immense strength and durability remain. Ogre Zombies are relentless in battle, smashing their foes with brute force and resisting most forms of damage due to their undead nature. They are often used as shock troops by necromancers or dark wizards, mindlessly charging into battle without fear of pain or death.</summary>
 
 <summary>The Ogre Zombie is a large undead creature that represents a gruesome combination of sheer size and relentless aggression. It functions as a formidable combatant, primarily due to its high strength and multiple actions that can inflict serious damage on opponents. The Ogre Zombie's primary strength lies in its durability and ability to resist typical forms of damage, particularly through its special abilities, which allow it to remain standing even when most creatures would fall. However, its significantly low Dexterity makes it vulnerable to attacks that require finesse or speed, and its poor Intelligence and Charisma indicate limited strategic capabilities and social interaction. This creature can serve as a notable challenge for adventurers looking to test their mettle against the undead.</summary>
@@ -51,6 +53,7 @@ The combination of its powerful melee attacks and special abilities makes the Og
 
 Source: 5e_srd
 
+<statblock>
 ### Ogre Zombie
 
 *Large undead, neutral evil*
@@ -81,7 +84,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Morningstar***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage.
+***Morningstar***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage.</statblock>
+
 
 
 
@@ -89,6 +93,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre Zombie
 
 *Large* *Undead*
@@ -122,6 +127,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target grappled by a zombie. Hit: 15 (2d10 + 4) piercing damage  and the zombie regains hit points equal to the damage dealt.
 
 
+</statblock>
 
 
 
@@ -130,6 +136,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre Zombie
 
 *Large undead*
@@ -161,5 +168,6 @@ Source: 5e_artisinal_monsters
 - **Greatclub.** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.
 - **Lumbering Charge (Recharge 5–6).** The ogre zombie shoulders its weapon and charges forward, shoving into creatures on its way. It moves up to 20 feet in a straight line and can move through the space of any Medium or smaller creature. The first time it enters a creature’s space during this move, that creature must make a DC 14 STR save. On a failure, a creature takes 14 (4d6) bludgeoning damage and is knocked prone. On a success, a creature takes half the damage and isn’t knocked prone.
 
+</statblock>
 
 

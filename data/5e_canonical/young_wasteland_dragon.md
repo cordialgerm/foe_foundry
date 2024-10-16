@@ -1,6 +1,8 @@
 <MonsterName/>Young Wasteland Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>178</HP>
 <summary>The Young Wasteland Dragon is a large, chaotic evil creature that poses a significant threat in combat. With its high armor class and substantial hit points, it can withstand considerable damage while still delivering powerful attacks. Its burrowing and climbing abilities, combined with impressive flying speed, make it incredibly mobile in various terrains. The dragon is noted for its potent Warped Energy Breath attack, which can devastate multiple foes at once, showcasing its prowess in area damage. While it lacks powerful dexterity, its strength and constitution are exceptionally high, allowing it to dominate in melee situations. However, it does have weaknesses, particularly its moderate intelligence and wisdom, which can make it susceptible to certain forms of manipulation or strategic play.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ The dragon features a special ability known as Warped Energy Breath, which has a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Wasteland Dragon
 
 *Large* *Dragon* *chaotic evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Warped Energy Breath (Recharge 6):** The dragon blasts warped arcane energy in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 49 (11d8) force damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

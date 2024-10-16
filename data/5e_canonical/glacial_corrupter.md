@@ -1,6 +1,8 @@
 <MonsterName/>Glacial Corrupter</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>34</HP>
 <summary>The Glacial Corrupter is a formidable undead creature characterized by its medium size and lawful evil alignment. This monster possesses a unique blend of offensive capabilities and resilience, making it a noteworthy opponent for adventurers. With an Armor Class of 15 and a substantial pool of Hit Points totaling 34, it can endure a fair amount of damage while dealing consistent harm through its melee and ranged attacks. The Glacial Corrupter is imbued with chilling cold powers that inflict ongoing damage and can potentially transform victims into undying versions of itself, adding a level of threat to encounters. However, it has significant weaknesses stemming from its low Intelligence, Wisdom, and Charisma, rendering it less effective in mental contests and social interactions.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ One of its most fearsome abilities is Glacial Touch, which can be used once per 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Glacial Corrupter
 
 *Medium* *Undead* *lawful evil*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Glacial Touch (Recharge 5-6):** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) cold damage. The target must succeed on a DC 13 Constitution saving throw or take 2 (1d4) cold damage at the start of each of its turns, as a frozen shard lodges itself in the wound. Any creature can take an action to remove the shard with a successful DC 12 Wisdom (Medicine) check. The shard crumbles to snow if the target receives magical healing.<br><br>A humanoid slain by this attack rises in 1 week as a glacial corrupter, unless the humanoid is restored to life or its body is destroyed.
 
 
+</statblock>
 
 

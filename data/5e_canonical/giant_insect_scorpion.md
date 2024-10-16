@@ -1,6 +1,8 @@
 <MonsterName/>Insect, Giant Scorpion</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The giant scorpion is a large beast known for its formidable presence and deadly attacks. It has an armor class of 15, which is considered good, and 76 hit points, allowing it to withstand a fair amount of damage in battle. With a challenge rating of 3, it is a moderate threat to adventurers, particularly due to its ability to grapple opponents and inflict poison damage. The scorpion's main strengths lie in its multiattack capabilities, which allow it to strike multiple times in a single turn, and its poison sting, which can incapacitate foes if they fail to make a constitution saving throw. However, its intelligence and charisma scores are significantly low, making it very poor at understanding or communicating with high-intelligence creatures.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ Additionally, the giant scorpion has one reaction called Reflexive Sting. If a c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Insect, Giant Scorpion
 
 *Large beast*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 
 - **Reflexive Sting.** When a creature the scorpion can see attacks it while within 10 feet of the scorpion, the scorpion can whip its tail defensively at the creature. The attacker must succeed on a DC 12 DEX save or take 5 (1d10) piercing damage.
 
+</statblock>
 
 

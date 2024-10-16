@@ -1,6 +1,8 @@
 <MonsterName/>Kuunganisha</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>17</HP>
 <summary>The Kuunganisha is a small fiend characterized by its cunning and devious nature. This creature is typically associated with evil and often serves as a familiar or an ally to a more powerful master. With a challenge rating of 2 and the ability to fly, the Kuunganisha poses a moderate threat with its agile movements and some resistance to damage. Its main strengths lie in its ability to slip into invisibility and its regeneration factor, allowing it to stay in the fight longer. However, its physical strength is lacking, with a low Strength score, which makes it rely more on its magical abilities and tactical advantages than direct confrontation. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ One unique action available to the Kuunganisha is Invisibility, which allows the
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kuunganisha
 
 *Small* *Fiend* *any evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The kuunganisha magically turns invisible until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the fiend wears or carries becomes invisible with it.
 
 
+</statblock>
 
 

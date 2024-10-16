@@ -1,6 +1,8 @@
 <MonsterName/>Moonlit King</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>17</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>204</HP>
 <summary>The Moonlit King is a formidable medium-sized fey creature that embodies the mystical and enchanting qualities of the night. He is neutral good in alignment, making him a protector of the natural world rather than an adversary. With a high armor class of 17, a substantial hit point pool totaling 204, and an impressive speed of 30 feet, he is a tough opponent. The Moonlit King's challenge rating of 17 implies that he is suitable for high-level encounters, providing a substantial experience reward of 18,000 XP upon defeat. Notable strengths of the Moonlit King include his immunity to cold, fire, and poison damage, alongside resistances to acid and non-cold iron weapon attacks. He also possesses a variety of powerful abilities and spellcasting capabilities that enhance his combat effectiveness. However, he is vulnerable to cold iron weapons, meaning that players can exploit this weakness if they have the right gear.</summary>
 
 <detail>
@@ -30,6 +32,7 @@ Additionally, the Moonlit King has the option to take three legendary actions, w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moonlit King
 
 *Medium* *Fey* *Neutral Good*
@@ -81,5 +84,6 @@ The Moonlit King can take 3 legendary actions, choosing from the options below. 
 - **Shift Moonlight:** The Moonlit King changes the brightness of each area of moonlight he can see within 120 feet of him from dim light to bright light or vice versa.
 - **Attack (Costs 2 Actions):** The Moonlit King makes a Crystal Staff or Moon Bolt attack.
 - **Spread Madness (Costs 2 Actions):** Each creature within 30 feet of the Moonlit King must succeed on a DC 19 Wisdom saving throw or suffer short-term madness. The Moonlit King can use this legendary action only when he is in moonlight.
+</statblock>
 
 

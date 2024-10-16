@@ -1,6 +1,8 @@
 <MonsterName/>Web Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>8</AC>
+<HP/>22</HP>
 <summary>The Web Zombie is a medium undead creature that embodies a neutral evil alignment. Serving as an unsettling adversary in encounters, it possesses unique attributes and abilities that make it both a threat and an aberration. The Web Zombie is relatively weak in terms of durability, with an Armor Class of 8 and 22 hit points, but it compensates for this with its ability to cause necrotic damage and its unsettling mobility on vertical surfaces. While it can climb and ignore webbing constraints, its low Dexterity makes it less agile. This creature can be simultaneously a hindrance to players due to its entrapment skills while being a menace with its augmented melee damage. Notably, its Undead Fortitude allows it to potentially remain in the fight after sustaining fatal blows, which could lead to unforeseen complications during combat.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In terms of actions, the Web Zombie can perform a Multiattack, which allows it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Web Zombie
 
 *Medium* *Undead* *neutral evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.
 
 
+</statblock>
 
 

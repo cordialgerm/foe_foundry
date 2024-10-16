@@ -1,6 +1,8 @@
 <MonsterName/>Domovoi</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Domovoi is a medium-sized fey creature known for its chaotic neutral alignment. This creature serves as a guardian of household spaces, leveraging its magical abilities to protect and intimidate intruders. With a challenge rating of 4, it poses a moderate threat to adventurers, relying on a combination of physical strength and spellcasting for both offense and defense. The Domovoi has notable immunities to acid and lightning damage, complementing its high hit points of 93, which make it a resilient opponent. However, its low intelligence suggests limitations in mental tactics, while its charisma allows it to effectively utilize spells that affect its surroundings and allies.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ For movement, the Domovoi utilizes the Protector’s Step ability, allowing it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Domovoi
 
 *Medium* *Fey* *Chaotic Neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Protector’s Step:** The domovoi magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space within a structure protected by its House Guardian trait or within 30 feet of the exterior of that structure. Swirls of golden light, sparkles of starlight, or tendrils of inky shadow (the domovoi’s choice) appear at the origin and destination when it uses this bonus action.
+</statblock>
 
 

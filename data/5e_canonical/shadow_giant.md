@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>15</CR>
+<AC/>17</AC>
+<HP/>209</HP>
 <summary>The Shadow Giant is a Huge chaotic evil creature that embodies the darkness of the Shadow Realm. With a formidable presence on the battlefield, it poses a significant threat to any adventuring party. With a high Armor Class of 17 and an impressive 209 hit points, it can withstand considerable punishment while delivering devastating attacks. Its Strength and Dexterity are both notably high, granting it powerful melee attacks and excellent agility in combat. Despite its strengths, the Shadow Giant has a medium-level Challenge Rating of 15, suggesting that while it is a challenge, it can be effectively managed with strategy. It has notable resistances to cold and necrotic damage, making it more durable against certain attacks. However, its reliance on vision and the mechanics of its special abilities, particularly in relation to saving throws, can present opportunities for clever adventurers.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ When it comes to actions, the Shadow Giant can initiate a Multiattack, allowing 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Giant
 
 *Huge* *Giant* *chaotic evil*
@@ -58,5 +61,6 @@ While in the Plane of Shadow, the shadow giant can see and hear 120 feet into th
 - **Cold Shadow (Recharge 5-6):** The shadow giant directs its shadow to stretch out in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw. On a failure, a creature takes 52 (15d6) cold damage and has disadvantage on attack rolls and saving throws until the end of its next turn. On a success, a creature takes half the damage and doesn’t have disadvantage.
 
 
+</statblock>
 
 

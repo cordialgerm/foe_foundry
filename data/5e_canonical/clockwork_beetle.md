@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Beetle</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>20</HP>
 <summary>The Clockwork Beetle is a Tiny Construct that serves as a versatile and nimble creature, often created for utility and support roles. With an Armor Class of 14 and 20 hit points, it can withstand moderate attacks while offering valuable assistance in a variety of situations. Its challenge rating of 1/2 indicates that it is suitable for lower-level encounters. The Clockwork Beetle excels in Dexterity with a score of 16, giving it a good modifier of +3, allowing it to move swiftly and avoid danger effectively. However, its other attributes, particularly Intelligence at -3 and Charisma at -2, are very poor, which limits its abilities in mental tasks and social interactions. Its immunities to poison and psychic damage, along with multiple condition immunities, enhance its durability.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Clockwork Beetle has one primary action: the Bite attack. This is
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Beetle
 
 *Tiny* *Construct* *Unaligned*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

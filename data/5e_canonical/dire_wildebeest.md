@@ -1,6 +1,8 @@
 <MonsterName/>Dire Wildebeest</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Dire Wildebeest is a large, powerful beast that operates independently and exhibits no alignment tendencies. With an impressive Armor Class of 14 due to its natural armor and a substantial pool of 150 hit points, it can withstand significant damage in combat. This creature has a high movement speed of 50 feet, enabling it to traverse the battlefield quickly, often using that advantage to charge at opponents. With a Challenge Rating of 7, it is considered a formidable threat, capable of inflicting considerable damage while also being able to cause fear in its enemies. However, it is notable that the Dire Wildebeest has lower mental stats, making it vulnerable to effects that target intelligence, wisdom, or charisma. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ In summary, the Dire Wildebeest is a creature that combines physical prowess wit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dire Wildebeest
 
 *Large* *Beast* *unaligned*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Incite Stampede (1/Day):** Moves up to 30' in straight line and can move through space of any up to Med creature. Each friendly creature within 120' of wildebeest can use its reaction to join stampede and move up to 30' in straight line and move through space of any up to Med creature. This move doesn’t provoke opportunity attacks. 1st time stampeding creature enters creature’s space during this move that creature: 14 (4d6) bludgeoning damage and knocked prone (DC 13 Dex half damage not knocked prone). For each creature in stampede after 1st: save increases by 1 max DC 17 and damage increases by 3 (1d6) max 8d6.
 
 
+</statblock>
 
 

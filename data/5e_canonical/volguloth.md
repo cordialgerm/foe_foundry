@@ -1,6 +1,8 @@
 <MonsterName/>Volguloth</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Volguloth is a Medium-sized fiend with a neutral evil alignment, known for its sneaky and aggressive tactics in combat. With a Challenge Rating of 4, it poses a significant threat to adventurers with its combination of high damage output and defensive capabilities. The creature has an Armor Class of 14, supported by its natural armor, and possesses 78 hit points, derived from rolling 12d8 and adding 24. This durability allows it to withstand a fair amount of damage in battle. The Volguloth excels in stealth and evasion, making it a tricky opponent. Its innate abilities grant it advantages over spells, and its poisonous attacks further amplify its lethality. However, it can only grapple and enshroud one creature at a time, limiting its crowd control to individual targets.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Volguloth can use Strangle on an enshrouded target, forci
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Volguloth
 
 *Medium* *Fiend* *Neutral Evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Strangle:** A creature enshrouded by the volguloth must succeed on a DC 13 Strength saving throw or take 10 (3d6) bludgeoning damage and begin suffocating, as the air is squeezed from its lungs.
+</statblock>
 
 

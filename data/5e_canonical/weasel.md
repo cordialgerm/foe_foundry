@@ -1,6 +1,8 @@
 <MonsterName/>Weasel</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>13</AC>
+<HP/>1</HP>
 <summary>A Weasel is a small, slender mammal known for its agility and speed. Found in forests, grasslands, and other natural environments, weasels are excellent hunters of small prey, such as rodents and birds. Despite their size, weasels are fierce and determined hunters, using their sharp teeth and quick reflexes to catch and kill their prey. While not typically aggressive towards larger creatures, they can become territorial if threatened. Weasels are often used as familiars by spellcasters due to their keen senses and stealthy nature.</summary>
 
 <summary>The Weasel is a tiny beast that plays a minor role in the ecosystem of Dungeons & Dragons. Despite its small size, it possesses good dexterity and impressive stealth capabilities, making it adept at avoiding danger and sneaking up on larger creatures. With an Armor Class of 13 and just 1 hit point, the Weasel is fragile and easily susceptible to damage, making it more of a nuisance than a threat in combat. Its challenge rating is 0, indicating that it is not meant to pose a real challenge to adventurers, but it can still provide tactical advantages in certain scenarios, especially with its keen senses.</summary>
@@ -27,6 +29,7 @@ In terms of actions in combat, the weasel can use its Bite attack. This is a mel
 
 Source: 5e_srd
 
+<statblock>
 ### Weasel
 
 *Tiny beast, unaligned*
@@ -53,7 +56,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.</statblock>
+
 
 
 
@@ -61,6 +65,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Weasel
 
 *Tiny* *Beast*
@@ -88,6 +93,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage. If this damage would reduce a Small or larger target to 0 hit points  the target takes no damage from this attack.
 
 
+</statblock>
 
 
 
@@ -96,6 +102,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Weasel
 
 *Tiny beast*
@@ -123,5 +130,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite.** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) piercing damage. Instead of dealing damage, the weasel can steal one item the target is wearing or carrying, provided the item weighs no more than 5 pounds, can fit in one hand, isn’t a weapon, and isn’t wrapped around or firmly attached to the target. For example, a weasel could steal a hat or belt pouch but not a creature’s shirt or armor.
 
+</statblock>
 
 

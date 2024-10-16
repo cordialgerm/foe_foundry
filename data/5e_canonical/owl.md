@@ -1,6 +1,8 @@
 <MonsterName/>Owl</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>11</AC>
+<HP/>1</HP>
 <summary>An Owl is a nocturnal bird of prey known for its sharp talons, silent flight, and keen eyesight. These creatures are often found in forests, mountains, or other natural settings, where they hunt small rodents, insects, and other animals. Owls are solitary hunters, using their stealth and agility to swoop down on unsuspecting prey in the dead of night. Despite their small size, they are effective predators, and their quiet flight makes them difficult to detect. In magical settings, owls are often used as familiars by spellcasters due to their intelligence and perceptiveness.</summary>
 
 <summary>The owl is a tiny beast that serves primarily as a scout or companion due to its flying ability and keen senses. With an armor class of 11 and only 1 hit point, it is quite fragile, making it susceptible to being easily defeated in combat. However, its challenge rating is 0, indicating that it poses little threat to seasoned adventurers. Strength-wise, it has a very low strength score of 2, making physical attacks largely ineffective. It excels in Dexterity, showing a good modifier of +1, which aids in stealth and agility. The owl possesses exceptional perception capabilities, leveraging advantage on checks related to hearing and sight, complementing its ability to navigate and detect potential threats efficiently.</summary>
@@ -31,6 +33,7 @@ Overall, the Owl serves as an effective scout and companion, embodying traits th
 
 Source: 5e_srd
 
+<statblock>
 ### Owl
 
 *Tiny beast, unaligned*
@@ -59,7 +62,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Talons***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.
+***Talons***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.</statblock>
+
 
 
 
@@ -67,6 +71,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Owl
 
 *Tiny* *Beast*
@@ -95,6 +100,7 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 slashing damage. If this damage would reduce a Small or larger target to 0 hit points  the target takes no damage from this attack.
 
 
+</statblock>
 
 
 
@@ -103,6 +109,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Owl
 
 *Tiny beast*
@@ -132,5 +139,6 @@ Source: 5e_artisinal_monsters
 
 - **Talons.** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) slashing damage.
 
+</statblock>
 
 

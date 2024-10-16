@@ -1,6 +1,8 @@
 <MonsterName/>Imp Familiar</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>14</HP>
 <summary>The Imp Familiar is a tiny fiend often summoned to serve as a magical companion or assistant. With a Challenge Rating of 1/2, it poses a moderate threat in combat but excels in its role as a stealthy and cunning ally. Its notable abilities include flight, invisibility, and the capacity for telepathy, which enhance its utility beyond offensive capabilities. The imp has exceptional Dexterity, giving it good speed and defense, while its damage immunities to fire and poison, along with resistances and condition immunities, make it quite resilient. However, its low physical strength and average Constitution make it less effective in direct melee combat. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, as a bonus action, the Imp Familiar can use "Invisibility," magica
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Imp Familiar
 
 *Tiny* *Fiend*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The imp magically turns invisible, along with any equipment carried. This invisibility ends if the imp makes an attack, falls unconscious, or dismisses the effect.
 
 
+</statblock>
 
 

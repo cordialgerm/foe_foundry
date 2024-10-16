@@ -1,6 +1,8 @@
 <MonsterName/>Dragon, Sand Young</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>11</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>189</HP>
 <summary>The Sand Young Dragon is a formidable opponent characterized by its neutral evil alignment and natural agility. This large dragon, known for its stealth in sandy environments, boasts a high armor class of 19 and an impressive health pool of 189 hit points, making it a resilient adversary in combat. Its combination of speed—on land, in the air, and underground—allows it to engage opponents strategically. With a challenge rating of 11, this dragon is a significant threat in battle, able to deal considerable damage while also inflicting debilitating effects on its foes. However, it has vulnerabilities, notably being limited by its requirement for half the usual sustenance of a creature its size and its immunity to fire, which reflects its connection to elemental forces.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The dragon's Breath Weapon, which recharges on a roll of 5 or 6, offers two deva
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Sand Young
 
 *Large* *Dragon* *neutral evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Breath Weapon (Recharge 5–6):** Uses one of the following:Sand Blast. Exhales superheated sand in a 30' cone. Each creature in area: 22 (4d10) piercing damage and 22 (4d10) fire (DC 17 Dex half). If a creature fails its save by 5+ it suffers one level of exhaustion as it dehydrates.Blinding Sand. Breathes fine sand in a 30' cone. Each creature in area: blinded for 1 min (DC 17 Con negates). Blinded creature can take an action to clear its eyes of sand ending effect for it.
 
 
+</statblock>
 
 

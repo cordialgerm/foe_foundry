@@ -1,6 +1,8 @@
 <MonsterName/>Ulnorya</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>14</AC>
+<HP/>119</HP>
 <summary>The Ulnorya is a large aberration known for its neutral evil alignment. This creature thrives in combat, showcasing a solid Armor Class of 14 and a substantial pool of Hit Points totaling 119, which provides it with considerable longevity in battle. With a Challenge Rating of 7, it poses a moderate threat to adventurers, rewarding those who defeat it with 2,900 experience points. The Ulnorya is particularly adept at both melee and stealth attacks, benefiting from exceptional Dexterity and good Constitution. Its resistances to bludgeoning damage, immunities to poison damage, and the ability to become invisible provide it with unique tactical advantages in encounters, although it is not without its weaknesses.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Ulnorya has a powerful Replicate ability, usable once per day, which allows 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ulnorya
 
 *Large* *Aberration* *neutral evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Replicate (1/Day):** The ulnorya separates itself into two identical copies for up to 1 hour. The new ulnoryas’ hp totals are equal to the original ulnorya’s hp total divided by 2 (rounded down), and each is affected by any conditions, spells, and other magical effects that affected the original ulnorya. The new ulnoryas otherwise retain the same statistics as the original, except neither has this action. The new ulnoryas act on the same initiative count as the original ulnorya and occupy any unoccupied spaces within 5 feet of the original ulnorya’s space.<br><br>If one ulnorya starts its turn within 5 feet of its other half, they can each use their reactions to recombine. The recombined ulnorya’s hp total is equal to the combined hp total of the two ulnoryas, and it is affected by any conditions, spells, and other magical effects currently affecting either of the combining ulnoryas. The ulnorya automatically recombines if both of its halves are still alive at the end of the hour. If only one ulnorya remains alive at the end of the hour, it gains this action after it finishes a long rest.
 
 
+</statblock>
 
 

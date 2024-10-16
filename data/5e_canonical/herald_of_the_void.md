@@ -1,6 +1,8 @@
 <MonsterName/>Herald of the Void</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>123</HP>
 <summary>The Herald of the Void is a powerful Large Fiend that embodies chaotic evil and serves as a formidable adversary in combat. Its notable strengths include high mobility, with the ability to hover, walk, and fly, and the capability to deal significant cold and force damage with its attacks. This creature has an impressive Armor Class of 17 and substantial Hit Points totaling 123, allowing it to withstand considerable damage in battle. The Herald's skill set includes exceptional Dexterity and Constitution scores, both at 20, which grant it impressive defensive capabilities and excellent saving throw bonuses. However, its average Strength of 12 means it relies more on finesse and ranged attacks than physical brute strength. The Herald is immune to several damage types and conditions, making it a challenging foe to defeat, particularly for parties without the means to counter its immunities and resistances.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, the Herald can use up to three legendary actions, which can be sel
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Herald of the Void
 
 *Large* *Fiend* *chaotic evil*
@@ -66,5 +69,6 @@ The herald of the void can take 3 legendary actions, choosing from the options b
 - **Void Claw (Costs 2 Actions):** The herald makes one void claw attack.
 - **Discorporate (Costs 2 Actions):** The herald chooses up to two creatures it can see within 30 feet of it. Each target must succeed on a DC 17 Constitution saving throw or become intangible until the end of its next turn. While intangible, the creature is incapacitated, drops whatever it’s holding, and is unable to interact with physical objects. The creature is still visible and able to speak.
 - **Song of Mighty Doom (Costs 3 Actions):** The herald emits a cacophonous dirge praising the Void. Each creature other than the herald within 30 feet of the herald and that understands Void Speech gains 10 temporary hp.
+</statblock>
 
 

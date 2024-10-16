@@ -1,6 +1,8 @@
 <MonsterName/>Thursir</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (chain shirt)</AC>
+<HP/>114</HP>
 <summary>The Thursir is a large giant known for its formidable presence and inherent malice, classified as either Neutral Evil or Lawful Evil. With a challenge rating of 3, it poses a moderate threat to adventurers. Its most notable attributes include high strength and constitution, providing it with substantial hit points and exceptional melee capabilities. The creature has an armor class of 13, which is relatively stable for its size, but its glaring weakness is a lack of agility. The Thursir excels in direct confrontations due to its potent attacks and the ability to inflict additional damage with its special abilities. However, it can be taken down through strategic planning, especially by utilizing tactics that capitalize on its lower dexterity and possible vulnerability to spells.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Thursir can use Runic Blood up to three times a day. This
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Thursir
 
 *Large* *Giant* *Neutral Evil (50%) or Lawful Evil (50%)*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Runic Blood (3/Day):** The thursir touches a weapon, painting the thurs rune on the weapon in the thursir’s blood. When the thursir hits with the weapon while the rune is active, the weapon deals an extra 9 (2d8) lightning damage, and the target can’t take reactions until the start of its next turn. The rune lasts for 1 minute.
+</statblock>
 
 

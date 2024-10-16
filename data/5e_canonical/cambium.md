@@ -1,6 +1,8 @@
 <MonsterName/>Cambium</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>14</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>264</HP>
 <summary>The Cambium is a powerful, large fiend of neutral evil alignment known for its cunning and deceit. It possesses a robust armor class of 19 characterized by natural armor, along with an impressive pool of hit points totaling 264, derived from 23d10 plus 138. With a challenge rating of 14, this creature can pose a significant threat to adventurers, providing 11,500 experience points upon defeat. The Cambium is capable of moving both on foot at a speed of 30 feet and flying at 40 feet, giving it an advantage in mobility during encounters. Its array of attributes showcases exceptional physical and mental capabilities, including a strength of 21 (+5), constitution of 23 (+6), and charisma of 18 (+4). </summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Cambium can twist the bodily humors of a non-Construct, n
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cambium
 
 *Large* *Fiend* *Neutral Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Choleric Flux:** The target becomes confused for 1 minute. This effect works as if the target failed a saving throw against the confusion spell, except the cambium doesn’t have to maintain concentration.
 - **Melancholic Flux:** The target is incapacitated and its speed is halved for 1 minute.
 - **Phlegmatic Flux:** The target is poisoned for 1 minute.<br><br><br>Carrion Beetle<br><br>The beetles wore golden bridles and carried huge leather sacks of stone and guano. They marched without stopping; dozens, even hundreds, bringing fresh earth to the white-fungus trees of the great forests. Their claws skittered with a sound like horseshoes slipping on stone, but their multiple legs ensured they never fell. The air around them singed the nostrils with the taint of acid.
+</statblock>
 
 

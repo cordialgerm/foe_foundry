@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Myrmidon</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Clockwork Myrmidon is a powerful adversary designed to function as a front-line combatant within encounters. As a large construct, it possesses formidable physical attributes with a Strength score of 20, resulting in an exceptional attack power. With a good Constitution score of 16, it can endure significant damage before falling, boasting a total of 136 hit points. The myrmidon is remarkably resilient, especially against spells, thanks to its Magic Resistance, which grants it an advantage on saving throws against magical effects. Its main weaknesses lie in its low Intelligence, Wisdom, and Charisma, making it inept at tasks requiring mental acuity or social interaction. In combat, it excels in both melee engagements and area control, showcasing mechanisms that can spread damage and hinder movement.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Clockwork Myrmidon serves as a formidable foe in various combat sce
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Myrmidon
 
 *Large* *Construct* *Unaligned*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Grease Spray (4/Day):** The clockwork myrmidon’s chest fires a spray of alchemical grease on a point on the ground within 30 feet of it. The grease covers a 10-foot square centered on that point, and the area is difficult terrain. Each creature standing in the area must succeed on a DC 16 Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a DC 16 Dexterity saving throw or fall prone.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Tusked Skyfish</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Tusked Skyfish is a formidable creature classified as a Large Aberration, known for its unique blend of offensive capabilities and defensive traits. With an Armor Class of 14 and a substantial pool of 102 hit points, it can absorb a fair amount of damage before being defeated, making it a resilient opponent in combat. The skyfish possesses a challenge rating of 4, which indicates it presents a moderate level of difficulty for adventurers, providing them with 1,100 experience points upon defeat. Notably, the creature is immune to lightning damage, which enhances its survivability against certain attacks. Its strengths lie in its powerful physical attacks and the ability to grapple and restrain opponents, while its low Intelligence score reveals a lack of strategic thinking.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Tusked Skyfish also has an impressive area attack known as Stench Spray, whi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tusked Skyfish
 
 *Large* *Aberration* *Unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Gore:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.
 - **Electrified Tentacles:** Melee Weapon Attack: +6 to hit, reach 10 ft., one creature. Hit: 14 (3d6 + 4) bludgeoning damage, and the target is grappled (escape DC 13) if it is a Medium or smaller creature. Until this grapple ends, the target is restrained and takes 14 (4d6) lightning damage at the start of each of its turns, and the skyfish can’t use its Electrified Tentacles on another target.
 - **Stench Spray (Recharge 5–6):** The tusked skyfish sprays foul-smelling liquid in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 13 Constitution saving throw. On a failure, a creature takes 21 (6d6) poison damage and is poisoned for 1 minute. On a success, a creature takes half the damage and isn’t poisoned. If the saving throw fails by 5 or more, the creature falls unconscious while poisoned in this way. The unconscious creature wakes up if it takes damage or if another creature takes an action to shake it awake. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Tricenatorus</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>13</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>184</HP>
 <summary>The Tricenatorus is a formidable Huge Monstrosity that poses a significant threat in combat due to its high hit points and strong melee capabilities. With an Armor Class of 15 and a total of 184 hit points, it is well-equipped to withstand damage while delivering devastating attacks. The creature excels in physical confrontations, utilizing its powerful attacks and gaining advantages over weakened foes. It has impressive Strength and Constitution scores, with a Strength of 26 (+8, considered exceptional) and a Constitution of 20 (+5, very good), making it a powerhouse on the battlefield. Its Intelligence, Charisma, and Dexterity are below average, with Dexterity at 10 (+0), which presents opportunities for ranged attackers but doesn't significantly hinder its performance in melee. The Tricenatorus has access to several powerful abilities that enhance its offensive capabilities, but it lacks any spells or language comprehension, emphasizing its brutal, physical nature. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ The Tricenatorus uses Multiattack to take two offensive actions during its turn,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tricenatorus
 
 *Huge* *Monstrosity* *unaligned*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Tail Spike:** Ranged Weapon Attack: +12 to hit, range 150/300 ft., one target. Hit: 26 (4d8 + 8) piercing damage.
 
 
+</statblock>
 
 

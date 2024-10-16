@@ -1,6 +1,8 @@
 <MonsterName/>Boreas’ Chosen</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>15</AC>
+<HP/>102</HP>
 <summary>Boreas' Chosen is a Medium humanoid creature characterized by its chaotic evil alignment. It serves as a powerful opponent in combat, boasting significant durability and offense capabilities. With an armor class of 15, it has a good defense given its leather armor and shield. Boreas' Chosen has substantial hit points, totaling 102, which allows it to endure extended battles effectively. Its most notable features include immunity to cold damage and resistance to nonmagical bludgeoning, piercing, and slashing damage, making it particularly challenging to defeat for many adventurers. While its intelligence is quite low, Boreas' Chosen possesses exceptional physical abilities, particularly in Strength and Constitution. This creature can inflict powerful cold damage, making it a formidable foe in icy terrains. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ One of its powerful actions is the "Breath of the North Wind", which requires a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boreas’ Chosen
 
 *Medium* *Humanoid* *chaotic evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Breath of the North Wind:** (Recharge 5-6). Boreas’ chosen exhales freezing breath in a 15-foot cone. Each creature in that area must make a DC 15 Constitution saving throw. On a failure, a creature takes 28 (8d6) cold damage and its speed is reduced by 10 feet until the end of its next turn. On a success, a creature takes half the damage and its speed isn’t reduced. A creature that fails the saving throw by 5 or more is petrified in ice until the end of its next turn instead.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Drider</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>123</HP>
 <summary>A Drider is a horrifying fusion of drow and spider, created by the dark goddess Lolth as a punishment or reward for her followers. The upper body of a Drider is that of a dark elf, while its lower half is the body of a giant spider, complete with eight legs and venomous fangs. Driders retain their drow intelligence and magical abilities, making them formidable opponents. They are often found in the Underdark, weaving webs in vast caverns or leading hunts against enemies of their goddess. Driders are cruel and merciless, reveling in the suffering of their foes as they trap and torment them.</summary>
 
 <summary>The Drider is a large monstrosity that embodies a blend of arachnid and humanoid traits, making it a fearsome opponent in the world of Dungeons & Dragons. With a notable challenge rating of 6, this creature possesses strong physical capabilities and is especially dangerous when it can leverage its web-based abilities. The Drider is equipped with a good balance of defensive and offensive skills, boasting a solid armor class of 17 and a substantial pool of hit points totaling 114. However, it suffers from a significant weakness when exposed to sunlight, resulting in disadvantage on attacks and perception checks relying on sight. This duality results in a creature that is potent in darkness but vulnerable in light.</summary>
@@ -35,6 +37,7 @@ Overall, the Drider is a cunning adversary that skillfully uses its abilities an
 
 Source: 5e_srd
 
+<statblock>
 ## Drider
 
 *Large monstrosity, chaotic evil*
@@ -79,7 +82,8 @@ At will: *dancing lights*
 
 ***Longsword***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) slashing damage, or 8 (1d10+3) slashing damage if used with two hands.
 
-***Longbow***. *Ranged Weapon Attack:* +6 to hit, range 150/600 ft., one target. *Hit:* 7 (1d8+3) piercing damage plus 4 (1d8) poison damage.
+***Longbow***. *Ranged Weapon Attack:* +6 to hit, range 150/600 ft., one target. *Hit:* 7 (1d8+3) piercing damage plus 4 (1d8) poison damage.</statblock>
+
 
 
 
@@ -87,6 +91,7 @@ At will: *dancing lights*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drider
 
 *Large* *Monstrosity*
@@ -121,6 +126,7 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Melee Weapon Attack: +6 to hit, range 120/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) poison damage.
 
 
+</statblock>
 
 
 
@@ -129,6 +135,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drider
 
 *Large monstrosity*
@@ -164,5 +171,6 @@ Source: 5e_artisinal_monsters
 - **Skewer.** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) piercing damage plus 13 (3d8) poison damage.
 - **Web Shot.** Ranged Weapon Attack: +6 to hit, range 30/60 ft., one target. Hit: 14 (2d10 + 3) bludgeoning damage, and the target must succeed on a DC 15 STR save or be restrained by webbing. A creature, including the restrained target, can take its action to break the webbing and free the restrained target by succeeding on a DC 15 STR check.
 
+</statblock>
 
 

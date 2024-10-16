@@ -1,6 +1,8 @@
 <MonsterName/>Skeletal Tyrannosaurus Rex</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>13</AC>
+<HP/>126</HP>
 <summary>The Skeletal Tyrannosaurus Rex is a formidable undead creature that serves as a terrifying force on the battlefield. With its massive size and powerful attacks, it represents a significant challenge for adventurers. The skeletal form makes it immune to poison and resistant to various conditions, including fatigue. However, it is vulnerable to bludgeoning damage, which can be exploited by characters who focus on that damage type. Its high hit points and substantial physical strength make it a strong opponent, though its low Dexterity and Intelligence suggest it lacks agility and problem-solving capabilities. As a Challenge Rating 8 monster, it can provide significant experience points but demands strategic engagement to overcome its strengths.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Skeletal Tyrannosaurus Rex is a powerful undead adversary suited fo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skeletal Tyrannosaurus Rex
 
 *Huge* *Undead*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.
 
 
+</statblock>
 
 

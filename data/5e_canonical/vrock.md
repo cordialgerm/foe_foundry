@@ -1,6 +1,9 @@
 <MonsterName/>Vrock (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>demon</Subtype>
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>104</HP>
 <summary>A Vrock is a demon with the body of a vulture and the features of a humanoid, combining sharp talons, wings, and a sinister, bird-like head. These demons revel in death and destruction, using their screeching calls and devastating attacks to sow chaos. Vrocks are brutal fighters, tearing into enemies with claws and beaks, and they can release clouds of toxic spores to weaken their foes. They are often found leading demonic forces into battle or acting as powerful enforcers for more powerful demons. Their ability to fly and unleash deadly sonic screeches makes them formidable opponents.</summary>
 
 <summary>The Vrock is a powerful Large Fiend that serves as a deadly combatant in any encounter, often characterized by its chaotic evil nature. With an Armor Class of 15 and 104 hit points, it can endure significant damage before being overwhelmed. The Vrock has impressive physical attributes, particularly in Strength and Constitution, making it a formidable opponent in melee combat. It is capable of flying, enabling it to maneuver over obstacles and engage in combat effectively. However, despite its strengths, it is vulnerable to radiant damage and can be severely impacted by spells and abilities that target its weaknesses. Its challenge rating of 6 signifies that it can pose a serious threat to adventurers of mid-level experience. </summary>
@@ -37,6 +40,7 @@ As a bonus action, the Vrock can perform a Startling Screech to target a creatur
 
 Source: 5e_srd
 
+<statblock>
 ### Vrock (Demon)
 
 *Large fiend (demon), chaotic evil*
@@ -77,7 +81,8 @@ Source: 5e_srd
 
 ***Spores (Recharge 6)***. A 15-foot radius cloud of toxic spores extends out from the vrock. The spores spread around corners. Each creature in that area must succeed on a DC 14 Constitution saving throw or become poisoned. While poisoned in this way, a target takes 5 (1d10) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Emptying a vial of holy water on the target also ends the effect on it.
 
-***Stunning Screech (1/Day)***. The vrock emits a horrific screech. Each creature within 20 feet of it that can hear it and that isn't a demon must succeed on a DC 14 Constitution saving throw or be stunned until the end of the vrock's next turn.
+***Stunning Screech (1/Day)***. The vrock emits a horrific screech. Each creature within 20 feet of it that can hear it and that isn't a demon must succeed on a DC 14 Constitution saving throw or be stunned until the end of the vrock's next turn.</statblock>
+
 
 
 
@@ -85,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vrock
 
 *Large* *Fiend*
@@ -124,6 +130,7 @@ Source: 5e_artisinal_monsters
 - **Stunning Screech (1/Day):** The vrock screeches. Each non-demon creature within 20 feet that can hear it makes a DC 14 Constitution saving throw. On a failure, it is stunned until the end of the vrocks next turn.
 
 
+</statblock>
 
 
 
@@ -132,6 +139,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vrock
 
 *Large fiend (demon)*
@@ -167,5 +175,6 @@ Source: 5e_artisinal_monsters
 
 - **Startling Screech.** The vrock emits a horrific screech at one creature it can see within 30 feet of it. The target must succeed on a DC 14 CON save or be able to take either an action or bonus action on its turn, not both, and it can’t take reactions.
 
+</statblock>
 
 

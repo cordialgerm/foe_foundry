@@ -1,6 +1,8 @@
 <MonsterName/>Ikuchi</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>116</HP>
 <summary>The Ikuchi is a gargantuan elemental creature that embodies the chaotic forces of nature, specifically within aquatic environments. As a chaotic neutral entity, it doesn't pursue good or evil but rather operates on instinct and survival, making it unpredictable in its behaviors and actions. With an Armor Class of 16, it can withstand a moderate amount of attacks, while its substantial pool of hit points, totaling 116, allows it to endure prolonged encounters. The Ikuchi’s dual movement capabilities—walking at 20 feet and swimming at 50 feet—give it an advantageous position in water, where it can exert control over its surroundings. Despite its strengths, it is particularly vulnerable to magical attacks, having resistances to damage from nonmagical sources, but it possesses no inherent resistances against magical damage types. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the Ikuchi has a powerful attack known as Crush, which can be used
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ikuchi
 
 *Gargantuan* *Elemental* *chaotic neutral*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Crush (Recharge 4-6):** Each creature grappled by the ikuchi must make a DC 16 Strength saving throw, taking 23 (4d8 + 5) bludgeoning damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

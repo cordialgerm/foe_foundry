@@ -1,6 +1,8 @@
 <MonsterName/>Venom Maw Hydra</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>12</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>231</HP>
 <summary>The Venom Maw Hydra is a formidable Huge monstrosity characterized by its multiple heads and powerful acid-based attacks. This creature is unaligned, making it an unpredictable and chaotic encounter for adventurers. With a Challenge Rating of 12, it possesses exceptional hit points of 231, which translates to resilience in combat. The hydra can attack multiple times in a turn, making it a significant threat to any party, especially if they lack effective damage types to overcome its immunities and resistances. Notably, it regenerates heads when damaged, creating a recurring challenge during encounters. Adventurers will need to strategize effectively to deal with the hydra's unique traits and abilities.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Venom Maw Hydra stands as a powerful creature in combat, requiring 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Venom Maw Hydra
 
 *Huge* *Monstrosity* *unaligned*
@@ -67,5 +70,6 @@ The venom maw hydra can take 3 legendary actions, choosing from the options belo
 - **Bite:** The venom maw hydra makes one bite attack.
 - **Spit (Costs 2 Actions):** The venom maw hydra makes one spit attack.
 - **Wallowing Rampage (Costs 3 Actions):** When the venom maw hydra is in water, it wallows, causing the water to hiss, froth, and splash within 20 feet. Each creature in that area must make a DC 16 Dexterity saving throw, taking 14 (4d6) acid damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Corpse Worm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Corpse Worm is a large monstrosity that presents a formidable challenge to adventurers, especially given its unique abilities and combat style. With a robust hit point pool, a decent armor class, and the capacity to grapple and swallow its prey, it becomes a significant threat on the battlefield. Primarily, its strength lies in its melee attack, which not only deals piercing damage but also has the potential to inflict a debilitating disease on its victims. However, it has a low intelligence and charisma, which limits its strategic options outside direct combat. The Corpse Worm is best approached carefully, given its capacity to restrain and poison foes while remaining resilient against poison damage itself.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the Corpse Worm is a dangerous foe, particularly due to its ability to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corpse Worm
 
 *Large* *Monstrosity* *unaligned*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Regurgitate (Recharge 5-6):** When a creature the corpse worm can see hits it with an attack while within 10 feet of it, the corpse worm regurgitates a portion of its stomach contents on the attacker. The target must succeed on a DC 14 Constitution saving throw or be poisoned for 1 minute. If the corpse worm has a swallowed creature when it uses this reaction, the worm must succeed on a DC 14 Constitution saving throw or also regurgitate the swallowed creature, which falls prone in a space within 5 feet of the target. If it regurgitates the swallowed creature, the target and the swallowed creature take 7 (2d6) acid damage.
 
 
+</statblock>
 
 

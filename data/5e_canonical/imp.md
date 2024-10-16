@@ -1,6 +1,10 @@
 <MonsterName/>Imp (Devil)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>devil</Subtype>
+<Subtype/>shapechanger</Subtype>
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>10</HP>
 <summary>An Imp is a tiny, winged devil that serves more powerful fiends as a spy, messenger, or familiar. These small creatures are known for their cunning and deceit, often using their ability to turn invisible or take on the form of small animals to infiltrate enemy ranks or eavesdrop on important conversations. Imps possess a poisonous sting and can fly with agility, making them difficult to catch or kill. Though weak compared to larger fiends, Imps are dangerous due to their cleverness and their ability to manipulate others. They delight in causing chaos and corruption wherever they go.</summary>
 
 <summary>The Imp is a tiny fiend known for its cunning and mischievous nature, often acting as a servant or spy for more powerful entities. With a decent Armor Class of 13 and 14 hit points, it is not particularly durable but can evade attacks by utilizing its high Dexterity score of 16, which grants it a good modifier of +3, making it effective at avoiding damage. In addition to its ability to fly at a speed of 40 feet, the Imp’s primary strengths lie in its magical capabilities and stealth, reinforced by its high Stealth skill of +5 and its access to invisibility. However, its low Strength score of 6 (-2 modifier) makes it ineffective in direct combat, relying instead on hit-and-run tactics and illusion. The Imp also has several useful traits, such as damage immunities to fire and poison, as well as resistances against cold and nonmagical attacks, making it a resilient foe despite its small size.</summary>
@@ -51,6 +55,7 @@ Furthermore, the Imp can use Invisibility, allowing it to vanish from sight unti
 
 Source: 5e_srd
 
+<statblock>
 ### Imp (Devil)
 
 *Tiny fiend (devil, shapechanger), lawful evil*
@@ -89,7 +94,8 @@ Source: 5e_srd
 
 ***Sting (Bite in Beast Form)***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d4+3) piercing damage, and the target must make on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.
 
-***Invisibility***. The imp magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the imp wears or carries is invisible with it.
+***Invisibility***. The imp magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the imp wears or carries is invisible with it.</statblock>
+
 
 
 
@@ -97,6 +103,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Imp
 
 *Tiny* *Fiend*
@@ -135,6 +142,7 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The imp magically turns invisible, along with any equipment carried. This invisibility ends if the imp makes an attack, falls unconscious, or dismisses the effect.
 
 
+</statblock>
 
 
 
@@ -143,6 +151,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Imp
 
 *Tiny fiend (devil)*
@@ -178,5 +187,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The imp magically transforms into a Medium or smaller Beast that has a CR no higher than its own or back into its true form, which is a Fiend. Without wings, it loses its flying speed. Its statistics, other than its size and speed, are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies.
 
+</statblock>
 
 

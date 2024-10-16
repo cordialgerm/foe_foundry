@@ -1,6 +1,8 @@
 <MonsterName/>Malphas</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (studded leather)</AC>
+<HP/>135</HP>
 <summary>Malphas is a medium-sized fey creature that embodies a neutral evil alignment. It possesses a blend of formidable physical abilities and magical prowess that makes it a significant threat in combat. With an armor class of 16, it is reasonably well-protected, and its impressive 135 hit points (from rolling 18d8 plus an additional 54) gives it substantial survivability. Malphas boasts exceptional dexterity and strength, each rated at 19 (+4), which translates into good agility and formidable melee capabilities. It can move with a walking speed of 30 feet and a flying speed of 40 feet, allowing it to engage or retreat from combat effectively. The creature has a challenge rating of 6, making it a suitable adversary for parties at mid-range levels. However, it suffers from sunlight sensitivity, which impairs its effectiveness in bright conditions. </summary>
 
 <detail>
@@ -27,6 +29,7 @@ For reactions, Malphas can utilize Shadow Call; when hit by a ranged attack, it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Malphas
 
 *Medium* *Fey* *Neutral Evil*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Shadow Call:** When the malphas is hit by a ranged attack, it can make one Shadow Bolt attack against the attacker. The malphas doesn’t have disadvantage on this attack from being within 5 feet of a hostile creature, though it may still have disadvantage from other sources.
+</statblock>
 
 

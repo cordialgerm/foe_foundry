@@ -1,6 +1,8 @@
 <MonsterName/>Merrow</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>A Merrow is a monstrous, corrupted version of Merfolk, often twisted by dark magic or malevolent deities. These aquatic brutes have the same fish-like lower body as Merfolk but are much larger and more savage, with long, sharp claws and jagged teeth. Merrow dwell in deep waters, preying on ships, coastal villages, and even their own kin. They are known for their cruelty, often dragging their victims into the depths to drown. Merrow use crude weapons like harpoons or their natural claws and teeth in combat, and they are relentless hunters in their aquatic domains.</summary>
 
 <summary>The Merrow is a large monstrosity that serves as a formidable aquatic foe in Dungeons & Dragons. With a strong emphasis on melee combat, it boasts considerable strength and resilience, making it a significant challenge for players encountering it. It has a moderate Armor Class of 13, which offers decent protection, and a total of 45 hit points, reflecting its ability to withstand damage before being brought down. The Merrow's swimming speed of 40 feet allows it to maneuver swiftly underwater, while its capability to breathe both air and water adds to its versatility. Overall, it presents a good challenge rating of 2, offering 450 experience points upon defeat, primarily due to its potent melee attacks and the ability to grapple and control its opponents.</summary>
@@ -33,6 +35,7 @@ As a bonus action, the Merrow can use Shoving Rush, allowing it to move swiftly 
 
 Source: 5e_srd
 
+<statblock>
 ## Merrow
 
 *Large monstrosity, chaotic evil*
@@ -63,7 +66,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (2d4+4) slashing damage.
 
-***Harpoon***. *Melee or Ranged Weapon Attack:* +6 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 11 (2d6+3) piercing damage. If the target is a Huge or smaller creature, it must succeed on a Strength contest against the merrow or be pulled up to 20 feet toward the merrow.
+***Harpoon***. *Melee or Ranged Weapon Attack:* +6 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 11 (2d6+3) piercing damage. If the target is a Huge or smaller creature, it must succeed on a Strength contest against the merrow or be pulled up to 20 feet toward the merrow.</statblock>
+
 
 
 
@@ -71,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Merrow
 
 *Large* *Monstrosity*
@@ -103,6 +108,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage, or 9 (2d4 + 4) piercing damage if the target is grappled.
 
 
+</statblock>
 
 
 
@@ -111,6 +117,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Merrow
 
 *Large monstrosity*
@@ -147,5 +154,6 @@ Source: 5e_artisinal_monsters
 - **Shoving Rush.** The merrow takes the Dash action. If it moves, it can propel itself into one creature it can see along its path. The target must succeed on a DC 14 STR save or be knocked prone. This movement doesn’t provoke opportunity attacks from a target that fails this save.
 - **Recall Harpoon.** The merrow pulls on the cord connected to its harpoon, returning the harpoon to its empty hand. If the harpoon is stuck in a creature, that creature must succeed on a DC 14 STR save or be pulled up to 20 feet toward the merrow. Regardless, the harpoon is dislodged and returned to the merrow’s hand.
 
+</statblock>
 
 

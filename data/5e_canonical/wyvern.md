@@ -1,6 +1,8 @@
 <MonsterName/>Wyvern</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>110</HP>
 <summary>A Wyvern is a large, dragon-like creature with a long, barbed tail and powerful wings. Unlike true dragons, Wyverns are not intelligent, but they are highly aggressive and dangerous predators. Their tails are tipped with a venomous stinger, which they use to deliver deadly strikes to their prey. Wyverns are often found in remote, mountainous regions or desolate wastelands, where they hunt large game or even attack travelers and livestock. They are fearsome in the air, using their speed and agility to swoop down on their prey before retreating to their nests. Despite their lack of intelligence, Wyverns are formidable foes due to their strength and venom.</summary>
 
 <summary>The wyvern is a large dragon-like creature known for its agility and fierce combat abilities. With a challenge rating of 6, it presents a formidable threat in battle, capable of dealing significant damage while flying. The wyvern has a solid armor class of 13 and an impressive 110 hit points, making it resilient against attacks. However, its primary weakness is its impaired flying ability when bloodied, which restricts its mobility. With an exceptional strength score of 18 and a good constitution score of 16, the wyvern is both powerful in melee combat and durable. It is not particularly intelligent or charismatic, with intelligence at 5 and charisma at 6, which limits its non-combat interactions. The creature is adept at perception and has darkvision to augment its senses in dim light.</summary>
@@ -31,6 +33,7 @@ As a reaction, the Wyvern can utilize "Reflexive Tail Whip." When an enemy enter
 
 Source: 5e_srd
 
+<statblock>
 ## Wyvern
 
 *Large dragon, unaligned*
@@ -61,7 +64,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) slashing damage.
 
-***Stinger***. *Melee Weapon Attack:* +7 to hit, reach 10 ft., one creature. *Hit:* 11 (2d6+4) piercing damage. The target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.
+***Stinger***. *Melee Weapon Attack:* +7 to hit, reach 10 ft., one creature. *Hit:* 11 (2d6+4) piercing damage. The target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -69,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wyvern
 
 *Large* *Dragon*
@@ -99,6 +104,7 @@ Source: 5e_artisinal_monsters
 - **Stinger:** Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: 11 (2d6 + 4) piercing damage. The target makes a DC 15 Constitution saving throw  taking 24 (7d6) poison damage on a failure or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -107,6 +113,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wyvern
 
 *Large dragon*
@@ -141,5 +148,6 @@ Source: 5e_artisinal_monsters
 
 - **Reflexive Tail Whip.** When a creature moves into a space within 15 feet of the wyvern, it can whip its tail at the creature. The target must succeed on a DC 15 STR save or be knocked prone.
 
+</statblock>
 
 

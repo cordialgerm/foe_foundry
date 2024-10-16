@@ -1,6 +1,8 @@
 <MonsterName/>Dissimortuum</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Dissimortuum is a medium-sized undead creature characterized by its chaotic evil alignment. This monster boasts a robust Armor Class of 15 due to its natural armor and has a significant pool of hit points totaling 112, which allows it to withstand substantial damage in combat. The Dissimortuum can move at a speed of 30 feet and is designated with a challenge rating of 7, indicating it is suitable for parties of mid-level adventurers seeking a formidable foe. Notably, this creature has exceptional Charisma, giving it a strong presence in social interactions and combat situations.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions during combat, the Dissimortuum can perform a Multiattack, a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dissimortuum
 
 *Medium* *Undead* *Chaotic Evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The dissimortuum makes three Claw attacks. It can replace one Claw attack with a use of Terrifying Mask.
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 15 (3d8 + 2) slashing damage.
 - **Terrifying Mask:** Each non-Undead creature within 60 feet of the dissimortuum that can see it must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A frightened creature can repeat the saving throw, ending the effect on itself on a success. If a target’s saving throw is successful or the effect ends for it, the target becomes immune to the dissimortuum’s Terrifying Mask for the next 24 hours.
+</statblock>
 
 

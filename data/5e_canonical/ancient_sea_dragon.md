@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Sea Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>23</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>518</HP>
 <summary>The Ancient Sea Dragon is a powerful and imposing creature categorized as a Gargantuan dragon with neutral evil alignment. With an exceptional Armor Class of 22 and an astounding 518 hit points, it epitomizes strength and durability in combat. This dragon boasts impressive statistical values, particularly in Strength and Constitution, making it formidable both as an attacker and a defender. Its challenge rating of 23 suggests that it is a significant threat in higher-level campaigns, rewarding players with considerable experience points upon its defeat. Notable traits include its ability to breathe both air and water, and its immunity to cold damage, showcasing its adaptation to aquatic environments. However, it has a mundane Dexterity score, which presents an opportunity for adversaries to exploit its lack of agility.</summary>
 
 <detail>
@@ -26,6 +28,7 @@ Overall, the Ancient Sea Dragon is a powerhouse in any campaign, capable of domi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Sea Dragon
 
 *Gargantuan* *Dragon* *Neutral Evil*
@@ -68,5 +71,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a Tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then move up to half its flying speed, or swimming speed if in the water.
+</statblock>
 
 

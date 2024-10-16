@@ -1,6 +1,8 @@
 <MonsterName/>Gumienniki</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>22</HP>
 <summary>The Gumienniki is a Small neutral evil fiend known for its cunning ability to manipulate its surroundings and its clever shape-shifting capabilities. With a Challenge Rating of 1, it is fairly reasonable for low-level adventurers but possesses qualities that can turn the tide in combat. With a moderately high Dexterity score, the Gumienniki is agile, allowing it to effectively dodge attacks. While its Armor Class is slightly above average, making it decent at avoiding damage, it is still susceptible to most forms of attack due to its limited hit points. One of its notable features is its ability to change shape into a Tiny housecat, which offers both stealth and evasion opportunities. However, its abilities also come with focused weaknesses, particularly when engaging in close combat due to its lower Strength and Constitution scores.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Finally, the Gumienniki has a reactive ability called Taunting Cackle. When it i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gumienniki
 
 *Small* *Fiend* *neutral evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Taunting Cackle:** When the gumienniki is missed by an attack, it can taunt the attacker. The attacking creature must succeed on a DC 12 Wisdom saving throw or have disadvantage on its next attack roll or saving throw.
 
 
+</statblock>
 
 

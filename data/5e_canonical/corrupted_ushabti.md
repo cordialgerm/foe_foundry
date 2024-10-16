@@ -1,6 +1,8 @@
 <MonsterName/>Corrupted Ushabti</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>97</HP>
 <summary>The Corrupted Ushabti is a Medium-sized undead creature that embodies the essence of neutral evil. These fearsome entities are known for their dark magic and resilience in battle, making them formidable opponents for adventurers. With an Armor Class of 15 due to its natural armor and a healthy pool of 97 hit points, the Corrupted Ushabti can withstand a fair amount of damage. It possesses strengths such as necrotic weapon attacks that inflict extra damage, a regenerative ability that allows it to heal over time, and an unusual ability to move through tight spaces by utilizing a swarm of scarabs. However, it is vulnerable to fire damage and relies on magical protection against non-magical physical attacks, making it susceptible if caught off guard. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ In summary, the Corrupted Ushabti is a dangerous foe, blending resilience and co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corrupted Ushabti
 
 *Medium* *Undead* *Neutral Evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The corrupted ushabti makes two Ceremonial Greatsword attacks.
 - **Ceremonial Greatsword:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 11 (2d6 + 3) slashing damage plus 7 (2d6) necrotic damage.
 - **Vomit Swarm (Recharge 5–6):** The corrupted ushabti exhales scarabs in a 30-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 25 (10d4) piercing damage and is covered in scarabs. On a success, a creature takes half the damage and isn’t covered in scarabs. A creature covered in scarabs takes 2 (1d4) piercing damage at the start of each of its turns. A creature, including the covered creature, can take its action to brush the scarabs off the covered creature by succeeding on a DC 15 Dexterity check.
+</statblock>
 
 

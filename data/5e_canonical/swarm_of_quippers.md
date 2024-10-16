@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Quippers</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>28</HP>
 <summary>A Swarm of Quippers is a fast-moving, vicious school of carnivorous fish that can strip flesh from bone in seconds. These small, sharp-toothed predators are found in rivers, lakes, or coastal waters, often lurking in murky depths. Though individually weak, in large numbers they become a serious threat, capable of overwhelming creatures many times their size. Swarms of Quippers are especially dangerous to injured or bleeding creatures, as they are drawn to the scent of blood in the water. Their rapid, frenzied attacks can quickly incapacitate even the strongest of swimmers.</summary>
 
 <summary>The Swarm of Quippers is a Medium-sized beast known for its aggressive and relentless nature in aquatic environments. This creature has a challenge rating of 1, making it a moderately-sized threat. With a decent armor class of 13 and 28 hit points, it can withstand some attacks but is not particularly durable. Its strengths lie in its swimming speed of 40 feet, allowing it to maneuver effectively in water. Given its resistance to bludgeoning, piercing, and slashing damage, it can absorb non-magical assaults well. However, it has a weakness in its low Constitution, resulting in a very bad modifier of -1, which impacts its overall damage resilience. The swarm's ability to swarm over enemies and attack en masse makes it a formidable opponent, especially when engaged in melee. </summary>
@@ -21,6 +23,7 @@ When it comes to actions, the Swarm of Quippers can perform a melee attack known
 
 Source: 5e_srd
 
+<statblock>
 ### Swarm of Quippers
 
 *Medium swarm of Tiny beasts, unaligned*
@@ -53,7 +56,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bites***. *Melee Weapon Attack:* +5 to hit, reach 0 ft., one creature in the swarm's space. *Hit:* 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.
+***Bites***. *Melee Weapon Attack:* +5 to hit, reach 0 ft., one creature in the swarm's space. *Hit:* 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.</statblock>
+
 
 
 
@@ -61,6 +65,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Quippers
 
 *Medium* *Beast*
@@ -91,5 +96,6 @@ Source: 5e_artisinal_monsters
 - **Bites:** Melee Weapon Attack: +5 to hit, reach 0 ft., one target. Hit: 10 (4d4) piercing damage  or 5 (2d4) piercing damage if the swarm is bloodied. On a hit  the swarm can use a bonus action to make a second bites attack.
 
 
+</statblock>
 
 

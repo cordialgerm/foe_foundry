@@ -1,6 +1,8 @@
 <MonsterName/>Uridimmu</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>14</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Uridimmu is a formidable large celestial creature embodying lawful goodness, making it a potent ally for those who adhere to similar principles. With a powerful presence in combat, it has high armor and hit points, allowing it to endure while dishing out significant damage. The Uridimmu excels in both melee and magical engagements, fortified with strong saving throws and resistances. Notably, its special abilities bolster allies and hinder foes, while its innate spellcasting provides versatile options for support and offense. Despite its strengths, it remains vulnerable to magical effects in specific circumstances, particularly in the presence of chaotic influences. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Uridimmu is an exceptional creature that plays a powerful role in b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Uridimmu
 
 *Large* *Celestial* *lawful good*
@@ -62,5 +65,6 @@ At will: detect evil and good, light, protection from evil and good
 - **Heavenly Roar (Recharge 5-6):** The uridimmu can unleash a powerful roar imbued with divine power in a 30-foot cone. A target caught within this cone must make a DC 18 Constitution saving throw, taking 45 (10d8) thunder damage on a failed save, or half as much damage on a successful one. If the saving throw fails by 5 or more, the target is also frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Fiends have disadvantage on this saving throw.
 
 
+</statblock>
 
 

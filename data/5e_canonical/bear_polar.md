@@ -1,6 +1,8 @@
 <MonsterName/>Bear, Polar</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Polar Bear is a large beast characteristically found in cold environments, equipped with significant physical prowess that makes it a formidable opponent in combat. With a Challenge Rating of 2, it poses a moderate threat to adventurers, particularly those unprepared for its physical attacks. Strength is the polar bear's standout attribute, scoring a value of +5, which denotes exceptional effectiveness in melee combat. However, despite its impressive offensive capabilities, it has minimal mobility due to its average Dexterity score. The creature has a natural armor class of 12, making it somewhat resilient, but its weaknesses include low intelligence and charisma, indicating it may be less effective in social interactions or complex challenges.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ Overall, the Polar Bear is designed to be a tough melee combatant with strong of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bear, Polar
 
 *Large beast*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 9 (1d8 + 5) piercing damage.
 - **Claws.** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.
 
+</statblock>
 
 

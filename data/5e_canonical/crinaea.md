@@ -1,6 +1,8 @@
 <MonsterName/>Crinaea</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>44</HP>
 <summary>The Crinaea is a Medium-sized fey creature characterized by its aquatic nature and cunning abilities, making it both an intriguing ally and a dangerous adversary. With a Challenge Rating of 2, it is suitable for low-level adventurers looking for a strategic encounter. The Crinaea has a unique connection to water, allowing it to manipulate and poison water sources drawn from its bonded origin. This ability, in combination with its proficient stealth and perceptive senses, grants it a distinct advantage in aquatic environments. Additionally, its capacity to become invisible while submerged enhances its tactical options. On the downside, if separated from its water source for too long, it becomes vulnerable to exhaustion and less effective in combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Crinaea can also utilize a dagger in melee attacks, providing a +
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crinaea
 
 *Medium* *Fey* *neutral*
@@ -55,5 +58,6 @@ At will: poison spray
 - **Dagger:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 7 (2d6) cold damage.
 
 
+</statblock>
 
 

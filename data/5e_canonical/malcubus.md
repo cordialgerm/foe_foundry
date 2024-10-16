@@ -1,6 +1,8 @@
 <MonsterName/>Malcubus</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>78</HP>
 <summary>Malcubus is a medium-sized fiend with a challenging presence in combat and a range of manipulative abilities that make it a cunning adversary. With an Armor Class of 14 and 78 hit points (12d8 + 24), it possesses solid defenses for its Challenge Rating of 4, allowing for moderate resilience in battle. The creature can move at a walking speed of 30 feet and is capable of flying at 60 feet, giving it agile movement both in the air and on the ground. However, while it has a good Dexterity score of 16 (providing a +3 modifier), its physical combat abilities, particularly its Strength of 10 (modifier of +0), are average, making it less effective in melee encounters. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ For its bonus action, the Malcubus can "Shapeshift," changing its form to a Medi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Malcubus
 
 *Medium* *Fiend*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Living Shield:** When a creature the malcubus can see hits it with an attack, the malcubus can give an order to a creature charmed by it within 5 feet. The charmed creature uses its reaction, if available, to swap places with the malcubus. The attack hits the charmed creature instead of the malcubus.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Elf, Shadow Fey Executioner</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>172</HP>
 <summary>The Shadow Fey Executioner is a medium-sized humanoid creature characterized by its lawful evil alignment and formidable presence on the battlefield. With a Challenge Rating of 8, it packs a strong punch, boasting a robust set of hit points at 172, making it quite resilient in combat. This executioner is particularly known for its necrotic-infused weapon attacks, making it exceptionally lethal against its targets. Despite its strengths, it does suffer from sunlight sensitivity, which forces it at a disadvantage while attacking or perceiving in bright light. Its unique abilities, such as commanding severed heads to attack and the use of shadows for movement, make it a fearsome opponent, particularly suited for hunting down specific targets.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ For bonus actions, the executioner can **Recall Severed Head**, calling any of i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elf, Shadow Fey Executioner
 
 *Medium* *Humanoid* *lawful evil*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Traveler (3/Day):** In shadows/dim light/darkness disappears into darkness and reappears in unoccupied space it can see within 30'. Smoke tendril appears at origin and destination.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Wood Elf Sharpshooter</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>90</HP>
 <summary>The Wood Elf Sharpshooter is a formidable medium humanoid creature known for its exceptional agility and precision in combat. With a challenge rating of 5, this sharpshooter poses a significant threat to adventurers, particularly because of its impressive Dexterity and ranged capabilities. Its high Armor Class of 16 and substantial hit points of 90 make it resilient in battle, allowing it to absorb damage while dealing significant harm from a distance. The Wood Elf Sharpshooter is particularly skilled in stealth and ranged attacks, making it an effective ambusher. Its advantages in perception and the ability to remain undetected lend to its strengths, while its reliance on Dexterity can be considered a potential weakness if confronted up close where melee attacks can overwhelm it.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Wood Elf Sharpshooter can use Aimed Strike, which grants 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wood Elf Sharpshooter
 
 *Medium* *Humanoid*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Skirmish Step:** The strider moves up to half their Speed without provoking opportunity attacks.
 
 
+</statblock>
 
 

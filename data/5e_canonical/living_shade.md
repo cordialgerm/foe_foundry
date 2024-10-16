@@ -1,6 +1,8 @@
 <MonsterName/>Living Shade</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>18</HP>
 <summary>The Living Shade is a medium-sized fey creature known for its stealthy nature and ability to blend into shadows. It possesses a moderate level of resilience with a challenge rating of 1/4, making it an encounter suitable for low-level adventurers. With an armor class of 12 and 18 hit points, it is not particularly hard to hit, but it compensates for this with significant resistances and immunities. Its innate skills in stealth, combined with its ability to effortlessly navigate through tight spaces, make it an elusive foe in combat. However, the Living Shade is vulnerable to radiant damage, which can pose a significant threat to it. Consequently, while it is adept at evading detection, it must be cautious in brightly lit environments where its abilities are hampered.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Living Shade serves as a stealthy ambusher that thrives in dark env
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Living Shade
 
 *Medium* *Fey* *neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Touch:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 2 (1d4) cold damage.
 
 
+</statblock>
 
 

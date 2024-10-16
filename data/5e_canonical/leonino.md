@@ -1,6 +1,8 @@
 <MonsterName/>Leonino</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>13</HP>
 <summary>The Leonino is a tiny beast that serves as a nimble and elusive creature in the Dungeons & Dragons universe. With a Challenge Rating of 1/8, it is a relatively low-powered opponent, providing 25 experience points upon defeat. Notably agile, with a Dexterity score of 16, the Leonino can fly with a speed of 40 feet and walk at 30 feet. Its good mobility is complemented by a decent armor class of 13 and a modest hit point total of 13, giving it a balance of survivability and evasion. The creature possesses a variety of special abilities that enhance its capacity to stay out of harm's way while also presenting unique challenges to potential adversaries. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ The Leonino can attack using its Bite action, which is a melee weapon attack tha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Leonino
 
 *Tiny* *Beast* *unaligned*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage. If this is the first time the leonino has hit the target within the past 24 hours, the target must succeed on a DC 10 Wisdom saving throw or be charmed by the leonino for 1 hour.
 
 
+</statblock>
 
 

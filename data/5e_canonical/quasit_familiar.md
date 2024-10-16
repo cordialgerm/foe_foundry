@@ -1,6 +1,8 @@
 <MonsterName/>Quasit Familiar</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>14</HP>
 <summary>The Quasit Familiar is a tiny fiend that serves as both a companion and a source of assistance for spellcasters. It possesses a unique combination of stealth and magical capabilities, making it a valuable ally in settings that require subtlety and cunning. With a decent Armor Class of 13 and 14 hit points, it can withstand a few hits, although its defenses are not exceptionally strong. The Quasit's main strengths lie in its Intelligence and Dexterity, granting it good stealth abilities and the capacity to evade magic. However, it is physically weak with a Strength of only 5, which means it is ineffective in melee combat. Its notable abilities include magic resistance and a telepathic bond with its master, enhancing its overall utility in a party.</summary>
 
 <detail>
@@ -42,6 +44,7 @@ As a bonus action, the Quasit has access to:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Quasit Familiar
 
 *Tiny* *Fiend*
@@ -80,5 +83,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The quasit magically turns invisible, along with any equipment it carries. This invisibility ends if the quasit makes an attack, falls unconscious, or dismisses the effect.
 
 
+</statblock>
 
 

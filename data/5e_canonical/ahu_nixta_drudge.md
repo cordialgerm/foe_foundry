@@ -1,6 +1,8 @@
 <MonsterName/>Ahu-Nixta Drudge</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (clockwork armor)</AC>
+<HP/>26</HP>
 <summary>The Ahu-Nixta Drudge is a medium-sized aberration characterized by its neutral evil alignment. This creature is notable for its reliance on clockwork armor, which provides both protection and functionality. Its strengths lie in its ability to withstand damage due to its decent armor class and unique immunities, making it tough to defeat through conventional means. It possesses a variety of resistances to both physical and magical effects, making it a resilient opponent. However, its dependence on its clockwork armor is a significant weakness; if the armor is destroyed, the Ahu-Nixta Drudge is rendered defenseless and dies. As it engages in battle, it utilizes its whirring blades to deal damage up close while leveraging its innate spellcasting for both offensive and defensive strategies.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ For its actions during combat, the Ahu-Nixta Drudge can use whirring blades as a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ahu-Nixta Drudge
 
 *Medium* *Aberration* *neutral evil*
@@ -56,5 +59,6 @@ At will: fire bolt  (1d10)
 - **Whirring Blades:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage.
 
 
+</statblock>
 
 

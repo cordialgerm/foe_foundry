@@ -1,6 +1,8 @@
 <MonsterName/>Dogmole Juggernaut</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Dogmole Juggernaut is a large monstrosity that is unaligned and embodies a fearsome presence on the battlefield. With a robust hit point pool and a strong suite of abilities, this creature excels in physical confrontations, particularly against smaller enemies. Its burrowing ability allows it to become a threat from unexpected angles, while its relentless nature ensures it can withstand significant damage before falling. The Dogmole Juggernaut's strengths lie in its formidable strength and resilience, but it has weaknesses related to its relatively low Dexterity and lack of intelligence. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Dogmole Juggernaut also has a unique reaction called "Wormkiller Rage." This
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dogmole Juggernaut
 
 *Large* *Monstrosity* *Unaligned*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Wormkiller Rage:** When the juggernaut takes damage from a Small or larger insectoid Beast, such as a giant centipede, or when it deals damage to such a creature, it enters a special rage for 3 rounds. While in this rage, it has advantage on attack rolls and Strength checks and deals an extra 5 (2d4) piercing damage with its Bite attack, but its Armor Class is reduced by 2. The juggernaut can’t end this rage willingly.
+</statblock>
 
 

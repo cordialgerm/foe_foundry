@@ -1,6 +1,8 @@
 <MonsterName/>Adult Black Dragon Lich</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>17</CR>
+<AC/>19</AC>
+<HP/>253</HP>
 <summary>The Adult Black Dragon Lich is a formidable undead creature that combines the menacing presence of a dragon with the dark magic of undeath. Possessing a challenge rating of 17, this creature is capable of significantly impacting the battlefield with its powerful attacks and spellcasting abilities. With a high Armor Class of 19 and an impressive pool of 253 hit points, it is well-equipped to withstand considerable punishment. Its exceptional Strength score of 22 allows it to deliver devastating physical attacks, while its Charisma of 16 enhances its spellcasting. Although it has vulnerabilities typical of undead, such as being susceptible to radiant damage, its array of immunities, including damage immunity to acid, necrotic, and poison, makes it a dangerous foe. The Adult Black Dragon Lich also boasts a variety of special abilities and spells that can manipulate both the battlefield and its opponents' actions, making it a tactical presence that adventurers must approach with caution.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The creature also possesses legendary actions, which allow it to act outside its
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Black Dragon Lich
 
 *Huge* *Undead*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Darkness:** The dragon creates a 20-foot-radius sphere of magical darkness originating from a point it can see within 120 feet. Darkvision can't penetrate this darkness. The darkness lasts for 1 minute or until the dragon uses this action again.
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 17 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 20 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
+</statblock>
 
 

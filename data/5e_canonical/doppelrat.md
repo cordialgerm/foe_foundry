@@ -1,6 +1,8 @@
 <MonsterName/>Doppelrat</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>The Doppelrat is a Tiny monstrosity known for its cunning and adaptability in combat. With an Armor Class of 13 and a hit point total of 45, this creature is relatively resilient for its size, allowing it to endure some damage. It possesses an impressive Dexterity of 17, giving it a very good modifier of +3, which enhances its ability to dodge attacks and escape danger. However, its physical strength is incredibly low, with a Strength score of just 2, resulting in a very bad modifier of -4. This imbalance makes the Doppelrat heavily reliant on its special abilities and stealth tactics rather than physical confrontation. The creature has a Challenge Rating of 2, indicating it represents a moderate challenge for adventurers, with a reward of 450 experience points for defeating it. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ In summary, the Doppelrat excels in evasion, deception, and inflicting debilitat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Doppelrat
 
 *Tiny* *Monstrosity* *Unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or contract the horrific doppeling disease (see the Horrific Doppeling trait).
+</statblock>
 
 

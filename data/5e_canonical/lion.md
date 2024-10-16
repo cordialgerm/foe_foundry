@@ -1,6 +1,8 @@
 <MonsterName/>Lion</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>26</HP>
 <summary>A Lion is a large, powerful predator found in grasslands and savannas. Known as the 'king of the beasts,' lions are apex predators that hunt in prides, using their strength and coordination to take down large prey like antelope, buffalo, or zebras. Lions have muscular bodies, sharp claws, and powerful jaws, making them fearsome hunters. Male lions are distinguished by their thick manes, while females, the primary hunters, are sleeker and faster. Though lions are often seen as majestic and noble, they are fierce and aggressive when defending their territory or pride.</summary>
 
 <summary>The lion is a large beast known for both its physical prowess and predatory instincts. It boasts an impressive speed and the ability to attack swiftly, making it a formidable opponent in combat. With a challenge rating of 1, it is adequate for early encounters but possesses strong abilities, allowing it to coordinate effectively with allies. The lion's strengths lie in its potent melee attacks and its bonus from pack tactics, which enhances its effectiveness when fighting alongside others. However, it has low hit points and is susceptible to various forms of attacks, making it moderately vulnerable despite its offensive capabilities.</summary>
@@ -35,6 +37,7 @@ As a bonus action, the lion can use Rattling Roar, which has a recharge mechanic
 
 Source: 5e_srd
 
+<statblock>
 ### Lion
 
 *Large beast, unaligned*
@@ -69,7 +72,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) piercing damage.
 
-***Claw***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6+3) slashing damage.
+***Claw***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6+3) slashing damage.</statblock>
+
 
 
 
@@ -77,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lion
 
 *Large* *Beast*
@@ -111,6 +116,7 @@ Source: 5e_artisinal_monsters
 - **Opportune Bite:** The lion makes a bite attack against a prone creature.
 
 
+</statblock>
 
 
 
@@ -119,6 +125,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lion
 
 *Large beast*
@@ -155,5 +162,6 @@ Source: 5e_artisinal_monsters
 
 - **Rattling Roar (Recharge 4–6).** The lion releases a bone-shaking roar in a 15-foot cone. Each creature in the area must succeed on a DC 13 CON save or have disadvantage on attack rolls until the end of its next turn.
 
+</statblock>
 
 

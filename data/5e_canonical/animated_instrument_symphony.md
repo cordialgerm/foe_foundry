@@ -1,6 +1,8 @@
 <MonsterName/>Animated Instrument, Symphony</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>15</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>201</HP>
 <summary>The Animated Instrument, Symphony is a gargantuan construct known for its impressive musical abilities and unique combat style. With a Challenge Rating of 15, this creature has formidable hit points totaling 201 and maintains a solid defense with an Armor Class of 15, derived from its natural armor. Its high strength and exceptional charisma make it a powerful presence in any encounter. One of the key components of its combat strategy is its various musical arrangements that can influence and control the battlefield by affecting the actions and states of nearby creatures. While it possesses multiple resistances and immunities, it does have a vulnerability to anti-magic fields, making it especially susceptible to certain spellcasters. Its ability to occupy the same space as other creatures allows it to perform manipulative tactics, enhancing its effectiveness in combat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Symphony can also perform legendary actions. It can Move without provoking o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animated Instrument, Symphony
 
 *Gargantuan* *Construct* *neutral*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Harmonize (2):** Tunes its worn-out instruments back to working harmony regaining 20 hp and ending one condition affecting it.
 - **Orchestral Flourish (2):** Plays a short fierce melody. Each creature within 10 ft. of symphony including creatures in its space:  10 (3d6) thunder (DC 19 Con half).
 - **Syncopated Melody (3):** Mimics a spell that was cast since the end of its last turn. It makes a Performance check where the DC is the caster's DC+the level of the spell symphony is trying to mimic. If successful symphony casts the spell using original caster’s DC and spell attack bonus.
+</statblock>
 
 

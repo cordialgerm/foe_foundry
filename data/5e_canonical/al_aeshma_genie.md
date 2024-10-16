@@ -1,6 +1,8 @@
 <MonsterName/>Al-Aeshma Genie</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>149</HP>
 <summary>The Al-Aeshma Genie is a large and chaotic evil elemental creature known for its agility and commanding presence in combat. With a formidable combination of high armor class and robust hit points, the Al-Aeshma poses a significant threat to adventurers, inflicting both slashing and necrotic damage through its attacks. It excels in aerial encounters, having advantages against flying enemies due to its Air Hatred ability. However, it is somewhat grounded by its Earth Bound trait, which limits its altitude and exposes it to vulnerabilities when flying too high. The Al-Aeshma possesses a unique form of regeneration that allows it to recover health every turn while also making it exceptionally resilient to damage, barring certain types. Despite these strengths, the Al-Aeshma remains susceptible to fire and radiant damage, adding a layer of strategy for those looking to defeat it.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Lastly, the Al-Aeshma is a spellcaster capable of casting spells without needing
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Al-Aeshma Genie
 
 *Large* *Elemental* *Chaotic Evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Scimitar:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 7 (2d6) necrotic damage.
 - **Dust Devil:** The al-aeshma creates a swirling dust devil centered on a point it can see within 120 feet of it. The dust devil appears in the shape of a cylinder that is 30 feet tall with a 5-foot radius. Each creature in the area and each creature that enters the area for the first time on a turn or starts its turn there must succeed on a DC 17 Strength saving throw or be restrained. While restrained, a creature takes 7 (2d6) slashing damage and 7 (2d6) necrotic damage at the start of each of the al-aeshma’s turns. A creature, including a restrained creature, can take an action to free the restrained creature by succeeding on a DC 17 Strength check.
 - **Spellcasting:** The al-aeshma casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 17):<br>At will: detect magic<br>3/day each: create or destroy water (destroy only), wind walk (as an action)<br>1/day each: gaseous form, invisibility
+</statblock>
 
 

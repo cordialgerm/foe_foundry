@@ -1,6 +1,8 @@
 <MonsterName/>Gaki</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>8</CR>
+<AC/>14</AC>
+<HP/>75</HP>
 <summary>The Gaki is a Medium undead creature that embodies chaotic evil, often appearing as a grotesque and famished specter. It has a notable presence on the battlefield, boasting essential features that make it a formidable opponent. The Gaki has a decent Armor Class of 14 and robust Hit Points totaling 75, which allows it to withstand considerable damage. Its speed of 30 feet is standard for a creature of its type, and it comes with a Challenge Rating of 8, indicating it poses a significant challenge to adventurers. The Gaki's main strengths lie in its exceptional Dexterity of 18, granting it a +4 modifier that enables it to act quickly, and its formidable Charisma of 16, which supports its manipulative and alluring abilities. However, it has very poor Strength at 7, resulting in a -2 modifier, making it ineffective in straightforward physical confrontations. The Gaki is immune to various damage types such as cold, necrotic, and poison, and it also enjoys several resistances and immunities to conditions, making it a tricky foe that can evade many threats.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ Overall, the Gaki presents a multifaceted challenge, combining strong offensive 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gaki
 
 *Medium* *Undead* *chaotic evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Spit Acid:** Ranged Spell Attack: +6 to hit, range 30 ft., one target. Hit: 21 (6d6) acid damage.
 
 
+</statblock>
 
 

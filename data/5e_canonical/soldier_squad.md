@@ -1,6 +1,8 @@
 <MonsterName/>Soldier Squad</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>97</HP>
 <summary>The Soldier Squad is a large humanoid creature that functions as a collective of soldiers working together as a cohesive unit. With a challenge rating of 5, it poses a significant threat to adventurers due to its durability and combat capabilities. The squad's armor class is 16, and it has a total of 97 hit points, which are calculated using 15d8 plus an additional 30 hit points. In terms of physical attributes, the squad's Strength and Constitution are above average, providing it with a good capacity to withstand damage and engage effectively in melee combat. However, its Dexterity is only average, making its agility less than optimal. The squad demonstrates notable weaknesses, particularly in its vulnerability to area effects, which deal double damage to it. Overall, it operates effectively as a frontline unit, but its special abilities and tactical movement options allow it to adapt and survive against overwhelming odds.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Soldier Squad can execute "Tactical Movement," which decr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Soldier Squad
 
 *Large* *Humanoid*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Tactical Movement:** Until the end of the squads turn, their Speed is halved and their movement doesn't provoke opportunity attacks.
 
 
+</statblock>
 
 

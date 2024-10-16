@@ -1,6 +1,8 @@
 <MonsterName/>Hraesvelgr</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>19</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>241</HP>
 <summary>Hraesvelgr is a formidable giant titan characterized by its immense size and powerful abilities, making it a dangerous adversary in combat. With a challenge rating of 19, Hraesvelgr exemplifies raw strength and durability, garnering a massive pool of hit points totaling 241. This creature can transition between two forms: a towering giant and a colossal roc, each providing unique tactical options. Its exceptional strength score of 25 allows it to deal significant damage, while its damage immunities to cold and nonmagical attacks add to its resilience. However, despite its formidable presence, it is vulnerable to magical attacks and strategies that exploit its slower speed when flying. Hraesvelgr's ability to influence weather enhances its battlefield control, enabling it to alter environmental conditions to its advantage.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In addition to these actions, Hraesvelgr can take legendary actions after anothe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hraesvelgr
 
 *Huge* *Giant* *Titan)*
@@ -77,5 +80,6 @@ Hraesvelgr can take 3 legendary actions, choosing from the options below. Only o
 - **Attack:** Hraesvelgr makes a Fist or Talons attack.
 - **Move:** Hraesvelgr moves up to his speed, or flies up to half his flying speed if in roc form, without provoking opportunity attacks.
 - **Ear-Splitting Screech (Costs 2 Actions; Roc Form Only):** Hraesvelgr lets out an ear-splitting screech. Each creature within 30 feet of Hraesvelgr must succeed on a DC 19 Constitution saving throw or take 14 (4d6) thunder damage and be deafened until the end of its next turn.
+</statblock>
 
 

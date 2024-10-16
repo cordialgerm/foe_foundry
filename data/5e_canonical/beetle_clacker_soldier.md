@@ -1,6 +1,8 @@
 <MonsterName/>Beetle, Clacker Soldier</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>18</HP>
 <summary>The Clacker Soldier is a small beast that thrives in battle with its unique abilities and resilient nature. With an Armor Class of 15 and 18 hit points, these creatures exhibit decent durability for their size. They have a Challenge Rating of 1, making them a manageable adversary for lower-level parties. Their strengths come from their ability to deal significant piercing damage and create a disruptive thunderous noise that affects multiple enemies, making them a tactical threat despite their low intelligence and charisma. They possess immunities to thunder damage and resistance to slashing damage from nonmagical attacks, highlighting their resilience in combat. However, their low strength and poor mental attributes make them vulnerable to strategies that exploit these weaknesses.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Another significant ability is Clack, where the Clacker Soldier clacks its mandi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Beetle, Clacker Soldier
 
 *Small* *Beast* *unaligned*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Clack:** Clacks its mandibles to create small but dangerous booming noise in 15 ft. cone. Each creature in area: 5 (2d4) thunder (DC 13 Con half). When multiple beetles clack in same turn and create overlapping cones each creature in overlapping cones makes one save with disadvantage vs. total damage from all overlapping cones rather than one save for each.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Spellhound</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Spellhound is a large monstrosity characterized by its lawful neutral alignment, making it a creature that acts according to its own code rather than succumbing to chaotic impulses. With a Challenge Rating of 4, it presents a moderate challenge for adventurers, possessing significant hit points of 102 and a decent Armor Class of 14 due to its natural armor. The Spellhound excels in combat through specific abilities that target spellcasting foes, making it particularly effective against magic users. However, its intelligence is notably low, which limits its strategic options outside of combat. Its strengths lie in its ability to sense and disrupt magical effects, alongside solid physical attack potential.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The Spellhound can also use its Nullifying Howl once per day. This action involv
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spellhound
 
 *Large* *Monstrosity* *lawful neutral*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Nullifying Howl (1/Day):** The spellhound lets out a high-pitched, multiphonic howl to disrupt magical effects within 60 feet of it. Any spell of 3rd level or lower within the area ends. For each spell of 4th-level or higher in the area, the spellhound makes an ability check, adding its Constitution modifier to the roll. The DC equals 10 + the spell’s level. On a success, the spell ends.<br><br>In addition, each spellcaster within 30 feet of the spellhound that can hear the howl must succeed on a DC 14 Constitution saving throw or be stunned until the end of its next turn.
 
 
+</statblock>
 
 

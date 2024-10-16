@@ -1,6 +1,8 @@
 <MonsterName/>Steam Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>171</HP>
 <summary>The Steam Golem is a formidable large construct known for its powerful physical attacks and resistance to a wide range of damage types. With an Armor Class of 18 and a significant pool of 171 hit points, it possesses excellent defenses against physical threats. Its high Strength score of 26 grants it enhanced melee capabilities, making its attacks particularly damaging. However, it is vulnerable to water-based attacks that can extinguish its inner fire, causing it to become dormant. This unique characteristic requires opponents to strategize carefully to either exploit this weakness or to avoid direct confrontation with the creature. Overall, the Steam Golem is a challenging enemy with the potential to deal substantial damage while being resistant to many forms of attack.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For reactions, the Whistle ability allows the Steam Golem to disrupt spellcastin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Steam Golem
 
 *Large* *Construct* *Unaligned*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Whistle (Recharge 4–6):** When a creature the steam golem can see within 30 feet of it casts a spell, the steam golem emits a shriek from its twin steam whistles. The spellcaster must succeed on a DC 17 Constitution saving throw or the spell fails and has no effect.
+</statblock>
 
 

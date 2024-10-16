@@ -1,6 +1,8 @@
 <MonsterName/>Iron Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>16</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>210</HP>
 <summary>An Iron Golem is a massive, humanoid construct made entirely of iron and brought to life through powerful magic. Standing over 12 feet tall, these golems are nearly indestructible, their iron bodies impervious to most forms of attack. Iron Golems are often used as guardians of treasure vaults, fortresses, or important relics, and they follow their creator’s commands without question. In battle, they strike with tremendous force, wielding massive weapons or crushing foes with their iron fists. Iron Golems can also release a cloud of poisonous gas, incapacitating nearby enemies. Despite their immense power, they are slow and methodical in their movements.</summary>
 
 <summary>The Iron Golem is a formidable large construct that serves as a powerful guardian or protector, often employed by wizards, sorcerers, or malicious entities to safeguard their secrets or locations. With a high armor class of 20, this creature is very durable in combat, able to withstand significant amounts of damage with its impressive 201 hit points. Its challenge rating of 16 indicates that it poses a serious threat to adventurers, particularly those unprepared for its magical resistances and physical attacks. Notably, the Iron Golem is immune to most forms of damage, except for magical sources, making it exceptionally tough in battles where typical weapons and tactics might fail. However, its lack of dexterity and its low intelligence make it predictable in certain scenarios, as it may struggle against clever strategies or magic that targets its weaknesses.</summary>
@@ -21,6 +23,7 @@ Overall, the Iron Golem serves as an effective and challenging opponent in battl
 
 Source: 5e_srd
 
+<statblock>
 ### Iron Golem
 
 *Large construct, unaligned*
@@ -61,7 +64,8 @@ Source: 5e_srd
 
 ***Sword***. *Melee Weapon Attack:* +13 to hit, reach 10 ft., one target. *Hit:* 23 (3d10+7) slashing damage.
 
-***Poison Breath (Recharge 6)***. The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.
+***Poison Breath (Recharge 6)***. The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -69,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Iron Golem
 
 *Large construct*
@@ -105,5 +110,6 @@ Source: 5e_artisinal_monsters
 - **Spear Arm.** Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 25 (4d8 + 7) piercing damage.
 - **Expel Poisonous Gas (Recharge 5–6).** The golem vents poisonous gas from small holes across its body. Each creature within 15 feet of the golem must make a DC 18 CON save, taking 54 (12d8) poison damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

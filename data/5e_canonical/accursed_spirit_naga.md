@@ -1,6 +1,8 @@
 <MonsterName/>Accursed Spirit Naga</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>16</AC>
+<HP/>85</HP>
 <summary>The Accursed Spirit Naga is a large and formidable monstrosity that thrives in both aquatic and terrestrial environments, possessing a challenge rating of 8. This creature boasts strong defensive capabilities, including a good armor class of 16 and significant hit points totaling 85, making it resilient in battle. Its strength, dexterity, constitution, intelligence, and charisma are all at a good level of 16, while its wisdom is slightly lower at 14, allowing it to perform well in combat and magical scenarios. The Accursed Spirit Naga is equipped with a variety of powerful attacks and spells, making it a versatile opponent on the battlefield. However, it has vulnerabilities because it can be affected by certain saving throw mechanics, especially for wisdom and constitution.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ As for reactions, the Naga can cast **Shield**, a first-level spell that grants 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Accursed Spirit Naga
 
 *Large* *Monstrosity*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Shield (1st-Level; V):** When the naga is hit by an attack or targeted by magic missile, it gains a +5 bonus to AC (including against the triggering attack) and immunity to magic missile. These benefits last until the beginning of its next turn.
 
 
+</statblock>
 
 

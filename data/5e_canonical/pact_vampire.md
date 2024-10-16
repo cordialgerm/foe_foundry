@@ -1,6 +1,8 @@
 <MonsterName/>Pact Vampire</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>15</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>178</HP>
 <summary>The Pact Vampire is a formidable Medium Undead creature with an evil alignment, known for its cunning and its ability to manipulate the battlefield through both brute force and magical abilities. With an armor class of 16, it is capable of absorbing a decent amount of damage, supported by a high health pool of 178 hit points, equivalent to 17d8 + 102. As a Challenge Rating 15 creature, it provides a significant challenge to adventurers, earning 13,000 experience points when defeated. The vampire excels with strong physical and magical attributes, featuring a Strength score of 22 (+6, exceptional) and a Charisma score of 20 (+5, very good). However, it does have weaknesses associated with sunlight and radiant damage, making it vulnerable in certain conditions.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Through its legendary actions, the Pact Vampire can maneuver without provoking o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pact Vampire
 
 *Medium* *Undead* *Any Evil Alignment*
@@ -67,5 +70,6 @@ The pact vampire can take 3 legendary actions, choosing from the options below. 
 - **Move:** The pact vampire moves up to its speed without provoking opportunity attacks.
 - **Call Blood (Costs 2 Actions):** The pact vampire uses Call Blood.
 - **Spread Poison (Costs 2 Actions):** The pact vampire’s blood briefly turns into a mist around it. Each creature within 15 feet of the vampire must succeed on a DC 18 Constitution saving throw or take 14 (4d6) poison damage and be poisoned until the end of its next turn.
+</statblock>
 
 

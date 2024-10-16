@@ -1,6 +1,8 @@
 <MonsterName/>Vampire Assassin</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>16</AC>
+<HP/>142</HP>
 <summary>The Vampire Assassin is a formidable Medium Undead creature known for its stealth and lethal combat capabilities. This creature combines immense strength, agility, and various supernatural abilities, making it a deadly opponent in any encounter. With a Challenge Rating of 12, it poses a significant threat to adventurers, capable of inflicting heavy damage while also employing clever tactics such as charm and deception. Its regeneration and ability to turn into mist provide it with excellent survivability, but it does have notable weaknesses, particularly to radiant damage and certain types of magical actions. Notably, the Vampire Assassin can charm opponents, making them easier targets for its attacks, creating a terrifying combination of control and damage potential on the battlefield.</summary>
 
 <detail>
@@ -49,6 +51,7 @@ The Vampire Assassin represents a frighteningly capable adversary, utilizing bot
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire Assassin
 
 *Medium* *Undead*
@@ -103,5 +106,6 @@ Source: 5e_artisinal_monsters
 - **Grab:** The vampire makes a grab attack.
 - **Mist Form:** The vampire transforms into a mist or back into its true form. As mist, the vampire has a flying speed of 30, can't speak, can't take actions or manipulate objects, is immune to nonmagical damage from weapons, and has advantage on saving throws and Stealth checks. It can pass through a space as narrow as 1 inch without squeezing but can't pass through water. Anything its carrying transforms with it.
 - **Shapechange:** The vampire transforms into the shape of a Medium or smaller beast or back into its true form. While transformed, it has the beasts size and movement modes. It can't use reactions or legendary actions, and can't speak. Otherwise, it uses the vampires statistics. Anything its carrying transforms with it.
+</statblock>
 
 

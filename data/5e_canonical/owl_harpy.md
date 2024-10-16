@@ -1,6 +1,8 @@
 <MonsterName/>Owl Harpy</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Owl Harpy is a medium monstrosity known for its deceptive charm and sinister abilities. As a neutral evil creature, it thrives on causing chaos and manipulating its prey, often ambushing unsuspecting adventurers. It possesses a combination of mobility and stealth, making it a formidable foe in battle. With a decent Armor Class of 14 and a robust pool of 112 hit points, it is resilient but still vulnerable to thunder damage. The harpy excels in Dexterity, giving it an exceptional ability to evade attacks and remain undetected while flying. Its notable magical abilities, including the ability to incapacitate foes with its Sleeping Song and create zones of impenetrable darkness, give it significant control over the battlefield. These strengths are somewhat balanced by its lower Constitution and Intelligence, making it susceptible to certain strategies.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, the Owl Harpy can utilize its Hovering Darkness ability three time
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Owl Harpy
 
 *Medium* *monstrosity* *neutral evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Talon:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.
 - **Sleeping Song:** The owl harpy sings a magical melody. Every Humanoid and Giant within 300 feet of the harpy that can hear the song must succeed on a DC 15 Wisdom saving throw or fall unconscious until the song ends. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated. An unconscious target wakes if it takes damage or if another creature uses an action to wake it. A target that successfully saves is immune to this harpy’s song for the next 24 hours.
 - **Hovering Darkness (3/Day):** While flying, the owl harpy shakes a fine, magical dander from her wings, and a 15-foot radius of magical darkness extends out from her, moves with her, and spreads around corners. The darkness lasts as long as the owl harpy flies and maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can’t penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.
+</statblock>
 
 

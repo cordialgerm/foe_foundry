@@ -1,6 +1,8 @@
 <MonsterName/>Goblin Boss</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>16</AC>
+<HP/>24</HP>
 <summary>The Goblin Boss is a small humanoid creature that serves as a leader among goblins. It has an Armor Class of 16 and 24 hit points, making it moderately resilient for its challenge rating of 1, which grants it 200 experience points when defeated. Its strengths lie in its mobility and ability to command lesser goblins, making it a strategic threat during encounters. It possesses good Dexterity and decent combat skills, allowing it to be effective in both melee and ranged situations. However, its Constitution score is average, which may limit its ability to endure extended combat. Overall, the Goblin Boss is a cunning adversary that can capitalize on its agility and minion support to overwhelm opponents.</summary>
 
 <detail>
@@ -30,6 +32,7 @@ The Goblin Boss can also use its bonus action:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Boss
 
 *Small* *Humanoid*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Escape:** The goblin takes the Disengage or Hide action.
 
 
+</statblock>
 
 

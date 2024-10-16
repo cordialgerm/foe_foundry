@@ -1,6 +1,8 @@
 <MonsterName/>Hawk</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>13</AC>
+<HP/>1</HP>
 <summary>A Hawk is a small, agile bird of prey known for its keen eyesight and swift flight. These creatures are commonly found in forests, plains, and mountains, where they hunt small animals such as mice or birds. Hawks are highly intelligent and can be trained as hunting companions by skilled handlers. They use their sharp talons and beaks to capture prey, diving from great heights with incredible speed. Though not dangerous to larger creatures, Hawks are effective hunters in their natural environment and are often admired for their grace and precision.</summary>
 
 <summary>The Hawk is a tiny beast that serves as a nimble creature with remarkable senses, making it excellent for scouting and reconnaissance. With an Armor Class of 13, it is relatively difficult to hit, but it only has 1 Hit Point, making it very vulnerable to any damage. It can cover ground quickly with a walking speed of 10 feet and an impressive flying speed of 60 feet, allowing it to escape from danger easily. The creature has a low Challenge Rating of 0, which means it poses little threat to adventurers but can be useful in specific scenarios, such as serving as a familiar or a scout. Its Strength is very weak, while its Dexterity is good, enabling it to dodge attacks effectively.</summary>
@@ -31,6 +33,7 @@ The hawk can also perform a bonus action called "Evasive Flight," which enables 
 
 Source: 5e_srd
 
+<statblock>
 ### Hawk
 
 *Tiny beast, unaligned*
@@ -57,7 +60,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Talons***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.
+***Talons***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage.</statblock>
+
 
 
 
@@ -65,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hawk
 
 *Tiny* *Beast*
@@ -92,6 +97,7 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage.
 
 
+</statblock>
 
 
 
@@ -100,6 +106,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hawk
 
 *Tiny beast*
@@ -131,5 +138,6 @@ Source: 5e_artisinal_monsters
 
 - **Evasive Flight.** The hawk takes the Disengage or Dodge action. It can use this bonus action only while flying.
 
+</statblock>
 
 

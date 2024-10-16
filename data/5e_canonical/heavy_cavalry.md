@@ -1,6 +1,8 @@
 <MonsterName/>Heavy Cavalry</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>19</AC>
+<HP/>75</HP>
 <summary>The Heavy Cavalry is a formidable Medium Humanoid that embodies the disciplined and relentless nature of lawful neutral warriors. With a robust Armor Class of 19 thanks to splint armor and a shield, this creature is well-protected in combat. It possesses a solid pool of 75 hit points, derived from 10d8 + 30, allowing it to sustain considerable damage before falling. The Heavy Cavalry has a walking speed of 30 feet and presents a challenge rating of 2, making it accessible for parties seeking moderate threats. Notably, it excels in both offensive and defensive aspects with a combination of melee and ranged attacks, as well as special abilities that enhance its mobility and combat effectiveness.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Heavy Cavalry can use its Lance for a melee weapon attack, rollin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Heavy Cavalry
 
 *Medium* *Humanoid* *lawful neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharges after a Short or Long Rest):** The dragonborn breathes fire in a 15-foot cone. All creatures in that area must make a DC 13 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

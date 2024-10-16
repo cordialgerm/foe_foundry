@@ -1,6 +1,8 @@
 <MonsterName/>Devilbound Gnome</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (Infernal Blessing)</AC>
+<HP/>104</HP>
 <summary>The Devilbound Gnome is a cunning and powerful small humanoid creature that embodies the characteristics of both gnome ingenuity and fiendish malice. This creature operates on the darker edges of morality, leveraging its intellect and magical abilities to manipulate and control both allies and enemies. With a high Armor Class of 17 aided by its unique ability called Infernal Blessing, the gnome becomes a surprisingly resilient opponent. It possesses 104 hit points, making it durable in battle, and its Challenge Rating of 9 indicates a formidable foe that can provide significant challenges. The Devilbound Gnome excels in magical combat, making it particularly dangerous due to its ability to summon devils, inflict potent fire and poison damage, and manipulate others through its spells and abilities. Its strengths lie in its impressive Charisma and spellcasting prowess, while its weaknesses include lower physical strength and vulnerability to silvered weapons.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of reactions, the Fiendish Sacrifice ability allows the Devilbound Gnom
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devilbound Gnome
 
 *Small* *Humanoid* *Any Evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Fiendish Sacrifice:** When the devilbound gnome is reduced to 0 hp, it can sacrifice a Fiend called with the Hell’s Servitor’s action or sacrifice its bonded imp, preventing the damage and killing the chosen Fiend. If the gnome sacrifices its bonded imp, it loses its Infernal Blessing and Infernal Bond traits until it receives a new imp from its patron devil.
+</statblock>
 
 

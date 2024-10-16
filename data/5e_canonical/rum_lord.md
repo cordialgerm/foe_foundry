@@ -1,6 +1,8 @@
 <MonsterName/>Rum Lord</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>15</AC>
+<HP/>78</HP>
 <summary>The Rum Lord is a small fey creature embodying chaotic evil, known for its ability to manipulate and debilitate foes through its intoxicating powers. With a high Armor Class of 15 and a considerable pool of 78 hit points, it presents a decent challenge. Its strengths lie in its Aura of Drunkenness that can incapacitate enemies, along with its magical resilience, making it tricky for spellcasters to affect. However, its low Wisdom score of 9 indicates that it may struggle against effects that target that attribute. The Rum Lord excels at close combat, with effective melee attacks and additional poison damage, marking it as a dangerous opponent in melee situations.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For its actions, the Rum Lord can perform a Multiattack, making two attacks in o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rum Lord
 
 *Small* *Fey* *chaotic evil*
@@ -55,5 +58,6 @@ At will: prestidigitation
 - **Bring Me Another Round! (1/Day):** The rum lord lets out a thunderous belch, calling 1d4 rum gremlins. The called rum gremlins arrive in 1d4 rounds, acting as allies of the lord and obeying its spoken commands. The rum gremlins remain for 1 hour, until the lord dies, or until the lord dismisses them as a bonus action.
 
 
+</statblock>
 
 

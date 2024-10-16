@@ -1,6 +1,8 @@
 <MonsterName/>Nkosi</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (studded leather in Humanoid form)</AC>
+<HP/>27</HP>
 <summary>The Nkosi is a Medium humanoid shapechanger, distinguished for its ability to transform into a large lion, making it a versatile threat in combat and exploration. With a Challenge Rating of 1/2, it provides a moderate challenge for lower-level adventurers, granting them a strategic opportunity to engage with its unique abilities. The Nkosi has solid physical attributes, particularly high dexterity and strength, which support its effectiveness in melee confrontations. While it boasts a decent armor class and moderate hit points, its low charisma can limit its interactions outside of combat scenarios. Notably, the Nkosi's keen sense of smell enhances its perceptive abilities, allowing it to excel in tracking and survival situations.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Nkosi possesses the Change Shape ability, allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nkosi
 
 *Medium* *Humanoid* *Shapechanger)*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The nkosi transforms into a Large lion or back into its true form, which is Humanoid. Its statistics, other than its size, speed, and AC, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
+</statblock>
 
 

@@ -1,6 +1,11 @@
 <MonsterName/>Weretiger (Lycanthrope)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>human</Subtype>
+<Subtype/>lycanthrope</Subtype>
+<Subtype/>shapechanger</Subtype>
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>120</HP>
 <summary>A Weretiger is a humanoid cursed with the ability to transform into a tiger or a tiger-like hybrid form. Weretigers are known for their grace, speed, and deadly precision in combat. They are often loners, preferring to live in remote jungles or forests where they can hunt in peace. In their tiger form, Weretigers are powerful predators with sharp claws, fangs, and the ability to move silently through their environment. They are immune to most non-silvered weapons and can transmit lycanthropy through their bite. Despite their solitary nature, they are fierce protectors of their territory.</summary>
 
 <summary>The Weretiger is a medium humanoid lycanthrope known for its ability to shift between its human form, a tiger-humanoid hybrid, and a large tiger. This creature presents a moderate challenge in combat with a balanced combination of strength, dexterity, and constitution, making it quite capable in physical confrontations. Its challenge rating of 2 indicates that it can be a formidable opponent for lower-level parties. Notably, the Weretiger is immune to damage from nonmagical and non-silvered weapons, allowing it to withstand typical attacks unless the attackers are prepared. However, it is vulnerable to wolfsbane, which can poison it while in its hybrid or beast forms, providing a tactical opportunity for characters who know how to exploit this weakness.</summary>
@@ -31,6 +36,7 @@ Bonus actions include "Bleed Prey," which allows the Weretiger to designate a ta
 
 Source: 5e_srd
 
+<statblock>
 ### Weretiger (Lycanthrope)
 
 *Medium humanoid (human, shapechanger), neutral*
@@ -71,7 +77,8 @@ Source: 5e_srd
 
 ***Scimitar (Humanoid or Hybrid Form Only)***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6+3) slashing damage.
 
-***Longbow (Humanoid or Hybrid Form Only)***. *Ranged Weapon Attack:* +4 to hit, range 150/600 ft., one target. *Hit:* 6 (1d8+2) piercing damage.
+***Longbow (Humanoid or Hybrid Form Only)***. *Ranged Weapon Attack:* +4 to hit, range 150/600 ft., one target. *Hit:* 6 (1d8+2) piercing damage.</statblock>
+
 
 
 
@@ -79,6 +86,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Weretiger
 
 *Medium* *Humanoid*
@@ -118,6 +126,7 @@ Source: 5e_artisinal_monsters
 - **Frenzied Bite (While Bloodied:** The weretiger makes a bite attack.
 
 
+</statblock>
 
 
 
@@ -126,6 +135,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Weretiger
 
 *Medium humanoid (lycanthrope)*
@@ -163,5 +173,6 @@ Source: 5e_artisinal_monsters
 - **Bleed Prey.** The weretiger chooses a creature it can see within 30 feet of it to be its prey until the prey dies, until the weretiger dies, or until the weretiger uses this bonus action on another creature. While within 60 feet of its prey, the weretiger can pinpoint its prey’s location. In addition, if the weretiger hits the prey with at least two melee weapon attacks, the weretiger rends the prey’s flesh, and the prey must succeed on a DC 13 CON save or lose 7 (2d6) HP at the start of its next turn, as the wound bleeds excessively.
 - **Change Shape.** The weretiger transforms into a Large tiger, a Medium tiger-humanoid hybrid, or back into its true form, which is Humanoid. Its statistics, other than its size and speed, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
 
+</statblock>
 
 

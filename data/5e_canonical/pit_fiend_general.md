@@ -1,6 +1,8 @@
 <MonsterName/>Pit Fiend General</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>20</CR>
+<AC/>19</AC>
+<HP/>600</HP>
 <summary>The Pit Fiend General is a formidable foe in the Dungeons & Dragons universe, classified as a Huge Fiend with an impressive challenge rating of 20. This creature possesses high armor class and massive hit points, making it extremely durable in battle. Its strengths lie in its powerful melee attacks, devastating magical abilities, and a fear-inducing aura that can incapacitate adversaries before combat even begins. However, despite its immense power, the Pit Fiend can be vulnerable to specific conditions, particularly those that can capitalize on its lower dexterity and intelligence when compared with its other formidable attributes. Its innate spellcasting capabilities enhance its versatility in combat, allowing it to inflict significant damage while also controlling the battlefield.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Overall, the Pit Fiend General is a compelling adversary characterized by its si
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pit Fiend General
 
 *Huge* *Fiend*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 8) bludgeoning damage.
 
 
+</statblock>
 
 

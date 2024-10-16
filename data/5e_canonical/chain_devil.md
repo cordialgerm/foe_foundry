@@ -1,6 +1,9 @@
 <MonsterName/>Chain Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>devil</Subtype>
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>85</HP>
 <summary>A Chain Devil, or Kyton, is a terrifying fiend from the Nine Hells, draped in chains that writhe and lash as if alive. These chains are covered in wicked barbs and hooks, and the devil controls them with eerie precision, using them to bind, strangle, or tear apart its foes. Chain Devils are cruel torturers, delighting in the pain and fear of their victims. Their bodies are humanoid, but their faces are often obscured by iron masks or twisted expressions of agony. These fiends serve higher devils, acting as jailers or enforcers, and can create nightmarish illusions to manipulate and torment their enemies.</summary>
 
 <summary>The Chain Devil is a medium fiend that operates within the realm of lawful evil. It is known for its formidable presence in combat, showcasing a combination of physical prowess and magical resistance. With an armor class of 17 and a substantial amount of hit points at 127, this creature is challenging for adventurers to defeat. Its key strengths lie in its high strength and constitution scores, making it both a potent attacker and a resilient foe. This creature's ability to manipulate chains gives it both offensive and defensive capabilities, allowing it to grapple and restrain unsuspecting targets. Additionally, its advantages against magical effects and its unique racial traits make it a dangerous adversary. However, Chain Devils are not invulnerable; their reliance on physical confrontations can be a weakness if faced with ranged or magical combatants who can evade close-quarter grappling.</summary>
@@ -37,6 +40,7 @@ For reactions, the Chain Devil can utilize its Unnerving Mask ability. When a cr
 
 Source: 5e_srd
 
+<statblock>
 ### Chain Devil
 
 *Medium fiend (devil), lawful evil*
@@ -81,7 +85,8 @@ Each animated chain is an object with AC 20, 20 hit points, resistance to pierci
 
 ###### Reactions
 
-***Unnerving Mask***. When a creature the devil can see starts its turn within 30 feet of the devil, the devil can create the illusion that it looks like one of the creature's departed loved ones or bitter enemies. If the creature can see the devil, it must succeed on a DC 14 Wisdom saving throw or be frightened until the end of its turn.
+***Unnerving Mask***. When a creature the devil can see starts its turn within 30 feet of the devil, the devil can create the illusion that it looks like one of the creature's departed loved ones or bitter enemies. If the creature can see the devil, it must succeed on a DC 14 Wisdom saving throw or be frightened until the end of its turn.</statblock>
+
 
 
 
@@ -89,6 +94,7 @@ Each animated chain is an object with AC 20, 20 hit points, resistance to pierci
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chain Devil
 
 *Medium* *Fiend*
@@ -133,6 +139,7 @@ Source: 5e_artisinal_monsters
 - **Unnerving Mask:** When damaged by a creature within 30 feet that can see the devil, the devil momentarily assumes the magical illusory form of one of the attackers enemies or loved ones, alive or dead. The illusory figure may speak words that only the attacker can hear. The attacker makes a DC 15 Wisdom saving throw. On a failure, it takes 9 (2d8) psychic damage and is frightened until the end of its next turn.The attacker is then immune to this effect for the next 24 hours.
 
 
+</statblock>
 
 
 
@@ -141,6 +148,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chain Devil
 
 *Medium fiend (devil)*
@@ -179,5 +187,6 @@ Source: 5e_artisinal_monsters
 
 - **Unnerving Mask.** When a creature the devil can see starts its turn within 30 feet of the devil, the devil can command its mask to shift to look like one of the creature’s departed loved ones or bitter enemies. If the creature can see the mask, it must succeed on a DC 15 WIS save or be frightened until the end of its turn.
 
+</statblock>
 
 

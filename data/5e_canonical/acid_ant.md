@@ -1,6 +1,8 @@
 <MonsterName/>Acid Ant</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>13</HP>
 <summary>The Acid Ant is a small monstrosity characterized by its unique acid-based attacks and explosive demise. This creature operates independently and has a Challenge Rating of 1/4, making it a minor threat for low-level adventurers. With a natural armor class of 13, it possesses decent defenses, but its low hit points, totaling only 13, leave it vulnerable in combat. Its notable strengths include immunity to acid damage and a keen sense of smell, giving it an advantage in perception checks. However, it has weaknesses such as very low intelligence and charisma scores, making it poorly suited for tasks that require high social interactions or complex strategies.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Acid Ant serves as a minor but hazardous foe in combat scenarios, c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Acid Ant
 
 *Small* *Monstrosity* *unaligned*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 2 (1d4) acid damage.
 
 
+</statblock>
 
 

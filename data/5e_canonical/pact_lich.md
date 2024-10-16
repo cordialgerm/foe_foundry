@@ -1,6 +1,8 @@
 <MonsterName/>Pact Lich</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>15</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>195</HP>
 <summary>The Pact Lich is a formidable Medium Undead creature known for its cunning nature and powerful spellcasting capabilities. With an Armor Class of 17 and a substantial pool of 195 hit points, it is well-equipped to withstand significant amounts of damage in combat. The Pact Lich has a Challenge Rating of 15, indicating that it poses a serious threat to adventurers, offering 13,000 experience points for vanquishing it. Its offensive capabilities are enhanced by its ability to make multiple attacks, as well as its unique spells and abilities, allowing it to control the battlefield and inflict psychological torment on its foes. However, it has inherent vulnerabilities, particularly to radiant damage, and can be temporarily hindered by the presence of effects that impede spellcasting or disrupt its shadowy abilities. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Pact Lich can also utilize legendary actions, such as casting an at-will spe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pact Lich
 
 *Medium* *Undead* *any evil alignment*
@@ -68,5 +71,6 @@ The pact lich can take 3 legendary actions, choosing from the options below. Onl
 - **Fiendish Resilience:** The pact lich chooses one damage type, gaining resistance to that damage type until it chooses a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance.
 - **Maddening Touch (Costs 2 Actions):** The pact lich uses its Maddening Touch.
 - **Eldritch Master (Costs 3 Actions, 1/Day):** The lich entreats its patron for aid, regaining all expended spells.
+</statblock>
 
 

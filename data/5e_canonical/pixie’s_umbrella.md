@@ -1,6 +1,8 @@
 <MonsterName/>Pixie’s Umbrella</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>7</AC>
+<HP/>10</HP>
 <summary>The Pixie’s Umbrella is a small and peculiar plant creature that occupies an unaligned role in Dungeons & Dragons. With its very low armor class of 7 and hit points totaling just 10, it has limited durability in combat. It boasts a Challenge Rating of 1/8, indicating that it is a very weak opponent, primarily providing minimal experience points (25 XP) when defeated. In terms of attributes, the Pixie’s Umbrella has a mix of very low scores: its strength (1) and intelligence (1) are exceptionally poor, while it possesses slightly higher constitution (10) but still falls short in dexterity (5), wisdom (5), and charisma (1). Its strengths lie in its ability to blend into its environment with the False Appearance trait and its capacity to defend itself with poison damage through its actions. However, its weaknesses make it vulnerable in direct confrontations.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, its Float reaction enables the Pixie’s Umbrella to evade danger.
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pixie’s Umbrella
 
 *Small* *Plant* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Float:** When a pixie’s umbrella senses motion within 30 feet of it, it fills its cap with air and flies 20 feet away from the motion without provoking opportunity attacks.
 
 
+</statblock>
 
 

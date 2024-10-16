@@ -1,6 +1,8 @@
 <MonsterName/>Bone Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Bone Golem is a medium-sized construct that embodies a formidable presence on the battlefield. With an armor class of 16 and a total of 60 hit points, it serves as a durable adversary for adventurers. The golem's challenge rating of 7 indicates that it poses a significant threat, making it suitable for encounters designed for mid-tier parties. Its strengths lie in its damage immunities to necrotic, poison, and psychic attacks, as well as resistances against nonmagical bludgeoning, piercing, and slashing damage, unless the attack is made with adamantine. However, the Bone Golem has very poor intelligence and charisma, which limits its interactions beyond combat. Notably, it possesses several special abilities that can turn the tide in battle, such as the potential to go berserk when critically injured.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Bone Golem can execute various actions. It has a Multiattack abil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Golem
 
 *Medium* *Construct* *unaligned*
@@ -60,5 +63,6 @@ The golem's creator, if within 60 feet of the berserk golem, can calm it by spea
 - **Bone Shard:** Ranged Weapon Attack: +6 to hit, range 60/240 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) necrotic damage.
 
 
+</statblock>
 
 

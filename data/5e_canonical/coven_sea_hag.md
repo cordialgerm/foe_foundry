@@ -1,6 +1,8 @@
 <MonsterName/>Coven Sea Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>75</HP>
 <summary>The Coven Sea Hag is a Medium fey creature that presents a formidable blend of magical prowess, combat efficacy, and cunning. It holds a Challenge Rating of 4, making it a moderately challenging opponent for adventurers. With a solid Armor Class of 14 and an impressive pool of 75 hit points, the Coven Sea Hag can hold its own in combat. It is noteworthy for its amphibious nature, allowing it to navigate both air and water with ease. The hag's strengths lie in its ability to inflict curses and wield powerful spells that can manipulate the environment and affect the minds of those who oppose it. Though robust in its approach to battle, it is not without weaknesses, as its reliance on spellcasting means it can be disrupted by foes who can silence or incapacitate its magic. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, as a bonus action, the Coven Sea Hag can invoke Horrific Transform
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Coven Sea Hag
 
 *Medium* *Fey*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Horrific Transformation:** The hag briefly takes on a terrifying form or reveals its true form. Each creature within 30 feet that can see the hag makes a DC 11 Wisdom saving throw. A creature under the hags curse automatically fails this saving throw. On a failure, the creature is frightened until the end of its next turn. If a creatures saving throw is successful, it is immune to the hags Horrific Transformation for 24 hours.
 
 
+</statblock>
 
 

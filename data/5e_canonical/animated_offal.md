@@ -1,6 +1,8 @@
 <MonsterName/>Animated Offal</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>9</CR>
+<AC/>8</AC>
+<HP/>207</HP>
 <summary>The Animated Offal is a massive, unaligned ooze creature that poses a significant threat on the battlefield. With its huge size and formidable hit points totaling 207, it is a resilient foe that can effectively absorb damage while mitigating attacks through its substantial bonuses and immunities. The Animated Offal's strength lies in its unique abilities, such as the capacity to regenerate health by consuming others and to absorb magical healing effects. While its intelligence is exceptionally low, this creature makes up for it with a solid constitution and the ability to grapple opponents, inflicting both bludgeoning and necrotic damage. However, it is hampered by a very low Armor Class of 8, making it susceptible to attacks if opponents can reach it. </summary>
 
 <detail>
@@ -35,6 +37,7 @@ Overall, the Animated Offal is a formidable adversary with the potential to turn
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animated Offal
 
 *Huge* *Ooze* *unaligned*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Subsume:** Begins absorbing one creature it is grappling. Creature takes 18 (4d8) necrotic (DC 17 Con half). Offal regains hp equal to half the damage dealt. If offal is at its hp max it gains temp hp for 1 hr instead. Offal can add temp hp gained from this trait to temp hp gained earlier from this trait. Temporary hp can’t exceed 48. If its temp hp would exceed 48 a new animated offal appears in an unoccupied space within 5 ft. of offal. The new Ooze is Small doesn’t have this bonus action and has 10 hp. Creature killed by this bonus action is fully subsumed into offal and can be restored to life only by means of a resurrection spell or similar magic.
 
 
+</statblock>
 
 

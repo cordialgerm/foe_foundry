@@ -1,6 +1,8 @@
 <MonsterName/>Kallikantzaros</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (hide armor)</AC>
+<HP/>59</HP>
 <summary>The Kallikantzaros is a small, chaotic evil fey creature known for its cunning and mischievous nature. It thrives in shadowy environments and possesses a unique blend of agility and stealth, making it a dangerous adversary for adventurers. With a Challenge Rating of 2, it presents a moderate threat, especially when its abilities are used effectively in combat. However, while it has decent hit points (59) and solid melee capabilities, its low Constitution and intelligence scores indicate that it might struggle against more strategic foes. Notably, its Fey Ancestry grants it resistance against charm effects, adding to its survivability against magical threats. That said, it is vulnerable to the disruptive effects of incense and burning materials, which can hinder its performance significantly.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the Kallikantzaros is a crafty foe that relies on ambush tactics and sw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kallikantzaros
 
 *Small* *Fey* *chaotic evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Misery Whip:** Two kallikantzaros can combine their actions to move up to their speed with a 5-foot, two-person saw held between them and attack a single creature in their path. The target must succeed on a DC 13 Dexterity saving throw or take 9 (2d6 + 2) slashing damage. If the creature is Large or smaller, it must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is knocked prone, each kallikantzaros may make a handsaw attack against it as a bonus action.
 
 
+</statblock>
 
 

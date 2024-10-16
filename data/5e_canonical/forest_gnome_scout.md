@@ -1,6 +1,8 @@
 <MonsterName/>Forest Gnome Scout</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>19</HP>
 <summary>The Forest Gnome Scout is a medium humanoid creature that serves as a stealthy and agile combatant within the terrain of forests. With a Challenge Rating of 1/2, it poses a moderate threat, particularly to unprepared adventurers. Its strengths lie in its dexterity, which allows for effective stealth and ranged attacks, as well as its keen sensory abilities. However, its overall hit points are relatively low for a combatant, making it somewhat fragile in a direct confrontation. The Forest Gnome Scout excels in environments that suit its abilities, allowing for tactical advantages through surprise attacks, but is less effective in open combat where it cannot utilize its stealth and ranged capabilities as fully.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For its actions, the Forest Gnome Scout wields a shortsword, making a melee weap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forest Gnome Scout
 
 *Medium* *Humanoid*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Longbow:** Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
 
 
+</statblock>
 
 

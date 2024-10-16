@@ -1,6 +1,8 @@
 <MonsterName/>Water Leaper</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>97</HP>
 <summary>The Water Leaper is a formidable Large monstrosity that resides in aquatic environments. With a Challenge Rating of 4, it presents a significant threat to adventurers venturing into its territory, delivering strong melee attacks and possessing abilities that enhance its stealth and survival underwater. Its notable features include the ability to grapple and restrain foes with its Bite attack, along with a potent Stinger attack that can inflict poison damage over time. While it has decent hit points and a good Armor Class, its weaknesses lie in its low Intelligence and Charisma. This creature excels at ambush tactics and is a formidable adversary in watery combat scenarios, making it both a challenging opponent and an interesting addition to any campaign.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ The Water Leaper also has a Swallow ability, which can be initiated against a Me
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Water Leaper
 
 *Large* *Monstrosity* *Unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the water leaper can’t Bite another target.
 - **Stinger:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the creature takes 5 (2d4) poison damage at the start of each of its turns. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Swallow:** The water leaper makes a Bite attack against a Medium or smaller creature it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the water leaper, and it takes 7 (2d6) acid damage at the start of each of the water leaper’s turns. The water leaper can have only one creature swallowed at a time.
+</statblock>
 
 

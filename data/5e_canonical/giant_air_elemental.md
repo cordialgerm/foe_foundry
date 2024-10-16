@@ -1,6 +1,8 @@
 <MonsterName/>Giant Air Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>9</CR>
+<AC/>14</AC>
+<HP/>127</HP>
 <summary>The Giant Air Elemental is a formidable force in combat, embodying the power of wind and air. As a Huge elemental creature, it stands out with its significant size and impressive flight capabilities. With an Armor Class of 14 and a considerable pool of Hit Points amounting to 127, which is calculated as 15d12 plus an additional 30, this creature can absorb quite a bit of damage thanks to its abilities. It is rated with a Challenge Rating of 9, indicating a strong level of threat, and offers 5,000 experience points upon defeat. The Giant Air Elemental excels in mobility with a flying speed of 90 feet, enabling it to maneuver quickly around the battlefield. Its damage immunities include poison, while it resists damage from lightning, thunder, and nonmagical weapons, making it a durable opponent. However, its low Strength and Intelligence make it somewhat vulnerable to attacks that exploit these weaknesses.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, it can unleash a powerful "Whirlwind" attack, which requires a rec
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Air Elemental
 
 *Huge* *Elemental*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Whirlwind (Recharge 5-6):** The elemental takes the form of a whirlwind  flies up to half of its fly speed without provoking opportunity attacks  and then resumes its normal form. When a creature shares its space with the whirlwind for the first time during this movement  that creature makes a DC 15 Strength saving throw. On a failure  the creature is carried inside the elementals space until the whirlwind ends  taking 3 (1d6) bludgeoning damage for each 10 feet it is carried  and falls prone at the end of the movement. The whirlwind can carry one Large creature or up to four Medium or smaller creatures.
 
 
+</statblock>
 
 

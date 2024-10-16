@@ -1,6 +1,8 @@
 <MonsterName/>Aridni</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>82</HP>
 <summary>The Aridni is a small, neutral evil fey creature known for its agility and cunning. With a Challenge Rating of 5, it poses a moderate threat to adventurers, primarily through its fast movement and spellcasting capabilities. Its high Dexterity allows it to excel in stealth and acrobatics, making it exceptionally agile in combat. The Aridni has both offensive and defensive abilities, including the ability to avoid opportunity attacks when flying and a strong resistance to magical effects. However, its physical strength is quite low, making it vulnerable in close melee situations against stronger foes. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ As a bonus action, the Aridni can use Enchanted Arrows to empower its Pixie Bow 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aridni
 
 *Small* *Fey* *Neutral Evil*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Fear:** The target is frightened until the end of its next turn and must spend its next turn moving away from the aridni by the safest available route.
 - **Laughter:** The target falls prone and is incapacitated with laughter until the end of its next turn.
 - **Sleep:** The target falls unconscious for 1 minute. It wakes up if it takes damage or if another creature takes an action to shake it awake.<br><br><br><br><br>Aridni in Midgard
+</statblock>
 
 

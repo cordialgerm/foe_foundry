@@ -1,6 +1,8 @@
 <MonsterName/>Crab</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>2</HP>
 <summary>A Crab is a small, hard-shelled creature that scuttles sideways along beaches and shallow waters. It has two large pincers, which it uses to defend itself or to crack open shells and catch prey. Crabs are not inherently aggressive but will snap at anything that comes too close. They are often found in coastal regions, hiding under rocks or burrowing into the sand. Though not a significant threat, they can be a nuisance in large numbers or when disturbed in their natural habitat.</summary>
 
 <summary>The Crab is a tiny beast that resides in aquatic environments, possessing the capability to function both on land and underwater. It has a low challenge rating of 0, making it a non-threatening creature in the game world. While it has limited combat abilities and low hit points, it can offer a unique element in certain encounters due to its amphibious nature, allowing it to traverse land and water with ease. The Crab's physical attributes are quite poor, particularly its strength and intelligence, making it vulnerable in combat situations. However, it can still create minor challenges for inexperienced characters.</summary>
@@ -29,6 +31,7 @@ In terms of actions, the Crab has a melee weapon attack called Claw. It has a +2
 
 Source: 5e_srd
 
+<statblock>
 ### Crab
 
 *Tiny beast, unaligned*
@@ -55,7 +58,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Claw***. *Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 bludgeoning damage.
+***Claw***. *Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 bludgeoning damage.</statblock>
+
 
 
 
@@ -63,6 +67,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crab
 
 *Tiny* *Beast*
@@ -90,6 +95,7 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage. If this damage would reduce a Small or larger target to 0 hit points  the target takes no damage from this attack.
 
 
+</statblock>
 
 
 
@@ -98,6 +104,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crab
 
 *Tiny beast*
@@ -125,5 +132,6 @@ Source: 5e_artisinal_monsters
 
 - **Claw.** Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 2 (1d4) bludgeoning damage, and the crab attaches to the target. While attached, the crab can’t attack, and at the start of each of the crab’s turns, the target takes 2 (1d4) bludgeoning damage. The attached crab moves with the target whenever the target moves, requiring none of the crab’s movement. It can detach itself by spending 5 feet of its movement on its turn. A creature, including the target, can use its action to detach the crab.
 
+</statblock>
 
 

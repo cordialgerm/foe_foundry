@@ -1,6 +1,8 @@
 <MonsterName/>Cobbleswarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>36</HP>
 <summary>The Cobbleswarm is a mysterious and formidable Medium-sized swarm creature that embodies the essence of a group of animated stones. With a Challenge Rating of 2, it presents a significant threat to adventurers due to its unique abilities and resistances. The Cobbleswarm excels in ambush tactics, capitalizing on its capability to remain motionless and resemble normal stones until it is ready to strike. It possesses notable damage resistances, allowing it to absorb attacks without sustaining significant harm. While its attributes are generally average, with Health Points totaling 36, it can effectively disrupt enemy positioning and impose the prone condition on foes, making it a strategic asset in combat. However, it lacks intelligence and magical abilities, which limits its tactical versatility and reliance on brute swarm tactics.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the Cobbleswarm can utilize a bonus action called Shift and Tumble
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cobbleswarm
 
 *Medium* *Swarm* *Beast* *Unaligned*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shift and Tumble:** The cobbleswarm pushes a prone creature in its space up to 5 feet away from it.
+</statblock>
 
 

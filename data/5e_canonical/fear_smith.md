@@ -1,6 +1,8 @@
 <MonsterName/>Fear Smith</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>149</HP>
 <summary>The Fear Smith is a medium fey creature known for its chaotic neutral nature. It possesses a good balance of defensive capabilities with a high Armor Class of 17 and a substantial pool of Hit Points totaling 149, granting it decent survivability in combat. With a Challenge Rating of 10, it poses a significant threat to adventurers, earning it 5,900 experience points upon defeat. Notably, the Fear Smith excels in manipulating the fears of its opponents through its unique abilities and spells, making it a formidable foe. It has exceptional Charisma, allowing it to excel in Intimidation and stealth tactics, while it is notably weaker in physical strength and intelligence.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Regarding spellcasting, the Fear Smith can cast certain spells without requiring
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fear Smith
 
 *Medium* *Fey* *Chaotic Neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage plus 9 (2d8) psychic damage. If the target is disoriented by Distortion Gaze, the fear smith regains hp equal to the amount of psychic damage dealt.
 - **Heart-Stopping Stare:** The fear smith terrifies a creature within 30 feet of it with a look. The target must succeed on a DC 16 Wisdom saving throw or take 13 (3d8) psychic damage and be stunned until the end of its next turn. The fear smith regains hp equal to the psychic damage dealt.
 - **Spellcasting:** The fear smith casts one of the following spells, requiring no verbal or material components and using Charisma as the spellcasting ability (spell save DC 16):<br>At will: detect thoughts, fear<br>2/day each: charm person, command
+</statblock>
 
 

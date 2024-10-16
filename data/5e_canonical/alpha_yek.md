@@ -1,6 +1,8 @@
 <MonsterName/>Alpha Yek</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>129</HP>
 <summary>The Alpha Yek is a medium-sized fiend characterized by its chaotic evil nature. This creature plays a role as a formidable combatant within a group, capitalizing on its special abilities to enhance its effectiveness in battle. The Alpha Yek boasts a solid Armor Class of 16, coupled with 129 hit points, making it quite durable in confrontations. Provided with exceptional mobility, it can climb and walk at a speed of 30 feet, allowing it to maneuver adeptly in various terrains. Its Challenge Rating of 9 indicates that it poses a significant threat to adventurers, able to dish out damage while resisting many common attack types. On the downside, while it has good physical attributes and resistance against many damage types, the Alpha Yek can be vulnerable to magical effects if it fails its saving throws.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Alpha Yek presents a robust package of capabilities in physical att
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alpha Yek
 
 *Medium* *Fiend* *chaotic evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Bone Shard:** Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 8 (2d4 + 3) piercing damage and the target must make a DC 17 Constitution saving throw. On a failure, a piece of the bone breaks and sticks in the target's wound. The target takes 5 (2d4) piercing damage at the start of each of its turns as long as the bone remains lodged in its wound. A creature, including the target, can take its action to remove the bone by succeeding on a DC 15 Wisdom (Medicine) check. The bone also falls out of the wound if the target receives magical healing <br><br>A yek typically carries 3 (1d6) bone shards, which are destroyed on a successful hit. It can use its action to tear a bone shard from a corpse within 5 feet. Derro
 
 
+</statblock>
 
 

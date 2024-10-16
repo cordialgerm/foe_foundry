@@ -1,6 +1,8 @@
 <MonsterName/>Nullicorn</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>12</AC>
+<HP/>105</HP>
 <summary>The Nullicorn is a Large aberration that embodies chaotic evil and serves as a formidable adversary in combat scenarios. With an Armor Class of 12 and a substantial pool of Hit Points totaling 105, it can withstand considerable damage while dishing out its own through powerful melee and magical attacks. The creature's Challenge Rating of 5 indicates it is an appropriate challenge for mid-level adventurers. Key strengths include its high Strength and Wisdom, providing strong melee capabilities and perceptive awareness on the battlefield. The Nullicorn is particularly notable for its unique abilities, such as Magic Evasion and Limited Magic Immunity, allowing it to resist or negate magical effects. However, its somewhat moderate Dexterity and Intelligence could be considered weaknesses, particularly in scenarios requiring agility or intelligence-based skills.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ Overall, the Nullicorn represents a versatile and dangerous opponent, with stron
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nullicorn
 
 *Large* *Aberration* *chaotic evil*
@@ -72,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Ripple of darkness:** Each creature within 20' of the nullicorn: 18 (4d8) necrotic and contracts the nullifying blight disease (above; DC 13 Con half and doesn’t contract it).
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Lanternfish</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>85</HP>
 <summary>The Giant Lanternfish is a large monstrosity known for its chaotic and malevolent nature. With an Armor Class of 13 and a significant pool of Hit Points totaling 85, it can withstand a fair amount of damage in battle. It boasts a Challenge Rating of 4, indicating that it offers a moderate challenge to groups of adventurers. The creature has particularly high scores in Strength, Dexterity, and Constitution, each at 16, giving it good capabilities in physical attacks and agility. Its Charisma of 18 makes it exceptionally adept at spellcasting, allowing it to use a suite of powerful spells innately. However, its reliance on magic means that it can sometimes be vulnerable to spells that interrupt its concentration. Notably, the Giant Lanternfish possesses both melee attacks and considerable spellcasting abilities, making it a versatile opponent that can adapt to different combat situations.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ The combination of physical attacks, deception, and powerful spell abilities mak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Lanternfish
 
 *Large* *Monstrosity*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Misty Step (2nd-Level; V):** The giant lanternfish teleports to an unoccupied space it can see within 30 feet. The giant lanternfish can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 

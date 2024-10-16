@@ -1,6 +1,8 @@
 <MonsterName/>Peat Mammoth</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>172</HP>
 <summary>The Peat Mammoth is a formidable creature native to swampy environments, distinguished by its massive size and plant-based nature. Serving as a potent foe for adventurers, it combines a robust defensive capability with substantial offensive power. With an Armor Class of 16 and a significant pool of 172 hit points, it is resistant to fire and necrotic damage, making it a difficult target to bring down. However, its low Dexterity results in poor agility, giving it a notable weakness against swift characters. The mammoth's unique abilities, such as igniting upon receiving fire damage and exploding upon its death, introduce a high level of tactical depth, requiring careful positioning from players. Its ability to engulf and restrain opponents further cements the Peat Mammoth as a menacing presence on the battlefield.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of actions, the Peat Mammoth can perform a "Multiattack," allowing it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Peat Mammoth
 
 *Huge* *Plant* *neutral*
@@ -55,5 +58,6 @@ If the peat mammoth dies while it is on fire, it explodes in a burst of fire and
 - **Engulf:** The peat mammoth moves up to its speed. While doing so, it can enter Large or smaller creatures’ spaces. Whenever the mammoth enters a creature’s space, the creature must make a DC 17 Dexterity saving throw.<br><br>On a successful save, the creature can choose to be pushed 5 feet back or to the side of the mammoth. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.<br><br>On a failed save, the mammoth enters the creature’s space, and the creature takes 22 (5d8) necrotic damage and is engulfed. The engulfed creature can’t breathe, is restrained, and takes 22 (5d8) necrotic damage at the start of each of the mammoth’s turns. When the mammoth moves, engulfed creatures move with it.<br><br>An engulfed creature can try to escape by taking an action to make a DC 17 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the mammoth. The mammoth can engulf up to two Large or smaller creatures at a time.
 
 
+</statblock>
 
 

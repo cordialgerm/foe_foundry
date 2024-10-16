@@ -1,6 +1,8 @@
 <MonsterName/>Alke</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Alke is a large monstrosity that presents a formidable challenge in combat, rated at a Challenge Rating of 5. It possesses a solid Armor Class of 14, bolstered by its natural armor, and a substantial pool of Hit Points totaling 114, derived from a combination of twelve ten-sided dice plus an additional 48 points on average. With a high Strength score of 18 and excellent Constitution of 18, the Alke is both strong and durable. Its Dexterity of 15 allows for agility in movement, enhancing its offensive capabilities. However, its Intelligence is low at 4, indicating that it is not particularly insightful in tactics or strategy. Notable for its swift movement, it has a walking speed of 50 feet and can climb at a rate of 30 feet, allowing it to maneuver easily across various terrains. The Alke features several abilities that make it a dangerous foe, while suffering from low intelligence which might limit its strategic interactions in social situations.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In response to incoming attacks, the Alke can use its reaction ability, Repellin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alke
 
 *Large* *Monstrosity* *unaligned*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Repelling Spikes:** Adds 3 to its AC vs. one melee or ranged weapon attack that would hit it. To do so the alke must see the attacker and not be prone.
 
 
+</statblock>
 
 

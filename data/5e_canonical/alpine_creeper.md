@@ -1,6 +1,8 @@
 <MonsterName/>Alpine Creeper</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>5</AC>
+<HP/>95</HP>
 <summary>The Alpine Creeper is a large plant creature that serves as a unique challenge for adventurers in a Dungeons & Dragons game. With an Armor Class of 5 and Hit Points of 95, it can endure a substantial amount of damage, making it a formidable opponent despite its relatively low AC. This creature specializes in stealth and area control, utilizing special abilities like its camouflage and spore release to incapacitate enemies. While it is vulnerable to fire damage, it has immunities to cold and resistances to bludgeoning and piercing damage, giving it a balanced defense. The Alpine Creeper can summon additional allies in battle via its cleaning call ability, making it even more dangerous in combat as it can call on creatures that will attack players. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ As a bonus action, the Alpine Creeper can enact Lethargic Stupor, which inflicts
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alpine Creeper
 
 *Huge* *Plant* *unaligned*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Lethargic Stupor:** One unconscious Humanoid or Giant in creeper’s space suffers one level of exhaustion. A creature with more than half its hp max can’t suffer more than one level of exhaustion from this. This exhaustion lasts until creature finishes short rest.
 
 
+</statblock>
 
 

@@ -1,6 +1,9 @@
 <MonsterName/>Unska</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>demon</Subtype>
+<CR/>5</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>88</HP>
 <summary>The Unska is a Medium fiend classified as a demon in the Dungeons & Dragons universe. This creature possesses notable defensive capabilities, such as a high Armor Class of 17 due to natural armor, and it has a solid pool of Hit Points totaling 88, making it a durable opponent for adventurers. With a Challenge Rating of 5, it is considered a moderate threat. The Unska’s strengths lie in its magical resilience and damage resistances; it can withstand harsh elemental attacks and is immune to poison. Although its Strength of +3 and Constitution of +2 provide it with average physical prowess, the Unska's true danger emerges from its array of attacks that can poison and weaken foes, as well as its ability to disrupt opponents' strategies through enchantments.</summary>
 
 <detail>
@@ -21,6 +24,7 @@ Overall, the Unska presents a mix of solid offensive capabilities and troublesom
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Unska
 
 *Medium fiend (demon)*
@@ -56,5 +60,6 @@ Source: 5e_artisinal_monsters
 
 - **Whirl of Ink.** Tattoos leap off the unska’s body and latch onto a creature the unska can see within 30 feet of it. The target must succeed on a DC 14 WIS save or be charmed, disoriented, or frightened (the unska’s choice) until the end of its next turn. When a disoriented creature moves, it moves in a random direction.
 
+</statblock>
 
 

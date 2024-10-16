@@ -1,6 +1,7 @@
 import shutil
 from pathlib import Path
 
+import numpy as np
 from whoosh.fields import ID, KEYWORD, TEXT, Schema
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import QueryParser
@@ -11,8 +12,21 @@ from ...data.power import PowerModel
 
 INDEX_DIR = Path(__file__).parent / "index"
 
+
 PowerLookup = {power.key: PowerModel.from_power(power) for power in AllPowers}
 Themes = {power.theme.lower() for power in AllPowers if power.theme}
+
+
+def _sorted() -> list[PowerModel]:
+    powers = [p for _, p in PowerLookup.items()]
+    create_date = np.array([p.create_date for p in powers])
+    nan_indexes = np.where(np.isnan(create_date))[0]
+    indexes = np.setdiff1d(np.argsort(create_date), nan_indexes)
+    powers = [powers[i] for i in indexes] + [powers[i] for i in nan_indexes]
+    return powers
+
+
+PowersChronologically = _sorted()
 
 
 def index_powers():
@@ -66,7 +80,7 @@ def clean_index():
 def search(search_term: str, limit: int) -> list[PowerModel]:
     try:
         ix = load_index()
-    except:
+    except Exception:
         index_powers()
         ix = load_index()
 

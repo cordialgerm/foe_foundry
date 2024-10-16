@@ -1,6 +1,8 @@
 <MonsterName/>Map Mimic</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Map Mimic is a tiny monstrosity that serves a unique role in combat and exploration scenarios. With its ability to disguise itself as an ordinary object, it excels in ambush tactics, allowing it to blend seamlessly into its environment until it strikes. It has a relatively low challenge rating of 1/4, indicating that it is a minor threat to experienced adventurers but can still pose challenges to unsuspecting characters. Its strengths include its decent Armor Class of 14, which provides it good protection, and its ability to deal consistent damage through its attacks. However, it has low hit points at 22 and poor strength, which are notable weaknesses that can be exploited by agile characters.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Map Mimic provides an intriguing option for players and Dungeon Mas
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Map Mimic
 
 *Tiny* *Monstrosity* *Neutral*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The mimic transforms into a Tiny object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
+</statblock>
 
 

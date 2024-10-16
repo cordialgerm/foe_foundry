@@ -1,6 +1,8 @@
 <MonsterName/>Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (armor scraps)</AC>
+<HP/>13</HP>
 <summary>A Skeleton is the animated remains of a dead creature, brought to life through necromantic magic. Stripped of flesh and driven by an unnatural will, Skeletons are mindless, relentless, and loyal to their summoners. They typically wield the weapons and armor they wore in life, making them dangerous opponents despite their brittle bones. Skeletons are commonly found guarding ancient tombs, crypts, or serving necromancers as disposable soldiers. They are silent, emotionless, and attack without fear or hesitation, making them ideal sentinels or shock troops for those who control them.</summary>
 
 <summary>The Skeleton is a Medium Undead creature that serves as a classic low-level enemy in Dungeons & Dragons. With a Challenge Rating of 1/4, it is designed to be relatively easy to defeat, making it ideal for inexperienced adventurers or as a minor obstacle in a larger encounter. The Skeleton has a decent Armor Class of 13, providing it with good defenses for its low hit point pool of 13, calculated as 2d8+4. Its strengths lie in its Dexterity and Constitution, giving it a good initiative and decent hit point mitigation. However, it is vulnerable to bludgeoning damage, which can significantly increase the damage it takes from attacks. Notably, the Skeleton cannot require air, sustenance, or sleep due to its Undead Nature, which may affect interactions with environments or spells that rely on such needs.</summary>
@@ -40,6 +42,7 @@ Overall, the Skeleton is a resilient and tricky undead that utilizes its special
 
 Source: 5e_srd
 
+<statblock>
 ### Skeleton
 
 *Medium undead, lawful evil*
@@ -70,7 +73,8 @@ Source: 5e_srd
 
 ***Shortsword***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
 
-***Shortbow***. *Ranged Weapon Attack:* +4 to hit, range 80/320 ft., one target. *Hit:* 5 (1d6+2) piercing damage.
+***Shortbow***. *Ranged Weapon Attack:* +4 to hit, range 80/320 ft., one target. *Hit:* 5 (1d6+2) piercing damage.</statblock>
+
 
 
 
@@ -78,6 +82,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skeleton
 
 *Medium* *Undead*
@@ -109,6 +114,7 @@ Source: 5e_artisinal_monsters
 - **Shortbow:** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 
 
+</statblock>
 
 
 
@@ -117,6 +123,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skeleton
 
 *Medium undead*
@@ -151,5 +158,6 @@ Source: 5e_artisinal_monsters
 
 - **Counterattack (Recharge 6).** When a creature the skeleton can see hits it with an attack, the skeleton can make one Shortsword or Shortbow attack against the attacker.
 
+</statblock>
 
 

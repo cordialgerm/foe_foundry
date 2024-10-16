@@ -1,6 +1,9 @@
 <MonsterName/>Hinn</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<Subtype/>outsider</Subtype>
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>199</HP>
 <summary>The Hinn is a large elemental creature that serves as a formidable combatant and spellcaster in varied environments. It possesses a strong defensive capability with an Armor Class of 17 and a significant pool of Hit Points totaling 199, which allows it to withstand substantial amounts of damage. With a Challenge Rating of 11, it is a powerful opponent. The Hinn showcases remarkable strengths through its physical and magical abilities, particularly in controlling Earth and utilizing special actions to manipulate the battlefield. Its weaknesses lie primarily in its lack of direct ranged attacks and reliance on close and mid-range combat strategies. Notable features include its ability to seamlessly travel through the earth without leaving a trace and its capability to transform into a cloud form, enhancing its stealth.</summary>
 
 <detail>
@@ -21,6 +24,7 @@ As a bonus action, the Hinn can utilize Churned Earth, causing the ground at a p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hinn
 
 *Large elemental (outsider)*
@@ -58,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Churned Earth.** The hinn causes the ground on a point it can see within 60 feet of it to erupt. Each creature within 15 feet of that point must succeed on a DC 16 DEX save or take 10 (3d6) bludgeoning damage and be knocked prone.
 - **Genie Shape.** The hinn magically transforms into a Medium cloud of dust filled with miniscule clashing, bursting, and reforming rocks or back into its bipedal form. Its statistics are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its bipedal form if it dies. The hinn can’t use this bonus action to transform into its bipedal form while inside a Medium or smaller container.
 
+</statblock>
 
 

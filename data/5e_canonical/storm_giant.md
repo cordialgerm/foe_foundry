@@ -1,6 +1,8 @@
 <MonsterName/>Storm Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>13</CR>
+<AC/>16 (scale mail)</AC>
+<HP/>230</HP>
 <summary>Storm Giants are towering, majestic beings who dwell in remote mountains or beneath the ocean. As the most powerful of the giant kind, they are often seen as wise and noble, governing the natural forces of storms, thunder, and lightning. With their immense size and strength, Storm Giants wield massive weapons, and their command over the weather allows them to summon destructive storms or hurl bolts of lightning. Despite their power, they are generally peaceful, preferring isolation and contemplation. However, when provoked, a Storm Giant’s wrath can be as fierce and unstoppable as the storms they control.</summary>
 
 <summary>The Storm Giant is a powerful creature categorized as a Huge Giant, known for its formidable presence and devastating abilities. With an Armor Class of 16 and a robust pool of 230 hit points, it stands as a significant challenge to adventurers, boasting a Challenge Rating of 14, which translates to 11,500 experience points upon defeat. The Storm Giant excels in both melee and spellcasting, leveraging its exceptional Strength and Constitution scores to dominate in physical confrontations while also wielding potent magic. However, it is somewhat vulnerable due to its average Dexterity, which may make it susceptible to ranged attacks. This giant manifests unique abilities such as amphibious breathing and an innate connection to storm-related magic, making it a versatile adversary in combat scenarios.</summary>
@@ -29,6 +31,7 @@ Moreover, the Storm Giant can react to melee attacks through its "Stormy Rebuke,
 
 Source: 5e_srd
 
+<statblock>
 ### Storm Giant
 
 *Huge giant, chaotic good*
@@ -73,7 +76,8 @@ At will: *detect magic*, *feather fall*, *levitate*, *light*
 
 ***Rock***. *Ranged Weapon Attack:* +14 to hit, range 60/240 ft., one target. *Hit:* 35 (4d12+9) bludgeoning damage.
 
-***Lightning Strike (Recharge 5-6)***. The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.
+***Lightning Strike (Recharge 5-6)***. The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -81,6 +85,7 @@ At will: *detect magic*, *feather fall*, *levitate*, *light*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Storm Giant
 
 *Huge* *Giant*
@@ -120,6 +125,7 @@ Source: 5e_artisinal_monsters
 - **Stomp:** Melee Weapon Attack: +14 to hit, reach 5 ft., one Medium or smaller prone target. Hit: 19 (3d6 + 9) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -128,6 +134,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Storm Giant
 
 *Huge giant*
@@ -166,5 +173,6 @@ Source: 5e_artisinal_monsters
 
 - **Stormy Rebuke.** When a creature the storm giant can see hits it with a melee attack while within 5 feet of the giant, the giant can send a stormy blast at the creature. The attacker must succeed on a DC 17 STR save or be pushed up to 15 feet away from the giant and knocked prone.
 
+</statblock>
 
 

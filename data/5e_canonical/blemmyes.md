@@ -1,6 +1,8 @@
 <MonsterName/>Blemmyes</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Blemmyes is a large monstrosity characterized by its chaotic evil alignment and formidable presence on the battlefield. With a strong build and a variety of attacking options, it poses a serious threat to adventurers. Its notable strengths include high hit points, impressive melee damage capabilities, and the ability to incapacitate foes. The Blemmyes has exceptional physical attributes, particularly in Strength and Constitution, which enhance its combat effectiveness. However, it suffers from very low Intelligence, Wisdom, and Charisma, which can limit its tactical options and ability to interact socially. It is important to note that the Blemmyes can be dangerously compelled to attack incapacitated creatures due to its Carnivorous Compulsion ability, which can lead to devastating ambushes.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Overall, the Blemmyes is a dangerous opponent with a mix of strong physical atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blemmyes
 
 *Large* *Monstrosity* *Chaotic Evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 19 (4d6 + 5) piercing damage. If the target is incapacitated and a Medium or smaller creature, the target is swallowed. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the blemmyes, and it takes 14 (4d6) acid damage at the start of each of the blemmyes’ turns. The blemmyes can have only one target swallowed at a time.
 - **Slam:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Wisdom saving throw or be stunned until the end of its next turn.
 - **Rock:** Ranged Weapon Attack: +8 to hit, range 30/120 ft., one target. Hit: 27 (4d10 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Wisdom saving throw or be frightened until the end of its next turn.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Moon Weaver</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>36</HP>
 <summary>The Moon Weaver is a small beast characterized by its nimble movements and enchanting presence, making it a curious creature in the wilderness. With a neutral alignment, it doesn't lean toward good or evil, allowing it to thrive in various environments. The Moon Weaver boasts a moderate armor class of 13 and has 36 hit points derived from rolling eight six-sided dice plus a bonus, allowing it to withstand some attacks in combat. Its speed is versatile; it can walk or climb at 20 feet per round, while its flying speed of 40 feet provides exceptional mobility in the air. With a Challenge Rating of 1/2, it is generally suited for encounters with less experienced adventurers, offering 100 experience points upon defeat. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the Moon Weaver has a bonus action called Emboldening Song, which 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moon Weaver
 
 *Small* *Beast* *neutral*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Emboldening Song (2/Day):** Delivers a burst of beautiful song that motivates and emboldens one friendly creature the moon weaver can see within 60' of it. If the target can hear the song it gains one Embolden die a d6. Once within the next 10 min the target can roll the die and add the number rolled to one ability check attack roll or save it makes.
 
 
+</statblock>
 
 

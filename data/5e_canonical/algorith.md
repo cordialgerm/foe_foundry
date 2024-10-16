@@ -1,6 +1,8 @@
 <MonsterName/>Algorith</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>153</HP>
 <summary>The Algorith is a formidable medium-sized construct known for its role as a powerful entity in combat, capable of dealing substantial force damage and manipulating spells. With its exceptional armor class of 18 and robust hit points totaling 153, it stands as a resilient opponent. The Algorith's challenge rating of 10 indicates that it is a significant threat for adventuring parties, offering them 5,900 experience points upon defeat. This construct excels in strategic superiority due to its immunity to several conditions and various damage resistances. However, its reliance on physical power and potential vulnerabilities to certain attacks makes it crucial for players to approach it with a strong tactical focus.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Algorith also possesses spellcasting capabilities, utilizing Charisma as its
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Algorith
 
 *Medium* *Construct* *Lawful Neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Cone of Negation (Recharge 5–6):** The algorith projects null energy in a 30-foot cone. Each creature in the area must make a DC 16 Dexterity saving throw. On a failure, a creature takes 33 (6d10) force damage and any spell of 4th level or lower on the creature ends, as if it had been the target of a dispel magic spell. On a success, a creature takes half the damage and spells on it don’t end.
 - **Reality Bomb (5/Day):** The algorith summons and throws a tiny rune of law at a point it can see within 100 feet. The rune explodes on impact. Each creature within 30 feet of where the rune landed must make a DC 16 Dexterity saving throw. On a failure, a creature takes 27 (5d10) force damage and is stunned until the end of its next turn. On a success, a creature takes half the damage and isn’t stunned.
 - **Spellcasting:** The algorith casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 16): <br>At will: bless, detect magic, dimension door, dispel magic<br>1/day each: commune (as an action), wall of force
+</statblock>
 
 

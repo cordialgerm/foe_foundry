@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Shadow Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>21</AC>
+<HP/>296</HP>
 <summary>The Ancient Shadow Dragon is a formidable Gargantuan creature, embodying the essence of darkness and malevolence. With impressive armor class and hit points, it poses a significant challenge for adventurers, boasting a challenge rating of 24, which reflects its incredibly high difficulty level. Its ability to fly, swim, and maneuver with grace makes it exceptionally agile in battle, while its innate spellcasting and legendary actions allow it to manipulate the battlefield further. This dragon is adept at evading physical attacks through its incorporeal movement and possesses various resistances and immunities that make it a tough adversary. However, its reliance on a specific area through its Essence Link can be seen as a weakness, as it limits its recovery away from its vital location.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of reactions, the dragon has a Lash Out ability that allows it to respo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Shadow Dragon
 
 *Gargantuan* *Dragon*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Lurk:** If the dragon is in dim light or darkness, it magically becomes invisible until it attacks, causes a creature to make a saving throw, or enters an area of bright light. It can't use this ability if it has taken radiant damage since the end of its last turn.
 - **Slip Through Shadows:** If the dragon is in dim light or darkness, it magically teleports up to 60 feet to an unoccupied space that is also in dim light or darkness. The dragon can't use this ability if it has taken radiant damage since the end of its last turn.
 - **Horrid Whispers (Costs 2 Actions):** A creature that can hear the dragon makes a DC 23 Wisdom saving throw. On a failure, the creature takes 18 (4d8) psychic damage, and the dragon regains the same number of hit points.
+</statblock>
 
 

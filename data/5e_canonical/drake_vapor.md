@@ -1,6 +1,8 @@
 <MonsterName/>Drake, Vapor</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Drake, Vapor is a sizable neutral dragon known for its agility and unique demeanor that reflects its untamed, swampy habitat. It has a sturdy armor class of 15 due to its natural armor, making it relatively resilient in combat, complemented by its considerable hit points totaling 119. While its challenge rating of 6 indicates a moderate threat level, it has notable strengths, such as its high Dexterity, which enhances its agility in battle, and reliable resistance to cold damage. Nevertheless, its lack of intelligence and charisma means it may struggle in social or strategic scenarios requiring negotiation or complex tactics. The drake excels at ambushing foes with its special abilities, particularly in swamp environments where it can leverage its camouflage to gain an advantage.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the drake can employ a Multiattack pattern, which consists of one Bit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drake, Vapor
 
 *Large* *Dragon* *neutral*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Poisonous Breath (Recharge 5–6):** Exhales poisonous swamp gas in 30' cone. Each creature in area: 27 (5d8) poison (DC 15 Con half). If drake is flying its Gaseous Ascension immediately ends takes falling damage as normal and each creature that failed save: poisoned 1 min. Poisoned creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

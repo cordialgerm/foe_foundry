@@ -1,6 +1,8 @@
 <MonsterName/>Aboleth Thrall</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>45</HP>
 <summary>The Aboleth Thrall is a Medium humanoid creature that serves as a loyal servant to the powerful aboleths, showcasing its capabilities both in combat and its connection to aquatic environments. This creature possesses an average to good overall combat proficiency, with decent armor class and hit points, making it a resilient opponent. Its ability to breathe both air and water allows it to operate in a variety of settings, though it has a significant weakness in its need to remain moist; failing to do so can lead to suffocation. With its unique abilities, the Aboleth Thrall can be a dangerous foe, capable of dealing substantial poison damage while also protecting its master through self-sacrifice.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the thrall can perform a reaction called "Self-Sacrifice," which i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aboleth Thrall
 
 *Medium* *Humanoid*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Self-Sacrifice:** When a creature within 5 feet of the thrall that the thrall can see hits an aboleth with an attack, the thrall can make itself the target of the attack instead.
 
 
+</statblock>
 
 

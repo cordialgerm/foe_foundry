@@ -1,6 +1,8 @@
 <MonsterName/>Homunculus</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>0</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>5</HP>
 <summary>A Homunculus is a tiny, artificial creature magically created by a wizard or alchemist to serve as a helper or familiar. It has a bat-like body with leathery wings, a sharp-toothed mouth, and a humanoid face. Despite its grotesque appearance, the Homunculus is loyal to its creator, sharing a telepathic bond and carrying out tasks such as scouting or delivering messages. It is fragile and not meant for combat, relying on stealth and evasion to avoid danger. Homunculi are crafted from arcane magic and alchemical processes, and they act as an extension of their creator’s will.</summary>
 
 <summary>The Homunculus is a tiny construct that serves as a familiar or servant to its creator. Despite its diminutive size, it possesses a moderate level of agility and the ability to communicate telepathically with its creator, making it a valuable companion in various situations. With a challenge rating of 0, it is relatively weak in combat but offers utility through its special abilities. Its primary strengths lie in its dexterity and speed, allowing it to be mobile and evasive during encounters. However, it has very low strength and hit points, making it vulnerable and unable to withstand much damage.</summary>
@@ -33,6 +35,7 @@ Overall, the Homunculus is a strategic creature that can assist its creator with
 
 Source: 5e_srd
 
+<statblock>
 ## Homunculus
 
 *Tiny construct, neutral*
@@ -61,7 +64,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.
+***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.</statblock>
+
 
 
 
@@ -69,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Homunculus
 
 *Tiny* *Construct*
@@ -98,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 1 piercing damage  and the target makes a DC 10 Constitution saving throw. On a failure  it is poisoned. At the end of its next turn  it repeats the saving throw. On a success  the effect ends. On a failure  it falls unconscious for 1 minute. If it takes damage or a creature uses an action to shake it awake  it wakes up  and the poisoned effect ends.
 
 
+</statblock>
 
 
 
@@ -106,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Homunculus
 
 *Tiny construct*
@@ -135,5 +142,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite.** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage plus 5 (2d4) poison damage, and the target must succeed on a DC 12 CON save or be poisoned for 1 minute. If the save fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.
 
+</statblock>
 
 

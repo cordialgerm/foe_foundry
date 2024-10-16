@@ -1,6 +1,8 @@
 <MonsterName/>Adult Sapphire Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>19</CR>
+<AC/>19</AC>
+<HP/>304</HP>
 <summary>The Adult Sapphire Dragon is an imposing and formidable creature in the world of Dungeons & Dragons. As a Huge dragon with a Challenge Rating of 19, it poses significant threats to adventurers with its high armor class, formidable hit points, and diverse abilities. With exceptional strength, dexterity, intelligence, and wisdom, this dragon excels in both physical combat and mental prowess, making it a versatile foe. It is particularly deadly due to its psionic abilities, allowing it to manipulate reality and attack the minds of its enemies. While it is immune to psychic damage and can avoid fatigue, its reliance on mental attacks might be countered by opponents who can resist psychic influence. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ In terms of its legendary actions, the Adult Sapphire Dragon can utilize three l
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Sapphire Dragon
 
 *Huge* *Dragon*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Foretell:** The dragon psionically catches a glimpse of a fast-approaching moment and plans accordingly. The dragon rolls a d20 and records the number rolled. Until the end of the dragons next turn, the dragon can replace the result of any d20 rolled by it or a creature within 120 feet with the foretold number. Each foretold roll can be used only once.
 - **Psionic Wave (Costs 2 Actions):** The dragon uses Psionic Wave.
 - **Shatter Mind (Costs 2 Actions):** The dragon targets a creature within 60 feet, forcing it to make a DC 23 Intelligence saving throw. On a failure, the creature takes 22 (4d10) ongoing psychic damage. An affected creature repeats the saving throw at the end of each of its turns, ending the ongoing psychic damage on a success. A creature can also use an action to ground itself in reality, ending the ongoing damage.
+</statblock>
 
 

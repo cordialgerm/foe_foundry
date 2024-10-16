@@ -1,4 +1,3 @@
-from datetime import datetime, timedelta, timezone
 from typing import Annotated
 
 import numpy as np
@@ -25,7 +24,10 @@ def get_power(*, power_name: str) -> PowerModel:
 
 @router.get("/random")
 def random(
-    *, limit: Annotated[int | None, Query(title="maximum response size", ge=1, le=20)] = 10
+    *,
+    limit: Annotated[
+        int | None, Query(title="maximum response size", ge=1, le=20)
+    ] = 10,
 ) -> list[PowerModel]:
     limit = limit or 10
     rng = np.random.default_rng()
@@ -37,18 +39,14 @@ def random(
 
 @router.get("/new")
 def new(
-    *, limit: Annotated[int | None, Query(title="maximum response size", ge=1, le=20)] = 10
+    *,
+    limit: Annotated[
+        int | None, Query(title="maximum response size", ge=1, le=20)
+    ] = 10,
 ) -> list[PowerModel]:
     limit = limit or 10
-    now = datetime.now()
-    new = now - timedelta(days=30)
-    new_powers = [
-        p
-        for p in whoosh.PowerLookup.values()
-        if (p.create_date is not None and p.create_date >= new)
-    ]
-    sorted_powers = sorted(new_powers, key=lambda x: x.create_date, reverse=True)
-    return sorted_powers[:limit]
+    new_powers = whoosh.PowersChronologically[:limit]
+    return new_powers
 
 
 @router.get("/search")
@@ -64,8 +62,12 @@ def search_powers(
     role: Annotated[
         MonsterRole | None, Query(title="filter results to a specific role")
     ] = None,
-    theme: Annotated[str | None, Query(title="filter results to a specific theme")] = None,
-    limit: Annotated[int | None, Query(title="maximum response size", ge=1, le=40)] = 20,
+    theme: Annotated[
+        str | None, Query(title="filter results to a specific theme")
+    ] = None,
+    limit: Annotated[
+        int | None, Query(title="maximum response size", ge=1, le=40)
+    ] = 20,
 ) -> list[PowerModel]:
     limit = limit or 10
 

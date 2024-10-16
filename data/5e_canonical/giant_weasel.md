@@ -1,6 +1,8 @@
 <MonsterName/>Giant Weasel</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>9</HP>
 <summary>A Giant Weasel is a large, sleek predator known for its agility and stealth. These creatures are often found in forests or grasslands, where they hunt small to medium-sized prey such as rabbits or birds. Giant Weasels have long, muscular bodies and sharp teeth, which allow them to kill with a swift bite to the neck. They are skilled at sneaking up on their prey and are known for their intelligence and curiosity. Though not naturally aggressive towards larger creatures, they will defend themselves fiercely if threatened.</summary>
 
 <summary>The Giant Weasel is a medium-sized beast known for its agility and keen senses, making it an adept hunter and scout. It possesses a decent Armor Class of 12, which provides it with a modest level of defense, while its low Hit Points of 9 (calculated from rolling 2d8) indicate that it is somewhat fragile and should avoid direct confrontations with stronger foes. With a movement speed of 40 feet, the Giant Weasel can swiftly maneuver around the battlefield, allowing it to engage or evade targets effectively. It is rated at a Challenge Rating of 1/8, making it a weaker opponent intended for low-level encounters, yielding 25 experience points upon defeat.</summary>
@@ -31,6 +33,7 @@ The Giant Weasel also has a defensive reaction called "Repellent Spray." When an
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Weasel
 
 *Medium beast, unaligned*
@@ -57,7 +60,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d4+3) piercing damage.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d4+3) piercing damage.</statblock>
+
 
 
 
@@ -65,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Weasel
 
 *Medium* *Beast*
@@ -93,6 +98,7 @@ Source: 5e_artisinal_monsters
 - **Grab:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: The target is grappled (escape DC 12).
 
 
+</statblock>
 
 
 
@@ -101,6 +107,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Weasel, Giant
 
 *Medium beast*
@@ -132,5 +139,6 @@ Source: 5e_artisinal_monsters
 
 - **Repellent Spray.** When a creature the weasel can see moves to a space within 15 feet of it, the weasel can release a pungent spray at the creature. The target must succeed on a DC 13 CON save or be poisoned until the end of its next turn. While poisoned, the creature can’t move to a space within 5 feet of the weasel.
 
+</statblock>
 
 

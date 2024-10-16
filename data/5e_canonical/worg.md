@@ -1,6 +1,9 @@
 <MonsterName/>Worg</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<Subtype/>animal</Subtype>
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>26</HP>
 <summary>A Worg is a large, malevolent wolf-like creature with a cunning intellect and a taste for flesh. Unlike ordinary wolves, Worgs are capable of speech and often ally with goblins or orcs, serving as mounts or hunting companions. They are vicious predators that enjoy the thrill of the hunt, using their size and strength to overpower their prey. Worgs are often found in the wild, where they terrorize travelers and settlements. Their sharp teeth and powerful jaws make them deadly foes in combat, and their intelligence allows them to devise ambushes and traps.</summary>
 
 <summary>The Worg is a large monstrosity that serves as a cunning and predatory creature in the realms of Dungeons & Dragons. With a challenge rating of 1/2, it poses a moderate threat to low-level adventurers and is often found lurking in forests or mountainous areas. The Worg is characterized by its robust physical strength and agility, complemented by a keen sense of hearing and smell, making it an effective hunter. However, its relatively low intelligence and charisma may limit its social interactions and strategic planning. Its combat effectiveness is marked by strong attack capabilities, particularly through its bite, which can knock opponents prone. Though it possesses decent armor class and hit points, it can be taken down by more experienced players if they exploit its weaknesses.</summary>
@@ -35,6 +38,7 @@ Overall, the Worg is a fearsome adversary that utilizes its strengths in physica
 
 Source: 5e_srd
 
+<statblock>
 ### Worg
 
 *Large monstrosity, neutral evil*
@@ -63,7 +67,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
 
-A **worg** is an evil predator that delights in hunting and devouring creatures weaker than itself. Cunning and malevolent, worgs roam across the remote wilderness or are raised by goblins and hobgoblins. Those creatures use worgs as mounts, but a worg will turn on its rider if it feels mistreated or malnourished. Worgs speak in their own language and Goblin, and a few learn to speak Common as well.
+A **worg** is an evil predator that delights in hunting and devouring creatures weaker than itself. Cunning and malevolent, worgs roam across the remote wilderness or are raised by goblins and hobgoblins. Those creatures use worgs as mounts, but a worg will turn on its rider if it feels mistreated or malnourished. Worgs speak in their own language and Goblin, and a few learn to speak Common as well.</statblock>
+
 
 
 
@@ -71,6 +76,7 @@ A **worg** is an evil predator that delights in hunting and devouring creatures 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Worg
 
 *Large* *Monstrosity*
@@ -98,6 +104,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6+2) piercing damage. If the target is a creature  it makes a DC 13 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 
 
@@ -106,6 +113,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Worg
 
 *Large monstrosity (animal)*
@@ -138,5 +146,6 @@ Source: 5e_artisinal_monsters
 
 - **Loathsome Howl (1/Day).** The worg unleashes an unnatural howl audible out to a distance of 300 feet. Each creature of the worg’s choice within 30 feet of it must succeed on a DC 13 CHA save or be frightened of it for 1 minute. A frightened creature can repeat the save at the end of each of its turns, ending the effect on itself on a success. Until it finishes a long rest, the worg can sense the direction but not the exact location of each creature that was frightened by Loathsome Howl.
 
+</statblock>
 
 

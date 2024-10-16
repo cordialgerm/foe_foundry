@@ -1,6 +1,8 @@
 <MonsterName/>Skeleton Horde</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>65</HP>
 <summary>The Skeleton Horde is a formidable Large undead creature that plays a versatile role in combat. With a challenge rating of 4, it can pose a significant threat to adventuring parties, particularly due to its ability to deal considerable piercing damage with both melee and ranged attacks. While it possesses an average armor class of 13 and decent hit points totalling 65, its most notable strength lies in its damage immunity to poison and its condition immunities to fatigue and poisoned states, making it resilient in battle. However, its weaknesses include vulnerability to bludgeoning damage, which might serve as a tactical advantage for characters who exploit this weakness. The Skeleton Horde can serve effectively as a frontline soldier, using coordinated attacks to overwhelm enemies.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Skeleton Horde is equipped with a Shortsword and a Shor
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Skeleton Horde
 
 *Large* *Undead*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Shortbow:** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 27 (5d6 + 10) piercing damage  or half damage if the horde is bloodied.
 
 
+</statblock>
 
 

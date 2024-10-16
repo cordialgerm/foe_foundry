@@ -1,6 +1,8 @@
 <MonsterName/>Shoggoth</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>19</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>325</HP>
 <summary>The Shoggoth is a massive aberration that embodies chaos and unpredictability in combat. Its formidable presence boasts a high armor class of 18 and an impressive pool of 325 hit points, making it a heavy-hitting adversary that can absorb tremendous damage before succumbing. As a creature with a Challenge Rating of 19, the Shoggoth represents a considerable threat, particularly given its unique abilities and resistances. It possesses extraordinary physical strength with a Strength score of 26 (+8), which allows it to deal significant melee damage and overpower lesser creatures with ease. The Shoggoth is resistant to various forms of damage, including bludgeoning, fire, and piercing, while being immune to cold, slashing, and thunder. Its chaotic nature can be both an advantage and liability, with features that disrupt opponents while being significantly difficult to control or harm.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ With its enormous size, myriad abilities, and terrifying presence, the Shoggoth 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shoggoth
 
 *Huge* *Aberration* *Chaotic Neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The shoggoth makes four Slam attacks. It can replace two Slam attacks with a use of Crush.
 - **Slam:** Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage, and the target is grappled (escape DC 18) if it is a Large or smaller creature.
 - **Crush:** The shoggoth crushes up to two creatures it is grappling by rolling them beneath its bulk. Each target must succeed on a DC 19 Strength saving throw or take 30 (4d10 + 8) bludgeoning damage, be unable to breathe, and be restrained until the grapple ends. If the shoggoth moves, a creature beneath it is no longer restrained and is able to breathe, but it remains grappled.
+</statblock>
 
 

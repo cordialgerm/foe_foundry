@@ -1,6 +1,8 @@
 <MonsterName/>Ankheg Queen</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>59</HP>
 <summary>The Ankheg Queen is a formidable Huge monstrosity that poses a significant threat to adventurers in its territory. With an armor class of 14, it boasts a decent level of protection, complemented by 59 hit points, making it a tenacious foe in combat. As a creature designed for ambush, it has a burrowing speed of 15 feet, allowing it to strike from underground, catching unsuspecting prey off guard. Classified with a challenge rating of 3, it rewards 700 experience points upon defeat, making it a worthwhile adversary. The Ankheg Queen utilizes both physical attacks and acid sprays, showcasing its capacity for dealing high damage while grappling with its victims, thereby controlling the battlefield effectively. While it excels in attack and grappling, its intelligence is notably low, which hinders its problem-solving abilities and interactions outside of combat.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ Overall, the Ankheg Queen is positioned as a hazardous opponent that can control
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ankheg Queen
 
 *Huge* *Monstrosity*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **The ankhegqueenhas 1 legendary action it can take at the end of another creatures turn:** The ankheg regains the spent legendary action at the start of its turn.
 - **Acid Glob:** Ranged Weapon Attack: +5 to hit, range 30/90 feet, one target. Hit: 7 (1d8 + 3) acid damage.
 - **Burrowing Ambush (1/Day):** The ankheg burrows up to its burrowing speed without provoking opportunity attacks, and then resurfaces. If within melee range of an enemy, it makes a claw attack with advantage.
+</statblock>
 
 

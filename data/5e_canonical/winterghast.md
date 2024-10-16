@@ -1,6 +1,8 @@
 <MonsterName/>Winterghast</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>78</HP>
 <summary>The Winterghast is a sinister undead creature with a chaotic evil alignment, known for its ability to inflict debilitating cold and necrotic damage on its foes. With a medium size and a challenge rating of 4, it poses a significant threat to adventurers, particularly due to its ability to spread disease and cause paralysis. The Winterghast's strengths lie in its decent armor class of 13 and a robust hit point total of 78, providing it with durability in combat. However, its vulnerability to fire and lower Charisma make it susceptible to certain tactics. Notably, its abilities can create long-term complications for affected characters, making it a strategic encounter for players.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Winterghast is a formidable challenge for adventurers, employing a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Winterghast
 
 *Medium* *Undead* *chaotic evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 10 (2d6 + 3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

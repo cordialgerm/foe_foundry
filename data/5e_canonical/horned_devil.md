@@ -1,6 +1,9 @@
 <MonsterName/>Horned Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>devil</Subtype>
+<CR/>11</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>148</HP>
 <summary>A Horned Devil is a fearsome, fiendish warrior from the Nine Hells, standing tall with bat-like wings, a spiked tail, and massive horns protruding from its head. Its red, scaly skin and muscular form give it a menacing presence. Horned Devils are brutal and ruthless, wielding wicked spiked chains or pitchforks in battle. Their barbed tails deliver venomous strikes, and their sheer physical strength makes them dangerous opponents. Loyal to the infernal hierarchy, Horned Devils serve higher devils as enforcers or generals, relishing combat and the opportunity to spread terror.</summary>
 
 <summary>The Horned Devil is a powerful entity within the realm of fiends, specifically designed to be a formidable foe in encounters. With its large size and a challenge rating of 11, it presents a significant threat to adventurers, showcasing both physical resilience and formidable magical prowess. The Horned Devil possesses a robust armor class of 18, paired with 168 hit points that make it difficult to take down. Its strengths lie in its high strength and constitution, making it exceptionally adept in combat while also resistant to several forms of damage. However, despite its resilience, it has weaknesses, especially against certain types of magical attacks or the right strategies from clever players. </summary>
@@ -39,6 +42,7 @@ Overall, the Horned Devil combines high physical strength, impressive magical ab
 
 Source: 5e_srd
 
+<statblock>
 ### Horned Devil
 
 *Large fiend (devil), lawful evil*
@@ -79,7 +83,8 @@ Source: 5e_srd
 
 ***Tail***. *Melee Weapon Attack:* +10 to hit, reach 10 ft., one target. *Hit:* 10 (1d8+6) piercing damage. If the target is a creature other than an undead or a construct, it must succeed on a DC 17 Constitution saving throw or lose 10 (3d6) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 10 (3d6). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.
 
-***Hurl Flame***. *Ranged Spell Attack:* +7 to hit, range 150 ft., one target. *Hit:* 14 (4d6) fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.
+***Hurl Flame***. *Ranged Spell Attack:* +7 to hit, range 150 ft., one target. *Hit:* 14 (4d6) fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.</statblock>
+
 
 
 
@@ -87,6 +92,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horned Devil
 
 *Large* *Fiend*
@@ -128,6 +134,7 @@ Source: 5e_artisinal_monsters
 - **Pin (1/Day):** When a creature misses the devil with a melee attack, the devil makes a fork attack against that creature. On a hit, the target is impaled by the fork and grappled (escape DC 17). Until this grapple ends, the devil can't make fork attacks or use Inferno, but the target takes 7 (2d6) piercing damage plus 3 (1d6) fire damage at the beginning of each of its turns.
 
 
+</statblock>
 
 
 
@@ -136,6 +143,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horned Devil
 
 *Large fiend (devil)*
@@ -172,5 +180,6 @@ Source: 5e_artisinal_monsters
 
 - **Headbutt.** The horned devil slams its horned head into a creature it can see within 5 feet of it. The target must make a DC 17 STR save. On a failure, the target takes 7 (2d6) bludgeoning damage and is knocked prone. On a success, the target takes half the damage and isn’t knocked prone.
 
+</statblock>
 
 

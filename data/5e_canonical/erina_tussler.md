@@ -1,6 +1,8 @@
 <MonsterName/>Erina Tussler</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>66</HP>
 <summary>Erina Tussler is a small humanoid with a neutral alignment, known for its unique abilities and skills that allow it to excel in close combat, particularly through grappling and ranged attacks. This creature features a notable Armor Class of 14, attributed to its leather armor, and possesses 66 hit points, giving it a respectable durability in battle. Its speed allows for flexible movement both on foot and through burrowing. As a Challenge Rating of 3 monster, it earns 700 experience points upon defeat. One of the defining characteristics of the Erina Tussler is its ability to regenerate its arm spines, which are integral to many of its offensive capabilities. However, while it has several strengths, it still sports an average number of attributes, which can leave it vulnerable against tougher foes.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Erina Tussler can perform a "Multiattack," which allows
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Erina Tussler
 
 *Small* *Humanoid* *neutral*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Throw Spine:** Ranged Weapon Attack: +5 to hit 20/60' one target 8 (2d4+3) piercing damage and spine sticks in target until a creature uses an action to remove it. While spine is stuck target has disadvantage on weapon attacks that use Str.
 
 
+</statblock>
 
 

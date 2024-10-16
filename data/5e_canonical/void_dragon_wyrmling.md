@@ -1,6 +1,8 @@
 <MonsterName/>Void Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Void Dragon Wyrmling is a captivating and formidable creature, belonging to the medium dragon category with a chaotic neutral alignment. This young dragon exhibits a variety of strengths, including a high Armor Class of 17 due to its natural armor, and decent hit points totaling 45. It possesses a mix of powerful offensive and defensive capabilities, making it a challenging opponent in combat, yet it retains significant weaknesses such as its vulnerability to non-cold damage types. They are particularly known for their chilling abilities and unique powers related to gravitational manipulation, allowing them to control the battlefield in ways that can hinder their adversaries. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Lastly, the wyrmling can respond to threats with its reaction "Void Twist," whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Void Dragon Wyrmling
 
 *Medium* *Dragon* *Chaotic Neutral*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Void Twist:** The dragon adds 2 to its AC against one attack that would hit it, as it twists reality to open a small rift in space to protect itself. To do so, the dragon must be able to see the attacker.
+</statblock>
 
 

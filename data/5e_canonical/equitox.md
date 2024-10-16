@@ -1,6 +1,8 @@
 <MonsterName/>Equitox</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>13</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>178</HP>
 <summary>The Equitox is a Large chaotic evil Fiend that serves as a formidable opponent in combat. With an Armor Class of 15 and a substantial pool of Hit Points totaling 178, the Equitox can withstand significant damage before being defeated. It excels in offense with a Multiattack action, delivering powerful melee strikes with its Gore attack, which does additional necrotic damage, adding to its threat level. Its special abilities, including the Befouling Aura and Gullylung Fever disease, create debilitating effects on its foes, significantly hindering their effectiveness in battle. While it has several strengths, including resistance to various damage types and immunity to several conditions, its Dexterity score is only average, which might limit its mobility compared to quicker foes. Overall, the Equitox is a dangerous adversary that can control the battlefield through its unique abilities and damage output.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In terms of legendary actions, the Equitox can teleport up to 60 feet to an unoc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Equitox
 
 *Large* *Fiend* *chaotic evil*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Teleport:** With items it has up to 60' to unoccupied space it can see.
 - **Withering Gaze (2):** Locks eyes with one creature within 60' that can see it. Target: DC 18 Wis or stunned by thirst until end of its next turn.
 - **Gore (2):** Makes one Gore attack.
+</statblock>
 
 

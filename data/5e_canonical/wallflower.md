@@ -1,6 +1,8 @@
 <MonsterName/>Wallflower</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>33</HP>
 <summary>The Wallflower is a medium-sized plant creature that presents a unique mix of offensive and defensive capabilities, primarily functioning as a controller on the battlefield. With an Armor Class of 14, it possesses decent defenses, while its 33 hit points provide moderate durability. It has a challenge rating of 2, indicating that it is suitable for a party of low-level adventurers. Notably, the Wallflower excels in stealth and has damage resistances to nonmagical weapons, making it a tricky opponent. Its primary strengths lie in its ability to manipulate enemy movement with its Luring Scent ability, while its weaknesses come from its low intelligence and charisma, which limit its interaction and decision-making capabilities as well as its potential to charm or deceive opponents.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Wallflower can also execute a bonus action using its beak. This melee weapon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wallflower
 
 *Medium* *Plant*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature grappled by the grick. Hit: 9 (2d6 + 2) piercing damage.
 
 
+</statblock>
 
 

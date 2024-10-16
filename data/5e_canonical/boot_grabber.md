@@ -1,6 +1,8 @@
 <MonsterName/>Boot Grabber</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>22</HP>
 <summary>The Boot Grabber is a small aberration that serves as a unique and cunning creature designed to entrap and confound its opponents. With a decent Armor Class of 11 and 22 hit points, it can withstand some damage, but it’s best utilized through its special abilities rather than direct confrontations. The Boot Grabber's notable strengths include its ability to adhere to creatures that come into contact with it, making it a formidable grappler, particularly for larger adversaries. However, its weaknesses lie in its relatively low hit points for tougher enemies and the requirement to remain motionless for its False Appearance ability to be effective. This creature has a Challenge Rating of 1/2, making it appropriate for low-level encounters, and it provides 100 experience points upon defeat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Boot Grabber can use its Adhesive Hands attack, which functions a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boot Grabber
 
 *Small* *Aberration* *neutral*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Unearthly Hum:** The boot grabber targets one creature it can see within 60 feet of it. It emits a high frequency humming noise which can only be heard by the target. The target must succeed on a DC 11 Wisdom saving throw or move toward the boot grabber on its turn by the shortest and most direct route, ending its turn when it comes within 5 feet of the boot grabber.
 
 
+</statblock>
 
 

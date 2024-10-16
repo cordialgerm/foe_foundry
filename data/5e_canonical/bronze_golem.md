@@ -1,6 +1,8 @@
 <MonsterName/>Bronze Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>57</HP>
 <summary>The Bronze Golem is a formidable Large Construct that embodies the fusion of magic and metallurgy. Unaligned in nature, this golem serves as a powerful guardian or a weapon in the hands of a skilled creator. Its strengths lie in its robust defensive capabilities, with a decent Armor Class of 13 and substantial hit points totaling 57. The creature excels in resisting various damage types, especially from physical attacks that lack magical enhancement. While it boasts high Constitution and Strength scores, which provide it with good resilience and melee prowess, its low Dexterity and Intelligence make it relatively slow and unwise in combat situations. It remains an exceptional entity in combat, utilizing its unique abilities to threaten characters in close quarters.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ One of its most dangerous abilities is the Brazen Bull. If the golem grapples a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bronze Golem
 
 *Large* *Construct* *unaligned*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Brazen Bull:** The golem makes a slam attack against a target it is grappling as it opens a plate in its chest and exposes its arcane boiler. If the attack hits, the target is forced into the golem's boiler, and the grapple ends. While inside the boiler, the target is blinded and restrained, it has total cover against attacks and other effects outside the boiler, and it takes 14 (4d6) fire damage at the start of each of its turns. To escape, it or another creature must succeed on a DC 13 Strength (Athletics) check to open the boiler, freeing the target, which falls prone in a space within 5 feet of the golem. A bronze golem can only have one creature in its boiler at a time.
 
 
+</statblock>
 
 

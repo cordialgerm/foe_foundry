@@ -1,6 +1,8 @@
 <MonsterName/>Nyctli Swarm</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>10</CR>
+<AC/>14</AC>
+<HP/>110</HP>
 <summary>The Nyctli Swarm is a large and malevolent fey creature imbued with chaotic evil. It embodies the essence of a chaotic organism, moving as a swirling mass that can inflict substantial damage while resisting many forms of physical attacks. With a moderate Armor Class of 14 and substantial hit points totaling 110, it remains resilient in combat. The swarm's mobility is impressive, allowing it to fly at 40 feet and hover, with an ability to occupy spaces of other creatures. However, while its dexterity is significantly high, its overall physical and mental attributes show a combination of average and good effectiveness, especially considering its strong Charisma which enhances its spellcasting capabilities. The Nyctli Swarm excels in conditions where it can ambush and disorient foes but lacks the ability to heal itself, which could be a weakness if it faces sustained attacks.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Nyctli Swarm presents both a formidable challenge and tactical oppo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nyctli Swarm
 
 *Large* *Fey* *chaotic evil*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Douse Light:** As the nyctli, except the swarm can’t dispel light created by a spell of 6th level or higher.
 
 
+</statblock>
 
 

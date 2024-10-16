@@ -1,6 +1,8 @@
 <MonsterName/>Scarab, Suncatcher</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>10</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>145</HP>
 <summary>The Suncatcher Scarab is a gargantuan beast that embodies both strength and a degree of environmental control, making it a formidable opponent in any encounter. With an armor class of 19 due to its natural armor, it is quite resilient, supplemented by a substantial 145 hit points, which translates to a considerable buffer in combat. The scarab moves with agility, able to walk 30 feet, burrow 40 feet, and fly 15 feet, allowing it to adapt to various terrains. It possesses excellent strength with a score of 20 (+5), giving it powerful bite attacks, while its constitution of 18 (+4) enhances its durability. The scarab, however, suffers from a very low intelligence score of 1 (-5), rendering it incapable of strategic planning or communication. The challenge rating of 10 signifies that it poses a significant threat to an average party of adventurers. Notably, the Suncatcher Scarab can impose silence within its vicinity and features abilities that facilitate movement through difficult environments and stunningly effective attacks against objects.</summary>
 
 <detail>
@@ -39,6 +41,7 @@ This combination of powerful attacks and controlling abilities makes the Suncatc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scarab, Suncatcher
 
 *Gargantuan* *Beast* *unaligned*
@@ -73,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Wing Beat (Recharge 5–6):** The suncatcher scarab rapidly beats its wings releasing sound or light in a 60' cone.Effect depends on if the elytra is closed or open:Closed Elytra: Creature takes 35 (10d6) thunder is pushed up to 15 ft. away from the scarab and is knocked prone (DC 16 Con half and isn’t pushed or knocked prone).Open Elytra: Creature takes 35 (10d6) radiant and blinded until end of its next turn (DC 16 Con half and isn’t blinded).
 
 
+</statblock>
 
 

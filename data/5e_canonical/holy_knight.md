@@ -1,6 +1,8 @@
 <MonsterName/>Holy Knight</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>18</AC>
+<HP/>93</HP>
 <summary>The Holy Knight is a formidable Medium humanoid creature that embodies the ideals of valor and protection. With a robust Armor Class of 18 and a significant pool of 93 hit points, this knight excels in both offense and defense. Its Challenge Rating of 6 indicates that it poses a significant threat to adventurers, as it is capable of dealing substantial damage while providing crucial support to allies. Notably, the Holy Knight has strengths in strength and constitution, reflected by its scores of 18 and 18 respectively, which provide it with exceptional melee capabilities and durability. However, its moderate dexterity and intelligence scores suggest that it is less adept at ranged combat and strategic thinking. The Holy Knight provides invaluable support with its ability to negate fear for its allies and has several potent combat actions.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the Holy Knight stands as a powerful ally and a fearsome opponent, comb
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Holy Knight
 
 *Medium* *Humanoid*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Knightly Inspiration (1/Day):** The knight inspires creatures of their choice within 30 feet that can hear and understand them. For the next minute  inspired creatures gain an expertise die (1d4) on attack rolls and saving throws. A creature can benefit from only one Knightly Inspiration at a time  and the knight cannot target themselves.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Lesser Lunarchidna</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>39</HP>
 <summary>The Lesser Lunarchidna is a Medium-sized aberration with a neutral evil alignment, known for its stealthy and deceptive nature. With an Armor Class of 15, it possesses good natural defenses complemented by 39 hit points, which provides it with moderate durability in combat. The creature excels in stealth and mobility, having a climbing speed of 30 feet and the ability to traverse difficult surfaces without penalty. It is a threat to low-level adventurers, with a Challenge Rating of 2, granting it 450 experience points upon defeat. Notably, its reliance on darkness for tactical advantage makes it a cunning opponent in dimly lit environments.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Lesser Lunarchidna can perform a Multiattack, allowing 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lesser Lunarchidna
 
 *Medium* *Aberration* *neutral evil*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Mole Lizard</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Giant Mole Lizard is a formidable creature in the realm of Dungeons & Dragons, classified as a large unaligned beast. It possesses a sturdy natural armor that grants it an Armor Class of 14. With a significant pool of 75 hit points, its resilience in battles is commendable, allowing it to endure multiple strikes from adventurers. The Giant Mole Lizard excels in melee combat, particularly through its Multiattack feature, which enhances its offensive capabilities. However, its low Dexterity score means it is less effective at evading attacks and moving rapidly in combat, which can be seen as a weakness. Overall, this creature combines raw power with unique abilities to challenge adventurers, especially in environments where its burrowing abilities can be utilized.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Giant Mole Lizard can execute a "Mass Shove," forcing eac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Mole Lizard
 
 *Large* *Beast* *unaligned*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Mass Shove:** Each Large or smaller creature within 10 ft. of the giant mole lizard and that isn’t grappled by it must make DC 14 Str save or be pushed up to 15 ft. away from the lizard and knocked prone.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Voidling</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>11</CR>
+<AC/>15</AC>
+<HP/>180</HP>
 <summary>The Voidling is a formidable large aberration with a chaotic evil alignment, known for its adaptability in dim conditions and powerful necrotic abilities. With a challenging presence in combat, it boasts an impressive armor class of 15 and robust hit points amounting to 180, which makes it a tough opponent to defeat. It can traverse the battlefield quickly with a movement speed of 50 feet. As a creature with a challenge rating of 11, it offers a significant challenge to adventurers, providing 7,200 experience points upon defeat. Notably, the Voidling has a combination of strong physical attributes, particularly in Dexterity and Wisdom, leverage to counter magical attacks effectively, and it thrives in areas devoid of light, which enhances its regenerative capabilities.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the Voidling can unleash Shadow’s Grasp, a powerful area-of-effe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Voidling
 
 *Large* *Aberration* *Chaotic Evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Tendril:** Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 8 (1d6 + 5) bludgeoning damage plus 10 (3d6) necrotic damage.
 - **Necrotic Bolt:** Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 17 (4d6 + 3) necrotic damage.
 - **Shadow’s Grasp (Recharge 5–6):** The voidling releases a wave of small, grasping tendrils of shadow. Each creature within 20 feet of it must make a DC 17 Dexterity saving throw. On a failure, a creature takes 49 (14d6) necrotic damage and is restrained by tendrils of shadow for 1 minute. On a success, a creature takes half the damage and isn’t restrained. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

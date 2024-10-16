@@ -1,6 +1,8 @@
 <MonsterName/>Derro Guard</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (leather armor)</AC>
+<HP/>18</HP>
 <summary>The Derro Guard is a small humanoid creature that serves as a guardian or combatant within its underground realm, often aligned with non-good moralities. Weighing in at a challenge rating of 1/2, this creature possesses a combination of moderate physical resilience and dexterity, making it reasonably effective in combat, particularly with its ranged attacks. Its strengths lie in its ability to maneuver stealthily and its proficiency with the aklys, a type of throwing weapon, granting it multiple chances to strike its enemies from a distance. However, it has several notable weaknesses: it is particularly hampered by sunlight, where its combat capabilities are significantly diminished, and it has very low wisdom, which negatively affects its perception skills.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Derro Guard wields an aklys, allowing it to make melee 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Derro Guard
 
 *Small* *Humanoid* *any non-good alignment*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Light Crossbow:** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage.
 
 
+</statblock>
 
 

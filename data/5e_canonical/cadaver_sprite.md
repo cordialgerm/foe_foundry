@@ -1,6 +1,8 @@
 <MonsterName/>Cadaver Sprite</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>20</HP>
 <summary>The Cadaver Sprite is a tiny undead creature embodying a neutral evil alignment, making it a sneaky and unsettling opponent for adventurers. With a decent armor class of 14 and 20 hit points derived from 8d4, it can withstand moderate attacks. Its challenge rating of 1/2 indicates that it serves as a low-level threat, suitable for low-tier encounters. While it relies heavily on its Dexterity, which is exceptional at +4, it has low physical strength and charisma values, making it less effective in direct physical confrontations and social interactions. The Cadaver Sprite is particularly skilled in stealth, boasting a very good +8 modifier, allowing it to ambush unsuspecting targets.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Cadaver Sprite is highly adept at stealth and cunning, utilizing it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cadaver Sprite
 
 *Tiny* *Undead* *neutral evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The cadaver sprite magically turns invisible until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the sprite wears or carries is invisible with it.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Akyishigal</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>138</HP>
 <summary>Akyishigal is a formidable Large Fiend with a chaotic evil alignment, known for its diverse and potent abilities that make it a challenging encounter for adventurers. With a high armor class, substantial hit points, and numerous resistances, Akyishigal proves to be a tough adversary in combat. Its ability to fly, burrow, and move effectively makes it highly mobile while also employing swarms of insects to disrupt its foes. Akyishigal's spellcasting abilities, combined with its melee attacks and the ability to summon spawn, pose significant dangers to any group it confronts. However, despite its strengths, it exhibits notable weaknesses such as reliance on concentration for some of its abilities and spells, which can make it vulnerable if interrupted effectively.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Akyishigal can take legendary actions, allowing it to teleport, skitter, or cast
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Akyishigal
 
 *Large* *Fiend* *Chaotic Evil*
@@ -76,5 +79,6 @@ Akyishigal can take 3 legendary actions, choosing from the options below. Only o
 - **Teleport:** Akyishigal magically teleports, along with any equipment he is wearing or carrying, up to 120 feet to an unoccupied space he can see.
 - **Skitter (Costs 2 Actions):** Akyishigal moves up to half his speed and makes one Claw attack. This movement doesn’t provoke opportunity attacks.
 - **Cast a Spell (Costs 2 Actions):** Akyishigal uses Spellcasting.
+</statblock>
 
 

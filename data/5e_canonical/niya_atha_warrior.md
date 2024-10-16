@@ -1,6 +1,8 @@
 <MonsterName/>Niya-Atha Warrior</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>16 (chain mail)</AC>
+<HP/>49</HP>
 <summary>The Niya-Atha Warrior is a medium-sized fey creature characterized by its lawful neutral alignment. This being thrives in agile combat with a unique ability to enlarge itself, making it a formidable foe on the battlefield. With an armor class of 16, it is relatively resilient, able to withstand a decent amount of damage with its 49 hit points, rolled as 9d8 plus an additional 9. The warrior exhibits moderate strength and dexterity, both rated at 14 and 15 respectively, which makes it good at both attacking and evading enemies. The creature is equipped with notable agility in movement, capable of walking and climbing at a speed of 30 feet each. Its Challenge Rating of 2 indicates a moderate level of difficulty for adventurers, allowing it to present a challenge without overwhelming lower-level characters.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Apart from its regular actions, the Niya-Atha Warrior can also perform a bonus a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Niya-Atha Warrior
 
 *Medium* *Fey* *lawful neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Enlarge:** Magically increases in size along with anything it is wearing or carrying. While enlarged it is Large doubles its damage dice on weapon attacks (included above) and makes Str checks and Str saves with advantage. While enlarged it also can no longer use the Standing Leap trait. If it lacks the room to become Large this action fails.
 
 
+</statblock>
 
 

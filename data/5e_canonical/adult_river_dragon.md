@@ -1,6 +1,8 @@
 <MonsterName/>Adult River Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>17</CR>
+<AC/>18</AC>
+<HP/>252</HP>
 <summary>The Adult River Dragon is a formidable Huge dragon known for its mastery over both land and water. It possesses a blend of strength, agility, and magical abilities, making it a dangerous opponent for any adventurer. With an impressive Armor Class of 18 and a substantial pool of 252 hit points, this creature is tough and resilient. Its speed is remarkable; it can walk at 60 feet, fly at 80 feet, and swim at a nimble 90 feet, allowing for rapid movement across different terrains. The Adult River Dragon has a Challenge Rating of 17, signifying it as a high-level threat capable of dishing out significant damage while also maintaining a variety of defensive abilities. However, despite its strengths, it's vulnerable to damage from magical weapons, and its reliance on being near its linked essence area can be a tactical disadvantage.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the dragon has legendary actions, which allow it to take three actions 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult River Dragon
 
 *Huge* *Dragon*
@@ -77,5 +80,6 @@ Source: 5e_artisinal_monsters
 - **Lurk:** The dragon takes the Hide action.
 - **River Surge (Costs 2 Actions):** The dragon generates a 20-foot-tall, 100-foot-wide wave on the surface of water within 90 feet. The wave travels up to 45 feet in any direction the dragon chooses and crashes down, carrying Huge or smaller creatures and vehicles with it. Vehicles moved in this way have a 25 percent chance of capsizing and creatures that impact a solid object take 21 (6d6) bludgeoning damage.
 - **Sudden Maelstrom (While Bloodied:** The dragon magically surrounds itself with a 60-foot-radius maelstrom of surging wind and rain for 1 minute. A creature other than the dragon that starts its turn in the maelstrom or enters it for the first time on a turn makes a DC 18 Strength saving throw. On a failed save, the creature is knocked prone and pushed 15 feet away from the dragon.
+</statblock>
 
 

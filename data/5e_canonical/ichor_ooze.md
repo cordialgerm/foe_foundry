@@ -1,6 +1,8 @@
 <MonsterName/>Ichor Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>2</CR>
+<AC/>8</AC>
+<HP/>39</HP>
 <summary>The Ichor Ooze is a Medium creature of the ooze type with a neutral evil alignment. Its unique combination of offensive capabilities, magical resistances, and movement traits positions it as a formidable foe for lower-level adventurers. The ooze boasts a decent set of hit points, making it moderately resilient in combat, though its Armor Class is quite low, rendering it easier to hit for characters with reasonable accuracy. With the ability to both damage opponents and heal itself through its Life Drain ability, the Ichor Ooze can prolong engagements effectively. However, its weak Dexterity means it is not particularly quick or evasive in battle.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Its most formidable ability is Life Drain, where a creature grappled by the ooze
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ichor Ooze
 
 *Medium* *Ooze* *neutral evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Life Drain:** One creature grappled by the ooze must make a DC 12 Constitution saving throw, taking 10 (3d6) necrotic damage on a failed save, or half as much damage on a successful one. The target’s hp maximum is reduced by an amount equal to the damage taken, and the ooze regains hp equal to that amount. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hp maximum to 0.
 
 
+</statblock>
 
 

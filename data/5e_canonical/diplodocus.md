@@ -1,6 +1,8 @@
 <MonsterName/>Diplodocus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>7</CR>
+<AC/>14</AC>
+<HP/>139</HP>
 <summary>The Diplodocus is a gargantuan beast known for its immense size and strength. It serves as a formidable physical presence on the battlefield, capable of dealing significant damage with powerful melee attacks. With an Armor Class of 14 and a robust pool of hit points totaling 139, this creature can absorb a considerable amount of damage, making it difficult to take down. However, it has weaknesses, such as low Dexterity, which means it lacks agility and finesse in combat. The creature’s challenge rating of 7 indicates that it is an appropriate challenge for a party of adventurers, awarding 2,900 experience points upon defeat. Overall, the Diplodocus stands as a solid, tank-like monster, perfect for dealing heavy damage but somewhat limited in terms of maneuverability.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Diplodocus is an impressive beast, utilizing its size and strength 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Diplodocus
 
 *Gargantuan* *Beast*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +10 to hit, reach 15 ft., one target. Hit: 17 (3d6 + 7) bludgeoning damage. If the target is a Large or smaller creature  it is pushed 10 feet away from the diplodocus and knocked prone.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Grim Jester</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>11</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Grim Jester is a Medium undead creature with a chaotic evil alignment, embodying both a whimsical and sinister presence. With an Armor Class of 18, it is relatively tough to hit due to its natural armor, and it has a substantial pool of Hit Points at 136, making it resilient in prolonged combat encounters. The creature possesses exceptional dexterity and charisma scores, allowing it to excel in stealth, deception, and performance. Its strengths lie in its ability to incapacitate foes with laughter, its spellcasting capability, and its ability to regenerate after death, which can make it a persistent foe in a campaign. However, it is vulnerable to radiant damage and relies on clever tactics to navigate combat, making it less effective in straightforward melee engagements.</summary>
 
 <detail>
@@ -34,6 +36,7 @@ Overall, the Grim Jester is a whimsical yet deadly adversary, capable of manipul
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grim Jester
 
 *Medium* *Undead* *Chaotic Evil*
@@ -72,5 +75,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Joker’s Shuffle (Recharge 6):** The grim jester exchanges locations with a Medium or smaller creature it can see within 60 feet of it. The jester and target each teleport to the other’s space, and each becomes covered in a magical illusion to look and sound like the other. A creature must take an action to visually inspect an illusion and succeed on a DC 19 Intelligence (Investigation) check to discern that the jester and target are disguised. The illusions last for 1 minute, until the jester dies, or until the jester dismisses them as a bonus action.
+</statblock>
 
 

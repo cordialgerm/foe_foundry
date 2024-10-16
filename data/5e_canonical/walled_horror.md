@@ -1,6 +1,8 @@
 <MonsterName/>Walled Horror</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Walled Horror is a formidable large undead creature that embodies chaos and malevolence. It is recognized for its impressive defenses and devastating psychic abilities, making it a fearsome adversary in combat. The horror's unique mobility, through walls, allows it to engage from unexpected angles while remaining anchored to a specific location, limiting its physical movement. With high hit points and significant damage immunities, it can withstand substantial attacks, but it remains immobile except for its Wall Hop trait which permits it to traverse surfaces. The creature excels at causing fear and mental anguish, leading to its effectiveness in combat; however, its dependency on walls for movement may prove to be a strategic weakness if an opponent can exploit this limitation.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Walled Horror emerges as a terrifying foe, utilizing its defensive 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Walled Horror
 
 *Large* *Undead* *chaotic evil*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Entomb:** The walled horror makes one spectral claw attack against a Medium or smaller creature it is grappling. If the attack hits, the creature is partially entombed in the wall, and the grapple ends. The entombed target is blinded and restrained, and it takes 9 (2d8) psychic damage at the start of each of the walled horror’s turns. A walled horror can have only one creature entombed at a time. <br><br>A creature, including the entombed target, can take its action to free the entombed target by succeeding on a DC 15 Strength check.<br><br>A creature slain while entombed is pulled fully into the wall and can be restored to life only by means of a true resurrection or a wish spell.
 
 
+</statblock>
 
 

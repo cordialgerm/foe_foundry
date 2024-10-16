@@ -1,6 +1,8 @@
 <MonsterName/>Kongamato</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Kongamato is a large, unaligned beast known for its ferocity in combat and immense strength. With high natural armor and a considerable pool of hit points, this creature is a formidable opponent that can withstand significant damage while delivering powerful attacks of its own. Its movement capabilities include a fast walking speed and limited flight, allowing it to maneuver effectively in various environments. However, despite its physical prowess, the Kongamato has very low intelligence and charisma scores, which reflect its lack of social or tactical acumen. It serves as a challenging foe for adventurers, particularly with its unique abilities that disrupt standard combat strategies.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, the Kongamato can unleash a "Terrifying Screech" as a special acti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kongamato
 
 *Large* *Beast* *Unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage.
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage, and the target is grappled (escape DC 15) if it is a Medium or smaller creature. The kongamato has two claws, each of which can grapple only one target.
 - **Terrifying Screech (Recharge 5–6):** The kongamato releases a screech in a 30-foot cone. Each creature in the area must make a DC 15 Constitution saving throw. On a failure, a creature takes 28 (8d6) thunder damage and is frightened until the end of its next turn. On a success, a creature takes half the damage and isn’t frightened.
+</statblock>
 
 

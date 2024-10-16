@@ -1,6 +1,8 @@
 <MonsterName/>Spawn of Arbeyach</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Spawn of Arbeyach is a Medium fiend that embodies lawful evil, making it a formidable adversary in combat. With an Armor Class of 17, it is defensively well-equipped due to its natural armor. It has considerable endurance with 78 hit points, derived from rolling 12d8 and adding 24, placing it above average in terms of survivability for its Challenge Rating of 5. This creature is especially potent in environments where it can utilize its special abilities and hive bonds, which enhance its capabilities significantly. While it possesses good physical attributes, such as a Strength score of 18 granting a +4 modifier which is very good, its weaknesses lie in its relatively low movement speed of 20 feet and lack of spellcasting. The Spawn of Arbeyach is particularly dangerous due to its poison abilities which can incapacitate foes. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a special ability, the Spawn can invoke Children of Arbeyach once per day to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spawn of Arbeyach
 
 *Medium* *Fiend* *Lawful Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 4 (1d8) poison damage.
 - **Stinger:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage plus 13 (3d8) poison damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Children of Arbeyach (1/Day):** The spawn of Arbeyach magically calls 1d4 swarms of insects. The called creatures arrive in 1d4 rounds, acting as allies of the spawn and obeying its spoken commands. The insects remain for 1 hour, until the spawn dies, or until the spawn dismisses them as a bonus action.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Fellforged</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>135</HP>
 <summary>The Fellforged is a medium-sized construct that embodies a blend of mechanical and spectral elements, serving the role of a menacing foe in combat scenarios. With a lawful evil alignment, it is driven by sinister intent, using its unique abilities and resistances to challenge adventurers effectively. It boasts a robust armor class of 15, granting it good defenses, and its total hit points of 135 make it a formidable opponent in battle. Notably, its array of immunities renders it resistant to many conditions, making it difficult to incapacitate. However, it exhibits a vulnerability to sunlight, which hampers its combat efficacy. With a strong constitution score of 17 (+3), it is tough to bring down, but its attack options heavily emphasize necrotic damage, posing a serious threat to the living.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Fellforged can use "Burst Gears," causing the specter to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fellforged
 
 *Medium* *Construct* *Lawful Evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Burst Gears:** The specter within the fellforged strains the construct’s body, sending broken springs and gears flying. Each creature within 5 feet of the fellforged must make a DC 14 Dexterity saving throw, taking 7 (2d6) piercing damage on a failed save, or half as much damage on a successful one. Each time the fellforged uses this bonus action, its speed is reduced by 5 feet, and it can’t use this bonus action if its speed is 0. Its speed returns to normal when it finishes a long rest.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Fey Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Fey Drake is a small, chaotic neutral dragon that embodies the whimsical and mischievous aspects of fey creatures. It possesses a blend of agility and cunning, making it a formidable opponent in combat while also being able to influence and manipulate its foes through its spellcasting abilities. With a high Dexterity score and multiple skills in stealth and deception, it is adept at ambushing or evading attacks. The drake's natural armor grants it a good level of protection, and with a Challenge Rating of 6, it presents a significant challenge to adventurers. However, its relatively low Strength score indicates that it relies more on agility and magic than brute force.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Fey Drake can engage actively using its Multiattack ability, maki
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fey Drake
 
 *Small* *Dragon* *chaotic neutral*
@@ -54,5 +57,6 @@ At will: charm person, color spray, grease
 - **Bewildering Breath (Recharge 5-6):** The drake breaths a plume of purple gas in a 15-foot cone. Each creature in that area must succeed on a DC 16 Wisdom saving throw or be charmed for 1 minute. While charmed, the creature can't take bonus actions or reactions, and it makes all Intelligence, Wisdom, and Charisma skill checks and saving throws with disadvantage.
 
 
+</statblock>
 
 

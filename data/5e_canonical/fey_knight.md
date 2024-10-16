@@ -1,6 +1,8 @@
 <MonsterName/>Fey Knight</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>4</CR>
+<AC/>16</AC>
+<HP/>58</HP>
 <summary>The Fey Knight is a magical creature from the Fey realm, embodying grace and trickery. It is classified as a Medium Fey, possessing an Armor Class of 16 and a total of 58 hit points, calculated as 9d8 plus 18. With a challenge rating of 4, it earns 1,100 experience points when defeated. The Fey Knight is notable for its agility and magical abilities, reflected in its Dexterity score of 18, granting it a good modifier of +4 to Dexterity checks and saving throws. It can move swiftly at a walking speed of 35 feet and can fly at a speed of 60 feet, providing exceptional mobility in combat. While it has a good Constitution score of 14, it also possesses solid mental attributes with a Wisdom score of 16 and a Charisma score of 16, both yielding +3 modifiers. However, it is vulnerable to strong physical attacks due to its relatively average Strength score of 14.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In a defensive capacity, the Fey Knight can use a reaction called **Nature's Shi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fey Knight
 
 *Medium* *Fey*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Natures Shield:** When the knight would be hit by an attack while the knight is within 5 feet of a tree or other large plant, the knights AC magically increases by 3 against that attack as the plant interposes branches or vines between the knight and the attacker.
 
 
+</statblock>
 
 

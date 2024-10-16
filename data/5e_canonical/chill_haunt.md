@@ -1,6 +1,8 @@
 <MonsterName/>Chill Haunt</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>39</HP>
 <summary>The Chill Haunt is a medium-sized undead creature embodying a neutral evil alignment. It wields significant power through its unique abilities and damage immunities, making it a formidable foe in combat. The Chill Haunt excels in avoidance, primarily through its incorporeal movement, allowing it to bypass physical barriers, but it has weaknesses as it cannot withstand nonmagical attacks effectively. With a challenge rating of 3, it poses a significant threat, particularly due to its cold damage abilities and life-draining abilities that can hinder its opponents in battle.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In melee combat, it uses the Shivering Touch, which is a melee weapon attack wit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chill Haunt
 
 *Medium* *Undead* *neutral evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Shivering Touch:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 10 (2d6 + 3) cold damage plus 3 (1d6) necrotic damage. The target must succeed on a DC 12 Constitution saving throw or take 3 (1d6) cold damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target takes fire damage, the effect ends.
 
 
+</statblock>
 
 

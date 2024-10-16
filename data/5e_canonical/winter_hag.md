@@ -1,6 +1,8 @@
 <MonsterName/>Winter Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>17</AC>
+<HP/>120</HP>
 <summary>The Winter Hag is a Medium Fey creature that embodies the mystique and power of winter, making her a formidable opponent in combat. With an impressive armor class of 17 and 120 hit points, she is tough to take down, and her challenge rating of 7 signifies that she is suitable for a party of relatively experienced adventurers. Her greatest strengths lie in her strong melee and ranged attacks, as well as her potent spellcasting abilities, allowing her to manipulate the battlefield and control the flow of combat. However, her reliance on spells and the potential vulnerabilities of her innate magic may provide opportunities for cunning players to exploit her weaknesses.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the Winter Hag combines potent abilities with a strategic approach, mak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Winter Hag
 
 *Medium* *Fey*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Ice Shield:** The hag adds 3 to its AC against one melee attack that would hit it made by a creature it can see. If the attack misses, the attacker takes 14 (4d6) cold damage.
 
 
+</statblock>
 
 

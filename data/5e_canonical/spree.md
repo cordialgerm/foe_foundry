@@ -1,6 +1,8 @@
 <MonsterName/>Spree</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>84</HP>
 <summary>The Spree is a small fiend of chaotic evil nature, characterized by its unpredictable behavior and madness-inducing abilities. With an armor class of 15, it possesses a relatively good level of defense, supplemented by a considerable pool of hit points totaling 84. Despite its diminutive size, the Spree can be a formidable opponent due to its speed of 30 feet and its challenge rating of 5, indicating a significant threat level for adventurers at or around this level. The Spree excels in Dexterity and Constitution with modifiers that are good, making its attack rolls and damage resistances effective. However, it has lower Wisdom and Intelligence scores, rendering its saving throws against Wisdom attacks average and its general knowledge lower than other fiends. Notably, the Spree can trigger chaotic effects in combat, making encounters with it particularly dangerous and erratic.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Spree's "Claw" attack involves a melee weapon attack that again has a +6 to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spree
 
 *Small* *Fiend* *chaotic evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage plus 10 (3d6) poison damage, and the creature must make a DC 14 Constitution saving throw. On a failure, the target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn for 1 minute. This works like the confusion spell. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to this effect for the next 24 hours.
 
 
+</statblock>
 
 

@@ -1,6 +1,10 @@
 <MonsterName/>Assassin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>8</CR>
+<AC/>15 (studded leather)</AC>
+<HP/>78</HP>
 <summary>An Assassin is a master of stealth, precision, and lethal efficiency. Clad in dark, nondescript clothing, they blend seamlessly into shadows, often using poisons or specially crafted weapons to take out their targets swiftly and silently. Assassins are highly trained killers, experts in avoiding detection and exploiting their victim’s weaknesses. They typically strike from the shadows, ensuring their target never sees them coming. While some work for hire, serving criminal organizations or powerful nobles, others might operate with their own personal motives. Cold, calculating, and emotionless, Assassins are deadly foes to those who find themselves on their list.</summary>
 
 <summary>The Assassin is a Medium humanoid creature that excels in stealth, subterfuge, and dealing lethal damage swiftly. With an Armor Class of 16 and Hit Points of 97, they present a significant challenge, primarily due to their high Dexterity score of 16, allowing for exceptional stealth and agility in combat. They are a formidable foe, capable of exploiting the environment and the situation to their advantage, especially with their Assassinate ability that enables them to deliver devastating strikes on unsuspecting targets. Despite their offensive capabilities, they require careful positioning and timing to maximize their effectiveness, as they rely heavily on ambush tactics and the weaknesses of their opponents.</summary>
@@ -49,6 +53,7 @@ As a bonus action, the Assassin can utilize its Hidden Step ability, which allow
 
 Source: 5e_srd
 
+<statblock>
 ### Assassin
 
 *Medium humanoid (any race), any non-good alignment*
@@ -89,7 +94,8 @@ Source: 5e_srd
 
 ***Light Crossbow***. *Ranged Weapon Attack:* +6 to hit, range 80/320 ft., one target. *Hit:* 7 (1d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.
 
-Trained in the use of poison, **assassins** are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them.
+Trained in the use of poison, **assassins** are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them.</statblock>
+
 
 
 
@@ -97,6 +103,7 @@ Trained in the use of poison, **assassins** are remorseless killers who work for
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Assassin
 
 *Medium* *Humanoid*
@@ -135,6 +142,7 @@ Source: 5e_artisinal_monsters
 - **Assassins specialize in dealing quiet:** While some kill for pay, others do so for ideological or political reasons.
 
 
+</statblock>
 
 
 
@@ -143,6 +151,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Assassin
 
 *Medium humanoid (any lineage)*
@@ -177,5 +186,6 @@ Source: 5e_artisinal_monsters
 
 - **Hidden Step.** The assassin magically teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see and takes the Hide action.
 
+</statblock>
 
 

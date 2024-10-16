@@ -1,6 +1,8 @@
 <MonsterName/>Offal Walker</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>37</HP>
 <summary>The Offal Walker is a Medium undead creature that embodies a sinister and grotesque aspect of necromantic horrors. With a neutral evil alignment, it functions primarily as a grappler and control type in a party, typically employed to hinder and bind foes using its unique gut lassos. Its strengths include decent durability with a Constitution score of 16, enabling it to absorb damage effectively, as well as its ability to grapple and restrain multiple opponents simultaneously. However, its Intelligence, Wisdom, and Charisma scores are notably low, indicating poor mental capabilities and social interactions. The Offal Walker poses an interesting challenge due to its undying nature and relentless grappling tactics but can be vulnerable when faced with spells or abilities that target low saving throws.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Offal Walker can execute a "Multiattack" by making one 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Offal Walker
 
 *Medium* *Undead* *neutral evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Reel:** Pulls one creature grappled by it up to 25 ft. straight toward it.
 
 
+</statblock>
 
 

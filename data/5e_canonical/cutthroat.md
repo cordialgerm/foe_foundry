@@ -1,6 +1,8 @@
 <MonsterName/>Cutthroat</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>27</HP>
 <summary>The Cutthroat is a Medium humanoid characterized by its stealthy and cunning nature. As a challenge rating 1 creature, it is designed primarily for hit-and-run tactics in combat, utilizing its Dexterity and skills in deception and stealth to gain an advantage. With an armor class of 12, the Cutthroat is not particularly resilient, making it vulnerable to damage if caught unawares. It has 27 hit points, which affords it some survivability, but its true strength lies in its ability to deal additional damage when opportunities present themselves. Notably, the Cutthroat relies on clever positioning and teamwork to unleash its most powerful attacks.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Cutthroat has two bonus actions that enhance its combat versatility. The fir
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cutthroat
 
 *Medium* *Humanoid*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Rapid Attack:** The cutthroat attacks with their shortsword.
 
 
+</statblock>
 
 

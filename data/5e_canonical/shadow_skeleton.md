@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Shadow Skeleton is a medium undead creature with a neutral evil alignment, created from the remnants of a being that once lived. It serves as a formidable enemy in combat, relying on its agility and a mix of melee and ranged attacks to confound and weaken foes. With an Armor Class of 13 and Hit Points totaling 52, this creature demonstrates strong resilience in battle, augmented by its immunities to poison damage and several resistances, including fire, piercing, and slashing. The Shadow Skeleton possesses average physical strength but excels in Dexterity, enabling it to evade attacks effectively while delivering swift strikes. Notably, its actions can inflict significant damage while imposing debilitating effects on its targets.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, it employs its Finger Darts as a ranged attack. This ability also 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Skeleton
 
 *Medium* *Undead* *neutral evil*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Finger Darts:** Ranged Weapon Attack: +5 to hit, range 30 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 3 (1d6) necrotic damage. If the target is a creature other than an undead or a construct, it must make a DC 12 Constitution saving throw. On a failure, the target is surrounded by a shadowy aura for 1 minute. While surrounded by the aura, the target takes an extra 7 (2d6) necrotic damage when hit by the scimitar attack of a shadow skeleton. Any creature can take an action to extinguish the shadow with a successful DC 12 Intelligence (Arcana) check. The shadow also extinguishes if the target receives magical healing.
 
 
+</statblock>
 
 

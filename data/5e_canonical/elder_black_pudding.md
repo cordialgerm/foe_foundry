@@ -1,6 +1,8 @@
 <MonsterName/>Elder Black Pudding</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>8</CR>
+<AC/>7</AC>
+<HP/>171</HP>
 <summary>The Elder Black Pudding is a formidable Huge ooze that serves as a dangerous opponent in encounters. With a Challenge Rating of 8, it presents a significant challenge due to its robust hit points totaling 171, defined by 18d12+54. Its low Armor Class of 7 makes it vulnerable to attacks, but its corrosive properties and ability to absorb melee strikes create a formidable defensive strategy. This creature is particularly strong against physical attacks, as it has immunities to acid, cold, lightning, and slashing damage. Its abilities allow it to navigate obstacles effortlessly and deal substantial damage to those who engage it in close combat. However, its lack of intelligence and wisdom indicates it is not capable of complex strategies, and its sensitivity to sunlight may create opportunities for clever adventurers to exploit.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ The Elder Black Pudding's reaction is:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elder Black Pudding
 
 *Huge* *Ooze*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Split:** When a Medium or larger pudding with at least 10 hit points is subjected to lightning or slashing damage, it splits into two puddings that are each one size smaller. Each new pudding has half the originals hit points (rounded down).
 
 
+</statblock>
 
 

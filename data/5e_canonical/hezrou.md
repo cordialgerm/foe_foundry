@@ -1,6 +1,9 @@
 <MonsterName/>Hezrou (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>demon</Subtype>
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>136</HP>
 <summary>A Hezrou is a hulking, amphibious demon with a toad-like body and powerful limbs. These creatures are among the brutish enforcers of the Abyss, serving more powerful demons in battles against their enemies. Hezrous exude a foul stench that sickens and weakens those nearby, and their thick, warty skin provides them with protection against most attacks. In combat, they rely on their brute strength to crush and maul foes, often grappling and tearing enemies apart with their claws and teeth. Despite their simple minds, Hezrous are dangerous due to their raw power and relentless aggression.</summary>
 
 <summary>The Hezrou is a large fiend known for its chaotic and evil nature. As a formidable creature in combat, it boasts a significant armor class of 16 and a total of 136 hit points, making it a tough adversary in battle. This creature walks at a speed of 40 feet and has a Challenge Rating of 10, which indicates it can provide a significant challenge for a party of adventurers, granting them 5,900 experience points upon defeat. The Hezrou's strengths lie in its strong physical attributes—particularly its Strength and Constitution, with scores of 18 (+4) and 20 (+5), respectively—allowing it to deal substantial damage while withstanding attacks. However, it suffers from low Intelligence, which restricts its strategic options in terms of spellcasting and problem-solving.</summary>
@@ -50,6 +53,7 @@ Overall, the Hezrou stands as a challenging and capable opponent in combat, comb
 
 Source: 5e_srd
 
+<statblock>
 ### Hezrou (Demon)
 
 *Large fiend (demon), chaotic evil*
@@ -88,7 +92,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 15 (2d10+4) piercing damage.
 
-***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.
+***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.</statblock>
+
 
 
 
@@ -96,6 +101,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hezrou
 
 *Large* *Fiend*
@@ -137,6 +143,7 @@ Source: 5e_artisinal_monsters
 - **Stench (1/Day):** When hit by a melee attack, the hezrou emits a cloud of foul-smelling poison gas in a 20-foot radius. Each creature in the area makes a DC 14 Constitution saving throw. On a failure, a creature is poisoned for 1 minute. A creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success
 
 
+</statblock>
 
 
 
@@ -145,6 +152,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hezrou
 
 *Large fiend (demon)*
@@ -184,5 +192,6 @@ Source: 5e_artisinal_monsters
 
 - **Quick Leap.** The hezrou jumps horizontally up to 20 feet to an unoccupied space it can see without provoking opportunity attacks.
 
+</statblock>
 
 

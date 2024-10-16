@@ -1,6 +1,9 @@
 <MonsterName/>Nalfeshnee (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>demon</Subtype>
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>184</HP>
 <summary>A Nalfeshnee is a grotesque, towering demon that combines the features of a boar, an ape, and a vulture. Its massive, bloated body and wings give it a horrifying, bloated appearance, and its tusked face is filled with hunger and rage. Nalfeshnees are known for their intelligence and cruelty, often serving as judges or overseers in the Abyss. They can unleash waves of demonic energy, spreading madness and confusion among their enemies. In battle, they rely on both their physical strength and their ability to summon dark magic to crush their foes. Though they are brutish in appearance, Nalfeshnees are cunning and manipulative, using their power to command legions of lesser demons.</summary>
 
 <summary>The Nalfeshnee is a formidable Large Fiend, embodying the essence of chaos and evil in the Dungeons & Dragons universe. With a high Armor Class of 18 and a substantial pool of 184 hit points, it can endure significant damage before succumbing in battle. This creature is proficient in both melee and magical combat, making it a versatile threat to any adventurer. With a Challenge Rating of 13, it presents a considerable challenge, capable of dealing heavy damage with its melee attacks as well as powerful area-of-effect spells. However, its speed is somewhat sluggish, only moving 20 feet on the ground and 30 feet while flying, which can be a weakness if it faces more agile opponents. The Nalfeshnee uses both its physical prowess and its magical abilities to dominate the battlefield, making it a dangerous foe when encountered.</summary>
@@ -37,6 +40,7 @@ Overall, the Nalfeshnee presents a mix of deception, fear, and brutal strength, 
 
 Source: 5e_srd
 
+<statblock>
 ### Nalfeshnee (Demon)
 
 *Large fiend (demon), chaotic evil*
@@ -77,7 +81,8 @@ Source: 5e_srd
 
 ***Horror Nimbus (Recharge 5-6)***. The nalfeshnee magically emits scintillating, multicolored light. Each creature within 15 feet of the nalfeshnee that can see the light must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the nalfeshnee's Horror Nimbus for the next 24 hours.
 
-***Teleport***. The nalfeshnee magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+***Teleport***. The nalfeshnee magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.</statblock>
+
 
 
 
@@ -85,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nalfeshnee
 
 *Large* *Fiend*
@@ -125,6 +131,7 @@ Source: 5e_artisinal_monsters
 - **Teleport:** The nalfeshnee magically teleports up to 120 feet to an unoccupied space it can see.
 
 
+</statblock>
 
 
 
@@ -133,6 +140,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nalfeshnee
 
 *Large fiend (demon)*
@@ -173,5 +181,6 @@ Source: 5e_artisinal_monsters
 
 - **Sudden Feast.** When a creature the nalfeshnee can see within 20 feet of it is reduced to 0 HP or dies, the nalfeshnee can move up to its speed toward the creature without provoking opportunity attacks then feast on the creature, if it moves to within 5 feet of the creature. The nalfeshnee regains HP equal to twice the creature’s CR or class level, and the creature has disadvantage on the next death save it makes, if it is making death saves.
 
+</statblock>
 
 

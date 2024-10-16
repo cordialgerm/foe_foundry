@@ -1,6 +1,8 @@
 <MonsterName/>Bulette</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>94</HP>
 <summary>The Bulette, also known as a 'land shark,' is a massive, burrowing predator with a thick, armored hide. Its head is large and wedge-shaped, allowing it to dig through the earth with ease, while its powerful limbs propel it through the soil at great speeds. Bulettes are ambush predators, bursting out of the ground to devour anything in their path. Their sharp teeth and claws can tear through flesh, stone, and metal alike. These creatures are highly territorial and will attack anything that enters their hunting grounds. Though not particularly intelligent, their brute strength and speed make them formidable.</summary>
 
 <summary>The Bulette is a formidable large monstrosity known for its brute strength and tenacity in combat. Its notable ability to burrow allows it to surprise unsuspecting foes while its powerful attacks can deal substantial damage. With a challenging rating of 6, the Bulette poses a significant threat to adventurers who venture into its territory. However, despite its physical prowess and low intelligence, which is rated at a very bad -4, the Bulette compensates with high scores in strength and constitution, reflecting its hardy nature. Its weaknesses include a lack of ranged attacks and reliance on direct confrontation.</summary>
@@ -41,6 +43,7 @@ Overall, the bulette presents a formidable challenge in combat, relying on both 
 
 Source: 5e_srd
 
+<statblock>
 ## Bulette
 
 *Large monstrosity, unaligned*
@@ -69,7 +72,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 30 (4d12+4) piercing damage.
 
-***Deadly Leap***. If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6+4) bludgeoning damage plus 14 (3d6+4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space.
+***Deadly Leap***. If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6+4) bludgeoning damage plus 14 (3d6+4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space.</statblock>
+
 
 
 
@@ -77,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bulette
 
 *Large* *Monstrosity*
@@ -112,6 +117,7 @@ Source: 5e_artisinal_monsters
 - **Hard Carapace (1/Day):** After taking damage from an attack, the bulette lies down and closes its eyes, protecting all vulnerable spots. Until the beginning of its next turn, its AC becomes 21 and it has advantage on saving throws.
 
 
+</statblock>
 
 
 
@@ -120,6 +126,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bulette
 
 *Large monstrosity*
@@ -154,5 +161,6 @@ Source: 5e_artisinal_monsters
 
 - **Seek Prey.** The bulette looks and sniffs around for new prey, releasing a satisfied, guttural chirp when it settles on one. One creature the bulette can see or sense within 30 feet of it and that can see or hear the bulette must make a DC 15 WIS save. On a failure, the target is frightened until the end of its next turn, and the bulette has advantage on the next attack roll it makes against the creature before the start of its next turn.
 
+</statblock>
 
 

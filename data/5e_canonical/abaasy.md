@@ -1,6 +1,8 @@
 <MonsterName/>Abaasy</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>8</CR>
+<AC/>18</AC>
+<HP/>126</HP>
 <summary>The Abaasy is a formidable Huge Giant characterized by its neutral evil alignment and the chaos it brings to combat. With an armor class of 18, it is quite durable, augmented by its use of Dual Shields which grant it significant defensive capabilities. Sporting a remarkable 126 hit points, it can withstand substantial damage. The Abaasy is particularly dangerous due to its strong melee capabilities, with high strength and constitution scores, combined with a unique ability to go berserk when in pain. This can turn the tide in battle as it becomes a relentless attacker. However, its poor depth perception gives it a disadvantage against targets that are over 30 feet away, which can be a significant tactical weakness. The Abaasy fills the role of a powerful frontline combatant that can absorb damage and dish it out effectively.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ In terms of actions, the Abaasy can perform the following:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Abaasy
 
 *Huge* *Giant* *neutral evil*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Eyebeam (Recharge 5–6):** Fires a beam of oscillating energy from its eye in a 90' line that is 5 ft. wide. Each creature in the line: 27 (5d10) radiant (DC 16 Dex half).
 
 
+</statblock>
 
 

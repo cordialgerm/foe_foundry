@@ -1,6 +1,8 @@
 <MonsterName/>Deep One Priest</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>105</HP>
 <summary>The Deep One Priest is a formidable medium humanoid creature characterized by its chaotic evil alignment. Known for its aquatic origins, this priest embodies a mix of both charm and menace, adept at manipulating and overpowering its foes. With a robust constitution and a high strength rating, it excels in melee combat, while its spellcasting abilities provide it with strategic options in various encounters. However, it is vulnerable to fire damage, which can exploit its weaknesses in combat. As a creature capable of fascinating listeners and altering their memories, it presents a unique challenge in both social interactions and conflict situations.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ As for its spellcasting capabilities, the Deep One Priest has access to several 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deep One Priest
 
 *Medium* *Humanoid* *Chaotic Evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
 - **Jolting Touch:** Melee Spell Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) lightning damage, and the target’s speed is reduced by 10 until the end of its next turn.
 - **Spellcasting:** The deep one priest casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 13):<br>At will: guidance, thaumaturgy<br>3/day each: command, sleep<br>1/day each: spirit guardians
+</statblock>
 
 

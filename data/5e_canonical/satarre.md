@@ -1,6 +1,8 @@
 <MonsterName/>Satarre</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (leather armor)</AC>
+<HP/>40</HP>
 <summary>The Satarre is a medium humanoid creature designed as a versatile combatant. It possesses a reasonable Armor Class of 12, complemented by 40 hit points, making it fairly resilient in battle for its challenge rating of 1. The Satarre has decent physical abilities with a strength modifier of +2, dexterity modifier of +1, and constitution modifier of +1, resulting in overall good effectiveness in melee combat, particularly with its attack options. However, its intelligence and wisdom scores are average, which may limit its utility in encounters that rely on knowledge or perception checks. Notably, the Satarre is resistant to certain debilitating conditions due to its special abilities, allowing it to maintain its effectiveness in combat.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For its actions, the Satarre can perform a "Multiattack," allowing it to make tw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Satarre
 
 *Medium humanoid*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 3 (1d6) necrotic damage.
 - **Spear.** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 3 (1d6) necrotic damage.
 
+</statblock>
 
 

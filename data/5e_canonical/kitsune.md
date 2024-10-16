@@ -1,6 +1,8 @@
 <MonsterName/>Kitsune</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>49</HP>
 <summary>The Kitsune is a Small Fey creature known for its chaotic neutral alignment. It serves as a trickster and manipulator, often leveraging its inherent magical abilities to outwit opponents and escape dangerous situations. With an Armor Class of 12 and 49 hit points derived from 14d6, it is not overly durable for a creature of its challenge rating of 2, which provides a moderate level of threat to adventurers. The Kitsune's natural agility, indicated by a Dexterity score of 15 (+2 modifier, which is good), allows it to evade attacks and use its spells effectively. However, it has low physical strength (STR 8, -1 modifier, which is very bad) and average constitution (CON 11, +0 modifier), making it weak in direct combat encounters where strength and resilience are critical.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Kitsune can perform a Multiattack, which includes one r
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kitsune
 
 *Small* *Fey* *chaotic neutral*
@@ -51,5 +54,6 @@ At will: detect thoughts, fire bolt (2d10), invisibility (self only), major imag
 - **Attack:** +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 
 
+</statblock>
 
 

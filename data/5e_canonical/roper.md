@@ -1,6 +1,8 @@
 <MonsterName/>Roper</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>93</HP>
 <summary>A Roper is a monstrous, stone-like creature that blends into cavern walls, lying in wait for unsuspecting prey. Its long, rope-like tendrils can extend outwards to grapple and reel in creatures, dragging them towards its maw filled with sharp teeth. Ropers are ambush predators, often lurking in dark caves or underground tunnels, using their camouflage to remain hidden until the perfect moment to strike. Despite their slow movement, their tendrils have an impressive reach, making them highly dangerous to anyone who enters their lair.</summary>
 
 <summary>The Roper is a large monstrosity that embodies the ambush predator archetype within the Dungeons & Dragons universe. It is proficient in both melee attacks and grappling, making it a formidable opponent in close quarters. With an impressive armor class of 20 and a substantial hit point total of 93, the Roper can withstand significant damage. Its challenge rating of 5 indicates that it is designed for mid-level adventurers, presenting a serious threat to unprepared characters. The Roper's ability to disguise itself as a stalactite or stalagmite allows it to ambush unsuspecting foes. However, its low mobility with a speed of only 10 feet can be a weakness, making it reliant on its ranged attacks with tendrils and static positioning.</summary>
@@ -31,6 +33,7 @@ Overall, the Roper is a patient ambusher with tactics centered around controllin
 
 Source: 5e_srd
 
+<statblock>
 ## Roper
 
 *Large monstrosity, neutral evil*
@@ -67,7 +70,8 @@ Source: 5e_srd
 
 ***Tendril***. *Melee Weapon Attack:* +7 to hit, reach 50 ft., one creature. *Hit:* The target is grappled (escape DC 15). Until the grapple ends, the target is restrained and has disadvantage on Strength checks and Strength saving throws, and the roper can't use the same tendril on another target.
 
-***Reel***. The roper pulls each creature grappled by it up to 25 feet straight toward it.
+***Reel***. The roper pulls each creature grappled by it up to 25 feet straight toward it.</statblock>
+
 
 
 
@@ -75,6 +79,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Roper
 
 *Large* *Monstrosity*
@@ -107,6 +112,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage plus 9 (2d8) acid damage.
 
 
+</statblock>
 
 
 
@@ -115,6 +121,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Roper
 
 *Large monstrosity*
@@ -156,5 +163,6 @@ Source: 5e_artisinal_monsters
 
 - **Snapping Tendril.** When a Grasping Tendril that is grappling a creature is destroyed, the roper can quickly pull the remains of that tendril back to it with a whipping snap. Each creature within 10 feet of the roper must succeed on a DC 15 DEX save or be knocked prone.
 
+</statblock>
 
 

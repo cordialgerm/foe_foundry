@@ -1,6 +1,8 @@
 <MonsterName/>Ravenfolk Scout</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (studded leather)</AC>
+<HP/>27</HP>
 <summary>The Ravenfolk Scout is a medium humanoid creature that serves a versatile role on the battlefield, often acting as a skirmisher or stealthy observer. This creature is neutral in alignment, which allows it to operate without a strict moral code. With a decent Armor Class of 14, thanks to its studded leather armor, and 27 hit points, the Ravenfolk Scout is reasonably resilient for its challenge rating of 1/2, indicating it is appropriate for low-level encounters. The creature excels in Dexterity-based tasks, indicated by its Dexterity score of 14, which provides a good modifier of +2, making it effective in ranged and stealth combat. However, its lack of significant offensive power or high durability makes it vulnerable when caught in direct confrontations. Notably, its special ability to mimic sounds can provide tactical advantages in various scenarios.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ The Rangerfolk Scout can perform several actions in combat:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ravenfolk Scout
 
 *Medium* *Humanoid* *Neutral*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Rapier:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.
 - **Longbow:** Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.
 - **Ghost Wings:** The ravenfolk scout furiously “beats” a set of phantasmal wings. Each creature within 5 feet of the ravenfolk must succeed on a DC 12 Dexterity saving throw or be blinded until the start of its next turn.
+</statblock>
 
 

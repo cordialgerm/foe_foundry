@@ -1,6 +1,8 @@
 <MonsterName/>Repository</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Repository is a formidable Medium Construct that operates without alignment, presenting a challenge for any adventuring party that encounters it. With an Armor Class of 15 and 110 hit points, it stands as a reasonably tough opponent, especially for its Challenge Rating of 7, translating to 2,900 experience points. The Repository possesses impressive physical attributes, particularly its Strength of 19, indicating a very good melee attack potential, and a Constitution score of 18, which provides exceptional durability. The creature has some notable advantages in combat, including damage immunities and resistances, but it also has weaknesses rooted in its lack of certain defenses and its limited capabilities against magic.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ During combat, the Repository can utilize Multiattack to perform two melee Slash
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Repository
 
 *Medium* *Construct* *unaligned*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Language Lash (Recharge 5-6):** The repository utters words of power, unleashing psychic energy in a 30-foot cone. Each creature in that area must make a DC 15 Intelligence saving throw. On a failure, a creature takes 14 (4d6) psychic damage and is incapacitated for 1 minute. On a success, a creature takes half the damage and isn’t stunned. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

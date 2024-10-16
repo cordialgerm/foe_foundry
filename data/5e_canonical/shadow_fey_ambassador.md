@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Fey Ambassador</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (studded leather)</AC>
+<HP/>161</HP>
 <summary>The Shadow Fey Ambassador is a medium humanoid creature that embodies the essence of lawful evil. This sinister being is capable of manipulating both social dynamics and the shadows from which it emerges. With a high Armor Class of 16, it is relatively difficult to hit, and with 161 hit points, it can withstand a considerable amount of damage. The ambassador's challenge rating of 9 indicates that it poses a significant threat to adventurers, offering 5,000 experience points upon defeat. It possesses remarkable dexterity and charisma, making it exceptionally effective at deception, persuasion, and intimidation, while its key abilities and actions revolve around charm and fear.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The ambassador's Honeyed Words ability recharges after a long rest and showcases
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Fey Ambassador
 
 *Medium* *Humanoid* *lawful evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Withering Stare:** The shadow fey ambassador targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the ambassador's Withering Stare for the next 24 hours.
 
 
+</statblock>
 
 

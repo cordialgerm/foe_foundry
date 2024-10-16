@@ -1,6 +1,8 @@
 <MonsterName/>Fire Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>13</AC>
+<HP/>102</HP>
 <summary>A Fire Elemental is a living, ever-burning mass of flame, constantly flickering and shifting in form. Its body is composed entirely of fire, with no solid matter, and its movements are fast and unpredictable, like a wildfire. Fire Elementals are incredibly destructive, igniting everything they touch and consuming it in flames. They are summoned from the Elemental Plane of Fire and are often used by powerful spellcasters to wreak havoc on their enemies. Despite their chaotic nature, Fire Elementals are intelligent and can be commanded by those who summon them, though they are always eager to burn and destroy.</summary>
 
 <summary>The Fire Elemental is a Large elemental creature characterized by its mastery over fire and its ability to move swiftly across the battlefield. With a Challenge Rating of 5, it poses a respectable threat to adventurers, especially those unprepared for its fiery capabilities. Its notable strengths include being immune to fire and poison damage, as well as having several damaging effects that can continuously harm enemies within close proximity. However, it does have vulnerabilities, particularly to cold damage, which it takes if it encounters water. The Fire Elemental excels in melee combat with its Multiattack action and has powerful area denial abilities through its Fiery Aura.</summary>
@@ -42,6 +44,7 @@ As a bonus action, the Fire Elemental can use "Fiery Dash" (which recharges on a
 
 Source: 5e_srd
 
+<statblock>
 ### Fire Elemental
 
 *Large elemental, neutral*
@@ -78,7 +81,8 @@ Source: 5e_srd
 
 ***Multiattack***. The elemental makes two touch attacks.
 
-***Touch***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.
+***Touch***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.</statblock>
+
 
 
 
@@ -86,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire Elemental
 
 *Large* *Elemental*
@@ -121,6 +126,7 @@ Source: 5e_artisinal_monsters
 - **Wildfire (Recharge 4-6):** The elemental moves up to half its Speed without provoking opportunity attacks. It can enter the spaces of hostile creatures but not end this movement there. When a creature shares its space with the elemental for the first time during this movement  the creature is subject to the elementals Fiery Aura and the elemental can make a slam attack against that creature.
 
 
+</statblock>
 
 
 
@@ -129,6 +135,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire Elemental
 
 *Large elemental*
@@ -167,5 +174,6 @@ Source: 5e_artisinal_monsters
 
 - **Fiery Dash (Recharge 4–6).** The elemental moves up to 20 feet in a straight line and can move through the space of any Large or smaller creature without provoking opportunity attacks. Each space along that line catches fire until the start of the elemental’s next turn. A creature that enters a burning space for the first time on a turn or starts its turn there must succeed on a DC 14 DEX save or take 5 (1d10) fire damage.
 
+</statblock>
 
 

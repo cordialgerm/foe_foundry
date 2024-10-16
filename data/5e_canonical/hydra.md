@@ -1,6 +1,8 @@
 <MonsterName/>Hydra</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>172</HP>
 <summary>A Hydra is a massive, multi-headed reptilian monster with a serpentine body and regenerative abilities. Each of its heads is capable of independently attacking with sharp fangs and delivering deadly bites. When one of its heads is severed, two more grow in its place unless the wound is cauterized. Hydras are found in swamps, lakes, or caves near bodies of water, where they ambush their prey. Their thick, scaly hide makes them resistant to most attacks, and their regeneration makes them nearly unstoppable in combat. Hydras are relentless predators, and their many heads make them capable of striking multiple enemies at once.</summary>
 
 <summary>The Hydra is a formidable Huge monstrosity known for its multiple heads and regeneration abilities. It serves as a challenging opponent in combat, often found in watery lairs, and can present a significant threat to adventurers due to its high damage output, resistance to being incapacitated, and poison-infused environment. With a Challenge Rating of 9, it provides substantial experience for defeating it and can overwhelm enemies through sheer numbers, making it a central figure in battles. However, it does have notable weaknesses, particularly its vulnerability to fire damage, which can prevent its regenerative abilities. </summary>
@@ -55,6 +57,7 @@ Overall, the Hydra combines resilience, multiple attacks, and powerful area dama
 
 Source: 5e_srd
 
+<statblock>
 ## Hydra
 
 *Huge monstrosity, unaligned*
@@ -93,7 +96,8 @@ At the end of its turn, it grows two heads for each of its heads that died since
 
 ***Multiattack***. The hydra makes as many bite attacks as it has heads.
 
-***Bite***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 10 (1d10+5) piercing damage.
+***Bite***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 10 (1d10+5) piercing damage.</statblock>
+
 
 
 
@@ -101,6 +105,7 @@ At the end of its turn, it grows two heads for each of its heads that died since
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hydra
 
 *Huge* *Monstrosity*
@@ -141,6 +146,7 @@ Source: 5e_artisinal_monsters
 - **The hydra can take 2 legendary actions:** Only one legendary action can be used at a time and only at the end of another creatures turn. It regains spent legendary actions at the start of its turn.
 - **Rush:** The hydra moves or swims up to half its Speed without provoking opportunity attacks. If this movement would pass through the space of creatures that are not incapacitated or prone, each creature makes a DC 17 Strength saving throw. On a failure, the creature is knocked prone and the hydra can enter its space without treating it as difficult terrain. On a success, the hydra can't enter the creatures space, and the hydras movement ends. If this movement ends while the hydra is sharing a space with a creature, the creature is pushed to the nearest unoccupied space.
 - **Wrap:** Melee Weapon Attack: +9 to hit, reach 10 ft., one Medium or smaller creature. Hit: The target is grappled (escape DC 17) and restrained until this grappled ends. The hydra can grapple one creature for each of its heads. When one of the hydras heads is killed while it is grappling a creature, the creature that killed the head can choose one creature to free from the grapple.
+</statblock>
 
 
 
@@ -149,6 +155,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hydra
 
 *Huge dragon*
@@ -185,5 +192,6 @@ Source: 5e_artisinal_monsters
 
 - **Bloody Burst (Has Fewer Than Five Heads).** The hydra squeezes the stumps of its severed heads, spraying blood and gore. Each creature within 5 feet of the hydra must succeed on a DC 16 CON save or be incapacitated until the end of its next turn and poisoned for 1 minute. A poisoned creature can repeat the save at the end of each of its turns, ending the effect on itself on a success.
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Ravenfolk Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (studded leather armor)</AC>
+<HP/>78</HP>
 <summary>The Ravenfolk Warrior is a medium humanoid creature, embodying a blend of fighting prowess and magical abilities. With a challenge rating of 3, it presents a moderate threat in combat scenarios, primarily serving as a melee attacker with the capability to deal both piercing and radiant damage. Its strengths lie in its Dexterity, making it agile and adept in stealth, while its Constitution offers decent durability. However, its Intelligence and Charisma are average, indicating that it may not excel in social interactions or complex problem-solving. The creature is notable for its ability to mimic sounds and utilize magical weaponry, making it a versatile opponent on the battlefield.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Lastly, the Ravenfolk Warrior has a powerful reaction known as Odin's Call, whic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ravenfolk Warrior
 
 *Medium* *Humanoid* *Neutral*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Odin’s Call (Recharge 6):** When the ravenfolk warrior takes damage while below half its hp maximum, it moves up to half its speed without provoking opportunity attacks.
+</statblock>
 
 

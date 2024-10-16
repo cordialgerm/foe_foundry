@@ -1,6 +1,8 @@
 <MonsterName/>Ratfolk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (studded leather)</AC>
+<HP/>17</HP>
 <summary>The Ratfolk is a small humanoid creature known for its agility and cunning nature. With a neutral alignment, it is often seen as a sly opportunist rather than a malevolent being. The Ratfolk excels in evasion and teamwork, leveraging its nimbleness and the advantage provided by its allies in combat. Despite being physically weaker with low strength and moderate hit points, it compensates with good dexterity and intelligence, making it a capable combatant in groups. Its challenge rating of 1/4 suggests it can be a minor but interesting opponent or ally in adventures, offering unique strategic advantages.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Ratfolk is a versatile small creature with strategic potential, bes
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ratfolk
 
 *Small* *Humanoid* *Neutral*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Dagger:** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 - **Light Crossbow:** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage.
+</statblock>
 
 

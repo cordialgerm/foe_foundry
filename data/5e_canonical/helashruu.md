@@ -1,6 +1,8 @@
 <MonsterName/>Helashruu</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>184</HP>
 <summary>The Helashruu is a formidable Huge Aberration characterized by its chaotic evil alignment. With an impressive Armor Class of 18, it possesses a substantial pool of Hit Points totaling 184, making it a durable adversary in combat. The creature boasts extraordinary physical attributes with a Strength score of 20, providing it with a +5 modifier, indicating a very good effectiveness in physical confrontations. It has a consistent flying speed of 50 feet, which allows it to maneuver effectively around the battlefield. As a Challenge Rating 13 creature, it represents a significant threat, with a reward of 10,000 experience points for any party that can overcome it. While the Helashruu can be a powerful opponent with a variety of abilities and spells at its disposal, it has vulnerabilities to bludgeoning and thunder damage, which could be exploited by tactically astute adventurers.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Helashruu is a complex and powerful creature that poses a significa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Helashruu
 
 *Huge* *Aberration* *chaotic evil*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Dimensional Hop (3/Day):** The helashruu can transport itself to a different plane of existence. This works like the plane shift spell, except the helashruu can affect only itself and can’t use this action to banish an unwilling creature to another plane.
 
 
+</statblock>
 
 

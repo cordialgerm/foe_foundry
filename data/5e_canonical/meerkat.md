@@ -1,6 +1,8 @@
 <MonsterName/>Meerkat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>11</AC>
+<HP/>2</HP>
 <summary>The Meerkat is a tiny unaligned beast that typically plays the role of a minor creature in the game, often serving as an amusing or thematic addition to an environment rather than a significant combat threat. With an Armor Class of 11 and only 2 hit points, it possesses very low durability and is easily taken out in combat, making it a weak adversary. Its strengths lie in its keen senses and nimbleness rather than brute force, allowing it to potentially enhance the gameplay experience in scenarios involving stealth or exploration. However, it lacks any meaningful offensive capabilities and is generally best utilized in non-combat contexts.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ For actions in combat, the Meerkat has a Bite attack, which is a melee weapon at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Meerkat
 
 *Tiny* *Beast* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +3 to hit, 5 ft., one creature,. 1 piercing.
 
 
+</statblock>
 
 

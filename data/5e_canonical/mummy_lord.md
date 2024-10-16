@@ -1,6 +1,8 @@
 <MonsterName/>Mummy Lord</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>15</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>97</HP>
 <summary>A Mummy Lord is a powerful undead ruler, often a former king or high priest preserved through ancient rituals. Unlike ordinary mummies, Mummy Lords retain their intelligence and magical abilities, using dark magic to curse and control their enemies. Their decayed, bandage-wrapped bodies are imbued with powerful necromantic energy, making them nearly impervious to most forms of attack. Mummy Lords command legions of undead and are often found guarding ancient tombs filled with riches. They can curse enemies with a mere touch, and their presence alone can cause dread and despair in those who face them.</summary>
 
 <summary>The Mummy Lord is a formidable undead creature with a medium size classification, embodying the horrors of ancient curses and necromancy. With an impressive Armor Class of 17 and a substantial pool of hit points totaling 221, the Mummy Lord stands as a resilient adversary. Its challenge rating of 15 indicates that it is intended for high-level encounters, rewarding players with 13,000 experience points upon defeat. The creature excels in ranged and melee combat with abilities that cause severe status effects like the Mummy Rot curse, making it a significant threat in both combat and strategy. However, like many undead, it has its vulnerabilities, particularly to fire damage, which can cause it to ignite.</summary>
@@ -57,6 +59,7 @@ These attributes, actions, and abilities make the Mummy Lord a complex opponent 
 
 Source: 5e_srd
 
+<statblock>
 ### Mummy Lord
 
 *Medium undead, lawful evil*
@@ -121,7 +124,8 @@ The mummy lord can take 3 legendary actions, choosing from the options below. On
 
 **Channel Negative Energy (Costs 2 Actions)**. The mummy lord magically unleashes negative energy. Creatures within 60 feet of the mummy lord, including ones behind barriers and around corners, can't regain hit points until the end of the mummy lord's next turn.
 
-**Whirlwind of Sand (Costs 2 Actions)**. The mummy lord magically transforms into a whirlwind of sand, moves up to 60 feet, and reverts to its normal form. While in whirlwind form, the mummy lord is immune to all damage, and it can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment worn or carried by the mummy lord remain in its possession.
+**Whirlwind of Sand (Costs 2 Actions)**. The mummy lord magically transforms into a whirlwind of sand, moves up to 60 feet, and reverts to its normal form. While in whirlwind form, the mummy lord is immune to all damage, and it can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment worn or carried by the mummy lord remain in its possession.</statblock>
+
 
 
 
@@ -129,6 +133,7 @@ The mummy lord can take 3 legendary actions, choosing from the options below. On
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mummy Lord
 
 *Medium* *Undead*
@@ -197,6 +202,7 @@ Source: 5e_artisinal_monsters
 - **Attack (Costs 2 Actions):** The mummy lord uses Dreadful Glare or attacks with its rotting fist.
 - **Blasphemous Word (Costs 2 Actions):** Each non-undead creature within 10 feet of the mummy lord that can hear its magical imprecation makes a DC 16 Constitution saving throw. On a failure, a creature is stunned until the end of the mummy lords next turn.
 - **Dispel Magic (Costs 2 Actions):** The mummy lord casts dispel magic.
+</statblock>
 
 
 
@@ -205,6 +211,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mummy Lord
 
 *Medium undead*
@@ -262,5 +269,6 @@ The mummy lord can take 3 legendary actions, choosing from the options below. On
 ### Regional Effects
 
 - **1d10** If the mummy lord dies, these effects fade in  days.
+</statblock>
 
 

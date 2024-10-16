@@ -1,6 +1,8 @@
 <MonsterName/>Giant Seahorse</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>22</HP>
 <summary>The Giant Seahorse is a large beast well-suited to aquatic environments. Its primary role in encounters is often as a minor threat or as a transportation option, given its capability to swim efficiently. With an Armor Class of 13, it can withstand moderate attacks, though its 22 hit points (4d10) make it relatively fragile compared to stronger monsters. The Giant Seahorse lacks terrestrial mobility due to its speed of 0 feet on land, but it excels in water, boasting a swimming speed of 40 feet. Its challenge rating of 1/2 indicates that it is intended for low-level encounters, providing 100 experience points when defeated. Generally, the Giant Seahorse has decent Dexterity and a good initiative which allows it to be somewhat agile in the water, while its Strength is above average, making its physical attacks potent. However, its low Intelligence and Charisma limit its role in social interactions and complex actions.</summary>
 
 <detail>
@@ -34,6 +36,7 @@ Overall, the Giant Seahorse is well-suited for aquatic encounters where its abil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Seahorse
 
 *Large* *Beast*
@@ -61,6 +64,7 @@ Source: 5e_artisinal_monsters
 - **Ram:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4+1) bludgeoning damage. If the seahorse moves at least 20 feet straight towards the target before the attack  the attack deals an extra 5 (2d4) bludgeoning damage and the target makes a DC 11 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 
 
@@ -69,6 +73,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Seahorse, Giant
 
 *Large beast*
@@ -102,5 +107,6 @@ Source: 5e_artisinal_monsters
 
 - **Grasping Tail.** The seahorse grabs one Medium or smaller creature within 10 feet of it. The target must succeed on a DC 12 STR save or be grappled (escape DC 12). Until this grapple ends, the target is restrained, and the seahorse can’t use Grasping Tail on another creature.
 
+</statblock>
 
 

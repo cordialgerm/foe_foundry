@@ -1,6 +1,8 @@
 <MonsterName/>Ghost</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>11</AC>
+<HP/>45</HP>
 <summary>A Ghost is the spectral remains of a once-living being, often tied to unfinished business or intense emotions. Its translucent form drifts silently through the air, and it is able to pass through walls and objects effortlessly. Ghosts are hauntingly beautiful or horrifyingly distorted, depending on the circumstances of their death. They can possess the living, drain life energy, or induce supernatural fear in those who encounter them. Ghosts are often bound to a specific location or object and can be difficult to permanently destroy unless their underlying reason for remaining in the world is resolved.</summary>
 
 <summary>The Ghost is a Medium Undead creature, known for its ethereal presence and haunting abilities. With an Armor Class of 11, it possesses moderate defenses, but its low HP of 58, derived from 13d8, indicates that it can be vulnerable if hit enough times. Ghosts fly at a speed of 40 feet, allowing them to maneuver easily in combat. They are rated with a Challenge Rating of 4, making them moderately challenging opponents for adventurers, worth 1,100 XP upon defeat. Ghosts are primarily characterized by their incorporeal nature, allowing them to phase through physical entities, making them harder to hit, especially with nonmagical attacks.</summary>
@@ -41,6 +43,7 @@ Overall, the Ghost is a complex adversary that combines damaging attacks with ps
 
 Source: 5e_srd
 
+<statblock>
 ## Ghost
 
 *Medium undead, any alignment*
@@ -81,7 +84,8 @@ Source: 5e_srd
 
 ***Possession (Recharge 6)***. One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.
 
-The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the *dispel evil and good* spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.
+The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the *dispel evil and good* spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.</statblock>
+
 
 
 
@@ -89,6 +93,7 @@ The possession lasts until the body drops to 0 hit points, the ghost ends it as 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghost
 
 *Medium* *Undead*
@@ -129,6 +134,7 @@ Source: 5e_artisinal_monsters
 - **Horrifying Visage:** If the ghost takes damage from an attack or spell, it uses Horrifying Visage.
 
 
+</statblock>
 
 
 
@@ -137,6 +143,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghost
 
 *Medium undead*
@@ -175,5 +182,6 @@ Source: 5e_artisinal_monsters
 
 - **Etherealness.** The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Ethereal Plane, and vice versa, yet it can’t affect or be affected by anything on the other plane.
 
+</statblock>
 
 

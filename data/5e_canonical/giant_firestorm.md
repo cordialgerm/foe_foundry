@@ -1,6 +1,8 @@
 <MonsterName/>Giant, Firestorm</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (hide armor)</AC>
+<HP/>149</HP>
 <summary>The Giant Firestorm is a formidable opponent in combat, classified as a huge, neutral giant. With a robust Armor Class of 14 and a substantial pool of hit points totaling 149, it presents a significant challenge to adventurers. It boasts high Strength and Constitution, making it exceptionally tough in melee combat, while its Dexterity grants a decent level of agility. The creature is immunized against both cold and fire damage, enhancing its resilience in battles that utilize these elemental effects. However, its low Charisma could be a weak point in social interactions or abilities that rely on persuasion or deception. The Giant Firestorm's abilities allow it to deal both slashing and elemental damage, as well as control the battlefield with effects like the Lava Geyser, making it a versatile threat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Giant Firestorm leads with its impressive offensive capabilities, s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant, Firestorm
 
 *Huge* *Giant* *neutral*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Lava Geyser (Recharge 5–6):** Gestures at a point on the ground it can see within 60' of it. A fountain of molten rock erupts from that point in a 10 ft. radius 40' high cylinder. The area is difficult terrain for 1 min. Each creature in the cylinder must make a DC 16 Dex save. On a failure a creature takes 24 (7d6) fire and is coated in hardened lava. On a success a creature takes half the damage and isn’t coated in hardened lava. A creature coated in hardened lava has its speed halved while it remains coated. A creature including the coated creature can take its action to break and remove the hardened lava ending the effect.
 
 
+</statblock>
 
 

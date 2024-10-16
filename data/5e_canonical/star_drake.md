@@ -1,6 +1,8 @@
 <MonsterName/>Star Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>15</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>189</HP>
 <summary>The Star Drake is a formidable large dragon with a neutral alignment, known for its blend of magical prowess and physical might. With an impressive Armor Class of 19 and a substantial pool of 189 hit points, it is a resilient combatant in battle. The drake possesses a remarkable speed, both on foot and in flight, which allows it to swiftly navigate the battlefield. As a creature with a Challenge Rating of 15, it poses a significant challenge for adventurers, earning it 13,000 experience points upon defeat. The Star Drake exhibits exceptional attributes across the board, with especially high Wisdom and Constitution scores, making it not only a powerful foe but also an intelligent and perceptive one. It has damage immunities to cold, fire, and nonmagical attacks, rendering it difficult to harm. Its magical abilities, alongside powerful melee and ranged attacks, make it a versatile and dangerous adversary.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Other extraordinary actions include "Planar Traveler," enabling the drake to tel
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Star Drake
 
 *Large* *Dragon* *Neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Searing Star:** Ranged Spell Attack: +12 to hit, range 120 ft., one target. Hit: 14 (2d6 + 7) radiant damage plus 9 (2d8) force damage.
 - **Planar Traveler:** The star drake can transport itself to a different plane of existence. This works like the plane shift spell, except the drake can affect only itself and can’t use this action to banish an unwilling creature to another plane.
 - **Plane-Altered Breath (Recharge 5–6):** The drake exhales raw magic in a 60-foot cone. Each creature in that area must make a DC 18 Dexterity saving throw, taking 55 (10d10) force damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

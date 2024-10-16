@@ -1,6 +1,8 @@
 <MonsterName/>Camazotz</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>22</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>537</HP>
 <summary>Camazotz is a large fiend characterized by its chaotic evil nature. As a formidable foe, it presents a significant challenge in combat, boasting an incredibly high armor class of 19, 537 hit points, and the ability to both fly and engage in melee. Camazotz excels in dealing massive amounts of damage with its attacks, primarily through its bite and claw strikes, which also inflict additional fire damage. It possesses various resistances and immunities, making it a difficult target for typical combat strategies, particularly against non-magical attacks. However, it is vulnerable to cold damage, which can be exploited by cunning adventurers. With a challenge rating of 22, Camazotz demands respect and caution from any party daring enough to confront it.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Camazotz can further utilize legendary actions, allowing it to detect creatures,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Camazotz
 
 *Large* *Fiend* *Chaotic Evil*
@@ -78,5 +81,6 @@ Camazotz can take 3 legendary actions, choosing from the options below. Only one
 - **Move:** Camazotz moves up to his speed, or he flies up to half his speed. This movement doesn’t provoke opportunity attacks.
 - **Cast a Spell (Costs 2 Actions):** Camazotz uses Spellcasting.
 - **Fiery Wing Beat (Costs 2 Actions):** Camazotz beats his wings, extinguishing mundane and magical light sources. Each creature within 10 feet of Camazotz must succeed on a DC 22 Dexterity saving throw or take 14 (4d6) fire damage and be knocked prone.
+</statblock>
 
 

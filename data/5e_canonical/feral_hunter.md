@@ -1,6 +1,8 @@
 <MonsterName/>Feral Hunter</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>83</HP>
 <summary>The Feral Hunter is a formidable Medium fey creature, known for its agility and stealth. With an Armor Class of 14, it offers a decent defense due to its leather armor. It boasts a total of 83 hit points, making it resilient against attacks, and has a movement speed of 30 feet, allowing it to navigate the battlefield fluidly. The creature has a Challenge Rating of 3, indicating that it poses a moderate threat to a party of adventurers. Notably, the Feral Hunter has enhanced senses and the ability to move through natural terrains without hindrance, making it particularly dangerous in forest or wilderness settings. Its strengths lie in its ability to deal substantial damage with piercing weapons, while its weaknesses include a lack of physical strength and constitution, with average scores in those areas. </summary>
 
 <detail>
@@ -36,6 +38,7 @@ Overall, the Feral Hunter is a strategic asset in combat, relying on its speed, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Feral Hunter
 
 *Medium fey*
@@ -74,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Reactions** 
 - **Reposition.** When the feral hunter takes damage, it can move up to 10 feet without provoking opportunity attacks.
 
+</statblock>
 
 

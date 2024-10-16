@@ -1,6 +1,8 @@
 <MonsterName/>Bone Colossus</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>13</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>181</HP>
 <summary>The Bone Colossus is a gargantuan undead creature embodying chaotic evil. It serves as a formidable opponent for adventurers, leveraging its massive size and unique abilities to create a significant threat in combat. With an Armor Class of 16 and 181 hit points, it can withstand considerable damage while delivering its own through powerful attacks. Its capabilities are enhanced by a high Strength score of 24, which provides a +7 modifier, and a good Constitution score of 22 that grants an additional +6 modifier to saving throws. The creature's challenge rating of 13 categorizes it as a highly dangerous foe, particularly for lower-level parties.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Bone Colossus presents a complex challenge for adventurers, capable
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Colossus
 
 *Gargantuan* *Undead* *chaotic evil*
@@ -57,5 +60,6 @@ As an action, the swarms can reform into a single bone colossus as long as all s
 - **Razor Teeth (Swarm Form Only):** Melee Weapon Attack: +12 to hit, reach 0 ft., one target in the swarm’s space. Hit: 21 (6d6) piercing damage, or 10 (3d6) piercing damage if the swarm has half its hp or fewer.
 
 
+</statblock>
 
 

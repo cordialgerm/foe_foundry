@@ -1,6 +1,8 @@
 <MonsterName/>Lunarian</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>97</HP>
 <summary>The Lunarian is a Medium-sized fey creature characterized by its chaotic neutral alignment. It possesses notable strengths such as high mobility, a combination of magical attacks that deal radiant damage, and the ability to summon a powerful light-based effect. Despite its strengths, the Lunarian harbors weaknesses, primarily its vulnerability to natural light which inflicts significant radiant damage, threatening its existence if it is exposed to it. With a challenge rating of 5, it is a formidable opponent capable of dealing substantial damage while being quite agile and resistant to several forms of attacks.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Lunarian can engage in a "Multiattack," allowing it to strike wit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lunarian
 
 *Medium* *Fey* *chaotic neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Halberd:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) slashing damage plus 4 (1d8) radiant damage.
 
 
+</statblock>
 
 

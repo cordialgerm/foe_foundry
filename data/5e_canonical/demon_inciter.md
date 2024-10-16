@@ -1,6 +1,8 @@
 <MonsterName/>Demon, Inciter</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>27</HP>
 <summary>The Inciter is a chaotic evil demon that plays a disruptive role in combat scenarios, harnessing both its malice and psychological influence to create chaos among its enemies. With a moderate armor class and a total of 27 hit points, the Inciter is not particularly resilient but has a range of abilities that allows it to manipulate the actions of its foes. This creature excels at sowing distrust, causing allies to hesitate and potentially turn against each other. However, its physical defenses are quite average, and it relies heavily on its special abilities to weaken opponents rather than to directly confront them. Notably, the Inciter is both mobile and evasive, being able to fly, making it a tricky opponent to pin down in battle.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Inciter is designed to manipulate and create disorder on the battle
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Demon, Inciter
 
 *Medium* *Fiend* *chaotic evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** Magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment it wears or carries is invisible with it.
 
 
+</statblock>
 
 

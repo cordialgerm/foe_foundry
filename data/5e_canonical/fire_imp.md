@@ -1,6 +1,8 @@
 <MonsterName/>Fire Imp</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>14</HP>
 <summary>The Fire Imp is a tiny fiend with a lawful evil alignment that is known for its deceptive and cunning nature. It excels at damage avoidance due to its immunities and resistances, making it a challenging opponent for unsuspecting adventurers. However, it has low hit points and frail physical attributes, which means it is not suited for direct confrontation but rather for utilizing its magical abilities and stealth to evade danger. The Fire Imp's strengths lie in its mastery of fire-based attacks and spellcasting, while its weaknesses are evident in its poor physical strength and vulnerability to certain types of magic.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Fire Imp can perform a melee spell attack with its Fire
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire Imp
 
 *Tiny* *Fiend* *lawful evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Hurl Flame:** Ranged Spell Attack: +4 to hit, range 150 ft., one target. Hit: 5 (2d4) fire damage and if the target is a flammable object that isn't being worn or carried, it also catches fire.
 
 
+</statblock>
 
 

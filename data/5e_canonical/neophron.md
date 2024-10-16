@@ -1,6 +1,8 @@
 <MonsterName/>Neophron</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Neophron is a medium-sized fiend embodying chaotic evil, characterized by its deceptive nature and formidable combat capabilities. With an Armor Class of 16, it proves to be a tough opponent, possessing significant Hit Points totaling 114, which translates to a notable resilience in battles. The creature's impressive mobility grants it the ability to fly at 90 feet per round and walk at 40 feet. It holds a Challenge Rating of 8, making it a serious threat that can reward players with 3,900 XP upon defeat. Notably, the Neophron is immune to poison and resistant to a variety of damage types, enhancing its survivability. However, it has a low Intelligence score of 8, which may reflect its limited cognitive abilities. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ These mechanics create a complex and dangerous foe, capable of controlling battl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Neophron
 
 *Medium* *Fiend* *chaotic evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage. The target must succeed on a DC 16 Constitution saving throw or be poisoned until the end of its next turn.
 
 
+</statblock>
 
 

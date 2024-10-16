@@ -1,6 +1,8 @@
 <MonsterName/>Moss Lurker</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Moss Lurker is a small humanoid creature characterized by its chaotic neutral alignment. It serves as a stealthy ambusher within forested areas, adept at utilizing natural cover to surprise its enemies. With a relatively high Armor Class of 15, it possesses decent durability but can still be vulnerable to more powerful foes due to its moderate Hit Points of 45. Its challenge rating of 1 indicates that it presents a manageable threat level for lower-level adventurers, providing a balance of skill, mobility, and poison-related abilities. Notably, the Moss Lurker excels in stealth and perception, making it a formidable adversary in wooded environments, although its effectiveness diminishes in open terrains. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Moss Lurker can execute two distinct actions. Firstly, it may att
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Moss Lurker
 
 *Small* *Humanoid* *Chaotic Neutral*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Poisoned Claw:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage plus 7 (2d6) poison damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned until the end of its next turn.
 - **Throw Stone:** Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage. If the target is at least 10 feet below the moss lurker, such as at the base of a cliff where the moss lurker stands, the target must succeed on a DC 12 Strength saving throw or take 1d4 bludgeoning damage for every 10 feet the rock fell before hitting the target, to a maximum of 10d4.
+</statblock>
 
 

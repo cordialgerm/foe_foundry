@@ -1,6 +1,8 @@
 <MonsterName/>Balor General</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>24</CR>
+<AC/>19</AC>
+<HP/>379</HP>
 <summary>The Balor General is a huge fiend characterized by its formidable presence on the battlefield. As a powerful demon, it embodies chaotic evil, radiating an aura that affects creatures around it. It boasts an impressive Armor Class of 19 and a staggering 379 hit points, making it exceptionally resilient to attacks. With a challenge rating of 24, this fiend is considered a high-level adversary, requiring considerable strategy and power from player characters to defeat. Its abilities center around its control of fire and lightning, along with exceptional mobility, allowing it to teleport and react swiftly in combat. However, despite its incredible power and damage immunities, it can be defeated through concentrated efforts and smart tactics.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ In summary, the Balor General is a formidable foe that combines powerful offensi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Balor General
 
 *Huge* *Fiend*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Avenging Bolt (1/Day:** When damaged by a ranged weapon attack, spell, or magical effect, a 100-foot-long, 5-foot-wide lightning bolt springs from the balors extended sword. Each creature in the area makes a DC 19 Dexterity saving throw, taking 42 (12d6) lightning damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

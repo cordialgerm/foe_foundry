@@ -1,6 +1,8 @@
 <MonsterName/>Corrupting Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>5</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>115</HP>
 <summary>The Corrupting Ooze is a large, neutral evil ooze that embodies a combination of resilience and destructive potential on the battlefield. With an Armor Class of 12, it is somewhat difficult to hit for its Challenge Rating of 5, reflecting its ability to withstand damage, particularly with its high Constitution score of 22, which grants it a good buffer of 115 hit points. The creature moves at a moderate speed of 30 feet, allowing it to engage opponents effectively. One of its notable strengths lies in its immunities and resistances: it is immune to poison damage and also resistant to bludgeoning and slashing damage. However, its low Dexterity score of 10 poses a weakness, making it average in terms of agility. In combat, its special abilities and powerful attacks make it a formidable foe, though its lack of intelligence and charm may limit its strategic options.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, as a bonus action, the Corrupting Ooze can use "Reshape Body" to m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corrupting Ooze
 
 *Large* *Ooze* *Neutral Evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Reshape Body:** The corrupting ooze can reshape its mass into a vaguely Humanoid shape or back into its amorphous shape. It reverts to its amorphous shape if it dies. While in a Humanoid shape, it can take any action that requires hands, except it can’t wield weapons or a shield or don armor.
+</statblock>
 
 

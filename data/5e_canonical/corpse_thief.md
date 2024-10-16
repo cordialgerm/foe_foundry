@@ -1,6 +1,8 @@
 <MonsterName/>Corpse Thief</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>30</HP>
 <summary>The Corpse Thief is a medium humanoid creature that embodies a unique blend of stealth and the ability to glean information from both the living and the dead. With a challenge rating of 1/2, this creature is considered a low-level threat, making it suitable for novice adventurers. It possesses a good balance of defensive and offensive capabilities, accentuated by its high Dexterity for stealth and decent Constitution for resilience. However, its low Charisma means it is easily outmatched in social situations. The Corpse Thief's special abilities revolve around its intriguing powers of perception and thievery, allowing it to gather intelligence from objects and stealthily relieve opponents of small items.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Corpse Thief can engage in a Multiattack, allowing it to perform 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corpse Thief
 
 *Medium* *Humanoid* *neutral*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Steal:** The corpse thief targets one creature within 5 feet of it and attempts to steal one small item. The target must succeed on a DC 13 Dexterity saving throw or lose one non-weapon, non-armor object that is small enough to fit in one hand.
 
 
+</statblock>
 
 

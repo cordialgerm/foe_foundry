@@ -1,6 +1,8 @@
 <MonsterName/>Raven</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>12</AC>
+<HP/>1</HP>
 <summary>A Raven is a large, black-feathered bird known for its intelligence and ominous presence. These birds are often associated with death, prophecy, and magic in many cultures. Ravens are excellent scavengers, using their sharp beaks and keen eyesight to find food in both wilderness and urban areas. Due to their intelligence, Ravens can sometimes be trained as messengers or companions by spellcasters or druids. They are known for their ability to mimic sounds and have been featured in many stories as symbols of mystery and foresight.</summary>
 
 <summary>The Raven is a tiny beast known for its distinctive ability to mimic sounds, making it a useful companion or scout for adventurers in the world of Dungeons and Dragons. With a low challenge rating of 0, it poses minimal threat in combat but can be regarded as a creature of intelligence and curiosity. The Raven's highlights include a decent Dexterity score, allowing for good maneuverability, and a special ability to imitate sounds, which can be strategically advantageous. However, its frail hit points and weak attributes in Strength, Constitution, Intelligence, and Charisma demonstrate its vulnerability and lack of direct combat prowess.</summary>
@@ -39,6 +41,7 @@ Overall, the raven is a clever and nimble creature, well-suited for tasks involv
 
 Source: 5e_srd
 
+<statblock>
 ### Raven
 
 *Tiny beast, unaligned*
@@ -65,7 +68,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Beak***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.
+***Beak***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage.</statblock>
+
 
 
 
@@ -73,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Raven
 
 *Tiny* *Beast*
@@ -100,6 +105,7 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage. If this damage would reduce a Small or larger target to 0 hit points  the target takes no damage from this attack.
 
 
+</statblock>
 
 
 
@@ -108,6 +114,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Raven
 
 *Tiny beast*
@@ -137,5 +144,6 @@ Source: 5e_artisinal_monsters
 
 - **Beak.** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.
 
+</statblock>
 
 

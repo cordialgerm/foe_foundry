@@ -1,6 +1,8 @@
 <MonsterName/>Efreeti Noble</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>11</CR>
+<AC/>17</AC>
+<HP/>344</HP>
 <summary>The Efreeti Noble is a powerful Large Elemental creature with a strong presence on the battlefield. It boasts a high Armor Class of 17 and a substantial pool of Hit Points totaling 344, making it resilient in combat. Its challenge rating of 11 indicates that it is a formidable opponent for adventurers and can deal significant damage while maintaining a good level of defense. The Efreeti Noble is characterized by its impressive Strength and Constitution, both having a value of 22, translating to a +6 modifier, which is very good. It also has high Dexterity (18, +4), enabling it to agilely evade attacks. Furthermore, its innate spellcasting ability, fueled by a Charisma modifier of +3, allows for additional versatility, enabling it to cast multiple spells without the need for material components. Its weakness lies in its lack of defensive immunities aside from fire, which does provide some vulnerability against non-fire-related damage types. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the Efreeti Noble can use its bonus action to create a Fiery Wall 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Efreeti Noble
 
 *Large* *Elemental*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Fiery Wall (1/Day):** An opaque wall of magical flame rises from the ground within 60 feet. The wall is 6 inches thick and can be up to 20 feet high and 30 feet long. Each creature within the wall when it appears makes a DC 15 Dexterity saving throw, taking 18 (4d8) fire damage on a failed save or half damage on a success. A creature also takes 18 (4d8) fire damage when it enters the wall for the first time on a turn or ends its turn there. The wall disappears when the efreet is killed or incapacitated, or when it uses an action to dismiss it.
 
 
+</statblock>
 
 

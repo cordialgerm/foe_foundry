@@ -1,6 +1,8 @@
 <MonsterName/>Blood Imp</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>14</HP>
 <summary>The Blood Imp is a small, fiendish creature of a lawful evil alignment, known for its cunning and malice. With a low Challenge Rating of 1/2, it is a minor threat that can be quite dangerous in the right circumstances, particularly when exploiting the weaknesses of its enemies. Notable for its ability to fly and its resistance to spells, the Blood Imp can maneuver around the battlefield with ease. It has average durability with 14 hit points, making it somewhat squishy for combat but also capable of inflicting deceptive harm, especially against already wounded foes due to its special abilities. </summary>
 
 <detail>
@@ -32,6 +34,7 @@ Overall, the Blood Imp is a clever and deceptive creature, capable of manipulati
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Imp
 
 *Tiny* *Fiend* *lawful evil*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Spew Blood:** Ranged Spell Attack: +4 to hit, range 20/60 ft., one target. Hit: 5 (2d4) poison damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned until the end of its next turn.
 
 
+</statblock>
 
 

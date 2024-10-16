@@ -1,6 +1,8 @@
 <MonsterName/>Otyugh</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>114</HP>
 <summary>An Otyugh is a grotesque, three-legged creature with a bloated, writhing body covered in filth. Its long, tentacle-like appendages end in spiked, clawed grips, which it uses to snatch prey. Otyughs are typically found in sewers, refuse heaps, or other filthy places, where they feed on garbage, carrion, or any living creature that gets too close. They are highly adaptable scavengers, able to live off almost any kind of waste. Though not particularly intelligent, they are cunning enough to set ambushes or trap prey using their tentacles and sharp teeth.</summary>
 
 <summary>The Otyugh is a large aberration notable for its grotesque appearance and repulsive habits. It typically inhabits the sewers or other waste-filled areas, often lurking in filth and muck. With a solid armor class of 14 and a substantial pool of hit points totalizing 110, it presents a formidable challenge, particularly for less experienced adventurers. Its challenge rating of 6 means it can provide a significant threat, especially given its multi-attack capabilities and grappling proficiency. While its defensive attributes are decent, the Otyugh’s intelligence is notably low, reflecting its base instincts rather than strategic thinking. It excels in close combat, using its tentacles and bite as primary attacks, but its movement speed is average at 30 feet, allowing it to maneuver effectively in combat.</summary>
@@ -45,6 +47,7 @@ This combination of defensive and offensive capabilities makes the Otyugh a form
 
 Source: 5e_srd
 
+<statblock>
 ## Otyugh
 
 *Large aberration, neutral*
@@ -77,7 +80,8 @@ Source: 5e_srd
 
 ***Tentacle***. *Melee Weapon Attack:* +6 to hit, reach 10 ft., one target. *Hit:* 7 (1d8+3) bludgeoning damage plus 4 (1d8) piercing damage. If the target is Medium or smaller, it is grappled (escape DC 13) and restrained until the grapple ends. The otyugh has two tentacles, each of which can grapple one target.
 
-***Tentacle Slam***. The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 14 Constitution saving throw or take 10 (2d6+3) bludgeoning damage and be stunned until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned.
+***Tentacle Slam***. The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 14 Constitution saving throw or take 10 (2d6+3) bludgeoning damage and be stunned until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned.</statblock>
+
 
 
 
@@ -85,6 +89,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Otyugh
 
 *Large* *Aberration*
@@ -117,6 +122,7 @@ Source: 5e_artisinal_monsters
 - **If a swallowed creature deals 15 or more damage to the otyugh in a single turn:** 
 
 
+</statblock>
 
 
 
@@ -125,6 +131,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Otyugh
 
 *Large aberration*
@@ -157,5 +164,6 @@ Source: 5e_artisinal_monsters
 - **Tentacle.** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 9 (2d8) piercing damage. If the target is Medium or smaller, it is grappled (escape DC 13). The otyugh has two tentacles, each of which can grapple one target.
 - **Tentacle Slam.** The otyugh slams creatures grappled by it into each other or into a solid surface. Each creature must make a DC 15 STR save. On a failure, a creature takes 14 (4d6) bludgeoning damage and is stunned until the end of its next turn. On a success, a creature takes half the damage and isn’t stunned.
 
+</statblock>
 
 

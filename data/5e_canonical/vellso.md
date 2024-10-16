@@ -1,6 +1,8 @@
 <MonsterName/>Vellso</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>120</HP>
 <summary>Vellso is a medium-sized chaotic evil fiend that poses a formidable threat to adventurers in combat. With a challenge rating of 7, it has a high level of durability backed by 120 hit points, due to its natural armor and robust constitution. Vellso is capable of climbing surfaces effortlessly and can attack rapidly with its powerful bite and claw strikes, making it a versatile opponent in various environments. It possesses several notable defenses, such as magic resistance and immunities to poison and necrotic damage, allowing it to withstand the magical assaults that adventurers often employ. However, it has low intelligence and charisma, which may limit its interactions and strategic planning outside of combat. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, Vellso can utilize its Multiattack feature, making two separate attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vellso
 
 *Medium* *Fiend* *chaotic evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.<br><br>Constitution saving throw or gain one level of exhaustion. If an infected creature succeeds on the saving throw, it no longer gains exhaustion levels each day. A second successful save at the end of a long rest cures the disease. The abyssal disease resists many efforts at treatment and can only be cured by a greater restoration spell or similar magic. A living creature that dies from the effects of carrion curse has a 75% chance of rising again as a blood zombie (see page 393) within 24 hours.
 
 
+</statblock>
 
 

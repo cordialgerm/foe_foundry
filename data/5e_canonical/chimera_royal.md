@@ -1,6 +1,8 @@
 <MonsterName/>Chimera, Royal</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>15</CR>
+<AC/>17 (Regal Bearing)</AC>
+<HP/>189</HP>
 <summary>The Royal Chimera is a formidable Huge Monstrosity characterized by its neutral evil alignment and varied nature, combining elements of different creatures into a potent adversary. This creature has a high Armor Class of 17, reflecting its regal bearing, and boasts a substantial pool of hit points at 189, making it resilient in battle. With a Challenge Rating of 15, it poses a significant threat to adventurers, offering 13,000 experience points upon defeat. The chimera possesses considerable physical attributes, including a high Strength score of 21, granting it a good attack bonus of +10, and its Charisma of 20 enhances its spellcasting abilities, making it a versatile combatant that can engage opponents both physically and magically. However, it is relatively weaker in Intelligence with a score of 9, which limits its strategic prowess.</summary>
 
 <detail>
@@ -43,6 +45,7 @@ Overall, the Royal Chimera serves as a versatile and dangerous foe in combat, ch
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chimera, Royal
 
 *Huge* *Monstrosity* *neutral evil*
@@ -88,5 +91,6 @@ Source: 5e_artisinal_monsters
 - **Serpent Strike:** Makes one Serpent Strike attack.
 - **Cast a Spell (2):** Uses Spellcasting.
 - **Roar of the King (2):** Lion head's bellow spurs allies. Each friendly creature including chimera within 30' of it that can hear roar gains 11 (2d10) temp hp and can’t be frightened for 1 min.
+</statblock>
 
 

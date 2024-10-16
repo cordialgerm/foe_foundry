@@ -1,6 +1,8 @@
 <MonsterName/>Raven, Swarm of Ravens</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>13</HP>
 <summary>The Raven, Swarm of Ravens, is a medium-sized swarm of tiny beasts that serves as an interesting addition to Dungeons & Dragons 5e encounters, offering both functional support to other monsters and unique challenges to players. With a lower Armor Class of 12 and 13 Hit Points, it is relatively fragile but gains significant advantage through its swarm mechanics and special abilities. Its Challenge Rating of 1/4 indicates that it can be a manageable encounter for a group of low-level adventurers. The swarm excels in stealth and evading direct combat, leveraging its special abilities to disrupt spellcasting and locate carrion, making it a nuisance in battles. However, its low Strength and Constitution scores indicate vulnerabilities in direct melee combat. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Raven, Swarm of Ravens offers unique gameplay opportunities through
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Raven, Swarm of Ravens
 
 *Medium swarm (of tiny beasts)*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 
 - **Beaks.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target in the swarm’s space. Hit: 9 (2d8) piercing damage, or 4 (1d8) piercing damage if the swarm has half of its HP or fewer.
 
+</statblock>
 
 

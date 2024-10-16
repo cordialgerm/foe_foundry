@@ -1,6 +1,8 @@
 <MonsterName/>Fire Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (plate)</AC>
+<HP/>162</HP>
 <summary>A Fire Giant is a towering, muscular humanoid with coal-black skin and glowing red eyes, resembling living volcanoes. Clad in heavy, ornate armor, Fire Giants are known for their militaristic society and skill in blacksmithing, creating powerful weapons and armor. They live in volcanic regions or massive forges, where they craft weapons of war and command armies of lesser giants or humanoid slaves. Fire Giants are fearsome warriors, wielding enormous swords and hammers that they can swing with devastating force. They have a natural affinity for fire, able to withstand extreme heat and even summon flames in battle.</summary>
 
 <summary>The Fire Giant is a formidable Huge Giant known for its immense physical prowess and ability to wield fire with immunity to its damage. With a strong Armor Class of 18 and a significant pool of hit points totaling 162 (derived from rolling 13d12 and adding 78), it poses a considerable threat in battle, rated with a Challenge Rating of 11 equating to 7,200 experience points for defeating it. This creature’s exceptional Strength of 25 grants it a +7 modifier, making its melee attacks particularly devastating, while its Constitution of 22 ensures high durability in combat. However, it is notably vulnerable to cold damage, which can slow it down. The Fire Giant's range and area of effect, combined with its potential to knock opponents prone and push them away, make it an intimidating presence on the battlefield.</summary>
@@ -33,6 +35,7 @@ Overall, the Fire Giant represents a powerful and imposing challenge, capable of
 
 Source: 5e_srd
 
+<statblock>
 ### Fire Giant
 
 *Huge giant, lawful evil*
@@ -65,7 +68,8 @@ Source: 5e_srd
 
 ***Greatsword***. *Melee Weapon Attack:* +11 to hit, reach 10 ft., one target. *Hit:* 28 (6d6+7) slashing damage.
 
-***Rock***. *Ranged Weapon Attack:* +11 to hit, range 60/240 ft., one target. *Hit:* 29 (4d10+7) bludgeoning damage.
+***Rock***. *Ranged Weapon Attack:* +11 to hit, range 60/240 ft., one target. *Hit:* 29 (4d10+7) bludgeoning damage.</statblock>
+
 
 
 
@@ -73,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire Giant
 
 *Huge* *Giant*
@@ -109,6 +114,7 @@ Source: 5e_artisinal_monsters
 - **Kick:** When hit by a melee attack by a Medium or smaller creature the giant can see within 10 feet, the giant kicks its attacker. The attacker makes a DC 19 Dexterity saving throw. On a failure, it takes 14 (3d4 + 7) bludgeoning damage, is pushed up to 20 feet from the giant, and falls prone.
 
 
+</statblock>
 
 
 
@@ -117,6 +123,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire Giant
 
 *Huge giant*
@@ -151,5 +158,6 @@ Source: 5e_artisinal_monsters
 
 - **Pyroclastic Surge.** A burst of volcanic gas and rock fragments flows in a 60-foot-line that is 5 feet wide from the fire giant’s outstretched hand. Each creature in the line must succeed on a DC 16 DEX save or be poisoned until the end of its next turn and pushed up to 15 feet away from the giant. A creature that fails the save by 5 or more is petrified in volcanic ash for 1 hour or until a creature spends 1 minute soaking the petrified creature in cool water.
 
+</statblock>
 
 

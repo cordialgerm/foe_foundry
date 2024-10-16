@@ -1,6 +1,8 @@
 <MonsterName/>Ascetic Grandmaster</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>14</CR>
+<AC/>20</AC>
+<HP/>172</HP>
 <summary>The Ascetic Grandmaster is a formidable Medium humanoid characterized by exceptional agility, strength, and martial prowess. With an impressive Armor Class of 20 and a substantial pool of 172 hit points, this creature excels in both offense and defense, making it a potent foe in combat situations. It has a Challenge Rating of 14, indicating its capability to pose a significant threat to adventurers. Notably, the Ascetic Grandmaster possesses high Dexterity and Wisdom, which enhances its combat maneuvers, evasion from spells, and ability to resist various effects. Despite its strengths, the Grandmaster has a lower Intelligence and Charisma, which may limit its strategic options and social interactions. Overall, facing an Ascetic Grandmaster is akin to confronting a whirlwind of unarmed strikes, swift movements, and defensive tactics.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Ascetic Grandmasters are often the most revered martial artists or solitary wand
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ascetic Grandmaster
 
 *Medium* *Humanoid*
@@ -75,5 +78,6 @@ Source: 5e_artisinal_monsters
 - **Ascetic grandmasters lead the finest monasteries in the world or travel alone seeking worthy challenges and students:** They often appear unassuming, but challenging the speed and strength of these legendary martial artists is akin to challenging a hurricane.
 
 
+</statblock>
 
 

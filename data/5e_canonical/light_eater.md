@@ -1,6 +1,8 @@
 <MonsterName/>Light Eater</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>26</HP>
 <summary>The Light Eater is a small aberration that thrives on consuming light, making it a unique and formidable creature in the Dungeons & Dragons universe. With a challenge rating of 1/2, it poses a moderate threat to low-level adventurers. A blend of stealth and cunning, the Light Eater can camouflage itself as ordinary rock while motionless, effectively ambushing unsuspecting foes. It boasts a solid Armor Class of 14 thanks to its natural armor and can absorb light to weaken its opponents, while also being immune to fire and radiant damage. However, its low Strength and Intelligence scores leave it vulnerable in physical confrontations and limit its strategic options. Its special abilities allow it to sense light, manipulate it, and emit blinding flashes when threatened.</summary>
 
 <detail>
@@ -24,6 +26,7 @@ Overall, the Light Eater is a crafty foe that uses its abilities to control the 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Light Eater
 
 *Small* *Aberration* *unaligned*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Emergency Flare (Recharges: Short/Long Rest):** When it takes damage can emit brilliant flash of light. Each creature within 30': blinded 1 min (DC 12 Con negates). Blinded creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

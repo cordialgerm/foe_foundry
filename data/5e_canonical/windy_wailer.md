@@ -1,6 +1,8 @@
 <MonsterName/>Windy Wailer</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>75</HP>
 <summary>The Windy Wailer is a large undead creature characterized by its neutral evil alignment and haunting abilities. This creature thrives on cold and necrotic energy, making it a formidable adversary in combat, especially against weaker foes. Its notable strengths include high dexterity, exceptional movement capabilities, and a suite of chilling attacks that can incapacitate and frighten its opponents. The Windy Wailer's weaknesses lie primarily in its reliance on the intimidation of its presence and its susceptibility to radiant damage, which is not mentioned as an immunity or resistance. With a challenge rating of 5, it poses a significant threat, particularly to adventurers who may be unprepared for its psychological and physical tactics.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Windy Wailer has several options. The "Chilling Touch" 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Windy Wailer
 
 *Large* *Undead* *neutral evil*
@@ -53,5 +56,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Frightful Gale (Recharge 5-6):** The windy wailer unleashes freezing wind filled with fearful wailing in a 30-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 14 (4d6) cold damage and is frightened for 1 minute. On a success, a creature takes half the damage and isn’t frightened. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.<br><br>A creature reduced to 0 hp by the windy wailer’s Frightful Gale and later revived is permanently marked by a shock of white hair somewhere on its body.
 
 
+</statblock>
 
 

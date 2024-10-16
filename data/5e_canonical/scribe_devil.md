@@ -1,6 +1,8 @@
 <MonsterName/>Scribe Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Scribe Devil is a Medium Fiend characterized by its lawful evil nature. This malevolent creature excels in cunning tactics and manipulation, making it a formidable opponent in combat and a master of deceit in interactions. With a solid Armor Class of 15 and a substantial pool of Hit Points totaling 82, the Scribe Devil is capable of enduring significant damage. The creature's challenge rating of 5 indicates that it presents a moderate challenge to adventurers, providing a rewarding experience if defeated. Notably, the Scribe Devil possesses both flight and a range of spells, allowing it to navigate combat situations and manipulate the battlefield effectively. However, it has vulnerabilities; it is susceptible to silvered weapons and magical attacks that exploit its low defenses against certain effects.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Scribe Devil can utilize its Multiattack feature to strike twice�
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scribe Devil
 
 *Medium* *Fiend* *lawful evil*
@@ -57,5 +60,6 @@ At will: detect magic, illusory script
 - **Tail:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) piercing damage, and if the target is a creature, it must succeed on a DC 14 Constitution saving throw or become blinded as its eyes turn black and fill with infernal ink. The condition can be removed with a greater restoration spell or similar magic. Alternatively, a creature with a healer’s kit can drain the ink from a blinded creature’s eyes with a successful DC 14 Wisdom (Medicine) check. If this check fails by 5 or more, the attempt to drain the ink instead removes the blinded creature’s eyes and the creature takes 21 (6d6) piercing damage.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Catterball</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>44</HP>
 <summary>The Catterball is a small, chaotic neutral creature classified as a Fey in Dungeons & Dragons 5e. With a challenge rating of 1, it provides a moderate challenge for adventurers, equating to 200 experience points upon defeat. It possesses a unique blend of abilities and resistances that make it notably elusive in combat. Its strengths lie in its impressive Dexterity and Constitution, allowing it to dodge attacks effectively and withstand damage. However, its low Strength and Intelligence make it less effective in physical confrontations and problem-solving situations. The Catterball excels at mobility, capable of navigating tight spaces and leaping impressive distances, which can confuse and disrupt its foes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Catterball can "Change Form," giving it versatility in co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Catterball
 
 *Small* *Fey* *chaotic neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Change Form:** Can extend its body roll up into a ball or return to true form. Each time it extends its body its reach with slam increases by 5 feet max 15 feet and Armor Class decreases by 1.
 
 
+</statblock>
 
 

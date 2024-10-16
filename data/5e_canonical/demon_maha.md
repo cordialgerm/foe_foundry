@@ -1,6 +1,8 @@
 <MonsterName/>Demon, Maha</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>12</CR>
+<AC/>15</AC>
+<HP/>178</HP>
 <summary>The Maha is a formidable medium fiend of chaotic evil alignment, presenting a significant challenge to adventurers. With a challenge rating of 12, it offers 8,400 experience points upon defeat. The Maha possesses impressive physical attributes, including a high Dexterity of 21, which grants it exceptional agility, and strong Strength and Constitution scores, making it durable and capable in combat. Its notable features include abilities that manipulate the battlefield through its Frozen Aura, which hinders movement, and its ability to resist many magical effects, making it hard to control through spells. The Maha’s actions can incapacitate foes with its laughter, allowing it to control the flow of battle while dealing psychic damage. However, its low Intelligence indicates a lack of strategic awareness, and its vulnerability to nonmagical attacks in certain conditions can be exploited by clever adventurers.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Maha represents a dangerous opponent with powerful control abilitie
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Demon, Maha
 
 *Medium* *Fiend* *chaotic evil*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Deadly Laughter (Recharge 5–6):** It chuckles giggles and chortles at nearby creatures. Each creature within 30' of it: 42 (12d6) psychic drops what it is holding and laughs for 1 min (DC 17 Wis half damage and doesn’t drop what it is holding or laugh). While laughing a creature is incapacitated can’t speak coherently and takes 7 (2d6) psychic at start of each of its turns. A laughing creature can re-save at end of each of its turns success ends effect on itself. If a creature dies while laughing its face turns pale blue and displays a wide grin.
 
 
+</statblock>
 
 

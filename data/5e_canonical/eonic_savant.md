@@ -1,6 +1,8 @@
 <MonsterName/>Eonic Savant</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>13</AC>
+<HP/>115</HP>
 <summary>The Eonic Savant is a formidable Medium humanoid creature that plays a dual role in combat: both as a spellcaster and a melee combatant. With an Armor Class of 13, which can increase to 16 when using mage armor, and a substantial health pool of 115 hit points, it is able to withstand significant damage. The savant's Challenge Rating of 7 suggests it presents a serious threat to adventurers, rewarding teams with 2,900 experience points upon defeat. Its strengths lie in its high Intelligence score of 20, allowing it to excel in arcane knowledge and powerful spellcasting. Notably, it possesses abilities that manipulate time, making it unpredictable and difficult to combat effectively. However, its average Strength and Wisdom scores indicate that it is not as proficient in physical combat or willpower related tasks. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Eonic Savant can make three melee attacks as part of its "Multiat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eonic Savant
 
 *Medium* *Humanoid* *neutral*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Time Warping Staff:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 7 (2d6) force damage.
 
 
+</statblock>
 
 

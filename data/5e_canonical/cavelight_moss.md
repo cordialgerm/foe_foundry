@@ -1,6 +1,8 @@
 <MonsterName/>Cavelight Moss</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Cavelight Moss is a large, unaligned plant creature known for its unique ability to illuminate dark areas, making it a fascinating addition to the subterranean ecosystem. This creature is particularly resilient due to its high hit points, and its natural armor provides decent protection against physical attacks. The Cavelight Moss excels in grappling and exhausting its foes, allowing it to sap the strength of adventurers who dare to approach. However, it is not particularly mobile, with a slow walking speed, and its intelligence is severely lacking, making it vulnerable to more cunning opponents. Players should be cautious when engaging the Cavelight Moss, as its abilities can hinder movement and impose debilitating exhaustion.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Engaging a Cavelight Moss can have serious consequences for adventurers, making 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cavelight Moss
 
 *Large* *Plant* *Unaligned*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The cavelight moss makes two Tendrils attacks. If both attacks hit a Large or smaller creature, the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and at the start of each of the target’s turns, it must succeed on a DC 15 Constitution saving throw or suffer one level of exhaustion. The cavelight moss then gains 5 temporary hp. A creature that succeeds on the saving throw can’t suffer further levels of exhaustion from the cavelight moss’s grapple for the next 24 hours. The cavelight moss can have only one creature grappled at a time.
 - **Tendrils:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage.
+</statblock>
 
 

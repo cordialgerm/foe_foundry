@@ -1,6 +1,8 @@
 <MonsterName/>Iron Sphere</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Iron Sphere is a small, unaligned construct that serves as a formidable presence in combat and a useful tool for tactical movement. With a challenge rating of 5, it has a solid armor class of 16 and 60 hit points, making it a reliable adversary. The creature's strengths lie in its impressive physical attributes with a Strength score of 16, granting it good melee prowess, and an exceptional Constitution score of 18, providing it with resilience against damage. However, its Intelligence, Wisdom, and Charisma scores are low, which limits its utility in social interactions and many kinds of magical effects. Notably, the Iron Sphere is immune to various forms of damage, including lightning and necrotic, and it possesses significant resistances. It is particularly dangerous due to its ability to burrow and deal double damage to objects, making it a threat in both combat and environmental scenarios.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In sum, the Iron Sphere is a resilient and versatile construct that excels in de
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Iron Sphere
 
 *Small* *Construct* *unaligned*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Cannon (Recharge 5-6):** The sphere extends a metal rod from one of its many facets and fires a bolt of lightning in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

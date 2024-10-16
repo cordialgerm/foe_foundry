@@ -1,6 +1,8 @@
 <MonsterName/>Shellycoat</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Shellycoat is a Medium-sized fey creature that embodies the essence of neutrality mingled with a tinge of evil. It possesses the unique ability to thrive both in water and on land, making it versatile in various environments. With an Armor Class of 14, it has decent defenses, bolstered by its natural armor. The Shellycoat has a solid 52 hit points, derived from 7d8 rolled alongside a constitution bonus of +3, allowing it to withstand a moderate amount of damage. As a Challenge Rating 2 creature, it is relatively balanced for encounters, particularly against adventurers of low to mid-level. Among its notable features are its regeneration ability, which allows it to recover hit points over time, and its susceptibility to sunlight, which can petrify it if it remains in nonmagical sunlight for an extended period. Its combat abilities, combined with powerful special traits, make it a formidable opponent in water-heavy confrontations, while its weaknesses to fire and acid damage can be exploited by savvy players.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Lastly, the Shellycoat can use its **Shellycoat’s Fog** ability once per day w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shellycoat
 
 *Medium* *Fey* *Neutral Evil*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: 12 (2d8 + 3) slashing damage, and the target is grappled (escape DC 13) if it is a Large or smaller creature. Until this grapple ends, the creature is restrained. The shellycoat has two claws, each of which can grapple only one creature.
 - **Shellycoat’s Fog (1/Day):** While in contact with water, the shellycoat can create a 20-foot-radius sphere of fog centered on a point it can see within 60 feet of it for 1 minute. The sphere spreads around corners, and its area is heavily obscured. A creature that enters the fog for the first time on a turn or starts its turn there must succeed on a DC 13 Constitution saving throw or be poisoned and unable to breathe, unless it can breathe water, for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

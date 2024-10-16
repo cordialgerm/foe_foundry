@@ -1,6 +1,8 @@
 <MonsterName/>Alabroza, Bloodfiend</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>72</HP>
 <summary>Alabroza, the Bloodfiend, is a small fiendish creature that embodies the essence of hunger and deceit, typically aligning with neutral evil intentions. With a Challenge Rating of 4, it poses a considerable threat to adventurers, utilizing a mix of magic, physical attacks, and a unique ability that revolves around its insatiable thirst for blood. Alabroza boasts an impressive mobility with a flying speed of 50 feet, making it exceptionally difficult to pin down or engage in melee combat. While it possesses a variety of resistances to elemental damage, its reliance on blood to sustain itself is both a strength in its lethality and a weakness in its dependency, as failing to feed leads to exhaustion.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ In summary, Alabroza is a cunning and formidable opponent capable of dealing sig
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alabroza, Bloodfiend
 
 *Small* *Fiend* *neutral evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Transforms into Med humanoid Small mist cloud or back into true bird-like fiend form. Other than size and speed stats are same in each form with mist form exceptions. Items worn/carried not transformed. Reverts on death. Mist form: can’t take any actions speak or manipulate objects resistance to nonmagical damage. Weightless fly speed 20' can hover can enter hostile creature’s space and stop there. If air can pass through a space mist can with o squeezing but can’t pass through water.
 
 
+</statblock>
 
 

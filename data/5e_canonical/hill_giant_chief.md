@@ -1,6 +1,8 @@
 <MonsterName/>Hill Giant Chief</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>8</CR>
+<AC/>13</AC>
+<HP/>126</HP>
 <summary>The Hill Giant Chief is a formidable Huge Giant, known for its strength and size, making it a significant threat in battle. With an armor class of 13 and a high hit point total of 126, it is a tough opponent to overcome. The creature has an impressive Strength score of 20, granting it exceptional melee abilities, while its Constitution of 18 provides solid durability. However, its Dexterity is low at 8, indicating a very bad agility, making the chief less effective at dodging attacks. The Hill Giant Chief is particularly adept in a melee environment, able to deal substantial damage with its attacks and utilize special abilities that control the battlefield. Despite its strengths, the chief's Intelligence, Wisdom, and Charisma scores are all low, making it gullible and easily misled. </summary>
 
 <detail>
@@ -31,6 +33,7 @@ Overall, the Hill Giant Chief is a powerful melee combatant capable of controlli
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hill Giant Chief
 
 *Huge* *Giant*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Stomp (1/Day):** The giant stamps its foot, causing the ground to tremble. Each creature within 60 feet makes a DC 15 Dexterity saving throw. On a failure, it falls prone.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Green Abyss Orc</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>15</HP>
 <summary>The Green Abyss Orc is a medium-sized humanoid with a chaotic evil alignment, noted for its agility, cunning, and viciousness in combat. It is adept at climbing and has good mobility with a walking speed of 30 feet, making it a formidable opponent in various terrains. Despite having relatively low hit points (15), this creature is dangerous due to its poisoning abilities, which can incapacitate foes. It has a challenge rating of 1/2, making it suitable for lower-level adventurers. However, it suffers from sunlight sensitivity, which imposes a disadvantage on its attack rolls and perception checks in bright light. Its strengths in dexterity and constitution give it good maneuvers and resilience, while its limited intelligence and charisma hinder its strategic planning and social interactions.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ In combat, the orc utilizes its **Poisoned Spear** attack, which is versatile as
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Green Abyss Orc
 
 *Medium* *Humanoid* *chaotic evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Poisoned Spear:** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack. If the target is a creature, it must succeed on a DC 13 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hp, the target is stable but poisoned for 1 hour, even after regaining hp, and is paralyzed while poisoned in this way.
 
 
+</statblock>
 
 

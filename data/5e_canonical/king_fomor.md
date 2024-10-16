@@ -1,6 +1,8 @@
 <MonsterName/>King Fomor</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>22</CR>
+<AC/>21</AC>
+<HP/>656</HP>
 <summary>The King Fomor is a gargantuan celestial creature that commands immense power and is a formidable adversary for any adventuring party. With a challenge rating of 22, it boasts impressive statistics, including a high Armor Class of 21 and a staggering 656 hit points, making it exceptionally durable and difficult to defeat. The King Fomor combines potent melee attacks with devastating spellcasting, able to damage or control its foes with a variety of spells. While its physical attacks deal considerable amounts of bludgeoning and radiant damage, it also has resistances and immunities that make it resilient to conventional threats. However, despite its overwhelming strength, the creature’s reliance on its Charisma for spellcasting means it may be vulnerable to effects that target that ability. Overall, the King Fomor is a powerful celestial entity that can dominate the battlefield both through physical prowess and magical abilities.</summary>
 
 <detail>
@@ -52,6 +54,7 @@ Lastly, the King Fomor can utilize legendary actions, allowing it to perform one
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # King Fomor
 
 *Gargantuan* *Celestial*
@@ -99,5 +102,6 @@ Source: 5e_artisinal_monsters
 - **Cast Spell:** The empyrean casts a spell. The empyrean can't use this option if it has cast a spell since the start of its last turn.
 - **Fly:** The empyrean flies up to half its fly speed.
 - **Shout (Recharge 5-6):** Each creature within 120 feet that can hear the empyrean makes a DC 25 Constitution saving throw. On a failure, a creature takes 24 (7d6) thunder damage and is stunned until the end of the empyreans next turn. On a success, a creature takes half damage.
+</statblock>
 
 

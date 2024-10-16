@@ -1,6 +1,9 @@
 <MonsterName/>Golmana</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>demon</Subtype>
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>118</HP>
 <summary>The Golmana is a formidable Medium fiend classified as a demon, presenting a challenge for any adventurers who encounter it. Boasting an Armor Class of 15 and a resilient pool of Hit Points at 118, this creature is built to endure in combat. With a Challenge Rating of 7, the Golmana is a significant threat due to its combination of strong physical attacks and debilitating magical abilities. While it excels in damaging opponents and maintaining its own survivability, it has below-average intelligence, indicated by a score of -1 in Intelligence, making it less effective in strategic situations that require complex thought. Its notable mobility allows it to traverse difficult environments with its Spider Climb ability, while its resistances to several damage types make it even harder to bring down.</summary>
 
 <detail>
@@ -21,6 +24,7 @@ The Golmana’s **Bonus Action**, known as **Consuming Rend**, allows it to dig 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Golmana
 
 *Medium fiend (demon)*
@@ -58,5 +62,6 @@ Source: 5e_artisinal_monsters
 
 - **Consuming Rend.** The golmana violently digs its small, torso claws into one creature it is grappling. The target must make a DC 15 DEX save, taking 7 (2d6) slashing damage on a failed save, or half as much damage on a successful one. The golmana then regains HP equal to the damage dealt.
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Mi-Go</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>5</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Mi-Go is a formidable entity classified as a Medium Plant with a neutral evil alignment. It features exceptional attributes, particularly in its Intelligence at +7, which is very good, and Constitution at +5, indicating high durability in combat. Its Dexterity of +4 grants it good agility, making it a threat both in melee and ranged situations. The Mi-Go has a solid Armor Class of 17 thanks to its natural armor, coupled with a substantial hit points pool of 95, making it quite durable during encounters. It can navigate terrain by walking 60 feet and has the ability to fly at a speed of 30 feet, providing it with tactical options in battle. As a Challenge Rating 5 creature, it poses a moderate threat to adventurers, earning 1,800 experience points upon defeat. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ The Mi-Go's actions in combat include a "Multiattack" option, allowing it to per
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mi-Go
 
 *Medium* *Plant* *Neutral Evil*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) slashing damage, and the target is grappled (escape DC 15) if it is a Large or smaller creature.
 - **Psychic Bolt:** Ranged Spell Attack: +10 to hit, range 120 ft., one target. Hit: 17 (3d6 + 7) psychic damage.
 - **Spore Burst (Recharge 5–6):** The mi-go releases hallucinogenic spores in a 30-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 21 (6d6) poison damage and is incapacitated until the end of its next turn. On a success, a creature takes half the damage and isn’t incapacitated.
+</statblock>
 
 

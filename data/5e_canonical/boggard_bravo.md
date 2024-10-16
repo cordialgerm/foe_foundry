@@ -1,6 +1,8 @@
 <MonsterName/>Boggard Bravo</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>27</HP>
 <summary>The Boggard Bravo is a medium humanoid creature, serving as a unique and agile combatant in its environment. With an Armor Class of 12 and 27 hit points, it possesses moderate durability, but is not particularly tough when facing stronger opponents. Its amphibious nature allows it to thrive in both aquatic and terrestrial settings, presenting a tactical advantage during encounters. The Boggard Bravo excels with its mobility, having the ability to leap great distances and strike opportunistically. While its physical prowess and dexterity (with a Dexterity score of 14, giving it a good +2 modifier) make it a competent combatant, it does not possess high intelligence or wisdom (both rated at 10, which is average), making it somewhat predictable in tactics.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Boggard Bravo is a nimble and capable opponent, thriving in its nat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boggard Bravo
 
 *Medium* *Humanoid*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Tongue:** Melee Weapon Attack: +3 to hit, reach 15 ft., one creature. Hit: The target must make a DC 11 Strength saving throw. On a failure, the boggard pulls the target up to 10 feet, or knocks the target prone, or forces the target to drop one item it is holding (boggards choice).
 
 
+</statblock>
 
 

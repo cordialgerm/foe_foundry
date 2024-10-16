@@ -1,6 +1,8 @@
 <MonsterName/>Piasa</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>144</HP>
 <summary>The Piasa is a large, unaligned dragon known for its impressive aerial abilities and formidable physical traits. With a challenge rating of 6, it presents a significant threat in combat scenarios. The creature possesses a good balance of offensive and defensive capabilities, allowing it to engage adventurers effectively. Its strengths include a high number of hit points and a respectable armor class, making it durable in battle. The Piasa's segmented tail offers a unique feature where its attack potency diminishes as it sustains damage, adding a layer of strategy when facing this adversary. However, it has vulnerabilities to poison damage and a low intelligence score, which limits its problem-solving abilities. Overall, it is a well-rounded opponent that can intimidate and incapacitate foes, primarily through its terrifying presence and potent breath weapon.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, the Piasa has a powerful breath weapon called Sleep Breath, which 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Piasa
 
 *Large* *Dragon* *unaligned*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Sleep Breath (Recharge 5-6):** The piasa exhales sleep gas in a 30-foot cone. Each creature in that area must succeed on a DC 15 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.
 
 
+</statblock>
 
 

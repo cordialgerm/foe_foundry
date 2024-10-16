@@ -1,6 +1,8 @@
 <MonsterName/>Xing Tian</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>11</CR>
+<AC/>16</AC>
+<HP/>168</HP>
 <summary>Xing Tian is a formidable Huge Giant known for its exceptional combat prowess and impressive durability. As a neutral creature, it does not align with good or evil motives, making it a potentially unpredictable challenge for adventurers. With a strong Armor Class of 16 due to its natural armor and shield, paired with a substantial pool of 168 hit points, it can endure prolonged encounters. The creature excels in melee combat, capable of dealing significant damage with its Multiattack, utilizing both a battleaxe and a shield slam. However, its lower Dexterity and Intelligence scores indicate that it may struggle with agility and mental tasks. Its condition immunities to fear and special abilities like Indomitable grant it remarkable resilience against debilitating effects, while Sure-Footed enhances its stability against attempts to knock it over.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, Xing Tian is a tough and resilient adversary with strong offensive capa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Xing Tian
 
 *Huge* *Giant* *neutral*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Dance of the Unyielding:** The xing tian stomps and waves its arms in a martial dance, and it regains 10 hp. Until the dance ends, the xing tian regains 10 hp at the start of each of its turns and melee attack rolls against the xing tian have disadvantage. It must take a bonus action on its subsequent turns to continue dancing. It can stop dancing at any time. The dance ends if the xing tian is incapacitated.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Iceworm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>38</HP>
 <summary>The Iceworm is a small monstrosity that inhabits cold environments, showcasing both unique strengths and notable weaknesses. With a Challenge Rating of 1, it poses a manageable threat to low-level adventurers, particularly due to its ability to manipulate cold damage and its agility in movement. Its attributes are balanced, with a good Dexterity score that allows it to be nimble in combat, while its Constitution provides it with decent durability. However, its intelligence and charisma scores are very low, indicating a lack of mental prowess and social capability. The Iceworm's vulnerabilities to fire and its weaknesses against heat sources make it particularly susceptible in warmer climates. It excels in icy terrains where its cold abilities can shine, using its icy attacks to potentially hinder opponents.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Iceworm has a melee attack called Icy Bite, which utilizes a +5 t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Iceworm
 
 *Small* *Monstrosity* *unaligned*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Icy Spit:** Ranged Weapon Attack: +5 to hit 20/60' one creature. 10 (2d6+3) cold and target is coated in freezing viscous slime. While coated creature’s speed reduced by 10 ft. and has disadvantage on 1st attack roll it makes on each of its turns. Creature including target can use action to clean off the slime ending effect.
 
 
+</statblock>
 
 

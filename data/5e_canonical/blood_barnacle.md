@@ -1,6 +1,8 @@
 <MonsterName/>Blood Barnacle</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>25</HP>
 <summary>The Blood Barnacle is a tiny, unaligned beast known for its insidious nature and disease-ridden attacks. It boasts impressive mobility in water, being able to swim at a speed of 30 feet, while its walking speed is considerably slower at 10 feet. With an Armor Class of 13, it is moderately difficult to hit, and its 25 hit points provide a reasonable buffer in combat situations. The creature’s challenge rating of 1/4 indicates that it presents a minor threat to adventurers, offering 50 experience points upon defeat. The Blood Barnacle stands out due to its unique abilities, particularly its capacity to infect and sap the strength of its victims through the Barnacle Shivers disease, while its stealth through the False Appearance ability allows it to blend in seamlessly with its environment. However, it is vulnerable to fire damage and has only modest physical attributes, limiting its direct combat capabilities.</summary>
 
 <detail>
@@ -32,6 +34,7 @@ Lastly, the Blood Barnacle can react defensively:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Barnacle
 
 *Tiny* *Beast* *unaligned*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Host Defense:** When a creature damages an attached blood barnacle with anything other than fire creature hosting barnacle must make DC 12 Wis save or use its reaction to protect the barnacle. Barnacle takes half the damage dealt to it and host takes the other half.
 
 
+</statblock>
 
 

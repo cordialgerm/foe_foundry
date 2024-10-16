@@ -1,6 +1,8 @@
 <MonsterName/>Grimmlet Swarm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>14</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Grimmlet Swarm is a large monstrosity that embodies a unique and threatening presence on the battlefield. With a formidable Armor Class of 15 and a substantial pool of 152 hit points, this creature has solid defensive capabilities, making it challenging to defeat. Its mobility is complemented by a flying speed of 30 feet and a hovering ability, allowing it to navigate effectively in combat. The swarm boasts impressive strength and constitution scores, providing it with a good melee attack and resilience, while its exceptional Charisma grants it potent innate spellcasting abilities. On the downside, it suffers from a very low Intelligence score, meaning it does not engage in complex tactics or communication beyond understanding Void Speech. The Grimmlet Swarm can present a significant challenge due to its ability to inflict psychic damage, spread exhaustion, and multiply itself when damaged by spells, making it a dangerous opponent in prolonged encounters.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ Overall, the Grimmlet Swarm is a multifaceted adversary that combines physical p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grimmlet Swarm
 
 *Large* *Monstrosity* *unaligned*
@@ -73,5 +76,6 @@ At will: maddening whispers, crushing curse, minor illusion
 - **Crystal Edges:** Melee Weapon Attack: +8 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 18 (4d8) slashing damage, or 9 (2d8) slashing damage if the swarm has half of its hp or fewer. The target must make a DC 17 Intelligence saving throw, taking 21 (6d6) psychic damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Wicked Skull</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>7</HP>
 <summary>The Wicked Skull is a tiny monstrosity with a chaotic neutral alignment that embodies a mischievous spirit. Its role in gameplay is primarily as a trickster that employs deception and charm to influence encounters. With an armor class of 13 and hit points of 7, it is relatively fragile but compensates for its low durability with speed and cunning. The creature has a unique ability to change shapes, allowing it to disguise itself as an ordinary object, making it challenging for enemies to detect. Its charisma-based skills provide it with a strong advantage in social situations, enabling it to manipulate others effectively. However, its combat capabilities are limited due to weak physical attributes, especially in strength.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ It also possesses a special action called Petty Mockery, which allows it to unle
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wicked Skull
 
 *Tiny* *Monstrosity* *chaotic neutral*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Petty Mockery:** The wicked skull unleashes a string of insults laced with subtle enchantments at a creature it can see within 60 feet. If the target can hear the wicked skull (though it does not have to understand it), the target must succeed on a DC 11 Wisdom saving throw or have disadvantage on the next attack roll it makes before the end of its next turn.
 
 
+</statblock>
 
 

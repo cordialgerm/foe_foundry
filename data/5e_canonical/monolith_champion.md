@@ -1,6 +1,8 @@
 <MonsterName/>Monolith Champion</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Monolith Champion is a formidable large construct that embodies neutral alignment. It is designed for combat encounters, functioning as a powerful melee attacker with devastating potential due to its high damage output and unique abilities. With an armor class of 17 and a substantial 102 hit points, it is well-equipped to withstand assaults from adventurers. Its challenge rating of 8 indicates that it presents a significant challenge to a party of players, making it a noteworthy opponent. Notable strengths include immunity to various damage types and conditions, as well as damage-dealing weapon attacks amplified by magical effects. However, it is limited in terms of dexterity and intelligence, which may hinder its mobility and strategic versatility in certain scenarios.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ The **Slam** attack also carries a +7 to hit and similarly has a reach of 5 feet
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Monolith Champion
 
 *Large* *Construct* *Neutral*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The monolith champion makes one Greatsword attack and one Slam attack.
 - **Greatsword:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 18 (4d6 + 4) slashing damage plus 13 (3d8) cold damage or fire damage (the champion’s choice). If the target is within a fey court or castle, the target must succeed on a DC 14 Charisma saving throw or become invisible, silent, and paralyzed for 1 minute, while an illusory version of the target under the champion’s control remains visible and audible. The illusion shouts to the target’s allies for a retreat or similar action. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself and destroying the illusory double on a success.
 - **Slam:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage plus 13 (3d8) cold damage or fire damage (the champion’s choice).
+</statblock>
 
 

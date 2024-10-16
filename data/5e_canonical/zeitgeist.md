@@ -1,6 +1,8 @@
 <MonsterName/>Zeitgeist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>14</AC>
+<HP/>82</HP>
 <summary>The Zeitgeist is a medium humanoid creature with a chaotic neutral alignment. It serves as a swift and unpredictable foe on the battlefield, utilizing its unique ability to alternate between two forms: Darting and Sluggish. This versatility allows it to adapt to different combat scenarios, making it a formidable opponent. Its strengths lie in its high Dexterity and Constitution, granting it good mobility and resilience. However, it has a very low Charisma and an unremarkable Wisdom score, indicating that it may struggle in social encounters or against certain mental effects. With damage immunities to psychic damage and resistances that vary with its form, the Zeitgeist presents a unique challenge for adventurers.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the Rewind reaction allows the Zeitgeist to negate damage it has taken 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zeitgeist
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Rewind (Recharge 4-6):** When the zeitgeist takes damage or when it starts its turn afflicted with a condition, it can rewind time around it, preventing the damage or undoing the condition. It can use this reaction even while paralyzed or stunned.
 
 
+</statblock>
 
 

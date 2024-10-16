@@ -1,6 +1,8 @@
 <MonsterName/>Adult Sea Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>18</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>275</HP>
 <summary>The Adult Sea Dragon is a formidable opponent known for its immense power and mastery of both land and sea. As a Huge dragon with a Neutral Evil alignment, it embodies a blend of lethal combat abilities and strategic cunning. With an impressive hit point total of 275, this creature boasts a high armor class of 19, allowing it to withstand substantial damage during encounters. The Sea Dragon's strength lies in its devastating multiattack capabilities and its special abilities, such as Tidal Breath and Frightful Presence, which can severely hinder foes while enabling it to unleash massive damage. However, despite its might, it has a lower Dexterity score and must carefully manage position to avoid being overwhelmed by speedier adversaries. Overall, the Adult Sea Dragon is a significant threat, particularly in aquatic environments, and commands respect on the battlefield.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the Adult Sea Dragon can also perform three legendary actions each roun
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Sea Dragon
 
 *Huge* *Dragon* *Neutral Evil*
@@ -65,5 +68,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a Tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 21 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then move up to half its flying speed, or half its swimming speed if in the water.
+</statblock>
 
 

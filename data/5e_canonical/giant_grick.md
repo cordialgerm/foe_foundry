@@ -1,6 +1,8 @@
 <MonsterName/>Giant Grick</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>17</AC>
+<HP/>90</HP>
 <summary>The Giant Grick is a Medium monstrosity characterized by its formidable physical prowess and unusual mobility. With a robust Armor Class of 17 and a substantial pool of Hit Points totaling 90, it presents a considerable challenge in combat. It stands out due to its unique ability to climb and navigate tricky surfaces, allowing it to surprise unsuspecting foes. The Grick is primarily melee-oriented, utilizing its powerful tentacles to grapple opponents and restrict their movements, representing a significant threat to adventurers who rely on mobility. However, it has a notably low Intelligence and Charisma, suggesting weaknesses in social or mental interactions. Its Challenge Rating of 2 indicates that it poses a moderate threat to a party of adventurers, rewarding 450 experience points upon defeat.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ Overall, the Giant Grick is a dangerous and mobile combatant, adept at surprise 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Grick
 
 *Medium* *Monstrosity*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +8 to hit, reach 5 ft., one creature grappled by the grick. Hit: 14 (2d8 + 5) piercing damage.
 
 
+</statblock>
 
 

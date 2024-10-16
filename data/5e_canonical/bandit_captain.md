@@ -1,6 +1,10 @@
 <MonsterName/>Bandit Captain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>2</CR>
+<AC/>15 (studded leather)</AC>
+<HP/>65</HP>
 <summary>The Bandit Captain is the hardened and ruthless leader of a gang of criminals. Often larger and more experienced than the average bandit, the captain wears better armor and wields more sophisticated weapons, such as a sword and dagger. These leaders are charismatic and cunning, able to inspire loyalty through fear or respect. Bandit Captains are skilled in strategy, preferring to outsmart their enemies through ambushes or tactical retreats when the odds are against them. While they may not possess magical abilities, their combat prowess and leadership make them formidable foes.</summary>
 
 <summary>The Bandit Captain is a Medium humanoid creature known for its leadership in chaotic and violent encounters. Functioning as both a formidable combatant and a cunning strategist, the Bandit Captain is often encountered leading a group of bandits on the road or in ambush scenarios. With an Armor Class of 15 and a total of 65 hit points, this creature can withstand a decent amount of damage, making it more resilient than many of its minions. It boasts exceptional Dexterity, allowing for agile movements and stealth, while its Charisma and skills in deception enable it to manipulate situations to its advantage. However, its reliance on physical attacks means it may struggle against spellcasters or ranged opponents. </summary>
@@ -31,6 +35,7 @@ The Bandit Captain also possesses a reaction called Parry, which allows it to ad
 
 Source: 5e_srd
 
+<statblock>
 ### Bandit Captain
 
 *Medium humanoid (any race), any non-lawful alignment*
@@ -71,7 +76,8 @@ It takes a strong personality, ruthless cunning, and a silver tongue to keep a g
 
 In addition to managing a crew of selfish malcontents, the **pirate captain** is a variation of the bandit captain, with a ship to protect and command. To keep the crew in line, the captain must mete out rewards and punishment on a regular basis.
 
-More than treasure, a bandit captain or pirate captain craves infamy. A prisoner who appeals to the captain's vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain's colorful reputation.
+More than treasure, a bandit captain or pirate captain craves infamy. A prisoner who appeals to the captain's vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain's colorful reputation.</statblock>
+
 
 
 
@@ -79,6 +85,7 @@ More than treasure, a bandit captain or pirate captain craves infamy. A prisoner
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bandit Captain
 
 *Medium* *Humanoid*
@@ -110,6 +117,7 @@ Source: 5e_artisinal_monsters
 - **Bandits are outlaws who live by violence:** Most are highway robbers, though a few are principled exiles or freedom fighters.
 
 
+</statblock>
 
 
 
@@ -118,6 +126,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bandit Captain
 
 *Medium humanoid (any lineage)*
@@ -156,5 +165,6 @@ Source: 5e_artisinal_monsters
 
 - **Parry.** The bandit captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.
 
+</statblock>
 
 

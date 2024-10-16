@@ -1,6 +1,8 @@
 <MonsterName/>Mandrake</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>8</AC>
+<HP/>22</HP>
 <summary>The Mandrake is a tiny, unaligned plant creature that embodies a unique blend of characteristics and abilities. With a low Armor Class of 8 and moderate health totaling 22 hit points, the Mandrake is not built for direct confrontation. Its real strengths lie in its unique abilities, particularly the Shriek, which can stun or incapacitate opponents. However, with low Dexterity and Intelligence, its effectiveness in physical combat and strategic thinking is very poor, limiting its role mainly to providing disruptive support through sound rather than melee prowess. Players encountering a Mandrake should be cautious of its Shriek, as it can significantly impact the battlefield dynamics.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ Overall, the Mandrake’s utility lies in its ability to disrupt opponents and p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mandrake
 
 *Tiny* *Plant* *unaligned*
@@ -43,5 +46,6 @@ Source: 5e_artisinal_monsters
 - **Shriek (Recharge 4-6):** All creatures within 60 feet of the mandrake that can hear it must succeed on a DC 13 Constitution saving throw or take 5 (2d4) thunder damage. If a creature fails the saving throw by 5 or more, it is stunned until the end of its next turn. If it fails by 10 or more, it falls unconscious. An unconscious creature can repeat the saving throw at the end of each of its turns, regaining consciousness on a success.
 
 
+</statblock>
 
 

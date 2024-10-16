@@ -1,6 +1,8 @@
 <MonsterName/>Spinosaurus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>13</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>232</HP>
 <summary>The Spinosaurus is a gargantuan, unaligned beast that thrives as a formidable predator in its environment. With an impressive array of physical attributes and a challenge rating of 13, it poses a significant threat to adventurers. The creature excels in melee combat, boasting high damage output and the ability to incapacitate foes with its grapple attack. However, it has weaknesses in terms of dexterity and intelligence, which may limit its effectiveness in more strategic scenarios. Notably, the Spinosaurus has a unique affinity for reptilian humanoids, avoiding attacks against them unless provoked, which sets it apart from typical monsters.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Moreover, the Spinosaurus can take legendary actions, allowing it to perform add
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spinosaurus
 
 *Gargantuan* *Beast* *Unaligned*
@@ -60,5 +63,6 @@ The spinosaurus can take 3 legendary actions, choosing from the options below. O
 - **Move:** The spinosaurus moves up to half its speed without provoking opportunity attacks.
 - **Roar:** The spinosaurus uses Frightful Presence.
 - **Tail Attack (Costs 2 Actions):** The spinosaurus makes one Tail attack.
+</statblock>
 
 

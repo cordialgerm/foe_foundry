@@ -1,6 +1,8 @@
 <MonsterName/>Lizardfolk Chosen One</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>15</AC>
+<HP/>75</HP>
 <summary>The Lizardfolk Chosen One is a medium humanoid creature with formidable combat capabilities, particularly in melee situations. It showcases a good blend of strength and resilience, making it a powerful adversary or ally on the battlefield. With a Challenge Rating of 4, it is suitable for mid-level encounters. Benefiting from decent armor and hit points, the Chosen One can withstand a fair amount of damage while dealing significant hurt to opponents with its multiattack feature. However, its overall dexterity is average, which may affect its ability to dodge attacks effectively. Additionally, its special abilities and spells enhance its role in combat, either by providing temporary boosts to its defenses or retaliating against attackers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a reaction, the Lizardfolk can perform "Supernatural Rebuke" once per day. Th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizardfolk Chosen One
 
 *Medium* *Humanoid*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Supernatural Rebuke (1/Day):** When the lizardfolk is dealt damage by a creature it can see within 60 feet, its attacker makes a DC 13 Dexterity saving throw. On a failure, the attacker takes 11 (2d10) fire or radiant damage (the lizardfolks choice).
 
 
+</statblock>
 
 

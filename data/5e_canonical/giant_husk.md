@@ -1,6 +1,8 @@
 <MonsterName/>Giant Husk</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>9</AC>
+<HP/>76</HP>
 <summary>The Giant Husk is a formidable undead creature characterized by its chaotic evil nature and large size. With a significant pool of hit points and decent armor class, it can absorb considerable damage before being taken down. It thrives in melee combat, utilizing its physical strength and unique abilities to restrain and damage its opponents. However, its low dexterity leaves it vulnerable to dexterity-based attacks and ranged assaults. The Giant Husk excels at grappling and inflicting ongoing damage, making it a serious threat in close quarters. Its challenge rating of 7 indicates that it can pose a substantial challenge to parties of lower level, and its unique abilities make it versatile in combat situations.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Giant Husk can utilize the Multiattack feature, allowing it to ma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Husk
 
 *Huge* *Undead* *chaotic evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Smother:** Melee Weapon Attack: +8 to hit, reach 5 ft., one Huge or smaller creature. Hit: The creature is grappled (escape DC 14). Until this grapple ends, the target is restrained, blinded, and at risk of suffocating. In addition, at the start of each of the target’s turns, the target takes 14 (3d6 + 4) bludgeoning damage. The husk can smother one Huge, two Large, or four Medium or smaller creatures at a time.
 
 
+</statblock>
 
 

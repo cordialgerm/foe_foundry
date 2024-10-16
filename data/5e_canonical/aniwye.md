@@ -1,6 +1,8 @@
 <MonsterName/>Aniwye</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Aniwye is a formidable large monstrosity with an alignment leaning towards neutral evil. This creature possesses a blend of physical strength and cunning adaptability, making it a versatile opponent in combat. With an armor class of 15, it boasts notable resilience due to its natural armor, and it can withstand a fair amount of damage, having a total of 102 hit points. The Aniwye can traverse different terrains effectively, with a walking speed of 40 feet and a climbing speed of 20 feet. It is rated with a challenge level of 5, indicating that it presents a significant challenge for adventurers, garnering a reward of 1,800 experience points upon defeat. Notably, the Aniwye's ability to shapeshift between a skunk-like monstrosity and larger forms, such as an ogre or hill giant, allows it to adapt its strategy during encounters, although it has lower intelligence than most creatures. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ In its skunk form, the Aniwye can unleash a deadly musk with the Deadly Musk abi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aniwye
 
 *Large* *Monstrosity* *neutral evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Deadly Musk (Recharge 5-6; Skunk Form Only):** The aniwye releases a cloud of highly poisonous musk from its tail in a 15-foot cone. Each creature in that area must make a DC 15 Constitution saving throw. On a failure, a creature takes 24 (7d6) poison damage and is stunned until the end of its next turn. On a success, a creature takes half the damage and isn’t stunned.
 
 
+</statblock>
 
 

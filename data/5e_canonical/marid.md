@@ -1,6 +1,8 @@
 <MonsterName/>Marid</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>11</CR>
+<AC/>17</AC>
+<HP/>172</HP>
 <summary>The Marid is a formidable Large Elemental creature, embodying the essence of water and capable of both melee and magical combat. With an Armor Class of 17 and a substantial pool of 172 hit points, it is well-equipped to endure extended conflicts. The Marid boasts impressive Strength and Constitution scores, both at 22, which grants it exceptional attack capabilities and resilience in battle, while its Dexterity of 16 ensures decent mobility. As a Challenge Rating 11 creature, it is intended for high-level encounters, providing considerable challenge and tactical depth.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Marid combines physical prowess with magical versatility, making it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Marid
 
 *Large* *Elemental*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Water Jet (While Bloodied):** The marid shoots water in a 5-foot-wide, 60-foot-long jet. Each creature in the area makes a DC 18 Dexterity saving throw. On a failure, a target takes 21 (6d6) bludgeoning damage and is pushed 20 feet away from the marid, to a maximum of 60 feet away, and knocked prone. On a success, a target takes half damage.
 
 
+</statblock>
 
 

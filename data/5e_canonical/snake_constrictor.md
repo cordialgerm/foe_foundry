@@ -1,6 +1,8 @@
 <MonsterName/>Snake, Constrictor</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>15</HP>
 <summary>The Constrictor Snake is a large beast best known for its ability to grapple and restrain prey, making it a formidable opponent for adventurers who come too close. With an Armor Class of 12 and 15 hit points, the snake has decent resilience for its Challenge Rating of 1/4, indicating it poses a minor threat to most parties. Its speed allows it to move effectively both on land and in water, giving it great versatility in various environments. The snake’s main strength lies in its ability to restrain opponents and inflict damage through its bite and constrict actions. However, it is somewhat limited by its average Strength and Dexterity scores, which translate to overall lower attack potential and moderate defensive capabilities.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the Constrictor Snake excels at ambushing targets and controlling battl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snake, Constrictor
 
 *Large beast*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 
 - **Crush.** One creature grappled by the snake must succeed on a DC 12 STR or take 4 (1d8) bludgeoning damage and begin suffocating. The creature continues suffocating until the grapple ends.
 
+</statblock>
 
 

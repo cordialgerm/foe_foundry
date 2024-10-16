@@ -1,6 +1,8 @@
 <MonsterName/>Avatar of Shoth</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>21</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>341</HP>
 <summary>The Avatar of Shoth is a formidable creature classified as a Gargantuan Aberration that operates under a lawful neutral alignment. It serves as a powerful adversary in combat, with exceptional defenses, a high hit point pool, and the ability to manipulate knowledge and spells through its unique abilities. With an Armor Class of 18, it is resilient to physical attacks alongside impressive immunities to acid, cold, fire, and specific conditions such as charm and fear. The Avatar's strengths lie in its high Charisma, Wisdom, and Constitution scores, enabling it to perform well in both combat and social interactions. Notable powers such as the ability to absorb knowledge from damaged targets and recreate their abilities, alongside a wide array of spellcasting, highlight its versatility. However, its relatively low Dexterity means it can be more easily hit by attacks and can struggle with initiative rolls, which can be seen as a weakness in fast-paced combat scenarios.</summary>
 
 <detail>
@@ -30,6 +32,7 @@ In legendary actions, the Avatar can cast spells at will or make a tentacle atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Avatar of Shoth
 
 *Gargantuan* *Aberration* *lawful neutral*
@@ -78,5 +81,6 @@ The avatar can take 3 legendary actions, choosing from the options below. Only o
 - **At Will Spell:** The avatar casts one at will spell.
 - **Oozing Tentacle:** The avatar makes one oozing tentacle attack.
 - **Acid Wave (Costs 2 Actions):** The avatar uses Acid Wave, if it is available.
+</statblock>
 
 

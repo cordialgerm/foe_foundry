@@ -1,6 +1,8 @@
 <MonsterName/>Abominable Snowman</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>136</HP>
 <summary>The Abominable Snowman is a large monstrosity known for its formidable presence and deadly abilities in icy environments. With a Challenge Rating of 4, this creature possesses a significant amount of hit points, totaling 136, which makes it quite durable in combat. Its strength is exceptional, with a Strength score of 18 and a +4 modifier, allowing it to deal substantial melee damage. The Abominable Snowman is not overly quick but possesses average Dexterity, leading to some decent maneuverability. Notably, it is immune to cold damage, which defines its strengths and provides it with a clear advantage in cold climates. On the downside, it has below-average Intelligence, limiting its ability to engage in complex problem-solving. The Snowman's notable abilities, such as camouflage and its chilling gaze, add to its menace on the battlefield, making it a creature for adventurers to be wary of.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Abominable Snowman can execute a multiattack, which involves usin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Abominable Snowman
 
 *Large* *Monstrosity*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Chilling Gaze (Gaze):** One creature within 30 feet that is not immune to cold damage makes a DC 13 Constitution saving throw. On a failure  the creature takes 10 (3d6) cold damage and is paralyzed for 1 minute. It repeats the saving throw at the end of each of its turns  ending the effect on a success. If a creatures saving throw is successful or the effect ends for it  it is immune to any Chilling Gaze for 24 hours.
 
 
+</statblock>
 
 

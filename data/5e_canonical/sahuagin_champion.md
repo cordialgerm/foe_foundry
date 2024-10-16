@@ -1,6 +1,8 @@
 <MonsterName/>Sahuagin Champion</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>90</HP>
 <summary>The Sahuagin Champion is a formidable Medium humanoid creature, known for its significant prowess in underwater combat and its ability to command sharks. With an Armor Class of 16 and 90 hit points, it presents a solid challenge to adventurers, making it suitable for encounters with a challenge rating of 5, translating to 1,800 experience points for defeat. The Sahuagin possesses strong physical attributes, boasting high values in Strength, Dexterity, and Constitution, which contribute to its combat effectiveness and survival. While its Intelligence is average, the creature makes up for it with good Charisma, enabling it to intimidate foes effectively. Its notable amphibious nature allows it to thrive both in water and on land, although it must periodically return to water to avoid suffocation. </summary>
 
 <detail>
@@ -28,6 +30,7 @@ In action, the Sahuagin Champion can use its **Multiattack** feature to strike t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sahuagin Champion
 
 *Medium* *Humanoid*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage.
 
 
+</statblock>
 
 

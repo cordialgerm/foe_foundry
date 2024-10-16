@@ -1,6 +1,8 @@
 <MonsterName/>Coastline Reaper</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>144</HP>
 <summary>The Coastline Reaper is a formidable Large monstrosity that lurks in aquatic environments and is unaligned in its motives. With a robust armor class of 16, it can absorb considerable damage, boasting a substantial 144 hit points, which makes it a resilient opponent in combat. It has a unique movement capability that allows it to walk at a slow speed of 10 feet on land but swim quickly at 40 feet in water. As a Challenge Rating 9 creature, it offers a significant threat in encounters, especially to players unfamiliar with its abilities. The Coastline Reaper excels at dealing damage with its tentacles and possesses the ability to paralyze foes, making it a dangerous adversary. However, it has weaknesses, such as a very low Intelligence score, rendering it poor in problem-solving or interacting with characters outside of combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ One of its most terrifying abilities is the Frightening Visage, which can be use
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Coastline Reaper
 
 *Large* *Monstrosity* *unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Frightening Visage (Recharge 5–6):** If underwater it flares the light from its organs making skull-like structure within more apparent. If above water the coastline reaper tightly pulls in its outer flesh causing its body to take on a fleshy skull-like appearance. Each Humanoid within 30' of it that can see it: 21 (6d6) psychic and frightened 1 min (DC 16 Wis half not frightened). Frightened creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

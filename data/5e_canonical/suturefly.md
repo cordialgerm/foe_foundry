@@ -1,6 +1,8 @@
 <MonsterName/>Suturefly</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>10</HP>
 <summary>The Suturefly is a tiny, unaligned beast that serves as both a stealthy adversary and a unique source of disruption in combat. With a reasonable armor class of 12 and hit points totaling 10, it is relatively fragile. However, its strengths lie in its mobility, particularly its walk speed of 40 feet and a flying speed of 10 feet, allowing it to evade attacks and reposition quickly. The creature has very good Dexterity, reflected in its +2 modifier, which grants it advantage in stealth situations, making it a difficult target to pin down. Notably, its special abilities offer interesting mechanics during encounters, particularly its capacity to detect lies and inflict debilitating conditions with its sewing attack. While it has very low Strength, Intelligence, and Charisma scores, its stealth-focused fighter role allows it to thrive in forested environments.</summary>
 
 <detail>
@@ -28,6 +30,7 @@ In terms of actions, the Suturefly can perform the following:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Suturefly
 
 *Tiny* *Beast* *Unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Sew:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 12 Dexterity saving throw or the suturefly sews the target’s mouth, nose, or one of its eyes closed (the suturefly’s choice). With supernatural speed, the suturefly repeatedly pierces the target’s face, each time threading a loop of the target’s own skin through the previous hole. These skin loops rapidly blacken, shrink, and draw the orifice tightly closed. If a target’s mouth is sewn shut, it can’t speak. If its mouth and nose are sewn shut, it can’t breathe, and if both eyes are sewn shut, it is blinded. A creature, including the target, can take its action to cut open one of the sewn orifices by succeeding on a DC 12 Dexterity check with an edged weapon or tool.
+</statblock>
 
 

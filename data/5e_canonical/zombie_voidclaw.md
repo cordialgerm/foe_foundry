@@ -1,6 +1,8 @@
 <MonsterName/>Zombie, Voidclaw</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>143</HP>
 <summary>The Voidclaw Zombie is a small undead creature characterized by its chaotic evil alignment. With a Challenge Rating of 7, it poses a significant threat in combat, drawing on its notably high Dexterity and unique abilities to manipulate engagement. The creature has a robust pool of hit points with 143, making it resilient in battle. Its strengths lie in its mobility, with a walking speed of 40 feet and the ability to climb 20 feet, along with advantageous combat abilities that hinder opponents. However, its weaknesses are apparent in its low Intelligence, Wisdom, and Charisma scores, indicating limited mental capacity and poor social interactions.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As for its bonus action, "Nimble Fighter" enables the Voidclaw Zombie to take ei
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zombie, Voidclaw
 
 *Small* *Undead* *chaotic evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Nimble Fighter:** Takes Dash or Disengage action.
 
 
+</statblock>
 
 

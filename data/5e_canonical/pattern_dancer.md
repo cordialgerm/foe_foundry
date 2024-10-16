@@ -1,6 +1,8 @@
 <MonsterName/>Pattern Dancer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>33</HP>
 <summary>The Pattern Dancer is a medium humanoid creature characterized by a chaotic evil alignment. With an Armor Class of 13 and a total of 33 hit points, it has moderate defenses that allow it to withstand some damage in combat. This creature is particularly nimble, boasting a Dexterity score of 16, which grants it a good (average) modifier of +3, enabling it to perform acrobatics and evade attacks effectively. The Pattern Dancer relies heavily on its spellcasting capabilities, having a Charisma score of 16, which provides an exceptional +5 modifier for its spells, making its magical attacks highly effective. However, it does face vulnerabilities, especially in bright sunlight where it suffers from disadvantage on attack rolls and perception checks.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ In combat, the Pattern Dancer can utilize its Shortsword with a +5 to hit for 6 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pattern Dancer
 
 *Medium* *Humanoid* *chaotic evil*
@@ -64,5 +67,6 @@ At will: hold person
 - **Longbow:** Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
 
 
+</statblock>
 
 

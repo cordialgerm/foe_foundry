@@ -1,6 +1,8 @@
 <MonsterName/>Goat-Man</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Goat-Man is a chaotic evil medium monstrosity that embodies a blend of ferocity and cunning. With strong physical attributes and agility, it excels in combat with a robust toolkit that allows it to deal substantial damage while maneuvering effectively around opponents. Notable for its ability to knock down foes and stun them, the Goat-Man is particularly dangerous when it can charge at its target, delivering extra damage and potentially incapacitating them. Its reliable defenses and condition immunities make it a formidable adversary, although it does have a weak mental capacity and can be susceptible to magical attacks that require mental fortitude.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Its action economy is quite potent, as it can make multiple attacks. The Multiat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goat-Man
 
 *Medium* *Monstrosity* *Chaotic Evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The goat-man makes one Bite attack and two Slam attacks. If both Slam attacks hit the same target, the target must succeed on a DC 14 Constitution saving throw or be stunned until the end of its next turn.
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage.
 - **Slam:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage.
+</statblock>
 
 

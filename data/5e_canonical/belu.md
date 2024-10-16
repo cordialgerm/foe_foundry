@@ -1,6 +1,8 @@
 <MonsterName/>Belu</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>184</HP>
 <summary>Belu is a Huge Giant of chaotic good alignment, embodying both strength and versatility. With a robust armor class of 16 due to its natural armor and a significant pool of hit points totaling 184, Belu excels in tanking damage while providing support through its unique abilities and spells. Its challenge rating of 10 indicates that it can present a formidable challenge to a group of adventurers, granting experience points of 5,900 upon defeat. Despite its power, Belu holds a deeply benevolent nature, using its abilities not only for combat but for healing and assisting fellow creatures. Notably, it can change its shape into a Small or Medium humanoid, enhancing its adaptability in different scenarios.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, as a bonus action, Belu has the ability to "Change Shape." This ability
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Belu
 
 *Huge* *Giant* *chaotic good*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Magically transforms into a Small or Med Humanoid or back into its true form. Its stats other than size are same in each form. Any equipment it is wearing or carrying transforms with it. If it dies it reverts to its true form.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Wormhearted Suffragan</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>13</AC>
+<HP/>120</HP>
 <summary>The Wormhearted Suffragan is a medium-sized undead creature characterized by its chaotic evil nature. It has a strong presence in combat due to its ability to inflict necrotic damage and diseases on its enemies, alongside its formidable control over lesser undead. This creature has a good Armor Class of 13 and a substantial pool of hit points totaling 120, which makes it resilient in battle. However, it is vulnerable to radiant damage, which can be a significant weakness for those who wield holy magic. The suffragan excels in dexterity and constitution, making it both agile and tough, while it falters in charisma, indicating its terrifying presence rather than natural charm. Notably, the suffragan can animate the dead it has killed, using them to create a small army of skeletons or zombies, which adds to its threat level.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In terms of actions, the Wormhearted Suffragan can perform a Multiattack, enabli
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wormhearted Suffragan
 
 *Medium* *Undead* *Chaotic Evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Worm-Coated Fist:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage plus 7 (2d6) necrotic damage, and the target must succeed on a DC 14 Constitution saving throw or contract a disease. Until the disease is cured, the target can’t regain hp, and its hp maximum decreases by 7 (2d6) every 24 hours. This reduction lasts until the target finishes a long rest after the disease is cured. The target dies if this effect reduces its hp maximum to 0.
 - **Paralyzing Bolt:** Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 17 (4d6 + 3) necrotic damage, and the target must succeed on a DC 14 Constitution saving throw or be paralyzed until the end of its next turn.
 - **Animating Worms (3/Day):** The wormhearted suffragan touches the body of a dead Humanoid, passing on some of the suffragan’s worms. The worms fill the target, animating it as a skeleton or zombie (the suffragan’s choice) under the suffragan’s control.
+</statblock>
 
 

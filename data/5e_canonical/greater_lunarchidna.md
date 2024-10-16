@@ -1,6 +1,8 @@
 <MonsterName/>Greater Lunarchidna</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>58</HP>
 <summary>The Greater Lunarchidna is a medium-sized aberration characterized by its neutral evil alignment. This creature excels in stealth and cunning, enhanced by its climbing ability and its proficiency in spellcasting. It presents a notable challenge to adventurers with its capability of manipulating webbing and utilizing necrotic damage to weaken foes. However, it suffers from a significant disadvantage when exposed to sunlight, making it vulnerable in brightly lit environments. The combination of its stealth, spellcasting, and physical attacks gives the Lunarchidna a formidable presence in combat, but it must navigate carefully to avoid areas of direct sunlight.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The Lunarchidna can use its Web ability, which recharges on a roll of 5 or 6; th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greater Lunarchidna
 
 *Medium* *Aberration* *neutral evil*
@@ -63,5 +66,6 @@ Cantrips (at will): minor illusion, mage hand, poison spray, ray of frost
 - **Wrap Up:** The lunarchidna wraps up a Medium or smaller creature restrained by webbing. The wrapped target is blinded, restrained, and unable to breathe, and it must succeed on a DC 13 Constitution saving throw at the start of each of the lunarchidna’s turns or take 5 (1d4 + 3) bludgeoning damage. The webbing can be attacked and destroyed (AC 10; hp 15; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage). The lunarchidna can have only one creature wrapped at a time.
 
 
+</statblock>
 
 

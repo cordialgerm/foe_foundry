@@ -1,6 +1,8 @@
 <MonsterName/>Aboleth</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>135</HP>
 <summary>The Aboleth is a massive, aberrant creature that dwells in the deepest, darkest parts of the ocean or underground lakes. Its body is long and eel-like, covered in slimy, mucus-coated skin that reeks of decay. It has three glowing eyes stacked one on top of the other, and four long, powerful tentacles that it uses to ensnare prey. The Aboleth is incredibly ancient, with memories stretching back to primordial times, and it has powerful psychic abilities, including mind control and telepathy. It is a manipulator and enslaver of other creatures, twisting their minds and bodies to serve its purposes.</summary>
 
 <summary>The Aboleth is a large aberration known for its cunning intellect and formidable presence, often lurking in the depths of dark waters. With a robust armor class of 17 and a substantial pool of hit points at 171, it poses a significant threat to adventurers who venture too close to its lair. The creature's speed allows it to move swiftly in water, swimming at 40 feet, but its terrestrial movement is limited to only 10 feet. The Aboleth operates at challenge rating 11, making it a powerful adversary for parties of lower levels, and it can be expected to provide a serious combat challenge with its multiattack capabilities and potent special abilities.</summary>
@@ -39,6 +41,7 @@ Overall, the Aboleth is a cunning and terrifying foe, capable of manipulating it
 
 Source: 5e_srd
 
+<statblock>
 ## Aboleth
 
 *Large aberration, lawful evil*
@@ -89,7 +92,8 @@ The aboleth can take 3 legendary actions, choosing from the options below. Only 
 
 **Tail Swipe**. The aboleth makes one tail attack.
 
-**Psychic Drain (Costs 2 Actions)**. One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.
+**Psychic Drain (Costs 2 Actions)**. One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.</statblock>
+
 
 
 
@@ -97,6 +101,7 @@ The aboleth can take 3 legendary actions, choosing from the options below. Only 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aboleth
 
 *Large* *Aberration*
@@ -136,6 +141,7 @@ Source: 5e_artisinal_monsters
 - **Telepathic Summon:** One creature within 90 feet makes a DC 16 Wisdom saving throw. On a failure, it must use its reaction, if available, to move up to its speed toward the aboleth by the most direct route that avoids hazards, not avoiding opportunity attacks. This is a magical charm effect.
 - **Baleful Charm (Costs 2 Actions):** The aboleth targets one creature within 60 feet that has contracted Sea Change. The target makes a DC 16 Wisdom saving throw. On a failure, it is magically charmed by the aboleth until the aboleth dies. The target can repeat this saving throw every 24 hours and when it takes damage from the aboleth or the aboleths allies. While charmed in this way, the target can communicate telepathically with the aboleth over any distance and it follows the aboleths orders.
 - **Soul Drain (Costs 2 Actions):** One creature charmed by the aboleth takes 22 (4d10) psychic damage, and the aboleth regains hit points equal to the damage dealt.
+</statblock>
 
 
 
@@ -144,6 +150,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Aboleth
 
 *Large aberration*
@@ -190,5 +197,6 @@ The aboleth can take 3 legendary actions, choosing from the options below. Only 
 ### Regional Effects
 
 - **1d10** If the aboleth dies, these effects fade in  days.
+</statblock>
 
 

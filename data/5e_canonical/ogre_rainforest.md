@@ -1,6 +1,8 @@
 <MonsterName/>Ogre, Rainforest</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Rainforest Ogre is a formidable adversary and a typical embodiment of chaotic evil within its environment. As a Large Giant, it wields significant physical strength and resilience, marked by its high hit points and solid attack options. The creature's abilities allow it to be an aggressive combatant, thriving on charging into battle and overpowering foes with its strength. While it possesses only moderate Dexterity and Wisdom attributes, its exceptional Strength provides it with powerful melee capabilities. The Rainforest Ogre also has unique traits that enhance its versatility, such as the ability to change shape into a large boar, which grants it additional combat options and mobility. However, its low Intelligence and Charisma scores indicate that it may struggle with complex strategies and social interactions.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the ogre has the ability to Change Shape, allowing it to tran
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre, Rainforest
 
 *Large* *Giant* *chaotic evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Transforms into a Large boar or back into its true ogre form. Its stats are the same in each form. Any equipment it is wearing or carrying isn’t transformed. Reverts on death.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Zombie, Smokeplume</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Zombie, Smokeplume is a formidable large undead creature characterized by its chaotic evil alignment. With a challenge rating of 3, it poses a significant threat in combat, boasting a high armor class of 15 and a substantial pool of hit points totaling 68. This creature excels in both offensive and defensive capabilities; it has impressive strength and constitution values, which enable it to withstand a considerable amount of damage before falling. However, it suffers from very low dexterity, intelligence, wisdom, and charisma, making it less effective in any skills or interactions that require agility or mental acuity. Its notable abilities allow it to manipulate the battlefield with smoke and fire, providing challenges for adventurers who encounter it.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Zombie, Smokeplume has several actions. Its primary attack is "Sl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zombie, Smokeplume
 
 *Large* *Undead* *chaotic evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Smoke Breath (Recharge 5–6):** The zombie breathes a cloud of smoke in a 15 ft. cone. Each creature in the area: 9 (2d8) fire and 7 (2d6) poison (DC 15 Con half). Smoke remains until the start of the zombie’s next turn and its area is heavily obscured.
 
 
+</statblock>
 
 

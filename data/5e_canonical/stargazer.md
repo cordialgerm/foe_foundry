@@ -1,6 +1,8 @@
 <MonsterName/>Stargazer</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Stargazer is a formidable Huge Monstrosity that operates independently, showcasing a range of strengths and unique abilities that make it a challenging adversary in combat. With high durability provided by its solid Armor Class of 17 and significant Hit Points totaling 168, the Stargazer can absorb considerable damage. Its capabilities in battle are further enhanced by its multiattack feature, allowing it to deliver multiple strikes in a single turn. However, it has notable weaknesses; specifically, its low Dexterity score indicates it is not very nimble, making it susceptible to attacks that require agility. The creature has limited intelligence and charisma, making it less effective in social situations or for casting spells. Its challenge rating of 9 makes it a suitable foe for mid-level adventurers, offering 5,000 experience points upon defeat.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In summary, the Stargazer is a strong contender in combat with significant hit p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stargazer
 
 *Huge* *Monstrosity* *unaligned*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Wing Trap Snap:** When 1+ creatures step onto a space on ground within 10 ft. directly above a hidden stargazer stargazer can burrow up to 10 ft. and snap its wing-like appendages shut emerging on the ground in space directly above where it was buried and that contains one or more other creatures. Each creature must make DC 16 Dex save or be trapped as if it failed save vs. Wing Trap.
 
 
+</statblock>
 
 

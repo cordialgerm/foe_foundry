@@ -1,6 +1,8 @@
 <MonsterName/>Magma Octopus</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Magma Octopus is a large elemental being that thrives in volcanic environments. With an impressive hit point total of 147 and a challenge rating of 8, it poses a significant threat to adventurers. Its natural armor grants it an Armor Class of 16, making it fairly difficult to hit. The Magma Octopus excels in close combat, utilizing its powerful tentacles, while also harnessing the elemental power of fire. It is immune to fire damage, rendering most fire-based attacks ineffective against it. However, its reliance on lava for survival can be considered a weakness, as it becomes vulnerable to cold damage when it is forced to spend too long outside of lava. Adventurers must be cautious of its ability to grapple multiple foes and the devastating area damage from its magma blast.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Magma Octopus is a formidable opponent with high combat potential, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Magma Octopus
 
 *Large* *Elemental* *neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Magma Blast (Recharge 6):** The magma octopus sprays magma in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 28 (8d6) fire damage on a failed save, or half as much damage on a successful one. If a creature fails the saving throw by 5 or more, it catches fire. Until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns.
 
 
+</statblock>
 
 

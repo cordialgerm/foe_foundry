@@ -1,6 +1,8 @@
 <MonsterName/>Onyx Magistrate</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>123</HP>
 <summary>The Onyx Magistrate is a formidable Large Construct that embodies law and order through a lawful evil alignment. It serves as an enforcer of harsh codes, utilizing its strengths in magic and combat to impose its will on the battlefield. With a high Armor Class of 16 and a notable pool of Hit Points at 123, it can withstand significant damage while inflicting high amounts of damage itself, particularly through its unique abilities. The Onyx Magistrate excels in its magical resistance and the ability to avoid alterations to its form, making it a challenging foe. However, it has a relatively low Dexterity, which may make it less agile in combat situations. The creature's challenge rating of 8 indicates that it is a strong adversary, suitable for mid-level adventurers.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ As a reaction, the Onyx Magistrate can utilize Tip the Scales, which allows it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Onyx Magistrate
 
 *Large* *Construct* *lawful evil*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Tip the Scales (Recharge 5-6):** The onyx magistrate adds 3 to its AC against one attack that would hit it. Alternatively, the onyx magistrate succeeds on a saving throw it failed.
 
 
+</statblock>
 
 

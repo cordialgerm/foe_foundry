@@ -1,6 +1,9 @@
 <MonsterName/>Griffon</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<Subtype/>animal</Subtype>
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>59</HP>
 <summary>A Griffon is a majestic, powerful creature with the body of a lion and the head and wings of an eagle. These fearsome predators are often found in high mountains or remote wilderness areas, where they hunt large prey such as deer or horses. Griffons are highly territorial and will fiercely defend their nests or hunting grounds from intruders. In combat, they use their sharp talons and beak to tear apart foes, and their ability to fly allows them to strike from above with devastating speed. Despite their wild nature, Griffons can sometimes be trained as mounts by skilled handlers.</summary>
 
 <summary>The Griffon is a formidable large monstrosity known for its fierce nature and aerial prowess. Standing as a challenging opponent with a Challenge Rating of 3, this creature possesses a strong combination of physical attributes, allowing it to be both a powerful predator on the ground and a fearsome hunter from the sky. With high Strength and Constitution scores, the Griffon can inflict significant damage, while its decent Dexterity offers it a good level of agility in combat. However, its Intelligence and Charisma scores are notably low, indicating that the Griffon lacks social finesse and complex thinking. Notably, its Keen Sight ability enhances its perceptive capabilities, making it adept at detecting hidden threats or prey from a distance.</summary>
@@ -33,6 +36,7 @@ Overall, the griffon is a formidable beast combining aerial prowess and powerful
 
 Source: 5e_srd
 
+<statblock>
 ## Griffon
 
 *Large monstrosity, unaligned*
@@ -63,7 +67,8 @@ Source: 5e_srd
 
 ***Beak***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 8 (1d8+4) piercing damage.
 
-***Claws.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.
+***Claws.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.</statblock>
+
 
 
 
@@ -71,6 +76,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Griffon
 
 *Large* *Monstrosity*
@@ -100,6 +106,7 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage  or 11 (2d6 + 4) slashing damage if the griffon started its turn at least 20 feet above the target  and the target is grappled (escape DC 14). Until this grapple ends  the griffon can't attack a different target with its talons.
 
 
+</statblock>
 
 
 
@@ -108,6 +115,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Griffon
 
 *Large monstrosity (animal)*
@@ -140,5 +148,6 @@ Source: 5e_artisinal_monsters
 - **Beak.** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.
 - **Claws.** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.
 
+</statblock>
 
 

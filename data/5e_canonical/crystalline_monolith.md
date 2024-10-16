@@ -1,6 +1,8 @@
 <MonsterName/>Crystalline Monolith</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>123</HP>
 <summary>The Crystalline Monolith is a formidable Huge aberration characterized by its ability to manipulate psychic forces and its tough physical constitution. Acting as a neutral entity, its role in encounters is primarily that of a psychic damage dealer and crowd controller. With a solid Armor Class of 15 and hit points totaling 123, the monolith is resilient and difficult to defeat. Its strengths lie in its psionic abilities, advanced magical resistances, and the capacity to petrify opponents, while its lack of mobility may serve as a significant weakness. The challenge posed by the Crystalline Monolith is rated at 7, providing 2,900 experience points for successful confrontation.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, the Crystalline Monolith has legendary actions at its disposal, wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crystalline Monolith
 
 *Huge* *Aberration* *lawful neutral*
@@ -68,5 +71,6 @@ The crystalline monolith can take 3 legendary actions, choosing from one of the 
 - **Detect:** The crystalline monolith makes a Wisdom (Perception) check.
 - **Teleport (Costs 2 Actions):** The crystalline monolith magically teleports up to 120 feet to an unoccupied space it can see.
 - **Cast a Spell (Costs 3 Actions):** The crystalline monolith casts a spell from its list of innate spells, expending a daily use as normal.
+</statblock>
 
 

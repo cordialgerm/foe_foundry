@@ -1,6 +1,8 @@
 <MonsterName/>Haunted Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>6</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Haunted Giant is a massive creature embodying chaos and resides in a realm that blurs the lines between the living and ethereal. As a chaotic neutral giant, it possesses significant physical strength and formidable defenses, making it a strong combatant in challenging scenarios. The Haunted Giant has a high Armor Class of 20 due to its natural armor, indicating that it is very difficult to hit. With 126 Hit Points, its durability allows it to withstand considerable damage before being defeated. However, its low Dexterity and Intelligence scores reveal its slower reflexes and lack of mental acuity, which can be exploited by cunning opponents. Notably, it is accompanied by three ancestral spirits that provide various advantages and can influence the outcome of encounters in significant ways. </summary>
 
 <detail>
@@ -38,6 +40,7 @@ Overall, the Haunted Giant stands as a robust and intimidating presence in any b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Haunted Giant
 
 *Huge* *Giant* *chaotic neutral*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +8 to hit, range 60/240 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Fey Revenant</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Fey Revenant is a formidable creature that embodies both the cunning and danger of the fey realm, classified as large and lawful evil. With 161 hit points and an exceptional armor class of 19 due to its natural armor, it proves to be a tough opponent in combat. It possesses high dexterity and constitution scores, making it good at dodging attacks and resilient to damage. However, it is vulnerable to sunlight, suffering disadvantage on attacks and perception checks while exposed. The Fey Revenant excels in stealth and has several powerful abilities, including magical resistance, making it challenging to overcome with spells. This monster's unique mobility through shadows and its ability to cause damage through touch make it a versatile threat.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For actions, the Fey Revenant can perform a Multiattack, making three attacks ei
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fey Revenant
 
 *Large* *Fey* *lawful evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Queen’s Grasp:** Ranged Weapon Attack: +7 to hit, ranged 30/60 ft., one target. Hit: The target is restrained by icy wisps of shadow. While restrained, the creature takes 7 (2d6) cold damage at the start of each of its turns. As an action, the restrained creature can make a DC 15 Strength check, bursting through the icy shadow on a success. The icy shadow can also be attacked and destroyed (AC 10; 5 hp; resistance to bludgeoning, piercing, and slashing damage; immunity to cold, necrotic, poison, and psychic damage).
 
 
+</statblock>
 
 

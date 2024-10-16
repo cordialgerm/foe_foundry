@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Pugilist</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>32</HP>
 <summary>The Clockwork Pugilist is a medium-sized construct that operates as a resilient and aggressive combatant. This creature is designed for direct engagement, equipped with solid armor and respectable hit points, allowing it to withstand damage in battle while delivering powerful melee attacks. The pugilist's strength lies in its physical abilities, particularly its high Strength score of 16, granting it an exceptional modifier that improves its chances to hit and increases its damage output. It also possesses some defensive capabilities, making it immune to several conditions and damage types, which enhances its survivability. However, it lacks any inherent magical abilities or intelligence, as indicated by a very low Intelligence score of 6, making it unaligned and unable to engage in complex problem-solving situations. </summary>
 
 <detail>
@@ -39,6 +41,7 @@ Overall, the Clockwork Pugilist is a formidable combatant, efficiently blending 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Pugilist
 
 *Medium* *Construct* *unaligned*
@@ -78,5 +81,6 @@ Source: 5e_artisinal_monsters
 - **:** [+]Parry[/+] +2 to its AC vs. one melee attack that would hit it. Must see attacker and have at least one hand empty.
 
 
+</statblock>
 
 

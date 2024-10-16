@@ -1,6 +1,8 @@
 <MonsterName/>Hippopotamus, Sacred</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Sacred Hippopotamus is a formidable creature in the realm of celestial beings, often serving as a guardian of sacred sites. It possesses extraordinary strength and resilience, marked by an impressive Armor Class of 16 and a substantial pool of Hit Points totaling 114. The Sacred Hippopotamus, being a Huge creature, is capable of delivering powerful melee attacks alongside its magical abilities, making it both a tank and a damage-dealer in combat. Its strengths lie in its impressive physical prowess, magical resistance, and unique abilities that allow it to both heal allies and defend sacred spaces. Despite its formidable presence, the Sacred Hippopotamus has low Dexterity, rendering it slower in terms of agility, and it is more susceptible to ranged attacks than other creatures with high Dexterity. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ The creature also has a notable bonus action known as Protector's Step, enabling
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hippopotamus, Sacred
 
 *Huge* *Celestial* *any alignment (as its deity)*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Protector’s Step:** Magically teleports with any items worn/carried up to 120' to unoccupied space within its sacred site or within 30' of exterior of its site. Golden light swirls or inky shadown tendrils (hippo’s choice) appear at origin and destination.
 
 
+</statblock>
 
 

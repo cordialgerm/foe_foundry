@@ -1,6 +1,8 @@
 <MonsterName/>Tar Ghoul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>66</HP>
 <summary>The Tar Ghoul is a Medium undead creature characterized by its neutral evil alignment and formidable presence. With a challenge rating of 4, it is well-suited for ambushing unsuspecting foes and controlling the battlefield using its unique abilities. The Tar Ghoul exhibits strong physical attributes, particularly in Strength and Dexterity, granting it good melee capabilities and tricky escape potential. It possesses immunities to fire and poison damage, making it resilient against certain attack types. However, its low Charisma and Wisdom can be seen as weaknesses, indicating it may not be as persuasive or perceptive as other undead creatures. Its notable ability to ignite itself and others adds a deadly layer of strategy to encounters.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In summary, the Tar Ghoul is a cunning and deadly undead creature that poses uni
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tar Ghoul
 
 *Medium* *Undead* *neutral evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Vomit Tar (Recharge 5-6):** The tar ghoul vomits tar, covering the ground in a 10-foot square within 5 feet of it. Each creature in the area must succeed on a DC 13 Dexterity saving throw or be covered with tar. The tar ignites if touched by a source of fire or if a creature covered with tar takes fire damage. The tar burns for 3 (1d6) rounds or until a creature takes an action to stop the blaze. A creature that starts its turn in the area or that starts its turn covered with burning tar takes 5 (1d10) fire damage.
 
 
+</statblock>
 
 

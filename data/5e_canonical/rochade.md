@@ -1,6 +1,8 @@
 <MonsterName/>Rochade</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>27</HP>
 <summary>The Rochade is a small fey creature that embodies cunning and agility, typically serving as a stealthy trickster in encounters. With a challenge rating of 1/2, it poses a moderate threat to adventurers, particularly when it leverages its dexterous nature and unique abilities. The Rochade is characterized by its high Dexterity score of 18, which provides it with exceptional skill in evasive maneuvers and attacks. In combat, it excels in ambush tactics due to its ability to teleport and manipulate objects around it, creating opportunities for both disruption and stealthy theft. Despite these capabilities, the Rochade's vulnerability to sunlight—under which it suffers from disadvantage on attacks and Wisdom checks related to sight—highlights a significant weakness that adventurers can exploit. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of defensive plays, the Rochade has a reaction called "Switch." When it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rochade
 
 *Small* *Fey* *neutral*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Switch:** When a creature rochade can see targets it with attack rochade can switch places with any creature it can see within 15 ft. of it. An unwilling creature must make DC 14 Dex save to avoid the switch. If the switch is successful switched creature becomes attack's target instead.
 
 
+</statblock>
 
 

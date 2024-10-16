@@ -1,6 +1,8 @@
 <MonsterName/>Ghast of Leng</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Ghast of Leng is a large, neutral evil aberration that poses a significant threat in combat scenarios, especially in environments where its special abilities can be fully leveraged. With a solid armor class of 14, it is reasonably defensive, while its 127 hit points make it a resilient foe. The creature is classified with a challenge rating of 3, indicating that it presents a moderate challenge for adventurers, granting 700 experience points upon defeat. The Ghast is notable for its Blood Frenzy ability, allowing it to strike harder against weakened foes, which can turn battles swiftly in its favor. However, it also suffers from sunlight hypersensitivity, making it particularly vulnerable to radiant damage, which can severely hinder its performance in daylight.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Ghast of Leng is a menacing presence in the darker corners of a cam
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghast of Leng
 
 *Large* *Aberration* *neutral evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.
 
 
+</statblock>
 
 

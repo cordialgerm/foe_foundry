@@ -1,6 +1,8 @@
 <MonsterName/>Balara</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Balara is a formidable undead creature known for its imposing presence and terrifying abilities. As a Large creature, it boasts an armor class of 17 due to its natural armor and stands out with a significant hit point total of 114, making it quite durable in combat. This creature is classified as Challenge Rating 6, meaning it poses a substantial threat to parties of adventurers. Its primary strengths lie in its ability to instill fear with its Terrifying Luminance ability and its resilience against various forms of damage. However, it has lower intelligence and charisma, which may limit its effectiveness in social interactions and strategic planning. The Balara's actions make it a constant menace in combat, capable of both melee and ranged attacks, while its reactions allow it to pursue fleeing foes effectively.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Finally, the Balara has a reaction called Relentless Pursuit. When a creature it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Balara
 
 *Large undead*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 
 - **Relentless Pursuit.** When a creature the balara can see moves away from it, the balara can move up to half its speed toward that creature. This movement doesn’t provoke opportunity attacks.
 
+</statblock>
 
 

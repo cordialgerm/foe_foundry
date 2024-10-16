@@ -1,6 +1,8 @@
 <MonsterName/>Kobold Broodguard Dragon Servitor</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>16</AC>
+<HP/>44</HP>
 <summary>The Kobold Broodguard Dragon Servitor is a small humanoid creature that serves as a guardian and fighter for dragonkind, embodying the adaptable and cunning nature typical of kobolds. With an armor class of 16 and hit points totaling 44, it can withstand considerable damage in battle. It operates effectively at a Challenge Rating of 2, making it a moderately tough opponent. The Broodguard excels in coordinated attacks, leveraging its Pack Tactics to gain advantage on rolls when allies are near. However, it struggles in direct sunlight due to its Sunlight Sensitivity, which imposes disadvantage on attacks and sight-based perception checks. This creature is particularly strong in melee combat, where its attacks can inflict significant damage, especially against smaller foes.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ As a reaction, the Kobold Broodguard can use **Rally!** once per day. When it ta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold Broodguard Dragon Servitor
 
 *Small* *Humanoid*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Rally! (1/Day:** When the kobold takes damage, it shouts a rallying cry. All kobolds within 30 feet that can hear it gain immunity to the frightened condition for 1 minute, and their next attack roll made before this effect ends deals an extra 1d4 damage.
 
 
+</statblock>
 
 

@@ -1,6 +1,9 @@
 <MonsterName/>Bone Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>devil</Subtype>
+<CR/>9</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Bone Devil is a tall, skeletal fiend with a long, barbed tail and wings made of bony spines. Its skin is stretched tightly over its skeletal frame, giving it a gaunt and terrifying appearance. Bone Devils serve as tormentors and jailers in the Nine Hells, delighting in causing pain and suffering to their victims. They are skilled fighters, wielding polearms and using their tails to lash at enemies with precision and cruelty. Their stingers can inject a venom that causes agonizing pain. Bone Devils are merciless and cunning, often overseeing the torture of souls or enforcing the will of their infernal masters.</summary>
 
 <summary>The Bone Devil is a formidable and malevolent creature, classified as a Large fiend that embodies both strength and cunning. With a high Armor Class of 19 and substantial Hit Points totaling 142, this creature is hard to wound. It possesses excellent mobility, being able to walk at a speed of 50 feet and fly 40 feet, making it agile in combat. The Bone Devil has a Challenge Rating of 9, providing a significant level of challenge for adventurers, as it can deal considerable damage and withstand hits due to its resistance to cold and damage from nonmagical, non-silvered weapons. It features an array of powerful abilities, including Magic Resistance, granting it a very good chance of succeeding on saving throws against spells, and the ability to see in magical darkness. Its intelligence and charisma are above average, contributing to its capability to manipulate and deceive. </summary>
@@ -41,6 +44,7 @@ Overall, the Bone Devil stands out as a cunning and powerful adversary in combat
 
 Source: 5e_srd
 
+<statblock>
 ### Bone Devil
 
 *Large fiend (devil), lawful evil*
@@ -81,7 +85,8 @@ Source: 5e_srd
 
 ***Claw***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 8 (1d8+4) slashing damage.
 
-***Sting***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 13 (2d8+4) piercing damage plus 17 (5d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+***Sting***. *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 13 (2d8+4) piercing damage plus 17 (5d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</statblock>
+
 
 
 
@@ -89,6 +94,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Devil
 
 *Large* *Fiend*
@@ -126,6 +132,7 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 13 (2d8 + 4) piercing damage plus 14 (4d6) poison damage, and the target makes a DC 15 Constitution saving throw, becoming poisoned for 1 minute on a failure. The target can repeat this saving throw at the end of each of its turns, ending the effect on a success.
 
 
+</statblock>
 
 
 
@@ -134,6 +141,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bone Devil
 
 *Large fiend (devil)*
@@ -172,5 +180,6 @@ Source: 5e_artisinal_monsters
 - **Beg for Mercy.** The target immediately falls prone and can’t cast spells with verbal components on its next turn as it is magically compelled to speak pleas of mercy.
 - **Flee.** The target uses its reaction to move up to its speed directly away from the bone devil. This movement doesn’t provoke opportunity attacks, but the target doesn’t avoid damaging terrain, such as lava.
 
+</statblock>
 
 

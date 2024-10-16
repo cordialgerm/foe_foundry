@@ -1,6 +1,8 @@
 <MonsterName/>Ooze, Shoal</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>10</CR>
+<AC/>9</AC>
+<HP/>232</HP>
 <summary>The Shoal is a gargantuan ooze that primarily resides underwater and poses a unique threat due to its unusual ability to mimic a school of fish. Despite its low Armor Class of 9 and relative slowness on land, it boasts a substantial pool of Hit Points totaling 232, making it quite resilient in combat. The Shoal is a formidable opponent with a Challenge Rating of 10, which means it is designed to be a significant challenge for a party of adventurers. Its deceptive appearance and the ability to incapacitate enemies make it a dangerous enemy in aquatic environments. It shares a symbiotic relationship with fish, which enhances its capabilities further. However, its lack of intelligence and reliance on physical attacks can render it vulnerable to more strategic opponents. </summary>
 
 <detail>
@@ -31,6 +33,7 @@ Overall, the Shoal is a robust and cunning adversary that relies on its unique a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ooze, Shoal
 
 *Gargantuan* *Ooze* *unaligned*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Mesmerizing Spiral:** The fish inside it swim rapidly in a hypnotic spiral. Each creature within 20' of it that can see the fish: incapacitated 1 min (DC 16 Wis negates). While incapacitated its speed is reduced to 0. Incapacitated creature can re-save at end of each of its turns success ends effect on itself. If a creature’s save is successful or effect ends for it creature is immune to Mesmerizing Spiral of all shoal oozes for the next 24 hrs.
 
 
+</statblock>
 
 

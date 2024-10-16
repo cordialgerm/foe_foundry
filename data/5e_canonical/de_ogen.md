@@ -1,6 +1,8 @@
 <MonsterName/>De Ogen</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>15</AC>
+<HP/>45</HP>
 <summary>De Ogen is a medium-sized undead creature with an alignment of neutral evil. It serves as a potent adversary capable of incapacitating foes and evading attacks effectively. With its formidable Dexterity score of 20, the creature has exceptional agility, making it difficult to hit in combat. De Ogen boasts a fair amount of resilience, featuring damage immunities to elements such as fire, necrotic, and poison, while resisting various other forms of damage from non-magical sources. However, its strength is notably weak, making it rely on its other abilities rather than direct physical confrontations. The creature's challenge rating of 4 hints at its moderate difficulty level for adventurers, presenting a mixture of offensive capabilities and structural defenses, particularly when using its special abilities.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ In combat, De Ogen can use its Burning Touch attack, which requires a melee weap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # De Ogen
 
 *Medium* *Undead* *neutral evil*
@@ -64,5 +67,6 @@ Creatures immune to being frightened are immune to the de ogen’s Transfixing G
 - **Burning Touch:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (4d6) fire damage. A creature slain by this attack turns to ash. A humanoid slain by this attack rises 24 hours later as a shadow, unless the humanoid is restored to life or its ashes are doused in holy water. The shadow isn’t under the de ogen’s control, but it follows in the de ogen’s wake and aids the de ogen when possible.
 
 
+</statblock>
 
 

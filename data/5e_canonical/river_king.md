@@ -1,6 +1,8 @@
 <MonsterName/>River King</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>16</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>190</HP>
 <summary>The River King is a formidable Medium Fey creature characterized by its chaotic neutral alignment. With a challenging rating of 16, it possesses significant combat strengths, including a high Armor Class of 18 and a substantial pool of 190 hit points, making it a tough opponent for adventurers. The River King's exceptional dexterity and constitution provide good protection in battle, and its ability to deal added poison damage through its attacks elevates its threat level further. This creature boasts a variety of abilities and spells that enhance its battlefield presence and survivability, while its damage immunities and resistances make it a challenging foe. The River King has vulnerabilities to nonmagical attacks that are not made with cold iron, which can be exploited by clever players.</summary>
 
 <detail>
@@ -40,6 +42,7 @@ Overall, the River King is a powerful and versatile creature that excels in both
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # River King
 
 *Medium* *Fey* *Chaotic Neutral*
@@ -87,5 +90,6 @@ The River King can take 3 legendary actions, choosing from the options below. On
 - **Attack:** The River King makes a Longsword or Flood Blast attack.
 - **Flow:** The River King moves up to his walking speed, or swims up to half his swimming speed, without provoking opportunity attacks.
 - **Ripple (Costs 2 Actions):** The River King magically ripples like sunlight on the surface of water. Until the start of his next turn, attack rolls against him have disadvantage.
+</statblock>
 
 

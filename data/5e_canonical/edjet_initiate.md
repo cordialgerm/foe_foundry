@@ -1,6 +1,8 @@
 <MonsterName/>Edjet Initiate</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (padded armor)</AC>
+<HP/>19</HP>
 <summary>The Edjet Initiate is a medium humanoid creature with a lawful neutral alignment that plays the role of a low-tier combatant in encounters. With a challenge rating of 1/4, it is relatively weak compared to higher-level foes, but it possesses some unique abilities that can enhance its effectiveness in battle, especially in the presence of allies. The creature is particularly notable for its resilience against fire damage and its interactions with other dragonborn. Although its defensive capabilities are limited by a modest armor class of 12 and 19 hit points, it has some advantages that come into play, especially when positioned near allies.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, while the Edjet Initiate is not a formidable opponent, it can be bolste
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Edjet Initiate
 
 *Medium* *Humanoid* *lawful neutral*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Shortbow:** Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage.
 
 
+</statblock>
 
 

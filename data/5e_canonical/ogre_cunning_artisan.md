@@ -1,6 +1,8 @@
 <MonsterName/>Ogre, Cunning Artisan</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (breastplate)</AC>
+<HP/>119</HP>
 <summary>The Cunning Artisan Ogre is a large, neutral evil giant known for its unexpected intelligence and magical prowess, distinguishing it from typical ogres. With a significant challenge rating of 5, this creature poses a notable threat to adventurers, boasting high hit points and effective combat abilities. Its special abilities allow it to utilize magic with its weapon attacks, as well as to detect and manipulate magical items, making it a formidable opponent. However, its weaknesses lie in its limited mobility and average dexterity, which can be exploited by agile foes. The Cunning Artisan's unique combination of brute strength and cunning intelligence makes it a versatile adversary in any encounter.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Lastly, the "Curse Item" ability can inflict a curse on a magic item within 60 f
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre, Cunning Artisan
 
 *Large* *Giant* *neutral evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Curse Item (Recharge 5–6):** Curses one magic item it can see within 60' of it. If item is being worn or carried by a creature creature must make DC 15 Cha save to avoid curse. For 1 min cursed item suffers one curse described below based on type.
 
 
+</statblock>
 
 

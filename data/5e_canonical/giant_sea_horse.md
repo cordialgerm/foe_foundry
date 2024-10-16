@@ -1,6 +1,8 @@
 <MonsterName/>Giant Sea Horse</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>16</HP>
 <summary>The Giant Sea Horse is an oversized version of the common sea horse, found in warm, shallow ocean waters. These gentle creatures are often used as mounts by aquatic races like merfolk or tritons due to their calm temperament and strong swimming ability. With their long, curling tails, they can cling to underwater plants or structures, and their brightly colored bodies help them blend into coral reefs. While not aggressive, Giant Sea Horses can deliver a sharp kick with their tails if threatened. They are graceful swimmers and move through the water with ease.</summary>
 
 
@@ -9,6 +11,7 @@
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Sea Horse
 
 *Large beast, unaligned*
@@ -37,5 +40,6 @@ Source: 5e_srd
 
 ***Ram***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) bludgeoning damage.
 
-Like their smaller kin, **giant sea horses** are shy, colorful fish with elongated bodies and curled tails. Aquatic elves train them as mounts.
+Like their smaller kin, **giant sea horses** are shy, colorful fish with elongated bodies and curled tails. Aquatic elves train them as mounts.</statblock>
+
 

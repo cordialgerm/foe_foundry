@@ -1,6 +1,8 @@
 <MonsterName/>Beli</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Beli is a small, neutral evil fey creature known for its cunning and agility. With a robust defensive capability, reflected in its Armor Class of 15 and 45 hit points, it poses a notable challenge for adventurers rated at a challenge level of 2. The Beli excels with its flying ability, allowing it to maneuver swiftly in combat, and its special abilities that enhance its survivability in cold environments significantly contribute to its role as a cunning predator. However, despite its strengths, it is vulnerable to fire, which can negate its regenerative abilities. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Beli can make an Ice Dagger melee attack with a +5 to h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Beli
 
 *Small* *Fey* *Neutral Evil*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Ice Dagger:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 5 (2d4) cold damage.
 - **Icy Shortbow:** Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 5 (2d4) cold damage, and the target must succeed on a DC 13 Constitution saving throw or suffer one level of exhaustion from the arrow’s icy chill. On a success, the target can’t suffer further levels of exhaustion from any beli’s Icy Shortbow for 24 hours. If a creature would suffer a sixth level of exhaustion from this attack, it is reduced to 0 hp instead and must make death saving throws as normal. A creature reduced to 0 hp in this way can’t suffer further levels of exhaustion from any beli’s Icy Shortbow for 24 hours.
 - **Invisibility:** The beli magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the beli wears or carries is invisible with it.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Constrictor Snake</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>13</HP>
 <summary>The Constrictor Snake is a large, muscular serpent known for its ability to coil around its prey and squeeze with crushing force. Found in jungles, forests, and swamps, these snakes are skilled hunters, lying in wait for their prey before wrapping around them and suffocating them. Though they lack venom, their immense strength makes them dangerous to even large creatures. Constrictor Snakes rely on their stealth and patience, using their camouflage to blend into their surroundings before striking swiftly. Once they've captured their prey, they consume it whole.</summary>
 
 <summary>The Constrictor Snake is a large beast known for its powerful constriction and ability to ambush prey. With an Armor Class of 11, it is relatively easy to hit, but it compensates for its lower defenses with a decent health pool of 13 hit points, calculated from rolling 2d10 and adding 2. This makes it moderately resilient but not overly tough. It has a Challenge Rating of 1/4, implying it is suitable for lower-level encounters, rewarding players with 50 experience points upon defeat. Notable for its mobility, the Constrictor Snake can walk, climb, and swim at a speed of 30 feet each, giving it versatility in various terrains.</summary>
@@ -19,6 +21,7 @@ The Constrictor Snake can take two primary actions in combat: **Bite** and **Con
 
 Source: 5e_srd
 
+<statblock>
 ### Constrictor Snake
 
 *Large beast, unaligned*
@@ -43,7 +46,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 5 (1d6+2) piercing damage.
 
-***Constrict***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 6 (1d8+2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.
+***Constrict***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 6 (1d8+2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.</statblock>
+
 
 
 
@@ -51,6 +55,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Constrictor Snake
 
 *Large* *Beast*
@@ -75,5 +80,6 @@ Source: 5e_artisinal_monsters
 - **Constrict:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) bludgeoning damage and the target is grappled (escape DC 14). Until this grapple ends  the target is restrained and the snake can't constrict a different target.
 
 
+</statblock>
 
 

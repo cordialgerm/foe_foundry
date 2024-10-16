@@ -1,6 +1,8 @@
 <MonsterName/>Blood Hawk</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>7</HP>
 <summary>The Blood Hawk is a predatory bird with striking red and black plumage, known for its aggressive hunting behavior. These hawks typically hunt in flocks, swarming over their prey and tearing it apart with sharp talons and beaks. Blood Hawks are fiercely territorial and will attack anything that enters their domain, including much larger creatures. Their keen eyesight allows them to spot prey from great distances, and once they lock onto a target, they pursue it relentlessly. They are often found in mountainous or forested regions, where they can nest in high, inaccessible places.</summary>
 
 <summary>The Blood Hawk is a small beast known for its agility and keen hunting skills. While it has relatively low hit points and armor class, its ability to fly makes it a nimble opponent in combat. The Blood Hawk thrives in groups due to its Pack Tactics ability, gaining bonuses when attacking alongside its allies. With a Challenge Rating of 1/8, it is suited for lower-level encounters, offering a manageable but challenging fight for inexperienced adventurers. This creature is particularly notable for its perceptive vision, allowing it to detect prey effectively even in well-concealed environments.</summary>
@@ -23,6 +25,7 @@ In terms of actions, the Blood Hawk can perform a **Beak** attack. This is a mel
 
 Source: 5e_srd
 
+<statblock>
 ### Blood Hawk
 
 *Small beast, unaligned*
@@ -53,7 +56,8 @@ Source: 5e_srd
 
 ***Beak***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) piercing damage.
 
-Taking its name from its crimson feathers and aggressive nature, the **blood hawk** fearlessly attacks almost any animal, stabbing it with its daggerlike beak. Blood hawks flock together in large numbers, attacking as a pack to take down prey.
+Taking its name from its crimson feathers and aggressive nature, the **blood hawk** fearlessly attacks almost any animal, stabbing it with its daggerlike beak. Blood hawks flock together in large numbers, attacking as a pack to take down prey.</statblock>
+
 
 
 
@@ -61,6 +65,7 @@ Taking its name from its crimson feathers and aggressive nature, the **blood haw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Hawk
 
 *Small* *Beast*
@@ -89,5 +94,6 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4+1) piercing damage.
 
 
+</statblock>
 
 

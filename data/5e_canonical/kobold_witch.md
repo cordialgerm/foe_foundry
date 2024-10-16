@@ -1,6 +1,8 @@
 <MonsterName/>Kobold Witch</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>13</AC>
+<HP/>126</HP>
 <summary>The Kobold Witch is a cunning and resourceful small humanoid that plays a versatile role in its party. With a well-rounded array of spells and combat capabilities, this creature thrives on tactical advantages, especially when working alongside allies. Its strengths lie in its high Charisma, which boosts spellcasting effectiveness, and its ability to capitalize on advantageous situations through the Pack Tactics feature. However, it has limitations, such as poor strength and susceptibility to sunlight, which hinders its offensive capabilities in bright conditions. Overall, the Kobold Witch presents a unique challenge and an intriguing asset to any encounter.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Lastly, its reaction ability, Hex, allows the Kobold Witch to hinder opponents b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold Witch
 
 *Small humanoid*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 
 - **Hex.** When a creature the kobold witch can see within 60 feet of it makes an ability check, attack roll, or save, the target must roll a d6 and subtract the number rolled from that ability check, attack roll, or save.
 
+</statblock>
 
 

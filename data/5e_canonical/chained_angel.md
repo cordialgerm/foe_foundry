@@ -1,6 +1,8 @@
 <MonsterName/>Chained Angel</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>121</HP>
 <summary>The Chained Angel is a formidable celestial being of medium size, embodying a neutral evil alignment. Despite its celestial nature, it is bound by chains that limit its freedom, granting it a unique combination of divine powers and dark inclinations. With an Armor Class of 16 and 121 hit points, the Chained Angel is quite durable in combat. It is highly mobile, boasting a walking speed of 60 feet and flying ability of 30 feet. Its challenge rating of 8 indicates that it poses a significant threat, potentially resulting in 3,900 experience points for defeating it. Notably, the Chained Angel has exceptional attributes in Strength and Charisma, making it a dangerous opponent both in melee and through its spells and abilities. However, it has weaknesses, including some damage resistances, particularly to piercing damage. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ For reactions, the Chained Angel has Fiendish Cunning, which allows it to respon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chained Angel
 
 *Medium* *Celestial* *Neutral Evil*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Fiendish Cunning:** When a creature the chained angel can see within 60 feet of it casts a spell that appears on the cleric or paladin spell list, the chained angel can counter the spell with a successful ability check. This works like the counterspell spell with a +5 spellcasting ability check, except the chained angel must make the ability check no matter the level of the spell.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Yobbo</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>11</HP>
 <summary>The Yobbo is a small humanoid creature that plays a unique and potentially dangerous role in encounters, particularly for spellcasters. With a reasonable Armor Class of 15 and a modest amount of Hit Points totaling 11, the Yobbo can be a nuisance due to its ability to consume magical items and cast devastating spells upon its demise. The creature's strengths lie in its ambush capabilities, thanks to its proficiency in stealth and its significant arcana knowledge, which allows it to identify and consume magical components effectively. However, its low Strength and Wisdom scores indicate vulnerabilities, making it less effective in direct combat and against wisdom-based effects. The Yobbo's challenge rating of 1 means it is suitable for low-level parties who may not be fully prepared for the chaos it can unleash.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Yobbo's potential for magic consumption and explosive combat conseq
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yobbo
 
 *Small* *Humanoid*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Spike ball:** Ranged Weapon Attack: +4 to hit, range 30/90 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

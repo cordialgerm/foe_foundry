@@ -1,6 +1,8 @@
 <MonsterName/>Leshy</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Leshy is a medium-sized monstrosity with a chaotic neutral alignment, embodying the spirit of nature and mischief. It possesses a notable Armor Class of 14 due to its natural armor, and has a decent pool of 45 hit points, which translates to a solid durability for its Challenge Rating of 1, granting it 200 experience points. The Leshy's strengths lie in its high Strength of 16, granting a good modifier of +3, and its impressive Charisma of 16, leading to an exceptional +3 modifier. These attributes make the Leshy effective in both physical combat and social interactions. However, it displays average Dexterity at 12, causing it to have a modest +1 modifier. With its concentration on stealth and survival skills, the Leshy excels in areas where deception or the natural environment is a factor. It is also immune to poison damage and the poisoned condition, granting it a significant advantage in encounters involving those elements.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the Leshy thrives in environments rich with nature, utilizing its power
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Leshy
 
 *Medium* *Monstrosity* *Chaotic Neutral*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Frightening Mien (Recharge 5–6):** The leshy briefly appears to grow to an enormous size, taking on a malicious mien before returning to normal. Each creature within 15 feet of the leshy and that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature is immune to Frightening Mien if it can see through illusions.
 - **Encourage Growth (1/Day):** The leshy whispers magical words of growth to nonmagical plants on a point it can see within 30 feet of it. The plants burst with life and spread rapidly. The area within 20 feet of that point becomes difficult terrain for 24 hours.
 - **Familiar:** The library automaton can serve another creature as a familiar, forming a magic, telepathic bond with that willing companion. While the two are bonded, the companion can sense what the automaton senses as long as they are within 1 mile of each other. While the automaton is within 10 feet of its companion, the companion has resistance to psychic damage. At any time and for any reason, the automaton can end its service as a familiar, ending the telepathic bond.
+</statblock>
 
 

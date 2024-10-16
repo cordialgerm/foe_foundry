@@ -1,6 +1,8 @@
 <MonsterName/>Lycanthrope, Werecrocodile</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>12</AC>
+<HP/>58</HP>
 <summary>The Lycanthrope, specifically the Werecrocodile, is a formidable creature within the realms of Dungeons & Dragons, characterized by its unique blend of humanoid intelligence and the ferocity of a crocodile. This Medium-sized neutral evil humanoid possesses a Challenge Rating of 3, indicating that it presents a moderate challenge for a party of adventurers, earning 700 XP upon defeat. With an Armor Class of 12 and 58 hit points, its defenses are average, but its strengths lie in its resilience and ability to attack with both melee strikes and grappling tactics. The Werecrocodile's dual nature allows it to adapt to combat scenarios, switching between humanoid and crocodilian forms and employing different attacks while being highly effective in its hybrid form. However, it is vulnerable to silvered weapons, which can bypass its damage immunities against nonmagic attacks. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Werecrocodile can Change Shape, transforming into a Large
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lycanthrope, Werecrocodile
 
 *Medium* *Humanoid* *neutral evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Transforms into a Large crocodile or into a crocodile-humanoid hybrid or back into its true form which is Humanoid. Its stats other than size are the same in each form. Any equipment worn/carried isn't transformed. Reverts to its true form if it dies.
 
 
+</statblock>
 
 

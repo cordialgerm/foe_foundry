@@ -1,6 +1,8 @@
 <MonsterName/>Parzz’val</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>115</HP>
 <summary>Parzz’val is a large aberration embodying chaotic evil, known for its devastating capabilities in combat as well as its strategic use of area control through its unique abilities. With an armor class of 14, it relies on its natural armor to withstand attacks, while boasting a significant pool of 115 hit points, making it a challenging adversary rated at a challenge level of 8, which translates to 3,900 experience points for defeating it. Its movement speed is a nimble 50 feet, allowing it to engage or retreat efficiently during encounters. Notably, the parzz’val is vulnerable to thunder damage but is immune to acid, bludgeoning, piercing, and slashing from non-magical attacks, making it resilient against physical damage types. Its ability to regenerate health at the start of each of its turns adds to its longevity in battle.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the parzz’val can perform a multiattack, delivering three
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Parzz’val
 
 *Large* *Aberration* *chaotic evil*
@@ -57,5 +60,6 @@ The web persists for 1 minute before collapsing. The parzz’val is immune to th
 - **Oversized Maw:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) piercing damage plus 4 (2d8) acid damage. If the target is a Medium or smaller creature, it must succeed on a DC 16 Dexterity saving throw or be swallowed by the parzz’val. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the parzz’val, and it takes 18 (4d8) acid damage at the start of each of the parzz’val’s turns. A parzz’val can have only one creature swallowed at a time.<br><br>If the parzz’val takes 15 damage or more on a single turn from a creature inside it, the parzz’val must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the parzz’val. If the parzz’val dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 10 feet of movement, exiting prone.
 
 
+</statblock>
 
 

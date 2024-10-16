@@ -1,6 +1,8 @@
 <MonsterName/>Gnarljak</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>88</HP>
 <summary>The Gnarljak is a small construct creature that serves as both a formidable adversary and an adept ambush predator. It boasts an impressive Armor Class of 16, allowing it to withstand considerable punishment thanks to its natural armor. With 88 hit points derived from 16d6 + 32, it demonstrates solid durability in combat, enabling it to endure several strikes. The Gnarljak is particularly effective with its high Dexterity score of 21, which gives it a +5 modifier, making its ability to dodge attacks and perform stealthy maneuvers exceptionally good. However, its Intelligence and Charisma scores are very low, indicating it lacks mental prowess and social interaction capabilities. The creature operates as an unaligned being, making it unpredictable in its objectives.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Gnarljak is a dangerous opponent that combines stealth, surprising 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gnarljak
 
 *Small* *Construct* *Unaligned*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Secure Tail:** When within 10 feet of the ground, structure, wall, or other solid surface, the gnarljak can secure its tail spike on a point in the surface within 10 feet of it. While secured, the gnarljak can’t be knocked prone, it can’t move more than 10 feet from that point, and its Chain Tail attack’s reach is reduced to 5 feet. If the gnarljak is attached to a creature while its tail is secured, the creature is restrained until the gnarljak is no longer attached to it.
+</statblock>
 
 

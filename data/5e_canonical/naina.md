@@ -1,6 +1,8 @@
 <MonsterName/>Naina</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>231</HP>
 <summary>Naina is a large, lawful evil dragon characterized by her cunning and formidable presence. With an Armor Class of 17 and a substantial pool of Hit Points totaling 231, Naina can withstand considerable damage while delivering devastating attacks. Her strengths lie in her powerful physique with a Strength of 20 and Constitution of 21, making her very good at grappling opponents and resisting physical damage. Coupled with her ability to resist nonmagical attacks, Naina proves to be a challenging foe. Nevertheless, her weaknesses include being vulnerable to magical attacks and her reliance on her effective breath weapons and spellcasting for crowd control. Naina's Challenge Rating of 11 indicates she presents a significant threat to adventurers, providing a unique mix of melee combat and spell-based manipulation.</summary>
 
 <detail>
@@ -38,6 +40,7 @@ As a Bonus Action, Naina can utilize "Change Shape" to transform into a Medium H
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Naina
 
 *Large* *Dragon* *Lawful Evil*
@@ -79,5 +82,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The naina transforms into a Medium Humanoid or back into her true form, which is a Dragon. Her statistics, other than her size, are the same in each form. Any equipment she is wearing or carrying isn’t transformed. It reverts to its true from if she dies.
+</statblock>
 
 

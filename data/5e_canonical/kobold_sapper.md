@@ -1,6 +1,8 @@
 <MonsterName/>Kobold, Sapper</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (studded leather)</AC>
+<HP/>66</HP>
 <summary>The Kobold Sapper is a small humanoid creature that embodies cunning and resourcefulness, designed for ambush and sabotage. As a lawful neutral being, it operates with a set code of behavior, often adhering to strict loyalty towards its tribe. With an Armor Class of 15, the Sapper can evade attacks reasonably well, supported by its decent hit points of 66, allowing it to endure several rounds in battle. Although physically weak with a Strength score of 7 (-2), it possesses exceptional Dexterity with a score of 16 (+3) which enhances its agility and accuracy, making it a threat in ranged combat. The Sapper also excels in intelligence-related tasks, with an Intelligence score of 16 (+3) allowing for clever traps and tactics. However, its low Charisma and Wisdom scores may hinder its interactions with others and its perception abilities.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Kobold Sapper is a clever and dangerous creature, particularly effe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold, Sapper
 
 *Small* *Humanoid* *lawful neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Explosive Charge (Recharge 5–6):** Throws a powerful explosive at a point it can see on the ground within 60' of it. Each creature within 15 ft. of that point: 9 (2d8) fire and 9 (2d8) force and is pushed up to 10 ft. away from the point and knocked prone (DC 13 Dex half damage and isn’t pushed or knocked prone). If creature fails save by 5+ it is also deafened for 1 min. Alternatively sapper can place the explosive in a space within 5 ft. of it and delay the explosion until end of sapper’s next turn or when a creature moves to a space within 5 ft. of the explosive whichever happens first.
 
 
+</statblock>
 
 

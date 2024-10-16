@@ -1,6 +1,8 @@
 <MonsterName/>Vine Troll Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>153</HP>
 <summary>The Vine Troll Skeleton is a formidable Large Undead creature that embodies the duality of fear and resilience. With a combination of high hit points and notable regenerative abilities, it stands as a strong combatant in battles. This creature showcases exceptional physical strength and durability, making it a daunting opponent, especially when it is near its magical binding to a tree or dryad. However, its vulnerabilities to acid and fire damage, alongside its dependency on its binding for survival, pose significant weaknesses that can be exploited. Its challenge rating of 9 reflects its ability to inflict high damage and withstand attacks, while its lack of intelligence and charm further emphasizes its role as a mindless predator rather than a strategic combatant.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of attacks, the Vine Troll Skeleton uses the Multiattack action, allowi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vine Troll Skeleton
 
 *Large* *Undead* *Unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 21 (3d10 + 5) piercing damage.
 - **Claw:** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 19 (4d6 + 5) slashing damage.
 - **Poisoned Thorn:** Ranged Weapon Attack:+5 to hit, range 20/60 ft., one target. Hit: 8 (2d6 + 1) piercing damage plus 10 (3d6) poison damage.
+</statblock>
 
 

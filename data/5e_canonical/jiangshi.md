@@ -1,6 +1,8 @@
 <MonsterName/>Jiangshi</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>117</HP>
 <summary>The Jiangshi is a Medium undead creature defined by its chaotic evil alignment. As a formidable opponent, it combines a durable physical presence with a range of special abilities that make it a dangerous adversary in combat. The Jiangshi has strong melee capabilities, can instill fear in its enemies, and possesses the ability to drain life. However, it has notable weaknesses, such as vulnerability to fire damage and a low speed of only 20 feet, which can limit its mobility and tactics during encounters.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Jiangshi is a potent foe that can dominate the battlefield through 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jiangshi
 
 *Medium* *Undead* *chaotic evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Life Drain:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature that is grappled by the jiangshi, incapacitated, or restrained. Hit: 14 (4d6) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hp maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hp maximum to 0. <br><br>A humanoid slain in this way rises 24 hours later as a jiangshi, unless the humanoid is restored to life, its body is bathed in vinegar before burial, or its body is destroyed.
 
 
+</statblock>
 
 

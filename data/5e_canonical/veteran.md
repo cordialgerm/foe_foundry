@@ -1,6 +1,10 @@
 <MonsterName/>Veteran</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>3</CR>
+<AC/>17 (splint)</AC>
+<HP/>58</HP>
 <summary>A Veteran is a seasoned warrior who has survived many battles and honed their combat skills over years of service. Veterans are highly trained in the use of a variety of weapons and armor, and they possess the experience and tactical knowledge to outmaneuver less experienced foes. Whether serving as guards, soldiers, or mercenaries, Veterans are respected for their discipline and combat prowess. They often lead smaller groups of soldiers or adventurers, offering both leadership and deadly combat abilities in the heat of battle.</summary>
 
 <summary>The Veteran is a formidable medium humanoid creature that embodies the archetype of a seasoned warrior. With an armor class of 16, it is quite resilient in combat, showcasing a total of 58 hit points, which grants it good survivability. The challenge rating of 3 indicates that it presents a moderate threat to adventurers, providing a rewarding encounter for parties of low to mid-level characters. The Veteran excels in melee combat thanks to its solid Strength score of 16, allowing it to deliver powerful attacks. While its Dexterity is average at 12, it still manages to be mobile on the battlefield. However, its Intelligence, Wisdom, and Charisma scores are all average as well at 10, indicating that it relies more on physical prowess than mental agility or charm. The Veteran is versatile, boasting diverse attacks and tactical capabilities that can significantly impact combat scenarios. </summary>
@@ -45,6 +49,7 @@ Overall, the Veteran's combination of weapon proficiency, ability to multitask i
 
 Source: 5e_srd
 
+<statblock>
 ### Veteran
 
 *Medium humanoid (any race), any alignment*
@@ -77,7 +82,8 @@ Source: 5e_srd
 
 ***Heavy Crossbow***. *Ranged Weapon Attack:* +3 to hit, range 100/400 ft., one target. *Hit:* 6 (1d10 + 1) piercing damage.
 
-**Veterans** are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long service and warriors who never served anyone but themselves.
+**Veterans** are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long service and warriors who never served anyone but themselves.</statblock>
+
 
 
 
@@ -85,6 +91,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Veteran
 
 *Medium* *Humanoid*
@@ -120,6 +127,7 @@ Source: 5e_artisinal_monsters
 - **Off-Hand Counter:** When the veteran is missed by a melee attack by an attacker they can see within 5 feet, the veteran makes a shortsword attack against the attacker.
 
 
+</statblock>
 
 
 
@@ -128,6 +136,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Veteran
 
 *Medium humanoid (any lineage)*
@@ -169,5 +178,6 @@ Source: 5e_artisinal_monsters
 
 - **Parry.** The veteran adds 2 to its AC against one melee attack that would hit it. To do so, the veteran must see the attacker and be wielding a melee weapon.
 
+</statblock>
 
 

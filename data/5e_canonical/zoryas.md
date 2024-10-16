@@ -1,6 +1,8 @@
 <MonsterName/>Zoryas</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>8</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>104</HP>
 <summary>Zoryas are medium celestial beings with a lawful good alignment, embodying the principles of light and order. They act as protectors and guides, often intervening in mortal matters to uphold justice and assist those in need. With a solid hit point pool and decent armor class, the Zoryas can endure in combat, leveraging their magical abilities to gain an edge. Their ability to regenerate provides them with longevity in battle, although they are vulnerable to necrotic damage. With proficiency in charisma saving throws and impressive wisdom stats, Zoryas are especially potent against magical effects and possess remarkable insight and perception skills. Their unique abilities allow them to deal significant radiant or fire damage, manipulate light and darkness, and open celestial gateways, making them formidable and versatile opponents.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For their actions, the Zoryas can perform a "Multiattack," allowing them to make
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zoryas
 
 *Medium* *Celestial* *lawful good*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Dusk's Arrival (Recharges after a Long Rest):** The zoryas' lantern darkens, snuffing out nearby natural and magical sources of light. Each creature within 30 feet of the zoryas must make a DC 16 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one. The area is bathed in darkness like the darkness spell until the end of the zoryas' next turn.
 
 
+</statblock>
 
 

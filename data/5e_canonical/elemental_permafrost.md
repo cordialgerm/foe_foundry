@@ -1,6 +1,8 @@
 <MonsterName/>Elemental, Permafrost</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Permafrost Elemental is a large neutral elemental creature primarily associated with cold and ice. As a strong force in battles, it possesses significant hit points and layers of defense due to its natural armor, making it a formidable opponent. With a challenge rating of 6, it offers reasonable experience points for characters who defeat it. The Permafrost Elemental excels in dealing cold damage and possesses abilities that hinder movement and inflict dangerous diseases. However, it is particularly vulnerable to fire, which can be exploited by fire-wielding characters or spells.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Permafrost Elemental can perform a Multiattack, using two Slam at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elemental, Permafrost
 
 *Large* *Elemental* *neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Plague-Ridden Pound (Recharge 5–6):** Brings both of its fists down striking ground and sending ice shards from its body flying at nearby creatures. Each creature on the ground within 20' of it: 10 (3d6) bludgeoning damage and 10 (3d6) cold knocked prone and becomes infected with primordial plague (see Plague Bearer; DC 14 Dex half damage and not prone or infected).
 
 
+</statblock>
 
 

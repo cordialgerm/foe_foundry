@@ -1,6 +1,8 @@
 <MonsterName/>Witch Queen</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (studded leather armor)</AC>
+<HP/>77</HP>
 <summary>The Witch Queen is a small humanoid creature embodying chaotic evil. She possesses a cunning intellect and formidable magical abilities, making her a dangerous adversary in combat. With a decent Armor Class of 15 and a robust pool of Hit Points totaling 77, she can withstand damage while delivering powerful spells and effects to manipulate and harm her foes. Her strengths lie in her high Dexterity and Charisma, which enhance her agility and spellcasting capabilities, while her weaknesses include low Strength and Wisdom, limiting her physical prowess and perception. The Witch Queen's challenge rating of 5 indicates that she is a formidable opponent for a party of adventurers, primarily due to her spellcasting and special abilities.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ Additionally, the Witch Queen can execute a melee attack called Maddening Scimit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Witch Queen
 
 *Small* *Humanoid* *chaotic evil*
@@ -71,5 +74,6 @@ Cantrips (at will): acid splash, mage hand, message, ray of frost
 - **Maddening Scimitar:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage. If the target is a creature, it must succeed on a DC 14 Charisma saving throw or use its reaction to move up to its speed and make a melee attack against the nearest enemy of the witch queen.
 
 
+</statblock>
 
 

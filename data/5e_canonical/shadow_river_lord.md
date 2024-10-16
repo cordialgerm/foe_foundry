@@ -1,6 +1,8 @@
 <MonsterName/>Shadow River Lord</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>135</HP>
 <summary>The Shadow River Lord is a formidable creature classified as a Medium Undead with a neutral evil alignment. Possessing significant strengths, this creature excels in both melee and ranged combat, utilizing its unique abilities to impose debilitating effects on its foes. It boasts a high Armor Class of 16 due to its natural armor and has a substantial pool of Hit Points totaling 135, representing a good level of endurance in battle. However, its effectiveness is tempered by weaknesses to radiant and force damage, which are not explicitly mentioned but typically have a notable impact against undead entities. The Shadow River Lord’s mobility is exceptional, as it can swim at a speed of 60 feet and walk at 30 feet, enhancing its tactical positioning in various environments, particularly aquatic settings.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the Shadow River Lord possesses a powerful ability called Shadow Geyser
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow River Lord
 
 *Medium* *Undead* *neutral evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Geyser (Recharge 6):** The shadow river lord expels a geyser of shadowy water from its staff in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 21 (6d6) necrotic damage and 21 (6d6) cold damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Imperial Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Imperial Dragon Wyrmling is a formidable creature often encountered in the realms of fantasy and adventure. This Medium-sized dragon embodies neutrality and possesses a strong combat presence, evidenced by its exceptional strength and resilience. With an Armor Class of 17, it is well-defended thanks to its natural armor, and its 60 hit points make it a durable foe in battle. The dragon's flight speed of 60 feet, combined with its swimming and walking speeds, allows for versatile movement in various environments. While it has solid offensive capabilities, particularly with its lightning breath, it has weaknesses in areas such as Dexterity, where it has only an average score. Its abilities include resistance to lightning and thunder damage, making it a challenging opponent for adventurers unprepared for elemental attacks.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the dragon's Bite attack has a +6 to hit and deals an avera
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Imperial Dragon Wyrmling
 
 *Medium* *Dragon* *neutral*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Breath (Recharge 5-6):** The dragon exhales lightning in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 13 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

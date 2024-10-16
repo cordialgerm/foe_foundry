@@ -1,6 +1,8 @@
 <MonsterName/>Deep Dwarf Soldier</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>16</AC>
+<HP/>19</HP>
 <summary>The Deep Dwarf Soldier is a medium humanoid creature that embodies a balance of offensive capability and resilience. With a Challenge Rating of 1/2, it is considered a moderate threat, particularly in environments where its unique abilities can be fully utilized. The soldier boasts an Armor Class of 16 and 19 hit points, enabling it to withstand some damage. It has strengths in its physical attributes, particularly in Strength and Constitution, which give it good melee capabilities and resilience to damage. Additionally, its darkvision allows it to operate effectively in low-light conditions. However, it suffers from average Intelligence, Wisdom, and Charisma scores, limiting its effectiveness in scenarios that require mental or social prowess. The Deep Dwarf Soldier’s special abilities grant it advantageous saving throws against illusions and enchantments, further enhancing its survivability in combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Another available action is the Heavy Crossbow attack, which has a +3 to hit and
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deep Dwarf Soldier
 
 *Medium* *Humanoid*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Tactical Movement:** Until the end of the soldiers turn, their Speed is halved and their movement doesnt provoke opportunity attacks.
 
 
+</statblock>
 
 

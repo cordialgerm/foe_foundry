@@ -1,6 +1,8 @@
 <MonsterName/>Pelagic Blush Worm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>188</HP>
 <summary>The Pelagic Blush Worm is a gargantuan monstrosity characterized by its aquatic prowess and formidable abilities. With an armor class of 17 due to its natural armor, it can withstand significant damage, boasting 188 hit points that afford it substantial durability in combat. This creature’s immense strength allows it to perform devastating melee attacks, including a powerful bite and tail fin strike. However, its movement is limited to swimming at a speed of 50 feet, rendering it immobile on land and making it vulnerable to ranged attacks when out of the water. The Pelagic Blush Worm is a challenge for adventurers with a challenge rating of 9, making it a formidable opponent worth 5,000 experience points. Notable characteristics include its ability to breathe underwater and its damage immunities to acid and cold, which enhance its resilience in aquatic environments.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, the Pelagic Blush Worm can unleash a Red Acid Spume (recharge 5-6)
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pelagic Blush Worm
 
 *Gargantuan* *Monstrosity* *unaligned*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Red Acid Spume (Recharge 5–6):** Exhales crimson stomach acid in 30' cone if worm is underwater or 50' line × 5 ft. wide if above water. Each creature in area: 31 (9d6) acid (DC 16 Dex half).
 
 
+</statblock>
 
 

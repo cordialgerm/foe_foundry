@@ -1,6 +1,8 @@
 <MonsterName/>Spirit Lamp</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Spirit Lamp is a medium undead creature characterized by its chaotic evil nature. It serves as a menacing and strategic opponent, utilizing its ability to control light and spirits to weaken and damage foes. With a high Armor Class of 17 and substantial hit points totaling 82, it can withstand a fair amount of damage. The Spirit Lamp excels in Dexterity and Charisma, making it agile in combat and capable of exerting a strong influence over its environment and its enemies. Its special abilities allow it to manipulate darkness and control the battlefield, while its damage immunities and resistances add to its durability, making it a formidable foe for adventurers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of actions, the Spirit Lamp can execute a Multiattack, allowing it to m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spirit Lamp
 
 *Medium* *Undead* *chaotic evil*
@@ -59,5 +62,6 @@ If the creature remains cursed after 30 days, it is irreversibly changed by the 
 - **Lantern Beam:** Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 11 (2d10) fire damage.
 
 
+</statblock>
 
 

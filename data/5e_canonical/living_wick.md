@@ -1,6 +1,8 @@
 <MonsterName/>Living Wick</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>28</HP>
 <summary>The Living Wick is a small construct creature characterized by its unique ability to operate using a lit wick, which serves as both its power source and its life force. With an armor class of 13 and a total of 28 hit points, it is relatively defensively moderate for its challenge rating of 1/4, making it suitable for lower-level encounters. It possesses an above-average Strength score of 14, enabling it to perform physical attacks, though its Dexterity and Constitution are average, granting it a basic level of durability. It lacks intelligence, wisdom, and charisma, limiting its cognitive and social interactions significantly. This creature is particularly vulnerable to fire damage, but it is immune to poison and psychic effects. It can be a strategic ally due to its ability to lash out with fire through its special abilities but must be used carefully as its health depletes each day that it remains active.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Living Wick can perform a "Slam," which is a melee atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Living Wick
 
 *Small* *Construct* *Unaligned*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 
 - **Slam:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.
 - **Consuming Inferno:** The living wick’s controller can command the living wick to rapidly burn through the remains of its wick, creating a devastating ball of fire. Each creature within 20 feet of the living wick must make a DC 12 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one. Flammable objects in the area and that aren’t being worn or carried ignite. The living wick then dies, becoming a lifeless puddle of wax.
+</statblock>
 
 

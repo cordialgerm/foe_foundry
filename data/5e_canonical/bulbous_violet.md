@@ -1,6 +1,8 @@
 <MonsterName/>Bulbous Violet</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>38</HP>
 <summary>The Bulbous Violet is a Medium-sized plant creature that operates without alignment, making it a neutral entity in its interactions. It possesses a relatively low Armor Class of 12 and has 38 hit points, which consist of a combination of 7d8 plus a Constitution modifier. The violet can move at a speed of 20 feet on the ground and can also climb at the same pace. With a Challenge Rating of 1, it is considered a minor threat, granting 200 experience points upon defeat. The Bulbous Violet has notable physical attributes, particularly good Strength and Dexterity scores, indicating its capabilities in grappling and mobility. However, it has exceptionally low Intelligence and Charisma, reflecting its primal nature as a plant.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Bulbous Violet presents a unique blend of environmental camouflage,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bulbous Violet
 
 *Medium* *Plant* *unaligned*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Tendril:** Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage plus 2 (1d4) acid damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained and takes 2 (1d4) acid damage at the start of each of its turns. The violet has two tendrils strong enough to grapple creatures; each can grapple only one target. If the acid damage reduces the target to 0 hp, the violet regains 7 (2d6) hp.
 
 
+</statblock>
 
 

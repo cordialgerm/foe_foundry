@@ -1,6 +1,8 @@
 <MonsterName/>Scheznyki</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>135</HP>
 <summary>The Scheznyki is a small fey creature that embodies chaotic evil. With a formidable armor class of 16 and a significant 135 hit points, it stands out in combat due to its ability to both engage in melee and cast spells. The Scheznyki's main strengths include high physical damage output augmented by its brute ability, making its attacks particularly deadly. However, it is vulnerable to having its beard cut off, which disables its spellcasting. Its combination of physical prowess and magical abilities makes it a versatile opponent in battle. Notably, it has robust magic resistance, giving it an advantage against spells. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Scheznyki has the ability to turn invisible, allowing it to escape the notic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scheznyki
 
 *Small* *Fey* *Chaotic Evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Arcane Bolt:** Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 13 (3d6 + 3) force damage.
 - **Invisibility:** The scheznyki magically turns invisible until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment it wears or carries is invisible with it.
 - **Spellcasting:** The scheznyki casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 14):<br>At will: dancing lights, faerie fire<br>3/day each: locate object, hideous laughter, ray of enfeeblement<br>1/day each: dispel magic, hold person
+</statblock>
 
 

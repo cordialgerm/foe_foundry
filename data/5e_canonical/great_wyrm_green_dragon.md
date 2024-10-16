@@ -1,6 +1,8 @@
 <MonsterName/>Great Wyrm Green Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>21</AC>
+<HP/>840</HP>
 <summary>The Great Wyrm Green Dragon is a gargantuan and formidable creature, often viewed as one of the most powerful dragons in existence within the game world. It serves as an apex predator, cunningly navigating both air and aquatic environments with exceptional speed and versatility. With an impressive array of abilities and high damage output, the Great Wyrm excels in combat, utilizing poison to debilitate its foes while employing stealth and intimidation tactics. Despite its strengths, its vulnerability stems from its reliance on saving throws and its limited use of powerful abilities, making it crucial for players to strategize effectively to overcome it.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Furthermore, the Great Wyrm Green Dragon has legendary actions that include the 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Great Wyrm Green Dragon
 
 *Gargantuan* *Dragon*
@@ -79,5 +82,6 @@ Source: 5e_artisinal_monsters
 - **Honeyed Words:** The dragon uses Honeyed Words.
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 19 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 22 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
+</statblock>
 
 

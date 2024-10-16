@@ -1,6 +1,8 @@
 <MonsterName/>Willowhaunt</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Willowhaunt is a formidable Huge Undead creature with a neutral evil alignment, renowned for its ability to manipulate and confuse foes with illusions and madness. This monster has a respectable Armor Class of 14 and boasts a total of 90 hit points, derived from rolling twelve d12 dice plus an additional twelve hit points. The Willowhaunt's movement is relatively slow, allowing it to walk only 20 feet per turn, but it compensates for this with various tactical abilities that can turn the tide of battle. Its Challenge Rating is 5, suggesting it’s a substantial threat worthy of 1,800 experience points upon defeat. Notably, this creature has high Charisma and Strength scores, giving it good proficiency in intimidation and the ability to deal significant damage. It is particularly dangerous due to its immunities to necrotic and poison damage, as well as its resistance to nonmagical physical attacks, making it tough to bring down without magical intervention.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the **Whispers of Madness** attack, rechargeable on a roll of 5-6, infl
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Willowhaunt
 
 *Huge* *Undead* *neutral evil*
@@ -59,5 +62,6 @@ The changes wrought by this illusion fail to hold up to physical inspection. For
 - **Whispers of Madness (Recharge 5-6):** The willowhaunt whispers in the minds of nearby creatures. Each creature of the willowhaunt’s choice within 30 feet of it must make a DC 15 Wisdom saving throw. On a failure, a creature takes 18 (4d8) psychic damage and is afflicted with short term madness. On a success, a creature takes half the damage and isn’t afflicted with madness. If a saving throw fails by 5 or more, the creature is afflicted with long term madness instead. A creature afflicted with madness caused by the willowhaunt’s whispers has disadvantage on its saving throw against the Willowhaunt’s Provoke Murder.
 
 
+</statblock>
 
 

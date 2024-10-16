@@ -1,6 +1,8 @@
 <MonsterName/>Great Wyrm Blue Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>25</CR>
+<AC/>22</AC>
+<HP/>814</HP>
 <summary>The Great Wyrm Blue Dragon is a gargantuan creature that exemplifies the formidable power of draconic foes in Dungeons & Dragons. With an exceptionally high Armor Class of 22 and impressive Hit Points totaling 814, this dragon is a very durable opponent who can take significant punishment. Its slightly average Dexterity and high Constitution lend it durability in battle. It excels in ranged combat with a flight speed of 80 feet and lightning-based abilities that inflict severe damage. The dragon’s strengths include its devastating breath weapon, powerful melee attacks, and a host of unique abilities that allow it to manipulate the battlefield. However, its average Dexterity suggests potential weaknesses in avoiding certain attacks and spells. </summary>
 
 <detail>
@@ -29,6 +31,7 @@ For legendary actions, the dragon can frighten foes with a mighty "Roar" that co
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Great Wyrm Blue Dragon
 
 *Gargantuan* *Dragon*
@@ -79,5 +82,6 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 21 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 24 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Quake (Costs 2 Actions):** The dragon uses its Quake action.
+</statblock>
 
 

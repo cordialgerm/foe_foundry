@@ -1,6 +1,8 @@
 <MonsterName/>Giant Sloth</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Giant Sloth is a large, unaligned beast known for its impressive physical power and considerable durability. With an armor class of 15 due to its natural armor and a robust health pool of 168 hit points, the Giant Sloth is a tough adversary that can absorb significant damage. Its challenge rating of 7 indicates that it poses a medium threat to a party of adventurers. The creature's high strength score of 19 (+4) enables it to deliver powerful attacks, while its Constitution score of 19 (+4) ensures a good resilience to physical attacks. However, the sloth is slow, with a movement speed of only 20 feet for both walking and climbing, making it less agile in combat situations. The Giant Sloth has some formidable special abilities, including its "Foul Odor," which can hinder opponents, and "Hunter's Dash," allowing it to move swiftly and attack with increased effectiveness.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Giant Sloth can perform a multiattack, making two separ
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Sloth
 
 *Large* *Beast* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Sloth's Embrace:** The giant sloth crushes a creature it is grappling by pulling the creature against its fetid, furry chest. The target must make a DC 15 Strength saving throw, taking 27 (6d8) bludgeoning damage on a failed save, or half as much damage on a successful one. A creature that fails the save is also stunned until the end of its next turn.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Trollkin Ragecaster</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (leather armor)</AC>
+<HP/>112</HP>
 <summary>The Trollkin Ragecaster is a formidable Medium Humanoid creature known for its chaotic neutral alignment. This monster is a bridge between physical melee combat and spellcasting, making it adaptable in various encounters. With a solid Armor Class of 15 and a substantial pool of Hit Points totalling 112, it possesses good defenses against attacks. The Ragecaster’s strength lies in its ability to switch between melee attacks using its claws and casting powerful elemental spells while in a state of rage. However, it has very poor Intelligence, which limits its tactical knowledge and decision-making in battle. Notably, it has strong regenerative capabilities, allowing it to recover health each turn unless it is attacked by acid or fire, which poses a significant weakness.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Trollkin Ragecaster can enter a state of Ragecasting up t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Trollkin Ragecaster
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Ragecasting (3/Day):** Enters special rage that lets it channel elemental power for 1 min. While ragecasting: disadvantage on Wis saves and gains fly speed of 60'. It can end ragecasting as a bonus action. When ragecasting ends it descends 60'/round until it lands on a solid surface and can continue concentrating on spell it cast while ragecasting.
 
 
+</statblock>
 
 

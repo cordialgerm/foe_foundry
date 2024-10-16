@@ -1,6 +1,8 @@
 <MonsterName/>Chimeric Phantom</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>11</AC>
+<HP/>36</HP>
 <summary>The Chimeric Phantom is a Medium undead creature with a chaotic neutral alignment, designed to evoke fear and confusion among its enemies. With an Armor Class of 11 and hit points totaling 36, it exhibits moderate durability for its challenge rating of 2, equivalent to 450 experience points for defeating it. It possesses a unique movement ability, allowing it to hover and fly at a speed of 40 feet, making it highly mobile in combat. Its strengths lie in its resistance to several types of damage and its ability to inflict fear on opponents, while its weaknesses include a lack of significant physical strength, as it has average strength and constitution scores. Additionally, it has very low charisma, impacting its interactions with characters that rely on charm or persuasion. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Chimeric Phantom can take a Multiattack action, allowing it to ma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chimeric Phantom
 
 *Medium* *Undead* *chaotic neutral*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Maddening Grasp:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) necrotic damage.
 
 
+</statblock>
 
 

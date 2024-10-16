@@ -1,6 +1,8 @@
 <MonsterName/>Flab Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Flab Giant is a powerful creature representing the chaotic evil alignment in the Dungeons & Dragons universe. This large giant is slow-moving, with a walking speed of only 20 feet, but it compensates for this with impressive strength and durability. Boasting an Armor Class of 14 due to its natural armor and a significant pool of 110 hit points, the Flab Giant can withstand a fair amount of damage in combat. It possesses an exceptional Strength score of 20, allowing it to deal hefty melee damage and grapple smaller opponents effectively. However, its Dexterity is very low, making it poor at avoiding ranged attacks, and it lacks intelligence, charisma, and wisdom, which limits its utility outside of combat. The Flab Giant's biggest strengths lie in its ability to restrain and damage foes through grappling maneuvers, making it a formidable opponent for unprepared adventurers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Flab Giant is a powerful melee combatant that can hold its own agai
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flab Giant
 
 *Large* *Giant* *Chaotic Evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The giant makes two Slam attacks. If both attacks hit a Medium or smaller creature, the target is grappled (escape DC 15).
 - **Slam:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage.
 - **Squatting Pin:** One creature grappled by the flab giant must make a DC 15 Strength saving throw. On a failure, a creature takes 22 (5d6 + 5) bludgeoning damage and is restrained until the grapple ends. On a success, a creature takes half the damage and isn’t restrained, but it remains grappled until it escapes. While restrained, a creature takes 8 (1d6 + 5) bludgeoning damage at the start of each of the giant’s turns. If the flab giant moves, the target is no longer restrained or grappled.
+</statblock>
 
 

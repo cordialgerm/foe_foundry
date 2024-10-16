@@ -1,6 +1,8 @@
 <MonsterName/>Flying Polyp</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>171</HP>
 <summary>The Flying Polyp is a formidable Huge Aberration embodying chaotic evil. Its extraordinary flight capabilities make it a challenging foe in combat, allowing it to engage from above while avoiding ground-based attacks. With a hefty number of hit points, high defenses through natural armor, and various resistances, it can sustain significant damage while dishing out its own. The polyp excels in controlling the battlefield with its unique abilities, particularly its Aura of Wind and Cyclone attack, which can force opponents to reposition or take substantial damage. However, it has vulnerabilities to lightning damage, requiring strategic planning from opponents who can exploit this weakness.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a reaction, the Flying Polyp can use Fist of Wind in response to being target
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flying Polyp
 
 *Huge* *Aberration* *chaotic evil*
@@ -66,5 +69,6 @@ At will: invisibility (self only)
 - **Fist of Wind:** When a creature the flying polyp can see targets it with an attack, the flying polyp can unleash a line of strong wind 60 feet long and 10 feet wide in the direction of the attacker. The wind lasts until the start of the flying polyp's next turn. Each creature in the wind when it appears or that starts its turn in the wind must succeed on a DC 17 Strength saving throw or be pushed 15 feet away from the flying polyp in a direction following the line. Any creature in the line treats all movement as difficult terrain.
 
 
+</statblock>
 
 

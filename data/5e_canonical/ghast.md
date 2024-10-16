@@ -1,6 +1,8 @@
 <MonsterName/>Ghast (Ghoul)</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>36</HP>
 <summary>A Ghast is an undead creature that has retained more of its intelligence and malevolence compared to a typical ghoul. Its decayed, emaciated body reeks of death, and its eyes burn with a dark, hungry light. Ghasts are highly dangerous, possessing both the paralyzing touch of ghouls and a toxic stench that sickens anyone nearby. They hunger for the flesh of the living and often lead packs of ghouls on savage hunts. Ghasts are relentless predators, using their cunning to ambush and outmaneuver their prey, and they are immune to most forms of exhaustion and fatigue, making them tireless foes.</summary>
 
 <summary>The ghast is a Medium-sized undead creature that lurks in the shadows, embodying a terrifying presence on the battlefield. With a challenge rating of 2, it poses a moderate threat to adventurers, especially with its paralyzing attacks and the foul stench that it emits, which can hinder and debilitate opponents. Although it has decent combat abilities, featuring strong strength and dexterity scores, the ghast also has notable weaknesses, including limited hit points and a reliance on close combat to deliver its devastating effects. Players should be cautious when engaging a ghast, as it can swiftly incapacitate numerous foes, but it remains vulnerable to radiant damage and effects that disrupt undead.</summary>
@@ -47,6 +49,7 @@ Overall, the ghast is a dangerous foe that blends physical ability with debilita
 
 Source: 5e_srd
 
+<statblock>
 ### Ghast (Ghoul)
 
 *Medium undead, chaotic evil*
@@ -81,7 +84,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one creature. *Hit:* 12 (2d8+3) piercing damage.
 
-***Claws.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+***Claws.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</statblock>
+
 
 
 
@@ -89,6 +93,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghast
 
 *Medium* *Undead*
@@ -122,6 +127,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one incapacitated creature. Hit: 8 (1d10 + 3) piercing damage.
 
 
+</statblock>
 
 
 
@@ -130,6 +136,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghast
 
 *Medium undead*
@@ -163,5 +170,6 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
 - **Claws.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage. If the target is a creature that isn’t a Construct or Undead, it must succeed on a DC 13 CON save or be paralyzed for 1 minute. The target can repeat the save at the end of each of its turns, ending the effect on itself on a success.
 
+</statblock>
 
 

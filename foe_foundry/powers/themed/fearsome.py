@@ -146,7 +146,7 @@ class _DreadGaze(HorrifyingPower):
 class _MindShatteringScream(HorrifyingPower):
     def __init__(self):
         super().__init__(
-            name="Mind-Shattering Scream", source="SRD5.1 Banshee", power_level=HIGH_POWER
+            name="Mind-Shattering Scream", source="Foe Foundry", power_level=HIGH_POWER
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

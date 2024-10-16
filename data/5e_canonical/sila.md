@@ -1,6 +1,9 @@
 <MonsterName/>Sila</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<Subtype/>outsider</Subtype>
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>216</HP>
 <summary>The Sila is a formidable large elemental creature with an impressive combination of speed, versatility, and powerful elemental attacks. Known as an outsider, this creature resides primarily in aquatic environments, capable of thriving both in water and on land. Its defensive capabilities are heightened by a solid armor class of 17, compounded by its significant hit points totaling 216, making it a durable opponent. The Sila possesses a challenge rating of 11, indicating that it poses a substantial threat to parties of adventurers of a similar level. Notable strengths include its good Dexterity and Charisma, which allow it to move gracefully and manipulate combat situations through spells and special abilities. However, it does have weaknesses such as limited offensive power in its nebulous form, where it cannot attack or manipulate objects.</summary>
 
 <detail>
@@ -23,6 +26,7 @@ Overall, the Sila combines formidable defenses, impressive mobility, and potent 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sila
 
 *Large elemental (outsider)*
@@ -61,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Clouded Eyes.** The sila condenses the air or water around the head or eyes of up to two creatures it can see within 30 feet of it. Each target must succeed on a DC 17 DEX save or be blinded until the end of its next turn.
 - **Genie Shape.** The sila magically transforms into a Medium cloud of thick mist that leaves droplets of water on everything it touches or back into its bipedal form. Its statistics are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its bipedal form if it dies. The sila can’t use this bonus action to transform into its bipedal form while inside a Medium or smaller container.
 
+</statblock>
 
 

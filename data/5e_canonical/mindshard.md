@@ -1,6 +1,8 @@
 <MonsterName/>Mindshard</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>81</HP>
 <summary>The Mindshard is a small aberration characterized by its malevolent neutrality and cunning abilities. It thrives in environments where it can manipulate and charm its foes, using psychic powers to inflict damage while remaining difficult to detect. With a challenge rating of 4, it poses a moderate threat to adventurers, primarily due to its exceptional defensive capabilities and the potential to incapacitate opponents. However, its low strength and lack of melee mobility make it vulnerable to certain tactics, particularly those involving ranged attacks or spells that bypass its defenses. Notably, the Mindshard has abilities that allow it to create cultist minions from fallen foes, enhancing its capacity for chaos on the battlefield.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Finally, the Mindshard can react to attacks with its Enthralling Defense. When a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mindshard
 
 *Small* *Aberration* *neutral evil*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Enthralling Defense:** When a creature the mindshard can see within 30' of it hits it with an attack that creature must make DC 14 Cha save or be charmed until end of its next turn.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Bagiennik</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Bagiennik is a Medium-sized aberration characterized by its chaotic neutral alignment, making it an unpredictable adversary in combat. With an Armor Class of 15 and 75 Hit Points, this creature is reasonably well-armored and can withstand significant damage before being defeated. It boasts impressive Dexterity, allowing it to dodge attacks effectively, and its Strength is also quite good, which contributes to its melee capabilities. However, its intelligence is notably low, implying limited strategic thinking. The Bagiennik can navigate through combat with its notable speed of 40 feet and possesses a Challenge Rating of 3, indicating a moderate level of difficulty for adventurers. This unique creature has a penchant for both offense and support, capable of dealing substantial slashing damage while also providing healing options to allies.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ Finally, the Bagiennik has a healing ability called Healing Oil, which it can us
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bagiennik
 
 *Medium* *Aberration* *Chaotic Neutral*
@@ -41,5 +44,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
 - **Acid Spray:** The bagiennik sprays acid on one creature it can see within 30 feet of it, creating a puddle of oil beneath the creature. The target must make a DC 13 Dexterity saving throw. On a failure, the creature takes 18 (4d8) acid damage and is knocked prone. On a success, the creature takes half the damage and isn’t knocked prone. The slippery oil covers the ground in a 5-foot square centered on the point where the target was standing for 1 minute. A creature that enters the oily area or ends its turn there must succeed on a DC 13 Dexterity saving throw or fall prone.
 - **Healing Oil (3/Day):** The bagiennik applies healing oil to a creature it can see within 5 feet of it. The target magically regains 7 (2d6) hp and is freed from any disease or poison. The target must then succeed on a DC 13 Constitution saving throw or its speed is halved and it takes a −2 penalty to AC and Dexterity saving throws for 1 minute.
+</statblock>
 
 

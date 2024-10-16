@@ -1,6 +1,9 @@
 <MonsterName/>Mechanist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any lineage</Subtype>
+<CR/>2</CR>
+<AC/>15 (scale mail)</AC>
+<HP/>60</HP>
 <summary>The Mechanist is a medium humanoid creature characterized by its proficiency with mechanical devices and tools. Serving often as a skilled artisan or engineer in combat, the Mechanist can manipulate constructs and technical gadgets to gain advantages in battle. Its strengths lie in its intelligence, allowing it to double its proficiency with tinkering tools, and its ability to produce constructs that can aid in combat or provide support. While it has moderate armor class and hit points, making it reasonably durable, it is not particularly strong or charismatic. In gameplay, the Mechanist can engage with both melee and ranged attacks, provide repair support to constructs, and create small constructs that follow its commands, making it a versatile character that can adapt to various situations.</summary>
 
 <detail>
@@ -43,6 +46,7 @@ Overall, the Mechanist brings a unique blend of combat capabilities and mechanic
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mechanist
 
 *Medium humanoid (any lineage)*
@@ -81,5 +85,6 @@ Source: 5e_artisinal_monsters
 
 - **Magnetic Pulse.** When a creature the mechanist can see attacks it with a weapon made at least partially of metal while within 5 feet of it, the mechanist can release a magical, magnetic pulse. The attacker must succeed on a DC 13 DEX save or have disadvantage on the attack roll.
 
+</statblock>
 
 

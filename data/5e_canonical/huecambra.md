@@ -1,6 +1,8 @@
 <MonsterName/>Huecambra</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Huecambra is a large monstrosity that poses a significant threat in combat, with its formidable damage output and the ability to inflict debilitating curses. It has a strong defensive capability with an armor class of 17 and a substantial hit point total of 136, allowing it to withstand a considerable amount of damage. The creature excels in both aquatic and terrestrial environments, with a swimming speed of 30 feet and a walking speed of 40 feet. Its challenge rating of 8 indicates that it can provide a challenging encounter for mid-level adventurers. However, it has low intelligence and no associated languages, suggesting that it acts on instinct rather than strategy. Notably, it is immune to poison and thunder damage, and it is unaffected by being charmed, petrified, or poisoned.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In summary, the Huecambra's blend of high damage potential, the ability to curse
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Huecambra
 
 *Large* *Monstrosity* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Gem Explosion (Recharge 6):** The huecambra causes some of the gem-like nodules on its body to detonate. Each creature within 20 feet of the huecambra must make a DC 16 Dexterity saving throw. On a failure, a creature takes 24 (7d6) thunder damage and is stunned until the end of its next turn. On a success, a creature takes half the damage and isn’t stunned. A creature cursed by the huecambra’s bite has disadvantage on this saving throw.
 
 
+</statblock>
 
 

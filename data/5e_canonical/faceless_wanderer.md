@@ -1,6 +1,8 @@
 <MonsterName/>Faceless Wanderer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>58</HP>
 <summary>The Faceless Wanderer is a medium-sized aberration known for its neutral evil alignment. This entity presents a unique challenge for adventurers due to its ability to drain memories from its victims, leaving them disoriented and vulnerable. With a higher Dexterity score granting it agility in combat and resilience through damage immunities, the Faceless Wanderer can be a formidable opponent. However, its Armor Class of 13 indicates that it is vulnerable to attacks if caught by surprise. Notably, its special abilities, like Memory Loss and Regeneration, allow it to maintain a distinct strategic advantage, making it a dangerous foe that can easily manipulate encounters to its favor.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The Memory Drain action is particularly potent, targeting a creature within 30 f
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Faceless Wanderer
 
 *Medium* *Aberration* *neutral evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Memory Drain:** The faceless wanderer drains memories from an adult creature within 30 feet of it. The target must make a DC 13 Intelligence saving throw. On a failure, the target takes 14 (4d6) psychic damage and its Intelligence score is reduced by 1d4. The target dies if this reduces its Intelligence to 0. A humanoid slain in this way rises 1d4 hours later as a new faceless wanderer. Otherwise, the reduction lasts until the target finishes a short or long rest. On a success, the target takes half the damage and its Intelligence score isn’t reduced.
 
 
+</statblock>
 
 

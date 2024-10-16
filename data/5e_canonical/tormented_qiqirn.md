@@ -1,6 +1,8 @@
 <MonsterName/>Tormented Qiqirn</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Tormented Qiqirn is a large chaotic evil fiend known for its resilience, quickness, and the ability to inflict both necrotic and psychic damage. With an Armor Class of 16 due to its natural armor and a substantial amount of hit points totaling 133, it proves to be a formidable adversary in combat. The qiqirn's strengths lie in its high Dexterity, which allows for nimble movements and effective stealth tactics, combined with its special abilities that can debilitate foes. However, its Intelligence is notably low, indicating that it may not be the most strategic opponent. It possesses several immunities and resistances, making it tough to bring down, although its vulnerabilities are limited to specific types of damage. Its challenge rating of 10 places it at a moderate level of threat, and its actions in battle can shift the tide of combat significantly.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Tormented Qiqirn is a dangerous opponent that combines physical pro
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tormented Qiqirn
 
 *Large* *Fiend* *chaotic evil*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Protective Spirits:** When the qiqirn takes damage, the spirits infusing it rise up to protect it. Roll 2d8 and reduce the damage by the result.
 
 
+</statblock>
 
 

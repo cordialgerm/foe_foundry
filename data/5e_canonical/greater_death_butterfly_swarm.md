@@ -1,6 +1,8 @@
 <MonsterName/>Greater Death Butterfly Swarm</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>84</HP>
 <summary>The Greater Death Butterfly Swarm is a Huge, unaligned creature that embodies a terrifying fusion of beauty and danger. It represents a formidable challenge to adventurers with its capacity to swarm enemies and inflict debilitating poison damage. With an Armor Class of 15, it can withstand a fair amount of hits, while its Hit Points totaling 84 indicate that it is a durable foe in combat. While it boasts exceptional Dexterity, allowing it to maneuver skillfully, its Strength is negligible, making physical confrontations with it largely ineffective. The swarm has resistances to bludgeoning, piercing, and slashing damage, but is vulnerable to cold and fire damage, which can be exploited by savvy players. Its range of immunities to various conditions, like being charmed or paralyzed, further enhances its survivability. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Greater Death Butterfly Swarm is a compelling mix of danger and strategy tha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greater Death Butterfly Swarm
 
 *Huge* *Swarm* *Beast* *Unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The swarm makes two Bites attacks.
 - **Bites:** Melee Weapon Attack: +7 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 21 (6d6) piercing damage, or 10 (3d6) piercing damage if the swarm has half of its hp or fewer. The target must make a DC 15 Constitution saving throw. On a failure, it takes 10 (3d6) poison damage and is poisoned for 1 minute. On a success, it takes half the damage and isn’t poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

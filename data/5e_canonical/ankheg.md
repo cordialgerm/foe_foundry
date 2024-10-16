@@ -1,6 +1,9 @@
 <MonsterName/>Ankheg</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<Subtype/>animal</Subtype>
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>39</HP>
 <summary>An Ankheg is a monstrous insect-like creature, with a long, segmented body covered in chitinous armor. Its mandibles are massive and sharp, capable of crushing rock and bone alike, while its multiple legs allow it to burrow through the earth at alarming speeds. Ankhegs are ambush predators, bursting out of the ground to grab prey with their mandibles before dragging them into their tunnels. They also have the ability to spray a stream of acidic bile, dissolving flesh and stone with ease. Ankhegs typically inhabit farmland or forests, creating dangerous networks of tunnels beneath the ground.</summary>
 
 <summary>The Ankheg is a formidable Large monstrosity known for its brutal combat style and ability to ambush prey with a mixture of strength and acid attacks. With an Armor Class of 14 and hit points totaling 45, it presents a substantial challenge, particularly for adventurers who venture too close. The Ankheg has a walking speed of 30 feet and can burrow at 15 feet, making it effective in both ground and underground encounters. It possesses notable strengths in strength and constitution, boasting a Strength score of 16 (+3) and a Constitution score of 14 (+2), allowing it to deal significant damage while maintaining durability. However, its Dexterity is average at 10 (+0), and it has poor Intelligence and Charisma scores, suggesting it has limited problem-solving capabilities and social interactions. This creature's main weaknesses lie in its low Dexterity and lack of ranged attack options, making it susceptible to tactics that involve distance and evasion.</summary>
@@ -35,6 +38,7 @@ Lastly, the Ankheg can use a bonus action called Save for Later. This allows it 
 
 Source: 5e_srd
 
+<statblock>
 ## Ankheg
 
 *Large monstrosity, unaligned*
@@ -59,7 +63,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage plus 3 (1d6) acid damage. If the target is a Large or smaller creature, it is grappled (escape DC 13). Until this grapple ends, the ankheg can bite only the grappled creature and has advantage on attack rolls to do so.
 
-***Acid Spray (Recharge 6)***. The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.
+***Acid Spray (Recharge 6)***. The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -67,6 +72,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ankheg
 
 *Large* *Monstrosity*
@@ -93,6 +99,7 @@ Source: 5e_artisinal_monsters
 - **Acid Spray (Recharge 6):** The ankheg spits a 30-foot-long  5-foot-wide stream of acid. Each creature in the area makes a DC 13 Dexterity saving throw  taking 14 (4d6) acid damage on a failure or half damage on a success. If the ankheg is grappling a target  it instead bathes the target in acid  dealing 14 (4d6) acid damage with no saving throw only to that target.
 
 
+</statblock>
 
 
 
@@ -101,6 +108,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ankheg
 
 *Large monstrosity (animal)*
@@ -133,5 +141,6 @@ Source: 5e_artisinal_monsters
 
 - **Save for Later.** The ankheg quickly digs a small hole and stuffs one creature grappled by it into the hole, burying the creature and ending the grapple. A buried creature is restrained and unable to breathe or stand up. A creature, including the buried creature, can take its action to free the buried creature by succeeding on a DC 13 STR check.
 
+</statblock>
 
 

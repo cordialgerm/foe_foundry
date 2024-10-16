@@ -1,6 +1,8 @@
 <MonsterName/>Vampire Patrician</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Vampire Patrician is a formidable Medium Undead creature infused with a lawful evil nature. With a Challenge Rating of 10, this powerful vampire boasts significant resistances and formidable combat abilities, making it an exceptional foe in terms of damage output and tactical advantages in battle. Possessing both efficient melee capabilities and terrifying special abilities, the Vampire Patrician excels at manipulating its enemies and avoiding danger. Its remarkable speed, cleverness in combat, and the ability to summon allies make it a versatile and dangerous adversary. However, it has notable weaknesses, such as its aversion to sunlight and the need for invitations to enter homes, which can be leveraged by vigilant adventurers.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Vampire Patrician is a multi-faceted adversary, combining resilienc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire Patrician
 
 *Medium* *Undead* *lawful evil*
@@ -65,5 +68,6 @@ Sunlight Hypersensitivity. The patrician takes 20 radiant damage when it starts 
 - **Release the Hounds! (1/Day):** The vampire patrician calls 4d6 hunting hounds (use mastiff statistics) to its side. While outdoors, the vampire patrician can call 4d6 hunting raptors (use blood hawk statistics) instead. These creatures arrive in 1d4 rounds, helping the patrician and obeying its spoken commands. The beasts remain for 1 hour, until the patrician dies, or until the patrician dismisses them as a bonus action.
 
 
+</statblock>
 
 
