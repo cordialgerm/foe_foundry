@@ -20,7 +20,9 @@ from transformers import (
 from .data.background import load_background_dataset
 from .data.monsters import load_triplet_loss_dataset
 from .model import (
+    load_baseline_sentence_embedding_model,
     load_model_for_mlm,
+    load_sentence_embedding_model,
     mlm_model_dir,
     mlm_model_dir_rel,
     st_model_dir,
@@ -69,30 +71,34 @@ def fine_tune_bert_on_background_corpus(fresh: bool, skip_training: bool = False
 
 
 def fine_tune_bert_contrastive(fresh: bool = False, skip_training: bool = False):
-    print(f"Loading MLM model from {mlm_model_dir}...")
-
-    # Load the pre-trained BERT model for MLM
-    word_embedding_model = models.Transformer(str(mlm_model_dir), max_seq_length=512)
-
-    # Configure the Pooling layer for Semantic Search (Mean Pooling recommended)
-    pooling_model = models.Pooling(
-        word_embedding_model.get_word_embedding_dimension(),
-        pooling_mode_mean_tokens=True,  # Use mean pooling for semantic search
-        pooling_mode_cls_token=False,  # Don't rely on CLS token because we're using a fine-tuned BERT model for MLM
-        pooling_mode_max_tokens=False,  # trying mean pooling for now for semantic search
-    )
-    model = SentenceTransformer(modules=[word_embedding_model, pooling_model])
+    print("Loading sentence embedding model...")
+    model = load_sentence_embedding_model(use_saved=not fresh)
 
     print("Generating triplet training data...")
     dataset, n_train, n_eval, n_test = load_triplet_loss_dataset()
     print(f"{n_train=}, {n_eval=}, {n_test=}")
 
-    print("Fine-tuning model...")
     trainer = _setup_contrastive_trainer(model, dataset, n_train)
-    trainer.train()
 
-    print(f"Saving Model to {st_model_dir}...")
-    model.save(str(st_model_dir))
+    if not skip_training:
+        print("Fine-tuning model...")
+        trainer.train()
+
+        print(f"Saving Model to {st_model_dir}...")
+        model.save(str(st_model_dir))
+
+    # measure performance on validation set
+    print("Test Metrics:")
+
+    print("Test Dataset using Fine-Tuned Model:")
+    test_result = trainer.evaluate(dataset["test"])
+    pprint(test_result)
+
+    print("Test Dataset using Baseline Model:")
+    model2 = load_baseline_sentence_embedding_model()
+    trainer2 = _setup_contrastive_trainer(model2, dataset, n_train)
+    test_result2 = trainer2.evaluate(dataset["test"])
+    pprint(test_result2)
 
 
 def _setup_contrastive_trainer(

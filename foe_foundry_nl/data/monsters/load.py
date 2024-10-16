@@ -1,6 +1,7 @@
 import json
 import re
 from collections.abc import Iterable
+from functools import cached_property
 from pathlib import Path
 
 from foe_foundry.creature_types import CreatureType
@@ -8,7 +9,20 @@ from foe_foundry.creature_types import CreatureType
 from .data import CanonicalMonster, MonsterInfo
 
 
+class _Loader:
+    @cached_property
+    def monsters(self) -> dict[str, CanonicalMonster]:
+        return load_canonical_monsters()
+
+
+_loader = _Loader()
+
+
 def get_canonical_monsters() -> dict[str, CanonicalMonster]:
+    return _loader.monsters
+
+
+def load_canonical_monsters() -> dict[str, CanonicalMonster]:
     # load SRD monsters
     srd_monsters = [m for m in iter_srd_md_monsters()]
 
