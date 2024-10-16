@@ -68,7 +68,7 @@ def fine_tune_bert_on_background_corpus(fresh: bool, skip_training: bool = False
     print("Success!")
 
 
-def fine_tune_bert_contrastive():
+def fine_tune_bert_contrastive(fresh: bool = False, skip_training: bool = False):
     print(f"Loading MLM model from {mlm_model_dir}...")
 
     # Load the pre-trained BERT model for MLM
