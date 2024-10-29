@@ -1,0 +1,25 @@
+{
+    "name": "Ember Glider",
+    "queries": [
+        {
+            "query": "fiery gliding monster with explosive attacks",
+            "variant": "fiery monster that glides and has explosive attacks"
+        },
+        {
+            "query": "agile creature resistant to fire that attacks with bite",
+            "variant": "agile monster immune to fire and uses bite to attack"
+        },
+        {
+            "query": "medium monstrosity that glows and deals fire damage",
+            "variant": "medium creature that sheds light and does fire damage"
+        },
+        {
+            "query": "flying monster with heated body ability and low strength",
+            "variant": "gliding creature with heated body that has weak strength"
+        },
+        {
+            "query": "elemental creature that glides and has keen smell",
+            "variant": "elemental monster with gliding ability and sharp sense of smell"
+        }
+    ]
+}

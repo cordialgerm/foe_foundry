@@ -1,0 +1,25 @@
+{
+    "name": "Forest Hunter",
+    "queries": [
+        {
+            "query": "stealthy humanoid that thrives in forests and has sunlight sensitivity",
+            "variant": "humanoid that is stealthy and loves forest and has sensitivity to sunlight"
+        },
+        {
+            "query": "humanoid predator with charm abilities and strong in stealth",
+            "variant": "predatory humanoid skilled at charm and very stealthy"
+        },
+        {
+            "query": "medium evil creature skilled in archery and prefers urban environments",
+            "variant": "evil medium creature that is expert archer and like urban environments"
+        },
+        {
+            "query": "creature that uses daggers and can teleport through shadows in forest",
+            "variant": "monster that uses daggers and can teleport in shadows within forest"
+        },
+        {
+            "query": "hunter creature with high dexterity and poison attacks",
+            "variant": "creature that hunts with dexterity and attacks using poison"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Barometz",
+    "queries": [
+        {
+            "query": "large plant creature that can regenerate and create fruit upon death",
+            "variant": "big plant monster that produces fruits when it dies and regenerates health"
+        },
+        {
+            "query": "plant creature linked to a tree and can only regenerate if its vine is intact",
+            "variant": "plant monster connected to a nearby tree that loses regeneration if cut"
+        },
+        {
+            "query": "chaotic neutral plant monster that enjoys difficult terrain and has high constitution",
+            "variant": "chaotic neutral plant being with excellent constitution prefers hard terrains"
+        },
+        {
+            "query": "creature with natural armor that resembles a tree and can absorb damage",
+            "variant": "monster with natural defense that looks like a tree and can take hits"
+        },
+        {
+            "query": "nourishing monster that provides heroes' feast and enjoys the forest environment",
+            "variant": "plant being that offers heroes' feast benefits and thrives in the woods"
+        }
+    ]
+}

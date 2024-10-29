@@ -1,0 +1,50 @@
+{
+    "name": "Shepherd Drake",
+    "creature_type": "Dragon",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 110,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "25 ft. walking, 50 ft. flying",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "protector",
+        "beast guardian"
+    ],
+    "adjectives": [
+        "nurturing",
+        "agile",
+        "defensive"
+    ],
+    "description": "The Shepherd Drake is a medium-sized dragon known for its role in assisting and protecting vulnerable creatures, featuring high agility and durability.",
+    "memorable": "It has abilities to charm animals and protect them in combat, making it a unique guardian of beasts.",
+    "goals": "To safeguard and assist other creatures, especially vulnerable ones, in their environment.",
+    "relations": "Often found in the company of various beasts, acting as their protector.",
+    "environment": "Typically encountered in areas where it can oversee and protect wildlife.",
+    "strengths": "Possesses high mobility with flying capabilities and notable defensive traits including resistance to being charmed or frightened.",
+    "weaknesses": "Vulnerable to high-damage spells and powerful creatures, focused more on support than direct combat.",
+    "attacks": "Can perform a multiattack with a ram strike and two claw strikes, dealing significant bludgeoning and slashing damage.",
+    "most_powerful_ability": "The ability to charm and direct animals, emphasizing its role as a protector.",
+    "equipment": null,
+    "senses": "Has a passive Perception score of 15, allowing it to effectively sense its surroundings.",
+    "skills": "Proficient in Perception with a modifier of +5.",
+    "additional_information": [
+        "Immunity to charmed and frightened conditions.",
+        "Can communicate with beasts using the Speak with Beasts ability.",
+        "Has a Charge ability that can knock targets prone.",
+        "Breath weapon that induces indifference in hostile creatures or deals thunder damage.",
+        "Reaction ability to enhance allies' AC against attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "dragon that protects animals",
+        "medium dragon with supportive abilities",
+        "creature that charms beasts",
+        "guardian with calming breath weapon",
+        "flying protector of vulnerable creatures"
+    ]
+}

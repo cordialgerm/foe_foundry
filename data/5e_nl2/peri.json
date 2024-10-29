@@ -1,0 +1,51 @@
+{
+    "name": "Peri",
+    "creature_type": "Elemental",
+    "alignment": "chaotic good",
+    "size": "small",
+    "hp": 60,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft., fly 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "chaotic",
+        "flying"
+    ],
+    "adjectives": [
+        "agile",
+        "magical",
+        "nimble"
+    ],
+    "description": "The Peri is a small, agile elemental creature embodying chaotic goodness, characterized by its strong Charisma and magical abilities. It can fly and is known for its ability to become invisible.",
+    "memorable": "Upon defeat, a Peri disintegrates into a warm breeze, leaving behind only its equipment, making it difficult to loot.",
+    "goals": "To aid allies in battle and utilize its magical prowess effectively.",
+    "relations": "Other elemental creatures, and potentially those associated with chaotic goodness.",
+    "environment": "Typically found in areas of elemental influence or near sources of chaos.",
+    "strengths": "High Charisma enhances spellcasting and social interactions; possesses resistances to lightning and thunder damage.",
+    "weaknesses": "Low Strength makes it weak in physical confrontations.",
+    "attacks": "Wind Slash deals slashing damage combined with lightning or thunder damage, making it versatile against physical and magical resistances.",
+    "most_powerful_ability": "Storm Wave can disrupt enemy formations with significant area damage and pushing enemies away.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Average perception skill with a +1 bonus.",
+    "additional_information": [
+        "Has elemental resistances to lightning and thunder damage.",
+        "Can use Invisibility to avoid attacks until it engages.",
+        "Ability to fly provides strategic advantages in combat."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small elemental with magical powers",
+        "chaotic good flying creature",
+        "elemental that disintegrates when defeated",
+        "agile creature with storm abilities",
+        "elemental with strong Charisma and invisibility"
+    ]
+}

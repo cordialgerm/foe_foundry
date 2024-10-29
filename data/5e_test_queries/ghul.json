@@ -1,0 +1,25 @@
+{
+    "name": "Ghul",
+    "queries": [
+        {
+            "query": "undead creature that paralyzes enemies in melee combat",
+            "variant": "creature that paralyzes enemies in melee combat and is undead"
+        },
+        {
+            "query": "medium undead monster with noxious smoke explosion ability",
+            "variant": "monster that explodes into noxious smoke and is medium undead"
+        },
+        {
+            "query": "tactical undead with cold and fire resistance",
+            "variant": "undead that is tactical and has resistances to cold and fire"
+        },
+        {
+            "query": "creature that uses claws and has darkvision",
+            "variant": "monster with claws and the ability to see in darkness"
+        },
+        {
+            "query": "ghul combat strategies and spell abilities",
+            "variant": "combat strategies and spell abilities of the ghul"
+        }
+    ]
+}

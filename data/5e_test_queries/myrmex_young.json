@@ -1,0 +1,25 @@
+{
+    "name": "Myrmex, Young",
+    "queries": [
+        {
+            "query": "small elemental that manipulates earth and has keen sensory skills",
+            "variant": "elemental creature that is small and can manipulate the earth with keen senses"
+        },
+        {
+            "query": "neutral good creature with the ability to change terrain and resist poison",
+            "variant": "creature of neutral good alignment able to alter terrain and resistant to poison"
+        },
+        {
+            "query": "mobile elemental that can burrow and climb while resisting exhaustion",
+            "variant": "elemental that can climb and burrow as well as resist exhaustion"
+        },
+        {
+            "query": "Myrmex creature with a bite attack that also deals poison damage",
+            "variant": "creature Myrmex that has a bite attack dealing poison damage too"
+        },
+        {
+            "query": "Earth Manipulation ability to create difficult terrain with its imagination",
+            "variant": "ability of Earth Manipulation to create challenging terrain limited only by its imagination"
+        }
+    ]
+}

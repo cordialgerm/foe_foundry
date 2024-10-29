@@ -1,0 +1,25 @@
+{
+    "name": "Ink Guardian",
+    "queries": [
+        {
+            "query": "large ooze creature that can regenerate and deals acid damage",
+            "variant": "big ooze monster that regenerates and inflicts acid damage"
+        },
+        {
+            "query": "ink guardian's unique rejuvenation ability and combat strategy",
+            "variant": "unique rejuvenation skill and battle tactics of the ink guardian"
+        },
+        {
+            "query": "creature that is immune to acid attacks and vulnerable to bludgeoning",
+            "variant": "monster immune to acid damage and weak against bludgeoning"
+        },
+        {
+            "query": "amorphous ooze that can squeeze through tight spaces and punishes melee attackers",
+            "variant": "squeezing ooze that can fit in narrow spots and punishes close-range fighters"
+        },
+        {
+            "query": "creature with low dexterity and significant acid attacks in combat",
+            "variant": "monster that has bad dexterity and uses strong acid attacks during fights"
+        }
+    ]
+}

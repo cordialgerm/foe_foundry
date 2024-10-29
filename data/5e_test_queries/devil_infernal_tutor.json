@@ -1,0 +1,25 @@
+{
+    "name": "Infernal Tutor",
+    "queries": [
+        {
+            "query": "medium fiend that specializes in manipulation and charm",
+            "variant": "medium fiend specializing in charms and manipulation"
+        },
+        {
+            "query": "psychic damage inflicting fiend with high intelligence",
+            "variant": "fiend that inflicts psychic damage and has high intelligence"
+        },
+        {
+            "query": "lawful evil monster that uses spellcasting to control battles",
+            "variant": "monster that is lawful evil and uses spells to control fights"
+        },
+        {
+            "query": "creature with devil's sight that can speak all languages and telepathy",
+            "variant": "creature able to see in magical darkness and has telepathy, speaks all languages"
+        },
+        {
+            "query": "fiendish tutor with magical resistance and phrenic weapons",
+            "variant": "tutor fiend with resistance to magic and uses phrenic weapons"
+        }
+    ]
+}

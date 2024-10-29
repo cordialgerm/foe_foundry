@@ -1,0 +1,49 @@
+{
+    "name": "Young River Dragon",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Large",
+    "hp": 142,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 60 ft., fly 80 ft., swim 80 ft.",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "amphibious",
+        "aquatic"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "dangerous",
+        "mobile"
+    ],
+    "description": "A formidable aquatic creature, the Young River Dragon is characterized by its large size, impressive mobility in both water and air, and shimmering scales that provide cover while submerged.",
+    "memorable": "It possesses the unique Essence Link ability, which causes the area to lose vital essence upon its death, impacting future visitors.",
+    "goals": "Typically tied to a specific geographic area, defending its territory and ensuring its essence remains intact.",
+    "relations": "May be encountered alongside other aquatic creatures or dragons, potentially serving as a protector of a specific landmark.",
+    "environment": "Often found in rivers, lakes, or coastal regions where it can navigate both land and water.",
+    "strengths": "It has strong mobility and resistance against nonmagical weapons, along with potent spellcasting.",
+    "weaknesses": "Dependent on its linked area for long rests; if removed from this area, it cannot restore itself effectively.",
+    "attacks": "Can deliver a fierce bite and slashing claw attacks, and unleash a powerful area effect with its Torrential Breath.",
+    "most_powerful_ability": "Torrential Breath, allowing it to exhale a line of water that deals significant bludgeoning damage to multiple enemies.",
+    "equipment": null,
+    "senses": "Possesses darkvision and tremorsense, enabling it to detect vibrations in water.",
+    "skills": "Excels in perception and insight, indicating a heightened awareness and ability to read situations.",
+    "additional_information": [
+        "Breathes air and water, enhancing its versatility in travel.",
+        "Does not provoke opportunity attacks while moving through enemy reach.",
+        "Gains advantage on attacks while submerged due to Shimmering Scales."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can innately cast create or destroy water, and fog cloud three times per day each.",
+    "test_queries": [
+        "large amphibious dragon with water abilities",
+        "dragon that breathes air and water",
+        "creature with powerful ranged water breath attack",
+        "fast moving dragon in aquatic environments",
+        "dragon that protects a geographical landmark"
+    ]
+}

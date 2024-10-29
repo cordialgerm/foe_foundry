@@ -1,0 +1,25 @@
+{
+    "name": "Bard",
+    "queries": [
+        {
+            "query": "supporting humanoid with spellcasting abilities and artistic expression",
+            "variant": "humanoid that supports others with spells and art"
+        },
+        {
+            "query": "charismatic character that deals extra damage through art and performs ranged attacks",
+            "variant": "charismatic creature that increases damage with art while attacking from a distance"
+        },
+        {
+            "query": "multiattack humanoid that excels in support with crowd control spells",
+            "variant": "humanoid that can attack multiple times and is great at controlling crowds with spells"
+        },
+        {
+            "query": "versatile bard that uses songs for thunder damage resistance",
+            "variant": "bard that gains resistance to thunder damage through music"
+        },
+        {
+            "query": "artistic spellcaster with high charisma and stealth skills",
+            "variant": "spellcaster skilled in stealth and impressive charisma through art"
+        }
+    ]
+}

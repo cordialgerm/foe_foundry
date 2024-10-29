@@ -1,0 +1,53 @@
+{
+    "name": "Shadow Elf Warrior",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "poison",
+        "warrior"
+    ],
+    "adjectives": [
+        "shadowy",
+        "sneaky",
+        "strategic",
+        "poisonous"
+    ],
+    "description": "The Shadow Elf Warrior excels in stealth, blending into the darkness and striking unexpectedly. This medium humanoid is equipped with a shortsword and a hand crossbow, both potent in combat.",
+    "memorable": "The ability to poison and potentially incapacitate foes adds a tactical edge to encounters.",
+    "goals": "Typical goals include ambushing unsuspecting adventurers and striking from the shadows.",
+    "relations": "Often associated with other shadow elves or dark-dwelling creatures.",
+    "environment": "Typically found in dark, shadowy places or areas of low light.",
+    "strengths": "High perception and the ability to poison targets during ranged attacks.",
+    "weaknesses": "Low hit points may make it vulnerable when discovered or engaged directly.",
+    "attacks": "A versatile attacker using either a shortsword for close combat or a hand crossbow for ranged strikes.",
+    "most_powerful_ability": "Ability to poison enemies, potentially leaving them unconscious.",
+    "equipment": "shortsword and hand crossbow",
+    "senses": "Possesses a passive perception of 14, allowing it to effectively notice hidden threats.",
+    "skills": "Has proficiency in stealth and perception, making it a capable scout.",
+    "additional_information": [
+        "Can cast spells without material components.",
+        "Utilizes shadows for tactical advantage.",
+        "Can blend into darkness due to innate abilities.",
+        "Focuses on ambush techniques for combat.",
+        "Employs strategic movement to evade detection."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting ability linked to Wisdom, allowing cast without material components.",
+    "test_queries": [
+        "shadowy humanoid that poisons foes",
+        "stealthy warrior capable of ambushing",
+        "dark elf with deadly ranged attacks",
+        "humanoid that excels in darkness and stealth",
+        "warrior that uses poison in combat"
+    ]
+}

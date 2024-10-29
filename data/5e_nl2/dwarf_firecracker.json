@@ -1,0 +1,53 @@
+{
+    "name": "Dwarf Firecracker",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 68,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "25 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "fire",
+        "explosive",
+        "siege"
+    ],
+    "adjectives": [
+        "explosive",
+        "tough",
+        "agile"
+    ],
+    "description": "The Dwarf Firecracker is a robust humanoid with a penchant for explosive combat, wielding a massive hammer and possessing fiery magical abilities.",
+    "memorable": "Known for its explosive combat style and ability to deal double damage to structures, making it a formidable opponent in siege scenarios.",
+    "goals": "To engage in close-range combat and create chaos on the battlefield with fiery attacks.",
+    "relations": "Often seen with other dwarves and fire-themed creatures, could serve alongside those who value siege tactics.",
+    "environment": "Typically found in rocky terrains or battlefields where sieges occur.",
+    "strengths": "Enhanced speed when taking fire damage and the ability to deal significant damage to structures.",
+    "weaknesses": "Lower wisdom and dexterity, making it susceptible to certain magical tactics.",
+    "attacks": "Performs a multiattack with either a Wrecking Maul, dealing bludgeoning and fire damage, or a Fire Blast that inflicts fire damage at range.",
+    "most_powerful_ability": "Combustion Wave, creating a fiery shockwave impacting all creatures in a large radius with both fire and thunder damage.",
+    "equipment": "Wielding a massive Wrecking Maul.",
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": "Has a negative perception skill due to low wisdom.",
+    "additional_information": [
+        "Can reroll initiative to change combat position.",
+        "Resistant to fire and poison damage.",
+        "Increases speed temporarily when taking fire damage.",
+        "Effective in siege scenarios due to double damage to objects.",
+        "Uses explosive tactics and area damage abilities."
+    ],
+    "damage_types": [
+        "fire",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "explosive dwarf with hammer",
+        "fire-using dwarf in battle",
+        "siege monster that deals double damage",
+        "dwarf with fiery combat style",
+        "agile dwarf who gains speed from fire"
+    ]
+}

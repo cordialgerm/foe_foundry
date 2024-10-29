@@ -1,0 +1,51 @@
+{
+    "name": "Worg",
+    "creature_type": "Monstrosity",
+    "creature_subtype": "animal",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 26,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "50 feet, nimble in terrain",
+    "role": "Skirmisher",
+    "tags": [
+        "predator",
+        "mount",
+        "evil"
+    ],
+    "adjectives": [
+        "malevolent",
+        "cunning",
+        "predatory"
+    ],
+    "description": "A large, malevolent wolf-like creature with sharp teeth and powerful jaws, known for its cunning intellect.",
+    "memorable": "Worgs serve as mounts for goblins and can turn on their riders if mistreated.",
+    "goals": "To hunt and devour weaker creatures, often terrorizing travelers.",
+    "relations": "Often allied with goblins or orcs, serving as mounts or hunting partners.",
+    "environment": "Wild areas such as forests or mountainous regions.",
+    "strengths": "Highly perceptive with advantage on perception checks relying on hearing and smell; strong melee attacker.",
+    "weaknesses": "Low intelligence and charisma may limit social interactions and strategic capabilities.",
+    "attacks": "Powerful bite attack with the ability to knock opponents prone.",
+    "most_powerful_ability": "Loathsome Howl, which can frighten nearby creatures.",
+    "equipment": null,
+    "senses": "Possesses heightened hearing and smell, allowing it to track prey effectively.",
+    "skills": "Shows proficiency in stealth, making it capable of ambushing prey.",
+    "additional_information": [
+        "Can communicate in Goblin and Worg languages.",
+        "Resistant to exhaustion and fear effects.",
+        "Notorious for ambushing lone travelers.",
+        "Enjoys hunting in packs when cooperating with other goblins.",
+        "A cunning tactician in ambush scenarios."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large wolf-like creature that hunts",
+        "cunning predator allied with goblins",
+        "monster with powerful bite and howl",
+        "evil creature that enjoys the hunt",
+        "malevolent wolf that attacks travelers"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Antipaladin",
+    "queries": [
+        {
+            "query": "small chaotic evil humanoid that fights in shadows and avoids sunlight",
+            "variant": "small humanoid of chaotic evil nature that battles in darkness and shuns sunlight"
+        },
+        {
+            "query": "agile monster with necrotic damage ability that is weak against sunlight",
+            "variant": "agile creature capable of necrotic damage that suffers from sunlight sensitivity"
+        },
+        {
+            "query": "stealthy humanoid with psychic attack that deals eldritch horror damage",
+            "variant": "sneaky humanoid that inflicts psychic damage with eldritch horror abilities"
+        },
+        {
+            "query": "dangerous opponent with high dexterity and the ability to incapacitate enemies",
+            "variant": "formidable foe possessing good agility and the power to incapacitate foes"
+        },
+        {
+            "query": "monster with magic resistance that deals extra necrotic damage with weapons",
+            "variant": "creature having an edge against magic and inflicting additional necrotic damage on attacks"
+        }
+    ]
+}

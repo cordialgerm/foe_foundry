@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Aboleth</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>11</CR>
+<AC/>17</AC>
+<HP/>342</HP>
 <summary>The Ancient Aboleth is a formidable aberration primarily characterized by its immense size and psychic abilities. As a huge creature, it boasts a high armor class of 17 and a substantial pool of hit points totaling 342, making it exceptionally durable in combat. With a challenge rating of 11, the Aboleth poses a significant threat to adventurers, especially due to its capability to manipulate weaker minds and severely afflict them through its diseases and psychic attacks. Its amphibious nature allows it to thrive in both water and air, enhancing its versatility on the battlefield. While it boasts impressive intelligence and wisdom that exceed average levels, its dexterity is only average, meaning its physical dexterity is less noteworthy compared to its mental faculties. The Aboleth can effectively attack in close range with its tentacles and utilizes insidious spells and abilities to hinder opponents while bolstering its own position, making it a dangerous adversary for any party.</summary>
 
 <detail>
@@ -26,6 +28,7 @@ In summary, the Ancient Aboleth serves as a potent adversary with a mix of physi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Aboleth
 
 *Huge* *Aberration*
@@ -68,5 +71,6 @@ Source: 5e_artisinal_monsters
 - **Elite Recovery:** The aboleth ends one negative effect currently affecting it. It can use this action as long as it has at least 1 hit point, even while unconscious or incapacitated.
 - **Look Upon My Works (1/Day):** Each creature within 90 feet makes a DC 16 Wisdom saving throw. On a failure, the creature sees a fragmentary vision of the aboleths memories, taking 33 (6d10) psychic damage. After taking the damage, the creature forgets the vision, but it may learn one piece of lore.
 - **Lunging Attack:** The aboleth moves up to its swim speed without provoking opportunity attacks and makes a tentacle attack.
+</statblock>
 
 

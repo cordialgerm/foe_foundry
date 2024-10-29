@@ -1,6 +1,8 @@
 <MonsterName/>Barometz</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Barometz is a large, chaotic neutral plant creature that plays a unique role in the ecosystem of its environment. With an armor class of 15 and 95 hit points, it boasts good resilience in combat. The creature has a challenge rating of 6, indicating it poses a significant threat to adventurers but is manageable for a well-prepared party. Notable strengths include its ability to regenerate health and resist damage from various physical attacks. However, it is vulnerable to slashing damage, and if its connection to its parent vine is severed, it loses important regenerative capabilities and suffers from exhaustion. The Barometz is characterized by its connection to the land and its unique abilities that can provide significant benefits to those who manage to consume the nourishing fruits it produces upon death.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Barometz can make two attacks in one turn through its **Multiatta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Barometz
 
 *Large* *Plant* *chaotic neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

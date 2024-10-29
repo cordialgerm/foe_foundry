@@ -1,0 +1,25 @@
+{
+    "name": "Snake with a Hundred Mage Hands",
+    "queries": [
+        {
+            "query": "small snake with magical hands that creates chaos",
+            "variant": "little snake with mage hands that causes chaos"
+        },
+        {
+            "query": "monstrosity that uses distractions and has high Dexterity",
+            "variant": "creature that employs distractions and possesses high dexterity"
+        },
+        {
+            "query": "snake that can swim and climb with spectral hands",
+            "variant": "serpent able to swim and climb using ghostly hands"
+        },
+        {
+            "query": "sneaky creature with a powerful area attack",
+            "variant": "stealthy monster featuring a potent area attack"
+        },
+        {
+            "query": "intelligent monstrosity with abilities to disrupt foes",
+            "variant": "clever monster with skills to confuse enemies"
+        }
+    ]
+}

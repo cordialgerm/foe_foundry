@@ -5,8 +5,6 @@ from typing import List, Set, cast
 
 from backports.strenum import StrEnum
 
-from ..die import Die
-
 
 class DamageType(StrEnum):
     Acid = auto()
@@ -39,7 +37,11 @@ class DamageType(StrEnum):
 
     @property
     def is_physical(self) -> bool:
-        return self in {DamageType.Bludgeoning, DamageType.Piercing, DamageType.Slashing}
+        return self in {
+            DamageType.Bludgeoning,
+            DamageType.Piercing,
+            DamageType.Slashing,
+        }
 
     @property
     def is_elemental(self) -> bool:
@@ -51,6 +53,12 @@ class DamageType(StrEnum):
             DamageType.Thunder,
             DamageType.Poison,
         }
+
+    @staticmethod
+    def parse(damage_type: str) -> DamageType:
+        damage_type = damage_type.strip().lower()
+        val = DamageType._member_map_[damage_type.title()]
+        return cast(DamageType, val)
 
     @property
     def adj(self) -> str:

@@ -1,0 +1,25 @@
+{
+    "name": "Duelist",
+    "queries": [
+        {
+            "query": "humanoid warrior with high dexterity who uses a rapier",
+            "variant": "warrior humanoid with a rapier and high dexterity"
+        },
+        {
+            "query": "lawful evil fighter that excels in one-on-one combat",
+            "variant": "fighter that is lawful evil and great in single combat"
+        },
+        {
+            "query": "agile character in medium armor that has poor sunlight sensitivity",
+            "variant": "character in medium armor with agility and sunlight sensitivity issues"
+        },
+        {
+            "query": "Duelist with abilities for multitasking attacks and evasive maneuvers",
+            "variant": "Duelist that can multiattack and evade enemy strikes"
+        },
+        {
+            "query": "creature with high perception and skills in stealth and athletics",
+            "variant": "creature skilled in athletics and stealth with high perception"
+        }
+    ]
+}

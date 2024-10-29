@@ -1,0 +1,25 @@
+{
+    "name": "Ankou Soul Herald",
+    "queries": [
+        {
+            "query": "gargantuan dragon with necromantic powers that can turn invisible",
+            "variant": "gargantuan dragon that can become invisible and has necromantic abilities"
+        },
+        {
+            "query": "powerful dragon that manipulates shadows and is weak to radiant damage",
+            "variant": "strong shadow-manipulating dragon weak against radiant attacks"
+        },
+        {
+            "query": "dragon with a devastating breath attack that affects undead creatures",
+            "variant": "dragon that has a powerful breath attack harming undead"
+        },
+        {
+            "query": "creature that hinders necromancy and possesses high hit points",
+            "variant": "being that stops necromancy and has a large pool of hit points"
+        },
+        {
+            "query": "gargantuan dragon capable of transporting souls to different planes",
+            "variant": "huge dragon that can shift souls between planes of existence"
+        }
+    ]
+}

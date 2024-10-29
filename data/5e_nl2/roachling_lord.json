@@ -1,0 +1,52 @@
+{
+    "name": "Roachling Lord",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Neutral",
+    "size": "Small",
+    "hp": 63,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 25 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "roach",
+        "poison",
+        "stealth"
+    ],
+    "adjectives": [
+        "crafty",
+        "resourceful",
+        "unpleasant"
+    ],
+    "description": "The Roachling Lord is a small humanoid characterized by its agility and off-putting scent. It has a commendable Armor Class, making it relatively difficult to hit.",
+    "memorable": "Its immunity to diseases and the ability to evade detection make the Roachling Lord a unique and clever opponent.",
+    "goals": "To outmaneuver foes and leverage its stealth capabilities.",
+    "relations": "Related to other roach-like creatures, often encountered in groups.",
+    "environment": "Thrives in environments where stealth and cunning are crucial.",
+    "strengths": "Good at avoiding detection with high Stealth skill, and is immune to diseases.",
+    "weaknesses": "Disadvantage on Charisma checks when interacting with humanoids due to its unpleasant scent.",
+    "attacks": "Engages enemies using a multiattack with its Begrimed Shortsword and Begrimed Dart, inflicting both piercing and poison damage.",
+    "most_powerful_ability": "The Hardy ability grants full immunity to diseases and advantage on Constitution saving throws.",
+    "equipment": "Begrimed Shortsword, Begrimed Dart",
+    "senses": "Possesses darkvision up to 60 feet and tremorsense up to 10 feet, enabling effective navigation in low-light environments.",
+    "skills": "Proficient in Acrobatics and Stealth, with bonuses that enhance its ability to avoid detection.",
+    "additional_information": [
+        "Advantage on Constitution saving throws increases resilience.",
+        "Can negate its unpleasant scent temporarily with thorough bathing.",
+        "High Dexterity score provides adeptness in stealth.",
+        "Strategic skirmisher using agility to inflict damage without direct confrontation.",
+        "Uses poison damage in attacks, increasing lethality."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small humanoid with poison attacks",
+        "sneaky roach creature immune to disease",
+        "crafty monster skilled in stealth and acrobatics",
+        "poisonous creature that smells unpleasant",
+        "roach-like enemy in stealthy environment"
+    ]
+}

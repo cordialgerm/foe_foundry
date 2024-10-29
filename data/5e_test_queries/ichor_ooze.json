@@ -1,0 +1,25 @@
+{
+    "name": "Ichor Ooze",
+    "queries": [
+        {
+            "query": "medium ooze that can drain life and is immune to fire",
+            "variant": "medium ooze that can life drain and has fire immunity"
+        },
+        {
+            "query": "slow moving monster with low armor class and high strength",
+            "variant": "creature that moves slowly with bad armor class and high strength"
+        },
+        {
+            "query": "creature that can climb and has the ability to grapple",
+            "variant": "monster that can climb surfaces and has a grapple ability"
+        },
+        {
+            "query": "evil ooze with magical resistances and unique vendetta",
+            "variant": "evil ooze with resistances to magic and a special vendetta"
+        },
+        {
+            "query": "ooze with blindsight and resistance to poison damage",
+            "variant": "ooze that has blindsight and is resistant to poison damage"
+        }
+    ]
+}

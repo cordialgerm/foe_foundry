@@ -1,0 +1,53 @@
+{
+    "name": "Axe Beak",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 19,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "50 feet walk speed",
+    "role": "Skirmisher",
+    "tags": [
+        "bird",
+        "predator",
+        "mount",
+        "aggressive"
+    ],
+    "adjectives": [
+        "large",
+        "agile",
+        "ferocious",
+        "swift"
+    ],
+    "description": "The Axe Beak is a large, flightless bird with a sharp, axe-shaped beak and thick, coarse feathers. It stands taller than a human and possesses long, powerful legs.",
+    "memorable": "Its aggressive nature and deadly beak make it a formidable opponent, especially when attacking in groups.",
+    "goals": "Typically hunts for prey and can serve as a mount for tribes or raiders.",
+    "relations": "Often found in the company of tribes or raiders who utilize its speed in battle.",
+    "environment": "Commonly found in plains and savannahs.",
+    "strengths": "Notable for its high speed and the ability to deliver impactful attacks with its beak.",
+    "weaknesses": "Low armor class and hit points make it vulnerable in combat.",
+    "attacks": "Primarily utilizes its beak to deliver slashing damage in melee combat.",
+    "most_powerful_ability": "Evasive ability allows it to quickly disengage or dodge, enhancing its survivability.",
+    "senses": "Passive perception score of 10, indicating normal awareness in its environment.",
+    "skills": "No special skill proficiencies, but has an average Stealth score of 11.",
+    "additional_information": [
+        "Can be aggressive toward unfamiliar creatures.",
+        "Acts effectively as a group attacker.",
+        "Serves as a reliable mount for faster movement.",
+        "Known for its strong legs and swift movements.",
+        "Axe Beaks may retreat quickly using their tactical abilities."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large aggressive bird",
+        "fast bird predator",
+        "mount with sharp beak",
+        "swift combat bird",
+        "axe beak characteristics"
+    ]
+}

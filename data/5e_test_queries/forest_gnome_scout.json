@@ -1,0 +1,25 @@
+{
+    "name": "Forest Gnome Scout",
+    "queries": [
+        {
+            "query": "stealthy gnome with keen senses living in forests",
+            "variant": "gnome that is stealthy with keen senses residing in wooded areas"
+        },
+        {
+            "query": "medium humanoid skilled in ranged attacks and stealth in forest",
+            "variant": "medium-sized humanoid experienced in stealth and ranged combat within woods"
+        },
+        {
+            "query": "forest gnome that communicates with small beasts and uses illusion spells",
+            "variant": "gnome from the forest that can talk to tiny animals and casts illusions"
+        },
+        {
+            "query": "agile forest creature with low hit points and high dexterity",
+            "variant": "quick woodland being that has a low HP and high agility"
+        },
+        {
+            "query": "combatant that excels in surprise attacks in forest environments",
+            "variant": "fighter who is best at ambushes within wooded surroundings"
+        }
+    ]
+}

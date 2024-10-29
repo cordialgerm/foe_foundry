@@ -1,0 +1,52 @@
+{
+    "name": "Warhordling Orc Eye",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 32,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "support",
+    "tags": [
+        "orc",
+        "spellcaster",
+        "support"
+    ],
+    "adjectives": [
+        "aggressive",
+        "supportive",
+        "versatile"
+    ],
+    "description": "A medium humanoid with a strong presence on the battlefield, the Warhordling Orc Eye wields a mace and possesses cleric abilities that enhance its combat effectiveness.",
+    "memorable": "Combines aggressive melee abilities with potent spellcasting, providing healing and offensive capabilities.",
+    "goals": "Engage in combat while supporting allies with healing and spells.",
+    "relations": "May serve under stronger orc leaders or work with other humanoid allies.",
+    "environment": "Commonly found in battlefields or locations of conflict.",
+    "strengths": "Good Wisdom for healing and Insight skills, as well as effective spellcasting.",
+    "weaknesses": "Average Dexterity limits its agility in combat.",
+    "attacks": "Melee mace attack with added radiant damage from spell slots; ranged attacks like Guiding Bolt and Sacred Flame.",
+    "most_powerful_ability": "Spirit Guardians can control the battlefield and damage enemies within its radius.",
+    "equipment": "Mace for melee attacks.",
+    "senses": "Has blindsight up to 10 feet, allowing it to detect unseen foes nearby.",
+    "skills": "Outstanding in medicine and insight, aiding in both healing and battlefield awareness.",
+    "additional_information": [
+        "Aggressive Charge for closing distance to enemies.",
+        "5th-level spellcaster with a variety of clerical spells.",
+        "Can grant advantage on attacks against marked targets with Guiding Bolt.",
+        "Healing Word for quick, on-the-field healing of allies.",
+        "Spirit Guardians creates difficult terrain while dealing damage."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "5th-level cleric with spells focused on attack and support, including Healing Word, Spirit Guardians, and Dispel Magic.",
+    "test_queries": [
+        "orc spellcaster with healing abilities",
+        "humanoid with blindsight and aggressive tactics",
+        "support character that uses spirit guardians",
+        "creature with strong medicine and insight skills",
+        "orc that can cast guiding bolt and healing word"
+    ]
+}

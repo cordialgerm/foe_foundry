@@ -1,0 +1,25 @@
+{
+    "name": "Young Bronze Dragon",
+    "queries": [
+        {
+            "query": "large dragon with lightning breath that lives near water",
+            "variant": "big dragon that has lightning breath and resides close to bodies of water"
+        },
+        {
+            "query": "bronze-scaled dragon that helps sailors and fights pirates",
+            "variant": "bronze-colored dragon who assists sailors and combats pirates"
+        },
+        {
+            "query": "intelligent dragon known for amphibious abilities and protective nature",
+            "variant": "smart dragon famous for its ability to live in water and its guardian instincts"
+        },
+        {
+            "query": "dragon with strong physical attacks and magical lightning abilities",
+            "variant": "dragon featuring potent melee attacks and electric magic powers"
+        },
+        {
+            "query": "coastal dragon that can change shape and predict weather",
+            "variant": "shoreline dragon with shape-shifting powers and the ability to foresee weather"
+        }
+    ]
+}

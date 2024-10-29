@@ -1,0 +1,25 @@
+{
+    "name": "War Machine Golem",
+    "queries": [
+        {
+            "query": "gargantuan construct with high hit points and fire breath attack",
+            "variant": "gargantuan contruct with lots of hitpoints and a fire breath attack"
+        },
+        {
+            "query": "massive melee combatant with double damage to structures",
+            "variant": "huge melee fighter that does double damage to buildings"
+        },
+        {
+            "query": "battlefield threat immune to nonmagical attacks",
+            "variant": "combat enemy that is immune to nonmagical damage"
+        },
+        {
+            "query": "slow giant robot that can't be charmed or frightened",
+            "variant": "slow large robot that cannot be charmed or scared"
+        },
+        {
+            "query": "construct with magic resistance and slam attack",
+            "variant": "robot with resistence to magic and a slam attack"
+        }
+    ]
+}

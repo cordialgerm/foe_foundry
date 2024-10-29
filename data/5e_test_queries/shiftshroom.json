@@ -1,0 +1,25 @@
+{
+    "name": "Shiftshroom",
+    "queries": [
+        {
+            "query": "plant creature that can change appearance and frightens enemies",
+            "variant": "creature that is a plant and can change its look to scare foes"
+        },
+        {
+            "query": "Medium-sized unaligned plant that has a low Armor Class and blindsight",
+            "variant": "Medium plant creature with low AC and the ability to see in darkness"
+        },
+        {
+            "query": "monster with ability to instill fear and limited physical strength",
+            "variant": "creature that can scare opponents and has weak physical power"
+        },
+        {
+            "query": "Shiftshroom abilities involving shapechanging and condition immunities",
+            "variant": "abilities of Shiftshroom relating to changing shape and being immune to conditions"
+        },
+        {
+            "query": "blindsight plant that uses fear tactics to win battles",
+            "variant": "plant creature with blindsight that uses fear to fight against foes"
+        }
+    ]
+}

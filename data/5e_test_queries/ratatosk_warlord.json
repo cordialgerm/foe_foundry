@@ -1,0 +1,25 @@
+{
+    "name": "Ratatosk Warlord",
+    "queries": [
+        {
+            "query": "small celestial creature that commands its kin and excels in agility",
+            "variant": "small celestail monster that leads its kind and is very agile"
+        },
+        {
+            "query": "warlord that uses speed and tactics on the battlefield",
+            "variant": "battlefield leader that relies on quickness and strategy"
+        },
+        {
+            "query": "Ratatosk creature with psychic attacks that can ambush enemies",
+            "variant": "Ratatosk warlord with mind-based attacks that ambush foes"
+        },
+        {
+            "query": "celestial with high Dexterity known for impressive evasive maneuvers",
+            "variant": "celestial creature with great agility famous for dodging attacks"
+        },
+        {
+            "query": "tactical warlord with damage resistances to nonmagical attacks",
+            "variant": "strategic leader that has resistance against regular damage"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Floe Hag",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 135,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft., climb 20 ft., swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "hag",
+        "cold"
+    ],
+    "adjectives": [
+        "formidable",
+        "manipulative"
+    ],
+    "description": "The Floe Hag is a cunning fey with a strong presence, adaptable to both land and aquatic environments, showcasing notable physical prowess.",
+    "memorable": "Its ability to manipulate opponents through psychic damage and its capability to store enemies in an extradimensional pocket make it a unique challenge.",
+    "goals": "To manipulate and control, using its abilities to destabilize foes and gain the upper hand in confrontations.",
+    "relations": "Often encountered alongside other hags or fey creatures, and may serve as a master to aquatic monsters.",
+    "environment": "Cold, icy terrains and aquatic environments.",
+    "strengths": "Immunity to cold damage, amphibious capabilities, and versatile spellcasting.",
+    "weaknesses": "Average passive perception of 11 and relatively no specific awareness beyond its natural abilities.",
+    "attacks": "The Floe Hag can perform dual claw attacks dealing both slashing and cold damage, or it can unleash ice bolts from a distance, causing severe cold effects.",
+    "most_powerful_ability": "Distracting Knock allows the hag to incapacitate multiple foes, turning the tide of battle.",
+    "equipment": "Parka that can store creatures in an extradimensional pocket.",
+    "senses": "Passive perception of 11 is average, lacking any particularly acute senses.",
+    "skills": "It displays average capabilities in perception.",
+    "additional_information": [
+        "Can move across icy surfaces without penalties.",
+        "Can breathe both air and water, giving it versatility.",
+        "Utilizes strategic options in combat with multiattack capabilities.",
+        "Has both offensive spells and useful at-will spells.",
+        "Good physical stats make it a formidable foe in melee."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Can cast spells like fog cloud and sleep, in addition to at-will minor illusion and prestidigitation.",
+    "test_queries": [
+        "manipulative fey with ice abilities",
+        "hag that can swim and control cold",
+        "cold damage immune creature with extradimensional storage",
+        "ice-walking monster that uses psychic attacks",
+        "Floe Hag tactics in icy environments"
+    ]
+}

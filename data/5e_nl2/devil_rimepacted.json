@@ -1,0 +1,56 @@
+{
+    "name": "Rimepacted Devil",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. walking, 20 ft. burrowing through snow",
+    "role": null,
+    "tags": [
+        "fiend",
+        "devil",
+        "cold",
+        "melee",
+        "ranged"
+    ],
+    "adjectives": [
+        "lawful",
+        "evil",
+        "cold-based",
+        "menacing"
+    ],
+    "description": "The Rimepacted Devil is a Medium fiend with a fierce demeanor, wielding icy powers and a sturdy build. Its claws are sharp and imbued with cold energy, and its presence creates a swirling vortex of frigid wind around it.",
+    "memorable": "It can knock opponents prone with its icy winds and control the battlefield while being resistant to various types of damage.",
+    "goals": "To dominate foes in combat using its control over cold and ice, seeking to create hazardous environments.",
+    "relations": "Often encountered alongside other fiends or devils serving similar goals of chaos and malevolence.",
+    "environment": "Icy and cold regions, typically found in frigid landscapes or areas affected by magic.",
+    "strengths": "Immunities to cold, fire, and poison, as well as advantages on saving throws against magical effects.",
+    "weaknesses": "Average Dexterity makes it less effective in stealth and potentially exposed to ranged attacks.",
+    "attacks": "Uses slashing claws and frost-infused bolts to deal both slashing and cold damage, with some attacks hindering movement.",
+    "most_powerful_ability": "Freezing Smite unleashes a wave of cold energy, dealing significant cold damage and potentially restraining foes.",
+    "equipment": null,
+    "senses": "Possesses Devil's Sight, allowing it to see in magical darkness.",
+    "skills": "Has a passive Perception of 14, demonstrating reasonable awareness in its surroundings.",
+    "additional_information": [
+        "Can create a hazardous area with its Frigid Vortex ability.",
+        "Burrows through nonmagical snow and ice for mobility.",
+        "Effectively manages battlefield control with cold damage abilities.",
+        "Advantage on saving throws against spells enhances its survivability.",
+        "Powerful multiattack options, combining melee and ranged strikes."
+    ],
+    "damage_types": [
+        "cold",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "devil with icy powers and vortex",
+        "cold creature that manipulates ice and snow",
+        "fiend that creates freezing winds in battle",
+        "menacing devil that attacks with cold and claws",
+        "creature that burrows through snow and ice"
+    ]
+}

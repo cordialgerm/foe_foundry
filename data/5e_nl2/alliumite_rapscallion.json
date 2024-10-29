@@ -1,0 +1,50 @@
+{
+    "name": "Alliumite, Rapscallion",
+    "creature_type": "Plant",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 38,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walk, 20 ft. burrow, 20 ft. swim",
+    "role": "Skirmisher",
+    "tags": [
+        "plant",
+        "chaotic",
+        "cunning"
+    ],
+    "adjectives": [
+        "sneaky",
+        "deceptive",
+        "versatile"
+    ],
+    "description": "The Alliumite, or Rapscallion, is a small, cunning plant creature with a vibrant appearance and a knack for evasion and manipulation. It has a dexterous form, allowing it to maneuver adeptly in its surroundings.",
+    "memorable": "Its ability to blind enemies with its Tearful Stench and its capacity for psychological manipulation through insults make it a notably tricky opponent.",
+    "goals": "The Rapscallion typically seeks to confuse and control its foes, using its unique abilities in combat and social interactions.",
+    "relations": "Related to other plant creatures and may serve as a trickster in natural settings.",
+    "environment": "Commonly found in areas rich with plant life, ideally in forests or jungles.",
+    "strengths": "High dexterity and charisma allow for impressive stealth and manipulation in combat situations.",
+    "weaknesses": "Low strength makes physical attacks ineffective, and its low intelligence may limit strategic options.",
+    "attacks": "Utilizes Thorny Rapiers for piercing and slashing damage, as well as a Grapplevine Whip for longer-range attacks and disarming opponents.",
+    "most_powerful_ability": "The Pungent Retort can incapacitate spellcasters and hinder foes through psychological means, allowing the Rapscallion to control the battlefield.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dim light conditions.",
+    "skills": "Has a proficiency in perception, allowing it to notice hidden threats effectively.",
+    "additional_information": [
+        "Plant Camouflage grants advantage on Stealth checks in plant-rich environments.",
+        "The Tearful Stench can blind nearby foes when the Rapscallion takes damage.",
+        "Grapplevine Escape enables it to reposition quickly without provoking opportunity attacks.",
+        "Multiattack capability allows for versatile offensive strategies in combat.",
+        "Charm and charisma make it effective in social situations."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic plant creature",
+        "cunning plant monster",
+        "stealthy monster with blinding abilities",
+        "trickster plant in forests",
+        "creature that manipulates foes"
+    ]
+}

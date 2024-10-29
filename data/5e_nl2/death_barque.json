@@ -1,0 +1,53 @@
+{
+    "name": "Death Barque",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Gargantuan",
+    "hp": 198,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "swim 50 ft., unable to walk",
+    "role": null,
+    "tags": [
+        "undead",
+        "gargantuan",
+        "aquatic"
+    ],
+    "adjectives": [
+        "formidable",
+        "terrifying",
+        "undead"
+    ],
+    "description": "A massive and terrifying undead entity resembling a skeletal ship, the Death Barque is a harbinger of death in aquatic environments, marked by its dark, bone-like structure.",
+    "memorable": "Its ability to unleash a devastating Necrotic Breath attack and high resistance to magical effects make it a fearsome adversary.",
+    "goals": "To instill fear and destruction in watery domains, serving as a powerful adversary for adventurers.",
+    "relations": "Associated with other undead creatures or marine monsters, often encountered in haunted waters.",
+    "environment": "Primarily found in underwater or aquatic locales.",
+    "strengths": "Immunities to necrotic and poison damage, and advantages on saving throws against turning effects.",
+    "weaknesses": "Low intelligence and charisma limit its effectiveness in social or intellectual encounters.",
+    "attacks": "Multiattack consisting of a bite and two tail smashes, both capable of causing significant damage and battlefield control.",
+    "most_powerful_ability": "Necrotic Breath attack, dealing substantial necrotic damage in a wide cone.",
+    "equipment": null,
+    "senses": "Possesses a high passive perception of 16, indicating keen awareness in combat.",
+    "skills": "Skilled in stealth and perception, enhancing its ability to ambush unsuspecting targets.",
+    "additional_information": [
+        "Can deal double damage to objects and structures due to Siege Monster ability.",
+        "Has Magic Resistance, gaining advantage on saving throws against spells.",
+        "Immutable Form ability prevents alteration of its form by spells or effects.",
+        "Shrapnel Burst attack inflicts piercing damage and can blind opponents.",
+        "Turn Resistance makes it resilient against attempts to turn undead."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "terrifying aquatic undead creature",
+        "gargantuan monster that swims and attacks",
+        "necrotic breathing undead ship monster",
+        "undead with high magical resistance",
+        "creature that inflicts blindness and necrotic damage"
+    ]
+}

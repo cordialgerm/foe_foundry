@@ -1,0 +1,54 @@
+{
+    "name": "Korrigan",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 66,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "chaotic",
+        "magical"
+    ],
+    "adjectives": [
+        "small",
+        "whimsical",
+        "chaotic",
+        "crafty",
+        "enchanting"
+    ],
+    "description": "The Korrigan is a small fey creature characterized by its whimsical yet unpredictable nature.",
+    "memorable": "The Korrigan's enchanting revels can charm multiple enemies, incapacitating them while it engages in combat.",
+    "goals": "The Korrigan enjoys causing chaos and enchanting others during its performances.",
+    "relations": "Korrigans may be encountered alongside other fey creatures or in areas resonating with magic.",
+    "environment": "Often found in enchanted forests or places filled with magical energy.",
+    "strengths": "Possesses high dexterity and charisma, allowing for agile maneuvers and effective spellcasting.",
+    "weaknesses": "Average strength and intellect, making it less effective in direct combat or strategic planning.",
+    "attacks": "Utilizes a dagger for melee or ranged attacks, dealing piercing damage, and shows a powerful Deadly Breath attack that causes poison damage.",
+    "most_powerful_ability": "Enchanting Revels, allowing it to charm multiple humanoids with a captivating performance.",
+    "equipment": "dagger",
+    "senses": "The Korrigan has darkvision, enabling it to see in dim light.",
+    "skills": "Proficient in acrobatics and performance, allowing it to perform agile movements and captivating performances.",
+    "additional_information": [
+        "Immunity to being charmed and exhaustion.",
+        "Ungodly Resistance grants advantage on saving throws against cleric or paladin spells.",
+        "Innate spellcasting allows casting of charm person, enthrall, hideous laughter, and misty step without material components.",
+        "Can teleport short distances with Catch Me If You Can reaction.",
+        "Capable of causing significant damage with Deadly Breath attack."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting based on Charisma with spells like charm person and misty step.",
+    "test_queries": [
+        "small fey creature with deadly breath",
+        "whimsical creature that charms enemies",
+        "magical dancer that causes chaos",
+        "crafty fey known for enchantments",
+        "Korrigan charmer in forest"
+    ]
+}

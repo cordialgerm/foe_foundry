@@ -1,0 +1,52 @@
+{
+    "name": "Bloatblossom",
+    "creature_type": "Plant",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "20 ft. slow movement",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "poisonous",
+        "predator"
+    ],
+    "adjectives": [
+        "toxic",
+        "resilient",
+        "predatory"
+    ],
+    "description": "The Bloatblossom is a Medium plant creature characterized by its robust physical attributes and unique toxic abilities. It lacks cognitive and social prowess, having notably low Intelligence, Wisdom, and Charisma.",
+    "memorable": "Its ability to inflict poison with multiple attacks and resist debilitating conditions makes it a formidable opponent.",
+    "goals": "To infect humanoids with apocalyptic fungus and to survive combat through its resistances.",
+    "relations": "It may be encountered in conjunction with other plant creatures or in corrupted natural environments.",
+    "environment": "Often found in places overrun by poisonous flora or in dark, damp settings where its predatory nature can thrive.",
+    "strengths": "Resistance to exhaustion and immunity to paralysis, petrification, and unconsciousness enhances its durability in battle.",
+    "weaknesses": "Lacks high mental attributes, making it less effective in social situations and problem-solving.",
+    "attacks": "Can make a Bite attack inflicting piercing and poison damage, a Slam attack dealing bludgeoning and poison damage, or a ranged Toxic Nodule attack that delivers poison damage and potential poisoning.",
+    "most_powerful_ability": "Instinct to Pursue allows it to Dash toward uninfected humanoids, showcasing its predatory instincts.",
+    "equipment": "null",
+    "senses": "Keen sense within a 60-foot radius grants heightened auditory perception but limits its overall awareness.",
+    "skills": "Perception of 16 when relying on hearing, showcasing its acute listening skills.",
+    "additional_information": [
+        "Can grapple targets smaller than it with its Slam attack.",
+        "Plants can often be resistant to physical harm, adding to its durability.",
+        "The creature's attacks can significantly debilitate opponents through poison effects.",
+        "Its slow speed limits its ability to reposition quickly in combat.",
+        "The creature's presence adds an element of danger due to potential infection."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "toxic plant monster",
+        "poisonous creature",
+        "plant creature with resilience",
+        "bloatblossom abilities",
+        "predatory poisonous plant"
+    ]
+}

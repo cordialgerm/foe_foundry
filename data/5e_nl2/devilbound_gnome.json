@@ -1,0 +1,53 @@
+{
+    "name": "Devilbound Gnome",
+    "creature_type": "Humanoid",
+    "alignment": "Any Evil",
+    "size": "Small",
+    "hp": 104,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 25 ft.",
+    "role": "null",
+    "tags": [
+        "gnome",
+        "fiend",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "cunning",
+        "fiendish",
+        "powerful"
+    ],
+    "description": "The Devilbound Gnome is a cunning small humanoid that embodies gnome ingenuity and fiendish malice, often seen with gleaming eyes and an air of dark mischief.",
+    "memorable": "It can summon devils to the battlefield and possesses the ability to send creatures hurtling through Hell.",
+    "goals": "Manipulate and control others, often operating on the darker edges of morality.",
+    "relations": "Often has an imp bound to it as an ally, and can command devils during battle.",
+    "environment": "Typically found in evil-aligned or fiendish settings.",
+    "strengths": "Impressive Charisma and spellcasting abilities, high resistances to various damage types.",
+    "weaknesses": "Vulnerable to silvered weapons and has lower physical strength.",
+    "attacks": "Uses Hellish Blast for fire and poison damage, calls devils with Hell's Servitors, and has a powerful ability to incapacitate foes.",
+    "most_powerful_ability": "The ability to send creatures into Hell with To Hell and Back, causing substantial damage or incapacitation.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in dim light up to 60 feet.",
+    "skills": "Highly skilled in Arcana, Deception, History, and Persuasion, showcasing its cunning nature.",
+    "additional_information": [
+        "Has Magic Resistance, making it hard to affect with magical attacks.",
+        "Uses Infernal Blessing to enhance its survivability.",
+        "Can communicate telepathically with its imp across planes.",
+        "Sacrifices fiends to preserve its own life in combat.",
+        "Formidable foe with significant combat and manipulation capabilities."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": "Casts various spells like command, dimension door, and wall of fire, using Charisma as its spellcasting ability.",
+    "test_queries": [
+        "cunning small humanoid with fiendish powers",
+        "gnome that can summon devils",
+        "powerful gnome skilled in manipulation",
+        "dark gnome able to send creatures to Hell",
+        "fiendbound gnome with fire and poison attacks"
+    ]
+}

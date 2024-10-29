@@ -1,0 +1,25 @@
+{
+    "name": "Fulad-Zereh",
+    "queries": [
+        {
+            "query": "huge demon fiend from the Abyss with powerful petrification ability",
+            "variant": "demon fiend from the Abyss that is huge and has petrifying powers"
+        },
+        {
+            "query": "chaotic evil monster with truesight and acid damage abilities",
+            "variant": "evil chaotic creature that has truesight and deals acid damage"
+        },
+        {
+            "query": "tough demon with high armor class and multiple attack options",
+            "variant": "strong demon that has a high AC and can make multiple attacks"
+        },
+        {
+            "query": "fiend that uses Weeping Acid and has high Constitution",
+            "variant": "fiend with high Constitution and utilizes Weeping Acid ability"
+        },
+        {
+            "query": "battlefield-controlling creature with petrifying gaze and high hit points",
+            "variant": "creature with high HP that controls the battlefield using petrifying gaze"
+        }
+    ]
+}

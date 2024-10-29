@@ -1,6 +1,8 @@
 <MonsterName/>Monolith Footman</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Monolith Footman is a formidable large construct that serves as an intimidating presence on the battlefield. With its solid defenses, including natural armor, and a substantial pool of hit points, it can absorb a good amount of damage before being taken down. It possesses the ability to deal significant melee damage through its weapon attacks, which are enhanced with magical properties. The Monolith Footman is particularly resilient against various damage types, being immune to poison and psychic damage, and it also has resistances to nonmagical attacks, provided they are not made with adamantine weapons. However, while it boasts a powerful attack and is hard to put down, the construct does have limitations in terms of intelligence and charisma, rendering it less effective in situations requiring complex decision-making or social interactions. It can be a challenging opponent in combat, with unique abilities that can control the battlefield, especially when fighting in areas influenced by fey magic.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Monolith Footman can make two attacks with a Shortsword
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Monolith Footman
 
 *Large* *Construct* *Neutral*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 
 - **Multiattack:** The footman makes two Shortsword attacks.
 - **Shortsword:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage plus 4 (1d8) cold damage or fire damage (the footman’s choice). If the target is within a fey court or castle, the target must succeed on a DC 12 Charisma saving throw or become invisible, silent, and paralyzed for 1 minute, while an illusory version of the target under the footman’s control remains visible and audible. The illusion shouts to the target’s allies for a retreat or similar action. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself and destroying the illusory double on a success.
+</statblock>
 
 

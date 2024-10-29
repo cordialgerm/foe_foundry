@@ -1,0 +1,53 @@
+{
+    "name": "Skeleton Horde",
+    "creature_type": "Undead",
+    "alignment": null,
+    "size": "Large",
+    "hp": 65,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "horde",
+        "skeleton",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "flexible"
+    ],
+    "description": "The Skeleton Horde is a large, menacing collection of animated bones capable of attacking both from melee and ranged distances, equipped with a shortsword and a shortbow.",
+    "memorable": "Its ability to deal substantial piercing damage with coordinated attacks makes it a significant threat, especially considering its damage immunity to poison.",
+    "goals": "To overwhelm enemies with numbers and tactical strikes.",
+    "relations": "Often found in the company of other undead or necromancers.",
+    "environment": "Typically found in graveyards, ruins, or places of death.",
+    "strengths": "Damage immunity to poison and condition immunities to fatigue and poisoned states.",
+    "weaknesses": "Vulnerability to bludgeoning damage.",
+    "attacks": "Utilizes a shortsword for close combat and a shortbow for ranged assaults, both capable of delivering devastating piercing damage.",
+    "most_powerful_ability": "Its impressive dual capability of melee and ranged attacks allows it to adapt to various combat scenarios.",
+    "equipment": "Shortsword and shortbow.",
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Does not require air, sustenance, or sleep.",
+        "Uses coordinated attacks to maximize damage output.",
+        "Can halve damage dealt when bloodied.",
+        "Possesses a decent Dexterity, enhancing its ranged capabilities.",
+        "Average Constitution contributes to its durability."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "zombie horde that deals piercing damage",
+        "undead creature that is resistant to poison",
+        "large skeleton that can attack from a distance",
+        "horde of undead with blunt damage weakness",
+        "animated bones that don't require sustenance"
+    ]
+}

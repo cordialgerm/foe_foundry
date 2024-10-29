@@ -1,6 +1,8 @@
 <MonsterName/>Div</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>17 (half plate)</AC>
+<HP/>99</HP>
 <summary>The Div is a Small Elemental creature characterized by its neutral evil alignment. This monster serves as a formidable antagonist due to its impressive offensive and defensive capabilities. With an Armor Class of 17, the Div is well-protected and can endure considerable damage, boasting a total of 99 hit points which is derived from 18d6 + 36. The Div moves with a moderate walking speed of 30 feet and has a challenge rating of 5, making it a notable threat for adventurers who encounter it. The creature exhibits strengths in physical attacks and spellcasting, although it does have a vulnerability when exposed to direct sunlight, which gives it disadvantage on attacks and Perception checks that rely on sight. The Div's abilities and skills, such as its strong Strength and decent Charisma, position it well in both combat and social interactions, enabling it to face opponents strategically while also leveraging its spellcasting prowess.</summary>
 
 <detail>
@@ -28,6 +30,7 @@ Lastly, the Div has access to some powerful spellcasting abilities, with Charism
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Div
 
 *Small* *Elemental* *neutral evil*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 14) no material components: At will: disguise self minor illusion3/day ea: charm person suggestion1/day ea: dream fear
 
 
+</statblock>
 
 

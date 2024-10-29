@@ -1,0 +1,55 @@
+{
+    "name": "Star Drake",
+    "creature_type": "Dragon",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 189,
+    "ac": 19,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 100 ft. fly 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "magical",
+        "resilient",
+        "combatant"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "intelligent",
+        "perceptive"
+    ],
+    "description": "The Star Drake is a large dragon with a mix of physical power and magical abilities, exhibiting impressive speed on foot and in flight.",
+    "memorable": "Its magical attacks and overwhelming effects can incapacitate foes, while its damage immunities make it a tough opponent.",
+    "goals": "Typically seeks to dominate battles using its magical and physical prowess.",
+    "relations": "Related to other dragons, often found in magical realms or celestial planes.",
+    "environment": "Often found in magical landscapes or areas infused with celestial energy.",
+    "strengths": "Immunities to cold, fire, and nonmagical damage; exceptional Wisdom granting high insight and perception.",
+    "weaknesses": null,
+    "attacks": "The drake combines melee and ranged attacks, utilizing a powerful bite, claw strikes, and a formidable blast of radiant and force damage.",
+    "most_powerful_ability": "Plane-Altered Breath, releasing a devastating breath attack that deals high force damage in a wide cone.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet and a passive perception of 22, giving it an extraordinary awareness of its surroundings.",
+    "skills": "Proficient in Arcana, History, Insight, Perception, and Religion, showing a range of knowledge.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against magical effects.",
+        "Nimbus of Swirling Stars incapacitates creatures nearby at the start of its turn.",
+        "Planar Weapons ability enhances its weapon attacks with additional force damage.",
+        "Can teleport to different planes of existence with Planar Traveler.",
+        "Searing Star attacks can blind targets, reducing their effectiveness."
+    ],
+    "damage_types": [
+        "force",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon with magical abilities",
+        "dragon that can teleport between planes",
+        "creature with force damage breath attack",
+        "flying drake with stunning aura",
+        "dragon immune to nonmagical attacks"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Cikavak",
+    "queries": [
+        {
+            "query": "tiny fey creature that communicates telepathically and uses silence in battle",
+            "variant": "tiny fey that uses telepathy to communicate and silence attacks"
+        },
+        {
+            "query": "mischievous fey with high dexterity and the ability to speak with beasts",
+            "variant": "clever fey creature with good dexterity and can talk to animals"
+        },
+        {
+            "query": "fragile looking fey that excels in stealth and has magical abilities",
+            "variant": "delicate fey that is good at stealth and uses magic"
+        },
+        {
+            "query": "agile creature that resists poison and employs silent tactics",
+            "variant": "nimble creature knowing about poison resistance and silent strategies"
+        },
+        {
+            "query": "small fey who can render enemies deaf and evade attacks",
+            "variant": "little fey that can make foes deaf and escape incoming attacks"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Redcap",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 120,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "40 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "fey",
+        "bloodthirsty",
+        "combatant"
+    ],
+    "adjectives": [
+        "malevolent",
+        "ruthless",
+        "tough"
+    ],
+    "description": "A malevolent fey creature with a cap soaked in blood, known for its insatiable thirst for blood.",
+    "memorable": "It requires the blood of humanoids to sustain its life, leading to unique vulnerabilities.",
+    "goals": "To cause harm and spread fear while maintaining its bloody cap.",
+    "relations": "May associate with other bloodthirsty creatures or fey, potentially encountered with other fey entities.",
+    "environment": "Typically found in forests or dark places where it can ambush unsuspecting victims.",
+    "strengths": "High Strength and Constitution, allowing it to deal significant damage and absorb hits.",
+    "weaknesses": "Dependent on soaking its cap in blood; neglecting this can lead to exhaustion and death.",
+    "attacks": "Utilizes a multiattack featuring a bleeding bite that can cause ongoing damage and pike attacks.",
+    "most_powerful_ability": "Its ability to inflict a bleeding effect, requiring foes to take extra damage over time.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Athletics and Intimidation, making it effective in physical confrontations and imposing fear.",
+    "additional_information": [
+        "Condition immunities to charmed and frightened",
+        "Resistance to nonmagical bludgeoning, piercing, and slashing damage",
+        "Requires blood from humanoids to avoid exhaustion",
+        "Moves quickly in combat and has a high strength score",
+        "Low Charisma reflects its intimidating nature"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fey creature needing blood to survive",
+        "malevolent creature with a blood-soaked cap",
+        "dangerous monster that inflicts bleeding",
+        "ruthless fey known for its bite attacks",
+        "redcap tactics and abilities in combat"
+    ]
+}

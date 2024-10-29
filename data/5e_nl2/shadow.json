@@ -1,0 +1,52 @@
+{
+    "name": "Shadow",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 16,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "40 feet, climbs 20 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "stealth",
+        "ambush"
+    ],
+    "adjectives": [
+        "shadowy",
+        "cunning",
+        "malevolent"
+    ],
+    "description": "A shadowy figure formed from darkness and negative energy, resembling a humanoid silhouette but insubstantial and chilling. It often lurks in dark corners, ready to strike at the living.",
+    "memorable": "Shadows can drain the strength of their victims, potentially creating new shadows from the fallen.",
+    "goals": "To consume the life force of the living, often stalking its prey before striking.",
+    "relations": "Often found in the company of other undead, or lurking in places tainted by dark magic.",
+    "environment": "Deep shadows, crypts, and other dark or dimly lit areas.",
+    "strengths": "High Dexterity enhances stealth and mobility; can move through tight spaces effortlessly.",
+    "weaknesses": "Disadvantage on actions while in sunlight; vulnerable to radiant damage.",
+    "attacks": "Strength Drain: deals necrotic damage and reduces the target's Strength score.",
+    "most_powerful_ability": "Amorphous: can slip through tight spaces without squeezing.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet.",
+    "skills": "Excels in stealth with a +4 modifier, making it an effective ambusher.",
+    "additional_information": [
+        "Immunities to necrotic and poison damage.",
+        "Can become a new shadow from cursed victims.",
+        "Undead nature, requiring no food or sleep.",
+        "Can blend into shadows, using stealth to evade detection.",
+        "Resistant to many damage types, including acid and fire."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that lurks in darkness",
+        "shadowy figure that drains strength",
+        "creature that thrives in dim light",
+        "stealthy undead that moves through walls",
+        "ambush monster from the shadows"
+    ]
+}

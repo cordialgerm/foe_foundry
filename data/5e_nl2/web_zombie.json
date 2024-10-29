@@ -1,0 +1,52 @@
+{
+    "name": "Web Zombie",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 8,
+    "srd": false,
+    "cr": "1",
+    "movement": "climb 30 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "climbing",
+        "necrotic"
+    ],
+    "adjectives": [
+        "creepy",
+        "entangling",
+        "unstable"
+    ],
+    "description": "The Web Zombie is a medium undead creature with a decaying, grotesque appearance that reflects its corrupt nature. It has the ability to climb vertical surfaces like a spider and can move freely through webs without becoming ensnared.",
+    "memorable": "Its ability to cling to ceilings and attack targets with necrotic-infused melee strikes makes it a terrifying and adaptable opponent.",
+    "goals": "To ambush and ensnare living creatures, using its necrotic attacks to weaken them.",
+    "relations": "Often found alongside other undead creatures, especially in areas with abundant webbing or ruins.",
+    "environment": "Dungeons, ruins, or locations where undead gather, often in the presence of arachnids.",
+    "strengths": "Necrotic damage enhancement on melee attacks and the ability to potentially survive lethal blows make it a persistent threat.",
+    "weaknesses": "Low Dexterity and low Armor Class make it vulnerable to attacks if it can't utilize its mobility effectively.",
+    "attacks": "The Web Zombie performs multiattack with slam attacks that can restrain targets, making it a danger in close quarters.",
+    "most_powerful_ability": "Undead Fortitude allows it to continue fighting after being reduced to 0 hit points, unless hit with radiant damage.",
+    "equipment": null,
+    "senses": "Darkvision allows it to see in dim light as if it were bright light, though its passive Perception is below average.",
+    "skills": null,
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition.",
+        "Can ignore webbing constraints due to Web Walker ability.",
+        "May climb walls and ceilings effortlessly with Spider Climb ability.",
+        "Necrotic Weapons ability adds extra damage, increasing its lethality.",
+        "Ability to restrain targets using its slam attacks."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that climbs walls",
+        "creepy zombie with necrotic attacks",
+        "zombie that restrains targets in webbing",
+        "undead that moves freely through webs",
+        "creature with undead fortitude ability"
+    ]
+}

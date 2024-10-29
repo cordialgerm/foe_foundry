@@ -1,0 +1,53 @@
+{
+    "name": "Venomous Mummy",
+    "creature_type": "Undead",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 11,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "poison",
+        "curse",
+        "mummy"
+    ],
+    "adjectives": [
+        "venomous",
+        "dangerous",
+        "cursed"
+    ],
+    "description": "The Venomous Mummy is a medium undead creature wrapped in tattered, venom-soaked bandages, exuding a toxic presence.",
+    "memorable": "Its ability to unleash poisonous smoke upon taking fire damage, and its curse mechanism which can potentially kill over time, make it a terrifying opponent.",
+    "goals": "To curse and poison adventurers who disturb its rest.",
+    "relations": "Often found guarding ancient tombs or ruins, potentially allied with other undead.",
+    "environment": "Tombs, ancient ruins, or cursed burial grounds.",
+    "strengths": "Immune to necrotic and poison damage, resistant to nonmagical physical attacks, and several conditions.",
+    "weaknesses": "Vulnerable to fire damage.",
+    "attacks": "Uses its Venomous Fist to deal significant bludgeoning and poison damage, with a chance to curse the target.",
+    "most_powerful_ability": "Toxic Smoke that creates a poisonous area, affecting multiple creatures and obscuring vision.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immunity to conditions like charmed and frightened.",
+        "Does not require air, food, drink, or sleep.",
+        "Toxic smoke lingers and expands when damaged by fire.",
+        "Venom-soaked wraps cause poison damage upon contact.",
+        "Cursed targets must make Constitution saves daily or face diminishing strength."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "poisonous mummy that curses enemies",
+        "undead creature with toxic smoke ability",
+        "mummy that deals poison damage in combat",
+        "creature wrapped in venom-soaked bandages",
+        "monster immune to necrotic and poison"
+    ]
+}

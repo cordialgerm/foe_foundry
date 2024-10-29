@@ -1,0 +1,50 @@
+{
+    "name": "Yeti",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 68,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "40 ft. walking, 40 ft. climbing",
+    "role": "Ambusher",
+    "tags": [
+        "snow",
+        "cold",
+        "monster"
+    ],
+    "adjectives": [
+        "large",
+        "powerful",
+        "charismatic"
+    ],
+    "description": "A large, white-furred creature adapted to snowy environments, the Yeti is strong and has a commanding presence.",
+    "memorable": "Its Chilling Gaze can paralyze foes, making it a formidable predator in its icy habitat.",
+    "goals": "The Yeti hunts in cold climates, using its camouflage and ambush tactics to capture prey.",
+    "relations": "Often encountered alongside other cold-related creatures in mountainous or snowy regions.",
+    "environment": "Primarily found in snowy, mountainous areas.",
+    "strengths": "Immune to cold damage and has a powerful gaze attack that can paralyze enemies.",
+    "weaknesses": "Vulnerable to fire damage, which rattles it, reducing its effectiveness in combat.",
+    "attacks": "Utilizes claw attacks that deal slashing damage and a gaze attack that inflicts paralysis and cold damage.",
+    "most_powerful_ability": "Chilling Gaze, causing paralysis and cold damage to unsuspecting foes.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception of 13, indicating decent awareness of its surroundings.",
+    "skills": "Excels in Perception and Stealth, making it an effective ambusher in its snowy environment.",
+    "additional_information": [
+        "Has advantage on Stealth checks in snowy terrain due to Camouflage.",
+        "Vision is unaffected by harsh weather, thanks to Storm Sight.",
+        "Possesses a strong physical build with high Strength.",
+        "Charismatic nature aids in social interactions despite low Intelligence.",
+        "Can easily traverse both snowy ground and vertical surfaces."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large snow monster with paralyzing gaze",
+        "white-furred creature that excels in icy environments",
+        "ambush predator that is immune to cold",
+        "Yeti tactics in snowy terrain",
+        "monster with fire vulnerability and camouflage"
+    ]
+}

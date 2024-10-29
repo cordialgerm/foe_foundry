@@ -1,0 +1,25 @@
+{
+    "name": "Ogrekin",
+    "queries": [
+        {
+            "query": "medium humanoid with giant build and high strength",
+            "variant": "humanoid creature with medium size and strong build"
+        },
+        {
+            "query": "ogrekin combat abilities and damage output",
+            "variant": "combat actions and damage potential of ogrekin"
+        },
+        {
+            "query": "Ogrekin environment and resilience in battle",
+            "variant": "where do ogrekin live and their toughness in fights"
+        },
+        {
+            "query": "strong melee attacker that can throw weapons",
+            "variant": "powerful melee fighter capable of ranged attacks"
+        },
+        {
+            "query": "creature with darkvision and melee combat skills",
+            "variant": "monster with ability to see in darkness and strong physical skills"
+        }
+    ]
+}

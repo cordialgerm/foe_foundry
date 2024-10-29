@@ -1,0 +1,25 @@
+{
+    "name": "Alazai",
+    "queries": [
+        {
+            "query": "large fire elemental that is chaotic and can turn invisible",
+            "variant": "chaotic fire elemental that is large and can become invisible"
+        },
+        {
+            "query": "elemental creature immune to fire with high hit points",
+            "variant": "creature immune to fire that has high hit points and is elemental"
+        },
+        {
+            "query": "monster with high strength and damaging fire attacks",
+            "variant": "creature with strong strength and powerful fire attacks"
+        },
+        {
+            "query": "invisible elemental that hates cold iron weapons",
+            "variant": "elemental that remains invisible and is vulnerable to cold iron weapons"
+        },
+        {
+            "query": "chaotic neutral being that deals fire damage in melee and range",
+            "variant": "neutral chaotic creature that inflicts fire damage both melee and range"
+        }
+    ]
+}

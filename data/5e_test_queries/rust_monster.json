@@ -1,0 +1,25 @@
+{
+    "name": "Rust Monster",
+    "queries": [
+        {
+            "query": "metal-eating insect-like creature that rusts armor and weapons",
+            "variant": "insect-like monster that eats metal and rusts weapons and armor"
+        },
+        {
+            "query": "creature that lives in caverns and destroys metal equipment",
+            "variant": "monster found in ruins that can destroy metallic equipment"
+        },
+        {
+            "query": "scavenger that rusts weapons and has a piercing bite attack",
+            "variant": "weapons rusting creature with a bite attack"
+        },
+        {
+            "query": "monstrosity that can smell metal and corrodes armor",
+            "variant": "armor corroding monstrosity that smells metal"
+        },
+        {
+            "query": "dangerous creature in forges that destroys nonmagical metal",
+            "variant": "creature found in forges that can destroy metal items"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Champion Warrior",
+    "queries": [
+        {
+            "query": "humanoid melee fighter with high strength and agility",
+            "variant": "melee fighter humanoid with high agility and strength"
+        },
+        {
+            "query": "strong warrior that uses a greataxe and excels in physical combat",
+            "variant": "warrior that excels in physical combat and uses a greataxe with strength"
+        },
+        {
+            "query": "Champion Warrior that attacks multiple times and has high Dexterity",
+            "variant": "multiple attack Champion Warrior with high dexterity"
+        },
+        {
+            "query": "combat-focused humanoid with exceptional athletics and stealth skills",
+            "variant": "humanoid focused on combat with exceptional stealth and athletics"
+        },
+        {
+            "query": "medium humanoid with 90 hit points and powerful melee attacks",
+            "variant": "humanoid medium with 90 hit points and strong melee attacks"
+        }
+    ]
+}

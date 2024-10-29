@@ -1,6 +1,8 @@
 <MonsterName/>Horde Demon Band</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>13</CR>
+<AC/>13</AC>
+<HP/>260</HP>
 <summary>The Horde Demon Band is a large fiendish entity characterized by its malevolent nature and chaotic evil alignment. It possesses formidable strength and endurance, making it a significant threat in combat, particularly through its ability to attack as a collective unit. The creature averages 260 hit points, making it exceptionally durable. Its defense is marked by a moderate armor class of 13, which affords it some protection against attacks. While the band is resilient, it has vulnerability to area effects, which can double the damage it takes, making strategy important when facing this creature. The band can disperse into additional demons when brought to 0 hit points, potentially prolonging combat. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ In terms of actions, the band has the following:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Horde Demon Band
 
 *Large* *Fiend*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Mob Attack:** Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 50 (10d6 + 15) slashing damage  or half damage if the band is bloodied.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Ogre, Cunning Artisan",
+    "queries": [
+        {
+            "query": "cunning giant with magical abilities that curses items",
+            "variant": "giant ogre that curses magic items and has magical powers"
+        },
+        {
+            "query": "large neutral evil ogre with high intelligence and darkvision",
+            "variant": "evil giant ogre with darkvision and unexpected intelligence"
+        },
+        {
+            "query": "ogre that can activate magic items and deals force damage",
+            "variant": "cunning ogre that activates magical items and does extra force damage"
+        },
+        {
+            "query": "large creature with a high challenge rating and arcane weaponry",
+            "variant": "big giant with magical weapon attacks and a significant challenge rating"
+        },
+        {
+            "query": "giant with average dexterity and enhanced combat abilities",
+            "variant": "ogre with poor nimbleness but strong combat skills"
+        }
+    ]
+}

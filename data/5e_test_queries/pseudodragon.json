@@ -1,0 +1,25 @@
+{
+    "name": "Pseudodragon",
+    "queries": [
+        {
+            "query": "tiny dragon with magical abilities and keen senses",
+            "variant": "tiny dragn with magic abilities and keen senses"
+        },
+        {
+            "query": "small dragon-like creature that can deliver a venomous sting",
+            "variant": "small dragn like creature that delivrs a venomous sting"
+        },
+        {
+            "query": "magical companion that communicates telepathically and flies",
+            "variant": "magic companion that can communicate telepathically and does fly"
+        },
+        {
+            "query": "playful dragon that is protective and has poor strength",
+            "variant": "playful dragn that is very protective and has bad strength"
+        },
+        {
+            "query": "dragon that lives low-light environments and has telepathy",
+            "variant": "dragon that resides in low light environments and can use telepathy"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Young Red Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 178,
+    "ac": 18,
+    "srd": true,
+    "cr": "10",
+    "movement": "40 ft., climb 40 ft., fly 80 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "fire",
+        "predator",
+        "flying"
+    ],
+    "adjectives": [
+        "fiery",
+        "ambitious",
+        "greedy",
+        "intimidating"
+    ],
+    "description": "A Young Red Dragon has deep crimson scales that shimmer with heat, reflecting its fiery nature and arrogance.",
+    "memorable": "Its powerful Fire Breath and ability to control the battlefield with ongoing fire damage make it a formidable threat.",
+    "goals": "The Young Red Dragon seeks wealth and power, asserting dominance over weaker creatures.",
+    "relations": "Young Red Dragons may be found hoarding treasures, often dominating their surroundings.",
+    "environment": "Typically found in volcanic regions or mountains.",
+    "strengths": "Immunity to fire damage makes it highly resilient to fire-based attacks.",
+    "weaknesses": "Susceptible to tactics that exploit its reliance on melee attacks and spells.",
+    "attacks": "Multiattack includes one bite attack and two claw attacks, capable of devastating damage.",
+    "most_powerful_ability": "Fire Breath, a powerful attack that exudes a torrent of fire in a wide cone.",
+    "equipment": null,
+    "senses": "Possesses blindsight within 30 feet and a passive Perception score of 18, enabling effective detection of hidden foes.",
+    "skills": "Skilled in intimidation with a +8 modifier and decent perception at +5.",
+    "additional_information": [
+        "Searing Heat ability inflicts continual fire damage on attackers.",
+        "Volcanic Tyrant grants immunity to poisonous gases from volatile environments.",
+        "Innate spellcasting allows it to control adversaries using spells like command and hold person.",
+        "Strong attributes in Strength, Constitution, and Charisma enhance its combat and commanding presence.",
+        "Can create an aura of intense heat through Boil Over, affecting nearby foes."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting ability with a save DC of 16, casting specific spells three times per day.",
+    "test_queries": [
+        "young dragon with devastating fire breath",
+        "large fiery predator from volcanic regions",
+        "dragon that hoards treasure and is greedy",
+        "creature with powerful fiery attacks",
+        "intimidating red dragon with heat aura"
+    ]
+}

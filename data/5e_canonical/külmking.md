@@ -1,6 +1,8 @@
 <MonsterName/>Külmking</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>9</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Külmking is a large undead creature with a chaotic evil alignment, making it a formidable enemy in battle. This creature possesses a strong Armor Class of 14 due to its natural armor and boasts a significant pool of 127 hit points, which translates to a solid endurance during confrontations. The Külmking excels in mobility, as it can move at 60 feet per turn. With a Challenge Rating of 9, it offers a significant encounter for adventurers and is worth 5,000 experience points upon defeat. It enjoys considerable offensive capabilities with strong attack options and unique special abilities that can manipulate its foes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of its actions, the Külmking can perform a "Multiattack," making two c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Külmking
 
 *Large* *Undead* *chaotic evil*
@@ -58,5 +61,6 @@ On a success, a creature is immune to the külmking's Corruption for the next 24
 - **Hooves:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 3) bludgeoning damage.
 
 
+</statblock>
 
 

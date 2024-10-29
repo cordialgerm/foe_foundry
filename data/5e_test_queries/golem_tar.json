@@ -1,0 +1,25 @@
+{
+    "name": "Tar Golem",
+    "queries": [
+        {
+            "query": "medium sticky creature that can walk and climb",
+            "variant": "sticky medium creature that can climb and walk"
+        },
+        {
+            "query": "golem that is immune to fire and has a fire damage ability",
+            "variant": "fire immune golem with a fire damage ability"
+        },
+        {
+            "query": "combat monster with bludgeoning attacks and fire hazard trait",
+            "variant": "monster with bludgeoning attacks and fire hazard ability in combat"
+        },
+        {
+            "query": "construct that can poison nearby creatures while burning",
+            "variant": "burning construct that poisons creatures nearby"
+        },
+        {
+            "query": "tough creature relying on slam attacks and can climb walls",
+            "variant": "tough creature that can climb walls and uses slam attacks"
+        }
+    ]
+}

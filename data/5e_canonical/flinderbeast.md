@@ -1,6 +1,8 @@
 <MonsterName/>Flinderbeast</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>38</HP>
 <summary>The Flinderbeast is a small fey creature known for its agility and specialized abilities, making it a cunning adversary in its domain. With an Armor Class of 14 and Hit Points totaling 38, it demonstrates solid resilience for a creature of its size. The Flinderbeast is agile, boasting a Dexterity score of +4, which translates into a good modifier for attack rolls and avoidance of attacks. Its challenge rating of 1 indicates that it can provide a moderate challenge to low-level adventurers. Notable for its fey resilience, the Flinderbeast is resistant to conditions of being charmed or unconscious, which makes it more difficult to control. However, it has a relatively low Constitution score, indicating that it may struggle against effects that target its stamina.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Flinderbeast stands out as a tricky and resourceful foe, blending a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flinderbeast
 
 *Small fey*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Reactions** 
 - **Catch Snack.** When the flinderbeast is the target of a ranged weapon attack that uses ammunition made mostly of wood, such as an arrow, the flinderbeast can attempt to catch and eat the ammunition. The flinderbeast must make a DC 14 DEX save. On a success, it gains 3 (1d6) temporary HP and prevents the attack’s damage.
 
+</statblock>
 
 

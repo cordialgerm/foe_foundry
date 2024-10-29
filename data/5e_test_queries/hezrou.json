@@ -1,0 +1,25 @@
+{
+    "name": "Hezrou",
+    "queries": [
+        {
+            "query": "amphibious demon with a foul stench that grapples enemies",
+            "variant": "foul-smelling amphibious demon that grapples its foes"
+        },
+        {
+            "query": "large fiend that can swallow creatures and has powerful claws",
+            "variant": "big fiend able to consume enemies and possesses strong claws"
+        },
+        {
+            "query": "hulking chaos demon with natural armor and resistant to fire",
+            "variant": "massive chaos demon that has natural protection and is resistant to flames"
+        },
+        {
+            "query": "brutish demon with darkvision that deals acid damage while swallowing",
+            "variant": "strong demon with darkvision and causes acid damage when it swallows"
+        },
+        {
+            "query": "chaotic evil creature that leaves foes poisoned with a stench",
+            "variant": "creature of chaotic evil that poisons enemies with its foul odor"
+        }
+    ]
+}

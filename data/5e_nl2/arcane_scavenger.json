@@ -1,0 +1,55 @@
+{
+    "name": "Arcane Scavenger",
+    "creature_type": "Construct",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 127,
+    "ac": 17,
+    "srd": false,
+    "cr": 9,
+    "movement": "walk 10 ft., fly 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "magical",
+        "combatant",
+        "explosive"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "versatile",
+        "intelligent"
+    ],
+    "description": "A large, armored construct with a robust build, resembling a fusion of mechanical components and arcane energy, capable of flight.",
+    "memorable": "Its ability to explode upon death, dealing significant force damage, makes the Arcane Scavenger a dangerous opponent even after being defeated.",
+    "goals": "To fend off intruders and protect arcane secrets, serving as a guardian in magical locations.",
+    "relations": "Often encountered alongside other constructs or magical guardians.",
+    "environment": "Typically found in magical ruins, arcane laboratories, or areas infused with magical energies.",
+    "strengths": "Resistant to multiple damage types, immune to common conditions, possesses magic resistance, and truesight.",
+    "weaknesses": "Lacks communication abilities and requires no sustenance, potentially hindering interaction with others.",
+    "attacks": "Can make multiattacks with either powerful melee claws that deal bludgeoning and force damage, or a ranged fire attack.",
+    "most_powerful_ability": "Eldritch Overload, which enhances its speed and grants an additional action when its health is low.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 60 feet, allowing it to see through illusions and invisibilities.",
+    "skills": "Has a passive perception of 17, indicating a keen ability to detect hidden enemies or traps.",
+    "additional_information": [
+        "Doesn't require air, food, drink, or sleep due to its construct nature.",
+        "Can cast spells like Detect Magic and Locate Object at will without the need for material components.",
+        "Magic Resistance grants it advantage on saves against spells and magical effects.",
+        "When killed, unleashes a destructive explosion dealing force damage to nearby creatures.",
+        "Its Eldritch Overload ability gives it a significant increase in combat effectiveness when critically damaged."
+    ],
+    "damage_types": [
+        "fire",
+        "force"
+    ],
+    "spellcasting": "Can cast Detect Magic and Locate Object at will, and each three times a day can cast Dispel Magic and Counterspell.",
+    "test_queries": [
+        "arcane construct guardian",
+        "exploding magic creature",
+        "magical mechanical monster",
+        "powerful construct with truesight",
+        "intelligent flying construct"
+    ]
+}

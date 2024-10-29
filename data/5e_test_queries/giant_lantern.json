@@ -1,0 +1,25 @@
+{
+    "name": "Giant, Lantern",
+    "queries": [
+        {
+            "query": "huge aquatic giant with hypnotic light abilities",
+            "variant": "huge giant that has hypnotic light powers and lives in water"
+        },
+        {
+            "query": "giant creature with strong melee attacks and swimming speed",
+            "variant": "creature that is a giant with powerful melee strikes and fast swimming"
+        },
+        {
+            "query": "ocean-dwelling giant with the ability to charm",
+            "variant": "giant that lives in the ocean and can charm creatures"
+        },
+        {
+            "query": "impressive giant with natural armor and water-control spells",
+            "variant": "strong giant with natural armor that can control water with spells"
+        },
+        {
+            "query": "lantern giant that breathes underwater and communicates with sea creatures",
+            "variant": "giant lantern that can breathe in water and speaks to aquatic beings"
+        }
+    ]
+}

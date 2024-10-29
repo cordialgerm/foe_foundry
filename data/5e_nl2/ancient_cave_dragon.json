@@ -1,0 +1,52 @@
+{
+    "name": "Ancient Cave Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Gargantuan",
+    "hp": 507,
+    "ac": 20,
+    "srd": false,
+    "cr": "25",
+    "movement": "walk 40 ft., burrow 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "cave",
+        "evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "dangerous",
+        "sinister"
+    ],
+    "description": "The Ancient Cave Dragon is a gargantuan dragon with a robust physique, accented by spikes and a fearsome presence that looms in dark caverns.",
+    "memorable": "Its darkness aura and ability to burrow make it a uniquely controlling presence in underground environments.",
+    "goals": "To dominate its territory and instill fear in any who dare to intrude.",
+    "relations": "Often found in lairs populated by lesser creatures it commands or subjects.",
+    "environment": "Typically resides in deep caves and underground lairs.",
+    "strengths": "Immunity to poison damage and conditions such as being blinded or poisoned, alongside strong melee attacks.",
+    "weaknesses": "Below-average dexterity limits its agility in combat.",
+    "attacks": "Utilizes a devastating multiattack that includes a bite with piercing and poison damage, slashing with claws, and a heavy tail strike.",
+    "most_powerful_ability": "Poison Breath allows it to inflict both immediate and ongoing harm, potentially poisoning multiple targets at once.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and tremorsense up to 120 feet, allowing it to detect threats effectively even without sight.",
+    "skills": "Excels in perception with a +19 bonus, making it highly aware of hidden dangers.",
+    "additional_information": [
+        "Can emit a magical darkness aura that obscures vision and dispels light spells.",
+        "Has legendary resistance, enabling it to ignore failed saving throws.",
+        "Can move unhindered through earth and stone, creating tactical advantages underground.",
+        "Features a reactive ability that punishes close intruders with piercing damage.",
+        "Can use legendary actions to maintain control of the battlefield."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant cave dragon",
+        "dragon with darkness powers",
+        "underground predator dragon",
+        "fierce dragon with poison breath",
+        "gargantuan dragon lair"
+    ]
+}

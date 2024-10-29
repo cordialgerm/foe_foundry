@@ -1,0 +1,51 @@
+{
+    "name": "Magnetic Elemental",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 95,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "burrow 20 ft., fly 20 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "magnetism",
+        "large"
+    ],
+    "adjectives": [
+        "powerful",
+        "manipulative",
+        "formidable"
+    ],
+    "description": "A large creature of elemental origin that harnesses magnetic powers to manipulate metal objects and hinder armored foes.",
+    "memorable": "Its ability to control metal objects makes it a challenging opponent for those relying on metal armor and weapons.",
+    "goals": "To dominate the battlefield by manipulating metallic foes and objects through its magnetic powers.",
+    "relations": "Could be encountered with other elemental beings or constructs that utilize metal.",
+    "environment": "Typically found in places with plenty of metal resources or as guardians in elemental rifts.",
+    "strengths": "Advantage on attacks against metal armor wearers, damage immunities to lightning and poison.",
+    "weaknesses": "Low intelligence, wisdom, and charisma limit its tactical abilities and social maneuvering.",
+    "attacks": "Two slam attacks that deal significant bludgeoning damage with good accuracy.",
+    "most_powerful_ability": "Magnetic Pulse, which can either pull or push enemies and manipulate their equipment.",
+    "senses": "Has tremorsense to detect movement within 30 feet, which helps in combat and avoiding ambushes.",
+    "skills": null,
+    "additional_information": [
+        "Damage resistances to nonmagical slashing, piercing, and bludgeoning.",
+        "Can grapple creatures wearing metal armor via its magnetic abilities.",
+        "Pulling small metal items closer and potentially sticking them to it.",
+        "Magnetic control makes it tricky for foes to attack with metal weapons.",
+        "Magnetism feature excludes gold and silver items."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large creature that manipulates metal",
+        "elemental with magnetic powers",
+        "battlefield control via magnetism",
+        "metal-using opponents struggle against it",
+        "elemental that can pull and push metal items"
+    ]
+}

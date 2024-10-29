@@ -1,0 +1,55 @@
+{
+    "name": "Frostjack",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 135,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "cold",
+        "ice",
+        "neutral evil",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "chilling",
+        "mobile",
+        "resilient"
+    ],
+    "description": "The Frostjack is a chilling medium-sized fey with a menacing presence, characterized by its ability to manipulate ice and cold.",
+    "memorable": "Its chilling presence saps the strength of nearby foes and can freeze them solid.",
+    "goals": "To sap the strength of foes, manipulate ice, and frustrate spellcasters.",
+    "relations": "Commonly encountered with other fey creatures or in icy environments.",
+    "environment": "Primarily found in icy terrains.",
+    "strengths": "Immunity to cold damage and exhaustion, and advantage on spell saves.",
+    "weaknesses": "Particularly vulnerable to fire damage.",
+    "attacks": "Utilizes Ice Blade attacks and Winter\u2019s Touch to inflict piercing and cold damage.",
+    "most_powerful_ability": "Chilling Presence deals cold damage and can cause exhaustion to nearby creatures.",
+    "equipment": null,
+    "senses": "It has a passive perception score of 17, allowing it to notice potential threats easily.",
+    "skills": "Skilled in perception with a +3 modifier.",
+    "additional_information": [
+        "Can extinguish unprotected flames and freeze water.",
+        "Can move across and climb icy surfaces effortlessly.",
+        "Can unleash an Icicle Barrage for devastating area damage.",
+        "Has a reaction to gain fire resistance.",
+        "Capable of inflicting a freezing condition on targets."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chilling fey monster with ice abilities",
+        "mobile frost monster that freezes enemies",
+        "creature that deals cold damage and causes exhaustion",
+        "fey enemy with ice manipulation powers",
+        "neutral evil creature found in icy terrains"
+    ]
+}

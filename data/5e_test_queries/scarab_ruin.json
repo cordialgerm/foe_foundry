@@ -1,0 +1,25 @@
+{
+    "name": "Ruin Scarab",
+    "queries": [
+        {
+            "query": "large undead insect that inflicts necrotic damage",
+            "variant": "big undead bug that deals necrotic damage"
+        },
+        {
+            "query": "predator monster with a flesh-eating aura",
+            "variant": "predatory creature that has a flesh eating aura"
+        },
+        {
+            "query": "stealthy undead creature immune to poison",
+            "variant": "undead stealthy monster that cannot be poisoned"
+        },
+        {
+            "query": "monster that incapacitate enemies and avoid detection",
+            "variant": "creature that can incapacitate foes and sneak quietly"
+        },
+        {
+            "query": "undead villain with high hit points and a flesh-eating ability",
+            "variant": "undead enemy with a lot of hit points and flesh-eating power"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Deep One Priest",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 feet walking",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "spellcaster",
+        "mind-manipulator"
+    ],
+    "adjectives": [
+        "menacing",
+        "chaotic",
+        "versatile"
+    ],
+    "description": "A humanoid creature with a sinister mix of charm and menace, embodying aquatic origins.",
+    "memorable": "Can manipulate memories and fascinate listeners with its voice, capable of both spellcasting and melee combat.",
+    "goals": "To overpower foes and manipulate their perceptions through spells and abilities.",
+    "relations": "Related to other aquatic creatures, potentially serving greater dark entities.",
+    "environment": "Typically found in aquatic settings and coastal regions.",
+    "strengths": "Strong in melee combat with high Strength and access to powerful spells.",
+    "weaknesses": "Vulnerable to fire damage, which can exploit its weaknesses.",
+    "attacks": "Can make a Claws melee attack and a Jolting Touch spell attack, combining physical strikes with magic.",
+    "most_powerful_ability": "Voice of the Deeps allows it to erase memories or manipulate listeners' perceptions.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in darkness up to 120 feet.",
+    "skills": "Skilled in Athletics and Deception, enabling physical prowess and manipulation.",
+    "additional_information": [
+        "Ability to breathe both air and water offers versatility in aquatic adventures.",
+        "Frenzied Rage grants advantage on attacks after taking significant damage."
+    ],
+    "damage_types": [
+        "fire",
+        "cold"
+    ],
+    "spellcasting": "Can cast a range of spells including guidance, sleep, and spirit guardians, using Charisma.",
+    "test_queries": [
+        "chaotic aquatic spellcaster with memory manipulation",
+        "menacing humanoid that can breathe water and air",
+        "priest type monster with unique speech abilities",
+        "deep one priest weaknesses and spellcasting",
+        "medium creature skilled in melee and deception"
+    ]
+}

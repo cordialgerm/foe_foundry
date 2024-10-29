@@ -1,0 +1,52 @@
+{
+    "name": "Champion Warrior",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 90,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "humanoid",
+        "warrior",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "strength-based"
+    ],
+    "description": "The Champion Warrior is a powerful humanoid with exceptional strength and agility, characterized by its notable prowess with a greataxe.",
+    "memorable": "Combines high physical strength and agility, making it a potent melee combatant.",
+    "goals": "Dominate in melee combat and intimidate opponents.",
+    "relations": "Might serve as a leader or enforcer among other humanoids or warriors.",
+    "environment": "Found in areas where combat is prevalent, such as battlefields or military camps.",
+    "strengths": "Exceptional in close-range melee attacks, able to strike multiple times in a turn.",
+    "weaknesses": "Struggles with ranged attacks or intelligence-based situations.",
+    "attacks": "Uses a Greataxe for melee attacks, dealing significant slashing damage.",
+    "most_powerful_ability": "Multiattack ability allows it to strike twice during its turn.",
+    "equipment": "greataxe",
+    "senses": "Passive Perception of 14 allows for decent awareness of surroundings.",
+    "skills": "Skilled in Athletics and Stealth, enabling effective combat maneuverability and surprise.",
+    "additional_information": [
+        "Has high modifiers for Strength and Dexterity",
+        "Good saving throw bonuses against physical attacks",
+        "Average Intelligence and social capabilities in Charisma",
+        "Potentially intimidating presence in social interactions",
+        "Relies heavily on physical attributes for combat effectiveness"
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid warrior with greataxe",
+        "tough melee combatant with high strength",
+        "agile warrior that excels in close combat",
+        "champion fighter skilled in intimidation",
+        "bruiser capable of dealing swift melee damage"
+    ]
+}

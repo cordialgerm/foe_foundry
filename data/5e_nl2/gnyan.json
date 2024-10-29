@@ -1,0 +1,53 @@
+{
+    "name": "Gnyan",
+    "creature_type": "Elemental",
+    "alignment": "neutral good",
+    "size": "Large",
+    "hp": 90,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walks at a speed of 50 feet",
+    "role": "Support",
+    "tags": [
+        "elemental",
+        "winter",
+        "support",
+        "healer"
+    ],
+    "adjectives": [
+        "large",
+        "winter-themed",
+        "neutral",
+        "supportive"
+    ],
+    "description": "Gnyan is a large elemental creature embodying winter, featuring an aura of hope and the ability to heal and restore allies with its Glorious Milk.",
+    "memorable": "Gnyan's ability to heal allies and bolster their morale makes it a unique presence on the battlefield, along with its vulnerability to fire.",
+    "goals": "Gnyan aims to support its allies, control the battlefield, and embody the essence of winter.",
+    "relations": "Often associated with other elemental creatures and beings related to winter.",
+    "environment": "Typically found in snowy and icy regions.",
+    "strengths": "Immunity to cold and poison damage, strong mobility, and the ability to bolster allies' morale.",
+    "weaknesses": "Vulnerable to fire damage.",
+    "attacks": "Features bite and claw attacks that deal piercing and slashing damage, enhanced with cold damage, alongside the powerful Avalanche\u2019s Roar.",
+    "most_powerful_ability": "Avalanche\u2019s Roar creates a damaging cone of ice and snow that restrains targets, providing excellent battlefield control.",
+    "senses": "Possesses a passive perception of 15, enabling it to detect hidden threats effectively.",
+    "skills": "Proficient in perception, allowing it to notice details and detect hidden creatures.",
+    "additional_information": [
+        "Aura of Hope granting advantage on saving throws against fear for allies.",
+        "Glorious Milk can heal and reduce exhaustion levels.",
+        "Snow Camouflage provides advantage on stealth checks in snowy terrains.",
+        "Snow Strider ability allows it to move without leaving traces in the snow.",
+        "Can teleport short distances using Snow Step, adding to its mobility."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large winter elemental that heals allies",
+        "creature with aura of hope and restorative milk",
+        "mobile ice creature that can teleport",
+        "elemental that controls ice and snow in battle",
+        "supportive monster vulnerable to fire attacks"
+    ]
+}

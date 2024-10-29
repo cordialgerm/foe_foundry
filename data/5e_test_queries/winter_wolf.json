@@ -1,0 +1,25 @@
+{
+    "name": "Winter Wolf",
+    "queries": [
+        {
+            "query": "massive wolf with icy white fur living in arctic environments",
+            "variant": "huge wolf with white fur that lives in cold places"
+        },
+        {
+            "query": "cold-breathing creature that hunts in packs",
+            "variant": "creature that breathes cold and hunts in groups"
+        },
+        {
+            "query": "intelligent predator with resistance to cold and keen senses",
+            "variant": "smart predator resistant to cold and has sharp senses"
+        },
+        {
+            "query": "dangerous wolf that can freeze its enemies and is fast",
+            "variant": "perilous wolf capable of freezing foes and has high speed"
+        },
+        {
+            "query": "arctic wolf known for its biting attack and cold breath weapon",
+            "variant": "winter wolf famous for its biting moves and cold breath attack"
+        }
+    ]
+}

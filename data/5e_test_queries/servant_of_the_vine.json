@@ -1,0 +1,25 @@
+{
+    "name": "Servant of the Vine",
+    "queries": [
+        {
+            "query": "chaotic neutral humanoid that can cast spells and has healing abilities",
+            "variant": "humanoid spellcaster with chaotic neutral alignment and healing spells"
+        },
+        {
+            "query": "medium-sized creature that uses poison and has a multiattack ability",
+            "variant": "creature that attacks multiple times and can poison its targets"
+        },
+        {
+            "query": "magical humanoid that can inspire allies and has darkvision",
+            "variant": "humanoid with darkvision and the ability to boost allies' performance"
+        },
+        {
+            "query": "poisonous breath attack and magical sleep immunity in a humanoid",
+            "variant": "humanoid with a sleep immunity and ability to use a poison breath attack"
+        },
+        {
+            "query": "Servant of the Vine's abilities related to persuasion and perception",
+            "variant": "abilities of the Servant of the Vine in medicine and perception"
+        }
+    ]
+}

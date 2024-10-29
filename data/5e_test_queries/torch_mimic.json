@@ -1,0 +1,25 @@
+{
+    "name": "Torch Mimic",
+    "queries": [
+        {
+            "query": "deceptive flying torch monster with fire abilities",
+            "variant": "flying torch monster that is deceptive and has fire abilities"
+        },
+        {
+            "query": "small creature that mimics a torch and can regenerate health",
+            "variant": "tiny monster that can regenerate its health and looks like a torch"
+        },
+        {
+            "query": "monster that resembles a torch and has cold damage vulnerability",
+            "variant": "creature that looks like a torch and is weak against cold damage"
+        },
+        {
+            "query": "creature with fire resistance that appears as a torch",
+            "variant": "torch-like creature that has fire damage resistance"
+        },
+        {
+            "query": "tiny monstrosity that can attack with fire blast and bite",
+            "variant": "small monstrosity that has bite and fire blast attacks"
+        }
+    ]
+}

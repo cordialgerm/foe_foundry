@@ -1,0 +1,49 @@
+{
+    "name": "Ngobou",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 102,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "ferocious",
+        "aggressive"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "natural"
+    ],
+    "description": "The Ngobou is a large beast that embodies the might and ferocity of nature, with a robust frame and jagged hide.",
+    "memorable": "Its Elephants' Bane ability grants it advantage against elephants, making it a relentless hunter of these creatures.",
+    "goals": "To hunt and attack elephants, showcasing its predatory instincts.",
+    "relations": "It is often found in territories with elephants, considering them its favored prey.",
+    "environment": "Natural habitats, particularly areas inhabited by elephants.",
+    "strengths": "Exceptional strength and resilience in physical combat.",
+    "weaknesses": "Poor dexterity limits its agility during fights.",
+    "attacks": "Gore attack delivers severe piercing damage, and its Stomp attack is aimed at prone enemies for devastating bludgeoning damage.",
+    "most_powerful_ability": "Elephants' Bane allows it to sense elephants and gain advantage on attack rolls against them.",
+    "senses": "The Ngobou has a passive perception of 14, allowing it to be somewhat aware of its surroundings.",
+    "skills": "It has a notable Perception skill, aiding its hunting abilities.",
+    "additional_information": [
+        "Jagged Hide deals damage to grappling foes.",
+        "Reckless ability increases its attack potency but makes it vulnerable.",
+        "Trampling Charge allows for powerful charges against targets.",
+        "A natural predator with a significant challenge rating for adventurers.",
+        "Typically aggressive in combat situations."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large aggressive beast that hunts elephants",
+        "powerful creature with jagged hide",
+        "monster that charges at elephants",
+        "formidable predator in natural habitats",
+        "beast with enhanced attacks against specific foes"
+    ]
+}

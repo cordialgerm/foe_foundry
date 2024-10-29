@@ -1,0 +1,25 @@
+{
+    "name": "Ratfolk Mercenary",
+    "queries": [
+        {
+            "query": "small humanoid mercenary with high dexterity and combat skills",
+            "variant": "tiny humanoid fighter with great dexterity and fighting skills"
+        },
+        {
+            "query": "ratfolk creature that excels in stealth and teamwork",
+            "variant": "rat-like being that is great at sneaking and working with allies"
+        },
+        {
+            "query": "agile ratfolk that deals extra damage with allies nearby",
+            "variant": "nimble ratfolk who inflicts added damage when friends are close"
+        },
+        {
+            "query": "ratfolk mercenary with pack tactics and nimbleness abilities",
+            "variant": "ratfolk fighter featuring pack tactics and the ability to slip through"
+        },
+        {
+            "query": "combat-oriented ratfolk with defensive reactions for allies",
+            "variant": "battle-ready ratfolk that can protect its teammates with reactions"
+        }
+    ]
+}

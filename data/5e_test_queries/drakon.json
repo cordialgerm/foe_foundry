@@ -1,0 +1,25 @@
+{
+    "name": "Drakon",
+    "queries": [
+        {
+            "query": "large dragon that can breathe air and water with acid resistance",
+            "variant": "dragon that is large and can breathe both air and water with acid resistence"
+        },
+        {
+            "query": "strong creature with high Dexterity and paralysis abilities",
+            "variant": "creature with high dexterity score that can paralyze and is very strong"
+        },
+        {
+            "query": "monster known for acid breath and dissolving gaze",
+            "variant": "creature recognized for its acid breath attack and special ability dissolving gaze"
+        },
+        {
+            "query": "versatile predator that thrives in both land and water environments",
+            "variant": "predatory creature that excels in both aquatic and terrestrial settings"
+        },
+        {
+            "query": "dragon with impressive offense and unique poison resistance",
+            "variant": "dragon known for its great offensive abilities and resistance to poison"
+        }
+    ]
+}

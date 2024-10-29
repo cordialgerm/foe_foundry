@@ -1,0 +1,54 @@
+{
+    "name": "Torch Mimic",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Tiny",
+    "hp": 21,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "flies at 30 feet, no walking",
+    "role": null,
+    "tags": [
+        "mimic",
+        "fire",
+        "trap",
+        "deceptive"
+    ],
+    "adjectives": [
+        "deceptive",
+        "small",
+        "fire-resistant",
+        "regenerative"
+    ],
+    "description": "The Torch Mimic resembles an ordinary torch, with flames crowning its head. It remains motionless, perfectly imitating inanimate objects.",
+    "memorable": "It regenerates health unless affected by cold damage and can mimic a torch flawlessly.",
+    "goals": "Primarily serves as a deceptive creature to ambush unwary adventurers.",
+    "relations": "Could be encountered alongside other mimics or creatures that utilize deception.",
+    "environment": "Commonly found in dark or low-light environments, adapting to confuse passersby.",
+    "strengths": "Regenerates health each turn and is resistant to fire damage.",
+    "weaknesses": "Vulnerable to cold damage, which stops its regeneration.",
+    "attacks": "Can bite for piercing damage and use a ranged Fire Blast attack that deals fire damage.",
+    "most_powerful_ability": "Regeneration allows it to recover health each turn unless affected by cold.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has proficient Perception skills, allowing it to notice things in its vicinity.",
+    "additional_information": [
+        "False Appearance allows it to blend in as an ordinary torch.",
+        "Fiery Soul lets it control the flames on its head.",
+        "Can go unconscious if extinguished by certain effects.",
+        "Dies only if it has 0 hit points at the start of its turn.",
+        "Can attack with both a bite and a fiery ranged attack."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "torch shaped creature that can fly",
+        "deceptive small monster resembling a torch",
+        "creature that regenerates health unless hit by cold",
+        "tiny monster with fire abilities and a bite attack",
+        "creature that uses tricky appearances in dark environments"
+    ]
+}

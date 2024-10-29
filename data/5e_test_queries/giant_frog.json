@@ -1,0 +1,25 @@
+{
+    "name": "Giant Frog",
+    "queries": [
+        {
+            "query": "large amphibious predator that lives in swamps",
+            "variant": "big swamp monster that is amphibious and hunts"
+        },
+        {
+            "query": "frog that can swallow small creatures and jumps high",
+            "variant": "frog capable of jumping high and eats small prey"
+        },
+        {
+            "query": "versatile creature found in wetlands that can grapple",
+            "variant": "adaptable beast in swamps capable of grappling"
+        },
+        {
+            "query": "monster with a long tongue that pulls prey closer",
+            "variant": "creature with an extended tongue that drags targets near"
+        },
+        {
+            "query": "medium-sized predator with stealth in aquatic environments",
+            "variant": "mid-sized hunter that is sneaky in water"
+        }
+    ]
+}

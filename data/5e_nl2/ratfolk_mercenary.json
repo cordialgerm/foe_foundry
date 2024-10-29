@@ -1,0 +1,50 @@
+{
+    "name": "Ratfolk Mercenary",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 45,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "swim 10 ft., walk 25 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "mercenary",
+        "ratfolk",
+        "tactical"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "dexterous"
+    ],
+    "description": "The Ratfolk Mercenary is a small humanoid known for its agile movements and tactical prowess in combat. Clad in leather armor, it embodies both stealth and efficiency, favoring dexterous attacks over brute strength.",
+    "memorable": "This mercenary utilizes teamwork and a variety of tactical abilities, making it a formidable opponent in group battles.",
+    "goals": "To serve as a hired combatant, utilizing agility and teamwork to overcome foes.",
+    "relations": "Often works alongside allies in tactical scenarios, benefiting from synergies with other mercenaries or companions.",
+    "environment": "Typically found in urban settings or battlegrounds where contracts for mercenaries are common.",
+    "strengths": "Exceptional dexterity allows for stealth and evasive maneuvers; bonuses from teamwork enhance combat effectiveness.",
+    "weaknesses": "Low Strength and Constitution make it vulnerable in direct melee confrontations.",
+    "attacks": "Utilizes multiattack with shortswords and darts, capable of additional biting damage if landing successful sword strikes.",
+    "most_powerful_ability": "Chopper Squad, increasing melee damage output significantly when near allies.",
+    "equipment": "Leather armor enhances its agility without sacrificing mobility.",
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Possesses impressive skills in Acrobatics and Stealth, making it highly capable in stealthy and agile tasks.",
+    "additional_information": [
+        "Benefits from Pack Tactics when allies are nearby, gaining advantage on attack rolls.",
+        "Can maneuver through the spaces of larger creatures, enhancing its tactical positioning.",
+        "Has reaction abilities to protect its employer, showcasing its role as a supportive combatant.",
+        "Possesses a high Dexterity saving throw, making it adept at dodging attacks.",
+        "Versatile in combat with a combination of melee and ranged attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile mercenary with tactical advantages",
+        "cunning ratfolk warrior skilled in ambush",
+        "mercenary who excels in teamwork and agility",
+        "ratfolk that uses stealth and evasion in battle",
+        "combat specialist with dexterous attacks and support abilities"
+    ]
+}

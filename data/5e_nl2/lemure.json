@@ -1,0 +1,56 @@
+{
+    "name": "Lemure",
+    "creature_type": "Fiend",
+    "creature_subtype": "devil",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 7,
+    "srd": true,
+    "cr": "0",
+    "movement": "slow walker with a speed of 15 feet",
+    "role": null,
+    "tags": [
+        "fiend",
+        "devil",
+        "undying",
+        "low-level threat"
+    ],
+    "adjectives": [
+        "mindless",
+        "grotesque",
+        "forlorn",
+        "tormented"
+    ],
+    "description": "A formless mass of flesh groaning in eternal torment, the Lemure embodies the lowest form of devilish existence, reduced to its most basic form in the Nine Hells.",
+    "memorable": "These creatures are nearly impossible to kill permanently, as they reform in the Hells after being slain.",
+    "goals": "To serve as fodder in the wars between devils and demons, embodying the torment of lost souls.",
+    "relations": "Often used by more powerful devils; part of the hierarchy of infernal creatures.",
+    "environment": "Primarily found in the Nine Hells, serving as a reminder of eternal suffering.",
+    "strengths": "Immunities to fire and poison damage, ability to see through magical darkness, and ability to reform after death.",
+    "weaknesses": "Low Dexterity and Intelligence scores, making it vulnerable to agile and intelligent foes.",
+    "attacks": "Uses a melee weapon attack called 'Fist,' dealing minimal bludgeoning damage.",
+    "most_powerful_ability": "Hellish Rejuvenation allows it to come back to life within 1d10 days after dying in the Hells.",
+    "equipment": null,
+    "senses": "Possesses darkvision with a range of 120 feet, allowing it to see in darkness.",
+    "skills": "Has a passive Perception score of 10, which is average for detecting hidden threats.",
+    "additional_information": [
+        "Radiates a Lawful Evil aura that affects interactions.",
+        "Eerie Groan can disorient nearby creatures within 300 feet.",
+        "Devil's Sight allows it to see in magical darkness.",
+        "Can create an aura of extreme heat that weakens non-devil creatures.",
+        "Reforms within 1 mile of where it was slain unless holy water is used on its remains."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mindless mass of tormenting flesh",
+        "grotesque fiend that cannot die",
+        "devil serving in the Nine Hells",
+        "low-level fiend with unique resurrection",
+        "devil that emits eerie groans"
+    ]
+}

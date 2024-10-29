@@ -1,0 +1,25 @@
+{
+    "name": "Imperial Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon that can breathe lightning and swim",
+            "variant": "medium-sized dragon that swims and breathes lightning"
+        },
+        {
+            "query": "neutral dragon with amphibious abilities and natural armor",
+            "variant": "dragon that has natural armor and can breathe underwater"
+        },
+        {
+            "query": "dragon with high strength and lightning immunity found in aquatic environments",
+            "variant": "high strength dragon immune to lightning that lives in water"
+        },
+        {
+            "query": "dragon that can cast fog cloud and has good perception skills",
+            "variant": "dragon with perceptive skills that can use fog cloud spell"
+        },
+        {
+            "query": "Imperial Dragon Wyrmling combat tactics with elemental attacks",
+            "variant": "combat strategies for Imperial Dragon Wyrmling using elemental damage"
+        }
+    ]
+}

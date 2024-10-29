@@ -1,0 +1,25 @@
+{
+    "name": "Miremuck Goblin King",
+    "queries": [
+        {
+            "query": "medium goblin leader with charm ability and stealth skills",
+            "variant": "goblin king that is medium-sized and has charms and stealth"
+        },
+        {
+            "query": "cunning goblin that transforms upon death and excels in persuasion",
+            "variant": "goblin king known for cleverness and ability to transform when killed"
+        },
+        {
+            "query": "Miremuck Goblin King with high charisma and death transformation ability",
+            "variant": "goblin king with charisma score of 18 and a death transformation skill"
+        },
+        {
+            "query": "goblin king with strong stealth and spellcasting powers",
+            "variant": "king goblin skilled in stealth and capable of casting spells"
+        },
+        {
+            "query": "clever goblin that can charm its enemies and manipulate followers",
+            "variant": "smart goblin who charms foes and leads goblin followers"
+        }
+    ]
+}

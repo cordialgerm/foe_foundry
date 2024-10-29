@@ -1,0 +1,58 @@
+{
+    "name": "Kobold, Planes Hunter",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 181,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "magic",
+        "elemental"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "adaptable"
+    ],
+    "description": "The Kobold Planes Hunter is a small humanoid creature known for its cunning combat style and magical attacks, wielding a longsword and exhibiting a mastery of elemental damage.",
+    "memorable": "Its ability to choose resistances and deal substantial damage makes it a formidable opponent.",
+    "goals": "To track and eliminate threats from other planes while utilizing its magical abilities in combat.",
+    "relations": "Typically encountered with other kobolds or creatures from elemental planes.",
+    "environment": "Commonly found in environments linked to various planes of existence.",
+    "strengths": "Has enhanced abilities against Celestials, Fiends, and Elementals, ensuring tactical advantages.",
+    "weaknesses": "Sunlight sensitivity causes disadvantage on certain checks and attacks in bright light.",
+    "attacks": "Utilizes multiattack with longsword strikes, deals damage enhanced by elemental energy.",
+    "most_powerful_ability": "Warping Whirlwind unleashes devastating area damage while allowing it to manipulate reality.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 16, granting it the ability to detect hidden threats effectively.",
+    "skills": "Skilled in tracking and perceiving threats, particularly against creatures linked to other planes.",
+    "additional_information": [
+        "Can teleport using Planar Step for mobility.",
+        "Gains advantage on attacks when allies are nearby via Pack Tactics.",
+        "Can resist specific elemental damage types with Planar Attunement.",
+        "Critical hits immobilize foes from extradimensional movement.",
+        "Can shift to another plane of existence once per day."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "necrotic",
+        "radiant",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning kobold with elemental weapons",
+        "agile small humanoid that hunts planes",
+        "magical kobold able to teleport",
+        "kobold with attack advantages when flanking",
+        "challenging humanoid with sunlight sensitivity"
+    ]
+}

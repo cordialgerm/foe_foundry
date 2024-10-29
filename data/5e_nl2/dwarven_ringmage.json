@@ -1,0 +1,50 @@
+{
+    "name": "Dwarven Ringmage",
+    "creature_type": "Humanoid",
+    "alignment": "Any Alignment",
+    "size": "Medium",
+    "hp": 136,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "spellcaster",
+        "dwarf",
+        "tactician"
+    ],
+    "adjectives": [
+        "powerful",
+        "strategic",
+        "resilient"
+    ],
+    "description": "The Dwarven Ringmage is a stout spellcaster with robust armor and a deep mastery of magical energies, often seen wielding a Ring Staff adorned with mystical symbols.",
+    "memorable": "Its unique ability to create magical circles for tactical advantage and its impressive array of spells make it a versatile opponent on the battlefield.",
+    "goals": "To manipulate the battlefield through spell and magic while protecting itself and its allies.",
+    "relations": "Often associated with dwarven societies and other spellcasters who value strategic combat.",
+    "environment": "Commonly found in dwarven strongholds or areas where magic is prevalent.",
+    "strengths": "Exceptional intelligence and spellcasting proficiency, with a strong resilience to poison.",
+    "weaknesses": "Below-average charisma and physical strength may hinder its effectiveness in social situations and direct combat.",
+    "attacks": "Uses a Ring Staff for melee attacks, dealing both bludgeoning and elemental damage, and utilizes magic for battlefield control.",
+    "most_powerful_ability": "The ability to cast greater invisibility to avoid detection or protect an ally during critical moments.",
+    "equipment": "Ring Staff",
+    "senses": "The Dwarven Ringmage possesses darkvision, allowing it to see in darkness up to 60 feet.",
+    "skills": "Proficient in Arcana and History, showcasing exceptional knowledge of magical arts and history.",
+    "additional_information": [
+        "Uses Dwarven Resilience for enhanced poison resistance.",
+        "Has a spell save DC of 15 for its spells.",
+        "Can use magic to control battlefield through wall of stone.",
+        "Versatile spellcaster with a mix of offensive and defensive capabilities.",
+        "Expert in manipulating enemies with color spray and other battlefield control spells."
+    ],
+    "damage_types": [],
+    "spellcasting": "Spellcaster using Intelligence with access to a variety of spells including color spray, expeditious retreat, and greater invisibility.",
+    "test_queries": [
+        "dwarf spellcaster with ring magic",
+        "magical tactician in combat",
+        "dwarven mage using battlefield control",
+        "spellcaster that resists poison attacks",
+        "powerful humanoid with offensive spells"
+    ]
+}

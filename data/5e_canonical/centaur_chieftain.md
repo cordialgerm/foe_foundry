@@ -1,6 +1,8 @@
 <MonsterName/>Centaur Chieftain</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>16</AC>
+<HP/>110</HP>
 <summary>The Centaur Chieftain is a large monstrosity characterized by its blend of brute strength and tactical leadership, functioning as a formidable combatant on the battlefield. This chaotic neutral creature has a strong physique, boasting a high Strength score and respectable Constitution, making it both a dangerous melee attacker and a resilient opponent. Its Dexterity allows for some agility, but it is not as pronounced as its strength. Notable strengths include its high hit points and several damaging attacks, while its overall average Intelligence can make it less strategic in certain contexts. The chieftain also commands its allies effectively through its Leadership ability, and its Charge ability can significantly amplify its damage output. However, it may struggle against more intelligent foes who can exploit its predictability in combat.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Lastly, the Rearing Strike, which can be used after a recharge period of 5-6, al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Centaur Chieftain
 
 *Large* *Monstrosity* *chaotic neutral*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Rearing Strike (Recharge 5-6):** The centaur chieftain rears back on its hind legs and makes a powerful stomp with its hooves. Each creature within 15 feet of the chieftain must make a DC 15 Dexterity saving throw, taking 28 (8d6) bludgeoning damage on a failed save, or half as much damage on a successful one. The attack leaves the centaur chieftain vulnerable, reducing its<br>Armor Class by 2 until the start of its next turn.
 
 
+</statblock>
 
 

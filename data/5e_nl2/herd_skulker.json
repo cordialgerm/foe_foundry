@@ -1,0 +1,50 @@
+{
+    "name": "Herd Skulker",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "shape-shifter",
+        "stealthy",
+        "cunning"
+    ],
+    "adjectives": [
+        "sneaky",
+        "deceptive",
+        "swift"
+    ],
+    "description": "The Herd Skulker is a medium monstrosity known for its cunning and stealthy nature, capable of shapeshifting into domesticated herd animals to blend in seamlessly.",
+    "memorable": "Unique shapeshifting ability allows it to deceive both animals and adventurers.",
+    "goals": "To manipulate its surroundings and avoid direct confrontation.",
+    "relations": "Can coexist with domesticated herd animals, perceived as part of their group.",
+    "environment": "Typically found in areas where domesticated herd animals reside.",
+    "strengths": "High dexterity enhances stealth capabilities and mobility.",
+    "weaknesses": "Low intelligence limits its effectiveness in mental tasks.",
+    "attacks": "Melee bite attack that can knock targets prone and deals significant piercing damage.",
+    "most_powerful_ability": "Change Shape allows it to become a herd animal, gaining advantage on stealth and deception checks.",
+    "equipment": null,
+    "senses": "Possesses keen hearing and smell, giving it advantage on perception checks reliant on those senses.",
+    "skills": "Proficient in perception, although with a modest bonus.",
+    "additional_information": [
+        "Immune to being charmed.",
+        "Can use Nimble Escape for tactical advantage.",
+        "Maintains the same statistics in animal form aside from size.",
+        "Ability to manipulate domesticated herd animals' perceptions.",
+        "Gains advantage on stealth and deception when in animal form."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy shape-shifting creature",
+        "cunning animal that can deceive",
+        "monstrosity that blends into herds",
+        "swift creature with biting attack",
+        "deceptive monster that manipulates surroundings"
+    ]
+}

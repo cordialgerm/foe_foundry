@@ -1,6 +1,8 @@
 <MonsterName/>Lizardfolk Shaman</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>57</HP>
 <summary>The Lizardfolk Shaman is a medium humanoid creature that functions as a spellcaster and a combatant in encounters. With an Armor Class of 13, it demonstrates good durability, maintaining a solid pool of 57 Hit Points. Its Challenge Rating of 2 indicates that it poses a moderate threat in combat scenarios. The shaman is adept in navigating its environment with a speed of 30 feet, climbing ability of 15 feet, and swimming ability of 30 feet, making it highly versatile in natural terrains. It possesses a variety of spellcasting capabilities and a potent set of attacks allowing it to inflict significant damage while also supporting its allies through healing and control spells. Although its attributes are mostly average, it shines with an exceptional Wisdom score of +5, enhancing its spells and perception.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Finally, as a bonus action, when the shaman has 32 Hit Points or fewer, it can u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizardfolk Shaman
 
 *Medium humanoid*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Poisoned Body (32 HP or Fewer).** The shaman coats itself in poison until the start of its next turn. It takes 3 (1d6) poison damage. In addition, the next time a creature hits the shaman with a melee attack while within 5 feet of the shaman before the start of the shaman’s next turn, the attacker takes 7 (2d6) poison damage.
 
+</statblock>
 
 

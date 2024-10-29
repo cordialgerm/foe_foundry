@@ -1,0 +1,25 @@
+{
+    "name": "Archpriest",
+    "queries": [
+        {
+            "query": "powerful humanoid healer adept at spellcasting and combat",
+            "variant": "strong human-like healer skilled in spells and fighting"
+        },
+        {
+            "query": "humanoid creature with high AC and healing abilities within a temple",
+            "variant": "human-like being with great Armor Class and healing powers found in a shrine"
+        },
+        {
+            "query": "spellcaster with significant radiant damage resistance and buffs for allies",
+            "variant": "caster with high resistance to radiant damage and support spells for companions"
+        },
+        {
+            "query": "tough humanoid with divine spells and skills in persuasion and medicine",
+            "variant": "durable human-like creature with holy spells and skills in healing and charm"
+        },
+        {
+            "query": "archpriest with powerful spells for both offense and defense in battles",
+            "variant": "high priest with strong spells for attacking and defending in combat"
+        }
+    ]
+}

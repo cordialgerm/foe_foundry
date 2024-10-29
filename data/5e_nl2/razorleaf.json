@@ -1,0 +1,55 @@
+{
+    "name": "Razorleaf",
+    "creature_type": "Plant",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 112,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "battlefield control",
+        "area damage",
+        "shadow effects"
+    ],
+    "adjectives": [
+        "shadowy",
+        "malevolent",
+        "potent",
+        "manipulative"
+    ],
+    "description": "The Razorleaf is a medium-sized plant creature, characterized by its shadowy effects and dangerous slashing leaves.",
+    "memorable": "Its ability to control the battlefield with its Dark Ground ability and inflict area damage with Shower of Razors makes it a formidable foe.",
+    "goals": "The Razorleaf often seeks to hinder and harm intruders, using its area manipulation and damage abilities to control its territory.",
+    "relations": "Often found in areas with other plants or creatures that would benefit from shadowy terrain.",
+    "environment": "Preferably in dark forested areas or landscapes where it can use its shadowy abilities effectively.",
+    "strengths": "Possesses strong battlefield control capabilities and can deal substantial damage with melee attacks and area effects.",
+    "weaknesses": "Vulnerable to fire damage, which can bypass its defenses and significantly weaken it.",
+    "attacks": "Uses lacerating leaves for melee attacks and can unleash a devastating shower of slicing leaves for area damage.",
+    "most_powerful_ability": "Shower of Razors, which deals significant damage to multiple foes in the vicinity.",
+    "equipment": null,
+    "senses": "The Razorleaf has blindsight up to 60 feet, allowing it to perceive its surroundings without needing sight.",
+    "skills": "Possesses a perception skill bonus of +4, aiding it in detecting hidden creatures.",
+    "additional_information": [
+        "Immunity to conditions like blinded, deafened, and exhausted.",
+        "Creates difficult terrain with its Dark Ground ability.",
+        "Inflicts damage to attackers with its Do Not Touch ability.",
+        "Nonmagical light is less effective in its shadowy area.",
+        "Can charm small creatures within its shadowy terrain."
+    ],
+    "damage_types": [
+        "necrotic",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature that creates shadowy terrain",
+        "dangerous plant with slashing leaves",
+        "creature that manipulates shadows and inflicts damage",
+        "controller plant in dark forest environments",
+        "monster with area damage ability"
+    ]
+}

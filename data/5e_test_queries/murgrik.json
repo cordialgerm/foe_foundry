@@ -1,0 +1,25 @@
+{
+    "name": "Murgrik",
+    "queries": [
+        {
+            "query": "large chaotic evil creature that can grapple and fly",
+            "variant": "chaotic evil large creature that can grapple and flies"
+        },
+        {
+            "query": "aquatic beast with a terrifying wail and blood frenzy",
+            "variant": "beast that lives in water with scary wail and blood frenzy ability"
+        },
+        {
+            "query": "dangerous monster with high mobility and acid damage",
+            "variant": "monster with high mobility and acid damage potential"
+        },
+        {
+            "query": "unsettling creature with tentacles and low intelligence",
+            "variant": "creature that is unsettling, has tentacles, and has weak intelligence"
+        },
+        {
+            "query": "Murgrik's abilities to fear and restrain opponents",
+            "variant": "Murgrik's power to instill fear and hold opponents back"
+        }
+    ]
+}

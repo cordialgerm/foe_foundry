@@ -1,0 +1,50 @@
+{
+    "name": "Shark, Hunter",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Large",
+    "hp": 63,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "predator",
+        "beast"
+    ],
+    "adjectives": [
+        "predatory",
+        "fast",
+        "vicious"
+    ],
+    "description": "The Hunter Shark is a large, predatory beast with keen senses and a streamlined body, adapted for swift movement in water.",
+    "memorable": "Its Blood Frenzy ability makes it especially lethal against injured opponents, enhancing its attack capabilities.",
+    "goals": "The Hunter Shark seeks to hunt and incapacitate prey in its aquatic environment.",
+    "relations": "Related to other large aquatic creatures, potentially encountered alongside other predatory sharks or marine beasts.",
+    "environment": "Typically found in underwater environments, thriving in oceans and large bodies of water.",
+    "strengths": "Possesses enhanced attack abilities against weakened foes and can track injured creatures for great distances.",
+    "weaknesses": "Limited versatility on land, making it vulnerable in terrestrial encounters and incapacitated by lightning damage.",
+    "attacks": "Utilizes multiple ferocious bite attacks that can deal significant piercing damage.",
+    "most_powerful_ability": "Blood Sense, allowing it to detect injured creatures from a distance.",
+    "equipment": null,
+    "senses": "Has keen scent, allowing it to track injured creatures within a range of 60 feet.",
+    "skills": "Moderate perception, capable of noticing its surroundings but not excelling in perception checks.",
+    "additional_information": [
+        "Water Breathing ability restricts its survival to underwater environments.",
+        "Can perform a multiattack with two bite attacks per turn.",
+        "Electrical Sensitivity makes it vulnerable to lightning damage.",
+        "Can move swiftly towards enemies without provoking opportunity attacks.",
+        "Strongly relies on the aquatic environment for combat effectiveness."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large predatory shark in water",
+        "fast swimming predator with keen smell",
+        "marine hunter with a deadly bite",
+        "aquatic beast that tracks injured creatures",
+        "lightning vulnerable shark that hunts underwater"
+    ]
+}

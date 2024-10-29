@@ -1,6 +1,8 @@
 <MonsterName/>Divi</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>11</CR>
+<AC/>18</AC>
+<HP/>172</HP>
 <summary>The Divi is a large elemental creature known for its formidable physical presence and unique abilities related to earth and stone manipulation. With an impressive Armor Class of 18 and a substantial pool of 172 hit points, the Divi can endure significant damage in combat. It boasts high Strength and Constitution scores, allowing it to deal and withstand heavy damage effectively. However, its Intelligence, Wisdom, and Charisma are notably low, which limits its skillful interactions and magical prowess. The Divi excels in melee combat, utilizing two main attack options: the Crushing Hand and the Stone Club, both of which deliver substantial damage. Its Earth Glide ability enhances its mobility by allowing it to burrow through terrain without any disturbance, making it an unpredictable threat. Additionally, its innate spellcasting provides versatility, enabling strategic plays in various situations, particularly with spells like creation and move earth. Overall, the Divi is a powerful combatant with excellent resistances and immunities, particularly against conditions such as petrification, but with limited interaction options due to lower mental attributes.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Divi can invoke its Stone Wall ability once per day, summ
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Divi
 
 *Large* *Elemental*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Stone Wall (1/Day):** A permanent stone wall magically rises from an earth or stone surface within 60 feet. The wall is 6 inches thick and can be up to 20 feet high and 30 feet long. If it appears in a creatures space, the creature can choose which side of the wall to move to. Each 10-foot-by-10-foot section of the wall is an object with AC 18 and 30 hit points.
 
 
+</statblock>
 
 

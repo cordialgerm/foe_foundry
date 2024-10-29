@@ -1,0 +1,25 @@
+{
+    "name": "Skeletal Warhorse",
+    "queries": [
+        {
+            "query": "undead horse with charging abilities that lacks social intelligence",
+            "variant": "horse that is undead and charges while being not smart"
+        },
+        {
+            "query": "large undead creature that serves necromancers and has fast movement",
+            "variant": "fast moving large skeletal creature that aids necromancers"
+        },
+        {
+            "query": "creature immune to poison that can knock targets prone",
+            "variant": "monster that is immune to poison and can make enemies fall"
+        },
+        {
+            "query": "warhorse-like undead mount with bludgeoning vulnerability",
+            "variant": "mount resembling a warhorse that is undead and weak to bludgeoning"
+        },
+        {
+            "query": "Skeletal Warhorse tactics in combat with 50 ft movement",
+            "variant": "combat tactics of a Skeletal Warhorse that moves 50 feet"
+        }
+    ]
+}

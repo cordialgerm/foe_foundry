@@ -1,0 +1,25 @@
+{
+    "name": "Brumalek",
+    "queries": [
+        {
+            "query": "small agile beast that lives in snowy terrains and has pack tactics",
+            "variant": "small beast that is agile and lives in the snow, using pack tactics"
+        },
+        {
+            "query": "creature with thunder immunity that can move through snow without a trace",
+            "variant": "animal immune to thunder that stealthily moves in snow"
+        },
+        {
+            "query": "beast with high dexterity that can deal thunder damage with its howl",
+            "variant": "creature with great dexterity that can inflict thunder damage through howling"
+        },
+        {
+            "query": "brumalek ability to burrow through snow and its weapon attack options",
+            "variant": "brumalek's burrowing capability in snow and options for weapon attacks"
+        },
+        {
+            "query": "small beast that excels in ambushes and has poor strength",
+            "variant": "small creature suited for ambushing that also has low strength"
+        }
+    ]
+}

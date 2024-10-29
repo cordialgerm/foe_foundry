@@ -1,0 +1,25 @@
+{
+    "name": "Giant Mantis Shrimp",
+    "queries": [
+        {
+            "query": "large colorful beast that can swim and burrow",
+            "variant": "huge vivid creature that swims and digs"
+        },
+        {
+            "query": "powerful melee shrimp with thunder damage abilities",
+            "variant": "strong clawed shrimp that deals thunder damage"
+        },
+        {
+            "query": "monster that can grapple and stun enemies while fighting",
+            "variant": "creature that grapples and incapacitates foes in combat"
+        },
+        {
+            "query": "aggressive beast with high strength and low intelligence",
+            "variant": "ferocious creature having great strength but poor intelligence"
+        },
+        {
+            "query": "creature with truesight that uses water jets in battle",
+            "variant": "being with true sight that employs water jets during fights"
+        }
+    ]
+}

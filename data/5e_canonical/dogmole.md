@@ -1,6 +1,8 @@
 <MonsterName/>Dogmole</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>58</HP>
 <summary>The Dogmole is a medium-sized beast that serves as a formidable yet unaligned creature in the wild. With its strong physical attributes and unique burrowing abilities, the Dogmole is capable of navigating underground terrain, making it an interesting foe for adventurers who may find themselves in its territory. It boasts a solid Armor Class of 14 and a decent pool of hit points totaling 58, which allows it to withstand moderate amounts of damage in combat. Its overall challenge rating of 1 indicates it should present a reasonable encounter for low-level adventurers, providing both physical attacks and a special reaction ability that can turn the tide in battle. However, its weaknesses lie in its low Intelligence, lack of magical abilities, and vulnerability to overwhelming force from multiple foes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of reactions, the Dogmole can access its "Wormkiller Rage" when it take
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dogmole
 
 *Medium* *Beast* *Unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Wormkiller Rage:** When the dogmole takes damage from a Small or larger insectoid Beast, such as a giant centipede, or when it deals damage to such a creature, it enters a special rage for 3 rounds. While in this rage, it has advantage on attack rolls and Strength checks and deals an extra 2 (1d4) piercing damage with its Bite attack, but its Armor Class is reduced by 2. The dogmole can’t end this rage willingly.
+</statblock>
 
 

@@ -1,0 +1,53 @@
+{
+    "name": "Mamura",
+    "creature_type": "Aberration",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 112,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. walking and 20 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "aberration",
+        "flying",
+        "stealthy",
+        "spell disruptor"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "deceptive"
+    ],
+    "description": "The Mamura is a small aberration characterized by its deceitful nature and agile physique, standing out with its colorful, alien-like form and distinctively vibrant eyes.",
+    "memorable": "Known for its ability to disrupt spellcasting and evade attacks, the Mamura is particularly dangerous to unprepared spellcasters.",
+    "goals": "To subvert enemies through cunning tactics, particularly targeting spellcasters.",
+    "relations": "May associate with other aberrations or creatures that share common goals in deception.",
+    "environment": "Typically found in dark, mysterious locales, often in hidden lairs or areas shunned by other creatures.",
+    "strengths": "High Dexterity and Constitution allow it to avoid attacks and withstand damage effectively; possesses significant resistances to nonmagical physical damage.",
+    "weaknesses": "Low Strength and Wisdom make it ineffective in direct confrontations and susceptible to mental challenges.",
+    "attacks": "Utilizes three Claw attacks that deal slashing damage and a Whiptail Stinger attack that inflicts piercing and poison damage.",
+    "most_powerful_ability": "Distracting Babble disrupts enemy spellcasting by forcing them to make Constitution saving throws to maintain concentration.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and a passive perception score of 16, enhancing its ability to detect threats and navigate.",
+    "skills": "Profoundly skilled in Acrobatics, Stealth, and Perception, making it both evasive and highly aware of its surroundings.",
+    "additional_information": [
+        "Resistant to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
+        "Advantages on saving throws against spells and magical effects.",
+        "Ability to hide while in dim light or darkness.",
+        "Versatile combat style that includes both melee attacks and disruptive abilities.",
+        "Special ability to negate advantages attackers gain from allies."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "aberration that disrupts spellcasting",
+        "creature with ability to evade spells",
+        "small agile monster with poison attack",
+        "deceptive flying creature in darkness",
+        "cunning skirmisher with claw and stinger"
+    ]
+}

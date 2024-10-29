@@ -1,0 +1,54 @@
+{
+    "name": "Forest Hunter",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 104,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walks at 30 feet speed",
+    "role": "Skirmisher",
+    "tags": [
+        "hunter",
+        "stealth",
+        "forest",
+        "urban"
+    ],
+    "adjectives": [
+        "deadly",
+        "stealthy",
+        "precise",
+        "charismatic"
+    ],
+    "description": "The Forest Hunter is a cunning humanoid adept at blending into its surroundings with exceptional stealth and precision. It wields a dagger and longbow, equipped with a chain shirt for protection.",
+    "memorable": "It can teleport between shadows, leaving behind traces of inky smoke, making it hard to track.",
+    "goals": "To track and ambush prey in forested or urban environments.",
+    "relations": "Related to other humanoid predators and fey creatures.",
+    "environment": "Often found in forests and urban settings.",
+    "strengths": "Exceptional stealth and tracking abilities, with powerful ambush tactics.",
+    "weaknesses": "Sensitivity to sunlight, suffering disadvantage on attacks and perception in bright light.",
+    "attacks": "Uses a dagger for lethal close combat and a longbow for deadly ranged strikes, both dealing poison damage.",
+    "most_powerful_ability": "Shadow Traveler allows it to teleport from shadow to shadow, enhancing its evasiveness.",
+    "equipment": "Wields a dagger and longbow, wears a chain shirt.",
+    "senses": "Possesses keen tracking abilities with advantage on Perception and Survival checks for tracking.",
+    "skills": "Expert in Stealth with a significant bonus, making it exceptionally difficult to detect.",
+    "additional_information": [
+        "Has Evasion to avoid damage from area attacks.",
+        "Fey Ancestry grants advantages against charm effects.",
+        "Charging Archer allows for bonus dagger attacks after longbow strikes.",
+        "Sensitive to sunlight impacting its effectiveness in bright environments.",
+        "Can make dual attacks with either weapon type."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy hunter in urban environments",
+        "humanoid that moves through shadows",
+        "master tracker with poison attacks",
+        "deadly ambusher skilled in forest stealth",
+        "hunter weakened by sunlight"
+    ]
+}

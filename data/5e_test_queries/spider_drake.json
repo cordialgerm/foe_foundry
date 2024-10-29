@@ -1,0 +1,25 @@
+{
+    "name": "Spider Drake",
+    "queries": [
+        {
+            "query": "large dragon that can climb and fly while using poison",
+            "variant": "large drake that can fly and climb while using poison"
+        },
+        {
+            "query": "creature with sticky web abilities that can fly",
+            "variant": "creature that can fly and has sticky web powers"
+        },
+        {
+            "query": "dragon that has a multiattack and poison breath",
+            "variant": "drake with poison breath and can perform multiattacks"
+        },
+        {
+            "query": "large evil dragon that is immune to poison",
+            "variant": "big wicked drake that is immune to poison damage"
+        },
+        {
+            "query": "monster with high AC that relies on webbing in combat",
+            "variant": "monster that has high armor class and uses webbing in battle"
+        }
+    ]
+}

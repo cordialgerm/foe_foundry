@@ -1,0 +1,50 @@
+{
+    "name": "Shadhavar",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 82,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "fast with a walking speed of 50 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "charm",
+        "darkness"
+    ],
+    "adjectives": [
+        "graceful",
+        "dangerous",
+        "deceptive"
+    ],
+    "description": "The Shadhavar is a large monstrosity with a hollow horn and hooves, embodying both elegance and threat.",
+    "memorable": "Its ability to create a magical darkness that cannot be pierced by darkvision makes it a formidable opponent.",
+    "goals": "To isolate and incapacitate foes using its charm and darkness abilities.",
+    "relations": "Could be found with other stealthy or darkness-themed creatures.",
+    "environment": "Often encountered in dark or enchanted forests.",
+    "strengths": "Good stealth ability and the power to charm enemies, drastically altering battle dynamics.",
+    "weaknesses": "Low intelligence, making it less strategic in complex scenarios.",
+    "attacks": "Utilizes Gore and Hooves melee attacks, dealing piercing and bludgeoning damage respectively.",
+    "most_powerful_ability": "Darkness Aura creates magical darkness that negates darkvision, providing tactical advantage.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet but can see through magical darkness.",
+    "skills": "Has a proficient Stealth skill, allowing it to remain undetected effectively.",
+    "additional_information": [
+        "Magic Horn makes Gore attacks magical, bypassing defenses against non-magical attacks.",
+        "Shadesight ability allows it to see normally in magical darkness.",
+        "Can charm multiple foes within range with its Plaintive Melody ability.",
+        "Creates a thick magical darkness that moves with it, persisting for up to 10 minutes.",
+        "Has an impressive mobility with a walking speed of 50 feet."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large creature with a magical horn",
+        "stealthy monster that creates magical darkness",
+        "dangerous charm-using monstrosity in forests",
+        "creature with a captivating melody and hooves",
+        "fast monstrosity that excels in subterfuge"
+    ]
+}

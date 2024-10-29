@@ -1,0 +1,25 @@
+{
+    "name": "Wight",
+    "queries": [
+        {
+            "query": "undead creature that drains life and commands minions",
+            "variant": "undead entity that commands zombies and drains life"
+        },
+        {
+            "query": "malicious spirit found in dark locations that can create new undead",
+            "variant": "evil spirit located in darkness that raises dead"
+        },
+        {
+            "query": "cold aura undead that is weak in sunlight",
+            "variant": "undead with cold aura sensitive to sunlight"
+        },
+        {
+            "query": "creature with darkvision and stealth that excels in combat",
+            "variant": "monster with stealth and darkvision strong in battle"
+        },
+        {
+            "query": "character with high Constitution and Charisma that drains health",
+            "variant": "being with good Constitution and Charisma that steals health"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Eye Golem",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 157,
+    "ac": 20,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "golem",
+        "construct",
+        "guardian"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "radiant"
+    ],
+    "description": "The Eye Golem is a Large Construct, characterized by its glowing eyes and towering figure, making it both intimidating and impressive. Its body is built for resilience and strength, equipped with magical fists that deliver radiant damage.",
+    "memorable": "Can blind enemies permanently and is immune to many conditions.",
+    "goals": "Typically serves as a guardian or tool for its creator, defending places or objects.",
+    "relations": "Commonly created by powerful spellcasters or artisans who seek a loyal guardian.",
+    "environment": "Often found in arcane laboratories, ancient ruins, or as protectors of important treasures.",
+    "strengths": "Significant hit points and strong damage output with both melee and area effects.",
+    "weaknesses": "Low Dexterity makes it vulnerable to ranged attacks.",
+    "attacks": "Delivers devastating melee attacks enhanced with radiant damage; can blind foes with its gaze.",
+    "most_powerful_ability": "Gaze of Ancient Light allows it to deal massive radiant damage and potentially blind and stun enemies.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, allowing it to see invisible creatures and objects.",
+    "skills": "Has a keen perception with a +8 modifier, making it alert to its surroundings.",
+    "additional_information": [
+        "Deals extra radiant damage with its melee attacks.",
+        "Immune to nonmagical damage unless made with adamantine.",
+        "Cannot be altered by spells or effects that change its form.",
+        "Does not require air, food, drink, or sleep."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct with blinding gaze",
+        "large guardian golem with radiant fists",
+        "magical eye golem immune to alterations",
+        "golem that blinds foes permanently",
+        "powerful construct with truesight"
+    ]
+}

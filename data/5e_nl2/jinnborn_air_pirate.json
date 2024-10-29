@@ -1,0 +1,52 @@
+{
+    "name": "Jinnborn Air Pirate",
+    "creature_type": "Humanoid",
+    "alignment": "non-lawful",
+    "size": "Medium",
+    "hp": 26,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet walk speed",
+    "role": null,
+    "tags": [
+        "air",
+        "lightning",
+        "pirate"
+    ],
+    "adjectives": [
+        "versatile",
+        "agile",
+        "elemental"
+    ],
+    "description": "The Jinnborn Air Pirate embodies the essence of air and lightning, characterized by its flamboyant style and elemental powers.",
+    "memorable": "Its ability to deal additional lightning damage and execute evasive maneuvers makes it a formidable opponent in combat.",
+    "goals": "Typically seeks adventure on airships, engaging in piracy or exploration.",
+    "relations": "May be encountered with other air or lightning-themed creatures, such as elementals or storm sorcerers.",
+    "environment": "Commonly found aboard airships or in stormy regions.",
+    "strengths": "Resists lightning damage and excels in mobility and naval navigation.",
+    "weaknesses": "Moderate hit points and dependence on dexterity makes it vulnerable in protracted fights.",
+    "attacks": "Uses a rapier for melee, dealing piercing plus lightning damage, and a shortbow for ranged attacks, also incorporating lightning damage.",
+    "most_powerful_ability": "Elemental Weapons enhance weapon damage with an extra 1d6 lightning on successful hits.",
+    "equipment": "Wields a rapier and a shortbow.",
+    "senses": "Possesses darkvision, allowing it to see in dim light as if it were bright.",
+    "skills": "Skilled in navigation, particularly with airships or sandships, gaining proficiency bonuses.",
+    "additional_information": [
+        "Can use Parry as a reaction to bolster defense against melee attacks.",
+        "Ability to add Charisma to AC when unarmored.",
+        "Moderate challenge for low-level adventurers.",
+        "Embodies the spirit of non-lawful piracy.",
+        "Favors flamboyant personal style reflective of its elemental nature."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "lightning infusing pirate creature",
+        "humanoid air elemental fighter",
+        "swashbuckling jinnborn with lightning powers",
+        "agile pirate navigating airships",
+        "elemental pirate skilled in melee"
+    ]
+}

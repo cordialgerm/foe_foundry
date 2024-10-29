@@ -1,0 +1,25 @@
+{
+    "name": "Demon, Inciter",
+    "queries": [
+        {
+            "query": "chaotic evil flying demon that manipulates allies in combat",
+            "variant": "flying demon that is chaotic evil and causes allies to turn against each other"
+        },
+        {
+            "query": "insidious demon with psychic aura that disrupts combat strategies",
+            "variant": "demon that disrupts strategies in battle using a psychic aura"
+        },
+        {
+            "query": "demon with the ability to become invisible and create distrust among friends",
+            "variant": "invisible demon that causes allies to distrust each other"
+        },
+        {
+            "query": "medium fiend with malicious attacks and psychological abilities",
+            "variant": "fiend that is medium-sized and has malign attacks and mind-manipulating abilities"
+        },
+        {
+            "query": "creature that uses Inspire Violence to turn allies against each other",
+            "variant": "monster that uses Inspire Violence ability to make allies attack one another"
+        }
+    ]
+}

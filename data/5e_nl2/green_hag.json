@@ -1,0 +1,49 @@
+{
+    "name": "Green Hag",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 17,
+    "srd": true,
+    "cr": "3",
+    "movement": "30 feet walking speed",
+    "role": "Controller",
+    "tags": [
+        "fey",
+        "hag",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "malevolent",
+        "cunning",
+        "deceptive"
+    ],
+    "description": "A hideous creature with gnarled, sickly green skin and long, clawed hands.",
+    "memorable": "Known for manipulating and tormenting victims, using illusions and dark magic.",
+    "goals": "Thrives on the misery of others and lures unsuspecting victims into traps.",
+    "relations": "May be allied with other fey creatures or dark entities, frequently acts independently.",
+    "environment": "Dark forests, swamps, or caves.",
+    "strengths": "Innate spellcasting, ability to deceive, and cursed hexes that debilitate foes.",
+    "weaknesses": "Vulnerable to certain damage types and relies on spells for combat advantage.",
+    "attacks": "Multiattack with claws dealing slashing damage and using Hex to debilitate targets.",
+    "most_powerful_ability": "Hex, which curses targets with debilitating effects lasting 30 days.",
+    "senses": "Possesses a passive perception of 14, reflecting good awareness of surroundings.",
+    "skills": "Skilled in deception and stealth, making it adept at manipulation and surprise attacks.",
+    "additional_information": [
+        "Amphibious trait allows breathing in both air and water.",
+        "Can mimic animal sounds and humanoid voices to create confusion.",
+        "Innate spellcasting allows casting various spells at will.",
+        "Illusory appearance to disguise its true form.",
+        "Can turn invisible for stealthy tactics."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcaster capable of casting spells like invisibility and minor illusion without material components.",
+    "test_queries": [
+        "cunning fey with green skin and claws",
+        "malevolent forest creature that uses illusions",
+        "swamp dwelling hag with magic powers",
+        "monster that curses its victims with hexes",
+        "deceptive creature that thrives on others' misery"
+    ]
+}

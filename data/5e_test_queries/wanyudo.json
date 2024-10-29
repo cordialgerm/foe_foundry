@@ -1,0 +1,25 @@
+{
+    "name": "Wanyudo",
+    "queries": [
+        {
+            "query": "large fiend with fiery breath that attacks holy symbols",
+            "variant": "large fiend that breathes fire and targets holy symbols"
+        },
+        {
+            "query": "sinister monster that has two heads and strong fire resistance",
+            "variant": "sinister creature with two heads and high resistance to fire"
+        },
+        {
+            "query": "durable creature with high hit points and melee attack strength",
+            "variant": "durable monster with a lot of hit points and strong melee attacks"
+        },
+        {
+            "query": "lawful evil creature that excels in intimidation and darkvision",
+            "variant": "lawful evil monster that is good at intimidation and has darkvision"
+        },
+        {
+            "query": "fiend with a challenge rating of 8 skilled in religion",
+            "variant": "fiend with CR 8 and expertise in religious matters"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Akanka",
+    "queries": [
+        {
+            "query": "fey creature that uses illusions and can climb walls",
+            "variant": "fey creature that climbs walls and uses illusions"
+        },
+        {
+            "query": "chaotic evil monster with a confusing duplicate ability",
+            "variant": "monster with a confusing duplicate ability that's chaotic evil"
+        },
+        {
+            "query": "medium-sized deceptive fey that can leave targets unconscious",
+            "variant": "deceptive medium fey that can leave targets unconscious"
+        },
+        {
+            "query": "creature with web abilities that strike from shadows",
+            "variant": "creature that strikes from shadows and has web abilities"
+        },
+        {
+            "query": "monster with high charisma and spellcasting that creates illusions",
+            "variant": "monster that creates illusions and has high charisma and spellcasting"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Orphan of the Black",
+    "queries": [
+        {
+            "query": "small fey creature that incites violence and avoids direct combat",
+            "variant": "fey that is small and incites violence while avoiding direct combat"
+        },
+        {
+            "query": "manipulative chaos-loving creature with a defense against melee attacks",
+            "variant": "chaos-loving manipulative creature that has defense against melee"
+        },
+        {
+            "query": "neutral evil fey that can make others attack each other",
+            "variant": "fey with neutral evil alignment who makes others attack one another"
+        },
+        {
+            "query": "agile creature that can sense lawful beings and transmit pain",
+            "variant": "quick creature that senses lawful creatures and also transmits pain"
+        },
+        {
+            "query": "elf-like fey that relies on charm and manipulation in battle",
+            "variant": "fey resembling an elf that manipulates and charms in battle"
+        }
+    ]
+}

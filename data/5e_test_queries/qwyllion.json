@@ -1,0 +1,25 @@
+{
+    "name": "Qwyllion",
+    "queries": [
+        {
+            "query": "medium-sized evil aberration with a nauseating stench",
+            "variant": "medium evil aberration with nauseating stench"
+        },
+        {
+            "query": "creature with high Dexterity and psychic damage attacks",
+            "variant": "monster with high Dexterity and psychic attack damage"
+        },
+        {
+            "query": "poisonous creature that can charm humanoids",
+            "variant": "creature that charms humanoids and has a poisonous ability"
+        },
+        {
+            "query": "Qwyllion's magical abilities and darkvision",
+            "variant": "magical abilities and darkvision of the Qwyllion"
+        },
+        {
+            "query": "aberration that raises specters and has a claw attack",
+            "variant": "aberration that can raise specters and use claw attacks"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Husk Demon",
+    "queries": [
+        {
+            "query": "fiendish demon that drains life and feeds on hopes",
+            "variant": "demon that feeds on hopes and drains life"
+        },
+        {
+            "query": "medium demon with darkvision and resistance to fire damage",
+            "variant": "demon with darkvision and fire resistance, medium size"
+        },
+        {
+            "query": "creature that can fly and uses soul feeding abilities",
+            "variant": "creature that uses soul feed and can fly"
+        },
+        {
+            "query": "life-draining fiend with high dexterity and low charisma",
+            "variant": "fiend that drains life, has high dexterity and low charisma"
+        },
+        {
+            "query": "stealthy demon that can maneuver through tight spaces",
+            "variant": "demon that can move through tight spaces and is stealthy"
+        }
+    ]
+}

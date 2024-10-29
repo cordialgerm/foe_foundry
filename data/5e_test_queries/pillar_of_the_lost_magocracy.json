@@ -1,0 +1,25 @@
+{
+    "name": "Pillar of the Lost Magocracy",
+    "queries": [
+        {
+            "query": "huge construct that uses magical abilities to control combat",
+            "variant": "construct that is huge and utilizes magic to manipulate combat"
+        },
+        {
+            "query": "pillar that punishes melee attackers with lightning damage",
+            "variant": "pillar that zaps close combat attackers with lightning"
+        },
+        {
+            "query": "magical guardian with ability to create difficult terrain",
+            "variant": "guardian that can magically create tough terrain"
+        },
+        {
+            "query": "chaotic neutral construct with high intelligence and low dexterity",
+            "variant": "intelligent yet clumsy chaotic neutral construct"
+        },
+        {
+            "query": "magically powerful structure immune to poison attacks",
+            "variant": "powerful magical construct that is immune to poison"
+        }
+    ]
+}

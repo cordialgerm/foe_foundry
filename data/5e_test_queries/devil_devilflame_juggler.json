@@ -1,0 +1,25 @@
+{
+    "name": "Devilflame Juggler",
+    "queries": [
+        {
+            "query": "large fiend that deals fire damage and has fire immunity",
+            "variant": "big fiend that does fire damage and is immune to fire"
+        },
+        {
+            "query": "agile devil that uses magic and jumps high",
+            "variant": "nimble devil that employs magic and can leap high"
+        },
+        {
+            "query": "tricky fiend with Dizzying Movement ability and can communicate telepathically",
+            "variant": "sly fiend with Dizzying Movement skill and has telepathic communication"
+        },
+        {
+            "query": "lawful evil fiend that excels in combat and can stealth in darkness",
+            "variant": "lawful evil fiend skilled in battles and can hide in dark"
+        },
+        {
+            "query": "fiend that can split fireballs and ignite flammable objects",
+            "variant": "devil that can divide fireballs and catch flammable things on fire"
+        }
+    ]
+}

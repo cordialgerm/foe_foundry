@@ -1,0 +1,57 @@
+{
+    "name": "Trollkin Ragecaster",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 112,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "spellcaster",
+        "rager",
+        "elemental"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "adaptive",
+        "vulnerable to fire",
+        "spellcasting"
+    ],
+    "description": "The Trollkin Ragecaster is a medium humanoid with thick skin, known for its chaotic nature and exceptional spellcasting abilities. It can transition between melee combat with brutal claws and elemental spellcasting.",
+    "memorable": "Notable for its regenerative abilities and unique Ragecasting that allows it to fly and cast spells simultaneously.",
+    "goals": "Engages in chaotic battles, utilizing both physical and magical attacks.",
+    "relations": "Related to other humanoid spellcasters; may be encountered alongside elemental creatures.",
+    "environment": "Typically found in stylized battle arenas or chaotic magical locales.",
+    "strengths": "Possesses strong regenerative capabilities, magic resistance, and versatility in combat.",
+    "weaknesses": "Vulnerable to fire and acid, which can nullify its regeneration.",
+    "attacks": "Can perform two claw attacks or powerful elemental blasts, dealing significant damage.",
+    "most_powerful_ability": "Ragecasting allows enhanced mobility and the ability to cast spells while flying.",
+    "equipment": null,
+    "senses": "It has a passive Perception of 15, allowing it to detect threats effectively.",
+    "skills": "Has proficiency in perception, showcasing average insight abilities.",
+    "additional_information": [
+        "Brutal Claws enhance claw damage when not ragecasting.",
+        "Magic Resistance gives advantage against spells.",
+        "Regeneration allows it to recover health unless hit by specific damage types.",
+        "Can call down lightning or unleash fireballs as part of its spellcasting abilities.",
+        "Ragecasting grants it increased mobility while casting spells."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Can cast Thunderwave at will, Call Lightning three times a day, Fireball once per day, and activate Fire Shield once per day.",
+    "test_queries": [
+        "formidable spellcaster with claws",
+        "Trollkin creature that regenerates health",
+        "ragecaster that flies while casting spells",
+        "humanoid with strong elemental abilities",
+        "vulnerable creature to fire and acid"
+    ]
+}

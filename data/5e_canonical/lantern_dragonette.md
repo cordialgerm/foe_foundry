@@ -1,6 +1,8 @@
 <MonsterName/>Lantern Dragonette</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>28</HP>
 <summary>The Lantern Dragonette is a tiny lawful neutral dragon known for its distinct ability to create and manipulate light. This creature possesses decent mobility with a walking speed of 40 feet and limited flying capabilities of 15 feet. With a Challenge Rating of 1/2, it presents a minor threat to adventurers but can surprise them with its fire breath and magical abilities. The dragonette boasts good Intelligence, allowing it to excel in areas such as Arcana, History, Nature, and Religion, making it a wise companion or guardian of hidden knowledge. However, its low Strength score leaves it somewhat vulnerable in close combat, relying on its bite attack and breath weapon for offense.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ It also has a notable bonus action called Lantern Belly. This ability allows the
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lantern Dragonette
 
 *Tiny* *Dragon* *Lawful Neutral*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Lantern Belly:** The dragonette sheds bright light in a 20-foot radius and dim light for an additional 20 feet or stops shedding light. To shed light, it must have eaten at least 4 ounces of candle wax in the past 24 hours. It can shed light for up to 1 hour for every 4 ounces of candle wax it has eaten in the past 24 hours, to a maximum of 4 hours every 24 hours.
+</statblock>
 
 

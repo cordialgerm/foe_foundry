@@ -1,6 +1,8 @@
 <MonsterName/>Ice Willow</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Ice Willow is a large, neutral plant creature characterized by its formidable defenses and chilling attacks. With a challenge rating of 6 and a significant experience value of 2,300, it poses a considerable threat to adventurers. The Ice Willow's natural armor provides it with a good Armor Class of 15, and its remarkable pool of 142 hit points makes it durable in combat. While it is exceptionally resistant to cold damage and has decent resistances to lightning and slashing damage, it is notably vulnerable to fire—a weakness that can easily be exploited by clever adventurers. Its false appearance allows it to blend in with its environment, making it challenging to detect until it is too late. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Ice Willow is a tactical and resilient enemy that can control the b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Willow
 
 *Large* *Plant* *neutral*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Melting Icicles:** When the ice willow takes fire it can immediately use Icicle Drop if available.
 
 
+</statblock>
 
 

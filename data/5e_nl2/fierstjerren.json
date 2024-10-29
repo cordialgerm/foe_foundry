@@ -1,0 +1,51 @@
+{
+    "name": "Fierstjerren",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "manipulator",
+        "necrotic"
+    ],
+    "adjectives": [
+        "ominous",
+        "formidable",
+        "manipulative"
+    ],
+    "description": "The Fierstjerren is a medium undead creature characterized by its ominous appearance and a dark aura of malevolence.",
+    "memorable": "Its ability to charm and control humanoid victims while becoming more dangerous when wounded makes it a formidable foe.",
+    "goals": "To dominate and control living beings as thralls for its dark purposes.",
+    "relations": "May serve in association with other undead or dark cults.",
+    "environment": "Typically found in dark, sinister locations or amidst undead cults.",
+    "strengths": "Immunities to necrotic and poison damage and several conditions make it resilient in combat.",
+    "weaknesses": null,
+    "attacks": "Makes two melee attacks with a sword, dealing consistent slashing damage.",
+    "most_powerful_ability": "Apotheosis, which enhances its necrotic damage based on current hit points.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has proficiency in perception, allowing it to notice hidden threats effectively.",
+    "additional_information": [
+        "Immunities to conditions like frightened and charmed enhance combat effectiveness.",
+        "Can have up to twelve thralls under its command.",
+        "Terrifying Glare can frighten opponents, disrupting their actions."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that enslaves thralls",
+        "ominous undead with necrotic powers",
+        "creature that becomes stronger when injured",
+        "undead manipulator with terrifying glare",
+        "medium undead controlling humanoids"
+    ]
+}

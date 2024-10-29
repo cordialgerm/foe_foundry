@@ -1,0 +1,25 @@
+{
+    "name": "Subek",
+    "queries": [
+        {
+            "query": "large humanoid creature with flood season aggression and strong melee attacks",
+            "variant": "huge humanoid monster that becomes aggressive during floods and has powerful melee abilities"
+        },
+        {
+            "query": "creature with natural armor that prioritizes attacking injured foes in frenzy",
+            "variant": "monster with natural defenses that focuses on attacking hurt enemies when in a frenzy"
+        },
+        {
+            "query": "bloodthirsty humanoid that can hold its breath and has darkvision",
+            "variant": "bloodthirsty large monster capable of holding breath and possessing darkvision"
+        },
+        {
+            "query": "Subek's multiattack feature that includes bite and claw actions",
+            "variant": "Subek's ability to perform multiple attacks, including claws and bite"
+        },
+        {
+            "query": "humanoid with high strength and aggressive flood behavior",
+            "variant": "strong humanoid being that exhibits violent behavior during flood seasons"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Ogre Flesh Heap</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>11</AC>
+<HP/>59</HP>
 <summary>The Ogre Flesh Heap is a large undead creature that represents a reanimated hulk, formed from the remains of an ogre. It stands out as a formidable opponent in combat due to its strong physical attributes, high hit points, and immunity to various damage types. With its challenge rating of 4, it poses a moderate threat to adventurers. The creature excels in melee encounters, being capable of delivering powerful attacks while also possessing hardiness attributed to its undead nature. However, it is limited by its low Dexterity and Intelligence scores, making it fairly sluggish and not very cunning. Notably, the Ogre Flesh Heap can endure lethal blows thanks to its Undead Fortitude ability, which allows it to cheat death, making it a resilient foe that needs to be dispatched with radiant damage or critical hits to prevent it from recovering.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Ogre Flesh Heap is a stubborn adversary that can inflict considerab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ogre Flesh Heap
 
 *Large* *Undead*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Corpulent Expulsion (Recharge 6:** When it takes damage, the ogre flesh heaps belly splits and releases a torrent of caustic gore in a 30-foot cone. Creatures in this area make a DC 14 Dexterity saving throw, taking 14 (4d6) acid damage on a failure and half damage on a success. The flesh heap then takes 10 (3d6) acid damage.
 
 
+</statblock>
 
 

@@ -1,0 +1,52 @@
+{
+    "name": "Spawn of Alquam",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 114,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 60 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "ambusher",
+        "chaotic evil"
+    ],
+    "adjectives": [
+        "cunning",
+        "dangerous",
+        "chaotic"
+    ],
+    "description": "The Spawn of Alquam is a large fiend known for its chaotic evil nature, blending agility and cleverness in combat. It possesses talons and a vicious bite, and it can lurk in dim light or shadows for stealth.",
+    "memorable": "Utilizes ambush tactics, keen senses, and can communicate with birds.",
+    "goals": "Surprise and overwhelm enemies, dominate in battle.",
+    "relations": "Often associated with other chaotic fiends or dark entities.",
+    "environment": "Typically found in dark, shadowy areas or locations conducive to stealth.",
+    "strengths": "High Dexterity and various combat abilities enhance its ambush tactics.",
+    "weaknesses": "Relatively low Strength compared to its other attributes.",
+    "attacks": "Makes multiattacks with sharp talons and a biting attack, can also unleash a necrotic ranged attack.",
+    "most_powerful_ability": "Gloomspittle, which can blind targets and deal necrotic damage.",
+    "equipment": null,
+    "senses": "Possesses advantage on Wisdom (Perception) checks relying on sight, with passive Perception of 16.",
+    "skills": "Proficient in stealth and deception, excels in ambush situations.",
+    "additional_information": [
+        "Immune to poison and charmed or frightened conditions.",
+        "Resistant to cold, fire, and lightning damage.",
+        "Can hide as a bonus action in dim light or darkness.",
+        "Has advantage on attack rolls against surprised creatures.",
+        "Can deal extra damage with its Sneak Attack ability."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large chaotic evil fiend with stealth attacks",
+        "sneaky fiend that communicates with birds",
+        "fiend that can blind targets with a ranged attack",
+        "fiend with ambush tactics and keen senses",
+        "dangerous fiend utilizing stealth and ambush"
+    ]
+}

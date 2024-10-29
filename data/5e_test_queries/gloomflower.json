@@ -1,0 +1,25 @@
+{
+    "name": "Gloomflower",
+    "queries": [
+        {
+            "query": "tiny plant creature that inflicts psychic damage and confuses enemies",
+            "variant": "small plant monster that causes psychic harm and confuses foes"
+        },
+        {
+            "query": "monster with blindsight that uses telepathy and psychic attacks",
+            "variant": "creature with 120 ft blindsight that relies on telepathy and psychic strikes"
+        },
+        {
+            "query": "plant monster immune to being blinded and frightened with a high Charisma",
+            "variant": "flora creature immune to blindness and fear with exceptional Charisma"
+        },
+        {
+            "query": "creature that uses Corrupting Visions to damage and control foes",
+            "variant": "monster that employs Corrupting Visions to harm and manipulate enemies"
+        },
+        {
+            "query": "creature with special abilities like Blur and Psychic Scream that lives in dark areas",
+            "variant": "monster with abilities such as Blur and Psychic Scream that dwells in shadowy places"
+        }
+    ]
+}

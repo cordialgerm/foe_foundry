@@ -1,0 +1,25 @@
+{
+    "name": "Ramag Portal Master",
+    "queries": [
+        {
+            "query": "humanoid spellcaster with magic resistance and teleportation control",
+            "variant": "humanoid spell caster that can control teleportation and has magic resistance"
+        },
+        {
+            "query": "mid-level monster with crowd control abilities and dimensional powers",
+            "variant": "creature around challenge rating 5 that has dimensional powers and crowd control spells"
+        },
+        {
+            "query": "magical creature that can create portals and has an exceptional intelligence",
+            "variant": "creature with exceptional intelligence and the ability to create magical portals"
+        },
+        {
+            "query": "humanoid that uses lightning spells and has a good spell attack bonus",
+            "variant": "humanoid creature that uses lightning abilities and has a high spell attack"
+        },
+        {
+            "query": "spellcaster with area denial abilities and below average armor class",
+            "variant": "spell casting creature with area denial capabilities and low armor class"
+        }
+    ]
+}

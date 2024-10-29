@@ -1,6 +1,8 @@
 <MonsterName/>Liosalfar</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>10</CR>
+<AC/>17</AC>
+<HP/>132</HP>
 <summary>The Liosalfar is a large elemental creature characterized by its neutral alignment and formidable abilities in combat, making it a notable adversary in the Dungeons & Dragons universe. With an impressive Armor Class of 17 and 132 hit points derived from 24d10, it can withstand significant damage. It possesses exceptional Dexterity, with a modifier of +7, allowing it to perform agility-based actions very effectively. With the Challenge Rating of 10, it provides a balanced encounter for a party of adventurers, offering 5,900 experience points upon defeat. The Liosalfar excels at dealing radiant damage through its attacks and is known for its mesmerizing abilities, which can incapacitate foes.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ Overall, the Liosalfar is a complex and formidable opponent, using its unique ab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Liosalfar
 
 *Large* *Elemental* *Neutral*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Radiant Touch:** Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 29 (4d10 + 7) radiant damage.
 - **Ray of Light:** Ranged Spell Attack: +8 to hit, range 60 ft., one target. Hit: 31 (6d8 + 4) radiant damage, and the target must succeed on a DC 16 Constitution saving throw or be blinded until the end of its next turn.
 - **Mesmerizing Radiance:** The liosalfar causes the light radiating from its body to shift color and pattern in a spellbinding display. Each creature within 60 feet of the liosalfar and that can see it must succeed on a DC 16 Wisdom saving throw or be charmed until the display ends. The liosalfar must take a bonus action on its subsequent turns to continue the display. It can stop the display at any time, and the display ends if the liosalfar is incapacitated. While charmed by the liosalfar’s display, a creature is also incapacitated, and its speed is reduced to 0, as it is transfixed by the display. The effect ends for a charmed creature if it takes any damage or if someone uses an action to shake the creature out of its stupor.
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Armadillo",
+    "queries": [
+        {
+            "query": "mechanical creature that serves as a guardian and has resistance to physical damage",
+            "variant": "mechanical guardian creature with resistance to physical damage"
+        },
+        {
+            "query": "small construct that is immune to poison and has a high Dexterity score",
+            "variant": "small construct immune to poison and has high Dex score"
+        },
+        {
+            "query": "clockwork creature that retracts into its shell and can disarm opponents",
+            "variant": "a clockwork creature that can disarm enemies and pull into its shell"
+        },
+        {
+            "query": "armadillo-like construct with magical resistance and overclocked initiative",
+            "variant": "construct resembling an armadillo with magic resistance and fast initiative"
+        },
+        {
+            "query": "small armor-covered mechanical creature that exists in low-light environments",
+            "variant": "small mechanical creature covered in armor that thrives in low-light"
+        }
+    ]
+}

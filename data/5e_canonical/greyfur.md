@@ -1,6 +1,8 @@
 <MonsterName/>Greyfur</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>67</HP>
 <summary>The Greyfur is a small humanoid creature known for its agility and magical abilities. With a neutral alignment, it stands out in encounters due to its unique glide ability, which allows it to control its descent when falling, making it adept at navigating vertical spaces. Its notable strengths lie in its dexterity, intelligence, and a selection of spells that can manipulate the battlefield to its advantage. However, its physical strength is lacking, making it vulnerable in direct melee combat. The Greyfur's considerable skills in Acrobatics and Stealth enhance its capability to ambush or evade attackers, while its moderate hit points allow it to withstand a reasonable amount of damage.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Furthermore, the Greyfur has access to spellcasting abilities. It can cast spell
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greyfur
 
 *Small* *Humanoid* *Neutral*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Greyfur’s Staff:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 5 (2d4) force damage.
 - **Arcane Bolt:** Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 10 (2d6 + 3) force damage.
 - **Spellcasting:** The greyfur casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save DC 13):<br>At will: light, mage hand, prestidigitation<br>3/day each: color spray, sleep
+</statblock>
 
 

@@ -1,0 +1,53 @@
+{
+    "name": "Fleshpod Hornet",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 120,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 60 ft., hover, walk 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "flying",
+        "poisonous",
+        "agile"
+    ],
+    "adjectives": [
+        "large",
+        "agile",
+        "potent"
+    ],
+    "description": "The Fleshpod Hornet is a large creature characterized by its impressive agility and potent attacks, featuring a nasty stinger capable of inflicting poison and creating tumors in its victims.",
+    "memorable": "Notable for its ability to inject eggs that create a tumor, leading to further threats when young hornets erupt from it.",
+    "goals": "To ambush and inflict poison damage on its prey.",
+    "relations": "Might be encountered near other poisonous or aggressive creatures.",
+    "environment": "Typically found in forest or jungle habitats.",
+    "strengths": "Noteworthy for its high Dexterity, enabling exceptional maneuverability and speed in combat.",
+    "weaknesses": "Low Intelligence and Charisma limit its strategic actions and social interactions.",
+    "attacks": "Uses a multiattack of slam and stinger, capable of bludgeoning and piercing damage along with poison effects.",
+    "most_powerful_ability": "The Stinger attack not only deals significant poison damage but also infects targets with debilitating eggs.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 14, allowing it to effectively detect hidden enemies or traps.",
+    "skills": "Proficient in Perception, gaining a +4 bonus to perception checks.",
+    "additional_information": [
+        "Flying Charge ability can knock targets prone for advantageous attacks.",
+        "The tumor caused by the stinger hinders skill checks and saving throws.",
+        "Can produce young Fleshpod Hornets from infected hosts after 24 hours.",
+        "Requires a specific Medicine check to safely remove its tumor.",
+        "Has a flying speed of 60 feet, very agile in combat."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large agile hornet that deals poison damage",
+        "flying beast with debilitating stinger attack",
+        "hornet that creates tumors with injected eggs",
+        "agile creature inflicts long-lasting poison damage",
+        "hornet with a charge ability that knocks down"
+    ]
+}

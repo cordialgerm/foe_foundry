@@ -1,0 +1,50 @@
+{
+    "name": "Alligator Turtle",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 20 ft., swim 30 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "turtle",
+        "beast"
+    ],
+    "adjectives": [
+        "capable",
+        "resilient",
+        "tactical"
+    ],
+    "description": "The Alligator Turtle has strong natural armor and is effective in water, capable of holding its breath for 1 hour. It features a sizable shell and a powerful bite.",
+    "memorable": "It provides unique challenges in aquatic environments with its grappling bite ability and high resilience in combat.",
+    "goals": "To navigate and hunt in aquatic environments, securing prey with its grapple.",
+    "relations": "Related to other aquatic creatures and may be encountered alongside similar beasts.",
+    "environment": "Usually found in water bodies such as rivers, lakes, and swamps.",
+    "strengths": "Strong natural armor providing good protection against physical attacks.",
+    "weaknesses": "Low intelligence and charisma, making it ineffective in mental tasks and social interactions.",
+    "attacks": "Its primary attack is a bite that deals slashing damage and can grapple its target.",
+    "most_powerful_ability": "The ability to hold its breath for up to 1 hour, allowing it to remain submerged and avoid detection.",
+    "equipment": null,
+    "senses": "It has a passive perception of 11.",
+    "skills": "Proficient in stealth, giving it the ability to move quietly in its environment.",
+    "additional_information": [
+        "Average strength and decent constitution.",
+        "Can grapple targets effectively when biting.",
+        "Slow movement on land but faster swimming speed.",
+        "Low intelligence restricts its capabilities in various scenarios.",
+        "Serves as a low-level adversary for inexperienced adventurers."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "aquatic turtle monster",
+        "grappling water creature",
+        "turtle with strong armor",
+        "medium-sized alligator turtle",
+        "creature that holds breath underwater"
+    ]
+}

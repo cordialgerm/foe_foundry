@@ -1,6 +1,8 @@
 <MonsterName/>Mortifera</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>135</HP>
 <summary>Mortifera is a large aberration characterized by its chaotic neutral alignment. This creature is often found lurking underwater or in flower-laden swamps, where it blends seamlessly into its surroundings. It possesses significant strengths in combat, with impressive hit points and the ability to grapple and poison its enemies using its unique tendrils. However, its low Intelligence and Charisma scores suggest it may not excel in social situations or clever tactics. Overall, Mortifera serves as a formidable opponent, especially in aquatic environments, where it can utilize its amphibious nature to great effect.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Mortifera can utilize its Chomp action against one creature it has grappled, pul
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mortifera
 
 *Large* *Aberration* *chaotic neutral*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Poison Spray (Recharge 5–6):** Sprays poison from its central maw in a 30' cone. Each creature in that area: 27 (6d8) poison (DC 15 Dex half).
 
 
+</statblock>
 
 

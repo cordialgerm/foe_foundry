@@ -1,0 +1,25 @@
+{
+    "name": "Salamander Noble",
+    "queries": [
+        {
+            "query": "huge elemental monster that deals fire damage and has a heated body ability",
+            "variant": "large fire monster with heated body ability and shows strong elemental traits"
+        },
+        {
+            "query": "fire-breathing elemental that grapples opponents and has resistance to nonmagical damage",
+            "variant": "elemental that breathes fire and can grapple foes while resisting nonmagic attacks"
+        },
+        {
+            "query": "elemental creature resistant to unmagical weapons thriving in hot environments",
+            "variant": "creature that thrives in heat and resists damage from mundane attacks"
+        },
+        {
+            "query": "monster that inflicts fire damage and has high hit points with a multiattack option",
+            "variant": "creature with high durability that can use multiattack and deliver fire damage"
+        },
+        {
+            "query": "powerful elemental with darkvision that speaks Ignan and uses fire breath",
+            "variant": "strong elemental that can see in the dark, speaks Ignan, and can breathe fire"
+        }
+    ]
+}

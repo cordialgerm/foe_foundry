@@ -1,0 +1,25 @@
+{
+    "name": "Caustic Charger",
+    "queries": [
+        {
+            "query": "huge monster immune to acid that burrows through rocks",
+            "variant": "huge acis immune monster that burrows through rocks"
+        },
+        {
+            "query": "monstrosity with tentacles that can paralyze foes",
+            "variant": "monstrosity with paralyzing tentacles that can trap enemies"
+        },
+        {
+            "query": "threatening creature with high HP and burrowing speed",
+            "variant": "dangerous creature with lots of HP and the ability to burrow"
+        },
+        {
+            "query": "Caustic Charger combat abilities and movement options",
+            "variant": "Caustic Charger fight tactics and how it moves"
+        },
+        {
+            "query": "acid damage dealing creature with strong melee attacks",
+            "variant": "creature that deals acid damage and has powerful melee strikes"
+        }
+    ]
+}

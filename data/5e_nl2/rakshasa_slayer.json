@@ -1,0 +1,52 @@
+{
+    "name": "Rakshasa, Slayer",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 142,
+    "ac": 18,
+    "srd": false,
+    "cr": "9",
+    "movement": "30 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "assassin",
+        "magic"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "durable"
+    ],
+    "description": "The Rakshasa, Slayer is a cunning fiend with a humanoid shape, noted for its impressive dexterity and charm. It excels in assassinations and manipulations, making it a formidable foe.",
+    "memorable": "Its ability to teleport and charm others while being resilient to low-level spells makes it a uniquely dangerous creature.",
+    "goals": "Commonly serves as an assassin or enforcer in dark dealings.",
+    "relations": "May be encountered alongside other fiends or in service of more powerful evil entities.",
+    "environment": "Typically found in dark urban areas or secluded hideouts.",
+    "strengths": "Immunity to spells of 4th level or lower, skilled in combat and deception.",
+    "weaknesses": "Vulnerable to piercing damage from magic weapons wielded by good creatures.",
+    "attacks": "Utilizes a rapier and light crossbow in rapid multiattacks dealing piercing and poison damage.",
+    "most_powerful_ability": "Limited Magic Immunity allowing it to resist many magical effects.",
+    "equipment": null,
+    "senses": "Passive Perception of 16 makes it perceptive.",
+    "skills": "Possesses skills in perception, making it aware of its surroundings.",
+    "additional_information": [
+        "Uses Cunning Action to maintain high mobility in combat",
+        "Can use Gain the Upper Hand for extra attack damage",
+        "Has spellcasting abilities for utility and combat",
+        "Shadow Leap allows for teleportation in dim light",
+        "Can inflict poison on its target, incapacitating them temporarily"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can cast spells like Detect Thoughts and Disguise Self at will, and has access to Invisibility and Mislead for stealth and evasion.",
+    "test_queries": [
+        "cunning fiend that uses poison attacks",
+        "magic resistant assassin with teleport ability",
+        "agile fiend that excels in infiltration tactics",
+        "medium fiend with significant durability and charm",
+        "dark urban assassin with magical advantages"
+    ]
+}

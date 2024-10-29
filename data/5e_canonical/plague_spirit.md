@@ -1,6 +1,8 @@
 <MonsterName/>Plague Spirit</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>14</AC>
+<HP/>150</HP>
 <summary>The Plague Spirit is a formidable fey creature that embodies the essence of decay and despair. With a medium size and unaligned nature, it operates with a powerful presence on the battlefield. This spirit boasts high Dexterity and Wisdom, making it both agile and perceptive in its maneuvers. It possesses strong defenses marked by its decent Armor Class, substantial Hit Points, and numerous immunities to damage and conditions. Its challenge rating of 9 indicates it is designed to pose a significant threat to adventurers. The Plague Spirit's strengths lie in its ability to weaken foes and inflict ongoing effects that can devastate an unsuspecting party. However, it is somewhat hindered by its low Intelligence and lack of verbal communication, limiting its tactical options.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Lastly, the special action **Dance of Death** (available only on a recharge of 5
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Plague Spirit
 
 *Medium* *Fey* *unaligned*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Dance of Death (Recharge 5-6):** The plague spirit dances and twirls its censer. Each creature within 20 feet of the plague spirit that can see it must make a DC 16 Constitution saving throw. On a failure, a creature takes 28 (8d6) necrotic damage and is frightened for 1 minute. On a success, a creature takes half the damage and isn’t frightened. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

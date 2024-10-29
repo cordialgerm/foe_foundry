@@ -1,0 +1,25 @@
+{
+    "name": "Two-Headed Eagle",
+    "queries": [
+        {
+            "query": "large bird monster with two heads that can fly high and has strong attacks",
+            "variant": "big two-headed bird that can fly fast and has powerful attacks"
+        },
+        {
+            "query": "flying creature with enhanced perception and resilience against conditions",
+            "variant": "aerial monster that has great senses and is resistant to status effects"
+        },
+        {
+            "query": "Huge eagle that combines biting and grappling attacks in combat",
+            "variant": "massive eagle with bite and grappling capabilities during fights"
+        },
+        {
+            "query": "monstrosity with a flying speed of 100 feet and good attack rolls",
+            "variant": "creature that can fly at 100 feet and has strong attack hits"
+        },
+        {
+            "query": "Two-Headed Eagle habitat and its battle tactics in the air",
+            "variant": "surroundings of the Two-Headed Eagle and its aerial combat strategies"
+        }
+    ]
+}

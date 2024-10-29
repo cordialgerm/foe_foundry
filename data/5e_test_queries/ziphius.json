@@ -1,0 +1,25 @@
+{
+    "name": "Ziphius",
+    "queries": [
+        {
+            "query": "gargantuan sea monster with aquatic abilities",
+            "variant": "gargantuan monster of the sea that has aquatic powers"
+        },
+        {
+            "query": "deep sea creature that can create mental bonds",
+            "variant": "creature of the deep that can form mental connections"
+        },
+        {
+            "query": "powerful underwater monster resistant to non-magical attacks",
+            "variant": "strong underwater creature that resists non-magical damage"
+        },
+        {
+            "query": "Ziphius with high swimming speed but low land speed",
+            "variant": "Ziphus with fast swimming but slow speed on land"
+        },
+        {
+            "query": "monster that thrives in aquatic environments and excels in melee combat",
+            "variant": "creature that dominates in water and is great in close combat"
+        }
+    ]
+}

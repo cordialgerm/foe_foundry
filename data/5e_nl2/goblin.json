@@ -1,0 +1,50 @@
+{
+    "name": "Goblin",
+    "creature_type": "Humanoid",
+    "creature_subtype": "goblinoid",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 7,
+    "ac": 15,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "goblinoid",
+        "small",
+        "stealthy"
+    ],
+    "adjectives": [
+        "cunning",
+        "maneuverable",
+        "cowardly",
+        "numerous"
+    ],
+    "description": "Goblins are small, green-skinned humanoids known for their cunning and mischievous nature, typically standing about three to four feet tall. They are often equipped with leather armor and shields, utilizing their speed and agility to effectively navigate battles.",
+    "memorable": "Goblins can coordinate attacks through the 'Gang Up' ability, making them dangerous in numbers despite their individual weakness.",
+    "goals": "To raid and steal from travelers or surrounding villages, often using ambush tactics.",
+    "relations": "Commonly found in groups or with other goblinoid creatures such as hobgoblins.",
+    "environment": "Caves, ruins, or forest hideouts.",
+    "strengths": "High Dexterity makes them proficient in stealth (Stealth +6), allowing them to ambush and evade large threats.",
+    "weaknesses": "Individually weak and likely to flee if the battle turns against them.",
+    "attacks": "Attacks with a scimitar or shortbow, dealing slashing or piercing damage, respectively.",
+    "most_powerful_ability": "'Gang Up' allows for coordinated attacks that multiply damage through teamwork.",
+    "equipment": "Leather armor and a shield for protection.",
+    "senses": "Possesses darkvision with a range of 60 feet, allowing them to see in low-light conditions.",
+    "skills": "Skilled in Stealth, making them effective for ambushes and surprise attacks.",
+    "additional_information": [
+        "They use hit-and-run tactics to overpower larger foes.",
+        "Known for cowardice, they often flee when outnumbered.",
+        "Mobility-enhancing ability 'Nimble Escape' allows for strategic retreats."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small green-skinned raiding creature",
+        "cunning humanoid that uses stealth",
+        "goblin ambush tactics in caves",
+        "nimble goblin that loves to steal",
+        "group attack ability of goblins"
+    ]
+}

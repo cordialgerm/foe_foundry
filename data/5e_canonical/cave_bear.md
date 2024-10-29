@@ -1,6 +1,8 @@
 <MonsterName/>Cave Bear</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>42</HP>
 <summary>The Cave Bear is a large beast that serves as a formidable predator in its environment. With a challenge rating of 2, it poses a moderate threat to adventurers, particularly with its powerful melee attacks and the ability to grapple opponents. The bear possesses high strength and constitution, making it exceptionally durable in combat, while its keen sense of smell enhances its abilities to detect foes and navigate its surroundings. However, its intelligence and charisma are very low, indicating that it relies on instinct rather than cunning or social interaction. </summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the Cave Bear is a strong adversary that relies on its physical prowess
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Bear
 
 *Large* *Beast*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d4+5) slashing damage. If the target is a Medium or smaller creature  it is grappled (escape DC 15). Until this grapple ends  the bear can't attack a different target with its claws.
 
 
+</statblock>
 
 

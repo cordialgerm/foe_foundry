@@ -1,0 +1,52 @@
+{
+    "name": "Shadow Elf Champion Warrior",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walks 40 feet per turn",
+    "role": "Skirmisher",
+    "tags": [
+        "shadow elf",
+        "warrior",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "agile",
+        "formidable",
+        "poisonous"
+    ],
+    "description": "The Shadow Elf Champion Warrior is a formidable humanoid with exceptional agility and a lethal combat style, adept in both melee and ranged attacks. It wields a shortsword and a hand crossbow, capable of inflicting piercing and poison damage.",
+    "memorable": "Known for its lethal poisoned blade and skillful archery, this warrior can swiftly eliminate foes from the shadows.",
+    "goals": "Typically aims to defeat enemies swiftly using its agility and combat skills while utilizing dark magic.",
+    "relations": "Associated with other shadow elves or dark creatures, possibly serving a higher power in their dark society.",
+    "environment": "Primarily found in shadowy forests or subterranean realms, usually where light is minimal.",
+    "strengths": "Combines high Dexterity and Strength for effective melee and ranged strikes, as well as poison abilities to incapacitate enemies.",
+    "weaknesses": "Limited spell save DC of 13 makes it vulnerable to strong magical defenses.",
+    "attacks": "Utilizes a multiattack option with a shortsword for piercing damage, as well as a hand crossbow that can inflict poison on a hit.",
+    "most_powerful_ability": "The ability to poison enemies on successful hits, potentially incapacitating them with prolonged effects.",
+    "equipment": "Wields a shortsword and a hand crossbow for versatile combat.",
+    "senses": "Has a passive Perception of 14, making it quite aware of its surroundings.",
+    "skills": "Highly skilled in stealth and athletics, enabling it to navigate unseen and adeptly engage in physical confrontations.",
+    "additional_information": [
+        "Can cast spells without material components.",
+        "Exceptional in both melee and ranged combat.",
+        "Possesses darkvision that allows it to see in the dark.",
+        "Abilities make it effective at ambush tactics.",
+        "Can knock out foes through successful poison application."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Utilizes Charisma for spellcasting with abilities to cast spells without components.",
+    "test_queries": [
+        "shadow elf warrior with poisoned weapons",
+        "agile humanoid skilled in stealth and archery",
+        "medium creature skilled in melee and ranged combat",
+        "shadow elf that uses dark magic in battle",
+        "formidable enemy with high Dexterity and Strength"
+    ]
+}

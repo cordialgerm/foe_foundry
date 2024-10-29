@@ -1,0 +1,49 @@
+{
+    "name": "Reef Shark",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 27,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "0 ft. on land, 40 ft. swim speed",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "predator",
+        "stealth"
+    ],
+    "adjectives": [
+        "agile",
+        "predatory",
+        "formidable"
+    ],
+    "description": "The Reef Shark is a medium-sized shark with natural armor, showcasing agility and predatory instincts in aquatic settings.",
+    "memorable": "Its Blood Sense ability allows it to detect injured creatures from great distances, making it a dangerous ambush predator.",
+    "goals": "To hunt and ambush prey in coastal or underwater environments.",
+    "relations": "May be encountered alongside other aquatic beasts or in groups where Pack Tactics can be utilized.",
+    "environment": "Typically found in coastal waters or underwater.",
+    "strengths": "Highly effective in water due to fast swimming and ability to work in packs.",
+    "weaknesses": "Immobile on land and vulnerable to lightning damage due to Electrical Sensitivity.",
+    "attacks": "Bite attack that deals significant piercing damage to prey within reach.",
+    "most_powerful_ability": "Blood Sense allows it to target wounded animals from 60 feet away or within a mile.",
+    "equipment": null,
+    "senses": "Possesses keen senses that enhance its perception in water.",
+    "skills": "Proficient in Stealth, enabling ambush tactics.",
+    "additional_information": [
+        "Has advantage on attacks when allies are nearby through Pack Tactics.",
+        "Can hide effectively using its bonus action, Stealthy Hunter.",
+        "Has a low intelligence, suggesting a strong focus on instinctual hunting.",
+        "Incapacitated by lightning damage unless saving throw succeeded."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "predatory shark with blood sense",
+        "coastal ambush predator in water",
+        "shark that detects injured creatures",
+        "agile hunter in aquatic environments",
+        "medium-sized shark known for stealth"
+    ]
+}

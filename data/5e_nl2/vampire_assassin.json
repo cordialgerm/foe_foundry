@@ -1,0 +1,55 @@
+{
+    "name": "Vampire Assassin",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 142,
+    "ac": 16,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 40 ft., climb 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "vampire",
+        "assassin",
+        "stealthy",
+        "charming"
+    ],
+    "adjectives": [
+        "stealthy",
+        "lethal",
+        "supernatural",
+        "deceptive"
+    ],
+    "description": "The Vampire Assassin is a formidable Medium Undead with immense strength and agility, known for its stealthy and lethal combat capabilities. It appears as a pale humanoid with sharp fangs and a predatory demeanor.",
+    "memorable": "Combines charm and stealth, capable of overwhelming its prey with tactical control and damage output.",
+    "goals": "To dominate and control foes, often using deception and teamwork to secure its objectives.",
+    "relations": "Often associated with other vampires or dark creatures, may command lesser undead or assassins.",
+    "environment": "Typically found in dark, secluded areas such as graveyards, crypts, or shadowy alleys.",
+    "strengths": "Resistant to necrotic damage and nonmagical attacks, with powerful regeneration abilities and control over shadows.",
+    "weaknesses": "Vulnerable to radiant damage and sunlight; requires a resting place to regain powers.",
+    "attacks": "Utilizes a deadly grab attack, capable of inflicting significant bludgeoning and necrotic damage, along with the ability to charm and bite enemies.",
+    "most_powerful_ability": "Regeneration allows it to regain 20 hit points at the start of its turn unless damaged by radiant energy.",
+    "equipment": null,
+    "senses": "Possesses darkvision and heightened perception, allowing it to detect hidden creatures easily.",
+    "skills": "Has expertise in perception, persuasion, and stealth, enhancing its abilities as an assassin.",
+    "additional_information": [
+        "Can turn into mist when incapacitated, providing excellent survivability.",
+        "Uses charm to bend opponents to its will, making them easier targets.",
+        "Can scale walls due to Spider Climb ability.",
+        "Possesses Legendary Resistance, allowing it to succeed on failed saving throws.",
+        "Transforms into various beasts for tactical versatility."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy undead assassin that can charm",
+        "vampire capable of turning into mist",
+        "powerful charm user with regeneration",
+        "undead creature that climbs walls easily",
+        "vampire assassin with significant damage output"
+    ]
+}

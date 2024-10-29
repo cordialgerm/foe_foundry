@@ -1,0 +1,54 @@
+{
+    "name": "Spider of Leng",
+    "creature_type": "Aberration",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 144,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "slow walking speed of 20 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "spider",
+        "poison",
+        "spellcaster",
+        "aberration"
+    ],
+    "adjectives": [
+        "large",
+        "chaotic",
+        "magical",
+        "venomous",
+        "dangerous"
+    ],
+    "description": "The Spider of Leng is a large aberration characterized by its chaotic evil nature. It possesses a formidable appearance with powerful attacks and a magical presence.",
+    "memorable": "Its ability to combine physical attacks with powerful spells, plus its poisonous blood effects, make it a unique threat.",
+    "goals": "To dominate its territory and eliminate threats through a combination of physical and magical assaults.",
+    "relations": "Can possibly be encountered with other aberrations or as a servant to dark beings.",
+    "environment": "Usually found in dark and chaotic places or lairs of evil creatures.",
+    "strengths": "Highly adaptable due to its intelligent spellcasting and potent poisonous attacks.",
+    "weaknesses": "Slow mobility limits its engagement options in combat.",
+    "attacks": "Utilizes claw attacks for slashing and poison damage and the Staff of Leng for stunning blows, as well as ranged spit venom attacks.",
+    "most_powerful_ability": "Eldritch Understanding allows it to utilize any spell scroll or magic item without restriction.",
+    "senses": "It has darkvision up to 240 feet, allowing it to see in complete darkness.",
+    "skills": "Proficient in Stealth (+6) and capable of moving unseen.",
+    "additional_information": [
+        "Immune to poison and specific conditions.",
+        "Can create a toxic cloud upon death that damages nearby creatures.",
+        "Can cast spells without material components, enhancing its versatility.",
+        "Uses Poisonous Riposte to retaliate against melee attackers.",
+        "Tactically utilizes its spells like confusion and silence in combat."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Casts spells like comprehend languages, detect magic, confusion, silence, arcane eye, and hypnotic pattern, utilizing Intelligence for spellcasting.",
+    "test_queries": [
+        "large spider that uses poison and magic",
+        "chaotic evil aberration with poisonous blood",
+        "spider that can cast confusion and silence",
+        "dangerous magical spider in dark lairs",
+        "venomous creature with area poison effects"
+    ]
+}

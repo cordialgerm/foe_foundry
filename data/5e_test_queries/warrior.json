@@ -1,0 +1,25 @@
+{
+    "name": "Warrior",
+    "queries": [
+        {
+            "query": "medium humanoid with combat skills and 11 hit points",
+            "variant": "medium humanoid creature that has combat abilities and 11 hitpoints"
+        },
+        {
+            "query": "skilled fighter that uses a spear for melee and ranged attacks",
+            "variant": "fighter that is skilled and uses a spear for both melee and ranged combat"
+        },
+        {
+            "query": "humanoid with good perception and basic survival skills",
+            "variant": "humanoid creature with good awareness and survival abilities"
+        },
+        {
+            "query": "warrior character with average strength and agility",
+            "variant": "warrior type creature having average agility and strength"
+        },
+        {
+            "query": "combat capable creature that poses a minor threat to low level adventurers",
+            "variant": "creature that is capable of combat yet poses minor threat to low level adventurers"
+        }
+    ]
+}

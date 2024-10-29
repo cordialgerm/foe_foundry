@@ -1,0 +1,25 @@
+{
+    "name": "Uridimmu",
+    "queries": [
+        {
+            "query": "large celestial creature with strong spells and healing abilities",
+            "variant": "large celstial critter with strong spells and healing powers"
+        },
+        {
+            "query": "powerful celestial that can fly and provides magic resistance to allies",
+            "variant": "strong celestial that can fly and gives magic resistance to allies"
+        },
+        {
+            "query": "lawful good flying monster that uses thunder attacks and buffs allies",
+            "variant": "lawful good flying creature that uses thunder strikes and boosts allies"
+        },
+        {
+            "query": "healing celestial creature with significant defenses and melee attacks",
+            "variant": "healing celestial critter with strong defenses and melee strikes"
+        },
+        {
+            "query": "magical creature that has truesight and can charm allies in battle",
+            "variant": "magical being with truesight that can charm friends in combat"
+        }
+    ]
+}

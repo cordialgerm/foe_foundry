@@ -1,0 +1,25 @@
+{
+    "name": "Sapphire Jelly",
+    "queries": [
+        {
+            "query": "gelatinous blue ooze creature with freezing attacks",
+            "variant": "gelatinous ooze creature that is blue and has freezing attacks"
+        },
+        {
+            "query": "medium jelly that can engulf and freeze adventurers",
+            "variant": "medium jelly creature that can engulf and freeze adventurers"
+        },
+        {
+            "query": "monster that creates glacial corrupters from slain humanoids",
+            "variant": "creature that turns slain humanoids into glacial corrupters"
+        },
+        {
+            "query": "cold resistant jelly that moves through tight spaces",
+            "variant": "jelly that is cold resistant and can fit through tight spaces"
+        },
+        {
+            "query": "jelly monster with high hit points and low armor class",
+            "variant": "monster jelly with a lot of hit points and low armor class"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Ghoulsteed</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Ghoulsteed is a large undead creature characterized by its neutral evil alignment. It possesses a robust presence on the battlefield, with a relatively high Armor Class of 13 and significant hit points totaling 85. This makes it resilient against many forms of attack, with the Challenge Rating of 3 indicating it presents a moderate threat to adventurers. The creature is notable for its speed and mobility, particularly through its Pounce ability, which allows it to knock opponents prone, creating tactical opportunities during combat. The Ghoulsteed is immune to poison damage and the poisoned condition, but it is less effective in mental attributes with low Intelligence and Charisma scores. Overall, while it has strengths in physical combat and survivability, it does not excel in social interactions or spells.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Ghoulsteed is a dangerous undead opponent, leveraging its mobility,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ghoulsteed
 
 *Large* *Undead* *neutral evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage and the ghoulsteed gains 5 (1d10) temporary hp. These temporary hp stack with each other, but the ghoulsteed can only have a maximum of 10 temporary hp at one time.
 
 
+</statblock>
 
 

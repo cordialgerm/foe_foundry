@@ -1,0 +1,25 @@
+{
+    "name": "Myrmex",
+    "queries": [
+        {
+            "query": "earth-themed elemental creature with burrowing abilities",
+            "variant": "elemental creature themed around earth that can burrow"
+        },
+        {
+            "query": "medium-sized earth elemental with poison resistance",
+            "variant": "medium elemental of earth that resists poison damage"
+        },
+        {
+            "query": "creature that can manipulate earth and has a keen sense of smell",
+            "variant": "monster that manipulates earth and has good smell perception"
+        },
+        {
+            "query": "strong elemental with ability to create walls of earth",
+            "variant": "powerful elemental that can make earth walls"
+        },
+        {
+            "query": "earth creature immune to paralysis and has limited telepathy",
+            "variant": "creature of earth that cannot be paralyzed and can use simple telepathy"
+        }
+    ]
+}

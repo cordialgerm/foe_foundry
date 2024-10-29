@@ -1,0 +1,25 @@
+{
+    "name": "Solar",
+    "queries": [
+        {
+            "query": "large celestial angel with powerful radiant abilities",
+            "variant": "big celestial angel that has strong radiant skills"
+        },
+        {
+            "query": "angelic being with healing powers and majestic wings",
+            "variant": "angelic creature that can heal and has grand wings"
+        },
+        {
+            "query": "celestial warrior immune to necrotic damage and uses divine magic",
+            "variant": "celestial fighter that is immune to necrotic attacks and uses holy magic"
+        },
+        {
+            "query": "towering angelic figure with high AC and HP",
+            "variant": "tall angelic form with impressive armor class and health points"
+        },
+        {
+            "query": "celestial with telepathy and high Charisma capable of commanding others",
+            "variant": "celestial creature that has telepathy and high Charisma to order others around"
+        }
+    ]
+}

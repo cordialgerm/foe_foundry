@@ -1,6 +1,8 @@
 <MonsterName/>Medusa Queen</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>11</CR>
+<AC/>14</AC>
+<HP/>153</HP>
 <summary>The Medusa Queen is a formidable Medium monstrosity with a challenge rating of 11, making it a significant threat for adventurers. With an impressive 153 hit points derived from 18d10 plus a constitution modifier of 54, she has substantial staying power in combat. Her armor class of 14 provides a fair defense, complemented by her high dexterity, giving her a good level of agility. The Medusa Queen embodies the perfect balance of offense and defense with her unique ability to petrify foes and her deadly multiattack capabilities, which allow her to inflict both piercing and poison damage. On the flip side, her reliance on gaze attacks requires careful positioning and execution, particularly in environments where reflecting surfaces could backfire. </summary>
 
 <detail>
@@ -33,6 +35,7 @@ Her abilities and tactical potential make the Medusa Queen a captivating adversa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Medusa Queen
 
 *Medium* *Monstrosity*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Snake Hair:** The medusa uses Snake Hair.
 - **Frenzy of Snakes (1/Day:** The medusa uses Snake Hair on each creature within 5 feet.
 - **Imperious Command:** A creature with averted or covered eyes within 60 feet that can hear the medusa makes a DC 13 Wisdom saving throw. On a failure, it looks at the medusa, making itself the target of Petrifying Gaze if it and the medusa can see each other. On a success, the creature is immune to Imperious Command for 24 hours. This is a charm effect.
+</statblock>
 
 

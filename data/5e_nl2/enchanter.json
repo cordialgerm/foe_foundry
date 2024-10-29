@@ -1,0 +1,50 @@
+{
+    "name": "Enchanter",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 12,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "spellcaster",
+        "enchanter",
+        "humanoid"
+    ],
+    "adjectives": [
+        "charming",
+        "manipulative",
+        "versatile"
+    ],
+    "description": "The Enchanter is a Medium humanoid with very high Intelligence and Charisma, focused on manipulating and controlling opponents through powerful enchantments and spells. It wields a dagger and can cast spells to charm or incapacitate its enemies.",
+    "memorable": "The Enchanter\u2019s Captivating Gaze ability can incapacitate foes, forcing them to spend their turns staring at it.",
+    "goals": "To manipulate its enemies and control the battlefield through enchantments.",
+    "relations": "Similar spellcasters and fey creatures, often found in the company of other enchantment-focused beings.",
+    "environment": "Commonly found in urban settings or areas of magical influence.",
+    "strengths": "Exceptional spellcaster with high Intelligence and Charisma, excels in crowd control and enchantment spells.",
+    "weaknesses": "Limited physical defenses with a lower Armor Class, relying heavily on spells for effectiveness in combat.",
+    "attacks": "Uses a dagger for melee attacks, but primarily focuses on spell attacks to inflict control and damage.",
+    "most_powerful_ability": "Reach of the Fey allows the Enchanter to target multiple creatures within 10 feet when casting enchantment spells.",
+    "equipment": "A dagger, used for close combat.",
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Proficient in arcana and history, making it knowledgeable about magical phenomena.",
+    "additional_information": [
+        "Advantage on saving throws against being charmed due to Fey Ancestry.",
+        "Immunity to magical sleep effects.",
+        "A broad spell selection including powerful area control spells.",
+        "The ability to incapacitate foes effectively.",
+        "Uses Beguiling Parry to disrupt enemy attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": "A 13th-level spellcaster with a variety of enchantment spells, including charm, hypnotic pattern, and lightning bolt.",
+    "test_queries": [
+        "humanoid spellcaster that charms enemies",
+        "mage that uses captivating gaze",
+        "enchanter with powerful enchantment spells",
+        "spellcaster beneficial in crowd control",
+        "humanoid with reach of the fey ability"
+    ]
+}

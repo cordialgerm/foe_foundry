@@ -1,6 +1,8 @@
 <MonsterName/>Dinosaur, Jeholopterus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>12</HP>
 <summary>The Jeholopterus is a small, aerial dinosaur that serves as a nimble and elusive threat in encounters. It boasts good flying speed, allowing it to engage targets from the air while minimizing the risk of retaliation due to its Flyby ability, which prevents it from provoking opportunity attacks. With a reasonable armor class of 14, the Jeholopterus can sustain a few hits but primarily relies on its agility and cleverness to evade danger. It has low hit points, making it fragile in direct combat; however, its ability to attach to creatures and drain blood can be strategically devastating, allowing it to sap the strength of foes over time. The creature possesses keen senses and can excel in roles that take advantage of its perception skills, even though its intelligence is notably low.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ Overall, the Jeholopterus acts as a strategic creature, using its mobility and u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dinosaur, Jeholopterus
 
 *Small* *Beast* *unaligned*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +5 to hit, 5 ft., one creature,. 7 (1d6+3) slashing damage.
 
 
+</statblock>
 
 

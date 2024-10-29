@@ -1,0 +1,25 @@
+{
+    "name": "Lizard",
+    "queries": [
+        {
+            "query": "small cold-blooded reptile that thrives in warm environments",
+            "variant": "tiny cold blooded reptile found in warm areas"
+        },
+        {
+            "query": "agile creature with sharp claws that can blend into its surroundings",
+            "variant": "quick creature that can camouflage and has sharp claws"
+        },
+        {
+            "query": "reptile that can detach its tail for an escape",
+            "variant": "lizard that has the ability to lose its tail for quick escape"
+        },
+        {
+            "query": "tiny creature with darkvision that is often used as a familiar",
+            "variant": "small animal with night vision commonly used as a pet"
+        },
+        {
+            "query": "fragile lizard with very low hit points and armor class",
+            "variant": "delicate reptile with low HP and bad armor class"
+        }
+    ]
+}

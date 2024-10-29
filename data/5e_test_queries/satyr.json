@@ -1,0 +1,25 @@
+{
+    "name": "Satyr",
+    "queries": [
+        {
+            "query": "fey creature with goat legs and a charming personality",
+            "variant": "charming fey creature with legs of a goat"
+        },
+        {
+            "query": "magical forest creature that loves music and wine",
+            "variant": "creature of the forest that enjoys wine and music"
+        },
+        {
+            "query": "playful fey that can charm and manipulate travelers",
+            "variant": "fey that can manipulate and charm travelers in a playful manner"
+        },
+        {
+            "query": "creature with horns and stealthy abilities found in enchanted glades",
+            "variant": "stealthy creature with horns appearing in enchanted forest glades"
+        },
+        {
+            "query": "satyr abilities that include lullaby and dance tune",
+            "variant": "abilities of a satyr including a lullaby and dance tune"
+        }
+    ]
+}

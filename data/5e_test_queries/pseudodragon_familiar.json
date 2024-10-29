@@ -1,0 +1,25 @@
+{
+    "name": "Pseudodragon Familiar",
+    "queries": [
+        {
+            "query": "tiny dragon-like creature that can communicate telepathically",
+            "variant": "small dragon creature able to talk telepathically"
+        },
+        {
+            "query": "magical familiar with high stealth and low hit points",
+            "variant": "familiar with magic abilities very stealthy but few hit points"
+        },
+        {
+            "query": "small dragon familiar that provides magic resistance",
+            "variant": "tiny draconic familiar offering resistance to magic"
+        },
+        {
+            "query": "creature with blindsight that can stun enemies",
+            "variant": "monster with blindsight capable of stunning foes"
+        },
+        {
+            "query": "dragon that can fly quickly and is weak in combat",
+            "variant": "flying dragon that is not strong in battle"
+        }
+    ]
+}

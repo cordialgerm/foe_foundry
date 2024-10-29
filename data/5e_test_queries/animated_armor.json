@@ -1,0 +1,25 @@
+{
+    "name": "Animated Armor",
+    "queries": [
+        {
+            "query": "hollow guardian suit of armor that uses magic",
+            "variant": "hollow armor guardian that uses magic"
+        },
+        {
+            "query": "magical suit of armor that blends in with surroundings",
+            "variant": "magical armor that blends in to the environment"
+        },
+        {
+            "query": "construct creature immune to poison and psychic damage",
+            "variant": "creature construct that is immune to poison and psychic"
+        },
+        {
+            "query": "animated suit of armor with silent movements found in castles",
+            "variant": "animated armor with silent movement that can be found in castles"
+        },
+        {
+            "query": "defensive magical armor used as a guard in dungeons",
+            "variant": "magical defensive armor that is used as guarding in dungeons"
+        }
+    ]
+}

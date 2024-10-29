@@ -1,0 +1,25 @@
+{
+    "name": "Frost Mole",
+    "queries": [
+        {
+            "query": "small beast that burrows in snowy environments and has a keen sense of smell",
+            "variant": "small creature that digs in cold places and has good smelling abilities"
+        },
+        {
+            "query": "cold-resistant creature that can camouflage in snow and digs pits",
+            "variant": "creature that resists cold, hides in snow and has the ability to make pits"
+        },
+        {
+            "query": "beast that ambushes with stealth in icy terrain using terrain manipulation",
+            "variant": "animal that surprises using stealth in cold areas by altering the terrain"
+        },
+        {
+            "query": "Frost Mole abilities in snowy surroundings and combat tactics",
+            "variant": "Frost Mole powers in icy settings and fighting strategies"
+        },
+        {
+            "query": "creature with burrowing abilities and ice resistance that uses stealth",
+            "variant": "being that can dig and resists cold while being sneaky"
+        }
+    ]
+}

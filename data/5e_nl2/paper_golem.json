@@ -1,0 +1,52 @@
+{
+    "name": "Paper Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 7,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "fly 30 ft. and walk 20 ft.",
+    "role": null,
+    "tags": [
+        "golem",
+        "construct",
+        "trickster"
+    ],
+    "adjectives": [
+        "tiny",
+        "whimsical",
+        "agile"
+    ],
+    "description": "The Paper Golem is a tiny construct, resembling an ordinary sheet of paper when motionless. Its high dexterity gives it an agile form, enabling it to dodge attacks effectively.",
+    "memorable": "Its ability to blend in as paper and its immunity to form-altering magic make it a unique and tricky opponent.",
+    "goals": "Typically serves as a guardian or a trickster in various encounters.",
+    "relations": "May serve creators or be associated with constructs and magical beings.",
+    "environment": "Often found in libraries, basements, or any areas filled with paper and writing materials.",
+    "strengths": "High dexterity allows it to evade attacks; immune to being affected by spells that alter its form.",
+    "weaknesses": "Vulnerable to fire damage, which can easily exploit its defenses.",
+    "attacks": "Primary attack is Paper Cut, dealing 6 slashing damage with a +5 to hit.",
+    "most_powerful_ability": "Ink Blot can deal poison damage on a successful attack, adding an element of strategy to its combat.",
+    "equipment": null,
+    "senses": "The Paper Golem has passive perception of 8, indicating poor awareness.",
+    "skills": null,
+    "additional_information": [
+        "Immunity to poison and psychic damage.",
+        "Condition immunities include charmed, exhausted, frightened, and poisoned.",
+        "Can remain motionless and disguise itself as ordinary paper.",
+        "Attack is considered magical for the purpose of overcoming resistance.",
+        "Low intelligence means it cannot strategize effectively."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny paper creature that flies",
+        "whimsical construct that blends in with paper",
+        "agile paper golem immune to fire",
+        "trickster golem with a deadly ink attack",
+        "construct that resembles ordinary paper"
+    ]
+}

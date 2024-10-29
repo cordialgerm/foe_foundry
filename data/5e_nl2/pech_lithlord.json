@@ -1,0 +1,50 @@
+{
+    "name": "Pech Lithlord",
+    "creature_type": "Elemental",
+    "alignment": "neutral good",
+    "size": "Small",
+    "hp": 104,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "30 ft. walking and climbing speed",
+    "role": "Controller",
+    "tags": [
+        "elemental",
+        "nature protector",
+        "stone"
+    ],
+    "adjectives": [
+        "small",
+        "resilient",
+        "spellcasting"
+    ],
+    "description": "The Pech Lithlord is a small elemental creature characterized by its affinity for stone and robust defense. It has a solid build and is often seen manipulating the earth around it.",
+    "memorable": "Its unique ability to stun foes and its connection to the earth make it a formidable guardian of natural elements.",
+    "goals": "To protect natural environments, especially those involving stone.",
+    "relations": "Might be found alongside other elementals or druids, serving as guardians of nature.",
+    "environment": "Typically inhabits rocky terrains or caverns, where stone is abundant.",
+    "strengths": "Strong physical attacks and effective spellcasting capabilities.",
+    "weaknesses": "Vulnerable to bright light, which impairs its effectiveness.",
+    "attacks": "Uses a multiattack strategy with a pick and a hammer, capable of stunning targets.",
+    "most_powerful_ability": "Ability to stun enemies with its multiattack when two successful hits occur on the same target.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet and a passive perception of 17, enhancing its awareness of the surroundings.",
+    "skills": "Proficient in athletics and perception, both at +7, demonstrating agility and keen awareness.",
+    "additional_information": [
+        "Immune to poison damage and several conditions.",
+        "Can cast useful spells like Mending and Thunderwave at will.",
+        "Has the ability 'One with the Stone' for damage resistance.",
+        "Excels in rocky or stony environments where its abilities shine.",
+        "Neutral good alignment compels it to defend nature."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting based on Wisdom, including utility and damaging spells.",
+    "test_queries": [
+        "small elemental creature protecting stone",
+        "Pech Lithlord stone abilities",
+        "guardian of natural elements with spellcasting",
+        "elemental with light sensitivity and stunning attacks",
+        "resilient creature inhabiting rocky terrain"
+    ]
+}

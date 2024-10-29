@@ -1,0 +1,55 @@
+{
+    "name": "Brine Hag",
+    "creature_type": "Fey",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 150,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 15 ft. swim 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "fey",
+        "hag",
+        "aquatic",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "toxic",
+        "cunning",
+        "manipulative",
+        "powerful"
+    ],
+    "description": "The Brine Hag is a Medium-sized fey with a formidable aquatic presence, characterized by its ability to thrive in water and its menacing appearance, which suggests its toxic nature.",
+    "memorable": "The Brine Hag's Polluted Aura poisons creatures nearby, and its ability to summon aquatic allies makes it a significant threat in water.",
+    "goals": "To manipulate aquatic environments and creatures, spreading its toxic influence.",
+    "relations": "Typically encountered with various aquatic creatures, serving as a leader to fearsome aquatic monstrosities.",
+    "environment": "Typically found in coastal waters and swamps, thriving in toxic aquatic environments.",
+    "strengths": "Impressive swimming speed, toxic aura, strong spellcasting capabilities, and the ability to summon aquatic creatures.",
+    "weaknesses": "Dependent on water environments for some abilities and spells; less effective on land.",
+    "attacks": "Utilizes multiattack with claw attacks dealing slashing and poison damage, and a powerful tail slap that can push enemies away.",
+    "most_powerful_ability": "The Shriek can stun enemies with thunder damage in a wide area, giving it control in combat.",
+    "equipment": null,
+    "senses": "Has passive Perception of 17, allowing it to keenly observe its surroundings, particularly in water.",
+    "skills": "Has proficiency in perception, enhancing its ability to locate prey in dark waters.",
+    "additional_information": [
+        "Immune to being charmed and poisoned",
+        "Can breathe both air and water",
+        "Magic Resistance makes it hard to incapacitate it through spells",
+        "Can communicate with aquatic creatures as if sharing a language",
+        "Can cast spells to manipulate its environment and deceive others"
+    ],
+    "damage_types": [
+        "thunder",
+        "poison"
+    ],
+    "spellcasting": "Able to cast spells that manipulate surroundings and charm enemies, including Minor Illusion, Charm Person, and Control Water.",
+    "test_queries": [
+        "toxic fey creature with aquatic abilities",
+        "powerful hag that commands ocean life",
+        "creature that poisons nearby enemies in water",
+        "spellcasting hag with a thunderous shriek",
+        "manipulative brine hag in coastal waters"
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "name": "Pugilist",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "humanoid",
+        "fighter",
+        "melee"
+    ],
+    "adjectives": [
+        "strong",
+        "agile",
+        "resilient"
+    ],
+    "description": "The Pugilist is a muscular humanoid adept at hand-to-hand combat, relying on sheer physicality and skill rather than magic.",
+    "memorable": "Its combat style focuses on overpowering foes with multiple fists strikes and stunning them with precise attacks.",
+    "goals": "To dominate hand-to-hand combat encounters and disrupt opponents' actions.",
+    "relations": "May be encountered alongside other martial-focused beings or in combat training arenas.",
+    "environment": "Typically found in fighting pits, gyms, or urban areas where physical contests occur.",
+    "strengths": "Exceptional physical attacks with the ability to make multiple strikes and disrupt enemy actions.",
+    "weaknesses": "Lacks magical abilities and relies heavily on melee combat.",
+    "attacks": "Can strike three times with its fists in a single action, dealing bludgeoning damage, or utilize special moves to enhance its attacks.",
+    "most_powerful_ability": "The Head Shot ability can stun opponents, offering a significant tactical advantage in fights.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in athletics, making it adept at physical challenges and intimidation.",
+    "additional_information": [
+        "Utilizes Unarmored Defense to enhance its armor class without wearing armor.",
+        "Has a powerful bonus action called Haymaker for increased damage.",
+        "Capable of reacting with Opportune Jab to counter grappling attempts."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "muscular humanoid with exceptional fighting skills",
+        "hand-to-hand combat expert with stunning attacks",
+        "agile fighter who excels in melee encounters",
+        "brute force combatant capable of multiple strikes",
+        "humanoid that uses fists and intimidation in fights"
+    ]
+}

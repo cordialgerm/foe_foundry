@@ -1,0 +1,25 @@
+{
+    "name": "Apostle",
+    "queries": [
+        {
+            "query": "humanoid healer that can deal radiant damage",
+            "variant": "healer humanoid that deals radiant damage"
+        },
+        {
+            "query": "medium creature with a strong emphasis on faith and spellcasting",
+            "variant": "creature that is medium and focuses on faith and casting spells"
+        },
+        {
+            "query": "monster that performs multiattacks and has divine weapons",
+            "variant": "creature with divine weapons and can make multiple attacks"
+        },
+        {
+            "query": "Apostle's abilities to heal and harm undead",
+            "variant": "abilities of the Apostle to heal and damage undead creatures"
+        },
+        {
+            "query": "humanoid with high wisdom and charisma, using spells in combat",
+            "variant": "high charisma and wisdom humanoid using spells during combat"
+        }
+    ]
+}

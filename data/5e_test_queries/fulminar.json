@@ -1,0 +1,25 @@
+{
+    "name": "Fulminar",
+    "queries": [
+        {
+            "query": "large lightning elemental that can fly and causes restraining damage",
+            "variant": "big lightning elemental that flies and deals restraining damage"
+        },
+        {
+            "query": "fast-moving elemental creature with lightning abilities that can immobilize opponents",
+            "variant": "swift elemental being with lightning powers that can immobilize foes"
+        },
+        {
+            "query": "elemental that has immunity to poison and excels in dexterous maneuvers",
+            "variant": "elemental creature immune to poison and great at agile moves"
+        },
+        {
+            "query": "neutral elemental monster that can create lightning shackles and has high Dexterity",
+            "variant": "neutral elemental beast that makes lightning shackles and has great Dexterity"
+        },
+        {
+            "query": "Fulminar combat abilities including lightning damage and multiattack options",
+            "variant": "Fulminar fight skills including lightning damage and multiattack choices"
+        }
+    ]
+}

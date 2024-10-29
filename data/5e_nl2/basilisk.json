@@ -1,0 +1,53 @@
+{
+    "name": "Basilisk",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 15,
+    "srd": true,
+    "cr": "3",
+    "movement": "20 ft. walking speed, 10 ft. climbing speed",
+    "role": "Ambusher",
+    "tags": [
+        "reptilian",
+        "petrifying",
+        "venomous"
+    ],
+    "adjectives": [
+        "fearsome",
+        "slow",
+        "dangerous",
+        "solitary"
+    ],
+    "description": "The Basilisk is a large, reptilian creature with eight legs and a thick, scaly hide, known for its terrifying ability to petrify its foes with its gaze.",
+    "memorable": "Its ability to turn creatures to stone with its gaze makes it a uniquely formidable opponent.",
+    "goals": "Typically seeks to ambush and petrify unsuspecting prey while hoarding treasures.",
+    "relations": "Often solitary but can be surrounded by petrified victims or other basilisks in rare cases.",
+    "environment": "Dark caves or ruins.",
+    "strengths": "Possesses a powerful petrifying gaze that can immobilize foes, along with venomous bite attacks.",
+    "weaknesses": "Low speed and poor Dexterity make it vulnerable to ranged attacks.",
+    "attacks": "Utilizes a deadly Stone Gaze to petrify and a venomous bite that combines piercing and poison damage.",
+    "most_powerful_ability": "Petrifying Gaze, which can turn enemies to stone and remove them from combat.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, which allows it to see in low-light conditions.",
+    "skills": null,
+    "additional_information": [
+        "Can use Stone Gaze as a reaction against attackers who hit it.",
+        "Resistant to exhaustion and the frightened condition.",
+        "Tends to hoard treasures left behind by its petrified victims.",
+        "Has a low passive perception score of 9.",
+        "Relies primarily on its gaze for combat rather than physical agility."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "reptilian monster with petrifying gaze",
+        "large ambush predator",
+        "solitary cave dweller",
+        "venomous reptile",
+        "stone turning creature"
+    ]
+}

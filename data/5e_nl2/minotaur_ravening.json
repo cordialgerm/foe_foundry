@@ -1,0 +1,51 @@
+{
+    "name": "Minotaur, Ravening",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 85,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "minotaur",
+        "monstrosity",
+        "melee",
+        "chaotic evil"
+    ],
+    "adjectives": [
+        "fierce",
+        "brutal",
+        "relentless"
+    ],
+    "description": "The Ravening Minotaur is a large monstrosity known for its brutal and relentless nature. It has powerful limbs, a horned head, and abundant muscle, embodying a fearsome presence on the battlefield.",
+    "memorable": "The ability to consume the hearts of fallen foes to increase its maximum hit points makes it a continuously rising threat.",
+    "goals": "To engage and defeat its enemies in brutal melee combat.",
+    "relations": "Often encountered alongside other chaotic creatures; may command lesser beasts in its territory.",
+    "environment": "Typically found in labyrinthine environments or chaotic regions.",
+    "strengths": "High Strength and Constitution scores ensure it can deal significant damage and withstand attacks.",
+    "weaknesses": "Poor Intelligence and Charisma result in limited strategic thinking and difficulty in social interactions.",
+    "attacks": "Performs a Multiattack with one Bite, which can provide temporary hit points, and two Claw attacks, which inflict slashing damage.",
+    "most_powerful_ability": "Ravening Hunger, which allows it to consume hearts of foes, increasing its maximum hit points.",
+    "equipment": null,
+    "senses": "Keen smell grants it advantage on Wisdom (Perception) checks related to scent.",
+    "skills": "Possesses a good passive Perception of 17, allowing it to notice hidden foes effectively.",
+    "additional_information": [
+        "Charge ability for extra damage and knockdown potential.",
+        "Labyrinthine Recall allows perfect navigation in familiar areas.",
+        "Ravening Madness forces it to see allies as enemies.",
+        "Reckless ability for enhanced attack rolls at a cost.",
+        "Can infect targets with a ravening condition upon a successful bite."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "brutal minotaur with ravening abilities",
+        "large chaotic evil monster with horns",
+        "fierce melee minotaur that heals from kills",
+        "powerful minotaur that consumes enemy hearts",
+        "monster with keen smell and labyrinthine recall"
+    ]
+}

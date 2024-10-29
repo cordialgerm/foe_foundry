@@ -1,0 +1,25 @@
+{
+    "name": "Amber Ooze",
+    "queries": [
+        {
+            "query": "large amorphous ooze that can engulf creatures in combat",
+            "variant": "big blob that engulfs creatures and fights in melee"
+        },
+        {
+            "query": "yellow slime monster that moves through trees without difficulty",
+            "variant": "amber slime that travels through trees as if it's difficult terrain"
+        },
+        {
+            "query": "durable ooze with poison immunity and low dexterity",
+            "variant": "strong ooze that is immune to poison and has bad agility"
+        },
+        {
+            "query": "creature that petrifies and can navigate difficult surfaces",
+            "variant": "monster that can turn foes to stone and climb hard areas"
+        },
+        {
+            "query": "ooze that attacks with pseudopod and can trap characters",
+            "variant": "slimy creature that has pseudopod attacks and ensnares adventurers"
+        }
+    ]
+}

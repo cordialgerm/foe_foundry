@@ -1,0 +1,25 @@
+{
+    "name": "Death Shroud Golem",
+    "queries": [
+        {
+            "query": "large fabric creature that can fly and grapples enemies",
+            "variant": "big fabric monster that flies and can grapple foes"
+        },
+        {
+            "query": "construct immune to spells and can ambush with false appearance",
+            "variant": "golem that is immune to spells with ability to ambush using false appearance"
+        },
+        {
+            "query": "durable flying golem with magical attacks and poison immunity",
+            "variant": "durable flying creature with magic weapons and immunity to poison"
+        },
+        {
+            "query": "creature that uses grappling to restrain opponents and has high hit points",
+            "variant": "monster that restrains foes using grappling and has a lot of hit points"
+        },
+        {
+            "query": "taking down a golem that can move like fabric and has a weak intelligence",
+            "variant": "how to defeat a golem that moves like fabric and has low intelligence"
+        }
+    ]
+}

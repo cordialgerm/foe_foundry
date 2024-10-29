@@ -1,0 +1,25 @@
+{
+    "name": "Tiger",
+    "queries": [
+        {
+            "query": "large beast with orange and black stripes that hunts in forests",
+            "variant": "big animal with black and orange stripes hunting in the woods"
+        },
+        {
+            "query": "predator that uses stealth and speed to ambush prey in jungles",
+            "variant": "predatory animal that employs quickness and stealth to surprise prey in the jungle"
+        },
+        {
+            "query": "powerful feline with keen smell and ability to knock foes prone",
+            "variant": "strong cat with enhanced sense of smell and capability to bring enemies down"
+        },
+        {
+            "query": "large solitary hunter with sharp claws and strong jaws in forest environment",
+            "variant": "big lone hunter with sharp claws and powerful jaws living in wooded areas"
+        },
+        {
+            "query": "agile predator that deals slashing damage with claws while pouncing",
+            "variant": "quick beast that inflicts slashing damage with its claws during a leap"
+        }
+    ]
+}

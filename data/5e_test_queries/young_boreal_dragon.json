@@ -1,0 +1,25 @@
+{
+    "name": "Young Boreal Dragon",
+    "queries": [
+        {
+            "query": "large dragon with fire immunity and a powerful breath weapon",
+            "variant": "big dragon that is immune to fire and has a strong breath attack"
+        },
+        {
+            "query": "dragon living in cold environments with high hit points",
+            "variant": "cold habitat dragon with a lot of hit points"
+        },
+        {
+            "query": "chaotic neutral dragon that excels in melee and ranged combat",
+            "variant": "dragon that is chaotic neutral and good in both melee and ranged fights"
+        },
+        {
+            "query": "flying dragon with strong physical strength and weak dexterity",
+            "variant": "winged dragon that has great strength but poor agility"
+        },
+        {
+            "query": "Young Boreal Dragon abilities and tactics",
+            "variant": "abilities and strategies of the Young Boreal Dragon"
+        }
+    ]
+}

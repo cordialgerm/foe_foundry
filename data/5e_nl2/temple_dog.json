@@ -1,0 +1,52 @@
+{
+    "name": "Temple Dog",
+    "creature_type": "Celestial",
+    "alignment": "Any Good",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 feet walk",
+    "role": "Bruiser",
+    "tags": [
+        "Celestial",
+        "Protector",
+        "Radiant"
+    ],
+    "adjectives": [
+        "Medium",
+        "heavenly",
+        "protective"
+    ],
+    "description": "The Temple Dog is a Medium Celestial creature known for its radiant jaws and powerful bite, featuring natural armor that grants it an Armor Class of 15. It has a sturdy build with a strong physique.",
+    "memorable": "Features magic-enhanced bite attacks that deal additional radiant damage and can manipulate battlefield positions by pushing enemies away.",
+    "goals": "To serve and protect, often found defending sacred locations or serving deities.",
+    "relations": "May be encountered alongside priests or in temples dedicated to good-aligned deities.",
+    "environment": "Typically found in temples or locations associated with good-aligned powers.",
+    "strengths": "Immunity to poison and resistance to radiant damage and nonmagical attacks; advantages on saving throws against spells.",
+    "weaknesses": "Lacks magical attacks and utilizes non-verbal communication, potentially limiting its tactics.",
+    "attacks": "Employs two magical Bite attacks that deal piercing and additional radiant damage, with the potential to knock enemies prone.",
+    "most_powerful_ability": "Radiant Jaws ability allows it to deal extra radiant damage with its bites, enhancing its offensive capabilities.",
+    "equipment": null,
+    "senses": "Possesses darkvision extending 60 feet and a passive Perception score of 15, allowing it to spot hidden foes effectively.",
+    "skills": "Proficient in Perception, with a +5 bonus, making it skillful at detecting threats.",
+    "additional_information": [
+        "Has Magic Resistance granting advantage on saving throws against spells.",
+        "Protector's Instincts ability enhances initiative rolls when near a priest.",
+        "Rushing Bite ability allows it to push targets away after a successful charged attack.",
+        "Can grapple targets with its multiattack if both bites are successful.",
+        "Strong character of good alignment, aligning its behaviors with protective and celestial duties."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "radiant celestial protector dog",
+        "medium dog with magical jaws",
+        "guardian creature that bites and pushes",
+        "protective celestial with resistance to magic",
+        "temple dog with radiant bite attacks"
+    ]
+}

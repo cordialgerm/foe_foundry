@@ -1,0 +1,25 @@
+{
+    "name": "Moderate Malleable",
+    "queries": [
+        {
+            "query": "large fleshy creature that absorbs smaller beings and thrives in combat",
+            "variant": "big fleshy monster that absorbs mini creatures and excels at fighting"
+        },
+        {
+            "query": "chaotic evil aberration that can climb and has psychic abilities",
+            "variant": "chaotic evil creature that climbs walls and possesses psychic powers"
+        },
+        {
+            "query": "monster with high hit points that can split into smaller versions",
+            "variant": "creature with significant health that can divide into tiny counterparts"
+        },
+        {
+            "query": "aberration that can reshape itself and has damage immunities",
+            "variant": "aberration capable of changing its form and immune to certain damage"
+        },
+        {
+            "query": "creature that grapples enemies with tendrils and drains psychic energy",
+            "variant": "monster that grapples foes using tendrils and absorbs psychic power"
+        }
+    ]
+}

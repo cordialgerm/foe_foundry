@@ -1,0 +1,25 @@
+{
+    "name": "Corrupting Ooze",
+    "queries": [
+        {
+            "query": "large evil ooze that can poison opponents",
+            "variant": "big evil ooze able to poison foes"
+        },
+        {
+            "query": "ooze with high hit points immune to poison",
+            "variant": "poison immune ooze with a lot of hit points"
+        },
+        {
+            "query": "creature that reshapes into humanoid form and has putrid stench",
+            "variant": "being that can morph into human shape and has a foul stench"
+        },
+        {
+            "query": "slow-moving strong ooze capable of destroying items",
+            "variant": "slow strong ooze that can wreck items"
+        },
+        {
+            "query": "ooze with good stealth and puts creatures in poisoned state",
+            "variant": "stealthy ooze that poisons creatures"
+        }
+    ]
+}

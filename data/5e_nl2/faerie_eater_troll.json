@@ -1,0 +1,50 @@
+{
+    "name": "Faerie Eater Troll",
+    "creature_type": "Giant",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 84,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "troll",
+        "giant",
+        "regeneration"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "resilient"
+    ],
+    "description": "The Faerie Eater Troll is a large, tough giant with remarkable regenerative abilities and a potent bite and claw attacks. It is characterized by its sharp features and a grotesque appearance typical of trolls.",
+    "memorable": "Its ability to regenerate rapidly and the unique mechanic of controlling severed limbs makes it a challenging opponent.",
+    "goals": "The Faerie Eater Troll hunts for weaker creatures to charm and consume, using its regeneration to outlast enemies.",
+    "relations": "This troll may be found alongside other trolls or magical creatures it preys upon.",
+    "environment": "Typically found in dark forests or swamps where it can hide and ambush its prey.",
+    "strengths": "Possesses strong regeneration unless hit by fire or acid, and it has magic resistance, making it tough against spells.",
+    "weaknesses": "Vulnerable to acid and fire damage, which can prevent its regeneration.",
+    "attacks": "It uses its bite, dealing piercing damage, and has claw attacks that deal slashing damage, alongside its Charming Murmur ability.",
+    "most_powerful_ability": "Regeneration allows it to regain hit points regularly and stay in fight even when injured.",
+    "equipment": null,
+    "senses": "It has keen smell, allowing it to detect hidden creatures.",
+    "skills": "Skilled in stealth, which helps it navigate unnoticed through its environment.",
+    "additional_information": [
+        "Can charm opponents, immobilizing them during combat.",
+        "Controls severed limbs for additional attacks.",
+        "Average Dexterity grants it some ability to evade attacks.",
+        "Low Intelligence and Charisma limit its tactical and social effectiveness.",
+        "Exceptionally high Constitution enhances its stamina and survivability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large troll with regeneration abilities",
+        "troll that can charm opponents",
+        "giant with severed limb control",
+        "powerful giant that hunts in swamps",
+        "resilient troll with magic resistance"
+    ]
+}

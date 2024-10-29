@@ -1,0 +1,25 @@
+{
+    "name": "Sammael",
+    "queries": [
+        {
+            "query": "powerful celestial being that can manipulate the battlefield",
+            "variant": "celestial being that is powerful and manipulates the battlefield"
+        },
+        {
+            "query": "angelic warrior that inflicts radiant damage and punishes foes",
+            "variant": "warrior angel that punishes foes and deals radiant damage"
+        },
+        {
+            "query": "medium celestial with high strength and exceptional wisdom",
+            "variant": "medium celestial creature with exceptional wisdom and high strength"
+        },
+        {
+            "query": "Sammael's special abilities in combat and resistances to damage",
+            "variant": "abilities in combat and damage resistances of Sammael"
+        },
+        {
+            "query": "celestial with telepathy and darkvision that fights unholy creatures",
+            "variant": "creature that fights unholy beings, has darkvision, and uses telepathy"
+        }
+    ]
+}

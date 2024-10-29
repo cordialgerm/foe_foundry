@@ -1,0 +1,55 @@
+{
+    "name": "Chain Devil",
+    "creature_type": "Fiend",
+    "creature_subtype": "devil",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 138,
+    "ac": 16,
+    "srd": true,
+    "cr": "8",
+    "movement": "30 feet walking speed",
+    "role": null,
+    "tags": [
+        "fiend",
+        "devil",
+        "torturer",
+        "grappler"
+    ],
+    "adjectives": [
+        "chain-covered",
+        "cruel",
+        "relentless"
+    ],
+    "description": "A humanoid figure draped in living, barbed chains that writhe and lash as if alive, sometimes obscured by an iron mask or a twisted expression of agony.",
+    "memorable": "Commands animated chains and inflicts psychic fear through its unnerving mask ability.",
+    "goals": "To enforce the will of higher devils, bind, torture, and instill fear in its victims.",
+    "relations": "Often serves as a jailer or enforcer to higher-ranking devils.",
+    "environment": "Typically found in the Nine Hells or places of torment and punishment.",
+    "strengths": "Highly resilient to fire and poison damage, with advantages against magical effects, and capable of grappling enemies with chains.",
+    "weaknesses": "Vulnerable to radiant damage; struggles against ranged or magical attackers that can evade close combat.",
+    "attacks": "Multiattack with chains to grapple and restrain targets, dealing slashing and ongoing piercing damage.",
+    "most_powerful_ability": "Unnerving Mask creates an illusion that frightens foes, exploiting psychological tactics during combat.",
+    "equipment": null,
+    "senses": "Possesses Devil's Sight, allowing it to see through magical darkness.",
+    "skills": "Skilled in survival, making it a competent tracker of enemies.",
+    "additional_information": [
+        "Chains can be animated to attack independently.",
+        "Rattling chains can be heard from great distances when moving.",
+        "Can track grappling targets for up to 30 days.",
+        "Immune to poisoned condition and has multiple resistances.",
+        "Possesses significant Charisma, allowing it to instill fear."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chain-covered torturing devil",
+        "fiend that manipulates chains",
+        "psychic fear causing devil",
+        "humanoid creature with animated chains",
+        "cruel devil that binds foes"
+    ]
+}

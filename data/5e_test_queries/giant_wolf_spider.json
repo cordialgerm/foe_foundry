@@ -1,0 +1,25 @@
+{
+    "name": "Giant Wolf Spider",
+    "queries": [
+        {
+            "query": "fast deadly spider that hunts in forests",
+            "variant": "deadly fast spider that hunts in the forest"
+        },
+        {
+            "query": "venomous spider with stealthy ambush tactics",
+            "variant": "stealthy venomous spider with ambush tactics"
+        },
+        {
+            "query": "large hairy spider that climbs walls and paralyzes prey",
+            "variant": "huge hairy spider that scales walls and paralyzes its victims"
+        },
+        {
+            "query": "agile spider found in caves that uses webs for sensing",
+            "variant": "agile spider that resides in caves and uses webs for sensing"
+        },
+        {
+            "query": "territorial predator spider that strikes with a bite",
+            "variant": "predatory territorial spider that attacks with its bite"
+        }
+    ]
+}

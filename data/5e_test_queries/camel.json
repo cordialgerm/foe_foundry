@@ -1,0 +1,25 @@
+{
+    "name": "Camel",
+    "queries": [
+        {
+            "query": "large beast with endurance living in deserts",
+            "variant": "large animal with endurance in desert habitats"
+        },
+        {
+            "query": "animal that can carry heavy loads and has camel resilience",
+            "variant": "beast that carries heavy loads and has resistance to exhaustion"
+        },
+        {
+            "query": "long-legged creature known for being a mount in arid climates",
+            "variant": "long legged animal famous for being a mount in dry environments"
+        },
+        {
+            "query": "beast with low intelligence and a bite attack",
+            "variant": "animal with poor intelligence and a melee bite attack"
+        },
+        {
+            "query": "desert-dwelling beast with good speed and low armor class",
+            "variant": "desert beast with high speed and low defense rating"
+        }
+    ]
+}

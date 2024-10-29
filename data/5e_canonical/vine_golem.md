@@ -1,6 +1,8 @@
 <MonsterName/>Vine Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>67</HP>
 <summary>The Vine Golem is a medium-sized construct characterized by its ability to blend seamlessly into its surroundings and its formidable nature in combat. Created to serve under a master, this golem boasts a blend of offensive capabilities, impressive defensive traits, and unique communication skills with its creator, making it a valuable ally in various situations. While it possesses good mobility with a climbing speed of 30 feet, it has vulnerabilities to slashing damage and limited potency against magical attacks. Its primary strength lies in its ability to manipulate the battlefield by ensnaring enemies, while its overall challenge rating of 3 indicates a moderate level of threat for adventurers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Vine Golem combines its stealthy nature, telepathic abilities, and 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vine Golem
 
 *Medium* *Construct* *neutral*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Thorned Embrace:** Melee Weapon Attack: +6 to hit, reach 5 ft., one Medium or smaller creature. Hit: 13 (2d8 + 4) piercing damage, and the target is grappled (escape DC 11). Until the grapple ends, the target is restrained, and the vine golem can’t embrace another target.
 
 
+</statblock>
 
 

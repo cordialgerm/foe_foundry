@@ -1,0 +1,50 @@
+{
+    "name": "Vine Golem",
+    "creature_type": "Construct",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "climb 30 ft., walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "guardian",
+        "nature"
+    ],
+    "adjectives": [
+        "stealthy",
+        "durable",
+        "manipulative"
+    ],
+    "description": "The Vine Golem is a medium-sized construct made of plant materials, adept at blending into its surroundings with a natural camouflage.",
+    "memorable": "Its ability to manipulate the battlefield by ensnaring enemies and its telepathic bond with its creator make the Vine Golem a unique ally.",
+    "goals": "To serve and protect its creator while controlling the battlefield.",
+    "relations": "Typically found serving a creator, it may be encountered alongside other constructs.",
+    "environment": "Commonly found in areas with plentiful plant life, such as forests or jungles.",
+    "strengths": "Excels in stealth and battlefield control through grappling and pulling enemies.",
+    "weaknesses": "Vulnerable to slashing damage and less effective against magical attacks.",
+    "attacks": "Can make two thorned vine melee attacks, dealing piercing damage and manipulating the position of its foes.",
+    "most_powerful_ability": "The Creator's Eyes and Ears ability allows the creator to use the golem's senses for casting spells strategically.",
+    "equipment": null,
+    "senses": "Has a passive perception score of 12, indicating average awareness of its surroundings.",
+    "skills": "Proficient in Stealth with a +6 modifier, making it effective at hiding in natural environments.",
+    "additional_information": [
+        "Ability to communicate telepathically with its creator.",
+        "Immune to conditions such as charm and paralysis.",
+        "Resistant to nonmagical bludgeoning and piercing damage.",
+        "Advantage on Dexterity (Stealth) checks in plant-rich areas.",
+        "Immutable form prevents alteration by spells."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy guardian made of vines",
+        "construct that grapples enemies with vines",
+        "battlefield control vine creature",
+        "telepathic golem connected to creator",
+        "medium-sized plant-based golem"
+    ]
+}

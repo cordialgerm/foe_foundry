@@ -1,6 +1,8 @@
 <MonsterName/>Spell-warped Chuul</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>16</AC>
+<HP/>127</HP>
 <summary>The Spell-warped Chuul is a large aberration known for its formidable presence both in and out of water. With a challenge rating of 7, it poses a significant threat to adventurers, particularly due to its unique blend of physical might and magical abilities. It possesses strong defensive capabilities, such as damage immunities to poison and advantages against magical effects, making it difficult to incapacitate. The chuul’s pincer attacks can deal substantial damage, especially when it is able to utilize temporary hit points gained from its ability to absorb magic. Despite its strengths, the chuul does have lower Dexterity and Intelligence scores, which can hinder its evasion and strategic maneuvering in combat.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ In combat, the chuul is designed to engage fighters head-on through multiattacks
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Spell-warped Chuul
 
 *Large* *Aberration*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Tentacle:** A grappled creature makes a DC 14 Constitution saving throw. On a failure  it is paralyzed for 1 minute. The creature repeats the saving throw at the end of each of its turns  ending the paralysis on a success.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Wild Sirocco</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>6</CR>
+<AC/>13</AC>
+<HP/>105</HP>
 <summary>The Wild Sirocco is a formidable elemental creature characterized by its large size and mastery over fire and wind. It is neutral in alignment and serves as a challenge rating 6 adversary, making it a significant opponent in combat situations. With an impressive pool of hit points totaling 105, this creature has good durability, though its armor class of 13 is average, making it susceptible to attacks. The Sirocco excels in mobility with a flying speed of 80 feet, allowing it to maneuver freely in the air and evade melee attacks. However, it is vulnerable to cold damage, which provides an opportunity for clever players to exploit its weaknesses. Notably, the Wild Sirocco can pass through extremely narrow spaces without hindrance, making it a tricky foe that can encounter characters unexpectedly.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Wild Sirocco presents a unique challenge that emphasizes mobility, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wild Sirocco
 
 *Large* *Elemental* *neutral*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Scorching Winds (Recharge 5–6):** Whips up scorching winds around it. Each creature within 10 ft. of it: 21 (6d6) fire ignites and is thrown up to 20' in random direction and knocked prone (DC 15 Str negates). If thrown creature strikes solid surface creature takes 3 (1d6) bludgeoning damage per 10 ft. it was thrown. If thrown at another creature that creature must make DC 15 Dex save or take same damage and be knocked prone. Until creature uses action to douse fire ignited creature takes 3 (1d6) fire at start of each of its turns.
 
 
+</statblock>
 
 

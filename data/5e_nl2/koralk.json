@@ -1,0 +1,51 @@
+{
+    "name": "Koralk",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Large",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "large",
+        "poison",
+        "melee"
+    ],
+    "adjectives": [
+        "formidable",
+        "crafty",
+        "venomous"
+    ],
+    "description": "The Koralk is a menacing Large fiend with a powerful physique and lethal attacks. It boasts a mouth filled with sharp teeth and wields a vicious scythe, embodying both strength and cunning.",
+    "memorable": "Possesses potent poison that reduces maximum hit points and has advantages against magic, making it a tricky foe.",
+    "goals": "To overwhelm enemies with poison and physical attacks, asserting dominance in combat.",
+    "relations": "Related to other fiends in its serving hierarchy and might operate alongside lesser fiends.",
+    "environment": "Commonly found in dark, infernal regions or wherever evil elements gather.",
+    "strengths": "High Strength, immunity to fire and poison, and advantage on saving throws against magic.",
+    "weaknesses": "Average Dexterity and Wisdom, leaving it vulnerable to specific attacks.",
+    "attacks": "Can strike with sharp Bite, slashing Scythe, venomous Stingers, and grapple with Vestigial Arms.",
+    "most_powerful_ability": "Harvester Venom causes ongoing poison damage and reduces hit points over time.",
+    "equipment": null,
+    "senses": "Can see through magical darkness, enhancing its effectiveness in combat situations.",
+    "skills": null,
+    "additional_information": [
+        "Grapples foes with Vestigial Arms, restraining them for follow-up attacks.",
+        "Inspires fearlessness in combat by not being frighted near allies.",
+        "Uses its poison to debilitatingly weaken foes over time."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large fiend with potent poison attacks",
+        "menacing creature resistant to magic and fire",
+        "fiend that reduces hit points with venom",
+        "strong melee attacker with poisonous abilities",
+        "koralk abilities and tactics in combat"
+    ]
+}

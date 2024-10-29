@@ -1,6 +1,8 @@
 <MonsterName/>Yeti</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>68</HP>
 <summary>The Yeti is a large monstrosity known for its formidable strength and adaptability in snowy environments. With an Armor Class of 12, it can withstand a moderate amount of attacks, while its 68 hit points provide it with decent durability in combat. The Yeti has a challenge rating of 4, making it a suitable foe for mid-level adventurers. It excels in cold environments where its camouflage ability gives it a tactical advantage. Notably, the Yeti is immune to cold damage, but it has a weakness to fire; when it suffers fire damage, it becomes rattled, affecting its performance for the turn. While not particularly intelligent, the Yeti shows a charismatic presence that enhances its engagement with other creatures. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Yeti's combination of physical prowess, tactical abilities, and spe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Yeti
 
 *Large* *Monstrosity*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Chilling Gaze (Gaze):** One creature within 30 feet that is not immune to cold damage makes a DC 13 Constitution saving throw. On a failure  the creature takes 10 (3d6) cold damage and is paralyzed for 1 minute. It repeats the saving throw at the end of each of its turns  ending the effect on a success. If a creatures saving throw is successful or the effect ends for it  it is immune to any Chilling Gaze for 24 hours.
 
 
+</statblock>
 
 

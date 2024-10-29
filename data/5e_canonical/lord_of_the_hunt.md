@@ -1,6 +1,8 @@
 <MonsterName/>Lord of the Hunt</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>18</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>229</HP>
 <summary>The Lord of the Hunt is a powerful fey creature that embodies the spirit of the hunt, commanding both respect and fear on the battlefield. As a lawful neutral being, it operates with a code, focusing on achieving its goals through strategic planning and unwavering determination. The creature possesses exceptional physical attributes, particularly in strength and dexterity, making it a formidable opponent in combat. With a high armor class of 18 and significant hit points totaling 229, it is durable and difficult to bring down. The Lord of the Hunt excels in ranged and melee attacks thanks to its magical weaponry and can deal substantial poison damage in addition to its regular attacks. However, its reliance on physical prowess and magical capabilities can also be seen as a weakness, as it may struggle against opponents who can outmaneuver or outsmart it.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ Overall, the Lord of the Hunt is a complex and versatile adversary with a variet
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lord of the Hunt
 
 *Medium* *Fey* *Lawful Neutral*
@@ -85,5 +88,6 @@ The Lord of the Hunt can take 3 legendary actions, choosing from the options bel
 - **Attack:** The Lord of the Hunt makes one Spear or Longbow attack.
 - **Tenacious Stride:** The Lord of the Hunt moves up to his speed without provoking opportunity attacks. If he is mounted, he can force the mount to move up to half its speed without provoking opportunity attacks instead.
 - **Call to the Hunt (Costs 2 Actions):** The Lord of the Hunt blows his hunting horn and chooses one creature he can see within 60 feet. If the creature can hear the horn, it must succeed on a DC 16 Charisma saving throw or be charmed by the Lord of the Hunt for 8 hours. The charmed target obeys the Lord’s verbal commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to the Lord’s Call to the Hunt for the next 24 hours. The Lord can have only one target charmed at a time. If he charms another, the effect on the previous target ends.
+</statblock>
 
 

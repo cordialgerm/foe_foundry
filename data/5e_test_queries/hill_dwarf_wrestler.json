@@ -1,0 +1,25 @@
+{
+    "name": "Hill Dwarf Wrestler",
+    "queries": [
+        {
+            "query": "strong humanoid that excels in grappling and close combat",
+            "variant": "humanoid that is strong and excels in close combat grappling"
+        },
+        {
+            "query": "medium-sized fighter known for melee attacks and high hit points",
+            "variant": "fighter that is medium-sized with high hit points and melee attacks"
+        },
+        {
+            "query": "dwarf wrestler with powerful fists who lacks ranged attacks",
+            "variant": "wrestler dwarf with fists that are powerful and has no ranged abilities"
+        },
+        {
+            "query": "Hill Dwarf Wrestler's special abilities focused on hand-to-hand combat",
+            "variant": "special abilities of the Hill Dwarf Wrestler centered on melee combat"
+        },
+        {
+            "query": "combat capable dwarf that uses grappling techniques and body slams",
+            "variant": "dwarf skilled in combat that uses body slams and grappling techniques"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Wickerman",
+    "creature_type": "Construct",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 138,
+    "ac": 8,
+    "srd": false,
+    "cr": "9",
+    "movement": "walks at 40 feet speed",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "fire",
+        "grappler",
+        "berserk"
+    ],
+    "adjectives": [
+        "ominous",
+        "durable",
+        "devastating",
+        "mindless"
+    ],
+    "description": "A huge construct exuding an ominous presence, designed for combat with high hit points and a flame-filled body.",
+    "memorable": "Its ability to imprison opponents in its blazing body while dealing fire damage makes it a unique threat.",
+    "goals": "To confront and eliminate foes while protecting its controlling staff.",
+    "relations": "Linked to the controlling staff, which dictates its behavior and aggression.",
+    "environment": "Typically found in areas of conflict where it serves as a guardian or adversary.",
+    "strengths": "Resistant to nonmagical attacks, immune to various conditions, and capable of dealing fire damage.",
+    "weaknesses": "Low armor class and dexterity makes it vulnerable to ranged attacks. Susceptible to cold damage if on fire.",
+    "attacks": "Multiattack allows it to perform two slam attacks, while Blazing Ray inflicts significant ranged fire damage.",
+    "most_powerful_ability": "Imprison allows it to trap foes inside its body, causing ongoing fire damage and providing total cover.",
+    "equipment": null,
+    "senses": "Possesses blindsight with a range of 120 feet, allowing it to sense creatures without needing sight.",
+    "skills": null,
+    "additional_information": [
+        "Goes berserk when its controlling staff is compromised.",
+        "Inflicts fire damage on contact through Blazing Fury.",
+        "Incapacitated if its flame is doused until reignited.",
+        "Can imprison up to 6 Medium or smaller creatures inside its body.",
+        "Vulnerable to water, suffering cold damage while on fire."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge fiery construct that grapples foes",
+        "Wickerman grappling abilities and fire damage",
+        "ominous creature that goes berserk",
+        "construct with unique imprisonment ability",
+        "monster that punishes melee attackers with fire"
+    ]
+}

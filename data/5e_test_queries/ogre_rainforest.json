@@ -1,0 +1,25 @@
+{
+    "name": "Ogre, Rainforest",
+    "queries": [
+        {
+            "query": "large green monster in the rainforest with shape-shifting abilities",
+            "variant": "big green creature in rainforest that can change shape"
+        },
+        {
+            "query": "strengthful giant that can turn into a boar and lives in dense jungles",
+            "variant": "strong giant able to transform into a boar found in thick jungles"
+        },
+        {
+            "query": "chaotic evil rainforest creature skilled in melee attacks and communication with beasts",
+            "variant": "evil rainforest monster expert in melee and talks to animals"
+        },
+        {
+            "query": "Rainforest Ogre known for charge attack and high hit points",
+            "variant": "Ogre from rainforest famous for charging attacks and high health"
+        },
+        {
+            "query": "aggressive giant with versatility and powers in the rainforest environment",
+            "variant": "ferocious giant with skills and abilities in rainforest surroundings"
+        }
+    ]
+}

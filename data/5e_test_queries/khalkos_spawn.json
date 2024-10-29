@@ -1,0 +1,25 @@
+{
+    "name": "Khalkos Spawn",
+    "queries": [
+        {
+            "query": "tiny cunning monster that manipulates the battlefield",
+            "variant": "tiny cunning creature that controls the battlefield"
+        },
+        {
+            "query": "intelligent small aberration that uses pheromones to confuse enemies",
+            "variant": "smart little aberration that confuses foes with pheromones"
+        },
+        {
+            "query": "mobile monster with darkvision that communicates telepathically",
+            "variant": "fast creature with darkvision that talks without words"
+        },
+        {
+            "query": "small aberration that is immune to charm and resistant to fire",
+            "variant": "little creature that resists fire and can't be charmed"
+        },
+        {
+            "query": "Khalkos Spawn abilities for tactical advantage in combat",
+            "variant": "tactical abilities of Khalkos Spawn in battle"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Sewer Weird</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>8</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Sewer Weird is a formidable large elemental creature, embodying the essence of stagnant waters and toxic environments. It is neutral evil in nature, making it a potential adversary filled with cunning and malice. With a solid armor class of 15 due to its natural armor, an impressive hit point total of 136 derived from 16d10+48, and a movement speed that allows it to walk 30 feet and swim 60 feet, the Sewer Weird is versatile in combat. Its challenge rating of 8 signifies that it poses a significant threat to adventurers. Notably, it boasts a high Dexterity score of 19, granting a good modifier of +4, and a Constitution score of 17, allowing it a good +3 modifier which contributes to its overall durability. However, the creature is particularly weak in Intelligence and Charisma, with modifiers of -3 and -4 respectively, making it less effective in social situations and strategic planning. Its immunities to poison damage and various conditions provide it with strong defensive capabilities.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ Overall, the Sewer Weird showcases a blend of resilience, mobility, and damaging
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sewer Weird
 
 *Large* *Elemental* *neutral evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Sewer Overflow (Recharge 5–6):** Emits a tide of filth and water from itself in a 15 ft. cube. Each creature in this cube: 18 (4d8) bludgeoning damage and 18 (4d8) poison and is infected with sewer plague (DC 15 Con half damage and isn’t infected).
 
 
+</statblock>
 
 

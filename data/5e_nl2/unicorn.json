@@ -1,0 +1,50 @@
+{
+    "name": "Unicorn",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 67,
+    "ac": 12,
+    "srd": true,
+    "cr": "5",
+    "movement": "50 ft., notably fast",
+    "role": "Support",
+    "tags": [
+        "celestial",
+        "healer",
+        "protector",
+        "magic user"
+    ],
+    "adjectives": [
+        "majestic",
+        "pure-hearted",
+        "graceful"
+    ],
+    "description": "A majestic celestial creature resembling a horse with a spiraled horn, flowing mane, and exceptional grace, often seen in forests and sacred places.",
+    "memorable": "Known for its ability to heal allies and its powerful magical spells, the unicorn serves as a guardian and symbol of purity.",
+    "goals": "To protect the natural world and aid the innocent.",
+    "relations": "Often allied with good-aligned beings and revered by those seeking purity and grace.",
+    "environment": "Typically found in forests and sacred places.",
+    "strengths": "High mobility of 50 ft., innate spellcasting, and strong defensive capabilities, including magic resistance and healing abilities.",
+    "weaknesses": "Susceptible to certain magical effects that it does not resist.",
+    "attacks": "Multiattack with hooves and horn, inflicting bludgeoning, piercing, and radiant damage, capable of knocking targets prone.",
+    "most_powerful_ability": "Healing Touch, allowing it to heal other creatures and remove poisons and diseases.",
+    "senses": "Passive Perception of 15, allowing it to notice hidden threats effectively.",
+    "skills": "High Wisdom and Charisma scores enhance its social interactions and effectiveness in wisdom-based checks.",
+    "additional_information": [
+        "RADIATES A GOOD AURA enhancing its role as a protector.",
+        "Possesses abilities like 'Woodland Walk' allowing it to navigate through difficult terrain easily.",
+        "Can communicate with beasts and plants, enhancing its role as a natural guardian.",
+        "Has legendary actions enhancing its tactical presence in combat.",
+        "Can teleport, providing versatility in movement and escape."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting with options for healing, protection, and utility spells.",
+    "test_queries": [
+        "majestic healing horse with a horn",
+        "celestial creature that protects forests",
+        "unicorn with powerful healing abilities",
+        "graceful horned horse protector of nature",
+        "creature known for healing and magic"
+    ]
+}

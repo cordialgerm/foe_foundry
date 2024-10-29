@@ -1,0 +1,25 @@
+{
+    "name": "Dragon Cultist",
+    "queries": [
+        {
+            "query": "humanoid servant of dragons with spellcasting abilities",
+            "variant": "spellcasting humanoid who serves dragons"
+        },
+        {
+            "query": "dragon cultist with immunity to damage and fanatical traits",
+            "variant": "cultist immune to damage and fanatical abilities"
+        },
+        {
+            "query": "medium creature with deception and persuasion skills",
+            "variant": "medium-sized creature skilled in deception and persuasion"
+        },
+        {
+            "query": "cultist using hold person spell against enemies",
+            "variant": "cultist casting hold person on enemies"
+        },
+        {
+            "query": "humanoid with good dexterity and wisdom living in dragon's shadow",
+            "variant": "decent dexterity and wisdom humanoid under a dragon's influence"
+        }
+    ]
+}

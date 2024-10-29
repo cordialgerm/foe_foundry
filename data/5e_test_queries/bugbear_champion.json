@@ -1,0 +1,25 @@
+{
+    "name": "Bugbear Champion",
+    "queries": [
+        {
+            "query": "strong humanoid with high melee damage and poor agility",
+            "variant": "humanoid with high melee damage and weak agility"
+        },
+        {
+            "query": "Bugbear Champion with darkvision and strong attack abilities",
+            "variant": "Bugbear Champion that has darkvision and powerful attack skills"
+        },
+        {
+            "query": "stealthy monster that wields a spiked club and shield",
+            "variant": "stealthy creature using a spiked club and a shield"
+        },
+        {
+            "query": "monster known for its resilience and brutal melee attacks",
+            "variant": "creature recognized for its toughness and brutal melee strikes"
+        },
+        {
+            "query": "humanoid with high strength and multiple attack options",
+            "variant": "humanoid that has high strength and various attack types"
+        }
+    ]
+}

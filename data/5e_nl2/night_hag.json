@@ -1,0 +1,54 @@
+{
+    "name": "Night Hag",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 112,
+    "ac": 17,
+    "srd": true,
+    "cr": "5",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "horror",
+        "dreams",
+        "nightmare"
+    ],
+    "adjectives": [
+        "malevolent",
+        "psychological",
+        "cunning",
+        "terrifying"
+    ],
+    "description": "Night Hags have withered, gray skin and glowing red eyes, embodying nightmares and despair.",
+    "memorable": "Their ability to infiltrate dreams and sap life force makes them uniquely dangerous.",
+    "goals": "To haunt and torment mortals, feeding on their fear and misery.",
+    "relations": "Often collect souls for trade in infernal markets.",
+    "environment": "Typically found in dark or eerie locations that resonate with fear.",
+    "strengths": "Solid defenses, including magic resistance and powerful spellcasting.",
+    "weaknesses": "Relatively low mobility and reliance on magical powers.",
+    "attacks": "Attacks with claws for slashing damage and inflicts curses to weaken foes.",
+    "most_powerful_ability": "Nightmare Haunting, which can reduce a target's hit point maximum and capture their soul.",
+    "senses": "Possesses truesight up to 120 feet, allowing it to see through illusions and invisibility.",
+    "skills": "Highly skilled in Deception and Insight, making it effective in manipulation.",
+    "additional_information": [
+        "Can shapeshift into a more appealing form to deceive targets.",
+        "Emits an aura of malevolence to unsettle foes.",
+        "Access to powerful spells such as Plane Shift and Sleep.",
+        "Cursed targets suffer disadvantage on attack rolls against the hag for 30 days.",
+        "Can enter the Ethereal Plane for tactical advantages."
+    ],
+    "damage_types": [
+        "psychic",
+        "force"
+    ],
+    "spellcasting": "Can innately cast spells like detect thoughts and sleep, using Charisma as the spellcasting ability.",
+    "test_queries": [
+        "creature that haunts dreams and feeds on fear",
+        "fiendish monster with terrifying nightmare abilities",
+        "gray-skinned creature with magical deception powers",
+        "hag that curses and captures souls",
+        "female fiend that manipulates dreams and emotions"
+    ]
+}

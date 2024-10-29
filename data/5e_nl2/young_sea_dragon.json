@@ -1,0 +1,53 @@
+{
+    "name": "Young Sea Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 190,
+    "ac": 18,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 50 ft., fly 40 ft.",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "aquatic",
+        "cold immunity",
+        "amphibious"
+    ],
+    "adjectives": [
+        "formidable",
+        "fearsome",
+        "versatile"
+    ],
+    "description": "The Young Sea Dragon is a large dragon that embodies the essence of aquatic life, characterized by its impressive build, natural armor, and striking appearance.",
+    "memorable": "Known for its powerful Tidal Breath and ability to deal significant damage to structures, the Young Sea Dragon is a force to be reckoned with in both water and air.",
+    "goals": "Typically seeks to control aquatic territories and prey upon weaker beings, often engaging in territorial disputes.",
+    "relations": "Can be encountered with other aquatic creatures and may serve a larger dragon or hide in a lair near water.",
+    "environment": "Primarily found in oceans, seas, and coastal areas, thriving both underwater and airborne.",
+    "strengths": "Possesses cold damage immunity, exceptional physical strength, and resilience against spells due to high saving throw proficiencies.",
+    "weaknesses": "Average dexterity may limit its agility in combat.",
+    "attacks": "Can perform a multiattack with a powerful Bite and slashing Fin attacks, dealing high piercing and cold damage.",
+    "most_powerful_ability": "Tidal Breath allows it to unleash a wave of icy seawater, dealing massive damage and controlling the battlefield.",
+    "equipment": null,
+    "senses": "Has blindsight up to 30 feet, enhancing its ability to sense movement in water.",
+    "skills": "Possesses a high perception skill of +9, allowing it to detect foes effectively in various environments.",
+    "additional_information": [
+        "Can breathe both air and water.",
+        "Deals double damage to objects and structures.",
+        "Has a passive perception of 19.",
+        "Utilizes a mix of melee and breath attacks.",
+        "Strikes a balance between air and aquatic combat abilities."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large dragon that breathes icy seawater",
+        "formidable aquatic dragon with cold immunity",
+        "dragon that can attack both in air and water",
+        "creature with a tidal wave ability",
+        "powerful dragon with double damage to structures"
+    ]
+}

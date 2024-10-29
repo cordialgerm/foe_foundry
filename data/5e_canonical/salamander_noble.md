@@ -1,6 +1,8 @@
 <MonsterName/>Salamander Noble</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>8</CR>
+<AC/>15</AC>
+<HP/>136</HP>
 <summary>The Salamander Noble is a formidable Huge Elemental creature that embodies the essence of fire and heat, making it a dangerous adversary for any adventurers it encounters. With a strong physical presence, an impressive amount of hit points, and notable damage-resistance qualities, it thrives in combat. Its challenge rating of 8 indicates that it is a significant threat, capable of inflicting both blunt and piercing damage while also dealing substantial fire damage. However, it is also susceptible to cold damage, which can disable some of its innate abilities, posing a strategic challenge for players. The creature’s fiery traits and combat style make it a unique opponent, combining brute strength with elemental prowess.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a powerful area attack, the Salamander Noble possesses the Fire Breath abilit
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Salamander Noble
 
 *Huge* *Elemental*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath:** The salamander exhales fire in a 30-foot cone. Each creature in the area makes a DC 13 Dexterity saving throw  taking 21 (6d6) fire damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Vampiric Knight",
+    "queries": [
+        {
+            "query": "undead knight in heavy armor with regeneration powers",
+            "variant": "undead knight in armor that has regeneration abilities"
+        },
+        {
+            "query": "strong vampire warrior that uses necrotic damage attacks",
+            "variant": "strong vampire fighter that attacks with necrotic damage"
+        },
+        {
+            "query": "medium undead creature that takes damage from running water",
+            "variant": "medium undead monster that is hurt by running water"
+        },
+        {
+            "query": "knight with high armor class that grapples its opponents",
+            "variant": "knight with a high AC that can grapple foes"
+        },
+        {
+            "query": "evil knight that has weaknesses to radiant damage and wooden stakes",
+            "variant": "malevolent knight with flaws for radiant damage and wooden stakes"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Cactid",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 76,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 15 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "plant",
+        "creature",
+        "grappler",
+        "resilient"
+    ],
+    "adjectives": [
+        "large",
+        "defensive",
+        "offensive",
+        "resilient",
+        "dangerous"
+    ],
+    "description": "The Cactid is a large, plant-like creature with tendril-like appendages that can grapple and drain the life force from its prey.",
+    "memorable": "It can drain the hit point maximum of grappled foes, potentially leading to their death.",
+    "goals": "To defend itself while draining life from opponents, or to deter attackers.",
+    "relations": "Might coexist with other plant creatures in arid environments.",
+    "environment": "Typically found in dry, desert-like areas.",
+    "strengths": "Exceptional Constitution allows it to effectively absorb damage; resistant to bludgeoning and piercing damage.",
+    "weaknesses": "Highly vulnerable to fire damage.",
+    "attacks": "Uses two Tendril attacks to grapple and drain life from opponents, imposing disadvantage in combat.",
+    "most_powerful_ability": "Hail of Needles can target multiple enemies when the Cactid is severely weakened.",
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect creatures nearby.",
+    "skills": "Notably low Dexterity leads to poor maneuverability but grants resilience through its Constitution.",
+    "additional_information": [
+        "Can grapple Medium or smaller creatures for life-draining effects.",
+        "Drains hit point maximum from grappled foes, which resets after hydration.",
+        "Reel ability allows it to reposition grappled opponents.",
+        "Effective ambusher and resilient defender in combat.",
+        "Dual Tendril attacks make it a formidable close-range opponent."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large plant creature that drains life",
+        "cactus monster with grappling tendrils",
+        "desert plant creature that uses needles",
+        "vulnerable plant monster weak to fire",
+        "resilient creature with blindsight abilities"
+    ]
+}

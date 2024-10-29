@@ -1,6 +1,9 @@
 <MonsterName/>Pit Fiend (Devil)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>devil</Subtype>
+<CR/>20</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>300</HP>
 <summary>A Pit Fiend is one of the most powerful and terrifying devils in the Nine Hells. Towering over most mortals, Pit Fiends have red, scaly skin, massive bat-like wings, and flaming eyes. Their muscular bodies are covered in scars and infernal armor, and they wield deadly weapons like flaming swords or massive maces. Pit Fiends are generals in the infernal armies, commanding legions of devils and spreading destruction wherever they go. In addition to their physical prowess, they are master spellcasters, capable of summoning fire, controlling minds, and inflicting terrible curses. Their mere presence exudes an aura of fear and domination.</summary>
 
 <summary>The Pit Fiend is a formidable and imposing demon from the depths of the infernal realms, embodying both power and cunning. As a Large fiend with a challenge rating of 20, it serves as a potent adversary in any campaign, capable of both melee and magical attacks. The Pit Fiend has a high armor class of 19 and possesses a significant pool of hit points—300 total—making it a tough creature to defeat. Its strengths lie in its high strength and charisma scores, with a strength of 26 and a charisma of 24, enabling potent attacks and intimidating presence. However, despite its impressive power, it has weaknesses such as the vulnerability to effects that exploit its lower dexterity, which, while good, does not compare to its exceptional physical abilities. The Pit Fiend employs fear, fire, and deception in battle, making it a multifaceted threat.</summary>
@@ -51,6 +54,7 @@ The overall combination of these characteristics and abilities makes the Pit Fie
 
 Source: 5e_srd
 
+<statblock>
 ### Pit Fiend (Devil)
 
 *Large fiend (devil), lawful evil*
@@ -101,7 +105,8 @@ At will: *detect magic*, *fireball*
 
 ***Mace***. *Melee Weapon Attack:* +14 to hit, reach 10 ft., one target. *Hit:* 15 (2d6+8) bludgeoning damage plus 21 (6d6) fire damage.
 
-***Tail***. *Melee Weapon Attack:* +14 to hit, reach 10 ft., one target. *Hit:* 24 (3d10+8) bludgeoning damage.
+***Tail***. *Melee Weapon Attack:* +14 to hit, reach 10 ft., one target. *Hit:* 24 (3d10+8) bludgeoning damage.</statblock>
+
 
 
 
@@ -109,6 +114,7 @@ At will: *detect magic*, *fireball*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pit Fiend
 
 *Large* *Fiend*
@@ -151,6 +157,7 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 8) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -159,6 +166,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pit Fiend
 
 *Large fiend (devil)*
@@ -194,5 +202,6 @@ Source: 5e_artisinal_monsters
 - **Tail.** Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 8) bludgeoning damage plus 14 (4d6) fire damage, and the target must succeed on a DC 21 STR save or be knocked prone.
 - **Hurl Flame.** Ranged Spell Attack: +10 to hit, range 120 ft., one target. Hit: 25 (6d6 + 4) fire damage.
 
+</statblock>
 
 

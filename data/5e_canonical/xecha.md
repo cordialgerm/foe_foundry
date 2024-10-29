@@ -1,6 +1,8 @@
 <MonsterName/>Xecha</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>133</HP>
 <summary>Xecha is a medium-sized fiend of chaotic evil disposition, marked by its versatility in combat and deceptive abilities. With a solid armor class of 15, it can withstand considerable damage, bolstered by its impressive 133 hit points, which makes it durable in encounters. The creature's overall challenge rating of 6 suggests it is a formidable opponent, especially for parties that are not adequately prepared. One of Xecha's notable strengths lies in its ability to manipulate its form and environments, making it difficult to pin down or predict. However, its tendency to rely on clever tactics, rather than pure strength, means it can struggle against opponents who can foresee its deceptions.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, Xecha can perform a Multiattack, allowing it to strike with
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Xecha
 
 *Medium* *Fiend* *chaotic evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Sensory Overload (Recharge 5–6):** Psychic pulse. Each creature that isn’t a Construct or Undead within 20' of the xecha: 24 (7d6) psychic and blinded and deafened until end of its next turn (DC 15 Int half damage not blinded/deafened).
 
 
+</statblock>
 
 

@@ -1,0 +1,50 @@
+{
+    "name": "Water Horse",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 77,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "shapeshifter",
+        "manipulator"
+    ],
+    "adjectives": [
+        "versatile",
+        "cunning",
+        "charming"
+    ],
+    "description": "The Water Horse is a Medium-sized fey capable of shapeshifting between a humanoid, a horse, or a hybrid form. It has an elegant yet devious appearance, with features reflecting both its horse and humanoid forms.",
+    "memorable": "Its Charming Gaze ability can incapacitate foes, making it a dangerous opponent in combat and social situations.",
+    "goals": "To manipulate others and gain power through deception.",
+    "relations": "Often encountered with other fey creatures or as a trickster in various tales.",
+    "environment": "Commonly found in water sources such as lakes and rivers.",
+    "strengths": "Ability to shapeshift provides tactical flexibility; strong in melee with good Deception and Persuasion skills.",
+    "weaknesses": "While versatile, it has a moderate hit point total and can be overwhelmed by concentrated attacks.",
+    "attacks": "Uses Charming Gaze to incapacitate foes, followed by bite attacks in horse form or longsword attacks in humanoid form.",
+    "most_powerful_ability": "Charming Gaze can incapacitate a target for 1 minute, reshaping the dynamics of combat.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Deception and Persuasion, making it an excellent manipulator in social interactions.",
+    "additional_information": [
+        "Amphibious; can breathe in air and water.",
+        "Shapechanger ability allows polymorphing into different forms.",
+        "Strong melee combatant with a higher Strength score.",
+        "Good Dexterity aids its defense and initiative.",
+        "Can do ranged attacks with a Longbow in hybrid or humanoid form."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fey creature with charming gaze ability",
+        "shapeshifter that can turn into a horse",
+        "versatile creature living in water",
+        "cunning fey with manipulation skills",
+        "humanoid shapeshifter with charming abilities"
+    ]
+}

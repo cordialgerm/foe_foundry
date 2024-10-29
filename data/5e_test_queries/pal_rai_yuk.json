@@ -1,0 +1,25 @@
+{
+    "name": "Pal-Rai-Yuk",
+    "queries": [
+        {
+            "query": "huge water creature with memory-erasing abilities",
+            "variant": "huge creature with abilities to erase memory found in water"
+        },
+        {
+            "query": "monstrous predator that can burrow and swim",
+            "variant": "predatory monster that swims and can dig underground"
+        },
+        {
+            "query": "dual-headed beast with psychological attack in water",
+            "variant": "two-headed creature that has mind-affecting abilities in aquatic environments"
+        },
+        {
+            "query": "large monstrosity with high Charisma that lives in aquatic areas",
+            "variant": "big creature with strong Charisma found in water environments"
+        },
+        {
+            "query": "Pal-Rai-Yuk tactics for attacking in and out of water",
+            "variant": "strategies for the Pal-Rai-Yuk attacking both in water and on land"
+        }
+    ]
+}

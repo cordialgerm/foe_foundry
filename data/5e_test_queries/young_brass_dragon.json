@@ -1,0 +1,25 @@
+{
+    "name": "Young Brass Dragon",
+    "queries": [
+        {
+            "query": "sociable dragon that breathes fire and can cause sleep",
+            "variant": "friendly dragon that uses fire breath and can induce sleep"
+        },
+        {
+            "query": "large dragon with metal scales found in deserts",
+            "variant": "big dragon with metallic skin living in arid areas"
+        },
+        {
+            "query": "dragon known for persuasion and fire immunity",
+            "variant": "dragon well-known for its charm and ability to resist fire"
+        },
+        {
+            "query": "playful dragon that collects stories and has a suffocating breath",
+            "variant": "trickster dragon that loves tales and can suffocate enemies"
+        },
+        {
+            "query": "Young Brass Dragon abilities and combat tactics",
+            "variant": "Brass Dragon combat skills and abilities overview"
+        }
+    ]
+}

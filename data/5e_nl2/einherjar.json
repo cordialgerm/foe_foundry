@@ -1,0 +1,56 @@
+{
+    "name": "Einherjar",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 119,
+    "ac": 18,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "humanoid",
+        "celestial",
+        "chaotic",
+        "combat",
+        "resistant"
+    ],
+    "adjectives": [
+        "formidable",
+        "celestial",
+        "intimidating",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Einherjar is a robust medium humanoid clad in chain mail and wielding a shield, with a presence that embodies chaotic neutrality, drawing upon celestial powers. They are powerful melee and ranged combatants with a piercing gaze.",
+    "memorable": "The Einherjar's ability to enter a battle frenzy when near defeat makes it terrifying and unpredictable.",
+    "goals": "To engage in combat, showcasing prowess and intimidating foes, while drawing on celestial powers to aid in battle.",
+    "relations": "Often found alongside other celestial beings or in conflicts where they can assert their chaotic nature.",
+    "environment": "Typically encountered in areas of conflict or celestial influence, often amidst battlefields or enchanted locations.",
+    "strengths": "Resistance to piercing damage from nonmagical sources and access to powerful celestial abilities enhance its combat effectiveness.",
+    "weaknesses": "Relative averageness in intelligence and charisma may limit its manipulative abilities.",
+    "attacks": "Utilizes a multiattack strategy, incorporating melee Battleaxe strikes and ranged Celestial Bolts, with added radiant damage on hits.",
+    "most_powerful_ability": "The Battle Frenzy ability grants it advantage on attack rolls under 30 hit points, making it especially deadly when wounded.",
+    "equipment": "Wields a Battleaxe and has chain mail armor, offering both melee strength and protection.",
+    "senses": "Possesses truesight of 60 feet, enabling it to see through illusions and darkness.",
+    "skills": "Excels in Intimidation and has notable bonuses in Animal Handling and Perception.",
+    "additional_information": [
+        "Gains advantage on Intimidation checks against Humanoids with its Fearsome Gaze.",
+        "Weapon attacks deal extra 3d8 radiant damage due to its Runic Weapons ability.",
+        "Can invoke Celestial Blessing for various supernatural aids in combat.",
+        "Durable combatant with high hit points and strong constitution.",
+        "Designed for both melee and ranged combat effectively."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Has access to celestial abilities, granting blessings and enhanced damage during combat.",
+    "test_queries": [
+        "warrior capable of seeing through illusions",
+        "humanoid with celestial powers and high durability",
+        "intimidating creature with radiant weapon attacks",
+        "battleaxe-wielding celestial warrior",
+        "creature that grows stronger when wounded"
+    ]
+}

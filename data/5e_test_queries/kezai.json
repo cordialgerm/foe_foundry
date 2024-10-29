@@ -1,0 +1,25 @@
+{
+    "name": "Kezai",
+    "queries": [
+        {
+            "query": "medium monstrosity that can fly and uses poisonous gas",
+            "variant": "flying medium monstrosity that uses gas and poison"
+        },
+        {
+            "query": "creature immune to fire with a powerful acid attack",
+            "variant": "fire immune creature that has a strong acid attack"
+        },
+        {
+            "query": "monstrosity with claws that deals bludgeoning damage and poison",
+            "variant": "creature with claws that gives poison and bludgeoning damage"
+        },
+        {
+            "query": "hazardous creature surrounded by gas that damages enemies",
+            "variant": "creature that creates hazardous gas around it damaging foes"
+        },
+        {
+            "query": "medium monster that inflicts fire damage and has high dexterity",
+            "variant": "medium monstrosity that has high dex and deals fire damage"
+        }
+    ]
+}

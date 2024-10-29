@@ -1,0 +1,25 @@
+{
+    "name": "Rock Roach",
+    "queries": [
+        {
+            "query": "durable creature that can survive head removal and attacks with acid",
+            "variant": "tough monster that can live without its head and uses acid attacks"
+        },
+        {
+            "query": "medium beast with blind sense and dual brains",
+            "variant": "size medium monster that has blindsight and two brains"
+        },
+        {
+            "query": "rock roach with high hit points and powerful biting attacks",
+            "variant": "rock roach that has a lot of hit points and strong bite abilities"
+        },
+        {
+            "query": "monster that inflicts acid damage and has a solid armor class",
+            "variant": "creature that deals acid damage and has good armor rating"
+        },
+        {
+            "query": "agile beast that is vulnerable to complex strategies and has poor intelligence",
+            "variant": "quick monster that struggles against sophisticated plans and has low intelligence"
+        }
+    ]
+}

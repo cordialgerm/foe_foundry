@@ -1,0 +1,52 @@
+{
+    "name": "Servant of the Unsated God",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 17,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "spellcaster",
+        "necrotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "vile",
+        "menacing"
+    ],
+    "description": "The Servant of the Unsated God is an undead creature that embodies the vile hunger and malice of its dark deity, featuring a shadowy appearance and stench.",
+    "memorable": "It has the ability to deal necrotic damage that ignores resistances and is particularly dangerous in the dark.",
+    "goals": "To serve its dark deity and unleash terror upon adventurers.",
+    "relations": "Could be encountered with other undead or dark followers of its deity.",
+    "environment": "Usually found in darker areas or locations that align with its malevolent purpose.",
+    "strengths": "Can deal necrotic damage that bypasses resistances and possesses diverse spellcasting abilities.",
+    "weaknesses": "Disadvantage in sunlight, limiting its effectiveness during the day.",
+    "attacks": "Multiattack with bite and mace, inflicting piercing and necrotic damage, alongside a stench that poisons nearby foes.",
+    "most_powerful_ability": "Inescapable Hunger allows its necrotic damage to ignore any resistance.",
+    "equipment": "Mace of the Devourer, imbued with necrotic power.",
+    "senses": "Has darkvision up to 60 feet and passive perception of 13, making it adept in low-light conditions.",
+    "skills": "Possesses good proficiency in deception and stealth, enhancing its role as a cunning adversary.",
+    "additional_information": [
+        "Immune to poison and conditions such as being charmed or exhausted.",
+        "Can fire a Light Crossbow for ranged attacks.",
+        "Utilizes spells like Inflict Wounds and Hold Person for added combat versatility.",
+        "Able to contract darakhul fever with its bite, introducing an additional layer of threat.",
+        "Can poison creatures that start their turn nearby with its Stench ability."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "4th-level spellcaster with access to various cleric spells for control and damage.",
+    "test_queries": [
+        "formidable undead with necrotic damage",
+        "creature with deadly bite and stench",
+        "evil undead that ignores damage resistance",
+        "spellcasting monster that thrives in darkness",
+        "Servant of the Unsated God abilities"
+    ]
+}

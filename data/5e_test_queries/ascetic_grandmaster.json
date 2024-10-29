@@ -1,0 +1,25 @@
+{
+    "name": "Ascetic Grandmaster",
+    "queries": [
+        {
+            "query": "agile humanoid with high AC and martial skills in combat",
+            "variant": "agile humanoid with martial skills and high AC in combat"
+        },
+        {
+            "query": "humanoid that can stun opponents and has excellent agility",
+            "variant": "humanoid with excellent agility and the ability to stun opponents"
+        },
+        {
+            "query": "fast warrior that avoids damage and can disengage quickly",
+            "variant": "quick warrior that can disengage fast and avoids damage"
+        },
+        {
+            "query": "tough monk with exceptional Dexterity and Wisdom abilities",
+            "variant": "tough monk showcasing exceptional Wisdom and Dexterity abilities"
+        },
+        {
+            "query": "master martial artist that is immune to charm and fear effects",
+            "variant": "master martial artist immune to fear and charm effects"
+        }
+    ]
+}

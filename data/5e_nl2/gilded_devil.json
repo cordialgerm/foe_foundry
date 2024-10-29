@@ -1,0 +1,53 @@
+{
+    "name": "Gilded Devil",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 112,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "fiend",
+        "devil",
+        "magic",
+        "deception"
+    ],
+    "adjectives": [
+        "gilded",
+        "manipulative",
+        "deceptive",
+        "dangerous"
+    ],
+    "description": "The Gilded Devil exhibits a shimmering, golden appearance, reflecting its nature as a manipulative fiend. It wields a unique Golden Flail, capable of inflicting both bludgeoning and fire damage.",
+    "memorable": "Its ability to curse those accepting gifts and its potent magical attacks make it a formidable foe.",
+    "goals": "To manipulate and deceive others, often through offerings of jewelry, while asserting dominance through magical prowess.",
+    "relations": "Often interacts with other fiends, particularly in schemes of greed and trickery.",
+    "environment": "Typically found in locations associated with wealth and greed, such as opulent lairs or treasure hoards.",
+    "strengths": "Highly skilled in deception and persuasion, with substantial fire damage capabilities and magical resistance.",
+    "weaknesses": "Vulnerable to silvered weapons and reliant on its spells for effectiveness in combat.",
+    "attacks": "Utilizes the Golden Flail for powerful melee attacks, and can hurl flames at distance, both enhanced by its magical abilities.",
+    "most_powerful_ability": "Voracious Greed allows it to consume wealth to regain hit points, emphasizing its gluttonous nature.",
+    "senses": "Possesses Devil's Sight, enabling it to see in magical darkness.",
+    "skills": "Exceptional in Deception and Persuasion, making it a fearsome manipulator in social encounters.",
+    "additional_information": [
+        "Has the ability to teleport up to 120 feet.",
+        "Can transform its weapon into gold jewelry and vice versa.",
+        "Immunity to fire and poison damage.",
+        "Can cast illusions and mind-influencing spells at will.",
+        "Curses victims who accept its gifts, rendering them weaker against its attacks."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast a variety of spells, focusing on charm and manipulation, requiring Wisdom as the spellcasting ability.",
+    "test_queries": [
+        "fiend that uses greed and jewelry",
+        "devil with magical abilities and fire attacks",
+        "gilded creature that curses with gifts",
+        "manipulative fiend with a golden weapon",
+        "dangerous devil skilled in deception"
+    ]
+}

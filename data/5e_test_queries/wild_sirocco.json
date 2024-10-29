@@ -1,0 +1,25 @@
+{
+    "name": "Wild Sirocco",
+    "queries": [
+        {
+            "query": "large fire elemental that can fly and is weak to cold",
+            "variant": "big elemental of fire that flies and has cold weakness"
+        },
+        {
+            "query": "elemental creature capable of knocking opponents prone with fire damage",
+            "variant": "elemental being that can throw enemies down with fire attacks"
+        },
+        {
+            "query": "monster that deals fire damage and moves through narrow spaces",
+            "variant": "creature that inflicts fire damage and can navigate tight areas"
+        },
+        {
+            "query": "flying elemental with resistance to bludgeoning and slashing damage",
+            "variant": "airborne elemental resistant to bludgeoning and slicing attacks"
+        },
+        {
+            "query": "creature with multiattack and special ability Scorching Winds",
+            "variant": "monster having multi-hit attack and unique skill called Scorching Winds"
+        }
+    ]
+}

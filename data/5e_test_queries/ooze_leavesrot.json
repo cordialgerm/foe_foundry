@@ -1,0 +1,25 @@
+{
+    "name": "Leavesrot",
+    "queries": [
+        {
+            "query": "large ooze that blends in with leaves and inflicts poison",
+            "variant": "big ooze that camouflages in leaves and poisons targets"
+        },
+        {
+            "query": "slow moving ooze that can be disguised as a pile of leaves",
+            "variant": "sluggish ooze that can look like a leaf pile"
+        },
+        {
+            "query": "ooze with high hit points and a poisonous rotting attack",
+            "variant": "ooze that has a lot of hit points and attacks with poison"
+        },
+        {
+            "query": "creature that can inflict damage with a pseudopod and release poisonous spores",
+            "variant": "beast that deals damage with pseudopod and emits toxic spores"
+        },
+        {
+            "query": "monster immune to several conditions and has blindsight",
+            "variant": "creature that is immune to many statuses and sees with blindsight"
+        }
+    ]
+}

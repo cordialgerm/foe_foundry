@@ -1,0 +1,52 @@
+{
+    "name": "Ancient Shadow Dragon",
+    "creature_type": "Dragon",
+    "alignment": "null",
+    "size": "Gargantuan",
+    "hp": 296,
+    "ac": 21,
+    "srd": false,
+    "cr": "24",
+    "movement": "walk 40 ft., climb 40 ft., fly 80 ft., swim 40 ft.",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "shadow",
+        "undead"
+    ],
+    "adjectives": [
+        "formidable",
+        "malevolent",
+        "gargantuan"
+    ],
+    "description": "The Ancient Shadow Dragon embodies darkness, with glowing eyes and a swirling mass of shadows, capable of flying gracefully and moving incorporeally through solid objects.",
+    "memorable": "Its grip on shadows grants it the ability to inflict psychic damage alongside necrotic harm, making it a dual threat both physically and psychologically.",
+    "goals": "Typically seeks power and dominion over its area of influence, tied spiritually to a specific location.",
+    "relations": "May be related to other dragons and undead creatures, serving as a potent master to lesser beings.",
+    "environment": "Often found in dark, mystical locales with strong ties to shadow or necrotic energy.",
+    "strengths": "Possesses high resilience with various immunities and resistances, exceptional spellcasting abilities, and powerful breath attacks.",
+    "weaknesses": "Reliance on a specific area for its Essence Link; if removed from this area, it cannot benefit from long rests.",
+    "attacks": "Utilizes multiple attacks with its bite and claws, and can grapple foes with shadows while dealing necrotic damage.",
+    "most_powerful_ability": "Anguished Breath, a devastating breath attack that inflicts necrotic damage and imposes psychological strife.",
+    "equipment": "null",
+    "senses": "Possesses darkvision up to 240 feet with a passive perception of 20.",
+    "skills": "Excels in deception, capable of manipulating opponents, and has high stealth proficiency.",
+    "additional_information": [
+        "Can become incorporeal while moving through objects and creatures.",
+        "Has the ability to teleport through shadows, enhancing its mobility.",
+        "Inflicts levels of strife on those entering its lost essence area.",
+        "Can restore hit points by using its Horrid Whispers ability combat.",
+        "Possesses a legendary resistance that allows it to succeed on failed saving throws."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Innate spellcasting based on Charisma, capable of casting powerful spells like darkness and hallow.",
+    "test_queries": [
+        "dark dragon with psychic abilities",
+        "gargantuan shadow dragon",
+        "necrotic breath attack dragon",
+        "dragon that manipulates shadows",
+        "dragon with area control abilities"
+    ]
+}

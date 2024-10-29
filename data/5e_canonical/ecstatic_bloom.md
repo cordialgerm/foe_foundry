@@ -1,6 +1,8 @@
 <MonsterName/>Ecstatic Bloom</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>11</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>171</HP>
 <summary>The Ecstatic Bloom is a powerful Huge Celestial creature aligned with neutral good. It serves as a guardian of life and a beacon of protection against undead threats. With a high hit point total of 171, this creature is resilient, bolstered by its healing abilities and damage immunities. One of its notable strengths lies in its ability to regenerate health and bolster allied creatures, making it a significant asset in battle against evil foes. However, it is vulnerable to fire damage, which can disrupt its healing capabilities. The Ecstatic Bloom excels in support roles within a party, thanks to its various auras and cooperative abilities.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Ecstatic Bloom has a Multiattack feature, allowing it t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ecstatic Bloom
 
 *Huge* *Celestial* *neutral good*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Castigate (Recharges after a Short or Long Rest):** The bloom summons a chorus of booming celestial voices that descend into the minds of nearby creatures. Each creature within 30 feet of the bloom must succeed on a DC 17 Wisdom saving throw or be stunned until the end of its next turn. Castigate only affects non-good-aligned creatures with an Intelligence of 5 or higher.
 
 
+</statblock>
 
 

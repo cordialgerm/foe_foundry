@@ -1,0 +1,25 @@
+{
+    "name": "Thrummren",
+    "queries": [
+        {
+            "query": "Gargantuan celestial creature with lightning absorption ability and high hit points",
+            "variant": "Gargantuan heavenly creature that has lightning absorption ability and a lot of hp"
+        },
+        {
+            "query": "powerful protector in battle that deals thunder damage and has a natural armor class",
+            "variant": "strong defender in combat that inflicts thunder damage and possesses a natural armor class"
+        },
+        {
+            "query": "chaotic good celestial that can heal from lightning damage and protects its rider",
+            "variant": "chaotic good celestial being that regains health from lightning attacks and shields its rider"
+        },
+        {
+            "query": "strong creature immune to lightning and capable of multiattack with thunder abilities",
+            "variant": "powerful monster immune to lightning and able to perform multiattacks with thunder powers"
+        },
+        {
+            "query": "massive creature with darkvision and thunder stomp ability in its arsenal",
+            "variant": "huge creature with dark vision and thunder stomp power in its abilities"
+        }
+    ]
+}

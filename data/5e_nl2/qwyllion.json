@@ -1,0 +1,54 @@
+{
+    "name": "Qwyllion",
+    "creature_type": "Aberration",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 110,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "average speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "charm",
+        "poison",
+        "psionic",
+        "undead"
+    ],
+    "adjectives": [
+        "formidable",
+        "manipulative",
+        "resilient"
+    ],
+    "description": "The Qwyllion is a medium-sized aberration with exceptional agility, marked by a blend of physical and magical traits. It showcases sharp claws and a menacing gaze geared towards both melee and ranged combat.",
+    "memorable": "Its ability to charm and control the dead makes it a fearsome opponent and a powerful manipulator in combat.",
+    "goals": "To control and charm other creatures and build an army of specters.",
+    "relations": "May encounter undead creatures or other manipulative beings.",
+    "environment": "Found in dark or twisted areas, often lurking in shadows.",
+    "strengths": "Exceptional agility and resilience with strong poison-based abilities.",
+    "weaknesses": "Vulnerable to mental defenses due to lower Intelligence.",
+    "attacks": "Utilizes claw attacks for melee combat and deadly gaze for ranged psychic damage.",
+    "most_powerful_ability": "Nauseating Stench can incapacitate and poison creatures within its vicinity.",
+    "equipment": null,
+    "senses": "Has darkvision, allowing it to see in dim light.",
+    "skills": "Proficient in Acrobatics, allowing for dexterous maneuvers in combat.",
+    "additional_information": [
+        "Resistant to acid and fire damage",
+        "Capable of controlling up to ten specters",
+        "Can immobilize key players with its poison mechanic",
+        "Dexterity score of 20 grants a +8 to Dexterity saving throws",
+        "Charms creatures for a day with verbal commands"
+    ],
+    "damage_types": [
+        "acid",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "poisonous monster with charm abilities",
+        "manipulative creature that raises the dead",
+        "agile aberration with deadly gaze",
+        "medium monster with nauseating stench",
+        "creature that controls specters after death"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Fey Revenant",
+    "queries": [
+        {
+            "query": "large fey creature with sun sensitivity and shadow abilities",
+            "variant": "big fey monster that is sensitive to sunlight and has shadow powers"
+        },
+        {
+            "query": "stealthy monster that causes poison damage and restrains targets",
+            "variant": "sneaky creature that inflicts poison damage and can restrain its foes"
+        },
+        {
+            "query": "creature with high dexterity that excels in darkness and avoids detection",
+            "variant": "monster with excellent dexterity that thrives in dark areas and stays undetected"
+        },
+        {
+            "query": "magical fey being that teleports through shadows and has strong armor",
+            "variant": "enchanted fey entity that can teleport using shadows and has great natural armor"
+        },
+        {
+            "query": "creature that has thorn body damage and is immune to poison",
+            "variant": "monster with thorny body attacks and immune to poison effects"
+        }
+    ]
+}

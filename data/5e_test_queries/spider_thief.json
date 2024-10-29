@@ -1,0 +1,25 @@
+{
+    "name": "Spider Thief",
+    "queries": [
+        {
+            "query": "small construct with stealth capabilities and wire attacks",
+            "variant": "small construct that uses wire attacks and is stealthy"
+        },
+        {
+            "query": "agile creature that can pull itself towards targets using a hooked wire",
+            "variant": "agile being that uses a hooked wire to pull itself to targets"
+        },
+        {
+            "query": "stealthy construct immune to many conditions living in dark environments",
+            "variant": "stealthy construct that lives in darkness and is immune to many conditions"
+        },
+        {
+            "query": "small spider-like creature with low intelligence and magic resistance",
+            "variant": "small spider-like being with low intellect and resistance to magic"
+        },
+        {
+            "query": "monster that operates without food or sleep and attacks with sickle claws",
+            "variant": "creature that needs no food or sleep and uses sickle claws to attack"
+        }
+    ]
+}

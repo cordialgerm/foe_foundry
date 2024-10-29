@@ -1,0 +1,25 @@
+{
+    "name": "Night Scorpion",
+    "queries": [
+        {
+            "query": "large predatory creature with blinding poison attack",
+            "variant": "big predatory beast with poison attack that blinds"
+        },
+        {
+            "query": "beast that grapples and paralyzes opponents with its sting",
+            "variant": "creature that grapples targets and can paralyze them using its sting"
+        },
+        {
+            "query": "massive scorpion with blindsight found in various environments",
+            "variant": "huge scorpion with 60 ft. blindsight that can be found in different environments"
+        },
+        {
+            "query": "Night Scorpion abilities including multiple claw attacks and poison",
+            "variant": "Night Scorpion's skills with multiple claw attacks and poison capabilities"
+        },
+        {
+            "query": "dangerous scorpion that inflicts poison and has good agility",
+            "variant": "threatening scorpion causing poison damage and possessing good agility"
+        }
+    ]
+}

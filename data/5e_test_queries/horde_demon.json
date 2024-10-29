@@ -1,0 +1,25 @@
+{
+    "name": "Horde Demon",
+    "queries": [
+        {
+            "query": "chaotic medium fiend with thunderous attacks",
+            "variant": "medium chaotic fiend that has thunder attacks"
+        },
+        {
+            "query": "demon that thrives in chaos and can shapeshift",
+            "variant": "chaotic demon that can change shapes and loves mayhem"
+        },
+        {
+            "query": "monster with darkvision and psychic abilities in battle",
+            "variant": "creature having darkvision and psychic powers during combat"
+        },
+        {
+            "query": "Horde Demon weaknesses to radiant damage while bloodied",
+            "variant": "weaknesses of Horde Demon to radiant damage when bloodied"
+        },
+        {
+            "query": "medium fiend with multiple attack options and damage immunities",
+            "variant": "medium-sized fiend with various attack options and immunity to damage"
+        }
+    ]
+}

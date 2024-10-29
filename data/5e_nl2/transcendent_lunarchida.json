@@ -1,0 +1,51 @@
+{
+    "name": "Transcendent Lunarchida",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "climb 30 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aberration",
+        "spellcaster",
+        "stealth"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "deceptive",
+        "agile"
+    ],
+    "description": "The Transcendent Lunarchida is a medium aberration known for its manipulation of light and darkness, featuring a sleek form and agile movements.",
+    "memorable": "It excels in ambush tactics and can become invisible in light, making it a tricky adversary.",
+    "goals": "To deceive and incapacitate foes while maintaining a tactical advantage in combat.",
+    "relations": "Might be encountered with other aberrations or creatures that thrive in darkness.",
+    "environment": "Typically found in dark, shadowy locales where it can exploit its abilities effectively.",
+    "strengths": "Immunities to poison damage and advantageous spellcasting abilities, including strong illusions and area control spells.",
+    "weaknesses": "Suffers disadvantages on attack rolls and perception checks in bright sunlight.",
+    "attacks": "Utilizes a multiattack with a necrotic bite and slashing claws, coupled with web traps and a devastating lunar beam.",
+    "most_powerful_ability": "Lunar Beam, dealing significant radiant damage in a line.",
+    "senses": "Possesses blindsight up to 10 feet, allowing it to detect creatures without relying on sight.",
+    "skills": "Proficient in Stealth with a +9 modifier, making it a highly effective ambusher.",
+    "additional_information": [
+        "Can climb surfaces and ceilings due to Spider Climb ability.",
+        "Light Invisibility allows evasion in bright or dim light.",
+        "Web Walker ability enables free movement through webbing."
+    ],
+    "damage_types": [
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": "An 8th-level spellcaster with access to illusion, control, and damage spells, including Fireball and Confusion.",
+    "test_queries": [
+        "deceptive monster that manipulates light",
+        "agile creature that ambushes with webs and spells",
+        "creature immune to poison with necrotic bite",
+        "monster that excels in dim light and shadows",
+        "spellcasting aberration with lunar beam attack"
+    ]
+}

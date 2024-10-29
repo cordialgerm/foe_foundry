@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Imperial Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon with lightning immunity and high intelligence",
+            "variant": "gargantuan dragon immune to lightning and very intelligent"
+        },
+        {
+            "query": "powerful dragon that can breathe air and water and change shape",
+            "variant": "strong dragon capable of breathing air and water and transforming its shape"
+        },
+        {
+            "query": "dragon with exceptional perception that uses charm in battles",
+            "variant": "dragon with amazing perception that charms enemies in combat"
+        },
+        {
+            "query": "dragon with a challenge rating of 26 that can cast control weather",
+            "variant": "dragon CR 26 that has the ability to cast control weather"
+        },
+        {
+            "query": "massive dragon with great strength and multiple attacks",
+            "variant": "huge dragon with high strength and several different attacks"
+        }
+    ]
+}

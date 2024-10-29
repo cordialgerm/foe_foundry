@@ -1,0 +1,53 @@
+{
+    "name": "Abominable Beauty",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 187,
+    "ac": 18,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "charm",
+        "fire"
+    ],
+    "adjectives": [
+        "abominable",
+        "beautiful",
+        "sinister"
+    ],
+    "description": "The Abominable Beauty is a powerful fey creature characterized by a mix of enchanting allure and deadly capabilities, with high charisma and striking physical features.",
+    "memorable": "This creature is notable for its dangerous combination of charm and combat prowess, utilizing abilities that can blind and deafen its foes while inflicting significant fire damage.",
+    "goals": "To deceive and manipulate others for personal gain, often enjoying the suffering of those it ensnares.",
+    "relations": "Might be encountered alongside other fey or as a servant of powerful magical entities, often revered or feared for its capabilities.",
+    "environment": "Typically found in enchanted forests or fey realms, where its beauty can ensnare the unsuspecting.",
+    "strengths": "Its high Charisma allows for exceptional manipulation and social interaction, along with abilities that control the battlefield and inflict heavy damage.",
+    "weaknesses": "Despite its strengths, it may be vulnerable to creatures capable of resisting charm or who can avoid its gaze attacks.",
+    "attacks": "Uses a combination of a Blinding Gaze ability to incapacitate and then follows up with deadly Slam attacks that deal both bludgeoning and fire damage.",
+    "most_powerful_ability": "Blinding Gaze, which can incapacitate foes, allowing for effective combat strategies.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 17, allowing it to notice hidden creatures and threats.",
+    "skills": "Excels in deception and persuasion, with a +12 bonus in both, making it a master manipulator.",
+    "additional_information": [
+        "Uses multiattack to combine Blinding Gaze with physical attacks.",
+        "Damage immunities include fire, making it resilient against those types of attacks.",
+        "The Burning Touch ability punishes melee attackers with extra fire damage.",
+        "Its Deafening Voice ability can significantly debilitate multiple foes at once.",
+        "Demonstrates high physical abilities with exceptional Dexterity and Charisma scores."
+    ],
+    "damage_types": [
+        "fire",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "sinister fey with deadly gaze",
+        "charming fire creature",
+        "fey monster that blinds",
+        "beautiful yet deadly fey",
+        "abominable beauty abilities"
+    ]
+}

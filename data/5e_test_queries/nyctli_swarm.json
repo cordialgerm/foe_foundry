@@ -1,0 +1,25 @@
+{
+    "name": "Nyctli Swarm",
+    "queries": [
+        {
+            "query": "large evil fey creature that can occupy other spaces and has a damaging swarm attack",
+            "variant": "big chaotic fey entity that occupies other creatures' spaces with a harmful swarm attack"
+        },
+        {
+            "query": "swarming fey creature that uses necrotic damage and can fly",
+            "variant": "fey monster that flies and uses necrotic damage in its attacks with a swarm mechanic"
+        },
+        {
+            "query": "chaotic fey that resists physical damage and inflicts psychological dread",
+            "variant": "fey creature of chaos resistant to physical attacks and causing fear in enemies"
+        },
+        {
+            "query": "fey swarm with high dexterity and fear-inducing abilities",
+            "variant": "swarm fey creature featuring excellent dexterity and the ability to instill fear"
+        },
+        {
+            "query": "monster immune to being charmed and with a unique stinger attack",
+            "variant": "creature that cannot be charmed and possesses a special stinger attack"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Pseudodragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>7</HP>
 <summary>A Pseudodragon is a small, dragon-like creature about the size of a cat. It has leathery wings, a barbed tail, and shimmering scales that often come in shades of red, gold, or green. Despite their small size, Pseudodragons are intelligent and magical creatures, capable of telepathic communication with those they trust. They are often sought after as familiars by wizards or other spellcasters due to their loyalty and keen senses. Pseudodragons can deliver a painful sting with their barbed tail, which also carries a mild venom that causes sleepiness. They are naturally curious and playful, though they can be fiercely protective of their companions.</summary>
 
 <summary>The Pseudodragon is a tiny dragon-like creature often favored for its intelligence and magical abilities. With an Armor Class of 13 and only 7 hit points, it is relatively fragile in combat but can be a valuable companion due to its magical resistance and ability to communicate telepathically. Its primary strength lies in its agility, with a Dexterity score of 14 that provides a good modifier (+2) for actions involving stealth, making it particularly adept at sneaking around or escaping danger. Despite its frail nature, it can inflict potent effects through its sting attack and spells like Telepathic Static, particularly in disrupting enemy actions.</summary>
@@ -31,6 +33,7 @@ Overall, the Pseudodragon is a small but capable creature, offering intriguing o
 
 Source: 5e_srd
 
+<statblock>
 ## Pseudodragon
 
 *Tiny dragon, neutral good*
@@ -63,7 +66,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) piercing damage.
 
-***Sting***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 4 (1d4+2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. If the saving throw fails by 5 or more, the target falls unconscious for the same duration, or until it takes damage or another creature uses an action to shake it awake.
+***Sting***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 4 (1d4+2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. If the saving throw fails by 5 or more, the target falls unconscious for the same duration, or until it takes damage or another creature uses an action to shake it awake.</statblock>
+
 
 
 
@@ -71,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pseudodragon
 
 *Tiny* *Dragon*
@@ -100,6 +105,7 @@ Source: 5e_artisinal_monsters
 - **Telepathic Static (3/Day):** The pseudodragon targets one creature it can see within 10 feet  forcing it to make a DC 11 Charisma saving throw. On a failure  its stunned until the end of its next turn as it suffers a barrage of telepathic imagery.
 
 
+</statblock>
 
 
 
@@ -108,6 +114,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pseudodragon
 
 *Tiny dragon*
@@ -139,5 +146,6 @@ Source: 5e_artisinal_monsters
 - **Sting.** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 2 (1d4) poison damage, and the target must succeed on a DC 11 CON save or be poisoned for 1 hour. If the creature fails the save by 5 or more, it falls unconscious while poisoned in this way, or until it takes damage or another creature uses an action to shake it awake.
 - **Puff of Smoke (1/Day).** The pseudodragon exhales a cloud of smoke in a 10-foot-radius sphere centered on itself. The sphere spreads around corners, and its area is heavily obscured. It lasts for 1 minute or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.
 
+</statblock>
 
 

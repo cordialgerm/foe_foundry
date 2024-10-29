@@ -1,0 +1,25 @@
+{
+    "name": "Xing Tian",
+    "queries": [
+        {
+            "query": "huge giant with high durability and powerful melee attacks",
+            "variant": "giant with high durability and powerful melee attacks huge"
+        },
+        {
+            "query": "giant that can recover health and is immune to fear",
+            "variant": "giant that is immune to fear and can recover health"
+        },
+        {
+            "query": "strong giant that fights with a battleaxe and shield",
+            "variant": "giant that fights with a shield and battleaxe strong"
+        },
+        {
+            "query": "creature that has advantage against being knocked prone and can deal heavy damage",
+            "variant": "creature that can deal heavy damage and has advantage against being knocked prone"
+        },
+        {
+            "query": "neutral giant with exceptional combat abilities and darkvision",
+            "variant": "exceptional combat abilities neutral giant with darkvision"
+        }
+    ]
+}

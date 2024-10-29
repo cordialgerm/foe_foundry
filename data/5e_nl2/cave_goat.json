@@ -1,0 +1,49 @@
+{
+    "name": "Cave Goat",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 22,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "50 feet walking speed",
+    "role": null,
+    "tags": [
+        "beast",
+        "climber",
+        "agile"
+    ],
+    "adjectives": [
+        "agile",
+        "robust"
+    ],
+    "description": "The Cave Goat is a small, agile beast with strong physical attributes, particularly adept at climbing rocky surfaces.",
+    "memorable": "Keen Hearing grants it enhanced perception capabilities, and it excels in climbing with its Sturdy Climber ability.",
+    "goals": "Typically, it seeks to navigate rugged terrains and evade threats.",
+    "relations": null,
+    "environment": "Rocky or mountainous terrains",
+    "strengths": "High Strength and Constitution scores making it physically resilient.",
+    "weaknesses": "Low Intelligence and Charisma indicating poor cognitive abilities.",
+    "attacks": "Can perform a Ram melee attack dealing 4 bludgeoning damage with good accuracy.",
+    "most_powerful_ability": "Sturdy Climber enhances climbing ability significantly.",
+    "equipment": null,
+    "senses": "Keen Hearing allows it to hear better than most creatures.",
+    "skills": "Proficient in Athletics, allowing it to climb effectively.",
+    "additional_information": [
+        "Keen Hearing provides advantage on hearing-based perception checks.",
+        "Sturdy Climber gives advantage on Strength athletics checks when climbing.",
+        "Strong physical power despite being a beast.",
+        "Relatively low cognitive functioning affects decision-making.",
+        "Fast movement speed for its size."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile mountain climbing goat",
+        "beast with strong climbing abilities",
+        "Cave Goat with keen hearing skills",
+        "rocky terrain dwelling beast",
+        "small creature that can ram attackers"
+    ]
+}

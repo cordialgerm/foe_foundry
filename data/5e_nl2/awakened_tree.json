@@ -1,0 +1,50 @@
+{
+    "name": "Awakened Tree",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 59,
+    "ac": 13,
+    "srd": true,
+    "cr": "2",
+    "movement": "walk 20 ft.",
+    "role": "Defender",
+    "tags": [
+        "plant",
+        "guardian",
+        "nature"
+    ],
+    "adjectives": [
+        "massive",
+        "ancient",
+        "sentient",
+        "immobile"
+    ],
+    "description": "A towering, massive tree with thick, root-like legs, gnarled branches, and a deep connection to nature. It can blend into its surroundings while motionless, appearing as an ordinary tree.",
+    "memorable": "An Awakened Tree serves as a powerful guardian of the natural world, using its ability to camouflage to ambush unsuspecting foes.",
+    "goals": "To protect sacred groves or enchanted forests and defend nature from harm.",
+    "relations": "May be found alongside other plant creatures or as a protector for druidic allies.",
+    "environment": "Normally found in sacred groves or enchanted forests.",
+    "strengths": "Exceptionally strong with notable melee attacks and resistance to bludgeoning and piercing damage.",
+    "weaknesses": "Vulnerable to fire damage and has low mobility.",
+    "attacks": "Can perform a Slam attack that deals heavy bludgeoning damage and has a ranged attack option known as Broken Branch.",
+    "most_powerful_ability": "False Appearance, allowing it to remain motionless and indistinguishable from a normal tree.",
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Has resistance to exhaustion and conditions like being paralyzed or petrified.",
+        "Combines substantial strength with natural camouflage abilities.",
+        "Possesses a slow movement speed of 20 feet making it less agile.",
+        "Can communicate in one language known by its creator.",
+        "Offers significant melee damage output with its attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "sentient tree guardian",
+        "massive tree creature",
+        "nature protector",
+        "camouflaged plant monster",
+        "powerful tree ambusher"
+    ]
+}

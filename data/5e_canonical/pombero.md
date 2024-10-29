@@ -1,6 +1,8 @@
 <MonsterName/>Pombero</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Pombero is a medium-sized fey creature known for its chaotic nature and playful yet canny demeanor. With a sturdy armor class of 15 and a robust 90 hit points, it proves to be a formidable opponent despite its relatively low Challenge Rating of 3, which grants 700 experience points to those who defeat it. The Pombero possesses a well-balanced mix of physical strength and agility, demonstrated by its strength, dexterity, and constitution scores of 17, 16, and 16 respectively, all providing good to very good modifiers that enhance its physical effectiveness in combat. Furthermore, its charming capabilities and special traits grant it versatility in both combat and interaction with characters, making it a noteworthy adversary or ally.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Pombero can execute a multiattack, allowing it to make two slam a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pombero
 
 *Medium* *Fey* *Chaotic Neutral*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage.
 - **Charming Touch (Recharge 5–6):** One creature the pombero can see within 5 feet of it must succeed on a DC 12 Wisdom saving throw or be charmed for 10 minutes. If the target suffers any harm, the effect ends. Otherwise, the target can repeat the saving throw at the end of every minute, ending the effect on itself on a success. The pombero can have only one creature charmed at a time. If it charms another, the effect on the previous creature ends.
 - **Invisibility:** The pombero magically turns invisible until it attacks or uses Charming Touch, or until its concentration ends (as if concentrating on a spell). Any equipment the pombero wears or carries is invisible with it.
+</statblock>
 
 

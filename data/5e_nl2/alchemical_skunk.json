@@ -1,0 +1,49 @@
+{
+    "name": "Alchemical Skunk",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 66,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "Burrow 10 ft., Walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "quirky",
+        "disruptor",
+        "alchemical"
+    ],
+    "adjectives": [
+        "mischievous",
+        "elusive",
+        "tactical",
+        "surprising"
+    ],
+    "description": "The Alchemical Skunk is a small, quirky monstrosity characterized by its natural armor and striking agility, often seen manipulating the battlefield with its unique alchemical sprays rather than engaging directly in combat.",
+    "memorable": "Its ability to unleash a variety of alchemical sprays creates a whimsical yet chaotic presence in battle, making it a memorable combatant.",
+    "goals": "To disrupt opponents and create tactical advantages through its unique abilities.",
+    "relations": "Related to other alchemical creatures or entities, potentially serving as allies in chaotic encounters.",
+    "environment": "Typically found in whimsical or chaotic locales where magic and alchemy abound.",
+    "strengths": "High Dexterity and stealth skills make it particularly elusive, alongside magical resistance providing robust defenses against spells.",
+    "weaknesses": "Low physical strength and poor charisma limit its effectiveness in direct confrontation and social interactions.",
+    "attacks": "Uses a multiattack featuring an alchemical spray followed by a bite and claw attacks, offering both utility and damage.",
+    "most_powerful_ability": "Alchemical Spray allows it to produce various effects that can charm, incapacitate, blind, or poison enemies, influencing the battlefield significantly.",
+    "equipment": null,
+    "senses": "The Alchemical Skunk has blindsight up to 10 feet, enabling it to perceive its surroundings without vision.",
+    "skills": "It showcases exceptional perception and stealth abilities, allowing it to notice disturbances and move unnoticed.",
+    "additional_information": [
+        "Has advantage on perception checks relying on hearing or smell due to Keen Hearing and Smell.",
+        "Immune to its own alchemical sprays, allowing for safe usage in combat.",
+        "Can reduce the size of opponents with its unique alchemical abilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "quirky alchemical creature",
+        "skunk with magical abilities",
+        "disruptor in combat",
+        "chaotic battlefield creature",
+        "elusive monster with sprays"
+    ]
+}

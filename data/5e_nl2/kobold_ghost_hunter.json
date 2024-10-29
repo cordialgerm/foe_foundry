@@ -1,0 +1,54 @@
+{
+    "name": "Kobold, Ghost Hunter",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 176,
+    "ac": 18,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "ghost",
+        "undead",
+        "hunter",
+        "kobold"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "stealthy"
+    ],
+    "description": "The Kobold Ghost Hunter is a small humanoid with a studded leather armor and heightened agility, equipped to engage effectively with undead foes. It possesses exceptional dexterity, allowing it to move quickly and strike with precision.",
+    "memorable": "This Ghost Hunter can go invisible to undead while motionless, making it a deadly ambusher in encounters with undead creatures.",
+    "goals": "Typically seeks to track, hunt, and eliminate undead enemies.",
+    "relations": "Often encountered with other kobolds and might serve higher undead hunting entities.",
+    "environment": "Usually found in areas plagued by undead such as haunted ruins or battlefields.",
+    "strengths": "Possesses strong attack bonuses due to high dexterity and can deal significant radiant damage.",
+    "weaknesses": "Suffers from sunlight sensitivity, imposing disadvantage in bright light.",
+    "attacks": "Can make multiple attacks with its Shortsword or Hand Crossbow, dealing piercing and radiant damage. It can also unleash a Flame Jet attack to ignite targets.",
+    "most_powerful_ability": "Holy Strike: Deals massive radiant damage and stuns undead within its area of effect.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 19, giving it a keen awareness of its surroundings.",
+    "skills": "Proficient in Perception, allowing it to detect hidden threats effectively.",
+    "additional_information": [
+        "Resistance to necrotic damage",
+        "Immunity to being charmed, frightened, or paralyzed",
+        "Can see into the Ethereal Plane with Ethereal Sight",
+        "Has advantages when tracking undead",
+        "Can use a grappling hook for tactical repositioning"
+    ],
+    "damage_types": [
+        "radiant",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small humanoid that hunts undead",
+        "stealthy kobold with radiant attacks",
+        "agile creature skilled in tracking undead",
+        "ghostly hunter with invisibility against undead",
+        "kobold with powerful radiant abilities"
+    ]
+}

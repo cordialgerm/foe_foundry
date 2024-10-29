@@ -1,0 +1,25 @@
+{
+    "name": "Pact Lich",
+    "queries": [
+        {
+            "query": "powerful undead spellcaster with high charisma and can become invisible",
+            "variant": "strong undead caster with high charisma that can turn invisible"
+        },
+        {
+            "query": "medium undead creature that uses psychological torment and has a powerful spell save",
+            "variant": "medium undead monster that employs psychological torture and boasts a strong spell save"
+        },
+        {
+            "query": "lich known for its cunning nature and resistance to fire and cold damage",
+            "variant": "lich recognized for its cleverness and resistance against fire and cold"
+        },
+        {
+            "query": "undead with legendary resistance that inflicts fear and paralysis",
+            "variant": "undead creature with legendary resistance that causes fear and paralysis"
+        },
+        {
+            "query": "creature that can cast banishment and manipulate shadows",
+            "variant": "monster that can use banishment spell and control shadows"
+        }
+    ]
+}

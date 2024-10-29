@@ -1,0 +1,25 @@
+{
+    "name": "Adult Silver Dragon",
+    "queries": [
+        {
+            "query": "large dragon with silver scales that breathes icy cold",
+            "variant": "big dragon with shining silver scales that exhales freezing ice"
+        },
+        {
+            "query": "regal ice dragon living in snowy mountains with paralyzing breath",
+            "variant": "noble frost dragon residing in cold mountains that can paralyze foes"
+        },
+        {
+            "query": "compassionate dragon that can shapeshift and has cold immunity",
+            "variant": "kindhearted dragon that can transform and is immune to cold"
+        },
+        {
+            "query": "massive dragon known for its majestic wings and powerful breath",
+            "variant": "huge dragon recognized for its grand wings and strong breath attacks"
+        },
+        {
+            "query": "dragon that uses frightful presence and has high armor class",
+            "variant": "dragon utilizing fear tactics with a very high armor rating"
+        }
+    ]
+}

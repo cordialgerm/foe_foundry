@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Elf Mage",
+    "queries": [
+        {
+            "query": "humanoid spellcaster with dark vision and high intelligence",
+            "variant": "humanoid magic user having darkvision and high intellgence"
+        },
+        {
+            "query": "mage that uses lightning spells and can teleport",
+            "variant": "spellcaster using lightning and can teleporting"
+        },
+        {
+            "query": "shadow elf that excels in arcane arts and can become invisible",
+            "variant": "shadow elf skilled in magic and can go invisible"
+        },
+        {
+            "query": "mage with decent AC that casts spells like cloudkill",
+            "variant": "magic user with good AC casting cloudkill like spells"
+        },
+        {
+            "query": "intelligent humanoid that performs well in arcana and history",
+            "variant": "smart humanoid that is skilled in arcana and historical knowledge"
+        }
+    ]
+}

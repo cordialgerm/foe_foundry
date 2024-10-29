@@ -1,0 +1,53 @@
+{
+    "name": "Demilich Mastermind",
+    "creature_type": "Undead",
+    "alignment": "null",
+    "size": "Tiny",
+    "hp": 319,
+    "ac": 20,
+    "srd": false,
+    "cr": "18",
+    "movement": "fly 30 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "spellcaster",
+        "manipulator"
+    ],
+    "adjectives": [
+        "powerful",
+        "cunning",
+        "arcane",
+        "strategic"
+    ],
+    "description": "The Demilich Mastermind is a small, wraithlike being embodying death and arcane knowledge, utilizing its flight ability to remain elusive. Its appearance is ethereal, often indistinguishable from an ordinary skull when it uses its clever abilities.",
+    "memorable": "Combines exceptional spellcasting with clever battlefield manipulation, capable of draining souls.",
+    "goals": "To dominate opponents through magic and cunning tactics while sustaining itself with the souls of the fallen.",
+    "relations": "Typically encountered alone, but may be linked to other undead or arcane entities.",
+    "environment": "Often found in ancient ruins, tombs, or places of dark magic where knowledge and power intersect.",
+    "strengths": "High Dexterity and Intelligence, strong immunities, survivability through special abilities.",
+    "weaknesses": "Low physical durability with a Strength score of only 10.",
+    "attacks": "Devour Soul, which targets and potentially kills enemies while healing the Demilich.",
+    "most_powerful_ability": "Devour Soul, which can kill targets and restore the Demilich's health significantly.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 60 feet and a high passive Perception score of 22.",
+    "skills": "Notably proficient in Arcana, Perception, and Stealth, allowing it to excel in knowledge and evasion.",
+    "additional_information": [
+        "Immunities to necrotic, poison, and psychic damage",
+        "Avoidance ability grants excellent damage mitigation",
+        "Legendary Resistance enhances its survivability",
+        "Telekinesis to manipulate other creatures and objects",
+        "Does not require air, food, or sleep"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature with strategic spellcasting",
+        "tiny creature that manipulates souls",
+        "arcane undead with flight abilities",
+        "mastermind undead that can blind opponents",
+        "spellcasting wraith that drains life"
+    ]
+}

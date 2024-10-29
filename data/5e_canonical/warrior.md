@@ -1,6 +1,8 @@
 <MonsterName/>Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>11</HP>
 <summary>The Warrior is a medium humanoid creature characterized by its combat abilities and basic survival skills. With an average armor class of 13 and 11 hit points, the Warrior isn't particularly resilient, but it is competent in both melee and ranged combat. The challenge rating of 1/8 indicates that it poses a minor threat to adventurers, making it suitable for low-level encounters or as an introductory foe. Its strengths lie in its versatility; it can engage enemies at a distance or up close, depending on the tactical situation. However, its weaknesses are evident in its relatively low hit points and basic attributes, making it less effective in prolonged battles against more powerful foes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For actions in combat, the Warrior primarily relies on its spear. This weapon al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Warrior
 
 *Medium* *Humanoid*
@@ -42,5 +45,6 @@ Source: 5e_artisinal_monsters
 - **Spear:** Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage.
 
 
+</statblock>
 
 

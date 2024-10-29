@@ -1,0 +1,25 @@
+{
+    "name": "Storm Spirit",
+    "queries": [
+        {
+            "query": "lightning elemental creature that can fly and deals thunder damage",
+            "variant": "creature that flies and uses thunder damage and is an elemental of lightning"
+        },
+        {
+            "query": "medium storm creature with the ability to hover and immunity to lightning",
+            "variant": "hovering medium spirit that has lightning immunity and storm abilities"
+        },
+        {
+            "query": "elemental monster with low hit points and dangerous melee abilities",
+            "variant": "monster that is an elemental with low HP and powerful close-range attacks"
+        },
+        {
+            "query": "creature that attacks with thunder and has a special storm form",
+            "variant": "monster with storm form ability that deals thunder damage when it is attacked"
+        },
+        {
+            "query": "neutral elemental that can move through narrow spaces and uses lightning attacks",
+            "variant": "elemental spirit that attacks with lightning and can fit through tight spots"
+        }
+    ]
+}

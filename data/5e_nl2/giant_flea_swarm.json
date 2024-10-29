@@ -1,0 +1,50 @@
+{
+    "name": "Giant Flea Swarm",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft., climb 20 ft.",
+    "role": "null",
+    "tags": [
+        "swarm",
+        "beast",
+        "blood-sensing"
+    ],
+    "adjectives": [
+        "numerous",
+        "territorial",
+        "aggressive"
+    ],
+    "description": "A medium-sized swarm of aggressive giant fleas that overwhelms its foes with overwhelming numbers and continuous biting.",
+    "memorable": "The ability to sense blood makes it a persistent threat, especially to weakened creatures.",
+    "goals": "To attack and drain blood from living creatures.",
+    "relations": "Can be encountered alongside other swarming or generally small-sized creatures.",
+    "environment": "Typically found in habitats where prey is abundant, such as near animals or in swamps.",
+    "strengths": "Immune to various conditions and resistant to bludgeoning, piercing, and slashing damage.",
+    "weaknesses": "Cannot regain hit points, requiring caution in sustained engagements.",
+    "attacks": "Bite attack that inflicts significant piercing damage to creatures in its space.",
+    "most_powerful_ability": "Blood Sense allows the swarm to track living creatures by their scent.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, enhancing its tracking abilities.",
+    "skills": "Has average perception, making it somewhat aware of its surroundings.",
+    "additional_information": [
+        "Occupies the same space as other creatures, enhancing its tactical threat.",
+        "Long jump of up to 30 feet with or without a running start.",
+        "It can inflict damage to creatures starting their turn within its space.",
+        "Defense against being incapacitated due to various condition immunities.",
+        "Relies on its swarm mechanics to overwhelm opponents."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "swarm of aggressive giant fleas",
+        "blood-sensing swarm attacking prey",
+        "numerous insects draining blood",
+        "medium beast swarm with keen smell",
+        "aggressive flea swarm in swamps"
+    ]
+}

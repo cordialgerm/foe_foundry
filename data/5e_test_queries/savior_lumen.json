@@ -1,0 +1,25 @@
+{
+    "name": "Savior Lumen",
+    "queries": [
+        {
+            "query": "celestial creature that manipulates light and memories",
+            "variant": "light-manipulating celestial creature with memory abilities"
+        },
+        {
+            "query": "amphibious large monster with special abilities and flight",
+            "variant": "large amphibious monster with flight and unique powers"
+        },
+        {
+            "query": "defensive celestial with high mobility and magic resistance",
+            "variant": "defensive celestial creature known for mobility and resistance to magic"
+        },
+        {
+            "query": "creature that provides support in battle with bludgeoning and piercing damage",
+            "variant": "supportive monster that inflicts piercing and bludgeoning damage in combat"
+        },
+        {
+            "query": "chaotic good being with versatile movement and spellcasting",
+            "variant": "versatile spellcasting chaotic good celestial creature"
+        }
+    ]
+}

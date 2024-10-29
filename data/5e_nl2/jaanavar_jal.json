@@ -1,0 +1,52 @@
+{
+    "name": "Jaanavar Jal",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 172,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "swim 60 ft., walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "amphibious",
+        "regeneration",
+        "fire damage",
+        "grappling"
+    ],
+    "adjectives": [
+        "massive",
+        "deadly"
+    ],
+    "description": "A massive, amphibious creature capable of thriving in both water and on land. It has powerful jaws and the ability to grapple foes with ease.",
+    "memorable": "It regenerates health each turn unless it suffers cold damage, making it a persistent threat in battle.",
+    "goals": "Typically seeks to dominate its environment, using its strength and regeneration to control other creatures.",
+    "relations": "Might be encountered in proximity to other aquatic creatures or as a ruler of its territory.",
+    "environment": "Can be found in freshwater and coastal regions, often lurking in swamps or rivers.",
+    "strengths": "Exhibits significant physical strength and durability, capable of dealing considerable damage while healing every turn.",
+    "weaknesses": "Vulnerable to cold damage which can temporarily interrupt its regenerative abilities.",
+    "attacks": "Utilizes a multiattack with a powerful bite and grappling constrict action, also possesses a devastating flaming oil attack.",
+    "most_powerful_ability": "Can heal for 10 hit points at the start of its turn due to its regeneration ability.",
+    "senses": "Possesses blindsense out to 60 ft., allowing it to detect creatures without sight.",
+    "skills": "Has proficiency in perception, enabling it to notice threats effectively.",
+    "additional_information": [
+        "Only dies if it starts its turn with 0 hit points and cannot regenerate.",
+        "Flaming Oil Spittle can control space on the battlefield by threatening an area.",
+        "Exceptional at grappling smaller creatures to restrain them.",
+        "Natural armor provides a solid defense against attacks.",
+        "Cold damage negates its regeneration for a turn."
+    ],
+    "damage_types": [
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive amphibious creature with healing abilities",
+        "monster that can breathe underwater and on land",
+        "giant creature that attacks with fire and grappling",
+        "regenerating monster vulnerable to cold damage",
+        "deadly beast that controls battlefield space"
+    ]
+}

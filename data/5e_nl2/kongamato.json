@@ -1,0 +1,52 @@
+{
+    "name": "Kongamato",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 127,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "60 ft. walking speed and 10 ft. flying speed",
+    "role": null,
+    "tags": [
+        "ferocious",
+        "flying",
+        "grappler"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "menacing"
+    ],
+    "description": "The Kongamato is a large beast known for its ferocity in combat and immense strength, with powerful beak and claw attacks.",
+    "memorable": "Its ability to deal double damage to wooden objects makes it particularly dangerous in environments with wooden structures.",
+    "goals": "Typically found hunting or defending its territory aggressively.",
+    "relations": "Can be encountered alongside other large beasts or in regions with abundant wildlife.",
+    "environment": "Commonly found in areas with trees and water, where it can utilize its flying and grappling abilities.",
+    "strengths": "Very good at physical tasks, with high strength and dexterity.",
+    "weaknesses": "Very low intelligence and charisma, lacking social or tactical acumen.",
+    "attacks": "Can perform a multiattack with one beak and two claw attacks, grappling targets effectively.",
+    "most_powerful_ability": "Terrifying Screech, which can frighten multiple foes and deal significant thunder damage.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 13, allowing it to notice hidden threats effectively.",
+    "skills": "Proficient in perception, making it aware of its surroundings.",
+    "additional_information": [
+        "Flyby ability allows it to avoid opportunity attacks when flying.",
+        "Can drag grappling creatures while flying.",
+        "Known for its aggressive nature in combat."
+    ],
+    "damage_types": [
+        "thunder",
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large beast with terrifying screech",
+        "flying monster that grapples prey",
+        "aggressive creature in forest environments",
+        "formidable beast that damages wooden objects",
+        "menacing creature with strong beak attacks"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Minotaur Skeleton</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>67</HP>
 <summary>A Minotaur Skeleton is the reanimated remains of a Minotaur, brought back to unlife through dark necromantic magic. These undead creatures retain the immense strength of their living counterparts, but lack the flesh and vitality, appearing as skeletal warriors with large, rusted weapons. Despite their lack of intelligence, Minotaur Skeletons are relentless in combat, charging at their enemies with bone-crushing force. They are often found guarding ancient ruins or tombs, serving dark masters who control them through necromantic power.</summary>
 
 <summary>The Minotaur Skeleton is a formidable undead creature that serves as a terrifying guardian or foe in any encounter. With a challenge rating of 2, it presents a significant challenge to low-level adventurers, offering both raw physical power and unique special abilities. Its strengths lie in high damage output through melee attacks and the ability to deal extra damage with its Charge ability, making it a fearsome opponent when it can move to attack. The skeleton, however, has relatively low armor class and limited mobility, which could be exploited by clever players. One of its standout traits is the ability to remain undetected while motionless, presenting an element of surprise.</summary>
@@ -37,6 +39,7 @@ Overall, the Minotaur Skeleton embodies the traits of an undead powerhouse, read
 
 Source: 5e_srd
 
+<statblock>
 ### Minotaur Skeleton
 
 *Large undead, lawful evil*
@@ -69,7 +72,8 @@ Source: 5e_srd
 
 ***Greataxe***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 17 (2d12+4) slashing damage.
 
-***Gore***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) piercing damage.
+***Gore***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) piercing damage.</statblock>
+
 
 
 
@@ -77,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Minotaur Skeleton
 
 *Large undead*
@@ -113,5 +118,6 @@ Source: 5e_artisinal_monsters
 
 - **Counterattack (Recharge 6).** When a creature the minotaur skeleton can see hits it with a melee attack while within 5 feet of it, the skeleton can make one Gore attack against the attacker.
 
+</statblock>
 
 

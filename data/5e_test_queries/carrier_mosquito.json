@@ -1,0 +1,25 @@
+{
+    "name": "Carrier Mosquito",
+    "queries": [
+        {
+            "query": "large flying insect creature that disrupts spellcasters",
+            "variant": "big flying insect monster that disrupts spell casters"
+        },
+        {
+            "query": "agile beast with a grappling attack and loud drone",
+            "variant": "quick beast with a grappling attack and noisy drone"
+        },
+        {
+            "query": "mosquito that impales and has blindsight abilities",
+            "variant": "mosquito that can impale and has blindsight powers"
+        },
+        {
+            "query": "a beast that can fly and restrain mediums with its proboscis",
+            "variant": "a flying creature that can restrain medium foes using its proboscis"
+        },
+        {
+            "query": "dangerous mosquito found in combat that affects spellcasting",
+            "variant": "risky mosquito in battles that impacts spell casting"
+        }
+    ]
+}

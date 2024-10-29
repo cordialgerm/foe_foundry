@@ -1,0 +1,25 @@
+{
+    "name": "Mountain Dwarf Soldier",
+    "queries": [
+        {
+            "query": "robust warrior from the mountains with tactical skills",
+            "variant": "warrior who is robust from the mountains and has tactical skills"
+        },
+        {
+            "query": "humanoid soldier with high armor class and battlefield coordination",
+            "variant": "soldier humanoid with a high armor class and coordination in battles"
+        },
+        {
+            "query": "dwarf soldier that uses handaxes and has good perception",
+            "variant": "soldier dwarf that has good perception and uses hand axes"
+        },
+        {
+            "query": "medium humanoid known for resilience and survival skills",
+            "variant": "humanoid medium known for its resilience and skills in survival"
+        },
+        {
+            "query": "mountain soldier with slashing damage attacks and heavy crossbow",
+            "variant": "soldier from the mountains that has heavy crossbow and slashing damage attacks"
+        }
+    ]
+}

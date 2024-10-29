@@ -1,0 +1,25 @@
+{
+    "name": "Veritigibbet",
+    "queries": [
+        {
+            "query": "small fey creature known for trickery and manipulation",
+            "variant": "fey creature that is small and known for tricks and manipulations"
+        },
+        {
+            "query": "flying creature with psychic damage abilities and charm immunity",
+            "variant": "creature that can fly and deals psychic damage, immune to charm"
+        },
+        {
+            "query": "chaotic neutral fey with high dexterity and charisma",
+            "variant": "fey that is chaotic neutral with exceptional dexterity and charisma"
+        },
+        {
+            "query": "tricky fey that can teleport and inflict fire damage on liars",
+            "variant": "fey that is tricky, teleports, and deals fire damage to those who lie"
+        },
+        {
+            "query": "psychological manipulation fey with unique spell attacks",
+            "variant": "fey specializing in psychological manipulation and having special spell attacks"
+        }
+    ]
+}

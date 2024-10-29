@@ -1,0 +1,53 @@
+{
+    "name": "Wind Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 80 ft., fly 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "wymling",
+        "wind"
+    ],
+    "adjectives": [
+        "chaotic",
+        "youthful",
+        "agile"
+    ],
+    "description": "A medium-sized dragon embodying the unpredictable nature of storms, with vibrant blue scales and stormy wing patterns.",
+    "memorable": "Notable for its wind-based abilities and its ability to control the battlefield with stormy breath.",
+    "goals": "Typically seeks to assert dominance in its territory and to harness the power of storms.",
+    "relations": "Related to other elemental dragons, particularly those connected to air and storms.",
+    "environment": "Often found in areas prone to storms or high winds, such as mountainous or coastal regions.",
+    "strengths": "Exceptional Dexterity and Strength, with immunity to lightning and resistance to cold damage.",
+    "weaknesses": "Lower hit points compared to its speed and strength; as a young creature, it lacks powerful spellcasting abilities.",
+    "attacks": "Can use a bite attack dealing piercing damage and a breath attack that damages and pushes enemies.",
+    "most_powerful_ability": "Tempest Breath, delivering bludgeoning damage and environmental control, extinguishing flames in its wake.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 10 feet, allowing it to detect creatures without sight.",
+    "skills": "Skilled in Acrobatics, Perception, and Stealth, demonstrating agility and awareness in combat.",
+    "additional_information": [
+        "Can see through fog and mist with Storm Sight.",
+        "Benefits from Elusive ability to evade restrictions in movement.",
+        "Draconic and Primordial language capabilities.",
+        "Uses its speed and agility for tactical advantage.",
+        "Interacts unpredictably with the environment during stormy conditions."
+    ],
+    "damage_types": [
+        "lightning",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "young chaotic dragon with storm abilities",
+        "dragon that breathes wind and controls weather",
+        "medium dragon resistant to cold and lightning",
+        "agile wymling that flies and walks fast",
+        "draconic creature with blindsight and evasive tactics"
+    ]
+}

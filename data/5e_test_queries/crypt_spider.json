@@ -1,0 +1,25 @@
+{
+    "name": "Crypt Spider",
+    "queries": [
+        {
+            "query": "dark web-dwelling beast that poisons its prey",
+            "variant": "beast that poisons its prey and lives in the dark webs"
+        },
+        {
+            "query": "stealthy medium spider known for cocoons",
+            "variant": "medium spider that is stealthy and known for creating cocoons"
+        },
+        {
+            "query": "lawful evil creature that creates zombies with webs",
+            "variant": "creature that creates zombies and is lawful evil with webs"
+        },
+        {
+            "query": "agile spider that manipulates webs and ambushes foes",
+            "variant": "spider that is agile, ambushes foes, and manipulates webs"
+        },
+        {
+            "query": "web-infested predator with an impressive stealth skill",
+            "variant": "predator found in web-infested areas with great stealth skills"
+        }
+    ]
+}

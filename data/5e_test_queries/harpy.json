@@ -1,0 +1,25 @@
+{
+    "name": "Harpy",
+    "queries": [
+        {
+            "query": "winged creature that sings to charm victims",
+            "variant": "creature with wings that charms victims by singing"
+        },
+        {
+            "query": "bird-woman monster that attacks from cliffs",
+            "variant": "monster with the body of a bird that swoops down from high cliffs"
+        },
+        {
+            "query": "cunning harpy that uses song to incapacitate foes",
+            "variant": "clever harpy using its song to disable enemies"
+        },
+        {
+            "query": "magical song-using monster that prefers remote islands",
+            "variant": "island-dwelling monster that uses magic songs"
+        },
+        {
+            "query": "chaotic evil creature with claws and a beautiful voice",
+            "variant": "evil creature with sharp claws and an enchanting voice"
+        }
+    ]
+}

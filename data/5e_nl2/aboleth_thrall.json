@@ -1,0 +1,50 @@
+{
+    "name": "Aboleth Thrall",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft., swim 30 ft.",
+    "role": "null",
+    "tags": [
+        "aquatic",
+        "loyal",
+        "servant"
+    ],
+    "adjectives": [
+        "dangerous",
+        "poisonous",
+        "resilient"
+    ],
+    "description": "The Aboleth Thrall is a Medium humanoid creature that showcases its connection to aquatic environments. It has average armor and hit points, making it a resilient opponent.",
+    "memorable": "The ability to self-sacrifice for its master highlights its loyalty and protective nature.",
+    "goals": "Serve and protect its master, the aboleth, while engaging in combat.",
+    "relations": "Typically found accompanying aboleths or serving them.",
+    "environment": "Commonly found in aquatic settings or near bodies of water.",
+    "strengths": "Can breathe both air and water, making it versatile in different environments.",
+    "weaknesses": "Requires moisture to avoid suffocation; can become incapacitated if it spends too much time dry.",
+    "attacks": "Uses a Poison Ink Knife to deal slashing and significant poison damage to its enemies.",
+    "most_powerful_ability": "Sea Changed allows it to survive in both air and water, but requires a bath in water after prolonged dryness.",
+    "equipment": "Poison Ink Knife",
+    "senses": "Passive perception of 10, allowing it to detect some environmental changes.",
+    "skills": "No specific skill bonuses, reflecting a general proficiency.",
+    "additional_information": [
+        "Magically charmed by the aboleth, reflecting deep loyalty.",
+        "Can communicate telepathically with aboleths over unlimited range.",
+        "Can perform a protective reaction to shield allies."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "aquatic humanoid servant",
+        "poison damage creature",
+        "loyal thrall of aboleth",
+        "undewater combat support",
+        "moisture-dependent creature"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Pirate Captain",
+    "queries": [
+        {
+            "query": "humanoid pirate with scimitar and dagger attacks",
+            "variant": "humanoid prirate that uses scimitar and dagger attacks"
+        },
+        {
+            "query": "agile captain skilled in navigation and combat",
+            "variant": "captain who is skilled in navigation and combat, agile in fights"
+        },
+        {
+            "query": "medium humanoid with a special ability for sailing",
+            "variant": "medium humanoid who has a special sailing ability"
+        },
+        {
+            "query": "pirate character that excels in acrobatics and deception",
+            "variant": "pirate character that is great at acrobatics and deception"
+        },
+        {
+            "query": "captain who can enhance defense and manipulate skills at sea",
+            "variant": "captain that can boost defense and skill manipulation at sea"
+        }
+    ]
+}

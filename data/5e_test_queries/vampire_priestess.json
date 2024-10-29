@@ -1,0 +1,25 @@
+{
+    "name": "Vampire Priestess",
+    "queries": [
+        {
+            "query": "undead priestess that can regenerate and is harmed by sunlight",
+            "variant": "undead priestess sunlight weakness and regeneration abilities"
+        },
+        {
+            "query": "Vampire with spellcasting abilities and manipulation tactics",
+            "variant": "spellcasting vampire that manipulates and has combat tactics"
+        },
+        {
+            "query": "medium undead creatures with high Wisdom and combat spells",
+            "variant": "medium undead with strong Wisdom and powerful combat spells"
+        },
+        {
+            "query": "creature vulnerable to wooden stakes that heals in the dark",
+            "variant": "vulnerable undead that regains health in darkness and wooden stakes"
+        },
+        {
+            "query": "chaotic evil undead that uses bewitching gaze and mist escape",
+            "variant": "chaotic undead that escapes as mist and uses bewitching gaze"
+        }
+    ]
+}

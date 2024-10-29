@@ -1,0 +1,53 @@
+{
+    "name": "Dracotaur",
+    "creature_type": "Dragon",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 110,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "burrow 20 ft., walk 50 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "taur",
+        "lightning",
+        "resilient"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "versatile"
+    ],
+    "description": "The Dracotaur is a large creature resembling a dragon with the traits of a taur. It has a combination of powerful physical features and electric abilities.",
+    "memorable": "The Dracotaur combines strong melee attacks with devastating lightning capabilities, making it a versatile and dangerous foe.",
+    "goals": "Typically engages in combat to assert dominance or defend its territory.",
+    "relations": "Could be encountered with other dragon-type creatures or elemental beings.",
+    "environment": "Often found in mountainous or rugged terrains where it can utilize its burrowing speed.",
+    "strengths": "High Strength and Constitution scores allow for hard-hitting melee attacks and great durability.",
+    "weaknesses": "Average Intelligence limits problem-solving abilities compared to other more cunning creatures.",
+    "attacks": "Can make powerful bite and claw attacks, as well as long-range attacks with its longbow.",
+    "most_powerful_ability": "Lightning Breath, which deals substantial area damage to multiple targets instantly.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in dim light within 60 feet.",
+    "skills": "Proficient in Athletics and Intimidation, showcasing its physical prowess and presence.",
+    "additional_information": [
+        "Immune to lightning damage, offering strong resistance to common elemental attacks.",
+        "Charge ability allows for increased damage if it moves quickly before attacking.",
+        "Can communicate in multiple languages, adding to its versatility in interaction.",
+        "High AC and HP make it a formidable opponent in long battles.",
+        "Can utilize both melee and ranged attacks effectively."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": "Can use Lightning Arrow and Lightning Breath, unleashing devastating lightning attacks.",
+    "test_queries": [
+        "large dragon with lightning attacks",
+        "formidable creature that can burrow and walk",
+        "chaotic neutral taur with powerful melee attacks",
+        "Dracotaur abilities and abilities",
+        "monster immune to lightning attacks"
+    ]
+}

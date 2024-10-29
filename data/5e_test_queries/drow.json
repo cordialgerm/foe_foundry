@@ -1,0 +1,25 @@
+{
+    "name": "Drow",
+    "queries": [
+        {
+            "query": "dark-skinned elf that excels in stealth and ambush tactics",
+            "variant": "elf that is dark-skinned and focuses on ambushing and stealth tactics"
+        },
+        {
+            "query": "subterranean humanoid with sunlight sensitivity and unique poisons",
+            "variant": "humanoid that lives underground with disadvantages in sunlight and has special poisons"
+        },
+        {
+            "query": "creature with darkvision and skilled in magic, found in the Underdark",
+            "variant": "monster that possesses darkvision and is adept at magic, usually located in the Underdark"
+        },
+        {
+            "query": "cunning dark elf with a background in Lolth worship and ambush strategies",
+            "variant": "dark elf known for its cunning tactics and worship of Lolth while using ambush strategies"
+        },
+        {
+            "query": "light-sensitive dark elf that uses poisoned weapons in combat",
+            "variant": "dark elf who is sensitive to light and employs poisoned weapons during fights"
+        }
+    ]
+}

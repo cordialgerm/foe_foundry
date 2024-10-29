@@ -1,0 +1,25 @@
+{
+    "name": "Vampire Thrall",
+    "queries": [
+        {
+            "query": "humanoid servant of vampires with darkvision and regeneration",
+            "variant": "vampire human servant with darkvision and life regeneration"
+        },
+        {
+            "query": "creature reliant on vampire blood that can climb and move swiftly",
+            "variant": "creature dependent on vampire blood that climbs and moves fast"
+        },
+        {
+            "query": "vampire thrall weaknesses in sunlight and abilities to support its master",
+            "variant": "weakness in sunlight and supportive abilities of vampire thrall"
+        },
+        {
+            "query": "medium humanoid with stealthy abilities and poor against radiant damage",
+            "variant": "medium humanoid with stealth skills and weak against radiant damage"
+        },
+        {
+            "query": "minion of vampires that can heal itself but becomes poisoned without blood",
+            "variant": "vampire minion that can regenerate but becomes poisoned without consuming blood"
+        }
+    ]
+}

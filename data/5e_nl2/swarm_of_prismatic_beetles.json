@@ -1,0 +1,54 @@
+{
+    "name": "Swarm of Prismatic Beetles",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., fly 5 ft., burrow 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "beetle",
+        "poison",
+        "evasive"
+    ],
+    "adjectives": [
+        "colorful",
+        "agile",
+        "evasive",
+        "distracting"
+    ],
+    "description": "A vibrant and agile swarm of tiny beetles, capable of moving quickly and occupying the same space as other creatures.",
+    "memorable": "Its Glittering Carapace ability can incapacitate creatures, making it a tantalizing yet dangerous sight.",
+    "goals": "To distract and incapacitate enemies using its swarm tactics and unsettling brilliance.",
+    "relations": "Often encountered in the company of other insect swarms or in environments rich in natural flora.",
+    "environment": "Commonly found in lush, colorful environments, especially those with plenty of plants.",
+    "strengths": "Has high Dexterity allowing for maneuverability and effective evasion, and it can affect multiple enemies at once.",
+    "weaknesses": "Very low Strength hampers its direct melee combat capabilities; it is vulnerable to area attacks.",
+    "attacks": "Can perform Bites that deal piercing damage and potentially inflict poison damage along with a euphoric state.",
+    "most_powerful_ability": "Glittering Carapace: incapacitates and immobilizes creatures within 30 feet if they fail a Wisdom saving throw.",
+    "equipment": null,
+    "senses": "It has blindsight up to 10 feet, helping it detect nearby threats effectively.",
+    "skills": "Proficient in Stealth, allowing it to avoid detection and surprise enemies.",
+    "additional_information": [
+        "Has damage resistances to bludgeoning, piercing, and slashing attacks.",
+        "Immune to several conditions such as charmed, frightened, and restrained.",
+        "Can occupy and move through spaces occupied by other creatures.",
+        "Does not regain hit points, reflecting its nature as a swarm.",
+        "Utilizes its numbers for crowd control rather than individual strength."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "colorful insect swarm with incapacitating abilities",
+        "agile swarm that uses poison and euphoric effects",
+        "beetle swarm that controls the battlefield",
+        "distracting swarm that affects multiple enemies",
+        "poisonous swarm of tiny beetles in lush environments"
+    ]
+}

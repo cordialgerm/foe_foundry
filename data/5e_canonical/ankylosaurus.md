@@ -1,6 +1,8 @@
 <MonsterName/>Ankylosaurus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>68</HP>
 <summary>The Ankylosaurus is a massive beast characterized by its heavy armor and impressive physical prowess. It serves primarily as a tank in combat due to its high armor class and substantial hit points, making it difficult to take down. Its challenge rating of 3 indicates it poses a moderate threat to adventurers, offering 700 experience points upon defeat. Among its notable attributes, the Ankylosaurus excels in strength and constitution, allowing it to absorb damage while dealing significant melee damage with its tail attack. However, it is relatively slow-moving and has low intelligence and charisma, making it less effective outside of physical confrontations. </summary>
 
 <detail>
@@ -15,8 +17,45 @@ The Ankylosaurus has a single action available in combat, which is its tail atta
 
 ---
 
+Source: 5e_srd
+
+<statblock>
+## Ankylosaurus
+
+_Huge Beast, Unaligned_
+
+**Armor Class** 15 (natural armor)
+
+**Hit Points** 68 (8d12 + 16)
+
+**Speed** 30 ft.
+
+|   STR   |   DEX   |   CON   |  INT   |   WIS   |  CHA   |
+| :-----: | :-----: | :-----: | :----: | :-----: | :----: |
+| 19 (+4) | 11 (+0) | 15 (+2) | 2 (-4) | 12 (+1) | 5 (-3) |
+
+**Senses** passive Perception 11
+
+**Languages** --
+
+**Challenge** 3 (700 XP)
+
+**Proficiency Bonus** +2
+
+##### Actions
+
+**_Tail._** _Melee Weapon Attack:_ +7 to hit, reach 10 ft., one target.
+_Hit:_ 18 (4d6 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.
+</statblock>
+
+
+
+
+---
+
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ankylosaurus
 
 *Huge* *Beast*
@@ -40,5 +79,6 @@ Source: 5e_artisinal_monsters
 - **Tail:** Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 17 (3d8 + 4) bludgeoning damage. If the target is a Large or smaller creature  it makes a DC 14 Strength saving throw. On a failure  it is knocked prone.
 
 
+</statblock>
 
 

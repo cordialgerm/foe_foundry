@@ -1,0 +1,52 @@
+{
+    "name": "Swampgas Shade",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "fly 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "undead",
+        "swamp",
+        "stealth",
+        "life-drain"
+    ],
+    "adjectives": [
+        "deceptive",
+        "lingering",
+        "sinister"
+    ],
+    "description": "The Swampgas Shade is a Medium-sized undead with a shadowy, incorporeal form that blends seamlessly into swampy environments, making it a master of stealth and ambush.",
+    "memorable": "Its ability to drain life and return from death makes it a relentless menace.",
+    "goals": "To lurk and ambush unsuspecting creatures within its swamp territory.",
+    "relations": "Commonly found near other undead or swamp creatures, often operating alone.",
+    "environment": "Swampy areas, often remaining within a one-mile radius of its body.",
+    "strengths": "Highly dexterous, adept at hiding, and capable of returning to life if slain within its swamp.",
+    "weaknesses": "Vulnerable to radiant damage, and its powers diminish when outside its bound region.",
+    "attacks": "Can drain the life force of a target with a melee attack that reduces their Charisma, or cast a psychic ranged attack.",
+    "most_powerful_ability": "Rejuvenation allows it to return to life within days unless put to rest properly.",
+    "senses": "It has a passive Perception of 10 and can use its high Dexterity to excel in stealth.",
+    "skills": "It possesses a +3 saving throw modifier against Wisdom, making it resistant to mental effects.",
+    "additional_information": [
+        "Amorphous nature allows movement through tight spaces without restriction.",
+        "Swamp Camouflage grants it advantage on stealth checks while hiding.",
+        "Cannot be revived once its corpse is buried outside the swamp.",
+        "Undead nature means it doesn't require food, air, or sleep.",
+        "If it leaves its swamp region, it cannot use its Soul Drain ability until it returns."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that drains life",
+        "shadowy flying monster in swamps",
+        "hidden menace with life-draining powers",
+        "ambush monster that returns after death",
+        "stealthy undead lurking in wetland"
+    ]
+}

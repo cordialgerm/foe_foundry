@@ -1,0 +1,50 @@
+{
+    "name": "Oculo Swarm",
+    "creature_type": "Aberration",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 82,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft., fly 5 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "aberration",
+        "high dexterity"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "disorienting"
+    ],
+    "description": "The Oculo Swarm is a large, swarm-type aberration with hundreds of eyes, capable of extracting the eyes of its foes. Its dexterous movements allow it to evade attacks effectively while it occupies the spaces of its opponents.",
+    "memorable": "It can pluck out the eyes of its enemies, leading to significant combat disadvantages and even blindness.",
+    "goals": "To disorient and incapacitate foes while extracting vital organs.",
+    "relations": "May serve as minions to more powerful aberrations or dark entities.",
+    "environment": "Typically found in dark, damp locations where it can ambush unsuspecting creatures.",
+    "strengths": "Immunity to several conditions makes it highly resilient, coupled with high dexterity for evasion.",
+    "weaknesses": "Inability to regain hit points or gain temporary hit points could leave it vulnerable in prolonged battles.",
+    "attacks": "Uses Multiattack to perform two Extract Eye attacks, dealing piercing damage, and can inflict psychic damage with its Disorienting Gaze.",
+    "most_powerful_ability": "Disorienting Gaze causes psychic damage and incapacitation, disrupting the actions of multiple opponents.",
+    "equipment": null,
+    "senses": "Possesses the 'Hundreds of Eyes' ability, granting it advantage on perception checks that rely on sight.",
+    "skills": "Proficient in Insight, Perception, and Stealth, leveraging its high wisdom and dexterity.",
+    "additional_information": [
+        "Resistant to bludgeoning, piercing, and slashing damage.",
+        "Can occupy spaces of other creatures, providing tactical advantages in combat.",
+        "Attacking the swarm allows no benefit from Pack Tactics or Sneak Attack if opponents are not blinded.",
+        "Extracted eyes can potentially be reattached with the right checks within a certain timeframe.",
+        "Immunities make it difficult to incapacitate using standard methods."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large swarm that extracts eyes",
+        "aberration with disorienting gaze ability",
+        "swarm of eyes that blinds enemies",
+        "high dexterity creature that can't heal",
+        "monster that stops sneak attacks and pack tactics"
+    ]
+}

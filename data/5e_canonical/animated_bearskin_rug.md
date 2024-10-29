@@ -1,6 +1,8 @@
 <MonsterName/>Animated Bearskin Rug</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Animated Bearskin Rug is a unique and sinister creature, taking the form of a seemingly harmless rug that is capable of animating and attacking those who approach it. As a Large construct, it possesses a solid armor class of 13, making it average in defensive ability, and it has a significant pool of 65 hit points, providing it with good resilience in combat. The rug is unaligned, suggesting it acts without any moral guidance, and its challenge rating of 4 indicates that it can pose a moderate threat to a party of adventurers. It excels in grappling and damage transfer mechanics, reducing damage taken while holding onto a victim, making it particularly effective in sustained skirmishes. However, its intelligence score is very low, indicating it lacks the ability to strategize or communicate, leaving it vulnerable to trickery or clever tactics.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Animated Bearskin Rug combines a strong physical presence with clev
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animated Bearskin Rug
 
 *Large* *Construct* *unaligned*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Menacing Roar (Recharge 6):** The bearskin rug lets out a hideous, supernatural howl. Each creature within 20 feet of the rug that can hear the roar must succeed on a DC 13 Wisdom saving throw or become frightened for 1 minute. A creature frightened this way must spend its turns trying to move as far away from the rug as it can. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action. At the end of each of its turns and when it takes damage, the creature can repeat the saving throw, ending the effect on itself on a success.
 
 
+</statblock>
 
 

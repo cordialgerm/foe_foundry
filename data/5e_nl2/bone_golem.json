@@ -1,0 +1,55 @@
+{
+    "name": "Bone Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "golem",
+        "undead",
+        "necrotic"
+    ],
+    "adjectives": [
+        "durable",
+        "formidable",
+        "berserk",
+        "absorbent"
+    ],
+    "description": "The Bone Golem is a medium-sized construct composed entirely of bones, resembling a pile of ordinary skeletons when motionless. It has a strong frame, showcasing its resilience on the battlefield.",
+    "memorable": "Its ability to absorb necrotic damage and potentially go berserk when injured creates a compelling and dangerous combat encounter.",
+    "goals": "Typically programmed by a creator to guard or protect an area or carry out specific tasks.",
+    "relations": "Often created and controlled by necromancers or powerful beings skilled in crafting constructs.",
+    "environment": "Commonly found in dark places such as dungeons, necromancer lairs, or graveyards.",
+    "strengths": "Immunities to necrotic, poison, and psychic damage, along with resistance to nonmagical attacks, make it exceptionally tough in combat.",
+    "weaknesses": "Very low intelligence and charisma limit its usefulness outside of combat scenarios.",
+    "attacks": "The Bone Golem can perform multiple melee claw attacks and ranged bone shard attacks, dealing both slashing and necrotic damage.",
+    "most_powerful_ability": "Necrotic Absorption allows it to heal from necrotic damage instead of taking it.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immutable Form grants immunity to any effects that would alter its form.",
+        "Magic Resistance provides an advantage on saving throws against spells.",
+        "Berserk state triggers when its HP drops below 30, causing it to attack uncontrollably.",
+        "False Appearance makes it difficult to distinguish from ordinary bones when stationary.",
+        "Its creator can attempt to calm it during a berserk state with a successful Persuasion check."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct with necrotic abilities",
+        "bone-based creature in D&D",
+        "golem that absorbs damage",
+        "undead guardian golem",
+        "berserk bone monster"
+    ]
+}

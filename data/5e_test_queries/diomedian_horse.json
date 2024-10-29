@@ -1,0 +1,25 @@
+{
+    "name": "Diomedian Horse",
+    "queries": [
+        {
+            "query": "large beast with keen smell and pounce ability",
+            "variant": "large animal with a strong sense of smell and pounce skill"
+        },
+        {
+            "query": "horse-like creature that attacks as a team and has high strength",
+            "variant": "horse creature that fights in groups and possesses great strength"
+        },
+        {
+            "query": "resilient horse that inflicts slashing damage and has multiattack",
+            "variant": "tough horse that deals slashing damage and can attack multiple times"
+        },
+        {
+            "query": "combat-effective beast with natural armor and good agility",
+            "variant": "battle-ready creature with natural defense and decent agility"
+        },
+        {
+            "query": "powerful horse known for high mobility and teamwork in attacks",
+            "variant": "strong horse recognized for speed and collaborative abilities in combat"
+        }
+    ]
+}

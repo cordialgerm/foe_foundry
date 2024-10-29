@@ -1,0 +1,52 @@
+{
+    "name": "Mandriano",
+    "creature_type": "Plant",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 60,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "plant",
+        "undead",
+        "grappler"
+    ],
+    "adjectives": [
+        "formidable",
+        "dark",
+        "durable"
+    ],
+    "description": "The Mandriano is a large, menacing plant creature known for its strength and dark powers.",
+    "memorable": "Its ability to drain the life force of grappling targets and raise them as undead makes it particularly dangerous.",
+    "goals": "To grapple and drain the essence of its enemies, converting them into undead minions.",
+    "relations": "Commonly associated with other undead creatures or plant-based enemies.",
+    "environment": "Typically found in dark, forested areas or damp, secluded locations.",
+    "strengths": "Good combat capabilities with the ability to grapple multiple foes and drain their life force.",
+    "weaknesses": "Vulnerable to fire damage and has a low Dexterity that hampers agility.",
+    "attacks": "Can make two swipe attacks that deal significant slashing damage, and can grapple up to three Medium-sized creatures.",
+    "most_powerful_ability": "Consume the Spark, which allows it to drain necrotic energy from grappling foes, healing itself while reducing the target's hit point maximum.",
+    "equipment": null,
+    "senses": "Possesses darkvision to see in dim light up to 60 feet and has a passive perception of 13.",
+    "skills": "Proficient in athletics and perception, helping to enhance its grappling and awareness capabilities.",
+    "additional_information": [
+        "Immunity to poison damage and exhaustion",
+        "Ability to control up to twelve undead at once",
+        "Uses its strength to excel in grappling foes",
+        "Can potentially turn defeated foes into undead minions",
+        "Has resistance to necrotic damage"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large plant creature that drains life",
+        "menacing grappler that creates undead servants",
+        "dark plant monster with poison immunity",
+        "creature with strong slashing attacks and grappling",
+        "mandatory undead summoner in dark forests"
+    ]
+}

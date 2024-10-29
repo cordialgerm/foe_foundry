@@ -1,0 +1,25 @@
+{
+    "name": "Alabroza",
+    "queries": [
+        {
+            "query": "small flying monster with a thirst for blood",
+            "variant": "small bloodthirsty flying creature"
+        },
+        {
+            "query": "monster that attaches to its prey for blood loss",
+            "variant": "creature that clings to its target and drains blood"
+        },
+        {
+            "query": "highly mobile monstrosity that needs milk or blood",
+            "variant": "quick monstrosity that requires blood or milk to survive"
+        },
+        {
+            "query": "creature with Draining Fangs ability and darkvision",
+            "variant": "monster that has darkvision and a fang attack"
+        },
+        {
+            "query": "Alabroza's weakness of needing blood every day",
+            "variant": "dependency of the Alabroza on daily blood consumption"
+        }
+    ]
+}

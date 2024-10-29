@@ -1,6 +1,8 @@
 <MonsterName/>Astri</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>8</CR>
+<AC/>15</AC>
+<HP/>112</HP>
 <summary>The Astri is a small celestial being embodying chaotic good, making it a benevolent force with a whimsical nature. It possesses a respectable armor class of 15 and fairly robust hit points totaling 112, making it durable for its challenge rating of 8. The Astri is particularly adept at stealth and survival, showcasing an exceptional Dexterity of 21, allowing it to move quickly and quietly. Although its Strength is average at 12, it compensates with very good Constitution and Charisma scores, enhancing its vitality and its ability to influence others. The Astri can burrow and walk at a speed of 30 feet, making it versatile in both ground and subterranean terrains. Its ability to resist damage from nonmagical attacks and its immunity to charm and exhaustion signify its resilience in adverse situations.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Astri can make multiple attacks, performing a "Multiattack" actio
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Astri
 
 *Small* *Celestial* *chaotic good*
@@ -62,5 +65,6 @@ At will: create or destroy water, detect poison and disease, produce flame, puri
 - **Defensive Counter:** When a creature within 5 feet of the astri makes an attack against a creature other than the astri, the astri can bite the attacker. To do so, the astri must be able to see the attacker.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Lunarian",
+    "queries": [
+        {
+            "query": "fey creature with radiant attacks and vulnerability to sunlight",
+            "variant": "fey being that has radiant damage abilities and is weak to sunlight"
+        },
+        {
+            "query": "medium-sized fey that summons light beams and has necrotic resistance",
+            "variant": "medium fey that can summon light and resists necrotic damage"
+        },
+        {
+            "query": "chaotic neutral creature with high mobility and a powerful halberd",
+            "variant": "neutral chaotic monster with agility and a strong halberd"
+        },
+        {
+            "query": "Lunarian's magical light ability and weakness to natural light",
+            "variant": "the Lunarian's ability to create magical light and its susceptibility to natural light"
+        },
+        {
+            "query": "Lunarian with darkvision and surface curse",
+            "variant": "Lunarian that possesses darkvision and a curse related to surfaces"
+        }
+    ]
+}

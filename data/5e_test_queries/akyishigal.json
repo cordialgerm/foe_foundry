@@ -1,0 +1,25 @@
+{
+    "name": "Akyishigal",
+    "queries": [
+        {
+            "query": "large chaotic evil fiend with insect summoning powers",
+            "variant": "chaotic evil fiend that is large and summons insects"
+        },
+        {
+            "query": "fiend with the ability to fly and create swarms of insects",
+            "variant": "insect-summoning fiend that can fly"
+        },
+        {
+            "query": "powerful fiend with high armor class and poison attacks",
+            "variant": "strong fiend with a high AC and slashing plus poison damage"
+        },
+        {
+            "query": "Akyishigal combat tactics with teleportation and swarm abilities",
+            "variant": "combat strategies for Akyishigal, focusing on swarm and teleport"
+        },
+        {
+            "query": "fiend with multiattack, spellcasting, and legendary resistance",
+            "variant": "multiacting fiend with spells and legendary abilities"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Boggard Sovereign",
+    "queries": [
+        {
+            "query": "large humanoid that commands frogs and lives in water",
+            "variant": "large creature that controls frogs and dwells in aquatic environments"
+        },
+        {
+            "query": "aquatic humanoid with a bite attack and summoning ability",
+            "variant": "humanoid from water with a biting power and a capability to summon allies"
+        },
+        {
+            "query": "monster with amphibious traits and thunder damage attack",
+            "variant": "creature that is amphibious and can deal thunder damage through an attack"
+        },
+        {
+            "query": "Boggard creature that uses Incite Frenzy and speaks with toads",
+            "variant": "Boggard that can incite frenzy and communicate with frogs"
+        },
+        {
+            "query": "humanoid with stealth and perception skills in a swamp",
+            "variant": "large humanoid skilled in stealth and perception activities in a marsh"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Narshark",
+    "queries": [
+        {
+            "query": "large flying monster with a magical horn that is aggressive",
+            "variant": "big flying creature that has a magical horn and is aggressive"
+        },
+        {
+            "query": "monstrosity with darkvision that lives in low-light conditions",
+            "variant": "creature type monstrosity with darkvision that thrives in dim lighting"
+        },
+        {
+            "query": "monster that can fly and has a powerful bite attack",
+            "variant": "creature that possesses flight and delivers a strong bite attack"
+        },
+        {
+            "query": "large creature with an armor class of 14 and excellent perception",
+            "variant": "big creature with AC 14 and great perception skills"
+        },
+        {
+            "query": "aggressive shark-like creature with a unique horn",
+            "variant": "hostile shark-type being that features a distinctive horn"
+        }
+    ]
+}

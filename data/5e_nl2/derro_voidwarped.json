@@ -1,0 +1,60 @@
+{
+    "name": "Derro, Voidwarped",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 120,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 25 ft. fly 30 ft.",
+    "role": null,
+    "tags": [
+        "Underdark",
+        "Magical",
+        "Psychic"
+    ],
+    "adjectives": [
+        "small",
+        "flying",
+        "magical",
+        "insane"
+    ],
+    "description": "The Derro, Voidwarped is a small humanoid creature characterized by its high agility and strong magical capabilities. It has a strange appearance that might include disheveled features reflecting its insanity and void influence.",
+    "memorable": "Its ability to inflict cold and psychic damage while potentially reducing opponents' hit points makes it a terrifying foe.",
+    "goals": "The Derro aims to incapacitate and dominate its foes, using its powerful psychic abilities.",
+    "relations": "Often found alongside other Derro or dark creatures of the Underdark, it may serve darker powers or deities.",
+    "environment": "Typically found in the Underdark or dark, subterranean environments.",
+    "strengths": [
+        "high dexterity",
+        "cold immunity",
+        "resistances to force and psychic damage",
+        "magical weapon attacks"
+    ],
+    "weaknesses": "Sunlight sensitivity, which disadvantages its attacks and perception in direct sunlight.",
+    "attacks": "Utilizes shortsword and void tendril attacks, inflicting piercing, cold, and force damage.",
+    "most_powerful_ability": "Void Speech Rant inflicts substantial psychic damage and can incapacitate multiple foes.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet.",
+    "skills": "Has an average perception skill of +3.",
+    "additional_information": [
+        "Has advantage on saves against charm or fear.",
+        "Can survive without air or ambient pressure.",
+        "Weapon attacks deal extra cold and force damage.",
+        "Can reduce target's maximum hit points with its void tendril attack.",
+        "Easily maneuvers in battle due to flying ability."
+    ],
+    "damage_types": [
+        "cold",
+        "psychic",
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "psychic humanoid that controls shadows",
+        "small flying creature with magical attacks",
+        "insane humanoid immune to cold damage",
+        "Underdark monster with powerful psychic abilities",
+        "dark creature that reduces hit points"
+    ]
+}

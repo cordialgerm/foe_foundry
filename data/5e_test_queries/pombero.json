@@ -1,0 +1,25 @@
+{
+    "name": "Pombero",
+    "queries": [
+        {
+            "query": "playful fey creature that can become invisible",
+            "variant": "fey creature that is playful and can turn invisible"
+        },
+        {
+            "query": "medium fey with strong strength and forest camouflage",
+            "variant": "fey that is medium-sized, has strong strength, and uses forest camouflage"
+        },
+        {
+            "query": "chaotic creature with charming abilities and contortionist skills",
+            "variant": "chaotic monster that has charming powers and can contort its body"
+        },
+        {
+            "query": "fey monster that talks to beasts and hides in forests",
+            "variant": "forest-dwelling fey that can communicate with animals"
+        },
+        {
+            "query": "Pombero combat tactics involving multiattack and Charming Touch",
+            "variant": "combat strategies of Pombero using multiattack and its Charming Touch ability"
+        }
+    ]
+}

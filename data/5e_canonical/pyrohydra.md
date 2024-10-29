@@ -1,6 +1,8 @@
 <MonsterName/>Pyrohydra</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>13</CR>
+<AC/>16</AC>
+<HP/>218</HP>
 <summary>The Pyrohydra is a formidable Huge monstrosity known for its multiple fire-breathing heads and regeneration abilities. With an impressive Armor Class of 16 and a significant pool of Hit Points totaling 218, the Pyrohydra can endure extensive damage before being taken down, making it a resilient foe in combat. Its challenge rating of 13 signifies that it poses a serious threat to adventurers, providing a substantial 10,000 experience points upon defeat. Although it possesses a low Intelligence of 2, restricting its tactical capabilities, the Pyrohydra compensates with exceptional physical stats, particularly in Strength and Constitution, both rated at +5, marking their effectiveness as very good. The hydra is adept at using its environment to its advantage, with a speed of 30 feet on land and the same aquatic capability, allowing it to engage enemies both in and out of water.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For legendary actions, the Pyrohydra has two options available at the end of ano
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pyrohydra
 
 *Huge* *Monstrosity*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **The hydra can take 2 legendary actions:** Only one legendary action can be used at a time and only at the end of another creatures turn. It regains spent legendary actions at the start of its turn.
 - **Rush:** The hydra moves or swims up to half its Speed without provoking opportunity attacks. If this movement would pass through the space of creatures that are not incapacitated or prone, each creature makes a DC 17 Strength saving throw. On a failure, the creature is knocked prone and the hydra can enter its space without treating it as difficult terrain. On a success, the hydra can't enter the creatures space, and the hydras movement ends. If this movement ends while the hydra is sharing a space with a creature, the creature is pushed to the nearest unoccupied space.
 - **Wrap:** Melee Weapon Attack: +9 to hit, reach 10 ft., one Medium or smaller creature. Hit: The target is grappled (escape DC 17) and restrained until this grappled ends. The hydra can grapple one creature for each of its heads. When one of the hydras heads is killed while it is grappling a creature, the creature that killed the head can choose one creature to free from the grapple.
+</statblock>
 
 

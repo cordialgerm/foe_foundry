@@ -1,0 +1,25 @@
+{
+    "name": "Giant Scorpion",
+    "queries": [
+        {
+            "query": "massive desert predator with venomous stinger",
+            "variant": "huge predator of the desert with a poisonous stinger"
+        },
+        {
+            "query": "hard exoskeleton beast that grapples and poisons its prey",
+            "variant": "beast with a tough exoskeleton that grapples and poisons"
+        },
+        {
+            "query": "aggressive arachnid found in caves and deserts",
+            "variant": "territorial arachnid located in caves and deserts"
+        },
+        {
+            "query": "large scorpion creature that attacks with claws and stinger",
+            "variant": "big scorpion monster attacking with its claws and sting"
+        },
+        {
+            "query": "creature with blindsight that deals poison damage",
+            "variant": "monster with blindsight ability that inflicts poison damage"
+        }
+    ]
+}

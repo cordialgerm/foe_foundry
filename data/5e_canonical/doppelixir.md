@@ -1,6 +1,8 @@
 <MonsterName/>Doppelixir</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>45</HP>
 <summary>The Doppelixir is a Tiny ooze creature that presents an intriguing and deceptive presence in any encounter. This unaligned entity has a unique ability to imitate various liquids, making it an effective ambusher and manipulator. Although its physical stats are average, with an Armor Class of 13 and 45 hit points, it compensates with high dexterity, allowing it to evade attacks effectively. Its primary strengths include resistance to many damage types such as acid, fire, necrotic, and slashing, along with the capacity to ignore various conditions. However, it suffers from a very low intelligence, making it susceptible to intelligence-based attacks and strategies. The Doppelixir is particularly notable for its ability to charm and manipulate its targets, drawing them close for a dangerous attachment that leads to blood loss.</summary>
 
 <detail>
@@ -44,6 +46,7 @@ Overall, the Doppelixir offers a mix of mobility, deception, and damage potentia
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Doppelixir
 
 *Tiny* *Ooze* *unaligned*
@@ -81,5 +84,6 @@ Source: 5e_artisinal_monsters
 - **Imitative Liquid:** Imitates one common or uncommon potion oil or other alchemical substance until it uses this bonus action again to end it or to imitate a different liquid. If it takes no acid fire or poison on the round it is slain creature can collect its remains which can be used as the liquid it was imitating as died.
 
 
+</statblock>
 
 

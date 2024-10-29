@@ -1,0 +1,52 @@
+{
+    "name": "Ancient Aboleth",
+    "creature_type": "Aberration",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 342,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 10 ft., swim 40 ft.",
+    "role": null,
+    "tags": [
+        "psychic",
+        "amphibious",
+        "disease"
+    ],
+    "adjectives": [
+        "formidable",
+        "massive",
+        "insidious"
+    ],
+    "description": "The Ancient Aboleth is a massive aberration with a slippery, translucent body, equipped with numerous long, sinuous tentacles. It can manipulate its surroundings with psychic abilities, and its skin glistens with an inky sheen.",
+    "memorable": "Its ability to inflict diseases and manipulate minds creates a unique psychological threat in addition to its physical prowess.",
+    "goals": "Typically seeks to dominate weaker minds and expand its influence over aquatic territories.",
+    "relations": "Could be encountered alongside other aberrations or aquatic creatures, often acting as a master to lesser beings.",
+    "environment": "Thrives in watery environments but can also operate in air, making it versatile in various terrains.",
+    "strengths": "Possesses formidable psychic abilities, significant hit points, and the capacity to inflict debilitating diseases.",
+    "weaknesses": "Relatively average in physical dexterity compared to its impressive mental capabilities.",
+    "attacks": "Attacks with its tentacles, inflicting bludgeoning damage, or can choose to infect targets with the Sea Change disease.",
+    "most_powerful_ability": "Slimy Cloud, which releases a damaging and obscuring cloud of slime, heavily impairing those caught within it.",
+    "equipment": null,
+    "senses": "The creature has blindsight up to 30 feet, allowing it to detect creatures even in darkness or obscured conditions.",
+    "skills": "Skilled in deception and history, it can manipulate foes effectively and outsmart opponents through its intelligence.",
+    "additional_information": [
+        "Can innately cast spells, such as Detect Thoughts and Phantasmal Force.",
+        "Highly intelligent with an IQ on par with the greatest minds.",
+        "Legendary actions enhance its combat capabilities.",
+        "Can communicate telepathically, sharing thoughts with creatures.",
+        "Its Sea Change disease significantly alters the affected creature's abilities and playstyle."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting ability allows it to cast spells without components, focusing on mind-affecting spells.",
+    "test_queries": [
+        "massive psychic creature",
+        "ancient underwater horror",
+        "disease-spreading monster",
+        "powerful aberration with tentacles",
+        "aboleth sea monster"
+    ]
+}

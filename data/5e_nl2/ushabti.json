@@ -1,0 +1,53 @@
+{
+    "name": "Ushabti",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 119,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "necromancy",
+        "durable"
+    ],
+    "adjectives": [
+        "unyielding",
+        "formidable",
+        "agile"
+    ],
+    "description": "The Ushabti is a formidable Medium Construct known for its unyielding nature and ability to inflict ongoing curses on its foes. This construct resembles a funerary statue when motionless, camouflaging itself effectively. It possesses a high Dexterity, making it incredibly agile.",
+    "memorable": "Its ability to curse foes through necrotic weapon attacks combined with poisonous snakes makes it a unique and strategic adversary.",
+    "goals": "Its primary goal is to protect its domain and inflict curses on intruders.",
+    "relations": "May serve as guardians for tombs or sacred places, potentially related to necromantic entities.",
+    "environment": "Typically found in tombs or sacred burial grounds.",
+    "strengths": "Immunity to many debilitating effects and spells, robust defenses due to high hit points, and a potent curse ability.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma, making it vulnerable to manipulation.",
+    "attacks": "The Ushabti attacks with its weapon strikes known as Nabboot attacks, dealing both bludgeoning and necrotic damage while potentially cursing its victims.",
+    "most_powerful_ability": "The ability to unleash poisonous snakes that obey its commands can significantly alter the battlefield dynamics.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 10.",
+    "skills": null,
+    "additional_information": [
+        "Construct nature means it does not require air, food, drink, or sleep.",
+        "It has magic resistance, providing advantage on saving throws against spells.",
+        "Can camouflage as a funerary statue, making it difficult to detect.",
+        "Immunity to spells and effects that alter its form due to Immutable Form.",
+        "Necrotic weapon attacks deal an additional 3d8 necrotic damage."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct that curses with necrotic damage",
+        "statue-like creature that controls snakes",
+        "durable guardians of sacred places",
+        "automaton with poison and necrotic attacks",
+        "unyielding tomb guardian with snake minions"
+    ]
+}

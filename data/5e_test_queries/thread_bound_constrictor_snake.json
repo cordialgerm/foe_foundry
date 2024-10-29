@@ -1,0 +1,25 @@
+{
+    "name": "Thread-Bound Constrictor Snake",
+    "queries": [
+        {
+            "query": "Huge construct snake that grapples opponents in combat",
+            "variant": "huge construct serpent that grapples foes in battle"
+        },
+        {
+            "query": "strong snake immune to poison with magical attacks",
+            "variant": "powerful serpent that can't be poisoned and has magical attacks"
+        },
+        {
+            "query": "thread-bound snake that struggles against antimagic fields",
+            "variant": "snake bound by threads that has trouble in antimagic zones"
+        },
+        {
+            "query": "construct creature with high strength that restrains its prey",
+            "variant": "creature made of constructs with great strength that immobilizes its targets"
+        },
+        {
+            "query": "snake likes to squeeze and damage targets in melee range",
+            "variant": "snake enjoys squeezing and harming enemies in close quarters"
+        }
+    ]
+}

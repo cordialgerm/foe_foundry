@@ -1,0 +1,25 @@
+{
+    "name": "Ahuizotl",
+    "queries": [
+        {
+            "query": "small aquatic creature with spiky coat and strong melee attacks",
+            "variant": "aquatic small creature with spikes and strong melee combat"
+        },
+        {
+            "query": "creature that can breathe air and water with high strength",
+            "variant": "creature capable of breathing air and water that has high strength"
+        },
+        {
+            "query": "ambush monster that grapples and pulls enemies in water",
+            "variant": "monster that ambushes and drags foes in water by grappling"
+        },
+        {
+            "query": "agile monstrosity that deals piercing damage with spikes",
+            "variant": "agile monster dealing damage with piercing spikes"
+        },
+        {
+            "query": "small monstrosity with decent hit points and low intelligence",
+            "variant": "small creature with good hit points and low intelligence score"
+        }
+    ]
+}

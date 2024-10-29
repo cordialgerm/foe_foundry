@@ -1,0 +1,50 @@
+{
+    "name": "Demon, Inciter",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft., fly 30 ft.",
+    "role": "null",
+    "tags": [
+        "demon",
+        "chaos",
+        "manipulation"
+    ],
+    "adjectives": [
+        "chaotic",
+        "elusive",
+        "paranoiac"
+    ],
+    "description": "The Inciter is a chaotic evil demon with moderate armor and hit points, known for its deceptive and manipulative abilities. It can fly, enhancing its mobility on the battlefield, and possesses an aura that sows distrust among enemies.",
+    "memorable": "Its ability to provoke paranoia among allies creates chaos and disrupts even the best-laid plans of enemies.",
+    "goals": "To create disorder and manipulate enemies psychologically during combat.",
+    "relations": "Demons and evil entities that thrive on chaos and manipulation.",
+    "environment": "Likely found in dark or chaotic places, often where temptation and evil flourish.",
+    "strengths": "Highly mobile due to flight and can turn allies against each other, making it a master of chaos.",
+    "weaknesses": "Relatively low hit points and average physical defenses make it vulnerable if targeted directly.",
+    "attacks": "Can make two claw attacks dealing moderate piercing damage; can also inspire violence among enemies with whispers.",
+    "most_powerful_ability": "Aura of Distrust, imposing negative effects on both allies and foes and preventing cooperation.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses average perception skills for noticing hidden creatures or objects.",
+    "additional_information": [
+        "Immunity to poison and resistance to cold, fire, and lightning.",
+        "Ability to become invisible, making it difficult to target in combat.",
+        "Amorphous trait allows navigation through tight spaces seamlessly.",
+        "Psychic aura affects all non-Fiend creatures, enhancing its disruptive role.",
+        "Can create significant internal conflict among enemies."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "demon that causes distrust among allies",
+        "mobile fiend that sows chaos",
+        "demon with paranoia inducing abilities",
+        "creature that whispers to incite violence",
+        "elusive demon that flies and manipulates"
+    ]
+}

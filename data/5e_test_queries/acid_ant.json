@@ -1,0 +1,25 @@
+{
+    "name": "Acid Ant",
+    "queries": [
+        {
+            "query": "small monster that attacks with acid and explodes upon defeat",
+            "variant": "tiny creature that uses acid in attacks and explodes when it dies"
+        },
+        {
+            "query": "monstrosity with immunity to acid damage and a keen sense of smell",
+            "variant": "creature immune to acid and has a strong sense of smell"
+        },
+        {
+            "query": "tiny ant that inflicts acid damage and has a weak intelligence",
+            "variant": "small ant that causes acid harm and is very low in intelligence"
+        },
+        {
+            "query": "acid-spitting creature that is a minor challenge for low-level adventurers",
+            "variant": "creature that spits acid and is a small challenge for beginner adventurers"
+        },
+        {
+            "query": "monstrosity with low hit points and acid-based attacks",
+            "variant": "monster with few hit points and attacks that involve acid"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Dread Knight Champion</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>23</CR>
+<AC/>18</AC>
+<HP/>346</HP>
 <summary>The Dread Knight Champion is a formidable Medium Undead creature, serving as a powerful antagonist in the world of Dungeons & Dragons. With an impressive Armor Class of 18, it boasts a substantial pool of Hit Points totaling 346, derived from a 33d8 Hit Dice plus a significant Constitution modifier of +6. This challenge rating of 23, equivalent to 50,000 experience points, indicates that it is highly dangerous and should be approached with caution. Notable for its high strength and charisma, the Dread Knight has a Strength score of 22 (+6) and a Charisma score of 20 (+5), allowing it to be both physically strong in combat and commanding in social situations. Its weaknesses are minimal, as it possesses immunities to cold, fire, necrotic, and poison damage, as well as several conditions like being charmed, frightened, or stunned. The Dread Knight's ability to deal necrotic damage can severely weaken its enemies by reducing their hit point maximums, posing a continual threat. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Moreover, the Dread Knight can summon a Fiendish Steed, such as a fell nightmare
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dread Knight Champion
 
 *Medium* *Undead*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Break Magic:** The dread knight ends all spell effects created by a 5th-level or lower spell slot on a creature, object, or point within 30 feet.
 
 
+</statblock>
 
 

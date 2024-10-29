@@ -1,0 +1,25 @@
+{
+    "name": "Derendian Moth Abomination",
+    "queries": [
+        {
+            "query": "huge monster with tentacles that can teleport and lay eggs",
+            "variant": "huge creature with tenticles that can teleport and spawn eggs"
+        },
+        {
+            "query": "neutral evil flying monster immune to cold damage",
+            "variant": "neutral evil flying creature that is immune to cold damage"
+        },
+        {
+            "query": "creature with high Dexterity and tentacle attacks in dark environments",
+            "variant": "monster with high dexterity and tentacle strikes in dark places"
+        },
+        {
+            "query": "monster that regenerates tentacles after foes fall nearby",
+            "variant": "creature that grows back tentacles when enemies drop nearby"
+        },
+        {
+            "query": "moth monster that uses rainbow dust as a deadly attack",
+            "variant": "moth creature that uses rainbow dust for a lethal attack"
+        }
+    ]
+}

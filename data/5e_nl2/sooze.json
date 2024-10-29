@@ -1,0 +1,56 @@
+{
+    "name": "Sooze",
+    "creature_type": "Aberration",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 49,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "climb 10 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "shapeshifter",
+        "combat support",
+        "versatile"
+    ],
+    "adjectives": [
+        "amorphous",
+        "tireless",
+        "resilient",
+        "versatile"
+    ],
+    "description": "The Sooze is characterized by its ability to alter its form and characteristics, taking the roles of Laborer or Warrior, with a unique appearance that reflects its amorphous nature.",
+    "memorable": "Its ability to merge with other Soozes for added survivability makes it unique and strategic in encounters.",
+    "goals": "The Sooze typically serves a supportive or combative role in a party, adapting to situations as needed.",
+    "relations": "The Sooze may be encountered alongside other aberrations in versatile roles or as a part of a party.",
+    "environment": "Soozes can be found in various environments, often where they can adapt and utilize their abilities to maximum effect.",
+    "strengths": "Notable for its versatility; the Sooze can excel in both combat and support roles based on its chosen form.",
+    "weaknesses": "Isolated Soozes may struggle due to their inherent lack of overwhelming offensive capabilities.",
+    "attacks": "Can use Oozing Slam for a melee attack that deals bludgeoning and acid damage, or wield a longsword if in Warrior form, showing flexibility in combat.",
+    "most_powerful_ability": "The Merge ability allows a Sooze with low hit points to combine with another Sooze, increasing its survivability.",
+    "equipment": null,
+    "senses": "The Sooze has blindsight up to 60 feet, allowing it to perceive its environment without relying on sight.",
+    "skills": "It possesses a +4 modifier to Perception, indicating a strong ability to detect hidden details.",
+    "additional_information": [
+        "Can assume multiple roles in battle as Laborer or Warrior.",
+        "Immunity to exhaustion when in Laborer form.",
+        "Can Dash as a bonus action multiple times a day in Laborer form.",
+        "Warrior form increases Armor Class and provides attacking advantages.",
+        "Possesses resistances to acid, cold, and fire."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "amorphous creature with combat versatility",
+        "shapeshifting monster that merges for survival",
+        "laborer or warrior shaped like oozing blob",
+        "monster with blindsight and perception skills",
+        "resilient support creature with unique abilities"
+    ]
+}

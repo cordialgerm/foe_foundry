@@ -1,0 +1,51 @@
+{
+    "name": "Orcish Wildling Minstrel",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Support",
+    "tags": [
+        "orc",
+        "minstrel",
+        "bard",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "musical",
+        "charming",
+        "manipulative",
+        "supportive"
+    ],
+    "description": "The Orcish Wildling Minstrel is a medium-sized humanoid adept at both combat and storytelling, using musical talents to inspire and influence.",
+    "memorable": "Its ability to charm and manipulate foes while bolstering allies makes it a unique presence on the battlefield.",
+    "goals": "To preserve tribal history through song and support allies in combat.",
+    "relations": "Associated with orc tribes, likely to be seen with other tribal figures or spellcasters.",
+    "environment": "Typically found in tribal settlements or wilderness areas, often among other orcish tribesmen.",
+    "strengths": "Excellent spellcasting and support abilities, capable of healing and inspiring allies while controlling the battlefield.",
+    "weaknesses": "Relatively low strength and constitution, making it vulnerable in direct confrontations.",
+    "attacks": "Wields a rapier for melee attacks, uses vicious mockery to inflict psychic damage and disadvantage on foes.",
+    "most_powerful_ability": "Hypnotic Pattern creates an incapacitating effect on enemies, controlling their actions during combat.",
+    "senses": "Passive perception of 11 indicates average awareness.",
+    "skills": "Proficient in deception, performance, and persuasion, allowing for effective manipulation during interactions.",
+    "additional_information": [
+        "Can cast legend lore instinctively every 30 days without components.",
+        "Manipulative through charm and illusion spells.",
+        "Uses songs to preserve communal memory.",
+        "Invisibility spell enhances tactical options.",
+        "Martial Encouragement boosts allies' damage."
+    ],
+    "damage_types": [],
+    "spellcasting": "5th-level spellcaster using Charisma for spells, with a variety of supportive and controlling spells.",
+    "test_queries": [
+        "orc spellcaster with musical talents",
+        "humanoid bard that supports allies",
+        "minstrel that can charm enemies",
+        "musical orc with healing abilities",
+        "orcish minstrel using hypnotic patterns"
+    ]
+}

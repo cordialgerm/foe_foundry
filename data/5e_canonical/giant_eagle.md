@@ -1,6 +1,8 @@
 <MonsterName/>Giant Eagle</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>26</HP>
 <summary>A Giant Eagle is a majestic, soaring predator with a wingspan that can reach up to 20 feet. These creatures are intelligent and often form close bonds with good-aligned humanoids, sometimes acting as guardians or mounts for noble warriors. Giant Eagles are typically found in high mountains or wide open skies, where they hunt for large prey such as deer or smaller predators. In combat, they dive at their foes with sharp talons and powerful beaks, using their speed and flight to gain an advantage. Giant Eagles are proud creatures, and their presence often symbolizes freedom and nobility.</summary>
 
 <summary>The Giant Eagle is a large beast characterized by its keen senses and aerial prowess, making it an effective scout and a fierce combatant. With a moderate Armor Class of 13 and 40 hit points, it presents a small challenge to unprepared adventurers, earning a Challenge Rating of 1. This creature combines decent physical abilities, particularly in Dexterity with a +3 modifier, which is considered good, allowing it superior agility in flight and combat. However, its Constitution is only average, with a +1 modifier, and it has low mental abilities with its Intelligence being -1, deemed very bad. Notably, the Giant Eagle possesses heightened sight, greatly enhancing its Perception when relying on vision. Its special ability to swim adds versatility, although it can face dangers if it remains submerged too long.</summary>
@@ -38,6 +40,7 @@ Additionally, as a bonus action, the Giant Eagle can use its Beak attack on one 
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Eagle
 
 *Large beast, neutral good*
@@ -70,7 +73,8 @@ Source: 5e_srd
 
 ***Talons***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage.
 
-A **giant eagle** is a noble creature that speaks its own language and understands speech in the Common tongue. A mated pair of giant eagles typically has up to four eggs or young in their nest (treat the young as normal eagles).
+A **giant eagle** is a noble creature that speaks its own language and understands speech in the Common tongue. A mated pair of giant eagles typically has up to four eggs or young in their nest (treat the young as normal eagles).</statblock>
+
 
 
 
@@ -78,6 +82,7 @@ A **giant eagle** is a noble creature that speaks its own language and understan
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Eagle, Giant
 
 *Large beast*
@@ -108,6 +113,7 @@ Source: 5e_artisinal_monsters
 - **Beak.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 - **Talons.** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage, and the target is grappled (escape DC 13) if it is a Medium or smaller creature. Until this grapple ends, the target is restrained, and the eagle can’t use its Talons on another target.
 
+</statblock>
 
 
 
@@ -116,6 +122,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Eagle
 
 *Large* *Beast*
@@ -147,5 +154,6 @@ Source: 5e_artisinal_monsters
 - **Beak:** Melee Weapon Attack: +4 to hit, reach 5 ft., one grappled creature. Hit: 5 (1d6+2) piercing damage.
 
 
+</statblock>
 
 

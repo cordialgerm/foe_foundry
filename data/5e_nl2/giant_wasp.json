@@ -1,0 +1,52 @@
+{
+    "name": "Giant Wasp",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "walk 10 ft., fly 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "insect",
+        "venomous",
+        "swarm"
+    ],
+    "adjectives": [
+        "agile",
+        "poisonous",
+        "territorial"
+    ],
+    "description": "The Giant Wasp is a fearsome insect the size of a large dog, with a sharp stinger capable of injecting potent venom. It has notable agility and a sleek, aggressive appearance.",
+    "memorable": "Its venom can paralyze or severely injure foes, making it a significant threat during attacks.",
+    "goals": "Defend its hive and territory aggressively against intruders.",
+    "relations": "May be found in swarms, often surrounding nests.",
+    "environment": "Commonly found in forests, jungles, or underground nests.",
+    "strengths": "High fly speed allows for rapid movement in combat, and its venomous sting is debilitating.",
+    "weaknesses": "Relatively low hit points make it vulnerable to focused attacks.",
+    "attacks": "Uses a venomous sting that delivers piercing and poison damage, with potential to paralyze its targets.",
+    "most_powerful_ability": "The sting can stabilize a target at 0 hit points while resulting in paralysis for an hour.",
+    "equipment": null,
+    "senses": "Has a passive perception of 10, indicating basic awareness but no special senses.",
+    "skills": null,
+    "additional_information": [
+        "Possesses an average strength, but above-average dexterity enhances its combat effectiveness.",
+        "Feeds on smaller creatures, using its speed and agility to catch prey.",
+        "Aggressively defends its nest from any perceived threats.",
+        "Can attack in swarms, increasing its lethality in groups.",
+        "Easily dispatched if targeted effectively due to low durability."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fast stinging insect that can paralyze",
+        "aggressive flying insect with venomous sting",
+        "territorial wasp that attacks in swarms",
+        "insect that can incapacitate with poison",
+        "medium-sized venomous wasp in jungles"
+    ]
+}

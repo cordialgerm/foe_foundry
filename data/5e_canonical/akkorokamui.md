@@ -1,6 +1,8 @@
 <MonsterName/>Akkorokamui</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>189</HP>
 <summary>Akkorokamui is a gargantuan celestial creature known for its chaotic good nature. As a powerful ally, it plays a significant role in protecting and healing allies in combat while also posing a formidable presence on the battlefield. With a Challenge Rating of 12, Akkorokamui excels at dealing damage, regeneration, and offering unique healing advantages to others. Its strengths lie in its impressive statistics, notably a high Strength score of 21 and a Wisdom score of 20, both contributing to its effectiveness in combat. The creature does have weaknesses, including vulnerability to physical attacks when it is unable to regenerate, but overall, it can be a tremendous asset in any encounter due to its unique abilities and magical capabilities.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, Akkorokamui acts as both a protector and combatant, leveraging its vast
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Akkorokamui
 
 *Gargantuan* *Celestial* *chaotic good*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Jet:** Swims up to half its swimming speed with o provoking opportunity attacks.
 - **Cast a Spell (2):** Uses Spellcasting.
 - **Tentacle Sweep (2):** Spins in place with its tentacles extended. Each creature within 20' of it that isn’t grappled by it: DC 17 Dex save or take 19 (4d6+5) bludgeoning damage and be knocked prone. Each creature grappled by akkorokamui must make DC 17 Str save or take 12 (2d6+5) bludgeoning damage.
+</statblock>
 
 

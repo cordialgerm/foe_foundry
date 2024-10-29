@@ -1,0 +1,25 @@
+{
+    "name": "Xhkarsh",
+    "queries": [
+        {
+            "query": "large evil aberration that manipulates fate and telepaths",
+            "variant": "large aberration that is evil and telepath manipulates fate"
+        },
+        {
+            "query": "creature immune to divination magic and can turn invisible",
+            "variant": "creature that can turn invisible and immune to divination magic"
+        },
+        {
+            "query": "monster with claws and a fate-altering stinger attack",
+            "variant": "monster with stinger attack and claws that alter fate"
+        },
+        {
+            "query": "Xhkarsh abilities that allow communication across planes",
+            "variant": "abilities of Xhkarsh that allow it to communicate between planes"
+        },
+        {
+            "query": "strong aberration with high Dexterity and stealth skills",
+            "variant": "aberration that is strong with high skills in stealth and dexterity"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Vetala",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 114,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "40 feet walk speed",
+    "role": "Skirmisher",
+    "tags": [
+        "demon",
+        "undead",
+        "fiend"
+    ],
+    "adjectives": [
+        "chaotic",
+        "sinister",
+        "undead-summoning"
+    ],
+    "description": "The Vetala is a medium-sized demon with a sinister connection to death and undeath, possessing remarkable agility and resilience.",
+    "memorable": "It has the ability to raise corpses to serve it and can command them effectively in combat.",
+    "goals": "To summon undead and control them, using them to fulfill its chaotic evil agenda.",
+    "relations": "It is often associated with graveyard creatures and undead, exerting control over them.",
+    "environment": "Thrives in darkness, graveyards, and necropolises.",
+    "strengths": "High Dexterity and Constitution along with Magic Resistance grants it resilience against spells.",
+    "weaknesses": "Vulnerable to radiant damage.",
+    "attacks": "Uses claws to deal slashing and necrotic damage; can raise undead minions.",
+    "most_powerful_ability": "Master of Undeath allows any humanoid it kills to rise as undead under its control.",
+    "equipment": null,
+    "senses": "It has darkvision and a passive perception score of 16, enabling it to notice hidden threats effectively.",
+    "skills": "It has proficiency in Perception, allowing it to notice hidden enemies.",
+    "additional_information": [
+        "Can teleport between corpses with Corpse Stride.",
+        "Moves effortlessly in graveyards with Graveyard Walker ability.",
+        "Commands undead minions with extra necrotic damage through Shepherd of Death.",
+        "Can trigger explosive reactions with Corpse Detonation when its undead are defeated.",
+        "Can animate corpses as skeletons or zombies."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "demon that raises the dead",
+        "chaotic fiend in graveyards",
+        "undead-summoning demon abilities",
+        "dark fiend with explosive undead",
+        "Vetala tactics in combat"
+    ]
+}

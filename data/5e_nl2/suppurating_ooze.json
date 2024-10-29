@@ -1,0 +1,52 @@
+{
+    "name": "Suppurating Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 30,
+    "ac": 8,
+    "srd": false,
+    "cr": "1",
+    "movement": "climb 10 ft., walk 10 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "disease",
+        "necrotic"
+    ],
+    "adjectives": [
+        "amorphous",
+        "debilitating",
+        "slimy"
+    ],
+    "description": "The Suppurating Ooze is a medium-sized, amorphous creature that appears as a mass of putrid slime, capable of moving through narrow spaces as small as 1 inch.",
+    "memorable": "Its Seeping Death ability can inflict debilitating disease, potentially turning victims into more oozes.",
+    "goals": "To infect living creatures and expand its own kind.",
+    "relations": "Might be found in proximity to other oozes or creatures that thrive in decaying environments.",
+    "environment": "Often located in dark, damp places conducive to decay, such as caves or sewers.",
+    "strengths": "Immunities to poison and several conditions, along with strong Constitution saving throws.",
+    "weaknesses": "Low Armor Class and low Dexterity makes it vulnerable to ranged attacks.",
+    "attacks": "Can use a Pseudopod to deliver bludgeoning and necrotic damage with a chance to infect.",
+    "most_powerful_ability": "Seeping Death, which can inflict a disease leading to reduced Dexterity and possible transformation into another ooze.",
+    "equipment": null,
+    "senses": "Has blindsight of 60 feet, but is blind beyond this range.",
+    "skills": null,
+    "additional_information": [
+        "Can climb difficult surfaces, including ceilings.",
+        "Very low intelligence, making it simplistic in behavior.",
+        "Capable of causing significant ongoing damage through its disease.",
+        "Slow-moving due to low Dexterity.",
+        "Can spread its kind through infected creatures."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that infects with touch",
+        "slimy disease-causing ooze",
+        "ooze that can reduce Dexterity",
+        "amorphous monster that climbs walls",
+        "necrotic damage ooze with high Constitution"
+    ]
+}

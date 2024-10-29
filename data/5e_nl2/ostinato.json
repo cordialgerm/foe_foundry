@@ -1,0 +1,53 @@
+{
+    "name": "Ostinato",
+    "creature_type": "Aberration",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "50 feet with high agility",
+    "role": null,
+    "tags": [
+        "psychic",
+        "music",
+        "chaotic",
+        "manipulation"
+    ],
+    "adjectives": [
+        "chaotic",
+        "unpredictable",
+        "tune-infused"
+    ],
+    "description": "The Ostinato is a medium-sized aberration characterized by its chaotic and unpredictable nature, often using psychic manipulation and sound-based abilities to influence its surroundings.",
+    "memorable": "Its ability to meld into the minds of humanoids with an alluring tune makes it a truly unique threat.",
+    "goals": "To manipulate others and create a disorienting musical environment.",
+    "relations": "Typically found alone or in the company of other aberrations, possibly using minions to further its chaotic goals.",
+    "environment": "Not commonly found in typical environments, usually dwelling in places where chaos reigns or deep within psychic maelstroms.",
+    "strengths": "High speed allows for effective maneuvering on the battlefield; immunity to poison and several conditions.",
+    "weaknesses": "Vulnerable to thunder damage.",
+    "attacks": "Utilizes two Cacophony Burst attacks, which deliver thunder damage and can also merge with humanoid hosts.",
+    "most_powerful_ability": "Contagious Tune can affect multiple creatures within a radius, dealing significant psychic damage and gaining temporary hit points.",
+    "equipment": null,
+    "senses": "Possesses darkvision and telepathy, enabling it to communicate mentally with others.",
+    "skills": "Excels in perception, allowing it to detect the environment effectively.",
+    "additional_information": [
+        "Incurs force damage if it ends turns inside objects due to Incorporeal Movement.",
+        "Can become invisible, enhancing its tactical advantages.",
+        "Magic Resistance grants an edge against spellcasters.",
+        "Cannot be targeted while merged with its host.",
+        "Deafened creatures are immune to its sound-based abilities."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic psychic creature in music",
+        "medium size aberration with sound attacks",
+        "monster that manipulates with catchy tunes",
+        "creature immune to poison and paralysis",
+        "fast-moving monster with psychic abilities"
+    ]
+}

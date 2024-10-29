@@ -1,0 +1,25 @@
+{
+    "name": "Giant Albino Bat",
+    "queries": [
+        {
+            "query": "huge predatory bat with echolocation abilities",
+            "variant": "huge bat predator with echolocation abilities"
+        },
+        {
+            "query": "white bat that flies and has a strong bite attack",
+            "variant": "albino bat that can fly and has strong biting attacks"
+        },
+        {
+            "query": "agile monster that dwells in darkness and relies on hearing",
+            "variant": "agile creature that lives in darkness and depends on hearing"
+        },
+        {
+            "query": "large evil creature with powerful claws and good mobility",
+            "variant": "big evil monster with strong claws and excellent mobility"
+        },
+        {
+            "query": "Giant Albino Bat's combat tactics and abilities",
+            "variant": "combat tactics and abilities of the Giant Albino Bat"
+        }
+    ]
+}

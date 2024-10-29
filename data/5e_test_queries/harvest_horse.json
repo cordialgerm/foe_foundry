@@ -1,0 +1,25 @@
+{
+    "name": "Harvest Horse",
+    "queries": [
+        {
+            "query": "large construct that can carry heavy loads and has poor mobility",
+            "variant": "large construct that carries heavy loads and has weak mobility"
+        },
+        {
+            "query": "combat construct immune to poison with a stampede ability",
+            "variant": "combat construct that is poison immune and has a stampede attack"
+        },
+        {
+            "query": "powerful horse construct that doesn't require food and can trample",
+            "variant": "strong horse construct that requires no food and can trampling"
+        },
+        {
+            "query": "durable construct horse that deals double damage to structures",
+            "variant": "sturdy construct horse that does double damage to buildings"
+        },
+        {
+            "query": "unaffiliated large creature with high strength and condition immunities",
+            "variant": "non-aligned large creature with high strength and immunity to conditions"
+        }
+    ]
+}

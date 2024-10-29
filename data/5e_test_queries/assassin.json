@@ -1,0 +1,25 @@
+{
+    "name": "Assassin",
+    "queries": [
+        {
+            "query": "stealthy humanoid who uses poison in combat",
+            "variant": "humanoid who uses poison and is stealthy in combat"
+        },
+        {
+            "query": "master of ambush tactics and silent kills",
+            "variant": "silent killer and ambush master"
+        },
+        {
+            "query": "darkly dressed figure that deals lethal damage from shadows",
+            "variant": "figure dressed in dark clothing dealing lethal damage from shadows"
+        },
+        {
+            "query": "effective melee attacker skilled in deception and stealth",
+            "variant": "melee attacker skilled in stealth and deception effectively"
+        },
+        {
+            "query": "medium creature known for deadly precision and agility",
+            "variant": "known medium creature for agility and deadly precision"
+        }
+    ]
+}

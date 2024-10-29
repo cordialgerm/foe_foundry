@@ -1,0 +1,25 @@
+{
+    "name": "Shadow",
+    "queries": [
+        {
+            "query": "dark, insubstantial undead creature that drains strength",
+            "variant": "dark, non-corporeal undead monstert that steals strength"
+        },
+        {
+            "query": "stealthy shadow monster hiding in darkness",
+            "variant": "sneaky shadow creature lurking in the shadows"
+        },
+        {
+            "query": "undead that is vulnerable to radiant damage and immune to poison",
+            "variant": "undead vulnerable to radiant but immune to poison damage"
+        },
+        {
+            "query": "creature that can hide in dim light and move through narrow spaces",
+            "variant": "monster that can conceal itself in low light and slips through tight gaps"
+        },
+        {
+            "query": "shadowy creature that becomes stronger when it kills a humanoid",
+            "variant": "shadowy monster that gets powerful when it kills a humanoid"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Murmuring Worm",
+    "queries": [
+        {
+            "query": "huge worm-like monster that lives in water and has psychic abilities",
+            "variant": "huge monster that looks like a worm and dwells in water with psychic powers"
+        },
+        {
+            "query": "monster with high hit points that can swim and constrict enemies",
+            "variant": "creature with lots of hit points able to swim and grip foes"
+        },
+        {
+            "query": "aberration with maddening whispers that affects nearby creatures",
+            "variant": "creature categorized as aberration with confusing whispers impacting creatures near it"
+        },
+        {
+            "query": "strong monster capable of grappling and delivering psychic damage",
+            "variant": "powerful creature that can restrain foes and inflict psychic harm"
+        },
+        {
+            "query": "creature that can traverse both land and water and has average dexterity",
+            "variant": "a being that moves well on both land and in water but is average in agility"
+        }
+    ]
+}

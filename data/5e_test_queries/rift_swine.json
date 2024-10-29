@@ -1,0 +1,25 @@
+{
+    "name": "Rift Swine",
+    "queries": [
+        {
+            "query": "large chaotic monster with unpredictable abilities and multiple attacks",
+            "variant": "big chaotic creature with unpredictable powers and various attacks"
+        },
+        {
+            "query": "aberration that mutates every turn and grapples opponents",
+            "variant": "creature that changes every round and can restrain enemies"
+        },
+        {
+            "query": "monster with many eyes that excels in perception and combat control",
+            "variant": "creature with numerous eyes that is great at spotting and controlling fights"
+        },
+        {
+            "query": "melee attacker with tentacles and strong physical capabilities",
+            "variant": "close combat creature with tentacle attacks and robust physical strength"
+        },
+        {
+            "query": "chaotic neutral aberration that resists force and poison damage",
+            "variant": "chaotic creature with resistance to force and poison attacks"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Troll",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 84,
+    "ac": 15,
+    "srd": true,
+    "cr": "5",
+    "movement": "30 ft. walk speed",
+    "role": null,
+    "tags": [
+        "giant",
+        "predator",
+        "regenerator"
+    ],
+    "adjectives": [
+        "large",
+        "hulking",
+        "fearsome"
+    ],
+    "description": "Trolls stand over 10 feet tall with long limbs and green, warty skin, making them look menacing.",
+    "memorable": "The troll's regenerative abilities allow it to recover from severe injuries, making it a formidable opponent.",
+    "goals": "Trolls hunt anything they can overpower, preying on the weak.",
+    "relations": "Trolls may be encountered alongside other savage predators in caves, swamps, and forests.",
+    "environment": "Caves, swamps, and forests where they can hunt and hide.",
+    "strengths": "Exceptional Constitution and the ability to regenerate lost hit points at the start of their turn.",
+    "weaknesses": "Vulnerable to fire and acid damage, which impede their regeneration.",
+    "attacks": "Multiattack with a bite and claw, allowing them to inflict significant damage in combat.",
+    "most_powerful_ability": "Regeneration that allows the troll to recover 10 hit points at the start of its turn.",
+    "equipment": null,
+    "senses": "Keen smell provides advantage on Perception checks relying on smell, enhancing tracking capabilities.",
+    "skills": "Skilled in stealth, allowing them to remain undetected in their environment.",
+    "additional_information": [
+        "Can make attacks even when missing limbs due to Severed Limbs ability.",
+        "Ravenous Frenzy allows them to regain hit points when attacking under certain conditions.",
+        "Relies on brute strength and cunning tactics despite low intelligence.",
+        "Notable for their ferocity in combat.",
+        "Effectively uses their long reach in attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large hulking green monster with regeneration",
+        "fearsome cave predator that heals",
+        "giant creature that can regrow limbs",
+        "troll abilities and strengths in combat",
+        "monster with keen sense of smell"
+    ]
+}

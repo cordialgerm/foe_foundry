@@ -1,0 +1,25 @@
+{
+    "name": "Adult Brass Dragon",
+    "queries": [
+        {
+            "query": "friendly dragon with golden-brown scales that lives in deserts",
+            "variant": "golden-brown scaled dragon that is friendly and resides in deserts"
+        },
+        {
+            "query": "massive creature with fire immunity and a sleep-inducing breath weapon",
+            "variant": "huge fire immune creature with the ability to put foes to sleep"
+        },
+        {
+            "query": "talkative dragon that loves conversation and uses magical abilities",
+            "variant": "chatty dragon fond of talks and capable of spell-like powers"
+        },
+        {
+            "query": "powerful dragon with a curving tail and legendary actions",
+            "variant": "strong dragon having a curved tail and unique legendary abilities"
+        },
+        {
+            "query": "dragon that can transform shapes and control the battlefield with fire breath",
+            "variant": "shape-shifting dragon that uses fire breath for battlefield control"
+        }
+    ]
+}

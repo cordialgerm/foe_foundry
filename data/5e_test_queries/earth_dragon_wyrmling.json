@@ -1,0 +1,25 @@
+{
+    "name": "Earth Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium-sized dragon that can burrow through earth and stone",
+            "variant": "dragon that is medium-sized and can burrow through earth and stones"
+        },
+        {
+            "query": "earth guardian with damage resistance to nonmagical weapons",
+            "variant": "guardian of the earth with resistance to damage from non-magical weapons"
+        },
+        {
+            "query": "dragon that causes fatigue in its linked area and has darkvision",
+            "variant": "fatigue causing dragon in linked areas that possesses darkvision"
+        },
+        {
+            "query": "dragon known for false appearance and scouring breath attack",
+            "variant": "dragon with the ability to blend in and scouring breath attack"
+        },
+        {
+            "query": "dragon with good strength and constitution that lives underground",
+            "variant": "underground living dragon with strong strength and constitution"
+        }
+    ]
+}

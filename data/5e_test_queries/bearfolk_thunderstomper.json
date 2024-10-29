@@ -1,0 +1,25 @@
+{
+    "name": "Bearfolk Thunderstomper",
+    "queries": [
+        {
+            "query": "medium humanoid with thunderous stomp ability",
+            "variant": "humanoid that can stomp with thunderous force"
+        },
+        {
+            "query": "creature that can inspire allies and has keen smell",
+            "variant": "monster with keen sense of smell and ability to inspire friends"
+        },
+        {
+            "query": "durable spellcaster that mimics giant footsteps",
+            "variant": "spellcasting creature that imitates the sounds of giants"
+        },
+        {
+            "query": "chaotic neutral bearfolk with high strength and charisma",
+            "variant": "bearfolk with high charisma and strength that is chaotic neutral"
+        },
+        {
+            "query": "powerful melee fighter that uses thunder damage",
+            "variant": "strong fighter that deals thunder damage in melee"
+        }
+    ]
+}

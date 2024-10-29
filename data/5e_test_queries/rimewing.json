@@ -1,0 +1,25 @@
+{
+    "name": "Rimewing",
+    "queries": [
+        {
+            "query": "small ice moth creature with charming abilities",
+            "variant": "small icy moth monster that has charming powers"
+        },
+        {
+            "query": "beast that can charm opponents and has cold immunity",
+            "variant": "creature that charms enemies and is immune to cold damage"
+        },
+        {
+            "query": "flying creature with colorful ice crystals and stealth",
+            "variant": "flying beast that uses colorful ice crystals and is good at stealth"
+        },
+        {
+            "query": "moth-like monster that thrives in cold environments and has darkvision",
+            "variant": "moth-like creature that excels in icy settings and can see in darkness"
+        },
+        {
+            "query": "monster that attacks with a proboscis and has a unique special ability",
+            "variant": "creature that uses a proboscis to attack and has a special ability"
+        }
+    ]
+}

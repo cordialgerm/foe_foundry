@@ -1,0 +1,53 @@
+{
+    "name": "Vorthropod",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 127,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft., swim 30 ft., climb 20 ft.",
+    "role": null,
+    "tags": [
+        "magma",
+        "lava",
+        "fire",
+        "ambush"
+    ],
+    "adjectives": [
+        "fiery",
+        "durable",
+        "menacing"
+    ],
+    "description": "The Vorthropod is a medium-sized monstrosity with a formidable molten shell and robust physique, making it adapted to volcanic environments. It thrives in extreme heat and possesses powerful claw attacks.",
+    "memorable": "Its ability to turn its shell into molten form and retaliate with fiery attacks makes it a formidable opponent in combat.",
+    "goals": "To inhabit magma and lava environments while ambushing unsuspecting creatures.",
+    "relations": "May be found in the company of other fire-aligned creatures or in volcanic areas.",
+    "environment": "Volcanic terrain, near magma or lava flows.",
+    "strengths": "Damage immunities to fire and poison, significant hit points, and powerful melee attacks.",
+    "weaknesses": "Very low intelligence and charisma, making it easily outsmarted and unable to engage socially.",
+    "attacks": "Performs multiattacks with claws, dealing additional fire damage, and can unleash a devastating tail slap attack, causing fire damage in a wide area.",
+    "most_powerful_ability": "Lava Bound: Allows it to exist outside of lava for limited time, affecting its form and defensive capabilities.",
+    "equipment": null,
+    "senses": "Blindsight up to 10 feet allows it to detect nearby creatures without sight.",
+    "skills": "Has a perception skill of +1, providing basic awareness of its surroundings.",
+    "additional_information": [
+        "Able to camouflage itself in volcanic terrain.",
+        "Vulnerable to bludgeoning damage when its shell hardens outside of lava.",
+        "Can enter a long hibernation if remains outside of lava too long.",
+        "Attacks can deal both bludgeoning and fire damage.",
+        "Possesses a unique molten shell ability for retaliation."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "lava creature with fiery attacks",
+        "magma monster that ambushes in volcano",
+        "fire immune monstrosity from lava",
+        "creature with molten shell and claws",
+        "Vorthropod abilities in volcanic terrain"
+    ]
+}

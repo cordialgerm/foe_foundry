@@ -1,0 +1,25 @@
+{
+    "name": "Sea Serpent",
+    "queries": [
+        {
+            "query": "large water creature with strong melee attacks that can breathe air and water",
+            "variant": "big aquatic beast with powerful physical strikes that breathes both air and water"
+        },
+        {
+            "query": "gargantuan serpent living in the ocean that has low intelligence and dexterity",
+            "variant": "huge snake found in the sea that lacks intelligence and agility"
+        },
+        {
+            "query": "monster with high strength and grappling abilities that thrives in both water and on land",
+            "variant": "creature with exceptional strength and grappling skills that survives in water and land"
+        },
+        {
+            "query": "aquatic beast with devastating bite and coils attack as well as reactive abilities",
+            "variant": "water monster with powerful biting and coiling attacks and reactive skills"
+        },
+        {
+            "query": "massive serpent enemy with special recovery capability and high hit points",
+            "variant": "huge snake foe with unique healing ability and a lot of hit points"
+        }
+    ]
+}

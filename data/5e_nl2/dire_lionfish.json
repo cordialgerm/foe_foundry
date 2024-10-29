@@ -1,0 +1,53 @@
+{
+    "name": "Dire Lionfish",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "swim 60 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "aquatic",
+        "predator",
+        "poisonous"
+    ],
+    "adjectives": [
+        "formidable",
+        "venomous",
+        "stealthy",
+        "robust"
+    ],
+    "description": "The Dire Lionfish is a large and impressive aquatic creature with poisonous spines and a streamlined body, allowing it to ambush intruders in its territory with speed and agility.",
+    "memorable": "It possesses powerful poisonous defenses and the ability to disrupt foes with pressurized water blasts.",
+    "goals": "To protect its underwater territory and prey on unsuspecting creatures.",
+    "relations": "Could be encountered with other aquatic beasts or fish within coral reefs.",
+    "environment": "Commonly found in underwater environments rich with plant life or coral reefs.",
+    "strengths": "High hit points and natural armor make it a robust opponent, while its ambush tactics and poisonous defenses deter attackers.",
+    "weaknesses": "Inability to move on land limits its versatility in combat.",
+    "attacks": "It can perform a powerful Bite and a Headbutt, both enhanced by poison damage.",
+    "most_powerful_ability": "Forceful Spit allows it to control the battlefield by pushing opponents away and potentially knocking them prone.",
+    "equipment": null,
+    "senses": "It has a passive perception of 14, helping it detect threats in its surroundings.",
+    "skills": "A +1 bonus to perception allows it to identify potential dangers effectively.",
+    "additional_information": [
+        "Charge ability increases damage when it moves towards a target and strikes.",
+        "Coral Camouflage provides advantage on stealth checks in underwater terrain.",
+        "Envenomed Spines serve as a strong deterrent against melee attackers.",
+        "Poison Affinity enhances its resilience to poison effects.",
+        "Water Breathing limits its ability to only underwater environments."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large venomous underwater predator",
+        "aquatic creature with poisonous spines",
+        "ambush predator found in coral reefs",
+        "powerful underwater creature with water blast",
+        "guardian of underwater territory with poison"
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "name": "Herald of Slaughter",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 133,
+    "ac": 15,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "chaotic",
+        "evil",
+        "manipulative"
+    ],
+    "adjectives": [
+        "formidable",
+        "brutal",
+        "resilient",
+        "malevolent"
+    ],
+    "description": "The Herald of Slaughter is a large fiend known for its chaotic evil nature, possessing strong physical characteristics and formidable combat abilities.",
+    "memorable": "The ability to turn allies against one another with its Corrupting Aura and versatile shapechanging capabilities make it a unique and dangerous foe.",
+    "goals": "To cause chaos and destruction, manipulating enemies to conflict among themselves.",
+    "relations": "May be encountered with other fiends or summoned by powerful dark forces.",
+    "environment": "Typically found in dark, desolate areas, potentially deep within the Abyss or other hellish realms.",
+    "strengths": "High resistance and immunity to various damage types and debilitating effects, making it very tough to combat.",
+    "weaknesses": "Reliant on its loyal followers to fight and can be outmaneuvered due to average Dexterity.",
+    "attacks": "Employs multiattacks including a powerful Gore attack that can knock foes prone and Cleaver attacks that deal both slashing and necrotic damage.",
+    "most_powerful_ability": "Corrupting Aura that forces nearby creatures to act hostile towards their allies.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception of 15, indicating it is fairly aware of its surroundings.",
+    "skills": "Proficient in Athletics, Deception, and Persuasion, showcasing its strength and manipulation abilities.",
+    "additional_information": [
+        "Innate spellcasting allows it to subtly influence minds.",
+        "Can polymorph into humanoids for deception.",
+        "Survivability bolstered by high Constitution and resistances."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison",
+        "psychic",
+        "cold",
+        "fire",
+        "lightning",
+        "slashing"
+    ],
+    "spellcasting": "Innate spellcaster using Charisma, capable of casting spells like Charm Person and Fear to manipulate foes.",
+    "test_queries": [
+        "large malevolent fiend with shapechanging powers",
+        "creature that causes chaos among enemies",
+        "fiend specializing in manipulation and deception",
+        "brutal creature with immunity to necrotic damage",
+        "chaotic evil fiend with a powerful aura"
+    ]
+}

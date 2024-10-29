@@ -1,0 +1,25 @@
+{
+    "name": "Gibbering Mouther",
+    "queries": [
+        {
+            "query": "grotesque creature with multiple mouths that causes confusion",
+            "variant": "creature that is grotesque with many mouths and confuses enemies"
+        },
+        {
+            "query": "mass of flesh that absorbs its victims and babbles incoherently",
+            "variant": "mass of flesh that incoherently babbles and absorbs its prey"
+        },
+        {
+            "query": "slithering aberration in a difficult terrain with psychic abilities",
+            "variant": "slithering creature in muddy terrain with mental attack powers"
+        },
+        {
+            "query": "creature with low armor class that deals piercing damage and blinds foes",
+            "variant": "creature with weak armor that inflicts piercing harm and can blind targets"
+        },
+        {
+            "query": "aberration that manipulates the battlefield with chaotic gibbering",
+            "variant": "chaotic creature that changes the battlefield with its mad gibbering"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Deathweaver",
+    "queries": [
+        {
+            "query": "huge spider-like monster that uses necrotic attacks",
+            "variant": "large monster with spider traits that uses necrotic damage"
+        },
+        {
+            "query": "deadly ambush creature that can climb and create webs",
+            "variant": "dangerous creature for ambushes that can scale surfaces and form webs"
+        },
+        {
+            "query": "menacing creature that can control web zombies and hides in webs",
+            "variant": "threatening being that commands web zombies and lurks in webbing"
+        },
+        {
+            "query": "evil monstrosity with darkvision and necrotic resistance",
+            "variant": "malevolent monster that has darkvision and is resistant to necrotic damage"
+        },
+        {
+            "query": "monster with decent strength and stealth that loves dark environments",
+            "variant": "creature with good strength and stealth skills that thrives in darkness"
+        }
+    ]
+}

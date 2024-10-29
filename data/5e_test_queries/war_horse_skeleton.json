@@ -1,0 +1,25 @@
+{
+    "name": "War Horse Skeleton",
+    "queries": [
+        {
+            "query": "undead horse that resembles a skeletal mount and can retaliate in combat",
+            "variant": "skeleton horse that looks like a mount and can counterattack during fights"
+        },
+        {
+            "query": "large undead creature with hooves that can hide as an inanimate object",
+            "variant": "big undead monster with hoof attacks that can disguise itself as a non-moving object"
+        },
+        {
+            "query": "fast undead skeleton that has strong melee attacks and is immune to poison",
+            "variant": "quick undead creature with powerful close-range strikes and poison immunity"
+        },
+        {
+            "query": "skeleton horse that is low-maintenance and dangerous in close combat",
+            "variant": "horse skeleton that requires little care and is threatening in melee"
+        },
+        {
+            "query": "barded skeleton that can move without rest and has high strength",
+            "variant": "armored skeleton that can function without sleep and possesses great physical power"
+        }
+    ]
+}

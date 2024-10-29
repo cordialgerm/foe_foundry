@@ -1,6 +1,8 @@
 <MonsterName/>Derendian Moth Abomination</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>12</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>210</HP>
 <summary>The Derendian Moth Abomination is a formidable creature in the world of Dungeons & Dragons, falling into the category of Huge monstrosities with a neutral evil alignment. This creature excels in mobility and resilience, making it a challenging adversary for any party of adventurers. With an Armor Class of 14, its natural armor provides a good level of defense. Boasting a substantial pool of Hit Points at 210, derived from a combination of 20d12+80, the Moth Abomination can withstand significant punishment in combat. Its challenge rating of 12 suggests that encounters with this creature are balanced for parties of around five characters of approximately tenth level. Notable strengths include its high Dexterity and special abilities, such as its capacity to regenerate tentacles and teleport, while weaknesses may include its lack of ranged attacks and vulnerability to persistent threats.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For legendary actions, the Derendian Moth Abomination can use up to three of the
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Derendian Moth Abomination
 
 *Huge* *Monstrosity* *neutral evil*
@@ -62,5 +65,6 @@ The Derendian moth abomination can take 3 legendary actions, choosing from the o
 - **Detect:** The abomination makes a Perception check.
 - **Pursue:** The abomination moves its flying speed.
 - **Lay Eggs (Costs 2 Actions):** The Derendian moth abomination ejects a sticky mass of eggs within 5 feet of itself. At the beginning of the abomination’s next turn, the eggs hatch as a swarm of insects that attacks the abomination’s enemies.
+</statblock>
 
 

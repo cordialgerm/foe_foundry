@@ -1,6 +1,8 @@
 <MonsterName/>Revenant</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>13</AC>
+<HP/>110</HP>
 <summary>The Revenant is a formidable undead creature designed primarily for vengeance. It serves as a relentless pursuer, utilizing its exceptional physicality and magical resistance to track down and dismantle its foes. With a decent armor class of 13 and a substantial pool of hit points totaling 110, the Revenant is both durable and quite dangerous in close combat. Its strengths lie in its high strength and charisma attributes, which enhance its combat capabilities and its ability to instill fear in its targets. However, it is vulnerable to radiant damage and has a relatively low intelligence score, making it less capable in situations requiring complex problem-solving. Overall, the Revenant poses a significant threat, especially against those who have wronged it in life.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Revenant is a relentless and powerful adversary that can significan
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Revenant
 
 *Medium* *Undead*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Burning Hatred (Recharge 4-6):** The revenant targets the focus of its Fearsome Pursuit  assuming the creature is within 30 feet. The target makes a DC 15 Wisdom saving throw. On a failure  it takes 14 (4d6) psychic damage and is paralyzed until the end of its next turn. On a success  it takes half damage and is frightened until the end of its next turn.
 
 
+</statblock>
 
 

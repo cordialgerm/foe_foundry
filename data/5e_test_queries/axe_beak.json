@@ -1,0 +1,25 @@
+{
+    "name": "Axe Beak",
+    "queries": [
+        {
+            "query": "large bird with an axe-shaped beak that runs fast",
+            "variant": "big bird that has an axe beak and can run quickly"
+        },
+        {
+            "query": "aggressive beast that is a flightless bird and swift predator",
+            "variant": "ferocious creature that cannot fly and is a fast predator"
+        },
+        {
+            "query": "large flightless bird known for slashing attacks and speed",
+            "variant": "big bird without wings recognized for quick slashing strikes"
+        },
+        {
+            "query": "beast that attacks in groups with a sharp beak and decent movement",
+            "variant": "creature that groups attack with its sharp beak and good movement speed"
+        },
+        {
+            "query": "axe beak used as a mount by raiders and tribes",
+            "variant": "axe beak that raiders and tribes ride as a mount"
+        }
+    ]
+}

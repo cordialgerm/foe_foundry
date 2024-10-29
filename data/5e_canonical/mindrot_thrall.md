@@ -1,6 +1,8 @@
 <MonsterName/>Mindrot Thrall</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Mindrot Thrall is a Medium-sized Plant creature that embodies the eerie and unsettling nature of fungal entities. Serving as a formidable yet necrotic combatant, it possesses a strong physical defense with an Armor Class of 15 and a significant pool of Hit Points totaling 82, giving it good durability in battle. With a Challenge Rating of 3, it offers a moderate threat to adventurers, providing 700 experience points upon defeat. While the Mindrot Thrall excels in spreading its mindrot disease through its abilities, it is vulnerable to specific damage types, making it essential for players to strategize accordingly. With an average Intelligence but good physical attributes, it showcases remarkable constitution and dexterity, with respective values of 17 (+3) and 14 (+2), which translates to a good resilience and agility in combat. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ Overall, the Mindrot Thrall serves as an effective enforcer of its fungal diseas
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mindrot Thrall
 
 *Medium* *Plant* *Neutral*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The mindrot thrall makes two Claw attacks.
 - **Claw:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.
 - **Spore Breath (Recharge 4–6):** The thrall exhales a blast of acidic spores from its rotten lungs in a 15-foot cone. Each creature in the area must make a DC 13 Dexterity saving throw. On a failure, a creature takes 18 (4d8) acid damage and is infected with the mindrot disease (see the Mindrot trait). On a success, a creature takes half the damage and isn’t infected.
+</statblock>
 
 

@@ -1,0 +1,50 @@
+{
+    "name": "Nightgaunt",
+    "creature_type": "Aberration",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 142,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "fly 60 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dream hunter",
+        "aberration"
+    ],
+    "adjectives": [
+        "formidable",
+        "stealthy",
+        "intimidating"
+    ],
+    "description": "The Nightgaunt is a large aberration with an eerie presence, characterized by its stealth and terror-inducing abilities as it hunts dreams.",
+    "memorable": "It is not only tough but also utilizes psychological tactics to cripple its foes.",
+    "goals": "Hunting dreams and instilling fear in its enemies.",
+    "relations": "Often encountered with other nightmare-inducing creatures, capable of coordinating with allies due to its Pack Tactics.",
+    "environment": "Typically found in areas associated with nightmares or dark, dream-like realms.",
+    "strengths": "Excels in ambush tactics utilizing stealth, psychological terror, and teamwork.",
+    "weaknesses": "Low Intelligence restricts complex strategies or interactions.",
+    "attacks": "Employs sharp Clutching Claws for grappling and a poisonous Barbed Tail to deal significant damage.",
+    "most_powerful_ability": "Baneful Presence, imposing disadvantage on foes within its vicinity.",
+    "senses": "Possesses blindsight out to 120 feet, making it highly aware of its surroundings.",
+    "skills": "Excels in Stealth, allowing it to remain undetected during ambushes.",
+    "additional_information": [
+        "Has advantage on saving throws against spells due to Magic Resistance.",
+        "Can fly without provoking opportunity attacks through Flyby ability.",
+        "Uses Pack Tactics to gain advantage on attacks when allies are nearby.",
+        "Grants a significant psychological disadvantage to enemies with Baneful Presence.",
+        "Grapples its prey effectively, restraining them with its Clutching Claws."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large stealthy monster that hunts dreams",
+        "intimidating entity that instills fear and grapples",
+        "nightmare creature with poisonous barbed tail",
+        "aberration that excels in ambush tactics",
+        "formidable foe with magical resistance and stealth"
+    ]
+}

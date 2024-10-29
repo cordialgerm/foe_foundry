@@ -1,0 +1,52 @@
+{
+    "name": "Sentinel in Darkness",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 127,
+    "ac": 13,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": "Defender",
+    "tags": [
+        "guardians",
+        "construct",
+        "aberration",
+        "darkvision"
+    ],
+    "adjectives": [
+        "imposing",
+        "formidable",
+        "resilient",
+        "dark"
+    ],
+    "description": "A large, unaligned construct notable for its imposing stature and formidable combat abilities, featuring enhanced perception and impressive strength.",
+    "memorable": "Excels in combat against those with darkvision, blindsight, or truesight, and manipulates the environment to increase navigational challenges.",
+    "goals": "To serve as a guardian and actively prevent intruders from accessing hidden pathways or knowledge.",
+    "relations": "Can be tied to constructs or entities that exist in dark domains or protect knowledge.",
+    "environment": "Typically found in darkened domains, where it acts as a guardian.",
+    "strengths": "Highly resilient to nonmagical damage, immune to several debilitating conditions, and possesses powerful offensive capabilities.",
+    "weaknesses": "Low Dexterity reduces its mobility and ability to evade attacks.",
+    "attacks": "Utilizes powerful stone fist attacks that deal significant bludgeoning damage.",
+    "most_powerful_ability": "Curse of the Wanderer, which halves the speed and prevents healing of the target, also causing psychic damage over time.",
+    "equipment": null,
+    "senses": "Has truesight out to 60 ft. and a passive Perception of 17.",
+    "skills": "Exceptional perception skills, with a bonus of +7.",
+    "additional_information": [
+        "Advantage on attack rolls against creatures with enhanced vision.",
+        "Increased difficulty for others to detect secret doors and illusory walls.",
+        "Can teleport small objects from opponents when successfully attacking.",
+        "Has several immunities, including to poison damage.",
+        "Low intelligence and charisma scores."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "construct guardian with powerful vision abilities",
+        "resilient creature that manipulates hidden pathways",
+        "dark domain sentinel immune to poison",
+        "large construct that halves enemy speed",
+        "formidable foe with stone fist attacks"
+    ]
+}

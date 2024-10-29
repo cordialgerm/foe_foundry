@@ -1,0 +1,56 @@
+{
+    "name": "Ichneumon",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 123,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "fast movement with a walking speed of 50 feet",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "bruiser",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "agile"
+    ],
+    "description": "The Ichneumon is a Large creature with impressive physical attributes, displaying exceptional strength and dexterity, showcasing powerful melee attacks.",
+    "memorable": "It can evade damage with its Evasion ability and is particularly dangerous against dragons due to its Draconic Predator ability.",
+    "goals": "To hunt down prey and engage in combat with formidable foes.",
+    "relations": "Could be encountered alongside other monstrous creatures and potentially rivals to dragons.",
+    "environment": "Typically found in varied environments suitable for monstrous life, particularly those with predators.",
+    "strengths": "High Strength and Dexterity scores provide it with powerful attacks and good evasiveness, along with multiple damage resistances.",
+    "weaknesses": "Low Intelligence may hinder its problem-solving abilities and strategic planning.",
+    "attacks": "Uses powerful bite and claw attacks; can grapple targets with its bite, restraining them.",
+    "most_powerful_ability": "Draconic Predator grants immunity to dragons' frightful presence and advantage on saving throws against breath weapons.",
+    "equipment": null,
+    "senses": "Has Keen Hearing and Smell, granting an advantage on Perception checks reliant on these senses.",
+    "skills": "Proficient in Acrobatics, Athletics, Stealth, and Survival, showcasing strong physical competence.",
+    "additional_information": [
+        "Mud Armor ability increases AC when mud is applied.",
+        "Resists damage from multiple types including acid, cold, fire, lightning, and poison.",
+        "Excels in grappling enemies, severely limiting their ability to act.",
+        "High mobility with the ability to move swiftly in combat.",
+        "Surprisingly agile despite its large size."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large formidable monster with keen senses",
+        "monster that attacks with powerful bites and claws",
+        "agile creature that grapples its prey",
+        "resilient creature with multiple damage resistances",
+        "fast-moving predator with immunity to dragon powers"
+    ]
+}

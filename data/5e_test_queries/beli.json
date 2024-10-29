@@ -1,0 +1,25 @@
+{
+    "name": "Beli",
+    "queries": [
+        {
+            "query": "small fey creature that can fly and regenerates in the cold",
+            "variant": "small creature that flys and regenerates in icy areas"
+        },
+        {
+            "query": "stealthy fey that is immune to cold and vulnerable to fire",
+            "variant": "stealthy fey immune to cold damage and weak against fire"
+        },
+        {
+            "query": "cunning predator that attacks with ice and thrives in snowy environments",
+            "variant": "clever predator attacking with ice in snowy terrains"
+        },
+        {
+            "query": "agile monster with darkvision that prefers icy terrain",
+            "variant": "agile creature with night vision that likes cold areas"
+        },
+        {
+            "query": "fey with cold regeneration ability and flying attacks",
+            "variant": "fey having cold regneration and flying abilities"
+        }
+    ]
+}

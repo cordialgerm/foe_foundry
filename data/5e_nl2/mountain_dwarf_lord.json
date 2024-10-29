@@ -1,0 +1,50 @@
+{
+    "name": "Mountain Dwarf Lord",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 171,
+    "ac": 20,
+    "srd": false,
+    "cr": "14",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dwarf",
+        "warrior",
+        "tank"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "battle-hardened"
+    ],
+    "description": "The Mountain Dwarf Lord is a robust humanoid warrior clad in heavy armor, wielding a battleaxe and a composite longbow, showcasing notable strength and resilience.",
+    "memorable": "Possesses magic resistance and the ability to inspire allies, making it a formidable presence on the battlefield.",
+    "goals": "To lead and inspire allies while protecting them in combat.",
+    "relations": "Related to other dwarven warriors and potentially leading allied forces in battle.",
+    "environment": "Typically found in mountainous regions or fortresses, often in the company of other dwarf warriors.",
+    "strengths": "High armor class and hit points, multiple attacks, and powerful buffing abilities for allies.",
+    "weaknesses": "Susceptible to magical effects that bypass resistance, and has limited dexterity and intelligence.",
+    "attacks": "Four strikes with a powerful battleaxe each turn, and a ranged attack with a longbow for distance engagements.",
+    "most_powerful_ability": "Knightly Inspiration, providing crucial buffs to allies to enhance their combat effectiveness.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 18, indicating heightened awareness.",
+    "skills": "Skilled in athletics, history, and perception, allowing it to excel in both physical challenges and awareness of surroundings.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Reduced damage from nonmagical weapons due to Superior Heavy Armor Master.",
+        "The ability to command allies to strike effectively during combat.",
+        "Can impose disadvantage on attacks against itself or nearby allies with Shield Block.",
+        "Capable of inspiring allies to increase their chances of success in critical moments."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "dwarf warrior with heavy armor and an axe",
+        "fortress-dwelling sturdy dwarf leader",
+        "mountain protector with magical resistance",
+        "formidable melee fighter that inspires allies",
+        "knight capable of commanding allies on a battlefield"
+    ]
+}

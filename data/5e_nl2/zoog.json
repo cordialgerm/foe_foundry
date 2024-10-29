@@ -1,0 +1,50 @@
+{
+    "name": "Zoog",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Tiny",
+    "hp": 3,
+    "ac": 13,
+    "srd": false,
+    "cr": "0",
+    "movement": "climb 30 ft., walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "aberration",
+        "stealthy",
+        "nuisance"
+    ],
+    "adjectives": [
+        "malevolent",
+        "cunning",
+        "chaotic"
+    ],
+    "description": "The Zoog is a tiny aberration characterized by its chaotic evil nature, featuring high Dexterity and a climbing speed, enabling stealthy movement and versatile attacks.",
+    "memorable": "Despite its low hit points and Strength, its high Dexterity allows it to evade attacks and launch stealthy ambushes.",
+    "goals": "To cause annoyance and chaos, often attacking from stealth or climbing to gain the upper hand.",
+    "relations": "Potentially interacts with other evil creatures or cultists that share its malevolent goals.",
+    "environment": "Typically found in dark or shady places where it can stalk its prey quietly.",
+    "strengths": "High Dexterity and climbing speed enable effective stealth and escape.",
+    "weaknesses": "Very low Strength and low hit points make it physically fragile and vulnerable to damage.",
+    "attacks": "The Zoog has a melee Bite attack that deals 1 piercing damage with a good chance of hitting due to its high Dexterity.",
+    "most_powerful_ability": "Its stealth abilities enable it to ambush opponents successfully, catching them off guard.",
+    "equipment": null,
+    "senses": "Possesses darkvision within a range of 60 feet, allowing it to see in dim light as if it were bright light.",
+    "skills": "Notably skilled in Stealth, it has a +5 bonus, making it very effective at remaining unnoticed.",
+    "additional_information": [
+        "Low Strength leads to ineffectiveness in physical combat.",
+        "Chaotic evil nature drives its malevolent actions.",
+        "Relies on stealth rather than brute force.",
+        "Uses climbing ability to gain advantageous positions.",
+        "Often more of a nuisance than a real threat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny malevolent climbing monster",
+        "stealthy creature with high Dexterity",
+        "chaotic evil tiny aberration",
+        "ambushing creature with low Strength",
+        "Zoog climbing and attacking from stealth"
+    ]
+}

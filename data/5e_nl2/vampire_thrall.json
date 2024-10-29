@@ -1,0 +1,49 @@
+{
+    "name": "Vampire Thrall",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any lineage",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 40,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 ft., climb 10 ft.",
+    "role": "Supporter",
+    "tags": [
+        "undead",
+        "minion",
+        "vampire"
+    ],
+    "adjectives": [
+        "loyal",
+        "stealthy",
+        "blood-bound"
+    ],
+    "description": "A medium humanoid serving as a minion to powerful vampires, exhibiting heightened speed and stealth with a capability to climb surfaces easily.",
+    "memorable": "Highly reliant on vampire blood for maintaining its powers. Becomes weakened in sunlight and can regenerate hit points.",
+    "goals": "To serve its vampire master and protect it in battle.",
+    "relations": "Often found alongside more powerful vampires.",
+    "environment": "Typically found in dark places where vampires reside.",
+    "strengths": "Enhanced mobility and regeneration capabilities, excels in stealth.",
+    "weaknesses": "Vulnerable to radiant damage and sunlight; abilities diminish without regular consumption of vampire blood.",
+    "attacks": "Can perform a multiattack with a rapier, dealing piercing damage effectively.",
+    "most_powerful_ability": "Repay the Gift, allowing it to sacrifice its own health to save a nearby vampire.",
+    "equipment": null,
+    "senses": "Possesses darkvision, perceiving well in dim light and darkness.",
+    "skills": "Notably skilled in Stealth, enabling it to surprise enemies.",
+    "additional_information": [
+        "Can climb difficult surfaces without difficulty.",
+        "Becomes poisoned and loses traits if it doesn't consume vampire blood weekly.",
+        "Suffers from Sunlight Sensitivity, impacting attack rolls and perception."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "loyal minion of a vampire",
+        "stealthy humanoid with climbing ability",
+        "undead creature that regenerates health",
+        "vulnerable creature in sunlight",
+        "blood-bound servant of powerful vampires"
+    ]
+}

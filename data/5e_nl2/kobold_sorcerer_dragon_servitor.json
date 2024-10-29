@@ -1,0 +1,52 @@
+{
+    "name": "Kobold Sorcerer Dragon Servitor",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 27,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walking speed",
+    "role": "Artillery",
+    "tags": [
+        "spellcaster",
+        "servitor",
+        "draconic"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "spellcasting"
+    ],
+    "description": "A small humanoid creature with draconic features, serves powerful dragons as a spellcaster and assistant. It has a good Dexterity but low physical strength, making it more suited for ranged attacks.",
+    "memorable": "Its ability to change the damage type of its Flame Bolt based on its dragon master's breath weapon makes it a unique threat.",
+    "goals": "To serve and protect its dragon master, often using cunning and magic to overcome foes.",
+    "relations": "Often seen in the company of dragons, serving as minions or assistants to more powerful draconic beings.",
+    "environment": "Commonly found in regions where dragons reside, such as caves or mountainous areas.",
+    "strengths": "Possesses strong spellcasting abilities, agility to evade attacks, and versatility in damage types.",
+    "weaknesses": "Very low Strength score hampers physical combat effectiveness, making it vulnerable in melee situations.",
+    "attacks": "Uses Flame Bolt as a ranged attack and a Shiv for minor melee attacks, offering flexibility in combat.",
+    "most_powerful_ability": "Innate spellcasting allows access to spells like charm person and mage armor, enhancing its defensive and coercive capabilities.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, allowing it to see in low light.",
+    "skills": "Proficient in arcana and intimidation, making it knowledgeable in magic and effective in coercing others.",
+    "additional_information": [
+        "Changes Flame Bolt damage type to match its dragon master's breath weapon.",
+        "Can cast spells without needing material components.",
+        "Uses expeditious retreat to enhance mobility in combat.",
+        "Moderate challenge when encountered in groups.",
+        "Effective at ranged attacks with decent spell save DC."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting based on Charisma with spells like mage hand and charm person.",
+    "test_queries": [
+        "small humanoid serving dragons with magic",
+        "agile kobold spellcaster with fire attacks",
+        "creature that influences others with charm",
+        "dragon servitor with spellcasting abilities",
+        "Kobold with unique fire damage spells"
+    ]
+}

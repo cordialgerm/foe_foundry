@@ -1,0 +1,52 @@
+{
+    "name": "Hulking Whelp",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Neutral",
+    "size": "Small",
+    "hp": 94,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "40 feet walking speed",
+    "role": null,
+    "tags": [
+        "fey",
+        "shapechanger",
+        "canine"
+    ],
+    "adjectives": [
+        "hulking",
+        "chaotic",
+        "fearful"
+    ],
+    "description": "The Hulking Whelp is a small fey creature capable of transforming between a whelp and a hulking canine form, showcasing extraordinary strength and resilience.",
+    "memorable": "It can shift between two distinct forms and has a unique emotional response mechanism, making it unpredictable in combat.",
+    "goals": "Typically aggressive but can be calmed by peaceful interaction.",
+    "relations": "Could be encountered alongside other fey or chaotic creatures.",
+    "environment": "Prefers forested or wild areas typical for fey creatures.",
+    "strengths": "Extraordinary physical strength and resistance to most nonmagical damage.",
+    "weaknesses": "Low intelligence limits strategic capabilities, and it is susceptible to emotional manipulation.",
+    "attacks": "Can deliver two powerful Slam attacks in a single turn.",
+    "most_powerful_ability": "Unleashed Emotion forces it to attack the nearest creature every turn.",
+    "equipment": null,
+    "senses": "Possesses passive perception of 12, allowing it to detect hidden threats somewhat effectively.",
+    "skills": null,
+    "additional_information": [
+        "Transitional ability to shift shape enhances unpredictability in encounters.",
+        "Successful emotional persuasion can revert it to a less aggressive form.",
+        "Frightened Anger reduces its effectiveness against emotional magic.",
+        "Always attacks the nearest creature, even objects, when no targets are available.",
+        "Defensive transformation allows for a reactive change in form when threatened."
+    ],
+    "damage_types": [
+        "nonmagical"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shape-shifting fey creature with extraordinary strength",
+        "small chaotic fey that transforms into a hulking canine",
+        "aggressive emotional canine fey with unique abilities",
+        "unstable creature that can become hulking and angry",
+        "fey creature that can be calmed through persuasion"
+    ]
+}

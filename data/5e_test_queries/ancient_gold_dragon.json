@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Gold Dragon",
+    "queries": [
+        {
+            "query": "majestic dragon with golden scales and fire breath",
+            "variant": "majestic dragon golden scales and fire breath"
+        },
+        {
+            "query": "gargantuan dragon that protects the innocent",
+            "variant": "gargantuan dragon protecting the innocent"
+        },
+        {
+            "query": "powerful dragon that can breathe fire and weaken enemies",
+            "variant": "powerful dragon breathe fire and weaken enemies"
+        },
+        {
+            "query": "intelligent dragon that speaks Draconic and uses spells",
+            "variant": "intelligent dragon speaks Draconic uses spells"
+        },
+        {
+            "query": "dragon living in high mountains with legendary abilities",
+            "variant": "dragon in high mountains legendary abilities"
+        }
+    ]
+}

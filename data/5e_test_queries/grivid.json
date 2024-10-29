@@ -1,0 +1,25 @@
+{
+    "name": "Grivid",
+    "queries": [
+        {
+            "query": "large aberration with parasitic worms that heals itself",
+            "variant": "big aberration that has worms for parasites and can heal"
+        },
+        {
+            "query": "creature with significant poison damage that can inflict infestation",
+            "variant": "monster that inflicts infestation and has strong poison attacks"
+        },
+        {
+            "query": "monster with low intelligence using parasitic abilities to survive",
+            "variant": "creature that survives using parasite powers and has low smarts"
+        },
+        {
+            "query": "neutral aberration with strong bite and multiple attack types",
+            "variant": "neutral monster that has a powerful bite and many ways to attack"
+        },
+        {
+            "query": "durable creature with high hit points inflicting poison damage",
+            "variant": "tough being with a lot of HP and can deal poison damage"
+        }
+    ]
+}

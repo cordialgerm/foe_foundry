@@ -1,0 +1,25 @@
+{
+    "name": "Bone Collector",
+    "queries": [
+        {
+            "query": "small undead creature that curses prey and flies",
+            "variant": "small creature undead that flies and curses its prey"
+        },
+        {
+            "query": "undead monster with talons that can inflict disease",
+            "variant": "monster with talons undead that can cause disease"
+        },
+        {
+            "query": "creature characterized by darkvision and flying ability",
+            "variant": "darkvision creature with flying capabilities"
+        },
+        {
+            "query": "low hit point undead that uses magic resistance in combat",
+            "variant": "undead creature with low hp that uses magic resistance"
+        },
+        {
+            "query": "Bone Collector abilities including Call of the Grave and Bad Omen",
+            "variant": "abilities of Bone Collector like Bad Omen and Call of the Grave"
+        }
+    ]
+}

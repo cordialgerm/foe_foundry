@@ -1,0 +1,25 @@
+{
+    "name": "Giant Flea",
+    "queries": [
+        {
+            "query": "small blood-draining beast that can jump high",
+            "variant": "blood sucking small creature that jumps high"
+        },
+        {
+            "query": "agile monster with blindsight and damage resistance",
+            "variant": "quick creature with blindsight and resistance to bludgeoning"
+        },
+        {
+            "query": "creature that attaches to prey and causes blood loss",
+            "variant": "monster that latches on and drains blood from its victim"
+        },
+        {
+            "query": "flea that can leap 30 feet and detect blood",
+            "variant": "jumping flea that pinpoints creatures with blood"
+        },
+        {
+            "query": "beast with natural armor and impressive climbing ability",
+            "variant": "creature with good defense and great climbing skills"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Grivid",
+    "creature_type": "Aberration",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 180,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 50 ft.",
+    "role": null,
+    "tags": [
+        "parasitic",
+        "healing",
+        "infestation"
+    ],
+    "adjectives": [
+        "unique",
+        "durable",
+        "poisonous",
+        "dangerous"
+    ],
+    "description": "The Grivid is a large aberration characterized by its parasitic cheek worms and robust natural armor. It has a distinct appearance that reflects its unique abilities.",
+    "memorable": "The Grivid can poison its enemies while healing itself from their afflictions through its infestation abilities.",
+    "goals": "The Grivid generally seeks to infest creatures and sustain itself through parasitic feeding.",
+    "relations": "Typically encountered alone, but may be found in regions where other aberrations dwell.",
+    "environment": "Often found in dark, damp, and secluded areas where it can ambush unsuspecting prey.",
+    "strengths": "It can regenerate health through its infestation, making it a formidable opponent in prolonged encounters.",
+    "weaknesses": "Notably low intelligence and charisma hinder its mental capabilities and social interactions.",
+    "attacks": "The Grivid can make a multiattack with a powerful bite that inflicts piercing and poison damage, and a kick that can knock opponents prone. Additionally, it has a ranged spit attack that spreads its parasitic influence.",
+    "most_powerful_ability": "Worm Regeneration allows the Grivid to heal significantly by infesting other creatures.",
+    "equipment": null,
+    "senses": "It has tremorsense up to 60 feet, allowing it to detect movements in its vicinity.",
+    "skills": "Proficient in perception, providing it with a notable awareness of its surroundings.",
+    "additional_information": [
+        "Can store and regrow parasitic worms after a long rest.",
+        "Uses a bonus action to consume worms for health regeneration.",
+        "Inflicts ongoing poison damage on infested creatures.",
+        "Advantage on perception checks related to sight.",
+        "Requires strategic planning to combat effectively."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large parasitic monster with healing abilities",
+        "creature that infests and poisons enemies",
+        "dangerous aberration with unique worm attacks",
+        "monster that can heal by infesting others",
+        "creature with strong natural armor and poison"
+    ]
+}

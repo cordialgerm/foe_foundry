@@ -1,0 +1,55 @@
+{
+    "name": "Clockwork Weaving Spider",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 30,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "40 feet walk speed",
+    "role": "null",
+    "tags": [
+        "construct",
+        "mechanical",
+        "spider",
+        "agile"
+    ],
+    "adjectives": [
+        "tiny",
+        "clockwork",
+        "nimble",
+        "resilient"
+    ],
+    "description": "A tiny construct with intricate clockwork design, resembling a mechanical spider. It possesses sharp blades and needles for attacks, exhibiting exceptional mobility.",
+    "memorable": "Its ability to damage nonmagical items and paralyze targets makes it a unique threat in combat.",
+    "goals": "To engage in combat and disable or ruin opponents' equipment.",
+    "relations": "May be found among construct or machinery-related creatures or serve trap makers.",
+    "environment": "Typically encountered in mechanical environments or as guardians of valuable items.",
+    "strengths": "Immunity to poison, psychic damage, and various conditions such as paralysis or charm effects.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma scores limit its understanding and interaction capabilities.",
+    "attacks": "Uses Trimming Blade for slashing damage and Poisoned Needle Shuttle for ranged piercing damage with a paralyzing effect.",
+    "most_powerful_ability": "The 'Unmaking' ability allows it to damage nonmagical items, making it a strategic combatant.",
+    "equipment": "null",
+    "senses": "Has darkvision up to 60 feet and a passive perception of 13.",
+    "skills": "Proficient in Acrobatics with a +5 modifier, making it highly agile.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep.",
+        "Immune to effects that alter its form.",
+        "Advantage on saving throws against spells.",
+        "Can execute multiple attacks in one turn.",
+        "Fast and able to evade attacks due to high Dexterity."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical spider that damages equipment",
+        "tiny construct with paralyzing needle attacks",
+        "clockwork spider immune to charm effects",
+        "agile spider that doesn't need food or sleep",
+        "nimble clockwork construct hiding in machinery"
+    ]
+}

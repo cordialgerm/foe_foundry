@@ -1,0 +1,53 @@
+{
+    "name": "Bunyip",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 150,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 20 ft. swim 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "predator",
+        "fear-inducing"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "aquatic"
+    ],
+    "description": "The Bunyip is a huge aquatic beast characterized by its powerful physique, with notable Strength and Constitution scores that enhance its melee attacks and resilience. It strikes with a massive bite and daunting slams.",
+    "memorable": "Its terrifying howl can instill fear and restrain unsuspecting foes, allowing it to gain a significant advantage in combat.",
+    "goals": "To dominate its territory as a formidable aquatic predator, hunting and intimidating prey in its environment.",
+    "relations": "Related to other aquatic predators, and potentially encountered with creatures of similar habitats, such as crocodiles or large fish.",
+    "environment": "Typically found in wilderness areas near water bodies such as lakes or rivers.",
+    "strengths": "Exceptional swimming capabilities, powerful melee attacks, and the ability to frighten and restrain opponents.",
+    "weaknesses": "Very low Intelligence limits problem-solving abilities, making it reliant on brute strength.",
+    "attacks": "Can make a fierce bite for piercing damage and powerful slams for bludgeoning damage, including grappling victims to restrict their movement.",
+    "most_powerful_ability": "Terrifying Howl, which can frighten multiple foes and disrupt their actions in battle.",
+    "equipment": null,
+    "senses": "Has keen hearing and smell, providing it an advantage on perception checks related to those senses.",
+    "skills": "Noteworthy in athletics and stealth, allowing it to ambush prey effectively.",
+    "additional_information": [
+        "Brave trait provides advantage on saving throws against fear.",
+        "Holds breath for up to an hour, aiding in underwater challenges.",
+        "Can grapple and restrain foes with its bite.",
+        "Above-average Dexterity allows for moderate evasion.",
+        "Resistant to cold and thunder types of damage."
+    ],
+    "damage_types": [
+        "cold",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge aquatic predator with a terrifying howl",
+        "powerful beast that swims and grapples",
+        "aquatic creature with strong melee attacks",
+        "monster that can frighten its enemies",
+        "beast that dominates water territories"
+    ]
+}

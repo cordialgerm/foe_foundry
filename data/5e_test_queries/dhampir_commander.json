@@ -1,0 +1,25 @@
+{
+    "name": "Dhampir Commander",
+    "queries": [
+        {
+            "query": "vampiric humanoid that inspires allies in battle",
+            "variant": "humanoid monster that inspires allies in combat with vampiric traits"
+        },
+        {
+            "query": "medium dhampir that has necrotic resistance and darkvision",
+            "variant": "medium-sized dhampir with resistance to necrotic damage and darkvision abilities"
+        },
+        {
+            "query": "Dhampir leader with charisma and melee attack abilities",
+            "variant": "charismatic Dhampir commander skilled in melee combat and tactics"
+        },
+        {
+            "query": "monster that grants bonus actions to allies while fighting",
+            "variant": "creature that allows allies to make bonus melee attacks during combat"
+        },
+        {
+            "query": "commanding undead resistant humanoid skilled in persuasion and deception",
+            "variant": "authoritative humanoid with resilience to undead damage and skills in deception and charm"
+        }
+    ]
+}

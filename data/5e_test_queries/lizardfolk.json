@@ -1,0 +1,25 @@
+{
+    "name": "Lizardfolk",
+    "queries": [
+        {
+            "query": "reptilian humanoid creature that lives in swamps and uses stealth tactics",
+            "variant": "reptilian humanoid with stealth tactics that dwells in swamps"
+        },
+        {
+            "query": "lizardfolk with strong perception who can hold their breath for long",
+            "variant": "lizardfolk that can hold breath for long periods with great perception"
+        },
+        {
+            "query": "medium-sized monster skilled in combat and aquatic adaptability",
+            "variant": "medium monster adept in combat with aquatic skills"
+        },
+        {
+            "query": "monster that uses a bite and a club, known for ambushing enemies in water",
+            "variant": "monster known for ambushing foes in water using a club and bite attacks"
+        },
+        {
+            "query": "creature with scales that prefers marshy environments and has a survivalist mentality",
+            "variant": "scaled creature with a survivalist approach that dwells in marshes"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Fragrite",
+    "queries": [
+        {
+            "query": "elemental creature that can transform into sand and glass",
+            "variant": "creature that transforms into sand and glass elemental"
+        },
+        {
+            "query": "medium-sized creature weak to thunder that uses camouflage in sand",
+            "variant": "medium creature using camouflage in sandy terrain that's weak to thunder"
+        },
+        {
+            "query": "monster with explosive abilities that deals slashing damage",
+            "variant": "monster that deals slashing damage with explosive abilities"
+        },
+        {
+            "query": "sand and glass elemental with high hit points and multiple attacks",
+            "variant": "elemental monster with multiple attacks and high hit points made of sand and glass"
+        },
+        {
+            "query": "chaotic neutral elemental that can burrow through sand without disturbance",
+            "variant": "neutral chaotic elemental that can easily burrow through sand"
+        }
+    ]
+}

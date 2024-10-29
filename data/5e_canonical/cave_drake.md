@@ -1,6 +1,8 @@
 <MonsterName/>Cave Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Cave Drake is a large neutral dragon with a formidable presence in any subterranean environment. Its armor class of 13, bolstered by natural armor, along with its considerable hit points totaling 95, makes it a tough opponent. Rated with a challenge difficulty of 3 and providing 700 experience points, the Cave Drake is well-suited for encounters designed for moderate-level adventurers. It boasts notable strengths in melee combat with a strong physical build and advantageous abilities that enhance its stealth and surprise attack potential. However, its intelligence is low, which can limit its strategic capabilities in more complex encounters.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, the Cave Drake can use a ranged ability called "Blinding Spit," wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Drake
 
 *Large* *Dragon* *neutral*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Blinding Spit (Recharge 5-6):** Ranged Weapon Attack: +4 to hit, range 30 ft., one target. Hit: The target is poisoned for 1 minute and must succeed on a DC 13 Constitution saving throw or be blinded while poisoned in this way.
 
 
+</statblock>
 
 

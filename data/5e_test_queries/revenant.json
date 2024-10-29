@@ -1,0 +1,25 @@
+{
+    "name": "Revenant",
+    "queries": [
+        {
+            "query": "undead creature with a burning hatred ability and vampire-like pursuit",
+            "variant": "undead monster with burning hate power and vampire-like tracking"
+        },
+        {
+            "query": "powerful undead with immunity to certain conditions and high strength",
+            "variant": "strong undead resistant to several conditions and with high strength"
+        },
+        {
+            "query": "revenant that can track foes and regenerate health quickly",
+            "variant": "revenant that hunts targets and recovers health fast"
+        },
+        {
+            "query": "undead that grapples foes and has psychic attack abilities",
+            "variant": "undead that grapples enemies and uses psychic powers"
+        },
+        {
+            "query": "relentless undead monster capable of resurrection with low intelligence",
+            "variant": "unstoppable undead creature that can revive itself and has low IQ"
+        }
+    ]
+}

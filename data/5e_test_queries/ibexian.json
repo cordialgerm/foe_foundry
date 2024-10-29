@@ -1,0 +1,25 @@
+{
+    "name": "Ibexian",
+    "queries": [
+        {
+            "query": "large chaotic evil fiend with fiery attacks and high speed",
+            "variant": "big chaotic evil fiend that attacks with fire and is very fast"
+        },
+        {
+            "query": "fiend with darkvision that unleashes fiery blood when damaged",
+            "variant": "fiend that has darkvision and releases fire when it gets hurt"
+        },
+        {
+            "query": "monster with multiple fire attacks living in a dark environment",
+            "variant": "creature with various fire attacks that resides in darkness"
+        },
+        {
+            "query": "Ibexian abilities like fiery charge and pack tactics",
+            "variant": "abilities of the ibexian such as fiery charge and pack tactics"
+        },
+        {
+            "query": "strong monster with fire immunity and melee attacks",
+            "variant": "powerful creature that is immune to fire and uses melee attacks"
+        }
+    ]
+}

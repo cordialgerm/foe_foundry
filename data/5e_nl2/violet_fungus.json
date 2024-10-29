@@ -1,0 +1,53 @@
+{
+    "name": "Violet Fungus",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 18,
+    "ac": 5,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "slow and limited to 5 feet",
+    "role": null,
+    "tags": [
+        "plant",
+        "fungus",
+        "carnivorous",
+        "hazard"
+    ],
+    "adjectives": [
+        "carnivorous",
+        "toxic",
+        "ambush"
+    ],
+    "description": "A dangerous, carnivorous plant with long spongy stalks ending in whiplike tendrils, resembling ordinary fungi when motionless.",
+    "memorable": "Can perfectly mimic normal fungus and inflicts necrotic damage.",
+    "goals": "Ambush unsuspecting creatures and absorb nutrients from their decaying remains.",
+    "relations": "Often found in clusters, posing a greater threat in dungeon settings.",
+    "environment": "Dark caves or underground caverns.",
+    "strengths": "Immunity to various conditions and the ability to blend into surroundings.",
+    "weaknesses": "Very low physical attributes, particularly vulnerable to fire.",
+    "attacks": "Utilizes Rotting Touch to inflict necrotic damage with a reach of 10 feet.",
+    "most_powerful_ability": "False Appearance allows it to remain motionless and blend in with its environment.",
+    "equipment": null,
+    "senses": "Has blindsight out to 30 feet, enabling it to perceive without vision.",
+    "skills": null,
+    "additional_information": [
+        "Vulnerable to fire, taking double damage.",
+        "Condition immunities include being blinded, charmed, frightened, and more.",
+        "Can use Necrotic Spores to damage nearby creatures.",
+        "Regularly poses threats to adventurers in confined spaces.",
+        "Notable for its ability to deceive with its appearance."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "carnivorous plant in dark caves",
+        "dangerous fungus with toxic spores",
+        "fungus that blends in with surroundings",
+        "plant creature that ambushes adventurers",
+        "toxic spore monster from underground"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Simhamukha",
+    "creature_type": "Celestial",
+    "alignment": "chaotic good",
+    "size": "Huge",
+    "hp": 115,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "chaotic",
+        "magical"
+    ],
+    "adjectives": [
+        "powerful",
+        "radiant",
+        "formidable"
+    ],
+    "description": "The Simhamukha is a huge celestial creature with a majestic and imposing form, known for its magical ability and fierce combat prowess. It wields a kartika and possesses a dangerous bite that can decapitate foes.",
+    "memorable": "It can deal radiant damage through its Smite ability and create frightening illusions, adding a psychological edge to its combat.",
+    "goals": "The Simhamukha seeks to protect the innocent and uphold chaotic good ideals, often intervening in conflicts.",
+    "relations": "This creature may be encountered alongside other celestial beings or magical creatures.",
+    "environment": "The Simhamukha is typically found in areas rich in magic or near places where good forces gather.",
+    "strengths": "It has a high damage output, immunity to several damage types, and advantage on saving throws against spells.",
+    "weaknesses": "It can be overwhelmed by multiple foes, especially if it cannot utilize its magical defenses.",
+    "attacks": "It can use a multiattack with its kartika and bite, applying radiant damage through its Smite ability.",
+    "most_powerful_ability": "The Weird ability creates frightening illusions that can cause creatures to become frightened and take psychic damage.",
+    "equipment": "kartika",
+    "senses": "The Simhamukha possesses truesight up to 120 feet, allowing it to see through illusions and detect hidden foes.",
+    "skills": "It has a notable proficiency in Perception, with a +6 skill modifier.",
+    "additional_information": [
+        "Immunities to necrotic, poison, and radiant damage",
+        "Resistance to cold, fire, lightning, and psychic damage",
+        "Can cast magic spells at will without material components",
+        "Can create a stunning area effect with its Staff Sweep",
+        "Decapitates foes who are reduced to 0 hit points with its bite"
+    ],
+    "damage_types": [
+        "radiant",
+        "psychic"
+    ],
+    "spellcasting": "The Simhamukha can cast spells like aid, guidance, and spiritual weapon at will, as well as confusion, searing smite, and thunderous smite twice per day.",
+    "test_queries": [
+        "powerful celestial creature with truesight",
+        "huge monster with radiant smite ability",
+        "magical being that creates frightening illusions",
+        "imposing celestial fighter with bite attack",
+        "chaotic good protector with magical weapons"
+    ]
+}

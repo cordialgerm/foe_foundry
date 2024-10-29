@@ -1,0 +1,25 @@
+{
+    "name": "Saber-Toothed Tiger",
+    "queries": [
+        {
+            "query": "large prehistoric predator with curved fangs in cold regions",
+            "variant": "prehistoric large predator with curved fangs in cold places"
+        },
+        {
+            "query": "fierce tiger known for its powerful jaws and stealthy hunting",
+            "variant": "fierce saber-tooth cat known for powerful jaws and silent hunting"
+        },
+        {
+            "query": "fast, agile beast with keen sense of smell and deadly claws",
+            "variant": "agile, fast beast with keen smelling ability and dangerous claws"
+        },
+        {
+            "query": "solitary big cat thriving in ancient forests with vicious attacks",
+            "variant": "lone big cat thriving in ancient woods with brutal attacks"
+        },
+        {
+            "query": "predatory animal with sharp claws living in mountainous regions",
+            "variant": "predatory beast with sharp claws that inhabit mountain areas"
+        }
+    ]
+}

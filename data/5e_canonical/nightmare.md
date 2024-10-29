@@ -1,6 +1,8 @@
 <MonsterName/>Nightmare</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>68</HP>
 <summary>A Nightmare is a fiendish horse wreathed in flame, with dark, smoky mane and glowing red eyes. Its hooves burn with fire as it gallops through the night sky or across the planes. Nightmares are typically summoned by evil creatures to serve as steeds, especially for powerful fiends or necromancers. These creatures can travel through the Ethereal Plane, making them excellent for stealthy missions or quick escapes. Their fiery breath and hooves make them dangerous in combat, and their presence often brings a sense of dread and terror.</summary>
 
 <summary>The Nightmare is a Large Fiend known for its role as a fearsome steed and harbinger of dread. Typically associated with dark magic and evil entities, this creature possesses a range of strengths including high mobility with its flying speed, decent armor class, and formidable melee attacks. With 68 hit points, it can withstand a fair amount of damage, while its fire resistance adds to its durability against elemental attacks. However, the Nightmare is also limited by its challenge rating of 3, which indicates that it would be best suited for encounters with lower-level adventurers. It has a mix of physical and magical abilities that allow it to interact with both combat and exploration elements of the game effectively, making it a versatile opponent.</summary>
@@ -35,6 +37,7 @@ In summary, the Nightmare combines strong physical capabilities with fire-themed
 
 Source: 5e_srd
 
+<statblock>
 ## Nightmare
 
 *Large fiend, neutral evil*
@@ -65,7 +68,8 @@ Source: 5e_srd
 
 ***Hooves***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage plus 7 (2d6) fire damage.
 
-***Ethereal Stride***. The nightmare and up to three willing creatures within 5 feet of it magically enter the Ethereal Plane from the Material Plane, or vice versa.
+***Ethereal Stride***. The nightmare and up to three willing creatures within 5 feet of it magically enter the Ethereal Plane from the Material Plane, or vice versa.</statblock>
+
 
 
 
@@ -73,6 +77,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nightmare
 
 *Large* *Fiend*
@@ -104,6 +109,7 @@ Source: 5e_artisinal_monsters
 - **Ethereal Shift (Recharge 5-6):** The nightmare and a rider magically pass from the Ethereal Plane to the Material Plane or vice versa.
 
 
+</statblock>
 
 
 
@@ -112,6 +118,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nightmare
 
 *Large fiend*
@@ -146,5 +153,6 @@ Source: 5e_artisinal_monsters
 
 - **Burning Hoofprints.** The nightmare increases the intensity of the heat on its hooves. Until the start of its next turn, it leaves burning hoofprints in any surface through which it walks, creating a trail of fire in its wake. A creature that enters a space with burning hoofprints for the first time on a turn or starts its turn there must succeed on a DC 13 DEX save or take 3 (1d6) fire damage. The hoofprints stop burning at the start of the nightmare’s next turn.
 
+</statblock>
 
 

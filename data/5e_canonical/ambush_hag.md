@@ -1,6 +1,8 @@
 <MonsterName/>Ambush Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>156</HP>
 <summary>The Ambush Hag is a Medium fey creature known for its cunning and deception. With an Armor Class of 16 and a substantial pool of 156 hit points, it poses a formidable challenge to adventurers with a Challenge Rating of 9. Hags are often characterized by their sinister nature, and the Ambush Hag excels at ambushing unsuspecting targets, using its high Dexterity and Charisma to enhance its stealth and spellcasting abilities. While it has good offensive capabilities, especially with its poison-infused attacks, the creature's reliance on deceptive tactics can make it vulnerable if its tricks are discerned by attentive foes.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Ambush Hag is a resourceful and deadly opponent, blending physical 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ambush Hag
 
 *Medium fey*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 
 - **Illusory Appearance.** The hag covers itself and anything it is wearing or carrying with a magical illusion that makes it look like another creature of its general size and humanoid shape. The illusion ends if the hag takes a bonus action to end it or if the hag dies.The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have smooth skin, but someone touching it would feel its rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 20 INT (Investigation) check to discern that the hag is disguised.
 
+</statblock>
 
 

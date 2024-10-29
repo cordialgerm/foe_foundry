@@ -1,6 +1,8 @@
 <MonsterName/>Wereowl</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>13</AC>
+<HP/>117</HP>
 <summary>The Wereowl is a medium humanoid creature with a lawful evil alignment, making it a cunning and malevolent presence in any setting. With an armor class of 13 and hit points totaling 117, it possesses a solid offensive and defensive capability, allowing it to endure in combat. Its challenge rating is 5, which indicates it provides a moderate level of challenge for a party. The Wereowl has a good balance of attributes, particularly high Dexterity, which contributes to its stealthy abilities, and it possesses immunities that make it resilient against common physical attacks. It also has the versatile ability to transform between a humanoid form, an owl-humanoid hybrid, and a giant owl. This shapechanging aspect, coupled with its stealth capabilities, makes it a formidable opponent that can maneuver around enemies without provoking attacks.</summary>
 
 <detail>
@@ -38,6 +40,7 @@ Overall, the Wereowl is a dangerous and versatile adversary with the potential t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wereowl
 
 *Medium* *Humanoid* *lawful evil*
@@ -72,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Shortbow (Humanoid or Hybrid Form Only):** Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 
 
+</statblock>
 
 

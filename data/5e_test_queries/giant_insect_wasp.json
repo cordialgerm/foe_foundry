@@ -1,0 +1,25 @@
+{
+    "name": "Giant Wasp",
+    "queries": [
+        {
+            "query": "poisonous winged insect that uses pheromones",
+            "variant": "poisonous insect with wings that uses pheromones"
+        },
+        {
+            "query": "medium-sized wasp that can paralyze with its sting",
+            "variant": "wasp of medium size that can paralyze with its sting"
+        },
+        {
+            "query": "agile flying creature with a venomous attack",
+            "variant": "quick flying creature that has a venomous attack"
+        },
+        {
+            "query": "beast that enhances allies with pheromone abilities",
+            "variant": "creature that boosts allies through pheromone abilities"
+        },
+        {
+            "query": "insect that inflicts piercing and poison damage",
+            "variant": "insect that deals piercing and toxic damage"
+        }
+    ]
+}

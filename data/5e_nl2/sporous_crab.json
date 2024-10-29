@@ -1,0 +1,51 @@
+{
+    "name": "Sporous Crab",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 33,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft., swim 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "amphibious",
+        "infection",
+        "poison"
+    ],
+    "adjectives": [
+        "filthy",
+        "small",
+        "infectious"
+    ],
+    "description": "The Sporous Crab is a small, filthy beast found in swamps and dank caves, with natural armor and a rough exterior covered in grime.",
+    "memorable": "Its ability to infect creatures with spores makes it a dangerous foe in creature encounters.",
+    "goals": "Typically seeks to ambush unsuspecting prey and establish its dominance in murky waters.",
+    "relations": "Generally solitary but may coexist with other filthy swamp creatures.",
+    "environment": "Swamps or dank caves, thriving in filthy environments.",
+    "strengths": "Resistance to bludgeoning damage and ability to inflict poison.",
+    "weaknesses": "Vulnerable to fire damage.",
+    "attacks": "Can deliver two claw attacks that deal bludgeoning damage, and it can unleash a spore spray that infects and damages foes.",
+    "most_powerful_ability": "The 'Spore' action can infect creatures and eventually hatch young Sporous Crabs from them if not treated.",
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dim light.",
+    "skills": null,
+    "additional_information": [
+        "Infection can lead to sewer plague if saving throws are failed.",
+        "Tap into amphibious nature for versatile combat strategies.",
+        "Intentionally lurks in muddy areas to ambush prey.",
+        "Can be countered with spells like lesser restoration.",
+        "Has a passive Perception score of 11."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "infectious crab in swampy areas",
+        "small filthy creature with spore attack",
+        "amphibious beast that sprays poison",
+        "crab that inflicts sewer plague",
+        "mobile creature with poison resistance"
+    ]
+}

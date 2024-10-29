@@ -1,0 +1,25 @@
+{
+    "name": "Forest Emperor",
+    "queries": [
+        {
+            "query": "huge acid-spitting monster that controls the forest",
+            "variant": "big acid spray monster that rules the forest"
+        },
+        {
+            "query": "forest creature that frightens with a rattling tail",
+            "variant": "woodland beast that instills fear with a rattling tail"
+        },
+        {
+            "query": "mobile abomination with deadly claws and toxic attacks",
+            "variant": "moving monstrosity with lethal claws and poison abilities"
+        },
+        {
+            "query": "neutral evil creature that can fly and climb adeptly",
+            "variant": "neutral evil monster that adeptly climbs and flies"
+        },
+        {
+            "query": "large aberration with high durability and stealth in forests",
+            "variant": "big aberration with excellent toughness and forest stealth abilities"
+        }
+    ]
+}

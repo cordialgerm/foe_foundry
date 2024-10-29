@@ -1,0 +1,53 @@
+{
+    "name": "Ankheg",
+    "creature_type": "Monstrosity",
+    "creature_subtype": "animal",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 45,
+    "ac": 14,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft. walking and 10 ft. burrowing",
+    "role": "Ambusher",
+    "tags": [
+        "burrowing",
+        "acidic",
+        "predator"
+    ],
+    "adjectives": [
+        "brutal",
+        "ferocious",
+        "predatory"
+    ],
+    "description": "The Ankheg is a large, insect-like creature with a segmented body covered in tough chitinous armor. It has massive, sharp mandibles capable of crushing rock and bone. Its multiple legs enable it to burrow through the earth at alarming speeds.",
+    "memorable": "The Ankheg's ability to ambush prey from underground and its vicious acid spray attack make it a terrifying encounter.",
+    "goals": "To hunt and ambush prey, utilizing its burrowing capability to create networks of tunnels beneath the ground.",
+    "relations": "Often found in farmland or forest environments, it may coexist with other subterranean monsters or predators.",
+    "environment": "Typically inhabits farmlands and forests, creating dangerous tunnel systems beneath the surface.",
+    "strengths": "Strong physical power with notable melee attacks; capable of immobilizing enemies through grappling and dealing both slashing and acidic damage.",
+    "weaknesses": "Low Dexterity, making it susceptible to ranged attacks; lacks intelligence for strategic planning.",
+    "attacks": "Uses powerful claws and bites to deal slashing and acid damage, with a gruesome execution of foes it slays.",
+    "most_powerful_ability": "Acid Spray, which can affect multiple targets and have devastating area damage effects.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 60 feet, allowing it to detect creatures even if obscured.",
+    "skills": "No specific skill proficiencies noted, but average perception with passive Perception of 11.",
+    "additional_information": [
+        "Monstrosity Resilience grants it resistance to exhaustion and frightened condition.",
+        "Can bury grappled creatures, rendering them restrained and unable to breathe.",
+        "Capable of creating extensive tunnel networks beneath the ground.",
+        "Ambush predator that engages in brutal melee combat.",
+        "Can immobilize targets with its grapple and deal additional damage with acid when grappling."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "underground acid-spitting monster",
+        "ferocious predatory insect",
+        "large tunneling predator",
+        "acidic ambush attacker",
+        "brutal subterranean creature"
+    ]
+}

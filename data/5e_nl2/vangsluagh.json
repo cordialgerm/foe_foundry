@@ -1,0 +1,52 @@
+{
+    "name": "Vangsluagh",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 85,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "spellcaster disruptor",
+        "sonic attacks"
+    ],
+    "adjectives": [
+        "chaotic",
+        "noisy",
+        "threatening"
+    ],
+    "description": "The Vangsluagh is a chaotic evil aberration known for its unsettling ability to wreak havoc on spellcasters and disturb the battlefield with its incessant noise. It has an average build with a uniquely cacophonous presence.",
+    "memorable": "The Vangsluagh's Distracting Cacophony ability disrupts spellcasting, making it particularly dangerous for magic-adept foes.",
+    "goals": "To disrupt enemies in battle, particularly spellcasters, and create chaos.",
+    "relations": "Can be encountered alongside other aberrations or chaos-themed creatures.",
+    "environment": "Often found in places of magical upheaval or chaos.",
+    "strengths": "Immunity to thunder damage and the ability to disrupt spellcasting.",
+    "weaknesses": "Disadvantage on Dexterity (Stealth) checks due to its Constant Racket.",
+    "attacks": "Employs two tentacle lash attacks causing bludgeoning damage and a Sonic Bullet attack inflicting thunder damage.",
+    "most_powerful_ability": "Agonizing Trill, which can stun creatures within range.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immune to deafened conditions.",
+        "Uses Sonic Bullet to inflict deafness.",
+        "Tentacle lash attacks have a reach of 10 feet.",
+        "Can stun multiple creatures at once with Agonizing Trill.",
+        "Attempts to maintain chaos in combat."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic noise-making creature",
+        "monster that disrupts spellcasting",
+        "thunder immune aberration with tentacles",
+        "sonic-attacking chaotic evil monster",
+        "creature that stuns with sound"
+    ]
+}

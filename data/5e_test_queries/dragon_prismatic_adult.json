@@ -1,0 +1,25 @@
+{
+    "name": "Prismatic Adult Dragon",
+    "queries": [
+        {
+            "query": "massive creature with radiant breath attack and fear abilities",
+            "variant": "huge monster with dazzling breath weapon and fear-inducing presence"
+        },
+        {
+            "query": "dragon with strong melee abilities in a neutral alignment",
+            "variant": "dragon that has powerful close combat skills and is neutral"
+        },
+        {
+            "query": "dragon that can cast spells and uses frightful presence",
+            "variant": "creature capable of spellcasting that employs a frightening aura"
+        },
+        {
+            "query": "majestic dragon immune to radiant damage and capable of blinding foes",
+            "variant": "regal dragon that takes no damage from radiant attacks and can blind enemies"
+        },
+        {
+            "query": "creature with darkvision and high hit points living in a mystical realm",
+            "variant": "monster that has 120-foot darkvision and numerous hit points in an enchanted environment"
+        }
+    ]
+}

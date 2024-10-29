@@ -1,0 +1,50 @@
+{
+    "name": "Puffinfolk",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 22,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 20 ft., swim 30 ft., fly 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "marine",
+        "agile",
+        "humanoid"
+    ],
+    "adjectives": [
+        "small",
+        "nimble",
+        "versatile"
+    ],
+    "description": "The Puffinfolk is a small humanoid known for its exceptional agility in marine environments, equipped with leather armor and capable of swimming and flying easily.",
+    "memorable": "Their ability to navigate and evade in water and air, along with the unique 'Blessings of the Sea Gods' ability, makes them uniquely adaptable in combat.",
+    "goals": "They often explore oceanic environments, using their skills to survive and navigate effectively.",
+    "relations": "Related to other aquatic humanoids, they may encounter merfolk or sea elves.",
+    "environment": "Primarily found in marine environments, including coastal regions and oceanic waters.",
+    "strengths": "Exceptional Dexterity allows them to avoid attacks and succeed in nimble maneuvers.",
+    "weaknesses": "Lower hit points limit their endurance in prolonged combat; average Charisma affects social interactions.",
+    "attacks": "Peck attack with +6 to hit, dealing 7 piercing damage, showcasing their combat capability.",
+    "most_powerful_ability": "Quick and Nimble grants them a defensive advantage, allowing them to impose disadvantage on attack rolls targeting them.",
+    "equipment": "Leather armor provides a base level of protection.",
+    "senses": "Possesses darkvision that enables them to see in dim light as if it were bright light.",
+    "skills": "Skilled in Perception, allowing them to effectively notice details and dangers.",
+    "additional_information": [
+        "Can hold their breath for 30 minutes underwater.",
+        "Perfectly recalls paths traveled in oceanic environments.",
+        "Advantage on saving throws while swimming or flying over ocean waters.",
+        "Considered a Medium creature when determining carrying capacity.",
+        "Agile and capable of evading attacks more easily."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile ocean humanoid",
+        "marine creature that can hold its breath",
+        "nimble humanoid with flying ability",
+        "monster with peck attack and evasive skills",
+        "creature that excels in aquatic environments"
+    ]
+}

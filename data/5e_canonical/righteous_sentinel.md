@@ -1,6 +1,8 @@
 <MonsterName/>Righteous Sentinel</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>9</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>104</HP>
 <summary>The Righteous Sentinel is a powerful large construct that embodies the lawful good alignment. It serves as a steadfast guardian, effectively combining strong defensive and offensive capabilities. With an armor class of 15 and 104 hit points, it presents a challenging foe. The sentinel excels in melee combat with high strength, having a +5 modifier, while it has notable defenses against a multitude of conditions and forms, making it an exceptional protector. Its main weaknesses lie in its vulnerability to thunder damage and its limited dexterity, which is average at +0. The sentinel's notable special abilities enhance its combat prowess, allowing it to not only absorb damage but also reflect spells back at their casters.</summary>
 
 <detail>
@@ -38,6 +40,7 @@ For its reactions, the Righteous Sentinel has Reflective Retribution, allowing i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Righteous Sentinel
 
 *Large* *Construct* *lawful good*
@@ -78,5 +81,6 @@ Source: 5e_artisinal_monsters
 - **Reflective Retribution:** The sentinel adds 3 to its AC against one melee attack that would hit it. To do so, the sentinel must see the attacker. If the attack misses, the attacker takes 11 (2d10) psychic damage.
 
 
+</statblock>
 
 

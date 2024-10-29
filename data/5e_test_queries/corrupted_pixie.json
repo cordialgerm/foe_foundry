@@ -1,0 +1,25 @@
+{
+    "name": "Corrupted Pixie",
+    "queries": [
+        {
+            "query": "tiny chaotic evil fiend with magical abilities",
+            "variant": "tiny fiend that is chaotic evil and has magic skills"
+        },
+        {
+            "query": "agile creature that can confuse its enemies",
+            "variant": "creature that is agile and able to confuse foes"
+        },
+        {
+            "query": "small magical being that uses deception and chaos",
+            "variant": "small being that uses magic for deception and chaos"
+        },
+        {
+            "query": "pixie that leverages superior invisibility and spells",
+            "variant": "pixie using spells and superior invisibility"
+        },
+        {
+            "query": "fiend creature proficient in stealth and perception",
+            "variant": "fiend that excels in perception and stealth"
+        }
+    ]
+}

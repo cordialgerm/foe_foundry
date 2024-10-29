@@ -1,0 +1,55 @@
+{
+    "name": "Bear King",
+    "creature_type": "Fey",
+    "alignment": "Lawful Neutral",
+    "size": "Medium",
+    "hp": 133,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fey",
+        "guardian",
+        "nature",
+        "magical",
+        "bear"
+    ],
+    "adjectives": [
+        "formidable",
+        "regal",
+        "powerful",
+        "daunting"
+    ],
+    "description": "The Bear King embodies nature with a regal presence, featuring robust attributes and a blend of physical power and magical prowess. Its fur glistens with magical honey that enhances its attacks.",
+    "memorable": "With its ability to deal radiant damage and resist various attacks, along with regeneration abilities, the Bear King presents a significant challenge in combat.",
+    "goals": "To act as a guardian of the wild, protecting nature with its formidable presence and magical abilities.",
+    "relations": "Often associated with other fey creatures, it may command or ally with woodland spirits or bear folk.",
+    "environment": "Typically found in enchanted forests or locations dense with wildlife.",
+    "strengths": "High hit points, strong physical attacks enhanced by radiant damage, magical abilities, and the ability to change shape.",
+    "weaknesses": "Vulnerable to attacks made with cold iron weapons.",
+    "attacks": "Employs devastating multiattack options including bites, claws, and a ranged Honey Bolt, all infused with radiant magic.",
+    "most_powerful_ability": "Honeyed Weapons, which allows its attacks to deal an additional 3d8 radiant damage.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 10 feet and a high passive perception of 18.",
+    "skills": "Excels in Athletics, Intimidation, and Perception, enhancing its presence in combat and social scenarios.",
+    "additional_information": [
+        "Has legendary resistance, allowing it to succeed on failed saving throws three times a day.",
+        "Regenerates hit points when in bear or hybrid forms.",
+        "Can restrain targets with magical honey using its Honey Toss ability.",
+        "Frightful Roar creates strategic disruption by frightening nearby foes.",
+        "Can transform between bear, hybrid, and true Fey forms without losing statistics."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "magical fey bear creature",
+        "guardian of the wild spirit",
+        "bear king with radiant honey",
+        "formidable fey monster",
+        "regal bear protector"
+    ]
+}

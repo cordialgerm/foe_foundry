@@ -1,0 +1,25 @@
+{
+    "name": "Keelbreaker Crab",
+    "queries": [
+        {
+            "query": "huge crab that can grapple and has magical figureheads",
+            "variant": "massive crab with figureheads that can grapple enemies and use magic"
+        },
+        {
+            "query": "aquatic monster with a terrifying wail and strong pincers",
+            "variant": "water-based creature that has powerful pincers and can wail fearfully"
+        },
+        {
+            "query": "durable creature that deals double damage to structures and can breathe underwater",
+            "variant": "resilient monster that breathes both air and water and is destructive to structures"
+        },
+        {
+            "query": "monstrosity that causes psychic damage and has blindsight",
+            "variant": "creature capable of dealing psychic harm and possessing blindsight abilities"
+        },
+        {
+            "query": "crabby monster with a high hit point score and magic resistance",
+            "variant": "crab-like creature with a large health pool and resistant to magical attacks"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Knight of the Road",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 117,
+    "ac": 16,
+    "srd": false,
+    "ac_description": "breastplate",
+    "cr": "5",
+    "movement": "walking speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "shadow",
+        "manipulator"
+    ],
+    "adjectives": [
+        "shadowy",
+        "malevolent",
+        "cunning",
+        "devious"
+    ],
+    "description": "The Knight of the Road is a formidable humanoid creature embodying shadowy intrigue, characterized by a breastplate, with an agile figure complemented by a notable dexterity.",
+    "memorable": "It possesses the ability to manipulate travel routes and disappears into shadows, making it a master of ambush and evasion.",
+    "goals": "To control surroundings and dominate foes through manipulation and ambush tactics.",
+    "relations": "May be encountered with other shadowy or fey creatures, possibly serving darker entities.",
+    "environment": "Typically found in dark, shadowy locations where it can utilize its abilities effectively.",
+    "strengths": "Exceptional agility and stealth capabilities; can hinder enemy travel through its unique spell-like abilities.",
+    "weaknesses": "Sensitive to sunlight, imposing disadvantages in combat in well-lit areas.",
+    "attacks": "Utilizes melee attacks with a longsword and ranged attacks with a shortbow, capable of dealing both slashing and poison damage.",
+    "most_powerful_ability": "Obscure the Way, which confuses and misleads targets for up to 9 days.",
+    "equipment": "Breastplate armor, longsword, lance, and shortbow.",
+    "senses": "Has keen sight, granting it advantage on sight-related perception checks.",
+    "skills": "Excels in stealth and has solid proficiency in Arcana and Nature checks.",
+    "additional_information": [
+        "Fey Ancestry preventing charms and sleep due to magic.",
+        "Can vanish into shadows and reappear within 30 feet.",
+        "Has the keen ability to understand shadow roads and magic.",
+        "Highly mobile in dim light and darkness.",
+        "Combines physical prowess with cunning magical abilities."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadow creature that manipulates travel routes",
+        "malevolent humanoid skilled in stealth",
+        "cunning knight that disappears in darkness",
+        "creature with ability to confuse enemies",
+        "shadowy humanoid sensitive to sunlight"
+    ]
+}

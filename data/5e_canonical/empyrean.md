@@ -1,6 +1,8 @@
 <MonsterName/>Empyrean</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>22</CR>
+<AC/>21</AC>
+<HP/>328</HP>
 <summary>The Empyrean is a gargantuan celestial being that epitomizes divine strength and grace. It serves as a potent force in combat, boasting exceptional physical capabilities and a suite of powerful spells. With an Armor Class of 21 and a staggering 328 hit points, it is a resilient opponent that can absorb substantial damage. The Empyrean's strengths lie in its high Strength and Constitution scores, allowing it to deal devastating attacks and withstand significant assaults. However, while its Dexterity and high Charisma allow it to evade and manipulate foes effectively, it can be overwhelmed by coordinated assaults if not careful. It is a challenging adversary rated at Challenge 22, rewarding players with 41,000 experience points upon defeat.</summary>
 
 <detail>
@@ -58,6 +60,7 @@ Overall, the Empyrean embodies celestial might, able to deliver physical destruc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Empyrean
 
 *Gargantuan* *Celestial*
@@ -103,5 +106,6 @@ Source: 5e_artisinal_monsters
 - **Cast Spell:** The empyrean casts a spell. The empyrean can't use this option if it has cast a spell since the start of its last turn.
 - **Fly:** The empyrean flies up to half its fly speed.
 - **Shout (Recharge 5-6):** Each creature within 120 feet that can hear the empyrean makes a DC 25 Constitution saving throw. On a failure, a creature takes 24 (7d6) thunder damage and is stunned until the end of the empyreans next turn. On a success, a creature takes half damage.
+</statblock>
 
 

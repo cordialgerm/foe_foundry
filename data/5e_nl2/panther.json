@@ -1,0 +1,49 @@
+{
+    "name": "Panther",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 15,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "50 ft. walking and 40 ft. climbing",
+    "role": "Ambusher",
+    "tags": [
+        "stealthy",
+        "predator",
+        "agile"
+    ],
+    "adjectives": [
+        "sleek",
+        "powerful",
+        "nocturnal"
+    ],
+    "description": "A sleek and powerful big cat with black or dark-colored fur, the panther excels in stealth and agility. It uses its natural camouflage to stalk prey in shadows.",
+    "memorable": "Known for its ambush tactics and lethal hunting skills, the panther can knock targets prone and exploit their disadvantage with quick strikes.",
+    "goals": "To hunt and ambush prey effectively in natural environments.",
+    "relations": "Panthers may be found alongside other jungle or forest creatures and can serve as loyal companions or guardians.",
+    "environment": "Typically found in jungles, forests, or savannas.",
+    "strengths": "Exceptional speed and stealth make the panther a formidable predator.",
+    "weaknesses": "Low hit points and intelligence limit its durability and strategic capabilities.",
+    "attacks": "The panther can make claw and bite attacks, dealing slashing and piercing damage, respectively.",
+    "most_powerful_ability": "The 'Pounce' ability allows the panther to knock enemies prone and follow up with a bite attack, taking advantage of its ambush style.",
+    "senses": "The panther has heightened smell, allowing it a Perception score of 19 when relying on scent, enhancing its tracking abilities.",
+    "skills": "The panther is proficient in stealth and perception, making it difficult to detect.",
+    "additional_information": [
+        "Utilizes keen senses for tracking enemies.",
+        "Can climb effortlessly, enhancing its ambush capabilities.",
+        "Relies on speed to outmaneuver adversaries.",
+        "Thrives in darkness, using its natural camouflage.",
+        "Acts effectively as a companion in low-level encounters."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy big cat with climbing abilities",
+        "predatory cat that ambushes from the shadows",
+        "large cat known for speed and stealth",
+        "nocturnal predator in forests and jungles",
+        "powerful ambush attacker with keen senses"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Wharflings</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>66</HP>
 <summary>The Swarm of Wharflings is a large, unaligned beast that serves as a chaotic hazard in its environment. This creature's primary role in combat is to overwhelm enemies with swarming attacks while also creating disruption by stealing items. With an armor class of 13 and hit points totaling 66, it maintains a fair level of durability in battles, but it does not possess strong offensive capabilities aside from its swarm-based attacks. The swarm's mobility allows it to occupy spaces of other creatures, making it a strategic nuisance. It has strong resistance to physical damage types, but it lacks any intelligence or charm, making it susceptible to spells and abilities that target those weaknesses. Notably, the swarm's unique movement allows it to traverse any opening that fits a Tiny wharfling, giving it exceptional maneuverability despite its size.</summary>
 
 <detail>
@@ -34,6 +36,7 @@ This combination of mobility, crowd control, and item theft makes the Swarm of W
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Wharflings
 
 *Large* *Swarm* *Beast* *Unaligned*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 ### Actions
 
 - **Pilfering Bites:** Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 28 (8d6) piercing damage, or 14 (4d6) piercing damage if the swarm has half of its hp or fewer, and the target must succeed on a DC 13 Dexterity saving throw or lose one item it is wearing or carrying to the swarm, provided the item weighs no more than 10 pounds, isn’t a weapon, and isn’t wrapped around or firmly attached to the target, such as a shirt or armor.
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Aboleth",
+    "queries": [
+        {
+            "query": "huge amphibious monster with psychic abilities that manipulates minds",
+            "variant": "big water monster with psychic powers that can control minds"
+        },
+        {
+            "query": "creature that thrives in water and has a disease called Sea Change",
+            "variant": "monster living in water that can inflict Sea Change disease"
+        },
+        {
+            "query": "Aberration with darkvision and blindsight that communicates telepathically",
+            "variant": "dark-seeing creature with blindsight that can talk through thoughts"
+        },
+        {
+            "query": "giant creature skilled in deception and history with powerful tentacle attacks",
+            "variant": "large monster good at lying and remembering skilled at tentacle strikes"
+        },
+        {
+            "query": "Ancient Aboleth abilities including Slimy Cloud and telepathic summon",
+            "variant": "Old Aboleth powers like Slimy Cloud and mind-controlling summon"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Daeodon",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 76,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "predator",
+        "fearsome"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "intimidating"
+    ],
+    "description": "The Daeodon is a large, powerful beast with a muscular build and formidable presence, boasting strong melee capabilities and notable resilience.",
+    "memorable": "Its ability to intimidate foes with a fierce call and withstand damage makes it unique and fearsome in combat.",
+    "goals": "To dominate combat scenarios through intimidation and overwhelming physical attacks.",
+    "relations": "May be found in the company of other fierce beasts or as a solitary predator.",
+    "environment": "Typically found in wild, open areas where it can charge at prey.",
+    "strengths": "High Strength allows for significant damage output and the Relentless ability enhances its survivability.",
+    "weaknesses": "Poor Dexterity limits its ability to avoid attacks, and low Intelligence restricts strategic options.",
+    "attacks": "Features powerful melee attacks with Bite and Slam, capable of grappling and restraining opponents.",
+    "most_powerful_ability": "Fierce Call instills fear in nearby foes, forcing them to drop their weapons and flee.",
+    "equipment": null,
+    "senses": "Possesses Keen Smell, granting advantage on perception checks related to smell.",
+    "skills": "Has a passive perception of 11, which is indicative of its moderate awareness.",
+    "additional_information": [
+        "Strong melee capabilities and significant damage output.",
+        "Can knock opponents prone for tactical advantages.",
+        "Relentless ability allows it to survive otherwise lethal blows.",
+        "Low Intelligence and Charisma mean limited strategic play.",
+        "A fearsome presence on the battlefield."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large predator with fearsome call",
+        "formidable beast that charges at foes",
+        "intimidating creature with relentless abilities",
+        "muscular beast that grapples opponents",
+        "monster with keen smell and powerful melee attacks"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Kadag Ogre",
+    "queries": [
+        {
+            "query": "large evil giant that can poison nearby creatures and commands undead",
+            "variant": "big evil giant that can poison creatures nearby and commands the undead"
+        },
+        {
+            "query": "ogre with darkvision that is strong but has low dexterity",
+            "variant": "ogre that has darkvision, is strong but has bad dexterity"
+        },
+        {
+            "query": "giant near undead that has multiple spear attacks and necrotic resistance",
+            "variant": "giant close to undead with several spear attacks and resistance to necrotic damage"
+        },
+        {
+            "query": "Kadag Ogre's Scent of Death ability and its advantages against undead",
+            "variant": "Kadag Ogre with its Scent of Death ability and benefits versus undead"
+        },
+        {
+            "query": "Kadag Ogre that can empower undead and has high strength score",
+            "variant": "Kadag Ogre capable of empowering undead and possesses a high strength score"
+        }
+    ]
+}

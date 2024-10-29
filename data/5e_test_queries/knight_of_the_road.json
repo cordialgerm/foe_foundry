@@ -1,0 +1,25 @@
+{
+    "name": "Knight of the Road",
+    "queries": [
+        {
+            "query": "dark humanoid that uses shadow magic and seems malevolent",
+            "variant": "humanoid in shadows with magical abilities and a malevolent aura"
+        },
+        {
+            "query": "creature with sunlight sensitivity that can obscure travel routes",
+            "variant": "monster that hates sunlight and can confuse travelers on roads"
+        },
+        {
+            "query": "Knight that excels in stealth and manipulates shadows",
+            "variant": "stealthy knight that uses shadows for ambush and evasion"
+        },
+        {
+            "query": "lawful evil humanoid with darkvision living in shadows",
+            "variant": "humanoid aligned with evil that can see in the dark and prefers shadows"
+        },
+        {
+            "query": "tactical creature that uses lances and has a keen sight",
+            "variant": "monster skilled with lances that possesses excellent perception abilities"
+        }
+    ]
+}

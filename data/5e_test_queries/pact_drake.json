@@ -1,0 +1,25 @@
+{
+    "name": "Pact Drake",
+    "queries": [
+        {
+            "query": "small dragon known for its magical abilities and deception detection",
+            "variant": "small dragon that specializes in magic and can sense deceit"
+        },
+        {
+            "query": "magical overseer dragon with high intelligence and charisma",
+            "variant": "overseer dragon with exceptional intelligence and charisma for spellcasting"
+        },
+        {
+            "query": "dragon that enforces pacts and has spellcasting powers",
+            "variant": "dragon that has magical abilities and enforces agreements"
+        },
+        {
+            "query": "dragon with abilities to charm creatures and detect lies",
+            "variant": "dragon that can charm its foes and know when they are lying"
+        },
+        {
+            "query": "creature immune to charm that lives in magical environments",
+            "variant": "creature immune to being charmed, found in areas filled with magic"
+        }
+    ]
+}

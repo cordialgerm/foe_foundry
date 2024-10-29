@@ -1,0 +1,25 @@
+{
+    "name": "Morphoi",
+    "queries": [
+        {
+            "query": "plant monster that can change shape and lives in water",
+            "variant": "monster that changes shape and is a plant living in aquatic environments"
+        },
+        {
+            "query": "chaotic evil plant creature with good dexterity and amphibious ability",
+            "variant": "chaotic plant monster with excellent dexterity and ability to live in water"
+        },
+        {
+            "query": "creature that can transform into humanoids and has slashing attacks",
+            "variant": "monster that transforms into human shapes and uses claw attacks"
+        },
+        {
+            "query": "monster that uses trident for melee and ranged attacks in both land and water",
+            "variant": "creature that utilizes a trident for both melee and ranged combat on land and water"
+        },
+        {
+            "query": "Morphoi's ability to breathe underwater and its combat style",
+            "variant": "ability of Morphoi to breathe in water and its fighting techniques"
+        }
+    ]
+}

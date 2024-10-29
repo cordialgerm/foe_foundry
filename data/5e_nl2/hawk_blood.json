@@ -1,0 +1,51 @@
+{
+    "name": "Blood Hawk",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Small",
+    "hp": 8,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "10 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "bird",
+        "predator",
+        "scout"
+    ],
+    "adjectives": [
+        "agile",
+        "fast",
+        "perceptive"
+    ],
+    "description": "The Blood Hawk is a small, agile bird known for its keen eyesight and effective aerial attacks.",
+    "memorable": "Its Heightened Sight ability allows it to have an exceptional Perception score when using sight.",
+    "goals": "Typically, it serves as a scout or aerial attacker, hunting prey from the skies.",
+    "relations": "Often found in groups, aiding allies with its Pack Tactics ability.",
+    "environment": "Can be encountered in various environments, usually in areas where it can fly and scout for threats.",
+    "strengths": "Exceptional agility with a flying speed of 60 feet and a strategic advantage when fighting alongside allies.",
+    "weaknesses": "Vulnerable due to low armor class and hit points, requiring careful positioning in combat.",
+    "attacks": "Utilizes a beak attack that can inflict piercing damage with a high chance of success due to its attack bonus.",
+    "most_powerful_ability": "Heightened Sight, allowing a Perception score of 19 when using sight.",
+    "senses": "Has a high Perception score of 14, making it effective at spotting hidden threats.",
+    "skills": "Possesses a Stealth score of 12, allowing it to move quietly and avoid detection.",
+    "additional_information": [
+        "Can use Evasive Flight as a bonus action to disengage or dodge while flying.",
+        "Benefits from the Pack Tactics ability to gain advantage on attack rolls.",
+        "Weak physical strength with a Strength score of -2, making it ineffective in melee confrontations.",
+        "Good Dexterity provides it with enhanced accuracy and evasion capabilities.",
+        "Not capable of complex thought with an Intelligence score of -4."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile bird that flies",
+        "hawk known for exceptional sight and speed",
+        "bird that works well in packs and hunts",
+        "fast bird that uses evasive flight tactics",
+        "predatory bird with keen vision in combat"
+    ]
+}

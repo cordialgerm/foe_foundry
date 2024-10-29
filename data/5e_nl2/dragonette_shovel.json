@@ -1,0 +1,48 @@
+{
+    "name": "Dragonette, Shovel",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Tiny",
+    "hp": 33,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 20 ft., burrow 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "stealth",
+        "burrowing"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "quirky"
+    ],
+    "description": "The Dragonette, Shovel is a tiny dragon that excels in stealth with a floral camouflage to blend into vegetation.",
+    "memorable": "Its ability to control the battlefield with burrowing and unique attacks makes it a versatile foe.",
+    "goals": "To ambush foes and escape combat using its mobility.",
+    "relations": "May be encountered with other dragon-like creatures or small forest animals.",
+    "environment": "Forested or garden-like terrains rich with vegetation.",
+    "strengths": "High mobility with burrowing capabilities and the advantage of camouflage.",
+    "weaknesses": "Relatively low hit points and AC makes it vulnerable to direct attacks.",
+    "attacks": "Uses melee attacks like Head Slap for bludgeoning damage, Raking Claws for slashing damage, and Sticky Tongue to manipulate enemies.",
+    "most_powerful_ability": "Floral Camouflage provides advantage on Stealth checks, enhancing its ambush potential.",
+    "equipment": null,
+    "senses": "Possesses tremorsense and darkvision both at 60 feet, allowing effective navigation in darkness.",
+    "skills": "Has a +1 modifier in perception, allowing for average observation capabilities.",
+    "additional_information": [
+        "Messy Digger provides disadvantage on opportunity attacks when burrowing.",
+        "Squat Body grants advantage on checks against being moved.",
+        "Can launch its tongue to manipulate positioning of enemies within 15 feet."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny dragon that can burrow and ambush",
+        "dragon with floral camouflage and digging skills",
+        "mobile dragon that uses stealth and traps",
+        "quirky dragon that pulls enemies closer",
+        "agile dragon in garden-like environments"
+    ]
+}

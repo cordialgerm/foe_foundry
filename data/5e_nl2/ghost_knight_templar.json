@@ -1,0 +1,55 @@
+{
+    "name": "Ghost Knight Templar",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 127,
+    "ac": 18,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "knight",
+        " templar",
+        "ghostly"
+    ],
+    "adjectives": [
+        "powerful",
+        "agile",
+        "strategic",
+        "fearsome"
+    ],
+    "description": "The Ghost Knight Templar is a ghostly warrior in plate armor, exuding an aura of dread. Its spectral form moves fluidly through the battlefield, wielding a Shadow Blade.",
+    "memorable": "Its ability to move through objects and deal cold damage while passing through enemies creates a chilling presence on the battlefield.",
+    "goals": "Typically seeks to serve its own dark purposes, which may involve acting as a guardian for ancient sites or serving a dark master.",
+    "relations": "Often associated with other undead creatures, particularly ghouls, and may command them.",
+    "environment": "Commonly found in haunted locations, graveyards, or battlefields from long ago.",
+    "strengths": "Possesses many immunities and resistances, making it tough to defeat in combat. Its ability to deal high damage from cold while evading attacks adds to its deadly nature.",
+    "weaknesses": "Vulnerable to turning effects if isolated from allies who benefit from its Turning Defiance ability.",
+    "attacks": "Uses its Shadow Blade for melee attacks with slashing and necrotic damage, along with multiattack capabilities for multiple strikes.",
+    "most_powerful_ability": "Stride of Damnation allows it to move through enemies while dealing significant cold damage, creating a potential area of effect attack as it moves.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 17, making it adept at spotting hidden threats.",
+    "skills": "Proficient in Perception, enabling it to notice others' stealthy movements.",
+    "additional_information": [
+        "Incorporeal Movement enables it to traverse objects and creatures seamlessly.",
+        "Does not require air, food, drink, or sleep, allowing endless endurance.",
+        "Charge attack provides extra damage if it moves quickly before striking.",
+        "Can summon a ghostly mount with incorporeal traits for added mobility.",
+        "Resistant to necrotic damage and non-magical attacks enhances its combat longevity."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead knight with a ghostly presence",
+        "lawful evil ghost knight that moves through objects",
+        "powerful ghostly warrior with cold attacks",
+        "undead creature that summons a ghostly mount",
+        "creature that deals necrotic damage and has high defenses"
+    ]
+}

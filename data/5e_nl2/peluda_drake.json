@@ -1,0 +1,56 @@
+{
+    "name": "Peluda Drake",
+    "creature_type": "Dragon",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 68,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "burrow 20 ft., walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "chaotic",
+        "large",
+        "mighty"
+    ],
+    "adjectives": [
+        "spiny",
+        "powerful",
+        "resilient",
+        "tactical"
+    ],
+    "description": "The Peluda Drake is a large dragon, notable for its spiny quills and robust defensive abilities, featuring a powerful bite and tail attacks.",
+    "memorable": "The drake's unique ability to regenerate its quills and its dual breath weapons make it a formidable and dynamic opponent.",
+    "goals": "To dominate its territory and challenge adventurers that encroach on its lair.",
+    "relations": "It may be encountered with other chaotic creatures or serve as a guardian for treasure.",
+    "environment": "Usually found in rocky or wild terrain where it can burrow and ambush prey.",
+    "strengths": "High hit points and strong saving throws, excellent offense with piercing and poison damage attacks.",
+    "weaknesses": "Low intelligence and charisma, affecting its interaction with other beings.",
+    "attacks": "Bite for piercing damage, Tail strike with additional poison damage, and Quill attacks at range, both causing piercing and poison damage.",
+    "most_powerful_ability": "Steam Breath and Acid Breath, both powerful breath weapons capable of dealing substantial area damage.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 14, showcasing its awareness.",
+    "skills": "Skilled in Perception and Stealth, both with a +4 modifier, enhancing its tactical capabilities.",
+    "additional_information": [
+        "Regenerates quills after a long rest",
+        "Defensive spikes that damage attackers",
+        "Can attack effectively both in melee and ranged combat",
+        "Offers a significant challenge for experienced adventurers",
+        "Possesses good natural armor and stamina"
+    ],
+    "damage_types": [
+        "poison",
+        "fire",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large spiny dragon with breath attack",
+        "dragon with unique quill abilities",
+        "mighty dragon that uses poison attacks",
+        "Peluda Drake's powerful breath weapons",
+        "chaotic neutral dragon that can burrow"
+    ]
+}

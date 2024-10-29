@@ -1,0 +1,25 @@
+{
+    "name": "Brownie Beastrider",
+    "queries": [
+        {
+            "query": "tiny fey that can communicate with animals and rides beasts",
+            "variant": "small fey that can talk to animals and has mounts"
+        },
+        {
+            "query": "agile creature that specializes in animal control and spells",
+            "variant": "nimble creature that focuses on beast mastery and magic"
+        },
+        {
+            "query": "brownie fey known for its invisibility and mounted combat abilities",
+            "variant": "brownie fey noted for its invisibility and ride combat skills"
+        },
+        {
+            "query": "fey creature that uses magic resistance and summons allies",
+            "variant": "fey being that has spell resistance and calls companions"
+        },
+        {
+            "query": "magical tiny beast rider with strong dexterity and low strength",
+            "variant": "magical small monster rider with high dex and weakness in strength"
+        }
+    ]
+}

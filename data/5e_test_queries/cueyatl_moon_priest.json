@@ -1,0 +1,25 @@
+{
+    "name": "Cueyatl Moon Priest",
+    "queries": [
+        {
+            "query": "small humanoid that casts spells and thrives in jungle environments",
+            "variant": "humanoid that is small, casts spells, and is good in jungle areas"
+        },
+        {
+            "query": "stealthy jungle creature with cold damage abilities",
+            "variant": "jungle creature with stealth and abilities that deal cold damage"
+        },
+        {
+            "query": "manipulative priest who can breathe water and air",
+            "variant": "priest that manipulates and breathes both water and air"
+        },
+        {
+            "query": "spellcasting humanoid that uses poison attacks in combat",
+            "variant": "humanoid that casts spells and attacks with poison in battles"
+        },
+        {
+            "query": "creature that excels in stealth and has a powerful area cold spell",
+            "variant": "stealthy creature with a strong area spell that deals cold damage"
+        }
+    ]
+}

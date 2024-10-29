@@ -1,0 +1,53 @@
+{
+    "name": "Therizinosaurus",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 95,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dinosaur",
+        "beast",
+        "large",
+        "strong"
+    ],
+    "adjectives": [
+        "powerful",
+        "resilient",
+        "ferocious"
+    ],
+    "description": "A massive dinosaur known for its impressive claws and powerful physique, the Therizinosaurus stands out as a formidable presence on the battlefield.",
+    "memorable": "Its ability to withstand lethal damage and return to fight with 1 hit point makes it a fearsome adversary.",
+    "goals": "To dominate its territory and defend against threats.",
+    "relations": "Could be encountered alongside other large beasts or as a solitary predator in its environment.",
+    "environment": "Typically found in large, open areas or thick forests.",
+    "strengths": "Exceptional Strength score provides powerful offensive capabilities, along with high Constitution for survivability.",
+    "weaknesses": "Low Dexterity results in poor agility and less effective defense against ranged attacks.",
+    "attacks": "Multiple claw attacks in a turn, each capable of dealing significant slashing damage and potentially knocking opponents prone.",
+    "most_powerful_ability": "Relentless ability allows it to survive potentially lethal damage, dropping to 1 hit point instead.",
+    "equipment": null,
+    "senses": "Has passive Perception of 12, which is average for detecting its surroundings.",
+    "skills": "Possesses a good perception skill due to a Wisdom score of 14.",
+    "additional_information": [
+        "Strong melee combatant with multiattack capabilities.",
+        "Can inflict significant damage with its claws.",
+        "Impressive physicality and resilience make it a dangerous opponent.",
+        "Average Wisdom aids in awareness of surroundings.",
+        "Lacks intelligence and social capabilities."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive dinosaur with powerful claws",
+        "large beast that excels in melee combat",
+        "ferocious dinosaur with relentless survival ability",
+        "strong creature known for slashing attacks",
+        "resilient dinosaur that can withstand lethal damage"
+    ]
+}

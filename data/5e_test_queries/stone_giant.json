@@ -1,0 +1,25 @@
+{
+    "name": "Stone Giant",
+    "queries": [
+        {
+            "query": "huge gray-skinned giant who lives in rocky caves and throws boulders",
+            "variant": "huge gray-skinned giant that hurls boulders and lives in rocky caves"
+        },
+        {
+            "query": "strong giant with camouflage ability that excels in rocky environments",
+            "variant": "powerful giant skilled in camouflage living among rocks"
+        },
+        {
+            "query": "mighty giant with high hit points and devastating melee attacks",
+            "variant": "formidable giant with substantial hit points and powerful melee strikes"
+        },
+        {
+            "query": "muscular giant that is a skilled stone sculptor living in isolation",
+            "variant": "strong giant who is a talented stoneworker residing in solitude"
+        },
+        {
+            "query": "giant that can catch missiles and is immune to petrification",
+            "variant": "stone giant immune to petrification that can also catch projectiles"
+        }
+    ]
+}

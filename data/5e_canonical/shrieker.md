@@ -1,6 +1,8 @@
 <MonsterName/>Shrieker (Fungi)</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>0</CR>
+<AC/>5</AC>
+<HP/>13</HP>
 <summary>A Shrieker is a type of large fungus found in dark, damp caves or underground environments. While it poses no direct threat, a Shrieker emits a loud, piercing scream when exposed to light or movement, serving as an alarm for nearby predators or guardians. This ear-splitting sound can attract dangerous creatures, making Shriekers an indirect hazard to adventurers. They are often found in clusters alongside other fungi, adding to the perils of exploring dark caverns. While they cannot move or attack, their ability to alert others to intruders makes them a dangerous part of their environment.</summary>
 
 <summary>The Shrieker is a medium plant creature that serves as an environmental hazard in various settings. With a very low armor class of 5, it is exceptionally vulnerable to physical attacks, making it a weak target. However, its 13 hit points allow it to withstand some damage before being defeated. The Shrieker has a challenge rating of 0, meaning it is not a significant threat to adventurers and primarily adds ambiance or challenges related to its abilities. One notable strength is its ability to remain motionless and blend in with its surroundings, making it difficult to detect until it chooses to react. However, it has many weaknesses, including vulnerability to fire damage, which can quickly eliminate it, as well as low stats across most attributes, rendering it ineffective in combat situations.</summary>
@@ -35,6 +37,7 @@ As a reaction, the Shrieker can perform a Startled Shriek whenever bright light 
 
 Source: 5e_srd
 
+<statblock>
 ### Shrieker (Fungi)
 
 *Medium plant, unaligned*
@@ -61,7 +64,8 @@ Source: 5e_srd
 
 ###### Reactions
 
-***Shriek***. When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker's turns afterward.
+***Shriek***. When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker's turns afterward.</statblock>
+
 
 
 
@@ -69,6 +73,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shrieker
 
 *Medium* *Plant*
@@ -98,6 +103,7 @@ Source: 5e_artisinal_monsters
 - **Shriek:** If the shrieker perceives a creature within 30 feet  or if an area of bright light is within 30 feet  it shrieks loudly and continuously. The shriek is audible within 300 feet. The shrieker continues to shriek for 1 minute after the creature or light has moved away.
 
 
+</statblock>
 
 
 
@@ -106,6 +112,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shrieker
 
 *Medium plant*
@@ -142,5 +149,6 @@ Source: 5e_artisinal_monsters
 
 - **Startled Shriek.** When bright light or a creature other than a Plant moves to within 30 feet of the shrieker, the shrieker can use Shriek, if it isn’t already shrieking.
 
+</statblock>
 
 

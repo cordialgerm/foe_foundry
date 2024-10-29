@@ -1,0 +1,25 @@
+{
+    "name": "Gutter Troll",
+    "queries": [
+        {
+            "query": "poisonous giant that can regenerate and swim",
+            "variant": "regenerating giant that swims and poisons"
+        },
+        {
+            "query": "medium-sized troll with keen smell and psychoactive sweat",
+            "variant": "troll of medium size that has keen smell and psychoactive sweat"
+        },
+        {
+            "query": "giant monster with low intelligence that thrives in water and fights with claws",
+            "variant": "monster giant with bad intelligence that fights with claws and lives in water"
+        },
+        {
+            "query": "gutter troll with strong melee attacks and vulnerability to fire",
+            "variant": "troll from the gutter with strong melee attacks and a weakness to fire"
+        },
+        {
+            "query": "troll that can breathe underwater and has a sticky tongue attack",
+            "variant": "underwater breathing troll with sticky tongue ability"
+        }
+    ]
+}

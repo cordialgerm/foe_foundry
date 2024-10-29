@@ -1,0 +1,52 @@
+{
+    "name": "Vila",
+    "creature_type": "Fey",
+    "alignment": "Lawful Neutral",
+    "size": "Medium",
+    "hp": 77,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walks at 30 feet, traverses difficult terrain easily",
+    "role": "Controller",
+    "tags": [
+        "fey",
+        "forest",
+        "nature"
+    ],
+    "adjectives": [
+        "agile",
+        "deceptive",
+        "poisonous"
+    ],
+    "description": "The Vila is an elegant creature with an exceptional dexterous build, standing as a protector of the forest with a refined presence enhanced by its fey nature. It possesses both a shortsword and a shortbow, each capable of inflicting piercing and poison damage.",
+    "memorable": "The Vila's ability to manipulate the environment and summon beasts makes it a formidable foe in combat.",
+    "goals": "To protect the forest and manage wildlife interactions while being a tough combatant.",
+    "relations": "Often found in company with woodland creatures, it may summon wolves or wampus cats to assist in battle.",
+    "environment": "Primarily found in forested areas, thriving in natural environments.",
+    "strengths": "Superior agility and combat effectiveness due to poisoned weapons and battlefield control abilities.",
+    "weaknesses": "Susceptible to magical damage.",
+    "attacks": "Employs its Multiattack to use the Song of the Forest and then strikes with a shortsword or shortbow, dealing additional poison damage.",
+    "most_powerful_ability": "The Song of the Forest can debilitate foes depending on their Wisdom saving throw, allowing the Vila to control the battlefield.",
+    "equipment": "Wields a shortsword and a shortbow, each enhanced with magical poison.",
+    "senses": "Possesses darkvision up to 60 feet and has a high passive Perception score of 18, making it very aware of its surroundings.",
+    "skills": "Excels in Animal Handling, Perception, and Stealth, making it an adept creature in nature and combat.",
+    "additional_information": [
+        "Can traverse nonmagical plants without restriction.",
+        "Has advantage on initiative rolls in forest terrain.",
+        "Can communicate with beasts.",
+        "Has damage resistances to nonmagical attacks.",
+        "Ability to summon allies once per day."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "elegant forest guardian with poison attacks",
+        "agile fey creature skilled in stealth",
+        "vila can summon wolves to fight",
+        "poisonous monster with superior agility",
+        "creature that controls nature and wildlife"
+    ]
+}

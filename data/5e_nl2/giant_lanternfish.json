@@ -1,0 +1,52 @@
+{
+    "name": "Giant Lanternfish",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 85,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "monstrosity",
+        "chaotic",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "malevolent",
+        "chaotic",
+        "versatile"
+    ],
+    "description": "The Giant Lanternfish is a large, malevolent creature with a chaotic aura, known for its deceptive appearance and powerful magical abilities.",
+    "memorable": "It combines physical attacks with potent spellcasting, including charm and illusion spells that can incapacitate opponents.",
+    "goals": "To manipulate and charm its foes before defeating them with physical and magical attacks.",
+    "relations": "Interactions may include deceptive alliances with other chaotic beings or luring adventurers into ambushes.",
+    "environment": "Typically found in dark or aquatic environments where it can exploit its deceptive abilities.",
+    "strengths": "High physical capabilities alongside strong spellcasting potential make it a formidable opponent.",
+    "weaknesses": "Relies on concentration for spellcasting, making it vulnerable to interruption.",
+    "attacks": "Utilizes melee spell attacks like Dizzying Touch to charm foes and Claws for significant slashing damage, along with a poison-inflicting Dagger attack.",
+    "most_powerful_ability": "Hypnotic Pattern allows it to incapacitate multiple opponents, rendering them immobile.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 15, allowing it to notice hidden threats effectively.",
+    "skills": "Notable skills in deception, perception, and stealth, contributing to its chaotic nature.",
+    "additional_information": [
+        "Innate spellcasting using Charisma with a strong spell save DC of 14.",
+        "Can cast spells like charm person and hypnotic pattern without material components.",
+        "Has an aura that exudes chaos and evil, demoralizing foes.",
+        "Ability to teleport using Misty Step, enhancing its mobility in combat.",
+        "Capable of charming creatures for extended periods, making it a deadly manipulator."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcaster with access to illusion and charm spells like major image and disguise self.",
+    "test_queries": [
+        "chaotic evil spellcaster monster",
+        "large fish monster with charm powers",
+        "monster that manipulates with hypnotic lights",
+        "malevolent creature that teleports and deceives",
+        "fish with magical abilities and sharp claws"
+    ]
+}

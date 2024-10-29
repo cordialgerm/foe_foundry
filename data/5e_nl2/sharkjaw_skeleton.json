@@ -1,0 +1,48 @@
+{
+    "name": "Sharkjaw Skeleton",
+    "creature_type": "Undead",
+    "alignment": "Lawful Evil",
+    "size": "Large",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "skeleton",
+        "predatory"
+    ],
+    "adjectives": [
+        "formidable",
+        "menacing"
+    ],
+    "description": "The Sharkjaw Skeleton carries the predatory traits of a shark, featuring many jaws and a skeletal structure that instills fear.",
+    "memorable": "Its ability to grapple and devour prey makes it a terrifying opponent in combat.",
+    "goals": "Subdue and destroy foes, using its grappling abilities to control the battlefield.",
+    "relations": "Related to other undead creatures and may serve powerful necromancers.",
+    "environment": "Typically found in dark areas, such as crypts or underwater ruins.",
+    "strengths": "Strong offensive capabilities, especially with grappling and restraining opponents.",
+    "weaknesses": "Vulnerable to bludgeoning damage, making it susceptible to certain attacks.",
+    "attacks": "Bite attack that can deal significant piercing damage and grapple foes.",
+    "most_powerful_ability": "Devouring Embrace, which allows it to restrain and continuously damage a grappled target.",
+    "senses": "Possesses blindsight up to 30 feet, enhancing its ability to detect foes.",
+    "skills": "Has average Perception and good Stealth skills for ambushing opponents.",
+    "additional_information": [
+        "Resilient to cold and poison damage.",
+        "Immunity to exhaustion and being poisoned.",
+        "Functions without air, food, drink, or sleep due to Undead Nature.",
+        "Can grapple up to two targets simultaneously.",
+        "Requires a successful Strength check to free a devoured target."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "undead monster that devours prey",
+        "menacing skeleton with grappling abilities",
+        "large predatory skeleton in dark places",
+        "terrifying undead with a shark-like bite",
+        "skeleton with unique devouring mechanics"
+    ]
+}

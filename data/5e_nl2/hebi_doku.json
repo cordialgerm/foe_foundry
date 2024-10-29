@@ -1,0 +1,54 @@
+{
+    "name": "Hebi-Doku",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 123,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "climb 40 ft., walk 40 ft.",
+    "role": "null",
+    "tags": [
+        "fey",
+        "snake",
+        "venomous",
+        "captivating"
+    ],
+    "adjectives": [
+        "formidable",
+        "serpentine",
+        "chaotic",
+        "dangerous"
+    ],
+    "description": "The Hebi-Doku is a sleek, serpentine creature embodying chaos, known for its striking appearance and menacing demeanor.",
+    "memorable": "It excels in controlling combat with its venomous attacks and ability to command snakes telepathically.",
+    "goals": "To incapacitate and dominate foes in battle while utilizing venomous tactics.",
+    "relations": "Often found in the company of snakes or serving as an ally to other fey creatures.",
+    "environment": "Typically inhabits lush or chaotic natural environments, often near water sources.",
+    "strengths": "Immunity to poison damage and condition, combined with high Dexterity making it difficult to hit.",
+    "weaknesses": "Vulnerable to radiant damage, which can be exploited in combat.",
+    "attacks": "Utilizes a deadly array of attacks including a venomous bite, disabling sting, and toxic spit.",
+    "most_powerful_ability": "Transfixing Rattle, which can incapacitate and freeze opponents in place temporarily.",
+    "equipment": null,
+    "senses": "Possesses keen smell, granting advantage on Perception checks relying on it.",
+    "skills": "Proficient in perception, allowing it to effectively detect hidden enemies.",
+    "additional_information": [
+        "Damage immunity to poison and immunity to poisoned condition.",
+        "Ability to command snakes within 120 feet telepathically.",
+        "High Dexterity and Constitution, enhancing evasion.",
+        "Capable of multiattack, maximizing damage in a single turn.",
+        "Tactical advantage of incapacitating enemies and controlling the battlefield."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "serpentine creature that commands snakes",
+        "poisonous fey with captivating rattle",
+        "medium fey that uses toxic spittle attack",
+        "Hebi-Doku abilities and actions",
+        "chaotic evil snake-like fey monster"
+    ]
+}

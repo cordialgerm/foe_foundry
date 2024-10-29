@@ -1,0 +1,51 @@
+{
+    "name": "Moonless Hunter",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft. climb 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "psychological manipulation",
+        "nightmare"
+    ],
+    "adjectives": [
+        "stealthy",
+        "psychological",
+        "agile",
+        "cunning"
+    ],
+    "description": "The Moonless Hunter is a Medium-sized fey creature characterized by its agility, featuring notable physical traits with a strong build and dark characteristics, excelling in stealth and shadowy environments.",
+    "memorable": "It uses nightmares to weaken foes while simultaneously being a capable physical threat.",
+    "goals": "To instill fear and debilitate through psychological manipulation while inflicting physical harm.",
+    "relations": "Can be encountered alongside other fey or creatures that thrive in darkness.",
+    "environment": "Thrives in dark, shadowy environments, hindered by sunlight.",
+    "strengths": "High Dexterity allows it to evade attacks effectively; possesses magical resistance.",
+    "weaknesses": "Vulnerable to silvered weapons and hindered in bright light.",
+    "attacks": "Uses multiattack strategy including biting and clawing, can grapple with its claws.",
+    "most_powerful_ability": "Nightmare Leap that inflicts exhaustion and potential long-term madness.",
+    "equipment": null,
+    "senses": "It exhibits exceptional stealth advantages in darkness but suffers in sunlight.",
+    "skills": "Possesses moderate perception skills, facilitating average awareness.",
+    "additional_information": [
+        "Resists necrotic damage and mundane weapon attacks unless silvered.",
+        "Immunity to being charmed and poisoned.",
+        "Can communicate telepathically over short distances.",
+        "Utilizes psychological tactics effectively within combat scenarios.",
+        "Can manipulate dreams to destabilize and frighten multiple targets."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fey creature that uses psychological tactics",
+        "agile hunter that thrives in darkness",
+        "creature that inflicts nightmares on foes",
+        "moonless hunter with silver weapon vulnerability",
+        "medium fey skilled in psychological warfare"
+    ]
+}

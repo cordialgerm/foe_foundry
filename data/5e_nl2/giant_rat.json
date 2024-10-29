@@ -1,0 +1,49 @@
+{
+    "name": "Giant Rat",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 7,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "30 ft. walking speed",
+    "role": null,
+    "tags": [
+        "beast",
+        "swarm",
+        "disease"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "sneaky"
+    ],
+    "description": "A larger, aggressive version of a common rat, found in dark, abandoned areas. It has sharp teeth and claws, and its pack mentality makes it dangerous in groups.",
+    "memorable": "Known for its ability to overwhelm opponents in swarms, and its bites can spread diseases.",
+    "goals": "Scavenging for food, including carrion, while hunting in packs.",
+    "relations": "Often found in abandoned buildings or dungeons; can be encountered with other vermin.",
+    "environment": "Dark, abandoned areas like sewers, dungeons, or ruined buildings.",
+    "strengths": "Pack tactics grant advantages when attacking in groups; keen smell enhances its perception.",
+    "weaknesses": "Individually weak and easily dispatched by stronger characters.",
+    "attacks": "Bite action that deals piercing damage and has a chance to spread disease.",
+    "most_powerful_ability": "Pack Tactics provide advantages when coordinating attacks with allies.",
+    "senses": "Heightened sense of smell gives it an effective Perception score of 15 when tracking.",
+    "skills": "Good at hiding, reflected by a Stealth score of 15.",
+    "additional_information": [
+        "Accustomed to Filth gives advantage on saves against diseases.",
+        "Can overwhelm targets when in swarms.",
+        "Capable of gnawing through wood and stone.",
+        "Highly agile in combat situations.",
+        "Coordinated attacks make it a greater challenge."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small disease-spreading scavenger in groups",
+        "agile rat that hunts in packs",
+        "sneaky rat found in sewers",
+        "fast scurrying monster with sharp teeth",
+        "dangerous pack of giant rats"
+    ]
+}

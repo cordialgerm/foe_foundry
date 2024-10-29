@@ -1,0 +1,25 @@
+{
+    "name": "Stone Giant Stonetalker",
+    "queries": [
+        {
+            "query": "massive stone giant with camouflage abilities that can control the environment",
+            "variant": "huge stone giant known for camouflage and environmental control"
+        },
+        {
+            "query": "giant with high strength and stone manipulation spells in rocky terrain",
+            "variant": "strong giant that casts stone spells and excels in rocky environments"
+        },
+        {
+            "query": "stealthy giant capable of ambushes and using avalanches",
+            "variant": "giant that excels at stealth and can create avalanches"
+        },
+        {
+            "query": "physical powerhouse giant that can grapple and throw targets",
+            "variant": "muscular giant that can grab and throw creatures with ease"
+        },
+        {
+            "query": "combat-effective giant with high hit points and area damage abilities",
+            "variant": "high HP giant that deals area damage and is effective in combat"
+        }
+    ]
+}

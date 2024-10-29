@@ -1,0 +1,25 @@
+{
+    "name": "Oth",
+    "queries": [
+        {
+            "query": "large aberrant creature with versatile abilities and acid resistance",
+            "variant": "large abberation monster that has versatile powers and resists acid"
+        },
+        {
+            "query": "monster that uses acid spray and can blind creatures",
+            "variant": "creature that can spray acid and has the ability to blind opponents"
+        },
+        {
+            "query": "Oth abilities for spellcasting and melee attacks",
+            "variant": "abilities of Oth for casting spells and performing melee attacks"
+        },
+        {
+            "query": "creature with significant hit points and a lawful neutral alignment",
+            "variant": "monster with high hit points and lawful neutral nature"
+        },
+        {
+            "query": "large creature with multiple roles and strong Charisma",
+            "variant": "big monster that can take on multiple roles and has high charisma"
+        }
+    ]
+}

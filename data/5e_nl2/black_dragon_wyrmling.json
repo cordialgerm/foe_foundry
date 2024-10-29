@@ -1,0 +1,54 @@
+{
+    "name": "Black Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 33,
+    "ac": 17,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft. walking, 60 ft. flying, 30 ft. swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "wyrmling",
+        "amphibious",
+        "acid"
+    ],
+    "adjectives": [
+        "black",
+        "young",
+        "stealthy",
+        "formidable"
+    ],
+    "description": "The Black Dragon Wyrmling is a medium-sized dragon characterized by its sleek, dark scales that shimmer like the depths of a murky lake. It possesses a pair of powerful wings and a long, sinuous tail, making it agile both in the air and underwater.",
+    "memorable": "This wyrmling's signature Acid Breath attack can devastate multiple foes at once, and its ability to stealthily strike from submerged positions makes it a fearsome adversary.",
+    "goals": "To dominate its territory and hunt down weaker creatures, utilizing its stealth and aquatic abilities to ambush prey.",
+    "relations": "May be found serving under more powerful black dragons or allied with other aquatic creatures in its habitat.",
+    "environment": "Typically inhabits dark, swampy areas or murky waters.",
+    "strengths": "Resilient due to acid immunity, excellent mobility with the ability to fly and swim, and strong stealth capabilities.",
+    "weaknesses": "Limited intelligence and lack of versatility compared to older dragons.",
+    "attacks": "Can utilize a Bite attack that deals piercing damage, as well as a powerful Acid Breath that inflicts significant area damage.",
+    "most_powerful_ability": "Acid Breath, an area-of-effect attack that deals heavy acid damage and can affect multiple targets.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 10 feet, enhancing its ability to navigate and strike in darkness.",
+    "skills": "Excels in Stealth, allowing it to move silently and surprise opponents.",
+    "additional_information": [
+        "Amphibious, allowing it to breathe in both air and water.",
+        "Can ambush successfully when submerged due to advantage on Stealth checks.",
+        "Has a Pounce ability that can knock targets prone for increased combat advantage.",
+        "Flies at a speed of 60 ft., providing excellent maneuverability in combat.",
+        "Highly effective in aquatic settings, combining mobility and stealth."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dark water dragon",
+        "stealthy wyrmling",
+        "acid-breathing dragon",
+        "young black dragon",
+        "aquatic predator dragon"
+    ]
+}

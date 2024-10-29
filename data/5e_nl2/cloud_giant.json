@@ -1,0 +1,55 @@
+{
+    "name": "Cloud Giant",
+    "creature_type": "Giant",
+    "alignment": "neutral good (50%) or neutral evil (50%)",
+    "size": "Huge",
+    "hp": 200,
+    "ac": 14,
+    "srd": true,
+    "cr": "9",
+    "movement": "40 ft., fly 60 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "spellcaster",
+        "weather control",
+        "aristocratic"
+    ],
+    "adjectives": [
+        "towering",
+        "majestic",
+        "aloof",
+        "powerful"
+    ],
+    "description": "Cloud Giants are towering, majestic beings with pale, almost translucent skin and hair that billows as though caught in a breeze. They live among the clouds in vast floating castles.",
+    "memorable": "Known for their ability to control the weather, summon thunderstorms, and hurl lightning bolts, Cloud Giants can be either benevolent or tyrannical rulers.",
+    "goals": "They treasure wealth, particularly valuable objects and rare gemstones, and often rule over smaller creatures from their cloud castles.",
+    "relations": "Related to other giant races and may command lesser beings or creatures that reside in the clouds.",
+    "environment": "Found in floating castles among the clouds and high altitudes.",
+    "strengths": "Possesses exceptional Strength and Constitution, making them formidable opponents in melee and spellcasting.",
+    "weaknesses": "Vulnerable to being knocked prone, which could exploit its mobility advantage.",
+    "attacks": "Utilizes a powerful glaive for melee attacks and can throw large rocks as ranged attacks, dealing substantial slashing and bludgeoning damage.",
+    "most_powerful_ability": "Can control the weather, significantly impacting the battlefield and creating storms.",
+    "equipment": null,
+    "senses": "Has keen smell, increasing its perception when relying on scent, along with Cloud Sight allowing it to see through obscured areas.",
+    "skills": "Shows proficiency in insight, perception, and persuasion, enabling it to engage effectively both in combat and social interactions.",
+    "additional_information": [
+        "Can create heavily obscured areas with fog cloud",
+        "Empowered melee attacks with multiattack capability",
+        "Strong presence due to high Charisma",
+        "Resistance to lightning and thunder damage",
+        "Ability to teleport short distances with Misty Step"
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcaster with a variety of spells focused on weather control and battlefield manipulation.",
+    "test_queries": [
+        "majestic giant that controls the weather",
+        "towering cloud-based creature with spellcasting",
+        "giant with lightning abilities living in the clouds",
+        "aristocratic giant with immense physical power",
+        "cloud-covered giant that creates fog in battle"
+    ]
+}

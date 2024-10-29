@@ -1,0 +1,52 @@
+{
+    "name": "Wanyudo",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 115,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walks at 50 feet speed",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "fire",
+        "melee"
+    ],
+    "adjectives": [
+        "sinister",
+        "powerful",
+        "durable"
+    ],
+    "description": "The Wanyudo is a large fiend with two heads, characterized by its menacing presence and natural armor. Its durable body allows it to withstand considerable damage, while its strong features indicate significant strength and resilience.",
+    "memorable": "The Wanyudo's two heads grant it unique advantages in perception and combat, making it a notable threat.",
+    "goals": "Typically seeks to battle and dominate holy beings and defend its fiendish domain.",
+    "relations": "May be encountered alongside other fiends or as a servant to more powerful evil entities.",
+    "environment": "Often found in infernal realms or as a guardian of cursed places.",
+    "strengths": "Possesses strong damage immunities and the ability to resist spells, making it a challenging opponent.",
+    "weaknesses": "Low Intelligence may hinder complex tactical planning.",
+    "attacks": "Utilizes multiattack with powerful bite attacks, delivering both piercing and fire damage.",
+    "most_powerful_ability": "Flaming Breath can significantly damage multiple targets at once in combat.",
+    "equipment": null,
+    "senses": "With a passive perception of 17, it can easily detect hidden threats.",
+    "skills": "Has proficient intimidation and perception skills, enhancing its fearsome presence and alertness.",
+    "additional_information": [
+        "Has advantage against creatures with holy symbols or divine powers.",
+        "Can knock opponents prone with its charge attack.",
+        "Takes extra fire damage during its charge.",
+        "Resilient against nonmagical attacks.",
+        "Unique two-headed feature provides strategic combat advantages."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large fire-breathing fiend",
+        "sinister two-headed monster with high perception",
+        "fiend that specializes in intimidating foes",
+        "powerful creature resistant to spells",
+        "Wanyudo's fiery charge attack"
+    ]
+}

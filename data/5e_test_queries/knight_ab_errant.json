@@ -1,0 +1,25 @@
+{
+    "name": "Knight Ab-errant",
+    "queries": [
+        {
+            "query": "large humanoid with high strength and psychic vulnerability",
+            "variant": "humanoid creature with strong physical power and weakness to psychic damage"
+        },
+        {
+            "query": "combatant that can knock opponents prone and excels in melee",
+            "variant": "fighter that has the ability to knock down enemies and is skilled in close combat"
+        },
+        {
+            "query": "Knight Ab-errant abilities to deal extra damage to smaller foes",
+            "variant": "Knight that can inflict more damage on Medium or smaller adversaries"
+        },
+        {
+            "query": "monster with armor scraps that has magic resistance and intimidation skills",
+            "variant": "creature wearing armor bits that is resistant to spells and skilled in intimidation"
+        },
+        {
+            "query": "Knight Ab-errant's multiattack action and sweeping maul attack details",
+            "variant": "details on multiattack and sweeping maul strike for Knight Ab-errant"
+        }
+    ]
+}

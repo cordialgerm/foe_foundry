@@ -1,0 +1,25 @@
+{
+    "name": "Angler Worm",
+    "queries": [
+        {
+            "query": "huge grappling monster with traps in a dungeon",
+            "variant": "huge monster that grapples and sets traps in dungeons"
+        },
+        {
+            "query": "creature with tremorsense and nearly invisible snares",
+            "variant": "creature that has tremorsense and almost invisible snares"
+        },
+        {
+            "query": "slow monster that uses blue light to charm adventurers",
+            "variant": "slow creature that charms adventurers with blue light"
+        },
+        {
+            "query": "monstrosity with high HP and low Dexterity in its habitat",
+            "variant": "monstrosity that has high hit points and weak dexterity in its environment"
+        },
+        {
+            "query": "angler worm abilities related to grappling and perception",
+            "variant": "angler worm skills that involve grappling and perception"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Erina",
+    "queries": [
+        {
+            "query": "small humanoid that can burrow and has keen smell ability",
+            "variant": "humanoid creature that can burrow and has a keen smell"
+        },
+        {
+            "query": "creature with poison resistance and darkvision living underground",
+            "variant": "underground creature with darkvision and poison resistance"
+        },
+        {
+            "query": "fast little monster that uses spines for defense and is agile",
+            "variant": "agile small creature that uses spines for defense and is fast"
+        },
+        {
+            "query": "creature with low strength but high constitution that can escape danger",
+            "variant": "weak strength creature with a good constitution able to escape"
+        },
+        {
+            "query": "crafty humanoid with mobility and unique abilities in dim light",
+            "variant": "crafty small humanoid with unique powers in low light"
+        }
+    ]
+}

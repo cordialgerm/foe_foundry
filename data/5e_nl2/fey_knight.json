@@ -1,0 +1,57 @@
+{
+    "name": "Fey Knight",
+    "creature_type": "Fey",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 58,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 35 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "Fey",
+        "Magical",
+        "Agile",
+        "Charmed"
+    ],
+    "adjectives": [
+        "graceful",
+        "tricky",
+        "magical",
+        "deceptive"
+    ],
+    "description": "The Fey Knight is a magical creature from the Fey realm, embodying grace and trickery, notable for its agility, with a dexterous build and adorned in fey-themed armor.",
+    "memorable": "With abilities to charm, shift size, and manipulate surroundings, it combines offensive and defensive strategies through its fey magic.",
+    "goals": "To use trickery and charm to manipulate opponents while avoiding direct combat.",
+    "relations": "Likely serves as an envoy or protector of higher fey entities and can work alongside other Fey creatures.",
+    "environment": "Typically found in magical forests or Fey realms, where nature thrives and enchantment permeates the air.",
+    "strengths": "Immunities to charmed and unconscious conditions make it resilient against various magical assaults; excels in stealth and deception.",
+    "weaknesses": "Vulnerable to strong physical attacks due to average Strength score, sometimes relying on agility rather than raw power.",
+    "attacks": "Utilizes a Glittering Scimitar for melee attacks dealing slashing and elemental damage, and a Longbow for ranged attacks with poison effects.",
+    "most_powerful_ability": "Fey Glamour allows it to charm humanoids, manipulating foes effectively for a full day unless disturbed.",
+    "equipment": "Glittering Scimitar and a Longbow, enhancing its versatility in both melee and ranged combat.",
+    "senses": "Possesses a passive Perception of 15, making it quite observant in its environment.",
+    "skills": "Highly skilled in stealth, deception, and perception, allowing it to navigate and manipulate encounters effectively.",
+    "additional_information": [
+        "Can assume a Tiny form, reducing damage taken.",
+        "Uses Faerie Light to manipulate visibility in tactical situations.",
+        "Gains a defensive boost from Nature's Shield when near foliage.",
+        "Exceptional mobility enhances its combat presence.",
+        "Charms can last for a year and a day if the target resists."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "elegant magical fey warrior",
+        "swift creature with charming abilities",
+        "stealthy knight that manipulates combat",
+        "Flying fey with keen deception skills",
+        "agile fey with powerful poison attacks"
+    ]
+}

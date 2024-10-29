@@ -1,0 +1,51 @@
+{
+    "name": "Iceworm",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 38,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 ft., burrow 30 ft., swim 20 ft.",
+    "role": null,
+    "tags": [
+        "cold",
+        "amphibious",
+        "slippery"
+    ],
+    "adjectives": [
+        "elusive",
+        "nimble",
+        "cold-sensitive"
+    ],
+    "description": "The Iceworm is a small, slippery monstrosity adapted to cold environments, featuring a streamlined body capable of burrowing and swimming through icy terrain.",
+    "memorable": "Its icy attacks can hinder opponents significantly, coating them in freezing slime that reduces their speed.",
+    "goals": "Typically seeks warmth and food, utilizing its sense to locate warm-blooded creatures.",
+    "relations": "May be found in colonies with similar cold-adapted monsters or other aquatic creatures.",
+    "environment": "Cold environments, such as icy waters or snowy landscapes.",
+    "strengths": "Agile movement and ability to inflict cold damage; advantageous in icy terrains.",
+    "weaknesses": "Vulnerable to fire and extreme heat, which affects its combat abilities.",
+    "attacks": "Icy Bite delivers piercing and cold damage, while Icy Spit reduces the enemy's speed and accuracy.",
+    "most_powerful_ability": "Cold Physiology makes it vulnerable to exhaustion in warmer temperatures, yet it has an advantage on escape attempts due to its slippery nature.",
+    "equipment": null,
+    "senses": "Blindsight up to 90 feet and tremorsense up to 30 feet enhance its ability to locate prey in icy conditions.",
+    "skills": "Perception at -1 reflects its average awareness in combat situations.",
+    "additional_information": [
+        "Can breathe air and water.",
+        "Has disadvantage on attack rolls near sources of strong heat.",
+        "Can detect warm-blooded creatures within 90 feet.",
+        "Slippery ability aids in escaping grapples."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small cold monster that swims",
+        "ice creature with slippery escape abilities",
+        "amphibious monster native to icy environments",
+        "creature that uses cold attacks and hinders foes",
+        "nimble worm-like monster with cold sensitivities"
+    ]
+}

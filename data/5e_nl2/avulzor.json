@@ -1,0 +1,53 @@
+{
+    "name": "Avulzor",
+    "creature_type": "Aberration",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 135,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "bone manipulation",
+        "tactical"
+    ],
+    "adjectives": [
+        "formidable",
+        "strategic",
+        "manipulative",
+        "resilient"
+    ],
+    "description": "Avulzor is a large aberration that wears a kilt made of bones. It features a robust physique with excellent defensive attributes and possesses the ability to manipulate bones.",
+    "memorable": "Avulzor can animate and enhance the capabilities of skeletons, commanding them in battle while directly confronting foes.",
+    "goals": "To manipulate and command undead forces, exert control over the battlefield, and leverage tactical advantages in combat.",
+    "relations": "Avulzor is likely to lead armies of undead and could be encountered alongside other necromancers or undead creatures.",
+    "environment": "Usually found in dark places, tombs, or locations of significant death.",
+    "strengths": "Immunities to necrotic damage and advantages in command over undead allies, making it a daunting opponent.",
+    "weaknesses": "Vulnerable to magical attacks, particularly those that are potent against aberrations.",
+    "attacks": "Utilizes claw and synchronized bite attacks, capable of inflicting slashing and piercing damage with strong hit bonuses.",
+    "most_powerful_ability": "Bone Shaping allows Avulzor to manipulate and enhance its skeletal minions significantly, altering their functionality and combat abilities.",
+    "equipment": "Bone Kilt that enhances its Armor Class and allows the creation of skeletons.",
+    "senses": "Passive Perception of 16 reflects its keen awareness of its surroundings.",
+    "skills": "Proficient in Arcana, allowing it to excel in intelligence-related checks.",
+    "additional_information": [
+        "Can control up to three animated skeletons at a time.",
+        "Bone Shaping provides versatile modifications to skeletons.",
+        "Turning Defiance grants advantage on saving throws to nearby undead.",
+        "Multiattack technique allows multiple offensive options in combat.",
+        "Possesses high Strength and Intelligence, enhancing its combat and magical effectiveness."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "bone manipulation monster",
+        "undead commander creature",
+        "formidable aberration enemy",
+        "lawful evil bone creature",
+        "strategic tactical monster"
+    ]
+}

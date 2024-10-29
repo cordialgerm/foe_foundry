@@ -1,0 +1,52 @@
+{
+    "name": "Ghast of Leng",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 127,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "monster",
+        "evil",
+        "combat"
+    ],
+    "adjectives": [
+        "menacing",
+        "large",
+        "resilient",
+        "ferocious"
+    ],
+    "description": "The Ghast of Leng is a large, monstrous being with a vicious demeanor and sharp claws, designed for melee combat.",
+    "memorable": "Its Blood Frenzy ability allows it to strike harder against weakened foes, making it a fearsome opponent in battle.",
+    "goals": "To overpower and devour weakened enemies, utilizing its combat prowess.",
+    "relations": "Related to other grotesque aberrations and may serve or lead lesser undead.",
+    "environment": "Typically found in dark, eerie locations where it can leverage its abilities without sunlight interference.",
+    "strengths": "Has high Dexterity which enhances evasion; benefits from advantages against weakened foes with Blood Frenzy.",
+    "weaknesses": "Vulnerable to radiant damage and suffers in sunlight, with disadvantages on attacks and ability checks.",
+    "attacks": "Powerful melee attacks with claws and bite that deal substantial slashing and piercing damage.",
+    "most_powerful_ability": "Blood Frenzy grants it advantage on attack rolls against injured creatures, amplifying its lethality.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet, although it has a passive perception of only 11.",
+    "skills": "Has a basic proficiency in perception, allowing it to detect surroundings but not excel in it.",
+    "additional_information": [
+        "Blood Frenzy ability enhances melee attacks against injured foes.",
+        "Sunlight hypersensitivity makes it weak in daylight.",
+        "Keen Smell enhances its awareness of surroundings."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "menacing large creature with claws",
+        "Ghast that thrives in darkness",
+        "monster with Blood Frenzy ability",
+        "combat beast vulnerable to sunlight",
+        "ferocious aberration with a keen sense of smell"
+    ]
+}

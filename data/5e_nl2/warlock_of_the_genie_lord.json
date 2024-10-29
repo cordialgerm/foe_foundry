@@ -1,0 +1,57 @@
+{
+    "name": "Warlock Of The Genie Lord",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 15,
+    "srd": false,
+    "ac_description": "studded leather",
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "spellcaster",
+        "elemental",
+        "resilient"
+    ],
+    "adjectives": [
+        "elemental",
+        "versatile",
+        "resilient"
+    ],
+    "description": "A medium humanoid with a commanding presence, skilled in elemental manipulation and spellcasting, wearing studded leather armor.",
+    "memorable": "Possesses resistance to multiple damage types and can enhance its attacks with elemental damage.",
+    "goals": "Utilize elemental forces in combat and protect itself with versatile spellcasting.",
+    "relations": "May serve or be associated with Genie Lords, other elementals, or spellcasters.",
+    "environment": "Often found in locations tied to elemental energies or near Genies.",
+    "strengths": "Resistance to acid, cold, fire, lightning, and thunder damage. Capable of delivering high burst damage through Elemental Burst ability.",
+    "weaknesses": "Average physical combat effectiveness due to moderate Strength.",
+    "attacks": "Utilizes Dagger for piercing damage combined with elemental effects, and Elemental Burst for significant area damage with versatility.",
+    "most_powerful_ability": "Elemental Weapons ability allows an additional 3d6 damage of elemental type, increasing overall damage output.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses an average Perception skill, making it aware of its surroundings.",
+    "additional_information": [
+        "Can levitate and breathe underwater as part of its spell repertoire.",
+        "Gains advantage on next Elemental Burst attack after taking elemental damage.",
+        "Can summon minor elementals once per day, enhancing battlefield control.",
+        "Has access to spells that provide mobility and protection like Fly and Fire Shield.",
+        "Can create barriers with Wall of Stone to control combat terrain."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Utilizes Charisma for spellcasting, has a spell save DC of 15, and multiple spells for varied effects.",
+    "test_queries": [
+        "elemental spellcaster with high damage output",
+        "humanoid that manipulates elemental forces",
+        "warlock capable of flying and breathing underwater",
+        "creature resistant to multiple damage types",
+        "medium humanoid with versatile elemental attacks"
+    ]
+}

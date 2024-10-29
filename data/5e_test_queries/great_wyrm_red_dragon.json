@@ -1,0 +1,25 @@
+{
+    "name": "Great Wyrm Red Dragon",
+    "queries": [
+        {
+            "query": "gargantuan red dragon with devastating fire abilities",
+            "variant": "gargantuan dragon that is red and has devastating fire powers"
+        },
+        {
+            "query": "massive dragon that can fly and has high armor class",
+            "variant": "huge dragon capable of flying and has a strong armor class"
+        },
+        {
+            "query": "fearsome fire-breathing dragon that instills terror",
+            "variant": "terrifying dragon that breathes fire and inspires fear"
+        },
+        {
+            "query": "dragon immune to fire damage that commands respect",
+            "variant": "dragon that is immune to fire and demands respect"
+        },
+        {
+            "query": "red dragon with multiattack and legendary abilities",
+            "variant": "dragon that is red and possesses multiattack and legendary powers"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Black Pudding",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 85,
+    "ac": 7,
+    "srd": true,
+    "cr": "4",
+    "movement": "20 ft. walking, 20 ft. climbing, 20 ft. swimming",
+    "role": null,
+    "tags": [
+        "ooze",
+        "corrosive",
+        "resilient",
+        "acidic"
+    ],
+    "adjectives": [
+        "massive",
+        "formless",
+        "acidic",
+        "dangerous"
+    ],
+    "description": "The Black Pudding is a massive, formless ooze that flows and slithers through underground caverns and dungeons. Its body consists of a thick, acidic sludge that dissolves anything organic it touches, including flesh, wood, and metal.",
+    "memorable": "It can split into smaller versions of itself when damaged and dissolves nonmagical weapons and armor upon contact, making it a persistent threat in battle.",
+    "goals": "It instinctively engulfs and dissolves anything it encounters, consuming whatever it can find in forgotten tunnels or abandoned ruins.",
+    "relations": "It can be found lurking near other subterranean monsters or within abandoned dungeons.",
+    "environment": "Underground caverns and dungeons, often in forgotten tunnels or ruins.",
+    "strengths": "Immune to acid, cold, lightning, and slashing damage; can move through narrow spaces without squeezing; exceptionally resilient against conditions.",
+    "weaknesses": "Sunlight imposes disadvantage on its attack rolls, which can be a significant tactical disadvantage in outdoor encounters.",
+    "attacks": "It uses a pseudopod to attack, dealing bludgeoning damage alongside corrosive acid damage, and can degrade the armor of those it hits.",
+    "most_powerful_ability": "Corrosive Body allows it to deal acid damage to creatures that touch it or attack it in melee, while also degrading their nonmagical weapons and armor.",
+    "equipment": null,
+    "senses": "It has blindsight up to 60 feet, but cannot see beyond that range.",
+    "skills": null,
+    "additional_information": [
+        "Can climb difficult surfaces, including ceilings, without difficulty.",
+        "Splits into two smaller puddings when taking lightning or slashing damage if above 10 hit points, increasing its threat level.",
+        "Does not require air or sleep, remaining active and ready for encounters without rest.",
+        "Can reduce the radius of nearby light sources within 60 feet, creating tactical advantages in dimly lit environments.",
+        "Dissolves 2-inch-thick nonmagical wood or metal in one round, showcasing its formidable corrosive capabilities."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "corrosive ooze monster",
+        "large acid creature",
+        "dungeon lurking ooze",
+        "split multiplying slime",
+        "underground acid blob"
+    ]
+}

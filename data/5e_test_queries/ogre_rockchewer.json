@@ -1,0 +1,25 @@
+{
+    "name": "Ogre, Rockchewer",
+    "queries": [
+        {
+            "query": "huge giant with powerful melee attacks in rocky terrain",
+            "variant": "huge gaint with melee attacks that are powerful in rocky terrain"
+        },
+        {
+            "query": "Rockchewer Ogre abilities and stone jaw attack",
+            "variant": "Rockchewer Ogre special abilities and stone bite attack"
+        },
+        {
+            "query": "ogre with damage resistance and low agility",
+            "variant": "ogre that has damage resistance and poor agility"
+        },
+        {
+            "query": "creature with darkvision and high hit points",
+            "variant": "monster that has darkvision and many hit points"
+        },
+        {
+            "query": "lawful neutral giant that crushes rocks",
+            "variant": "lawful neutral gaint that can crush rocks"
+        }
+    ]
+}

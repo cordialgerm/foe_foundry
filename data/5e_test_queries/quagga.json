@@ -1,0 +1,25 @@
+{
+    "name": "Quagga",
+    "queries": [
+        {
+            "query": "medium-sized ferocious creature with keen senses and fast movement",
+            "variant": "ferocious medium-sized creature with fast movement and keen senses"
+        },
+        {
+            "query": "agile monstrosity that uses Twin Blade and has Pack Tactics ability",
+            "variant": "agile monstrosity with Pack Tactics and Twin Blade abilities"
+        },
+        {
+            "query": "combat-focused creature that can knock enemies prone and charges at speed",
+            "variant": "creature that charges quickly and can knock enemies prone in combat"
+        },
+        {
+            "query": "Quagga abilities including Knife Dancer and War Surge in battle",
+            "variant": "abilities of the Quagga, such as War Surge and Knife Dancer during battle"
+        },
+        {
+            "query": "creature with high Dexterity score that thrives in cooperative combat",
+            "variant": "high Dexterity creature that excels in teamwork during combat"
+        }
+    ]
+}

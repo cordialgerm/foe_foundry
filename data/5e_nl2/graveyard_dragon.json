@@ -1,0 +1,53 @@
+{
+    "name": "Graveyard Dragon",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 127,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "dragon",
+        "elemental"
+    ],
+    "adjectives": [
+        "formidable",
+        "twisted",
+        "dangerous"
+    ],
+    "description": "The Graveyard Dragon is a massive undead creature embodying the remnants of its former life as a dragon, resembling a pile of dragon bones when motionless.",
+    "memorable": "Its ability to deal damage to nearby creatures and survive damage from its breath weapon makes it a unique and formidable foe.",
+    "goals": "To instill fear and dominate in combat using its powerful elemental attacks.",
+    "relations": "Related to other undead creatures and potentially dominates lesser undead.",
+    "environment": "Often found in graveyards, ruins, or places associated with death and decay.",
+    "strengths": "Immunity to poison, resistance to necrotic damage, and the ability to deal elemental damage.",
+    "weaknesses": "Average dexterity and a reliance on stamina make it less evasive.",
+    "attacks": "Utilizes a multiattack consisting of a bite delivering piercing damage and two claw strikes inflicting slashing damage.",
+    "most_powerful_ability": "Breath Weapon, which unleashes devastating elemental damage in an area.",
+    "equipment": null,
+    "senses": "Has blindsight up to 30 feet, allowing it to perceive its surroundings without light.",
+    "skills": "Possesses proficiency in Stealth and Perception, allowing it to remain hidden and aware.",
+    "additional_information": [
+        "Elemental Aura causes damage to those nearby at the start of its turn.",
+        "False Appearance allows it to blend in as a pile of bones.",
+        "Reassemble Bones grants it tactical flexibility in movement.",
+        "Can deal significant damage with elemental breath weapon.",
+        "Exceptionally resilient against Constitution effects."
+    ],
+    "damage_types": [
+        "poison",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead dragon with elemental abilities",
+        "massive dragon made of bones",
+        "graveyard monster with fearsome breath attack",
+        "creature that damages nearby enemies",
+        "undead dragon hiding as pile of bones"
+    ]
+}

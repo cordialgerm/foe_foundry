@@ -1,0 +1,54 @@
+{
+    "name": "Rust Drake",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 161,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "walking speed of 80 feet and flying speed of 30 feet",
+    "role": null,
+    "tags": [
+        "dragon",
+        "chaotic",
+        "evil",
+        "disease"
+    ],
+    "adjectives": [
+        "medium-sized",
+        "vicious",
+        "perceptive",
+        "poisonous"
+    ],
+    "description": "The Rust Drake is a medium-sized dragon known for its chaotic evil nature, characterized by its dragon-like physique and menacing presence.",
+    "memorable": "It is notable for its Rust Drake Lockjaw disease, which can paralyze foes and significantly impact their Dexterity.",
+    "goals": "The Rust Drake typically seeks to dominate its environment and prey on weaker creatures using its abilities.",
+    "relations": "Often encountered with other evil creatures, it may serve under more powerful dragons or as a lone predator.",
+    "environment": "Rust Drakes are commonly found in areas with rusted metal or industrial ruins, where they can blend in with their surroundings.",
+    "strengths": "Possesses a high Armor Class and hit points along with significant physical damage potential.",
+    "weaknesses": "It has a vulnerability to acid damage which can be exploited by opponents.",
+    "attacks": "The Rust Drake can execute a devastating Bite attack followed by swift Tail Swipe assaults, and also unleash a destructive Vomit Scrap attack.",
+    "most_powerful_ability": "Vomit Scrap can cause considerable area damage and potentially infect multiple foes with its disease.",
+    "equipment": null,
+    "senses": "The Rust Drake has a passive Perception score of 15, making it quite perceptive to its environment.",
+    "skills": "It has proficiency in Perception and Stealth, allowing it to notice hidden threats and move unnoticed.",
+    "additional_information": [
+        "High Strength score allows significant physical harm.",
+        "Ability to contract a debilitating disease to its enemies.",
+        "Natural armor provides high defensive capability.",
+        "Can perform agile maneuvers with a good Dexterity score.",
+        "Immunity to poison enhances its resilience in combat."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium dragon that causes disease",
+        "dragon with debilitating bite attack",
+        "vicious flying creature from industrial areas",
+        "chaotic evil dragon with strong physical attacks",
+        "agile rust dragon with high hit points"
+    ]
+}

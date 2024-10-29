@@ -1,0 +1,25 @@
+{
+    "name": "Young Mithral Dragon",
+    "queries": [
+        {
+            "query": "large neutral dragon with slashing damage immunity and telepathy",
+            "variant": "large dragon that is neutral, has slashing damage immunity and can use telepathy"
+        },
+        {
+            "query": "metallic dragon that has a powerful bite attack and uses shards as breath weapon",
+            "variant": "dragon made of metal with strong bite attack and shards for breath weapon"
+        },
+        {
+            "query": "dragon with high Dexterity that thrives in combat and can resist magic",
+            "variant": "combat-loving dragon with high agility and magical resistance"
+        },
+        {
+            "query": "Young Mithral Dragon with exceptional perception and stealth skills",
+            "variant": "Mithral Dragon that excels in stealth and has great perception abilities"
+        },
+        {
+            "query": "dragon that creates difficult terrain and can end magical effects",
+            "variant": "dragon capable of turning terrain difficult and dispelling magic effects"
+        }
+    ]
+}

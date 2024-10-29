@@ -1,0 +1,47 @@
+{
+    "name": "Swarm of Rats",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 14,
+    "ac": 10,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 ft., swim 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "disease",
+        "filth"
+    ],
+    "adjectives": [
+        "small",
+        "resilient",
+        "disease-bearing"
+    ],
+    "description": "A medium swarm comprised of numerous tiny rats, typically found in filthy environments.",
+    "memorable": "Its ability to spread disease and overwhelm foes with sheer numbers makes it particularly threatening.",
+    "goals": "To swarm and overwhelm intruders or scavange for food.",
+    "relations": "Often encountered in urban areas or dungeons where filth and decay are present.",
+    "environment": "Urban settings, dungeons, or anywhere with debris and refuse.",
+    "strengths": "Resistant to bludgeoning, piercing, and slashing damage; can move through small openings.",
+    "weaknesses": "Low hit points and armor class make it vulnerable to strong attacks.",
+    "attacks": "Bites attack that inflicts piercing damage and can spread disease.",
+    "most_powerful_ability": "Swarm Resilience gives it resistance to many types of damage and immunity to conditions.",
+    "senses": "Heightened Smell ability provides a Perception score of 15 based on smell, allowing it to detect prey effectively.",
+    "skills": "None",
+    "additional_information": [
+        "Accustomed to filth grants advantage on saving throws against diseases.",
+        "Swarm ability allows for movement through occupied spaces.",
+        "Can inflict rat plague disease with its bite."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small swarming rats that spread disease",
+        "filthy creatures that travel in swarms",
+        "disease-carrying swarm found in urban areas",
+        "swarm of rats with strong damage resistance",
+        "swarm that can fit through tiny openings"
+    ]
+}

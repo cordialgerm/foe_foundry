@@ -1,0 +1,51 @@
+{
+    "name": "Half-Shadow Dragon Assassin",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 97,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 35 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "assassin",
+        "shadow",
+        "dragon"
+    ],
+    "adjectives": [
+        "formidable",
+        "stealthy",
+        "agile"
+    ],
+    "description": "The Half-Shadow Dragon Assassin is a lethal humanoid with a blend of dragon and stealthy traits, known for its agility and ability to ambush foes.",
+    "memorable": "Its ability to apply dangerous poison and deal extra damage with sneak attacks makes this assassin particularly feared.",
+    "goals": "To ambush and eliminate targets before they can react, utilizing stealth and speed.",
+    "relations": "May be encountered alongside other assassins or shadowy affiliates.",
+    "environment": "Often found in dark, secluded areas where it can utilize its stealth.",
+    "strengths": "High Dexterity enhances its stealth and acrobatics, making it difficult to hit and capable of swift attacks.",
+    "weaknesses": "Relatively low Constitution and lacks magical defenses, making it vulnerable to spells.",
+    "attacks": "Attacks include a shortsword strike dealing piercing and poison damage or a hand crossbow shot with similar effects.",
+    "most_powerful_ability": "The Assassinate ability grants advantage on attacks against unsuspecting enemies, plus additional effects on a successful hit.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 10 feet, allowing it to detect creatures without relying on sight.",
+    "skills": "Highly skilled in Acrobatics and Stealth, with decent proficiency in Deception and Perception.",
+    "additional_information": [
+        "Has resistance to necrotic damage.",
+        "Carries three doses of a dangerous poison for weapon application.",
+        "Employs ambush tactics to maximize damage output quickly."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy dragon assassin in shadows",
+        "shadowy assassin with poison attacks",
+        "agile humanoid that deals necrotic damage",
+        "fearsome ambusher with powerful sneak attacks",
+        "dark creature that excels in stealth tactics"
+    ]
+}

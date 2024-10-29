@@ -1,0 +1,25 @@
+{
+    "name": "Malphas",
+    "queries": [
+        {
+            "query": "medium fey creature with necrotic weapon attacks",
+            "variant": "medium fey being with weapons that inflict necrotic damage"
+        },
+        {
+            "query": "creature with sunlight sensitivity and magical attacks",
+            "variant": "monster that has weaknesses in sunlight but uses magical attacks"
+        },
+        {
+            "query": "agile creature that can fly and has strong melee attacks",
+            "variant": "quick monster capable of flying and dealing powerful melee damage"
+        },
+        {
+            "query": "fey monster that deals extra necrotic damage and can blind opponents",
+            "variant": "fey being that inflicts additional necrotic damage and can cause blindness"
+        },
+        {
+            "query": "neutral evil fey that speaks Common and Ravenfolk",
+            "variant": "fey creature with neutral evil alignment that communicates in Common and Ravenfolk"
+        }
+    ]
+}

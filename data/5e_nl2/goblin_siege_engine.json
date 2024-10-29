@@ -1,0 +1,51 @@
+{
+    "name": "Goblin Siege Engine",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 178,
+    "ac": 20,
+    "srd": false,
+    "cr": "11",
+    "movement": "30 feet walking speed",
+    "role": "Artillery",
+    "tags": [
+        "construct",
+        "siege",
+        "goblin"
+    ],
+    "adjectives": [
+        "formidable",
+        "destructive",
+        "durable"
+    ],
+    "description": "The Goblin Siege Engine is a Huge, steel-clad construct designed for battlefield dominance with a turret for riders. It has a robust frame and a large cannon mounted atop.",
+    "memorable": "It deals double damage to structures, making it a terrifying force against fortifications.",
+    "goals": "Typically employed by goblins to breach enemy defenses and create chaos in battles.",
+    "relations": "Frequently found in goblin war camps or constructed by goblin engineers.",
+    "environment": "Commonly found in areas of conflict, particularly near siege operations.",
+    "strengths": "Immunity to poison and psychic damage, resilient against nonmagic attacks, and advantageous in movement through difficult terrain.",
+    "weaknesses": "Low Dexterity makes it vulnerable to attacks that rely on agility.",
+    "attacks": "Performs multiple bludgeoning Slam attacks and can unleash a destructive jet of acid.",
+    "most_powerful_ability": "Can deal double damage to objects, making it deadly against structures.",
+    "senses": "Possesses darkvision up to 120 feet, but a basic passive Perception score of 10.",
+    "skills": "Has a low perception score, indicating it is not keenly aware of its surroundings.",
+    "additional_information": [
+        "Doesn't require air, food, drink, or sleep.",
+        "Can serve as a mount for other creatures, providing half cover.",
+        "Advantage on saving throws against spells and magical effects.",
+        "Immune to form-altering spells and effects.",
+        "Can move freely through difficult terrain."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large goblin artillery machine",
+        "durable siege engine that shoots acid",
+        "construct designed for breaking down defenses",
+        "massive goblin machine with a turret",
+        "machine immune to many damage types"
+    ]
+}

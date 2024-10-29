@@ -1,0 +1,51 @@
+{
+    "name": "Ramag",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "magic",
+        "portal"
+    ],
+    "adjectives": [
+        "tactical",
+        "agile",
+        "magical",
+        "intelligent"
+    ],
+    "description": "The Ramag is a Medium humanoid character with leather armor, showcasing an agile build and a magical aura. Notably intelligent, it possesses distinct features related to its magical capabilities.",
+    "memorable": "The Ramag's unique ability, Portal Sense, allows it to locate and analyze planar portals, making it an invaluable asset in navigation and strategy.",
+    "goals": "The Ramag aims to utilize its intelligence and agility in tactical combat and exploration of magical lore.",
+    "relations": "Ramag may team up with other magical beings or adventurers, often serving as a strategist or guide.",
+    "environment": "Typically found in areas with planar activity, ruins, or locations rich in magical lore.",
+    "strengths": "Magic Resistance grants it a significant advantage against spells, paired with high Intelligence for spell-related tasks.",
+    "weaknesses": "Physically weak with a low Strength score, making it vulnerable in direct melee confrontations.",
+    "attacks": "Ramag uses a scimitar for slashing damage in melee and a shortbow for piercing damage at range, both with competent accuracy.",
+    "most_powerful_ability": "Portal Traveler allows for tactical movement by swapping positions with enemies through created portals.",
+    "equipment": "Leather armor, scimitar, and shortbow.",
+    "senses": "Passive perception of 11, allowing it to notice threats or hidden objects within its vicinity.",
+    "skills": "Skilled in Arcana and Investigation, making it adept at magical lore and thorough searches.",
+    "additional_information": [
+        "Can detect planar portals within a 100-foot radius.",
+        "Intelligence score of 16 indicates exceptional cognitive abilities.",
+        "Utilizes tactical strategies rather than brute force.",
+        "Wields a shortbow for ranged combat capabilities.",
+        "Can swap places with creatures to disrupt enemy positions."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "intelligent humanoid with portal abilities",
+        "magic-resistant creature skilled in tactics",
+        "agile humanoid that can detect portals",
+        "creature with scimitar and shortbow",
+        "humanoid with unique teleportation powers"
+    ]
+}

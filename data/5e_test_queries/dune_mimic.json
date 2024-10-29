@@ -1,0 +1,25 @@
+{
+    "name": "Dune Mimic",
+    "queries": [
+        {
+            "query": "huge creature that disguises itself as sandy terrain",
+            "variant": "big monster that pretends to be sandy land"
+        },
+        {
+            "query": "monster with grappling abilities that is immune to acid",
+            "variant": "creature that can grapple and has acid immunity"
+        },
+        {
+            "query": "ambush monster that can engulf its prey",
+            "variant": "sneaky creature that engulfs its victims"
+        },
+        {
+            "query": "slow monster that attacks with pseudopods and deals bludgeoning damage",
+            "variant": "not fast creature that uses pseudopods for bludgeon damage"
+        },
+        {
+            "query": "terrain-based monster with adhesive properties and a false appearance",
+            "variant": "ground monster that has sticky traits and pretends to be a sandy object"
+        }
+    ]
+}

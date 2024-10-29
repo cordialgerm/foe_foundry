@@ -1,0 +1,25 @@
+{
+    "name": "Giant Bombardier Beetle",
+    "queries": [
+        {
+            "query": "medium-sized insect that sprays fire",
+            "variant": "insect that is medium-sized and can spray fire"
+        },
+        {
+            "query": "beetle with fire resistance and good agility",
+            "variant": "agile beetle that is resistant to fire"
+        },
+        {
+            "query": "bug that attacks at range and has a bite",
+            "variant": "creature that has a bite attack and can attack from a distance"
+        },
+        {
+            "query": "combat insect with low intelligence and charisma",
+            "variant": "insect that is low in intelligence and charisma but effective in combat"
+        },
+        {
+            "query": "creature with 14 AC and 13 HP that uses ranged attacks",
+            "variant": "monster that has 13 hit points and an armor class of 14 while using ranged attacks"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Alpha Fish",
+    "queries": [
+        {
+            "query": "large underwater predator with a frightening display and defensive frenzy",
+            "variant": "big underwater predator that has a frightful display and defensive frenzy"
+        },
+        {
+            "query": "aquatic beast that attacks indiscriminately and can breathe underwater",
+            "variant": "underwater beast that attacks anything it thinks is threatening and can breathe in water"
+        },
+        {
+            "query": "fish monster capable of frightening enemies and performing additional attacks when injured",
+            "variant": "creature fish that can scare foes and make extra attacks when hurt"
+        },
+        {
+            "query": "formidable aggressive predator found in water with low intelligence",
+            "variant": "powerful aggressive predator residing in water with poor intelligence"
+        },
+        {
+            "query": "underwater creature with high hit points that uses Fin Flare to scare opponents",
+            "variant": "aquatic being with substantial hit points that applies Fin Flare to frighten enemies"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "name": "Tophet",
+    "creature_type": "Construct",
+    "alignment": "Neutral Evil",
+    "size": "Huge",
+    "hp": 161,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "30 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "fire",
+        "construct",
+        "resistance",
+        "damage immunity"
+    ],
+    "adjectives": [
+        "formidable",
+        "towering",
+        "destructive",
+        "immovable"
+    ],
+    "description": "The Tophet is a Huge Construct designed as a vessel of destruction with a strong, bulky form, standing out in combat.",
+    "memorable": "Its ability to grapple foes and engulf them in fire makes it a terrifying presence on the battlefield.",
+    "goals": "To act as a powerful enforcer of destruction, utilizing its fiery abilities in combat.",
+    "relations": "Often seen in the company of other Constructs or as guardians for evil creators.",
+    "environment": "Typically found in locations where it can cause widespread damage, such as war zones or enemy fortifications.",
+    "strengths": "Exceptional physical strength and high hit points make it a dominant force; immunity to several conditions adds to its threat.",
+    "weaknesses": "Low Intelligence limits strategic decision-making, making it predictable in combat.",
+    "attacks": "Can make powerful Slam attacks that deal bludgeoning and fire damage; its Heated Body ability punishes those who come too close.",
+    "most_powerful_ability": "Gout of Flame: It unleashes a devastating area attack that can severely damage multiple targets.",
+    "equipment": null,
+    "senses": "Possesses darkvision, enabling it to see in darkness and a passive Perception of 13, allowing it to notice its surroundings effectively.",
+    "skills": "Has a Perception skill of +3, allowing it to notice its surroundings fairly effectively.",
+    "additional_information": [
+        "Immunity to fire, poison, and psychic damage.",
+        "Resistance to cold damage.",
+        "Can activate its Burning Heart ability for tactical advantage.",
+        "Does not require air, food, drink, or sleep.",
+        "Can grapple and restrain opponents in its Burning Belly."
+    ],
+    "damage_types": [
+        "fire",
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "Huge fire-resistant construct",
+        "monster that engulfs foes in flames",
+        "formidable construct with fire attacks",
+        "grappling creature that resists cold damage",
+        "destroyer of enemies with fiery body"
+    ]
+}

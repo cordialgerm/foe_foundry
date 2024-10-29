@@ -1,0 +1,25 @@
+{
+    "name": "Insect, Scorpion",
+    "queries": [
+        {
+            "query": "tiny creature with a venomous sting that lives in dry environments",
+            "variant": "small beast that has a poisonous sting and lives in arid places"
+        },
+        {
+            "query": "scorpion-like beast with weak strength and stealth abilities",
+            "variant": "scorpion styled creature that has low strength and can move quietly"
+        },
+        {
+            "query": "creature that uses stealth and has a weak constitution",
+            "variant": "monster that relies on stealth and has low resilience stat"
+        },
+        {
+            "query": "beast with natural armor and low hit points that can deliver poison damage",
+            "variant": "animal with natural defense and few hit points that inflicts poison damage"
+        },
+        {
+            "query": "tiny beast that can ambush and has a strong sting attack",
+            "variant": "small creature capable of stealth attacks with a powerful sting"
+        }
+    ]
+}

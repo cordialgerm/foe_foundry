@@ -1,0 +1,49 @@
+{
+    "name": "Giant Mole Lizard",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 15 ft., burrow 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "burrowing",
+        "grappler",
+        "beast"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "dangerous"
+    ],
+    "description": "The Giant Mole Lizard is a large beast with powerful claws, built for melee combat and capable of burrowing underground. It has sturdy natural armor and is noted for its raw physical strength.",
+    "memorable": "Its ability to grapple victims with its tail and the 'Mass Shove' action make it a unique threat in combat.",
+    "goals": "Typically seeks to ambush or overpower prey, utilizing its burrowing capability to surprise opponents.",
+    "relations": "May be encountered alongside other burrowing creatures or beasts.",
+    "environment": "Often found in underground tunnels, caves, or areas where it can dig.",
+    "strengths": "High physical strength and the ability to grapple foes with its tail.",
+    "weaknesses": "Low Dexterity makes it vulnerable to attacks and decreases its mobility in combat.",
+    "attacks": "Can perform two claw attacks in one turn, dealing significant slashing damage, and can restrain targets with its tail.",
+    "most_powerful_ability": "Constricting Tail, which allows it to grapple and potentially suffocate enemies.",
+    "senses": "Possesses blindsight up to 10 feet and tremorsense up to 60 feet, allowing it to detect vibrations around it effectively.",
+    "skills": "Has a low perception skill which limits its ability to detect hidden creatures or objects.",
+    "additional_information": [
+        "Resistant to acid damage, making it durable in hazardous environments.",
+        "Immune to being knocked prone, enhancing its combat endurance.",
+        "Has 'Sunlight Sensitivity', which affects its performance during the day."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large burrowing predator",
+        "monster with constricting tail ability",
+        "bulk creature that can grapple enemies",
+        "beast that digs underground and attacks",
+        "monster that shoves and knocks opponents"
+    ]
+}

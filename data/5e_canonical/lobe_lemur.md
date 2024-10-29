@@ -1,6 +1,8 @@
 <MonsterName/>Lobe Lemur</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>93</HP>
 <summary>The Lobe Lemur is a small monstrosity known for its agility and unique combat abilities. With an Armor Class of 14 and 93 hit points, it possesses a good level of durability for its challenge rating of 4, making it a respectable threat in combat. The Lobe Lemur excels in Dexterity, boasting a score of 18 (+4), which grants it good agility in both attacks and evasive maneuvers. However, its Intelligence and Charisma are quite low, which may hinder its interactions and strategic decisions outside of combat. The creature is particularly adept at ambushing foes due to its special jumping abilities and excellent camouflage in swampy environments, although its average Strength and Wisdom provide it with limited resilience to physical attacks and social encounters.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Lobe Lemur is an agile and stealthy creature that poses a unique ch
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lobe Lemur
 
 *Small* *Monstrosity* *neutral*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Face Clamp:** Melee Weapon Attack: +6 to hit, 5 ft., one target, 9 (2d4+4) piercing damage and lemur attaches to target’s head. If lemur is already attached to the target when it hits with this attack it doesn’t deal damage. Instead target is blinded until end of its next turn. While attached to the target lemur can attack no other creature except target but has advantage on its attack rolls. Lemur’s speed also becomes 0 it can’t benefit from any bonus to its speed and it moves with target. Creature including target can use action to detach lemur via DC 14 Str check. On its turn lemur can detach itself from target by using 5 ft. of move.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Mordovermis",
+    "queries": [
+        {
+            "query": "large creature with mental manipulation abilities that is sensitive to sunlight",
+            "variant": "big monster with mind control powers that struggles in sunlight"
+        },
+        {
+            "query": "aerial monster with good melee attacks and crowd control powers",
+            "variant": "flying monster that excels in close combat and controlling crowds"
+        },
+        {
+            "query": "aberration that can fly and grapples its enemies with acid damage",
+            "variant": "flying aberration that wraps around foes and deals acid damage"
+        },
+        {
+            "query": "creature with Darkvision and telepathy that can charm opponents",
+            "variant": "monster with night vision and mind control abilities that targets enemies"
+        },
+        {
+            "query": "monster that moves through small spaces and inflicts piercing damage",
+            "variant": "creature that can slip through tight spots and causes piercing harm"
+        }
+    ]
+}

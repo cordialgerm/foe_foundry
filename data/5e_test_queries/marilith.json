@@ -1,0 +1,25 @@
+{
+    "name": "Marilith",
+    "queries": [
+        {
+            "query": "six-armed demon that fights with swords and has a serpent lower body",
+            "variant": "demon with six arms that uses swords and has a snake body"
+        },
+        {
+            "query": "intelligent fiend that strategically commands others and uses teleportation",
+            "variant": "smart fiend that orders allies and can teleport"
+        },
+        {
+            "query": "large demonic creature that is resistant to fire and lightning",
+            "variant": "big demon that has resistances to fire and lightning"
+        },
+        {
+            "query": "chaotic evil demon with high armor class and multiple attack options",
+            "variant": "evil chaotic demon that boasts a high AC and various attack moves"
+        },
+        {
+            "query": "marilith combat tactics involving teleportation and multiattack",
+            "variant": "tactics of fighting Marilith using teleport and multiple attacks"
+        }
+    ]
+}

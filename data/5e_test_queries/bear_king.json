@@ -1,0 +1,25 @@
+{
+    "name": "Bear King",
+    "queries": [
+        {
+            "query": "fey creature that uses radiant honey attacks and has high hit points",
+            "variant": "fey monster that has high hit points and uses radiant honey attacks"
+        },
+        {
+            "query": "powerful guardian of the wild with multiattack and shape-shifting ability",
+            "variant": "strong protector of the wild that can shape-shift and has multiattack"
+        },
+        {
+            "query": "nature-themed monster with legendary resistance and cold damage immunity",
+            "variant": "monster themed around nature that has cold damage immunity and legendary resistance"
+        },
+        {
+            "query": "medium fey creature with keen smell and very good at perception",
+            "variant": "medium sized fey monster with good perception and keen smell ability"
+        },
+        {
+            "query": "bear-like fey that regenerates health and excels in athletics",
+            "variant": "bear creature that can regenerate health and is skilled in athletics"
+        }
+    ]
+}

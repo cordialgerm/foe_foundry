@@ -1,0 +1,52 @@
+{
+    "name": "Onyx Magistrate",
+    "creature_type": "Construct",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 123,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 30 ft., hover",
+    "role": null,
+    "tags": [
+        "Construct",
+        "Magical",
+        "Lawful Evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "menacing"
+    ],
+    "description": "The Onyx Magistrate is a large construct embodying law and order, with a solid dark exterior and a powerful presence. It showcases a scepter as its primary weapon, indicating authority and power.",
+    "memorable": "Its ability to curse opponents, preventing them from regenerating hit points, makes it a particularly challenging foe.",
+    "goals": "To enforce harsh codes and laws, imposing order through intimidation and magical prowess.",
+    "relations": "May serve a higher authority or organization that values strict laws and order.",
+    "environment": "Usually found in areas where rule and order must be enforced, such as courts or prisons.",
+    "strengths": "High magical resistance, immunity to form-altering effects, and strong skills in intimidation and insight.",
+    "weaknesses": "Low Dexterity may reduce its agility in combat situations.",
+    "attacks": "Can perform multiple melee scepter attacks and ranged necrotic ray attacks, capable of dealing significant damage.",
+    "most_powerful_ability": "Dire Judgement, which curses nearby enemies and prevents them from regaining hit points through magical means.",
+    "equipment": "Scepter, used for melee attacks.",
+    "senses": "Possesses a passive perception of 18, allowing it to effectively detect hidden foes.",
+    "skills": "Proficient in insight, intimidation, perception, and persuasion, showcasing its ability to manipulate situations and creatures.",
+    "additional_information": [
+        "Immune to necrotic and poison damage, as well as certain conditions.",
+        "Advantage on saving throws against spells due to Magic Resistance.",
+        "Weapon attacks considered magical for overcoming resistances.",
+        "Can use 'Tip the Scales' to enhance defense against attacks.",
+        "Notable for its lawful evil nature, enforcing strict order."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large magical enforcer with a scepter",
+        "creature that curses enemies and prevents healing",
+        "formidable construct with high magical resistance",
+        "evil law enforcer made of dark material",
+        "tough Construct that manipulates situations through intimidation"
+    ]
+}

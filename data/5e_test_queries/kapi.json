@@ -1,0 +1,25 @@
+{
+    "name": "Kapi",
+    "queries": [
+        {
+            "query": "nimble humanoid with climbing skills and a prehensile tail",
+            "variant": "nimble humanoid that climbs and has prehensile tail"
+        },
+        {
+            "query": "medium chaotic good creature with high dexterity and stealth",
+            "variant": "medium creature that is chaotic good and has high dexterity and stealth"
+        },
+        {
+            "query": "agile monster that can disengage quickly and perform tail trip",
+            "variant": "quick disengaging agile creature that can tail trip"
+        },
+        {
+            "query": "humanoid with darkvision that uses a quarterstaff",
+            "variant": "humanoid creature that can see in darkness and uses a quarterstaff"
+        },
+        {
+            "query": "Kapi abilities for mobility and tactical combat",
+            "variant": "Kapi mobility tactics and combat abilities"
+        }
+    ]
+}

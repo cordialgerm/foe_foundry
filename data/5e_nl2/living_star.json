@@ -1,0 +1,54 @@
+{
+    "name": "Living Star",
+    "creature_type": "Celestial",
+    "alignment": "any alignment",
+    "size": "Huge",
+    "hp": 207,
+    "ac": 19,
+    "srd": false,
+    "cr": "19",
+    "movement": "fly 60 ft., walk 0 ft.",
+    "role": "Artillery",
+    "tags": [
+        "celestial",
+        "radiant",
+        "combat",
+        "blinding"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "versatile",
+        "disruptive"
+    ],
+    "description": "The Living Star is a huge celestial creature with a radiant presence and features that embody any alignment. It can radiate brilliant light and leverage its celestial nature to engage in both melee and ranged combat.",
+    "memorable": "Its ability to blind foes with Starshine and unleash devastating radiant damage upon death makes it an unforgettable adversary.",
+    "goals": "The Living Star seeks to dominate combat, utilizing its powers to control and disrupt foes while embodying cosmic influences.",
+    "relations": "It may be encountered alongside other celestial beings or as an arbiter of cosmic conflict.",
+    "environment": "Typically found in celestial realms or areas of significant cosmic energy.",
+    "strengths": "With immunities to certain damage types and high saving throws, it can withstand magical and physical assaults effectively.",
+    "weaknesses": "It is susceptible to magical attacks, despite its immunities and resistances.",
+    "attacks": "Can make powerful melee and ranged attacks, including bludgeoning and radiant damage through its Starflare and Silvered Ray.",
+    "most_powerful_ability": "Supernova, where it deals massive radiant damage in an area upon dying.",
+    "equipment": null,
+    "senses": "Has truesight up to 120 feet, allowing it to see through illusions and perceive hidden creatures.",
+    "skills": "Excels in Acrobatics and Persuasion, showcasing its agility and commanding presence.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Resize ability allows it to manipulate its size for tactical advantages.",
+        "Starshine ability can blind creatures, providing significant battlefield control.",
+        "Immune to conditions such as charmed and frightened, making it resistant to psychological effects.",
+        "High Charisma enhances its persuasive abilities in both combat and interaction."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge celestial creature that blinds opponents",
+        "powerful radiant damage dealing monster",
+        "monster with truesight and magic resistance",
+        "versatile combatant with size manipulation",
+        "deadly celestial being with explosive death"
+    ]
+}

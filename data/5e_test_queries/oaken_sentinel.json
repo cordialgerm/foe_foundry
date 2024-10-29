@@ -1,0 +1,25 @@
+{
+    "name": "Oaken Sentinel",
+    "queries": [
+        {
+            "query": "Huge plant creature that grapples with branches and lives in natural spaces",
+            "variant": "massive plant monster that uses branches to grapple and lives in nature"
+        },
+        {
+            "query": "monster resembling an oak tree that can immobilize opponents",
+            "variant": "creature that looks like an oak tree and has the ability to restrain foes"
+        },
+        {
+            "query": "defensive plant guardian with high hit points and lightning vulnerability",
+            "variant": "armor-heavy plant guardian with large health pool and weak to lightning"
+        },
+        {
+            "query": "guardian of nature with grasping branches and slow movement",
+            "variant": "nature defender that has branches for grappling and moves slowly"
+        },
+        {
+            "query": "plant creature that can throw opponents and has a strong presence",
+            "variant": "vegetation monster that can fling its enemies and has a powerful stance"
+        }
+    ]
+}

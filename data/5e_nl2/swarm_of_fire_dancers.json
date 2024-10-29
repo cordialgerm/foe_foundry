@@ -1,0 +1,54 @@
+{
+    "name": "Swarm of Fire Dancers",
+    "creature_type": "Elemental",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft., fly 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "fire",
+        "swarm",
+        "elemental",
+        "intimidation"
+    ],
+    "adjectives": [
+        "chaotic",
+        "destructive",
+        "fiery",
+        "intimidating"
+    ],
+    "description": "A swarm of chaotic elemental creatures embodying fire, glowing with bright light in a 30-foot radius and capable of transforming into a terrifying blue humanoid skull.",
+    "memorable": "They cause ongoing fire damage and can impose fear through their frightening visage.",
+    "goals": "To swarm and damage opponents while sowing fear.",
+    "relations": "Typically found alone or in hostile elemental environments; may be summoned by fire-oriented creatures.",
+    "environment": "Usually inhabits fiery locations or areas associated with elemental chaos.",
+    "strengths": "Immunity to fire and poison damage, along with several condition immunities.",
+    "weaknesses": "Vulnerable to cold damage and susceptible to water effects.",
+    "attacks": "Employs Singe attacks for fire damage and can frighten enemies with Frightening Visage.",
+    "most_powerful_ability": "Frightening Visage can instill fear in nearby humanoids, disrupting enemy formations.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and communication in Ignan, the language of fire elementals.",
+    "skills": null,
+    "additional_information": [
+        "Elemental nature allows it to exist without air, food, or sleep.",
+        "Can occupy the same space as other creatures, enhancing its swarming capabilities.",
+        "Fire damage from contact and close proximity increases ongoing damage potential.",
+        "Imposes a fear effect to disrupt enemy tactics.",
+        "Resistant to various physical damage types."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "swarm of fiery dancers that cause fear",
+        "medium elemental swarm with fire damage",
+        "chaotic swarm that ignites foes",
+        "fire elemental that occupies creature spaces",
+        "intimidating swarm with burning attacks"
+    ]
+}

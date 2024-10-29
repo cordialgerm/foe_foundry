@@ -1,0 +1,52 @@
+{
+    "name": "Clockwork Hound",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 71,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walking speed of 50 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "Construct",
+        "Tracker",
+        "Combatant"
+    ],
+    "adjectives": [
+        "mechanical",
+        "swift",
+        "explosive"
+    ],
+    "description": "The Clockwork Hound is a mechanical beast resembling a hound, built for tracking and combat. It has a strong construct design, notable for its agile movements and robust craftsmanship.",
+    "memorable": "Its Explosive Core creates a fiery blast upon destruction, adding a layer of danger.",
+    "goals": "Typically used as a tracking companion in combat situations.",
+    "relations": "May be accompanied by other constructs or creatures that share a mechanical or tracking purpose.",
+    "environment": "Often found in locations where constructs or clockwork creations are prevalent.",
+    "strengths": "High Strength for powerful melee attacks and advantages on perception checks for tracking.",
+    "weaknesses": "Low Intelligence and Charisma, indicating poor social skills and absence of complex tactics.",
+    "attacks": "Can perform a Bite attack that deals piercing damage and a Tripping Tongue attack that can knock foes prone from a distance.",
+    "most_powerful_ability": "The Explosive Core triggers an explosion on destruction, dealing fire damage to nearby foes.",
+    "equipment": null,
+    "senses": "Possesses keen senses with a passive Perception score of 14.",
+    "skills": "Skilled in Athletics and has good awareness of its surroundings.",
+    "additional_information": [
+        "Immunity to poison and psychic damage",
+        "Advantage on saving throws against spells",
+        "Does not require food, air, or sleep",
+        "Advantage on checks involving scent",
+        "Immutable to effects that alter its form"
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical hound for tracking and combat",
+        "swift construct with explosive core",
+        "hound that doesn't require food or sleep",
+        "clockwork creature that excels in athleticism",
+        "fighter with a tripping attack and keen senses"
+    ]
+}

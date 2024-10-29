@@ -1,0 +1,25 @@
+{
+    "name": "Mudmutt",
+    "queries": [
+        {
+            "query": "large amphibious monster that excels in swamp environments",
+            "variant": "large monster that swims well and is good in swamps"
+        },
+        {
+            "query": "creature with a sonic attack and high Dexterity that can jump far",
+            "variant": "monster that has a powerful sound attack and great agility, capable of jumping long distances"
+        },
+        {
+            "query": "muddy creature that can breathe air and water and uses pack tactics",
+            "variant": "mud-covered monster that breathes both air and water and works well in packs"
+        },
+        {
+            "query": "durable creature with strong melee attacks and ambush abilities",
+            "variant": "tough monster with powerful close combat attacks and sneaky tactics"
+        },
+        {
+            "query": "monster that is weak in intelligence but strong in physical abilities and stealthy",
+            "variant": "creature low on smarts but high in strength and skilled in hiding"
+        }
+    ]
+}

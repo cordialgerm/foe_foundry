@@ -1,0 +1,55 @@
+{
+    "name": "Arcane Leviathan",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 279,
+    "ac": 17,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 10 feet, swim 60 feet",
+    "role": null,
+    "tags": [
+        "gargantuan",
+        "construct",
+        "magical",
+        "guardian"
+    ],
+    "adjectives": [
+        "formidable",
+        "immense",
+        "magical",
+        "electric"
+    ],
+    "description": "The Arcane Leviathan is a massive construct characterized by its magical nature and imposing presence. It has an impressive swimming speed and is designed to act as a powerful guardian or weapon. It is capable of inflicting devastating electrical attacks.",
+    "memorable": "Renowned for its immense size and magical capabilities, the Arcane Leviathan is resistant to many common attacks and possesses a variety of damaging abilities, making it a formidable opponent.",
+    "goals": "Often serves as a guardian for its creator, protecting key locations or treasures.",
+    "relations": "Typically created and controlled by a specific creator or mage.",
+    "environment": "Frequently found in aquatic environments, utilizing its swimming speed.",
+    "strengths": "Resistant to multiple damage types and conditions, with abilities that enhance its durability in combat.",
+    "weaknesses": "Poor dexterity makes it vulnerable to attacks requiring agility.",
+    "attacks": "Can perform a multiattack with devastating melee claw and slam attacks, as well as range lightning bolt strikes.",
+    "most_powerful_ability": "Pylon Discharge unleashes a surge of lightning damage over a large area, effectively damaging multiple foes and blinding them.",
+    "equipment": null,
+    "senses": "Possesses truesight out to 120 feet, allowing it to perceive its surroundings with exceptional accuracy.",
+    "skills": "Good at perception, indicating a keen awareness of its environment.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep due to its construct nature.",
+        "Immunities to several damage types including lightning, poison, and psychic damage.",
+        "Ability to deal double damage to objects as a siege monster.",
+        "Capable of grappling targets with its claws if they are Huge or smaller.",
+        "Can cause significant pressure in combat with the Arcane Barrage ability, forcing targets to consider their positioning."
+    ],
+    "damage_types": [
+        "lightning",
+        "radiant"
+    ],
+    "spellcasting": "Utilizes spells such as Lightning Bolt and has special abilities that deal damage based on its magical nature.",
+    "test_queries": [
+        "powerful magical guardian",
+        "gargantuan construct with lightning attacks",
+        "immense aquatic defender",
+        "magical creature capable of grappling",
+        "electric monster with devastating abilities"
+    ]
+}

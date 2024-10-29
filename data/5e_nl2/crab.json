@@ -1,0 +1,49 @@
+{
+    "name": "Crab",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 2,
+    "ac": 11,
+    "srd": true,
+    "cr": "0",
+    "movement": "20 ft. walking and swimming",
+    "role": null,
+    "tags": [
+        "amphibious",
+        "aquatic",
+        "nuisance"
+    ],
+    "adjectives": [
+        "tiny",
+        "hard-shelled",
+        "non-aggressive"
+    ],
+    "description": "A small, hard-shelled creature with two large pincers, scuttles sideways along beaches and shallow waters, often hiding under rocks or burrowing into the sand.",
+    "memorable": "Although not a significant threat, it can be a nuisance in large numbers or when disturbed.",
+    "goals": "Survive in coastal regions by scavenging for food and avoiding predators.",
+    "relations": "Crabs are often found in the company of other small aquatic creatures in coastal environments.",
+    "environment": "Coastal regions, beaches, and shallow waters.",
+    "strengths": "Amphibious nature allows survival in both water and air environments.",
+    "weaknesses": "Extremely low hit points and poor physical attributes make it vulnerable in combat.",
+    "attacks": "Claws attack deals 1 bludgeoning damage; can attach and deal ongoing damage while anchored.",
+    "most_powerful_ability": "The ability to attach to a target, inflicting ongoing bludgeoning damage.",
+    "senses": "Has keen senses within 30 feet, allowing detection of nearby creatures.",
+    "skills": "Has a stealth score of 12, making it good at remaining undetected.",
+    "additional_information": [
+        "Can breathe air and water due to its amphibious ability.",
+        "Weak physical attributes prevent effective combat engagement.",
+        "Can scuttle sideways, typical for crabs.",
+        "Not inherently aggressive but will snap at anything that gets too close.",
+        "Easily defeated and poses minimal threat to adventurers."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny hard-shelled creature that scuttles sideways",
+        "amphibious crab found on beaches",
+        "small crab that can attach to targets",
+        "non-aggressive creature in coastal regions",
+        "nuisance crab with weak attacks"
+    ]
+}

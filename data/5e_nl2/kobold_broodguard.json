@@ -1,0 +1,54 @@
+{
+    "name": "Kobold Broodguard",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 44,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "walking speed of 25 feet",
+    "role": "Bruiser",
+    "tags": [
+        "kobold",
+        "humanoid",
+        "pack tactics"
+    ],
+    "adjectives": [
+        "clever",
+        "strategic",
+        "resilient"
+    ],
+    "description": "The Kobold Broodguard is a small humanoid creature that serves as a frontline combatant in its pack, often seen wielding a bill hook and a spiked shield.",
+    "memorable": "Notable for its Pack Tactics ability, allowing it to gain advantages when allies are nearby, making it particularly dangerous in group encounters.",
+    "goals": "To protect its kin and support their morale in combat.",
+    "relations": "Often encountered alongside other kobolds, particularly in protective roles or as enforcers.",
+    "environment": "Usually found in underground lairs or caverns where kobolds reside.",
+    "strengths": "Possesses high resilience in battle due to its moderate AC and effective combat tactics.",
+    "weaknesses": "Suffers disadvantage on attacks and perception in bright light, making it vulnerable in open, sunlit areas.",
+    "attacks": "Can execute a Multiattack with a bill hook that can knock foes prone, and a spiked shield attack for piercing damage, along with a ranged sling option.",
+    "most_powerful_ability": "The 'Rally!' ability boosts the morale of allied kobolds, ensuring they can continue fighting effectively even when injured.",
+    "equipment": "Equipped with a bill hook and a spiked shield.",
+    "senses": "Has darkvision, allowing it to see in low-light environments.",
+    "skills": "Demonstrates average awareness with a passive Perception of 10.",
+    "additional_information": [
+        "Has a clever tactical mindset in combat.",
+        "Can significantly increase effectiveness when fighting as part of a group.",
+        "Relies on pack tactics for better attack success.",
+        "Can inspire allies to perform better in battle with its rallying cry.",
+        "Vulnerable to sunlight, significantly hindering its combat capabilities."
+    ],
+    "damage_types": [
+        "slashing",
+        "piercing",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small tactical humanoid creature",
+        "frontline kobold guarding its kin",
+        "kobold with rallying cry ability",
+        "strategic little monster in a group",
+        "dangerous kobold using pack tactics"
+    ]
+}

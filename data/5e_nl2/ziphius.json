@@ -1,0 +1,51 @@
+{
+    "name": "Ziphius",
+    "creature_type": "Aberration",
+    "alignment": "neutral",
+    "size": "Gargantuan",
+    "hp": 135,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "swim 60 ft., walk 10 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "aberration",
+        "gargantuan"
+    ],
+    "adjectives": [
+        "powerful",
+        "resilient",
+        "mysterious"
+    ],
+    "description": "The Ziphius is a gargantuan aberration embodying the secrets of the deep sea with a formidable aquatic presence, featuring a dorsal fin and sharp beak.",
+    "memorable": "Its ability to charge at foes and inflict significant damage, along with its capacity to swallow foes, makes the Ziphius a unique threat.",
+    "goals": "The Ziphius typically seeks to dominate its aquatic territory and overpower adversaries.",
+    "relations": "It might be found alongside other sea creatures or servitors of deep-sea deities.",
+    "environment": "The Ziphius thrives in deep aquatic environments, such as oceans and lakes.",
+    "strengths": "Possesses high mobility in water, resistance to cold damage, and impressive durability against non-magical attacks.",
+    "weaknesses": "Ineffective in social interactions due to low Charisma and reliant on underwater breathing.",
+    "attacks": "Can deliver vicious attacks using its claws and beak, and it can perform a deadly engulfing move by swallowing foes.",
+    "most_powerful_ability": "Charge ability which allows it to deal extra slashing damage if it charges at a target.",
+    "senses": "The Ziphius has blindsight out to 120 feet, enhancing its awareness in water.",
+    "skills": "It has a good perception skill, allowing it to notice changes in its surroundings effectively.",
+    "additional_information": [
+        "Resistant to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
+        "Immunities to being prone.",
+        "Can create a mental bond to read surface thoughts and gain advantages in combat.",
+        "Doubles damage to objects due to its Siege Monster trait.",
+        "Can only breathe underwater."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan sea creature with mind control",
+        "powerful underwater monster with charging ability",
+        "deep sea aberration that swallows prey",
+        "aquatic monster that dominates battlefields",
+        "monster with strong physical attacks in water"
+    ]
+}

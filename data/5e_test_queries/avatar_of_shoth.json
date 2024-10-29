@@ -1,0 +1,25 @@
+{
+    "name": "Avatar of Shoth",
+    "queries": [
+        {
+            "query": "massive aberration that can absorb knowledge and has acidic powers",
+            "variant": "huge aberration with ability to absorb knowledge and is acidic"
+        },
+        {
+            "query": "creature with high Charisma living in a combat environment",
+            "variant": "monster with high Charisma that thrives in fight scenarios"
+        },
+        {
+            "query": "Gargantuan creature with powerful spells and bludgeoning attacks",
+            "variant": "huge creature with strong spells and bludgeoning damage attacks"
+        },
+        {
+            "query": "lawful neutral monster with significant HP and immunities",
+            "variant": "lawful neutral creature with high hit points and several immunities"
+        },
+        {
+            "query": "monster with tentacles that can incapacitate enemies and has dense abilities",
+            "variant": "creature with tentacle attacks that stuns foes and has complex abilities"
+        }
+    ]
+}

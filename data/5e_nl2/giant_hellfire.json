@@ -1,0 +1,52 @@
+{
+    "name": "Giant, Hellfire",
+    "creature_type": "Giant",
+    "alignment": "neutral good",
+    "size": "Huge",
+    "hp": 168,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fire damage",
+        "curse",
+        "guardian"
+    ],
+    "adjectives": [
+        "immense",
+        "powerful",
+        "magical"
+    ],
+    "description": "The Giant Hellfire is a colossal creature with magical weaponry that deals additional fire damage. Its body is adorned with runes that flash green upon its death.",
+    "memorable": "Its ability Death Malison curses nearby creatures, severely hindering them for a week, while it uses powerful melee and magical attacks.",
+    "goals": "To serve as a guardian or protector, using its might and spells to defend its territory.",
+    "relations": "It may serve alongside other fire-related creatures or elemental beings.",
+    "environment": "Typically found in rocky terrains or locations associated with fire.",
+    "strengths": "Resistance to fire damage, and it possesses the ability to become invisible.",
+    "weaknesses": "Lacks ranged movement options apart from its spells, potentially vulnerable to non-fire damage.",
+    "attacks": "Can use a Multiattack for two strikes with a Greatclub, dealing bludgeoning and fire damage or a powerful Runic Blast that halts enemy movement.",
+    "most_powerful_ability": "Death Malison, which curses all nearby creatures upon its death, causing them to suffer significant disadvantages.",
+    "equipment": null,
+    "senses": "Possesses darkvision and has a passive Perception score of 15, indicating average awareness.",
+    "skills": "Has proficiency in Perception but only offers average awareness.",
+    "additional_information": [
+        "Uses Stone Camouflage to hide effectively in rocky environments.",
+        "Can utilize a Runic Shield reaction to defend against incoming attacks.",
+        "Magical weapon attacks add extra fire damage.",
+        "Ability to remain invisible until it attacks, enhancing its ambush potential.",
+        "Grants disadvantage on certain saving throws to fiends affected by its abilities."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast spells that deal force damage and control speed through its Runic Blast.",
+    "test_queries": [
+        "giant with fire powers and curse ability",
+        "protective giant in rocky areas",
+        "massive creature that curses upon dying",
+        "giant that uses magical fire attacks",
+        "invisible giant that deals fire damage"
+    ]
+}

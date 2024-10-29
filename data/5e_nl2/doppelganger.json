@@ -1,0 +1,51 @@
+{
+    "name": "Doppelganger",
+    "creature_type": "Monstrosity",
+    "creature_subtype": "shapechanger",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 14,
+    "srd": true,
+    "cr": "3",
+    "movement": "30 ft. walking speed",
+    "role": "Ambusher",
+    "tags": [
+        "shapechanger",
+        "deceiver",
+        "infiltrator"
+    ],
+    "adjectives": [
+        "shapeshifting",
+        "intelligent",
+        "gelatinous"
+    ],
+    "description": "A pale, featureless figure with large, unsettling eyes and a smooth, almost gelatinous body.",
+    "memorable": "Masters of deception, able to mimic voices and memories.",
+    "goals": "Infiltrate societies to gather information, steal, or cause chaos.",
+    "relations": "Often works alone or in small groups; manipulates others.",
+    "environment": "Typically found in urban settings or anywhere it can blend in.",
+    "strengths": "High dexterity and charisma, excelling in stealth and deception.",
+    "weaknesses": "Average physical strength and low constitution.",
+    "attacks": "Uses a powerful Precise Strike for melee damage, especially against surprised foes.",
+    "most_powerful_ability": "Shapeshift allows it to transform into any Small or Medium humanoid it has observed.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in low-light conditions.",
+    "skills": "Highly skilled in deception, insight, and stealth, enabling it to outmaneuver adversaries.",
+    "additional_information": [
+        "Can read thoughts, gaining advantage on checks against the target.",
+        "Advantage on attack rolls against surprised creatures.",
+        "Retains statistics in both shapeshifted and original forms.",
+        "Charms immune; cannot be charmed.",
+        "Most effective when used strategically in social situations."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "shapeshifting deceiver in urban areas",
+        "pale figure that can mimic other humanoids",
+        "monster with powerful ambush tactics",
+        "creature that reads thoughts and transforms",
+        "intelligent gelatinous infiltrator"
+    ]
+}

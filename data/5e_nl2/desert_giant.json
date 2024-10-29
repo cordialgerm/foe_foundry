@@ -1,0 +1,52 @@
+{
+    "name": "Desert Giant",
+    "creature_type": "Giant",
+    "alignment": "Neutral",
+    "size": "Huge",
+    "hp": 175,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "desert",
+        "neutral"
+    ],
+    "adjectives": [
+        "massive",
+        "imposing",
+        "durable",
+        "strong"
+    ],
+    "description": "A massive and imposing giant with exceptional physical attributes, towering over its environment, exhibiting remarkable strength and constitution.",
+    "memorable": "The Desert Giant is notable for its incredible strength and capabilities in sandy terrains, using its special abilities to dominate the battlefield.",
+    "goals": "Typically serves as a formidable guardian of the arid desert landscapes, using its prowess to defend its territory.",
+    "relations": "Likely to be encountered with other desert creatures or giants, potentially serving under more powerful entities in the desert.",
+    "environment": "Usually found in arid deserts, leveraging its abilities in sandy terrain.",
+    "strengths": "Exceptional strength and constitution, along with immunity to fire damage.",
+    "weaknesses": "Average Dexterity makes it less agile than more dexterous creatures.",
+    "attacks": "Can execute a multiattack with its deadly falchion and also throw large rocks at distant foes.",
+    "most_powerful_ability": "Desert Walk allows it to traverse sandy terrain without any movement penalty.",
+    "equipment": "falchion",
+    "senses": "Possesses a passive Perception of 18, making it adept at noticing threats.",
+    "skills": "Skilled in Perception and Survival, giving it advantages in its desert environment.",
+    "additional_information": [
+        "Immunities to fire damage enhance its resilience in combat.",
+        "Can execute powerful melee and ranged attacks effectively.",
+        "Has an advantage when hiding in sandy environments.",
+        "Utilizes camouflage and terrain to ambush enemies."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge giant that excels in desert combat",
+        "desert creature with strength and stamina",
+        "giant immune to fire and skilled in survival",
+        "desert predator with camouflage abilities",
+        "powerful giant wielding a falchion"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Sootwing",
+    "queries": [
+        {
+            "query": "small flying beast with fire immunity and good stealth abilities",
+            "variant": "small flying animal that is immune to fire and has stealthy skills"
+        },
+        {
+            "query": "creature that can blind enemies with a cloud of ash and has weak hit points",
+            "variant": "monster that can use an ash cloud to blind foes and has low health"
+        },
+        {
+            "query": "beast that relies on smell for perception and has average dexterity",
+            "variant": "creature dependent on smell for senses and has decent dexterity"
+        },
+        {
+            "query": "flying creature that deals piercing damage and has an average strength score",
+            "variant": "winged monster that can inflict piercing damage and possesses an average strength"
+        },
+        {
+            "query": "small monster known for its surprise attack and ash cloud ability",
+            "variant": "little creature recognized for its ambush tactics and ability to create an ash cloud"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Rimewing",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 22,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "fly 30 ft., walk 25 ft.",
+    "role": null,
+    "tags": [
+        "charming",
+        "stealthy",
+        "cold immune"
+    ],
+    "adjectives": [
+        "icy",
+        "enchanting",
+        "small",
+        "colorful"
+    ],
+    "description": "The Rimewing resembles a giant moth with icy beauty and colorful wings.",
+    "memorable": "Its unique ability to charm opponents with colorful ice crystals creates a tactical advantage.",
+    "goals": "To charm and incapacitate creatures to avoid combat.",
+    "relations": "Related to other small beasts and creatures of icy environments.",
+    "environment": "Typically found in icy areas or cold environments.",
+    "strengths": "Cold damage immunity adds resilience in icy conditions.",
+    "weaknesses": "Low offensive capability and significantly low intelligence.",
+    "attacks": "Uses its proboscis to deliver 5 piercing damage with a decent attack bonus.",
+    "most_powerful_ability": "Frosted Wings creates a charm effect, incapacitating multiple opponents.",
+    "equipment": null,
+    "senses": "Has darkvision allowing it to see in darkness up to 60 feet.",
+    "skills": "Proficient in stealth and perception, aiding its ability to avoid detection.",
+    "additional_information": [
+        "Has advantage on Perception checks that rely on smell due to its Antennae ability.",
+        "Predominantly relies on charm rather than brute strength in combat.",
+        "Often underestimated due to its small size and low Challenge Rating.",
+        "Can create a cloud of colorful ice crystals that is visually stunning.",
+        "Serves as a minor yet fascinating creature within the ecosystem."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small ice moth with charming abilities",
+        "colorful creature that charms with ice",
+        "flying insect with cold immunity",
+        "stealthy moth that uses charm tactics",
+        "icy beast that incapacitates foes"
+    ]
+}

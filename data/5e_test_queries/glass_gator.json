@@ -1,0 +1,25 @@
+{
+    "name": "Glass Gator",
+    "queries": [
+        {
+            "query": "large aquatic beast with stealth abilities that can jump far",
+            "variant": "large beast that swims and has stealth skills and is a good jumper"
+        },
+        {
+            "query": "glass-covered gator that lives in water and can breathe air",
+            "variant": "gator made of glass that can live in both water and air"
+        },
+        {
+            "query": "long jumping predator that grapples and uses poison attacks",
+            "variant": "predatory creature that jumps long distances and uses poison grapples"
+        },
+        {
+            "query": "creature with blindsight that thrives in dim light and silt",
+            "variant": "animal with blindsight abilities that does well in low light and silt"
+        },
+        {
+            "query": "stealthy gator that knocks enemies prone and restrains them",
+            "variant": "stealthy glass gator that can knock down and restrain foes"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Flying Snake",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 5,
+    "ac": 14,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "walk 30 ft., fly 60 ft., swim 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "flying",
+        "venomous",
+        "agile"
+    ],
+    "adjectives": [
+        "brightly colored",
+        "winged",
+        "nimble"
+    ],
+    "description": "The Flying Snake is a brightly colored, winged serpent known for its agility in the air. It has long, flexible wings that allow it to glide effortlessly, making it a swift predator.",
+    "memorable": "Its ability to avoid opportunity attacks while flying makes it a slippery opponent, especially when in groups.",
+    "goals": "Typically hunts insects and small animals in jungles or tropical regions.",
+    "relations": "Sometimes domesticated by tribespeople and cultists as messengers.",
+    "environment": "Remote jungles or tropical regions.",
+    "strengths": "High Dexterity makes it nimble and quick, enabling effective ambush tactics from the air.",
+    "weaknesses": "Low Strength and hit points make it fragile in direct confrontation.",
+    "attacks": "Bite attack that deals piercing and poison damage, potentially causing up to 7 damage.",
+    "most_powerful_ability": "Flyby allows it to maneuver without provoking opportunity attacks.",
+    "senses": "Possesses blindsight up to 10 feet, allowing it to sense its surroundings without sight.",
+    "skills": "Has a decent passive perception of 11.",
+    "additional_information": [
+        "It can glide effectively, making it hard to hit.",
+        "Often found in groups, they can be a nuisance.",
+        "Their venomous bite is more problematic in numbers.",
+        "Brightly colored appearance enhances its exotic nature.",
+        "Usually considered a minor threat to adventurers."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small venomous flying snake ambush",
+        "brightly colored agile serpent in the jungle",
+        "winged snake that bites with poison",
+        "quick gliding snake that avoids attacks",
+        "tiny snake used as messenger"
+    ]
+}

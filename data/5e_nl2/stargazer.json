@@ -1,0 +1,49 @@
+{
+    "name": "Stargazer",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 168,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 15 ft., burrow 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "monstrosity",
+        "grappling",
+        "burrowing"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "adaptable"
+    ],
+    "description": "The Stargazer is a Huge Monstrosity with a robust physique, characterized by its 12 tendrils and large appendages. It possesses natural armor and has a fearsome presence in combat.",
+    "memorable": "Renowned for its tendril-based attacks and regrowth ability, making it resilient in prolonged battles.",
+    "goals": "Engage enemies in combat, utilize its strength and tendrils for control.",
+    "relations": "Might be found in lairs with other subterranean creatures or similar monstrosities.",
+    "environment": "Commonly resides in underground areas or caverns.",
+    "strengths": "High hit points and damage output from multiple types of attacks; can grapple multiple foes.",
+    "weaknesses": "Low Dexterity and mental capabilities render it less agile and ineffective in social scenarios.",
+    "attacks": "Utilizes Bite, Slam, and Tendril Whip attacks to overwhelm opponents, with grappling capabilities.",
+    "most_powerful_ability": "Tendril Whip Regrowth allows it to recover from the destruction of its tendrils, maintaining combat effectiveness.",
+    "senses": "Has tremorsense up to 60 feet, allowing it to detect vibrations in the ground.",
+    "skills": "Possesses a passive Perception of 16, enabling it to sense its surroundings effectively.",
+    "additional_information": [
+        "Immune to being knocked prone.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Can trap creatures with its Wing Trap ability.",
+        "Effective at controlling the battlefield with its grappling and pulling abilities.",
+        "Can deal consistent bludgeoning damage to trapped creatures."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "huge monster with tendril attacks",
+        "underground grappling monstrosity",
+        "creature that regrows tendrils",
+        "durable monster with magic resistance",
+        "formidable foe with burrowing abilities"
+    ]
+}

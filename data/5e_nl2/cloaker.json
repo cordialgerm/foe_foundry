@@ -1,0 +1,52 @@
+{
+    "name": "Cloaker",
+    "creature_type": "Aberration",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 78,
+    "ac": 14,
+    "srd": true,
+    "cr": "8",
+    "movement": "10 feet on the ground and 40 feet flying",
+    "role": "Skirmisher",
+    "tags": [
+        "dark",
+        "underdark",
+        "stealthy",
+        "psychic"
+    ],
+    "adjectives": [
+        "bizarre",
+        "menacing",
+        "intelligent",
+        "shadows"
+    ],
+    "description": "The Cloaker resembles a large, dark manta ray with long, whip-like tails, often lurking in shadows or hanging from ceilings.",
+    "memorable": "Cloakers can blend into their surroundings, disguise as a cloak, and use chilling moans to frighten prey.",
+    "goals": "To ambush unsuspecting adventurers in dark caverns and ruins, often working with other dark creatures.",
+    "relations": "May be encountered alongside other dark-dwelling creatures, often relying on ambush tactics.",
+    "environment": "Typically found in caverns and ruins, especially in dark or shadowy areas.",
+    "strengths": "Highly intelligent with strong physical capabilities, good at ambushing, and has various attack options.",
+    "weaknesses": "Disadvantage on attack rolls and Perception checks in bright light, making it less effective in such conditions.",
+    "attacks": "Can perform Multiattack with Bite and Tail attacks, grappling targets and inflicting piercing and poison damage.",
+    "most_powerful_ability": "The Moan ability can inflict high psychic damage and instill fear in groups of enemies.",
+    "equipment": null,
+    "senses": "Has Light Sensitivity, penalizing it in bright light and affecting its effectiveness in combat.",
+    "skills": "Proficient in stealth, making it very capable in sneaking or ambushing scenarios.",
+    "additional_information": [
+        "False Appearance allows it to disguise as a cloak when motionless.",
+        "Damage Transfer ability reduces damage taken while attached to a target.",
+        "Can create illusory duplicates with the Phantasms ability.",
+        "Resistant to being charmed or frightened.",
+        "Possesses high Strength and Dexterity for physical attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "dark manta ray ambush predator",
+        "creature that disguises as a cloak",
+        "psychic monster with chilling moan",
+        "shadow lurking creature with long tails",
+        "ambush creature that grapples and suffocates"
+    ]
+}

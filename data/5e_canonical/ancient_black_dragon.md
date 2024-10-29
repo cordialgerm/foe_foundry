@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Black Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>21</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>367</HP>
 <summary>The Ancient Black Dragon is a terror of the swamp, with scales so dark they seem to absorb the light around them. Its massive wings create a shadow over the land as it soars through the air, and its breath is a stream of highly corrosive acid. These dragons are twisted and cruel, reveling in tormenting their enemies both physically and psychologically. Their lairs are often in decayed ruins or deep in murky swamps, where they thrive in the putrid, fetid air. The Ancient Black Dragon is a cunning strategist, often enslaving lesser creatures and manipulating them to achieve its dark goals.</summary>
 
 <summary>The Ancient Black Dragon is a powerful and imposing creature, classified as a Gargantuan dragon. With an armor class of 22, it presents a formidable challenge to adventurers, boasting an impressive pool of 367 hit points. This dragon is known for its amphibious nature, allowing it to thrive both in air and underwater, with a speed of 40 feet on land, 80 feet in the air, and 40 feet through water. It has a devastating attack combination, capable of delivering piercing, slashing, and bludgeoning damage, as well as powerful acid attacks. The Ancient Black Dragon is a cunning ambusher, particularly effective in aquatic environments, where it can utilize its stealth prowess to surprise enemies. Its legendary resistances and spellcasting abilities make it a considerable threat, while its challenge rating of 23 indicates the level of expertise required to defeat this creature. </summary>
@@ -37,6 +39,7 @@ Finally, the Ancient Black Dragon's presence can alter its surroundings signific
 
 Source: 5e_srd
 
+<statblock>
 # Ancient Black Dragon (Chromatic)
 
 *Gargantuan dragon, chaotic evil*
@@ -89,7 +92,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6+8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6+8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -97,6 +101,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Black Dragon
 
 *Gargantuan* *Dragon*
@@ -146,6 +151,7 @@ Source: 5e_artisinal_monsters
 - **Darkness:** The dragon creates a 40-foot-radius sphere of magical darkness originating from a point it can see within 120 feet. Darkvision can't penetrate this darkness. The darkness lasts for 1 minute or until the dragon uses this action again.
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 19 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 22 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
+</statblock>
 
 
 
@@ -154,6 +160,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Black Dragon
 
 *Gargantuan dragon*
@@ -200,5 +207,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days.
+</statblock>
 
 

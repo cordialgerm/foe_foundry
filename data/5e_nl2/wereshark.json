@@ -1,0 +1,49 @@
+{
+    "name": "Wereshark",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 90,
+    "ac": 11,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "shapeshifter",
+        "lycanthrope",
+        "aquatic"
+    ],
+    "adjectives": [
+        "ferocious",
+        "cunning",
+        "formidable"
+    ],
+    "description": "The Wereshark is a large humanoid with traits resembling both a shark and a human, capable of transforming between forms.",
+    "memorable": "Its ability to shapeshift and Blood Frenzy ability make it a deadly predator.",
+    "goals": "To hunt and exploit weakened prey.",
+    "relations": "Likely found with other aquatic predators or lycanthropes.",
+    "environment": "Aquatic environments, often near coastal areas.",
+    "strengths": "Immunity to nonmagical physical attacks not made with silvered weapons.",
+    "weaknesses": "Vulnerability to silvered weaponry.",
+    "attacks": "Multiattack with three trident strikes or a powerful bite that can induce lycanthropy.",
+    "most_powerful_ability": "Blood Frenzy grants it advantage on attacks against wounded foes.",
+    "senses": "Blindsight 30 ft. in shark and hybrid form allows it to detect movement in water.",
+    "skills": "Has a +4 perception bonus, enabling it to notice details effectively.",
+    "additional_information": [
+        "Can hold its breath for 1 hour in hybrid form.",
+        "Shapechanger ability to transform into shark-humanoid hybrid or Large hunter shark.",
+        "Retains swimming speed in hybrid and shark forms.",
+        "Losing walking speed while in shark form.",
+        "Cursed with wereshark lycanthropy upon a successful bite attack."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful shapeshifter with aquatic abilities",
+        "lycanthrope that thrives in water",
+        "shark-like humanoid that hunts prey",
+        "monster that can turn into a shark",
+        "ferocious predator with blood frenzy ability"
+    ]
+}

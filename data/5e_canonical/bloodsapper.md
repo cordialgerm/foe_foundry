@@ -1,6 +1,8 @@
 <MonsterName/>Bloodsapper</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Bloodsapper is a medium-sized aberration characterized by its chaotic evil nature, making it a vicious and cunning adversary. With a challenge rating of 3, it poses a moderate threat to adventurers, presenting both physical and magical dangers. Its strengths lie in its capacity for mobility, with a walking speed of 40 feet and climbing speed of 20 feet, as well as its impressive hit points of 90, granting it good durability in combat. The creature excels in tracking wounded foes using its remarkable sense of blood. However, it has low intelligence and charisma, making it somewhat limited in magical interaction and strategy beyond its instincts. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ In combat, the Bloodsapper’s mix of melee attacks and debilitating abilities m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bloodsapper
 
 *Medium* *Aberration* *chaotic evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Bloody Breath (Recharge Special):** The bloodsapper can expel a 15-foot cone of acrid gas and blood from its bladder. Each creature in the area must make a DC 13 Constitution saving throw. On a failure, a creature takes 14 (4d6) acid damage and is poisoned for 1 minute. On a success, a creature takes half the damage and isn’t poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once a bloodsapper uses its Bloody Breath, it can’t use Bloody Breath again until it has drained at least 25 hp of blood from a creature.
 
 
+</statblock>
 
 

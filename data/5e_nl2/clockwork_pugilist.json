@@ -1,0 +1,52 @@
+{
+    "name": "Clockwork Pugilist",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet per turn",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "melee",
+        "battle",
+        "defensive"
+    ],
+    "adjectives": [
+        "resilient",
+        "aggressive",
+        "mechanical"
+    ],
+    "description": "A mechanical fighter with solid armor, designed for combat. It has a tough exterior and features dual fist attacks.",
+    "memorable": "Combines strong melee capability with defensive abilities, making it a tough opponent for low-level adventurers.",
+    "goals": "To engage in direct combat, protecting allies and attacking enemies.",
+    "relations": "Could be encountered alongside other constructs or guardians in combat scenarios.",
+    "environment": "Often found in battle arenas or as guardians in a workshop or magical facility.",
+    "strengths": "High Strength score provides potent melee combat, immune to common conditions and damage types.",
+    "weaknesses": "Very low Intelligence limits its ability to engage in complex problem-solving.",
+    "attacks": "Utilizes powerful fist attacks, including a special ability for strategic repositioning in combat.",
+    "most_powerful_ability": "Brass Onslaught allows for movement without provoking opportunity attacks and deals extra damage.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet and a passive Perception score of 13.",
+    "skills": "Boasts average perception skills with a +1 modifier.",
+    "additional_information": [
+        "Immune to spells that alter its form due to Immutable Form.",
+        "Does not require air, food, drink, or sleep as a Construct.",
+        "Enhanced survivability through Magic Resistance, providing advantage on saving throws against spells."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical warrior with strong attacks",
+        "construct that protects allies in combat",
+        "aggressive pugilist with powerful melee abilities",
+        "battle-ready construct immune to many effects",
+        "strong fist-fighting machine"
+    ]
+}

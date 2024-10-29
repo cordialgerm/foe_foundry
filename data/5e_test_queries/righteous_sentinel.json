@@ -1,0 +1,25 @@
+{
+    "name": "Righteous Sentinel",
+    "queries": [
+        {
+            "query": "large construct that protects against spells and has high strength",
+            "variant": "big construct that shields from spells and possesses great strength"
+        },
+        {
+            "query": "guardian with magic resistance and reflective abilities in combat",
+            "variant": "protector featuring magic resistance and combat reflection skills"
+        },
+        {
+            "query": "lawful good construct immune to poison and psychic damage",
+            "variant": "law abiding good construct that is invulnerable to poison and psychic injury"
+        },
+        {
+            "query": "sentinel with high hit points and melee attack options",
+            "variant": "guardian with a lot of health points and close-range attack abilities"
+        },
+        {
+            "query": "Righteous Sentinel traits like bludgeoning resistance and warp reflection",
+            "variant": "Righteous Sentinel features such as resistance to bludgeoning and warp reflection"
+        }
+    ]
+}

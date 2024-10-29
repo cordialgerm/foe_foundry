@@ -1,0 +1,49 @@
+{
+    "name": "Mud Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 27,
+    "ac": 10,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 feet, slow-moving",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "mud",
+        "golem"
+    ],
+    "adjectives": [
+        "durable",
+        "slow",
+        "blinding"
+    ],
+    "description": "The Mud Golem has a physical presence reflective of its muddy composition, acting as a sturdy combatant in battle.",
+    "memorable": "Notable for its impressive resistances and abilities to blind opponents with its Mud Ball attack.",
+    "goals": "To serve its creator and engage in combat when needed.",
+    "relations": "Often found in the company of creators or other constructs.",
+    "environment": "Usually found in settings where its creator operates or in muddy terrains.",
+    "strengths": "Immunity to poison and psychic damage, along with significant resistances to physical attacks.",
+    "weaknesses": "Slow movement speed makes it less agile compared to quicker foes.",
+    "attacks": "Utilizes Multiattack for two slam attacks and the Mud Ball ranged attack to hinder opponents.",
+    "most_powerful_ability": "Magic Resistance allows it to withstand spells and magical effects.",
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Immutable Form renders it immune to effects that change its shape.",
+        "Can understand languages but cannot speak.",
+        "Resistance to non-magical attacks.",
+        "Blinded condition inflicts strategic disadvantages on targets.",
+        "Significant physical damage potential with slam attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "mud creature that blinds foes",
+        "construct with magical resistance and slow speed",
+        "small sturdy mud monster with slam attacks",
+        "enemy that uses mud attacks and immune to shape change",
+        "golem designed for combat with poison immunity"
+    ]
+}

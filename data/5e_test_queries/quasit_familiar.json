@@ -1,0 +1,25 @@
+{
+    "name": "Quasit Familiar",
+    "queries": [
+        {
+            "query": "tiny fiend with stealth and magic resistance",
+            "variant": "small fiend that has magic resistance and is good at stealth"
+        },
+        {
+            "query": "fiend companion with telepathic communication and shape-shifting abilities",
+            "variant": "fiend ally that can talk telepathically and change its shape"
+        },
+        {
+            "query": "stealthy creature immune to poison that aids spellcasters",
+            "variant": "sneaky monster that can't be poisoned and helps wizards"
+        },
+        {
+            "query": "small chaotic evil fiend that can become invisible",
+            "variant": "little evil fiend that can turn invisible at will"
+        },
+        {
+            "query": "magical creature with good agility that can scare enemies",
+            "variant": "magical beast with great reflexes that can frighten foes"
+        }
+    ]
+}

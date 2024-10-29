@@ -1,6 +1,8 @@
 <MonsterName/>Mngwa</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (Ethereal Coat)</AC>
+<HP/>91</HP>
 <summary>The Mngwa is a medium-sized aberration characterized by its neutral evil alignment and formidable combat capabilities. It possesses a notably high Armor Class of 16 due to its Ethereal Coat ability, which incorporates its Charisma modifier into its defenses. With a robust pool of 91 hit points, the Mngwa is relatively durable and can sustain a considerable amount of damage before falling. Its speed of 40 feet allows for agile movement, while its challenge rating of 4 indicates that it is a moderately challenging opponent for adventurers. The Mngwa's strengths lie in its impressive Strength and Dexterity scores, with a Strength of 19 and a Dexterity of 17, allowing it to dominate in melee combat and evade attacks. However, its weaknesses include a lack of ranged capabilities and a relatively low Intelligence score which affects its capability for complex strategies.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Mngwa is a cunning and powerful creature that thrives in melee comb
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mngwa
 
 *Medium* *Aberration* *Neutral Evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Ethereal Step:** The mngwa magically shifts from the Material Plane to the Ethereal Plane, or vice versa. When it leaves or enters the Material Plane, a puff of gray smoke briefly appears in the space on the Material Plane it leaves or enters.
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Specter</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>22</HP>
 <summary>A Specter is a malevolent, incorporeal undead creature formed from the soul of a person who met a violent or tragic end. Specters are filled with hatred for the living, drifting through walls and objects as they seek to drain the life force from their victims. Their touch is cold and deadly, sapping the energy and vitality of those they encounter. Specters are immune to most physical attacks and are difficult to kill without magic. They are often bound to the location of their death or cursed to wander the world in eternal torment, feeding on the living.</summary>
 
 <summary>The Specter is a Medium undead creature often encountered in dark and foreboding locations. It serves as a haunting and dangerous apparition, capable of draining the life force of its victims. The Specter has a unique ability to move through solid objects, which makes it especially elusive and difficult to target. However, it struggles in sunlight, suffering penalties to its attacks and perception. With a challenge rating of 1, it poses a moderate threat to adventurers, but its life-draining capabilities can significantly weaken opponents if not handled carefully.</summary>
@@ -46,6 +48,7 @@ The combination of these abilities makes the Specter a unique and dangerous adve
 
 Source: 5e_srd
 
+<statblock>
 ## Specter
 
 *Medium undead, chaotic evil*
@@ -78,7 +81,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Life Drain***. *Melee Spell Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+***Life Drain***. *Melee Spell Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</statblock>
+
 
 
 
@@ -86,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Specter
 
 *Medium* *Undead*
@@ -120,6 +125,7 @@ Source: 5e_artisinal_monsters
 - **Fade:** While not in sunlight  the specter turns invisible and takes the Hide action. It remains invisible for 1 minute or until it uses Life Drain or takes damage. If the specter takes radiant damage  it can't use this action until the end of its next turn.
 
 
+</statblock>
 
 
 
@@ -128,6 +134,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Specter
 
 *Medium undead*
@@ -162,5 +169,6 @@ Source: 5e_artisinal_monsters
 
 - **Retributive Shriek.** When the specter takes damage from a creature it can see within 30 feet of it, the specter can shriek with the fury of its tormented existence. That creature must succeed on a DC 12 WIS save or be frightened until the end of its next turn.
 
+</statblock>
 
 

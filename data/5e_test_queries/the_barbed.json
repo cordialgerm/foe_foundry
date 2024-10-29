@@ -1,0 +1,25 @@
+{
+    "name": "The Barbed",
+    "queries": [
+        {
+            "query": "humanoid creature that excels in stealth and causes poison damage",
+            "variant": "humanoid monster skilled in stealth and poisons its enemies"
+        },
+        {
+            "query": "small lawful evil monster with darkvision that thrives in shadows",
+            "variant": "little evil creature with darkvision that does well in the dark"
+        },
+        {
+            "query": "stealthy combatant immune to poison who moves quickly in battle",
+            "variant": "sneaky fighter that can't be poisoned and is fast in fights"
+        },
+        {
+            "query": "creature with sunlight sensitivity that can attack in packs",
+            "variant": "monster weak to sunlight but strong when attacking with allies"
+        },
+        {
+            "query": "cunning ambush attacker with barbed slash melee ability",
+            "variant": "sneaky ambush foe that uses barbed slash for close combat"
+        }
+    ]
+}

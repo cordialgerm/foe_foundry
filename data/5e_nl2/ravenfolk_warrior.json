@@ -1,0 +1,52 @@
+{
+    "name": "Ravenfolk Warrior",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "magical",
+        "stealthy"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "versatile"
+    ],
+    "description": "The Ravenfolk Warrior embodies a blend of fighting prowess and magical abilities, notable for its magical weapons and mimicry. They can produce phantasmal wings that can blind foes nearby.",
+    "memorable": "The ability to mimic sounds and utilize rune-powered weapons makes them a versatile and tactical opponent.",
+    "goals": "To engage in combat utilizing both melee and ranged attacks while using deception and tactical repositioning.",
+    "relations": "Related to other Ravenfolk and may be encountered with allies that share similar traits.",
+    "environment": "Typically found in areas that allow for stealth and ambush tactics, often in darkness or woodland regions.",
+    "strengths": "High Dexterity and proficiency in Stealth make them effective ambushers, and their ability to deal both piercing and radiant damage adds to their threat level.",
+    "weaknesses": "Average Intelligence and Charisma limit their effectiveness in social interactions.",
+    "attacks": "Can perform a Multiattack, combining melee and ranged options, with abilities that inflict piercing and radiant damage.",
+    "most_powerful_ability": "Odin's Call allows it to reposition strategically without provoking opportunity attacks when damaged.",
+    "equipment": "Studded leather armor enhances its defense.",
+    "senses": "Has darkvision up to 120 feet, allowing superior visibility in low-light conditions.",
+    "skills": "Trained in Deception, Perception, and Stealth, enhancing its ability to surprise and remain undetected.",
+    "additional_information": [
+        "Can mimic animal sounds and humanoid voices, causing confusion among foes.",
+        "Weapon attacks are magical and deal additional radiant damage.",
+        "Ghost Wings can blind nearby creatures, adding tactical depth.",
+        "Effective as both a melee and ranged attacker.",
+        "Uses agility to dodge attacks and reposition during combat."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid that mimics animal sounds",
+        "stealthy warrior with magical attacks",
+        "creature that uses radiant damage",
+        "cunning fighter with phantasmal wings",
+        "agile warrior skilled in ambush"
+    ]
+}

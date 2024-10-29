@@ -1,0 +1,52 @@
+{
+    "name": "Coven Green Hag",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "hag",
+        "spellcaster",
+        "manipulator"
+    ],
+    "adjectives": [
+        "cunning",
+        "dangerous",
+        "deceptive",
+        "manipulative",
+        "versatile"
+    ],
+    "description": "The Coven Green Hag is a Medium fey, skilled in both spellcasting and physical combat, with a strong presence that suggests both magical power and a treacherous nature.",
+    "memorable": "Known for its powerful hexes and transformation abilities, the hag is a formidable threat, using both magic and physical prowess to confuse and overwhelm its foes.",
+    "goals": "To manipulate and deceive, often using hexes to control the actions of its targets.",
+    "relations": "Typically operates alone or in small groups, may have ties to other fey creatures or covens.",
+    "environment": "Commonly found in forests, swamps, or other wild, natural areas.",
+    "strengths": "Possesses strong spellcasting abilities, including invisibility and versatile transformation into beasts.",
+    "weaknesses": "Reliance on magic makes it vulnerable when spell options are exhausted or disrupted.",
+    "attacks": "Employs a two-claw multiattack and can curse targets with one of several debilitating hexes.",
+    "most_powerful_ability": "The Hex ability that can inflict powerful curses lasting up to 30 days.",
+    "senses": "Passive Perception of 14 enhances the hag's ability to detect foes.",
+    "skills": "Proficient in Deception and Stealth, allowing it to excel in ambush tactics.",
+    "additional_information": [
+        "Can breathe both air and water, providing aquatic versatility.",
+        "Innate spellcasting ability allows casting without material components.",
+        "Transform into beasts to gain tactical movement advantages.",
+        "Has strong Charisma for spellcasting and influencing others.",
+        "Hex can impose significant disadvantages, like fear or sleep."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting with spells such as Dancing Lights, Invisibility, and Geas.",
+    "test_queries": [
+        "manipulative green fey creature with hexes",
+        "cunning hag that can transform into beasts",
+        "dangerous spellcasting creature from the fey",
+        "hag that uses hex to control targets",
+        "creature skilled in deception and magic"
+    ]
+}

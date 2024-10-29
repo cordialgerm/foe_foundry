@@ -1,0 +1,25 @@
+{
+    "name": "Owlbear Recluse",
+    "queries": [
+        {
+            "query": "large monster with strong melee attacks that can climb trees",
+            "variant": "big creature that has powerful close combat capabilities and is able to climb"
+        },
+        {
+            "query": "forest-dwelling monstrosity with keen senses for tracking prey",
+            "variant": "monster that lives in the woods and has sharp senses to hunt"
+        },
+        {
+            "query": "predator with a beak and claws that uses ambush tactics",
+            "variant": "creature with claws and a beak that employs surprise attacks"
+        },
+        {
+            "query": "tough wilderness monster that excels in physical combat",
+            "variant": "resilient wild creature that is very good at melee fighting"
+        },
+        {
+            "query": "monstrosity that has low mental capabilities and poor social skills",
+            "variant": "creature with bad intelligence and low charisma for interactions"
+        }
+    ]
+}

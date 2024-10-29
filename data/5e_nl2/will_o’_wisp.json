@@ -1,0 +1,52 @@
+{
+    "name": "Will-o\u2019-Wisp",
+    "creature_type": "Undead",
+    "alignment": "Neutral",
+    "size": "Tiny",
+    "hp": 31,
+    "ac": 17,
+    "srd": false,
+    "cr": "2",
+    "movement": "fly 50 ft. (hover)",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "spectral",
+        "trickster"
+    ],
+    "adjectives": [
+        "elusive",
+        "haunting",
+        "mischievous"
+    ],
+    "description": "A tiny undead creature that glows with a flickering light, appears like a haunting orb in dark places, and has a wispy, almost intangible presence.",
+    "memorable": "Its ability to become invisible while maintaining a light source makes it a deceptive foe.",
+    "goals": "Typically serves as a trickster, luring adventurers into dangerous situations.",
+    "relations": "Often found in dark realms and may be encountered alongside other undead or mischievous spirits.",
+    "environment": "Dark and swampy areas, often among lost travelers or in haunted locations.",
+    "strengths": "Exceptional agility with a +4 Dexterity, and its incorporeal movement allows it to easily navigate through obstacles.",
+    "weaknesses": "Fragile with low hit points and a poor Strength score, making it vulnerable in direct combat.",
+    "attacks": "Employs lightning damage through shock attacks and uses multiattack for increased offensive potential.",
+    "most_powerful_ability": "Beckon, which manipulates targets into moving toward it, creating opportunities for ambushes.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 ft., allowing it to navigate in complete darkness.",
+    "skills": "Good perception score of 13 and a stealth score of 14, making it difficult to detect.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep due to its undead nature.",
+        "Immunities to poison damage and the poisoned condition enhance its resilience.",
+        "Can control its illumination, varying brightness and radius as needed.",
+        "Gains temporary hit points when an enemy it can see is reduced to 0 hit points.",
+        "Easily manipulates the battlefield with its ability to become invisible."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "haunting light creature in dark swamps",
+        "trickster undead that manipulates light",
+        "tiny spectral entity with lightning powers",
+        "undead creature that lures adventurers",
+        "invisible monster that beckons from shadows"
+    ]
+}

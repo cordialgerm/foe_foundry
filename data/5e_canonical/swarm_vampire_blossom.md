@@ -1,6 +1,8 @@
 <MonsterName/>Swarm, Vampire Blossom</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>82</HP>
 <summary>The Swarm of Vampire Blossoms is a menacing and unique creature that embodies the traits of a large, unaligned plant. Its primary role lies in its ability to manipulate the battlefield through an array of strong offensive capabilities while simultaneously exhibiting several defensive traits. The swarm is particularly notable for its advantage in attacking weakened foes, making it especially dangerous in protracted encounters. With a decent amount of hit points at 82, the swarm can endure a fair amount of damage, but its low Strength and moderate Constitution indicate significant vulnerabilities to overpowering physical attacks. The challenge rating of 3 suggests that it poses a moderate threat to parties at lower levels, granting 700 experience points upon defeat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of offensive actions, the Swarm can use Petal Slashes, a melee weapon a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm, Vampire Blossom
 
 *Large* *Plant* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Petal Slashes:** Melee Weapon Attack: +6 to hit, 0 ft., one creature, in the swarm’s space. 18 (4d8) slashing damage or 9 (2d8) slashing damage if the swarm has half its hp or fewer. Target must make a DC 13 Con save reducing its hp max by an amount equal to damage taken on a failed save or by half as much if made. This reduction lasts until creature finishes a long rest. Target dies if this reduces its hp max to 0.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Crab",
+    "queries": [
+        {
+            "query": "small creature with pincers that lives in shallow waters",
+            "variant": "tiny creature with claws that stays in shallow water"
+        },
+        {
+            "query": "crustacean that can breathe underwater and on land",
+            "variant": "aquatic animal that breathes both air and water"
+        },
+        {
+            "query": "hard-shelled beast that scuttles sideways on the beach",
+            "variant": "shelled creature that moves sideways along the shore"
+        },
+        {
+            "query": "non-threatening crab found on coastal regions",
+            "variant": "harmless crab located in coastal areas"
+        },
+        {
+            "query": "tiny aquatic monster with a stealth skill",
+            "variant": "small water creature that has stealth abilities"
+        }
+    ]
+}

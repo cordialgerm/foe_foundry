@@ -1,0 +1,50 @@
+{
+    "name": "Clockwork Armadillo",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 22,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "mechanical",
+        "guardian",
+        "combat support"
+    ],
+    "adjectives": [
+        "resilient",
+        "swift",
+        "passive"
+    ],
+    "description": "The Clockwork Armadillo is a small mechanical creature with scissor-like claws and an armored shell, showcasing a sleek and practical design.",
+    "memorable": "Its ability to retract into a shell for protection and transport adds unique tactical advantages.",
+    "goals": "To serve as a guardian or helper in various settings.",
+    "relations": "Could be found alongside other constructs or mechanical creatures.",
+    "environment": "Often found in settings where machines and constructs thrive.",
+    "strengths": "High Dexterity enhances its agility and survivability in combat; constructs do not require rest.",
+    "weaknesses": "Low Intelligence and Charisma reduce its effectiveness in social interactions.",
+    "attacks": "Can make Scissor Claws attacks that deal slashing damage and disarm targets.",
+    "most_powerful_ability": "Overclocked grants advantage on initiative rolls, allowing it to react swiftly.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in dim light and darkness up to 60 feet.",
+    "skills": "Passive perception is average, reflecting limited ability to detect hidden threats.",
+    "additional_information": [
+        "Immune to poison and psychic damage.",
+        "Resistant to bludgeoning, piercing, and slashing damage while in its shell.",
+        "Immune to various conditions like being charmed or frightened.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Immutable Form protects it from spells that would alter its form."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical creature with a protective shell",
+        "robotic armadillo that can retract into itself",
+        "small construct immune to many conditions",
+        "clockwork creature with swift combat abilities",
+        "guardian robot with claws and shell"
+    ]
+}

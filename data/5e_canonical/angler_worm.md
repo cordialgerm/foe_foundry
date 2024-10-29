@@ -1,6 +1,8 @@
 <MonsterName/>Angler Worm</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>104</HP>
 <summary>The Angler Worm is a huge, unaligned monstrosity that serves as a formidable opponent within the realm of Dungeons & Dragons. Its primary role in combat is that of a grappler and damage dealer, with unique abilities that allow it to control the battlefield effectively. With a solid Armor Class of 14 and a substantial pool of hit points totaling 104, the Angler Worm is capable of enduring significant damage while inflicting harm on its enemies. However, it has low Dexterity, making it less effective in avoiding attacks. The creature is adept at using snares to trap enemies and can manipulate its environment to gain an advantage, creating danger zones for unsuspecting adventurers. Overall, the Angler Worm is dangerous when utilized in its favored terrain but may struggle when faced with fast, dexterous foes.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Angler Worm can also use its Ethereal Lure ability, which recharges on rolls
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Angler Worm
 
 *Huge* *Monstrosity* *Unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) piercing damage plus 3 (1d6) acid damage.
 - **Coils:** Melee Weapon Attack: +4 to hit, reach 10 ft., one creature. Hit: 12 (3d6 + 2) bludgeoning damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained by the angler worm, it can’t breathe, it takes 10 (3d6) bludgeoning damage at the start of each of the angler worm’s turns, and the angler worm can’t use its Coils on another target.
 - **Ethereal Lure (Recharge 4–6):** The angler worm creates an orb of faint, blue light on a point it can see within 20 feet of it. The light glows until the start of the worm’s next turn. When a creature that isn’t an angler worm starts its turn within 60 feet of the orb and can see the light, it must succeed on a DC 13 Wisdom saving throw or be charmed until the start of its next turn. While charmed, the creature must take the Dash action and move toward the light by the most direct route, trying to get within 5 feet of the light. It doesn’t avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, the creature can repeat the saving throw, ending the effect on itself on a success. If the charmed creature enters the worm’s snares, it has disadvantage on the saving throw to avoid being restrained.
+</statblock>
 
 

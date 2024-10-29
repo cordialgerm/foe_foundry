@@ -1,0 +1,25 @@
+{
+    "name": "Young Green Dragon",
+    "queries": [
+        {
+            "query": "large dragon with poisonous breath living in forests",
+            "variant": "large dragon that has a poisonous breath and resides in forests"
+        },
+        {
+            "query": "cunning green dragon that uses manipulation in combat",
+            "variant": "sly green dragon that manipulates foes during fights"
+        },
+        {
+            "query": "dragon with emerald scales and fear-inducing gas",
+            "variant": "creature with green scales that can induce fear with gas"
+        },
+        {
+            "query": "huge dragon capable of breathing both air and water",
+            "variant": "massive dragon that can breathe in both water and air"
+        },
+        {
+            "query": "deceptive creature with stealth abilities and poison resistance",
+            "variant": "tricky creature that has stealth skills and immune to poison"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "First Servant",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 162,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "humanoid",
+        "spellcaster",
+        "martial"
+    ],
+    "adjectives": [
+        "divine",
+        "awe-inspiring",
+        "powerful"
+    ],
+    "description": "The First Servant is a formidable medium humanoid, blending martial skills with divine magic. It wields the unique Armor of Foresight, enhancing its defenses and granting it a tactical edge in battle.",
+    "memorable": "Its Awe-Inspiring Presence can incapacitate foes, preventing them from using crucial combat actions while it delivers devastating magical strikes.",
+    "goals": "To serve a higher purpose, utilizing martial prowess and divine magic to protect allies and hinder enemies.",
+    "relations": "Could be encountered alongside other divine beings or as servants of a higher power.",
+    "environment": "Typically found in regions of significant divine influence or areas of conflict where its powers may be utilized.",
+    "strengths": "Exceptional damage output through melee attacks and spellcasting, high AC, and strong saving throws against a variety of effects.",
+    "weaknesses": "Average Strength score, which may limit its physical attack capabilities compared to other heavy hitters.",
+    "attacks": "Employs Multiattack, using Awe-Inspiring Presence first, followed by Divine Bursts that deal substantial necrotic or radiant damage, and can incapacitate with the Blinding Rod.",
+    "most_powerful_ability": "Awe-Inspiring Presence, which disables foes' ability to act strategically in combat.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception score of 19, indicating exceptional awareness.",
+    "skills": "Highly proficient in Wisdom saving throws with a +9 modifier, demonstrating strong resilience against magical effects.",
+    "additional_information": [
+        "Can heal allies with Healing Hands, providing valuable support in combat.",
+        "Spellcasting ability allows for versatile utility and control in encounters.",
+        "Divine Weapons make all attacks magical, increasing their damage potential significantly.",
+        "Can deliver a combination of melee and ranged attacks seamlessly.",
+        "Has abilities that influence battlefield dynamics, making it a strategic asset."
+    ],
+    "damage_types": [
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": "Can cast spells using its Wisdom as the spellcasting ability, featuring spells like Bane and Cure Wounds.",
+    "test_queries": [
+        "divine humanoid that incapasitates foes",
+        "powerful spellcaster with melee attacks",
+        "humanoid with high Wisdom and Charisma",
+        "frontline fighter with awe-inspiring presence",
+        "creature that blends martial and divine capabilities"
+    ]
+}

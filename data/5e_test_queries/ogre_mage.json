@@ -1,0 +1,25 @@
+{
+    "name": "Ogre Mage",
+    "queries": [
+        {
+            "query": "large giant that uses magic and has a strong melee attack",
+            "variant": "big giant who can cast spells and hits hard in close combat"
+        },
+        {
+            "query": "giant spellcaster that has a claw attack and can shapeshift",
+            "variant": "spellcasting giant with a claw ability and the power to change form"
+        },
+        {
+            "query": "strong ogre that creates darkness and can turn invisible",
+            "variant": "powerful ogre that can summon darkness and goes unseen"
+        },
+        {
+            "query": "Ogre Mage abilities for controlling crowds and dealing damage",
+            "variant": "abilities of the Ogre Mage for handling many enemies and inflicting harm"
+        },
+        {
+            "query": "magically enhanced ogre with resistance to nonmagical damage",
+            "variant": "ogre with magical powers and defense against ordinary attacks"
+        }
+    ]
+}

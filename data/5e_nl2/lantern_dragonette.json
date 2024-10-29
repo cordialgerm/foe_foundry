@@ -1,0 +1,51 @@
+{
+    "name": "Lantern Dragonette",
+    "creature_type": "Dragon",
+    "alignment": "lawful neutral",
+    "size": "Tiny",
+    "hp": 28,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "40 feet walking, 15 feet flying",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "light",
+        "fire"
+    ],
+    "adjectives": [
+        "tiny",
+        "magical",
+        "intelligent"
+    ],
+    "description": "A small dragon known for creating and manipulating light, with a robust set of magical abilities.",
+    "memorable": "Its ability to create bright light and its vulnerability to magical darkness make it unique.",
+    "goals": "Guardianship of hidden knowledge and exploration in dark environments.",
+    "relations": "Might be found with other dragons or magical creatures.",
+    "environment": "Typically found in areas needing illumination or hidden knowledge.",
+    "strengths": "Excellent intelligence and utility through light manipulation.",
+    "weaknesses": "Very low strength and sensitive to magical darkness, hindering its abilities.",
+    "attacks": "Bite attack and powerful fire breath in a 15-foot cone.",
+    "most_powerful_ability": "Fire Breath, capable of dealing significant fire damage.",
+    "equipment": null,
+    "senses": "Possesses darkvision allowing it to see in darkness.",
+    "skills": "Skilled in Arcana, History, Nature, and Religion, reflecting its intelligence.",
+    "additional_information": [
+        "Can shed bright light and dim light with its Lantern Belly ability.",
+        "Requires candle wax to activate its light-shedding ability.",
+        "Hindered in magical darkness, becoming vulnerable to necrotic damage."
+    ],
+    "damage_types": [
+        "fire",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny dragon that creates light",
+        "dragon with fire breath and light abilities",
+        "magical dragon sensitive to darkness",
+        "creature that sheds light and flies slowly",
+        "intelligent dragon that guards knowledge"
+    ]
+}

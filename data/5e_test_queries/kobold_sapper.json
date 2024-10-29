@@ -1,0 +1,25 @@
+{
+    "name": "Kobold, Sapper",
+    "queries": [
+        {
+            "query": "small humanoid that excels in ambush and sabotage",
+            "variant": "small human-like creature skilled in traps and ambushes"
+        },
+        {
+            "query": "creature that uses explosives and has sunlight sensitivity",
+            "variant": "monster with explosive abilities and disadvantage in sunlight"
+        },
+        {
+            "query": "dexterous monster that uses traps and multiattack with mining picks",
+            "variant": "agile creature that sets traps and attacks three times with picks"
+        },
+        {
+            "query": "ambush predator of the dark with high intelligence and pack tactics",
+            "variant": "sneaky dark-dwelling creature with smart traps and team attack bonuses"
+        },
+        {
+            "query": "humanoid with traps and strong ranged explosive attacks",
+            "variant": "human-like creature that relies on traps and powerful explosive strikes"
+        }
+    ]
+}

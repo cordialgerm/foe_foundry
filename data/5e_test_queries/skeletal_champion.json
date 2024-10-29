@@ -1,0 +1,25 @@
+{
+    "name": "Skeletal Champion",
+    "queries": [
+        {
+            "query": "undead warrior that uses a longsword and has resilience in combat",
+            "variant": "warrior undead that fights with a longsword and is tough in battle"
+        },
+        {
+            "query": "medium skeletal creature that is vulnerable to bludgeoning damage",
+            "variant": "medium undead skeleton that can be hurt by bludgeoning attacks"
+        },
+        {
+            "query": "monster that has darkvision and doesn't need food or sleep",
+            "variant": "creature with darkvision that does not require sustenance or rest"
+        },
+        {
+            "query": "Skeletal Champion abilities with a heavy crossbow and shielding riposte",
+            "variant": "Skeletal Champion features using heavy crossbow and the shielding riposte reaction"
+        },
+        {
+            "query": "undead with immunity to poison and average perception",
+            "variant": "creature that is immune to poison damage and has a normal perception score"
+        }
+    ]
+}

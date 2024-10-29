@@ -1,0 +1,25 @@
+{
+    "name": "Red-Banded Line Spider",
+    "queries": [
+        {
+            "query": "tiny spider that uses webbing for mobility and has poison attacks",
+            "variant": "tiny arachnid that uses webs for movement and has poisoned strikes"
+        },
+        {
+            "query": "agile spider with stealth abilities found in ambush scenarios",
+            "variant": "quick spider with stealth skills used in surprise attacks"
+        },
+        {
+            "query": "spider that is immune to psychic damage and can climb walls",
+            "variant": "arachnid immune to psychic harm that can scale surfaces"
+        },
+        {
+            "query": "poisonous spider with high Dexterity and web walking capabilities",
+            "variant": "venomous spider with great agility and ability to walk on webs"
+        },
+        {
+            "query": "lightweight spider adept at stealth and capable of climbing",
+            "variant": "small spider skilled in stealth and able to climb surfaces"
+        }
+    ]
+}

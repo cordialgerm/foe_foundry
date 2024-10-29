@@ -1,0 +1,48 @@
+{
+    "name": "Thread-Bound Constrictor Snake",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 60,
+    "ac": 12,
+    "srd": false,
+    "cr": "3",
+    "movement": "walks at a speed of 30 feet",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "guardian",
+        "snake"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "magic-resistant"
+    ],
+    "description": "A large, snake-like construct with immense physical strength, capable of grappling foes.",
+    "memorable": "Its ability to grapple and restrain opponents makes it a terrifying adversary in close combat.",
+    "goals": "Typically serves as a guardian or combatant protecting a specific area or object.",
+    "relations": "Often created by powerful spellcasters or inventors, may be accompanied by other constructs.",
+    "environment": "Commonly found in areas protected by magic or within the domains of its creator.",
+    "strengths": "Immunity to poison and ability to resist nonmagical physical damage.",
+    "weaknesses": "Highly susceptible to effects from antimagic fields, which can incapacitate it.",
+    "attacks": "Utilizes its constricting attack to deal significant bludgeoning damage and immobilize its targets.",
+    "most_powerful_ability": "The Constrict ability grapples and restrains opponents, increasing the chance for further damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 10 feet, allowing it to sense nearby creatures without sight.",
+    "skills": null,
+    "additional_information": [
+        "Can move through very narrow spaces without restriction.",
+        "All weapon attacks are considered magical, bypassing nonmagical resistances.",
+        "Immune to effects that would alter its physical form."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "huge snake-like construct guardian",
+        "formidable bludgeoning constrictor snake",
+        "magic-resistant snake that grapples enemies",
+        "powerful construct snake with special abilities",
+        "snake that is vulnerable to antimagic fields"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Moppet",
+    "queries": [
+        {
+            "query": "tiny construct that absorbs psychic energy and appears like a doll",
+            "variant": "tiny construct that looks like a doll and absorbs psychic energy"
+        },
+        {
+            "query": "small monster immune to poison with psychic abilities",
+            "variant": "small monster with psychic powers that is immune to poison"
+        },
+        {
+            "query": "psychological manipulation tool that causes nightmares and confusion",
+            "variant": "tool for confusion and nightmares that manipulates psychologically"
+        },
+        {
+            "query": "construct that doesn't need air and has low combat abilities",
+            "variant": "construct without need for air and poor combat skills"
+        },
+        {
+            "query": "monster that enters a fugue state and induces fear",
+            "variant": "creature that induces fear and makes others enter a fugue state"
+        }
+    ]
+}

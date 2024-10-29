@@ -1,0 +1,25 @@
+{
+    "name": "Skin Bat",
+    "queries": [
+        {
+            "query": "small undead creature that can paralyze and thrives in darkness",
+            "variant": "small undead that thrives in dark and can paralyze foes"
+        },
+        {
+            "query": "fly and walk undead bat monster with poison immunity",
+            "variant": "bat monster that can walk and fly, immune to poison"
+        },
+        {
+            "query": "creature with echolocation abilities that relies on sound",
+            "variant": "creature that uses sound for echolocation and senses its environment"
+        },
+        {
+            "query": "agile undead bat that summons other bats at night",
+            "variant": "fast undead bat that can call other bats when it's night"
+        },
+        {
+            "query": "creature that doesn't require air or sleep and has blindsight",
+            "variant": "being without need for air or sleep that has blindsight ability"
+        }
+    ]
+}

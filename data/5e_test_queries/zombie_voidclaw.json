@@ -1,0 +1,25 @@
+{
+    "name": "Voidclaw Zombie",
+    "queries": [
+        {
+            "query": "small undead monster with high Dexterity that manipulates combat",
+            "variant": "undead creature that is small and has good Dexterity while controlling combat"
+        },
+        {
+            "query": "zombie that uses necrotic energy and evades attacks",
+            "variant": "undead zombie that evades attacks and uses necrotic power"
+        },
+        {
+            "query": "chaotic evil undead with erratic movement ability in combat",
+            "variant": "undead creature with chaotic evil alignment and a movement ability that is unpredictable"
+        },
+        {
+            "query": "Voidclaw Zombie that can climb and has a high mobility during battle",
+            "variant": "zombie named Voidclaw able to climb and very mobile in fights"
+        },
+        {
+            "query": "undead with Turn Resistance and strong melee attacks",
+            "variant": "undead creature that has resistance to Turn effects and powerful melee attacks"
+        }
+    ]
+}

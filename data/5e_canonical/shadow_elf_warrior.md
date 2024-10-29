@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Elf Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>11</HP>
 <summary>The Shadow Elf Warrior is a medium humanoid capable of blending into the darkness and striking from the shadows. This creature excels in stealth and is equipped for both melee and ranged combat, making it a versatile opponent in battles. With a challenge rating of 1/4, the Shadow Elf Warrior is considered a minor threat that can be significantly effective when ambushing unsuspecting players or positioned strategically. It has average physical attributes but excels in wisdom, making its perception skills high. Though its hit points are relatively low, its ability to poison targets adds a powerful tactical edge in combat situations.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Shadow Elf Warrior offers a blend of stealth, strategic positioning
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Elf Warrior
 
 *Medium* *Humanoid*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Hand Crossbow:** Ranged Weapon Attack: +3 to hit, range 30/120 ft., one target. Hit: 4 (1d6 + 1) piercing damage. If the target is a creature  it makes a DC 13 Constitution saving throw. On a failure  the target is poisoned for 1 hour. If it fails the saving throw by 5 or more  it falls unconscious until it is no longer poisoned  it takes damage  or a creature takes an action to shake it awake.
 
 
+</statblock>
 
 

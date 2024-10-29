@@ -1,0 +1,54 @@
+{
+    "name": "Dawnfly, Desolation Nymph",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 68,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walk, 15 ft. burrow, 15 ft. climb, 30 ft. swim",
+    "role": null,
+    "tags": [
+        "beast",
+        "nymph",
+        "natural terrain",
+        "grappler"
+    ],
+    "adjectives": [
+        "large",
+        "cruel",
+        "natural",
+        "amphibious"
+    ],
+    "description": "The Dawnfly, or Desolation Nymph, embodies cruel nature with a large size and a carapace that adapts to surroundings. It is equipped with a powerful Hinged Maw and utilizes its camouflage to ambush foes in natural habitats.",
+    "memorable": "The ability to grapple and swallow its prey while using camouflage makes the Dawnfly a terrifying opponent in its natural environment.",
+    "goals": "To hunt and lure prey within its natural habitat.",
+    "relations": "Likely found in the company of other natural beasts or as a solitary predator.",
+    "environment": "Typically thrives in natural terrain, including areas near water.",
+    "strengths": "Good physical attack power with high Strength and Constitution, plus versatility in movement abilities.",
+    "weaknesses": "Low Intelligence and Charisma, limiting its strategic planning and social interaction.",
+    "attacks": "Utilizes a powerful Hinged Maw attack with piercing damage, can grapple Medium or smaller enemies, and has a Swallow ability that restrains and blinds its prey.",
+    "most_powerful_ability": "The Swallow action can incapacitate enemies, causing them to be blinded and taking ongoing acid damage while restrained.",
+    "equipment": null,
+    "senses": "Has tremorsense out to 30 feet and a passive Perception of 13.",
+    "skills": "Possesses a minimal perception skill, indicating a moderate awareness of its surroundings.",
+    "additional_information": [
+        "Limited Amphibiousness allows breathing in both air and water.",
+        "Shifting Camouflage grants advantage on Stealth checks in natural terrains.",
+        "Can only swallow one creature at a time.",
+        "Grappling restricts its ability to attack other targets.",
+        "Water Jet can blind nearby foes, impacting combat control."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large beast that can swim and burrow",
+        "creature with powerful grappling ability",
+        "natural camouflage beast in water and land",
+        "beast that swallows enemies and deals acid damage",
+        "large nymph that uses water jet attack"
+    ]
+}

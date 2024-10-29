@@ -1,0 +1,52 @@
+{
+    "name": "Gray Thirster",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 feet walking speed, average",
+    "role": "Ambusher",
+    "tags": [
+        "undead",
+        "exhaustion",
+        "necrotic",
+        "resilient"
+    ],
+    "adjectives": [
+        "thirsty",
+        "formidable",
+        "deadly"
+    ],
+    "description": "The Gray Thirster is a Medium-sized Undead creature with a gaunt appearance and a hunger that is palpable, with features that evoke dread.",
+    "memorable": "Its ability to inflict exhaustion on foes and drain moisture makes encounters with it particularly harrowing.",
+    "goals": "To drain the vitality from living creatures while avoiding being affected by their defenses.",
+    "relations": "May be associated with necromancers or other undead creatures that share its aspirations.",
+    "environment": "Often found in desolate or abandoned areas with a scarcity of resources.",
+    "strengths": "Damage immunities to fire and poison, resistance to necrotic damage, and various condition immunities enhance its resilience.",
+    "weaknesses": "Low intelligence means limited tactical awareness beyond its abilities.",
+    "attacks": "Can make two Claw attacks dealing slashing damage or a combination attack including necrotic damage with Withering Turban.",
+    "most_powerful_ability": "Drought, which drains moisture from its surroundings and can severely harm water-based creatures.",
+    "senses": "Has darkvision up to 60 feet, allowing it to perceive in darkness.",
+    "skills": "Proficient in Stealth, enhancing its ambush capability.",
+    "additional_information": [
+        "Can operate without air, food, or sleep thanks to its Thirsting Dead Nature.",
+        "Inflicts a level of exhaustion to creatures caught in its Thirst Aura.",
+        "Withering Turban can permanently reduce a target's maximum hit points.",
+        "Excellent ambusher that capitalizes on terrain and environment.",
+        "Particularly devastating against water-based creatures due to moisture-draining abilities."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead monster that drains moisture",
+        "creature that inflicts exhaustion in combat",
+        "gray monster associated with necrotic damage",
+        "thirsty undead that ambushes adventurers",
+        "enemy that doesn't need food or sleep"
+    ]
+}

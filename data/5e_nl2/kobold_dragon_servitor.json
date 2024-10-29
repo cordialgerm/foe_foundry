@@ -1,0 +1,49 @@
+{
+    "name": "Kobold Dragon Servitor",
+    "creature_type": "Humanoid",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 7,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "Kobold",
+        "Dragon Servitor",
+        "Minion"
+    ],
+    "adjectives": [
+        "small",
+        "nimble",
+        "devoted",
+        "vulnerable"
+    ],
+    "description": "The Kobold Dragon Servitor is a small humanoid creature devoted to a dragon, known for its nimble movements and a unique blend of strengths and weaknesses.",
+    "memorable": "Its ability to gain resistance to its dragon master\u2019s breath weapon and advantage in numbers makes it a potentially formidable foe.",
+    "goals": "Usually acts as a servant or warrior for a dragon, supporting its master in battles.",
+    "relations": "Typically found in the company of dragons or in groups with other kobolds.",
+    "environment": "Often encountered in lairs of dragons or caves where kobolds may reside.",
+    "strengths": "Gains advantage on attack rolls when supported by allies and can resist specific damage types linked to its dragon master.",
+    "weaknesses": "Severely impacted in sunlight, suffering disadvantages on attacks and perception checks.",
+    "attacks": "Uses a melee attack called Shiv that deals piercing damage and a Sling for ranged attacks that inflict bludgeoning damage.",
+    "most_powerful_ability": "Dragons Blood grants resistance to a specific damage type associated with its dragon master, enhancing its effectiveness in combat.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Utilizes Pack Tactics for enhanced combat potential in groups.",
+        "Sunlight Sensitivity makes it vulnerable in outdoor encounters during the day.",
+        "The Ominous Shadow ability negates its disadvantage in sunlight when near its master."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small dragon servant creature",
+        "nimble creature that serves dragons",
+        "kobold with sunlight sensitivity",
+        "dragon servitor with resistance power",
+        "skirmisher creature in dragon's lair"
+    ]
+}

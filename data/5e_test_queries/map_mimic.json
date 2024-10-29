@@ -1,0 +1,25 @@
+{
+    "name": "Map Mimic",
+    "queries": [
+        {
+            "query": "tiny creature that ambushes and disguises as objects",
+            "variant": "creature that is tiny and disguises as objects to ambush"
+        },
+        {
+            "query": "monstrosity with the ability to create maps and attach to enemies",
+            "variant": "monstrosity that can create maps and attaches to opponents"
+        },
+        {
+            "query": "deceptive little monster that can fly and has low strength",
+            "variant": "small deceptive creature that can fly and has poor strength"
+        },
+        {
+            "query": "creature that blends into environments and has bludgeoning attacks",
+            "variant": "monster that blends into its surroundings and performs bludgeoning attacks"
+        },
+        {
+            "query": "monster with good dexterity that can change shape and blind targets",
+            "variant": "creature with high dexterity that can change forms and blind its targets"
+        }
+    ]
+}

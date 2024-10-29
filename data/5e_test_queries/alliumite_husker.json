@@ -1,0 +1,25 @@
+{
+    "name": "Alliumite, Husker",
+    "queries": [
+        {
+            "query": "plant monster with blinding stench and burrowing ability",
+            "variant": "plant creature with blinding stink and burrowing skills"
+        },
+        {
+            "query": "medium-sized chaotic plant creature that uses psychic attacks",
+            "variant": "medium chaotic plant creature that utilizes psychic powers"
+        },
+        {
+            "query": "durable creature with good resilience that thrives in plant-rich environments",
+            "variant": "tough monster with high durability that flourishes in areas with lots of plants"
+        },
+        {
+            "query": "monster that can inflict blindness and has a strong presence",
+            "variant": "creature that causes blindness and possesses a strong charisma"
+        },
+        {
+            "query": "Husker tactics for using plant camouflage and overpowering stench",
+            "variant": "tactics for the Husker creature involving plant hiding and its stinky ability"
+        }
+    ]
+}

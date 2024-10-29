@@ -1,0 +1,53 @@
+{
+    "name": "Ssadar",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 71,
+    "ac": 16,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 feet walk",
+    "role": "Bruiser",
+    "tags": [
+        "fire",
+        "melee",
+        "humanoid",
+        "chaotic evil"
+    ],
+    "adjectives": [
+        "fiery",
+        "dangerous",
+        "formidable"
+    ],
+    "description": "The Ssadar is a medium humanoid creature with a fiery nature, wielding a longsword and capable of spitting fire. Its skin radiates warmth, reflecting its connection to flames.",
+    "memorable": "Ssadar warriors gain an advantage in battle when exposed to fire damage, enhancing their offensive capabilities.",
+    "goals": "To venerate fire and engage in combat, particularly against enemies vulnerable to cold.",
+    "relations": "Ssadar may serve fire-wielding beings and hold them in high esteem.",
+    "environment": "Typically found in fiery or volcanic regions where fire is abundant.",
+    "strengths": "Immunity to fire damage and enhanced melee capabilities when taking fire damage.",
+    "weaknesses": "Vulnerable to cold damage.",
+    "attacks": "The Ssadar can bite or slash with a longsword, in addition to ranged fire attacks that damage and ignite targets.",
+    "most_powerful_ability": "Kinship with Fire allows it to take no damage from fire and gain attack advantages.",
+    "equipment": "Longsword",
+    "senses": "Passive Perception of 12, allowing it to notice nearby threats with decent awareness.",
+    "skills": "None noted, but reasonable physical and perceptive abilities.",
+    "additional_information": [
+        "Specializes in both melee and fiery ranged attacks.",
+        "Celebrated in their society for reverence of fire.",
+        "Leverages a tactical advantage when fire damages enemies.",
+        "Rituals may involve sacrificing fire-wielders to their gods.",
+        "A terrifying presence on the battlefield, combining melee strength with fire."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fire humanoid creature",
+        "dangerous melee fighter with fire attacks",
+        "humanoid that thrives on fire damage",
+        "ssadar warrior that ignites enemies",
+        "chaotic evil creature with fire abilities"
+    ]
+}

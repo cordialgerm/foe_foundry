@@ -1,0 +1,50 @@
+{
+    "name": "Eagle",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "small",
+    "hp": 3,
+    "ac": 12,
+    "srd": true,
+    "cr": "0",
+    "movement": "10 feet on ground, 60 feet flying",
+    "role": null,
+    "tags": [
+        "beast",
+        "flying",
+        "predator"
+    ],
+    "adjectives": [
+        "keen-eyed",
+        "nimble",
+        "agile"
+    ],
+    "description": "An eagle is a small bird of prey with sharp talons and exceptional eyesight, known for its graceful flight and hunting prowess.",
+    "memorable": "Exceptional vision makes it a formidable scout and observer.",
+    "goals": "Hunts small mammals, fish, and birds, often serves as a scout.",
+    "relations": "Related to other birds of prey, can be companions to adventurers.",
+    "environment": "Often found in wild areas, soaring through the sky or near water.",
+    "strengths": "Keen eyesight provides advantage on sight-based perception checks.",
+    "weaknesses": "Low hit points and poor strength makes it vulnerable in combat.",
+    "attacks": "Talons attack delivers minimal slashing damage but allows for defensive capability.",
+    "most_powerful_ability": "Keen Sight grants advantage on Perception checks involving sight.",
+    "equipment": null,
+    "senses": "Has a passive Perception score of 14, indicating sharp awareness of its surroundings.",
+    "skills": "Proficient in Perception, enhancing its ability to notice fine details.",
+    "additional_information": [
+        "Can swim up to 30 feet, but sinks if not careful.",
+        "Can serve as a valuable scout for adventurers.",
+        "Known for fierce defense of its nest.",
+        "Represents strength and freedom in various cultures.",
+        "Can fly at impressive speeds for its size."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "bird of prey with keen eyesight",
+        "nimble small creature suitable for reconnaissance",
+        "agile flying predator that hunts small animals",
+        "small beast with sharp talons and good perception",
+        "creature known for speed and observation skills"
+    ]
+}

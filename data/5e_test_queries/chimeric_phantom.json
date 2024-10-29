@@ -1,0 +1,25 @@
+{
+    "name": "Chimeric Phantom",
+    "queries": [
+        {
+            "query": "undead creature that can fly and induces fear",
+            "variant": "creature that flies and is undead while inducing fear"
+        },
+        {
+            "query": "chaotic neutral undead that can move through objects and frightens nearby foes",
+            "variant": "chaotic-neutral creature that scares foes and passes through objects"
+        },
+        {
+            "query": "medium undead with high mobility and necrotic attack",
+            "variant": "undead with necrotic attacks and high mobility, medium size"
+        },
+        {
+            "query": "ghostly creature immune to poison and conditions",
+            "variant": "creature that is ghost-like, unaffected by poison and various conditions"
+        },
+        {
+            "query": "phantom that hovers, has average strength and fear-inducing abilities",
+            "variant": "hovering phantom with fear-inducing powers and average strength"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Giant Crab",
+    "queries": [
+        {
+            "query": "massive crustacean predator that can swim and breathe water",
+            "variant": "big crab monster that swims and can breathe underwater"
+        },
+        {
+            "query": "aggressive crab with strong pincers found on rocky shores",
+            "variant": "territorial crab with powerful claws located on rocky shores"
+        },
+        {
+            "query": "medium-sized beast with pincers that excels in stealth",
+            "variant": "average-sized monster with claws skilled in stealth"
+        },
+        {
+            "query": "crustacean that can grapple and suffocate enemies",
+            "variant": "crab that is capable of grappling and suffocating foes"
+        },
+        {
+            "query": "beast with a hard shell that lives in coastal environments",
+            "variant": "creature with a tough shell found in coastal regions"
+        }
+    ]
+}

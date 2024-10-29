@@ -1,0 +1,54 @@
+{
+    "name": "Kuunganisha",
+    "creature_type": "Fiend",
+    "alignment": "any evil",
+    "size": "Small",
+    "hp": 17,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "fly 40 ft., walk 20 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "invisible",
+        "magical"
+    ],
+    "adjectives": [
+        "cunning",
+        "devious",
+        "agile"
+    ],
+    "description": "The Kuunganisha is a small fiend characterized by its cunning and devious nature, often serving as a familiar or ally to more powerful masters.",
+    "memorable": "It can slip into invisibility and regenerate, allowing it to survive longer in combat.",
+    "goals": "Typically serves as an ally to more powerful beings or masters.",
+    "relations": "Often associated with evil beings and masters who wield magical powers.",
+    "environment": "Typically found in places associated with evil or dark magic.",
+    "strengths": "Has magic resistance, regenerates health, and can become invisible.",
+    "weaknesses": "Low physical strength limits direct attacks.",
+    "attacks": "Utilizes claw and bite attacks, with potential poison damage from its bite.",
+    "most_powerful_ability": "Invisibility allows it to disappear until it strikes.",
+    "equipment": null,
+    "senses": "Fiend Sight enables it to see in magical darkness.",
+    "skills": "Possesses proficiency in insight and stealth, enhancing its tactical abilities.",
+    "additional_information": [
+        "Advantage on saving throws against spells.",
+        "Regenerates health at the start of its turn.",
+        "Magic can be channeled through it by its master.",
+        "Tactically avoids direct confrontation due to low strength.",
+        "Effective in stealthy maneuvers due to high dexterity."
+    ],
+    "damage_types": [
+        "poison",
+        "fire",
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small fiend with invisibility and regeneration",
+        "cunning magical creature that can fly",
+        "agile fiend associated with dark magic",
+        "devious creature that serves evil masters",
+        "small fiend that can become invisible and bite"
+    ]
+}

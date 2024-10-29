@@ -1,0 +1,25 @@
+{
+    "name": "Polar Bear",
+    "queries": [
+        {
+            "query": "large white bear that lives in cold environments and has strong melee attacks",
+            "variant": "big white bear living in cold places with powerful melee attacks"
+        },
+        {
+            "query": "polar beast with exceptional strength and low intelligence found in icy habitats",
+            "variant": "polar creature with high strength and bad intelligence in icy environments"
+        },
+        {
+            "query": "melee fighter bear with grappling abilities and heightened smell",
+            "variant": "bear that fights in melee with grappling skills and sharp sense of smell"
+        },
+        {
+            "query": "cold weather predator with natural armor and significant hit points",
+            "variant": "predator from cold areas with natural protection and many hit points"
+        },
+        {
+            "query": "bear known for its biting and clawing attacks in frigid climates",
+            "variant": "bear famous for its bites and claws in freezing temperatures"
+        }
+    ]
+}

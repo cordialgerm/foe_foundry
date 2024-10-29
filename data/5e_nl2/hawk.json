@@ -1,0 +1,50 @@
+{
+    "name": "Hawk",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 1,
+    "ac": 13,
+    "srd": true,
+    "cr": "0",
+    "movement": "walking speed of 10 feet and flying speed of 60 feet",
+    "role": "null",
+    "tags": [
+        "bird",
+        "predator",
+        "scout"
+    ],
+    "adjectives": [
+        "tiny",
+        "agile",
+        "intelligent",
+        "keen-eyed"
+    ],
+    "description": "A small, agile bird of prey known for its keen eyesight and swift flight, with sharp talons and beak.",
+    "memorable": "Notable for its exceptional keen sight, allowing it to spot hidden threats from a distance.",
+    "goals": "Often serves as a scout or hunting companion, adept at detecting dangers.",
+    "relations": "May be encountered with skilled hunters or in forests, plains, and mountains.",
+    "environment": "Commonly found in forests, plains, and mountains.",
+    "strengths": "Highly intelligent, with remarkable senses and quick maneuverability.",
+    "weaknesses": "Extremely low hit points, making it frail and vulnerable to damage.",
+    "attacks": "Uses sharp talons to perform a melee weapon attack dealing slashing damage.",
+    "most_powerful_ability": "Keen Sight grants advantage on Perception checks that rely on sight.",
+    "equipment": null,
+    "senses": "Possesses heightened sight that enhances its perception to an impressive 19 when using sight.",
+    "skills": "Boasts a Perception score of +4, making it capable of detecting danger effectively.",
+    "additional_information": [
+        "Can take a bonus action called Evasive Flight, enabling it to Disengage or Dodge while flying.",
+        "Easily trained as a hunting companion by skilled handlers.",
+        "Not designed for combat; best suited for reconnaissance tasks.",
+        "Utilizes swift flight to escape danger quickly and efficiently."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile bird with keen eyesight",
+        "tiny bird that is an effective scout",
+        "hawk that can fly with incredible speed",
+        "bird of prey known for its swift attacks",
+        "agrail hunter birds for scouting"
+    ]
+}

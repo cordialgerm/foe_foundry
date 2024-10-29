@@ -1,6 +1,8 @@
 <MonsterName/>Fire-Infused Water Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>138</HP>
 <summary>The Fire-Infused Water Elemental is a formidable Huge elemental creature that combines the intrinsic properties of water with the fiery essence of fire. This unique being functions both offensively and defensively in combat, boasting a strong Armor Class of 14 due to its natural armor and a substantial pool of Hit Points totaling 138. With a Challenge Rating of 7, it presents a significant threat, offering 2,900 experience points upon defeat. It possesses strong physical attributes, particularly in Strength and Constitution, with scores of 20 (+5) and 20 (+5), respectively, making it exceptionally resilient and powerful in melee combat. However, it has low Intelligence and Charisma, indicating limited cognitive abilities and social interaction.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Fire-Infused Water Elemental is a well-rounded adversary with stron
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fire-Infused Water Elemental
 
 *Huge* *Elemental* *neutral*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Scald (Recharge 6):** A fire-infused water elemental sprays a 30-foot cone of superheated water. Each creature in the area must make a DC 12 Dexterity saving throw. On a failure, a creature takes 21 (6d6) fire damage and is knocked prone. On a success, a creature takes half as much damage and isn’t knocked prone.
 
 
+</statblock>
 
 

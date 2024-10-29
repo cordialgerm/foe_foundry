@@ -1,0 +1,25 @@
+{
+    "name": "Hobgoblin Warlord",
+    "queries": [
+        {
+            "query": "medium humanoid with high armor class and battle tactics",
+            "variant": "medium humanoid that has a strong armor class and tactical abilities"
+        },
+        {
+            "query": "combat-focused monster with abilities to inspire allies and a javelin",
+            "variant": "combat-oriented creature that can boost friends and uses a javelin"
+        },
+        {
+            "query": "warlord character known for bloodied rage ability and melee attacks",
+            "variant": "warlord creature famous for its bloodied rage skill and close combat strikes"
+        },
+        {
+            "query": "Hobgoblin type creature that excels in melee combat and has high hit points",
+            "variant": "Hobgoblin-like monster that is great at melee fighting and has a strong HP pool"
+        },
+        {
+            "query": "humanoid enemy that uses greatsword and has military training abilities",
+            "variant": "humanoid foe that wields a greatsword and possesses military tactics skills"
+        }
+    ]
+}

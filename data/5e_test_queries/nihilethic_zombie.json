@@ -1,0 +1,25 @@
+{
+    "name": "Nihilethic Zombie",
+    "queries": [
+        {
+            "query": "undead zombie with void abilities and low armor class",
+            "variant": "zombie undead with void powers and low armor"
+        },
+        {
+            "query": "creature that shifts between undead and ghost forms and is weak to radiant damage",
+            "variant": "monster that can change from undead to ghost and is vulnerable to radiant"
+        },
+        {
+            "query": "Nihilethic Zombie characteristics and its ability to resist damage",
+            "variant": "Nihilethic Zombie traits and its damage resistance abilities"
+        },
+        {
+            "query": "medium undead that drains life and moves through objects",
+            "variant": "medium undead creature that can go through objects and drains life"
+        },
+        {
+            "query": "zombie that can communicate in Void Speech but can't speak",
+            "variant": "zombie able to understand Void Speech but cannot verbally communicate"
+        }
+    ]
+}

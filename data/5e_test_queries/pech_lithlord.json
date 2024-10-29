@@ -1,0 +1,25 @@
+{
+    "name": "Pech Lithlord",
+    "queries": [
+        {
+            "query": "small elemental creature that protects stone",
+            "variant": "small creature elemental that protects stone"
+        },
+        {
+            "query": "Pech Lithlord defenses and spellcasting abilities",
+            "variant": "defense and spellcasting abilities of Pech Lithlord"
+        },
+        {
+            "query": "creature vulnerable to bright light with high Wisdom",
+            "variant": "creature high Wisdom that is vulnerable to bright light"
+        },
+        {
+            "query": "elemental that can stun enemies and has darkvision",
+            "variant": "elemental with darkvision and can stun enemies"
+        },
+        {
+            "query": "neutral good creature with climbing ability and resistance to slashing damage",
+            "variant": "neutral good creature that can climb and resists slashing damage"
+        }
+    ]
+}

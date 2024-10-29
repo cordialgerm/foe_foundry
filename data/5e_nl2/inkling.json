@@ -1,0 +1,48 @@
+{
+    "name": "Inkling",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 10,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "20 ft. walk",
+    "role": null,
+    "tags": [
+        "construct",
+        "spellcaster",
+        "stealthy"
+    ],
+    "adjectives": [
+        "tiny",
+        "agile",
+        "magical"
+    ],
+    "description": "The Inkling is a tiny construct characterized by its agility and magical capabilities, typically appearing as a small, amorphous blob adept at stealth.",
+    "memorable": "It can learn spells and redirect incoming spells, making it a clever and elusive creature.",
+    "goals": "To study and absorb magical knowledge, often in a stealthy manner.",
+    "relations": "Often linked to spellcasters or creators who utilize constructs.",
+    "environment": "Usually found in magical laboratories or locations rich in arcane knowledge.",
+    "strengths": "Highly agile and has exceptional mobility, with abilities to resist magic and learn spells.",
+    "weaknesses": "Low physical strength and fragility; vulnerable to specific constructs-related attacks.",
+    "attacks": "Uses a melee attack called Lash that inflicts slashing damage upon a successful hit.",
+    "most_powerful_ability": "Redirect Spell, allowing it to redirect spells targeting it to another creature.",
+    "equipment": null,
+    "senses": "Possesses blindsight out to 60 feet, allowing it to be aware of surroundings without sight.",
+    "skills": "Skilled in Arcana and Stealth, making it capable of recognizing magical phenomena and remaining undetected.",
+    "additional_information": [
+        "Amorphous ability allows it to move through tight spaces easily.",
+        "Can innately cast various spells for utility and attack.",
+        "Capable of learning spells through study, increasing its versatility."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcaster with several spells available at will and once per day.",
+    "test_queries": [
+        "tiny magical construct skilled in stealth",
+        "Inkling spellcaster with magical resistance",
+        "agile construct that learns spells",
+        "creature that can redirect spells at targets",
+        "tiny creature with blindsight and spellcasting abilities"
+    ]
+}

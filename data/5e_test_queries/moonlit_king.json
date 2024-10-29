@@ -1,0 +1,25 @@
+{
+    "name": "Moonlit King",
+    "queries": [
+        {
+            "query": "fey creature that uses moonlight and has magical weapons",
+            "variant": "creature of the fey that uses moon light and has weapons that are magical"
+        },
+        {
+            "query": "medium-sized fey with resistance to fire and impressive spellcasting",
+            "variant": "medium fey size with fire resistance and great spell casting ability"
+        },
+        {
+            "query": "protector of the night with a powerful staff and necrotic abilities",
+            "variant": "defender of the night with a strong staff and necrotic powers"
+        },
+        {
+            "query": "moon-themed fey that can summon a devil and teleport in moonlight",
+            "variant": "fey with a moon theme that is able to summon a devil and teleport when in moonlight"
+        },
+        {
+            "query": "creature immune to cold and poison damage with legendary resistances",
+            "variant": "monster that is immune to poison and cold damage and has legendary resistances"
+        }
+    ]
+}

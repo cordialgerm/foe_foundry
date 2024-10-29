@@ -1,0 +1,55 @@
+{
+    "name": "Bone Collective",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Small",
+    "hp": 120,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "swarm",
+        "animated bones",
+        "poison",
+        "stealth"
+    ],
+    "adjectives": [
+        "chaotic",
+        "cunning",
+        "agile",
+        "dangerous"
+    ],
+    "description": "The Bone Collective is a swarm of animated bones capable of taking humanoid form, wielding weapons and utilizing its Grasping Limbs. In its shapeless form, it can occupy the spaces of other creatures, demonstrating exceptional agility on the battlefield.",
+    "memorable": "Its ability to telepathically communicate through its Collective Mind makes it nearly impossible to surprise, and when its hit points are low, it becomes a shapeless mass, drastically reducing its threat while still presenting a unique challenge.",
+    "goals": "The Bone Collective seeks to dominate and control through the use of its venomous attacks and spellcasting abilities, relying on tactics and adaptability in combat.",
+    "relations": "Could be encountered alongside other undead creatures, possibly controlling lesser undead such as skeletons or zombies.",
+    "environment": "Typically found in dark, foreboding places such as tombs, catacombs, or haunted areas.",
+    "strengths": "Immune to necrotic and poison damage, resistant to bludgeoning, piercing, and slashing damage, and immune to numerous conditions.",
+    "weaknesses": "When reduced to half its hit points, its Intelligence drops significantly, hindering its capabilities and forcing a transition into a less threatening shapeless form.",
+    "attacks": "Utilizes Multiattack to perform two Claw attacks or one Claw and one Bite attack, with the Bite delivering substantial piercing damage and a poisonous effect.",
+    "most_powerful_ability": "The Collective Mind allows for telepathic communication and strategic awareness across great distances, ensuring it cannot be surprised.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Stealth, allowing it to move unobserved effectively.",
+    "additional_information": [
+        "Can cast Animate Dead to raise skeletons without material components.",
+        "Shape Swarm ability allows seamless transition between humanoid and shapeless forms.",
+        "Wyrmblood Venom capability to debilitate foes by reducing their Charisma score.",
+        "Considered undemanding as it does not require air, food, drink, or sleep.",
+        "High Dexterity contributes to exceptional saving throws and agility."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can cast Animate Dead three times per day in humanoid form without needing material components.",
+    "test_queries": [
+        "animated bone swarm",
+        "undead with telepathic control",
+        "poisonous undead creature",
+        "swarms of animated skeletons",
+        "chaotic evil bone monster"
+    ]
+}

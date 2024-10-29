@@ -1,0 +1,52 @@
+{
+    "name": "Keg Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 11,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "golem",
+        "construct",
+        "battlefield"
+    ],
+    "adjectives": [
+        "liquid-filled",
+        "robust",
+        "resilient"
+    ],
+    "description": "A medium-sized golem made of wood and metal, resembling a large keg, with a solid physical presence that is filled with ale.",
+    "memorable": "Its reliance on ale for combat effectiveness adds an interesting tactical element to its abilities.",
+    "goals": "To serve its creator and engage in battle effectively while maintaining its ale supplies.",
+    "relations": "Related to other golems, particularly those that serve functions in a tavern or similar environments.",
+    "environment": "Typically found in some form of artisan workshops or places where ale is brewed.",
+    "strengths": "Strong physical attributes, immunity to many conditions, and advantageous against magic attacks.",
+    "weaknesses": "Dependence on ale for optimal performance and low Dexterity affecting agility.",
+    "attacks": "Slam attack that delivers solid bludgeoning damage and an Ale Blast that can poison enemies.",
+    "most_powerful_ability": "The Ale Blast, which can deal poison damage in a cone and inflict poison condition.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing limited awareness of its surroundings.",
+    "skills": null,
+    "additional_information": [
+        "Immune to poison and psychic damage.",
+        "Resistant to nonmagical physical damage.",
+        "Condition immunity to charmed, frightened, and similar effects.",
+        "Empty Keg ability affects combat effectiveness when out of ale.",
+        "Magic Resistance gives an edge against spellcasters."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct that relies on ale",
+        "battlefield golem that can poison foes",
+        "medium golem with special ale abilities",
+        "mechanical creature filled with ale",
+        "golem immune to poison and psychic damage"
+    ]
+}

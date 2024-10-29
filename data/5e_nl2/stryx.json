@@ -1,0 +1,48 @@
+{
+    "name": "Stryx",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral",
+    "size": "Tiny",
+    "hp": 10,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 60 ft., fly 10 ft.",
+    "role": "null",
+    "tags": [
+        "stealth",
+        "scout",
+        "flying"
+    ],
+    "adjectives": [
+        "cunning",
+        "elusive",
+        "perceptive"
+    ],
+    "description": "The Stryx is a tiny monstrosity resembling a normal owl when silent, with notable speed and an agile body.",
+    "memorable": "Its ability to mimic an owl for excellent camouflage makes it a challenging foe to detect.",
+    "goals": "Serves as a cunning scout or spy, gathering intelligence without being spotted.",
+    "relations": "Often found amongst real owls or in areas of dense forest.",
+    "environment": "Commonly inhabits wooded areas or places with low light to utilize its stealth.",
+    "strengths": "Exceptional Dexterity and proficiency in Stealth and Perception.",
+    "weaknesses": "Fragile with a low Armor Class and Hit Points.",
+    "attacks": "Attacks with its talons, dealing modest slashing damage.",
+    "most_powerful_ability": "The Flyby ability allows it to avoid opportunity attacks while flying.",
+    "equipment": null,
+    "senses": "Possesses keen hearing and sight, granting advantage on Perception checks involving these senses.",
+    "skills": "Skilled in Stealth and Perception, making it very difficult to detect.",
+    "additional_information": [
+        "Uses False Appearance to disguise itself as an owl.",
+        "Has the ability to cast Comprehend Languages, aiding in communication.",
+        "Can remain undetected by closing its beak and remaining silent."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast comprehend languages up to three times a day using Wisdom as the spellcasting ability.",
+    "test_queries": [
+        "tiny stealthy owl-like monster",
+        "quick flying scout that mimics owls",
+        "elusive creature with exceptional perception",
+        "monstrosity that can understand languages",
+        "fragile monster with flyby ability"
+    ]
+}

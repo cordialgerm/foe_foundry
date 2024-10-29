@@ -1,0 +1,53 @@
+{
+    "name": "Archmage",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any lineage",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 212,
+    "ac": 17,
+    "srd": true,
+    "cr": "12",
+    "movement": "30 ft. walking speed",
+    "role": "Artillery",
+    "tags": [
+        "spellcaster",
+        "humanoid",
+        "arcane"
+    ],
+    "adjectives": [
+        "powerful",
+        "intelligent",
+        "arcane"
+    ],
+    "description": "An Archmage is a figure of immense magical power who wears ornate robes and often wields a staff. They possess exceptional intelligence, typically adorned with symbols of their magical sophistication.",
+    "memorable": "Archmages are known for their ability to bend reality through powerful spells, including devastating area attacks and defensive magic that can alter the flow of battle.",
+    "goals": "Archmages seek knowledge and power, often influencing political matters in the magical and mundane worlds. They may pursue personal ambitions or serve as guardians of magical knowledge.",
+    "relations": "Archmages frequently have apprentices and may be associated with schools or councils of magic. They can also be familiar with other powerful beings and creatures of magic.",
+    "environment": "Archmages often reside in secluded towers or magical academies, surrounded by wards and guardians to protect their secrets.",
+    "strengths": "With high Intelligence and access to powerful spells, Archmages excel in spellcasting and battlefield control. They have resistance to magic and can protect themselves from psychic attacks.",
+    "weaknesses": "Despite their magical prowess, Archmages may lack physical resilience and can be vulnerable to direct attacks if caught unprepared.",
+    "attacks": "Archmage attacks include both physical strikes with a dagger and explosive spell casts like Lightning Bolt and Fire Bolt that deal significant elemental damage.",
+    "most_powerful_ability": "The ability to cast spells such as Globe of Invulnerability prevents others' lower-level spells from affecting the Archmage, making them a formidable opponent.",
+    "equipment": "Archmages typically carry staffs or magical artifacts to enhance their spellcasting abilities.",
+    "senses": "The Archmage has a passive Perception of 16, demonstrating keen awareness.",
+    "skills": "The Archmage is proficient in Arcana and History, reflecting their vast magical knowledge and scholarly pursuits.",
+    "additional_information": [
+        "Magic Resistance grants them advantage on saving throws against spells.",
+        "Mind Blank provides immunity to psychic damage and prevents mind reading.",
+        "Foresight ability gives them advantage on various checks and imposes disadvantage on attackers.",
+        "Can cast powerful spells such as Teleport and Cone of Cold.",
+        "Ability to teleport using Shimmering Step for quick repositioning."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "The Archmage is an 18th-level spellcaster with a spell save DC of 17, capable of casting a wide array of spells for offensive, defensive, and utility purposes.",
+    "test_queries": [
+        "powerful magical figure",
+        "arcane spellcaster",
+        "master of the arcane",
+        "high level wizard",
+        "magical political influencer"
+    ]
+}

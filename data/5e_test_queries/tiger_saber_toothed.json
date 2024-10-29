@@ -1,0 +1,25 @@
+{
+    "name": "Saber-Toothed Tiger",
+    "queries": [
+        {
+            "query": "large beast with fearsome appearance and strong claws",
+            "variant": "big beast that has a terrifying look and powerful claws"
+        },
+        {
+            "query": "predatory creature that excels in ambush tactics and has heightened smell",
+            "variant": "hunting beast that is great at ambushing and possesses enhanced smell"
+        },
+        {
+            "query": "tiger-like creature with high speed and devastating bite attack",
+            "variant": "feline beast that's fast and has a powerful bite attack"
+        },
+        {
+            "query": "ambush predator that knocks enemies prone with pounce attack",
+            "variant": "sudden attack creature that can topple foes with its pouncing ability"
+        },
+        {
+            "query": "saber-toothed tiger skills and strong physical attacks",
+            "variant": "saber-toothed cat abilities and powerful physical strikes"
+        }
+    ]
+}

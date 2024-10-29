@@ -1,0 +1,25 @@
+{
+    "name": "Fixer",
+    "queries": [
+        {
+            "query": "humanoid with stealth abilities that can cleanse areas from magic",
+            "variant": "humanoid creature that can cleanse areas from magic and has stealth skills"
+        },
+        {
+            "query": "medium lawful neutral creature that supports allies",
+            "variant": "medium creature classified as lawful neutral that assists allies"
+        },
+        {
+            "query": "creature that uses ritually cleansing and has good perception",
+            "variant": "a being that performs ritual cleansing and is skilled at perception"
+        },
+        {
+            "query": "Fixer battle tactics using multiattack with poison damage",
+            "variant": "Fixer combat strategies employing multiattack and dealing poison damage"
+        },
+        {
+            "query": "humanoid with average durability and strong social skills",
+            "variant": "humanoid with decent durability and great charisma"
+        }
+    ]
+}

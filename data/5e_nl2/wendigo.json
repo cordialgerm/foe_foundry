@@ -1,0 +1,52 @@
+{
+    "name": "Wendigo",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 150,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "cold",
+        "undead",
+        "horror"
+    ],
+    "adjectives": [
+        "fearsome",
+        "menacing",
+        "chaotic"
+    ],
+    "description": "The Wendigo is a fearsome medium monstrosity with an aura of starvation and a chilling presence. It attacks using its icy claws and bite, and can project freezing spit at a distance.",
+    "memorable": "Its Aura of Starvation can paralyze foes, creating a terrifying and tactical combat situation.",
+    "goals": "To hunt and incapacitate prey using its terrifying abilities.",
+    "relations": "Usually encountered in cold, mountainous regions, possibly alongside other monstrous creatures.",
+    "environment": "Cold and snowy areas, often found in desolate landscapes or deep forests.",
+    "strengths": "Immune to cold and fire damage, advantage on saving throws against spells.",
+    "weaknesses": "Relatively low intelligence and charisma scores limit its strategic and social capabilities.",
+    "attacks": "Employs multiple melee attacks with icy claws inflicting slashing and cold damage, and has a potent ranged attack with Frozen Spittle.",
+    "most_powerful_ability": "Aura of Starvation that can paralyze enemies within proximity.",
+    "senses": "Possesses darkvision out to 120 feet and has a passive perception of 17, allowing it to detect ambushes easily.",
+    "skills": "Proficient in athletics, stealth, perception, and survival, making it a formidable predator.",
+    "additional_information": [
+        "Can perform physical feats with great skill.",
+        "Capable of ambushing unsuspecting prey effectively.",
+        "Maintains resilience against many conventional assaults.",
+        "Has the ability to restrain foes from a distance.",
+        "A chilling presence that instills fear in its foes."
+    ],
+    "damage_types": [
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "monster with an aura of starvation",
+        "cold creature that paralyzes enemies",
+        "fearsome monster in snowy environments",
+        "medium monstrosity with icy attacks",
+        "creature immune to cold and fire damage"
+    ]
+}

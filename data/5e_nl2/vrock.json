@@ -1,0 +1,54 @@
+{
+    "name": "Vrock",
+    "creature_type": "Fiend",
+    "creature_subtype": "demon",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 104,
+    "ac": 15,
+    "srd": true,
+    "cr": "6",
+    "movement": "40 ft. walking and flying speed of 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "demon",
+        "fiend",
+        "chaotic evil",
+        "flying"
+    ],
+    "adjectives": [
+        "vulture-bodied",
+        "brutal",
+        "toxic"
+    ],
+    "description": "A Vrock has the body of a vulture combined with humanoid features, sharp talons, and wings. Its head is sinister and bird-like.",
+    "memorable": "The Vrock combines formidable melee attacks with crowd control through its toxic spores and stunning screech.",
+    "goals": "To sow chaos and destruction, often leading demonic forces in battle.",
+    "relations": "Commonly found alongside other demons as part of a demonic hierarchy.",
+    "environment": "Typically found in locations of death and destruction, often where demonic forces gather.",
+    "strengths": "Strong melee capabilities with poison immunity and resistance to cold, fire, and lightning damage.",
+    "weaknesses": "Vulnerable to radiant damage and strategic spells that exploit its weaknesses.",
+    "attacks": "Multiattack includes a beak strike and claw attacks, dealing significant slashing and piercing damage.",
+    "most_powerful_ability": "Stunning Screech can stun multiple targets, disrupting enemy actions.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 16, indicating strong awareness.",
+    "skills": "Magic Resistance provides an advantage on saving throws against spells and magical effects.",
+    "additional_information": [
+        "Immunity to poison damage and the poisoned condition.",
+        "Ability to create a cloud of toxic spores as a battlefield control feature.",
+        "Engages in brutal melee combat, emphasizing its strength and ferocity.",
+        "Can operate stealthily despite its size, enhancing its surprise attack potential.",
+        "Often serves under more powerful demons, acting as a powerful enforcer."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large demon with toxic spores",
+        "chaotic evil vulture monster",
+        "fiend with stunning screech ability",
+        "flying demon that sows chaos",
+        "brutal fighter with poison immunity"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Arcane Leviathan</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>16</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>279</HP>
 <summary>The Arcane Leviathan is a formidable gargantuan construct, renowned for both its immense size and magical capabilities. Employed as a powerful guardian or weapon by its creator, this creature excels in aquatic environments, showcasing impressive swimming speed and devastating electrical attacks. With an impressive armor class of 17 and a massive pool of 279 hit points, it can withstand significant amounts of damage. The Arcane Leviathan's challenge rating of 16 indicates that it poses a substantial threat to adventuring parties. While its strength and constitution are exceptional, its dexterity is very poor, making it vulnerable to attacks that require nimbleness. It possesses a variety of damaging abilities and spells, significantly enhancing its combat prowess.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ As a bonus action, the Arcane Leviathan can use "Arcane Barrage" to target a cre
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arcane Leviathan
 
 *Gargantuan* *Construct* *unaligned*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Arcane Barrage:** Sends arcane energy toward a creature it can see within 120' of it. Target begins to glow with arcane energy and at end of target’s next turn: 35 (10d6) radiant (DC 19 Con half). Damage is divided evenly between target and all creatures within 10 ft. of it except leviathan.
 
 
+</statblock>
 
 

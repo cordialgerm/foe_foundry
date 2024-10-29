@@ -1,0 +1,51 @@
+{
+    "name": "Berberoka",
+    "creature_type": "Giant",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 114,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 40 ft., swim 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "swamp",
+        "amphibious"
+    ],
+    "adjectives": [
+        "powerful",
+        "saturated",
+        "mighty"
+    ],
+    "description": "The Berberoka is a large giant adapted to wet environments, characterized by its muck-coated appearance and exceptional physical strength. It has a formidable presence with a natural armor and the ability to thrive both in water and on land.",
+    "memorable": "Its ability to deal significant bludgeoning damage with its unique muck-coated slam attacks and water jet ability, along with its capacity to regenerate when submerged make it a formidable combatant.",
+    "goals": "Typically operates within swamps or marshlands, engaging in combat to defend its territory or feed.",
+    "relations": "May be found alongside other swamp creatures or giant-themed monsters, often serving as a protector or predator.",
+    "environment": "Commonly located in swamps and marshlands, where it can utilize its aquatic adaptations.",
+    "strengths": "Exceptional strength allowing for powerful melee attacks, high hit points, and regeneration when submerged in water.",
+    "weaknesses": "Average Dexterity and low Intelligence, limiting its agility and cognitive abilities.",
+    "attacks": "Can make multiple slam attacks or unleash powerful muck-coated slams that impede movement, alongside a devastating water jet ability.",
+    "most_powerful_ability": "Water Jet releases a powerful jet of water deal significant bludgeoning damage over a long line, pushing enemies back and knocking them prone.",
+    "senses": "Possesses darkvision up to 60 feet and can perceive surroundings effectively in low-light conditions.",
+    "skills": "Has proficiency in perception skill, allowing for keen awareness despite its low Intelligence.",
+    "additional_information": [
+        "Amphibious, can breathe both air and water.",
+        "Regenerates hit points when submerged, enhancing resilience.",
+        "Leaves no tracks while moving through marshland, aiding stealth.",
+        "Ground around it becomes difficult terrain when it expands.",
+        "Can increase in size and strength when saturated with water."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "swamp-dwelling giant",
+        "powerful muck-coated creature",
+        "amphibious giant with regeneration",
+        "large brute in marshlands",
+        "water-using giant monster"
+    ]
+}

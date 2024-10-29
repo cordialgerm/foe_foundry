@@ -1,6 +1,8 @@
 <MonsterName/>Urushi Constrictor</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural)</AC>
+<HP/>133</HP>
 <summary>The Urushi Constrictor is a large monstrosity that embodies the dangers of jungle terrain. With a Challenge Rating of 6, it presents a moderate threat to adventurers who tread too close to its territory. This creature has a formidable presence, boasting an Armor Class of 14 and a hefty 133 hit points, giving it good durability in combat. The Urushi Constrictor excels in ambush scenarios, thanks to its enhanced stealth capabilities in jungle environments, while its unique abilities to inflict poison and disease make encounters with it both challenging and dangerous. Being vulnerable to fire, however, is a notable weakness that players can exploit.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Urushi Constrictor is a formidable predator that thrives in its env
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Urushi Constrictor
 
 *Large* *Monstrosity* *unaligned*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Poisonous Constriction:** Melee Weapon Attack: +6 to hit, 5 ft., one creature,. 12 (2d8+3) bludgeoning damage and target is grappled (escape DC 15). Until this grapple ends target is restrained and takes 10 (3d6) poison at start of each of its turns and snake can't use Poisonous Constriction on another target. Each time target takes this poison it must make DC 15 Con save or contract urushi blight.
 
 
+</statblock>
 
 

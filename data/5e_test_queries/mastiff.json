@@ -1,0 +1,25 @@
+{
+    "name": "Mastiff",
+    "queries": [
+        {
+            "query": "large dog with keen senses that serves as a guardian",
+            "variant": "big dog known for its sharp senses and guardian role"
+        },
+        {
+            "query": "powerful canine beast that can knock enemies prone",
+            "variant": "strong dog-like creature capable of making foes fall down"
+        },
+        {
+            "query": "friendly beast known for loyalty and high perception skills",
+            "variant": "loyal creature recognized for its friendliness and keen perception"
+        },
+        {
+            "query": "medium-sized dog with a bite attack that defends its master",
+            "variant": "dog of medium size that has a bite and protects its owner"
+        },
+        {
+            "query": "canine with a speed of 40 ft. that excels in hunting",
+            "variant": "dog that moves fast at 40 feet and is great for hunting"
+        }
+    ]
+}

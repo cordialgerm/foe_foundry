@@ -1,0 +1,25 @@
+{
+    "name": "Mage Apprentice",
+    "queries": [
+        {
+            "query": "humanoid spellcaster with high intelligence and average agility",
+            "variant": "humanoid caster with good intelligence and average dexterity"
+        },
+        {
+            "query": "magic-using apprentice that gains advantage from allies",
+            "variant": "apprentice that uses magic and gets bonus for ally sight"
+        },
+        {
+            "query": "creature with arcane weapon attacks and force damage",
+            "variant": "monster that has magical weapon strikes and deals force damage"
+        },
+        {
+            "query": "medium humanoid living in a strategic fighting environment",
+            "variant": "medium creature engaging in tactical combat scenarios"
+        },
+        {
+            "query": "spellcaster with natural agility and low defense",
+            "variant": "caster with average nimbleness and weak armor"
+        }
+    ]
+}

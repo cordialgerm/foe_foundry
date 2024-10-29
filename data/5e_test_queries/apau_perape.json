@@ -1,0 +1,25 @@
+{
+    "name": "Apau Perape",
+    "queries": [
+        {
+            "query": "large chaotic evil fiend with high strength and magical abilities",
+            "variant": "large fiend that is chaotic evil having strong magical powers and high strength"
+        },
+        {
+            "query": "fiend that can summon allies and has a damaging roar",
+            "variant": "fiend capable of summoning allies with a powerful damaging roar"
+        },
+        {
+            "query": "creature immune to poison that deals fire damage with its roar",
+            "variant": "monster that is immune to poisoning and can inflict fire damage through its roar"
+        },
+        {
+            "query": "durable fiend in combat with area control abilities",
+            "variant": "combat fiend that is durable and has abilities for area control"
+        },
+        {
+            "query": "dangerous fiend vulnerable to cold damage with caustic blood",
+            "variant": "hazardous fiend that is weak against cold and has corrosive blood"
+        }
+    ]
+}

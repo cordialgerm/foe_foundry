@@ -1,0 +1,51 @@
+{
+    "name": "Draft Horse",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 19,
+    "ac": 10,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "beast",
+        "mount",
+        "pack animal"
+    ],
+    "adjectives": [
+        "large",
+        "strong",
+        "calm",
+        "resilient"
+    ],
+    "description": "A large, muscular horse bred for heavy labor with broad legs and a calm temperament, ideal for work and transportation.",
+    "memorable": "Known for its exceptional strength and ability to carry heavy loads across long distances.",
+    "goals": "Typically used for pulling carts and transporting goods, especially in farming and merchant activities.",
+    "relations": "Often found working alongside farmers, merchants, and traveling caravans.",
+    "environment": "Commonly found in rural areas, farms, and on trade routes.",
+    "strengths": "Exceptional physical capability reflected in its high Strength score, making it ideal for heavy lifting.",
+    "weaknesses": "Relatively easy to hit due to its low Armor Class and not specially trained for combat.",
+    "attacks": "Can deliver bludgeoning damage with its hooves in melee combat.",
+    "most_powerful_ability": "Can carry armored knights or pull siege engines, showcasing its strength.",
+    "equipment": null,
+    "senses": "Has a passive Perception score of 10, allowing it to notice basic threats.",
+    "skills": "No specific skill proficiencies, but possesses average awareness.",
+    "additional_information": [
+        "Bred for heavy labor and transportation.",
+        "Not as fast as riding horses but very durable.",
+        "Can serve as a reliable mount for adventurers.",
+        "Typically used in farming and by traveling caravans.",
+        "High Strength makes it effective for physical tasks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large strong horse for transportation",
+        "calm horse bred for heavy labor",
+        "reliable mount for adventurers",
+        "strong horse used in farming",
+        "muscular horse capable of pulling carts"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Alpine Creeper",
+    "queries": [
+        {
+            "query": "large plant creature that can camouflage and release spores",
+            "variant": "huge plant beast that uses camouflage and spore release"
+        },
+        {
+            "query": "stealthy plant monster immune to cold and vulnerable to fire",
+            "variant": "stealthy plant creature that is immune to cold yet weak against fire"
+        },
+        {
+            "query": "creature that summons beasts and can inflict exhaustion",
+            "variant": "monster that calls beasts and causes exhaustion"
+        },
+        {
+            "query": "plant that can control area and incapacitate adventurers",
+            "variant": "vegetation that controls space and incapacitates explorers"
+        },
+        {
+            "query": "creature resembling lichen that attacks with acid damage",
+            "variant": "being similar to lichen that uses acid to attack"
+        }
+    ]
+}

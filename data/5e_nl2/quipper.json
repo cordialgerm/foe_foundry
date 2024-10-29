@@ -1,0 +1,50 @@
+{
+    "name": "Quipper",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 1,
+    "ac": 13,
+    "srd": true,
+    "cr": "0",
+    "movement": "swim 40 ft.",
+    "role": "null",
+    "tags": [
+        "aquatic",
+        "predatory",
+        "fish"
+    ],
+    "adjectives": [
+        "carnivorous",
+        "aggressive",
+        "razor-sharp"
+    ],
+    "description": "A small, carnivorous fish with razor-sharp teeth, known for its aggressive nature and ability to strip flesh from bone in seconds. Quippers often swim in large schools, making them dangerous to any creature that ventures into their territory.",
+    "memorable": "Quippers have a Blood Frenzy ability, gaining advantage on attacks against injured creatures, which makes them particularly threatening in groups.",
+    "goals": "To defend their territory and hunt for prey, especially injured creatures.",
+    "relations": "Often found in swarms, posing a threat to single creatures.",
+    "environment": "Rivers, lakes, or coastal waters.",
+    "strengths": "High swimming speed and agility, combined with aggressive feeding behavior.",
+    "weaknesses": "Low hit points and poor physical attributes make them fragile in direct confrontations.",
+    "attacks": "Can make a bite attack with a good chance to hit, and can perform a second bite as a bonus action.",
+    "most_powerful_ability": "Blood Frenzy, allowing it to have advantage on attacks against creatures that are not at full hit points.",
+    "equipment": null,
+    "senses": "Has heightened smell which boosts its Perception to 13 when tracking in murky waters.",
+    "skills": "Good at avoiding attacks due to its high Dexterity.",
+    "additional_information": [
+        "Swift swimming ability makes it hard to catch.",
+        "Highly territorial and aggressive to invaders.",
+        "Can strip flesh quickly due to its sharp teeth.",
+        "Can thrive in various aquatic environments.",
+        "Often part of a much larger threat when in schools."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "dangerous fish in schools",
+        "small aggressive aquatic predator",
+        "fish with razor-sharp teeth",
+        "tiny fish that strips flesh",
+        "carnivorous fish with blood frenzy"
+    ]
+}

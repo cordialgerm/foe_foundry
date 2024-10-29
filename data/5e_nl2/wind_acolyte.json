@@ -1,0 +1,53 @@
+{
+    "name": "Wind Acolyte",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft., fly 50 ft.",
+    "role": "Artillery",
+    "tags": [
+        "humanoid",
+        "spellcaster",
+        "ranged attack",
+        "air"
+    ],
+    "adjectives": [
+        "mobile",
+        "formidable",
+        "dexterous"
+    ],
+    "description": "The Wind Acolyte embodies the essence of air and wind, manipulating breezes and currents with impressive dexterity. This creature conjures weapons from air, appearing as swirls of wind shaped into deadly forms, making it a potent ranged attacker.",
+    "memorable": "It can draw the breath from its enemies, causing them to suffocate, creating a terrifying experience for those within its reach.",
+    "goals": "The Wind Acolyte seeks to control the battlefield using air manipulation and ranged attacks.",
+    "relations": "Often found with other elemental creatures or beings connected to air.",
+    "environment": "Typically encountered in open skies, windy plains, or areas rich with elemental air influences.",
+    "strengths": "Exceptional dexterity and wisdom enhance its spellcasting and mobility. It has resistances to cold and lightning damage.",
+    "weaknesses": "Vulnerable to direct physical attacks as it lacks strong defenses against them.",
+    "attacks": "Utilizes magical air weapons that deal substantial damage, capable of pushing foes away, focusing on ranged combat.",
+    "most_powerful_ability": "Wind's Rebuke allows it to suffocate a target, posing a significant threat by removing their breath.",
+    "senses": "Possesses blindsight up to 60 feet, allowing it to perceive nearby creatures without sight in the appropriate environments.",
+    "skills": "Proficient in Perception, aiding its ability to detect threats in its surroundings.",
+    "additional_information": [
+        "Can conjure magical weapons that mimic various types",
+        "Capable of slowing falling creatures to prevent damage",
+        "Uses mobility and agility to evade threats effectively",
+        "Can perform multiple attacks in a single turn",
+        "Has a strong connection to air, enhancing its abilities"
+    ],
+    "damage_types": [
+        "cold",
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mobile air-themed spellcaster",
+        "wind elemental humanoid with ranged attacks",
+        "humanoid that suffocates targets",
+        "flying creature with air manipulation powers",
+        "magical weapons conjured from air"
+    ]
+}

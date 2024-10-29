@@ -1,0 +1,52 @@
+{
+    "name": "Demilich",
+    "creature_type": "Undead",
+    "alignment": null,
+    "size": "Tiny",
+    "hp": 159,
+    "ac": 20,
+    "srd": false,
+    "cr": "18",
+    "movement": "fly 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "magical",
+        "flyer"
+    ],
+    "adjectives": [
+        "powerful",
+        "eerie",
+        "manipulative"
+    ],
+    "description": "The Demilich is a Tiny, eerie undead entity with an ethereal, skull-like appearance, often surrounded by swirling dust. It carries several soul gems on its skull, visible as tiny creature-shaped motes of light.",
+    "memorable": "Its ability to devour souls and regain health makes it a terrifying foe, especially with its soul trapping mechanism that prevents resurrection.",
+    "goals": "To manipulate and steal souls to sustain itself while evading destruction.",
+    "relations": "Often associated with powerful undead or necromancer entities.",
+    "environment": "Typically found in ancient ruins or places of significant magical energy.",
+    "strengths": "High intelligence and dexterity allow it to evade attacks and execute complex strategies. It is immune to many damage types.",
+    "weaknesses": "Vulnerable if confronted by foes capable of destroying its soul gems, which are crucial to its survival.",
+    "attacks": "Devour Soul: targets creatures to inflict necrotic damage and regain health or instant death; can cause fear and blindness with its legendary actions.",
+    "most_powerful_ability": "Devour Soul, which can turn foes into soulless corpses while simultaneously healing the Demilich.",
+    "equipment": null,
+    "senses": "With truesight up to 60 feet, it can see through illusions and darkness, and it has a passive perception of 22.",
+    "skills": "Exceptional at stealth and arcana, showcasing its magical prowess and ability to remain undetected.",
+    "additional_information": [
+        "Immune to necrotic, poison, and psychic damage",
+        "Can take no damage on successful saving throws through Avoidance",
+        "Legendary Resistance allows it to succeed on failed saving throws",
+        "Does not require air, food, or sleep due to its undead nature",
+        "Can manipulate the battlefield with legendary actions like Dust Storm and Telekinesis"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that steals souls",
+        "tiny flying undead capable of manipulation",
+        "powerful skeleton that devours life",
+        "eerie magical creature with soul gems",
+        "high intelligence monster with fear effects"
+    ]
+}

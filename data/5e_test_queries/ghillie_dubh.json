@@ -1,0 +1,25 @@
+{
+    "name": "Ghillie Dubh",
+    "queries": [
+        {
+            "query": "forest guardian with celestial powers and stealth abilities",
+            "variant": "celestial stealthy guardian of the forest"
+        },
+        {
+            "query": "medium creature that communicates with beasts in forested areas",
+            "variant": "creature that talks to animals and lives in woods"
+        },
+        {
+            "query": "good-aligned monster with strong perception and natural camouflage",
+            "variant": "monster with high perception and natural hiding abilities"
+        },
+        {
+            "query": "woodland creature immune to poison that can manipulate knowledge",
+            "variant": "poison-immune forest creature that alters knowledge"
+        },
+        {
+            "query": "bludgeoning attack monster that can swim and climb effectively",
+            "variant": "creature with slam attack capable of climbing and swimming"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Firebird",
+    "queries": [
+        {
+            "query": "small celestial creature that can heal and inflicts fire damage",
+            "variant": "small celestial monster that heals and does fire damage"
+        },
+        {
+            "query": "protector creature with glowing feathers and abilities in fire",
+            "variant": "guardian creature with shining feathers and fire powers"
+        },
+        {
+            "query": "fire-based celestial being that immune to cold and heals allies",
+            "variant": "fire celestial being immune to cold and can heal friends"
+        },
+        {
+            "query": "creature with blinding ray attack and fire resistance",
+            "variant": "monster with blinding ray ability and resistant to fire"
+        },
+        {
+            "query": "celestial firebird that aids those suffering from starvation",
+            "variant": "celestial fire bird that helps creatures suffering from hunger"
+        }
+    ]
+}

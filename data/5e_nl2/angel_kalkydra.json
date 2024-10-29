@@ -1,0 +1,55 @@
+{
+    "name": "Angel, Kalkydra",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Huge",
+    "hp": 189,
+    "ac": 18,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 40 ft., climb 30 ft., fly 90 ft.",
+    "role": null,
+    "tags": [
+        "celestial",
+        "angel",
+        "powerful",
+        "radiant"
+    ],
+    "adjectives": [
+        "formidable",
+        "immense",
+        "supportive",
+        "magical"
+    ],
+    "description": "The Kalkydra is a Huge celestial creature known for its immense power and formidable presence in combat, characterized by its radiant energy and physical prowess.",
+    "memorable": "The Kalkydra's ability to deal significant radiant damage while providing magical support to allies, along with its Solar Nimbus reaction, makes it a uniquely challenging opponent.",
+    "goals": "To dominate the battlefield and serve its celestial purpose, possibly defending realms or aiding allies.",
+    "relations": "Potentially related to other celestial beings and might serve greater celestial powers or entities.",
+    "environment": "Commonly found in celestial realms or areas of significant light and energy.",
+    "strengths": "High hit points and armor class, combined with magical resistance and devastating radiant attacks.",
+    "weaknesses": "Vulnerable to tactics that can exploit its slower Dexterity and lack of high bonuses in saving throws against non-magical effects.",
+    "attacks": "Multiattack with Bites or Sunrays, grappling with Constrict, and powerful ranged attacks dealing radiant and fire damage.",
+    "most_powerful_ability": "Angelic Weapons enhances its attacks with additional radiant damage, making each blow potentially devastating.",
+    "equipment": null,
+    "senses": "The Kalkydra possesses truesight out to 120 feet, allowing it to see through illusions and darkness.",
+    "skills": "Has proficient perception skills, giving it a passive Perception score of 20, allowing it to be highly aware of its surroundings.",
+    "additional_information": [
+        "Immortal Nature allows it to function without food, drink, or sleep.",
+        "Magic Resistance provides advantage on saving throws against magical effects.",
+        "Song of Sunrise fills a large area with sunlight, affecting vulnerable creatures.",
+        "Solar Nimbus reacts to attacks, dealing fire and radiant damage to those who hit it.",
+        "It communicates telepathically with a range of 120 feet."
+    ],
+    "damage_types": [
+        "radiant",
+        "fire"
+    ],
+    "spellcasting": "Casts spells using Charisma with a save DC of 19, able to cast spells like Detect Evil and Good at will, and has a selection of powerful spells including Greater Restoration.",
+    "test_queries": [
+        "giant celestial creature",
+        "radiant angelic being",
+        "powerful celestial combatant",
+        "angelic creature with truesight",
+        "Kalkydra attributes and abilities"
+    ]
+}

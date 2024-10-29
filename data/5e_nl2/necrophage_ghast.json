@@ -1,0 +1,53 @@
+{
+    "name": "Necrophage Ghast",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 feet walking speed",
+    "role": null,
+    "tags": [
+        "undead",
+        "caster",
+        "paralysis"
+    ],
+    "adjectives": [
+        "chaotic",
+        "evil",
+        "undead",
+        "noxious"
+    ],
+    "description": "The Necrophage Ghast is a Medium undead creature with a ghoulish appearance, possessing the ability to unleash a toxic stench that hinders living foes. It features sharp claws and a vicious bite, with an aura that affects nearby creatures.",
+    "memorable": "Its Necrophage Stench can debilitate living creatures, making them vulnerable, while its ability to paralyze adds a significant tactical threat.",
+    "goals": "Typically seeks to weaken and consume living creatures while maintaining control over undead allies.",
+    "relations": "May be accompanied by other undead creatures, using its abilities to bolster their resistance to turning effects.",
+    "environment": "Often found in graveyards, crypts, or decaying areas where it can hunt the living.",
+    "strengths": "High Dexterity allows for quick and effective attacks; immune to poison and resistant to necrotic damage.",
+    "weaknesses": "Low Charisma hinders social interactions and certain spellcasting abilities.",
+    "attacks": "A nimble attacker capable of delivering a venomous bite and slashing with claws, with a chance to paralyze living foes.",
+    "most_powerful_ability": "Necrophage Stench significantly reduces opponents' defenses against its spells, creating a dangerous battlefield advantage.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in darkness clearly.",
+    "skills": "Proficient in arcana and investigation, granting it insight into magical phenomena and hidden details.",
+    "additional_information": [
+        "Can cast powerful spells like animate dead and hypnotic pattern.",
+        "Grants advantage on saving throws against being turned to other undead nearby.",
+        "Causes disadvantage on saving throws against its spells through its special ability.",
+        "Utilizes stealth and illusion through invisibility and charm spells."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": "5th-level spellcaster with a versatile range of spells for control, manipulation, and damage.",
+    "test_queries": [
+        "noxious undead that paralyzes living",
+        "chaotic evil creature with spellcasting abilities",
+        "living creature danger from necrophage stench",
+        "undead with claw and bite attacks",
+        "spellcasting undead in graveyards"
+    ]
+}

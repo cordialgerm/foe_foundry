@@ -1,0 +1,25 @@
+{
+    "name": "Gnoll Slaver",
+    "queries": [
+        {
+            "query": "brutal humanoid with darkvision that captures enemies",
+            "variant": "brutal humanoid with dark vision that takes captives"
+        },
+        {
+            "query": "chaotic evil monster skilled in intimidation and athletics",
+            "variant": "monster with chaotic evil nature skilled in intimidation and athletis"
+        },
+        {
+            "query": "creature that can bite and use a whip in battle",
+            "variant": "creature that uses bites and whips in combat"
+        },
+        {
+            "query": "medium humanoid that can reduce foes to zero hit points and move",
+            "variant": "medium humanoid creature that can take foes to zero hit points and move"
+        },
+        {
+            "query": "Gnoll with a special ability to control captives in combat",
+            "variant": "Gnoll slaver having special ability to control captives in a fight"
+        }
+    ]
+}

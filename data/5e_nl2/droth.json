@@ -1,0 +1,50 @@
+{
+    "name": "Droth",
+    "creature_type": "Aberration",
+    "alignment": "lawful neutral",
+    "size": "Huge",
+    "hp": 230,
+    "ac": 16,
+    "srd": false,
+    "cr": "12",
+    "movement": "climb 10 ft., walk 20 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "acidic",
+        "telepathic"
+    ],
+    "adjectives": [
+        "formidable",
+        "monstrous",
+        "intimidating"
+    ],
+    "description": "The Droth is a Huge creature with a complex design, featuring a powerful form ideal for melee combat, a grotesque appearance, and covered in a corrosive ooze.",
+    "memorable": "Its ability to absorb knowledge and mimic actions makes it a versatile and challenging opponent.",
+    "goals": "To engage in combat and absorb knowledge from its foes.",
+    "relations": "Might encounter other aberrations or similar creatures.",
+    "environment": "Often found in dark, secluded places where it can ambush its foes.",
+    "strengths": "High hit points, strong melee attacks, various special abilities.",
+    "weaknesses": "Low Dexterity makes it vulnerable to nimble foes.",
+    "attacks": "Can deal substantial damage with 'Oozing Crush' attacks and unleash harmful 'Acid Wave' attacks.",
+    "most_powerful_ability": "The 'Absorbent' ability allows it to mimic another creature's action after dealing damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to sense creatures without sight.",
+    "skills": "Has strong perception skills with a passive Perception score of 17.",
+    "additional_information": [
+        "Immune to acid damage.",
+        "Resistant to cold and fire damage.",
+        "Can merge with other Droth creatures to increase hit points."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant acid-spitting aberration",
+        "creature that absorbs knowledge after damage",
+        "Huge monster with telepathic abilities",
+        "intimidating ooze-covered creature in the dark",
+        "acid wave attack and disadvantage aura"
+    ]
+}

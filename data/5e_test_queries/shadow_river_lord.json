@@ -1,0 +1,25 @@
+{
+    "name": "Shadow River Lord",
+    "queries": [
+        {
+            "query": "undead creature with swimming ability that deals cold damage",
+            "variant": "undead monster that can swim and inflicts cold damage"
+        },
+        {
+            "query": "evil aquatic monster with high dexterity and unique attacks",
+            "variant": "aquatic undead that is evil and has a good dexterity along with special attacks"
+        },
+        {
+            "query": "medium undead that can move through narrow spaces and uses shadow geyser",
+            "variant": "undead creature that fits through small gaps and has a shadow geyser ability"
+        },
+        {
+            "query": "creature that uses necrotic damage and is immune to poison",
+            "variant": "monster that attacks with necrotic damage and has poison immunity"
+        },
+        {
+            "query": "shadow monster with high armor class and significant hit points",
+            "variant": "creature that has a strong AC and a lot of HP, characterized by shadows"
+        }
+    ]
+}

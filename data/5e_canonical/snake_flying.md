@@ -1,6 +1,8 @@
 <MonsterName/>Snake, Flying</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>10</HP>
 <summary>The Flying Snake is a tiny beast known for its agility and ability to navigate both aquatic and aerial environments with ease. With an Armor Class of 11 and only 10 hit points, it is relatively fragile and requires careful play to avoid damage. Its speed includes a notable flying distance of 60 feet, making it a proficient skirmisher. The challenge rating of CR 1/8 indicates that it poses a minor threat to adventurers. Key strengths include its Flyby ability, which allows it to disengage easily, thus minimizing risk during combat. However, its low Strength and Constitution scores make it physically weak, relying more on speed and cunning than brute force.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Flying Snake utilizes its speed and flight to avoid confrontation, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snake, Flying
 
 *Tiny beast*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 
 - **Reflexive Escape.** When a creature the snake can see attacks it, the snake can move up to 5 feet. If this movement puts the snake out of reach of the attack, the attack misses.
 
+</statblock>
 
 

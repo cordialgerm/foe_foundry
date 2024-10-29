@@ -1,0 +1,25 @@
+{
+    "name": "Jinmenju",
+    "queries": [
+        {
+            "query": "huge plant creature with immobilizing laughter ability",
+            "variant": "huge creature plant with laughter immobilizing ability"
+        },
+        {
+            "query": "chaotic neutral plant that attacks with roots and can speak",
+            "variant": "chaotic plant neutral that can speak and attacks using roots"
+        },
+        {
+            "query": "plant monster immune to non-magical damage and prone condition",
+            "variant": "monster plant that is immune to damage non-magical and condition prone"
+        },
+        {
+            "query": "Jinmenju roots attack from distance and has high charisma",
+            "variant": "roots attack from distance and has high charisma of Jinmenju"
+        },
+        {
+            "query": "gigantic plant with high perception and persuasion skills",
+            "variant": "large plant with skills in perception and persuasion high"
+        }
+    ]
+}

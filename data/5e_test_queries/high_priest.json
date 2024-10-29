@@ -1,0 +1,25 @@
+{
+    "name": "High Priest",
+    "queries": [
+        {
+            "query": "powerful humanoid spellcaster with high AC and hit points",
+            "variant": "strong humanoid caster with great hit points and AC"
+        },
+        {
+            "query": "human-like character that can heal and cast radiant spells",
+            "variant": "humanoid figure that casts radiant spells and can heal"
+        },
+        {
+            "query": "cleric spellcaster with area control and healing abilities",
+            "variant": "cleric that has healing powers and can control areas"
+        },
+        {
+            "query": "highly observant priest adept in medicine and insights",
+            "variant": "priest skilled in insights and very observant"
+        },
+        {
+            "query": "humanoid that wields a mace and uses powerful cleric spells",
+            "variant": "humanoid using a mace and casting strong cleric spells"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Mead Archon",
+    "creature_type": "Celestial",
+    "alignment": "chaotic good",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 ft. on foot, 60 ft. flying",
+    "role": "Support",
+    "tags": [
+        "celestial",
+        "support",
+        "spellcaster",
+        "chaotic good"
+    ],
+    "adjectives": [
+        "magical",
+        "resilient",
+        "chaotic",
+        "supportive"
+    ],
+    "description": "The Mead Archon is a Medium celestial being, known for its vibrant charm and a whimsical aura of drunkenness. It has exceptional physical attributes and uses a maul for melee attacks, dealing significant bludgeoning damage. The archon also possesses a unique touch attack that can poison enemies.",
+    "memorable": "The ability to create healing potions from alcohol and its drunken aspect that affects its abilities make this archon uniquely entertaining.",
+    "goals": "To support allies in battle and create healing potions, adding a layer of utility to its party.",
+    "relations": "May be encountered with other celestials or good-aligned creatures; often allies in quests for justice or protection.",
+    "environment": "Typically found in realms associated with positive celestial influences or celebrations involving festivities.",
+    "strengths": "Magic resistance and versatile spellcasting abilities enhance its effectiveness in various situations.",
+    "weaknesses": "Lower physical damage compared to other combat-centric creatures.",
+    "attacks": "Capable of making powerful melee and ranged attacks, including a hammer strike and radiant bolts, along with a unique poisoning touch.",
+    "most_powerful_ability": "The ability to turn alcohol into healing potions once per day, providing invaluable support to allies.",
+    "equipment": null,
+    "senses": "The archon has darkvision that allows it to see in darkness up to 60 feet.",
+    "skills": "Proficient in athletics, showcasing strong physical capabilities.",
+    "additional_information": [
+        "Has advantage on saving throws against spells due to Magic Resistance.",
+        "Weapon attacks are considered magical, effective against resistant creatures.",
+        "Can intrinsically cast spells enhancing ally capabilities or curing ailments.",
+        "Unique ability called Divine Guzzle allows varied effects based on alcohol consumption.",
+        "Resistant to poison and radiant damage, further increasing its durability."
+    ],
+    "damage_types": [
+        "poison",
+        "radiant"
+    ],
+    "spellcasting": "Innate spellcaster able to cast spells such as aid and lesser restoration once per day.",
+    "test_queries": [
+        "magical support character with healing abilities",
+        "celestial creature that creates healing potions",
+        "drunken celestial with unique attack powers",
+        "chaotic good magic user with poison touch",
+        "creature that drinks alcohol for special effects"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Flame Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 17,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 60 ft., fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "fire",
+        "wyrmling",
+        "chaotic evil"
+    ],
+    "adjectives": [
+        "fast",
+        "agile",
+        "fierce"
+    ],
+    "description": "A medium-sized dragon with a fierce temperament, embodying chaotic evil tendencies and exhibiting natural abilities.",
+    "memorable": "Its Heated Body ability burns those who come too close, and its fire breath can devastate multiple foes at once.",
+    "goals": "To assert dominance and cause chaos through intimidation and fiery attacks.",
+    "relations": "Often encountered alongside other wyrmlings or older dragons; may serve more powerful dragons.",
+    "environment": "Typically found in volcanic or fire-prone regions where it can thrive.",
+    "strengths": "Resistance to fire damage and ability to deal both physical and fire damage through attacks.",
+    "weaknesses": "Vulnerable to targets that can withstand or counteract fire damage; relatively low physical strength.",
+    "attacks": "Bite attack that deals piercing and fire damage, and a fire breath attack that covers a wide area.",
+    "most_powerful_ability": "Fire Breath, which unleashes devastating fire attack in a cone, affecting multiple enemies.",
+    "senses": "Possesses blindsight up to 10 feet and has a passive Perception of 15.",
+    "skills": "Skilled in Deception and Persuasion, making it adept in social interactions.",
+    "additional_information": [
+        "Strong natural armor for defense.",
+        "High Charisma makes it potential for manipulation.",
+        "Uses agility to ambush opponents effectively.",
+        "Capable of flight, supporting ranged combat tactics.",
+        "Has notable fire resistance."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium dragon with fiery breath",
+        "chaotic evil wyrmling that attacks with fire",
+        "agile dragon lurking in volcanic areas",
+        "fast creature with heated body ability",
+        "dragon skilled in deception and persuasion"
+    ]
+}

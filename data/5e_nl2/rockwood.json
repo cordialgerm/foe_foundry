@@ -1,0 +1,53 @@
+{
+    "name": "Rockwood",
+    "creature_type": "Elemental",
+    "alignment": "chaotic neutral",
+    "size": "Huge",
+    "hp": 94,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 feet walking, 15 feet burrowing",
+    "role": "Bruiser",
+    "tags": [
+        "earth",
+        "elemental",
+        "terrain manipulation"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "resilient",
+        "towering"
+    ],
+    "description": "The Rockwood is a massive elemental embodying earth and stone, featuring a rugged appearance with a robust frame.",
+    "memorable": "The Rockwood can manipulate the battlefield, creating difficult terrain and using area-of-effect attacks.",
+    "goals": "Typically frightens intruders in its territory and reshapes the landscape around it.",
+    "relations": "Often found in caverns or as guardians of ancient ruins; related to earth and stone elementals.",
+    "environment": "Caverns, mountainous regions, and areas with abundant natural stone.",
+    "strengths": "Immunities to poison damage and several conditions, alongside damage resistance to nonmagical attacks.",
+    "weaknesses": "Vulnerability to thunder damage.",
+    "attacks": "Multiattack allows for two powerful slam attacks, dealing significant bludgeoning damage and potentially knocking foes prone.",
+    "most_powerful_ability": "Fossil Barrage releases a devastating cone of stone shards that deals high piercing damage.",
+    "equipment": null,
+    "senses": "Possesses tremorsense that allows it to detect movement through the ground.",
+    "skills": "Has an average perception skill, allowing it to notice hidden creatures.",
+    "additional_information": [
+        "Can burrow through earth without disturbing materials around it.",
+        "Does not require air, food, drink, or sleep.",
+        "Double damage to objects, making it a threat to structures.",
+        "Area influence creates difficult terrain for enemies.",
+        "Does not suffer disadvantage on ranged attacks when near enemies."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "Large elemental creature that manipulates terrain",
+        "earth elemental with powerful slams",
+        "towering stone monster immune to poison",
+        "Rockwood's devastating area attack",
+        "creature that burrows through stone"
+    ]
+}

@@ -1,6 +1,10 @@
 <MonsterName/>Druid</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>2</CR>
+<AC/>11</AC>
+<HP/>27</HP>
 <summary>A Druid is a spellcaster who draws their power from nature, often serving as a protector of the natural world. They wear simple, earthy clothes, and their appearance often reflects their deep connection to the land. Druids can call upon the elements to cast powerful spells, summon animals, or even shapeshift into the forms of beasts. They are often found in forests, mountains, or other wild areas, acting as guardians of sacred groves or guiding travelers through dangerous terrain. Druids are deeply attuned to the balance of nature and will fiercely defend it against those who seek to harm it.</summary>
 
 <summary>The Druid is a versatile medium humanoid creature that possesses a unique blend of spellcasting and physical abilities. With a moderate Armor Class of 11 and 39 hit points, the Druid can withstand some damage, but should not be at the forefront of combat given their average durability. Their Challenge Rating of 2, which yields 450 experience points upon defeat, highlights them as a moderately challenging foe or ally. Notable strengths include their spellcasting ability, particularly in nature-related spells that can control the battlefield and communicate with animals. Their ability to shapeshift into various beast forms adds tactical versatility, allowing them to adapt to different situations. However, while proficient in Wisdom saving throws and perception, their overall attributes show some weaknesses in physical combat and special abilities like Beast Form, which render them unable to cast spells during transformation.</summary>
@@ -38,6 +42,7 @@ As a bonus action, the druid can change shape into a medium or smaller beast wit
 
 Source: 5e_srd
 
+<statblock>
 ### Druid
 
 *Medium humanoid (any race), any alignment*
@@ -70,7 +75,8 @@ Cantrips (at will): *druidcraft*, *produce flame*, *shillelagh*
 
 ***Quarterstaff***. *Melee Weapon Attack:* +2 to hit (+4 to hit with *shillelagh*), reach 5 ft., one target. *Hit:* 3 (1d6) bludgeoning damage, 4 (1d8) bludgeoning damage if wielded with two hands, or 6 (1d8 + 2) bludgeoning damage with *shillelagh*.
 
-**Druids** dwell in forests and other secluded wilderness locations, where they protect the natural world from monsters and the encroachment of civilization. Some are **tribal shamans** who heal the sick, pray to animal spirits, and provide spiritual guidance.
+**Druids** dwell in forests and other secluded wilderness locations, where they protect the natural world from monsters and the encroachment of civilization. Some are **tribal shamans** who heal the sick, pray to animal spirits, and provide spiritual guidance.</statblock>
+
 
 
 
@@ -78,6 +84,7 @@ Cantrips (at will): *druidcraft*, *produce flame*, *shillelagh*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Druid
 
 *Medium* *Humanoid*
@@ -121,6 +128,7 @@ Source: 5e_artisinal_monsters
 - **Thunderwave (1st-Level; V, S):** Thunder rolls from the druid in a 15-foot cube. Each creature in the area makes a DC 12 Constitution saving throw. On a failure  a creature takes 9 (2d8) thunder damage and is pushed 10 feet from the druid. On a success  a creature takes half damage and is not pushed.
 
 
+</statblock>
 
 
 
@@ -129,6 +137,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Druid
 
 *Medium humanoid (any lineage)*
@@ -169,5 +178,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The druid magically transforms into a Medium or smaller Beast that has a challenge rating no higher than its own, or back into its true form, which is Humanoid. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies. In a new form, the druid retains its HP, ability to speak, proficiencies, and INT, WIS, and CHA modifiers, as well as this bonus action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
 
+</statblock>
 
 

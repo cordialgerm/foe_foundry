@@ -1,0 +1,54 @@
+{
+    "name": "Xiphus",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 55,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "fast 50 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "chaotic",
+        "agile",
+        "lightning"
+    ],
+    "adjectives": [
+        "swift",
+        "formidable",
+        "chaotic",
+        "elusive"
+    ],
+    "description": "The Xiphus is a small yet formidable fey creature with exceptional agility and a chaotic demeanor. It is known for its high Dexterity and quick movements, making it hard to target in combat.",
+    "memorable": "Renowned for its ability to absorb lightning damage and convert it to healing, alongside its capability to manipulate time in combat.",
+    "goals": "To evade danger while inflicting damage on its foes, often using lightning attacks and strategic manipulation.",
+    "relations": "Typically found in the company of other chaotic fey creatures or alone as a trickster in the wilderness.",
+    "environment": "Commonly found in wild, chaotic outdoor settings, where its fey nature can thrive.",
+    "strengths": "High Dexterity grants excellent evasiveness and attack bonuses, along with damage immunity to lightning.",
+    "weaknesses": "Although agile, it is still vulnerable to non-lightning attacks and can be overwhelmed if outnumbered.",
+    "attacks": "Utilizes a Hidden Dagger for swift melee or ranged strikes that deal piercing and lightning damage.",
+    "most_powerful_ability": "Lightning Absorption, allowing it to regenerate health whenever it takes lightning damage.",
+    "equipment": "Hidden Dagger, used for its main attacks.",
+    "senses": "Possesses darkvision up to 60 feet, enhancing its ability to navigate in darkness.",
+    "skills": "Highly skilled in acrobatics and stealth, showcasing exceptional agility.",
+    "additional_information": [
+        "Ability to dodge damage completely through Evasion.",
+        "Siphon Time grants tactical advantages in combat.",
+        "Startling Speed imposes disadvantage on attackers targeting it after moving.",
+        "Can temporarily borrow life force to avoid lethal damage.",
+        "Regains Borrowed Time after resting, allowing for repeated use in multiple encounters."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "swift fey creature with lightning attacks",
+        "small chaotic fey that absorbs lightning",
+        "agile fey using hidden dagger in combat",
+        "trickster fey manipulating time in battle",
+        "fey with lightning damage immunity and evasion abilities"
+    ]
+}

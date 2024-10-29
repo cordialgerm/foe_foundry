@@ -1,6 +1,8 @@
 <MonsterName/>Crimson Shambler</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>32</HP>
 <summary>The Crimson Shambler is a Medium-sized plant creature characterized by its gruesome appearance, resembling a bloody zombie. It is considered unaligned and possesses a combination of strengths and weaknesses that define its role in combat. Though it has a modest Armor Class of 12 and average mobility with a walking speed of 20 feet, the Crimson Shambler boasts a moderate pool of hit points, totaling 32. This creature operates effectively in lower-level encounters with a Challenge Rating of 1/2, allowing it to rack up experience points at 100 XP for those who vanquish it. Notable for its ability to inflict disease through its spores and its potential to create new shamblers, it poses a considerable threat despite its average physical capabilities. </summary>
 
 <detail>
@@ -27,6 +29,7 @@ In summary, the Crimson Shambler serves as a devious adversary in lower-level en
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crimson Shambler
 
 *Medium* *Plant* *unaligned*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Slime Glob:** Ranged Weapon Attack: +2 to hit, range 20/60 ft., one target. Hit: 3 (1d6) acid damage and the target must succeed on a DC 12 Constitution saving throw or become infected with the shambler’s spores (see the Spores trait).
 
 
+</statblock>
 
 

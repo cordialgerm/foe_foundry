@@ -1,0 +1,55 @@
+{
+    "name": "Silenal",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 117,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "25 feet walking speed",
+    "role": null,
+    "tags": [
+        "fey",
+        "mischief",
+        "charm",
+        "drunken",
+        "small"
+    ],
+    "adjectives": [
+        "chaotic",
+        "charming",
+        "intoxicated",
+        "deceptive"
+    ],
+    "description": "The Silenal is a small fey creature embodying mischief and charm, characterized by its dexterous nature and vibrant aura, often found with a tankard in hand.",
+    "memorable": "Its abilities revolve around intoxication and charm, allowing it to manipulate combat and social engagements uniquely.",
+    "goals": "To spread chaos and charm, often using alcohol as a means to influence others.",
+    "relations": "May be encountered with other whimsical fey or beings connected to revelry and festivities.",
+    "environment": "Often found in taverns, festivals, or places where revelry occurs.",
+    "strengths": "High Charisma making it effective in social encounters and resistance to charm effects.",
+    "weaknesses": "Limited physical strength and resilience against powerful attacks.",
+    "attacks": "Utilizes multiattack with a tankard for bludgeoning and poison damage, or darts for piercing damage.",
+    "most_powerful_ability": "The ability 'Cause Row' can incite nearby humanoids into a frenzy, adding chaos to combat situations.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 14, indicating good awareness.",
+    "skills": "Proficient in perception, persuasion, and stealth, making it adept at social interactions and evasion.",
+    "additional_information": [
+        "Immune to charmed and poisoned conditions.",
+        "Gains benefit from alcohol to enhance abilities.",
+        "Can hide effectively in combat situations.",
+        "Truesight ability enables it to see through illusions near alcohol.",
+        "Provides advantages to allies in social settings."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small fey creature that causes mayhem",
+        "charming fey that uses alcohol abilities",
+        "fires darts and has a tankard",
+        "fey with truesight when near drinks",
+        "herbal mischief maker in taverns"
+    ]
+}

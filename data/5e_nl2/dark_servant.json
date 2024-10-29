@@ -1,0 +1,51 @@
+{
+    "name": "Dark Servant",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 55,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dark",
+        "humanoid",
+        "stealth",
+        "evil"
+    ],
+    "adjectives": [
+        "dark",
+        "shadowy",
+        "menacing"
+    ],
+    "description": "The Dark Servant is a Medium humanoid with a stealthy and shadowy appearance, equipped with leather armor, and proficient in melee and ranged combat.",
+    "memorable": "Its ability to see through magical darkness and pack tactics make it a formidable foe in darkness.",
+    "goals": "To serve sinister purposes and engage enemies in combat from the shadows.",
+    "relations": "Often found in the company of other dark creatures or serving powerful evil masters.",
+    "environment": "Thrives in dark, shadowy areas, such as dungeons or night-time settings.",
+    "strengths": "Advantage on saving throws against being charmed or frightened due to Dark Devotion, and increased effectiveness in numbers through Pack Tactics.",
+    "weaknesses": "Has disadvantage on attack rolls and perception checks while in sunlight, making it vulnerable in bright conditions.",
+    "attacks": "Utilizes a sickle for close combat, dealing slashing damage, and a light crossbow for ranged attacks with piercing damage.",
+    "most_powerful_ability": "Dark Devotion, providing it strong resilience against charm and fear effects.",
+    "equipment": "Leather armor, sickle, and light crossbow.",
+    "senses": "Possesses Darksight, allowing it to see in magical darkness without hindrance.",
+    "skills": "None noted.",
+    "additional_information": [
+        "Benefits from dark environments for enhanced effectiveness.",
+        "Can coordinate attacks with allies to gain advantages.",
+        "Integrates well into ambush strategies due to its stealth capabilities.",
+        "Uses both melee and ranged weapons for versatility in engagements.",
+        "Notably vulnerable to sunlight, affecting its performance significantly."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "dark humanoid with pack tactics",
+        "shadowy creature that thrives in darkness",
+        "evil servant who suffers in sunlight",
+        "menacing attacker who uses sickles and crossbows",
+        "dark servant with abilities against fear effects"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Clockwork Mantis",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 68,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walking speed of 40 feet, agile for its size",
+    "role": "Skirmisher",
+    "tags": [
+        "construct",
+        "mechanical",
+        "guardian"
+    ],
+    "adjectives": [
+        "large",
+        "mechanical",
+        "agile"
+    ],
+    "description": "The Clockwork Mantis is a large mechanical guardian with serrated blades and a tough exterior. Its enhanced dexterity allows it to excel in stealth and ambushes.",
+    "memorable": "Its ability to become invisible and effectively ambush foes enhances its combat strategies.",
+    "goals": "Typically serves as a mechanical guardian or enforcer.",
+    "relations": "May be found alongside other constructs or in the service of an artificer.",
+    "environment": "Often found in dungeons or in the service of those requiring mechanical defense.",
+    "strengths": "Immunity to poison and psychic damage, as well as non-magical attacks unless made with adamantine.",
+    "weaknesses": "Very low intelligence and charisma, limiting its cognitive and social capabilities.",
+    "attacks": "Can perform multiple serrated blade attacks followed by a powerful bite, utilizing stealth to emerge from invisibility.",
+    "most_powerful_ability": "Hobbling Strike can immobilize targets on successful opportunity attacks.",
+    "equipment": null,
+    "senses": "Possesses darkvision and has a passive Perception score of 15, enhancing its stealth and awareness.",
+    "skills": "Skilled in perception and stealth, making it a formidable ambusher.",
+    "additional_information": [
+        "Immune to many conditions such as charmed and paralyzed.",
+        "Has advantage on saving throws against spells.",
+        "Can jump impressive distances.",
+        "Its form remains unchanged due to immutable form ability.",
+        "Turns invisible until it attacks, enhancing its surprise attacks."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical guardian with serrated blades",
+        "large construct that can turn invisible",
+        "agile mechanical creature with hobbling strike",
+        "ambush predator with high dexterity",
+        "enhanced stealth mechanical enforcer"
+    ]
+}

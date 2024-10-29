@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Assassin",
+    "queries": [
+        {
+            "query": "stealthy machine creature that uses surprise attacks",
+            "variant": "surprise attacking machine creature that is stealthy"
+        },
+        {
+            "query": "construct with high mobility that has poison attacks",
+            "variant": "mobile construct that can attack with poison"
+        },
+        {
+            "query": "mechanical assassin that climbs and jumps well",
+            "variant": "assassin robot that can jump and climb effectively"
+        },
+        {
+            "query": "Clockwork monster immune to lightning and charm effects",
+            "variant": "machine monster that resists charm and lightning damage"
+        },
+        {
+            "query": "Clockwork Assassin abilities that deal damage upon destruction",
+            "variant": "abilities of the assassin that cause damage when destroyed"
+        }
+    ]
+}

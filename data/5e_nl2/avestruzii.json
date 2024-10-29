@@ -1,0 +1,50 @@
+{
+    "name": "Avestruzii",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 14,
+    "srd": false,
+    "ac_description": "scale mail",
+    "cr": "1/2",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "humanoid",
+        "front-line fighter",
+        "moderate offense"
+    ],
+    "adjectives": [
+        "resilient",
+        "physically strong"
+    ],
+    "description": "The Avestruzii is a robust medium humanoid with a strong constitution, wearing scale mail. It is armed with a battleaxe and has claw attacks as well as a shortbow for ranged engagements.",
+    "memorable": "The ability to react defensively and mitigate damage with its 'Dig In' reaction makes the Avestruzii stand out on the battlefield.",
+    "goals": "Typically engaged in combat, the Avestruzii aims to hold the front line and protect allies.",
+    "relations": "May be encountered alongside other humanoids or serve under stronger leaders.",
+    "environment": "Commonly found in various terrains, particularly in areas where humanoid factions gather.",
+    "strengths": "High constitution provides excellent resilience in combat.",
+    "weaknesses": "Low intelligence and charisma hinder social and tactical interactions.",
+    "attacks": "Employs a versatile battleaxe for melee attacks, has claw attacks for quick strikes, and uses a shortbow for ranged attacks.",
+    "most_powerful_ability": "The 'Dig In' reaction allows the Avestruzii to resist a melee attack, enhancing its defensive capabilities.",
+    "equipment": "Battleaxe, scale mail, shortbow",
+    "senses": "Passive perception of 12 indicates average awareness of surroundings.",
+    "skills": "Possesses average perception, without any notable skill proficiencies.",
+    "additional_information": [
+        "Strong constitution with a +3 modifier.",
+        "Good physical strength with a +2 modifier to strength.",
+        "Capable of dealing slashing damage with multiple attack options.",
+        "Can engage both in melee and ranged combat effectively.",
+        "Resilience makes it a challenging opponent for less experienced adventurers."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "resilient humanoid fighter",
+        "creature with defensive reaction",
+        "medium humanoid with battleaxe",
+        "front-line combatant",
+        "moderate damage melee fighter"
+    ]
+}

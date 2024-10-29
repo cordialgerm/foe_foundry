@@ -1,0 +1,52 @@
+{
+    "name": "Acid Ant",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 13,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "acid",
+        "explosive",
+        "monstrosity"
+    ],
+    "adjectives": [
+        "small",
+        "hazardous",
+        "corrosive"
+    ],
+    "description": "The Acid Ant is a small monstrosity characterized by its unique acid-based attacks and explosive demise. It has acidic spit and a nasty bite that inflicts ongoing corrosive damage.",
+    "memorable": "Notable for its explosive death, which releases acid upon defeat, posing a tactical risk to nearby foes.",
+    "goals": "To ambush and attack unsuspecting prey using its acid-based abilities.",
+    "relations": "It may be encountered alongside other creatures utilizing guerrilla tactics.",
+    "environment": "Typically found in areas where acid is prevalent or where it can ambush potential prey.",
+    "strengths": "Immunity to acid damage allowing it to thrive in corrosive environments and a keen sense of smell for tracking.",
+    "weaknesses": "Very low intelligence and charisma, making it poor in social situations or complex strategies.",
+    "attacks": "Uses Acid Spit for ranged attacks and Bite for close encounters, delivering both piercing and acid damage.",
+    "most_powerful_ability": "Explosive Death triggers a dangerous acid explosion when reduced to 0 hit points.",
+    "equipment": null,
+    "senses": "Possesses blindsight with a range of 60 feet, allowing it to perceive its surroundings without sight.",
+    "skills": null,
+    "additional_information": [
+        "Low hit points make it vulnerable in direct combat.",
+        "Its acid spit can cause lingering damage over multiple turns.",
+        "Limited skill set focused on offensive attacks and survival.",
+        "Best used in groups to maximize its explosive death potential.",
+        "Operates independently, without social or leadership tendencies."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "explosive acid creature",
+        "small corrosive monster",
+        "hazardous insect",
+        "acid-based attacks",
+        "acid immunity creature"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Giant Flea",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 27,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "30 ft. walking and 20 ft. climbing",
+    "role": null,
+    "tags": [
+        "beast",
+        "small",
+        "insect"
+    ],
+    "adjectives": [
+        "nimble",
+        "life-draining",
+        "agile"
+    ],
+    "description": "The Giant Flea is a small, agile creature capable of jumping impressively. It attaches to its prey and drains their life force.",
+    "memorable": "It can drain hit points over time while attached to its target, making it dangerous if not dealt with quickly.",
+    "goals": "To attach to prey and drain their life force.",
+    "relations": [],
+    "environment": "Various terrains, typically encountered in damp areas.",
+    "strengths": "Possesses blindsight and keen senses, making it difficult to evade.",
+    "weaknesses": "Lacks intelligence and charisma, making it straightforward in combat.",
+    "attacks": "Bite attack that attaches and causes ongoing blood loss.",
+    "most_powerful_ability": "Blood Sense, allowing it to detect blood within a 60-foot radius.",
+    "equipment": null,
+    "senses": "Blindsight up to 60 feet, allowing it to detect creatures without relying on sight.",
+    "skills": "Has perception checks, but with a +0 modifier, providing no additional strengths.",
+    "additional_information": [
+        "Has damage resistance to bludgeoning attacks.",
+        "Can leap up to 30 feet long and 15 feet high.",
+        "Can escape without provoking opportunity attacks.",
+        "Drains 4 hit points at the start of its turn while attached.",
+        "Can detach itself after draining a total of 12 hit points."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small life-draining insect",
+        "giant creature that jumps and drains blood",
+        "nimble creature found in damp environments",
+        "monster that attaches to prey and causes blood loss",
+        "agile flea that can leap high"
+    ]
+}

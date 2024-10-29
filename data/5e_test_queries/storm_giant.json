@@ -1,0 +1,25 @@
+{
+    "name": "Storm Giant",
+    "queries": [
+        {
+            "query": "towering ocean giant with lightning powers",
+            "variant": "towering giant from the ocean that has lightning abilities"
+        },
+        {
+            "query": "noble giant that controls storms and lives in mountains",
+            "variant": "majestic giant controlling storms that dwells in high mountains"
+        },
+        {
+            "query": "giant creature that can breathe underwater and summon storms",
+            "variant": "creature classified as a giant that summons storms and breathes in water"
+        },
+        {
+            "query": "massive giant that uses lightning strikes in battles",
+            "variant": "huge giant utilizing lightning bolts during fights"
+        },
+        {
+            "query": "storm giant with magical abilities and heavy weaponry",
+            "variant": "giant of storms possessing magical powers and wielding heavy weapons"
+        }
+    ]
+}

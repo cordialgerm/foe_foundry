@@ -1,0 +1,25 @@
+{
+    "name": "Gray Ooze",
+    "queries": [
+        {
+            "query": "slimy creature that lives in dark dungeons and corrodes metal",
+            "variant": "slimy monster that dwells in dark caves and dissolves metal"
+        },
+        {
+            "query": "amorphous ooze with a corrosive body found in sewers",
+            "variant": "shapeless ooze that has a corrosive nature living in sewage"
+        },
+        {
+            "query": "gray slime that can blend in with wet rock and attacks adventurers",
+            "variant": "gray ooze that can camouflage with wet stone and ambushes adventurers"
+        },
+        {
+            "query": "slow-moving ooze that deals acid damage and is weak to sunlight",
+            "variant": "slow ooze that inflicts acid damage and is sensitive to bright light"
+        },
+        {
+            "query": "medium ooze with low AC that attacks with pseudopod and corrosive damage",
+            "variant": "medium-sized ooze with low armor class that strikes with pseudopod and acid"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Hydra",
+    "creature_type": "monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 172,
+    "ac": 15,
+    "srd": true,
+    "cr": "8",
+    "movement": "30 ft. walk, 30 ft. swim",
+    "role": null,
+    "tags": [
+        "water creature",
+        "multi-headed",
+        "regenerative"
+    ],
+    "adjectives": [
+        "massive",
+        "serpentine",
+        "venomous"
+    ],
+    "description": "A massive, multi-headed reptilian monster with a serpentine body and thick, scaly hide.",
+    "memorable": "Each severed head grows two new heads unless cauterized, making it nearly unstoppable in combat.",
+    "goals": "Relentless predator that ambushes prey in watery environments.",
+    "relations": "May be encountered in lairs near swamps or lakes, often found alone or in pairs.",
+    "environment": "Swamps, lakes, or caves near bodies of water.",
+    "strengths": "Regenerates heads and health rapidly, possesses multiple attacks with each head.",
+    "weaknesses": "Vulnerable to fire damage, which can prevent regeneration.",
+    "attacks": "Bite attacks with each of its heads, capable of dealing significant piercing damage.",
+    "most_powerful_ability": "Regenerative heads that allow it to grow new heads unless fire damage is dealt.",
+    "equipment": null,
+    "senses": "Keenly aware with a passive Perception of 16.",
+    "skills": "Good at stealth and perception, allowing it to remain hidden and sense surroundings effectively.",
+    "additional_information": [
+        "Can hold its breath for 1 hour.",
+        "Toxic secretions poison water within its lair, affecting nearby creatures.",
+        "At least one head remains awake while the hydra sleeps.",
+        "Gains extra reactions for opportunity attacks with additional heads.",
+        "Has advantage on saving throws against various conditions due to multiple heads."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive multi-headed water monster",
+        "serpentine creature that regenerates heads",
+        "hydra ambush predator near lakes",
+        "venomous hydra with toxic water",
+        "giant creature with multiple biting heads"
+    ]
+}

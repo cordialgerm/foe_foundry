@@ -1,0 +1,54 @@
+{
+    "name": "Sahuagin Champion",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft., swim 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "sahuagin",
+        "amphibious",
+        "shark commander"
+    ],
+    "adjectives": [
+        "formidable",
+        "intimidating",
+        "amphibious",
+        "shark-commanding"
+    ],
+    "description": "The Sahuagin Champion is a formidable humanoid with strong physical attributes, boasting sharp claws and wielding a trident, showcasing both brute strength and combat versatility.",
+    "memorable": "Its ability to command sharks using telepathy and its bloody frenzy tactics make it a terrifying foe in aquatic battles.",
+    "goals": "To dominate the seas and intimidate surface dwellers, using superior combat skills and commanding aquatic predators.",
+    "relations": "Connected to other sahuagin, often found alongside sharks and other sea creatures, leading them in ambush tactics against enemies.",
+    "environment": "Primarily located in underwater environments but can also be found in coastal areas.",
+    "strengths": "Exceptional Strength and Dexterity enhance its melee combat abilities and agility while swimming.",
+    "weaknesses": "Must frequently return to water to avoid suffocation, limiting its time on land.",
+    "attacks": "Utilizes claw attacks and a versatile trident for both melee and ranged combat, supplemented by a quick bite attack.",
+    "most_powerful_ability": "Blood Frenzy grants advantage on attack rolls against wounded opponents, increasing its lethality in combat.",
+    "equipment": "Wields a trident and has natural claw attacks.",
+    "senses": "Possesses darkvision up to 120 feet, enhancing its ability to detect threats in low-light environments.",
+    "skills": "Proficient in Athletics and Stealth, showcasing its physical prowess and ability to navigate through water undetected.",
+    "additional_information": [
+        "Can breathe both air and water, enhancing its adaptability.",
+        "Possesses strong Intimidation skills, allowing it to instill fear in foes.",
+        "Commands sharks within 120 feet, creating strategic advantages in battle.",
+        "High saving throw bonuses in key attributes increase its resilience.",
+        "Notable for effective ambush tactics when attacking from underwater."
+    ],
+    "damage_types": [
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable amphibious warrior of the sea",
+        "intimidating shark commander with aquatic combat skills",
+        "creature that commands sharks and thrives in water",
+        "humanoid with claw attacks and trident weaponry",
+        "sahuagin champion that excels in underwater ambushes"
+    ]
+}

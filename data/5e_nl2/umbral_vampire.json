@@ -1,0 +1,54 @@
+{
+    "name": "Umbral Vampire",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 84,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "40 feet, quick and agile",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "vampire",
+        "stealth",
+        "necrotic"
+    ],
+    "adjectives": [
+        "malevolent",
+        "shadowy",
+        "cunning",
+        "manipulative"
+    ],
+    "description": "A malevolent undead creature that embodies chaos and darkness, with a shadowy presence and a figure that blends into the dim light, making it a terrifying foe.",
+    "memorable": "Can create an army of shadows from slain foes, embodying chaos through its necrotic abilities.",
+    "goals": "To drain the life force from the living and create shadows under its control.",
+    "relations": "Might serve or be associated with other dark creatures, such as necromancers or shadow entities.",
+    "environment": "Thrives in dark places, often found in dungeons or areas with minimal light.",
+    "strengths": "Exceptional Dexterity and Charisma, allowing for stealthy movements and manipulative charm.",
+    "weaknesses": "Significantly weakened in direct sunlight due to Sunlight Sensitivity.",
+    "attacks": "Multiattack allows for a combination of necrotic damage and strength-draining effects from its Shadow Touch.",
+    "most_powerful_ability": "Umbral Grasp, which can restrain enemies in shadows and deal continuous necrotic damage.",
+    "equipment": null,
+    "senses": "Has a passive perception of 15, reflecting sharp awareness of its surroundings.",
+    "skills": "Proficient in Stealth and Perception, enhancing its ambush capabilities.",
+    "additional_information": [
+        "Incorporeal Movement lets it pass through objects as difficult terrain.",
+        "Can manipulate shadows to ensnare and debilitate enemies.",
+        "Not affected by environmental hazards related to air due to Undead Nature.",
+        "Creates shadows from slain humanoids, increasing its power.",
+        "Immunities to several forms of damage and conditions enhance its survivability."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that creates shadows",
+        "stealthy vampire that drains strength",
+        "dark vampire vulnerable to sunlight",
+        "shadowy being that attacks in darkness",
+        "cunning necrotic enemy with ambush tactics"
+    ]
+}

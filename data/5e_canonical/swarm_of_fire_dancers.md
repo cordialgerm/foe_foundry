@@ -1,6 +1,8 @@
 <MonsterName/>Swarm of Fire Dancers</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>7</CR>
+<AC/>15</AC>
+<HP/>90</HP>
 <summary>The Swarm of Fire Dancers is a medium-sized swarm of elemental creatures embodying the chaotic and destructive nature of fire. With a challenge rating of 7, they present a significant threat to unprepared adventurers, dealing substantial fire damage while being highly resistant to various damage types. Their ability to occupy the same space as other creatures allows them to effectively swarm opponents while causing ongoing fire damage and spreading fear through their appearance. Though they possess above-average defenses and immunities, their vulnerabilities to cold damage and susceptibility to water can be exploited by clever players.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Frightening Visage, which has a recharge time requiring a roll of 5-6 on a s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm of Fire Dancers
 
 *Medium* *Swarm* *Elemental* *Neutral Evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The swarm of fire dancers can use its Frightening Visage, if available. It then makes two Singe attacks.
 - **Singe:** Melee Weapon Attack: +8 to hit, reach 0 ft., one target in the swarm’s space. Hit: 22 (4d10) fire damage, or 11 (2d10) fire damage if the swarm has half its hp or fewer.
 - **Frightening Visage (Recharge 5–6):** The swarm rearranges itself into the shape of a giant, blue, flaming Humanoid skull. Each Humanoid within 30 feet of the swarm that can see it must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

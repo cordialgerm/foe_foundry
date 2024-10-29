@@ -1,0 +1,50 @@
+{
+    "name": "Pixie\u2019s Umbrella",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 10,
+    "ac": 7,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 5 ft.",
+    "role": null,
+    "tags": [
+        "plant",
+        "poison",
+        "stealth"
+    ],
+    "adjectives": [
+        "small",
+        "peculiar",
+        "stationary"
+    ],
+    "description": "The Pixie\u2019s Umbrella resembles an ordinary fungus when motionless, featuring a small cap and low durability.",
+    "memorable": "It can blend into its surroundings and release toxic spores to incapacitate creatures.",
+    "goals": "To evade detection and protect itself from threats.",
+    "relations": "May be found in environments with other fungi or plants.",
+    "environment": "Typically located in damp, shaded areas like forests or swamps.",
+    "strengths": "Its False Appearance allows it to remain undetected until it attacks.",
+    "weaknesses": "Very low hit points and armor class make it vulnerable to direct attacks.",
+    "attacks": "Releases toxic spores in a 5-foot radius, dealing poison damage to nearby creatures.",
+    "most_powerful_ability": "Twirl ability releases spores that can poison creatures and inflict damage.",
+    "equipment": null,
+    "senses": "Has blindsight up to 30 ft., allowing it to sense nearby creatures even in the dark.",
+    "skills": null,
+    "additional_information": [
+        "Immune to blindness, deafness, and being frightened.",
+        "Can float away from danger as a reaction.",
+        "Very low strength, intelligence, and charisma scores."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant that looks like a fungus",
+        "poisonous plant creature in the forest",
+        "small creature that releases toxic spores",
+        "stealthy plant that can fly away",
+        "peculiar plant with poison damage ability"
+    ]
+}

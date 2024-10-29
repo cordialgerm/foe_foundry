@@ -1,0 +1,50 @@
+{
+    "name": "Megantereon",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 40 ft., climb 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "predator",
+        "stealth",
+        "grassland"
+    ],
+    "adjectives": [
+        "swift",
+        "lethal",
+        "agile"
+    ],
+    "description": "The Megantereon is a powerful predator with exceptional physical strength and agile speed, designed for ambush in grassland terrain.",
+    "memorable": "Its ability to knock down prey and inflict ongoing bleeding damage makes it a terrifying adversary.",
+    "goals": "Hunting and ambushing prey in grassland environments.",
+    "relations": "Typically encountered alone but may compete with other predators in its habitat.",
+    "environment": "Grasslands and open terrains.",
+    "strengths": "Excellent stealth capabilities and fast movement, with a powerful and bleeding attack.",
+    "weaknesses": "Very low Intelligence and Charisma limits its problem-solving and social interaction.",
+    "attacks": "Swipes with claws for slashing damage and delivers a biting attack that can inflict ongoing bleeding wounds.",
+    "most_powerful_ability": "Pounce ability allows it to knock targets prone and follow up with a bite attack.",
+    "equipment": null,
+    "senses": "Keen Smell grants it heightened awareness in its surroundings.",
+    "skills": "Has proficiency in perception, though it has a low score for mental capabilities.",
+    "additional_information": [
+        "Can use Grassland Camouflage to hide effectively",
+        "Has a strong physical presence with high Strength",
+        "Can perform long jumps of up to 20 feet",
+        "Inflicts ongoing damage with its Bite attack",
+        "Highly mobile and swift in movement"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fast grassland predator with bleeding attacks",
+        "medium-sized agile beast that pounces",
+        "stealthy creature lurking in the grasslands",
+        "sharp-clawed predator that inflicts ongoing damage",
+        "powerful hunter with keen sense of smell"
+    ]
+}

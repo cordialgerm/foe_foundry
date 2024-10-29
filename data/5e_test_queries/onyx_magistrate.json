@@ -1,0 +1,25 @@
+{
+    "name": "Onyx Magistrate",
+    "queries": [
+        {
+            "query": "large construct that punishes with necrotic damage and has strong magical resistance",
+            "variant": "big construct that deals necrotic damage and has high magic resistance"
+        },
+        {
+            "query": "magic-resistant creature that embodies law and order with a powerful scepter",
+            "variant": "lawful creature with a powerful scepter and resistance to magic"
+        },
+        {
+            "query": "enforcer of harsh codes that can curse its enemies and prevent healing",
+            "variant": "creature that enforces strict rules and can stop others from healing"
+        },
+        {
+            "query": "formidable adversary with insight skills and damage immunities",
+            "variant": "strong opponent with insight abilities and immunity to certain damages"
+        },
+        {
+            "query": "creature with low agility but high strength and charisma abilities",
+            "variant": "monster with weak dexterity but strong strength and charisma"
+        }
+    ]
+}

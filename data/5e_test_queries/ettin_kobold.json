@@ -1,0 +1,25 @@
+{
+    "name": "Ettin, Kobold",
+    "queries": [
+        {
+            "query": "giant creature with two heads causing chaos",
+            "variant": "chaotic giant with two heads that creates trouble"
+        },
+        {
+            "query": "medium giant that excels in melee but suffers in sunlight",
+            "variant": "medium-sized giant proficient in melee but weak in sunlight"
+        },
+        {
+            "query": "mischievous two-headed giant that fights with a greatclub",
+            "variant": "troublesome two-headed giant using a greatclub in combat"
+        },
+        {
+            "query": "lawful evil giant with poor intelligence and pack tactics",
+            "variant": "evil lawful giant that lacks intelligence and uses pack strategies"
+        },
+        {
+            "query": "giant with sunlight sensitivity and echoing burps ability",
+            "variant": "giant that is sensitive to sunlight and can unleash echoing burps"
+        }
+    ]
+}

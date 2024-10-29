@@ -1,6 +1,8 @@
 <MonsterName/>Ophinix</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>60</HP>
 <summary>The Ophinix is a large, unaligned monstrosity characterized by its unique ability to harness static electricity and lightning. It serves as a formidable opponent with a challenge rating of 2, providing an interesting encounter for mid-level adventurers. Its primary strengths include high physical attributes, specifically strong strength and dexterity, which contribute to its attack capabilities and evasiveness. However, it suffers from low intelligence and charisma, rendering it less versatile in social or tactical situations that require cleverness or charm. The Ophinix possesses notable immunities to lightning damage and has effective abilities that can deal both piercing and slashing damage. Its reliance on electric charge introduces a tactical element to encounters, as it can deal additional damage in close combat and unleash powerful area attacks under the right conditions.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ The combination of damage immunity, strong physical attacks, and electrical abil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ophinix
 
 *Large* *Monstrosity* *unaligned*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Lightning Strike (Recharge Special):** The ophinix releases its static electricity at up to three targets it can see within 30 feet of it. Each creature must make a DC 12 Dexterity saving throw, taking 5 (2d4) lightning damage on a failed save, or half as much damage on a successful one. After using Lightning Strike, the ophinix is no longer charged with electricity. It can’t use Lightning Strike if isn’t charged with electricity.
 
 
+</statblock>
 
 

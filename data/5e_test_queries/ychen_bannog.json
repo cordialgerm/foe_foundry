@@ -1,0 +1,25 @@
+{
+    "name": "Ychen Bannog",
+    "queries": [
+        {
+            "query": "gargantuan beast with high strength and thunderous roar",
+            "variant": "gargantuan beast with strong strength and a loud roar"
+        },
+        {
+            "query": "massive monster that deals double damage to structures",
+            "variant": "huge monster that can inflict double damage to buildings"
+        },
+        {
+            "query": "natural armor beast that knocks creatures prone",
+            "variant": "beast with natural armor that can knock foes down"
+        },
+        {
+            "query": "tank creature with exceptional constitution and damage resistance",
+            "variant": "tank-like creature with high constitution and resistances to damage"
+        },
+        {
+            "query": "strong melee attacker that deafens enemies with bellow",
+            "variant": "powerful melee attacker that can deafens foes with its roar"
+        }
+    ]
+}

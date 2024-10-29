@@ -1,0 +1,25 @@
+{
+    "name": "Vampire",
+    "queries": [
+        {
+            "query": "undead creature that can transform into mist or a bat and charms victims",
+            "variant": "creature that can change into mist or a bat while charming victims as undead"
+        },
+        {
+            "query": "powerful creature with high stealth and darkvision that drains life",
+            "variant": "strong monster with excellent stealth and darkvision that absorbs life"
+        },
+        {
+            "query": "shapechanger that thrives in darkness and has a weakness to sunlight",
+            "variant": "creature that changes form and excels in dark areas while being vulnerable to sunlight"
+        },
+        {
+            "query": "thirsty undead with superhuman strength and ability to summon animals of the night",
+            "variant": "undead monster with immense strength and can call nocturnal creatures who is thirsty for blood"
+        },
+        {
+            "query": "versatile vampire that regenerates health and has multiple weaknesses",
+            "variant": "vampire creature that heals and has various vulnerabilities while being adaptable"
+        }
+    ]
+}

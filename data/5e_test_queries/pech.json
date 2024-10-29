@@ -1,0 +1,25 @@
+{
+    "name": "Pech",
+    "queries": [
+        {
+            "query": "small elemental creature that can climb and has resistance to slashing damage",
+            "variant": "small elementel creature that can climb and resists slashing damage"
+        },
+        {
+            "query": "stone-based monster with unique melee attacks and disadvantage in bright light",
+            "variant": "stone monster with special melee attacks and downside in bright light"
+        },
+        {
+            "query": "earth creature with poison immunity that thrives in rocky environments",
+            "variant": "earth monster with immunity to poison that lives in rocky places"
+        },
+        {
+            "query": "neutral good elemental with strong physical skills and light sensitivity",
+            "variant": "neutral good elementel with physical prowess and sensitivity to light"
+        },
+        {
+            "query": "Pech monster features including climbing speed and ability to incapacitate foes",
+            "variant": "Pech monster details such as climbing ability and foe incapacitation"
+        }
+    ]
+}

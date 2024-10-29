@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Titan</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>12</CR>
+<AC/>15 (breastplate)</AC>
+<HP/>198</HP>
 <summary>The Ancient Titan is a formidable gargantuan celestial creature that embodies the essence of both strength and power, making it a literal titan among its peers in combat. With a neutral good alignment, it typically acts on the side of righteousness and justice. This creature boasts impressive physical prowess with a Strength score of 27, allowing it to deliver devastating attacks, while its high Constitution score of 22 grants it substantial hit points, making it a durable opponent in battles. It has a noticeable weakness to magical effects, which is mitigated by its Magic Resistance ability, granting it an advantage on saving throws against spells. With a Challenge Rating of 12, it presents a significant challenge to adventurers, requiring strategic planning and teamwork to overcome its might.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the Stunning Word ability, which is recharged on a roll of 5 or 6, allo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Titan
 
 *Gargantuan* *Celestial* *Neutral Good*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Word of Pain:** Ranged Spell Attack:+9 to hit, range 120 ft., one target. Hit: 23 (4d8 + 5) force damage, and the target must succeed on a DC 17 Constitution saving throw or have disadvantage on attack rolls, ability checks, and saving throws until the end of its next turn as pain courses through its body.
 - **Reality-Altering Words:** The titan speaks a phrase that temporarily reshapes reality around it, warping the terrain, displacing creatures, and disrupting magic. Each creature within 30 feet of the titan must succeed on a DC 17 Dexterity saving throw or be pulled or pushed up to 25 feet toward or away from the titan (the titan’s choice) and knocked prone. Instead of pushing or pulling a creature that failed the saving throw, the titan can end one magical effect of its choice of 4th level or lower on that creature. The area then becomes difficult terrain until the start of the titan’s next turn. Moving through this difficult terrain doesn’t cost the titan extra movement.
 - **Stunning Word (Recharge 5–6):** The titan speaks a brief, echoing word of power at up to three creatures it can see within 60 feet of it. Each target must make a DC 17 Constitution saving throw. On a failure, a creature takes 45 (10d8) force damage and is stunned for 1 minute. On a success, a creature takes half the damage and isn’t stunned. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

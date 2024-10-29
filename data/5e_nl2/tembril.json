@@ -1,0 +1,55 @@
+{
+    "name": "Tembril",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 114,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "predator",
+        "psychic",
+        "stealthy"
+    ],
+    "adjectives": [
+        "cunning",
+        "lethal",
+        "powerful",
+        "agile"
+    ],
+    "description": "The Tembril is a large monstrosity characterized by exceptional strength and agility, with natural armor that provides robust protection.",
+    "memorable": "Its terrifying Maddening Chitter ability can incapacitate foes and induce madness.",
+    "goals": "Typically seeks to surprise and overpower its prey in combat.",
+    "relations": "May be found in lairs with other cunning predators or in regions of chaos.",
+    "environment": "Commonly inhabits wilderness areas or locations where it can ambush unsuspecting creatures.",
+    "strengths": "High physical strength, maneuverability in combat due to Nimble Leap, and psychic attack capabilities.",
+    "weaknesses": "Poor Intelligence score leads to an inability to strategize effectively.",
+    "attacks": "Can deliver lethal bite attacks, capable of instantly killing targets through decapitation, and slashing claw attacks.",
+    "most_powerful_ability": "Maddening Chitter creates a psychic shockwave, incapacitating and damaging multiple foes.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet and a passive Perception score of 15.",
+    "skills": "Skilled in stealth and perception, enhancing its ability to ambush.",
+    "additional_information": [
+        "Has resistance to cold damage.",
+        "The Ambusher ability grants advantage on attacks against surprised foes.",
+        "Dexterous and stealthy, making it difficult to detect until it's too late.",
+        "Can take Dash or Disengage actions as a bonus action for enhanced mobility.",
+        "Highly dangerous due to its potential for instant kills and psychological effects."
+    ],
+    "damage_types": [
+        "psychic",
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large monster with maddening psychic attacks",
+        "cunning predator with stealth and agility",
+        "ambusher that can instantly kill targets",
+        "predator with powerful bite and claws",
+        "monster that induces madness with its chitter"
+    ]
+}

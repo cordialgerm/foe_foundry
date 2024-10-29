@@ -1,0 +1,25 @@
+{
+    "name": "Desert Troll",
+    "queries": [
+        {
+            "query": "large evil giant that thrives in the desert",
+            "variant": "large giant with evil alignment that lives in the desert"
+        },
+        {
+            "query": "troll with natural armor and water weakness in arid environments",
+            "variant": "troll that has natural armor and is weak to water in desert conditions"
+        },
+        {
+            "query": "creature with keen smell ability that can burrow in sand",
+            "variant": "monster with a keen sense of smell that can dig in sand"
+        },
+        {
+            "query": "melee giant with high hit points and desert camouflage",
+            "variant": "giant monster with significant hit points and camouflage in desert"
+        },
+        {
+            "query": "desert dwelling troll known for its Erupt attack ability",
+            "variant": "troll from the desert recognized for its ability called Erupt"
+        }
+    ]
+}

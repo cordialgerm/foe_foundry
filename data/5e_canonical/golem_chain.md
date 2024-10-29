@@ -1,6 +1,8 @@
 <MonsterName/>Golem, Chain</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Chain Golem is a formidable Large Construct that is unaligned, often employed by those who seek to harness its mechanical might. With a high armor class of 16 and substantial hit points totaling 119, it boasts notable durability for a creature of its kind. The Chain Golem is adept in grappling and restraining foes, making it effective in close-range combat. Its strengths include strong physical attacks that can inflict both damage and debilitating diseases on its targets. However, its low intelligence and charisma scores suggest it lacks sophistication in tactics and social interactions. The Golem's unique abilities, like Infernal Tetanus and Magic Resistance, heighten its role as a powerful combatant that can withstand spell effects while also posing serious threats to adventurers who engage it.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ The Chain Golem serves as a resilient and punishing entity in combat, making it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Golem, Chain
 
 *Large* *Construct* *unaligned*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Imprison:** Creates prison of chains around an up to Med creature grappled by it. Imprisoned: restrained and takes 14 (4d6) piercing damage at start of each of its turns. Imprisoned creature or creature within 5 ft. of golem can use action to free imprisoned creature. Doing so requires DC 16 Str check and creature attempting takes 7 (2d6) piercing damage.
 
 
+</statblock>
 
 

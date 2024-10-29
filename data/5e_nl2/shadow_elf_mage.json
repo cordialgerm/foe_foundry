@@ -1,0 +1,55 @@
+{
+    "name": "Shadow Elf Mage",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 12,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "mage",
+        "shadow",
+        "elf",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "potent",
+        "agile",
+        "arcane"
+    ],
+    "description": "The Shadow Elf Mage is a medium humanoid, skilled in arcane arts, with an aura of mystery. It has sharp features typical of elves, with an air of confidence typically associated with powerful magic users.",
+    "memorable": "Notable for its powerful spells like Lightning Bolt and Cloudkill, the Shadow Elf Mage can effectively control the battlefield.",
+    "goals": "Typically seeks to gain power and knowledge, often through mastery of magic.",
+    "relations": "May be found with other shadow creatures or allies, possibly working with other spellcasters.",
+    "environment": "Commonly found in dark forests or ancient ruins rich with magical energy.",
+    "strengths": "Excels in spellcasting, particularly with area control spells and powerful attacks.",
+    "weaknesses": "Vulnerable to direct physical attacks, especially when defensive spells are absent.",
+    "attacks": "Uses a dagger for melee, and can deliver ranged spells like Fire Bolt and Lightning Bolt.",
+    "most_powerful_ability": "Cloudkill creates a lethal area of poisonous fog, damaging any creature that enters or starts its turn within it.",
+    "senses": "Has passive Perception 14.",
+    "skills": "Proficient in arcana, history, investigation, and has reasonable perception.",
+    "additional_information": [
+        "Can cast Darkness and Faerie Fire innately without material components.",
+        "Uses Misty Step for repositioning.",
+        "Counterspell allows it to thwart enemies' magical attacks.",
+        "Greater Invisibility can keep it hidden from enemies.",
+        "Capable of teleportation with Dimension Door."
+    ],
+    "damage_types": [
+        "lightning",
+        "poison",
+        "fire"
+    ],
+    "spellcasting": "A 9th level spellcaster with access to high-level spells such as Cloudkill and Lightning Bolt.",
+    "test_queries": [
+        "powerful shadow mage with spellcasting abilities",
+        "arcane elf that controls the battlefield",
+        "spellcaster with lethal poison spells",
+        "shadow elf adept in magic and agility",
+        "mage capable of teleportation and invisibility"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Three-Headed Clockwork Dragon",
+    "queries": [
+        {
+            "query": "tall construct dragon that breathes fire and communicates telepathically",
+            "variant": "construct dragon that is tall with three heads and can breathe fire while talking telepathically"
+        },
+        {
+            "query": "mechanical dragon with multiple attacks that sprays oil and can fly",
+            "variant": "dragon that is mechanical, can fly, uses multiple attacks, and sprays oil"
+        },
+        {
+            "query": "Huge dragon that is immune to psychic damage and has a powerful bite attack",
+            "variant": "giant dragon immune to psychic damage with a strong bite attack"
+        },
+        {
+            "query": "Clockwork creature that deals double damage to structures and has fire breath",
+            "variant": "creature made of clockwork that can deal double damage to buildings and has a breath attack of fire"
+        },
+        {
+            "query": "dragon with unique abilities that can see through circlet wearers' eyes",
+            "variant": "dragon that has special powers and can visualize through the circlet wearers' vision"
+        }
+    ]
+}

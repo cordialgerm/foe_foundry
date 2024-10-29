@@ -1,0 +1,25 @@
+{
+    "name": "Arboreal Grappler",
+    "queries": [
+        {
+            "query": "stealthy ambush creature found in jungles",
+            "variant": "ambush creature found in jungle that is stealthy"
+        },
+        {
+            "query": "forest monster using tentacles to grapple foes",
+            "variant": "tentacle grappling creature that lives in forests"
+        },
+        {
+            "query": "Medium aberration that climbs surfaces without checks",
+            "variant": "climbs surfaces without checks, Medium aberration"
+        },
+        {
+            "query": "creature with high Dexterity and natural armor in the woods",
+            "variant": "natural armor and high Dexterity creature found in woods"
+        },
+        {
+            "query": "monster proficient in Acrobatics and ambush tactics",
+            "variant": "monster with ambush tactics and Acrobatics proficiency"
+        }
+    ]
+}

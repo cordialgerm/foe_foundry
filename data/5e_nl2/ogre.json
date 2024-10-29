@@ -1,0 +1,53 @@
+{
+    "name": "Ogre",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 59,
+    "ac": 11,
+    "srd": true,
+    "cr": "2",
+    "movement": "40 ft. walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "brute",
+        "melee"
+    ],
+    "adjectives": [
+        "large",
+        "brutish",
+        "intimidating"
+    ],
+    "description": "Ogres are large, brutish humanoids standing 9 to 10 feet tall, known for their immense size and strength. They wield massive clubs or improvisational weapons, smashing anything in their path.",
+    "memorable": "Ogres are known for their sheer physical power, capable of delivering devastating melee attacks and launching sweeping strikes that can knock opponents prone.",
+    "goals": "Ogres are driven by greed and hunger, often raiding villages or travelers for food, treasure, or slaves.",
+    "relations": "Ogres may be encountered alone or in small bands, often in isolated caves, hills, or ruins.",
+    "environment": "Ogres usually inhabit caves, hills, or ruins.",
+    "strengths": "High Strength score gives Ogres powerful melee capabilities, making them formidable in direct combat.",
+    "weaknesses": "Ogres have low Dexterity, resulting in poor agility and difficulty in dodging attacks.",
+    "attacks": "Ogres primarily attack using their Greatclub for bludgeoning damage or Javelins for piercing damage, making them versatile in melee or ranged combat.",
+    "most_powerful_ability": "The Bowling Sweep ability allows the Ogre to deal area damage and knock creatures prone, significantly altering the dynamics of battle.",
+    "equipment": null,
+    "senses": "Ogres have darkvision to see in darkness as if it were dim light, enhancing their awareness in dimly lit areas.",
+    "skills": "Ogres possess a passive Perception score of 10, indicating average awareness of their surroundings.",
+    "additional_information": [
+        "Ogres are known for their simple-mindedness, making them easily fooled or manipulated.",
+        "They can perform a Shoving Rush, knocking targets prone while avoiding opportunity attacks.",
+        "Ogres resist being stunned, making them more challenging to incapacitate.",
+        "They often wield improvised weapons in addition to their Greatclub.",
+        "Ogres can engage in a Multiattack, allowing them to make two actions per turn."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large giant with brute strength",
+        "ogre that attacks with a club",
+        "cave-dwelling giant known for power",
+        "brutish monster that knocks creatures down",
+        "ogre raider that loves treasure and food"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Egret Harpy",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "fly 60 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "harpy",
+        "spellcaster",
+        "marsh"
+    ],
+    "adjectives": [
+        "aerial",
+        "enchanting",
+        "supportive"
+    ],
+    "description": "The Egret Harpy has a humanoid upper body and avian lower body, with wings allowing for flight. It possesses a strong and enchanting voice, often captivating those who listen.",
+    "memorable": "The harpy's enchanting songs can charm foes and assist allies in navigating marshy terrain, creating unique tactical opportunities.",
+    "goals": "To capture or charm intruders and enhance the effectiveness of its allies in combat and navigation.",
+    "relations": "Commonly found in marshy areas, it might be encountered alongside other marsh-dwelling creatures or allied with other harpies.",
+    "environment": "Typically inhabits marshes and wetlands where it can utilize its special abilities and flyers.",
+    "strengths": "Versatile abilities in both melee and magic, innate spellcasting, and support for allies in difficult terrains.",
+    "weaknesses": "Moderate armor class makes it vulnerable to coordinated attacks despite its hit points.",
+    "attacks": "Can execute a multiattack with a spear and talons, using magical songs to influence combat.",
+    "most_powerful_ability": "Guiding Song enhances allies' navigation and allows for area-wide charm effects through Mass Suggestion.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Skilled in Acrobatics and Nature, allowing it to navigate and understand its environment effectively.",
+    "additional_information": [
+        "Innate spellcasting ability allows for three uses of Suggestion per day.",
+        "Wing Buffet can knock prone and deals significant area damage.",
+        "Advantage on Survival checks in marshy areas benefits allies greatly.",
+        "Utilizes a strategy of enchanting foes while supporting allies.",
+        "Versatile combat capabilities with both melee and ranged options."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast Suggestion three times per day without materials, and has access to Mass Suggestion through its Guiding Song.",
+    "test_queries": [
+        "aerial monster with enchanting songs",
+        "marsh creature that charms foes",
+        "harpy known for its supportive abilities",
+        "monster that navigates marshy terrain",
+        "creature that uses magic in combat"
+    ]
+}

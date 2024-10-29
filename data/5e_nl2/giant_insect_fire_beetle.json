@@ -1,0 +1,55 @@
+{
+    "name": "Giant Fire Beetle",
+    "creature_type": "Beast",
+    "alignment": "null",
+    "size": "Small",
+    "hp": 7,
+    "ac": 13,
+    "srd": true,
+    "cr": "0",
+    "movement": "30 ft.",
+    "role": null,
+    "tags": [
+        "beetle",
+        "fire",
+        "illumination",
+        "hazard"
+    ],
+    "adjectives": [
+        "small",
+        "fiery",
+        "illuminating",
+        "hazardous"
+    ],
+    "description": "The Giant Fire Beetle is a small insect with the ability to illuminate its surroundings. Its body secretes igniting mucus that can cause ongoing fire damage.",
+    "memorable": "Its unique ability to shine bright light and its igniting mucus make it both a useful companion and a potential hazard.",
+    "goals": "Typically found in various environments, aiming to survive and possibly assist with illumination.",
+    "relations": "May be encountered alongside other small beasts in environments that benefit from light sources.",
+    "environment": "Varied environments, often found in dark areas where its illumination can be beneficial.",
+    "strengths": "Illuminates dark areas and can inflict ongoing fire damage through its igniting mucus ability.",
+    "weaknesses": "Low hit points and poor physical attack capabilities, making it a minor threat in combat.",
+    "attacks": "Can perform a weak bite or shoot igniting mucus to poison and ignite targets.",
+    "most_powerful_ability": "Its Igniting Mucus, which can cause continual fire damage over multiple rounds.",
+    "equipment": null,
+    "senses": "Possesses keen senses with a radius of 30 feet, enhancing its ability to detect nearby threats.",
+    "skills": "Average stealth skill allows it to move unnoticed in its environment.",
+    "additional_information": [
+        "Can serve as a minor threat due to its igniting mucus.",
+        "Illumination ability can aid adventurers in dark settings.",
+        "Low challenge rating means it poses minimal threat to experienced adventurers.",
+        "Can ignite its mucus immediately if the target takes fire damage.",
+        "Mucus can be extinguished by taking an action."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small insect that illuminates and burns",
+        "beetle with igniting mucus ability",
+        "hazardous light-producing beetle",
+        "creature that ignites targets over time",
+        "small fire beetle that glows in dark"
+    ]
+}

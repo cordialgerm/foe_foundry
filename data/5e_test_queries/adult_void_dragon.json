@@ -1,0 +1,25 @@
+{
+    "name": "Adult Void Dragon",
+    "queries": [
+        {
+            "query": "massive dragon that inflicts cold damage and has a madness aura",
+            "variant": "huge dragon with cold attacks and a madness causing aura"
+        },
+        {
+            "query": "chaotic neutral dragon that uses gravitational breath and has high AC",
+            "variant": "neutral chaos dragon with gravitational breath and very high armor class"
+        },
+        {
+            "query": "dragon that can manipulate gravity and causes short-term madness",
+            "variant": "creature that can control gravity and induces madness for a short time"
+        },
+        {
+            "query": "void dragon with powerful breath weapons and high hit points",
+            "variant": "void creature with strong breath attacks and a large pool of hit points"
+        },
+        {
+            "query": "Adult Void Dragon that exhibits traits of cold damage and has limited mobility",
+            "variant": "Void Dragon that shows cold attack traits and lacks mobility when not flying"
+        }
+    ]
+}

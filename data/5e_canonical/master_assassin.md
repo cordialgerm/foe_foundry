@@ -1,6 +1,8 @@
 <MonsterName/>Master Assassin</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>17</CR>
+<AC/>18</AC>
+<HP/>143</HP>
 <summary>The Master Assassin is a highly skilled humanoid mercenary renowned for its dexterity and lethal precision in combat. This creature presents a formidable challenge with its high armor class of 18 and significant hit points totaling 143, making it resilient while delivering devastating attacks. The Master Assassin excels in stealth and agility, possessing exceptional Dexterity and Strength scores of 20, which provide a significant advantage in both melee and ranged combat scenarios. However, despite its strengths, it has a moderate Constitution score and lacks any magical abilities, which may limit its versatility in certain situations. The Master Assassin thrives in quick, decisive strikes that can easily incapacitate unsuspecting foes, particularly through its special ability to deal instant death to surprised enemies.</summary>
 
 <detail>
@@ -41,6 +43,7 @@ The Master Assassin's combination of high damage potential, evasive maneuvers, a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Master Assassin
 
 *Medium* *Humanoid*
@@ -81,5 +84,6 @@ Source: 5e_artisinal_monsters
 - **Rapid Attack:** The assassin attacks with their shortsword.
 
 
+</statblock>
 
 

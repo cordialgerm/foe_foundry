@@ -1,6 +1,8 @@
 <MonsterName/>Dire Lionfish</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Dire Lionfish is a formidable aquatic creature that serves as both a predator and a guardian of its underwater territory. With a large physique and impressive swimming speed, it is adept at ambushing foes who venture too close. Its combination of natural armor and significant hit points makes it a robust opponent capable of withstanding damage, while its challenge rating of 6 indicates that it poses a serious threat to adventurers. Notably, the Dire Lionfish relies on its poisonous defenses and ambush tactics to gain the upper hand in combat, but it is limited by its inability to move on land.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Dire Lionfish can perform a **Multiattack**, making one Bite atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dire Lionfish
 
 *Large* *Beast* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Forceful Spit (Recharge 4–6):** Launches a stream of pessurized water from its mouth in a 30' line that is 5 ft. wide  Each creature in that line: 21 (6d6) bludgeoning damage and is pushed up to 20' away from the lionfish and is knocked prone (DC 14 Dex half damage and is pushed up to 10 ft. away from the lionfish and isn’t knocked prone.)
 
 
+</statblock>
 
 

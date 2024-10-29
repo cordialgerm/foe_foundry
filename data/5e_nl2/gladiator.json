@@ -1,0 +1,53 @@
+{
+    "name": "Gladiator",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any race",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 112,
+    "ac": 16,
+    "srd": true,
+    "cr": "5",
+    "movement": "30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fighter",
+        "arena",
+        "combat",
+        "intimidating"
+    ],
+    "adjectives": [
+        "trained",
+        "disciplined",
+        "formidable",
+        "agile"
+    ],
+    "description": "A highly trained warrior clad in armor, wielding weapons such as swords or spears, known for its impressive combat skills.",
+    "memorable": "The Gladiator's ability to perform breathtaking displays while fighting, captivating audiences and intimidating foes.",
+    "goals": "To fight for glory, fame, or survival in arenas.",
+    "relations": "May fight alongside or against other gladiators, or be controlled by masters of arenas.",
+    "environment": "Typically found in arenas or battlefields.",
+    "strengths": "Excels in both melee and ranged combat, employing tactical thinking during fights and possessing high Strength and Constitution.",
+    "weaknesses": "Reliance on melee combat makes it vulnerable to ranged attackers.",
+    "attacks": "Employs devastating melee attacks, including spear thrusts and shield bashes, capable of knocking opponents prone.",
+    "most_powerful_ability": "Brutal, allowing it to deal one extra die of damage when hitting with a melee weapon.",
+    "equipment": "Equipped with a spear, shield, and protective armor.",
+    "senses": "Passive Perception of 11, indicating average awareness.",
+    "skills": "Proficient in Athletics, Intimidation, and Performance, showcasing its combat prowess and charisma in social interactions.",
+    "additional_information": [
+        "Can use Multiattack to strike multiple times in a turn.",
+        "Capable of performing entertaining displays to charm or frighten foes.",
+        "Has an ability called Shield Block to enhance its defense against attacks.",
+        "Shows strong resistance against being frightened due to its Brave trait.",
+        "Can knock smaller foes prone with its Shield Bash."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "combat master in an arena",
+        "armored fighter with spear and shield",
+        "disciplined warrior skilled in intimidation",
+        "formidable melee combatant with high strength",
+        "gladiator performing in front of crowds"
+    ]
+}

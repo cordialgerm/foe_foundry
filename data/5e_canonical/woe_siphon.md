@@ -1,6 +1,8 @@
 <MonsterName/>Woe Siphon</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Woe Siphon is a Medium fey creature characterized by its chaotic neutral alignment. It serves as a cunning adversary and manipulator in combat, using its abilities to sap the strength and resolve of its foes while evading direct confrontation. The creature possesses high strength, dexterity, and constitution, making it formidable in physical combat, while its low intelligence and charisma indicate limited social or mental prowess. With a Challenge Rating of 3, it presents a moderate challenge to adventurers, potentially draining their resources and vitality over the course of a skirmish.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ Lastly, the Woe Siphon possesses the ability to turn invisible until it attacks 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Woe Siphon
 
 *Medium* *Fey* *chaotic neutral*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Invisibility:** The woe siphon magically turns invisible until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the woe siphon wears or carries is invisible with it.
 
 
+</statblock>
 
 

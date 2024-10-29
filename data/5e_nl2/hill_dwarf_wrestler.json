@@ -1,0 +1,54 @@
+{
+    "name": "Hill Dwarf Wrestler",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dwarf",
+        "wrestler",
+        "grappler",
+        "melee"
+    ],
+    "adjectives": [
+        "formidable",
+        "strong",
+        "dexterous",
+        "intimidating"
+    ],
+    "description": "The Hill Dwarf Wrestler is a robust and muscular combatant, known for its exceptional grappling skills and brawny physique.",
+    "memorable": "Its remarkable ability to grapple and control opponents makes it a dangerous foe in close combat.",
+    "goals": "To dominate opponents in melee combat through grappling techniques and powerful strikes.",
+    "relations": "Often found in the company of fellow fighters and warriors, it may also be seen confronting weaker opponents.",
+    "environment": "Commonly encountered in arenas, battlefields, or taverns where bar fights occur.",
+    "strengths": "Highly skilled in melee combat with multiple attack options and strong offensive capabilities.",
+    "weaknesses": "Lacks ranged attacks and relies heavily on close-quarters combat.",
+    "attacks": "Can make multiple fist attacks, grappling, pinning, and executing powerful body slams.",
+    "most_powerful_ability": "Body Slam inflicts significant damage while allowing the wrestler to reposition.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Boasts proficiency in Athletics, enhancing its grappling and physical confrontations.",
+    "additional_information": [
+        "Possesses Unarmored Defense for added defensive capability.",
+        "Can inflict stunning effects with its Head Shot attack.",
+        "Equipped with powerful bonus actions for extra damage.",
+        "Good at resisting physical challenges due to high saving throws.",
+        "Exhibits proficient intimidation skills to influence social interactions."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "strong dwarf grappling fighter",
+        "humanoid skilled in melee combat",
+        "tough dwarf wrestler with powerful attacks",
+        "bruiser known for body slams",
+        "grappling expert in close quarters"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Rafflesian",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 136,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 15 ft.",
+    "role": null,
+    "tags": [
+        "symbiotic",
+        "plant",
+        "support"
+    ],
+    "adjectives": [
+        "durable",
+        "life-sustaining",
+        "bonding"
+    ],
+    "description": "The Rafflesian is a small, plant-based creature known for its symbiotic relationships with humanoids, enhancing their capabilities while drawing upon their life force.",
+    "memorable": "The ability to bond with a humanoid creates a shared fate, mirroring damage between the two.",
+    "goals": "To form symbiotic bonds with humanoids and provide support in combat.",
+    "relations": "Often found with humanoids as companions, it may also encounter other plant creatures.",
+    "environment": "Typically situated in areas abundant with life, where it can easily bond with humanoids.",
+    "strengths": "Very high Constitution and strength, allowing it to survive in combat and deliver powerful strikes.",
+    "weaknesses": "Low Dexterity and limited perception skills may hinder its evasive maneuvers.",
+    "attacks": "Delivers three powerful Vine Whip strikes and can drain life with a Blood Root attack.",
+    "most_powerful_ability": "Symbiote feature allows for life-sustaining bonds with humanoids, enhancing their defenses and reflecting damage.",
+    "senses": "Possesses blindsight out to 120 feet, allowing it to sense its surroundings effectively.",
+    "skills": "Has a passive perception of 17, reflecting its ability to perceive its environment despite its blindness.",
+    "additional_information": [
+        "Can reanimate its host for up to 10 days after death, preventing decay.",
+        "Utilizes telepathic communication with its bonded host for strategic coordination.",
+        "Resistance to all forms of damage while bonded with a humanoid.",
+        "A bond that can only be severed by the Rafflesian's choice, creating high stakes in combat.",
+        "Can mirror damage taken by the host during combat, intertwining their lifelines."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature that bonds with humanoids",
+        "durable plant creature with symbiotic abilities",
+        "small plant that enhances humanoid defenses",
+        "life-draining plant companion",
+        "creature that can reanimate its host"
+    ]
+}

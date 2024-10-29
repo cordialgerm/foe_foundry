@@ -1,0 +1,25 @@
+{
+    "name": "Witchlight",
+    "queries": [
+        {
+            "query": "tiny construct that emits bright light and is immune to poison",
+            "variant": "small construct that sheds bright light and is immune to poison"
+        },
+        {
+            "query": "light-emitting construct that is fragile but agile with a speed of 40 feet",
+            "variant": "light-brightening construct that is weak but fast with 40 feet of speed"
+        },
+        {
+            "query": "magical creature with immunity to psychic damage that lacks basic needs",
+            "variant": "magical being immune to psychic harm that has no basic requirements"
+        },
+        {
+            "query": "construct that can blind opponents and has a moderate Armor Class of 12",
+            "variant": "creature that can daze enemies and has an Armor Class of 12"
+        },
+        {
+            "query": "creature that understands creator's language but cannot speak and is susceptible to antimagic",
+            "variant": "being that knows its creator's language but can't talk and is vulnerable to antimagic"
+        }
+    ]
+}

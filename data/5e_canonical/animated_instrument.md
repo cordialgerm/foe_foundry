@@ -1,6 +1,8 @@
 <MonsterName/>Animated Instrument</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>17</HP>
 <summary>The Animated Instrument is a tiny construct that serves the unique role of a support character in combat. This creature has an unaligned nature, providing versatility without alignment constraints. With an Armor Class of 12 and 17 hit points, it is not particularly durable but possesses certain resistances and immunities that make it difficult for most attacks to be effective. Its primary strength lies in its ability to influence creature behavior through music, making it a tactical companion on the battlefield. However, it has major drawbacks, such as its low strength and intelligence, rendering it ineffective in direct confrontation and strategy. Notably, its effectiveness is hampered in the presence of antimagic fields, making it vulnerable to spells that could nullify its powers.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Finally, the Courageous Anthem can be played once per day, granting a +1 bonus t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Animated Instrument
 
 *Tiny* *Construct* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Courageous Anthem (1/Day):** Plays a song that bolsters its allies. Each friendly creature within 30' of the instrument that can hear song has a +1 bonus to attack rolls ability checks and saves until song ends. Instrument must take a bonus action on subsequent turns to continue playing the song. Can stop playing at any time. Song ends if animated instrument is incapacitated. A creature can benefit from only one Courageous Anthem at a time.
 
 
+</statblock>
 
 

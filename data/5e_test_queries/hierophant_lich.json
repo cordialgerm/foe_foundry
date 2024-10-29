@@ -1,0 +1,25 @@
+{
+    "name": "Hierophant Lich",
+    "queries": [
+        {
+            "query": "undead creature that can charm and has powerful spells",
+            "variant": "undead monster that can charm and has strong spells"
+        },
+        {
+            "query": "evil lich that can levitate and has legendary resistances",
+            "variant": "wicked lich that levitates and possesses legendary resistances"
+        },
+        {
+            "query": "medium undead with high Wisdom saving throw and spellcasting abilities",
+            "variant": "medium undead with strong Wisdom saves and spellcasting powers"
+        },
+        {
+            "query": "lich that can return to life and instills fear in enemies",
+            "variant": "lich that resurrects and causes fear in foes"
+        },
+        {
+            "query": "combatant with good durability and the ability to charm undead",
+            "variant": "fighter with high durability and the power to charm undead"
+        }
+    ]
+}

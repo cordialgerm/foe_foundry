@@ -1,0 +1,50 @@
+{
+    "name": "Clockwork Watchman",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 44,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "Defender",
+    "tags": [
+        "guardian",
+        "mechanical",
+        "sentry"
+    ],
+    "adjectives": [
+        "mechanical",
+        "defensive",
+        "durable"
+    ],
+    "description": "The Clockwork Watchman is a Medium-sized construct, built for efficiency and resilience, featuring a halberd and a mechanical design that allows it to function effectively as a sentry.",
+    "memorable": "Its unique net cannon can ensnare enemies, making it an interesting tactical opponent.",
+    "goals": "To serve as a guardian and prevent intrusions.",
+    "relations": "Often encountered alongside other mechanical constructs or as a protector of important locations.",
+    "environment": "Usually found in mechanical settings or as part of ancient constructs in ruins.",
+    "strengths": "Immunities to poison and psychic damage, advantages against spells, and requires no food or air.",
+    "weaknesses": "Poor mental capabilities, making it ineffective in social interactions or complex problem-solving.",
+    "attacks": "Employs a halberd for slashing damage, a slam for bludgeoning, and a net cannon for restraining enemies.",
+    "most_powerful_ability": "The ability to ensnare creatures with its net cannon and reposition them with its reel ability.",
+    "equipment": "Wields a halberd and features a net cannon.",
+    "senses": "Possesses a passive Perception of 14, allowing it to notice hidden entities effectively.",
+    "skills": "Skilled in Athletics and Perception, providing solid physical capability and awareness.",
+    "additional_information": [
+        "Immune to many conditions like charmed and paralyzed.",
+        "Can use its net cannon four times per day.",
+        "Resilient against form-altering spells.",
+        "Functions efficiently without basic needs.",
+        "Features a mechanism that aids in battlefield control."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical guardian with net cannon",
+        "sentry robot that ensnares enemies",
+        "durable construct with halberd and net",
+        "watchman that requires no food or air",
+        "Clockwork sentry that dominates the battlefield"
+    ]
+}

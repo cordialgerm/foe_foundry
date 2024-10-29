@@ -1,6 +1,9 @@
 <MonsterName/>Kobold</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>kobold</Subtype>
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>5</HP>
 <summary>Kobolds are small, reptilian humanoids known for their cowardly yet cunning nature. Standing about three feet tall, they have scaly skin, often reddish or brown in color, and large, beady eyes. Kobolds are often found living in tribes, dwelling in tunnels, caves, or ruins. Though weak individually, they are dangerous in large numbers, relying on traps, ambushes, and overwhelming their foes with sheer numbers. Kobolds are resourceful, using whatever tools or weapons they can find, and are fiercely loyal to their tribe and dragon-like ancestors, whom they worship as gods.</summary>
 
 <summary>The Kobold is a small humanoid creature known for its cunning and dexterity. With an Armor Class of 12, it can withstand moderate attacks but is quite fragile with a low Hit Points total of 7, which provides it with limited resilience in battle. Its Challenge Rating of 1/8 indicates that it is a less powerful creature, suitable for low-level encounters. The Kobold thrives in packs, utilizing its Pack Tactics ability to gain advantages during combat alongside its companions. However, it suffers from Sunlight Sensitivity, which imposes disadvantages while exposed to sunlight. Overall, the Kobold serves as a skirmisher, making use of its agility and teamwork to overcome stronger foes.</summary>
@@ -39,6 +42,7 @@ Additionally, the Kobold has a useful bonus action called Scurry. This ability p
 
 Source: 5e_srd
 
+<statblock>
 ## Kobold
 
 *Small humanoid (kobold), lawful evil*
@@ -67,7 +71,8 @@ Source: 5e_srd
 
 ***Dagger***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 4 (1d4+2) piercing damage.
 
-***Sling***. *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one target. *Hit:* 4 (1d4+2) bludgeoning damage.
+***Sling***. *Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one target. *Hit:* 4 (1d4+2) bludgeoning damage.</statblock>
+
 
 
 
@@ -75,6 +80,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold
 
 *Small* *Humanoid*
@@ -104,6 +110,7 @@ Source: 5e_artisinal_monsters
 - **Sling:** Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -112,6 +119,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold
 
 *Small humanoid*
@@ -145,5 +153,6 @@ Source: 5e_artisinal_monsters
 
 - **Scurry.** The kobold moves up to 15 feet without provoking opportunity attacks. If the kobold is aware of traps in the area, the kobold can choose if this movement triggers any of them.
 
+</statblock>
 
 

@@ -1,6 +1,9 @@
 <MonsterName/>Mimic</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<Subtype/>shapechanger</Subtype>
+<CR/>2</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>58</HP>
 <summary>A Mimic is a shape-shifting creature that can transform into inanimate objects to ambush unsuspecting prey. Most commonly, Mimics take the form of chests, doors, or other pieces of furniture, waiting for someone to come close before revealing their true form. When a Mimic attacks, it uses adhesive pseudopods to trap its victims, pulling them in with its powerful, toothy maw. Mimics are highly adaptable and can alter their appearance to fit any environment. They are intelligent, capable of understanding language, and can be quite cunning in their ambush tactics.</summary>
 
 <summary>The Mimic is a fascinating Medium monstrosity renowned for its ability to disguise itself as an inanimate object, luring in unsuspecting victims with its deceptive appearance. Often found in dungeons or treasure hoards, the Mimic serves as a trap for adventurers, using its sticky appendages to ensnare and consume those who are too curious. With a Challenge Rating of 2, it poses a fair threat to lower-level adventurers. Its robust physical attributes, especially its Strength of 18, make it a formidable opponent in close combat, while its stealth skills and unique abilities provide it with tactical advantages. However, its low Intelligence and Charisma mean it is not particularly formidable in social or strategic planning. Despite its durability and combat effectiveness, its reliance on ambush tactics makes it vulnerable to detection and area attacks.</summary>
@@ -39,6 +42,7 @@ One of its notable reactions is "Prey Shield," which allows the Mimic to strateg
 
 Source: 5e_srd
 
+<statblock>
 ## Mimic
 
 *Medium monstrosity (shapechanger), neutral*
@@ -77,7 +81,8 @@ Source: 5e_srd
 
 ***Pseudopod***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait.
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) piercing damage plus 4 (1d8) acid damage.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8+3) piercing damage plus 4 (1d8) acid damage.</statblock>
+
 
 
 
@@ -85,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mimic
 
 *Medium* *Monstrosity*
@@ -124,6 +130,7 @@ Source: 5e_artisinal_monsters
 - **Shapeshift:** The mimic changes its form to resemble an inanimate object of its approximate size or changes into its true form, which is an amorphous blob. Objects it is carrying or stuck to are not transformed. While shapeshifted, its statistics are unchanged. It reverts to its true form if it dies.
 
 
+</statblock>
 
 
 
@@ -132,6 +139,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mimic
 
 *Medium monstrosity (shapechanger)*
@@ -172,5 +180,6 @@ Source: 5e_artisinal_monsters
 
 - **Prey Shield.** When a creature the mimic can see hits it with an attack while it is grappling a creature, the mimic can roll the grappled creature in front of the blow, forcing the grappled creature to take the damage instead.
 
+</statblock>
 
 

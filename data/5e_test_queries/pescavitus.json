@@ -1,0 +1,25 @@
+{
+    "name": "Pescavitus",
+    "queries": [
+        {
+            "query": "small celestial creature that swims well and curses enemies",
+            "variant": "small celestial monster that curses foes and has good swimming abilities"
+        },
+        {
+            "query": "a creature that cannot move on land and has magical weapon attacks",
+            "variant": "a monster that can\u2019t walk and performs magical attacks with weapons"
+        },
+        {
+            "query": "neutral good aquatic creature with resistance to radiant damage",
+            "variant": "aquatic creature with good alignment and resistance against radiant damage"
+        },
+        {
+            "query": "celestial being that breathes underwater and restores hit points",
+            "variant": "celestial creature that can breathe underwater and heal others"
+        },
+        {
+            "query": "Pescavitus combat abilities and weaknesses in non-aquatic environments",
+            "variant": "combat tactics of Pescavitus and its vulnerabilities outside of water"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Thunderbird",
+    "queries": [
+        {
+            "query": "large bird creature with lightning abilities that can fly",
+            "variant": "large flying creature that has lightning powers"
+        },
+        {
+            "query": "aerial combatant with keen sight that lives in storms",
+            "variant": "combat bird with strong vision that thrives in stormy conditions"
+        },
+        {
+            "query": "monster that attacks with beak and talons and can unleash lightning",
+            "variant": "creature that strikes with its beak and claws and can shoot lightning"
+        },
+        {
+            "query": "flying monstrosity known for storm sight and multiattack",
+            "variant": "winged monster recognized for its storm vision and multiple attacks"
+        },
+        {
+            "query": "powerful creature with high strength that can deal slashing damage",
+            "variant": "strong creature capable of inflicting slashing damage"
+        }
+    ]
+}

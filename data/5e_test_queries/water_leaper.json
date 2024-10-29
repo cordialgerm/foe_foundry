@@ -1,0 +1,25 @@
+{
+    "name": "Water Leaper",
+    "queries": [
+        {
+            "query": "large aquatic monster with stealth abilities",
+            "variant": "large water creature with stealth powers"
+        },
+        {
+            "query": "monster that grapples and has a poisonous stinger",
+            "variant": "creature that grapples its prey and has a poisonous stinger attack"
+        },
+        {
+            "query": "ambush tactics creature that swims and flies short distances",
+            "variant": "creature that uses ambush tactics and can both swim and fly slightly"
+        },
+        {
+            "query": "water-dwelling monster with high hit points and decent armor class",
+            "variant": "water monster with good hit points and solid armor class"
+        },
+        {
+            "query": "stealthy grappling monster that inhabits water",
+            "variant": "stealthy creature that can grapple and lives in aquatic environments"
+        }
+    ]
+}

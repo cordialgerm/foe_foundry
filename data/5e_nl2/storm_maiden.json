@@ -1,0 +1,53 @@
+{
+    "name": "Storm Maiden",
+    "creature_type": "Elemental",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "swim 30 ft., fly 30 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "storm",
+        "lightning"
+    ],
+    "adjectives": [
+        "chaotic",
+        "versatile",
+        "powerful"
+    ],
+    "description": "The Storm Maiden embodies chaotic storms and lightning, possesses a powerful presence, and boasts exceptional physical attributes.",
+    "memorable": "Intriguingly combines spellcasting with powerful melee attacks and the ability to incapacitate foes.",
+    "goals": "Mastery of storms and disruption of foes through lightning-based attacks.",
+    "relations": "Might be encountered alongside other elemental beings or servants of chaotic forces.",
+    "environment": "Typically found in stormy or tempestuous areas, embodying the essence of chaos and weather.",
+    "strengths": "Immunity to poison and resistance to lightning and thunder damage, along with strong physical and spellcasting abilities.",
+    "weaknesses": "Relatively low Constitution and Wisdom could be exploited with the right strategy.",
+    "attacks": "Can deliver deadly melee strikes with thunder damage and has a powerful ranged lightning attack.",
+    "most_powerful_ability": "Throw Lightning can incapacitate foes and shift battle dynamics significantly.",
+    "equipment": null,
+    "senses": "Possesses darkvision and a passively perceptive nature.",
+    "skills": "Has notable skill proficiencies related to its elemental nature and spellcasting.",
+    "additional_information": [
+        "Innate spellcasting ability relies on Charisma.",
+        "Can manipulate water levels and create hazardous terrain.",
+        "Control over thunderous energy increases melee attack threat.",
+        "Can teleport and create waves of thunderous force.",
+        "Effective in multiattacks to overwhelm opponents."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Can cast spells like create water, ray of frost, and thunderwave without material components.",
+    "test_queries": [
+        "chaotic lightning elemental with spellcasting",
+        "stormy being with powerful thunder attacks",
+        "elemental creature that can fly and swim",
+        "storm maiden spellcaster that incapsulates enemies",
+        "versatile elemental with lightning and thunder powers"
+    ]
+}

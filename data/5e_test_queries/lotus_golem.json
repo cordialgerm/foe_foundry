@@ -1,0 +1,25 @@
+{
+    "name": "Lotus Golem",
+    "queries": [
+        {
+            "query": "large magical construct that absorbs spell energy and walks on water",
+            "variant": "big enchanted golem that soaks up spell energy and can walk on water"
+        },
+        {
+            "query": "golem with damage immunities and high Dexterity score that casts spells",
+            "variant": "construct immune to damage with a good Dexterity score that can use spells"
+        },
+        {
+            "query": "Durable golem that is unaligned and immune to charm and fright effects",
+            "variant": "Tough golem that's neutral and unaffected by charming or terrifying spells"
+        },
+        {
+            "query": "Lotus Golem tactics in combat with spellcasting and melee attacks",
+            "variant": "Tactics for the Lotus Golem in battle, focusing on spell use and melee strikes"
+        },
+        {
+            "query": "construct that has high Perception and can absorb spells in combat",
+            "variant": "golem with excellent perception and the ability to take in magic spells during fight"
+        }
+    ]
+}

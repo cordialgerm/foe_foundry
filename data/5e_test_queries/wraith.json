@@ -1,0 +1,25 @@
+{
+    "name": "Wraith",
+    "queries": [
+        {
+            "query": "shadowy undead creature that drains life and is weak in sunlight",
+            "variant": "shadowy un-dead creature drains life, weak in sunlight"
+        },
+        {
+            "query": "incorporeal creature that floats silently in dark places",
+            "variant": "incorporeal floating creature found in dark locations"
+        },
+        {
+            "query": "undead guardian in ancient crypts that creates specters",
+            "variant": "guardian undead in ancient tombs that makes specters"
+        },
+        {
+            "query": "malevolent spirit with glowing eyes that frightens nearby creatures",
+            "variant": "evil spirit with glowing eyes that scares nearby foes"
+        },
+        {
+            "query": " undead that can pass through walls and attacks with necrotic damage",
+            "variant": "undead spirit that goes through walls and hits with necrotic damage"
+        }
+    ]
+}

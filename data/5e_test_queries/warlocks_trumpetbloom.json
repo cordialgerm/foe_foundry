@@ -1,0 +1,25 @@
+{
+    "name": "Warlock's Trumpetbloom",
+    "queries": [
+        {
+            "query": "large evil plant creature with poisonous stinger and grappling tendrils",
+            "variant": "large sinister plant monster that has a poisonous stinger and can grapple"
+        },
+        {
+            "query": "plant monster that inflicts fear and has high hit points",
+            "variant": "fear-inducing plant creature with impressive hit points"
+        },
+        {
+            "query": "slow-moving plant creature found in dark environments that can paralyze",
+            "variant": "plant monster that moves slowly and can cause paralysis, often in dark areas"
+        },
+        {
+            "query": "creature resistant to poison and has blindsight",
+            "variant": "monster with immunity to poison and the ability to see in the dark"
+        },
+        {
+            "query": "combat plant that uses tendrils to capture foes and resist magic",
+            "variant": "plant monster that uses its tendrils to trap enemies and is resistant to spells"
+        }
+    ]
+}

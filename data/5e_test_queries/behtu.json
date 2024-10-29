@@ -1,0 +1,25 @@
+{
+    "name": "Behtu",
+    "queries": [
+        {
+            "query": "small humanoid with fire breath and resistance to cold damage",
+            "variant": "small human-like creature that breathes fire and is resistant to cold"
+        },
+        {
+            "query": "chaotic evil creature that uses infusions and has low charisma",
+            "variant": "evil chaotic being that utilizes infusions and has poor charisma"
+        },
+        {
+            "query": "humanoid with high strength and dexterity who attacks with a spear",
+            "variant": "humanoid creature strong in strength and dexterity that uses a spear to attack"
+        },
+        {
+            "query": "Behtu's area effect fire breath and melee attack damage",
+            "variant": "area of effect fire breath of the Behtu and damage from its melee attacks"
+        },
+        {
+            "query": "creature with darkvision that communicates in Common and Infernal",
+            "variant": "being that can see in the dark and speaks Common and Infernal languages"
+        }
+    ]
+}

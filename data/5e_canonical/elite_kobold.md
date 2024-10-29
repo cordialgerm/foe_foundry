@@ -1,6 +1,8 @@
 <MonsterName/>Elite Kobold</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>26</HP>
 <summary>The Elite Kobold is a small humanoid creature that embodies a cunning, resourceful, and tactical mindset typical of its kind. Operating under a lawful neutral alignment, the Elite Kobold often plays a supportive role in battles, using its skills and special abilities to aid allies and create strategic advantages. With a moderate Armor Class of 14, it is not particularly resilient but compensates with good mobility, stealth, and teamwork skills. However, it has sunlight sensitivity, which presents a significant weakness, as it hampers its abilities in bright environments. Overall, the Elite Kobold offers a mix of combat prowess and unique tactical benefits, making it a tricky adversary when encountered in groups.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Another special action is Small but Fierce, which allows two Elite Kobolds stand
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elite Kobold
 
 *Small* *Humanoid* *lawful neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Small but Fierce:** Two elite kobolds within 5 feet of each other can combine their actions to slam their mining picks into the ground and split the earth in a 20-foot line that is 5 feet wide, extending from one of the pair. Each creature in that line must make a DC 13 Dexterity saving throw. On a failure, a creature takes 7 (2d6) bludgeoning damage and is knocked prone. On a success, a creature takes half the damage and isn't knocked prone.
 
 
+</statblock>
 
 

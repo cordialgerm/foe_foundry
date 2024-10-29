@@ -1,0 +1,52 @@
+{
+    "name": "Chieftain",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Evil",
+    "size": "Small",
+    "hp": 110,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Leader",
+    "tags": [
+        "humanoid",
+        "lawful evil",
+        "chieftain"
+    ],
+    "adjectives": [
+        "small",
+        "formidable",
+        "commanding"
+    ],
+    "description": "The Chieftain is a small humanoid creature with a commanding presence, known for wielding a spear and a shield. It often displays exceptional physical strength, allowing it to deal significant damage in combat.",
+    "memorable": "The Chieftain utilizes the 'Inspiring Shriek' ability to frighten enemies, combining combat prowess with battlefield control.",
+    "goals": "To lead and command allies while instilling fear among enemies.",
+    "relations": "Often associated with dragons and kobolds, commanding them in battle.",
+    "environment": "Typically found in areas where kobolds dwell, such as caves or mountainous regions.",
+    "strengths": "Possesses high Strength for melee attacks and can inflict fear and command allies effectively.",
+    "weaknesses": "Susceptible to sunlight, suffering disadvantages during the day.",
+    "attacks": "Makes multiple attacks with a spear or shortbow, capable of dealing both piercing and poison damage.",
+    "most_powerful_ability": "Inspiring Shriek can frighten nearby enemies, significantly affecting battle dynamics.",
+    "equipment": "Wields a spear and a shield.",
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": "Proficient in Intimidation, capable of instilling fear in adversaries.",
+    "additional_information": [
+        "Has the Brute feature, increasing melee weapon damage.",
+        "Pack Tactics grants advantage on attack rolls when allies are near.",
+        "Can\u2019t be charmed or frightened by effects within 30 feet.",
+        "Springspike Shield allows counterattacks against melee attackers.",
+        "Highly resilient with good Dexterity and Constitution scores."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small humanoid that leads kobolds",
+        "monster with inspiring shriek ability",
+        "fear-inducing chieftain commanding dragons",
+        "humanoid with brute strength in battle",
+        "chieftain using poison arrows in combat"
+    ]
+}

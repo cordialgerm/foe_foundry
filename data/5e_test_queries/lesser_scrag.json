@@ -1,0 +1,25 @@
+{
+    "name": "Lesser Scrag",
+    "queries": [
+        {
+            "query": "aquatic monster that regenerates in water and has a bite attack",
+            "variant": "water monster with regeneration in water and a biting ability"
+        },
+        {
+            "query": "medium-sized chaotic evil creature that moves well in water",
+            "variant": "monstrous medium creature with chaotic evil alignment that swims effectively"
+        },
+        {
+            "query": "monster with low mobility on land but high speed in water",
+            "variant": "creature that is slow on land but has great swim speed"
+        },
+        {
+            "query": "Lesser Scrag vulnerabilities to acid and fire damage",
+            "variant": "weakness of the Lesser Scrag to acid and fire attacks"
+        },
+        {
+            "query": "Regeneration ability aquatic monster with weak land speed",
+            "variant": "aquatic creature with regeneration trait and poor walking speed"
+        }
+    ]
+}

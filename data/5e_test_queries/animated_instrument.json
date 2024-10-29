@@ -1,0 +1,25 @@
+{
+    "name": "Animated Instrument",
+    "queries": [
+        {
+            "query": "tiny construct that plays music to support allies in battle",
+            "variant": "small construct that uses music to help allies during combat"
+        },
+        {
+            "query": "creature with magical abilities that is vulnerable to antimagic fields",
+            "variant": "monster with spells that can be affected by antimagic zones"
+        },
+        {
+            "query": "musical instrument that influences enemy behavior through sound",
+            "variant": "instrument that affects foes using music and sound spells"
+        },
+        {
+            "query": "animated creature immune to poison and psychic damage",
+            "variant": "living creature that resists poison and psychic attacks"
+        },
+        {
+            "query": "support character that becomes incapacitated in antimagic",
+            "variant": "helper character that is disabled in areas of antimagic"
+        }
+    ]
+}

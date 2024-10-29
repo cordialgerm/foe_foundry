@@ -1,6 +1,8 @@
 <MonsterName/>Shambling Mound</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>A Shambling Mound is a mass of rotting vegetation animated by natural or magical forces. These plant-based creatures are slow-moving but incredibly strong, using their tendrils to ensnare and crush their prey. Found in swamps, forests, and other overgrown areas, Shambling Mounds consume both animals and plants, absorbing their nutrients to sustain their hulking form. They are resilient, capable of regenerating from wounds, and their plant-like nature allows them to blend into their environment, making them dangerous ambush predators. In battle, they use their bulk and strength to overwhelm foes, slowly crushing them within their tangled bodies.</summary>
 
 <summary>The Shambling Mound is a large plant creature that serves as a formidable opponent in combat. It possesses a robust physical presence, making it a challenge at a challenge rating of 6, which translates to a worth of 2,300 experience points for defeating it. With an armor class of 15 and an impressive 123 hit points, this creature can endure significant damage while being able to deal harm in return. The Shambling Mound excels in grappling opponents and can absorb lightning damage, turning what would be harmful to it into healing. However, it suffers from weaknesses to certain types of damage, particularly that which is not resisted by its immunities. Its low Dexterity hampers its agility, making it predictable in movement.</summary>
@@ -43,6 +45,7 @@ Overall, the Shambling Mound is a fierce opponent that thrives in close quarters
 
 Source: 5e_srd
 
+<statblock>
 ## Shambling Mound
 
 *Large plant, unaligned*
@@ -79,7 +82,8 @@ Source: 5e_srd
 
 ***Slam***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage.
 
-***Engulf***. The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8+4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.
+***Engulf***. The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8+4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.</statblock>
+
 
 
 
@@ -87,6 +91,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shambling Mound
 
 *Large* *Plant*
@@ -119,6 +124,7 @@ Source: 5e_artisinal_monsters
 - **Engulf:** The shambling mound absorbs a Medium or smaller grappled creature into its body. The engulfed creature is blinded  restrained can't breathe  and moves with the shambling mound. At the start of each of the shambling mounds turns  the target takes 11 (2d6 + 4) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -127,6 +133,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shambling Mound
 
 *Large plant*
@@ -161,5 +168,6 @@ Source: 5e_artisinal_monsters
 
 - **Engulf.** The shambling mound engulfs a Medium or smaller creature grappled by it. In addition to being grappled, the engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 CON save at the start of each of the mound’s turns or take 4 (1d8) bludgeoning damage and 3 (1d6) poison damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.
 
+</statblock>
 
 

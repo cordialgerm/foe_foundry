@@ -1,0 +1,50 @@
+{
+    "name": "Trollking Grunt",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walking speed of 30 feet",
+    "role": "Bruiser",
+    "tags": [
+        "troll",
+        "humanoid",
+        "regeneration"
+    ],
+    "adjectives": [
+        "strong",
+        "resilient",
+        "agile"
+    ],
+    "description": "The Trollking Grunt is a robust humanoid with thick hide and notable strength. It boasts a large frame and tough skin, making it a formidable opponent.",
+    "memorable": "Its exceptional regenerative ability allows it to regain hit points each turn, making it difficult to defeat unless fire or acid is used.",
+    "goals": "To engage in combat and defend its territory.",
+    "relations": "Often found working alongside other trolls or trollkin.",
+    "environment": "Typically found in rugged, wilderness areas or near troll lairs.",
+    "strengths": "High strength allows for powerful melee attacks, and strong regenerative abilities can sustain it in battle.",
+    "weaknesses": "Vulnerable to acid and fire damage, which inhibit its regeneration.",
+    "attacks": "Capable of multiattacking with a spear or longbow, dealing significant piercing damage.",
+    "most_powerful_ability": "Regeneration allows it to heal during combat unless it takes fire or acid damage.",
+    "equipment": "Hide armor and simple weapons (spear and longbow)",
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Has a +4 modifier in strength",
+        "Low intelligence affects its capabilities in intelligence-based tasks",
+        "Can attack at range or in melee with different weapons",
+        "Thick skin contributes to its decent armor class",
+        "Moderate challenge rating suitable for encounters"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tough monster with regenerative abilities",
+        "monster that dislikes fire and acid",
+        "strong troll-like humanoid in the wild",
+        "humanoid with thick skin and strong regeneration",
+        "multiattack creature armed with spear and longbow"
+    ]
+}

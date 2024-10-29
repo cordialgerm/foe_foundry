@@ -1,0 +1,53 @@
+{
+    "name": "Red Hag",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "hag",
+        "fey",
+        "spellcaster",
+        "necrotic"
+    ],
+    "adjectives": [
+        "malevolent",
+        "cunning",
+        "formidable"
+    ],
+    "description": "The Red Hag is a Medium-sized fey creature with a malevolent appearance, often embodying traits of mischief and cunning. Its powerful physical attacks are supplemented by dark magic.",
+    "memorable": "Its Blood Sense ability allows it to track living creatures, and it can amplify its spells after draining blood from enemies.",
+    "goals": "To cause suffering and mischief while overpowering foes with its cunning and magic.",
+    "relations": "Similar creatures in fey lore and other hags may be encountered alongside the Red Hag.",
+    "environment": "The Red Hag can be found in diverse environments, thriving in areas where it can exert control and spread chaos.",
+    "strengths": "Notable strengths include high spellcasting ability, magic resistance, and a variety of special abilities.",
+    "weaknesses": "It is vulnerable to ranged attacks and magical effects that do not require Constitution saving throws.",
+    "attacks": "Claw attack dealing slashing and necrotic damage, potent Blood Bolt ranged spell, and devastating Siphon Blood ability.",
+    "most_powerful_ability": "Siphon Blood, which drains life from nearby creatures and empowers its next spell.",
+    "equipment": null,
+    "senses": "It has a passive perception of 18, allowing it to notice details and threats effectively.",
+    "skills": "Noteworthy skills include high proficiency in Arcana, Deception, Insight, and Perception.",
+    "additional_information": [
+        "Amphibious, able to breathe both air and water",
+        "Blood Sense can locate creatures within 60 feet",
+        "Helps establish communication with beasts",
+        "Advantage on saving throws against spells due to Magic Resistance",
+        "Combat tactics enhanced by spellcasting abilities"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "The Red Hag can cast spells using Wisdom, including healing, control water, and nature manipulations.",
+    "test_queries": [
+        "cunning fey creature with dark magic",
+        "hag that drains blood and casts spells",
+        "malevolent spellcaster that uses necrotic damage",
+        "creature that communicates with beasts and senses blood",
+        "Red Hag abilities in combat"
+    ]
+}

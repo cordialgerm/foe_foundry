@@ -1,0 +1,55 @@
+{
+    "name": "Iron Guardian",
+    "creature_type": "Construct",
+    "alignment": null,
+    "size": "Large",
+    "hp": 210,
+    "ac": 20,
+    "srd": false,
+    "cr": "14",
+    "movement": "30 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "guardian",
+        "fire immunity",
+        "poison breath"
+    ],
+    "adjectives": [
+        "durable",
+        "offensive",
+        "powerful",
+        "immune to fire"
+    ],
+    "description": "The Iron Guardian is a large, formidable construct, made for combat and known for its high durability and slashing sword attacks.",
+    "memorable": "It has the ability to absorb fire damage, regaining hit points from such attacks.",
+    "goals": "Act as a guardian or protector, following the commands of its creator in combat scenarios.",
+    "relations": "Could be commanded by a wizard or warlock, often found in the service of powerful entities.",
+    "environment": "Typically found in dungeons or locations where constructs are created and maintained.",
+    "strengths": "Extremely durable with high hit points and damage absorption from fire, plus strong magic resistance.",
+    "weaknesses": "Low intelligence and charisma limit its function to following commands; vulnerable to specific non-magical attacks.",
+    "attacks": "Can perform two powerful slashing attacks with its sword and unleash a cone of poisonous gas on enemies.",
+    "most_powerful_ability": "Fire Absorption allows it to heal from fire damage instead of taking harm.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immune to polymorph and similar changing effects.",
+        "Can redirect missed ranged attacks back at foes.",
+        "Requires no air, food, or sleep, making it tireless in its duty.",
+        "Possesses a high Strength score, enhancing its melee attacks.",
+        "Resistant to many magical effects alongside damage immunity to poison and fire."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large construct that absorbs fire damage",
+        "powerful guardian with poison breath attack",
+        "iron guardian with slashing sword and magic resistance",
+        "construct immune to fire and mental effects",
+        "durable armored guardian with powerful melee attacks"
+    ]
+}

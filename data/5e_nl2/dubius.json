@@ -1,0 +1,52 @@
+{
+    "name": "Dubius",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 36,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 feet walking speed",
+    "role": "null",
+    "tags": [
+        "manipulator",
+        "fear-inducer",
+        "fiend"
+    ],
+    "adjectives": [
+        "small",
+        "manipulative",
+        "sinister"
+    ],
+    "description": "Dubius is characterized by its small stature and features a villainous demeanor that thrives on fear and deception.",
+    "memorable": "Dubius excels at inducing fear and distrust, creating a tense atmosphere on the battlefield.",
+    "goals": "To manipulate and frighten foes, sapping their morale in combat.",
+    "relations": "Often serves more powerful fiends or dark entities, preying on the weak.",
+    "environment": "Typically found in dark, shadowy locales where it can blend in and manipulate others.",
+    "strengths": "Ability to instill fear and distrust, causing psychological disruption among enemies.",
+    "weaknesses": "Vulnerable to radiant damage and lacks exceptional physical combat abilities.",
+    "attacks": "Doubt inflicts psychic damage by forcing opponents to confront their fears, while Loathing causes them to attack their allies.",
+    "most_powerful_ability": "Memory of Shame frightens enemies if they begin their turn within range, creating a strong psychological effect.",
+    "equipment": null,
+    "senses": "Has darkvision allowing it to navigate in dim light, but possesses low passive perception.",
+    "skills": "Despite its manipulative nature, its perception skill is poor with a -1 modifier.",
+    "additional_information": [
+        "Immune to poison and psychic damage",
+        "Resistant to cold, fire, and lightning damage",
+        "Can communicate telepathically up to 120 feet",
+        "Affected by its own Memory of Shame when seeing its reflection",
+        "Specializes in creating tension and unease in combat"
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small fiend that induces fear",
+        "manipulative creature with psychic attacks",
+        "fiend specialized in distrust and fear",
+        "Dubius capabilities in combat",
+        "creature that causes loathing among allies"
+    ]
+}

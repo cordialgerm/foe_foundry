@@ -1,0 +1,51 @@
+{
+    "name": "Putrid Haunt",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 44,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "slow movement at 20 feet",
+    "role": "Ambusher",
+    "tags": [
+        "undead",
+        "swamp",
+        "ambush"
+    ],
+    "adjectives": [
+        "putrid",
+        "malicious",
+        "decayed",
+        "swamp-dwelling"
+    ],
+    "description": "The Putrid Haunt embodies decay with a decayed appearance, blending into swampy terrain, and appears as a motionless pile of muck and moss when using its False Appearance ability.",
+    "memorable": "Its ability to ambush by blending in with the swamp and expelling vermin makes it a terrifying encounter.",
+    "goals": "To inflict harm and spread decay in its environment.",
+    "relations": "May be found alongside other swamp-dwelling undead or vermin.",
+    "environment": "Typically found in swamps or marshy areas.",
+    "strengths": "High Strength score provides powerful melee attacks; immunity to poison is a significant asset.",
+    "weaknesses": "Low Dexterity makes it vulnerable to attacks and less effective at dodging.",
+    "attacks": "Uses a Slam melee attack that deals bludgeoning and poison damage.",
+    "most_powerful_ability": "Expel Vermin can deal area-of-effect damage and poison multiple targets.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immune to conditions like charm, exhaustion, and poison.",
+        "Can navigate swamp terrain without being hindered.",
+        "Does not require air, food, drink, or sleep."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that uses swamp to ambush",
+        "slow-moving monster that embodies decay",
+        "creature that can blend into swamp muck",
+        "malicious haunt that expels poisonous vermin",
+        "putrid undead creature lurking in the marshes"
+    ]
+}

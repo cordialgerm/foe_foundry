@@ -1,0 +1,54 @@
+{
+    "name": "Elophar",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 126,
+    "ac": 8,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "chaotic",
+        "spellcaster",
+        "brute"
+    ],
+    "adjectives": [
+        "large",
+        "undead",
+        "chaotic",
+        "unpredictable"
+    ],
+    "description": "The Elophar is a large undead creature with a distended stomach that emits corrosive ectoplasm when injured. It exhibits a chaotic and terrifying presence, alternating between various personalities during combat.",
+    "memorable": "Its ability to randomly switch personalities makes it unpredictable and challenging to strategize against.",
+    "goals": "To cause chaos and destruction in combat while using its spellcasting for tactical advantages.",
+    "relations": "Can be related to other chaotic undead or spirits and may fight alongside other minions of evil.",
+    "environment": "Often found in dark, chaotic areas or places of death and decay.",
+    "strengths": "High hit points and ability to resist poison damage, along with spellcasting capabilities.",
+    "weaknesses": "Low Dexterity makes it vulnerable to ranged attacks, and its Wisdom score leaves it susceptible to mind-affecting spells.",
+    "attacks": "Melee attack with slam causes significant bludgeoning damage, while abilities like Ectoplasmic Spray deal area damage.",
+    "most_powerful_ability": "Ectoplasmic Spray creates a damaging area around itself when it takes any damage.",
+    "equipment": null,
+    "senses": "The Elophar has darkvision with a range of 60 feet, allowing it to see in dim and dark environments.",
+    "skills": null,
+    "additional_information": [
+        "High Constitution score enhances resilience.",
+        "Ability to cast spells at will and multiple times a day.",
+        "Undergoes unpredictable personality changes each turn.",
+        "Immunities to poison damage and being poisoned.",
+        "Low passive perception indicating poor observation skills."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": "Can cast spells like acid splash, chill touch, and poison spray at will; also has grease and thunderwave available three times a day, and can enlarge/reduce once per day.",
+    "test_queries": [
+        "undead monster that sprays acid",
+        "chaotic evil large undead",
+        "unpredictable spirit with corrosive abilities",
+        "spellcasting monster with personality changes",
+        "creature immune to poison attacks"
+    ]
+}

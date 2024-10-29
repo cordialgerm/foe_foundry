@@ -1,0 +1,54 @@
+{
+    "name": "Chemosit",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 119,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "fiend",
+        "charm",
+        "multiattack"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "mysterious"
+    ],
+    "description": "The Chemosit is a medium fiend with a crutch and an open mouth that emits a red light. It is characterized by its neutral evil alignment and has a single leg beneath its unusual form.",
+    "memorable": "The Chemosit's enchanting Inviting Song can charm opponents, leading them toward it while avoiding dangers.",
+    "goals": "To manipulate and charm foes using its song and prowess in battle.",
+    "relations": "It might serve dark powers or align with other fiends.",
+    "environment": "Can be found in dark, sinister places often associated with evil or fiendish activity.",
+    "strengths": "High hit points, good saving throws, and resistance to multiple damage types with a versatile attack set.",
+    "weaknesses": "Vulnerable to magical piercing, bludgeoning, and slashing damage from silvered weapons.",
+    "attacks": "Employs a Beak attack dealing piercing and fire damage alongside two Crutch attacks that may infect with disease.",
+    "most_powerful_ability": "Its Inviting Song can charm multiple creatures, manipulating their movement strategically in combat.",
+    "equipment": "a crutch that adapts to fit its forms",
+    "senses": "It possesses darkvision extending up to 120 feet and a passive Perception of 15, allowing it to be quite aware of its surroundings.",
+    "skills": "It has a commendable skill in perception, assisting it in scenarios where awareness is key.",
+    "additional_information": [
+        "Can change shape into Small or Medium humanoids.",
+        "One leg design makes its movement unusual.",
+        "Retains statistics regardless of its shape.",
+        "Darkvision allows it to see in total darkness.",
+        "Caracter\u00edsticas de resistencia a varios tipos de da\u00f1o."
+    ],
+    "damage_types": [
+        "fire",
+        "cold",
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend with a captivating song ability",
+        "medium monster that charms enemies",
+        "creature that emits red light from mouth",
+        "versatile fiend that changes shape",
+        "fiendish monster with a dangerous song"
+    ]
+}

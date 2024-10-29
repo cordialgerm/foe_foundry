@@ -1,0 +1,51 @@
+{
+    "name": "Snatch Bat",
+    "creature_type": "Aberration",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 20 ft., fly 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "flying",
+        "cunning",
+        "ambush predator"
+    ],
+    "adjectives": [
+        "swift",
+        "agile",
+        "chaotic"
+    ],
+    "description": "The Snatch Bat is a medium-sized aberration known for its chaotic neutral alignment, featuring a sleek body adapted for ambush and flight.",
+    "memorable": "It can pilfer items from its prey with ease, using its agility to evade attacks.",
+    "goals": "To ambush and steal valuable items from unsuspecting creatures.",
+    "relations": "Individuals often encounter them near treasure and other creatures that might guard valuable loot.",
+    "environment": "Typically found in areas where treasure is present, such as caverns or ruins.",
+    "strengths": "Fast flying ability, capable of avoiding opportunity attacks, and possesses treasure detection skills.",
+    "weaknesses": "Lower mental attributes make it vulnerable to mind-affecting spells.",
+    "attacks": "Uses swift claw attacks for slashing damage, and a unique pilfering bite that can steal items instead of dealing damage.",
+    "most_powerful_ability": "Treasure Sense allows it to detect and locate valuable items by scent.",
+    "equipment": null,
+    "senses": "Blindsight out to 60 feet allows it to detect enemies even in darkness.",
+    "skills": "Average Perception allows it to notice subtle details in its environment.",
+    "additional_information": [
+        "Immunity to conditions like blinded and charmed increases survivability.",
+        "Ability to steal non-weapon items weighing no more than 10 pounds.",
+        "Requires regurgitating stolen items before stealing again."
+    ],
+    "damage_types": [
+        "force",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "flying ambush predator that steals items",
+        "chaotic creature with treasure detection ability",
+        "swift bat that can pilfer small objects",
+        "medium-sized aberration with blindsight",
+        "agile monster known for stealing hats"
+    ]
+}

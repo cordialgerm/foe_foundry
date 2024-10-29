@@ -1,0 +1,54 @@
+{
+    "name": "Shadow River Lord",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 135,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "swim 60 ft., walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "shadow",
+        "undead",
+        "necrotic",
+        "cold"
+    ],
+    "adjectives": [
+        "formidable",
+        "shadowy",
+        "slender"
+    ],
+    "description": "The Shadow River Lord is a slender, shadowy figure that moves with an unnatural grace, capable of slipping through tight spaces effortlessly.",
+    "memorable": "It can blind its foes and unleash a devastating geyser of shadowy water.",
+    "goals": "To dominate foes with shadowy attacks and debilitate them with blindness.",
+    "relations": "It may control lesser undead or shadow creatures in its domain.",
+    "environment": "Typically found in haunted aquatic environments or dark, shadowy areas.",
+    "strengths": "High dexterity and multiple combat abilities make it effective at both melee and ranged attacks.",
+    "weaknesses": "Vulnerable to radiant and force damage, common weaknesses for undead.",
+    "attacks": "Uses the Greenfire Staff for melee strikes and the Shadowfrost Bolt for long-range attacks, causing a mix of bludgeoning, fire, necrotic, and cold damage.",
+    "most_powerful_ability": "Shadow Geyser creates an area effect that deals significant necrotic and cold damage, potentially blinding enemies.",
+    "senses": "It has darkvision allowing it to perceive its surroundings in total darkness effectively.",
+    "skills": "Immunity to poison damage, exceptional resilience against various conditions shows its durability in combat.",
+    "additional_information": [
+        "Amorphous form allows it to move through very narrow spaces without hindrance.",
+        "Resistance to cold, fire, and necrotic damage enhances its survivability in combat.",
+        "Can blind foes with successful coordinated attacks.",
+        "Immune to exhaustion and various status effects, maintaining combat effectiveness.",
+        "Highly agile, making it evasive in battle."
+    ],
+    "damage_types": [
+        "necrotic",
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadow creature that swims and blinds enemies",
+        "undead lord with shadowy water attacks",
+        "agile undead that can glide through narrow spaces",
+        "cold necrotic damage shadow creature",
+        "creature that uses geysers of shadowy water"
+    ]
+}

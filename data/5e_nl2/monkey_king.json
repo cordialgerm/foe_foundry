@@ -1,0 +1,52 @@
+{
+    "name": "Monkey King",
+    "creature_type": "Celestial",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 262,
+    "ac": 21,
+    "srd": false,
+    "cr": "21",
+    "movement": "60 feet flying and walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "celestial",
+        "agile",
+        "magical"
+    ],
+    "adjectives": [
+        "powerful",
+        "elusive",
+        "radiant"
+    ],
+    "description": "The Monkey King is a graceful celestial creature with exceptional agility, equipped with a golden staff and notable combat abilities. Its celestial nature grants it a magnificent presence, embodying both finesse and ferocity.",
+    "memorable": "The Monkey King utilizes legendary actions to enhance its threat level and can control other primates in combat, making it fearsome in a variety of circumstances.",
+    "goals": "The Monkey King typically seeks to dominate the battlefield and can charm or control primates to assist in its endeavors.",
+    "relations": "It may ally with other celestial beings or primates, influencing them through its Simian Affinity.",
+    "environment": "Often found in celestial realms or areas where conjuration is prevalent; may also roam forests or mystical locations.",
+    "strengths": "Immunity to necrotic, poison, and radiant damage, along with resistance to many effects through its abilities.",
+    "weaknesses": "Physical confrontations and charisma-based challenges may hinder its effectiveness.",
+    "attacks": "Employs a series of golden staff and tail attacks that strike quickly and effectively, with options to stun and knock down foes.",
+    "most_powerful_ability": "Golden Burst, which deals massive radiant damage to multiple enemies and can stun them if they fail a saving throw.",
+    "equipment": "Golden staff used for melee and ranged attacks.",
+    "senses": "Has truesight up to 120 feet and a high passive perception of 22, making it adept at noticing hidden threats.",
+    "skills": "Excels in acrobatics, stealth, and perception, showcasing its agility and ability to navigate combat and social encounters deftly.",
+    "additional_information": [
+        "Legendary Resistance allows for survival against detrimental effects.",
+        "Magic Resistance provides an advantage against spells and magical effects.",
+        "Can control and communicate effectively with lower intelligence primates.",
+        "Engages in both melee and ranged combat strategies.",
+        "Has options for mobility allowing quick repositioning in battle."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can cast spells through its Enlightened Ray, dealing radiant damage and potential stunning effects.",
+    "test_queries": [
+        "celestial creature with legendary actions",
+        "agile monkey warrior with radiant abilities",
+        "powerful being controlling primates",
+        "skirmisher with quick movement and strikes",
+        "mythical king with a golden staff"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Commoner Mob",
+    "queries": [
+        {
+            "query": "huge humanoid mob that disperses into smaller commoners when defeated",
+            "variant": "huge mob humanoid that breaks apart into smaller commoners upon defeat"
+        },
+        {
+            "query": "vulnerable creature to area effects that can attack with clubs and stones",
+            "variant": "creature that is susceptible to area damage and attacks using clubs and stones"
+        },
+        {
+            "query": "commoner collective with low armor class and hit points",
+            "variant": "mob of commoners with weak AC and hit points"
+        },
+        {
+            "query": "mob of commoners with average abilities that can overwhelm opponents",
+            "variant": "commoner mob with basic abilities that excels at overwhelming enemies"
+        },
+        {
+            "query": "large group of humanoids used to represent chaotic populace in battle",
+            "variant": "big humanoid group representing chaotic population during combat"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Shadow of Death",
+    "creature_type": "Celestial",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 250,
+    "ac": 18,
+    "srd": false,
+    "cr": "21",
+    "movement": "walk 50 ft.",
+    "role": null,
+    "tags": [
+        "celestial",
+        "necrotic",
+        "undead",
+        "manipulator"
+    ],
+    "adjectives": [
+        "formidable",
+        "malevolent",
+        "chaotic",
+        "influential"
+    ],
+    "description": "A large celestial creature embodying chaotic evil, the Shadow of Death has exceptional Dexterity and Charisma, with truesight capabilities up to 120 feet. It inflicts necrotic damage and possesses a haunting presence that can instill fear in its enemies.",
+    "memorable": "Its ability to impose visions of death and render creatures unable to be resurrected unless by a wish spell makes it particularly fearsome.",
+    "goals": "Its primary goal is to instill fear and eliminate foes, often attacking from darkness while manipulating its enemies.",
+    "relations": "May be related to other malevolent celestial entities or serve dark deities that thrive in chaos and death.",
+    "environment": "Typically found in dark or dimly lit areas where its powers can be maximized.",
+    "strengths": "Exceptional agility and magical resistance make it a difficult opponent to confront.",
+    "weaknesses": "Vulnerable to radiant damage, which can significantly harm it.",
+    "attacks": "Utilizes a multiattack with a shortsword that deals piercing and necrotic damage, while also employing fear tactics to paralyze its enemies.",
+    "most_powerful_ability": "Vision of Ending, which frightens and paralyzes non-undead creatures within 60 feet.",
+    "equipment": null,
+    "senses": "It has truesight up to 120 feet and a passive perception of 24, allowing it to easily detect hidden creatures.",
+    "skills": "Demonstrates remarkable skills in perception with a +14 modifier.",
+    "additional_information": [
+        "Immunity to cold, necrotic, and poison damage.",
+        "Magic resistance provides advantage against spells.",
+        "Deathly Shroud inflicts necrotic damage while diminishing light.",
+        "Explodes upon death causing additional necrotic damage.",
+        "Wounds inflicted can reduce target's hit point maximum."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that fears using visions of death",
+        "celestial creature that thrives in darkness",
+        "strong manipulative monster with necrotic attacks",
+        "powerful celestial being vulnerable to radiant damage",
+        "shadowy monster with deadly explosion upon death"
+    ]
+}

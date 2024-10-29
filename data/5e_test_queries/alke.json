@@ -1,0 +1,25 @@
+{
+    "name": "Alke",
+    "queries": [
+        {
+            "query": "large creature with back spikes that can climb",
+            "variant": "large critter with spikes on its back that climbs"
+        },
+        {
+            "query": "strong monstrosity with a beak attack and high speed",
+            "variant": "powerful monstrosity that has a beak strike and moves fast"
+        },
+        {
+            "query": "monster that pounces and has keen sight abilities",
+            "variant": "creature known for pouncing and possessing keen vision skills"
+        },
+        {
+            "query": "durable creature with low intelligence that inflicts piercing damage",
+            "variant": "sturdy critter that has low smarts and causes piercing harm"
+        },
+        {
+            "query": "Alke abilities and combat style including multiattack",
+            "variant": "Alke's combat tactics and abilities like multiattack"
+        }
+    ]
+}

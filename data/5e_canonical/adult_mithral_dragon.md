@@ -1,6 +1,8 @@
 <MonsterName/>Adult Mithral Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>18</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>253</HP>
 <summary>The Adult Mithral Dragon is a powerful and majestic creature known for its exceptional capabilities in combat and magic. Standing as a Huge Dragon, it possesses a neutral alignment, making it both a potential ally and a formidable adversary. With an Armor Class of 18 due to its natural armor and a substantial pool of Hit Points totaling 253, it is quite resilient in battle. Its Challenge Rating of 18 indicates that it is a significant threat, providing 20,000 XP upon defeat. The dragon's strengths lie in its high Dexterity, allowing for agile movements and excellent stealth, making it an effective opponent. However, it has a lower Strength score, which is not exceptionally significant for a dragon, indicating that it may rely more on cunning and magical abilities than sheer brute force.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Adult Mithral Dragon serves as a potent, multifaceted enemy with nu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Adult Mithral Dragon
 
 *Huge* *Dragon* *Neutral*
@@ -68,5 +71,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 - **Detect:** The dragon makes a Wisdom (Perception) check.
 - **Tail Attack:** The dragon makes a Tail attack.
 - **Wing Attack (Costs 2 Actions):** The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+</statblock>
 
 

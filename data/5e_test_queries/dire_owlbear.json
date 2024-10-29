@@ -1,0 +1,25 @@
+{
+    "name": "Dire Owlbear",
+    "queries": [
+        {
+            "query": "large monstrosity with keen senses that can burrow",
+            "variant": "big creature with sharp senses that can dig"
+        },
+        {
+            "query": "powerful melee attacker with advantage on weakened foes",
+            "variant": "strong melee beast that has an edge against injured enemies"
+        },
+        {
+            "query": "creature with high strength and dual attacks",
+            "variant": "monster that has great strength and multiple strikes"
+        },
+        {
+            "query": "wild beast immune to fear with good perception",
+            "variant": "ferocious animal that can't be frightened and has decent awareness"
+        },
+        {
+            "query": "Dire Owlbear's abilities and combat tactics",
+            "variant": "abilities and fight strategies of the Dire Owlbear"
+        }
+    ]
+}

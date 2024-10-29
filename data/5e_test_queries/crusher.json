@@ -1,0 +1,25 @@
+{
+    "name": "Crusher",
+    "queries": [
+        {
+            "query": "large construct that delivers crushing damage and has high armor class",
+            "variant": "construction monster that has high armor class and deals crushing damage"
+        },
+        {
+            "query": "slow-moving large creature immune to disease and paralysis",
+            "variant": "large slow-moving monster that is immune to disease and paralysis"
+        },
+        {
+            "query": "formidable construct with powerful melee attacks that has low dexterity",
+            "variant": "strong construct with low dexterity and powerful melee attacks"
+        },
+        {
+            "query": "beautifully crafted clockwork monster with high health and unique abilities",
+            "variant": "well-made clockwork creature with unique abilities and high health"
+        },
+        {
+            "query": "monster with the ability to knock opponents prone and a high strength score",
+            "variant": "creature that can knock enemies down and has a very high strength score"
+        }
+    ]
+}

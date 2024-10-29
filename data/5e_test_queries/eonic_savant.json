@@ -1,0 +1,25 @@
+{
+    "name": "Eonic Savant",
+    "queries": [
+        {
+            "query": "humanoid spellcaster that manipulates time in combat",
+            "variant": "spellcasting humanoid that can alter time during fights"
+        },
+        {
+            "query": "creature with high intelligence and magic resistance that lives among others",
+            "variant": "being with great magical knowledge and spell resistance that interacts with companions"
+        },
+        {
+            "query": "tactical spellcaster with melee abilities and a staff that deals force damage",
+            "variant": "strategy-focused spell user who can attack with a staff that inflicts force damage"
+        },
+        {
+            "query": "Medium humanoid known for its dual role as spellcaster and melee fighter",
+            "variant": "Medium-sized humanoid recognized for its combination of magic and hand-to-hand combat"
+        },
+        {
+            "query": "creature capable of concentrating on two spells and has a health pool of 115",
+            "variant": "being that can focus on two spells simultaneously and possesses 115 hit points"
+        }
+    ]
+}

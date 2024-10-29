@@ -1,0 +1,25 @@
+{
+    "name": "Dwarf, Pike Guard",
+    "queries": [
+        {
+            "query": "humanoid creature that uses a pike and wears chain mail",
+            "variant": "humanoid that wears chain mail and uses a pike"
+        },
+        {
+            "query": "Dwarf fighter that can see in the dark and resists poison",
+            "variant": "fighter Dwarf with darkvision and poison resistance"
+        },
+        {
+            "query": "lawful neutral Dwarf with strong Constitution and low Dexterity",
+            "variant": "strong Constitution and low Dexterity lawful neutral Dwarf"
+        },
+        {
+            "query": "medium humanoid that provides cover with their allies and attacks with a reach weapon",
+            "variant": "humanoid that attacks with a reach weapon and gives cover to allies"
+        },
+        {
+            "query": "Dwarf with pike attack that deals piercing damage and has an ability for tactical grouping",
+            "variant": "Dwarf with a pike that pierces and has a tactical grouping ability"
+        }
+    ]
+}

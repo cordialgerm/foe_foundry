@@ -1,0 +1,52 @@
+{
+    "name": "Heavy Cavalry",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 19,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "mounted",
+        "cavalry",
+        "warrior"
+    ],
+    "adjectives": [
+        "formidable",
+        "disciplined",
+        "relentless"
+    ],
+    "description": "The Heavy Cavalry is a robust medium humanoid wearing splint armor and a shield, embodying the disciplined nature of lawful warriors. It typically rides a giant lizard, which has customized armor to enhance its protection.",
+    "memorable": "Known for its tactical abilities while mounted, including the unique Cavalry Charge and Fire Breath attack.",
+    "goals": "To maintain order and protect territories through disciplined combat.",
+    "relations": "Often seen commanding lizard mounts, which provide tactical advantages in battle.",
+    "environment": "Battlegrounds or areas requiring structured military presence.",
+    "strengths": "Excellent defensive capabilities with high AC and the ability to attack both melee and ranged.",
+    "weaknesses": "Low Charisma may hinder social interactions and diplomacy.",
+    "attacks": "Attacks include a lance strike for piercing damage, a heavy crossbow for ranged attacks, and a trample attack while mounted.",
+    "most_powerful_ability": "Fire Breath, unleashing a cone of fire for area damage.",
+    "equipment": "splint armor and a shield, lance, and heavy crossbow",
+    "senses": "Passive perception of 12 indicates average awareness of hidden threats.",
+    "skills": "Proficient in athletics with a +4 bonus, showcasing physical strength and adeptness.",
+    "additional_information": [
+        "Possesses fire resistance",
+        "Locked Saddle ability prevents being dismounted",
+        "Cavalry Charge enhances combat mobility",
+        "Giant lizard mount cannot be charmed or frightened",
+        "Average intelligence but high constitution for durability"
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mounted warrior with fire breath",
+        "disciplined cavalry riding giant lizard",
+        "heavy armored humanoid with strong defense",
+        "cavalry that charges and tramples foes",
+        "fire-resistant warrior with lance and crossbow"
+    ]
+}

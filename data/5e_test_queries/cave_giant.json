@@ -1,0 +1,25 @@
+{
+    "name": "Cave Giant",
+    "queries": [
+        {
+            "query": "huge giant with sunlight vulnerability and strong melee attacks",
+            "variant": "giant that is huge, weak to sunlight, and has powerful melee attacks"
+        },
+        {
+            "query": "chaotic evil giant that has a heavy attack power and hates light",
+            "variant": "evil giant with a dark nature, strong damage, and dislikes sunlight"
+        },
+        {
+            "query": "strength-based giant in dim caves with a weakness to sunlight",
+            "variant": "giant with high strength that lives in dark places and is weak against sunlight"
+        },
+        {
+            "query": "large creature that uses multiattack and is harmed by sunlight",
+            "variant": "big monster that attacks multiple times and suffers in sunlight"
+        },
+        {
+            "query": "Cave Giant with darkvision and athletics skill",
+            "variant": "Cave Giant having ability to see in the dark and excelling in athletics"
+        }
+    ]
+}

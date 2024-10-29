@@ -1,0 +1,25 @@
+{
+    "name": "Young Sea Dragon",
+    "queries": [
+        {
+            "query": "large dragon that can breathe air and water and deals cold damage",
+            "variant": "big dragon that can breathe both air and water and does cold damage"
+        },
+        {
+            "query": "dragon with ice breath and high armor class that dominates aquatic combat",
+            "variant": "dragon with icy breath and strong armor class that controls water battles"
+        },
+        {
+            "query": "monster that can deal double damage to structures and has amphibious traits",
+            "variant": "creature that does double damage to buildings and possesses amphibious abilities"
+        },
+        {
+            "query": "neutral evil dragon with strong physical attributes thriving in water",
+            "variant": "evil dragon of neutrality with powerful physical traits living in the water"
+        },
+        {
+            "query": "sea dragon known for multiattack ability and high hit points",
+            "variant": "ocean dragon recognized for its multiattack feature and significant hit points"
+        }
+    ]
+}

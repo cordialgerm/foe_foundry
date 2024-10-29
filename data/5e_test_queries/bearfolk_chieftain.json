@@ -1,0 +1,25 @@
+{
+    "name": "Bearfolk Chieftain",
+    "queries": [
+        {
+            "query": "humanoid warrior with bear-like features that commands respect",
+            "variant": "warrior humanoid that resembles a bear and earns respect"
+        },
+        {
+            "query": "strong melee fighter with the ability to enhance allies",
+            "variant": "fighter that is strong in melee and boosts allies"
+        },
+        {
+            "query": "medium-sized creature with chaotic good alignment that protects its kin",
+            "variant": "medium creature aligned with chaotic good that safeguards its people"
+        },
+        {
+            "query": "bearfolk with an exceptional strength score who is a capable combatant",
+            "variant": "bear folk with great strength who excels in combat"
+        },
+        {
+            "query": "humanoid that can enter a berserk frenzy in battle",
+            "variant": "humanoid that can go into a frenzy during fights"
+        }
+    ]
+}

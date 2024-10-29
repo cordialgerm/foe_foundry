@@ -1,0 +1,25 @@
+{
+    "name": "Edjet Initiate",
+    "queries": [
+        {
+            "query": "humanoid fire-resistant creature that supports allies",
+            "variant": "humanoid that resists fire and helps friends"
+        },
+        {
+            "query": "lawful neutral fighter with dragonborn connections",
+            "variant": "fighter that is lawful neutral and related to dragonborn"
+        },
+        {
+            "query": "medium creature with a padded armor and melee attacks",
+            "variant": "creature that is medium-sized with padded armor and can attack melee"
+        },
+        {
+            "query": "combatant with advantage near dragonborn allies",
+            "variant": "fighter that gains advantage when close to dragonborn friends"
+        },
+        {
+            "query": "Edjet Initiate special abilities and combat strategy",
+            "variant": "Edjet Initiate's abilities and fight tactics"
+        }
+    ]
+}

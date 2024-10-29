@@ -1,0 +1,25 @@
+{
+    "name": "Wolpertinger",
+    "queries": [
+        {
+            "query": "tiny flying creature with a shriek ability",
+            "variant": "small flying monster that has a shrieking attack"
+        },
+        {
+            "query": "agile monster that burrows and jumps high",
+            "variant": "swift creature with burrowing skills and good jumping ability"
+        },
+        {
+            "query": "quirky creature that can deal piercing damage and deafens opponents",
+            "variant": "strange monster that inflicts piercing damage and can deafen foes"
+        },
+        {
+            "query": "small monstrosity found in whimsical settings that avoids attacks",
+            "variant": "tiny monstrosity in playful environments that escapes attacks"
+        },
+        {
+            "query": "creature with darkvision and a charge attack",
+            "variant": "monster possessing darkvision and an ability to charge at foes"
+        }
+    ]
+}

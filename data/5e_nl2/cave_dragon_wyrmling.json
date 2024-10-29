@@ -1,0 +1,52 @@
+{
+    "name": "Cave Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 20 ft., fly 20 ft., burrow 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "dragon",
+        "wyrmling",
+        "cave"
+    ],
+    "adjectives": [
+        "menacing",
+        "poisonous",
+        "tactical"
+    ],
+    "description": "A medium-sized dragon with scales that may blend into dark environments, showcasing a combination of physical prowess and innate magical abilities.",
+    "memorable": "Its ability to suppress light creates chaos for enemies while it can navigate through the earth with ease.",
+    "goals": "To ambush prey and control territory in dark cave systems.",
+    "relations": "Can be encountered alone or in groups, often territorial and aggressive towards intruders.",
+    "environment": "Typically found in dark caves or underground environments.",
+    "strengths": "Immunity to poison damage and conditions, effective ambusher with blindsight and tremorsense.",
+    "weaknesses": "Low Intelligence limits strategic complexity; vulnerable to clever maneuvers due to its reliance on stealth and darkness.",
+    "attacks": "Melee bite attack that inflicts piercing and poison damage; area control via Poison Breath attack.",
+    "most_powerful_ability": "Darkness Shroud - creates zones of magical darkness around it, hindering enemies.",
+    "equipment": null,
+    "senses": "Has blindsight and tremorsense, allowing it to perceive its surroundings in total darkness.",
+    "skills": "Skilled in Perception and Stealth, making it proficient in ambush tactics.",
+    "additional_information": [
+        "Can suppress light to manipulate battlefield visibility.",
+        "Possesses magical tunneling capabilities for strategic movement.",
+        "Has both a melee and ranged attack option with poison.",
+        "Highly mobile with the ability to burrow undetected.",
+        "A powerful foe for low-level adventurers due to its tactical abilities."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dark dragon that suppresses light",
+        "poisonous dragon living underground",
+        "cave dwelling dragon with magical abilities",
+        "ambush predator in dark caves",
+        "dragon with poison breath attack"
+    ]
+}

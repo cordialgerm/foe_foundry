@@ -1,0 +1,25 @@
+{
+    "name": "Cactid",
+    "queries": [
+        {
+            "query": "large plant monster that grapples and drains life",
+            "variant": "monster that is a large plant and drains life while grappling"
+        },
+        {
+            "query": "defensive creature with high HP and fire vulnerability",
+            "variant": "creature with significant hit points and vulnerable to fire attacks"
+        },
+        {
+            "query": "tall plant-like monster that uses tendrils to attack",
+            "variant": "plant monster that uses tendril attacks and is large"
+        },
+        {
+            "query": "Cactid abilities for fighting in close quarters",
+            "variant": "abilities of the Cactid for close quarter combat"
+        },
+        {
+            "query": "monstrous plant that has blindsight and can resist bludgeoning damage",
+            "variant": "plant creature with blindsight and resistance to bludgeoning attacks"
+        }
+    ]
+}

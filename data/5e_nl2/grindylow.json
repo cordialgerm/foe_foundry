@@ -1,0 +1,47 @@
+{
+    "name": "Grindylow",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "swim 40 ft., walk 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "stealthy",
+        "tricky"
+    ],
+    "adjectives": [
+        "chaotic",
+        "cunning",
+        "agile"
+    ],
+    "description": "The Grindylow is a medium-sized aberration, characterized by its chaotic evil nature and agile form, often found lurking underwater.",
+    "memorable": "It can mimic humanoid voices, adding psychological warfare to its tactics.",
+    "goals": "To ambush unwary adventurers and leverage its aquatic environment to gain the upper hand in combat.",
+    "relations": "May be encountered alongside other aquatic aberrations or creatures.",
+    "environment": "Typically resides underwater in dark, swampy areas.",
+    "strengths": "Agile swimmer with the ability to create obscuring ink clouds for escape.",
+    "weaknesses": "Relatively low intelligence makes its tactics somewhat predictable.",
+    "attacks": "Utilizes sharp claws to deal slashing damage and bites to inflict piercing damage.",
+    "most_powerful_ability": "Ink Cloud, which creates a heavily obscured area for tactical advantages.",
+    "senses": "Darkvision allows it to see in low light, and its passive perception helps detect invisible threats.",
+    "skills": "Highly proficient in acrobatics, athletics, and stealth, making it a tricky opponent.",
+    "additional_information": [
+        "Mimicry allows for deception by imitating humanoid voices.",
+        "Advantage on ability checks to escape grapples due to Slippery ability.",
+        "Breathes only underwater, making it vulnerable to air environments."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "aquatic monster that mimics voices",
+        "swift creature that lives underwater",
+        "cunning Grindylow with ink cloud ability",
+        "chaotic evil monster found in swamps",
+        "stealthy aberration with grappling claws"
+    ]
+}

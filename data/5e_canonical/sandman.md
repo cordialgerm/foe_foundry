@@ -1,6 +1,8 @@
 <MonsterName/>Sandman</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>82</HP>
 <summary>The Sandman is a medium-sized celestial creature embodying chaotic neutrality. Known for its ethereal nature, it has both formidable abilities and notable vulnerabilities. With an Armor Class of 14, it features 82 hit points, making it fairly resilient for its challenge rating of 5, which corresponds to 1,800 experience points. The Sandman primarily excels in manipulating dreams and inflicting psychic damage, showcasing its strengths in stealth and magic resistance. However, it is vulnerable to magical forces and nonmagical attacks that can penetrate its defenses. The creature's chaotic essence allows it to sway encounters through fear and illusion, while its high Charisma makes it a potent influence in social interactions.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Lastly, the Dreamer’s Sand action allows the Sandman to throw magical sand in 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sandman
 
 *Medium* *Celestial* *Chaotic Neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 7 (2d6) psychic damage. Damage from this attack doesn’t wake an unconscious creature, unless the unconscious creature is below half its hp maximum. If the sandman scores a critical hit, the target is cursed with the eye-closer’s curse. While cursed, the creature is blinded until it finishes a long rest or until the curse is lifted by remove curse or similar magic.
 - **Encourage Dreams (Recharge 5–6):** The sandman encourages powerful dreams in the minds of up to three unconscious creatures it can see within 30 feet of it. Each target must make a DC 15 Charisma saving throw. On a failure, nightmares fill the target’s mind, and the target takes 35 (10d6) psychic damage, wakes from its sleep, and is frightened for 1 minute. On a success, pleasant dreams fill the target’s mind, and the target regains 10 (3d6) hp and can choose to remain unconscious or awaken. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Dreamer’s Sand (Recharge 5–6):** The sandman throws magical sand in a 30-foot cone. Each creature in that area must succeed on a DC 15 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or another creature uses an action to wake it.
+</statblock>
 
 

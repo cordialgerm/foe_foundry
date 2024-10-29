@@ -1,0 +1,55 @@
+{
+    "name": "Hongaek",
+    "creature_type": "Elemental",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 40 ft., hover, cannot walk",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "ambusher",
+        "spellcaster",
+        "poison",
+        "invisibility"
+    ],
+    "adjectives": [
+        "large",
+        "swift",
+        "poisonous",
+        "intangible"
+    ],
+    "description": "The Hongaek is a large, insidious elemental with a vaporous form and the ability to become invisible. It wields tentacles that deliver painful poison attacks and can sweep through tight spaces with ease.",
+    "memorable": "Its ability to become invisible and move through tight spaces makes it a master of ambushes, while its potent poison attacks can leave foes vulnerable.",
+    "goals": "To infect and dominate foes with debilitating diseases while evading direct confrontation.",
+    "relations": "Can be associated with other elemental creatures, especially those related to poison and disease.",
+    "environment": "Commonly found in toxic swamps or areas infused with elemental energy.",
+    "strengths": "High Dexterity allows it to dodge attacks and act quickly; resistance to many damage types makes it durable.",
+    "weaknesses": "Vulnerable to fire damage, making it easier to harm with fire-based attacks.",
+    "attacks": "The Hongaek attacks with vaporous tentacles that deal poison damage and can inflict the poisoned condition.",
+    "most_powerful_ability": "The ability to cast Contagion can severely debilitate its enemies by inflicting debilitating diseases.",
+    "equipment": null,
+    "senses": "Possesses blindsight within a 90-foot radius, allowing it to detect foes without sight.",
+    "skills": "Proficient in Medicine and Perception, indicating a capability to heal and spot threats effectively.",
+    "additional_information": [
+        "Incapacitated by fire damage",
+        "Immune to poison damage and a variety of conditions",
+        "Can pinpoint locations of afflicted creatures within 30 feet",
+        "Advantage on attacks against poisoned enemies with Exacerbate Affliction",
+        "Can hover, providing enhanced mobility in combat"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can innately cast the spell Contagion once per day, allowing it to inflict diseases on targets.",
+    "test_queries": [
+        "large elemental that can fly and becomes invisible",
+        "swift vaporous creature with poison attacks",
+        "ambush creature that can move through small spaces",
+        "intangible monster that deals poison damage",
+        "elemental that excels in stealth and disease"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Accursed Defiler",
+    "queries": [
+        {
+            "query": "undead creature that can reform in desert environments",
+            "variant": "creature that is undead and re-forms in the desert"
+        },
+        {
+            "query": "medium strength creature with sandstorm ability",
+            "variant": "medium creature with strong physical attributes and a sandstorm ability"
+        },
+        {
+            "query": "bludgeoning damage monster that is immune to exhaustion",
+            "variant": "monster that deals bludgeoning damage and is immune to exhaustion"
+        },
+        {
+            "query": "creature that blends into wasteland and has low intelligence",
+            "variant": "monster that can camouflage in wasteland and has a very low intelligence score"
+        },
+        {
+            "query": "sand shrouded monster that can inflict exhaustion",
+            "variant": "monster covered in sand that can cause enemies to gain exhaustion"
+        }
+    ]
+}

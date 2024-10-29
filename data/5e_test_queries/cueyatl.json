@@ -1,0 +1,25 @@
+{
+    "name": "Cueyatl",
+    "queries": [
+        {
+            "query": "small humanoid that excels in jungle stealth and uses a spear",
+            "variant": "small humanoid skilled in jungle sneaking and attacks with a spear"
+        },
+        {
+            "query": "amphibious creature with jungle camouflage and slippery escape abilities",
+            "variant": "jungle-dwelling amphibious monster that has slippery escape and camouflage"
+        },
+        {
+            "query": "poison-inflicting spear-wielding humanoid from jungles",
+            "variant": "humanoid from jungles that wields a spear and inflicts poison damage"
+        },
+        {
+            "query": "lawful evil creature with darkvision found in jungle environments",
+            "variant": "darkvision-enabled lawful evil monster located in jungle habitats"
+        },
+        {
+            "query": "stealthy creature with low AC that attacks from ambush in the jungle",
+            "variant": "sneaky monster with average armor class that ambushes its prey in jungles"
+        }
+    ]
+}

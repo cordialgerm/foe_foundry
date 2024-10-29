@@ -1,0 +1,50 @@
+{
+    "name": "Cave Bear",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Large",
+    "hp": 42,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "40 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "predator",
+        "grappler",
+        "beast"
+    ],
+    "adjectives": [
+        "large",
+        "powerful",
+        "ferocious"
+    ],
+    "description": "The Cave Bear is a large beast notable for its powerful build, featuring strong limbs and a formidable head with sharp teeth. It is a fierce predator in its natural habitat.",
+    "memorable": "The Cave Bear excels in melee combat, using its powerful bite and grappling claws to dominate opponents.",
+    "goals": "Predator looking to hunt for food and defend its territory.",
+    "relations": "It may be found alongside other large beasts or in competition with other predators.",
+    "environment": "Forests and caves, where it can hunt and navigate effectively.",
+    "strengths": "High strength and constitution make it durable and capable of powerful melee attacks.",
+    "weaknesses": "Low intelligence and charisma limit its cunning and social interactions.",
+    "attacks": "Multiattack action allows it to make two powerful melee attacks, using both bite and claws.",
+    "most_powerful_ability": "Keen Smell grants it advantage on Perception checks reliant on scent, enhancing its tracking ability.",
+    "equipment": null,
+    "senses": "Possesses a keen sense of smell, providing advantage on related Perception checks.",
+    "skills": "Proficient in perception, allowing it to notice hidden dangers effectively.",
+    "additional_information": [
+        "Grapples Medium or smaller creatures with its claws.",
+        "Has a strong bite that inflicts piercing damage.",
+        "Herbivorous with predatory instincts.",
+        "Capable of evaluating threats in its terrain.",
+        "Instinct-driven with a very basic cognitive ability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large powerful bear that grapples enemies",
+        "predatory beast with keen sense of smell",
+        "ferocious cave dweller with strong melee attacks",
+        "big animal known for biting and clawing",
+        "Cave Bear habitat and abilities"
+    ]
+}

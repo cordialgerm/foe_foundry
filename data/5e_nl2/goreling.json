@@ -1,0 +1,52 @@
+{
+    "name": "Goreling",
+    "creature_type": "Undead",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 11,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "swarm",
+        "multiplying"
+    ],
+    "adjectives": [
+        "small",
+        "nimble",
+        "vulnerable"
+    ],
+    "description": "A small undead creature, the Goreling is characterized by its ability to swarm and multiply, making it a nuisance in numbers despite its low defense.",
+    "memorable": "Its unique ability to multiply on taking damage can quickly overwhelm unsuspecting parties.",
+    "goals": "Typically seeks to swarm and overwhelm prey.",
+    "relations": "Gorelings can often be found in groups, as their abilities enhance when several are nearby.",
+    "environment": "Commonly found in dark and abandoned places.",
+    "strengths": "Can amplify damage in groups and multiply rapidly after taking damage.",
+    "weaknesses": "Very low Intelligence and Charisma, making it ineffective in social situations.",
+    "attacks": "Performs a Slam attack dealing bludgeoning and necrotic damage, enhanced when in groups.",
+    "most_powerful_ability": "Bloodthirsty, which boosts its attack damage significantly when in numbers.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, sensing objects and creatures even while blinded.",
+    "skills": "Skilled in stealth, allowing it to move quietly despite its size.",
+    "additional_information": [
+        "Immunities to necrotic damage and poison damage.",
+        "Weakness in social and problem-solving situations.",
+        "Passive perception score is very low at 7.",
+        "Can swarm with up to five other Gorelings in the same space.",
+        "Easily overwhelmed if encountered alone due to low hit points."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small undead that multiplies when hit",
+        "creature that swarms and splits into smaller versions",
+        "nimble undead with necrotic damage abilities",
+        "undead that excels in numbers with Bloodthirsty ability",
+        "blindsighted creature that can swarm in combat"
+    ]
+}

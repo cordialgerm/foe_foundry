@@ -1,0 +1,25 @@
+{
+    "name": "Ur-Otyugh",
+    "queries": [
+        {
+            "query": "large underground monster with grappling tentacles",
+            "variant": "monster with large tentacles that lives underground and grapples"
+        },
+        {
+            "query": "aberration that inflicts disease and swallows foes",
+            "variant": "monster that can swallow enemies and cause diseases"
+        },
+        {
+            "query": "strong creature in polluted waters with high hit points",
+            "variant": "high hit point creature found in polluted water that is very strong"
+        },
+        {
+            "query": "creature with telepathy and legendary resistance",
+            "variant": "monster that can use telepathy and has legendary resistance"
+        },
+        {
+            "query": "tentacle monster that is a challenge rating 10 foe",
+            "variant": "challenge 10 tentacle creature that is dangerous"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Hoard Golem",
+    "queries": [
+        {
+            "query": "huge treasure guardian made of metal and stone",
+            "variant": "huge guardian of treasure made from metal and stone"
+        },
+        {
+            "query": "construct with high hit points and magical attacks",
+            "variant": "magical attacks and high hit points construct"
+        },
+        {
+            "query": "golem that steals valuables and has resistance to spells",
+            "variant": "golem with spell resistance that steals valuable items"
+        },
+        {
+            "query": "powerful golem with low intelligence found in treasure hoards",
+            "variant": "intelligence low powerful golem located in treasure hoards"
+        },
+        {
+            "query": "construct type monster that can instill fear and debilitate opponents",
+            "variant": "monster of construct type that can debilitate and instill fear in opponents"
+        }
+    ]
+}

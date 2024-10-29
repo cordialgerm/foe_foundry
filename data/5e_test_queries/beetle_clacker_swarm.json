@@ -1,0 +1,25 @@
+{
+    "name": "Clacker Swarm",
+    "queries": [
+        {
+            "query": "aggressive swarm of beetles that inflicts thunder damage",
+            "variant": "agressive beetle swarm that does thunder damage"
+        },
+        {
+            "query": "medium-sized swarm with blindsight that occupies space",
+            "variant": "swarm that is medium-sized and has blindsight to occupy space"
+        },
+        {
+            "query": "beetle swarm immune to conditions that hinders combat",
+            "variant": "beetle swarm that is immune to combat hindering conditions"
+        },
+        {
+            "query": "clacking swarm that bites and deals thunder damage",
+            "variant": "swarm that clacks, bites, and does thunder damage"
+        },
+        {
+            "query": "medium beast with low strength and high dexterity",
+            "variant": "beast of medium size with weak strength and decent dexterity"
+        }
+    ]
+}

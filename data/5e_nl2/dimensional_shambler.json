@@ -1,0 +1,51 @@
+{
+    "name": "Dimensional Shambler",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 102,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "psychological",
+        "interdimensional",
+        "fear"
+    ],
+    "adjectives": [
+        "formidable",
+        "psychological",
+        "evasive"
+    ],
+    "description": "The Dimensional Shambler is a large aberration with the ability to instill fear and manipulate dimensions. It has a terrifying appearance that can unsettle even the bravest adventurers.",
+    "memorable": "Its ability to instill fear and manipulate dimensions makes it a uniquely terrifying opponent.",
+    "goals": "To inflict psychological terror and physical harm to its enemies.",
+    "relations": "May be encountered with other aberrations or creatures of the Lower Planes.",
+    "environment": "Often found in areas connected to the Lower Planes or in corrupted landscapes.",
+    "strengths": "High hit points, strong physical attributes, and abilities to manipulate space and induce fear.",
+    "weaknesses": "Vulnerability to magical attacks.",
+    "attacks": "Multiattack with powerful claw strikes that can grapple foes.",
+    "most_powerful_ability": "Step Between allows it to escape or reposition by shifting between planes.",
+    "senses": "Possesses darkvision with a range of 60 feet and has a passive perception score of 17.",
+    "skills": "Excel in arcana, athletics, stealth, and has good perception skills.",
+    "additional_information": [
+        "Immunity to poison and several conditions.",
+        "Ability to see into the Lower Planes while on the Material Plane.",
+        "Causes fear in nearby creatures with its Maddening Form ability.",
+        "Can drag grappled targets through dimensions, causing psychic damage.",
+        "Strategically uses its abilities to control the battlefield."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large creature that manipulates dimensions",
+        "monster that instills psychological fear",
+        "aberration with powerful melee attacks",
+        "dimensional creature that can shift planes",
+        "creature immune to poison damage"
+    ]
+}

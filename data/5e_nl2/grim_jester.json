@@ -1,0 +1,50 @@
+{
+    "name": "Grim Jester",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 136,
+    "ac": 18,
+    "srd": false,
+    "cr": "11",
+    "movement": "walking speed of 30 feet",
+    "role": "null",
+    "tags": [
+        "undead",
+        "trickster",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "whimsical",
+        "sinister",
+        "chaotic"
+    ],
+    "description": "The Grim Jester is a Medium undead creature that embodies a whimsical yet sinister presence.",
+    "memorable": "It can incapacitate foes with laughter and regenerate after death.",
+    "goals": "To manipulate and incapacitate foes using laughter and deception.",
+    "relations": "Related to chaotic undead entities, potentially serving a trickster god.",
+    "environment": "Often found in dark, mysterious, or eerie locations.",
+    "strengths": "Incapacitates foes with laughter, has strong spellcasting abilities, and can regenerate.",
+    "weaknesses": "Vulnerable to radiant damage and relies on tactics to avoid direct confrontation.",
+    "attacks": "Necrotic Claw deals slashing and necrotic damage; Killing Joke incapacitates targets in laughter.",
+    "most_powerful_ability": "Killing Joke can incapacitate a creature or reduce it to 0 hit points.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet and a passive perception of 17.",
+    "skills": "Excels in Acrobatics, Stealth, Deception, and Performance with high skill modifiers.",
+    "additional_information": [
+        "Immune to necrotic and poison damage, and nonmagical weapon attacks.",
+        "Has advantage on saving throws against effects that turn undead.",
+        "Does not require air, food, or sleep.",
+        "Ability to cast spells without components using Charisma as the spellcasting ability.",
+        "Can create illusory duplicates of itself and another creature."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast spells like disguise self and grease at will; magic mouth and mirror image three times per day; mislead and seeming once per day.",
+    "test_queries": [
+        "undead creature that incapacitate foes with laughter",
+        "sinister jester with necrotic powers",
+        "chaotic trickster that can regenerate",
+        "spellcasting jester immune to death",
+        "medium undead manipulating the battlefield"
+    ]
+}

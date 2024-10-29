@@ -1,0 +1,25 @@
+{
+    "name": "Owl",
+    "queries": [
+        {
+            "query": "small nocturnal bird known for silent flight and sharp talons",
+            "variant": "tiny night bird famous for its quiet flight and sharp claws"
+        },
+        {
+            "query": "forest dwelling creature with keen eyesight and low strength",
+            "variant": "creature from the woods with great sight and weak physical power"
+        },
+        {
+            "query": "tiny beast used as a familiar with darkvision and stealth abilities",
+            "variant": "small animal utilized as a companion featuring night vision and stealth skills"
+        },
+        {
+            "query": "agile flying predator with exceptional stealth and awareness",
+            "variant": "nimble airborne hunter with incredible stealth and perception"
+        },
+        {
+            "query": "owl that can evade attacks and excels in reconnaissance",
+            "variant": "owl capable of dodging strikes and is great at scouting"
+        }
+    ]
+}

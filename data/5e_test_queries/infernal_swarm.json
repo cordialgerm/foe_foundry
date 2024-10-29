@@ -1,0 +1,25 @@
+{
+    "name": "Infernal Swarm",
+    "queries": [
+        {
+            "query": "huge shape-shifting fiend that uses cunning in combat",
+            "variant": "large fiend that can change shape and is cunning in fight"
+        },
+        {
+            "query": "creature that deals thunder damage and has fire immunity",
+            "variant": "monster with immunity to fire and weak against thunder"
+        },
+        {
+            "query": "lawful evil fiend that can see in magical darkness",
+            "variant": "evil lawful fiend with ability to see through magical darkness"
+        },
+        {
+            "query": "fiend that possesses telepathy and has a poison attack",
+            "variant": "fiend with telepathic abilities and a poisonous attack"
+        },
+        {
+            "query": "huge fiend that can shapeshift and has high damage resistance",
+            "variant": "large fiend that can transform and has significant damage resistances"
+        }
+    ]
+}

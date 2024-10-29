@@ -1,0 +1,25 @@
+{
+    "name": "Hulking Whelp",
+    "queries": [
+        {
+            "query": "small fey creature that transforms into a hulking canine",
+            "variant": "fey creature that is small and can change into hulking dog"
+        },
+        {
+            "query": "monster with high strength that reacts defensive when attacked",
+            "variant": "creature with strong attack power that has a defensive shift when hit"
+        },
+        {
+            "query": "hulking canine with bludgeoning damage resistance that is chaotic neutral",
+            "variant": "chaotic neutral hulking dog that resists bludgeoning damage"
+        },
+        {
+            "query": "fey creature with pacify ability and emotional outbursts",
+            "variant": "creature that is fey and has the ability to calm itself with emotions"
+        },
+        {
+            "query": "monster able to change shape and has high constitution",
+            "variant": "creature that can transform and possesses a very good constitution score"
+        }
+    ]
+}

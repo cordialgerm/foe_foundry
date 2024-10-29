@@ -1,0 +1,25 @@
+{
+    "name": "Treant",
+    "queries": [
+        {
+            "query": "towering tree-like creature that protects forests",
+            "variant": "tree-like towering creature that guards forests"
+        },
+        {
+            "query": "sentient plant monster with bark-like skin living in harmony with nature",
+            "variant": "plant monster that is sentient, has bark-like skin and lives harmoniously with nature"
+        },
+        {
+            "query": "massive guardian of the woodland with low dexterity and high strength",
+            "variant": "huge woodland guardian with high strength and low dexterity"
+        },
+        {
+            "query": "huge creature that can animate trees and has fire vulnerability",
+            "variant": "large creature able to animate trees and vulnerable to fire"
+        },
+        {
+            "query": "monster with high wisdom that can communicate with plants",
+            "variant": "creature that can talk to plants and has a high wisdom score"
+        }
+    ]
+}

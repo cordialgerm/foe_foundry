@@ -1,0 +1,52 @@
+{
+    "name": "Putrescent Slime",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 8,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 ft., swim 10 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "slime",
+        "poison",
+        "ambush predator"
+    ],
+    "adjectives": [
+        "amorphous",
+        "putrescent",
+        "sticky"
+    ],
+    "description": "The Putrescent Slime is a medium, amorphous ooze with a putrid appearance, capable of slipping through tight spaces with ease.",
+    "memorable": "Its stench can poison unsuspecting creatures nearby, and it can effortlessly navigate through narrow passages.",
+    "goals": "Ambush prey and control battlefields using its toxic abilities.",
+    "relations": "May be found alongside other oozes or in hazardous, decaying environments.",
+    "environment": "Dark, damp places, often where decay and filth accumulate.",
+    "strengths": "Immunities to acid and poison, and the ability to maneuver through narrow spaces.",
+    "weaknesses": "Low Dexterity and poor armor class, making it vulnerable to ranged attacks.",
+    "attacks": "Pseudopod attack delivers a mix of bludgeoning and poison damage.",
+    "most_powerful_ability": "Stench ability poisons creatures within proximity, posing a tactical challenge.",
+    "equipment": null,
+    "senses": "Blindsight up to 60 feet allows it to sense its surroundings without sight.",
+    "skills": null,
+    "additional_information": [
+        "Constitution of 16 provides substantial durability in combat.",
+        "Intelligence and Charisma scores indicate it is a mindless creature.",
+        "The slime is immune to several conditions such as blinded and frightened.",
+        "It can affect multiple creatures with its Stench ability.",
+        "The slime relies on ambush tactics rather than strategy."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature with toxic stench",
+        "ambush slime in dark areas",
+        "pus-colored ooze that poisons",
+        "slime that moves through tight spaces",
+        "medium ooze with high hit points"
+    ]
+}

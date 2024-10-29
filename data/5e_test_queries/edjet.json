@@ -1,0 +1,25 @@
+{
+    "name": "Edjet",
+    "queries": [
+        {
+            "query": "medium humanoid creature with fire resistance and martial advantage",
+            "variant": "medium creature humanoid with fire resistnace and martial adavantage"
+        },
+        {
+            "query": "strong humanoid that uses a halberd and has a fire breath attack",
+            "variant": "strong humanoid uses halberd and has fire breath attack"
+        },
+        {
+            "query": "lawful neutral fighter with high strength and athletics skill",
+            "variant": "lawful neutral fighter with high str and athletcs skill"
+        },
+        {
+            "query": "humanoid that communicates in Common and Draconic with perception skills",
+            "variant": "humanoid speaks Common and Draconic with perception sklls"
+        },
+        {
+            "query": "creature with a challenge rating of 3 that deals extra damage in combat",
+            "variant": "creature challenge rating 3 that does extra damge in combat"
+        }
+    ]
+}

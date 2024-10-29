@@ -1,0 +1,25 @@
+{
+    "name": "Stained-Glass Moth",
+    "queries": [
+        {
+            "query": "small construct that camouflages as a stained-glass window",
+            "variant": "small construct that hides as stained-glass windows"
+        },
+        {
+            "query": "creature with magic resistance that can fly and has a high constitution",
+            "variant": "monster that flies with magic resistance and high constitution"
+        },
+        {
+            "query": "construct that is immune to poison and has a passive perception of 14",
+            "variant": "creature immune to poison with passive perception of 14"
+        },
+        {
+            "query": "moth with the ability to mark targets for tactical advantages",
+            "variant": "moth that can mark targets for tactical benefits"
+        },
+        {
+            "query": "flying creature that avoids opportunity attacks and disguises as art",
+            "variant": "flying creature that evades opportunity attacks and looks like artwork"
+        }
+    ]
+}

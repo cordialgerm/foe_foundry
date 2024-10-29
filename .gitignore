@@ -165,3 +165,5 @@ node_modules/
 examples/
 
 foe_foundry_site/routes/whoosh/index/
+
+models/*/checkpoint*

@@ -1,0 +1,51 @@
+{
+    "name": "Lion",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 30,
+    "ac": 12,
+    "srd": true,
+    "cr": "1",
+    "movement": "fast runner able to move 50 feet",
+    "role": "Bruiser",
+    "tags": [
+        "predator",
+        "apex",
+        "pack hunter"
+    ],
+    "adjectives": [
+        "powerful",
+        "ferocious",
+        "agile"
+    ],
+    "description": "The lion is a large beast with a muscular body, known for its sharp claws, powerful jaws, and males with thick manes. Female lions are sleeker and faster, reflecting their roles as primary hunters.",
+    "memorable": "Known as the 'king of the beasts,' the lion exemplifies both majesty and ferocity, especially when defending its pride.",
+    "goals": "Lions hunt in packs, aiming to take down large prey such as antelope and buffalo.",
+    "relations": "Typically found in prides, lions interact with other prey animals and can occasionally be found alongside other predators.",
+    "environment": "Commonly inhabits grasslands and savannas.",
+    "strengths": "Possesses Pack Tactics, allowing for advantageous attacks when allies are nearby, and Keen Smell provides heightened tracking capabilities.",
+    "weaknesses": "Vulnerable due to relatively low hit points and poor Intelligence, leaving them less savvy against cunning foes.",
+    "attacks": "Engages in fierce melee combat with claws and bites; claws can knock foes prone after a charge.",
+    "most_powerful_ability": "Pack Tactics grants advantage on attack rolls against foes near allies, enhancing its melee effectiveness.",
+    "senses": "The lion has heightened perception through its Keen Smell ability for tracking and locating prey.",
+    "skills": "Proficient in Stealth, making it quite sneaky despite its large size.",
+    "additional_information": [
+        "Able to leap long distances with Running Leap.",
+        "Can unleash a Rattling Roar to impose disadvantages on opponents.",
+        "Utilizes pounce tactics to gain advantages in combat.",
+        "Commonly referred to as 'king of the beasts' due to its apex predator status.",
+        "Works cooperatively with pride members to hunt efficiently."
+    ],
+    "damage_types": [
+        "none"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "king of the beasts predator",
+        "fast agile hunting lion",
+        "large beast with powerful jaws",
+        "pride hunting tactics of lions",
+        "lion with advantageous pack tactics"
+    ]
+}

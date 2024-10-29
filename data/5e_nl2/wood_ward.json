@@ -1,0 +1,52 @@
+{
+    "name": "Wood Ward",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 19,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Defender",
+    "tags": [
+        "guardian",
+        "protector",
+        "natural",
+        "magical"
+    ],
+    "adjectives": [
+        "wooden",
+        "durable",
+        "fear-inducing"
+    ],
+    "description": "A medium-sized construct made from wood and enchantments, the Wood Ward serves as a protector of natural spaces.",
+    "memorable": "It can instill fear through its Horror Gaze ability, creating a distinct crowd control feature.",
+    "goals": "To guard natural areas and repel intruders.",
+    "relations": "Often associated with nature deities or magical forests.",
+    "environment": "Typically found in natural spaces or enchanted forests.",
+    "strengths": "High Constitution grants it excellent durability, and it is immune to many conditions.",
+    "weaknesses": "Vulnerable to fire damage.",
+    "attacks": "Utilizes Multiattack for two slam attacks dealing bludgeoning damage.",
+    "most_powerful_ability": "Horror Gaze, inducing fear in creatures caught in its eerie glow.",
+    "senses": "Has darkvision up to 60 feet, useful for detecting creatures in dim light.",
+    "skills": null,
+    "additional_information": [
+        "Magic Resistance provides advantage on saving throws against spells.",
+        "Immutable Form prevents any alteration of its physical form.",
+        "Immunity to poison and psychic damage.",
+        "Effective as an area control unit due to its fear-inducing ability.",
+        "Created with enchantments to serve as a magical guardian."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "wooden guardian with fear abilities",
+        "durable construct protector of nature",
+        "magical wooden ward with slam attack",
+        "fear-inducing magical defender in forest",
+        "immune to conditions wooden construct"
+    ]
+}

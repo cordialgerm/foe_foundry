@@ -1,0 +1,25 @@
+{
+    "name": "Orcish Wildling Minstrel",
+    "queries": [
+        {
+            "query": "humanoid musician with spellcasting abilities from a tribe",
+            "variant": "musician humanoid with tribe spellcasting abilities"
+        },
+        {
+            "query": "deceptive performer skilled in charm and healing spells",
+            "variant": "performer skilled in healing and charm spells and deception"
+        },
+        {
+            "query": "orcish minstrel who strengthens allies and confuses foes",
+            "variant": "minstrel of orcish descent who confuses foes and strengthens allies"
+        },
+        {
+            "query": "medium humanoid capable of musical enchantments and support",
+            "variant": "humanoid medium capable of support and musical enchantments"
+        },
+        {
+            "query": "orcs that use music for tribal history and spellcasting",
+            "variant": "orcs that spellcast and use music for communal history"
+        }
+    ]
+}

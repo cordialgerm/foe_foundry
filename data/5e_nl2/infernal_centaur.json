@@ -1,0 +1,54 @@
+{
+    "name": "Infernal Centaur",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "centaur",
+        "fire immune",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "strategic",
+        "dominant",
+        "intimidating"
+    ],
+    "description": "The Infernal Centaur is a strong creature, showcasing its imposing stature and a fierce demeanor. It is equipped with daggers for close combat, emphasizing its agility and combat capabilities.",
+    "memorable": "This creature can exhale a devastating stream of fire, making it a significant threat in combat while also commanding respect from hell hounds.",
+    "goals": "To assert dominance over fire-based creatures and lead hell hounds in combat.",
+    "relations": "Hell hounds see it as a leader and will not attack it unless provoked.",
+    "environment": "Typically found in fiery landscapes or regions associated with hell.",
+    "strengths": "Immunity to fire damage provides resilience against fire-based attacks.",
+    "weaknesses": "Moderate Dexterity may limit its mobility and initiative in combat.",
+    "attacks": "Uses daggers both in melee and range, capable of dealing piercing damage.",
+    "most_powerful_ability": "Fiery Breath can engulf enemies in flames, dealing significant fire damage in a 15-foot cone.",
+    "equipment": "Wields daggers for melee engagements.",
+    "senses": "Possesses darkvision out to 60 feet, aiding in navigation in low light.",
+    "skills": "Proficient in intimidation and perception, allowing it to effectively coerce and notice details.",
+    "additional_information": [
+        "Cruelty ability enables a second attack on a critical hit.",
+        "Hell Hound Affinity grants leadership over hell hounds.",
+        "Pack Tactics enhances combat effectiveness with allies nearby.",
+        "Good physical power and endurance reflected in high Strength and Constitution scores.",
+        "Average reasoning and social influence with Intelligence and Charisma scores."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiery centaur with daggers",
+        "dominant fire immune creature",
+        "hell hound leader centaur",
+        "centaur with fiery breath attack",
+        "formidable fiend in combat"
+    ]
+}

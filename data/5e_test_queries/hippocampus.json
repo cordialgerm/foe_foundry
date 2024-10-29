@@ -1,0 +1,25 @@
+{
+    "name": "Hippocampus",
+    "queries": [
+        {
+            "query": "large aquatic beast that provides fresh air to riders",
+            "variant": "large water creature that gives fresh air to its riders"
+        },
+        {
+            "query": "swift swimming creature with amphibious abilities",
+            "variant": "quick swimming beast with abilities to survive on land and in water"
+        },
+        {
+            "query": "beast that can breathe both air and water and has a strong bite",
+            "variant": "creature that manages air and water breathing and has a powerful bite"
+        },
+        {
+            "query": "monster that can knock creatures prone and lives in aquatic environments",
+            "variant": "creature that can trip foes and inhabits water settings"
+        },
+        {
+            "query": "Hippocampus features and abilities in water combat",
+            "variant": "hippocampus traits and skills for fighting in water"
+        }
+    ]
+}

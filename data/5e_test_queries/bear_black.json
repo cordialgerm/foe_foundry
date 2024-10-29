@@ -1,0 +1,25 @@
+{
+    "name": "Bear, Black",
+    "queries": [
+        {
+            "query": "medium-sized wilderness beast with heightened sense of smell",
+            "variant": "medium sized beast in wilderness with strong sense of smell"
+        },
+        {
+            "query": "bear that can climb and has a multiattack of bite and claws",
+            "variant": "bear with climbing ability and multiattack featuring claws and bite"
+        },
+        {
+            "query": "forest creature known for its decent hit points and mobility",
+            "variant": "creature from the forest with good hit points and speed"
+        },
+        {
+            "query": "black bear with low intelligence that prefers wilderness areas",
+            "variant": "wilderness black bear with poor intelligence"
+        },
+        {
+            "query": "beast that can deal slashing damage and has natural armor",
+            "variant": "creature dealing slashing damage with natural armor"
+        }
+    ]
+}

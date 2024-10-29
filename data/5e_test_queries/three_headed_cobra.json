@@ -1,0 +1,25 @@
+{
+    "name": "Three-Headed Cobra",
+    "queries": [
+        {
+            "query": "large snake monster with multiple heads that can swim",
+            "variant": "big serpent creature with three heads that is able to swim"
+        },
+        {
+            "query": "venomous creature with high speed and multiple bite attacks",
+            "variant": "poisonous monster that has great speed and can make several bite attacks"
+        },
+        {
+            "query": "fast aquatic snake with reactive abilities and poison damage",
+            "variant": "quick water snake that has reactive powers and causes poison damage"
+        },
+        {
+            "query": "multi-headed serpent that has good perception and natural armor",
+            "variant": "three-headed snake with great perception and natural defense"
+        },
+        {
+            "query": "dangerous cobra with advantage on perception checks and wakeful heads",
+            "variant": "risky cobra that gets bonus on perception tests and has alert heads"
+        }
+    ]
+}

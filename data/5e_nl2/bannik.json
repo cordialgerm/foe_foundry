@@ -1,0 +1,51 @@
+{
+    "name": "Bannik",
+    "creature_type": "Fey",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 feet walking, 30 feet swimming",
+    "role": null,
+    "tags": [
+        "fey",
+        "spellcaster",
+        "water"
+    ],
+    "adjectives": [
+        "slippery",
+        "resilient"
+    ],
+    "description": "The Bannik is a Medium Fey creature known for its vibrant character and abilities. It can see through fog and smoke and has a playful aquatic nature.",
+    "memorable": "The ability to summon a giant ladle of boiling water for scalding area attacks makes the Bannik a unique combatant.",
+    "goals": "Typically seeks to influence the battlefield or assist allies, thriving in areas with water.",
+    "relations": "Related to other fey creatures and may interact with elemental beings.",
+    "environment": "Often found near water bodies like rivers or lakes.",
+    "strengths": "Possesses fire resistance and the ability to see through obscured areas, making it adept in various environments.",
+    "weaknesses": "Vulnerable to cold damage.",
+    "attacks": "Utilizes Scalding Claws for melee attacks and can unleash a powerful Scalding Splash attack to damage and hinder foes.",
+    "most_powerful_ability": "Scalding Splash, which deals substantial fire damage and can impose a scalded condition on enemies.",
+    "equipment": null,
+    "senses": "Has darkvision allowing it to see in darkness up to 60 feet.",
+    "skills": "Skilled in perception, which enhances its awareness in combat and exploration.",
+    "additional_information": [
+        "Holds its breath for up to 10 minutes.",
+        "Can cast spells using a wand of bound fir.",
+        "Can extinguish flames in its vicinity with Scalding Splash.",
+        "Has a good Wisdom score, allowing for effective spellcasting.",
+        "The creature has a neutral alignment influencing its interactions."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast spells like Augury, Create or Destroy Water, and Fog Cloud multiple times, enhancing its versatility in and out of combat.",
+    "test_queries": [
+        "funny water fey",
+        "scalding water magic creature",
+        "fey with boiling abilities",
+        "creature that can see through fog",
+        "versatile spellcasting fey"
+    ]
+}

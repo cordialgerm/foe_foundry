@@ -1,0 +1,25 @@
+{
+    "name": "Great Wyrm White Dragon",
+    "queries": [
+        {
+            "query": "massive ice dragon with deadly breath attacks",
+            "variant": "huge frost dragon that can unleash deadly breath attacks"
+        },
+        {
+            "query": "Gargantuan creature that manipulates cold and ice",
+            "variant": "huge creature that controls ice and cold"
+        },
+        {
+            "query": "dragon with powerful cold damage and high hit points",
+            "variant": "dragon that has strong cold damage and a lot of hit points"
+        },
+        {
+            "query": "intimidating dragon that thrives in icy environments",
+            "variant": "frightening dragon that excels in cold areas"
+        },
+        {
+            "query": "legendary dragon that uses magic and cold mastery",
+            "variant": "mythical dragon that employs spells and ice mastery"
+        }
+    ]
+}

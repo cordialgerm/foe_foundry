@@ -1,0 +1,25 @@
+{
+    "name": "Phase Giant",
+    "queries": [
+        {
+            "query": "huge giant that shifts between planes and has spiked fists",
+            "variant": "huge giant with spiked fists and ability to shift between planes"
+        },
+        {
+            "query": "giant with high hit points and an ethereal movement ability",
+            "variant": "giant that has high HP and can move ethereally"
+        },
+        {
+            "query": "powerful melee giant that can grapple and deal piercing damage",
+            "variant": "strong melee giant capable of grappling and inflicting piercing damage"
+        },
+        {
+            "query": "Phase Giant combat tactics with grappling and ranged attacks",
+            "variant": "combat strategies of Phase Giant involving ranged and grappling attacks"
+        },
+        {
+            "query": "creature immune to physical attacks while in the Ethereal Plane",
+            "variant": "being immune to physical strikes when in the Ethereal Plane"
+        }
+    ]
+}

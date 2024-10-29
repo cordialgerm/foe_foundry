@@ -1,0 +1,25 @@
+{
+    "name": "Light Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium-sized benevolent dragon with radiant abilities",
+            "variant": "medium sized dragon that is benevolent and has radiant abilities"
+        },
+        {
+            "query": "dragon that can fly and uses radiant breath attack",
+            "variant": "creature that flies and has a radiant breath weapon attack"
+        },
+        {
+            "query": "dragon with bright light illumination and incorporeal movement",
+            "variant": "dragon that has incorporeal movement and bright light ability"
+        },
+        {
+            "query": "light dragon immune to radiant damage and blinding",
+            "variant": "light dragon that is immune to radiant damage and blindness"
+        },
+        {
+            "query": "dragon with a blinding breath and good perception skills",
+            "variant": "dragon that has blinding breath and good skills in perception"
+        }
+    ]
+}

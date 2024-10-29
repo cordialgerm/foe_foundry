@@ -1,0 +1,25 @@
+{
+    "name": "Orc",
+    "queries": [
+        {
+            "query": "green-skinned humanoid warrior that uses a greataxe",
+            "variant": "green-skinned warrior humanoid that wields a greataxe"
+        },
+        {
+            "query": "aggressive melee combatant that speaks Orc and Common",
+            "variant": "melee combatant that is aggressive and can talk in Common and Orc"
+        },
+        {
+            "query": "orc creature that thrives in battle and has darkvision",
+            "variant": "battle-loving orc creature with darkvision ability"
+        },
+        {
+            "query": "medium-sized orc known for its strength and hostility",
+            "variant": "medium orc known for being strong and hostile"
+        },
+        {
+            "query": "orc using javelins and has special abilities in combat",
+            "variant": "orc that throws javelins and has unique combat skills"
+        }
+    ]
+}

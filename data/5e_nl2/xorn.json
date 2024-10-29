@@ -1,0 +1,53 @@
+{
+    "name": "Xorn",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 73,
+    "ac": 19,
+    "srd": true,
+    "cr": "5",
+    "movement": "20 ft. walking, 20 ft. burrowing",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "earth",
+        "treasure",
+        "burrower"
+    ],
+    "adjectives": [
+        "three-legged",
+        "rocky",
+        "gaping",
+        "guardian"
+    ],
+    "description": "A strange, three-legged creature with a thick, rocky hide, a large mouth on top of its head, and three claws. It has three eyes that allow for all-direction vision.",
+    "memorable": "Can phase through stone and has a distinctive ability to sense treasure from afar.",
+    "goals": "Primarily seeks to consume gems, precious metals, and minerals.",
+    "relations": "Typically associated with rocky environments and may be encountered with other elemental creatures.",
+    "environment": "Native to the Elemental Plane of Earth, commonly found in rocky or hilly areas.",
+    "strengths": "Excellent treasure-finding capabilities; durable with high hit points and armor class.",
+    "weaknesses": "Slow movement speed can leave it vulnerable to ranged attacks.",
+    "attacks": "Makes three melee claw attacks and one bite attack, capable of consuming metal objects.",
+    "most_powerful_ability": "Treasure Sense allows it to smell and locate valuable items from up to 500 feet away.",
+    "senses": "Possesses tremorsense up to 60 feet, enabling it to detect vibrations in the ground.",
+    "skills": "Proficient in perception and stealth, allowing it to detect and hide effectively.",
+    "additional_information": [
+        "Can burrow through earth without leaving a trace.",
+        "Has advantage on stealth checks in rocky terrain.",
+        "Can hinder foes with crystalline shards using its Shard Belch ability.",
+        "Agile in its native environment, making it a tricky adversary.",
+        "Resistance to damage from nonmagical weapons that aren't adamantine."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "earth-dwelling monster that eats gems",
+        "rocky creature with treasure sense ability",
+        "slow-moving elemental found in rocky areas",
+        "three-legged monster with sharp claws",
+        "burrowing earth creature that guards treasure"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Ogre",
+    "queries": [
+        {
+            "query": "large giant with brute strength found in caves",
+            "variant": "big giant with brute power located in caves"
+        },
+        {
+            "query": "tall humanoid that uses a club for melee attacks",
+            "variant": "tall humanoid wielding a club for melee combat"
+        },
+        {
+            "query": "creature with darkvision that raides villages for food",
+            "variant": "being with darkvision that attacks villages for food"
+        },
+        {
+            "query": "brutish giant that is easily fooled and loves treasure",
+            "variant": "brutish giant easily tricked and obsessed with treasure"
+        },
+        {
+            "query": "ogre that has low dexterity and high strength",
+            "variant": "ogre with poor agility and strong physical power"
+        }
+    ]
+}

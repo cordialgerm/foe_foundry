@@ -1,0 +1,25 @@
+{
+    "name": "Horned Serpent",
+    "queries": [
+        {
+            "query": "large aquatic monstrosity with poisonous aura and debilitating disease",
+            "variant": "big aquatic monster that has a poisonous aura and a disease that weakens opponents"
+        },
+        {
+            "query": "horned serpent abilities and immunities in water",
+            "variant": "abilities and resistances of horned serpent in aquatic environments"
+        },
+        {
+            "query": "creature with high AC and multiattack that lives in water",
+            "variant": "monster with strong defenses and multiattack that thrives in aquatic habitats"
+        },
+        {
+            "query": "large serpent that can breathe underwater and causes necrotic damage",
+            "variant": "big serpent that swims and inflicts necrotic harm"
+        },
+        {
+            "query": "Horned Serpent characteristics and weakness to intellect",
+            "variant": "features of horned serpent and its vulnerability to clever tactics"
+        }
+    ]
+}

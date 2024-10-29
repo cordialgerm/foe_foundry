@@ -1,0 +1,51 @@
+{
+    "name": "Cave Giant Shaman",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 207,
+    "ac": 16,
+    "srd": false,
+    "cr": "14",
+    "movement": "walks at 40 feet",
+    "role": null,
+    "tags": [
+        "giant",
+        "shaman",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "spellcasting",
+        "physical"
+    ],
+    "description": "The Cave Giant Shaman is a gigantic creature with immense physical power and magical abilities, characterized by its chaotic evil nature.",
+    "memorable": "Its unique ability, Sunlight Petrification, makes it particularly vulnerable when exposed to bright light.",
+    "goals": "To overpower adventurers and utilize its magical abilities for chaotic purposes.",
+    "relations": "May be encountered with other giants or dark creatures of the underworld.",
+    "environment": "Typically found in dark caves or underground lairs.",
+    "strengths": "High hit points and strong melee attacks make it difficult to defeat, along with powerful spellcasting.",
+    "weaknesses": "Severely weakened in sunlight, taking radiant damage and suffering from reduced abilities.",
+    "attacks": "Multiattack with a club and tusks, inflicting bludgeoning and slashing damage.",
+    "most_powerful_ability": "Capable of casting high-level spells such as disintegrate and cloudkill.",
+    "equipment": null,
+    "senses": "Has darkvision out to 120 feet, allowing it to see in dark environments.",
+    "skills": "Proficient in athletics and survival, indicating notable physical prowess.",
+    "additional_information": [
+        "Possesses a high Strength score of 27, ensuring powerful melee attacks.",
+        "Can cast spells as a 14th-level spellcaster with a focus on area control.",
+        "Has a very high Charisma of 21 which enhances its spell potency.",
+        "In sunlight, it suffers from significant disadvantages, making it vulnerable.",
+        "Uses terrain and magic strategically to control the battlefield."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast a variety of spells, including damaging spells like lightning bolt and utility spells like haste.",
+    "test_queries": [
+        "huge giant with chaotic magic",
+        "cave dwelling spellcasting giant",
+        "giant shaman vulnerable to sunlight",
+        "powerful melee attacker with spells",
+        "Cave Giant Shaman combat tactics"
+    ]
+}

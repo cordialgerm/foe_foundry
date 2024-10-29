@@ -1,0 +1,25 @@
+{
+    "name": "Giant Pufferfish",
+    "queries": [
+        {
+            "query": "aquatic monster that can puff up and inflict poison damage",
+            "variant": "monster that can puff up and deals poison damage in water"
+        },
+        {
+            "query": "defensive underwater creature with sharp spines",
+            "variant": "underwater creature that is defensive and has sharp spines"
+        },
+        {
+            "query": "small water-dwelling beast with natural armor",
+            "variant": "small beast with natural defense that lives in water"
+        },
+        {
+            "query": "Giant Pufferfish abilities for underwater combat",
+            "variant": "abilities of the Giant Pufferfish for fighting underwater"
+        },
+        {
+            "query": "creature immune to poison but can only breathe underwater",
+            "variant": "monster that can't breathe air but is immune to poison"
+        }
+    ]
+}

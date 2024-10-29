@@ -1,0 +1,50 @@
+{
+    "name": "Whisperer in Darkness",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 142,
+    "ac": 17,
+    "srd": false,
+    "cr": "15",
+    "movement": "30 ft. walking speed",
+    "role": "Controller",
+    "tags": [
+        "spellcaster",
+        "manipulator",
+        "psychic"
+    ],
+    "adjectives": [
+        "powerful",
+        "cunning",
+        "deceptive"
+    ],
+    "description": "The Whisperer in Darkness is a Medium Aberration, notable for its impressive intelligence, standing with advanced magical implements and possessing a unique appearance.",
+    "memorable": "This creature wields powerful spells and can stun foes with its grasp attacks, making it a terrifying adversary.",
+    "goals": "Its usual goals include manipulating battles and controlling the minds of its opponents.",
+    "relations": "It may be found in the company of other aberrations or as a servant to powerful entities.",
+    "environment": "Typically found in dark, mystical areas where it can exert its influence.",
+    "strengths": "Possesses truesight and high intelligence, allowing it to see through illusions and manipulate situations to its advantage.",
+    "weaknesses": "Vulnerable to magical attacks that bypass its resistances.",
+    "attacks": "Employs two Grasp of the Void attacks, dealing force damage and possibly stunning targets.",
+    "most_powerful_ability": "Can cast devastating spells like meteor swarm and feeblemind once per day, significantly affecting its foes.",
+    "equipment": "Carries advanced magical implements that enhance its mystical capabilities.",
+    "senses": "Has truesight out to 120 feet, allowing it to see through illusions and invisibility.",
+    "skills": "Excels in arcana and deception, indicating its knowledge of the arcane and ability to manipulate others.",
+    "additional_information": [
+        "Immune to psychic and poison damage",
+        "Resistant to cold, fire, lightning, and nonmagical physical damage from non-silver attacks",
+        "Condition immunities include frightened, charmed, and poisoned.",
+        "Commanding presence with high passive perception.",
+        "Advanced spellcasting capabilities, requiring no material components."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting based on Intelligence with a high spell save DC of 20, allowing for versatile combat and manipulation.",
+    "test_queries": [
+        "aberration with powerful psychic spells",
+        "creature with truesight and spellcasting abilities",
+        "manipulative monster using fear and confusion",
+        "intelligent being that can stun opponents",
+        "spellcaster that looks like an aberration"
+    ]
+}

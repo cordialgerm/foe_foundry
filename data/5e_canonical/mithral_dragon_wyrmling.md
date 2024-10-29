@@ -1,6 +1,8 @@
 <MonsterName/>Mithral Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>44</HP>
 <summary>The Mithral Dragon Wyrmling is a medium-sized dragon that embodies neutrality and possesses striking abilities that make it a formidable opponent despite its young age. With an impressive flying speed and the ability to resist magical effects, this wyrmling excels in maneuverability and magic resilience. Its combat capabilities are reinforced by a sharp bite and a powerful area-effect breath weapon that hinders movement and inflicts damage. However, being a young dragon, despite its potential, it may still struggle against more experienced adventurers. The creature thrives on agility and offensive spells, making it a noteworthy foe in a campaign setting.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Furthermore, the prized Shard Breath ability allows the wyrmling to unleash a ba
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mithral Dragon Wyrmling
 
 *Medium* *Dragon* *Neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage. Instead of dealing damage, the dragon can attempt to end one magical effect of its choice of 2nd level or lower on the target. This effect works like the dispel magic spell, except the dragon must always make an ability check. Its ability check for this is +4.
 - **Shard Breath (Recharge 5–6):** The mithral dragon spits metallic shards in a 15-foot cone. Each creature in that area must make a DC 11 Dexterity saving throw, taking 14 (4d6) slashing damage on a failed save, or half as much damage on a successful one. The area becomes difficult terrain until the start of the dragon’s next turn, then the shards dissolve into wisps of silvery smoke.
+</statblock>
 
 

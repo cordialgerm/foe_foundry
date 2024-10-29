@@ -1,0 +1,50 @@
+{
+    "name": "Giant Lizard",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 19,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 ft. walking, 30 ft. climbing",
+    "role": "null",
+    "tags": [
+        "beast",
+        "reptile",
+        "mount"
+    ],
+    "adjectives": [
+        "large",
+        "cold-blooded",
+        "muscular",
+        "tough-scaled"
+    ],
+    "description": "A large, cold-blooded reptile covered in tough scales, with a long muscular body and a powerful tail.",
+    "memorable": "The Giant Lizard's ability to detach its tail provides a strategic escape while reducing damage.",
+    "goals": "Survive and defend itself; often domesticated or used as mounts.",
+    "relations": "Lizardfolk keep them as pets; used by drow and duergar as mounts.",
+    "environment": "Deserts, jungles, and caves.",
+    "strengths": "Excellent climbers, capable of inflicting moderate damage with their bite, durable for their challenge rating.",
+    "weaknesses": "Low intelligence and charisma limit complexity in thought and strategic planning.",
+    "attacks": "Bite attack with good accuracy, inflicting piercing damage.",
+    "most_powerful_ability": "Detach Tail allows it to evade damage and retreat during combat.",
+    "senses": "Has darkvision up to 30 feet, allowing it to see in dim light.",
+    "skills": "Possesses a Stealth skill score of 13, making it capable of ambush tactics.",
+    "additional_information": [
+        "Can be ridden or used as a draft animal.",
+        "Good endurance and capable of traversing difficult terrain.",
+        "Moderate armor class and hit points for lower-level encounters.",
+        "Predictable in combat due to low strategic thinking.",
+        "Slow-moving but powerful when provoked."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large reptile found in jungles and deserts",
+        "cold-blooded creature known for climbing",
+        "giant beast with a detachable tail",
+        "mount used by desert-dwelling tribes",
+        "muscular lizard with a strong bite"
+    ]
+}

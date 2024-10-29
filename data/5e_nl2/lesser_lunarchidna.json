@@ -1,0 +1,52 @@
+{
+    "name": "Lesser Lunarchidna",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "climb 30 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealthy",
+        "aberration",
+        "predator"
+    ],
+    "adjectives": [
+        "deceptive",
+        "mobile",
+        "shadowy"
+    ],
+    "description": "The Lesser Lunarchidna is a Medium-sized aberration known for its stealthy and deceptive nature. It has good natural defenses, high Dexterity, and is capable of climbing difficult surfaces effortlessly. It thrives in darkness, utilizing its abilities to evade detection.",
+    "memorable": "Its bite attack can reduce the maximum hit points of its victim, posing a serious threat to weakened foes.",
+    "goals": "To hunt and ambush unsuspecting prey in dimly lit areas.",
+    "relations": "Often found in the company of other creatures that lurk in shadows or rely on stealth.",
+    "environment": "Typically encountered in dark, subterranean areas or environments with plenty of cover.",
+    "strengths": "Immune to poison damage, capable of stealth and climbing.",
+    "weaknesses": "Disadvantaged in bright light, making it vulnerable in well-lit settings.",
+    "attacks": "Can perform Multiattack with a Bite that deals necrotic damage and Claws that deal slashing damage.",
+    "most_powerful_ability": "The Bite attack can drastically reduce a target's maximum hit points, leading to potential death.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 10 feet, allowing it to detect hidden creatures in darkness.",
+    "skills": "High proficiency in stealth, making it difficult to detect when it hides.",
+    "additional_information": [
+        "Can climb difficult surfaces without penalty.",
+        "Takes the Hide action as a bonus action in dim light or darkness.",
+        "Has decent mobility with both climbing and walking speeds.",
+        "Low Intelligence makes it less adept at complex problem-solving.",
+        "Uses Deep Speech and Elvish to communicate."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadowy predator that hunts in darkness",
+        "climbing stealthy monster with a dangerous bite",
+        "dark environment monster with necrotic attacks",
+        "deceptive creature known for ambushing prey",
+        "mobile aberration that thrives in dim light"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Carrion Beetle",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 127,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "slow walking speed of 10 feet and burrowing speed of 30 feet",
+    "role": "Bruiser",
+    "tags": [
+        "beetle",
+        "acid",
+        "large"
+    ],
+    "adjectives": [
+        "formidable",
+        "slow",
+        "powerful"
+    ],
+    "description": "The Carrion Beetle is a Large beast, characterized by its robust physique, capable of powerful physical attacks with its bite and claws, as well as a dangerous acid spit ability.",
+    "memorable": "Its Acid Spit ability allows it to target multiple foes with a devastating line attack, making it a significant threat on the battlefield.",
+    "goals": "To engage in combat and inflict damage on foes using its physical and acid-based attacks.",
+    "relations": "It may be encountered in areas with other scavenging creatures or as part of an ecosystem that includes carrion feeders.",
+    "environment": "Typically found in regions where carrion is abundant, such as graveyards or battlefields.",
+    "strengths": "High hit points and strong physical attacks, along with immunity to paralysis.",
+    "weaknesses": "Slow movement hinders its ability to reposition in combat and low intelligence limits its tactical options.",
+    "attacks": "Can perform a multiattack consisting of one powerful bite and two slashing claw strikes, along with a damaging acid spit.",
+    "most_powerful_ability": "Acid Spit, which allows it to create a hazardous area that damages multiple foes.",
+    "equipment": null,
+    "senses": "Possesses darkvision to see in dim conditions and a low passive perception score.",
+    "skills": null,
+    "additional_information": [
+        "Immunity to paralysis enhances its survivability in combat.",
+        "Has a significant Strength score, bolstering its physical attacks.",
+        "Capable of inflicting heavy area damage with Acid Spit.",
+        "Relies on instinct rather than intelligence for decision-making.",
+        "Can swiftly burrow to evade threats or make tactical retreats."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large beetle with acid spit",
+        "powerful creature in graveyards",
+        "slow moving giant beetle",
+        "beetle that attacks with bite and claws",
+        "formidable monster with multiattack ability"
+    ]
+}

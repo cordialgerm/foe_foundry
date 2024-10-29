@@ -1,0 +1,53 @@
+{
+    "name": "Pustulent Shambler",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 232,
+    "ac": 10,
+    "srd": false,
+    "cr": "13",
+    "movement": "climb 30 ft., walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "ooze",
+        "disease",
+        "acid",
+        "gargantuan"
+    ],
+    "adjectives": [
+        "pustulent",
+        "corrosive",
+        "infectious"
+    ],
+    "description": "A large, amorphous ooze that can absorb flesh and move stealthily through narrow spaces, capable of poisoning and debilitating enemies with a foul stench and the Bonerot disease.",
+    "memorable": "The ability to absorb corpses to regain health and infect others with Bonerot makes it a terrifying foe.",
+    "goals": "To consume flesh for sustenance and spread Bonerot disease.",
+    "relations": "May be encountered alongside other undead or oozes.",
+    "environment": "Typically found in decay-ridden locations or near battlefields of the fallen.",
+    "strengths": "Resilient due to high hit points and capabilities to damage and weaken foes.",
+    "weaknesses": "Low Dexterity makes it vulnerable to ranged attacks; predictable behavior due to lack of intelligence.",
+    "attacks": "Makes multiple pseudopod attacks dealing bludgeoning and acid damage and can infect with Bonerot disease.",
+    "most_powerful_ability": "The Bonerot ability that weakens victims over time and can lead to death if untreated.",
+    "equipment": null,
+    "senses": "Blindsight 60 ft., allowing it to navigate despite being blind beyond that radius.",
+    "skills": null,
+    "additional_information": [
+        "Can move through spaces as narrow as 1 inch.",
+        "Infects with Bonerot disease that weakens physical capabilities.",
+        "Corrosive effect on bone, damaging weapons made of bone.",
+        "Possesses a foul stench that poisons nearby creatures.",
+        "Regains health by consuming corpses, enhancing its durability."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan ooze that absorbs corpses",
+        "toxic ooze that spreads disease",
+        "infectious monster with corrosive properties",
+        "creature that moves through tight spaces",
+        "pustulent monster with a foul stench"
+    ]
+}

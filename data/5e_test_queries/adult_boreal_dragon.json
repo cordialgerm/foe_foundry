@@ -1,0 +1,25 @@
+{
+    "name": "Adult Boreal Dragon",
+    "queries": [
+        {
+            "query": "huge dragon with fire immunity and a fear-inducing presence",
+            "variant": "huge fire immune dragon with a presence that induces fear"
+        },
+        {
+            "query": "ice-themed dragon that breathes fire and has strong perception skills",
+            "variant": "dragon with an ice theme that breathes fire and is good at perception"
+        },
+        {
+            "query": "Boreal Dragon, an opponent with high Strength score and cold resistance",
+            "variant": "Boreal Dragon, a foe having high Strength and resistant to cold"
+        },
+        {
+            "query": "massive dragon found in icy environments with magical breath weapon",
+            "variant": "giant dragon located in ice areas that has a magical breath attack"
+        },
+        {
+            "query": "chaotic neutral dragon with darkvision and multiattack abilities",
+            "variant": "chaotic dragon that is neutral with darkvision and can perform multiattacks"
+        }
+    ]
+}

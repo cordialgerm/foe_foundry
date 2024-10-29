@@ -1,0 +1,49 @@
+{
+    "name": "Morphoi",
+    "creature_type": "Plant",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 33,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "plant",
+        "shapeshifter",
+        "amphibious"
+    ],
+    "adjectives": [
+        "chaotic",
+        "deceptive",
+        "versatile"
+    ],
+    "description": "The Morphoi is a plant creature capable of transforming into humanoid shapes, exhibiting unsettling adaptability and a blend of physical features.",
+    "memorable": "Its ability to change shape into humanoids makes it a unique and deceptive foe.",
+    "goals": "To ambush and deceive its enemies by taking on humanoid forms.",
+    "relations": "Can be encountered with other chaotic evil creatures or in ambush scenarios.",
+    "environment": "Usually found in environments with water, such as swamps or near bodies of water.",
+    "strengths": "Good dexterity and strength enhance its combat capabilities and versatility in tactics.",
+    "weaknesses": "Relatively low hit points compared to stronger foes make it vulnerable to sustained damage.",
+    "attacks": "Utilizes sharp claws and ranged attacks with a trident and shortbow for versatile combat options.",
+    "most_powerful_ability": "The Change Shape ability allows for strategic infiltration and ambush tactics.",
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can breathe both air and water.",
+        "Has a good mix of melee and ranged combat abilities.",
+        "Retains statistics in both humanoid and plant forms.",
+        "Returns to its true form upon death.",
+        "Relatively low resilience makes it susceptible if caught off guard."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic plant that transforms into humanoids",
+        "versatile amphibious plant creature",
+        "shape-shifting monster found near water",
+        "plant monster with deceptive combat tactics",
+        "Morphoi ambush strategies"
+    ]
+}

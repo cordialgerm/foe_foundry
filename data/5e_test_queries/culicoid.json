@@ -1,0 +1,25 @@
+{
+    "name": "Culicoid",
+    "queries": [
+        {
+            "query": "large fiend that can fly and drains blood",
+            "variant": "large fiend flying blood-draining creature"
+        },
+        {
+            "query": "chaotic evil creature with strong piercing attacks",
+            "variant": "creature of chaotic evil with powerful piercing strikes"
+        },
+        {
+            "query": "monster with mosquito transformation and high resilience",
+            "variant": "creature that transforms into mosquitos and has great durability"
+        },
+        {
+            "query": "fiend known for its aggressive multiattack and poison abilities",
+            "variant": "fiend with strong multiattack and poisonous attacks"
+        },
+        {
+            "query": "creature with blood sense ability and magic resistance",
+            "variant": "creature that senses blood and has resistance to magic"
+        }
+    ]
+}

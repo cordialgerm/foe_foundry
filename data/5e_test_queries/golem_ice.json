@@ -1,0 +1,25 @@
+{
+    "name": "Ice Golem",
+    "queries": [
+        {
+            "query": "large ice monster with a grappling ability in frigid environments",
+            "variant": "large icy creature that can grapple enemies in cold places"
+        },
+        {
+            "query": "construct that traps creatures and has high cold damage",
+            "variant": "creature that is a construct and inflicts severe cold damage while trapping foes"
+        },
+        {
+            "query": "durable monster that can petrify and is immune to cold",
+            "variant": "tough creature that can freeze enemies and resists cold damage"
+        },
+        {
+            "query": "frost creature with a powerful slam attack and special ice powers",
+            "variant": "icy monster with a strong slam attack and unique ice abilities"
+        },
+        {
+            "query": "monster with high strength and cold resistance that lives in icy terrain",
+            "variant": "creature with great strength and immunity to cold found in snowy areas"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Shockwing</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>27</HP>
 <summary>The Shockwing is a small, unaligned beast, resembling a giant moth with notable electrical qualities. With an Armor Class of 12 and 27 hit points, it possesses average defensive capabilities but can deal a surprising amount of damage for its Challenge Rating of 1, making it a moderate threat for low-level adventurers. Its flying speed of 30 feet allows it to maneuver effectively in combat, while its walking speed of 25 feet ensures it can navigate varied terrain. The creature's strengths lie in its lightning damage immunity and the ability to unleash powerful area-of-effect attacks, which can stun opponents. However, it has very low intelligence and charisma, making it ineffective in social or cunning tactics. The Shockwing's reliance on physical attacks and saving throws means it can be vulnerable when it runs into sources of resistance or damage reduction in combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Shockwing can make two attacks due to its Multiattack feature, bo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shockwing
 
 *Small* *Beast* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Fulminating Wings (1/Day):** A 20-foot radius burst of electricity releases from the shockwing. Each creature in that area must succeed on a DC 12 Constitution saving throw or be stunned until the end of its next turn.
 
 
+</statblock>
 
 

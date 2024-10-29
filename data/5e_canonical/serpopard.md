@@ -1,6 +1,8 @@
 <MonsterName/>Serpopard</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>85</HP>
 <summary>The Serpopard is a formidable large monstrosity known for its unique appearance and stealthy abilities. Unaligned in nature, this creature is adept at ambushing its foes in coastal or swampy environments, utilizing its camouflage and quick reflexes. With an Armor Class of 15 owing to its natural armor and a solid pool of 85 hit points, the Serpopard can endure significant damage in combat. It presents a Challenge Rating of 4, which makes it a mid-tier threat to adventurers, capable of dealing substantial damage with its multiattack feature, combining both bite and claw attacks. While it showcases strong Dexterity and Strength, it suffers from poor Intelligence and Charisma, indicating that it may lack in strategic interaction and social situations. Overall, the Serpopard is a dangerous predator that excels in ambush tactics but can be outmatched by clever opponents.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ In combat, the Serpopard can perform several actions:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Serpopard
 
 *Large* *Monstrosity* *Unaligned*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 12 (2d8 + 3) piercing damage.
 - **Claw:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.
 - **Musk (Recharges after a Short or Long Rest):** The serpopard releases foul-smelling musk in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw. On a failure, a creature takes 21 (6d6) poison damage and is poisoned for 1 hour or until it spends 10 minutes washing off the musk. On a success, a creature takes half the damage and isn’t poisoned. While a creature is poisoned in this way, any creature that starts its turn within 5 feet of the poisoned creature must succeed on a DC 13 Dexterity saving throw or be poisoned until the end of its turn.
+</statblock>
 
 

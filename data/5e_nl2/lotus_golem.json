@@ -1,0 +1,49 @@
+{
+    "name": "Lotus Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 82,
+    "ac": 14,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "golem",
+        "magical"
+    ],
+    "adjectives": [
+        "resilient",
+        "agile",
+        "spellcasting"
+    ],
+    "description": "The Lotus Golem is a large construct known for its resilience and agility, characterized by its unique features related to water and magic.",
+    "memorable": "It can absorb spells, providing both defensive and offensive capabilities, while also regaining hit points.",
+    "goals": "To serve its creator and support spellcasters in combat.",
+    "relations": "Typically created and controlled by powerful spellcasters.",
+    "environment": "Often found in places of magical significance or among spellcasters.",
+    "strengths": "Immune to certain damage types and conditions, possesses strong spellcasting support abilities.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma limit its effectiveness in social interactions.",
+    "attacks": "Can make two melee attacks with magical water strikes that deal significant damage combining bludgeoning and force damage.",
+    "most_powerful_ability": "Arcane Pool allows it to absorb spell energy and cast spells without using spell slots.",
+    "senses": "Has exceptional Perception with a +9 modifier, allowing it to notice subtle changes in its environment.",
+    "skills": "Skilled in Athletics with a +6 modifier, showcasing its physical prowess.",
+    "additional_information": [
+        "Can traverse water effortlessly due to the Water Walker ability.",
+        "Immune to spells that alter its form through the Immutable Form ability.",
+        "Regains hit points through its Arcane Absorption reaction.",
+        "Possesses Magic Resistance, giving it advantage on spell saving throws.",
+        "Has multiple damage immunities and resistances to enhance survivability."
+    ],
+    "damage_types": [],
+    "spellcasting": "Absorbs energy from nearby spellcasting and can cast spells using stored charge points.",
+    "test_queries": [
+        "construct that absorbs spells and heals",
+        "large golem with water abilities",
+        "magic resistance creature with melee attacks",
+        "Lotus Golem combat abilities and features",
+        "golem that supports spellcasters in battle"
+    ]
+}

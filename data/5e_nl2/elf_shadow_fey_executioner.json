@@ -1,0 +1,53 @@
+{
+    "name": "Elf, Shadow Fey Executioner",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 172,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walking speed of 30 feet",
+    "role": null,
+    "tags": [
+        "fey",
+        "executioner",
+        "shadow",
+        "necrotic"
+    ],
+    "adjectives": [
+        "shadowy",
+        "lethal",
+        "resilient"
+    ],
+    "description": "A medium-sized humanoid with a fearsome presence, wielding necrotic-infused weapons. This executioner commands severed heads and utilizes shadows for movement, embodying a unique and sinister aspect of fey magic.",
+    "memorable": "Masters the art of executing designated targets with necrotic weapon attacks and the ability to animate severed heads, causing vulnerability to those it hunts.",
+    "goals": "Typically hunts specific targets assigned by shadow fey nobility. Acts as a deadly enforcer in the fey realms.",
+    "relations": "Often serves shadow fey nobility and may be associated with other fey creatures.",
+    "environment": "Usually found in dark or shadowy areas, often in service to powerful fey beings.",
+    "strengths": "Robust hit points and condition immunities to being charmed and frightened; possesses powerful necrotic weapon attacks.",
+    "weaknesses": "Sensitive to sunlight, suffering disadvantage on attacks and perception in bright light.",
+    "attacks": "Utilizes a terrifying multiattack strategy with necrotic weapons and animated severed heads that inflict additional vulnerability.",
+    "most_powerful_ability": "Necrotic Weapons ability enhances its attacks with additional necrotic damage based on the essence of slain foes.",
+    "equipment": null,
+    "senses": "Possesses blindsight out to 10 feet and is quite perceptive, with a passive perception score of 15 in darkness.",
+    "skills": "Notable proficiency in Perception, making it more aware of its surroundings.",
+    "additional_information": [
+        "Can animate severed heads to attack foes, dealing ongoing damage.",
+        "Advantage on saves against being charmed due to its Fey Ancestry.",
+        "Can vanish into shadows, enhancing its stealth and tactical options.",
+        "Commands heads that inflict vulnerability to necrotic damage.",
+        "Has a strong Strength score, allowing it to excel in physical encounters."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadowy executioner with necrotic weapons",
+        "lethal fey creature that commands severed heads",
+        "humanoid fey with sunlight sensitivity",
+        "shadow traveler that hunts targets for nobility",
+        "necrotic infused attacker with advantage against charm"
+    ]
+}

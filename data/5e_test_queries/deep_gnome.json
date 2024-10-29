@@ -1,0 +1,25 @@
+{
+    "name": "Deep Gnome",
+    "queries": [
+        {
+            "query": "small humanoid that lives underground and is good at stealth",
+            "variant": "small underground humanoid skilled in stealth"
+        },
+        {
+            "query": "dark stone-skinned gnome with abilities focused on magic defense",
+            "variant": "dark-skinned gnome with magic resistance abilities"
+        },
+        {
+            "query": "deep gnome known for its mining skills and traps in the Underdark",
+            "variant": "deep gnome famous for mining and trap-making in the underground"
+        },
+        {
+            "query": "cunning gnome with darkvision that uses crystalline attacks",
+            "variant": "sly gnome with darkvision utilizing crystal attacks"
+        },
+        {
+            "query": "underground monster with a chain shirt armor and a war pick",
+            "variant": "subterranean creature wearing chain shirt and wielding a war pick"
+        }
+    ]
+}

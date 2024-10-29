@@ -1,6 +1,8 @@
 <MonsterName/>Climbing Vine</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>13</HP>
 <summary>The Climbing Vine is a medium-sized, unaligned plant creature that provides a unique challenge in encounters due to its ability to grapple foes and inflict damage through its specialized abilities. It features a low Armor Class of 11, which makes it somewhat easier to hit, but it compensates with decent hit points totaling 13, derived from rolling 2d8+4. With a Challenge Rating of 1/8, it is considered a minor threat that can still impact gameplay through its grappling and damaging capabilities. Strengths include its implementation of the Digestive Dew ability that deals acid damage to grappled enemies, while its weakness lies in its vulnerable Dexterity score, which is very bad, making it easy for opponents to evade its attacks. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a reaction, the Climbing Vine can trigger Grasping Retaliation when a creatur
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Climbing Vine
 
 *Medium* *Plant* *unaligned*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Grasping Retaliation:** When a creature hits the climbing vine with melee attack while within 5 ft. of the vine the vine can make one Dewvine attack vs. it.
 
 
+</statblock>
 
 

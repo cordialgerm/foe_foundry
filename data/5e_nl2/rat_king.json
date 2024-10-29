@@ -1,0 +1,53 @@
+{
+    "name": "Rat King",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 76,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "20 ft. walking, 30 ft. burrowing",
+    "role": "Skirmisher",
+    "tags": [
+        "rat",
+        "summoner",
+        "stealth"
+    ],
+    "adjectives": [
+        "chaotic",
+        "cunning",
+        "resilient",
+        "sinister"
+    ],
+    "description": "The Rat King is a Medium-sized monstrosity with a chaotic evil demeanor, possessing a distinctive appearance that reflects its leadership over rats. It combines stealth and resilience with the ability to manipulate its surroundings.",
+    "memorable": "The Rat King can summon swarms of rats and absorb them for temporary hit points, making it a strategic combatant.",
+    "goals": "To spread misfortune and manipulate combat scenarios through stealth and summoning minions.",
+    "relations": "Often accompanied by swarms of rats and can command both normal and giant rats.",
+    "environment": "Commonly found in urban areas or places teeming with vermin.",
+    "strengths": "Immunity to poison damage and resistance to most nonmagical physical damage, along with conditions like being charmed or frightened.",
+    "weaknesses": "Low Strength score limits its physical confrontational capabilities.",
+    "attacks": "Employs multiple bite attacks that deal piercing and poison damage while potentially causing exhaustion.",
+    "most_powerful_ability": "Plague of Ill Omen creates a corrupting aura that imposes disadvantage on nearby foes.",
+    "equipment": null,
+    "senses": "Possesses Keen Smell, gaining advantage on Perception checks related to scent.",
+    "skills": "Expertise in Stealth, enabling it to move unnoticed in various environments.",
+    "additional_information": [
+        "Can call rats to the battlefield once a day.",
+        "Absorption ability allows for healing from allied rats.",
+        "Uses a strategic combination of stealth and summoning.",
+        "Its magical aura inflicts disadvantage on nearby enemies.",
+        "Health and resilience make it a tough opponent to defeat."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "sinister rat summoner",
+        "mean giant rat leader with poison attacks",
+        "sneaky rat king that causes misfortune",
+        "monster that absorbs rats for hp",
+        "cunning creature with horde of rats"
+    ]
+}

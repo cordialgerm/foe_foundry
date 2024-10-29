@@ -1,0 +1,54 @@
+{
+    "name": "Rum Lord",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 78,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "climb 10 ft., walk 20 ft., swim 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "poison",
+        "intoxicating",
+        "chaotic"
+    ],
+    "adjectives": [
+        "chaotic",
+        "small",
+        "potent",
+        "debilitating"
+    ],
+    "description": "The Rum Lord is a small, chaotic fey with a vibrant personality, embodying the intoxicating powers of drunkenness. It wields an Ale Tap Scepter and a Broken Bottle Shiv, making it a colorful and dangerous opponent in close combat.",
+    "memorable": "With its Aura of Drunkenness and the ability to summon rum gremlins, the Rum Lord creates chaotic encounters that can incapacitate its foes.",
+    "goals": "To spread chaos and intoxication among enemies and to revel in the effects of its drunken powers.",
+    "relations": "Often associated with other chaotic fey and spirits, particularly those that enjoy revelry and intoxication.",
+    "environment": "Found in places of merriment or chaos, such as taverns, parties, or wild celebrations.",
+    "strengths": "Resilient against magical effects due to Magic Resistance; can incapacitate enemies with its Aura of Drunkenness.",
+    "weaknesses": "Struggles against effects targeting Wisdom due to a low Wisdom score.",
+    "attacks": "Utilizes melee attacks that include an Ale Tap Scepter for bludgeoning damage and a Broken Bottle Shiv for piercing damage, along with additional poison damage against poisoned foes.",
+    "most_powerful_ability": "Aura of Drunkenness, which poisons enemies within its radius and hampers their movement.",
+    "equipment": "Ale Tap Scepter and Broken Bottle Shiv.",
+    "senses": "Darkvision allows it to see in low light up to 120 feet.",
+    "skills": "Proficient in Athletics and Intimidation, making it effective in physical confrontations and social interactions.",
+    "additional_information": [
+        "Immune to poisoned condition",
+        "Can innately cast Prestidigitation and Command spells at will",
+        "Can call rum gremlins to aid in battle for a limited duration",
+        "Rotgut Belch attack covers targets in debilitating bile",
+        "Aura of Drunkenness gives disadvantage to certain saving throws"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting centered on Charisma; can perform minor magical effects and command other creatures.",
+    "test_queries": [
+        "small chaotic fey with poison abilities",
+        "intoxicating creature that summons allies",
+        "rum lord ability to debilitate foes",
+        "monster that uses drunkenness as a weapon",
+        "fey that casts spells and fights in melee"
+    ]
+}

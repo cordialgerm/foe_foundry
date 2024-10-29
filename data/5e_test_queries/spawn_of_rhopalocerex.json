@@ -1,0 +1,25 @@
+{
+    "name": "Spawn of Rhopalocerex",
+    "queries": [
+        {
+            "query": "chaotic evil fiend with natural armor and flying abilities",
+            "variant": "fiend with natural armor and ability to fly, chaotic evil"
+        },
+        {
+            "query": "large creature that can charm others and has poison immunity",
+            "variant": "creature that is large, immune to poison, and can charm"
+        },
+        {
+            "query": "magic-resistant fiend that deals psychic damage and flies",
+            "variant": "fiend that flies, has magic resistance, and inflicts psychic damage"
+        },
+        {
+            "query": "monster with high Dexterity and multiple melee attack options",
+            "variant": "monster that has multiple melee attacks and a high Dexterity score"
+        },
+        {
+            "query": "Spawn of Rhopalocerex abilities and combat tactics",
+            "variant": "abilities and combat strategies of Spawn of Rhopalocerex"
+        }
+    ]
+}

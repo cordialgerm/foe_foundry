@@ -1,0 +1,25 @@
+{
+    "name": "Bone Colossus",
+    "queries": [
+        {
+            "query": "gargantuan undead monster with telepathic abilities",
+            "variant": "gargantuan undead creature that has telepathic powers"
+        },
+        {
+            "query": "massive bone creature that deals double damage to structures",
+            "variant": "huge bone monster that does double damage to buildings"
+        },
+        {
+            "query": "undead colossus that splits into smaller swarms",
+            "variant": "undead giant that can break into smaller swarms"
+        },
+        {
+            "query": "chaotic evil bone giant immune to necrotic damage",
+            "variant": "chaotic evil bone colossus that is immune to necrotic types of damage"
+        },
+        {
+            "query": "bone colossus with high strength and turn resistance",
+            "variant": "colossus made of bone with high strength and resistance to turning"
+        }
+    ]
+}

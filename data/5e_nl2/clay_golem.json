@@ -1,0 +1,53 @@
+{
+    "name": "Clay Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 163,
+    "ac": 14,
+    "srd": true,
+    "cr": "9",
+    "movement": "20 ft. (slow movement)",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "golem",
+        "guardian"
+    ],
+    "adjectives": [
+        "towering",
+        "formidable",
+        "malleable",
+        "regenerative"
+    ],
+    "description": "The Clay Golem is a towering figure made entirely of malleable clay. It has a strong presence, resembling a humanoid statue brought to life through magic.",
+    "memorable": "Its ability to regenerate while absorbing acid damage and cause Golem's Plague makes it a formidable enemy.",
+    "goals": "Typically serves as a guardian for temples or wizards' lairs, protecting areas and objects of power.",
+    "relations": "Often created and controlled by powerful wizards or artificers, may coexist with other constructs.",
+    "environment": "Commonly found in temples, wizard towers, or hidden lairs.",
+    "strengths": "Regenerates from acid damage, immune to nonmagical damage, and has numerous resistances.",
+    "weaknesses": "Has a notable weakness to fire damage, which temporarily reduces its movement and capabilities.",
+    "attacks": "Deals significant melee damage with slam attacks, has the capacity to push back or knock enemies prone.",
+    "most_powerful_ability": "Acid Absorption allows the golem to heal from acid damage instead of taking damage.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can go berserk when low on hit points, attacking indiscriminately.",
+        "Immutable Form provides immunity to any spell that would change its shape.",
+        "Magic Resistance grants advantage on saves against spells, enhancing its resilience.",
+        "Can mold its hand into different weapons for various damage types.",
+        "Regains hit points from acid damage dealt to it."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "towering clay guardian with regenerative abilities",
+        "large construct capable of causing Golem's Plague",
+        "clay monster immune to nonmagical attacks",
+        "berserk golem that can heal from acid damage",
+        "slow golem with magical weapon attacks"
+    ]
+}

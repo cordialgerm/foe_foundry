@@ -1,6 +1,8 @@
 <MonsterName/>Mead Archon</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>82</HP>
 <summary>The Mead Archon is a Medium-sized celestial being aligned with chaotic good. It thrives as a support character within a party, utilizing its powerful spellcasting and resilient defenses. With an Armor Class of 14 and a total of 82 hit points, it is moderately difficult to take down in battle. The archon has a movement speed of 30 feet on foot and 60 feet while flying, which allows it to navigate the battlefield strategically. With a Challenge Rating of 4, the Mead Archon can provide a considerable challenge for lower-level adventurers while also serving as an interesting ally thanks to its unique abilities. Its strengths lie in its robust defenses, enhanced by magic resistance and conditions immunities, while its weaknesses may involve lower physical damage output when compared to other combat-centric creatures. Notably, the archon can create potions and has a fun, thematic aspect of drunkenness that affects its abilities.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The archon's ability to create a Potion of Healing once per day allows it to tra
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mead Archon
 
 *Medium* *Celestial* *chaotic good*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Divine Guzzle (Recharge 4-6):** The mead archon drinks a pint of alcohol and chooses one of the following effects: <br>* The archon belches fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one. <br>* The archon has advantage on attack rolls and saving throws until the end of its next turn. <br>* The archon regains 10 hit points.
 
 
+</statblock>
 
 

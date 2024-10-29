@@ -1,0 +1,53 @@
+{
+    "name": "Mimic",
+    "creature_type": "Monstrosity",
+    "creature_subtype": "shapechanger",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 feet on foot",
+    "role": "Ambusher",
+    "tags": [
+        "shapechanger",
+        "ambush",
+        "deception",
+        "trap"
+    ],
+    "adjectives": [
+        "deceptive",
+        "sticky",
+        "cunning",
+        "ambush predator"
+    ],
+    "description": "A shape-shifting creature that can transform into inanimate objects, such as chests or doors, to ambush unsuspecting prey. It features an amorphous body and can adhere to and grasp victims with its pseudopods.",
+    "memorable": "The Mimic's ability to disguise itself as everyday objects creates suspense and surprise encounters, making it a notorious trap in dungeons.",
+    "goals": "To ambush and consume unsuspecting adventurers by disguising as ordinary objects.",
+    "relations": "Often found in treasure hoards alongside other creatures or guarding valuable goods.",
+    "environment": "Commonly inhabits dungeons and treasure-filled areas.",
+    "strengths": "High Strength score allows effective grappling and close combat attacks; impressive ambush tactics with the ability to adhere to and restrain its victims.",
+    "weaknesses": "Low Intelligence and Charisma diminish its strategic capabilities and social interactions; its reliance on ambush makes it vulnerable to detection.",
+    "attacks": "Utilizes pseudopod attacks to grapple foes and a bite attack that inflicts both piercing and acid damage on restrained targets.",
+    "most_powerful_ability": "Adhesive ability allows the Mimic to trap and grapple targets that come in contact with it.",
+    "equipment": null,
+    "senses": "Possesses a keen sense of 60 feet, making it effective at detecting nearby humanoids.",
+    "skills": "Stealth proficiency allows it to remain hidden effectively while waiting to ambush.",
+    "additional_information": [
+        "Can use False Appearance to remain indistinguishable from an ordinary object when motionless.",
+        "Undergoes shapeshifting to take on the appearance of various inanimate objects.",
+        "Uses Prey Shield to redirect damage to a grappled opponent during combat."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that disguises as treasure",
+        "ambush predator with sticky attacks",
+        "cunning shapechanger in dungeons",
+        "monster that attacks from inanimate form",
+        "deceptive object that bites back"
+    ]
+}

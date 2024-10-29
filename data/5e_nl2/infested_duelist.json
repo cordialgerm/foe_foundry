@@ -1,0 +1,53 @@
+{
+    "name": "Infested Duelist",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 144,
+    "ac": 18,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 40 ft., climb 30 ft.",
+    "role": null,
+    "tags": [
+        "infestation",
+        "humanoid",
+        "poison"
+    ],
+    "adjectives": [
+        "agile",
+        "versatile",
+        "toxic"
+    ],
+    "description": "The Infested Duelist is a humanoid with exceptional agility and a unique connection to toxins. It features a blend of powerful melee and ranged attacks, and its appearance suggests an unsettling infestation.",
+    "memorable": "Its ability to emit a spore cloud creates a tactical advantage in combat, obscuring vision and hindering attackers.",
+    "goals": "Typically seeks to outmaneuver opponents and exploit their weaknesses in battle.",
+    "relations": "Often encountered with other toxic-affiliated creatures or in areas of biological corruption.",
+    "environment": "Usually found in jungles or areas rich in nature, thriving where toxins are prevalent.",
+    "strengths": "High Dexterity enables rapid attacks and effective evasion, while its unique abilities enhance its survivability and offensive capabilities.",
+    "weaknesses": "Vulnerable to certain conditions despite having immunities, and has below average Strength, Constitution, and Intelligence.",
+    "attacks": "Utilizes multiattack options combining bludgeoning and poison damage through Slam and Shortsword attacks, along with thorn shot ranged attacks.",
+    "most_powerful_ability": "Slam attack inflicts poison damage and can incapacitate targets.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 13, allowing for reasonable awareness of surroundings.",
+    "skills": "Has proficiency in Perception, giving it enhanced awareness in its environment.",
+    "additional_information": [
+        "Damage immunity to poison and resistance to acid damage.",
+        "Can completely avoid damage from area attacks with Evasion.",
+        "Regains footing quickly when knocked prone due to Plant-Powered Mobility.",
+        "Gains advantage on attack rolls against poisoned creatures with Parasite Sense.",
+        "Spore Cloud ability obscures the area when taking damage from ranged attacks."
+    ],
+    "damage_types": [
+        "poison",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "toxic agile humanoid with spore abilities",
+        "poison-resistant fighter with quick movements",
+        "creature that uses spores in battle tactics",
+        "infested duelist with rapid attack style",
+        "humanoid that can evade attacks and poison enemies"
+    ]
+}

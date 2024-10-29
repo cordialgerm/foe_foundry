@@ -1,6 +1,8 @@
 <MonsterName/>Cave Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>200</HP>
 <summary>The Cave Giant is a formidable adversary in Dungeons & Dragons, classified as a Huge, chaotic evil creature. With an impressive Armor Class of 16 and a substantial pool of hit points totaling 200, it can withstand significant damage during encounters. The Cave Giant is known for its raw physical strength, manifesting in a Strength score of 27, resulting in a very good +8 modifier for melee attacks. However, it possesses a below-average Dexterity score of 10, yielding a +0 modifier, indicating it is not particularly agile. Its Constitution is strong with a +6 modifier, giving it exceptional durability in combat. The Cave Giant is also somewhat vulnerable to light, as it suffers severe penalties when exposed to sunlight. While it is capable of dealing substantial damage, with a challenge rating of 10 making it a balanced threat for a party of adventurers, its lack of intelligence and charisma makes it less effective in strategic or social situations.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ Additionally, it can hurl rocks as a ranged weapon attack, which also has a +12 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cave Giant
 
 *Huge* *Giant* *chaotic evil*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Rock:** Ranged Weapon Attack: +12 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage.
 
 
+</statblock>
 
 

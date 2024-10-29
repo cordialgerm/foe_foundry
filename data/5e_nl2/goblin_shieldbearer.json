@@ -1,0 +1,53 @@
+{
+    "name": "Goblin Shieldbearer",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 10,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "goblin",
+        "shieldbearer",
+        "support",
+        "tactical"
+    ],
+    "adjectives": [
+        "nimble",
+        "strategic",
+        "stealthy"
+    ],
+    "description": "The Goblin Shieldbearer is a small, agile humanoid equipped with a shortsword and a defensive posture, often working alongside allies to provide tactical support in battle.",
+    "memorable": "It employs clever tactics to provide cover for its allies through the 'Shield Wall' ability.",
+    "goals": "To support its allies in combat, evade attacks, and provide tactical advantages.",
+    "relations": "Often encountered with other goblins.",
+    "environment": "Typically found in caves, ruins, or forested areas where goblins thrive.",
+    "strengths": "Good at stealth and evading attacks, provides cover for allies.",
+    "weaknesses": "Low physical strength and constitution makes it fragile.",
+    "attacks": "Uses a shortsword for melee attacks dealing piercing damage and a shortbow for ranged attacks.",
+    "most_powerful_ability": "'Shield Wall' ability grants increased defense to itself and nearby goblins.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in dim light within 60 feet.",
+    "skills": "Proficient in stealth, allowing it to blend into its surroundings effectively.",
+    "additional_information": [
+        "Low challenge rating of 1/2",
+        "Has a +3 to stealth checks",
+        "Can use 'Nimble Escape' to disengage or hide effectively",
+        "Works best in groups with other goblins",
+        "Fragile with only 10 hit points"
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "goblin that provides cover to allies",
+        "small agile goblin with a shield",
+        "tactical goblin that hides and evades",
+        "goblin shieldbearer with stealth skills",
+        "goblin protector that helps others in battle"
+    ]
+}

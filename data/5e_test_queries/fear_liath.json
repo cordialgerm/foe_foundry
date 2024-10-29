@@ -1,0 +1,25 @@
+{
+    "name": "Fear Liath",
+    "queries": [
+        {
+            "query": "large undead creature with a curse ability and incorporeal form",
+            "variant": "big undead monster that has a curse power and can become incorporeal"
+        },
+        {
+            "query": "dark gray shadow that instills fear and can blind opponents",
+            "variant": "shadowy gray creature that frightens and can cause blindness"
+        },
+        {
+            "query": "undead that resurrects humanoids and is immune to poison",
+            "variant": "creature that is undead, poisons immune, and can bring humanoids back to life"
+        },
+        {
+            "query": "creature with high strength that moves through walls and floors",
+            "variant": "monster with good strength that can pass through walls and floors"
+        },
+        {
+            "query": "neutral evil undead able to manipulate the battlefield and has good stealth",
+            "variant": "evil-neutral undead that can control the battlefield and has excellent stealth skills"
+        }
+    ]
+}

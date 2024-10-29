@@ -1,0 +1,50 @@
+{
+    "name": "Rhinoceros",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 45,
+    "ac": 11,
+    "srd": true,
+    "cr": "2",
+    "movement": "40 feet walking speed, fast for its size",
+    "role": "Bruiser",
+    "tags": [
+        "herbivore",
+        "aggressive",
+        "charger"
+    ],
+    "adjectives": [
+        "large",
+        "strong",
+        "resilient",
+        "forceful"
+    ],
+    "description": "A large herbivorous mammal with thick, tough skin and a distinctive horn on its nose, known for its immense physical strength.",
+    "memorable": "Its charging attack can knock down foes while dealing significant damage with its horn.",
+    "goals": "Usually grazes on plants and foliage but becomes highly aggressive when threatened.",
+    "relations": "Often found alone in the wild, but may be seen with other herbivores.",
+    "environment": "Grasslands or savannas.",
+    "strengths": "High Strength score allows for powerful melee attacks and considerable resilience.",
+    "weaknesses": "Low Dexterity means it is less agile, making it vulnerable in quick maneuvers.",
+    "attacks": "The Gore attack can deal severe bludgeoning damage and potentially knock opponents prone.",
+    "most_powerful_ability": "Charge ability enhances its Gore attack with extra damage and the chance to knock targets down.",
+    "senses": "Possesses passive perception of 11, indicating average awareness of surroundings.",
+    "skills": null,
+    "additional_information": [
+        "Can perform a Multiattack for two Gore attacks per turn.",
+        "Quaking Stomp ability can knock nearby creatures prone.",
+        "Impressive natural armor provides basic defense.",
+        "Relatively high Constitution enhances its survivability.",
+        "Commonly solitary, making it a more unpredictable encounter."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large herbivore with a horn",
+        "powerful charging beast in savannas",
+        "aggressive rhinoceros that knocks targets down",
+        "thick skinned herbivore with melee attacks",
+        "strong animal that charges with its horn"
+    ]
+}

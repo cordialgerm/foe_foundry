@@ -1,0 +1,25 @@
+{
+    "name": "Nalusa Falaya",
+    "queries": [
+        {
+            "query": "shadowy creature that fears sunlight and is good at hiding",
+            "variant": "creature that is shadowy, hates sunlight, and excels in hiding"
+        },
+        {
+            "query": "medium aberration that can teleport to shadows and has a terrifying glare",
+            "variant": "aberration of medium size able to teleport to shadows with a frightful glare"
+        },
+        {
+            "query": "stealthy monster with darkvision that thrives in dim light",
+            "variant": "monster thriving in dim light possessing darkvision and stealth abilities"
+        },
+        {
+            "query": "creature with the ability to knock foes prone and excel in stealth",
+            "variant": "creature that excels in stealth and can knock enemies down"
+        },
+        {
+            "query": "Nalusa Falaya traits including Shadow Stealth and Sunlight Weakness",
+            "variant": "traits of the Nalusa Falaya like Sunlight Weakness and Shadow Stealth"
+        }
+    ]
+}

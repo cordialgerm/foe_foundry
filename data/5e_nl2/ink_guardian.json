@@ -1,0 +1,52 @@
+{
+    "name": "Ink Guardian",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 102,
+    "ac": 8,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "acid",
+        "resilient"
+    ],
+    "adjectives": [
+        "aggressive",
+        "unpredictable",
+        "chaotic"
+    ],
+    "description": "The Ink Guardian is a large ooze with a distinctive amorphous form, capable of slipping through tight spaces. It is resilient to various damage types and has a deep, ink-like appearance.",
+    "memorable": "It possesses the unique ability to rejuvenate after being defeated, unless its containment bottle is destroyed, making it a persistent threat.",
+    "goals": "To create chaos and disrupt the battlefield while recovering from defeat.",
+    "relations": "May be encountered alongside other oozes or used as a guardian for treasure or secrets.",
+    "environment": "Typically found in areas with dark water or ink-like environments.",
+    "strengths": "Immunities to acid damage and resistances to fire, slashing, and thunder damage, combined with high hit points.",
+    "weaknesses": "Vulnerable to bludgeoning damage if its bottle is breached and ineffective at ranged combat due to low Dexterity.",
+    "attacks": "Can attack with pseudopods, dealing bludgeoning and acid damage with each strike.",
+    "most_powerful_ability": "When reduced to 0 hit points, it explodes in a shower of acid damage, affecting creatures nearby.",
+    "equipment": null,
+    "senses": "It has blindsight up to 60 feet, allowing it to perceive its surroundings without sight.",
+    "skills": null,
+    "additional_information": [
+        "Can regenerate unless its containment bottle is destroyed",
+        "Deals acid damage on contact or melee attacks",
+        "Can slip through spaces as narrow as 1 inch",
+        "Explodes dealing additional damage when reduced to 0 hp",
+        "Starts as Tiny and grows in size upon activation"
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large aggressive acid ooze",
+        "ink creature that regenerates from a bottle",
+        "ooze that explodes when defeated",
+        "amorphous monster with acid attacks",
+        "guardian ooze that deals caustic damage"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Mule",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 10,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "40 feet speed",
+    "role": null,
+    "tags": [
+        "pack animal",
+        "beast of burden",
+        "mount"
+    ],
+    "adjectives": [
+        "stubborn",
+        "reliable",
+        "strong"
+    ],
+    "description": "The Mule is a medium-sized hybrid animal, born from a horse and a donkey, with a solid build suited for carrying heavy loads and navigating difficult terrain.",
+    "memorable": "Known for its stamina and sure-footedness, the Mule can carry significant weight as if it were a larger creature.",
+    "goals": "Primarily serves as a dependable pack animal for travelers and traders.",
+    "relations": "Often found alongside merchants, adventurers, and travelers, aiding in the transport of goods.",
+    "environment": "Commonly found on trade routes, mountainous regions, or any areas requiring a sturdy pack animal.",
+    "strengths": "Excellent carrying capacity due to the 'Beast of Burden' ability, reliable for long journeys.",
+    "weaknesses": "Low intelligence and charisma make it unsuitable for strategic tasks or social interactions.",
+    "attacks": "Hoof attack with a modest bludgeoning damage, primarily for defense.",
+    "most_powerful_ability": "'Beast of Burden' allows the Mule to bear significant weight as a Large creature.",
+    "equipment": null,
+    "senses": "Passive perception of 10, indicating average awareness of surroundings.",
+    "skills": null,
+    "additional_information": [
+        "Stubborn when overworked or mistreated",
+        "Good endurance and resilience",
+        "Basic melee capabilities with hoof attack",
+        "Uses brute strength for physical tasks",
+        "Valued for sure-footedness in difficult terrain"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "strong and reliable pack animal",
+        "medium-sized beast with carrying capacity",
+        "stubborn mule used for transportation",
+        "hybrid creature that navigates difficult terrain",
+        "four-legged mount suitable for adventurers"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Darakhul Captain",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 165,
+    "ac": 16,
+    "srd": false,
+    "ac_description": "breastplate",
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "Leader",
+    "tags": [
+        "undead",
+        "manipulator",
+        "combatant"
+    ],
+    "adjectives": [
+        "formidable",
+        "malevolent",
+        "tactical"
+    ],
+    "description": "The Darakhul Captain is a Medium undead creature characterized by its dark and intimidating presence, decked in a breastplate that signifies its leadership and tactical prowess.",
+    "memorable": "Its ability to manipulate and lead undead minions makes it a formidable adversary on the battlefield.",
+    "goals": "To control and manipulate undead forces and dominate its opponents through fear and tactical advantage.",
+    "relations": "Often accompanied by ghouls and other undead minions, it commands respect among its kind.",
+    "environment": "Typically found in dark, shadowy areas or locations rich in necromantic energy.",
+    "strengths": "Possesses damage immunities and resistances, along with powerful necrotic weapon attacks and a commanding leadership ability.",
+    "weaknesses": "Vulnerable to sunlight, which reduces its effectiveness significantly while exposed.",
+    "attacks": "Utilizes a multiattack strategy with a bite, claw, and longsword, alongside a ranged heavy crossbow attack that combines piercing and necrotic damage.",
+    "most_powerful_ability": "Imperial Conscription, which can reduce a target's hit point maximum and control slain foes as ghouls.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Shows proficiency in Insight, Intimidation, and Perception, allowing it to dominate and assess situations with clarity.",
+    "additional_information": [
+        "Gains advantage on Deception checks when disguised as a living creature.",
+        "All attacks deal additional necrotic damage.",
+        "Can poison creatures in close proximity.",
+        "Commands nearby ghouls with advantage against being turned.",
+        "Leadership ability boosts allies' attack rolls or saving throws."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tactical undead leader with powerful abilities",
+        "undead creature that poisons nearby foes",
+        "master manipulator among undead hordes",
+        "creature that reduces hit points of enemies",
+        "fearsome captain commanding ghouls"
+    ]
+}

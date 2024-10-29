@@ -1,6 +1,8 @@
 <MonsterName/>Grimlock Technical</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>13</HP>
 <summary>The Grimlock Technical is a Medium humanoid that serves as a cunning and stealthy combatant, often found in rocky terrains where it employs its camouflage to gain the upper hand. With a modest challenge rating of 1/2, the Grimlock is designed to be an ambush predator, utilizing its keen senses and stealth skills to surprise opponents. Its strengths lie in its versatility in combat, able to deal bludgeoning and lightning damage with its melee attacks while also engaging at range with its sling and silenced blunderbuss. However, it has relatively low hit points and weak charisma, making it less effective in social situations and more susceptible to being overpowered by stronger foes.</summary>
 
 <detail>
@@ -24,6 +26,7 @@ Overall, the Grimlock Technical is a clever combatant that excels in stealth and
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grimlock Technical
 
 *Medium* *Humanoid*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Smoke Bomb (3/Day):** The grimlock throws a vial at a point up to 20 feet away. The area within 30 feet of that point is heavily obscured for 1 minute or until cleared by a strong wind.
 
 
+</statblock>
 
 

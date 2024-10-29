@@ -1,0 +1,53 @@
+{
+    "name": "Young Flame Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 190,
+    "ac": 18,
+    "srd": false,
+    "cr": "8",
+    "movement": "80 ft. walking, 40 ft. flying",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "fire",
+        "chaotic",
+        "evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "imposing",
+        "fiery"
+    ],
+    "description": "The Young Flame Dragon has a large and imposing presence, with scales that likely shimmer in hues of red and orange, evoking flames. It embodies the chaotic and malevolent nature typical of dragons.",
+    "memorable": "Its powerful breath attack can inflict significant area damage, and its ability to deal fire damage just by being touched makes it a dangerous foe in close combat.",
+    "goals": "It seeks destruction and dominance, often using its fiery abilities to assert its power.",
+    "relations": "Often found in the company of other fire-based creatures or minions that serve its fiery ambitions.",
+    "environment": "Typically found in volcanic or mountainous regions, where it can nest in caves or lairs filled with treasure.",
+    "strengths": "Immunity to fire damage and exceptional speed make it a versatile attacker in combat.",
+    "weaknesses": "Vulnerable to cold damage, which can exploit its fire-based nature.",
+    "attacks": "Utilizes a multiattack with a fierce bite and claws, along with a devastating breath attack that can engulf foes in flames.",
+    "most_powerful_ability": "The Fire Breath, a cone of devastation that can decimate multiple opponents at once.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet and a passive Perception score of 17, allowing it to detect hidden threats effectively.",
+    "skills": "Skilled in Deception, Perception, Persuasion, and Stealth, excelling in charm and stealth tactics.",
+    "additional_information": [
+        "Fire Incarnate ability bypasses fire resistances.",
+        "Heated Body causes fire damage to attackers in melee.",
+        "Can maneuver quickly with high flying speed.",
+        "Relies on positional strategy due to its high AC.",
+        "Its Charisma enhances manipulation and intimidation tactics."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large fiery dragon that can fly",
+        "imposing dragon with devastating fire breath",
+        "dragon that combats with fire and claws",
+        "chaotic creature immune to fire damage",
+        "dangerous monster that deals fire damage when touched"
+    ]
+}

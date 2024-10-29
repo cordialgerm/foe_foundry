@@ -1,0 +1,59 @@
+{
+    "name": "Dragonflesh Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 115,
+    "ac": 18,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "golem",
+        "fear",
+        "magical",
+        "elemental"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "powerful",
+        "magical"
+    ],
+    "description": "The Dragonflesh Golem is a large, powerful construct resembling a hulking creature made from the flesh of dragons, with robust armor and an imposing presence.",
+    "memorable": "Its unique ability to frighten creatures with its Terror Stare and unleash devastating area damage with Elemental Breath makes it a distinct threat on the battlefield.",
+    "goals": "To serve its creator and dominate adversaries in combat.",
+    "relations": "Often created by powerful spellcasters or artisans who seek to control a devastating combat force.",
+    "environment": "Typically found in the lairs of its creators or in places of ancient magical significance.",
+    "strengths": "High strength and constitution allow it to deliver powerful attacks and withstand significant damage, while its magic resistance provides additional durability against spells.",
+    "weaknesses": "Low dexterity leads to reduced agility and potential difficulties in avoiding attacks.",
+    "attacks": "Utilizes powerful bite and claw melee attacks, and can frighten foes with its Terror Stare.",
+    "most_powerful_ability": "Elemental Breath attacks in a 30-foot cone, dealing significant multi-type damage.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet, allowing it to see in darkness.",
+    "skills": null,
+    "additional_information": [
+        "Immutable form prevents alteration by spells.",
+        "Magic resistance provides advantage against magical effects.",
+        "Attacks are considered magical, bypassing resistances.",
+        "Can frighten its foes, hindering their abilities in battle.",
+        "Absorbs elemental damage types for a diverse attack pattern."
+    ],
+    "damage_types": [
+        "fire",
+        "acid",
+        "cold",
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large magical construct with dragon flesh",
+        "powerful golem capable of frightening enemies",
+        "golem that breathes elemental energy",
+        "large creature with magic resistance and powerful melee attacks",
+        "formidable construct with fear-inducing gaze"
+    ]
+}

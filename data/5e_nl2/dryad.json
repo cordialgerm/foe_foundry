@@ -1,0 +1,52 @@
+{
+    "name": "Dryad",
+    "creature_type": "Fey",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 15,
+    "srd": true,
+    "cr": "1",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "nature",
+        "charm",
+        "forest guardian"
+    ],
+    "adjectives": [
+        "slender",
+        "graceful",
+        "nature-bound"
+    ],
+    "description": "A Dryad has a slender, graceful form with bark-like skin and hair that flows like leaves. As a fey spirit bound to a tree, they serve as guardians of forests.",
+    "memorable": "Dryads can magically charm creatures, communicate with animals and plants, and have a strong protective instinct towards their forest home.",
+    "goals": "To protect their tree and woodland home, interact peacefully with those who respect nature, and charm potential threats.",
+    "relations": "Often found in the company of forest creatures, they may also interact with other fey beings and druids.",
+    "environment": "Primarily found in ancient forests, often associated with mighty oak trees.",
+    "strengths": "Possesses strong charm abilities, magic resistance, and the unique ability to move through trees seamlessly.",
+    "weaknesses": "Vulnerable to fire damage, which poses a significant threat to their existence.",
+    "attacks": "Uses melee attacks with a club or vine whip, and can charm targets with captivating scents.",
+    "most_powerful_ability": "Fey Charm allows the Dryad to magically charm a creature, making them see the Dryad as a trusted ally.",
+    "equipment": null,
+    "senses": "Has a high passive perception of 14 and stealth capabilities for remaining unnoticed.",
+    "skills": "Noteworthy in stealth, perception, and nature skills, enhancing its ability to navigate and manipulate its environment.",
+    "additional_information": [
+        "Can move through trees, allowing swift escapes or ambushes.",
+        "Magic Resistance provides an advantage against spells.",
+        "Speak with Beasts and Plants facilitates communication with forest life.",
+        "Entangling Plants can restrain multiple creatures.",
+        "Summons animal allies when in need of assistance."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting includes abilities to cast spells like entangle and goodberry, without needing material components.",
+    "test_queries": [
+        "forest spirit with tree connection",
+        "charming creature that can move through trees",
+        "nature guardian living in ancient woods",
+        "fey creature with bark-like skin",
+        "Dryad charms creatures while defending trees"
+    ]
+}

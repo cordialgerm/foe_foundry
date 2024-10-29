@@ -1,0 +1,25 @@
+{
+    "name": "Fang of the Great Wolf",
+    "queries": [
+        {
+            "query": "large predatory monster with keen hearing and smell",
+            "variant": "large monster that is predatory and has keen sense of smell and hearing"
+        },
+        {
+            "query": "creature that grapples opponents and has a bite attack",
+            "variant": "monster that bites and can grapple foes"
+        },
+        {
+            "query": "monstrosity that grows in size and swallows enemies",
+            "variant": "size-changing monster that can swallow opponents"
+        },
+        {
+            "query": "agile creature with good defenses living in the wild",
+            "variant": "agile wild monster with great defense"
+        },
+        {
+            "query": "ferocious monster with piercing damage and low charisma",
+            "variant": "fierce creature that does piercing damage and has a bad charisma"
+        }
+    ]
+}

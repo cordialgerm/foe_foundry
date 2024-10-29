@@ -1,0 +1,25 @@
+{
+    "name": "Cherufe",
+    "queries": [
+        {
+            "query": "massive fire elemental that creates destructive fissures",
+            "variant": "huge elemental creature that opens dangerous cracks"
+        },
+        {
+            "query": "creature with high armor class immune to fire and poison",
+            "variant": "monster with strong AC immune to fire and resistant to poison"
+        },
+        {
+            "query": "elemental that deals fire damage and uses magma balls",
+            "variant": "fire elemental using magma attacks and causing fire damage"
+        },
+        {
+            "query": "chaotic evil elemental with slam attacks and fire abilities",
+            "variant": "evil elemental creature that attacks with slams and fire powers"
+        },
+        {
+            "query": "creature with a special ability to double speed when taking fire damage",
+            "variant": "monster that can increase speed when damaged by fire"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Devil Bough</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Devil Bough is a formidable Huge Fiend characterized by its neutral evil alignment. This creature possesses significant physical strength and health, making it a robust opponent on the battlefield. With an Armor Class of 14 due to natural armor and 114 hit points derived from rolling 12d12 plus an additional 36, the Devil Bough is challenging to take down. As a Challenge Rating 6 creature, it is suitable for mid-level adventurers, offering a rewarding but perilous encounter. Its main strengths lie in its ability to inflict considerable damage with its claw and bite attacks, while also possessing unique abilities like Grinding Maw, which enhances its attack against restrained foes. However, its movement is limited to walking at just 10 feet, which can be a notable weakness. Additionally, the creature has damage immunities to fire and poison, as well as the ability to sense evil-aligned creatures nearby.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Devil Bough also possesses a reaction known as Arcasynthesis, which it can u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil Bough
 
 *Huge* *Fiend* *neutral evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Arcasynthesis:** When a spell of 5th level or lower is cast within 100 feet of the devil bough, it attempts to synthesize the magic. The spell resolves as normal, but the devil bough has a 50% chance of regaining 5 (1d10) hp per level of the spell cast.
 
 
+</statblock>
 
 

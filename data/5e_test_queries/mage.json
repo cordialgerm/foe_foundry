@@ -1,0 +1,25 @@
+{
+    "name": "Mage",
+    "queries": [
+        {
+            "query": "catapulting fireball casting spellcaster in robes",
+            "variant": "fireball casting spellcaster in robes that catapults magic"
+        },
+        {
+            "query": "humanoid wizard with arcane powers and low physical strength",
+            "variant": "wizard humanoid with low strength and powerful arcane abilities"
+        },
+        {
+            "query": "intelligent mage that specializes in teleportation and crowd control spells",
+            "variant": "smart mage that is great at teleportation and controlling the battlefield"
+        },
+        {
+            "query": "medium creature wearing robes that manipulates magic elements",
+            "variant": "medium humanoid in robes manipulating magical elements"
+        },
+        {
+            "query": "humanoid spellcaster that can summon creatures and cast illusions",
+            "variant": "spellcasting humanoid that has the power to summon and cast illusions"
+        }
+    ]
+}

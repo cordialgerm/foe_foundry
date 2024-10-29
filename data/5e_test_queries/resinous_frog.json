@@ -1,0 +1,25 @@
+{
+    "name": "Resinous Frog",
+    "queries": [
+        {
+            "query": "small amphibian with adhesive skin that grapples enemies",
+            "variant": "small frog with stick skin that can grapples foes"
+        },
+        {
+            "query": "beast that can detach its tongue and immobilize foes",
+            "variant": "creature that can remove its tongue and trap enemies"
+        },
+        {
+            "query": "creature that sticks to attackers and has a low challenge rating",
+            "variant": "monster that adheres to attackers and has low CR"
+        },
+        {
+            "query": "frog with natural armor and a bite attack that deals piercing damage",
+            "variant": "frog with natural defense and bite action that causes piercing damage"
+        },
+        {
+            "query": "Resinous Frog abilities include Adhesive Skin and Detach Tongue",
+            "variant": "Resinous Frog powers involve sticky skin and tongue removal"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Firegeist</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>82</HP>
 <summary>The Firegeist is a small, neutral evil elemental creature that embodies the essence of fire, using its abilities to inflict fear and flame-based damage. With an Armor Class of 14 and 82 hit points, it falls into the challenge rating 2 category, presenting a moderate threat to adventurers. The Firegeist exhibits distinctive strengths such as high Dexterity and Wisdom, allowing it to be agile and perceptive, while being immune to fire and poison damage. However, it is weaker in terms of Strength and Intelligence, making it less effective in physical combat and problem-solving scenarios. Notable traits of the Firegeist include its ability to thrive in fiery environments, its sensitivity to magical light, and its vulnerability to water.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Firegeist can make a Burning Slam, a melee attack that 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Firegeist
 
 *Small* *Elemental* *Neutral Evil*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 
 - **Burning Slam:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 7 (2d6) fire damage. If the target is a flammable object, it ignites. If the target is a creature, the target must succeed on a DC 13 Dexterity saving throw or ignite. Until a creature takes an action to douse the fire, the target takes 3 (1d6) fire damage at the start of each of its turns.
 - **Burning Terror (Recharge 5–6):** The firegeist assaults the mind of one creature it can see within 30 feet of it with the painful, humiliating memory of the firegeist’s first death. The target must make a DC 13 Wisdom saving throw. On a failure, the target takes 14 (4d6) fire damage and is frightened for 1 minute. On a success, the target takes half the damage and isn’t frightened. While frightened, the creature takes 3 (1d6) fire damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

@@ -1,0 +1,50 @@
+{
+    "name": "Pattern Dancer",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 33,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "spellcaster",
+        "stealth",
+        "deception"
+    ],
+    "adjectives": [
+        "chaotic",
+        "nimble",
+        "cunning"
+    ],
+    "description": "The Pattern Dancer is a medium humanoid with an agile build that excels in deception and performance arts. It is characterized by its dark and whimsical appearance, often using shadows to enhance its eerie presence.",
+    "memorable": "The ability to teleport within shadows and cast powerful communal spells makes the Pattern Dancer unique and unpredictable in combat.",
+    "goals": "Mastery of shadow magic and manipulation of others through performance and deceit.",
+    "relations": "Other Pattern Dancers, shadow creatures.",
+    "environment": "Dark and shadowy areas, or places with dim lighting.",
+    "strengths": "Exceptional at performance, high Charisma for spellcasting, and the ability to vanish into shadows.",
+    "weaknesses": "Disadvantage on attack rolls and perception checks in bright sunlight.",
+    "attacks": "Utilizes a Shortsword for piercing damage in melee and a Longbow for ranged attacks, both with good accuracy.",
+    "most_powerful_ability": "Group Actions allows three Pattern Dancers to cast spells collectively, enhancing their magical abilities significantly.",
+    "equipment": null,
+    "senses": "Has darkvision, allowing it to see in darkness as if it were dim light.",
+    "skills": "Skilled in performance, acrobatics, and deception, showcasing its ability to manipulate and entertain.",
+    "additional_information": [
+        "Can cast a variety of spells, including powerful illusions and manipulative enchantments.",
+        "Fey Ancestry provides resilience against charm effects.",
+        "Shadow Traveler allows for strategic repositioning in combat.",
+        "Advantages on Intelligence checks related to shadow magic.",
+        "Vulnerable in bright conditions, heightening the need for stealth."
+    ],
+    "damage_types": [],
+    "spellcasting": "5th-level spellcaster, casting spells like Color Spray, Mirror Image, and Hypnotic Pattern.",
+    "test_queries": [
+        "nimble shadow creature with dark powers",
+        "spellcaster that excels in performance and deception",
+        "creature that teleports in darkness",
+        "manipulative humanoid with sunlight sensitivity",
+        "chaotic creature from shadowy environments"
+    ]
+}

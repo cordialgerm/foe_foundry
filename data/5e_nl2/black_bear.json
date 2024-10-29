@@ -1,0 +1,50 @@
+{
+    "name": "Black Bear",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 19,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "40 feet walking, 30 feet climbing",
+    "role": null,
+    "tags": [
+        "beast",
+        "mammal",
+        "predator"
+    ],
+    "adjectives": [
+        "powerful",
+        "solitary",
+        "foraging"
+    ],
+    "description": "A large, powerful mammal with thick, dark fur and sharp claws, known for its strong physical presence.",
+    "memorable": "Its keen sense of smell makes it a formidable opponent, able to detect hidden threats.",
+    "goals": "Foraging for food such as berries, fish, and small animals, as well as defending territory and cubs.",
+    "relations": "Typically solitary but may be found near cubs or other wildlife.",
+    "environment": "Forests, mountainous areas, and regions with abundant food sources.",
+    "strengths": "Impressive physical strength and high climbing ability.",
+    "weaknesses": "Low armor class and lack of ranged attack or magical abilities.",
+    "attacks": "Multiattack capability, swiping with claws and biting.",
+    "most_powerful_ability": "Keen Smell grants advantage on Perception checks based on smell.",
+    "equipment": null,
+    "senses": "Passive Perception 13, indicating good alertness to surroundings.",
+    "skills": "Proficient in perception, enhancing its environmental awareness.",
+    "additional_information": [
+        "Can stand on hind legs to appear more intimidating.",
+        "Not inherently aggressive but will defend cubs or food sources fiercely.",
+        "Very low Intelligence score indicates poor problem-solving abilities.",
+        "Average Dexterity provides no benefits in agility.",
+        "Relies on strength in close combat with effective melee attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large forest predator",
+        "powerful mammal with claws",
+        "keen smell animal",
+        "solitary bear",
+        "intimidating wildlife creature"
+    ]
+}

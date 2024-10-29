@@ -1,0 +1,25 @@
+{
+    "name": "Ancient River Dragon",
+    "queries": [
+        {
+            "query": "gargantuan water dragon with immense power",
+            "variant": "gargantuam water draggon of immense power"
+        },
+        {
+            "query": "dragon that can breathe both air and water and has high Dexterity",
+            "variant": "dragon able to breathe air and water with high dexterity"
+        },
+        {
+            "query": "territorial dragon that uses water manipulation abilities",
+            "variant": "territorial draggon that manipulates water abilities"
+        },
+        {
+            "query": "Ancient River Dragon with a devastating breath attack and high AC",
+            "variant": "Ancient River Dragoon with devastating breath attack and high AC"
+        },
+        {
+            "query": "dragon skilled in stealth and perception, lives in large bodies of water",
+            "variant": "dragon good in stealth and perception, inhabits large bodies of water"
+        }
+    ]
+}

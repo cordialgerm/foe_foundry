@@ -1,0 +1,52 @@
+{
+    "name": "Accursed Guardian Naga",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Large",
+    "hp": 136,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 40 ft., swim 40 ft.",
+    "role": null,
+    "tags": [
+        "guardian",
+        "naga",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "amphibious",
+        "intelligent",
+        "divine"
+    ],
+    "description": "The Accursed Guardian Naga is a large serpentine creature with a powerful presence, capable of shifting between its serpent and a humanoid form. Its scales shimmer with a mystical aura, and its eyes glint with keen wisdom.",
+    "memorable": "The naga's ability to shapeshift and its command over powerful spells, combined with its lair's enchantments, make it a formidable guardian.",
+    "goals": "Typically serves as a guardian of its lair or sacred space, warding off intruders and protecting ancient secrets.",
+    "relations": "Often serves powerful entities or deities, may have allies among other magical or monstrous beings.",
+    "environment": "Usually found in lairs rich with magical energies, often near bodies of water or in ancient ruins.",
+    "strengths": "Magic Resistance grants advantage on saving throws against spells, and its high Wisdom and Charisma enhance its spellcasting abilities.",
+    "weaknesses": "While highly resilient to magic and poison, it may struggle against non-magical attacks.",
+    "attacks": "The naga possesses a venomous bite that can deal both piercing and poison damage, and its spit poison attack can incapacitate foes from a distance.",
+    "most_powerful_ability": "The Forbiddance spell in its lair creates a powerful barrier against teleportation and planar travel, alongside significant radiant damage to intruders.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immune to poison and charmed conditions.",
+        "Possesses a unique shapeshifting ability that allows it to transform its appearance.",
+        "Can cast a variety of spells, including powerful area-of-effect spells like Flame Strike.",
+        "Has exceptional saving throws against spells enhancing its combat resilience.",
+        "Benefits from the protective properties of its lair, enhancing its defensive capabilities."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "An 11th level spellcaster able to cast a variety of powerful cleric spells, with a spell save DC of 16.",
+    "test_queries": [
+        "magical snake guardian",
+        "serpentine spellcaster",
+        "naga with shapeshifting ability",
+        "poisonous guardian creature",
+        "enchanting lair protector"
+    ]
+}

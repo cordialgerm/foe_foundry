@@ -1,0 +1,51 @@
+{
+    "name": "Adult Cave Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Huge",
+    "hp": 270,
+    "ac": 18,
+    "srd": false,
+    "cr": "19",
+    "movement": "walk 40 ft., burrow 40 ft.",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "burrowing"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "immense"
+    ],
+    "description": "The Adult Cave Dragon boasts immense size, a dark armored hide, and a menacing presence, equipped with numerous spiked appendages that enhance its threat in close combat.",
+    "memorable": "Its ability to manipulate darkness and burrow stealthily makes it an unpredictable and dangerous foe in its domain.",
+    "goals": "Typically seeks to protect its lair and hoard, threatening any intruders.",
+    "relations": "May be encountered with other dragons or large subterranean creatures.",
+    "environment": "Subterranean environments such as caves and underground ruins.",
+    "strengths": "High physical power, resilience, and unique abilities like Darkness Aura and burrowing.",
+    "weaknesses": "Relatively lower Dexterity compared to its strength and constitution.",
+    "attacks": "Can use a frightful presence to instill fear, followed by powerful melee attacks with bite, claw, and tail strikes.",
+    "most_powerful_ability": "Poison Breath: A devastating cone attack that can inflict significant poison damage and status effects.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and tremorsense up to 120 feet, allowing it to detect threats in complete darkness.",
+    "skills": "Proficient in Perception, enabling it to detect enemies effectively.",
+    "additional_information": [
+        "Immunity to poison damage and conditions related to being blinded or poisoned.",
+        "Can create pockets of magical darkness that negate darkvision.",
+        "Has legendary resistance to automatically succeed on failed saving throws a limited number of times per day.",
+        "Can burrow through earth, leaving tunnels or moving undetected beneath the surface.",
+        "Has a reactive ability with Ruff Spikes, adding tactical defense against intruders."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable cave dragon",
+        "dragon with darkness powers",
+        "burrowing dragon creature",
+        "subterranean monster with poison breath",
+        "Adult Cave Dragon encounter"
+    ]
+}

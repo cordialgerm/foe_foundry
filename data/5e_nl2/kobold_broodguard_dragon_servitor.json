@@ -1,0 +1,51 @@
+{
+    "name": "Kobold Broodguard Dragon Servitor",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Small",
+    "hp": 44,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 25 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "kobold",
+        "dragon servant",
+        "guardian"
+    ],
+    "adjectives": [
+        "cunning",
+        "adaptable",
+        "small",
+        "ferocious"
+    ],
+    "description": "The Kobold Broodguard is a small humanoid with vibrant scales, serving as a guardian for dragonkind. Equipped with a shield and a unique bill hook, it embodies the traits typical of kobolds, including adaptability and a fierce loyalty to dragons.",
+    "memorable": "This creature excels in coordinated pack tactics and can bolster its allies while striking effectively in melee with additional damage when it has the advantage.",
+    "goals": "To protect its dragon master and eliminate threats to dragonkind.",
+    "relations": "Usually found alongside dragons and other kobolds, serving them loyally.",
+    "environment": "Commonly found in lairs and caves associated with dragons.",
+    "strengths": "Highly effective in group combat scenarios with advantages from Pack Tactics, significant melee capabilities, and support through Rally!",
+    "weaknesses": "Struggles in bright sunlight, which imposes disadvantage on its attacks and perception.",
+    "attacks": "Utilizes a bill hook for slashing attacks, can knock smaller foes prone, a spiked shield for piercing damage, and a sling for ranged assaults.",
+    "most_powerful_ability": "Rally! can empower nearby kobolds, providing immunity to fear and a damage boost for their next attack.",
+    "equipment": "Bill hook and spiked shield.",
+    "senses": "Has a passive perception of 10.",
+    "skills": null,
+    "additional_information": [
+        "Pack Tactics grants advantage on attack rolls in group combat.",
+        "Dragons Blood provides resistance to a specific damage type.",
+        "Ominous Shadow allows better performance in combat when near its master.",
+        "Draconic Smite enhances melee attacks when having advantage.",
+        "Can effectively support allied kobolds in battle."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small dragon servitor with cunning tactics",
+        "guardian kobold skilled in melee combat",
+        "sunlight sensitive creature serving dragons",
+        "kobold that enhances allies in battle",
+        "ferocious melee fighter aligned with dragons"
+    ]
+}

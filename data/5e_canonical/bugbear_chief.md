@@ -1,6 +1,8 @@
 <MonsterName/>Bugbear Chief</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>15</AC>
+<HP/>71</HP>
 <summary>The Bugbear Chief is a Medium humanoid creature that serves as a formidable leader among bugbears. With a Challenge Rating of 4, it poses a significant threat to adventurers, boasting solid combat capabilities and strategic advantages. The creature has an Armor Class of 15 and a total of 71 hit points, which makes it resilient in battle. Its strength is particularly notable, as it has a Strength score of 18, resulting in an exceptional modifier of +4, allowing it to deal substantial melee damage. Additionally, its Dexterity of 14 provides it with a good modifier of +2, enhancing its agility and ability to remain stealthy. However, it has average intelligence and charisma scores of 10, meaning it does not excel in mental skills but can understand and communicate in Common and Goblin languages. The Bugbear Chief's primary strengths lie in its strong physical attacks and ability to surprise its enemies, but it may struggle in situations requiring high intelligence or charisma.</summary>
 
 <detail>
@@ -15,6 +17,7 @@ Additionally, the Bugbear Chief has a special ability called Move Out, which it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bugbear Chief
 
 *Medium* *Humanoid*
@@ -41,5 +44,6 @@ Source: 5e_artisinal_monsters
 - **Move Out (1/Day):** The bugbear and creatures of its choice within 30 feet move up to half their Speed without provoking opportunity attacks.
 
 
+</statblock>
 
 

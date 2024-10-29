@@ -1,0 +1,25 @@
+{
+    "name": "Kobold",
+    "queries": [
+        {
+            "query": "small reptilian humanoid that prefers dark tunnels and uses traps",
+            "variant": "small humanoid reptile that likes to live in dark tunnels and sets traps"
+        },
+        {
+            "query": "monster that attacks in packs and has poor eyesight in sunlight",
+            "variant": "creature that fights in groups and has weakness to bright light"
+        },
+        {
+            "query": "cunning creature with scaly skin and a tribal lifestyle",
+            "variant": "sly being with scaled skin that lives in tribes"
+        },
+        {
+            "query": "cowardly monster with a strong teamwork ability and low hit points",
+            "variant": "timid creature with high teamwork skills and few hit points"
+        },
+        {
+            "query": "small humanoid that worships dragon-like ancestors and communicates in Draconic",
+            "variant": "little humanoid that honors dragon ancestors and speaks Draconic"
+        }
+    ]
+}

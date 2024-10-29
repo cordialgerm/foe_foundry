@@ -1,0 +1,50 @@
+{
+    "name": "Arcanaphage",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly 30 ft., hover, cannot walk",
+    "role": null,
+    "tags": [
+        "magical creature",
+        "spell eater",
+        "arcane"
+    ],
+    "adjectives": [
+        "formidable",
+        "reactive",
+        "agile"
+    ],
+    "description": "The Arcanaphage is a Medium-sized monstrosity with a slender, almost ghostly form that enables it to hover through magical realms. Its tentacles are long and sinuous, designed for both attack and feeding, while it exhibits an aura of magical energy.",
+    "memorable": "Its ability to consume spells and counter magic makes it a unique and daunting opponent for spellcasters.",
+    "goals": "To feed on magical energy, disrupting the spells of its foes while sustaining itself.",
+    "relations": "Often encountered alongside magical creatures or in locations filled with arcane power.",
+    "environment": "Typically found in magical realms or locations rich in arcane energy.",
+    "strengths": "High Dexterity allows for quick maneuvers and evasions; immunity to magical damage makes it resilient against spell attacks.",
+    "weaknesses": "Very low intelligence and lack of alignment reduce strategic thinking; reliance on magic makes it vulnerable if magic is absent.",
+    "attacks": "Can strike with two tentacle attacks, each capable of dealing significant bludgeoning damage.",
+    "most_powerful_ability": "Arcane Discharge, which causes a damaging explosion of magical energy upon its death.",
+    "equipment": null,
+    "senses": "Possesses blindsight within 60 feet, effectively blind beyond this range.",
+    "skills": "Has an average perception skill, leading to moderate awareness of its surroundings.",
+    "additional_information": [
+        "Immune to conditions like blinded and frightened",
+        "Can regain hit points by consuming spells with its Hunger ability",
+        "Has a maximum Feed score of 8 that influences its feeding ability",
+        "Can disrupt concentration of nearby spellcasters with its Ingest Magic ability",
+        "Countering spells increases its power through feeding"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "arcane creature that consumes magic",
+        "magical energy siphoning monster",
+        "creature immune to spells",
+        "flying monstrosity feeding on spells",
+        "disruptive magical predator"
+    ]
+}

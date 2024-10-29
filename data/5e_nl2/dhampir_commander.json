@@ -1,0 +1,52 @@
+{
+    "name": "Dhampir Commander",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "walking speed of 30 ft.",
+    "role": "Leader",
+    "tags": [
+        "dhampir",
+        "commander",
+        "undead"
+    ],
+    "adjectives": [
+        "charismatic",
+        "tactical",
+        "versatile"
+    ],
+    "description": "A medium humanoid creature with vampiric traits, characterized by its commanding presence and combat prowess.",
+    "memorable": "Can inspire allies to strike as a bonus action, and heals using necrotic damage dealt with attacks.",
+    "goals": "To lead allies in combat and manipulate opponents through charm and tactics.",
+    "relations": "May serve or lead other undead or vampiric creatures.",
+    "environment": "Often found in dark and dimly lit areas, guiding factions or groups in dangerous territories.",
+    "strengths": "High Charisma allows effective manipulation and control over interactions, and resilience against diseases.",
+    "weaknesses": "Susceptible to radiant damage and can be overwhelmed if outnumbered.",
+    "attacks": "Can make up to four rapier or four shortbow attacks, utilizing melee and ranged options effectively.",
+    "most_powerful_ability": "Predatory Charm allows control over humanoids for tactical advantages.",
+    "equipment": "Studded leather armor and a shield for defensive capabilities.",
+    "senses": "Possesses darkvision up to 60 feet, enhancing visibility in dimly lit environments.",
+    "skills": "Demonstrates proficiency in deception, intimidation, and persuasion, making it effective in social interactions.",
+    "additional_information": [
+        "Can grant allies additional attack rolls with Leadership ability.",
+        "Undead Resistance grants advantage on saving throws against diseases.",
+        "Utilizes Dark Thirst to heal by dealing necrotic damage.",
+        "Inspiring Savagery ability enhances allies' combat effectiveness.",
+        "High Dexterity and Charisma for effective combat and social manipulation."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "charismatic undead leader with charm",
+        "dhampir with powerful control abilities",
+        "tactical humanoid commanding commoners",
+        "medium humanoid with necrotic attacks",
+        "monster that can heal while attacking"
+    ]
+}

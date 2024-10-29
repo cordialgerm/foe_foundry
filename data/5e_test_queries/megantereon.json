@@ -1,0 +1,25 @@
+{
+    "name": "Megantereon",
+    "queries": [
+        {
+            "query": "medium-sized predator with stealth abilities in grasslands",
+            "variant": "medium sized predator with abilities of stealth in grasslands"
+        },
+        {
+            "query": "beast with strong claws that can hide effectively",
+            "variant": "beast that can hide effectively with strong claws"
+        },
+        {
+            "query": "swift hunting creature that has keen smell and can pounce",
+            "variant": "swift hunter creature with keen sense of smell that can pounce"
+        },
+        {
+            "query": "predatory beast that inflicts bleeding wounds with bite attacks",
+            "variant": "predatory animal that causes bleeding wounds with bite attacks"
+        },
+        {
+            "query": "agile creature in grassland environments with high Dexterity",
+            "variant": "agile being found in grassland terrains with high dexterity"
+        }
+    ]
+}

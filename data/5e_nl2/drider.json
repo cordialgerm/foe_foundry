@@ -1,0 +1,52 @@
+{
+    "name": "Drider",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 123,
+    "ac": 19,
+    "srd": true,
+    "cr": "6",
+    "movement": "30 ft., climb 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "Underdark",
+        "Drow",
+        "Spider",
+        "Monstrosity"
+    ],
+    "adjectives": [
+        "horrifying",
+        "cruel",
+        "venomous"
+    ],
+    "description": "A terrifying blend of dark elf and giant spider with eight legs and fangs, possessing drow intelligence and magic.",
+    "memorable": "Driders are known to revel in the suffering of their foes, utilizing web-based tactics for ambush.",
+    "goals": "To serve the dark goddess Lolth, often found weaving webs and leading hunts in the Underdark.",
+    "relations": "Servants of Lolth, related to drow and spiders.",
+    "environment": "Typically found in the dimly lit caverns of the Underdark.",
+    "strengths": "High Dexterity enhances stealth and attack capabilities; resistant to poison damage.",
+    "weaknesses": "Sensitive to sunlight, suffering disadvantages on attacks and perception checks.",
+    "attacks": "Multiattack with claws, bite, longsword, and longbow, capable of dealing poison damage.",
+    "most_powerful_ability": "Web Walker allows for unrestricted movement over webs, combined with sunlight sensitivity weaknesses.",
+    "senses": "Has a passive perception of 16, excels in ambush tactics with heightened awareness.",
+    "skills": "Proficient in Stealth and Survival, making it effective in wilderness and ambush settings.",
+    "additional_information": [
+        "Possesses the Fey Ancestry trait granting resistance to being charmed.",
+        "Can climb upside down on ceilings without penalty.",
+        "Utilizes webbing in combat to restrain enemies.",
+        "Can innately cast darkness and faerie fire once per day.",
+        "Possesses a venomous bite that enhances lethality."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can cast spells like darkness and faerie fire using innate abilities.",
+    "test_queries": [
+        "venomous spider humanoid creature",
+        "dark elf spider hybrid of the Underdark",
+        "creature that thrives in darkness and uses webs",
+        "horrifying drider ambush tactics",
+        "cunning drider with poison attacks"
+    ]
+}

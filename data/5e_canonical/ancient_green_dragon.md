@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Green Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>22</CR>
+<AC/>21 (natural armor)</AC>
+<HP/>385</HP>
 <summary>The Ancient Green Dragon is a master of manipulation and cunning, with deep green scales that blend into the dense forests it calls home. Its long, sinuous body and sharp claws make it a fearsome predator, but it prefers to use lies and treachery to ensnare its prey. Green Dragons thrive in ancient forests, where they twist the flora and fauna to their advantage. Their breath weapon is a cloud of toxic, poisonous gas that can suffocate and kill in moments. Green Dragons are known for their intelligence and patience, often playing long, intricate games with their foes before delivering the killing blow.</summary>
 
 <summary>The Ancient Green Dragon is a gargantuan creature renowned for its cunning intelligence, overwhelming strength, and magical prowess. With an impressive Armor Class of 21 and a staggering 420 hit points, it is a formidable opponent in combat, capable of withstanding significant damage. The dragon's challenge rating is 24, indicating it offers a very high level of difficulty and presents a substantial challenge for adventurers, granting a substantial experience reward of 62,000 XP. Its impressive array of abilities allows it to control the battlefield through stealth, powerful attacks, and debilitating spells. However, despite its many strengths, its moderate Dexterity leaves it vulnerable to ranged attacks and some troop formations that require speed.</summary>
@@ -37,6 +39,7 @@ Overall, the Ancient Green Dragon poses a formidable challenge to any party, cap
 
 Source: 5e_srd
 
+<statblock>
 # Ancient Green Dragon (Chromatic)
 
 *Gargantuan dragon, lawful evil*
@@ -89,7 +92,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6+8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6+8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -97,6 +101,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Green Dragon
 
 *Gargantuan* *Dragon*
@@ -148,6 +153,7 @@ Source: 5e_artisinal_monsters
 - **Honeyed Words:** The dragon uses Honeyed Words.
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 19 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 22 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
+</statblock>
 
 
 
@@ -156,6 +162,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Green Dragon
 
 *Gargantuan dragon*
@@ -202,5 +209,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days.
+</statblock>
 
 

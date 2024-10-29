@@ -1,0 +1,49 @@
+{
+    "name": "Rochade",
+    "creature_type": "Fey",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 27,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 ft. walking, 20 ft. climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "trickster",
+        "stealth"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "stealthy"
+    ],
+    "description": "The Rochade is a small, agile fey creature known for its cunning and dexterity. It possesses a dexterous frame and adept combat skills, employing ambush tactics effectively.",
+    "memorable": "Its ability to teleport and manipulate objects makes it a clever trickster in combat, often stealing items and redirecting attacks.",
+    "goals": "The Rochade typically seeks mischief and stealthy thievery, leveraging its abilities to disrupt and distract opponents.",
+    "relations": "It might associate with other fey or creatures from the Underdark, enhancing its connections in enchanted settings.",
+    "environment": "Commonly found in wooded or subterranean areas where it can blend in and maneuver stealthily.",
+    "strengths": "Exceptional mobility with teleportation skills, an advantage in escaping attacks, and the ability to create chaos for enemies.",
+    "weaknesses": "Vulnerable to sunlight, suffering penalties that can significantly hinder its effectiveness in bright conditions.",
+    "attacks": "Employs the 'Thieving Slam' to deal bludgeoning damage or to steal items, and uses ranged attacks with its 'Rock' ability.",
+    "most_powerful_ability": "The 'Switch' ability allows it to evade attacks and potentially redirect damage to allies, showing its tactical nature in combat.",
+    "senses": "Possesses darkvision up to 120 feet, enabling it to see in complete darkness.",
+    "skills": "Has proficiency in evasion tactics, granting it significant advantages in tricky environments due to its elusive nature.",
+    "additional_information": [
+        "Can teleport objects to allies, enhancing teamwork.",
+        "Struggles in direct sunlight, limiting its operational effectiveness.",
+        "Known for ambush tactics and cunning captures.",
+        "Utilizes a mix of melee and ranged combat options.",
+        "Relies on clever maneuvering for both defense and offense."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small fey creature that can teleport",
+        "cunning trickster with sunlight sensitivity",
+        "agile creature that steals items in combat",
+        "stealthy fey who exploits ambush tactics",
+        "creature that can switch places with allies"
+    ]
+}

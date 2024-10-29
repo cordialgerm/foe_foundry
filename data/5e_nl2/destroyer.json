@@ -1,0 +1,52 @@
+{
+    "name": "Destroyer",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "necrotic",
+        "melee"
+    ],
+    "adjectives": [
+        "powerful",
+        "undead commanding",
+        "resilient"
+    ],
+    "description": "The Destroyer is a menacing humanoid clad in scale mail, exuding an aura of necrotic energy, with a strong physique marked by formidable muscle.",
+    "memorable": "The Destroyer's ability to command undead allies and deal necrotic damage makes it a fearsome opponent.",
+    "goals": "It seeks to dominate foes and lead undead forces in battle.",
+    "relations": "Often encountered with undead creatures, acting as their master.",
+    "environment": "Commonly found in dark, foreboding places where it can command its undead minions.",
+    "strengths": "Resistance to necrotic damage and strong physical abilities enhance its combat effectiveness.",
+    "weaknesses": "Poor Intelligence and average Wisdom may lead to strategic challenges in combat.",
+    "attacks": "Utilizes a greataxe and claw attacks, dealing both slashing and necrotic damage.",
+    "most_powerful_ability": "Undead Commander allows it to enhance combat effectiveness by directing undead allies.",
+    "equipment": "Scale mail armor and various melee weapons including a greataxe and spear.",
+    "senses": "Has darkvision with a passive perception of 12, making it aware of its surroundings.",
+    "skills": "Proficient in Athletics, useful for physical challenges, and has decent Intimidation for influencing others.",
+    "additional_information": [
+        "Can deal extra 1d8 necrotic damage with all weapon attacks.",
+        "Has advantage on various saving throws against debilitating effects.",
+        "Multiattack feature allows it to strike twice on its turn.",
+        "Claw attack includes both piercing and necrotic damage, enhancing its threat level.",
+        "Greataxe attack can knock targets prone if they're of Medium size or smaller."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid master of undead",
+        "menacing creature with necrotic attacks",
+        "powerful melee attacker commanding undead",
+        "destroyer with greataxe and necrotic damage",
+        "resilient fighter resistant to necrotic damage"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Urochar",
+    "creature_type": "Aberration",
+    "alignment": "Chaotic Evil",
+    "size": "Huge",
+    "hp": 256,
+    "ac": 19,
+    "srd": false,
+    "cr": "17",
+    "movement": "walk 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "aberration",
+        "chaotic evil",
+        "huge monster"
+    ],
+    "adjectives": [
+        "terrifying",
+        "formidable",
+        "cunning"
+    ],
+    "description": "The Urochar is a huge, rubbery aberration with an imposing presence, characterized by its tentacles and eerie gaze. It is designed for grappling and control in combat.",
+    "memorable": "The Urochar's unique ability to inflict fear upon its death and its paralyzing gaze make it a strategically threatening foe.",
+    "goals": "To control and incapacitate its enemies, instilling fear while dominating the battlefield.",
+    "relations": "Likely associated with other chaotic or aberrant creatures from the realms of madness.",
+    "environment": "Typically found in dark, chaotic places or aberrant realms.",
+    "strengths": "Immunities to fear effects, high damage resistances, and abilities that control combat dynamics.",
+    "weaknesses": "Capable of being affected by high-level spells and effects that can bypass its resistances.",
+    "attacks": "Employs a paralyzing gaze and multiple tentacle attacks that grapple and restrain opponents.",
+    "most_powerful_ability": "Mind-Rending Death, which unleashes fear and psychic damage upon its demise.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, allowing it to see through illusions and detect hidden threats.",
+    "skills": "Proficient in Perception and Stealth, making it adept at ambushing and detecting intruders.",
+    "additional_information": [
+        "Can teleport and hide as a bonus action with Hidden Step.",
+        "Can grapple and constrict enemies, inflicting significant damage.",
+        "Resistant to various damage types, making it a resilient opponent.",
+        "Capable of climbing walls and ceilings without issue.",
+        "Can squeeze through tight spaces, maintaining tactical flexibility."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge monster with paralyzing gaze and tentacles",
+        "aberration that instills fear and grapples enemies",
+        "terrifying creature immune to fear with truesight",
+        "chaotic evil monster that can teleport and choke",
+        "formidable aberration with mind-rending death ability"
+    ]
+}

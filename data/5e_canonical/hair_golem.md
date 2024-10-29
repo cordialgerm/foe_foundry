@@ -1,6 +1,8 @@
 <MonsterName/>Hair Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>13</HP>
 <summary>The Hair Golem is a small, unaligned construct characterized by its unique composition and specialized abilities. With an Armor Class of 13 and a relatively low hit point total of 13, the Hair Golem is not particularly robust, making it a target for attacking characters. However, it is fast and agile, boasting a Dexterity score of 17 that grants it a +3 modifier, resulting in good performance in terms of dodging attacks and landing its own. Its key strength lies in its special abilities, such as immunity to various conditions and the ability to resist certain types of damage, along with the unique ability called Immutable Form, which prevents any alteration to its structure. Despite these strengths, its low challenge rating of 1/4 suggests it is best suited for low-level encounters or as a minion under the command of a more powerful foe.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In summary, the Hair Golem is a construct that excels in speed and immunity to v
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hair Golem
 
 *Small* *Construct* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Lash:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage. The target must succeed on a DC 11 Dexterity saving throw or be knocked prone.
 
 
+</statblock>
 
 

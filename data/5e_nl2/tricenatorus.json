@@ -1,0 +1,51 @@
+{
+    "name": "Tricenatorus",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 184,
+    "ac": 15,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "melee",
+        "ranged",
+        "durable"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "aggressive"
+    ],
+    "description": "The Tricenatorus is a Huge monstrosity with immense physical presence, featuring notable melee and ranged attack capabilities, highlighted by its powerful bite, gore, and regenerative tail spikes.",
+    "memorable": "Its ability to stay at 1 hit point instead of falling unconscious makes it a relentless threat in combat.",
+    "goals": "To engage in brutal physical confrontations, targeting weakened foes for maximum advantage.",
+    "relations": "May serve or be allied with creatures that benefit from its destructive capabilities.",
+    "environment": "Typically found in environments where it can leverage its siege abilities, likely in places prone to conflict or destruction.",
+    "strengths": "High hit points, strong melee damage, and the ability to regenerate tail spikes for ranged attacks.",
+    "weaknesses": "Low Dexterity makes it vulnerable to ranged attacks, and its below-average Intelligence limits tactical options.",
+    "attacks": "Devastating attacks including a powerful bite that can grapple foes, a gore attack that can knock enemies prone, and ranged tail spikes for distance combat.",
+    "most_powerful_ability": "Blood Frenzy allows it to gain advantage on attacks against already injured foes, enhancing its offensive capabilities.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 15, allowing it to notice threats and navigate its environment effectively.",
+    "skills": "Possesses proficiency in perception, enabling it to be vigilant regarding its surroundings.",
+    "additional_information": [
+        "Resistant to nonmagical bludgeoning, piercing, and slashing damage.",
+        "The Siege Monster trait allows it to deal double damage to structures.",
+        "Multiattack enables two offensive actions in a single turn.",
+        "Uses tail spikes strategically, with 24 spikes available for combat.",
+        "Relentless trait allows it to remain standing even when reduced to fatal levels of damage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "huge monster with strong melee attacks",
+        "monstrosity that grapples and knocks foes prone",
+        "powerful creature with tail spike attacks",
+        "durable monster resistant to physical damage",
+        "beast that thrives on attacking weakened enemies"
+    ]
+}

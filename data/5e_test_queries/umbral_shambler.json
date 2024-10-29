@@ -1,0 +1,25 @@
+{
+    "name": "Umbral Shambler",
+    "queries": [
+        {
+            "query": "shadow creature that thrives in darkness and avoids sunlight",
+            "variant": "creature of shadows that evades sunlight and excels in dim light"
+        },
+        {
+            "query": "medium-sized aberration with necrotic and slashing attacks",
+            "variant": "aberration that deals necrotic damage and has slashing attacks"
+        },
+        {
+            "query": "monster immune to charm and exhaustion with unique movement abilities",
+            "variant": "creature that can't be charmed or exhausted and can move through objects"
+        },
+        {
+            "query": "darkness-loving monster that's vulnerable to radiant damage",
+            "variant": "monster that loves darkness and is weak against radiant damage"
+        },
+        {
+            "query": "deceptive creature with claw attacks and sunlight sensitivity",
+            "variant": "cunning creature that has claw strikes and is sensitive to sunlight"
+        }
+    ]
+}

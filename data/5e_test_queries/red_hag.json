@@ -1,0 +1,25 @@
+{
+    "name": "Red Hag",
+    "queries": [
+        {
+            "query": "malevolent fey creature with blood sense and necrotic abilities",
+            "variant": "fey creature that is evil and has blood sense and necrotic capabilities"
+        },
+        {
+            "query": "red-skinned hag that can breathe in water and uses magic",
+            "variant": "hag with red skin that can inhale water and cast spells"
+        },
+        {
+            "query": "medium-sized evil creature that delights in causing suffering",
+            "variant": "medium evil entity that enjoys making others suffer"
+        },
+        {
+            "query": "sneaky fey with high wisdom and necrotic spell attacks",
+            "variant": "cunning fey that has high wisdom and attacks with necrotic spells"
+        },
+        {
+            "query": "Red Hag abilities and combat tactics in magical battles",
+            "variant": "abilities of the Red Hag and its strategies in magical fights"
+        }
+    ]
+}

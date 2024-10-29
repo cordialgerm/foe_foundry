@@ -1,0 +1,25 @@
+{
+    "name": "Gearforged Templar",
+    "queries": [
+        {
+            "query": "construct that does not need food or sleep and fights with a greatsword",
+            "variant": "temporal that fights with a greatsword and doesn't eat or sleep"
+        },
+        {
+            "query": "medium-sized guardian with high armor class and immune to poison",
+            "variant": "guardian with high AC and poison immunity that is medium-sized"
+        },
+        {
+            "query": "creature that can attack multiple times and pushes enemies with greatsword strikes",
+            "variant": "monster that pushes enemies back with multiple greatsword hits"
+        },
+        {
+            "query": "lawful neutral construct with area damage ability and low dexterity",
+            "variant": "construct with low dexterity and an area damage ability, lawful neutral"
+        },
+        {
+            "query": "gearforged creature with javelin attacks and slashing damage abilities",
+            "variant": "gearforged being with javelin attacks and slashing damage options"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Chuhaister",
+    "queries": [
+        {
+            "query": "large chaotic evil giant with poison immunity",
+            "variant": "chaotic evil giant that is large and immune to poison"
+        },
+        {
+            "query": "physical strength giant with powerful melee attacks",
+            "variant": "giant with strong melee attacks and great physical strength"
+        },
+        {
+            "query": "giant that suffers in bright light and has feybane ability",
+            "variant": "feybane ability giant that struggles in bright light"
+        },
+        {
+            "query": "giant with high hit points and multiattack action",
+            "variant": "high hit points giant that has a multiattack action"
+        },
+        {
+            "query": "monster with heavy armor and reactive defense",
+            "variant": "defensive monster with heavy armor and reactive abilities"
+        }
+    ]
+}

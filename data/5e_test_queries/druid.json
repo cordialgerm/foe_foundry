@@ -1,0 +1,25 @@
+{
+    "name": "Druid",
+    "queries": [
+        {
+            "query": "nature magic user that protects forests and can shapeshift",
+            "variant": "nature magic user that guards forests and shapeshifts"
+        },
+        {
+            "query": "humanoid spellcaster wearing earthy clothes with animal communication abilities",
+            "variant": "humanoid spellcaster in earthy attire that can talk to animals"
+        },
+        {
+            "query": "healer druid who uses plants and animals to fight enemies",
+            "variant": "healer druid utilizing flora and fauna to combat foes"
+        },
+        {
+            "query": "forest guardian with spells like entangle and barkskin",
+            "variant": "woodland guardian casting spells such as entangle and barkskin"
+        },
+        {
+            "query": "medium druid who has a strong wisdom and can speak with animals",
+            "variant": "medium druid with high wisdom able to communicate with animals"
+        }
+    ]
+}

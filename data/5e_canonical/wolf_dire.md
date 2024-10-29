@@ -1,6 +1,8 @@
 <MonsterName/>Wolf, Dire</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>40</HP>
 <summary>The Dire Wolf is a formidable large beast that serves as a terrifying predator within its environment. With a challenge rating of 1, it poses a significant threat to adventurers who underestimate its capabilities. The Dire Wolf has a good armor class of 14 thanks to its natural armor, and it possesses 40 hit points, making it relatively durable in combat. Its speed is exceptional at 50 feet, allowing it to quickly close the distance to its enemies. The wolf's strengths lie in its pack tactics that allow it to gain advantage on attack rolls when its allies are nearby, and its heightened senses make it a skilled hunter. However, it has weaknesses such as low intelligence and charisma scores, reflecting its limited problem-solving abilities and social interactions. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ For a bonus action, the Dire Wolf can use Hungry Growl. By staring down a creatu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wolf, Dire
 
 *Large beast*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 
 - **Hungry Growl.** The wolf stares down and growls at one creature it can see within 30 feet of it. The target must succeed on a DC 13 WIS save or be frightened until the end of its next turn. The wolf has advantage on the next attack roll it makes against the frightened creature.
 
+</statblock>
 
 

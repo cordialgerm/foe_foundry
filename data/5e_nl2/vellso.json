@@ -1,0 +1,55 @@
+{
+    "name": "Vellso",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 120,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "climb 40 ft., walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "chaotic",
+        "evil",
+        "stealthy"
+    ],
+    "adjectives": [
+        "versatile",
+        "durable",
+        "perceptive",
+        "magical"
+    ],
+    "description": "Vellso is a medium-sized fiend that features sharp claws and a powerful bite. It has a robust build with natural armor providing significant durability.",
+    "memorable": "Vellso's ability to inflict the debilitating Carrion Curse disease makes it a formidable adversary.",
+    "goals": "Typically seeks to disrupt and weaken adventurers, often through stealth and ambush tactics.",
+    "relations": "May be found in the company of other chaotic fiends or necromantic creatures.",
+    "environment": "Often inhabits dark, twisted areas such as caverns or ruins.",
+    "strengths": "High durability, resistance to multiple damage types, and advantages against spells due to magic resistance.",
+    "weaknesses": "Low intelligence and charisma limit its social interactions and strategic planning.",
+    "attacks": "Uses swift, powerful attacks with its bite and claws, with the potential for additional necrotic damage and exhaustion effects.",
+    "most_powerful_ability": "Carrion Curse inflicts debilitating effects on those bitten, risking exhaustion and potential reanimation as a zombie.",
+    "equipment": null,
+    "senses": "Has keen senses with advantage on Perception checks relying on smell.",
+    "skills": "Excels in stealth, making it highly adept at ambushing prey.",
+    "additional_information": [
+        "Immune to necrotic and poison damage.",
+        "Possesses resistance to cold, fire, and lightning damage.",
+        "Can traverse vertical surfaces with ease due to Spider Climb.",
+        "Magic attacks are considered magical, bypassing non-magical defenses.",
+        "Passive Perception is high, providing excellent awareness in dim light."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium fiend with climbing abilities",
+        "chaotic evil monster with necrotic attacks",
+        "stealthy fiend that inflicts exhaustion",
+        "fiend with a powerful bite and curse ability",
+        "versatile monster with magical attacks and resistances"
+    ]
+}

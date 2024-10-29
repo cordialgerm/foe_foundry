@@ -1,0 +1,25 @@
+{
+    "name": "Arcamag",
+    "queries": [
+        {
+            "query": "tiny creature that can shape-shift and affects spellcasters",
+            "variant": "small monster that can polymorph and impacts magic users"
+        },
+        {
+            "query": "stealthy monster that attaches to casters and deals psychic damage",
+            "variant": "sneaky creature that latches onto spellcasters and inflicts mind damage"
+        },
+        {
+            "query": "deceptive tiny monster with camouflage ability that manipulates spells",
+            "variant": "cunning small creature with stealth capability that controls magic"
+        },
+        {
+            "query": "monstrosity with high charisma that hides well and teleports",
+            "variant": "monster with exceptional charm that blends in and can teleport"
+        },
+        {
+            "query": "small creature living in shadows that can damage spellcasters",
+            "variant": "tiny being lurking in darkness that harms magic users"
+        }
+    ]
+}

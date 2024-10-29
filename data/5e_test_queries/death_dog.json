@@ -1,0 +1,25 @@
+{
+    "name": "Death Dog",
+    "queries": [
+        {
+            "query": "two-headed monster with glowing eyes that inflicts disease",
+            "variant": "two-headed beast with glowing eyes that causes disease"
+        },
+        {
+            "query": "aggressive canine that haunts ruins and tombs",
+            "variant": "fierce dog-like creature that prowls ruins and tombs"
+        },
+        {
+            "query": "monstrous dog creature that is resistant to being stunned or charmed",
+            "variant": "monstrous canine that has resistance to stun or charm"
+        },
+        {
+            "query": "ferocious dog with a foul bite capable of causing rotting disease",
+            "variant": "ferocious hound with a foul bite that can make flesh rot"
+        },
+        {
+            "query": "ambush predator with multiple heads and darkvision",
+            "variant": "predator with dual heads that has darkvision"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Vampire Mage",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 142,
+    "ac": 16,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 40 ft., climb 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "undead",
+        "spellcaster",
+        "vampire"
+    ],
+    "adjectives": [
+        "powerful",
+        "deceptive",
+        "regenerative"
+    ],
+    "description": "The Vampire Mage is a powerful Medium Undead being with formidable spellcasting abilities combined with its innate vampire powers.",
+    "memorable": "Its ability to regenerate and turn into mist makes it a challenging opponent, along with its charming manipulations.",
+    "goals": "To dominate and manipulate others while seeking to recover its powers in a resting place.",
+    "relations": "Vampires, undead creatures, and other magical beings.",
+    "environment": "Gothic settings, often found in dark castles or crypts.",
+    "strengths": "High hit points, damage resistances to necrotic damage and non-magical attacks, spellcasting prowess.",
+    "weaknesses": "Susceptible to radiant damage and certain spells; weaknesses to sunlight and running water.",
+    "attacks": "Uses melee attacks such as a bite that inflicts necrotic damage, and powerful spells like fireball and blight.",
+    "most_powerful_ability": "Regeneration, allowing it to regain hit points at the start of its turn unless harmed by radiant damage.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet and a passive perception of 17, indicating keen awareness.",
+    "skills": "Excels in perception, persuasion, and stealth, showcasing its abilities in manipulation and evasion.",
+    "additional_information": [
+        "Can charm victims into becoming willing targets.",
+        "Required to rest in a specific lair to regain powers.",
+        "Legendary Resistance allows it to avoid failure at great cost.",
+        "Misty Recovery enables it to escape death by turning into mist.",
+        "Spider Climb allows traversing on difficult surfaces, enhancing mobility."
+    ],
+    "damage_types": [
+        "necrotic",
+        "fire"
+    ],
+    "spellcasting": "7th level spellcaster with spells including fireball, blight, and darkness, focused on control and damage.",
+    "test_queries": [
+        "powerful undead spellcaster",
+        "vampire that can turn to mist",
+        "creature that charms and regenerates",
+        "mage that casts necrotic magic",
+        "monster with vampire weaknesses"
+    ]
+}

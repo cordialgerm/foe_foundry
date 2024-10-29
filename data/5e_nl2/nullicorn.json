@@ -1,0 +1,50 @@
+{
+    "name": "Nullicorn",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 105,
+    "ac": 12,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "chaotic",
+        "magic",
+        "disease",
+        "combat"
+    ],
+    "adjectives": [
+        "dangerous",
+        "chaotic",
+        "formidable",
+        "perceptive"
+    ],
+    "description": "The Nullicorn is a large, unsettling creature that combines formidable power with a chaotic nature, sporting a blend of physical and magical attributes.",
+    "memorable": "It possesses unique magical resistance abilities such as Magic Evasion and Limited Magic Immunity that profoundly impact combat dynamics.",
+    "goals": "The Nullicorn seeks to dominate its environment and devastate those who oppose it using both brute strength and crippling magic effects.",
+    "relations": "Typically encountered alone but may be found in the company of other aberrations or twisted creatures serving chaotic beings.",
+    "environment": "Often dwells in dark and chaotic areas prone to magical disturbances.",
+    "strengths": "High Strength and Wisdom enhance its melee prowess and perceptual awareness.",
+    "weaknesses": "Moderate Dexterity and Intelligence may hinder it in agility or intelligence-based challenges.",
+    "attacks": "It can strike with powerful Hooves attacks, deal force damage with its Void Horn, and unleash necrotic damage with Ripple of Darkness.",
+    "most_powerful_ability": "Nullifying Blight, a debilitating disease that affects creatures using magic near the Nullicorn.",
+    "senses": "It has blindsight up to 120 feet, allowing it to sense the magical and physical world around it without relying on sight.",
+    "skills": "Skilled in Perception with a +3 bonus, making it adept at noticing hidden threats.",
+    "additional_information": [
+        "Immunities to necrotic and poison damage.",
+        "Resistance to being charmed, paralyzed, or poisoned.",
+        "Magic Resistance provides advantage on saving throws against magical effects.",
+        "Ability to sense magic within a 120 ft radius."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large chaos creature with magic resistance",
+        "aberration that spreads disease through magic",
+        "monster immune to necrotic damage",
+        "Nullicorn attack and abilities",
+        "creature that senses magic and has high strength"
+    ]
+}

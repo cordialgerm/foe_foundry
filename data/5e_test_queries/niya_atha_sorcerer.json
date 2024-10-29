@@ -1,0 +1,25 @@
+{
+    "name": "Niya-Atha Sorcerer",
+    "queries": [
+        {
+            "query": "ice magic fey creature that can enlarge itself",
+            "variant": "fey creature that can grow larger and uses ice magic"
+        },
+        {
+            "query": "creature with cold damage abilities that uses a scepter",
+            "variant": "scepter-wielding creature with abilities dealing cold damage"
+        },
+        {
+            "query": "Medium lawful neutral fey that summons icebergs",
+            "variant": "lawful neutral Medium fey creature capable of summoning icebergs"
+        },
+        {
+            "query": "fey with high Charisma that can restrain enemies with ice",
+            "variant": "fey creature with significant Charisma and ice-based restraining abilities"
+        },
+        {
+            "query": "Niya-Atha Sorcerer combat abilities and weaknesses",
+            "variant": "combat powers and vulnerabilities of the Niya-Atha Sorcerer"
+        }
+    ]
+}

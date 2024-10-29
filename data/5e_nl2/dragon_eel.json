@@ -1,0 +1,50 @@
+{
+    "name": "Dragon Eel",
+    "creature_type": "Dragon",
+    "alignment": "Neutral",
+    "size": "Huge",
+    "hp": 195,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 60 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "dragon",
+        "lightning"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "lightning-infused"
+    ],
+    "description": "The Dragon Eel combines the fearsome traits of a dragon with the unique abilities of an aquatic creature, exuding majesty and raw power.",
+    "memorable": "Its ability to deal significant lightning damage and move effortlessly between water and air makes it a formidable opponent.",
+    "goals": "Typically seeks to dominate aquatic territories and can be found using its storm abilities to its advantage during combat.",
+    "relations": "Related closely to other dragon types, it may be encountered alongside marine creatures or during storms.",
+    "environment": "Commonly found in aquatic environments, particularly in stormy conditions.",
+    "strengths": "Immunity to lightning damage and paralysis, along with strong melee attacks and flight during storms.",
+    "weaknesses": "Moderate dexterity may hinder agility in combat, making it potentially less evasive.",
+    "attacks": "Can deliver devastating multiattacks with bites and tail slaps, both dealing bludgeoning and additional lightning damage.",
+    "most_powerful_ability": "Lightning Breath, which unleashes a massive area of lightning damage and can impact multiple targets.",
+    "equipment": null,
+    "senses": "Has a passive Perception score of 15, providing good threat detection.",
+    "skills": "Proficient in Acrobatics, Athletics, Insight, and Perception, enhancing its combat and navigation abilities.",
+    "additional_information": [
+        "Limited Amphibiousness allows it to breathe underwater and in air.",
+        "Shocking Hide retaliates against melee attacks with lightning damage.",
+        "Storm Glide grants flying speed during storms, improving maneuverability."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful dragon living in water",
+        "lightning-infused eel dragon",
+        "giant aquatic creature with shocking abilities",
+        "formidable eel that can fly in storms",
+        "dragon with lightning breath attack"
+    ]
+}

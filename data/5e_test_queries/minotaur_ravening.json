@@ -1,0 +1,25 @@
+{
+    "name": "Minotaur, Ravening",
+    "queries": [
+        {
+            "query": "large chaotic evil monster with strong physical abilities that consumes enemies",
+            "variant": "large monster that is chaotic evil and has strong physical traits, consumes foes"
+        },
+        {
+            "query": "brutal melee combatant that uses a charge attack and has keen smell",
+            "variant": "melee monster known for its brutal charge and keen smelling ability"
+        },
+        {
+            "query": "fierce monster that thrives in close combat and has ravening madness",
+            "variant": "fierce creature that excels in close quarters and features ravening madness"
+        },
+        {
+            "query": "monstrosity with high strength that can remember paths and knock foes prone",
+            "variant": "high strength monstrosity capable of recalling paths and knocking targets down"
+        },
+        {
+            "query": "Minotaur with temporary hit points from bite and has a multiattack feature",
+            "variant": "Minotaur that gains temp hp from its bite and can perform multiattacks"
+        }
+    ]
+}

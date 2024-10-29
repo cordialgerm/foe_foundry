@@ -1,0 +1,25 @@
+{
+    "name": "Faerie Dragon Familiar",
+    "queries": [
+        {
+            "query": "tiny colorful dragon that uses spells and can turn invisible",
+            "variant": "small colorful drake that can cast spells and goes invisible"
+        },
+        {
+            "query": "dragon companion that excels in stealth and magic",
+            "variant": "dragon ally that is great at sneaking and magical abilities"
+        },
+        {
+            "query": "magical little dragon that causes confusion with its breath",
+            "variant": "enchanted tiny dragon that confuses enemies with its breath attack"
+        },
+        {
+            "query": "a small dragon with high dexterity living in whimsical environments",
+            "variant": "a little drake with exceptional agility found in magical places"
+        },
+        {
+            "query": "friendly dragon familiar with a great armor class and useful spells",
+            "variant": "helpful dragon pet boasting high AC and handy spells"
+        }
+    ]
+}

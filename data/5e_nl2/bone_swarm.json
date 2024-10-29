@@ -1,0 +1,48 @@
+{
+    "name": "Bone Swarm",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 198,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 60 ft., fly 20 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "swarm",
+        "chaotic"
+    ],
+    "adjectives": [
+        "sinister",
+        "chaotic",
+        "relentless"
+    ],
+    "description": "The Bone Swarm is a large swarm of animated bones, representing a chaotic mass of skeletal remains that can swarm over its enemies.",
+    "memorable": "This creature can occupy another creature's space, grappling them in its deadly embrace while immune to many combat effects.",
+    "goals": "To overwhelm enemies with its skeletal mass, swarming them and inflicting damage.",
+    "relations": "Related to other undead creatures, potentially found alongside skeletal or ghostly entities.",
+    "environment": "Often found in dark, desolate places associated with death or decay.",
+    "strengths": "Highly resistant to nonmagical piercing and slashing attacks, immune to poison, and state conditions such as fright.",
+    "weaknesses": "Vulnerable to bludgeoning damage.",
+    "attacks": "Utilizes Swirling Bones attacks that deliver considerable bludgeoning, piercing, or slashing damage, and can grapple targets with Death\u2019s Embrace.",
+    "most_powerful_ability": "Death\u2019s Embrace allows it to grapple and restrain opponents, with a chance of redirecting attacks aimed at it.",
+    "equipment": null,
+    "senses": "Has a passive perception of 16, allowing it to detect enemies effectively.",
+    "skills": "Proficient in Acrobatics, Perception, and Stealth, enhancing its agility and stealth in combat.",
+    "additional_information": [
+        "Can move through openings large enough for a Tiny skull.",
+        "Does not require air, food, drink, or sleep due to its undead nature.",
+        "Uses a Multiattack to maximize damage output in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "vicious swarm of bones",
+        "undead skeletal mass",
+        "bone creature with grappling abilities",
+        "swarm of animated skeletons",
+        "chaotic evil undead"
+    ]
+}

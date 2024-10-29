@@ -1,0 +1,51 @@
+{
+    "name": "Hivebound",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 108,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "25 ft. on ground, 40 ft. while flying",
+    "role": "Skirmisher",
+    "tags": [
+        "insect",
+        "swarm",
+        "monstrosity"
+    ],
+    "adjectives": [
+        "cunning",
+        "versatile",
+        "mobile"
+    ],
+    "description": "The Hivebound is a small, insect-like monstrosity with a natural armor that provides it a respectable defense. It embodies the essence of swarms, capable of controlling multiple insect allies.",
+    "memorable": "The ability to connect with swarms telepathically and unleash a cone of stinging insects makes it a unique and formidable opponent.",
+    "goals": "Control swarms of insects and engage in combat effectively.",
+    "relations": "Often found in areas where swarms of insects thrive, possibly serving as leaders of insect-like creatures.",
+    "environment": "Typically found in regions dense with insect life, such as swamps or forests.",
+    "strengths": "Resists exhaustion and fear effects, has high mobility, and a strong connection to controlled swarms.",
+    "weaknesses": "Low Intelligence and Charisma limit its interaction and resistance to certain effects.",
+    "attacks": "Can execute a deadly Bite attack with piercing and poison damage, alongside Claw attacks and ranged Spit Insect attacks that hinder enemy effectiveness.",
+    "most_powerful_ability": "Swarm Breath, which unleashes a cone of stinging insects causing significant damage and controlling the battlefield.",
+    "senses": "Possesses keen senses within a radius of 60 feet, allowing it to perceive details effectively.",
+    "skills": "Has a decent Stealth score, enabling it to hide reasonably well in its environment.",
+    "additional_information": [
+        "Connected to swarms through the Collective Mind ability.",
+        "Can never be surprised due to its hive mind connection.",
+        "Beneficial abilities to resist mental effects.",
+        "Can control up to five insect swarms simultaneously.",
+        "Utilizes Swift Flight for evasive maneuvers."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small creature control insects",
+        "monstrous flying insect leader",
+        "cunning insect-like monster",
+        "mobile insect swarm commander",
+        "poison damage insect monstrosity"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Adult Wind Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Neutral",
+    "size": "Huge",
+    "hp": 187,
+    "ac": 17,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 90 ft., fly 30 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "wind",
+        "storm"
+    ],
+    "adjectives": [
+        "chaotic",
+        "imposing",
+        "tempestuous"
+    ],
+    "description": "The Adult Wind Dragon is an imposing creature embodying the chaotic forces of wind and lightning. It has a sleek, powerful form with sharp features that suggest agility and ferocity. Its scales shimmer in a variety of colors reminiscent of storm clouds.",
+    "memorable": "The dragon's ability to unleash devastating area attacks with its Tempest Breath and create gale-force winds around it, influencing combat dynamics.",
+    "goals": "To assert its dominance in the skies and terrorize weaker creatures in its territory.",
+    "relations": "This dragon may be encountered alongside other elemental creatures or as a rival to other dragons.",
+    "environment": "Commonly found in stormy mountains or places where winds are fierce.",
+    "strengths": "Immunity to lightning and resistance to cold damage enhance its durability against elemental attacks. Its tactical abilities with storms during encounters give it an edge.",
+    "weaknesses": "While chaotic, it may lack strategic coordination compared to more lawful creatures.",
+    "attacks": "Utilizes multiattack to intimidate foes, employing a combination of Bite, Claw, and Tail attacks, alongside its Frightful Presence to demoralize opponents.",
+    "most_powerful_ability": "The Tempest Breath, unleashing a powerful blast that can damage, displace, and knock down enemies while extinguishing flames.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and a passive perception of 22, allowing it to detect opponents effectively.",
+    "skills": "Exhibits exceptional agility and presence with skill proficiencies in Acrobatics and Intimidation, as well as notable perception and stealth skills.",
+    "additional_information": [
+        "Freedom of Movement allows it to ignore difficult terrain.",
+        "Legendary Resistance allows it to succeed on failed saving throws.",
+        "Storm Sight enables it to see through fog, mist, and clouds.",
+        "Whirling Winds creates defensive gale-force winds around it.",
+        "Can take legendary actions, providing versatile combat options."
+    ],
+    "damage_types": [
+        "lightning",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "storm-based dragon",
+        "dragon with tempest powers",
+        "huge chaotic wind dragon",
+        "imposing dragon with lightning abilities",
+        "flying dragon with frightful presence"
+    ]
+}

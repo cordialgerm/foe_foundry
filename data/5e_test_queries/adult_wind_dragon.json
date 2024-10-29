@@ -1,0 +1,25 @@
+{
+    "name": "Adult Wind Dragon",
+    "queries": [
+        {
+            "query": "huge dragon with lightning immunity and chaotic nature",
+            "variant": "huge dragon that immune to lightning and has chaotic nature"
+        },
+        {
+            "query": "agile dragon that can push enemies with stormy breath",
+            "variant": "agile dragon able to push foes with stormy breath"
+        },
+        {
+            "query": "dragon with high dexterity and frightful presence in combat",
+            "variant": "dragon that has high dexterity and frightful presence during combat"
+        },
+        {
+            "query": "wind dragon in difficult terrain with freedom of movement ability",
+            "variant": "wind dragon that can move freely in difficult terrain"
+        },
+        {
+            "query": "adult dragon able to see through fog and generates gale winds",
+            "variant": "adult dragon that can see through fog and creates gale winds"
+        }
+    ]
+}

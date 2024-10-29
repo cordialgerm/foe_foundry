@@ -1,0 +1,52 @@
+{
+    "name": "Virtuoso Lich",
+    "creature_type": "Undead",
+    "alignment": "any evil alignment",
+    "size": "Medium",
+    "hp": 123,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 30 feet",
+    "role": "Controller",
+    "tags": [
+        "lich",
+        "undead",
+        "spellcaster",
+        "artistic"
+    ],
+    "adjectives": [
+        "intelligent",
+        "manipulative",
+        "artistic",
+        "corrupted"
+    ],
+    "description": "The Virtuoso Lich is a twisted master of artistry, sporting an imposing presence with a skeletal frame embodying both elegance and menace. Its darkly beautiful enhancements evoke a haunting aura, as it channels corrupted forms of artistic expression.",
+    "memorable": "Combines spellcasting prowess with artistic abilities, capable of charming enemies and healing allies.",
+    "goals": "To master art and magic, manipulate foes, and regain power through its phylactery.",
+    "relations": "Often leads other undead or minions in its quest for artistic dominance.",
+    "environment": "Typically found in dark, abandoned theaters, art studios, or crypts rich with history.",
+    "strengths": "Legendary Resistance and Rejuvenation allow it to avoid permanent defeat, while its versatile spellcasting enables control over the battlefield.",
+    "weaknesses": "Reliant on its phylactery for resurrection; can be strategically targeted to prevent its return.",
+    "attacks": "Uses its Multiattack to unleash Corrupted Art followed by Artistic Flourish attacks, each infused with varied forms of magical damage.",
+    "most_powerful_ability": "Call Muse allows it to incapacitate a target, making them vulnerable to its attacks.",
+    "equipment": null,
+    "senses": "Possesses truesight out to 60 feet, allowing it to see through illusions and darkness.",
+    "skills": "Excels in Deception and Persuasion, enhancing its manipulative abilities.",
+    "additional_information": [
+        "Immunity to poison damage and various conditions.",
+        "Can choose a form of artistic expression for damage immunity each long rest.",
+        "Gains temporary hit points when healing undead through its abilities.",
+        "Legendary actions allow for flexibility in combat and further battlefield manipulation.",
+        "Spellcasting includes control and utility spells like charm and dimension door."
+    ],
+    "damage_types": [],
+    "spellcasting": "12th-level spellcaster specializing in bard spells, including both utility and charm effects.",
+    "test_queries": [
+        "undead spellcaster with artistic abilities",
+        "lich that charms creatures with art",
+        "powerful enemy with damage immunity options",
+        "intelligent undead that manipulates allies",
+        "creature with truesight and spellcasting"
+    ]
+}

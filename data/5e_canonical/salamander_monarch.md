@@ -1,6 +1,8 @@
 <MonsterName/>Salamander Monarch</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>13</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Salamander Monarch is a formidable creature within the elemental realm, embodying a blend of fire and authority. This large elemental is aligned with neutral evil, showcasing both combat prowess and powerful spellcasting abilities. With an impressive armor class of 17 and a substantial hit point pool of 161, the Salamander Monarch is a durable opponent who can endure significant damage. Its strengths lie in its high strength and dexterity, as well as its potent fire-related abilities. However, it has a vulnerability to cold damage, which can be exploited by clever adventurers. As a challenge rating 13 creature, it poses a significant threat to lower-level parties but can be managed with strategic planning.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Salamander Monarch can perform a *Multiattack*, allowin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Salamander Monarch
 
 *Large* *Elemental* *neutral evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Immolating Crest (Recharge 6):** The salamander monarch causes its crest to flare with brilliant radiance, illuminating everything within 30 feet of it with a blue or green light. Each creature in that area must make a DC 17 Dexterity saving throw. On a failure, a creature takes 28 (8d6) fire damage and catches on fire. On a success, a creature takes half the damage and doesn’t catch on fire. Until a creature on fire takes an action to douse the fire, the creature takes 7 (2d6) fire damage at the start of each of its turns.
 
 
+</statblock>
 
 

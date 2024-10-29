@@ -1,0 +1,25 @@
+{
+    "name": "Frog",
+    "queries": [
+        {
+            "query": "small amphibious creature that lives near water",
+            "variant": "tiny water-dwelling amphibian creature"
+        },
+        {
+            "query": "green or brown small animal that can jump",
+            "variant": "tiny creature that can leap and is green or brown"
+        },
+        {
+            "query": "creature that breathes air and water",
+            "variant": "animal that can survive in air and water"
+        },
+        {
+            "query": "weak creature that feeds on insects and can jump 10 feet",
+            "variant": "feeble animal that consumes insects and leaps 10 feet"
+        },
+        {
+            "query": "non-aggressive tiny beast that blends into ponds",
+            "variant": "harmless small creature that camouflages in water"
+        }
+    ]
+}

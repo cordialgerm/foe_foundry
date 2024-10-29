@@ -1,0 +1,25 @@
+{
+    "name": "Wild Warrior",
+    "queries": [
+        {
+            "query": "humanoid creature that excels in forests and has stealth skills",
+            "variant": "humanoid being skilled in forests that has stealthy abilities"
+        },
+        {
+            "query": "tactical monster that uses traps and works well in groups",
+            "variant": "strategic creature that creates traps and is effective in teams"
+        },
+        {
+            "query": "medium creature with low hit points that hunts in hilly terrain",
+            "variant": "medium-sized being with few hit points that hunts in hilly areas"
+        },
+        {
+            "query": "wild humanoid with advantage on attacks when allies are nearby",
+            "variant": "feral humanoid that gets bonuses on attacks if allies are close"
+        },
+        {
+            "query": "monster known for tracking and creating simple traps in the wild",
+            "variant": "creature recognized for its tracking abilities and making basic traps in nature"
+        }
+    ]
+}

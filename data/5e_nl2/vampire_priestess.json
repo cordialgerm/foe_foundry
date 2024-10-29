@@ -1,0 +1,53 @@
+{
+    "name": "Vampire Priestess",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "spellcaster",
+        "vampire"
+    ],
+    "adjectives": [
+        "formidable",
+        "manipulative",
+        "dangerous",
+        "clerical"
+    ],
+    "description": "The Vampire Priestess is a powerful medium undead with a commanding presence, wearing chain mail armor that enhances her formidable nature. She features an elegant yet terrifying visage characteristic of vampires.",
+    "memorable": "Her ability to evade death by transforming into mist and her devastating regenerative powers make her a complex and dangerous foe.",
+    "goals": "To manipulate and control others while preserving her own unlife and objectives.",
+    "relations": "Commonly associated with other undead, particularly those that serve her or her interests.",
+    "environment": "Typically found in dark, secluded locations such as crypts, abandoned buildings, or areas shunned by the living.",
+    "strengths": "High Wisdom enhances her spellcasting and perception, allowing her to control the battlefield with cleric spells.",
+    "weaknesses": "Vulnerable to sunlight, wooden stakes, and dependent on invitation to enter residences.",
+    "attacks": "Utilizes a multiattack option combining a charmed gaze, scourge strike dealing slashing damage, and a debilitating bite that inflicts necrotic damage while healing herself.",
+    "most_powerful_ability": "Her 'Misty Escape' allows her to avoid death and escape the battlefield by transforming into mist.",
+    "equipment": null,
+    "senses": "Possesses keen perception with a passive score of 18, indicating heightened awareness.",
+    "skills": "Proficient in perception and religion, showcasing her awareness and knowledge of the undead.",
+    "additional_information": [
+        "Regenerates 15 hit points at the start of her turn if not in sunlight or running water.",
+        "Charms opponents with her 'Bewitching Gaze' ability, rendering them incapacitated.",
+        "Immunity to being charmed enhances her ability to manipulate others.",
+        "Takes significant damage from radiant sources while in sunlight.",
+        "Resistant to necrotic damage."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "9th level spellcaster with a variety of cleric spells including both offensive and defensive options.",
+    "test_queries": [
+        "undead spellcaster that manipulates others",
+        "vampire priestess with mist transformation ability",
+        "powerful cleric vampire with regeneration",
+        "formidable vampire that hates sunlight",
+        "charming undead creature that can heal"
+    ]
+}

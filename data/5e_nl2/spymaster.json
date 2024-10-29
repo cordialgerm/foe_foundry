@@ -1,0 +1,50 @@
+{
+    "name": "Spymaster",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 35 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "assassin",
+        "humanoid"
+    ],
+    "adjectives": [
+        "cunning",
+        "skilled",
+        "deceptive"
+    ],
+    "description": "The Spymaster is a cunning and skilled humanoid known for its stealth and deception. It possesses a robust build with agile movement capabilities.",
+    "memorable": "Its ability to deal devastating surprise attacks makes it a formidable opponent.",
+    "goals": "To engage in stealth operations, gather intelligence, and eliminate key targets.",
+    "relations": "Often found working with other agents or spies, potentially in the service of a larger organization.",
+    "environment": "Typically operates in urban or dungeon settings where stealth is advantageous.",
+    "strengths": "High dexterity and proficiency in stealth and deception allow it to maneuver effectively in combat.",
+    "weaknesses": "Average intelligence, wisdom, and charisma may limit its social and magical interactions.",
+    "attacks": "Utilizes a shortsword or a hand crossbow for precise attacks, capable of inflicting severe damage through sneak attacks.",
+    "most_powerful_ability": "The Assassinate ability grants it advantage on attacks against unsuspecting targets, leading to potentially lethal damage.",
+    "equipment": "Typically wields a shortsword and a hand crossbow, capable of employing poisons.",
+    "senses": "Possesses blindsight up to 10 feet, enhancing its ability to detect unseen creatures nearby.",
+    "skills": "Proficient in acrobatics and stealth, enabling it to navigate quickly and quietly.",
+    "additional_information": [
+        "Carries three doses of dangerous poison for weapon enhancement.",
+        "Can create effective disguises, making it difficult to identify.",
+        "Studies adversaries to gain tactical advantage in combat."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy humanoid assassin",
+        "cunning spymaster with disguises",
+        "lethal surprise attacker in combat",
+        "agile humanoid skilled in deception",
+        "urban stealth operations specialist"
+    ]
+}

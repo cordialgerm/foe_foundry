@@ -1,0 +1,25 @@
+{
+    "name": "Giant Badger",
+    "queries": [
+        {
+            "query": "aggressive forest creature with keen smell and powerful claws",
+            "variant": "agressive forest monster with strong claws and keen sense of smell"
+        },
+        {
+            "query": "medium-sized beast found underground with burrowing abilities",
+            "variant": "medium creature that digs underground with burrowing powers"
+        },
+        {
+            "query": "ferocious badger known for digging and attacking threats",
+            "variant": "fierce badger recognized for its digging and targeting enemies"
+        },
+        {
+            "query": "beast that forages on insects and has a special ability called grumpy",
+            "variant": "creature that eats insects and has a ability named grumpy"
+        },
+        {
+            "query": "burrowing animal with low intelligence and aggressive behavior",
+            "variant": "digging creature with poor intelligence and hostile tendencies"
+        }
+    ]
+}

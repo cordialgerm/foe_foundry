@@ -1,0 +1,54 @@
+{
+    "name": "Origami Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 114,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft., fly 40 ft.",
+    "role": null,
+    "tags": [
+        "golem",
+        "construct",
+        "shape-shifting"
+    ],
+    "adjectives": [
+        "versatile",
+        "magical",
+        "durable",
+        "paper-like"
+    ],
+    "description": "The Origami Golem is a large construct made of paper, capable of shifting into various forms like a dragon or swan, allowing it to adapt its abilities in combat.",
+    "memorable": "Its unique ability to fold into different sophisticated shapes and its magical nature make it both versatile and distinctive in battle.",
+    "goals": "Usually serves a creator or fulfills protective roles in an artistic or magical context.",
+    "relations": "Often associated with its creator who understands its designs and abilities, but otherwise is a solitary entity.",
+    "environment": "Found in magical workshops, art schools, or places imbued with creativity.",
+    "strengths": "Comes with a substantial number of hit points and possesses magical resistances that enhance its defensive capabilities against spells.",
+    "weaknesses": "Vulnerable to fire damage, which can significantly affect its durability.",
+    "attacks": "Can perform multiple melee attacks dealing slashing and bludgeoning damage, and can unleash powerful area effects in various forms.",
+    "most_powerful_ability": "The Shredded Breath in dragon form, unleashing a cone of damaging paper fragments that can blind foes.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has basic perception skills but lacks significant intelligence and social skills.",
+    "additional_information": [
+        "Cannot be influenced by charm or fear effects.",
+        "Imitates ordinary paper when motionless, blending in with surroundings.",
+        "Immune to various conditions like paralysis and exhaustion.",
+        "Magic weapon attacks make it effective against creatures with damage resistances.",
+        "Can jump great distances, enhancing its tactical options."
+    ],
+    "damage_types": [
+        "slashing",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "versatile shape-shifting paper creature",
+        "large golem that can fly and jump",
+        "magical creature that resembles a dragon or swan",
+        "durable construct vulnerable to fire",
+        "golem with unique slashing breath attack"
+    ]
+}

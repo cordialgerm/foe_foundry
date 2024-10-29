@@ -1,0 +1,25 @@
+{
+    "name": "Iron Golem",
+    "queries": [
+        {
+            "query": "massive iron construct that breathes poison gas",
+            "variant": "huge construct made of iron that can exhale poisonous gas"
+        },
+        {
+            "query": "large humanoid constructed creature immune to physical damage",
+            "variant": "big humanoid construct that is immune to most physical attacks"
+        },
+        {
+            "query": "towering golem made of iron with high armor class",
+            "variant": "tall iron golem with a very high armor class"
+        },
+        {
+            "query": "slow moving iron guardian with magical resistances",
+            "variant": "iron guardian that moves slowly and has magic resistances"
+        },
+        {
+            "query": "construct that doesn't need food and protects treasures",
+            "variant": "golem that requires no food and defends treasures"
+        }
+    ]
+}

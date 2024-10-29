@@ -1,0 +1,51 @@
+{
+    "name": "Ursa Polaris",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 133,
+    "ac": 15,
+    "srd": false,
+    "cr": 7,
+    "movement": "walking speed of 40 feet and swimming speed of 30 feet",
+    "role": "Bruiser",
+    "tags": [
+        "cold",
+        "stunning",
+        "aquatic"
+    ],
+    "adjectives": [
+        "formidable",
+        "dangerous",
+        "brute"
+    ],
+    "description": "Ursa Polaris is a large, imposing creature with a powerful build, covered in ice formations that glimmer in the light.",
+    "memorable": "Its breathtaking display of swirling ice light can stun foes, while its freezing cold breath deals significant damage.",
+    "goals": "Typically hunts for prey in snowy environments and dominates its territory.",
+    "relations": "May be encountered with other cold-based monstrosities or in the presence of ice elementals.",
+    "environment": "Snowy terrains and cold waters.",
+    "strengths": "High resilience with substantial hit points and significant physical strength.",
+    "weaknesses": "Vulnerable to fire damage and possesses low intelligence.",
+    "attacks": "Can make three attacks in a turn, with a powerful bite inflicting piercing and cold damage and sharp claws dealing slashing damage.",
+    "most_powerful_ability": "Hypnotic Array creates mesmerizing light patterns that can stun and damage nearby foes.",
+    "senses": "Possesses keen smell, granting advantage on perception checks related to smell.",
+    "skills": "Excels in athletics and has a notable perception ability.",
+    "additional_information": [
+        "Immune to cold damage",
+        "Has a natural armor class of 15",
+        "Can move adeptly in both land and water",
+        "Can unleash a blast of cold damage in a cone",
+        "Stuns opponents with dazzling light patterns"
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable icy monster with stunning abilities",
+        "large creature with cold breath attack",
+        "dangerous beast that hunts in snowy environments",
+        "powerful monstrosity immune to cold damage",
+        "creature that uses ice to mesmerize foes"
+    ]
+}

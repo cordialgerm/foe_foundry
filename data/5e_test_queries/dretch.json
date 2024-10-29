@@ -1,0 +1,25 @@
+{
+    "name": "Dretch",
+    "queries": [
+        {
+            "query": "small fiend covered in sores that can poison enemies",
+            "variant": "small demon covered with sores that poisons enemies"
+        },
+        {
+            "query": "chaotic evil demon from the Abyss that disrupts actions",
+            "variant": "chaotic demon that disrupts actions and originates from the Abyss"
+        },
+        {
+            "query": "demon with low intelligence and a fetid gas attack",
+            "variant": "fiend with poor intelligence and ability to use poisonous gas"
+        },
+        {
+            "query": "weak demon that revives in the Abyss and emits a foul stench",
+            "variant": "weak fiend that comes back in the Abyss and gives off a nasty odor"
+        },
+        {
+            "query": "small demon that attacks in groups and has an energy-sucking aura",
+            "variant": "small fiend that uses numbers to attack and has aura that drains energy"
+        }
+    ]
+}

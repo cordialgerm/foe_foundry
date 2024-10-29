@@ -1,0 +1,48 @@
+{
+    "name": "Greater Rakshasa",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 144,
+    "ac": 18,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 40 ft.",
+    "role": "null",
+    "tags": [
+        "fiend",
+        "magic user",
+        "manipulator"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "malevolent"
+    ],
+    "description": "A malevolent fiend known for its physical prowess and powerful magical abilities, possessing high Dexterity and Charisma.",
+    "memorable": "With potent charm spells and the ability to remain undetected by lower-level magic, it is a master manipulator in any encounter.",
+    "goals": "To deceive, manipulate, and exert control over others.",
+    "relations": "Often serves as an antagonist, working alongside other fiends or dark entities.",
+    "environment": "Typically found in urban areas where it can blend in and manipulate others.",
+    "strengths": "Possesses damage immunities to non-magical attacks and can exploit magic effects safely due to its Limited Magic Immunity.",
+    "weaknesses": "Vulnerable to piercing damage from magical weapons wielded by good creatures.",
+    "attacks": "Utilizes multiattacks with claws that can curse its targets, preventing them from benefiting from rests.",
+    "most_powerful_ability": "Harrowing Visions creates horrific illusions that can inflict significant psychic damage and frighten enemies.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Excels in Deception and Insight, making it adept at manipulating others and understanding their motivations.",
+    "additional_information": [
+        "Can target multiple creatures with charm spells through Puppet Master ability.",
+        "Innate spellcasting allows it to cast spells without material components.",
+        "Uses illusions and invisibility to confuse and control opponents."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting includes various utility and charm spells, with high versatility in combat.",
+    "test_queries": [
+        "fiend that manipulates with charm spells",
+        "cunning magical monster with psychic attacks",
+        "formidable opponent skilled in deception",
+        "creature with powerful illusion abilities",
+        "evil fiend capable of controlling minds"
+    ]
+}

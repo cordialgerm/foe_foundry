@@ -1,0 +1,25 @@
+{
+    "name": "Spark Mephit",
+    "queries": [
+        {
+            "query": "small electric elemental creature that can fly",
+            "variant": "small creature elemental that is electric and can fly"
+        },
+        {
+            "query": "monster with lightning immunity and claws attack",
+            "variant": "monster that has claws attack and immune to lightning"
+        },
+        {
+            "query": "creature that doesn't need air and uses spark form",
+            "variant": "being that uses spark form and doesn't require air"
+        },
+        {
+            "query": "trickster monster with faerie flame ability",
+            "variant": "tricky creature that has faerie flame ability"
+        },
+        {
+            "query": "elemental creature that deals lightning damage and moves fast",
+            "variant": "creature elemental that causes lightning damage and is fast"
+        }
+    ]
+}

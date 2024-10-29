@@ -1,0 +1,49 @@
+{
+    "name": "Moon Weaver",
+    "creature_type": "Beast",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 36,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 20 ft, climb 20 ft, fly 40 ft",
+    "role": null,
+    "tags": [
+        "beast",
+        "flying",
+        "support"
+    ],
+    "adjectives": [
+        "nimble",
+        "enchanting"
+    ],
+    "description": "The Moon Weaver is a small, agile creature characterized by its enchanting presence and vibrant plumage, which is coated in an oil that enhances its flight.",
+    "memorable": "It has the unique ability to avoid being restrained by any webbing, magical or nonmagical, thanks to its Lubricious Plumage.",
+    "goals": "The Moon Weaver aims to inspire and aid allies through its uplifting song while evading predators using its agility.",
+    "relations": "It often interacts with other woodland creatures, possibly serving as a guide or ally to smaller beasts.",
+    "environment": "Commonly found in wooded areas and forests, where it can access trees for climbing and open skies for flying.",
+    "strengths": "Highly agile with a bonus to evasion and the ability to inspire allies, enhancing their chances of success.",
+    "weaknesses": "Its physical strength is average, making it less effective in direct combat and reliant on its speed.",
+    "attacks": "Uses its beak for a melee attack, dealing piercing damage.",
+    "most_powerful_ability": "Lubricious Plumage, which allows it to navigate areas filled with webbing effortlessly.",
+    "equipment": null,
+    "senses": "It has darkvision that allows it to see in the dark up to 60 feet.",
+    "skills": "It has a decent passive perception, allowing it to notice subtle movements and clues in its environment.",
+    "additional_information": [
+        "Can inspire allies with its song.",
+        "Impeccable at navigating saplings without hindrance.",
+        "Neutral alignment allows it to befriend various creatures.",
+        "Fast flying speed of 40 feet contributes to its evasion abilities.",
+        "Possesses charming plumage that captivates onlookers."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small aerial creature with inspiring song",
+        "nimble creature that navigates webs easily",
+        "enchanted beast that aids allies",
+        "agile forest creature with beautiful plumage",
+        "creature with special oil that avoids restraints"
+    ]
+}

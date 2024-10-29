@@ -1,0 +1,49 @@
+{
+    "name": "Horse, Riding",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Large",
+    "hp": 15,
+    "ac": 10,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "60 feet per round, very fast",
+    "role": null,
+    "tags": [
+        "mount",
+        "beast",
+        "travel"
+    ],
+    "adjectives": [
+        "reliable",
+        "fast",
+        "durable"
+    ],
+    "description": "A Riding Horse is a large beast with moderate durability and a considerable speed of 60 feet per round, primarily valued for its role as a mount for adventurers.",
+    "memorable": "Known for its ability to grant advantage on saving throws against exhaustion for riders during long travels.",
+    "goals": "To serve as a reliable mount for travelers and adventurers.",
+    "relations": "Often found with adventurers, serving as mounts.",
+    "environment": "Commonly found in stables or used in the field by travelers.",
+    "strengths": "High speed and the ability to support riders during long journeys.",
+    "weaknesses": "Average defenses with an Armor Class of 10, making it vulnerable in combat.",
+    "attacks": "Can perform a melee attack with its hooves, dealing 6 bludgeoning damage.",
+    "most_powerful_ability": "Easy Gait, which helps riders resist exhaustion from long marches.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Has a Strength score of +3, enabling good physical tasks.",
+        "Intelligence is -4, indicating a lack of understanding complex commands.",
+        "Average Dexterity and Constitution scores.",
+        "Provides support in navigating and traveling quickly across terrains."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fast reliable mount for adventurers",
+        "large beast that helps with travel",
+        "horse with advantage on exhaustion saves",
+        "mount used for long journeys",
+        "horse that offers speedy travel"
+    ]
+}

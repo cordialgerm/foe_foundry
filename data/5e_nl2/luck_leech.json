@@ -1,0 +1,50 @@
+{
+    "name": "Luck Leech",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 150,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "manipulative",
+        "luck"
+    ],
+    "adjectives": [
+        "malevolent",
+        "cunning",
+        "stealthy"
+    ],
+    "description": "The Luck Leech is a Medium-sized fey creature with a deceptive and sly appearance, known for its charm and agility as well as its studded leather armor.",
+    "memorable": "It can absorb luck from nearby creatures, turning their fortunes into advantages for itself.",
+    "goals": "To exploit the fortune of others and gain power through manipulation.",
+    "relations": "It may serve or be served by other fey creatures or dark powers, lurking in areas of high fortune.",
+    "environment": "Typically found in areas rich with magic or luck, potentially near treasure or monuments of fortune.",
+    "strengths": "Exceptional agility and charm, with high skill proficiencies in stealth and deception.",
+    "weaknesses": "Reliant on other creatures' successes, making it vulnerable to opponents who are less capable of rolling high.",
+    "attacks": "Can make multiple biting arm attacks that deal both piercing and necrotic damage, capable of blind and curse effects.",
+    "most_powerful_ability": "Feast of Fortune can inflict significant psychic damage and can also blind multiple targets while increasing its own luck.",
+    "equipment": null,
+    "senses": "Keen perception with a passive score of 16, indicating it is quite aware of its surroundings.",
+    "skills": "Excels in deception and stealth, making it a tricky and dangerous foe in social encounters and combat.",
+    "additional_information": [
+        "Immune to necrotic damage and unaffected by frightened condition.",
+        "Gains luck points based on the fortunes of nearby creatures.",
+        "Can reroll low results without expending luck points.",
+        "Has strong saving throws in Dexterity and Wisdom.",
+        "Calculates hit points based on a high Constitution modifier."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning fey with luck manipulation",
+        "stealthy creature that absorbs luck",
+        "deceptive monster thriving on fortune",
+        "fey that curses with falling fortunes",
+        "agile luck-stealing creature in combat"
+    ]
+}

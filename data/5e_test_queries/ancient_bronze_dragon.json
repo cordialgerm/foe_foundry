@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Bronze Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon that breathes lightning and lives near water",
+            "variant": "gargantuan drgon breathes lightning lives near water"
+        },
+        {
+            "query": "intelligent dragon that can shapeshift and has powerful breath weapons",
+            "variant": "smart dragon shapeshifts and powerful breath weapons"
+        },
+        {
+            "query": "noble dragon with polished bronze scales protecting coastal areas",
+            "variant": "noble dragon with shiny bronze scales guarding coastal areas"
+        },
+        {
+            "query": "ancient dragon with high hit points and strong melee attacks",
+            "variant": "old dragon large hit points strong melee attacks"
+        },
+        {
+            "query": "water dragon that can create tidal waves and storms",
+            "variant": "sea dragon that creates tidal waves and storms"
+        }
+    ]
+}

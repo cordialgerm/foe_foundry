@@ -1,0 +1,25 @@
+{
+    "name": "Spy",
+    "queries": [
+        {
+            "query": "humanoid stealthy killer that uses daggers",
+            "variant": "stealthy humanoid assassin that attacks with daggers"
+        },
+        {
+            "query": "creature skilled in deception and stealthy infiltration",
+            "variant": "monster adept in infiltration and skilled at deception"
+        },
+        {
+            "query": "character that excels in stealth and can speak two languages",
+            "variant": "being proficient in stealth that knows two languages"
+        },
+        {
+            "query": "medium humanoid that can sneak attack and use cunning action",
+            "variant": "humanoid of medium size that employs cunning action and sneak attack"
+        },
+        {
+            "query": "covert infiltrator with good dexterity and average constitution",
+            "variant": "infiltrator experienced in covert operations with high dexterity and average con"
+        }
+    ]
+}

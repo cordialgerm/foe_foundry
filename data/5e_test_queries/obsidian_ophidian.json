@@ -1,0 +1,25 @@
+{
+    "name": "Obsidian Ophidian",
+    "queries": [
+        {
+            "query": "huge lava elemental with healing abilities",
+            "variant": "large elemental creature from lava that can heal"
+        },
+        {
+            "query": "elemental monster that regenerates near lava",
+            "variant": "monster that regenerates in lava environment"
+        },
+        {
+            "query": "creature that deals damage with sharp obsidian shards",
+            "variant": "creature that inflicts harm using obsidian fragments"
+        },
+        {
+            "query": "fire-based elemental immune to many conditions",
+            "variant": "elemental creature resistant to various conditions"
+        },
+        {
+            "query": "massive elemental that can traverse lava effortlessly",
+            "variant": "huge creature able to walk on lava without harm"
+        }
+    ]
+}

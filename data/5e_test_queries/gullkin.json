@@ -1,0 +1,25 @@
+{
+    "name": "Gullkin",
+    "queries": [
+        {
+            "query": "humanoid creature that can fly and swim",
+            "variant": "humanoid critter that swims and flies"
+        },
+        {
+            "query": "medium-sized bird-like monster with natural armor",
+            "variant": "medium bird-like creature with natural protection"
+        },
+        {
+            "query": "creature that has a beak attack and tempest breath",
+            "variant": "being that uses beak for attack and has tempest breath"
+        },
+        {
+            "query": "Gullkin abilities in combat and underwater adaptability",
+            "variant": "Gullkin combat skills and ability to adapt underwater"
+        },
+        {
+            "query": "aquatic humanoid with perception skills and low charismas",
+            "variant": "water-based humanoid with good perception and low charisma"
+        }
+    ]
+}

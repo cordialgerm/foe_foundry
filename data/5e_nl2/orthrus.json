@@ -1,0 +1,50 @@
+{
+    "name": "Orthrus",
+    "creature_type": "Monstrosity",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walks at 40 feet per turn",
+    "role": null,
+    "tags": [
+        "canine",
+        "serpent",
+        "multi-headed"
+    ],
+    "adjectives": [
+        "two-headed",
+        "serpent-like",
+        "agile"
+    ],
+    "description": "Orthrus is a Medium monstrosity with two canine heads and a serpent-like head, showcasing a mixture of canine and serpentine features.",
+    "memorable": "Its three heads grant it unique advantages in perception and resilience to incapacitating conditions.",
+    "goals": "To hunt and protect its territory while being alert during sleep.",
+    "relations": "Related to other multi-headed monstrosities or canine creatures.",
+    "environment": "Commonly found in wilderness areas where it can efficiently track its prey.",
+    "strengths": "High Dexterity and Constitution enhance its agility and durability in combat.",
+    "weaknesses": "Notably low Intelligence and Charisma limit its strategic and social interactions.",
+    "attacks": "Performs Multiattack with three bite attacks, including potent poison effects from the snake head.",
+    "most_powerful_ability": "Its 'Three-Headed' trait allows it advantage on Perception checks and resilience against many conditions.",
+    "equipment": null,
+    "senses": "Enhanced senses with darkvision up to 120 feet and a passive perception score of 15, making it very aware of its surroundings.",
+    "skills": "Skilled in perception and survival, showcasing proficiency in awareness and tracking.",
+    "additional_information": [
+        "Can knock opponents prone with its canine head bites.",
+        "Maintains alertness even while resting due to the 'Wakeful' ability.",
+        "Effective in combat due to its multiple heads and size."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "two-headed canine creature with poison attack",
+        "serpent-like monster that can knock opponents down",
+        "agile creature with multiple heads and poison",
+        "multi-headed monstrosity that excels in awareness",
+        "canine and serpent hybrid that hunts efficiently"
+    ]
+}

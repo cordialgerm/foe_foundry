@@ -1,6 +1,8 @@
 <MonsterName/>Hound Guardian</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>32</HP>
 <summary>The Hound Guardian is a Medium Construct known for its protective capabilities and swift mobility. With a notably high Armor Class of 15 and an average of 32 hit points, this creature is moderately tough to defeat, making it an effective guardian in combat situations. Its notable strengths include immunities to various forms of damage and conditions, particularly poison and the effects of nonmagical weapons, as well as its exceptional ability to perceive threats with keen hearing and smell. However, it is limited by its low Intelligence and Charisma scores which renders it incapable of complex thought or communication. The Guardian's challenge rating of 1 indicates that it can provide a decent challenge for lower-tier adventurers while supporting its allies in battle.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Additionally, it has a reaction called Protective Bite, which allows it to respo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hound Guardian
 
 *Medium* *Construct*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Protective Bite:** When a creature within 5 feet hits the guardians owner with a melee attack, the guardian bites the attacker.
 
 
+</statblock>
 
 

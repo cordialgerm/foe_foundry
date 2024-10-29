@@ -1,0 +1,25 @@
+{
+    "name": "Wood Herald",
+    "queries": [
+        {
+            "query": "small plant creature that can camouflage in foliage and retaliates with thorny spikes",
+            "variant": "small creature made of plants that hides in bushes and hits back with bramble spikes"
+        },
+        {
+            "query": "guardian of the woods with the ability to resist exhaustion and communicate in Sylvan",
+            "variant": "woodland guardian that can speak Sylvan and is immune to fatigue"
+        },
+        {
+            "query": "plant being that moves through plants easily and strikes with a wooden axe",
+            "variant": "plant creature that navigates through vegetation without trouble and attacks with a wood axe"
+        },
+        {
+            "query": "plant monster with darkvision and abilities to attack both in melee and from a distance",
+            "variant": "plant creature with the ability to see in darkness and attack close range and afar"
+        },
+        {
+            "query": "creature that embodies nature, has high stealth in wooded areas and can climb",
+            "variant": "nature spirit that is very sneaky in forests and is able to climb easily"
+        }
+    ]
+}

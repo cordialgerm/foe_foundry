@@ -1,0 +1,25 @@
+{
+    "name": "Xanka",
+    "queries": [
+        {
+            "query": "small construct that destroys nonmagical objects",
+            "variant": "small robot that breaks nonmagical items"
+        },
+        {
+            "query": "creature with blindsight and immunity to poison",
+            "variant": "monster that has blindsight and is immune to poison"
+        },
+        {
+            "query": "low intelligence creature that can absorb materials",
+            "variant": "creature with poor intelligence that absorbs substances"
+        },
+        {
+            "query": "construct with the ability to disable weapons and objects",
+            "variant": "robot that can dismantle weapons and items"
+        },
+        {
+            "query": "small creature effective against equipment and structures",
+            "variant": "small monster strong against gear and buildings"
+        }
+    ]
+}

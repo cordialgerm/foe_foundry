@@ -1,0 +1,52 @@
+{
+    "name": "Moon Nymph",
+    "creature_type": "Aberration",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 110,
+    "ac": 13,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 40 ft., hover, walk 0 ft.",
+    "role": null,
+    "tags": [
+        "psychic",
+        "radiant",
+        "stealth",
+        "elusive"
+    ],
+    "adjectives": [
+        "chaotic",
+        "cunning",
+        "formidable",
+        "illusory"
+    ],
+    "description": "The Moon Nymph is a striking aberration with exceptional charisma and dexterous maneuvers. Elusive in nature, it can become invisible and dominate the battlefield with its potent psychic and radiant abilities.",
+    "memorable": "Its ability to stun opponents and create hallucinations makes the Moon Nymph a fearsome foe.",
+    "goals": "To manipulate and dominate foes through stealth and psychological warfare.",
+    "relations": "Other aberrations, creatures that rely on stealth or magic.",
+    "environment": "Typically found in areas of strong magical influence or darkness.",
+    "strengths": "Possesses magic resistance, allowing it to effectively resist spells, and has a strong combination of psychic and radiant damage.",
+    "weaknesses": "Low physical strength, limitations in melee combat due to its reliance on magic.",
+    "attacks": "Can perform a Multiattack with Beguiling Touch for psychic damage or Moonbeam for radiant damage, both causing debilitating effects.",
+    "most_powerful_ability": "Veil of Nightmares creates fear and inflicts significant psychic damage on nearby foes.",
+    "equipment": null,
+    "senses": "The Moon Nymph has a passive Perception of 15.",
+    "skills": "It has notable proficiencies in Perception, Persuasion, and Stealth, making it effective in both combat and social situations.",
+    "additional_information": [
+        "Immune to psychic damage.",
+        "Resistant to necrotic and radiant damage.",
+        "Can only be seen normally in dim light when invisible.",
+        "Elusive combat style favors aerial mobility and evasiveness.",
+        "Chaos-driven tactics focus on manipulating foes' perceptions and actions."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy creature that inflicts psychic damage",
+        "aerial monster that uses illusions in battle",
+        "chaotic nymph with magic resistance and mind tricks",
+        "psychic abuser that can stun opponents",
+        "monster that becomes invisible in light"
+    ]
+}

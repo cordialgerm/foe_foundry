@@ -1,0 +1,50 @@
+{
+    "name": "Flab Giant",
+    "creature_type": "Giant",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 110,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walking speed of 20 feet",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "melee combatant",
+        "grappler"
+    ],
+    "adjectives": [
+        "slow-moving",
+        "powerful",
+        "durable"
+    ],
+    "description": "The Flab Giant is a large, imposing creature characterized by its immense bulk and slowness. It has a strong, muscular build and relies on its formidable strength rather than speed for combat.",
+    "memorable": "The Flab Giant's capability to restrain enemies with its grappling moves makes it a significant threat in close combat.",
+    "goals": "To overpower and dominate smaller opponents, often using brute force to subdue them.",
+    "relations": "Often encountered alone but may be found in areas where other chaotic evil creatures lurk, possibly serving stronger evil beings.",
+    "environment": "Typically found in chaotic, wild areas or territories that fit its chaotic evil alignment.",
+    "strengths": "High physical resilience and the ability to grapple opponents efficiently.",
+    "weaknesses": "Very low Dexterity, making it vulnerable to ranged attacks.",
+    "attacks": "Multiattack with two powerful Slam strikes that can incapacitate smaller foes.",
+    "most_powerful_ability": "Squatting Pin, which deals significant damage and restrains grappled creatures.",
+    "equipment": null,
+    "senses": "Possesses passive perception of 13, reflecting average awareness.",
+    "skills": "Proficient in Perception, offering it decent awareness of surroundings.",
+    "additional_information": [
+        "Immune to poison damage and cannot be poisoned.",
+        "Cannot take the Dash action due to its Massive Bulk ability.",
+        "Exceptional Strength allows it to deal heavy melee damage.",
+        "Grappling a creature makes it difficult for them to escape once trapped.",
+        "Can deal ongoing bludgeoning damage while a target is restrained."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "slow-moving giant that restrains enemies",
+        "powerful melee giant with grappling abilities",
+        "large brute creature immune to poison damage",
+        "giant that deals damage while holding foes",
+        "chaotic evil giant with low dexterity"
+    ]
+}

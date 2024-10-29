@@ -1,0 +1,25 @@
+{
+    "name": "Sacred Hippopotamus",
+    "queries": [
+        {
+            "query": "huge celestial creature that can heal and teleports",
+            "variant": "huge celestial being that can heal and teleport"
+        },
+        {
+            "query": "sacred guardian hippo with necrotic damage abilities",
+            "variant": "sacred hippo guardian with necrotic damage powers"
+        },
+        {
+            "query": "powerful celestial hippo that resists magical attacks",
+            "variant": "strong celestial hippopotamus that resists magic attacks"
+        },
+        {
+            "query": "divine creature with stunning attacks and protective abilities",
+            "variant": "divine being with stunning strikes and protective powers"
+        },
+        {
+            "query": "heavily armored hippo serving as guardian of sacred sites",
+            "variant": "well-armored hippopotamus acting as a guardian of holy sites"
+        }
+    ]
+}

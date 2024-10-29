@@ -1,0 +1,25 @@
+{
+    "name": "Young Emerald Dragon",
+    "queries": [
+        {
+            "query": "large green dragon with psionic powers and high intelligence",
+            "variant": "big green dragon that has psionics and is highly intelligent"
+        },
+        {
+            "query": "dragon that can cast spells and has a breath weapon attack",
+            "variant": "dragon with spellcasting ability and a breath attack"
+        },
+        {
+            "query": "cunning dragon living in caves that resists thunder damage",
+            "variant": "sly dragon found in caves that takes less thunder damage"
+        },
+        {
+            "query": "powerful flying dragon known for its magic and stealth",
+            "variant": "strong flying dragon famous for magic and sneaking"
+        },
+        {
+            "query": "emerald dragon that can telepathically observe creatures from afar",
+            "variant": "green dragon able to observe beings telepathically from a distance"
+        }
+    ]
+}

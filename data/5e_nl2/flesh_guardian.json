@@ -1,0 +1,53 @@
+{
+    "name": "Flesh Guardian",
+    "creature_type": "Construct",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 93,
+    "ac": 9,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "protector",
+        "lightning resistant"
+    ],
+    "adjectives": [
+        "animated",
+        "formidable",
+        "berserk"
+    ],
+    "description": "The Flesh Guardian is a Medium Construct with a solid build and an animated presence, created as a protector by a skilled magic practitioner. It has formidable melee attack capabilities.",
+    "memorable": "Its ability to absorb lightning damage while becoming a powerful berserk attacker makes it a unique creature in battles.",
+    "goals": "Typically created to protect a specific individual or location, it acts as a guardian and enforcer.",
+    "relations": "Often associated with its creator, who may also be a spellcaster; can be found alongside other constructs or animated creatures.",
+    "environment": "Usually found in the homes or lairs of powerful spellcasters, or guarding specific locations or treasures.",
+    "strengths": "Immunities to various conditions and damage from nonmagical weapons, coupled with its ability to absorb lightning damage and perform powerful melee attacks.",
+    "weaknesses": "Low armor class leaves it vulnerable to attacks, and its low Dexterity makes it clumsy in avoiding ranged combat.",
+    "attacks": "Multiattack with slam attacks and the ability to hurl objects at foes, dealing significant bludgeoning damage.",
+    "most_powerful_ability": "Lightning Bolt attack that can unleash a devastating blast of lightning damage, usable once per day while bloodied.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can enter a berserk state if bloodied, attacking the nearest target.",
+        "Immunity to being charmed, fatigued, frightened, paralyzed, petrified, or poisoned.",
+        "Has advantage on saving throws against magical effects due to Magic Resistance.",
+        "Does not require air, sustenance, or sleep, functioning continuously.",
+        "Rattled by fire damage, potentially affecting its performance."
+    ],
+    "damage_types": [
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct that absorbs lightning damage",
+        "protector made by magic user",
+        "animated guardian with berserk ability",
+        "creature immune to nonmagical damage",
+        "medium construct with multiple attacks"
+    ]
+}

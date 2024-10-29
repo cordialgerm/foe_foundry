@@ -1,0 +1,25 @@
+{
+    "name": "Labyrinth Keeper",
+    "queries": [
+        {
+            "query": "evil creature that manipulates mazes and has spellcasting abilities",
+            "variant": "creature that is evil, manipulates mazes and can cast spells"
+        },
+        {
+            "query": "large monstrosity with charge ability that deals extra piercing damage",
+            "variant": "large monster with charge attack that inflicts additional piercing damage"
+        },
+        {
+            "query": "chaotic evil monster with darkvision and high perception skills",
+            "variant": "chaotic evil creature with darkvision and good perception skills"
+        },
+        {
+            "query": "monster that excels in close combat and has a multiattack feature",
+            "variant": "creature skilled in close range fighting and has a multi-attack option"
+        },
+        {
+            "query": "labyrinth navigating creature with Reckless Caster ability",
+            "variant": "creature that navigates labyrinths and possesses a Reckless Caster feature"
+        }
+    ]
+}

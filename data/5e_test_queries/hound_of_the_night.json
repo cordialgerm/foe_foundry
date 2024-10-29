@@ -1,0 +1,25 @@
+{
+    "name": "Hound of the Night",
+    "queries": [
+        {
+            "query": "large monstrous hound that can teleport and has cold breath",
+            "variant": "monstrous large hound that has cold breath and can teleport"
+        },
+        {
+            "query": "creature that tracks fey and deals cold damage",
+            "variant": "being that deals cold damage and tracks fey creatures"
+        },
+        {
+            "query": "ferocious dog-like monster with darkvision and fire vulnerability",
+            "variant": "vicious dog-like creature that is vulnerable to fire with darkvision"
+        },
+        {
+            "query": "Hound with advantages on Perception checks and can knock prones",
+            "variant": "hound that has Perception advantage and can knock enemies prone"
+        },
+        {
+            "query": "agile monstrosity with the ability to hunt and deal piercing damage",
+            "variant": "agile monster that can hunt and inflict piercing damage"
+        }
+    ]
+}

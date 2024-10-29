@@ -1,0 +1,25 @@
+{
+    "name": "Doppelrat",
+    "queries": [
+        {
+            "query": "small, sneaky creature that uses disease and deception in combat",
+            "variant": "sneaky, small creature that employs disease and tricks during battle"
+        },
+        {
+            "query": "monstrosity with high dexterity that creates rat swarms for distraction",
+            "variant": "creature with high agility that summons swarms of rats to confuse opponents"
+        },
+        {
+            "query": "tiny monster with the ability to inflict a grotesque disease on its foes",
+            "variant": "small creature capable of giving a disturbing disease to its enemies"
+        },
+        {
+            "query": "darkvision creature that excels in stealth and relies on trickery",
+            "variant": "creature with dark vision that is very skilled in stealth and uses deception"
+        },
+        {
+            "query": "D&D creature known for creating duplicates and hiding among rats",
+            "variant": "D&D monster recognized for making copies of itself and blending in with rats"
+        }
+    ]
+}

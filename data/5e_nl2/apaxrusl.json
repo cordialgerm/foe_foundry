@@ -1,0 +1,52 @@
+{
+    "name": "Apaxrusl",
+    "creature_type": "Construct",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "burrow 30 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "earth manipulation",
+        "fiendish essence",
+        "burrowing"
+    ],
+    "adjectives": [
+        "durable",
+        "stealthy",
+        "formidable"
+    ],
+    "description": "The Apaxrusl is a Medium Construct with a fiendish essence, capable of manipulating earth. It can burrow through nonmagical earth and stone without disturbing it, and has a tough exterior.",
+    "memorable": "Its ability to burrow silently and create fiery sand storms makes it a unique and dangerous combatant.",
+    "goals": "To engage in physical confrontations and leverage its unique abilities in combat scenarios.",
+    "relations": "Related to constructs and fiendish creatures, possibly serving fiends or being created by them.",
+    "environment": "Often found in subterranean environments or areas rich in earth and stone.",
+    "strengths": "Immunity to fire and poison damage, ability to cause area damage with Fiery Sands, and durability.",
+    "weaknesses": "Vulnerability to thunder damage and reliance on non-magical materials for abilities.",
+    "attacks": "It can make two slam attacks that can blind targets, and use fiery sand storms to deal damage to multiple foes.",
+    "most_powerful_ability": "Fiery Sands, which can damage multiple enemies and create chaos on the battlefield.",
+    "senses": "Has tremorsense to detect creatures and objects in contact with the ground within 30 feet.",
+    "skills": "Proficient in Stealth, enhancing its capability to maneuver unseen.",
+    "additional_information": [
+        "Damage immunities include fire and poison.",
+        "Condition immunities include charmed, exhausted, frightened, paralyzed, petrified, and poisoned.",
+        "The Earth Glide ability allows for stealthy underground movement.",
+        "The creature's type is both fiend and construct, affecting interactions with certain features.",
+        "Can reduce damage taken using its Shifting Sands reaction."
+    ],
+    "damage_types": [
+        "fire",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy earth manipulator",
+        "fiend construct with sand abilities",
+        "burrowing combat construct",
+        "creature using fiery sand attacks",
+        "earth gliding enemy"
+    ]
+}

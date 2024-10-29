@@ -1,0 +1,25 @@
+{
+    "name": "Dwarf, Angler",
+    "queries": [
+        {
+            "query": "cunning humanoid that uses light to charm foes",
+            "variant": "cunning human-like creature that charms enemies with light"
+        },
+        {
+            "query": "unpleasant dwarf with camouflage in rocky terrain",
+            "variant": "unpleasant angler dwarf that blends into rocky landscapes"
+        },
+        {
+            "query": "medium humanoid that ambushes in underground areas",
+            "variant": "medium-sized humanoid that ambushes in subterranean environments"
+        },
+        {
+            "query": "dwarf that inflicts radiant damage and blinds enemies",
+            "variant": "angler dwarf that deals radiant damage and can blind foes"
+        },
+        {
+            "query": "neutral evil dwarf with a special glowing ability",
+            "variant": "evil neutral dwarf with a special light-emitting skill"
+        }
+    ]
+}

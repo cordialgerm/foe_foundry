@@ -1,0 +1,54 @@
+{
+    "name": "Arx",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Large",
+    "hp": 171,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 20 ft., fly 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "large",
+        "lawful evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "strategic",
+        "resilient"
+    ],
+    "description": "The Arx is a Large Fiend with a solid build, showcasing a fearsome appearance and natural armor. It is characterized by its towering stature and formidable claws, along with spiky hide that deters close-range attackers.",
+    "memorable": "The Arx can control the battlefield with its Emplace Wall ability, creating barriers and inflicting damage with its Wall Smash that crushes enemies caught within.",
+    "goals": "To dominate its opponents and manipulate the battlefield to its advantage.",
+    "relations": "It can ally with other fiends or command lesser demons and creatures.",
+    "environment": "Typically found in infernal domains or corrupted lands.",
+    "strengths": "High physical strength and significant damage resistances to elemental attacks.",
+    "weaknesses": "Low Dexterity makes it vulnerable to ranged attacks.",
+    "attacks": "The Arx unleashes powerful melee attacks with its claws and spear, dealing slashing and piercing damage, while also creating hazardous walls.",
+    "most_powerful_ability": "Wall Smash which can deal substantial bludgeoning damage in a wide area and control enemy movement.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 90 feet and a passive Perception of 16.",
+    "skills": "Proficient in Athletics and has a decent Perception skill.",
+    "additional_information": [
+        "Immune to any form-altering magic due to Immutable Form.",
+        "Has advantage on saving throws against spells with Magic Resistance.",
+        "Deals piercing damage to anyone who touches it or attacks it in melee range with Spiky Hide."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful fiend",
+        "battlefield control monster",
+        "large lawful evil creature",
+        "fiend with wall abilities",
+        "fiend with high strength attacks"
+    ]
+}

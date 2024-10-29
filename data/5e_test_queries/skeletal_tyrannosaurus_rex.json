@@ -1,0 +1,25 @@
+{
+    "name": "Skeletal Tyrannosaurus Rex",
+    "queries": [
+        {
+            "query": "massive undead dinosaur with a bite attack",
+            "variant": "huge undead dino that has a bite attack"
+        },
+        {
+            "query": "skeleton dinosaur that is immune to poison",
+            "variant": "undead dino skeleton that has poison immunity"
+        },
+        {
+            "query": "huge undead creature vulnerable to bludgeoning damage",
+            "variant": "large undead monster weak to bludgeoning attacks"
+        },
+        {
+            "query": "Tyrannosaurus with high hit points and low Dexterity",
+            "variant": "T-rex that has a lot of hit points and bad Dexterity"
+        },
+        {
+            "query": "skeletal monster that can grapple and attack swiftly",
+            "variant": "skeleton monster that grapples and can strike quickly"
+        }
+    ]
+}

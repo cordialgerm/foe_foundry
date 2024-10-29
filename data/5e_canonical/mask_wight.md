@@ -1,6 +1,8 @@
 <MonsterName/>Mask Wight</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>13</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>207</HP>
 <summary>The Mask Wight is a formidable undead creature characterized by its inherent evil nature and its potent offensive capabilities. This Medium creature is notorious for inflicting significant necrotic damage while retaining an impressive durability with a high hit point total of 207, making it a challenging adversary. It has a strong armor class of 19 due to its natural armor, alongside exceptional attributes, particularly in Strength, Constitution, and high Dexterity, which enhance its combat effectiveness. However, it is vulnerable to radiant damage. The Mask Wight excels in targeting foes wielding fiendish powers, granting it advantage on attack rolls against such enemies. Additionally, its unique abilities make it resistant to many forms of damage and immune to a wide range of conditions, making it difficult to hinder through conventional means. </summary>
 
 <detail>
@@ -35,6 +37,7 @@ Overall, the Mask Wight stands as a deeply impactful foe in any campaign, threat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mask Wight
 
 *Medium* *Undead* *Neutral Evil*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Khopesh of Oblivion:** Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage plus 13 (3d8) necrotic damage.
 - **Spiked Gauntlet:** Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage plus 13 (3d8) necrotic damage. If the target is a Large or smaller creature, it must succeed on a DC 17 Strength saving throw or be knocked prone.
 - **Wail of the Forgotten (Recharge 6):** The mask wight emits an ear-piercing wail. Each creature within 30 feet of the mask wight must make a DC 17 Charisma saving throw. On a failure, a creature takes 35 (10d6) thunder damage and 27 (6d8) psychic damage and is deafened for 1 hour. On a success, a creature takes half the damage and isn’t deafened. A creature killed by this wail is erased from the memories of every creature in the planes that ever saw or interacted with it, all written or pictorial references to the target fade away, and its body is obliterated. Only divine beings and creatures that saw the creature die are unaffected by this memory erasure. The slain creature can be restored to life only by means of a true resurrection or a wish spell.
+</statblock>
 
 

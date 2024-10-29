@@ -1,0 +1,54 @@
+{
+    "name": "Crimson Drake",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Evil",
+    "size": "Tiny",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "walks swiftly at 80 feet and has limited flying speed of 15 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "fire",
+        "poison",
+        "familiar"
+    ],
+    "adjectives": [
+        "chaotic",
+        "mischievous",
+        "clever"
+    ],
+    "description": "A tiny dragon with a striking crimson color, known for its chaotic demeanor and agile movements.",
+    "memorable": "Utilizes magical resistance and speed, inflicting fire and poison damage.",
+    "goals": "To create chaos and mischief in battles, often relying on tactics rather than brute force.",
+    "relations": "May form bonds with spellcasters as a familiar, providing unique advantages.",
+    "environment": "Can be found in various terrains, often lurking in areas where it can ambush unsuspecting adventurers.",
+    "strengths": "Magic resistance provides an edge against spellcasters, and high mobility allows for quick escape or repositioning.",
+    "weaknesses": "Low physical strength and average Constitution may limit its melee combat effectiveness.",
+    "attacks": "Delivers quick bite and stinger attacks, combining physical damage with fire and poison effects.",
+    "most_powerful_ability": "Fire Breath, allowing it to unleash a fiery cone attack with devastating potential.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Skilled in Acrobatics, allowing it to maneuver easily in combat, and has some perception skills.",
+    "additional_information": [
+        "Forms a telepathic bond when serving as a familiar",
+        "Inflicts poison damage that continues while victims are poisoned",
+        "Uses fire breath attack, forcing enemies to save against fire damage",
+        "Agility grants it an advantage in avoiding attacks",
+        "Notable for being a cunning opponent in battles"
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny dragon with fire breath ability",
+        "sly drake that uses poison attacks",
+        "mischievous dragon serving as a familiar",
+        "fast flying creature that inflicts fire damage",
+        "chaotic small dragon creating battlefield chaos"
+    ]
+}

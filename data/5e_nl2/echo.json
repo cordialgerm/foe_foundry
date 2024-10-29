@@ -1,0 +1,50 @@
+{
+    "name": "Echo",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 102,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 20 ft. and walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "chaotic",
+        "magical"
+    ],
+    "adjectives": [
+        "unsettling",
+        "formidable",
+        "deceptive"
+    ],
+    "description": "The Echo is a medium-sized chaotic evil fiend characterized by its unsettling presence, high Strength and Dexterity, sharp iron claws, and formidable combat abilities.",
+    "memorable": "It combines psychological disruption with potent combat skills, making it a unique threat.",
+    "goals": "To disrupt opponents in combat while dealing consistent damage.",
+    "relations": "May be encountered alongside other chaotic fiends or serve dark powers.",
+    "environment": "Can typically be found in dark, chaotic places, often linked to the Abyss.",
+    "strengths": "High Strength and Dexterity make it exceptionally effective in combat situations.",
+    "weaknesses": "Vulnerable to specific damage types not detailed in its resistances.",
+    "attacks": "Utilizes iron claws for melee attacks that deal slashing damage and can deafen opponents.",
+    "most_powerful_ability": "Aura of Cacophony disrupts enemy concentration, providing tactical advantages.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception of 14, indicating keen insight.",
+    "skills": "Skilled in persuasion and stealth, demonstrating its deceptive capabilities.",
+    "additional_information": [
+        "Immune to poison damage and conditions.",
+        "Resistant to cold, fire, and lightning damage.",
+        "Capable of teleportation for enhanced combat mobility.",
+        "Has a special ability that stuns opponents and impairs their cognitive abilities.",
+        "Employs tactics that may confuse and disorient enemies."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic evil fiend with stunning wails",
+        "medium creature that disrupts concentration",
+        "deceptive monster with iron claws",
+        "horror fiend with teleportation abilities",
+        "echo demon that deafens opponents"
+    ]
+}

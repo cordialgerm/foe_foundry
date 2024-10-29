@@ -1,0 +1,25 @@
+{
+    "name": "Nalfeshnee",
+    "queries": [
+        {
+            "query": "grotesque large demon with a tusked face and bat-like wings",
+            "variant": "large demon with a tusked face and grotesque bat wings"
+        },
+        {
+            "query": "demon with cruel intelligence that spreads madness",
+            "variant": "intelligent cruel demon that causes madness"
+        },
+        {
+            "query": "towering fiend known for its chaotic evil nature and magical resistance",
+            "variant": "tall fiend recognized for its chaotic evil nature and spell resistance"
+        },
+        {
+            "query": "demon that can teleport and frighten creatures nearby",
+            "variant": "fiend that frightens creatures nearby and can teleport"
+        },
+        {
+            "query": "bulky demon that uses horrific light to frighten enemies",
+            "variant": "bulky demon that uses frightening light to scare foes"
+        }
+    ]
+}

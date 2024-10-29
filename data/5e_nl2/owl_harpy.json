@@ -1,0 +1,53 @@
+{
+    "name": "Owl Harpy",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 112,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 80 ft., fly 20 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "stealth",
+        "charm",
+        "darkness"
+    ],
+    "adjectives": [
+        "deceptive",
+        "sinister",
+        "mobility",
+        "resilient"
+    ],
+    "description": "The Owl Harpy is a medium-sized monstrosity known for its deceptive charm and sinister abilities. It combines avian features with a humanoid form, giving it an eerie appearance that can captivate or terrify its prey.",
+    "memorable": "Its ability to incapacitate foes with a magical melody and control the battlefield with zones of magical darkness makes it a formidable opponent.",
+    "goals": "To cause chaos and manipulate its prey, often ambushing unsuspecting adventurers.",
+    "relations": "Often encountered alongside other dark creatures or harpies, leveraging its abilities for sinister aims.",
+    "environment": "Typically found in shadowy forests or areas of dense darkness where it can ambush its victims.",
+    "strengths": "High Dexterity enhances evasion and stealth, along with powerful magical abilities like Sleeping Song and Hovering Darkness.",
+    "weaknesses": "Vulnerable to thunder damage, which can significantly impact its combat effectiveness.",
+    "attacks": "Can make multiple slashing attacks with its claws and talons, enabling it to deal consistent damage in combat.",
+    "most_powerful_ability": "Sleeping Song can incapacitate multiple foes within a large radius, providing significant control over encounters.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to navigate in complete darkness effectively.",
+    "skills": "Proficient in Performance and Stealth, enhancing its abilities as a stealth operative and performer.",
+    "additional_information": [
+        "Advantage on Wisdom (Perception) checks that rely on hearing due to Hypersensitive Hearing",
+        "Can hide while flying thanks to its Quiet Wings ability",
+        "Able to create a 15-foot radius of magical darkness that moves with it",
+        "Highly persuasive due to exceptional Charisma",
+        "Capable of remaining undetected while maneuvering in combat"
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": "Has the ability to cast powerful spells like Sleeping Song and create magical darkness.",
+    "test_queries": [
+        "sinister flying monster with magical charm",
+        "stealthy creature that uses darkness to hide",
+        "owl creature with enchanting singing ability",
+        "ambush predator that incapsulates enemies",
+        "deceptive harpy that thrives in shadows"
+    ]
+}

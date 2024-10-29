@@ -1,0 +1,48 @@
+{
+    "name": "Hinderling",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 13,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "30 ft. walking and 20 ft. climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "mischief",
+        "chaos"
+    ],
+    "adjectives": [
+        "slippery",
+        "chaotic",
+        "mischievous"
+    ],
+    "description": "The Hinderling is a small fey creature embodying mischief and cunning, known for its agile form and quick movements.",
+    "memorable": "The Hinderling creates chaos through its 'Aura of Misfortune' and can return to life, maintaining its disruptive antics.",
+    "goals": "To create mischief and chaos for its enemies while evading confrontation.",
+    "relations": "Often related to other fey creatures, acts as a trickster in various fey courts.",
+    "environment": "Typically found in areas of dense foliage or places where it can easily hide and create disturbances.",
+    "strengths": "Agile with high dexterity, capable of evading attacks and manipulating luck against foes.",
+    "weaknesses": "Low durability with only 13 hit points, making it vulnerable to damage.",
+    "attacks": "Utilizes 'Stolen Belonging' for melee and 'Hurl Stolen Belonging' for ranged attacks, both dealing bludgeoning damage.",
+    "most_powerful_ability": "Aura of Misfortune significantly hampers enemy effectiveness by reducing critical hits and preventing advantage.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet and a passive perception of 14, indicating a keen awareness of its surroundings.",
+    "skills": "Possesses perception skill but with an average rating, indicating moderate ability to detect hidden threats.",
+    "additional_information": [
+        "Can move through larger creatures' spaces without provoking opportunity attacks.",
+        "Can take the Disengage or Hide action as a bonus action, enhancing evasiveness.",
+        "Can return to life within 100 feet of a cursed victim, maintaining its chaotic nature."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small chaotic fey creature with mischief",
+        "agile fey that creates misfortune",
+        "trickster fey that causes chaos",
+        "creature with unique resurrection ability",
+        "mischievous smaller creature with evasive tactics"
+    ]
+}

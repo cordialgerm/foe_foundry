@@ -1,0 +1,25 @@
+{
+    "name": "Incandescent One",
+    "queries": [
+        {
+            "query": "medium celestial creature with magical abilities that can fly",
+            "variant": "medium sized celestial being that has magical powers and can fly"
+        },
+        {
+            "query": "chaotic good creature that has high charisma and resistance to poison",
+            "variant": "chaotic good monster with elevated charisma and poison resistance"
+        },
+        {
+            "query": "celestial that sheds light and has immunity to various conditions",
+            "variant": "light-emitting celestial with immunities to different conditions"
+        },
+        {
+            "query": "creature that can breathe air and water with powerful attacks",
+            "variant": "monster capable of breathing in both air and water and has strong attacks"
+        },
+        {
+            "query": "mobility-focused celestial with advantageous flying abilities",
+            "variant": "celestial creature that emphasizes mobility and has advantageous flight skills"
+        }
+    ]
+}

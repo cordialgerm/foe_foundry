@@ -1,0 +1,25 @@
+{
+    "name": "Clacking Skeleton",
+    "queries": [
+        {
+            "query": "undead skeleton that can frighten enemies",
+            "variant": "skeleton undead that can scare foes"
+        },
+        {
+            "query": "medium monster with a glaive that deals slashing damage",
+            "variant": "medium creature with glaive dealing slashing harm"
+        },
+        {
+            "query": "skeleton that has darkvision and is vulnerable to bludgeoning",
+            "variant": "undead that can see in darkness and weak to bludgeoning"
+        },
+        {
+            "query": "creature that uses Horrid Clacking ability in combat",
+            "variant": "being that uses Horrid Clacking during fights"
+        },
+        {
+            "query": "neutral evil skeleton with low intelligence",
+            "variant": "skeleton of neutral evil alignment with poor intelligence"
+        }
+    ]
+}

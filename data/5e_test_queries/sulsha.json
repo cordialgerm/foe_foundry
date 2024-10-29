@@ -1,0 +1,25 @@
+{
+    "name": "Sulsha",
+    "queries": [
+        {
+            "query": "large humanoid with climbing abilities that instills fear",
+            "variant": "large humanoid that can climb and creates fear"
+        },
+        {
+            "query": "lawful evil creature that uses bombs and melee attacks",
+            "variant": "evil lawful creature that attacks with melee and bombs"
+        },
+        {
+            "query": "formidable monster that can jump high and fight while climbing",
+            "variant": "monster that fights while climbing and can jump great distances"
+        },
+        {
+            "query": "humanoid creature with low Charisma and lethal combat tactics",
+            "variant": "humanoid with bad Charisma and deadly combat techniques"
+        },
+        {
+            "query": "Sulsha combat strategies involving area damage and intimidation",
+            "variant": "Sulsha tactics for battle with area damage and fear"
+        }
+    ]
+}

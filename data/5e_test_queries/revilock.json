@@ -1,0 +1,25 @@
+{
+    "name": "Revilock",
+    "queries": [
+        {
+            "query": "medium humanoid that uses camouflage to ambush prey",
+            "variant": "hummanoid Revilock that use camoflauge for ambushing"
+        },
+        {
+            "query": "creature with keen hearing and smell that lives in rocky terrain",
+            "variant": "monster that has keen smells and hearing living in rocky environments"
+        },
+        {
+            "query": "intelligent predator with psionic abilities and good stealth",
+            "variant": "predator that is smart and has psionic powers while being stealthy"
+        },
+        {
+            "query": "humanoid creature with a spiked club and grappling attack",
+            "variant": "humanoid monster wielding spiked club and can grapple"
+        },
+        {
+            "query": "ambush predator with blindsight that communicates telepathically",
+            "variant": "ambushing creature that can see through blindsight and talk with mind"
+        }
+    ]
+}

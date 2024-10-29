@@ -1,0 +1,54 @@
+{
+    "name": "Drainpipe Gargoyle",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft., fly 60 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "elemental",
+        "gargoyle",
+        "stealth",
+        "ambush"
+    ],
+    "adjectives": [
+        "versatile",
+        "nimble",
+        "deceptive",
+        "elemental"
+    ],
+    "description": "The Drainpipe Gargoyle resembles a typical statue when motionless, possessing a rugged texture and elemental features that hint at its water-based nature. It has robust limbs suited for both melee and ranged attacks.",
+    "memorable": "Unique ability to use False Appearance to blend in and strikes from the air with powerful water-based attacks.",
+    "goals": "Typically serves as a guardian of areas near water and engages in ambush tactics.",
+    "relations": "Often found among other elementals or gargoyles, might serve water-themed beings.",
+    "environment": "Commonly located in damp, water-rich environments or ruins near water sources.",
+    "strengths": "Immunities to poison and various conditions make it resilient in combat.",
+    "weaknesses": "Vulnerable to magical attacks and average Dexterity limit agility.",
+    "attacks": "Employs multiattack with claw and bite attacks, and uses a powerful water spit attack for area control.",
+    "most_powerful_ability": "Spit ability allows for area damage and can manipulate enemy positioning.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet and a passive Perception score of 14.",
+    "skills": "Possesses proficiency in perception, making it very aware of its surroundings.",
+    "additional_information": [
+        "Can fly at a speed of 60 feet for mobility.",
+        "Resistant to nonmagical slashing and piercing damage.",
+        "Does not require air, food, or sleep due to its elemental nature.",
+        "Effective ambusher with the False Appearance ability.",
+        "Utilizes height advantage for more lethal claw attacks."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ambush elemental that can fly",
+        "stealthy gargoyle with water attacks",
+        "elemental creature that disguises as statue",
+        "monster immune to poison and fatigue",
+        "gargoyle that attacks with claws and spit"
+    ]
+}

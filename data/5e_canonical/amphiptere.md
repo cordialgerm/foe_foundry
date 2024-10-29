@@ -1,6 +1,8 @@
 <MonsterName/>Amphiptere</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The amphiptere is a medium-sized beast that presents a unique challenge to adventurers due to its combination of agility and poison effects. With an unaligned nature, it does not exhibit allegiance to any side, making it a wild card in encounters. It possesses a good Armor Class of 15 due to its natural armor, allowing it to withstand moderate attacks. With 60 hit points, calculated as 8d8 + 24, it has a decent amount of health for its Challenge Rating of 3, representing an experience value of 700 XP. Notable strengths of the amphiptere lie in its high Dexterity of 18, providing it with a strong advantage in initiative and ranged attacks, compounded by its Flyby ability that allows it to disengage without provoking opportunity attacks. However, it has low Intelligence and Charisma, which does not contribute significantly to its combat prowess.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ This combination of abilities and attacks makes the amphiptere a fast, poisonous
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Amphiptere
 
 *Medium* *Beast* *Unaligned*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The amphiptere makes one Bite attack and one Stinger attack.
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d6 + 4) piercing damage.
 - **Stinger:** Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d6 + 4) piercing damage plus 10 (3d6) poison damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour.
+</statblock>
 
 

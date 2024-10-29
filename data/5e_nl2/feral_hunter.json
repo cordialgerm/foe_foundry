@@ -1,0 +1,53 @@
+{
+    "name": "Feral Hunter",
+    "creature_type": "Fey",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 83,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 feet speed, navigates difficult terrain easily",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "hunter",
+        "stealth",
+        "mobile"
+    ],
+    "adjectives": [
+        "agile",
+        "formidable",
+        "stealthy"
+    ],
+    "description": "The Feral Hunter is a Medium fey creature that boasts agility and stealth, wearing leather armor and possessing sharp piercing weapons. Its keen senses and adaptability make it a lethal predator in natural terrain.",
+    "memorable": "Its ability to evade attacks while dealing enhanced damage with piercing weapons makes it both a cunning hunter and an elusive target.",
+    "goals": "To hunt prey in natural environments, using stealth and precision.",
+    "relations": "Often associated with the wilderness and the fey realm, it may serve fey lords or act independently as a protector of natural spaces.",
+    "environment": "Commonly found in forests or wilderness areas, thriving in natural terrains.",
+    "strengths": "High Dexterity and enhanced senses for stealth and precision attacks.",
+    "weaknesses": "Average physical strength and constitution limits its resilience against brute force.",
+    "attacks": "Utilizes a Hunting Knife for melee and a Longbow for ranged attacks, both capable of dealing significant piercing damage.",
+    "most_powerful_ability": "Precise ability allows for extra damage on piercing attacks, increasing overall lethality.",
+    "equipment": null,
+    "senses": "Heightened senses with a Perception score of 19, allowing it to detect hidden threats effectively.",
+    "skills": "Skilled in Stealth, making it very adept at moving undetected in natural environments.",
+    "additional_information": [
+        "Resistance to charmed and unconscious conditions.",
+        "Ability to mark quarry for additional damage.",
+        "Can reposition without provoking opportunity attacks when damaged.",
+        "Excellent navigation through nonmagical plants.",
+        "Effective multiattack capability with melee and ranged options."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy fey hunter in the woods",
+        "agile creature with keen senses",
+        "forest predator with piercing attacks",
+        "mobile fey that excels in natural terrain",
+        "hunter with evasive abilities and marked quarry"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Horde Demon Band",
+    "queries": [
+        {
+            "query": "large fiendish creature with area vulnerability and chaotic evil",
+            "variant": "large fiend monster with vulnerability to area attacks and chaotic evil aura"
+        },
+        {
+            "query": "monster made of multiple demons that attacks in a band",
+            "variant": "creature composed of many demons that attacks as a group"
+        },
+        {
+            "query": "demon that can disperse into horde demons when defeated",
+            "variant": "fiend that splits into horde demons upon reaching zero hit points"
+        },
+        {
+            "query": "creature with high hit points and resistance to nonmagical weapons",
+            "variant": "monster with a lot of hit points and resistance against non-magical attacks"
+        },
+        {
+            "query": "darkvision fiend with immunity to poison damage",
+            "variant": "fiend with the ability to see in the dark and immune to poison"
+        }
+    ]
+}

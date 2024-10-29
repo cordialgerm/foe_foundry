@@ -1,6 +1,11 @@
 <MonsterName/>Wereboar (Lycanthrope)</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>human</Subtype>
+<Subtype/>lycanthrope</Subtype>
+<Subtype/>shapechanger</Subtype>
+<CR/>4</CR>
+<AC/>10</AC>
+<HP/>78</HP>
 <summary>A Wereboar is a humanoid cursed with the ability to transform into a powerful boar, either fully or in a hybrid form. Wereboars are known for their brute strength and ferocity, often charging headfirst into battle with their tusks and powerful muscles. They are aggressive and territorial, sometimes becoming leaders of bandit groups or raiders. In their boar form, they possess thick, bristly hides that provide them with natural armor, and they are highly resistant to damage from non-silvered weapons. Wereboars are dangerous opponents, capable of transmitting lycanthropy through their bite or tusks.</summary>
 
 <summary>The Wereboar is a Medium humanoid creature with the ability to shift between humanoid, hybrid, and boar forms. It possesses a significant amount of hit points, making it a durable opponent in combat. With a strong physical presence, highlighted by its notable Strength and decent Constitution, the Wereboar excels in melee combat. Its challenge rating of 4 indicates that it can present a moderate threat to adventuring parties. One of the creature's unique features is its immunity to damage from non-magical and non-silvered weapons, which can make it tough for unprepared characters to defeat. While it has average Dexterity, its limited mobility of 30 feet per turn and lack of ranged attacks could be considered weaknesses.</summary>
@@ -33,6 +38,7 @@ Overall, the wereboar serves as a powerful and strategic opponent in combat, cap
 
 Source: 5e_srd
 
+<statblock>
 ### Wereboar (Lycanthrope)
 
 *Medium humanoid (human, shapechanger), neutral evil*
@@ -69,7 +75,8 @@ Source: 5e_srd
 
 ***Maul (Humanoid or Hybrid Form Only)***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) bludgeoning damage.
 
-***Tusks (Boar or Hybrid Form Only)***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with wereboar lycanthropy.
+***Tusks (Boar or Hybrid Form Only)***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (2d6+3) slashing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with wereboar lycanthropy.</statblock>
+
 
 
 
@@ -77,6 +84,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wereboar
 
 *Medium* *Humanoid*
@@ -113,6 +121,7 @@ Source: 5e_artisinal_monsters
 - **Frenzied Tusks (While Bloodied:** The wereboar attacks with its tusks.
 
 
+</statblock>
 
 
 
@@ -121,6 +130,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wereboar
 
 *Medium humanoid (lycanthrope)*
@@ -157,5 +167,6 @@ Source: 5e_artisinal_monsters
 - **Challenging Snort (Boar or Hybrid Form Only).** The wereboar snorts and stomps its feet at a creature it can see within 30 feet of it. The target must succeed on a DC 13 WIS save or be frightened until the end of its next turn and have disadvantage on the next save it makes against being knocked prone by the wereboar.
 - **Change Shape.** The wereboar transforms into a Medum or Large boar, a Medium boar-humanoid hybrid, or back into its true form, which is Humanoid. Its statistics, other than its size, speed, and AC, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Deathwisp</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>15</AC>
+<HP/>82</HP>
 <summary>The Deathwisp is a medium-sized undead creature defined by its neutral evil alignment. This haunting entity is both elusive and dangerous, excelling in stealth and bringing a potent mixture of physical and necrotic damage to its victims. With an Armor Class of 15 and a robust hit point total of 82, it holds its ground well in combat, making it a formidable foe. However, its susceptibility to radiant damage while in sunlight, along with its requirement to remain stealthy, can serve as a weakness. Deathwisps rely on their exceptional Dexterity and Charisma, enabling them to strike quickly and manipulate their surroundings to their advantage. Overall, they are a significant challenge for adventurers, offering 2,900 experience points upon defeat.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ For bonus actions, the Deathwisp has the Shadow Traveler ability, which it can u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deathwisp
 
 *Medium* *Undead* *Neutral Evil*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Traveler (3/Day):** While in shadows, dim light, or darkness, the deathwisp disappears into the darkness and reappears in an unoccupied space it can see within 30 feet. A tendril of inky smoke appears at the origin and destination when it uses this bonus action.
+</statblock>
 
 

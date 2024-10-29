@@ -1,0 +1,25 @@
+{
+    "name": "Xenabsorber",
+    "queries": [
+        {
+            "query": "deceptive creature that can impersonate others and has a blue crystalline form",
+            "variant": "creature that is deceptive, can impersonate others, and has a blue crystal appearance"
+        },
+        {
+            "query": "medium aberration known for camouflage abilities and high strength in combat",
+            "variant": "medium-sized aberration recognized for its camouflage skills and high combat strength"
+        },
+        {
+            "query": "monster with good deception skills that mimics traits from other creatures",
+            "variant": "creature with strong deception abilities that copies traits from other monsters"
+        },
+        {
+            "query": "chaotic neutral aberration with natural armor and average intelligence",
+            "variant": "chaotic neutral creature that is an aberration with natural armor and has average intellect"
+        },
+        {
+            "query": "creature that executes multiple melee attacks and has a high hit point total",
+            "variant": "monster that can make several melee strikes and possesses a large amount of hit points"
+        }
+    ]
+}

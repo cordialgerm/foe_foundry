@@ -1,0 +1,25 @@
+{
+    "name": "Trapsmith",
+    "queries": [
+        {
+            "query": "small humanoid trapmaker with sunlight weakness",
+            "variant": "small trapmaker humanoid creature that is weak to sunlight"
+        },
+        {
+            "query": "clever rogue that uses improvised tools and sets traps",
+            "variant": "crafty rogue using tools to create traps"
+        },
+        {
+            "query": "dexterous creature skilled in stealth among shadows",
+            "variant": "agile stealthy creature good in dark environments"
+        },
+        {
+            "query": "trap-setting monster vulnerable to sunlight",
+            "variant": "monster that sets traps and has a weakness to sunlight"
+        },
+        {
+            "query": "humanoid with high dexterity and low strength in dark",
+            "variant": "humanoid creature with strong agility and weak strength in the dark"
+        }
+    ]
+}

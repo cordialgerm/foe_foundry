@@ -1,0 +1,25 @@
+{
+    "name": "Rotsam Swarm",
+    "queries": [
+        {
+            "query": "large ooze that causes debilitating disease and thrives in decay",
+            "variant": "big ooze that thrives in rotting environments and spreads debilitating diseases"
+        },
+        {
+            "query": "monster with thick slime that has a foul smell and can climb walls",
+            "variant": "creature covered in thick sludge that emits a putrid odor and can scale vertical surfaces"
+        },
+        {
+            "query": "creature with high hit points and low AC that infects its foes",
+            "variant": "monster with a lot of HP and a weak Armor Class that spreads disease to its enemies"
+        },
+        {
+            "query": "menacing ooze with necrotic energy and the ability to inflict bog rot",
+            "variant": "threatening ooze creature associated with necrotics that can cause bog rot disease"
+        },
+        {
+            "query": "swarm creature that occupies spaces and has powerful bite attacks",
+            "variant": "swarming monster that can share space with others and delivers deadly bites"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Stone-Eater Slime",
+    "queries": [
+        {
+            "query": "small ooze that can petrify targets and dissolves stone",
+            "variant": "small ooze that petrifies enemies and dissolves rocks"
+        },
+        {
+            "query": "creature with high Constitution that eats stone and has low intelligence",
+            "variant": "monster with a strong Constitution that consumes stone and has poor intelligence"
+        },
+        {
+            "query": "slime that can climb walls and has an acid damage attack",
+            "variant": "slime capable of wall climbing and dealing acid damage"
+        },
+        {
+            "query": "slow-moving ooze that regains health by destroying stone structures",
+            "variant": "sluggish ooze that heals by breaking down stone objects"
+        },
+        {
+            "query": "petrifying slime that has natural armor and can move through tight spaces",
+            "variant": "petrifying ooze with natural defense and capable of squeezing through narrow areas"
+        }
+    ]
+}

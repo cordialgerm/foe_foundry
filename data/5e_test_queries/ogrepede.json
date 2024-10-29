@@ -1,0 +1,25 @@
+{
+    "name": "Ogrepede",
+    "queries": [
+        {
+            "query": "huge undead creature that can inflict fear",
+            "variant": "huge undead monster that can cause fear"
+        },
+        {
+            "query": "undead monster with strong melee attacks and climbing ability",
+            "variant": "undead creature with powerful melee strikes and climbing capabilities"
+        },
+        {
+            "query": "massive undead that uses multiattack and can climb",
+            "variant": "large undead creature that can do multiattack and climb"
+        },
+        {
+            "query": "chaotic evil undead with poison immunity and critical hit abilities",
+            "variant": "chaotic evil creature that is undead and immune to poison with critical hit powers"
+        },
+        {
+            "query": "fear-inducing undead monster with low intelligence and strength",
+            "variant": "fear-causing undead creature with low intelligence and high strength"
+        }
+    ]
+}

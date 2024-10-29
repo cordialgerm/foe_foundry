@@ -1,0 +1,25 @@
+{
+    "name": "Monkey King",
+    "queries": [
+        {
+            "query": "powerful celestial creature with high agility and combat skills",
+            "variant": "powerfull celestial creatur thats agile and skilled in combat"
+        },
+        {
+            "query": "medium monkey-like celestial that has radiant and poison immunity",
+            "variant": "medium celstial monkey type with immunity to radiant and poison"
+        },
+        {
+            "query": "combatant with legendary resistance and truesight abilities",
+            "variant": "fighter that posses legendary resistance and has truesight powers"
+        },
+        {
+            "query": "Monkey King stats with multiattack and special abilities",
+            "variant": "Monkey King stat block with multiattack and special abilities"
+        },
+        {
+            "query": "celestial being that can control primates and has flight speed",
+            "variant": "celestial entity that controls monkeys and is capable of flying"
+        }
+    ]
+}

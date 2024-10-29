@@ -1,0 +1,54 @@
+{
+    "name": "Lava Keeper",
+    "creature_type": "Elemental",
+    "alignment": "lawful neutral",
+    "size": "Huge",
+    "hp": 276,
+    "ac": 18,
+    "srd": false,
+    "cr": "18",
+    "movement": "Walk and burrow at 40 feet",
+    "role": "Bruiser",
+    "tags": [
+        "fire",
+        "earth",
+        "elemental",
+        "volcanic"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "fire-resistant"
+    ],
+    "description": "The Lava Keeper is a massive elemental that embodies fire and earth, resembling molten rock and magma.",
+    "memorable": "Its ability to control the battlefield with lava and smoke while being a durable melee and ranged threat makes it a formidable adversary.",
+    "goals": "To guard volcanic landscapes and punish trespassers.",
+    "relations": "May interact with fire elementals and earth elementals.",
+    "environment": "Typically found in volcanic regions or lava fields.",
+    "strengths": "High hit points, powerful melee and ranged attacks, and innate spellcasting abilities.",
+    "weaknesses": "Moderate Dexterity limits agility compared to others.",
+    "attacks": "Can make multiple slam attacks or use devastating lava lob attacks.",
+    "most_powerful_ability": "Fumarole, creating an area of obscured vision and dealing impressive damage with fire and bludgeoning effects.",
+    "equipment": null,
+    "senses": "Possesses tremorsense out to 120 feet, allowing it to detect nearby creatures regardless of visibility.",
+    "skills": "Highly skilled in History and Perception, enhancing its awareness and knowledge.",
+    "additional_information": [
+        "Immunity to fire and poison damage.",
+        "Resistance to acid and lightning attacks.",
+        "Can summon earth or fire elementals once per day.",
+        "Can reshape terrain with move earth and stone shape spells.",
+        "Creates strategic barriers using wall of fire and wall of stone spells."
+    ],
+    "damage_types": [
+        "fire",
+        "bludgeoning"
+    ],
+    "spellcasting": "Innate spellcasting using Wisdom, able to cast move earth and stone shape at will.",
+    "test_queries": [
+        "massive elemental that controls lava and smoke",
+        "fire and earth elemental guarding volcanic regions",
+        "huge creature with bludgeoning and fire attacks",
+        "lava monster with powerful battlefield control",
+        "elemental resistant to fire and poison damage"
+    ]
+}

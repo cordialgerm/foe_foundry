@@ -1,0 +1,25 @@
+{
+    "name": "Raven, Swarm of Ravens",
+    "queries": [
+        {
+            "query": "swarm of tiny beasts with a knack for disrupting spellcasting",
+            "variant": "tiny beast swarm that disrupts spell casting"
+        },
+        {
+            "query": "medium swarm that can sense carrion and has swarm resilience",
+            "variant": "medium-sized swarm with carrion sensing skills and resilience"
+        },
+        {
+            "query": "speedy swarm that flies and evades direct combat",
+            "variant": "swift flying swarm that avoids direct fights"
+        },
+        {
+            "query": "disruptive raven swarm with negative strength and constitution",
+            "variant": "raven swarm with low strength and constitution that disrupts"
+        },
+        {
+            "query": "stealthy swarm of ravens that occupies creatures' spaces",
+            "variant": "sneaky raven swarm that takes over places of other creatures"
+        }
+    ]
+}

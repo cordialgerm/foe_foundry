@@ -1,0 +1,52 @@
+{
+    "name": "Murmuring Worm",
+    "creature_type": "Aberration",
+    "alignment": "null",
+    "size": "Huge",
+    "hp": 195,
+    "ac": 16,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 40 ft., burrow 20 ft., climb 40 ft., swim 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "aberration",
+        "psychic",
+        "grappling",
+        "confusion",
+        "control"
+    ],
+    "adjectives": [
+        "murmuring",
+        "psychic",
+        "intimidating"
+    ],
+    "description": "The Murmuring Worm is a massive aberration distinguished by its constant babbling and formidable presence. It has a robust body with strong, muscular limbs, enabling it to traverse various terrains effortlessly.",
+    "memorable": "Its 'Maddening Murmurs' ability can inflict psychic damage and confusion, making it a cerebral threat as much as a physical one.",
+    "goals": "To dominate its surroundings and incapacitate intelligent creatures through confusion and manipulation.",
+    "relations": "Likely related to other psychic creatures or aberrations, it may be found alongside minions that it influences.",
+    "environment": "Typically dwells in damp, dark places such as caves or underwater regions, where it can utilize its amphibious nature.",
+    "strengths": "Possesses high strength and constitution, allowing it to deal significant melee damage while remaining durable.",
+    "weaknesses": "Low intelligence makes it susceptible to clever tactics that exploit its lack of reasoning.",
+    "attacks": "Uses powerful multiattacks with constricting bludgeoning strikes and piercing bites that can consume its victims.",
+    "most_powerful_ability": "Maddening Murmurs, which damages and confuses non-aberrant creatures nearby.",
+    "equipment": null,
+    "senses": "Possesses tremorsense which allows it to detect creatures in its vicinity even through obstacles.",
+    "skills": null,
+    "additional_information": [
+        "Can breathe in both air and water due to its amphibious nature.",
+        "Senses intelligent creatures within a 500-foot radius, aiding its strategic planning.",
+        "Can manipulate foes to approach it using the Mental Summons ability."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge psychic creature that causes confusion",
+        "massive worm with mind control abilities",
+        "creature with maddening mental attacks",
+        "amphibious worm that thrives in darkness",
+        "strong grappling monster with psychic powers"
+    ]
+}

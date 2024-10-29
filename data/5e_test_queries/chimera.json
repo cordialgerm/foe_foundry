@@ -1,0 +1,25 @@
+{
+    "name": "Chimera",
+    "queries": [
+        {
+            "query": "three-headed creature with a lion's body that breathes fire",
+            "variant": "creature that has three heads, a lion body, and can breathe fire"
+        },
+        {
+            "query": "large monster with dragon wings that attacks from above",
+            "variant": "huge creature with wings of a dragon that strikes from the sky"
+        },
+        {
+            "query": "monstrosity that lives in mountain caves and has goat head",
+            "variant": "creature that resides in cave mountains and has a goat head"
+        },
+        {
+            "query": "aggressive lion-dragon hybrid with a serpent tail",
+            "variant": "hostile hybrid of lion and dragon with tail like a serpent"
+        },
+        {
+            "query": "multi-headed monster with high perception and strong melee attacks",
+            "variant": "creature with multiple heads, excellent perception, and powerful melee damage"
+        }
+    ]
+}

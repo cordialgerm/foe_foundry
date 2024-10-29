@@ -1,6 +1,8 @@
 <MonsterName/>Wampus Cat</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>14</AC>
+<HP/>39</HP>
 <summary>The Wampus Cat is a Medium chaotic neutral monstrosity known for its cunning and charm. It possesses a unique combination of offensive capabilities and manipulative skills, making it a versatile threat in combat. The creature has a respectable Armor Class of 14 and a pool of hit points totaling 39, providing it with decent durability for its challenge rating of 1. With sharp claws and a powerful vocal presence, the Wampus Cat can deal significant damage while also imposing status effects on opponents through its Sweet Song and Terrifying Yowl abilities. While it excels against divine beings due to its Divine Animosity advantage, its polymorphic ability allows it to adapt and infiltrate various situations, creating both opportunities for ambush and avenues for deception. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ As a bonus action, the Wampus Cat can use its Change Shape ability to polymorph 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wampus Cat
 
 *Medium* *Monstrosity* *Chaotic Neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The wampus cat magically polymorphs into a Medium female Humanoid, or back into her true form. Her statistics are the same in each form. Any equipment she is wearing or carrying transforms with her. She reverts to her true form if she dies.
+</statblock>
 
 

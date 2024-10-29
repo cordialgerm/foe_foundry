@@ -1,0 +1,25 @@
+{
+    "name": "Ice Willow",
+    "queries": [
+        {
+            "query": "large plant creature that resembles an ice-covered tree and can attack with icicles",
+            "variant": "big plant monster looking like a frosty tree that attacks with icicles"
+        },
+        {
+            "query": "neutral creature with high hit points and cold damage resistance that is vulnerable to fire",
+            "variant": "neutral monster with lots of HP and resistant to cold but weak against fire"
+        },
+        {
+            "query": "plant enemy that can camouflage itself and uses chilling attacks",
+            "variant": "plant foe able to blend in and employs freezing attacks"
+        },
+        {
+            "query": "Ice Willow abilities such as false appearance and icicle attacks",
+            "variant": "Ice Willow's skills like fake looks and ice weapon attacks"
+        },
+        {
+            "query": "creature with a challenge rating of 6 that uses cold and piercing damage",
+            "variant": "monster rated at difficulty 6 that attacks with ice and sharp damage"
+        }
+    ]
+}

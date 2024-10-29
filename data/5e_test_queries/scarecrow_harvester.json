@@ -1,0 +1,25 @@
+{
+    "name": "Scarecrow Harvester",
+    "queries": [
+        {
+            "query": "scarecrow construct that uses fire and fear in combat",
+            "variant": "construct scarecrow that uses fear and fire in battle"
+        },
+        {
+            "query": "medium creature immune to poison and resistant to physical damage",
+            "variant": "medium-sized creature that is poison immune and has resistances to physical attacks"
+        },
+        {
+            "query": "enemy with claw attacks and special fire breath ability",
+            "variant": "foe with claw attacks and a powerful fire breath ability"
+        },
+        {
+            "query": "harvester created from a scarecrow with tactical abilities",
+            "variant": "tactically skilled harvester made from a scarecrow"
+        },
+        {
+            "query": "scarecrow with invisibility and pumpkin throw attack",
+            "variant": "invisible scarecrow that can throw its pumpkin head"
+        }
+    ]
+}

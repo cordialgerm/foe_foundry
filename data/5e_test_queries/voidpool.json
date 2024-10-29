@@ -1,0 +1,25 @@
+{
+    "name": "Voidpool",
+    "queries": [
+        {
+            "query": "large ooze creature with a dark essence that can grapple opponents",
+            "variant": "big ooze monster with dark essence that grapples foes"
+        },
+        {
+            "query": "monster that manipulates opponents and can create a portal to the Void",
+            "variant": "creature that controls enemies and has a portal to the Void"
+        },
+        {
+            "query": "dark ooze that is vulnerable to radiant damage and can climb walls",
+            "variant": "shadowy ooze vulnerable to light damage and able to climb surfaces"
+        },
+        {
+            "query": "formless creature with low AC but high HP that can pull foes into the Void",
+            "variant": "shapeless monster with bad armor but a lot of hit points able to draw enemies into the Void"
+        },
+        {
+            "query": "grappling ooze that suffers from low intelligence and can slide through narrow spaces",
+            "variant": "grappler ooze with poor intelligence that can move through tight gaps"
+        }
+    ]
+}

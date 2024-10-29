@@ -1,0 +1,49 @@
+{
+    "name": "Suturefly",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 10,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 40 ft., fly 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "disruption",
+        "forest"
+    ],
+    "adjectives": [
+        "tiny",
+        "stealthy",
+        "unpredictable"
+    ],
+    "description": "The Suturefly is a tiny beast known for its stealthy nature and disruptive combat style, capable of sewing shut the orifices of its enemies.",
+    "memorable": "Its sewing attack can severely limit a target's breathing and vision, making it a unique threat in encounters.",
+    "goals": "Typically seeks to confuse and incapacitate foes while remaining hidden.",
+    "relations": "Might be encountered alongside other stealthy creatures or forest-dwelling animals.",
+    "environment": "Usually found in forested areas.",
+    "strengths": "High mobility and exceptional stealth capabilities.",
+    "weaknesses": "Very low Strength and Hit Points, making it fragile in direct combat.",
+    "attacks": "Unleashes rapid sewing attacks that can close up an enemy's mouth, nose, or eyes.",
+    "most_powerful_ability": "The ability to sew shut a target's orifices, greatly impeding their combat effectiveness and actions.",
+    "senses": "Possesses darkvision allowing it to see in dim light and darkness.",
+    "skills": "Proficient in Stealth, giving it a bonus to avoid detection.",
+    "additional_information": [
+        "Can detect lies within 60 feet",
+        "Gains advantage on Stealth checks in forests",
+        "Inflicts various conditions with its sewing attack",
+        "Very low intelligence and charisma",
+        "Exceptionally fast movement for its size"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny stealthy beast that sews shut",
+        "forest creature that inflicts debilitating conditions",
+        "swift creature that disrupts enemies in combat",
+        "Suturefly attack mechanics and abilities",
+        "creature that knows when lies are spoken"
+    ]
+}

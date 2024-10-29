@@ -1,6 +1,8 @@
 <MonsterName/>Dancing Foliage</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>66</HP>
 <summary>The Dancing Foliage is a unique and whimsical creature that embodies chaos and good nature. As a Medium-sized plant, it serves as a charming guardian of the natural world, often giving assistance or protection to those who respect nature. With an armor class of 13 and hit points totaling 66, it possesses moderately good defenses, making it a solid combatant in the lower mid-tier of challenges. Its strengths lie in its dexterity and charm abilities, which allow it to evade attacks and manipulate the emotions of nearby creatures. However, it is vulnerable to fire damage, which poses a significant threat in combat situations. The creature excels in mobility with a walking speed of 40 feet and a suite of abilities that enhance both its survivability and its capacity to control the battlefield.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ Finally, one of its notable reactions is the Shower of Petals, which triggers wh
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dancing Foliage
 
 *Medium* *Plant* *chaotic good*
@@ -74,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Shower of Petals:** When a creature the dancing foliage can see targets it with an attack, it releases a shower of flower petals, giving the attacker disadvantage on that attack roll.
 
 
+</statblock>
 
 

@@ -1,0 +1,51 @@
+{
+    "name": "Glabrezu",
+    "creature_type": "Fiend",
+    "creature_subtype": "demon",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 157,
+    "ac": 17,
+    "srd": true,
+    "cr": "9",
+    "movement": "40 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "demon",
+        "chaotic evil"
+    ],
+    "adjectives": [
+        "towering",
+        "deceptive",
+        "powerful",
+        "manipulative"
+    ],
+    "description": "A towering creature with the body of a beast and four arms, two with massive pincers and two clawed hands. It embodies both brute strength and cunning.",
+    "memorable": "Its ability to cast Wish and manipulate others through deception makes the Glabrezu a terrifying and unpredictable foe.",
+    "goals": "To corrupt mortals, manipulate them into making deals, and serve as a general in the chaotic armies of the Abyss.",
+    "relations": "Often serves higher-ranking demon lords and commands lesser demons.",
+    "environment": "Commonly found in the chaotic realms of the Abyss, amidst twisted landscapes and nightmarish caverns.",
+    "strengths": "High physical strength and magical resilience, granting it advantage against spells and effects.",
+    "weaknesses": "Vulnerability to radiant damage and limited effectiveness against certain magic types.",
+    "attacks": "Uses multiattack with massive pincers that can grapple foes and brutal fists to deal substantial damage.",
+    "most_powerful_ability": "Wish, allowing it to alter reality with significant demands from the target.",
+    "senses": "Possesses truesight up to 120 feet, enabling it to see through illusions.",
+    "skills": "Skilled in Deception (+8) and Stealth (+7), making it a master manipulator in and out of combat.",
+    "additional_information": [
+        "Immune to poison damage and poisoned condition.",
+        "Resistant to cold, fire, and lightning damage.",
+        "Magic Resistance increases its survivability against spellcasters.",
+        "Can create magical darkness to obscure combat.",
+        "Utilizes confusion to sow chaos among enemies."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting with access to spells like darkness and confusion, enhancing its strategic capabilities.",
+    "test_queries": [
+        "towering demon that manipulates mortals",
+        "fiend with pincers and magical darkness",
+        "powerful demon that offers corrupt deals",
+        "glabrezu ambush tactics in combat",
+        "demonic creature with truesight and wish ability"
+    ]
+}

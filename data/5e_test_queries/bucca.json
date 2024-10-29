@@ -1,0 +1,25 @@
+{
+    "name": "Bucca",
+    "queries": [
+        {
+            "query": "tiny fey creature that can fly and hates sunlight",
+            "variant": "fey creature that is tiny, flies, and dislikes sunlight"
+        },
+        {
+            "query": "mischievous monster with treasure sense and poison dagger",
+            "variant": "tricky monster that has a poison dagger and can sense treasure"
+        },
+        {
+            "query": "stealthy creature that relies on deception and is weak to sunlight",
+            "variant": "elusive creature that uses trickery and has a weakness against sunlight"
+        },
+        {
+            "query": "neutral evil fey known for its cunning and agility",
+            "variant": "fey that is neutral evil, noted for its cleverness and quickness"
+        },
+        {
+            "query": "small magical creature adept at outwitting foes",
+            "variant": "magical small creature skilled in tricking enemies"
+        }
+    ]
+}

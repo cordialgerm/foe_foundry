@@ -1,0 +1,25 @@
+{
+    "name": "Adult River Dragon",
+    "queries": [
+        {
+            "query": "huge dragon that can swim and fly",
+            "variant": "big dragon that swims and can fly"
+        },
+        {
+            "query": "agile dragon with magical water abilities",
+            "variant": "quick dragon with water magic skills"
+        },
+        {
+            "query": "dragon that breathes water and can create whirlpools",
+            "variant": "water-breathing dragon able to create whirlpools"
+        },
+        {
+            "query": "dragon that is tough and fast in aquatic environments",
+            "variant": "strong and speedy dragon in water settings"
+        },
+        {
+            "query": "dragon with high hit points and powerful bite attack",
+            "variant": "dragon that has a lot of hit points and a strong bite"
+        }
+    ]
+}

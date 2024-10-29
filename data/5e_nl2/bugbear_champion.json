@@ -1,0 +1,55 @@
+{
+    "name": "Bugbear Champion",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 85,
+    "ac": 17,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "bugbear",
+        "champion",
+        "humanoid",
+        "melee combatant"
+    ],
+    "adjectives": [
+        "formidable",
+        "stealthy",
+        "strong",
+        "resilient"
+    ],
+    "description": "The Bugbear Champion is a powerful combatant boasting strong physical attributes and a substantial presence on the battlefield.",
+    "memorable": "Known for its ability to enhance damage output and convert missed attacks into hits, making it a dangerous opponent.",
+    "goals": "Engage in melee combat and ambush foes with stealth, using its brute strength to overpower enemies.",
+    "relations": "Often found leading other bugbears or serving in raiding parties alongside goblinoids.",
+    "environment": "Commonly found in caves, forests, or rugged terrain where they can leverage their stealth capabilities.",
+    "strengths": "High Strength allows it to deal significant melee damage and withstand attacks.",
+    "weaknesses": "Average Dexterity and Constitution make it less agile and harder to sustain than more specialized combatants.",
+    "attacks": "Utilizes a multiattack to strike with a spiked club for piercing damage or a shield smash that can knock foes prone.",
+    "most_powerful_ability": "The 'Stubborn Attacker' reaction allows it to turn missed attacks into hits, greatly increasing its threat level.",
+    "equipment": "Equipped with a chain shirt for armor and a shield for added defense.",
+    "senses": "Possesses darkvision that allows it to see in dark environments clearly.",
+    "skills": "A high Stealth score of 16 enables it to move unseen and set up ambushes effectively.",
+    "additional_information": [
+        "Can deal extra damage with weapons due to its 'Brutal' ability.",
+        "Uses tactical intelligence to engage in combat strategically.",
+        "Combines both melee and ranged attacks for versatile combat options.",
+        "Effectively employs its surroundings for stealth and surprise.",
+        "Often found among groups of goblins or other bugbears."
+    ],
+    "damage_types": [
+        "piercing",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful stealthy bugbear warrior",
+        "melee combatant that ambushes with brute strength",
+        "Bugbear Champion tactical reactions",
+        "strong humanoid with shield and clubs",
+        "formidable monster known for brutal attacks"
+    ]
+}

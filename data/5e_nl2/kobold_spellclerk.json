@@ -1,0 +1,52 @@
+{
+    "name": "Kobold Spellclerk",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 21,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walking speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "Kobold",
+        "Spellcaster",
+        "Cunning"
+    ],
+    "adjectives": [
+        "small",
+        "crafty",
+        "magical"
+    ],
+    "description": "A small humanoid with cunning and magical prowess, the Kobold Spellclerk uses its spells and tactical movements effectively in battle.",
+    "memorable": "The Kobold Spellclerk combines tactical spellcasting with agility, making it a clever supporter in combat scenarios.",
+    "goals": "To support its allies in battles and utilize magic for tactical advantages.",
+    "relations": "Often found among other Kobolds or spellcasters, potentially serving a larger draconic master.",
+    "environment": "Typically found in caves, ruins, or underground lairs, working alongside other Kobolds.",
+    "strengths": "Proficient in spellcasting and possesses tactical movement abilities.",
+    "weaknesses": "Low physical strength and suffers from sunlight sensitivity.",
+    "attacks": "Uses a dagger for melee or ranged attacks, dealing piercing damage.",
+    "most_powerful_ability": "Spellcasting, capable of casting various spells to control the battlefield.",
+    "equipment": "Dagger as a primary weapon for attacks.",
+    "senses": "Has darkvision with a range of 60 feet, allowing for vision in dim light.",
+    "skills": "Excels in Arcana, Deception, and Investigation with notable proficiency.",
+    "additional_information": [
+        "Can use Cunning Action to enhance combat mobility.",
+        "Benefits from Pack Tactics when allies are nearby.",
+        "Able to cast spells like Sleep and Feather Fall.",
+        "Suffers disadvantage in sunlight.",
+        "Uses minor illusion for stealth and deception."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "2nd-level spellcaster with spells like Fire Bolt and Sleep available.",
+    "test_queries": [
+        "small magical humanoid with cunning tactics",
+        "Kobold ally that excels in spellcasting",
+        "crafty spellcaster with sunlight sensitivity",
+        "tactical creature skilled in deception and investigation",
+        "Kobold using spells in combat"
+    ]
+}

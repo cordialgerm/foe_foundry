@@ -1,0 +1,54 @@
+{
+    "name": "Arachnocrat",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft., climb 40 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "deception",
+        "webbing",
+        "poison"
+    ],
+    "adjectives": [
+        "cunning",
+        "manipulative",
+        "stealthy"
+    ],
+    "description": "The Arachnocrat is a medium fiend with a sinister presence, marked by its high Dexterity and Charisma. It displays traits of an aristocrat, equipped with a cunning and intelligent demeanor that belies its true nature. Its skin may take on a golden hue when its victims succumb to its poison.",
+    "memorable": "Its ability to restrain foes with gilded webbing adds a unique twist to combat, while its aristocratic disguise makes it a master infiltrator.",
+    "goals": "To manipulate and control others, often infiltrating noble gatherings and enacting its deceitful plans.",
+    "relations": "May work alongside other fiends or arachnids and could serve higher fiendish powers.",
+    "environment": "Typically found in dark, shadowy places, particularly where it can blend in with nobility or spiders.",
+    "strengths": "High Dexterity and Charisma enhance its combat effectiveness and social manipulation. Magic Resistance provides significant protection against spells.",
+    "weaknesses": "Susceptible to silvered weapons and certain magical attacks that bypass its resistances.",
+    "attacks": "Utilizes multiattack with claw strikes that ensnare opponents in webbing, along with a venomous bite that can poison and paralyze.",
+    "most_powerful_ability": "Bite attack that can deliver potent poison damage and paralyze creatures, making them vulnerable and incapacitating them.",
+    "equipment": null,
+    "senses": "Possesses blindsight within 10 feet, allowing it to detect foes in complete darkness.",
+    "skills": "Excels in deception with a +8 modifier, allowing for effective manipulation and trickery.",
+    "additional_information": [
+        "Immune to fire and poison damage.",
+        "Resistant to cold damage and nonmagical weapon attacks.",
+        "Ability to communicate with arachnids.",
+        "Can see through magical darkness, enhancing its stealth capabilities.",
+        "Can climb on ceilings effortlessly."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning fiend with web abilities",
+        "infiltrator in noble gatherings",
+        "poisonous arachnid monster",
+        "stealthy evil fiend",
+        "manipulative fiend resembling an aristocrat"
+    ]
+}

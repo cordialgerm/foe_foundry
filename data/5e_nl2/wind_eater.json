@@ -1,0 +1,59 @@
+{
+    "name": "Wind Eater",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walks at a speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "stealth",
+        "spellcaster",
+        "invisible"
+    ],
+    "adjectives": [
+        "cunning",
+        "formidable",
+        "sneaky",
+        "manipulative"
+    ],
+    "description": "The Wind Eater is a Medium Undead creature characterized by its stealth and cunning nature, featuring high Dexterity and an eerie ability to become invisible and silent.",
+    "memorable": "Its ability to silence its surroundings and manipulate illusions makes it a tactical threat in combat.",
+    "goals": "To ambush and disorient enemies while manipulating the battlefield with illusions.",
+    "relations": "Often encountered alone but may serve darker masters or ally with other stealthy undead creatures.",
+    "environment": "Typical habitats are darkened or shadowy locales where it can utilize its supernatural abilities effectively.",
+    "strengths": "Immunities to poison and various conditions allow for high survivability; truesight aids in detecting hidden foes.",
+    "weaknesses": "Its low Strength makes it less effective in direct melee combat.",
+    "attacks": "Uses claw attacks that deal slashing damage, combined with high stealth to avoid detection.",
+    "most_powerful_ability": "Aura of Silence creates a debilitating area of effect around the Wind Eater, limiting enemies' perception and causing deafness.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 60 feet, allowing it to see through illusions and invisibility.",
+    "skills": "Excels in Stealth and Perception, making it a master of ambush and detection avoidance.",
+    "additional_information": [
+        "Can become invisible in dim light or darkness",
+        "Creates illusions with its innate spellcasting",
+        "Can move through objects, enhancing tactical positioning",
+        "Immunity to several common conditions",
+        "Has a potent ability to manipulate the battlefield"
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "necrotic",
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcasting allows it to cast silent image, blur, major image, and mirage arcane without material components.",
+    "test_queries": [
+        "stealthy undead that creates illusions",
+        "invisible creature that silences surroundings",
+        "cunning undead with aura of silence",
+        "undead with truesight and stealth abilities",
+        "manipulative creature using illusions in darkness"
+    ]
+}

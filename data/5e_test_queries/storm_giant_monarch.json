@@ -1,0 +1,25 @@
+{
+    "name": "Storm Giant Monarch",
+    "queries": [
+        {
+            "query": "massive giant that can breathe water and casts lightning spells",
+            "variant": "huge giant that breathes water and casts lightning spells"
+        },
+        {
+            "query": "giant with high hit points and able to swim in water",
+            "variant": "giant that has a lot of hit points and can swim in water"
+        },
+        {
+            "query": "storm giant with greatsword attacks and lightning immunity",
+            "variant": "storm giant known for greatsword attacks and immune to lightning"
+        },
+        {
+            "query": "creature that excels in athletics and has thunder damage resistance",
+            "variant": "monster that is great in athletics and resists thunder damage"
+        },
+        {
+            "query": "amphibious giant that can control water and weather",
+            "variant": "giant that can breathe both air and water and control weather"
+        }
+    ]
+}

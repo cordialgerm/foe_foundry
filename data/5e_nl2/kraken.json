@@ -1,0 +1,55 @@
+{
+    "name": "Kraken",
+    "creature_type": "Monstrosity",
+    "creature_subtype": "titan",
+    "alignment": "chaotic evil",
+    "size": "gargantuan",
+    "hp": 472,
+    "ac": 18,
+    "srd": true,
+    "cr": "23",
+    "movement": "20 ft., swim 60 ft.",
+    "role": null,
+    "tags": [
+        "sea monster",
+        "legendary",
+        "squid-like"
+    ],
+    "adjectives": [
+        "enormous",
+        "intelligent",
+        "powerful",
+        "terrifying"
+    ],
+    "description": "The kraken is an enormous sea monster with a massive, squid-like body and numerous tentacles capable of dragging entire ships beneath the ocean. Its tough hide is nearly impervious to weapons, and it has immense strength, allowing it to crush anything it captures.",
+    "memorable": "The kraken can command storms and has the ability to manipulate the battlefield with ink clouds and lightning strikes.",
+    "goals": "To dominate the seas and assert its control over maritime creatures.",
+    "relations": "Often considered a king of the deep, it can command other sea creatures.",
+    "environment": "Lurks in the darkest depths of the ocean.",
+    "strengths": "Possesses high durability with 472 hit points and has resistance to many damage types.",
+    "weaknesses": "Very poor Dexterity, making it less effective in quick maneuvers.",
+    "attacks": "Can grapple multiple targets with tentacle attacks, deal significant piercing and acid damage, and utilize a multiattack ability.",
+    "most_powerful_ability": "Can summon a raging storm that lasts for an hour and has devastating lightning attacks.",
+    "equipment": null,
+    "senses": "Has truesight up to 120 feet, allowing it to see through illusions and darkness.",
+    "skills": null,
+    "additional_information": [
+        "Does not require air, food, or sleep due to Immortal Nature.",
+        "Has the ability to create an ink cloud that obscures vision and poisons creatures within.",
+        "Legendary Resistance allows it to succeed on failed saving throws three times per day.",
+        "As a Siege Monster, it deals double damage to objects and structures.",
+        "Can grapple up to 10 creatures simultaneously."
+    ],
+    "damage_types": [
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan sea monster with tentacles",
+        "monster that commands storms and lightning",
+        "intelligent deep-sea creature with ink ability",
+        "enormous creature that swallows ships",
+        "Kraken abilities and weaknesses"
+    ]
+}

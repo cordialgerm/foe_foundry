@@ -1,0 +1,53 @@
+{
+    "name": "Mindshard",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 81,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly 40 ft., walk 0 ft.",
+    "role": null,
+    "tags": [
+        "psychic",
+        "charm",
+        "manipulative",
+        "cultist"
+    ],
+    "adjectives": [
+        "malevolent",
+        "cunning",
+        "deceptive"
+    ],
+    "description": "The Mindshard is a small, malevolent aberration characterized by its cunning abilities and colorful, psychedelic patterns. It has a translucent appearance that enhances its evasion tactics and wields psychic powers.",
+    "memorable": "It can create cultist minions from fallen foes and has strong charm-related abilities, imposing psychic damage on charmed creatures.",
+    "goals": "To manipulate and incapacitate foes while creating chaos through its psychic powers and cultist minions.",
+    "relations": "Often encountered with charmed creatures, it may also be found with newly formed cultists from its Refract Mind ability.",
+    "environment": "Thrives in environments where it can manipulate and charm its foes.",
+    "strengths": "Immunity to poison and conditions such as charmed and frightened, alongside effective charm and psychic damage abilities.",
+    "weaknesses": "Very low Strength makes it vulnerable to physical attacks and a lack of melee mobility can be exploited.",
+    "attacks": "Uses Refracted Light Beam for radiant damage and can charm foes with psychic damage in its vicinity.",
+    "most_powerful_ability": "Light Construction creates an area of charm and psychic damage affecting multiple targets.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, allowing it to sense creatures without sight.",
+    "skills": "Possesses a +2 bonus in Perception, making it decent at detecting nearby threats.",
+    "additional_information": [
+        "Can pull humanoids into its body to create cultists.",
+        "Imposes psychic damage on charmed creatures nearby.",
+        "Invisibility to creatures more than 60 feet away enhances evasion.",
+        "Has the ability to charm attackers that hit it.",
+        "Utilizes telepathy to command created cultist minions."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small malevolent psychic monster",
+        "aberration that creates cultist minions",
+        "creature with charm and psychic powers",
+        "invisible monster with blindsight",
+        "manipulative enemy that uses psychic damage"
+    ]
+}

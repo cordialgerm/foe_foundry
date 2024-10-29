@@ -1,0 +1,25 @@
+{
+    "name": "Boggard Bravo",
+    "queries": [
+        {
+            "query": "amphibious humanoid that excels in agility",
+            "variant": "humanoid that is amphibious and agile"
+        },
+        {
+            "query": "medium swamp creature with a jumping attack",
+            "variant": "medium creature from the swamp that can jump"
+        },
+        {
+            "query": "stealthy amphibious fighter that speaks with frogs",
+            "variant": "stealthy fighter that can speak with frogs and is amphibious"
+        },
+        {
+            "query": "combat-focused humanoid found near water",
+            "variant": "humanoid that focuses on combat and lives near water"
+        },
+        {
+            "query": "creature with a tongue attack and high dexterity",
+            "variant": "creature that has a tongue attack and is very dexterous"
+        }
+    ]
+}

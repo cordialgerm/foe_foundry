@@ -1,0 +1,25 @@
+{
+    "name": "Dipsa",
+    "queries": [
+        {
+            "query": "small ooze that hides in swamps",
+            "variant": "tiny ooze that lives in swamps"
+        },
+        {
+            "query": "cunning ooze with stealth abilities",
+            "variant": "sly ooze with stealthy attacks"
+        },
+        {
+            "query": "creature that attaches to larger foes and deals acid damage",
+            "variant": "monster that latches onto bigger creatures and inflicts acid harm"
+        },
+        {
+            "query": "ambush creature that doesn't require sleep",
+            "variant": "sneaky creature that can stay awake indefinitely"
+        },
+        {
+            "query": "swamp-dwelling ooze with good Dexterity and bite attack",
+            "variant": "ooze living in swamps with high Dexterity and a biting attack"
+        }
+    ]
+}

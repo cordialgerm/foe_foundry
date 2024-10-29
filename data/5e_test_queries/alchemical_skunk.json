@@ -1,0 +1,25 @@
+{
+    "name": "Alchemical Skunk",
+    "queries": [
+        {
+            "query": "small skunk-like monster known for alchemical sprays",
+            "variant": "tiny creature resembling a skunk that uses alchemical sprays"
+        },
+        {
+            "query": "mischievous creature that disrupts combat with unique abilities",
+            "variant": "playful monster that affects battles with its special powers"
+        },
+        {
+            "query": "stealthy monster with high Dexterity that has magical resistance",
+            "variant": "agile creature with excellent Dexterity and resistance to magic"
+        },
+        {
+            "query": "monstrosity using charming and incapacitating sprays in fights",
+            "variant": "creature that utilizes charming and incapacitating spray attacks in combat"
+        },
+        {
+            "query": "quirky alchemical monster that can poison and reduce foes",
+            "variant": "eccentric alchemical creature that can cause poisoning and size reduction to enemies"
+        }
+    ]
+}

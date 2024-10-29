@@ -1,0 +1,25 @@
+{
+    "name": "Half-Dragon Template",
+    "queries": [
+        {
+            "query": "fire-breathing humanoid with dragon ancestry",
+            "variant": "firebreathing human-like creature with dragon blood"
+        },
+        {
+            "query": "creature with darkvision and fire resistance",
+            "variant": "monster that has darkvision and resists fire damage"
+        },
+        {
+            "query": "medium creature that wields a longsword and has dragon features",
+            "variant": "medium-sized being that uses a longsword and has dragon traits"
+        },
+        {
+            "query": "humanoid that can exhale fire and has dragon senses",
+            "variant": "human-like creature that can breathe fire and possesses dragon senses"
+        },
+        {
+            "query": "warrior with dragon abilities and fire breath",
+            "variant": "fighter with draconic powers and the ability to breathe fire"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Great Wyrm Red Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Lawful Evil",
+    "size": "Gargantuan",
+    "hp": 897,
+    "ac": 22,
+    "srd": false,
+    "cr": "26",
+    "movement": "40 ft. walking, 40 ft. climbing, 80 ft. flying",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "fire",
+        "legendary"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "fearsome",
+        "devastating",
+        "formidable"
+    ],
+    "description": "The Great Wyrm Red Dragon is a gargantuan dragon known for its fearsome presence and devastating fire abilities, characterized by its vibrant red scales and powerful physique.",
+    "memorable": "It commands fear and respect, capable of unleashing massive fire-based attacks that can devastate entire areas.",
+    "goals": "To dominate and intimidate those it encounters, often seeking hoards of treasure and power.",
+    "relations": "Often serves as a primary antagonist, commanding armies of lesser dragons or creatures.",
+    "environment": "Lurks in volcanic regions, fierce mountain ranges, or ancient dragon lairs.",
+    "strengths": "Possesses powerful multiattacks and access to potent fire spells, alongside legendary resistances.",
+    "weaknesses": "Exhaustion of legendary resistances temporarily lowers its defense; specific vulnerabilities can be exploited.",
+    "attacks": "Devastating melee attacks including a bite, claws, and tail; can unleash powerful fire breath cones.",
+    "most_powerful_ability": "Fire Breath attack inflicts massive area damage and ongoing fire effects, causing fear.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and a passive Perception score of 24, allowing it to detect threats effectively.",
+    "skills": "Skilled in Intimidation and Perception, enhancing its menace and situational awareness during encounters.",
+    "additional_information": [
+        "Can recharge its breath weapon when bloodied, enhancing its already deadly arsenal.",
+        "Immunity to fire damage aligns with its elemental nature, dominating fiery environments.",
+        "Utilizes legendary actions to maintain battlefield control and assert dominance.",
+        "Can inflict fire damage on touch or melee attacks, punishing foes relentlessly.",
+        "Commands and influences allies with its Cruel Tyranny ability, allowing it to direct actions in combat."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting ability with spells such as command, hold person, and fire-related spells available multiple times daily.",
+    "test_queries": [
+        "massive dragon with fire breath",
+        "Gargantuan dragon that commands fire and fear",
+        "dragon with powerful multiattacks and spells",
+        "legendary fire dragon in volcanic regions",
+        "Great Wyrm Red Dragon combat tactics"
+    ]
+}

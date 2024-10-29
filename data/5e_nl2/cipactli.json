@@ -1,0 +1,51 @@
+{
+    "name": "Cipactli",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 ft. swimming, 20 ft. walking",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "stealthy",
+        "fiend"
+    ],
+    "adjectives": [
+        "chaotic",
+        "debilitating",
+        "mobile"
+    ],
+    "description": "A medium-sized chaotic evil fiend capable of breathing both air and water, with a serpentine body and many mouths.",
+    "memorable": "Can transform into liquid to teleport through water and devour foes to immobilize them.",
+    "goals": "Ambushing and consuming unsuspecting creatures, particularly in aquatic environments.",
+    "relations": "Related to other fiends and aquatic predators.",
+    "environment": "Aquatic environments and marshy areas.",
+    "strengths": "High mobility in water and land, effective stealth capabilities.",
+    "weaknesses": "Vulnerable to fire damage.",
+    "attacks": "Multiattack with bites that can grapple and consume targets, dealing significant damage over time.",
+    "most_powerful_ability": "Ancient Lullaby, which can incapacitate multiple foes with its soothing song.",
+    "senses": "Possesses darkvision and keen stealth ability while submerged.",
+    "skills": "Highly proficient in stealth, especially when underwater.",
+    "additional_information": [
+        "Has advantage on Dexterity (Stealth) checks while submerged.",
+        "Immune to cold and poison damage.",
+        "Resistant to lightning damage.",
+        "Can teleport through water using Water Step ability.",
+        "Devouring Embrace can blind and restrain opponents."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mobile aquatic fiend with devouring attacks",
+        "stealthy creature that can teleport through water",
+        "chaotic fiend that consumes its victims",
+        "monster that lulls creatures to sleep",
+        "multitude of mouths on a medium fiend"
+    ]
+}

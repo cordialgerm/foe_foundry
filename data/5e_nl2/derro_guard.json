@@ -1,0 +1,50 @@
+{
+    "name": "Derro Guard",
+    "creature_type": "Humanoid",
+    "alignment": "any non-good alignment",
+    "size": "Small",
+    "hp": 18,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "underground",
+        "guardian",
+        "combatant"
+    ],
+    "adjectives": [
+        "small",
+        "stealthy",
+        "agile"
+    ],
+    "description": "The Derro Guard is a small humanoid with a lean build, equipped with leather armor. It uses an aklys, a throwing weapon, and a light crossbow for combat.",
+    "memorable": "The Derro Guard's advantage against magical effects and its ability to throw its weapon multiple times makes it a persistent threat, despite its sunlight sensitivity.",
+    "goals": "To serve as a guardian in their underground realm, often engaging in ambush tactics.",
+    "relations": "Often found in groups or as part of a larger community of Derro, potentially allied with other non-good aligned creatures.",
+    "environment": "Typically found in underground settings, such as caves or dungeons.",
+    "strengths": "Proficient in stealth with the ability to ambush foes, and has magic resistance against spells.",
+    "weaknesses": "Significantly weakened in sunlight, with very low wisdom affecting its perception.",
+    "attacks": "Uses an aklys for melee and ranged attacks, and can also attack with a light crossbow, dealing piercing damage.",
+    "most_powerful_ability": "The Aklys Thrower ability allows for quick successive attacks against a target, maintaining pressure.",
+    "equipment": "Aklys and light crossbow.",
+    "senses": "Possesses darkvision up to 120 feet, allowing it to see in dim light and darkness.",
+    "skills": "Proficient in stealth, enabling it to hide effectively and ambush unsuspecting targets.",
+    "additional_information": [
+        "Low Wisdom results in poor passive perception.",
+        "Can make multiple attacks with its aklys due to its special ability.",
+        "Disadvantage on attack rolls in sunlight.",
+        "Good dexterity enhances its combat adaptability.",
+        "Aligned with non-good moralities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small stealthy underground guardian",
+        "aklys throwing weapon user",
+        "derro creature with magic resistance",
+        "combatant that is weak to sunlight",
+        "skirmisher using aklys in battle"
+    ]
+}

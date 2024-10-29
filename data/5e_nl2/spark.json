@@ -1,0 +1,53 @@
+{
+    "name": "Spark",
+    "creature_type": "Elemental",
+    "alignment": "Chaotic Neutral",
+    "size": "Tiny",
+    "hp": 104,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "60 ft. walk, 10 ft. fly",
+    "role": null,
+    "tags": [
+        "elemental",
+        "lightning",
+        "chaotic"
+    ],
+    "adjectives": [
+        "tiny",
+        "nimble",
+        "unpredictable"
+    ],
+    "description": "The Spark is a tiny elemental creature with a chaotic nature, characterized by its impressive agility and lightning-infused abilities.",
+    "memorable": "Its unique ability to inhabit humanoids makes it a dangerous foe in battle as it can turn allies against each other.",
+    "goals": "To create chaos and potentially use inhabited hosts to attack other creatures.",
+    "relations": "Can be encountered alongside other elementals or in areas charged with elemental energy.",
+    "environment": "Typically found in areas suffused with elemental energies, often associated with storms or lightning.",
+    "strengths": "Immunity to lightning damage and resistance to most physical nonmagical damage, making it especially tough against melee attackers.",
+    "weaknesses": "Notably low strength limits its physical attacks.",
+    "attacks": "Can unleash three Electric Touch attacks in one turn, dealing significant lightning damage.",
+    "most_powerful_ability": "Inhabit allows the Spark to take control of a humanoid's body, incapacitating its host while it uses their form to attack others.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, allowing it to see in dark conditions.",
+    "skills": "Proficient in Dexterity saving throws, making it adept at avoiding various threats.",
+    "additional_information": [
+        "Elemental nature means it does not require food, air, or sleep.",
+        "Possesses multiple immunities to conditions, remaining effective in battle.",
+        "High Dexterity of 20 increases its evasiveness.",
+        "Electric Touch can be very effective against vulnerable enemies.",
+        "Chaotic Neutral alignment makes its actions unpredictable."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny chaotic elemental with lightning attacks",
+        "nimble creature that can control others",
+        "spark elemental found in stormy areas",
+        "unpredictable elemental with electric touch",
+        "monster that can inhabit humanoid hosts"
+    ]
+}

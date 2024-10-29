@@ -1,0 +1,51 @@
+{
+    "name": "Fetal Savant",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Evil",
+    "size": "Tiny",
+    "hp": 32,
+    "ac": 11,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 10 ft.",
+    "role": "null",
+    "tags": [
+        "psychic",
+        "manipulative"
+    ],
+    "adjectives": [
+        "disturbing",
+        "chaotic",
+        "vulnerable",
+        "psychic"
+    ],
+    "description": "A disturbing Tiny humanoid with exceptional Charisma and a chaotic nature. Its skin is pale and it constantly babbles, emitting an unsettling aura of madness.",
+    "memorable": "The Fetal Savant can swap souls with humanoids, allowing for strategic chaos in encounters.",
+    "goals": "To manipulate enemies and thrive on fear and psychological disruption.",
+    "relations": "May be found with other chaotic evil creatures or entities interested in manipulation.",
+    "environment": "Often encountered in dark, oppressive settings or places with abundant shadow.",
+    "strengths": "Immunity to psychic damage and a powerful ability to incapacitate opponents with Maddening Babble.",
+    "weaknesses": "Low physical attributes and hypersensitivity to sunlight, taking damage when exposed.",
+    "attacks": "Uses Psychic Burst attacks that deal devastating psychic damage.",
+    "most_powerful_ability": "The Soul Exchange ability allows it to control other humanoids while paralyzed.",
+    "senses": "Possesses darkvision, enabling it to see in darkness up to 60 feet.",
+    "skills": "Skilled in perception with an average modifier that aids in spotting hidden creatures.",
+    "additional_information": [
+        "Can create an Enchanted Cage for protection and mobility",
+        "Takes additional damage in sunlight",
+        "Immunities to being charmed or frightened",
+        "Psychic damage dealt to attackers touching its cage",
+        "Constantly emits maddening babble to disorient enemies"
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that swaps souls with others",
+        "manipulative psychic humanoid in darkness",
+        "tiny humanoid with maddening babble ability",
+        "chaotic evil creature that manipulates minds",
+        "vulnerable monster sensitive to sunlight"
+    ]
+}

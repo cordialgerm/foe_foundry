@@ -1,0 +1,48 @@
+{
+    "name": "Blemmyes",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 168,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "monstrous",
+        "aggressive",
+        "ambusher"
+    ],
+    "adjectives": [
+        "chaotic",
+        "formidable",
+        "intimidating"
+    ],
+    "description": "The Blemmyes is a large monstrosity characterized by a strong build and a chaotic presence on the battlefield. It lacks a head, with its features on its torso, making it a disturbing sight.",
+    "memorable": "Its Carnivorous Compulsion ability compels it to attack incapacitated foes, leading to brutal ambushes.",
+    "goals": "It seeks to attack and incapacitate adversaries, especially those that are weakened.",
+    "relations": "It may be encountered alongside other chaotic monstrosities or as a servant of brutal masters.",
+    "environment": "Typically found in wild or untamed areas, where chaos and danger abound.",
+    "strengths": "High hit points and impressive melee damage capabilities make it a significant threat.",
+    "weaknesses": "Very low Intelligence, Wisdom, and Charisma can limit its tactical options.",
+    "attacks": "The Blemmyes can deal significant damage with bite and slam attacks, along with a ranged rock attack that can cause fear.",
+    "most_powerful_ability": "Carnivorous Compulsion, which forces it to attack incapacitated creatures, enhancing its ambush tactics.",
+    "equipment": null,
+    "senses": null,
+    "skills": "It has a skill in Intimidation, reflecting its intimidating presence.",
+    "additional_information": [
+        "Capable of swallowing a creature whole if it is incapacitated and Medium or smaller.",
+        "Its slam attacks can stun targets, hindering their responses in combat.",
+        "When throwing rocks, it can frighten opponents, causing chaos in enemy ranks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "headless monstrous creature",
+        "giant creature with ambush tactics",
+        "aggressive large monstrosity",
+        "chaotic evil monstrosity",
+        "Blemmyes abilities"
+    ]
+}

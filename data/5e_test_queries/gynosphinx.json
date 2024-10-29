@@ -1,0 +1,25 @@
+{
+    "name": "Gynosphinx",
+    "queries": [
+        {
+            "query": "female lion monster that tests wits with riddles",
+            "variant": "lioness with a woman's head that loves riddles"
+        },
+        {
+            "query": "powerful monster that guards ancient temples and casts spells",
+            "variant": "magical creature that protects old temples and uses spells"
+        },
+        {
+            "query": "psychic monster with claws that deals extra damage",
+            "variant": "monster with psychic claws that does additional damage"
+        },
+        {
+            "query": "intelligent creature with truesight and mind manipulation abilities",
+            "variant": "smart monster with mind control powers and truesight"
+        },
+        {
+            "query": "majestic lioness monster that can teleport and cast illusions",
+            "variant": "elegant lion-mythical creature capable of teleporting and creating illusions"
+        }
+    ]
+}

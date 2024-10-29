@@ -1,0 +1,52 @@
+{
+    "name": "Sphinx",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Large",
+    "hp": 142,
+    "ac": 20,
+    "srd": false,
+    "cr": "11",
+    "movement": "40 ft. walking, 60 ft. flying",
+    "role": null,
+    "tags": [
+        "guardian",
+        "knowledge",
+        "magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "wise",
+        "mysterious"
+    ],
+    "description": "A Large Monstrosity with an imposing presence, the Sphinx boasts a lion-like body and a humanoid head. It has powerful claws and a regal demeanor, symbolizing wisdom.",
+    "memorable": "The Sphinx is immune to divination effects and is hard to read, making it a mysterious and unpredictable opponent.",
+    "goals": "Often serves as a guardian of knowledge and wisdom, posing challenges to those seeking information.",
+    "relations": "Related to other mystical creatures and often associated with guardianship.",
+    "environment": "Typically found in ancient ruins, temples, or other places of significance and knowledge.",
+    "strengths": "High armor class and hit points, immunity to psychic damage, and considerable spellcasting abilities.",
+    "weaknesses": "Not particularly fast, which may make it vulnerable to agile foes.",
+    "attacks": "Makes two claw attacks per turn, dealing significant slashing damage.",
+    "most_powerful_ability": "Planar Jaunt allows it to transport up to eight willing creatures to different planes or times.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, enabling it to see through illusions and concealment.",
+    "skills": "Skilled in arcana, history, perception, and religion, reflecting its vast knowledge with high bonuses.",
+    "additional_information": [
+        "Immune to being charmed, frightened, paralyzed, or stunned.",
+        "Can cast a variety of powerful spells, including Flame Strike and Dispel Magic.",
+        "Can communicate telepathically within 120 feet.",
+        "Inscrutable ability makes it difficult to gauge its intentions.",
+        "Can double its speed with the Speed Time ability for tactical advantages."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcasting allows it to cast numerous spells, requiring no material components.",
+    "test_queries": [
+        "mysterious guardian of knowledge",
+        "formidable monster with powerful spells",
+        "lion-like creature that protects wisdom",
+        "spellcasting creature immune to divination",
+        "large magical beast with truesight"
+    ]
+}

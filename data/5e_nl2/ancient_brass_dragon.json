@@ -1,0 +1,52 @@
+{
+    "name": "Ancient Brass Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic good",
+    "size": "Gargantuan",
+    "hp": 297,
+    "ac": 20,
+    "srd": true,
+    "cr": "20",
+    "movement": "40 ft. on land, 40 ft. burrow, 80 ft. flying",
+    "role": null,
+    "tags": [
+        "dragon",
+        "ancient",
+        "metallic"
+    ],
+    "adjectives": [
+        "wise",
+        "curious",
+        "tarnished",
+        "powerful"
+    ],
+    "description": "The Ancient Brass Dragon has dull, tarnished brass-colored scales that shimmer in sunlight, embodying wisdom and knowledge. It is a large, powerful creature with the ability to breathe fire and cast various spells.",
+    "memorable": "Known for its love of conversation and storytelling, it embodies both fire and wisdom, making it a unique blend of a formidable combatant and a cunning scholar.",
+    "goals": "To gather knowledge, engage in meaningful conversations, and protect its territory while avoiding unnecessary violence.",
+    "relations": "Often associated with other dragons, adventurers seeking knowledge, and beings that respect wisdom.",
+    "environment": "Hot, dry environments like deserts, typically residing in vast labyrinthine caves.",
+    "strengths": "Possesses high hit points, significant magical abilities, and exceptional resilience due to legendary resistance and fire immunity.",
+    "weaknesses": "Poor Dexterity score may make it vulnerable to ranged attacks.",
+    "attacks": "Uses a multiattack incorporating bite and claw strikes, capable of dealing devastating fire damage.",
+    "most_powerful_ability": "Breath Weapons, capable of lethal fire damage or incapacitating foes with sleep gas.",
+    "equipment": null,
+    "senses": "Possesses blindsight and passive Perception of 24, allowing it to detect threats even in darkness.",
+    "skills": "Skilled in History and Persuasion, demonstrating high knowledge and social capability.",
+    "additional_information": [
+        "Can use Change Shape to transform into humanoid or beast forms.",
+        "Legendary Resistance three times per day allows it to succeed on failed saving throws.",
+        "The Suffocating Heat aura impacts creatures within 30 feet, requiring a DC to resist damage.",
+        "Incorporates a tactical elements in combat, such as Frightful Presence to intimidate enemies."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting abilities include spells like comprehend languages, identify, and teleport, showcasing versatility and cunning.",
+    "test_queries": [
+        "tarnished brass dragon",
+        "wise ancient dragon creature",
+        "powerful fire-breathing dragon",
+        "golden storyteller dragon",
+        "giant desert dragon"
+    ]
+}

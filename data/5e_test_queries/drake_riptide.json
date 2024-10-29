@@ -1,0 +1,25 @@
+{
+    "name": "Drake, Riptide",
+    "queries": [
+        {
+            "query": "large dragon that excels in water combat",
+            "variant": "big dragon that is great at fighting in water"
+        },
+        {
+            "query": "underwater camouflaging dragon with thunder abilities",
+            "variant": "dragon that can blend underwater and uses thunder attacks"
+        },
+        {
+            "query": "amphibious monster with high strength and low dexterity",
+            "variant": "creature that can breathe in water and air, strong but not very nimble"
+        },
+        {
+            "query": "lawful evil dragon known for its powerful water abilities",
+            "variant": "dragon with evil alignment famous for strong water powers"
+        },
+        {
+            "query": "aquatic creature with multiattack and disorienting breath weapon",
+            "variant": "sea monster that can attack multiple times and has a breath weapon that confuses"
+        }
+    ]
+}

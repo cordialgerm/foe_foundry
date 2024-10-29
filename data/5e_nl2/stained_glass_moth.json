@@ -1,0 +1,53 @@
+{
+    "name": "Stained-Glass Moth",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 45,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 ft., climb 20 ft., fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "construct",
+        "moth",
+        "ambush",
+        "magic resistance",
+        "flying"
+    ],
+    "adjectives": [
+        "colorful",
+        "deceptive",
+        "agile",
+        "resilient"
+    ],
+    "description": "The Stained-Glass Moth resembles a beautiful, ornate stained-glass window, especially when motionless. Its wings sparkle with various colors, and it features a delicate, almost fragile appearance.",
+    "memorable": "Its ability to blend in as a stained-glass window provides unique tactical advantages and surprises in encounters.",
+    "goals": "To ambush unsuspecting foes, mark targets for strategic advantages, and defend its territory.",
+    "relations": "Typically found alongside other constructs or in magical environments, often serving as guardians.",
+    "environment": "Commonly encountered in magical landscapes, temples, or areas with a lot of stained glass.",
+    "strengths": "High constitution grants it resilience, while magic resistance provides advantages against spell attacks.",
+    "weaknesses": "Vulnerable to bludgeoning and thunder damage, which can significantly impair its combat effectiveness.",
+    "attacks": "Capable of making multiple attacks, including slashing and radiant damage options, and providing tactical advantages to allies.",
+    "most_powerful_ability": "Blessed Wings allows it to mark targets, giving advantages to its allies or increasing defenses for friendly targets.",
+    "equipment": null,
+    "senses": "It has darkvision and a passive perception of 14, allowing it to see in darkness and be reasonably aware of its surroundings.",
+    "skills": "Proficient in perception, granting it increased awareness.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep due to its construct nature.",
+        "Immutable form makes it immune to form-altering spells and effects.",
+        "Can avoid opportunity attacks while flying, increasing mobility."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "flying construct that resembles stained-glass",
+        "ambush creature with magic resistance",
+        "colorful moth that marks targets",
+        "agile moth that blends into windows",
+        "deceptive creature immune to charm"
+    ]
+}

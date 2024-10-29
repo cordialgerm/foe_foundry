@@ -1,0 +1,25 @@
+{
+    "name": "Ghast of Leng",
+    "queries": [
+        {
+            "query": "large evil aberration with blood frenzy ability and sunlight hypersensitivity",
+            "variant": "large evil monstrosity that has blood frenzy and is hypersensitive to sunlight"
+        },
+        {
+            "query": "darkvision creature that can communicate in Void Speech and is weak to radiant damage",
+            "variant": "creature with darkvision that speaks Void Speech and has a weakness to radiant attacks"
+        },
+        {
+            "query": "monster with high Dexterity and low Intelligence living in dark environments",
+            "variant": "creature that has a high Dexterity score and low Intelligence, found in dark places"
+        },
+        {
+            "query": "monster that attacks weakened foes and resists cold damage",
+            "variant": "creature that strikes injured enemies and is resistant to cold attacks"
+        },
+        {
+            "query": "combatant with good melee attacks and vulnerability to sunlight",
+            "variant": "fighter with effective melee capabilities and a weakness to sunlight"
+        }
+    ]
+}

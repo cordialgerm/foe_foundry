@@ -1,0 +1,25 @@
+{
+    "name": "Trollking Grunt",
+    "queries": [
+        {
+            "query": "humanoid creature with regeneration abilities that uses melee and ranged attacks",
+            "variant": "humanoid monster with combat regeneration skills that attacks in close and far range"
+        },
+        {
+            "query": "medium-sized trollkin capable of regaining hit points and has low intelligence",
+            "variant": "medium trollkin who can heal itself and has poor intelligence score"
+        },
+        {
+            "query": "tough monster with darkvision living in areas vulnerable to fire",
+            "variant": "sturdy creature with dark vision that is weak against fire"
+        },
+        {
+            "query": "combatant with thick hide armor and strong physical attributes",
+            "variant": "fighter with thick skin defense and high strength stats"
+        },
+        {
+            "query": "humanoid with average perception and the ability to speak Common",
+            "variant": "humanoid being with normal awareness and can communicate in Common tongue"
+        }
+    ]
+}

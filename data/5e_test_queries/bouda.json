@@ -1,0 +1,25 @@
+{
+    "name": "Bouda",
+    "queries": [
+        {
+            "query": "medium fiend with high strength that uses ambush tactics",
+            "variant": "fiend medium creature with strong physical power and cunning ambush skills"
+        },
+        {
+            "query": "creature that can transform into a human or hyena and has magical sensing abilities",
+            "variant": "monster that changes shape to human or hyena and detects magic"
+        },
+        {
+            "query": "evil fiend immune to poison and fire that has a ravenous attack",
+            "variant": "neutral evil creature resistant to fire and poison with a consuming attack ability"
+        },
+        {
+            "query": "Bouda's stealthy abilities and physical prowess in combat",
+            "variant": "Bouda's ability to remain unseen and its strong attack capabilities in battle"
+        },
+        {
+            "query": "fiend with telepathy and ability to detect celestials",
+            "variant": "creature that can communicate through telepathy and senses celestial beings"
+        }
+    ]
+}

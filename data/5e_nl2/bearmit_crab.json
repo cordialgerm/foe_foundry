@@ -1,0 +1,50 @@
+{
+    "name": "Bearmit Crab",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 59,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "swim 20 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "crab",
+        "monstrosity",
+        "ambush"
+    ],
+    "adjectives": [
+        "large",
+        "defensive",
+        "offensive"
+    ],
+    "description": "The Bearmit Crab is characterized by its strong natural armor and a robust physical presence. It has a distinctive shell that allows it to blend into rocky environments, resembling a pile of stones when motionless.",
+    "memorable": "Its ability to render melee weapons unusable through its Viscid Shell ability makes it challenging for fighters to engage in close combat.",
+    "goals": "It typically lurks in ambush, waiting to strike at unsuspecting prey, leveraging its False Appearance to remain undetected.",
+    "relations": "It may be encountered near water bodies or rocky coastal areas and could be seen as a territorial creature against other aquatic or land-based predators.",
+    "environment": "Usually found in rocky coastal areas or near bodies of water.",
+    "strengths": "Resistance to bludgeoning damage enhances its durability, while its grappling claw attacks provide control over foes.",
+    "weaknesses": "Slow swimming speed compared to its walking speed limits its mobility in water.",
+    "attacks": "Makes claw and bite strikes, with the ability to grapple and restrain targets through its powerful claws.",
+    "most_powerful_ability": "Viscid Shell interrupts melee attacks, potentially immobilizing attackers by making their weapons unusable.",
+    "equipment": null,
+    "senses": "It has Keen Smell, granting advantage on Perception checks that rely on smell, making it effective for detecting hidden creatures.",
+    "skills": "Possesses good perception skills with a bonus of +3, granting it decent awareness of its surroundings.",
+    "additional_information": [
+        "Able to render attackers' weapons stuck to its shell with Viscid Shell.",
+        "Can perform multiattacks for heightened offensive capability.",
+        "False Appearance capability allows it to ambush effectively.",
+        "High strength indicates significant melee power.",
+        "Average dexterity and wisdom for a creature of its type."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "ambush predator crab",
+        "water dwelling monstrosity",
+        "bludgeoning resistant crab",
+        "stealthy giant crab",
+        "bearmit crab unique abilities"
+    ]
+}

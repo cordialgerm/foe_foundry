@@ -1,0 +1,50 @@
+{
+    "name": "Ascetic Grandmaster",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 172,
+    "ac": 20,
+    "srd": false,
+    "cr": "14",
+    "movement": "walk 60 ft., climb 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "martial",
+        "agile",
+        "strong"
+    ],
+    "adjectives": [
+        "formidable",
+        "swift",
+        "resilient"
+    ],
+    "description": "The Ascetic Grandmaster is a deceptively unassuming humanoid with exceptional agility, strength, and martial prowess, defined by its high Dexterity and Wisdom.",
+    "memorable": "Facing an Ascetic Grandmaster is akin to confronting a whirlwind of unarmed strikes and swift movements, capable of overwhelming foes with speed and precision.",
+    "goals": "They seek worthy challengers or disciples, often revered as the finest martial artists or wandering warriors.",
+    "relations": "They are often leaders of monasteries or solitary wanderers trained in martial arts.",
+    "environment": "Can be found in monasteries or traveling alone in search of challenges.",
+    "strengths": "It possesses high Dexterity and Wisdom, allowing for exceptional defense and combat maneuvers, along with resistance to damage from nonmagical weapons.",
+    "weaknesses": "Lower Intelligence and Charisma may limit strategic options and social interactions.",
+    "attacks": "The Grandmaster can execute a 'Multiattack', striking up to six times in a turn with each 'Unarmed Strike' dealing an average of 10 bludgeoning damage.",
+    "most_powerful_ability": "The 'Stunning Strike' can incapacitate foes, significantly altering the dynamics of combat.",
+    "equipment": null,
+    "senses": "It has a high passive perception of 22, enhancing its awareness in combat.",
+    "skills": "Proficient in Acrobatics, Athletics, Perception, and Stealth, allowing for exceptional mobility and awareness.",
+    "additional_information": [
+        "Has resistance to charming, frightening, and poisonous effects.",
+        "Possesses abilities that allow it to avoid damage from spells.",
+        "Can use a 'Trained Dash' to enhance its movement.",
+        "Features like 'Evasion' make it difficult to damage with area effects.",
+        "Can take reactions every turn, increasing versatility in battle."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "incredibly agile martial artist",
+        "highly skilled unarmored fighter",
+        "Ascetic Grandmaster combat style",
+        "legendary monk challenger",
+        "storm of unarmed strikes"
+    ]
+}

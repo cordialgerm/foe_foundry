@@ -1,0 +1,25 @@
+{
+    "name": "Spider of Leng",
+    "queries": [
+        {
+            "query": "large spider with magical abilities that deals poison damage",
+            "variant": "big spider that uses magic and inflicts poison damage"
+        },
+        {
+            "query": "chaotic evil spider that can read spell scrolls and attacks with claws",
+            "variant": "evil spider that can use spell scrolls and has claw attacks"
+        },
+        {
+            "query": "aberration spider found in dark environments that inflicts poison on melee attackers",
+            "variant": "dark environment spider that is an aberration and poisons melee attackers"
+        },
+        {
+            "query": "magic-using spider with poisonous blood and slow movement speed",
+            "variant": "spider that uses magic, has poisonous blood, and moves slowly"
+        },
+        {
+            "query": "versatile spider that combines melee attacks with poisonous effects",
+            "variant": "adaptable spider that uses melee combat and has poison effects"
+        }
+    ]
+}

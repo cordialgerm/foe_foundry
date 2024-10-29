@@ -1,6 +1,8 @@
 <MonsterName/>Baliri Demon</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>14</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>190</HP>
 <summary>The Baliri Demon is a fearsome medium-sized fiend characterized by its chaotic evil nature. It possesses strong physical attributes, making it a formidable foe in combat, particularly with its high Strength, Dexterity, and Constitution scores. With an Armor Class of 17, thanks to its natural armor, and a total of 190 hit points, the Baliri Demon can endure a significant amount of damage. The creature is rated with a Challenge Rating of 14, which denotes it as a difficult opponent for mid-level adventurers. Its notable abilities include magic resistance and unique attacks that can cripple foes by severing their limbs, along with a terrifying area-of-effect ability that can stun and damage multiple enemies at once. While it has immunities, including poison and the ability to resist a variety of damage types, the Baliri Demon is still vulnerable to magical attacks if they bypass its high saving throw modifiers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Blood Bray ability, which has a recharge requirement, unleashes a horrific s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Baliri Demon
 
 *Medium* *Fiend* *chaotic evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Blood Bray (Recharge 6):** The baliri demon unleashes an otherworldly braying that causes the internal organs of nearby creatures to twist and rupture. Each creature within 20 feet of the baliri that can hear it must make a DC 18 Constitution saving throw. On a failure, the creature takes 36 (8d8) necrotic damage and is stunned until the end of its next turn as it doubles over in agony. On a success, the creature takes half the damage and isn’t stunned. The bray doesn’t affect creatures without internal organs, such as constructs, elementals, and oozes.
 
 
+</statblock>
 
 

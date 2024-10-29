@@ -1,0 +1,25 @@
+{
+    "name": "Slow Storm",
+    "queries": [
+        {
+            "query": "chaotic elemental creature with lightning attacks and wind storm",
+            "variant": "elemental creature that is chaotic and uses lightning attacks and creates wind storms"
+        },
+        {
+            "query": "medium-sized monster that has high AC and multiple attack types",
+            "variant": "monster of medium size with high armor class and various types of attacks"
+        },
+        {
+            "query": "durable elemental that does not need food or sleep and has lightning immunity",
+            "variant": "elemental that is very tough, does not require food or sleep, and is immune to lightning"
+        },
+        {
+            "query": "creature with area control abilities and strong melee attacks",
+            "variant": "monster that has strong melee attacks and area control abilities"
+        },
+        {
+            "query": "storm creature vulnerable to magical damage with constitution saves",
+            "variant": "storm elemental that is vulnerable to magic attacks and relies on constitution saving throws"
+        }
+    ]
+}

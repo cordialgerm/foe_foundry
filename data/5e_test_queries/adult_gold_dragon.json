@@ -1,0 +1,25 @@
+{
+    "name": "Adult Gold Dragon",
+    "queries": [
+        {
+            "query": "huge gold dragon with fire immunity and breath weapon",
+            "variant": "big golden dragon that has fire immunity and breath attacks"
+        },
+        {
+            "query": "powerful dragon that supports allies and has high Charisma",
+            "variant": "strong dragon with abilities to aid allies and a high Charisma score"
+        },
+        {
+            "query": "dragon that can change shape and uses a fiery breath",
+            "variant": "dragon that changes its form and breathes fire"
+        },
+        {
+            "query": "massive dragon revered for wisdom and combat strength",
+            "variant": "large dragon honored for its intelligence and fighting power"
+        },
+        {
+            "query": "gold dragon with legendary resistance and spellcasting ability",
+            "variant": "golden dragon having legendary resistances and spellcasting skills"
+        }
+    ]
+}

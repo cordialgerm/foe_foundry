@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Ravens",
+    "queries": [
+        {
+            "query": "dark mass of black birds that attack in swarms",
+            "variant": "dark swirling mass of black-feathered birds that swarms and attacks"
+        },
+        {
+            "query": "aggressive flying birds that can disorient prey",
+            "variant": "aggressive birds that fly and have the ability to disorient their prey"
+        },
+        {
+            "query": "small swarm that uses pecking attacks and has good mobility",
+            "variant": "small swarm with pecking abilities and high mobility"
+        },
+        {
+            "query": "creature that occupies space and is immune to many conditions",
+            "variant": "creature immune to conditions that can occupy space of other creatures"
+        },
+        {
+            "query": "intelligent birds that work together to scavenge and defend territory",
+            "variant": "smart birds that scavenge and defend their territory in packs"
+        }
+    ]
+}

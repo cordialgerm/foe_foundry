@@ -1,0 +1,50 @@
+{
+    "name": "Fulminar",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 112,
+    "ac": 15,
+    "srd": false,
+    "cr": "9",
+    "movement": "fly 90 ft., hover",
+    "role": "Skirmisher",
+    "tags": [
+        "lightning",
+        "elemental",
+        "flying"
+    ],
+    "adjectives": [
+        "swift",
+        "agile",
+        "electric"
+    ],
+    "description": "The Fulminar is a large elemental creature radiating bolts of lightning, allowing it to move swiftly in aerial combat. It has glowing fields of light surrounding it, indicating its mastery over electrical powers.",
+    "memorable": "Its ability to create shackles of lightning that can restrain its foes while delivering substantial damage makes it a formidable presence in battle.",
+    "goals": "Commonly seeks to dominate aerial battlegrounds and strike down opponents with lightning-infused attacks.",
+    "relations": "Often encountered along with other elemental creatures, particularly those that embody the storm or sky.",
+    "environment": "Typically found in stormy regions or elevated places where it can harness and amplify its lightning abilities.",
+    "strengths": "High Dexterity allows for exceptional agility and evasiveness in combat. Immune to poison and resistant to common forms of physical damage.",
+    "weaknesses": "Susceptible to magical attacks; possesses low Intelligence, limiting its strategic planning.",
+    "attacks": "Multiattack includes a bite and claw attacks that deal both physical and lightning damage, along with control effects.",
+    "most_powerful_ability": "Lightning Shackles, which can restrain foes and deal significant lightning damage.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet and a passive perception of 17, allowing it to effectively locate threats.",
+    "skills": "Highly skilled in stealth and perception, making it adept at remaining hidden and aware.",
+    "additional_information": [
+        "Does not provoke opportunity attacks when flying out of reach.",
+        "Can alter the glow radius of its Essence of Lightning.",
+        "Can occupy spaces as narrow as 1 inch wide."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large flying lightning elemental",
+        "elemental that can restrain with lightning",
+        "swift monster with electric attacks",
+        "creature that glows and flies",
+        "elemental immune to poison and grapple"
+    ]
+}

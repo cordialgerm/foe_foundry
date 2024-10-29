@@ -1,0 +1,55 @@
+{
+    "name": "Woe Siphon",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walks at a speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "psychological",
+        "invisibility",
+        "siphoning",
+        "manipulator"
+    ],
+    "adjectives": [
+        "cunning",
+        "chaotic",
+        "manipulative",
+        "intimidating"
+    ],
+    "description": "The Woe Siphon is characterized by its ability to sap the strength and resolve of its foes while evading direct confrontation. It has a menacing appearance and a sinister aura.",
+    "memorable": "It drains the life force from its enemies and can turning invisible while attacking.",
+    "goals": "To manipulate and weaken adversaries before striking from the shadows.",
+    "relations": "Could be in league with other fey creatures or serve darker forces in the fey realm.",
+    "environment": "Typically found in forests or enchanted locales where it can ambush its prey.",
+    "strengths": "Resistant to nonmagical attacks and immune to being charmed or frightened.",
+    "weaknesses": "Low intelligence and charisma suggest poor social skills and limited mental prowess.",
+    "attacks": "Uses a powerful melee attack that combines bludgeoning and psychic damage.",
+    "most_powerful_ability": "Siphoning Fist, which not only damages but can reduce an opponent's maximum hit points.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet, allowing it to see in the dark.",
+    "skills": null,
+    "additional_information": [
+        "Possesses the ability to detect sentience within a mile.",
+        "Can cause despair in opponents, giving them disadvantage on attacks and checks.",
+        "Ability to turn invisible until it attacks, increasing its evasiveness.",
+        "Drains health by siphoning the life force of others.",
+        "Uses psychological manipulation to weaken its foes."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "manipulative fey that drains life",
+        "invisible creature that causes despair",
+        "chaotic fey with life-siphoning abilities",
+        "cunning creature that attacks weak minds",
+        "medium fey that uses psychological warfare"
+    ]
+}

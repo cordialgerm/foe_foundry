@@ -1,0 +1,55 @@
+{
+    "name": "Lakescourge Lotus",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft., swim 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "aquatic",
+        "poison",
+        "stealth",
+        "environmental hazard"
+    ],
+    "adjectives": [
+        "chaotic",
+        "toxic",
+        "reflective",
+        "mobile"
+    ],
+    "description": "The Lakescourge Lotus is a medium undead with a translucent, watery form that allows it to blend seamlessly into its aquatic environment. Its appearance is characterized by tendrils of water and ichor that extend from its core, reflecting an eerie luminescence.",
+    "memorable": "Its ability to poison adversaries and manipulate water makes it a unique threat, forcing players to navigate around hazardous aquatic areas.",
+    "goals": "To ambush intruders in its territory and control the surrounding waters with its toxic presence.",
+    "relations": "Often found in the company of other aquatic undead or creatures that thrive in murky waters.",
+    "environment": "Typically inhabits lakes, swamps, or any waterlogged terrain.",
+    "strengths": "Immunity to cold and poison with significant resistances to necrotic damage enhances its durability in combat.",
+    "weaknesses": "Limited offensive spell capabilities and vulnerability to area-effect damage types that deal non-physical damage.",
+    "attacks": "It attacks using Tainted Claw for melee damage and can strike from a distance with its Poisonous Water Jet, dealing significant poison damage.",
+    "most_powerful_ability": "Toxic Ichor that creates an area of poisoned water, hindering enemy movement and health.",
+    "equipment": null,
+    "senses": "Possesses passive Perception of 15, giving it heightened awareness in stealthy engagements.",
+    "skills": "Has proficiency in perception, which aids in awareness during encounters.",
+    "additional_information": [
+        "Immune to conditions such as charmed, exhaustion, and poisoned.",
+        "Can walk on water as if it were solid ground.",
+        "Can transform into a reflection in the water for damage immunity.",
+        "Forces strategic movement decisions for adjacent creatures.",
+        "Maintains persistence without needing air, food, or rest."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that poisons water",
+        "toxic aquatic monster with stealthy abilities",
+        "chaotic evil plant-like undead in lakes",
+        "creature that manipulates water and areas",
+        "undead that walks on water and poisons foes"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Savager",
+    "creature_type": "Beast",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 105,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "20 feet walk, relatively slow",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "aggressive",
+        "primal"
+    ],
+    "adjectives": [
+        "large",
+        "ferocious",
+        "relentless"
+    ],
+    "description": "The Savager is a large beast that embodies primal ferocity and relentless aggression, featuring a powerful build and natural armor. It has a fearsome appearance, showcasing raw physicality with high Strength and Constitution.",
+    "memorable": "The Savager's ruthless behavior and ability to resist nonmagical damage make it a formidable adversary in combat.",
+    "goals": "To hunt, dominate, and eliminate threats in its territory with little regard for its own safety.",
+    "relations": "Typically encountered in isolation, but may compete with other large predators or be drawn to areas with significant prey.",
+    "environment": "Can be found in wilderness areas, particularly dense forests or rugged terrains where it can stalk prey.",
+    "strengths": "Immunity to being charmed or frightened, high Strength and Constitution scores leading to devastating melee attacks.",
+    "weaknesses": "Limited Dexterity and Intelligence, making it somewhat predictable and slow.",
+    "attacks": "Multiattack feature includes a strong Bite attack and two Claw attacks that deal substantial damage, augmented by its special abilities.",
+    "most_powerful_ability": "Mighty Swing ability grants it advantage on its next Claw attack if it remains stationary, increasing its damage potential.",
+    "equipment": null,
+    "senses": "Has darkvision to see in dim light and darkness, although it cannot discern colors in darkness.",
+    "skills": "Proficient in Dexterity and Constitution saving throws, making it highly resilient against physical effects.",
+    "additional_information": [
+        "Resistant to bludgeoning, piercing, and slashing damage from nonmagical sources.",
+        "Can inflict damage through its spines if attacked at close range.",
+        "Its low Intelligence indicates very limited tactical thinking.",
+        "Strong physical presence makes it a natural predator.",
+        "Typically aggressive and solitary in nature."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large beast with primal aggression",
+        "ferocious creature that resists nonmagical damage",
+        "monster with deadly melee attacks and spines",
+        "aggressive large predator with powerful claws",
+        "primal beast that embodies relentless ferocity"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Tidehunter",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 133,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "swim 40 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "ambush",
+        "trap",
+        "aquatic"
+    ],
+    "adjectives": [
+        "formidable",
+        "adaptable",
+        "terrifying"
+    ],
+    "description": "The Tidehunter is a Huge creature with formidable physicality, capable of moving seamlessly between land and water, featuring claws for melee combat and the ability to create nets for trapping.",
+    "memorable": "Its combination of underwater camouflage and net-making skills makes it a master ambusher and trapper.",
+    "goals": "To hunt and ambush prey in both terrestrial and aquatic environments.",
+    "relations": "Other aquatic or monstrous predators may be encountered alongside it.",
+    "environment": "Typically found in coastal areas, rivers, or swampy terrains.",
+    "strengths": "Possesses high Strength and Constitution, allowing for effective combat and damage absorption.",
+    "weaknesses": "Low Intelligence and Charisma, limiting its effectiveness in social interactions.",
+    "attacks": "Utilizes a Multiattack to strike with claws or a net to restrain opponents.",
+    "most_powerful_ability": "Its net attack immobilizes foes, setting them up for follow-up strikes and further attacks.",
+    "equipment": null,
+    "senses": "It has passive Perception of 14, indicating a good awareness of its surroundings.",
+    "skills": "Proficient in perception and stealth, enhancing its ambush capabilities.",
+    "additional_information": [
+        "Amphibious nature allows it to thrive in multiple environments.",
+        "Can create nets to ensnare prey, carrying two at a time.",
+        "Effective underwater camouflage grants it advantages in stealth checks.",
+        "The Entangle Weapon reaction disrupts enemy attacks, enhancing its defensive capabilities.",
+        "Solid melee combatant with the ability to manipulate position via the Reel action."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable creature that hunts in water and land",
+        "huge ambush monster with net-making skills",
+        "monstrous tidehunter found in coastal regions",
+        "adaptable aquatic predator with powerful claws",
+        "master trapper with underwater camouflage"
+    ]
+}

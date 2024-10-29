@@ -1,0 +1,25 @@
+{
+    "name": "Warhordling Orc Eye",
+    "queries": [
+        {
+            "query": "humanoid creature that can cast cleric spells and heal allies",
+            "variant": "humanoid that has cleric spells and can heal allies"
+        },
+        {
+            "query": "medium orc with good wisdom and aggressive movement abilities",
+            "variant": "orc of medium size with strong wisdom and aggressive movement"
+        },
+        {
+            "query": "spellcasting orc that excels in medicine and insight skills",
+            "variant": "orc capable of spellcasting who is skilled in insight and medicine"
+        },
+        {
+            "query": "orc that has radiant damage spells and can charge enemies",
+            "variant": "orc with spells dealing radiant damage and can charge foes"
+        },
+        {
+            "query": "creature that can heal itself and allies while attacking with a mace",
+            "variant": "being that heals itself or allies while making mace attacks"
+        }
+    ]
+}

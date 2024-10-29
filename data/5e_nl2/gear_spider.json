@@ -1,0 +1,53 @@
+{
+    "name": "Gear Spider",
+    "creature_type": "Construct",
+    "alignment": null,
+    "size": "Tiny",
+    "hp": 28,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft., climb 20 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "mechanical",
+        "observer"
+    ],
+    "adjectives": [
+        "tiny",
+        "mechanical",
+        "stealthy"
+    ],
+    "description": "The Gear Spider is a small mechanical construct designed for observation, resembling a small spider. It has a clockwork nature and can navigate surfaces with ease.",
+    "memorable": "Its ability to photograph and store images adds a layer of strategy despite having low offensive capability.",
+    "goals": "To gather intelligence and remain undetected by enemies.",
+    "relations": "May be found alongside other constructs or mechanical entities.",
+    "environment": "Typically found in areas of technology or ancient ruins.",
+    "strengths": "Immune to disease and many common conditions, can navigate both land and vertical surfaces.",
+    "weaknesses": "Fragile due to low Armor Class and Hit Points, relies on stealth rather than direct confrontation.",
+    "attacks": "Melee 'Claw' attack deals minimal slashing damage; 'Needle' ranged attack deals piercing damage from a distance.",
+    "most_powerful_ability": "The ability to record and store images with the 'Photograph' feature for strategic advantages.",
+    "equipment": null,
+    "senses": "The Gear Spider has blindsight up to 60 feet, making it effective in total darkness.",
+    "skills": "It has a +4 bonus in stealth, allowing it to avoid detection effectively.",
+    "additional_information": [
+        "Clockwork nature allows it to function without air, food, or sleep.",
+        "Immutable form prevents physical alterations or damage to its structure.",
+        "Holds up to 10 stored images, enhancing its utility.",
+        "Can be a valuable ally for reconnaissance tasks.",
+        "Very low combat effectiveness relying primarily on stealth."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical spider with stealth abilities",
+        "tiny construct that stores images",
+        "observant spider-like creature",
+        "clockwork creature immune to disease",
+        "small spider with climbing abilities"
+    ]
+}

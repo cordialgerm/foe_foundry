@@ -1,0 +1,25 @@
+{
+    "name": "Spirit Lamp",
+    "queries": [
+        {
+            "query": "undead creature that manipulates light and has necrotic damage abilities",
+            "variant": "undead being that controls light and can deal necrotic damage"
+        },
+        {
+            "query": "chaotic evil spirit that can summon other spirits",
+            "variant": "chaotic evil ghost that summons spirits from within its light"
+        },
+        {
+            "query": "medium undead that requires bright light to see",
+            "variant": "medium undead that needs bright light to be able to see"
+        },
+        {
+            "query": "creature with high Dexterity and spell-like abilities in combat",
+            "variant": "being with strong Dexterity and spell abilities during fights"
+        },
+        {
+            "query": "menacing undead that curses creatures who touch its lantern",
+            "variant": "threatening undead that places a curse on those who touch its lantern"
+        }
+    ]
+}

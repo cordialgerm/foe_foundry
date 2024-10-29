@@ -1,0 +1,53 @@
+{
+    "name": "Kikimora",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "fey",
+        "spellcaster",
+        "sneaky",
+        "summoner"
+    ],
+    "adjectives": [
+        "mischievous",
+        "elusive",
+        "chaotic",
+        "deceptive",
+        "mobile"
+    ],
+    "description": "A Medium-sized fey known for its chaotic nature and ability to manipulate environments with its unique abilities.",
+    "memorable": "Its ability to teleport and summon swarms makes it a formidable foe in tight situations.",
+    "goals": "Typically aims to deceive and manipulate others for its own amusement or benefit.",
+    "relations": "May be found alongside other fey creatures, or creatures that share a chaotic nature.",
+    "environment": "Usually inhabits structures, especially living spaces where it can hide and navigate easily.",
+    "strengths": "High Dexterity and Charisma, making it excellent in stealth and persuasion.",
+    "weaknesses": "Vulnerable to magical attacks, which can bypass its physical resistances.",
+    "attacks": "Performs Multiattack with three claw attacks, dealing slashing damage.",
+    "most_powerful_ability": "Hidden Home allows it to teleport to an extradimensional space for evasion and surprise.",
+    "equipment": "null",
+    "senses": "Passive Perception of 13, allowing for decent awareness of its surroundings.",
+    "skills": "Excels in Deception, Persuasion, and Stealth, with notable proficiencies in social manipulation.",
+    "additional_information": [
+        "Can summon swarms to aid in combat through House Pests ability.",
+        "Has advantage on saving throws against spells and magical effects due to Magic Resistance.",
+        "Can turn invisible until it attacks, making it hard to target.",
+        "Able to cast various utility spells at will, enhancing versatility.",
+        "Incredibly mobile within structures, frequently using Homeward Step to escape danger."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast mending, minor illusion, and prestidigitation cantrips at will using Charisma.",
+    "test_queries": [
+        "elusive fey with teleportation abilities",
+        "chaotic creature that can summon swarms",
+        "deceptive fey creature that turns invisible",
+        "fey that uses magic and stealth",
+        "mischievous creature that hides in buildings"
+    ]
+}

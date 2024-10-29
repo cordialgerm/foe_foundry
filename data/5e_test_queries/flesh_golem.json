@@ -1,0 +1,25 @@
+{
+    "name": "Flesh Golem",
+    "queries": [
+        {
+            "query": "gruesome monster made of stitched body parts that follows commands",
+            "variant": "monster that is gruesome and made from stitched body parts and obeys commands"
+        },
+        {
+            "query": "powerful construct with high strength and low armor class",
+            "variant": "strong construct that has high strength but low armor class"
+        },
+        {
+            "query": "undead-like creature with fire vulnerability and berserk ability",
+            "variant": "creature that acts like undead with weakness to fire and goes berserk"
+        },
+        {
+            "query": "Flesh Golem that regenerates health from lightning",
+            "variant": "Flesh Golem that regains health when hit by lightning"
+        },
+        {
+            "query": "strong combatant immune to poison and nonmagical attacks",
+            "variant": "powerful fighter that is immune to poison and non-magical damage"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Crocodile</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>19</HP>
 <summary>The Crocodile is a massive, predatory reptile with tough, scaly skin and powerful jaws capable of crushing bone. Found in swamps, rivers, and lakes, Crocodiles are ambush predators, lying motionless in the water before lunging at their prey with terrifying speed. Once they have their victim in their jaws, Crocodiles perform a deadly death roll, twisting and tearing their prey apart. They are solitary hunters but will fiercely defend their territory from intruders. Despite their slow movement on land, they are swift and dangerous in the water.</summary>
 
 <summary>The crocodile is a large beast that prowls both land and water, making it an effective ambush predator. With a fair amount of hit points and decent armor, it can be a threatening opponent, especially in its aquatic environment where it can utilize its swimming speed to its advantage. While it lacks intelligence and charm, its physical attributes and melee capabilities make it a dangerous encounter for lower-level adventurers. The crocodile is categorized as a challenge rating of 1/2, suggesting it is suitable for inexperienced parties or as a minor threat in an encounter. Its ability to grapple targets enhances its combat effectiveness, particularly in scenarios where it can surprise adversaries.</summary>
@@ -29,6 +31,7 @@ As a bonus action, the crocodile can perform a Death Roll against a creature it 
 
 Source: 5e_srd
 
+<statblock>
 ### Crocodile
 
 *Large beast, unaligned*
@@ -55,7 +58,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 7 (1d10+2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.
+***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 7 (1d10+2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.</statblock>
+
 
 
 
@@ -63,6 +67,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crocodile
 
 *Large* *Beast*
@@ -90,6 +95,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10+2) piercing damage and the target is grappled (escape DC 12). Until this grapple ends  the target is restrained and the crocodile can't bite a different target.
 
 
+</statblock>
 
 
 
@@ -98,6 +104,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Crocodile
 
 *Large beast*
@@ -129,5 +136,6 @@ Source: 5e_artisinal_monsters
 
 - **Death Roll.** One creature grappled by the crocodile must make a DC 12 STR save, taking 5 (2d4) slashing damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

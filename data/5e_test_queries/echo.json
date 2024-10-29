@@ -1,0 +1,25 @@
+{
+    "name": "Echo",
+    "queries": [
+        {
+            "query": "medium fiend that disrupts spells and has iron claws",
+            "variant": "medium-sized fiend that uses iron claws and disrupts spellcasting"
+        },
+        {
+            "query": "chaotic evil being with a powerful aura that hinders concentration",
+            "variant": "chaotic evil entity with an aura that affects concentration negatively"
+        },
+        {
+            "query": "fiend with teleportation ability and slashing damage attack",
+            "variant": "fiend that can teleport and has a slashing damage ability"
+        },
+        {
+            "query": "demon that causes disadvantage on mental checks and has high strength",
+            "variant": "demon that imposes penalties on mental checks and has great strength"
+        },
+        {
+            "query": "creature immune to poison and causing sonic disturbances",
+            "variant": "creature that is immune to poison and creates sound-based disturbances"
+        }
+    ]
+}

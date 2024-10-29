@@ -1,0 +1,25 @@
+{
+    "name": "Pugilist",
+    "queries": [
+        {
+            "query": "humanoid fighter with strong melee attacks and agile moves",
+            "variant": "humanoid combatant with strong hand-to-hand strikes and agility"
+        },
+        {
+            "query": "medium humanoid that excels in physical combat and lacks magic abilities",
+            "variant": "medium creature that excels in physical fighting and has no magical powers"
+        },
+        {
+            "query": "strong creature with fists as weapons that can stun opponents",
+            "variant": "powerful being that uses fists for attacks and can incapacitate foes"
+        },
+        {
+            "query": "pugilist with unarmored defense and multiple fist attacks",
+            "variant": "fighter with no armor defense and several punches in an attack"
+        },
+        {
+            "query": "physical combat specialist that can perform a haymaker and head shot",
+            "variant": "physical fighting expert who can execute haymaker and head shot moves"
+        }
+    ]
+}

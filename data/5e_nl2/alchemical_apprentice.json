@@ -1,0 +1,53 @@
+{
+    "name": "Alchemical Apprentice",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 63,
+    "ac": 11,
+    "srd": false,
+    "cr": "1",
+    "movement": "climb 10 ft., walk 10 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "alchemical",
+        "magical"
+    ],
+    "adjectives": [
+        "amorphous",
+        "resilient",
+        "strategic"
+    ],
+    "description": "A small, amorphous ooze that exhibits a blend of alchemical talent and resilience, absorbing and utilizing various potions and oils.",
+    "memorable": "Its ability to absorb potions and nullify their effects while being vulnerable to sunlight makes it unique and strategic in encounters.",
+    "goals": "Typically seeks to utilize alchemical substances and navigate its surroundings effectively.",
+    "relations": "May be associated with alchemists or oozes in general.",
+    "environment": "Commonly found in laboratories or places with a strong focus on alchemy.",
+    "strengths": "Resistant to acid, cold, fire, and poison damage and immune to many conditions.",
+    "weaknesses": "Extremely vulnerable to direct sunlight exposure and struggles in prolonged movement away from its origin.",
+    "attacks": "Can attack with a pseudopod for bludgeoning damage and use a magical burble attack inflicting adaptable damage types.",
+    "most_powerful_ability": "The Absorb Potion ability allows it to strategically nullify any alchemical substance it encounters.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to navigate its environment without relying on vision.",
+    "skills": "Proficient in Arcana with a +5 modifier, showcasing its strong understanding of magical principles.",
+    "additional_information": [
+        "Amorphous trait allows squeezing through tight spaces.",
+        "Can produce a common potion, oil, tincture, or alchemical draught once per day.",
+        "Condition immunities provide consistent operational advantages."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "potion absorbing ooze",
+        "small magical ooze creature",
+        "alchemical creature vulnerabilities",
+        "ooze with potion abilities",
+        "creature with blindsight and alchemical skills"
+    ]
+}

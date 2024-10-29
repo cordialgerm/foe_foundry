@@ -1,0 +1,25 @@
+{
+    "name": "Void Constructor",
+    "queries": [
+        {
+            "query": "creature that flies and has necrotic damage immunity",
+            "variant": "creature that can fly and is immune to necrotic damage"
+        },
+        {
+            "query": "strong grappling construct with high armor class",
+            "variant": "powerful grappler construct that has a high armor class"
+        },
+        {
+            "query": "medium-sized evil construct with special aura abilities",
+            "variant": "medium evil construct that has unique aura abilities"
+        },
+        {
+            "query": "constructed monster with bludgeoning slam attacks",
+            "variant": "construct creature that makes slam attacks dealing bludgeoning damage"
+        },
+        {
+            "query": "tactical monster immune to several conditions and damage types",
+            "variant": "tactical creature that is immune to many conditions and types of damage"
+        }
+    ]
+}

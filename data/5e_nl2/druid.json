@@ -1,0 +1,56 @@
+{
+    "name": "Druid",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any race, any lineage",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 11,
+    "srd": true,
+    "ac_description": "16 with barkskin",
+    "cr": "2",
+    "movement": "30 feet walking speed",
+    "role": "null",
+    "tags": [
+        "spellcaster",
+        "nature",
+        "shapeshifter"
+    ],
+    "adjectives": [
+        "versatile",
+        "earthy",
+        "protective"
+    ],
+    "description": "Druids wear simple, earthy clothes that reflect their deep connection to nature. They can shapeshift into various animals and command powerful spells related to the natural world.",
+    "memorable": "Druids can change shape into beasts, allowing for tactical advantages in different situations.",
+    "goals": "To protect the natural world and maintain the balance of nature.",
+    "relations": "Often associated with forests, wildlife, and other natural entities.",
+    "environment": "Typically found in forests, mountains, or other wild areas.",
+    "strengths": "Strong in nature-related spells, adaptable through shapeshifting, and good at controlling the battlefield.",
+    "weaknesses": "Limited in physical combat abilities and cannot cast spells while in beast form.",
+    "attacks": "Utilizes melee attacks with a quarterstaff and has spell attacks like Produce Flame and Thunderwave.",
+    "most_powerful_ability": "Beast Form allows them to take on the statistics and abilities of a Large or smaller beast.",
+    "equipment": null,
+    "senses": "Has a passive perception of 14, making them quite aware of hidden entities.",
+    "skills": "Proficient in Medicine, Nature, and Perception, showcasing their knowledge of healing and the outdoors.",
+    "additional_information": [
+        "Can cast spells at will like Druidcraft and Speak with Animals.",
+        "Enhances Armor Class significantly with Barkskin.",
+        "Multiattack capability allows for two attacks in a single turn.",
+        "Spellcasting ability tied to Wisdom, influencing both attack and spell save DC.",
+        "Good at controlling the environment with spells like Entangle."
+    ],
+    "damage_types": [
+        "poison",
+        "thunder",
+        "fire"
+    ],
+    "spellcasting": "Can cast a variety of spells including healing and nature control spells, with a spell save DC of 12.",
+    "test_queries": [
+        "nature protector shapeshifter",
+        "humanoid with beast transformation ability",
+        "spellcasting creature that loves animals",
+        "guardian of the forest with nature spells",
+        "magical creature that can transform into beasts"
+    ]
+}

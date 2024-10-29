@@ -1,0 +1,25 @@
+{
+    "name": "Gnoll Demonfang",
+    "queries": [
+        {
+            "query": "chaotic evil humanoid with strong melee attacks",
+            "variant": "evil humanoid that is chaotic and has strong melee attacks"
+        },
+        {
+            "query": "medium gnoll that can transform and has darkvision",
+            "variant": "gnoll that is medium size with darkvision and can transform"
+        },
+        {
+            "query": "creature with multiattack and slashing damage abilities",
+            "variant": "monster that has slashing damage abilities and multiattack feature"
+        },
+        {
+            "query": "strong and agile gnoll with immunity to charm effects",
+            "variant": "agile gnoll that is strong and immune to charm effects"
+        },
+        {
+            "query": "demon-related gnoll with chaotic aura and decent hit points",
+            "variant": "gnoll related to demons that has a chaotic aura and good hit points"
+        }
+    ]
+}

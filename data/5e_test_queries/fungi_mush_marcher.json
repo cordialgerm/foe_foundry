@@ -1,0 +1,25 @@
+{
+    "name": "Mush Marcher",
+    "queries": [
+        {
+            "query": "large plant creature with spore attacks",
+            "variant": "large creature that is a plant and uses spore attacks"
+        },
+        {
+            "query": "fungal creature that slows enemies with poison",
+            "variant": "creature made of fungus that poisons and slows foes"
+        },
+        {
+            "query": "plant monster with harpoon attack and poison effects",
+            "variant": "plant creature that has a harpoon attack and can poison"
+        },
+        {
+            "query": "neutral creature with blindsight and slowing spores abilities",
+            "variant": "neutral monster that has slowing spores and blindsight"
+        },
+        {
+            "query": "Mush Marcher environment and combat abilities",
+            "variant": "combat abilities and environment of the Mush Marcher"
+        }
+    ]
+}
